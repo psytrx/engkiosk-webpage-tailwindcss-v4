@@ -63,6 +63,10 @@ try:
 except requests.exceptions.RequestException as e:
     raise SystemExit(e)
 
+# requests makes an educated guess on the response encoding.
+# Here we overwrite the encoding to UTF-8
+feed_response.encoding = 'utf-8'
+
 # Parse the XML and process all items
 parsed_xml = ET.fromstring(feed_response.text)
 channel = parsed_xml.find("channel")
@@ -124,6 +128,6 @@ for item in channel.findall('item'):
     )
 
     # Write file to disk as a new podcast episode
-    f = open(f'{base_content_write_path}/{filename}', 'w')
+    f = open(f'{base_content_write_path}/{filename}', 'w', encoding='utf8')
     f.write(content)
     f.close()
