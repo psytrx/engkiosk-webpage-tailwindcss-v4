@@ -82,7 +82,7 @@ for item in channel.findall('item'):
     pub_date = item.find('pubDate').text
     # See full list of format codes here
     # https://docs.python.org/3/library/datetime.html#strftime-strptime-behavior
-    date_parsed = datetime.datetime.strptime(pub_date, '%a, %d %b %Y %H:%M:%S %z').strftime('%d.%m.%Y')
+    date_parsed = datetime.datetime.strptime(pub_date, '%a, %d %b %Y %H:%M:%S %z').strftime('%Y-%m-%d')
     
     # If an image is available,
     # download it and store it in the public folder
