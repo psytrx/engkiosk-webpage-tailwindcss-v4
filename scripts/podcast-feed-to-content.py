@@ -107,7 +107,7 @@ for item in channel.findall('item'):
 
     content = (
         '---\n'
-        'layout: ../../layouts/post.astro\n'
+        'layout: ../../../layouts/post.astro\n'
         f'title: "{title}"\n'
         # TODO Do we need tags?
         f'tag: movie\n'
