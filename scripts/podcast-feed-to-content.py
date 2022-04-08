@@ -39,7 +39,7 @@ def download_file(url, local_filename):
         # Determine file extension
         content_type = r.headers['content-type']
         extension = mimetypes.guess_extension(content_type)
-        file_name = f'{local_filename}.{extension}'
+        file_name = f'{local_filename}{extension}'
 
         with open(file_name, 'wb') as f:
             for chunk in r.iter_content(chunk_size=8192):
