@@ -16,12 +16,17 @@ const { title, description, image, type, next, prev, canonicalURL } = Astro.prop
 
 <!-- Common -->
 <meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
 <title>{title}</title>
 <meta name="description" content={description} />
+
 <link rel="preconnect" href="https://fonts.gstatic.com" />
-<link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" />
+
 <!-- Sitemap -->
 <link rel="sitemap" href="/sitemap.xml" />
+
 <!-- RSS -->
 <link rel="alternate" type="application/rss+xml" href="/feed/posts.xml" />
 

@@ -32,17 +32,20 @@ let firstPage = allPosts.slice(0, 2);
 		<MainHead {title} {description} image={allPosts[0].frontmatter.image} {canonicalURL} />
 	</head>
 
-	<body>
-		<Nav {title} />
-		<Button>Tailwind Button in Astro!</Button>
+	<body class="antialiased bg-body text-body font-body">
+		<div class=""> 
+			<Nav {title} />
+			<Button>Tailwind Button in Astro!</Button>
 
-		<main class="wrapper">
-			{allPosts.map((post) => <PostPreview post={post} author={authorData[post.frontmatter.author]} />)}
-		</main>
+			<main class="wrapper">
+				{allPosts.map((post) => <PostPreview post={post} author={authorData[post.frontmatter.author]} />)}
+			</main>
 
-		<footer>
-			<Pagination prevUrl="/posts" nextUrl="/posts/2" />
-		</footer>
-		<Footer />
+			<footer>
+				<Pagination prevUrl="/posts" nextUrl="/posts/2" />
+			</footer>
+
+			<Footer />
+		</div>
 	</body>
 </html>
