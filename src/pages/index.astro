@@ -6,6 +6,9 @@ import PostPreview from '../components/PostPreview.astro';
 import Pagination from '../components/Pagination.astro';
 import authorData from '../data/authors.json';
 
+// Component Imports
+import Button from '../components/Button.astro';
+
 // Component Script:
 // You can write any JavaScript/TypeScript that you'd like here.
 // It will run during the build, but never in the browser.
@@ -30,6 +33,7 @@ let firstPage = allPosts.slice(0, 2);
 
 	<body>
 		<Nav {title} />
+		<Button>Tailwind Button in Astro!</Button>
 
 		<main class="wrapper">
 			{allPosts.map((post) => <PostPreview post={post} author={authorData[post.frontmatter.author]} />)}
