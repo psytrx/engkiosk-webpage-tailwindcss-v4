@@ -1,12 +1,13 @@
 ---
 // Component Imports
+import Footer from '../components/Footer.astro';
 import MainHead from '../components/MainHead.astro';
 import Nav from '../components/Nav.astro';
 import PostPreview from '../components/PostPreview.astro';
 import Pagination from '../components/Pagination.astro';
 import authorData from '../data/authors.json';
 
-// Component Imports
+
 import Button from '../components/Button.astro';
 
 // Component Script:
@@ -42,5 +43,6 @@ let firstPage = allPosts.slice(0, 2);
 		<footer>
 			<Pagination prevUrl="/posts" nextUrl="/posts/2" />
 		</footer>
+		<Footer />
 	</body>
 </html>
