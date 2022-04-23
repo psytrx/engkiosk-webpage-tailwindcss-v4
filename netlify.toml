@@ -1,0 +1,11 @@
+# File based configuration for Netlify
+#
+# Docs available at https://docs.netlify.com/configure-builds/file-based-configuration/
+[build]
+  publish = "dist/"
+  command = "astro build"
+
+[[plugins]]
+  # Installs the Lighthouse Build Plugin for all deploy contexts
+  # Docs available at https://github.com/netlify-labs/netlify-plugin-lighthouse
+  package = "@netlify/plugin-lighthouse"
