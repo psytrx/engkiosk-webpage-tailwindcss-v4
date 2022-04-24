@@ -3,7 +3,7 @@ layout: ../../layouts/blog-post.astro
 title: Er hörte leise Schritte hinter sich. Das bedeutete nichts Gutes.
 tag: movie
 date: 2021-05-18
-image: images/blog/work6.jpg
+image: /images/blog/work6.jpg
 author: wolfgang
 description: Which Treats of the First Sally the Ingenious Don Quixote Made From Home
 ---

@@ -3,7 +3,7 @@ layout: ../../layouts/blog-post.astro
 title: Webstandards sind total toll, doch ab und zu echt doof.
 tag: movie
 date: 2021-05-17
-image: images/blog/room.jpg
+image: /images/blog/room.jpg
 author: andy
 description: Which Treats of the Character and Pursuits of the Famous Gentleman Don Quixote of La Mancha
 ---

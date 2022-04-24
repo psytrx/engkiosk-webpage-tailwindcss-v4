@@ -3,7 +3,7 @@ layout: ../../layouts/blog-post.astro
 title: Dies ist nur ein Dummy-Titel um die ganze Sache zu demonstrieren
 tag: movie
 date: 2021-05-05
-image: images/blog/effect5.jpg
+image: /images/blog/effect5.jpg
 author: wolfgang
 description: Wheren is Related the Droll Way in which Don Quixote Had Himself Dubbed a Knight
 ---

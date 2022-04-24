@@ -3,7 +3,7 @@ layout: ../../layouts/blog-post.astro
 title: Wortbergen, Vokalien, Konsonantien und andere Blindtexte
 tag: movie
 date: 2021-05-18
-image: images/blog/work6.jpg
+image: /images/blog/work6.jpg
 author: andy
 description: Which Treats of the First Sally the Ingenious Don Quixote Made From Home
 ---

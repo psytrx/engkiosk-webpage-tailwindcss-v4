@@ -3,7 +3,7 @@ layout: ../../layouts/blog-post.astro
 title: Zwei flinke Boxer jagen die quirlige Eva
 tag: movie
 date: 2021-05-18
-image: images/blog/macbook3.jpg
+image: /images/blog/macbook3.jpg
 author: wolfgang
 description: Which Treats of the First Sally the Ingenious Don Quixote Made From Home
 ---
