@@ -2,7 +2,7 @@
 // Component Imports
 import MainHead from '../../components/MainHead.astro';
 import Nav from '../../components/Nav.astro';
-import PostPreview from '../../components/PostPreview.astro';
+import PodcastEpisodePreview from '../../components/PodcastEpisodePreview.astro';
 import Pagination from '../../components/Pagination.astro';
 import authorData from '../../data/authors.json';
 
@@ -17,22 +17,19 @@ let canonicalURL = Astro.canonicalURL;
 // Data Fetching: List all Markdown posts in the repo.
 let allEpisodes = await Astro.glob('./episode/*.md');
 allEpisodes.sort((a, b) => new Date(b.frontmatter.date).valueOf() - new Date(a.frontmatter.date).valueOf());
-let firstPage = allEpisodes.slice(0, 2);
-// Full Astro Component Syntax:
-// https://docs.astro.build/core-concepts/astro-components/
 ---
 
 <html lang="en">
 	<head>
 		<title>{title}</title>
-		<MainHead {title} {description} image={allEpisodes[0].frontmatter.image} {canonicalURL} />
+		<MainHead title={title} description={description} image={allEpisodes[0].frontmatter.image} {canonicalURL} />
 	</head>
 
 	<body>
-		<Nav {title} />
+		<Nav title={title} />
 
 		<main class="wrapper">
-			{allEpisodes.map((post) => <PostPreview post={post} author={authorData[post.frontmatter.author]} />)}
+			{allEpisodes.map((post) => <PodcastEpisodePreview post={post} author={authorData[post.frontmatter.author]} />)}
 		</main>
 
 		<footer>
