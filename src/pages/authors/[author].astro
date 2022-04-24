@@ -1,7 +1,7 @@
 ---
 import MainHead from '../../components/MainHead.astro';
 import Nav from '../../components/Nav.astro';
-import PostPreview from '../../components/PostPreview.astro';
+import BlogPostPreview from '../../components/BlogPostPreview.astro';
 import authorData from '../../data/authors.json';
 
 export async function getStaticPaths() {
@@ -66,7 +66,7 @@ const author = authorData[posts[0].frontmatter.author];
 				<div class="avatar"><img class="avatar-img" src={author.image} alt="" /></div>
 				{author.name}
 			</h2>
-			{posts.map((post) => <PostPreview post={post} author={author} />)}
+			{posts.map((post) => <BlogPostPreview post={post} author={author} />)}
 		</main>
 	</body>
 </html>
