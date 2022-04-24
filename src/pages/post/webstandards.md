@@ -1,5 +1,5 @@
 ---
-layout: ../../layouts/post.astro
+layout: ../../layouts/blog-post.astro
 title: Webstandards sind total toll, doch ab und zu echt doof.
 tag: movie
 date: 2021-05-17

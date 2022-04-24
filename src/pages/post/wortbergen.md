@@ -1,5 +1,5 @@
 ---
-layout: ../../layouts/post.astro
+layout: ../../layouts/blog-post.astro
 title: Wortbergen, Vokalien, Konsonantien und andere Blindtexte
 tag: movie
 date: 2021-05-18

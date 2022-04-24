@@ -1,5 +1,5 @@
 ---
-layout: ../../../layouts/post.astro
+layout: ../../../layouts/podcast-episode.astro
 title: "#03 Over-Engineering, das Werkzeug des Teufels?"
 tag: movie
 date: 2022-01-18

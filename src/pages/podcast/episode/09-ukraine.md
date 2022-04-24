@@ -1,5 +1,5 @@
 ---
-layout: ../../../layouts/post.astro
+layout: ../../../layouts/podcast-episode.astro
 title: "#09 Ukraine"
 tag: movie
 date: 2022-03-08

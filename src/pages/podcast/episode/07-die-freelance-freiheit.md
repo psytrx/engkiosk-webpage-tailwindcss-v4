@@ -1,5 +1,5 @@
 ---
-layout: ../../../layouts/post.astro
+layout: ../../../layouts/podcast-episode.astro
 title: "#07 Die Freelance Freiheit"
 tag: movie
 date: 2022-02-22

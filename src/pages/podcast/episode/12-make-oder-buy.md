@@ -1,5 +1,5 @@
 ---
-layout: ../../../layouts/post.astro
+layout: ../../../layouts/podcast-episode.astro
 title: "#12 Make oder Buy"
 tag: movie
 date: 2022-03-29

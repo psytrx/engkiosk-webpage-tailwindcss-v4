@@ -1,5 +1,5 @@
 ---
-layout: ../../../layouts/post.astro
+layout: ../../../layouts/podcast-episode.astro
 title: "#05 Team Lead - der einzige Ausweg"
 tag: movie
 date: 2022-02-01

@@ -1,10 +1,9 @@
 ---
 // Component Imports
+import Footer from '../../components/Footer.astro';
 import MainHead from '../../components/MainHead.astro';
 import Nav from '../../components/Nav.astro';
 import PodcastEpisodePreview from '../../components/PodcastEpisodePreview.astro';
-import Pagination from '../../components/Pagination.astro';
-import authorData from '../../data/authors.json';
 
 // Component Script:
 // You can write any JavaScript/TypeScript that you'd like here.
@@ -18,22 +17,22 @@ let canonicalURL = Astro.canonicalURL;
 let allEpisodes = await Astro.glob('./episode/*.md');
 allEpisodes.sort((a, b) => new Date(b.frontmatter.date).valueOf() - new Date(a.frontmatter.date).valueOf());
 ---
-
 <html lang="en">
 	<head>
 		<title>{title}</title>
-		<MainHead title={title} description={description} image={allEpisodes[0].frontmatter.image} {canonicalURL} />
+		<MainHead title={title} description={description} {canonicalURL} />
 	</head>
 
-	<body>
-		<Nav title={title} />
+	<body class="antialiased bg-body text-body font-body">
+		<div class=""> 
+			<Nav title={title} />
 
-		<main class="wrapper">
-			{allEpisodes.map((post) => <PodcastEpisodePreview post={post} author={authorData[post.frontmatter.author]} />)}
-		</main>
+      		<!-- TODO Design -->
+			<main class="wrapper">
+				{allEpisodes.map((post) => <PodcastEpisodePreview post={post} />)}
+			</main>
 
-		<footer>
-			<Pagination prevUrl="/posts" nextUrl="/posts/2" />
-		</footer>
+			<Footer />
+		</div>
 	</body>
 </html>

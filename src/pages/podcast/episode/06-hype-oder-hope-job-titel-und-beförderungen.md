@@ -1,5 +1,5 @@
 ---
-layout: ../../../layouts/post.astro
+layout: ../../../layouts/podcast-episode.astro
 title: "#06 Hype oder Hope: Job-Titel und Beförderungen"
 tag: movie
 date: 2022-02-15

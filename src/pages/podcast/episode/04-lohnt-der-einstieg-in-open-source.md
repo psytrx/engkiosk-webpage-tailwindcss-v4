@@ -1,5 +1,5 @@
 ---
-layout: ../../../layouts/post.astro
+layout: ../../../layouts/podcast-episode.astro
 title: "#04 Lohnt der Einstieg in Open Source?"
 tag: movie
 date: 2022-01-25

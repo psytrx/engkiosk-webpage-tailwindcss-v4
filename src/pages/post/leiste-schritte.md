@@ -1,5 +1,5 @@
 ---
-layout: ../../layouts/post.astro
+layout: ../../layouts/blog-post.astro
 title: Er hörte leise Schritte hinter sich. Das bedeutete nichts Gutes.
 tag: movie
 date: 2021-05-18

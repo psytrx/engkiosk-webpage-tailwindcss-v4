@@ -1,5 +1,5 @@
 ---
-layout: ../../../layouts/post.astro
+layout: ../../../layouts/podcast-episode.astro
 title: "#10 Das Karriere Booster Meeting 1:1s"
 tag: movie
 date: 2022-03-15

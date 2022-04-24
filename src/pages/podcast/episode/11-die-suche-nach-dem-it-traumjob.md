@@ -1,5 +1,5 @@
 ---
-layout: ../../../layouts/post.astro
+layout: ../../../layouts/podcast-episode.astro
 title: "#11 Die Suche nach dem IT Traumjob"
 tag: movie
 date: 2022-03-22

@@ -1,5 +1,5 @@
 ---
-layout: ../../layouts/post.astro
+layout: ../../layouts/blog-post.astro
 title: Zwei flinke Boxer jagen die quirlige Eva
 tag: movie
 date: 2021-05-18

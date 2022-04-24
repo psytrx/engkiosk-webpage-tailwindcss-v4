@@ -1,5 +1,5 @@
 ---
-layout: ../../layouts/post.astro
+layout: ../../layouts/blog-post.astro
 title: Dies ist nur ein Dummy-Titel um die ganze Sache zu demonstrieren
 tag: movie
 date: 2021-05-05

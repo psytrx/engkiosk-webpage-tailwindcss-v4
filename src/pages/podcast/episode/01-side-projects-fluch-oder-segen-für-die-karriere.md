@@ -1,5 +1,5 @@
 ---
-layout: ../../../layouts/post.astro
+layout: ../../../layouts/podcast-episode.astro
 title: "#01 Side Projects - Fluch oder Segen für die Karriere?"
 tag: movie
 date: 2022-01-03

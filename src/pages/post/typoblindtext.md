@@ -1,5 +1,5 @@
 ---
-layout: ../../layouts/post.astro
+layout: ../../layouts/blog-post.astro
 title: Typoblindtext. Macht doch alles keinen Sinn
 tag: movie
 date: 2021-05-18

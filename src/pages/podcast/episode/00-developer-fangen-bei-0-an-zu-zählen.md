@@ -1,5 +1,5 @@
 ---
-layout: ../../../layouts/post.astro
+layout: ../../../layouts/podcast-episode.astro
 title: "#00 Developer fangen bei 0 an zu zählen"
 tag: movie
 date: 2022-02-08

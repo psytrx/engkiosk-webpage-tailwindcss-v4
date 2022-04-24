@@ -1,5 +1,5 @@
 ---
-layout: ../../../layouts/post.astro
+layout: ../../../layouts/podcast-episode.astro
 title: "#02 Technologienzoo Side Projects"
 tag: movie
 date: 2022-01-10

@@ -1,5 +1,5 @@
 ---
-layout: ../../../layouts/post.astro
+layout: ../../../layouts/podcast-episode.astro
 title: "#08 Vergiss doch Datenbanken!"
 tag: movie
 date: 2022-03-01
