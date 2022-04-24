@@ -3,7 +3,7 @@
 import Footer from '../../components/Footer.astro';
 import MainHead from '../../components/MainHead.astro';
 import Nav from '../../components/Nav.astro';
-import PodcastEpisodePreview from '../../components/PodcastEpisodePreview.astro';
+import PodcastEpisodeListing from '../../components/PodcastEpisodeListing.astro';
 
 // Component Script:
 // You can write any JavaScript/TypeScript that you'd like here.
@@ -12,10 +12,6 @@ import PodcastEpisodePreview from '../../components/PodcastEpisodePreview.astro'
 let title = 'Don’s Blog';
 let description = 'An example blog on Astro';
 let canonicalURL = Astro.canonicalURL;
-
-// Data Fetching: List all Markdown posts in the repo.
-let allEpisodes = await Astro.glob('./episode/*.md');
-allEpisodes.sort((a, b) => new Date(b.frontmatter.date).valueOf() - new Date(a.frontmatter.date).valueOf());
 ---
 <html lang="en">
 	<head>
@@ -27,10 +23,7 @@ allEpisodes.sort((a, b) => new Date(b.frontmatter.date).valueOf() - new Date(a.f
 		<div class=""> 
 			<Nav title={title} />
 
-      		<!-- TODO Design -->
-			<main class="wrapper">
-				{allEpisodes.map((post) => <PodcastEpisodePreview post={post} />)}
-			</main>
+			<PodcastEpisodeListing numberOfItems=0 />
 
 			<Footer />
 		</div>
