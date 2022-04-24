@@ -3,12 +3,7 @@
 import Footer from '../components/Footer.astro';
 import MainHead from '../components/MainHead.astro';
 import Nav from '../components/Nav.astro';
-import PostPreview from '../components/PostPreview.astro';
-import Pagination from '../components/Pagination.astro';
-import authorData from '../data/authors.json';
-
-
-import Button from '../components/Button.astro';
+import HostPreview from '../components/HostPreview.astro';
 import BlogPostListing from '../components/BlogPostListing.astro';
 
 // Component Script:
@@ -36,10 +31,10 @@ let firstPage = allPosts.slice(0, 2);
 	<body class="antialiased bg-body text-body font-body">
 		<div class=""> 
 			<Nav {title} />
-			<Button>Tailwind Button in Astro!</Button>
 
 			<BlogPostListing />
 
+      <!-- Team -->
 			<section class="py-24 bg-coolGray-50" style="background-image: url('images/elements/pattern-light-big.svg'); background-position: center;">
         <div class="container px-4 mx-auto">
           <div class="mb-16 text-center">
@@ -49,45 +44,27 @@ let firstPage = allPosts.slice(0, 2);
           </div>
 
           <div class="flex flex-wrap justify-center -mx-4">
-            <div class="w-full md:w-1/2 lg:w-1/3 px-4 mb-10">
-              <div class="h-full py-8 px-10 bg-white rounded-md text-center">
-                <img class="w-24 h-24 mx-auto mb-6 rounded-full" src="images/teams/avatar1.png" alt="">
-                <h3 class="mb-2 text-2xl md:text-3xl leading-tight font-semibold">Andy Grunwald</h3>
-                <span class="inline-block mb-6 text-lg font-medium text-yellow-500">CEO &amp; Founder</span>
-                <p class="mb-8 text-coolGray-500 font-medium">Dance is the hidden language of the soul.</p>
-                <div class="flex items-center justify-center">
-                  <a class="inline-block mr-6 hover:opacity-80" href="#">
-                    <img src="images/brands/github.svg" alt="">
-                  </a>
-                  <a class="inline-block mr-6 hover:opacity-80" href="#">
-                    <img src="images/brands/twitter.svg" alt="">
-                  </a>
-				  <a class="inline-block hover:opacity-80" href="#">
-                    <img src="images/brands/linkedin.svg" alt="">
-                  </a>
-                </div>
-              </div>
-            </div>
+            <HostPreview 
+              avatar="andy-grunwald.jpeg" 
+              name="Andy Grunwald" 
+              subtitle="Trecker-Fan" 
+              description="Dance is the hidden language of the soul." 
+              github="andygrunwald" 
+              twitter="andygrunwald" 
+              linkedin="andy-grunwald-09aa265a" 
+              website="https://andygrunwald.com/"
+              profileLink="/about/andy-grunwald" />
 
-            <div class="w-full md:w-1/2 lg:w-1/3 px-4 mb-10">
-              <div class="h-full py-8 px-10 bg-white rounded-md text-center">
-                <img class="w-24 h-24 mx-auto mb-6 rounded-full" src="images/teams/avatar2.png" alt="">
-                <h3 class="mb-2 text-2xl md:text-3xl leading-tight font-semibold">Wolfgang Gassler</h3>
-                <span class="inline-block mb-6 text-lg font-medium text-yellow-500">CTO</span>
-                <p class="mb-8 text-coolGray-500 font-medium">Everything you’ve ever wanted is on the other side of fear.</p>
-                <div class="flex items-center justify-center">
-                  <a class="inline-block mr-6 hover:opacity-80" href="#">
-                    <img src="images/brands/github.svg" alt="">
-                  </a>
-                  <a class="inline-block mr-6 hover:opacity-80" href="#">
-                    <img src="images/brands/twitter.svg" alt="">
-                  </a>
-				  <a class="inline-block hover:opacity-80" href="#">
-                    <img src="images/brands/linkedin.svg" alt="">
-                  </a>
-                </div>
-              </div>
-            </div>
+            <HostPreview 
+              avatar="wolfgang-gassler.jpeg" 
+              name="Wolfgang Gassler" 
+              subtitle="Feuerwehrmann"
+              description="Everything you’ve ever wanted is on the other side of fear." 
+              github="woolfg" 
+              twitter="schafele" 
+              linkedin="wolfganggassler" 
+              website="https://wolfgang.gassler.org/"
+              profileLink="/about/wolfgang-gassler" />
           </div>
         </div>
       </section>

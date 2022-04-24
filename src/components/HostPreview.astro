@@ -1,0 +1,39 @@
+---
+export interface Props {
+	avatar: string;
+	name: string;
+	subtitle: string;
+	description: string;
+	github: string;
+	twitter: string;
+	linkedin: string;
+	website: string;
+	profileLink: string;
+}
+
+const { avatar, name, subtitle, description, github, twitter, linkedin, website } = Astro.props;
+
+// TODO use website
+// TODO use profileLink
+
+---
+
+<div class="w-full md:w-1/2 lg:w-1/3 px-4 mb-10">
+	<div class="h-full py-8 px-10 bg-white rounded-md text-center">
+		<img class="w-24 h-24 mx-auto mb-6 rounded-full" src="images/teams/${avatar}" alt="Avatar ${name}">
+		<h3 class="mb-2 text-2xl md:text-3xl leading-tight font-semibold">{name}</h3>
+		<span class="inline-block mb-6 text-lg font-medium text-yellow-500">{subtitle}</span>
+		<p class="mb-8 text-coolGray-500 font-medium">{description}</p>
+		<div class="flex items-center justify-center">
+			<a class="inline-block mr-6 hover:opacity-80" href="https://github.com/${github}">
+				<img src="images/brands/github.svg" alt="${name} auf GitHub">
+			</a>
+			<a class="inline-block mr-6 hover:opacity-80" href="https://twitter.com/${twitter}">
+				<img src="images/brands/twitter.svg" alt="${name} auf twitter">
+			</a>
+			<a class="inline-block hover:opacity-80" href="https://linkedin.com/in/${linkedin}">
+				<img src="images/brands/linkedin.svg" alt="${name} auf LinkedIn">
+			</a>
+		</div>
+	</div>
+</div>
