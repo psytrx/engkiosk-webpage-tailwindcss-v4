@@ -19,3 +19,7 @@ clean: ## Deletes the generated content
 .PHONY: update-content
 update-content: ## Pulls the latest Podcas RSS feed and updates the content
 	python ./scripts/podcast-feed-to-content.py
+
+.PHONY: init
+init: ## Installs dependencies
+	npm install
