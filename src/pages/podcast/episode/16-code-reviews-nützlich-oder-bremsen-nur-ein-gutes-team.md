@@ -1,10 +1,8 @@
 ---
 layout: ../../../layouts/podcast-episode.astro
 title: "#16 Code Reviews: Nützlich oder bremsen nur ein gutes Team?"
-tag: movie
 date: 2022-04-26
 image: /images/podcast/episode/16-code-reviews-nützlich-oder-bremsen-nur-ein-gutes-team.jpg
-author: don
 description: Which Treats of the Character and Pursuits of the Famous Gentleman Don Quixote of La Mancha
 ---
 

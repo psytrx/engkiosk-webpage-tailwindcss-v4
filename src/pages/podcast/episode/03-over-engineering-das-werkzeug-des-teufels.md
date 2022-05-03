@@ -1,10 +1,8 @@
 ---
 layout: ../../../layouts/podcast-episode.astro
 title: "#03 Over-Engineering, das Werkzeug des Teufels?"
-tag: movie
 date: 2022-01-18
 image: /images/podcast/episode/03-over-engineering-das-werkzeug-des-teufels.jpg
-author: don
 description: Which Treats of the Character and Pursuits of the Famous Gentleman Don Quixote of La Mancha
 ---
 

@@ -1,10 +1,8 @@
 ---
 layout: ../../../layouts/podcast-episode.astro
 title: "#17 Was können wir beim Incident Management von der Feuerwehr lernen?"
-tag: movie
 date: 2022-05-03
 image: /images/podcast/episode/17-was-können-wir-beim-incident-management-von-der-feuerwehr-lernen.jpg
-author: don
 description: Which Treats of the Character and Pursuits of the Famous Gentleman Don Quixote of La Mancha
 ---
 

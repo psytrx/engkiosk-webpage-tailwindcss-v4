@@ -1,10 +1,8 @@
 ---
 layout: ../../../layouts/podcast-episode.astro
 title: "#02 Technologienzoo Side Projects"
-tag: movie
 date: 2022-01-10
 image: /images/podcast/episode/02-technologienzoo-side-projects.jpg
-author: don
 description: Which Treats of the Character and Pursuits of the Famous Gentleman Don Quixote of La Mancha
 ---
 

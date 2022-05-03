@@ -1,10 +1,8 @@
 ---
 layout: ../../../layouts/podcast-episode.astro
 title: "#10 Das Karriere Booster Meeting 1:1s"
-tag: movie
 date: 2022-03-15
 image: /images/podcast/episode/10-das-karriere-booster-meeting-11s.jpg
-author: don
 description: Which Treats of the Character and Pursuits of the Famous Gentleman Don Quixote of La Mancha
 ---
 

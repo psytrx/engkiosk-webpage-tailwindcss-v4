@@ -1,10 +1,8 @@
 ---
 layout: ../../../layouts/podcast-episode.astro
 title: "#09 Ukraine"
-tag: movie
 date: 2022-03-08
 image: /images/podcast/episode/09-ukraine.jpg
-author: don
 description: Which Treats of the Character and Pursuits of the Famous Gentleman Don Quixote of La Mancha
 ---
 

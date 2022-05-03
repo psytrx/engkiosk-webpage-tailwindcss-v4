@@ -1,10 +1,8 @@
 ---
 layout: ../../../layouts/podcast-episode.astro
 title: "#12 Make oder Buy"
-tag: movie
 date: 2022-03-29
 image: /images/podcast/episode/12-make-oder-buy.jpg
-author: don
 description: Which Treats of the Character and Pursuits of the Famous Gentleman Don Quixote of La Mancha
 ---
 

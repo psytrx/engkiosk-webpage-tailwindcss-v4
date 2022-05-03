@@ -113,12 +113,8 @@ for item in channel.findall('item'):
         '---\n'
         'layout: ../../../layouts/podcast-episode.astro\n'
         f'title: "{title}"\n'
-        # TODO Do we need tags?
-        f'tag: movie\n'
         f'date: {date_parsed}\n'
         f'image: {image_filename}\n'
-        # TODO Do we need author?
-        f'author: don\n'
         # TODO What would be useful as a short description?
         f'description: Which Treats of the Character and Pursuits of the Famous Gentleman Don Quixote of La Mancha\n'
         '---\n'

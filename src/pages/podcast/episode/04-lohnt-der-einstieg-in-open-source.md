@@ -1,10 +1,8 @@
 ---
 layout: ../../../layouts/podcast-episode.astro
 title: "#04 Lohnt der Einstieg in Open Source?"
-tag: movie
 date: 2022-01-25
 image: /images/podcast/episode/04-lohnt-der-einstieg-in-open-source.jpg
-author: don
 description: Which Treats of the Character and Pursuits of the Famous Gentleman Don Quixote of La Mancha
 ---
 

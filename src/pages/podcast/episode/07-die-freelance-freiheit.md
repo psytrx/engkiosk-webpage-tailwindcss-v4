@@ -1,10 +1,8 @@
 ---
 layout: ../../../layouts/podcast-episode.astro
 title: "#07 Die Freelance Freiheit"
-tag: movie
 date: 2022-02-22
 image: /images/podcast/episode/07-die-freelance-freiheit.jpg
-author: don
 description: Which Treats of the Character and Pursuits of the Famous Gentleman Don Quixote of La Mancha
 ---
 

@@ -1,10 +1,8 @@
 ---
 layout: ../../../layouts/podcast-episode.astro
 title: "#13 Produktivität"
-tag: movie
 date: 2022-04-05
 image: /images/podcast/episode/13-produktivität.jpg
-author: don
 description: Which Treats of the Character and Pursuits of the Famous Gentleman Don Quixote of La Mancha
 ---
 

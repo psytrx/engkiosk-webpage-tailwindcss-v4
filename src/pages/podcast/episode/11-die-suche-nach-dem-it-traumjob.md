@@ -1,10 +1,8 @@
 ---
 layout: ../../../layouts/podcast-episode.astro
 title: "#11 Die Suche nach dem IT Traumjob"
-tag: movie
 date: 2022-03-22
 image: /images/podcast/episode/11-die-suche-nach-dem-it-traumjob.jpg
-author: don
 description: Which Treats of the Character and Pursuits of the Famous Gentleman Don Quixote of La Mancha
 ---
 

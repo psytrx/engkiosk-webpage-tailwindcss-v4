@@ -1,10 +1,8 @@
 ---
 layout: ../../../layouts/podcast-episode.astro
 title: "#01 Side Projects - Fluch oder Segen für die Karriere?"
-tag: movie
 date: 2022-01-03
 image: /images/podcast/episode/01-side-projects-fluch-oder-segen-für-die-karriere.jpg
-author: don
 description: Which Treats of the Character and Pursuits of the Famous Gentleman Don Quixote of La Mancha
 ---
 

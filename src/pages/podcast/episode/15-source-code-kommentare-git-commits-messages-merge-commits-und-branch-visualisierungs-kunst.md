@@ -1,10 +1,8 @@
 ---
 layout: ../../../layouts/podcast-episode.astro
 title: "#15  Source Code Kommentare, Git Commits Messages, Merge Commits und Branch-Visualisierungs-Kunst"
-tag: movie
 date: 2022-04-19
 image: /images/podcast/episode/15-source-code-kommentare-git-commits-messages-merge-commits-und-branch-visualisierungs-kunst.jpg
-author: don
 description: Which Treats of the Character and Pursuits of the Famous Gentleman Don Quixote of La Mancha
 ---
 

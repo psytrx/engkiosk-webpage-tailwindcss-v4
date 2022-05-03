@@ -1,10 +1,8 @@
 ---
 layout: ../../../layouts/podcast-episode.astro
 title: "#05 Team Lead - der einzige Ausweg"
-tag: movie
 date: 2022-02-01
 image: /images/podcast/episode/05-team-lead-der-einzige-ausweg.jpg
-author: don
 description: Which Treats of the Character and Pursuits of the Famous Gentleman Don Quixote of La Mancha
 ---
 

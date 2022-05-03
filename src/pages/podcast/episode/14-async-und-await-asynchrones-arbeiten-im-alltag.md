@@ -1,10 +1,8 @@
 ---
 layout: ../../../layouts/podcast-episode.astro
 title: "#14 async und await: asynchrones Arbeiten im Alltag"
-tag: movie
 date: 2022-04-12
 image: /images/podcast/episode/14-async-und-await-asynchrones-arbeiten-im-alltag.jpg
-author: don
 description: Which Treats of the Character and Pursuits of the Famous Gentleman Don Quixote of La Mancha
 ---
 
