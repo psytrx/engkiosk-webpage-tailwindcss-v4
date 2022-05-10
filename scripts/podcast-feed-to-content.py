@@ -47,6 +47,18 @@ def download_file(url, local_filename):
 
     return file_name
 
+
+CLEANR = re.compile('<.*?>')
+
+# Not an awesome logic, but enough for our usecase.
+# See https://stackoverflow.com/questions/9662346/python-code-to-remove-html-tags-from-a-string for more.
+def cleanhtml(raw_html):
+    """
+    Removing all HTML tags.
+    """
+    cleantext = re.sub(CLEANR, '', raw_html)
+    return cleantext
+
 # Global variables
 podcast_rss_feed = "https://feeds.redcircle.com/0ecfdfd7-fda1-4c3d-9515-476727f9df5e"
 base_content_write_path = 'src/pages/podcast/episode'
@@ -81,6 +93,10 @@ for item in channel.findall('item'):
     # - link
     title = item.find('title').text
     description = item.find('description').text
+    description_text_only = cleanhtml(description)
+
+    ix = max(description_text_only.find(' ', 120), 120)
+    description_short = description_text_only[:ix]
 
     # Date format: Tue, 05 Apr 2022 04:25:00 +0000
     pub_date = item.find('pubDate').text
@@ -115,8 +131,7 @@ for item in channel.findall('item'):
         f'title: "{title}"\n'
         f'date: {date_parsed}\n'
         f'image: {image_filename}\n'
-        # TODO What would be useful as a short description?
-        f'description: Which Treats of the Character and Pursuits of the Famous Gentleman Don Quixote of La Mancha\n'
+        f'description: "{description_short} ..."\n'
         '---\n'
         '\n'
         # TODO Description has tons of HTML code right now
