@@ -9,28 +9,30 @@ import authorData from '../data/authors.json';
 
 const { numberOfItems } = Astro.props;
 
-
 // Build the list of posts
 let allPosts = await Astro.glob('../pages/post/*.md');
 allPosts.sort((a, b) => new Date(b.frontmatter.date).valueOf() - new Date(a.frontmatter.date).valueOf());
-let firstSixPosts = allPosts.slice(0, 6);
 
-// Default wise list all items,
-// only limit it if requested
+// Default wise list all items, only limit it if requested
 let postsToShow = allPosts;
 let showAllButton = false;
 if (numberOfItems > 0) {
 	postsToShow = allPosts.slice(0, numberOfItems);
 	showAllButton = true;
 }
+
 ---
 
 <section class="py-16 md:py-24 lg:pb-52 bg-white" style="background-image: url('/images/elements/pattern-white.svg'); background-repeat: no-repeat; background-position: center top;">
 	<div class="container px-4 mx-auto">
 		<div class="flex flex-wrap items-center mb-16">
 			<div class="w-full md:w-3/4 mb-8 md:mb-0">
-				<span class="inline-block py-px px-2 mb-4 text-xs leading-5 text-yellow-500 bg-yellow-100 font-medium uppercase rounded-full shadow-sm">Blog</span>
-				<h3 class="mb-4 text-4xl md:text-5xl leading-tight text-darkCoolGray-900 font-bold tracking-tighter">Blog posts</h3>
+				<span class="inline-block py-px px-2 mb-4 text-xs leading-5 text-yellow-500 bg-yellow-100 font-medium uppercase rounded-full shadow-sm">
+					Blog
+				</span>
+				<h3 class="mb-4 text-4xl md:text-5xl leading-tight text-darkCoolGray-900 font-bold tracking-tighter">
+					Blog posts
+				</h3>
 				<p class="text-lg md:text-xl text-coolGray-500 font-medium">
 					With our integrated CRM, project management,
 					collaboration and invoicing capabilities, you can manage your business in one secure platform.
@@ -38,7 +40,9 @@ if (numberOfItems > 0) {
 			</div>
 			{ showAllButton && 
 				<div class="w-full md:w-1/4">
-					<a class="flex items-center justify-center py-2 px-4 ml-auto text-sm leading-5 text-yellow-50 font-medium bg-yellow-500 hover:bg-yellow-600 focus:ring-2 focus:ring-yellow-500 focus:ring-opacity-50 md:max-w-max rounded-md" href="/blog">Alle Blog posts anzeigen All Posts</a>
+					<a class="flex items-center justify-center py-2 px-4 ml-auto text-sm leading-5 text-yellow-50 font-medium bg-yellow-500 hover:bg-yellow-600 focus:ring-2 focus:ring-yellow-500 focus:ring-opacity-50 md:max-w-max rounded-md" href="/blog">
+						Alle Blog posts anzeigen
+					</a>
 				</div>
 			}
 		</div>
