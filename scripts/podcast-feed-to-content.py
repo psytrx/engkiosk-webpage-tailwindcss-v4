@@ -174,6 +174,9 @@ for item in channel.findall('item'):
     # https://docs.python.org/3/library/datetime.html#strftime-strptime-behavior
     date_parsed = datetime.datetime.strptime(pub_date, '%a, %d %b %Y %H:%M:%S %z').strftime('%Y-%m-%d')
     
+    mp3 = item.find('enclosure')
+    mp3_link = mp3.attrib.get('url')
+
     # If an image is available,
     # download it and store it in the public folder
     image = item.find('{http://www.itunes.com/dtds/podcast-1.0.dtd}image')
@@ -199,6 +202,7 @@ for item in channel.findall('item'):
         '---\n'
         'layout: ../../../layouts/podcast-episode.astro\n'
         f'title: "{title}"\n'
+        f'audio: "{mp3_link}"\n'
         f'date: {date_parsed}\n'
         f'image: {image_filename}\n'
         f'description: "{description_short} ..."\n'

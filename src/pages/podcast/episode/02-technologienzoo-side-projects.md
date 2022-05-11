@@ -1,6 +1,7 @@
 ---
 layout: ../../../layouts/podcast-episode.astro
 title: "#02 Technologienzoo Side Projects"
+audio: "https://stream.redcircle.com/episodes/7cce4a7c-8405-40c3-a9bf-dd902f0a07d8/stream.mp3"
 date: 2022-01-10
 image: /images/podcast/episode/02-technologienzoo-side-projects.jpg
 description: "Wolfgang und Andy erzählen ein wenig was über ihre eigenen Side Projects sourcectl (https://gettoknow.sourcectl.dev/), F-Online ..."

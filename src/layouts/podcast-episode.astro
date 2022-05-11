@@ -6,6 +6,10 @@ import Footer from '../components/Footer.astro';
 const { content } = Astro.props;
 let canonicalURL = Astro.canonicalURL;
 
+let content_title = content.title;
+let content_audio = content.audio;
+
+
 function formatDate(date) {
 	const options = {
 		weekday: 'long',
@@ -45,6 +49,18 @@ headline_split.forEach(function callback(val) {
 	<head>
 		<title>{content.title}</title>
 		<MainHead title={content.title} description={content.description} image={content.image} {canonicalURL} />
+
+		<!-- TODO configure player https://github.com/podigee/podigee-podcast-player/blob/master/docs/configuration.md -->
+		<script define:vars={{ content_audio, content_title }}>
+			window.playerConfiguration = {
+				"episode": {
+					"media": {
+						"mp3": content_audio
+					},
+					"title": content_title
+				}
+			}
+		</script>
 	</head>
 
 	<body class="antialiased bg-body text-body font-body">
@@ -69,22 +85,13 @@ headline_split.forEach(function callback(val) {
                 					<p class="inline-block text-yellow-500 font-medium">
 										<time class="date" datetime={content.date}>{formatDate(content.date)}</time>
 									</p>
-              					</div>
-              					<h2 class="mb-4 text-3xl md:text-4xl lg:text-5xl leading-tight text-darkCoolGray-900 font-bold tracking-tighter">
+								</div>
+								<h2 class="mb-8 text-3xl md:text-4xl lg:text-5xl leading-tight text-darkCoolGray-900 font-bold tracking-tighter">
 									{content.title}
 								</h2>
-              					<p class="mb-8 md:mb-12 text-lg md:text-xl font-medium text-coolGray-500">
-								  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-								</p>
-              					<div class="flex items-center -mx-2">
-                					<div class="w-auto px-2">
-                  						<img src="/images/blog/avatar.png" alt="">
-                					</div>
-                					<div class="w-auto px-2">
-                  						<h4 class="text-base md:text-lg font-bold text-coolGray-800">John Doe</h4>
-                  						<p class="text-base md:text-lg text-coolGray-500">12 October 2021</p>
-                					</div>
-              					</div>
+								<div>
+									<script class="podigee-podcast-player" src="https://cdn.podigee.com/podcast-player/javascripts/podigee-podcast-player.js" data-configuration="playerConfiguration"></script>
+								</div>
             				</div>
           				</div>
           				<div class="flex flex-wrap -mx-4">

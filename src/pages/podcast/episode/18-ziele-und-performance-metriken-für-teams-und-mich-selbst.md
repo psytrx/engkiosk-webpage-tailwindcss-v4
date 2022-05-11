@@ -1,6 +1,7 @@
 ---
 layout: ../../../layouts/podcast-episode.astro
 title: "#18 Ziele und Performance-Metriken für Teams und mich selbst"
+audio: "https://stream.redcircle.com/episodes/0e0b7c29-15dd-4a06-aeaa-3bd87ebad9aa/stream.mp3"
 date: 2022-05-10
 image: /images/podcast/episode/18-ziele-und-performance-metriken-für-teams-und-mich-selbst.jpg
 description: "Ziel-Definitionen und Mitarbeiter-Metriken: Sinnvoll oder totaler Blödsinn?Das Thema ist heiß umstritten. Viele lieben Ziele ..."

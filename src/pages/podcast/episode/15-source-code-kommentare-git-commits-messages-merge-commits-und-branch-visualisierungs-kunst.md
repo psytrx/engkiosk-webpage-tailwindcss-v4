@@ -1,6 +1,7 @@
 ---
 layout: ../../../layouts/podcast-episode.astro
 title: "#15  Source Code Kommentare, Git Commits Messages, Merge Commits und Branch-Visualisierungs-Kunst"
+audio: "https://stream.redcircle.com/episodes/af8ca39f-afd0-4a99-b1ff-1cc11ab176ad/stream.mp3"
 date: 2022-04-19
 image: /images/podcast/episode/15-source-code-kommentare-git-commits-messages-merge-commits-und-branch-visualisierungs-kunst.jpg
 description: "Kommentare im Quellcode und Git Commit Messages - Liest die überhaupt wer?Ein Streit, der so alt ist wie die Software Entwicklung ..."

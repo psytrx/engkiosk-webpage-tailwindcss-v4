@@ -1,6 +1,7 @@
 ---
 layout: ../../../layouts/podcast-episode.astro
 title: "#05 Team Lead - der einzige Ausweg"
+audio: "https://stream.redcircle.com/episodes/41cfb14d-7091-482a-9d05-eb21219897ab/stream.mp3"
 date: 2022-02-01
 image: /images/podcast/episode/05-team-lead-der-einzige-ausweg.jpg
 description: "Engineering Manager oder Team-Lead: Eine Position die sehr motivierend, aber auch abschreckend wirken kann.Was erwartet einen? ..."

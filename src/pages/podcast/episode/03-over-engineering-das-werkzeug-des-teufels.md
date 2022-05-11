@@ -1,6 +1,7 @@
 ---
 layout: ../../../layouts/podcast-episode.astro
 title: "#03 Over-Engineering, das Werkzeug des Teufels?"
+audio: "https://stream.redcircle.com/episodes/8ab59758-598f-459b-8d7f-f832ced2b87f/stream.mp3"
 date: 2022-01-18
 image: /images/podcast/episode/03-over-engineering-das-werkzeug-des-teufels.jpg
 description: "Was ist eigentlich Over-Engineering? Und wann ist es einfach nur gutes Engineering? Ist das eigentlich immer nur negativ? ..."

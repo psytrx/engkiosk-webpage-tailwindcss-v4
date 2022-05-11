@@ -1,6 +1,7 @@
 ---
 layout: ../../../layouts/podcast-episode.astro
 title: "#06 Hype oder Hope: Job-Titel und Beförderungen"
+audio: "https://stream.redcircle.com/episodes/d6840c34-1e98-42b6-82aa-5cb76b200fa6/stream.mp3"
 date: 2022-02-15
 image: /images/podcast/episode/07-die-freelance-freiheit.jpg
 description: "Sind Machine Learning und Artificial Intelligence nur Hypes oder sollte ich meine Karriere dahingehend ausrichten? Und welche ..."

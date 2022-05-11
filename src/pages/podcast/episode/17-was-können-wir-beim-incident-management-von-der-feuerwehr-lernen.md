@@ -1,6 +1,7 @@
 ---
 layout: ../../../layouts/podcast-episode.astro
 title: "#17 Was können wir beim Incident Management von der Feuerwehr lernen?"
+audio: "https://stream.redcircle.com/episodes/3c0581f5-309a-421c-b731-b28b211564c7/stream.mp3"
 date: 2022-05-03
 image: /images/podcast/episode/17-was-können-wir-beim-incident-management-von-der-feuerwehr-lernen.jpg
 description: "Was haben die Methoden der Feuerwehr zur Bekämpfung von Großschadensereignissen mit dem Incident Management von IT-Systemen ..."

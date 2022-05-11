@@ -1,6 +1,7 @@
 ---
 layout: ../../../layouts/podcast-episode.astro
 title: "#13 Produktivität"
+audio: "https://stream.redcircle.com/episodes/84908405-bd61-4398-bdf3-134fddb59c3e/stream.mp3"
 date: 2022-04-05
 image: /images/podcast/episode/13-produktivität.jpg
 description: "Zeit- und Produktivitätsmanagement: Buzzword-Bingo oder bringt das wirklich was?So blöd wie das Thema auch klingen mag, es ..."

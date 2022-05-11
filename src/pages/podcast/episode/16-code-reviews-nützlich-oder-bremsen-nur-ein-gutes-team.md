@@ -1,6 +1,7 @@
 ---
 layout: ../../../layouts/podcast-episode.astro
 title: "#16 Code Reviews: Nützlich oder bremsen nur ein gutes Team?"
+audio: "https://stream.redcircle.com/episodes/7c477eeb-e8a1-43e3-9663-8c6d9118645f/stream.mp3"
 date: 2022-04-26
 image: /images/podcast/episode/16-code-reviews-nützlich-oder-bremsen-nur-ein-gutes-team.jpg
 description: "Code Reviews: Jeder will schnelles Feedback, doch niemand hat Zeit dafür - Eine Hassliebe.Eine Komponente im Alltag jedes ..."

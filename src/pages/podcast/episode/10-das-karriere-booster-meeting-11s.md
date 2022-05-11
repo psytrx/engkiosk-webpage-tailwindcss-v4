@@ -1,6 +1,7 @@
 ---
 layout: ../../../layouts/podcast-episode.astro
 title: "#10 Das Karriere Booster Meeting 1:1s"
+audio: "https://stream.redcircle.com/episodes/c8d31470-3a28-443c-aafd-af96625f4146/stream.mp3"
 date: 2022-03-15
 image: /images/podcast/episode/10-das-karriere-booster-meeting-11s.jpg
 description: "1on1s - Zeitverschwendung oder eins der wertvollsten Meetings deiner Karriere?Andy und Wolfgang sprechen über das meist unterschätzte ..."

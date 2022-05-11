@@ -1,6 +1,7 @@
 ---
 layout: ../../../layouts/podcast-episode.astro
 title: "#04 Lohnt der Einstieg in Open Source?"
+audio: "https://stream.redcircle.com/episodes/08ff2242-89e4-4533-8498-93d201ed6679/stream.mp3"
 date: 2022-01-25
 image: /images/podcast/episode/04-lohnt-der-einstieg-in-open-source.jpg
 description: "Für Andy ist Open Source und die Open Source Community ist bereits ein langer und essentieller Begleiter. In dieser Episode ..."

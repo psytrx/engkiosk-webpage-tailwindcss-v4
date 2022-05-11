@@ -1,6 +1,7 @@
 ---
 layout: ../../../layouts/podcast-episode.astro
 title: "#11 Die Suche nach dem IT Traumjob"
+audio: "https://stream.redcircle.com/episodes/ba617374-c9e2-4ccb-9cd5-a90cda8b62a7/stream.mp3"
 date: 2022-03-22
 image: /images/podcast/episode/11-die-suche-nach-dem-it-traumjob.jpg
 description: "Den richtigen Arbeitgeber und die richtige Firma finden: Eine Mammut-Aufgabe.In dieser Episode sprechen Wolfgang und Andy ..."

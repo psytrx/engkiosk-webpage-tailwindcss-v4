@@ -1,6 +1,7 @@
 ---
 layout: ../../../layouts/podcast-episode.astro
 title: "#14 async und await: asynchrones Arbeiten im Alltag"
+audio: "https://stream.redcircle.com/episodes/3577c74d-2d25-408e-9107-1fae71daf76a/stream.mp3"
 date: 2022-04-12
 image: /images/podcast/episode/14-async-und-await-asynchrones-arbeiten-im-alltag.jpg
 description: "Remote-Work, asynchrone und parallele Arbeit und die eigene Work-Life-Balance.Durch Corona haben wir alle einen Geschmack ..."

@@ -1,6 +1,7 @@
 ---
 layout: ../../../layouts/podcast-episode.astro
 title: "#01 Side Projects - Fluch oder Segen für die Karriere?"
+audio: "https://stream.redcircle.com/episodes/b421f30e-6b8e-4351-8644-7a89b1343287/stream.mp3"
 date: 2022-01-03
 image: /images/podcast/episode/01-side-projects-fluch-oder-segen-für-die-karriere.jpg
 description: "Zwei Engineering Manager über Side Projects: Wie diese den Recruiting Prozess beeinflussen, welche Learnings aus einem Projekt ..."

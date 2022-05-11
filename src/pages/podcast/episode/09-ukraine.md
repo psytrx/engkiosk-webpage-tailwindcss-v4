@@ -1,6 +1,7 @@
 ---
 layout: ../../../layouts/podcast-episode.astro
 title: "#09 Ukraine"
+audio: "https://stream.redcircle.com/episodes/62eae97a-f058-4352-97a2-d2bc5c48b688/stream.mp3"
 date: 2022-03-08
 image: /images/podcast/episode/09-ukraine.jpg
 description: "Es wird politisch: Der Angriffskrieg auf die Ukraine und eine möglichst technische Beleuchtung des Themas.Wolfgang und Andy ..."

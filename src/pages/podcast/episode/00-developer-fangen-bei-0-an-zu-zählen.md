@@ -1,6 +1,7 @@
 ---
 layout: ../../../layouts/podcast-episode.astro
 title: "#00 Developer fangen bei 0 an zu zählen"
+audio: "https://stream.redcircle.com/episodes/8d890e77-cc0f-4cf7-b35b-bf5a21553d60/stream.mp3"
 date: 2022-02-08
 image: /images/podcast/episode/00-developer-fangen-bei-0-an-zu-zählen.jpg
 description: "Software Engineers fangen bei 0 an zu zählen. Das Engineering Kiosk ist direkt bei Episode 1 gestartet. Diesen Off-by-one ..."
