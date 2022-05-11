@@ -90,6 +90,8 @@ def make_html_beautiful(raw_html):
 
     html = html.replace("<p><br></p>", "")
 
+    html = html.replace("<p>", '<p class="mb-6 text-base md:text-lg text-coolGray-500">')
+
     # Headlines
     html = html.replace("<h3><br></h3>", "")
     html = html.replace("<h3><span>", '<h3>')
