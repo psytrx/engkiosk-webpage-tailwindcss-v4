@@ -6,7 +6,7 @@ import Footer from '../components/Footer.astro';
 const { content } = Astro.props;
 let canonicalURL = Astro.canonicalURL;
 ---
-<html lang="en">
+<html lang="de">
 	<head>
 		<title>{content.title}</title>
 		<MainHead title={content.title} description={content.description} image={content.image} {canonicalURL} />
