@@ -5,7 +5,8 @@ import unicodedata
 import re
 import mimetypes
 import datetime
-
+import sys
+from slugify import slugify
 
 # From the Django project
 # See https://docs.djangoproject.com/en/2.1/_modules/django/utils/text/#slugify
@@ -52,12 +53,70 @@ CLEANR = re.compile('<.*?>')
 
 # Not an awesome logic, but enough for our usecase.
 # See https://stackoverflow.com/questions/9662346/python-code-to-remove-html-tags-from-a-string for more.
-def cleanhtml(raw_html):
+def remove_html_tags(raw_html):
     """
     Removing all HTML tags.
     """
     cleantext = re.sub(CLEANR, '', raw_html)
     return cleantext
+
+def make_html_beautiful(raw_html):
+    """
+    Okay. Welcome to the real dirty part.
+    The thing is ... we get HTML form the Podcast platforms Rich Text Editor.
+    And we want to have a nice looking presentation of this content on
+    our webpage.
+    We can do some highly intelligent computer science logic or play dirty, simple
+    and full of potential errors, edge cases and more.
+    And that is what we are doing ....
+
+        Welcome to HTML string replacing
+
+    We can do it either here or in the JavaScript of the static site generator.
+    For now, I decided to do it here. And yes, this means, if we change the design
+    of our webpage, we have to edit this one here.
+    Bad, but to be honest, this design won't likely change in the next 2 years.
+
+    If you think this is way to dirty for a Software Engineering Podcast and you feel
+    challenged, go ahead, improve it and send us a PR. Happy to review it.
+    Otherwise, we continue with this crime.
+
+    TODO style links
+    TODO Move bullet points inside and as block
+    TODO Link sprungmarken
+    """
+    html = raw_html.replace("<p><span>", '<p class="mb-6 text-base md:text-lg text-coolGray-500">')
+    html = html.replace("</span></p>", "</p>")
+
+    html = html.replace("<p><br></p>", "")
+
+    # Headlines
+    html = html.replace("<h3><br></h3>", "")
+    html = html.replace("<h3><span>", '<h3>')
+    html = html.replace("</span></h3>", "</h3>")
+
+    # Get all headlines
+    headline_slugs = {}
+    found_headlines = re.findall("<h3>(.*?)</h3>", html)
+    for h in found_headlines:
+        slug = slugify(h)
+        html = html.replace(f"<h3>{h}", f'<h3 class="mb-4 text-2xl md:text-3xl font-semibold text-coolGray-800" id={slug}>{h}')
+        headline_slugs[slug] = h
+
+    html = html.replace("<ul>", '<ul class="list-disc list-outside mb-6 md:px-5 text-base md:text-lg text-coolGray-500" style="list-style-type: disc;">')
+    html = html.replace("<li><span>", '<li>')
+    html = html.replace("</span></li>", "</li>")
+
+    # This is also very dirty
+    # We need the headline <-> slug relation.
+    # We could write another function, but we have the whole processing
+    # already here. So why not?
+    info = {
+        "html": html,
+        "headlines": headline_slugs,
+    }
+    return info
+
 
 # Global variables
 podcast_rss_feed = "https://feeds.redcircle.com/0ecfdfd7-fda1-4c3d-9515-476727f9df5e"
@@ -93,7 +152,18 @@ for item in channel.findall('item'):
     # - link
     title = item.find('title').text
     description = item.find('description').text
-    description_text_only = cleanhtml(description)
+
+    # If you use a standing desk, it might be good, if you take a seat now.
+    # The next line is pretty dirty, even it is called to be beautiful.
+    # ... <waiting until you sit> ...
+    # Now jump to the function documentation to see why it is far from beautiful.
+    html_info = make_html_beautiful(description)
+    description_html = html_info["html"]
+
+    # Parse headlines
+    headline_info = '||'.join([f'{slug}::{headline}' for slug, headline in html_info["headlines"].items()])
+
+    description_text_only = remove_html_tags(description)
 
     ix = max(description_text_only.find(' ', 120), 120)
     description_short = description_text_only[:ix]
@@ -132,10 +202,11 @@ for item in channel.findall('item'):
         f'date: {date_parsed}\n'
         f'image: {image_filename}\n'
         f'description: "{description_short} ..."\n'
+        f'headlines: "{headline_info}"\n'
         '---\n'
         '\n'
         # TODO Description has tons of HTML code right now
-        f'{description}'
+        f'{description_html}'
     )
 
     # Write file to disk as a new podcast episode
