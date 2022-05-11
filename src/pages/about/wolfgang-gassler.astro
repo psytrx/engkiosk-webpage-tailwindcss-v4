@@ -8,14 +8,14 @@ let description = 'About page of an example blog on Astro';
 let canonicalURL = Astro.canonicalURL;
 ---
 
-<html lang="en">
+<html lang="de">
 	<head>
 		<title>{title}</title>
 		<MainHead title={title} description={description} {canonicalURL} />
 	</head>
 
 	<body class="antialiased bg-body text-body font-body">
-		<div class=""> 
+		<div>
 			<Nav title={title} />
 
 			<section class="py-24 bg-coolGray-50" style="background-image: url('/images/elements/pattern-light-big.svg'); background-position: center;">

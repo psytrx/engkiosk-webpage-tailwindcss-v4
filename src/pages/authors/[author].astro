@@ -19,7 +19,7 @@ const posts = allPosts.filter((post) => post.frontmatter.author === Astro.params
 const author = authorData[posts[0].frontmatter.author];
 ---
 
-<html lang="en">
+<html lang="de">
 	<head>
 		<title>{title}</title>
 		<MainHead {title} {description} image={posts[0].frontmatter.image} canonicalURL={Astro.canonicalURL.toString()} />

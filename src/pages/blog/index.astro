@@ -9,14 +9,14 @@ const title = 'Engineering Kiosk';
 const description = 'An example blog on Astro';
 const { canonicalURL } = Astro.canonicalURL;
 ---
-<html lang="en">
+<html lang="de">
 	<head>
 		<title>{title}</title>
 		<MainHead {title} {description} canonicalURL={canonicalURL} />
 	</head>
 
 	<body class="antialiased bg-body text-body font-body">
-		<div class=""> 
+		<div>
 			<Nav title={title} />
 
 			<BlogPostListing numberOfItems=0 />
