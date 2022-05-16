@@ -82,7 +82,6 @@ def make_html_beautiful(raw_html):
     Otherwise, we continue with this crime.
 
     TODO style links
-    TODO Move bullet points inside and as block
     TODO Link sprungmarken
     """
     html = raw_html.replace("<p><span>", '<p class="mb-6 text-base md:text-lg text-coolGray-500">')
@@ -105,7 +104,9 @@ def make_html_beautiful(raw_html):
         html = html.replace(f"<h3>{h}", f'<h3 class="mb-4 text-2xl md:text-3xl font-semibold text-coolGray-800" id={slug}>{h}')
         headline_slugs[slug] = h
 
-    html = html.replace("<ul>", '<ul class="list-disc list-outside mb-6 md:px-5 text-base md:text-lg text-coolGray-500" style="list-style-type: disc;">')
+    # For some unknown reason, the tailwind classes don't work here
+    # I have to go with inline styles ...
+    html = html.replace("<ul>", '<ul class="list-disc px-5 mb-6 md:px-5 text-base md:text-lg text-coolGray-500" style="list-style-type: disc;">')
     html = html.replace("<li><span>", '<li>')
     html = html.replace("</span></li>", "</li>")
 
