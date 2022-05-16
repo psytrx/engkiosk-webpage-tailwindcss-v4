@@ -81,7 +81,6 @@ def make_html_beautiful(raw_html):
     challenged, go ahead, improve it and send us a PR. Happy to review it.
     Otherwise, we continue with this crime.
 
-    TODO style links
     TODO Link sprungmarken
     """
     html = raw_html.replace("<p><span>", '<p class="mb-6 text-base md:text-lg text-coolGray-500">')
@@ -109,6 +108,11 @@ def make_html_beautiful(raw_html):
     html = html.replace("<ul>", '<ul class="list-disc px-5 mb-6 md:px-5 text-base md:text-lg text-coolGray-500" style="list-style-type: disc;">')
     html = html.replace("<li><span>", '<li>')
     html = html.replace("</span></li>", "</li>")
+
+    # Style links
+    # Again, no clue why the default styles overrule
+    # TODO Figure out why style is necessary, and hover is not working
+    html = html.replace('<a ', '<a class="underline hover:no-underline" style="text-decoration-line: underline;"')
 
     # This is also very dirty
     # We need the headline <-> slug relation.
