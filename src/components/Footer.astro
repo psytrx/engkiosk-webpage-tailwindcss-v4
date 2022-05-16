@@ -73,17 +73,17 @@
             <h3 class="mb-5 text-lg font-bold text-coolGray-900">
                 Newsletter
             </h3>
-            <div class="flex flex-wrap">
-                <div class="w-full lg:flex-1 py-1 lg:py-0 lg:mr-3">
-                    <input class="px-3 w-full h-12 text-coolGray-900 outline-none placeholder-coolGray-500 border border-coolGray-200 focus:ring-2 focus:ring-yellow-500 focus:ring-opacity-50 rounded-lg shadow-xsm" placeholder="Deine E-Mail-Adresse">
+            <form action="https://tinyletter.com/EngineeringKiosk" method="post" target="popupwindow" onsubmit="window.open('https://tinyletter.com/EngineeringKiosk', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true">
+                <div class="flex flex-wrap">
+                    <input type="hidden" value="1" name="embed"/>
+                    <div class="w-full lg:flex-1 py-1 lg:py-0 lg:mr-3">
+                        <input class="px-3 w-full h-12 text-coolGray-900 outline-none placeholder-coolGray-500 border border-coolGray-200 focus:ring-2 focus:ring-yellow-500 focus:ring-opacity-50 rounded-lg shadow-xsm" name="email" placeholder="Deine E-Mail-Adresse">
+                    </div>
+                    <div class="w-full lg:w-auto py-1 lg:py-0">
+                        <input type="submit" class=" py-4 px-5 leading-4 text-yellow-50 font-medium text-center bg-yellow-500 hover:bg-yellow-600 focus:ring-2 focus:ring-yellow-500 focus:ring-opacity-50 rounded-md shadow-sm" value="Anmelden">
+                    </div>
                 </div>
-                <div class="w-full lg:w-auto py-1 lg:py-0">
-                    <a class="inline-block py-4 px-5 w-full leading-4 text-yellow-50 font-medium text-center bg-yellow-500 hover:bg-yellow-600 focus:ring-2 focus:ring-yellow-500 focus:ring-opacity-50 rounded-md shadow-sm" href="#">
-                        Anmelden
-                    </a>
-                </div>
-            </div>
-        </div>
+            </form>
         </div>
     </div>
     <div class="border-b border-coolGray-100"></div>
