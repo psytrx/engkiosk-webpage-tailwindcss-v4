@@ -9,6 +9,8 @@ let canonicalURL = Astro.canonicalURL;
 let content_title = content.title;
 let content_audio = content.audio;
 let content_chapter = content.chapter;
+let content_image = content.image;
+let content_description = content.description;
 
 function formatDate(date) {
 	const options = {
@@ -50,21 +52,27 @@ headline_split.forEach(function callback(val) {
 		<title>{content.title}</title>
 		<MainHead title={content.title} description={content.description} image={content.image} {canonicalURL} />
 
-		<!-- TODO configure player https://github.com/podigee/podigee-podcast-player/blob/master/docs/configuration.md -->
-		<script define:vars={{ content_audio, content_title, content_chapter }}>
+		<!--
+			Full configuration docs available at
+			https://github.com/podigee/podigee-podcast-player/blob/master/docs/configuration.md
+		-->
+		<script define:vars={{ content_audio, content_title, content_chapter, canonicalURL, content_description}}>
 			window.playerConfiguration = {
 				"options": {
 					"startPanel": "ChapterMarks"
 				},
 				"podcast": {
 					"title": "Engineering Kiosk",
+					"feed": "https://feeds.redcircle.com/0ecfdfd7-fda1-4c3d-9515-476727f9df5e",
 				},
 				"episode": {
 					"title": content_title,
 					"media": {
 						"mp3": content_audio
 					},
-					"chaptermarks": content_chapter
+					"chaptermarks": content_chapter,
+					"description": content_description,
+					"url": canonicalURL
 				}
 			}
 		</script>
