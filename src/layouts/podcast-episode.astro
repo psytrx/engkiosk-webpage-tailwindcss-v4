@@ -8,7 +8,7 @@ let canonicalURL = Astro.canonicalURL;
 
 let content_title = content.title;
 let content_audio = content.audio;
-
+let content_chapter = content.chapter;
 
 function formatDate(date) {
 	const options = {
@@ -51,13 +51,20 @@ headline_split.forEach(function callback(val) {
 		<MainHead title={content.title} description={content.description} image={content.image} {canonicalURL} />
 
 		<!-- TODO configure player https://github.com/podigee/podigee-podcast-player/blob/master/docs/configuration.md -->
-		<script define:vars={{ content_audio, content_title }}>
+		<script define:vars={{ content_audio, content_title, content_chapter }}>
 			window.playerConfiguration = {
+				"options": {
+					"startPanel": "ChapterMarks"
+				},
+				"podcast": {
+					"title": "Engineering Kiosk",
+				},
 				"episode": {
+					"title": content_title,
 					"media": {
 						"mp3": content_audio
 					},
-					"title": content_title
+					"chaptermarks": content_chapter
 				}
 			}
 		</script>

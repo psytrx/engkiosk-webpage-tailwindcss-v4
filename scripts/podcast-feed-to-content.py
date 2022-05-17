@@ -6,6 +6,8 @@ import re
 import mimetypes
 import datetime
 import sys
+import yaml
+import html
 from slugify import slugify
 
 # From the Django project
@@ -124,6 +126,22 @@ def make_html_beautiful(raw_html):
     }
     return info
 
+def get_chapter_from_description(description):
+    # Chapter entries look like
+    #       <p><span>(00:00:00) Intro</span></p>
+    found_chapters = re.findall("<p><span>\(([0-9:]*)\) ([^<]*)</span></p>", description)
+    chapter = []
+    for c in found_chapters:
+        # In line with chaptermarks from podcast player
+        # See https://github.com/podigee/podigee-podcast-player/blob/master/docs/configuration.md
+        entry = {
+            "start": c[0],
+            "title": html.unescape(c[1]),
+        }
+        chapter.append(entry)
+
+    return chapter
+
 
 # Global variables
 podcast_rss_feed = "https://feeds.redcircle.com/0ecfdfd7-fda1-4c3d-9515-476727f9df5e"
@@ -167,6 +185,8 @@ for item in channel.findall('item'):
     html_info = make_html_beautiful(description)
     description_html = html_info["html"]
 
+    chapter = get_chapter_from_description(description)
+
     # Parse headlines
     headline_info = '||'.join([f'{slug}::{headline}' for slug, headline in html_info["headlines"].items()])
 
@@ -205,18 +225,23 @@ for item in channel.findall('item'):
     filename = slugify(title, True)
     filename = f'{filename}.md'
 
+    data = {
+        'layout': '../../../layouts/podcast-episode.astro',
+        'title': title,
+        'audio': mp3_link,
+        'date': date_parsed,
+        'image': image_filename,
+        'description': description_short,
+        'headlines': headline_info,
+        'chapter': chapter,
+    }
+    content_yaml = yaml.dump(data)
+
     content = (
         '---\n'
-        'layout: ../../../layouts/podcast-episode.astro\n'
-        f'title: "{title}"\n'
-        f'audio: "{mp3_link}"\n'
-        f'date: {date_parsed}\n'
-        f'image: {image_filename}\n'
-        f'description: "{description_short} ..."\n'
-        f'headlines: "{headline_info}"\n'
+        f'{content_yaml}\n'
         '---\n'
         '\n'
-        # TODO Description has tons of HTML code right now
         f'{description_html}'
     )
 
