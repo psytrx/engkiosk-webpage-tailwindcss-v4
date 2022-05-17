@@ -2,77 +2,89 @@
 import Footer from '../components/Footer.astro';
 import MainHead from '../components/MainHead.astro';
 import Nav from '../components/Nav.astro';
-import HostPreview from '../components/HostPreview.astro';
-// TODO Activate blog
-// import BlogPostListing from '../components/BlogPostListing.astro';
-import PodcastEpisodeListing from '../components/PodcastEpisodeListing.astro';
 
 let title = 'Engineering Kiosk';
 // TODO Fix page description
 let description = 'An example blog on Astro';
 let canonicalURL = Astro.canonicalURL;
 
-// TODO Activate blog
-// Data Fetching: List all Markdown posts in the repo.
-let allPosts = await Astro.glob('./post/*.md');
-allPosts.sort((a, b) => new Date(b.frontmatter.date).valueOf() - new Date(a.frontmatter.date).valueOf());
-
-// Determine the latest episode
-// We have places where the last episode is linked
-let allEpisodes = await Astro.glob('../pages/podcast/episode/*.md');
-allEpisodes.sort((a, b) => new Date(b.frontmatter.date).valueOf() - new Date(a.frontmatter.date).valueOf());
-let episodesToShow = allEpisodes.slice(0, 1);
-let episode = episodesToShow[0];
-
-// TODO Build imprint
 ---
 
 <html lang="de">
   <head>
     <title>{title}</title>
-    <!-- TODO Set a proper first image for the startpage -->
-		<MainHead title={title} description={description} image={allPosts[0].frontmatter.image} {canonicalURL} />
+    <!-- TODO Set a proper first image for the startpage image={allPosts[0].frontmatter.image} -->
+		<MainHead title={title} description={description} {canonicalURL} />
 	</head>
 
 	<body class="antialiased bg-body text-body font-body">
-	  <div>
-		  <Nav title={title} />
+		<div>
+			<Nav title={title} />
 
-      <section class="relative bg-white overflow-hidden" style="background-image: url('/images/elements/pattern-white.svg'); background-position: center;">
-			  <div class="py-20 md:py-28">
-				  <div class="container px-4 mx-auto">
-					  <div class="flex flex-wrap xl:items-center -mx-4">
-						  <div class="w-full md:w-1/2 px-4 mb-16 md:mb-0">
-							  <span class="inline-block py-px px-2 mb-4 text-xs leading-5 text-white bg-yellow-500 uppercase rounded-9xl">
-                  Engineering Kiosk
-                </span>
-								<h1 class="mb-6 text-3xl md:text-5xl lg:text-6xl leading-tight font-bold tracking-tight">
-									Impressum
-								</h1>
-								<p class="mb-8 text-lg md:text-xl text-coolGray-500 font-medium">
-									Der Engineering Kiosk ist der deutschsprachige Software-Engineering-Podcast mit <a href="/about/wolfgang-gassler">Wolfgang Gassler</a> und <a href="/about/andy-grunwald">Andy Grunwald</a> rund um die Themen Engineering-Kultur, Open Source, Menschen, Technologie und allen anderen Bereichen, die damit in Verbindung stehen.
-								</p>
-								<div class="flex flex-wrap">
-									<div class="w-full md:w-auto py-1 md:py-0 md:mr-4">
-                    <a class="inline-block py-5 px-7 w-full text-base md:text-lg leading-4 text-yellow-50 font-medium text-center bg-yellow-500 hover:bg-yellow-600 focus:ring-2 focus:ring-yellow-500 focus:ring-opacity-50 border border-yellow-500 rounded-md shadow-sm" href="#jetzt-folgen">
-                      Folgen
-                    </a>
-                  </div>
-									<div class="w-full md:w-auto py-1 md:py-0">
-                    <a class="inline-block py-5 px-7 w-full text-base md:text-lg leading-4 text-coolGray-800 font-medium text-center bg-white hover:bg-coolGray-100 focus:ring-2 focus:ring-coolGray-200 focus:ring-opacity-50 border border-coolGray-200 rounded-md shadow-sm" href="${episode.url}">
-                      Letzte Episode
-                    </a>
-                  </div>
+			<section class="py-20 xl:pt-24 xl:pb-28 bg-white" style="background-image: url('/images/elements/pattern-white.svg'); background-position: center;">
+				<div class="container px-4 mx-auto">
+					<div class="flex flex-wrap -mx-4">
+						<div class="w-full px-4 mb-10">
+							<div class="flex flex-wrap justify-between items-center">
+								<div class="w-full md:w-1/2 mb-10 md:mb-0">
+									<h3 class="mb-4 text-3xl md:text-4xl text-coolGray-900 font-bold tracking-tighter">
+										Impressum
+									</h3>
 								</div>
 							</div>
-							<div class="w-full md:w-1/2 px-4">
-								<div class="relative mx-auto md:mr-0 max-w-max">
-									<img class="absolute z-10 -left-14 -top-12 w-28 md:w-auto" src="images/elements/circle3-red.svg" alt="">
-									<img class="absolute z-10 -right-7 -bottom-8 w-28 md:w-auto" src="images/elements/dots3-green.svg" alt="">
-                  <!-- TODO Add proper intro image -->
-									<img class="relative rounded-7xl" src="images/headers/header.jpg" alt="">
-								</div>
-							</div>
+						</div>
+						<div class="w-full lg:w-1/2 px-4 mb-5 lg:mb-0">
+							<p class="mb-4 text-lg md:text-xl leading-8 text-coolGray-500 font-semibold">
+								Angaben gemäß § 5 TMG
+							</p>
+							<p class="mb-5 text-lg font-medium leading-7 text-coolGray-500">
+								Andreas Grunwald<br />
+								Am Lindentor 126<br />
+								47259 Duisburg
+							</p>
+
+							<p class="mb-4 text-lg md:text-xl leading-8 text-coolGray-500 font-semibold">
+								Kontakt
+							</p>
+							<p class="mb-5 text-lg font-medium leading-7 text-coolGray-500">
+								Telefon: +49 TODO<br />
+								E-Mail: stehtisch@engineeringkiosk.dev
+							</p>
+
+							<p class="mb-4 text-lg md:text-xl leading-8 text-coolGray-500 font-semibold">
+								Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV
+							</p>
+							<p class="mb-5 text-lg font-medium leading-7 text-coolGray-500">
+								Andreas Grunwald, Wolfgang Gassler
+							</p>
+						</div>
+						<div class="w-full lg:w-1/2 px-4">
+							<p class="mb-4 text-lg md:text-xl leading-8 text-coolGray-500 font-semibold">
+								Haftung für Inhalte
+							</p>
+							<p class="mb-5 text-lg font-medium leading-7 text-coolGray-500">
+								Als Diensteanbieter sind wir gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 TMG sind wir als Diensteanbieter jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen.
+							</p>
+							<p class="mb-5 text-lg font-medium leading-7 text-coolGray-500">
+								Verpflichtungen zur Entfernung oder Sperrung der Nutzung von Informationen nach den allgemeinen Gesetzen bleiben hiervon unberührt. Eine diesbezügliche Haftung ist jedoch erst ab dem Zeitpunkt der Kenntnis einer konkreten Rechtsverletzung möglich. Bei Bekanntwerden von entsprechenden Rechtsverletzungen werden wir diese Inhalte umgehend entfernen.
+							</p>
+
+							<p class="mb-4 text-lg md:text-xl leading-8 text-coolGray-500 font-semibold">
+								Haftung für Links
+							</p>
+							<p class="mb-5 text-lg font-medium leading-7 text-coolGray-500">
+								Unser Angebot enthält Links zu externen Websites Dritter, auf deren Inhalte wir keinen Einfluss haben. Deshalb können wir für diese fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich. Die verlinkten Seiten wurden zum Zeitpunkt der Verlinkung auf mögliche Rechtsverstöße überprüft. Rechtswidrige Inhalte waren zum Zeitpunkt der Verlinkung nicht erkennbar.
+							</p>
+							<p class="mb-5 text-lg font-medium leading-7 text-coolGray-500">
+								Eine permanente inhaltliche Kontrolle der verlinkten Seiten ist jedoch ohne konkrete Anhaltspunkte einer Rechtsverletzung nicht zumutbar. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Links umgehend entfernen.
+							</p>
+
+							<p class="mb-4 text-lg md:text-xl leading-8 text-coolGray-500 font-semibold">
+								Urheberrecht
+							</p>
+							<p class="mb-5 text-lg font-medium leading-7 text-coolGray-500">
+								Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers. Downloads und Kopien dieser Seite sind nur für den privaten, nicht kommerziellen Gebrauch gestattet. Soweit die Inhalte auf dieser Seite nicht vom Betreiber erstellt wurden, werden die Urheberrechte Dritter beachtet. Insbesondere werden Inhalte Dritter als solche gekennzeichnet. Sollten Sie trotzdem auf eine Urheberrechtsverletzung aufmerksam werden, bitten wir um einen entsprechenden Hinweis. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Inhalte umgehend entfernen.
+							</p>
 						</div>
 					</div>
 				</div>
