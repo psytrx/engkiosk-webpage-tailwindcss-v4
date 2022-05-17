@@ -118,7 +118,8 @@ def make_html_beautiful(raw_html):
     # For some unknown reason, the tailwind classes don't work here
     # I have to go with inline styles ...
     html = html.replace("<ul>", '<ul class="list-disc px-5 mb-6 md:px-5 text-base md:text-lg text-coolGray-500" style="list-style-type: disc;">')
-    html = html.replace("<li><span>", '<li>')
+    html = html.replace("<li><span>", '<li class="mb-3">')
+    html = html.replace("<li>", '<li class="mb-3">')
     html = html.replace("</span></li>", "</li>")
 
     # Style links
