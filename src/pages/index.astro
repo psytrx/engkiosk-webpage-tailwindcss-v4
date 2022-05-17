@@ -8,8 +8,7 @@ import HostPreview from '../components/HostPreview.astro';
 import PodcastEpisodeListing from '../components/PodcastEpisodeListing.astro';
 
 let title = 'Engineering Kiosk';
-// TODO Fix page description
-let description = 'An example blog on Astro';
+let description = 'Der deutschsprachige Software-Engineering-Podcast mit Wolfgang Gassler und Andy Grunwald rund um die Themen Engineering-Kultur, Open Source, Menschen, Technologie und allen anderen Bereichen, die damit in Verbindung stehen.';
 let canonicalURL = Astro.canonicalURL;
 
 // TODO Activate blog
@@ -49,7 +48,7 @@ let episode = episodesToShow[0];
 									Der deutschsprachige Software-Engineering-Podcast
 								</h1>
 								<p class="mb-8 text-lg md:text-xl text-coolGray-500 font-medium">
-									Der Engineering Kiosk ist der deutschsprachige Software-Engineering-Podcast mit <a href="/about/wolfgang-gassler">Wolfgang Gassler</a> und <a href="/about/andy-grunwald">Andy Grunwald</a> rund um die Themen Engineering-Kultur, Open Source, Menschen, Technologie und allen anderen Bereichen, die damit in Verbindung stehen.
+									Der Engineering Kiosk ist der deutschsprachige Software-Engineering-Podcast mit <!-- TODO Activate link <a href="/kiosk-betreiber/wolfgang-gassler">-->Wolfgang Gassler<!--</a>--> und <!-- TODO Activate link<a href="/kiosk-betreiber/andy-grunwald">-->Andy Grunwald<!--</a>--> rund um die Themen Engineering-Kultur, Open Source, Menschen, Technologie und allen anderen Bereichen, die damit in Verbindung stehen.
 								</p>
 								<div class="flex flex-wrap">
 									<div class="w-full md:w-auto py-1 md:py-0 md:mr-4">
@@ -111,7 +110,7 @@ let episode = episodesToShow[0];
               twitter="andygrunwald" 
               linkedin="andy-grunwald-09aa265a" 
               website="https://andygrunwald.com/"
-              profileLink="/about/andy-grunwald" />
+              profileLink="/kiosk-betreiber/andy-grunwald" />
 
             <HostPreview 
               avatar="wolfgang-gassler.jpeg" 
@@ -122,7 +121,7 @@ let episode = episodesToShow[0];
               twitter="schafele" 
               linkedin="wolfganggassler" 
               website="https://wolfgang.gassler.org/"
-              profileLink="/about/wolfgang-gassler" />
+              profileLink="/kiosk-betreiber/wolfgang-gassler" />
           </div>
         </div>
       </section>

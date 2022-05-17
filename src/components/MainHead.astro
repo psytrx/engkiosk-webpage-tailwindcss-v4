@@ -5,15 +5,11 @@ export interface Props {
 	title: string;
 	description: string;
 	image?: string;
-	type?: string;
-	next?: string;
-	prev?: string;
 	canonicalURL?: string | URL;
 }
 
-const { title, description, image, type, next, prev, canonicalURL } = Astro.props as Props;
+const { title, description, image, canonicalURL } = Astro.props as Props;
 
-// TODO type is not in use? What was this used for?
 ---
 
 <meta charset="UTF-8" />
@@ -35,9 +31,6 @@ const { title, description, image, type, next, prev, canonicalURL } = Astro.prop
 <link rel="icon" type="image/x-icon" href="/favicon.ico" />
 
 <link rel="canonical" href={canonicalURL} />
-<!-- TODO Do we really need prev and next pages? -->
-{next && <link rel="next" aria-label="Previous Page" href={new URL(next, canonicalURL).href}>}
-{prev && <link rel="prev" aria-label="Next Page" href={new URL(prev, canonicalURL).href}>}
 
 <meta property="og:title" content={title} />
 <meta property="og:description" content={description} />
