@@ -48,7 +48,7 @@ chapter:
   title: Outro
 date: '2022-03-22'
 description: 'Den richtigen Arbeitgeber und die richtige Firma finden: Eine Mammut-Aufgabe.In
-  dieser Episode sprechen Wolfgang und Andy'
+  dieser Episode sprechen Wolfgang und Andy ...'
 headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts
 image: /images/podcast/episode/11-die-suche-nach-dem-it-traumjob.jpg
 layout: ../../../layouts/podcast-episode.astro

@@ -61,7 +61,7 @@ chapter:
     tun hat
 date: '2022-01-25'
 description: "F\xFCr Andy ist Open Source und die Open Source Community ist bereits\
-  \ ein langer und essentieller Begleiter. In dieser Episode"
+  \ ein langer und essentieller Begleiter. In dieser Episode ..."
 headlines: "sprungmarken::Sprungmarken||erwahnte-artikel::Erw\xE4hnte Artikel||erwahnte-personen::Erw\xE4\
   hnte Personen||erwahnte-projekte::Erw\xE4hnte Projekte||erwahnte-events::Erw\xE4\
   hnte Events||erwahnte-lizenzen::Erw\xE4hnte Lizenzen||hosts::Hosts"

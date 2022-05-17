@@ -67,7 +67,7 @@ chapter:
   title: Outro
 date: '2022-05-03'
 description: "Was haben die Methoden der Feuerwehr zur Bek\xE4mpfung von Gro\xDFschadensereignissen\
-  \ mit dem Incident Management von IT-Systemen"
+  \ mit dem Incident Management von IT-Systemen ..."
 headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts
 image: "/images/podcast/episode/17-was-k\xF6nnen-wir-beim-incident-management-von-der-feuerwehr-lernen.jpg"
 layout: ../../../layouts/podcast-episode.astro

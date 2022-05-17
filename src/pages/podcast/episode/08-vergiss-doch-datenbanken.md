@@ -45,7 +45,7 @@ chapter:
   title: Outro
 date: '2022-03-01'
 description: Datenbanken, besonders relationale Datenbanken und im Web ganz besonders
-  MySQL.Jeder kennt sie, jeder nutzt sie, aber keiner
+  MySQL.Jeder kennt sie, jeder nutzt sie, aber keiner ...
 headlines: "links::Links||erwahnte-personen::Erw\xE4hnte Personen||sprungmarken::Sprungmarken||hosts::Hosts"
 image: /images/podcast/episode/08-vergiss-doch-datenbanken.jpg
 layout: ../../../layouts/podcast-episode.astro

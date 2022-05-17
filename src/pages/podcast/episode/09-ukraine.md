@@ -45,7 +45,7 @@ chapter:
   title: Outro
 date: '2022-03-08'
 description: "Es wird politisch: Der Angriffskrieg auf die Ukraine und eine m\xF6\
-  glichst technische Beleuchtung des Themas.Wolfgang und Andy"
+  glichst technische Beleuchtung des Themas.Wolfgang und Andy ..."
 headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts
 image: /images/podcast/episode/09-ukraine.jpg
 layout: ../../../layouts/podcast-episode.astro

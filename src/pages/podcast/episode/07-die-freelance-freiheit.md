@@ -49,7 +49,7 @@ chapter:
   title: Neben der Festanstellung starten
 date: '2022-02-22'
 description: "Sein eigener Chef zu sein, sich die Projekte aussuchen k\xF6nnen und\
-  \ sich die Zeit frei selbst einzuteilen. Obendrein noch einen"
+  \ sich die Zeit frei selbst einzuteilen. Obendrein noch einen ..."
 headlines: links::Links||anderes::Anderes||sprungmarken::Sprungmarken||hosts::Hosts
 image: /images/podcast/episode/07-die-freelance-freiheit.jpg
 layout: ../../../layouts/podcast-episode.astro

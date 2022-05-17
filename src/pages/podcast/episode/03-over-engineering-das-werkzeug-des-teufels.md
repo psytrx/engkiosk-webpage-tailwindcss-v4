@@ -53,7 +53,7 @@ chapter:
   title: Kontakt und Outro
 date: '2022-01-18'
 description: Was ist eigentlich Over-Engineering? Und wann ist es einfach nur gutes
-  Engineering? Ist das eigentlich immer nur negativ?
+  Engineering? Ist das eigentlich immer nur negativ? ...
 headlines: sprungmarken::Sprungmarken||artikel::Artikel||konzepte::Konzepte||projekte::Projekte
 image: /images/podcast/episode/03-over-engineering-das-werkzeug-des-teufels.jpg
 layout: ../../../layouts/podcast-episode.astro

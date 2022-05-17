@@ -49,7 +49,7 @@ chapter:
   title: Outro
 date: '2022-05-10'
 description: "Ziel-Definitionen und Mitarbeiter-Metriken: Sinnvoll oder totaler Bl\xF6\
-  dsinn?Das Thema ist hei\xDF umstritten. Viele lieben Ziele"
+  dsinn?Das Thema ist hei\xDF umstritten. Viele lieben Ziele ..."
 headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts
 image: "/images/podcast/episode/18-ziele-und-performance-metriken-f\xFCr-teams-und-mich-selbst.jpg"
 layout: ../../../layouts/podcast-episode.astro

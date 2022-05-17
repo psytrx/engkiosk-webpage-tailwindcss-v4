@@ -47,7 +47,7 @@ chapter:
   title: Outro
 date: '2022-02-08'
 description: "Software Engineers fangen bei 0 an zu z\xE4hlen. Das Engineering Kiosk\
-  \ ist direkt bei Episode 1 gestartet. Diesen Off-by-one"
+  \ ist direkt bei Episode 1 gestartet. Diesen Off-by-one ..."
 headlines: ''
 image: "/images/podcast/episode/00-developer-fangen-bei-0-an-zu-z\xE4hlen.jpg"
 layout: ../../../layouts/podcast-episode.astro

@@ -41,7 +41,7 @@ chapter:
   title: Outro
 date: '2022-03-29'
 description: 'Make oder Buy: Alles einkaufen oder doch lieber selber machen?Eine Frage
-  die jeder von uns kennt: Sind meine Anforderungen'
+  die jeder von uns kennt: Sind meine Anforderungen ...'
 headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts
 image: /images/podcast/episode/12-make-oder-buy.jpg
 layout: ../../../layouts/podcast-episode.astro

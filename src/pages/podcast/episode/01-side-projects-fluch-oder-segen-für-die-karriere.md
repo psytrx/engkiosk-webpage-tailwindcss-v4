@@ -42,7 +42,7 @@ chapter:
   title: "Sind Arbeitgeber gl\xFCcklich \xFCber Side Projects von MitarbeiterInnen?"
 date: '2022-01-03'
 description: "Zwei Engineering Manager \xFCber Side Projects: Wie diese den Recruiting\
-  \ Prozess beeinflussen, welche Learnings aus einem Projekt"
+  \ Prozess beeinflussen, welche Learnings aus einem Projekt ..."
 headlines: "sprungmarken::Sprungmarken||erwahnte-personen::Erw\xE4hnte Personen||hosts::Hosts"
 image: "/images/podcast/episode/01-side-projects-fluch-oder-segen-f\xFCr-die-karriere.jpg"
 layout: ../../../layouts/podcast-episode.astro

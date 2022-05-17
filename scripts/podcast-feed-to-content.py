@@ -197,6 +197,7 @@ for item in channel.findall('item'):
 
     ix = max(description_text_only.find(' ', 120), 120)
     description_short = description_text_only[:ix]
+    description_short += " ..."
 
     # Date format: Tue, 05 Apr 2022 04:25:00 +0000
     pub_date = item.find('pubDate').text

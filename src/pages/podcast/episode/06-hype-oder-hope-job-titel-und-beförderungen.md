@@ -31,7 +31,7 @@ chapter:
   title: Outro
 date: '2022-02-15'
 description: Sind Machine Learning und Artificial Intelligence nur Hypes oder sollte
-  ich meine Karriere dahingehend ausrichten? Und welche
+  ich meine Karriere dahingehend ausrichten? Und welche ...
 headlines: "links::Links||erwahnte-personen::Erw\xE4hnte Personen||sprungmarken::Sprungmarken||hosts::Hosts"
 image: /images/podcast/episode/07-die-freelance-freiheit.jpg
 layout: ../../../layouts/podcast-episode.astro

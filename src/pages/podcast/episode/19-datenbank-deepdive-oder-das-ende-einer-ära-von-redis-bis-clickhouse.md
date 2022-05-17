@@ -63,7 +63,7 @@ chapter:
   title: Feedback zum Thema Datenbanken und Outro
 date: '2022-05-17'
 description: "Der zweite Datenbank-Deepdive im Engineering Kiosk.Indirekt kn\xFCpfen\
-  \ wir an Episode 8 mit dem Thema Datenbanken. Diesmal fangen"
+  \ wir an Episode 8 mit dem Thema Datenbanken. Diesmal fangen ..."
 headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts
 image: "/images/podcast/episode/19-datenbank-deepdive-oder-das-ende-einer-\xE4ra-von-redis-bis-clickhouse.jpg"
 layout: ../../../layouts/podcast-episode.astro

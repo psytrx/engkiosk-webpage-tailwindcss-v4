@@ -63,7 +63,7 @@ chapter:
   title: Outro
 date: '2022-01-10'
 description: "Wolfgang und Andy erz\xE4hlen ein wenig was \xFCber ihre eigenen Side\
-  \ Projects sourcectl (https://gettoknow.sourcectl.dev/), F-Online"
+  \ Projects sourcectl (https://gettoknow.sourcectl.dev/), F-Online ..."
 headlines: "sprungmarken::Sprungmarken||erwahnte-side-projects::Erw\xE4hnte Side Projects||erwahnte-technologien::Erw\xE4\
   hnte Technologien||anderes::Anderes||erwahnte-personen::Erw\xE4hnte Personen||hosts::Hosts"
 image: /images/podcast/episode/02-technologienzoo-side-projects.jpg
