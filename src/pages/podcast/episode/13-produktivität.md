@@ -38,7 +38,7 @@ chapter:
   title: Outro
 date: '2022-04-05'
 description: "Zeit- und Produktivit\xE4tsmanagement: Buzzword-Bingo oder bringt das\
-  \ wirklich was?So bl\xF6d wie das Thema auch klingen mag, es ..."
+  \ wirklich was? So bl\xF6d wie das Thema auch klingen mag, ..."
 headlines: "links::Links||bucher::B\xFCcher||sprungmarken::Sprungmarken||hosts::Hosts"
 image: "/images/podcast/episode/13-produktivit\xE4t.jpg"
 layout: ../../../layouts/podcast-episode.astro

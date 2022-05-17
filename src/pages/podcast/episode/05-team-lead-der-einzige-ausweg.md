@@ -40,7 +40,7 @@ chapter:
     \ nichts f\xFCr mich ist?"
 date: '2022-02-01'
 description: 'Engineering Manager oder Team-Lead: Eine Position die sehr motivierend,
-  aber auch abschreckend wirken kann.Was erwartet einen? ...'
+  aber auch abschreckend wirken kann. Was erwartet ...'
 headlines: "erwahnte-artikel::Erw\xE4hnte Artikel||bucher-uber-das-engineering-management::B\xFC\
   cher \xFCber das Engineering Management||sprungmarken::Sprungmarken||hosts::Hosts"
 image: /images/podcast/episode/05-team-lead-der-einzige-ausweg.jpg

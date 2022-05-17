@@ -39,8 +39,8 @@ chapter:
 - start: '54:05'
   title: Wrap Up zum Thema asynchrones Arbeiten und Outro
 date: '2022-04-12'
-description: Remote-Work, asynchrone und parallele Arbeit und die eigene Work-Life-Balance.Durch
-  Corona haben wir alle einen Geschmack ...
+description: Remote-Work, asynchrone und parallele Arbeit und die eigene Work-Life-Balance.
+  Durch Corona haben wir alle einen Geschmack ...
 headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts
 image: /images/podcast/episode/14-async-und-await-asynchrones-arbeiten-im-alltag.jpg
 layout: ../../../layouts/podcast-episode.astro

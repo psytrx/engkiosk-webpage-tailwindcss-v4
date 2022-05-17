@@ -59,7 +59,17 @@ def remove_html_tags(raw_html):
     """
     Removing all HTML tags.
     """
-    cleantext = re.sub(CLEANR, '', raw_html)
+    # First we replace "</p>" with "</p> " (adding a single whitespace).
+    # Primarily to ensure that after the removal of each HTML element, 
+    # we have a whitespace at the end of each sentence/paragraph.
+    # Otherwise, our text would look like
+    #
+    #   [...] im Engineering Kiosk.Indirekt knüpfen [...]
+    #
+    # Take attention to the missing whitespace between the sentences
+    cleantext = raw_html.replace("</p>", "</p> ")
+
+    cleantext = re.sub(CLEANR, '', cleantext)
     return cleantext
 
 def make_html_beautiful(raw_html):

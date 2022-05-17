@@ -61,7 +61,7 @@ chapter:
   title: Outro
 date: '2022-04-26'
 description: "Code Reviews: Jeder will schnelles Feedback, doch niemand hat Zeit daf\xFC\
-  r - Eine Hassliebe.Eine Komponente im Alltag jedes ..."
+  r - Eine Hassliebe. Eine Komponente im Alltag jedes ..."
 headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts
 image: "/images/podcast/episode/16-code-reviews-n\xFCtzlich-oder-bremsen-nur-ein-gutes-team.jpg"
 layout: ../../../layouts/podcast-episode.astro
