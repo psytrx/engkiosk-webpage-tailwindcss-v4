@@ -1,6 +1,51 @@
 ---
 audio: https://stream.redcircle.com/episodes/ba617374-c9e2-4ccb-9cd5-a90cda8b62a7/stream.mp3
-chapter: []
+chapter:
+- start: 00:00
+  title: Intro
+- start: 01:02
+  title: Reddit-Umfrage zum Thema 1 on 1 / Episode 10
+- start: 03:02
+  title: "\"Man braucht keine 1 on 1s, wir k\xF6nnen immer dr\xFCber sprechen\""
+- start: 08:58
+  title: "Wie wichtig sind 1 on 1s f\xFCr dich bei deinem neuen Arbeitgeber?"
+- start: '12:16'
+  title: Wie findest du heraus, ob der Lead Erfahrung hat?
+- start: '15:05'
+  title: Ist ein 1on1 ein Weiterentwicklungs-Benefit einer Firma oder Standard, den
+    man annehmen sollte?
+- start: '16:49'
+  title: "Welche Weiterentwicklungsm\xF6glichkeiten sind wichtig f\xFCr die Wahl einer\
+    \ neuen Firma? Was ist einfach zu etablieren?"
+- start: '18:41'
+  title: "Wie findet man eine neue Firma, bei der man sich bewerben k\xF6nnte?"
+- start: '21:39'
+  title: "Interviews sind auch gl\xFCckssache"
+- start: '24:13'
+  title: "Den Interviewprozess nutzen um zu erfahren, wie andere die Probleme l\xF6\
+    sen"
+- start: '25:50'
+  title: Firmen finden durch Liebe zum Produkt
+- start: '31:56'
+  title: Firmen finden ohne Liebe zum Produkt
+- start: '37:12'
+  title: "Ist ein Startup etwas f\xFCr mich?"
+- start: '39:30'
+  title: "Sucht nicht selbst, sondern lasst euch finden (zB \xFCber LinkedIn)"
+- start: '41:25'
+  title: Tipps um mit Recruitern zu arbeiten
+- start: '45:22'
+  title: Macht euch Gedanken, was Ihr vom neuen Arbeitgeber erwartet
+- start: '47:51'
+  title: Gehalt, Geld und wie viel wollt und braucht Ihr?
+- start: '51:19'
+  title: "Andys Haupt-Kriterien f\xFCr eine neue Firma"
+- start: '53:50'
+  title: Wie viele Interviews waren notwendig, um die richtige Firma zu finden?
+- start: '55:40'
+  title: Interviews und Coding Challenges als Side Projetc
+- start: '56:12'
+  title: Outro
 date: '2022-03-22'
 description: 'Den richtigen Arbeitgeber und die richtige Firma finden: Eine Mammut-Aufgabe.In
   dieser Episode sprechen Wolfgang und Andy'

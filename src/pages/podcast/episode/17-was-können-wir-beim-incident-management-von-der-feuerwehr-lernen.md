@@ -1,6 +1,70 @@
 ---
 audio: https://stream.redcircle.com/episodes/3c0581f5-309a-421c-b731-b28b211564c7/stream.mp3
-chapter: []
+chapter:
+- start: 00:00:00
+  title: Intro
+- start: 00:01:21
+  title: Wie viel Feuerwehr-Leute gibt es in Deutschland?
+- start: 00:02:58
+  title: Was ist Incident Management im DevOps/Infrastruktur-Bereich
+- start: 00:07:33
+  title: "Firmen-Interne Incidents k\xF6nnen ebenfalls richtig teuer werden"
+- start: 00:09:14
+  title: "Wie wichtig ist Pr\xE4vention und Monitoring?"
+- start: 00:10:26
+  title: Wie agiert ein Unternehmen bei einem IT-Incident? Chaotische Hilfe
+- start: 00:12:33
+  title: "Inwieweit kann ein IT-Incident mit einem Gro\xDFschadensereignis verglichen\
+    \ werden?"
+- start: 00:14:14
+  title: "Was ist ein Gro\xDFschadensereignis?"
+- start: 00:15:57
+  title: Wie bekommen denn alle mit, dass ein Incident gerade eintritt? Und welche
+    Strukturen sind notwendig?
+- start: 00:17:43
+  title: "Wer \xFCbernimmt die Rolle des (Incident) Commanders?"
+- start: 00:19:21
+  title: "Was beinhaltet denn die \xDCbernahme eines Incidents?"
+- start: 00:21:23
+  title: "Vergleich von der \xDCbernahme eines Incidents zwischen der Feuerwehr und\
+    \ einem IT-System"
+- start: 00:23:43
+  title: Strategie der Feuerwehr bei Incidents und Hierarchien
+- start: 00:26:14
+  title: Ist der Einsatzleiter ein aktiver Teil des Incidents? Und welche Rollen gibt
+    es noch?
+- start: 00:30:09
+  title: Kommunikationsstrukturen in IT-Incidents
+- start: 00:33:01
+  title: Der aktuelle Atlassian-Incident
+- start: 00:34:44
+  title: Die Rollen von Logistik und Administration in der Feuerwehr und in der IT
+- start: 00:37:16
+  title: (Essens)-Logistik bei Remote-Incidents
+- start: 00:40:19
+  title: 'War-Rooms: Anti-Pattern oder Must-Have + Pro-Aktive Kommunikation'
+- start: 00:43:26
+  title: War- und Peace-Time
+- start: 00:44:19
+  title: Incident Commander, Rollen und Rollen-Rotation im IT-Bereich
+- start: 00:45:53
+  title: "Die Rolle des Protokollf\xFChrers / Schreiberlings"
+- start: 00:50:46
+  title: 'Post Mortems und Nachbesprechungen: Warum machen die Sinn?'
+- start: 00:54:21
+  title: "Vorbereitungen, Pr\xE4vention und Training in der Friedenszeit"
+- start: 00:57:51
+  title: Lernen aus Incidents und die Post Mortem-Struktur
+- start: 01:00:09
+  title: Employer Branding mit Post Mortems
+- start: 01:01:45
+  title: Happy-Path in Post Mortems
+- start: 01:02:35
+  title: Nachbesprechung bei der Feuerwehr und Post Mortem Conferences
+- start: 01:06:45
+  title: Web-Ops / Fire-Ops-Conference
+- start: 01:09:40
+  title: Outro
 date: '2022-05-03'
 description: "Was haben die Methoden der Feuerwehr zur Bek\xE4mpfung von Gro\xDFschadensereignissen\
   \ mit dem Incident Management von IT-Systemen"

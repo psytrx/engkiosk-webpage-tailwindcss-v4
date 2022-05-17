@@ -1,6 +1,43 @@
 ---
 audio: https://stream.redcircle.com/episodes/3577c74d-2d25-408e-9107-1fae71daf76a/stream.mp3
-chapter: []
+chapter:
+- start: 00:00
+  title: "Intro und R\xFCckmeldung zur Episode #13 \xFCber Produktivit\xE4t"
+- start: 01:22
+  title: "Async + Asynchronit\xE4t (async, await, event loop)"
+- start: 02:00
+  title: Vorteil von asynchroner Verarbeitung
+- start: 04:13
+  title: "Asynchronit\xE4t vs. Parallelisierung"
+- start: 07:08
+  title: "NodeJS, Callback-H\xF6lle und async/await in Ruby"
+- start: 08:27
+  title: Warum verwenden wir nicht die asynchrone Herangehensweise um unsere eigene
+    Zeit besser auszunutzen? - Asynchrones Arbeiten
+- start: '11:23'
+  title: Asynchrones Arbeiten, Schlafrhythmus (Eule vs. Lerche) und lange Fokus-Zeiten
+- start: '14:48'
+  title: Was verstehen wir unser asynchroner Arbeit?
+- start: '18:34'
+  title: "Wie kommt man denn zu dem asynchronen Arbeiten (zB als kleine Firma)? (Vertrauen,\
+    \ Pro-Aktivit\xE4t, \xDCber-Kommunikation)"
+- start: '21:29'
+  title: "\u2026 was noch? (Kollaboratives Tooling, Energie f\xFCr Vorschl\xE4ge und\
+    \ Objektivit\xE4t, Diagramme, Transparenz)"
+- start: '29:12'
+  title: Die Funktion und Wahrnehmung von Slack in der asynchronen Arbeitswelt
+- start: '34:05'
+  title: Die Schriftform als Skill und warum dies trainiert werden sollte
+- start: '35:22'
+  title: Anwendungen von deinen Schreib-Skills im Ticket-System
+- start: '38:50'
+  title: Technical Writing, Dokumentation und Meeting Protokolle
+- start: '39:26'
+  title: "Design Dokumente als Basis f\xFCr die asynchrone Arbeit"
+- start: '53:32'
+  title: "Tiefere Gedanken w\xE4hrend des schreibens"
+- start: '54:05'
+  title: Wrap Up zum Thema asynchrones Arbeiten und Outro
 date: '2022-04-12'
 description: Remote-Work, asynchrone und parallele Arbeit und die eigene Work-Life-Balance.Durch
   Corona haben wir alle einen Geschmack

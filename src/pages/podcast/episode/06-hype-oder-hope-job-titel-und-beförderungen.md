@@ -1,6 +1,34 @@
 ---
 audio: https://stream.redcircle.com/episodes/d6840c34-1e98-42b6-82aa-5cb76b200fa6/stream.mp3
-chapter: []
+chapter:
+- start: 00:00
+  title: Intro
+- start: 01:06
+  title: Deepmind News "AlphaCode" - Ein neuer Machine Learning Hype?
+- start: 06:40
+  title: Wie kann Alpha Code in der Praxis genutzt werden?
+- start: 08:04
+  title: Coding Challenges im Recruiting-Prozess
+- start: '11:09'
+  title: Hypes im Infrastruktur-Bereich
+- start: '16:45'
+  title: Frischer Wind von neuen Leuten in der Firma
+- start: '19:22'
+  title: Mono-Repos als Hype-Beispiel
+- start: '20:55'
+  title: Industrie-Definition von Job-Titles
+- start: '26:03'
+  title: Braucht man Job-Titles (Senior, etc.)?
+- start: '31:43'
+  title: Festgefahrene Strukturen in Konzernen
+- start: '37:38'
+  title: Geld ist bei weitem nicht alles bei einem Job
+- start: '41:50'
+  title: "Mach das was dir Spa\xDF machst und Generalisten vs. Spezialisten"
+- start: '45:36'
+  title: "5-Jahres-Pl\xE4ne"
+- start: '49:56'
+  title: Outro
 date: '2022-02-15'
 description: Sind Machine Learning und Artificial Intelligence nur Hypes oder sollte
   ich meine Karriere dahingehend ausrichten? Und welche

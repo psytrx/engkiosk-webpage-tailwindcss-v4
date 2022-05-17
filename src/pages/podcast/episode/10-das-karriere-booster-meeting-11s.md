@@ -1,6 +1,35 @@
 ---
 audio: https://stream.redcircle.com/episodes/c8d31470-3a28-443c-aafd-af96625f4146/stream.mp3
-chapter: []
+chapter:
+- start: 00:00
+  title: Intro
+- start: 00:30
+  title: "Warum eine Episode \xFCber 1on1s"
+- start: 02:40
+  title: Begriffsdefinition "1on1" und ist das ein Jour fixe?
+- start: 05:24
+  title: "Mythos Zeitverschwendung und unn\xFCtzes Gespr\xE4ch"
+- start: 06:23
+  title: "Sichere und vertrauensvolle Atmosph\xE4re im 1on1"
+- start: 08:28
+  title: "Tipps um eine sichere Atmosph\xE4re und Vertrauen zu schaffen"
+- start: '12:22'
+  title: Wer sollte ein 1on1 machen? Und was sind Skip-Level Meetings?
+- start: '15:53'
+  title: Sinnvolle 1on1 Intervalle
+- start: '19:35'
+  title: Was sollte man in 1on1s besprechen? Welche Fragen kann ich als Individual
+    Contributer stellen?
+- start: '28:52'
+  title: Wie sollte ein Engineering Manager sein 1on1 vorbereiten und angehen?
+- start: '39:12'
+  title: Tooling, die 1on1s supporten
+- start: '41:15'
+  title: 'Perspektivenwechsel: Fragt eure Managerin'
+- start: '42:57'
+  title: Wie man am besten mit 1on1s beginnt
+- start: '44:12'
+  title: Feedback und Outro
 date: '2022-03-15'
 description: "1on1s - Zeitverschwendung oder eins der wertvollsten Meetings deiner\
   \ Karriere?Andy und Wolfgang sprechen \xFCber das meist untersch\xE4tzte"

@@ -130,6 +130,9 @@ def get_chapter_from_description(description):
     # Chapter entries look like
     #       <p><span>(00:00:00) Intro</span></p>
     found_chapters = re.findall("<p><span>\(([0-9:]*)\) ([^<]*)</span></p>", description)
+    if len(found_chapters) == 0:
+        found_chapters = re.findall("<p>\(([0-9:]*)\) ([^<]*)</p>", description)
+
     chapter = []
     for c in found_chapters:
         # In line with chaptermarks from podcast player

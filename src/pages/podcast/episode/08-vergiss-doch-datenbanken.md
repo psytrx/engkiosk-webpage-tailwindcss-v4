@@ -1,6 +1,48 @@
 ---
 audio: https://stream.redcircle.com/episodes/ff17f8af-00a3-4594-8886-d1c2a3980c67/stream.mp3
-chapter: []
+chapter:
+- start: 00:00
+  title: Intro
+- start: 00:15
+  title: Wolfgang und Apres-Ski
+- start: 02:52
+  title: Wie programmiert man seine eigene Datenbank?
+- start: 07:24
+  title: Was passiert, wenn eine SQL-Query die Datenbank erreicht?
+- start: '10:02'
+  title: Die Schwierigkeiten, wenn man seine eigene Datenbank programmiert
+- start: '12:35'
+  title: Sind Dateien besser als Datenbanken?
+- start: '18:00'
+  title: Keine Netzwerk-Verbindungen dank sqlite?
+- start: '20:40'
+  title: Was ist sqlite?
+- start: '22:20'
+  title: Aussprache von sqlite und SQL und woher es kommt
+- start: '23:33'
+  title: Wie kam MySQL und MariaDB zu ihrem Namen?
+- start: '24:17'
+  title: "Was empfiehlst du f\xFCr kleine Apps? MySQL oder sqlite?"
+- start: '25:06'
+  title: Replikation von sqlite Daten
+- start: '26:02'
+  title: Unterschied zwischen Row- und Statement-Based Replication
+- start: '27:56'
+  title: Wie viel Requests kann man mit einer MySQL-Node bedienen?
+- start: '29:35'
+  title: 'Buchempfehlung: Designing Data-Intensive Application'
+- start: '31:42'
+  title: Was tun, wenn ich Probleme mit MySQL-Performance hab?
+- start: '33:16'
+  title: MySQL bei Facebook
+- start: '36:35'
+  title: PostgreSQL, der andere Kandidat auf dem Spielfeld
+- start: '38:33'
+  title: 'Tooling um MySQL: ProxySQL und Vitess'
+- start: '43:38'
+  title: MySQL Performance-Tipps vom Buch-Autor Wolfgang
+- start: '50:33'
+  title: Outro
 date: '2022-03-01'
 description: Datenbanken, besonders relationale Datenbanken und im Web ganz besonders
   MySQL.Jeder kennt sie, jeder nutzt sie, aber keiner

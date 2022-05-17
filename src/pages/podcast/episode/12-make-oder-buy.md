@@ -1,6 +1,44 @@
 ---
 audio: https://stream.redcircle.com/episodes/1adada84-15c2-4fd0-99b9-e7842f29ecef/stream.mp3
-chapter: []
+chapter:
+- start: 00:00
+  title: Intro
+- start: 01:33
+  title: "Sollen wir die Software f\xFCr unser A/B-Testing kaufen oder selber bauen?"
+- start: 05:23
+  title: 'Reisekosten-Abrechnungen: Wie kann es gehen?'
+- start: 06:53
+  title: Make or buy
+- start: 08:27
+  title: Wolfgangs Stand bei Make or buy im privaten Leben
+- start: '14:45'
+  title: "Wolfgangs Entscheidungskriterien f\xFCr make or buy"
+- start: '15:42'
+  title: Was ist die eigene Zeit wirklich Wert?
+- start: '17:57'
+  title: "Klassische Beispiele f\xFCr den \u201Cmake or buy\u201D-Fall in Firmen"
+- start: '23:42'
+  title: Was kostet ein Software-Engineer, etwas selbst zu machen (Total Cost of Ownership)
+- start: '28:55'
+  title: Abgrenzung von make or buy
+- start: '30:14'
+  title: "Opportunit\xE4tskosten: Produktivit\xE4t und User Experience"
+- start: '33:40'
+  title: Welche Bereiche gibt es, wo es Sinn macht, die Produkte nicht einzukaufen?
+- start: '37:07'
+  title: 'Risiken beim Einkaufen von Produkten: Shadow-IT und Workflows'
+- start: '41:16'
+  title: "Gegenwehr, fadenscheinige Gr\xFCnde und interne Politik bei make or buy"
+- start: '48:02'
+  title: Sicherheitsbedenken bei der Benutzung von externen Services
+- start: '50:48'
+  title: 'Eigene Erfahrung: Mehr make oder mehr buy?'
+- start: '56:07'
+  title: Wann sollte man Software kaufen?
+- start: '56:39'
+  title: Wann sollte man die Software selbst bauen?
+- start: '57:44'
+  title: Outro
 date: '2022-03-29'
 description: 'Make oder Buy: Alles einkaufen oder doch lieber selber machen?Eine Frage
   die jeder von uns kennt: Sind meine Anforderungen'
