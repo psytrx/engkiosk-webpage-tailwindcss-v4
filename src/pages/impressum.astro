@@ -4,7 +4,7 @@ import MainHead from '../components/MainHead.astro';
 import Nav from '../components/Nav.astro';
 
 let title = 'Impressum - Engineering Kiosk';
-let description = '';
+let description = 'Der deutschsprachige Software-Engineering-Podcast mit Wolfgang Gassler und Andy Grunwald rund um die Themen Engineering-Kultur, Open Source und Technologie.';
 let canonicalURL = Astro.canonicalURL;
 
 ---
@@ -12,8 +12,7 @@ let canonicalURL = Astro.canonicalURL;
 <html lang="de">
   <head>
     <title>{title}</title>
-    <!-- TODO Set a proper first image for the startpage image={allPosts[0].frontmatter.image} -->
-		<MainHead title={title} description={description} {canonicalURL} />
+		<MainHead title={title} description={description} image="/images/headers/andy-grunwald-wolfgang-gassler-2022-01-07.jpg" {canonicalURL} />
 	</head>
 
 	<body class="antialiased bg-body text-body font-body">
