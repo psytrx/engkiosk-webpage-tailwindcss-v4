@@ -200,7 +200,11 @@ headline_split.forEach(function callback(val) {
 													<img class="mx-auto" src="/images/brands/google-podcasts.svg" alt="Engineering Kiosk ${content.title} bei Google Podcasts">
 												</a>
 											</div>)}
-											<!-- TODO Implement Amazon Music SVG -->
+											{content.amazon_music && (<div class="w-1/2 md:w-1/3 lg:w-1/5 px-4 mb-8 lg:mb-0">
+												<a href="${content.amazon_music}" title="Engineering Kiosk ${content.title} bei Amazon Music">
+													<img class="mx-auto" src="/images/brands/amazon-music.svg" alt="Engineering Kiosk ${content.title} bei Amazon Music">
+												</a>
+											</div>)}
 										</div>
 									</div>
 								</section>)}
