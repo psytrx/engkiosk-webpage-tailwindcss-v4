@@ -8,7 +8,10 @@ import datetime
 import sys
 import yaml
 import html
+from os.path import exists
+
 from slugify import slugify
+import frontmatter
 
 # From the Django project
 # See https://docs.djangoproject.com/en/2.1/_modules/django/utils/text/#slugify
@@ -255,8 +258,35 @@ for item in channel.findall('item'):
         'pocket_casts': '',
         'amazon_music': ''
     }
-    content_yaml = yaml.dump(data)
 
+    full_file_path = f'{base_content_write_path}/{filename}'
+
+    # If the file exists, we want to read the frontmatter, extract
+    # the spotify, google podcasts, etc. links and write this to the
+    # new data.
+    # Why? Because the Podcast player links are added manual.
+    # The rest of the data (title, description, etc.) are parsed
+    # out of the RSS feed and maintained in a different application.
+    # This way, we "update" our local data based on the management application,
+    # but keep the manual parts.
+    if exists(full_file_path):
+        with open(full_file_path) as f:
+            episode = frontmatter.load(f)
+
+            keys_to_keep = [
+                'spotify',
+                'google_podcasts',
+                'apple_podcasts',
+                'pocket_casts',
+                'amazon_music'
+            ]
+            for key in keys_to_keep:
+                val = episode.get(key)
+                if val:
+                    data[key] = episode.get(key)
+
+
+    content_yaml = yaml.dump(data)
     content = (
         '---\n'
         f'{content_yaml}\n'
@@ -266,6 +296,6 @@ for item in channel.findall('item'):
     )
 
     # Write file to disk as a new podcast episode
-    f = open(f'{base_content_write_path}/{filename}', 'w', encoding='utf8')
+    f = open(full_file_path, 'w', encoding='utf8')
     f.write(content)
     f.close()
