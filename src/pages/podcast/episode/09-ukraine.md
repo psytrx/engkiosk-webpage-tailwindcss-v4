@@ -3,47 +3,47 @@ amazon_music: https://music.amazon.com/podcasts/c35a09fe-4116-4e04-8f68-77d61b11
 apple_podcasts: https://podcasts.apple.com/us/podcast/09-ukraine/id1603082924?i=1000553287989
 audio: https://stream.redcircle.com/episodes/62eae97a-f058-4352-97a2-d2bc5c48b688/stream.mp3
 chapter:
-- start: 00:00
+- start: 00:00:00
   title: Intro
-- start: 00:52
+- start: 00:00:52
   title: "Abgeschlossene Corona-Pandemie in \xD6sterreich"
-- start: 02:05
+- start: 00:02:05
   title: Ukraine-Geschehnisse aus der technischen Perspektive
-- start: 02:26
+- start: 00:02:26
   title: Wolfgangs-Sabbatical in der Ukraine
-- start: 04:49
+- start: 00:04:49
   title: Verbindung der Geschehnisse der Ukraine mit Technologie
-- start: 05:48
+- start: 00:05:48
   title: "Wie Firmen die Bev\xF6lkerung in den entsprechenden Gebieten unterst\xFC\
     tzen"
-- start: 07:50
+- start: 00:07:50
   title: "M\xE4nner d\xFCrfen zur Zeit die Ukraine nicht verlassen"
-- start: 08:58
+- start: 00:08:58
   title: "Gro\xDFe Firmen h\xE4tten mehr Power, wenn sie die richtigen Informationen\
     \ verbreiten w\xFCrden"
-- start: '12:52'
+- start: 00:12:52
   title: Firmen nutzen die Sanktionen als Marketing-Fall
-- start: '13:42'
+- start: 00:13:42
   title: Sanktionen und wie Firmen agiert haben
-- start: '15:46'
+- start: 00:15:46
   title: Elon Musk und StarLink in der Ukraine
-- start: '17:54'
+- start: 00:17:54
   title: Ukrainische Anfrage an die ICANN zur Abschaltung von dezentraler Infrastruktur
-- start: '20:02'
+- start: 00:20:02
   title: "Was k\xF6nnte Cloudflare tun?"
-- start: '21:19'
+- start: 00:21:19
   title: "Die Sanktionen treffen auch prim\xE4r die Zivilbev\xF6lkerung"
-- start: '22:24'
+- start: 00:22:24
   title: Wie Firmen auf Sanktionen reagieren ist sehr unterschiedlich
-- start: '24:10'
+- start: 00:24:10
   title: Arbeitschancen von geflohenen Ukrainern in der EU
-- start: '25:40'
+- start: 00:25:40
   title: Wie geht man mit betroffenen Arbeitskollegen um?
-- start: '27:51'
+- start: 00:27:51
   title: Was kann jeder von uns tun um zu helfen?
-- start: '35:00'
+- start: 00:35:00
   title: 'Side-Projekt: Wie kamen Open Source Projekte zu ihrem Namen?'
-- start: '36:30'
+- start: 00:36:30
   title: Outro
 date: '2022-03-08'
 description: "Es wird politisch: Der Angriffskrieg auf die Ukraine und eine m\xF6\

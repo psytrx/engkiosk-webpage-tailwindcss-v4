@@ -3,41 +3,41 @@ amazon_music: https://music.amazon.com/podcasts/c35a09fe-4116-4e04-8f68-77d61b11
 apple_podcasts: https://podcasts.apple.com/us/podcast/05-team-lead-der-einzige-ausweg/id1603082924?i=1000549643155
 audio: https://stream.redcircle.com/episodes/41cfb14d-7091-482a-9d05-eb21219897ab/stream.mp3
 chapter:
-- start: 00:55
+- start: 00:00:55
   title: "H\xF6rer Feedback"
-- start: 01:43
+- start: 00:01:43
   title: Wann bist du das erste mal in eine Teamlead-Stelle gerutscht?
-- start: 03:15
+- start: 00:03:15
   title: "Kann man bereits Aufgaben eines Teamleads \xFCbernehmen, ohne ein Teamlead\
     \ zu sein?"
-- start: 04:18
+- start: 00:04:18
   title: Wie viel Zeit hast du mit Hands-On und wie viel mit People Management verbracht?
-- start: 04:52
+- start: 00:04:52
   title: Wie lang warst du Individual Contributor bevor du Teamleiter wurdest?
-- start: 05:42
+- start: 00:05:42
   title: "Was hat sich am meisten an deinem Arbeitsalltag ge\xE4ndert?"
-- start: 09:22
+- start: 00:09:22
   title: Was ist ein 1 on 1 Meeting und warum ist dies sinnvoll?
-- start: '13:27'
+- start: 00:13:27
   title: "Was ist eine gute Teamgr\xF6\xDFe f\xFCr den Start als Engineering Manager?"
-- start: '14:50'
+- start: 00:14:50
   title: Woher wusstest du, was du als neuer Engineering Manager machen musst?
-- start: '20:51'
+- start: 00:20:51
   title: "Empfehlungen um die Entscheidung \"M\xF6chte ich den Job einer Engineering\
     \ Managerin machen?\" treffen zu k\xF6nnen"
-- start: '24:25'
+- start: 00:24:25
   title: Feedback-Loop eines Software Engineers und eines Engineering Managers
-- start: '25:50'
+- start: 00:25:50
   title: "Was solltest du nicht wollen, wenn du ein Engineering Manager werden m\xF6\
     chtest?"
-- start: '27:42'
+- start: 00:27:42
   title: Ist es ab und zu notwendig, seine eigene Entscheidung im Team durchzusetzen?
-- start: '28:36'
+- start: 00:28:36
   title: Schwierige Konversationen als Engineering Manager
-- start: '30:49'
+- start: 00:30:49
   title: "Ist es ein R\xFCckschritt wenn man als Engineering Manager zur\xFCck zum\
     \ Software Engineer wechselt?"
-- start: '34:42'
+- start: 00:34:42
   title: "Wie sieht ein m\xF6glicher Karriereweg aus, wenn der Engineering Manager-Weg\
     \ nichts f\xFCr mich ist?"
 date: '2022-02-01'

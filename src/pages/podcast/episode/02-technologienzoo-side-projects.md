@@ -3,65 +3,65 @@ amazon_music: https://music.amazon.com/podcasts/c35a09fe-4116-4e04-8f68-77d61b11
 apple_podcasts: https://podcasts.apple.com/us/podcast/02-technologienzoo-side-projects/id1603082924?i=1000547431502
 audio: https://stream.redcircle.com/episodes/7cce4a7c-8405-40c3-a9bf-dd902f0a07d8/stream.mp3
 chapter:
-- start: 00:00
+- start: 00:00:00
   title: Intro
-- start: 02:03
+- start: 00:02:03
   title: Vorstellung von Andy und Wolfgang
-- start: 02:18
+- start: 00:02:18
   title: Vorstellung Andy Grunwald
-- start: 02:36
+- start: 00:02:36
   title: Vorstellung Wolfgang Gassler
-- start: 03:11
+- start: 00:03:11
   title: 'Side Project "inspect": Automatische Generierung einer RabbitMQ Architektur'
-- start: 04:23
+- start: 00:04:23
   title: Was ist RabbitMQ?
-- start: 05:33
+- start: 00:05:33
   title: "Side Project \"sourcectl\": Metrik Platform f\xFCr Inner Source und Open\
     \ Sorurce Projekte"
-- start: 06:32
+- start: 00:06:32
   title: "sourcectl: Warum nutzt du RabbitMQ und keine Datenbank f\xFCr das Message\
     \ Queuing?"
-- start: 07:48
+- start: 00:07:48
   title: 'sourcectl: Monitoring'
-- start: 08:55
+- start: 00:08:55
   title: 'sourcectl: Verarbeitung von Messages'
-- start: 09:50
+- start: 00:09:50
   title: 'sourcectl: Infrastruktur- und Application-Setup'
-- start: '12:01'
+- start: 00:12:01
   title: "Was zur H\xF6lle ist ein OMR (vs. ein ORM)?"
-- start: '12:53'
+- start: 00:12:53
   title: "Was ist Traefik: The Cloud Native Application Proxy?\_"
-- start: '17:45'
+- start: 00:17:45
   title: "Traefik Pro und Overengineering: Loadbalancing \xFCber mehrere Server und\
     \ verteilte SSL Zertifikate"
-- start: '20:00'
+- start: 00:20:00
   title: "Side Project \"F-Online\": F\xFCr den F\xFChrerschein in \xD6sterreich lernen"
-- start: '21:34'
+- start: 00:21:34
   title: 'F-Online: Hosting und Monitoring'
-- start: '25:27'
+- start: 00:25:27
   title: Tipps um Kosten bei Google Cloud unter Kontrolle zu halten
-- start: '26:01'
+- start: 00:26:01
   title: 'F-Online: Infrastruktur- und Application-Setup'
-- start: '26:42'
+- start: 00:26:42
   title: 'Wolfgangs Leiche im Keller: Zend Framework 1 auf (teils) aktueller PHP Version'
-- start: '29:00'
+- start: 00:29:00
   title: 'F-Online: JavaScript Architektur'
-- start: '31:29'
+- start: 00:31:29
   title: 'F-Online: APIs'
-- start: '32:40'
+- start: 00:32:40
   title: 'F-Online: Datenbank'
-- start: '34:39'
+- start: 00:34:39
   title: "F-Online: Wie es aussehen w\xFCrde, wenn es nochmal neu gebaut werden w\xFC\
     rde"
-- start: '37:22'
+- start: 00:37:22
   title: Engineers over-engineeren von Haus aus
-- start: '37:40'
+- start: 00:37:40
   title: Side Project "the athlete"
-- start: '39:02'
+- start: 00:39:02
   title: Ziele, Motivation und die (eigenen) Erwartungen an Side Projects
-- start: '40:28'
+- start: 00:40:28
   title: "Wolfgang erz\xE4hlt vom Krieg: Sein eigenes Content Management System"
-- start: '42:37'
+- start: 00:42:37
   title: Outro
 date: '2022-01-10'
 description: "Wolfgang und Andy erz\xE4hlen ein wenig was \xFCber ihre eigenen Side\

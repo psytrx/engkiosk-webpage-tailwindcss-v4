@@ -3,55 +3,55 @@ amazon_music: https://music.amazon.com/podcasts/c35a09fe-4116-4e04-8f68-77d61b11
 apple_podcasts: https://podcasts.apple.com/us/podcast/03-over-engineering-das-werkzeug-des-teufels/id1603082924?i=1000548219975
 audio: https://stream.redcircle.com/episodes/8ab59758-598f-459b-8d7f-f832ced2b87f/stream.mp3
 chapter:
-- start: 00:00
+- start: 00:00:00
   title: Intro
-- start: 01:25
+- start: 00:01:25
   title: Was ist Over-Engineering?
-- start: 03:20
+- start: 00:03:20
   title: Umfeld vom Over-Engineering und die Anforderungen vom Projekt
-- start: 08:15
+- start: 00:08:15
   title: Ist alter Source-Code Over- oder Underengineered?
-- start: 09:00
+- start: 00:09:00
   title: Leiden Akademiker mehr unter Over-Engineering?
-- start: '10:10'
+- start: 00:10:10
   title: "Wann wei\xDF ich, ob ich etwas mehr Arbeit in ein Projekt stecken soll?"
-- start: '11:50'
+- start: 00:11:50
   title: Ist die meiste Java-Software Over-Engineered?
-- start: '12:55'
+- start: 00:12:55
   title: Kann man nicht mit alles einfach dreckig starten?
-- start: '14:40'
+- start: 00:14:40
   title: Neue Technologie vs. das was ich schon kenne
-- start: '17:55'
+- start: 00:17:55
   title: Twitter-Umfrage, was Leute unter Over-Engineering verstehen
-- start: '21:50'
+- start: 00:21:50
   title: Das DRY-Prinzip
-- start: '25:15'
+- start: 00:25:15
   title: Ein ORM / Object-Relational Mapping
-- start: '28:12'
+- start: 00:28:12
   title: Dependency Injection
-- start: '30:04'
+- start: 00:30:04
   title: Hackernews Driven Development
-- start: '33:20'
+- start: 00:33:20
   title: Positives Over-Engineering
-- start: '35:15'
+- start: 00:35:15
   title: "Methoden um sich selbst vor dem Over-Engineering zu sch\xFCtzen"
-- start: '37:30'
+- start: 00:37:30
   title: Wolfgang's Glaskugel
-- start: '38:07'
+- start: 00:38:07
   title: Overengineering findet viel zu selten statt
-- start: '41:55'
+- start: 00:41:55
   title: Bei Google steht ein staubiger Server im Datacenter, der die Suchmaschine
     betreibt
-- start: '45:23'
+- start: 00:45:23
   title: Underengineering bei der Reparatur von Kletterschuhen
-- start: '46:40'
+- start: 00:46:40
   title: "Do things that don\u2019t scale - Wie startet man ein Projekt m\xF6glichst\
     \ einfach"
-- start: '47:55'
+- start: 00:47:55
   title: "Over-Engineering in der Automation\_"
-- start: '48:35'
+- start: 00:48:35
   title: Fazit
-- start: '50:20'
+- start: 00:50:20
   title: Kontakt und Outro
 date: '2022-01-18'
 description: Was ist eigentlich Over-Engineering? Und wann ist es einfach nur gutes

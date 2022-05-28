@@ -152,10 +152,14 @@ def get_chapter_from_description(description):
 
     chapter = []
     for c in found_chapters:
+        start_time = c[0]
+        if start_time.count(":") == 1:
+            start_time = f"00:{start_time}"
+
         # In line with chaptermarks from podcast player
         # See https://github.com/podigee/podigee-podcast-player/blob/master/docs/configuration.md
         entry = {
-            "start": c[0],
+            "start": start_time,
             "title": html.unescape(c[1]),
         }
         chapter.append(entry)

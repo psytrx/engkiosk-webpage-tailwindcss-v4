@@ -3,40 +3,40 @@ amazon_music: https://music.amazon.com/podcasts/c35a09fe-4116-4e04-8f68-77d61b11
 apple_podcasts: https://podcasts.apple.com/us/podcast/13-produktivit%C3%A4t/id1603082924?i=1000556264575
 audio: https://stream.redcircle.com/episodes/84908405-bd61-4398-bdf3-134fddb59c3e/stream.mp3
 chapter:
-- start: 00:00
+- start: 00:00:00
   title: "Warum Zeit- und Produktivit\xE4tsmanagement relevant ist"
-- start: 04:44
+- start: 00:04:44
   title: Zeit-Management als Thema in 1on1s
-- start: 06:08
+- start: 00:06:08
   title: Getting Things Done (GTD) von David Allen
-- start: '12:31'
+- start: 00:12:31
   title: Kritik zu Getting Things Done (GTD)
-- start: '17:02'
+- start: 00:17:02
   title: Muss man jede Regel von Gettings Things Done (GTD) befolgen um es erfolgreich
     einzusetzen?
-- start: '18:38'
+- start: 00:18:38
   title: Nutzung von Getting Things Done (GTD) im privaten und im beruflichen
-- start: '21:03'
+- start: 00:21:03
   title: Erinnerungen als Engineering Manager um soziale Kontakte zu pflegen
-- start: '23:03'
+- start: 00:23:03
   title: Wie man seine Ehefrau mit Getting Things Done auf die Palme bringen kann
-- start: '25:00'
+- start: 00:25:00
   title: Inbox Zero
-- start: '30:35'
+- start: 00:30:35
   title: Kalender
-- start: '35:24'
+- start: 00:35:24
   title: Eisenhower-Matrix
-- start: '38:46'
+- start: 00:38:46
   title: 'Herausforderung: Aufgaben aktiv nicht zu tun'
-- start: '42:21'
+- start: 00:42:21
   title: Sich selbst mit spannenden Tasks selbst austricksen aka "Shape and Sell"
-- start: '45:21'
+- start: 00:45:21
   title: Das schwierige, mit einer neuen Methode zu starten
-- start: '47:33'
+- start: 00:47:33
   title: Welche Tools gibt es? Oder ist Stift und Zettel das Mittel der Wahl?
-- start: '52:59'
+- start: 00:52:59
   title: "Inspiration durch Blog-Artikel und B\xFCcher"
-- start: '55:37'
+- start: 00:55:37
   title: Outro
 date: '2022-04-05'
 description: "Zeit- und Produktivit\xE4tsmanagement: Buzzword-Bingo oder bringt das\

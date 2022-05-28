@@ -3,33 +3,33 @@ amazon_music: https://music.amazon.com/podcasts/c35a09fe-4116-4e04-8f68-77d61b11
 apple_podcasts: https://podcasts.apple.com/us/podcast/06-hype-oder-hope-job-titel-und-bef%C3%B6rderungen/id1603082924?i=1000551119949
 audio: https://stream.redcircle.com/episodes/d6840c34-1e98-42b6-82aa-5cb76b200fa6/stream.mp3
 chapter:
-- start: 00:00
+- start: 00:00:00
   title: Intro
-- start: 01:06
+- start: 00:01:06
   title: Deepmind News "AlphaCode" - Ein neuer Machine Learning Hype?
-- start: 06:40
+- start: 00:06:40
   title: Wie kann Alpha Code in der Praxis genutzt werden?
-- start: 08:04
+- start: 00:08:04
   title: Coding Challenges im Recruiting-Prozess
-- start: '11:09'
+- start: 00:11:09
   title: Hypes im Infrastruktur-Bereich
-- start: '16:45'
+- start: 00:16:45
   title: Frischer Wind von neuen Leuten in der Firma
-- start: '19:22'
+- start: 00:19:22
   title: Mono-Repos als Hype-Beispiel
-- start: '20:55'
+- start: 00:20:55
   title: Industrie-Definition von Job-Titles
-- start: '26:03'
+- start: 00:26:03
   title: Braucht man Job-Titles (Senior, etc.)?
-- start: '31:43'
+- start: 00:31:43
   title: Festgefahrene Strukturen in Konzernen
-- start: '37:38'
+- start: 00:37:38
   title: Geld ist bei weitem nicht alles bei einem Job
-- start: '41:50'
+- start: 00:41:50
   title: "Mach das was dir Spa\xDF machst und Generalisten vs. Spezialisten"
-- start: '45:36'
+- start: 00:45:36
   title: "5-Jahres-Pl\xE4ne"
-- start: '49:56'
+- start: 00:49:56
   title: Outro
 date: '2022-02-15'
 description: Sind Machine Learning und Artificial Intelligence nur Hypes oder sollte

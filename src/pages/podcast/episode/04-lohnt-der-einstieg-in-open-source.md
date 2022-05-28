@@ -3,62 +3,62 @@ amazon_music: https://music.amazon.com/podcasts/c35a09fe-4116-4e04-8f68-77d61b11
 apple_podcasts: https://podcasts.apple.com/us/podcast/04-lohnt-der-einstieg-in-open-source/id1603082924?i=1000548902548
 audio: https://stream.redcircle.com/episodes/08ff2242-89e4-4533-8498-93d201ed6679/stream.mp3
 chapter:
-- start: '2:04'
+- start: 00:2:04
   title: Wann hast du mit Open Source begonnen und warum?
-- start: 03:27
+- start: 00:03:27
   title: "Wie w\xFCrdest du denn Open Source definieren?"
-- start: 05:08
+- start: 00:05:08
   title: Warum bist du in der Open Source Szene geblieben?
-- start: 06:45
+- start: 00:06:45
   title: Hattest du mal schlechte Erlebnisse bei oder mit Open Source? als Maintainer?
-- start: 07:33
+- start: 00:07:33
   title: '... und als Contributor?'
-- start: 08:15
+- start: 00:08:15
   title: "Welche Tips kannst du Contributoren geben, um die Erfolgschancen f\xFCr\
     \ Pull Requests zu erh\xF6hen?"
-- start: '10:04'
+- start: 00:10:04
   title: Hast du Best Practices aus Maintainer-Seite, wie man mit Contributoren umgeht?
-- start: '12:12'
+- start: 00:12:12
   title: Wie geht man mit eigenen Open Source Projekten um, die man selbst nicht mehr
     nutzt?
-- start: '15:31'
+- start: 00:15:31
   title: Wie gehst du mit Feature Requests um?
-- start: '17:56'
+- start: 00:17:56
   title: Hat dir bereits jemand ein Feature gesponsored?
-- start: '19:14'
+- start: 00:19:14
   title: Open Source wird als Free work verstanden
-- start: '20:45'
+- start: 00:20:45
   title: "Tipps f\xFCr einen Feature Request bei einem Projekt"
-- start: '21:49'
+- start: 00:21:49
   title: Kommunikation ist sehr wichtig
-- start: '22:36'
+- start: 00:22:36
   title: Wie siehst du den Stellenwert von Open Source im professionellem Umfeld?
-- start: '24:35'
+- start: 00:24:35
   title: "Open Source als Mittel f\xFCrs Recruiting"
-- start: '25:40'
+- start: 00:25:40
   title: Wie kann sich eine kleine Firma im Open Source Bereich engagieren?
-- start: '28:09'
+- start: 00:28:09
   title: "Was h\xE4lst du von dem Open Source First Konzept?"
-- start: '29:29'
+- start: 00:29:29
   title: Was ist Inner Source?
-- start: '30:40'
+- start: 00:30:40
   title: "Passw\xF6rter und Secrets im Code"
-- start: '32:12'
+- start: 00:32:12
   title: "M\xF6glichkeiten um ein Repository zu Open Sourcen"
-- start: '32:38'
+- start: 00:32:38
   title: "Negative Punkte f\xFCr den Einsatz von Open Source"
-- start: '36:55'
+- start: 00:36:55
   title: "Welche Open Source Lizenz w\xFCrdest du empfehlen, wenn jemand mit einem\
     \ neuen Projekt starten m\xF6chte?"
-- start: '39:29'
+- start: 00:39:29
   title: Projekte auf GitHub ohne Lizenz
-- start: '40:35'
+- start: 00:40:35
   title: Beer- und Pizza-Lizenz
-- start: '41:02'
+- start: 00:41:02
   title: "Kleine Sponsoring-Beitr\xE4ge und Danke-Nachrichten k\xF6nnen viel bewirken"
-- start: '45:13'
+- start: 00:45:13
   title: Andy flitzt nackig durch die Wohnung
-- start: '48:15'
+- start: 00:48:15
   title: Was deine Open Source Contribution mit deinem professionellen Werdegang zu
     tun hat
 date: '2022-01-25'

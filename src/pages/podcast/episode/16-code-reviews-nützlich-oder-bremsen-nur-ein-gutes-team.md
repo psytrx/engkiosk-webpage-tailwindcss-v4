@@ -3,63 +3,63 @@ amazon_music: https://music.amazon.com/podcasts/c35a09fe-4116-4e04-8f68-77d61b11
 apple_podcasts: https://podcasts.apple.com/us/podcast/16-code-reviews-n%C3%BCtzlich-oder-bremsen-nur-ein-gutes-team/id1603082924?i=1000558699631
 audio: https://stream.redcircle.com/episodes/7c477eeb-e8a1-43e3-9663-8c6d9118645f/stream.mp3
 chapter:
-- start: 00:00
+- start: 00:00:00
   title: Intro
-- start: 01:23
+- start: 00:01:23
   title: Amsterdam, Hipster und Craft-Bier
-- start: 02:04
+- start: 00:02:04
   title: git rebase, history rewrite, force push und Kollaboration
-- start: 04:54
+- start: 00:04:54
   title: Saubere git history und Merge-Commits
-- start: 05:17
+- start: 00:05:17
   title: Code Reviews
-- start: 02:05
+- start: 00:02:05
   title: Was ist denn ein Code Review?
-- start: 07:02
+- start: 00:07:02
   title: Muss der Code Reviewer immer mehr Erfahrung haben?
-- start: 08:10
+- start: 00:08:10
   title: "Was wir von Juniors im Job und bei Code Reviews lernen k\xF6nnen"
-- start: 09:37
+- start: 00:09:37
   title: Was ist denn ein Google Fellow?
-- start: '10:37'
+- start: 00:10:37
   title: "Code Reviews als Mittel f\xFCrs Onboarding"
-- start: '11:35'
+- start: 00:11:35
   title: "Fr\xFChes pushen der Arbeit ist wichtig f\xFCr fr\xFChes Feedback"
-- start: '13:15'
+- start: 00:13:15
   title: "Wo sollen die Informationen zu meiner \xC4nderung stehen? Im Pull Request\
     \ oder in der Git Commit message?"
-- start: '15:04'
+- start: 00:15:04
   title: Wen lade ich zu meinem Code Review ein? Code Owners file und Software Repository
     Mining
-- start: '17:34'
+- start: 00:17:34
   title: Worauf soll ich als Code Reviewer acht geben und konzentrieren?
-- start: '20:09'
+- start: 00:20:09
   title: "Pro-Aktivit\xE4t in Code Reviews mit aktiven Vorschl\xE4gen und Fragen stellen"
-- start: '23:33'
+- start: 00:23:33
   title: "Muss man jedes Feedback aus dem Code Review annehmen? Lass das Ego vor der\
     \ T\xFCr und Gate-Keeper"
-- start: '26:37'
+- start: 00:26:37
   title: 'Kommunikationskonflikte in Code Reviews: Video Calls vs. geschriebene Kommunikation'
-- start: '28:14'
+- start: 00:28:14
   title: Nitpicking, Code-Formatting, Styleguides, Linter und Automatisierung
-- start: '32:11'
+- start: 00:32:11
   title: Mindern Pull Requests und Code Reviews die Performance von Teams?
-- start: '36:56'
+- start: 00:36:56
   title: 'Schnelligkeit bei Facebook und Booking: Schnelles Mergen und Code Reviews
     danach'
-- start: '39:01'
+- start: 00:39:01
   title: Auslagerung der Verantwortung bei Code Reviews und Blameless Kultur innerhalb
     der Firma
-- start: '42:38'
+- start: 00:42:38
   title: "Technische Mittel f\xFCr sichere Deploys: Feature Flags, Canary Deployments,\
     \ Dark Launches und Blue-Green-Deployments"
-- start: '46:08'
+- start: 00:46:08
   title: Wie schnell sollte ein Code Review vom Team gereviewed werden?
-- start: '53:00'
+- start: 00:53:00
   title: Code Reviews in der Firma vs. Code Reviews in Open Source und die Motivation
-- start: '54:34'
+- start: 00:54:34
   title: Konsequenzen bei nicht eingehaltenen Service Level Agreements (SLA)
-- start: '57:28'
+- start: 00:57:28
   title: Outro
 date: '2022-04-26'
 description: "Code Reviews: Jeder will schnelles Feedback, doch niemand hat Zeit daf\xFC\

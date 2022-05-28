@@ -3,44 +3,44 @@ amazon_music: https://music.amazon.com/podcasts/c35a09fe-4116-4e04-8f68-77d61b11
 apple_podcasts: https://podcasts.apple.com/us/podcast/01-side-projects-fluch-oder-segen-f%C3%BCr-die-karriere/id1603082924?i=1000546793663
 audio: https://stream.redcircle.com/episodes/b421f30e-6b8e-4351-8644-7a89b1343287/stream.mp3
 chapter:
-- start: 00:26
+- start: 00:00:26
   title: Warum "Engineering Kiosk"? Woher kommt der Name?
-- start: 01:52
+- start: 00:01:52
   title: Einstieg ins Thema "Side Projects"
-- start: 02:00
+- start: 00:02:00
   title: Side Projects im Recruiting Prozess und Lebenslauf
-- start: 03:45
+- start: 00:03:45
   title: Muss das Side Project etwas mit dem Job zu tun haben?
-- start: 05:40
+- start: 00:05:40
   title: Alleine oder im Team?
-- start: 08:10
+- start: 00:08:10
   title: "Was bringt dir die Information \"Side Project\" f\xFCr das Interview selbst?"
-- start: '11:25'
+- start: 00:11:25
   title: Hire for Skill or for attitude
-- start: '12:43'
+- start: 00:12:43
   title: Kann ein Side Project auch etwas negatives bedeuten (als Hiring Manager)?
-- start: '14:55'
+- start: 00:14:55
   title: "Wolfgang erz\xE4hlt aus dem Krieg: Sein Mail-Server Side-Project"
-- start: '18:31'
+- start: 00:18:31
   title: Psychologischer Druck bei Side Projects
-- start: '19:23'
+- start: 00:19:23
   title: Learnings aus Side Projects
-- start: '23:44'
+- start: 00:23:44
   title: 'Rollen-, Zeit- und Energiemanagement: Side-Projects mit Familie/in der Freizeit'
-- start: '31:53'
+- start: 00:31:53
   title: Side Projects als Ausgleich
-- start: '34:10'
+- start: 00:34:10
   title: Learnings aus dem Side Project im Job als Engineering Manager
-- start: '36:27'
+- start: 00:36:27
   title: "Lohnen sich Side Projects f\xFCr die Job-Suche?"
-- start: '40:02'
+- start: 00:40:02
   title: "Wie Ihr eure Side Projects nutzen k\xF6nnt um das Interview zu eurem Vorteil\
     \ zu drehen"
-- start: '42:45'
+- start: 00:42:45
   title: Brauchen wir POP3 noch?
-- start: '43:34'
+- start: 00:43:34
   title: 'Top Tip: Startet ein Side Project und setzt euch die richtigen Erwartungen'
-- start: '44:39'
+- start: 00:44:39
   title: "Sind Arbeitgeber gl\xFCcklich \xFCber Side Projects von MitarbeiterInnen?"
 date: '2022-01-03'
 description: "Zwei Engineering Manager \xFCber Side Projects: Wie diese den Recruiting\

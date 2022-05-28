@@ -3,49 +3,49 @@ amazon_music: https://music.amazon.com/podcasts/c35a09fe-4116-4e04-8f68-77d61b11
 apple_podcasts: https://podcasts.apple.com/us/podcast/00-developer-fangen-bei-0-an-zu-z%C3%A4hlen/id1603082924?i=1000550397428
 audio: https://stream.redcircle.com/episodes/8d890e77-cc0f-4cf7-b35b-bf5a21553d60/stream.mp3
 chapter:
-- start: 00:00
+- start: 00:00:00
   title: Intro
-- start: 00:30
+- start: 00:00:30
   title: Gratulation zu 5 Episoden
-- start: 01:43
+- start: 00:01:43
   title: Wer ist Wolfgang Gassler?
-- start: 01:59
+- start: 00:01:59
   title: "... Was willst du mal werden, wenn du gro\xDF bist?"
-- start: 02:44
+- start: 00:02:44
   title: '... Was ist das letzte, nicht IT technische, was du gelernt hast?'
-- start: 03:49
+- start: 00:03:49
   title: "... Was motiviert dich, dich jeden Tag erneut mit IT und Software Engineering\
     \ zu besch\xE4ftigen?"
-- start: 05:05
+- start: 00:05:05
   title: '... Fakten-Check'
-- start: 06:29
+- start: 00:06:29
   title: '... Wolfgangs Personalakte'
-- start: 07:04
+- start: 00:07:04
   title: '... Wie viele Domains besitzt du, wo kein Side Projekt gestartet wurde?'
-- start: 07:58
+- start: 00:07:58
   title: Wer ist Andy Grunwald?
-- start: 08:08
+- start: 00:08:08
   title: '... Was ist das erste, was du tust, wenn du einen Incident hast und wie
     Website down ist?'
-- start: 09:12
+- start: 00:09:12
   title: "... Warum macht es dir soviel Spa\xDF aufzur\xE4umen und warum sind Ziegen\
     \ auf deinem Instagram-Account?"
-- start: '11:26'
+- start: 00:11:26
   title: '... Welcher Spruch soll auf deinem Grabstein stehen oder auf einem Banner
     in deiner Heimatstadt Duisburg?'
-- start: '12:03'
+- start: 00:12:03
   title: '... Andys Personalakte'
-- start: '13:12'
+- start: 00:13:12
   title: Warum machen wir das Engineering Kiosk?
-- start: '15:42'
+- start: 00:15:42
   title: Wie haben wir den Podcast gestartet?
-- start: '20:01'
+- start: 00:20:01
   title: Warum kommt die Folge 00 jetzt erst?
-- start: '21:15'
+- start: 00:21:15
   title: Was haben wir von 5 Podcast Episoden bereits gelernt?
-- start: '25:28'
+- start: 00:25:28
   title: Open Podcast
-- start: '27:00'
+- start: 00:27:00
   title: Outro
 date: '2022-02-08'
 description: "Software Engineers fangen bei 0 an zu z\xE4hlen. Das Engineering Kiosk\
