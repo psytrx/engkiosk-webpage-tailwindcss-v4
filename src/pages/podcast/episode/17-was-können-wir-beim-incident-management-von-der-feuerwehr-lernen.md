@@ -1,5 +1,5 @@
 ---
-amazon_music: ''
+amazon_music: https://music.amazon.com/podcasts/c35a09fe-4116-4e04-8f68-77d61b112e46/episodes/25643515-280a-4365-aac3-14d3364334c0/engineering-kiosk-17-was-k%C3%B6nnen-wir-beim-incident-management-von-der-feuerwehr-lernen
 apple_podcasts: ''
 audio: https://stream.redcircle.com/episodes/3c0581f5-309a-421c-b731-b28b211564c7/stream.mp3
 chapter:

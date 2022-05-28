@@ -1,5 +1,5 @@
 ---
-amazon_music: ''
+amazon_music: https://music.amazon.com/podcasts/c35a09fe-4116-4e04-8f68-77d61b112e46/episodes/5ce79422-5b5a-45e1-baaf-ad0d414cd691/engineering-kiosk-05-team-lead---der-einzige-ausweg
 apple_podcasts: ''
 audio: https://stream.redcircle.com/episodes/41cfb14d-7091-482a-9d05-eb21219897ab/stream.mp3
 chapter:

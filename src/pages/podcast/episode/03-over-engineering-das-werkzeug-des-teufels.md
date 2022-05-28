@@ -1,5 +1,5 @@
 ---
-amazon_music: ''
+amazon_music: https://music.amazon.com/podcasts/c35a09fe-4116-4e04-8f68-77d61b112e46/episodes/3a1c7cb3-6259-4c47-a129-f93a96345d89/engineering-kiosk-03-over-engineering-das-werkzeug-des-teufels
 apple_podcasts: ''
 audio: https://stream.redcircle.com/episodes/8ab59758-598f-459b-8d7f-f832ced2b87f/stream.mp3
 chapter:

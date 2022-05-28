@@ -1,5 +1,5 @@
 ---
-amazon_music: ''
+amazon_music: https://music.amazon.com/podcasts/c35a09fe-4116-4e04-8f68-77d61b112e46/episodes/f279aaac-4d4e-4580-adc2-1f881582f5d6/engineering-kiosk-20-off-boarding-und-on-boarding-wie-verlasse-ich-eine-firma-richtig
 apple_podcasts: ''
 audio: https://stream.redcircle.com/episodes/58ab37e0-8483-4a85-ba79-12fc1ee84dc9/stream.mp3
 chapter:

@@ -1,5 +1,5 @@
 ---
-amazon_music: ''
+amazon_music: https://music.amazon.com/podcasts/c35a09fe-4116-4e04-8f68-77d61b112e46/episodes/d7e5bc38-3464-475c-998c-1deda993203e/engineering-kiosk-07-die-freelance-freiheit
 apple_podcasts: ''
 audio: https://stream.redcircle.com/episodes/e51b5ba0-f174-4965-8203-8b5673dac440/stream.mp3
 chapter:

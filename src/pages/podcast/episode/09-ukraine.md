@@ -1,5 +1,5 @@
 ---
-amazon_music: ''
+amazon_music: https://music.amazon.com/podcasts/c35a09fe-4116-4e04-8f68-77d61b112e46/episodes/1bbd576c-feb1-4a4a-ad64-640691e19c47/engineering-kiosk-09-ukraine
 apple_podcasts: ''
 audio: https://stream.redcircle.com/episodes/62eae97a-f058-4352-97a2-d2bc5c48b688/stream.mp3
 chapter:

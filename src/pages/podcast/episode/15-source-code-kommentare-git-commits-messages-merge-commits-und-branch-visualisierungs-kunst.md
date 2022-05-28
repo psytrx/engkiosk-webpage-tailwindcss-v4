@@ -1,5 +1,5 @@
 ---
-amazon_music: ''
+amazon_music: https://music.amazon.com/podcasts/c35a09fe-4116-4e04-8f68-77d61b112e46/episodes/514b60e4-f920-4b57-9e7a-fb050f7c922d/engineering-kiosk-15-source-code-kommentare-git-commits-messages-merge-commits-und-branch-visualisierungs-kunst
 apple_podcasts: ''
 audio: https://stream.redcircle.com/episodes/af8ca39f-afd0-4a99-b1ff-1cc11ab176ad/stream.mp3
 chapter:

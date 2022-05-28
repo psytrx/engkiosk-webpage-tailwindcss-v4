@@ -1,5 +1,5 @@
 ---
-amazon_music: ''
+amazon_music: https://music.amazon.com/podcasts/c35a09fe-4116-4e04-8f68-77d61b112e46/episodes/e4c5e0e2-4078-4764-888f-9c9ddc435bd3/engineering-kiosk-08-vergiss-doch-datenbanken
 apple_podcasts: ''
 audio: https://stream.redcircle.com/episodes/ff17f8af-00a3-4594-8886-d1c2a3980c67/stream.mp3
 chapter:

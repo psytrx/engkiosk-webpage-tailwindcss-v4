@@ -1,5 +1,5 @@
 ---
-amazon_music: ''
+amazon_music: https://music.amazon.com/podcasts/c35a09fe-4116-4e04-8f68-77d61b112e46/episodes/fa8cbe71-6bf0-46fc-b826-de7ee2a7c06d/engineering-kiosk-00-developer-fangen-bei-0-an-zu-z%C3%A4hlen
 apple_podcasts: ''
 audio: https://stream.redcircle.com/episodes/8d890e77-cc0f-4cf7-b35b-bf5a21553d60/stream.mp3
 chapter:

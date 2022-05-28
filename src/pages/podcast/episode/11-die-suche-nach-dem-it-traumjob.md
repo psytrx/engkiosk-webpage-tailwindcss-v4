@@ -1,5 +1,5 @@
 ---
-amazon_music: ''
+amazon_music: https://music.amazon.com/podcasts/c35a09fe-4116-4e04-8f68-77d61b112e46/episodes/49daa46d-676a-41b2-80c4-224a6a10f42e/engineering-kiosk-11-die-suche-nach-dem-it-traumjob
 apple_podcasts: ''
 audio: https://stream.redcircle.com/episodes/ba617374-c9e2-4ccb-9cd5-a90cda8b62a7/stream.mp3
 chapter:
