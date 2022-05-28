@@ -1,4 +1,6 @@
 ---
+amazon_music: ''
+apple_podcasts: ''
 audio: https://stream.redcircle.com/episodes/7c477eeb-e8a1-43e3-9663-8c6d9118645f/stream.mp3
 chapter:
 - start: 00:00
@@ -62,9 +64,12 @@ chapter:
 date: '2022-04-26'
 description: "Code Reviews: Jeder will schnelles Feedback, doch niemand hat Zeit daf\xFC\
   r - Eine Hassliebe. Eine Komponente im Alltag jedes ..."
+google_podcasts: ''
 headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts
 image: "/images/podcast/episode/16-code-reviews-n\xFCtzlich-oder-bremsen-nur-ein-gutes-team.jpg"
 layout: ../../../layouts/podcast-episode.astro
+pocket_casts: ''
+spotify: ''
 title: "#16 Code Reviews: N\xFCtzlich oder bremsen nur ein gutes Team?"
 
 ---

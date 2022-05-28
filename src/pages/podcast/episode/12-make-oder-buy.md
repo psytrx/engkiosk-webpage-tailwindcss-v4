@@ -1,4 +1,6 @@
 ---
+amazon_music: ''
+apple_podcasts: ''
 audio: https://stream.redcircle.com/episodes/1adada84-15c2-4fd0-99b9-e7842f29ecef/stream.mp3
 chapter:
 - start: 00:00
@@ -42,9 +44,12 @@ chapter:
 date: '2022-03-29'
 description: 'Make oder Buy: Alles einkaufen oder doch lieber selber machen? Eine
   Frage die jeder von uns kennt: Sind meine Anforderungen ...'
+google_podcasts: ''
 headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts
 image: /images/podcast/episode/12-make-oder-buy.jpg
 layout: ../../../layouts/podcast-episode.astro
+pocket_casts: ''
+spotify: ''
 title: '#12 Make oder Buy'
 
 ---

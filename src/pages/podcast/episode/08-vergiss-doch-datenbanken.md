@@ -1,4 +1,6 @@
 ---
+amazon_music: ''
+apple_podcasts: ''
 audio: https://stream.redcircle.com/episodes/ff17f8af-00a3-4594-8886-d1c2a3980c67/stream.mp3
 chapter:
 - start: 00:00
@@ -46,9 +48,12 @@ chapter:
 date: '2022-03-01'
 description: Datenbanken, besonders relationale Datenbanken und im Web ganz besonders
   MySQL. Jeder kennt sie, jeder nutzt sie, aber keiner ...
+google_podcasts: ''
 headlines: "links::Links||erwahnte-personen::Erw\xE4hnte Personen||sprungmarken::Sprungmarken||hosts::Hosts"
 image: /images/podcast/episode/08-vergiss-doch-datenbanken.jpg
 layout: ../../../layouts/podcast-episode.astro
+pocket_casts: ''
+spotify: ''
 title: '#08 Vergiss doch Datenbanken!'
 
 ---

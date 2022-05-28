@@ -1,4 +1,6 @@
 ---
+amazon_music: ''
+apple_podcasts: ''
 audio: https://stream.redcircle.com/episodes/8d890e77-cc0f-4cf7-b35b-bf5a21553d60/stream.mp3
 chapter:
 - start: 00:00
@@ -48,9 +50,12 @@ chapter:
 date: '2022-02-08'
 description: "Software Engineers fangen bei 0 an zu z\xE4hlen. Das Engineering Kiosk\
   \ ist direkt bei Episode 1 gestartet. Diesen Off-by-one ..."
+google_podcasts: ''
 headlines: ''
 image: "/images/podcast/episode/00-developer-fangen-bei-0-an-zu-z\xE4hlen.jpg"
 layout: ../../../layouts/podcast-episode.astro
+pocket_casts: ''
+spotify: ''
 title: "#00 Developer fangen bei 0 an zu z\xE4hlen"
 
 ---

@@ -1,4 +1,6 @@
 ---
+amazon_music: ''
+apple_podcasts: ''
 audio: https://stream.redcircle.com/episodes/c8d31470-3a28-443c-aafd-af96625f4146/stream.mp3
 chapter:
 - start: 00:00
@@ -33,9 +35,12 @@ chapter:
 date: '2022-03-15'
 description: "1on1s - Zeitverschwendung oder eins der wertvollsten Meetings deiner\
   \ Karriere? Andy und Wolfgang sprechen \xFCber das meist ..."
+google_podcasts: ''
 headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts
 image: /images/podcast/episode/10-das-karriere-booster-meeting-11s.jpg
 layout: ../../../layouts/podcast-episode.astro
+pocket_casts: ''
+spotify: ''
 title: '#10 Das Karriere Booster Meeting 1:1s'
 
 ---

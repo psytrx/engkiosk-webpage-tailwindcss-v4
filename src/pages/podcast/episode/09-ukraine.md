@@ -1,4 +1,6 @@
 ---
+amazon_music: ''
+apple_podcasts: ''
 audio: https://stream.redcircle.com/episodes/62eae97a-f058-4352-97a2-d2bc5c48b688/stream.mp3
 chapter:
 - start: 00:00
@@ -46,9 +48,12 @@ chapter:
 date: '2022-03-08'
 description: "Es wird politisch: Der Angriffskrieg auf die Ukraine und eine m\xF6\
   glichst technische Beleuchtung des Themas. Wolfgang und Andy ..."
+google_podcasts: ''
 headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts
 image: /images/podcast/episode/09-ukraine.jpg
 layout: ../../../layouts/podcast-episode.astro
+pocket_casts: ''
+spotify: ''
 title: '#09 Ukraine'
 
 ---

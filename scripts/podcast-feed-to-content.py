@@ -249,6 +249,11 @@ for item in channel.findall('item'):
         'description': description_short,
         'headlines': headline_info,
         'chapter': chapter,
+        'spotify': '',
+        'google_podcasts': '',
+        'apple_podcasts': '',
+        'pocket_casts': '',
+        'amazon_music': ''
     }
     content_yaml = yaml.dump(data)
 

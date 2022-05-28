@@ -1,4 +1,6 @@
 ---
+amazon_music: ''
+apple_podcasts: ''
 audio: https://stream.redcircle.com/episodes/41cfb14d-7091-482a-9d05-eb21219897ab/stream.mp3
 chapter:
 - start: 00:55
@@ -41,10 +43,13 @@ chapter:
 date: '2022-02-01'
 description: 'Engineering Manager oder Team-Lead: Eine Position die sehr motivierend,
   aber auch abschreckend wirken kann. Was erwartet ...'
+google_podcasts: ''
 headlines: "erwahnte-artikel::Erw\xE4hnte Artikel||bucher-uber-das-engineering-management::B\xFC\
   cher \xFCber das Engineering Management||sprungmarken::Sprungmarken||hosts::Hosts"
 image: /images/podcast/episode/05-team-lead-der-einzige-ausweg.jpg
 layout: ../../../layouts/podcast-episode.astro
+pocket_casts: ''
+spotify: ''
 title: '#05 Team Lead - der einzige Ausweg'
 
 ---

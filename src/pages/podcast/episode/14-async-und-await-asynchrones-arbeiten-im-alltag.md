@@ -1,4 +1,6 @@
 ---
+amazon_music: ''
+apple_podcasts: ''
 audio: https://stream.redcircle.com/episodes/3577c74d-2d25-408e-9107-1fae71daf76a/stream.mp3
 chapter:
 - start: 00:00
@@ -41,9 +43,12 @@ chapter:
 date: '2022-04-12'
 description: Remote-Work, asynchrone und parallele Arbeit und die eigene Work-Life-Balance.
   Durch Corona haben wir alle einen Geschmack ...
+google_podcasts: ''
 headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts
 image: /images/podcast/episode/14-async-und-await-asynchrones-arbeiten-im-alltag.jpg
 layout: ../../../layouts/podcast-episode.astro
+pocket_casts: ''
+spotify: ''
 title: '#14 async und await: asynchrones Arbeiten im Alltag'
 
 ---

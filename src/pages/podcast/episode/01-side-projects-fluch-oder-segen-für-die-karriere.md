@@ -1,4 +1,6 @@
 ---
+amazon_music: ''
+apple_podcasts: ''
 audio: https://stream.redcircle.com/episodes/b421f30e-6b8e-4351-8644-7a89b1343287/stream.mp3
 chapter:
 - start: 00:26
@@ -43,9 +45,12 @@ chapter:
 date: '2022-01-03'
 description: "Zwei Engineering Manager \xFCber Side Projects: Wie diese den Recruiting\
   \ Prozess beeinflussen, welche Learnings aus einem Projekt ..."
+google_podcasts: ''
 headlines: "sprungmarken::Sprungmarken||erwahnte-personen::Erw\xE4hnte Personen||hosts::Hosts"
 image: "/images/podcast/episode/01-side-projects-fluch-oder-segen-f\xFCr-die-karriere.jpg"
 layout: ../../../layouts/podcast-episode.astro
+pocket_casts: ''
+spotify: ''
 title: "#01 Side Projects - Fluch oder Segen f\xFCr die Karriere?"
 
 ---

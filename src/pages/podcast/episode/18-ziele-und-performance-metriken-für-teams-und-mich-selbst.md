@@ -1,4 +1,6 @@
 ---
+amazon_music: ''
+apple_podcasts: ''
 audio: https://stream.redcircle.com/episodes/0e0b7c29-15dd-4a06-aeaa-3bd87ebad9aa/stream.mp3
 chapter:
 - start: 00:00:00
@@ -50,9 +52,12 @@ chapter:
 date: '2022-05-10'
 description: "Ziel-Definitionen und Mitarbeiter-Metriken: Sinnvoll oder totaler Bl\xF6\
   dsinn? Das Thema ist hei\xDF umstritten. Viele lieben Ziele ..."
+google_podcasts: ''
 headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts
 image: "/images/podcast/episode/18-ziele-und-performance-metriken-f\xFCr-teams-und-mich-selbst.jpg"
 layout: ../../../layouts/podcast-episode.astro
+pocket_casts: ''
+spotify: ''
 title: "#18 Ziele und Performance-Metriken f\xFCr Teams und mich selbst"
 
 ---

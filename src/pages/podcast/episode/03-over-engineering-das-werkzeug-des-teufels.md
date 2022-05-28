@@ -1,4 +1,6 @@
 ---
+amazon_music: ''
+apple_podcasts: ''
 audio: https://stream.redcircle.com/episodes/8ab59758-598f-459b-8d7f-f832ced2b87f/stream.mp3
 chapter:
 - start: 00:00
@@ -54,9 +56,12 @@ chapter:
 date: '2022-01-18'
 description: Was ist eigentlich Over-Engineering? Und wann ist es einfach nur gutes
   Engineering? Ist das eigentlich immer nur negativ? ...
+google_podcasts: ''
 headlines: sprungmarken::Sprungmarken||artikel::Artikel||konzepte::Konzepte||projekte::Projekte
 image: /images/podcast/episode/03-over-engineering-das-werkzeug-des-teufels.jpg
 layout: ../../../layouts/podcast-episode.astro
+pocket_casts: ''
+spotify: ''
 title: '#03 Over-Engineering, das Werkzeug des Teufels?'
 
 ---

@@ -1,4 +1,6 @@
 ---
+amazon_music: ''
+apple_podcasts: ''
 audio: https://stream.redcircle.com/episodes/3c0581f5-309a-421c-b731-b28b211564c7/stream.mp3
 chapter:
 - start: 00:00:00
@@ -68,9 +70,12 @@ chapter:
 date: '2022-05-03'
 description: "Was haben die Methoden der Feuerwehr zur Bek\xE4mpfung von Gro\xDFschadensereignissen\
   \ mit dem Incident Management von IT-Systemen ..."
+google_podcasts: ''
 headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts
 image: "/images/podcast/episode/17-was-k\xF6nnen-wir-beim-incident-management-von-der-feuerwehr-lernen.jpg"
 layout: ../../../layouts/podcast-episode.astro
+pocket_casts: ''
+spotify: ''
 title: "#17 Was k\xF6nnen wir beim Incident Management von der Feuerwehr lernen?"
 
 ---

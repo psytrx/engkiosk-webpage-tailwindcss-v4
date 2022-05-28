@@ -1,4 +1,6 @@
 ---
+amazon_music: ''
+apple_podcasts: ''
 audio: https://stream.redcircle.com/episodes/84908405-bd61-4398-bdf3-134fddb59c3e/stream.mp3
 chapter:
 - start: 00:00
@@ -39,9 +41,12 @@ chapter:
 date: '2022-04-05'
 description: "Zeit- und Produktivit\xE4tsmanagement: Buzzword-Bingo oder bringt das\
   \ wirklich was? So bl\xF6d wie das Thema auch klingen mag, ..."
+google_podcasts: ''
 headlines: "links::Links||bucher::B\xFCcher||sprungmarken::Sprungmarken||hosts::Hosts"
 image: "/images/podcast/episode/13-produktivit\xE4t.jpg"
 layout: ../../../layouts/podcast-episode.astro
+pocket_casts: ''
+spotify: ''
 title: "#13 Produktivit\xE4t"
 
 ---

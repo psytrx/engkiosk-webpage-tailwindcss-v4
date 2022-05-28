@@ -1,4 +1,6 @@
 ---
+amazon_music: ''
+apple_podcasts: ''
 audio: https://stream.redcircle.com/episodes/afb215a2-96f7-4293-a9ae-10bebd6c483a/stream.mp3
 chapter:
 - start: 00:00:00
@@ -64,9 +66,12 @@ chapter:
 date: '2022-05-17'
 description: "Der zweite Datenbank-Deepdive im Engineering Kiosk. Indirekt kn\xFC\
   pfen wir an Episode 8 mit dem Thema Datenbanken. Diesmal ..."
+google_podcasts: ''
 headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts
 image: "/images/podcast/episode/19-datenbank-deepdive-oder-das-ende-einer-\xE4ra-von-redis-bis-clickhouse.jpg"
 layout: ../../../layouts/podcast-episode.astro
+pocket_casts: ''
+spotify: ''
 title: "#19 Datenbank-Deepdive (oder das Ende einer \xC4ra): von Redis bis ClickHouse"
 
 ---

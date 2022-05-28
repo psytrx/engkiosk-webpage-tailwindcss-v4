@@ -1,4 +1,6 @@
 ---
+amazon_music: ''
+apple_podcasts: ''
 audio: https://stream.redcircle.com/episodes/af8ca39f-afd0-4a99-b1ff-1cc11ab176ad/stream.mp3
 chapter:
 - start: 00:00:00
@@ -60,9 +62,12 @@ chapter:
 date: '2022-04-19'
 description: "Kommentare im Quellcode und Git Commit Messages - Liest die \xFCberhaupt\
   \ wer? Ein Streit, der so alt ist wie die Software Entwicklung ..."
+google_podcasts: ''
 headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts
 image: /images/podcast/episode/15-source-code-kommentare-git-commits-messages-merge-commits-und-branch-visualisierungs-kunst.jpg
 layout: ../../../layouts/podcast-episode.astro
+pocket_casts: ''
+spotify: ''
 title: '#15  Source Code Kommentare, Git Commits Messages, Merge Commits und Branch-Visualisierungs-Kunst'
 
 ---

@@ -1,4 +1,6 @@
 ---
+amazon_music: ''
+apple_podcasts: ''
 audio: https://stream.redcircle.com/episodes/08ff2242-89e4-4533-8498-93d201ed6679/stream.mp3
 chapter:
 - start: '2:04'
@@ -62,11 +64,14 @@ chapter:
 date: '2022-01-25'
 description: "F\xFCr Andy ist Open Source und die Open Source Community ist bereits\
   \ ein langer und essentieller Begleiter. In dieser Episode ..."
+google_podcasts: ''
 headlines: "sprungmarken::Sprungmarken||erwahnte-artikel::Erw\xE4hnte Artikel||erwahnte-personen::Erw\xE4\
   hnte Personen||erwahnte-projekte::Erw\xE4hnte Projekte||erwahnte-events::Erw\xE4\
   hnte Events||erwahnte-lizenzen::Erw\xE4hnte Lizenzen||hosts::Hosts"
 image: /images/podcast/episode/04-lohnt-der-einstieg-in-open-source.jpg
 layout: ../../../layouts/podcast-episode.astro
+pocket_casts: ''
+spotify: ''
 title: '#04 Lohnt der Einstieg in Open Source?'
 
 ---

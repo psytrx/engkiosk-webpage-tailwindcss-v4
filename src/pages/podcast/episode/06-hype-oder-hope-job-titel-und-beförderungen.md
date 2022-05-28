@@ -1,4 +1,6 @@
 ---
+amazon_music: ''
+apple_podcasts: ''
 audio: https://stream.redcircle.com/episodes/d6840c34-1e98-42b6-82aa-5cb76b200fa6/stream.mp3
 chapter:
 - start: 00:00
@@ -32,9 +34,12 @@ chapter:
 date: '2022-02-15'
 description: Sind Machine Learning und Artificial Intelligence nur Hypes oder sollte
   ich meine Karriere dahingehend ausrichten? Und welche ...
+google_podcasts: ''
 headlines: "links::Links||erwahnte-personen::Erw\xE4hnte Personen||sprungmarken::Sprungmarken||hosts::Hosts"
 image: /images/podcast/episode/07-die-freelance-freiheit.jpg
 layout: ../../../layouts/podcast-episode.astro
+pocket_casts: ''
+spotify: ''
 title: "#06 Hype oder Hope: Job-Titel und Bef\xF6rderungen"
 
 ---

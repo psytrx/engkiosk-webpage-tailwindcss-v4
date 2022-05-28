@@ -1,4 +1,6 @@
 ---
+amazon_music: ''
+apple_podcasts: ''
 audio: https://stream.redcircle.com/episodes/e51b5ba0-f174-4965-8203-8b5673dac440/stream.mp3
 chapter:
 - start: 00:00:00
@@ -50,9 +52,12 @@ chapter:
 date: '2022-02-22'
 description: "Sein eigener Chef zu sein, sich die Projekte aussuchen k\xF6nnen und\
   \ sich die Zeit frei selbst einzuteilen. Obendrein noch einen ..."
+google_podcasts: ''
 headlines: links::Links||anderes::Anderes||sprungmarken::Sprungmarken||hosts::Hosts
 image: /images/podcast/episode/07-die-freelance-freiheit.jpg
 layout: ../../../layouts/podcast-episode.astro
+pocket_casts: ''
+spotify: ''
 title: '#07 Die Freelance Freiheit'
 
 ---
