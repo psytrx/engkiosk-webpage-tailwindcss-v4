@@ -182,6 +182,29 @@ headline_split.forEach(function callback(val) {
               					</div>
             				</div>
             				<div class="w-full md:w-7/12 lg:w-8/12 xl:w-9/12 md:flex-1 px-4">
+								{(content.spotify || content.apple_podcasts || content.google_podcasts) && (<section class="mb-4 py-4">
+									<div class="container px-4 mx-auto">
+										<div class="flex flex-wrap justify-center -mx-4">
+											{content.apple_podcasts && (<div class="w-1/2 md:w-1/3 lg:w-1/5 px-4 mb-8 lg:mb-0">
+												<a href="${content.apple_podcasts}" title="Engineering Kiosk ${content.title} bei Apple Podcasts">
+													<img class="mx-auto" src="/images/brands/apple-podcasts.svg" alt="Engineering Kiosk ${content.title} bei Apple Podcasts">
+												</a>
+											</div>)}
+											{content.spotify && (<div class="w-1/2 md:w-1/3 lg:w-1/5 px-4 mb-8 lg:mb-0">
+												<a href="${content.spotify}" title="Engineering Kiosk ${content.title} auf Spotify">
+													<img class="mx-auto" src="/images/brands/spotify.svg" alt="Engineering Kiosk ${content.title} auf Spotify">
+												</a>
+											</div>)}
+											{content.google_podcasts && (<div class="w-1/2 md:w-1/3 lg:w-1/5 px-4 mb-8 lg:mb-0">
+												<a href="${content.google_podcasts}" title="Engineering Kiosk ${content.title} bei Google Podcasts">
+													<img class="mx-auto" src="/images/brands/google-podcasts.svg" alt="Engineering Kiosk ${content.title} bei Google Podcasts">
+												</a>
+											</div>)}
+											<!-- TODO Implement Amazon Music SVG -->
+											<!-- TODO Implement Pocket Casts SVG -->
+										</div>
+									</div>
+								</section>)}
               					<h3 class="mb-4 text-2xl md:text-3xl font-semibold text-coolGray-800" id="headline-content">
 									Worum geht's?
 								</h3>
