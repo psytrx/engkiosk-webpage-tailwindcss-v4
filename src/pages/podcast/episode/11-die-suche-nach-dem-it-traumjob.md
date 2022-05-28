@@ -56,7 +56,7 @@ headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts
 image: /images/podcast/episode/11-die-suche-nach-dem-it-traumjob.jpg
 layout: ../../../layouts/podcast-episode.astro
 pocket_casts: ''
-spotify: ''
+spotify: https://open.spotify.com/episode/10M5UFnQfcQXwYTIFjQrqP
 title: '#11 Die Suche nach dem IT Traumjob'
 
 ---

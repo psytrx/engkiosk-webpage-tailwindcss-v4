@@ -49,7 +49,7 @@ headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts
 image: /images/podcast/episode/12-make-oder-buy.jpg
 layout: ../../../layouts/podcast-episode.astro
 pocket_casts: ''
-spotify: ''
+spotify: https://open.spotify.com/episode/7xXnR8rP8gB25P9dQkvVQk
 title: '#12 Make oder Buy'
 
 ---

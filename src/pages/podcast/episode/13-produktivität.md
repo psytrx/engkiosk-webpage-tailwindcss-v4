@@ -46,7 +46,7 @@ headlines: "links::Links||bucher::B\xFCcher||sprungmarken::Sprungmarken||hosts::
 image: "/images/podcast/episode/13-produktivit\xE4t.jpg"
 layout: ../../../layouts/podcast-episode.astro
 pocket_casts: ''
-spotify: ''
+spotify: https://open.spotify.com/episode/6idJ9F1bk6AQKFxrbukvC3
 title: "#13 Produktivit\xE4t"
 
 ---

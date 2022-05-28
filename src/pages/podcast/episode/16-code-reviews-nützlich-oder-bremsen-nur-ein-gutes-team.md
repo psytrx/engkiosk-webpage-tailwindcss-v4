@@ -69,7 +69,7 @@ headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts
 image: "/images/podcast/episode/16-code-reviews-n\xFCtzlich-oder-bremsen-nur-ein-gutes-team.jpg"
 layout: ../../../layouts/podcast-episode.astro
 pocket_casts: ''
-spotify: ''
+spotify: https://open.spotify.com/episode/12JJPgrlzpQmrLWEiqT1mR
 title: "#16 Code Reviews: N\xFCtzlich oder bremsen nur ein gutes Team?"
 
 ---

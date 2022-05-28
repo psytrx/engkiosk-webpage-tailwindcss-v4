@@ -53,7 +53,7 @@ headlines: "links::Links||erwahnte-personen::Erw\xE4hnte Personen||sprungmarken:
 image: /images/podcast/episode/08-vergiss-doch-datenbanken.jpg
 layout: ../../../layouts/podcast-episode.astro
 pocket_casts: ''
-spotify: ''
+spotify: https://open.spotify.com/episode/49HSkGcpuzL3yTbEsguOMB
 title: '#08 Vergiss doch Datenbanken!'
 
 ---

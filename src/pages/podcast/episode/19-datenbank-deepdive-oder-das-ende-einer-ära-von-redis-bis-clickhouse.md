@@ -71,7 +71,7 @@ headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts
 image: "/images/podcast/episode/19-datenbank-deepdive-oder-das-ende-einer-\xE4ra-von-redis-bis-clickhouse.jpg"
 layout: ../../../layouts/podcast-episode.astro
 pocket_casts: ''
-spotify: ''
+spotify: https://open.spotify.com/episode/2BoVJYXWCOoK9w31nZaevF
 title: "#19 Datenbank-Deepdive (oder das Ende einer \xC4ra): von Redis bis ClickHouse"
 
 ---
