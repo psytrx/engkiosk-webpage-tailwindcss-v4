@@ -1,0 +1,52 @@
+---
+import '../styles/global.css';
+
+export interface Props {
+	title: string;
+	description: string;
+	image?: string;
+	canonicalURL?: string | URL;
+}
+
+const { title, description, image, canonicalURL } = Astro.props as Props;
+
+---
+
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<title>{title}</title>
+<meta name="description" content={description} />
+
+<link rel="preconnect" href="https://fonts.gstatic.com" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" />
+
+<!-- TODO Check if sitemap.xml works properly -->
+<link rel="sitemap" href="/sitemap.xml" />
+
+<!-- TODO Check if feed/posts.xml works properly -->
+<link rel="alternate" type="application/rss+xml" href="/feed/posts.xml" />
+
+<link rel="icon" type="image/x-icon" href="/favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+
+<link rel="canonical" href={canonicalURL} />
+
+<meta property="og:title" content={title} />
+<meta property="og:description" content={description} />
+{image && (<meta property="og:image" content={new URL(image, canonicalURL)}>)}
+
+<!-- TODO Check if the social media previews on twitter, facebook, linkedin -->
+<meta name="twitter:card" content={image ? 'summary_large_image' : 'summary'} />
+<meta name="twitter:site" content="@astro" />
+<meta name="twitter:title" content={title} />
+<meta name="twitter:description" content={description} />
+{image && (<meta name="twitter:image" content={image}>)}
+
+<script src="/js/menu.js" is:inline></script>

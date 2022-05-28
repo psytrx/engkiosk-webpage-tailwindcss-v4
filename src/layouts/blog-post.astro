@@ -1,0 +1,35 @@
+---
+import MainHead from '../components/MainHead.astro';
+import Nav from '../components/Nav.astro';
+import Footer from '../components/Footer.astro';
+
+const { content } = Astro.props;
+let canonicalURL = Astro.canonicalURL;
+---
+<html lang="de">
+	<head>
+		<title>{content.title}</title>
+		<MainHead title={content.title} description={content.description} image={content.image} {canonicalURL} />
+	</head>
+
+	<body class="antialiased bg-body text-body font-body">
+		<div>
+			<Nav />
+
+			<!-- TODO Needs love -->
+			<main class="wrapper">
+				<h2 class="title">{content.title}</h2>
+				<p class="description">{content.description}</p>
+				<img class="img" src={content.image} alt="" />
+				<article class="article">
+					<slot />
+				</article>
+				<footer class="footer">
+					<a class="posts" href="/posts">All Posts</a>
+				</footer>
+			</main>
+
+			<Footer />
+		</div>
+	</body>
+</html>

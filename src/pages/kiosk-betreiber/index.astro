@@ -1,0 +1,66 @@
+---
+import Footer from '../../components/Footer.astro';
+import MainHead from '../../components/MainHead.astro';
+import Nav from '../../components/Nav.astro';
+import HostPreview from '../../components/HostPreview.astro';
+
+let title = 'Kiosk-Betreiber - Engineering Kiosk';
+let description = 'Wer sind eigentich die Gesichter hinter\'m Engineering Kiosk? Wer macht\'s? Wer brabbelt da die ganze Zeit? Wer hält den Kiosk am Laufem?';
+let canonicalURL = Astro.canonicalURL;
+---
+
+<html lang="de">
+	<head>
+		<title>{title}</title>
+		<MainHead title={title} description={description} {canonicalURL} />
+	</head>
+
+	<body class="antialiased bg-body text-body font-body">
+		<div>
+			<Nav title={title} />
+
+      		<!-- Team -->
+			<section class="py-24 bg-coolGray-50" style="background-image: url('/images/elements/pattern-light-big.svg'); background-position: center;">
+        		<div class="container px-4 mx-auto">
+          			<div class="mb-16 text-center">
+            			<span class="inline-block py-px px-2 mb-4 text-xs leading-5 text-yellow-500 bg-yellow-100 font-medium uppercase rounded-9xl">Team</span>
+            			<h3 class="mb-4 text-3xl md:text-5xl leading-tight text-coolGray-900 font-bold tracking-tighter">
+							Die Gesichter hinter'm Engineering Kiosk.
+						</h3>
+            			<p class="mb-8 text-lg md:text-xl text-coolGray-500 font-medium">
+							Wer macht's?
+							Wer brabbelt da die ganze Zeit?
+							Wer hält den Kiosk am Laufem?
+						</p>
+          			</div>
+
+          			<div class="flex flex-wrap justify-center -mx-4">
+						<HostPreview
+							avatar="andy-grunwald.jpeg" 
+							name="Andy Grunwald" 
+							subtitle="Der aus dem Ruhrpott"
+							description="Infrastruktur-Person, Open-Source-Fanatiker, denkt zu viel, Möchtegern-Landwirt, Kaiserschmarrn nur ohne Rosinen"
+							github="andygrunwald" 
+							twitter="andygrunwald" 
+							linkedin="andy-grunwald-09aa265a" 
+							website="https://andygrunwald.com/"
+							profileLink="/kiosk-betreiber/andy-grunwald" />
+
+						<HostPreview
+							avatar="wolfgang-gassler.jpeg" 
+							name="Wolfgang Gassler" 
+							subtitle="Der aus den Bergen"
+							description="Dr. der Informatik, Pragmatiker, Sideproject-Domain-Käufer, Feuerwehrmann, Kaiserschmarrn nur mit Rosinen"
+							github="woolfg" 
+							twitter="schafele" 
+							linkedin="wolfganggassler" 
+							website="https://wolfgang.gassler.org/"
+							profileLink="/kiosk-betreiber/wolfgang-gassler" />
+					</div>
+        		</div>
+      		</section>
+
+			<Footer />
+		</div>
+	</body>
+</html>

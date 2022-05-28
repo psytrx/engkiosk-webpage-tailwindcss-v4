@@ -1,0 +1,26 @@
+---
+import Footer from '../../components/Footer.astro';
+import MainHead from '../../components/MainHead.astro';
+import Nav from '../../components/Nav.astro';
+import PodcastEpisodeListing from '../../components/PodcastEpisodeListing.astro';
+
+let title = 'Alle Podcast Episoden - Engineering Kiosk';
+let description = 'Alle Episoden vom deutschsprachigen Software-Engineering-Podcast mit Wolfgang Gassler und Andy Grunwald rund um die Themen Engineering-Kultur, Open Source, Menschen, Technologie und mehr.';
+let canonicalURL = Astro.canonicalURL;
+---
+<html lang="de">
+	<head>
+		<title>{title}</title>
+		<MainHead title={title} description={description} {canonicalURL} />
+	</head>
+
+	<body class="antialiased bg-body text-body font-body">
+		<div>
+			<Nav title={title} />
+
+			<PodcastEpisodeListing numberOfItems=0 />
+
+			<Footer />
+		</div>
+	</body>
+</html>

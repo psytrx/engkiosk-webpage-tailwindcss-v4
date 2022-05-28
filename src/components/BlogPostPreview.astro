@@ -1,0 +1,60 @@
+---
+export interface Props {
+	post: any;
+	author: string;
+	n: number;
+}
+
+const { post, author, n} = Astro.props;
+const { frontmatter } = post;
+
+function formatDate(date) {
+	const options = {
+		weekday: 'long',
+		year: 'numeric',
+		month: 'long',
+		day: 'numeric'
+	};
+	return new Date(date).toLocaleDateString('de-DE', options);
+}
+
+// n represents the number of the post to display.
+// Why does this matter?
+// In a list of post previews, we need to add a few css classes, depending on the screen size.
+// 
+// Default value is n = 0
+// In a list of posts, we start counting at 0
+let cssClass = "";
+switch (n) {
+  case 3:
+    cssClass = "mb-8 lg:mb-0";
+    break;
+  case 4:
+    cssClass = "mb-8 md:mb-0";
+    break;
+  case 5:
+    cssClass = "";
+    break;
+  default:
+    cssClass = "mb-8";
+}
+
+---
+
+<div class="w-full md:w-1/2 lg:w-1/3 px-4 ${cssClass}">
+	<a class="block mb-6 overflow-hidden rounded-md" href="${post.url}">
+		<img class="w-full" src="${frontmatter.image}" alt="">
+	</a>
+	<p class="mb-2 text-coolGray-500 font-medium">
+		{author.name} • <time class="date" datetime={frontmatter.date}>{formatDate(frontmatter.date)}</time>
+	</p>
+	<a class="inline-block mb-4 text-2xl leading-tight text-coolGray-800 hover:text-coolGray-900 font-bold hover:underline" href="{post.url}">
+		{frontmatter.title}
+	</a>
+	<p class="mb-4 text-base md:text-lg text-coolGray-400 font-medium">
+		{frontmatter.description}
+	</p>
+	<a class="inline-block py-1 px-3 text-xs leading-5 text-yellow-500 hover:text-yellow-600 font-medium uppercase bg-yellow-100 hover:bg-yellow-200 rounded-full shadow-sm" href="#">
+		Technology
+	</a>
+</div>

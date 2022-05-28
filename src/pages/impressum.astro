@@ -1,0 +1,66 @@
+---
+import Footer from '../components/Footer.astro';
+import MainHead from '../components/MainHead.astro';
+import Nav from '../components/Nav.astro';
+
+let title = 'Impressum - Engineering Kiosk';
+let description = '';
+let canonicalURL = Astro.canonicalURL;
+
+---
+
+<html lang="de">
+  <head>
+    <title>{title}</title>
+    <!-- TODO Set a proper first image for the startpage image={allPosts[0].frontmatter.image} -->
+		<MainHead title={title} description={description} {canonicalURL} />
+	</head>
+
+	<body class="antialiased bg-body text-body font-body">
+		<div>
+			<Nav title={title} />
+
+			<section class="py-20 xl:pt-24 xl:pb-28 bg-white" style="background-image: url('/images/elements/pattern-white.svg'); background-position: center;">
+				<div class="container px-4 mx-auto">
+					<div class="flex flex-wrap -mx-4">
+						<div class="w-full px-4 mb-10">
+							<div class="flex flex-wrap justify-between items-center">
+								<div class="w-full md:w-1/2 mb-10 md:mb-0">
+									<h3 class="mb-4 text-3xl md:text-4xl text-coolGray-900 font-bold tracking-tighter">
+										Impressum
+									</h3>
+								</div>
+							</div>
+						</div>
+						<div class="w-full lg:w-1/2 px-4 mb-5 lg:mb-0">
+							<p class="mb-4 text-lg md:text-xl leading-8 text-coolGray-500 font-semibold">
+								Verantwortlich für den Inhalt dieser Webseite
+							</p>
+							<p class="mb-5 text-lg font-medium leading-7 text-coolGray-500">
+								<a href="https://andygrunwald.com/">Andreas Grunwald</a> &amp;
+								<a href="https://gassler.dev">Wolfgang Gassler</a>
+							</p>
+
+							<p class="mb-4 text-lg md:text-xl leading-8 text-coolGray-500 font-semibold">
+								Kontakt
+							</p>
+							<p class="mb-5 text-lg font-medium leading-7 text-coolGray-500">
+								E-Mail: stehtisch@engineeringkiosk.dev
+							</p>
+						</div>
+						<div class="w-full lg:w-1/2 px-4">
+							<p class="mb-4 text-lg md:text-xl leading-8 text-coolGray-500 font-semibold">
+								Rechtliches
+							</p>
+							<p class="mb-5 text-lg font-medium leading-7 text-coolGray-500">
+								Es gilt der Hausverstand.
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<Footer />
+		</div>
+	</body>
+</html>

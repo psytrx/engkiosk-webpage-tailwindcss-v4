@@ -1,0 +1,27 @@
+---
+import MainHead from '../../components/MainHead.astro';
+import Footer from '../../components/Footer.astro';
+import Nav from '../../components/Nav.astro';
+import BlogPostListing from '../../components/BlogPostListing.astro';
+
+// TODO Content and rework
+const title = 'Engineering Kiosk';
+const description = 'An example blog on Astro';
+const { canonicalURL } = Astro.canonicalURL;
+---
+<html lang="de">
+	<head>
+		<title>{title}</title>
+		<MainHead {title} {description} canonicalURL={canonicalURL} />
+	</head>
+
+	<body class="antialiased bg-body text-body font-body">
+		<div>
+			<Nav title={title} />
+
+			<BlogPostListing numberOfItems=0 />
+
+			<Footer />
+		</div>
+	</body>
+</html>

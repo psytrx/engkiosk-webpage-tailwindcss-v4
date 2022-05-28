@@ -1,0 +1,160 @@
+---
+import Footer from '../components/Footer.astro';
+import MainHead from '../components/MainHead.astro';
+import Nav from '../components/Nav.astro';
+import HostPreview from '../components/HostPreview.astro';
+// TODO Activate blog
+// import BlogPostListing from '../components/BlogPostListing.astro';
+import PodcastEpisodeListing from '../components/PodcastEpisodeListing.astro';
+
+let title = 'Engineering Kiosk';
+let description = 'Der deutschsprachige Software-Engineering-Podcast mit Wolfgang Gassler und Andy Grunwald rund um die Themen Engineering-Kultur, Open Source, Menschen, Technologie und allen anderen Bereichen, die damit in Verbindung stehen.';
+let canonicalURL = Astro.canonicalURL;
+
+// TODO Activate blog
+// Data Fetching: List all Markdown posts in the repo.
+let allPosts = await Astro.glob('./post/*.md');
+allPosts.sort((a, b) => new Date(b.frontmatter.date).valueOf() - new Date(a.frontmatter.date).valueOf());
+
+// Determine the latest episode
+// We have places where the last episode is linked
+let allEpisodes = await Astro.glob('../pages/podcast/episode/*.md');
+allEpisodes.sort((a, b) => new Date(b.frontmatter.date).valueOf() - new Date(a.frontmatter.date).valueOf());
+let episodesToShow = allEpisodes.slice(0, 1);
+let episode = episodesToShow[0];
+
+---
+
+<html lang="de">
+  <head>
+    <title>{title}</title>
+    <!-- TODO Set a proper first image for the startpage -->
+		<MainHead title={title} description={description} image={allPosts[0].frontmatter.image} {canonicalURL} />
+	</head>
+
+	<body class="antialiased bg-body text-body font-body">
+	  <div>
+		  <Nav title={title} />
+
+      <section class="relative bg-white overflow-hidden" style="background-image: url('/images/elements/pattern-white.svg'); background-position: center;">
+			  <div class="py-20 md:py-28">
+				  <div class="container px-4 mx-auto">
+					  <div class="flex flex-wrap xl:items-center -mx-4">
+						  <div class="w-full md:w-1/2 px-4 mb-16 md:mb-0">
+							  <span class="inline-block py-px px-2 mb-4 text-xs leading-5 text-white bg-yellow-500 uppercase rounded-9xl">
+                  Engineering Kiosk
+                </span>
+								<h1 class="mb-6 text-3xl md:text-5xl lg:text-6xl leading-tight font-bold tracking-tight">
+									Der deutschsprachige Software-Engineering-Podcast
+								</h1>
+								<p class="mb-8 text-lg md:text-xl text-coolGray-500 font-medium">
+									Der Engineering Kiosk ist der deutschsprachige Software-Engineering-Podcast mit <!-- TODO Activate profile link <a href="/kiosk-betreiber/wolfgang-gassler">-->Wolfgang Gassler<!--</a>--> und <!-- TODO Activate profile link <a href="/kiosk-betreiber/andy-grunwald">-->Andy Grunwald<!--</a>--> rund um die Themen Engineering-Kultur, Open Source, Menschen, Technologie und allen anderen Bereichen, die damit in Verbindung stehen.
+								</p>
+								<div class="flex flex-wrap">
+									<div class="w-full md:w-auto py-1 md:py-0 md:mr-4">
+                    <a class="inline-block py-5 px-7 w-full text-base md:text-lg leading-4 text-yellow-50 font-medium text-center bg-yellow-500 hover:bg-yellow-600 focus:ring-2 focus:ring-yellow-500 focus:ring-opacity-50 border border-yellow-500 rounded-md shadow-sm" href="#jetzt-folgen">
+                      Folgen
+                    </a>
+                  </div>
+									<div class="w-full md:w-auto py-1 md:py-0">
+                    <a class="inline-block py-5 px-7 w-full text-base md:text-lg leading-4 text-coolGray-800 font-medium text-center bg-white hover:bg-coolGray-100 focus:ring-2 focus:ring-coolGray-200 focus:ring-opacity-50 border border-coolGray-200 rounded-md shadow-sm" href="${episode.url}">
+                      Letzte Episode
+                    </a>
+                  </div>
+								</div>
+							</div>
+							<div class="w-full md:w-1/2 px-4">
+								<div class="relative mx-auto md:mr-0 max-w-max">
+									<img class="absolute z-10 -left-14 -top-12 w-28 md:w-auto" src="/images/elements/circle3-red.svg" alt="">
+									<img class="absolute z-10 -right-7 -bottom-8 w-28 md:w-auto" src="/images/elements/dots3-green.svg" alt="">
+									<img class="relative rounded-7xl" src="/images/headers/andy-grunwald-wolfgang-gassler-2022-01-07.jpg" alt="Andy Grunwald und Wolfgang Gassler am 07. Januar 2022 in Duisburg">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<PodcastEpisodeListing numberOfItems=6 />
+
+      <!-- TODO Activate Blog
+			<BlogPostListing />
+      -->
+
+      <!-- Team -->
+			<section class="py-24 bg-coolGray-50" style="background-image: url('/images/elements/pattern-light-big.svg'); background-position: center;">
+        <div class="container px-4 mx-auto">
+          <div class="mb-16 text-center">
+            <span class="inline-block py-px px-2 mb-4 text-xs leading-5 text-yellow-500 bg-yellow-100 font-medium uppercase rounded-9xl">
+              Team
+            </span>
+            <h3 class="mb-4 text-3xl md:text-5xl leading-tight text-coolGray-900 font-bold tracking-tighter">
+              Die Gesichter hinter'm Engineering Kiosk.
+            </h3>
+            <p class="mb-8 text-lg md:text-xl text-coolGray-500 font-medium">
+              Wer macht's?
+              Wer brabbelt da die ganze Zeit?
+              Wer hält den Kiosk am Laufem?
+            </p>
+          </div>
+
+          <div class="flex flex-wrap justify-center -mx-4">
+            <HostPreview 
+              avatar="andy-grunwald.jpeg" 
+              name="Andy Grunwald" 
+              subtitle="Der aus dem Ruhrpott" 
+              description="Infrastruktur-Person, Open-Source-Fanatiker, denkt zu viel, Möchtegern-Landwirt, Kaiserschmarrn nur ohne Rosinen" 
+              github="andygrunwald" 
+              twitter="andygrunwald" 
+              linkedin="andy-grunwald-09aa265a" 
+              website="https://andygrunwald.com/"
+              profileLink="/kiosk-betreiber/andy-grunwald" />
+
+            <HostPreview 
+              avatar="wolfgang-gassler.jpeg" 
+              name="Wolfgang Gassler" 
+              subtitle="Der aus den Bergen"
+              description="Dr. der Informatik, Pragmatiker, Sideproject-Domain-Käufer, Feuerwehrmann, Kaiserschmarrn nur mit Rosinen" 
+              github="woolfg" 
+              twitter="schafele" 
+              linkedin="wolfganggassler" 
+              website="https://wolfgang.gassler.org/"
+              profileLink="/kiosk-betreiber/wolfgang-gassler" />
+          </div>
+        </div>
+      </section>
+
+	    <section id="jetzt-folgen" class="py-24 md:py-32 bg-coolGray-900 overflow-hidden" style="background-image: url('/images/elements/pattern-dark2.svg'); background-position: center;">
+        <div class="container px-4 mx-auto">
+          <h1 class="mb-8 text-center font-bold leading-tight text-white text-4xl md:text-5xl tracking-tighter">
+            Jetzt folgen
+          </h1>
+          <div class="flex flex-wrap justify-center -mx-4">
+            <div class="w-1/2 md:w-1/3 lg:w-1/5 px-4 mb-8 lg:mb-0">
+              <a href="https://podcasts.apple.com/us/podcast/engineering-kiosk/id1603082924" title="Engineering Kiosk bei Apple Podcasts">
+                <img class="mx-auto" src="/images/brands/apple-podcasts-listen-on.svg" alt="Listen on Apple Podcasts">
+              </a>
+            </div>
+            <div class="w-1/2 md:w-1/3 lg:w-1/5 px-4 mb-8 lg:mb-0">
+              <a href="https://open.spotify.com/show/0tJRC0UsObPCWLmmzmOkIs" title="Engineering Kiosk auf Spotify">
+                <img class="mx-auto" src="/images/brands/spotify-listen-on.svg" alt="Listen on Spotify">
+              </a>
+            </div>
+            <div class="w-1/2 md:w-1/3 lg:w-1/5 px-4 mb-8 lg:mb-0">
+              <a href="https://www.google.com/podcasts?feed=aHR0cHM6Ly9mZWVkcy5yZWRjaXJjbGUuY29tLzBlY2ZkZmQ3LWZkYTEtNGMzZC05NTE1LTQ3NjcyN2Y5ZGY1ZQ%3D%3D" title="Engineering Kiosk bei Google Podcasts">
+                <img class="mx-auto" src="/images/brands/google-podcasts-listen-on.svg" alt="Listen on Google Podcasts">
+              </a>
+            </div>
+            <div class="w-1/2 md:w-1/3 lg:w-1/5 px-4 mb-8 lg:mb-0">
+              <a href="https://music.amazon.com/podcasts/c35a09fe-4116-4e04-8f68-77d61b112e46/engineering-kiosk" title="Engineering Kiosk bei Amazon Music">
+                <img class="mx-auto" height="63" src="/images/brands/amazon-music-listen-on.svg" alt="Listen on Amazon Music">
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+			<Footer />
+		</div>
+	</body>
+</html>
