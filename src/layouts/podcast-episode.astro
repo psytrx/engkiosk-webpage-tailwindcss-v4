@@ -30,7 +30,6 @@ function formatDate(date) {
 	return new Date(date).toLocaleDateString('de-DE', options);
 }
 
-// TODO Make headlines flexible, and not hardcoded
 // Headlines is in a format like
 //	"links::Links||sprungmarken::Sprungmarken||hosts::Hosts
 //	"<slug>::<headline>||..."
@@ -38,20 +37,11 @@ let headline_split = content.headlines.split("||")
 let header = [];
 headline_split.forEach(function callback(val) {
     let parts = val.split("::")
-	this[parts[0]] = parts[1];
-}, header);
-
-/*
-{ 
-	headline_split.forEach(function(val) {
-		let parts = val.split("::");
-		return '<li class="mb-2"><a class="inline-block py-3 text-coolGray-400 hover:text-coolGray-500 font-semibold" href="' + parts[0] '">' + parts[1] + '</a></li>';
-		//header.set(parts[0], parts[1]);
-	})
-}
-*/
-// { header.map((slug, text) => <li class="mb-2"><a class="inline-block py-3 text-coolGray-400 hover:text-coolGray-500 font-semibold" href="#{slug}">{text}</a></li>) }
-// { header.map((slug, text) => {text}) }
+	header.push({
+		"slug": parts[0],
+		"title": parts[1],
+	});
+});
 
 ---
 
@@ -158,10 +148,7 @@ headline_split.forEach(function callback(val) {
             				<div class="w-full md:w-5/12 lg:w-4/12 xl:w-3/12 px-4 mb-8">
               					<ul class="pb-6 mb-8 border-b border-coolGray-100">
                 					<li class="mb-2"><a class="inline-block py-2 text-coolGray-400 hover:text-coolGray-500 font-semibold" href="#headline-content">Worum geht's?</a></li>
-                					<!-- TODO Make headlines flexible, and not hardcoded -->
-									<li class="mb-2"><a class="inline-block py-3 text-coolGray-400 hover:text-coolGray-500 font-semibold" href="#links">Links</a></li>
-									<li class="mb-2"><a class="inline-block py-3 text-coolGray-400 hover:text-coolGray-500 font-semibold" href="#sprungmarken">Sprungmarken</a></li>
-									<li class="mb-2"><a class="inline-block py-3 text-coolGray-400 hover:text-coolGray-500 font-semibold" href="#hosts">Hosts</a></li>
+									{ header.map((element) => <li class="mb-2"><a class="inline-block py-3 text-coolGray-400 hover:text-coolGray-500 font-semibold" href="#${element.slug}">{element.title}</a></li>) }
 								  </ul>
               					<div class="flex items-center">
 									<a class="inline-flex mr-4 items-center justify-center py-2 px-4 text-coolGray-300 border border-coolGray-200 hover:border-coolGray-300 rounded-md shadow-md transition duration-200" id="copy-url" data-href="${canonicalURL}" href="#">
