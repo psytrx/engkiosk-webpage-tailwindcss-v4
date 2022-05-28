@@ -44,7 +44,7 @@ chapter:
 date: '2022-03-29'
 description: 'Make oder Buy: Alles einkaufen oder doch lieber selber machen? Eine
   Frage die jeder von uns kennt: Sind meine Anforderungen ...'
-google_podcasts: ''
+google_podcasts: https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5yZWRjaXJjbGUuY29tLzBlY2ZkZmQ3LWZkYTEtNGMzZC05NTE1LTQ3NjcyN2Y5ZGY1ZQ/episode/MWJiOThjNjMtZmFkYy00MzVhLWExZGYtYTExMjE5MzdkN2Ri?sa=X&ved=0CAUQkfYCahcKEwi4xMSxj4L4AhUAAAAAHQAAAAAQNQ
 headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts
 image: /images/podcast/episode/12-make-oder-buy.jpg
 layout: ../../../layouts/podcast-episode.astro

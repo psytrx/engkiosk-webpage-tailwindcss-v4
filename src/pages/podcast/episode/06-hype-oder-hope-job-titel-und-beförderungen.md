@@ -34,7 +34,7 @@ chapter:
 date: '2022-02-15'
 description: Sind Machine Learning und Artificial Intelligence nur Hypes oder sollte
   ich meine Karriere dahingehend ausrichten? Und welche ...
-google_podcasts: ''
+google_podcasts: https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5yZWRjaXJjbGUuY29tLzBlY2ZkZmQ3LWZkYTEtNGMzZC05NTE1LTQ3NjcyN2Y5ZGY1ZQ/episode/ZWJkNDBlZDgtNWE5OC00OTIxLWE2YjItMWJmNmE2ODE4YjUx?sa=X&ved=0CAUQkfYCahcKEwi4xMSxj4L4AhUAAAAAHQAAAAAQNQ
 headlines: "links::Links||erwahnte-personen::Erw\xE4hnte Personen||sprungmarken::Sprungmarken||hosts::Hosts"
 image: /images/podcast/episode/07-die-freelance-freiheit.jpg
 layout: ../../../layouts/podcast-episode.astro

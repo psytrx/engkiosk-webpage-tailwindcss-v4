@@ -50,7 +50,7 @@ chapter:
 date: '2022-02-08'
 description: "Software Engineers fangen bei 0 an zu z\xE4hlen. Das Engineering Kiosk\
   \ ist direkt bei Episode 1 gestartet. Diesen Off-by-one ..."
-google_podcasts: ''
+google_podcasts: https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5yZWRjaXJjbGUuY29tLzBlY2ZkZmQ3LWZkYTEtNGMzZC05NTE1LTQ3NjcyN2Y5ZGY1ZQ/episode/YzZmYTYwMzItNjMxOC00NmY5LTljMDQtM2I5ZTUxYTU3NmFj?sa=X&ved=0CAUQkfYCahcKEwi4xMSxj4L4AhUAAAAAHQAAAAAQNQ
 headlines: ''
 image: "/images/podcast/episode/00-developer-fangen-bei-0-an-zu-z\xE4hlen.jpg"
 layout: ../../../layouts/podcast-episode.astro

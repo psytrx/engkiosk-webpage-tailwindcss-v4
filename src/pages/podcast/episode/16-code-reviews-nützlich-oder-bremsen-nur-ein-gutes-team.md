@@ -64,7 +64,7 @@ chapter:
 date: '2022-04-26'
 description: "Code Reviews: Jeder will schnelles Feedback, doch niemand hat Zeit daf\xFC\
   r - Eine Hassliebe. Eine Komponente im Alltag jedes ..."
-google_podcasts: ''
+google_podcasts: https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5yZWRjaXJjbGUuY29tLzBlY2ZkZmQ3LWZkYTEtNGMzZC05NTE1LTQ3NjcyN2Y5ZGY1ZQ/episode/Y2MwYWY4MTUtNDhhZC00YjRhLThhYzgtYWRhMmQ1YWJkNzc5?sa=X&ved=0CAUQkfYCahcKEwi4xMSxj4L4AhUAAAAAHQAAAAAQNQ
 headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts
 image: "/images/podcast/episode/16-code-reviews-n\xFCtzlich-oder-bremsen-nur-ein-gutes-team.jpg"
 layout: ../../../layouts/podcast-episode.astro

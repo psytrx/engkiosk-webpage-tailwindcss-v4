@@ -35,7 +35,7 @@ chapter:
 date: '2022-03-15'
 description: "1on1s - Zeitverschwendung oder eins der wertvollsten Meetings deiner\
   \ Karriere? Andy und Wolfgang sprechen \xFCber das meist ..."
-google_podcasts: ''
+google_podcasts: https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5yZWRjaXJjbGUuY29tLzBlY2ZkZmQ3LWZkYTEtNGMzZC05NTE1LTQ3NjcyN2Y5ZGY1ZQ/episode/YzgxNmY3NjAtYTYwYy00OTAyLTgwN2MtODgwYzNlZWEzMGNm?sa=X&ved=0CAUQkfYCahcKEwi4xMSxj4L4AhUAAAAAHQAAAAAQNQ
 headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts
 image: /images/podcast/episode/10-das-karriere-booster-meeting-11s.jpg
 layout: ../../../layouts/podcast-episode.astro

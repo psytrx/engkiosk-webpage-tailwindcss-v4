@@ -52,7 +52,7 @@ chapter:
 date: '2022-05-10'
 description: "Ziel-Definitionen und Mitarbeiter-Metriken: Sinnvoll oder totaler Bl\xF6\
   dsinn? Das Thema ist hei\xDF umstritten. Viele lieben Ziele ..."
-google_podcasts: ''
+google_podcasts: https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5yZWRjaXJjbGUuY29tLzBlY2ZkZmQ3LWZkYTEtNGMzZC05NTE1LTQ3NjcyN2Y5ZGY1ZQ/episode/YjU0NzFhNTAtYzRhMS00ZjZmLTk1NDQtMTBmMDUyYTFjYzk1?sa=X&ved=0CAUQkfYCahcKEwi4xMSxj4L4AhUAAAAAHQAAAAAQNQ
 headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts
 image: "/images/podcast/episode/18-ziele-und-performance-metriken-f\xFCr-teams-und-mich-selbst.jpg"
 layout: ../../../layouts/podcast-episode.astro

@@ -48,7 +48,7 @@ chapter:
 date: '2022-03-08'
 description: "Es wird politisch: Der Angriffskrieg auf die Ukraine und eine m\xF6\
   glichst technische Beleuchtung des Themas. Wolfgang und Andy ..."
-google_podcasts: ''
+google_podcasts: https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5yZWRjaXJjbGUuY29tLzBlY2ZkZmQ3LWZkYTEtNGMzZC05NTE1LTQ3NjcyN2Y5ZGY1ZQ/episode/Y2QyNDRiYjEtODdmNy00MjI2LTg1MmQtY2I2ZWNkNjQ4YjRj?sa=X&ved=0CAUQkfYCahcKEwi4xMSxj4L4AhUAAAAAHQAAAAAQNQ
 headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts
 image: /images/podcast/episode/09-ukraine.jpg
 layout: ../../../layouts/podcast-episode.astro

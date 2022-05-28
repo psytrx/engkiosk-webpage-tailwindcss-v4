@@ -40,7 +40,7 @@ chapter:
 date: '2022-05-24'
 description: "Firmenwechsel. K\xFCndigung ist raus. Wie gehts weiter? Offboarding\
   \ und Onboarding sind i.d.R. zwei Themen die sehr stark untersch\xE4tzt ..."
-google_podcasts: ''
+google_podcasts: https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5yZWRjaXJjbGUuY29tLzBlY2ZkZmQ3LWZkYTEtNGMzZC05NTE1LTQ3NjcyN2Y5ZGY1ZQ/episode/NTQ3YTU0YjMtNTNlZC00NmExLTk2ODAtNGEwMTMxNDI3OTdm?sa=X&ved=0CAUQkfYCahcKEwi4xMSxj4L4AhUAAAAAHQAAAAAQNQ
 headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts
 image: /images/podcast/episode/20-off-boarding-und-on-boarding-wie-verlasse-ich-eine-firma-richtig.jpg
 layout: ../../../layouts/podcast-episode.astro

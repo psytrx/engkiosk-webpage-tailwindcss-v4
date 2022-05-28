@@ -56,7 +56,7 @@ chapter:
 date: '2022-01-18'
 description: Was ist eigentlich Over-Engineering? Und wann ist es einfach nur gutes
   Engineering? Ist das eigentlich immer nur negativ? ...
-google_podcasts: ''
+google_podcasts: https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5yZWRjaXJjbGUuY29tLzBlY2ZkZmQ3LWZkYTEtNGMzZC05NTE1LTQ3NjcyN2Y5ZGY1ZQ/episode/YzI4MzgwODQtNDNlMy00Y2I2LTkwMTMtYTQ4MDQyOWI4NTQ3?sa=X&ved=0CAUQkfYCahcKEwi4xMSxj4L4AhUAAAAAHQAAAAAQNQ
 headlines: sprungmarken::Sprungmarken||artikel::Artikel||konzepte::Konzepte||projekte::Projekte
 image: /images/podcast/episode/03-over-engineering-das-werkzeug-des-teufels.jpg
 layout: ../../../layouts/podcast-episode.astro

@@ -66,7 +66,7 @@ chapter:
 date: '2022-01-10'
 description: "Wolfgang und Andy erz\xE4hlen ein wenig was \xFCber ihre eigenen Side\
   \ Projects sourcectl (https://gettoknow.sourcectl.dev/), F-Online ..."
-google_podcasts: ''
+google_podcasts: https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5yZWRjaXJjbGUuY29tLzBlY2ZkZmQ3LWZkYTEtNGMzZC05NTE1LTQ3NjcyN2Y5ZGY1ZQ/episode/NTYxZjhlNmQtZTg2OS00MmIxLTg1MzYtMzE5ZTk1MDI5NGRh?sa=X&ved=0CAUQkfYCahcKEwi4xMSxj4L4AhUAAAAAHQAAAAAQNQ
 headlines: "sprungmarken::Sprungmarken||erwahnte-side-projects::Erw\xE4hnte Side Projects||erwahnte-technologien::Erw\xE4\
   hnte Technologien||anderes::Anderes||erwahnte-personen::Erw\xE4hnte Personen||hosts::Hosts"
 image: /images/podcast/episode/02-technologienzoo-side-projects.jpg

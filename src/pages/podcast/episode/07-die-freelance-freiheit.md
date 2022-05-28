@@ -52,7 +52,7 @@ chapter:
 date: '2022-02-22'
 description: "Sein eigener Chef zu sein, sich die Projekte aussuchen k\xF6nnen und\
   \ sich die Zeit frei selbst einzuteilen. Obendrein noch einen ..."
-google_podcasts: ''
+google_podcasts: https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5yZWRjaXJjbGUuY29tLzBlY2ZkZmQ3LWZkYTEtNGMzZC05NTE1LTQ3NjcyN2Y5ZGY1ZQ/episode/MjZiMDkyOTktY2UwMS00ZWMwLTg0MDEtZjZkOGIyMzQ2MWVk?sa=X&ved=0CAUQkfYCahcKEwi4xMSxj4L4AhUAAAAAHQAAAAAQNQ
 headlines: links::Links||anderes::Anderes||sprungmarken::Sprungmarken||hosts::Hosts
 image: /images/podcast/episode/07-die-freelance-freiheit.jpg
 layout: ../../../layouts/podcast-episode.astro

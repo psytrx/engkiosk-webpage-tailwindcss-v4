@@ -51,7 +51,7 @@ chapter:
 date: '2022-03-22'
 description: 'Den richtigen Arbeitgeber und die richtige Firma finden: Eine Mammut-Aufgabe.
   In dieser Episode sprechen Wolfgang und Andy ...'
-google_podcasts: ''
+google_podcasts: https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5yZWRjaXJjbGUuY29tLzBlY2ZkZmQ3LWZkYTEtNGMzZC05NTE1LTQ3NjcyN2Y5ZGY1ZQ/episode/MmZjNzUwNTYtZDEwZC00OTdiLTk2MTMtNDQ3ODI3Zjk1Nzg2?sa=X&ved=0CAUQkfYCahcKEwi4xMSxj4L4AhUAAAAAHQAAAAAQNQ
 headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts
 image: /images/podcast/episode/11-die-suche-nach-dem-it-traumjob.jpg
 layout: ../../../layouts/podcast-episode.astro

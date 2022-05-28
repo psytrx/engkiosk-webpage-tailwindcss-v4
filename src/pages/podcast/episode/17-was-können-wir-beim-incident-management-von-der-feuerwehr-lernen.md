@@ -70,7 +70,7 @@ chapter:
 date: '2022-05-03'
 description: "Was haben die Methoden der Feuerwehr zur Bek\xE4mpfung von Gro\xDFschadensereignissen\
   \ mit dem Incident Management von IT-Systemen ..."
-google_podcasts: ''
+google_podcasts: https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5yZWRjaXJjbGUuY29tLzBlY2ZkZmQ3LWZkYTEtNGMzZC05NTE1LTQ3NjcyN2Y5ZGY1ZQ/episode/YjZlMDAyYTktZTBkNC00NzM2LTkyNzMtZDljOTAxMWQzOGRj?sa=X&ved=0CAUQkfYCahcKEwi4xMSxj4L4AhUAAAAAHQAAAAAQNQ
 headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts
 image: "/images/podcast/episode/17-was-k\xF6nnen-wir-beim-incident-management-von-der-feuerwehr-lernen.jpg"
 layout: ../../../layouts/podcast-episode.astro
