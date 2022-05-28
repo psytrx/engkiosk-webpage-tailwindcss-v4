@@ -48,7 +48,6 @@ headlines: "erwahnte-artikel::Erw\xE4hnte Artikel||bucher-uber-das-engineering-m
   cher \xFCber das Engineering Management||sprungmarken::Sprungmarken||hosts::Hosts"
 image: /images/podcast/episode/05-team-lead-der-einzige-ausweg.jpg
 layout: ../../../layouts/podcast-episode.astro
-pocket_casts: ''
 spotify: https://open.spotify.com/episode/2YSw9LkxhXJeUuFaJOihVr
 title: '#05 Team Lead - der einzige Ausweg'
 

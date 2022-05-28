@@ -54,7 +54,6 @@ google_podcasts: https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5yZWRjaXJjbG
 headlines: ''
 image: "/images/podcast/episode/00-developer-fangen-bei-0-an-zu-z\xE4hlen.jpg"
 layout: ../../../layouts/podcast-episode.astro
-pocket_casts: ''
 spotify: https://open.spotify.com/episode/4TZwqBTtO2fNDt8XjQXjuR
 title: "#00 Developer fangen bei 0 an zu z\xE4hlen"
 

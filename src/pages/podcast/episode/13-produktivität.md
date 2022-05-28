@@ -45,7 +45,6 @@ google_podcasts: https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5yZWRjaXJjbG
 headlines: "links::Links||bucher::B\xFCcher||sprungmarken::Sprungmarken||hosts::Hosts"
 image: "/images/podcast/episode/13-produktivit\xE4t.jpg"
 layout: ../../../layouts/podcast-episode.astro
-pocket_casts: ''
 spotify: https://open.spotify.com/episode/6idJ9F1bk6AQKFxrbukvC3
 title: "#13 Produktivit\xE4t"
 

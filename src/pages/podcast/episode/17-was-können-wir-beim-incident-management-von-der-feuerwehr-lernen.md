@@ -74,7 +74,6 @@ google_podcasts: https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5yZWRjaXJjbG
 headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts
 image: "/images/podcast/episode/17-was-k\xF6nnen-wir-beim-incident-management-von-der-feuerwehr-lernen.jpg"
 layout: ../../../layouts/podcast-episode.astro
-pocket_casts: ''
 spotify: https://open.spotify.com/episode/4FyZmHWjqNmlWn7bl7bPaP
 title: "#17 Was k\xF6nnen wir beim Incident Management von der Feuerwehr lernen?"
 

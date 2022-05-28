@@ -38,7 +38,6 @@ google_podcasts: https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5yZWRjaXJjbG
 headlines: "links::Links||erwahnte-personen::Erw\xE4hnte Personen||sprungmarken::Sprungmarken||hosts::Hosts"
 image: /images/podcast/episode/07-die-freelance-freiheit.jpg
 layout: ../../../layouts/podcast-episode.astro
-pocket_casts: ''
 spotify: https://open.spotify.com/episode/4mkmeVaXD6u8Tf9mpcBWd4
 title: "#06 Hype oder Hope: Job-Titel und Bef\xF6rderungen"
 

@@ -255,7 +255,6 @@ for item in channel.findall('item'):
         'spotify': '',
         'google_podcasts': '',
         'apple_podcasts': '',
-        'pocket_casts': '',
         'amazon_music': ''
     }
 
@@ -277,7 +276,6 @@ for item in channel.findall('item'):
                 'spotify',
                 'google_podcasts',
                 'apple_podcasts',
-                'pocket_casts',
                 'amazon_music'
             ]
             for key in keys_to_keep:

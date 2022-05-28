@@ -56,7 +56,6 @@ google_podcasts: https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5yZWRjaXJjbG
 headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts
 image: "/images/podcast/episode/18-ziele-und-performance-metriken-f\xFCr-teams-und-mich-selbst.jpg"
 layout: ../../../layouts/podcast-episode.astro
-pocket_casts: ''
 spotify: https://open.spotify.com/episode/2ByheYdW9jiNe2NZuLPkiI
 title: "#18 Ziele und Performance-Metriken f\xFCr Teams und mich selbst"
 
