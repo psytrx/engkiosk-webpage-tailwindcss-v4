@@ -115,7 +115,7 @@ def make_html_beautiful(raw_html):
     found_headlines = re.findall("<h3>(.*?)</h3>", html)
     for h in found_headlines:
         slug = slugify(h)
-        html = html.replace(f"<h3>{h}", f'<h3 class="mb-4 text-2xl md:text-3xl font-semibold text-coolGray-800" id={slug}>{h}')
+        html = html.replace(f"<h3>{h}", f'<h3 class="mb-4 text-2xl md:text-3xl font-semibold text-coolGray-800" id="{slug}">{h}')
         headline_slugs[slug] = h
 
     # For some unknown reason, the tailwind classes don't work here
@@ -123,7 +123,11 @@ def make_html_beautiful(raw_html):
     html = html.replace("<ul>", '<ul class="list-disc px-5 mb-6 md:px-5 text-base md:text-lg text-coolGray-500" style="list-style-type: disc;">')
     html = html.replace("<li><span>", '<li class="mb-3">')
     html = html.replace("<li>", '<li class="mb-3">')
+
     html = html.replace("</span></li>", "</li>")
+
+    html = html.replace("<span>", '')
+    html = html.replace("</span>", '')
 
     # Style links
     # Again, no clue why the default styles overrule
