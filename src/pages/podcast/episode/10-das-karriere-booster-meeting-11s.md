@@ -1,6 +1,6 @@
 ---
 amazon_music: https://music.amazon.com/podcasts/c35a09fe-4116-4e04-8f68-77d61b112e46/episodes/8d90437c-e8a1-48a8-9ee3-d1c29b6d6153/engineering-kiosk-10-das-karriere-booster-meeting-1-1s
-apple_podcasts: ''
+apple_podcasts: https://podcasts.apple.com/us/podcast/10-das-karriere-booster-meeting-1-1s/id1603082924?i=1000554051253
 audio: https://stream.redcircle.com/episodes/c8d31470-3a28-443c-aafd-af96625f4146/stream.mp3
 chapter:
 - start: 00:00

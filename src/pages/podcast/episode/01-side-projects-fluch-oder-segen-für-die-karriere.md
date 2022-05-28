@@ -1,6 +1,6 @@
 ---
 amazon_music: https://music.amazon.com/podcasts/c35a09fe-4116-4e04-8f68-77d61b112e46/episodes/82a2063e-d02c-4eeb-9b84-065508064f7a/engineering-kiosk-01-side-projects---fluch-oder-segen-f%C3%BCr-die-karriere
-apple_podcasts: ''
+apple_podcasts: https://podcasts.apple.com/us/podcast/01-side-projects-fluch-oder-segen-f%C3%BCr-die-karriere/id1603082924?i=1000546793663
 audio: https://stream.redcircle.com/episodes/b421f30e-6b8e-4351-8644-7a89b1343287/stream.mp3
 chapter:
 - start: 00:26

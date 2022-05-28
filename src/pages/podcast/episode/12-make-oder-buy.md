@@ -1,6 +1,6 @@
 ---
 amazon_music: https://music.amazon.com/podcasts/c35a09fe-4116-4e04-8f68-77d61b112e46/episodes/625ea5b5-814e-4ba0-861f-7661d91fdcaf/engineering-kiosk-12-make-oder-buy
-apple_podcasts: ''
+apple_podcasts: https://podcasts.apple.com/us/podcast/12-make-oder-buy/id1603082924?i=1000555572597
 audio: https://stream.redcircle.com/episodes/1adada84-15c2-4fd0-99b9-e7842f29ecef/stream.mp3
 chapter:
 - start: 00:00

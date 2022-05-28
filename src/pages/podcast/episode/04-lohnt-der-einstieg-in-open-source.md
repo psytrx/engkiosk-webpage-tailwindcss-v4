@@ -1,6 +1,6 @@
 ---
 amazon_music: https://music.amazon.com/podcasts/c35a09fe-4116-4e04-8f68-77d61b112e46/episodes/a79bc417-db5e-46a8-8025-e8939732585d/engineering-kiosk-04-lohnt-der-einstieg-in-open-source
-apple_podcasts: ''
+apple_podcasts: https://podcasts.apple.com/us/podcast/04-lohnt-der-einstieg-in-open-source/id1603082924?i=1000548902548
 audio: https://stream.redcircle.com/episodes/08ff2242-89e4-4533-8498-93d201ed6679/stream.mp3
 chapter:
 - start: '2:04'
