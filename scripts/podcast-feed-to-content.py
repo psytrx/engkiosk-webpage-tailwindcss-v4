@@ -5,7 +5,6 @@ import unicodedata
 import re
 import mimetypes
 import datetime
-import sys
 import yaml
 import html
 from os.path import exists
@@ -132,7 +131,7 @@ def make_html_beautiful(raw_html):
     # Style links
     # Again, no clue why the default styles overrule
     # TODO Figure out why style is necessary, and hover is not working
-    html = html.replace('<a ', '<a class="underline hover:no-underline" style="text-decoration-line: underline;"')
+    html = html.replace('<a ', '<a class="underline hover:no-underline" style="text-decoration-line: underline;" ')
 
     # This is also very dirty
     # We need the headline <-> slug relation.
@@ -286,7 +285,6 @@ for item in channel.findall('item'):
                 val = episode.get(key)
                 if val:
                     data[key] = episode.get(key)
-
 
     content_yaml = yaml.dump(data)
     content = (
