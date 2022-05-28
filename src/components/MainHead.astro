@@ -38,13 +38,17 @@ const { title, description, image, canonicalURL } = Astro.props as Props;
 
 <link rel="canonical" href={canonicalURL} />
 
+<meta property="og:url" content={canonicalURL} >
+<meta property="og:type" content="website">
 <meta property="og:title" content={title} />
 <meta property="og:description" content={description} />
 {image && (<meta property="og:image" content={new URL(image, canonicalURL)}>)}
 
 <!-- TODO Check if the social media previews on twitter, facebook, linkedin -->
 <meta name="twitter:card" content={image ? 'summary_large_image' : 'summary'} />
-<meta name="twitter:site" content="@astro" />
+<meta property="twitter:domain" content={Astro.site.host}>
+<meta property="twitter:url" content={canonicalURL}>
+<meta name="twitter:site" content="@EngKiosk" />
 <meta name="twitter:title" content={title} />
 <meta name="twitter:description" content={description} />
 {image && (<meta name="twitter:image" content={image}>)}
