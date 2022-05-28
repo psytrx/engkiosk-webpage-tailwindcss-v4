@@ -131,6 +131,7 @@ def make_html_beautiful(raw_html):
     # Style links
     # Again, no clue why the default styles overrule
     # TODO Figure out why style is necessary, and hover is not working
+    # I guess we somehow hit this one: https://github.com/withastro/astro/issues/2410
     html = html.replace('<a ', '<a class="underline hover:no-underline" style="text-decoration-line: underline;" ')
 
     # This is also very dirty
