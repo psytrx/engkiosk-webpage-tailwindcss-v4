@@ -12,6 +12,8 @@ let content_chapter = content.chapter;
 let content_image = content.image;
 let content_description = content.description;
 
+let title = "".concat(content.title, " - Engineering Kiosk");
+
 let encodedUrl = encodeURI(canonicalURL);
 
 // We need to replace #, because this is treated as a twitter hastag
@@ -55,8 +57,7 @@ headline_split.forEach(function callback(val) {
 
 <html lang={content.lang || 'en'}>
 	<head>
-		<title>{content.title}</title>
-		<MainHead title={content.title} description={content.description} image={content.image} {canonicalURL} />
+		<MainHead title={title} description={content.description} image={content.image} {canonicalURL} />
 
 		<!--
 			Full configuration docs available at
