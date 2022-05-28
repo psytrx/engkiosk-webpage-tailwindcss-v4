@@ -13,7 +13,6 @@ export interface Props {
 
 const { avatar, name, subtitle, description, github, twitter, linkedin, website, profileLink } = Astro.props;
 
-// TODO use website property
 ---
 
 <div class="w-full md:w-1/2 lg:w-1/3 px-4 mb-10">
@@ -39,8 +38,11 @@ const { avatar, name, subtitle, description, github, twitter, linkedin, website,
 			<a class="inline-block mr-6 hover:opacity-80" href="https://twitter.com/${twitter}">
 				<img src="/images/brands/twitter.svg" alt="${name} auf twitter">
 			</a>
-			<a class="inline-block hover:opacity-80" href="https://linkedin.com/in/${linkedin}">
+			<a class="inline-block mr-6 hover:opacity-80" href="https://linkedin.com/in/${linkedin}">
 				<img src="/images/brands/linkedin.svg" alt="${name} auf LinkedIn">
+			</a>
+			<a class="inline-block hover:opacity-80" href="${website}">
+				<img src="/images/elements/icon-website.svg" height="33" width="33" alt="Website von ${name}">
 			</a>
 		</div>
 	</div>
