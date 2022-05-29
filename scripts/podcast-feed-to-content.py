@@ -117,9 +117,7 @@ def make_html_beautiful(raw_html):
         html = html.replace(f"<h3>{h}", f'<h3 class="mb-4 text-2xl md:text-3xl font-semibold text-coolGray-800" id="{slug}">{h}')
         headline_slugs[slug] = h
 
-    # For some unknown reason, the tailwind classes don't work here
-    # I have to go with inline styles ...
-    html = html.replace("<ul>", '<ul class="list-disc px-5 mb-6 md:px-5 text-base md:text-lg text-coolGray-500" style="list-style-type: disc;">')
+    html = html.replace("<ul>", '<ul class="list-disc px-5 mb-6 md:px-5 text-base md:text-lg text-coolGray-500">')
     html = html.replace("<li><span>", '<li class="mb-3">')
     html = html.replace("<li>", '<li class="mb-3">')
 
@@ -128,11 +126,7 @@ def make_html_beautiful(raw_html):
     html = html.replace("<span>", '')
     html = html.replace("</span>", '')
 
-    # Style links
-    # Again, no clue why the default styles overrule
-    # TODO Figure out why style is necessary, and hover is not working
-    # I guess we somehow hit this one: https://github.com/withastro/astro/issues/2410
-    html = html.replace('<a ', '<a class="underline hover:no-underline" style="text-decoration-line: underline;" ')
+    html = html.replace('<a ', '<a class="underline hover:no-underline" ')
 
     # This is also very dirty
     # We need the headline <-> slug relation.
