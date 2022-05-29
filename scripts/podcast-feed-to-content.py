@@ -9,6 +9,7 @@ import yaml
 import html
 from os.path import exists
 
+from bs4 import BeautifulSoup as bs
 from slugify import slugify
 import frontmatter
 
@@ -204,6 +205,18 @@ for item in channel.findall('item'):
     html_info = make_html_beautiful(description)
     description_html = html_info["html"]
 
+    # Pretty print html to make it somehow
+    # human debuggable.
+    soup = bs(description_html, features="lxml")
+    prettyHtml = soup.prettify()
+
+    # Remove <html> and <body> tags
+    prettyHtml = prettyHtml.replace("<html>", "")
+    prettyHtml = prettyHtml.replace("<body>", "")
+    prettyHtml = prettyHtml.replace("</body>", "")
+    prettyHtml = prettyHtml.replace("</html>", "")
+    prettyHtml = prettyHtml.strip()
+
     chapter = get_chapter_from_description(description)
 
     # Parse headlines
@@ -291,7 +304,7 @@ for item in channel.findall('item'):
         f'{content_yaml}\n'
         '---\n'
         '\n'
-        f'{description_html}'
+        f'{prettyHtml}'
     )
 
     # Write file to disk as a new podcast episode
