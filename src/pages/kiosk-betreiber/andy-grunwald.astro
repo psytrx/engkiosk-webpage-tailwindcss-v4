@@ -3,48 +3,68 @@ import MainHead from '../../components/MainHead.astro';
 import Nav from '../../components/Nav.astro';
 import Footer from '../../components/Footer.astro';
 
-let title = 'Andy Grunwald - Engineering Kiosk';
-let description = 'About page of an example blog on Astro';
+let title = 'Andy Grunwald, Podcast Host - Engineering Kiosk';
+let description = 'Engineering Manager im Bereich Site Reliability Engineering und Software Engineer mit einem Fokus auf Backend-Systeme, Infrastruktur und Engineering Kultur aus Duisburg.';
 let canonicalURL = Astro.canonicalURL;
 
-// TODO Add content for Andy Grunwald page
 ---
 
 <html lang="de">
 	<head>
-		<MainHead title={title} description={description} {canonicalURL} />
+		<MainHead title={title} description={description} image="/images/teams/andy-grunwald.jpeg" {canonicalURL} />
 	</head>
 
 	<body class="antialiased bg-body text-body font-body">
 		<div>
 			<Nav title={title} />
 
-			<section class="py-24 bg-coolGray-50" style="background-image: url('/images/elements/pattern-light-big.svg'); background-position: center;">
-        		<div class="container px-4 mx-auto">
-          			
-					  <main class="wrapper">
-						<h2 class="title">{title}</h2>
-						<div class="hero">
-							<img class="hero-img" src="/images/chapter-01.jpg" alt="" />
-						</div>
-						<div class="text">
-							<p>TODO ANDY GRUNWALD</p>
-							<p>
-								The book cover and spine above and the images which follow were not part of the original Ormsby translation—they are taken from the 1880 edition of J. W. Clark,
-								illustrated by Gustave Doré. Clark in his edition states that, “The English text of ‘Don Quixote’ adopted in this edition is that of Jarvis, with occasional corrections
-								from Motteaux.”
+			<section class="py-24 md:py-32 bg-white overflow-hidden" style="background-image: url('/images/elements/pattern-white.svg'); background-position: center;">
+				<div class="container px-4 mx-auto">
+					<div class="flex flex-wrap lg:items-center -mx-4">
+						<div class="w-full md:w-1/2 px-4 mb-16 md:mb-0">
+							<span class="inline-block py-px px-2 mb-4 text-xs leading-5 text-yellow-500 bg-yellow-100 font-medium uppercase rounded-full shadow-sm">
+								Der aus dem Ruhrpott
+							</span>
+							<h1 class="mb-8 text-4xl md:text-5xl leading-tight text-coolGray-900 font-bold tracking-tighter">
+								Andy Grunwald
+							</h1>
+							<p class="mb-6 text-lg md:text-xl text-coolGray-500 font-medium">
+								Engineering Manager im Bereich <i>Site Reliability Engineering</i> und Software Engineer mit einem Fokus auf Backend-Systeme, Infrastruktur und Engineering Kultur.
+								Zieht seine Motivation aus der Team-Arbeit mit Menschen, die motiviert sind und etwas nach vorne bringen wollen (<i>Do awesome things with awesome people</i>).
+								Wohnt mittem im Ruhrgebiet, in Duisburg (und will das auch) 👷
 							</p>
-							<p>
-								See in the introduction below John Ormsby’s critique of both the Jarvis and Motteaux translations. It has been elected in the present Project Gutenberg edition to attach
-								the famous engravings of Gustave Doré to the Ormsby translation instead of the Jarvis/Motteaux. The detail of many of the Doré engravings can be fully appreciated only by
-								utilizing the “Full Size” button to expand them to their original dimensions. Ormsby in his Preface has criticized the fanciful nature of Doré’s illustrations; others
-								feel these woodcuts and steel engravings well match Quixote’s dreams.
+							<p class="mb-6 text-lg md:text-xl text-coolGray-500 font-medium">
+								Langjähriger Open-Source Contributor und Hobby- (bzw. eher Möchtegern)-Landwirt 🧑‍🌾
+								Mag es, seine Grenzen beim Functional Fitness auszuloten und die Freizeit mit seinem Hund zu verbringen.
 							</p>
+							<p class="mb-6 text-lg md:text-xl text-coolGray-500 font-medium">
+								Neben dem <a href="/">Engineering Kiosk</a> betreibt Andy mit <a href="https://app.sourcectl.dev/" class="underline hover:no-underline">sourcectl</a> eine Plattform die Open Source-Kultur sowie Inner Source innerhalb von Firmen zu pushen.
+							</p>
+							<div class="flex items-center ">
+								<a class="inline-block mr-6 hover:opacity-80" href="https://github.com/andygrunwald">
+									<img src="/images/brands/github.svg" alt="Andy Grunwald auf GitHub">
+								</a>
+								<a class="inline-block mr-6 hover:opacity-80" href="https://twitter.com/andygrunwald">
+									<img src="/images/brands/twitter.svg" alt="Andy Grunwald auf twitter">
+								</a>
+								<a class="inline-block mr-6 hover:opacity-80" href="https://linkedin.com/in/andy-grunwald-09aa265a">
+									<img src="/images/brands/linkedin.svg" alt="Andy Grunwad auf LinkedIn">
+								</a>
+								<a class="inline-block hover:opacity-80" href="https://andygrunwald.com/">
+									<img src="/images/elements/icon-website.svg" height="33" width="33" alt="Website von Andy Grunwald">
+								</a>
+							</div>
 						</div>
-					</main>
-
-        		</div>
-      		</section>
+						<div class="w-full md:w-1/2 px-4">
+							<div class="relative mx-auto md:mr-0 max-w-max">
+								<img class="absolute z-10 -left-8 -top-8 w-28 md:w-auto text-yellow-400" src="/images/elements/circle3-red.svg" alt="">
+								<img class="absolute z-10 -right-7 -bottom-8 w-28 md:w-auto text-blue-500" src="/images/elements/dots3-green.svg" alt="">
+								<img class="rounded-3xl" src="/images/teams/andy-grunwald.jpeg" alt="Andy Grunwald">
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
 
 			<Footer />
 		</div>
