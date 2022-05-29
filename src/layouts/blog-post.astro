@@ -1,4 +1,6 @@
 ---
+import { Markdown } from 'astro/components';
+
 import MainHead from '../components/MainHead.astro';
 import Nav from '../components/Nav.astro';
 import Footer from '../components/Footer.astro';
@@ -54,7 +56,7 @@ function formatDate(date) {
 				<div class="container px-4 mx-auto">
 					<div class="md:max-w-2xl mx-auto mb-12 text-center">
 						<div>
-							{ content.tags.map((element) => <span class="inline-block py-1 px-3 mb-6 text-xs leading-5 text-yellow-500 font-medium uppercase bg-yellow-100 rounded-full shadow-sm">{element}</span>) }
+							{ content.tags.map((element) => <span class="inline-block py-1 px-3 mb-6 mr-3 text-xs leading-5 text-yellow-500 font-medium uppercase bg-yellow-100 rounded-full shadow-sm">{element}</span>) }
 						</div>
 						<div class="flex items-center justify-center">
 							<p class="inline-block text-yellow-500 font-medium">
@@ -72,9 +74,18 @@ function formatDate(date) {
 				<img class="w-full mb-10 mx-auto" src="/images/blog-content/content-photo3.jpg" alt="">
 				<div class="container px-4 mx-auto">
 					<div class="md:max-w-3xl mx-auto">
-						<p class="mb-8 pb-10 text-lg md:text-xl font-medium text-coolGray-500 border-b border-coolGray-100">
-							{content.description}
-						</p>
+						<article class="border-b border-coolGray-100">
+							<div class="tldr">
+								<Markdown>{content.description}</Markdown>
+							</div>
+
+							<slot />
+						</article>
+
+						<div>
+						===================================================================
+						</div>
+
 						<h3 class="mb-4 text-2xl md:text-3xl font-semibold text-coolGray-800">
 							Header 1
 						</h3>
@@ -126,9 +137,9 @@ function formatDate(date) {
 							</span>
 						</p>
 
-						<article>
-							<slot />
-						</article>
+						<div>
+						===================================================================
+						</div>
 
 						<div class="flex items-center justify-center">
 							<a class="inline-flex mr-4 items-center justify-center py-2 px-4 text-coolGray-300 hover:text-coolGray-400 bg-white hover:bg-coolGray-100 border border-coolGray-200 hover:border-coolGray-300 rounded-md shadow-md transition duration-200" id="copy-url" data-href="${canonicalURL}" href="#">

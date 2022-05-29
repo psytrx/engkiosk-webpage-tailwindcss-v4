@@ -4,6 +4,8 @@ Used to style a single blog post.
 Due to the Markdown convertion, be have static HTML.
 
 */
+
+
 article {
     h2 {
         @apply mb-4;
@@ -84,5 +86,16 @@ article {
         @apply text-yellow-500;
         @apply hover:text-yellow-600;
         @apply underline;
+    }
+
+    .tldr p {
+        @apply mb-8;
+        @apply pb-10;
+        @apply text-lg;
+        @apply md:text-xl;
+        @apply font-medium;
+        @apply text-coolGray-500;
+        @apply border-b;
+        @apply border-coolGray-100;
     }
 }
