@@ -1,6 +1,6 @@
 ---
-amazon_music: ''
-apple_podcasts: ''
+amazon_music: https://music.amazon.com/podcasts/c35a09fe-4116-4e04-8f68-77d61b112e46/episodes/06af1212-634d-416e-9195-6255d68943a4/engineering-kiosk-21-static-site-generators-die-webseite
+apple_podcasts: https://podcasts.apple.com/de/podcast/21-static-site-generators-die-webseite/id1603082924?i=1000564628540
 audio: https://stream.redcircle.com/episodes/a2744dda-da03-476a-bcc8-f6646e8b0c95/stream.mp3
 chapter:
 - start: 00:00:00
@@ -37,11 +37,11 @@ chapter:
 date: '2022-05-31'
 description: Statische Websites sind wieder cool und wir springen mit der eigenen
   Website direkt auf den Hype. Eine Episode mal in (teilweise) ...
-google_podcasts: ''
+google_podcasts: https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5yZWRjaXJjbGUuY29tLzBlY2ZkZmQ3LWZkYTEtNGMzZC05NTE1LTQ3NjcyN2Y5ZGY1ZQ/episode/N2Q5NzExODItNWEwMi00ZDU5LWExOTgtODJhZWQzZDFiZGM4?sa=X&ved=0CAUQkfYCahcKEwi4xqzSkon4AhUAAAAAHQAAAAAQAg
 headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts
 image: /images/podcast/episode/21-static-site-generators-die-webseite.jpg
 layout: ../../../layouts/podcast-episode.astro
-spotify: ''
+spotify: https://open.spotify.com/episode/7FpteXc95QPAnKihOuUUpX?si=9ea7bd26f6ec4858
 title: '#21 Static Site Generators & DIE Webseite'
 
 ---
