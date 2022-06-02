@@ -171,8 +171,11 @@ headline_split.forEach(function callback(val) {
             				</div>
             				<div class="w-full md:w-7/12 lg:w-8/12 xl:w-9/12 md:flex-1 px-4">
 								{(content.spotify || content.apple_podcasts || content.google_podcasts) && (<section class="mb-6 py-4">
+										<div class="mb-8 text-xl md:text-xl font-semibold text-coolGray-400 text-center">
+										 Episode in deiner Podcast-App hören...
+										</div>
 									<div class="container px-4 mx-auto">
-										<div class="flex flex-wrap justify-center -mx-4">
+										<div class="flex flex-wrap justify-center">
 											{content.apple_podcasts && (<div class="w-1/2 md:w-1/3 lg:w-1/5 px-4 mb-8 lg:mb-0">
 												<a href="${content.apple_podcasts}" title="Engineering Kiosk ${content.title} bei Apple Podcasts">
 													<img class="mx-auto" src="/images/brands/apple-podcasts.svg" alt="Engineering Kiosk ${content.title} bei Apple Podcasts">
