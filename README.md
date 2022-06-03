@@ -1,6 +1,8 @@
 # Engineering Kiosk: Web page
 
-Built with [Astro](https://astro.build/).
+Built with [Astro](https://astro.build/). 
+
+Check it out at [engineeringkiosk.dev](https://www.engineeringkiosk.dev/)
 
 ## Getting started
 
