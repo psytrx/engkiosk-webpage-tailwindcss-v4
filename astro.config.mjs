@@ -6,6 +6,7 @@ import sitemap from '@astrojs/sitemap';
 // https://astro.build/config
 export default defineConfig({
 	site: 'https://engineeringkiosk.dev',
+	trailingSlash: 'always',
 
 	// Enable the Preact integration to support Preact JSX components.
 	integrations: [
