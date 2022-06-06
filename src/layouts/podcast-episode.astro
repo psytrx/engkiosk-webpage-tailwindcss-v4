@@ -3,6 +3,8 @@ import MainHead from '../components/MainHead.astro';
 import Nav from '../components/Nav.astro';
 import Footer from '../components/Footer.astro';
 
+import '../styles/podcast_episode.scss';
+
 const { content } = Astro.props;
 let canonicalURL = Astro.canonicalURL;
 
@@ -202,7 +204,9 @@ headline_split.forEach(function callback(val) {
               					<h3 class="mb-4 text-2xl md:text-3xl font-semibold text-coolGray-800" id="headline-content">
 									Worum geht's?
 								</h3>
-								<slot />
+								<div id="podcast_episode_content_slot">
+									<slot />
+								</div>
             				</div>
           				</div>
         			</div>

@@ -52,148 +52,160 @@ title: '#14 async und await: asynchrones Arbeiten im Alltag'
 
 ---
 
-<p class="mb-6 text-base md:text-lg text-coolGray-500">
+<p>
    Remote-Work, asynchrone und parallele Arbeit und die eigene Work-Life-Balance.
   </p>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
+  <p>
    Durch Corona haben wir alle einen Geschmack von der Remote-Arbeit und Home Office bekommen. Einige hassen es, andere lieben es und haben sogar dem Büro für immer den Rücken gekehrt. Aber worauf kommt es denn wirklich an?
   </p>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
+  <p>
    Wolfgang und Andy gehen dieser Frage mal auf den Grund: async und await, Event-Loop, Fokus-Zeiten, Eule und Lerche als Menschentypen, Vertrauen im Team, messbare Ergebnisse, Pro-Aktivität und Schreib-Skills. Was das alles miteinander zu tun hat, hört ihr in dieser Episode.
   </p>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
+  <p>
    Bonus: Warum man in Amsterdam anders meditiert als anderswo, wieso Andys Liebe zu Redis einen Knick bekommen hat und ob Wolfgang wirklich Holländer ist.
   </p>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
+  <p>
    Feedback an
-   <a class="underline hover:no-underline" href="mailto:stehtisch@engineeringkiosk.dev" rel="nofollow">
+   <a href="mailto:stehtisch@engineeringkiosk.dev" rel="nofollow">
     stehtisch@engineeringkiosk.dev
    </a>
    oder via Twitter an
-   <a class="underline hover:no-underline" href="https://twitter.com/EngKiosk" rel="nofollow">
+   <a href="https://twitter.com/EngKiosk" rel="nofollow">
     https://twitter.com/EngKiosk
    </a>
   </p>
-  <h3 class="mb-4 text-2xl md:text-3xl font-semibold text-coolGray-800" id="links">
+  <p>
+   <br/>
+  </p>
+  <h3 id="links">
    Links
   </h3>
-  <ul class="list-disc px-5 mb-6 md:px-5 text-base md:text-lg text-coolGray-500">
-   <li class="mb-3">
+  <ul>
+   <li>
     Pieter Levels
-    <a class="underline hover:no-underline" href="https://levels.io/async/" rel="nofollow">
+    <a href="https://levels.io/async/" rel="nofollow">
      https://levels.io/async/
     </a>
    </li>
-   <li class="mb-3">
-    <a class="underline hover:no-underline" href="http://nightowlsbook.com/" rel="nofollow">
+   <li>
+    <a href="http://nightowlsbook.com/" rel="nofollow">
      http://nightowlsbook.com/
     </a>
    </li>
-   <li class="mb-3">
+   <li>
     Slack:
-    <a class="underline hover:no-underline" href="https://slack.com/" rel="nofollow">
+    <a href="https://slack.com/" rel="nofollow">
      https://slack.com/
     </a>
    </li>
-   <li class="mb-3">
+   <li>
     Design Documents at Google:
-    <a class="underline hover:no-underline" href="https://www.industrialempathy.com/posts/design-docs-at-google/" rel="nofollow">
+    <a href="https://www.industrialempathy.com/posts/design-docs-at-google/" rel="nofollow">
      https://www.industrialempathy.com/posts/design-docs-at-google/
     </a>
    </li>
-   <li class="mb-3">
+   <li>
     Mantis BugTracking:
-    <a class="underline hover:no-underline" href="https://www.mantisbt.org/" rel="nofollow">
+    <a href="https://www.mantisbt.org/" rel="nofollow">
      https://www.mantisbt.org/
     </a>
    </li>
-   <li class="mb-3">
+   <li>
     Redmine:
-    <a class="underline hover:no-underline" href="https://www.redmine.org/" rel="nofollow">
+    <a href="https://www.redmine.org/" rel="nofollow">
      https://www.redmine.org/
     </a>
    </li>
   </ul>
-  <h3 class="mb-4 text-2xl md:text-3xl font-semibold text-coolGray-800" id="sprungmarken">
+  <p>
+   <br/>
+  </p>
+  <h3 id="sprungmarken">
    Sprungmarken
   </h3>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
+  <p>
    (00:00) Intro und Rückmeldung zur Episode #13 über Produktivität
   </p>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
+  <p>
    (01:22) Async + Asynchronität (async, await, event loop)
   </p>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
+  <p>
    (02:00) Vorteil von asynchroner Verarbeitung
   </p>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
+  <p>
    (04:13) Asynchronität vs. Parallelisierung
   </p>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
+  <p>
    (07:08) NodeJS, Callback-Hölle und async/await in Ruby
   </p>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
+  <p>
    (08:27) Warum verwenden wir nicht die asynchrone Herangehensweise um unsere eigene Zeit besser auszunutzen? - Asynchrones Arbeiten
   </p>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
+  <p>
    (11:23) Asynchrones Arbeiten, Schlafrhythmus (Eule vs. Lerche) und lange Fokus-Zeiten
   </p>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
+  <p>
    (14:48) Was verstehen wir unser asynchroner Arbeit?
   </p>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
+  <p>
    (18:34) Wie kommt man denn zu dem asynchronen Arbeiten (zB als kleine Firma)? (Vertrauen, Pro-Aktivität, Über-Kommunikation)
   </p>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
+  <p>
    (21:29) … was noch? (Kollaboratives Tooling, Energie für Vorschläge und Objektivität, Diagramme, Transparenz)
   </p>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
+  <p>
    (29:12) Die Funktion und Wahrnehmung von Slack in der asynchronen Arbeitswelt
   </p>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
+  <p>
    (34:05) Die Schriftform als Skill und warum dies trainiert werden sollte
   </p>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
+  <p>
    (35:22) Anwendungen von deinen Schreib-Skills im Ticket-System
   </p>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
+  <p>
    (38:50) Technical Writing, Dokumentation und Meeting Protokolle
   </p>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
+  <p>
    (39:26) Design Dokumente als Basis für die asynchrone Arbeit
   </p>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
+  <p>
    (53:32) Tiefere Gedanken während des schreibens
   </p>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
+  <p>
    (54:05) Wrap Up zum Thema asynchrones Arbeiten und Outro
   </p>
-  <h3 class="mb-4 text-2xl md:text-3xl font-semibold text-coolGray-800" id="hosts">
+  <p>
+   <br/>
+  </p>
+  <h3 id="hosts">
    Hosts
   </h3>
-  <ul class="list-disc px-5 mb-6 md:px-5 text-base md:text-lg text-coolGray-500">
-   <li class="mb-3">
+  <ul>
+   <li>
     Wolfgang Gassler (
-    <a class="underline hover:no-underline" href="https://twitter.com/schafele" rel="nofollow">
+    <a href="https://twitter.com/schafele" rel="nofollow">
      https://twitter.com/schafele
     </a>
     )
    </li>
-   <li class="mb-3">
+   <li>
     Andy Grunwald (
-    <a class="underline hover:no-underline" href="https://twitter.com/andygrunwald" rel="nofollow">
+    <a href="https://twitter.com/andygrunwald" rel="nofollow">
      https://twitter.com/andygrunwald
     </a>
     )
    </li>
   </ul>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
+  <p>
+   <br/>
+  </p>
+  <p>
    Engineering Kiosk Podcast: Anfragen an
-   <a class="underline hover:no-underline" href="http://stehtisch@engineeringkiosk.dev" rel="nofollow">
+   <a href="http://stehtisch@engineeringkiosk.dev" rel="nofollow">
     stehtisch@engineeringkiosk.dev
    </a>
    oder via Twitter an
-   <a class="underline hover:no-underline" href="https://twitter.com/EngKiosk" rel="nofollow">
+   <a href="https://twitter.com/EngKiosk" rel="nofollow">
     https://twitter.com/EngKiosk
    </a>
   </p>

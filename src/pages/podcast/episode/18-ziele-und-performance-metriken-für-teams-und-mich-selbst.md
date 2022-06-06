@@ -61,161 +61,252 @@ title: "#18 Ziele und Performance-Metriken f\xFCr Teams und mich selbst"
 
 ---
 
-<p class="mb-6 text-base md:text-lg text-coolGray-500">
-   Ziel-Definitionen und Mitarbeiter-Metriken: Sinnvoll oder totaler Blödsinn?
+<p>
+   <span>
+    Ziel-Definitionen und Mitarbeiter-Metriken: Sinnvoll oder totaler Blödsinn?
+   </span>
   </p>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
-   Das Thema ist heiß umstritten. Viele lieben Ziele im Job. Andere sind eher auf dem Trichter von “Wer misst, misst Mist.”. In dieser Episode sprechen Wolfgang und Andy über individuelle Ziele, Team-Ziele und über die Frage, ob sich das Team in die richtige Richtung bewegt. Unter anderem mit Fragen wie, ob es immer mathematisch messbare Ziele sein müssen, wie man mit subjektiven Zielen umgeht, ob man Lines of Code messen sollte, was die Velocity aus dem Scrum Framework mit OKRs zu tun haben und noch vieles mehr.
+  <p>
+   <span>
+    Das Thema ist heiß umstritten. Viele lieben Ziele im Job. Andere sind eher auf dem Trichter von “Wer misst, misst Mist.”. In dieser Episode sprechen Wolfgang und Andy über individuelle Ziele, Team-Ziele und über die Frage, ob sich das Team in die richtige Richtung bewegt. Unter anderem mit Fragen wie, ob es immer mathematisch messbare Ziele sein müssen, wie man mit subjektiven Zielen umgeht, ob man Lines of Code messen sollte, was die Velocity aus dem Scrum Framework mit OKRs zu tun haben und noch vieles mehr.
+   </span>
   </p>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
-   Bonus: Wieso Österreicher Podcasts anschauen können und was das Fortuna Düsseldorf und das Sams mit der ganzen Sache zu tun hat.
+  <p>
+   <span>
+    Bonus: Wieso Österreicher Podcasts anschauen können und was das Fortuna Düsseldorf und das Sams mit der ganzen Sache zu tun hat.
+   </span>
   </p>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
-   Feedback an
-   <a class="underline hover:no-underline" href="mailto:stehtisch@engineeringkiosk.dev" rel="nofollow">
+  <p>
+   <br/>
+  </p>
+  <p>
+   <span>
+    Feedback an
+   </span>
+   <a href="mailto:stehtisch@engineeringkiosk.dev" rel="nofollow">
     stehtisch@engineeringkiosk.dev
    </a>
-   oder via Twitter an
-   <a class="underline hover:no-underline" href="https://twitter.com/EngKiosk" rel="nofollow">
+   <span>
+    oder via Twitter an
+   </span>
+   <a href="https://twitter.com/EngKiosk" rel="nofollow">
     https://twitter.com/EngKiosk
    </a>
   </p>
-  <h3 class="mb-4 text-2xl md:text-3xl font-semibold text-coolGray-800" id="links">
+  <p>
+   <br/>
+  </p>
+  <h3 id="links">
    Links
   </h3>
-  <ul class="list-disc px-5 mb-6 md:px-5 text-base md:text-lg text-coolGray-500">
-   <li class="mb-3">
-    Reddit-Disukssion:
-    <a class="underline hover:no-underline" href="https://www.reddit.com/r/de_EDV/comments/uhnn4c/wie_werdet_ihr_als_mitarbeiter_und_euer_team/" rel="nofollow">
+  <ul>
+   <li>
+    <span>
+     Reddit-Disukssion:
+    </span>
+    <a href="https://www.reddit.com/r/de_EDV/comments/uhnn4c/wie_werdet_ihr_als_mitarbeiter_und_euer_team/" rel="nofollow">
      https://www.reddit.com/r/de_EDV/comments/uhnn4c/wie_werdet_ihr_als_mitarbeiter_und_euer_team/
     </a>
    </li>
-   <li class="mb-3">
-    Sentry:
-    <a class="underline hover:no-underline" href="https://sentry.io/" rel="nofollow">
+   <li>
+    <span>
+     Sentry:
+    </span>
+    <a href="https://sentry.io/" rel="nofollow">
      https://sentry.io/
     </a>
    </li>
-   <li class="mb-3">
-    OKR Beispiele für Software Teams:
-    <a class="underline hover:no-underline" href="https://www.koan.co/okr-examples/engineering" rel="nofollow">
+   <li>
+    <span>
+     OKR Beispiele für Software Teams:
+    </span>
+    <a href="https://www.koan.co/okr-examples/engineering" rel="nofollow">
      https://www.koan.co/okr-examples/engineering
     </a>
    </li>
-   <li class="mb-3">
-    OfficeVibe:
-    <a class="underline hover:no-underline" href="https://officevibe.com/" rel="nofollow">
+   <li>
+    <span>
+     OfficeVibe:
+    </span>
+    <a href="https://officevibe.com/" rel="nofollow">
      https://officevibe.com/
     </a>
    </li>
-   <li class="mb-3">
-    DevOps-Kultur: Organisationskultur von Westrum:
-    <a class="underline hover:no-underline" href="https://cloud.google.com/architecture/devops/devops-culture-westrum-organizational-culture" rel="nofollow">
+   <li>
+    <span>
+     DevOps-Kultur: Organisationskultur von Westrum:
+    </span>
+    <a href="https://cloud.google.com/architecture/devops/devops-culture-westrum-organizational-culture" rel="nofollow">
      https://cloud.google.com/architecture/devops/devops-culture-westrum-organizational-culture
     </a>
    </li>
-   <li class="mb-3">
-    CircleCi Engineering Kompetenz-Matrix:
-    <a class="underline hover:no-underline" href="https://docs.google.com/spreadsheets/d/131XZCEb8LoXqy79WWrhCX4sBnGhCM1nAIz4feFZJsEo/edit#gid=0" rel="nofollow">
+   <li>
+    <span>
+     CircleCi Engineering Kompetenz-Matrix:
+    </span>
+    <a href="https://docs.google.com/spreadsheets/d/131XZCEb8LoXqy79WWrhCX4sBnGhCM1nAIz4feFZJsEo/edit#gid=0" rel="nofollow">
      https://docs.google.com/spreadsheets/d/131XZCEb8LoXqy79WWrhCX4sBnGhCM1nAIz4feFZJsEo/edit#gid=0
     </a>
    </li>
-   <li class="mb-3">
-    DORA Metriken:
-    <a class="underline hover:no-underline" href="https://cloud.google.com/blog/products/devops-sre/using-the-four-keys-to-measure-your-devops-performance" rel="nofollow">
+   <li>
+    <span>
+     DORA Metriken:
+    </span>
+    <a href="https://cloud.google.com/blog/products/devops-sre/using-the-four-keys-to-measure-your-devops-performance" rel="nofollow">
      https://cloud.google.com/blog/products/devops-sre/using-the-four-keys-to-measure-your-devops-performance
     </a>
    </li>
   </ul>
-  <h3 class="mb-4 text-2xl md:text-3xl font-semibold text-coolGray-800" id="sprungmarken">
+  <h3>
+   <br/>
+  </h3>
+  <h3 id="sprungmarken">
    Sprungmarken
   </h3>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
-   (00:00:00) Intro
+  <p>
+   <span>
+    (00:00:00) Intro
+   </span>
   </p>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
-   (00:01:37) Helft uns mit eurem Netzwerk durch eine Podcast-Empfehlung
+  <p>
+   <span>
+    (00:01:37) Helft uns mit eurem Netzwerk durch eine Podcast-Empfehlung
+   </span>
   </p>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
-   (00:02:02) Wie kam das Thema dieser Podcast-Folge zustande? Team Metriken, Einzel-Metriken und Performance-Metriken von Mitarbeitern
+  <p>
+   <span>
+    (00:02:02) Wie kam das Thema dieser Podcast-Folge zustande? Team Metriken, Einzel-Metriken und Performance-Metriken von Mitarbeitern
+   </span>
   </p>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
-   (00:06:06) Drei Kategorien: Individuelle Ziele, Team-Ziele und "Bewegt sich das Team in die richtige Richtung?"
+  <p>
+   <span>
+    (00:06:06) Drei Kategorien: Individuelle Ziele, Team-Ziele und "Bewegt sich das Team in die richtige Richtung?"
+   </span>
   </p>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
-   (00:06:36) Individuelle Ziele: Warum ist das Thema relevant? Warum sollte man sich über Ziele unterhalten?
+  <p>
+   <span>
+    (00:06:36) Individuelle Ziele: Warum ist das Thema relevant? Warum sollte man sich über Ziele unterhalten?
+   </span>
   </p>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
-   (00:13:50) Objective Key Results (OKR) als mögliche Ziele
+  <p>
+   <span>
+    (00:13:50) Objective Key Results (OKR) als mögliche Ziele
+   </span>
   </p>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
-   (00:18:09) Die Kritik von Objective und Key Results als individuelle Ziele
+  <p>
+   <span>
+    (00:18:09) Die Kritik von Objective und Key Results als individuelle Ziele
+   </span>
   </p>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
-   (00:21:19) Transparenz von Zielen im Team und in der Firma
+  <p>
+   <span>
+    (00:21:19) Transparenz von Zielen im Team und in der Firma
+   </span>
   </p>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
-   (00:23:44) Planung und Ziele ist unnütz und Overhead
+  <p>
+   <span>
+    (00:23:44) Planung und Ziele ist unnütz und Overhead
+   </span>
   </p>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
-   (00:25:05) Antipatterns und Ziele die man vermeiden sollte
+  <p>
+   <span>
+    (00:25:05) Antipatterns und Ziele die man vermeiden sollte
+   </span>
   </p>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
-   (00:26:31) Was ist die Velocity innerhalb vom Kontext Scrum? Und wie sollte diese Metrik bewertet werden?
+  <p>
+   <span>
+    (00:26:31) Was ist die Velocity innerhalb vom Kontext Scrum? Und wie sollte diese Metrik bewertet werden?
+   </span>
   </p>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
-   (00:31:27) Die Nutzung von Code- und Software Repository Mining-Metriken als Basis zur Zielsetzung
+  <p>
+   <span>
+    (00:31:27) Die Nutzung von Code- und Software Repository Mining-Metriken als Basis zur Zielsetzung
+   </span>
   </p>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
-   (00:37:12) Team-Metrik "Happyness" und wie man es messen kann
+  <p>
+   <span>
+    (00:37:12) Team-Metrik "Happyness" und wie man es messen kann
+   </span>
   </p>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
-   (00:42:22) Das Westrum-Modell, OfficeVibe und Google Forms
+  <p>
+   <span>
+    (00:42:22) Das Westrum-Modell, OfficeVibe und Google Forms
+   </span>
   </p>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
-   (00:45:43) 360* Feedback: Was ist es und die Kritik am System
+  <p>
+   <span>
+    (00:45:43) 360* Feedback: Was ist es und die Kritik am System
+   </span>
   </p>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
-   (00:52:26) Vergleichbarkeit von Software Engineers und Levels
+  <p>
+   <span>
+    (00:52:26) Vergleichbarkeit von Software Engineers und Levels
+   </span>
   </p>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
-   (00:57:45) Jobtitel und individuelle Ziele und höhere Erwartungen
+  <p>
+   <span>
+    (00:57:45) Jobtitel und individuelle Ziele und höhere Erwartungen
+   </span>
   </p>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
-   (00:59:00) "Bewegt sich das Team in die richtige Richtung?", DORA-Metriken und Well-Rounded Software Engineer
+  <p>
+   <span>
+    (00:59:00) "Bewegt sich das Team in die richtige Richtung?", DORA-Metriken und Well-Rounded Software Engineer
+   </span>
   </p>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
-   (01:03:30) Zieldefinitionen sind nicht einfach und Kontext ist King
+  <p>
+   <span>
+    (01:03:30) Zieldefinitionen sind nicht einfach und Kontext ist King
+   </span>
   </p>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
-   (01:07:46) Outro
+  <p>
+   <span>
+    (01:07:46) Outro
+   </span>
   </p>
-  <h3 class="mb-4 text-2xl md:text-3xl font-semibold text-coolGray-800" id="hosts">
+  <p>
+   <br/>
+  </p>
+  <h3 id="hosts">
    Hosts
   </h3>
-  <ul class="list-disc px-5 mb-6 md:px-5 text-base md:text-lg text-coolGray-500">
-   <li class="mb-3">
-    Wolfgang Gassler (
-    <a class="underline hover:no-underline" href="https://twitter.com/schafele" rel="nofollow">
+  <ul>
+   <li>
+    <span>
+     Wolfgang Gassler (
+    </span>
+    <a href="https://twitter.com/schafele" rel="nofollow">
      https://twitter.com/schafele
     </a>
-    )
+    <span>
+     )
+    </span>
    </li>
-   <li class="mb-3">
-    Andy Grunwald (
-    <a class="underline hover:no-underline" href="https://twitter.com/andygrunwald" rel="nofollow">
+   <li>
+    <span>
+     Andy Grunwald (
+    </span>
+    <a href="https://twitter.com/andygrunwald" rel="nofollow">
      https://twitter.com/andygrunwald
     </a>
-    )
+    <span>
+     )
+    </span>
    </li>
   </ul>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
-   Engineering Kiosk Podcast: Anfragen an
-   <a class="underline hover:no-underline" href="http://stehtisch@engineeringkiosk.dev" rel="nofollow">
+  <p>
+   <br/>
+  </p>
+  <p>
+   <span>
+    Engineering Kiosk Podcast: Anfragen an
+   </span>
+   <a href="http://stehtisch@engineeringkiosk.dev" rel="nofollow">
     stehtisch@engineeringkiosk.dev
    </a>
-   oder via Twitter an
-   <a class="underline hover:no-underline" href="https://twitter.com/EngKiosk" rel="nofollow">
+   <span>
+    oder via Twitter an
+   </span>
+   <a href="https://twitter.com/EngKiosk" rel="nofollow">
     https://twitter.com/EngKiosk
    </a>
   </p>
