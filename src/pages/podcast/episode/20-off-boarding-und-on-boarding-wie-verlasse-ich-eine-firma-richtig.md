@@ -49,122 +49,134 @@ title: '#20 Off-Boarding und On-Boarding: Wie verlasse ich eine Firma richtig?'
 
 ---
 
-<p class="mb-6 text-base md:text-lg text-coolGray-500">
+<p>
    Firmenwechsel. Kündigung ist raus. Wie gehts weiter?
   </p>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
+  <p>
    Offboarding und Onboarding sind i.d.R. zwei Themen die sehr stark unterschätzt werden. Wie sieht man als Mitarbeiter zu, dass bei einem Firmenwechsel keine verbrannte Erde hinterlassen wird? Wie übergibt man alles ordentlich? Warum ist das überhaupt wichtig? Und was ist ein Exit-Gespräch? Und wenn das alles durch ist: Wie startet man bei der neuen Firma ordentlich? Worauf sollte man achten? Und wie kann Onboarding aussehen? Dies und nich viel mehr.
   </p>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
+  <p>
    Bonus: Was Peter Thiel mit Kleber zu tun hat, was Krokodile mit Prüfungsergebnissen zu tun hat und was ein Weckmann mit dem Podcast zu tun hat.
   </p>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
+  <p>
    Feedback an
-   <a class="underline hover:no-underline" href="mailto:stehtisch@engineeringkiosk.dev" rel="nofollow">
+   <a href="mailto:stehtisch@engineeringkiosk.dev" rel="nofollow">
     stehtisch@engineeringkiosk.dev
    </a>
    oder via Twitter an
-   <a class="underline hover:no-underline" href="https://twitter.com/EngKiosk" rel="nofollow">
+   <a href="https://twitter.com/EngKiosk" rel="nofollow">
     https://twitter.com/EngKiosk
    </a>
   </p>
-  <h3 class="mb-4 text-2xl md:text-3xl font-semibold text-coolGray-800" id="links">
+  <p>
+   <br/>
+  </p>
+  <h3 id="links">
    Links
   </h3>
-  <ul class="list-disc px-5 mb-6 md:px-5 text-base md:text-lg text-coolGray-500">
-   <li class="mb-3">
+  <ul>
+   <li>
     List of tech migrations:
-    <a class="underline hover:no-underline" href="https://github.com/kokizzu/list-of-tech-migrations" rel="nofollow">
+    <a href="https://github.com/kokizzu/list-of-tech-migrations" rel="nofollow">
      https://github.com/kokizzu/list-of-tech-migrations
     </a>
    </li>
-   <li class="mb-3">
+   <li>
     Ian Goodfellow, Apple KI-Chef, verlässt Unternehmen:
-    <a class="underline hover:no-underline" href="https://www.apfeltalk.de/magazin/news/ian-goodfellow-apple-ki-chef-verlaesst-unternehmen/" rel="nofollow">
+    <a href="https://www.apfeltalk.de/magazin/news/ian-goodfellow-apple-ki-chef-verlaesst-unternehmen/" rel="nofollow">
      https://www.apfeltalk.de/magazin/news/ian-goodfellow-apple-ki-chef-verlaesst-unternehmen/
     </a>
    </li>
-   <li class="mb-3">
+   <li>
     GitLab onboarding:
-    <a class="underline hover:no-underline" href="https://about.gitlab.com/handbook/people-group/general-onboarding/" rel="nofollow">
+    <a href="https://about.gitlab.com/handbook/people-group/general-onboarding/" rel="nofollow">
      https://about.gitlab.com/handbook/people-group/general-onboarding/
     </a>
    </li>
   </ul>
-  <h3 class="mb-4 text-2xl md:text-3xl font-semibold text-coolGray-800" id="sprungmarken">
+  <p>
+   <br/>
+  </p>
+  <h3 id="sprungmarken">
    Sprungmarken
   </h3>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
+  <p>
    (00:00:00) Intro
   </p>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
+  <p>
    (00:01:52) Landtagswahl in NRW und das Feedback bei der Briefwahl
   </p>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
+  <p>
    (00:07:42) Themen-Intro: Offboarding und Onboarding
   </p>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
+  <p>
    (00:08:42) Wie kommen wir auf das Thema Offboarding und Onboarding
   </p>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
+  <p>
    (00:10:09) Warum ist das Thema Offboarding und Onboarding relevant ist
   </p>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
+  <p>
    (00:12:02) Wie lang sollte man bei einer Firma bleiben?
   </p>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
+  <p>
    (00:16:02) Muss man sich jede 2 bis 4 Jahre neu erfinden?
   </p>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
+  <p>
    (00:19:43) Die Definition von Arbeit: Geld gegen Zeit und Fähigkeit und Loyalität zu Firmen
   </p>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
+  <p>
    (00:21:12) Die Goldenen Handschellen durch Equity, Stocks und Firmen-Anteile
   </p>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
+  <p>
    (00:22:49) Warum ist der Offboarding-Prozess eigentlich wichtig?
   </p>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
+  <p>
    (00:23:43) Der Offboarding-Prozess aus der Sicht der Firma: Feedback, Exit-Chat, eigenes Netzwerk
   </p>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
+  <p>
    (00:32:30) Der Offboarding-Prozess aus Sicht eines Mitarbeiter: Verbrannte Erde, Kaffee trinken, Prozesse die failen
   </p>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
+  <p>
    (00:48:00) Die Zeit zwischen Offboarding und der neuen Firma: Urlaub
   </p>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
+  <p>
    (00:50:51) Onboarding in einer neuen Folge: Intro Chats, Dokumentation, Checklisten, Diagramme und dumme Fragen
   </p>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
+  <p>
    (01:11:20) Outro
   </p>
-  <h3 class="mb-4 text-2xl md:text-3xl font-semibold text-coolGray-800" id="hosts">
+  <p>
+   <br/>
+  </p>
+  <h3 id="hosts">
    Hosts
   </h3>
-  <ul class="list-disc px-5 mb-6 md:px-5 text-base md:text-lg text-coolGray-500">
-   <li class="mb-3">
+  <ul>
+   <li>
     Wolfgang Gassler (
-    <a class="underline hover:no-underline" href="https://twitter.com/schafele" rel="nofollow">
+    <a href="https://twitter.com/schafele" rel="nofollow">
      https://twitter.com/schafele
     </a>
     )
    </li>
-   <li class="mb-3">
+   <li>
     Andy Grunwald (
-    <a class="underline hover:no-underline" href="https://twitter.com/andygrunwald" rel="nofollow">
+    <a href="https://twitter.com/andygrunwald" rel="nofollow">
      https://twitter.com/andygrunwald
     </a>
     )
    </li>
   </ul>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
+  <p>
+   <br/>
+  </p>
+  <p>
    Engineering Kiosk Podcast: Anfragen an
-   <a class="underline hover:no-underline" href="http://stehtisch@engineeringkiosk.dev" rel="nofollow">
+   <a href="http://stehtisch@engineeringkiosk.dev" rel="nofollow">
     stehtisch@engineeringkiosk.dev
    </a>
    oder via Twitter an
-   <a class="underline hover:no-underline" href="https://twitter.com/EngKiosk" rel="nofollow">
+   <a href="https://twitter.com/EngKiosk" rel="nofollow">
     https://twitter.com/EngKiosk
    </a>
   </p>

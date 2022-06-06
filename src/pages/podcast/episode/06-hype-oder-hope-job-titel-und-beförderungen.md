@@ -43,160 +43,175 @@ title: "#06 Hype oder Hope: Job-Titel und Bef\xF6rderungen"
 
 ---
 
-<p class="mb-6 text-base md:text-lg text-coolGray-500">
+<p>
    Sind Machine Learning und Artificial Intelligence nur Hypes oder sollte ich meine Karriere dahingehend ausrichten? Und welche Hypes gibt es im Infrastruktur-Bereich? Und überhaupt: Wie steht das alles im Zusammenhang mit Job-Titels, meiner Beförderung zum Senior Engineer und meinem Gehalt?
   </p>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
+  <p>
    All diese Themen klären Wolfgang und Andy in dieser wilden Folge. Weiterhin: Warum das Leben kein Ponyhof ist, was Agrar-Tech und autonom-fahrende Trecker, die Inflation und Krösus damit zu tun haben, sowie warum Software Engineers zu den Top 5% der Gesellschaft gehören.
   </p>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
+  <p>
    Bonus: Warum Wolfgang kein Eiskunstlauf macht und wie er seinen Dr.-Titel bekommen hat.
   </p>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
+  <p>
+   <br/>
+  </p>
+  <p>
    Feedback an
-   <a class="underline hover:no-underline" href="mailto:stehtisch@engineeringkiosk.dev" rel="nofollow">
+   <a href="mailto:stehtisch@engineeringkiosk.dev" rel="nofollow">
     stehtisch@engineeringkiosk.dev
    </a>
    oder via Twitter an
-   <a class="underline hover:no-underline" href="https://twitter.com/EngKiosk" rel="nofollow">
+   <a href="https://twitter.com/EngKiosk" rel="nofollow">
     https://twitter.com/EngKiosk
    </a>
   </p>
-  <h3 class="mb-4 text-2xl md:text-3xl font-semibold text-coolGray-800" id="links">
+  <h3 id="links">
    Links
   </h3>
-  <ul class="list-disc px-5 mb-6 md:px-5 text-base md:text-lg text-coolGray-500">
-   <li class="mb-3">
+  <ul>
+   <li>
     DeepMind AlphaCode:
-    <a class="underline hover:no-underline" href="https://www.deepmind.com/blog/article/Competitive-programming-with-AlphaCode" rel="nofollow">
+    <a href="https://www.deepmind.com/blog/article/Competitive-programming-with-AlphaCode" rel="nofollow">
      https://www.deepmind.com/blog/article/Competitive-programming-with-AlphaCode
     </a>
    </li>
-   <li class="mb-3">
+   <li>
     GitHub Co-Pilot:
-    <a class="underline hover:no-underline" href="https://copilot.github.com/" rel="nofollow">
+    <a href="https://copilot.github.com/" rel="nofollow">
      https://copilot.github.com/
     </a>
    </li>
-   <li class="mb-3">
+   <li>
     GPT-3 Model:
-    <a class="underline hover:no-underline" href="https://en.wikipedia.org/wiki/GPT-3" rel="nofollow">
+    <a href="https://en.wikipedia.org/wiki/GPT-3" rel="nofollow">
      https://en.wikipedia.org/wiki/GPT-3
     </a>
    </li>
-   <li class="mb-3">
+   <li>
     Engineering levels / levels.fyi:
-    <a class="underline hover:no-underline" href="https://www.levels.fyi/?compare=Google%2CFacebook%2CMicrosoft&amp;track=Software+Engineer" rel="nofollow">
+    <a href="https://www.levels.fyi/?compare=Google%2CFacebook%2CMicrosoft&amp;track=Software+Engineer" rel="nofollow">
      https://www.levels.fyi/?compare=Google,Facebook,Microsoft&amp;track=Software%20Engineer
     </a>
    </li>
-   <li class="mb-3">
+   <li>
     Down-Leveling = The Senioritz Rollercoaster:
-    <a class="underline hover:no-underline" href="https://newsletter.pragmaticengineer.com/p/the-seniority-rollercoaster" rel="nofollow">
+    <a href="https://newsletter.pragmaticengineer.com/p/the-seniority-rollercoaster" rel="nofollow">
      https://newsletter.pragmaticengineer.com/p/the-seniority-rollercoaster
     </a>
    </li>
-   <li class="mb-3">
+   <li>
     Krösus:
-    <a class="underline hover:no-underline" href="https://de.wiktionary.org/wiki/Kr%C3%B6sus" rel="nofollow">
+    <a href="https://de.wiktionary.org/wiki/Kr%C3%B6sus" rel="nofollow">
      https://de.wiktionary.org/wiki/Kr%C3%B6sus
     </a>
    </li>
-   <li class="mb-3">
+   <li>
     Career ladders bei Firmen / progression.fyi:
-    <a class="underline hover:no-underline" href="https://www.progression.fyi/" rel="nofollow">
+    <a href="https://www.progression.fyi/" rel="nofollow">
      https://www.progression.fyi/
     </a>
    </li>
-   <li class="mb-3">
+   <li>
     CircleCI Engineering Competency Matrix:
-    <a class="underline hover:no-underline" href="https://docs.google.com/spreadsheets/d/131XZCEb8LoXqy79WWrhCX4sBnGhCM1nAIz4feFZJsEo/edit#gid=0" rel="nofollow">
+    <a href="https://docs.google.com/spreadsheets/d/131XZCEb8LoXqy79WWrhCX4sBnGhCM1nAIz4feFZJsEo/edit#gid=0" rel="nofollow">
      https://docs.google.com/spreadsheets/d/131XZCEb8LoXqy79WWrhCX4sBnGhCM1nAIz4feFZJsEo/edit#gid=0
     </a>
    </li>
   </ul>
-  <h3 class="mb-4 text-2xl md:text-3xl font-semibold text-coolGray-800" id="erwahnte-personen">
+  <p>
+   <br/>
+  </p>
+  <h3 id="erwahnte-personen">
    Erwähnte Personen
   </h3>
-  <ul class="list-disc px-5 mb-6 md:px-5 text-base md:text-lg text-coolGray-500">
-   <li class="mb-3">
+  <ul>
+   <li>
     Russ Cox:
-    <a class="underline hover:no-underline" href="https://swtch.com/~rsc/" rel="nofollow">
+    <a href="https://swtch.com/~rsc/" rel="nofollow">
      https://swtch.com/~rsc/
     </a>
    </li>
   </ul>
-  <h3 class="mb-4 text-2xl md:text-3xl font-semibold text-coolGray-800" id="sprungmarken">
+  <p>
+   <br/>
+  </p>
+  <h3 id="sprungmarken">
    Sprungmarken
   </h3>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
+  <p>
    (00:00) Intro
   </p>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
+  <p>
    (01:06) Deepmind News "AlphaCode" - Ein neuer Machine Learning Hype?
   </p>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
+  <p>
    (06:40) Wie kann Alpha Code in der Praxis genutzt werden?
   </p>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
+  <p>
    (08:04) Coding Challenges im Recruiting-Prozess
   </p>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
+  <p>
    (11:09) Hypes im Infrastruktur-Bereich
   </p>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
+  <p>
    (16:45) Frischer Wind von neuen Leuten in der Firma
   </p>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
+  <p>
    (19:22) Mono-Repos als Hype-Beispiel
   </p>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
+  <p>
    (20:55) Industrie-Definition von Job-Titles
   </p>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
+  <p>
    (26:03) Braucht man Job-Titles (Senior, etc.)?
   </p>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
+  <p>
    (31:43) Festgefahrene Strukturen in Konzernen
   </p>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
+  <p>
    (37:38) Geld ist bei weitem nicht alles bei einem Job
   </p>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
+  <p>
    (41:50) Mach das was dir Spaß machst und Generalisten vs. Spezialisten
   </p>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
+  <p>
    (45:36) 5-Jahres-Pläne
   </p>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
+  <p>
    (49:56) Outro
   </p>
-  <h3 class="mb-4 text-2xl md:text-3xl font-semibold text-coolGray-800" id="hosts">
+  <p>
+   <br/>
+  </p>
+  <h3 id="hosts">
    Hosts
   </h3>
-  <ul class="list-disc px-5 mb-6 md:px-5 text-base md:text-lg text-coolGray-500">
-   <li class="mb-3">
+  <ul>
+   <li>
     Wolfgang Gassler (
-    <a class="underline hover:no-underline" href="https://twitter.com/schafele" rel="nofollow">
+    <a href="https://twitter.com/schafele" rel="nofollow">
      https://twitter.com/schafele
     </a>
     )
    </li>
-   <li class="mb-3">
+   <li>
     Andy Grunwald (
-    <a class="underline hover:no-underline" href="https://twitter.com/andygrunwald" rel="nofollow">
+    <a href="https://twitter.com/andygrunwald" rel="nofollow">
      https://twitter.com/andygrunwald
     </a>
     )
    </li>
   </ul>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
+  <p>
+   <br/>
+  </p>
+  <p>
    Engineering Kiosk Podcast: Anfragen an
-   <a class="underline hover:no-underline" href="http://stehtisch@engineeringkiosk.dev" rel="nofollow">
+   <a href="http://stehtisch@engineeringkiosk.dev" rel="nofollow">
     stehtisch@engineeringkiosk.dev
    </a>
    oder via Twitter an
-   <a class="underline hover:no-underline" href="https://twitter.com/EngKiosk" rel="nofollow">
+   <a href="https://twitter.com/EngKiosk" rel="nofollow">
     https://twitter.com/EngKiosk
    </a>
   </p>

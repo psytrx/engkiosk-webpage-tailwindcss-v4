@@ -75,267 +75,399 @@ title: "#19 Datenbank-Deepdive (oder das Ende einer \xC4ra): von Redis bis Click
 
 ---
 
-<p class="mb-6 text-base md:text-lg text-coolGray-500">
-   Der zweite Datenbank-Deepdive im Engineering Kiosk.
+<p>
+   <span>
+    Der zweite Datenbank-Deepdive im Engineering Kiosk.
+   </span>
   </p>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
-   Indirekt knüpfen wir an Episode 8 mit dem Thema Datenbanken. Diesmal fangen wir aber ganz vorne an: Mit hierarchischen Datenbanken über Objektorientierte Datenbanken, anschließend zu SQL bis hin zur NoSQL und Spaltenorientierten Datenbank-Ära. Dabei klären wir Fragen was zum Beispiel der Unterschied zwischen Datenbanken und Dateien ist, ob OOP-Datenbank immer noch ein Hype ist, was Indexe sind und wie diese funktionieren, warum die Migration weg von Oracle schwierig sein kann, ob Lucene eine Datenbank ist und noch viel viel mehr.
+  <p>
+   <span>
+    Indirekt knüpfen wir an Episode 8 mit dem Thema Datenbanken. Diesmal fangen wir aber ganz vorne an: Mit hierarchischen Datenbanken über Objektorientierte Datenbanken, anschließend zu SQL bis hin zur NoSQL und Spaltenorientierten Datenbank-Ära. Dabei klären wir Fragen was zum Beispiel der Unterschied zwischen Datenbanken und Dateien ist, ob OOP-Datenbank immer noch ein Hype ist, was Indexe sind und wie diese funktionieren, warum die Migration weg von Oracle schwierig sein kann, ob Lucene eine Datenbank ist und noch viel viel mehr.
+   </span>
   </p>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
-   Bonus: Was Kürbiskerne mit Datenbanken zu tun haben und warum MySQL ein besseres Adressbuch mit SQL Interface ist.
+  <p>
+   <span>
+    Bonus: Was Kürbiskerne mit Datenbanken zu tun haben und warum MySQL ein besseres Adressbuch mit SQL Interface ist.
+   </span>
   </p>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
-   Feedback an
-   <a class="underline hover:no-underline" href="mailto:stehtisch@engineeringkiosk.dev" rel="nofollow">
+  <p>
+   <br/>
+  </p>
+  <p>
+   <span>
+    Feedback an
+   </span>
+   <a href="mailto:stehtisch@engineeringkiosk.dev" rel="nofollow">
     stehtisch@engineeringkiosk.dev
    </a>
-   oder via Twitter an
-   <a class="underline hover:no-underline" href="https://twitter.com/EngKiosk" rel="nofollow">
+   <span>
+    oder via Twitter an
+   </span>
+   <a href="https://twitter.com/EngKiosk" rel="nofollow">
     https://twitter.com/EngKiosk
    </a>
   </p>
-  <h3 class="mb-4 text-2xl md:text-3xl font-semibold text-coolGray-800" id="links">
+  <h3 id="links">
    Links
   </h3>
-  <ul class="list-disc px-5 mb-6 md:px-5 text-base md:text-lg text-coolGray-500">
-   <li class="mb-3">
-    IBM Mainframes:
-    <a class="underline hover:no-underline" href="https://www.ibm.com/de-de/it-infrastructure/z" rel="nofollow">
+  <ul>
+   <li>
+    <span>
+     IBM Mainframes:
+    </span>
+    <a href="https://www.ibm.com/de-de/it-infrastructure/z" rel="nofollow">
      https://www.ibm.com/de-de/it-infrastructure/z
     </a>
    </li>
-   <li class="mb-3">
-    ClickHouse:
-    <a class="underline hover:no-underline" href="https://github.com/ClickHouse/ClickHouse" rel="nofollow">
+   <li>
+    <span>
+     ClickHouse:
+    </span>
+    <a href="https://github.com/ClickHouse/ClickHouse" rel="nofollow">
      https://github.com/ClickHouse/ClickHouse
     </a>
-    /
-    <a class="underline hover:no-underline" href="https://clickhouse.com/" rel="nofollow">
+    <span>
+     /
+    </span>
+    <a href="https://clickhouse.com/" rel="nofollow">
      https://clickhouse.com/
     </a>
    </li>
-   <li class="mb-3">
-    Oracle Cloud Free Tier:
-    <a class="underline hover:no-underline" href="https://www.oracle.com/de/cloud/free/" rel="nofollow">
+   <li>
+    <span>
+     Oracle Cloud Free Tier:
+    </span>
+    <a href="https://www.oracle.com/de/cloud/free/" rel="nofollow">
      https://www.oracle.com/de/cloud/free/
     </a>
    </li>
-   <li class="mb-3">
-    Apache Lucene:
-    <a class="underline hover:no-underline" href="https://lucene.apache.org/" rel="nofollow">
+   <li>
+    <span>
+     Apache Lucene:
+    </span>
+    <a href="https://lucene.apache.org/" rel="nofollow">
      https://lucene.apache.org/
     </a>
    </li>
-   <li class="mb-3">
-    Apache Solr:
-    <a class="underline hover:no-underline" href="https://solr.apache.org/" rel="nofollow">
+   <li>
+    <span>
+     Apache Solr:
+    </span>
+    <a href="https://solr.apache.org/" rel="nofollow">
      https://solr.apache.org/
     </a>
    </li>
-   <li class="mb-3">
-    ElasticSearch:
-    <a class="underline hover:no-underline" href="https://github.com/elastic/elasticsearch" rel="nofollow">
+   <li>
+    <span>
+     ElasticSearch:
+    </span>
+    <a href="https://github.com/elastic/elasticsearch" rel="nofollow">
      https://github.com/elastic/elasticsearch
     </a>
    </li>
-   <li class="mb-3">
-    Liste der Datenbankmanagementsysteme:
-    <a class="underline hover:no-underline" href="https://de.wikipedia.org/wiki/Liste_der_Datenbankmanagementsysteme" rel="nofollow">
+   <li>
+    <span>
+     Liste der Datenbankmanagementsysteme:
+    </span>
+    <a href="https://de.wikipedia.org/wiki/Liste_der_Datenbankmanagementsysteme" rel="nofollow">
      https://de.wikipedia.org/wiki/Liste_der_Datenbankmanagementsysteme
     </a>
    </li>
-   <li class="mb-3">
-    IBM Go Fork für Mainframes:
-    <a class="underline hover:no-underline" href="https://github.com/linux-on-ibm-z/go" rel="nofollow">
+   <li>
+    <span>
+     IBM Go Fork für Mainframes:
+    </span>
+    <a href="https://github.com/linux-on-ibm-z/go" rel="nofollow">
      https://github.com/linux-on-ibm-z/go
     </a>
    </li>
-   <li class="mb-3">
-    DB4O:
-    <a class="underline hover:no-underline" href="https://de.wikipedia.org/wiki/Db4o" rel="nofollow">
+   <li>
+    <span>
+     DB4O:
+    </span>
+    <a href="https://de.wikipedia.org/wiki/Db4o" rel="nofollow">
      https://de.wikipedia.org/wiki/Db4o
     </a>
    </li>
-   <li class="mb-3">
-    Michael Stonebraker / The End of an Architectural Era (It’s Time for a Complete Rewrite):
-    <a class="underline hover:no-underline" href="http://nms.csail.mit.edu/~stavros/pubs/hstore.pdf" rel="nofollow">
+   <li>
+    <span>
+     Michael Stonebraker / The End of an Architectural Era (It’s Time for a Complete Rewrite):
+    </span>
+    <a href="http://nms.csail.mit.edu/~stavros/pubs/hstore.pdf" rel="nofollow">
      http://nms.csail.mit.edu/~stavros/pubs/hstore.pdf
     </a>
    </li>
-   <li class="mb-3">
-    Percona:
-    <a class="underline hover:no-underline" href="https://www.percona.com/" rel="nofollow">
+   <li>
+    <span>
+     Percona:
+    </span>
+    <a href="https://www.percona.com/" rel="nofollow">
      https://www.percona.com/
     </a>
    </li>
-   <li class="mb-3">
-    2ndquadrant:
-    <a class="underline hover:no-underline" href="https://www.2ndquadrant.com/" rel="nofollow">
+   <li>
+    <span>
+     2ndquadrant:
+    </span>
+    <a href="https://www.2ndquadrant.com/" rel="nofollow">
      https://www.2ndquadrant.com/
     </a>
    </li>
-   <li class="mb-3">
-    OSS Names:
-    <a class="underline hover:no-underline" href="https://github.com/EngineeringKiosk/OSS-Names" rel="nofollow">
+   <li>
+    <span>
+     OSS Names:
+    </span>
+    <a href="https://github.com/EngineeringKiosk/OSS-Names" rel="nofollow">
      https://github.com/EngineeringKiosk/OSS-Names
     </a>
    </li>
-   <li class="mb-3">
-    Redis:
-    <a class="underline hover:no-underline" href="https://github.com/redis/redis" rel="nofollow">
+   <li>
+    <span>
+     Redis:
+    </span>
+    <a href="https://github.com/redis/redis" rel="nofollow">
      https://github.com/redis/redis
     </a>
    </li>
-   <li class="mb-3">
-    RedisLabs:
-    <a class="underline hover:no-underline" href="https://redis.com/" rel="nofollow">
+   <li>
+    <span>
+     RedisLabs:
+    </span>
+    <a href="https://redis.com/" rel="nofollow">
      https://redis.com/
     </a>
    </li>
-   <li class="mb-3">
-    antirez:
-    <a class="underline hover:no-underline" href="http://antirez.com/" rel="nofollow">
+   <li>
+    <span>
+     antirez:
+    </span>
+    <a href="http://antirez.com/" rel="nofollow">
      http://antirez.com/
     </a>
    </li>
-   <li class="mb-3">
-    RocksDB:
-    <a class="underline hover:no-underline" href="http://rocksdb.org/" rel="nofollow">
+   <li>
+    <span>
+     RocksDB:
+    </span>
+    <a href="http://rocksdb.org/" rel="nofollow">
      http://rocksdb.org/
     </a>
    </li>
-   <li class="mb-3">
-    ElasticSearch:
-    <a class="underline hover:no-underline" href="https://github.com/elastic/elasticsearch" rel="nofollow">
+   <li>
+    <span>
+     ElasticSearch:
+    </span>
+    <a href="https://github.com/elastic/elasticsearch" rel="nofollow">
      https://github.com/elastic/elasticsearch
     </a>
    </li>
-   <li class="mb-3">
-    LevelDB:
-    <a class="underline hover:no-underline" href="https://github.com/google/leveldb" rel="nofollow">
+   <li>
+    <span>
+     LevelDB:
+    </span>
+    <a href="https://github.com/google/leveldb" rel="nofollow">
      https://github.com/google/leveldb
     </a>
    </li>
-   <li class="mb-3">
-    MyRocks:
-    <a class="underline hover:no-underline" href="http://myrocks.io/" rel="nofollow">
+   <li>
+    <span>
+     MyRocks:
+    </span>
+    <a href="http://myrocks.io/" rel="nofollow">
      http://myrocks.io/
     </a>
    </li>
   </ul>
-  <h3 class="mb-4 text-2xl md:text-3xl font-semibold text-coolGray-800" id="sprungmarken">
+  <p>
+   <br/>
+  </p>
+  <h3 id="sprungmarken">
    Sprungmarken
   </h3>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
-   (00:00:00) Intro
+  <p>
+   <span>
+    (00:00:00) Intro
+   </span>
   </p>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
-   (00:00:55) Mathematik-Professoren und Kürbiskern-Brötchen
+  <p>
+   <span>
+    (00:00:55) Mathematik-Professoren und Kürbiskern-Brötchen
+   </span>
   </p>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
-   (00:02:27) Warum Datenbanken ein Herzensthema von Wolfgang ist
+  <p>
+   <span>
+    (00:02:27) Warum Datenbanken ein Herzensthema von Wolfgang ist
+   </span>
   </p>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
-   (00:04:08) Was ist denn eine Datenbank und wann verwendet man eine Datenbank?
+  <p>
+   <span>
+    (00:04:08) Was ist denn eine Datenbank und wann verwendet man eine Datenbank?
+   </span>
   </p>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
-   (00:06:34) Sind klassische Dateien auch eine Datenbank?
+  <p>
+   <span>
+    (00:06:34) Sind klassische Dateien auch eine Datenbank?
+   </span>
   </p>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
-   (00:07:25) Hierarchische Datenbanksysteme: IBM IMS
+  <p>
+   <span>
+    (00:07:25) Hierarchische Datenbanksysteme: IBM IMS
+   </span>
   </p>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
-   (00:09:30) IBM Mainframes, Go, Docker und horizontale Skalierung
+  <p>
+   <span>
+    (00:09:30) IBM Mainframes, Go, Docker und horizontale Skalierung
+   </span>
   </p>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
-   (00:11:30) Was wäre ein Use-Case von hierarchische und Objekt-Orientierte Datenbanken?
+  <p>
+   <span>
+    (00:11:30) Was wäre ein Use-Case von hierarchische und Objekt-Orientierte Datenbanken?
+   </span>
   </p>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
-   (00:16:15) Hast du bereits eine Objekt-Orientierte Datenbanken bereits in einem Projekt eingesetzt?
+  <p>
+   <span>
+    (00:16:15) Hast du bereits eine Objekt-Orientierte Datenbanken bereits in einem Projekt eingesetzt?
+   </span>
   </p>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
-   (00:16:52) Trennung von Daten und Applikationslogik und SQL als Basis-Datenbanken-Wissen
+  <p>
+   <span>
+    (00:16:52) Trennung von Daten und Applikationslogik und SQL als Basis-Datenbanken-Wissen
+   </span>
   </p>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
-   (00:18:55) Was ist der Unterschied von SQL-Datenbanken und Dateien
+  <p>
+   <span>
+    (00:18:55) Was ist der Unterschied von SQL-Datenbanken und Dateien
+   </span>
   </p>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
-   (00:19:32) Datenbank Index/Indize: Daten-Duplikation, Lese- und Schreibzugriffe
+  <p>
+   <span>
+    (00:19:32) Datenbank Index/Indize: Daten-Duplikation, Lese- und Schreibzugriffe
+   </span>
   </p>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
-   (00:23:54) Ist eine Excel-Datei eine Datenbank?
+  <p>
+   <span>
+    (00:23:54) Ist eine Excel-Datei eine Datenbank?
+   </span>
   </p>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
-   (00:24:58) Unterschied von Files und Datenbanken: Nutzung von mehreren Benutzern
+  <p>
+   <span>
+    (00:24:58) Unterschied von Files und Datenbanken: Nutzung von mehreren Benutzern
+   </span>
   </p>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
-   (00:28:03) Recovery, persistentes und konsistentes Speichern bei Files und Datenbanken
+  <p>
+   <span>
+    (00:28:03) Recovery, persistentes und konsistentes Speichern bei Files und Datenbanken
+   </span>
   </p>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
-   (00:31:01) Relationale Datenbanken sind die eigentlich klassischen Datenbanken
+  <p>
+   <span>
+    (00:31:01) Relationale Datenbanken sind die eigentlich klassischen Datenbanken
+   </span>
   </p>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
-   (00:34:31) Proprietäre Datenbanken: Oracle Migration nach PostgreSQL
+  <p>
+   <span>
+    (00:34:31) Proprietäre Datenbanken: Oracle Migration nach PostgreSQL
+   </span>
   </p>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
-   (00:37:06) Oracle Cloud und das Free-Tier
+  <p>
+   <span>
+    (00:37:06) Oracle Cloud und das Free-Tier
+   </span>
   </p>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
-   (00:38:29) MySQL wurde von Oracle übernommen und MariaDB als Alternative
+  <p>
+   <span>
+    (00:38:29) MySQL wurde von Oracle übernommen und MariaDB als Alternative
+   </span>
   </p>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
-   (00:39:48) Logik in der Datenbank, Oracle-Migrationen und Application-Server
+  <p>
+   <span>
+    (00:39:48) Logik in der Datenbank, Oracle-Migrationen und Application-Server
+   </span>
   </p>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
-   (00:41:10) Gibt es ein Killer-Argument für proprietäre Datenbanken?
+  <p>
+   <span>
+    (00:41:10) Gibt es ein Killer-Argument für proprietäre Datenbanken?
+   </span>
   </p>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
-   (00:43:57) Woher kommt der Name MySQL und MariaDB kommt?
+  <p>
+   <span>
+    (00:43:57) Woher kommt der Name MySQL und MariaDB kommt?
+   </span>
   </p>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
-   (00:45:19) Ist ElasticSearch eine Datenbank nach der klassischen Definition?
+  <p>
+   <span>
+    (00:45:19) Ist ElasticSearch eine Datenbank nach der klassischen Definition?
+   </span>
   </p>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
-   (00:46:38) Ist Redis und andere Key-Value-Stores eine Datenbank?
+  <p>
+   <span>
+    (00:46:38) Ist Redis und andere Key-Value-Stores eine Datenbank?
+   </span>
   </p>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
-   (00:48:42) NoSQL ist für Kinder, Feature-Ritis, Einfache Datenbanken und LevelDB / RocksDB und MyRocks
+  <p>
+   <span>
+    (00:48:42) NoSQL ist für Kinder, Feature-Ritis, Einfache Datenbanken und LevelDB / RocksDB und MyRocks
+   </span>
   </p>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
-   (00:53:19) Was sind Spalten-Datenbanken und wann sollten diese angewendet werden? Analytische Datenbanken und Clickhouse von Yandex
+  <p>
+   <span>
+    (00:53:19) Was sind Spalten-Datenbanken und wann sollten diese angewendet werden? Analytische Datenbanken und Clickhouse von Yandex
+   </span>
   </p>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
-   (00:58:15) Was für Fragen sind relevant um die richtige Datenbank für mich zu finden?
+  <p>
+   <span>
+    (00:58:15) Was für Fragen sind relevant um die richtige Datenbank für mich zu finden?
+   </span>
   </p>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
-   (01:01:43) Feedback zum Thema Datenbanken und Outro
+  <p>
+   <span>
+    (01:01:43) Feedback zum Thema Datenbanken und Outro
+   </span>
   </p>
-  <h3 class="mb-4 text-2xl md:text-3xl font-semibold text-coolGray-800" id="hosts">
+  <h3>
+   <br/>
+  </h3>
+  <h3 id="hosts">
    Hosts
   </h3>
-  <ul class="list-disc px-5 mb-6 md:px-5 text-base md:text-lg text-coolGray-500">
-   <li class="mb-3">
-    Wolfgang Gassler (
-    <a class="underline hover:no-underline" href="https://twitter.com/schafele" rel="nofollow">
+  <ul>
+   <li>
+    <span>
+     Wolfgang Gassler (
+    </span>
+    <a href="https://twitter.com/schafele" rel="nofollow">
      https://twitter.com/schafele
     </a>
-    )
+    <span>
+     )
+    </span>
    </li>
-   <li class="mb-3">
-    Andy Grunwald (
-    <a class="underline hover:no-underline" href="https://twitter.com/andygrunwald" rel="nofollow">
+   <li>
+    <span>
+     Andy Grunwald (
+    </span>
+    <a href="https://twitter.com/andygrunwald" rel="nofollow">
      https://twitter.com/andygrunwald
     </a>
-    )
+    <span>
+     )
+    </span>
    </li>
   </ul>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
-   Engineering Kiosk Podcast: Anfragen an
-   <a class="underline hover:no-underline" href="http://stehtisch@engineeringkiosk.dev" rel="nofollow">
+  <p>
+   <br/>
+  </p>
+  <p>
+   <span>
+    Engineering Kiosk Podcast: Anfragen an
+   </span>
+   <a href="http://stehtisch@engineeringkiosk.dev" rel="nofollow">
     stehtisch@engineeringkiosk.dev
    </a>
-   oder via Twitter an
-   <a class="underline hover:no-underline" href="https://twitter.com/EngKiosk" rel="nofollow">
+   <span>
+    oder via Twitter an
+   </span>
+   <a href="https://twitter.com/EngKiosk" rel="nofollow">
     https://twitter.com/EngKiosk
    </a>
   </p>

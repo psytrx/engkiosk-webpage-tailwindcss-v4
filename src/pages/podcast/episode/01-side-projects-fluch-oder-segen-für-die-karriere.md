@@ -54,141 +54,153 @@ title: "#01 Side Projects - Fluch oder Segen f\xFCr die Karriere?"
 
 ---
 
-<p class="mb-6 text-base md:text-lg text-coolGray-500">
+<p>
    Zwei Engineering Manager über Side Projects: Wie diese den Recruiting Prozess beeinflussen, welche Learnings aus einem Projekt generiert werden, was die freiwillige Feuerwehr mit Site Reliability Engineering zu tun hat, welche negativen Seiten Side Projects haben können, ob ein Hund auch ein eigenes Side Project ist und warum man nicht seinen eigenen Mailserver betreiben sollte.
   </p>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
+  <p>
    Bonus: Der Unterschied zwischen Schnacken und Schnackseln
   </p>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
+  <p>
    Feedback an
-   <a class="underline hover:no-underline" href="mailto:stehtisch@engineeringkiosk.dev" rel="nofollow">
+   <a href="mailto:stehtisch@engineeringkiosk.dev" rel="nofollow">
     stehtisch@engineeringkiosk.dev
    </a>
    oder via Twitter an
-   <a class="underline hover:no-underline" href="https://twitter.com/EngKiosk" rel="nofollow">
+   <a href="https://twitter.com/EngKiosk" rel="nofollow">
     https://twitter.com/EngKiosk
    </a>
   </p>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
+  <p>
+   <br/>
+  </p>
+  <p>
    Andy (
-   <a class="underline hover:no-underline" href="https://twitter.com/andygrunwald" rel="nofollow">
+   <a href="https://twitter.com/andygrunwald" rel="nofollow">
     https://twitter.com/andygrunwald
    </a>
    ) und Wolfgang (
-   <a class="underline hover:no-underline" href="https://twitter.com/schafele" rel="nofollow">
+   <a href="https://twitter.com/schafele" rel="nofollow">
     https://twitter.com/schafele
    </a>
    ) sprechen im Detail über:
   </p>
-  <h3 class="mb-4 text-2xl md:text-3xl font-semibold text-coolGray-800" id="sprungmarken">
+  <h3 id="sprungmarken">
    Sprungmarken
   </h3>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
+  <p>
    (00:26) Warum "Engineering Kiosk"? Woher kommt der Name?
   </p>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
+  <p>
    (01:52) Einstieg ins Thema "Side Projects"
   </p>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
+  <p>
    (02:00) Side Projects im Recruiting Prozess und Lebenslauf
   </p>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
+  <p>
    (03:45) Muss das Side Project etwas mit dem Job zu tun haben?
   </p>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
+  <p>
    (05:40) Alleine oder im Team?
   </p>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
+  <p>
    (08:10) Was bringt dir die Information "Side Project" für das Interview selbst?
   </p>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
+  <p>
    (11:25) Hire for Skill or for attitude
   </p>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
+  <p>
    (12:43) Kann ein Side Project auch etwas negatives bedeuten (als Hiring Manager)?
   </p>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
+  <p>
    (14:55) Wolfgang erzählt aus dem Krieg: Sein Mail-Server Side-Project
   </p>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
+  <p>
    (18:31) Psychologischer Druck bei Side Projects
   </p>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
+  <p>
    (19:23) Learnings aus Side Projects
   </p>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
+  <p>
    (23:44) Rollen-, Zeit- und Energiemanagement: Side-Projects mit Familie/in der Freizeit
   </p>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
+  <p>
    (31:53) Side Projects als Ausgleich
   </p>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
+  <p>
    (34:10) Learnings aus dem Side Project im Job als Engineering Manager
   </p>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
+  <p>
    (36:27) Lohnen sich Side Projects für die Job-Suche?
   </p>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
+  <p>
    (40:02) Wie Ihr eure Side Projects nutzen könnt um das Interview zu eurem Vorteil zu drehen
   </p>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
+  <p>
    (42:45) Brauchen wir POP3 noch?
   </p>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
+  <p>
    (43:34) Top Tip: Startet ein Side Project und setzt euch die richtigen Erwartungen
   </p>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
+  <p>
    (44:39) Sind Arbeitgeber glücklich über Side Projects von MitarbeiterInnen?
   </p>
-  <h3 class="mb-4 text-2xl md:text-3xl font-semibold text-coolGray-800" id="erwahnte-personen">
+  <p>
+   <br/>
+  </p>
+  <h3 id="erwahnte-personen">
    Erwähnte Personen
   </h3>
-  <ul class="list-disc px-5 mb-6 md:px-5 text-base md:text-lg text-coolGray-500">
-   <li class="mb-3">
+  <ul>
+   <li>
     Tom Bartel (
-    <a class="underline hover:no-underline" href="https://twitter.com/twbartel" rel="nofollow">
+    <a href="https://twitter.com/twbartel" rel="nofollow">
      https://twitter.com/twbartel
     </a>
     /
-    <a class="underline hover:no-underline" href="https://www.tombartel.me/" rel="nofollow">
+    <a href="https://www.tombartel.me/" rel="nofollow">
      https://www.tombartel.me/
     </a>
     )
    </li>
-   <li class="mb-3">
+   <li>
     Joost Ronkes Agerbeek (
-    <a class="underline hover:no-underline" href="https://www.linkedin.com/in/joost-ronkes-agerbeek-46a41339/" rel="nofollow">
+    <a href="https://www.linkedin.com/in/joost-ronkes-agerbeek-46a41339/" rel="nofollow">
      https://www.linkedin.com/in/joost-ronkes-agerbeek-46a41339/
     </a>
     )
    </li>
   </ul>
-  <h3 class="mb-4 text-2xl md:text-3xl font-semibold text-coolGray-800" id="hosts">
+  <p>
+   <br/>
+  </p>
+  <h3 id="hosts">
    Hosts
   </h3>
-  <ul class="list-disc px-5 mb-6 md:px-5 text-base md:text-lg text-coolGray-500">
-   <li class="mb-3">
+  <ul>
+   <li>
     Wolfgang Gassler (
-    <a class="underline hover:no-underline" href="https://twitter.com/schafele" rel="nofollow">
+    <a href="https://twitter.com/schafele" rel="nofollow">
      https://twitter.com/schafele
     </a>
     )
    </li>
-   <li class="mb-3">
+   <li>
     Andy Grunwald (
-    <a class="underline hover:no-underline" href="https://twitter.com/andygrunwald" rel="nofollow">
+    <a href="https://twitter.com/andygrunwald" rel="nofollow">
      https://twitter.com/andygrunwald
     </a>
     )
    </li>
   </ul>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
+  <p>
+   <br/>
+  </p>
+  <p>
    Engineering Kiosk Podcast
   </p>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
+  <p>
    Anfragen an
-   <a class="underline hover:no-underline" href="mailto:stehtisch@engineeringkiosk.dev" rel="nofollow">
+   <a href="mailto:stehtisch@engineeringkiosk.dev" rel="nofollow">
     stehtisch@engineeringkiosk.dev
    </a>
   </p>
