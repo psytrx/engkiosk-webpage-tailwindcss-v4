@@ -272,7 +272,7 @@ title: '#15  Source Code Kommentare, Git Commits Messages, Merge Commits und Bra
   </p>
   <p>
    Engineering Kiosk Podcast: Anfragen an
-   <a href="http://stehtisch@engineeringkiosk.dev" rel="nofollow">
+   <a href="mailto:stehtisch@engineeringkiosk.dev" rel="nofollow">
     stehtisch@engineeringkiosk.dev
    </a>
    oder via Twitter an

@@ -334,7 +334,7 @@ title: "#17 Was k\xF6nnen wir beim Incident Management von der Feuerwehr lernen?
   </p>
   <p>
    Engineering Kiosk Podcast: Anfragen an
-   <a href="http://stehtisch@engineeringkiosk.dev" rel="nofollow">
+   <a href="mailto:stehtisch@engineeringkiosk.dev" rel="nofollow">
     stehtisch@engineeringkiosk.dev
    </a>
    oder via Twitter an

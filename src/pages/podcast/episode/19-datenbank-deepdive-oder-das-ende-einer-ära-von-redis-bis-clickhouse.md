@@ -76,33 +76,23 @@ title: "#19 Datenbank-Deepdive (oder das Ende einer \xC4ra): von Redis bis Click
 ---
 
 <p>
-   <span>
-    Der zweite Datenbank-Deepdive im Engineering Kiosk.
-   </span>
+   Der zweite Datenbank-Deepdive im Engineering Kiosk.
   </p>
   <p>
-   <span>
-    Indirekt knüpfen wir an Episode 8 mit dem Thema Datenbanken. Diesmal fangen wir aber ganz vorne an: Mit hierarchischen Datenbanken über Objektorientierte Datenbanken, anschließend zu SQL bis hin zur NoSQL und Spaltenorientierten Datenbank-Ära. Dabei klären wir Fragen was zum Beispiel der Unterschied zwischen Datenbanken und Dateien ist, ob OOP-Datenbank immer noch ein Hype ist, was Indexe sind und wie diese funktionieren, warum die Migration weg von Oracle schwierig sein kann, ob Lucene eine Datenbank ist und noch viel viel mehr.
-   </span>
+   Indirekt knüpfen wir an Episode 8 mit dem Thema Datenbanken. Diesmal fangen wir aber ganz vorne an: Mit hierarchischen Datenbanken über Objektorientierte Datenbanken, anschließend zu SQL bis hin zur NoSQL und Spaltenorientierten Datenbank-Ära. Dabei klären wir Fragen was zum Beispiel der Unterschied zwischen Datenbanken und Dateien ist, ob OOP-Datenbank immer noch ein Hype ist, was Indexe sind und wie diese funktionieren, warum die Migration weg von Oracle schwierig sein kann, ob Lucene eine Datenbank ist und noch viel viel mehr.
   </p>
   <p>
-   <span>
-    Bonus: Was Kürbiskerne mit Datenbanken zu tun haben und warum MySQL ein besseres Adressbuch mit SQL Interface ist.
-   </span>
+   Bonus: Was Kürbiskerne mit Datenbanken zu tun haben und warum MySQL ein besseres Adressbuch mit SQL Interface ist.
   </p>
   <p>
    <br/>
   </p>
   <p>
-   <span>
-    Feedback an
-   </span>
+   Feedback an
    <a href="mailto:stehtisch@engineeringkiosk.dev" rel="nofollow">
     stehtisch@engineeringkiosk.dev
    </a>
-   <span>
-    oder via Twitter an
-   </span>
+   oder via Twitter an
    <a href="https://twitter.com/EngKiosk" rel="nofollow">
     https://twitter.com/EngKiosk
    </a>
@@ -112,167 +102,125 @@ title: "#19 Datenbank-Deepdive (oder das Ende einer \xC4ra): von Redis bis Click
   </h3>
   <ul>
    <li>
-    <span>
-     IBM Mainframes:
-    </span>
+    IBM Mainframes:
     <a href="https://www.ibm.com/de-de/it-infrastructure/z" rel="nofollow">
      https://www.ibm.com/de-de/it-infrastructure/z
     </a>
    </li>
    <li>
-    <span>
-     ClickHouse:
-    </span>
+    ClickHouse:
     <a href="https://github.com/ClickHouse/ClickHouse" rel="nofollow">
      https://github.com/ClickHouse/ClickHouse
     </a>
-    <span>
-     /
-    </span>
+    /
     <a href="https://clickhouse.com/" rel="nofollow">
      https://clickhouse.com/
     </a>
    </li>
    <li>
-    <span>
-     Oracle Cloud Free Tier:
-    </span>
+    Oracle Cloud Free Tier:
     <a href="https://www.oracle.com/de/cloud/free/" rel="nofollow">
      https://www.oracle.com/de/cloud/free/
     </a>
    </li>
    <li>
-    <span>
-     Apache Lucene:
-    </span>
+    Apache Lucene:
     <a href="https://lucene.apache.org/" rel="nofollow">
      https://lucene.apache.org/
     </a>
    </li>
    <li>
-    <span>
-     Apache Solr:
-    </span>
+    Apache Solr:
     <a href="https://solr.apache.org/" rel="nofollow">
      https://solr.apache.org/
     </a>
    </li>
    <li>
-    <span>
-     ElasticSearch:
-    </span>
+    ElasticSearch:
     <a href="https://github.com/elastic/elasticsearch" rel="nofollow">
      https://github.com/elastic/elasticsearch
     </a>
    </li>
    <li>
-    <span>
-     Liste der Datenbankmanagementsysteme:
-    </span>
+    Liste der Datenbankmanagementsysteme:
     <a href="https://de.wikipedia.org/wiki/Liste_der_Datenbankmanagementsysteme" rel="nofollow">
      https://de.wikipedia.org/wiki/Liste_der_Datenbankmanagementsysteme
     </a>
    </li>
    <li>
-    <span>
-     IBM Go Fork für Mainframes:
-    </span>
+    IBM Go Fork für Mainframes:
     <a href="https://github.com/linux-on-ibm-z/go" rel="nofollow">
      https://github.com/linux-on-ibm-z/go
     </a>
    </li>
    <li>
-    <span>
-     DB4O:
-    </span>
+    DB4O:
     <a href="https://de.wikipedia.org/wiki/Db4o" rel="nofollow">
      https://de.wikipedia.org/wiki/Db4o
     </a>
    </li>
    <li>
-    <span>
-     Michael Stonebraker / The End of an Architectural Era (It’s Time for a Complete Rewrite):
-    </span>
+    Michael Stonebraker / The End of an Architectural Era (It’s Time for a Complete Rewrite):
     <a href="http://nms.csail.mit.edu/~stavros/pubs/hstore.pdf" rel="nofollow">
      http://nms.csail.mit.edu/~stavros/pubs/hstore.pdf
     </a>
    </li>
    <li>
-    <span>
-     Percona:
-    </span>
+    Percona:
     <a href="https://www.percona.com/" rel="nofollow">
      https://www.percona.com/
     </a>
    </li>
    <li>
-    <span>
-     2ndquadrant:
-    </span>
+    2ndquadrant:
     <a href="https://www.2ndquadrant.com/" rel="nofollow">
      https://www.2ndquadrant.com/
     </a>
    </li>
    <li>
-    <span>
-     OSS Names:
-    </span>
+    OSS Names:
     <a href="https://github.com/EngineeringKiosk/OSS-Names" rel="nofollow">
      https://github.com/EngineeringKiosk/OSS-Names
     </a>
    </li>
    <li>
-    <span>
-     Redis:
-    </span>
+    Redis:
     <a href="https://github.com/redis/redis" rel="nofollow">
      https://github.com/redis/redis
     </a>
    </li>
    <li>
-    <span>
-     RedisLabs:
-    </span>
+    RedisLabs:
     <a href="https://redis.com/" rel="nofollow">
      https://redis.com/
     </a>
    </li>
    <li>
-    <span>
-     antirez:
-    </span>
+    antirez:
     <a href="http://antirez.com/" rel="nofollow">
      http://antirez.com/
     </a>
    </li>
    <li>
-    <span>
-     RocksDB:
-    </span>
+    RocksDB:
     <a href="http://rocksdb.org/" rel="nofollow">
      http://rocksdb.org/
     </a>
    </li>
    <li>
-    <span>
-     ElasticSearch:
-    </span>
+    ElasticSearch:
     <a href="https://github.com/elastic/elasticsearch" rel="nofollow">
      https://github.com/elastic/elasticsearch
     </a>
    </li>
    <li>
-    <span>
-     LevelDB:
-    </span>
+    LevelDB:
     <a href="https://github.com/google/leveldb" rel="nofollow">
      https://github.com/google/leveldb
     </a>
    </li>
    <li>
-    <span>
-     MyRocks:
-    </span>
+    MyRocks:
     <a href="http://myrocks.io/" rel="nofollow">
      http://myrocks.io/
     </a>
@@ -285,144 +233,88 @@ title: "#19 Datenbank-Deepdive (oder das Ende einer \xC4ra): von Redis bis Click
    Sprungmarken
   </h3>
   <p>
-   <span>
-    (00:00:00) Intro
-   </span>
+   (00:00:00) Intro
   </p>
   <p>
-   <span>
-    (00:00:55) Mathematik-Professoren und Kürbiskern-Brötchen
-   </span>
+   (00:00:55) Mathematik-Professoren und Kürbiskern-Brötchen
   </p>
   <p>
-   <span>
-    (00:02:27) Warum Datenbanken ein Herzensthema von Wolfgang ist
-   </span>
+   (00:02:27) Warum Datenbanken ein Herzensthema von Wolfgang ist
   </p>
   <p>
-   <span>
-    (00:04:08) Was ist denn eine Datenbank und wann verwendet man eine Datenbank?
-   </span>
+   (00:04:08) Was ist denn eine Datenbank und wann verwendet man eine Datenbank?
   </p>
   <p>
-   <span>
-    (00:06:34) Sind klassische Dateien auch eine Datenbank?
-   </span>
+   (00:06:34) Sind klassische Dateien auch eine Datenbank?
   </p>
   <p>
-   <span>
-    (00:07:25) Hierarchische Datenbanksysteme: IBM IMS
-   </span>
+   (00:07:25) Hierarchische Datenbanksysteme: IBM IMS
   </p>
   <p>
-   <span>
-    (00:09:30) IBM Mainframes, Go, Docker und horizontale Skalierung
-   </span>
+   (00:09:30) IBM Mainframes, Go, Docker und horizontale Skalierung
   </p>
   <p>
-   <span>
-    (00:11:30) Was wäre ein Use-Case von hierarchische und Objekt-Orientierte Datenbanken?
-   </span>
+   (00:11:30) Was wäre ein Use-Case von hierarchische und Objekt-Orientierte Datenbanken?
   </p>
   <p>
-   <span>
-    (00:16:15) Hast du bereits eine Objekt-Orientierte Datenbanken bereits in einem Projekt eingesetzt?
-   </span>
+   (00:16:15) Hast du bereits eine Objekt-Orientierte Datenbanken bereits in einem Projekt eingesetzt?
   </p>
   <p>
-   <span>
-    (00:16:52) Trennung von Daten und Applikationslogik und SQL als Basis-Datenbanken-Wissen
-   </span>
+   (00:16:52) Trennung von Daten und Applikationslogik und SQL als Basis-Datenbanken-Wissen
   </p>
   <p>
-   <span>
-    (00:18:55) Was ist der Unterschied von SQL-Datenbanken und Dateien
-   </span>
+   (00:18:55) Was ist der Unterschied von SQL-Datenbanken und Dateien
   </p>
   <p>
-   <span>
-    (00:19:32) Datenbank Index/Indize: Daten-Duplikation, Lese- und Schreibzugriffe
-   </span>
+   (00:19:32) Datenbank Index/Indize: Daten-Duplikation, Lese- und Schreibzugriffe
   </p>
   <p>
-   <span>
-    (00:23:54) Ist eine Excel-Datei eine Datenbank?
-   </span>
+   (00:23:54) Ist eine Excel-Datei eine Datenbank?
   </p>
   <p>
-   <span>
-    (00:24:58) Unterschied von Files und Datenbanken: Nutzung von mehreren Benutzern
-   </span>
+   (00:24:58) Unterschied von Files und Datenbanken: Nutzung von mehreren Benutzern
   </p>
   <p>
-   <span>
-    (00:28:03) Recovery, persistentes und konsistentes Speichern bei Files und Datenbanken
-   </span>
+   (00:28:03) Recovery, persistentes und konsistentes Speichern bei Files und Datenbanken
   </p>
   <p>
-   <span>
-    (00:31:01) Relationale Datenbanken sind die eigentlich klassischen Datenbanken
-   </span>
+   (00:31:01) Relationale Datenbanken sind die eigentlich klassischen Datenbanken
   </p>
   <p>
-   <span>
-    (00:34:31) Proprietäre Datenbanken: Oracle Migration nach PostgreSQL
-   </span>
+   (00:34:31) Proprietäre Datenbanken: Oracle Migration nach PostgreSQL
   </p>
   <p>
-   <span>
-    (00:37:06) Oracle Cloud und das Free-Tier
-   </span>
+   (00:37:06) Oracle Cloud und das Free-Tier
   </p>
   <p>
-   <span>
-    (00:38:29) MySQL wurde von Oracle übernommen und MariaDB als Alternative
-   </span>
+   (00:38:29) MySQL wurde von Oracle übernommen und MariaDB als Alternative
   </p>
   <p>
-   <span>
-    (00:39:48) Logik in der Datenbank, Oracle-Migrationen und Application-Server
-   </span>
+   (00:39:48) Logik in der Datenbank, Oracle-Migrationen und Application-Server
   </p>
   <p>
-   <span>
-    (00:41:10) Gibt es ein Killer-Argument für proprietäre Datenbanken?
-   </span>
+   (00:41:10) Gibt es ein Killer-Argument für proprietäre Datenbanken?
   </p>
   <p>
-   <span>
-    (00:43:57) Woher kommt der Name MySQL und MariaDB kommt?
-   </span>
+   (00:43:57) Woher kommt der Name MySQL und MariaDB kommt?
   </p>
   <p>
-   <span>
-    (00:45:19) Ist ElasticSearch eine Datenbank nach der klassischen Definition?
-   </span>
+   (00:45:19) Ist ElasticSearch eine Datenbank nach der klassischen Definition?
   </p>
   <p>
-   <span>
-    (00:46:38) Ist Redis und andere Key-Value-Stores eine Datenbank?
-   </span>
+   (00:46:38) Ist Redis und andere Key-Value-Stores eine Datenbank?
   </p>
   <p>
-   <span>
-    (00:48:42) NoSQL ist für Kinder, Feature-Ritis, Einfache Datenbanken und LevelDB / RocksDB und MyRocks
-   </span>
+   (00:48:42) NoSQL ist für Kinder, Feature-Ritis, Einfache Datenbanken und LevelDB / RocksDB und MyRocks
   </p>
   <p>
-   <span>
-    (00:53:19) Was sind Spalten-Datenbanken und wann sollten diese angewendet werden? Analytische Datenbanken und Clickhouse von Yandex
-   </span>
+   (00:53:19) Was sind Spalten-Datenbanken und wann sollten diese angewendet werden? Analytische Datenbanken und Clickhouse von Yandex
   </p>
   <p>
-   <span>
-    (00:58:15) Was für Fragen sind relevant um die richtige Datenbank für mich zu finden?
-   </span>
+   (00:58:15) Was für Fragen sind relevant um die richtige Datenbank für mich zu finden?
   </p>
   <p>
-   <span>
-    (01:01:43) Feedback zum Thema Datenbanken und Outro
-   </span>
+   (01:01:43) Feedback zum Thema Datenbanken und Outro
   </p>
   <h3>
    <br/>
@@ -432,41 +324,29 @@ title: "#19 Datenbank-Deepdive (oder das Ende einer \xC4ra): von Redis bis Click
   </h3>
   <ul>
    <li>
-    <span>
-     Wolfgang Gassler (
-    </span>
+    Wolfgang Gassler (
     <a href="https://twitter.com/schafele" rel="nofollow">
      https://twitter.com/schafele
     </a>
-    <span>
-     )
-    </span>
+    )
    </li>
    <li>
-    <span>
-     Andy Grunwald (
-    </span>
+    Andy Grunwald (
     <a href="https://twitter.com/andygrunwald" rel="nofollow">
      https://twitter.com/andygrunwald
     </a>
-    <span>
-     )
-    </span>
+    )
    </li>
   </ul>
   <p>
    <br/>
   </p>
   <p>
-   <span>
-    Engineering Kiosk Podcast: Anfragen an
-   </span>
-   <a href="http://stehtisch@engineeringkiosk.dev" rel="nofollow">
+   Engineering Kiosk Podcast: Anfragen an
+   <a href="mailto:stehtisch@engineeringkiosk.dev" rel="nofollow">
     stehtisch@engineeringkiosk.dev
    </a>
-   <span>
-    oder via Twitter an
-   </span>
+   oder via Twitter an
    <a href="https://twitter.com/EngKiosk" rel="nofollow">
     https://twitter.com/EngKiosk
    </a>

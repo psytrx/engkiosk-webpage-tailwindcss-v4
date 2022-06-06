@@ -172,7 +172,7 @@ title: '#20 Off-Boarding und On-Boarding: Wie verlasse ich eine Firma richtig?'
   </p>
   <p>
    Engineering Kiosk Podcast: Anfragen an
-   <a href="http://stehtisch@engineeringkiosk.dev" rel="nofollow">
+   <a href="mailto:stehtisch@engineeringkiosk.dev" rel="nofollow">
     stehtisch@engineeringkiosk.dev
    </a>
    oder via Twitter an

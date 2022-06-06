@@ -208,7 +208,7 @@ title: '#10 Das Karriere Booster Meeting 1:1s'
   </p>
   <p>
    Engineering Kiosk Podcast: Anfragen an
-   <a href="http://stehtisch@engineeringkiosk.dev" rel="nofollow">
+   <a href="mailto:stehtisch@engineeringkiosk.dev" rel="nofollow">
     stehtisch@engineeringkiosk.dev
    </a>
    oder via Twitter an
