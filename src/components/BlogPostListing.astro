@@ -5,7 +5,6 @@ export interface Props {
 }
 
 import BlogPostPreview from '../components/BlogPostPreview.astro';
-import authorData from '../data/authors.json';
 
 const { numberOfItems } = Astro.props;
 
@@ -48,7 +47,7 @@ if (numberOfItems > 0) {
 			}
 		</div>
 		<div class="flex flex-wrap -mx-4">
-			{postsToShow.map((post, i) => <BlogPostPreview post={post} author={authorData[post.frontmatter.author]} n={i} />)}
+			{postsToShow.map((post, i) => <BlogPostPreview post={post} n={i} />)}
 		</div>
 	</div>
 </section>

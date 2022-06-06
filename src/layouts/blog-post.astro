@@ -37,21 +37,6 @@ function formatDate(date) {
 		<div>
 			<Nav />
 
-			<!-- TODO Add content variables like
-
-				{content.image}
-				Main content: <article><slot /></article>
-
-				Question:
-					How to modify the markdown parsing?
-			-->
-
-			<!-- TODO Build Podcast Episode component
-				Like "Look at Episode X"
-
-				See https://docs.astro.build/de/guides/markdown-content/#using-components-in-markdown
-			-->
-
 			<section class="py-16 md:py-24 bg-white" style="background-image: url('/images/elements/pattern-white.svg'); background-repeat: no-repeat; background-position: center top;">
 				<div class="container px-4 mx-auto">
 					<div class="md:max-w-2xl mx-auto mb-12 text-center">
@@ -81,10 +66,6 @@ function formatDate(date) {
 
 							<slot />
 						</article>
-
-						<div>
-						===================================================================
-						</div>
 
 						<h3 class="mb-4 text-2xl md:text-3xl font-semibold text-coolGray-800">
 							Header 1
@@ -136,10 +117,6 @@ function formatDate(date) {
 								. Nulla aliquet erat elit, a gravida dui efficitur vel. Sed pulvinar diam sed neque ullamcorper semper. Nulla elementum arcu lacus, quis porta nisl posuere varius. Quisque tempus libero sed urna posuere hendrerit.
 							</span>
 						</p>
-
-						<div>
-						===================================================================
-						</div>
 
 						<div class="flex items-center justify-center">
 							<a class="inline-flex mr-4 items-center justify-center py-2 px-4 text-coolGray-300 hover:text-coolGray-400 bg-white hover:bg-coolGray-100 border border-coolGray-200 hover:border-coolGray-300 rounded-md shadow-md transition duration-200" id="copy-url" data-href="${canonicalURL}" href="#">

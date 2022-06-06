@@ -1,11 +1,10 @@
 ---
 export interface Props {
 	post: any;
-	author: string;
 	n: number;
 }
 
-const { post, author, n} = Astro.props;
+const { post, n} = Astro.props;
 const { frontmatter } = post;
 
 function formatDate(date) {
