@@ -1,0 +1,34 @@
+name: Publish Podcast Episodes
+
+on:
+  schedule:
+    - cron: "15 6 * * 2" # At 06:15 on Tuesday.
+  workflow_dispatch:
+
+jobs:
+  publishing:
+    name: Sync and update podcast episodes
+    runs-on: ubuntu-20.04
+
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-python@v3
+        with:
+          python-version: '3.10'
+
+      - name: Run make update-content
+        run: make update-content
+
+      - name: Run make update-redirects
+        run: make update-redirects
+
+      # Commit results back to repository
+      - uses: stefanzweifel/git-auto-commit-action@v4
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          commit_message: Synchronisation of Podcast Episodes and redirects
+          branch: main
+          commit_user_name: Podcast synchronisation workflow bot
+          commit_user_email: stehtisch@engineeringkiosk.dev
+          commit_author: Podcast synchronisation workflow bot <stehtisch@engineeringkiosk.dev>

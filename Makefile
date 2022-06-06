@@ -17,8 +17,12 @@ clean: ## Deletes the generated content
 	rm -rf ./dist
 
 .PHONY: update-content
-update-content: ## Pulls the latest Podcas RSS feed and updates the content
-	python ./scripts/podcast-feed-to-content.py
+update-content: ## Pulls the latest Podcast RSS feed and updates the content
+	python ./scripts/podcast-feed-to-content.py sync
+
+.PHONY: update-redirects
+update-redirects: ## Writes all short url redirects for Podcast episodes to netlify.toml
+	python ./scripts/podcast-feed-to-content.py redirect
 
 .PHONY: init
 init: ## Installs dependencies
