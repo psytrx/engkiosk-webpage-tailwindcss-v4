@@ -1,6 +1,6 @@
 ---
 layout: ../../../layouts/blog-post.astro
-title: "Hello World: Website Edition"
+title: "Static Site Generators und die Engineering Kiosk Website"
 subtitle: Dies ist ein Untertitel, der auch noch ausgefüllt werden muss.
 description: "tl:dr: Der Enginering Kiosk hat nach 20 Podcast-Episoden eine eigene Website. Gebaut mit dem static site builder [Astro](https://astro.build/). Source code ist auf [EngineeringKiosk/webpage @ Github](https://github.com/EngineeringKiosk/webpage) verfügbar."
 tags: [
@@ -60,3 +60,95 @@ Sylvia wagt quick den Jux bei Pforzheim. `Polyfon` zwitschernd aßen Mäxchens V
 > Ist das ein quote?
 
 - Von Supermann, 23. Mai 2022
+
+
+
+
+## Content zu verwerten
+
+
+Alles 
+
+
+
+
+
+Boule, Hippe Bar in Amsterdam
+ordentliche Strukturierte Kommunikation
+
+Andy ist in einer Agentur aufgewachsen 
+
+JQuery, Prototype.js, mooTools, https://script.aculo.us/
+lowdash backbone
+
+Toten Hosen, Broilers, Rammstein Ticketverkauf mit Static Site Generators zu tun haben
+
+Duden und das Österreichische Wörterbuch in der Volksschule
+Warum Österreich sehr gut im Marketing
+
+Transcripten von Podcast mit Dialekt schwierig
+
+Warum braucht der Engineering Kiosk eine Website?
+- RedCircle bietet eine kleine Website an
+- Hosting und RSS Feed
+- Keine Analytics/Visibility: Wie viel haben die website verwendet? Oder play gedrückt haben
+- Neue Hörer aquirieren (durch SEO)
+- Seo Ranking
+- Blog posts, write ups von den Episoden
+- Zusätzlicher Channel für Leute die lieber lesen anstatt hören
+- Kontrolle / Visibility / Analytics
+
+Warum haben wir jetzt erst eine Website?
+- Lean starten
+- Kaum die Zeit sowas aufzubauen
+- RedCircle Seite war vorhanden, wir hatten ja eine Seite
+
+Die Technik hinter der Engineering Kiosk Website
+- Template von shuffle
+- Platform / Static Site Generator
+
+Static Site Generator
+- Hugo
+- Gatsby, Nuxt.js / Next.js
+
+Was ist ein Static Site Generator?
+Generator um Content in Layout/Design zu überführen
+Fertige HTML Seiten als resultat
+
+Vorteil:
+- Keine Datenbank
+- Kein komplexes Server-Setup
+- Kein dynamischen Code auf den Server
+- Hosting der Website ist relativ einfach (GitHub Pages)
+- Geschwindigkeit bei der Auslieferung
+- Security ist recht hoch
+
+Nachteil:
+- Keine dynamic / Alles statisch (Sachen wie Login werden schwieriger, Stichwort JAMStack)
+- Wenig bis keine Maintenance (für Security upgrades)
+
+
+Sculpin (PHP)
+Hugo (Go)
+Eleventy
+Jekyll
+
+Astro
+Boring Software
+On-Call
+
+Martin Min. 36 Boring Software
+
+
+Astro Term google, Nasa, Weltraum
+
+regex, string replace und html parsen
+Kein Code Review
+
+
+Konflikt zwischen Wolfgang
+
+Martin (t3n) bei Minute 11 erwähnt
+Matthias Endler wird bei Min. 34 erwähnt
+Mario und Rene werden bei Min. 34 erwähnt
+Ghadi wird bei Min. 35 erwahnt
