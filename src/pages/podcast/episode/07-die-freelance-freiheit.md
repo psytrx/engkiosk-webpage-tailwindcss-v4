@@ -49,6 +49,8 @@ chapter:
     \ ist"
 - start: 00:59:56
   title: Neben der Festanstellung starten
+- start: 01:02:12
+  title: Outro
 date: '2022-02-22'
 description: "Sein eigener Chef zu sein, sich die Projekte aussuchen k\xF6nnen und\
   \ sich die Zeit frei selbst einzuteilen. Obendrein noch einen ..."
@@ -62,33 +64,23 @@ title: '#07 Die Freelance Freiheit'
 ---
 
 <p>
-   <span>
-    Sein eigener Chef zu sein, sich die Projekte aussuchen können und sich die Zeit frei selbst einzuteilen. Obendrein noch einen Haufen Geld verdienen. Das ist die Vorstellung von vielen ITlern zur Selbstständigkeit. Doch wie sieht die Realität aus? Was sind die negativen Aspekte? Und wie viel Geld kommt wirklich unterm Strich bei rum?
-   </span>
+   Sein eigener Chef zu sein, sich die Projekte aussuchen können und sich die Zeit frei selbst einzuteilen. Obendrein noch einen Haufen Geld verdienen. Das ist die Vorstellung von vielen ITlern zur Selbstständigkeit. Doch wie sieht die Realität aus? Was sind die negativen Aspekte? Und wie viel Geld kommt wirklich unterm Strich bei rum?
   </p>
   <p>
-   <span>
-    In dieser Episode teilt Wolfgang seine langjährige Freelance-Erfahrung: Welche Arten von Freelancing gibt es, wie er die Probleme beim Schätzen des zeitlichen Aufwandes umgeht, warum rostende Software ein Problem ist und zu schlecht gelaunten Kunden führt, ob es sich lohnt seine Finger zu versicherung und was goldene Handschellen mit all dem zu tun haben.
-   </span>
+   In dieser Episode teilt Wolfgang seine langjährige Freelance-Erfahrung: Welche Arten von Freelancing gibt es, wie er die Probleme beim Schätzen des zeitlichen Aufwandes umgeht, warum rostende Software ein Problem ist und zu schlecht gelaunten Kunden führt, ob es sich lohnt seine Finger zu versicherung und was goldene Handschellen mit all dem zu tun haben.
   </p>
   <p>
-   <span>
-    Bonus: Wie Wolfgang einen Kunden beim Krafttraining im Fitnessstudio akquiriert hat, ohne selbst Gewichte zu stemmen.
-   </span>
+   Bonus: Wie Wolfgang einen Kunden beim Krafttraining im Fitnessstudio akquiriert hat, ohne selbst Gewichte zu stemmen.
   </p>
   <p>
    <br/>
   </p>
   <p>
-   <span>
-    Feedback an
-   </span>
+   Feedback an
    <a href="mailto:stehtisch@engineeringkiosk.dev" rel="nofollow">
     stehtisch@engineeringkiosk.dev
    </a>
-   <span>
-    oder via Twitter an
-   </span>
+   oder via Twitter an
    <a href="https://twitter.com/EngKiosk" rel="nofollow">
     https://twitter.com/EngKiosk
    </a>
@@ -98,38 +90,28 @@ title: '#07 Die Freelance Freiheit'
   </h3>
   <ul>
    <li>
-    <span>
-     Freelancer Stundensätze:
-    </span>
+    Freelancer Stundensätze:
     <a href="https://www.gulp.de/stundensatzkalkulator" rel="nofollow">
      GULP Stundensatz Kalkulator
     </a>
    </li>
    <li>
-    <span>
-     Freelancer Vermittlungsplattformen
-    </span>
+    Freelancer Vermittlungsplattformen
    </li>
    <li>
-    <span>
-     Freelancermap:
-    </span>
+    Freelancermap:
     <a href="https://www.freelancermap.de/" rel="nofollow">
      https://www.freelancermap.de/
     </a>
    </li>
    <li>
-    <span>
-     Gulp:
-    </span>
+    Gulp:
     <a href="https://www.gulp.de" rel="nofollow">
      https://www.gulp.de
     </a>
    </li>
    <li>
-    <span>
-     Hays:
-    </span>
+    Hays:
     <a href="https://www.hays.de" rel="nofollow">
      https://www.hays.de
     </a>
@@ -143,9 +125,7 @@ title: '#07 Die Freelance Freiheit'
   </h3>
   <ul>
    <li>
-    <span>
-     Als Kleinunternehmer im Sinne von § 19 Abs. 1 UStG wird Umsatzsteuer nicht berechnet. (in Deutschland)
-    </span>
+    Als Kleinunternehmer im Sinne von § 19 Abs. 1 UStG wird Umsatzsteuer nicht berechnet. (in Deutschland)
    </li>
   </ul>
   <p>
@@ -155,122 +135,73 @@ title: '#07 Die Freelance Freiheit'
    Sprungmarken
   </h3>
   <p>
-   <span>
-    (00:00:00) Intro
-   </span>
+   (00:00:00) Intro
   </p>
   <p>
-   <span>
-    (00:00:45) Bier holen
-   </span>
+   (00:00:45) Bier holen
   </p>
   <p>
-   <span>
-    (00:01:43) Wolfgangs erstes Freelancing-Projekt
-   </span>
+   (00:01:43) Wolfgangs erstes Freelancing-Projekt
   </p>
   <p>
-   <span>
-    (00:02:54) Weibliche Software-Engineering Freelancer
-   </span>
+   (00:02:54) Weibliche Software-Engineering Freelancer
   </p>
   <p>
-   <span>
-    (00:03:45) Wie Wolfgang zum Freelancing gekommen ist
-   </span>
+   (00:03:45) Wie Wolfgang zum Freelancing gekommen ist
   </p>
   <p>
-   <span>
-    (00:05:17) Verschiedene Arten vom Freelancing
-   </span>
+   (00:05:17) Verschiedene Arten vom Freelancing
   </p>
   <p>
-   <span>
-    (00:08:19) Freelancing als Lösung für Remote Work
-   </span>
+   (00:08:19) Freelancing als Lösung für Remote Work
   </p>
   <p>
-   <span>
-    (00:10:16) Scheinselbstständigkeit
-   </span>
+   (00:10:16) Scheinselbstständigkeit
   </p>
   <p>
-   <span>
-    (00:11:13) Entwicklung der Freelancing-Arbeit anhand deiner Erfahrung
-   </span>
+   (00:11:13) Entwicklung der Freelancing-Arbeit anhand deiner Erfahrung
   </p>
   <p>
-   <span>
-    (00:14:14) Software Maintenance bei Freelancing-Projekten
-   </span>
+   (00:14:14) Software Maintenance bei Freelancing-Projekten
   </p>
   <p>
-   <span>
-    (00:17:40) Was sind die positiven Aspekte des Freelancings?
-   </span>
+   (00:17:40) Was sind die positiven Aspekte des Freelancings?
   </p>
   <p>
-   <span>
-    (00:27:28) Was sind die negativen Seiten vom Freelancen?
-   </span>
+   (00:27:28) Was sind die negativen Seiten vom Freelancen?
   </p>
   <p>
-   <span>
-    (00:28:25) Kundenakquise
-   </span>
+   (00:28:25) Kundenakquise
   </p>
   <p>
-   <span>
-    (00:29:44) Preisfindung
-   </span>
+   (00:29:44) Preisfindung
   </p>
   <p>
-   <span>
-    (00:37:00) Wie geht man die Selbstständigkeit an? Wie setze ich es in der Praxis um?
-   </span>
+   (00:37:00) Wie geht man die Selbstständigkeit an? Wie setze ich es in der Praxis um?
   </p>
   <p>
-   <span>
-    (00:40:42) Steuerberater
-   </span>
+   (00:40:42) Steuerberater
   </p>
   <p>
-   <span>
-    (00:46:09) Welche Kosten kommen noch auf einen zu?
-   </span>
+   (00:46:09) Welche Kosten kommen noch auf einen zu?
   </p>
   <p>
-   <span>
-    (00:48:21) Haftung und was eine GmbH für dich tun kann
-   </span>
+   (00:48:21) Haftung und was eine GmbH für dich tun kann
   </p>
   <p>
-   <span>
-    (00:50:11) Geschäftskonten
-   </span>
+   (00:50:11) Geschäftskonten
   </p>
   <p>
-   <span>
-    (00:51:18) Der Start ist schwer und Weiterempfehlungen
-   </span>
+   (00:51:18) Der Start ist schwer und Weiterempfehlungen
   </p>
   <p>
-   <span>
-    (00:54:29) Fragen, um herauszufinden, ob die Selbstständigkeit etwas für mich ist
-   </span>
+   (00:54:29) Fragen, um herauszufinden, ob die Selbstständigkeit etwas für mich ist
   </p>
   <p>
-   <span>
-    (00:59:56) Neben der Festanstellung starten
-   </span>
+   (00:59:56) Neben der Festanstellung starten
   </p>
   <p>
-   <span>
-    (01:02:12) Outro
-    <span>
-     ﻿
-    </span>
-   </span>
+   (01:02:12) Outro
   </p>
   <p>
    <br/>
@@ -280,44 +211,30 @@ title: '#07 Die Freelance Freiheit'
   </h3>
   <ul>
    <li>
-    <span>
-     Wolfgang Gassler (
-    </span>
+    Wolfgang Gassler (
     <a href="https://twitter.com/schafele" rel="nofollow">
      https://twitter.com/schafele
     </a>
-    <span>
-     )
-    </span>
+    )
    </li>
    <li>
-    <span>
-     Andy Grunwald (
-    </span>
+    Andy Grunwald (
     <a href="https://twitter.com/andygrunwald" rel="nofollow">
      https://twitter.com/andygrunwald
     </a>
-    <span>
-     )
-    </span>
+    )
    </li>
   </ul>
   <p>
    <br/>
   </p>
   <p>
-   <span>
-    Engineering Kiosk Podcast: Anfragen an
-   </span>
-   <a href="http://stehtisch@engineeringkiosk.dev" rel="nofollow">
+   Engineering Kiosk Podcast: Anfragen an
+   <a href="mailto:stehtisch@engineeringkiosk.dev" rel="nofollow">
     stehtisch@engineeringkiosk.dev
    </a>
-   <span>
-    oder via Twitter an
-   </span>
+   oder via Twitter an
    <a href="https://twitter.com/EngKiosk" rel="nofollow">
     https://twitter.com/EngKiosk
    </a>
-   <span>
-   </span>
   </p>

@@ -62,33 +62,23 @@ title: "#18 Ziele und Performance-Metriken f\xFCr Teams und mich selbst"
 ---
 
 <p>
-   <span>
-    Ziel-Definitionen und Mitarbeiter-Metriken: Sinnvoll oder totaler Blödsinn?
-   </span>
+   Ziel-Definitionen und Mitarbeiter-Metriken: Sinnvoll oder totaler Blödsinn?
   </p>
   <p>
-   <span>
-    Das Thema ist heiß umstritten. Viele lieben Ziele im Job. Andere sind eher auf dem Trichter von “Wer misst, misst Mist.”. In dieser Episode sprechen Wolfgang und Andy über individuelle Ziele, Team-Ziele und über die Frage, ob sich das Team in die richtige Richtung bewegt. Unter anderem mit Fragen wie, ob es immer mathematisch messbare Ziele sein müssen, wie man mit subjektiven Zielen umgeht, ob man Lines of Code messen sollte, was die Velocity aus dem Scrum Framework mit OKRs zu tun haben und noch vieles mehr.
-   </span>
+   Das Thema ist heiß umstritten. Viele lieben Ziele im Job. Andere sind eher auf dem Trichter von “Wer misst, misst Mist.”. In dieser Episode sprechen Wolfgang und Andy über individuelle Ziele, Team-Ziele und über die Frage, ob sich das Team in die richtige Richtung bewegt. Unter anderem mit Fragen wie, ob es immer mathematisch messbare Ziele sein müssen, wie man mit subjektiven Zielen umgeht, ob man Lines of Code messen sollte, was die Velocity aus dem Scrum Framework mit OKRs zu tun haben und noch vieles mehr.
   </p>
   <p>
-   <span>
-    Bonus: Wieso Österreicher Podcasts anschauen können und was das Fortuna Düsseldorf und das Sams mit der ganzen Sache zu tun hat.
-   </span>
+   Bonus: Wieso Österreicher Podcasts anschauen können und was das Fortuna Düsseldorf und das Sams mit der ganzen Sache zu tun hat.
   </p>
   <p>
    <br/>
   </p>
   <p>
-   <span>
-    Feedback an
-   </span>
+   Feedback an
    <a href="mailto:stehtisch@engineeringkiosk.dev" rel="nofollow">
     stehtisch@engineeringkiosk.dev
    </a>
-   <span>
-    oder via Twitter an
-   </span>
+   oder via Twitter an
    <a href="https://twitter.com/EngKiosk" rel="nofollow">
     https://twitter.com/EngKiosk
    </a>
@@ -101,57 +91,43 @@ title: "#18 Ziele und Performance-Metriken f\xFCr Teams und mich selbst"
   </h3>
   <ul>
    <li>
-    <span>
-     Reddit-Disukssion:
-    </span>
+    Reddit-Disukssion:
     <a href="https://www.reddit.com/r/de_EDV/comments/uhnn4c/wie_werdet_ihr_als_mitarbeiter_und_euer_team/" rel="nofollow">
      https://www.reddit.com/r/de_EDV/comments/uhnn4c/wie_werdet_ihr_als_mitarbeiter_und_euer_team/
     </a>
    </li>
    <li>
-    <span>
-     Sentry:
-    </span>
+    Sentry:
     <a href="https://sentry.io/" rel="nofollow">
      https://sentry.io/
     </a>
    </li>
    <li>
-    <span>
-     OKR Beispiele für Software Teams:
-    </span>
+    OKR Beispiele für Software Teams:
     <a href="https://www.koan.co/okr-examples/engineering" rel="nofollow">
      https://www.koan.co/okr-examples/engineering
     </a>
    </li>
    <li>
-    <span>
-     OfficeVibe:
-    </span>
+    OfficeVibe:
     <a href="https://officevibe.com/" rel="nofollow">
      https://officevibe.com/
     </a>
    </li>
    <li>
-    <span>
-     DevOps-Kultur: Organisationskultur von Westrum:
-    </span>
+    DevOps-Kultur: Organisationskultur von Westrum:
     <a href="https://cloud.google.com/architecture/devops/devops-culture-westrum-organizational-culture" rel="nofollow">
      https://cloud.google.com/architecture/devops/devops-culture-westrum-organizational-culture
     </a>
    </li>
    <li>
-    <span>
-     CircleCi Engineering Kompetenz-Matrix:
-    </span>
+    CircleCi Engineering Kompetenz-Matrix:
     <a href="https://docs.google.com/spreadsheets/d/131XZCEb8LoXqy79WWrhCX4sBnGhCM1nAIz4feFZJsEo/edit#gid=0" rel="nofollow">
      https://docs.google.com/spreadsheets/d/131XZCEb8LoXqy79WWrhCX4sBnGhCM1nAIz4feFZJsEo/edit#gid=0
     </a>
    </li>
    <li>
-    <span>
-     DORA Metriken:
-    </span>
+    DORA Metriken:
     <a href="https://cloud.google.com/blog/products/devops-sre/using-the-four-keys-to-measure-your-devops-performance" rel="nofollow">
      https://cloud.google.com/blog/products/devops-sre/using-the-four-keys-to-measure-your-devops-performance
     </a>
@@ -164,104 +140,64 @@ title: "#18 Ziele und Performance-Metriken f\xFCr Teams und mich selbst"
    Sprungmarken
   </h3>
   <p>
-   <span>
-    (00:00:00) Intro
-   </span>
+   (00:00:00) Intro
   </p>
   <p>
-   <span>
-    (00:01:37) Helft uns mit eurem Netzwerk durch eine Podcast-Empfehlung
-   </span>
+   (00:01:37) Helft uns mit eurem Netzwerk durch eine Podcast-Empfehlung
   </p>
   <p>
-   <span>
-    (00:02:02) Wie kam das Thema dieser Podcast-Folge zustande? Team Metriken, Einzel-Metriken und Performance-Metriken von Mitarbeitern
-   </span>
+   (00:02:02) Wie kam das Thema dieser Podcast-Folge zustande? Team Metriken, Einzel-Metriken und Performance-Metriken von Mitarbeitern
   </p>
   <p>
-   <span>
-    (00:06:06) Drei Kategorien: Individuelle Ziele, Team-Ziele und "Bewegt sich das Team in die richtige Richtung?"
-   </span>
+   (00:06:06) Drei Kategorien: Individuelle Ziele, Team-Ziele und "Bewegt sich das Team in die richtige Richtung?"
   </p>
   <p>
-   <span>
-    (00:06:36) Individuelle Ziele: Warum ist das Thema relevant? Warum sollte man sich über Ziele unterhalten?
-   </span>
+   (00:06:36) Individuelle Ziele: Warum ist das Thema relevant? Warum sollte man sich über Ziele unterhalten?
   </p>
   <p>
-   <span>
-    (00:13:50) Objective Key Results (OKR) als mögliche Ziele
-   </span>
+   (00:13:50) Objective Key Results (OKR) als mögliche Ziele
   </p>
   <p>
-   <span>
-    (00:18:09) Die Kritik von Objective und Key Results als individuelle Ziele
-   </span>
+   (00:18:09) Die Kritik von Objective und Key Results als individuelle Ziele
   </p>
   <p>
-   <span>
-    (00:21:19) Transparenz von Zielen im Team und in der Firma
-   </span>
+   (00:21:19) Transparenz von Zielen im Team und in der Firma
   </p>
   <p>
-   <span>
-    (00:23:44) Planung und Ziele ist unnütz und Overhead
-   </span>
+   (00:23:44) Planung und Ziele ist unnütz und Overhead
   </p>
   <p>
-   <span>
-    (00:25:05) Antipatterns und Ziele die man vermeiden sollte
-   </span>
+   (00:25:05) Antipatterns und Ziele die man vermeiden sollte
   </p>
   <p>
-   <span>
-    (00:26:31) Was ist die Velocity innerhalb vom Kontext Scrum? Und wie sollte diese Metrik bewertet werden?
-   </span>
+   (00:26:31) Was ist die Velocity innerhalb vom Kontext Scrum? Und wie sollte diese Metrik bewertet werden?
   </p>
   <p>
-   <span>
-    (00:31:27) Die Nutzung von Code- und Software Repository Mining-Metriken als Basis zur Zielsetzung
-   </span>
+   (00:31:27) Die Nutzung von Code- und Software Repository Mining-Metriken als Basis zur Zielsetzung
   </p>
   <p>
-   <span>
-    (00:37:12) Team-Metrik "Happyness" und wie man es messen kann
-   </span>
+   (00:37:12) Team-Metrik "Happyness" und wie man es messen kann
   </p>
   <p>
-   <span>
-    (00:42:22) Das Westrum-Modell, OfficeVibe und Google Forms
-   </span>
+   (00:42:22) Das Westrum-Modell, OfficeVibe und Google Forms
   </p>
   <p>
-   <span>
-    (00:45:43) 360* Feedback: Was ist es und die Kritik am System
-   </span>
+   (00:45:43) 360* Feedback: Was ist es und die Kritik am System
   </p>
   <p>
-   <span>
-    (00:52:26) Vergleichbarkeit von Software Engineers und Levels
-   </span>
+   (00:52:26) Vergleichbarkeit von Software Engineers und Levels
   </p>
   <p>
-   <span>
-    (00:57:45) Jobtitel und individuelle Ziele und höhere Erwartungen
-   </span>
+   (00:57:45) Jobtitel und individuelle Ziele und höhere Erwartungen
   </p>
   <p>
-   <span>
-    (00:59:00) "Bewegt sich das Team in die richtige Richtung?", DORA-Metriken und Well-Rounded Software Engineer
-   </span>
+   (00:59:00) "Bewegt sich das Team in die richtige Richtung?", DORA-Metriken und Well-Rounded Software Engineer
   </p>
   <p>
-   <span>
-    (01:03:30) Zieldefinitionen sind nicht einfach und Kontext ist King
-   </span>
+   (01:03:30) Zieldefinitionen sind nicht einfach und Kontext ist King
   </p>
   <p>
-   <span>
-    (01:07:46) Outro
-   </span>
+   (01:07:46) Outro
   </p>
   <p>
    <br/>
@@ -271,41 +207,29 @@ title: "#18 Ziele und Performance-Metriken f\xFCr Teams und mich selbst"
   </h3>
   <ul>
    <li>
-    <span>
-     Wolfgang Gassler (
-    </span>
+    Wolfgang Gassler (
     <a href="https://twitter.com/schafele" rel="nofollow">
      https://twitter.com/schafele
     </a>
-    <span>
-     )
-    </span>
+    )
    </li>
    <li>
-    <span>
-     Andy Grunwald (
-    </span>
+    Andy Grunwald (
     <a href="https://twitter.com/andygrunwald" rel="nofollow">
      https://twitter.com/andygrunwald
     </a>
-    <span>
-     )
-    </span>
+    )
    </li>
   </ul>
   <p>
    <br/>
   </p>
   <p>
-   <span>
-    Engineering Kiosk Podcast: Anfragen an
-   </span>
-   <a href="http://stehtisch@engineeringkiosk.dev" rel="nofollow">
+   Engineering Kiosk Podcast: Anfragen an
+   <a href="mailto:stehtisch@engineeringkiosk.dev" rel="nofollow">
     stehtisch@engineeringkiosk.dev
    </a>
-   <span>
-    oder via Twitter an
-   </span>
+   oder via Twitter an
    <a href="https://twitter.com/EngKiosk" rel="nofollow">
     https://twitter.com/EngKiosk
    </a>

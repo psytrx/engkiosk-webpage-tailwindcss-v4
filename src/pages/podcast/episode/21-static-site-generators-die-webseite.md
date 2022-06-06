@@ -47,33 +47,23 @@ title: '#21 Static Site Generators & DIE Webseite'
 ---
 
 <p>
-   <span>
-    Statische Websites sind wieder cool und wir springen mit der eigenen Website direkt auf den Hype.
-   </span>
+   Statische Websites sind wieder cool und wir springen mit der eigenen Website direkt auf den Hype.
   </p>
   <p>
-   <span>
-    Eine Episode mal in (teilweise) eigener Sache: Nach 6 Monaten und 20 Episoden haben wir eine eigene Website gebaut. Mit einem Static Site Generator. Wieso wir eine eigene Website haben wollen, was wir uns davon erhoffen, wie der technische Unterbau aussieht, wo wir recht dreckige Hacks eingebaut haben, was Static Site Generatoren sind und wozu sie eigentlich gut sind, bei welchen Use-Cases diese nicht geeignet sind und warum ein Produkt-Name zu Weltraum-Ergebnissen bei Google führen kann, klären wir in dieser Episode.
-   </span>
+   Eine Episode mal in (teilweise) eigener Sache: Nach 6 Monaten und 20 Episoden haben wir eine eigene Website gebaut. Mit einem Static Site Generator. Wieso wir eine eigene Website haben wollen, was wir uns davon erhoffen, wie der technische Unterbau aussieht, wo wir recht dreckige Hacks eingebaut haben, was Static Site Generatoren sind und wozu sie eigentlich gut sind, bei welchen Use-Cases diese nicht geeignet sind und warum ein Produkt-Name zu Weltraum-Ergebnissen bei Google führen kann, klären wir in dieser Episode.
   </p>
   <p>
-   <span>
-    Bonus: Was die Toten Hosen, Broilers und Rammstein mit Static Site Generators zu tun haben und wieso Österreich so gut im Marketing ist.
-   </span>
+   Bonus: Was die Toten Hosen, Broilers und Rammstein mit Static Site Generators zu tun haben und wieso Österreich so gut im Marketing ist.
   </p>
   <p>
    <br/>
   </p>
   <p>
-   <span>
-    Feedback an
-   </span>
+   Feedback an
    <a href="mailto:stehtisch@engineeringkiosk.dev" rel="nofollow">
     stehtisch@engineeringkiosk.dev
    </a>
-   <span>
-    oder via Twitter an
-   </span>
+   oder via Twitter an
    <a href="https://twitter.com/EngKiosk" rel="nofollow">
     https://twitter.com/EngKiosk
    </a>
@@ -86,137 +76,103 @@ title: '#21 Static Site Generators & DIE Webseite'
   </h3>
   <ul>
    <li>
-    <span>
-     Prototype.js:
-    </span>
+    Prototype.js:
     <a href="http://prototypejs.org/" rel="nofollow">
      http://prototypejs.org/
     </a>
    </li>
    <li>
-    <span>
-     MooTools:
-    </span>
+    MooTools:
     <a href="https://mootools.net/" rel="nofollow">
      https://mootools.net/
     </a>
    </li>
    <li>
-    <span>
-     script.aculo.us:
-    </span>
+    script.aculo.us:
     <a href="https://script.aculo.us/" rel="nofollow">
      https://script.aculo.us/
     </a>
    </li>
    <li>
-    <span>
-     RedCircle:
-    </span>
+    RedCircle:
     <a href="https://redcircle.com/" rel="nofollow">
      https://redcircle.com/
     </a>
    </li>
    <li>
-    <span>
-     Template Podcast X:
-    </span>
+    Template Podcast X:
     <a href="https://webflow.com/templates/html/podcast-x-podcast-website-template" rel="nofollow">
      https://webflow.com/templates/html/podcast-x-podcast-website-template
     </a>
    </li>
    <li>
-    <span>
-     shuffle:
-    </span>
+    shuffle:
     <a href="https://shuffle.dev/" rel="nofollow">
      https://shuffle.dev/
     </a>
    </li>
    <li>
-    <span>
-     Hugo:
-    </span>
+    Hugo:
     <a href="https://gohugo.io/" rel="nofollow">
      https://gohugo.io/
     </a>
    </li>
    <li>
-    <span>
-     Gatsby:
-    </span>
+    Gatsby:
     <a href="https://www.gatsbyjs.com/" rel="nofollow">
      https://www.gatsbyjs.com/
     </a>
    </li>
    <li>
-    <span>
-     Nuxt.js:
-    </span>
+    Nuxt.js:
     <a href="https://nuxtjs.org/" rel="nofollow">
      https://nuxtjs.org/
     </a>
    </li>
    <li>
-    <span>
-     Next.js:
-    </span>
+    Next.js:
     <a href="https://nextjs.org/" rel="nofollow">
      https://nextjs.org/
     </a>
    </li>
    <li>
-    <span>
-     Netlify:
-    </span>
+    Netlify:
     <a href="https://www.netlify.com/" rel="nofollow">
      https://www.netlify.com/
     </a>
    </li>
    <li>
-    <span>
-     Cloudflare Edge Worker:
-    </span>
+    Cloudflare Edge Worker:
     <a href="https://workers.cloudflare.com/" rel="nofollow">
      https://workers.cloudflare.com/
     </a>
    </li>
    <li>
-    <span>
-     Jamstack:
-    </span>
+    Jamstack:
     <a href="https://jamstack.org/" rel="nofollow">
      https://jamstack.org/
     </a>
    </li>
    <li>
-    <span>
-     Astro:
-    </span>
+    Astro:
     <a href="https://astro.build/" rel="nofollow">
      https://astro.build/
     </a>
    </li>
    <li>
-    <span>
-     trivago Tech Blog:
-    </span>
+    trivago Tech Blog:
     <a href="https://tech.trivago.com/" rel="nofollow">
      https://tech.trivago.com/
     </a>
    </li>
    <li>
-    <span>
-     tailwind:
-    </span>
+    tailwind:
     <a href="https://tailwindcss.com/" rel="nofollow">
      https://tailwindcss.com/
     </a>
    </li>
    <li>
-    <span>
-     Carrd:
-    </span>
+    Carrd:
     <a href="https://carrd.co/" rel="nofollow">
      https://carrd.co/
     </a>
@@ -229,79 +185,49 @@ title: '#21 Static Site Generators & DIE Webseite'
    Sprungmarken
   </h3>
   <p>
-   <span>
-    (00:00:00) Intro
-   </span>
+   (00:00:00) Intro
   </p>
   <p>
-   <span>
-    (00:03:59) Die Engineering Kiosk Website: engineeringkiosk.dev
-   </span>
+   (00:03:59) Die Engineering Kiosk Website: engineeringkiosk.dev
   </p>
   <p>
-   <span>
-    (00:04:44) Historische JavaScript-Frameworks: MooTools, Prototype.js und script.aculo.us
-   </span>
+   (00:04:44) Historische JavaScript-Frameworks: MooTools, Prototype.js und script.aculo.us
   </p>
   <p>
-   <span>
-    (00:06:40) Andys Agentur-Background
-   </span>
+   (00:06:40) Andys Agentur-Background
   </p>
   <p>
-   <span>
-    (00:07:32) Warum braucht der Engineering Kiosk eine Website?
-   </span>
+   (00:07:32) Warum braucht der Engineering Kiosk eine Website?
   </p>
   <p>
-   <span>
-    (00:14:37) Warum haben wir jetzt erst eine Website?
-   </span>
+   (00:14:37) Warum haben wir jetzt erst eine Website?
   </p>
   <p>
-   <span>
-    (00:16:06) Die Technik hinter der Engineering Kiosk Website
-   </span>
+   (00:16:06) Die Technik hinter der Engineering Kiosk Website
   </p>
   <p>
-   <span>
-    (00:21:00) Was ist ein Static Site Generator?
-   </span>
+   (00:21:00) Was ist ein Static Site Generator?
   </p>
   <p>
-   <span>
-    (00:31:29) Kritik am Static Site Generator Hugo
-   </span>
+   (00:31:29) Kritik am Static Site Generator Hugo
   </p>
   <p>
-   <span>
-    (00:34:56) Welcher Static Site Generator wurde für die Engineering Kiosk Website verwendet?
-   </span>
+   (00:34:56) Welcher Static Site Generator wurde für die Engineering Kiosk Website verwendet?
   </p>
   <p>
-   <span>
-    (00:39:09) Was ist das coole an Astro und wie wurde Website umgesetzt?
-   </span>
+   (00:39:09) Was ist das coole an Astro und wie wurde Website umgesetzt?
   </p>
   <p>
-   <span>
-    (00:41:30) Wie bekommen wir die Podcast Episoden in die Website rein?
-   </span>
+   (00:41:30) Wie bekommen wir die Podcast Episoden in die Website rein?
   </p>
   <p>
-   <span>
-    (00:46:06) Technischer Unterbau mit Astro, tailwind, Python, Netlify
-   </span>
+   (00:46:06) Technischer Unterbau mit Astro, tailwind, Python, Netlify
   </p>
   <p>
-   <span>
-    (00:50:05) Feedback und Contribution zum Engineering Kiosk Website Setup
-   </span>
+   (00:50:05) Feedback und Contribution zum Engineering Kiosk Website Setup
   </p>
   <p>
-   <span>
-    (00:52:29) Outro
-   </span>
+   (00:52:29) Outro
   </p>
   <p>
    <br/>
@@ -311,41 +237,29 @@ title: '#21 Static Site Generators & DIE Webseite'
   </h3>
   <ul>
    <li>
-    <span>
-     Wolfgang Gassler (
-    </span>
+    Wolfgang Gassler (
     <a href="https://twitter.com/schafele" rel="nofollow">
      https://twitter.com/schafele
     </a>
-    <span>
-     )
-    </span>
+    )
    </li>
    <li>
-    <span>
-     Andy Grunwald (
-    </span>
+    Andy Grunwald (
     <a href="https://twitter.com/andygrunwald" rel="nofollow">
      https://twitter.com/andygrunwald
     </a>
-    <span>
-     )
-    </span>
+    )
    </li>
   </ul>
   <p>
    <br/>
   </p>
   <p>
-   <span>
-    Engineering Kiosk Podcast: Anfragen an
-   </span>
-   <a href="http://stehtisch@engineeringkiosk.dev" rel="nofollow">
+   Engineering Kiosk Podcast: Anfragen an
+   <a href="mailto:stehtisch@engineeringkiosk.dev" rel="nofollow">
     stehtisch@engineeringkiosk.dev
    </a>
-   <span>
-    oder via Twitter an
-   </span>
+   oder via Twitter an
    <a href="https://twitter.com/EngKiosk" rel="nofollow">
     https://twitter.com/EngKiosk
    </a>

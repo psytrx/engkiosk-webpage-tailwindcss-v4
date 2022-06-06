@@ -217,7 +217,7 @@ title: "#00 Developer fangen bei 0 an zu z\xE4hlen"
   </p>
   <p>
    Engineering Kiosk Podcast: Anfragen an
-   <a href="http://stehtisch@engineeringkiosk.dev" rel="nofollow">
+   <a href="mailto:stehtisch@engineeringkiosk.dev" rel="nofollow">
     stehtisch@engineeringkiosk.dev
    </a>
    oder via Twitter an
