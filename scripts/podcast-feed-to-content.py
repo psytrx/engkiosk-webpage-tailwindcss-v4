@@ -11,6 +11,7 @@ import html
 import toml
 from os.path import exists, isfile, join
 from os import listdir
+import logging
 
 # External libraries
 from bs4 import BeautifulSoup as bs
@@ -384,10 +385,10 @@ def create_redirects(file_to_parse, path_md_files, redirect_prefix):
         # Check if we have a redirect for this episode already
         # If yes, skip ip
         if episode_number in redirect_map:
-            print(f"Skipping redirect processing for episode {episode_number}: Redirect exists already.")
+            logging.info(f"Skipping redirect processing for episode {episode_number}: Redirect exists already.")
             continue
 
-        print(f"Adding redirect for episode {episode_number}")
+        logging.info(f"Adding redirect for episode {episode_number}")
 
         episode_file = episode.removesuffix(".md")
         new_redirect = {
@@ -418,6 +419,15 @@ if __name__ == "__main__":
         help='Mode to execute. Supported: sync, redirect (default: %(default)s)')
 
     args = cli_parser.parse_args()
+
+    # Setup logger
+    logging.basicConfig(
+        level=logging.INFO,
+        format="%(asctime)s [%(levelname)s] %(message)s",
+        handlers=[
+            logging.StreamHandler()
+        ]
+    )
 
     match args.Mode:
         case "sync":
