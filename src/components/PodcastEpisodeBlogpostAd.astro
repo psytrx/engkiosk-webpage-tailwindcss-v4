@@ -1,0 +1,46 @@
+---
+export interface Props {
+	episode: number;
+}
+
+const { episode } = Astro.props;
+
+let episodeString = episode.toString();
+
+// For some reason, I am not able to add a glob string like
+// let globString = `../pages/podcast/episode/${episodeString}-*.md`;
+//
+// Having the Episode number already inside the glob statement,
+// would make the whole thing a bit more efficient.
+let episodeFiles = await Astro.glob("../pages/podcast/episode/*.md");
+let episodes = episodeFiles.filter(item => item.file.includes(`/${episodeString}-`));
+let content = episodes[0];
+let frontmatter = content.frontmatter;
+
+---
+
+<div class="container px-4 mx-auto my-10">
+	<div class="flex flex-wrap lg:items-center -mx-4 rounded-3xl">
+		<div class="w-full md:w-1/3">
+			<div class="relative mx-auto md:ml-0 max-w-max">
+				<a class="block mb-6 overflow-hidden" href="${content.url}">
+					<img class="rounded-3xl" src="${frontmatter.image}" title="Podcast episode ${frontmatter.title}" alt="Podcast episode ${frontmatter.title}">
+				</a>
+			</div>
+		</div>
+		<div class="w-full md:w-2/3 px-4">
+			<span class="inline-block py-px px-2 mb-4 text-xs leading-5 text-yellow-500 bg-yellow-100 font-medium uppercase rounded-full shadow-sm">
+				Mehr zu diesem Thema in unserer Podcast Episode
+			</span>
+			
+			<h4 class="">
+				<a class="inline-block mb-4 text-2xl leading-tight text-coolGray-800 hover:text-coolGray-900 hover:underline" href="${content.url}">
+					{frontmatter.title}
+				</a>
+			</h4>
+			<p class="">
+				{frontmatter.description}
+			</p>
+		</div>
+	</div>
+</div>

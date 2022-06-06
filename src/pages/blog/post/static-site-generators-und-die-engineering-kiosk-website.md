@@ -1,14 +1,16 @@
 ---
 layout: ../../../layouts/blog-post.astro
 title: "Static Site Generators und die Engineering Kiosk Website"
-subtitle: Dies ist ein Untertitel, der auch noch ausgefüllt werden muss.
+subtitle: TODO Dies ist ein Untertitel, der auch noch ausgefüllt werden muss.
 description: "tl:dr: Der Enginering Kiosk hat nach 20 Podcast-Episoden eine eigene Website. Gebaut mit dem static site builder [Astro](https://astro.build/). Source code ist auf [EngineeringKiosk/webpage @ Github](https://github.com/EngineeringKiosk/webpage) verfügbar."
 tags: [
     "Website",
-    "Static site"
+    "Static site Generator"
 ]
-date: 2022-05-29
+date: 2022-06-06
 image: /images/blog/macbook3.jpg
+setup: |
+  import PodcastEpisodeBlogpostAd from '../../../components/PodcastEpisodeBlogpostAd.astro'
 ---
 
 Falsches Üben von Xylophonmusik quält jeden größeren Zwerg. Heizölrückstoßabdämpfung. Zwei flinke Boxer jagen die quirlige Eva und ihren Mops durch Sylt. Franz jagt im komplett verwahrlosten Taxi quer durch Bayern. Zwölf Boxkämpfer jagen Viktor quer über den großen Sylter Deich. Vogel Quax zwickt Johnys Pferd Bim. Sylvia wagt quick den Jux bei Pforzheim. Polyfon zwitschernd aßen Mäxchens Vögel Rüben, Joghurt und Quark.
@@ -16,6 +18,8 @@ Falsches Üben von Xylophonmusik quält jeden größeren Zwerg. Heizölrücksto�
 ## Warum überhaupt eine eigene Website?
 
 Franz jagt im komplett verwahrlosten Taxi quer durch Bayern. Zwölf Boxkämpfer jagen Viktor quer über den großen Sylter Deich. Vogel Quax zwickt Johnys Pferd Bim. Sylvia wagt quick den Jux bei Pforzheim. Polyfon zwitschernd aßen Mäxchens Vögel Rüben, Joghurt und Quark. "Fix, Schwyz! " quäkt Jürgen blöd vom Paß. Victor jagt zwölf Boxkämpfer quer über den großen Sylter Deich.
+
+<PodcastEpisodeBlogpostAd episode=21 />
 
 ## Was steckt unter der Haube?
 
