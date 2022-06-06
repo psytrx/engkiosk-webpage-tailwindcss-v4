@@ -57,221 +57,233 @@ title: '#08 Vergiss doch Datenbanken!'
 
 ---
 
-<p class="mb-6 text-base md:text-lg text-coolGray-500">
+<p>
    Datenbanken, besonders relationale Datenbanken und im Web ganz besonders MySQL.
   </p>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
+  <p>
    Jeder kennt sie, jeder nutzt sie, aber keiner gibt zu diese zu nutzen da sie uncool und alt sind und sowieso nicht skalieren.
   </p>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
+  <p>
    Wolfgang und Andy sprechen ein wenig über dieses Thema: Wie man seine eigene SQL Datenbank schreibt, was der Unterschied von Row-Based und Statement-Based Replication ist, warum simple Dateien oft besser sind als eine Datenbank, ob sqlite helfen kann und MongoDB die Lösung ist, wie Facebook, Booking und GitHub MySQL betreiben, ob PostgreSQL wirklich was kann und welche Schritte ihr unternehmen könnt, um eure Datenbank zu tunen.
   </p>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
+  <p>
    Bonus: Ob Wolfgang Mickey Krause kennt und ob er ein erfolgreicher MySQL Buchautor war.
   </p>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
+  <p>
+   <br/>
+  </p>
+  <p>
    Feedback an
-   <a class="underline hover:no-underline" href="mailto:stehtisch@engineeringkiosk.dev" rel="nofollow">
+   <a href="mailto:stehtisch@engineeringkiosk.dev" rel="nofollow">
     stehtisch@engineeringkiosk.dev
    </a>
    oder via Twitter an
-   <a class="underline hover:no-underline" href="https://twitter.com/EngKiosk" rel="nofollow">
+   <a href="https://twitter.com/EngKiosk" rel="nofollow">
     https://twitter.com/EngKiosk
    </a>
   </p>
-  <h3 class="mb-4 text-2xl md:text-3xl font-semibold text-coolGray-800" id="links">
+  <h3 id="links">
    Links
   </h3>
-  <ul class="list-disc px-5 mb-6 md:px-5 text-base md:text-lg text-coolGray-500">
-   <li class="mb-3">
+  <ul>
+   <li>
     SQLProxy:
-    <a class="underline hover:no-underline" href="https://github.com/sysown/proxysql" rel="nofollow">
+    <a href="https://github.com/sysown/proxysql" rel="nofollow">
      https://github.com/sysown/proxysql
     </a>
    </li>
-   <li class="mb-3">
+   <li>
     Vitess:
-    <a class="underline hover:no-underline" href="https://vitess.io/" rel="nofollow">
+    <a href="https://vitess.io/" rel="nofollow">
      https://vitess.io/
     </a>
    </li>
-   <li class="mb-3">
+   <li>
     Building for the 99% Developers:
-    <a class="underline hover:no-underline" href="https://future.a16z.com/software-development-building-for-99-developers/" rel="nofollow">
+    <a href="https://future.a16z.com/software-development-building-for-99-developers/" rel="nofollow">
      https://future.a16z.com/software-development-building-for-99-developers/
     </a>
    </li>
-   <li class="mb-3">
+   <li>
     Litestream:
-    <a class="underline hover:no-underline" href="https://litestream.io/" rel="nofollow">
+    <a href="https://litestream.io/" rel="nofollow">
      https://litestream.io/
     </a>
    </li>
-   <li class="mb-3">
+   <li>
     Designing Data-intensive Applications:
-    <a class="underline hover:no-underline" href="https://dataintensive.net/" rel="nofollow">
+    <a href="https://dataintensive.net/" rel="nofollow">
      https://dataintensive.net/
     </a>
    </li>
-   <li class="mb-3">
+   <li>
     MyRocks Storage Engine:
-    <a class="underline hover:no-underline" href="http://myrocks.io/" rel="nofollow">
+    <a href="http://myrocks.io/" rel="nofollow">
      http://myrocks.io/
     </a>
    </li>
-   <li class="mb-3">
+   <li>
     MySQL 8.0: The end of MyISAM:
-    <a class="underline hover:no-underline" href="https://www.percona.com/blog/2016/10/11/mysql-8-0-end-myisam/" rel="nofollow">
+    <a href="https://www.percona.com/blog/2016/10/11/mysql-8-0-end-myisam/" rel="nofollow">
      https://www.percona.com/blog/2016/10/11/mysql-8-0-end-myisam/
     </a>
    </li>
-   <li class="mb-3">
-    <a class="underline hover:no-underline" href="https://twitter.com/schafele/status/1200180440184827904" rel="nofollow">
+   <li>
+    <a href="https://twitter.com/schafele/status/1200180440184827904" rel="nofollow">
      Wolfgang’s Talk: Forget Databases, use files!
     </a>
    </li>
-   <li class="mb-3">
-    <a class="underline hover:no-underline" href="https://fosdem.org/2022/schedule/event/efficient_mysql/" rel="nofollow">
+   <li>
+    <a href="https://fosdem.org/2022/schedule/event/efficient_mysql/" rel="nofollow">
      Efficient MySQL Performance Talk mit Video
     </a>
    </li>
-   <li class="mb-3">
-    <a class="underline hover:no-underline" href="https://web.archive.org/web/20120303090458/http://dbis-informatik.uibk.ac.at/188-0-VO-Arch---Impl--von-DBS.html" rel="nofollow">
+   <li>
+    <a href="https://web.archive.org/web/20120303090458/http://dbis-informatik.uibk.ac.at/188-0-VO-Arch---Impl--von-DBS.html" rel="nofollow">
      Gruß aus der Vergangenheit, Wolfi’s Lehrveranstaltung Datenbankimplementierung (2011)
     </a>
    </li>
-   <li class="mb-3">
-    <a class="underline hover:no-underline" href="https://dev.mysql.com/doc/refman/5.7/en/replication-features-functions.html" rel="nofollow">
+   <li>
+    <a href="https://dev.mysql.com/doc/refman/5.7/en/replication-features-functions.html" rel="nofollow">
      NOW() und Time Funktionen bei Statement Based Replication in MySQL
     </a>
    </li>
-   <li class="mb-3">
+   <li>
     Percona Config Wizard
-    <a class="underline hover:no-underline" href="https://www.percona.com/blog/2019/04/22/end-of-life-query-analyzer-and-mysql-configuration-generator/" rel="nofollow">
+    <a href="https://www.percona.com/blog/2019/04/22/end-of-life-query-analyzer-and-mysql-configuration-generator/" rel="nofollow">
      wurde leider eingestellt
     </a>
     aber alternativ kann MySQL Tuner
-    <a class="underline hover:no-underline" href="https://www.linode.com/docs/guides/how-to-optimize-mysql-performance-using-mysqltuner/" rel="nofollow">
+    <a href="https://www.linode.com/docs/guides/how-to-optimize-mysql-performance-using-mysqltuner/" rel="nofollow">
      https://www.linode.com/docs/guides/how-to-optimize-mysql-performance-using-mysqltuner/
     </a>
     verwendet werden
    </li>
   </ul>
-  <h3 class="mb-4 text-2xl md:text-3xl font-semibold text-coolGray-800" id="erwahnte-personen">
+  <p>
+   <br/>
+  </p>
+  <h3 id="erwahnte-personen">
    Erwähnte Personen
   </h3>
-  <ul class="list-disc px-5 mb-6 md:px-5 text-base md:text-lg text-coolGray-500">
-   <li class="mb-3">
+  <ul>
+   <li>
     Martin Kleppmann
-    <a class="underline hover:no-underline" href="https://martin.kleppmann.com/" rel="nofollow">
+    <a href="https://martin.kleppmann.com/" rel="nofollow">
      https://martin.kleppmann.com/
     </a>
    </li>
-   <li class="mb-3">
+   <li>
     Michael Stonebraker:
-    <a class="underline hover:no-underline" href="https://de.wikipedia.org/wiki/Michael_Stonebraker" rel="nofollow">
+    <a href="https://de.wikipedia.org/wiki/Michael_Stonebraker" rel="nofollow">
      https://de.wikipedia.org/wiki/Michael_Stonebraker
     </a>
    </li>
-   <li class="mb-3">
+   <li>
     Michael “Monty” Widenius:
-    <a class="underline hover:no-underline" href="https://de.wikipedia.org/wiki/Michael_Widenius" rel="nofollow">
+    <a href="https://de.wikipedia.org/wiki/Michael_Widenius" rel="nofollow">
      https://de.wikipedia.org/wiki/Michael_Widenius
     </a>
    </li>
   </ul>
-  <h3 class="mb-4 text-2xl md:text-3xl font-semibold text-coolGray-800" id="sprungmarken">
+  <p>
+   <br/>
+  </p>
+  <h3 id="sprungmarken">
    Sprungmarken
   </h3>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
+  <p>
    (00:00) Intro
   </p>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
+  <p>
    (00:15) Wolfgang und Apres-Ski
   </p>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
+  <p>
    (02:52) Wie programmiert man seine eigene Datenbank?
   </p>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
+  <p>
    (07:24) Was passiert, wenn eine SQL-Query die Datenbank erreicht?
   </p>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
+  <p>
    (10:02) Die Schwierigkeiten, wenn man seine eigene Datenbank programmiert
   </p>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
+  <p>
    (12:35) Sind Dateien besser als Datenbanken?
   </p>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
+  <p>
    (18:00) Keine Netzwerk-Verbindungen dank sqlite?
   </p>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
+  <p>
    (20:40) Was ist sqlite?
   </p>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
+  <p>
    (22:20) Aussprache von sqlite und SQL und woher es kommt
   </p>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
+  <p>
    (23:33) Wie kam MySQL und MariaDB zu ihrem Namen?
   </p>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
+  <p>
    (24:17) Was empfiehlst du für kleine Apps? MySQL oder sqlite?
   </p>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
+  <p>
    (25:06) Replikation von sqlite Daten
   </p>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
+  <p>
    (26:02) Unterschied zwischen Row- und Statement-Based Replication
   </p>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
+  <p>
    (27:56) Wie viel Requests kann man mit einer MySQL-Node bedienen?
   </p>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
+  <p>
    (29:35) Buchempfehlung: Designing Data-Intensive Application
   </p>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
+  <p>
    (31:42) Was tun, wenn ich Probleme mit MySQL-Performance hab?
   </p>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
+  <p>
    (33:16) MySQL bei Facebook
   </p>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
+  <p>
    (36:35) PostgreSQL, der andere Kandidat auf dem Spielfeld
   </p>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
+  <p>
    (38:33) Tooling um MySQL: ProxySQL und Vitess
   </p>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
+  <p>
    (43:38) MySQL Performance-Tipps vom Buch-Autor Wolfgang
   </p>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
+  <p>
    (50:33) Outro
   </p>
-  <h3 class="mb-4 text-2xl md:text-3xl font-semibold text-coolGray-800" id="hosts">
+  <h3 id="hosts">
    Hosts
   </h3>
-  <ul class="list-disc px-5 mb-6 md:px-5 text-base md:text-lg text-coolGray-500">
-   <li class="mb-3">
+  <ul>
+   <li>
     Wolfgang Gassler (
-    <a class="underline hover:no-underline" href="https://twitter.com/schafele" rel="nofollow">
+    <a href="https://twitter.com/schafele" rel="nofollow">
      https://twitter.com/schafele
     </a>
     )
    </li>
-   <li class="mb-3">
+   <li>
     Andy Grunwald (
-    <a class="underline hover:no-underline" href="https://twitter.com/andygrunwald" rel="nofollow">
+    <a href="https://twitter.com/andygrunwald" rel="nofollow">
      https://twitter.com/andygrunwald
     </a>
     )
    </li>
   </ul>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
+  <p>
+   <br/>
+  </p>
+  <p>
    Engineering Kiosk Podcast: Anfragen an
-   <a class="underline hover:no-underline" href="http://stehtisch@engineeringkiosk.dev" rel="nofollow">
+   <a href="http://stehtisch@engineeringkiosk.dev" rel="nofollow">
     stehtisch@engineeringkiosk.dev
    </a>
    oder via Twitter an
-   <a class="underline hover:no-underline" href="https://twitter.com/EngKiosk" rel="nofollow">
+   <a href="https://twitter.com/EngKiosk" rel="nofollow">
     https://twitter.com/EngKiosk
    </a>
   </p>

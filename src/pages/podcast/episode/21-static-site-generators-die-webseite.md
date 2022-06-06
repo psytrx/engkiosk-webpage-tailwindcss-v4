@@ -46,206 +46,307 @@ title: '#21 Static Site Generators & DIE Webseite'
 
 ---
 
-<p class="mb-6 text-base md:text-lg text-coolGray-500">
-   Statische Websites sind wieder cool und wir springen mit der eigenen Website direkt auf den Hype.
+<p>
+   <span>
+    Statische Websites sind wieder cool und wir springen mit der eigenen Website direkt auf den Hype.
+   </span>
   </p>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
-   Eine Episode mal in (teilweise) eigener Sache: Nach 6 Monaten und 20 Episoden haben wir eine eigene Website gebaut. Mit einem Static Site Generator. Wieso wir eine eigene Website haben wollen, was wir uns davon erhoffen, wie der technische Unterbau aussieht, wo wir recht dreckige Hacks eingebaut haben, was Static Site Generatoren sind und wozu sie eigentlich gut sind, bei welchen Use-Cases diese nicht geeignet sind und warum ein Produkt-Name zu Weltraum-Ergebnissen bei Google führen kann, klären wir in dieser Episode.
+  <p>
+   <span>
+    Eine Episode mal in (teilweise) eigener Sache: Nach 6 Monaten und 20 Episoden haben wir eine eigene Website gebaut. Mit einem Static Site Generator. Wieso wir eine eigene Website haben wollen, was wir uns davon erhoffen, wie der technische Unterbau aussieht, wo wir recht dreckige Hacks eingebaut haben, was Static Site Generatoren sind und wozu sie eigentlich gut sind, bei welchen Use-Cases diese nicht geeignet sind und warum ein Produkt-Name zu Weltraum-Ergebnissen bei Google führen kann, klären wir in dieser Episode.
+   </span>
   </p>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
-   Bonus: Was die Toten Hosen, Broilers und Rammstein mit Static Site Generators zu tun haben und wieso Österreich so gut im Marketing ist.
+  <p>
+   <span>
+    Bonus: Was die Toten Hosen, Broilers und Rammstein mit Static Site Generators zu tun haben und wieso Österreich so gut im Marketing ist.
+   </span>
   </p>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
-   Feedback an
-   <a class="underline hover:no-underline" href="mailto:stehtisch@engineeringkiosk.dev" rel="nofollow">
+  <p>
+   <br/>
+  </p>
+  <p>
+   <span>
+    Feedback an
+   </span>
+   <a href="mailto:stehtisch@engineeringkiosk.dev" rel="nofollow">
     stehtisch@engineeringkiosk.dev
    </a>
-   oder via Twitter an
-   <a class="underline hover:no-underline" href="https://twitter.com/EngKiosk" rel="nofollow">
+   <span>
+    oder via Twitter an
+   </span>
+   <a href="https://twitter.com/EngKiosk" rel="nofollow">
     https://twitter.com/EngKiosk
    </a>
   </p>
-  <h3 class="mb-4 text-2xl md:text-3xl font-semibold text-coolGray-800" id="links">
+  <p>
+   <br/>
+  </p>
+  <h3 id="links">
    Links
   </h3>
-  <ul class="list-disc px-5 mb-6 md:px-5 text-base md:text-lg text-coolGray-500">
-   <li class="mb-3">
-    Prototype.js:
-    <a class="underline hover:no-underline" href="http://prototypejs.org/" rel="nofollow">
+  <ul>
+   <li>
+    <span>
+     Prototype.js:
+    </span>
+    <a href="http://prototypejs.org/" rel="nofollow">
      http://prototypejs.org/
     </a>
    </li>
-   <li class="mb-3">
-    MooTools:
-    <a class="underline hover:no-underline" href="https://mootools.net/" rel="nofollow">
+   <li>
+    <span>
+     MooTools:
+    </span>
+    <a href="https://mootools.net/" rel="nofollow">
      https://mootools.net/
     </a>
    </li>
-   <li class="mb-3">
-    script.aculo.us:
-    <a class="underline hover:no-underline" href="https://script.aculo.us/" rel="nofollow">
+   <li>
+    <span>
+     script.aculo.us:
+    </span>
+    <a href="https://script.aculo.us/" rel="nofollow">
      https://script.aculo.us/
     </a>
    </li>
-   <li class="mb-3">
-    RedCircle:
-    <a class="underline hover:no-underline" href="https://redcircle.com/" rel="nofollow">
+   <li>
+    <span>
+     RedCircle:
+    </span>
+    <a href="https://redcircle.com/" rel="nofollow">
      https://redcircle.com/
     </a>
    </li>
-   <li class="mb-3">
-    Template Podcast X:
-    <a class="underline hover:no-underline" href="https://webflow.com/templates/html/podcast-x-podcast-website-template" rel="nofollow">
+   <li>
+    <span>
+     Template Podcast X:
+    </span>
+    <a href="https://webflow.com/templates/html/podcast-x-podcast-website-template" rel="nofollow">
      https://webflow.com/templates/html/podcast-x-podcast-website-template
     </a>
    </li>
-   <li class="mb-3">
-    shuffle:
-    <a class="underline hover:no-underline" href="https://shuffle.dev/" rel="nofollow">
+   <li>
+    <span>
+     shuffle:
+    </span>
+    <a href="https://shuffle.dev/" rel="nofollow">
      https://shuffle.dev/
     </a>
    </li>
-   <li class="mb-3">
-    Hugo:
-    <a class="underline hover:no-underline" href="https://gohugo.io/" rel="nofollow">
+   <li>
+    <span>
+     Hugo:
+    </span>
+    <a href="https://gohugo.io/" rel="nofollow">
      https://gohugo.io/
     </a>
    </li>
-   <li class="mb-3">
-    Gatsby:
-    <a class="underline hover:no-underline" href="https://www.gatsbyjs.com/" rel="nofollow">
+   <li>
+    <span>
+     Gatsby:
+    </span>
+    <a href="https://www.gatsbyjs.com/" rel="nofollow">
      https://www.gatsbyjs.com/
     </a>
    </li>
-   <li class="mb-3">
-    Nuxt.js:
-    <a class="underline hover:no-underline" href="https://nuxtjs.org/" rel="nofollow">
+   <li>
+    <span>
+     Nuxt.js:
+    </span>
+    <a href="https://nuxtjs.org/" rel="nofollow">
      https://nuxtjs.org/
     </a>
    </li>
-   <li class="mb-3">
-    Next.js:
-    <a class="underline hover:no-underline" href="https://nextjs.org/" rel="nofollow">
+   <li>
+    <span>
+     Next.js:
+    </span>
+    <a href="https://nextjs.org/" rel="nofollow">
      https://nextjs.org/
     </a>
    </li>
-   <li class="mb-3">
-    Netlify:
-    <a class="underline hover:no-underline" href="https://www.netlify.com/" rel="nofollow">
+   <li>
+    <span>
+     Netlify:
+    </span>
+    <a href="https://www.netlify.com/" rel="nofollow">
      https://www.netlify.com/
     </a>
    </li>
-   <li class="mb-3">
-    Cloudflare Edge Worker:
-    <a class="underline hover:no-underline" href="https://workers.cloudflare.com/" rel="nofollow">
+   <li>
+    <span>
+     Cloudflare Edge Worker:
+    </span>
+    <a href="https://workers.cloudflare.com/" rel="nofollow">
      https://workers.cloudflare.com/
     </a>
    </li>
-   <li class="mb-3">
-    Jamstack:
-    <a class="underline hover:no-underline" href="https://jamstack.org/" rel="nofollow">
+   <li>
+    <span>
+     Jamstack:
+    </span>
+    <a href="https://jamstack.org/" rel="nofollow">
      https://jamstack.org/
     </a>
    </li>
-   <li class="mb-3">
-    Astro:
-    <a class="underline hover:no-underline" href="https://astro.build/" rel="nofollow">
+   <li>
+    <span>
+     Astro:
+    </span>
+    <a href="https://astro.build/" rel="nofollow">
      https://astro.build/
     </a>
    </li>
-   <li class="mb-3">
-    trivago Tech Blog:
-    <a class="underline hover:no-underline" href="https://tech.trivago.com/" rel="nofollow">
+   <li>
+    <span>
+     trivago Tech Blog:
+    </span>
+    <a href="https://tech.trivago.com/" rel="nofollow">
      https://tech.trivago.com/
     </a>
    </li>
-   <li class="mb-3">
-    tailwind:
-    <a class="underline hover:no-underline" href="https://tailwindcss.com/" rel="nofollow">
+   <li>
+    <span>
+     tailwind:
+    </span>
+    <a href="https://tailwindcss.com/" rel="nofollow">
      https://tailwindcss.com/
     </a>
    </li>
-   <li class="mb-3">
-    Carrd:
-    <a class="underline hover:no-underline" href="https://carrd.co/" rel="nofollow">
+   <li>
+    <span>
+     Carrd:
+    </span>
+    <a href="https://carrd.co/" rel="nofollow">
      https://carrd.co/
     </a>
    </li>
   </ul>
-  <h3 class="mb-4 text-2xl md:text-3xl font-semibold text-coolGray-800" id="sprungmarken">
+  <p>
+   <br/>
+  </p>
+  <h3 id="sprungmarken">
    Sprungmarken
   </h3>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
-   (00:00:00) Intro
+  <p>
+   <span>
+    (00:00:00) Intro
+   </span>
   </p>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
-   (00:03:59) Die Engineering Kiosk Website: engineeringkiosk.dev
+  <p>
+   <span>
+    (00:03:59) Die Engineering Kiosk Website: engineeringkiosk.dev
+   </span>
   </p>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
-   (00:04:44) Historische JavaScript-Frameworks: MooTools, Prototype.js und script.aculo.us
+  <p>
+   <span>
+    (00:04:44) Historische JavaScript-Frameworks: MooTools, Prototype.js und script.aculo.us
+   </span>
   </p>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
-   (00:06:40) Andys Agentur-Background
+  <p>
+   <span>
+    (00:06:40) Andys Agentur-Background
+   </span>
   </p>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
-   (00:07:32) Warum braucht der Engineering Kiosk eine Website?
+  <p>
+   <span>
+    (00:07:32) Warum braucht der Engineering Kiosk eine Website?
+   </span>
   </p>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
-   (00:14:37) Warum haben wir jetzt erst eine Website?
+  <p>
+   <span>
+    (00:14:37) Warum haben wir jetzt erst eine Website?
+   </span>
   </p>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
-   (00:16:06) Die Technik hinter der Engineering Kiosk Website
+  <p>
+   <span>
+    (00:16:06) Die Technik hinter der Engineering Kiosk Website
+   </span>
   </p>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
-   (00:21:00) Was ist ein Static Site Generator?
+  <p>
+   <span>
+    (00:21:00) Was ist ein Static Site Generator?
+   </span>
   </p>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
-   (00:31:29) Kritik am Static Site Generator Hugo
+  <p>
+   <span>
+    (00:31:29) Kritik am Static Site Generator Hugo
+   </span>
   </p>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
-   (00:34:56) Welcher Static Site Generator wurde für die Engineering Kiosk Website verwendet?
+  <p>
+   <span>
+    (00:34:56) Welcher Static Site Generator wurde für die Engineering Kiosk Website verwendet?
+   </span>
   </p>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
-   (00:39:09) Was ist das coole an Astro und wie wurde Website umgesetzt?
+  <p>
+   <span>
+    (00:39:09) Was ist das coole an Astro und wie wurde Website umgesetzt?
+   </span>
   </p>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
-   (00:41:30) Wie bekommen wir die Podcast Episoden in die Website rein?
+  <p>
+   <span>
+    (00:41:30) Wie bekommen wir die Podcast Episoden in die Website rein?
+   </span>
   </p>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
-   (00:46:06) Technischer Unterbau mit Astro, tailwind, Python, Netlify
+  <p>
+   <span>
+    (00:46:06) Technischer Unterbau mit Astro, tailwind, Python, Netlify
+   </span>
   </p>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
-   (00:50:05) Feedback und Contribution zum Engineering Kiosk Website Setup
+  <p>
+   <span>
+    (00:50:05) Feedback und Contribution zum Engineering Kiosk Website Setup
+   </span>
   </p>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
-   (00:52:29) Outro
+  <p>
+   <span>
+    (00:52:29) Outro
+   </span>
   </p>
-  <h3 class="mb-4 text-2xl md:text-3xl font-semibold text-coolGray-800" id="hosts">
+  <p>
+   <br/>
+  </p>
+  <h3 id="hosts">
    Hosts
   </h3>
-  <ul class="list-disc px-5 mb-6 md:px-5 text-base md:text-lg text-coolGray-500">
-   <li class="mb-3">
-    Wolfgang Gassler (
-    <a class="underline hover:no-underline" href="https://twitter.com/schafele" rel="nofollow">
+  <ul>
+   <li>
+    <span>
+     Wolfgang Gassler (
+    </span>
+    <a href="https://twitter.com/schafele" rel="nofollow">
      https://twitter.com/schafele
     </a>
-    )
+    <span>
+     )
+    </span>
    </li>
-   <li class="mb-3">
-    Andy Grunwald (
-    <a class="underline hover:no-underline" href="https://twitter.com/andygrunwald" rel="nofollow">
+   <li>
+    <span>
+     Andy Grunwald (
+    </span>
+    <a href="https://twitter.com/andygrunwald" rel="nofollow">
      https://twitter.com/andygrunwald
     </a>
-    )
+    <span>
+     )
+    </span>
    </li>
   </ul>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
-   Engineering Kiosk Podcast: Anfragen an
-   <a class="underline hover:no-underline" href="http://stehtisch@engineeringkiosk.dev" rel="nofollow">
+  <p>
+   <br/>
+  </p>
+  <p>
+   <span>
+    Engineering Kiosk Podcast: Anfragen an
+   </span>
+   <a href="http://stehtisch@engineeringkiosk.dev" rel="nofollow">
     stehtisch@engineeringkiosk.dev
    </a>
-   oder via Twitter an
-   <a class="underline hover:no-underline" href="https://twitter.com/EngKiosk" rel="nofollow">
+   <span>
+    oder via Twitter an
+   </span>
+   <a href="https://twitter.com/EngKiosk" rel="nofollow">
     https://twitter.com/EngKiosk
    </a>
   </p>

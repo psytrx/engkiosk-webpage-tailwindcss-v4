@@ -65,189 +65,204 @@ title: '#03 Over-Engineering, das Werkzeug des Teufels?'
 
 ---
 
-<p class="mb-6 text-base md:text-lg text-coolGray-500">
+<p>
    Was ist eigentlich Over-Engineering? Und wann ist es einfach nur gutes Engineering? Ist das eigentlich immer nur negativ? Oder auch mal positiv? Gibt es auch Under-Engineering? In dieser Episode philosophieren Andy und Wolfgang darüber, wann der Drang nach dem perfekten Source-Code Overenegineering ist und warum es in der akademischen Welt nur dreckig programmiert wird.
   </p>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
+  <p>
    Bonus: Warum Wolfgang seine Kletterschuhe nach Tschechien sendet
   </p>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
+  <p>
+   <br/>
+  </p>
+  <p>
    Feedback an
-   <a class="underline hover:no-underline" href="mailto:stehtisch@engineeringkiosk.dev" rel="nofollow">
+   <a href="mailto:stehtisch@engineeringkiosk.dev" rel="nofollow">
     stehtisch@engineeringkiosk.dev
    </a>
    oder via Twitter an
-   <a class="underline hover:no-underline" href="https://twitter.com/EngKiosk" rel="nofollow">
+   <a href="https://twitter.com/EngKiosk" rel="nofollow">
     https://twitter.com/EngKiosk
    </a>
   </p>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
+  <p>
+   <br/>
+  </p>
+  <p>
    Andy (
-   <a class="underline hover:no-underline" href="https://twitter.com/andygrunwald" rel="nofollow">
+   <a href="https://twitter.com/andygrunwald" rel="nofollow">
     https://twitter.com/andygrunwald
    </a>
    ) und Wolfgang (
-   <a class="underline hover:no-underline" href="https://twitter.com/schafele" rel="nofollow">
+   <a href="https://twitter.com/schafele" rel="nofollow">
     https://twitter.com/schafele
    </a>
    ) sprechen im Detail über
   </p>
-  <h3 class="mb-4 text-2xl md:text-3xl font-semibold text-coolGray-800" id="sprungmarken">
+  <h3 id="sprungmarken">
    Sprungmarken
   </h3>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
+  <p>
    (00:00) Intro
   </p>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
+  <p>
    (01:25) Was ist Over-Engineering?
   </p>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
+  <p>
    (03:20) Umfeld vom Over-Engineering und die Anforderungen vom Projekt
   </p>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
+  <p>
    (08:15) Ist alter Source-Code Over- oder Underengineered?
   </p>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
+  <p>
    (09:00) Leiden Akademiker mehr unter Over-Engineering?
   </p>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
+  <p>
    (10:10) Wann weiß ich, ob ich etwas mehr Arbeit in ein Projekt stecken soll?
   </p>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
+  <p>
    (11:50) Ist die meiste Java-Software Over-Engineered?
   </p>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
+  <p>
    (12:55) Kann man nicht mit alles einfach dreckig starten?
   </p>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
+  <p>
    (14:40) Neue Technologie vs. das was ich schon kenne
   </p>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
+  <p>
    (17:55) Twitter-Umfrage, was Leute unter Over-Engineering verstehen
   </p>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
+  <p>
    (21:50) Das DRY-Prinzip
   </p>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
+  <p>
    (25:15) Ein ORM / Object-Relational Mapping
   </p>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
+  <p>
    (28:12) Dependency Injection
   </p>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
+  <p>
    (30:04) Hackernews Driven Development
   </p>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
+  <p>
    (33:20) Positives Over-Engineering
   </p>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
+  <p>
    (35:15) Methoden um sich selbst vor dem Over-Engineering zu schützen
   </p>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
+  <p>
    (37:30) Wolfgang's Glaskugel
   </p>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
+  <p>
    (38:07) Overengineering findet viel zu selten statt
   </p>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
+  <p>
    (41:55) Bei Google steht ein staubiger Server im Datacenter, der die Suchmaschine betreibt
   </p>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
+  <p>
    (45:23) Underengineering bei der Reparatur von Kletterschuhen
   </p>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
+  <p>
    (46:40) Do things that don’t scale - Wie startet man ein Projekt möglichst einfach
   </p>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
+  <p>
    (47:55) Over-Engineering in der Automation
   </p>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
+  <p>
    (48:35) Fazit
   </p>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
+  <p>
    (50:20) Kontakt und Outro
   </p>
-  <h3 class="mb-4 text-2xl md:text-3xl font-semibold text-coolGray-800" id="artikel">
+  <h3 id="artikel">
    Artikel
   </h3>
-  <ul class="list-disc px-5 mb-6 md:px-5 text-base md:text-lg text-coolGray-500">
-   <li class="mb-3">
+  <ul>
+   <li>
     Do things that don't scale von Paul Graham:
-    <a class="underline hover:no-underline" href="http://paulgraham.com/ds.html" rel="nofollow">
+    <a href="http://paulgraham.com/ds.html" rel="nofollow">
      http://paulgraham.com/ds.html
     </a>
    </li>
-   <li class="mb-3">
+   <li>
     Hackernews Driven Development:
-    <a class="underline hover:no-underline" href="https://devdriven.by/hn/" rel="nofollow">
+    <a href="https://devdriven.by/hn/" rel="nofollow">
      https://devdriven.by/hn/
     </a>
    </li>
-   <li class="mb-3">
+   <li>
     Byte Shifting:
-    <a class="underline hover:no-underline" href="https://de.wikipedia.org/wiki/Bitweiser_Operator" rel="nofollow">
+    <a href="https://de.wikipedia.org/wiki/Bitweiser_Operator" rel="nofollow">
      https://de.wikipedia.org/wiki/Bitweiser_Operator
     </a>
    </li>
   </ul>
-  <h3 class="mb-4 text-2xl md:text-3xl font-semibold text-coolGray-800" id="konzepte">
+  <p>
+   <br/>
+  </p>
+  <h3 id="konzepte">
    Konzepte
   </h3>
-  <ul class="list-disc px-5 mb-6 md:px-5 text-base md:text-lg text-coolGray-500">
-   <li class="mb-3">
+  <ul>
+   <li>
     You Aren’t Gonna Need It (YAGNI):
-    <a class="underline hover:no-underline" href="https://de.wikipedia.org/wiki/YAGNI" rel="nofollow">
+    <a href="https://de.wikipedia.org/wiki/YAGNI" rel="nofollow">
      https://de.wikipedia.org/wiki/YAGNI
     </a>
    </li>
-   <li class="mb-3">
+   <li>
     Don’t repeat yourself (DRY):
-    <a class="underline hover:no-underline" href="https://de.wikipedia.org/wiki/Don%E2%80%99t_repeat_yourself" rel="nofollow">
+    <a href="https://de.wikipedia.org/wiki/Don%E2%80%99t_repeat_yourself" rel="nofollow">
      https://de.wikipedia.org/wiki/Don%E2%80%99t_repeat_yourself
     </a>
    </li>
   </ul>
-  <h3 class="mb-4 text-2xl md:text-3xl font-semibold text-coolGray-800" id="projekte">
+  <p>
+   <br/>
+  </p>
+  <h3 id="projekte">
    Projekte
   </h3>
-  <ul class="list-disc px-5 mb-6 md:px-5 text-base md:text-lg text-coolGray-500">
-   <li class="mb-3">
+  <ul>
+   <li>
     Hackernews:
-    <a class="underline hover:no-underline" href="https://news.ycombinator.com/" rel="nofollow">
+    <a href="https://news.ycombinator.com/" rel="nofollow">
      https://news.ycombinator.com/
     </a>
    </li>
-   <li class="mb-3">
+   <li>
     JavaScript library "left-pad":
-    <a class="underline hover:no-underline" href="https://www.npmjs.com/package/left-pad" rel="nofollow">
+    <a href="https://www.npmjs.com/package/left-pad" rel="nofollow">
      https://www.npmjs.com/package/left-pad
     </a>
    </li>
-   <li class="mb-3">
+   <li>
     Terraform:
-    <a class="underline hover:no-underline" href="https://www.terraform.io/" rel="nofollow">
+    <a href="https://www.terraform.io/" rel="nofollow">
      https://www.terraform.io/
     </a>
    </li>
-   <li class="mb-3">
+   <li>
     HashiCorp configuration language:
-    <a class="underline hover:no-underline" href="https://github.com/hashicorp/hcl" rel="nofollow">
+    <a href="https://github.com/hashicorp/hcl" rel="nofollow">
      https://github.com/hashicorp/hcl
     </a>
    </li>
-   <li class="mb-3">
+   <li>
     Go / Golang:
-    <a class="underline hover:no-underline" href="https://go.dev/" rel="nofollow">
+    <a href="https://go.dev/" rel="nofollow">
      https://go.dev/
     </a>
    </li>
   </ul>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
+  <p>
+   <br/>
+  </p>
+  <p>
    Engineering Kiosk Podcast
   </p>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
+  <p>
    Anfragen an
-   <a class="underline hover:no-underline" href="mailto:stehtisch@engineeringkiosk.dev" rel="nofollow">
+   <a href="mailto:stehtisch@engineeringkiosk.dev" rel="nofollow">
     stehtisch@engineeringkiosk.dev
    </a>
   </p>

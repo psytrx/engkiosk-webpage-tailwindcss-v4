@@ -73,188 +73,286 @@ title: "#16 Code Reviews: N\xFCtzlich oder bremsen nur ein gutes Team?"
 
 ---
 
-<p class="mb-6 text-base md:text-lg text-coolGray-500">
-   Code Reviews: Jeder will schnelles Feedback, doch niemand hat Zeit dafür - Eine Hassliebe.
+<p>
+   <span>
+    Code Reviews: Jeder will schnelles Feedback, doch niemand hat Zeit dafür - Eine Hassliebe.
+   </span>
   </p>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
-   Eine Komponente im Alltag jedes Software Engineers. Egal ob Junior, Senior oder Staff-Engineer. Jeder erstellt Code Reviews und kommentiert die Arbeit von den Kollegen. Doch wie sehen gute Code Reviews aus? Was gehört hinein, was bleibt besser draußen? Wie viel Reviewer machen Sinn? Wie geht man mit Nitpicking-Kommentaren und Gatekeepern um? Und allgemein: Zieht dieser zusätzliche Schritt nicht die Performance des Teams runter und ist sowieso Overhead?
+  <p>
+   <span>
+    Eine Komponente im Alltag jedes Software Engineers. Egal ob Junior, Senior oder Staff-Engineer. Jeder erstellt Code Reviews und kommentiert die Arbeit von den Kollegen. Doch wie sehen gute Code Reviews aus? Was gehört hinein, was bleibt besser draußen? Wie viel Reviewer machen Sinn? Wie geht man mit Nitpicking-Kommentaren und Gatekeepern um? Und allgemein: Zieht dieser zusätzliche Schritt nicht die Performance des Teams runter und ist sowieso Overhead?
+   </span>
   </p>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
-   All das und noch viel mehr in dieser Episode zum Thema Code Reviews.
+  <p>
+   <span>
+    All das und noch viel mehr in dieser Episode zum Thema Code Reviews.
+   </span>
   </p>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
-   Bonus: Was Faultiere und Markus Söder mit Code Reviews zu tun haben und warum Blubberwasser den Charakter verdirbt.
+  <p>
+   <span>
+    Bonus: Was Faultiere und Markus Söder mit Code Reviews zu tun haben und warum Blubberwasser den Charakter verdirbt.
+   </span>
   </p>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
-   Feedback an
-   <a class="underline hover:no-underline" href="mailto:stehtisch@engineeringkiosk.dev" rel="nofollow">
+  <p>
+   <br/>
+  </p>
+  <p>
+   <span>
+    Feedback an
+   </span>
+   <a href="mailto:stehtisch@engineeringkiosk.dev" rel="nofollow">
     stehtisch@engineeringkiosk.dev
    </a>
-   oder via Twitter an
-   <a class="underline hover:no-underline" href="https://twitter.com/EngKiosk" rel="nofollow">
+   <span>
+    oder via Twitter an
+   </span>
+   <a href="https://twitter.com/EngKiosk" rel="nofollow">
     https://twitter.com/EngKiosk
    </a>
   </p>
-  <h3 class="mb-4 text-2xl md:text-3xl font-semibold text-coolGray-800" id="links">
+  <h3 id="links">
    Links
   </h3>
-  <ul class="list-disc px-5 mb-6 md:px-5 text-base md:text-lg text-coolGray-500">
-   <li class="mb-3">
-    Google Fellows:
-    <a class="underline hover:no-underline" href="https://www.newyorker.com/magazine/2018/12/10/the-friendship-that-made-google-huge" rel="nofollow">
+  <ul>
+   <li>
+    <span>
+     Google Fellows:
+    </span>
+    <a href="https://www.newyorker.com/magazine/2018/12/10/the-friendship-that-made-google-huge" rel="nofollow">
      https://www.newyorker.com/magazine/2018/12/10/the-friendship-that-made-google-huge
     </a>
    </li>
-   <li class="mb-3">
-    Code Owners File:
-    <a class="underline hover:no-underline" href="https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners" rel="nofollow">
+   <li>
+    <span>
+     Code Owners File:
+    </span>
+    <a href="https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners" rel="nofollow">
      https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners
     </a>
    </li>
-   <li class="mb-3">
-    Software Repository Mining:
-    <a class="underline hover:no-underline" href="https://en.wikipedia.org/wiki/Mining_software_repositories" rel="nofollow">
+   <li>
+    <span>
+     Software Repository Mining:
+    </span>
+    <a href="https://en.wikipedia.org/wiki/Mining_software_repositories" rel="nofollow">
      https://en.wikipedia.org/wiki/Mining_software_repositories
     </a>
    </li>
-   <li class="mb-3">
-    Round Robin Code Review Assignment:
-    <a class="underline hover:no-underline" href="https://docs.github.com/en/organizations/organizing-members-into-teams/managing-code-review-settings-for-your-team" rel="nofollow">
+   <li>
+    <span>
+     Round Robin Code Review Assignment:
+    </span>
+    <a href="https://docs.github.com/en/organizations/organizing-members-into-teams/managing-code-review-settings-for-your-team" rel="nofollow">
      https://docs.github.com/en/organizations/organizing-members-into-teams/managing-code-review-settings-for-your-team
     </a>
    </li>
-   <li class="mb-3">
-    Inner Source:
-    <a class="underline hover:no-underline" href="https://de.wikipedia.org/wiki/Inner_Source" rel="nofollow">
+   <li>
+    <span>
+     Inner Source:
+    </span>
+    <a href="https://de.wikipedia.org/wiki/Inner_Source" rel="nofollow">
      https://de.wikipedia.org/wiki/Inner_Source
     </a>
    </li>
-   <li class="mb-3">
-    Suggesting Changes on GitHub:
-    <a class="underline hover:no-underline" href="http://haacked.com/archive/2019/06/03/suggested-changes/" rel="nofollow">
+   <li>
+    <span>
+     Suggesting Changes on GitHub:
+    </span>
+    <a href="http://haacked.com/archive/2019/06/03/suggested-changes/" rel="nofollow">
      http://haacked.com/archive/2019/06/03/suggested-changes/
     </a>
    </li>
-   <li class="mb-3">
-    Are Pull Requests Holding Back Your Team?:
-    <a class="underline hover:no-underline" href="https://betterprogramming.pub/are-pull-requests-holding-back-your-team-e8aec48986c2" rel="nofollow">
+   <li>
+    <span>
+     Are Pull Requests Holding Back Your Team?:
+    </span>
+    <a href="https://betterprogramming.pub/are-pull-requests-holding-back-your-team-e8aec48986c2" rel="nofollow">
      https://betterprogramming.pub/are-pull-requests-holding-back-your-team-e8aec48986c2
     </a>
    </li>
-   <li class="mb-3">
-    Extrem Programming:
-    <a class="underline hover:no-underline" href="https://de.wikipedia.org/wiki/Extreme_Programming" rel="nofollow">
+   <li>
+    <span>
+     Extrem Programming:
+    </span>
+    <a href="https://de.wikipedia.org/wiki/Extreme_Programming" rel="nofollow">
      https://de.wikipedia.org/wiki/Extreme_Programming
     </a>
    </li>
   </ul>
-  <h3 class="mb-4 text-2xl md:text-3xl font-semibold text-coolGray-800" id="sprungmarken">
+  <h3 id="sprungmarken">
    Sprungmarken
   </h3>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
-   (00:00) Intro
+  <p>
+   <span>
+    (00:00) Intro
+   </span>
   </p>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
-   (01:23) Amsterdam, Hipster und Craft-Bier
+  <p>
+   <span>
+    (01:23) Amsterdam, Hipster und Craft-Bier
+   </span>
   </p>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
-   (02:04) git rebase, history rewrite, force push und Kollaboration
+  <p>
+   <span>
+    (02:04) git rebase, history rewrite, force push und Kollaboration
+   </span>
   </p>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
-   (04:54) Saubere git history und Merge-Commits
+  <p>
+   <span>
+    (04:54) Saubere git history und Merge-Commits
+   </span>
   </p>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
-   (05:17) Code Reviews
+  <p>
+   <span>
+    (05:17) Code Reviews
+   </span>
   </p>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
-   (02:05) Was ist denn ein Code Review?
+  <p>
+   <span>
+    (02:05) Was ist denn ein Code Review?
+   </span>
   </p>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
-   (07:02) Muss der Code Reviewer immer mehr Erfahrung haben?
+  <p>
+   <span>
+    (07:02) Muss der Code Reviewer immer mehr Erfahrung haben?
+   </span>
   </p>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
-   (08:10) Was wir von Juniors im Job und bei Code Reviews lernen können
+  <p>
+   <span>
+    (08:10) Was wir von Juniors im Job und bei Code Reviews lernen können
+   </span>
   </p>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
-   (09:37) Was ist denn ein Google Fellow?
+  <p>
+   <span>
+    (09:37) Was ist denn ein Google Fellow?
+   </span>
   </p>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
-   (10:37) Code Reviews als Mittel fürs Onboarding
+  <p>
+   <span>
+    (10:37) Code Reviews als Mittel fürs Onboarding
+   </span>
   </p>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
-   (11:35) Frühes pushen der Arbeit ist wichtig für frühes Feedback
+  <p>
+   <span>
+    (11:35) Frühes pushen der Arbeit ist wichtig für frühes Feedback
+   </span>
   </p>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
-   (13:15) Wo sollen die Informationen zu meiner Änderung stehen? Im Pull Request oder in der Git Commit message?
+  <p>
+   <span>
+    (13:15) Wo sollen die Informationen zu meiner Änderung stehen? Im Pull Request oder in der Git Commit message?
+   </span>
   </p>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
-   (15:04) Wen lade ich zu meinem Code Review ein? Code Owners file und Software Repository Mining
+  <p>
+   <span>
+    (15:04) Wen lade ich zu meinem Code Review ein? Code Owners file und Software Repository Mining
+   </span>
   </p>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
-   (17:34) Worauf soll ich als Code Reviewer acht geben und konzentrieren?
+  <p>
+   <span>
+    (17:34) Worauf soll ich als Code Reviewer acht geben und konzentrieren?
+   </span>
   </p>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
-   (20:09) Pro-Aktivität in Code Reviews mit aktiven Vorschlägen und Fragen stellen
+  <p>
+   <span>
+    (20:09) Pro-Aktivität in Code Reviews mit aktiven Vorschlägen und Fragen stellen
+   </span>
   </p>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
-   (23:33) Muss man jedes Feedback aus dem Code Review annehmen? Lass das Ego vor der Tür und Gate-Keeper
+  <p>
+   <span>
+    (23:33) Muss man jedes Feedback aus dem Code Review annehmen? Lass das Ego vor der Tür und Gate-Keeper
+   </span>
   </p>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
-   (26:37) Kommunikationskonflikte in Code Reviews: Video Calls vs. geschriebene Kommunikation
+  <p>
+   <span>
+    (26:37) Kommunikationskonflikte in Code Reviews: Video Calls vs. geschriebene Kommunikation
+   </span>
   </p>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
-   (28:14) Nitpicking, Code-Formatting, Styleguides, Linter und Automatisierung
+  <p>
+   <span>
+    (28:14) Nitpicking, Code-Formatting, Styleguides, Linter und Automatisierung
+   </span>
   </p>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
-   (32:11) Mindern Pull Requests und Code Reviews die Performance von Teams?
+  <p>
+   <span>
+    (32:11) Mindern Pull Requests und Code Reviews die Performance von Teams?
+   </span>
   </p>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
-   (36:56) Schnelligkeit bei Facebook und Booking: Schnelles Mergen und Code Reviews danach
+  <p>
+   <span>
+    (36:56) Schnelligkeit bei Facebook und Booking: Schnelles Mergen und Code Reviews danach
+   </span>
   </p>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
-   (39:01) Auslagerung der Verantwortung bei Code Reviews und Blameless Kultur innerhalb der Firma
+  <p>
+   <span>
+    (39:01) Auslagerung der Verantwortung bei Code Reviews und Blameless Kultur innerhalb der Firma
+   </span>
   </p>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
-   (42:38) Technische Mittel für sichere Deploys: Feature Flags, Canary Deployments, Dark Launches und Blue-Green-Deployments
+  <p>
+   <span>
+    (42:38) Technische Mittel für sichere Deploys: Feature Flags, Canary Deployments, Dark Launches und Blue-Green-Deployments
+   </span>
   </p>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
-   (46:08) Wie schnell sollte ein Code Review vom Team gereviewed werden?
+  <p>
+   <span>
+    (46:08) Wie schnell sollte ein Code Review vom Team gereviewed werden?
+   </span>
   </p>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
-   (53:00) Code Reviews in der Firma vs. Code Reviews in Open Source und die Motivation
+  <p>
+   <span>
+    (53:00) Code Reviews in der Firma vs. Code Reviews in Open Source und die Motivation
+   </span>
   </p>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
-   (54:34) Konsequenzen bei nicht eingehaltenen Service Level Agreements (SLA)
+  <p>
+   <span>
+    (54:34) Konsequenzen bei nicht eingehaltenen Service Level Agreements (SLA)
+   </span>
   </p>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
-   (57:28) Outro
+  <p>
+   <span>
+    (57:28) Outro
+   </span>
   </p>
-  <h3 class="mb-4 text-2xl md:text-3xl font-semibold text-coolGray-800" id="hosts">
+  <h3 id="hosts">
    Hosts
   </h3>
-  <ul class="list-disc px-5 mb-6 md:px-5 text-base md:text-lg text-coolGray-500">
-   <li class="mb-3">
-    Wolfgang Gassler (
-    <a class="underline hover:no-underline" href="https://twitter.com/schafele" rel="nofollow">
+  <ul>
+   <li>
+    <span>
+     Wolfgang Gassler (
+    </span>
+    <a href="https://twitter.com/schafele" rel="nofollow">
      https://twitter.com/schafele
     </a>
-    )
+    <span>
+     )
+    </span>
    </li>
-   <li class="mb-3">
-    Andy Grunwald (
-    <a class="underline hover:no-underline" href="https://twitter.com/andygrunwald" rel="nofollow">
+   <li>
+    <span>
+     Andy Grunwald (
+    </span>
+    <a href="https://twitter.com/andygrunwald" rel="nofollow">
      https://twitter.com/andygrunwald
     </a>
-    )
+    <span>
+     )
+    </span>
    </li>
   </ul>
-  <p class="mb-6 text-base md:text-lg text-coolGray-500">
-   Engineering Kiosk Podcast: Anfragen an
-   <a class="underline hover:no-underline" href="http://stehtisch@engineeringkiosk.dev" rel="nofollow">
+  <p>
+   <br/>
+  </p>
+  <p>
+   <span>
+    Engineering Kiosk Podcast: Anfragen an
+   </span>
+   <a href="http://stehtisch@engineeringkiosk.dev" rel="nofollow">
     stehtisch@engineeringkiosk.dev
    </a>
-   oder via Twitter an
-   <a class="underline hover:no-underline" href="https://twitter.com/EngKiosk" rel="nofollow">
+   <span>
+    oder via Twitter an
+   </span>
+   <a href="https://twitter.com/EngKiosk" rel="nofollow">
     https://twitter.com/EngKiosk
    </a>
   </p>
