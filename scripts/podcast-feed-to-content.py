@@ -8,8 +8,11 @@ import mimetypes
 import datetime
 import yaml
 import html
-from os.path import exists
+import toml
+from os.path import exists, isfile, join
+from os import listdir
 
+# External libraries
 from bs4 import BeautifulSoup as bs
 from slugify import slugify
 import frontmatter
@@ -18,7 +21,8 @@ import frontmatter
 PODCAST_RSS_FEED = "https://feeds.redcircle.com/0ecfdfd7-fda1-4c3d-9515-476727f9df5e"
 PATH_MARKDOWN_FILES = 'src/pages/podcast/episode'
 PATH_IMAGE_FILES = 'public/images/podcast/episode'
-
+TOML_FILE = 'netlify.toml'
+REDIRECT_PREFIX = '/episodes/'
 
 # From the Django project
 # See https://docs.djangoproject.com/en/2.1/_modules/django/utils/text/#slugify
@@ -329,8 +333,75 @@ def sync_podcast_episodes(rss_feed, path_md_files, path_img_files):
         f.close()
 
 
-def create_redirects():
-    print("Not implemented")
+def trim_prefix(line, prefix):
+    """
+    Removes prefix from line.
+    """
+    if line.startswith(prefix):
+        line = line[len(prefix):]
+
+    return line
+
+
+def create_redirects(file_to_parse, path_md_files, redirect_prefix):
+    """
+    Creates redirects for every Podcast episode to /episodes/123 by
+
+    1. Reading the toml file
+    2. Processing all podcast episodes
+    3. Writing the toml file
+    """
+    # Read existing toml file
+    parsed_toml = ""
+    with open(file_to_parse) as f:
+        content = f.read()
+        parsed_toml = toml.loads(s=content)
+
+    # Restructure existing redirects into a hashmap
+    # for easier lookup
+    redirect_episode_number_regex = re.compile(f"{redirect_prefix}([0-9]*)$")
+    redirect_map = {}
+    for redirect in parsed_toml['redirects']:
+        # Find the number of the episode
+        redirect_episode_number = re.findall(redirect_episode_number_regex, redirect["from"])[0]
+        if redirect_episode_number == "":
+            continue
+
+        redirect_map[redirect_episode_number] = redirect
+
+
+    # Get existing podcast episodes
+    episodes = [f for f in listdir(path_md_files) if isfile(join(path_md_files, f)) and f.endswith('.md')]
+
+    episode_number_regex = re.compile('([0-9]*)-')
+    for episode in episodes:
+        # Find the number of the episode
+        episode_number = re.findall(episode_number_regex, episode)[0]
+
+        # If we have a number loke 00 or 05, remove the first 0
+        episode_number = trim_prefix(episode_number, "0")
+
+        # Check if we have a redirect for this episode already
+        # If yes, skip ip
+        if episode_number in redirect_map:
+            print(f"Skipping redirect processing for episode {episode_number}: Redirect exists already.")
+            continue
+
+        print(f"Adding redirect for episode {episode_number}")
+
+        episode_file = episode.removesuffix(".md")
+        new_redirect = {
+            "from": f"/episodes/{episode_number}",
+            "to": f"/podcast/episode/{episode_file}?pk_campaign=shortlink",
+            "status": 301,
+            "force": True,
+        }
+
+        parsed_toml['redirects'].append(new_redirect)
+
+    # Write new file
+    with open(file_to_parse, 'w') as f:
+        toml.dump(o=parsed_toml, f=f)
 
 
 if __name__ == "__main__":
@@ -354,4 +425,4 @@ if __name__ == "__main__":
         case "redirect":
             # TODO Once Python 3.11 is out, replace toml library with stdlib
             # See https://peps.python.org/pep-0680/
-            create_redirects()
+            create_redirects(TOML_FILE, PATH_MARKDOWN_FILES, REDIRECT_PREFIX)
