@@ -189,6 +189,8 @@ def sync_podcast_episodes(rss_feed, path_md_files, path_img_files):
     - Writes a Markdown and image file to disk
 
     """
+
+    logging.info(f"Reading Podcast RSS Feed {rss_feed} ...")
     # Get the XML Feed content
     try:
         feed_response = requests.get(rss_feed)
@@ -200,9 +202,13 @@ def sync_podcast_episodes(rss_feed, path_md_files, path_img_files):
     except requests.exceptions.RequestException as e:
         raise SystemExit(e)
 
+    logging.info(f"Reading Podcast RSS Feed {rss_feed} ... Successful")
+
     # requests makes an educated guess on the response encoding.
     # Here we overwrite the encoding to UTF-8
     feed_response.encoding = 'utf-8'
+
+    logging.info("Processing Podcast Episode items ...")
 
     # Parse the XML and process all items
     parsed_xml = ET.fromstring(feed_response.text)
@@ -332,6 +338,8 @@ def sync_podcast_episodes(rss_feed, path_md_files, path_img_files):
         f = open(full_file_path, 'w', encoding='utf8')
         f.write(content)
         f.close()
+
+    logging.info("Processing Podcast Episode items ... Successful")
 
 
 def trim_prefix(line, prefix):
