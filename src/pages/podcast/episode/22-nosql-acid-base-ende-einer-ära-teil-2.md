@@ -291,7 +291,11 @@ title: "#22 NoSQL: ACID, BASE, Ende einer \xC4ra Teil 2"
    <br/>
   </p>
   <p>
-   Engineering Kiosk Podcast: Anfragen an stehtisch@engineeringkiosk.dev oder via Twitter an
+   Engineering Kiosk Podcast: Anfragen an
+   <a href="mailto:stehtisch@engineeringkiosk.dev" rel="nofollow">
+    stehtisch@engineeringkiosk.dev
+   </a>
+   oder via Twitter an
    <a href="https://twitter.com/EngKiosk" rel="nofollow">
     https://twitter.com/EngKiosk
    </a>
