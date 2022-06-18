@@ -25,6 +25,13 @@ PATH_IMAGE_FILES = 'public/images/podcast/episode'
 TOML_FILE = 'netlify.toml'
 REDIRECT_PREFIX = '/episodes/'
 
+# URLs from Podcast sites
+PODCAST_APPLE_URL = "https://itunes.apple.com/lookup?id=1603082924&media=podcast&entity=podcastEpisode&limit=100"
+
+# TODO Add episode single view link retrieval for Spotify
+# TODO Add episode single view link retrieval for Google Podcasts
+# TODO Add episode single view link retrieval for Amazon Music
+
 # From the Django project
 # See https://docs.djangoproject.com/en/2.1/_modules/django/utils/text/#slugify
 def slugify(value, allow_unicode=False):
@@ -171,6 +178,10 @@ def sync_podcast_episodes(rss_feed, path_md_files, path_img_files):
     # Here we overwrite the encoding to UTF-8
     feed_response.encoding = 'utf-8'
 
+    logging.info("Requesting content from Podcast sites ...")
+    apple_content = get_json_content_from_url(PODCAST_APPLE_URL)
+    logging.info("Requesting content from Podcast sites ... Successful")
+
     logging.info("Processing Podcast Episode items ...")
 
     # Parse the XML and process all items
@@ -257,7 +268,7 @@ def sync_podcast_episodes(rss_feed, path_md_files, path_img_files):
             'chapter': chapter,
             'spotify': '',
             'google_podcasts': '',
-            'apple_podcasts': '',
+            'apple_podcasts': get_episode_link_from_apple(apple_content, title),
             'amazon_music': ''
         }
 
@@ -372,6 +383,35 @@ def create_redirects(file_to_parse, path_md_files, redirect_prefix):
     # Write new file
     with open(file_to_parse, 'w') as f:
         toml.dump(o=parsed_toml, f=f)
+
+
+def get_json_content_from_url(u):
+    """
+    Retrieves the JSON content from address u.
+    """
+    content = ""
+    with requests.get(u, stream=True) as r:
+        r.raise_for_status()
+        content = r.json()
+
+    return content
+
+
+def get_episode_link_from_apple(content, title):
+    """
+    Parses the Apple Episode Single View link (matching with title) from content.
+    content is a JSON representation of the Apple Podcast Engineering Kiosk site.
+    title is the full title of a single episode.
+
+    If no title matches, it will return an empty link.
+    """
+    u = ""
+    tracks = content["results"]
+    for track in tracks:
+        if track["trackName"] == title:
+            u = track["trackViewUrl"]
+
+    return u
 
 
 if __name__ == "__main__":
