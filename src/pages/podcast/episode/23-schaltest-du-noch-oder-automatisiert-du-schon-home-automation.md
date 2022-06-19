@@ -1,6 +1,6 @@
 ---
 amazon_music: ''
-apple_podcasts: ''
+apple_podcasts: https://podcasts.apple.com/us/podcast/23-schaltest-du-noch-oder-automatisiert-du-schon-home/id1603082924?i=1000566323940&uo=4
 audio: https://stream.redcircle.com/episodes/64702e08-821e-4361-b271-d98525ec6667/stream.mp3
 chapter:
 - start: 00:00:00

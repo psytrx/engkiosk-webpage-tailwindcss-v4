@@ -1,6 +1,6 @@
 ---
 amazon_music: ''
-apple_podcasts: ''
+apple_podcasts: https://podcasts.apple.com/us/podcast/22-nosql-acid-base-ende-einer-%C3%A4ra-teil-2/id1603082924?i=1000565464152&uo=4
 audio: https://stream.redcircle.com/episodes/57035bbc-8934-4a78-8416-61fa02778ab4/stream.mp3
 chapter:
 - start: 00:00:00
