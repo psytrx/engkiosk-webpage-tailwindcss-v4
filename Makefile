@@ -24,6 +24,10 @@ update-content: ## Pulls the latest Podcast RSS feed and updates the content
 update-redirects: ## Writes all short url redirects for Podcast episodes to netlify.toml
 	python ./scripts/podcast-feed-to-content.py redirect
 
+.PHONY: episode-check
+episode-check: ## Checks all Podcast Episodes if all player links (Spotify, etc.) are set
+	python ./scripts/empty-player-urls.py
+
 .PHONY: init
 init: ## Installs dependencies
 	npm install

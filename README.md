@@ -22,6 +22,7 @@ Available `Makefile` commands:
 ```
 build                          Compiles the application into static content
 clean                          Deletes the generated content
+episode-check                  Checks all Podcast Episodes if all player links (Spotify, etc.) are set
 help                           Outputs the help
 init                           Installs dependencies
 run                            Starts the development server
@@ -52,6 +53,13 @@ positional arguments:
 options:
   -h, --help  show this help message and exit
 ```
+
+## Checklist: Releasing a new Podcast episode
+
+1. Run GitHub Actions [Publish Podcast Episodes](https://github.com/EngineeringKiosk/webpage/actions/workflows/publish-podcast-episodes.yml)
+2. Copy Episode Single View URL from [Engineering Kiosk at Amazon Music](https://music.amazon.com/podcasts/c35a09fe-4116-4e04-8f68-77d61b112e46/engineering-kiosk)
+3. Add the Episode Single View URL into the Frontmatter of the newly released Podcast episode
+4. Commit, push and wait until Netlify is building the new website version.
 
 ## Netlify
 
