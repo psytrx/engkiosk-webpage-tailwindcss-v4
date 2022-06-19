@@ -21,7 +21,7 @@ function formatDate(date) {
 
 <div class="w-full md:w-1/2 lg:w-1/3 px-4 mb-8">
 	<a class="block mb-6 overflow-hidden rounded-md" href="${episode.url}">
-		<img class="w-full" src="${frontmatter.image}" alt="">
+		<img class="w-full" src="${frontmatter.image}" alt="Details zur Podcast Episode ${frontmatter.title}" title="Details zur Podcast Episode ${frontmatter.title}">
 	</a>
 	<p class="mb-2 text-coolGray-500 font-medium">
 		<time class="date" datetime={frontmatter.date}>{formatDate(frontmatter.date)}</time>
