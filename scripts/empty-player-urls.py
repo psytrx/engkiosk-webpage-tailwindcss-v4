@@ -1,6 +1,7 @@
 import os
 from os.path import isfile, join
 import logging
+import sys
 
 # External libraries
 import frontmatter
@@ -9,7 +10,7 @@ import frontmatter
 PATH_MARKDOWN_FILES = 'src/pages/podcast/episode'
 
 
-def find_empty_player_urls(path_md_files):
+def find_empty_player_urls(path_md_files) -> int:
     """
     Going through all Podcast Episode Markdown files and checks
     if the player links for Spotify, Amazon Music and so on
@@ -19,6 +20,7 @@ def find_empty_player_urls(path_md_files):
     If an empty response is provided, everything is fine.
     Just remember: No news are good news.
     """
+    exit_code = 0
 
     # Get existing podcast episodes
     episodes = [f for f in os.listdir(path_md_files) if isfile(join(path_md_files, f)) and f.endswith('.md')]
@@ -42,6 +44,10 @@ def find_empty_player_urls(path_md_files):
                 missing_urls = ", ".join(missing)
                 logging.error(f"Episode {file_path} is missing player URLs for {missing_urls}")
 
+                exit_code = 1
+
+    return exit_code
+
 
 if __name__ == "__main__":
     # Setup logger
@@ -53,4 +59,5 @@ if __name__ == "__main__":
         ]
     )
 
-    find_empty_player_urls(PATH_MARKDOWN_FILES)
+    exit_code = find_empty_player_urls(PATH_MARKDOWN_FILES)
+    sys.exit(exit_code)
