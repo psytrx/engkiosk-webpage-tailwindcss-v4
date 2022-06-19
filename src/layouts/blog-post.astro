@@ -56,67 +56,16 @@ function formatDate(date) {
 						</p>
 					</div>
 				</div>
-				<img class="w-full mb-10 mx-auto" src="/images/blog-content/content-photo3.jpg" alt="">
+				<img class="w-full mb-10 mx-auto" src="${content.headerimage}" alt="${content.title}" title="${content.title}">
 				<div class="container px-4 mx-auto">
 					<div class="md:max-w-3xl mx-auto">
-						<article class="border-b border-coolGray-100">
+						<article class="border-b border-coolGray-100 mb-4">
 							<div class="tldr">
 								<Markdown>{content.description}</Markdown>
 							</div>
 
 							<slot />
 						</article>
-
-						<h3 class="mb-4 text-2xl md:text-3xl font-semibold text-coolGray-800">
-							Header 1
-						</h3>
-						<p class="mb-4 text-base md:text-lg text-coolGray-500">
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ullamcorper mattis lorem non. Ultrices praesent amet ipsum justo massa. Eu dolor aliquet risus gravida nunc at feugiat consequat purus. Non massa enim vitae duis mattis. Vel in ultricies vel fringilla.
-						</p>
-						<div class="mb-6 p-6 border-l-2 border-yellow-500">
-							<p class="mb-4 text-xl md:text-2xl leading-tight font-medium text-coolGray-800">
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ullamcorper mattis lorem non. Ultrices praesent amet ipsum justo massa. Eu dolor aliquet risus gravida nunc at feugiat consequat purus.
-							</p>
-							<span class="text-base md:text-lg text-coolGray-400 font-medium">
-								— John Doe, CEO &amp; Founder
-							</span>
-						</div>
-						<p class="mb-6 text-base md:text-lg text-coolGray-500">
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ullamcorper mattis lorem non. Ultrices praesent amet ipsum justo massa. Eu dolor aliquet risus gravida nunc at feugiat consequat purus. Non massa enim vitae duis mattis. Vel in ultricies vel fringilla.
-						</p>
-						<div class="mb-4 max-w-max overflow-hidden rounded-md">
-							<img src="/images/blog-content/content-photo2.jpg" alt="">
-						</div>
-						<p class="mb-8 text-base md:text-lg text-coolGray-400 font-medium">
-							<span>Non massa enim vitae duis mattis. Vel in</span>
-							<a class="hover:text-coolGray-600 underline" href="#">ultricies</a>
-							<span>vel fringilla.</span>
-						</p>
-						<h3 class="mb-4 text-2xl md:text-3xl font-semibold text-coolGray-800">
-							Header 1
-						</h3>
-						<p class="mb-14 text-base md:text-lg text-coolGray-500">
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ullamcorper mattis lorem non. Ultrices praesent amet ipsum justo massa. Eu dolor aliquet risus gravida nunc at feugiat consequat purus. Non massa enim vitae duis mattis. Vel in ultricies vel fringilla.
-						</p>
-						<p class="mb-4 text-base md:text-lg text-coolGray-500">
-							Sagittis et eu at elementum, quis in. Proin praesent volutpat egestas sociis sit lorem nunc nunc sit. Eget diam curabitur mi ac. Auctor rutrum lacus malesuada massa ornare et. Vulputate consectetur ac ultrices at diam dui eget fringilla tincidunt. Arcu sit dignissim massa erat cursus vulputate gravida id. Sed quis auctor vulputate hac elementum gravida cursus dis.
-						</p>
-						<ol class="list-decimal list-inside md:px-5 mb-14 text-base md:text-lg text-coolGray-500">
-							<li>Lectus id duis vitae porttitor enim gravida morbi.</li>
-							<li>Eu turpis posuere semper feugiat volutpat elit, ultrices suspendisse. Auctor vel in vitae placerat.</li>
-							<li>Suspendisse maecenas ac donec scelerisque diam sed est duis purus.</li>
-						</ol>
-						<p class="mb-10 pb-10 text-base md:text-lg text-coolGray-500 border-b border-coolGray-100">
-							<span>
-								Vestibulum placerat magna nulla, sit amet venenatis sapien consequat ut. Cras pulvinar, lorem tristique pharetra finibus, dui erat finibus orci, a vehicula arcu sapien id metus. Quisque quis lorem a sem porttitor feugiat. Etiam quis congue est. Donec fermentum ac libero a pretium. Nulla nisl sem, euismod ut eros vitae, egestas scelerisque enim.
-							</span>
-							<a class="text-yellow-500 hover:text-yellow-600 underline" href="#">
-								Vivamus id pharetra massa
-							</a>
-							<span>
-								. Nulla aliquet erat elit, a gravida dui efficitur vel. Sed pulvinar diam sed neque ullamcorper semper. Nulla elementum arcu lacus, quis porta nisl posuere varius. Quisque tempus libero sed urna posuere hendrerit.
-							</span>
-						</p>
 
 						<div class="flex items-center justify-center">
 							<a class="inline-flex mr-4 items-center justify-center py-2 px-4 text-coolGray-300 hover:text-coolGray-400 bg-white hover:bg-coolGray-100 border border-coolGray-200 hover:border-coolGray-300 rounded-md shadow-md transition duration-200" id="copy-url" data-href="${canonicalURL}" href="#">
