@@ -55,7 +55,7 @@ chapter:
 date: '2022-06-07'
 description: "Neben relationalen Datenbanken gibt es noch eine ganz andere Welt: NoSQL.\
   \ Doch wof\xFCr steht eigentlich NoSQL? Kein SQL? Not ..."
-google_podcasts: ''
+google_podcasts: https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5yZWRjaXJjbGUuY29tLzBlY2ZkZmQ3LWZkYTEtNGMzZC05NTE1LTQ3NjcyN2Y5ZGY1ZQ/episode/MGE3YzM5ZjMtYmY1NC00Mjk5LWE4MTQtNTNhMjZmM2YwOTkw?sa=X&ved=2ahUKEwiKkL-Alrn4AhUXB0QIHdtQCXMQkfYCegQIARAF
 headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts
 image: "/images/podcast/episode/22-nosql-acid-base-ende-einer-\xE4ra-teil-2.jpg"
 layout: ../../../layouts/podcast-episode.astro

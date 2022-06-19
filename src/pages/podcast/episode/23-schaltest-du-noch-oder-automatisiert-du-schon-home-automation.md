@@ -49,7 +49,7 @@ chapter:
 date: '2022-06-14'
 description: Machst du noch selbst das Licht an oder automatisiert du schon? Internet
   of Things (IoT) ist in aller Munde. Jedes Device ...
-google_podcasts: ''
+google_podcasts: https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5yZWRjaXJjbGUuY29tLzBlY2ZkZmQ3LWZkYTEtNGMzZC05NTE1LTQ3NjcyN2Y5ZGY1ZQ/episode/NDdiNDNmMjYtMzQ1Ni00YmMxLWIwZTAtZWMyOGE1ZWEwZmRl?sa=X&ved=2ahUKEwiKkL-Alrn4AhUXB0QIHdtQCXMQkfYCegQIARAF
 headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts
 image: /images/podcast/episode/23-schaltest-du-noch-oder-automatisiert-du-schon-home-automation.jpg
 layout: ../../../layouts/podcast-episode.astro
