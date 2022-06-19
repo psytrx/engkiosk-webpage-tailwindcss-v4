@@ -9,14 +9,18 @@ import datetime
 import yaml
 import html
 import toml
+import os
 from os.path import exists, isfile, join
-from os import listdir
 import logging
+import sys
+from urllib.parse import urlparse
 
 # External libraries
-from bs4 import BeautifulSoup as bs
+from bs4 import BeautifulSoup
 from slugify import slugify
 import frontmatter
+import spotipy
+from spotipy.oauth2 import SpotifyClientCredentials
 
 # Global variables
 PODCAST_RSS_FEED = "https://feeds.redcircle.com/0ecfdfd7-fda1-4c3d-9515-476727f9df5e"
@@ -24,6 +28,12 @@ PATH_MARKDOWN_FILES = 'src/pages/podcast/episode'
 PATH_IMAGE_FILES = 'public/images/podcast/episode'
 TOML_FILE = 'netlify.toml'
 REDIRECT_PREFIX = '/episodes/'
+
+# URLs from Podcast sites
+PODCAST_APPLE_URL = "https://itunes.apple.com/lookup?id=1603082924&media=podcast&entity=podcastEpisode&limit=100"
+SPOTIFY_SHOW_ID = "0tJRC0UsObPCWLmmzmOkIs"
+PODCAST_GOOGLE_URL = "https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5yZWRjaXJjbGUuY29tLzBlY2ZkZmQ3LWZkYTEtNGMzZC05NTE1LTQ3NjcyN2Y5ZGY1ZQ"
+# TODO Add episode single view link retrieval for Amazon Music
 
 # From the Django project
 # See https://docs.djangoproject.com/en/2.1/_modules/django/utils/text/#slugify
@@ -139,7 +149,7 @@ def get_chapter_from_description(description):
     return chapter
 
 
-def sync_podcast_episodes(rss_feed, path_md_files, path_img_files):
+def sync_podcast_episodes(rss_feed, path_md_files, path_img_files, spotify_client):
     """
     Syncs the Podcast Episodes from the RSS feed down to disk
     and prepares the content to match the structure of the used
@@ -171,6 +181,12 @@ def sync_podcast_episodes(rss_feed, path_md_files, path_img_files):
     # Here we overwrite the encoding to UTF-8
     feed_response.encoding = 'utf-8'
 
+    logging.info("Requesting content from Podcast sites ...")
+    apple_podcast_content = get_json_content_from_url(PODCAST_APPLE_URL)
+    spotify_episodes = spotify_client.show_episodes(SPOTIFY_SHOW_ID, limit=15, offset=0, market="DE")
+    google_podcast_content = get_raw_content_from_url(PODCAST_GOOGLE_URL)
+    logging.info("Requesting content from Podcast sites ... Successful")
+
     logging.info("Processing Podcast Episode items ...")
 
     # Parse the XML and process all items
@@ -193,17 +209,20 @@ def sync_podcast_episodes(rss_feed, path_md_files, path_img_files):
         html_content, headlines = parse_headlines_from_html(description)
         description_html = html_content
 
-        # Pretty print html to make it somehow
-        # human debuggable.
-        soup = bs(description_html, features="lxml")
-        prettyHtml = soup.prettify()
-
-        # Remove <html> and <body> tags
-        prettyHtml = prettyHtml.replace("<html>", "")
-        prettyHtml = prettyHtml.replace("<body>", "")
-        prettyHtml = prettyHtml.replace("</body>", "")
-        prettyHtml = prettyHtml.replace("</html>", "")
-        prettyHtml = prettyHtml.strip()
+        # Previously we had a logic here to pretty print
+        # the HTML via BeautifulSoup and oup.prettify().
+        # We removed it, because Astro (the used static side generator)
+        # had some issues with HTML parsing within markdown files like
+        #   - https://github.com/withastro/astro/issues/3529
+        #   - https://github.com/withastro/astro/issues/3642
+        # Hence we removed the logic.
+        #
+        # In the end, it was only for us humans to make it a bit more readable
+        # in the markdown files. The content is managed in our Podcast platform
+        # (RedCircle) and we don't modify the Markdown files manually at all.
+        #
+        # Thats why we got rid of the prettify logic.
+        html_content = description_html.strip()
 
         chapter = get_chapter_from_description(description)
 
@@ -255,9 +274,9 @@ def sync_podcast_episodes(rss_feed, path_md_files, path_img_files):
             'description': description_short,
             'headlines': headline_info,
             'chapter': chapter,
-            'spotify': '',
-            'google_podcasts': '',
-            'apple_podcasts': '',
+            'spotify': get_episode_link_from_spotify(spotify_episodes, title),
+            'google_podcasts': get_episode_link_from_google(google_podcast_content, title),
+            'apple_podcasts': get_episode_link_from_apple(apple_podcast_content, title),
             'amazon_music': ''
         }
 
@@ -291,8 +310,7 @@ def sync_podcast_episodes(rss_feed, path_md_files, path_img_files):
             '---\n'
             f'{content_yaml}\n'
             '---\n'
-            '\n'
-            f'{prettyHtml}'
+            f'{html_content}'
         )
 
         # Write file to disk as a new podcast episode
@@ -341,7 +359,7 @@ def create_redirects(file_to_parse, path_md_files, redirect_prefix):
 
 
     # Get existing podcast episodes
-    episodes = [f for f in listdir(path_md_files) if isfile(join(path_md_files, f)) and f.endswith('.md')]
+    episodes = [f for f in os.listdir(path_md_files) if isfile(join(path_md_files, f)) and f.endswith('.md')]
 
     episode_number_regex = re.compile('([0-9]*)-')
     for episode in episodes:
@@ -374,6 +392,113 @@ def create_redirects(file_to_parse, path_md_files, redirect_prefix):
         toml.dump(o=parsed_toml, f=f)
 
 
+def get_json_content_from_url(u):
+    """
+    Retrieves the JSON content from address u.
+    """
+    content = ""
+    with requests.get(u, stream=True) as r:
+        r.raise_for_status()
+        content = r.json()
+
+    return content
+
+
+def get_raw_content_from_url(u):
+    """
+    Retrieves the raw content from address u.
+    """
+    content = ""
+    with requests.get(u, stream=True) as r:
+        r.raise_for_status()
+        content = r.content
+
+    return content
+
+
+def get_episode_link_from_apple(content, title: str) -> str:
+    """
+    Parses the Apple Episode Single View link (matching with title) from content.
+    content is a JSON representation of the Apple Podcast Engineering Kiosk site.
+    title is the full title of a single episode.
+
+    If no title matches, it will return an empty string.
+    """
+    u = ""
+    tracks = content["results"]
+    for track in tracks:
+        if track["trackName"] == title:
+            u = track["trackViewUrl"]
+
+    return u
+
+
+def create_spotify_client(app_id: str, app_secret: str):
+    """
+    Creates a spotify api client based on the application
+    secrets app_id and app_secret.
+
+    Docs: https://github.com/plamere/spotipy
+    Docs: https://developer.spotify.com/documentation/web-api/reference/#/
+    """
+    spotify_client = spotipy.Spotify(
+        auth_manager=SpotifyClientCredentials(
+            client_id=app_id,
+            client_secret=app_secret
+        )
+    )
+    return spotify_client
+
+
+def get_episode_link_from_spotify(episodes, title: str) -> str:
+    """
+    Parses the Spotify Episode Single View link (matching with title) from episodes list.
+    episodes is a JSON representation from the Spotify API / Engineering Kiosk Show.
+    title is the full title of a single episode.
+
+    If no title matches, it will return an empty string.
+    """
+    u = ""
+    for episode in episodes["items"]:
+        if episode["name"] == title:
+            u = episode["external_urls"]["spotify"]
+
+    return u
+
+
+def get_episode_link_from_google(content, title: str) -> str:
+    """
+    Google Podcast does not offer an API, xml feed or anything like this.
+
+    Hence we do typical HTML link scraping.
+    There is no error checking at all, because we want this function to
+    fail if there is anything changing.
+
+    If no title matches, it will return an empty string.
+    """
+    scheme = "https"
+    hostname = "podcasts.google.com"
+
+    soup = BeautifulSoup(content, features="html.parser")
+    items = soup.findAll('div', text = re.compile(title))
+
+    u = ""
+    for item in items:
+        link = item.findParent("a").get('href')
+        o = urlparse(link)
+
+        # The links we get are relative like
+        #   ./feed/...
+        # We need absolute URLs.
+        o = o._replace(path=trim_prefix(o.path, "./"))
+        u = o._replace(scheme=scheme, netloc=hostname).geturl()
+
+        # First link is enough.
+        break
+
+    return u
+
+
 if __name__ == "__main__":
     # Argument and parameter parsing
     cli_parser = argparse.ArgumentParser(description='Automate new Podcast Episide parsing')
@@ -400,7 +525,17 @@ if __name__ == "__main__":
 
     match args.Mode:
         case "sync":
-            sync_podcast_episodes(PODCAST_RSS_FEED, PATH_MARKDOWN_FILES, PATH_IMAGE_FILES)
+            # Bootstrapping Spotify API client
+            SPOTIFY_APP_CLIENT_ID = os.getenv('SPOTIFY_APP_CLIENT_ID')
+            SPOTIFY_APP_CLIENT_SECRET = os.getenv('SPOTIFY_APP_CLIENT_SECRET')
+            if not SPOTIFY_APP_CLIENT_ID or not SPOTIFY_APP_CLIENT_SECRET:
+                logging.error("Env vars SPOTIFY_APP_CLIENT_ID or SPOTIFY_APP_CLIENT_SECRET are not set properly.")
+                logging.error("Please double check and restart.")
+                sys.exit(1)
+
+            spotify_client = create_spotify_client(SPOTIFY_APP_CLIENT_ID, SPOTIFY_APP_CLIENT_SECRET)
+
+            sync_podcast_episodes(PODCAST_RSS_FEED, PATH_MARKDOWN_FILES, PATH_IMAGE_FILES, spotify_client)
         case "redirect":
             # TODO Once Python 3.11 is out, replace toml library with stdlib
             # See https://peps.python.org/pep-0680/

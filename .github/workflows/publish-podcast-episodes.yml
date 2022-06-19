@@ -12,12 +12,19 @@ jobs:
 
     steps:
       - uses: actions/checkout@v3
-      - uses: actions/setup-python@v3
+      - uses: actions/setup-python@v4
         with:
-          python-version: '3.10'
+          python-version-file: 'scripts/.python-version'
+          cache: 'pip'
+
+      - name: Install python dependencies
+        run: pip install -r scripts/requirements.txt
 
       - name: Run make update-content
         run: make update-content
+        env:
+          SPOTIFY_APP_CLIENT_ID: ${{ secrets.SPOTIFY_APP_CLIENT_ID }}
+          SPOTIFY_APP_CLIENT_SECRET: ${{ secrets.SPOTIFY_APP_CLIENT_SECRET }}
 
       - name: Run make update-redirects
         run: make update-redirects
