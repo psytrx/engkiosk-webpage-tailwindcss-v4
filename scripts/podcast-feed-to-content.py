@@ -13,9 +13,10 @@ import os
 from os.path import exists, isfile, join
 import logging
 import sys
+from urllib.parse import urlparse
 
 # External libraries
-from bs4 import BeautifulSoup as bs
+from bs4 import BeautifulSoup
 from slugify import slugify
 import frontmatter
 import spotipy
@@ -31,7 +32,7 @@ REDIRECT_PREFIX = '/episodes/'
 # URLs from Podcast sites
 PODCAST_APPLE_URL = "https://itunes.apple.com/lookup?id=1603082924&media=podcast&entity=podcastEpisode&limit=100"
 SPOTIFY_SHOW_ID = "0tJRC0UsObPCWLmmzmOkIs"
-# TODO Add episode single view link retrieval for Google Podcasts
+PODCAST_GOOGLE_URL = "https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5yZWRjaXJjbGUuY29tLzBlY2ZkZmQ3LWZkYTEtNGMzZC05NTE1LTQ3NjcyN2Y5ZGY1ZQ"
 # TODO Add episode single view link retrieval for Amazon Music
 
 # From the Django project
@@ -181,8 +182,9 @@ def sync_podcast_episodes(rss_feed, path_md_files, path_img_files, spotify_clien
     feed_response.encoding = 'utf-8'
 
     logging.info("Requesting content from Podcast sites ...")
-    apple_content = get_json_content_from_url(PODCAST_APPLE_URL)
+    apple_podcast_content = get_json_content_from_url(PODCAST_APPLE_URL)
     spotify_episodes = spotify_client.show_episodes(SPOTIFY_SHOW_ID, limit=15, offset=0, market="DE")
+    google_podcast_content = get_raw_content_from_url(PODCAST_GOOGLE_URL)
     logging.info("Requesting content from Podcast sites ... Successful")
 
     logging.info("Processing Podcast Episode items ...")
@@ -209,7 +211,7 @@ def sync_podcast_episodes(rss_feed, path_md_files, path_img_files, spotify_clien
 
         # Pretty print html to make it somehow
         # human debuggable.
-        soup = bs(description_html, features="lxml")
+        soup = BeautifulSoup(description_html, features="lxml")
         prettyHtml = soup.prettify()
 
         # Remove <html> and <body> tags
@@ -270,8 +272,8 @@ def sync_podcast_episodes(rss_feed, path_md_files, path_img_files, spotify_clien
             'headlines': headline_info,
             'chapter': chapter,
             'spotify': get_episode_link_from_spotify(spotify_episodes, title),
-            'google_podcasts': '',
-            'apple_podcasts': get_episode_link_from_apple(apple_content, title),
+            'google_podcasts': get_episode_link_from_google(google_podcast_content, title),
+            'apple_podcasts': get_episode_link_from_apple(apple_podcast_content, title),
             'amazon_music': ''
         }
 
@@ -400,6 +402,18 @@ def get_json_content_from_url(u):
     return content
 
 
+def get_raw_content_from_url(u):
+    """
+    Retrieves the raw content from address u.
+    """
+    content = ""
+    with requests.get(u, stream=True) as r:
+        r.raise_for_status()
+        content = r.content
+
+    return content
+
+
 def get_episode_link_from_apple(content, title: str) -> str:
     """
     Parses the Apple Episode Single View link (matching with title) from content.
@@ -446,6 +460,39 @@ def get_episode_link_from_spotify(episodes, title: str) -> str:
     for episode in episodes["items"]:
         if episode["name"] == title:
             u = episode["external_urls"]["spotify"]
+
+    return u
+
+
+def get_episode_link_from_google(content, title: str) -> str:
+    """
+    Google Podcast does not offer an API, xml feed or anything like this.
+
+    Hence we do typical HTML link scraping.
+    There is no error checking at all, because we want this function to
+    fail if there is anything changing.
+
+    If no title matches, it will return an empty string.
+    """
+    scheme = "https"
+    hostname = "podcasts.google.com"
+
+    soup = BeautifulSoup(content, features="html.parser")
+    items = soup.findAll('div', text = re.compile(title))
+
+    u = ""
+    for item in items:
+        link = item.findParent("a").get('href')
+        o = urlparse(link)
+
+        # The links we get are relative like
+        #   ./feed/...
+        # We need absolute URLs.
+        o = o._replace(path=trim_prefix(o.path, "./"))
+        u = o._replace(scheme=scheme, netloc=hostname).geturl()
+
+        # First link is enough.
+        break
 
     return u
 
