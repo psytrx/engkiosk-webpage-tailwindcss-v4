@@ -9,14 +9,17 @@ import datetime
 import yaml
 import html
 import toml
+import os
 from os.path import exists, isfile, join
-from os import listdir
 import logging
+import sys
 
 # External libraries
 from bs4 import BeautifulSoup as bs
 from slugify import slugify
 import frontmatter
+import spotipy
+from spotipy.oauth2 import SpotifyClientCredentials
 
 # Global variables
 PODCAST_RSS_FEED = "https://feeds.redcircle.com/0ecfdfd7-fda1-4c3d-9515-476727f9df5e"
@@ -27,8 +30,7 @@ REDIRECT_PREFIX = '/episodes/'
 
 # URLs from Podcast sites
 PODCAST_APPLE_URL = "https://itunes.apple.com/lookup?id=1603082924&media=podcast&entity=podcastEpisode&limit=100"
-
-# TODO Add episode single view link retrieval for Spotify
+SPOTIFY_SHOW_ID = "0tJRC0UsObPCWLmmzmOkIs"
 # TODO Add episode single view link retrieval for Google Podcasts
 # TODO Add episode single view link retrieval for Amazon Music
 
@@ -146,7 +148,7 @@ def get_chapter_from_description(description):
     return chapter
 
 
-def sync_podcast_episodes(rss_feed, path_md_files, path_img_files):
+def sync_podcast_episodes(rss_feed, path_md_files, path_img_files, spotify_client):
     """
     Syncs the Podcast Episodes from the RSS feed down to disk
     and prepares the content to match the structure of the used
@@ -180,6 +182,7 @@ def sync_podcast_episodes(rss_feed, path_md_files, path_img_files):
 
     logging.info("Requesting content from Podcast sites ...")
     apple_content = get_json_content_from_url(PODCAST_APPLE_URL)
+    spotify_episodes = spotify_client.show_episodes(SPOTIFY_SHOW_ID, limit=15, offset=0, market="DE")
     logging.info("Requesting content from Podcast sites ... Successful")
 
     logging.info("Processing Podcast Episode items ...")
@@ -266,7 +269,7 @@ def sync_podcast_episodes(rss_feed, path_md_files, path_img_files):
             'description': description_short,
             'headlines': headline_info,
             'chapter': chapter,
-            'spotify': '',
+            'spotify': get_episode_link_from_spotify(spotify_episodes, title),
             'google_podcasts': '',
             'apple_podcasts': get_episode_link_from_apple(apple_content, title),
             'amazon_music': ''
@@ -352,7 +355,7 @@ def create_redirects(file_to_parse, path_md_files, redirect_prefix):
 
 
     # Get existing podcast episodes
-    episodes = [f for f in listdir(path_md_files) if isfile(join(path_md_files, f)) and f.endswith('.md')]
+    episodes = [f for f in os.listdir(path_md_files) if isfile(join(path_md_files, f)) and f.endswith('.md')]
 
     episode_number_regex = re.compile('([0-9]*)-')
     for episode in episodes:
@@ -397,19 +400,52 @@ def get_json_content_from_url(u):
     return content
 
 
-def get_episode_link_from_apple(content, title):
+def get_episode_link_from_apple(content, title: str) -> str:
     """
     Parses the Apple Episode Single View link (matching with title) from content.
     content is a JSON representation of the Apple Podcast Engineering Kiosk site.
     title is the full title of a single episode.
 
-    If no title matches, it will return an empty link.
+    If no title matches, it will return an empty string.
     """
     u = ""
     tracks = content["results"]
     for track in tracks:
         if track["trackName"] == title:
             u = track["trackViewUrl"]
+
+    return u
+
+
+def create_spotify_client(app_id: str, app_secret: str):
+    """
+    Creates a spotify api client based on the application
+    secrets app_id and app_secret.
+
+    Docs: https://github.com/plamere/spotipy
+    Docs: https://developer.spotify.com/documentation/web-api/reference/#/
+    """
+    spotify_client = spotipy.Spotify(
+        auth_manager=SpotifyClientCredentials(
+            client_id=app_id,
+            client_secret=app_secret
+        )
+    )
+    return spotify_client
+
+
+def get_episode_link_from_spotify(episodes, title: str) -> str:
+    """
+    Parses the Spotify Episode Single View link (matching with title) from episodes list.
+    episodes is a JSON representation from the Spotify API / Engineering Kiosk Show.
+    title is the full title of a single episode.
+
+    If no title matches, it will return an empty string.
+    """
+    u = ""
+    for episode in episodes["items"]:
+        if episode["name"] == title:
+            u = episode["external_urls"]["spotify"]
 
     return u
 
@@ -438,9 +474,19 @@ if __name__ == "__main__":
         ]
     )
 
+    # Bootstrapping Spotify API client
+    SPOTIFY_APP_CLIENT_ID = os.getenv('SPOTIFY_APP_CLIENT_ID')
+    SPOTIFY_APP_CLIENT_SECRET = os.getenv('SPOTIFY_APP_CLIENT_SECRET')
+    if not SPOTIFY_APP_CLIENT_ID or not SPOTIFY_APP_CLIENT_SECRET:
+        logging.error("Env vars SPOTIFY_APP_CLIENT_ID or SPOTIFY_APP_CLIENT_SECRET are not set properly.")
+        logging.error("Please double check and restart.")
+        sys.exit(1)
+
+    spotify_client = create_spotify_client(SPOTIFY_APP_CLIENT_ID, SPOTIFY_APP_CLIENT_SECRET)
+
     match args.Mode:
         case "sync":
-            sync_podcast_episodes(PODCAST_RSS_FEED, PATH_MARKDOWN_FILES, PATH_IMAGE_FILES)
+            sync_podcast_episodes(PODCAST_RSS_FEED, PATH_MARKDOWN_FILES, PATH_IMAGE_FILES, spotify_client)
         case "redirect":
             # TODO Once Python 3.11 is out, replace toml library with stdlib
             # See https://peps.python.org/pep-0680/
