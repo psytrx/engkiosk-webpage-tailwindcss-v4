@@ -209,17 +209,20 @@ def sync_podcast_episodes(rss_feed, path_md_files, path_img_files, spotify_clien
         html_content, headlines = parse_headlines_from_html(description)
         description_html = html_content
 
-        # Pretty print html to make it somehow
-        # human debuggable.
-        soup = BeautifulSoup(description_html, features="lxml")
-        prettyHtml = soup.prettify()
-
-        # Remove <html> and <body> tags
-        prettyHtml = prettyHtml.replace("<html>", "")
-        prettyHtml = prettyHtml.replace("<body>", "")
-        prettyHtml = prettyHtml.replace("</body>", "")
-        prettyHtml = prettyHtml.replace("</html>", "")
-        prettyHtml = prettyHtml.strip()
+        # Previously we had a logic here to pretty print
+        # the HTML via BeautifulSoup and oup.prettify().
+        # We removed it, because Astro (the used static side generator)
+        # had some issues with HTML parsing within markdown files like
+        #   - https://github.com/withastro/astro/issues/3529
+        #   - https://github.com/withastro/astro/issues/3642
+        # Hence we removed the logic.
+        #
+        # In the end, it was only for us humans to make it a bit more readable
+        # in the markdown files. The content is managed in our Podcast platform
+        # (RedCircle) and we don't modify the Markdown files manually at all.
+        #
+        # Thats why we got rid of the prettify logic.
+        html_content = description_html.strip()
 
         chapter = get_chapter_from_description(description)
 
@@ -307,8 +310,7 @@ def sync_podcast_episodes(rss_feed, path_md_files, path_img_files, spotify_clien
             '---\n'
             f'{content_yaml}\n'
             '---\n'
-            '\n'
-            f'{prettyHtml}'
+            f'{html_content}'
         )
 
         # Write file to disk as a new podcast episode
