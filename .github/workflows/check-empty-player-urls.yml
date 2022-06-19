@@ -17,5 +17,8 @@ jobs:
           python-version-file: 'scripts/.python-version'
           cache: 'pip'
 
+      - name: Install python dependencies
+        run: pip install -r scripts/requirements.txt
+
       - name: Run make episode-check
         run: make episode-check
