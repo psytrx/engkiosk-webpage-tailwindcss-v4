@@ -474,18 +474,18 @@ if __name__ == "__main__":
         ]
     )
 
-    # Bootstrapping Spotify API client
-    SPOTIFY_APP_CLIENT_ID = os.getenv('SPOTIFY_APP_CLIENT_ID')
-    SPOTIFY_APP_CLIENT_SECRET = os.getenv('SPOTIFY_APP_CLIENT_SECRET')
-    if not SPOTIFY_APP_CLIENT_ID or not SPOTIFY_APP_CLIENT_SECRET:
-        logging.error("Env vars SPOTIFY_APP_CLIENT_ID or SPOTIFY_APP_CLIENT_SECRET are not set properly.")
-        logging.error("Please double check and restart.")
-        sys.exit(1)
-
-    spotify_client = create_spotify_client(SPOTIFY_APP_CLIENT_ID, SPOTIFY_APP_CLIENT_SECRET)
-
     match args.Mode:
         case "sync":
+            # Bootstrapping Spotify API client
+            SPOTIFY_APP_CLIENT_ID = os.getenv('SPOTIFY_APP_CLIENT_ID')
+            SPOTIFY_APP_CLIENT_SECRET = os.getenv('SPOTIFY_APP_CLIENT_SECRET')
+            if not SPOTIFY_APP_CLIENT_ID or not SPOTIFY_APP_CLIENT_SECRET:
+                logging.error("Env vars SPOTIFY_APP_CLIENT_ID or SPOTIFY_APP_CLIENT_SECRET are not set properly.")
+                logging.error("Please double check and restart.")
+                sys.exit(1)
+
+            spotify_client = create_spotify_client(SPOTIFY_APP_CLIENT_ID, SPOTIFY_APP_CLIENT_SECRET)
+
             sync_podcast_episodes(PODCAST_RSS_FEED, PATH_MARKDOWN_FILES, PATH_IMAGE_FILES, spotify_client)
         case "redirect":
             # TODO Once Python 3.11 is out, replace toml library with stdlib
