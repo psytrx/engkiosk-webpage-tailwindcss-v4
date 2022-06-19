@@ -1,0 +1,21 @@
+name: Check empty player URLs
+
+on:
+  schedule:
+    - cron: "15 4 1 * *" # At 04:05 on day-of-month 1.
+  workflow_dispatch:
+
+jobs:
+  publishing:
+    name: Check if all detail links for Podcast platforms are set
+    runs-on: ubuntu-20.04
+
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-python@v4
+        with:
+          python-version-file: 'scripts/.python-version'
+          cache: 'pip'
+
+      - name: Run make episode-check
+        run: make episode-check
