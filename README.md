@@ -66,3 +66,10 @@ options:
 This page is hosted on Netlify.
 
 Docs for the file based configuration of Netlify are available at https://docs.netlify.com/configure-builds/file-based-configuration/
+
+## Blog posts
+
+### Image sizes
+
+* Thumbnail (blog article preview): 358 x 272 px
+* Header image (inside a blog post): 1440 x 641 px
