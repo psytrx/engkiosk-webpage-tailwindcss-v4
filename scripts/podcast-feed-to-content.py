@@ -299,7 +299,8 @@ def sync_podcast_episodes(rss_feed, path_md_files, path_img_files, spotify_clien
                     'spotify',
                     'google_podcasts',
                     'apple_podcasts',
-                    'amazon_music'
+                    'amazon_music',
+                    'tags',
                 ]
                 for key in keys_to_keep:
                     val = episode.get(key)
