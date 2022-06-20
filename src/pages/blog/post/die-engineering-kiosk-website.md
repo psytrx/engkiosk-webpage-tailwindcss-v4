@@ -8,8 +8,8 @@ tags: [
     "Static site Generator"
 ]
 date: 2022-06-20
-thumbnail: /images/blog-content/eigene-website/thumbnail-podcast-episode-overview.png
-headerimage: /images/blog-content/eigene-website/headerimage-podcast-episode-overview.png
+thumbnail: /images/blog-content/eigene-website/brands.png
+headerimage: /images/blog-content/eigene-website/podcast-episode-overview.png
 setup: |
   import PodcastEpisodeBlogpostAd from '../../../components/PodcastEpisodeBlogpostAd.astro'
 ---
@@ -76,7 +76,7 @@ Warum?
 * Astro hat trotz hoher Flexibilität einen [simplen Content und Routing Ansatz](https://docs.astro.build/en/core-concepts/routing/)
 * Astro verfolgt einen [Partial Hydration](https://docs.astro.build/en/core-concepts/partial-hydration/) Ansatz, der eine Webseite ohne JavaScript auf der Client-Seite erlaubt. 
 
-![Eingesetzte Technologien: Astro, tailwind css, Netlify und GitHub](/images/blog-content/eigene-website/brand-logos.png "Eingesetzte Technologien: Astro, tailwind css, Netlify und GitHub")
+![Eingesetzte Technologien: Astro, tailwind css, Netlify und GitHub](/images/blog-content/eigene-website/brands.png "Eingesetzte Technologien: Astro, tailwind css, Netlify und GitHub")
 
 Beim Hosting verlassen wir uns [Netlify](https://www.netlify.com/).
 Mit der direkten [Anbindung an GitHub](https://github.com/apps/netlify) werden sogar bei [Pull Requests Vorschau-Umgebungen automatisch erzeugt](https://github.com/EngineeringKiosk/webpage/pull/54).
