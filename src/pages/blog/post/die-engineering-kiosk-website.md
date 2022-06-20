@@ -2,7 +2,7 @@
 layout: ../../../layouts/blog-post.astro
 title: "Die Engineering Kiosk Website"
 subtitle: Der Engineering Kiosk hat eine eigene Website. Warum jetzt erst, was wir uns erhoffen und womit diese technisch umgesetzt wurde.
-description: "tl:dr: Der Enginering Kiosk hat nach 22 Podcast-Episoden eine eigene Website. Gebaut mit dem static site builder [Astro](https://astro.build/). Source code ist auf [EngineeringKiosk/webpage @ Github](https://github.com/EngineeringKiosk/webpage) verfügbar."
+description: "tl:dr: Der Engineering Kiosk hat nach 22 Podcast-Episoden eine eigene Website. Gebaut mit dem static site builder [Astro](https://astro.build/). Source code ist auf [GitHub:EngineeringKiosk/webpage](https://github.com/EngineeringKiosk/webpage) verfügbar."
 tags: [
     "Website",
     "Static site Generator"
@@ -22,26 +22,26 @@ Warum erst jetzt und nicht mit dem Start vom Podcast, wieso wir überhaupt eine 
 
 Der Engineering Kiosk ist als Side Project von Andy und Wolfgang gestartet, welcher neben dem Beruf, Familie und weiteren Verpflichtungen betrieben wird.
 Die oberste Priorität lautete: [**Lean (schlank) starten und iterativ arbeiten**](https://de.wikipedia.org/wiki/Lean_Development).
-Dies zwingt einen jeden Tag erneut zu fragen, was man für den Start wirklich braucht und was *nice to have* ist.
-Die Website war *nice to have*, da es primär um den Podcast ging.
+Dieses bedeutet ein ständiges Hinterfragen, ob eine Funktion für den Start wirklich nötig, oder doch nur *nice to have* ist.
+Die Website war *nice to have*, da die Priorität auf dem Podcast selbst lag: Das Kernprodukt.
 
 Weiterhin benötigt die Erstellung und Aufbau einer eigenen Website Zeit.
 **Zeit**, die wir zu Anfang primär in die **Aufnahme neuer Episoden** und den Aufbau einer Hörerschaft **investiert** haben.
 Natürlich gibt es sehr gute Website-Baukästen wie [Wix](https://de.wix.com/) oder [Jimdo](https://www.jimdo.com/) oder gute (Content Management)-Systeme wie [Wordpress](https://wordpress.com/).
-Dennoch ist es nicht innerhalb von wenigen Stunden getan.
+Dennoch ist es nur selten innerhalb von wenigen Stunden getan.
 
-Zu guter letzt benutzen wir [RedCircle](https://redcircle.com/) als **Platform** für das Hosting und die Verteilung von Podcasts.
+Zu guter letzt benutzen wir [RedCircle](https://redcircle.com/) als **Plattform** für das Hosting und die Verteilung von Podcasts.
 Eines der Features ist eine **simple Website**: [Engineering Kiosk Podcast auf RedCircle](https://redcircle.com/shows/engineeringkiosk).
-Diese Webseite war zum start "gut genug".
+Diese Webseite war für den Start "gut genug".
 
 ## Warum braucht der Engineering Kiosk überhaupt eine eigene Website?
 
-Die [Engineering Kiosk Podcast von RedCircle](https://redcircle.com/shows/engineeringkiosk) war sehr gut für den Start, hat jedoch einiger Nachteile:
+Die [Engineering Kiosk Podcast von RedCircle](https://redcircle.com/shows/engineeringkiosk) war für den Start ausreichend, hat jedoch einige Nachteile:
 
 - Funktionsumfang der Website ist sehr begrenzt
 - Anpassungen sind nicht möglich
-- Content-Fokus alleinig auf den Podcast  
-- Keine analytischen Daten (z.B. Wie viele Personen bsuchen die Website? Wer drückt bei welcher Episode auf Play?)
+- Content-Fokus alleinig auf den Podcast (keine Zusatzinfos zu z.b. uns als Podcast Hosts) 
+- Keine analytischen Daten (z.B. Wie viele Personen besuchen die Website? Wer drückt bei welcher Episode auf Play?)
 - Keine Kontrolle
 
 Diese Nachteile waren uns zum Start vom Engineering Kiosk bewusst.
@@ -50,9 +50,9 @@ Mittel- und Langfristig limitieren diese Nachteile jedoch das Potential vom Engi
 Mit unserer eigenen Website erhoffen wir uns:
 
 * Neue Hörer zu akquirieren
-* Themen aus unseren Episoden als Blog posts zu veröffentlichen (automatisches transcripten der Podcast-Episoden mit unserem Dialekt ist schwierig)
+* Themen aus unseren Episoden als Blog Artikel zu veröffentlichen (automatisches Transkription der Podcast-Episoden mit unserem Dialekt ist schwierig)
 * Das Projekt "Engineering Kiosk" auch im Suchmaschinen-Ranking auftauchen zu lassen
-* Durch analytische Daten mehr Einblick in das zu bekommen, was euch interessiert und wie Ihr die Website benutzt
+* Durch analytische Daten mehr Einblick zu bekommen, vor allem in die Interessen unserer Hörerinnen und Hörer
 * Die Kontrolle über unseren eigenen Content zu behalten
 
 <PodcastEpisodeBlogpostAd episode="21" />
@@ -64,9 +64,9 @@ Primär weil
 
 * Wolfgang und Andy keine Designer oder Frontend-Engineers sind
 * andere dies deutlich besser können
-* Tailwind CSS recht simpel zu nutzen ist
+* Tailwind CSS recht simpel zu nutzen ist, dabei aber auch gut erweiterbar ist
 
-Als Platform kam [Astro, ein neuer Static Site Builder](https://astro.build/), zum Einsatz.
+Als Plattform kam [Astro, ein neuer Static Site Builder](https://astro.build/), zum Einsatz.
 Ein auf JavaScript und Komponenten basierter Static Site Generator mit einem breiten Featureset (z.B. Server Side Rendering) und einem hohen Fokus auf Developer Experience.
 Warum?
 
@@ -74,17 +74,18 @@ Warum?
 * Wolfgang bevorzugte eine JavaScript basierte Lösung und Andy hatte bereits minimale Erfahrungen mit Astro (durch den [trivago tech blog](https://tech.trivago.com))
 * Astro bietet viele Vorlagen unter [astro.new](https://astro.new/)
 * Astro hat trotz hoher Flexibilität einen [simplen Content und Routing Ansatz](https://docs.astro.build/en/core-concepts/routing/)
+* Astro verfolgt einen [Partial Hydration](https://docs.astro.build/en/core-concepts/partial-hydration/) Ansatz, der eine Webseite ohne JavaScript auf der Client-Seite erlaubt. 
 
 ![Eingesetzte Technologien: Astro, tailwind css, Netlify und GitHub](/images/blog-content/eigene-website/brand-logos.png "Eingesetzte Technologien: Astro, tailwind css, Netlify und GitHub")
 
 Beim Hosting verlassen wir uns [Netlify](https://www.netlify.com/).
 Mit der direkten [Anbindung an GitHub](https://github.com/apps/netlify) werden sogar bei [Pull Requests Vorschau-Umgebungen automatisch erzeugt](https://github.com/EngineeringKiosk/webpage/pull/54).
 
-Als Entwicklungs- und Kollaborations-Platform nutzen wir Github.
+Als Entwicklungs- und Kollaborations-Plattform nutzen wir Github.
 Der Source Code ist auch öffentlich zugänglich: [Engineering Kiosk Webpage @ GitHub](https://github.com/EngineeringKiosk/webpage).
 
 - Template von shuffle https://shuffle.dev/
-- Platform / Static Site Generator
+- Plattform / Static Site Generator
 
 ### Boring Software und der Begriff `astro` bei Google 
 
@@ -102,6 +103,8 @@ Primär weil
 Weil dieses Projekt noch recht jung (und innovative) ist und das Wort *Astro* ein Teil des Wortes *Astrologie* ist, war die klassische Investigation von Fehlern durch Google nicht ganz einfach.
 Die meisten Suchtreffer hatten bei dem Wort *Astro* etwas mit Horoskopen und dem Weltraum zu tun.
 Das [GitHub-Repository withastro/astro](https://github.com/withastro/astro), die [Dokumentation](https://docs.astro.build/en/getting-started/) oder die [Discord Community](https://astro.build/chat) waren deutlich hilfreicher. 
+
+<PodcastEpisodeBlogpostAd episode="21" />
 
 ## Euer Feedback
 
