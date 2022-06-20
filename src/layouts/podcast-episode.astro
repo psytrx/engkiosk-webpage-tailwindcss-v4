@@ -110,7 +110,10 @@ headline_split.forEach(function callback(val) {
               					<ul class="pb-6 mb-8 border-b border-coolGray-100">
                 					<li class="mb-2"><a class="inline-block py-2 text-coolGray-400 hover:text-coolGray-500 font-semibold" href="#headline-content">Worum geht's?</a></li>
 									{ header.map((element) => <li class="mb-2"><a class="inline-block py-3 text-coolGray-400 hover:text-coolGray-500 font-semibold" href="#${element.slug}">{element.title}</a></li>) }
-								  </ul>
+								</ul>
+								{ content.tags.length > 0 && (<div class="mb-8 border-b border-coolGray-100">
+									{ content.tags.map((element) => <span class="inline-block py-1 px-3 mb-6 mr-3 text-xs leading-5 text-yellow-500 font-medium uppercase bg-yellow-100 rounded-full shadow-sm">{element}</span>) }
+								</div>)}
               					<div class="flex items-center">
 									<a class="inline-flex mr-4 items-center justify-center py-2 px-4 text-coolGray-300 border border-coolGray-200 hover:border-coolGray-300 rounded-md shadow-md transition duration-200" id="copy-url" data-href="${canonicalURL}" href="#">
 										<svg width="20" height="16" viewbox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
