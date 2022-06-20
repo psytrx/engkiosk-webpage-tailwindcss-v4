@@ -1,0 +1,19 @@
+/**
+
+Used to style a single blog post preview.
+Due to the Markdown convertion, be have static HTML.
+*/
+
+p.text {
+    @apply mb-4;
+    @apply text-base;
+    @apply md:text-lg;
+    @apply text-coolGray-400;
+    @apply font-medium;
+
+    a.text {
+        @apply text-yellow-500;
+        @apply hover:text-yellow-600;
+        @apply underline;
+    }
+}

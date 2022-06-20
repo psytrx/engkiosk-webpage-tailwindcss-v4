@@ -3,17 +3,15 @@ import Footer from '../components/Footer.astro';
 import MainHead from '../components/MainHead.astro';
 import Nav from '../components/Nav.astro';
 import HostPreview from '../components/HostPreview.astro';
-// TODO Activate blog
-// import BlogPostListing from '../components/BlogPostListing.astro';
+import BlogPostListing from '../components/BlogPostListing.astro';
 import PodcastEpisodeListing from '../components/PodcastEpisodeListing.astro';
 
 let title = 'Engineering Kiosk - Der Software-Engineering-Podcast';
 let description = 'Der deutschsprachige Software-Engineering-Podcast mit Wolfgang Gassler und Andy Grunwald rund um die Themen Engineering-Kultur, Open Source und Technologie.';
 let canonicalURL = Astro.canonicalURL;
 
-// TODO Activate blog
 // Data Fetching: List all Markdown posts in the repo.
-let allPosts = await Astro.glob('./post/*.md');
+let allPosts = await Astro.glob('./blog/post/*.md');
 allPosts.sort((a, b) => new Date(b.frontmatter.date).valueOf() - new Date(a.frontmatter.date).valueOf());
 
 // Determine the latest episode
@@ -75,9 +73,7 @@ let episode = episodesToShow[0];
 
 			<PodcastEpisodeListing numberOfItems=6 />
 
-      <!-- TODO Activate Blog
-			<BlogPostListing />
-      -->
+			<BlogPostListing numberOfItems=6 />
 
       <!-- Team -->
 			<section class="py-24 bg-coolGray-50" style="background-image: url('/images/elements/pattern-light-big.svg'); background-position: center;">
