@@ -277,7 +277,8 @@ def sync_podcast_episodes(rss_feed, path_md_files, path_img_files, spotify_clien
             'spotify': get_episode_link_from_spotify(spotify_episodes, title),
             'google_podcasts': get_episode_link_from_google(google_podcast_content, title),
             'apple_podcasts': get_episode_link_from_apple(apple_podcast_content, title),
-            'amazon_music': ''
+            'amazon_music': '',
+            'tags': [],
         }
 
         full_file_path = f'{path_md_files}/{filename}'

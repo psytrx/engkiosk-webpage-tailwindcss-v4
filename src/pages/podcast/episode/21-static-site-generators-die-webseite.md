@@ -42,6 +42,7 @@ headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts
 image: /images/podcast/episode/21-static-site-generators-die-webseite.jpg
 layout: ../../../layouts/podcast-episode.astro
 spotify: https://open.spotify.com/episode/7FpteXc95QPAnKihOuUUpX?si=9ea7bd26f6ec4858
+tags: []
 title: '#21 Static Site Generators & DIE Webseite'
 
 ---

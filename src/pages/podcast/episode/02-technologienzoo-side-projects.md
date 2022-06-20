@@ -72,6 +72,7 @@ headlines: "sprungmarken::Sprungmarken||erwahnte-side-projects::Erw\xE4hnte Side
 image: /images/podcast/episode/02-technologienzoo-side-projects.jpg
 layout: ../../../layouts/podcast-episode.astro
 spotify: https://open.spotify.com/episode/1OEVURealPs0TxTg4DGLFR
+tags: []
 title: '#02 Technologienzoo Side Projects'
 
 ---

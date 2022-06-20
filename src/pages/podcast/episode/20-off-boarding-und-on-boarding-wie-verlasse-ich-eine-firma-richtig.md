@@ -45,6 +45,7 @@ headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts
 image: /images/podcast/episode/20-off-boarding-und-on-boarding-wie-verlasse-ich-eine-firma-richtig.jpg
 layout: ../../../layouts/podcast-episode.astro
 spotify: https://open.spotify.com/episode/3H3C7ZKN2XsoJGBh8f5zRn
+tags: []
 title: '#20 Off-Boarding und On-Boarding: Wie verlasse ich eine Firma richtig?'
 
 ---

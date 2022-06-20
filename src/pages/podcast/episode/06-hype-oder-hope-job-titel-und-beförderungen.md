@@ -39,6 +39,7 @@ headlines: "links::Links||erwahnte-personen::Erw\xE4hnte Personen||sprungmarken:
 image: /images/podcast/episode/07-die-freelance-freiheit.jpg
 layout: ../../../layouts/podcast-episode.astro
 spotify: https://open.spotify.com/episode/4mkmeVaXD6u8Tf9mpcBWd4
+tags: []
 title: "#06 Hype oder Hope: Job-Titel und Bef\xF6rderungen"
 
 ---

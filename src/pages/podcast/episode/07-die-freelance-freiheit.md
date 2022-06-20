@@ -59,6 +59,7 @@ headlines: links::Links||anderes::Anderes||sprungmarken::Sprungmarken||hosts::Ho
 image: /images/podcast/episode/07-die-freelance-freiheit.jpg
 layout: ../../../layouts/podcast-episode.astro
 spotify: https://open.spotify.com/episode/5RCZ1mHsBVN83lWXu49xqQ
+tags: []
 title: '#07 Die Freelance Freiheit'
 
 ---
