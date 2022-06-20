@@ -16,11 +16,13 @@ allEpisodes.sort((a, b) => new Date(b.frontmatter.date).valueOf() - new Date(a.f
 // only limit it if requested
 let episodesToShow = allEpisodes;
 let showAllButton = false;
+let showTags = true;
 let headline = "Alle Episoden vom Engineering Kiosk";
 if (numberOfItems > 0) {
 	headline = "Die aktuellsten Episoden";
 	episodesToShow = allEpisodes.slice(0, numberOfItems);
 	showAllButton = true;
+	showTags = false;
 }
 
 ---
@@ -49,7 +51,7 @@ if (numberOfItems > 0) {
 			}
 		</div>
 		<div class="flex flex-wrap -mx-4">
-			{episodesToShow.map((episode, i) => <PodcastEpisodePreview episode={episode} n={i} />)}
+			{episodesToShow.map((episode, i) => <PodcastEpisodePreview episode={episode} showTags={showTags} />)}
 		</div>
 	</div>
 </section>
