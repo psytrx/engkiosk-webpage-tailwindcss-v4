@@ -7,7 +7,7 @@ tags: [
     "Website",
     "Static site Generator"
 ]
-date: 2022-06-19
+date: 2022-06-20
 thumbnail: /images/blog-content/eigene-website/thumbnail-podcast-episode-overview.png
 headerimage: /images/blog-content/eigene-website/headerimage-podcast-episode-overview.png
 setup: |
