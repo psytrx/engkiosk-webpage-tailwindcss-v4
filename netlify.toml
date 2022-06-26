@@ -151,6 +151,12 @@ to = "/podcast/episode/24-infrastructure-as-code-oder-old-man-yells-at-cloud?pk_
 status = 301
 force = true
 
+[[redirects]]
+from = "/podcast/rss"
+to = "https://feeds.redcircle.com/0ecfdfd7-fda1-4c3d-9515-476727f9df5e"
+status = 302
+force = true
+
 [build]
 publish = "dist/"
 command = "astro build"
