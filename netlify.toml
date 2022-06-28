@@ -157,6 +157,12 @@ to = "https://feeds.redcircle.com/0ecfdfd7-fda1-4c3d-9515-476727f9df5e"
 status = 302
 force = true
 
+[[redirects]]
+from = "/episodes/25"
+to = "/podcast/episode/25-tech-entlassungswellen-job-interview-skills?pk_campaign=shortlink"
+status = 301
+force = true
+
 [build]
 publish = "dist/"
 command = "astro build"
