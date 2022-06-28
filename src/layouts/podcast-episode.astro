@@ -140,24 +140,28 @@ headline_split.forEach(function callback(val) {
 										</div>
 									<div class="container px-4 mx-auto">
 										<div class="flex flex-wrap justify-center">
-											{content.apple_podcasts && (<div class="w-1/2 md:w-1/3 lg:w-1/5 px-4 mb-8 lg:mb-0">
-												<a href="${content.apple_podcasts}" title="Engineering Kiosk ${content.title} bei Apple Podcasts">
-													<img class="mx-auto" src="/images/brands/apple-podcasts.svg" alt="Engineering Kiosk ${content.title} bei Apple Podcasts">
+											{content.apple_podcasts && (<div class="m-2">
+												<a class="flex items-center" href="${content.apple_podcasts}" title="Engineering Kiosk ${content.title} bei Apple Podcasts">
+													<img class="w-12" src="/images/brands/apple.svg" alt="Engineering Kiosk ${content.title} bei Apple Podcasts">
+													<span class="text-lg m-2">Apple</span>
 												</a>
 											</div>)}
-											{content.spotify && (<div class="w-1/2 md:w-1/3 lg:w-1/5 px-4 mb-8 lg:mb-0">
-												<a href="${content.spotify}" title="Engineering Kiosk ${content.title} auf Spotify">
-													<img class="mx-auto" src="/images/brands/spotify.svg" alt="Engineering Kiosk ${content.title} auf Spotify">
+											{content.spotify && (<div class="m-2">
+												<a class="flex items-center" href="${content.spotify}" title="Engineering Kiosk ${content.title} auf Spotify">
+													<img class="w-12" src="/images/brands/spotify.svg" alt="Engineering Kiosk ${content.title} auf Spotify">
+													<span class="text-lg m-2">Spotify</span>
 												</a>
 											</div>)}
-											{content.google_podcasts && (<div class="w-1/2 md:w-1/3 lg:w-1/5 px-4 mb-8 lg:mb-0">
-												<a href="${content.google_podcasts}" title="Engineering Kiosk ${content.title} bei Google Podcasts">
-													<img class="mx-auto" src="/images/brands/google-podcasts.svg" alt="Engineering Kiosk ${content.title} bei Google Podcasts">
+											{content.google_podcasts && (<div class="m-2">
+												<a class="flex items-center"  href="${content.google_podcasts}" title="Engineering Kiosk ${content.title} bei Google Podcasts">
+													<img class="w-12" src="/images/brands/google.svg" alt="Engineering Kiosk ${content.title} auf Google Podcasts">
+													<span class="text-lg m-2">Google</span>
 												</a>
 											</div>)}
-											{content.amazon_music && (<div class="w-1/2 md:w-1/3 lg:w-1/5 px-4 mb-8 lg:mb-0">
-												<a href="${content.amazon_music}" title="Engineering Kiosk ${content.title} bei Amazon Music">
-													<img class="mx-auto" src="/images/brands/amazon-music.svg" alt="Engineering Kiosk ${content.title} bei Amazon Music">
+											{content.amazon_music && (<div class="m-2">
+												<a class="flex items-center"  href="${content.amazon_music}" title="Engineering Kiosk ${content.title} bei Amazon Music">
+													<img class="w-12" src="/images/brands/amazonmusic_black.svg" alt="Engineering Kiosk ${content.title} auf Amazon Music">
+													<span class="text-lg m-2">Amazon</span>
 												</a>
 											</div>)}
 										</div>
