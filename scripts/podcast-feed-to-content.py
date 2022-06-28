@@ -349,13 +349,16 @@ def create_redirects(file_to_parse, path_md_files, redirect_prefix):
 
     # Restructure existing redirects into a hashmap
     # for easier lookup
-    redirect_episode_number_regex = re.compile(f"{redirect_prefix}([0-9]*)$")
+    redirect_episode_number_regex = re.compile(f"^{redirect_prefix}([0-9]*)$")
     redirect_map = {}
     for redirect in parsed_toml['redirects']:
         # Find the number of the episode
-        redirect_episode_number = re.findall(redirect_episode_number_regex, redirect["from"])[0]
-        if redirect_episode_number == "":
+        redirect_episode_number = re.findall(redirect_episode_number_regex, redirect["from"])
+        # When there is no match, the list is empty
+        if not redirect_episode_number:
             continue
+
+        redirect_episode_number = redirect_episode_number[0]
 
         redirect_map[redirect_episode_number] = redirect
 
