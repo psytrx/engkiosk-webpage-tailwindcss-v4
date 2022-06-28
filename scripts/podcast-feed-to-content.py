@@ -14,6 +14,7 @@ from os.path import exists, isfile, join
 import logging
 import sys
 from urllib.parse import urlparse
+import pathlib
 
 # External libraries
 from bs4 import BeautifulSoup
@@ -21,6 +22,7 @@ from slugify import slugify
 import frontmatter
 import spotipy
 from spotipy.oauth2 import SpotifyClientCredentials
+from PIL import Image
 
 # Global variables
 PODCAST_RSS_FEED = "https://feeds.redcircle.com/0ecfdfd7-fda1-4c3d-9515-476727f9df5e"
@@ -249,10 +251,20 @@ def sync_podcast_episodes(rss_feed, path_md_files, path_img_files, spotify_clien
         image = item.find('{http://www.itunes.com/dtds/podcast-1.0.dtd}image')
         if image is not None:
             image = image.attrib.get('href')
+            file_ext = pathlib.Path(image).suffix
             image_filename = slugify(title, True)
             # File extension will be determined in download_file
             image_filename = f"{path_img_files}/{image_filename}"
-            image_filename = download_file(image, image_filename)
+
+            # If the cover doesnt exist, download and resize.
+            if not os.path.isfile(f"{image_filename}{file_ext}"):
+                image_filename = download_file(image, image_filename)
+                # Resize image
+                cover_image = Image.open(image_filename)
+                resized_cover_image = cover_image.resize((700, 700))
+                resized_cover_image.save(image_filename)
+            else:
+                image_filename = f"{image_filename}{file_ext}"
 
             # Remove prefix "public"
             prefix = "public"
