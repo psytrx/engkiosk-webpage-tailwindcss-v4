@@ -20,13 +20,13 @@ export async function getStaticPaths() {
     return allTagsUnique.map((tag) => {
         // TODO We need to URLify(tag) and need to pass it as params
         // However, this throws "need to be a string" error right now.
-        // Why? I dont know. It is srting ...
+        // Why? I dont know. It is a string ...
         return ({ params: { tag }, props: { tag, allBlogPosts, allPodcastEpisode } })
     });
 }
 
 const { urlTag, allBlogPosts, allPodcastEpisode } = Astro.props;
-let tagName = urlTag
+let tagName = Astro.params.tag
 let title = `Podcast Episoden und Blog Posts zum Thema ${tagName} - Engineering Kiosk`;
 let description = `Alle Podcast Episoden und Blog Posts vom deutschsprachigen Software-Engineering-Podcast zum Thema ${tagName} auf einer Seite.`;
 let canonicalURL = Astro.canonicalURL;
