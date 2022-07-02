@@ -44,14 +44,14 @@ switch (n) {
 
 ---
 
-<div class="w-full md:w-1/2 lg:w-1/3 px-4 ${cssClass}">
-	<a class="block mb-6 overflow-hidden rounded-md" href="${post.url}">
-		<img class="w-full" src="${frontmatter.thumbnail}" alt="${frontmatter.title}" title="${frontmatter.title}">
+<div class={`w-full md:w-1/2 lg:w-1/3 px-4 ${cssClass}`}>
+	<a class="block mb-6 overflow-hidden rounded-md" href={post.url}>
+		<img class="w-full" src={frontmatter.thumbnail} alt={frontmatter.title} title={frontmatter.title}>
 	</a>
 	<p class="mb-2 text-coolGray-500 font-medium">
 		<time class="date" datetime={frontmatter.date}>{formatDate(frontmatter.date)}</time>
 	</p>
-	<a class="inline-block mb-4 text-2xl leading-tight text-coolGray-800 hover:text-coolGray-900 font-bold hover:underline" href="${post.url}">
+	<a class="inline-block mb-4 text-2xl leading-tight text-coolGray-800 hover:text-coolGray-900 font-bold hover:underline" href={post.url}>
 		{frontmatter.title}
 	</a>
 	<Markdown class="text">{frontmatter.description}</Markdown>
