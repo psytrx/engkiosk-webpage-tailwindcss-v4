@@ -5,7 +5,7 @@ subtitle: Der Engineering Kiosk hat eine eigene Website. Warum jetzt erst, was w
 description: "tl:dr: Der Engineering Kiosk hat nach 22 Podcast-Episoden eine eigene Website. Gebaut mit dem static site builder [Astro](https://astro.build/). Source code ist auf [GitHub:EngineeringKiosk/webpage](https://github.com/EngineeringKiosk/webpage) verfügbar."
 tags: [
     "Website",
-    "Static site Generator"
+    "Static Site Generator"
 ]
 date: 2022-06-20
 thumbnail: /images/blog-content/eigene-website/brands.png
