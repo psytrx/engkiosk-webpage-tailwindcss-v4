@@ -5,6 +5,7 @@ export interface Props {
 }
 
 import { Markdown } from 'astro/components';
+import { URLify } from "../scripts/urlify.js"
 
 import '../styles/blogpost-preview.scss';
 
@@ -55,5 +56,5 @@ switch (n) {
 		{frontmatter.title}
 	</a>
 	<Markdown class="text">{frontmatter.description}</Markdown>
-	{ frontmatter.tags.map((element) => <a class="inline-block py-1 px-3 text-xs leading-5 text-yellow-500 hover:text-yellow-600 font-medium uppercase bg-yellow-100 hover:bg-yellow-200 rounded-full shadow-sm">{element}</a>) }
+	{ frontmatter.tags.map((element) => <a class="inline-block py-1 px-3 text-xs leading-5 text-yellow-500 hover:text-yellow-600 font-medium uppercase bg-yellow-100 hover:bg-yellow-200 rounded-full shadow-sm" href={`/tag/${(element)}/`}>{element}</a>) }
 </div>
