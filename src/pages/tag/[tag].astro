@@ -1,0 +1,100 @@
+---
+import Footer from '../../components/Footer.astro';
+import MainHead from '../../components/MainHead.astro';
+import Nav from '../../components/Nav.astro';
+import BlogPostPreview from '../../components/BlogPostPreview.astro';
+import PodcastEpisodePreview from '../../components/PodcastEpisodePreview.astro';
+import { URLify } from "../../scripts/urlify.js"
+
+export async function getStaticPaths() {
+    // Get tags from blog posts
+    const allBlogPosts = await Astro.glob('../blog/post/*.md');
+    let allBlogPostTagsUnique = [...new Set(allBlogPosts.flatMap((p) => p.frontmatter.tags))];
+
+    // Get tags from podcast episodes
+    const allPodcastEpisode = await Astro.glob('../podcast/episode/*.md');
+    let allPodcastEpisodeTagsUnique = [...new Set(allPodcastEpisode.flatMap((e) => e.frontmatter.tags))];
+    const allTagsUnique = [...new Set([...allBlogPostTagsUnique, ...allPodcastEpisodeTagsUnique])];
+    
+    // We URLify the tag here to get dynamic url friendly names
+    return allTagsUnique.map((tag) => {
+        // We generate two elements here:
+        // Once the original tag name like "Infrastructure as Code"
+        // and one url friendly tag name like "infrastructure-as-code"
+        let t = URLify(tag);
+        let tagUrlName = t.url;
+        let tagName = t.name;
+
+        return ({
+            params: { tag: tagUrlName },
+            props: { tagName, allBlogPosts, allPodcastEpisode }
+        })
+    });
+}
+
+const tagHumanName = Astro.props.tagName;
+const allBlogPosts = Astro.props.allBlogPosts;
+const allPodcastEpisode = Astro.props.allPodcastEpisode;
+
+let tagUrlName = Astro.params.tag
+let title = `Podcast Episoden und Blog Posts zum Thema ${tagHumanName} - Engineering Kiosk`;
+let description = `Alle Podcast Episoden und Blog Posts vom deutschsprachigen Software-Engineering-Podcast zum Thema ${tagHumanName} auf einer Seite.`;
+let canonicalURL = Astro.canonicalURL;
+
+// Filter blog posts by tag, sort by date
+const blogPosts = allBlogPosts.filter((post) => post.frontmatter.tags.includes(tagHumanName)).sort((a, b) => new Date(b.frontmatter.date).valueOf() - new Date(a.frontmatter.date).valueOf());
+
+// Filter podcast episodes by tag, sort by date
+const podcastEpisodes = allPodcastEpisode.filter((episode) => episode.frontmatter.tags.includes(tagHumanName)).sort((a, b) => new Date(b.frontmatter.date).valueOf() - new Date(a.frontmatter.date).valueOf());
+
+---
+
+<html lang="de">
+	<head>
+		<MainHead title={title} description={description} image="/images/headers/andy-grunwald-wolfgang-gassler-2022-01-07.jpg" {canonicalURL} />
+	</head>
+
+	<body class="antialiased bg-body text-body font-body">
+		<div>
+			<Nav title={title} />
+
+            {podcastEpisodes.length > 0 && <section class="py-8 md:py-16 lg:pb-52 bg-white" style="background-image: url('/images/elements/pattern-white.svg'); background-repeat: no-repeat; background-position: center top;">
+                <div class="container px-4 mx-auto">
+                    <div class="flex flex-wrap items-center mb-12">
+                        <div class="w-full md:w-3/4 mb-8 md:mb-0">
+                            <span class="inline-block py-px px-2 mb-4 text-xs leading-5 text-yellow-500 bg-yellow-100 font-medium uppercase rounded-full shadow-sm">
+                                Podcast
+                            </span>
+                            <h3 class="mb-4 text-4xl md:text-5xl leading-tight text-darkCoolGray-900 font-bold tracking-tighter">
+                                Alle Podcast Episoden zum Thema {tagHumanName}
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="flex flex-wrap -mx-4">
+                        {podcastEpisodes.map((episode, i) => <PodcastEpisodePreview episode={episode} showTags=true />)}
+                    </div>
+                </div>
+            </section>}
+
+			{blogPosts.length > 0 && <section class="py-8 md:py-16 lg:pb-52 bg-white" style="background-image: url('/images/elements/pattern-white.svg'); background-repeat: no-repeat; background-position: center top;">
+                <div class="container px-4 mx-auto">
+                    <div class="flex flex-wrap items-center mb-16">
+                        <div class="w-full md:w-3/4 mb-8 md:mb-0">
+                            <span class="inline-block py-px px-2 mb-4 text-xs leading-5 text-yellow-500 bg-yellow-100 font-medium uppercase rounded-full shadow-sm">
+                                Blog
+                            </span>
+                            <h3 class="mb-4 text-4xl md:text-5xl leading-tight text-darkCoolGray-900 font-bold tracking-tighter">
+                                Alle Blog posts zum Thema {tagHumanName}
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="flex flex-wrap -mx-4">
+                        {blogPosts.map((post, i) => <BlogPostPreview post={post} n={i} />)}
+                    </div>
+                </div>
+            </section>}
+
+			<Footer />
+		</div>
+	</body>
+</html>

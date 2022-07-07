@@ -59,5 +59,14 @@ if __name__ == "__main__":
         ]
     )
 
-    exit_code = find_empty_player_urls(PATH_MARKDOWN_FILES)
+    p = PATH_MARKDOWN_FILES
+
+    # Determine if the script is called from root
+    # or from the scripts directory.
+    directory_path = os.getcwd()
+    folder_name = os.path.basename(directory_path)
+    if folder_name == "scripts":
+        p = f"../{PATH_MARKDOWN_FILES}"
+
+    exit_code = find_empty_player_urls(p)
     sys.exit(exit_code)

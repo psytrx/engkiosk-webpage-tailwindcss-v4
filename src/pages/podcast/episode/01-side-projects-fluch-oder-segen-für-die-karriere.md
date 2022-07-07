@@ -50,7 +50,10 @@ headlines: "sprungmarken::Sprungmarken||erwahnte-personen::Erw\xE4hnte Personen|
 image: "/images/podcast/episode/01-side-projects-fluch-oder-segen-f\xFCr-die-karriere.jpg"
 layout: ../../../layouts/podcast-episode.astro
 spotify: https://open.spotify.com/episode/0uT54qYXLeoYPIerWNK6WY
-tags: []
+tags: [
+  "Side Projects",
+  "Eigener Job",
+]
 title: "#01 Side Projects - Fluch oder Segen f\xFCr die Karriere?"
 
 ---
