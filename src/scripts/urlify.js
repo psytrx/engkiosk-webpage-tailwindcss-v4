@@ -1,5 +1,9 @@
-export function URLify(string) {
+export function URLify(element) {
     // Replace whitespace with -
-    let s = string.trim().replace(/\s/g, '-');
-    return s.toLowerCase()
+    let e = element.trim().replace(/\s/g, '-');
+
+    return {
+		"name": element,
+		"url": e.toLowerCase()
+	}
 }
