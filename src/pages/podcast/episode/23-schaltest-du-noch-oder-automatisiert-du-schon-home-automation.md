@@ -54,7 +54,10 @@ headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts
 image: /images/podcast/episode/23-schaltest-du-noch-oder-automatisiert-du-schon-home-automation.jpg
 layout: ../../../layouts/podcast-episode.astro
 spotify: https://open.spotify.com/episode/36a2YKzzvfrrRzM3qZTHaC
-tags: []
+tags: [
+  "Home Automation",
+  "Automation",
+]
 title: '#23 Schaltest du noch oder automatisiert du schon: Home Automation'
 
 ---

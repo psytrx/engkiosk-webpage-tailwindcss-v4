@@ -53,7 +53,10 @@ headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts
 image: /images/podcast/episode/09-ukraine.jpg
 layout: ../../../layouts/podcast-episode.astro
 spotify: https://open.spotify.com/episode/30CdS9BlvI3GXsCgswRgm8
-tags: []
+tags: [
+  "Tech Kultur",
+  "International",
+]
 title: '#09 Ukraine'
 
 ---

@@ -71,7 +71,11 @@ headlines: "sprungmarken::Sprungmarken||erwahnte-artikel::Erw\xE4hnte Artikel||e
 image: /images/podcast/episode/04-lohnt-der-einstieg-in-open-source.jpg
 layout: ../../../layouts/podcast-episode.astro
 spotify: https://open.spotify.com/episode/1fAhILuNB97dYWuuiI9NwQ
-tags: []
+tags: [
+  "Open Source",
+  "Software Engineering",
+  "Kommunikation",
+]
 title: '#04 Lohnt der Einstieg in Open Source?'
 
 ---
