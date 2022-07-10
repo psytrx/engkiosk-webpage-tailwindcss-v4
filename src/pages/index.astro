@@ -6,6 +6,8 @@ import HostPreview from '../components/HostPreview.astro';
 import BlogPostListing from '../components/BlogPostListing.astro';
 import PodcastEpisodeListing from '../components/PodcastEpisodeListing.astro';
 
+import podcastInfo from "../data/podcast-info.json";
+
 let title = 'Engineering Kiosk - Der Software-Engineering-Podcast';
 let description = 'Der deutschsprachige Software-Engineering-Podcast mit Wolfgang Gassler und Andy Grunwald rund um die Themen Engineering-Kultur, Open Source und Technologie.';
 let canonicalURL = Astro.canonicalURL;
@@ -196,43 +198,43 @@ let lastEpisodeTitleShort = truncate(episode.frontmatter.title, 27, '...');
           </h1>
           <div class="flex flex-wrap justify-center px-10 mt-8">
             <div class="m-4">
-              <a class="flex items-center" href="https://podcasts.apple.com/us/podcast/engineering-kiosk/id1603082924" title="Engineering Kiosk bei Apple Podcasts">
+              <a class="flex items-center" href={podcastInfo.platformLinks.appleMusic} title="Engineering Kiosk bei Apple Podcasts">
                 <img class="w-12" src="/images/brands/apple.svg" alt="Engineering Kiosk bei Apple Podcasts" title="Engineering Kiosk bei Apple Podcasts">
                 <span class="text-white text-lg m-2">Apple</span>
               </a>
             </div>
             <div class="m-4">
-              <a class="flex items-center" href="https://open.spotify.com/show/0tJRC0UsObPCWLmmzmOkIs" title="Engineering Kiosk auf Spotify">
+              <a class="flex items-center" href={podcastInfo.platformLinks.spotify} title="Engineering Kiosk auf Spotify">
                 <img class="w-12" src="/images/brands/spotify.svg" alt="Engineering Kiosk bei Spotify" title="Engineering Kiosk bei Spotify">
                 <span class="text-white text-lg m-2">Spotify</span>
               </a>
             </div>
             <div class="m-4">
-              <a class="flex items-center" href="https://podcasts.apple.com/de/podcast/engineering-kiosk/id1603082924" title="Engineering Kiosk auf Google Podcasts">
+              <a class="flex items-center" href={podcastInfo.platformLinks.googlePodcasts} title="Engineering Kiosk auf Google Podcasts">
                 <img class="w-12" src="/images/brands/google.svg" alt="Engineering Kiosk bei Google Podcasts" title="Engineering Kiosk bei Google Podcasts">
                 <span class="text-white text-lg m-2">Google</span>
               </a>
             </div>     
             <div class="m-4">
-              <a class="flex items-center" href="https://pca.st/podcast/acfc60d0-4ebc-013a-d6cb-0acc26574db2" title="Engineering Kiosk auf Pocket Casts">
+              <a class="flex items-center" href={podcastInfo.platformLinks.pocketCasts} title="Engineering Kiosk auf Pocket Casts">
                 <img class="w-12" src="/images/brands/pocketcasts.svg" alt="Engineering Kiosk bei Pocket Casts" title="Engineering Kiosk bei Pocket Casts">
                 <span class="text-white text-lg m-2">Pocket Casts</span>
               </a>
             </div>
             <div class="m-4">
-              <a class="flex items-center" href="https://overcast.fm/itunes1603082924" title="Engineering Kiosk auf Overcast">
+              <a class="flex items-center" href={podcastInfo.platformLinks.overCast} title="Engineering Kiosk auf Overcast">
                 <img class="w-12" src="/images/brands/overcast.svg" alt="Engineering Kiosk bei Overcast" title="Engineering Kiosk bei Overcast">
                 <span class="text-white text-lg m-2">Overcast</span>
               </a>
             </div>            
             <div class="m-4">
-              <a class="flex items-center" href="https://music.amazon.com/podcasts/c35a09fe-4116-4e04-8f68-77d61b112e46/engineering-kiosk" title="Engineering Kiosk bei Amazon Music">
+              <a class="flex items-center" href={podcastInfo.platformLinks.amazonMusic} title="Engineering Kiosk bei Amazon Music">
                 <img class="w-12" src="/images/brands/amazonmusic.svg" alt="Engineering Kiosk bei Amazon Music" title="Engineering Kiosk bei Amazon Music">
                 <span class="text-white text-lg m-2">Amazon</span>
               </a>
             </div>
             <div class="m-4">
-              <a class="flex items-center" href="/podcast/rss" title="Engineering Kiosk als RSS-Feed">
+              <a class="flex items-center" href={podcastInfo.platformLinks.rss} title="Engineering Kiosk als RSS-Feed">
                 <img class="w-12" src="/images/brands/rss.svg" alt="Engineering Kiosk als RSS-Feed" title="Engineering Kiosk als RSS-Feed">
                 <span class="text-white text-lg m-2">RSS</span>
               </a>
