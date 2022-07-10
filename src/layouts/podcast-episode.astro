@@ -54,7 +54,8 @@ let tags = content.tags.map((element) => URLify(element));
 	<head>
 		<MainHead title={title} description={content.description} image={content.image} {canonicalURL} />
 
-		<script type="text/javascript" src="//cdn.embed.ly/player-0.1.0.min.js"></script>
+		<!-- https://github.com/embedly/player.js -->
+		<script type="text/javascript" src="/js/player-0.1.0.min.js"></script>
 		<!--
 			Full configuration docs available at
 			https://github.com/podigee/podigee-podcast-player/blob/master/docs/configuration.md
