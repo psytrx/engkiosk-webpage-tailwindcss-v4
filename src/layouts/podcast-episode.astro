@@ -107,32 +107,43 @@ let tags = content.tags.map((element) => URLify(element));
 								<div>
 									<script class="podigee-podcast-player" src="/podcast-player/javascripts/podigee-podcast-player.js" data-configuration="playerConfiguration"></script>
 									<script>
-										var iframes = document.getElementsByTagName('iframe')
+										let iframes = document.getElementsByTagName('iframe')
 										Array.from(iframes).forEach(function (iframe) {
 											if (!iframe.className.includes('podigee-podcast-player')) {
 												return
 											}
 										  	iframe.onload = function() {
-												var player = new playerjs.Player(iframe);
+												// Tracking docs at https://developer.matomo.org/api-reference/tracking-javascript
+												const player = new playerjs.Player(iframe);
 												player.on('ready', function(){
-											  		player.on('play', function(data1, data2, data3){
-														console.log('play', data1, data2, data3);
-											  		});
-													player.on('pause', function(){
-														console.log('pause');
-											  		});
+													player.on('play', function(data){
+														_paq.push([
+															'trackEvent',
+															'PodcastPlayer', // Category
+															'play', // Action
+															window.playerConfiguration.episode.title, // Event name
+															Math.round(data.seconds) // Numeric value
+														]);
+													});
+													player.on('pause', function(data){
+														_paq.push([
+															'trackEvent',
+															'PodcastPlayer', // Category
+															'pause', // Action
+															window.playerConfiguration.episode.title, // Event name
+															Math.round(data.seconds) // Numeric value
+														]);
+													});
 													player.on('ended', function(){
-														console.log('ended');
-											  		});
-
-													player.on('timeupdate', function(){
-														console.log('timeupdate');
-											  		});
-													player.on('buffered', function(){
-														console.log('buffered');
-											  		});
-													player.on('seeked', function(){
-														console.log('seeked');
+														_paq.push([
+															'trackEvent',
+															'PodcastPlayer', // Category
+															'end', // Action
+															window.playerConfiguration.episode.title, // Event name
+														]);
+													});
+													player.on('subscribeIntent', function(data){
+														console.log('subscribeIntent', data);
 											  		});
 												});
 										  	}
