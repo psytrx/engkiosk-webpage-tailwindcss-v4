@@ -6,6 +6,8 @@ import BlogPostPreview from '../../components/BlogPostPreview.astro';
 import PodcastEpisodePreview from '../../components/PodcastEpisodePreview.astro';
 import { URLify } from "../../scripts/urlify.js"
 
+import tagInfo from "../../data/tags.json";
+
 export async function getStaticPaths() {
     // Get tags from blog posts
     const allBlogPosts = await Astro.glob('../blog/post/*.md');
@@ -41,6 +43,11 @@ let title = `Podcast Episoden und Blog Posts zum Thema ${tagHumanName} - Enginee
 let description = `Alle Podcast Episoden und Blog Posts vom deutschsprachigen Software-Engineering-Podcast zum Thema ${tagHumanName} auf einer Seite.`;
 let canonicalURL = Astro.canonicalURL;
 
+let tagDescription = ""
+if(tagInfo.hasOwnProperty(tagHumanName)){
+    tagDescription = tagInfo[tagHumanName]
+}
+
 // Filter blog posts by tag, sort by date
 const blogPosts = allBlogPosts.filter((post) => post.frontmatter.tags.includes(tagHumanName)).sort((a, b) => new Date(b.frontmatter.date).valueOf() - new Date(a.frontmatter.date).valueOf());
 
@@ -57,6 +64,19 @@ const podcastEpisodes = allPodcastEpisode.filter((episode) => episode.frontmatte
 	<body class="antialiased bg-body text-body font-body">
 		<div>
 			<Nav title={title} />
+
+            <div class="container px-4 mx-auto">
+                <div class="flex flex-wrap items-center mb-6">
+                    <div class="w-full md:w-3/4 mb-8 md:mb-0">
+                        <h3 class="mb-4 text-4xl md:text-5xl leading-tight text-darkCoolGray-900 font-bold tracking-tighter">
+                            {tagHumanName}
+                        </h3>
+                       {tagDescription && <p class="mb-8 text-lg md:text-xl text-coolGray-500 font-medium">
+                            {tagDescription}
+                          </p>}
+                    </div>
+                </div>
+            </div>
 
             {podcastEpisodes.length > 0 && <section class="py-8 md:py-16 lg:pb-52 bg-white" style="background-image: url('/images/elements/pattern-white.svg'); background-repeat: no-repeat; background-position: center top;">
                 <div class="container px-4 mx-auto">

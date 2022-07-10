@@ -28,6 +28,10 @@ update-redirects: ## Writes all short url redirects for Podcast episodes to netl
 episode-check: ## Checks all Podcast Episodes if all player links (Spotify, etc.) are set
 	python ./scripts/empty-player-urls.py
 
+.PHONY: find-tags-that-need-descriptions
+find-tags-that-need-descriptions: ## Checks all used tags that need SEO descriptions
+	python ./scripts/find-tags-that-need-descriptions.py
+
 .PHONY: init
 init: ## Installs dependencies
 	npm install

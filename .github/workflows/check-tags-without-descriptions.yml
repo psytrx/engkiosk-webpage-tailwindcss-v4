@@ -1,0 +1,24 @@
+name: Check tags without SEO descriptions
+
+on:
+  schedule:
+    - cron: "15 4 1 * *" # At 04:05 on day-of-month 1.
+  workflow_dispatch:
+
+jobs:
+  publishing:
+    name: Check if all tags have a proper SEO description
+    runs-on: ubuntu-20.04
+
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-python@v4
+        with:
+          python-version-file: 'scripts/.python-version'
+          cache: 'pip'
+
+      - name: Install python dependencies
+        run: pip install -r scripts/requirements.txt
+
+      - name: Run make find-tags-that-need-descriptions
+        run: make find-tags-that-need-descriptions
