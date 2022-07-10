@@ -4,19 +4,14 @@ import Nav from '../components/Nav.astro';
 import Footer from '../components/Footer.astro';
 import { URLify } from "../scripts/urlify.js"
 
+import podcastInfo from "../data/podcast-info.json";
 import '../styles/podcast_episode.scss';
 
 const { content } = Astro.props;
 let canonicalURL = Astro.canonicalURL;
 
-let content_title = content.title;
-let content_audio = content.audio;
-let content_chapter = content.chapter;
-let content_image = content.image;
-let content_description = content.description;
-
+let content_image = (new URL(content.image, Astro.site.href)).href;
 let title = "".concat(content.title, " - Engineering Kiosk");
-
 let encodedUrl = encodeURI(canonicalURL);
 
 // We need to replace #, because this is treated as a twitter hastag
@@ -58,22 +53,45 @@ let tags = content.tags.map((element) => URLify(element));
 			Full configuration docs available at
 			https://github.com/podigee/podigee-podcast-player/blob/master/docs/configuration.md
 		-->
-		<script define:vars={{ content_audio, content_title, content_chapter, canonicalURL, content_description}}>
+		<script define:vars={{ podcastInfo, content, canonicalURL, content_image}}>
+
 			window.playerConfiguration = {
 				"options": {
-					"startPanel": "ChapterMarks"
+					"theme": "default",
+					"startPanels": [
+						"ChapterMarks"
+					]
+				},
+				"extensions": {
+					"ChapterMarks": {
+						disabled: false,
+						showOnStart: true
+					},
+					"SubscribeBar": {
+						disabled: true
+					}
 				},
 				"podcast": {
-					"title": "Engineering Kiosk",
-					"feed": "https://feeds.redcircle.com/0ecfdfd7-fda1-4c3d-9515-476727f9df5e",
+					"title": podcastInfo.title,
+					"subtitle": podcastInfo.subtitle,
+					"language": podcastInfo.language,
+					"feed": podcastInfo.rssFeed,
+					"connections": {
+						"itunes": podcastInfo.platformLinks.appleMusic,
+						"spotify": podcastInfo.platformLinks.spotify,
+						"deezer": podcastInfo.platformLinks.deezer,
+						"podimo": podcastInfo.platformLinks.podimo,
+						"alexa": podcastInfo.platformLinks.amazonMusic
+					}
 				},
 				"episode": {
-					"title": content_title,
+					"title": content.title,
+					"coverUrl": content_image,
 					"media": {
-						"mp3": content_audio
+						"mp3": content.audio
 					},
-					"chaptermarks": content_chapter,
-					"description": content_description,
+					"chaptermarks": content.chapter,
+					"description": content.description,
 					"url": canonicalURL
 				}
 			}
@@ -170,7 +188,7 @@ let tags = content.tags.map((element) => URLify(element));
 										</div>
 									</div>
 								</section>)}
-              					<h3 class="mb-4 text-2xl md:text-3xl font-semibold text-coolGray-800" id="headline-content">
+								<h3 class="mb-4 text-2xl md:text-3xl font-semibold text-coolGray-800" id="headline-content">
 									Worum geht's?
 								</h3>
 								<div id="podcast_episode_content_slot">
