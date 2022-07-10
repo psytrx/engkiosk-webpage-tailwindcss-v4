@@ -54,6 +54,7 @@ let tags = content.tags.map((element) => URLify(element));
 	<head>
 		<MainHead title={title} description={content.description} image={content.image} {canonicalURL} />
 
+		<script type="text/javascript" src="//cdn.embed.ly/player-0.1.0.min.js"></script>
 		<!--
 			Full configuration docs available at
 			https://github.com/podigee/podigee-podcast-player/blob/master/docs/configuration.md
@@ -105,6 +106,38 @@ let tags = content.tags.map((element) => URLify(element));
 								</h2>
 								<div>
 									<script class="podigee-podcast-player" src="/podcast-player/javascripts/podigee-podcast-player.js" data-configuration="playerConfiguration"></script>
+									<script>
+										var iframes = document.getElementsByTagName('iframe')
+										Array.from(iframes).forEach(function (iframe) {
+											if (!iframe.className.includes('podigee-podcast-player')) {
+												return
+											}
+										  	iframe.onload = function() {
+												var player = new playerjs.Player(iframe);
+												player.on('ready', function(){
+											  		player.on('play', function(data1, data2, data3){
+														console.log('play', data1, data2, data3);
+											  		});
+													player.on('pause', function(){
+														console.log('pause');
+											  		});
+													player.on('ended', function(){
+														console.log('ended');
+											  		});
+
+													player.on('timeupdate', function(){
+														console.log('timeupdate');
+											  		});
+													player.on('buffered', function(){
+														console.log('buffered');
+											  		});
+													player.on('seeked', function(){
+														console.log('seeked');
+											  		});
+												});
+										  	}
+										})
+									  </script>
 								</div>
             				</div>
           				</div>
