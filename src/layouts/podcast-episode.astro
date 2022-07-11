@@ -49,6 +49,8 @@ let tags = content.tags.map((element) => URLify(element));
 	<head>
 		<MainHead title={title} description={content.description} image={content.image} {canonicalURL} />
 
+		<!-- https://github.com/embedly/player.js -->
+		<script type="text/javascript" src="/js/player-0.1.0.min.js"></script>
 		<!--
 			Full configuration docs available at
 			https://github.com/podigee/podigee-podcast-player/blob/master/docs/configuration.md
@@ -122,7 +124,47 @@ let tags = content.tags.map((element) => URLify(element));
 									{content.title}
 								</h2>
 								<div>
-									<script class="podigee-podcast-player" src="https://cdn.podigee.com/podcast-player/javascripts/podigee-podcast-player.js" data-configuration="playerConfiguration"></script>
+									<script class="podigee-podcast-player" src="/podcast-player/javascripts/podigee-podcast-player.js" data-configuration="playerConfiguration"></script>
+									<script>
+										let iframes = document.getElementsByTagName('iframe')
+										Array.from(iframes).forEach(function (iframe) {
+											if (!iframe.className.includes('podigee-podcast-player')) {
+												return
+											}
+										  	iframe.onload = function() {
+												// Tracking docs at https://developer.matomo.org/api-reference/tracking-javascript
+												const player = new playerjs.Player(iframe);
+												player.on('ready', function(){
+													player.on('play', function(data){
+														_paq.push([
+															'trackEvent',
+															'PodcastPlayer', // Category
+															'play', // Action
+															window.playerConfiguration.episode.title, // Event name
+															Math.round(data.seconds) // Numeric value
+														]);
+													});
+													player.on('pause', function(data){
+														_paq.push([
+															'trackEvent',
+															'PodcastPlayer', // Category
+															'pause', // Action
+															window.playerConfiguration.episode.title, // Event name
+															Math.round(data.seconds) // Numeric value
+														]);
+													});
+													player.on('ended', function(){
+														_paq.push([
+															'trackEvent',
+															'PodcastPlayer', // Category
+															'end', // Action
+															window.playerConfiguration.episode.title, // Event name
+														]);
+													});
+												});
+										  	}
+										})
+									  </script>
 								</div>
             				</div>
           				</div>

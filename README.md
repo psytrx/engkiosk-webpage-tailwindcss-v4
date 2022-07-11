@@ -104,3 +104,11 @@ Docs for the file based configuration of Netlify are available at https://docs.n
 | x3    | 2250       | 1266        |
 | x3.5  | 2625       | 1477        |
 | x4    | 3000       | 1688        |
+
+## Development note: Podcast player
+
+We are using our own fork of [podigee/podigee-podcast-player](https://github.com/podigee/podigee-podcast-player) which can be found at [EngineeringKiosk/podigee-podcast-player](https://github.com/EngineeringKiosk/podigee-podcast-player).
+The main differences of the fork in comparision to its origin can be found in the forks README.
+
+In combination, we downloaded a minified version of [https://github.com/embedly/player.js](https://github.com/embedly/player.js) into `public/js`.
+If we aim to upgrade *player.js*, download and replace the minified javascript file.
