@@ -53,7 +53,12 @@ headlines: links::Links||weitere-nicht-behandelte-incidents::Weitere nicht behan
 image: "/images/podcast/episode/27-sicherheit-in-der-dependency-h\xF6lle.jpg"
 layout: ../../../layouts/podcast-episode.astro
 spotify: https://open.spotify.com/episode/1PFpdXNHVvRgGPPUxC59Te
-tags: []
+tags: [
+  "Incident Management",
+  "Software Engineering",
+  "Frontend",
+  "Backend"
+]
 title: "#27 Sicherheit in der Dependency H\xF6lle"
 
 ---
