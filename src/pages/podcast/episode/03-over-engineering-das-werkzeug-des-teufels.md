@@ -61,11 +61,10 @@ headlines: sprungmarken::Sprungmarken||artikel::Artikel||konzepte::Konzepte||pro
 image: /images/podcast/episode/03-over-engineering-das-werkzeug-des-teufels.jpg
 layout: ../../../layouts/podcast-episode.astro
 spotify: https://open.spotify.com/episode/7HI6NDwFJnM0w7W8xYjGqG
-tags: [
-  "Software Engineering",
-  "Frontend",
-  "Backend",
-]
+tags:
+- Software Engineering
+- Frontend
+- Backend
 title: '#03 Over-Engineering, das Werkzeug des Teufels?'
 
 ---

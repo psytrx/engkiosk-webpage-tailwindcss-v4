@@ -49,11 +49,10 @@ headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts
 image: /images/podcast/episode/12-make-oder-buy.jpg
 layout: ../../../layouts/podcast-episode.astro
 spotify: https://open.spotify.com/episode/7xXnR8rP8gB25P9dQkvVQk
-tags: [
-  "Software Engineering",
-  "Firma",
-  "Produktivität",
-]
+tags:
+- Software Engineering
+- Firma
+- "Produktivit\xE4t"
 title: '#12 Make oder Buy'
 
 ---

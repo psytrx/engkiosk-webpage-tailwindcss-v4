@@ -56,11 +56,10 @@ headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts
 image: /images/podcast/episode/11-die-suche-nach-dem-it-traumjob.jpg
 layout: ../../../layouts/podcast-episode.astro
 spotify: https://open.spotify.com/episode/10M5UFnQfcQXwYTIFjQrqP
-tags: [
-  "Eigener Job",
-  "Bewerbung",
-  "Firma",
-]
+tags:
+- Eigener Job
+- Bewerbung
+- Firma
 title: '#11 Die Suche nach dem IT Traumjob'
 
 ---

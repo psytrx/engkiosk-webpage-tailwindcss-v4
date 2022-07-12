@@ -54,12 +54,11 @@ headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts
 image: /images/podcast/episode/26-my-english-is-not-the-yellow-from-the-egg-arbeiten-in-internationalen-teams.jpg
 layout: ../../../layouts/podcast-episode.astro
 spotify: https://open.spotify.com/episode/0S8AoLpiO35S3Lc06mKmQz
-tags: [
-  "Team",
-  "Eigener Job",
-  "International",
-  "Kommunikation",
-]
+tags:
+- Team
+- Eigener Job
+- International
+- Kommunikation
 title: '#26 My English is not the yellow from the egg - Arbeiten in internationalen
   Teams'
 

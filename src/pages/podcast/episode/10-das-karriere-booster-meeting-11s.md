@@ -40,10 +40,9 @@ headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts
 image: /images/podcast/episode/10-das-karriere-booster-meeting-11s.jpg
 layout: ../../../layouts/podcast-episode.astro
 spotify: https://open.spotify.com/episode/3KXQnrxoKkdTDFVXxiR3IA
-tags: [
-  "Eigener Job",
-  "Firma",
-]
+tags:
+- Eigener Job
+- Firma
 title: '#10 Das Karriere Booster Meeting 1:1s'
 
 ---
