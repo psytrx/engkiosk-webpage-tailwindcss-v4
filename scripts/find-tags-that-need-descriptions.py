@@ -88,6 +88,7 @@ if __name__ == "__main__":
     # or from the scripts directory.
     directory_path = os.getcwd()
     folder_name = os.path.basename(directory_path)
+    folder_prefix = ""
     if folder_name == "scripts":
         folder_prefix = "../"
 
