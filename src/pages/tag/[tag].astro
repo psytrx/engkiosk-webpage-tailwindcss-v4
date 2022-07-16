@@ -43,9 +43,11 @@ let title = `Podcast Episoden und Blog Posts zum Thema ${tagHumanName} - Enginee
 let description = `Alle Podcast Episoden und Blog Posts vom deutschsprachigen Software-Engineering-Podcast zum Thema ${tagHumanName} auf einer Seite.`;
 let canonicalURL = Astro.canonicalURL;
 
-let tagDescription = ""
+let tagDescription_short = ""
+let tagDescription_long = ""
 if(tagInfo.hasOwnProperty(tagHumanName)){
-    tagDescription = tagInfo[tagHumanName]
+    tagDescription_short = tagInfo[tagHumanName]["short_desc"]
+    tagDescription_long = tagInfo[tagHumanName]["long_desc"]
 }
 
 // Filter blog posts by tag, sort by date
@@ -58,7 +60,7 @@ const podcastEpisodes = allPodcastEpisode.filter((episode) => episode.frontmatte
 
 <html lang="de">
 	<head>
-		<MainHead title={title} description={description} image="/images/headers/andy-grunwald-wolfgang-gassler-2022-01-07.jpg" {canonicalURL} />
+		<MainHead title={title} description={tagDescription_short} image="/images/headers/andy-grunwald-wolfgang-gassler-2022-01-07.jpg" {canonicalURL} />
 	</head>
 
 	<body class="antialiased bg-body text-body font-body">
@@ -71,8 +73,8 @@ const podcastEpisodes = allPodcastEpisode.filter((episode) => episode.frontmatte
                         <h3 class="mb-4 text-4xl md:text-5xl leading-tight text-darkCoolGray-900 font-bold tracking-tighter">
                             {tagHumanName}
                         </h3>
-                       {tagDescription && <p class="mb-8 text-lg md:text-xl text-coolGray-500 font-medium">
-                            {tagDescription}
+                       {tagDescription_long && <p class="mb-8 text-lg md:text-xl text-coolGray-500 font-medium">
+                            {tagDescription_long}
                           </p>}
                     </div>
                 </div>
