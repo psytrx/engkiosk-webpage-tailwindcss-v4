@@ -29,8 +29,13 @@ episode-check: ## Checks all Podcast Episodes if all player links (Spotify, etc.
 	python ./scripts/empty-player-urls.py
 
 .PHONY: find-tags-that-need-descriptions
-find-tags-that-need-descriptions: ## Checks all used tags that need SEO descriptions
+find-tags-that-need-descriptions: ## Checks all used tags that need SEO descriptions and output them on stdout
 	python ./scripts/find-tags-that-need-descriptions.py
+
+.PHONY: find-tags-that-need-descriptions-dump
+find-tags-that-need-descriptions-dump: ## Find all used tags that need SEO descriptions and dump it down to disk into tag-file
+	python ./scripts/find-tags-that-need-descriptions.py -write-file
+
 
 .PHONY: init
 init: ## Installs dependencies

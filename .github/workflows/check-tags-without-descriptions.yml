@@ -20,5 +20,16 @@ jobs:
       - name: Install python dependencies
         run: pip install -r scripts/requirements.txt
 
-      - name: Run make find-tags-that-need-descriptions
-        run: make find-tags-that-need-descriptions
+      - name: Run make find-tags-that-need-descriptions-dump
+        run: make find-tags-that-need-descriptions-dump
+
+      # Commit results back to repository
+      - uses: stefanzweifel/git-auto-commit-action@v4
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          commit_message: Add new tags that need SEO descriptions into tag data file
+          branch: main
+          commit_user_name: Tag SEO description workflow bot
+          commit_user_email: stehtisch@engineeringkiosk.dev
+          commit_author: Tag SEO description workflow bot <stehtisch@engineeringkiosk.dev>
