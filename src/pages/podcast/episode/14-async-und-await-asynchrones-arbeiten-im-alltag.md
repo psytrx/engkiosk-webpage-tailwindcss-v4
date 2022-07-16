@@ -48,12 +48,11 @@ headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts
 image: /images/podcast/episode/14-async-und-await-asynchrones-arbeiten-im-alltag.jpg
 layout: ../../../layouts/podcast-episode.astro
 spotify: https://open.spotify.com/episode/2efebNjDPhMZBjGC78z9fg
-tags: [
-  "Team",
-  "Kommunikation",
-  "Eigener Job",
-  "Remote work",
-]
+tags:
+- Team
+- Kommunikation
+- Eigener Job
+- Remote work
 title: '#14 async und await: asynchrones Arbeiten im Alltag'
 
 ---

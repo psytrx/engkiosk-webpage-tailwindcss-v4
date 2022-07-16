@@ -51,14 +51,13 @@ headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts
 image: /images/podcast/episode/24-infrastructure-as-code-oder-old-man-yells-at-cloud.jpg
 layout: ../../../layouts/podcast-episode.astro
 spotify: https://open.spotify.com/episode/5ZDmHWPWsvB4ok4kFEi91V
-tags: [
-  "Infrastructure as Code",
-  "Configuration Management",
-  "Automation",
-  "Backend",
-  "Cloud",
-  "DevOps",
-]
+tags:
+- Infrastructure as Code
+- Configuration Management
+- Automation
+- Backend
+- Cloud
+- DevOps
 title: '#24 Infrastructure as Code oder old man yells at cloud'
 
 ---
