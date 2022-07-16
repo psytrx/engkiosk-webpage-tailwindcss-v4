@@ -15,3 +15,7 @@ init: ## Creates a virtualenv and installs python requirements
 .PHONY: episode-check
 episode-check: ## Checks all Podcast Episodes if all player links (Spotify, etc.) are set
 	venv/bin/python empty-player-urls.py
+
+.PHONY: find-tags-that-need-descriptions
+find-tags-that-need-descriptions: ## Checks all used tags that need SEO descriptions
+	venv/bin/python find-tags-that-need-descriptions.py
