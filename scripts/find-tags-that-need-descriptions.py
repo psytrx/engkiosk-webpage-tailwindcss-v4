@@ -8,9 +8,9 @@ import logging
 import frontmatter
 
 # Global variables
-PODCAST_CONTENT_FILES = '../src/pages/podcast/episode'
-BLOGPOST_CONTENT_FILES = '../src/pages/blog/post'
-TAG_FILE = '../src/data/tags.json'
+PODCAST_CONTENT_FILES = 'src/pages/podcast/episode'
+BLOGPOST_CONTENT_FILES = 'src/pages/blog/post'
+TAG_FILE = 'src/data/tags.json'
 
 
 def read_all_tags_from_content_files(pathes):
@@ -84,14 +84,23 @@ if __name__ == "__main__":
         ]
     )
 
+    # Determine if the script is called from root
+    # or from the scripts directory.
+    directory_path = os.getcwd()
+    folder_name = os.path.basename(directory_path)
+    if folder_name == "scripts":
+        folder_prefix = "../"
+
     content_pathes = [
-        PODCAST_CONTENT_FILES,
-        BLOGPOST_CONTENT_FILES,
+        f"{folder_prefix}{PODCAST_CONTENT_FILES}",
+        f"{folder_prefix}{BLOGPOST_CONTENT_FILES}",
     ]
+    TAG_FILE_PATH = f"{folder_prefix}{TAG_FILE}"
+
     tags = read_all_tags_from_content_files(content_pathes)
     len_content_tags = len(tags)
-    logging.info(f"Reading existing tag descriptions from {TAG_FILE} ...")
-    tag_descriptions = read_tag_descriptions(TAG_FILE)
+    logging.info(f"Reading existing tag descriptions from {TAG_FILE_PATH} ...")
+    tag_descriptions = read_tag_descriptions(TAG_FILE_PATH)
     logging.info(f"Determining tags with missing descriptions out of {len_content_tags} unique content tags ...")
     tags = get_all_tags_without_description(tag_descriptions, tags)
     logging.info(f"Found {len(tags)} tags with missing descriptions out of {len_content_tags} unique content tags ...")
@@ -107,7 +116,7 @@ if __name__ == "__main__":
         if len(tags):
             sys.exit(1)
 
-    logging.info(f"Writing missing tag structures into file {TAG_FILE} ...")
+    logging.info(f"Writing missing tag structures into file {TAG_FILE_PATH} ...")
     # Write the missing tags to the local tag file
     for t in tags:
         # If the tag already exists, mostly a subkey is missing
@@ -119,9 +128,9 @@ if __name__ == "__main__":
             if k not in tag_descriptions[t]:
                 tag_descriptions[t][k] = ""
 
-    with open(TAG_FILE, 'w') as fp:
+    with open(TAG_FILE_PATH, 'w') as fp:
         json.dump(tag_descriptions, fp, indent=4)
 
-    logging.info(f"Writing missing tag structures into file {TAG_FILE} ... done")
+    logging.info(f"Writing missing tag structures into file {TAG_FILE_PATH} ... done")
 
     sys.exit(0)
