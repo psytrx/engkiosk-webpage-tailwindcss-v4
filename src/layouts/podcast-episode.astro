@@ -227,6 +227,12 @@ let tags = content.tags.map((element) => URLify(element));
 													<span class="text-lg m-2">Amazon</span>
 												</a>
 											</div>)}
+											{content.deezer && (<div class="m-2">
+												<a class="flex items-center"  href={content.deezer} title={`Engineering Kiosk ${content.title} bei Deezer`}>
+													<img class="w-12" src="/images/brands/deezer.svg" alt={`Engineering Kiosk ${content.title} auf Deezer`}>
+													<span class="text-lg m-2">deezer</span>
+												</a>
+											</div>)}
 										</div>
 									</div>
 								</section>)}
