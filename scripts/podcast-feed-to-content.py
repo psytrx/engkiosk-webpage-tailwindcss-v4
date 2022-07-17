@@ -23,6 +23,7 @@ import frontmatter
 import spotipy
 from spotipy.oauth2 import SpotifyClientCredentials
 from PIL import Image
+import deezer
 
 # Global variables
 PODCAST_RSS_FEED = "https://feeds.redcircle.com/0ecfdfd7-fda1-4c3d-9515-476727f9df5e"
@@ -35,6 +36,7 @@ REDIRECT_PREFIX = '/episodes/'
 PODCAST_APPLE_URL = "https://itunes.apple.com/lookup?id=1603082924&media=podcast&entity=podcastEpisode&limit=100"
 SPOTIFY_SHOW_ID = "0tJRC0UsObPCWLmmzmOkIs"
 PODCAST_GOOGLE_URL = "https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5yZWRjaXJjbGUuY29tLzBlY2ZkZmQ3LWZkYTEtNGMzZC05NTE1LTQ3NjcyN2Y5ZGY1ZQ"
+DEEZER_PODCAST_ID = 3330122
 # TODO Add episode single view link retrieval for Amazon Music
 
 # From the Django project
@@ -187,6 +189,17 @@ def sync_podcast_episodes(rss_feed, path_md_files, path_img_files, spotify_clien
     apple_podcast_content = get_json_content_from_url(PODCAST_APPLE_URL)
     spotify_episodes = spotify_client.show_episodes(SPOTIFY_SHOW_ID, limit=15, offset=0, market="DE")
     google_podcast_content = get_raw_content_from_url(PODCAST_GOOGLE_URL)
+
+    # Pagination and auth not respected.
+    # Right now it works, because a) we don't make that much requests and
+    # b) don't have that much episodes.
+    # If we have more and more episodes, this might look different and need adjustment.
+    #
+    # Query quota (2022-07-17)
+    # The number of requests per second is limited to 50 requests / 5 seconds.
+    deezer_client = deezer.Client()
+    deezer_podcast = deezer_client.get_podcast(DEEZER_PODCAST_ID)
+    deezer_episodes = deezer_podcast.get_episodes()
     logging.info("Requesting content from Podcast sites ... Successful")
 
     logging.info("Processing Podcast Episode items ...")
@@ -293,6 +306,7 @@ def sync_podcast_episodes(rss_feed, path_md_files, path_img_files, spotify_clien
             'google_podcasts': get_episode_link_from_google(google_podcast_content, title),
             'apple_podcasts': get_episode_link_from_apple(apple_podcast_content, title),
             'amazon_music': '',
+            'deezer': get_episode_link_from_deezer(deezer_episodes, title),
             'tags': [],
         }
 
@@ -315,6 +329,7 @@ def sync_podcast_episodes(rss_feed, path_md_files, path_img_files, spotify_clien
                     'google_podcasts',
                     'apple_podcasts',
                     'amazon_music',
+                    'deezer',
                     'tags',
                 ]
                 for key in keys_to_keep:
@@ -482,6 +497,26 @@ def get_episode_link_from_spotify(episodes, title: str) -> str:
     for episode in episodes["items"]:
         if episode["name"] == title:
             u = episode["external_urls"]["spotify"]
+
+    return u
+
+
+def get_episode_link_from_deezer(episodes, title: str) -> str:
+    """
+    Parses the Deezer Episode Single View link (matching with title) from episodes list.
+    episodes is a JSON representation from the Deezer API / Engineering Kiosk Show.
+    title is the full title of a single episode.
+
+    If no title matches, it will return an empty string.
+    """
+    u = ""
+    for episode in episodes:
+        if episode.title == title:
+            # Here we should have a property "episode.link"
+            # but somehow this is not available.
+            # See https://github.com/browniebroke/deezer-python/issues/536
+            # As a workaround, we craft the link ourself.
+            u = f"https://www.deezer.com/de/episode/{episode.id}"
 
     return u
 
