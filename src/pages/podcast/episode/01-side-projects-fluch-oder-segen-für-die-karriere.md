@@ -43,6 +43,7 @@ chapter:
 - start: 00:44:39
   title: "Sind Arbeitgeber gl\xFCcklich \xFCber Side Projects von MitarbeiterInnen?"
 date: '2022-01-03'
+deezer: https://www.deezer.com/de/episode/355566762
 description: "Zwei Engineering Manager \xFCber Side Projects: Wie diese den Recruiting\
   \ Prozess beeinflussen, welche Learnings aus einem Projekt generiert werden, was\
   \ die freiwillige Feuerwehr mit Site Reliability Engineering zu tun hat, welche\

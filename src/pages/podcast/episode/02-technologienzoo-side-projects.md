@@ -64,6 +64,7 @@ chapter:
 - start: 00:42:37
   title: Outro
 date: '2022-01-10'
+deezer: https://www.deezer.com/de/episode/355566752
 description: "Wolfgang und Andy erz\xE4hlen ein wenig was \xFCber ihre eigenen Side\
   \ Projects sourcectl (https://gettoknow.sourcectl.dev/), F-Online (https://www.f-online.at/)\
   \ und the athlete (https://theathlete.app/). Wir machen eine Rundfahrt durch den\

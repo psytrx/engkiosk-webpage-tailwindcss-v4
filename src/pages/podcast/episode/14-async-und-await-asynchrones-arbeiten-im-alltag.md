@@ -41,6 +41,7 @@ chapter:
 - start: 00:54:05
   title: Wrap Up zum Thema asynchrones Arbeiten und Outro
 date: '2022-04-12'
+deezer: https://www.deezer.com/de/episode/377043407
 description: "Remote-Work, asynchrone und parallele Arbeit und die eigene Work-Life-Balance.\
   \ Durch Corona haben wir alle einen Geschmack von der Remote-Arbeit und Home Office\
   \ bekommen. Einige hassen es, andere lieben es und haben sogar dem B\xFCro f\xFC\

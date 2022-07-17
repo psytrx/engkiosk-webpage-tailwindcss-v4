@@ -46,6 +46,7 @@ chapter:
 - start: 00:36:30
   title: Outro
 date: '2022-03-08'
+deezer: https://www.deezer.com/de/episode/368390957
 description: "Es wird politisch: Der Angriffskrieg auf die Ukraine und eine m\xF6\
   glichst technische Beleuchtung des Themas. Wolfgang und Andy sprechen \xFCber die\
   \ Ukraine und den Angriff durch Russland: Wie haben Tech Konzerne und Firmen reagiert,\

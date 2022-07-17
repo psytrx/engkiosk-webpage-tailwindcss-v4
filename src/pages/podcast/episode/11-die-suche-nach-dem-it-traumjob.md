@@ -49,6 +49,7 @@ chapter:
 - start: 00:56:12
   title: Outro
 date: '2022-03-22'
+deezer: https://www.deezer.com/de/episode/371918487
 description: "Den richtigen Arbeitgeber und die richtige Firma finden: Eine Mammut-Aufgabe.\
   \ In dieser Episode sprechen Wolfgang und Andy ein wenig dar\xFCber wie man neue,\
   \ potentielle, Arbeitgeber findet, welche Fragen man sich selbst stellen kann um\

@@ -42,6 +42,7 @@ chapter:
 - start: 00:57:44
   title: Outro
 date: '2022-03-29'
+deezer: https://www.deezer.com/de/episode/373574677
 description: "Make oder Buy: Alles einkaufen oder doch lieber selber machen? Eine\
   \ Frage die jeder von uns kennt: Sind meine Anforderungen so speziell, dass es kein\
   \ Produkt auf dem Markt gibt, die diese abdeckt? Kann ich das nicht ggf. sogar besser,\

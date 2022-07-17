@@ -33,6 +33,7 @@ chapter:
 - start: 00:44:12
   title: Feedback und Outro
 date: '2022-03-15'
+deezer: https://www.deezer.com/de/episode/370131537
 description: "1on1s - Zeitverschwendung oder eins der wertvollsten Meetings deiner\
   \ Karriere? Andy und Wolfgang sprechen \xFCber das meist untersch\xE4tzte Meeting\
   \ deiner beruflichen Laufbahn: 1-on-1s: Purer M\xFCll, Zeitverschwendung und reines\
