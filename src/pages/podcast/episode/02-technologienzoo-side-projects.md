@@ -65,7 +65,14 @@ chapter:
   title: Outro
 date: '2022-01-10'
 description: "Wolfgang und Andy erz\xE4hlen ein wenig was \xFCber ihre eigenen Side\
-  \ Projects sourcectl (https://gettoknow.sourcectl.dev/), F-Online ..."
+  \ Projects sourcectl (https://gettoknow.sourcectl.dev/), F-Online (https://www.f-online.at/)\
+  \ und the athlete (https://theathlete.app/). Wir machen eine Rundfahrt durch den\
+  \ verwendeten Technologienzoo, diskutieren ob man Monitoring in Side Projects ben\xF6\
+  tigt, wann es Over-Engineering und wann gerechtfertigt ist, ob der heutige Einsatz\
+  \ von Zend Framework 1 schon als kriminell gewertet werden kann und h\xF6ren Wolfgang\
+  \ zu, wie er DevOps Anf\xE4ngerfehler begeht indem ihm die Festplatte voll logs\
+  \ l\xE4uft.  Bonus: Wie Wolfgang den ultimativen Reichtum mit seinem eigenen CMS\
+  \ zur dotcom Blase verpasst hat"
 google_podcasts: https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5yZWRjaXJjbGUuY29tLzBlY2ZkZmQ3LWZkYTEtNGMzZC05NTE1LTQ3NjcyN2Y5ZGY1ZQ/episode/NTYxZjhlNmQtZTg2OS00MmIxLTg1MzYtMzE5ZTk1MDI5NGRh?sa=X&ved=0CAUQkfYCahcKEwi4xMSxj4L4AhUAAAAAHQAAAAAQNQ
 headlines: "sprungmarken::Sprungmarken||erwahnte-side-projects::Erw\xE4hnte Side Projects||erwahnte-technologien::Erw\xE4\
   hnte Technologien||anderes::Anderes||erwahnte-personen::Erw\xE4hnte Personen||hosts::Hosts"

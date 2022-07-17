@@ -41,8 +41,13 @@ chapter:
   title: "Wie sieht ein m\xF6glicher Karriereweg aus, wenn der Engineering Manager-Weg\
     \ nichts f\xFCr mich ist?"
 date: '2022-02-01'
-description: 'Engineering Manager oder Team-Lead: Eine Position die sehr motivierend,
-  aber auch abschreckend wirken kann. Was erwartet ...'
+description: "Engineering Manager oder Team-Lead: Eine Position die sehr motivierend,\
+  \ aber auch abschreckend wirken kann. Was erwartet einen? Was ist die Aufgabe einer\
+  \ Engineering Managerin? Wie ver\xE4ndert sich der Arbeitsalltag? Ist die Stelle\
+  \ \xFCberhaupt etwas f\xFCr mich? Und was passiert, wenn ich doch lieber Software\
+  \ Entwickeln m\xF6chte? Gibt es einen alternativen Karrierepfad? All das und noch\
+  \ \xFCber viel mehr Erfahrungen sprechen Andy und Wolfgang in Episode 05 vom Engineering\
+  \ Kiosk. Bonus: Warum Andy Muskelkater im Arsch hat"
 google_podcasts: https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5yZWRjaXJjbGUuY29tLzBlY2ZkZmQ3LWZkYTEtNGMzZC05NTE1LTQ3NjcyN2Y5ZGY1ZQ/episode/NWY3ZmIxNzUtNDM4MS00ZGQ0LWEyMDctZDVlZjZjNjc5NzA2?sa=X&ved=0CAUQkfYCahcKEwi4xMSxj4L4AhUAAAAAHQAAAAAQNQ
 headlines: "erwahnte-artikel::Erw\xE4hnte Artikel||bucher-uber-das-engineering-management::B\xFC\
   cher \xFCber das Engineering Management||sprungmarken::Sprungmarken||hosts::Hosts"

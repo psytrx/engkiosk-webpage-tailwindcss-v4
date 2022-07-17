@@ -53,7 +53,15 @@ chapter:
   title: Outro
 date: '2022-02-22'
 description: "Sein eigener Chef zu sein, sich die Projekte aussuchen k\xF6nnen und\
-  \ sich die Zeit frei selbst einzuteilen. Obendrein noch einen ..."
+  \ sich die Zeit frei selbst einzuteilen. Obendrein noch einen Haufen Geld verdienen.\
+  \ Das ist die Vorstellung von vielen ITlern zur Selbstst\xE4ndigkeit. Doch wie sieht\
+  \ die Realit\xE4t aus? Was sind die negativen Aspekte? Und wie viel Geld kommt wirklich\
+  \ unterm Strich bei rum? In dieser Episode teilt Wolfgang seine langj\xE4hrige Freelance-Erfahrung:\
+  \ Welche Arten von Freelancing gibt es, wie er die Probleme beim Sch\xE4tzen des\
+  \ zeitlichen Aufwandes umgeht, warum rostende Software ein Problem ist und zu schlecht\
+  \ gelaunten Kunden f\xFChrt, ob es sich lohnt seine Finger zu versicherung und was\
+  \ goldene Handschellen mit all dem zu tun haben. Bonus: Wie Wolfgang einen Kunden\
+  \ beim Krafttraining im Fitnessstudio akquiriert hat, ohne selbst Gewichte zu stemmen."
 google_podcasts: https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5yZWRjaXJjbGUuY29tLzBlY2ZkZmQ3LWZkYTEtNGMzZC05NTE1LTQ3NjcyN2Y5ZGY1ZQ/episode/MjZiMDkyOTktY2UwMS00ZWMwLTg0MDEtZjZkOGIyMzQ2MWVk?sa=X&ved=0CAUQkfYCahcKEwi4xMSxj4L4AhUAAAAAHQAAAAAQNQ
 headlines: links::Links||anderes::Anderes||sprungmarken::Sprungmarken||hosts::Hosts
 image: /images/podcast/episode/07-die-freelance-freiheit.jpg

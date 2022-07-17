@@ -46,8 +46,16 @@ chapter:
 - start: 00:50:33
   title: Outro
 date: '2022-03-01'
-description: Datenbanken, besonders relationale Datenbanken und im Web ganz besonders
-  MySQL. Jeder kennt sie, jeder nutzt sie, aber keiner ...
+description: "Datenbanken, besonders relationale Datenbanken und im Web ganz besonders\
+  \ MySQL. Jeder kennt sie, jeder nutzt sie, aber keiner gibt zu diese zu nutzen da\
+  \ sie uncool und alt sind und sowieso nicht skalieren. Wolfgang und Andy sprechen\
+  \ ein wenig \xFCber dieses Thema: Wie man seine eigene SQL Datenbank schreibt, was\
+  \ der Unterschied von Row-Based und Statement-Based Replication ist, warum simple\
+  \ Dateien oft besser sind als eine Datenbank, ob sqlite helfen kann und MongoDB\
+  \ die L\xF6sung ist, wie Facebook, Booking und GitHub MySQL betreiben, ob PostgreSQL\
+  \ wirklich was kann und welche Schritte ihr unternehmen k\xF6nnt, um eure Datenbank\
+  \ zu tunen. Bonus: Ob Wolfgang Mickey Krause kennt und ob er ein erfolgreicher MySQL\
+  \ Buchautor war."
 google_podcasts: https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5yZWRjaXJjbGUuY29tLzBlY2ZkZmQ3LWZkYTEtNGMzZC05NTE1LTQ3NjcyN2Y5ZGY1ZQ/episode/NzBjYjE3YTktNjA3ZC00ZmFlLWI4YWQtY2QxZjA2M2NhZmRh?sa=X&ved=0CAUQkfYCahcKEwi4xMSxj4L4AhUAAAAAHQAAAAAQNQ
 headlines: "links::Links||erwahnte-personen::Erw\xE4hnte Personen||sprungmarken::Sprungmarken||hosts::Hosts"
 image: /images/podcast/episode/08-vergiss-doch-datenbanken.jpg

@@ -48,7 +48,17 @@ chapter:
   title: Outro
 date: '2022-07-05'
 description: "Der Gro\xDFteil der IT-Ressourcen wie Dokumentationen, Websites, Pr\xE4\
-  sentationen in Englisch, doch was ist wenn man selbst von ..."
+  sentationen in Englisch, doch was ist wenn man selbst von sich sagt \"My english\
+  \ is not the yellow from the egg\"? Diese Episode dreht sich ganz um die englische\
+  \ Sprache und das Arbeiten in internationalen Teams: Welche H\xFCrden haben die\
+  \ meisten deutschen in Bezug auf die englische Sprache? Wie kann man diese \xFC\
+  berkommen und sicherer mit der englischen Sprache werden? Und was passiert, wenn\
+  \ ich auf der Arbeit auf einmal Englisch sprechen muss? Wie ver\xE4ndert sich mein\
+  \ Arbeitsumfeld, wenn das Team international zusammengestellt ist? Was muss ein\
+  \ Arbeitgeber im Kopf behalten, wenn sich das Team international entwickeln soll?\
+  \ Und wie verh\xE4lt sich aktuell die Remote-Arbeit mit der ganzen Thematik? All\
+  \ das und noch mehr in dieser Episode. Bonus: Russische Software-Code-Kommentare,\
+  \ die Vertonung von Hollywood Filmen und schnelle deutsche ALDI Kassierer."
 google_podcasts: https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5yZWRjaXJjbGUuY29tLzBlY2ZkZmQ3LWZkYTEtNGMzZC05NTE1LTQ3NjcyN2Y5ZGY1ZQ/episode/NjdmNDdhNDEtNGE2OC00ZGY3LWJkZWEtMjliZDg4ZTg2NDk3?sa=X&ved=2ahUKEwipgfnykOH4AhU1VTUKHcYQDHcQkfYCegQIARAF
 headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts
 image: /images/podcast/episode/26-my-english-is-not-the-yellow-from-the-egg-arbeiten-in-internationalen-teams.jpg

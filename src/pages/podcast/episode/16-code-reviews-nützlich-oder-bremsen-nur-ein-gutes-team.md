@@ -63,7 +63,15 @@ chapter:
   title: Outro
 date: '2022-04-26'
 description: "Code Reviews: Jeder will schnelles Feedback, doch niemand hat Zeit daf\xFC\
-  r - Eine Hassliebe. Eine Komponente im Alltag jedes ..."
+  r - Eine Hassliebe. Eine Komponente im Alltag jedes Software Engineers. Egal ob\
+  \ Junior, Senior oder Staff-Engineer. Jeder erstellt Code Reviews und kommentiert\
+  \ die Arbeit von den Kollegen. Doch wie sehen gute Code Reviews aus? Was geh\xF6\
+  rt hinein, was bleibt besser drau\xDFen? Wie viel Reviewer machen Sinn? Wie geht\
+  \ man mit Nitpicking-Kommentaren und Gatekeepern um? Und allgemein: Zieht dieser\
+  \ zus\xE4tzliche Schritt nicht die Performance des Teams runter und ist sowieso\
+  \ Overhead? All das und noch viel mehr in dieser Episode zum Thema Code Reviews.\
+  \ Bonus: Was Faultiere und Markus S\xF6der mit Code Reviews zu tun haben und warum\
+  \ Blubberwasser den Charakter verdirbt."
 google_podcasts: https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5yZWRjaXJjbGUuY29tLzBlY2ZkZmQ3LWZkYTEtNGMzZC05NTE1LTQ3NjcyN2Y5ZGY1ZQ/episode/Y2MwYWY4MTUtNDhhZC00YjRhLThhYzgtYWRhMmQ1YWJkNzc5?sa=X&ved=0CAUQkfYCahcKEwi4xMSxj4L4AhUAAAAAHQAAAAAQNQ
 headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts
 image: "/images/podcast/episode/16-code-reviews-n\xFCtzlich-oder-bremsen-nur-ein-gutes-team.jpg"

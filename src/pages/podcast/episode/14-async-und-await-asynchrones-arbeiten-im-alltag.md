@@ -41,8 +41,16 @@ chapter:
 - start: 00:54:05
   title: Wrap Up zum Thema asynchrones Arbeiten und Outro
 date: '2022-04-12'
-description: Remote-Work, asynchrone und parallele Arbeit und die eigene Work-Life-Balance.
-  Durch Corona haben wir alle einen Geschmack ...
+description: "Remote-Work, asynchrone und parallele Arbeit und die eigene Work-Life-Balance.\
+  \ Durch Corona haben wir alle einen Geschmack von der Remote-Arbeit und Home Office\
+  \ bekommen. Einige hassen es, andere lieben es und haben sogar dem B\xFCro f\xFC\
+  r immer den R\xFCcken gekehrt. Aber worauf kommt es denn wirklich an? Wolfgang und\
+  \ Andy gehen dieser Frage mal auf den Grund: async und await, Event-Loop, Fokus-Zeiten,\
+  \ Eule und Lerche als Menschentypen, Vertrauen im Team, messbare Ergebnisse, Pro-Aktivit\xE4\
+  t und Schreib-Skills. Was das alles miteinander zu tun hat, h\xF6rt ihr in dieser\
+  \ Episode. Bonus: Warum man in Amsterdam anders meditiert als anderswo, wieso Andys\
+  \ Liebe zu Redis einen Knick bekommen hat und ob Wolfgang wirklich Holl\xE4nder\
+  \ ist."
 google_podcasts: https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5yZWRjaXJjbGUuY29tLzBlY2ZkZmQ3LWZkYTEtNGMzZC05NTE1LTQ3NjcyN2Y5ZGY1ZQ/episode/MWM3ZDY2YTYtZjg2YS00ZjdlLWJmYjktOTNhY2YyZjlkYmEz?sa=X&ved=0CAUQkfYCahcKEwi4xMSxj4L4AhUAAAAAHQAAAAAQNQ
 headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts
 image: /images/podcast/episode/14-async-und-await-asynchrones-arbeiten-im-alltag.jpg

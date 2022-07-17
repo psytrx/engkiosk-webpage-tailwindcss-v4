@@ -47,8 +47,15 @@ chapter:
 - start: 01:02:00
   title: Outro
 date: '2022-06-14'
-description: Machst du noch selbst das Licht an oder automatisiert du schon? Internet
-  of Things (IoT) ist in aller Munde. Jedes Device ...
+description: "Machst du noch selbst das Licht an oder automatisiert du schon? Internet\
+  \ of Things (IoT) ist in aller Munde. Jedes Device trackt irgendwas mit. Doch was\
+  \ kann man damit machen? Home Automation ist das richtige Stichwort. Und daf\xFC\
+  r braucht man kein eigenes Haus oder ein abgeschlossenes Studium. In dieser Episode\
+  \ geben Andy und Wolfgang einen praktischen Einblick und wie man am einfachsten\
+  \ selbst loslegen kann. Weiterhin versuchen wir euch mit unseren Learnings vor schlimmerem\
+  \ zu bewahren. Viel Spa\xDF beim automatisieren. Bonus: Warum der Grundriss von\
+  \ Andys Wohnung nun in China ist und warum bald alle H\xF6rer\u2219innen nackig\
+  \ durch ihre Wohnung rennen."
 google_podcasts: https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5yZWRjaXJjbGUuY29tLzBlY2ZkZmQ3LWZkYTEtNGMzZC05NTE1LTQ3NjcyN2Y5ZGY1ZQ/episode/NDdiNDNmMjYtMzQ1Ni00YmMxLWIwZTAtZWMyOGE1ZWEwZmRl?sa=X&ved=2ahUKEwiKkL-Alrn4AhUXB0QIHdtQCXMQkfYCegQIARAF
 headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts
 image: /images/podcast/episode/23-schaltest-du-noch-oder-automatisiert-du-schon-home-automation.jpg

@@ -44,8 +44,15 @@ chapter:
 - start: 00:57:55
   title: Zusammenfassung der Episode und Outro
 date: '2022-06-21'
-description: 'Old man yells at cloud - Oder: Wie managed man seine Infrastruktur mit
-  Stil (und Software) Anders als gewohnt nimmt in dieser ...'
+description: "Old man yells at cloud - Oder: Wie managed man seine Infrastruktur mit\
+  \ Stil (und Software) Anders als gewohnt nimmt in dieser Episode Andy die Dozenten-Rolle\
+  \ ein und beantwortet Wolfgang all seine Fragen zum Thema Infrastructure as Code.\
+  \ Wir kl\xE4ren wozu man das ganze eigentlich braucht, was Terraform und Pulumi\
+  \ ist, kl\xE4ren \xFCber einen weit verbreiteten Mythos auf, wo der Unterschied\
+  \ zwischen Infrastructure Orchestration und Configuration Management ist, was das\
+  \ beste Configuration Management Tool ist und wo es Herausforderungen bei der Verwendung\
+  \ von Infrastructure as Code gibt. Bonus: Was ein Data Engineer ist, ob Wolfgang\
+  \ Holz-Clogs tr\xE4gt und wie Deutschland mit dem 9\u20AC Ticket umgeht."
 google_podcasts: https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5yZWRjaXJjbGUuY29tLzBlY2ZkZmQ3LWZkYTEtNGMzZC05NTE1LTQ3NjcyN2Y5ZGY1ZQ/episode/YTA5OWNlMmUtZjY4My00MWU0LWI5M2YtNTUzZDJmNjY2ZmY0?sa=X&ved=2ahUKEwjN_tn_9b34AhXnM1kFHQKtDH8QkfYCegQIARAF
 headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts
 image: /images/podcast/episode/24-infrastructure-as-code-oder-old-man-yells-at-cloud.jpg

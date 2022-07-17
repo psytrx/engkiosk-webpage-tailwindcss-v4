@@ -45,20 +45,29 @@ chapter:
 - start: 00:54:17
   title: Outro
 date: '2022-07-12'
-description: Was haben die JavaScript Pakete left-pad, color, faker und cross-env
-  gemeinsam? Alle waren in npm Package Sicherheits-Incidents ...
+description: "Was haben die JavaScript Pakete left-pad, color, faker und cross-env\
+  \ gemeinsam? Alle waren in npm Package Sicherheits-Incidents involviert. Wenn man\
+  \ sich die Anzahl von Javascript Abh\xE4ngigkeiten bei Mittelgro\xDFen Projekten\
+  \ ansieht, ist eine dreistellige Anzahl an JavaScript Paketen nicht un\xFCblich.\
+  \ Das liegt prim\xE4r an der \xFCberschaubaren Gr\xF6\xDFe der Pakete und somit\
+  \ der Funktionalit\xE4t. Alles nur, um Pakete verwaltbarer zu halten. Doch dieser\
+  \ Umstand macht das JavaScript-Ecosystem so attraktiv f\xFCr Angreifer oder kann\
+  \ zu extremen Seiteneffekten f\xFChren. In dieser Episode sprechen wir drei npm\
+  \ Package Incidents durch, was es damit aufsich hatte, welche Attack-M\xF6glichkeiten\
+  \ es noch gibt und wie man sich als Software Entwickler dagegen sch\xFCtzen kann.\
+  \ Bonus: Was Bademeister, Blubberwasser und eine ASCII-Repr\xE4sentation von Uncle\
+  \ Sam und der amerikanischen Flagge mit JavaScript zu tun haben."
 google_podcasts: https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5yZWRjaXJjbGUuY29tLzBlY2ZkZmQ3LWZkYTEtNGMzZC05NTE1LTQ3NjcyN2Y5ZGY1ZQ/episode/NDVkOTA4NTItZmUyYi00MTkyLWI4OTctY2VlMWZjMGMxZjky?sa=X&ved=2ahUKEwig3e-E1PL4AhUmGVkFHYtJBAsQkfYCegQIARAF
 headlines: links::Links||weitere-nicht-behandelte-incidents::Weitere nicht behandelte
   Incidents||sprungmarken::Sprungmarken||hosts::Hosts
 image: "/images/podcast/episode/27-sicherheit-in-der-dependency-h\xF6lle.jpg"
 layout: ../../../layouts/podcast-episode.astro
 spotify: https://open.spotify.com/episode/1PFpdXNHVvRgGPPUxC59Te
-tags: [
-  "Incident Management",
-  "Software Engineering",
-  "Frontend",
-  "Backend"
-]
+tags:
+- Incident Management
+- Software Engineering
+- Frontend
+- Backend
 title: "#27 Sicherheit in der Dependency H\xF6lle"
 
 ---

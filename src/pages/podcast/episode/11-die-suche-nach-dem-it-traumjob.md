@@ -49,8 +49,16 @@ chapter:
 - start: 00:56:12
   title: Outro
 date: '2022-03-22'
-description: 'Den richtigen Arbeitgeber und die richtige Firma finden: Eine Mammut-Aufgabe.
-  In dieser Episode sprechen Wolfgang und Andy ...'
+description: "Den richtigen Arbeitgeber und die richtige Firma finden: Eine Mammut-Aufgabe.\
+  \ In dieser Episode sprechen Wolfgang und Andy ein wenig dar\xFCber wie man neue,\
+  \ potentielle, Arbeitgeber findet, welche Fragen man sich selbst stellen kann um\
+  \ herauszufinden, was einem wichtig ist, geben Tipps um mit Recruitern zusammen\
+  \ zu arbeiten, Fragen uns ob ein hohes Gehalt wirklich alles ist, ob Startups, ScaleUps\
+  \ oder Konzerne besser sind und warum Agrar-Tech und M\xE4hdrescher der hei\xDF\
+  e Schei\xDF sind. Als Start in dieses Thema gibt es ein Re-Cap von einer User-Umfrage\
+  \ auf Reddit zum Thema 1on1s und die Beantwortung der Frage, wie man gutes (People)\
+  \ Leadership in neuen Firmen erkennt. Bonus: Was Andys Kegeltour mit seiner Jobsuche\
+  \ zu tun hat und was ein Mottek ist."
 google_podcasts: https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5yZWRjaXJjbGUuY29tLzBlY2ZkZmQ3LWZkYTEtNGMzZC05NTE1LTQ3NjcyN2Y5ZGY1ZQ/episode/MmZjNzUwNTYtZDEwZC00OTdiLTk2MTMtNDQ3ODI3Zjk1Nzg2?sa=X&ved=0CAUQkfYCahcKEwi4xMSxj4L4AhUAAAAAHQAAAAAQNQ
 headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts
 image: /images/podcast/episode/11-die-suche-nach-dem-it-traumjob.jpg

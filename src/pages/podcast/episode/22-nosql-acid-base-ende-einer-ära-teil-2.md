@@ -54,7 +54,13 @@ chapter:
   title: Outro
 date: '2022-06-07'
 description: "Neben relationalen Datenbanken gibt es noch eine ganz andere Welt: NoSQL.\
-  \ Doch wof\xFCr steht eigentlich NoSQL? Kein SQL? Not ..."
+  \ Doch wof\xFCr steht eigentlich NoSQL? Kein SQL? Not Only SQL? Was ist eigentlich\
+  \ die Geschichte hinter dem Hype? Warum wurde diese Art von Datenbanken erfunden?\
+  \ Wof\xFCr sind diese gut? Folgen NoSQL Datenbank auch dem ACID-Concept? Was ist\
+  \ Eventual Consistency? Und was sind Neo4J, M3, Cassandra, und Memcached f\xFCr\
+  \ Datenbanken? Eine Episode voller Buzzwords \u2026 Hoffen wir auf ein Bingo. Bonus:\
+  \ Warum Wolfgang keinen Manta f\xE4hrt und ob Andy bald mit einem Ferrari zum einkaufen\
+  \ f\xE4hrt."
 google_podcasts: https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5yZWRjaXJjbGUuY29tLzBlY2ZkZmQ3LWZkYTEtNGMzZC05NTE1LTQ3NjcyN2Y5ZGY1ZQ/episode/MGE3YzM5ZjMtYmY1NC00Mjk5LWE4MTQtNTNhMjZmM2YwOTkw?sa=X&ved=2ahUKEwiKkL-Alrn4AhUXB0QIHdtQCXMQkfYCegQIARAF
 headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts
 image: "/images/podcast/episode/22-nosql-acid-base-ende-einer-\xE4ra-teil-2.jpg"

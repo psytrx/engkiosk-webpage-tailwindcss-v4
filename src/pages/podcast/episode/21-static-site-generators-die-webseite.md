@@ -35,8 +35,16 @@ chapter:
 - start: 00:52:29
   title: Outro
 date: '2022-05-31'
-description: Statische Websites sind wieder cool und wir springen mit der eigenen
-  Website direkt auf den Hype. Eine Episode mal in (teilweise) ...
+description: "Statische Websites sind wieder cool und wir springen mit der eigenen\
+  \ Website direkt auf den Hype. Eine Episode mal in (teilweise) eigener Sache: Nach\
+  \ 6 Monaten und 20 Episoden haben wir eine eigene Website gebaut. Mit einem Static\
+  \ Site Generator. Wieso wir eine eigene Website haben wollen, was wir uns davon\
+  \ erhoffen, wie der technische Unterbau aussieht, wo wir recht dreckige Hacks eingebaut\
+  \ haben, was Static Site Generatoren sind und wozu sie eigentlich gut sind, bei\
+  \ welchen Use-Cases diese nicht geeignet sind und warum ein Produkt-Name zu Weltraum-Ergebnissen\
+  \ bei Google f\xFChren kann, kl\xE4ren wir in dieser Episode. Bonus: Was die Toten\
+  \ Hosen, Broilers und Rammstein mit Static Site Generators zu tun haben und wieso\
+  \ \xD6sterreich so gut im Marketing ist."
 google_podcasts: https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5yZWRjaXJjbGUuY29tLzBlY2ZkZmQ3LWZkYTEtNGMzZC05NTE1LTQ3NjcyN2Y5ZGY1ZQ/episode/N2Q5NzExODItNWEwMi00ZDU5LWExOTgtODJhZWQzZDFiZGM4?sa=X&ved=0CAUQkfYCahcKEwi4xqzSkon4AhUAAAAAHQAAAAAQAg
 headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts
 image: /images/podcast/episode/21-static-site-generators-die-webseite.jpg
