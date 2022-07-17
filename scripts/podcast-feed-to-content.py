@@ -233,9 +233,12 @@ def sync_podcast_episodes(rss_feed, path_md_files, path_img_files, spotify_clien
 
         description_text_only = remove_html_tags(description)
 
-        ix = max(description_text_only.find(' ', 120), 120)
-        description_short = description_text_only[:ix]
-        description_short += " ..."
+        # Cut text after the Intro text
+        # The string is hardcoded. Bad? Yep, maybe. Works? Yep.
+        description_short = description_text_only.split("Feedback an stehtisch@engineeringkiosk.dev")
+        description_short = description_short[0]
+        description_short = description_short.strip()
+        description_short = html.unescape(description_short)
 
         # Date format: Tue, 05 Apr 2022 04:25:00 +0000
         pub_date = item.find('pubDate').text
@@ -267,8 +270,8 @@ def sync_podcast_episodes(rss_feed, path_md_files, path_img_files, spotify_clien
                 image_filename = f"{image_filename}{file_ext}"
 
             # Remove prefix "public"
-            prefix = "public"
-            image_filename = image_filename[len(prefix):]
+            image_filename = image_filename.split("public")
+            image_filename = image_filename[1]
 
         else:
             image = ""
@@ -540,6 +543,14 @@ if __name__ == "__main__":
         ]
     )
 
+    # Determine if the script is called from root
+    # or from the scripts directory.
+    directory_path = os.getcwd()
+    folder_name = os.path.basename(directory_path)
+    folder_prefix = ""
+    if folder_name == "scripts":
+        folder_prefix = "../"
+
     match args.Mode:
         case "sync":
             # Bootstrapping Spotify API client
@@ -552,7 +563,7 @@ if __name__ == "__main__":
 
             spotify_client = create_spotify_client(SPOTIFY_APP_CLIENT_ID, SPOTIFY_APP_CLIENT_SECRET)
 
-            sync_podcast_episodes(PODCAST_RSS_FEED, PATH_MARKDOWN_FILES, PATH_IMAGE_FILES, spotify_client)
+            sync_podcast_episodes(PODCAST_RSS_FEED, f"{folder_prefix}{PATH_MARKDOWN_FILES}", f"{folder_prefix}{PATH_IMAGE_FILES}", spotify_client)
         case "redirect":
             # TODO Once Python 3.11 is out, replace toml library with stdlib
             # See https://peps.python.org/pep-0680/
