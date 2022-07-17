@@ -47,6 +47,7 @@ chapter:
 - start: 01:04:02
   title: Outro
 date: '2022-07-05'
+deezer: https://www.deezer.com/de/episode/400384857
 description: "Der Gro\xDFteil der IT-Ressourcen wie Dokumentationen, Websites, Pr\xE4\
   sentationen in Englisch, doch was ist wenn man selbst von sich sagt \"My english\
   \ is not the yellow from the egg\"? Diese Episode dreht sich ganz um die englische\

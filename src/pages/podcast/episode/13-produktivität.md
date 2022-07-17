@@ -39,6 +39,7 @@ chapter:
 - start: 00:55:37
   title: Outro
 date: '2022-04-05'
+deezer: https://www.deezer.com/de/episode/375279537
 description: "Zeit- und Produktivit\xE4tsmanagement: Buzzword-Bingo oder bringt das\
   \ wirklich was? So bl\xF6d wie das Thema auch klingen mag, es hat Vorteile. Nicht\
   \ nur im beruflichen Umfeld, sondern auch im privaten. Wolfgang und Andy sprechen\
