@@ -42,8 +42,17 @@ chapter:
 - start: 00:57:44
   title: Outro
 date: '2022-03-29'
-description: 'Make oder Buy: Alles einkaufen oder doch lieber selber machen? Eine
-  Frage die jeder von uns kennt: Sind meine Anforderungen ...'
+description: "Make oder Buy: Alles einkaufen oder doch lieber selber machen? Eine\
+  \ Frage die jeder von uns kennt: Sind meine Anforderungen so speziell, dass es kein\
+  \ Produkt auf dem Markt gibt, die diese abdeckt? Kann ich das nicht ggf. sogar besser,\
+  \ wenn ich das selbst mache? In dieser Episode versuchen wir das Thema mal etwas\
+  \ zu durchleuchten: Wann sollte man Services einkaufen? Wann doch lieber selbst\
+  \ umsetzen? Wie geht man mit interner Politik und Gegenwehr um? Was kostet das Selbermachen\
+  \ eigentlich und was bedeuten Begriffe wie Total Cost of Ownership, Opportunit\xE4\
+  tskosten und Shadow-IT eigentlich? Ist Open Source ein Zwischenweg und wie sieht\
+  \ die ganze Security-M\xE4\xDFig aus? Bonus: Ob wir ein Karrierepodcast sind, was\
+  \ man in 1. Semester BWL lernt, welche Sicherheitsanforderungen eine Webagentur\
+  \ aus Wanne-Eickel hat und warum Wolfgang Google mehr vertraut als sich selber."
 google_podcasts: https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5yZWRjaXJjbGUuY29tLzBlY2ZkZmQ3LWZkYTEtNGMzZC05NTE1LTQ3NjcyN2Y5ZGY1ZQ/episode/MWJiOThjNjMtZmFkYy00MzVhLWExZGYtYTExMjE5MzdkN2Ri?sa=X&ved=0CAUQkfYCahcKEwi4xMSxj4L4AhUAAAAAHQAAAAAQNQ
 headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts
 image: /images/podcast/episode/12-make-oder-buy.jpg

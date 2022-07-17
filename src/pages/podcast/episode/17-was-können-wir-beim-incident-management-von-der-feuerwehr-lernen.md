@@ -69,7 +69,16 @@ chapter:
   title: Outro
 date: '2022-05-03'
 description: "Was haben die Methoden der Feuerwehr zur Bek\xE4mpfung von Gro\xDFschadensereignissen\
-  \ mit dem Incident Management von IT-Systemen ..."
+  \ mit dem Incident Management von IT-Systemen gemeinsam?\_ Diese Frage kl\xE4ren\
+  \ wir in der folgenden Episode. Wolfgang, als Mitglied der freiwilligen Feuerwehr,\
+  \ gibt einen Einblick in das Prozedere, wenn die Feuerwehr ausr\xFCckt. Andy vergleicht\
+  \ dies mit dem Incident Management von Cloud-Systemen. Wir kl\xE4ren wie man den\
+  \ Schaden eines Incidents misst, was dies mit dem Vertrauen von Kunden zu tun hat,\
+  \ wie ordentliche Pr\xE4vention aussehen kann und warum es daf\xFCr wenig Ruhm gibt,\
+  \ was man unter War- und Peacetime versteht, wie ein moderner \u201CSchreiberling\u201D\
+  \ aussieht, wie dreist Presseleute sein k\xF6nnen und was eine kleine Konferenz\
+  \ in Kalifornien damit zu tun hat. Bonus: Was Gartenschl\xE4uche und Stahl-Hoch\xF6\
+  fen damit zu tun haben und wieso Kaffee holen doch eine Strategie sein kann."
 google_podcasts: https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5yZWRjaXJjbGUuY29tLzBlY2ZkZmQ3LWZkYTEtNGMzZC05NTE1LTQ3NjcyN2Y5ZGY1ZQ/episode/YjZlMDAyYTktZTBkNC00NzM2LTkyNzMtZDljOTAxMWQzOGRj?sa=X&ved=0CAUQkfYCahcKEwi4xMSxj4L4AhUAAAAAHQAAAAAQNQ
 headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts
 image: "/images/podcast/episode/17-was-k\xF6nnen-wir-beim-incident-management-von-der-feuerwehr-lernen.jpg"

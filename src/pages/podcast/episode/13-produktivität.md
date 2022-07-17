@@ -40,7 +40,14 @@ chapter:
   title: Outro
 date: '2022-04-05'
 description: "Zeit- und Produktivit\xE4tsmanagement: Buzzword-Bingo oder bringt das\
-  \ wirklich was? So bl\xF6d wie das Thema auch klingen mag, ..."
+  \ wirklich was? So bl\xF6d wie das Thema auch klingen mag, es hat Vorteile. Nicht\
+  \ nur im beruflichen Umfeld, sondern auch im privaten. Wolfgang und Andy sprechen\
+  \ \xFCber Ihre Art und Weise, Aufgaben zu organisieren, welche Methoden Sie verwenden,\
+  \ welche was bringen und welche Bl\xF6dsinn sind, wo die Probleme liegen, ob man\
+  \ Talent daf\xFCr bracht, wie man sich selbst mit spannenden Aufgaben austricksen\
+  \ kann und wie man damit seinen Vorgesetzten Erziehen kann. Bonus: Warum Wolfgang\
+  \ endlich seine Zahnb\xFCrste wechselt, was Volkswagen mit Getting Things Done zu\
+  \ tun hat und wieso Andy ab und zu knatsch mit seiner Frau hat."
 google_podcasts: https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5yZWRjaXJjbGUuY29tLzBlY2ZkZmQ3LWZkYTEtNGMzZC05NTE1LTQ3NjcyN2Y5ZGY1ZQ/episode/MzMyYzRkZTYtNjc5OC00OGYyLTlkNDktZTNlZTdmMjZjN2Jh?sa=X&ved=0CAUQkfYCahcKEwi4xMSxj4L4AhUAAAAAHQAAAAAQNQ
 headlines: "links::Links||bucher::B\xFCcher||sprungmarken::Sprungmarken||hosts::Hosts"
 image: "/images/podcast/episode/13-produktivit\xE4t.jpg"

@@ -65,7 +65,14 @@ chapter:
   title: Feedback zum Thema Datenbanken und Outro
 date: '2022-05-17'
 description: "Der zweite Datenbank-Deepdive im Engineering Kiosk. Indirekt kn\xFC\
-  pfen wir an Episode 8 mit dem Thema Datenbanken. Diesmal ..."
+  pfen wir an Episode 8 mit dem Thema Datenbanken. Diesmal fangen wir aber ganz vorne\
+  \ an: Mit hierarchischen Datenbanken \xFCber Objektorientierte Datenbanken, anschlie\xDF\
+  end zu SQL bis hin zur NoSQL und Spaltenorientierten Datenbank-\xC4ra. Dabei kl\xE4\
+  ren wir Fragen was zum Beispiel der Unterschied zwischen Datenbanken und Dateien\
+  \ ist, ob OOP-Datenbank immer noch ein Hype ist, was Indexe sind und wie diese funktionieren,\
+  \ warum die Migration weg von Oracle schwierig sein kann, ob Lucene eine Datenbank\
+  \ ist und noch viel viel mehr. Bonus: Was K\xFCrbiskerne mit Datenbanken zu tun\
+  \ haben und warum MySQL ein besseres Adressbuch mit SQL Interface ist."
 google_podcasts: https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5yZWRjaXJjbGUuY29tLzBlY2ZkZmQ3LWZkYTEtNGMzZC05NTE1LTQ3NjcyN2Y5ZGY1ZQ/episode/OGIzZWIwNTYtMjVlMy00MWUzLTk0ZjMtZWZhNDAwOTdiNmZi?sa=X&ved=0CAUQkfYCahcKEwi4xMSxj4L4AhUAAAAAHQAAAAAQNQ
 headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts
 image: "/images/podcast/episode/19-datenbank-deepdive-oder-das-ende-einer-\xE4ra-von-redis-bis-clickhouse.jpg"

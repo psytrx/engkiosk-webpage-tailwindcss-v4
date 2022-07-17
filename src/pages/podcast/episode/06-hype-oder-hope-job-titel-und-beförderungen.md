@@ -32,8 +32,15 @@ chapter:
 - start: 00:49:56
   title: Outro
 date: '2022-02-15'
-description: Sind Machine Learning und Artificial Intelligence nur Hypes oder sollte
-  ich meine Karriere dahingehend ausrichten? Und welche ...
+description: "Sind Machine Learning und Artificial Intelligence nur Hypes oder sollte\
+  \ ich meine Karriere dahingehend ausrichten? Und welche Hypes gibt es im Infrastruktur-Bereich?\
+  \ Und \xFCberhaupt: Wie steht das alles im Zusammenhang mit Job-Titels, meiner Bef\xF6\
+  rderung zum Senior Engineer und meinem Gehalt? All diese Themen kl\xE4ren Wolfgang\
+  \ und Andy in dieser wilden Folge. Weiterhin: Warum das Leben kein Ponyhof ist,\
+  \ was Agrar-Tech und autonom-fahrende Trecker, die Inflation und Kr\xF6sus damit\
+  \ zu tun haben, sowie warum Software Engineers zu den Top 5% der Gesellschaft geh\xF6\
+  ren. Bonus: Warum Wolfgang kein Eiskunstlauf macht und wie er seinen Dr.-Titel bekommen\
+  \ hat."
 google_podcasts: https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5yZWRjaXJjbGUuY29tLzBlY2ZkZmQ3LWZkYTEtNGMzZC05NTE1LTQ3NjcyN2Y5ZGY1ZQ/episode/ZWJkNDBlZDgtNWE5OC00OTIxLWE2YjItMWJmNmE2ODE4YjUx?sa=X&ved=0CAUQkfYCahcKEwi4xMSxj4L4AhUAAAAAHQAAAAAQNQ
 headlines: "links::Links||erwahnte-personen::Erw\xE4hnte Personen||sprungmarken::Sprungmarken||hosts::Hosts"
 image: "/images/podcast/episode/06-hype-oder-hope-job-titel-und-bef\xF6rderungen.jpg"

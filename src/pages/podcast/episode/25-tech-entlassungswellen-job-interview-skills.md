@@ -43,7 +43,18 @@ chapter:
   title: Outro
 date: '2022-06-28'
 description: "Interviews als Bewerber zu f\xFChren ist nicht immer leicht. Oft hat\
-  \ man das Gef\xFChl, dass man sich \u201CBeweisen\u201D muss. Doch muss ..."
+  \ man das Gef\xFChl, dass man sich \u201CBeweisen\u201D muss. Doch muss das wirklich\
+  \ so sein? Besonders im Tech-Sektor sind Whiteboard-Challenges und Coding-Interviews\
+  \ der Endgegner. Viele Bewerber sind aber schon vorher nerv\xF6s, stammeln, stehen\
+  \ unter Druck und sind ggf. nicht sich selbst. In dieser Episode sprechen wir mal\
+  \ ein wenig \xFCber die aktuelle Lage im Tech-Sektor in Bezug auf Layoffs, und falls\
+  \ man eine neue Firma sucht, wie man an ein Interview locker und sicher ran geht.\
+  \ Wir kl\xE4ren wie heutzutage eine Bewerbung aussehen kann, was man vor dem eigentlichen\
+  \ Interview tun kann, um herauszustechen, wie man sich im Interview verh\xE4lt und\
+  \ aus dem \u201CFrage-Antwort-Spiel\u201D eine ordentliche Konversation auf Augenh\xF6\
+  he macht aber auch wie man den Endgegner, die Coding Challenge, meistern kann. Bonus:\
+  \ Warum Wolfgang nur Kaffee in Portugal trinkt und was ein Gehsteig, B\xFCrgersteig\
+  \ und Klettersteig gemeinsam haben."
 google_podcasts: https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5yZWRjaXJjbGUuY29tLzBlY2ZkZmQ3LWZkYTEtNGMzZC05NTE1LTQ3NjcyN2Y5ZGY1ZQ/episode/YzdhNDA3ZjQtYWM3MS00ZjJkLTllOWMtOTUyMGU5NTdhMjYw?sa=X&ved=2ahUKEwjExMXrgtD4AhVJrnIEHekVANQQkfYCegQIARAF
 headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts
 image: /images/podcast/episode/25-tech-entlassungswellen-job-interview-skills.jpg

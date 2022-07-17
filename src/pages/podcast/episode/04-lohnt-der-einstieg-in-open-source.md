@@ -63,7 +63,10 @@ chapter:
     tun hat
 date: '2022-01-25'
 description: "F\xFCr Andy ist Open Source und die Open Source Community ist bereits\
-  \ ein langer und essentieller Begleiter. In dieser Episode ..."
+  \ ein langer und essentieller Begleiter. In dieser Episode interviewed Wolfgang\
+  \ Andy genau zu dieseme Thema: Wie war sein Einsteig? Wieso es wichtig ist, sich\
+  \ Zeit zu nehmen um ein Bug-Ticket zu schreiben und was Snowboarden mit Open Source\
+  \ zu tun hat. Bonus: Wie man Andy dazu bringt, nackig durch die Wohnung zu flitzen."
 google_podcasts: https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5yZWRjaXJjbGUuY29tLzBlY2ZkZmQ3LWZkYTEtNGMzZC05NTE1LTQ3NjcyN2Y5ZGY1ZQ/episode/MTE4M2MyNmMtZmU3OS00NWVlLTk4ODMtZDU1YzVlYTk2OTM0?sa=X&ved=0CAUQkfYCahcKEwi4xMSxj4L4AhUAAAAAHQAAAAAQNQ
 headlines: "sprungmarken::Sprungmarken||erwahnte-artikel::Erw\xE4hnte Artikel||erwahnte-personen::Erw\xE4\
   hnte Personen||erwahnte-projekte::Erw\xE4hnte Projekte||erwahnte-events::Erw\xE4\

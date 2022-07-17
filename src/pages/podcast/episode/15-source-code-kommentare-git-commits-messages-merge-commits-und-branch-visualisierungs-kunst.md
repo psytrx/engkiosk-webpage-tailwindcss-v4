@@ -61,7 +61,14 @@ chapter:
   title: Outro
 date: '2022-04-19'
 description: "Kommentare im Quellcode und Git Commit Messages - Liest die \xFCberhaupt\
-  \ wer? Ein Streit, der so alt ist wie die Software Entwicklung ..."
+  \ wer? Ein Streit, der so alt ist wie die Software Entwicklung selbst: Code ist\
+  \ Selbsterkl\xE4rend und braucht keine Kommentare. Oder doch? Und die Git Historie\
+  \ ist auch eigentlich sinnlos. Warum sollte da jemand zur\xFCck gehen und sich die\
+  \ Commit Messages durchlesen? Diese Fragen und Themen wie Semantic Versioning, Idiomatische\
+  \ Programmier-Patterns, Merge Commits, Story-Tellung und was Fynn Kliemanns Kunst\
+  \ mit der Git Branch-Visualisierung zu tun hat, kl\xE4ren Wolfgang und Andy in dieser\
+  \ Episode vom Engineering Kiosk. Bonus: Warum Andy einen neuen Podcast-Partner sucht\
+  \ und Wolfgang lieber seinen Code angreift, anstatt Ihn zu entwickeln."
 google_podcasts: https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5yZWRjaXJjbGUuY29tLzBlY2ZkZmQ3LWZkYTEtNGMzZC05NTE1LTQ3NjcyN2Y5ZGY1ZQ/episode/M2NhMGI4OWMtNzU0NS00MDNkLTg4NWQtZTk5ODFhNDYyYTll?sa=X&ved=0CAUQkfYCahcKEwi4xMSxj4L4AhUAAAAAHQAAAAAQNQ
 headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts
 image: /images/podcast/episode/15-source-code-kommentare-git-commits-messages-merge-commits-und-branch-visualisierungs-kunst.jpg

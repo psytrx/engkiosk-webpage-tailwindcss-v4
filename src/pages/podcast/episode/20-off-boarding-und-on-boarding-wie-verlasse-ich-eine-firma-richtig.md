@@ -39,7 +39,14 @@ chapter:
   title: Outro
 date: '2022-05-24'
 description: "Firmenwechsel. K\xFCndigung ist raus. Wie gehts weiter? Offboarding\
-  \ und Onboarding sind i.d.R. zwei Themen die sehr stark untersch\xE4tzt ..."
+  \ und Onboarding sind i.d.R. zwei Themen die sehr stark untersch\xE4tzt werden.\
+  \ Wie sieht man als Mitarbeiter zu, dass bei einem Firmenwechsel keine verbrannte\
+  \ Erde hinterlassen wird? Wie \xFCbergibt man alles ordentlich? Warum ist das \xFC\
+  berhaupt wichtig? Und was ist ein Exit-Gespr\xE4ch? Und wenn das alles durch ist:\
+  \ Wie startet man bei der neuen Firma ordentlich? Worauf sollte man achten? Und\
+  \ wie kann Onboarding aussehen? Dies und nich viel mehr. Bonus: Was Peter Thiel\
+  \ mit Kleber zu tun hat, was Krokodile mit Pr\xFCfungsergebnissen zu tun hat und\
+  \ was ein Weckmann mit dem Podcast zu tun hat."
 google_podcasts: https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5yZWRjaXJjbGUuY29tLzBlY2ZkZmQ3LWZkYTEtNGMzZC05NTE1LTQ3NjcyN2Y5ZGY1ZQ/episode/NTQ3YTU0YjMtNTNlZC00NmExLTk2ODAtNGEwMTMxNDI3OTdm?sa=X&ved=0CAUQkfYCahcKEwi4xMSxj4L4AhUAAAAAHQAAAAAQNQ
 headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts
 image: /images/podcast/episode/20-off-boarding-und-on-boarding-wie-verlasse-ich-eine-firma-richtig.jpg
