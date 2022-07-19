@@ -1,5 +1,5 @@
 ---
-amazon_music: ''
+amazon_music: https://music.amazon.com/podcasts/c35a09fe-4116-4e04-8f68-77d61b112e46/episodes/2c7aa12d-0d07-420d-ac9f-78e40422842a/engineering-kiosk-28-o-1-o-log-n-o-n-2---ist-die-komplexit%C3%A4t-von-algorithmen-im-entwickler-alltag-relevant
 apple_podcasts: https://podcasts.apple.com/us/podcast/28-o-1-o-log-n-o-n-2-ist-die-komplexit%C3%A4t-von-algorithmen/id1603082924?i=1000570419965&uo=4
 audio: https://stream.redcircle.com/episodes/0eeb6dea-4262-4b9f-b5c2-880f4465e4c3/stream.mp3
 chapter:
@@ -63,12 +63,16 @@ description: "Beim Programmieren ist alles ein Algorithmus. Irgendwie zumindest.
   \ dieser Episode. Bonus: Wie Andy und Wolfgang in deutscher Grammatik belehrt werden,\
   \ ob es OK ist in 1on1s zu fluchen und das Hash-Kollisionen mit der ganzen Sache\
   \ zu tun haben."
-google_podcasts: ''
+google_podcasts: https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5yZWRjaXJjbGUuY29tLzBlY2ZkZmQ3LWZkYTEtNGMzZC05NTE1LTQ3NjcyN2Y5ZGY1ZQ/episode/NWY4ZThjMGUtYzE2ZS00YzVlLWIxMmItMTNmZGY0YjI0YTM5?sa=X&ved=0CAUQkfYCahcKEwjw8_PxqoT5AhUAAAAAHQAAAAAQAQ
 headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts
 image: "/images/podcast/episode/28-o1-olog-n-on2-ist-die-komplexit\xE4t-von-algorithmen-im-entwickler-alltag-relevant.jpg"
 layout: ../../../layouts/podcast-episode.astro
 spotify: https://open.spotify.com/episode/1V1n57J1JlwQvq6liID45p
-tags: []
+tags:
+- Software Engineering
+- Frontend
+- Backend
+- Cloud
 title: "#28 O(1), O(log n), O(n^2) - Ist die Komplexit\xE4t von Algorithmen im Entwickler-Alltag\
   \ relevant?"
 
