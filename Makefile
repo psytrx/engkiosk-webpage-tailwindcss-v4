@@ -36,6 +36,9 @@ find-tags-that-need-descriptions: ## Checks all used tags that need SEO descript
 find-tags-that-need-descriptions-dump: ## Find all used tags that need SEO descriptions and dump it down to disk into tag-file
 	python ./scripts/find-tags-that-need-descriptions.py -write-file
 
+.PHONY: sync-german-tech-podcasts
+sync-german-tech-podcasts: ## Syncs German Tech Podcasts data from https://github.com/EngineeringKiosk/GermanTechPodcasts
+	python ./scripts/sync-german-tech-podcasts.py
 
 .PHONY: init
 init: ## Installs dependencies

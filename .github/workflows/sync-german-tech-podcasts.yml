@@ -1,0 +1,33 @@
+name: Sync German Tech Podcasts
+
+on:
+  workflow_dispatch:
+
+jobs:
+  publishing:
+    name: Sync German Tech Podcasts from external repository
+    runs-on: ubuntu-20.04
+
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-python@v4
+        with:
+          python-version-file: 'scripts/.python-version'
+          cache: 'pip'
+
+      - name: Install python dependencies
+        run: pip install -r scripts/requirements.txt
+
+      - name: Run make sync-german-tech-podcasts
+        run: make sync-german-tech-podcasts
+
+      # Commit results back to repository
+      - uses: stefanzweifel/git-auto-commit-action@v4
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          commit_message: Update src/data/german_tech_podcasts.json with latest podcast data
+          branch: main
+          commit_user_name: Sync German Tech Podcast workflow bot
+          commit_user_email: stehtisch@engineeringkiosk.dev
+          commit_author: Sync German Tech Podcast workflow bot <stehtisch@engineeringkiosk.dev>
