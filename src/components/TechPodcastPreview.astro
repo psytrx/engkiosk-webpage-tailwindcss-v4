@@ -3,17 +3,9 @@ export interface Props {
 	podcast: any;
 }
 
-const { podcast } = Astro.props;
+import { formatDate, formatUnixTimestampToDate } from "../scripts/date.js"
 
-function formatUnixTimestampToDate(timestamp) {
-	const options = {
-		weekday: 'long',
-		year: 'numeric',
-		month: 'long',
-		day: 'numeric'
-	};
-	return new Date(timestamp * 1000).toLocaleDateString('de-DE', options);
-}
+const { podcast } = Astro.props;
 
 function getLastEpisodeStatus(timestamp) {
 	let episode = new Date(timestamp * 1000);
@@ -55,6 +47,7 @@ let podcast_image = podcast.image.replace(/^.*[\\\/]/, '')
 				<ul class="mb-4 text-lg md:text-xl text-coolGray-500 font-medium list-disc list-inside">
 					<li>Anzahl Episoden: {podcast.episodeCount}</li>
 					<li>Aktuellste Episode vom {formatUnixTimestampToDate(podcast.latestEpisodePublished)} {episode_status}</li>
+					{ podcast.weekly_downloads_avg.value > 0 && <li>Wöchentliche downloads (avg): {podcast.weekly_downloads_avg.value} (Zahl von {formatDate(podcast.weekly_downloads_avg.updated)})</li> }
 				</ul>
 				<!--
 				<div class="flex items-center ">
