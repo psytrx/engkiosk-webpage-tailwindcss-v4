@@ -6,21 +6,12 @@ export interface Props {
 
 import { Markdown } from 'astro/components';
 import { URLify } from "../scripts/urlify.js"
+import { formatDate } from "../scripts/date.js"
 
 import '../styles/blogpost-preview.scss';
 
 const { post, n} = Astro.props;
 const { frontmatter } = post;
-
-function formatDate(date) {
-	const options = {
-		weekday: 'long',
-		year: 'numeric',
-		month: 'long',
-		day: 'numeric'
-	};
-	return new Date(date).toLocaleDateString('de-DE', options);
-}
 
 // n represents the number of the post to display.
 // Why does this matter?

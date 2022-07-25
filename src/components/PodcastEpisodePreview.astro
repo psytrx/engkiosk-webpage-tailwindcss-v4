@@ -5,19 +5,10 @@ export interface Props {
 }
 
 import { URLify } from "../scripts/urlify.js"
+import { formatDate } from "../scripts/date.js"
 
 const { episode, descriptionChars } = Astro.props;
 const { frontmatter } = episode;
-
-function formatDate(date) {
-	const options = {
-		weekday: 'long',
-		year: 'numeric',
-		month: 'long',
-		day: 'numeric'
-	};
-	return new Date(date).toLocaleDateString('de-DE', options);
-}
 
 let tags = frontmatter.tags.map((element) => URLify(element));
 
