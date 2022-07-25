@@ -38,11 +38,11 @@ let podcast_image = podcast.image.replace(/^.*[\\\/]/, '')
 			<div class="w-full md:w-8/12 px-4 mb-16 md:mb-0">
 				{ podcast.tags && podcast.tags.map((element) => <span class="inline-block py-px px-2 mb-4 text-xs leading-5 text-yellow-500 bg-yellow-100 font-medium uppercase rounded-full shadow-sm">{element}</span>) }
 				
-				<h1 class="mb-8 text-4xl md:text-5xl leading-tight text-coolGray-900 font-bold tracking-tighter">
+				<h2 class="mb-8 text-4xl md:text-5xl leading-tight text-coolGray-900 font-bold tracking-tighter">
 					<a href={podcast.website} class="hover:underline hover:text-yellow-500" title={`Website von ${podcast.name}`}>
 						{podcast.name}
 					</a>
-				</h1>
+				</h2>
 				<p class="mb-6 text-lg md:text-xl text-coolGray-500 font-medium">
 					{podcast.description}
 				</p>
