@@ -12,7 +12,7 @@ GIT_REPO = "https://github.com/EngineeringKiosk/GermanTechPodcasts.git"
 GIT_REPO_NAME = "GermanTechPodcasts"
 JSON_PATH_IN_GIT_REPO = "generated"
 IMAGES_PATH_IN_GIT_REPO = "generated/images"
-PODCAST_JSON_FILE = 'src/data/german_tech_podcasts.json'
+PODCAST_JSON_FILE = 'src/data/german-tech-podcasts.json'
 IMAGE_STORAGE = "public/images/german-tech-podcasts/"
 
 
@@ -32,12 +32,12 @@ def sync_german_tech_podcasts(merged_json_file_path, image_storage_path):
     
     # Read and combine JSON Podcast data
     logging.info(f"Merging {len(json_files)} JSON files into one ...")
-    podcast_data = {}
+    podcast_data = []
     for json_file in json_files:
         abs_file_path = os.path.join(json_file_dir, json_file)
         with open(abs_file_path) as f:
             data = json.load(f)
-            podcast_data[data["name"]] = data
+            podcast_data.append(data)
 
     # Dump Podcast data into file
     logging.info(f"Writing merged JSON file {merged_json_file_path} ...")
