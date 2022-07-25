@@ -15,8 +15,31 @@ function formatUnixTimestampToDate(timestamp) {
 	return new Date(timestamp * 1000).toLocaleDateString('de-DE', options);
 }
 
+function getLastEpisodeStatus(timestamp) {
+	let episode = new Date(timestamp * 1000);
+
+	let dateClone = new Date()
+	let sixMonth = new Date(dateClone.setMonth(dateClone.getMonth() - 6));
+
+	dateClone = new Date()
+	let twoMonth = new Date(dateClone.setMonth(dateClone.getMonth() - 2));
+
+	if (episode < sixMonth) {
+		return "🔴"
+	}
+
+	if (episode > sixMonth && episode < twoMonth) {
+		return "🟡"
+	}
+
+	return "🟢"
+}
+
+let episode_status = getLastEpisodeStatus(podcast.latestEpisodePublished)
 let podcast_image = podcast.image.replace(/^.*[\\\/]/, '')
+
 ---
+
 <section class="py-8 md:py-12 bg-white overflow-hidden" style="background-image: url('/images/elements/pattern-white.svg'); background-position: center;">
 	<div class="container px-4 mx-auto">
 		<div class="flex flex-wrap lg:items-center -mx-4">
@@ -29,14 +52,36 @@ let podcast_image = podcast.image.replace(/^.*[\\\/]/, '')
 				<p class="mb-6 text-lg md:text-xl text-coolGray-500 font-medium">
 					{podcast.description}
 				</p>
-				<ul class="mb-6 text-lg md:text-xl text-coolGray-500 font-medium list-disc list-inside">
+				<ul class="mb-4 text-lg md:text-xl text-coolGray-500 font-medium list-disc list-inside">
 					<li>Anzahl Episoden: {podcast.episodeCount}</li>
-					<li>Aktuellste Episode vom {formatUnixTimestampToDate(podcast.latestEpisodePublished)}</li>
+					<li>Aktuellste Episode vom {formatUnixTimestampToDate(podcast.latestEpisodePublished)} {episode_status}</li>
 				</ul>
+				<!--
 				<div class="flex items-center ">
 					<a class="inline-block hover:opacity-80" href={podcast.website}>
 						<img src="/images/elements/icon-website.svg" height="33" width="33" alt={`Website von ${podcast.name}`}>
 					</a>
+				</div>
+			-->
+				<div class="flex flex-wrap">
+					<div class="mb-4 mt-4 mr-4">
+						<a class="flex items-center" href={`https://podcasts.apple.com/de/podcast/${podcast.itunesID}`} title={`${podcast.name} bei Apple Podcasts`}>
+							<img class="w-8" src="/images/brands/apple.svg" alt={`${podcast.name} bei Apple Podcasts`} title={`${podcast.name} bei Apple Podcasts`}>
+							<span class="text-coolGray-500 text-lg m-2">Apple</span>
+						</a>
+					</div>
+					<div class="m-4">
+						<a class="flex items-center" href={podcast.spotify} title={`${podcast.name} auf Spotify`}>
+							<img class="w-8" src="/images/brands/spotify.svg" alt={`${podcast.name} auf Spotify`} title={`${podcast.name} auf Spotify`}>
+							<span class="text-coolGray-500 text-lg m-2">Spotify</span>
+						</a>
+					</div>
+					<div class="m-4">
+						<a class="flex items-center" href={podcast.rssFeed} title={`${podcast.name} als RSS-Feed`}>
+							<img class="w-8" src="/images/brands/rss.svg" alt={`${podcast.name} als RSS-Feed`} title={`${podcast.name} als RSS-Feed`}>
+							<span class="text-coolGray-500 text-lg m-2">RSS</span>
+						</a>
+					</div>
 				</div>
 			</div>
 			<div class="w-full md:w-4/12 px-4">
