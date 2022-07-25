@@ -39,7 +39,9 @@ let podcast_image = podcast.image.replace(/^.*[\\\/]/, '')
 				{ podcast.tags && podcast.tags.map((element) => <span class="inline-block py-px px-2 mb-4 text-xs leading-5 text-yellow-500 bg-yellow-100 font-medium uppercase rounded-full shadow-sm">{element}</span>) }
 				
 				<h1 class="mb-8 text-4xl md:text-5xl leading-tight text-coolGray-900 font-bold tracking-tighter">
-					{podcast.name}
+					<a href={podcast.website} class="hover:underline hover:text-yellow-500" title={`Website von ${podcast.name}`}>
+						{podcast.name}
+					</a>
 				</h1>
 				<p class="mb-6 text-lg md:text-xl text-coolGray-500 font-medium">
 					{podcast.description}
@@ -49,13 +51,6 @@ let podcast_image = podcast.image.replace(/^.*[\\\/]/, '')
 					<li>Aktuellste Episode vom {formatUnixTimestampToDate(podcast.latestEpisodePublished)} {episode_status}</li>
 					{ podcast.weekly_downloads_avg.value > 0 && <li>Wöchentliche downloads (avg): {podcast.weekly_downloads_avg.value} (Zahl von {formatDate(podcast.weekly_downloads_avg.updated)})</li> }
 				</ul>
-				<!--
-				<div class="flex items-center ">
-					<a class="inline-block hover:opacity-80" href={podcast.website}>
-						<img src="/images/elements/icon-website.svg" height="33" width="33" alt={`Website von ${podcast.name}`}>
-					</a>
-				</div>
-			-->
 				<div class="flex flex-wrap">
 					<div class="mb-4 mt-4 mr-4">
 						<a class="flex items-center" href={`https://podcasts.apple.com/de/podcast/${podcast.itunesID}`} title={`${podcast.name} bei Apple Podcasts`}>
@@ -79,7 +74,9 @@ let podcast_image = podcast.image.replace(/^.*[\\\/]/, '')
 			</div>
 			<div class="w-full md:w-4/12 px-4">
 				<div class="relative mx-auto md:mr-0 max-w-max">
-					<img class="rounded-3xl" src={`/images/german-tech-podcasts/${podcast_image}`} alt={`Podcast ${podcast.name}`} title={`Podcast ${podcast.name}`}>
+					<a href={podcast.website} title={`Website von ${podcast.name}`}>
+						<img class="rounded-3xl" src={`/images/german-tech-podcasts/${podcast_image}`} alt={`Podcast ${podcast.name}`} title={`Podcast ${podcast.name}`}>
+					</a>
 				</div>
 			</div>
 		</div>
