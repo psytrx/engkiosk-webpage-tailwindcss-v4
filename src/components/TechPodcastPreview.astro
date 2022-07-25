@@ -17,22 +17,24 @@ function getLastEpisodeStatus(timestamp) {
 	let twoMonth = new Date(dateClone.setMonth(dateClone.getMonth() - 2));
 
 	if (episode < sixMonth) {
-		return "🔴"
+		return ["🔴", "red"]
 	}
 
 	if (episode > sixMonth && episode < twoMonth) {
-		return "🟡"
+		return ["🟡", "yellow"]
 	}
 
-	return "🟢"
+	return ["🟢", "green"]
 }
 
 let episode_status = getLastEpisodeStatus(podcast.latestEpisodePublished)
+let episode_status_emojy = episode_status[0]
+let episode_status_str = episode_status[1]
 let podcast_image = podcast.image.replace(/^.*[\\\/]/, '')
 
 ---
 
-<section class="py-8 md:py-12 bg-white overflow-hidden" style="background-image: url('/images/elements/pattern-white.svg'); background-position: center;">
+<section class="py-8 md:py-12 bg-white overflow-hidden" data-episode-status={episode_status_str} style="background-image: url('/images/elements/pattern-white.svg'); background-position: center;">
 	<div class="container px-4 mx-auto">
 		<div class="flex flex-wrap lg:items-center -mx-4">
 			<div class="w-full md:w-8/12 px-4 mb-16 md:mb-0">
@@ -48,7 +50,7 @@ let podcast_image = podcast.image.replace(/^.*[\\\/]/, '')
 				</p>
 				<ul class="mb-4 text-lg md:text-xl text-coolGray-500 font-medium list-disc list-inside">
 					<li>Anzahl Episoden: {podcast.episodeCount}</li>
-					<li>Aktuellste Episode vom {formatUnixTimestampToDate(podcast.latestEpisodePublished)} {episode_status}</li>
+					<li>Aktuellste Episode vom {formatUnixTimestampToDate(podcast.latestEpisodePublished)} {episode_status_emojy}</li>
 					{ podcast.weekly_downloads_avg.value > 0 && <li>Wöchentliche downloads (avg): {podcast.weekly_downloads_avg.value} (Zahl von {formatDate(podcast.weekly_downloads_avg.updated)})</li> }
 				</ul>
 				<div class="flex flex-wrap">
@@ -64,7 +66,7 @@ let podcast_image = podcast.image.replace(/^.*[\\\/]/, '')
 							<span class="text-coolGray-500 text-lg m-2">Spotify</span>
 						</a>
 					</div>
-					<div class="m-4">
+					<div class="mb-4 mt-4 ml-4">
 						<a class="flex items-center" href={podcast.rssFeed} title={`${podcast.name} als RSS-Feed`}>
 							<img class="w-8" src="/images/brands/rss.svg" alt={`${podcast.name} als RSS-Feed`} title={`${podcast.name} als RSS-Feed`}>
 							<span class="text-coolGray-500 text-lg m-2">RSS</span>
