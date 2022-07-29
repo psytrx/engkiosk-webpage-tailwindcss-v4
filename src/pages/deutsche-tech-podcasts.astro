@@ -8,7 +8,7 @@ import germanTechPodcasts from "../data/german-tech-podcasts.json";
 
 let title = 'Deutschsprachige Tech Podcasts - Engineering Kiosk';
 let description = 'Eine kuratierte Liste von deutschen Tech-Podcasts 🇩🇪 🇦🇹 🇨🇭 - Andere coole Podcasts aus der Community';
-let canonicalURL = Astro.canonicalURL;
+const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 
 // Sort Podcasts by name
 function orderByName(a, b) {

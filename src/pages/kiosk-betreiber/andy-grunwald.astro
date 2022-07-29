@@ -5,7 +5,7 @@ import Footer from '../../components/Footer.astro';
 
 let title = 'Andy Grunwald, Podcast Host - Engineering Kiosk';
 let description = 'Engineering Manager im Bereich Site Reliability Engineering und Software Engineer mit einem Fokus auf Backend-Systeme, Infrastruktur und Engineering Kultur aus Duisburg.';
-let canonicalURL = Astro.canonicalURL;
+const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 
 ---
 

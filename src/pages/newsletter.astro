@@ -5,7 +5,7 @@ import Nav from '../components/Nav.astro';
 
 let title = 'Newsletter - Engineering Kiosk';
 let description = 'Bleib up-to-date mit dem Kiosk-Tratsch was Themen im und um das Engineering Kiosk angeht. Neue Podcast-Episode, Blog-Post, eigene Aktionen + Events und mehr.';
-let canonicalURL = Astro.canonicalURL;
+const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 
 ---
 

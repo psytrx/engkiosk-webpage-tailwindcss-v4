@@ -6,7 +6,7 @@ import HostPreview from '../../components/HostPreview.astro';
 
 let title = 'Kiosk-Betreiber - Engineering Kiosk';
 let description = 'Wer sind eigentich die Gesichter hinter\'m Engineering Kiosk? Wer macht\'s? Wer brabbelt da die ganze Zeit? Wer hält den Kiosk am Laufem?';
-let canonicalURL = Astro.canonicalURL;
+const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 ---
 
 <html lang="de">

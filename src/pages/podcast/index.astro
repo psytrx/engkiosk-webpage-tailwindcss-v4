@@ -6,7 +6,7 @@ import PodcastEpisodeListing from '../../components/PodcastEpisodeListing.astro'
 
 let title = 'Alle Podcast Episoden - Engineering Kiosk';
 let description = 'Alle Episoden vom deutschsprachigen Software-Engineering-Podcast mit Wolfgang Gassler und Andy Grunwald über die Themen Engineering-Kultur, Open Source und Technologie.';
-let canonicalURL = Astro.canonicalURL;
+const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 ---
 <html lang="de">
 	<head>

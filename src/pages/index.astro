@@ -10,7 +10,7 @@ import podcastInfo from "../data/podcast-info.json";
 
 let title = 'Engineering Kiosk - Der Software-Engineering-Podcast';
 let description = 'Der deutschsprachige Software-Engineering-Podcast mit Wolfgang Gassler und Andy Grunwald rund um die Themen Engineering-Kultur, Open Source und Technologie.';
-let canonicalURL = Astro.canonicalURL;
+const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 
 // Data Fetching: List all Markdown posts in the repo.
 let allPosts = await Astro.glob('./blog/post/*.md');

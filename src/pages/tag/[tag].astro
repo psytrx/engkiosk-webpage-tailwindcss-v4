@@ -41,7 +41,7 @@ const allPodcastEpisode = Astro.props.allPodcastEpisode;
 let tagUrlName = Astro.params.tag
 let title = `Podcast Episoden und Blog Posts zum Thema ${tagHumanName} - Engineering Kiosk`;
 let description = `Alle Podcast Episoden und Blog Posts vom deutschsprachigen Software-Engineering-Podcast zum Thema ${tagHumanName} auf einer Seite.`;
-let canonicalURL = Astro.canonicalURL;
+const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 
 let tagDescription_short = ""
 let tagDescription_long = ""

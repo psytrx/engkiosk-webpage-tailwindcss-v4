@@ -1,5 +1,5 @@
 ---
-import { Markdown } from 'astro/components';
+import Markdown from '@astrojs/markdown-component';
 
 import MainHead from '../components/MainHead.astro';
 import Nav from '../components/Nav.astro';
@@ -10,7 +10,7 @@ import { formatDate } from "../scripts/date.js"
 import '../styles/blogpost.scss';
 
 const { content } = Astro.props;
-let canonicalURL = Astro.canonicalURL;
+const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 
 let title = "".concat(content.title, " - Engineering Kiosk");
 

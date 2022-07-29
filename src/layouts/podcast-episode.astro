@@ -9,7 +9,7 @@ import podcastInfo from "../data/podcast-info.json";
 import '../styles/podcast_episode.scss';
 
 const { content } = Astro.props;
-let canonicalURL = Astro.canonicalURL;
+const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 
 let content_image = (new URL(content.image, Astro.site.href)).href;
 let title = "".concat(content.title, " - Engineering Kiosk");

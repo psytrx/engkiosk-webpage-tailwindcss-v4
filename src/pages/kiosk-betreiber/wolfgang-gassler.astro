@@ -5,7 +5,7 @@ import Footer from '../../components/Footer.astro';
 
 let title = 'Wolfgang Gassler, Podcast Host - Engineering Kiosk';
 let description = 'Freelancer und Consultant mit einem Interesse in Menschen, Tech-Kultur, Datenbank und Skalierung, Product Entwicklung und Usability sowie Recommender Systems aus Amsterdam und Innsbruck.';
-let canonicalURL = Astro.canonicalURL;
+const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 
 ---
 

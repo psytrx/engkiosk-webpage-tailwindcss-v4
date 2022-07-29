@@ -5,7 +5,7 @@ import Nav from '../components/Nav.astro';
 
 let title = 'Kontakt - Engineering Kiosk';
 let description = 'Lass uns doch einfach mal sprechen. Schreib uns und mir melden uns zurück. Wir freuen uns über deine Nachricht!';
-let canonicalURL = Astro.canonicalURL;
+const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 
 ---
 
