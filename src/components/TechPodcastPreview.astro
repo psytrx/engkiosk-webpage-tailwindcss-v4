@@ -32,6 +32,12 @@ let episode_status_emojy = episode_status[0]
 let episode_status_str = episode_status[1]
 let podcast_image = podcast.image.replace(/^.*[\\\/]/, '')
 
+// If a Podcast is not available on Apple Podcasts,
+// we add different css classes.
+let spotifyClassName = "m-4";
+if (podcast.itunesID == 0) {
+	spotifyClassName = "mb-4 mt-4 mr-4";
+}
 ---
 
 <section class="py-8 md:py-12 bg-white overflow-hidden" data-episode-status={episode_status_str} style="background-image: url('/images/elements/pattern-white.svg'); background-position: center;">
@@ -54,13 +60,13 @@ let podcast_image = podcast.image.replace(/^.*[\\\/]/, '')
 					{ podcast.weekly_downloads_avg.value > 0 && <li>Wöchentliche downloads (avg): {podcast.weekly_downloads_avg.value} (Zahl von {formatDate(podcast.weekly_downloads_avg.updated)})</li> }
 				</ul>
 				<div class="flex flex-wrap">
-					<div class="mb-4 mt-4 mr-4">
+					{ podcast.itunesID > 0 && <div class="mb-4 mt-4 mr-4">
 						<a class="flex items-center" href={`https://podcasts.apple.com/de/podcast/${podcast.itunesID}`} title={`${podcast.name} bei Apple Podcasts`}>
 							<img class="w-8" src="/images/brands/apple.svg" alt={`${podcast.name} bei Apple Podcasts`} title={`${podcast.name} bei Apple Podcasts`}>
 							<span class="text-coolGray-500 text-lg m-2">Apple</span>
 						</a>
-					</div>
-					<div class="m-4">
+					</div>}
+					<div class={spotifyClassName}>
 						<a class="flex items-center" href={podcast.spotify} title={`${podcast.name} auf Spotify`}>
 							<img class="w-8" src="/images/brands/spotify.svg" alt={`${podcast.name} auf Spotify`} title={`${podcast.name} auf Spotify`}>
 							<span class="text-coolGray-500 text-lg m-2">Spotify</span>
