@@ -2,6 +2,8 @@ name: Sync German Tech Podcasts
 
 on:
   workflow_dispatch:
+  repository_dispatch:
+    types: [podcast-list-update]
 
 jobs:
   publishing:
