@@ -15,7 +15,7 @@ jobs:
       - name: Link Checker
         uses: lycheeverse/lychee-action@master
         with:
-          args: --verbose --no-progress -- https://engineeringkiosk.dev/
+          args: --verbose --no-progress --exclude fonts.gstatic.com -- https://engineeringkiosk.dev/
 
       - name: Create Issue From File
         if: github.repository_owner == 'EngineeringKiosk'
