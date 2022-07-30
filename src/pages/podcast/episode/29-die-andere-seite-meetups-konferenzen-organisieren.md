@@ -1,5 +1,5 @@
 ---
-amazon_music: ''
+amazon_music: https://music.amazon.com/podcasts/c35a09fe-4116-4e04-8f68-77d61b112e46/episodes/0377ea63-2955-41e8-ab74-2582dac8da8f/engineering-kiosk-29-die-andere-seite-meetups-konferenzen-organisieren
 apple_podcasts: https://podcasts.apple.com/us/podcast/29-die-andere-seite-meetups-konferenzen-organisieren/id1603082924?i=1000571178079&uo=4
 audio: https://stream.redcircle.com/episodes/14299012-06a5-4d0d-a131-3c9b7b35f320/stream.mp3
 chapter:
@@ -109,7 +109,10 @@ headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts||feedback-gern
 image: /images/podcast/episode/29-die-andere-seite-meetups-konferenzen-organisieren.jpg
 layout: ../../../layouts/podcast-episode.astro
 spotify: https://open.spotify.com/episode/3WQWuMUtFz3RcxJB2VJiNB
-tags: []
+tags:
+- Tech Kultur
+- Kommunikation
+- Knowledge Sharing
 title: '#29 Die andere Seite: Meetups & Konferenzen organisieren'
 
 ---
