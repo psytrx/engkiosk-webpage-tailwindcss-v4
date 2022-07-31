@@ -6,6 +6,7 @@ export interface Props {
 
 import { URLify } from "../scripts/urlify.js"
 import { formatDate } from "../scripts/date.js"
+import { cutText } from "../scripts/strings.js"
 
 const { episode, descriptionChars } = Astro.props;
 const { frontmatter } = episode;
@@ -13,13 +14,7 @@ const { frontmatter } = episode;
 let tags = frontmatter.tags.map((element) => URLify(element));
 
 // Cut description text
-let description = frontmatter.description;
-if (description.length > descriptionChars) {
-	let cutAt = description.lastIndexOf(' ', descriptionChars);
-	if (cutAt != -1) {
-		description = description.substring(0, cutAt) + '...';
-	}
-}
+let description = cutText(frontmatter.description, descriptionChars);
 ---
 <div class="w-full md:w-1/2 lg:w-1/3 px-4 mb-8">
 	<a class="block mb-6 overflow-hidden rounded-md" href={episode.url}>
