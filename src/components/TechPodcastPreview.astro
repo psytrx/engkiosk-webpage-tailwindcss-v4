@@ -66,12 +66,12 @@ if (podcast.itunesID == 0) {
 							<span class="text-coolGray-500 text-lg m-2">Apple</span>
 						</a>
 					</div>}
-					<div class={spotifyClassName}>
+					{ podcast.spotify.length > 0 && <div class={spotifyClassName}>
 						<a class="flex items-center" href={podcast.spotify} title={`${podcast.name} auf Spotify`}>
 							<img class="w-8" src="/images/brands/spotify.svg" alt={`${podcast.name} auf Spotify`} title={`${podcast.name} auf Spotify`}>
 							<span class="text-coolGray-500 text-lg m-2">Spotify</span>
 						</a>
-					</div>
+					</div>}
 					<div class="mb-4 mt-4 ml-4">
 						<a class="flex items-center" href={podcast.rssFeed} title={`${podcast.name} als RSS-Feed`}>
 							<img class="w-8" src="/images/brands/rss.svg" alt={`${podcast.name} als RSS-Feed`} title={`${podcast.name} als RSS-Feed`}>
