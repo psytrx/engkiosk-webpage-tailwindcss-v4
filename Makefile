@@ -43,3 +43,7 @@ sync-german-tech-podcasts: ## Syncs German Tech Podcasts data from https://githu
 .PHONY: init
 init: ## Installs dependencies
 	npm install
+
+.PHONY: eslint
+eslint: ## Statically analyzes of basic JavaScript scripts
+	node_modules/.bin/eslint --config .eslintrc src/scripts
