@@ -512,11 +512,7 @@ def get_episode_link_from_deezer(episodes, title: str) -> str:
     u = ""
     for episode in episodes:
         if episode.title == title:
-            # Here we should have a property "episode.link"
-            # but somehow this is not available.
-            # See https://github.com/browniebroke/deezer-python/issues/536
-            # As a workaround, we craft the link ourself.
-            u = f"https://www.deezer.com/de/episode/{episode.id}"
+            u = episode.link
 
     return u
 
