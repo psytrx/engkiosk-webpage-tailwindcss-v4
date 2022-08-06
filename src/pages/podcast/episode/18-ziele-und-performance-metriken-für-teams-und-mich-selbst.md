@@ -68,8 +68,7 @@ layout: ../../../layouts/podcast-episode.astro
 spotify: https://open.spotify.com/episode/2ByheYdW9jiNe2NZuLPkiI
 tags:
 - Team
-- Eigener Job
-- Metriken
+- Karriere
 title: "#18 Ziele und Performance-Metriken f\xFCr Teams und mich selbst"
 
 ---

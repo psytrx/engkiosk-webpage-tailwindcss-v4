@@ -60,7 +60,7 @@ spotify: https://open.spotify.com/episode/2efebNjDPhMZBjGC78z9fg
 tags:
 - Team
 - Kommunikation
-- Eigener Job
+- Karriere
 - Remote work
 title: '#14 async und await: asynchrones Arbeiten im Alltag'
 

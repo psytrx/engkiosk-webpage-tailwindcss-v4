@@ -69,8 +69,7 @@ image: /images/podcast/episode/07-die-freelance-freiheit.jpg
 layout: ../../../layouts/podcast-episode.astro
 spotify: https://open.spotify.com/episode/5RCZ1mHsBVN83lWXu49xqQ
 tags:
-- Eigener Job
-- Firma
+- Karriere
 - "Produktivit\xE4t"
 title: '#07 Die Freelance Freiheit'
 

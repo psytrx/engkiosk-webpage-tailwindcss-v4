@@ -69,8 +69,6 @@ layout: ../../../layouts/podcast-episode.astro
 spotify: https://open.spotify.com/episode/7uPMZDpC2KQ5ZMbAtAN2S7
 tags:
 - Datenbanken
-- NoSQL
-- SQL
 title: "#22 NoSQL: ACID, BASE, Ende einer \xC4ra Teil 2"
 
 ---

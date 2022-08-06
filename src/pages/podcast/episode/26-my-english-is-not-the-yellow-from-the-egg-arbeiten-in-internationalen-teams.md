@@ -67,8 +67,7 @@ layout: ../../../layouts/podcast-episode.astro
 spotify: https://open.spotify.com/episode/0S8AoLpiO35S3Lc06mKmQz
 tags:
 - Team
-- Eigener Job
-- International
+- Karriere
 - Kommunikation
 title: '#26 My English is not the yellow from the egg - Arbeiten in internationalen
   Teams'
