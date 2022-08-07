@@ -13,8 +13,9 @@ run: ## Starts the development server
 	npm run dev
 
 .PHONY: clean
-clean: ## Deletes the generated content
+clean: ## Deletes the generated content and node_modules
 	rm -rf ./dist
+	rm -rf ./node_modules
 
 .PHONY: update-content
 update-content: ## Pulls the latest Podcast RSS feed and updates the content

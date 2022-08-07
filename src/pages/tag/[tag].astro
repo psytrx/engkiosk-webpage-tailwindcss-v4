@@ -10,7 +10,7 @@ import tagInfo from "../../data/tags.json";
 
 export async function getStaticPaths() {
     // Get tags from blog posts
-    const allBlogPosts = await Astro.glob('../blog/post/*.md');
+    const allBlogPosts = await Astro.glob('../blog/post/*.mdx');
     let allBlogPostTagsUnique = [...new Set(allBlogPosts.flatMap((p) => p.frontmatter.tags))];
 
     // Get tags from podcast episodes

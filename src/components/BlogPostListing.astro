@@ -9,7 +9,7 @@ import BlogPostPreview from '../components/BlogPostPreview.astro';
 const { numberOfItems } = Astro.props;
 
 // Build the list of posts
-let allPosts = await Astro.glob('../pages/blog/post/*.md');
+let allPosts = await Astro.glob('../pages/blog/post/*.mdx');
 allPosts.sort((a, b) => new Date(b.frontmatter.date).valueOf() - new Date(a.frontmatter.date).valueOf());
 
 // Default wise list all items, only limit it if requested
