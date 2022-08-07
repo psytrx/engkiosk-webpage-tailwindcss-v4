@@ -48,8 +48,7 @@ image: "/images/podcast/episode/06-hype-oder-hope-job-titel-und-bef\xF6rderungen
 layout: ../../../layouts/podcast-episode.astro
 spotify: https://open.spotify.com/episode/4mkmeVaXD6u8Tf9mpcBWd4
 tags:
-- Eigener Job
-- Firma
+- Karriere
 title: "#06 Hype oder Hope: Job-Titel und Bef\xF6rderungen"
 
 ---

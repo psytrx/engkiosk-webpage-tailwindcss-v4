@@ -65,7 +65,8 @@ image: "/images/podcast/episode/27-sicherheit-in-der-dependency-h\xF6lle.jpg"
 layout: ../../../layouts/podcast-episode.astro
 spotify: https://open.spotify.com/episode/1PFpdXNHVvRgGPPUxC59Te
 tags:
-- Incident Management
+- DevOps
+- Feuerwehr
 - Software Engineering
 - Frontend
 - Backend
