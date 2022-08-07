@@ -17,14 +17,14 @@ function getLastEpisodeStatus(timestamp) {
 	let twoMonth = new Date(dateClone.setMonth(dateClone.getMonth() - 2));
 
 	if (episode < sixMonth) {
-		return ["🔴", "red"]
+		return ["🔴", "inactive"]
 	}
 
 	if (episode > sixMonth && episode < twoMonth) {
-		return ["🟡", "yellow"]
+		return ["🟡", "delayed"]
 	}
 
-	return ["🟢", "green"]
+	return ["🟢", "active"]
 }
 
 let episode_status = getLastEpisodeStatus(podcast.latestEpisodePublished)
