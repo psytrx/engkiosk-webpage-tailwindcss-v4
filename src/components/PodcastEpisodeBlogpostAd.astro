@@ -3,6 +3,8 @@ export interface Props {
 	episode: number;
 }
 
+import { cutText } from "../scripts/strings.js"
+
 const { episode } = Astro.props;
 
 let episodeString = episode.toString();
@@ -17,6 +19,7 @@ let episodes = episodeFiles.filter(item => item.file.includes(`/${episodeString}
 let content = episodes[0];
 let frontmatter = content.frontmatter;
 
+const description = cutText(frontmatter.description, 200);
 ---
 
 <div class="container px-4 mx-auto my-10">
@@ -39,7 +42,7 @@ let frontmatter = content.frontmatter;
 				</a>
 			</h4>
 			<p class="">
-				{frontmatter.description}
+				{description}
 			</p>
 		</div>
 	</div>

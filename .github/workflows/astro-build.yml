@@ -20,27 +20,11 @@ jobs:
         with:
           node-version: 16
 
-      - name: Run make init
-        run: make init
-
       - name: Run make clean
         run: make clean
 
-      - name: Run make build
-        run: make build
-
-  eslint:
-    name: ESLint
-    runs-on: ubuntu-20.04
-
-    steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
-        with:
-          node-version: 16
-
       - name: Run make init
         run: make init
 
-      - name: Run make eslint
-        run: make eslint
+      - name: Run make build
+        run: make build
