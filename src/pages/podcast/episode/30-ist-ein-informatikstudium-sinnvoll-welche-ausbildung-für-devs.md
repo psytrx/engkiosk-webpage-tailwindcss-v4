@@ -1,5 +1,5 @@
 ---
-amazon_music: ''
+amazon_music: https://music.amazon.com/podcasts/c35a09fe-4116-4e04-8f68-77d61b112e46/episodes/1b15c712-2594-484e-bbda-994564d8a21e/engineering-kiosk-30-ist-ein-informatikstudium-sinnvoll-welche-ausbildung-f%C3%BCr-devs
 apple_podcasts: https://podcasts.apple.com/us/podcast/30-ist-ein-informatikstudium-sinnvoll-welche-ausbildung/id1603082924?i=1000574728229&uo=4
 audio: https://stream.redcircle.com/episodes/2c663235-5a00-4499-abf0-a205f4ad2b39/stream.mp3
 chapter:
@@ -90,7 +90,7 @@ description: "Wie wichtig ist die Universit\xE4t und ein Studium f\xFCr den heut
   \ (https://twitter.com/schafele)Andy Grunwald (https://twitter.com/andygrunwald)Feedback\
   \ (gerne auch als Voice Message)Email: stehtisch@engineeringkiosk.devTwitter: https://twitter.com/EngKioskWhatsApp\
   \ +49 15678 136776"
-google_podcasts: ''
+google_podcasts: https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5yZWRjaXJjbGUuY29tLzBlY2ZkZmQ3LWZkYTEtNGMzZC05NTE1LTQ3NjcyN2Y5ZGY1ZQ/episode/M2Y5ZTJjN2ItOGYwZC00MTcwLWE4MGYtZTVkZmZkMjBlMzEw?sa=X&ved=0CAUQkfYCahcKEwiIjdzarrT5AhUAAAAAHQAAAAAQAQ
 headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts||feedback-gerne-auch-als-voice-message::Feedback
   (gerne auch als Voice Message)
 image: "/images/podcast/episode/30-ist-ein-informatikstudium-sinnvoll-welche-ausbildung-f\xFC\
