@@ -63,8 +63,7 @@ headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts
 image: "/images/podcast/episode/00-developer-fangen-bei-0-an-zu-z\xE4hlen.jpg"
 layout: ../../../layouts/podcast-episode.astro
 spotify: https://open.spotify.com/episode/4TZwqBTtO2fNDt8XjQXjuR
-tags:
-- Podcast
+tags: []
 title: "#00 Developer fangen bei 0 an zu z\xE4hlen"
 
 ---

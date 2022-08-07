@@ -64,8 +64,6 @@ layout: ../../../layouts/podcast-episode.astro
 spotify: https://open.spotify.com/episode/49HSkGcpuzL3yTbEsguOMB
 tags:
 - Datenbanken
-- NoSQL
-- SQL
 title: '#08 Vergiss doch Datenbanken!'
 
 ---

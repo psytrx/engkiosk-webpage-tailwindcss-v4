@@ -81,8 +81,6 @@ layout: ../../../layouts/podcast-episode.astro
 spotify: https://open.spotify.com/episode/2BoVJYXWCOoK9w31nZaevF
 tags:
 - Datenbanken
-- NoSQL
-- SQL
 title: "#19 Datenbank-Deepdive (oder das Ende einer \xC4ra): von Redis bis ClickHouse"
 
 ---

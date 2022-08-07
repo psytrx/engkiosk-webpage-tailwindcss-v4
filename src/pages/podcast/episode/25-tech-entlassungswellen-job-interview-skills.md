@@ -62,9 +62,8 @@ image: /images/podcast/episode/25-tech-entlassungswellen-job-interview-skills.jp
 layout: ../../../layouts/podcast-episode.astro
 spotify: https://open.spotify.com/episode/5vSicTXfw07adEdvQGPQUd
 tags:
-- Interview
 - Bewerbung
-- Eigener Job
+- Karriere
 title: '#25 Tech-Entlassungswellen & Job-Interview Skills'
 
 ---

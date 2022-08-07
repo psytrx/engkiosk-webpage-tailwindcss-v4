@@ -54,7 +54,7 @@ image: /images/podcast/episode/20-off-boarding-und-on-boarding-wie-verlasse-ich-
 layout: ../../../layouts/podcast-episode.astro
 spotify: https://open.spotify.com/episode/3H3C7ZKN2XsoJGBh8f5zRn
 tags:
-- Eigener Job
+- Karriere
 - Team
 - Projektmanagement
 title: '#20 Off-Boarding und On-Boarding: Wie verlasse ich eine Firma richtig?'

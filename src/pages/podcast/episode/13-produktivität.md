@@ -55,8 +55,7 @@ image: "/images/podcast/episode/13-produktivit\xE4t.jpg"
 layout: ../../../layouts/podcast-episode.astro
 spotify: https://open.spotify.com/episode/6idJ9F1bk6AQKFxrbukvC3
 tags:
-- Eigener Job
-- Team
+- Karriere
 - "Produktivit\xE4t"
 title: "#13 Produktivit\xE4t"
 

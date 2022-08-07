@@ -72,7 +72,6 @@ tags:
 - Software Engineering
 - Frontend
 - Backend
-- Cloud
 title: "#28 O(1), O(log n), O(n^2) - Ist die Komplexit\xE4t von Algorithmen im Entwickler-Alltag\
   \ relevant?"
 

@@ -56,9 +56,7 @@ image: /images/podcast/episode/05-team-lead-der-einzige-ausweg.jpg
 layout: ../../../layouts/podcast-episode.astro
 spotify: https://open.spotify.com/episode/2YSw9LkxhXJeUuFaJOihVr
 tags:
-- Eigener Job
-- Firma
-- Team
+- Karriere
 title: '#05 Team Lead - der einzige Ausweg'
 
 ---
