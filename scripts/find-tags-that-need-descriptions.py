@@ -21,6 +21,7 @@ def read_all_tags_from_content_files(pathes):
         content_files = [f for f in os.listdir(p) if isfile(join(p, f)) and f.endswith('.md')]
         for content_file in content_files:
             full_file_path = f'{p}/{content_file}'
+            logging.info(f"Processing file {full_file_path} ...")
 
             with open(full_file_path) as f:
                 fm = frontmatter.load(f)
