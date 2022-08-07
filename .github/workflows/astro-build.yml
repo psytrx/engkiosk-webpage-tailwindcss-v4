@@ -20,11 +20,11 @@ jobs:
         with:
           node-version: 16
 
-      - name: Run make init
-        run: make init
-
       - name: Run make clean
         run: make clean
+
+      - name: Run make init
+        run: make init
 
       - name: Run make build
         run: make build
