@@ -531,7 +531,7 @@ def get_episode_link_from_google(content, title: str) -> str:
     hostname = "podcasts.google.com"
 
     soup = BeautifulSoup(content, features="html.parser")
-    items = soup.findAll('div', text = re.compile(title))
+    items = soup.findAll('div', text = title)
 
     u = ""
     for item in items:
