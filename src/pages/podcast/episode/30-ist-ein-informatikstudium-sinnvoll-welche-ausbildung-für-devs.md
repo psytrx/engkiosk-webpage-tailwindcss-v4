@@ -97,7 +97,9 @@ image: "/images/podcast/episode/30-ist-ein-informatikstudium-sinnvoll-welche-aus
   r-devs.jpg"
 layout: ../../../layouts/podcast-episode.astro
 spotify: https://open.spotify.com/episode/3XW8vkTOnDwbO1Y2O6HDsN
-tags: []
+tags:
+- Karriere
+- Bewerbung
 title: "#30 Ist ein Informatikstudium sinnvoll? Welche Ausbildung f\xFCr Devs?"
 
 ---

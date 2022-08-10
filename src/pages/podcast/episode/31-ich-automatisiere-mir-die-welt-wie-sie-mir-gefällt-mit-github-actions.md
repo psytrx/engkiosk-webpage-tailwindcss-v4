@@ -107,7 +107,11 @@ image: "/images/podcast/episode/31-ich-automatisiere-mir-die-welt-wie-sie-mir-ge
   llt-mit-github-actions.jpg"
 layout: ../../../layouts/podcast-episode.astro
 spotify: https://open.spotify.com/episode/1vWJTaoipaGryKcGJOoUF6
-tags: []
+tags:
+- Backend
+- DevOps
+- Software Engineering
+- Qualität
 title: "#31 Ich automatisiere mir die Welt wie sie mir gef\xE4llt (mit GitHub Actions)"
 
 ---
