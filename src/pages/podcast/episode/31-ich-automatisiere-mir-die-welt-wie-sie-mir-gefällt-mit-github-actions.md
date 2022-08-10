@@ -1,5 +1,5 @@
 ---
-amazon_music: ''
+amazon_music: https://music.amazon.com/podcasts/c35a09fe-4116-4e04-8f68-77d61b112e46/episodes/2d950303-1f89-4f52-be56-c19594b41029/engineering-kiosk-31-ich-automatisiere-mir-die-welt-wie-sie-mir-gef%C3%A4llt-mit-github-actions
 apple_podcasts: https://podcasts.apple.com/us/podcast/31-ich-automatisiere-mir-die-welt-wie-sie-mir-gef%C3%A4llt/id1603082924?i=1000575453470&uo=4
 audio: https://stream.redcircle.com/episodes/b66c9d23-eee3-438d-9a7c-5ede3ec90491/stream.mp3
 chapter:
@@ -100,7 +100,7 @@ description: "Schuftest du noch oder automatisierst du schon? Heute gehts um die
   \ Grunwald (https://twitter.com/andygrunwald)Feedback (gerne auch als Voice Message)Email:\
   \ stehtisch@engineeringkiosk.devTwitter: https://twitter.com/EngKioskWhatsApp +49\
   \ 15678 136776"
-google_podcasts: ''
+google_podcasts: https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5yZWRjaXJjbGUuY29tLzBlY2ZkZmQ3LWZkYTEtNGMzZC05NTE1LTQ3NjcyN2Y5ZGY1ZQ/episode/ZDY1OWIwOGUtYTgzNy00NGI0LWI4YTYtZWI2YTA2ZGFhMTAz?sa=X&ved=2ahUKEwjsjMXi7bz5AhXdnf0HHTHSB4YQkfYCegQIARAF
 headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts||feedback-gerne-auch-als-voice-message::Feedback
   (gerne auch als Voice Message)
 image: "/images/podcast/episode/31-ich-automatisiere-mir-die-welt-wie-sie-mir-gef\xE4\
