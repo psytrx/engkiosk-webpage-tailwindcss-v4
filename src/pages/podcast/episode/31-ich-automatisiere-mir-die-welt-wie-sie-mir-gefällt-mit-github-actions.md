@@ -111,7 +111,7 @@ tags:
 - Backend
 - DevOps
 - Software Engineering
-- Qualität
+- "Qualit\xE4t"
 title: "#31 Ich automatisiere mir die Welt wie sie mir gef\xE4llt (mit GitHub Actions)"
 
 ---
