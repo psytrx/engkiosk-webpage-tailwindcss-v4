@@ -55,7 +55,9 @@ headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts||feedback-gern
 image: /images/podcast/episode/34-wie-cloudy-bist-du.jpg
 layout: ../../../layouts/podcast-episode.astro
 spotify: https://open.spotify.com/episode/4DfOEf84e1ajgtH5CV4YCH
-tags: []
+tags:
+- Backend
+- DevOps
 title: '#34 Wie cloudy bist du?'
 
 ---

@@ -53,7 +53,9 @@ headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts||feedback-gern
 image: "/images/podcast/episode/33-andy-im-team-lead-bewerbungsgespr\xE4ch.jpg"
 layout: ../../../layouts/podcast-episode.astro
 spotify: https://open.spotify.com/episode/2wPjvgc95eajkGJMhlmXFG
-tags: []
+tags:
+- Bewerbung
+- Karriere
 title: "#33 Andy im Team Lead Bewerbungsgespr\xE4ch"
 
 ---
