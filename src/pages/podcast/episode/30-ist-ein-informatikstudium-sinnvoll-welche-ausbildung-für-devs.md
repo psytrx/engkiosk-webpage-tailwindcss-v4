@@ -60,36 +60,7 @@ description: "Wie wichtig ist die Universit\xE4t und ein Studium f\xFCr den heut
   \ und beim Job selbst? Und wie kann man als Nicht-Studierte oder Quereinsteiger\
   \ in der IT-Industrie Fu\xDF fassen? All das und noch viel mehr in der Episode.\
   \ Bonus: Was akademischer Spa\xDF, Beleidigungen und Serdar Somuncu mit der ganzen\
-  \ Thematik zu tun haben.  Feedback (gerne auch als Voice Message) Email: stehtisch@engineeringkiosk.devTwitter:\
-  \ https://twitter.com/EngKioskWhatsApp +49 15678 136776 Gerne behandeln wir auch\
-  \ euer Audio Feedback in einer der n\xE4chsten Episoden, einfach Audiodatei per\
-  \ Email oder WhatsApp Voice Message an +49 15678 136776 LinksFOM / Fachhochschule\
-  \ f\xFCr Oekonomie und Management: https://www.fom.de/Das \xF6sterreichische Bildungssystem:\
-  \ https://www.bmbwf.gv.at/Themen/schule/schulsystem/sa.html\_Das deutsche Bildungssystem:\
-  \ https://www.kmk.org/dokumentation-statistik/informationen-zum-deutschen-bildungssystem.html\_\
-  Sprungmarken(00:00:00) Intro (00:00:50) Hat die akademische Laufbahn, Wolfgang zu\
-  \ einem besseren Software-Entwickler gemacht? (00:04:53) Unterschied zwischen der\
-  \ schulischen und beruflichen Ausbildung? (00:12:06) Haben Leute von spezifischen\
-  \ Universit\xE4ten / Schulen mehr drauf als andere? (00:14:10) Das heutige Thema:\
-  \ Wie wichtig ist die Uni / akademische Ausbildung f\xFCr den Job in der IT? (00:15:11)\
-  \ Andys Erfahrung auf der privaten Hochschule (00:19:14) Abschl\xFCsse von privaten\
-  \ Hochschulen und wie diese in der Industrie angesehen werden k\xF6nnen (00:20:52)\
-  \ K\xF6nnen akademische Abschl\xFCsse auch hinderlich sein? (00:24:24) Over-Engineering,\
-  \ unsch\xF6ner Quellcode und wissenschaftliches Arbeiten von Leuten mit Dr. Titel\
-  \ - Erfahrungen von der Universit\xE4t (00:30:27) Unterschiede in der Arbeit und\
-  \ Guidance vom Manager (00:31:45) Gibt es Unterschiede in der Entwicklung/Einstellung\
-  \ von Leuten im Beruf mit oder ohne akademische Ausbildung? (00:36:01) Sind alle\
-  \ Personen anpassungsf\xE4hig an eine bestimmte Arbeitsweise? (00:40:13) Kann \"\
-  akademisch\" ein Schimpfwort sein? (00:43:58) Wissbegierig, Neugierig, Resistenz\
-  \ und Motivation sind viel wichtiger (00:48:30) Ist ein Studium empfehlenswert f\xFC\
-  r einen Job in der IT? Und bringt mich das bei der Jobsuche weiter? (00:55:17) Ist\
-  \ ein fehlendes Studium ein m\xF6glicher Karriere-Blocker? (00:58:30) Sollten Quereinsteiger\
-  \ bei einer kleineren Firma starten? (01:00:17) Wie sollten Sch\xFCler vorgehen?\
-  \ Ein Studium oder direkter Berufseinstieg? (01:03:15) W\xFCrdest du Leuten mit\
-  \ Studium einen den Weg zum Doktor empfehlen? (01:04:34) Outro HostsWolfgang Gassler\
-  \ (https://twitter.com/schafele)Andy Grunwald (https://twitter.com/andygrunwald)Feedback\
-  \ (gerne auch als Voice Message)Email: stehtisch@engineeringkiosk.devTwitter: https://twitter.com/EngKioskWhatsApp\
-  \ +49 15678 136776"
+  \ Thematik zu tun haben."
 google_podcasts: https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5yZWRjaXJjbGUuY29tLzBlY2ZkZmQ3LWZkYTEtNGMzZC05NTE1LTQ3NjcyN2Y5ZGY1ZQ/episode/M2Y5ZTJjN2ItOGYwZC00MTcwLWE4MGYtZTVkZmZkMjBlMzEw?sa=X&ved=0CAUQkfYCahcKEwiIjdzarrT5AhUAAAAAHQAAAAAQAQ
 headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts||feedback-gerne-auch-als-voice-message::Feedback
   (gerne auch als Voice Message)

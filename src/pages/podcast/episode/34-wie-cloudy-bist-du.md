@@ -48,31 +48,7 @@ description: "Die Cloud Native Infrastruktur vs. ein dicker Server - Ein Dauerst
   \ im Konflikt mit einer modernen Microservice-Architektur? All diese Fragen stellen\
   \ Wolfgang und Andy in dieser Episode, wo sie einen Artikel \"Use One Big Server\"\
   \ besprechen. Bonus: Was eine Klatsche auf Reddit, Vendor-Lock-in und CV-Driven-Development\
-  \ mit Servern zu tun hat.  Feedback (gerne auch als Voice Message) Email: stehtisch@engineeringkiosk.devTwitter:\
-  \ https://twitter.com/EngKioskWhatsApp +49 15678 136776 Gerne behandeln wir auch\
-  \ euer Audio Feedback in einer der n\xE4chsten Episoden, einfach Audiodatei per\
-  \ Email oder WhatsApp Voice Message an +49 15678 136776  LinksReddit-Post: https://www.reddit.com/r/de_EDV/comments/wp9arv/was_habt_ihr_so_mit_github_actions_automatisiert/\_\
-  Artikel \"Use One Big Server\": https://specbranch.com/posts/one-big-server/Hackernews:\
-  \ https://news.ycombinator.com/9gag: https://9gag.com/F-Online - Vorbereitung f\xFC\
-  r die theoretische Fahrschulpr\xFCfung: https://www.f-online.app/Proxmox: https://www.proxmox.com/Kelsey\
-  \ Hightower: https://en.wikipedia.org/wiki/Kelsey_Hightower Sprungmarken(00:00:00)\
-  \ Intro (00:00:43) Intro mit einer Klatsche auf Reddit (00:03:49) Wir brauchen euren\
-  \ Support: Bewertet uns in eurer Podcast-App (00:04:26) Warum l\xE4uft F-Online\
-  \ auf einem gro\xDFen Server und nicht Cloud Native und Serverless? (00:10:43) Saisonaler\
-  \ Traffic, Peak-Usage und Ressourcen richtig ausnutzen bei einem virtuellen Server\
-  \ vs. Cloud Native (00:17:05) Ist der Vergleich von Monet\xE4ren Kosten allein sinnvoll?\
-  \ Wie bezieht man die Implementierung mit ein? (00:18:33) Debugging und Testing\
-  \ von GCP Cloud Functions/AWS Lambdas (00:21:14) Ein gro\xDFer Server ist f\xFC\
-  r viele Applikationen die bessere Wahl und das Abh\xE4ngigkeitsverh\xE4ltnis zu\
-  \ Cloud Providern (00:26:14) Fehlende Perspektiven bei dem Artikel \"Use One Big\
-  \ Server\" und Argumente f\xFCr Cloud Native (00:31:06) Optimierung von Cloud Kosten,\
-  \ Vendor-Lock-in, Multi-Cloud und Monolith vs. Microservice (00:34:20) Ist der LAMP-Stack\
-  \ bereits eine Micro-Service-Architektur? (00:37:34) Ist ein Micro-Service automatisch\
-  \ eine eigene Applikation? Ist der Micro-Service-Hype vorbei? (00:40:34) \"Boring\"\
-  -Software kann ein Vorteil sein (00:43:30) Zusammenfassung und Outro  HostsWolfgang\
-  \ Gassler (https://twitter.com/schafele)Andy Grunwald (https://twitter.com/andygrunwald)\
-  \ Feedback (gerne auch als Voice Message)Email: stehtisch@engineeringkiosk.devTwitter:\
-  \ https://twitter.com/EngKioskWhatsApp +49 15678 136776"
+  \ mit Servern zu tun hat."
 google_podcasts: https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5yZWRjaXJjbGUuY29tLzBlY2ZkZmQ3LWZkYTEtNGMzZC05NTE1LTQ3NjcyN2Y5ZGY1ZQ/episode/ZDMxNzY2YTUtMDhkMC00Nzk1LTgyZjctNWVhOWM2Zjk0NzY0?sa=X&ved=2ahUKEwje9pOf8O35AhUmrWoFHSSxDaEQkfYCegQIARAF
 headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts||feedback-gerne-auch-als-voice-message::Feedback
   (gerne auch als Voice Message)

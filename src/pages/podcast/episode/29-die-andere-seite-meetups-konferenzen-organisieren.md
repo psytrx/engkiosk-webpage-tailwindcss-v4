@@ -68,41 +68,7 @@ description: "Meetups und Konferenzen: Ein wichtiger Bestandteil der Tech-Commun
   \ einer Konferenz? In dieser Episode wird Andy, als Organisator des Web Engineering\
   \ Meetups D\xFCsseldorf und der localhost-Konferenz, genau zu diesem Thema interviewed.\
   \ Bonus: Was die Zeitschrift Computer Bild und Fortuna D\xFCsseldorf mit Meetups\
-  \ zu tun haben.  Feedback (gerne auch als Voice Message) Email: stehtisch@engineeringkiosk.devTwitter:\
-  \ https://twitter.com/EngKioskWhatsApp +49 15678 136776 Gerne behandeln wir auch\
-  \ euer Audio Feedback in einer der n\xE4chsten Episoden, einfach Audiodatei per\
-  \ Email oder WhatsApp Voice Message an +49 15678 136776  LinksFest und Flauschig:\
-  \ https://open.spotify.com/show/1OLcQdw2PFDPG1jo3s0wbpLocalhost-Konferenz: https://localhost.engineering/Web\
-  \ Engineering Meetup D\xFCsseldorf: https://www.meetup.com/de-DE/web-engineering-duesseldorf/PHP\
-  \ Usergroup D/DU/KR auf XING: https://www.xing.com/communities/groups/php-usergroup-d-strich-du-strich-kr-5b80-1021668/postsWebworker\
-  \ NRW Meetup: https://www.meetup.com/de-DE/webworker-nrw/Lean Coffee: https://t2informatik.de/wissen-kompakt/lean-coffee/Explain\
-  \ Like I'm Five: https://www.reddit.com/r/explainlikeimfive/Lessons learned from\
-  \ running a local meetup: https://andygrunwald.com/blog/lesson-learned-from-running-a-local-meetup/\
-  \ Sprungmarken(00:00:00) Intro (00:00:36) Sommerpausen, Ferien und Release-Cycle\
-  \ (00:03:06) Empfehlungs-Algorithmen von Podcast-Plattformen (00:04:38) Der nachteil\
-  \ der Sommerzeit? Keine Meetups und Konferenzen (00:05:17) Wie gro\xDF ist das Web\
-  \ Engineering Meetup D\xFCsseldorf und wie lange habt Ihr Pause gemacht? (00:06:16)\
-  \ Das heutige Thema: Die Organisation von Meetups und Konferenzen (00:07:06) Wann\
-  \ hat Andy mit Usergroups und Meetups gestartet? (00:09:51) Wie viele Leute kommen\
-  \ denn ca. zu den Treffen? (00:11:44) Wie schwierig ist es ein Meetup zum laufen\
-  \ zu bekommen? (00:13:28) Das Thema der No-Show-Rate bei Meetups (00:14:32) Was\
-  \ war der Planungsaufwand f\xFCr die ersten Events? (00:16:02) Wie hast du die ersten\
-  \ Speaker gefunden? (00:18:28) Was ist es f\xFCr ein monatlicher Zeitaufwand f\xFC\
-  r die Meetup-Organisation? (00:20:01) Wie wird man das Firmenbranding von einem\
-  \ Meetup los? (00:26:53) Was hat sich bei den Firmen in Bezug auf Meetups in den\
-  \ letzten 10 Jahren ge\xE4ndert? (00:30:23) Welche Tipps haben wir f\xFCr die Firmen,\
-  \ die sich bei Meetups pr\xE4sentieren? (00:33:24) Recruitern auf Meetups und Regeln\
-  \ / Code of Conduct (00:35:56) Monetarisierung von Meetups und Motivation von Organisatoren\
-  \ (00:39:34) Der n\xE4chste Schritt: Eine eigene Konferenz (00:42:27) Wo ist der\
-  \ organisatorische Unterschied zwischen einem Meetup und einer Konferenz? (00:49:00)\
-  \ Neue Meetups: Lieber Online? Lieber Offline? Lieber Hybrid? (00:51:25) Online\
-  \ Meetups bieten einen gr\xF6\xDFeren Zugang, deswegen mehr Konkurrenz? (00:54:37)\
-  \ Was w\xFCrdest du als Start-Tip neuen Organisatoren zur Gr\xFCndung mitgeben?\
-  \ (01:03:15) Online oder Offline-Meetups und eure Initiative (01:05:42) Die Checkliste\
-  \ zur Organisation eines Meetups (01:08:04) Outro  HostsWolfgang Gassler (https://twitter.com/schafele)Andy\
-  \ Grunwald (https://twitter.com/andygrunwald) Feedback (gerne auch als Voice Message)Email:\
-  \ stehtisch@engineeringkiosk.devTwitter: https://twitter.com/EngKioskWhatsApp +49\
-  \ 15678 136776"
+  \ zu tun haben."
 google_podcasts: https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5yZWRjaXJjbGUuY29tLzBlY2ZkZmQ3LWZkYTEtNGMzZC05NTE1LTQ3NjcyN2Y5ZGY1ZQ/episode/MzAwNzYwMGYtYjNkNS00NWRiLTg4YzItZDUwMWVmZjMyYjQx?sa=X&ved=2ahUKEwjFjIyQ75X5AhUun3IEHe8YA_kQkfYCegQIARAF
 headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts||feedback-gerne-auch-als-voice-message::Feedback
   (gerne auch als Voice Message)

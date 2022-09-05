@@ -46,36 +46,7 @@ description: "Wie k\xF6nnen Engineering Manager und Tech-Lead-Interviews aussehe
   \ Engineering Manager bei trivago zu ersetzen. Dies gibt einen guten Einblick, mit\
   \ welchen Fragen Ihr so rechnen k\xF6nnte, falls Ihr euch in eine \xE4hnliche Situation\
   \ begebt. Bonus: Warum Wikingerschach der neue Sport ist und was eine Stra\xDFenampel\
-  \ mit Continuous Integration zu tun hat.\_  Feedback (gerne auch als Voice Message)\
-  \ Email: stehtisch@engineeringkiosk.devTwitter: https://twitter.com/EngKioskWhatsApp\
-  \ +49 15678 136776 Gerne behandeln wir auch euer Audio Feedback in einer der n\xE4\
-  chsten Episoden, einfach Audiodatei per Email oder WhatsApp Voice Message an +49\
-  \ 15678 136776  LinksDALL-E 2: https://openai.com/dall-e-2/DALL-E 2: Original Bild\
-  \ https://labs.openai.com/s/xsdlCmW9w7xNygsV3xIlL2qJ\_Leadership-Style Laissez-faire:\
-  \ https://de.wikipedia.org/wiki/Laissez-faireprogrammier.barDEEP DIVE 108 \u2013\
-  \ Astro mit Chris Swithinbank: https://www.programmier.bar/podcast/deep-dive-108-astro-mit-chris-swithinbankstability.ai:\
-  \ https://stability.ai/Wikingerschach (Kubb): https://de.wikipedia.org/wiki/KubbSimon\
-  \ Sinek: https://simonsinek.com/Bus-Faktor: https://de.wikipedia.org/wiki/Truck_NumberEngineering\
-  \ Kiosk #26 My English is not the yellow from the egg - Arbeiten in internationalen\
-  \ Teams: https://engineeringkiosk.dev/podcast/episode/26-my-english-is-not-the-yellow-from-the-egg-arbeiten-in-internationalen-teams/Traditional\
-  \ Leadership Vs. Servant Leadership: https://www.forbes.com/sites/forbescoachescouncil/2020/03/11/traditional-leadership-vs-servant-leadership/Leadership\
-  \ Styles: The 11 Most Common & How to Find Your Style [Quiz]: https://blog.hubspot.com/marketing/leadership-styles\
-  \ Sprungmarken(00:00:00) Intro (00:00:33) AI-Generiertes Episoden-Cover mit DALL-E\
-  \ 2 (00:07:09) Das heutige Thema: Leadership styles, eine Art Engineering Manager\
-  \ Interview und Wikingerschach (Kubb) (00:11:03) Kontext zu dem Interview, dem Team\
-  \ und den Interviewfragen (00:14:46) \"Warum m\xF6chtest du \xFCberhaupt eine Lead-Rolle\
-  \ \xFCbernehmen?\" (00:19:10) \"Was w\xE4ren deine ersten drei Aktionen als neuer\
-  \ Engineering Manager?\" (00:22:29) \"Was ist dein Leadership-Style?\" (00:27:39)\
-  \ \"Wo ziehst du denn aus dem Alltag als Engineering Manager die Energie raus?\"\
-  \ (00:29:14) \"Wie verteilst du Projekte an Mitarbeiter, die keiner machen m\xF6\
-  chte?\" (00:38:20) \"Wie w\xFCrdest du die Innovation / Innovations-Bereitschaft\
-  \ in deinem Team erh\xF6hen?\" (00:45:14) \"Hast du eine Herangehensweise, wie man\
-  \ mit anderen (hartn\xE4ckigen) Meinungen umgeht bzw. eine Pattsituation aufl\xF6\
-  st?\" (00:53:31) \"Warum sollte ich dich nicht anstellen?\" (00:56:02) Interview-Abschluss\
-  \ und Retrospektive Betrachtung der Fragen (00:59:40) Outro und Feedback  HostsWolfgang\
-  \ Gassler (https://twitter.com/schafele)Andy Grunwald (https://twitter.com/andygrunwald)Feedback\
-  \ (gerne auch als Voice Message)Email: stehtisch@engineeringkiosk.devTwitter: https://twitter.com/EngKioskWhatsApp\
-  \ +49 15678 136776"
+  \ mit Continuous Integration zu tun hat."
 google_podcasts: https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5yZWRjaXJjbGUuY29tLzBlY2ZkZmQ3LWZkYTEtNGMzZC05NTE1LTQ3NjcyN2Y5ZGY1ZQ/episode/ODc2N2YwMDEtN2I5My00Yjc5LTk0MjktODQwNjM4NDk1MTNj?sa=X&ved=2ahUKEwiWrriyn9z5AhXwDUQIHSawDF0QkfYCegQIARAF
 headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts||feedback-gerne-auch-als-voice-message::Feedback
   (gerne auch als Voice Message)

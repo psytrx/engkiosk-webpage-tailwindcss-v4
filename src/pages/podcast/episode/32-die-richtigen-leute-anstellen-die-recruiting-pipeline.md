@@ -45,32 +45,7 @@ description: "Recruiting: Einer der wichtigsten Aufgaben einer Firma - Doch wora
   \ ist? Und wie trifft man die finale Entscheidung? All das und noch viel mehr behandeln\
   \ wir in dieser Episode. Bonus: Warum Wolfgang eine Aufmerksamkeitsspanne wie ein\
   \ Welpe hat, was Aufz\xFCge mit Recruiting zu tun haben und ob Wanne-Eickel wirklich\
-  \ existiert.  Feedback (gerne auch als Voice Message) Email: stehtisch@engineeringkiosk.devTwitter:\
-  \ https://twitter.com/EngKioskWhatsApp +49 15678 136776 Gerne behandeln wir auch\
-  \ euer Audio Feedback in einer der n\xE4chsten Episoden, einfach Audiodatei per\
-  \ Email oder WhatsApp Voice Message an +49 15678 136776  Links\u200B\u200BGerman\
-  \ Tech Podcasts: https://engineeringkiosk.dev/deutsche-tech-podcasts/Episode #25\
-  \ Tech-Entlassungswellen & Job-Interview Skills: https://engineeringkiosk.dev/podcast/episode/25-tech-entlassungswellen-job-interview-skills/Best\
-  \ Practices zum Interview-Design https://triplebyte.com/blog/how-to-interview-engineers\_\
-  Ein must read klassiker https://www.joelonsoftware.com/2006/10/25/the-guerrilla-guide-to-interviewing-version-30/\_\
-  Gute Kandidat\u22C5innen werden auch kritische Fragen stellen, wie z.B. https://charity.wtf/2022/01/29/how-can-you-tell-if-the-company-youre-interviewing-with-is-rotten-on-the-inside/\_\
-  Moishe Lettvin - What I Learned Doing 250 Interviews at Google https://www.youtube.com/watch?v=r8RxkpUvxK0\_\
-  \ Sprungmarken(00:00:00) Intro (00:00:36) Perlenhochzeit beim Engineering Kiosk\
-  \ und das stoppen von Projekten (00:02:30) German Tech Podcasts (00:04:40) Das heutige\
-  \ Thema: Recruiting aus der Sicht des Arbeitgebers (00:06:35) Warum ist das Thema\
-  \ relevant? und was Recruiting mit Kultur zu tun hat (00:11:25) Sollte man \"Leute\
-  \ einstellen\" delegieren? (00:15:20) Wie viel Zeit sollte ein Hiring Manager ins\
-  \ Recruiting investieren? (00:18:05) Wie findet man die richtigen Leute? Wie wichtig\
-  \ sind pers\xF6nliche Empfehlungen? (00:21:55) Die Entscheidung, ob du eine Person\
-  \ einstellst: False-Negatives vs. False-Positives (00:26:45) Der Recruiting-Prozess:\
-  \ Wen suche ich eigentlich? (00:29:15) Der Recruiting-Prozess: Was sind die richtigen\
-  \ Fragen, die ich stellen kann? (Strukturierte Interviews und Freestyle) (00:43:30)\
-  \ Der Bias \xFCber die Historie und vergangene Stationen von Kandidat-innen (00:50:15)\
-  \ Der Recruiting-Prozess: Die finale Entscheidung treffen (00:57:10) Die aktuelle\
-  \ Lage am Jobmarkt, die Kosten von Recruiting und Demotage (01:03:00) Outro  HostsWolfgang\
-  \ Gassler (https://twitter.com/schafele)Andy Grunwald (https://twitter.com/andygrunwald)\
-  \ Feedback (gerne auch als Voice Message)Email: stehtisch@engineeringkiosk.devTwitter:\
-  \ https://twitter.com/EngKioskWhatsApp +49 15678 136776"
+  \ existiert."
 google_podcasts: https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5yZWRjaXJjbGUuY29tLzBlY2ZkZmQ3LWZkYTEtNGMzZC05NTE1LTQ3NjcyN2Y5ZGY1ZQ/episode/MWVmMzEwMWMtMWYzNi00NmQ1LTg1OTQtZWYyZTM5ODFmNWEz?sa=X&ved=2ahUKEwiyvMa20sr5AhWmkGoFHRKaARkQkfYCegQIARAF
 headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts||feedback-gerne-auch-als-voice-message::Feedback
   (gerne auch als Voice Message)

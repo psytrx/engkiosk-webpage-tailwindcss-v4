@@ -52,54 +52,7 @@ description: "Schuftest du noch oder automatisierst du schon? Heute gehts um die
   \ Jenkins ist, wie das Engineering Kiosk es selbst einsetzt und welche Use-Cases\
   \ von der Community oft genutzt werden. Bonus: Warum LinkedIn einen HTTP Status\
   \ Code 999 sendet, wann wir Programmiersprachen wie Unterhosen wechseln und was\
-  \ Michael \"Bully\" Herbig mit der ganzen Sache zu tun hat.  Feedback (gerne auch\
-  \ als Voice Message) Email: stehtisch@engineeringkiosk.devTwitter: https://twitter.com/EngKioskWhatsApp\
-  \ +49 15678 136776 Gerne behandeln wir auch euer Audio Feedback in einer der n\xE4\
-  chsten Episoden, einfach Audiodatei per Email oder WhatsApp Voice Message an +49\
-  \ 15678 136776 Links\u200B\u200BDependabot: https://github.blog/2020-06-01-keep-all-your-packages-up-to-date-with-dependabot/Engineering\
-  \ Kiosk #13 Produktivit\xE4t: https://engineeringkiosk.dev/podcast/episode/13-produktivit%C3%A4t/Engineering\
-  \ Kiosk #26 My English is not the yellow from the egg - Arbeiten in internationalen\
-  \ Teams: https://engineeringkiosk.dev/podcast/episode/26-my-english-is-not-the-yellow-from-the-egg-arbeiten-in-internationalen-teams/Engineering\
-  \ Kiosk #27 Sicherheit in der Dependency H\xF6lle: https://engineeringkiosk.dev/podcast/episode/27-sicherheit-in-der-dependency-h%C3%B6lle/Engineering\
-  \ Kiosk #21 Static Site Generators & DIE Webseite: https://engineeringkiosk.dev/podcast/episode/21-static-site-generators-die-webseite/Deutschsprachige\
-  \ Tech Podcasts: https://engineeringkiosk.dev/deutsche-tech-podcasts/ und https://github.com/EngineeringKiosk/GermanTechPodcastsGitHub\
-  \ Actions: https://github.com/features/actionsNetlify: https://www.netlify.com/GitHub\
-  \ Actions Marketplace: https://github.com/marketplace?type=actionsJenkins: https://www.jenkins.io/GitHub\
-  \ Pull Request Auto Merge: https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/incorporating-changes-from-a-pull-request/automatically-merging-a-pull-requestPodcastIndex:\
-  \ https://podcastindex.org/GitHub Actions vom GermanTechPodcast Repository: https://github.com/EngineeringKiosk/GermanTechPodcasts/tree/main/.github/workflowsGitHub\
-  \ Action um Code zu Comitten (stefanzweifel/git-auto-commit-action): https://github.com/stefanzweifel/git-auto-commit-actionGitHub\
-  \ Action um ein anderes Repository zu triggern (peter-evans/repository-dispatch):\
-  \ https://github.com/peter-evans/repository-dispatchRepository von der Engineering\
-  \ Kiosk: https://github.com/EngineeringKiosk/webpageDeep-Dive zu Astro in der Programmierbar:\
-  \ https://www.programmier.bar/podcast/deep-dive-108-astro-mit-chris-swithinbankGitHub\
-  \ Personal Access Tokens: https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-tokenGitHub\
-  \ Actions Secrets: https://docs.github.com/en/actions/security-guides/encrypted-secretsGitHub\
-  \ Actions Output: https://docs.github.com/en/actions/using-jobs/defining-outputs-for-jobsPodcast\
-  \ sync-Python Script von der Engineering Kiosk Webpage: https://github.com/EngineeringKiosk/webpage/blob/main/scripts/sync-german-tech-podcasts.pyFreie\
-  \ (private) Repositories bei GitHub: https://github.blog/2019-01-07-new-year-new-github/Link\
-  \ Checker Lychee: https://github.com/lycheeverse/lycheeGitHub Profil von Andy Grunwald:\
-  \ https://github.com/andygrunwaldInner Source: https://de.wikipedia.org/wiki/Inner_SourceGitHub\
-  \ Actions Awesome-List: https://github.com/sdras/awesome-actionsGitHub Actions Hackathon:\
-  \ https://githubhackathon.com/ Sprungmarken(00:00:00) Intro (00:00:31) E-Mails von\
-  \ GitHub (00:03:11) Deutschsprachige Tech Podcasts: Eine kuratierte Liste von deutschsprachigen\
-  \ Tech-Podcasts (00:07:35) Heutiges Thema: Automatisierung mit GitHub Actions und\
-  \ Attribut bei Software Engineers: Disziplin oder Faulheit (00:10:07) Was GitHub\
-  \ Actions ist und was Wolfgang bereits dar\xFCber wei\xDF (00:14:47) Wie sieht die\
-  \ GitHub Automation beim GermanTechPodcast Repository aus? (00:26:19) Einen GitHub\
-  \ Actions Workflow in einem anderen Repository triggern (00:29:03) GitHub Actions\
-  \ und Passw\xF6rter, API-Keys und andere Geheimnisse und Isolation von einzelnen\
-  \ GitHub Actions (00:34:56) Was passiert bei der Engineering Kiosk Website, wenn\
-  \ das GitHub Actions-Event entgegen genommen wird (00:39:50) GitHub Actions im professionellen\
-  \ Umfeld, ist Jenkins noch relevant und Limitierungen mit privaten Netzwerken (00:46:30)\
-  \ Link-Checking in GitHub Actions mit Lychee und automatische GitHub Issue Erstellung\
-  \ (00:50:21) Eigene Profile-README mit GitHub Actions updaten (00:52:52) Wo liegen\
-  \ die GitHub Action Workflows? (00:53:37) GitHub Action um Inner Source und Cross-Team\
-  \ Contributions zu f\xF6rdern (00:55:25) GitHub Actions um Stale Issues zu schlie\xDF\
-  en (00:56:59) Aufruf um GitHub Actions zu testen und neue Contributor zu begr\xFC\
-  \xDFen (00:58:28) Feedback und Outro  HostsWolfgang Gassler (https://twitter.com/schafele)Andy\
-  \ Grunwald (https://twitter.com/andygrunwald)Feedback (gerne auch als Voice Message)Email:\
-  \ stehtisch@engineeringkiosk.devTwitter: https://twitter.com/EngKioskWhatsApp +49\
-  \ 15678 136776"
+  \ Michael \"Bully\" Herbig mit der ganzen Sache zu tun hat."
 google_podcasts: https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5yZWRjaXJjbGUuY29tLzBlY2ZkZmQ3LWZkYTEtNGMzZC05NTE1LTQ3NjcyN2Y5ZGY1ZQ/episode/ZDY1OWIwOGUtYTgzNy00NGI0LWI4YTYtZWI2YTA2ZGFhMTAz?sa=X&ved=2ahUKEwjsjMXi7bz5AhXdnf0HHTHSB4YQkfYCegQIARAF
 headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts||feedback-gerne-auch-als-voice-message::Feedback
   (gerne auch als Voice Message)
