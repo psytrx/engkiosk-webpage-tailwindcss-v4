@@ -248,8 +248,17 @@ def sync_podcast_episodes(rss_feed, path_md_files, path_img_files, spotify_clien
 
         # Cut text after the Intro text
         # The string is hardcoded. Bad? Yep, maybe. Works? Yep.
-        description_short = description_text_only.split("Feedback an stehtisch@engineeringkiosk.dev")
-        description_short = description_short[0]
+        str_to_split = ""
+        if "Feedback an stehtisch" in description_text_only:
+            str_to_split = "Feedback an stehtisch@engineeringkiosk.dev"
+        elif "Feedback (gerne" in description_text_only:
+            str_to_split = "Feedback (gerne"
+
+        description_short = description_text_only
+        if str_to_split:
+            description_short = description_text_only.split(str_to_split)
+            description_short = description_short[0]
+
         description_short = description_short.strip()
         description_short = html.unescape(description_short)
 
