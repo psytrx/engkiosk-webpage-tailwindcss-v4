@@ -57,7 +57,12 @@ headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts||feedback-gern
 image: /images/podcast/episode/35-knowledge-sharing-oder-die-person-die-nie-gehen-sollte.jpg
 layout: ../../../layouts/podcast-episode.astro
 spotify: https://open.spotify.com/episode/4oZ8sFzPQHMypISi7qmGSR
-tags: []
+tags:
+- Leadership
+- Kommunikation
+- Karriere
+- Tech Kultur
+- Knowledge Sharing
 title: '#35 Knowledge Sharing oder die Person, die nie "gehen" sollte...'
 
 ---

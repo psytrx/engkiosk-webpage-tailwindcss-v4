@@ -51,7 +51,9 @@ headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts||feedback-gern
 image: "/images/podcast/episode/36-sechs-stellige-it-geh\xE4lter-wie-was-wo-fair.jpg"
 layout: ../../../layouts/podcast-episode.astro
 spotify: https://open.spotify.com/episode/3FRoRTN1kQMSwmlcUQnkL3
-tags: []
+tags:
+- Karriere
+- Gehalt
 title: "#36 Sechs-stellige IT-Geh\xE4lter? Wie? Was? Wo? Fair?"
 
 ---
