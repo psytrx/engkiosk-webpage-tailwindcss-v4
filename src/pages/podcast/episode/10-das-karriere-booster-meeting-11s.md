@@ -50,6 +50,7 @@ layout: ../../../layouts/podcast-episode.astro
 spotify: https://open.spotify.com/episode/3KXQnrxoKkdTDFVXxiR3IA
 tags:
 - Karriere
+- Leadership
 title: '#10 Das Karriere Booster Meeting 1:1s'
 
 ---

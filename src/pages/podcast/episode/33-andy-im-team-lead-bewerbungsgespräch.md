@@ -56,6 +56,7 @@ spotify: https://open.spotify.com/episode/2wPjvgc95eajkGJMhlmXFG
 tags:
 - Bewerbung
 - Karriere
+- Leadership
 title: "#33 Andy im Team Lead Bewerbungsgespr\xE4ch"
 
 ---
