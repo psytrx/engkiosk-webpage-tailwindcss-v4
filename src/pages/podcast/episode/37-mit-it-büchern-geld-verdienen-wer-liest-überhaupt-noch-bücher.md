@@ -1,5 +1,5 @@
 ---
-amazon_music: ''
+amazon_music: https://music.amazon.com/podcasts/c35a09fe-4116-4e04-8f68-77d61b112e46/episodes/9ac3e2a5-c022-48b7-9207-15975ad58497/engineering-kiosk-37-mit-it-b%C3%BCchern-geld-verdienen-wer-liest-%C3%BCberhaupt-noch-b%C3%BCcher
 apple_podcasts: https://podcasts.apple.com/us/podcast/37-mit-it-b%C3%BCchern-geld-verdienen-wer-liest-%C3%BCberhaupt/id1603082924?i=1000580014637&uo=4
 audio: https://stream.redcircle.com/episodes/8efb56e2-5d56-4618-bfd8-91e08efff60b/stream.mp3
 chapter:
@@ -70,7 +70,10 @@ image: "/images/podcast/episode/37-mit-it-b\xFCchern-geld-verdienen-wer-liest-\x
   berhaupt-noch-b\xFCcher.jpg"
 layout: ../../../layouts/podcast-episode.astro
 spotify: https://open.spotify.com/episode/3KlgP1cJSP9DTFab6DFxLF
-tags: []
+tags:
+- Karriere
+- Kommunikation
+- Knowledge Sharing
 title: "#37 Mit IT-B\xFCchern Geld verdienen? Wer liest \xFCberhaupt noch B\xFCcher?"
 
 ---
