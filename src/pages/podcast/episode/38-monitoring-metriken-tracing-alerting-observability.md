@@ -1,5 +1,5 @@
 ---
-amazon_music: ''
+amazon_music: https://music.amazon.com/podcasts/c35a09fe-4116-4e04-8f68-77d61b112e46/episodes/eee8260f-3f06-4b10-9514-e114099f3024/engineering-kiosk-38-monitoring-metriken-tracing-alerting-observability
 apple_podcasts: https://podcasts.apple.com/us/podcast/38-monitoring-metriken-tracing-alerting-observability/id1603082924?i=1000580748597&uo=4
 audio: https://stream.redcircle.com/episodes/d77dbefc-8553-4a49-81c2-27f9232b88ec/stream.mp3
 chapter:
@@ -53,7 +53,10 @@ headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts||feedback-gern
 image: /images/podcast/episode/38-monitoring-metriken-tracing-alerting-observability.jpg
 layout: ../../../layouts/podcast-episode.astro
 spotify: https://open.spotify.com/episode/6o12Q11f95KuKYytqmis6u
-tags: []
+tags:
+- Backend
+- DevOps
+- Software Engineering
 title: '#38 Monitoring, Metriken, Tracing, Alerting, Observability'
 
 ---
