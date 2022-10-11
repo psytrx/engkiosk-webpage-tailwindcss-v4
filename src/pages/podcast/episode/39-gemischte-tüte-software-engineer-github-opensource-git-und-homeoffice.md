@@ -1,5 +1,5 @@
 ---
-amazon_music: ''
+amazon_music: https://music.amazon.com/podcasts/c35a09fe-4116-4e04-8f68-77d61b112e46/episodes/d180fbb4-2250-4619-b12b-89b1b4825973/engineering-kiosk-39-gemischte-t%C3%BCte-software-engineer-github-opensource-git-und-homeoffice
 apple_podcasts: https://podcasts.apple.com/us/podcast/39-gemischte-t%C3%BCte-software-engineer-github-opensource/id1603082924?i=1000581487989&uo=4
 audio: https://stream.redcircle.com/episodes/11242e21-b242-48d0-b0b6-9e0170d80c49/stream.mp3
 chapter:
@@ -35,7 +35,10 @@ headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts||feedback-gern
 image: "/images/podcast/episode/39-gemischte-t\xFCte-software-engineer-github-opensource-git-und-homeoffice.jpg"
 layout: ../../../layouts/podcast-episode.astro
 spotify: https://open.spotify.com/episode/11sFbhhPfqhw5ICp85CnDN
-tags: []
+tags:
+- Open Source
+- Karriere
+- Remote work
 title: "#39 Gemischte T\xFCte: Software Engineer, Github, OpenSource, Git und HomeOffice"
 
 ---
