@@ -1,5 +1,5 @@
 ---
-amazon_music: ''
+amazon_music: https://music.amazon.com/podcasts/c35a09fe-4116-4e04-8f68-77d61b112e46/episodes/b372c190-8901-40dd-9bb8-3577e14a0dd1/engineering-kiosk-40-wie-wird-man-und-frau-zum-senior-dev
 apple_podcasts: https://podcasts.apple.com/us/podcast/40-wie-wird-man-und-frau-zum-senior-dev/id1603082924?i=1000582229449&uo=4
 audio: https://stream.redcircle.com/episodes/89454aa1-6b3f-4f73-97b0-128c69f11f37/stream.mp3
 chapter:
@@ -61,7 +61,11 @@ headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts||feedback-gern
 image: /images/podcast/episode/40-wie-wird-man-und-frau-zum-senior-dev.jpg
 layout: ../../../layouts/podcast-episode.astro
 spotify: https://open.spotify.com/episode/75nNWSvFJyBMuj8Gnu2ega
-tags: []
+tags:
+- Karriere
+- Software Engineering
+- Kommunikation
+- Leadership
 title: '#40 Wie wird man und Frau zum Senior Dev?'
 
 ---
