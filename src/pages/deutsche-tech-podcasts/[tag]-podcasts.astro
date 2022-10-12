@@ -1,0 +1,100 @@
+---
+import Footer from '../../components/Footer.astro';
+import MainHead from '../../components/MainHead.astro';
+import Nav from '../../components/Nav.astro';
+import TechPodcastPreview from '../../components/TechPodcastPreview.astro';
+import { URLify } from "../../scripts/urlify.js"
+
+import germanTechPodcasts from "../../data/german-tech-podcasts.json";
+import germanTechPodcastsTags from "../../data/german-tech-podcasts-tags.json";
+
+export async function getStaticPaths() {
+    // Get tags from the german tech podcasts
+    const allPodcastTagsUniqueInclNull = [...new Set(germanTechPodcasts.flatMap((p) => p.tags))];
+    const allPodcastTagsUnique = allPodcastTagsUniqueInclNull.filter(function (tag) {
+        return tag != null;
+    });
+
+    // We URLify the tag here to get dynamic url friendly names
+    return allPodcastTagsUnique.map((tag) => {
+        // We generate two elements here:
+        // Once the original tag name like "Infrastructure as Code"
+        // and one url friendly tag name like "infrastructure-as-code"
+        let t = URLify(tag);
+        let tagUrlName = t.url;
+        let tagName = t.name;
+
+        return ({
+            params: { tag: tagUrlName },
+            props: { tagName }
+        })
+    });
+}
+
+const tagHumanName = Astro.props.tagName;
+
+let title = `Deutschsprachige Tech Podcasts zum Thema ${tagHumanName} - Engineering Kiosk`;
+let description = `Eine kuratierte Liste von deutschen Tech-Podcasts 🇩🇪 🇦🇹 🇨🇭 zum Thema ${tagHumanName}  - Andere coole Podcasts aus der Community.`;
+const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+
+let tagDescription_short = ""
+let tagDescription_long = ""
+if(germanTechPodcastsTags.hasOwnProperty(tagHumanName)){
+    tagDescription_short = germanTechPodcastsTags[tagHumanName]["short_desc"]
+    tagDescription_long = germanTechPodcastsTags[tagHumanName]["long_desc"]
+}
+
+// Filter german tech podcasts by tag, sort by name
+let podcasts = germanTechPodcasts.filter(function(p) {
+    if (p.tags == null) {
+        return false
+    }
+    return p.tags.includes(tagHumanName)
+})
+
+podcasts = podcasts.sort(function(a, b){
+    if(a < b) { return -1; }
+    if(a > b) { return 1; }
+    return 0;
+});
+
+---
+
+<html lang="de">
+	<head>
+		<MainHead title={title} description={tagDescription_short} image="/images/headers/andy-grunwald-wolfgang-gassler-2022-01-07.jpg" {canonicalURL} />
+	</head>
+
+	<body class="antialiased bg-body text-body font-body">
+		<div>
+			<Nav title={title} />
+
+            <section class="py-8 md:py-12 lg:pb-12 bg-coolGray-50" style="background-image: url('/images/elements/pattern-light-big.svg'); background-repeat: no-repeat; background-position: center top;">
+				<div class="container px-4 mx-auto">
+					<div class="flex flex-wrap items-center mb-12">
+						<div class="w-full md:w-3/4 mb-8 md:mb-0">
+							<span class="inline-block py-px px-2 mb-4 text-xs leading-5 text-yellow-500 bg-yellow-100 font-medium uppercase rounded-full shadow-sm">
+								Community Podcast
+							</span>
+							<h3 class="mb-4 text-4xl md:text-5xl leading-tight text-darkCoolGray-900 font-bold tracking-tighter">
+								Deutschsprachige {tagHumanName} Podcasts
+							</h3>
+                            {tagDescription_long && <p class="text-lg md:text-xl text-coolGray-500 font-medium">
+                                {tagDescription_long}
+                              </p>}
+						</div>
+						<div class="w-full md:w-1/4">
+							<a class="flex items-center justify-center py-2 px-4 ml-auto text-sm leading-5 text-yellow-50 font-medium bg-yellow-500 hover:bg-yellow-600 focus:ring-2 focus:ring-yellow-500 focus:ring-opacity-50 md:max-w-max rounded-md" href="https://github.com/EngineeringKiosk/GermanTechPodcasts">
+								Die Podcast Liste auf GitHub <img class="ml-2 w-8" src="/images/brands/github-black.svg" alt="Deutschsprachige Tech Podcasts auf GitHub" title="Deutschsprachige Tech Podcasts auf GitHub">
+							</a>
+						</div>
+					</div>
+				</div>
+			</section>
+
+            {podcasts.map((podcast) => <TechPodcastPreview podcast={podcast} /> )}
+
+			<Footer />
+		</div>
+	</body>
+</html>
