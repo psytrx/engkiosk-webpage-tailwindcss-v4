@@ -422,14 +422,21 @@ def create_redirects(file_to_parse, path_md_files, redirect_prefix):
         logging.info(f"Adding redirect for episode {episode_number}")
 
         episode_file = episode.removesuffix(".md")
-        new_redirect = {
+        new_redirect_shortlink = {
             "from": f"/episodes/{episode_number}",
             "to": f"/podcast/episode/{episode_file}?pk_campaign=shortlink",
             "status": 301,
             "force": True,
         }
+        parsed_toml['redirects'].append(new_redirect_shortlink)
 
-        parsed_toml['redirects'].append(new_redirect)
+        new_redirect_episode_shortlink = {
+            "from": f"/ep{episode_number}",
+            "to": f"/podcast/episode/{episode_file}?pk_campaign=episode_shortlink",
+            "status": 301,
+            "force": True,
+        }
+        parsed_toml['redirects'].append(new_redirect_episode_shortlink)
 
     # Write new file
     with open(file_to_parse, 'w') as f:
