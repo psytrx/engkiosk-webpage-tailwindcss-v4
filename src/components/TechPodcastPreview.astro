@@ -3,6 +3,7 @@ export interface Props {
 	podcast: any;
 }
 
+import { URLify } from "../scripts/urlify.js"
 import { formatDate, formatUnixTimestampToDate } from "../scripts/date.js"
 
 const { podcast } = Astro.props;
@@ -32,6 +33,10 @@ let episode_status_emojy = episode_status[0]
 let episode_status_str = episode_status[1]
 let podcast_image = podcast.image.replace(/^.*[\\\/]/, '')
 
+let tags = [];
+if (podcast.tags) {
+	tags = podcast.tags.map((element) => URLify(element));
+}
 // If a Podcast is not available on Apple Podcasts,
 // we add different css classes.
 let spotifyClassName = "m-4";
@@ -44,7 +49,7 @@ if (podcast.itunesID == 0) {
 	<div class="container px-4 mx-auto">
 		<div class="flex flex-wrap lg:items-center -mx-4">
 			<div class="w-full md:w-8/12 px-4 mb-16 md:mb-0">
-				{ podcast.tags && podcast.tags.map((element) => <span class="inline-block py-px px-2 mb-4 text-xs leading-5 text-yellow-500 bg-yellow-100 font-medium uppercase rounded-full shadow-sm">{element}</span>) }
+				{ tags.map((element) => <a class="inline-block py-px px-2 mb-4 text-xs leading-5 text-yellow-500 bg-yellow-100 font-medium uppercase rounded-full shadow-sm" href={`/deutsche-tech-podcasts/${(element.url)}-podcasts/`}>{element.name}</a>) }
 				
 				<h2 class="mb-8 text-4xl md:text-5xl leading-tight text-coolGray-900 font-bold tracking-tighter">
 					<a href={podcast.website} class="hover:underline hover:text-yellow-500" title={`Website von ${podcast.name}`}>
