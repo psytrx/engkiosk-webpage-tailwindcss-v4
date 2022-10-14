@@ -36,7 +36,7 @@ chapter:
   title: Keine bezahlte Werbung
 - start: 00:55:14
   title: Outro und Feedback
-date: '2022-09-27'
+pubDate: '2022-09-27'
 deezer: https://www.deezer.com/episode/437316457
 description: "Wie w\xFCrde heutzutage ein moderner Logging, Metriken, Monitoring,\
   \ Alerting und Tracing-Stack aussehen? Im Infrastruktur-Bereich gibt es zu jedem\

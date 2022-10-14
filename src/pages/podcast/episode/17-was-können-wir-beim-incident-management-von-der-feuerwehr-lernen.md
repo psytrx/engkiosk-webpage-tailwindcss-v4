@@ -67,7 +67,7 @@ chapter:
   title: Web-Ops / Fire-Ops-Conference
 - start: 01:09:40
   title: Outro
-date: '2022-05-03'
+pubDate: '2022-05-03'
 deezer: https://www.deezer.com/de/episode/381871957
 description: "Was haben die Methoden der Feuerwehr zur Bek\xE4mpfung von Gro\xDFschadensereignissen\
   \ mit dem Incident Management von IT-Systemen gemeinsam?\_ Diese Frage kl\xE4ren\

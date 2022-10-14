@@ -63,7 +63,7 @@ chapter:
     \ finden?"
 - start: 01:01:43
   title: Feedback zum Thema Datenbanken und Outro
-date: '2022-05-17'
+pubDate: '2022-05-17'
 deezer: https://www.deezer.com/de/episode/385182217
 description: "Der zweite Datenbank-Deepdive im Engineering Kiosk. Indirekt kn\xFC\
   pfen wir an Episode 8 mit dem Thema Datenbanken. Diesmal fangen wir aber ganz vorne\

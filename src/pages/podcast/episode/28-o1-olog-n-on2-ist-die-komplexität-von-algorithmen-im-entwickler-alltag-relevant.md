@@ -51,7 +51,7 @@ chapter:
   title: "Optimierungen k\xF6nnen auch schlecht sein bzw. schlecht aussehen"
 - start: 00:53:09
   title: Outro mit Flachwitzen
-date: '2022-07-19'
+pubDate: '2022-07-19'
 deezer: https://www.deezer.com/de/episode/403651097
 description: "Beim Programmieren ist alles ein Algorithmus. Irgendwie zumindest. Doch\
   \ wie misst man die Zeitkomplexit\xE4t? Das ganze nennt sich Big-O-Notation, oder\

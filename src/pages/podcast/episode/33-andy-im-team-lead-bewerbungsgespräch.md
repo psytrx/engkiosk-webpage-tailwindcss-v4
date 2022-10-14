@@ -34,7 +34,7 @@ chapter:
   title: Interview-Abschluss und Retrospektive Betrachtung der Fragen
 - start: 00:59:40
   title: Outro und Feedback
-date: '2022-08-23'
+pubDate: '2022-08-23'
 deezer: https://www.deezer.com/episode/425877397
 description: "Wie k\xF6nnen Engineering Manager und Tech-Lead-Interviews aussehen?\
   \ Jeder, der vom Individual Contributor in eine Engineering Manager und Tech-Lead-Rolle\

@@ -45,7 +45,7 @@ chapter:
   title: MySQL Performance-Tipps vom Buch-Autor Wolfgang
 - start: 00:50:33
   title: Outro
-date: '2022-03-01'
+pubDate: '2022-03-01'
 deezer: https://www.deezer.com/de/episode/366788312
 description: "Datenbanken, besonders relationale Datenbanken und im Web ganz besonders\
   \ MySQL. Jeder kennt sie, jeder nutzt sie, aber keiner gibt zu diese zu nutzen da\

@@ -21,7 +21,7 @@ let description = cutText(frontmatter.description, descriptionChars);
 		<img class="w-full" src={frontmatter.image} alt={`Details zur Podcast Episode ${frontmatter.title}`} title={`Details zur Podcast Episode ${frontmatter.title}`}>
 	</a>
 	<p class="mb-2 text-coolGray-500 font-medium">
-		<time class="date" datetime={frontmatter.date}>{formatDate(frontmatter.date)}</time>
+		<time class="date" datetime={frontmatter.pubDate}>{formatDate(frontmatter.pubDate)}</time>
 	</p>
 	<a class="inline-block mb-4 text-2xl leading-tight text-coolGray-800 hover:text-coolGray-900 font-bold hover:underline" href={episode.url}>
 		{frontmatter.title}

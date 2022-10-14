@@ -59,7 +59,7 @@ chapter:
   title: Branch-Visualisierung in Git
 - start: 01:01:30
   title: Outro
-date: '2022-04-19'
+pubDate: '2022-04-19'
 deezer: https://www.deezer.com/de/episode/378566817
 description: "Kommentare im Quellcode und Git Commit Messages - Liest die \xFCberhaupt\
   \ wer? Ein Streit, der so alt ist wie die Software Entwicklung selbst: Code ist\

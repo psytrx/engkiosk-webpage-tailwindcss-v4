@@ -10,7 +10,7 @@ const { numberOfItems } = Astro.props;
 
 // Build the list of posts
 let allPosts = await Astro.glob('../pages/blog/post/*.mdx');
-allPosts.sort((a, b) => new Date(b.frontmatter.date).valueOf() - new Date(a.frontmatter.date).valueOf());
+allPosts.sort((a, b) => new Date(b.frontmatter.pubDate).valueOf() - new Date(a.frontmatter.pubDate).valueOf());
 
 // Default wise list all items, only limit it if requested
 let postsToShow = allPosts;

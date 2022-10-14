@@ -47,7 +47,7 @@ chapter:
   title: Open Podcast
 - start: 00:27:00
   title: Outro
-date: '2022-02-08'
+pubDate: '2022-02-08'
 deezer: https://www.deezer.com/de/episode/361714572
 description: "Software Engineers fangen bei 0 an zu z\xE4hlen. Das Engineering Kiosk\
   \ ist direkt bei Episode 1 gestartet. Diesen Off-by-one error beheben wir nun mit\

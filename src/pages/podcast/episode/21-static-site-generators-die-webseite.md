@@ -34,7 +34,7 @@ chapter:
   title: Feedback und Contribution zum Engineering Kiosk Website Setup
 - start: 00:52:29
   title: Outro
-date: '2022-05-31'
+pubDate: '2022-05-31'
 deezer: https://www.deezer.com/de/episode/388828577
 description: "Statische Websites sind wieder cool und wir springen mit der eigenen\
   \ Website direkt auf den Hype. Eine Episode mal in (teilweise) eigener Sache: Nach\

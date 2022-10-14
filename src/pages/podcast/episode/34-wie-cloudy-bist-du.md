@@ -38,7 +38,7 @@ chapter:
   title: '"Boring"-Software kann ein Vorteil sein'
 - start: 00:43:30
   title: Zusammenfassung und Outro
-date: '2022-08-30'
+pubDate: '2022-08-30'
 deezer: https://www.deezer.com/episode/427694387
 description: "Die Cloud Native Infrastruktur vs. ein dicker Server - Ein Dauerstreit-Thema\
   \ AWS, GCP, Azure und Co bieten viele Cloud Native Services, die dir dein Leben\

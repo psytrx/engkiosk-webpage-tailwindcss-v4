@@ -37,7 +37,7 @@ chapter:
     Diagramme und dumme Fragen'
 - start: 01:11:20
   title: Outro
-date: '2022-05-24'
+pubDate: '2022-05-24'
 deezer: https://www.deezer.com/de/episode/387099367
 description: "Firmenwechsel. K\xFCndigung ist raus. Wie gehts weiter? Offboarding\
   \ und Onboarding sind i.d.R. zwei Themen die sehr stark untersch\xE4tzt werden.\

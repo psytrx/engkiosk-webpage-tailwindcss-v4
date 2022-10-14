@@ -61,7 +61,7 @@ chapter:
   title: Konsequenzen bei nicht eingehaltenen Service Level Agreements (SLA)
 - start: 00:57:28
   title: Outro
-date: '2022-04-26'
+pubDate: '2022-04-26'
 deezer: https://www.deezer.com/de/episode/380202837
 description: "Code Reviews: Jeder will schnelles Feedback, doch niemand hat Zeit daf\xFC\
   r - Eine Hassliebe. Eine Komponente im Alltag jedes Software Engineers. Egal ob\

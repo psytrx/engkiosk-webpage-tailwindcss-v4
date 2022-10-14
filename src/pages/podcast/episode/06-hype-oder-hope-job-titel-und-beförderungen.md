@@ -31,7 +31,7 @@ chapter:
   title: "5-Jahres-Pl\xE4ne"
 - start: 00:49:56
   title: Outro
-date: '2022-02-15'
+pubDate: '2022-02-15'
 deezer: https://www.deezer.com/de/episode/363367892
 description: "Sind Machine Learning und Artificial Intelligence nur Hypes oder sollte\
   \ ich meine Karriere dahingehend ausrichten? Und welche Hypes gibt es im Infrastruktur-Bereich?\

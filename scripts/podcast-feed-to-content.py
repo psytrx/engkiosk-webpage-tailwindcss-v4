@@ -306,7 +306,7 @@ def sync_podcast_episodes(rss_feed, path_md_files, path_img_files, spotify_clien
             'layout': '../../../layouts/podcast-episode.astro',
             'title': title,
             'audio': mp3_link,
-            'date': date_parsed,
+            'pubDate': date_parsed,
             'image': image_filename,
             'description': description_short,
             'headlines': headline_info,
