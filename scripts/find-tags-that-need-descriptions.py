@@ -68,7 +68,7 @@ def get_all_tags_without_description(tag_descriptions, tags):
 
 if __name__ == "__main__":
     # Argument and parameter parsing
-    cli_parser = argparse.ArgumentParser(description='Find tags without descriptions. Withoud `-write-file`, the tags get printed to stdout.')
+    cli_parser = argparse.ArgumentParser(description='Find tags without descriptions. Without `-write-file`, the tags get printed to stdout.')
     cli_parser.add_argument(
         '-write-file',
         action='store_true',
