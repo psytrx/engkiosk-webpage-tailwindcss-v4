@@ -16,11 +16,23 @@ TAG_FILE_GERMAN_TECH_PODCASTS = 'src/data/german-tech-podcasts-tags.json'
 
 
 def read_all_tags_from_content_files(pathes):
-    tags = set(())
+    """
+    Reads all tags from all content files of this website.
+    A content file are Markdown (md) or MDX files like
+    blog posts or podcast episodes.
+
+    Returns a dictonary with the tag as key and the
+    usage count as value.
+
+    @param: Array of folder pathes to search for files
+    @return: Dict with tags as keys and usage count as values
+    """
+    tags = {}
     for p in pathes:
         logging.info(f"Reading tags from files in {p} ...")
-        # Get existing podcast episodes
-        content_files = [f for f in os.listdir(p) if isfile(join(p, f)) and f.endswith('.md')]
+
+        # Get existing content files (podcast episodes and blog posts)
+        content_files = [f for f in os.listdir(p) if isfile(join(p, f)) and (f.endswith('.md') or f.endswith('.mdx'))]
         for content_file in content_files:
             full_file_path = f'{p}/{content_file}'
             logging.info(f"Processing file {full_file_path} ...")
@@ -30,12 +42,26 @@ def read_all_tags_from_content_files(pathes):
                 frontmatter_tags = fm.get("tags")
 
                 for tag in frontmatter_tags:
-                    tags.add(tag)
+                    if tag in tags:
+                        tags[tag] += 1
+                    else:
+                        tags[tag] = 1
 
     return tags
 
 def read_all_tags_from_german_podcast_data(content_file):
-    tags = set(())
+    """
+    Reads all tags from {content_file}.
+    {content_file} is expected to be a JSON file with
+    multiple entrys, each containing a "tags" key.
+
+    Returns a dictonary with the tag as key and the
+    usage count as value.
+
+    @param: Filepath of a JSON file with entries each containing a "tags" key
+    @return: Dict with tags as keys and usage count as values
+    """
+    tags = {}
     logging.info(f"Processing file {content_file} ...")
 
     with open(content_file) as f:
@@ -45,11 +71,18 @@ def read_all_tags_from_german_podcast_data(content_file):
                 continue
 
             for tag in podcast["tags"]:
-                tags.add(tag)
+                if tag in tags:
+                    tags[tag] += 1
+                else:
+                    tags[tag] = 1
 
     return tags
 
-def read_tag_descriptions(tag_file):
+def read_json_file(tag_file):
+    """
+    Reads the JSON file {tag_file} and returns 
+    the content as parsed JSON dict.
+    """
     with open(tag_file) as f:
         data = json.load(f)
 
@@ -75,7 +108,7 @@ def get_all_tags_without_description(tag_descriptions, tags):
         tags_without_descriptions.add(tag_name)
 
     # Checking for new tags
-    for tag_name in tags:
+    for tag_name in tags.keys():
         if tag_name not in tags_with_description and tag_name not in tags_without_descriptions:
             tags_without_descriptions.add(tag_name)
 
@@ -121,7 +154,7 @@ if __name__ == "__main__":
     if folder_name == "scripts":
         folder_prefix = "../"
 
-    tags = set(())
+    tags = {}
     if args.mode == "website-content":
         TAG_FILE_PATH = f"{folder_prefix}{TAG_FILE_CONTENT}"
 
@@ -138,14 +171,14 @@ if __name__ == "__main__":
 
     len_content_tags = len(tags)
     logging.info(f"Reading existing tag descriptions from {TAG_FILE_PATH} ...")
-    tag_descriptions = read_tag_descriptions(TAG_FILE_PATH)
+    tag_descriptions = read_json_file(TAG_FILE_PATH)
     logging.info(f"Determining tags with missing descriptions out of {len_content_tags} unique content tags ...")
-    tags = get_all_tags_without_description(tag_descriptions, tags)
-    logging.info(f"Found {len(tags)} tags with missing descriptions out of {len_content_tags} unique content tags ...")
+    tags_without_desc = get_all_tags_without_description(tag_descriptions, tags)
+    logging.info(f"Found {len(tags_without_desc)} tags with missing descriptions out of {len_content_tags} unique content tags ...")
 
     # Should we print out the files?
     if not args.write_file:
-        for t in tags:
+        for t in tags_without_desc:
             print(t)
 
         # We let it fail, because in a perfect world, there should be
@@ -155,20 +188,28 @@ if __name__ == "__main__":
             sys.exit(1)
 
     logging.info(f"Writing missing tag structures into file {TAG_FILE_PATH} ...")
-    # Write the missing tags to the local tag file
-    for t in tags:
+
+    # Updating the local JSON tag file:
+    #   - write the missing tags
+    for t in tags_without_desc:
         # If the tag already exists, mostly a subkey is missing
         if t not in tag_descriptions:
             tag_descriptions[t] = {}
 
-        subKeys = ["short_desc", "long_desc"]
+        subKeys = ["short_desc", "long_desc", "usage_count"]
         for k in subKeys:
             if k not in tag_descriptions[t]:
                 tag_descriptions[t][k] = ""
 
+    # Updating the local JSON tag file:
+    #   - updating the usage count
+    for t in tag_descriptions:
+        usage_count = tags[t]
+        tag_descriptions[t]["usage_count"] = usage_count
+
+    # Finally write the file
     with open(TAG_FILE_PATH, 'w') as fp:
         json.dump(tag_descriptions, fp, indent=4)
 
     logging.info(f"Writing missing tag structures into file {TAG_FILE_PATH} ... done")
-
     sys.exit(0)
