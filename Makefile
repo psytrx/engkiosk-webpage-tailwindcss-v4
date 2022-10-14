@@ -33,9 +33,13 @@ episode-check: ## Checks all Podcast Episodes if all player links (Spotify, etc.
 find-tags-that-need-descriptions: ## Checks all used tags that need SEO descriptions and output them on stdout
 	python ./scripts/find-tags-that-need-descriptions.py
 
-.PHONY: find-tags-that-need-descriptions-dump
-find-tags-that-need-descriptions-dump: ## Find all used tags that need SEO descriptions and dump it down to disk into tag-file
-	python ./scripts/find-tags-that-need-descriptions.py -write-file
+.PHONY: find-tags-that-need-descriptions-content-files-dump
+find-tags-that-need-descriptions-content-files-dump: ## Find all used tags in content files that need SEO descriptions and dump it down to disk into tag-file
+	python ./scripts/find-tags-that-need-descriptions.py -write-file website-content
+
+.PHONY: find-tags-that-need-descriptions-german-tech-podcast-file-dump
+find-tags-that-need-descriptions-german-tech-podcast-file-dump: ## Find all used tags in the german tech podcasts that need SEO descriptions and dump it down to disk into tag-file
+	python ./scripts/find-tags-that-need-descriptions.py -write-file german-tech-podcasts
 
 .PHONY: sync-german-tech-podcasts
 sync-german-tech-podcasts: ## Syncs German Tech Podcasts data from https://github.com/EngineeringKiosk/GermanTechPodcasts
