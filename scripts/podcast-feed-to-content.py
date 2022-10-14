@@ -248,8 +248,17 @@ def sync_podcast_episodes(rss_feed, path_md_files, path_img_files, spotify_clien
 
         # Cut text after the Intro text
         # The string is hardcoded. Bad? Yep, maybe. Works? Yep.
-        description_short = description_text_only.split("Feedback an stehtisch@engineeringkiosk.dev")
-        description_short = description_short[0]
+        str_to_split = ""
+        if "Feedback an stehtisch" in description_text_only:
+            str_to_split = "Feedback an stehtisch@engineeringkiosk.dev"
+        elif "Feedback (gerne" in description_text_only:
+            str_to_split = "Feedback (gerne"
+
+        description_short = description_text_only
+        if str_to_split:
+            description_short = description_text_only.split(str_to_split)
+            description_short = description_short[0]
+
         description_short = description_short.strip()
         description_short = html.unescape(description_short)
 
@@ -413,14 +422,27 @@ def create_redirects(file_to_parse, path_md_files, redirect_prefix):
         logging.info(f"Adding redirect for episode {episode_number}")
 
         episode_file = episode.removesuffix(".md")
-        new_redirect = {
+        new_redirect_shortlink = {
             "from": f"/episodes/{episode_number}",
             "to": f"/podcast/episode/{episode_file}?pk_campaign=shortlink",
             "status": 301,
             "force": True,
         }
+        parsed_toml['redirects'].append(new_redirect_shortlink)
 
-        parsed_toml['redirects'].append(new_redirect)
+        # We don't add a campaign part here
+        # Netlify forwards the query params as well.
+        # This way, we can dynamically decide what param to use
+        # e.g:
+        #   - https://engineeringkiosk.dev/ep5?pkn=shownotes
+        #   - https://engineeringkiosk.dev/ep5?pkn=twit_init
+        new_redirect_episode_shortlink = {
+            "from": f"/ep{episode_number}",
+            "to": f"/podcast/episode/{episode_file}",
+            "status": 301,
+            "force": True,
+        }
+        parsed_toml['redirects'].append(new_redirect_episode_shortlink)
 
     # Write new file
     with open(file_to_parse, 'w') as f:
@@ -531,7 +553,7 @@ def get_episode_link_from_google(content, title: str) -> str:
     hostname = "podcasts.google.com"
 
     soup = BeautifulSoup(content, features="html.parser")
-    items = soup.findAll('div', text = re.compile(title))
+    items = soup.findAll('div', text = title)
 
     u = ""
     for item in items:

@@ -16,6 +16,10 @@ init: ## Creates a virtualenv and installs python requirements
 episode-check: ## Checks all Podcast Episodes if all player links (Spotify, etc.) are set
 	venv/bin/python empty-player-urls.py
 
-.PHONY: find-tags-that-need-descriptions
-find-tags-that-need-descriptions: ## Checks all used tags that need SEO descriptions
-	venv/bin/python find-tags-that-need-descriptions.py
+.PHONY: find-tags-that-need-descriptions-website-content
+find-tags-that-need-descriptions-website-content: ## Checks all used tags that need SEO descriptions in Website content like podcasts or blog articles
+	venv/bin/python find-tags-that-need-descriptions.py website-content
+
+.PHONY: find-tags-that-need-descriptions-german-tech-podcasts
+find-tags-that-need-descriptions-german-tech-podcasts: ## Checks all used tags that need SEO descriptions in external content like the german tech podcasts
+	venv/bin/python find-tags-that-need-descriptions.py german-tech-podcasts

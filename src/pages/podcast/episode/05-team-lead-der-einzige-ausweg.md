@@ -57,6 +57,7 @@ layout: ../../../layouts/podcast-episode.astro
 spotify: https://open.spotify.com/episode/2YSw9LkxhXJeUuFaJOihVr
 tags:
 - Karriere
+- Leadership
 title: '#05 Team Lead - der einzige Ausweg'
 
 ---

@@ -1,0 +1,178 @@
+---
+layout: ../../../layouts/blog-post.astro
+title: "Die Engineering Kiosk Website"
+subtitle: Der Engineering Kiosk hat eine eigene Website. Warum jetzt erst, was wir uns erhoffen und womit diese technisch umgesetzt wurde.
+description: "tl:dr: Der Engineering Kiosk hat nach 22 Podcast-Episoden eine eigene Website. Gebaut mit dem static site builder [Astro](https://astro.build/). Source code ist auf [GitHub:EngineeringKiosk/webpage](https://github.com/EngineeringKiosk/webpage) verfügbar."
+tags: [
+    "Website",
+    "Podcast",
+    "Static Site Generator"
+]
+date: 2022-06-20
+thumbnail: /images/blog-content/eigene-website/brands.png
+headerimage: /images/blog-content/eigene-website/podcast-episode-overview.png
+---
+import PodcastEpisodeBlogpostAd from '../../../components/PodcastEpisodeBlogpostAd.astro';
+
+## Was sind SQL Injections?
+
+Eine SQL Injection ist eine Sicherheitslücke in Zusammenhang mit SQL-Datenbanken.
+Im speziellen ist es ein Programmierfehler in einer Applikation, das auf die Datenbank zugreift.
+Ein Angreifer kann Datenbankbefehle einschleusen, beziehungsweise existierende Datenbankabfragen erweitern oder abändern.
+Abhängig vom Einzelfall können dadurch weitere Daten aus der Datenbank ausgelesen, Daten unberechtigt geändert oder gelöscht werden.
+Im schlimmsten Fall kann sogar die Kontrolle über den kompletten Datenbankserver übernommen werden.
+
+Im Bereich der Web-Programmierung ist die SQL-Injection am häufigsten vertreten.
+Dennoch, kann jede Applikation, die mit einer SQL-Datenbank interagiert betroffen sein (unabhängig vom Web-Kontext). 
+
+## Wer hat SQL-Injections entdeckt und seit wann gibt es die Sicherheitslücke ?
+
+Im Jahre 1998 hat sich Jeff Forristal mit Sicherheitslücken in einem Windows NT-Server beschäftigt.
+Dabei ging es um Bereiche wie den [Internet Information Server v4.0 (IIS)](https://de.wikipedia.org/wiki/Microsoft_Internet_Information_Services), [FrontPage Webbots](https://www.neusob.de/projekt/workshop/webbot.htm), [Cold Fusion Application Server](https://de.wikipedia.org/wiki/ColdFusion#Application_Server) aber auch [ODBC](https://de.wikipedia.org/wiki/Open_Database_Connectivity) und den [MS SQL server v6.5](https://www.microsoft.com/de-de/sql-server/sql-server-2019).
+
+Dabei beschreibt er das erste mal die heutige bekannte SQL-Injection.
+Als Sicherheitsforscher hat er seine Resultate auch vor der Veröffentlichung mit Microsoft geteilt.
+Die damalige Antwort war etwas überraschend:
+
+> He did the good thing and told Microsoft, and their answer was, well, hilarious.
+> According to them [Microsoft], what you're about to read is not a problem, so don't worry about doing anything to stop it.
+
+Seine Arbeit wurde von Jeff Forristal im Dezember 1998 im Hacker Zone _Phrack_ veröffentlicht.
+Der Artikel ist im Archiv von [Phrack im Issue 54 noch online verfügbar](http://www.phrack.org/archives/issues/54/8.txt).
+
+## Sind SQL-Injections überhaupt noch relevant?
+
+Die kurze Antwort: **Ja**.
+
+Auch nach 24 Jahren ist die SQL-Injection weiterhin eine der größten Sicherheitslücken im Internet, die für unzählige Datenschutzverletzungen verantwortlich ist:
+
+* [OWASP Top 10 aus 2007: Platz #2 (A2 – Injection Flaws)](https://owasp.org/www-pdf-archive//OWASP_Top_10_2007.pdf)
+* [OWASP Top 10 aus 2010: Platz #1 (A1 – Injection)](https://owasp.org/www-pdf-archive//OWASP_Top_10_-_2010.pdf)
+* [OWASP Top 10 aus 2013: Platz #1 (A1 – Injection)](https://owasp.org/www-pdf-archive//OWASP_Top_10_-_2013.pdf)
+* [OWASP Top 10 aus 2017: Platz #1 (A1 - Injection)](https://owasp.org/www-project-top-ten/2017/Top_10)
+* [OWASP Top 10 aus 2021: Platz #3 (A3 - Injection)](https://owasp.org/www-project-top-ten/)
+
+Weiterhin wurden zum aktuellen Stand (10. Oktober 2022), 1434 Sicherheitslücken, die auf SQL-Injections zurückzuführen sind, in der [offiziellen CVE-Datenbank allein für das Jahr 2022 gemeldet](https://www.cvedetails.com/vulnerability-list/year-2022/opsqli-1/sql-injection.html).
+
+## Was sind die Gründe, warum diese Sicherheitslücke noch nicht ausgestorben ist?
+
+* Vielen Software-Entwicklern fehlt oft eine gewisse Erfahrung im Bereich Sicherheit und Sicherheitsbewusstsein
+* Automatisierte und effiziente Testmethoden, zur Erkennung von SQL-Injections (z.B. ohne False Positives) sind kaum vorhanden bzw. nicht verbreitet.
+* Client-Libraries, die zum Verbindungsaufbau zur Datenbank genutzt werden, können oft immer noch missbraucht oder falsch angewendet werden und geben (unter Umständen) dem Entwickler ein falsches Gefühl von Sicherheit
+* Fast jede Webanwendung verwendet irgendeine Form von Datenbank im Backend, was es somit zu einem lohnenswerten Angriffsziel und eine große Angriffsfläche macht.
+
+## Welcher Schaden kann durch eine SQL-Injection angerichtet werden?
+
+Der genaue Schaden bzw. die Möglichkeiten hängen von der entsprechenden Umgebung und den Sicherheitsvorkehrungen ab.
+Im Allgemeinen ist jedoch folgendes möglich:
+
+* Zugriff auf Daten (via `SELECT`)
+* Daten werden verändert (via `INSERT`, `UPDATE`, `DELETE`, ...)
+    * Dies kann u.a. für das schreiben von JavaScript (Persistent XSS) genutzt werden
+* CMD-Befehle können auf dem Server ausgeführt werden (GO EXEC beim MSSQL-Server) <-- TODO CHECK
+* Schreiben von Dateien auf den Server (z.B. via `SELECT INTO OUTFILE ...`)
+    * Dies kann u.a. genutzt werden um eine [Webshell](https://en.wikipedia.org/wiki/Web_shell) zu erzeugen
+* Lesen von lokalen Dateien vom Server (z.B. via `LOAD_FILE()`oder `LOAD DATA INFILE`)
+* DoS (Denial of Service)-Attacken (z.B. durch zeitbasierte Angriffe `SELECT IF( USER() LIKE 'root@%', BENCHMARK(100000,SHA1('test')), 'false');`)
+* Ausführen von jeglichen SQL-Funktionen
+    * Dadurch können zusätzliche Informationen gesammelt werden (z.B. via `CURRENT_USER()`)
+    * Unter Umständen können dadurch höhere Rechte für den genutzt User erlangt werden
+* Allgemeine Ausnutzung von bekannten Sicherheitslücken im Datenbank-Server
+
+=======================================
+Nach fünf Monaten und 22 Podcast-Episoden mit insgesamt über 20 Stunden Audio-Content, launcht der Engineering Kiosk seine eigene Website.
+
+Warum erst jetzt und nicht mit dem Start vom Podcast, wieso wir überhaupt eine Website brauchen, wenn es doch Spotify gibt und wie der technische Unterbau aussieht, all das klären wir in diesem Blog post.
+
+## Warum haben wir erst jetzt eine eigene Website?
+
+Der Engineering Kiosk ist als Side Project von Andy und Wolfgang gestartet, welcher neben dem Beruf, Familie und weiteren Verpflichtungen betrieben wird.
+Die oberste Priorität lautete: [**Lean (schlank) starten und iterativ arbeiten**](https://de.wikipedia.org/wiki/Lean_Development).
+Dieses bedeutet ein ständiges Hinterfragen, ob eine Funktion für den Start wirklich nötig, oder doch nur *nice to have* ist.
+Die Website war *nice to have*, da die Priorität auf dem Podcast selbst lag: Das Kernprodukt.
+
+Weiterhin benötigt die Erstellung und Aufbau einer eigenen Website Zeit.
+**Zeit**, die wir zu Anfang primär in die **Aufnahme neuer Episoden** und den Aufbau einer Hörerschaft **investiert** haben.
+Natürlich gibt es sehr gute Website-Baukästen wie [Wix](https://de.wix.com/) oder [Jimdo](https://www.jimdo.com/) oder gute (Content Management)-Systeme wie [Wordpress](https://wordpress.com/).
+Dennoch ist es nur selten innerhalb von wenigen Stunden getan.
+
+Zu guter letzt benutzen wir [RedCircle](https://redcircle.com/) als **Plattform** für das Hosting und die Verteilung von Podcasts.
+Eines der Features ist eine **simple Website**: [Engineering Kiosk Podcast auf RedCircle](https://redcircle.com/shows/engineeringkiosk).
+Diese Webseite war für den Start "gut genug".
+
+## Warum braucht der Engineering Kiosk überhaupt eine eigene Website?
+
+Die [Engineering Kiosk Podcast von RedCircle](https://redcircle.com/shows/engineeringkiosk) war für den Start ausreichend, hat jedoch einige Nachteile:
+
+- Funktionsumfang der Website ist sehr begrenzt
+- Anpassungen sind nicht möglich
+- Content-Fokus alleinig auf den Podcast (keine Zusatzinfos zu z.b. uns als Podcast Hosts) 
+- Keine analytischen Daten (z.B. Wie viele Personen besuchen die Website? Wer drückt bei welcher Episode auf Play?)
+- Keine Kontrolle
+
+Diese Nachteile waren uns zum Start vom Engineering Kiosk bewusst.
+Es war *gut genug*.
+Mittel- und Langfristig limitieren diese Nachteile jedoch das Potential vom Engineering Kiosk.
+Mit unserer eigenen Website erhoffen wir uns:
+
+* Neue Hörer zu akquirieren
+* Themen aus unseren Episoden als Blog Artikel zu veröffentlichen (automatisches Transkription der Podcast-Episoden mit unserem Dialekt ist schwierig)
+* Das Projekt "Engineering Kiosk" auch im Suchmaschinen-Ranking auftauchen zu lassen
+* Durch analytische Daten mehr Einblick zu bekommen, vor allem in die Interessen unserer Hörerinnen und Hörer
+* Die Kontrolle über unseren eigenen Content zu behalten
+
+<PodcastEpisodeBlogpostAd episode="21" />
+
+## Womit ist die Engineering Kiosk Website gebaut?
+
+Für das Design haben wir das [Flex Template von Shuffle](https://shuffle.dev/marketplace/flex) genutzt, welches auf [Tailwind CSS](https://tailwindcss.com/) basiert.
+Primär weil
+
+* Wolfgang und Andy keine Designer oder Frontend-Engineers sind
+* andere dies deutlich besser können
+* Tailwind CSS recht simpel zu nutzen ist, dabei aber auch gut erweiterbar ist
+
+Als Plattform kam [Astro, ein neuer Static Site Builder](https://astro.build/), zum Einsatz.
+Ein auf JavaScript und Komponenten basierter Static Site Generator mit einem breiten Featureset (z.B. Server Side Rendering) und einem hohen Fokus auf Developer Experience.
+Warum?
+
+* Das JavaScript Eco-System ist groß und bietet viele Integrationen *out of the box*
+* Wolfgang bevorzugte eine JavaScript basierte Lösung und Andy hatte bereits minimale Erfahrungen mit Astro (durch den [trivago tech blog](https://tech.trivago.com))
+* Astro bietet viele Vorlagen unter [astro.new](https://astro.new/)
+* Astro hat trotz hoher Flexibilität einen [simplen Content und Routing Ansatz](https://docs.astro.build/en/core-concepts/routing/)
+* Astro verfolgt einen [Partial Hydration](https://docs.astro.build/en/core-concepts/partial-hydration/) Ansatz, der eine Webseite ohne JavaScript auf der Client-Seite erlaubt. 
+
+![Eingesetzte Technologien: Astro, tailwind css, Netlify und GitHub](/images/blog-content/eigene-website/brands.png "Eingesetzte Technologien: Astro, tailwind css, Netlify und GitHub")
+
+Beim Hosting verlassen wir uns [Netlify](https://www.netlify.com/).
+Mit der direkten [Anbindung an GitHub](https://github.com/apps/netlify) werden sogar bei [Pull Requests Vorschau-Umgebungen automatisch erzeugt](https://github.com/EngineeringKiosk/webpage/pull/54).
+
+Als Entwicklungs- und Kollaborations-Plattform nutzen wir Github.
+Der Source Code ist auch öffentlich zugänglich: [Engineering Kiosk Webpage @ GitHub](https://github.com/EngineeringKiosk/webpage).
+
+- Template von shuffle https://shuffle.dev/
+- Plattform / Static Site Generator
+
+### Boring Software und der Begriff `astro` bei Google 
+
+Wir sind große Verfechter von *Boring Software*.
+Dies bedeutet, dass wir gerne Software einsetzen, die ein gewissen Grad an Reife erreicht hat und wo die Fehlerfälle industrieweit verstanden und gelöst sind.
+Das direkte Gegenteil von [Hacker News driven development](https://devdriven.by/hn/).
+
+Bei [Astro](https://astro.build/) trifft dies jedoch nicht zu.
+Primär weil
+
+1. das Projekt noch sehr jung ist
+2. bei unseren Freizeit-Projekten auch der Spaß und das Lernen von neuen Technologien im Vordergrund steht
+3. der Engineering Kiosk keine *mission critical* Software ist (z.B. wo keine Rufbereitschaft notwendig ist)
+
+Weil dieses Projekt noch recht jung (und innovative) ist und das Wort *Astro* ein Teil des Wortes *Astrologie* ist, war die klassische Investigation von Fehlern durch Google nicht ganz einfach.
+Die meisten Suchtreffer hatten bei dem Wort *Astro* etwas mit Horoskopen und dem Weltraum zu tun.
+Das [GitHub-Repository withastro/astro](https://github.com/withastro/astro), die [Dokumentation](https://docs.astro.build/en/getting-started/) oder die [Discord Community](https://astro.build/chat) waren deutlich hilfreicher. 
+
+<PodcastEpisodeBlogpostAd episode="21" />
+
+## Euer Feedback
+
+Wir hoffen, dass euch die eigene Website gefällt.
+Feedback ist gerne via [E-Mail](mailto:stehtisch@engineeringkiosk.dev) oder [twitter (@EngKiosk)](https://twitter.com/EngKiosk) gesehen.
