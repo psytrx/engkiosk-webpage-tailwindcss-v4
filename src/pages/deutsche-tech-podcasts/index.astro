@@ -1,10 +1,10 @@
 ---
-import Footer from '../components/Footer.astro';
-import MainHead from '../components/MainHead.astro';
-import Nav from '../components/Nav.astro';
-import TechPodcastPreview from '../components/TechPodcastPreview.astro';
+import Footer from '../../components/Footer.astro';
+import MainHead from '../../components/MainHead.astro';
+import Nav from '../../components/Nav.astro';
+import TechPodcastPreview from '../../components/TechPodcastPreview.astro';
 
-import germanTechPodcasts from "../data/german-tech-podcasts.json";
+import germanTechPodcasts from "../../data/german-tech-podcasts.json";
 
 let title = 'Deutschsprachige Tech Podcasts - Engineering Kiosk';
 let description = 'Eine kuratierte Liste von deutschen Tech-Podcasts 🇩🇪 🇦🇹 🇨🇭 - Andere coole Podcasts aus der Community';
@@ -23,6 +23,7 @@ function orderByName(a, b) {
   return 0;
 }
 germanTechPodcasts.sort(orderByName)
+
 
 ---
 

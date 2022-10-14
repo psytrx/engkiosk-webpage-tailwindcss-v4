@@ -20,8 +20,11 @@ jobs:
       - name: Install python dependencies
         run: pip install -r scripts/requirements.txt
 
-      - name: Run make find-tags-that-need-descriptions-dump
-        run: make find-tags-that-need-descriptions-dump
+      - name: Search for missing SEO tags in content files
+        run: make find-tags-that-need-descriptions-content-files-dump
+
+      - name: Search for missing SEO tags in the German Tech Podcast file
+        run: make find-tags-that-need-descriptions-german-tech-podcast-file-dump
 
       # Commit results back to repository
       - uses: stefanzweifel/git-auto-commit-action@v4
