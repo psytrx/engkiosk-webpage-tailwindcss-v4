@@ -14,6 +14,72 @@ headerimage: /images/blog-content/eigene-website/podcast-episode-overview.png
 ---
 import PodcastEpisodeBlogpostAd from '../../../components/PodcastEpisodeBlogpostAd.astro';
 
+## Was sind SQL Injections?
+
+Eine SQL Injection ist eine Sicherheitslücke in Zusammenhang mit SQL-Datenbanken.
+Im speziellen ist es ein Programmierfehler in einer Applikation, das auf die Datenbank zugreift.
+Ein Angreifer kann Datenbankbefehle einschleusen, beziehungsweise existierende Datenbankabfragen erweitern oder abändern.
+Abhängig vom Einzelfall können dadurch weitere Daten aus der Datenbank ausgelesen, Daten unberechtigt geändert oder gelöscht werden.
+Im schlimmsten Fall kann sogar die Kontrolle über den kompletten Datenbankserver übernommen werden.
+
+Im Bereich der Web-Programmierung ist die SQL-Injection am häufigsten vertreten.
+Dennoch, kann jede Applikation, die mit einer SQL-Datenbank interagiert betroffen sein (unabhängig vom Web-Kontext). 
+
+## Wer hat SQL-Injections entdeckt und seit wann gibt es die Sicherheitslücke ?
+
+Im Jahre 1998 hat sich Jeff Forristal mit Sicherheitslücken in einem Windows NT-Server beschäftigt.
+Dabei ging es um Bereiche wie den [Internet Information Server v4.0 (IIS)](https://de.wikipedia.org/wiki/Microsoft_Internet_Information_Services), [FrontPage Webbots](https://www.neusob.de/projekt/workshop/webbot.htm), [Cold Fusion Application Server](https://de.wikipedia.org/wiki/ColdFusion#Application_Server) aber auch [ODBC](https://de.wikipedia.org/wiki/Open_Database_Connectivity) und den [MS SQL server v6.5](https://www.microsoft.com/de-de/sql-server/sql-server-2019).
+
+Dabei beschreibt er das erste mal die heutige bekannte SQL-Injection.
+Als Sicherheitsforscher hat er seine Resultate auch vor der Veröffentlichung mit Microsoft geteilt.
+Die damalige Antwort war etwas überraschend:
+
+> He did the good thing and told Microsoft, and their answer was, well, hilarious.
+> According to them [Microsoft], what you're about to read is not a problem, so don't worry about doing anything to stop it.
+
+Seine Arbeit wurde von Jeff Forristal im Dezember 1998 im Hacker Zone _Phrack_ veröffentlicht.
+Der Artikel ist im Archiv von [Phrack im Issue 54 noch online verfügbar](http://www.phrack.org/archives/issues/54/8.txt).
+
+## Sind SQL-Injections überhaupt noch relevant?
+
+Die kurze Antwort: **Ja**.
+
+Auch nach 24 Jahren ist die SQL-Injection weiterhin eine der größten Sicherheitslücken im Internet, die für unzählige Datenschutzverletzungen verantwortlich ist:
+
+* [OWASP Top 10 aus 2007: Platz #2 (A2 – Injection Flaws)](https://owasp.org/www-pdf-archive//OWASP_Top_10_2007.pdf)
+* [OWASP Top 10 aus 2010: Platz #1 (A1 – Injection)](https://owasp.org/www-pdf-archive//OWASP_Top_10_-_2010.pdf)
+* [OWASP Top 10 aus 2013: Platz #1 (A1 – Injection)](https://owasp.org/www-pdf-archive//OWASP_Top_10_-_2013.pdf)
+* [OWASP Top 10 aus 2017: Platz #1 (A1 - Injection)](https://owasp.org/www-project-top-ten/2017/Top_10)
+* [OWASP Top 10 aus 2021: Platz #3 (A3 - Injection)](https://owasp.org/www-project-top-ten/)
+
+Weiterhin wurden zum aktuellen Stand (10. Oktober 2022), 1434 Sicherheitslücken, die auf SQL-Injections zurückzuführen sind, in der [offiziellen CVE-Datenbank allein für das Jahr 2022 gemeldet](https://www.cvedetails.com/vulnerability-list/year-2022/opsqli-1/sql-injection.html).
+
+## Was sind die Gründe, warum diese Sicherheitslücke noch nicht ausgestorben ist?
+
+* Vielen Software-Entwicklern fehlt oft eine gewisse Erfahrung im Bereich Sicherheit und Sicherheitsbewusstsein
+* Automatisierte und effiziente Testmethoden, zur Erkennung von SQL-Injections (z.B. ohne False Positives) sind kaum vorhanden bzw. nicht verbreitet.
+* Client-Libraries, die zum Verbindungsaufbau zur Datenbank genutzt werden, können oft immer noch missbraucht oder falsch angewendet werden und geben (unter Umständen) dem Entwickler ein falsches Gefühl von Sicherheit
+* Fast jede Webanwendung verwendet irgendeine Form von Datenbank im Backend, was es somit zu einem lohnenswerten Angriffsziel und eine große Angriffsfläche macht.
+
+## Welcher Schaden kann durch eine SQL-Injection angerichtet werden?
+
+Der genaue Schaden bzw. die Möglichkeiten hängen von der entsprechenden Umgebung und den Sicherheitsvorkehrungen ab.
+Im Allgemeinen ist jedoch folgendes möglich:
+
+* Zugriff auf Daten (via `SELECT`)
+* Daten werden verändert (via `INSERT`, `UPDATE`, `DELETE`, ...)
+    * Dies kann u.a. für das schreiben von JavaScript (Persistent XSS) genutzt werden
+* CMD-Befehle können auf dem Server ausgeführt werden (GO EXEC beim MSSQL-Server) <-- TODO CHECK
+* Schreiben von Dateien auf den Server (z.B. via `SELECT INTO OUTFILE ...`)
+    * Dies kann u.a. genutzt werden um eine [Webshell](https://en.wikipedia.org/wiki/Web_shell) zu erzeugen
+* Lesen von lokalen Dateien vom Server (z.B. via `LOAD_FILE()`oder `LOAD DATA INFILE`)
+* DoS (Denial of Service)-Attacken (z.B. durch zeitbasierte Angriffe `SELECT IF( USER() LIKE 'root@%', BENCHMARK(100000,SHA1('test')), 'false');`)
+* Ausführen von jeglichen SQL-Funktionen
+    * Dadurch können zusätzliche Informationen gesammelt werden (z.B. via `CURRENT_USER()`)
+    * Unter Umständen können dadurch höhere Rechte für den genutzt User erlangt werden
+* Allgemeine Ausnutzung von bekannten Sicherheitslücken im Datenbank-Server
+
+=======================================
 Nach fünf Monaten und 22 Podcast-Episoden mit insgesamt über 20 Stunden Audio-Content, launcht der Engineering Kiosk seine eigene Website.
 
 Warum erst jetzt und nicht mit dem Start vom Podcast, wieso wir überhaupt eine Website brauchen, wenn es doch Spotify gibt und wie der technische Unterbau aussieht, all das klären wir in diesem Blog post.
