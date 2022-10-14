@@ -10,7 +10,9 @@ import frontmatter
 # Global variables
 PODCAST_CONTENT_FILES = 'src/pages/podcast/episode'
 BLOGPOST_CONTENT_FILES = 'src/pages/blog/post'
-TAG_FILE = 'src/data/tags.json'
+GERMAN_TECH_PODCAST_DATA = 'src/data/german-tech-podcasts.json'
+TAG_FILE_CONTENT = 'src/data/tags.json'
+TAG_FILE_GERMAN_TECH_PODCASTS = 'src/data/german-tech-podcasts-tags.json'
 
 
 def read_all_tags_from_content_files(pathes):
@@ -32,6 +34,20 @@ def read_all_tags_from_content_files(pathes):
 
     return tags
 
+def read_all_tags_from_german_podcast_data(content_file):
+    tags = set(())
+    logging.info(f"Processing file {content_file} ...")
+
+    with open(content_file) as f:
+        data = json.load(f)
+        for podcast in data:
+            if podcast["tags"] is None:
+                continue
+
+            for tag in podcast["tags"]:
+                tags.add(tag)
+
+    return tags
 
 def read_tag_descriptions(tag_file):
     with open(tag_file) as f:
@@ -74,6 +90,18 @@ if __name__ == "__main__":
         action='store_true',
         help='Modifies the local tag storage file and adds missing tags (default: %(default)s)')
 
+    # We have two modes:
+    #   - website-content: Things like blog posts or podcast markdown files
+    #   - german-tech-podcasts: Imported content like src/data/german-tech-podcasts.json
+    cli_parser.add_argument('mode',
+        metavar='mode',
+        type=str,
+        default='website-content',
+        const='website-content',
+        nargs='?',
+        choices=['website-content', 'german-tech-podcasts'],
+        help='Mode to execute. Supported: website-content, german-tech-podcasts (default: %(default)s)')
+
     args = cli_parser.parse_args()
 
     # Setup logger
@@ -93,13 +121,21 @@ if __name__ == "__main__":
     if folder_name == "scripts":
         folder_prefix = "../"
 
-    content_pathes = [
-        f"{folder_prefix}{PODCAST_CONTENT_FILES}",
-        f"{folder_prefix}{BLOGPOST_CONTENT_FILES}",
-    ]
-    TAG_FILE_PATH = f"{folder_prefix}{TAG_FILE}"
+    tags = set(())
+    if args.mode == "website-content":
+        TAG_FILE_PATH = f"{folder_prefix}{TAG_FILE_CONTENT}"
 
-    tags = read_all_tags_from_content_files(content_pathes)
+        content_pathes = [
+            f"{folder_prefix}{PODCAST_CONTENT_FILES}",
+            f"{folder_prefix}{BLOGPOST_CONTENT_FILES}",
+        ]
+        tags = read_all_tags_from_content_files(content_pathes)
+
+    if args.mode == "german-tech-podcasts":
+        TAG_FILE_PATH = f"{folder_prefix}{TAG_FILE_GERMAN_TECH_PODCASTS}"
+        content_path = f"{folder_prefix}{GERMAN_TECH_PODCAST_DATA}"
+        tags = read_all_tags_from_german_podcast_data(content_path)
+
     len_content_tags = len(tags)
     logging.info(f"Reading existing tag descriptions from {TAG_FILE_PATH} ...")
     tag_descriptions = read_tag_descriptions(TAG_FILE_PATH)
