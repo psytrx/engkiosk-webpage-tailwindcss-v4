@@ -29,12 +29,16 @@ update-redirects: ## Writes all short url redirects for Podcast episodes to netl
 episode-check: ## Checks all Podcast Episodes if all player links (Spotify, etc.) are set
 	python ./scripts/empty-player-urls.py
 
-.PHONY: find-tags-that-need-descriptions
-find-tags-that-need-descriptions: ## Checks all used tags that need SEO descriptions and output them on stdout
-	python ./scripts/find-tags-that-need-descriptions.py
+.PHONY: find-tags-that-need-descriptions-content-files
+find-tags-that-need-descriptions-content-files: ## Checks all used tags in content files (blog posts and podcasts) that need SEO descriptions and output them on stdout
+	python ./scripts/find-tags-that-need-descriptions.py website-content
+
+.PHONY: find-tags-that-need-descriptions-german-tech-podcast-file
+find-tags-that-need-descriptions-german-tech-podcast-file: ## Checks all used tags in the german tech podcasts that need SEO descriptions and output them on stdout
+	python ./scripts/find-tags-that-need-descriptions.py german-tech-podcasts
 
 .PHONY: find-tags-that-need-descriptions-content-files-dump
-find-tags-that-need-descriptions-content-files-dump: ## Find all used tags in content files that need SEO descriptions and dump it down to disk into tag-file
+find-tags-that-need-descriptions-content-files-dump: ## Find all used tags in content files (blog posts and podcasts) that need SEO descriptions and dump it down to disk into tag-file
 	python ./scripts/find-tags-that-need-descriptions.py -write-file website-content
 
 .PHONY: find-tags-that-need-descriptions-german-tech-podcast-file-dump
