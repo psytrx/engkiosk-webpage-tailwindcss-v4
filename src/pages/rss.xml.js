@@ -2,6 +2,7 @@ import rss from '@astrojs/rss';
 
 const rssItems  = import.meta.glob([
     './blog/post/*.mdx',
+    './podcast/episode/*.md'
 ]);
 
 // Docs: https://docs.astro.build/en/guides/rss/
