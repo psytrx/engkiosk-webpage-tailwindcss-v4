@@ -34,7 +34,7 @@ chapter:
   title: Die aktuelle Lage am Jobmarkt, die Kosten von Recruiting und Demotage
 - start: 01:03:00
   title: Outro
-date: '2022-08-16'
+pubDate: '2022-08-16'
 deezer: https://www.deezer.com/episode/424150377
 description: "Recruiting: Einer der wichtigsten Aufgaben einer Firma - Doch worauf\
   \ kommt es an? Leute kommen. Leute gehen. Fluktuation bzw. ein Jobwechsel ist ganz\

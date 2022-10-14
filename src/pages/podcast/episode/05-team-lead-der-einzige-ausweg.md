@@ -40,7 +40,7 @@ chapter:
 - start: 00:34:42
   title: "Wie sieht ein m\xF6glicher Karriereweg aus, wenn der Engineering Manager-Weg\
     \ nichts f\xFCr mich ist?"
-date: '2022-02-01'
+pubDate: '2022-02-01'
 deezer: https://www.deezer.com/de/episode/360018702
 description: "Engineering Manager oder Team-Lead: Eine Position die sehr motivierend,\
   \ aber auch abschreckend wirken kann. Was erwartet einen? Was ist die Aufgabe einer\

@@ -46,7 +46,7 @@ chapter:
   title: "Remote-Work f\xF6rdert internationale Arbeitsumgebungen"
 - start: 01:04:02
   title: Outro
-date: '2022-07-05'
+pubDate: '2022-07-05'
 deezer: https://www.deezer.com/de/episode/400384857
 description: "Der Gro\xDFteil der IT-Ressourcen wie Dokumentationen, Websites, Pr\xE4\
   sentationen in Englisch, doch was ist wenn man selbst von sich sagt \"My english\

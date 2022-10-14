@@ -52,7 +52,7 @@ chapter:
     \ abgedeckt werden?"
 - start: 00:58:44
   title: Outro
-date: '2022-06-07'
+pubDate: '2022-06-07'
 deezer: https://www.deezer.com/de/episode/390748587
 description: "Neben relationalen Datenbanken gibt es noch eine ganz andere Welt: NoSQL.\
   \ Doch wof\xFCr steht eigentlich NoSQL? Kein SQL? Not Only SQL? Was ist eigentlich\

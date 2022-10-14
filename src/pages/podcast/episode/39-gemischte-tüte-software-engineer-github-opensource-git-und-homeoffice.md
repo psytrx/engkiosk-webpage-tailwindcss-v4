@@ -19,7 +19,7 @@ chapter:
   title: Wie sieht unser Home-Office Setup aus?
 - start: 00:45:39
   title: Outro
-date: '2022-10-04'
+pubDate: '2022-10-04'
 deezer: https://www.deezer.com/episode/441043897
 description: "Ein neues Format: Die gemischte T\xFCte mit Software Engineers, Git,\
   \ GitHub, Open Source und Home-Office-Equipment Eine Episode mit vier verschiedenen\

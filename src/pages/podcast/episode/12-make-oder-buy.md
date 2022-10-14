@@ -41,7 +41,7 @@ chapter:
   title: Wann sollte man die Software selbst bauen?
 - start: 00:57:44
   title: Outro
-date: '2022-03-29'
+pubDate: '2022-03-29'
 deezer: https://www.deezer.com/de/episode/373574677
 description: "Make oder Buy: Alles einkaufen oder doch lieber selber machen? Eine\
   \ Frage die jeder von uns kennt: Sind meine Anforderungen so speziell, dass es kein\

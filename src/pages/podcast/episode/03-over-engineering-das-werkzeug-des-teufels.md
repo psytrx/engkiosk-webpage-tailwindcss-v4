@@ -53,7 +53,7 @@ chapter:
   title: Fazit
 - start: 00:50:20
   title: Kontakt und Outro
-date: '2022-01-18'
+pubDate: '2022-01-18'
 deezer: https://www.deezer.com/de/episode/355566742
 description: "Was ist eigentlich Over-Engineering? Und wann ist es einfach nur gutes\
   \ Engineering? Ist das eigentlich immer nur negativ? Oder auch mal positiv? Gibt\

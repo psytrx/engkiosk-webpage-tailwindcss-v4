@@ -61,7 +61,7 @@ chapter:
 - start: 00:48:15
   title: Was deine Open Source Contribution mit deinem professionellen Werdegang zu
     tun hat
-date: '2022-01-25'
+pubDate: '2022-01-25'
 deezer: https://www.deezer.com/de/episode/358074862
 description: "F\xFCr Andy ist Open Source und die Open Source Community ist bereits\
   \ ein langer und essentieller Begleiter. In dieser Episode interviewed Wolfgang\

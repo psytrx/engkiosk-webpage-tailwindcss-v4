@@ -41,7 +41,7 @@ chapter:
     Job sucht
 - start: 01:11:17
   title: Outro
-date: '2022-06-28'
+pubDate: '2022-06-28'
 deezer: https://www.deezer.com/de/episode/398712977
 description: "Interviews als Bewerber zu f\xFChren ist nicht immer leicht. Oft hat\
   \ man das Gef\xFChl, dass man sich \u201CBeweisen\u201D muss. Doch muss das wirklich\

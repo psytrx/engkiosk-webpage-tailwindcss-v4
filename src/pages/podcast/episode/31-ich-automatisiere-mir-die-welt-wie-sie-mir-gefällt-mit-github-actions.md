@@ -44,7 +44,7 @@ chapter:
     en"
 - start: 00:58:28
   title: Feedback und Outro
-date: '2022-08-09'
+pubDate: '2022-08-09'
 deezer: https://www.deezer.com/episode/422404947
 description: "Schuftest du noch oder automatisierst du schon? Heute gehts um die Faulheit\
   \ von Entwicklern: Wir sprechen \xFCber GitHub Actions - Was es ist, wozu man es\

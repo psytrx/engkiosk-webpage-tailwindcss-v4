@@ -44,7 +44,7 @@ chapter:
   title: 'Der gesunde Streit: Zanken und Bierchen'
 - start: 00:54:17
   title: Outro
-date: '2022-07-12'
+pubDate: '2022-07-12'
 deezer: https://www.deezer.com/de/episode/401978277
 description: "Was haben die JavaScript Pakete left-pad, color, faker und cross-env\
   \ gemeinsam? Alle waren in npm Package Sicherheits-Incidents involviert. Wenn man\

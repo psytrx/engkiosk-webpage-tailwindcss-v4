@@ -49,7 +49,7 @@ chapter:
   title: "W\xFCrdest du Leuten mit Studium einen den Weg zum Doktor empfehlen?"
 - start: 01:04:34
   title: Outro
-date: '2022-08-02'
+pubDate: '2022-08-02'
 deezer: https://www.deezer.com/de/episode/420513827
 description: "Wie wichtig ist die Universit\xE4t und ein Studium f\xFCr den heutigen\
   \ Beruf als Software Entwickler\u22C5in? Diese bzw. \xE4hnliche Fragen haben wir\
