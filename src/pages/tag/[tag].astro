@@ -49,10 +49,10 @@ if(tagInfo.hasOwnProperty(tagHumanName)){
 }
 
 // Filter blog posts by tag, sort by date
-const blogPosts = allBlogPosts.filter((post) => post.frontmatter.tags.includes(tagHumanName)).sort((a, b) => new Date(b.frontmatter.date).valueOf() - new Date(a.frontmatter.date).valueOf());
+const blogPosts = allBlogPosts.filter((post) => post.frontmatter.tags.includes(tagHumanName)).sort((a, b) => new Date(b.frontmatter.pubDate).valueOf() - new Date(a.frontmatter.pubDate).valueOf());
 
 // Filter podcast episodes by tag, sort by date
-const podcastEpisodes = allPodcastEpisode.filter((episode) => episode.frontmatter.tags.includes(tagHumanName)).sort((a, b) => new Date(b.frontmatter.date).valueOf() - new Date(a.frontmatter.date).valueOf());
+const podcastEpisodes = allPodcastEpisode.filter((episode) => episode.frontmatter.tags.includes(tagHumanName)).sort((a, b) => new Date(b.frontmatter.pubDate).valueOf() - new Date(a.frontmatter.pubDate).valueOf());
 
 ---
 
