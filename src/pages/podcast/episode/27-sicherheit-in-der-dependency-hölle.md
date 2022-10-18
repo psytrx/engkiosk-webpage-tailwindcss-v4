@@ -70,6 +70,7 @@ tags:
 - Software Engineering
 - Frontend
 - Backend
+- Sicherheit
 title: "#27 Sicherheit in der Dependency H\xF6lle"
 
 ---
