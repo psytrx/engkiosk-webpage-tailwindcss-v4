@@ -14,12 +14,12 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 
 // Data Fetching: List all Markdown posts in the repo.
 let allPosts = await Astro.glob('./blog/post/*.mdx');
-allPosts.sort((a, b) => new Date(b.frontmatter.date).valueOf() - new Date(a.frontmatter.date).valueOf());
+allPosts.sort((a, b) => new Date(b.frontmatter.pubDate).valueOf() - new Date(a.frontmatter.pubDate).valueOf());
 
 // Determine the latest episode
 // We have places where the last episode is linked
 let allEpisodes = await Astro.glob('../pages/podcast/episode/*.md');
-allEpisodes.sort((a, b) => new Date(b.frontmatter.date).valueOf() - new Date(a.frontmatter.date).valueOf());
+allEpisodes.sort((a, b) => new Date(b.frontmatter.pubDate).valueOf() - new Date(a.frontmatter.pubDate).valueOf());
 let episodesToShow = allEpisodes.slice(0, 1);
 let episode = episodesToShow[0];
 
