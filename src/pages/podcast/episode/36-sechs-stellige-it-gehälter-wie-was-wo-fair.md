@@ -33,7 +33,6 @@ chapter:
 - start: 00:52:40
   title: "Outro und Gemischte T\xFCte: Was ist der Unterschied von einem Softwareentwickler\
     \ und Software-Engineer?"
-pubDate: '2022-09-13'
 deezer: https://www.deezer.com/episode/433458577
 description: "Geh\xE4lter als Software-Engineer: Wie sind diese aufgebaut? IT-Geh\xE4\
   lter sind so hoch wie noch nie. Doch sind 6-Stellige Geh\xE4lter gerechtfertigt,\
@@ -50,6 +49,7 @@ headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts||feedback-gern
   (gerne auch als Voice Message)
 image: "/images/podcast/episode/36-sechs-stellige-it-geh\xE4lter-wie-was-wo-fair.jpg"
 layout: ../../../layouts/podcast-episode.astro
+pubDate: '2022-09-13'
 spotify: https://open.spotify.com/episode/3FRoRTN1kQMSwmlcUQnkL3
 tags:
 - Karriere

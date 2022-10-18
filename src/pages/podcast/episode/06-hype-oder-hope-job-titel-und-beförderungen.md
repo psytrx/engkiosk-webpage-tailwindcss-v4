@@ -31,7 +31,6 @@ chapter:
   title: "5-Jahres-Pl\xE4ne"
 - start: 00:49:56
   title: Outro
-pubDate: '2022-02-15'
 deezer: https://www.deezer.com/de/episode/363367892
 description: "Sind Machine Learning und Artificial Intelligence nur Hypes oder sollte\
   \ ich meine Karriere dahingehend ausrichten? Und welche Hypes gibt es im Infrastruktur-Bereich?\
@@ -46,6 +45,7 @@ google_podcasts: https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5yZWRjaXJjbG
 headlines: "links::Links||erwahnte-personen::Erw\xE4hnte Personen||sprungmarken::Sprungmarken||hosts::Hosts"
 image: "/images/podcast/episode/06-hype-oder-hope-job-titel-und-bef\xF6rderungen.jpg"
 layout: ../../../layouts/podcast-episode.astro
+pubDate: '2022-02-15'
 spotify: https://open.spotify.com/episode/4mkmeVaXD6u8Tf9mpcBWd4
 tags:
 - Karriere

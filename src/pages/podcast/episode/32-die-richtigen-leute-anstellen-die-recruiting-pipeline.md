@@ -34,7 +34,6 @@ chapter:
   title: Die aktuelle Lage am Jobmarkt, die Kosten von Recruiting und Demotage
 - start: 01:03:00
   title: Outro
-pubDate: '2022-08-16'
 deezer: https://www.deezer.com/episode/424150377
 description: "Recruiting: Einer der wichtigsten Aufgaben einer Firma - Doch worauf\
   \ kommt es an? Leute kommen. Leute gehen. Fluktuation bzw. ein Jobwechsel ist ganz\
@@ -51,6 +50,7 @@ headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts||feedback-gern
   (gerne auch als Voice Message)
 image: /images/podcast/episode/32-die-richtigen-leute-anstellen-die-recruiting-pipeline.jpg
 layout: ../../../layouts/podcast-episode.astro
+pubDate: '2022-08-16'
 spotify: https://open.spotify.com/episode/0B3LoAAfZbllsTw1KyYIjx
 tags:
 - Bewerbung

@@ -42,7 +42,6 @@ chapter:
   title: 'Top Tip: Startet ein Side Project und setzt euch die richtigen Erwartungen'
 - start: 00:44:39
   title: "Sind Arbeitgeber gl\xFCcklich \xFCber Side Projects von MitarbeiterInnen?"
-pubDate: '2022-01-03'
 deezer: https://www.deezer.com/de/episode/355566762
 description: "Zwei Engineering Manager \xFCber Side Projects: Wie diese den Recruiting\
   \ Prozess beeinflussen, welche Learnings aus einem Projekt generiert werden, was\
@@ -54,6 +53,7 @@ google_podcasts: https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5yZWRjaXJjbG
 headlines: "sprungmarken::Sprungmarken||erwahnte-personen::Erw\xE4hnte Personen||hosts::Hosts"
 image: "/images/podcast/episode/01-side-projects-fluch-oder-segen-f\xFCr-die-karriere.jpg"
 layout: ../../../layouts/podcast-episode.astro
+pubDate: '2022-01-03'
 spotify: https://open.spotify.com/episode/0uT54qYXLeoYPIerWNK6WY
 tags:
 - Side Projects

@@ -43,7 +43,6 @@ chapter:
   title: "Inflation\xE4re Nutzung des Begriffs \"Senior\""
 - start: 00:48:37
   title: Outro
-pubDate: '2022-10-11'
 deezer: https://www.deezer.com/episode/442991047
 description: "Was ist eigentlich ein Senior Engineer und wie werde ich zu einem? In\
   \ der Tech-Industrie werden Titel wie Junior-, Senior-, Staff- und Co genutzt, um\
@@ -60,6 +59,7 @@ headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts||feedback-gern
   (gerne auch als Voice Message)
 image: /images/podcast/episode/40-wie-wird-man-und-frau-zum-senior-dev.jpg
 layout: ../../../layouts/podcast-episode.astro
+pubDate: '2022-10-11'
 spotify: https://open.spotify.com/episode/75nNWSvFJyBMuj8Gnu2ega
 tags:
 - Karriere

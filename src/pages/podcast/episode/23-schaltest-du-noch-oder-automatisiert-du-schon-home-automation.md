@@ -46,7 +46,6 @@ chapter:
   title: Zuviele Home Automation Systeme und Komponente
 - start: 01:02:00
   title: Outro
-pubDate: '2022-06-14'
 deezer: https://www.deezer.com/de/episode/394959707
 description: "Machst du noch selbst das Licht an oder automatisiert du schon? Internet\
   \ of Things (IoT) ist in aller Munde. Jedes Device trackt irgendwas mit. Doch was\
@@ -61,6 +60,7 @@ google_podcasts: https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5yZWRjaXJjbG
 headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts
 image: /images/podcast/episode/23-schaltest-du-noch-oder-automatisiert-du-schon-home-automation.jpg
 layout: ../../../layouts/podcast-episode.astro
+pubDate: '2022-06-14'
 spotify: https://open.spotify.com/episode/36a2YKzzvfrrRzM3qZTHaC
 tags:
 - Automation

@@ -44,7 +44,6 @@ chapter:
   title: 'Der gesunde Streit: Zanken und Bierchen'
 - start: 00:54:17
   title: Outro
-pubDate: '2022-07-12'
 deezer: https://www.deezer.com/de/episode/401978277
 description: "Was haben die JavaScript Pakete left-pad, color, faker und cross-env\
   \ gemeinsam? Alle waren in npm Package Sicherheits-Incidents involviert. Wenn man\
@@ -63,6 +62,7 @@ headlines: links::Links||weitere-nicht-behandelte-incidents::Weitere nicht behan
   Incidents||sprungmarken::Sprungmarken||hosts::Hosts
 image: "/images/podcast/episode/27-sicherheit-in-der-dependency-h\xF6lle.jpg"
 layout: ../../../layouts/podcast-episode.astro
+pubDate: '2022-07-12'
 spotify: https://open.spotify.com/episode/1PFpdXNHVvRgGPPUxC59Te
 tags:
 - DevOps

@@ -57,7 +57,6 @@ chapter:
   title: Die Checkliste zur Organisation eines Meetups
 - start: 01:08:04
   title: Outro
-pubDate: '2022-07-26'
 deezer: https://www.deezer.com/de/episode/411451087
 description: "Meetups und Konferenzen: Ein wichtiger Bestandteil der Tech-Community\
   \ und als Plattform f\xFCr den Wissenstransfer. Jeder kennt Meetups und Konferenzen.\
@@ -74,6 +73,7 @@ headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts||feedback-gern
   (gerne auch als Voice Message)
 image: /images/podcast/episode/29-die-andere-seite-meetups-konferenzen-organisieren.jpg
 layout: ../../../layouts/podcast-episode.astro
+pubDate: '2022-07-26'
 spotify: https://open.spotify.com/episode/3WQWuMUtFz3RcxJB2VJiNB
 tags:
 - Tech Kultur

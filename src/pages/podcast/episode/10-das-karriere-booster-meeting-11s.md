@@ -32,7 +32,6 @@ chapter:
   title: Wie man am besten mit 1on1s beginnt
 - start: 00:44:12
   title: Feedback und Outro
-pubDate: '2022-03-15'
 deezer: https://www.deezer.com/de/episode/370131537
 description: "1on1s - Zeitverschwendung oder eins der wertvollsten Meetings deiner\
   \ Karriere? Andy und Wolfgang sprechen \xFCber das meist untersch\xE4tzte Meeting\
@@ -47,6 +46,7 @@ google_podcasts: https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5yZWRjaXJjbG
 headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts
 image: /images/podcast/episode/10-das-karriere-booster-meeting-11s.jpg
 layout: ../../../layouts/podcast-episode.astro
+pubDate: '2022-03-15'
 spotify: https://open.spotify.com/episode/3KXQnrxoKkdTDFVXxiR3IA
 tags:
 - Karriere

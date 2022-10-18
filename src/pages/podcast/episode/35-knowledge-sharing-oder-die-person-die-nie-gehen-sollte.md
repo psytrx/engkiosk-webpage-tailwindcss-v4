@@ -38,7 +38,6 @@ chapter:
   title: Ist Knowledge-Sharing schwieriger in einem Remote-Umfeld?
 - start: 01:02:21
   title: Outro
-pubDate: '2022-09-06'
 deezer: https://www.deezer.com/episode/429499567
 description: "Der Dauerbrenner in jedem Team: Wie bekommt man ordentliches Knowledge\
   \ Sharing hin? Jeder kennt's: Die Kollegin ist im Urlaub und genau in dieser Zeit\
@@ -56,6 +55,7 @@ headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts||feedback-gern
   (gerne auch als Voice Message)
 image: /images/podcast/episode/35-knowledge-sharing-oder-die-person-die-nie-gehen-sollte.jpg
 layout: ../../../layouts/podcast-episode.astro
+pubDate: '2022-09-06'
 spotify: https://open.spotify.com/episode/4oZ8sFzPQHMypISi7qmGSR
 tags:
 - Leadership

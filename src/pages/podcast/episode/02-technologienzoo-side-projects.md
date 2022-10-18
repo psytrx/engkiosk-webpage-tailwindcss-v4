@@ -63,7 +63,6 @@ chapter:
   title: "Wolfgang erz\xE4hlt vom Krieg: Sein eigenes Content Management System"
 - start: 00:42:37
   title: Outro
-pubDate: '2022-01-10'
 deezer: https://www.deezer.com/de/episode/355566752
 description: "Wolfgang und Andy erz\xE4hlen ein wenig was \xFCber ihre eigenen Side\
   \ Projects sourcectl (https://gettoknow.sourcectl.dev/), F-Online (https://www.f-online.at/)\
@@ -79,6 +78,7 @@ headlines: "sprungmarken::Sprungmarken||erwahnte-side-projects::Erw\xE4hnte Side
   hnte Technologien||anderes::Anderes||erwahnte-personen::Erw\xE4hnte Personen||hosts::Hosts"
 image: /images/podcast/episode/02-technologienzoo-side-projects.jpg
 layout: ../../../layouts/podcast-episode.astro
+pubDate: '2022-01-10'
 spotify: https://open.spotify.com/episode/1OEVURealPs0TxTg4DGLFR
 tags:
 - Side Projects

@@ -40,7 +40,6 @@ chapter:
   title: "Tiefere Gedanken w\xE4hrend des schreibens"
 - start: 00:54:05
   title: Wrap Up zum Thema asynchrones Arbeiten und Outro
-pubDate: '2022-04-12'
 deezer: https://www.deezer.com/de/episode/377043407
 description: "Remote-Work, asynchrone und parallele Arbeit und die eigene Work-Life-Balance.\
   \ Durch Corona haben wir alle einen Geschmack von der Remote-Arbeit und Home Office\
@@ -56,6 +55,7 @@ google_podcasts: https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5yZWRjaXJjbG
 headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts
 image: /images/podcast/episode/14-async-und-await-asynchrones-arbeiten-im-alltag.jpg
 layout: ../../../layouts/podcast-episode.astro
+pubDate: '2022-04-12'
 spotify: https://open.spotify.com/episode/2efebNjDPhMZBjGC78z9fg
 tags:
 - Team

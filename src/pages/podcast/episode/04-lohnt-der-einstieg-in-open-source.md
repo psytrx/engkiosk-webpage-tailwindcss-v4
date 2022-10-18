@@ -61,7 +61,6 @@ chapter:
 - start: 00:48:15
   title: Was deine Open Source Contribution mit deinem professionellen Werdegang zu
     tun hat
-pubDate: '2022-01-25'
 deezer: https://www.deezer.com/de/episode/358074862
 description: "F\xFCr Andy ist Open Source und die Open Source Community ist bereits\
   \ ein langer und essentieller Begleiter. In dieser Episode interviewed Wolfgang\
@@ -74,6 +73,7 @@ headlines: "sprungmarken::Sprungmarken||erwahnte-artikel::Erw\xE4hnte Artikel||e
   hnte Events||erwahnte-lizenzen::Erw\xE4hnte Lizenzen||hosts::Hosts"
 image: /images/podcast/episode/04-lohnt-der-einstieg-in-open-source.jpg
 layout: ../../../layouts/podcast-episode.astro
+pubDate: '2022-01-25'
 spotify: https://open.spotify.com/episode/1fAhILuNB97dYWuuiI9NwQ
 tags:
 - Open Source

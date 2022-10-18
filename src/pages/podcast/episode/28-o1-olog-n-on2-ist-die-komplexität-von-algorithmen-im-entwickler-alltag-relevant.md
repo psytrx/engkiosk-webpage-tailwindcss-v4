@@ -51,7 +51,6 @@ chapter:
   title: "Optimierungen k\xF6nnen auch schlecht sein bzw. schlecht aussehen"
 - start: 00:53:09
   title: Outro mit Flachwitzen
-pubDate: '2022-07-19'
 deezer: https://www.deezer.com/de/episode/403651097
 description: "Beim Programmieren ist alles ein Algorithmus. Irgendwie zumindest. Doch\
   \ wie misst man die Zeitkomplexit\xE4t? Das ganze nennt sich Big-O-Notation, oder\
@@ -67,6 +66,7 @@ google_podcasts: https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5yZWRjaXJjbG
 headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts
 image: "/images/podcast/episode/28-o1-olog-n-on2-ist-die-komplexit\xE4t-von-algorithmen-im-entwickler-alltag-relevant.jpg"
 layout: ../../../layouts/podcast-episode.astro
+pubDate: '2022-07-19'
 spotify: https://open.spotify.com/episode/1V1n57J1JlwQvq6liID45p
 tags:
 - Software Engineering

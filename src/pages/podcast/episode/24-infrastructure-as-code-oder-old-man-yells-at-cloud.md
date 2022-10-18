@@ -43,7 +43,6 @@ chapter:
   title: Was sind Nachteile von Infrastructure as Code?
 - start: 00:57:55
   title: Zusammenfassung der Episode und Outro
-pubDate: '2022-06-21'
 deezer: https://www.deezer.com/de/episode/397023617
 description: "Old man yells at cloud - Oder: Wie managed man seine Infrastruktur mit\
   \ Stil (und Software) Anders als gewohnt nimmt in dieser Episode Andy die Dozenten-Rolle\
@@ -58,6 +57,7 @@ google_podcasts: https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5yZWRjaXJjbG
 headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts
 image: /images/podcast/episode/24-infrastructure-as-code-oder-old-man-yells-at-cloud.jpg
 layout: ../../../layouts/podcast-episode.astro
+pubDate: '2022-06-21'
 spotify: https://open.spotify.com/episode/5ZDmHWPWsvB4ok4kFEi91V
 tags:
 - Automation

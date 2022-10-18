@@ -19,7 +19,6 @@ chapter:
   title: Wie sieht unser Home-Office Setup aus?
 - start: 00:45:39
   title: Outro
-pubDate: '2022-10-04'
 deezer: https://www.deezer.com/episode/441043897
 description: "Ein neues Format: Die gemischte T\xFCte mit Software Engineers, Git,\
   \ GitHub, Open Source und Home-Office-Equipment Eine Episode mit vier verschiedenen\
@@ -34,6 +33,7 @@ headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts||feedback-gern
   (gerne auch als Voice Message)
 image: "/images/podcast/episode/39-gemischte-t\xFCte-software-engineer-github-opensource-git-und-homeoffice.jpg"
 layout: ../../../layouts/podcast-episode.astro
+pubDate: '2022-10-04'
 spotify: https://open.spotify.com/episode/11sFbhhPfqhw5ICp85CnDN
 tags:
 - Open Source

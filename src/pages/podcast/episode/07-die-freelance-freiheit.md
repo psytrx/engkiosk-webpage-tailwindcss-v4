@@ -51,7 +51,6 @@ chapter:
   title: Neben der Festanstellung starten
 - start: 01:02:12
   title: Outro
-pubDate: '2022-02-22'
 deezer: https://www.deezer.com/de/episode/365060172
 description: "Sein eigener Chef zu sein, sich die Projekte aussuchen k\xF6nnen und\
   \ sich die Zeit frei selbst einzuteilen. Obendrein noch einen Haufen Geld verdienen.\
@@ -67,6 +66,7 @@ google_podcasts: https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5yZWRjaXJjbG
 headlines: links::Links||anderes::Anderes||sprungmarken::Sprungmarken||hosts::Hosts
 image: /images/podcast/episode/07-die-freelance-freiheit.jpg
 layout: ../../../layouts/podcast-episode.astro
+pubDate: '2022-02-22'
 spotify: https://open.spotify.com/episode/5RCZ1mHsBVN83lWXu49xqQ
 tags:
 - Karriere

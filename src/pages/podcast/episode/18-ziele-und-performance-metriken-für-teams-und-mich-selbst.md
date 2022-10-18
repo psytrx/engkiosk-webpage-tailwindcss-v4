@@ -49,7 +49,6 @@ chapter:
   title: Zieldefinitionen sind nicht einfach und Kontext ist King
 - start: 01:07:46
   title: Outro
-pubDate: '2022-05-10'
 deezer: https://www.deezer.com/de/episode/383733037
 description: "Ziel-Definitionen und Mitarbeiter-Metriken: Sinnvoll oder totaler Bl\xF6\
   dsinn? Das Thema ist hei\xDF umstritten. Viele lieben Ziele im Job. Andere sind\
@@ -65,6 +64,7 @@ google_podcasts: https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5yZWRjaXJjbG
 headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts
 image: "/images/podcast/episode/18-ziele-und-performance-metriken-f\xFCr-teams-und-mich-selbst.jpg"
 layout: ../../../layouts/podcast-episode.astro
+pubDate: '2022-05-10'
 spotify: https://open.spotify.com/episode/2ByheYdW9jiNe2NZuLPkiI
 tags:
 - Team

@@ -46,7 +46,6 @@ chapter:
   title: "Remote-Work f\xF6rdert internationale Arbeitsumgebungen"
 - start: 01:04:02
   title: Outro
-pubDate: '2022-07-05'
 deezer: https://www.deezer.com/de/episode/400384857
 description: "Der Gro\xDFteil der IT-Ressourcen wie Dokumentationen, Websites, Pr\xE4\
   sentationen in Englisch, doch was ist wenn man selbst von sich sagt \"My english\
@@ -64,6 +63,7 @@ google_podcasts: https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5yZWRjaXJjbG
 headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts
 image: /images/podcast/episode/26-my-english-is-not-the-yellow-from-the-egg-arbeiten-in-internationalen-teams.jpg
 layout: ../../../layouts/podcast-episode.astro
+pubDate: '2022-07-05'
 spotify: https://open.spotify.com/episode/0S8AoLpiO35S3Lc06mKmQz
 tags:
 - Team

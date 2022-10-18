@@ -59,7 +59,6 @@ chapter:
   title: Branch-Visualisierung in Git
 - start: 01:01:30
   title: Outro
-pubDate: '2022-04-19'
 deezer: https://www.deezer.com/de/episode/378566817
 description: "Kommentare im Quellcode und Git Commit Messages - Liest die \xFCberhaupt\
   \ wer? Ein Streit, der so alt ist wie die Software Entwicklung selbst: Code ist\
@@ -74,6 +73,7 @@ google_podcasts: https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5yZWRjaXJjbG
 headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts
 image: /images/podcast/episode/15-source-code-kommentare-git-commits-messages-merge-commits-und-branch-visualisierungs-kunst.jpg
 layout: ../../../layouts/podcast-episode.astro
+pubDate: '2022-04-19'
 spotify: https://open.spotify.com/episode/28UhEK728kyETTyqcNb6hP
 tags:
 - Team

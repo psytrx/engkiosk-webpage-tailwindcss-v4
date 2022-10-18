@@ -41,7 +41,6 @@ chapter:
     Job sucht
 - start: 01:11:17
   title: Outro
-pubDate: '2022-06-28'
 deezer: https://www.deezer.com/de/episode/398712977
 description: "Interviews als Bewerber zu f\xFChren ist nicht immer leicht. Oft hat\
   \ man das Gef\xFChl, dass man sich \u201CBeweisen\u201D muss. Doch muss das wirklich\
@@ -60,6 +59,7 @@ google_podcasts: https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5yZWRjaXJjbG
 headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts
 image: /images/podcast/episode/25-tech-entlassungswellen-job-interview-skills.jpg
 layout: ../../../layouts/podcast-episode.astro
+pubDate: '2022-06-28'
 spotify: https://open.spotify.com/episode/5vSicTXfw07adEdvQGPQUd
 tags:
 - Bewerbung

@@ -34,7 +34,6 @@ chapter:
   title: Interview-Abschluss und Retrospektive Betrachtung der Fragen
 - start: 00:59:40
   title: Outro und Feedback
-pubDate: '2022-08-23'
 deezer: https://www.deezer.com/episode/425877397
 description: "Wie k\xF6nnen Engineering Manager und Tech-Lead-Interviews aussehen?\
   \ Jeder, der vom Individual Contributor in eine Engineering Manager und Tech-Lead-Rolle\
@@ -52,6 +51,7 @@ headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts||feedback-gern
   (gerne auch als Voice Message)
 image: "/images/podcast/episode/33-andy-im-team-lead-bewerbungsgespr\xE4ch.jpg"
 layout: ../../../layouts/podcast-episode.astro
+pubDate: '2022-08-23'
 spotify: https://open.spotify.com/episode/2wPjvgc95eajkGJMhlmXFG
 tags:
 - Bewerbung

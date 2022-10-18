@@ -37,7 +37,6 @@ chapter:
     Diagramme und dumme Fragen'
 - start: 01:11:20
   title: Outro
-pubDate: '2022-05-24'
 deezer: https://www.deezer.com/de/episode/387099367
 description: "Firmenwechsel. K\xFCndigung ist raus. Wie gehts weiter? Offboarding\
   \ und Onboarding sind i.d.R. zwei Themen die sehr stark untersch\xE4tzt werden.\
@@ -52,6 +51,7 @@ google_podcasts: https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5yZWRjaXJjbG
 headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts
 image: /images/podcast/episode/20-off-boarding-und-on-boarding-wie-verlasse-ich-eine-firma-richtig.jpg
 layout: ../../../layouts/podcast-episode.astro
+pubDate: '2022-05-24'
 spotify: https://open.spotify.com/episode/3H3C7ZKN2XsoJGBh8f5zRn
 tags:
 - Karriere

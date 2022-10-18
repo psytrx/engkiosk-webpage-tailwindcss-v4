@@ -38,7 +38,6 @@ chapter:
   title: '"Boring"-Software kann ein Vorteil sein'
 - start: 00:43:30
   title: Zusammenfassung und Outro
-pubDate: '2022-08-30'
 deezer: https://www.deezer.com/episode/427694387
 description: "Die Cloud Native Infrastruktur vs. ein dicker Server - Ein Dauerstreit-Thema\
   \ AWS, GCP, Azure und Co bieten viele Cloud Native Services, die dir dein Leben\
@@ -54,6 +53,7 @@ headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts||feedback-gern
   (gerne auch als Voice Message)
 image: /images/podcast/episode/34-wie-cloudy-bist-du.jpg
 layout: ../../../layouts/podcast-episode.astro
+pubDate: '2022-08-30'
 spotify: https://open.spotify.com/episode/4DfOEf84e1ajgtH5CV4YCH
 tags:
 - Backend

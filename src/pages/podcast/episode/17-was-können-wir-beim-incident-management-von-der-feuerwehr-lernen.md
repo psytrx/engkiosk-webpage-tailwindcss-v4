@@ -67,7 +67,6 @@ chapter:
   title: Web-Ops / Fire-Ops-Conference
 - start: 01:09:40
   title: Outro
-pubDate: '2022-05-03'
 deezer: https://www.deezer.com/de/episode/381871957
 description: "Was haben die Methoden der Feuerwehr zur Bek\xE4mpfung von Gro\xDFschadensereignissen\
   \ mit dem Incident Management von IT-Systemen gemeinsam?\_ Diese Frage kl\xE4ren\
@@ -84,6 +83,7 @@ google_podcasts: https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5yZWRjaXJjbG
 headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts
 image: "/images/podcast/episode/17-was-k\xF6nnen-wir-beim-incident-management-von-der-feuerwehr-lernen.jpg"
 layout: ../../../layouts/podcast-episode.astro
+pubDate: '2022-05-03'
 spotify: https://open.spotify.com/episode/4FyZmHWjqNmlWn7bl7bPaP
 tags:
 - DevOps

@@ -45,7 +45,6 @@ chapter:
   title: 'Side-Projekt: Wie kamen Open Source Projekte zu ihrem Namen?'
 - start: 00:36:30
   title: Outro
-pubDate: '2022-03-08'
 deezer: https://www.deezer.com/de/episode/368390957
 description: "Es wird politisch: Der Angriffskrieg auf die Ukraine und eine m\xF6\
   glichst technische Beleuchtung des Themas. Wolfgang und Andy sprechen \xFCber die\
@@ -58,6 +57,7 @@ google_podcasts: https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5yZWRjaXJjbG
 headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts
 image: /images/podcast/episode/09-ukraine.jpg
 layout: ../../../layouts/podcast-episode.astro
+pubDate: '2022-03-08'
 spotify: https://open.spotify.com/episode/30CdS9BlvI3GXsCgswRgm8
 tags:
 - Tech Kultur

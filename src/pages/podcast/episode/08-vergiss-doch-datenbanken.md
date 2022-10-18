@@ -45,7 +45,6 @@ chapter:
   title: MySQL Performance-Tipps vom Buch-Autor Wolfgang
 - start: 00:50:33
   title: Outro
-pubDate: '2022-03-01'
 deezer: https://www.deezer.com/de/episode/366788312
 description: "Datenbanken, besonders relationale Datenbanken und im Web ganz besonders\
   \ MySQL. Jeder kennt sie, jeder nutzt sie, aber keiner gibt zu diese zu nutzen da\
@@ -61,6 +60,7 @@ google_podcasts: https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5yZWRjaXJjbG
 headlines: "links::Links||erwahnte-personen::Erw\xE4hnte Personen||sprungmarken::Sprungmarken||hosts::Hosts"
 image: /images/podcast/episode/08-vergiss-doch-datenbanken.jpg
 layout: ../../../layouts/podcast-episode.astro
+pubDate: '2022-03-01'
 spotify: https://open.spotify.com/episode/49HSkGcpuzL3yTbEsguOMB
 tags:
 - Datenbanken

@@ -47,7 +47,6 @@ chapter:
   title: Open Podcast
 - start: 00:27:00
   title: Outro
-pubDate: '2022-02-08'
 deezer: https://www.deezer.com/de/episode/361714572
 description: "Software Engineers fangen bei 0 an zu z\xE4hlen. Das Engineering Kiosk\
   \ ist direkt bei Episode 1 gestartet. Diesen Off-by-one error beheben wir nun mit\
@@ -62,6 +61,7 @@ google_podcasts: https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5yZWRjaXJjbG
 headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts
 image: "/images/podcast/episode/00-developer-fangen-bei-0-an-zu-z\xE4hlen.jpg"
 layout: ../../../layouts/podcast-episode.astro
+pubDate: '2022-02-08'
 spotify: https://open.spotify.com/episode/4TZwqBTtO2fNDt8XjQXjuR
 tags: []
 title: "#00 Developer fangen bei 0 an zu z\xE4hlen"

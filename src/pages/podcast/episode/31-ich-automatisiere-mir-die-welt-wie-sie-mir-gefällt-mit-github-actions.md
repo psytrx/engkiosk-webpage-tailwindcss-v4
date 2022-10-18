@@ -44,7 +44,6 @@ chapter:
     en"
 - start: 00:58:28
   title: Feedback und Outro
-pubDate: '2022-08-09'
 deezer: https://www.deezer.com/episode/422404947
 description: "Schuftest du noch oder automatisierst du schon? Heute gehts um die Faulheit\
   \ von Entwicklern: Wir sprechen \xFCber GitHub Actions - Was es ist, wozu man es\
@@ -59,6 +58,7 @@ headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts||feedback-gern
 image: "/images/podcast/episode/31-ich-automatisiere-mir-die-welt-wie-sie-mir-gef\xE4\
   llt-mit-github-actions.jpg"
 layout: ../../../layouts/podcast-episode.astro
+pubDate: '2022-08-09'
 spotify: https://open.spotify.com/episode/1vWJTaoipaGryKcGJOoUF6
 tags:
 - Backend

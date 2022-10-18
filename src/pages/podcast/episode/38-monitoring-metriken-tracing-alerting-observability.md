@@ -36,7 +36,6 @@ chapter:
   title: Keine bezahlte Werbung
 - start: 00:55:14
   title: Outro und Feedback
-pubDate: '2022-09-27'
 deezer: https://www.deezer.com/episode/437316457
 description: "Wie w\xFCrde heutzutage ein moderner Logging, Metriken, Monitoring,\
   \ Alerting und Tracing-Stack aussehen? Im Infrastruktur-Bereich gibt es zu jedem\
@@ -52,6 +51,7 @@ headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts||feedback-gern
   (gerne auch als Voice Message)
 image: /images/podcast/episode/38-monitoring-metriken-tracing-alerting-observability.jpg
 layout: ../../../layouts/podcast-episode.astro
+pubDate: '2022-09-27'
 spotify: https://open.spotify.com/episode/6o12Q11f95KuKYytqmis6u
 tags:
 - Backend

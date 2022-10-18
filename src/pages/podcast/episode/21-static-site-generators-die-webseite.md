@@ -34,7 +34,6 @@ chapter:
   title: Feedback und Contribution zum Engineering Kiosk Website Setup
 - start: 00:52:29
   title: Outro
-pubDate: '2022-05-31'
 deezer: https://www.deezer.com/de/episode/388828577
 description: "Statische Websites sind wieder cool und wir springen mit der eigenen\
   \ Website direkt auf den Hype. Eine Episode mal in (teilweise) eigener Sache: Nach\
@@ -50,6 +49,7 @@ google_podcasts: https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5yZWRjaXJjbG
 headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts
 image: /images/podcast/episode/21-static-site-generators-die-webseite.jpg
 layout: ../../../layouts/podcast-episode.astro
+pubDate: '2022-05-31'
 spotify: https://open.spotify.com/episode/7FpteXc95QPAnKihOuUUpX?si=9ea7bd26f6ec4858
 tags:
 - Frontend

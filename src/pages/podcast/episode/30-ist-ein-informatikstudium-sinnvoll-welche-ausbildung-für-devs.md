@@ -49,7 +49,6 @@ chapter:
   title: "W\xFCrdest du Leuten mit Studium einen den Weg zum Doktor empfehlen?"
 - start: 01:04:34
   title: Outro
-pubDate: '2022-08-02'
 deezer: https://www.deezer.com/de/episode/420513827
 description: "Wie wichtig ist die Universit\xE4t und ein Studium f\xFCr den heutigen\
   \ Beruf als Software Entwickler\u22C5in? Diese bzw. \xE4hnliche Fragen haben wir\
@@ -67,6 +66,7 @@ headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts||feedback-gern
 image: "/images/podcast/episode/30-ist-ein-informatikstudium-sinnvoll-welche-ausbildung-f\xFC\
   r-devs.jpg"
 layout: ../../../layouts/podcast-episode.astro
+pubDate: '2022-08-02'
 spotify: https://open.spotify.com/episode/3XW8vkTOnDwbO1Y2O6HDsN
 tags:
 - Karriere

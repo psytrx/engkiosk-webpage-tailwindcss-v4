@@ -38,7 +38,6 @@ chapter:
   title: "Inspiration durch Blog-Artikel und B\xFCcher"
 - start: 00:55:37
   title: Outro
-pubDate: '2022-04-05'
 deezer: https://www.deezer.com/de/episode/375279537
 description: "Zeit- und Produktivit\xE4tsmanagement: Buzzword-Bingo oder bringt das\
   \ wirklich was? So bl\xF6d wie das Thema auch klingen mag, es hat Vorteile. Nicht\
@@ -53,6 +52,7 @@ google_podcasts: https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5yZWRjaXJjbG
 headlines: "links::Links||bucher::B\xFCcher||sprungmarken::Sprungmarken||hosts::Hosts"
 image: "/images/podcast/episode/13-produktivit\xE4t.jpg"
 layout: ../../../layouts/podcast-episode.astro
+pubDate: '2022-04-05'
 spotify: https://open.spotify.com/episode/6idJ9F1bk6AQKFxrbukvC3
 tags:
 - Karriere

@@ -53,7 +53,6 @@ chapter:
   title: Fazit
 - start: 00:50:20
   title: Kontakt und Outro
-pubDate: '2022-01-18'
 deezer: https://www.deezer.com/de/episode/355566742
 description: "Was ist eigentlich Over-Engineering? Und wann ist es einfach nur gutes\
   \ Engineering? Ist das eigentlich immer nur negativ? Oder auch mal positiv? Gibt\
@@ -65,6 +64,7 @@ google_podcasts: https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5yZWRjaXJjbG
 headlines: sprungmarken::Sprungmarken||artikel::Artikel||konzepte::Konzepte||projekte::Projekte
 image: /images/podcast/episode/03-over-engineering-das-werkzeug-des-teufels.jpg
 layout: ../../../layouts/podcast-episode.astro
+pubDate: '2022-01-18'
 spotify: https://open.spotify.com/episode/7HI6NDwFJnM0w7W8xYjGqG
 tags:
 - Software Engineering

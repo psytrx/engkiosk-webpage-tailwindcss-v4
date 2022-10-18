@@ -40,7 +40,6 @@ chapter:
 - start: 00:34:42
   title: "Wie sieht ein m\xF6glicher Karriereweg aus, wenn der Engineering Manager-Weg\
     \ nichts f\xFCr mich ist?"
-pubDate: '2022-02-01'
 deezer: https://www.deezer.com/de/episode/360018702
 description: "Engineering Manager oder Team-Lead: Eine Position die sehr motivierend,\
   \ aber auch abschreckend wirken kann. Was erwartet einen? Was ist die Aufgabe einer\
@@ -54,6 +53,7 @@ headlines: "erwahnte-artikel::Erw\xE4hnte Artikel||bucher-uber-das-engineering-m
   cher \xFCber das Engineering Management||sprungmarken::Sprungmarken||hosts::Hosts"
 image: /images/podcast/episode/05-team-lead-der-einzige-ausweg.jpg
 layout: ../../../layouts/podcast-episode.astro
+pubDate: '2022-02-01'
 spotify: https://open.spotify.com/episode/2YSw9LkxhXJeUuFaJOihVr
 tags:
 - Karriere

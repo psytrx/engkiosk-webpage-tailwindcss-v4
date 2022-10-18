@@ -52,7 +52,6 @@ chapter:
   title: Selbst-Publishing und Print on Demand
 - start: 01:03:56
   title: Audio-Rants, Reddit und Outro
-pubDate: '2022-09-20'
 deezer: https://www.deezer.com/episode/435299247
 description: "Lohnt es sich ein IT-Fachbuch zu schreiben? Es gibt zu jeder Software\
   \ und zu jedem IT-Thema mindestens ein Buch. Doch wie ist es eigentlich, ein solches\
@@ -69,6 +68,7 @@ headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts||feedback-gern
 image: "/images/podcast/episode/37-mit-it-b\xFCchern-geld-verdienen-wer-liest-\xFC\
   berhaupt-noch-b\xFCcher.jpg"
 layout: ../../../layouts/podcast-episode.astro
+pubDate: '2022-09-20'
 spotify: https://open.spotify.com/episode/3KlgP1cJSP9DTFab6DFxLF
 tags:
 - Karriere

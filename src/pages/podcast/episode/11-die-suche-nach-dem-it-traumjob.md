@@ -48,7 +48,6 @@ chapter:
   title: Interviews und Coding Challenges als Side Projetc
 - start: 00:56:12
   title: Outro
-pubDate: '2022-03-22'
 deezer: https://www.deezer.com/de/episode/371918487
 description: "Den richtigen Arbeitgeber und die richtige Firma finden: Eine Mammut-Aufgabe.\
   \ In dieser Episode sprechen Wolfgang und Andy ein wenig dar\xFCber wie man neue,\
@@ -64,6 +63,7 @@ google_podcasts: https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5yZWRjaXJjbG
 headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts
 image: /images/podcast/episode/11-die-suche-nach-dem-it-traumjob.jpg
 layout: ../../../layouts/podcast-episode.astro
+pubDate: '2022-03-22'
 spotify: https://open.spotify.com/episode/10M5UFnQfcQXwYTIFjQrqP
 tags:
 - Karriere
