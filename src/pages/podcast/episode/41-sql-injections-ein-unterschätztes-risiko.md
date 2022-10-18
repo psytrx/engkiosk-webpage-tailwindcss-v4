@@ -1,5 +1,5 @@
 ---
-amazon_music: ''
+amazon_music: https://music.amazon.com/podcasts/c35a09fe-4116-4e04-8f68-77d61b112e46/episodes/1aa39b24-8c09-496d-9505-20c0ddb6981d/engineering-kiosk-41-sql-injections---ein-untersch%C3%A4tztes-risiko
 apple_podcasts: https://podcasts.apple.com/us/podcast/41-sql-injections-ein-untersch%C3%A4tztes-risiko/id1603082924?i=1000582974713&uo=4
 audio: https://stream.redcircle.com/episodes/51d3390e-ffce-4ec6-a6d9-350dc0cd163b/stream.mp3
 chapter:
@@ -61,7 +61,11 @@ image: "/images/podcast/episode/41-sql-injections-ein-untersch\xE4tztes-risiko.j
 layout: ../../../layouts/podcast-episode.astro
 pubDate: '2022-10-18'
 spotify: https://open.spotify.com/episode/33PP79EzBWrsQ5aZqqzlTw
-tags: []
+tags:
+- Backend
+- Datenbanken
+- Sicherheit
+- Software Engineering
 title: "#41 SQL Injections - Ein untersch\xE4tztes Risiko"
 
 ---
