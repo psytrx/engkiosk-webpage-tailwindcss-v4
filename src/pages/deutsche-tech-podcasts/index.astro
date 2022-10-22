@@ -59,18 +59,11 @@ germanTechPodcasts.sort(orderByName)
 						</div>
 					</div>
 					<div id="filter" class="invisible flex flex-wrap items-center mb-4">
-						<div class="w-full md:w-9/12 mb-8 md:mb-0">
+						<div class="w-full mb-8 md:mb-0">
 							<div class="flex justify-start items-center">
 								<h3 class="text-lg mr-3 md:text-xl leading-tight text-coolGray-500 font-medium tracking-tighter">
 									Filter:
 								</h3>
-								<select id="filter-activity" class="px-4 py-3 rounded-md text-yellow-50 font-medium bg-yellow-500 hover:bg-yellow-600 focus:ring-0 text-sm">
-									<option value="">Aktivtät: Alle Podcasts</option>
-									<option value="active">🟢 Nur aktive Podcasts</option>
-									<option value="delayed">🟡 Nur teils inaktive Podcasts</option>
-									<option value="inactive">🔴 Nur inaktive Podcasts</option>
-								</select>
-								<span class="text-lg mx-3 md:text-xl leading-tight text-coolGray-500 font-medium tracking-tighter">oder</span>
 								<select id="filter-last-episode" class="px-4 py-3 rounded-md text-yellow-50 font-medium bg-yellow-500 hover:bg-yellow-600 focus:ring-0 text-sm">
 									<option value="">Letzte Episode: Alle Podcasts</option>
 									<option value="7">Letzte Episode in den letzten 7 Tagen</option>
@@ -78,11 +71,6 @@ germanTechPodcasts.sort(orderByName)
 									<option value="31">Letzte Episode im letzten Monat</option>
 								</select>
 							</div>
-						</div>
-						<div class="w-full md:w-3/12 mb-8 md:mb-0">
-							<button id="filter-reset" class="flex items-center justify-center py-2 px-4 ml-auto text-sm leading-5 text-yellow-50 font-medium bg-yellow-500 hover:bg-yellow-600 focus:ring-2 focus:ring-yellow-500 focus:ring-opacity-50 md:max-w-max rounded-md">
-								Filter zurücksetzen
-							</button>
 						</div>
 					</div>
 					<div id="filter-count" class="invisible w-full md:mb-0">

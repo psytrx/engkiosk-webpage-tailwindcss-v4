@@ -5,40 +5,8 @@
  * @return void
  */
 function addFilterListener() {
-	let filterActivity = document.getElementById("filter-activity");
-	filterActivity.addEventListener("change", handleFilterActivity); 
-
 	let filterLastEpisode = document.getElementById("filter-last-episode");
 	filterLastEpisode.addEventListener("change", handleFilterLastEpisode); 
-
-	let filterReset = document.getElementById("filter-reset");
-	filterReset.addEventListener("click", podcastFilterReset); 
-}
-
-/**
- * podcastFilterReset resets the filter form.
- * 
- * @return void
- */
-function podcastFilterReset() {
-	setSelectElementValue("filter-activity", "");
-	setSelectElementValue("filter-last-episode", "");
-	filter();
-}
-
-/**
- * handleFilterActivity handles the change event on
- * the form field "Activity" (active, inactive, ...).
- * 
- * Both filter are exclusive to each other.
- * Only one can be active.
- * 
- * @param event elem 
- * @return void
- */
-function handleFilterActivity(elem) {
-	setSelectElementValue("filter-last-episode", "");
-	filter();
 }
 
 /**
@@ -52,21 +20,7 @@ function handleFilterActivity(elem) {
  * @return void
  */
 function handleFilterLastEpisode(elem) {
-	setSelectElementValue("filter-activity", "");
 	filter();
-}
-
-/**
- * setSelectElementValue sets valueToSelect on elementID.
- * elementID need to be a <select> field.
- *
- * @param string elementID 
- * @param string valueToSelect 
- * @return void
- */
-function setSelectElementValue(elementID, valueToSelect) {    
-    let elem = document.getElementById(elementID);
-    elem.value = valueToSelect;
 }
 
 /**
@@ -88,11 +42,6 @@ function getSelectElementValue(elementID) {
  */
 function getFilterAttributes() {
 	let currentFilter = {};
-
-	const activityFilter = getSelectElementValue("filter-activity");
-	if (activityFilter != "") {
-		currentFilter["publishingEpisodeStatus"] = activityFilter;
-	}
 
 	const lastEpisodeFilter = getSelectElementValue("filter-last-episode");
 	if (lastEpisodeFilter != "") {
@@ -135,19 +84,6 @@ function filter() {
 
 	const elements = document.getElementsByClassName("tech-podcast");
 	for (let elem of elements) {
-		// We only have two filters which are exclusive to each other.
-		// Filter for "is the podcast considered as active?"
-		if ("publishingEpisodeStatus" in currentFilters && currentFilters["publishingEpisodeStatus"] != "") {
-			if (elem.dataset["publishingEpisodeStatus"] == currentFilters["publishingEpisodeStatus"]) {
-				elem.classList.remove("hidden");
-			} else {
-				elem.classList.add("hidden");
-			}
-		}
-
-		// Andere TODOs
-		// - Filter einblenden, nur wenn JS verfügbar ist
-
 		// Filter for "last episode published within the last X days"
 		if ("lastEpisode" in currentFilters &&  currentFilters["lastEpisode"] != "") {
 			if (parseInt(elem.dataset["daysSinceLastEpisode"]) <= parseInt(currentFilters["lastEpisode"])) {
