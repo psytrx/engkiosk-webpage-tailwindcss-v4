@@ -58,16 +58,16 @@ germanTechPodcasts.sort(orderByName)
 							</a>
 						</div>
 					</div>
-					<div id="filter" class="invisible flex flex-wrap items-center mb-4">
-						<div class="w-full mb-8 md:mb-0">
-							<div class="flex justify-start items-center">
-								<select id="filter-last-episode" class="px-4 py-3 mr-6 rounded-md text-yellow-50 font-medium bg-yellow-500 hover:bg-yellow-600 focus:ring-0 text-sm">
+					<div id="filter" class="invisible flex flex-wrap items-center">
+						<div class="w-full">
+							<div class="flex justify-start items-center flex-col md:flex-row">
+								<select id="filter-last-episode" class="w-full md:w-auto p-3 text-center rounded-md text-yellow-50 font-medium bg-yellow-500 hover:bg-yellow-600 focus:ring-0 text-sm">
 									<option value="">Alle Podcasts (keine Filter)</option>
 									<option value="7">Neue Episode in vergangenen 7 Tagen</option>
 									<option value="14">Neue Episode in vergangenen 2 Wochen</option>
 									<option value="31">Neue Episode im vergangenen Monat</option>
 								</select>
-								<p id="filter-count" class="invisible text-lg md:text-xl text-coolGray-500 font-medium">
+								<p id="filter-count" class="invisible text-lg md:text-base mt-2 md:mt-0 md:ml-4 text-coolGray-500 font-medium">
 									<span id="filter-count-match"></span> von <span id="filter-count-total"></span> Podcasts angezeigt.
 								</p>
 							</div>
