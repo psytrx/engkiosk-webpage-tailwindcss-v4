@@ -61,22 +61,17 @@ germanTechPodcasts.sort(orderByName)
 					<div id="filter" class="invisible flex flex-wrap items-center mb-4">
 						<div class="w-full mb-8 md:mb-0">
 							<div class="flex justify-start items-center">
-								<h3 class="text-lg mr-3 md:text-xl leading-tight text-coolGray-500 font-medium tracking-tighter">
-									Filter:
-								</h3>
-								<select id="filter-last-episode" class="px-4 py-3 rounded-md text-yellow-50 font-medium bg-yellow-500 hover:bg-yellow-600 focus:ring-0 text-sm">
-									<option value="">Letzte Episode: Alle Podcasts</option>
-									<option value="7">Letzte Episode in den letzten 7 Tagen</option>
-									<option value="14">Letzte Episode in den letzten 2 Wochen</option>
-									<option value="31">Letzte Episode im letzten Monat</option>
+								<select id="filter-last-episode" class="px-4 py-3 mr-6 rounded-md text-yellow-50 font-medium bg-yellow-500 hover:bg-yellow-600 focus:ring-0 text-sm">
+									<option value="">Alle Podcasts (keine Filter)</option>
+									<option value="7">Neue Episode in vergangenen 7 Tagen</option>
+									<option value="14">Neue Episode in vergangenen 2 Wochen</option>
+									<option value="31">Neue Episode im vergangenen Monat</option>
 								</select>
+								<p id="filter-count" class="invisible text-lg md:text-xl text-coolGray-500 font-medium">
+									<span id="filter-count-match"></span> von <span id="filter-count-total"></span> Podcasts angezeigt.
+								</p>
 							</div>
 						</div>
-					</div>
-					<div id="filter-count" class="invisible w-full md:mb-0">
-						<p class="text-lg md:text-xl text-coolGray-500 font-medium">
-							Filter-Ergebnis: <span id="filter-count-match"></span> von <span id="filter-count-total"></span> Podcasts.
-						</p>
 					</div>
 				</div>
 			</section>

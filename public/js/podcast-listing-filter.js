@@ -79,6 +79,8 @@ function filter() {
 	if (Object.keys(currentFilters).length == 0) {
 		makeEveryPodcastVisible();
 		toggleNoFilterMatchMessage();
+		hideFilterCountMessage();
+
 		return;
 	}
 
@@ -96,6 +98,7 @@ function filter() {
 
 	toggleNoFilterMatchMessage();
 	updateFilterCounter();
+	showFilterCountMessage();
 }
 
 /**
@@ -126,6 +129,25 @@ function toggleNoFilterMatchMessage() {
 	} else {
 		document.getElementById("no-filter-match").classList.add("hidden");
 	}
+}
+
+/**
+ * Shows the message "X of Y podcasts are available".
+ *
+ * @return void
+ */
+function showFilterCountMessage() {
+	document.getElementById("filter-count").classList.remove("invisible");
+}
+
+/**
+ * Hides the message "X of Y podcasts are available".
+ *
+ * @return void
+ */
+
+function hideFilterCountMessage() {
+	document.getElementById("filter-count").classList.add("invisible");
 }
 
 /**
@@ -161,9 +183,7 @@ function getTotalPodcastCounter() {
 window.addEventListener('DOMContentLoaded', (event) => {
 	// Make filter bar visible (only when javascript is activated)
 	document.getElementById("filter").classList.remove("invisible");
-	document.getElementById("filter-count").classList.remove("invisible");
 
 	addFilterListener();
-
 	updateFilterCounter();
 });
