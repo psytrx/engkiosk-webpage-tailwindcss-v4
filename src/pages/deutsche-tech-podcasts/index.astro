@@ -24,12 +24,12 @@ function orderByName(a, b) {
 }
 germanTechPodcasts.sort(orderByName)
 
-
 ---
 
 <html lang="de">
   <head>
 		<MainHead title={title} description={description} image="/images/headers/german-tech-podcasts-head.jpeg" {canonicalURL} />
+		<script src="/js/podcast-listing-filter.js" is:inline></script>
 	</head>
 
 	<body class="antialiased bg-body text-body font-body">
@@ -49,7 +49,7 @@ germanTechPodcasts.sort(orderByName)
 							<p class="text-lg md:text-xl text-coolGray-500 font-medium">
 								Ein ordentlicher Kiosk verfügt natürlich über ein ausgewogenes Angebot. Ein Zeitschriften-Kiosk bietet eine Auswahl an Zeitschriften,
 								der Engineering Kiosk hingegen eine gute Auswahl an Tech-Podcasts. Daher haben wir - selbst Podcasts-Hosts - eine <span class="font-bold">kuratierte Liste von
-								{ germanTechPodcasts.length } deutschsprachigen Tech-Podcasts</span> 🇩🇪 🇦🇹 🇨🇭 für euch zusammengestellt.
+								<span id="number-podcasts">{ germanTechPodcasts.length }</span> deutschsprachigen Tech-Podcasts</span> 🇩🇪 🇦🇹 🇨🇭 für euch zusammengestellt.
 							</p>
 						</div>
 						<div class="w-full md:w-1/4">
@@ -58,16 +58,41 @@ germanTechPodcasts.sort(orderByName)
 							</a>
 						</div>
 					</div>
+					<div id="filter" class="invisible flex flex-wrap items-center">
+						<div class="w-full">
+							<div class="flex justify-start items-center flex-col md:flex-row">
+								<select id="filter-last-episode" class="w-full md:w-auto p-3 text-center rounded-md text-yellow-50 font-medium bg-yellow-500 hover:bg-yellow-600 focus:ring-0 text-sm">
+									<option value="">Alle Podcasts (keine Filter)</option>
+									<option value="7">Neue Episode in vergangenen 7 Tagen</option>
+									<option value="14">Neue Episode in vergangenen 2 Wochen</option>
+									<option value="31">Neue Episode im vergangenen Monat</option>
+								</select>
+								<p id="filter-count" class="invisible text-lg md:text-base mt-2 md:mt-0 md:ml-4 text-coolGray-500 font-medium">
+									<span id="filter-count-match"></span> von <span id="filter-count-total"></span> Podcasts angezeigt.
+								</p>
+							</div>
+						</div>
+					</div>
 				</div>
 			</section>
 
 			{germanTechPodcasts.map((podcast) => <TechPodcastPreview podcast={podcast} /> )}
 
+			<section id="no-filter-match" class="hidden pt-24 pb-4 bg-coolGray-50" style="background-image: url('/images/elements/pattern-light-big.svg'); background-position: center;">
+				<div class="container px-4 mx-auto">
+					<div class="mb-8 text-center">
+						<h3 class="mb-4 text-xl md:text-3xl leading-tight text-coolGray-900 font-bold tracking-tighter">
+							Leider passt kein Podcast zu deinen Filterkriterien :(
+						</h3>
+					</div>
+				</div>
+			</section>
+
 			<section class="py-24 bg-coolGray-50" style="background-image: url('/images/elements/pattern-light-big.svg'); background-position: center;">
 				<div class="container px-4 mx-auto">
 					<div class="mb-16 text-center">
 						<h3 class="mb-4 text-3xl md:text-5xl leading-tight text-coolGray-900 font-bold tracking-tighter">
-						Dein Lieblingspodcast fehlt?
+							Dein Lieblingspodcast fehlt?
 						</h3>
 						<a class="flex items-center justify-center py-2 px-4 m-auto text-sm leading-5 text-yellow-50 font-medium bg-yellow-500 hover:bg-yellow-600 focus:ring-2 focus:ring-yellow-500 focus:ring-opacity-50 md:max-w-max rounded-md" href="https://github.com/EngineeringKiosk/GermanTechPodcasts/blob/main/CONTRIBUTING.md">
 							Sende uns ein Pull-Request auf GitHub <img class="ml-2 w-8" src="/images/brands/github-black.svg" alt="Deutschsprachige Tech Podcasts auf GitHub" title="Deutschsprachige Tech Podcasts auf GitHub">

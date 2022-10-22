@@ -7,7 +7,24 @@ import { URLify } from "../scripts/urlify.js"
 import { formatDate, formatUnixTimestampToDate } from "../scripts/date.js"
 
 const { podcast } = Astro.props;
+const podcast_image = podcast.image.replace(/^.*[\\\/]/, '')
 
+let tags = [];
+if (podcast.tags) {
+	tags = podcast.tags.map((element) => URLify(element));
+}
+
+/**
+ * getLastEpisodeStatus returns the status of the podcast based
+ * on when the last episode was published.
+ * There are three states:
+ * 	1. 🟢 active
+ * 	2. 🟡 delayed
+ * 	3. 🔴 inactive
+ *
+ * @param 	timestamp 	number 		The unix timestamp when the last episode was published
+ * @return				array		Index 0: Emojy to indicate the status, index 1: String to indicate the status
+ */
 function getLastEpisodeStatus(timestamp) {
 	let episode = new Date(timestamp * 1000);
 
@@ -28,15 +45,34 @@ function getLastEpisodeStatus(timestamp) {
 	return ["🟢", "active"]
 }
 
+let date_1 = new Date('10/25/2021');
+let date_2 = new Date();
+
+/**
+ * daysBetween calculates the number of days between
+ * dateOne and dateTwo.
+ *
+ * @return number
+ */
+function daysBetween(dateOne, dateTwo) {
+    const difference = dateOne.getTime() - dateTwo.getTime();
+    const days = Math.ceil(difference / (1000 * 3600 * 24));
+    return days;
+}
+
 let episode_status = getLastEpisodeStatus(podcast.latestEpisodePublished)
 let episode_status_emojy = episode_status[0]
-let episode_status_str = episode_status[1]
-let podcast_image = podcast.image.replace(/^.*[\\\/]/, '')
 
-let tags = [];
-if (podcast.tags) {
-	tags = podcast.tags.map((element) => URLify(element));
-}
+// data-* attribute to identify if this is an active or inactive podcast
+// - Attribute "data-publishing-episode-status"
+const dataEpisodePublishingStatus_str = episode_status[1]
+
+// data-* attribute to identify when was the last episide published (in number of days)
+// - Attribute "data-days-since-last-episode"
+const lastEpisodePublished = new Date(podcast.latestEpisodePublished * 1000);
+const today = new Date();
+const dataDaysSinceLastEpisode = daysBetween(today, lastEpisodePublished)
+
 // If a Podcast is not available on Apple Podcasts,
 // we add different css classes.
 let spotifyClassName = "m-4";
@@ -45,11 +81,11 @@ if (podcast.itunesID == 0) {
 }
 ---
 
-<section class="py-8 md:py-12 bg-white overflow-hidden" data-episode-status={episode_status_str} style="background-image: url('/images/elements/pattern-white.svg'); background-position: center;">
+<section class="tech-podcast py-8 md:py-12 bg-white overflow-hidden" data-days-since-last-episode={dataDaysSinceLastEpisode} data-publishing-episode-status={dataEpisodePublishingStatus_str} style="background-image: url('/images/elements/pattern-white.svg'); background-position: center;">
 	<div class="container px-4 mx-auto">
 		<div class="flex flex-wrap lg:items-center -mx-4">
 			<div class="w-full md:w-8/12 px-4 mb-16 md:mb-0">
-				{ tags.map((element) => <a class="inline-block py-px px-2 mb-4 text-xs leading-5 text-yellow-500 bg-yellow-100 font-medium uppercase rounded-full shadow-sm" href={`/deutsche-tech-podcasts/${(element.url)}-podcasts/`}>{element.name}</a>) }
+				{ tags.map((element) => <a class="inline-block py-px mr-2 px-2 mb-4 text-xs leading-5 text-yellow-500 bg-yellow-100 font-medium uppercase rounded-full shadow-sm" href={`/deutsche-tech-podcasts/${(element.url)}-podcasts/`}>{element.name}</a>) }
 				
 				<h2 class="mb-8 text-4xl md:text-5xl leading-tight text-coolGray-900 font-bold tracking-tighter">
 					<a href={podcast.website} class="hover:underline hover:text-yellow-500" title={`Website von ${podcast.name}`}>
