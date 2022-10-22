@@ -159,6 +159,20 @@ function filter() {
 	}
 
 	toggleNoFilterMatchMessage();
+	updateFilterCounter();
+}
+
+/**
+ * updateFilterCounter updates particular HTML tags on the page that
+ * indicates how many podcasts are available and how many are visible.
+ *
+ * @return void
+ */
+function updateFilterCounter() {
+	const totalPodcasts = getTotalPodcastCounter();
+	const visiblePodcasts = currentVisiblePodcastCounter();
+	document.getElementById("filter-count-match").innerText = visiblePodcasts;
+	document.getElementById("filter-count-total").innerText = totalPodcasts;
 }
 
 /**
@@ -168,7 +182,7 @@ function filter() {
  * @return void
  */
 function toggleNoFilterMatchMessage() {
-	const counter = currentPodcastCounter();
+	const counter = currentVisiblePodcastCounter();
 
 	// If there are no podcasts, matching all filter, show a small message
 	if (counter == 0) {
@@ -179,14 +193,14 @@ function toggleNoFilterMatchMessage() {
 }
 
 /**
- * currentPodcastCounter returns the number of podcasts visible on the page.
+ * currentVisiblePodcastCounter returns the number of podcasts visible on the page.
  * Filtered podcasts are not part of this counter, only visible ones.
  * 
  * @return number
  */
-function currentPodcastCounter() {
+function currentVisiblePodcastCounter() {
 	const elements = document.getElementsByClassName("tech-podcast");
-	let counter = elements.length;
+	let counter =  elements.length;
 	for (let elem of elements) {
 		if (elem.classList.contains("hidden")) {
 			counter -= 1;
@@ -196,10 +210,24 @@ function currentPodcastCounter() {
 	return counter;
 }
 
+/**
+ * getTotalPodcastCounter returns the number of podcasts available in the listing.
+ * Independent if visible or not.
+ *
+ * @return number
+ */
+function getTotalPodcastCounter() {
+	const elements = document.getElementsByClassName("tech-podcast");
+	return elements.length;
+}
+
 // Add event listener on the form filter elements
 window.addEventListener('DOMContentLoaded', (event) => {
 	// Make filter bar visible (only when javascript is activated)
 	document.getElementById("filter").classList.remove("invisible");
+	document.getElementById("filter-count").classList.remove("invisible");
 
 	addFilterListener();
+
+	updateFilterCounter();
 });
