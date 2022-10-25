@@ -55,7 +55,10 @@ image: /images/podcast/episode/42-lexer-parser-und-open-source-in-counterstrike.
 layout: ../../../layouts/podcast-episode.astro
 pubDate: '2022-10-25'
 spotify: https://open.spotify.com/episode/1OvywjCGrYah9AGX6w8Bnn
-tags: []
+tags:
+- Backend
+- Software Engineering
+- Open Source
 title: '#42 Lexer, Parser und Open Source in Counterstrike'
 
 ---
