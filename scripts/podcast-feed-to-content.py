@@ -153,6 +153,18 @@ def get_chapter_from_description(description):
     return chapter
 
 
+def remove_rel_nofollow_from_internal_links(html_content):
+    """
+    Removes all `rel="nofollow"` entries from https://engineeringkiosk.dev/*
+    links in {html_content}.
+    """
+    pattern = r'<a href="(https:\/\/engineeringkiosk.dev\/[^\s]*)" rel="nofollow">'
+    replacement = r'<a href="\1">'
+    new_html_content = re.sub(pattern, replacement, html_content)
+
+    return new_html_content
+
+
 def sync_podcast_episodes(rss_feed, path_md_files, path_img_files, spotify_client):
     """
     Syncs the Podcast Episodes from the RSS feed down to disk
@@ -238,6 +250,7 @@ def sync_podcast_episodes(rss_feed, path_md_files, path_img_files, spotify_clien
         #
         # Thats why we got rid of the prettify logic.
         html_content = description_html.strip()
+        html_content = remove_rel_nofollow_from_internal_links(html_content)
 
         chapter = get_chapter_from_description(description)
 
