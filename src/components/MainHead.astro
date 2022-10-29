@@ -6,9 +6,15 @@ export interface Props {
 	description: string;
 	image?: string;
 	canonicalURL?: string | URL;
+	ogType?: string;
 }
 
-const { title, description, image, canonicalURL } = Astro.props as Props;
+const { title, description, image, canonicalURL, ogType } = Astro.props as Props;
+
+let ogTypeValue = "website";
+if (ogType) {
+	ogTypeValue = ogType;
+}
 
 ---
 
@@ -38,8 +44,9 @@ const { title, description, image, canonicalURL } = Astro.props as Props;
 
 <link rel="canonical" href={canonicalURL} />
 
+<meta property="og:locale" content="de_DE" />
 <meta property="og:url" content={canonicalURL} >
-<meta property="og:type" content="website">
+<meta property="og:type" content={ogTypeValue}>
 <meta property="og:title" content={title} />
 <meta property="og:description" content={description} />
 {image && (<meta property="og:image" content={new URL(image, canonicalURL)}>)}

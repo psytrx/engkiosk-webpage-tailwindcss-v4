@@ -23,7 +23,7 @@ let tags = content.tags.map((element) => URLify(element));
 ---
 <html lang="de">
 	<head>
-		<MainHead title={title} description={content.description} image={content.thumbnail} {canonicalURL} />
+		<MainHead title={title} description={content.description} image={content.thumbnail} {canonicalURL} ogType="article" />
 	</head>
 
 	<body class="antialiased bg-body text-body font-body">

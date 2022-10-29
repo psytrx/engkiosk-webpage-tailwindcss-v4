@@ -38,7 +38,7 @@ let tags = content.tags.map((element) => URLify(element));
 
 <html lang="de">
 	<head>
-		<MainHead title={title} description={content.description} image={content.image} {canonicalURL} />
+		<MainHead title={title} description={content.description} image={content.image} {canonicalURL} ogType="article" />
 
 		<!-- https://github.com/embedly/player.js -->
 		<script type="text/javascript" src="/js/player-0.1.0.min.js"></script>
