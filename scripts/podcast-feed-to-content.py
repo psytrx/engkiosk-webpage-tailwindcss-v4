@@ -162,6 +162,10 @@ def remove_rel_nofollow_from_internal_links(html_content):
     replacement = r'<a href="\1">'
     new_html_content = re.sub(pattern, replacement, html_content)
 
+    pattern_jump = r'<a href="(https:\/\/jump\.engineeringkiosk.dev\/[^\s]*)" rel="nofollow">'
+    replacement = r'<a href="\1">'
+    new_html_content = re.sub(pattern_jump, replacement, new_html_content)
+
     return new_html_content
 
 
