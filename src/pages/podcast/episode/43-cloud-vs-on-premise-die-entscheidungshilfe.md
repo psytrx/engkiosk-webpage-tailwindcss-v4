@@ -1,6 +1,6 @@
 ---
 amazon_music: ''
-apple_podcasts: ''
+apple_podcasts: https://podcasts.apple.com/us/podcast/43-cloud-vs-on-premise-die-entscheidungshilfe/id1603082924?i=1000584604988&uo=4
 audio: https://stream.redcircle.com/episodes/724221b9-462b-43f2-8f5b-a340e8b287e6/stream.mp3
 chapter:
 - start: 00:00:00
@@ -35,7 +35,7 @@ chapter:
   title: Angst um den eigenen Job bei einer Cloud-Migration
 - start: 01:09:33
   title: Zusammenfassung und Outro
-deezer: ''
+deezer: https://www.deezer.com/episode/448812687
 description: "Wann ist die Cloud das richtige f\xFCr dich und deine Applikation? Oder\
   \ doch lieber alles selbst hosten? Die Cloud wird oft als \"die L\xF6sung\" f\xFC\
   r all deine Probleme beschrieben. Sie ist g\xFCnstig, man ben\xF6tigt weniger Personen\
@@ -54,7 +54,7 @@ headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts||feedback-gern
 image: /images/podcast/episode/43-cloud-vs-on-premise-die-entscheidungshilfe.jpg
 layout: ../../../layouts/podcast-episode.astro
 pubDate: '2022-11-01'
-spotify: ''
+spotify: https://open.spotify.com/episode/0dnDJc7pbW5BITUdk06UBj
 tags: []
 title: '#43 Cloud vs. On-Premise: Die Entscheidungshilfe'
 
