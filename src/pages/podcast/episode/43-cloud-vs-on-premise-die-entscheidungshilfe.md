@@ -1,5 +1,5 @@
 ---
-amazon_music: ''
+amazon_music: https://music.amazon.com/podcasts/c35a09fe-4116-4e04-8f68-77d61b112e46/episodes/12958b17-a055-46ec-8d91-6579d133378e/engineering-kiosk-43-cloud-vs-on-premise-die-entscheidungshilfe
 apple_podcasts: https://podcasts.apple.com/us/podcast/43-cloud-vs-on-premise-die-entscheidungshilfe/id1603082924?i=1000584604988&uo=4
 audio: https://stream.redcircle.com/episodes/724221b9-462b-43f2-8f5b-a340e8b287e6/stream.mp3
 chapter:
@@ -55,7 +55,9 @@ image: /images/podcast/episode/43-cloud-vs-on-premise-die-entscheidungshilfe.jpg
 layout: ../../../layouts/podcast-episode.astro
 pubDate: '2022-11-01'
 spotify: https://open.spotify.com/episode/0dnDJc7pbW5BITUdk06UBj
-tags: []
+tags:
+- Backend
+- DevOps
 title: '#43 Cloud vs. On-Premise: Die Entscheidungshilfe'
 
 ---
