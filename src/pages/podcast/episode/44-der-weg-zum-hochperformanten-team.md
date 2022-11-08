@@ -56,7 +56,11 @@ image: /images/podcast/episode/44-der-weg-zum-hochperformanten-team.jpg
 layout: ../../../layouts/podcast-episode.astro
 pubDate: '2022-11-08'
 spotify: https://open.spotify.com/episode/73DOlh7BHnm4eHWrpsCyd8
-tags: []
+tags:
+- Leadership
+- Produktivität
+- Kommunikation
+- Team
 title: '#44 Der Weg zum hochperformanten Team'
 
 ---
