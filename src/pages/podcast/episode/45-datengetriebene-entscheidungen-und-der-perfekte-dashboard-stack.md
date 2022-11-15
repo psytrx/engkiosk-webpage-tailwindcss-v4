@@ -70,7 +70,10 @@ image: /images/podcast/episode/45-datengetriebene-entscheidungen-und-der-perfekt
 layout: ../../../layouts/podcast-episode.astro
 pubDate: '2022-11-15'
 spotify: https://open.spotify.com/episode/14VyCluZF359l24qMcAN9a
-tags: []
+tags:
+- Tech Kultur
+- Kommunikation
+- Knowledge Sharing
 title: '#45 Datengetriebene Entscheidungen und der perfekte Dashboard Stack'
 
 ---
