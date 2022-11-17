@@ -41,11 +41,15 @@ let lastEpisodeTitleShort = truncate(episode.frontmatter.title, 27, '...');
 				  <div class="container px-4 mx-auto">
 					  <div class="flex flex-wrap xl:items-center -mx-4">
 						  <div class="w-full md:w-1/2 px-4 mb-16 md:mb-0">
-							  <span class="inline-block py-px px-2 mb-4 text-xs leading-5 text-white bg-yellow-500 uppercase rounded-9xl">
-                  Engineering Kiosk
-                </span>
-								<h1 class="mb-6 text-3xl md:text-5xl lg:text-6xl leading-tight font-bold tracking-tight">
-									Der deutschsprachige Software-Engineering-Podcast
+								<h1>
+                  <div>
+                    <span class="inline-block w-auto py-px px-2 mb-4 text-xs leading-5 text-white bg-yellow-500 uppercase rounded-9xl">
+                      Engineering Kiosk
+                    </span>
+                  </div>
+                  <span class="block mb-6 text-3xl md:text-5xl lg:text-6xl leading-tight font-bold tracking-tight">
+                    Der deutschsprachige Software-Engineering-Podcast
+                  </span>
 								</h1>
 								<p class="mb-8 text-lg md:text-xl text-coolGray-500 font-medium">
 									Der Engineering Kiosk ist der deutschsprachige Software-Engineering-Podcast mit <a href="/kiosk-betreiber/wolfgang-gassler/">Wolfgang Gassler</a> und <a href="/kiosk-betreiber/andy-grunwald/">Andy Grunwald</a> rund um die Themen Engineering-Kultur, Open Source, Menschen, Technologie und allen anderen Bereichen, die damit in Verbindung stehen.
@@ -218,9 +222,9 @@ let lastEpisodeTitleShort = truncate(episode.frontmatter.title, 27, '...');
 
 	    <section id="jetzt-folgen" class="py-24 md:py-32 bg-coolGray-900 overflow-hidden" style="background-image: url('/images/elements/pattern-dark2.svg'); background-position: center;">
         <div class="container px-4 mx-auto flex flex-col items-center">
-          <h1 class="mb-8 font-bold leading-tight text-white text-4xl md:text-5xl tracking-tighter">
+          <h3 class="mb-8 font-bold leading-tight text-white text-4xl md:text-5xl tracking-tighter">
             Jetzt hören auf...
-          </h1>
+          </h3>
           <div class="flex flex-wrap justify-center px-10 mt-8">
             <div class="m-4">
               <a class="flex items-center" href={podcastInfo.platformLinks.appleMusic} title="Engineering Kiosk bei Apple Podcasts">
