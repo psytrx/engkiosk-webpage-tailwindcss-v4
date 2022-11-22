@@ -53,7 +53,10 @@ image: "/images/podcast/episode/46-welches-problem-l\xF6st-docker.jpg"
 layout: ../../../layouts/podcast-episode.astro
 pubDate: '2022-11-22'
 spotify: https://open.spotify.com/episode/73X8j3ZGWK5lU0FlWmsQgx
-tags: []
+tags:
+- Backend
+- DevOps
+- Open Source
 title: "#46 Welches Problem l\xF6st Docker?"
 
 ---
