@@ -23,7 +23,7 @@ let description = cutText(frontmatter.description, descriptionChars);
 	<p class="mb-2 text-coolGray-500 font-medium">
 		<time class="date" datetime={frontmatter.pubDate}>{formatDate(frontmatter.pubDate)}</time>
 	</p>
-	<a href={episode.url}>
+	<a href={episode.url} title={frontmatter.title}>
 		<h2 class="inline-block mb-4 text-2xl leading-tight text-coolGray-800 hover:text-coolGray-900 font-bold hover:underline">{frontmatter.title}</h2>
 	</a>
 	<p class="mb-4 text-base md:text-lg text-coolGray-400 font-medium">
