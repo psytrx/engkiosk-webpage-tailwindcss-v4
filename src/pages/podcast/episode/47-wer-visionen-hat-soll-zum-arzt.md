@@ -68,7 +68,10 @@ image: /images/podcast/episode/47-wer-visionen-hat-soll-zum-arzt.jpg
 layout: ../../../layouts/podcast-episode.astro
 pubDate: '2022-11-29'
 spotify: https://open.spotify.com/episode/74ZcfDHMTLn5jlP8pG7M97
-tags: []
+tags:
+- Team
+- Kommunikation
+- Leadership
 title: '#47 Wer Visionen hat, soll zum Arzt!?'
 
 ---
