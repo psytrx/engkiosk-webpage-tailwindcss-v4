@@ -57,7 +57,10 @@ image: /images/podcast/episode/48-der-layer-unter-docker-containerd-kubernetes-c
 layout: ../../../layouts/podcast-episode.astro
 pubDate: '2022-12-06'
 spotify: ''
-tags: []
+tags:
+- Backend
+- DevOps
+- Open Source
 title: '#48 Der Layer unter Docker: containerd, Kubernetes, Container Runtime Interface,
   CRI-O und Open Container Initiative (OCI)'
 
