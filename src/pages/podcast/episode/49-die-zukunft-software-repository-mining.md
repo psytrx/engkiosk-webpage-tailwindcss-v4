@@ -70,7 +70,11 @@ image: /images/podcast/episode/49-die-zukunft-software-repository-mining.jpg
 layout: ../../../layouts/podcast-episode.astro
 pubDate: '2022-12-13'
 spotify: https://open.spotify.com/episode/2Oac8OLuJP9xo6dRSEn9ZT
-tags: []
+tags:
+- Backend
+- Software Engineering
+- Datenbanken
+- Produktivität
 title: '#49 Die Zukunft: Software Repository Mining'
 
 ---
