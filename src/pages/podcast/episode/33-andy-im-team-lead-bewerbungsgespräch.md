@@ -51,6 +51,7 @@ headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts||feedback-gern
   (gerne auch als Voice Message)
 image: "/images/podcast/episode/33-andy-im-team-lead-bewerbungsgespr\xE4ch.jpg"
 layout: ../../../layouts/podcast-episode.astro
+length_second: 3654
 pubDate: '2022-08-23'
 spotify: https://open.spotify.com/episode/2wPjvgc95eajkGJMhlmXFG
 tags:

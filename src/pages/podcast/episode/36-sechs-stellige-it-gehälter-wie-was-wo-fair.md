@@ -49,6 +49,7 @@ headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts||feedback-gern
   (gerne auch als Voice Message)
 image: "/images/podcast/episode/36-sechs-stellige-it-geh\xE4lter-wie-was-wo-fair.jpg"
 layout: ../../../layouts/podcast-episode.astro
+length_second: 3255
 pubDate: '2022-09-13'
 spotify: https://open.spotify.com/episode/3FRoRTN1kQMSwmlcUQnkL3
 tags:

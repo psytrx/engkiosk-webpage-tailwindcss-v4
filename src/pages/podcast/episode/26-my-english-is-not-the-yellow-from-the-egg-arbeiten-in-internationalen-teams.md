@@ -63,6 +63,7 @@ google_podcasts: https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5yZWRjaXJjbG
 headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts
 image: /images/podcast/episode/26-my-english-is-not-the-yellow-from-the-egg-arbeiten-in-internationalen-teams.jpg
 layout: ../../../layouts/podcast-episode.astro
+length_second: 3970
 pubDate: '2022-07-05'
 spotify: https://open.spotify.com/episode/0S8AoLpiO35S3Lc06mKmQz
 tags:

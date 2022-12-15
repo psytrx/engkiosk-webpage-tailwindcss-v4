@@ -59,6 +59,7 @@ headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts||feedback-gern
   (gerne auch als Voice Message)
 image: "/images/podcast/episode/41-sql-injections-ein-untersch\xE4tztes-risiko.jpg"
 layout: ../../../layouts/podcast-episode.astro
+length_second: 4117
 pubDate: '2022-10-18'
 spotify: https://open.spotify.com/episode/33PP79EzBWrsQ5aZqqzlTw
 tags:

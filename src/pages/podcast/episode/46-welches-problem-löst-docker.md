@@ -51,6 +51,7 @@ headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts||feedback-gern
   (gerne auch als Voice Message)
 image: "/images/podcast/episode/46-welches-problem-l\xF6st-docker.jpg"
 layout: ../../../layouts/podcast-episode.astro
+length_second: 3305
 pubDate: '2022-11-22'
 spotify: https://open.spotify.com/episode/73X8j3ZGWK5lU0FlWmsQgx
 tags:

@@ -66,6 +66,7 @@ headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts||feedback-gern
 image: "/images/podcast/episode/30-ist-ein-informatikstudium-sinnvoll-welche-ausbildung-f\xFC\
   r-devs.jpg"
 layout: ../../../layouts/podcast-episode.astro
+length_second: 3936
 pubDate: '2022-08-02'
 spotify: https://open.spotify.com/episode/3XW8vkTOnDwbO1Y2O6HDsN
 tags:

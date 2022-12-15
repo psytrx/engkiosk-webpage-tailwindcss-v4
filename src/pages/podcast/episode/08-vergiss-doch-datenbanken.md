@@ -60,6 +60,7 @@ google_podcasts: https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5yZWRjaXJjbG
 headlines: "links::Links||erwahnte-personen::Erw\xE4hnte Personen||sprungmarken::Sprungmarken||hosts::Hosts"
 image: /images/podcast/episode/08-vergiss-doch-datenbanken.jpg
 layout: ../../../layouts/podcast-episode.astro
+length_second: 3167
 pubDate: '2022-03-01'
 spotify: https://open.spotify.com/episode/49HSkGcpuzL3yTbEsguOMB
 tags:

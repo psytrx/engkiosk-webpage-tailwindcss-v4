@@ -66,6 +66,7 @@ google_podcasts: https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5yZWRjaXJjbG
 headlines: links::Links||anderes::Anderes||sprungmarken::Sprungmarken||hosts::Hosts
 image: /images/podcast/episode/07-die-freelance-freiheit.jpg
 layout: ../../../layouts/podcast-episode.astro
+length_second: 3841
 pubDate: '2022-02-22'
 spotify: https://open.spotify.com/episode/5RCZ1mHsBVN83lWXu49xqQ
 tags:

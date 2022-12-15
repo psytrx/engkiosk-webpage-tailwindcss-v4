@@ -53,6 +53,7 @@ google_podcasts: https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5yZWRjaXJjbG
 headlines: "sprungmarken::Sprungmarken||erwahnte-personen::Erw\xE4hnte Personen||hosts::Hosts"
 image: "/images/podcast/episode/01-side-projects-fluch-oder-segen-f\xFCr-die-karriere.jpg"
 layout: ../../../layouts/podcast-episode.astro
+length_second: 2782
 pubDate: '2022-01-03'
 spotify: https://open.spotify.com/episode/0uT54qYXLeoYPIerWNK6WY
 tags:

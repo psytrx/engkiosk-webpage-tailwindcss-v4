@@ -51,6 +51,7 @@ google_podcasts: https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5yZWRjaXJjbG
 headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts
 image: /images/podcast/episode/20-off-boarding-und-on-boarding-wie-verlasse-ich-eine-firma-richtig.jpg
 layout: ../../../layouts/podcast-episode.astro
+length_second: 4402
 pubDate: '2022-05-24'
 spotify: https://open.spotify.com/episode/3H3C7ZKN2XsoJGBh8f5zRn
 tags:

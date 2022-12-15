@@ -57,6 +57,7 @@ google_podcasts: https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5yZWRjaXJjbG
 headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts
 image: /images/podcast/episode/12-make-oder-buy.jpg
 layout: ../../../layouts/podcast-episode.astro
+length_second: 3583
 pubDate: '2022-03-29'
 spotify: https://open.spotify.com/episode/7xXnR8rP8gB25P9dQkvVQk
 tags:

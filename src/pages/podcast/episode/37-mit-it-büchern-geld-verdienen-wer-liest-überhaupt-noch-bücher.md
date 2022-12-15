@@ -68,6 +68,7 @@ headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts||feedback-gern
 image: "/images/podcast/episode/37-mit-it-b\xFCchern-geld-verdienen-wer-liest-\xFC\
   berhaupt-noch-b\xFCcher.jpg"
 layout: ../../../layouts/podcast-episode.astro
+length_second: 3621
 pubDate: '2022-09-20'
 spotify: https://open.spotify.com/episode/3KlgP1cJSP9DTFab6DFxLF
 tags:

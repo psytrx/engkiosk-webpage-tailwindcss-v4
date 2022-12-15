@@ -51,6 +51,7 @@ headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts||feedback-gern
   (gerne auch als Voice Message)
 image: /images/podcast/episode/38-monitoring-metriken-tracing-alerting-observability.jpg
 layout: ../../../layouts/podcast-episode.astro
+length_second: 3350
 pubDate: '2022-09-27'
 spotify: https://open.spotify.com/episode/6o12Q11f95KuKYytqmis6u
 tags:

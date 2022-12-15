@@ -45,6 +45,7 @@ google_podcasts: https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5yZWRjaXJjbG
 headlines: "links::Links||erwahnte-personen::Erw\xE4hnte Personen||sprungmarken::Sprungmarken||hosts::Hosts"
 image: "/images/podcast/episode/06-hype-oder-hope-job-titel-und-bef\xF6rderungen.jpg"
 layout: ../../../layouts/podcast-episode.astro
+length_second: 3133
 pubDate: '2022-02-15'
 spotify: https://open.spotify.com/episode/4mkmeVaXD6u8Tf9mpcBWd4
 tags:
