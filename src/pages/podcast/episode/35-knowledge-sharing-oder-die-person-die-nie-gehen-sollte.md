@@ -55,6 +55,7 @@ headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts||feedback-gern
   (gerne auch als Voice Message)
 image: /images/podcast/episode/35-knowledge-sharing-oder-die-person-die-nie-gehen-sollte.jpg
 layout: ../../../layouts/podcast-episode.astro
+length_second: 3784
 pubDate: '2022-09-06'
 spotify: https://open.spotify.com/episode/4oZ8sFzPQHMypISi7qmGSR
 tags:

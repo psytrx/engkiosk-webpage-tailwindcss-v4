@@ -55,6 +55,7 @@ google_podcasts: https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5yZWRjaXJjbG
 headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts
 image: /images/podcast/episode/14-async-und-await-asynchrones-arbeiten-im-alltag.jpg
 layout: ../../../layouts/podcast-episode.astro
+length_second: 3389
 pubDate: '2022-04-12'
 spotify: https://open.spotify.com/episode/2efebNjDPhMZBjGC78z9fg
 tags:

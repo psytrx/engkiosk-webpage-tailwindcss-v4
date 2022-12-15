@@ -53,6 +53,7 @@ headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts||feedback-gern
   (gerne auch als Voice Message)
 image: /images/podcast/episode/43-cloud-vs-on-premise-die-entscheidungshilfe.jpg
 layout: ../../../layouts/podcast-episode.astro
+length_second: 4264
 pubDate: '2022-11-01'
 spotify: https://open.spotify.com/episode/0dnDJc7pbW5BITUdk06UBj
 tags:

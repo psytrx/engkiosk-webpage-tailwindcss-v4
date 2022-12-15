@@ -53,6 +53,7 @@ headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts||feedback-gern
   (gerne auch als Voice Message)
 image: /images/podcast/episode/42-lexer-parser-und-open-source-in-counterstrike.jpg
 layout: ../../../layouts/podcast-episode.astro
+length_second: 3218
 pubDate: '2022-10-25'
 spotify: https://open.spotify.com/episode/1OvywjCGrYah9AGX6w8Bnn
 tags:

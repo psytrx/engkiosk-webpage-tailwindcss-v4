@@ -68,6 +68,7 @@ headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts||feedback-gern
   (gerne auch als Voice Message)
 image: /images/podcast/episode/45-datengetriebene-entscheidungen-und-der-perfekte-dashboard-stack.jpg
 layout: ../../../layouts/podcast-episode.astro
+length_second: 3068
 pubDate: '2022-11-15'
 spotify: https://open.spotify.com/episode/14VyCluZF359l24qMcAN9a
 tags:

@@ -61,6 +61,7 @@ google_podcasts: https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5yZWRjaXJjbG
 headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts
 image: "/images/podcast/episode/00-developer-fangen-bei-0-an-zu-z\xE4hlen.jpg"
 layout: ../../../layouts/podcast-episode.astro
+length_second: 1751
 pubDate: '2022-02-08'
 spotify: https://open.spotify.com/episode/4TZwqBTtO2fNDt8XjQXjuR
 tags: []

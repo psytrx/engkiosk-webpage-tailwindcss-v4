@@ -55,6 +55,7 @@ headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts||feedback-gern
   (gerne auch als Voice Message)
 image: /images/podcast/episode/48-der-layer-unter-docker-containerd-kubernetes-container-runtime-interface-cri-o-und-open-container-initiative-oci.jpg
 layout: ../../../layouts/podcast-episode.astro
+length_second: 2264
 pubDate: '2022-12-06'
 spotify: https://open.spotify.com/episode/3K3nMEPuTCd6sxi4JQXIVO
 tags:

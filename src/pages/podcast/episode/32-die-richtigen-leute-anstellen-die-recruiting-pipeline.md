@@ -50,6 +50,7 @@ headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts||feedback-gern
   (gerne auch als Voice Message)
 image: /images/podcast/episode/32-die-richtigen-leute-anstellen-die-recruiting-pipeline.jpg
 layout: ../../../layouts/podcast-episode.astro
+length_second: 3868
 pubDate: '2022-08-16'
 spotify: https://open.spotify.com/episode/0B3LoAAfZbllsTw1KyYIjx
 tags:

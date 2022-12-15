@@ -77,6 +77,7 @@ google_podcasts: https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5yZWRjaXJjbG
 headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts
 image: "/images/podcast/episode/19-datenbank-deepdive-oder-das-ende-einer-\xE4ra-von-redis-bis-clickhouse.jpg"
 layout: ../../../layouts/podcast-episode.astro
+length_second: 3842
 pubDate: '2022-05-17'
 spotify: https://open.spotify.com/episode/2BoVJYXWCOoK9w31nZaevF
 tags:

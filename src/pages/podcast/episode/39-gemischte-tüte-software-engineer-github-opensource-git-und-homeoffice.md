@@ -33,6 +33,7 @@ headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts||feedback-gern
   (gerne auch als Voice Message)
 image: "/images/podcast/episode/39-gemischte-t\xFCte-software-engineer-github-opensource-git-und-homeoffice.jpg"
 layout: ../../../layouts/podcast-episode.astro
+length_second: 2866
 pubDate: '2022-10-04'
 spotify: https://open.spotify.com/episode/11sFbhhPfqhw5ICp85CnDN
 tags:

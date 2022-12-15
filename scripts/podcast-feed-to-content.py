@@ -203,7 +203,7 @@ def sync_podcast_episodes(rss_feed, path_md_files, path_img_files, spotify_clien
 
     logging.info("Requesting content from Podcast sites ...")
     apple_podcast_content = get_json_content_from_url(PODCAST_APPLE_URL)
-    spotify_episodes = spotify_client.show_episodes(SPOTIFY_SHOW_ID, limit=15, offset=0, market="DE")
+    spotify_episodes = spotify_client.show_episodes(SPOTIFY_SHOW_ID, limit=50, offset=0, market="DE")
     google_podcast_content = get_raw_content_from_url(PODCAST_GOOGLE_URL)
 
     # Pagination and auth not respected.
@@ -319,6 +319,15 @@ def sync_podcast_episodes(rss_feed, path_md_files, path_img_files, spotify_clien
         filename = slugify(title, True)
         filename = f'{filename}.md'
 
+        spotify_episode = get_episode_from_spotify(spotify_episodes, title)
+        length_second = 0
+        spotify_link = ""
+        if spotify_episode is not None:
+            length_second = spotify_episode["duration_ms"] / 1000
+            length_second = int(length_second)
+
+            spotify_link = spotify_episode["external_urls"]["spotify"]
+
         data = {
             'layout': '../../../layouts/podcast-episode.astro',
             'title': title,
@@ -328,12 +337,13 @@ def sync_podcast_episodes(rss_feed, path_md_files, path_img_files, spotify_clien
             'description': description_short,
             'headlines': headline_info,
             'chapter': chapter,
-            'spotify': get_episode_link_from_spotify(spotify_episodes, title),
+            'spotify': spotify_link,
             'google_podcasts': get_episode_link_from_google(google_podcast_content, title),
             'apple_podcasts': get_episode_link_from_apple(apple_podcast_content, title),
             'amazon_music': '',
             'deezer': get_episode_link_from_deezer(deezer_episodes, title),
             'tags': [],
+            'length_second': length_second,
         }
 
         full_file_path = f'{path_md_files}/{filename}'
@@ -357,6 +367,7 @@ def sync_podcast_episodes(rss_feed, path_md_files, path_img_files, spotify_clien
                     'amazon_music',
                     'deezer',
                     'tags',
+                    'length_second',
                 ]
                 for key in keys_to_keep:
                     val = episode.get(key)
@@ -524,7 +535,7 @@ def create_spotify_client(app_id: str, app_secret: str):
     return spotify_client
 
 
-def get_episode_link_from_spotify(episodes, title: str) -> str:
+def get_episode_from_spotify(episodes, title: str) -> dict:
     """
     Parses the Spotify Episode Single View link (matching with title) from episodes list.
     episodes is a JSON representation from the Spotify API / Engineering Kiosk Show.
@@ -532,12 +543,12 @@ def get_episode_link_from_spotify(episodes, title: str) -> str:
 
     If no title matches, it will return an empty string.
     """
-    u = ""
+    e = None
     for episode in episodes["items"]:
         if episode["name"] == title:
-            u = episode["external_urls"]["spotify"]
+            e = episode
 
-    return u
+    return e
 
 
 def get_episode_link_from_deezer(episodes, title: str) -> str:

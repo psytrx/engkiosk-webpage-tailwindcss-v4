@@ -68,13 +68,14 @@ headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts||feedback-gern
   (gerne auch als Voice Message)
 image: /images/podcast/episode/49-die-zukunft-software-repository-mining.jpg
 layout: ../../../layouts/podcast-episode.astro
+length_second: 3295
 pubDate: '2022-12-13'
 spotify: https://open.spotify.com/episode/2Oac8OLuJP9xo6dRSEn9ZT
 tags:
 - Backend
 - Software Engineering
 - Datenbanken
-- Produktivität
+- "Produktivit\xE4t"
 title: '#49 Die Zukunft: Software Repository Mining'
 
 ---

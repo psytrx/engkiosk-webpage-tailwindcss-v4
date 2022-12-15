@@ -78,6 +78,7 @@ headlines: "sprungmarken::Sprungmarken||erwahnte-side-projects::Erw\xE4hnte Side
   hnte Technologien||anderes::Anderes||erwahnte-personen::Erw\xE4hnte Personen||hosts::Hosts"
 image: /images/podcast/episode/02-technologienzoo-side-projects.jpg
 layout: ../../../layouts/podcast-episode.astro
+length_second: 2690
 pubDate: '2022-01-10'
 spotify: https://open.spotify.com/episode/1OEVURealPs0TxTg4DGLFR
 tags:

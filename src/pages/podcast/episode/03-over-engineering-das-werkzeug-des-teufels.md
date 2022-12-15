@@ -64,6 +64,7 @@ google_podcasts: https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5yZWRjaXJjbG
 headlines: sprungmarken::Sprungmarken||artikel::Artikel||konzepte::Konzepte||projekte::Projekte
 image: /images/podcast/episode/03-over-engineering-das-werkzeug-des-teufels.jpg
 layout: ../../../layouts/podcast-episode.astro
+length_second: 3079
 pubDate: '2022-01-18'
 spotify: https://open.spotify.com/episode/7HI6NDwFJnM0w7W8xYjGqG
 tags:

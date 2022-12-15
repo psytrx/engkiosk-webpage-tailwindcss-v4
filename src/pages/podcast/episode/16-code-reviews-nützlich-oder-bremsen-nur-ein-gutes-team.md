@@ -76,6 +76,7 @@ google_podcasts: https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5yZWRjaXJjbG
 headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts
 image: "/images/podcast/episode/16-code-reviews-n\xFCtzlich-oder-bremsen-nur-ein-gutes-team.jpg"
 layout: ../../../layouts/podcast-episode.astro
+length_second: 3543
 pubDate: '2022-04-26'
 spotify: https://open.spotify.com/episode/12JJPgrlzpQmrLWEiqT1mR
 tags:

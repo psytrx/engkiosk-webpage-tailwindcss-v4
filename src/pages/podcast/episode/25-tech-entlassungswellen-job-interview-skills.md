@@ -59,6 +59,7 @@ google_podcasts: https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5yZWRjaXJjbG
 headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts
 image: /images/podcast/episode/25-tech-entlassungswellen-job-interview-skills.jpg
 layout: ../../../layouts/podcast-episode.astro
+length_second: 4376
 pubDate: '2022-06-28'
 spotify: https://open.spotify.com/episode/5vSicTXfw07adEdvQGPQUd
 tags:

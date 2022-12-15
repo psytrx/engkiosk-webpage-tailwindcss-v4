@@ -53,6 +53,7 @@ headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts||feedback-gern
   (gerne auch als Voice Message)
 image: /images/podcast/episode/34-wie-cloudy-bist-du.jpg
 layout: ../../../layouts/podcast-episode.astro
+length_second: 2959
 pubDate: '2022-08-30'
 spotify: https://open.spotify.com/episode/4DfOEf84e1ajgtH5CV4YCH
 tags:
