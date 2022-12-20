@@ -61,7 +61,11 @@ layout: ../../../layouts/podcast-episode.astro
 length_second: 3450
 pubDate: '2022-12-20'
 spotify: https://open.spotify.com/episode/6dEGdTNQQccrebtuKHMkQa
-tags: []
+tags:
+- Team
+- Tech Kultur
+- Kommunikation
+- Leadership
 title: "#50 DEI erh\xF6ht Innovation und den finanziellen Erfolg"
 
 ---
