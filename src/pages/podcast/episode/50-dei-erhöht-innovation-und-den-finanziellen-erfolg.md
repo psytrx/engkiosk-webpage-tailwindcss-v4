@@ -1,6 +1,6 @@
 ---
-amazon_music: ''
-apple_podcasts: ''
+amazon_music: https://music.amazon.com/podcasts/c35a09fe-4116-4e04-8f68-77d61b112e46/episodes/c9901f96-855e-4694-83a1-42454d2e94d7/engineering-kiosk-50-dei-erh%C3%B6ht-innovation-und-den-finanziellen-erfolg
+apple_podcasts: https://podcasts.apple.com/de/podcast/50-dei-erh%C3%B6ht-innovation-und-den-finanziellen-erfolg/id1603082924?i=1000590704508
 audio: https://stream.redcircle.com/episodes/dec7248a-aa64-4e44-9cd8-e3ff49fd1abc/stream.mp3
 chapter:
 - start: 00:00:00
