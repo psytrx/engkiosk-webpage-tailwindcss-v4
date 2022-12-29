@@ -79,9 +79,12 @@ let spotifyClassName = "m-4";
 if (podcast.itunesID == 0) {
 	spotifyClassName = "mb-4 mt-4 mr-4";
 }
+
+// Generate id based on the name
+const nameId = URLify(podcast.name);
 ---
 
-<section class="tech-podcast py-8 md:py-12 bg-white overflow-hidden" data-days-since-last-episode={dataDaysSinceLastEpisode} data-publishing-episode-status={dataEpisodePublishingStatus_str} style="background-image: url('/images/elements/pattern-white.svg'); background-position: center;">
+<section id={nameId.url} class="tech-podcast py-8 md:py-12 bg-white overflow-hidden" data-days-since-last-episode={dataDaysSinceLastEpisode} data-publishing-episode-status={dataEpisodePublishingStatus_str} style="background-image: url('/images/elements/pattern-white.svg'); background-position: center;">
 	<div class="container px-4 mx-auto">
 		<div class="flex flex-wrap lg:items-center -mx-4">
 			<div class="w-full md:w-8/12 px-4 mb-16 md:mb-0">
