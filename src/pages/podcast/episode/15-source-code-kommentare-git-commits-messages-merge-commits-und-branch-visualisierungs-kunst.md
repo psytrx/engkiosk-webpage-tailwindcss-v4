@@ -78,7 +78,7 @@ pubDate: '2022-04-19'
 spotify: https://open.spotify.com/episode/28UhEK728kyETTyqcNb6hP
 tags:
 - Team
-- "Qualit\xE4t"
+- "Software Qualit\xE4t"
 - Software Engineering
 title: '#15  Source Code Kommentare, Git Commits Messages, Merge Commits und Branch-Visualisierungs-Kunst'
 
