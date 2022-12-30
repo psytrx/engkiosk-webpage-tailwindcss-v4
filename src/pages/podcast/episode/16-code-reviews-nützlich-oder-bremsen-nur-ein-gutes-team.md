@@ -81,7 +81,7 @@ pubDate: '2022-04-26'
 spotify: https://open.spotify.com/episode/12JJPgrlzpQmrLWEiqT1mR
 tags:
 - Team
-- "Qualit\xE4t"
+- "Software Qualit\xE4t"
 - Frontend
 - Backend
 - Software Engineering
