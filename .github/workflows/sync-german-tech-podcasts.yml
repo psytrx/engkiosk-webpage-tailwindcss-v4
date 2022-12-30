@@ -23,6 +23,9 @@ jobs:
       - name: Run make sync-german-tech-podcasts
         run: make sync-german-tech-podcasts
 
+      - name: Run make generate-german-tech-podcasts-opml-file
+        run: make generate-german-tech-podcasts-opml-file
+
       # Commit results back to repository
       - uses: stefanzweifel/git-auto-commit-action@v4
         env:
