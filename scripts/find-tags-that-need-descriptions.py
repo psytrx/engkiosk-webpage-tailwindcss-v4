@@ -204,7 +204,10 @@ if __name__ == "__main__":
     # Updating the local JSON tag file:
     #   - updating the usage count
     for t in tag_descriptions:
-        usage_count = tags[t]
+        usage_count = 0
+        if t in tags:
+            usage_count = tags[t]
+
         tag_descriptions[t]["usage_count"] = usage_count
 
     # Finally write the file
