@@ -1,3 +1,4 @@
+from datetime import datetime
 import os
 import logging
 import json
@@ -18,7 +19,7 @@ def generate_opml_file(merged_json_file_path, storage_path):
     head = ET.SubElement(opml, "head")
 
     ET.SubElement(head, "title").text = "Deutschsprachige Tech Podcasts"
-    ET.SubElement(head, "dateCreated").text = "TODO DATUM"
+    ET.SubElement(head, "dateCreated").text = datetime.now().isoformat()
     ET.SubElement(head, "ownerName").text = "Engineering Kiosk"
     ET.SubElement(head, "ownerEmail").text = "stehtisch@engineeringkiosk.dev"
 
