@@ -637,3 +637,8 @@ force = true
 [build]
 publish = "dist/"
 command = "astro build"
+
+[[headers]]
+  for = "/deutsche-tech-podcasts/podcasts.opml"
+  [headers.values]
+    Content-Type = "text/x-opml"
