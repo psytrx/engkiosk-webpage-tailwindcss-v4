@@ -12,11 +12,13 @@ GIT_REPO = "https://github.com/EngineeringKiosk/GermanTechPodcasts.git"
 GIT_REPO_NAME = "GermanTechPodcasts"
 JSON_PATH_IN_GIT_REPO = "generated"
 IMAGES_PATH_IN_GIT_REPO = "generated/images"
+OPML_FILE_PATH_IN_GIT_REPO = "podcasts.opml"
 PODCAST_JSON_FILE = 'src/data/german-tech-podcasts.json'
 IMAGE_STORAGE = "public/images/german-tech-podcasts/"
+OPML_STORAGE = "public/deutsche-tech-podcasts/podcasts.opml"
 
 
-def sync_german_tech_podcasts(merged_json_file_path, image_storage_path):
+def sync_german_tech_podcasts(merged_json_file_path, image_storage_path, opml_storage_path):
     tmp_dir = tempfile.gettempdir()
     tmp_clone_dir = os.path.join(tmp_dir, GIT_REPO_NAME)
     
@@ -68,6 +70,13 @@ def sync_german_tech_podcasts(merged_json_file_path, image_storage_path):
             resized_image = image_to_resize.resize((700, 700))
             resized_image.save(dst)
 
+    # Copy OPML file over
+    # Existing files will be replaced.
+    src = os.path.join(tmp_clone_dir, OPML_FILE_PATH_IN_GIT_REPO)
+    logging.info(f"Copying {src} to {opml_storage_path} ...")
+    shutil.copy2(src, opml_storage_path)
+    logging.info(f"Copying {src} to {opml_storage_path} ... done")
+
     # Removing git clone
     logging.info(f"Removing cloned repository from merged JSON file {tmp_clone_dir}...")
     shutil.rmtree(tmp_clone_dir)
@@ -95,5 +104,6 @@ if __name__ == "__main__":
 
     merged_json_file_path = f"{folder_prefix}{PODCAST_JSON_FILE}"
     image_storage_path = f"{folder_prefix}{IMAGE_STORAGE}"
+    opml_storage_path = f"{folder_prefix}{OPML_STORAGE}"
 
-    sync_german_tech_podcasts(merged_json_file_path, image_storage_path)
+    sync_german_tech_podcasts(merged_json_file_path, image_storage_path, opml_storage_path)
