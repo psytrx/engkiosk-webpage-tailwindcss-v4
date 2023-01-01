@@ -29,10 +29,6 @@ update-redirects: ## Writes all short url redirects for Podcast episodes to netl
 episode-check: ## Checks all Podcast Episodes if all player links (Spotify, etc.) are set
 	python ./scripts/empty-player-urls.py
 
-.PHONY: generate-german-tech-podcasts-opml-file
-generate-german-tech-podcasts-opml-file: ## Generates an OPML file of the german tech podasts
-	python ./scripts/generate-german-tech-podcasts-opml.py
-
 .PHONY: find-tags-that-need-descriptions-content-files
 find-tags-that-need-descriptions-content-files: ## Checks all used tags in content files (blog posts and podcasts) that need SEO descriptions and output them on stdout
 	python ./scripts/find-tags-that-need-descriptions.py website-content
