@@ -1,6 +1,6 @@
 ---
 amazon_music: https://music.amazon.com/podcasts/c35a09fe-4116-4e04-8f68-77d61b112e46/episodes/1f4e3a28-fb66-48c5-a59b-55aa5b4528fa/engineering-kiosk-52-asynchrone-verarbeitung-durch-message-queues---vor--und-nachteile
-apple_podcasts: ''
+apple_podcasts: https://podcasts.apple.com/de/podcast/52-asynchrone-verarbeitung-durch-message-queues-vor/id1603082924?i=1000591978596
 audio: https://stream.redcircle.com/episodes/5f100418-9dc0-463b-9033-bf99e1b6da3c/stream.mp3
 chapter:
 - start: 00:00:00
@@ -60,7 +60,7 @@ description: "Asynchrone Verarbeitung durch Message Queues: Was ist das und wof\
   \ Bonus: Warum Software rostet.  **** Diese Episode wird gesponsert vom Open-Source\
   \ F\xF6rderprogramm Media Tech Lab: Bewirb dich jetzt und erhalte bis zu 50.000\u20AC\
   \ F\xF6rdersumme f\xFCr dein Open-Source Projekt https://www.media-lab.de/de/media-tech-lab"
-google_podcasts: ''
+google_podcasts: https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5yZWRjaXJjbGUuY29tLzBlY2ZkZmQ3LWZkYTEtNGMzZC05NTE1LTQ3NjcyN2Y5ZGY1ZQ/episode/YmQyZmVmZmUtMTdlNC00YzNhLTg1ZmItYjJhN2I5ZDlmNmU0?sa=X&ved=0CAUQkfYCahcKEwj49_v986r8AhUAAAAAHQAAAAAQAQ
 headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts||feedback-gerne-auch-als-voice-message::Feedback
   (gerne auch als Voice Message)
 image: /images/podcast/episode/52-asynchrone-verarbeitung-durch-message-queues-vor-und-nachteile.jpg
