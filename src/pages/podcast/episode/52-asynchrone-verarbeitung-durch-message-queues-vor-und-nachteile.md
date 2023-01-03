@@ -1,5 +1,5 @@
 ---
-amazon_music: ''
+amazon_music: https://music.amazon.com/podcasts/c35a09fe-4116-4e04-8f68-77d61b112e46/episodes/1f4e3a28-fb66-48c5-a59b-55aa5b4528fa/engineering-kiosk-52-asynchrone-verarbeitung-durch-message-queues---vor--und-nachteile
 apple_podcasts: ''
 audio: https://stream.redcircle.com/episodes/5f100418-9dc0-463b-9033-bf99e1b6da3c/stream.mp3
 chapter:
