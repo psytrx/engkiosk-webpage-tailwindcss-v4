@@ -68,7 +68,10 @@ layout: ../../../layouts/podcast-episode.astro
 length_second: 0
 pubDate: '2023-01-03'
 spotify: ''
-tags: []
+tags:
+- Backend
+- Software Engineering
+- Open Source
 title: '#52 Asynchrone Verarbeitung durch Message Queues - Vor- und Nachteile'
 
 ---
