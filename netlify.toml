@@ -634,12 +634,13 @@ to = "/podcast/episode/51-was-ist-das-staff-engineer-level"
 status = 301
 force = true
 
+[[headers]]
+for = "/deutsche-tech-podcasts/podcasts.opml"
+
+[headers.values]
+Content-Type = "text/x-opml"
+Content-Disposition = "attachment"
+
 [build]
 publish = "dist/"
 command = "astro build"
-
-[[headers]]
-  for = "/deutsche-tech-podcasts/podcasts.opml"
-  [headers.values]
-    Content-Type = "text/x-opml"
-    Content-Disposition = "attachment"
