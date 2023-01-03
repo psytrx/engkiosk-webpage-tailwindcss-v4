@@ -65,9 +65,9 @@ headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts||feedback-gern
   (gerne auch als Voice Message)
 image: /images/podcast/episode/52-asynchrone-verarbeitung-durch-message-queues-vor-und-nachteile.jpg
 layout: ../../../layouts/podcast-episode.astro
-length_second: 0
+length_second: 3409
 pubDate: '2023-01-03'
-spotify: ''
+spotify: https://open.spotify.com/episode/0LmFRcBMaZGonYPSE1x15j
 tags:
 - Backend
 - Software Engineering
