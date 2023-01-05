@@ -433,7 +433,7 @@ def create_redirects(file_to_parse, path_md_files, redirect_prefix):
     # Get existing podcast episodes
     episodes = [f for f in os.listdir(path_md_files) if isfile(join(path_md_files, f)) and f.endswith('.md')]
 
-    episode_number_regex = re.compile('([0-9]*)-')
+    episode_number_regex = re.compile('([-\d]*)-')
     for episode in episodes:
         # Find the number of the episode
         episode_number = re.findall(episode_number_regex, episode)[0]
