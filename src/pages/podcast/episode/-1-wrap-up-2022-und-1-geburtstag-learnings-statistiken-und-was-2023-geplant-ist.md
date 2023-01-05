@@ -38,7 +38,8 @@ layout: ../../../layouts/podcast-episode.astro
 length_second: 1847
 pubDate: '2023-01-05'
 spotify: https://open.spotify.com/episode/35MGyksizZ4CVxkCRhhJ5n
-tags: []
+tags:
+- Podcast
 title: '#-1: Wrap Up 2022 und 1. Geburtstag: Learnings, Statistiken und was 2023 geplant
   ist'
 
