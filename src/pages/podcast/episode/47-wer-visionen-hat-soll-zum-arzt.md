@@ -1,7 +1,7 @@
 ---
 amazon_music: https://music.amazon.com/podcasts/c35a09fe-4116-4e04-8f68-77d61b112e46/episodes/7df278aa-4db8-4559-9b0d-b9137767f5ca/engineering-kiosk-47-wer-visionen-hat-soll-zum-arzt
 apple_podcasts: https://podcasts.apple.com/us/podcast/47-wer-visionen-hat-soll-zum-arzt/id1603082924?i=1000587849029&uo=4
-audio: https://stream.redcircle.com/episodes/70811d1e-a0f6-48df-be86-fa83099e4bec/stream.mp3
+audio: https://audio1.redcircle.com/episodes/70811d1e-a0f6-48df-be86-fa83099e4bec/stream.mp3
 chapter:
 - start: 00:00:00
   title: Intro

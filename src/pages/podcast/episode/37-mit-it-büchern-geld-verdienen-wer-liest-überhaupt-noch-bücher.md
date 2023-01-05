@@ -1,7 +1,7 @@
 ---
 amazon_music: https://music.amazon.com/podcasts/c35a09fe-4116-4e04-8f68-77d61b112e46/episodes/9ac3e2a5-c022-48b7-9207-15975ad58497/engineering-kiosk-37-mit-it-b%C3%BCchern-geld-verdienen-wer-liest-%C3%BCberhaupt-noch-b%C3%BCcher
 apple_podcasts: https://podcasts.apple.com/us/podcast/37-mit-it-b%C3%BCchern-geld-verdienen-wer-liest-%C3%BCberhaupt/id1603082924?i=1000580014637&uo=4
-audio: https://stream.redcircle.com/episodes/8efb56e2-5d56-4618-bfd8-91e08efff60b/stream.mp3
+audio: https://audio1.redcircle.com/episodes/8efb56e2-5d56-4618-bfd8-91e08efff60b/stream.mp3
 chapter:
 - start: 00:00:00
   title: Intro

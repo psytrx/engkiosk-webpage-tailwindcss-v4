@@ -1,7 +1,7 @@
 ---
 amazon_music: https://music.amazon.com/podcasts/c35a09fe-4116-4e04-8f68-77d61b112e46/episodes/483ff346-6575-4282-8122-119666a39498/engineering-kiosk-26-my-english-is-not-the-yellow-from-the-egg---arbeiten-in-internationalen-teams
 apple_podcasts: https://podcasts.apple.com/us/podcast/26-my-english-is-not-the-yellow-from-the-egg-arbeiten/id1603082924?i=1000568825196&uo=4
-audio: https://stream.redcircle.com/episodes/1e6423eb-3d80-48c7-a115-1e9deb9bff7c/stream.mp3
+audio: https://audio1.redcircle.com/episodes/1e6423eb-3d80-48c7-a115-1e9deb9bff7c/stream.mp3
 chapter:
 - start: 00:00:00
   title: Intro

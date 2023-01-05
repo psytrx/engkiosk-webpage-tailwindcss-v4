@@ -1,7 +1,7 @@
 ---
 amazon_music: https://music.amazon.com/podcasts/c35a09fe-4116-4e04-8f68-77d61b112e46/episodes/f7cf4678-a78a-4627-a725-3b7988e6c56a/engineering-kiosk-14-async-und-await-asynchrones-arbeiten-im-alltag
 apple_podcasts: https://podcasts.apple.com/us/podcast/14-async-und-await-asynchrones-arbeiten-im-alltag/id1603082924?i=1000557196507
-audio: https://stream.redcircle.com/episodes/3577c74d-2d25-408e-9107-1fae71daf76a/stream.mp3
+audio: https://audio1.redcircle.com/episodes/3577c74d-2d25-408e-9107-1fae71daf76a/stream.mp3
 chapter:
 - start: 00:00:00
   title: "Intro und R\xFCckmeldung zur Episode #13 \xFCber Produktivit\xE4t"

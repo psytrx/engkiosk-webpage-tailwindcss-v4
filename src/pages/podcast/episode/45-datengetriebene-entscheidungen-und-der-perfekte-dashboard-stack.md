@@ -1,7 +1,7 @@
 ---
 amazon_music: https://music.amazon.com/podcasts/c35a09fe-4116-4e04-8f68-77d61b112e46/episodes/325104f5-cca3-4cda-98ed-06ce6b1bf00f/engineering-kiosk-45-datengetriebene-entscheidungen-und-der-perfekte-dashboard-stack
 apple_podcasts: https://podcasts.apple.com/de/podcast/45-datengetriebene-entscheidungen-und-der-perfekte/id1603082924?i=1000586210699
-audio: https://stream.redcircle.com/episodes/8a2db78d-9ea3-4757-8bfc-ef45fd52bf65/stream.mp3
+audio: https://audio1.redcircle.com/episodes/8a2db78d-9ea3-4757-8bfc-ef45fd52bf65/stream.mp3
 chapter:
 - start: 00:00:00
   title: Intro

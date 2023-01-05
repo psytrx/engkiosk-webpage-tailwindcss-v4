@@ -1,7 +1,7 @@
 ---
 amazon_music: https://music.amazon.com/podcasts/c35a09fe-4116-4e04-8f68-77d61b112e46/episodes/1f4e3a28-fb66-48c5-a59b-55aa5b4528fa/engineering-kiosk-52-asynchrone-verarbeitung-durch-message-queues---vor--und-nachteile
 apple_podcasts: https://podcasts.apple.com/de/podcast/52-asynchrone-verarbeitung-durch-message-queues-vor/id1603082924?i=1000591978596
-audio: https://stream.redcircle.com/episodes/5f100418-9dc0-463b-9033-bf99e1b6da3c/stream.mp3
+audio: https://audio1.redcircle.com/episodes/5f100418-9dc0-463b-9033-bf99e1b6da3c/stream.mp3
 chapter:
 - start: 00:00:00
   title: Intro
@@ -46,7 +46,7 @@ chapter:
   title: "Andere Protokolle f\xFCrs Message Queuing: MQTT, HTTP und WebSockets"
 - start: 00:52:44
   title: Erfahrung durch die Nutzung in Side Projects und Zusammenfassung
-deezer: ''
+deezer: https://www.deezer.com/episode/466631357
 description: "Asynchrone Verarbeitung durch Message Queues: Was ist das und wof\xFC\
   r ist das gut? In vielen Applikationen gibt es Bereiche, die einfach etwas Zeit\
   \ f\xFCr die Verarbeitung brauchen, aber das klassische Anfrage/Antwort (Request/Response)\

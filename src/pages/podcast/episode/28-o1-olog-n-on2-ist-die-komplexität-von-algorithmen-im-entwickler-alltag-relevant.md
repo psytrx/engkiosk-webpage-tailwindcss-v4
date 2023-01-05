@@ -1,7 +1,7 @@
 ---
 amazon_music: https://music.amazon.com/podcasts/c35a09fe-4116-4e04-8f68-77d61b112e46/episodes/2c7aa12d-0d07-420d-ac9f-78e40422842a/engineering-kiosk-28-o-1-o-log-n-o-n-2---ist-die-komplexit%C3%A4t-von-algorithmen-im-entwickler-alltag-relevant
 apple_podcasts: https://podcasts.apple.com/us/podcast/28-o-1-o-log-n-o-n-2-ist-die-komplexit%C3%A4t-von-algorithmen/id1603082924?i=1000570419965&uo=4
-audio: https://stream.redcircle.com/episodes/0eeb6dea-4262-4b9f-b5c2-880f4465e4c3/stream.mp3
+audio: https://audio1.redcircle.com/episodes/0eeb6dea-4262-4b9f-b5c2-880f4465e4c3/stream.mp3
 chapter:
 - start: 00:00:00
   title: Intro

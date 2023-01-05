@@ -1,7 +1,7 @@
 ---
 amazon_music: https://music.amazon.com/podcasts/c35a09fe-4116-4e04-8f68-77d61b112e46/episodes/466664d9-49f8-411b-affa-8bde6999c0c8/engineering-kiosk-19-datenbank-deepdive-oder-das-ende-einer-%C3%A4ra-von-redis-bis-clickhouse
 apple_podcasts: https://podcasts.apple.com/us/podcast/19-datenbank-deepdive-oder-das-ende-einer-%C3%A4ra-von-redis/id1603082924?i=1000561721993
-audio: https://stream.redcircle.com/episodes/afb215a2-96f7-4293-a9ae-10bebd6c483a/stream.mp3
+audio: https://audio1.redcircle.com/episodes/afb215a2-96f7-4293-a9ae-10bebd6c483a/stream.mp3
 chapter:
 - start: 00:00:00
   title: Intro

@@ -1,7 +1,7 @@
 ---
 amazon_music: https://music.amazon.com/podcasts/c35a09fe-4116-4e04-8f68-77d61b112e46/episodes/75e42302-ae84-4d29-b44d-6d5e83756e2a/engineering-kiosk-49-die-zukunft-software-repository-mining
 apple_podcasts: https://podcasts.apple.com/us/podcast/49-die-zukunft-software-repository-mining/id1603082924?i=1000589982392&uo=4
-audio: https://stream.redcircle.com/episodes/b00e1d5b-eb33-4768-97d5-c38e031c55ad/stream.mp3
+audio: https://audio1.redcircle.com/episodes/b00e1d5b-eb33-4768-97d5-c38e031c55ad/stream.mp3
 chapter:
 - start: 00:00:00
   title: Intro

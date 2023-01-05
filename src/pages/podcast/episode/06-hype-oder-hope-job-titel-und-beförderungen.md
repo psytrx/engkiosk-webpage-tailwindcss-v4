@@ -1,7 +1,7 @@
 ---
 amazon_music: https://music.amazon.com/podcasts/c35a09fe-4116-4e04-8f68-77d61b112e46/episodes/5b15a5fb-c4d0-4224-8be2-af96930828d8/engineering-kiosk-06-hype-oder-hope-job-titel-und-bef%C3%B6rderungen
 apple_podcasts: https://podcasts.apple.com/us/podcast/06-hype-oder-hope-job-titel-und-bef%C3%B6rderungen/id1603082924?i=1000551119949
-audio: https://stream.redcircle.com/episodes/d6840c34-1e98-42b6-82aa-5cb76b200fa6/stream.mp3
+audio: https://audio1.redcircle.com/episodes/d6840c34-1e98-42b6-82aa-5cb76b200fa6/stream.mp3
 chapter:
 - start: 00:00:00
   title: Intro

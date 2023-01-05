@@ -1,7 +1,7 @@
 ---
 amazon_music: https://music.amazon.com/podcasts/c35a09fe-4116-4e04-8f68-77d61b112e46/episodes/0fe56a3a-b9c0-4200-9406-87cf5a87baa6/engineering-kiosk-51-was-ist-das-staff-engineer-level
 apple_podcasts: https://podcasts.apple.com/de/podcast/51-was-ist-das-staff-engineer-level/id1603082924?i=1000591357705
-audio: https://stream.redcircle.com/episodes/13d40fbb-2d7c-46d7-baba-25514ecd6dc6/stream.mp3
+audio: https://audio1.redcircle.com/episodes/13d40fbb-2d7c-46d7-baba-25514ecd6dc6/stream.mp3
 chapter:
 - start: 00:00:00
   title: Intro
