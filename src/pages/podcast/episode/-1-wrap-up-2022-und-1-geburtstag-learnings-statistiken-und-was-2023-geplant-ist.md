@@ -1,6 +1,6 @@
 ---
 amazon_music: ''
-apple_podcasts: ''
+apple_podcasts: https://podcasts.apple.com/us/podcast/1-wrap-up-2022-und-1-geburtstag-learnings-statistiken/id1603082924?i=1000592553537&uo=4
 audio: https://audio1.redcircle.com/episodes/714d7f63-9e23-4a7c-8cd6-ea9c47bb3cc0/stream.mp3
 chapter:
 - start: 00:00:00
@@ -35,9 +35,9 @@ headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts||feedback-gern
   (gerne auch als Voice Message)
 image: /images/podcast/episode/-1-wrap-up-2022-und-1-geburtstag-learnings-statistiken-und-was-2023-geplant-ist.jpg
 layout: ../../../layouts/podcast-episode.astro
-length_second: 0
+length_second: 1847
 pubDate: '2023-01-05'
-spotify: ''
+spotify: https://open.spotify.com/episode/35MGyksizZ4CVxkCRhhJ5n
 tags: []
 title: '#-1: Wrap Up 2022 und 1. Geburtstag: Learnings, Statistiken und was 2023 geplant
   ist'
