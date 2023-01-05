@@ -48,6 +48,7 @@ image: /images/podcast/episode/10-das-karriere-booster-meeting-11s.jpg
 layout: ../../../layouts/podcast-episode.astro
 length_second: 2756
 pubDate: '2022-03-15'
+rtlplus: ''
 spotify: https://open.spotify.com/episode/3KXQnrxoKkdTDFVXxiR3IA
 tags:
 - Karriere

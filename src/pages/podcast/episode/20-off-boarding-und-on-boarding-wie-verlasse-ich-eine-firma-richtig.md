@@ -53,6 +53,7 @@ image: /images/podcast/episode/20-off-boarding-und-on-boarding-wie-verlasse-ich-
 layout: ../../../layouts/podcast-episode.astro
 length_second: 4402
 pubDate: '2022-05-24'
+rtlplus: ''
 spotify: https://open.spotify.com/episode/3H3C7ZKN2XsoJGBh8f5zRn
 tags:
 - Karriere

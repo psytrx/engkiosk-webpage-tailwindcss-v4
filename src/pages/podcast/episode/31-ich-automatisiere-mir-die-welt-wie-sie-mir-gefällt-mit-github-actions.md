@@ -60,6 +60,7 @@ image: "/images/podcast/episode/31-ich-automatisiere-mir-die-welt-wie-sie-mir-ge
 layout: ../../../layouts/podcast-episode.astro
 length_second: 3675
 pubDate: '2022-08-09'
+rtlplus: ''
 spotify: https://open.spotify.com/episode/1vWJTaoipaGryKcGJOoUF6
 tags:
 - Backend

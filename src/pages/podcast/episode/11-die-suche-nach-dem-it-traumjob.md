@@ -65,6 +65,7 @@ image: /images/podcast/episode/11-die-suche-nach-dem-it-traumjob.jpg
 layout: ../../../layouts/podcast-episode.astro
 length_second: 3531
 pubDate: '2022-03-22'
+rtlplus: ''
 spotify: https://open.spotify.com/episode/10M5UFnQfcQXwYTIFjQrqP
 tags:
 - Karriere

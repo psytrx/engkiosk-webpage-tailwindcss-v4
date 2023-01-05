@@ -75,6 +75,7 @@ image: /images/podcast/episode/29-die-andere-seite-meetups-konferenzen-organisie
 layout: ../../../layouts/podcast-episode.astro
 length_second: 4128
 pubDate: '2022-07-26'
+rtlplus: ''
 spotify: https://open.spotify.com/episode/3WQWuMUtFz3RcxJB2VJiNB
 tags:
 - Tech Kultur

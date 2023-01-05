@@ -70,6 +70,7 @@ image: "/images/podcast/episode/37-mit-it-b\xFCchern-geld-verdienen-wer-liest-\x
 layout: ../../../layouts/podcast-episode.astro
 length_second: 3621
 pubDate: '2022-09-20'
+rtlplus: ''
 spotify: https://open.spotify.com/episode/3KlgP1cJSP9DTFab6DFxLF
 tags:
 - Karriere

@@ -65,6 +65,7 @@ image: /images/podcast/episode/26-my-english-is-not-the-yellow-from-the-egg-arbe
 layout: ../../../layouts/podcast-episode.astro
 length_second: 3970
 pubDate: '2022-07-05'
+rtlplus: ''
 spotify: https://open.spotify.com/episode/0S8AoLpiO35S3Lc06mKmQz
 tags:
 - Team

@@ -61,6 +61,7 @@ image: "/images/podcast/episode/41-sql-injections-ein-untersch\xE4tztes-risiko.j
 layout: ../../../layouts/podcast-episode.astro
 length_second: 4117
 pubDate: '2022-10-18'
+rtlplus: ''
 spotify: https://open.spotify.com/episode/33PP79EzBWrsQ5aZqqzlTw
 tags:
 - Backend

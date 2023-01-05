@@ -68,6 +68,7 @@ image: "/images/podcast/episode/30-ist-ein-informatikstudium-sinnvoll-welche-aus
 layout: ../../../layouts/podcast-episode.astro
 length_second: 3936
 pubDate: '2022-08-02'
+rtlplus: ''
 spotify: https://open.spotify.com/episode/3XW8vkTOnDwbO1Y2O6HDsN
 tags:
 - Karriere

@@ -53,6 +53,7 @@ image: /images/podcast/episode/38-monitoring-metriken-tracing-alerting-observabi
 layout: ../../../layouts/podcast-episode.astro
 length_second: 3350
 pubDate: '2022-09-27'
+rtlplus: ''
 spotify: https://open.spotify.com/episode/6o12Q11f95KuKYytqmis6u
 tags:
 - Backend

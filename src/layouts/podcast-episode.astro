@@ -34,6 +34,7 @@ headline_split.forEach(function callback(val) {
 
 let tags = content.tags.map((element) => URLify(element));
 
+// TODO Implement RTL+ Musik into the podcast player
 ---
 
 <html lang="de">
@@ -222,6 +223,12 @@ let tags = content.tags.map((element) => URLify(element));
 												<a class="flex items-center"  href={content.deezer} title={`Engineering Kiosk ${content.title} bei Deezer`}>
 													<img class="w-12" src="/images/brands/deezer.svg" alt={`Engineering Kiosk ${content.title} auf Deezer`}>
 													<span class="text-lg m-2">deezer</span>
+												</a>
+											</div>)}
+											{content.rtlplus && (<div class="m-2">
+												<a class="flex items-center"  href={content.rtlplus} title={`Engineering Kiosk ${content.title} bei RTL Plus Musik`}>
+													<img class="h-6" src="/images/brands/rtl-plus.svg" alt={`Engineering Kiosk ${content.title} auf RTL Plus Musik`}>
+													<span class="text-lg m-2">&nbsp;</span>
 												</a>
 											</div>)}
 										</div>

@@ -51,6 +51,7 @@ image: /images/podcast/episode/21-static-site-generators-die-webseite.jpg
 layout: ../../../layouts/podcast-episode.astro
 length_second: 3214
 pubDate: '2022-05-31'
+rtlplus: ''
 spotify: https://open.spotify.com/episode/7FpteXc95QPAnKihOuUUpX?si=9ea7bd26f6ec4858
 tags:
 - Frontend

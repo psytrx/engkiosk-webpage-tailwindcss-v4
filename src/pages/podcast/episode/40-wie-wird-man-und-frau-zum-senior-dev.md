@@ -61,6 +61,7 @@ image: /images/podcast/episode/40-wie-wird-man-und-frau-zum-senior-dev.jpg
 layout: ../../../layouts/podcast-episode.astro
 length_second: 2983
 pubDate: '2022-10-11'
+rtlplus: ''
 spotify: https://open.spotify.com/episode/75nNWSvFJyBMuj8Gnu2ega
 tags:
 - Karriere

@@ -70,6 +70,7 @@ image: /images/podcast/episode/45-datengetriebene-entscheidungen-und-der-perfekt
 layout: ../../../layouts/podcast-episode.astro
 length_second: 3068
 pubDate: '2022-11-15'
+rtlplus: ''
 spotify: https://open.spotify.com/episode/14VyCluZF359l24qMcAN9a
 tags:
 - Tech Kultur

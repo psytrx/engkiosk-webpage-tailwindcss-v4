@@ -67,6 +67,7 @@ image: "/images/podcast/episode/22-nosql-acid-base-ende-einer-\xE4ra-teil-2.jpg"
 layout: ../../../layouts/podcast-episode.astro
 length_second: 3636
 pubDate: '2022-06-07'
+rtlplus: ''
 spotify: https://open.spotify.com/episode/7uPMZDpC2KQ5ZMbAtAN2S7
 tags:
 - Datenbanken

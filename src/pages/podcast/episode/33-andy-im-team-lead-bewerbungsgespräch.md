@@ -53,6 +53,7 @@ image: "/images/podcast/episode/33-andy-im-team-lead-bewerbungsgespr\xE4ch.jpg"
 layout: ../../../layouts/podcast-episode.astro
 length_second: 3654
 pubDate: '2022-08-23'
+rtlplus: ''
 spotify: https://open.spotify.com/episode/2wPjvgc95eajkGJMhlmXFG
 tags:
 - Bewerbung

@@ -59,6 +59,7 @@ image: /images/podcast/episode/09-ukraine.jpg
 layout: ../../../layouts/podcast-episode.astro
 length_second: 2250
 pubDate: '2022-03-08'
+rtlplus: ''
 spotify: https://open.spotify.com/episode/30CdS9BlvI3GXsCgswRgm8
 tags:
 - Tech Kultur

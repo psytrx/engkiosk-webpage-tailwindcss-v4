@@ -54,6 +54,7 @@ image: "/images/podcast/episode/13-produktivit\xE4t.jpg"
 layout: ../../../layouts/podcast-episode.astro
 length_second: 3529
 pubDate: '2022-04-05'
+rtlplus: ''
 spotify: https://open.spotify.com/episode/6idJ9F1bk6AQKFxrbukvC3
 tags:
 - Karriere

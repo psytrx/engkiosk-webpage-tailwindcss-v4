@@ -68,6 +68,7 @@ image: "/images/podcast/episode/28-o1-olog-n-on2-ist-die-komplexit\xE4t-von-algo
 layout: ../../../layouts/podcast-episode.astro
 length_second: 3333
 pubDate: '2022-07-19'
+rtlplus: ''
 spotify: https://open.spotify.com/episode/1V1n57J1JlwQvq6liID45p
 tags:
 - Software Engineering

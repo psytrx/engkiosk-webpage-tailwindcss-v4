@@ -68,6 +68,7 @@ image: /images/podcast/episode/47-wer-visionen-hat-soll-zum-arzt.jpg
 layout: ../../../layouts/podcast-episode.astro
 length_second: 2633
 pubDate: '2022-11-29'
+rtlplus: ''
 spotify: https://open.spotify.com/episode/74ZcfDHMTLn5jlP8pG7M97
 tags:
 - Team

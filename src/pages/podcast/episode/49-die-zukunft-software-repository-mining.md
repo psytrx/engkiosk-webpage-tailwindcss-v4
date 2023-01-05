@@ -70,6 +70,7 @@ image: /images/podcast/episode/49-die-zukunft-software-repository-mining.jpg
 layout: ../../../layouts/podcast-episode.astro
 length_second: 3295
 pubDate: '2022-12-13'
+rtlplus: ''
 spotify: https://open.spotify.com/episode/2Oac8OLuJP9xo6dRSEn9ZT
 tags:
 - Backend

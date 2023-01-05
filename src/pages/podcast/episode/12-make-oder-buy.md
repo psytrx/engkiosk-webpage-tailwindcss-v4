@@ -59,6 +59,7 @@ image: /images/podcast/episode/12-make-oder-buy.jpg
 layout: ../../../layouts/podcast-episode.astro
 length_second: 3583
 pubDate: '2022-03-29'
+rtlplus: ''
 spotify: https://open.spotify.com/episode/7xXnR8rP8gB25P9dQkvVQk
 tags:
 - Software Engineering
