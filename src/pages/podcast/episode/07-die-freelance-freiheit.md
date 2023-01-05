@@ -68,6 +68,7 @@ image: /images/podcast/episode/07-die-freelance-freiheit.jpg
 layout: ../../../layouts/podcast-episode.astro
 length_second: 3841
 pubDate: '2022-02-22'
+rtlplus: ''
 spotify: https://open.spotify.com/episode/5RCZ1mHsBVN83lWXu49xqQ
 tags:
 - Karriere

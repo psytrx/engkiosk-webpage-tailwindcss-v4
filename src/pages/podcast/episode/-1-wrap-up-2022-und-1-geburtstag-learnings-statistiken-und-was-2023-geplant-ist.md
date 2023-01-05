@@ -37,6 +37,7 @@ image: /images/podcast/episode/-1-wrap-up-2022-und-1-geburtstag-learnings-statis
 layout: ../../../layouts/podcast-episode.astro
 length_second: 1847
 pubDate: '2023-01-05'
+rtlplus: ''
 spotify: https://open.spotify.com/episode/35MGyksizZ4CVxkCRhhJ5n
 tags:
 - Podcast

@@ -85,6 +85,7 @@ image: "/images/podcast/episode/17-was-k\xF6nnen-wir-beim-incident-management-vo
 layout: ../../../layouts/podcast-episode.astro
 length_second: 4174
 pubDate: '2022-05-03'
+rtlplus: ''
 spotify: https://open.spotify.com/episode/4FyZmHWjqNmlWn7bl7bPaP
 tags:
 - DevOps

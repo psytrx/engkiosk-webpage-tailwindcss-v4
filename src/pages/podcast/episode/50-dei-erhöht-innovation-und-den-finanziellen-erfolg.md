@@ -60,6 +60,7 @@ image: "/images/podcast/episode/50-dei-erh\xF6ht-innovation-und-den-finanziellen
 layout: ../../../layouts/podcast-episode.astro
 length_second: 3450
 pubDate: '2022-12-20'
+rtlplus: ''
 spotify: https://open.spotify.com/episode/6dEGdTNQQccrebtuKHMkQa
 tags:
 - Team

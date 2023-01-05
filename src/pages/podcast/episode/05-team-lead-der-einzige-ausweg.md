@@ -55,6 +55,7 @@ image: /images/podcast/episode/05-team-lead-der-einzige-ausweg.jpg
 layout: ../../../layouts/podcast-episode.astro
 length_second: 2412
 pubDate: '2022-02-01'
+rtlplus: ''
 spotify: https://open.spotify.com/episode/2YSw9LkxhXJeUuFaJOihVr
 tags:
 - Karriere

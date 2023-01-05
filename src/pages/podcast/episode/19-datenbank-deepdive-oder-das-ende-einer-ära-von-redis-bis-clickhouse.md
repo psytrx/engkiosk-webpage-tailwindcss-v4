@@ -79,6 +79,7 @@ image: "/images/podcast/episode/19-datenbank-deepdive-oder-das-ende-einer-\xE4ra
 layout: ../../../layouts/podcast-episode.astro
 length_second: 3842
 pubDate: '2022-05-17'
+rtlplus: ''
 spotify: https://open.spotify.com/episode/2BoVJYXWCOoK9w31nZaevF
 tags:
 - Datenbanken

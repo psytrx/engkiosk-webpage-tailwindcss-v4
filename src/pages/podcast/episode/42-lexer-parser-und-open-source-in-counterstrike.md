@@ -55,6 +55,7 @@ image: /images/podcast/episode/42-lexer-parser-und-open-source-in-counterstrike.
 layout: ../../../layouts/podcast-episode.astro
 length_second: 3218
 pubDate: '2022-10-25'
+rtlplus: ''
 spotify: https://open.spotify.com/episode/1OvywjCGrYah9AGX6w8Bnn
 tags:
 - Backend

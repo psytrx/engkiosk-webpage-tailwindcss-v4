@@ -55,6 +55,7 @@ image: "/images/podcast/episode/01-side-projects-fluch-oder-segen-f\xFCr-die-kar
 layout: ../../../layouts/podcast-episode.astro
 length_second: 2782
 pubDate: '2022-01-03'
+rtlplus: ''
 spotify: https://open.spotify.com/episode/0uT54qYXLeoYPIerWNK6WY
 tags:
 - Side Projects

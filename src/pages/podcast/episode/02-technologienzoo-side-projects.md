@@ -80,6 +80,7 @@ image: /images/podcast/episode/02-technologienzoo-side-projects.jpg
 layout: ../../../layouts/podcast-episode.astro
 length_second: 2690
 pubDate: '2022-01-10'
+rtlplus: ''
 spotify: https://open.spotify.com/episode/1OEVURealPs0TxTg4DGLFR
 tags:
 - Side Projects

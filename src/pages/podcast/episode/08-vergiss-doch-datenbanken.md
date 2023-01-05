@@ -62,6 +62,7 @@ image: /images/podcast/episode/08-vergiss-doch-datenbanken.jpg
 layout: ../../../layouts/podcast-episode.astro
 length_second: 3167
 pubDate: '2022-03-01'
+rtlplus: ''
 spotify: https://open.spotify.com/episode/49HSkGcpuzL3yTbEsguOMB
 tags:
 - Datenbanken

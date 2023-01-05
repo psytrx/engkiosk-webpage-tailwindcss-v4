@@ -59,6 +59,7 @@ image: /images/podcast/episode/24-infrastructure-as-code-oder-old-man-yells-at-c
 layout: ../../../layouts/podcast-episode.astro
 length_second: 3712
 pubDate: '2022-06-21'
+rtlplus: ''
 spotify: https://open.spotify.com/episode/5ZDmHWPWsvB4ok4kFEi91V
 tags:
 - Automation

@@ -65,6 +65,7 @@ image: /images/podcast/episode/51-was-ist-das-staff-engineer-level.jpg
 layout: ../../../layouts/podcast-episode.astro
 length_second: 3101
 pubDate: '2022-12-27'
+rtlplus: ''
 spotify: https://open.spotify.com/episode/0qJOcAtXo4xLPN9gMv2H6Y
 tags:
 - Team

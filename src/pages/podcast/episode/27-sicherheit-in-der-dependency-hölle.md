@@ -64,6 +64,7 @@ image: "/images/podcast/episode/27-sicherheit-in-der-dependency-h\xF6lle.jpg"
 layout: ../../../layouts/podcast-episode.astro
 length_second: 3378
 pubDate: '2022-07-12'
+rtlplus: ''
 spotify: https://open.spotify.com/episode/1PFpdXNHVvRgGPPUxC59Te
 tags:
 - DevOps

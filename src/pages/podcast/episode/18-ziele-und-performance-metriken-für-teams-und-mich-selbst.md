@@ -66,6 +66,7 @@ image: "/images/podcast/episode/18-ziele-und-performance-metriken-f\xFCr-teams-u
 layout: ../../../layouts/podcast-episode.astro
 length_second: 4248
 pubDate: '2022-05-10'
+rtlplus: ''
 spotify: https://open.spotify.com/episode/2ByheYdW9jiNe2NZuLPkiI
 tags:
 - Team

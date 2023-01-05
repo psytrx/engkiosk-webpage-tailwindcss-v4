@@ -57,6 +57,7 @@ image: /images/podcast/episode/35-knowledge-sharing-oder-die-person-die-nie-gehe
 layout: ../../../layouts/podcast-episode.astro
 length_second: 3784
 pubDate: '2022-09-06'
+rtlplus: ''
 spotify: https://open.spotify.com/episode/4oZ8sFzPQHMypISi7qmGSR
 tags:
 - Leadership

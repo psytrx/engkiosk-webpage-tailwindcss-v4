@@ -75,6 +75,7 @@ image: /images/podcast/episode/04-lohnt-der-einstieg-in-open-source.jpg
 layout: ../../../layouts/podcast-episode.astro
 length_second: 3044
 pubDate: '2022-01-25'
+rtlplus: ''
 spotify: https://open.spotify.com/episode/1fAhILuNB97dYWuuiI9NwQ
 tags:
 - Open Source

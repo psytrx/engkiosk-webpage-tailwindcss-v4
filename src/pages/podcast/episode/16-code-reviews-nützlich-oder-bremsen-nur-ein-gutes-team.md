@@ -78,6 +78,7 @@ image: "/images/podcast/episode/16-code-reviews-n\xFCtzlich-oder-bremsen-nur-ein
 layout: ../../../layouts/podcast-episode.astro
 length_second: 3543
 pubDate: '2022-04-26'
+rtlplus: ''
 spotify: https://open.spotify.com/episode/12JJPgrlzpQmrLWEiqT1mR
 tags:
 - Team

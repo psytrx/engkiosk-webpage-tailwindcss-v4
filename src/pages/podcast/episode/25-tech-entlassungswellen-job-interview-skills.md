@@ -61,6 +61,7 @@ image: /images/podcast/episode/25-tech-entlassungswellen-job-interview-skills.jp
 layout: ../../../layouts/podcast-episode.astro
 length_second: 4376
 pubDate: '2022-06-28'
+rtlplus: ''
 spotify: https://open.spotify.com/episode/5vSicTXfw07adEdvQGPQUd
 tags:
 - Bewerbung

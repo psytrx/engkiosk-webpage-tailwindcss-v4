@@ -35,6 +35,7 @@ image: "/images/podcast/episode/39-gemischte-t\xFCte-software-engineer-github-op
 layout: ../../../layouts/podcast-episode.astro
 length_second: 2866
 pubDate: '2022-10-04'
+rtlplus: ''
 spotify: https://open.spotify.com/episode/11sFbhhPfqhw5ICp85CnDN
 tags:
 - Open Source

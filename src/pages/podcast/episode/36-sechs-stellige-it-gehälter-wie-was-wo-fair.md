@@ -51,6 +51,7 @@ image: "/images/podcast/episode/36-sechs-stellige-it-geh\xE4lter-wie-was-wo-fair
 layout: ../../../layouts/podcast-episode.astro
 length_second: 3255
 pubDate: '2022-09-13'
+rtlplus: ''
 spotify: https://open.spotify.com/episode/3FRoRTN1kQMSwmlcUQnkL3
 tags:
 - Karriere

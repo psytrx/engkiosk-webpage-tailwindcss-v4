@@ -57,6 +57,7 @@ image: /images/podcast/episode/48-der-layer-unter-docker-containerd-kubernetes-c
 layout: ../../../layouts/podcast-episode.astro
 length_second: 2264
 pubDate: '2022-12-06'
+rtlplus: ''
 spotify: https://open.spotify.com/episode/3K3nMEPuTCd6sxi4JQXIVO
 tags:
 - Backend

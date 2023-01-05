@@ -75,6 +75,7 @@ image: /images/podcast/episode/15-source-code-kommentare-git-commits-messages-me
 layout: ../../../layouts/podcast-episode.astro
 length_second: 3904
 pubDate: '2022-04-19'
+rtlplus: ''
 spotify: https://open.spotify.com/episode/28UhEK728kyETTyqcNb6hP
 tags:
 - Team

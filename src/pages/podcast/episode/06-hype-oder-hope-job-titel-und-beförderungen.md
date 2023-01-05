@@ -47,6 +47,7 @@ image: "/images/podcast/episode/06-hype-oder-hope-job-titel-und-bef\xF6rderungen
 layout: ../../../layouts/podcast-episode.astro
 length_second: 3133
 pubDate: '2022-02-15'
+rtlplus: ''
 spotify: https://open.spotify.com/episode/4mkmeVaXD6u8Tf9mpcBWd4
 tags:
 - Karriere
