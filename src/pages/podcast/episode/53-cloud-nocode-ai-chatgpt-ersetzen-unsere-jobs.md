@@ -43,7 +43,10 @@ length_second: 3959
 pubDate: '2023-01-10'
 rtlplus: ''
 spotify: https://open.spotify.com/episode/5KjdQVjvdGD4sErBERUFtp
-tags: []
+tags:
+- Tech Kultur
+- Karriere
+- Automation
 title: '#53 Cloud / NoCode/ AI / ChatGPT ersetzen unsere Jobs?'
 
 ---
