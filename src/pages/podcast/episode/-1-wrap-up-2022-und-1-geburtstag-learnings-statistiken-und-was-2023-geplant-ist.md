@@ -19,7 +19,7 @@ chapter:
   title: Community + FOSDEM 2023
 - start: 00:30:02
   title: Ein dickes Danke
-deezer: ''
+deezer: https://www.deezer.com/episode/467505017
 description: "1 Jahr Engineering Kiosk: Ein Wrap-up mit Learnings, Statistiken und\
   \ Pl\xE4ne f\xFCr 2023 Dieser Podcast hat ein ganzes Jahr voll gemacht. Dies ist\
   \ f\xFCr uns ein Grund mal etwas zur\xFCck zu schauen und in dieser etwas anderen\
