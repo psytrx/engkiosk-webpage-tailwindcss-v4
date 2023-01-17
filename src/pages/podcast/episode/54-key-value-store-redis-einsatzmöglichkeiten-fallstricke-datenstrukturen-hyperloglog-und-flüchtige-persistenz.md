@@ -1,5 +1,5 @@
 ---
-amazon_music: ''
+amazon_music: https://music.amazon.com/podcasts/c35a09fe-4116-4e04-8f68-77d61b112e46/episodes/a8eb4417-1d48-4eaa-ae6f-7566cade756e/engineering-kiosk-54-key-value-store-redis-einsatzm%C3%B6glichkeiten-fallstricke-datenstrukturen-hyperloglog-und-fl%C3%BCchtige-persistenz
 apple_podcasts: https://podcasts.apple.com/us/podcast/54-key-value-store-redis-einsatzm%C3%B6glichkeiten-fallstricke/id1603082924?i=1000594826183&uo=4
 audio: https://audio1.redcircle.com/episodes/c55253d1-4bcb-4ccc-8d3c-5042ceef6064/stream.mp3
 chapter:
