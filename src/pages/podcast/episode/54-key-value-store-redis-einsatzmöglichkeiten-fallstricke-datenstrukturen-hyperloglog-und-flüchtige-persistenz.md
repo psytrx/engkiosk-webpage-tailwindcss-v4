@@ -71,7 +71,10 @@ length_second: 3727
 pubDate: '2023-01-17'
 rtlplus: ''
 spotify: https://open.spotify.com/episode/6NiUofGRvIYQV0arsK6QFh
-tags: []
+tags:
+- DevOps
+- Datenbanken
+- Open Source
 title: "#54 Key Value Store Redis: Einsatzm\xF6glichkeiten, Fallstricke, Datenstrukturen,\
   \ HyperLogLog und (fl\xFCchtige) Persistenz"
 
