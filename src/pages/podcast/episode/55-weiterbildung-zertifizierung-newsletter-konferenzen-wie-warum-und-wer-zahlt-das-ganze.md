@@ -49,7 +49,10 @@ length_second: 3621
 pubDate: '2023-01-24'
 rtlplus: ''
 spotify: https://open.spotify.com/episode/21JxLUnmiUv2XQwFUILJoE
-tags: []
+tags:
+- Team
+- Karriere
+- Knowledge Sharing
 title: '#55 Weiterbildung: Zertifizierung, Newsletter, Konferenzen, ... Wie? Warum?
   Und wer zahlt das Ganze?'
 
