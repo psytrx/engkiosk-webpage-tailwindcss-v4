@@ -5,7 +5,7 @@ import mdx from '@astrojs/mdx';
 
 // https://astro.build/config
 export default defineConfig({
-	site: 'https://engineeringkiosk.dev',
+	site: 'https://engineeringkiosk.dev/',
 	trailingSlash: 'always',
 
 	integrations: [
