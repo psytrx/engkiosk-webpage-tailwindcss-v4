@@ -5,6 +5,9 @@ import Nav from '../components/Nav.astro';
 import HostPreview from '../components/HostPreview.astro';
 import BlogPostListing from '../components/BlogPostListing.astro';
 import PodcastEpisodeListing from '../components/PodcastEpisodeListing.astro';
+import { URLify } from "../scripts/urlify.js"
+import { cutText } from "../scripts/strings.js"
+import { formatDateWithoutWeekday } from "../scripts/date.js"
 
 import podcastInfo from "../data/podcast-info.json";
 
@@ -25,6 +28,10 @@ let episode = episodesToShow[0];
 
 const truncate = (str, max, suffix) => str.length < max ? str : `${str.substr(0, str.substr(0, max - suffix.length).lastIndexOf(' '))}${suffix}`;
 let lastEpisodeTitleShort = truncate(episode.frontmatter.title, 27, '...');
+
+let currentEpisodeTags = episode.frontmatter.tags.map((element) => URLify(element));
+// Cut description text
+let currentEpisodeDescription = cutText(episode.frontmatter.description, 170);
 ---
 
 <html lang="de">
@@ -78,6 +85,55 @@ let lastEpisodeTitleShort = truncate(episode.frontmatter.title, 27, '...');
 					</div>
 				</div>
 			</section>
+
+      <section class="py-24 md:py-32 bg-coolGray-900 overflow-hidden" style="background-image: url('/images/elements/pattern-dark2.svg'); background-position: center;">
+        <div class="container px-4 mx-auto">
+          <div class="flex flex-wrap lg:items-center -mx-4">
+            <div class="w-full md:w-1/2 px-4 mb-16 md:mb-0">
+              <div class="relative mx-auto md:ml-0 max-w-max overflow-hidden rounded-lg">
+                <a href={episode.url} title={`Engineering Kiosk Episode ${episode.frontmatter.title}`}>
+                  <img src={episode.frontmatter.image} alt={`Engineering Kiosk Episode ${episode.frontmatter.title}`} title={`Engineering Kiosk Episode ${episode.frontmatter.title}`} />
+                </a>
+              </div>
+            </div>
+            <div class="w-full md:w-1/2 px-4">
+              <span class="inline-block py-px px-2 mb-4 mr-3 text-xs leading-5 text-yellow-900 bg-yellow-100 font-medium uppercase rounded-full shadow-sm">Aktuelle Episode / <time class="date" datetime={episode.frontmatter.pubDate}>{formatDateWithoutWeekday(episode.frontmatter.pubDate)}</time></span>
+              { currentEpisodeTags.map((element) => <a class="inline-block py-px px-2 mb-4 mr-3 text-xs leading-5 text-yellow-900 bg-yellow-100 font-medium uppercase rounded-full shadow-sm hover:text-yellow-1000 hover:bg-yellow-200" href={`/tag/${(element.url)}/`}>{element.url}</a>) }
+              <h1 class="mb-8 text-4xl md:text-5xl leading-tight text-white font-bold tracking-tighter">
+                <a href={episode.url} title={`Engineering Kiosk Episode ${episode.frontmatter.title}`}>
+                  {episode.frontmatter.title}
+                </a>
+              </h1>
+              <p class="mb-6 text-lg md:text-xl text-coolGray-400 font-medium">{ currentEpisodeDescription }</p>
+              <div class="flex flex-wrap justify-start mt-8">
+                <div class="mr-4 mt-4 mb-4">
+                  <a class="flex inline-block py-4 px-5 w-full md:w-auto text-base leading-4 text-yellow-50 bg-yellow-500 hover:bg-yellow-600 font-medium text-center focus:ring-2 focus:ring-yellow-500 focus:ring-opacity-50 rounded-md shadow-sm" href={`${episode.url}#episode-player`} title={`Engineering Kiosk Episode ${episode.frontmatter.title} anhören`}>Jetzt anhören</a>
+                </div>
+                <div class="m-4">
+                  <a class="flex items-center" href={episode.frontmatter.spotify} title={`Engineering Kiosk Episode ${episode.frontmatter.title} auf Spotify`}>
+                    <img class="w-12" src="/images/brands/spotify.svg" alt="Spotify logo" title="Spotify logo">
+                  </a>
+                </div>
+                <div class="m-4">
+                  <a class="flex items-center" href={episode.frontmatter.apple_podcasts} title={`Engineering Kiosk Episode ${episode.frontmatter.title} bei Apple Podcasts`}>
+                    <img class="w-12" src="/images/brands/apple.svg" alt="Apple Podcasts logo" title="Apple Podcasts logo">
+                  </a>
+                </div>
+                <div class="m-4">
+                  <a class="flex items-center" href={episode.frontmatter.google_podcasts} title={`Engineering Kiosk Episode ${episode.frontmatter.title} bei Google Podcasts`}>
+                    <img class="w-12" src="/images/brands/google.svg" alt="Google Podcasts logo" title="Google Podcasts logo">
+                  </a>
+                </div>            
+                <div class="m-4">
+                  <a class="flex items-center" href={episode.frontmatter.amazon_music} title={`Engineering Kiosk Episode ${episode.frontmatter.title} bei Amazon Music`}>
+                    <img class="w-12" src="/images/brands/amazonmusic.svg" alt="Amazon Music logo" title="Amazon Music logo">
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
       <style>
         .review-box {
