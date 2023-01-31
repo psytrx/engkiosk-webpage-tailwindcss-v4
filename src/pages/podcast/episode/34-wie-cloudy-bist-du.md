@@ -60,6 +60,7 @@ spotify: https://open.spotify.com/episode/4DfOEf84e1ajgtH5CV4YCH
 tags:
 - Backend
 - DevOps
+- Cloud
 title: '#34 Wie cloudy bist du?'
 
 ---

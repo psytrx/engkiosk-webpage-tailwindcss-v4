@@ -64,6 +64,7 @@ spotify: https://open.spotify.com/episode/7xXnR8rP8gB25P9dQkvVQk
 tags:
 - Software Engineering
 - "Produktivit\xE4t"
+- Cloud
 title: '#12 Make oder Buy'
 
 ---

@@ -47,6 +47,7 @@ tags:
 - Tech Kultur
 - Karriere
 - Automation
+- Cloud
 title: '#53 Cloud / NoCode/ AI / ChatGPT ersetzen unsere Jobs?'
 
 ---

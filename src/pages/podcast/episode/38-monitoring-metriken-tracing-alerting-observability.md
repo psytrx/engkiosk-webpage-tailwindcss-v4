@@ -59,6 +59,7 @@ tags:
 - Backend
 - DevOps
 - Software Engineering
+- Cloud
 title: '#38 Monitoring, Metriken, Tracing, Alerting, Observability'
 
 ---

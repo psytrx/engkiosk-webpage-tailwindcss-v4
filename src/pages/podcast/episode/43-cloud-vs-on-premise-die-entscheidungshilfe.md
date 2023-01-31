@@ -60,6 +60,7 @@ spotify: https://open.spotify.com/episode/0dnDJc7pbW5BITUdk06UBj
 tags:
 - Backend
 - DevOps
+- Cloud
 title: '#43 Cloud vs. On-Premise: Die Entscheidungshilfe'
 
 ---

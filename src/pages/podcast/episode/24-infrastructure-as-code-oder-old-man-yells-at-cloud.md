@@ -65,6 +65,7 @@ tags:
 - Automation
 - Backend
 - DevOps
+- Cloud
 title: '#24 Infrastructure as Code oder old man yells at cloud'
 
 ---
