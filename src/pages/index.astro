@@ -26,9 +26,6 @@ allEpisodes.sort((a, b) => new Date(b.frontmatter.pubDate).valueOf() - new Date(
 let episodesToShow = allEpisodes.slice(0, 1);
 let episode = episodesToShow[0];
 
-const truncate = (str, max, suffix) => str.length < max ? str : `${str.substr(0, str.substr(0, max - suffix.length).lastIndexOf(' '))}${suffix}`;
-let lastEpisodeTitleShort = truncate(episode.frontmatter.title, 27, '...');
-
 let currentEpisodeTags = episode.frontmatter.tags.map((element) => URLify(element));
 // Cut description text
 let currentEpisodeDescription = cutText(episode.frontmatter.description, 170);
