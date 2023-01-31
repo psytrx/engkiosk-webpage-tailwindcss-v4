@@ -52,7 +52,10 @@ length_second: 3026
 pubDate: '2023-01-31'
 rtlplus: ''
 spotify: https://open.spotify.com/episode/2QGybmHnaPnv8LhwMCKmDW
-tags: []
+tags:
+- Backend
+- DevOps
+- Cloud
 title: '#56 Applikations-Skalierung: Wann, wieso, was kostet es? Stateless und Stateful,
   Horizontal vs. Vertikal'
 
