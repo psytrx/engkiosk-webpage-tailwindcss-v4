@@ -20,6 +20,7 @@ let description = cutText(frontmatter.description, descriptionChars);
 	<a class="block mb-6 overflow-hidden rounded-md" href={episode.url}>
 		<img class="w-full" src={frontmatter.image} alt={`Details zur Podcast Episode ${frontmatter.title}`} title={`Details zur Podcast Episode ${frontmatter.title}`}>
 	</a>
+	{ tags.map((element) => <a class="inline-block py-1 px-3 mb-3 mr-3 text-xs leading-5 text-yellow-500 hover:text-yellow-600 font-medium uppercase bg-yellow-100 hover:bg-yellow-200 rounded-full shadow-sm no-underline" href={`/tag/${(element.url)}/`}>{element.name}</a>) }
 	<p class="mb-2 text-coolGray-500 font-medium">
 		<time class="date" datetime={frontmatter.pubDate}>{formatDate(frontmatter.pubDate)}</time>
 	</p>
@@ -29,5 +30,4 @@ let description = cutText(frontmatter.description, descriptionChars);
 	<p class="mb-4 text-base md:text-lg text-coolGray-400 font-medium">
 		{description}
 	</p>
-	{ tags.map((element) => <a class="inline-block py-1 px-3 mb-3 mr-3 text-xs leading-5 text-yellow-500 hover:text-yellow-600 font-medium uppercase bg-yellow-100 hover:bg-yellow-200 rounded-full shadow-sm no-underline" href={`/tag/${(element.url)}/`}>{element.name}</a>) }
 </article>

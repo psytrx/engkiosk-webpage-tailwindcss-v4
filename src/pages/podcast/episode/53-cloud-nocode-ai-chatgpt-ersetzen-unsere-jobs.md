@@ -44,7 +44,6 @@ pubDate: '2023-01-10'
 rtlplus: ''
 spotify: https://open.spotify.com/episode/5KjdQVjvdGD4sErBERUFtp
 tags:
-- Tech Kultur
 - Karriere
 - Automation
 - Cloud
