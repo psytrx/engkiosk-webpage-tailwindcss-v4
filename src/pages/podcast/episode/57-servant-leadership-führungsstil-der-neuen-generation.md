@@ -58,7 +58,10 @@ length_second: 3462
 pubDate: '2023-02-07'
 rtlplus: ''
 spotify: https://open.spotify.com/episode/12k50798HY7zzdjt7Shvq4
-tags: []
+tags:
+- Team
+- Kommunikation
+- Leadership
 title: "#57 Servant Leadership: F\xFChrungsstil der neuen Generation?"
 
 ---
