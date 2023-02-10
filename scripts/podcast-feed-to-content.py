@@ -169,6 +169,22 @@ def remove_rel_nofollow_from_internal_links(html_content):
     return new_html_content
 
 
+def modify_openpodcast_up_down_voting(html_content):
+    """
+    Modify the HTML output added for the Thumbs Up/Thumbs Down voting by OpenPodcast.
+
+    Yep, this is super dirty, and hacky and does not scale and you should not do this at home.
+    But i am not at home. And it is Friday evening. And this works.
+    We just are not allowed to change anything on the HTML :D
+    But this is fine (dog sitting on a chair inside a house of fire).
+    """
+    new_html_content = html_content.replace("<h3><strong>Deine ", "<p><strong>Deine ")
+    new_html_content = new_html_content.replace("</strong></h3><h3><a href=\"https://api.openpodcast.dev", "</strong></p><p><a href=\"https://api.openpodcast.dev")
+    new_html_content = new_html_content.replace("</strong> (geht so)</a></h3>", "</strong> (geht so)</a></p>")
+
+    return new_html_content
+
+
 def sync_podcast_episodes(rss_feed, path_md_files, path_img_files, spotify_client):
     """
     Syncs the Podcast Episodes from the RSS feed down to disk
@@ -255,6 +271,7 @@ def sync_podcast_episodes(rss_feed, path_md_files, path_img_files, spotify_clien
         # Thats why we got rid of the prettify logic.
         html_content = description_html.strip()
         html_content = remove_rel_nofollow_from_internal_links(html_content)
+        html_content = modify_openpodcast_up_down_voting(html_content)
 
         chapter = get_chapter_from_description(description)
 
