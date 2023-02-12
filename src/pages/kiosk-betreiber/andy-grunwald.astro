@@ -20,27 +20,12 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 
 			<section class="py-24 md:py-32 bg-white overflow-hidden" style="background-image: url('/images/elements/pattern-white.svg'); background-position: center;">
 				<div class="container px-4 mx-auto">
-					<div class="flex flex-wrap lg:items-center -mx-4">
+					<div class="flex flex-wrap lg:items-start -mx-4">
 						<div class="w-full md:w-1/2 px-4 mb-16 md:mb-0">
-							<span class="inline-block py-px px-2 mb-4 text-xs leading-5 text-yellow-500 bg-yellow-100 font-medium uppercase rounded-full shadow-sm">
-								Der aus dem Ruhrpott
-							</span>
-							<h1 class="mb-8 text-4xl md:text-5xl leading-tight text-coolGray-900 font-bold tracking-tighter">
-								Andy Grunwald
-							</h1>
-							<p class="mb-6 text-lg md:text-xl text-coolGray-500 font-medium">
-								Engineering Manager im Bereich <i>Site Reliability Engineering</i> und Software Engineer mit einem Fokus auf Backend-Systeme, Infrastruktur und Engineering Kultur.
-								Zieht seine Motivation aus der Team-Arbeit mit Menschen, die motiviert sind und etwas nach vorne bringen wollen (<i>Do awesome things with awesome people</i>).
-								Wohnt mittem im Ruhrgebiet, in Duisburg (und will das auch) 👷
-							</p>
-							<p class="mb-6 text-lg md:text-xl text-coolGray-500 font-medium">
-								Langjähriger Open-Source Contributor und Hobby- (bzw. eher Möchtegern)-Landwirt 🧑‍🌾
-								Mag es, seine Grenzen beim Functional Fitness auszuloten und die Freizeit mit seinem Hund zu verbringen.
-							</p>
-							<p class="mb-6 text-lg md:text-xl text-coolGray-500 font-medium">
-								Neben dem <a href="/">Engineering Kiosk</a> betreibt Andy mit <a href="https://app.sourcectl.dev/" class="underline hover:no-underline">sourcectl</a> eine Plattform die Open Source-Kultur sowie Inner Source innerhalb von Firmen zu pushen.
-							</p>
-							<div class="flex items-center ">
+							<div class="flex items-center mb-4">
+								<span class="inline-block mr-6 py-px px-2 text-xs leading-5 text-yellow-500 bg-yellow-100 font-medium uppercase rounded-full shadow-sm">
+									Der aus dem Ruhrpott
+								</span>
 								<a class="inline-block mr-6 hover:opacity-80" href="https://github.com/andygrunwald">
 									<img src="/images/brands/github-gray.svg" alt="Andy Grunwald auf GitHub">
 								</a>
@@ -54,6 +39,21 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 									<img src="/images/elements/icon-website.svg" height="33" width="33" alt="Website von Andy Grunwald">
 								</a>
 							</div>
+							<h1 class="mb-6 text-4xl md:text-5xl leading-tight text-coolGray-900 font-bold tracking-tighter">
+								Andy Grunwald
+							</h1>
+							<p class="mb-6 text-lg md:text-xl text-coolGray-500 font-medium">
+								Engineering Manager im Bereich <i>Site Reliability Engineering</i> und Software Engineer mit einem Fokus auf Backend-Systeme, Infrastruktur und Engineering Kultur.
+								Zieht seine Motivation aus der Team-Arbeit mit Menschen, die motiviert sind und etwas nach vorne bringen wollen (<i>Do awesome things with awesome people</i>).
+								Wohnt mittem im Ruhrgebiet, in Duisburg (und will das auch) 👷
+							</p>
+							<p class="mb-6 text-lg md:text-xl text-coolGray-500 font-medium">
+								Langjähriger Open-Source Contributor und Hobby- (bzw. eher Möchtegern)-Landwirt 🧑‍🌾
+								Mag es, seine Grenzen beim Functional Fitness auszuloten und die Freizeit mit seinem Hund zu verbringen.
+							</p>
+							<p class="text-lg md:text-xl text-coolGray-500 font-medium">
+								Neben dem <a href="/">Engineering Kiosk</a> betreibt Andy mit <a href="https://app.sourcectl.dev/" class="underline hover:no-underline">sourcectl</a> eine Plattform die Open Source-Kultur sowie Inner Source innerhalb von Firmen zu pushen.
+							</p>
 						</div>
 						<div class="w-full md:w-1/2 px-4">
 							<div class="relative mx-auto md:mr-0 max-w-max">
