@@ -1,5 +1,5 @@
 ---
-amazon_music: ''
+amazon_music: https://music.amazon.com/podcasts/c35a09fe-4116-4e04-8f68-77d61b112e46/episodes/25f0de6f-917e-4fce-979c-23c4d83483bd/engineering-kiosk-58-software-updates-alte-software-long-term-support-und-end-of-life-dates
 apple_podcasts: https://podcasts.apple.com/us/podcast/58-software-updates-alte-software-long-term-support/id1603082924?i=1000599470372&uo=4
 audio: https://audio1.redcircle.com/episodes/dcfd7831-32d4-4a68-b816-85636ed618e9/stream.mp3
 chapter:
