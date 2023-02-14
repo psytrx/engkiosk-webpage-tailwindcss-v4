@@ -58,7 +58,10 @@ length_second: 3399
 pubDate: '2023-02-14'
 rtlplus: ''
 spotify: https://open.spotify.com/episode/4Sjrlt6gqfIsDdUDdyRexi
-tags: []
+tags:
+- Software Engineering
+- Open Source
+- Software Qualität
 title: '#58 Software-Updates, alte Software, Long Term Support und End of Life-Dates'
 
 ---
