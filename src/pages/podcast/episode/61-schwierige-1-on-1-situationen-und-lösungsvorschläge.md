@@ -67,7 +67,10 @@ length_second: 3331
 pubDate: '2023-03-07'
 rtlplus: ''
 spotify: https://open.spotify.com/episode/42HDmC8v2lIbjtYw51OJDx
-tags: []
+tags:
+- Karriere
+- Leadership
+- Kommunikation
 title: "#61 Schwierige 1-on-1 Situationen und L\xF6sungsvorschl\xE4ge"
 
 ---
