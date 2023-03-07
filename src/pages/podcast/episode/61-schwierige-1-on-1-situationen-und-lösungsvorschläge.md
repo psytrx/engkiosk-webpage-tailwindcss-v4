@@ -1,5 +1,5 @@
 ---
-amazon_music: ''
+amazon_music: https://music.amazon.com/podcasts/c35a09fe-4116-4e04-8f68-77d61b112e46/episodes/5a313c74-ad11-425c-ae43-c1c23270c350/engineering-kiosk-61-schwierige-1-on-1-situationen-und-l%C3%B6sungsvorschl%C3%A4ge
 apple_podcasts: ''
 audio: https://audio1.redcircle.com/episodes/c9b7f67b-5521-4cb1-ba03-274ba6cf6939/stream.mp3
 chapter:
