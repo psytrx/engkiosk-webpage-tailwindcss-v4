@@ -53,6 +53,7 @@ spotify: https://open.spotify.com/episode/3KXQnrxoKkdTDFVXxiR3IA
 tags:
 - Karriere
 - Leadership
+- Kommunikation
 title: '#10 Das Karriere Booster Meeting 1:1s'
 
 ---
