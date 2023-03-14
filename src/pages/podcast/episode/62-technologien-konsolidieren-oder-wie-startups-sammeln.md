@@ -57,7 +57,11 @@ length_second: 4100
 pubDate: '2023-03-14'
 rtlplus: ''
 spotify: https://open.spotify.com/episode/6alK1PX68LecoAWJRiLG61
-tags: []
+tags:
+- Software Engineering
+- Kommunikation
+- Tech Kultur
+- Team
 title: '#62 Technologien konsolidieren, oder wie Startups sammeln?'
 
 ---
