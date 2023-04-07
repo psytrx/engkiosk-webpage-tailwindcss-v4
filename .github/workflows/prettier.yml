@@ -1,0 +1,37 @@
+name: Code formatting
+
+on:
+  schedule:
+    - cron: "15 4 2 * *" # At 04:05 on day-of-month 2.
+  workflow_dispatch:
+
+jobs:
+  formatting:
+    name: Code formatting
+    runs-on: ubuntu-22.04
+
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 19.5.0
+
+      - name: Run make clean
+        run: make clean
+
+      - name: Run make init
+        run: make init
+
+      - name: Run make prettier
+        run: make prettier
+
+      # Commit results back to repository
+      - uses: stefanzweifel/git-auto-commit-action@v4
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          commit_message: Code formatting via `make prettier`
+          branch: main
+          commit_user_name: Code formatting workflow bot
+          commit_user_email: stehtisch@engineeringkiosk.dev
+          commit_author: Code formatting workflow bot <stehtisch@engineeringkiosk.dev>
