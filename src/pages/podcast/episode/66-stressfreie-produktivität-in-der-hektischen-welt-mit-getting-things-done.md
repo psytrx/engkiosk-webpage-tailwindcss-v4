@@ -1,5 +1,5 @@
 ---
-amazon_music: ''
+amazon_music: https://music.amazon.com/podcasts/c35a09fe-4116-4e04-8f68-77d61b112e46/episodes/0a93103b-9115-4156-924a-8bd3fc23988a/engineering-kiosk-66-stressfreie-produktivit%C3%A4t-in-der-hektischen-welt-mit-getting-things-done
 apple_podcasts: ''
 audio: https://audio1.redcircle.com/episodes/72077b46-0d24-471e-ad80-e620f297fb07/stream.mp3
 chapter:
