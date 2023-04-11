@@ -51,7 +51,9 @@ length_second: 3660
 pubDate: '2023-04-11'
 rtlplus: ''
 spotify: https://open.spotify.com/episode/1Bd5AexCjifidq1zHA77VB
-tags: []
+tags:
+- Karriere
+- "Produktivität"
 title: "#66 Stressfreie Produktivit\xE4t in der hektischen Welt mit Getting Things\
   \ Done"
 youtube: ''
