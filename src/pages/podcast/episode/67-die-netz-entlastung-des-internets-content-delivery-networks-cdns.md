@@ -64,7 +64,10 @@ length_second: 4002
 pubDate: '2023-04-18'
 rtlplus: ''
 spotify: https://open.spotify.com/episode/1kWAY9ka57z43uqENYwnhe
-tags: []
+tags:
+- Frontend
+- Cloud
+- "Software Engineering"
 title: '#67 Die Netz-Entlastung des Internets: Content Delivery Networks (CDNs)'
 youtube: ''
 
