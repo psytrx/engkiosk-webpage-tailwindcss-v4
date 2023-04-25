@@ -66,7 +66,10 @@ length_second: 4178
 pubDate: '2023-04-25'
 rtlplus: ''
 spotify: https://open.spotify.com/episode/62rbOMaw6dLKYDgBEZWtjW
-tags: []
+tags:
+- Karriere
+- Kommunikation
+- Produktivität
 title: '#68 Im "Flow" und Deepwork mit Kirill Sivy'
 youtube: ''
 
