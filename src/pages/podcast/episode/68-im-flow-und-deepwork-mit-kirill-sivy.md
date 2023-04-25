@@ -1,6 +1,6 @@
 ---
 amazon_music: ''
-apple_podcasts: ''
+apple_podcasts: https://podcasts.apple.com/us/podcast/68-im-flow-und-deepwork-mit-kirill-sivy/id1603082924?i=1000610502910&uo=4
 audio: https://audio1.redcircle.com/episodes/b3ae8251-d641-4dcc-a45e-73dc88c91c3c/stream.mp3
 chapter:
 - start: 00:00:00
@@ -57,7 +57,7 @@ description: "Der Flow, der Tunnel, die Zone - Der Zustand nach dem viele Softwa
   \ Das und noch viel mehr besprechen wir in dieser Episode. Bonus: Der Grund warum\
   \ wir beim Duschen immer zu den besten Gedanken kommen.  Das schnelle Feedback zur\
   \ Episode: \U0001F44D (top) \_\U0001F44E (geht so)"
-google_podcasts: ''
+google_podcasts: https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5yZWRjaXJjbGUuY29tLzBlY2ZkZmQ3LWZkYTEtNGMzZC05NTE1LTQ3NjcyN2Y5ZGY1ZQ/episode/ZmJiYTE0Y2MtOTMxNi00MjZiLWI3NGUtMTUwMTcwNTk0NDg3?sa=X&ved=2ahUKEwi3iOm6tsT-AhVhrmoFHbGtA_QQkfYCegQIARAF
 headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts||feedback-gerne-auch-als-voice-message::Feedback
   (gerne auch als Voice Message)
 image: /images/podcast/episode/68-im-flow-und-deepwork-mit-kirill-sivy.jpg
@@ -69,7 +69,7 @@ spotify: https://open.spotify.com/episode/62rbOMaw6dLKYDgBEZWtjW
 tags:
 - Karriere
 - Kommunikation
-- Produktivität
+- "Produktivit\xE4t"
 title: '#68 Im "Flow" und Deepwork mit Kirill Sivy'
 youtube: ''
 
