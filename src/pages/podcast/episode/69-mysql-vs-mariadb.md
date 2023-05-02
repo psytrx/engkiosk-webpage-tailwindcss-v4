@@ -62,7 +62,10 @@ length_second: 4259
 pubDate: '2023-05-02'
 rtlplus: ''
 spotify: https://open.spotify.com/episode/6DwWMYYRP38mDMc09gjq25
-tags: []
+tags:
+- Backend
+- Software Engineering
+- Datenbanken
 title: '#69 MySQL vs. MariaDB'
 youtube: ''
 
