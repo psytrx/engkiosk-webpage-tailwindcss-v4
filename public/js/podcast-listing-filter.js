@@ -1,22 +1,22 @@
 /**
  * addFilterListener adds required event listener to form
  * elements.
- * 
+ *
  * @return void
  */
 function addFilterListener() {
-	let filterLastEpisode = document.getElementById("filter-last-episode");
-	filterLastEpisode.addEventListener("change", handleFilterLastEpisode); 
+	let filterLastEpisode = document.getElementById('filter-last-episode');
+	filterLastEpisode.addEventListener('change', handleFilterLastEpisode);
 }
 
 /**
  * handleFilterLastEpisode handles the change event on
  * the form field "Last episode" (1 week, 2 weeks, ...).
- * 
+ *
  * Both filter are exclusive to each other.
  * Only one can be active.
- * 
- * @param event elem 
+ *
+ * @param event elem
  * @return void
  */
 function handleFilterLastEpisode(elem) {
@@ -26,52 +26,52 @@ function handleFilterLastEpisode(elem) {
 /**
  * getSelectElementValue retrieves the selected value from
  * elementID. elementID need to be a <select> field.
- * 
- * @param string elementID 
+ *
+ * @param string elementID
  * @returns string
  */
-function getSelectElementValue(elementID) {    
-    const elem = document.getElementById(elementID);
-    return elem.value;
+function getSelectElementValue(elementID) {
+	const elem = document.getElementById(elementID);
+	return elem.value;
 }
 
 /**
  * getFilterAttributes returns the current active filter.
- * 
+ *
  * @returns object
  */
 function getFilterAttributes() {
 	let currentFilter = {};
 
-	const lastEpisodeFilter = getSelectElementValue("filter-last-episode");
-	if (lastEpisodeFilter != "") {
-		currentFilter["lastEpisode"] = lastEpisodeFilter;
+	const lastEpisodeFilter = getSelectElementValue('filter-last-episode');
+	if (lastEpisodeFilter != '') {
+		currentFilter['lastEpisode'] = lastEpisodeFilter;
 	}
 
-	return currentFilter
+	return currentFilter;
 }
 
 /**
  * makeEveryPodcastVisible ensures that every tech podcast
  * is visible on the page again. Independent from various filters.
- * 
+ *
  * @return void
  */
 function makeEveryPodcastVisible() {
-	const elements = document.getElementsByClassName("tech-podcast");
+	const elements = document.getElementsByClassName('tech-podcast');
 	for (let elem of elements) {
-		elem.classList.remove("hidden");
+		elem.classList.remove('hidden');
 	}
 }
 
 /**
  * filter takes care of the main logic, the filtering.
- * It gets the current active filter and hides or shows 
+ * It gets the current active filter and hides or shows
  * particular podcasts based on the selected filters.
- * 
+ *
  * The current filter are exclusive to each other.
  * Only one can be active.
- * 
+ *
  * @returns void
  */
 function filter() {
@@ -84,14 +84,14 @@ function filter() {
 		return;
 	}
 
-	const elements = document.getElementsByClassName("tech-podcast");
+	const elements = document.getElementsByClassName('tech-podcast');
 	for (let elem of elements) {
 		// Filter for "last episode published within the last X days"
-		if ("lastEpisode" in currentFilters &&  currentFilters["lastEpisode"] != "") {
-			if (parseInt(elem.dataset["daysSinceLastEpisode"]) <= parseInt(currentFilters["lastEpisode"])) {
-				elem.classList.remove("hidden");
+		if ('lastEpisode' in currentFilters && currentFilters['lastEpisode'] != '') {
+			if (parseInt(elem.dataset['daysSinceLastEpisode']) <= parseInt(currentFilters['lastEpisode'])) {
+				elem.classList.remove('hidden');
 			} else {
-				elem.classList.add("hidden");
+				elem.classList.add('hidden');
 			}
 		}
 	}
@@ -110,14 +110,14 @@ function filter() {
 function updateFilterCounter() {
 	const totalPodcasts = getTotalPodcastCounter();
 	const visiblePodcasts = currentVisiblePodcastCounter();
-	document.getElementById("filter-count-match").innerText = visiblePodcasts;
-	document.getElementById("filter-count-total").innerText = totalPodcasts;
+	document.getElementById('filter-count-match').innerText = visiblePodcasts;
+	document.getElementById('filter-count-total').innerText = totalPodcasts;
 }
 
 /**
  * toggleNoFilterMatchMessage ensures, if no podcast is matching the current
  * filter, that a "sorry, no match" message is shown.
- * 
+ *
  * @return void
  */
 function toggleNoFilterMatchMessage() {
@@ -125,9 +125,9 @@ function toggleNoFilterMatchMessage() {
 
 	// If there are no podcasts, matching all filter, show a small message
 	if (counter == 0) {
-		document.getElementById("no-filter-match").classList.remove("hidden");
+		document.getElementById('no-filter-match').classList.remove('hidden');
 	} else {
-		document.getElementById("no-filter-match").classList.add("hidden");
+		document.getElementById('no-filter-match').classList.add('hidden');
 	}
 }
 
@@ -137,7 +137,7 @@ function toggleNoFilterMatchMessage() {
  * @return void
  */
 function showFilterCountMessage() {
-	document.getElementById("filter-count").classList.remove("invisible");
+	document.getElementById('filter-count').classList.remove('invisible');
 }
 
 /**
@@ -147,20 +147,20 @@ function showFilterCountMessage() {
  */
 
 function hideFilterCountMessage() {
-	document.getElementById("filter-count").classList.add("invisible");
+	document.getElementById('filter-count').classList.add('invisible');
 }
 
 /**
  * currentVisiblePodcastCounter returns the number of podcasts visible on the page.
  * Filtered podcasts are not part of this counter, only visible ones.
- * 
+ *
  * @return number
  */
 function currentVisiblePodcastCounter() {
-	const elements = document.getElementsByClassName("tech-podcast");
-	let counter =  elements.length;
+	const elements = document.getElementsByClassName('tech-podcast');
+	let counter = elements.length;
 	for (let elem of elements) {
-		if (elem.classList.contains("hidden")) {
+		if (elem.classList.contains('hidden')) {
 			counter -= 1;
 		}
 	}
@@ -175,14 +175,14 @@ function currentVisiblePodcastCounter() {
  * @return number
  */
 function getTotalPodcastCounter() {
-	const elements = document.getElementsByClassName("tech-podcast");
+	const elements = document.getElementsByClassName('tech-podcast');
 	return elements.length;
 }
 
 // Add event listener on the form filter elements
 window.addEventListener('DOMContentLoaded', (event) => {
 	// Make filter bar visible (only when javascript is activated)
-	document.getElementById("filter").classList.remove("invisible");
+	document.getElementById('filter').classList.remove('invisible');
 
 	addFilterListener();
 	updateFilterCounter();

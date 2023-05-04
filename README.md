@@ -1,6 +1,6 @@
 # Engineering Kiosk: Web page
 
-Built with [Astro](https://astro.build/). 
+Built with [Astro](https://astro.build/).
 
 Check it out at [engineeringkiosk.dev](https://www.engineeringkiosk.dev/)
 
@@ -16,10 +16,9 @@ $ make run
 
 All commands are run from the root of the project, from a terminal.
 
-
 Available `Makefile` commands:
 
-```
+````
 build                          Compiles the application into static content
 clean                          Deletes the generated content and node_modules
 episode-check                  Checks all Podcast Episodes if all player links (Spotify, etc.) are set
@@ -47,17 +46,19 @@ Native npm commands:
 
 Native python script commands:
 
-```
+````
+
 $ python3 scripts/podcast-feed-to-content.py -h
 usage: podcast-feed-to-content.py [-h] [mode]
 
 Automate new Podcast Episide parsing
 
 positional arguments:
-  mode        Mode to execute. Supported: sync, redirect (default: sync)
+mode Mode to execute. Supported: sync, redirect (default: sync)
 
 options:
-  -h, --help  show this help message and exit
+-h, --help show this help message and exit
+
 ```
 
 ## Checklist: Releasing a new Podcast episode
@@ -118,3 +119,4 @@ The main differences of the fork in comparision to its origin can be found in th
 
 In combination, we downloaded a minified version of [https://github.com/embedly/player.js](https://github.com/embedly/player.js) into `public/js`.
 If we aim to upgrade *player.js*, download and replace the minified javascript file.
+```

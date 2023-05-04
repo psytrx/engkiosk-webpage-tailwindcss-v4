@@ -8,9 +8,5 @@ export default defineConfig({
 	site: 'https://engineeringkiosk.dev/',
 	trailingSlash: 'always',
 
-	integrations: [
-		tailwind(),
-		sitemap(),
-		mdx(),
-	],
+	integrations: [tailwind(), sitemap(), mdx()],
 });

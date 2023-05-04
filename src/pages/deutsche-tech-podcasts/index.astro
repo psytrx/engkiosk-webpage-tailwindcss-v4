@@ -4,7 +4,7 @@ import MainHead from '../../components/MainHead.astro';
 import Nav from '../../components/Nav.astro';
 import TechPodcastPreview from '../../components/TechPodcastPreview.astro';
 
-import germanTechPodcasts from "../../data/german-tech-podcasts.json";
+import germanTechPodcasts from '../../data/german-tech-podcasts.json';
 
 let title = 'Die besten Deutschsprachigen Tech Podcasts kuratiert im Engineering Kiosk';
 let description = 'Eine handverlesene Liste der besten deutschsprachigen Tech Podcasts zu relevanten Themen für Entwickler:innen, Tech-Leads und Nerds.';
@@ -12,22 +12,21 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 
 // Sort Podcasts by name
 function orderByName(a, b) {
-  if (a.name.toLowerCase() < b.name.toLowerCase()){
-    return -1;
-  }
-  
-  if (a.name.toLowerCase() > b.name.toLowerCase()){
-    return 1;
-  }
+	if (a.name.toLowerCase() < b.name.toLowerCase()) {
+		return -1;
+	}
 
-  return 0;
+	if (a.name.toLowerCase() > b.name.toLowerCase()) {
+		return 1;
+	}
+
+	return 0;
 }
-germanTechPodcasts.sort(orderByName)
-
+germanTechPodcasts.sort(orderByName);
 ---
 
 <html lang="de">
-  <head>
+	<head>
 		<MainHead title={title} description={description} image="/images/headers/german-tech-podcasts-head.jpeg" {canonicalURL} />
 		<script src="/js/podcast-listing-filter.js" is:inline></script>
 	</head>
@@ -40,28 +39,23 @@ germanTechPodcasts.sort(orderByName)
 				<div class="container px-4 mx-auto">
 					<div class="flex flex-wrap items-center mb-12">
 						<div class="w-full md:w-3/4 mb-8 md:mb-0">
-							<span class="inline-block py-px px-2 mb-4 text-xs leading-5 text-yellow-500 bg-yellow-100 font-medium uppercase rounded-full shadow-sm">
-								Community Podcast
-							</span>
-							<h1 class="mb-4 text-4xl md:text-5xl leading-tight text-darkCoolGray-900 font-bold tracking-tighter">
-								Deutschsprachige Tech Podcasts
-							</h1>
+							<span class="inline-block py-px px-2 mb-4 text-xs leading-5 text-yellow-500 bg-yellow-100 font-medium uppercase rounded-full shadow-sm"> Community Podcast</span>
+							<h1 class="mb-4 text-4xl md:text-5xl leading-tight text-darkCoolGray-900 font-bold tracking-tighter">Deutschsprachige Tech Podcasts</h1>
 							<p class="text-lg md:text-xl text-coolGray-500 font-medium">
-								Ein ordentlicher Kiosk verfügt natürlich über ein ausgewogenes Angebot. Ein Zeitschriften-Kiosk bietet eine Auswahl an Zeitschriften,
-								der Engineering Kiosk hingegen eine gute Auswahl an Tech-Podcasts. Daher haben wir - selbst Podcasts-Hosts - eine <span class="font-bold">kuratierte Liste von
-								<span id="number-podcasts">{ germanTechPodcasts.length }</span> deutschsprachigen Tech-Podcasts</span> 🇩🇪 🇦🇹 🇨🇭 für euch zusammengestellt.
+								Ein ordentlicher Kiosk verfügt natürlich über ein ausgewogenes Angebot. Ein Zeitschriften-Kiosk bietet eine Auswahl an Zeitschriften, der Engineering Kiosk hingegen eine gute Auswahl an Tech-Podcasts. Daher haben wir - selbst Podcasts-Hosts - eine <span class="font-bold"
+									>kuratierte Liste von
+									<span id="number-podcasts">{germanTechPodcasts.length}</span> deutschsprachigen Tech-Podcasts</span
+								> 🇩🇪 🇦🇹 🇨🇭 für euch zusammengestellt.
 							</p>
 						</div>
 						<div class="w-full md:w-1/4">
 							<div>
 								<a class="flex items-center justify-center py-2 px-4 ml-auto text-sm leading-5 text-yellow-50 font-medium bg-yellow-500 hover:bg-yellow-600 focus:ring-2 focus:ring-yellow-500 focus:ring-opacity-50 md:max-w-max rounded-md" href="https://github.com/EngineeringKiosk/GermanTechPodcasts">
-									Die Podcast Liste auf GitHub <img class="ml-2 w-8" src="/images/brands/github-black.svg" alt="Deutschsprachige Tech Podcasts auf GitHub" title="Deutschsprachige Tech Podcasts auf GitHub">
+									Die Podcast Liste auf GitHub <img class="ml-2 w-8" src="/images/brands/github-black.svg" alt="Deutschsprachige Tech Podcasts auf GitHub" title="Deutschsprachige Tech Podcasts auf GitHub" />
 								</a>
 							</div>
 							<div class="mt-5">
-								<a class="flex items-center justify-center py-2 px-4 ml-auto text-sm leading-5 font-medium text-coolGray-500 hover:text-coolGray-900 bg-transparent focus:ring-2 focus:ring-opacity-50 md:max-w-max rounded-md" href="/deutsche-tech-podcasts/podcasts.opml">
-									Podcasts als OPML Datei
-								</a>
+								<a class="flex items-center justify-center py-2 px-4 ml-auto text-sm leading-5 font-medium text-coolGray-500 hover:text-coolGray-900 bg-transparent focus:ring-2 focus:ring-opacity-50 md:max-w-max rounded-md" href="/deutsche-tech-podcasts/podcasts.opml"> Podcasts als OPML Datei</a>
 							</div>
 						</div>
 					</div>
@@ -83,14 +77,12 @@ germanTechPodcasts.sort(orderByName)
 				</div>
 			</section>
 
-			{germanTechPodcasts.map((podcast) => <TechPodcastPreview podcast={podcast} /> )}
+			{germanTechPodcasts.map((podcast) => <TechPodcastPreview podcast={podcast} />)}
 
 			<section id="no-filter-match" class="hidden pt-24 pb-4 bg-coolGray-50" style="background-image: url('/images/elements/pattern-light-big.svg'); background-position: center;">
 				<div class="container px-4 mx-auto">
 					<div class="mb-8 text-center">
-						<h3 class="mb-4 text-xl md:text-3xl leading-tight text-coolGray-900 font-bold tracking-tighter">
-							Leider passt kein Podcast zu deinen Filterkriterien :(
-						</h3>
+						<h3 class="mb-4 text-xl md:text-3xl leading-tight text-coolGray-900 font-bold tracking-tighter">Leider passt kein Podcast zu deinen Filterkriterien :(</h3>
 					</div>
 				</div>
 			</section>
@@ -98,11 +90,12 @@ germanTechPodcasts.sort(orderByName)
 			<section class="py-24 bg-coolGray-50" style="background-image: url('/images/elements/pattern-light-big.svg'); background-position: center;">
 				<div class="container px-4 mx-auto">
 					<div class="mb-16 text-center">
-						<h3 class="mb-4 text-3xl md:text-5xl leading-tight text-coolGray-900 font-bold tracking-tighter">
-							Dein Lieblingspodcast fehlt?
-						</h3>
-						<a class="flex items-center justify-center py-2 px-4 m-auto text-sm leading-5 text-yellow-50 font-medium bg-yellow-500 hover:bg-yellow-600 focus:ring-2 focus:ring-yellow-500 focus:ring-opacity-50 md:max-w-max rounded-md" href="https://github.com/EngineeringKiosk/GermanTechPodcasts/blob/main/CONTRIBUTING.md">
-							Sende uns ein Pull-Request auf GitHub <img class="ml-2 w-8" src="/images/brands/github-black.svg" alt="Deutschsprachige Tech Podcasts auf GitHub" title="Deutschsprachige Tech Podcasts auf GitHub">
+						<h3 class="mb-4 text-3xl md:text-5xl leading-tight text-coolGray-900 font-bold tracking-tighter">Dein Lieblingspodcast fehlt?</h3>
+						<a
+							class="flex items-center justify-center py-2 px-4 m-auto text-sm leading-5 text-yellow-50 font-medium bg-yellow-500 hover:bg-yellow-600 focus:ring-2 focus:ring-yellow-500 focus:ring-opacity-50 md:max-w-max rounded-md"
+							href="https://github.com/EngineeringKiosk/GermanTechPodcasts/blob/main/CONTRIBUTING.md"
+						>
+							Sende uns ein Pull-Request auf GitHub <img class="ml-2 w-8" src="/images/brands/github-black.svg" alt="Deutschsprachige Tech Podcasts auf GitHub" title="Deutschsprachige Tech Podcasts auf GitHub" />
 						</a>
 					</div>
 				</div>

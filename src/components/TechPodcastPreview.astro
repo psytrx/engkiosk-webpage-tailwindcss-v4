@@ -3,11 +3,11 @@ export interface Props {
 	podcast: any;
 }
 
-import { URLify } from "../scripts/urlify.js"
-import { formatDate, formatUnixTimestampToDate } from "../scripts/date.js"
+import { URLify } from '../scripts/urlify.js';
+import { formatDate, formatUnixTimestampToDate } from '../scripts/date.js';
 
 const { podcast } = Astro.props;
-const podcast_image = podcast.image.replace(/^.*[\\\/]/, '')
+const podcast_image = podcast.image.replace(/^.*[\\\/]/, '');
 
 let tags = [];
 if (podcast.tags) {
@@ -28,21 +28,21 @@ if (podcast.tags) {
 function getLastEpisodeStatus(timestamp) {
 	let episode = new Date(timestamp * 1000);
 
-	let dateClone = new Date()
+	let dateClone = new Date();
 	let sixMonth = new Date(dateClone.setMonth(dateClone.getMonth() - 6));
 
-	dateClone = new Date()
+	dateClone = new Date();
 	let twoMonth = new Date(dateClone.setMonth(dateClone.getMonth() - 2));
 
 	if (episode < sixMonth) {
-		return ["🔴", "inactive"]
+		return ['🔴', 'inactive'];
 	}
 
 	if (episode > sixMonth && episode < twoMonth) {
-		return ["🟡", "delayed"]
+		return ['🟡', 'delayed'];
 	}
 
-	return ["🟢", "active"]
+	return ['🟢', 'active'];
 }
 
 let date_1 = new Date('10/25/2021');
@@ -55,41 +55,53 @@ let date_2 = new Date();
  * @return number
  */
 function daysBetween(dateOne, dateTwo) {
-    const difference = dateOne.getTime() - dateTwo.getTime();
-    const days = Math.ceil(difference / (1000 * 3600 * 24));
-    return days;
+	const difference = dateOne.getTime() - dateTwo.getTime();
+	const days = Math.ceil(difference / (1000 * 3600 * 24));
+	return days;
 }
 
-let episode_status = getLastEpisodeStatus(podcast.latestEpisodePublished)
-let episode_status_emojy = episode_status[0]
+let episode_status = getLastEpisodeStatus(podcast.latestEpisodePublished);
+let episode_status_emojy = episode_status[0];
 
 // data-* attribute to identify if this is an active or inactive podcast
 // - Attribute "data-publishing-episode-status"
-const dataEpisodePublishingStatus_str = episode_status[1]
+const dataEpisodePublishingStatus_str = episode_status[1];
 
 // data-* attribute to identify when was the last episide published (in number of days)
 // - Attribute "data-days-since-last-episode"
 const lastEpisodePublished = new Date(podcast.latestEpisodePublished * 1000);
 const today = new Date();
-const dataDaysSinceLastEpisode = daysBetween(today, lastEpisodePublished)
+const dataDaysSinceLastEpisode = daysBetween(today, lastEpisodePublished);
 
 // If a Podcast is not available on Apple Podcasts,
 // we add different css classes.
-let spotifyClassName = "m-4";
+let spotifyClassName = 'm-4';
 if (podcast.itunesID == 0) {
-	spotifyClassName = "mb-4 mt-4 mr-4";
+	spotifyClassName = 'mb-4 mt-4 mr-4';
 }
 
 // Generate id based on the name
 const nameId = URLify(podcast.name);
 ---
 
-<section id={nameId.url} class="tech-podcast py-8 md:py-12 bg-white overflow-hidden" data-days-since-last-episode={dataDaysSinceLastEpisode} data-publishing-episode-status={dataEpisodePublishingStatus_str} style="background-image: url('/images/elements/pattern-white.svg'); background-position: center;">
+<section
+	id={nameId.url}
+	class="tech-podcast py-8 md:py-12 bg-white overflow-hidden"
+	data-days-since-last-episode={dataDaysSinceLastEpisode}
+	data-publishing-episode-status={dataEpisodePublishingStatus_str}
+	style="background-image: url('/images/elements/pattern-white.svg'); background-position: center;"
+>
 	<div class="container px-4 mx-auto">
 		<div class="flex flex-wrap lg:items-center -mx-4">
 			<div class="w-full md:w-8/12 px-4 mb-16 md:mb-0">
-				{ tags.map((element) => <a class="inline-block py-px mr-2 px-2 mb-4 text-xs leading-5 text-yellow-500 bg-yellow-100 font-medium uppercase rounded-full shadow-sm" href={`/deutsche-tech-podcasts/${(element.url)}-podcasts/`}>{element.name}</a>) }
-				
+				{
+					tags.map((element) => (
+						<a class="inline-block py-px mr-2 px-2 mb-4 text-xs leading-5 text-yellow-500 bg-yellow-100 font-medium uppercase rounded-full shadow-sm" href={`/deutsche-tech-podcasts/${element.url}-podcasts/`}>
+							{element.name}
+						</a>
+					))
+				}
+
 				<h2 class="mb-8 text-4xl md:text-5xl leading-tight text-coolGray-900 font-bold tracking-tighter">
 					<a href={podcast.website} class="hover:underline hover:text-yellow-500" title={`Website von ${podcast.name}`}>
 						{podcast.name}
@@ -101,24 +113,38 @@ const nameId = URLify(podcast.name);
 				<ul class="mb-4 text-lg md:text-xl text-coolGray-500 font-medium list-disc list-inside">
 					<li>Anzahl Episoden: {podcast.episodeCount}</li>
 					<li>Aktuellste Episode vom {formatUnixTimestampToDate(podcast.latestEpisodePublished)} {episode_status_emojy}</li>
-					{ podcast.weekly_downloads_avg.value > 0 && <li>Wöchentliche downloads (avg): {podcast.weekly_downloads_avg.value} (Zahl von {formatDate(podcast.weekly_downloads_avg.updated)})</li> }
+					{
+						podcast.weekly_downloads_avg.value > 0 && (
+							<li>
+								Wöchentliche downloads (avg): {podcast.weekly_downloads_avg.value} (Zahl von {formatDate(podcast.weekly_downloads_avg.updated)})
+							</li>
+						)
+					}
 				</ul>
 				<div class="flex flex-wrap">
-					{ podcast.itunesID > 0 && <div class="mb-4 mt-4 mr-4">
-						<a class="flex items-center" href={`https://podcasts.apple.com/de/podcast/${podcast.itunesID}`} title={`${podcast.name} bei Apple Podcasts`}>
-							<img class="w-8" src="/images/brands/apple.svg" alt={`${podcast.name} bei Apple Podcasts`} title={`${podcast.name} bei Apple Podcasts`}>
-							<span class="text-coolGray-500 text-lg m-2">Apple</span>
-						</a>
-					</div>}
-					{ podcast.spotify.length > 0 && <div class={spotifyClassName}>
-						<a class="flex items-center" href={podcast.spotify} title={`${podcast.name} auf Spotify`}>
-							<img class="w-8" src="/images/brands/spotify.svg" alt={`${podcast.name} auf Spotify`} title={`${podcast.name} auf Spotify`}>
-							<span class="text-coolGray-500 text-lg m-2">Spotify</span>
-						</a>
-					</div>}
+					{
+						podcast.itunesID > 0 && (
+							<div class="mb-4 mt-4 mr-4">
+								<a class="flex items-center" href={`https://podcasts.apple.com/de/podcast/${podcast.itunesID}`} title={`${podcast.name} bei Apple Podcasts`}>
+									<img class="w-8" src="/images/brands/apple.svg" alt={`${podcast.name} bei Apple Podcasts`} title={`${podcast.name} bei Apple Podcasts`} />
+									<span class="text-coolGray-500 text-lg m-2">Apple</span>
+								</a>
+							</div>
+						)
+					}
+					{
+						podcast.spotify.length > 0 && (
+							<div class={spotifyClassName}>
+								<a class="flex items-center" href={podcast.spotify} title={`${podcast.name} auf Spotify`}>
+									<img class="w-8" src="/images/brands/spotify.svg" alt={`${podcast.name} auf Spotify`} title={`${podcast.name} auf Spotify`} />
+									<span class="text-coolGray-500 text-lg m-2">Spotify</span>
+								</a>
+							</div>
+						)
+					}
 					<div class="mb-4 mt-4 ml-4">
 						<a class="flex items-center" href={podcast.rssFeed} title={`${podcast.name} als RSS-Feed`}>
-							<img class="w-8" src="/images/brands/rss.svg" alt={`${podcast.name} als RSS-Feed`} title={`${podcast.name} als RSS-Feed`}>
+							<img class="w-8" src="/images/brands/rss.svg" alt={`${podcast.name} als RSS-Feed`} title={`${podcast.name} als RSS-Feed`} />
 							<span class="text-coolGray-500 text-lg m-2">RSS</span>
 						</a>
 					</div>
@@ -127,7 +153,7 @@ const nameId = URLify(podcast.name);
 			<div class="w-full md:w-4/12 px-4">
 				<div class="relative mx-auto md:mr-0 max-w-max">
 					<a href={podcast.website} title={`Website von ${podcast.name}`}>
-						<img class="rounded-3xl" src={`/images/german-tech-podcasts/${podcast_image}`} alt={`Podcast ${podcast.name}`} title={`Podcast ${podcast.name}`}>
+						<img class="rounded-3xl" src={`/images/german-tech-podcasts/${podcast_image}`} alt={`Podcast ${podcast.name}`} title={`Podcast ${podcast.name}`} />
 					</a>
 				</div>
 			</div>

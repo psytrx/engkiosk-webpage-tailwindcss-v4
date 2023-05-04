@@ -8,6 +8,7 @@ let title = 'Alle Podcast Episoden - Engineering Kiosk';
 let description = 'Alle Episoden vom deutschsprachigen Software-Engineering-Podcast mit Wolfgang Gassler und Andy Grunwald über die Themen Engineering-Kultur, Open Source und Technologie.';
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 ---
+
 <html lang="de">
 	<head>
 		<MainHead title={title} description={description} image="/images/logos/pocast-episode-logo-cover.png" {canonicalURL} />
@@ -17,7 +18,7 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 		<div>
 			<Nav title={title} />
 
-			<PodcastEpisodeListing numberOfItems=0 />
+			<PodcastEpisodeListing numberOfItems="0" />
 
 			<Footer />
 		</div>

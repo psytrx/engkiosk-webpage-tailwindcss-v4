@@ -6,11 +6,10 @@ import Nav from '../components/Nav.astro';
 let title = 'Impressum - Engineering Kiosk';
 let description = 'Der deutschsprachige Software-Engineering-Podcast mit Wolfgang Gassler und Andy Grunwald rund um die Themen Engineering-Kultur, Open Source und Technologie.';
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
-
 ---
 
 <html lang="de">
-  <head>
+	<head>
 		<MainHead title={title} description={description} image="/images/headers/andy-grunwald-wolfgang-gassler-2022-01-07.jpg" {canonicalURL} />
 	</head>
 
@@ -24,35 +23,23 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 						<div class="w-full px-4 mb-10">
 							<div class="flex flex-wrap justify-between items-center">
 								<div class="w-full md:w-1/2 mb-10 md:mb-0">
-									<h1 class="mb-4 text-3xl md:text-4xl text-coolGray-900 font-bold tracking-tighter">
-										Impressum
-									</h1>
+									<h1 class="mb-4 text-3xl md:text-4xl text-coolGray-900 font-bold tracking-tighter">Impressum</h1>
 								</div>
 							</div>
 						</div>
 						<div class="w-full lg:w-1/2 px-4 mb-5 lg:mb-0">
-							<p class="mb-4 text-lg md:text-xl leading-8 text-coolGray-500 font-semibold">
-								Verantwortlich für den Inhalt dieser Webseite
-							</p>
+							<p class="mb-4 text-lg md:text-xl leading-8 text-coolGray-500 font-semibold">Verantwortlich für den Inhalt dieser Webseite</p>
 							<p class="mb-5 text-lg font-medium leading-7 text-coolGray-500">
 								<a href="https://andygrunwald.com/">Andreas Grunwald</a> &amp;
 								<a href="https://gassler.dev">Wolfgang Gassler</a>
 							</p>
 
-							<p class="mb-4 text-lg md:text-xl leading-8 text-coolGray-500 font-semibold">
-								Kontakt
-							</p>
-							<p class="mb-5 text-lg font-medium leading-7 text-coolGray-500">
-								E-Mail: stehtisch@engineeringkiosk.dev
-							</p>
+							<p class="mb-4 text-lg md:text-xl leading-8 text-coolGray-500 font-semibold">Kontakt</p>
+							<p class="mb-5 text-lg font-medium leading-7 text-coolGray-500">E-Mail: stehtisch@engineeringkiosk.dev</p>
 						</div>
 						<div class="w-full lg:w-1/2 px-4">
-							<p class="mb-4 text-lg md:text-xl leading-8 text-coolGray-500 font-semibold">
-								Rechtliches
-							</p>
-							<p class="mb-5 text-lg font-medium leading-7 text-coolGray-500">
-								Es gilt der Hausverstand.
-							</p>
+							<p class="mb-4 text-lg md:text-xl leading-8 text-coolGray-500 font-semibold">Rechtliches</p>
+							<p class="mb-5 text-lg font-medium leading-7 text-coolGray-500">Es gilt der Hausverstand.</p>
 						</div>
 					</div>
 				</div>
