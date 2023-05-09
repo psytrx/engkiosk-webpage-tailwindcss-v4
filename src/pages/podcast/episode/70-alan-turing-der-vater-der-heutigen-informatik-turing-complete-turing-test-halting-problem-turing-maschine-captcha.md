@@ -44,7 +44,9 @@ length_second: 0
 pubDate: '2023-05-09'
 rtlplus: ''
 spotify: ''
-tags: []
+tags:
+- Tech Kultur
+- Software Engineering
 title: '#70 Alan Turing: Der Vater der heutigen Informatik (Turing-Complete, Turing-Test,
   Halting-Problem, Turing-Maschine, Captcha)'
 youtube: ''
