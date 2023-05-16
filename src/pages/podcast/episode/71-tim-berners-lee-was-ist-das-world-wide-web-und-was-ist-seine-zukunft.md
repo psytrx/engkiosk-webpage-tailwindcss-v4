@@ -50,7 +50,11 @@ length_second: 3710
 pubDate: '2023-05-16'
 rtlplus: ''
 spotify: https://open.spotify.com/episode/43DwwjnoIIyTODBihWFrmr
-tags: []
+tags:
+- Tech Kultur
+- Software Engineering
+- Backend
+- Cloud
 title: '#71 Tim Berners-Lee: Was ist das World Wide Web und was ist seine Zukunft?'
 youtube: ''
 
