@@ -1,5 +1,5 @@
 ---
-amazon_music: ''
+amazon_music: https://music.amazon.com/podcasts/c35a09fe-4116-4e04-8f68-77d61b112e46/episodes/db797cb2-c35f-4c8f-ab73-317f1d3fd473/engineering-kiosk-71-tim-berners-lee-was-ist-das-world-wide-web-und-was-ist-seine-zukunft
 apple_podcasts: https://podcasts.apple.com/us/podcast/71-tim-berners-lee-was-ist-das-world-wide-web-und-was/id1603082924?i=1000613171598&uo=4
 audio: https://audio1.redcircle.com/episodes/5085aa37-257d-4787-8fea-f583b2678c6d/stream.mp3
 chapter:
