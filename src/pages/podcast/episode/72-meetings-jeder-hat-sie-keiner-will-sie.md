@@ -53,7 +53,11 @@ length_second: 0
 pubDate: '2023-05-23'
 rtlplus: ''
 spotify: ''
-tags: []
+tags:
+- Team
+- Tech Kultur
+- Projektmanagement
+- Kommunikation
 title: '#72 Meetings: Jeder hat sie, keiner will sie'
 youtube: ''
 
