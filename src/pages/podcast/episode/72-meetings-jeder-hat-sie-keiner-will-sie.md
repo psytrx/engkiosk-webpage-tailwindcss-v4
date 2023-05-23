@@ -30,7 +30,7 @@ chapter:
   title: Zu viele Meetings, Alignment in und durch Meetings und Stand Ups
 - start: 00:57:31
   title: "Hybrides Setup: Nur Meetings, wenn wir im B\xFCro sind?"
-deezer: ''
+deezer: https://www.deezer.com/episode/510897245
 description: "Meetings: Ein essentieller Teil unseres Arbeitsalltages und doch wird\
   \ nur gemeckert? Meetings sind ein Teil unserer Arbeitskultur, um die keiner herumkommt.\
   \ Doch irgendwie meckert jeder dar\xFCber. \"Dieses Meeting h\xE4tte auch eine E-Mail\
@@ -49,10 +49,10 @@ headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts||feedback-gern
   (gerne auch als Voice Message)
 image: /images/podcast/episode/72-meetings-jeder-hat-sie-keiner-will-sie.jpg
 layout: ../../../layouts/podcast-episode.astro
-length_second: 0
+length_second: 3866
 pubDate: '2023-05-23'
 rtlplus: ''
-spotify: ''
+spotify: https://open.spotify.com/episode/1P97rTHEVtGQxzTw1eV8KY
 tags:
 - Team
 - Tech Kultur
