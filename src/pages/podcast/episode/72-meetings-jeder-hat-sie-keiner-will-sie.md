@@ -1,6 +1,6 @@
 ---
 amazon_music: https://music.amazon.com/podcasts/c35a09fe-4116-4e04-8f68-77d61b112e46/episodes/b88686c6-ee34-4078-868e-41cd7310e3d3/engineering-kiosk-72-meetings-jeder-hat-sie-keiner-will-sie
-apple_podcasts: ''
+apple_podcasts: https://podcasts.apple.com/us/podcast/72-meetings-jeder-hat-sie-keiner-will-sie/id1603082924?i=1000614089572&uo=4
 audio: https://audio1.redcircle.com/episodes/f3a4a1ba-d5b1-44b9-bab3-5dd91a59069b/stream.mp3
 chapter:
 - start: 00:00:00
@@ -44,7 +44,7 @@ description: "Meetings: Ein essentieller Teil unseres Arbeitsalltages und doch w
   \ Probleme eigentlich durch Meetings an der Kaffeemaschine entstehen und warum es\
   \ auf die Disziplin jedes einzelnen bei Meetings ankommt. Bonus: Hund im B\xFCro\
   \ und die Abk\xFCrzung von \"Team\" - Toll ein anderer Machts"
-google_podcasts: ''
+google_podcasts: https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5yZWRjaXJjbGUuY29tLzBlY2ZkZmQ3LWZkYTEtNGMzZC05NTE1LTQ3NjcyN2Y5ZGY1ZQ/episode/MGRkOWNkMjQtNTM4Yy00MjJiLTlkZWItNTNhZjc2YTViMDNj?sa=X&ved=2ahUKEwiRm97dlZz_AhUiM1kFHYB3ACsQkfYCegQIARAF
 headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts||feedback-gerne-auch-als-voice-message::Feedback
   (gerne auch als Voice Message)
 image: /images/podcast/episode/72-meetings-jeder-hat-sie-keiner-will-sie.jpg
