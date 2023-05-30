@@ -49,7 +49,9 @@ length_second: 3583
 pubDate: '2023-05-30'
 rtlplus: ''
 spotify: https://open.spotify.com/episode/6ZAM0fZpQAA6WZqcz5MiH7
-tags: []
+tags:
+- Software Engineering
+- Backend
 title: '#73 Cache-freundliches Programmieren, CPU-Caches, Ersetzungsstrategien und
   Cache-Invalidierung'
 youtube: ''
