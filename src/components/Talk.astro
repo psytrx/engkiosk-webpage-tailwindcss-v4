@@ -4,10 +4,10 @@ export interface Props {
 	name: string;
 	title: string;
 	description: string;
-	github: string;
-	twitter: string;
-	linkedin: string;
-	website: string;
+	github?: string;
+	twitter?: string;
+	linkedin?: string;
+	website?: string;
 }
 
 const { avatar, name, title, description, github, twitter, linkedin, website } = Astro.props;
