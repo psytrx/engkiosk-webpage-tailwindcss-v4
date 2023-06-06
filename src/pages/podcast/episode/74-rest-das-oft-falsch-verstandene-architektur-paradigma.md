@@ -1,5 +1,5 @@
 ---
-amazon_music: ''
+amazon_music: https://music.amazon.com/podcasts/c35a09fe-4116-4e04-8f68-77d61b112e46/episodes/7dfbb2d3-0d64-475d-a328-7c0806529f7e/engineering-kiosk-74-rest-das-oft-falsch-verstandene-architektur-paradigma
 apple_podcasts: ''
 audio: https://audio1.redcircle.com/episodes/7acd12c4-f8e7-4c39-a7e1-a5b893208c8c/stream.mp3
 chapter:
