@@ -55,7 +55,9 @@ length_second: 3775
 pubDate: '2023-06-06'
 rtlplus: ''
 spotify: https://open.spotify.com/episode/091h2JZYSFuNav3miWbt26
-tags: []
+tags:
+- Software Engineering
+- Backend
 title: '#74 REST: Das oft falsch verstandene Architektur-Paradigma'
 youtube: ''
 
