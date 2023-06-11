@@ -16,4 +16,4 @@ const scrollToElement = (el) => {
 		top: offsetTop,
 		behavior: 'smooth',
 	});
-}
+};
