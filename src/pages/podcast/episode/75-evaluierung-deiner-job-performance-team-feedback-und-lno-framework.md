@@ -1,5 +1,5 @@
 ---
-amazon_music: ''
+amazon_music: https://music.amazon.com/podcasts/c35a09fe-4116-4e04-8f68-77d61b112e46/episodes/a1799f9d-d5c8-4388-a871-d963cbe69d93/engineering-kiosk-75-evaluierung-deiner-job-performance-team-feedback-und-lno-framework
 apple_podcasts: https://podcasts.apple.com/us/podcast/75-evaluierung-deiner-job-performance-team-feedback/id1603082924?i=1000616756089&uo=4
 audio: https://audio1.redcircle.com/episodes/ee2f46c0-a147-4416-9e2c-4ce724cd114d/stream.mp3
 chapter:
