@@ -63,7 +63,11 @@ length_second: 3699
 pubDate: '2023-06-13'
 rtlplus: ''
 spotify: https://open.spotify.com/episode/5OHqN4jStQIUMKkjpvy40G
-tags: []
+tags:
+- Karriere
+- Kommunikation
+- Produktivit\u00e4t
+- Leadership
 title: '#75 Evaluierung deiner Job-Performance, Team-Feedback und LNO Framework'
 youtube: ''
 
