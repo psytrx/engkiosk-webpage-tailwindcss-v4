@@ -65,7 +65,11 @@ length_second: 4694
 pubDate: '2023-06-20'
 rtlplus: ''
 spotify: https://open.spotify.com/episode/6EtK6QAKUpu69kztnZdneZ
-tags: []
+tags:
+- Projektmanagement
+- Tech Kultur
+- Open Source
+- Gehalt
 title: '#76 Mit Open Source 100.000$ verdienen, Sponsorware und Platform-Risiken bei
   GitHub mit Martin Donath'
 youtube: ''
