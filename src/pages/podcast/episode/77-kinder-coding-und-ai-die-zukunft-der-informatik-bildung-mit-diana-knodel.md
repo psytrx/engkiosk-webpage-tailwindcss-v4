@@ -66,7 +66,7 @@ chapter:
 - start: 00:56:21
   title: "Wie kann man sich in das Thema der Bildung f\xFCr Informatik/Software-Entwicklung\
     \ f\xFCr Kinder einbringen?"
-deezer: ''
+deezer: https://www.deezer.com/episode/524079715
 description: "Wie bringen wir der n\xE4chsten Generation, unseren Kindern, die Welt\
   \ der Informatik und Software-Entwicklung n\xE4her? \xDCber diese Frage sprechen\
   \ wir mit der Expertin Dr. Diana Knodel. studierte Informatikerin mit Schwerpunkt\
