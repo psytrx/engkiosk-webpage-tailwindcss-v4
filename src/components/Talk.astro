@@ -8,9 +8,10 @@ export interface Props {
 	twitter?: string;
 	linkedin?: string;
 	website?: string;
+	bio?: string;
 }
 
-const { avatar, name, title, description, github, twitter, linkedin, website } = Astro.props;
+const { avatar, name, title, description, github, twitter, linkedin, website, bio } = Astro.props;
 ---
 
 <div class="w-full md:w-1/2 lg:w-1/2 px-4 mb-10 hostpreview">
@@ -25,6 +26,7 @@ const { avatar, name, title, description, github, twitter, linkedin, website } =
 			{name}
 		</span>
 		<p class="mb-8 text-coolGray-500 font-medium description" set:html={description} />
+		{bio && <p class="mb-8 text-coolGray-500 font-medium bio">{bio}</p>}
 		<div class="flex items-center justify-center">
 			{
 				github && (
