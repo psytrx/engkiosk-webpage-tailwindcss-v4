@@ -89,7 +89,10 @@ length_second: 3678
 pubDate: '2023-06-27'
 rtlplus: ''
 spotify: https://open.spotify.com/episode/4LsjPZYmED1ARMkOXhuQwP
-tags: []
+tags:
+- Tech Kultur
+- Software Engineering
+- Knowledge Sharing
 title: '#77 Kinder, Coding und AI: Die Zukunft der Informatik-Bildung'
 youtube: ''
 
