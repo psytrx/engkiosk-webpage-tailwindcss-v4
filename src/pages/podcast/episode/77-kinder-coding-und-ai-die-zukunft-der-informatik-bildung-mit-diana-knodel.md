@@ -1,6 +1,6 @@
 ---
 amazon_music: https://music.amazon.com/podcasts/c35a09fe-4116-4e04-8f68-77d61b112e46/episodes/3c35275b-250a-4bcb-9933-d697cc236085/engineering-kiosk-77-kinder-coding-und-ai-die-zukunft-der-informatik-bildung-mit-diana-knodel
-apple_podcasts: ''
+apple_podcasts: https://podcasts.apple.com/us/podcast/77-kinder-coding-und-ai-die-zukunft-der-informatik/id1603082924?i=1000618442143&uo=4
 audio: https://audio1.redcircle.com/episodes/c2267db9-951c-4ab1-89aa-78f2be5bfe67/stream.mp3
 chapter:
 - start: 00:00:00
@@ -80,7 +80,7 @@ description: "Wie bringen wir der n\xE4chsten Generation, unseren Kindern, die W
   \ ver\xE4ndert wird und vieles mehr. Viel Spa\xDF. Bonus: Warum ChatGPT der neue\
   \ Taschenrechner wird.  Das schnelle Feedback zur Episode: \U0001F44D (top) \_\U0001F44E\
   \ (geht so)"
-google_podcasts: ''
+google_podcasts: https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5yZWRjaXJjbGUuY29tLzBlY2ZkZmQ3LWZkYTEtNGMzZC05NTE1LTQ3NjcyN2Y5ZGY1ZQ/episode/OWEyMTM5NjItOWJhNS00MDFkLTk2NDMtZGVlZTg4ZDlkMDIy?sa=X&ved=2ahUKEwjixbf---z_AhXyE1kFHRNJA-QQkfYCegQIARAF
 headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts||feedback-gerne-auch-als-voice-message::Feedback
   (gerne auch als Voice Message)
 image: /images/podcast/episode/77-kinder-coding-und-ai-die-zukunft-der-informatik-bildung-mit-diana-knodel.jpg
