@@ -65,7 +65,12 @@ length_second: 3685
 pubDate: '2023-07-04'
 rtlplus: ''
 spotify: https://open.spotify.com/episode/5RWLWU0lilYzFvRM4Q0Vu3
-tags: []
+tags:
+- DevOps
+- Software Engineering
+- Automation
+- Frontend
+- Backend
 title: '#78 Microservice & Monolith: Was die Industrie in den letzten 9 Jahren gelernt
   hat'
 youtube: ''
