@@ -39,7 +39,7 @@ chapter:
   title: Beide Modelle sind gleich schlecht
 - start: 00:59:51
   title: Feedback zum Motivationsloch
-deezer: ''
+deezer: https://www.deezer.com/episode/526160555
 description: "Monolithen und Microservices: Ein Evergreen der Software-Industrie.\
   \ Mitte der 2010er Jahre bekam das Thema der Microservices Popularit\xE4t. Doch\
   \ was haben wir nach ca. 9 Jahren dar\xFCber gelernt? Sind Microservices immer noch\
@@ -61,10 +61,10 @@ headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts||feedback-gern
   (gerne auch als Voice Message)
 image: /images/podcast/episode/78-microservice-monolith-was-die-industrie-in-den-letzten-9-jahren-gelernt-hat.jpg
 layout: ../../../layouts/podcast-episode.astro
-length_second: 0
+length_second: 3685
 pubDate: '2023-07-04'
 rtlplus: ''
-spotify: ''
+spotify: https://open.spotify.com/episode/5RWLWU0lilYzFvRM4Q0Vu3
 tags: []
 title: '#78 Microservice & Monolith: Was die Industrie in den letzten 9 Jahren gelernt
   hat'
