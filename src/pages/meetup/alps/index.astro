@@ -55,6 +55,9 @@ const registrationLink = 'https://pblander.calendarsnack.com/snack/invite/grey/a
 										</a>
 									</div>
 								</div>
+								<p class="mt-12 mb-8 text-lg md:text-xl text-coolGray-500 font-medium">
+									<a class="text-yellow-500" onclick="scrollToElement('a[name=newsletter]'); return false;" href="#newsletter">Subscribe and get an email when the next meetup is announced.</a>
+								</p>
 							</div>
 							<div class="w-full md:w-1/2 px-4">
 								<div class="relative mx-auto md:mr-0 max-w-max">
@@ -139,7 +142,7 @@ const registrationLink = 'https://pblander.calendarsnack.com/snack/invite/grey/a
 							<div class="mt-4">
 								<input type="hidden" value="1" name="embed" />
 								<input class="px-3 h-12 text-coolGray-900 outline-none placeholder-coolGray-500 border border-coolGray-200 focus:ring-2 focus:ring-yellow-500 focus:ring-opacity-50 rounded-lg shadow-xsm" name="email" placeholder="Your email address" />
-								<input type="submit" class="py-4 px-5 leading-4 text-yellow-50 font-medium text-center bg-yellow-500 hover:bg-yellow-600 focus:ring-2 focus:ring-yellow-500 focus:ring-opacity-50 rounded-md shadow-sm" value="Subscribe" />
+								<input type="submit" class="py-4 px-5 mt-0 sm:mt-4 leading-4 cursor-pointer text-yellow-50 font-medium text-center bg-yellow-500 hover:bg-yellow-600 focus:ring-2 focus:ring-yellow-500 focus:ring-opacity-50 rounded-md shadow-sm" value="Subscribe" />
 							</div>
 						</form>
 					</div>
@@ -174,8 +177,8 @@ const registrationLink = 'https://pblander.calendarsnack.com/snack/invite/grey/a
 					</div>
 				</div>
 			</section>
-		</div>
 
-		<Footer />
+			<Footer />
+		</div>
 	</body>
 </html>
