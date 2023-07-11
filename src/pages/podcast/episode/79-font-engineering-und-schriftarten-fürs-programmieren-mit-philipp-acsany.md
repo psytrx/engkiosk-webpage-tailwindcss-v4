@@ -49,7 +49,7 @@ chapter:
   title: Der Einstieg in das Font-Engineering
 - start: 01:07:24
   title: Welche Programmier-Font nutzt Philipp Acsany?
-deezer: ''
+deezer: https://www.deezer.com/episode/528776715
 description: "Font Engineering und die Welt der Programmier-Schriftarten Wie wichtig\
   \ ist die Wahl der Schriftart f\xFCr die Programmierung? Welche M\xF6glichkeiten\
   \ und Vorteile bietet die richtige Schriftart in deinem Editor? Macht es Sinn f\xFC\
@@ -68,10 +68,10 @@ headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts||feedback-gern
   (gerne auch als Voice Message)
 image: "/images/podcast/episode/79-font-engineering-und-schriftarten-f\xFCrs-programmieren-mit-philipp-acsany.jpg"
 layout: ../../../layouts/podcast-episode.astro
-length_second: 0
+length_second: 4195
 pubDate: '2023-07-11'
 rtlplus: ''
-spotify: ''
+spotify: https://open.spotify.com/episode/5DIzNhGilzQ7Yo1syMdzf8
 tags: []
 title: "#79 Font-Engineering und Schriftarten f\xFCrs Programmieren mit Philipp Acsany"
 youtube: ''
