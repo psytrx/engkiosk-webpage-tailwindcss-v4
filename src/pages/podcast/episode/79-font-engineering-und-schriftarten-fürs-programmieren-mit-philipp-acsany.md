@@ -72,7 +72,11 @@ length_second: 4195
 pubDate: '2023-07-11'
 rtlplus: ''
 spotify: https://open.spotify.com/episode/5DIzNhGilzQ7Yo1syMdzf8
-tags: []
+tags:
+- Tech Kultur
+- Software Engineering
+- Open Source
+- Produktivit\u00e4t
 title: "#79 Font-Engineering und Schriftarten f\xFCrs Programmieren mit Philipp Acsany"
 youtube: ''
 
