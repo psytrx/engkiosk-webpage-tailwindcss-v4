@@ -4,7 +4,7 @@ apple_podcasts: https://podcasts.apple.com/us/podcast/13-produktivit%C3%A4t/id16
 audio: https://audio1.redcircle.com/episodes/84908405-bd61-4398-bdf3-134fddb59c3e/stream.mp3
 chapter:
 - start: 00:00:00
-  title: "Warum Zeit- und Produktivit\xE4tsmanagement relevant ist"
+  title: "Warum Zeit- und Produktivitätsmanagement relevant ist"
 - start: 00:04:44
   title: Zeit-Management als Thema in 1on1s
 - start: 00:06:08
@@ -39,7 +39,7 @@ chapter:
 - start: 00:55:37
   title: Outro
 deezer: https://www.deezer.com/de/episode/375279537
-description: "Zeit- und Produktivit\xE4tsmanagement: Buzzword-Bingo oder bringt das\
+description: "Zeit- und Produktivitätsmanagement: Buzzword-Bingo oder bringt das\
   \ wirklich was? So bl\xF6d wie das Thema auch klingen mag, es hat Vorteile. Nicht\
   \ nur im beruflichen Umfeld, sondern auch im privaten. Wolfgang und Andy sprechen\
   \ \xFCber Ihre Art und Weise, Aufgaben zu organisieren, welche Methoden Sie verwenden,\
@@ -58,8 +58,8 @@ rtlplus: ''
 spotify: https://open.spotify.com/episode/6idJ9F1bk6AQKFxrbukvC3
 tags:
 - Karriere
-- "Produktivit\xE4t"
-title: "#13 Produktivit\xE4t"
+- Produktivität
+title: "#13 Produktivität"
 youtube: ''
 
 ---

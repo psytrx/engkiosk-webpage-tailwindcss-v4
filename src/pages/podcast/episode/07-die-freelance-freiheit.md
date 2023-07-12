@@ -72,7 +72,7 @@ rtlplus: ''
 spotify: https://open.spotify.com/episode/5RCZ1mHsBVN83lWXu49xqQ
 tags:
 - Karriere
-- "Produktivit\xE4t"
+- Produktivität
 title: '#07 Die Freelance Freiheit'
 youtube: ''
 
