@@ -60,7 +60,7 @@ rtlplus: ''
 spotify: https://open.spotify.com/episode/73DOlh7BHnm4eHWrpsCyd8
 tags:
 - Leadership
-- Produktivität
+- "Produktivit\xE4t"
 - Kommunikation
 - Team
 title: '#44 Der Weg zum hochperformanten Team'

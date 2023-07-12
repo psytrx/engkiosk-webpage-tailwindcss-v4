@@ -24,7 +24,7 @@ chapter:
 - start: 00:28:55
   title: Abgrenzung von make or buy
 - start: 00:30:14
-  title: "Opportunit\xE4tskosten: Produktivität und User Experience"
+  title: "Opportunit\xE4tskosten: Produktivit\xE4t und User Experience"
 - start: 00:33:40
   title: Welche Bereiche gibt es, wo es Sinn macht, die Produkte nicht einzukaufen?
 - start: 00:37:07
@@ -63,7 +63,7 @@ rtlplus: ''
 spotify: https://open.spotify.com/episode/7xXnR8rP8gB25P9dQkvVQk
 tags:
 - Software Engineering
-- Produktivität
+- "Produktivit\xE4t"
 - Cloud
 title: '#12 Make oder Buy'
 youtube: ''

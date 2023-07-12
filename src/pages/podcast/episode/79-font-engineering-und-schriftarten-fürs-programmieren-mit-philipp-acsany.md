@@ -76,7 +76,7 @@ tags:
 - Tech Kultur
 - Software Engineering
 - Open Source
-- Produktivität
+- "Produktivit\xE4t"
 title: "#79 Font-Engineering und Schriftarten f\xFCrs Programmieren mit Philipp Acsany"
 youtube: https://youtu.be/6gQrYHGL7wo
 

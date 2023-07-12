@@ -66,7 +66,7 @@ spotify: https://open.spotify.com/episode/5OHqN4jStQIUMKkjpvy40G
 tags:
 - Karriere
 - Kommunikation
-- Produktivität
+- "Produktivit\xE4t"
 - Leadership
 title: '#75 Evaluierung deiner Job-Performance, Team-Feedback und LNO Framework'
 youtube: https://www.youtube.com/watch?v=7qkAgKo7mis

@@ -8,7 +8,7 @@ chapter:
 - start: 00:00:33
   title: Bewertungen auf Apple und Spotify und wie deutsche loben
 - start: 00:02:38
-  title: "Produktivität und \"Ich bekomm nichts mehr geschissen\""
+  title: "Produktivit\xE4t und \"Ich bekomm nichts mehr geschissen\""
 - start: 00:05:38
   title: 'Getting Things Done: Die einzig wahre Selbstmanagement-Methode?'
 - start: 00:09:53
@@ -34,13 +34,13 @@ description: "Muss man immer um 5 Uhr morgens aufstehen, um heutzutage produktiv
   \ sein? In der modernen und komplexen Welt will jeder deine Aufmerksamkeit: Websites,\
   \ Apps, Arbeitskollegen und Freunde geben dir neue Aufgaben, die erledigt werden\
   \ m\xFCssen. Wie beh\xE4lt man da noch den \xDCberblick, vergisst nichts und bringt\
-  \ noch etwas zustande? Das ist die gro\xDFe Kunst der Produktivität. Getting\
+  \ noch etwas zustande? Das ist die gro\xDFe Kunst der Produktivit\xE4t. Getting\
   \ Things Done ist eine, zugegeben, sehr simple Selbstmanagement-Methode. Simpel,\
   \ h\xF6chst-Effektiv und mit wenig Zeitaufwand. In dieser Episode geben wir mal\
   \ einen Deep Dive zur Getting Things Done Methode von David Allen. Wolfgang und\
   \ Andy verwenden diese Methode unter anderem zur Organisation des Podcasts und berichten\
   \ auch \xFCber ihre eigenen Erfahrungen. Bonus: Was Incident Management und ein\
-  \ 8.000\u20AC-Mountainbike mit Produktivität und Getting Things Done zu tun haben.\
+  \ 8.000\u20AC-Mountainbike mit Produktivit\xE4t und Getting Things Done zu tun haben.\
   \  Das schnelle Feedback zur Episode: \U0001F44D (top) \_\U0001F44E (geht so)"
 google_podcasts: https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5yZWRjaXJjbGUuY29tLzBlY2ZkZmQ3LWZkYTEtNGMzZC05NTE1LTQ3NjcyN2Y5ZGY1ZQ/episode/YjM2MDYyNTMtZDEzMi00MzYzLTg0N2ItNzZmOGJmNzZmZmZj?sa=X&ved=2ahUKEwi3xL-h-qD-AhVsJGIAHb7NARkQkfYCegQIARAF
 headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts||feedback-gerne-auch-als-voice-message::Feedback
@@ -53,8 +53,8 @@ rtlplus: ''
 spotify: https://open.spotify.com/episode/1Bd5AexCjifidq1zHA77VB
 tags:
 - Karriere
-- Produktivität
-title: "#66 Stressfreie Produktivität in der hektischen Welt mit Getting Things\
+- "Produktivit\xE4t"
+title: "#66 Stressfreie Produktivit\xE4t in der hektischen Welt mit Getting Things\
   \ Done"
 youtube: https://www.youtube.com/watch?v=KXtOT2CXCQM
 

@@ -4,7 +4,7 @@ apple_podcasts: https://podcasts.apple.com/us/podcast/14-async-und-await-asynchr
 audio: https://audio1.redcircle.com/episodes/3577c74d-2d25-408e-9107-1fae71daf76a/stream.mp3
 chapter:
 - start: 00:00:00
-  title: "Intro und R\xFCckmeldung zur Episode #13 \xFCber Produktivität"
+  title: "Intro und R\xFCckmeldung zur Episode #13 \xFCber Produktivit\xE4t"
 - start: 00:01:22
   title: "Async + Asynchronit\xE4t (async, await, event loop)"
 - start: 00:02:00
