@@ -76,7 +76,7 @@ tags:
 - Backend
 - Software Engineering
 - Datenbanken
-- "Produktivit\xE4t"
+- Produktivität
 title: '#49 Die Zukunft: Software Repository Mining'
 youtube: ''
 
