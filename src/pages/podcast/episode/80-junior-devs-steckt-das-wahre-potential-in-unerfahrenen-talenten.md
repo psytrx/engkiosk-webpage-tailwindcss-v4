@@ -60,7 +60,11 @@ length_second: 4077
 pubDate: '2023-07-18'
 rtlplus: ''
 spotify: https://open.spotify.com/episode/3eFweADcYNWnPpDVBlwLOQ
-tags: []
+tags:
+- Team
+- Karriere
+- Bewerbung
+- Leadership
 title: '#80 Junior Devs: Steckt das wahre Potential in unerfahrenen Talenten?'
 youtube: ''
 
