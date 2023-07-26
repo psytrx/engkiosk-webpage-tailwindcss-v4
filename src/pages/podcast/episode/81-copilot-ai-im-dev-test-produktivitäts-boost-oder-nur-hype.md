@@ -88,7 +88,7 @@ tags:
 - Backend
 - Frontend
 - Software Engineering
-- Produktivit\u00e4t
+- Produktivität
 title: "#81 Copilot & AI im Dev-Test: Produktivit\xE4ts-Boost oder nur Hype?"
 youtube: ''
 
