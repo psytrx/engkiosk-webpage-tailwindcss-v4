@@ -52,7 +52,7 @@ chapter:
     \ mit der KI programmieren?"
 - start: 01:02:27
   title: GitHub Copilot X, andere Coding-AI-Services und andere Podcast-Episoden
-deezer: ''
+deezer: https://www.deezer.com/episode/533704785
 description: "Ist GitHub Copilot (und AI) wirklich dein fehlender Partner beim Pair-Programming?\
   \ AI und speziell auf die Programmierung trainierte Modelle sind angetreten, um\
   \ die Welt, wie wir programmieren, zu ver\xE4ndern. Doch halten diese auch die Versprechen?\
@@ -75,7 +75,7 @@ description: "Ist GitHub Copilot (und AI) wirklich dein fehlender Partner beim P
   in und suchst eine neue Herausforderung? Ihr wollt mit euren Unternehmen dabei sein\
   \ und pitchen? Dann findet ihr alle Informationen unter https://pcde.io\_  Das schnelle\
   \ Feedback zur Episode: \U0001F44D (top)\_\U0001F44E (geht so)"
-google_podcasts: ''
+google_podcasts: https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5yZWRjaXJjbGUuY29tLzBlY2ZkZmQ3LWZkYTEtNGMzZC05NTE1LTQ3NjcyN2Y5ZGY1ZQ/episode/N2IzM2JiNTYtMzYyZi00NjNjLThlYzctNTcyYWQzNzlhZTdl?sa=X&ved=2ahUKEwjW5sGahqyAAxWuB0QIHe3NAyEQkfYCegQIARAF
 headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts||feedback-gerne-auch-als-voice-message::Feedback
   (gerne auch als Voice Message)
 image: "/images/podcast/episode/81-copilot-ai-im-dev-test-produktivit\xE4ts-boost-oder-nur-hype.jpg"
@@ -88,7 +88,7 @@ tags:
 - Backend
 - Frontend
 - Software Engineering
-- Produktivität
+- "Produktivit\xE4t"
 title: "#81 Copilot & AI im Dev-Test: Produktivit\xE4ts-Boost oder nur Hype?"
 youtube: ''
 
