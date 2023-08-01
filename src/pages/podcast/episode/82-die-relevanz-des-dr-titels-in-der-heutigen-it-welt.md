@@ -1,6 +1,6 @@
 ---
 amazon_music: ''
-apple_podcasts: ''
+apple_podcasts: https://podcasts.apple.com/us/podcast/82-die-relevanz-des-dr-titels-in-der-heutigen-it-welt/id1603082924?i=1000623008680&uo=4
 audio: https://audio1.redcircle.com/episodes/a2fa63b5-953b-4273-8cce-93f5edb2fb0e/stream.mp3
 chapter:
 - start: 00:00:00
@@ -44,7 +44,7 @@ chapter:
   title: "W\xFCrdest du den Dr. erneut anstreben?"
 - start: 01:05:23
   title: "Tipps f\xFCr angehende Doktoranden"
-deezer: ''
+deezer: https://www.deezer.com/episode/536124265
 description: "Bildung: Einblick in den Dr. Titel im Bereich Informatik Bildung ist\
   \ wichtig. Viele Personen, die im Bereich Informatik und Software-Entwicklung unterwegs\
   \ sind, haben auch studiert. Bachelor, Master, teilweise sogar einen Dr. Titel.\
@@ -62,10 +62,10 @@ headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts||feedback-gern
   (gerne auch als Voice Message)
 image: /images/podcast/episode/82-die-relevanz-des-dr-titels-in-der-heutigen-it-welt.jpg
 layout: ../../../layouts/podcast-episode.astro
-length_second: 0
+length_second: 4189
 pubDate: '2023-08-01'
 rtlplus: ''
-spotify: ''
+spotify: https://open.spotify.com/episode/5Shut8pb0fD0eIi2W8GRjR
 tags: []
 title: '#82 Die Relevanz des Dr. Titels in der heutigen IT-Welt'
 youtube: ''
