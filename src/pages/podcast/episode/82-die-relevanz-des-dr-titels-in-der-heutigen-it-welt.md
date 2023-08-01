@@ -1,5 +1,5 @@
 ---
-amazon_music: ''
+amazon_music: https://music.amazon.com/podcasts/c35a09fe-4116-4e04-8f68-77d61b112e46/episodes/b2d33f38-c420-47b4-a882-fa939a091d07/engineering-kiosk-82-die-relevanz-des-dr-titels-in-der-heutigen-it-welt
 apple_podcasts: https://podcasts.apple.com/us/podcast/82-die-relevanz-des-dr-titels-in-der-heutigen-it-welt/id1603082924?i=1000623008680&uo=4
 audio: https://audio1.redcircle.com/episodes/a2fa63b5-953b-4273-8cce-93f5edb2fb0e/stream.mp3
 chapter:
