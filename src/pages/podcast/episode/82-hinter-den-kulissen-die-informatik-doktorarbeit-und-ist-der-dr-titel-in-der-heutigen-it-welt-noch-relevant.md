@@ -1,6 +1,6 @@
 ---
 amazon_music: ''
-apple_podcasts: ''
+apple_podcasts: https://podcasts.apple.com/us/podcast/82-hinter-den-kulissen-die-informatik-doktorarbeit/id1603082924?i=1000623008680&uo=4
 audio: https://audio1.redcircle.com/episodes/a2fa63b5-953b-4273-8cce-93f5edb2fb0e/stream.mp3
 chapter:
 - start: 00:00:00
@@ -62,10 +62,10 @@ headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts||feedback-gern
   (gerne auch als Voice Message)
 image: /images/podcast/episode/82-hinter-den-kulissen-die-informatik-doktorarbeit-und-ist-der-dr-titel-in-der-heutigen-it-welt-noch-relevant.jpg
 layout: ../../../layouts/podcast-episode.astro
-length_second: 0
+length_second: 4189
 pubDate: '2023-08-01'
 rtlplus: ''
-spotify: ''
+spotify: https://open.spotify.com/episode/5Shut8pb0fD0eIi2W8GRjR
 tags: []
 title: '#82 Hinter den Kulissen: Die Informatik-Doktorarbeit und ist der Dr. Titel
   in der heutigen IT-Welt noch relevant?'
