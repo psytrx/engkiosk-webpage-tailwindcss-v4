@@ -55,7 +55,11 @@ length_second: 3864
 pubDate: '2023-08-08'
 rtlplus: ''
 spotify: https://open.spotify.com/episode/5eMHJFouRpXxAmutig1O1w
-tags: []
+tags:
+- Team
+- Tech Kultur
+- Kommunikation
+- Leadership
 title: '#83 Transparenz im Tech-Leadership & Fehlerkultur: Wie weit kann ich gehen?'
 youtube: ''
 
