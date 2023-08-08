@@ -44,7 +44,7 @@ chapter:
   title: "W\xFCrdest du den Dr. erneut anstreben?"
 - start: 01:05:23
   title: "Tipps f\xFCr angehende Doktoranden"
-deezer: ''
+deezer: https://www.deezer.com/episode/536124265
 description: "Bildung: Einblick in den Dr. Titel im Bereich Informatik. Bildung ist\
   \ wichtig. Viele Personen, die im Bereich Informatik und Software-Entwicklung unterwegs\
   \ sind, haben auch studiert. Bachelor, Master, teilweise sogar einen Dr. Titel.\
@@ -57,7 +57,7 @@ description: "Bildung: Einblick in den Dr. Titel im Bereich Informatik. Bildung 
   \ der selbst einen Dr. Titel der Informatik tr\xE4gt. Bonus: Die Automatisierung\
   \ einer Kaffee-Strichliste als Bachelor-Arbeit.  Das schnelle Feedback zur Episode:\
   \ \U0001F44D (top) \_\U0001F44E (geht so)"
-google_podcasts: ''
+google_podcasts: https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5yZWRjaXJjbGUuY29tLzBlY2ZkZmQ3LWZkYTEtNGMzZC05NTE1LTQ3NjcyN2Y5ZGY1ZQ/episode/M2FmZGYwYmMtZmQ4ZC00ZWY4LWFlMTgtMDM1NzdjMDQ2YWRi?sa=X&ved=2ahUKEwjekq2dmMyAAxXbqY4IHRVJCFsQkfYCegQIARAF
 headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts||feedback-gerne-auch-als-voice-message::Feedback
   (gerne auch als Voice Message)
 image: /images/podcast/episode/82-hinter-den-kulissen-die-informatik-doktorarbeit-und-ist-der-dr-titel-in-der-heutigen-it-welt-noch-relevant.jpg
