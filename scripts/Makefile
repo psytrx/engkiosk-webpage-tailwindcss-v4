@@ -31,7 +31,3 @@ find_tags_that_need_descriptions-german-tech-podcasts: ## Checks all used tags t
 .PHONY: summary
 summary: ## Creates a Podcast summary with statistics
 	. $(VENV_NAME)/bin/activate; python summary.py
-
-.PHONY: tests
-tests: ## Runs all tests
-	. $(VENV_NAME)/bin/activate; python -m pytest
