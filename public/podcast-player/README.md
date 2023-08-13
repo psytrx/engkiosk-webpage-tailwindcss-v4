@@ -7,4 +7,4 @@ The main differences of the fork in comparision to its origin can be found in th
 
 ## Latest build
 
-Current integrated build is [git/sha:7773af5513c0a9e9a9794526dc6dbbfca5855065](https://github.com/EngineeringKiosk/podigee-podcast-player/commit/7773af5513c0a9e9a9794526dc6dbbfca5855065) of [EngineeringKiosk/podigee-podcast-player @ development](https://github.com/EngineeringKiosk/podigee-podcast-player/tree/development).
+Current integrated build is [git/sha:5134f68aebf627855b6b15e34aa4804c3434cbca](https://github.com/EngineeringKiosk/podigee-podcast-player/commit/5134f68aebf627855b6b15e34aa4804c3434cbca) of [EngineeringKiosk/podigee-podcast-player @ development](https://github.com/EngineeringKiosk/podigee-podcast-player/tree/development).
