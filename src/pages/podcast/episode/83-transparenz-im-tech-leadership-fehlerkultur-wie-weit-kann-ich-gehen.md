@@ -31,7 +31,7 @@ chapter:
   title: Restrukturierungen und die Change-Kurve
 - start: 00:57:43
   title: "Wir m\xFCssen Montag mal reden"
-deezer: ''
+deezer: https://www.deezer.com/episode/538809655
 description: "Die Fehlerkultur im Unternehmen, Transparenz in der Kommunikation und\
   \ eine gewisse Distanz zum Team als Engineering Manager. Diese Episode ist eins\
   \ unserer Sommergespr\xE4che, bei dem nur eine Seite die Fragen kennt. Wolfi stellt\
