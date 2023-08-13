@@ -8,11 +8,11 @@ on:
 jobs:
   publishing:
     name: Sync German Tech Podcasts from external repository
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-22.04
 
     steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-python@v4
+      - uses: actions/checkout@v3.5.3
+      - uses: actions/setup-python@v4.7.0
         with:
           python-version-file: 'scripts/.python-version'
           cache: 'pip'
@@ -24,7 +24,7 @@ jobs:
         run: make sync-german-tech-podcasts
 
       # Commit results back to repository
-      - uses: stefanzweifel/git-auto-commit-action@v4
+      - uses: stefanzweifel/git-auto-commit-action@v4.16.0
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:

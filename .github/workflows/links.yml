@@ -8,9 +8,9 @@ on:
 
 jobs:
   linkChecker:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v3.5.3
 
       - name: Link Checker
         id: lychee
