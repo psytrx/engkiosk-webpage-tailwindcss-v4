@@ -20,8 +20,8 @@ jobs:
       - name: Install python dependencies
         run: pip install -r scripts/requirements.txt
 
-      - name: Run make sync-german-tech-podcasts
-        run: make sync-german-tech-podcasts
+      - name: Run make sync_german_tech_podcasts
+        run: make sync_german_tech_podcasts
 
       # Commit results back to repository
       - uses: stefanzweifel/git-auto-commit-action@v4.16.0

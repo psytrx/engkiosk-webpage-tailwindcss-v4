@@ -20,15 +20,15 @@ build                                                           Compiles the app
 clean                                                           Deletes the generated content and node_modules
 episode-check                                                   Checks all Podcast Episodes if all player links (Spotify, etc.) are set
 eslint                                                          Statically analyzes of basic JavaScript scripts
-find-tags-that-need-descriptions-content-files-dump             Find all used tags in content files (blog posts and podcasts) that need SEO descriptions and dump it down to disk into tag-file
-find-tags-that-need-descriptions-content-files                  Checks all used tags in content files (blog posts and podcasts) that need SEO descriptions and output them on stdout
-find-tags-that-need-descriptions-german-tech-podcast-file-dump  Find all used tags in the german tech podcasts that need SEO descriptions and dump it down to disk into tag-file
-find-tags-that-need-descriptions-german-tech-podcast-file       Checks all used tags in the german tech podcasts that need SEO descriptions and output them on stdout
+find_tags_that_need_descriptions-content-files-dump             Find all used tags in content files (blog posts and podcasts) that need SEO descriptions and dump it down to disk into tag-file
+find_tags_that_need_descriptions-content-files                  Checks all used tags in content files (blog posts and podcasts) that need SEO descriptions and output them on stdout
+find_tags_that_need_descriptions-german-tech-podcast-file-dump  Find all used tags in the german tech podcasts that need SEO descriptions and dump it down to disk into tag-file
+find_tags_that_need_descriptions-german-tech-podcast-file       Checks all used tags in the german tech podcasts that need SEO descriptions and output them on stdout
 help                                                            Outputs the help
 init                                                            Installs dependencies
 prettier                                                        Run prettier (file formatting)
 run                                                             Starts the development server
-sync-german-tech-podcasts                                       Syncs German Tech Podcasts data from https://github.com/EngineeringKiosk/GermanTechPodcasts
+sync_german_tech_podcasts                                       Syncs German Tech Podcasts data from https://github.com/EngineeringKiosk/GermanTechPodcasts
 update-content                                                  Pulls the latest Podcast RSS feed and updates the content
 update-redirects                                                Writes all short url redirects for Podcast episodes to netlify.toml
 ```
@@ -36,7 +36,7 @@ update-redirects                                                Writes all short
 Native npm commands:
 
 | Command           | Action                                       |
-|:----------------  |:-------------------------------------------- |
+| :---------------- | :------------------------------------------- |
 | `npm install`     | Installs dependencies                        |
 | `npm run dev`     | Starts local dev server at `localhost:3000`  |
 | `npm run build`   | Build your production site to `./dist/`      |
@@ -45,8 +45,8 @@ Native npm commands:
 Native python [script](./scripts) commands:
 
 ```sh
-$ python3 podcast-feed-to-content.py -h
-usage: podcast-feed-to-content.py [-h] [mode]
+$ python3 podcast_feed_to_content.py -h
+usage: podcast_feed_to_content.py [-h] [mode]
 
 Automate new Podcast Episide parsing
 
@@ -103,4 +103,4 @@ We are using our own fork of [podigee/podigee-podcast-player](https://github.com
 The main differences of the fork in comparision to its origin can be found in the forks README.
 
 In combination, we downloaded a minified version of [https://github.com/embedly/player.js](https://github.com/embedly/player.js) into `public/js`.
-If we aim to upgrade *player.js*, download and replace the minified javascript file.
+If we aim to upgrade _player.js_, download and replace the minified javascript file.
