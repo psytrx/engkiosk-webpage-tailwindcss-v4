@@ -66,7 +66,10 @@ length_second: 5219
 pubDate: '2023-08-15'
 rtlplus: ''
 spotify: https://open.spotify.com/episode/3iIcyS88hHQEWaN2Nm8RYP
-tags: []
+tags:
+- Backend
+- Frontend
+- Software Engineering
 title: "#84 Die Evolution von JavaScript: Vom Ducktyping zum Monopol im Browser mit\
   \ Peter Kr\xF6ner"
 youtube: ''
