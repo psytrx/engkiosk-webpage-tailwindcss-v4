@@ -42,7 +42,7 @@ chapter:
   title: Das Monopol im Browser und fehlende Konkurrenz
 - start: 01:14:34
   title: JavaScript Engines
-deezer: ''
+deezer: https://www.deezer.com/episode/541294825
 description: "JavaScript: Eine multiparadigmatische Skriptsprache mit einem schwachen\
   \ dynamischen Ducktyping-System. Um die Sprache JavaScript kommt man im Web nicht\
   \ mehr vorbei. Die meisten kennen sie durch Frameworks wie React, Angular, Vue.js,\
@@ -62,10 +62,10 @@ headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts||feedback-gern
 image: "/images/podcast/episode/84-die-evolution-von-javascript-vom-ducktyping-zum-monopol-im-browser-mit-peter-kr\xF6\
   ner.jpg"
 layout: ../../../layouts/podcast-episode.astro
-length_second: 0
+length_second: 5219
 pubDate: '2023-08-15'
 rtlplus: ''
-spotify: ''
+spotify: https://open.spotify.com/episode/3iIcyS88hHQEWaN2Nm8RYP
 tags: []
 title: "#84 Die Evolution von JavaScript: Vom Ducktyping zum Monopol im Browser mit\
   \ Peter Kr\xF6ner"
