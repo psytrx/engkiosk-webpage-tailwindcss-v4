@@ -10,7 +10,7 @@ let description = 'Tech Meetup in Innsbruck, brings together tech enthusiasts, e
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 
 const dateString = 'September, 14th 2023';
-const dateAndTime = `${dateString} starting at 18:30`;
+const dateAndTime = `${dateString}, open doors at 18:30 (talk starts ~18:45)`;
 const registrationLink = 'https://pblander.calendarsnack.com/snack/invite/grey/23vslo6uobhipairln4uikqsp0kpos2796vio4g1';
 ---
 
@@ -80,29 +80,9 @@ const registrationLink = 'https://pblander.calendarsnack.com/snack/invite/grey/2
 					</div>
 
 					<div class="flex flex-wrap justify-center -mx-4">
-						<Talk
-							avatar="/images/alps/speaker/avatar.png"
-							name="coming soon..."
-							title="Awesome talk #1"
-							description=""
-							bio=""
-							github=""
-							twitter=""
-							linkedin=""
-							website=""
-						/>
+						<Talk avatar="/images/alps/speaker/avatar.png" name="coming soon..." title="Awesome talk #1" description="" bio="" github="" twitter="" linkedin="" website="" />
 
-						<Talk
-							avatar="/images/alps/speaker/avatar.png"
-							name="coming soon..."
-							title="Awesome talk #2"
-							description=""
-							bio=""
-							github=""
-							twitter=""
-							linkedin=""
-							website=""
-						/>
+						<Talk avatar="/images/alps/speaker/avatar.png" name="coming soon..." title="Awesome talk #2" description="" bio="" github="" twitter="" linkedin="" website="" />
 					</div>
 					<div class="text-center mt-8 text-lg md:text-xl text-coolGray-500 font-medium">Find previous talks in the <a href="./archive/" class="text-yellow-500">Engineering Kiosk Alps Talks Archive</a></div>
 				</div>
