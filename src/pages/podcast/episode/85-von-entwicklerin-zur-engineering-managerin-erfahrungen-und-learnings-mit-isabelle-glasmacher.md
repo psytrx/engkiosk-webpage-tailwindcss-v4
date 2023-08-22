@@ -1,5 +1,5 @@
 ---
-amazon_music: ''
+amazon_music: https://music.amazon.com/podcasts/c35a09fe-4116-4e04-8f68-77d61b112e46/episodes/acefa9c0-df46-497a-be39-470a4fdd2bef/engineering-kiosk-85-von-entwicklerin-zur-engineering-managerin-erfahrungen-und-learnings-mit-isabelle-glasmacher
 apple_podcasts: ''
 audio: https://audio1.redcircle.com/episodes/a113e18c-897c-458d-b252-d305aa8de90c/stream.mp3
 chapter:
@@ -63,7 +63,10 @@ length_second: 4052
 pubDate: '2023-08-22'
 rtlplus: ''
 spotify: https://open.spotify.com/episode/1ydYfkKN7Ip7fNZOgQgSqy
-tags: []
+tags:
+- Karriere
+- Kommunikation
+- Leadership
 title: '#85 Von Entwicklerin zur Engineering Managerin: Erfahrungen und Learnings
   mit Isabelle Glasmacher'
 youtube: ''
