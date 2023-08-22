@@ -36,7 +36,7 @@ chapter:
   title: "Was ist der gr\xF6\xDFte Fehler, den du bereits im Management gemacht hast?"
 - start: 01:04:21
   title: Probiert den Job als Engineering Manager einfach aus
-deezer: ''
+deezer: https://www.deezer.com/episode/544032065
 description: "Der Einstieg in die erste Lead-Position, das Engineering Management,\
   \ kann be\xE4ngstigend sein. Viele sagen, es ist ein Jobwechsel und keine Bef\xF6\
   rderung. Mit dem Wechsel kommen eine Vielzahl neue Aufgaben mit sich, der Arbeitsalltag\
@@ -59,10 +59,10 @@ headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts||feedback-gern
   (gerne auch als Voice Message)
 image: /images/podcast/episode/85-von-entwicklerin-zur-engineering-managerin-erfahrungen-und-learnings-mit-isabelle-glasmacher.jpg
 layout: ../../../layouts/podcast-episode.astro
-length_second: 0
+length_second: 4052
 pubDate: '2023-08-22'
 rtlplus: ''
-spotify: ''
+spotify: https://open.spotify.com/episode/1ydYfkKN7Ip7fNZOgQgSqy
 tags: []
 title: '#85 Von Entwicklerin zur Engineering Managerin: Erfahrungen und Learnings
   mit Isabelle Glasmacher'
