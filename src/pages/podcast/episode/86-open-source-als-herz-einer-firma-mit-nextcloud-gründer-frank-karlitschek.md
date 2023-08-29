@@ -49,7 +49,7 @@ chapter:
     \ Source im kommerziellen Umfeld?"
 - start: 01:00:06
   title: Wie siehst du den Trend der Open Source Szene?
-deezer: ''
+deezer: https://www.deezer.com/episode/546838465
 description: "Die Story von ownCloud und Nextcloud inkl. einer erfolgreichen Firma\
   \ auf Basis von Open Source 2010 hat Frank Karlitschek die Open Source Software\
   \ ownCloud als Alternative zu Dropbox gestartet. 2016 hat Frank mit dem Core-Team\
@@ -69,10 +69,10 @@ headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts||feedback-gern
 image: "/images/podcast/episode/86-open-source-als-herz-einer-firma-mit-nextcloud-gr\xFC\
   nder-frank-karlitschek.jpg"
 layout: ../../../layouts/podcast-episode.astro
-length_second: 0
+length_second: 3934
 pubDate: '2023-08-29'
 rtlplus: ''
-spotify: ''
+spotify: https://open.spotify.com/episode/7xjMzo1A0zEkvnaNSNZfTC
 tags:
 - Tech Kultur
 - Open Source
