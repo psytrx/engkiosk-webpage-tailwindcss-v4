@@ -73,7 +73,9 @@ length_second: 0
 pubDate: '2023-08-29'
 rtlplus: ''
 spotify: ''
-tags: []
+- Tech Kultur
+- Open Source
+- Leadership
 title: "#86 Open Source als Herz einer Firma mit Nextcloud Gr\xFCnder Frank Karlitschek"
 youtube: ''
 
