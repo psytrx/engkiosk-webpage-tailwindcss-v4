@@ -60,7 +60,11 @@ length_second: 3282
 pubDate: '2023-09-05'
 rtlplus: ''
 spotify: https://open.spotify.com/episode/59P2u5VvAq7Zr74xIy8cpw
-tags: []
+tags:
+- Team
+- DevOps
+- Tech Kultur
+- Software Qualität
 title: '#87 Die DORA-Metriken: Ist Software-Entwicklungs-Performance messbar?'
 youtube: ''
 
