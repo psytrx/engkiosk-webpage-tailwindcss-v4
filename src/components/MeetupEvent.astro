@@ -1,0 +1,30 @@
+---
+export interface Props {
+	event: any;
+}
+
+const { event } = Astro.props;
+
+const talks = event.talks.map((talk, i) => {
+  return `"${talk.title}" by ${talk.name}`
+})
+
+const schema = {
+  "@context": "https://schema.org",
+  "@type": "Event",
+  "name": `Engineering Kiosk Alps @ ${event.location.name}`,
+  "startDate": event.date,
+  "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+  "eventStatus": "https://schema.org/EventScheduled",
+  "location": {
+    "@type": "Place",
+    "name": event.location.name,
+    "address": {
+      "@type": "PostalAddress",
+      "name": event.location.address
+    }
+  },
+  "description": `Talks: ${talks.join(', ')}`
+}
+---
+<script type="application/ld+json" set:html={JSON.stringify(schema)} is:inline />

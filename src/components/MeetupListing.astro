@@ -3,6 +3,7 @@ export interface Props {
 	numberOfItems: number;
 }
 
+import MeetupEvent from '../components/MeetupEvent.astro';
 import Talk from '../components/Talk.astro';
 
 import { formatDateWithoutWeekday } from '../scripts/date.js';
@@ -51,5 +52,6 @@ headline = 'Awesome Community Talks'
     </div>
     {!archive && <div class="text-center mt-8 text-lg md:text-xl text-coolGray-500 font-medium">Find previous talks in the <a href="./archive/" class="text-yellow-500">Engineering Kiosk Alps Talks Archive</a></div>}
   </div>
+  <MeetupEvent event={meetup.frontmatter} />
 ))}
 </section>
