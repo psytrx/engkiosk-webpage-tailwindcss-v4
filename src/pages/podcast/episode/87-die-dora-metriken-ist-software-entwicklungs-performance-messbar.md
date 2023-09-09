@@ -64,7 +64,7 @@ tags:
 - Team
 - DevOps
 - Tech Kultur
-- Software Qualität
+- "Software Qualit\xE4t"
 title: '#87 Die DORA-Metriken: Ist Software-Entwicklungs-Performance messbar?'
 youtube: ''
 
