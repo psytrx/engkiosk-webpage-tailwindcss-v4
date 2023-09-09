@@ -1,5 +1,5 @@
 ---
-import Markdown from '@astrojs/markdown-component';
+import { Markdown } from 'astro-remote';
 
 import MainHead from '../components/MainHead.astro';
 import Nav from '../components/Nav.astro';
@@ -61,7 +61,7 @@ let tags = content.tags.map((element) => URLify(element));
 					<div class="md:max-w-3xl mx-auto">
 						<article class="border-b border-coolGray-100 mb-4">
 							<div class="tldr">
-								<Markdown>{content.description}</Markdown>
+								<Markdown content={content.description} />
 							</div>
 
 							<slot />
