@@ -70,7 +70,11 @@ length_second: 4600
 pubDate: '2023-09-12'
 rtlplus: ''
 spotify: https://open.spotify.com/episode/6Gg1FGFu4829JIw1Mh5j65
-tags: []
+tags:
+- Team
+- Tech Kultur
+- Leadership
+- Kommunikation
 title: '#88 Die Personalabteilung: Freund oder Feind? mit Patrick Kuster'
 youtube: ''
 
