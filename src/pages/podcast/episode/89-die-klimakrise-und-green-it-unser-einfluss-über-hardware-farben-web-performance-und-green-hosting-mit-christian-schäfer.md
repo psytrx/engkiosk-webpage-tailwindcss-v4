@@ -65,7 +65,10 @@ length_second: 4563
 pubDate: '2023-09-19'
 rtlplus: ''
 spotify: https://open.spotify.com/episode/3LGHJYK2g5ENTjCKIQgLRG
-tags: []
+tags:
+- Software Engineering
+- Tech Kultur
+- Cloud
 title: "#89 Die Klimakrise und Green IT: unser Einfluss \xFCber Hardware, Farben,\
   \ Web-Performance und Green-Hosting mit Christian Sch\xE4fer"
 youtube: ''
