@@ -16,14 +16,15 @@ allMeetups.sort((a, b) => new Date(b.frontmatter.date).valueOf() - new Date(a.fr
 
 // Default wise list all items,
 // only limit it if requested
-let meetupsToShow = allMeetups;
-let showAllButton = false;
-let headline = 'Meetup Archive';
-let archive = true;
+let meetupsToShow, archive, headline;
 if (numberOfItems > 0) {
-headline = 'Awesome Community Talks'
-	archive = false;
-	meetupsToShow = allMeetups.slice(0, numberOfItems);
+  headline = 'Awesome Community Talks'
+  archive = false;
+  meetupsToShow = allMeetups.slice(0, numberOfItems);
+} else {
+  headline = 'Meetup Archive';
+  archive = true;
+  meetupsToShow = allMeetups.slice(1);
 }
 ---
 <section class="py-24 bg-coolGray-50" style="background-image: url('/images/elements/pattern-light-big.svg'); background-position: center;">
