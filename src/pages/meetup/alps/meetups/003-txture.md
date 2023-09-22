@@ -2,7 +2,8 @@
 date: '2023-10-12T18:30:00+02:00'
 location:
   name: 'Txture'
-  address: 'Grabenweg 68, 6020 Innsbruck, Austria'
+  address: 'SOHO2, Rooftop, Grabenweg 68, 6020 Innsbruck, Austria'
+  url: 'https://www.txture.io/'
 talks:
   - avatar: '/images/alps/speaker/03-alex.jpg'
     name: 'Alex Lanz'

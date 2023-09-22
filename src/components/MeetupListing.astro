@@ -18,41 +18,45 @@ allMeetups.sort((a, b) => new Date(b.frontmatter.date).valueOf() - new Date(a.fr
 // only limit it if requested
 let meetupsToShow, archive, headline;
 if (numberOfItems > 0) {
-  headline = 'Awesome Community Talks'
-  archive = false;
-  meetupsToShow = allMeetups.slice(0, numberOfItems);
+	headline = 'Awesome Community Talks';
+	archive = false;
+	meetupsToShow = allMeetups.slice(0, numberOfItems);
 } else {
-  headline = 'Meetup Archive';
-  archive = true;
-  meetupsToShow = allMeetups.slice(1);
+	headline = 'Meetup Archive';
+	archive = true;
+	meetupsToShow = allMeetups.slice(1);
 }
 ---
-<section class="py-24 bg-coolGray-50" style="background-image: url('/images/elements/pattern-light-big.svg'); background-position: center;">
-{meetupsToShow.map((meetup, i) => (
-  <div class="container px-4 mx-auto">
-    <div class="mb-16 text-center">
-      <span class="inline-block py-px px-2 mb-4 text-xs leading-5 text-yellow-500 bg-yellow-100 font-medium uppercase rounded-9xl">{headline}</span>
-      <h1 class="mb-4 text-3xl md:text-5xl leading-tight text-coolGray-900 font-bold tracking-tighter">{formatDateWithoutWeekday(meetup.frontmatter.date, "en-GB")}</h1>
-      {!archive && <p class="mb-8 text-lg md:text-xl text-coolGray-500 font-medium">Join the next meetup and listen to the following talks.</p>}
-    </div>
 
-    <div class="flex flex-wrap justify-center -mx-4">
-    {meetup.frontmatter.talks.map((talk, j) => (
-      <Talk
-        avatar={talk.avatar}
-        name={talk.name}
-        title={talk.title}
-        description={talk.description}
-        bio={talk.bio}
-        github={talk.github}
-        twitter={talk.twitter}
-        linkedin={talk.linkedin}
-        website={talk.website}
-      />
-    ))}
-    </div>
-    {!archive && <div class="text-center mt-8 text-lg md:text-xl text-coolGray-500 font-medium">Find previous talks in the <a href="./archive/" class="text-yellow-500">Engineering Kiosk Alps Talks Archive</a></div>}
-  </div>
-  <MeetupEvent event={meetup.frontmatter} />
-))}
+<section class="py-24 bg-coolGray-50" style="background-image: url('/images/elements/pattern-light-big.svg'); background-position: center;">
+	{
+		meetupsToShow.map((meetup, i) => (
+			<>
+				<div class="container px-4 mx-auto">
+					<div class="mb-16 text-center">
+						<span class="inline-block py-px px-2 mb-4 text-xs leading-5 text-yellow-500 bg-yellow-100 font-medium uppercase rounded-9xl">{headline}</span>
+						<h1 class="mb-4 text-3xl md:text-5xl leading-tight text-coolGray-900 font-bold tracking-tighter">
+							{formatDateWithoutWeekday(meetup.frontmatter.date, 'en-GB')} @ {meetup.frontmatter.location.name}
+						</h1>
+						{!archive && <p class="mb-8 text-lg md:text-xl text-coolGray-500 font-medium">Join the next meetup and listen to the following talks.</p>}
+					</div>
+
+					<div class="flex flex-wrap justify-center -mx-4">
+						{meetup.frontmatter.talks.map((talk, j) => (
+							<Talk avatar={talk.avatar} name={talk.name} title={talk.title} description={talk.description} bio={talk.bio} github={talk.github} twitter={talk.twitter} linkedin={talk.linkedin} website={talk.website} />
+						))}
+					</div>
+					{!archive && (
+						<div class="text-center mt-8 text-lg md:text-xl text-coolGray-500 font-medium">
+							Find previous talks in the{' '}
+							<a href="./archive/" class="text-yellow-500">
+								Engineering Kiosk Alps Talks Archive
+							</a>
+						</div>
+					)}
+				</div>
+				<MeetupEvent event={meetup.frontmatter} />
+			</>
+		))
+	}
 </section>
