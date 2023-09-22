@@ -18,6 +18,7 @@ talks:
     title: 'Surviving in the Open Source Jungle'
     description: "Open Source and the community behind it are like a vast jungle filled with opportunities, but it can be a tough place to navigate if you don't know the ropes. Richard takes you on a short tour through this jungle and shows you how to avoid common problems and find the valuable resources it has to offer. Learn the essential mindset to make the most out of Open Source without getting lost. He will share his insights from both perspectives, as a consultant and a private contributor."
     linkedin: 'penguinwarrior'
+    website: 'https://www.sigma-star.at'
 registrationLink: 'https://pblander.calendarsnack.com/snack/invite/grey/e17gcacoedq70p47ep2k0korg5gddpb2f4f8rco1'
 notes: ''
 ---
