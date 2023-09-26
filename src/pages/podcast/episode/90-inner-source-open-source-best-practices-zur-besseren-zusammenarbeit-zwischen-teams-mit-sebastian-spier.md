@@ -41,7 +41,7 @@ chapter:
   title: Was ist die Empfehlung um mit Inner Source zu starten?
 - start: 01:07:30
   title: Inner Source Community und Slack
-deezer: ''
+deezer: https://www.deezer.com/episode/559335951
 description: "Inner Source - Die Anwendung von Open Source Best Practices in deiner\
   \ Organisation Jede Firma und jeder Entwickler\u22C5in hat Ber\xFChrungspunkte mit\
   \ Open Source. Direkt oder indirekt durch verwendete Libraries, Server-Systeme oder\
@@ -67,10 +67,10 @@ headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts||feedback-gern
   (gerne auch als Voice Message)
 image: /images/podcast/episode/90-inner-source-open-source-best-practices-zur-besseren-zusammenarbeit-zwischen-teams-mit-sebastian-spier.jpg
 layout: ../../../layouts/podcast-episode.astro
-length_second: 0
+length_second: 4200
 pubDate: '2023-09-26'
 rtlplus: ''
-spotify: ''
+spotify: https://open.spotify.com/episode/46pnovkLChEseiNiiP15Qw
 tags: []
 title: '#90 Inner Source: Open Source Best Practices zur besseren Zusammenarbeit zwischen
   Teams mit Sebastian Spier'
