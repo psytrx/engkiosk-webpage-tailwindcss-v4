@@ -55,7 +55,7 @@ description: "Green IT und die CO2-Emissionen durch die IT, das Internet und die
   rderprogramm Media Tech Lab: Bewirb dich jetzt und erhalte bis zu 50.000\u20AC F\xF6\
   rdersumme f\xFCr dein Open-Source Projekt https://www.media-lab.de/de/media-tech-lab\
   \  Das schnelle Feedback zur Episode: \U0001F44D (top) \U0001F44E (geht so)"
-google_podcasts: ''
+google_podcasts: https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5yZWRjaXJjbGUuY29tLzBlY2ZkZmQ3LWZkYTEtNGMzZC05NTE1LTQ3NjcyN2Y5ZGY1ZQ/episode/NjY0Zjk3OTUtOTlkYS00YTExLThmMDYtZjhiZTg2NDc3MjBk?sa=X&ved=2ahUKEwiZwozds8eBAxW6omoFHRAVCMgQkfYCegQIARAF
 headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts||feedback-gerne-auch-als-voice-message::Feedback
   (gerne auch als Voice Message)
 image: "/images/podcast/episode/89-die-klimakrise-und-green-it-unser-einfluss-\xFC\
