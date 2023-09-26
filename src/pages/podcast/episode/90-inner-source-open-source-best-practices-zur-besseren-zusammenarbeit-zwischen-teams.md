@@ -71,7 +71,11 @@ length_second: 0
 pubDate: '2023-09-26'
 rtlplus: ''
 spotify: ''
-tags: []
+tags:
+- Team
+- Tech Kultur
+- Open Source
+- Kommunikation
 title: '#90 Inner Source: Open Source Best Practices zur besseren Zusammenarbeit zwischen
   Teams'
 youtube: ''
