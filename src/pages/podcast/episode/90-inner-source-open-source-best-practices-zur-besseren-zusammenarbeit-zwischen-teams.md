@@ -1,6 +1,6 @@
 ---
 amazon_music: https://music.amazon.com/podcasts/c35a09fe-4116-4e04-8f68-77d61b112e46/episodes/9f2a4db5-6afd-4e82-ac6b-686644474da8/engineering-kiosk-90-inner-source-open-source-best-practices-zur-besseren-zusammenarbeit-zwischen-teams
-apple_podcasts: ''
+apple_podcasts: https://podcasts.apple.com/us/podcast/90-inner-source-open-source-best-practices-zur-besseren/id1603082924?i=1000629154163&uo=4
 audio: https://audio1.redcircle.com/episodes/35042c18-43d7-485d-a010-aa0f1efe3ab5/stream.mp3
 chapter:
 - start: 00:00:00
@@ -41,7 +41,7 @@ chapter:
   title: Was ist die Empfehlung um mit Inner Source zu starten?
 - start: 01:07:30
   title: Inner Source Community und Slack
-deezer: ''
+deezer: https://www.deezer.com/episode/559335951
 description: "Inner Source - Die Anwendung von Open Source Best Practices in deiner\
   \ Organisation Jede Firma und jeder Entwickler\u22C5in hat Ber\xFChrungspunkte mit\
   \ Open Source. Direkt oder indirekt durch verwendete Libraries, Server-Systeme oder\
@@ -67,10 +67,10 @@ headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts||feedback-gern
   (gerne auch als Voice Message)
 image: /images/podcast/episode/90-inner-source-open-source-best-practices-zur-besseren-zusammenarbeit-zwischen-teams.jpg
 layout: ../../../layouts/podcast-episode.astro
-length_second: 0
+length_second: 4200
 pubDate: '2023-09-26'
 rtlplus: ''
-spotify: ''
+spotify: https://open.spotify.com/episode/46pnovkLChEseiNiiP15Qw
 tags:
 - Team
 - Tech Kultur
