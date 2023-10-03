@@ -75,7 +75,11 @@ length_second: 3461
 pubDate: '2023-10-03'
 rtlplus: ''
 spotify: https://open.spotify.com/episode/2dEBTNiNu3C6kDenwK9eFf
-tags: []
+tags:
+- Backend
+- Software Engineering
+- Datenbanken
+- Cloud
 title: "#91 Konsistent, Verf\xFCgbar, Ausfalltolerant oder Performant: Das CAP- und\
   \ PACELC-Theorem in verteilten Systemen"
 youtube: ''
