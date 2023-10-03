@@ -1,6 +1,6 @@
 ---
 amazon_music: ''
-apple_podcasts: ''
+apple_podcasts: https://podcasts.apple.com/us/podcast/91-konsistent-verf%C3%BCgbar-ausfalltolerant-oder-performant/id1603082924?i=1000629992728&uo=4
 audio: https://audio1.redcircle.com/episodes/2f6b4d3d-af38-4f97-ad65-5cc65eaaf79a/stream.mp3
 chapter:
 - start: 00:00:00
@@ -46,7 +46,7 @@ chapter:
   title: Kubernetes
 - start: 00:49:38
   title: Kafka
-deezer: ''
+deezer: https://www.deezer.com/episode/562049411
 description: "Konsistent, Verf\xFCgbar und Ausfalltolerant: W\xE4hle zwei - Das CAP-Theorem\
   \ Stellt euch vor, ein Handwerker k\xF6nnte die Dienstleistung schnell, g\xFCnstig\
   \ und in hoher Qualit\xE4t leisten. W\xE4re dies nicht ein Traum? Leider sind alle\
