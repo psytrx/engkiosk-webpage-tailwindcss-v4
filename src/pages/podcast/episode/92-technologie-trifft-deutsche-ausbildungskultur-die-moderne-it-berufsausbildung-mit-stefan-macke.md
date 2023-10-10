@@ -93,7 +93,11 @@ length_second: 4747
 pubDate: '2023-10-10'
 rtlplus: ''
 spotify: https://open.spotify.com/episode/6BOcnrmM3z9iwcxmSWfPhh
-tags: []
+tags:
+- Karriere
+- Bewerbung
+- Knowledge Sharing
+- Interview
 title: '#92 Technologie trifft Deutsche Ausbildungskultur: Die moderne IT-Berufsausbildung
   mit Stefan Macke'
 youtube: ''
