@@ -13,6 +13,7 @@ talks:
     github: 'arditshala'
     linkedin: 'arditshala'
     website: 'https://www.reply.com/open-reply/de/'
+    slides: '/images/alps/slides/00-ardit.pdf'
   - avatar: '/images/alps/speaker/01-gerold-aschauer.jpg'
     name: 'Gerold Aschauer'
     title: '500 employees and no hierarchy: agility and self-organization'

@@ -9,9 +9,10 @@ export interface Props {
 	linkedin?: string;
 	website?: string;
 	bio?: string;
+	slides?: string;
 }
 
-const { avatar, name, title, description, github, twitter, linkedin, website, bio } = Astro.props;
+const { avatar, name, title, description, github, twitter, linkedin, website, bio, slides } = Astro.props;
 ---
 
 <div class="w-full md:w-1/2 lg:w-1/2 px-4 mb-10 hostpreview">
@@ -57,5 +58,14 @@ const { avatar, name, title, description, github, twitter, linkedin, website, bi
 				)
 			}
 		</div>
+		{
+			slides && (
+				<div class="flex items-center justify-center mt-5">
+				<a target="_blank" class="inline-block hover:opacity-80" href={slides}>
+          <img src="/images/elements/icon-presentation.svg" height="25" width="25" alt="Slides of the talk" />
+        </a>
+				</div>
+			)
+		}
 	</div>
 </div>
