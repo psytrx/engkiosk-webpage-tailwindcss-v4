@@ -47,7 +47,7 @@ if (numberOfItems > 0) {
 
 					<div class="flex flex-wrap justify-center -mx-4">
 						{meetup.frontmatter.talks.map((talk, j) => (
-							<Talk avatar={talk.avatar} name={talk.name} title={talk.title} description={talk.description} bio={talk.bio} github={talk.github} twitter={talk.twitter} linkedin={talk.linkedin} website={talk.website} />
+							<Talk avatar={talk.avatar} name={talk.name} title={talk.title} description={talk.description} bio={talk.bio} github={talk.github} twitter={talk.twitter} linkedin={talk.linkedin} website={talk.website} slides={talk.slides} />
 						))}
 					</div>
 					{!archive && (
