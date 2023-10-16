@@ -3,6 +3,7 @@ date: '2023-11-12T18:30:00+02:00'
 location:
   name: 'Swarm Analytics'
   address: 'Helga-Krismer-Platz 1, 6020 Innsbruck, Austria'
+  url: 'https://swarm-analytics.com'
 talks:
   - avatar: '/images/alps/speaker/2311-mike.jpg'
     name: 'Mike Brunner'
