@@ -6,7 +6,7 @@ location:
   url: 'https://www.txture.io/'
   logo: '/images/alps/location/txture.svg'
 talks:
-  - avatar: '/images/alps/speaker/03-alex.jpg'
+  - avatar: '/images/alps/speaker/2310-alex.jpg'
     name: 'Alex Lanz'
     bio: 'Software Developer and Co-Founder of AboutBits'
     title: 'Decentralization of infrastructure and DevOps tasks to the whole team'
@@ -14,7 +14,7 @@ talks:
     twitter: 'alex__lanz'
     linkedin: 'alex-lanz'
     website: 'https://aboutbits.it'
-  - avatar: '/images/alps/speaker/03-richard.jpg'
+  - avatar: '/images/alps/speaker/2310-richard.jpg'
     name: 'Richard Weinberger'
     bio: 'Richard is co-founder of sigma star gmbh where he offers consulting services around Linux and IT security. Upstream he maintains various subsystems of the Linux kernel such as UserModeLinux and UBIFS. Beside of low level and security aspects of computers he enjoys growing lithops.'
     title: 'Surviving in the Open Source Jungle'
