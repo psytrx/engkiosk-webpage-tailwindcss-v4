@@ -1,6 +1,6 @@
 ---
 amazon_music: ''
-apple_podcasts: ''
+apple_podcasts: https://podcasts.apple.com/us/podcast/93-barbara-liskov-das-l-in-solid-liskovsches/id1603082924?i=1000631558829&uo=4
 audio: https://audio1.redcircle.com/episodes/a715517d-ad6f-445b-8f59-1af1ae45fe40/stream.mp3
 chapter:
 - start: 00:00:00
@@ -29,7 +29,7 @@ chapter:
   title: 'Das L in SOLID: Liskov Substitution Principle (LSP)'
 - start: 00:44:23
   title: The Power of Abstraction
-deezer: ''
+deezer: https://www.deezer.com/episode/566886091
 description: "Liskov Substitution Principle: Das L in SOLID von Barbara Liskov Heutzutage\
   \ wird die Informatik und Softwareentwicklung leider prim\xE4r von M\xE4nnern dominiert.\
   \ Doch schaut man ein paar Jahrzehnte zur\xFCck, haben viele Frauen ma\xDFgeblich\
@@ -51,10 +51,10 @@ headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts||feedback-gern
   (gerne auch als Voice Message)
 image: /images/podcast/episode/93-barbara-liskov-das-l-in-solid-liskovsches-substitutionsprinzip-abstraktion.jpg
 layout: ../../../layouts/podcast-episode.astro
-length_second: 0
+length_second: 3161
 pubDate: '2023-10-17'
 rtlplus: ''
-spotify: ''
+spotify: https://open.spotify.com/episode/1Weh8HW6nFm1bznCqTqDoQ
 tags: []
 title: '#93 Barbara Liskov - Das L in SOLID (Liskovsches Substitutionsprinzip & Abstraktion)'
 youtube: ''
