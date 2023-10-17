@@ -55,6 +55,7 @@ tags:
 - Software Engineering
 - Backend
 - Cloud
+- Turing Award
 title: '#71 Tim Berners-Lee: Was ist das World Wide Web und was ist seine Zukunft?'
 youtube: https://www.youtube.com/watch?v=uz_QIiAgGQY
 

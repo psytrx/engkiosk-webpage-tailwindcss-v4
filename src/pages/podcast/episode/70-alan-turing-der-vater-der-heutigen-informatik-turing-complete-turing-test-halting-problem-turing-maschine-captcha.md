@@ -47,6 +47,7 @@ spotify: https://open.spotify.com/episode/0BsIJnJND02rz6MyL8YfsI
 tags:
 - Tech Kultur
 - Software Engineering
+- Turing Award
 title: '#70 Alan Turing: Der Vater der heutigen Informatik (Turing-Complete, Turing-Test,
   Halting-Problem, Turing-Maschine, Captcha)'
 youtube: https://www.youtube.com/watch?v=_OEvB3Skcsg
