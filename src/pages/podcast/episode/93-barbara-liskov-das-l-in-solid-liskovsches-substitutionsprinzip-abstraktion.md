@@ -55,7 +55,10 @@ length_second: 3161
 pubDate: '2023-10-17'
 rtlplus: ''
 spotify: https://open.spotify.com/episode/1Weh8HW6nFm1bznCqTqDoQ
-tags: []
+tags:
+- Turing Award
+- Software Engineering
+- Software Qualität
 title: '#93 Barbara Liskov - Das L in SOLID (Liskovsches Substitutionsprinzip & Abstraktion)'
 youtube: ''
 
