@@ -21,6 +21,6 @@ talks:
     description: "What could possibly go wrong if a startup scales from a handful of developers to a company with 30 people? All of a sudden I found myself in the position of handling 10 developers and had to care about more than just the next pull request. \n Together we will take a look into the past and I will present some of our biggest challenges and personal learnings from growing and organizing a bunch of motivated developers without knowing where the journey will end. While theory explains you the easy way, practice always looks different. \n And who the heck is responsible for buying coffee beans and milk??"
     linkedin: 'christian-esswein-bb70a3160'
     website: 'https://txture.io'
-    # slides: '2307-chris.pdf'
+    slides: '2307-chris.pdf'
 notes: ''
 ---
