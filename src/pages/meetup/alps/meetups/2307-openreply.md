@@ -13,7 +13,7 @@ talks:
     description: 'With one security vulnerability chasing the next through tech news, we all know that security is an important part of software engineering. But how come I still see the same common, avoidable flaws in code audits? In this talk we’ll take a brief tour through some common vulnerabilities every developer should know about and discuss sustainable procedures to prevent them.'
     linkedin: 'david-g42'
     website: 'https://sigma-star.at'
-    # slides: '2307-david.pdf'
+    slides: '2307-david.pdf'
   - avatar: '2307-chris.jpg'
     name: 'Christian Esswein'
     bio: 'Chris is a software engineer and development lead at Txture - a startup based in Innsbruck. Besides his work he is passionate about analyzing and visualizing outdoor sport activity data.'
