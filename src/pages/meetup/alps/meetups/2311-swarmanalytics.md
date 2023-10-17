@@ -2,7 +2,7 @@
 date: '2023-11-12T18:30:00+01:00'
 location:
   name: 'MAD Ventures'
-  address: 'Helga-Krismer-Platz 1, 6020 Innsbruck, Austria'
+  address: 'Helga-Krismer-Platz 1, 1. Stock, 6020 Innsbruck, Austria'
   url: 'https://www.mad.ag/'
   logo: 'mad.svg'
 talks:
