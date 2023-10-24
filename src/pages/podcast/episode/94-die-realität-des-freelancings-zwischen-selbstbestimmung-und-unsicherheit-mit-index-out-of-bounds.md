@@ -98,7 +98,11 @@ length_second: 5247
 pubDate: '2023-10-24'
 rtlplus: ''
 spotify: https://open.spotify.com/episode/0E5BlyyQHiXrkVu2Vuknwj
-tags: []
+tags:
+- Karriere
+- Kommunikation
+- Gehalt
+- Interview
 title: "#94 Die Realit\xE4t des Freelancings: Zwischen Selbstbestimmung und Unsicherheit\
   \ mit Index out of bounds"
 youtube: ''
