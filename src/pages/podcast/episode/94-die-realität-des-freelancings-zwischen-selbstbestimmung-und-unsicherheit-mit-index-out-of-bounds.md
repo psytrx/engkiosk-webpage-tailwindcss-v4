@@ -1,6 +1,6 @@
 ---
 amazon_music: ''
-apple_podcasts: ''
+apple_podcasts: https://podcasts.apple.com/us/podcast/94-die-realit%C3%A4t-des-freelancings-zwischen-selbstbestimmung/id1603082924?i=1000632389239&uo=4
 audio: https://audio1.redcircle.com/episodes/b7e59af5-cd61-4f6c-97d8-9baab461a562/stream.mp3
 chapter:
 - start: 00:00:00
@@ -68,7 +68,7 @@ chapter:
   title: Weiterbildung als Freelancer
 - start: 01:23:42
   title: Risiken und Vorteile des Freelancer-Daseins
-deezer: ''
+deezer: https://www.deezer.com/episode/569137101
 description: "Freelancing: Selbstverwirklichung und viel Geld oder kontinuierliche\
   \ Akquise und Selbst- und st\xE4ndig? Seit einer gef\xFChlten Ewigkeit sprechen\
   \ wir von einem Fachkr\xE4ftemangel. Um diesen Mangel einigerma\xDFen auszugleichen,\
@@ -94,10 +94,10 @@ headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts||feedback-gern
   (gerne auch als Voice Message)
 image: "/images/podcast/episode/94-die-realit\xE4t-des-freelancings-zwischen-selbstbestimmung-und-unsicherheit-mit-index-out-of-bounds.jpg"
 layout: ../../../layouts/podcast-episode.astro
-length_second: 0
+length_second: 5247
 pubDate: '2023-10-24'
 rtlplus: ''
-spotify: ''
+spotify: https://open.spotify.com/episode/0E5BlyyQHiXrkVu2Vuknwj
 tags: []
 title: "#94 Die Realit\xE4t des Freelancings: Zwischen Selbstbestimmung und Unsicherheit\
   \ mit Index out of bounds"
