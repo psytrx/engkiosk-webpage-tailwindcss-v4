@@ -58,7 +58,7 @@ spotify: https://open.spotify.com/episode/1Weh8HW6nFm1bznCqTqDoQ
 tags:
 - Turing Award
 - Software Engineering
-- Software Qualität
+- "Software Qualit\xE4t"
 title: '#93 Barbara Liskov - Das L in SOLID (Liskovsches Substitutionsprinzip & Abstraktion)'
 youtube: https://youtu.be/2jYqADkEqFE
 
