@@ -62,6 +62,11 @@ layout: ../../../layouts/podcast-episode.astro
 length_second: 3699
 pubDate: '2023-06-13'
 rtlplus: ''
+speaker:
+- name: Andy Grunwald
+  website: https://andygrunwald.com/
+- name: Wolfgang Gassler
+  website: https://wolfgang.gassler.org/
 spotify: https://open.spotify.com/episode/5OHqN4jStQIUMKkjpvy40G
 tags:
 - Karriere

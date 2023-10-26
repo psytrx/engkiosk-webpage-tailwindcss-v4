@@ -63,6 +63,11 @@ layout: ../../../layouts/podcast-episode.astro
 length_second: 3812
 pubDate: '2022-06-14'
 rtlplus: ''
+speaker:
+- name: Andy Grunwald
+  website: https://andygrunwald.com/
+- name: Wolfgang Gassler
+  website: https://wolfgang.gassler.org/
 spotify: https://open.spotify.com/episode/36a2YKzzvfrrRzM3qZTHaC
 tags:
 - Automation

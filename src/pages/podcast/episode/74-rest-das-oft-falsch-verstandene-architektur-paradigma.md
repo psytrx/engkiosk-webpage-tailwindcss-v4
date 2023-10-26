@@ -54,6 +54,11 @@ layout: ../../../layouts/podcast-episode.astro
 length_second: 3775
 pubDate: '2023-06-06'
 rtlplus: ''
+speaker:
+- name: Andy Grunwald
+  website: https://andygrunwald.com/
+- name: Wolfgang Gassler
+  website: https://wolfgang.gassler.org/
 spotify: https://open.spotify.com/episode/091h2JZYSFuNav3miWbt26
 tags:
 - Software Engineering

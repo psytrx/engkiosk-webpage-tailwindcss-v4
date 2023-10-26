@@ -69,6 +69,11 @@ layout: ../../../layouts/podcast-episode.astro
 length_second: 4600
 pubDate: '2023-09-12'
 rtlplus: ''
+speaker:
+- name: Andy Grunwald
+  website: https://andygrunwald.com/
+- name: Wolfgang Gassler
+  website: https://wolfgang.gassler.org/
 spotify: https://open.spotify.com/episode/6Gg1FGFu4829JIw1Mh5j65
 tags:
 - Team

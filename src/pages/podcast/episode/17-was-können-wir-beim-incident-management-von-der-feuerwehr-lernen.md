@@ -86,6 +86,11 @@ layout: ../../../layouts/podcast-episode.astro
 length_second: 4174
 pubDate: '2022-05-03'
 rtlplus: ''
+speaker:
+- name: Andy Grunwald
+  website: https://andygrunwald.com/
+- name: Wolfgang Gassler
+  website: https://wolfgang.gassler.org/
 spotify: https://open.spotify.com/episode/4FyZmHWjqNmlWn7bl7bPaP
 tags:
 - DevOps

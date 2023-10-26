@@ -58,6 +58,11 @@ layout: ../../../layouts/podcast-episode.astro
 length_second: 3784
 pubDate: '2022-09-06'
 rtlplus: ''
+speaker:
+- name: Andy Grunwald
+  website: https://andygrunwald.com/
+- name: Wolfgang Gassler
+  website: https://wolfgang.gassler.org/
 spotify: https://open.spotify.com/episode/4oZ8sFzPQHMypISi7qmGSR
 tags:
 - Leadership

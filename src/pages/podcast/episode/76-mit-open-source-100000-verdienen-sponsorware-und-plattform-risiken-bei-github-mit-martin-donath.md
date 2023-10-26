@@ -64,6 +64,11 @@ layout: ../../../layouts/podcast-episode.astro
 length_second: 4694
 pubDate: '2023-06-20'
 rtlplus: ''
+speaker:
+- name: Andy Grunwald
+  website: https://andygrunwald.com/
+- name: Wolfgang Gassler
+  website: https://wolfgang.gassler.org/
 spotify: https://open.spotify.com/episode/6EtK6QAKUpu69kztnZdneZ
 tags:
 - Projektmanagement

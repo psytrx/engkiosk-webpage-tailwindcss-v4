@@ -71,6 +71,11 @@ layout: ../../../layouts/podcast-episode.astro
 length_second: 4195
 pubDate: '2023-07-11'
 rtlplus: ''
+speaker:
+- name: Andy Grunwald
+  website: https://andygrunwald.com/
+- name: Wolfgang Gassler
+  website: https://wolfgang.gassler.org/
 spotify: https://open.spotify.com/episode/5DIzNhGilzQ7Yo1syMdzf8
 tags:
 - Tech Kultur
