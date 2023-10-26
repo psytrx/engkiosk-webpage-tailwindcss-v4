@@ -69,7 +69,7 @@ rtlplus: ''
 speaker:
 - name: Andy Grunwald
   website: https://andygrunwald.com/
-- name: Wolfgang Gassler
+- name: Wolfi Gassler
   website: https://wolfgang.gassler.org/
 spotify: https://open.spotify.com/episode/42HDmC8v2lIbjtYw51OJDx
 tags:

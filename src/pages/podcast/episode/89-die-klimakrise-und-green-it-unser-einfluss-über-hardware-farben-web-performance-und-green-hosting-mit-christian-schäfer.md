@@ -67,7 +67,7 @@ rtlplus: ''
 speaker:
 - name: Andy Grunwald
   website: https://andygrunwald.com/
-- name: Wolfgang Gassler
+- name: Wolfi Gassler
   website: https://wolfgang.gassler.org/
 - name: Christian Schaefer
   website: https://schepp.dev/
