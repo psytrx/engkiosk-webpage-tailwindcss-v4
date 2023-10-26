@@ -102,6 +102,10 @@ speaker:
   website: https://andygrunwald.com/
 - name: Wolfgang Gassler
   website: https://wolfgang.gassler.org/
+- name: Thomas Diroll
+  website: https://www.thomasdiroll.com/
+- name: Christian Braun
+  website: https://theempathicdev.de/
 spotify: https://open.spotify.com/episode/0E5BlyyQHiXrkVu2Vuknwj
 tags:
 - Karriere

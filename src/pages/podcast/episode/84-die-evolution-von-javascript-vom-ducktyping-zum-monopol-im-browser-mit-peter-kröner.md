@@ -72,6 +72,8 @@ speaker:
   website: https://andygrunwald.com/
 - name: Wolfgang Gassler
   website: https://wolfgang.gassler.org/
+- name: Peter Kröner
+  website: https://www.peterkroener.de/
 spotify: https://open.spotify.com/episode/3iIcyS88hHQEWaN2Nm8RYP
 tags:
 - Backend

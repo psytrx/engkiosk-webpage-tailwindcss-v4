@@ -67,6 +67,8 @@ speaker:
   website: https://andygrunwald.com/
 - name: Wolfgang Gassler
   website: https://wolfgang.gassler.org/
+- name: Isabelle Glasmacher
+  website: https://www.xing.com/profile/Isabelle_Glasmacher
 spotify: https://open.spotify.com/episode/1ydYfkKN7Ip7fNZOgQgSqy
 tags:
 - Karriere

@@ -76,6 +76,8 @@ speaker:
   website: https://andygrunwald.com/
 - name: Wolfgang Gassler
   website: https://wolfgang.gassler.org/
+- name: Philipp Acsany
+  website: https://www.acsany.de/
 spotify: https://open.spotify.com/episode/5DIzNhGilzQ7Yo1syMdzf8
 tags:
 - Tech Kultur

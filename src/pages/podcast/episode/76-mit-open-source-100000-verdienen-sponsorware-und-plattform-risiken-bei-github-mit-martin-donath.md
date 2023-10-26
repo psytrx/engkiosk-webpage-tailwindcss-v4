@@ -69,6 +69,8 @@ speaker:
   website: https://andygrunwald.com/
 - name: Wolfgang Gassler
   website: https://wolfgang.gassler.org/
+- name: Martin Donath
+  website: https://github.com/squidfunk
 spotify: https://open.spotify.com/episode/6EtK6QAKUpu69kztnZdneZ
 tags:
 - Projektmanagement
