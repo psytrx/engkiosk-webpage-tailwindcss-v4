@@ -32,6 +32,11 @@ PATH_IMAGE_FILES = 'public/images/podcast/episode'
 TOML_FILE = 'netlify.toml'
 REDIRECT_PREFIX = '/episodes/'
 
+DEFAULT_SPEAKER = [
+    {"name": "Andy Grunwald", "website": "https://andygrunwald.com/"},
+    {"name": "Wolfgang Gassler", "website": "https://wolfgang.gassler.org/"},
+]
+
 # URLs from Podcast sites
 PODCAST_APPLE_URL = "https://itunes.apple.com/lookup?id=1603082924&media=podcast&entity=podcastEpisode&limit=100"
 SPOTIFY_SHOW_ID = "0tJRC0UsObPCWLmmzmOkIs"
@@ -356,6 +361,7 @@ def sync_podcast_episodes(rss_feed, path_md_files, path_img_files, no_api_calls=
             'youtube': '',
             'tags': [],
             'length_second': length_second,
+            'speaker': DEFAULT_SPEAKER,
         }
 
         full_file_path = f'{path_md_files}/{filename}'
@@ -382,6 +388,7 @@ def sync_podcast_episodes(rss_feed, path_md_files, path_img_files, no_api_calls=
                     'youtube',
                     'tags',
                     'length_second',
+                    'speaker',
                 ]
                 for key in keys_to_keep:
                     val = episode.get(key)
