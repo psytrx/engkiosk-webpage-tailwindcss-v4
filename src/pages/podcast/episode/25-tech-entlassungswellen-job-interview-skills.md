@@ -62,6 +62,11 @@ layout: ../../../layouts/podcast-episode.astro
 length_second: 4376
 pubDate: '2022-06-28'
 rtlplus: ''
+speaker:
+- name: Andy Grunwald
+  website: https://andygrunwald.com/
+- name: Wolfi Gassler
+  website: https://wolfgang.gassler.org/
 spotify: https://open.spotify.com/episode/5vSicTXfw07adEdvQGPQUd
 tags:
 - Bewerbung

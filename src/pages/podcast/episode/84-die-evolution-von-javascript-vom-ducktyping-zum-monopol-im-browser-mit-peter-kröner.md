@@ -67,6 +67,13 @@ layout: ../../../layouts/podcast-episode.astro
 length_second: 5219
 pubDate: '2023-08-15'
 rtlplus: ''
+speaker:
+- name: Andy Grunwald
+  website: https://andygrunwald.com/
+- name: Wolfi Gassler
+  website: https://wolfgang.gassler.org/
+- name: Peter Kröner
+  website: https://www.peterkroener.de/
 spotify: https://open.spotify.com/episode/3iIcyS88hHQEWaN2Nm8RYP
 tags:
 - Backend

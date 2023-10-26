@@ -62,6 +62,13 @@ layout: ../../../layouts/podcast-episode.astro
 length_second: 4052
 pubDate: '2023-08-22'
 rtlplus: ''
+speaker:
+- name: Andy Grunwald
+  website: https://andygrunwald.com/
+- name: Wolfi Gassler
+  website: https://wolfgang.gassler.org/
+- name: Isabelle Glasmacher
+  website: https://www.xing.com/profile/Isabelle_Glasmacher
 spotify: https://open.spotify.com/episode/1ydYfkKN7Ip7fNZOgQgSqy
 tags:
 - Karriere

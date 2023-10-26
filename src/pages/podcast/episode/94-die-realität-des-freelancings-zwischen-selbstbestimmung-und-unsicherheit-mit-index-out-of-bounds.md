@@ -97,6 +97,15 @@ layout: ../../../layouts/podcast-episode.astro
 length_second: 5247
 pubDate: '2023-10-24'
 rtlplus: ''
+speaker:
+- name: Andy Grunwald
+  website: https://andygrunwald.com/
+- name: Wolfi Gassler
+  website: https://wolfgang.gassler.org/
+- name: Thomas Diroll
+  website: https://www.thomasdiroll.com/
+- name: Christian Braun
+  website: https://theempathicdev.de/
 spotify: https://open.spotify.com/episode/0E5BlyyQHiXrkVu2Vuknwj
 tags:
 - Karriere

@@ -88,6 +88,13 @@ layout: ../../../layouts/podcast-episode.astro
 length_second: 3678
 pubDate: '2023-06-27'
 rtlplus: ''
+speaker:
+- name: Andy Grunwald
+  website: https://andygrunwald.com/
+- name: Wolfi Gassler
+  website: https://wolfgang.gassler.org/
+- name: Diana Knodel
+  website: https://www.linkedin.com/in/dianaknodel/
 spotify: https://open.spotify.com/episode/4LsjPZYmED1ARMkOXhuQwP
 tags:
 - Tech Kultur

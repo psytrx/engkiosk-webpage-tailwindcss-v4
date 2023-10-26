@@ -69,6 +69,11 @@ layout: ../../../layouts/podcast-episode.astro
 length_second: 3841
 pubDate: '2022-02-22'
 rtlplus: ''
+speaker:
+- name: Andy Grunwald
+  website: https://andygrunwald.com/
+- name: Wolfi Gassler
+  website: https://wolfgang.gassler.org/
 spotify: https://open.spotify.com/episode/5RCZ1mHsBVN83lWXu49xqQ
 tags:
 - Karriere

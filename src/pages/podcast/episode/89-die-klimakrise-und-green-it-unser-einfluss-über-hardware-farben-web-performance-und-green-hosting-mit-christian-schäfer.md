@@ -64,6 +64,13 @@ layout: ../../../layouts/podcast-episode.astro
 length_second: 4563
 pubDate: '2023-09-19'
 rtlplus: ''
+speaker:
+- name: Andy Grunwald
+  website: https://andygrunwald.com/
+- name: Wolfi Gassler
+  website: https://wolfgang.gassler.org/
+- name: Christian Schaefer
+  website: https://schepp.dev/
 spotify: https://open.spotify.com/episode/3LGHJYK2g5ENTjCKIQgLRG
 tags:
 - Software Engineering

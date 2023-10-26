@@ -69,6 +69,13 @@ layout: ../../../layouts/podcast-episode.astro
 length_second: 4600
 pubDate: '2023-09-12'
 rtlplus: ''
+speaker:
+- name: Andy Grunwald
+  website: https://andygrunwald.com/
+- name: Wolfi Gassler
+  website: https://wolfgang.gassler.org/
+- name: Patrick Kuster
+  website: https://www.linkedin.com/in/patrick-kuster-71248b68/
 spotify: https://open.spotify.com/episode/6Gg1FGFu4829JIw1Mh5j65
 tags:
 - Team
