@@ -95,10 +95,13 @@ rtlplus: ''
 speaker:
 - name: Andy Grunwald
   website: https://andygrunwald.com/
+  transcriptLetter: B
 - name: Wolfgang Gassler
   website: https://wolfgang.gassler.org/
+  transcriptLetter: C
 - name: Stefan Macke
   website: https://it-berufe-podcast.de/kontakt/
+  transcriptLetter: A
 spotify: https://open.spotify.com/episode/6BOcnrmM3z9iwcxmSWfPhh
 tags:
 - Karriere
