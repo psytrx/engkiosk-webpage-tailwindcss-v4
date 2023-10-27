@@ -1,7 +1,11 @@
 ---
+import Path from 'path'
+import fs from 'fs'
+
 import MainHead from '../components/MainHead.astro';
 import Nav from '../components/Nav.astro';
 import Footer from '../components/Footer.astro';
+import PodcastEpisodeTranscriptLine from '../components/PodcastEpisodeTranscriptLine.astro';
 import { URLify } from '../scripts/urlify.js';
 import { formatDate } from '../scripts/date.js';
 
@@ -35,6 +39,36 @@ headline_split.forEach(function callback(val) {
 let tags = content.tags.map((element) => URLify(element));
 
 // TODO Implement RTL+ Musik into the podcast player
+
+// Prepare speaker names for transcript
+// Our transcript only contains "Speaker A" and "Speaker B".
+// In the Podcast Episode Metadata, we also have real names :)
+const speakerMap = new Map();
+content.speaker.forEach ((person, index) => {
+	if ('transcriptLetter' in person) {
+		speakerMap.set(person.transcriptLetter, person.name);
+	}
+});
+
+// Transcripts
+const episodeFilename = Path.basename(content.file);
+const episodeNumber = episodeFilename.substring(0, episodeFilename.indexOf('-'));
+const transcriptFilename = 'src/data/transcripts/' + episodeNumber + '-transcript-slim.json';
+
+let transcriptionUtterances = [];
+if (fs.existsSync(transcriptFilename)) {
+	const transcriptionData = JSON.parse(fs.readFileSync(transcriptFilename));
+
+	transcriptionUtterances = transcriptionData.utterances;
+	// Overwrite "Speaker A" with a real name
+	transcriptionUtterances.forEach ((entry, index) => {
+		if (speakerMap.has(entry.speaker)) {
+			transcriptionUtterances[index].speaker = speakerMap.get(entry.speaker)
+		}
+
+		transcriptionUtterances[index].startSeconds = Math.floor(entry.start / 1000);
+	});
+}
 ---
 
 <html lang="de">
@@ -293,6 +327,10 @@ let tags = content.tags.map((element) => URLify(element));
 								<article id="podcast_episode_content_slot">
 									<slot />
 								</article>
+								{transcriptionUtterances.length > 0 && (
+									<h3 class="mb-4 text-2xl md:text-3xl font-semibold text-coolGray-800" id="transcript">Transkript</h3>
+								)}
+								{transcriptionUtterances.map((utterance, i) => <PodcastEpisodeTranscriptLine utterance={utterance} />)}
 							</div>
 						</div>
 					</div>
