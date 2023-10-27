@@ -57,8 +57,10 @@ rtlplus: ''
 speaker:
 - name: Andy Grunwald
   website: https://andygrunwald.com/
+  transcriptLetter: A
 - name: Wolfgang Gassler
   website: https://wolfgang.gassler.org/
+  transcriptLetter: B
 spotify: https://open.spotify.com/episode/1Weh8HW6nFm1bznCqTqDoQ
 tags:
 - Turing Award
