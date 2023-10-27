@@ -1,0 +1,17 @@
+---
+export interface Props {
+	utterance: object;
+}
+
+import { millisecondsToHumanTimestamp } from '../scripts/date.js';
+
+const { utterance } = Astro.props;
+
+// utterance.{start|end} is in milliseconds
+const startTime = millisecondsToHumanTimestamp(utterance.start);
+const endTime = millisecondsToHumanTimestamp(utterance.end);
+---
+<p class="mb-4 text-base md:text-lg text-coolGray-500">
+	<b>{utterance.speaker}</b> ({startTime} - {endTime})<br />
+	{utterance.text}
+</p>
