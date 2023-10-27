@@ -11,6 +11,7 @@ import { formatDate } from '../scripts/date.js';
 
 import podcastInfo from '../data/podcast-info.json';
 import '../styles/podcast_episode.scss';
+import PodcastEpisodeTranscript from '../components/PodcastEpisodeTranscript.astro';
 
 const { content } = Astro.props;
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
@@ -187,10 +188,12 @@ if (fs.existsSync(transcriptFilename)) {
 												});
 
 												// Click events for the transcriptions
-												const transcriptsElements = document.querySelectorAll('[data-transcript-start]');
+												const transcriptsElements = document.querySelectorAll('[data-trans-start]');
 												for (let item of transcriptsElements) {
+													item.classList.add('cursor-pointer');
 													item.addEventListener('click', (e) => {
-														player.setCurrentTime(e.target.dataset.transcriptStart);
+														console.log(item.dataset.transStart);
+														player.setCurrentTime(item.dataset.transStart);
 														player.play()
 													});
 												}
@@ -333,13 +336,10 @@ if (fs.existsSync(transcriptFilename)) {
 									)
 								}
 								<h3 class="mb-4 text-2xl md:text-3xl font-semibold text-coolGray-800" id="headline-content">Shownotes / Worum geht's?</h3>
-								<article id="podcast_episode_content_slot">
-									<slot />
+								<article class="podcast_episode_content_slot">
+									<slot />			
+									<PodcastEpisodeTranscript utterances={transcriptionUtterances} />
 								</article>
-								{transcriptionUtterances.length > 0 && (
-									<h3 class="mb-4 text-2xl md:text-3xl font-semibold text-coolGray-800" id="transcript">Transkript</h3>
-								)}
-								{transcriptionUtterances.map((utterance, i) => <PodcastEpisodeTranscriptLine utterance={utterance} />)}
 							</div>
 						</div>
 					</div>
