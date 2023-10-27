@@ -10,8 +10,10 @@ const { utterance } = Astro.props;
 // utterance.{start|end} is in milliseconds
 const startTime = millisecondsToHumanTimestamp(utterance.start);
 const endTime = millisecondsToHumanTimestamp(utterance.end);
+
+const startInSeconds = Math.floor(utterance.start / 1000);
 ---
-<p class="mb-4 text-base md:text-lg text-coolGray-500">
+<p class="mb-4 text-base md:text-lg text-coolGray-500 cursor-pointer" data-transcript-start={startInSeconds}>
 	<b>{utterance.speaker}</b> ({startTime} - {endTime})<br />
 	{utterance.text}
 </p>
