@@ -70,6 +70,16 @@ if (fs.existsSync(transcriptFilename)) {
 		transcriptionUtterances[index].startSeconds = Math.floor(entry.start / 1000);
 	});
 }
+
+// filter slot code
+const html = (await Astro.slots.render('default'))
+	//remove all <p><br></p>
+	.replace(/<p><br><\/p>/g, '')
+	// add class to p tag of format "<p>(01:18:00)"
+	.replace(/<p>(\(\d\d:\d\d:\d\d\))/g, '<p class="timestamp">$1')
+		// remove everything between <p>Feedback and 136776</p>
+	.replace(/<p>Feedback[\s\S]*136776<\/p>/g, '')
+
 ---
 
 <html lang="de">
@@ -336,7 +346,7 @@ if (fs.existsSync(transcriptFilename)) {
 								}
 								<h3 class="mb-4 text-2xl md:text-3xl font-semibold text-coolGray-800" id="headline-content">Shownotes / Worum geht's?</h3>
 								<article class="podcast_episode_content_slot">
-									<slot />			
+									<Fragment set:html={html} />
 									<PodcastEpisodeTranscript utterances={transcriptionUtterances} />
 								</article>
 							</div>
