@@ -185,6 +185,15 @@ if (fs.existsSync(transcriptFilename)) {
 														]);
 													});
 												});
+
+												// Click events for the transcriptions
+												const transcriptsElements = document.querySelectorAll('[data-transcript-start]');
+												for (let item of transcriptsElements) {
+													item.addEventListener('click', (e) => {
+														player.setCurrentTime(e.target.dataset.transcriptStart);
+														player.play()
+													});
+												}
 											};
 										});
 									</script>
