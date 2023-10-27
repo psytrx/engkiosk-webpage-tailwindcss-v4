@@ -100,12 +100,16 @@ rtlplus: ''
 speaker:
 - name: Andy Grunwald
   website: https://andygrunwald.com/
+  transcriptLetter: A
 - name: Wolfgang Gassler
   website: https://wolfgang.gassler.org/
+  transcriptLetter: B
 - name: Thomas Diroll
   website: https://www.thomasdiroll.com/
+  transcriptLetter: D
 - name: Christian Braun
   website: https://theempathicdev.de/
+  transcriptLetter: C
 spotify: https://open.spotify.com/episode/0E5BlyyQHiXrkVu2Vuknwj
 tags:
 - Karriere
