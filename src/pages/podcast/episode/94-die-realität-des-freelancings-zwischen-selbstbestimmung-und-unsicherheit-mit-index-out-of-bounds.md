@@ -101,7 +101,7 @@ speaker:
 - name: Andy Grunwald
   website: https://andygrunwald.com/
   transcriptLetter: A
-- name: Wolfgang Gassler
+- name: Wolfi Gassler
   website: https://wolfgang.gassler.org/
   transcriptLetter: B
 - name: Thomas Diroll

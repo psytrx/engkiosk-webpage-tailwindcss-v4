@@ -34,7 +34,7 @@ REDIRECT_PREFIX = '/episodes/'
 
 DEFAULT_SPEAKER = [
     {"name": "Andy Grunwald", "website": "https://andygrunwald.com/"},
-    {"name": "Wolfgang Gassler", "website": "https://wolfgang.gassler.org/"},
+    {"name": "Wolfi Gassler", "website": "https://wolfgang.gassler.org/"},
 ]
 
 # URLs from Podcast sites
