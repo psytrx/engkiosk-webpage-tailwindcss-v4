@@ -192,7 +192,6 @@ if (fs.existsSync(transcriptFilename)) {
 												for (let item of transcriptsElements) {
 													item.classList.add('cursor-pointer');
 													item.addEventListener('click', (e) => {
-														console.log(item.dataset.transStart);
 														player.setCurrentTime(item.dataset.transStart);
 														player.play()
 													});
