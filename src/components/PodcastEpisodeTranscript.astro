@@ -58,6 +58,7 @@ const { utterances } = Astro.props;
 			transcript.classList.add('show');
 			transcript.querySelector('.overlay').style.display = 'none';
 		}
+		document.getElementById('showFullTranscriptButton').classList.add('hidden');
 		return true;
 	}
 </script>
@@ -73,3 +74,9 @@ const { utterances } = Astro.props;
 			</div>
 	)
 }
+
+<!-- button in the middle "Mehr anzeigen" in light gray to show the transcript -->
+<div id="showFullTranscriptButton" class="flex justify-center">
+	<button class="text-coolGray-500 hover:text-coolGray-700 border border-coolGray-500 rounded-lg p-3"
+	onclick="showFullTranscript()">Ganzes Transkript anzeigen</button>
+</div>
