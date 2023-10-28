@@ -1,0 +1,43 @@
+---
+import PodcastEpisodeTranscriptLine from './PodcastEpisodeTranscriptLine.astro'	
+
+export interface Props {
+	utterances: object[]
+}
+
+const { utterances } = Astro.props;
+
+---
+<style is:global>
+.transcript {
+	
+	@apply mt-2;
+
+ .utterance {
+
+		@apply text-base md:text-lg text-coolGray-500 leading-relaxed p-2 hover:bg-gray-100 mb-1;
+
+		h4 {
+			@apply font-bold mb-2;
+		}
+
+		span.time {
+			@apply font-normal ml-2 text-base;
+		}
+
+		p {
+			@apply m-0;
+		}
+ }
+}
+</style>
+{
+	utterances.length > 0 && (
+			<div class="transcript">
+					<h3 class="mb-4 text-2xl md:text-3xl font-semibold text-coolGray-800" id="transcript">Transkript</h3>
+					{utterances.map((utterance, i) => (
+							<PodcastEpisodeTranscriptLine utterance={utterance} key={i} />
+					))}
+			</div>
+	)
+}

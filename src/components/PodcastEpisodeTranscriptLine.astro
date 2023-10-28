@@ -13,7 +13,7 @@ const endTime = millisecondsToHumanTimestamp(utterance.end);
 
 const startInSeconds = Math.floor(utterance.start / 1000);
 ---
-<p class="mb-4 text-base md:text-lg text-coolGray-500 cursor-pointer" data-transcript-start={startInSeconds}>
-	<b>{utterance.speaker}</b> ({startTime} - {endTime})<br />
-	{utterance.text}
-</p>
+<div data-trans-start={startInSeconds} class="utterance">
+	<h4>{utterance.speaker} <span class="time">({startTime} - {endTime})</span></h4>
+	<p>{utterance.text}</p>
+</div>
