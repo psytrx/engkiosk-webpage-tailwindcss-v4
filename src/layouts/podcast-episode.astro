@@ -24,23 +24,6 @@ let encodedUrl = encodeURI(canonicalURL);
 let social_text = 'Bock auf nen guten Software Engineering Podcast? Hör doch mal in die Episode "' + content.title.replace('#', '') + '" rein';
 let encoded_social_text = encodeURI(social_text);
 
-// Headlines is in a format like
-//	"links::Links||sprungmarken::Sprungmarken||hosts::Hosts
-//	"<slug>::<headline>||..."
-let headline_split = content.headlines.split('||');
-let header = [];
-headline_split.forEach(function callback(val) {
-	let parts = val.split('::');
-	header.push({
-		slug: parts[0],
-		title: parts[1],
-	});
-});
-
-let tags = content.tags.map((element) => URLify(element));
-
-// TODO Implement RTL+ Musik into the podcast player
-
 // Prepare speaker names for transcript
 // Our transcript only contains "Speaker A" and "Speaker B".
 // In the Podcast Episode Metadata, we also have real names :)
@@ -71,6 +54,37 @@ if (fs.existsSync(transcriptFilename)) {
 	});
 }
 
+// Headlines is in a format like
+//	"links::Links||sprungmarken::Sprungmarken||hosts::Hosts
+//	"<slug>::<headline>||..."
+let headline_split = content.headlines.split('||');
+let header = [];
+
+
+// Push the transcript headline
+
+// If we have a transcript, push the headline
+if (transcriptionUtterances.length > 0) {
+	headline_split.push("transcript::Transkript");
+}
+
+headline_split.forEach(function callback(val) {
+	let parts = val.split('::');
+
+	// Strip out strings we don't need in the headline link
+	parts[1] = parts[1].replace('(gerne auch als Voice Message)', '');
+
+	header.push({
+		slug: parts[0],
+		title: parts[1],
+	});
+});
+
+let tags = content.tags.map((element) => URLify(element));
+
+// TODO Implement RTL+ Musik into the podcast player
+
+
 // filter slot code
 const html = (await Astro.slots.render('default'))
 	//remove all <p><br></p>
@@ -79,7 +93,6 @@ const html = (await Astro.slots.render('default'))
 	.replace(/<p>(\(\d\d:\d\d:\d\d\))/g, '<p class="timestamp">$1')
 		// remove everything between <p>Feedback and 136776</p>
 	.replace(/<p>Feedback[\s\S]*136776<\/p>/g, '')
-
 ---
 
 <html lang="de">
@@ -215,11 +228,11 @@ const html = (await Astro.slots.render('default'))
 						<div class="flex flex-wrap -mx-4">
 							<div class="w-full md:w-5/12 lg:w-4/12 xl:w-3/12 px-4 mb-8">
 								<ul class="pb-6 mb-8 border-b border-coolGray-100">
-									<li class="mb-2"><a class="inline-block py-2 text-coolGray-400 hover:text-coolGray-500 font-semibold" href="#headline-content">Shownotes / Worum geht's?</a></li>
+									<li class="mb-2"><a class="inline-block py-1 text-coolGray-400 hover:text-coolGray-500 font-semibold" href="#headline-content">Shownotes / Worum geht's?</a></li>
 									{
 										header.map((element) => (
 											<li class="mb-2">
-												<a class="inline-block py-3 text-coolGray-400 hover:text-coolGray-500 font-semibold" href={`#${element.slug}`}>
+												<a class="inline-block py-1 text-coolGray-400 hover:text-coolGray-500 font-semibold" href={`#${element.slug}`}>
 													{element.title}
 												</a>
 											</li>
