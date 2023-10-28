@@ -1,0 +1,75 @@
+---
+import PodcastEpisodeTranscriptLine from './PodcastEpisodeTranscriptLine.astro'	
+
+export interface Props {
+	utterances: object[]
+}
+
+const { utterances } = Astro.props;
+
+---
+<style is:global>
+.transcript {
+	
+	@apply mt-2 relative overflow-y-hidden;
+	max-height: 100vh; /* Set the maximum height to 50% of the viewport height */
+	/* no scrollbar */
+	-ms-overflow-style: none;  /* IE and Edge */
+	scrollbar-width: none;  /* Firefox */
+
+	&.show {
+		max-height: 100%;
+		@apply overflow-visible;
+	}
+
+ .utterance {
+		@apply text-base md:text-lg text-coolGray-500 leading-relaxed p-2 hover:bg-gray-100 mb-1;
+		h4 { @apply font-bold mb-2;	}
+		span.time { @apply font-normal ml-2 text-base; }
+		p { @apply m-0; }
+
+		&:hover:before {
+			/* show svg left side of the div */
+			content: '';
+			@apply hidden md:inline-block;
+			width: 2rem;
+			height: 2rem;
+			background-image: url(/images/elements/play-button.svg);
+			background-repeat: no-repeat;
+			background-size: contain;
+			background-position: center;
+			margin-right: 0.5rem;
+			position: absolute;
+			left: -2.5rem;
+		}
+ }
+ .overlay {
+		@apply absolute top-0 left-0 w-full h-full cursor-pointer;
+		background-image: linear-gradient(rgba(255,255,255,0), rgba(255,255,255,1));
+ }
+}
+</style>
+
+<script>
+	window.showFullTranscript = function() {
+		console.log('showFullTranscript');
+		const transcript = document.querySelector('.transcript');
+		if (!transcript.classList.contains('show')) {
+			transcript.classList.add('show');
+			transcript.querySelector('.overlay').style.display = 'none';
+		}
+		return true;
+	}
+</script>
+
+{
+	utterances.length > 0 && (
+			<div class="transcript">
+					<div class="overlay" onclick="showFullTranscript()">&nbsp;</div>
+					<h3 class="mb-4 text-2xl md:text-3xl font-semibold text-coolGray-800" id="transcript">Transkript</h3>
+					{utterances.map((utterance, i) => (
+							<PodcastEpisodeTranscriptLine utterance={utterance} />
+					))}
+			</div>
+	)
+}
