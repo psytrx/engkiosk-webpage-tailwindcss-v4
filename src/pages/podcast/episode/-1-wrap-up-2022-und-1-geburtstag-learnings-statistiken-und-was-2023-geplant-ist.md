@@ -38,6 +38,11 @@ layout: ../../../layouts/podcast-episode.astro
 length_second: 1847
 pubDate: '2023-01-05'
 rtlplus: ''
+speaker:
+- name: Andy Grunwald
+  website: https://andygrunwald.com/
+- name: Wolfi Gassler
+  website: https://wolfgang.gassler.org/
 spotify: https://open.spotify.com/episode/35MGyksizZ4CVxkCRhhJ5n
 tags:
 - Engineering Kiosk

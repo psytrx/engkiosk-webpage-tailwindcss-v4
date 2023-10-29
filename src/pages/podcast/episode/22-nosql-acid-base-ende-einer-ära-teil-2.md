@@ -68,6 +68,11 @@ layout: ../../../layouts/podcast-episode.astro
 length_second: 3636
 pubDate: '2022-06-07'
 rtlplus: ''
+speaker:
+- name: Andy Grunwald
+  website: https://andygrunwald.com/
+- name: Wolfi Gassler
+  website: https://wolfgang.gassler.org/
 spotify: https://open.spotify.com/episode/7uPMZDpC2KQ5ZMbAtAN2S7
 tags:
 - Datenbanken

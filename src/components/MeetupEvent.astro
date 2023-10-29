@@ -1,0 +1,55 @@
+---
+export interface Props {
+	event: any;
+}
+
+const { event } = Astro.props;
+
+const description = `Talks: ${event.talks.map((talk) => `"${talk.title}" by ${talk.name}`).join(', ')}`;
+const performer = event.talks.map((talk) => {
+  return {
+    "@type": "Person",
+    "name": talk.name
+  };
+});
+
+const startDateString = new Date(event.date).toISOString();
+const endDate = new Date(event.date);
+endDate.setTime(endDate.getTime() + (2.5*60*60*1000));
+const endDateString = endDate.toISOString();
+
+const schema = {
+  "@context": "https://schema.org",
+  "@type": "Event",
+  "name": `Engineering Kiosk Alps @ ${event.location.name}`,
+  "startDate": startDateString,
+  "endDate": endDateString,
+  "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+  "eventStatus": "https://schema.org/EventScheduled",
+  "location": {
+    "@type": "Place",
+    "name": event.location.name,
+    "address": {
+      "@type": "PostalAddress",
+      "name": event.location.address
+    }
+  },
+  "description": description,
+  "image": "https://engineeringkiosk.dev/meetup/alps/images/ibk.jpg",
+  "offers": {
+    "@type": "Offer",
+    "price": 0,
+    "priceCurrency": "EUR",
+    "availability": "https://schema.org/InStock",
+    "validFrom": startDateString,
+    "url": "https://engineeringkiosk.dev/meetup/alps"
+  },
+  "performer": performer,
+  "organizer": {
+    "@type": "Organization",
+    "name": "Engineering Kiosk Alps",
+    "url": "https://engineeringkiosk.dev/meetup/alps"
+  }
+}
+---
+<script type="application/ld+json" set:html={JSON.stringify(schema)} is:inline />

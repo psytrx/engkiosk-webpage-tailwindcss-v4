@@ -65,11 +65,19 @@ layout: ../../../layouts/podcast-episode.astro
 length_second: 4178
 pubDate: '2023-04-25'
 rtlplus: ''
+speaker:
+- name: Andy Grunwald
+  website: https://andygrunwald.com/
+- name: Wolfi Gassler
+  website: https://wolfgang.gassler.org/
+- name: Kirill Sivy
+  website: https://www.linkedin.com/in/ksivy/
 spotify: https://open.spotify.com/episode/62rbOMaw6dLKYDgBEZWtjW
 tags:
 - Karriere
 - Kommunikation
 - "Produktivit\xE4t"
+- Interview
 title: '#68 Im "Flow" und Deepwork mit Kirill Sivy'
 youtube: https://www.youtube.com/watch?v=uIcKfRwfHa4
 

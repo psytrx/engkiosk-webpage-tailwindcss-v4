@@ -32,6 +32,11 @@ PATH_IMAGE_FILES = 'public/images/podcast/episode'
 TOML_FILE = 'netlify.toml'
 REDIRECT_PREFIX = '/episodes/'
 
+DEFAULT_SPEAKER = [
+    {"name": "Andy Grunwald", "website": "https://andygrunwald.com/"},
+    {"name": "Wolfi Gassler", "website": "https://wolfgang.gassler.org/"},
+]
+
 # URLs from Podcast sites
 PODCAST_APPLE_URL = "https://itunes.apple.com/lookup?id=1603082924&media=podcast&entity=podcastEpisode&limit=100"
 SPOTIFY_SHOW_ID = "0tJRC0UsObPCWLmmzmOkIs"
@@ -169,7 +174,7 @@ def remove_rel_nofollow_from_internal_links(html_content):
     return new_html_content
 
 
-def sync_podcast_episodes(rss_feed, path_md_files, path_img_files, spotify_client):
+def sync_podcast_episodes(rss_feed, path_md_files, path_img_files, no_api_calls=False, spotify_client=None):
     """
     Syncs the Podcast Episodes from the RSS feed down to disk
     and prepares the content to match the structure of the used
@@ -201,24 +206,34 @@ def sync_podcast_episodes(rss_feed, path_md_files, path_img_files, spotify_clien
     # Here we overwrite the encoding to UTF-8
     feed_response.encoding = 'utf-8'
 
-    logging.info("Requesting content from Podcast sites ...")
-    apple_podcast_content = get_json_content_from_url(PODCAST_APPLE_URL)
-    spotify_episodes = spotify_client.show_episodes(SPOTIFY_SHOW_ID, limit=50, offset=0, market="DE")
-    google_podcast_content = get_raw_content_from_url(PODCAST_GOOGLE_URL)
+    # Check if we should run the API calls to external podcast platforms
+    #apple_podcast_content = {"results": []}
+    apple_podcast_content = {}
+    spotify_episodes = []
+    google_podcast_content = ""
+    deezer_episodes = []
+    if no_api_calls:
+        logging.info("Requesting content from Podcast sites is disabled via `--no-api-calls` flag!")
 
-    # Pagination and auth not respected.
-    # Right now it works, because a) we don't make that much requests and
-    # b) don't have that much episodes.
-    # If we have more and more episodes, this might look different and need adjustment.
-    #
-    # Query quota (2022-07-17)
-    # The number of requests per second is limited to 50 requests / 5 seconds.
-    deezer_client = deezer.Client()
-    deezer_podcast = deezer_client.get_podcast(DEEZER_PODCAST_ID)
-    deezer_episodes = deezer_podcast.get_episodes()
-    logging.info("Requesting content from Podcast sites ... Successful")
+    else:
+        logging.info("Requesting content from Podcast sites ...")
+        apple_podcast_content = get_json_content_from_url(PODCAST_APPLE_URL)
+        spotify_episodes = spotify_client.show_episodes(SPOTIFY_SHOW_ID, limit=50, offset=0, market="DE")
+        google_podcast_content = get_raw_content_from_url(PODCAST_GOOGLE_URL)
 
-    logging.info("Processing Podcast Episode items ...")
+        # Pagination and auth not respected.
+        # Right now it works, because a) we don't make that much requests and
+        # b) don't have that much episodes.
+        # If we have more and more episodes, this might look different and need adjustment.
+        #
+        # Query quota (2022-07-17)
+        # The number of requests per second is limited to 50 requests / 5 seconds.
+        deezer_client = deezer.Client()
+        deezer_podcast = deezer_client.get_podcast(DEEZER_PODCAST_ID)
+        deezer_episodes = deezer_podcast.get_episodes()
+        logging.info("Requesting content from Podcast sites ... Successful")
+
+        logging.info("Processing Podcast Episode items ...")
 
     # Parse the XML and process all items
     parsed_xml = ET.fromstring(feed_response.text)
@@ -346,6 +361,7 @@ def sync_podcast_episodes(rss_feed, path_md_files, path_img_files, spotify_clien
             'youtube': '',
             'tags': [],
             'length_second': length_second,
+            'speaker': DEFAULT_SPEAKER,
         }
 
         full_file_path = f'{path_md_files}/{filename}'
@@ -353,7 +369,7 @@ def sync_podcast_episodes(rss_feed, path_md_files, path_img_files, spotify_clien
         # If the file exists, we want to read the frontmatter, extract
         # the spotify, google podcasts, etc. links and write this to the
         # new data.
-        # Why? Because the Podcast player links are added manual.
+        # Why? Because some of the Podcast player links are added manual.
         # The rest of the data (title, description, etc.) are parsed
         # out of the RSS feed and maintained in a different application.
         # This way, we "update" our local data based on the management application,
@@ -372,6 +388,7 @@ def sync_podcast_episodes(rss_feed, path_md_files, path_img_files, spotify_clien
                     'youtube',
                     'tags',
                     'length_second',
+                    'speaker',
                 ]
                 for key in keys_to_keep:
                     val = episode.get(key)
@@ -470,7 +487,7 @@ def create_redirects(file_to_parse, path_md_files, redirect_prefix):
         #   - https://engineeringkiosk.dev/ep5?pkn=twit_init
         new_redirect_episode_shortlink = {
             "from": f"/ep{episode_number}",
-            "to": f"/podcast/episode/{episode_file}",
+            "to": f"/podcast/episode/{episode_file}?pkn=shortlink",
             "status": 301,
             "force": True,
         }
@@ -514,6 +531,10 @@ def get_episode_link_from_apple(content, title: str) -> str:
     If no title matches, it will return an empty string.
     """
     u = ""
+
+    if "results" not in content:
+        return u
+
     tracks = content["results"]
     for track in tracks:
         if track["trackName"] == title:
@@ -548,6 +569,10 @@ def get_episode_from_spotify(episodes, title: str) -> dict:
     If no title matches, it will return an empty string.
     """
     e = None
+
+    if episodes is None or "items" not in episodes:
+        return e
+
     for episode in episodes["items"]:
         if episode["name"] == title:
             e = episode
@@ -607,7 +632,6 @@ def get_episode_link_from_google(content, title: str) -> str:
 if __name__ == "__main__":
     # Argument and parameter parsing
     cli_parser = argparse.ArgumentParser(description='Automate new Podcast Episide parsing')
-    # See https://stackoverflow.com/questions/40324356/python-argparse-choices-with-a-default-choice
     cli_parser.add_argument('Mode',
         metavar='mode',
         type=str,
@@ -616,6 +640,7 @@ if __name__ == "__main__":
         nargs='?',
         choices=['sync', 'redirect'],
         help='Mode to execute. Supported: sync, redirect (default: %(default)s)')
+    cli_parser.add_argument("-n", "--no-api-calls", action="store_true", help='Avoids network calls to Platforms like Spotify, Google, ... (default: %(default)s)')
 
     args = cli_parser.parse_args()
 
@@ -639,16 +664,18 @@ if __name__ == "__main__":
     match args.Mode:
         case "sync":
             # Bootstrapping Spotify API client
-            SPOTIFY_APP_CLIENT_ID = os.getenv('SPOTIFY_APP_CLIENT_ID')
-            SPOTIFY_APP_CLIENT_SECRET = os.getenv('SPOTIFY_APP_CLIENT_SECRET')
-            if not SPOTIFY_APP_CLIENT_ID or not SPOTIFY_APP_CLIENT_SECRET:
-                logging.error("Env vars SPOTIFY_APP_CLIENT_ID or SPOTIFY_APP_CLIENT_SECRET are not set properly.")
-                logging.error("Please double check and restart.")
-                sys.exit(1)
+            spotify_client = None
+            if not args.no_api_calls:
+                SPOTIFY_APP_CLIENT_ID = os.getenv('SPOTIFY_APP_CLIENT_ID')
+                SPOTIFY_APP_CLIENT_SECRET = os.getenv('SPOTIFY_APP_CLIENT_SECRET')
+                if not SPOTIFY_APP_CLIENT_ID or not SPOTIFY_APP_CLIENT_SECRET:
+                    logging.error("Env vars SPOTIFY_APP_CLIENT_ID or SPOTIFY_APP_CLIENT_SECRET are not set properly.")
+                    logging.error("Please double check and restart.")
+                    sys.exit(1)
 
-            spotify_client = create_spotify_client(SPOTIFY_APP_CLIENT_ID, SPOTIFY_APP_CLIENT_SECRET)
+                spotify_client = create_spotify_client(SPOTIFY_APP_CLIENT_ID, SPOTIFY_APP_CLIENT_SECRET)
 
-            sync_podcast_episodes(PODCAST_RSS_FEED, f"{folder_prefix}{PATH_MARKDOWN_FILES}", f"{folder_prefix}{PATH_IMAGE_FILES}", spotify_client)
+            sync_podcast_episodes(PODCAST_RSS_FEED, f"{folder_prefix}{PATH_MARKDOWN_FILES}", f"{folder_prefix}{PATH_IMAGE_FILES}", no_api_calls=args.no_api_calls, spotify_client=spotify_client)
         case "redirect":
             # TODO Once Python 3.11 is out, replace toml library with stdlib
             # See https://peps.python.org/pep-0680/

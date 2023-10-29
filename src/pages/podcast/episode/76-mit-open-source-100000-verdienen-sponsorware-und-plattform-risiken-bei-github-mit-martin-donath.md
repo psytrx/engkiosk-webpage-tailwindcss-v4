@@ -64,12 +64,20 @@ layout: ../../../layouts/podcast-episode.astro
 length_second: 4694
 pubDate: '2023-06-20'
 rtlplus: ''
+speaker:
+- name: Andy Grunwald
+  website: https://andygrunwald.com/
+- name: Wolfi Gassler
+  website: https://wolfgang.gassler.org/
+- name: Martin Donath
+  website: https://github.com/squidfunk
 spotify: https://open.spotify.com/episode/6EtK6QAKUpu69kztnZdneZ
 tags:
 - Projektmanagement
 - Tech Kultur
 - Open Source
 - Gehalt
+- Interview
 title: '#76 Mit Open Source 100.000$ verdienen, Sponsorware und Plattform-Risiken
   bei GitHub mit Martin Donath'
 youtube: https://youtu.be/_qIbIw0yZHU
