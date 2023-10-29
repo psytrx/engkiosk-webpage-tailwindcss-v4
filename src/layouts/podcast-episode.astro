@@ -5,13 +5,12 @@ import fs from 'fs'
 import MainHead from '../components/MainHead.astro';
 import Nav from '../components/Nav.astro';
 import Footer from '../components/Footer.astro';
-import PodcastEpisodeTranscriptLine from '../components/PodcastEpisodeTranscriptLine.astro';
+import PodcastEpisodeTranscript from '../components/PodcastEpisodeTranscript.astro';
 import { URLify } from '../scripts/urlify.js';
 import { formatDate } from '../scripts/date.js';
 
 import podcastInfo from '../data/podcast-info.json';
 import '../styles/podcast_episode.scss';
-import PodcastEpisodeTranscript from '../components/PodcastEpisodeTranscript.astro';
 
 const { content } = Astro.props;
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
@@ -60,9 +59,6 @@ if (fs.existsSync(transcriptFilename)) {
 let headline_split = content.headlines.split('||');
 let header = [];
 
-
-// Push the transcript headline
-
 // If we have a transcript, push the headline
 if (transcriptionUtterances.length > 0) {
 	headline_split.push("transcript::Transkript");
@@ -82,10 +78,11 @@ headline_split.forEach(function callback(val) {
 
 let tags = content.tags.map((element) => URLify(element));
 
-// TODO Implement RTL+ Musik into the podcast player
-
-
-// filter slot code
+// Edit slot code (real content)
+// We need to edit it here, because the content comes from our Podcast hosting platform.
+// This has a "special format" to ensure it looks good on Spotify (spacing, etc.).
+// However, the spacing doesn't look good in web.
+// Hence we need to make it look good ;)
 const html = (await Astro.slots.render('default'))
 	//remove all <p><br></p>
 	.replace(/<p><br><\/p>/g, '')
