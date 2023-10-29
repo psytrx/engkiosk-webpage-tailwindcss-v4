@@ -14,6 +14,11 @@ const endTime = millisecondsToHumanTimestamp(utterance.end);
 const startInSeconds = Math.floor(utterance.start / 1000);
 ---
 <div data-trans-start={startInSeconds} class="utterance">
-	<h4>{utterance.speaker} <span class="time">({startTime} - {endTime})</span></h4>
+	<h4>{utterance.speaker}
+		<span class="time">({startTime} - {endTime})</span>
+		<a href=`#t=${startInSeconds}` onclick=`showSharingLink(${startInSeconds}, event)` title="Diese Transkriptstelle teilen">
+			<img src="/images/elements/share-arrow.svg" alt="Teilen"/>
+		</a>
+	</h4>
 	<p>{utterance.text}</p>
 </div>
