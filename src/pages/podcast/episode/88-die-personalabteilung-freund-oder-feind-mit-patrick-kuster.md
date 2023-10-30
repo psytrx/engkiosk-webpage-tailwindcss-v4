@@ -72,10 +72,13 @@ rtlplus: ''
 speaker:
 - name: Andy Grunwald
   website: https://andygrunwald.com/
+  transcriptLetter: A
 - name: Wolfi Gassler
   website: https://wolfgang.gassler.org/
+  transcriptLetter: C
 - name: Patrick Kuster
   website: https://www.linkedin.com/in/patrick-kuster-71248b68/
+  transcriptLetter: B
 spotify: https://open.spotify.com/episode/6Gg1FGFu4829JIw1Mh5j65
 tags:
 - Team

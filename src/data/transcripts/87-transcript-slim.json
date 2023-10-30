@@ -1,0 +1,1218 @@
+{
+    "language_code": "de",
+    "audio_url": "https://audio1.redcircle.com/episodes/2bb77f37-875f-448e-8863-907c231ace1d/stream.mp3",
+    "punctuate": true,
+    "format_text": true,
+    "dual_channel": false,
+    "webhook_url": null,
+    "webhook_auth_header_name": null,
+    "webhook_auth_header_value": null,
+    "audio_start_from": null,
+    "audio_end_at": null,
+    "word_boost": [],
+    "boost_param": null,
+    "filter_profanity": false,
+    "redact_pii": false,
+    "redact_pii_audio": false,
+    "redact_pii_policies": null,
+    "redact_pii_sub": null,
+    "speaker_labels": true,
+    "speakers_expected": 2,
+    "content_safety": false,
+    "content_safety_confidence": null,
+    "iab_categories": false,
+    "custom_spelling": null,
+    "disfluencies": false,
+    "sentiment_analysis": false,
+    "auto_chapters": false,
+    "entity_detection": false,
+    "summarization": false,
+    "summary_model": null,
+    "summary_type": null,
+    "auto_highlights": false,
+    "language_detection": false,
+    "speech_threshold": null,
+    "id": "62zx6l4ble-5128-42a2-bfd4-e2c0e75ab89a",
+    "status": "completed",
+    "error": null,
+    "utterances": [
+        {
+            "text": "Da ist die nächste Frage, sollte die Geschäftsführung auf die DORA-Metriken gucken oder nicht nur die Engineering-Abteilung? Denn wenn du an den falschen Sachen arbeitest, shippst du falsche Sachen einfach nur schneller. Willkommen zum Engineering-Kiosk, der deutschsprachige Software-Engineering-Podcast mit Wolfgang Gaßler und mir, Andi Grunwald, rund um die Themen Engineering-Kultur, Open Source, Menschen, Softwareentwicklung und Technologie sowie was damit in Verbindung steht. Softwareentwicklung ist ein kreativer Beruf. Jedes Projekt und jedes Feature ist irgendwie ein bisschen anders. Und das ist der Grund, warum eine objektive Messung oder eine Vergleichbarkeit so schwierig ist. Die Dora-Metriken aus dem DevOps-Umfeld versuchen aber genau das. Eine Messung der Performance eines Software-Development-Teams. Worum es dabei wirklich geht, welche Metriken dabei eine Rolle spielen, wer hinter Dora steht und warum das Ganze auch oft kritisch gesehen wird. All das in dieser Episode. Viel Spaß! Lieber Wolfgang, du bist ja ein sehr datengetriebener Mensch, beziehungsweise wenn ich dir mit dem alten Spruch Data is the new Oil ankomme, dann sage ich immer genau.",
+            "start": 1994,
+            "end": 65513,
+            "confidence": 0.7998493975903614,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Dass es eigentlich kein Öl ist, weil umso mehr Daten du hast, bist du nicht automatisch umso reicher.",
+            "start": 65534,
+            "end": 70618,
+            "confidence": 0.8326666666666667,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Und inzwischen habe ich auch festgestellt, man kann auch zu viele Daten haben. Deswegen habe ich dir heute ein Thema mitgebracht, was auch Daten im Kern hat, was sich aber absichtlich auf eine Handvoll Datenpunkte beziehungsweise Keymetriken fokussiert.",
+            "start": 71007,
+            "end": 84035,
+            "confidence": 0.8237894736842104,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Ich bin ja vielleicht datengetrieben, da hast du ja vollkommen recht. Ich mag Daten ganz gerne. Ich mache auch sehr viel mit Daten und am liebsten habe ich datengetriebene Entscheidungen. Wir haben da ja auch schon einige Episoden dazu gemacht, zum Beispiel die Episode 45, wo es wirklich um datengetriebene Entscheidungen gegangen ist und wirklich die Software dazu, Dashboards, wie kann ich wirklich datengetrieben entscheiden. Aber dieses Thema, was du ja heute vorgeschlagen hast, die DORA-Metriken und vielleicht kennen das sehr viele, weil im DevOps-Bereich sind die eigentlich sehr bekannt und sehr üblich. Deployment Frequency, Lead Time for Change, Mean Time to Recovery, Change Failure Rate. Also vier Metriken, die kann man so messen in dem DevOps Team und dann wird das DevOps Team besser. Haben vielleicht schon viele mal gehört. Hast, glaube ich, du auch schon mal erwähnt. Wir hatten da mal eine Folge ganz allgemein über Performancemetriken, Folge 18 oder auch ganz kürzlich, wie wir gesprochen haben, über die Evaluierung von der Job-Performance, Episode 75 haben wir auch darüber gesprochen. Das wirst du ja ganz, ganz gerne in den Raum. Aber warum brauchen wir jetzt für diese vier DORA-Metriken eine eigene Episode bitte, Andi?",
+            "start": 84075,
+            "end": 143005,
+            "confidence": 0.7470612244897954,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Also mehreren Gründen. Erstens verfolgt uns das ganze Thema schon ein bisschen länger als anderthalb Jahre, weil wir es halt in den Episoden, die du erwähnt hast, ab und zu mal fallen gelassen haben. Zweitens ist das so ein Thema, wo jeder denkt, er hat eine Ahnung, aber keiner weiß, wie es wirklich geht. Irgendwie so ein bisschen so wie Agile oder Teenage-Sex. Jeder spricht darüber, aber keiner weiß, wie es wirklich geht.",
+            "start": 143325,
+            "end": 163837,
+            "confidence": 0.8073150684931504,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Du vergleichst jetzt grad Agile mit Sex bei Teenagern.",
+            "start": 163877,
+            "end": 167840,
+            "confidence": 0.5840000000000001,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Ich denke Agile ist so ein Computerbildthema, jeder sagt wir sind Agile, aber im Endeffekt hinten dran ist es immer noch Wasserfall und fertig und keiner wird dadurch wirklich schneller, sondern es ist nur eine andere Art langsam zu sein.",
+            "start": 169041,
+            "end": 178133,
+            "confidence": 0.76285,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Also haben wir mit Dorametriken jetzt wieder ein Bildthema.",
+            "start": 178334,
+            "end": 180617,
+            "confidence": 0.7083333333333333,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Nee, wir haben ein Thema, wo ich denke, es ist unterrepräsentiert und sehr oft falsch verstanden. Du hast gerade zum Beispiel gesagt, 4 Metriken. So, Bäm! Stimmt gar nicht, sind 5 Metriken. Ja, fangen wir erstmal da an. Zweitens, kommst natürlich aus dem DevOps-Bereich und ich glaube, dir wird es schon sehr, sehr schwer fallen, in den aktuellen Job-Beschreibungen eine Firma zu finden, die nicht eine DevOps-Ingenieurin oder ähnliches sucht. Das bedeutet, dieses Job-Bild ist in aller Munde und somit hat die das Thema der DORA-Metriken noch eine viel höhere Relevanz. Und wenn man mal nach DORA-Metriken sucht, dann findet man natürlich 75 Blogposts. Und so wie ich diese 75 Blogposts, die habe ich alle gelesen, verstehe, gab es einen Blogpost, der hat es falsch verstanden und alle haben es irgendwie falsch kopiert. Aber kaum jemand geht mal wirklich darauf ein, was das denn eigentlich alles wirklich ist, wie da geresearchiert und so und so weiter. Die sagen immer nur vier Metriken, hast du gerade alle aufgezählt, Misst man so, Abfahrt. Vielen Dank. Werbung. Bevor wir mit den Dora-Metreken fortfahren, möchte ich dir noch eine coole Stelle vorstellen, die perfekt zu unserem heutigen Thema passt. Trivago, die Hotelsuchmaschine aus Düsseldorf und unser Episodensponsor sucht Verstärkung für Earsight Reliability Engineering Team. Ich selbst habe viele Jahre als SAE bei Trivago gearbeitet und SAE Teams mit aufgebaut. Für mich war es immer eine besonders spannende Herausforderung, die global skalierten Systeme der Hotelsupermaschine stabil, aber auch performant zu erhalten, unter Verwendung von Automatisierung und den Best Practices aus der Softwareentwicklung. Trivago legt großen Wert auf Autonomie und bietet eine hybride Arbeitsumgebung in Düsseldorf. Hier gibt es kein Micro-Management, sondern einen klaren Fokus auf zielorientierte Ergebnisse. Zudem unterstützt Trivago deine berufliche Entwicklung, beispielsweise durch Schulungen und Cloud-Zertifizierungen. Als SAE bei Trivago wirst du eng mit dem Produktentwicklungsteam zusammenarbeiten. Du entwickelst und managst Service-Level-Objectives, gestaltest Systeme von Anfang an mit und treibst die Standardisierung der Infrastruktur weiter voran, um eine hohe Developer-Experience zu gewährleisten. Wenn das für dich interessant klingt, bewerbe dich jetzt unter careers.trivago.com slash SAE. Link findest du natürlich auch in den Show Notes. Und jetzt zurück zu den DORA-Mietringen.",
+            "start": 181172,
+            "end": 311090,
+            "confidence": 0.7997086834733894,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Okay, dann fangen wir mal wirklich an. Dr. Dr. Andi, erklär uns mal, was in diesen Blogposts drinnen steht oder nicht drinnen steht, besser gesagt, was DORA-Metriken sind, was diese ominöse fünfte Metrik ist, weil die erwähnt irgendwie fast niemand, was ich so gesehen habe, zumindest wenn man schnell danach googelt. Also bring uns mal auf den Stand, was DORA eigentlich ist, was die Metriken sind, wer sie braucht, warum brauche ich sie überhaupt, warum sollte ich sie erfassen und was hat das alles für einen Sinn?",
+            "start": 313145,
+            "end": 340078,
+            "confidence": 0.8238505747126438,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Fangen wir mal ganz vorne an, denn ich bin immer ein Freund davon, zu wissen, wer eigentlich sagt, dass ich diese Metriken befolgen soll, beziehungsweise diese Leute, die das alles immer hinaus besorgen, dürfen die das überhaupt? Dürfen die natürlich, aber haben die die Credibility? Haben die überhaupt Ahnung, wovon die reden? Dann kommen wir relativ schnell auf die Frage, wofür steht eigentlich DORA? DORA steht für DevOps Research and Assessment. Das Ganze ist eine Research-Gruppe, die darauf abzielt, die Performance von Software-Development-Teams zu messen und bewerten zu können. Jetzt kann man sagen, Softwareentwicklung ist ein kreativer Job, kann man nicht messen. Das ist richtig, das ist auch die Schwierigkeit der ganzen Thematik.",
+            "start": 340298,
+            "end": 376347,
+            "confidence": 0.7900088495575217,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Aber was ist das für eine Gruppe? Woher kommen die? Oder war das irgendeine Gruppe, die dahergelaufen ist?",
+            "start": 376667,
+            "end": 382069,
+            "confidence": 0.7218333333333331,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Das ist irgendeine Gruppe von einem dahergelaufenen Unternehmens namens Google, Google Cloud. Die Jungs und Mädels haben eine Forschungsgruppe schon vor 2014 eingerufen. Und das ist glaube ich eine Truppe aktuell aus vier Leuten, bestehend aus unterschiedlichen Fähigkeiten, technische Writer sind dabei, User Experience Research, ein Human Factors Psychologist, jemand der quantitativ Research macht, Also schon Leute, die echt irgendwie Ahnung haben, aber auch Leute, die inzwischen nicht mehr dabei sind, aber das ganze Programm mitgestartet haben, wie zum Beispiel Leute wie Gene Kim. Gene Kim ist unter anderem der Autor von The Phoenix Project und The Unicorn Project. Wer im DevOps-Bereich arbeitet und diese beiden Bücher noch nicht gelesen hat, bitte lesen.",
+            "start": 382109,
+            "end": 431121,
+            "confidence": 0.8056194690265488,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Wobei das gar nicht so viel mit DevOps eigentlich zu tun hat. Gerade das Phoenix Project ist ja auch ganz beliebt bei Project Managern, dieses Buch.",
+            "start": 431181,
+            "end": 437322,
+            "confidence": 0.7439230769230767,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Ist auf jeden Fall eine schöne Herleitung, was DevOps ändern kann. Dann gab es noch Jess Humble. Jess Humble sagte gegebenenfalls, der Kopf hinter dem Wort Continuous Delivery, ein Buch aus dem Jahre 2010. Continuous Delivery, Continuous Deployment, das ist der Mann, der es geprägt hat. Aber auch so Leute wie Jesse Frazell. Jesse Frazell sagt manchen Leuten auch was. Sie arbeitet inzwischen bei Oxide Computer. Einer der Köpfe hinter Docker. War dort auch im Code-Team, hat auch an Kubernetes und Go gearbeitet und hat solche Thematiken geschrieben wie SecComp. SecComp ist unter anderem eine Komponente zur Einschränkung von Syscalls, die ein Prozess aufrufen kann. Also jemand Harttechnisches, auch im Infrastrukturbereich. Also, die Leute, die dir hinterstecken, Ich würde schon fast sagen, die haben Licht am Fahrrad.",
+            "start": 437622,
+            "end": 482384,
+            "confidence": 0.8016299212598423,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Okay, jetzt hast du ganz viele Leute aufgezählt. Also erklär mal wirklich, was Sache ist, wie das funktioniert und warum das deiner Meinung nach funktioniert. Oder auch der Meinung von diesen Researchern und allen Projekten, was da dahintersteckt.",
+            "start": 482424,
+            "end": 494151,
+            "confidence": 0.7792894736842106,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Also generell geht es darum, um die Ermittlung des Reifegrads von der Anwendung von DevOps innerhalb deiner Organisation. Dass man sagen kann, okay, du bist ein Low-Performing Team, ein High-Performing Team oder ein Mid-Performing Team.",
+            "start": 494371,
+            "end": 505457,
+            "confidence": 0.7672571428571427,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Aber geht es da nur um DevOps oder ist das ganz allgemeine Teammetrik?",
+            "start": 505497,
+            "end": 508659,
+            "confidence": 0.8269230769230769,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Ja, das ist eine sehr gute Frage. Es wird immer so gefleckt als, das sind die Metriken für DevOp-Teams. Meines Erachtens nach sind das Metriken, die eigentlich für deine Software-Delivery anwendbar sind.",
+            "start": 509372,
+            "end": 520054,
+            "confidence": 0.8686874999999998,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Also wir sprechen von Software-Teams jetzt. Also Teams, die Software entwickeln oder deliveren. Also in irgendeiner Form halt im Software-Entwicklungsprozess beteiligt sind.",
+            "start": 520115,
+            "end": 529457,
+            "confidence": 0.7872727272727272,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Genau, wo man natürlich sagen muss, wenn du immer noch ein Software-Team hast, was Software schreibt, dann Git-Tag erstellt und dann etwas über die Wand schmeißt und dann einfach nach Hause geht, dann sind nicht alle der folgenden Metriken, die wir gleich aufzählen werden, relevant für dich. Aber für Software-Teams, die auch sich um ihre Software kümmern, Thema you build it, you run it, oder in sehr enger Kooperation mit dem sogenannten Betrieb stehen.",
+            "start": 529837,
+            "end": 554784,
+            "confidence": 0.8360540540540538,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Also End-to-End-Ownership, nehmen wir mal die ideale Welt an.",
+            "start": 554824,
+            "end": 558185,
+            "confidence": 0.8392222222222222,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Ja oder einfach nur gute Kollaboration zwischen den beiden Teams. Auf jeden Fall haben die haben die Jungs und Mädels sich verhalten wissenschaftliche Methoden zunichtegemacht und gesagt okay wir entwickeln jetzt hier einen sehr großen Fragebogen und senden den an ganz viele Leute ich glaube 36.000 Leute oder so haben da mitgemacht. Und die machen das Ganze schon seit 2014. Und seit 2014 veröffentlichen diese Researcher die Ergebnisse in den sogenannten State-of-DevOps-Report. Den gibt's fast jedes Jahr, kann man sich frei runterladen, ist immer so 60, 70 Seiten, viel zu lang. Aber es gibt am Anfang immer so eine Executive Summary, die ist auch ganz gut. Auf jeden Fall, über die Zeit sind dann vier, erst vier Metriken rausgepurtelt, inzwischen fünf.",
+            "start": 558585,
+            "end": 596880,
+            "confidence": 0.761082644628099,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Moment, wann ist diese fünfte rausgekommen? Wahrscheinlich vor einer Woche, oder? Wenn du mich schon so drauf anredest, dass ich die fünfte vergessen hab.",
+            "start": 596920,
+            "end": 602745,
+            "confidence": 0.6210833333333333,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Nee, schon vor zwei Jahren, 2021.",
+            "start": 603105,
+            "end": 605578,
+            "confidence": 0.7091666666666666,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Ja, Jahre, Wochen, wo ist der Unterschied?",
+            "start": 605588,
+            "end": 607590,
+            "confidence": 0.7397142857142859,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Auf jeden Fall haben die sich für diesen Fragebogen aber auch ein Core-Modell und sogenannte Fähigkeiten überlegt, die all damit zurande spielen. Und jetzt kommen wir zu dem Bereich, was beinhaltet diese Research eigentlich? Und ich habe keinen einzigen Blogpost gefunden, der darauf wirklich eingeht.",
+            "start": 607610,
+            "end": 624566,
+            "confidence": 0.8165999999999997,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Dann fasse mal kurz die Blogposts zusammen. Was schreiben denn die Blogposts?",
+            "start": 624587,
+            "end": 628508,
+            "confidence": 0.7841666666666666,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Das ist DevOps. Darum solltest du DevOps in deiner Organisation machen. Um zu wissen, wie gut du in DevOps bist, mach bitte diese vier Metriken. Deployment Frequency, Lead Time for Change, Mean Time to Recovery, Change Failure Rate. Das kannst du nutzen, um die richtigen Entscheidungen als Engineering Manager zu treiben. Vielen Dank, das war mein TED-Talk.",
+            "start": 628548,
+            "end": 646154,
+            "confidence": 0.6916842105263156,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Kannst du mal die vier Mädchen dann erklären? Oder du darfst auch die fünfte gleich mit erklären.",
+            "start": 646734,
+            "end": 651455,
+            "confidence": 0.6864705882352942,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Fangen wir mit der ersten an, Deployment Frequency, nicht Deployment Volume. Was der Unterschied ist, schauen wir jetzt gleich. Da geht es darum, um die Häufigkeit der Deployments in die Produktionsumgebung. Denn es ist ja schön, wenn wir alle irgendwie coden, coden, coden und refactoren, aber der wirkliche Value wird ja erst erzeugt, wenn der Kunde es nutzen kann, wenn dein Code also wirklich in Produktion ist.",
+            "start": 651495,
+            "end": 673561,
+            "confidence": 0.7940597014925371,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Also Häufigkeit heißt fünfmal die Woche beispielsweise.",
+            "start": 674101,
+            "end": 677742,
+            "confidence": 0.8564285714285714,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Das ist das Volume. Fünfmal die Woche.",
+            "start": 677762,
+            "end": 679623,
+            "confidence": 0.8511428571428571,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Ah, ich hab gedacht, Volume sind die Gigabyte, die deliver.",
+            "start": 679663,
+            "end": 682904,
+            "confidence": 0.6364,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Umso größer dein Tage-Set ist, desto besser. Nein, da geht's wirklich darum, täglich, wöchentlich, monatlich. Und da kann man jetzt natürlich sagen, es geht nicht darum, wie oft hast du pro Woche deployed, sondern in welcher Frequenz machst du es. Und das ist zum Beispiel einer der missverstandenen Metriken in den ganzen Blogposts.",
+            "start": 682944,
+            "end": 702296,
+            "confidence": 0.7889622641509435,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Das heißt, wenn ich fünfmal am Montag deploye, heißt das nicht, dass ich fünfmal pro Woche deploye. Also es geht wirklich um die Regelmäßigkeit. Ganz genau.",
+            "start": 702336,
+            "end": 709242,
+            "confidence": 0.645423076923077,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Es wird gesagt, dass du deine Deploymentfrequenz als täglich klassifizieren kannst, wenn du an drei Werktagen von fünf, in dem Beispiel jetzt, jeden Tag mindestens einmal deployst. Das bedeutet, wenn ich Montag, Dienstag, Mittwoch deploye, dann darf ich laut DORA-Metriken meine Deploymentfrequenz als täglich einstufen.",
+            "start": 710042,
+            "end": 731095,
+            "confidence": 0.8592000000000002,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Okay, aber das geht natürlich jetzt schon von dem Kontext und von dem Umfeld aus, wo das überhaupt möglich ist. Weil wenn ich jetzt nicht im Web-Development unterwegs bin, sondern Maschinensteuerungen mache, dann kann ich nicht dreimal täglich deployen natürlich, weil ich vielleicht gar keinen Zugriff habe. Oder jemand aus unserer Community macht zum Beispiel Software für Kreuzfahrtschiffe. Da ist es ein bisschen schwierig, alle drei Tage zu deployen, weil dieses Schiff gar keine Connection hat.",
+            "start": 731335,
+            "end": 755432,
+            "confidence": 0.7541578947368419,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Also ich glaube schon, dass das Schiff eine dauerhafte Internet-Connection hat, aber du hast natürlich recht. Du kannst natürlich jetzt nicht Softwareentwickler einer SaaS-Applikation mit einem Softwareentwicklungsteam, was Mobile-Apps macht, wo Google und Apple ein Gatekeeper ist, bevor eine App gelauncht wird, und dann noch, wo die Kunden entscheiden, ob ich das Update wirklich installiere. Also, das stimmt natürlich schon, der Kontext ist da wichtig. Und deswegen kann man natürlich nicht, wie bei jeder Metrik aber, du kannst nicht einfach, ah, wir haben diese Metrik und vergleichen diese natürlich über 20 Teams. Das geht natürlich jetzt nicht, sondern du musst den Kontext haben, was du shippst.",
+            "start": 755692,
+            "end": 787383,
+            "confidence": 0.7759622641509435,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Aber was man natürlich machen könnte, ist, dass man die Zeit misst oder die Frequency, wie oft man in den in der Main-Branch zum Beispiel was reinbringt, was dann theoretisch schon fast Deployment ist, wenn jetzt zum Beispiel bei der Kreuzfahrtschiff-Software bleibt, weil dann liegt das getestet und so weiter in meinem Main-Branch und könnte jederzeit ausgespielt werden.",
+            "start": 787623,
+            "end": 804377,
+            "confidence": 0.8120517241379311,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Ist eine gute Metrik, aber es wird absichtlich nicht die Metrik genommen, wie schnell dein Change im Mainbranch landet, denn der Value eines Codechanges ist halt leider wirklich nur, wenn der in der Produktionsumgebung ist.",
+            "start": 804657,
+            "end": 818183,
+            "confidence": 0.842057142857143,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Ja, aber es wäre so ein Vorschritt, wenn man die Möglichkeit nicht hat, wirklich deployen zu können. Das geht halt oft nicht. Ich kenne auch so Umgebungen, gerade im medizinischen Bereich, da hast du keine Chance zu deployen. Da kannst du nur deployen, indem der Kunde die Software von dir nimmt und dann in einer geschützten Umgebung installiert oder so. Da hast du natürlich diese Möglichkeit nicht. Aber da könntest du es aufweichen auf main. Aber wenn du natürlich die Möglichkeit hast, dann hast du natürlich vollkommen recht. Deployed ist etwas erst, wenn es wirklich verwendet wird eigentlich.",
+            "start": 818928,
+            "end": 846692,
+            "confidence": 0.7485102040816326,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Das ist aber jetzt mal eine interessante Frage, denn diese DORA-Metriken werden ja oft als DevOps-Metriken bekanntgegeben beziehungsweise announced. Ich weiß jetzt nicht, wie, Quote-unquote, DevOps sich im medizinischen Bereich, also wie das so wirklich funktioniert. Das kann ich dir jetzt nicht sagen. Habe ich keine Erfahrung von, habe ich auch keinen Einblick von. Und deswegen habe ich auch gesagt, meines Erachtens nach sind das Metriken für Software-Entwicklungsteams. Wie gesagt, man muss ein bisschen gucken, was man so deployt. Wenn ich immer noch AOL-CDs produziere, dann ist meine Deployment-Frequency natürlich auch ein bisschen anders.",
+            "start": 846993,
+            "end": 875822,
+            "confidence": 0.8224042553191492,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Wenn du mit so alten Dingen um die Ecke kommst, da verlieren wir die halbe Hörerschaft. Das kennt ja niemand mehr, was AOL-CDs waren. Musst du ja schon erklären, was CDs sind fast. Aber gehen wir mal weiter. Okay, die zweite Metrik, Lead Time for Changes.",
+            "start": 876282,
+            "end": 888149,
+            "confidence": 0.7498913043478261,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Kleiner Fun-Fact, ich war die Tage beim Getränke-Kaufen. Vor dem Getränkemarkt steht so ein Typ so im Wacken-Outfit, sagt, hey, pass mal auf, ich komm aus Litauen und wir machen so eine Metal-Band. Willst du nicht so eine CD von uns kaufen? Ich sag so, kann ich schon gerne kaufen, aber ich hab noch niemals mehr CD-Spieler. Na gut, war der da ein bisschen enttäuscht.",
+            "start": 888169,
+            "end": 905320,
+            "confidence": 0.6596307692307696,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Hat er keinen USB-Stick mehr gehabt.",
+            "start": 905420,
+            "end": 907301,
+            "confidence": 0.37116666666666664,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Die zweite Metrik wäre Lead Time for Change. Fällt ebenfalls wie die Deployment Frequency in die Software Delivery Performance, aber da geht es wirklich um den Zeitraum zwischen dem Eingang einer Anfrage und dem Deployment in die Produktionsumgebung.",
+            "start": 907321,
+            "end": 919929,
+            "confidence": 0.8120789473684211,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Also Eingang der Anfrage heißt jetzt wirklich von einem Kunden oder vom Product Owner oder sowas, also wirklich von außen im Team.",
+            "start": 919969,
+            "end": 926953,
+            "confidence": 0.8145454545454545,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Ja, das ist ja eine gute Frage. Was ist denn die Anfrage? Ich habe dann mal nicht auf irgendwelche Blogposts geguckt, weil das stand nämlich in einem Blogpost. Was ist denn jetzt eine Anfrage? Dann habe ich erstmal wirklich in den DevOps Research geguckt und da steht dran, wie lange es eigentlich dauert, bis ein Commit gemacht wurde und bis der in Produktion ist. Also wirklich, du machst den ersten Commit und ab da tickt die Uhr, wie lange braucht der bis in die Produktion.",
+            "start": 927273,
+            "end": 950343,
+            "confidence": 0.7254470588235293,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Also es geht gar nicht um das Ticket, das erstellt wird, sondern wirklich um den Commit.",
+            "start": 950803,
+            "end": 954984,
+            "confidence": 0.6495,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Genau. Der Grundgedanke ist, dass du ein besseres Verständnis von deinen Zykluszeiten hältst. Und das kann natürlich da Ausschluss darauf geben, wie du mit steigender Anzahl von Commits und Co. umgehen kannst. Wenn deine Zykluszeit natürlich deutlich geringer ist, das bedeutet, wenn du schneller Commits in Produktion kriegst, inklusive Review, CI-Pipeline und all was dazugehört, dann heißt das natürlich auch, dass du in relativ kurzer Zeit mehr Anfragen abhandeln kannst.",
+            "start": 955024,
+            "end": 979748,
+            "confidence": 0.8035428571428572,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Das heißt aber, der Fokus liegt wirklich darauf, was nach der Entwicklung passiert. Die Entwicklung wird in dem Fall gar nicht getrackt bis zum Commit und ab dem Commit zählt es, wo es dann wirklich darum geht, wie schnell ich es schaffe, etwas nach außen zu bringen, nach draußen zu bringen mit Reviews und dem ganzen Prozess, der dahinter stattfindet und nicht der Entwicklungsprozess oder das Grooming oder die Diskussion mit dem Kunden oder mit dem PO davor, sondern wirklich nachgelagert nach der Entwicklung.",
+            "start": 979968,
+            "end": 1006005,
+            "confidence": 0.8248214285714288,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Ich würde schon fast sagen, während der Entwicklung und nachgelagert der Definition, was bauen wir eigentlich, aber ein Code Review. Also ich öffne einen Pull-Request und mache den Pull-Request offen für Review und ab da tickt die Uhr. Und ein Review, eine Iteration über den Pull-Request und so weiter, das zählt für mich auch zur Softwareentwicklung.",
+            "start": 1006025,
+            "end": 1024933,
+            "confidence": 0.7625357142857142,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Dann kommen wir zur dritten Metrik, die ihr auch noch kennt, im Gegensatz zur fünften. Meantime to recovery, da sind wir jetzt aber wirklich im DevOps Bereich drehen oder im nachgelagerten Bereich, korrekt?",
+            "start": 1024973,
+            "end": 1035580,
+            "confidence": 0.7781212121212121,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Ja, das ist jetzt eine gute Frage. Ich glaube, es kommt dann auf den Ausfall selbst drauf an. Also prinzipiell geht es da um die Reparaturzeit nach Auftreten eines Inzidenz, der durch Hotfixes seiten der Entwickler verursacht wurde.",
+            "start": 1035800,
+            "end": 1047252,
+            "confidence": 0.8262105263157893,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Okay, mein normaler Plattformausfall zählt da gar nicht drunter. Also wenn der Server-GCB weg ist oder sonst irgendein Incident, wo mein Service wegbricht, zählt gar nicht dazu, weil das ja nicht durch einen Hotfix verursacht wurde im Normalfall. Wenn die Festplatte vollläuft zum Beispiel.",
+            "start": 1047512,
+            "end": 1062800,
+            "confidence": 0.7911818181818184,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Ja, da ja hoffentlich der Change, wie du die Festplatte behandelst oder ob du die Festplatte erweiterst und eine neue Platte dazu hängst, natürlich hoffentlich auch via Code gemacht wird inzwischen.",
+            "start": 1062840,
+            "end": 1071884,
+            "confidence": 0.7281935483870968,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Ja, ja, aber es kann ja eine Festplatte einfach volllaufen.",
+            "start": 1071924,
+            "end": 1073905,
+            "confidence": 0.7656000000000001,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Ja gut, aber dann hat dein Monitoring, was natürlich auch via Code gemanagt wurde, einen Fehler gehabt.",
+            "start": 1074279,
+            "end": 1078582,
+            "confidence": 0.7831176470588237,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Genau, aber ist ja nicht durch einen Hotfix passiert. Zählt das dann mit rein oder nicht?",
+            "start": 1078602,
+            "end": 1083105,
+            "confidence": 0.764375,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Meines Erachtens nach, ich würde da jetzt nicht so viel Wert auf das Wort Hotfix legen, sondern eher auf die Zeit, die für die Fehlersuche und die Reparatur von deinem Inzident verstreicht. Wie lange brauchst du von dem Bekanntwerden, oh, wir haben ein Problem, bis zu das System läuft wieder.",
+            "start": 1083125,
+            "end": 1099977,
+            "confidence": 0.85188,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Aber nur noch mal zur Klarstellung für mich, weil die vorigen Dinge, die beziehen sich ja wirklich auf die Softwareentwicklung und da sind wir jetzt bei Inzidenz durchaus in dem Bereich, wo Inzidenz passieren können, ohne dass die Software sogar irgendwie gewechselt wird oder irgendwas deployed wird, sondern um nochmal dieses Beispiel zu bringen mit der vollgelaufenen Platte, Da musst du ja gar nichts haben. Das ist einfach nur schlechtes Monitoring zum Beispiel oder irgendein Service stürzt ab und du musst eine Maschine neu starten. Das hat ja null mit der Software an sich zu tun. Also wird sowas mit reingerechnet oder geht es da wirklich nur um softwarebezogene Issues?",
+            "start": 1099997,
+            "end": 1135445,
+            "confidence": 0.8320454545454548,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Es wird alles mit reingerechnet, denn die Dorametriken selbst haben das Ziel, die Maturity von der Anwendung von DevOps innerhalb deiner Organisation zu messen. In dieser Hinsicht gibt es dann jetzt gar nicht so, das ist nur die Software, das ist nur die Infrastruktur, denn es kann ja auch sein, dass durch ein Feature-Flag in der Software auf einmal ganz viel gelockt wird. Ja, dann war es doch schon wieder für gegebenenfalls ein Bug oder ähnliches in der Software. In diesem Fall zählt es wirklich nur, du hast ein Problem festgestellt, du musst das schnell fixen. Auch wenn das heißt, du musst ein RM-RF-LOGS-Sternchen machen, dann ist es trotzdem die Zeit vom Login, Befehl ausführen, Log Off, aber auch das kann man automatisieren und so weiter und somit die Zeit weiter runterdrücken.",
+            "start": 1135885,
+            "end": 1175445,
+            "confidence": 0.7955227272727277,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Aber die Anzahl der Inzidenz spiegelt sich da gar nirgends wieder in diesen Metriken. Seht ihr das richtig? Da geht es wirklich nur um die Zeit und weniger um die Anzahl.",
+            "start": 1175465,
+            "end": 1184318,
+            "confidence": 0.8061935483870969,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Die reine Metrik als wie viele Inzidenz hatten wir spielt so an sich keine Rolle, aber die Anzahl der Inzidenz spielt in den Metriken 4 und 5 eine Rolle. Metrik 4 wäre Change Failure Rate. Die Prozentzahl aller Deployments, die Ausfälle verursachen. Und ein Ausfall wird unter anderem klassifiziert als Inzident, Rollback oder Produktionsfehler jeglicher Art. Weil das kann jetzt ein Deployment von irgendwas Terraform-mäßiges oder Ansible-mäßiges sein. Das kann eine neue Java-App sein, die gedeployt wird oder, oder, oder. Du machst ein Deployment. Wie viel dieser Deployments verursacht ein Inzident?",
+            "start": 1184358,
+            "end": 1221896,
+            "confidence": 0.8088681318681319,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Und was ist jetzt die fünfte ominöse Metrik?",
+            "start": 1222076,
+            "end": 1224397,
+            "confidence": 0.7020000000000001,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Und die und die fünfte neue Metrik, quote unquote neue seit 2021, weil die letzten zwei, drei Jahre war ja Corona, die gibt es ja sozusagen gar nicht mehr.",
+            "start": 1224797,
+            "end": 1232240,
+            "confidence": 0.7409310344827588,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Eben, Corona zählt man gar nicht. Also quasi ganz, ganz frisch gebacken.",
+            "start": 1232280,
+            "end": 1236401,
+            "confidence": 0.6865833333333332,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Wo man, wo man die letzten vier Metriken relativ gut anhand von harten Kriterien, Deployment oder nicht, Inzidenz oder nicht, machen kann, ist die fünfte Metrik so eine Art Sammelmetrik. Die fünfte Metrik heißt Reliability und da geht es eigentlich darum, um die Fähigkeit, deine Reliability-Ziele zu erreichen oder zu übertreffen. Was meine ich damit? Da fällt unter anderem deine Performance mit rein, also deine Response Zeit, Latency sowas wie deine Service Level Objectives oder Service Level Indicators oder von mir aus auch die Anzahl deiner Inzidenz, wenn du dir gesagt hast, du möchtest pro Monat nicht mehr als zwei Inzidenz haben.",
+            "start": 1236441,
+            "end": 1271558,
+            "confidence": 0.8174215686274506,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Aber die definieren ja dann selber, was da mit reinfällt in die Reliability-Metrik.",
+            "start": 1272178,
+            "end": 1277184,
+            "confidence": 0.7937692307692307,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Genau, da die Reliability-Metrik erst seit 2021 ist, ist die noch so ein bisschen, ich will nicht sagen undefiniert, sondern eher so eine Muttermetrik. Und da gibt es bisher auch noch keine Vergleichbarkeiten wie bei den anderen vier Metriken. Die Metrik wurde prinzipiell eingeführt, weil in den letzten paar Jahren man gesehen hat, dass DevOps- und SAE-Teams mehr und mehr zusammenarbeiten, was ja eine super Sache ist. Und Achtung für alle, die es dachten, DevOps und SAE ist nicht das Gleiche.",
+            "start": 1277224,
+            "end": 1306317,
+            "confidence": 0.8438395061728396,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Aber jetzt sind wir schon wieder in dieser Diskussion. Aber die will jetzt gar nicht anfangen. Mach mal weiter.",
+            "start": 1306357,
+            "end": 1310321,
+            "confidence": 0.6479473684210525,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Nee, nee, aber das ist jetzt unter anderem mal ein qualitativer Beweis von Leuten, die wirklich wissen, wovon sie reden, die bringen eine neue Metrik an den Start, wo die SAE-Teams dann natürlich dann auch sagen, hey, cool, dass wir auch mal dabei sind. Genau, das ist halt so ein bisschen, ich will nicht sagen Wischiwaschi, ist schon eine coole Metrik, aber die ist halt nicht so hart kalkulierbar oder, ich sag mal, nicht so einfach kalkulierbar wie die anderen Metriken.",
+            "start": 1310781,
+            "end": 1333412,
+            "confidence": 0.791962962962963,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Also ist einfach flexibler definiert, beziehungsweise kann ich mir selber definieren, was natürlich auch absolut Sinn macht, weil in gewissen Environments habe ich einfach unterschiedliche Herausforderungen oder Herangehensweisen oder bei manchen Systemen ist es vielleicht egal, wie viele Ausfälle ich habe und bei anderen, wenn ich jetzt irgendwo im kritischen Bereich bei einem Atomkraftwerk bin, habe ich da vielleicht andere Kriterien, als wenn ich jetzt irgendeine schwindelige Websoftware mache, wo man irgendwas alle paar Stunden mal fetcht oder so.",
+            "start": 1333752,
+            "end": 1361043,
+            "confidence": 0.7401645569620253,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Ja, völlig richtig. Also ich meine, du hast gerade auf die Anzahl von Inzidenz angesprochen. Wenn ich zwei Applikationen mit wenig Traffic betreibe, dann habe ich mit hoher Wahrscheinlichkeit weniger Inzidenz als Facebook oder ähnliches. Von daher ist das natürlich eine Metrik, die es sehr, sehr schwer zu vergleichen gibt. Wenn du dir die Metriken jetzt aber mal anschaust, dann siehst du so eine kleine Kategorisierung. Deployment Frequency und Lead Time for Change messen eigentlich die Entwicklungsgeschwindigkeit. In welcher Frequenz deployst du, wie lange braucht ein Comet bis in Produktion. wo Change Failure Rate und Time to Restore Service beziehungsweise Mean Time to Recovery messen eigentlich die Stabilität und die Reliability, weil Reliability ist ja nicht gleich Stabilität, die misst eigentlich die Operational Performance, wenn du so möchtest. Das tolle ist an den ersten vier Metriken, dass man dann eine Kategorisierung beziehungsweise eine industrieweite Vergleichbarkeit herstellt. Die DORA-Metriken geben nämlich neben den Metriken auch noch an, welche Kennzahlen du in den Metriken erreichen sollst, um zum Beispiel als High-, Medium- oder Low-Performing-Team zu gelten.",
+            "start": 1361495,
+            "end": 1429543,
+            "confidence": 0.8157183908045977,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Da rollen sich bei mir schon alle Fußnägel auf, wenn ich sowas höre mit Teamvergleichbarkeit und so weiter. Aber bitte mach mal weiter, haben ja die großen Persönlichkeiten entwickelt.",
+            "start": 1429583,
+            "end": 1438766,
+            "confidence": 0.7997241379310344,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Also man sagt halt laut den Dora-Metriken, wenn du zum Beispiel irgendwo zwischen einmal im Monat und allen sechs Monaten deployst, dann gilt du als Low-Performing Team. Wohingegen ein High-Performing Team, dann auf dem anderen Ende der Skala, sagt man On-Demand Deploy, also Multiple Deploys Per Day. Das sind so die Kategorisierungen.",
+            "start": 1439086,
+            "end": 1458671,
+            "confidence": 0.8237692307692307,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Das heißt jetzt aber, dass zum Beispiel alle Teams bei Daimler und vielleicht sogar bei Tesla alle Low-Performance sind.",
+            "start": 1458991,
+            "end": 1465695,
+            "confidence": 0.8639473684210526,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Das, was ich über Daimler weiß, so wie die ihre Infrastruktur betreiben und da Tesla auch Updates over the air kann, bin ich mir da gar nicht so sicher, weil die Autos sind ja inzwischen so weit und da kudos, dass man die glaube ich, wenn du die mit Kia zum Beispiel vergleichst, ich fahre an Kia, also für ein Software-Update muss ich in der Autowerkstatt. Von daher würde ich sagen, Kia ist Low-Performer und Tesla gehört dann eher im Bereich High-Performer und Daimler.",
+            "start": 1465735,
+            "end": 1493893,
+            "confidence": 0.8350000000000003,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Für alle Rechtsanwälte, ihr findet die Adresse von Andi dann online auf unserer Webseite.",
+            "start": 1493913,
+            "end": 1498537,
+            "confidence": 0.5987142857142856,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Das ist genau so. Also das geht halt so weiter, ja. So Lead Time for Change ist dann zum Beispiel Low-Performer ebenfalls, dass du zwischen einem und sechs Monate brauchst, bis dein Commitment in Produktion landet. Und High-Performer wäre dann, wenn das innerhalb eines Tages passiert. Oder auch innerhalb einer Woche. Und solche Kennzahlen hast du natürlich auch vor Time-to-Restore-Service, also Meantime-for-Recovery oder Change-Failure-Rate. Und die kannst du alle nachgucken. Früher gab es dann nämlich noch zwischen Low-, Medium- und High-Performer gab es noch sogenannte Elite-Teams. Das haben sie jetzt weggeschafft. Das bedeutet, wenn ihr jetzt mal nach diesen Kennzahlen googelt, werdet ihr irgendwo noch den Begriff Du-bist-ein-Elite-Team finden. Schmeißt den mal weg. Den haben sie nämlich seit letztem Jahr komplett eliminiert. Es gibt nur noch Low-, Medium- und High-Performer.",
+            "start": 1498777,
+            "end": 1539005,
+            "confidence": 0.7693384615384615,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Früher war auch alles besser. Jetzt nehmen sie mir schon die 10x Entwickler alle weg, dass die ja nicht der Realität entsprechen. Jetzt hast du die Elite-Teams auch noch da gestrichen. Wo soll das noch hinführen mit der Softwareentwicklung?",
+            "start": 1539280,
+            "end": 1551170,
+            "confidence": 0.776282051282051,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Jetzt kann man natürlich darüber streiten, ist das geil, dass ich mein Team als Low-Performer klassifiziere? Hm, ja, ist richtig. Der Grund ist aber, beziehungsweise nicht der Grund, der Ansporn ist eigentlich, okay, du machst es industrieweit vergleichbar. Und hast dann natürlich die Entscheidungsfreiheit, Maßnahmen zu treffen, die ganze Sache in die richtige Richtung zu entwickeln, damit du zum Beispiel die Meantime-to-Recovery ein bisschen runterkriegst. Denn umso geringer die Zeit für die Fehlersuche und Reparatur ausgefallener Services ist, desto mehr Innovationen kann man natürlich durchführen, beziehungsweise desto experimentierfreudiger man kann natürlich werden. Umso schneller ich die ganze Sache wieder back to baseline kriege, dass mein Service wieder stabil wird, warum soll ich dann nicht mehr Experimente durchführen?",
+            "start": 1551450,
+            "end": 1596147,
+            "confidence": 0.832153846153846,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Aber genau das ist, finde ich, ein riesiges Problem. Und genau das ist dieses Problem, was ich mit diesen Metriken habe. Weil da kommen dann irgendwelche CEOs daher, die haben so einen McKinsey-Artikel gelesen oder haben die Metriken gerade eingeführt, weil McKinsey behauptet hat, das sind so tolle Metriken. Und dann haben sie ein Low-Performer-Team und dann sagen sie einfach, mein Team ist Low-Performer und es muss alles gemacht werden, dass das nach oben geht, ohne dass die eine Ahnung haben, was da eigentlich dahinter abläuft, in was für einem Environment es stattfindet, dass die vielleicht in der Medizintechnik drin sind, wo das gar nicht möglich ist oder irgendwas in die Richtung. Aber ich habe ein Low-Performer-Team und die hängen sich dann auf diese Metrik auf.",
+            "start": 1596187,
+            "end": 1631660,
+            "confidence": 0.791857142857143,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Ja gut, aber was ist jetzt die Kritik? Also ist die Kritik jetzt, wenn Metriken von den Leuten gelesen werden, die Metriken nicht verstehen, beziehungsweise die nicht wissen, was sie da lesen, dass es dann falsch interpretiert wird? Ist das die Kritik?",
+            "start": 1631720,
+            "end": 1642525,
+            "confidence": 0.7825000000000001,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Ja man, seien wir uns mal ehrlich. In der Realität befasst sich doch niemand mit den Details, gerade wenn das so eine Metrik ist, die dann irgendwie so gehypt wird im Managementumfeld. Das muss man einführen. McKinsey sagt es. Und natürlich wird es dann einfach blind gelesen.",
+            "start": 1642825,
+            "end": 1657412,
+            "confidence": 0.8096595744680851,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Also du hast natürlich einen Punkt, da ist die nächste Frage, sollte die Geschäftsführung auf die DORA-Metriken gucken oder nicht nur die Engineering-Abteilung, denn wenn du an den falschen Sachen arbeitest, shippst du falsche Sachen einfach nur schneller. Also da kann man dann auch nichts mehr dran ändern, da ändern aber die DORA-Metriken drin. Aber wenn man jetzt mal ein bisschen positiv denkt und nicht nur so moppa moppa moppa so wie du jetzt gerade und nicht mal drauf hämmerst, Dann schauen wir uns mal an, was steckt denn eigentlich dahinter. Und zwar basieren diese ganzen Dora-Metriken auf sogenannten Capabilities. Und diese Capabilities wurden definiert und kategorisiert in unter anderem drei Bereiche. Technische Fähigkeiten, Prozessfähigkeiten und kulturelle Fähigkeiten. Das bedeutet, wir reden jetzt nicht nur über reine Technik wie zum Beispiel Database-Change-Management, Version-Control à la Git, Test-Automation oder Deployment-Automation. Das sind nur ein paar von den technischen Fähigkeiten, die unter anderem Teil dieser Metriken sind.",
+            "start": 1658057,
+            "end": 1710880,
+            "confidence": 0.7942129032258063,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Also das heißt, wenn ihr diese Capabilities verbessert, diese technischen Capabilities und Prozess- und kulturellen, dann werden im Idealfall auch meine DORA-Metriken nach oben gehen oder sich verbessern.",
+            "start": 1710920,
+            "end": 1722289,
+            "confidence": 0.8671071428571426,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Ganz genau. Du hast diese Dora-Metriken, diese vier beziehungsweise fünf Stück, die wir gerade besprochen haben. Und die stehen in der Mitte. Und wenn du jetzt mal nachguckst, ja okay, aber wie erzeuge ich denn diese Metriken? Wie beeinfluss ich denn diese Metriken? Was, welches Zahnrad drehe ich, damit die hoch oder runter gehen? Ja, dann gehst du mit deinem Bild mal ein bisschen nach links und nach links siehst du dann unter anderem die technischen Fähigkeiten. Deployment Automation, Test Automation, Version Control.",
+            "start": 1722689,
+            "end": 1746793,
+            "confidence": 0.7489759036144575,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Wir verlinken natürlich dieses Bild, von dem Andi jetzt spricht, weil die wenigsten haben das jetzt im Ohr, dieses Bild, aber wir verlinken diese Übersicht natürlich von Google.",
+            "start": 1747173,
+            "end": 1755496,
+            "confidence": 0.8181071428571427,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Und wenn du ein paar dieser technischen Fähigkeiten verbindest, dann endest du irgendwann in Continuous Delivery. Und wenn du Continuous Delivery hast, dann zählt das 1 zu 1 mit in die Deployment Frequency oder die Change Lead Time rein und so weiter und so fort.",
+            "start": 1755536,
+            "end": 1769182,
+            "confidence": 0.7488000000000001,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Wobei man natürlich auch sagen muss, dass diese Capabilities natürlich Einfluss auf die DORA-Metriken haben, aber nicht automatisch umgekehrt, weil zum Beispiel unter den kulturellen Capabilities, was heißt denn Capabilities auf Deutsch?",
+            "start": 1769813,
+            "end": 1782852,
+            "confidence": 0.8578124999999999,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Fähigkeiten.",
+            "start": 1782892,
+            "end": 1783253,
+            "confidence": 0.49,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Fähigkeiten, genau, danke. kulturellen Fähigkeiten, damit wir nicht nur Englisch reden, aber es ist immer schwierig on the fly zu übersetzen. Da steht zum Beispiel die Zufriedenheit im Job oder der Wellbeing, also wie gut fühle ich mich und ich kann natürlich diese Dora-Metriken kurzzeitig beeinflussen und verbessern, indem ich ein unglückliches Team mache. Jeder probiert irgendwie was durchzubuschen, möglichst schnell keine Reviews zu machen. was natürlich langfristig mir irgendwann um die Ohren fliegen wird, aber kurzfristig kann ich natürlich die Dora-Metriken dadurch beeinflussen und meine Jobzufriedenheit bei meinem Team wird nach unten gehen oder Happiness. Also die Dora-Metriken sagen nicht automatisch, dass das Team happy ist, aber wenn das Team happy ist, sollten die Dora-Metriken sich verbessern. Also in diese Richtung funktioniert es, in die andere Richtung natürlich nicht.",
+            "start": 1783273,
+            "end": 1828273,
+            "confidence": 0.7890615384615388,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Du hast einen ganz wichtigen punkt erwähnt du kannst jetzt nicht super top notch in einer fähigkeit sein und dann bewegt sich die metrik sondern es ist die summe aus den fähigkeiten.",
+            "start": 1828513,
+            "end": 1838738,
+            "confidence": 0.8384062500000001,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Aber das heißt ja eigentlich müsst ihr dann auch damit die die dora metriken richtig interpretieren kann müsst ihr eigentlich auch andere metriken haben so wie team happiness oder so damit mir das nicht um die ohren fliegt also ich brauche eigentlich immer auch Andere Metriken, die irgendwie so orthogonal zu dem Ganzen stehen, um so Sicherheitschecks, würde ich mal sagen, machen, damit eben nicht Dora-Metriken nach oben gehen und dann eben aber die Happiness im Team komplett nach unten, nur um die Dora-Metriken gerade zu verbessern.",
+            "start": 1838778,
+            "end": 1867120,
+            "confidence": 0.8044597701149424,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Also kurze Antwort, ja, aber ich glaube, es ist egal, wo du anfängst. Ich denke, du kannst dir die Dora-Metriken jetzt aufsetzen, diese vier Kennzahlen, und dann schaust du, wo stehe ich eigentlich? Dann schaust du die Zahlen an, und dann fragst du dich, wieso bin ich denn da, wo ich gerade bin, und kann ich mich verbessern? Und dann schaust du, was treibt eigentlich diese Metrik? Dann gehst du einen Schritt nach links. Und dann schaust du dir die technische Fähigkeit Test-Automation an. Sagst du, nee, top-notch, da sind wir gut. Dann hast du Deployment Automation. Sag ich, okay, wunderbar. Dann schaust du aber in die Prozessfähigkeiten und siehst, die Qualität unserer Dokumentation ist aber nicht so super. Wir kriegen gar nicht proaktiv Bescheid, wenn irgendein System fehlt. Und dann drehst du an der Schraube. Oder halt, wie du es auch angesprochen hast, Wellbeing und Job Satisfaction. Thema NPS-Scores oder Ähnliches. All das kannst du dir natürlich ansehen. Musst du aber nicht von vornherein haben. Denn wenn du eine Metrik entwickeln möchtest, das ist jetzt kein Prozess, den du in zwei Tagen machst. Es wird auch gesagt, in diesen ganzen Fähigkeiten im Core-Modell, dass eine kulturelle Fähigkeit unglaublich wichtig ist. Denn wenn du die nicht hast, dann wird das alles nichts mit der Verbesserung. Und das ist die sogenannte Generative Organisational Culture. Also eigentlich, da geht's auf die Wurzeln der DevOps-Kultur hinunter. Und zwar auf die Organisationskultur von sogenannten Vestrum. Vestrum war ein Wissenschaftler, der hat die Kultur in Unternehmen in drei Bereiche unterteilt, Bereich eins ist pathologisch, da geht's so was wie, das ist generell machtorientiert, also wenig Zusammenarbeit, Verantwortung wird weggeschoben und so weiter. Die zweite Kategorie ist bürokratisch, also sehr regelorientiert, also mäßige Zusammenarbeit, geringer Verantwortungsspielraum, Neues führt immer zu Problemen. Und dann das Generative, das ist dann wirklich das leistungsorientierte, das, was der Kern der DevOps-Kultur eigentlich ist, eine intensive Zusammenarbeit, geteiltes Risiko, Fehler führen zu Untersuchungen aka Stichwort Postmortems, Neues wird umgesetzt und so weiter. Und wenn du keine generative Organisationskultur hast, dann kannst du den ganzen Quatsch, von dem wir eigentlich reden, ganz im Ernst, dann mach den Podcast aus und wechsel den Job, weil sonst wird das alles hier nix.",
+            "start": 1867380,
+            "end": 2003639,
+            "confidence": 0.777627717391304,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Moment, ganz die falsche Herangehensweise. Also, wenn jemand nicht diese Kultur hat, dann geht er jetzt einfach in die Show Notes. In den Show Notes ist ein Link zu dem Tag Techkultur. Und da findet ihr alle Episoden, die wir bisher gemacht haben, wo es um Techkultur geht und gute Techkultur. Und hört sich einfach alle Episoden an über die Techkultur. Und da kommt dann sicher auch was ganz Gutes am Ende raus. Und dann wird die Dorametrik am Ende auch besser.",
+            "start": 2004239,
+            "end": 2031303,
+            "confidence": 0.8485731707317075,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Aber bezüglich der Organisationskultur von Vestrum, also die sogenannte Quote-und-Quote-DevOps-Kultur, die verlinken wir auch noch, ein sehr interessantes Dokument. Auf jeden Fall, wenn du die nicht hast, dann wird es auch mit dem Treiben von Testautomation, automatisches Deployment und so weiter, auch wirklich ein bisschen schwer.",
+            "start": 2031823,
+            "end": 2049116,
+            "confidence": 0.8517608695652175,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Kurzer Einwurf, wenn ihr schon dabei seid, in den Shownotes da nach unten zu krollen, da gibt es auch zwei Links mit so einem Daumen rauf und runter. Klickt da mal drauf, wenn euch die Folge gefällt oder weniger gefällt.",
+            "start": 2049156,
+            "end": 2058842,
+            "confidence": 0.780725,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Jetzt müsste eigentlich so was kommen wie Werbung, Ende.",
+            "start": 2059303,
+            "end": 2061985,
+            "confidence": 0.5539999999999999,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Das könnt ihr übrigens auch machen, während ihr den Podcast hört. Und hilft uns viel, dieses Feedback. Okay, jetzt ist ja das ganze Metrikensystem ganz allgemein dafür gedacht, dass man sich verbessert, optimiert. Ich habe jetzt angefangen mit irgendwelchen Metriken, egal in welchem Bereich, DORA-Metriken und ich tracke auch noch Happiness, das finde ich trotzdem immer noch sehr wichtig, weil das einfach zu erheben ist. Ich frage einfach die Leute, Happiness-Score zwischen 0 und 10. Frag das regelmäßig ab, simple, einfache Frage. Aber wenn ich jetzt diese Optimierung starte, wohin optimiere ich denn? Wann höre ich denn auf zu optimieren? Was ist denn gut? Was für eine Frequency von meinen Deployments ist denn gut überhaupt?",
+            "start": 2062025,
+            "end": 2102134,
+            "confidence": 0.7944086956521742,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Ja, ich finde, das musst du schon selbst entscheiden, wann gut genug ist. Weil da geht es nämlich ins sogenannte Over-Engineering. Natürlich kannst du jede Minute deployen, aber shippst du auch wirklich jede Minute irgendwie was Wertvolles?",
+            "start": 2102554,
+            "end": 2113862,
+            "confidence": 0.8060000000000003,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Ich meine, meinem Management ist es vielleicht ausreichend, wenn von diesem low-performing Team, was da irgendwer definiert hat, diese komische Metrik, auf das well-performing Team. Aber wie finde ich den Punkt als Team, was sinnvoll ist? Und wie viel Zeit investiere ich dann in die Optimierung? Muss ich dann noch die Optimierung tracken? Wie viel Zeit investiere ich in Optimierung? Was bekomme ich raus?",
+            "start": 2114162,
+            "end": 2136235,
+            "confidence": 0.82521875,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Naja, wenn du ein Produkt entwickelst oder ein neues Feature oder ähnliches und die meiste Zeit wird verbrannt, den Change in Produktion zu kriegen. Also mal angenommen, du entwickelst drei Tage ein Feature und anderthalb Tage bist du dabei, die ganze Sache in Produktion zu kriegen, dann würde ich sagen, du hast ein Bottleneck. Also bis da solltest du wohl schon nochmal ein bisschen optimieren, dass das vielleicht alles ein bisschen schneller geht. Ich rede jetzt von einer klassischen Web-App oder ähnliches, ja. Ich rede jetzt nicht von der Presse einer CD oder ähnliches oder warten, bis das Schiffwärter am Hafen ist und deployen dann die Software auf die Server. Sondern wenn der Prozess des Software Shippens für dich ein No-Brainer ist, dann kann man auch ganz einfach sagen, das ist schnell genug. Wenn du einfach keine Stimmen mehr hörst von deinem Vorgesetzten und von deinen Vorgesetzten, wir entwickeln zu langsam, dann ist super.",
+            "start": 2136955,
+            "end": 2177227,
+            "confidence": 0.7207012987012988,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Ich probiere es mal mit dem Davis Advocate oder CEO, wie es andere nennen. Immer schön mein CEO-Pashing, ich weiß. Du als Team wirst jetzt diese Dora-Metrik optimieren, weil du nur alle drei Tage ein Deployment rausbekommst. Dann sagt aber vielleicht die CEO, Moment, das reicht uns doch komplett aus. Warum wollt ihr da jetzt Zeit investieren? Investiert doch die Zeit ins Product Development. Wir haben ja ein schlechtes Produkt, das ist viel, viel wichtiger. Uns reicht es ja leicht, wenn ihr einmal die Woche da rauskommt mit einem Deployment. Wir schicken zu unserem Kunden sowieso nur alle zwei Wochen. Warum wollt ihr da überhaupt Zeit investieren? Das Produkt ist viel wichtiger.",
+            "start": 2177247,
+            "end": 2212307,
+            "confidence": 0.7792500000000002,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Okay. Wenn der Kollege das so sagt, dann ist das ja super, weil im Endeffekt ist er der Chef der Firma und wenn er sagt, das reicht, auch super.",
+            "start": 2212707,
+            "end": 2218852,
+            "confidence": 0.6959310344827585,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Jetzt habe ich einmal eine weibliche Chefin gemacht, dann springst du sofort wieder auf den männlichen Chef um.",
+            "start": 2218872,
+            "end": 2223436,
+            "confidence": 0.6876111111111111,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Entschuldigung. Wenn du natürlich weiter optimieren möchtest, dann kannst du natürlich sagen, ja, aber pass auf, was ist denn, wenn wir einen Ausfall haben? Wir müssen in der Lage sein, sofort zu deployen, damit wir den Fehler recht schnell fixen können. Es geht ja nicht nur immer darum, liefern wir das Produkt alle zwei Wochen aus, sondern wie schnell können wir in einem möglichen Fehlerfall reagieren. Und wenn das Argument auch abgeschmettert wird, dann muss man ganz einfach sagen, dass die Führungspersönlichkeit entschieden hat. Weil im Endeffekt ist die Dame CEO und hält die Verantwortung und du hilfst den Traum von deiner Vorgesetzten umzusetzen. Somit ist doch alles okay.",
+            "start": 2224216,
+            "end": 2256835,
+            "confidence": 0.8128623853211012,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Und da spielt wieder meine Happiness-Metrik mit rein, weil höchstwahrscheinlich wird es dann Probleme bei der Happiness-Metrik geben, vermute ich mal. Also darum finde ich es immer gut, so autogonale Metriken noch mitzutracken, die so Gesundheitsmetriken, Healthmetrics, wie es so schön heißt, weil mir die immer so eine Grundstimmung geben und unter Umständen andere Metriken eben ganz gut ergänzen können.",
+            "start": 2257115,
+            "end": 2280362,
+            "confidence": 0.8202499999999999,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Ja gut, aber dann muss ich sagen, okay, was deine eigenen Anforderungen sind und das, was du erreichen möchtest, also du möchtest jetzt in einer Firma arbeiten, die alle 15 Minuten deployen kann, dann würde ich sagen, dann bist du in der falschen Firma oder du hast Anforderungen, die nicht zu deinem Firmenumfeld passen. Und das, muss ich zugeben, kann dir keine Metrik korrigieren. Also, weil das ist ein persönlicher Kampf, den, glaube ich, jeder führen muss.",
+            "start": 2281132,
+            "end": 2305051,
+            "confidence": 0.8159740259740258,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Aber das ist glaube ich ein grundlegendes Problem, dass diese Metriken gerade in größeren Unternehmen oft falsch verwendet werden und auch um in dem Fall Teams zu vergleichen, was ich extrem gefährlich finde. Also auch wenn diese Dora-Gruppe da Klassifikation eingeführt hat, was ein Low-Performing-Team ist und so weiter. Aber ich finde das super gefährlich, wenn man Teams vergleicht, weil Teams kann ich vergleichen, wenn die in dem genau gleichen Umfeld arbeiten. Also wenn jetzt zwei Teams habt, die die gleiche Pipeline haben, die gleichen technischen Tools, ungefähr dasselbe entwickeln, dann ist sowas grundsätzlich möglich, dann funktioniert es. Aber in der Realität hast du nie zwei Teams, die gleich arbeiten. Also wir hatten gerade kürzlich in der Episode 85, wo wir mit der Isabel gesprochen haben, der ihr Team versucht, neue Technologien reinzubringen in das Produkt, neue Sachen auszuprobieren. da hast du natürlich ganz andere Anforderungen als ein klassisches Development-Team. Also jedes Team ist anders und dann Teams irgendwie zu vergleichen, Low-Performing, High-Performing, das finde ich super gefährlich und da kommen dann genau diese meiner Meinung nach Bullshit-Artikel raus, wie dieser McKinsey-Artikel, verlinken wir natürlich gerne auch in unseren Show-Notes, die sagen, sie haben den Graal gefunden und sie können jetzt Software-Developer-Productivity messen, unter anderem mit DORA, aber sie erwähnen auch was anderes, aber rein dieses Wir können das jetzt messen und wir geben euch dem Management was in die Hand, wo ihr eure Teams vergleichen könnt und die Produktivität messen könnt. Das finde ich eigentlich super gefährlich. Die Metriken an sich mögen gut sein und gerade wenn das Team für sich die verwendet, aber die Vergleichbarkeit ist meiner Meinung nach ganz ganz selten gegeben. Das kann so vielleicht eine Hilfe sein, aber auf eine Metrik zu bocken und da sagen, ich habe ein Low-Performing-Team, Hyper-Performing-Team, das muss geendet werden, finde ich auch sehr gefährlich. Also da muss man wirklich super aufpassen, aber wenn man die Metrik richtig verwendet, stimme ich dir vollkommen zu, ist die super hilfreich. Aber man muss halt aufpassen, dass die nicht nach oben bubbelt und nur so als eine Kennzahl, als KPI irgendwie dann für die gesamte Produktivität eingesetzt wird.",
+            "start": 2305671,
+            "end": 2427520,
+            "confidence": 0.8233718309859149,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Ich stimme dir zu, aber das ist natürlich auch der Grund, warum diese Metriken sehr, sehr high-level sind. Nehmen wir mal ein Beispiel. Wenn du ein Incident hast und du brauchst einen Monat, um den Service wieder herzustellen, dann lehne ich mich mal aus dem Fenster, dann sage ich, das könnte schneller gehen.",
+            "start": 2427900,
+            "end": 2440965,
+            "confidence": 0.6288113207547169,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Ja klar, aber du hast natürlich Environments, wo das einfach unterschiedlich ist. Bei manchen sind Incidents vielleicht weniger kritisch. Manche haben gar nicht die Anforderungen, Deployments so schnell rauszukriegen. Das eine Team ist vielleicht ein Research-Team. Da läuft es ganz anders. Und dann hast du plötzlich, wenn du das über deine gesamte Organisation stülpst, hast du da irgendwo Low-Performing-Teams, die aber eigentlich ganz was anderes machen. Darum ist meiner Meinung nach der Kontext immer so wichtig.",
+            "start": 2441326,
+            "end": 2464517,
+            "confidence": 0.7647368421052632,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Das sagen die ja aber auch. Und keiner hat gesagt, du musst in allen vier, fünf Metriken High-Performing sein. Low Performing, das klingt so negativ, aber wenn du einfach keinen Fokus darauf hast, dann ist das ja völlig okay.",
+            "start": 2464817,
+            "end": 2477184,
+            "confidence": 0.786948717948718,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Ja, aber das erkläre mal irgendeinem CEO, wenn da irgendwo steht, ich habe ein Low Performing Team, der sagt, ja, ja, ist schon okay, die machen ja was anderes. Das kommt bei dem ja selten an, klar. Das ist genau das Problem, was du dann auf Director oder Engineering Manager Ebene hast, dass du genau diese Sachen verteidigen musst. Und das ist die Aufgabe von den Leuten, ganz klar. Aber so Metriken haben auch diese Gefahr, dass die eben missinterpretiert werden. Und da muss man einfach möglichst aufpassen, wo das verwendet wird und wie es kommuniziert wird.",
+            "start": 2477204,
+            "end": 2503346,
+            "confidence": 0.7890103092783506,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Verstehe ich, Wolfgang, aber immer noch, jede Metrik kann falsch gelesen werden. Und wenn diese Leute diese Metrik interpretieren oder versuchen zu interpretieren, dir nicht zuhören und sagen, laut dieser Klassifikation da drüben sind wir low performing, weil machen wir uns nichts vor. Diese Leute haben zwar Ahnung, wovon sie reden, aber führe dir einmal ganz kurz vor Augen, wer diese Research veröffentlicht hat. Welche Interessen hat Google Cloud? Google Cloud hat natürlich die Interesse, dass mehr und mehr Leute die Cloud nutzen und sie schreiben ja auch in ihrem DevOps Report, 75 Prozent aller High-Performing-Teams nutzen einen Cloud-Anbieter und so weiter und so fort. Also schau dir mal ganz kurz an, da sind Researcher, die werden bezahlt von einer Firma, die einer der größten Hyperscaler der Welt sind, zu sagen, dass alle High-Performing-Teams Cloud nutzen.",
+            "start": 2504026,
+            "end": 2549754,
+            "confidence": 0.7997205882352939,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Ja gut, das ist nochmal ein ganz anderer Aspekt, der da mitspielt, von wo das Ganze kommt, aber nichtsdestotrotz, Dorametriken machen ja absolut Sinn. Gar keine Frage, nur...",
+            "start": 2550314,
+            "end": 2560142,
+            "confidence": 0.7921785714285713,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Das hört sich jetzt so negativ an, wenn ich das beschreibe, aber ich bin Fan von den Dorametriken. Ich bin Fan von ganz vielen Metriken. Ich bin aber auch ein Fan davon, die Metriken in deinem Kontext zu klassifizieren, denn du kannst Top-Dorametriken haben. Aber immer noch ein scheiß Produkt shippen. Wenn du an den falschen Sachen arbeitest und dich auf die falschen Sachen fokussierst, helfen dir High-Performing-Klassifikationen in Dora halt auch nicht weiter.",
+            "start": 2560282,
+            "end": 2580402,
+            "confidence": 0.758027027027027,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Ja, genau. Darum meine ich ja auch orthogonale Metriken, die man noch zusätzlich trackt. Und ein beschissenes Produkt schnell zu shippen ist zwar ganz nett, aber das Produkt bleibt halt trotzdem nur schlecht. Aber ich glaube, es setzt halt ganz allgemein eine gewisse Kultur voraus in der Firma. Und wenn man schon eine vergiftete Kultur hat, dann würde ich auf keinen Fall noch so mit Symetriken um die Ecke kommen, die wahrscheinlich noch mehr böses Blut in der Firma machen. Also es muss schon das Environment auch stimmen, dass man offen mit Symetriken umgeht oder man behält das irgendwie mehr oder weniger geheim im Team oder erfasst es nur für das Team an sich. Das kann ja ein guter Start sein. Und es ist sowieso immer eine schlechte Idee, wenn Symetriken von der Geschäftsführung übergestülpt werden, meiner Meinung nach, weil da schreit eh jeder sofort nein und ich will nicht überwacht werden. Zurecht auch oft, ja.",
+            "start": 2580602,
+            "end": 2625783,
+            "confidence": 0.8005705128205125,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Deswegen wird ja auch die Organisationskultur von Westrum als Key-Kriterium genannt, ja. Wenn du keine generative Organisationskultur hast, dann muss ich zugeben, wird das auch alles nichts. Aber dann hast du gegebenenfalls auch nicht die Ambitionen, an deinen Dorametriken beziehungsweise an den Ergebnissen deiner Dorametriken ein bisschen rumzuschrauben. Der Punkt ist aber in der heutigen Zeit, Wer nicht bereit ist für Experimente, wer nicht innovationsfreudig agieren kann, wer nicht Ausfälle schnell beheben kann, zumindestens im Web- und Mobile-Umfeld, der wird es schwierig haben, würde ich sagen, weil die Zeit entwickelt sich immer weiter. Wie sagte Werner Vogels, CTO von Amazon Web Service immer, everything fails all the time. Und du musst halt in der Lage sein, auf Failures zu reagieren. Du musst in der Lage sein, schnell zu shippen. Von mir aus kannst du auch deine Meantime-to-Recovery ganz stark nach unten drücken, indem du dich per SSH auf deinen Server einloggst und deine Files auf dem Server modifizierst und dann da kompilierst. Das ist mir völlig egal, wie du das machst. Du merkst schon, ja? Auch die Metrik kann ein sehr gutes Ergebnis anzeigen. Deine Operational Practice ist dann aber eigentlich Shit, ja? Also ... Aber deswegen ist es halt immer schwierig, ne? Es ist nur eine Zahl, und eine Zahl ist ein Indikator, ja? Es setzt nicht, das ist mein heiliger Gran und ich richte mich nur danach aus. Also das ist es nicht, denn du solltest schon noch die ganze Sache nüchtern betrachten und auch kritisch zu betrachten. Deswegen gibt's ja auch sehr viele Leute, die Kritik an jeglicher Art von Metrik schreiben. Auch an diesem McKinsey-Artikel zum Beispiel, ich hab ihn jetzt nicht gelesen.",
+            "start": 2625823,
+            "end": 2720445,
+            "confidence": 0.7937653429602894,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Du hast nichts verpasst.",
+            "start": 2720505,
+            "end": 2721886,
+            "confidence": 0.3975,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Man könnte auch sagen, Lines of Code zu messen ist scheiße bei Entwicklern. Ich würde sagen, da sagen sehr, sehr viele Leute, ist eine Scheißmetrik. Man könnte aber auch sagen, was ist denn der beste Indikator von einem Softwareentwickler, einen hohen Value zur Plattform zu liefern? Und da sind wir schon wieder zurück zu, ja, shippen wir ein paar Lines of Code. Also es ist, also gib mir eine bessere Antwort.",
+            "start": 2722746,
+            "end": 2746979,
+            "confidence": 0.7160422535211268,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Naja, du könntest immer noch sagen, der Klassiker, wenn du das ganze System vereinfacht und 50 Prozent der Zahlen löschen kannst und es ist noch dasselbe System, dann hast du auch viel geschaffen. Also es gilt auch bei einer Plattform.",
+            "start": 2746999,
+            "end": 2757889,
+            "confidence": 0.727475,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Ja, da sind wir aber wieder bei Committen und Lines of Code. Wenn der Zeilen löscht, heißt das ja nicht unbedingt, dass das Value wegnimmt, sondern er vereinfacht. Aber er muss die richtigen Zeilen löschen und so weiter. Und da sind wir wieder bei Lines of Code. So, und jetzt kann man darüber streiten. Ist Lines of Code eine geile Metrik? Nein, weil du kannst drei Wochen debuggen und ein Zeile ändern und das fixt den Bug. Aber über einen langen Zeitraum musst du sagen, was ist denn der Value, den ein Softwareentwickler essentiell zur Plattform beiträgt. Und das ist dann leider oft Lines of Code.",
+            "start": 2758309,
+            "end": 2790773,
+            "confidence": 0.7544433962264149,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Okay, bevor wir zu sehr abdriften in diese ganze Metrik-Diskussion, weil alles hat negative Seiten, gebe dir vollkommen recht. Ich bin übrigens auch Fan von DORA-Metriken, ganz abgesehen davon, wenn man sie richtig einsetzt. Aber wie kann man denn grundsätzlich diese DORA-Metriken erfassen? Woher kommen denn die Daten? Wie mache ich denn das überhaupt?",
+            "start": 2791763,
+            "end": 2809931,
+            "confidence": 0.7764259259259256,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Und genau das ist eine der größten Herausforderungen, die auch immer genannt wird im Kontext der DORA-Metriken. In der Regel hat man die ganzen Sachen in verschiedenen Systemen. Euer Deployment zum Beispiel macht ihr sehr wahrscheinlich irgendwie mit Jenkins, GitHub Actions, Travis CI, Circle CI, irgendeiner Lambda Function auf AWS, keine Ahnung.",
+            "start": 2809971,
+            "end": 2826377,
+            "confidence": 0.7400192307692308,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Mit einem langen Bash-Skript.",
+            "start": 2826417,
+            "end": 2828678,
+            "confidence": 0.55925,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Von mir aus auch mit einem langen Bash-Skript, ist ja völlig egal. Ihr habt ein System, was deployed.",
+            "start": 2828698,
+            "end": 2832759,
+            "confidence": 0.688,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Oder auch nicht. Es gibt ja auch viele, die einfach irgendwie manuell ganz komisch deployen.",
+            "start": 2832799,
+            "end": 2837601,
+            "confidence": 0.7530666666666667,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Entweder baut ihr jetzt natürlich einen Schritt in das Deployment-Skript ein, dass ihr irgendwo einen Datenpunkt hinsetzt oder euer Deployment-System hat bereits eine API über erfolgreiche Jobs eures Deployment-Jobs oder oder oder. Dann hast du natürlich noch die Git-Commits, beziehungsweise wenn wir von Lead-Time-to-Change reden, die Pull-Requests, das bedeutet, oder bei GitLab Merge-Requests, Das bedeutet, ihr braucht irgendeine Daten-Connection zu eurem Versionskontrollsystem. Dann habt ihr irgendein System für Inzidenz. Status-Page-IO, Inzidenz-IO, Ops-Genie. Von mir aus auch ein Ticketsystem, wo jedes Ticket mit dem Label Inzident vorsehen ist. Es ist ja völlig egal, wie ihr das managt, aber ihr müsst diesen Punkt haben, wo ihr ein Inzident beziehungsweise einen Ausfall tracken könnt. Und wenn ihr den Inzident dann behandelt habt, dann müsst ihr den Inzident tracken, ob dieser Inzident anhand eines Deploys ausgeführt wurde. Denn diese zwei Datenpunkte sind erst mal in zwei verschiedenen Systemen.",
+            "start": 2838041,
+            "end": 2893854,
+            "confidence": 0.7850625,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Das heißt, eigentlich bräuchte ich so eine Trace-ID, die über das System hinweg funktioniert.",
+            "start": 2893894,
+            "end": 2898075,
+            "confidence": 0.6427857142857143,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Nee, das jetzt eigentlich noch nicht mal, weil ... Nehmen wir mal die Deployment Frequency. Du misst das Deployment Volume, ja? Und wenn du das ein paar Wochen gemacht hast, dann weißt du eigentlich, okay, mache ich das täglich, wöchentlich oder monatlich. Also das ist relativ einfach. Lead time for change, da musst du die Connection haben, welche Git-Commits sind in deinem Deployment. Das bedeutet, dein Deployment-Skript muss auf jeden Fall einen Div von allen Commits zum letzten Tag oder ähnliches haben. Die Verbindung brauchst du. Mean time to recovery, du musst irgendwo festhalten, wann dein Inzident begonnen hat und wann dieser Entweder geschlossen wurde oder in den Monitoring-State ging, weil wenn du im Monitoring-State bist, dann ist der eigentlich gefixt, du monitorst das ja nur.",
+            "start": 2898855,
+            "end": 2937348,
+            "confidence": 0.746452380952381,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Aber ihr müsst natürlich in dem Fall auch den Link zurück haben, dass dieser Inzidenz zum Beispiel durch einen Software-Change getriggert wurde, oder?",
+            "start": 2937388,
+            "end": 2945179,
+            "confidence": 0.8386956521739132,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Ja, das kannst du aber ja später machen. Das kannst du ja machen, okay, du hast jetzt den Inzident behoben, und dann kannst du dich ja fragen, okay, wie wurde dieser getriggert? Dann machst du ja in der Regel einen Postmortem, und dann kannst du ja von mir aus irgendwo eine Excel-Tabelle führen, ist ja völlig egal, oder du hast ein Dropdown-Feld. Wir zum Beispiel in der Firma, wir haben, wir nutzen Inzident.io, das ist eine Plattform für Inzidents, die haben wir an Ops-Genie gekoppelt, und immer wenn der Inzident geschlossen wird, dann haben wir da ein Custom-Meta-Field eingeführt, das besagt, was war die Root Cause? Und der Root Cause war zum Beispiel ein externer Cloud Failure, wenn jetzt irgendeine Google Cloud Region jetzt wieder einen Fehler hat, da wo wir nichts konnten, oder ein Production Change oder ähnliches. Und dann markieren wir das einfach und dann können wir hier über die API abfragen, gibt mir mal bitte alle Inzidenz, die durch ein Production Change getriggert wurden. Und dann klassifizieren wir das noch über eine Subkomponente und so weiter. Aber das muss ja nicht vollautomatisch geschehen, das kann ja ganz einfach manuell geschehen. Genau, aber das ist so die größte Herausforderung, diese Daten aus diesen verschiedenen Systemen alle in eins zu führen. Aber ich würde fast sagen, von allen Metriken, wo du mehrere Systeme zueinander führst, wo du wirklich Kontext erfasst, ich mein, das ist der Grund, warum es Data Engineers gibt, Data Warehouses, Storage, BigQuery und Co, ja?",
+            "start": 2945760,
+            "end": 3019573,
+            "confidence": 0.7481124497991964,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Weil ... Obwohl, das klingt jetzt schon fast ein bisschen overkill, wenn ich da irgendeine gute Dashboard-Lösung verwende, wieder Empfehlung, Episode 45 reden wir da auch darüber, zum Beispiel Metabase oder so, da kann ich sehr viele Datenquellen anschließen, da kann ich mir das wahrscheinlich relativ schnell zusammenstöpseln. Oder es gibt natürlich auch ganz viele kommerzielle Lösungen für Dora-Metriken, aber ehrlich gesagt, ich glaube, um zu starten geht das auch wesentlich einfacher und wenn man da ein paar Skripte schreibt, dann hat man das wahrscheinlich sehr schnell aus den Systemen draußen, diese Metriken.",
+            "start": 3019613,
+            "end": 3049003,
+            "confidence": 0.7550215053763439,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Das Google Cloud Team hat auf GitHub auch eine Applikation, die nennt sich 4Keys. Verlinken wir auch. 4Keys ist eine Applikation, die dein GitHub und wenn du Google Cloud nutzt, der dir die vier Metriken automatisch zusammenzieht, in BigQuery packt und ein Dashboard gibt. Also das ist dann schon alles fertig, sofern ihr denn über Google Cloud denn deployed. Aber die Applikation hat auch die ganzen GitHub-Komponenten drin für Pull-Requests und für Webhooks und so weiter und so fort. Und die könnt ihr vielleicht, wenn ihr auf AWS deployed, dann wird es mit hoher Wahrscheinlichkeit jetzt nicht so wirklich schwierig sein, diese ganze Sache auf AWS umzumünzen.",
+            "start": 3049694,
+            "end": 3082749,
+            "confidence": 0.7737850467289721,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Beziehungsweise gibt es wahrscheinlich hartsichere Software dafür. Wer da irgendwas kennt, bitte kommt vorbei bei uns in der Community. Interessiert sich ja mehr Leute, wenn ihr da Tools habt, die beim Fetchen der Metriken helfen.",
+            "start": 3082989,
+            "end": 3092732,
+            "confidence": 0.6873428571428573,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Auch wenn wir immer davon reden, dass die Dora-Metriken jetzt nur für DevOps-Teams sind und für Set-Reliability-Engineering-Teams und so weiter. Ich habe eine drastische Meinung. Ich denke, das sind Software-Entwicklungsteams-Metriken. Denn ich denke, jeder Software-Entwickler und jede Software-Entwicklerin sollte sich unter anderem auch über den Betrieb kümmern, beziehungsweise dafür sorgen, dass eure Changes keinen Incident verursachen und so weiter und so fort. Und deswegen natürlich auch eine hohe Kollaboration zu den Teams haben, die den Betrieb sicherstellen. Und ich denke, dass diese DOA-Metriken, sofern ihr diese gute Kollaboration jetzt noch nicht habt, auf jeden Fall euch einen Weg weisen können, um zumindest mal mit den Teams, die euren Betrieb machen, ins Gespräch zu kommen. Und davon fragen, hey, was haltet ihr davon, wenn wir mal zusammen daran arbeiten. Denn ein einzelnes Team wird diese Metriken nicht wirklich beeinflussen können, denn es wird nur zusammen passieren. Und falls ihr dann irgendwie euren Status von Medium Performer zu High Performer wechselt, ich glaube eure Vorgesetzten geben dann auch mal ne Pulle Sekt aus und dann könnt ihr die auch remote oder im Office zusammen killen. Auch wieder so stereotypinhaft, dass es immer so Alkohol gibt. Für mich ist auch ein Kaffee oder ein veganer Cupcake oder so.",
+            "start": 3093092,
+            "end": 3158806,
+            "confidence": 0.776380487804878,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Geht nicht so abwertend über die Veganer.",
+            "start": 3160017,
+            "end": 3162639,
+            "confidence": 0.5782857142857143,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Nee, nicht abwertend, sondern modern. Ist ja okay. Aber früher war es immer so Alkohol und das wird jetzt immer verpönt. Und deswegen sage ich okay, vielleicht gibt es dann auch veganen Cupcake. Nur als anderes extrem.",
+            "start": 3162699,
+            "end": 3172844,
+            "confidence": 0.6751081081081082,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Egal, wir driften schon ziemlich ab. Lasst uns mal wissen, was ihr darüber denkt, über diese ganzen Metriken. wie ihr das auch im Einsatz habt, ob ihr das im Einsatz habt, wie das mit Management auch funktioniert. Vielleicht habt ihr Erfahrungen, positive, negative Erfahrungen beim Einsatz von Dorametricking. Schaut bei uns vorbei in der Community, lasst uns und die anderen das wissen. Die Community wächst ständig, freut uns sehr, sind wirklich schon viele Leute drin und genau dafür ist sie auch da, um einfach Erfahrungen auszutauschen und mal zu hören, was andere Firmen denn so machen und wie die arbeiten.",
+            "start": 3173225,
+            "end": 3206143,
+            "confidence": 0.8297599999999999,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Wie immer gibt es alle Links, die wir hier erwähnt haben, in den Show Notes. Auch die aktuelle Klassifizierung seit 2022 für die 5 Metriken. Der DevOps Report 2022 ist natürlich wie immer eine gute Lektüre. Wenn ihr in dem Bereich arbeitet, denke ich sogar, ihr könnt das während der Arbeitszeit lesen, denn es ist ja auch so eine Art Weiterbildung. Von daher, ihr müsst das nicht nach Feierabend tun. Ansonsten, ich hatte mal wieder ziemlich viel Spaß, der Wolfgang ist eigentlich auch ein bisschen negativ diesem Thema gegenübergestellt, aber ich hoffe, ich konnte durch ein bisschen Hintergrundwissen ihn doch ein bisschen so... Cool! Ich glaube, ich mache das jetzt für mein Seitenprojekt auch mal ein bisschen mehr.",
+            "start": 3206623,
+            "end": 3243072,
+            "confidence": 0.7824406779661013,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Du hast mich schon überzeugt grundsätzlich. Ich bin ja auch ein Fan von Dorametrikchen, aber... Das waren auf jeden Fall super Einblicke, weil manche Details hatte ich auch falsch im Kopf, muss ich ganz ehrlich sagen. Diese klassischen vier Metrikchen kennt man so, aber wie man sie wirklich umsetzt, was das eigentlich bedeutet, dass es zum Beispiel um die Frequency geht und nicht einfach um die Anzahl. Solche Dinge sind schon super wertvoll, wenn man da mal in die Tiefe geht und da ein bisschen nachliest.",
+            "start": 3243092,
+            "end": 3265732,
+            "confidence": 0.778720930232558,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Das war's wieder von uns. Bis zur nächsten Episode. Ich hoffe, ihr bleibt dran. Bis später. Tschüss zusammen. Ciao.",
+            "start": 3265772,
+            "end": 3270877,
+            "confidence": 0.5965263157894737,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Und nicht vergessen, wenn ihr nach einer neuen Herausforderung sucht, schaut mal bei der Careerspage von unserem Episodensponsor Trivago vorbei. Link in den Show Notes.",
+            "start": 3274153,
+            "end": 3282347,
+            "confidence": 0.8191600000000001,
+            "channel": null,
+            "speaker": "B"
+        }
+    ],
+    "confidence": 0.7837711557788928,
+    "audio_duration": 3282.0,
+    "webhook_status_code": null,
+    "webhook_auth": false,
+    "summary": null,
+    "auto_highlights_result": null,
+    "content_safety_labels": null,
+    "chapters": null,
+    "sentiment_analysis_results": null,
+    "entities": null
+}

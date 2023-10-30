@@ -75,10 +75,13 @@ rtlplus: ''
 speaker:
 - name: Andy Grunwald
   website: https://andygrunwald.com/
+  transcriptLetter: B
 - name: Wolfi Gassler
   website: https://wolfgang.gassler.org/
+  transcriptLetter: C
 - name: Frank Karlitschek
   website: https://karlitschek.de/
+  transcriptLetter: A
 spotify: https://open.spotify.com/episode/7xjMzo1A0zEkvnaNSNZfTC
 tags:
 - Tech Kultur
