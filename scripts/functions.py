@@ -53,7 +53,7 @@ def get_podcast_episode_by_number(storage_dir, number):
     episode_filename = episodes[0]
 
     episode = None
-    file_path = f"{storage_dir}/{episode_filename}"
+    file_path = os.path.join(storage_dir, episode_filename)
     with open(file_path) as f:
         episode = frontmatter.load(f)
 
@@ -90,6 +90,7 @@ def has_podcast_episode_a_transcript(episode_number) -> bool:
     """
     transcript_file = f"{episode_number}-transcript-slim.json"
     file_path = build_correct_file_path(TRANSCRIPT_STORAGE_DIR) + '/' + transcript_file
+
     return os.path.exists(file_path)
 
 
