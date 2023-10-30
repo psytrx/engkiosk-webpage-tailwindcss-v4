@@ -4,6 +4,13 @@ import json
 import logging
 import re
 
+from functions import (
+    build_correct_file_path,
+    get_podcast_episode_number_from_filename_number,
+    has_podcast_episode_a_transcript,
+    get_podcast_episode_transcript_by_number
+)
+
 # External libraries
 import frontmatter
 
@@ -42,6 +49,80 @@ def build_episode_statistics(path_md_files) -> dict:
             
     return stats
 
+
+def build_episode_speaking_time_statistics(path_md_files) -> dict:
+    """
+    Going through all Podcast Episode transcript files
+    and calculate speaking time per speaker.
+    """
+
+    # Get existing podcast episodes
+    episode_speaking_time = []
+    overall_speaking_time = {
+        'total_length_s': 0,
+        'speaker': {},
+    }
+    overall_speaking_time['speaker']['Unbekannt'] = 0
+
+    episodes = [f for f in os.listdir(path_md_files) if isfile(join(path_md_files, f)) and f.endswith('.md')]
+    for episode in episodes:
+        episode_number = get_podcast_episode_number_from_filename_number(episode)
+
+        if has_podcast_episode_a_transcript(episode_number) is False:
+            continue
+
+        # Read podcast episode data
+        file_path = f"{path_md_files}/{episode}"
+        with open(file_path) as f:
+            episode_frontmatter = frontmatter.load(f)
+
+        # Read transcript data
+        transcript_data = get_podcast_episode_transcript_by_number(episode_number)
+
+        speaker_map = {}
+        for s in episode_frontmatter['speaker']:
+            speaker_map[s['transcriptLetter']] = s['name']
+
+        overall_speaking_time['total_length_s'] += episode_frontmatter['length_second']
+
+        ms_sum = 0
+        speaking_time = {}
+        for u in transcript_data['utterances']:
+            length = u['end'] - u['start']
+            ms_sum += length
+            speaker = speaker_map[u['speaker']]
+
+            if speaker not in speaking_time:
+                speaking_time[speaker] = 0
+
+            if speaker not in overall_speaking_time['speaker']:
+                overall_speaking_time['speaker'][speaker] = 0
+
+            speaking_time[speaker] += length
+            overall_speaking_time['speaker'][speaker] += length
+
+        episode_length_ms = episode_frontmatter['length_second'] * 1000
+        if ms_sum < episode_length_ms:
+            leftover_ms = episode_length_ms - ms_sum
+            speaking_time['Unbekannt'] = leftover_ms
+            overall_speaking_time['speaker']['Unbekannt'] += leftover_ms
+
+        # Sort overall speaking time
+        overall_speaking_time['speaker'] = dict(sorted(overall_speaking_time['speaker'].items(), key=lambda item: item[1], reverse=True))
+
+        # Sort speaking time
+        sorted_speaking_time = dict(sorted(speaking_time.items(), key=lambda item: item[1], reverse=True))
+        episode_speaking_time.append({
+            'speaking': sorted_speaking_time,
+            'title': episode_frontmatter['title'],
+            'pubDate': episode_frontmatter['pubDate'],
+            'length_second': episode_frontmatter['length_second'],
+        })
+
+    # Sort episodes by publishing date
+    sorted_episode_speaking_time = sorted(episode_speaking_time, key=lambda d: d['pubDate'], reverse=True) 
+
+    return sorted_episode_speaking_time, overall_speaking_time
 
 def build_tags_statistics(file_path) -> dict:
     """
@@ -132,41 +213,72 @@ def get_time_human_readable(seconds, granularity=4) -> str:
     return ', '.join(result[:granularity])
 
 
-def get_correct_path(p) -> str:
-    # Determine if the script is called from root
-    # or from the scripts directory.
-    directory_path = os.getcwd()
-    folder_name = os.path.basename(directory_path)
-    if folder_name == "scripts":
-        p = f"../{p}"
-
-    return p
-
-
-def print_stats(stats):
+def print_podcast_episode_stats(stats):
     seconds_per_episode_avg = stats['total_length_seconds'] / stats['number_of_episodes']
 
-    print("Engineering Kiosk Summary")
-    print("=========================")
-    print("Podcast")
-    print('-----------------')
-    print(f"Available on platforms: {stats['number_of_plattforms']}")
-    print(f"Platforms: {stats['plattforms']}")
     print("")
     print("Podcast Episodes")
-    print('-----------------')
+    print_headline_spacer()
     print(f"Number of episodes: {stats['number_of_episodes']}")
     print(f"Total length of content: {get_time_human_readable(stats['total_length_seconds'])}")
     print(f"Avg of episode length: {get_time_human_readable(seconds_per_episode_avg)}")
     print(f"Number of tags: {stats['total_num_tags']}")
     print(f"Top 5 tags:")
     for v in stats['top_5_tags']:
-         print(f"\t{v}")
+        print(f"\t{v}")
+
+
+def print_podcast_stats(stats):
+    print("Podcast")
+    print_headline_spacer()
+    print(f"Available on platforms: {stats['number_of_plattforms']}")
+    print(f"Platforms: {stats['plattforms']}")
+
+
+def print_blog_post_stats(stats):
     print("")
     print("Blog posts")
-    print('-----------------')
+    print_headline_spacer()
     print(f"Number of blog posts: {stats['number_of_blog_posts']}")
 
+
+def print_episode_speaking_time(episode_speaking_stats):
+    print("")
+    print("Podcast Episode Speaking Time")
+    print_headline_spacer()
+
+    for title, episode in enumerate(episode_speaking_stats):
+        print(f"{episode['title']} ({episode['pubDate']})")
+
+        for name, length_in_ms in episode['speaking'].items():
+            length_in_s = round(length_in_ms / 1000, 0)
+            length_in_s = int(length_in_s)
+
+            percent = (length_in_s / episode['length_second']) * 100
+            percent = round(percent, 2)
+
+            print(f"\t{name}: {percent}% / {get_time_human_readable(length_in_s)}")
+
+        print("")
+
+
+def print_overall_speaking_time(overall_speaking_stats):
+    print("")
+    print("Podcast Overall Speaking Time")
+    print_headline_spacer()
+
+    for name, length_in_ms in overall_speaking_stats['speaker'].items():
+        length_in_s = round(length_in_ms / 1000, 0)
+        length_in_s = int(length_in_s)
+
+        percent = (length_in_s / overall_speaking_stats['total_length_s']) * 100
+        percent = round(percent, 2)
+
+        print(f"\t{name}: {percent}% / {get_time_human_readable(length_in_s)}")
+
+
+def print_headline_spacer():
+    print('-----------------')
 
 if __name__ == "__main__":
     # Setup logger
@@ -178,18 +290,22 @@ if __name__ == "__main__":
         ]
     )
 
-    stats = dict()
-
     # Collecting data
-    episode_stats = build_episode_statistics(get_correct_path(PATH_EPISODE_MARKDOWN_FILES))
-    blog_stats = build_blog_statistics(get_correct_path(PATH_BLOG_MARKDOWN_FILES))
-    tags_stats = build_tags_statistics(get_correct_path(PATH_TAGS_JSON_FILE))
-    podcast_stats = build_podcast_statistics(get_correct_path(PATH_PODCAST_INFO_JSON_FILE))
+    episode_stats = build_episode_statistics(build_correct_file_path(PATH_EPISODE_MARKDOWN_FILES))
+    episode_speaking_stats, overall_speaking_stats = build_episode_speaking_time_statistics(build_correct_file_path(PATH_EPISODE_MARKDOWN_FILES))
+    blog_stats = build_blog_statistics(build_correct_file_path(PATH_BLOG_MARKDOWN_FILES))
+    tags_stats = build_tags_statistics(build_correct_file_path(PATH_TAGS_JSON_FILE))
+    podcast_stats = build_podcast_statistics(build_correct_file_path(PATH_PODCAST_INFO_JSON_FILE))
     
     # Merging dicts
-    stats = stats | episode_stats
-    stats = stats | tags_stats
-    stats = stats | blog_stats
-    stats = stats | podcast_stats
+    podcast_episode_stats = dict()
+    podcast_episode_stats = podcast_episode_stats | episode_stats
+    podcast_episode_stats = podcast_episode_stats | tags_stats
 
-    print_stats(stats)
+    print("Engineering Kiosk Summary and statistics")
+    print("=========================")
+    print_podcast_stats(podcast_stats)
+    print_blog_post_stats(blog_stats)
+    print_podcast_episode_stats(podcast_episode_stats)
+    print_overall_speaking_time(overall_speaking_stats)
+    print_episode_speaking_time(episode_speaking_stats)
