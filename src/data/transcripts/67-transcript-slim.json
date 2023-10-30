@@ -1,0 +1,1346 @@
+{
+    "language_code": "de",
+    "audio_url": "https://audio1.redcircle.com/episodes/58fdd413-682b-4428-84f0-bb691e5daacb/stream.mp3",
+    "punctuate": true,
+    "format_text": true,
+    "dual_channel": false,
+    "webhook_url": null,
+    "webhook_auth_header_name": null,
+    "webhook_auth_header_value": null,
+    "audio_start_from": null,
+    "audio_end_at": null,
+    "word_boost": [],
+    "boost_param": null,
+    "filter_profanity": false,
+    "redact_pii": false,
+    "redact_pii_audio": false,
+    "redact_pii_policies": null,
+    "redact_pii_sub": null,
+    "speaker_labels": true,
+    "speakers_expected": 2,
+    "content_safety": false,
+    "content_safety_confidence": null,
+    "iab_categories": false,
+    "custom_spelling": null,
+    "disfluencies": false,
+    "sentiment_analysis": false,
+    "auto_chapters": false,
+    "entity_detection": false,
+    "summarization": false,
+    "summary_model": null,
+    "summary_type": null,
+    "auto_highlights": false,
+    "language_detection": false,
+    "speech_threshold": null,
+    "id": "624p481e40-053d-4be4-a1e6-ec1f3d33a5ef",
+    "status": "completed",
+    "error": null,
+    "utterances": [
+        {
+            "text": "Wie sehr nervt dich eigentlich eine langsame Webseite? Also eine, die so richtig lange braucht, um die ersten Informationen anzuzeigen. Mich nervt das schon so richtig. Und deswegen sprechen wir heute mal über den Grund, warum die meisten Websites im Internet nicht mehr langsam sind. Wir sprechen über Content Delivery Networks. Angetreten, um einzelne Server bzw. Webseiten vor Überlastung zu schützen, bilden diese heutzutage das unsichtbare Netz, welches uns Dateien schnell ausliefert. Aber was sind CDNs eigentlich genau? Welche Arten von CDNs gibt es und was ist ein Point of Presence und wie unterscheidet sich dies zu einer Edge-Location? Wie hängt das Thema mit GDPR bzw. DSGVO zusammen? Und überhaupt, sollte ich ein CDN verwenden und wie würde ich das Ganze eigentlich in meine App integrieren? Darum geht es heute. Wir legen sofort los. Viel Spaß dabei. Vor kurzem haben wir uns relativ viel über Proxys unterhalten. Forward-Proxys, Reverse-Proxys, Socks-Proxys und so weiter und so fort. Und da haben wir relativ gutes Feedback bekommen. Unter anderem auch von Thomas vom Index-Out-of-Bound-Podcast. Alle Hörerinnen und Hörer, die mal so langsam die Schnauze voll haben von dem Österreicher und dem Typen aus dem Ruhrpott trotzdem was über Software-Engineering lernen wollen, geht mal rüber zu den Jungs von Index-Out-of-Bounds. Die machen auch ziemlich guten Content. Sehr empfehlenswert.",
+            "start": 4981,
+            "end": 87382,
+            "confidence": 0.8201635514018691,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Ziemlich guten Content. Ziemlich ist so der kleine Freund von Scheiße, oder?",
+            "start": 87422,
+            "end": 91866,
+            "confidence": 0.7890833333333332,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Nee, das ist nett oder schmeckt interessant oder sowas.",
+            "start": 91906,
+            "end": 95469,
+            "confidence": 0.8332222222222222,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Okay, passt. Also, wir finden auch sehr guten Content.",
+            "start": 95529,
+            "end": 98632,
+            "confidence": 0.6891111111111111,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Ziemlich gut ist wirklich schon ziemlich gut.",
+            "start": 98672,
+            "end": 100893,
+            "confidence": 0.8812857142857142,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Da sind wir wieder dabei, dass Deutsche, wenn sie nicht meckern, eigentlich sehr glücklich sind.",
+            "start": 101174,
+            "end": 106278,
+            "confidence": 0.6477333333333334,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Ich muss schon sagen, ich bin Stammhörer und höre wirklich jede Folge. Ich freu mich immer, wenn eine neue Episode rauskommt. Auch über Themen, von denen ich keine Ahnung hab, wie die letzte Folge war, Designsysteme oder ähnliches.",
+            "start": 107231,
+            "end": 117145,
+            "confidence": 0.7739999999999999,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Okay, also was war das Feedback von Thomas?",
+            "start": 117709,
+            "end": 120071,
+            "confidence": 0.7182499999999999,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Thomas hat gefragt, ob wir mal eine Folge über CDNs machen könnten. Da wäre er uns sehr dankbar. Er fragt sich oft, wie diese sich in bestehende Systeme mit lokalem Filesystem integrieren und migrieren lassen, was die ganze Sache mit Cross-Origin und DSGVO zu tun hat und ob man CDNs überhaupt nutzen sollte.",
+            "start": 120111,
+            "end": 141449,
+            "confidence": 0.8703207547169812,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Und darum machen wir das heute mal. Wir sind ja so hörig. Ist das ein Wort? Hörig?",
+            "start": 141489,
+            "end": 146052,
+            "confidence": 0.7215294117647059,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "In Deutschland glaube ich nicht.",
+            "start": 146092,
+            "end": 146913,
+            "confidence": 0.4109999999999999,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Sag mal denn, wenn man so unterdatenmäßig sofort agiert, wie wir das natürlich immer machen, wenn wir User-Anfragen bekommen.",
+            "start": 147210,
+            "end": 154076,
+            "confidence": 0.8617368421052632,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Wir machen es natürlich nicht nur, weil die Hörer und Hörerinnen danach fragen, sondern auch, weil wir da auch Bock drauf haben. Ich meine, CDNs sind, wenn man so möchte, eigentlich die Proxyfolge 2.0 so ein bisschen. Man könnte auch sagen, CDN sind die neuen Proxys.",
+            "start": 154096,
+            "end": 167287,
+            "confidence": 0.8024130434782609,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Also hörig gibt es als Wort an jemanden oder etwas triebhaft sexuell stark gebunden von ihm völlig bis zur willenlosen Unterwerfung abhängig. Passt doch gut, oder? Also wir sind hörig, wenn es um Feedback von unseren HörerInnen geht.",
+            "start": 168047,
+            "end": 181273,
+            "confidence": 0.8312894736842104,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Aber ich hab grad auch super viele Abkürzungen genannt. CDNs, DSGVO. Für alle, die noch nicht mitkommen, CDNs, heute geht's um Content Delivery Networks. Und DSGVO steht für Datenschutzgrundverordnung, glaub ich. Ist das richtig?",
+            "start": 181650,
+            "end": 199047,
+            "confidence": 0.8293823529411765,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Ich hab keine Ahnung, aber klingt plausibel, ja.",
+            "start": 199327,
+            "end": 201990,
+            "confidence": 0.477,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Naja, aber die ganze Folge wird sich jetzt nicht um DSGVO und um deutsche Gesetze kümmern, weil das ist dann langweilig, finde ich. CDNs finde ich viel spannender. Aber Wolfgang, was war eigentlich dein letzter Berührungspunkt mit Content Delivery Networks?",
+            "start": 202702,
+            "end": 215355,
+            "confidence": 0.7699249999999997,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Ja, schön, dass du DSGVO sagst, weil mein letzter Berührungspunkt war genau die DSGVO, die übrigens nicht ein deutsches Gesetz ist, sondern ein europäisches Gesetz. Und zwar ist vor einiger Zeit, ich habe schon öfters von meinem Site Project F Online erzählt, von dieser Online-Führerscheinplattform, von dieser österreichischen. ist ein netter Anwaltsbrief eingedrohlt bei uns, der uns abgemahnt hat wegen den Google-Fonds und dass wir Google-Fonds einbinden. Haben wahrscheinlich schon viele gehört, es geht zurück auf ein Münchner Urteil und dieses Urteil hat definiert, dass Schadensersatz gezahlt werden muss, weil jemand verletzt wurde durch die Weitergabe der IP an amerikanische Server über die Google-Fonds. Und das Nette an der Geschichte ist eigentlich, wir sind ja ein kleines Team und unsere Learning Page wurde von einem von unserem Team gerade kürzlich neu gemacht und ich hab mir natürlich gedacht, ha, der hat jetzt Google Fonts eingebunden und hab den Mischer angeschrieben mit dem Brief und hab ihm gesagt, super, jetzt haben wir da eine Abmahnung, weil wir Google Fonts eingebunden haben. Da war auch so ein HTML-Code abgebildet auf der Abmahnung. Hab gesehen, okay, das ist unser HTML-Code, schön komprimiert. Hat man wenig rausgelesen, aber ich hab halt gesehen, f-online, eindeutig unser HTML-Code von der Startseite. Und dann schreibt mir der Mischer wenig später zurück und sagt, wir haben keine Google-Funds eingebunden. Es existiert nirgends bei uns. Haben gedacht, gibt's ja nicht. Bin nur durch unseren Source-Code durchgegangen. Keine Google-Funds eingebunden. Also sogar diese Abmahnwelle war so schlecht gemacht, dass sie scheinbar irgendwo bei uns irgendwas gefunden hat, was für sie ein Zeichen war, dass wir irgendwo Google-Funds eingebunden haben. Dahinter steckt übrigens ein Rechtsanwalt, der diese Abmahnschreiben massenweise ausgesendet hat. Mittlerweile ist es bei der Wirtschaftskorruptionsstaatsanwaltschaft, die eigentlich erst ab 5 Millionen Euro Schaden überhaupt aktiv wird, aber der Rechtsanwalt hat scheinbar mindestens, aus der Zahl lässt sich das ableiten, mindestens 26.000 Schreiben rausgesendet. Ich habe was gelesen, man vermutet um die 60.000 Schreiben, wenn man das auf Deutschland mit dem üblichen Faktor 10 von den Einwohnern umrechnen würde, wären das 600.000 Abmahnungen, die da quasi dann rausgegangen sind. Also es haben sehr viele Leute in Österreich diese Abmahnung bekommen.",
+            "start": 216280,
+            "end": 349278,
+            "confidence": 0.7945444444444436,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Der Kollege Anwalt hat dann da irgendwas gescrapet oder halt auch nicht.",
+            "start": 349703,
+            "end": 352845,
+            "confidence": 0.8073333333333332,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Oder schlecht scheinbar, ja genau.",
+            "start": 352905,
+            "end": 355767,
+            "confidence": 0.6157999999999999,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Ich frage mich aber bis heute, was hat das mit CDN zu tun?",
+            "start": 355807,
+            "end": 358409,
+            "confidence": 0.8786923076923077,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Ja, das Grundproblem ist natürlich, dass dieser Rechtsspruch aus München natürlich valide ist und der wurde wegen Google Fonts ausgesprochen und Google Fonts liegen eigentlich in einem CDN, das man in die eigene Webseite dann einbindet. Das heißt, wenn man so externe Libraries einbindet, kennt wahrscheinlich jeder, der mal eine Webseite gemacht hat, eine JavaScript Library, Google Fonts, irgendwelche Bilder, dann liegen diese Daten eigentlich in einer CDN, liegen also irgendwo extern auf irgendwelchen Servern und die bindet man dann in die Webseite ein. Man kann das natürlich auch mit eigenen Dateien machen, mit eigenen Bildern. Aber da kommen wir später noch drauf zu sprechen. Aber das ist natürlich schon ein großes Grundproblem und darum hat der Thomas auch die DSGVO angesprochen.",
+            "start": 358449,
+            "end": 400490,
+            "confidence": 0.864827868852459,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Also sagst du eigentlich, Google stellt einen Dienst bereit, über den du Font-Files, also Web-Fonts einbinden kannst in dein CSS oder ähnliches. Und diese Fontfiles werden über Googles Netzwerk bereitgestellt, dass du diese Fonts nicht selber hosten musst. Aber weil du diese Files ja dann bei deinem Webseitenaufruf automatisch mit requestest, sammelt Google dadurch auch weitere Webseitendaten. Ist das richtig?",
+            "start": 401331,
+            "end": 428763,
+            "confidence": 0.8235333333333333,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Also die IP-Adressen, es geht in dem Rechtsspruch von München wirklich um die IP-Adresse, dass diese Person sich geschädigt gefühlt hat, die geklagt hat, dass die eigene IP-Adresse auf amerikanischen Servern protokolliert wird und hat Recht bekommen, diese Person. Also da geht es um keine Namen, Adresse oder sonstige Daten, sondern wirklich nur um die IP-Adresse, die zu den personenbezogenen Daten gehört.",
+            "start": 429283,
+            "end": 452478,
+            "confidence": 0.8866129032258065,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Okay, also eigentlich hat dieses Rechtsurteil gar nichts mit Google Fonts selbst zu tun, ist das richtig? Also es ging nicht um den Font, sondern es kann auch, wenn ich jQuery von einem ramekanischen Server in meine Website einbinde, ist das das gleiche Problem.",
+            "start": 453038,
+            "end": 467034,
+            "confidence": 0.8146363636363637,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Es ist um das Einbinden gegangen, um die Technik hinter der Einbindung, um das Verwenden von einem CDN, auf gut Deutsch.",
+            "start": 467074,
+            "end": 473562,
+            "confidence": 0.8718095238095239,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Jetzt sind wir hier schon so tief drin. Erklär uns mal bitte, was sind denn CDNs? Was sind denn Content Delivery Networks oder auch Content Distribution Networks?",
+            "start": 473917,
+            "end": 484264,
+            "confidence": 0.7838888888888886,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Also vielleicht bleiben wir gleich bei dem Beispiel. Wenn du eine externe JS Library zum Beispiel einbindest, ganz klassisch sind da jsdeliver.com oder unpackage.com. Das sind so Services, die man auf Webseiten irgendwo liest. Du kannst jQuery einbinden oder irgendeine andere JavaScript-Lib. Verwende einfach diese URL, binde das im HTML-Code ein und du kannst es direkt verwenden, ohne dass du es auf deinem Server hosten musst. Also im Prinzip sind CDNs. Fremde Server, wo Daten vorliegen. Das können deine eigenen Bilder sein, die du dort ablegst. Das können JavaScript-Libraries sein. Das können auch größere Dienste sein, wie Google Analytics oder irgendwelche anderen Tracker. Das kann eine Google Font sein. Kann also alles Mögliche sein. Und meistens ist es natürlich so, dass es nicht nur ein Server ist, und darum spricht man eben von Content Delivery Networks, sondern es sind ganz viele Server, die weltweit verteilt sind. um den Globus und du verwendest immer den Server, der am nähesten zu dir ist. Das heißt, du hast wahrscheinlich irgendwo in Duisburg einen Server stehen von Google und dort liegen auch die Google Fonts bereit für dich und du gehst da nicht nach San Francisco zu einem Server von Google, sondern zu dem Duisburger Server, wo die Google Fonts dann drauf liegen. Und wenn dann der Duisburger Server so stabil ist wie alles in Duisburg und wieder mal tot ist, dann hüpfst du einfach weiter zum Düsseldorfer Server, der läuft natürlich, und holst dir die Google Fonts oder deine Bilder von dem Düsseldorfer Server.",
+            "start": 484284,
+            "end": 571566,
+            "confidence": 0.8048844621513944,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Ich mag dein Vertrauen in Duisburg. Wenn in Duisburg ein Google Server stehen würde, würde mich das, glaube ich, stark wundern. Aber ich finde das schön, dass du Duisburg erwähnst, aber ich glaube schon eher, die haben eher ein paar Server in Düsseldorf.",
+            "start": 571947,
+            "end": 584855,
+            "confidence": 0.7156511627906977,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Aber wenn man, wenn man zum Beispiel Akamai ist einer der größten, wenn nicht der größte CDN Provider, die behaupten zumindest, dass sie 350.000 Server in 134 Ländern stehen haben und in über 1300 Netzwerken drin sind. Also da könnte schon in Duisburg auch ein Server stehen.",
+            "start": 585335,
+            "end": 604091,
+            "confidence": 0.823404255319149,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Wolfgang hat natürlich recht. Also das sind Servergruppen, die geografisch verteilt sind und relativ nah am Endklienten, also an euch, sind und relativ nah bedeutet wirklich geografisch nah, also dass euer Request von der Webseite relativ nah kilometertechnisch an dem Server steht, damit ihr nicht quer durchs Internet, quer über die Welt den DNS- und HTTP-Request senden müsst, nur um eine JavaScript-Abteilung zu kriegen. Ich habe die Tage bei der Vorbereitung zu dieser Episode eine schöne Analogie gelesen, wie man sich CDNs vorstellen kann. Und zwar kann man sich ein CDN wie ein Geldautomat vorstellen. Es gibt ein Geldautomat praktisch an jeder Ecke und man kommt schnell und effizient an Geld, sofern man denn Geld hat. Ist doch logisch, ne? Aber lange Wartezeiten sind nicht erforderlich und die Geldautomaten befinden sich an vielen günstigen Orten, damit sie sofort darauf zugreifen können. CDNs sind ja eigentlich dasselbe. Also das bedeutet, wenn ich quer durchs Internet surfe, an vielen günstigen Orten sind sogenannte POPs, Point of Presence, also Server, Servergruppen, die das JavaScript, was ich gerade haben möchte, vorliegen haben und liefern mir das aus. Und das fand ich eine ganz schöne Analyse.",
+            "start": 604391,
+            "end": 677915,
+            "confidence": 0.8268272251308906,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Nur dass halt das Geld dann weg ist, wenn du es einmal abhebst, wenn du die JavaScript-Lib abrufst, die ist natürlich noch immer da und wird für den nächsten User dann auch wieder zur Verfügung gestellt.",
+            "start": 677935,
+            "end": 686798,
+            "confidence": 0.7953888888888891,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Ich würde sagen, das kommt auch an, wie viel Geld du hast, aber ja.",
+            "start": 687578,
+            "end": 690561,
+            "confidence": 0.6040714285714286,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Naja, grundsätzlich das Geld, was abgehoben ist, ist mal weg. Aber was natürlich schon interessant ist, es gibt eine Verbindung zu einem zentralen Server von jedem Geldautomat, weil du musst dir irgendwo abfragen, ob das Geld zur Verfügung steht und das ist bei einem CDN üblicherweise auch so. Weil wenn du jetzt eine CDN verwendest, um deine Bilder auf der Webseite abzulegen, weil du hast eine große Webseite, die beliebt ist, einen Blog, der weltweit gelesen wird, dann wirst du das vielleicht auch schneller deliveren, diese Bilder, und verwendest für deinen Blog eine CDN. Dann wird jetzt natürlich nicht, sobald du da ein Bild auf deinen Blog hochlädst, auf 350.000 Servern von Akamai dieses Bild ausgeliefert. sondern wenn jemand in China zum Beispiel jetzt den Blog-Eintrag liest und das Bild nicht verfügbar ist auf dem Edge-Node, also auf diesem Knoten in China, möglichst nahe an dem User dran, dann wird das Bild auf deinem eigentlichen Server in Deutschland zum Beispiel abgerufen und in China abgelegt. Und der nächste User, der dann kommt, der bekommt es dann aus dem Cache, aus dem chinesischen Cache sozusagen ausgeliefert und das Ganze ist dann schneller.",
+            "start": 690601,
+            "end": 753380,
+            "confidence": 0.8204764397905759,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Was du jetzt gerade beschrieben hast, ist ein sogenanntes Pull-CDN oder ein CDN, was du als Kunde im Pull-Modus verwendest. Es gibt natürlich dann auch noch das Gegenteil, ein Push-CDN, kommen wir aber dann gleich noch zu. Was noch interessant ist, ist eigentlich, warum CDNs eigentlich erfunden wurden. Bevor es CDNs gab, hatte man einen Server oder eine Gruppe an Servern, die all deine Daten, Ressourcen oder sogenannte Assets verfügbar hatte. Assets sind eigentlich, ist der Oberbegriff für Bilder, JavaScript, CSS, sowas halt. Und wenn jetzt ganz viele Requests auf deine Webseite kommen, die wollen ja alle diese Dateien haben. Früher nannte man das den Slashdot-Effekt. Also es gab eine Webseite, die nannte sich Slashdot. Und wenn man da drauf war, auf der Startseite, Genauso wie heutzutage, wenn du auf der Startseite von Reddit bist oder auf der Startseite von Hacker News, dann kriegst du relativ viele und wirklich vier, fünf, sechsstellige Anzahl an Requests in wenigen Minuten. Und das kann mal deinen Server wirklich zerstören. Das kann den wirklich einbrechen lassen. CDNs helfen dann natürlich, um die Netzwerküberlastung zu lösen, zu verhindern, weil natürlich dann die Bereitstellung von umfangreichen Webinhalten wie Grafiken, Videos, Assets natürlich verteilt wird, ja? Auf deinen Server kommen dann nur die Anfragen für deinen realen Content, für die Texte, fürs HTML oder für die Rechenpower, falls du dynamische Inhalte hast. Aber alles weitere, Videos, CSS, JavaScript, Font und so weiter, kann dann natürlich geografisch verteilt vom CDN ausgeliefert werden. Und da ist dann nicht immer nur die CDN-Note in Deutschland oder in Düsseldorf beziehungsweise in Duisburg gefragt, sondern auch wirklich da an den Point-of-Presence, an den Pops wo die Clients natürlich sitzen. San Francisco, Japan, Antarktis und so weiter.",
+            "start": 753720,
+            "end": 859274,
+            "confidence": 0.8232992957746487,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Du hast schon richtig gesagt, dynamische Inhalte sind dann eher auf den eigentlichen Servern zu finden, also auf deinem eigenen Server. Gibt zwar natürlich auch noch andere Möglichkeiten, es muss nicht so sein, kommen wir später eh noch dazu. Aber wichtig ist natürlich, dass im CDN meistens zumindest statische Daten vorliegen. Und das kann natürlich auch die HTML-Seite sein, wenn man zum Beispiel einen Static Site Generator verwendet für seinen Blog. Haben wir eine eigene Episode gemacht. Verlinken wir natürlich auch in den Show Notes. dann hat man ja eigentlich nur statische Assets oder statische Informationen. Da sprechen wir jetzt nicht nur von den Bildern, sondern auch von den HTML Dateien, von den Blogeinträgen selbst. Und da können natürlich 100% aller Daten, wenn die alle statisch sind, zu 100% im CDN liegen und der eigentliche Server hat eigentlich dann fast überhaupt keinen Traffic mehr. sondern die gesamte Webseite, der gesamte Blog wird einfach verteilt, weltweit verteilt und liegt in der CDN und für wahrscheinlich 90% der User wird der Content wirklich zu 100% aus der CDN, von den CDN-Edgenodes ausgeliefert.",
+            "start": 859314,
+            "end": 922653,
+            "confidence": 0.8374833333333337,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Jetzt reden wir schon die ganze Zeit über diesen Begriff CDN, Content Delivery Network, Content Distribution Network, aber inzwischen hat sich die ganze Sache natürlich ein bisschen weiterentwickelt. CDN ist eher so ein Oberbegriff für verschiedene Arten von Diensten, weil CDN macht heutzutage auch sowas wie Video Streaming, Software Downloads, also das bedeutet, wenn du irgendwie Software aus dem Release Tab von GitHub runterlädst, dann kommt die ganze Sache auch aus dem CDN. Es macht natürlich auch transparentes Caching von Assets, aber CDNs werden unter anderem auch dafür genutzt, um Internet-Speed-Messungen durchzuführen, Lastausgleich zu fahren. Teilweise sind diese Teil einer Multi-CDN-Strategie oder helfen auch bei Analysen, wie wird das Internet verwendet, von wo wird das Internet gerade verwendet oder bei so Geschichten wie Threat Detection im Sicherheitsbereich. Also da gibt es inzwischen sehr, sehr viele Anwendungsfälle. Doch wenn man jetzt im normalen Internet- Diskussionsforum rundturnt, dann heißt CDN eigentlich, okay, transparenter, geografisch verteilter Cache von sogenannten Assets. Ich kann mich noch früher an meine Webagenturzeit erinnern. Und zwar war das so die Zeit, als jQuery grade kam. Also, das war so kurz nach der Zeit, als Prototype.js und Scriptaculous da war. Da kam jQuery, das war so der neue heiße Scheiß. Und dann war ... Also, das war ganz, ganz weit vorne vor Webpack und Babel und wie sie alle heißen. Da hieß es immer, Andi, binde doch mal jQuery bitte vom CDN ein. Und da hab ich dann natürlich die ganze jQuery-Library eingebunden Die Argumentation, die damals immer genutzt wurde, war, wenn du jetzt jQuery auf deiner Webseite einbindest und der Wolfgang war vorher auf AOL.com und AOL.com hat die gleiche jQuery-Version von dem gleichen jQuery-CDN eingebunden und du kommst dann auf meine Webseite, dann musst du diese jQuery-Datei nicht mehr runterladen, weil du hast die ja schon im Browser-Cache.",
+            "start": 922933,
+            "end": 1037275,
+            "confidence": 0.8173421926910298,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Und das ist eine falsche Argumentation, meinst du?",
+            "start": 1037849,
+            "end": 1040111,
+            "confidence": 0.49662500000000004,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Nee, die Argumentation ist immer noch richtig. Und jetzt so Sachen für Google Phongs und so weiter, stimmt das. Ob das jetzt für JavaScript noch so stimmt, würde ich mal hinterfragen. Weil es ist ja inzwischen so, dass mit dem neuen Build-Stack von JavaScript, die gehen ja sogar so weit, dass du nur noch die Teile von jQuery einbindest, die du dann auch wirklich nutzt. Die werden in neue Dateien, in sogenannten Chunks, kompiliert, transpiliert und so weiter und du hast dann ja wirklich nur noch deine uniken javascript files die in deinem.",
+            "start": 1040151,
+            "end": 1072492,
+            "confidence": 0.8456451612903222,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Bildprozess dabei sind Es kommt natürlich immer darauf an, was du für ein Framework verwendest und ob du solche Mechanismen drin hast. Ich würde mal schon sagen, für einen sehr hohen Prozentsatz der Webseiten trifft es schon noch zu, dass da einfach die Standard-Google-Funds, die Standard-JavaScript-Libs, die Standard-Google-Analytics-Libs, solche Dinge eingebunden sind. Und die können dann wirklich vom Browser gecached werden, wenn sie von mehreren Seiten eingebunden werden. Ob das wirklich so viel Zeit bringt, ist eine andere Geschichte, vor allem wenn dann die eigentliche Webseite sowieso zweieinhalb Megabyte hat oder so und dann spart man sich da irgendwo eine 30 Kilobyte Library noch zu laden, sei mal dahingestellt. Also ich glaube, der große Blocker ist es nicht, aber bei Webseiten, die natürlich extrem auf die Performance achten und da optimieren und auch das Letzte rausholen, kann da natürlich sowas schon sinnvoll sein unter Umständen.",
+            "start": 1072532,
+            "end": 1120111,
+            "confidence": 0.8198758620689655,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Ich muss zugeben, damals, in der Agenturzeit, war ich jetzt noch nicht so drauf, als hab ich mich da wirklich tief mit beschäftigt, ob das jetzt wirklich so ist und wie viel meiner Requests kommen aus dem Browser-Cache. Da hatte ich so was wie RUM, also RUM hatte ich schon, ja, aber in Flaschenform. Ich rede jetzt hier von RUM mit Real User Monitoring, also Statistiken, Frontend-Statistiken, so was hatte ich da leider noch nicht. Ich hätte das gern mal gewusst. Aber damals hab ich mir die Frage auch nicht gestellt, das ist so 15 Jahre her.",
+            "start": 1120651,
+            "end": 1148406,
+            "confidence": 0.7774536082474229,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Was natürlich schon auch ein Problem ist, du hast natürlich einerseits einen Geschwindigkeitsvorteil, aber du hast auf der anderen Seite auch einen Geschwindigkeitsnachteil, wenn die CDN ein Problem hat. Und ich hatte das zum Beispiel selbst bei Open Podcast, bei der Dokumentation von unserem Open Source Projekt, bei dieser Webseite, da finden wir ein paar Sachen von unpackaged.com ein und die hatten mal ein Problem immer wieder, scheinbar in Deutschland primär, weil es haben sich deutsche Leute beschwert, dass einfach die Webseite nicht lädt und da ist nur eine weiße Seite. Und am Ende war das Problem, dass da JavaScript Libraries eben nicht nachgeladen wurden von unpackage.com oder sogar von speziellen Edge Nodes und da hat es scheinbar keinen Fallback gegeben oder da war keine Ahnung, was das Problem am Ende war. Also man muss sich schon auch vor Augen führen, gerade wenn man so kostenlose Angebote nutzt, dass man da natürlich auch unter Umständen zu 100 Prozent abhängig ist und umso mehr man einbindet, weil vielleicht bindet man da zehn verschiedene Quellen ein, weil es halt gerade einfach ist, dann ist halt die Chance auch zehnmal so hoch, dass wenn irgendwo was nicht klappt, dass unter Umständen die ganze Webseite nicht mehr funktioniert.",
+            "start": 1149987,
+            "end": 1214121,
+            "confidence": 0.8265049019607843,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Stimmt schon. Den Vorteil, du hast schnellere Ladezeiten, kannst du dir in gewissen Szenarien dann auch zunichte machen, wenn das CDN down ist, weil dann ist es deutlich langsamer. Das stimmt schon. Es ist aber auch so, dass du so was natürlich durch eine Multi-CDN-Strategie mitigaten kannst.",
+            "start": 1214641,
+            "end": 1229350,
+            "confidence": 0.7725531914893619,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Was ist denn eine multiple CDN-Strategie? Klingt so nach Consultant-Lingo.",
+            "start": 1229390,
+            "end": 1235413,
+            "confidence": 0.6263000000000001,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Ach so, nee, da geht's einfach nur darum, dass du einfach mehrere CDNs in deinem Stack hast.",
+            "start": 1235473,
+            "end": 1239856,
+            "confidence": 0.7622352941176471,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Aber die alle das Gleiche liefern, meinst du? Ja, aber woher weiß ich denn, dass eine CDN down ist? Das muss ich dann manuell schalten? Oder wie kann ich denn mehrere ...",
+            "start": 1239896,
+            "end": 1250461,
+            "confidence": 0.7602500000000002,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Was du davor schaltest, ist dann halt irgendeine Art Probing oder Proxy, ja? Wenn du zum Beispiel ein DNS davor hast, ja, und gar nicht die URL vom CDN nimmst, dann kannst du es ja trotzdem mit Priorisierung machen.",
+            "start": 1250471,
+            "end": 1263155,
+            "confidence": 0.7125641025641025,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Hilft dir natürlich nur, wenn dein Proxy das mitbekommt. Wenn natürlich ein, zwei Edge-Nodes irgendwo ein Problem haben in Frankfurt, kann es natürlich sein, dass du es gar nicht mitbekommst.",
+            "start": 1263175,
+            "end": 1271417,
+            "confidence": 0.7466333333333334,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Klar, logisch. Das ist jetzt nicht mal eben so, ich mach multiple CDNs rein und schnipse mit dem Finger. Ist schon ein bisschen Arbeit, aber ich lehne mich auch immer aus dem Fenster. Es gibt ganz wenig Webseiten, die wirklich multiple CDNs aktiv im Stack haben müssen, wo sich dieser technische Aufwand wirklich lohnt. Ich will nur sagen, es ist möglich. Genauso wie bei Datenbank-Failovers kannst du auch CDN-Failovers machen.",
+            "start": 1272067,
+            "end": 1296537,
+            "confidence": 0.8541714285714285,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Hast du mal irgendwo im großen Stil eine CDN implementiert, bei einer wirklich großen Webseite?",
+            "start": 1296877,
+            "end": 1302379,
+            "confidence": 0.7611333333333333,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Das Größte, was ich jemals implementiert habe, war bei Trivago. Ich weiß nicht, ob das eine größere Webseite ist oder nicht.",
+            "start": 1302419,
+            "end": 1307881,
+            "confidence": 0.7174285714285714,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Ja, würde ich mal schon sagen, ja.",
+            "start": 1307901,
+            "end": 1310142,
+            "confidence": 0.6335714285714287,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Größere Webseite in der Hinsicht. Es war halt schon weltweit aktiv auf, weiß ich nicht, 50 Märkten oder ähnliches. Also wirklich komplett über den Kontinent, über mehrere Datacenter. Und da haben wir auch mit Akamai dann gearbeitet, genau.",
+            "start": 1310162,
+            "end": 1323867,
+            "confidence": 0.8099999999999999,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Aber was gibt es denn sonst noch für Vorteile? Warum sollte ich denn CDN überhaupt verwenden? Funktioniert ja so auch ganz gut. Und wenn es nur die Performance ist, gerade bei kleineren Projekten, ist es ja immer die große Frage, was bringt mir das überhaupt?",
+            "start": 1324147,
+            "end": 1336332,
+            "confidence": 0.7642666666666665,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Na ja, generell kannst du halt sagen, okay, durch den Einsatz eines CDNs hast du geringere Hostingkosten. Hostingkosten sind auf der einen Seite natürlich Nicht immer nur Egress-Traffic, sondern vielleicht auch Server-Performance. Also umso weniger Ressourcen du pro Anfrage ausliefern musst, umso mehr Anfragen kannst du natürlich gleichzeitig handeln, umso langsamer musst du deine Hosting-Pakete skalieren. Also in der Art kannst du schon sagen, weil du ja eigentlich Compute-Ressourcen, Auslieferungs-Ressourcen für deine kompletten Assets an das CDN abgibst. Da kann man halt schon sagen, okay, durch den Einzelhandel des CDNs hast du niedrigere Hosting-Kosten.",
+            "start": 1336352,
+            "end": 1369212,
+            "confidence": 0.7613191489361703,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Wobei man natürlich schon auch sagen muss, dass die Kosten oft ein Problem sein können, wenn man CDNs verwendet, vor allem wenn die Projekte kleiner sind. Wenn du das natürlich im großen Stile irgendwo skalierst, kann es durchaus ein Thema sein. Aber ich habe mir jetzt gerade kursig mal gecheckt, wenn du zum Beispiel einfach eine kleine VM bei Hetzner buchst, die kostet irgendwie ein paar Euro und da sind 20 Terabyte Traffic dabei. Jetzt habe ich mal schnell geschaut, Fastly zum Beispiel, ist ja auch eine sehr große CDN, dass wir auch mal andere Markennamen nennen, da kostet 20 Terabyte 250 Dollar. Also da bist du dann schon auf einem ganz anderen Level. Du bekommst natürlich auch was anderes, das ist dann nicht ein unstabiler Server, der irgendwo steht in Deutschland, sondern das sind halt dann wirklich tausende Server und du hast eine Ausfallsicherheit, andere Features noch dazu, ist ganz klar, das ist was anderes, was du dort bekommst. Aber man muss sich halt auch im Clan sein, wenn man da einen kleinen Block hat und irgendwo eine CDN einrichtet, Das kann halt auch sehr schnell sehr teuer werden, wenn man sonst nur drei, vier Euro zahlt. Und ich glaube, das ist auch so der Bereich, da wird man eh nicht drüber kommen. Und dann hat man plötzlich irgendwo auf Hacker News einen Blog-Eintrag, der steil geht. Und dann zahlst du plötzlich hunderte Dollar oder so dafür. Also auch da muss man immer aufpassen. Es ist nicht automatisch billiger, wenn man eine CDN verwendet.",
+            "start": 1369501,
+            "end": 1444325,
+            "confidence": 0.7848117647058823,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Genau, das, was du da machst, ist ja jetzt auch purer Vier-Le-Fans, ne? Du vergleichst ja ein Holland-Rad, also deine Hetzner-WM.",
+            "start": 1444785,
+            "end": 1450789,
+            "confidence": 0.7044761904761904,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Also nichts gegen Holland-Räder, sind Top-Räder.",
+            "start": 1450829,
+            "end": 1453430,
+            "confidence": 0.754,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Mit einem Lastenfahrrad mit elektronischer Unterstützung. Also, das ist halt auch Vier-Le-Fans, was du da jetzt machst. Klar, wenn du mehr Features kriegst und so weiter, du kannst ja auch nicht eine 60-Quadratmeter-Volume in einem 200-Quadratmeter-Haus vergleichen und sagen, das 200-Quadratmeter-Haus kostet mehr. Also, das geht halt auch nicht.",
+            "start": 1453470,
+            "end": 1469320,
+            "confidence": 0.7444285714285713,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Ja, aber im Endeffekt für mich als kleiner Blog-Betreiber, ich sehe vielleicht diese ganzen Features nicht und denke mir halt, ja ist cool, kann ich ein paar Bilder in die CDN legen. Läuft.",
+            "start": 1469920,
+            "end": 1479490,
+            "confidence": 0.7416363636363635,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Das ist ja die Frage, warum findest du das überhaupt cool? Also weswegen machst du das? Da würde ich sagen, Ziel verfehlt.",
+            "start": 1479530,
+            "end": 1484735,
+            "confidence": 0.636090909090909,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Ja, weil der Andi mir in dem Podcast erklärt hat, dass CDNs so toll sind natürlich.",
+            "start": 1484775,
+            "end": 1488118,
+            "confidence": 0.6575000000000001,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Nee, aber es kann eine Kostenfalle sein. Das ist genauso wie bei Netlify. Netlify hat ein Free-Tier. Da kannst du deine Static-Page hosten. Ziemlich cool. Ab einem gewissen Traffic-Level macht die aber auch dicht und fängt dann gegebenenfalls an zu chargen. Also ist halt bei den meisten Dingern so.",
+            "start": 1488418,
+            "end": 1503675,
+            "confidence": 0.6735714285714286,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Weil du gerade Netlify erwähnst, auch für F Online verwenden wir Netlify für die Learning Page und ich habe mir überlegt, okay, eigentlich könnten wir unsere Bilder, also diese ganzen Führerscheinbilder, die man da so ständig sieht, wenn man Fragen beantwortet, eigentlich könnte ich die ja in eine CDN legen. Wir wollten eh unsere ganze Struktur mal ändern. sind so um die 300 Gigabyte pro Monat, die diese Bilder ausmachen, legen wir in irgendeine CDN. Und dann habe ich mir gedacht, okay, Google Cloud ist eh ganz cool, habe ich mir schon öfters überlegt und habe das mal so grob ausgerechnet mit dem Traffic in der Google Cloud. Bin da auf ein paar Euro gekommen pro Monat, habe mir gedacht, sehr gut, mache ich. Ich habe das ganze Ding aufgesetzt und beim Aufsetzen der CDN in der Google Cloud hat mich dieser Assistant ständig gefragt, ich muss das noch aufsetzen, ich muss das noch aufsetzen und ich muss dann Reverse Proxy aufsetzen und der Reverse Proxy braucht eine Instance und ich habe da okay, okay, okay, okay. durchgeklickt und plötzlich hatte ich nach drei Tagen eine Rechnung von 20 Dollar. Und das hat natürlich überhaupt nicht mehr zusammengestimmt mit dem eigentlichen Preis, den ich mir da in dem CDN-Rechner ausgerechnet habe. Und im Endeffekt ist das Problem, dass im Hintergrund so viel nötig ist, um diesen CDN-Stack in der Google Cloud hochzufahren, dass die Basiskosten dich für ein kleines Projekt eigentlich schon umbringen. Und ihr habt das Ganze dann wieder gestoppt, den Versuch Und was ich dann im Endeffekt gemacht habe, ist jetzt ein Pro-Tipp. Ich hoffe, er ist noch lange möglich. Wenn man sehr statische Daten hat, wie zum Beispiel unsere Bilder bei diesem f-online-Projekt, dann kann man diese Bilder einfach in GitHub-Repo stecken und über Cloudflare-Pages anbieten. Cloudflare-Pages nimmt einfach die Daten aus dem GitHub-Repository und stellt es dann über die Cloudflare-CDN-Edge-Server zur Verfügung. Und das Ganze ist kostenlos. Das heißt, du bekommst diese 300 GB pro Monat über ein sehr professionelles CDN bei Cloudflare gehostet, was du bei anderen Providern teilweise wirklich für 100 Dollar oder noch höhere Preise bekommst. Also man kann da auch durchaus noch Möglichkeiten finden, die sehr gut funktionieren für kleine Projekte.",
+            "start": 1504200,
+            "end": 1628172,
+            "confidence": 0.793368563685637,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Also du schmeißt eigentlich Dienstleister auf Dienstleister auf Dienstleister, um irgendwas ein paar Euro zu sparen. Ist das richtig?",
+            "start": 1628612,
+            "end": 1634393,
+            "confidence": 0.757578947368421,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Nein, ich spare überhaupt keine Euro, weil davor ist es auch ganz einfach über Server gelaufen. Der Traffic 300 Gigabyte ist ja überall inkludiert. Aber ich wollte einfach ein stabileres Netz und die liegen sowieso extra in einem Repository, diese Bilder. Und die wollte ich einfach rausziehen und das funktioniert mit Cloudflare super. gebe ich eine Subdomain an, die wird eingebunden. Bei Bildern brauchst du nicht mal irgendwelche Courseheader oder ähnliche Dinge. Kannst du einfach extern auch einbinden und es läuft super stabil und schnell und wird so an die User schnell ausgeliefert.",
+            "start": 1635066,
+            "end": 1666326,
+            "confidence": 0.7638817204301076,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Bevor es weitergeht, kurz was in eigener Sache. Wenn dir der Engineering Kiosk Podcast gefällt, würden wir uns sehr über eine Bewertung oder über ein Subscribe auf der Podcast Plattform deiner Wahl freuen. Spotify, Amazon Music, Apple Podcast, Google Podcast oder oder oder. Empfehle uns auch gern mal weiter, zum Beispiel durch ein Post im internen Firmen Slack, Firmen Metamost, Teams Chat oder was ihr intern verwendet. Dadurch unterstützt ihr uns nicht nur, sondern es motiviert uns ungemein, dass wir regelmäßig von so vielen Leuten gehört werden. Vielen lieben Dank dafür. Falls du dich auch mit gleichgesinnten Engineering-Kiosk-Hörerinnen und Hörern sowie Wolfgang und mir austauschen möchtest, kannst du der Podcast-eigenen Community beitreten. Link findest du in den Shownotes oder auf unserer Webseite engineeringkiosk.dev. Wir freuen uns schon. Und nun geht's weiter mit dem Podcast. Der Vorteil von CDNs ist natürlich auch noch bei den Ladezeiten, dass jeder Browser nur eine limitierte Anzahl an parallelen HTTP-Requests hat. Das bedeutet, ladet ihr alle Assets, Bilder und Co. von einer Domain, werden, ich weiß jetzt gerade gar nicht, was die aktuelle Zahl an parallelen Requests im Browser ist, ich glaube 3 oder 5 oder sind wir schon bei 7, Auf jeden Fall... Ich.",
+            "start": 1668073,
+            "end": 1740058,
+            "confidence": 0.8103150000000001,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Glaube, es waren mal sieben.",
+            "start": 1740078,
+            "end": 1741279,
+            "confidence": 0.6434,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Sagen wir mal einfach, dein Browser macht sieben HTTP-Requests gleichzeitig und ihr habt 21 Ressourcen. JavaScript, Bilder, CSS, 21 Ressourcen finde ich jetzt gar nicht so fern. Dann werden dreimal sieben Requests hintereinander gechained, was natürlich den Seitenaufbau deutlich verlangsamt. Legt ihr jetzt aber eure Assets auf andere Domains, unter anderem auf Subdomains, könnt ihr diese Parallelen-Requests natürlich sharden und somit habt ihr mehr Parallelen-Requests und ladet je nach verfügbarer Bandbreite der Target-Server und des Klienten natürlich schnelleren Seitenaufbau.",
+            "start": 1741319,
+            "end": 1777407,
+            "confidence": 0.8079620253164554,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Wobei das natürlich seit HTTP 2 sowieso kein großes Thema mehr ist. Aber das ist natürlich auch ein großer Punkt. Wenn du selber einen Server hast, hast du oft kein HTTP 2, je nachdem, was du da so zur Verfügung hast und auf die Beine stellst. Die CDNs sind da aber natürlich super optimiert. Die haben HTTP 2, 3, die ganzen neuen Stacks, Protokolle, Caching-Mechanismen, weil das ist deren Hauptgeschäft. Das heißt, die können da wirklich viel optimieren. Und das wirklich super schnell machen. Und da kann man natürlich auch profitieren, dass man das selber gar nicht unbedingt alles kann, vielleicht weiß, auf die Beine stellen will. Und die CDNs machen das für einen. Und da kann man natürlich auch einen extremen Performance-Boost wieder rausholen.",
+            "start": 1778088,
+            "end": 1818446,
+            "confidence": 0.8109759999999999,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Gibt natürlich auch noch zwei andere nette Vorteile. Und zwar ist das auf der einen Seite eine höhere Sicherheit. Dann natürlich die CDNs einen Großteil des Internet-Traffic zur Verfügung stellen, sehen sie natürlich auch einen Großteil von Hacker-Attacken wie SQL-Injections, wie Distributed Denial-of-Service-Attacken oder Ähnliches und haben natürlich eine gewisse Grundsicherheit integriert, damit die nicht einfach abgeschossen werden können. Und viele CDN-Betreiber können diesen Sicherheits-Layer auch vor Webseiten schalten und bieten dann Protection für DDoS-Attacken oder Ähnliches.",
+            "start": 1818466,
+            "end": 1851507,
+            "confidence": 0.8298441558441555,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Kann natürlich auch ein Nachteil sein, weil CDNs sind natürlich beliebte Angriffsziele für Hacker und sind natürlich auch bekannt und dann kannst du dich natürlich treffen, obwohl du sonst vielleicht gar kein Ziel wärst, weil einfach irgendwelche Hacker die CDN-Edgenodes angreifen oder andere Services, Webseiten, die auf denselben Edgenodes liegen und dann bist du auf der einen Seite Nutznießer natürlich von den Sicherheitsmaßnahmen, aber wenn die Sicherheitsmaßnahmen dann mal nicht ausreichen, trifft es dich natürlich erst recht. Aber im Großen und Ganzen sind, glaub ich, CDNs besser geschützt als die eigenen Server. Das kann man schon im Allgemeinen so sagen.",
+            "start": 1851772,
+            "end": 1884938,
+            "confidence": 0.7611600000000003,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Ich glaub, das Gefährliche ist, wenn Hacker in CDNs eindringen, dass sie die Kontrolle über ausgelieferte JavaScript-Dateien haben und da zum Beispiel Bitcoin mal in den Code einschleusen können. Und ihr kriegt da gar nichts mit, weil ihr seid ja gar nicht kompromittiert. Und das kann schon sehr heftig werden. Ich hab jetzt noch von keinem großen CDN-Hack gehört, der genau so was gemacht hat. Aber nur, weil ich davon nicht gehört.",
+            "start": 1885419,
+            "end": 1905876,
+            "confidence": 0.7940694444444443,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Hab, Ich glaube auch, dass die Chance größer ist, dass das eigentliche Repository oder die grundlegenden Dateien gehackt werden und das dann so ins CDN kommt, als dass das CDN an sich gehackt wird. Weil, wie gesagt, das ist halt deren Hauptbusiness, dass die CDN sicher sind, stabil sind, überwacht werden. Also das sind schon, würde ich mal sagen, die absoluten Profis am Werk, wenn es darum geht. Insofern würde ich mal sagen, ist der Angriffsvektor eher niedriger. Also da würde ich mir um andere Einfallstore viel größere Sorgen machen.",
+            "start": 1905896,
+            "end": 1936985,
+            "confidence": 0.8078,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Ja, und CDNs haben natürlich einen riesen Spielraum für Analysen. Da die für den Großteil des Datenverkehrs im Internet verantwortlich sind, können sie halt natürlich genau sagen, welcher Request kommt von wo und so weiter und so fort.",
+            "start": 1937652,
+            "end": 1949667,
+            "confidence": 0.8048684210526316,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Die können das machen, ohne jetzt irgendwie großen JavaScript wie Google Analytics oder so einzubinden. Du hast natürlich nicht dieselbe Qualität an Statistiken, aber zumindest mal so Zugriffsstatistiken und so weiter. Wenn die Serverseite erhoben wird, ist das normalerweise auch GDPR-konform, wenn das zumindestens in Europa passiert und die DSGVO eingehalten wird, aber davon geht es mal aus, dass das ein sinnvolles Service ist.",
+            "start": 1949687,
+            "end": 1970710,
+            "confidence": 0.8190312500000001,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Zwei Nachteile, die so ein bisschen Hand in Hand gehen, ist auf der einen Seite natürlich durch die Integration eines CDNs hast du einen höheren Aufwand, also eine höhere Komplexität, das muss eingerichtet werden, das muss betrieben werden und so weiter und so fort.",
+            "start": 1971070,
+            "end": 1982181,
+            "confidence": 0.7729545454545454,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Aber ich finde das teilweise auch gar nicht so schlecht, weil wenn man das schön separiert, dann macht das die Sache unter Umständen auch leichter. Weil sonst hat man alles gemischt, vielleicht HTML-Code, Bilder, PHP-Code, was auch immer, alles in einem Repository, muss alles gleich ausliefern. Das ist so wie ein Monolithen zu haben eigentlich. Und wenn man das aber ein bisschen sauberer aufteilt, dass man sagt, okay, man legt die ganzen Bilder, die sehr viel Traffic verursachen, in ein eigenes Repository, lagert das irgendwie aus, lagert das in ein CDN aus, splittet das Ganze ein bisschen, dann kann das eigentlich den Aufwand im Endeffekt auch reduzieren und die Komplexität ein bisschen, vor allem wenn es um Skalierung geht, die Komplexität eigentlich reduzieren. Weil ganz oft denkt man sich dann, man braucht irgendwie Skalierung bei der Applikation und dabei ist es einfach nur der Traffic, der auf die Bilder geht oder auf die Videos oder was man sonst für große Assets auch auf der Webseite hat.",
+            "start": 1982221,
+            "end": 2031428,
+            "confidence": 0.7993313253012047,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "So viel zu den Vor- und Nachteilen. Kommen wir mal ein bisschen zu meinem Lieblingsthema Infrastruktur, weil da gibt es nämlich auch noch eine ganze Menge zu erzählen, wenn wir über das Thema Content Delivery Network sprechen. Und zwar unterscheidet man eigentlich CDN beziehungsweise die Topologien in zwei Bereiche. Auf der einen Seite gibt es die verstreuten CDNs und auf der anderen Seite die konsolidierten CDNs, was in der Regel von außen gar nicht so wirklich sichtbar ist, welche Topologie dein genutztes CDN eindeutig einführt. Verstreute cdns ist eigentlich so ich würde fast sagen das standard deployment du hast eine große anzahl von server locations mit mittlerer bis niedriger kapazität.",
+            "start": 2031753,
+            "end": 2070768,
+            "confidence": 0.8118363636363635,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Du meinst von den von den servern die kapazität also rechenkapazität oder.",
+            "start": 2070808,
+            "end": 2074610,
+            "confidence": 0.7928333333333334,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Nee, du hast eine Point-of-Presence, eine Pop, eine Location, und die Location hat eine mittlere bis niedrigere Serverkapazität. Also, die ist halt nicht voll ausgebaut, nicht in jeder Location stehen 100.000 Server, sondern vielleicht nur 30, einer oder ähnliches. Amazon fährt zum Beispiel diese Struktur.",
+            "start": 2075010,
+            "end": 2095889,
+            "confidence": 0.8447555555555556,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Also da hätte man dann auch einen Server in Duisburg stehen?",
+            "start": 2095929,
+            "end": 2099114,
+            "confidence": 0.8041818181818182,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Theoretisch, genau. Also bei Amazon oder ähnliches, bei den richtig großen oder bei Akamai wird es mit hoher Wahrscheinlichkeit ein bisschen mehr als ein Server sein, aber lass es ein Rack sein oder zwei oder drei. Aber du wirst ja kein komplettes Datacenter stehen haben an allen 130, 140, 150 Locations.",
+            "start": 2099154,
+            "end": 2110166,
+            "confidence": 0.7523333333333333,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Und konsolidierte CDNs?",
+            "start": 2113029,
+            "end": 2114711,
+            "confidence": 0.8310000000000001,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Konsolidierte CDNs ist genau das Gegenteil. Du hast eine kleinere Anzahl an POPs, an sogenannten Point of Presence, an Locations, die aber dann jeweils voll bestückt sind und wirklich hochleistungsfähig sind.",
+            "start": 2114731,
+            "end": 2126164,
+            "confidence": 0.833806451612903,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Also da würdest du dann in Österreich deine Server hinstellen und ganz Deutschland würde dann von Österreich versorgt werden. Die wichtigen Standpunkte sind dann abgedeckt.",
+            "start": 2126184,
+            "end": 2133412,
+            "confidence": 0.8140399999999997,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Vielleicht würden wir den leistungsfähigeren Internetknotenpunkt wie in Frankfurt den Dezix nehmen. Ich weiß nicht, ob ihr sowas auch in Österreich habt. Ich glaube nicht.",
+            "start": 2133752,
+            "end": 2141279,
+            "confidence": 0.7950400000000001,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Es gibt in Wien den sogenannten VIX.",
+            "start": 2141319,
+            "end": 2143000,
+            "confidence": 0.8224285714285714,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Der Name ist gut.",
+            "start": 2144161,
+            "end": 2144962,
+            "confidence": 0.48775,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Den Vienna Internet Exchange.",
+            "start": 2145182,
+            "end": 2147003,
+            "confidence": 0.6305000000000001,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Aber der hängt bestimmt direkt am Dezix, oder? Natürlich.",
+            "start": 2147043,
+            "end": 2150486,
+            "confidence": 0.7458888888888889,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Garantiert. Ja, der hängt an vielen Xixe.",
+            "start": 2150526,
+            "end": 2152288,
+            "confidence": 0.7634285714285713,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Na ja, auf jeden Fall sind das so die zwei Topologien. Viele Point-of-Presence mit mittlerer bis niedriger Kapazität versus wenige Point-of-Presence mit hoher Kapazität. Und was ist jetzt ein Point-of-Presence? Ein POP, toller Begriff. Ein POP, ein sogenannter Point-of-Presence, beschreibt eigentlich einen geografischen Standort.",
+            "start": 2153497,
+            "end": 2173171,
+            "confidence": 0.7849090909090911,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Kommt daher eigentlich der POP-Filter am Mikrofon?",
+            "start": 2173191,
+            "end": 2176594,
+            "confidence": 0.8864285714285715,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Das weiß ich nicht, glaub ich nicht. Naja, ein POP selbst enthält halt in der Regel Caching-Server, die für die Bereitstellung von Inhalten dann verantwortlich sind. Also das sind eigentlich wirklich diese eigentlichen Server, die euer Zeug dann ausliefern. Aber man nennt halt so eine Netzwerk-Location nennt man halt POP, also Point-of-Presence.",
+            "start": 2176614,
+            "end": 2194512,
+            "confidence": 0.8073269230769232,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Und ist das jetzt eine Edge-Location? Ist das dasselbe oder ist das nur Marketing-Lingo, die jeder CDN ein bisschen anders nennt?",
+            "start": 2194800,
+            "end": 2201942,
+            "confidence": 0.6814285714285713,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Ja, das ist jetzt eine sehr gute Frage. Die ganzen Cloud-Provider nehmen natürlich jetzt Marketing in die Hand. Ja, wir können jetzt hier irgendwas mit Edge machen. Natürlich, Edge heißt ja erstmal nur Rand. Und ja, ein Point of Present kann auch als Rand eines Netzwerks bezeichnet werden. Also in der Hinsicht, könnte man sagen, jeder Pop, aus der Hinsicht könnte man sagen, die Pops, die am Rand eines Netzwerkes sind, könnte auch als Edge-Location bezeichnet werden. In der ganzen Cloud-Diskussion unterscheidet man jedoch den Begriff Pop und Edge ein bisschen. Und zwar kann ein Point-of-Presence wirklich so simpel sein wie, da sind ein paar Server in irgendeinem Rack gemountet, wohingegen man eine Edge-Location eigentlich so klassifiziert, dass eine Edge-Location ein volles Deployment einer erweiterten Infrastruktur darstellt. Im Cloud-Marketing-Lingo könnte das eher so sein, dass du zum Beispiel Lambda-Funktionen, also Serverless-Functions, auf einer Edge-Location ausführen kannst, wohingegen bei einer ganz klassischen Pop-Location das in der Regel nicht notwendig ist. Also auf einer Edge-Location kannst du Custom-Code deployen und dann wirklich auf dieser Netzwerk-Edge ausführen.",
+            "start": 2202462,
+            "end": 2276630,
+            "confidence": 0.8233620689655173,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Und das ist jetzt irgendeine Definition, die du irgendwo gelesen hast, oder ist das ein ISO-OSI-Standard?",
+            "start": 2277271,
+            "end": 2281855,
+            "confidence": 0.7216875000000001,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Ach, im Marketing irgendwelche Standards bei Cloud-Providern. Also wie lange braucht ein ISO-OSI-Standard zur Verwirklichung? 20, 30 Jahre? Ruf doch mal bei Amazon an und sagt, hör mal, du, bevor ihr den Begriff Pop und Edge zusammenschmeißt, könnt ihr bei der Zertifizierung anrufen.",
+            "start": 2282396,
+            "end": 2299215,
+            "confidence": 0.7151162790697676,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Okay, wir können zusammenfassen, es ist nicht sinnvoll definiert, oder? Jeder nennt's anders.",
+            "start": 2299255,
+            "end": 2304279,
+            "confidence": 0.7445384615384617,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Das ist so, ich würd schon fast sagen, hyperscaler übergreifend so die grundlegende Definition. Wenn du ein Buch oder einen Professor fragst, wird der dir vielleicht was anderes sagen. Ich find diese Definition sinnvoll, kann auch sein, weil ich die grad genannt hab. Aber man könnte fast sagen, jede Edge-Location ist ein POP, aber nicht jeder POP ist eine Edge-Location. Weil jede Edge-Location ist ja ein Point-of-Present. Aber nicht jeder Point-of-Present muss ein Voll-Deployment haben, um Custom-Code auszuführen, wie Lambda oder Ähnliches.",
+            "start": 2304299,
+            "end": 2332847,
+            "confidence": 0.7402682926829268,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Also Point-of-Presence könnte ja auch Layer 2 sein, also nicht jetzt im Netzwerkstack Layer 2, sondern einen Layer hinter den Edge-Locations, die dann mehrere Edge-Locations bedient zum Beispiel.",
+            "start": 2333427,
+            "end": 2344359,
+            "confidence": 0.775892857142857,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Point-of-Presence kann auch irgendwo einfach nur ein Router und Switch sein, der dann verschiedene Sachen verbindet, ja. Und wenn wir jetzt mal hier von dem größten Cloud-Provider ausgehen, von Amazon, AWS. AWS hat aktuell 450 Pops. Und jeder Point-of-Present umfasst Services wie Amazon CloudFront, was deren CDN ist, deren Content-Delivery-Network, Amazon Route 53, was deren DNS-Service ist, und Amazon Global Accelerator, was so eine Art Edge Networking Optimization Service ist. Was das jetzt genau ist, weiß ich jetzt auch nicht, bin ich gar nicht tiefer reingegangen. Aber 450 POPs haben ein Cloudfront, Route 53 und Global Accelerator Deployment. Dann gibt es aber noch 13 regionale Edge Caches und Locations, die wirklich Edge Computing haben, wie zum Beispiel Cloud-Front-Functions oder Lambda-at-Edge. Und das ist nämlich genau diese Compute-Power, von der ich gerade gesprochen habe, in der Definition, in der Unterscheidung zwischen Pops und Edge. Also du kannst nicht auf allen 450 Amazon-Pops Lambda-at-Edge fahren. Das geht jetzt nicht. Und nur noch mal für die Leute, die in dem ganzen Cloud-Lingo nicht so drin sind. Amazon-Pops sind nicht das gleiche wie Amazon-Regions oder Availability-Zones.",
+            "start": 2344399,
+            "end": 2425057,
+            "confidence": 0.8157032967032961,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Okay, gratuliere. Du hast jetzt die Marketing-Webseite von Amazon vorgelesen. Aber in diesem tollen Quartett, das wir gerade spielen, kann ich dich natürlich schlagen mit Akamai, weil Akamai behauptet, sie sind in 134 Countries und mit 1300 Netzwerken unterwegs. Und ein Netzwerk ist ja mindestens ein Point of Presence, wenn man das so nimmt. Also schlagt Akamai jetzt schon deinen EWS. EWS ist also schon mal nicht das Größte, meiner Meinung nach.",
+            "start": 2425517,
+            "end": 2450572,
+            "confidence": 0.7845277777777776,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "So, ja, das stimmt. Und jetzt ist die Frage, denkst du, für F-Online würde Amazon trotzdem ausreichen?",
+            "start": 2450612,
+            "end": 2457125,
+            "confidence": 0.7919411764705881,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Ja, F-Online ist ja sowieso ein interessanter Case, weil für F-Online brauchst du eigentlich kein CDN. Ein CDN ist ein kompletter Overkill, weil woher kommen denn unsere User, die für den österreichischen Führerschein lernen? Primär, ich würde mal sagen, aus Österreich. Und es hat überhaupt keinen Sinn, das irgendwie zu verteilen und wahrscheinlich liegt der meiste Content auf einem Edgeknoten. Trotzdem war das mit Cloudflare einfach, habe ich übrigens immer Cloudfront gesagt oder habe ich Cloudflare gesagt? Es ist auch so verwirrend mit diesen Namen. Also es ist Cloudflare in dem Fall und es ist einfach einfacher zu deployen und die machen das halt kostenlos. in dem tier zumindestens mit den pages was halt einfach feiner ist für uns aber ein cdn ist ein overkill und das ist glaube ich auch ganz wichtig für ganz viele webseiten ist das cdn vermutlich einfach ein absoluter overkill jetzt ist.",
+            "start": 2457846,
+            "end": 2505918,
+            "confidence": 0.7679727891156465,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Es aber natürlich so dass wenn man sagt ok akamai ist zwar größer und amazon halt nicht da muss man ganz klar natürlich einmal unterscheiden. Akamai ist primär eine Firma für CDN. Amazon ist ein globaler Cloud Provider, ein Hyperscaler, wo CDN einer von 375 Produkten ist. Und dafür muss ich schon sagen, hat Amazon eine ordentliche Reichweite und kann Akamai ordentlich dampf unterm hinter machen weil es ist natürlich auch so wenn ich als firma umso mehr geld ich bei amazon ausgeben umso größere diskons bekomme ich natürlich auch bei amazon und wenn ich jetzt das cdn von amazon noch rein nehmen und sagt pass mal auf ich lasse trotzdem noch 10 20 30 40.000 euro bei euch, Da sagt Amazon, hey, willst du nicht noch mal ein bisschen Rabatt hier haben? Was den Kunden dann zurückhält, um nicht nach Akamai zu gehen.",
+            "start": 2505958,
+            "end": 2555363,
+            "confidence": 0.7813611111111112,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Im Vergleich, nämlich GCB, Google und die anderen Hyperscaler sind eigentlich sehr schwach mit CDNs. Wenn man das vergleicht mit den Firmen, die wirklich nur CDNs betreiben, die haben meistens mehr Features, sind stärker, haben mehr Locations, funktioniert also meistens besser und günstiger vor allem als bei den Hyperscalern direkt. Aber ist natürlich auch fein, einen Partner für alles zu haben. Muss man natürlich auch sagen.",
+            "start": 2555383,
+            "end": 2577578,
+            "confidence": 0.8273787878787877,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Bei Trivago waren wir relativ stark in der Nutzung von Amazon und von Google, haben aber als CDN trotzdem Akamai genutzt. Der Grund war relativ einfach, bei Akamai haben wir in der Hinsicht einen besseren Deal bekommen, aber nicht primär wegen dem CDN, sondern weil wir noch ein Zusatzprodukt bei Akamai genutzt hatten und das war, ich glaube, zur DDoS-Protection, also zur Denial-of-Service-Attacke. das wir dann vor Trivago geschaltet haben. Und durch die Nutzung des zusätzlichen Produkts haben wir natürlich ordentlich Rabatt beim CDN bekommen. Und genau aus diesem Grund haben wir dann in der Hinsicht kein Amazon Cloudfront oder das CDN von Google genutzt, obwohl wir in beiden Clouds verfügbar waren.",
+            "start": 2577858,
+            "end": 2617913,
+            "confidence": 0.8561071428571428,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Es gibt ja dann auch oft noch so Services, die gerne so als CDN verstanden werden, aber eigentlich gar keine klassischen CDNs sind, so was wie Cloudinary zum Beispiel. Die verkleinern dir deine Bilder on the fly und haben so ein Bildermanagement und sind quasi so mit dem CDN sehr stark in Kooperation, haben teilweise eigene CDNs, unterstützen auch Akamai. Ich glaube, wir haben es damals bei Trivago auch verwendet, bin mir jetzt aber nicht mehr ganz sicher, ob der Deal jemals zustande gekommen ist. Aber die setzen sich dann natürlich sehr tief ins CDN hinein und bieten dir dann noch zusätzliche Möglichkeiten, eben wie das perfekte Bild auszuliefern. Wenn dann Chrome ankommt, wird das Bild automatisch in WebP umgewandelt in die richtige Größe, ob das ein Mobiltelefon ist oder ein Desktop und solche Dinge. Die sitzen dann halt auch unter Umständen auch auf den Edge Compute Nodes, also mittlerweile haben wir übrigens noch gar nicht erwähnt, können sehr viele Edge Nodes auch wirklich Code ausführen, kleine Code Snippets, die sehr kurz sind, die schnell ausgeführt werden, aber die werden dann wirklich auf den Edge Nodes dem User möglichst nahe ausgeführt, können aber dann eben Logik beinhalten und sogar teilweise komplexere Logik. Also auch das, was wir zu Beginn gesagt haben, eigentlich ist es primär für statischen Content, das wird jetzt auch immer weiter aufgeweicht, weil die Edge-Nodes intelligenter werden, Code ausführen können, sogenannte Edge-Worker können dann darauf laufen, da kann man zum Beispiel Routing einbauen oder irgendwelche simplen If-Logiken oder auch komplexere Logiken, die dann irgendwie in Traffic umrouten, vielleicht sogar ein Bild verkleinern. Also all das kann man auch mit Edgeworkern zum Beispiel dann realisieren und da geht es jetzt sehr stark in die Reise, dass man also wirklich nicht nur mehr statische Assets abliefert, sondern wirklich dynamisch schon auch Berechnungen durchführt.",
+            "start": 2617953,
+            "end": 2721338,
+            "confidence": 0.8206217105263158,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Wobei man natürlich wieder sagen muss, nicht jede Cache-Location ist eine sogenannte Edge-Computing-Location. Das bedeutet, die Verfügbarkeit von diesen Edge-Computing-Locations ist deutlich niedriger. Amazon hat da ein ganz interessantes Beispiel. Amazon bietet selbst zwei Arten von Edge-Computing an. Und zwar ist das einmal die Cloud-Front-Functions und einmal die Lambda-at-Edge. Also Lambda-Funktion ist für viele ein Begriff und wird auch sehr oft im Queuing-Umfeld eingesetzt. Aber ich finde die Unterscheidung zwischen den beiden Produkten, weil die hören sich eigentlich gleich an und die machen auch eigentlich das gleiche für ein Custom-Code auf einer Edge-Location aus, aber die Limits sind da ein bisschen unterschiedlich. Wie zum Beispiel bei den Cloud-Front-Functions. Das sind eher so Funktionen, die wirklich sehr wenig Logik haben, sehr schnell ausgeführt werden müssen. Und klassische Anwendungsfälle sind da zum Beispiel HTTP-Header-Manipulation, URL-Rewrites oder URL-Redirects oder vielleicht einfach so eine Cache-Key-Normalisierung. Und für Lambda at Edge, da kann man dann schon ein bisschen mehr machen, ein bisschen was, was vielleicht so ein bisschen in unter einer Sekunde läuft, wie zum Beispiel eine Manipulation von einem HLS-Videostream, die Integration von irgendwelchen Autorisierungsdiensten, von Drittanbietern, vielleicht sogar Server-Side-Rendering von Single-Page-Apps. Also da kann man dann wirklich nicht nur seine static Page ins CDN legen, sondern auch das Server-Side-Rendering von React oder ähnliches. Und da wird's natürlich schon wieder spannend.",
+            "start": 2721698,
+            "end": 2805221,
+            "confidence": 0.8130138248847923,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Also was da dahinter steckt, meiner Meinung nach, ist, dass sich da ein paar Marketingleute wieder irgendwas überlegt haben und natürlich Lambda so ein Begriff ist, der in aller Munde ist und das kennt jeder, also sagt mal Lambda dazu, aber im Prinzip sind es dann die Lambdas, die halt in den ganzen Datacentern verteilt werden können und dann gibt es halt wirklich die Edge Nodes von CloudFront, die dann wirklich wahrscheinlich auf einem eigenen System laufen, also nicht in dem klassischen AWS-Kontext von deren Datacentern, sondern wirklich Edge-Locations. Und dort kann man halt dann die kleineren Dinge laufen lassen, eben die schnelleren. Und bei Cloudflare nennt sich es halt EdgeWorker. Die sagen auch, es sollte halt eher so bei den 10 Millisekunden sein oder so in dem Bereich, damit man möglichst schnell reagieren kann. Und da kann man sich dann halt schon überlegen, okay, was kann man machen, was kann man nicht machen. Und daher kommt es wahrscheinlich, dass beides halt Lambda heißt. Aber im Endeffekt sind es wahrscheinlich zwei komplett unterschiedliche Produkte.",
+            "start": 2806191,
+            "end": 2862411,
+            "confidence": 0.8067126436781612,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Bei Trivago gab es mal ein Riesenprojekt, wo das Frontend neu geschrieben wurde. Und zum Teil der Migration mussten auch alte URLs dann umgeschrieben werden. Jetzt wollte das Team, was den Rewrite vom Frontend macht, aber nicht die alte URL-Logik supporten. Weil das würde wieder bedeuten, du holst dir wieder eine ganze Menge Legacy-Code in den neuen Code rein. Und auch das Routing von der neu geschriebenen JavaScript-App war halt deutlich anders. Du musstest da schon sehr viel Engineering-Power reinchecken. Was gemacht wurde, war dann genau das, was ich gerade beschrieben habe. HTTP-URL-Rewrites auf der CDN-Edge von Akamai.",
+            "start": 2862431,
+            "end": 2899360,
+            "confidence": 0.7971938775510207,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Ich glaub, das ist der perfekte Use-Case für Edge-Computing. Ja, super.",
+            "start": 2899554,
+            "end": 2903355,
+            "confidence": 0.5602727272727273,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Perfekter Use-Case. Jeder so am Anfang, wow, das ist die Lösung, super. Wurde dann auch gemacht, war auch relativ schnell implementiert. Ja, und dann fing's an. Und auf einmal hattest du nämlich so eine Art Split-Brain. Du hattest nämlich eine doppelte Logik. Du hattest nämlich unten drunter ein Routing, du hattest nämlich oben auf deiner Ackermai im CDN ein Routing, wo natürlich nicht jeder Ingenieur Zugriff drauf hatte, auch nicht auf die Logfiles. Das bedeutet, die komplette Sichtbarkeit, welcher Request, wo lang geroutet wurde und warum manche Request einfach nicht mehr ankommen, war einfach für den Entwickler, der das oft gedebugt hat, gar nicht sichtbar.",
+            "start": 2903375,
+            "end": 2936691,
+            "confidence": 0.8092095238095235,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Ja, du hast halt Code an zwei Stellen wieder, du hast Logik an zwei Stellen und das ist ja ein altbekanntes Problem eigentlich.",
+            "start": 2936732,
+            "end": 2943359,
+            "confidence": 0.8131739130434782,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Ja, aber du hast ja selbst grad gesagt, vor wenigen Sekunden, perfekte Lösung, ja? Also, das war schon ein Riesenlearning für mich, was das eigentlich für Konsequenzen hat, das nicht zu tun. Also, den alten Code nicht mit rüberzunehmen. Da sollte man schon ganz genau aufpassen und sich wirklich ganz, ganz bewusst sein, was man da tut und wie man die Sichtbarkeit zum kompletten Engineering-Team wiederherstellt.",
+            "start": 2943819,
+            "end": 2967765,
+            "confidence": 0.8296969696969696,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Aber das ist ja kein neues Problem, weil wenn du irgendwelche Redirects hast, die irgendwo am Server ausgeführt werden, in einem anderen Layer zum Beispiel oder irgendwelche Domain Redirects oder Language Detection und dann irgendwie was umrouten, da hast du dann sehr schnell Logik an verschiedenen Orten. Also das ist ja ein Altes Problem und das soll die Technologie ja nicht schlechter machen jetzt als sie ist, nur weil man dann auf der Management-Seite natürlich Sachen anders planen muss. Aber das hast du beim Microservices so, das hast du, wenn du in Nginx irgendwelche Header redirects machst, die nicht im Code stattfinden und so weiter. Also das ist ein Problem, das man halt dann auf der Management-Seite und Dokumentations-Seite oder vielleicht auch mit dem Deployment lösen muss und kann, weil du kannst es ja vielleicht im selben Repository haben, aber das Deployment läuft dann anders.",
+            "start": 2968565,
+            "end": 3013807,
+            "confidence": 0.802510344827586,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Wolfgang, anscheinend hätten die Leute dich in dem Projekt gebraucht.",
+            "start": 3014495,
+            "end": 3016917,
+            "confidence": 0.6738000000000001,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Ja, ich bin sehr froh, dass ich nicht involviert war, weil jetzt kann ich im Nachhinein gescheit darüber reden, was man besser machen hätte sollen. Ist immer besser und viel leichter vor allem.",
+            "start": 3017478,
+            "end": 3025344,
+            "confidence": 0.6475151515151515,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Wenn wir jetzt mal ein bisschen über Rewrites sprechen, beziehungsweise Migration, beziehungsweise alte Software mit CDNs verbinden, dann müssen wir uns mal ganz kurz bewusst werden, welche CDN-Arten eigentlich existieren. Und der Wolfgang hat es schon am Anfang der Episode erwähnt, wie das standardmäßig abläuft. Standardmäßig hast du die ganzen Assets auf deinem Webserver, schaltest ein CDN davor. Wenn ein Request auf deine Webseite kommt, schaut das CDN nach. Oh, hier wird gerade irgendeine Javascript-Datei angefragt. Die habe ich gar nicht in meinem Cache. Dann gehe ich mal runter zu dem Origin-Webserver, also zu deinem Webserver. holt sich die ab, liefert die an den Client aus und cached die zwischen.",
+            "start": 3025364,
+            "end": 3066552,
+            "confidence": 0.8301727272727271,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Also ein Proxy mit einem Cache. Alle, die die Episode zu Proxys gehört haben, können sich da jetzt daran erinnern. Der Proxy hat einfach zusätzlich noch ein Cache-Layer mit dabei und liefert den Cache aus, wenn möglich.",
+            "start": 3066592,
+            "end": 3077627,
+            "confidence": 0.792081081081081,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Das bedeutet natürlich auch im Umkehrschluss, dass die erste Anfrage zu höheren Ladezeiten führt. Also eigentlich nicht höhere Ladezeiten, eigentlich normale Ladezeiten.",
+            "start": 3078107,
+            "end": 3087610,
+            "confidence": 0.874909090909091,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Ja, vielleicht sogar höher, weil du zwei Hops natürlich hast.",
+            "start": 3088170,
+            "end": 3090851,
+            "confidence": 0.7542000000000001,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Der Vorteil ist natürlich, ihr müsst einfach nichts mehr umstellen. Ihr konfiguriert das CDN einfach, sagt, wo euer Original Server ist und bindet einfach eine andere URL in euren Head im HTML ein. Also die Integration ist da relativ einfach und somit könnt ihr erst mal starten. Die ganze Sache nennt man Origin-Pull-CDN, weil das CDN vom Origin von eurer Webseite die Daten pullt. Jetzt gibt es natürlich auch das gegenseitige Prinzip, das Push-CDN. Das bedeutet, immer wenn ihr eine neue Version eurer Applikation deployt, habt ihr in eurem Deployment-Prozess einen Subprozess, der die ganzen Assets aktiv auf die Server vom CDN pusht. Ihr sendet also die Daten und die Inhalte proaktiv ans CDN und das CDN verteilt diese dann an die Edge-Server.",
+            "start": 3090891,
+            "end": 3138458,
+            "confidence": 0.8272926829268291,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Ist natürlich wesentlich teurer, üblicherweise, weil das dann dementsprechend auf ganz vielen Servern landet, obwohl man es vielleicht dort gar nicht braucht. Also die Betreiber lassen sich das natürlich auch kosten.",
+            "start": 3138498,
+            "end": 3149748,
+            "confidence": 0.8292258064516127,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Klar, in der Regel kannst du es natürlich dann auch konfigurieren, auf wieviel Server es landen soll, soll es überhaupt schon irgendwo landen. Der Punkt ist aber, die Assets sind schon im Netzwerk vom CDN, was gegebenenfalls deutlich schneller sein kann. Ich meine, Google, Amazon und Co. haben eigene Kabel, haben eigene Interleitung beziehungsweise reservierte Kapazität in den Kabeln. Und da fliegen die Daten natürlich ein bisschen schneller als quer über das Internet. Und es hat natürlich den Nachteil, dass die Implementierungskomplexität bei euch natürlich auch steigt. Ihr müsst dann schon irgendwie ein bisschen Engineering einfügen, dass die generierten Assets an den Drittanbieter gepusht werden.",
+            "start": 3150128,
+            "end": 3187596,
+            "confidence": 0.7867047619047619,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Was übrigens so ähnlich ist und was auch mit Kosten verbunden ist, ist wenn man was aus dem CDN löschen will. weil grundsätzlich, wenn der Cache irgendwie abläuft oder so, wird die neue Version geholt. Wenn man jetzt aber aktiv etwas austauschen will oder was löschen will in der CDN, dann gibt es da meistens Endpoints von der CDN, wo ich direkt sagen kann, diese Datei soll gelöscht werden und dann managt das CDN intern, dass das wirklich überall auf allen Edge-Nodes, überall wo die Datei liegt, gelöscht wird und das ist natürlich viel Aufwand und auch das lassen sich die CDN-Provider schön zahlen. Das heißt, auch die andere Richtung, es geht nicht nur immer darum, was reinzupushen oder eine Datei reinzubekommen in CDN, auch wenn man sie rausbekommt. Diesen Fall lassen sich die CDN-Betreiber zahlen und teilweise zahlt man da wirklich pro Request eine ganz ordentliche Summe, wenn man was löschen will.",
+            "start": 3187636,
+            "end": 3236651,
+            "confidence": 0.856111111111111,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Mit dem Push-CDN ist es natürlich auch nochmal so eine Sache, wenn ihr zum Beispiel eine fehlerhafte Version rollbacken wollt. Da müsst ihr natürlich auch gucken, wie verhält sich das, wie verändern sich die Adressen bei euch und so weiter und so fort. Also all das ist halt nicht ganz so einfach. Generell gibt es zwei Arten. Origin Push CDN, wo ihr die Daten aktiv hinpusht oder in der Regel der Standard Pull CDN. Es gibt noch ein paar Subarten, so wie Peer-to-Peer CDN, so BitTorrent Kram oder Peer Assisted CDN. Kommt aber im offiziellen Umfeld relativ selten vor, beziehungsweise relativ selten im Webumfeld.",
+            "start": 3236991,
+            "end": 3270176,
+            "confidence": 0.7916346153846155,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Aber kommen wir mal zurück zu der eigentlichen Frage von Thomas. Sollte man CDNs überhaupt noch benutzen?",
+            "start": 3270493,
+            "end": 3277278,
+            "confidence": 0.895764705882353,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Also wenn ich jetzt mit meiner Standardantwort it depends ankomme, dann sagst du ja, das sagst du immer.",
+            "start": 3277559,
+            "end": 3281322,
+            "confidence": 0.6061111111111113,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Genau. Also lass dir mal was besseres einfallen.",
+            "start": 3281362,
+            "end": 3283864,
+            "confidence": 0.6817499999999999,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Wenn du ein neues Startup machst, was relativ schnell weltweit skalieren muss, sowas wie Clubhouse oder ähnliches, würde ich fast sagen, die Nutzung von CDNs wäre ein gutes Investment. Hast du deinen eigenen Blog und willst einfach nur anfangen zu bloggen, würde ich sagen, lass es sein und fokussierst dich auf Schreiben. Antwort ist zu langweilig, oder?",
+            "start": 3283884,
+            "end": 3302531,
+            "confidence": 0.7763859649122807,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Nein, ist schon eine gute Antwort.",
+            "start": 3303131,
+            "end": 3304952,
+            "confidence": 0.596,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Nein, also ich sag mal so, so was wie Trivago, da würde ich schon sagen, CDNs sind da sinnvoll, weil zum Beispiel Bilder war da ein Kernelement. Niemand bucht ein Hotel, ohne das Badezimmer zu sehen. Das ist so ein Klassiker. Hast du jetzt eine iOS-App, soviel ich weiß, in einer Mobile-App shippst du alle Ressourcen mit dem App-Package, deswegen sind die auch so groß, so 100, 200 MB teilweise, und agierst dann hinten dran mit irgendeiner REST-API, GraphQL-API oder ähnliches, da würde ich jetzt sagen, brauchst du jetzt kein CDN. Ich würde halt generell immer empfehlen, schau dir an, wer ist deine Zielgruppe, in welchen Märkten bist du unterwegs, Wenn du jetzt nur eine deutsche Webseite hast, beziehungsweise wenn der deutschsprachige Markt dein Kundenmarkt ist, dann bist du in der Regel in Österreich, Schweiz und Deutschland. Brauchst du dann CDN? Würde ich eher sagen nicht, weil geografisch sind das jetzt nicht so viele Kilometer. Da kommt es halt, und ich hasse es, dass ich das jetzt sage, weil ich mag das Wort nicht, da kommt es halt wirklich auf deinen Scale an. Skalierst du, Und bist du wirklich international am Start und hast du viel Webtraffic, umso mehr es in die Richtung geht, desto mehr lohnt sich, glaube ich, ein CDN. Wie siehst du das, Wolfgang?",
+            "start": 3305532,
+            "end": 3374207,
+            "confidence": 0.7907926267281106,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Also ich glaube, ein anderer guter Use Case ist genau den, den ich mit fOnline zum Beispiel gemacht habe. Du könntest natürlich jetzt einen Hetzner-Server aufsetzen, da einen Nginx installieren, die ganzen Caching-Mechanismen einstellen, jada jada jada. dann so ein Image-Server haben, der würde genauso funktionieren. Oder du verwendest ein CDN, wenn das kostengünstig ist, wenn das Sinn macht, dort knallst du deine Bilder rein und lieferst die so aus. Also wenn dir das CDN auch Arbeit wegnimmt, finde ich das okay. Wenn es dir aber nur Komplexität hinzufügt und du kein Problem hast, das du damit lösen willst, würde ich einfach die Hände vom CDN lassen. Also grundsätzlich ist für mich immer die Herangehensweise, habe ich ein Problem, kann mir ein CDN dieses Problem lösen. Dann ist es valide. Sonst würde ich einfach das eher als mehr Komplexität sehen, als es mir dann am Ende bringt.",
+            "start": 3374247,
+            "end": 3422309,
+            "confidence": 0.7935238095238097,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Der zweite Punkt von Thomas war eigentlich, wie kriege ich denn das Legacy-Software da rein? Oder wie kriege ich denn CDN eigentlich in Legacy-Software implementiert? Und da würde ich persönlich dieses klassische Origin-Pulse-CDN empfehlen. Du suchst den CDN-Anbieter aus, Akamai, Fastly, Cloudflare, Amazon, Google. Fühl dich frei, konfigurierst das und sagst dem, da ist meine Webseite und änderst einfach nur die URLs von deinen Assets in deinem HTML, in deiner Website, in deiner Legacy-Software.",
+            "start": 3422329,
+            "end": 3449705,
+            "confidence": 0.7601216216216217,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Du sagst nur, das kann natürlich schon viel Arbeit sein, wenn du nämlich überall eine Domain einfügen musst bei allen deinen Assets und das irgendwie tief in Microservices und der Gaia was wo drin sitzt, dann kann das natürlich auch ein großer Aufwand sein, dass du das alles hinbekommst, dass es wirklich dann extern geladen wird. Aber da kommt man nicht drum herum, würde ich sagen.",
+            "start": 3450006,
+            "end": 3467841,
+            "confidence": 0.7917878787878786,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Klar, aber bei einer Migration kannst du ja erst mal mit einem Jahr was gepfahlschaden. Deploy das, eine URL, deploy das und beobachte, wie verhält sich das CDN, liefert das CDN aus und so weiter. Und wenn du sagst, oh, das funktioniert hier gar nicht, dann rollst halt zurück, dann änderst du eine Zeile, zwei, drei Zeilen. Hardcoder ist erst mal und erst mal gar nicht in irgendwelchen zehn Konfigurationsfiles. Und glaube ich, das ist so meine Empfehlung, wie man ganz langsam starten kann. Umso mehr vertrauen man zu dem CDN-Aufbau, umso mehr Dateien kann man dann da umstellen. Und später, wenn man sagt, okay, CDN, das bringt mir wirklich was in meinem Business, dann kann man, glaube ich, drüber nachdenken, auf so einen Push-Origin-CDN zu gehen. Aber vorher würde ich ja immer das pullen lassen. Die Implementierung ist da relativ einfach, relativ schnell. Und das wäre glaube ich so meine Herangehensweise. Auch weil man dann kein Vendor-Login hat. Also du verkaufst dich nicht unbedingt an ein CDN, wenn du sagst, okay, das bringt mir nichts. Ich gehe mal zum anderen. Ist relativ schnell getestet.",
+            "start": 3467881,
+            "end": 3520607,
+            "confidence": 0.7766432432432431,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "So ein Push rentiert sich ja auch nur, wenn du wirklich extreme Anforderungen hast. Also für 0815-Projekte, glaube ich, ist das nie ein Vorteil, sondern erhöht nur die Komplexität. Du musst es im Deployment einbauen. Macht alles nur komplexer. Und ich glaube, da musst du schon einen extrem großen Use Case haben in Bezug auf Scaling, dass sich da irgendwas rentiert. Also da hast du dann wahrscheinlich eigene Leute, die sich nur um diesen Teil kümmern.",
+            "start": 3521487,
+            "end": 3545730,
+            "confidence": 0.7717631578947369,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Ja, und der dritte Aspekt von Thomas war das ganze Thema rund um GDPR, Datenschutzgrundverordnung. Die Pest für jeden Entwickler, würde ich sagen. Und das Thema findet der Wolfgang irgendwie so sexy, dass er da speziell drauf eingehen möchte. Das überlasse ich ihm auch gerne.",
+            "start": 3545923,
+            "end": 3560543,
+            "confidence": 0.7920444444444447,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Ich weiß nicht, ob ich das Thema sexy finde, aber ich finde es auf jeden Fall super interessant, dieser ganze Themenbereich. Und wenn man diese ganze Datenschutzverordnung genau nimmt, darfst du eigentlich kein CDN mehr einsetzen. Das heißt, jedes CDN, was du aktuell bekommst von den Großen, ist eigentlich nicht GDPR-konform und kann nicht GDPR-konform sein. Sobald du eine Firma hast, die in Amerika sitzt, bist du nicht mehr GDPR-konform. Wenn du auf die Webseiten gehst, die behaupten zwar alle, sie sind GDPR-konform und sie versuchen, das auch möglichst darzustellen. Früher haben sie sich gern auf diesen Privacy Shield Act hinausgeredet, aber der ist seit 2020 ungültig, dank dem Maximilian Schrems, unserem Vorzeigeösterreicher, der gegen Facebook und Co. viele Gerichtsverhandlungen führt. Und seit dem Schrems-Urteil 2020 ist eben auch dieser Privacy Shield Act nicht mehr gültig. Und das große Problem ist eigentlich, dass die amerikanische Regierung immer auf Daten zugreifen kann und dieser Zugriff nicht sinnvoll geregelt ist. Und das ist eigentlich der große Knackpunkt. Und in GDPA und DSGVO, was ja das gleiche ist, wird festgelegt, dass dieser Zugriff genau geregelt sein muss und nur mit richterlichem Beschluss und bla bla bla. Und das wird in Amerika einfach auch in den Staaten, wo es auch noch unterschiedliche Rechtsprechungen gibt, nicht ermöglicht und nicht garantiert. Und darum ist eigentlich, sobald ein Server in Amerika steht oder die Firma irgendwie amerikanisch ist, kann das nicht mehr GDPA-konform sein. Und darauf basiert eigentlich auch dieses ganze Google-Fonds, die Rechtsprechung und so weiter. Ich bin kein Rechtsanwalt, vielleicht laden wir mal jemanden ein, der uns das besser erklären kann. Aber im Prinzip ist es so, dass du ein großes Problem hast mit den Servern in Amerika oder den Firmen in Amerika und da stecken ja immer amerikanische Firmen dahinter. Auch wenn die Server dann in der EU stehen, hast du natürlich trotzdem den Zugriff. Das ist ja auch aktuell mit TikTok ein großes Thema, dass du einfach dann automatisch den Zugriff von der chinesischen Regierung in dem Fall hast, auch wenn die Server vielleicht woanders stehen. Und darum dürfte man eigentlich klassische CDNs von den Hyperscalern nicht mehr verwenden. Du darfst eigentlich nur CDNs von deutschen Unternehmen verwenden oder von europäischen Unternehmen verwenden. Alles andere ist eigentlich rechtlich nicht möglich bzw. ist halt so ein Graubereich, aber nur weil es noch keine Rechtsprechung gibt in dem Bereich heißt es ja nicht, dass es nicht trotzdem eigentlich illegal ist.",
+            "start": 3561108,
+            "end": 3705848,
+            "confidence": 0.8185308641975317,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Also auch wenn ich eine deutsche Firma bin und meine Server in Amerika stehen oder ich habe Pops in Amerika und ich logge die IP-Adresse nicht mit, ich liefere nur Dateien aus, ich logge gar nichts mit, dann ist das nicht mehr GDPR-konform?",
+            "start": 3706288,
+            "end": 3719873,
+            "confidence": 0.835627906976744,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Also grundsätzlich, das Loggen der IP-Adressen ist gar kein Problem, solange du das GDPR-konform verarbeitest und dahinter alles passt. Das ist überhaupt kein Problem. Du loggst ja in Deutschland genauso die IP-Adressen mit. Wenn du einen Server in Amerika hast und das nur für die amerikanischen Kunden verwendest, den Server, die Infrastruktur dort, da musst du ja gar nicht GDPR-konform sein in Amerika. Das heißt, über den Weg hast du eigentlich gar kein Problem.",
+            "start": 3719913,
+            "end": 3744270,
+            "confidence": 0.8097162162162159,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Okay, aber theoretisch könnten das ja Akamai und Co. tun. Ich weiß jetzt nicht, ob Akamai eine amerikanische Firma ist, aber wenn, Ja, das.",
+            "start": 3744630,
+            "end": 3752217,
+            "confidence": 0.7929583333333335,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Problem ist, dass sobald du eine amerikanische Firma bist, hast du halt auch den Zugriff, auch wenn die Server jetzt in Deutschland sind. Aber wie gesagt, vielleicht laden wir uns da mal einen Spezialisten ein, aber so wie ich das verstehe und auch gelesen habe, seit dem Schreibensurteil ist eigentlich die Verwendung von CDNs nicht mehr gedeckt. Zumindestens, wenn sie jetzt nicht komplett in deutscher oder europäischer Hand ist.",
+            "start": 3752237,
+            "end": 3772568,
+            "confidence": 0.8393623188405795,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Jut, hätten wir das langweiligste Thema der ganzen Episode auch abgehandelt. Und ich glaub, damit sind wir schon am Ende, oder? Obwohl, eine Sache, die ich bei der Recherche auch noch faszinierend fand, ist, weil ich hab immer gedacht, CDNs sind immer sehr vorteilhaft bei ganz vielen kleinen Dateien. Also, war früher immer so ein Mythos, den ich immer mitbeteiligt habe. Und dass man große Dateien eigentlich nicht über CDNs rausposaunen sollte. Aber anscheinend war das eine Lüge. Anscheinend hab ich da immer was Falsches gedacht. Das ist eigentlich die maximale Filesize, die jetzt hier so ein Google Cloud CDN oder so ein Amazon Cloudfront übers CDN shippen kann. Da muss ich zugeben, ich war ein bisschen beeindruckt. Also du kannst über AWS Cloudfront ein 30 Gigabyte File shippen als CDN. Finde ich schon sehr beachtlich.",
+            "start": 3772988,
+            "end": 3822529,
+            "confidence": 0.7645588235294116,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Ja, ich glaube, in Zeiten von Video und Co.",
+            "start": 3823129,
+            "end": 3825350,
+            "confidence": 0.7559999999999999,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Und jetzt, und das muss ich ja sagen, ich finde, Google ist wirklich die bessere Cloud. Weil ich hab so das Gefühl, Google ist so Cloud-Version 2.0. Du kannst übers Google Cloud CDN Dateien in Größe von fünf Terabyte übers CDN schippen. Ist das nicht krank?",
+            "start": 3825390,
+            "end": 3843819,
+            "confidence": 0.8208478260869564,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Überleg mir grad einen Use Case von fünf Terabyte. Mir fällt keiner ein. Von einer Datei vor allem.",
+            "start": 3843859,
+            "end": 3848802,
+            "confidence": 0.5991666666666666,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Bestimmt irgendein Archiv vom CERN, wenn die wieder irgendwelche Sachen durch ihren Large Hydro Collider shippen.",
+            "start": 3849575,
+            "end": 3854179,
+            "confidence": 0.6501875,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Da ist es ja dann meistens schneller, wenn man eine Festplatte durch die Welt schickt bei Post, was ja auch oft gemacht wird.",
+            "start": 3854199,
+            "end": 3858843,
+            "confidence": 0.6971304347826088,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Ja, aber ich find's faszinierend. Ich würd fast sagen, entweder ist das so ein Showcase, okay, wir können jetzt ... Wir schreiben jetzt in die Dokumentation, dass du fünf Terabyte shippen kannst, weil wir es können. Oder es war wirklich so, dass irgendein Großkunde zu Google kam, hör mal, wir würden gern euer Cloud-CDN gerne nutzen. Aber unsere Dateien sind so viereinhalb Terabyte groß. Könnt ihr da was machen?",
+            "start": 3859263,
+            "end": 3882487,
+            "confidence": 0.7498405797101448,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Und falls ihr noch irgendwelche eigenartigen Use Cases habt, wie der Andi mit seinen fünften Arbeitdateien, kommt bei uns in der Community vorbei, lasst uns wissen, was es sonst noch so gibt. Lasst uns bitte auch wissen, ob GDPA wirklich das langweiligste Thema ist oder ob wir da vielleicht mal jemanden organisieren sollen, der uns probiert, das genauer zu erklären. Finde ich immer noch sehr, sehr spannend, auch wenn der Andi jetzt nur mehr da herumgehend.",
+            "start": 3882748,
+            "end": 3905999,
+            "confidence": 0.8573421052631577,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Ja, ich denke, das ganze Thema GDPA, DSGVO hat sehr viele Jobs geschaffen und sehr viel Geld verbrannt. Ich finde das toll, dass ich in Deutschland lebe und da geschützt bin, muss ich zugeben, aber dass das alles so undefiniert auf den Markt geschmissen wurde, fand ich jetzt nicht so toll. Das hat für sehr viel Chaos, glaube ich, in sehr vielen Firmen gesorgt. Ich kenne keinen Menschen, der sagt, das ist ein geiles Thema. Deswegen ist das, glaube ich, auch okay, rumzugehen.",
+            "start": 3906479,
+            "end": 3930085,
+            "confidence": 0.8108674698795179,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Ich glaube, es hat uns extrem viel gebracht, auch wenn das viele nur in den Cookie Policies sehen, die nerven, aber da steckt extrem viel dahinter. Aber vielleicht sollten wir da wirklich was eigenes mal machen.",
+            "start": 3930640,
+            "end": 3940468,
+            "confidence": 0.7823055555555555,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Ja, aber es ist auch schade, dass die Cookie Policies das einzige sind, was uns im Gedächtnis bleibt, oder?",
+            "start": 3940488,
+            "end": 3945112,
+            "confidence": 0.6802631578947368,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Richtig, weil da steckt viel, viel mehr dahinter.",
+            "start": 3945152,
+            "end": 3947074,
+            "confidence": 0.82075,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Ja, das ist traurig und deswegen gähne ich vielleicht. Naja, okay, super. Haben wir die nächste Folge auch schon erklärt? Irgendwas über GDPA und holen uns einen Anwalt, der sagt, wie toll das doch ist oder so. Ich weiß es nicht. Wenn du zufällig ein Anwalt bist und eine Anwältin, die spezialisiert ist auf Internetrecht, auf GDPA, auf DSGVU, auf Lizenzrecht und all sowas, melde dich mal bei uns.",
+            "start": 3947674,
+            "end": 3969122,
+            "confidence": 0.7314637681159418,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Oder wenn jemanden jemanden kennt, bitte nur her damit.",
+            "start": 3969162,
+            "end": 3972485,
+            "confidence": 0.9071111111111111,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Wir würden gerne mit euch sprechen. Und bis dahin würden wir sagen, vielen Dank, wenn ihr bis hierhin durchgehalten habt. Wir wünschen euch noch einen schönen Tag und falls ihr auch Themenwünsche habt, kommt doch ruhig in unsere Engineering-Kiosk-Community, schlagt uns ein Thema vor, so wie der Thomas vom Index out of Bound Podcast und dann nehmen wir das gerne auf. Bis bald.",
+            "start": 3972525,
+            "end": 3994926,
+            "confidence": 0.8124761904761906,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Und Thomas, lass uns wissen, ob wir alle Fragen beantwortet haben. Ciao.",
+            "start": 3994966,
+            "end": 3998269,
+            "confidence": 0.7519999999999999,
+            "channel": null,
+            "speaker": "B"
+        }
+    ],
+    "confidence": 0.7997362427192903,
+    "audio_duration": 4002.0,
+    "webhook_status_code": null,
+    "webhook_auth": false,
+    "summary": null,
+    "auto_highlights_result": null,
+    "content_safety_labels": null,
+    "chapters": null,
+    "sentiment_analysis_results": null,
+    "entities": null
+}
