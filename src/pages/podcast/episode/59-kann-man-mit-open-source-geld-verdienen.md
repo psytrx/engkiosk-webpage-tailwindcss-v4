@@ -60,8 +60,10 @@ rtlplus: ''
 speaker:
 - name: Andy Grunwald
   website: https://andygrunwald.com/
+  transcriptLetter: A
 - name: Wolfi Gassler
   website: https://wolfgang.gassler.org/
+  transcriptLetter: B
 spotify: https://open.spotify.com/episode/715h8uioolNKRzxMjzQL3E
 tags:
 - Open Source
