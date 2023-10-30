@@ -89,13 +89,14 @@ const { utterances } = Astro.props;
 	window.addEventListener('DOMContentLoaded', (event) => {
 		const hash = window.location.hash;
 		if (hash && hash.startsWith('#t=')) {
-			const time = hash.substring(3);
+			const time = parseInt(hash.substring(3));
 			//find utterance div based on data-trans-start, time should be in between
 			const utterances = document.querySelectorAll('.utterance')
 			let element = null;
 			utterances.forEach((utterance, i) => {
-				const start = utterance.dataset.transStart;
+				const start = parseInt(utterance.dataset.transStart);
 				if (start <= time && (!utterances[i+1] || utterances[i+1].dataset.transStart > time)) {
+					console.log('found', utterance, start, time);
 					element = utterance;
 				}
 			});
