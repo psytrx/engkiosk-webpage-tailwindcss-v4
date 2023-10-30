@@ -67,10 +67,13 @@ rtlplus: ''
 speaker:
 - name: Andy Grunwald
   website: https://andygrunwald.com/
+  transcriptLetter: C
 - name: Wolfi Gassler
   website: https://wolfgang.gassler.org/
+  transcriptLetter: B
 - name: Martin Donath
   website: https://github.com/squidfunk
+  transcriptLetter: A
 spotify: https://open.spotify.com/episode/6EtK6QAKUpu69kztnZdneZ
 tags:
 - Projektmanagement

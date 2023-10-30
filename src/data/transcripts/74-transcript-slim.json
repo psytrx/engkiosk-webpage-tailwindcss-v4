@@ -1,0 +1,1642 @@
+{
+    "language_code": "de",
+    "audio_url": "https://audio1.redcircle.com/episodes/7acd12c4-f8e7-4c39-a7e1-a5b893208c8c/stream.mp3",
+    "punctuate": true,
+    "format_text": true,
+    "dual_channel": false,
+    "webhook_url": null,
+    "webhook_auth_header_name": null,
+    "webhook_auth_header_value": null,
+    "audio_start_from": null,
+    "audio_end_at": null,
+    "word_boost": [],
+    "boost_param": null,
+    "filter_profanity": false,
+    "redact_pii": false,
+    "redact_pii_audio": false,
+    "redact_pii_policies": null,
+    "redact_pii_sub": null,
+    "speaker_labels": true,
+    "speakers_expected": 2,
+    "content_safety": false,
+    "content_safety_confidence": null,
+    "iab_categories": false,
+    "custom_spelling": null,
+    "disfluencies": false,
+    "sentiment_analysis": false,
+    "auto_chapters": false,
+    "entity_detection": false,
+    "summarization": false,
+    "summary_model": null,
+    "summary_type": null,
+    "auto_highlights": false,
+    "language_detection": false,
+    "speech_threshold": null,
+    "id": "62s14xecwb-4e02-427c-9c19-e67eae764f08",
+    "status": "completed",
+    "error": null,
+    "utterances": [
+        {
+            "text": "Jeder denkt immer, ich habe schon ganz viel REST APIs gebaut und konsumiert und allem drum und dran. Aber irgendwie machen wir das ja alle falsch.",
+            "start": 3202,
+            "end": 10304,
+            "confidence": 0.8098846153846156,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Das Schlimme an SOAP ist ja, was ich jetzt auch gerade gelernt habe, dass die W3C dahinter steckt. Die W3C steht für einfache Sachen, sowas wie für REST. Aber die haben auch SOAP irgendwie am Gewissen.",
+            "start": 11964,
+            "end": 22487,
+            "confidence": 0.7834722222222222,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Wenn du in irgendeiner Form mit der Webentwicklung zu tun hast, dann kamst du bereits mit REST-APIs in Berührung. Du hast bereits einer dieser APIs konsumiert, vielleicht sogar schon selbst programmiert. Aber was weißt du wirklich über das REST-Architekturparadigma? Die meisten setzen das ganze falsch oder zumindest nicht vollständig um. Wusstest du zum Beispiel, dass jeder REST-API-Endpoint Links zurückgeben soll für weitere Ressourcen, um den Client zu ermöglichen, die API zu entdecken? Oder dass du mittels REST weiteren Quellcode zur Ausführung an den Client senden kannst, damit der Client nicht alle Features selbst implementieren muss? Crazy, oder? Weiterhin sprechen wir über die Beer-HTTP-Methode, das API-Maturity-Model, den Warning-HTTP-Header zur API-Versionierung und vieles mehr. Viel Spaß mit dieser Episode!",
+            "start": 26055,
+            "end": 71810,
+            "confidence": 0.8056153846153851,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "So Andi, nachdem die letzten Episoden ja vermeintlich theoretisch waren, hast du zumindest immer behauptet, kommen wir heute mal zu einer richtig praktischen Episode. Und zwar mit einem Thema, was du mir ja schon lange irgendwie unter die Nase reibst, weil du sagst, jeder auf dieser Welt versteht dieses Thema falsch. Also erzähl mal der Welt, was du da vorbereitet hast.",
+            "start": 76723,
+            "end": 97075,
+            "confidence": 0.8160163934426231,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Ich sag nicht jeder auf dieser Welt, doch sehr, sehr, sehr viele Leute haben so ein paar falsche Annahmen über das Thema. Und zwar geht es heute nämlich um APIs, beziehungsweise um den großen Term, um das große Passwort REST APIs. Da habe ich mal die erste Frage, Wolfgang. Wann hast du das letzte Mal eine REST-API genutzt?",
+            "start": 97115,
+            "end": 117934,
+            "confidence": 0.8230000000000003,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Genutzt oder programmiert?",
+            "start": 117974,
+            "end": 119296,
+            "confidence": 0.9146666666666666,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Konsumiert.",
+            "start": 119316,
+            "end": 120277,
+            "confidence": 0.921,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Konsumiert. Gestern, aber das war meine eigene während dem Testen.",
+            "start": 120317,
+            "end": 124442,
+            "confidence": 0.8529000000000002,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Oh, spannend. Also hast du gestern auch eine eigene REST-API programmiert oder erweitert?",
+            "start": 124502,
+            "end": 129347,
+            "confidence": 0.7328461538461539,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Genau, ja.",
+            "start": 129387,
+            "end": 129747,
+            "confidence": 0.4725,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Wie ist die aufgebaut? Was ist das für eine Programmiersprache, was für ein Textstack, was für ein Framework und was machst du damit? Ist das so klassisch, du hast eine relationale Datenbank hinten dran und willst einfach nur die Datenbank in irgendeiner Art und Weise exposen?",
+            "start": 130428,
+            "end": 143231,
+            "confidence": 0.7218478260869566,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Ja, simplifiziert dargestellt ist es genau das. Node.js, Stack, Datenbank, eine aufwendige Query dazwischen und die spuckt dir dann die Daten in JSON aus.",
+            "start": 143251,
+            "end": 152573,
+            "confidence": 0.7739999999999999,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Ist das nur eine Read API oder schreibst du damit auch Daten oder löscht die Daten?",
+            "start": 153110,
+            "end": 158754,
+            "confidence": 0.7666875000000001,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Beides, aber die schreibende Variante ist nur bedingt REST-konform, würde ich mal sagen.",
+            "start": 158774,
+            "end": 165938,
+            "confidence": 0.8490769230769233,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Uh, da gehen wir aber jetzt schon mal wieder in die Tiefe. REST-konform und nur bedingt REST-konform. Warum denkst du, deine schreibende Variante ist nicht REST-konform? Wie hast du es implementiert und was ist daran nicht REST-konform?",
+            "start": 165998,
+            "end": 177906,
+            "confidence": 0.7130270270270269,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Ja, du kannst die schreibende API nicht verwenden als lesende API. Also das sind unterschiedliche Pfade und nicht klassisch Ressourcen, die du schreiben kannst, lesen kannst, verändern kannst.",
+            "start": 178186,
+            "end": 190358,
+            "confidence": 0.8444285714285714,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Da sind wir schon bei einem sehr, sehr guten Punkt. Das ist super. Und warum hast du es so gemacht?",
+            "start": 190999,
+            "end": 194362,
+            "confidence": 0.5236,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Ja, weil es da weniger um Ressourcen geht. Wenn du mich eigentlich jetzt so fragst, kommen wir schon an den Punkt, wo ich eigentlich zweifle, ob es überhaupt eine REST-API ist, was eigentlich keine klassischen Ressourcen sind, sondern Endpoints, wo dann komplexe Queries ausgeführt werden und du bekommst die Results. Also es ist nicht aufgeteilt in Ressourcen und dass du eine Ressource anfragen kannst.",
+            "start": 194642,
+            "end": 215297,
+            "confidence": 0.719625,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Hast du schon mal mit einer RPC über HTTP-API nachgedacht, beziehungsweise hast du sowas schon mal gewendet oder sogar programmiert? Wenn wir sagen, okay, es ist keine REST-API, was für eine Art von API würdest du dann dein Tool da beschreiben?",
+            "start": 215597,
+            "end": 230227,
+            "confidence": 0.5455853658536586,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Ja, ich bin jetzt ehrlich gesagt überfragt, ob RPC in irgendeiner Form over HTTP definiert ist, aber im weitesten Sinne ist es natürlich so eine HTTP-RPC-Schnittstelle, weil du rufst irgendwelche Kommandos auf, die in der URL enkodiert sind und bekommst das Resultat dann. Also vielleicht hätte man das früher oder auch jetzt noch im Bankenwesen oder so mit SOAP gelöst.",
+            "start": 230467,
+            "end": 252860,
+            "confidence": 0.8224,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Und diese kleine Diskussion zwischen uns zeigt ja gerade schon, warum diese Folge eine Daseinsberechtigung hat. Weil du bist ja nicht erst seit gestern in diesem Internet unterwegs und du hast mit hoher Wahrscheinlichkeit schon viele APIs bedient und auch programmiert und dabei vielleicht auch gedacht, das sind alles REST APIs. Aber wenn man mal ein bisschen genauer nachfragt, was du da eigentlich machst und so weiter, dann kommt man schon relativ schnell ins Straucheln, weil man, wie man an dieser Diskussion sieht, gar nicht so wirklich weiß, was ist denn jetzt wirklich REST? Was ist denn jetzt REST-konform? Was ist denn REST-full?",
+            "start": 253040,
+            "end": 284171,
+            "confidence": 0.8059999999999998,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Und was ist RPC und SOAP?",
+            "start": 284231,
+            "end": 286432,
+            "confidence": 0.5515,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Und allem drum und dran. Und deswegen geht diese Episode mal so ein bisschen um das Thema REST-APIs. Wir erklären mal so ein paar Hintergründe und lösen mal ein paar Mythen auf. damit ihr auch wirklich schön beim nächsten Agentur-Lunch schön richtig klug scheißen könnt.",
+            "start": 286492,
+            "end": 302241,
+            "confidence": 0.7538444444444445,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Oh, da bin ich ein Fan davon. Jetzt hast du mich.",
+            "start": 302401,
+            "end": 304742,
+            "confidence": 0.624,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Mega. Das, was ich bei dir gerade so rausgehört habe, ist das, und das ist auch das, was ich so aus meiner Engineering-Community irgendwie so mitkriege, dass die meisten denken, was REST ist, nämlich ein Server, der JSON-Dokumente mit einem Client über HTTP austauscht.",
+            "start": 304762,
+            "end": 319731,
+            "confidence": 0.797840909090909,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Was ja auch grundsätzlich stimmt, oder? Ist ja ein Teil von REST.",
+            "start": 319771,
+            "end": 322972,
+            "confidence": 0.7699166666666667,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Das ist richtig. Aber allein darüber sind ja, also in diesem Satz sind ja schon so viele Fragen meines Erachtens nach. Weil eigentlich, und jetzt kommt der Fun-Fact, jede statische Webseite, die nur HTML ausliefert im Internet, ist ebenfalls REST-konform.",
+            "start": 322992,
+            "end": 339004,
+            "confidence": 0.785175,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Was ist denn überhaupt REST? Mein Informationsstand ist ja, dass REST eigentlich nicht so genau definiert ist und dass da ja irgendjemand um die Ecke gekommen ist und einfach so mal REST in die Welt geworfen hat, aber das ist ja kein Protokoll im klassischen Sinne.",
+            "start": 339044,
+            "end": 351715,
+            "confidence": 0.8605869565217392,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Nee, das ist richtig. Also REST ist erstmal nur eine Abkürzung. REST steht nämlich für Representational State Transfer. Und was es eigentlich bedeutet, und dieser Begriff soll eigentlich den Übergang vom aktuellen Zustand zum nächsten Zustand in Klammern State, dafür Representational State Transfer, einer Applikation verbildlichen. Und die Zustandsübertragung erfolgt durch die Übertragung von Daten, die den nächsten Zustand repräsentieren.",
+            "start": 352155,
+            "end": 380398,
+            "confidence": 0.7602666666666669,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Ich glaube, du hast es geschafft, REST so zu erklären, dass es wirklich niemand mehr versteht.",
+            "start": 380812,
+            "end": 385574,
+            "confidence": 0.6365,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Das ist, was ich dir gerade vorgelesen habe, die Art offizielle Definition von der ganzen Thematik. Und deswegen ist das Thema auch so langweilig und deswegen verstehen die meisten es auch falsch, weil das, was ich gerade gesagt habe, das sagt eigentlich niemandem was.",
+            "start": 385594,
+            "end": 397460,
+            "confidence": 0.7293409090909091,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Aber HTTP hat ja keinen State. Wo haben wir denn da jetzt plötzlich einen State? Und wenn eine API dann dieses REST-Paradigma implementiert, was ist sie dann, wenn sie keine REST-API ist?",
+            "start": 397842,
+            "end": 434252,
+            "confidence": 0.7396250000000001,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Ja, da kommt jetzt ein neuer Begriff ins Spiel, der auch sehr viel falsch verstanden wird. Das nennt sich RESTful API. Und das ist, wo sich Leute immer im Internet zanken. Also geht mal irgendwie nach Google und teilt mal REST versus RESTful ein. Da werdet ihr recht schnell in irgendwelchen Subreddits landen, wo sich Leute um diese Begriffe kloppen.",
+            "start": 434292,
+            "end": 451381,
+            "confidence": 0.7960166666666664,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Wo wir wieder beim Thema sind, Naming Things ist ein schweres Problem in der Informatik.",
+            "start": 452219,
+            "end": 457461,
+            "confidence": 0.7832,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Völlig. Also jetzt nochmal ganz kurz zum Mitschreiben. Too long didn't read. REST ist das Architekturpattern. RESTful ist eine API, die das Architekturpattern implementiert. Deswegen gibt es eigentlich, Achtung, klugscheißer Modus on, keine REST API. Und jetzt ist es gerade. Jetzt kommt's. Jetzt sagt man hmmm. Wann habe ich denn eine API, die RESTful ist und was ist das denn eigentlich und wo kommt das her? Aber das war jetzt nur für den Klugscheißer-Modus, denn ich würde sagen, das interessiert eigentlich gar keinen. Sag einfach immer, du hast eine REST-API, weil für mich ist das so wie DevOps. Es gibt auch keine DevOps-Engineers. DevOps ist ja auch nur eine Kultur, wie du arbeitest. Trotzdem kann man die ganze Industrie nicht erziehen und wenn es da Jobs gibt wie DevOps-Engineers und REST-API-Entwickler, dann ist das halt so.",
+            "start": 457501,
+            "end": 502712,
+            "confidence": 0.773522058823529,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Okay, man darf also auch bei dir, bei dem strengen Andi, REST-API sagen, obwohl es eigentlich RESTfull ist. Aber was ist denn dann REST eigentlich?",
+            "start": 502952,
+            "end": 510336,
+            "confidence": 0.8732000000000001,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "REST selbst ist erstmal eine einfache Alternative zu anderen API-Web-Service-Architekturparadigmen, wie zum Beispiel SOAP oder VSDL.",
+            "start": 510416,
+            "end": 520741,
+            "confidence": 0.8399999999999999,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Kennst du überhaupt SOAP noch?",
+            "start": 521282,
+            "end": 522703,
+            "confidence": 0.6404,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Ich habe schon mehrere SOAP-APIs gebaut und sogar angesprochen, ja. Ich habe zwar noch nie für eine Versicherung oder Bank gearbeitet, aber Es gibt sehr viele Web-Services, die leider immer noch auf meinen SOAP-APIs basieren.",
+            "start": 522722,
+            "end": 535269,
+            "confidence": 0.7790857142857144,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Ich habe in der Tat, glaube ich, in meinem Leben nur eine wirklich produktive SOAP-API angesprochen. Auf der Uni haben wir massig SOAP-APIs programmiert oder irgendwie was damit gemacht. Ich hoffe, dass es heutzutage nicht mehr so richtig gelehrt wird. Kannst du in zwei Sätzen erklären, was SOAP ist für alle, die nach 2000 oder so geboren sind und Gott sei Dank dieses SOAP-Konstrukt nicht mehr so miterlebt haben?",
+            "start": 535309,
+            "end": 557581,
+            "confidence": 0.8329565217391307,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Soap selbst ist erstmal nur ein Internetprotokoll, beziehungsweise ein Netzwerkprotokoll. Soap selbst steht für Simple Object Access Protocol. Meines Erachtens ist das alles andere als simpel, aber ist eine andere Geschichte. Mit der Verbindung einer WSDL.",
+            "start": 558081,
+            "end": 572293,
+            "confidence": 0.7680833333333333,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Das war diese Schemasprache, die die Endpunkte definiert hat, oder? Und dann ist automatisch Code generiert worden aus diesen WSDL-XML-Docs. Schon wenn ihr dran denkt, wird mir schlecht.",
+            "start": 572333,
+            "end": 583721,
+            "confidence": 0.7951785714285713,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Ganz genau. WSDL steht für Web Service Description Language. Das besagt eigentlich nur, wie sieht hier mein Interface über das Internetprotokoll SOAP eigentlich aus. Dieses Web Service Description Language hat man dann in XML formatiert, beziehungsweise rausgegeben. Und daraufhin konnten dann Clients Code generiert werden. Und dann hat man eigentlich in seiner Programmiersprache mit diesen Objekten und mit den Datentypen gearbeitet. Schon fast eigentlich wie gRPC meines Erachtens nach. Mit gRPC hast du auch einen Vertrag und die WSDL, die hat dir ja einen API-Contract gegeben und dann hast du Code generiert, den in deine Library eingebunden und dann unten drunter konntest du damit sprechen. Der große Nachteil war natürlich dieser super Overhead, weil du hast natürlich immer ziemlich viel mit XML rumhantiert und also da war mehr Metadaten im Spiel als eigentliche Daten, die über die Leitung gingen.",
+            "start": 583741,
+            "end": 635861,
+            "confidence": 0.8061726618705036,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Ich glaube aber im Business-Umfeld ist es durchaus noch eine API-Form, die sehr viel Anwendung findet und auch, glaube ich, teilweise noch Stand der Technik ist. Also es ist schon etwas, was man vielleicht im Business-Umfeld sehr wohl ständig verwenden muss heutzutage noch. Das Schlimme an SOAP ist ja, was ich jetzt auch gerade gelernt habe erst, ist, dass die W3C dahinter steckt. Ich habe mir gedacht, die W3C steht für einfache Sachen, sowas wie für REST, aber die haben auch SOAP irgendwie am Gewissen. Aber kommen wir mal zurück zu REST. Okay, es ist eine Alternative zu SOAP, zur SIMPLE Variante. Was ist denn REST? Ist das die komplexe Variante, wenn SOAP die SIMPLE Variante ist?",
+            "start": 636081,
+            "end": 671679,
+            "confidence": 0.7789401709401709,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Es gilt als einfache Alternative, aber der Unterschied ist natürlich auch, und das ist das wesentliche Merkmal von REST, dass es dafür designt wurde, um zwei Maschinen miteinander kommunizieren zu lassen, also die Maschinen-zu-Maschine-Kommunikation. REST selbst baut eigentlich 100% auf HTTP auf, weil HTTP, das Protokoll, die benötigte Infrastruktur bereits mitgibt. Also sowas wie ein HTML und XML-Parser, die Sicherheitsmechanismen, die verschiedenen Methoden, getPost und so weiter und so fort. Also all das, was das HTTP-Protokoll mitliefert, da wird obendrauf was gesetzt und somit sind natürlich viele Grundprobleme bereits gelöst.",
+            "start": 672079,
+            "end": 709178,
+            "confidence": 0.8588888888888887,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Könnt ihr dann REST aber auch mit was anderem verwenden oder bin ich da wirklich auf HTTP eingeschränkt, dass es nur über HTTP oder HTTPS natürlich funktioniert?",
+            "start": 709518,
+            "end": 718287,
+            "confidence": 0.7563333333333334,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Also laut der Spezifikation, laut der Theorie, kannst du auch dein eigenes Protokoll verwenden. Dein eigenes Protokoll muss ein paar Prinzipien standhalten, da kommen wir gleich zu. Aber prinzipiell ist REST selbst nicht an HTTP gebunden, das ist das Schöne daran.",
+            "start": 718568,
+            "end": 733641,
+            "confidence": 0.8444634146341463,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Und wann ist das Ganze dann erfunden worden, bzw. warum ist es erfunden worden, wenn es eSOAP als die simple Variante gibt?",
+            "start": 733681,
+            "end": 740106,
+            "confidence": 0.7840909090909091,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Also warum es erfunden wurde? Also was die Motivation vom Erfinder war, kann ich dir nicht sagen. Mit hoher Wahrscheinlichkeit hat dieser Mensch sehr viele APIs mit RPC und SOAP implementiert. Oder vielleicht wollte dieser Mensch auch einfach nur einen Doktortitel der Philosophie haben. Denn im Jahr 2000 ist nämlich die Doktorarbeit, die sogenannte Dissertation von Roy Fielding erschienen. Und die komplette Doktorarbeit ging um diesen REST-Architekturstil.",
+            "start": 740146,
+            "end": 767228,
+            "confidence": 0.8546119402985073,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Und der hat aber dieses Wort REST dann geprägt. Also es gab es nicht davor schon, sondern er hat es mit seiner Doktorarbeit dann in die Welt gesetzt.",
+            "start": 767248,
+            "end": 775434,
+            "confidence": 0.820607142857143,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Meines Wissens ja.",
+            "start": 775454,
+            "end": 776935,
+            "confidence": 0.8786666666666667,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Beziehungsweise mit seiner Forschung wahrscheinlich davor, aber das ist halt das initiale Dokument zu dem Ganzen.",
+            "start": 776955,
+            "end": 782138,
+            "confidence": 0.7389374999999999,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Das ist mein Wissensstand. Ich habe den Begriff vorher noch nicht gehört. Und alles das, was ich auch gefunden habe, geht auf Roy Fielding zurück. Und wer möchte, kann die Dissertation auch lesen. Die verlinkt man natürlich in den Shownotes. Wie so eine Doktorarbeit halt ist, ist sie halt ziemlich lang. Aber im Wesentlichen beschreibt halt ein Kapitel nur dieses Architekturparadigma.",
+            "start": 782515,
+            "end": 801126,
+            "confidence": 0.8242786885245901,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Ich merke da schon wieder so einen unterschwelligen Angriff, dass Doktorarbeiten immer so lang sind. Es gibt eine Doktorarbeit in Österreich, die ist nur sieben Seiten lang, ein mathematischer Beweis. Also es gibt auch kurze Doktorarbeiten.",
+            "start": 801386,
+            "end": 813036,
+            "confidence": 0.7716111111111109,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Ich habe damals in meiner Uni gelernt, für meine Bachelorarbeit brauche ich mindestens 40 Seiten. Gilt das für so eine Doktorarbeit nicht?",
+            "start": 813356,
+            "end": 818800,
+            "confidence": 0.5531363636363638,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Ich glaube, wenn du so einen intelligenten Beweis machst, dass der auf sieben Seiten Platz hat, dann ist es wahrscheinlich okay.",
+            "start": 818840,
+            "end": 824985,
+            "confidence": 0.7225238095238096,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Auf jeden Fall hat er die ganze Arbeit 2000, im Jahr 2000, also vor 23 Jahren veröffentlicht. Aber irgendwie hab ich so das Gefühl, in den ersten zehn, zwölf Jahren kam das so wirklich gar nicht raus. Weil ich hab so das Gefühl, erst ab 2010, 2012, 2014 kamen so die ganzen APIs. Und da kommt auch noch der Begriff Mashup her. Vielleicht hast du das schon mal gehört, wenn man zwei APIs miteinander verbindet und so. Boah.",
+            "start": 825025,
+            "end": 848388,
+            "confidence": 0.788974358974359,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Oh, das waren noch schöne Zeiten, ja. In den 2000er-Jahren.",
+            "start": 848468,
+            "end": 850970,
+            "confidence": 0.4439,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Ich glaub, das war so die Hochzeit des Web 2.0.",
+            "start": 851030,
+            "end": 854469,
+            "confidence": 0.6592999999999999,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Aber jetzt wissen wir immer noch nicht, was REST eigentlich ausmacht oder wie REST eigentlich definiert ist.",
+            "start": 854479,
+            "end": 859249,
+            "confidence": 0.8632352941176471,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Prinzipiell sagt man bei REST, dass es sechs Prinzipien gibt, die zu erfüllen sind. Und ich gehe jetzt ganz kurz auf vier Prinzipien relativ schnell ein, weil das für viele Leute irgendwie logisch ist. Und zwei schauen wir uns dann mal im Detail an.",
+            "start": 859269,
+            "end": 875476,
+            "confidence": 0.7897727272727271,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Das heißt aber, wenn du jetzt von Prinzipien sprichst, das ist keine Hardcore-Definition, die irgendwie eben Protokoll, was auf die tiefste Ebene runter geht, sondern das ist auf einem recht abstrakten Level, wenn es um Prinzipien geht.",
+            "start": 875516,
+            "end": 887107,
+            "confidence": 0.7702162162162164,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "So abstrakt ist das jetzt nicht. Und du wirst jetzt gleich bei einem dieser Prinzipien merken, dass das fast in der Praxis gar keine Relevanz spielt. Also das ist so, ich sag mal, sein Wunsch.",
+            "start": 887127,
+            "end": 896218,
+            "confidence": 0.7668571428571429,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Ja, das ist immer bei Doktorarbeiten. Die spielen nie eine Relevanz in der Praxis. Das ist eigentlich dein Text. Aber okay, dann schieß mal los mit den sechs Prinzipien.",
+            "start": 896717,
+            "end": 905041,
+            "confidence": 0.7581724137931034,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Also eine REST API oder eine RESTful API sollte eher dem kleinen Serverarchitekturmodell folgen. Das bedeutet, dass die Aufgaben klar verteilt sind, dass du Server hast, der unabhängig skaliert werden kann und dass der Client nicht dieselbe Aufgabe hat wie der Server. Und jetzt sagt man, hä, Client-Server-Architektur, was gibt's denn noch? Ja, eine Alternative wäre halt das Peer-to-Peer-Modell, wo du selbst, also wo jeder Teilnehmer an dieser Kommunikation alle Aufgaben hat. Ja, bestes Modell war früher Napster oder E-Donkey oder so.",
+            "start": 905181,
+            "end": 937017,
+            "confidence": 0.7961341463414633,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Was ist denn das heutige klassische Beispiel? Krypto?",
+            "start": 937558,
+            "end": 940200,
+            "confidence": 0.8859999999999999,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Ja, oder IPFS oder ähnliches, genau.",
+            "start": 940220,
+            "end": 942582,
+            "confidence": 0.8401666666666666,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "IP was?",
+            "start": 942662,
+            "end": 943162,
+            "confidence": 0.8085,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "IPFS. Das ist was? Geschärterst distributiertes Filesystem.",
+            "start": 943242,
+            "end": 947566,
+            "confidence": 0.8004285714285714,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Auf IP-Basis. Oder woher kommt das IP?",
+            "start": 947606,
+            "end": 950688,
+            "confidence": 0.8877142857142857,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Interplanetary Filesystem.",
+            "start": 950748,
+            "end": 952789,
+            "confidence": 0.778,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Ah, okay. Das sagt mir was. Okay, Client-Server-Architektur. Paradigma 2?",
+            "start": 952870,
+            "end": 957842,
+            "confidence": 0.6896,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Das ist das Caching beziehungsweise in Klammern das HTTP Caching und deswegen hatte ich gesagt, HTTP selbst bringt schon die ganze Infrastruktur mit. Der Server sollte immer die Meldung geben, hey dieser Content kann gecached werden und der Client sollte in der Lage sein zu cachen. Relativ einfach, relativ langweilig.",
+            "start": 957852,
+            "end": 975405,
+            "confidence": 0.78664,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Aber ist ja eigentlich eigenartig, dass man sowas definiert, weil es ja eigentlich unabhängig von dem Protokoll oder von dem Paradigma, wenn wir es so nennen, eigentlich funktionieren sollte Caching. Also da vermischt er doch irgendwie Verantwortlichkeiten, oder?",
+            "start": 975760,
+            "end": 988649,
+            "confidence": 0.7348421052631582,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Ja, Moment. Es geht ja noch weiter. Und das Argument, was du jetzt bringst, das kann man jetzt nochmal bringen. Und zwar ist nämlich das dritte Paradigma mehrschichtige Systeme. Das bedeutet, Der Standard sagt, okay, es reicht dem Anwender lediglich eine Schnittstelle anzubieten, aber dahinter sollte alles in Layer aufgeteilt sein und dass jeder Layer nur seinen vorherigen und den nächsten kennt und jetzt gar nicht so einfach den kompletten Stack. Und das ist eigentlich, wenn man so möchte, die Standardarchitektur des Webs. Du kannst ein paar Proxy davor hängen und davor noch ein Cache und davor noch dies und dafür noch ein Loadbalancer und so weiter. Du merkst schon, es geht halt wirklich komplett auf dieses, wie ist dieses Internet eigentlich aufgebaut. Deswegen, da kann man dasselbe Argument bringen, warum wird das von der Architektur vorgegeben.",
+            "start": 989049,
+            "end": 1032193,
+            "confidence": 0.7909343065693428,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Okay, gibt es irgendwelche Paradigmen, die jetzt spezifisch sind und nicht nur best practices beschreibt, die es sowieso gibt, so wie Caching oder das Aufteilen von Schichten oder Aufschichten?",
+            "start": 1032492,
+            "end": 1043342,
+            "confidence": 0.8307241379310345,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Ja, ein Paradigma, da könnte man sagen, ja, das ist gegeben im Internet, oder das HTTP-Modell hat das von Haus aus mit, und zwar ist das die Zustandslosigkeit, also das Stateless-Sein.",
+            "start": 1043801,
+            "end": 1054432,
+            "confidence": 0.8754838709677417,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Moment, im Namen kommt ja State vor, und das hast du erklärt, okay, man wechselt von einem State in einen anderen State, und jetzt kommt die Zustandslosigkeit dazu.",
+            "start": 1054472,
+            "end": 1062360,
+            "confidence": 0.7586785714285714,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Ja, hier geht es darum, dass der Server selbst kein State hat, sondern der ganze State eigentlich nur im Client sein muss und dass bei einem Request an die API, an den Server eigentlich alle Daten mitgesendet werden. Und das meint er mit representational state transfer, dass der Client mit der Datenübertragung Elemente auf dem Server von einem Zustand in den nächsten bewegen kann. Also die ganzen Leute im Infrastrukturbereich sagen, ja, ist ein Traum. Das bedeutet, ich kann ja zehn Millionen Server da hinstellen und alles läuft. Und genau das ist es. Diese ganze Zustandslosigkeit begünstigt halt die Skalierbarkeit beziehungsweise die Ausfallsicherheit.",
+            "start": 1062840,
+            "end": 1104573,
+            "confidence": 0.8271165048543693,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Aber ich muss ja trotzdem irgendwie Identifizierung machen oder mich identifizieren, dass ich irgendeine Ressource ändern kann oder abrufen kann. Habe ich dann nicht automatisch irgendwo einen State?",
+            "start": 1104613,
+            "end": 1114696,
+            "confidence": 0.7645714285714288,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Solange der Client den State halt immer mitliefert, klar. Aber keiner sagt, dass du die Authentifizierung zum Beispiel in deiner API machen musst. Du kannst ja da vorhängen, je nachdem, was für ein Endpunkt das ist. Oder du lagerst die Sache durch so ein Token oder ähnliches aus, was dann natürlich Logik in deiner API ist. Deswegen sagt man ja auch immer, du hast ein OAuth-Token oder was weiß der Geier nicht. Und das lieferst du ja mit in den Request. Jede Anfrage selbst ist in sich geschlossen, sodass der Client die Daten vorhalten muss, aber nicht der Server, weil sonst müsstest du ja mit deinem Client immer zum selben Server connected sein. Da sagt ja jeder Infrastruktur-Mensch heute, bist du entdeppert?",
+            "start": 1114716,
+            "end": 1154355,
+            "confidence": 0.7496803278688521,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Okay, trotzdem waren es bisher jetzt relativ allgemeine Dinge. Wo kommt denn dieses ganze klassische Ressourcen und ich habe eine URL für eine Ressource, das was man so als Rest-Endpunkt kennt, kommt das gar nicht vor in dieser Spezifikation?",
+            "start": 1155405,
+            "end": 1169415,
+            "confidence": 0.7469230769230767,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Ja, doch. Das ist nämlich das Prinzip der einheitlichen Schnittstelle. Und das ist eigentlich der spannende Teil da, wo wir mal ans Fleisch gehen. Ja, oder für die ganzen Veganer vielleicht ans Tofu oder ähnliches. Auf jeden Fall ist das das Hauptunterscheidungsmerkmal von allen anderen weiteren Architekturen oder beziehungsweise der Punkt, was die meisten unter REST verstehen und zwar ist das die Adressierbarkeit von Ressourcen. Jede Ressource oder in der Praxis gesprochen jeder Datensatz oder alles das, was du über deine API irgendwie abfragen oder behandeln möchtest. Stell dir vor, du hast ein CRM-System und du möchtest einfach User abfragen. Dann ist ein User eine sogenannte Ressource. So heißt das in diesem API-Sprech. Und jede Ressource ist über eine sogenannte URI verfügbar. URI hatten wir schon letztens. Ein Uniform Resource Identifier. Oder auch, was ich gelesen habe, was ich sehr schön fande, die Straße und Hausnummer im Netz.",
+            "start": 1169455,
+            "end": 1227789,
+            "confidence": 0.8275405405405404,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Oh, das ist sehr schön. Das hätten wir in Episode 71 mit Tim Berners-Lee und das World Wide Web hätten wir verwenden können. Wäre sehr schön gewesen. Okay, die Hausnummern. Das heißt, alles, was ich so an Ressourcen herumliegen habe, die haben eine Hausnummer.",
+            "start": 1228529,
+            "end": 1242226,
+            "confidence": 0.7413181818181819,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Ja, und eine Straße natürlich. Also nehmen wir mal ein Beispiel, was vielleicht jeder kennt. Jeder kennt ein Repository auf GitHub. Und du kriegst die Informationen des Repositories, indem du sagst, okay, hallo liebe GitHub API, unter dem Pfad slash Repos slash Owner slash Repository-Name. Möchte ich jetzt zum Beispiel die Webseite von unserem Engineering-Kiosk haben, würde ich sagen api.github.com slash Repos slash Engineering-Kiosk slash Webpage.",
+            "start": 1242246,
+            "end": 1268417,
+            "confidence": 0.7397575757575754,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Also wenn du unsere Webseite haben willst, gibst du einfach an engineeringkiosk.dev, aber wenn du den Source-Code zu unserer Webseite haben willst mit allen Algorithmen und der Logik dahinter, dann greifst du auf engineering-kiosk-website zu bei GitHub.",
+            "start": 1268457,
+            "end": 1281887,
+            "confidence": 0.6874324324324325,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Genau, und wenn ich jetzt auf dein Repository zugreifen wollen würde, dann würde die URL anders bedeuten. Also jedes Repository auf GitHub hat einen eigenen API-Endpoint, eine eigene URI, eine eigene Straße- und Hausnummer. Und jetzt kommt's. Möchte ich jetzt die Issues von dem Engineering-Kiosk haben, dann würde das sagen api.github.com slash repos slash engineering-kiosk slash webpage slash issues.",
+            "start": 1281927,
+            "end": 1309166,
+            "confidence": 0.7974745762711865,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Also eine Hierarchie. Umso weiter nach rechts ich gehe, umso tiefer gehe ich in der Hierarchie und ich habe natürlich immer irgendwie dadurch Abhängigkeiten definiert, also dass die issues jetzt speziell zu diesem Repository-Website gehört und nicht die issues keiner von irgendeinem anderen Repository.",
+            "start": 1309206,
+            "end": 1326696,
+            "confidence": 0.7897727272727274,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Genau. In der Spezifikation bzw. in der Dissertation wird jetzt nicht gesagt, du musst eine Hierarchie aufbauen. In der Regel wird das aber so gemacht, weil der Mensch halt so denkt. Du bist in einem Repository. Ein Repository hat Issues und Pull Requests. Wenn du jetzt auf ein spezifisches Issue gehen würdest, dann würdest du vielleicht noch die Issue-Nummer hinten dran hängen usw. Dass du halt mehr oder weniger so einen Baum hast.",
+            "start": 1327096,
+            "end": 1349332,
+            "confidence": 0.766301369863014,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Und was bekomme ich da dann zurück? Die Webseite, JSON, XML?",
+            "start": 1349612,
+            "end": 1354556,
+            "confidence": 0.7737272727272727,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Ja, das kann ich dir jetzt nicht beantworten, weil da bist du nämlich frei zur Definition. Das ist ja das Tolle dabei. Eine REST API, jeder denkt immer, ach, da kommt immer JSON zurück. Was da zurückkommt, ist eigentlich total Wumpe, beziehungsweise es ist nicht spezifiziert. Was du machen kannst ist, und das ist so der Internetstandard, die meisten geben JSON raus. Viele APIs, den kannst du aber über einen HTTP-Header auch noch mitgeben, in welchem Format du denn die ganze Thematik gerne hättest. Oh, du hättest das gerne in XML, top. Du hättest das gerne in HTML, top. Du hättest das gerne in Binär, top. Das bedeutet die Repräsentation deiner Ressource. Das obliegt der Fähigkeit der API. JSON selbst hat sich halt sehr bewährt, weil ich denke mal mit hoher Wahrscheinlichkeit sehr viele API-Clients mit JavaScript geschrieben werden und du somit natürlich nativen Zugriff auf die JavaScript-Objektnotation hast.",
+            "start": 1354576,
+            "end": 1403419,
+            "confidence": 0.7820536912751676,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "In dem Bereich ist es natürlich dann auch praktisch, die ganzen HTTP-Headers zu haben, wo ich dann irgendwelche Accept-Headers einbauen kann, dass ich zum Beispiel JSON akzeptiere und dann bekomme ich eben JSON zurück oder ich kann eine XML reinschreiben, dann bekomme ich unter Umständen XML zurück.",
+            "start": 1403799,
+            "end": 1418502,
+            "confidence": 0.6967659574468085,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Genau, DialogWar definiert der Client nämlich das, was er haben möchte. Es geht aber nicht nur um die HTTP-Headers, sondern auch um die sogenannten HTTP-Methoden. Weil, wenn du jetzt schon jedes Repository unter einer eigenen URI hast, also unter einer eigenen Straße- und Hausnummer, dann kannst du ja mehrere Operationen damit machen. Du kannst es ja updaten, du kannst zum Beispiel Namen updaten, du kannst das ganze Ding löschen, du kannst das ganze Ding nur lesen, du kannst oder vielleicht einfach nur ein neues Repository anlegen. Aber die Frage ist ja, wie machst du das denn jetzt? In vielen anderen APIs, wie zum Beispiel auch in RPC, hat man dann sowas wie github.com slash repos slash mein neues repo slash new oder so.",
+            "start": 1419508,
+            "end": 1455635,
+            "confidence": 0.7706097560975612,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Also man hat über die URL definiert, was man eigentlich machen will und REST versucht es jetzt aber über die Methoden, die es in HTTP sowieso schon gibt, zu definieren.",
+            "start": 1455675,
+            "end": 1464863,
+            "confidence": 0.8705,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Genau. Die API auf dem Server implementiert dann einfach nur, in Anführungszeichen einfach nur, weil das ist ja in der Regel der harte Part, anhand der HTTP-Methode die Logik zu ändern. Und zwar, bei einer HTTP-GET-Methode gibst du alle Informationen von diesem Repository an den Client zurück. Bei der HTTP-DELETE-Methode löscht du das Repository, was dann natürlich bei der nächsten HTTP-GET-Methode natürlich nichts wieder zurückgibt, weil die Ressource ja nicht mehr existiert, weil du sie ja gerade gelöscht hast.",
+            "start": 1465483,
+            "end": 1490972,
+            "confidence": 0.7965696202531645,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Wie viele Methoden gibt es eigentlich im HTTP-Standard? Wir haben das ja in Episode 71 schon beim Tim Berners-Lee besprochen, dass eigentlich viele Methoden ja gar nicht verwendet werden und man kennt irgendwie get, post and that's it. Und delete hat man vielleicht mal gehört oder wenn man REST APIs, sorry RESTful APIs verwendet, dann kennt man delete. Gibt es irgendwas anderes noch?",
+            "start": 1491432,
+            "end": 1511125,
+            "confidence": 0.8202857142857141,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Ich denke, es gibt viel, viel mehr Methoden, aber die, die ich noch kenne, wäre jetzt sowas wie Patch.",
+            "start": 1511905,
+            "end": 1517487,
+            "confidence": 0.8374210526315791,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Was heißt, du denkst? Wir sind hier in einem Podcast, um was zu lernen. Bist du nicht vorbereitet?",
+            "start": 1517507,
+            "end": 1522669,
+            "confidence": 0.7337777777777776,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Doch, bin ich. Gleich sage ich dir meine Lieblings-HTTP-Methode. Aber das, was ich gerade noch kenne, ist sowas wie Put, Patch, Head, Options, Trace und Connect. Das ist vielleicht noch so die, die im großen Standard sind. Aber meine Lieblings-HTTP-Methode ist die Bier-Methode.",
+            "start": 1522689,
+            "end": 1538797,
+            "confidence": 0.8015116279069768,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Kennst du die? Nein, glaube ich nicht. Also ich kenne viele Bier-Methoden, aber keine bei HTTP.",
+            "start": 1538837,
+            "end": 1545643,
+            "confidence": 0.7341250000000001,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Also mit Bier meine ich nicht den Bär, sondern wirklich das Getränk, ja? Nur weil wir sprechen ja hier die ganze Zeit halb Englisch, halb Deutsch, deswegen. Und das ist irgendwie so eine Sache, die weiß kaum jemand, beziehungsweise sehr viele Leute nicht. HTTP-Methoden sind einfach nur Zeichenketten, einfach nur Strings. Was du also machen kannst ist, du schreibst dir einen kleinen HTTP-Server in Node.js oder in Go, machst eine Route und lässt dir die genutzte HTTP-Methode ausgeben. Du startest deinen HTTP-Server und dann machst du einfach mal mit curl-x get auf deine URL, dann kommt als Response einmal get zurück. Wenn du jetzt curl-x beer machst, Kommt wir zurück natürlich haben browser und webserver und allem drum und dran so ein paar standardmethoden Implementiert und die haben dann gegebenenfalls auch ein anderes verhalten sowas wie post hast du vielleicht schon mal gesehen dass wenn du im browser ein formular abgeschickt hast und du machst reload dann sagt er dir achtung du sendest diese daten erneut ab das ist dann so ein spezielles verhalten implementiert im browser punkt ist aber Der HTTP-Standard erlaubt dir, deine Custom-HTTP-Methoden zu implementieren. Du könntest jetzt also eine komplette Story mit der Feuerwehr, mit Österreich, mit Skifahren und mit Wolfgang erzählen, nur über HTTP-Methoden. Wie geil wäre das denn, Wolfgang?",
+            "start": 1545663,
+            "end": 1626567,
+            "confidence": 0.7762651162790702,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Ich werde mir überlegen, meinen eigenen HTTP-Server zu schreiben dafür.",
+            "start": 1627101,
+            "end": 1630765,
+            "confidence": 0.6835,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Jetzt muss ich noch kurz als Warnung dazu sagen, wir sprechen hier gerade in dem REST-Architekturparadigma über einheitliche Schnittstelle. Und die Dissertation sagt dann natürlich auch, ja, du kannst auch eigene HTTP-Methoden für deine REST-API implementieren. würde er natürlich ganz stark nicht empfehlen, da diese natürlich industrieweit nicht anerkannt sind. Obwohl ich natürlich eine Petition unterschreiben würde, wenn jemand die Beer-Methode implementieren würde in ein NGINX oder ähnliches.",
+            "start": 1630785,
+            "end": 1658846,
+            "confidence": 0.8347647058823529,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Ich habe auch gerade gecheckt, es gibt eine offizielle Webseite, die die offiziell registrierten Methoden auflistet, also bei der IANA.org. Verlinken wir gerne. Sind mehr als erwartet. Ich hatte ja im Kopf, es sind irgendwie diese 10, die es gibt. Und ich hab auch mal gegoogelt, im originalen 0.9 Standard von 92 sind auch schon delete, boot, get und so weiter drinnen. Aber bei der aktuellen Liste sind sicher so 20 Methoden mal, würde ich sagen, drinnen. Da gibt's log und label und copy und batch und search und trace ist ein Klassiker. Also es gibt schon einige Methoden, die auch offiziell in RFCs definiert sind, die dann in jeweiligen Protokollen halt dementsprechend auch verwendet werden. Also man kann da wirklich sehr tief gehen. Und über diese Header, die ein Web-Server oder auch ein Client angeben kann, was für Methoden unterstützt werden, kann man ja auch so kommunizieren mit dem Server und dementsprechend mitteilen, was man denn für Methoden unterstützt. Und wenn da Bier drinnen steht, kann man natürlich dann auch die Bier-Methode gemütlich server- und client-seitig verwenden.",
+            "start": 1658906,
+            "end": 1724380,
+            "confidence": 0.8051123595505619,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Genau, dafür kann man in der Regel den Endpunkt mit den Methoden head oder options anfragen und dann kriegst du in der Regel bei einem gut implementierten Server all die Möglichkeiten zurück. Und da sind wir aber bei dem Punkt, dass dieses Architekturpattern für die Maschine-zu-Maschine-Kommunikation ausgelegt ist und nicht eigentlich für den Menschen. Jetzt muss man natürlich noch einmal ganz kurz etwas sagen zu den HTTP-Methoden und wie sie bei einer RESTful-Application angewendet werden. Beziehungsweise das, was der User erwarten kann. Und zwar wird gesagt, dass die GET-Methode sicher sein muss. Sicher sein bedeutet, dass es bei der Ausführung keine Seiteneffekte gibt. Was sind Seiteneffekte? Es wird eine Ressource angelegt, gelöscht oder ähnliches. Das bedeutet, bei einer Get-Methode wird nichts modifiziert, sondern es werden nur Daten gelesen. Das ist eine Grundvoraussetzung. Genauso wie eine Grundvoraussetzung ist, dass die Methoden Get, Head, Put und Delete idempotent sein müssen. Was bedeutet idempotent? Ich hau auf F5 und immer kommt das gleiche Ergebnis raus. Das ist also nicht wie dein Skript, was du gerade debuggst. Wenn das nicht funktioniert, nochmal ausführen, das funktioniert. So ist das nicht, sondern diese Methoden müssen immer das gleiche Ergebnis liefern.",
+            "start": 1724940,
+            "end": 1795422,
+            "confidence": 0.831582474226805,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Gibt's übrigens auch zwei Spalten, safe und idempotent, bei dieser offiziellen Auflistung. Post zum Beispiel ist weder safe noch idempotent, weil bei Post lege ich natürlich was an und da passiert dann irgendwas gleich wie Patch.",
+            "start": 1795742,
+            "end": 1809106,
+            "confidence": 0.8574722222222223,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Genau, bei Post-Operationen, bei Patch-Operationen muss man ganz vorsichtig sein, weil da sind nämlich Nebeneffekte erlaubt, also Seiteneffekte. Nochmal ganz kurz als Korinthen-Kacka-Frage, mit welcher HTTP-Methode arbeitet SOAP üblicherweise?",
+            "start": 1809126,
+            "end": 1821630,
+            "confidence": 0.8722758620689656,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Läuft SOAP immer über HTTP? Ich könnte ja nicht mal das beantworten.",
+            "start": 1822130,
+            "end": 1825833,
+            "confidence": 0.7144166666666667,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Nee, ich glaube, das ist so wie REST oder beziehungsweise RESTful Applications. Muss es über HTTP laufen? Nö. Ist HTTP da und ist convenient? Ja. Machen das 99,9%? Ja. Du cheatest gerade. Du willst googeln. SOAP, sofern es denn über HTTP läuft, basiert in der Regel immer auf POST-Requests.",
+            "start": 1825873,
+            "end": 1844748,
+            "confidence": 0.7733061224489797,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Das heißt, auch wenn ich irgendwas abfrage, ist es eigentlich ein Bots-Request.",
+            "start": 1845328,
+            "end": 1849130,
+            "confidence": 0.7986666666666667,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Ganz genau.",
+            "start": 1849170,
+            "end": 1849811,
+            "confidence": 0.6265,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Das heißt, es ist nicht HTTP-konform eigentlich.",
+            "start": 1849851,
+            "end": 1852772,
+            "confidence": 0.7505714285714287,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Was ja eigentlich faszinierend ist, weil das Ding gibt dir halt einen Vertrag mit, mit der WSDL und so weiter. Aber naja, gut, lassen wir es bei dem. So, und jetzt kommen wir zum Hauptpunkt, was einer der wichtigsten Eigenschaften laut Roy Fielding ist. Und zwar nennt sich das HateOAS. Hypermedia as the engine of application state. Hast du eine Ahnung, was das ist?",
+            "start": 1852792,
+            "end": 1876268,
+            "confidence": 0.7515468750000002,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Keine Ahnung. Ich würde es ja Hate OS lesen. Klingt viel cooler. Hat aber nichts mit Hassen zu tun wahrscheinlich, oder?",
+            "start": 1876308,
+            "end": 1883716,
+            "confidence": 0.765047619047619,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Ne, hat nichts mit Hassen, nichts mit Böswilligkeit zu tun. Und da geht es eigentlich und allein um die sogenannte Discoverability deiner API. Eigentlich braucht eine RESTful API nur einen Einstiegspunkt und ab da soll die Maschine, dein Client, die ganze API discoveren können.",
+            "start": 1883756,
+            "end": 1903078,
+            "confidence": 0.8691136363636367,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Egal wo ich einsteige oder muss das irgendwie ein zentraler Punkt sein?",
+            "start": 1903138,
+            "end": 1906742,
+            "confidence": 0.8173333333333334,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Umso tiefer du einsteigst, umso weniger Optionen für die nächsten Schritte gibt es natürlich. Vielleicht kurz zur Erklärung, wie läuft das? Du fragst eine Ressource über eine API an und in der Response kriegst du eine Liste von weiteren Endpunkten mit, was du mit der Ressource noch machen kannst.",
+            "start": 1907162,
+            "end": 1922996,
+            "confidence": 0.8169591836734693,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Okay, was heißt das jetzt bei dem GitHub-Beispiel, wenn wir da ein Repository haben, was bekommt man dann da zurück für Optionen?",
+            "start": 1923216,
+            "end": 1929762,
+            "confidence": 0.7687727272727273,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Wenn du zum Beispiel meinen GitHub-User anfragst, gib mir alle Informationen vom Andi Grunwald, dann bekommst du unten in der Response ein paar Links mit. Und diese Links werden sein, zeig dir jetzt die Repositories vom Andi Grunwald an, zeig dir die Leute an, die in der Andi Grunwald folgt und zeig die Public-SSH-Keys von ihm an. Dann kann dein Client automatisch sagen, ah, okay, ich gehe jetzt auf die Follower. Und hangelt sich von da automatisch weiter. Du kriegst immer nur die Links von den Ressourcen, die du abfragst, was du damit noch machen kannst.",
+            "start": 1929782,
+            "end": 1960784,
+            "confidence": 0.7652708333333332,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Aber ist das irgendwie definiert? Weil das ist ja dann auch nicht klar definiert, wie das in JSON zum Beispiel oder was für ein Key das Ganze abgelegt ist. Also da muss ich dann schon wissen, wie die API aufgebaut ist, oder? Oder die Zusatzinformation eben haben, wie diese weiterführenden Optionen angegeben werden.",
+            "start": 1960824,
+            "end": 1977972,
+            "confidence": 0.8096415094339625,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Wie dieses Hypermedia as an Engine of Application State wirklich implementiert wird, das hängt von dem Standard ab. Es gibt ein paar verschiedene Standards bzw. der Implementierung, wie zum Beispiel JSON-LD. JSON-LD steht hier für Linked Data, JSON-Linked Data. Oder es gibt die Hypertext Application Language, sogenannt HAL. Das macht, soviel ich weiß, GitHub. Und dort in diesen Standards sind dann die JSON-Keys, unter denen du deinen ersten Links findest, implementiert. Das ist also immer noch die Flexibilität von dem Autor deiner REST-API.",
+            "start": 1978508,
+            "end": 2015434,
+            "confidence": 0.8160602409638554,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Da sieht man schon wieder sehr deutlich die Handschrift von Tim Berners-Lee, dass alles irgendwie verlinkt sein sollte und Ressourcen verlinkt werden und miteinander verknüpft werden, um eben mehr Informationen zu bekommen.",
+            "start": 2015867,
+            "end": 2029145,
+            "confidence": 0.8664062500000002,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Aber jetzt kommt ja das Geile an den ganzen Thematik. Auf der einen Seite ist das meines Erachtens nach die 1 zu 1 Umsetzung des ursprünglichen Zweckes Maschine zu Maschine Kommunikation. Weil du schmeißt der Maschine einen Endpunkt hin und durch die Response, weil die Response ja die weiteren Links enthält, kann die Maschine sich den Link schnappen und den nächsten Request machen. Also von Dokument, von Ressource zu Ressource hoppen. Was ja eine super geile Sache ist. Dann die zweite Geschichte ist, man könnte sogar so weit gehen, dass eine RESTful API eigentlich ein dynamisches Interface ist. Weil wenn wir sagen, die Clients haben gar nicht die Endpunkte hardcodiert, was sie eigentlich gar nicht dürften, sondern sie folgen immer den Links, die in der Response sind, dann heißt das ja auch, dass ich die Struktur und die Erreichbarkeit, also die Straße und die Hausnummer meiner Ressourcen ändern kann. Ohne dass es ein Breaking-Change ist. Weil die Clients folgen ja den Links der Response. Also eigentlich ist das die ...",
+            "start": 2029185,
+            "end": 2085063,
+            "confidence": 0.8128000000000003,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Sofern der Einstiegspunkt natürlich gleich bleibt. Also ...",
+            "start": 2085072,
+            "end": 2088304,
+            "confidence": 0.834875,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Natürlich, natürlich. Der Einstiegspunkt muss gleich bleiben. Aber ich mein, das ist die Eins-zu-eins-Umsetzung von einer losen Kopplung. Wo jeder Softwarearchitekt in der Softwareindustrie immer von möchte, ja, diese Klasse darf nicht mit der anderen interagieren, Ja, aber warum machen das Leute bei REST-APIs nicht? Wie viele APIs kennst du, die diese Links zurückgeben? Anscheinend sind sie ja dir noch nie aufgefallen. Das würde dann auch bedeuten, dass du noch nie einen Client geschrieben hast, der diesen Links automatisch folgt. Also eigentlich hast du noch nie eine richtige REST-API genutzt, beziehungsweise sie so implementiert, wie sie implementiert werden sollte.",
+            "start": 2088315,
+            "end": 2120435,
+            "confidence": 0.8284949494949494,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Ja, ich würde jetzt gerne irgendein Gegenargument finden, aber du hast wahrscheinlich recht.",
+            "start": 2121035,
+            "end": 2126219,
+            "confidence": 0.7097692307692308,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Und deswegen habe ich dieses GitHub Beispiel genommen. Ich finde die GitHub REST API unglaublich schön. Viele von diesen Sachen, die wir hier gerade besprechen, besonders diese Links, haben die alle drin. Die machen alles sauber mit Versionierung über HTTP-Header, mit Rate-Limiting über HTTP-Header und und und. Und das ist ja das faszinierende, das ist ja einer meiner Hauptpunkte dieser Episode. Jeder denkt immer, ah ich hab schon ganz viel REST APIs gebaut und konsumiert und allem drum und dran. Aber irgendwie machen wir das ja alle falsch. Ich kenn kaum jemanden, außer Leute die Crawler implementiert haben, die das genau so machen. Die Links konsumieren und dann anhand der Links mir die neue Ressource-Uri nehmen und dann auf diese Ressource-Uri jumpen. Ich mach das ja auch nicht. Ich lese mir die Dokumentation von GitHub durch und suche mir den Link raus, wie ich an die Kommentare von der Pull-Request komme. Und dann baue ich die Request-Uri manuell zusammen. Was eigentlich totaler Blödsinn ist, weil im vorherigen Request hab ich ja die richtige Ressource mitgekriegt.",
+            "start": 2126259,
+            "end": 2188832,
+            "confidence": 0.8172514285714291,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Ich glaube, dass es ein ganz grundsätzliches Problem ist, dass man als Entwickler oder Entwicklerin ganz gerne irgendwas selber neu baut und sobald man so einen groben Einblick irgendwo hat, verwendet man dieses Protokoll oder was es auch immer ist und alles was dann dazukommt, baut man selbst ohne mal zu überlegen oder zu hinterfragen. kann das dieses Protokoll vielleicht schon oder kann das diese Library schon? Man sucht dann gar nicht mehr in der Doku. Zumindest geht es mir oft so. Man nimmt einfach an, ah, das Ding kann das sowieso nicht, ich muss das neu bauen und man baut eine eigene Lösung, obwohl es dann vielleicht einen Standard schon gäbe.",
+            "start": 2189132,
+            "end": 2221715,
+            "confidence": 0.80675,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Und was bedeutet das als Autor von so einer RESTful API? Das bedeutet natürlich zusätzlichen Aufwand, weil du musst ja in jeder Response die Möglichkeiten für diese Ressource URI ja wieder mitgeben. Zusätzliche Logik. Und wenn man jetzt für seine Agentur oder irgendeine Mobile App eine REST API baut, dann denkt man da halt oft nicht drüber nach. Und das finde ich halt... Kennst du dieses Emoji, wo halt so ein Kopf explodiert? Oder dieses Meme, wo jemand so... Und das ist für mich gerade so in meinem Kopf so. Wenn du das verstanden hast, denkst du dir, fuck, ich hab REST-APIs die ganze Zeit falsch verstanden, falsch programmiert und falsch angewendet.",
+            "start": 2222147,
+            "end": 2257517,
+            "confidence": 0.7689821428571424,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Ich glaube, das Grundproblem ist aber auch, dass REST einfach nicht genau definiert ist, was du eben auch gemeint hast. Es sind diese Paradigmen, die stehen irgendwo, es sind so Herangehensweisen und man kann aber nicht klar irgendwo nachlesen, es sollen genau diese Methoden verwendet werden, es soll genau dieses System verwendet werden, es sind genau diese Felder, die in JSON dann zurückgegeben werden. Also es ist auf der einen Seite so flexibel, dass sehr viel möglich ist, aber ich glaube, um jetzt eine Ausrede irgendwo zu finden, ist das glaube ich auch der Grund, dass man eben dann gar nicht weiß, was alles möglich ist. Und es gibt ja keinen Validator. Ich kann HTML-Code, HTML 1.0 irgendwo in einen Validator schmeißen und weiß, okay, ist das valides HTML, aber ist das valides REST, kann ich eben nicht direkt überprüfen mit einem Validator. Und das ist glaube ich meiner Meinung nach ein großes Problem.",
+            "start": 2258068,
+            "end": 2308381,
+            "confidence": 0.8029480519480521,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Du hast schon einen validen Punkt mit der Validation von REST-APIs. Es gibt jetzt nicht das Tool, wo du das reinschmeißt und das Ding sagt, jo, du bist valide. Aber es gibt so eine Art, so ein Maturity-Model. Und zwar hat der Leonard Rickardson, mit hoher Wahrscheinlichkeit Schwede, habe ich jetzt nicht nachgeguckt, aber bei dem Namen.",
+            "start": 2308681,
+            "end": 2327425,
+            "confidence": 0.7425964912280703,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Das könnte Richardson heißen.",
+            "start": 2327505,
+            "end": 2329045,
+            "confidence": 0.61625,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Könnte auch sein, weiß ich nicht. Ich mag aber Rickardson irgendwie lieber, finde ich toller. Auf jeden Fall hat er dann gesagt, pass mal auf, lass uns doch mal ein RESTful Application Maturity Model entwickeln. Das bedeutet eigentlich, es gibt vier Noten, kann man schon fast sagen, wie erwachsen deine RESTful API ist, beziehungsweise wie viele Standards deine RESTful API erfüllt. Und zwar...",
+            "start": 2329065,
+            "end": 2352611,
+            "confidence": 0.8039365079365077,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "So wie Hotelsterne. Ja, kann man... Gibt's einen Pool, gibt's eine 24-Stunden-Reception und solche Dinge.",
+            "start": 2352651,
+            "end": 2357852,
+            "confidence": 0.49406666666666665,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Ja, eigentlich schon. Und das fängt halt relativ schwach an, so mit 0. Das ist halt, der Service wird über eine einzelne URI adressiert und man verwendet eine einzelne HTTP-Methode. Zum Beispiel SOAP, haben wir ja gerade entklärt, nutzt in der Regel immer POST. Das wäre jetzt maturity-model 0. Das bedeutet eigentlich, du hast eine API über HTTP angeboten. Mehr ist das eigentlich nicht.",
+            "start": 2358172,
+            "end": 2379552,
+            "confidence": 0.7423749999999999,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Also es bezieht sich nicht nur auf REST, sondern allgemein auf APIs, dieses Maturity-Model von diesem Kerl.",
+            "start": 2379932,
+            "end": 2385417,
+            "confidence": 0.7678823529411763,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Ah ja und nein. Es hat schon API-spezifische Elemente drin, die wir gleich ganz kurz lernen werden. Dein erster Hotelstern, den kriegst du dann, wenn du verschiedene Ressourcen unter verschiedenen URIs angibst.",
+            "start": 2385457,
+            "end": 2396948,
+            "confidence": 0.7798750000000001,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Also das, was man so klassisch unter REST heutzutage versteht, wenn jemand über REST-APIs spricht.",
+            "start": 2397328,
+            "end": 2401852,
+            "confidence": 0.8299333333333333,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Ja, jede statische Webseite ist eigentlich Maturity Model 1 bereits, weil wir verwenden eine mit HTTP-Methoden, nämlich GET, und wir haben verschiedene Ressourcen unter verschiedenen URLs, nämlich die Seiten. Somit ist jede Static Page eigentlich API Maturity Model 1. Und jetzt wird's schon langsam tricky. Deinen zweiten Hotelstern kriegst du nämlich, wenn du mehrere HTTP-Methoden verwendest, also GET, PUT, POST, DELETE und so weiter. Und den dritten Hotelstern, den kriegst du dann auch noch, wenn es diese Discoverability mit Hate OAS, wenn diese auch noch unterstützt wird.",
+            "start": 2402192,
+            "end": 2434961,
+            "confidence": 0.7701954022988506,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Du hast meine Aussprache Hate OAS schon übernommen. Gefällt mir.",
+            "start": 2434981,
+            "end": 2439382,
+            "confidence": 0.7278,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Das andere, das nuscheligern hin und so rein. Aber kommen wir noch mal zu dem Punkt. Does it matter? Nö. Wenn man eine API konsumiert, wird sie konsumiert. Also ich finde das schön, dass sich Leute dann darüber Gedanken machen. Aber ich finde halt auch, das ist so eine nette Idee. Ich meine, das ist ja keine ISO-Zertifizierung oder ähnliches.",
+            "start": 2439402,
+            "end": 2456766,
+            "confidence": 0.7710333333333333,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Habe ich auch in der freien Wildbahn noch nie gesehen in irgendeiner Form.",
+            "start": 2457087,
+            "end": 2460590,
+            "confidence": 0.759923076923077,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Ja, sei mal ehrlich, würde dich das interessieren als Entwickler?",
+            "start": 2460610,
+            "end": 2462372,
+            "confidence": 0.5105000000000001,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Ja, es wäre schon ganz interessant, so als Qualitätsstandard, wenn man so sieht, irgendwie unsere API entspricht Model 3, Model 2, was es auch immer ist. Ich glaube, sowas wäre eigentlich schon cool, ja. Also ich finde es eigentlich ganz interessant, wenn man sowas machen könnte. Dann könnte man sich so ein Icon auf die Webseite packen, unsere API hat fünf Reststerne. Und dann kann ich als User automatisch sehen, okay, das ist interessant, das macht Sinn und das ist eine coole Firma, weil die implementiert diesen Fünf-Sterne-Standard.",
+            "start": 2463250,
+            "end": 2491562,
+            "confidence": 0.7616022727272724,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Hast du dich früher immer als Besucher einer Webseite gefreut, wenn diese Webseite unten so einen Button hatte, ich bin HTML 4.0 konform?",
+            "start": 2491973,
+            "end": 2498597,
+            "confidence": 0.5759565217391305,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Ja, als Besucher weniger, aber als Programmierer ist es ja schon relevant, was irgendwie eingesetzt wird und man vertraut einer Firma oder einer API schon mehr, wenn die schön programmiert ist, wenn die sauber ist und wenn es da natürlich ein Zertifikat ist, vielleicht übertrieben, aber irgendwie... Ja, so ein Maturity-Model oder ein Level gibt, könnte mir schon gut vorstellen, dass das eigentlich ziehen könnte bei den EntwicklerInnen.",
+            "start": 2498637,
+            "end": 2521735,
+            "confidence": 0.7997058823529412,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Vertraust du heute zu Tage Online-Shops noch mit einem Trusted-Shops-Logo?",
+            "start": 2521755,
+            "end": 2525159,
+            "confidence": 0.6537999999999999,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Ich glaube, das ist unterbewusst schon, was macht mit einem, wenn man da so einen Haufen Logos sieht, irgendwie, ja, ist alles approved und irgendwie ganz doll und irgendwie Google-zertifiziert und keine Ahnung, was es sonst noch so gibt.",
+            "start": 2525179,
+            "end": 2538832,
+            "confidence": 0.7615641025641025,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Okay, fangen wir nicht mal wieder ein und weg von diesen Trusted Jobs Logos und HTML 4.0 Validierung. Kommen wir zurück zu den Prinzipien, weil das ist ja eigentlich der Hauptcontent dieser Episode. Und zwar haben wir bereits über fünf Prinzipien an der RESTful API gesprochen. Die Client-Server-Architektur, HTTP-Caching, mehrschichtige Systeme, die Zustandslosigkeit beziehungsweise State vs. Stateless, dann einmal ganz lang über die einheitliche Schnittstelle, da ging es darum, jede Ressource hat eine URI, wir nutzen verschiedene HTTP-Methoden und wir haben die API erkundbar gemacht durch diese Links, durch dieses Hypermedia as the Engine of Application State. Hey du Ass! Da fehlt aber noch ein Prinzip. Und das hat mich sehr nachdenklich gemacht, muss ich zugeben. Und zwar heißt das Prinzip Code on Demand. Und zwar geht es darum, dass im Bedarfsfall der Server Code an den Client zur lokalen Ausführung übertragen kann. Also eigentlich kann der Server Code mit an den Client geben, was dann gegebenenfalls auf dem Client ausgeführt werden sollte.",
+            "start": 2539032,
+            "end": 2601205,
+            "confidence": 0.8034662576687115,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Also da, da leuchten gerade alle Alarmglocken, ah, Glocken leuchten, leuchten ja nicht die Leute, nur Alarmglocken leuchten und Alarmsignale leuchten bei mir. Das klingt sehr, sehr böse. Wie kann man sowas vorschlagen? Sogar, wann war die Doktorarbeit?",
+            "start": 2601745,
+            "end": 2618730,
+            "confidence": 0.7863684210526316,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "2000? Ja.",
+            "start": 2618740,
+            "end": 2618830,
+            "confidence": 0.374,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Da sollte man ja das eigentlich schon im Auge gehabt haben, dass das keine gute Idee ist, irgendwo Code hinzuschicken, der dann irgendwie ausgeführt wird, oder?",
+            "start": 2620690,
+            "end": 2628417,
+            "confidence": 0.8375000000000002,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Ich zitiere aus der Doktorarbeit, REST allows client functionality to be extended by downloading and executing code in the form of applets or scripts.",
+            "start": 2628718,
+            "end": 2640428,
+            "confidence": 0.7537499999999998,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Ah, das war zu Zeiten, wo man gedacht hat, Applets ist so eine tolle und sichere Sache. Ich verstehe.",
+            "start": 2640509,
+            "end": 2645293,
+            "confidence": 0.6707368421052632,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Also, das, als ich das gelesen hab, sofort an die Funktion Evil ausgeführt. Ja, so nach dem Motto, mh, schwierig.",
+            "start": 2645713,
+            "end": 2654096,
+            "confidence": 0.8551499999999999,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Du meinst Eval. Eval ist Evil, das wollt ich so eigentlich sagen. Aber wenn ich es mir jetzt anders eigentlich überlege und vielleicht noch ein bisschen genauer mir durchdenke, eigentlich macht mir ja nichts anderes mit JavaScript. Du lädst ja auch den JavaScript-Code vom Server runter, der dann auf deinem Browser ausgeführt wird in der Sandbox. Also wenn man es von der Warte sieht, schickt dir eigentlich der Server aktuell ständig irgendeinen Code, der ausgeführt wird bei dir.",
+            "start": 2654116,
+            "end": 2679453,
+            "confidence": 0.6950641025641026,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Das ist total korrekt und das ist auch wieder so ein Moment in meinem Kopf. Warum schrillen bei mir jetzt hier gerade so die Alarmglocken, aber wenn ich ein jQuery von einem CDN oder ähnliches einbinde nicht?",
+            "start": 2679773,
+            "end": 2693048,
+            "confidence": 0.7646756756756757,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Ja, es ist wichtig, dass man das richtige Sandboxing hat.",
+            "start": 2693088,
+            "end": 2696012,
+            "confidence": 0.7859999999999999,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Aber hast du dieses Code-on-Demand-Prinzip irgendwo schon mal gesehen? Hast du in der REST API schon mal externen Scripts oder Applets entgegengenommen und dann lokal auf deinem Client ausgeführt?",
+            "start": 2696432,
+            "end": 2710274,
+            "confidence": 0.7556896551724135,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Ja, natürlich. Wenn du nämlich jetzt gerade erklärt hast, dass jede Webseite REST-konform ist und ja eine Ressource auch ein JavaScript-File sein kann, dann wird das JavaScript-File mit REST heruntergeladen, ausgeführt. Insofern... entspricht es genau dem aktuellen Design-Pattern, was überall auf jeder Webseite gerade aktuell verwendet wird.",
+            "start": 2710755,
+            "end": 2731979,
+            "confidence": 0.8406382978723403,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Der Grundgedanke war, ich zitiere wieder aus der Doktorarbeit, Sys, also Sys referenziert jetzt auf das Downloaden und Executen von Code, Simplifies Clients by Reducing the Number of Features Required to be Pre-Implemented. Das klingt also eher so nach, er wollte REST als Standard für den App Store machen, so gefühlt, dass du dir Funktionalitäten nachladen kannst, weil klar, im Jahr 2000, also ich war da glaube ich mit ISDN unterwegs.",
+            "start": 2732019,
+            "end": 2759541,
+            "confidence": 0.7939577464788733,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Ja, aber ich glaube trotzdem, dass wir da nicht so weit weg sind von dem, was wir gerade alle machen mit dem JavaScript-Download auf Webseiten oder Apps. Du lädst ja ganze Apps runter, die laufen halt in deinem Browser, aber im Prinzip lädst du den ganzen Code auf deinen Client und der läuft lokal bei dir. Also eigentlich war es schon wieder sehr weitsichtig, wenn man das so sieht.",
+            "start": 2759581,
+            "end": 2780611,
+            "confidence": 0.7911884057971015,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Ich bin aber auch fair, es wird als optionales Prinzip deklariert. Aber du musst schon sagen, das ist jetzt nicht das, was man von üblichen REST-APIs so in der Wildnis sieht, oder?",
+            "start": 2780651,
+            "end": 2792262,
+            "confidence": 0.84890625,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Ja, ich werde jetzt in Zukunft auch immer fragen, wenn jemand sagt, er verwendet der JavaScript auf der Webseite, werde ihm fragen oder ihm erklären, dass das ja REST-konform ist.",
+            "start": 2792302,
+            "end": 2801085,
+            "confidence": 0.7910000000000001,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "So, jetzt reden wir hier die ganze Zeit von RESTful APIs und von dem REST-Architekturparadigma. Aber wir haben noch gar nicht so wirklich über den harten Pain gesprochen. Die ganze Sache kann ja nicht nur eine schöne grüne Wiesenseite haben, sondern jetzt kommen wir mal zur Realität. Zu den harten Problemen. Du hast jetzt eine RESTful API geschrieben, die ist jetzt im Internet und du hast da Leute drauf. Wie entwickelst du die denn weiter? Wie fixt du denn Bugs, wo du die Struktur ändern musst? Mit der Struktur meine ich die Struktur deiner Response. Du löscht einen Key, wenn du jetzt zum Beispiel deine Response in JSON zurückgibst. Du hast einen Tippfehler in der Straße und Hausnummer einer Ressource. Wie korrigierst du das denn? Und da kommen wir in das ganze Feld der Versionierung. Wir entwickeln ja den ganzen Tag Software und haben sowas wie Subversion, CVS und Git und allem drum und dran. Doch wie machen wir das denn mit APIs, wo wir irgendwo Clients haben, also Code auf einer Maschine, der mit hoher Wahrscheinlichkeit echt lange nicht angefasst wird. Punkt ist, Software-Engineers werden dafür bezahlt, Sachen zu ändern. Und jetzt wollen wir etwas an dieser API ändern. Aber natürlich wollen wir all unsere Kunden nicht verschrecken. Oder wir können die auch vielleicht alle gar nicht anrufen. Änder mal bitte dein Code. Sondern irgendwie müssen wir einen Weg finden, eine API zu versionieren und zu sagen, der Wolfgang spricht mit Version 1 der API, der Andi ist schon auf Version 2 und Version 3 befindet sich gerade in Entwicklung. Wie würdest du das jetzt machen?",
+            "start": 2801505,
+            "end": 2888519,
+            "confidence": 0.7728501872659175,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Also ich habe es bei meinen APIs bisher so gelöst, dass ich halt einfach dementsprechend eine Version hinzufüge bei meiner API. In meiner URL steht halt v1, v2, v3 und so weiter und in meinem Code frage ich das in einer Form ab und route dann intern die Anfragen dementsprechend um.",
+            "start": 2889087,
+            "end": 2908830,
+            "confidence": 0.7845882352941178,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Das bedeutet, du hast dann duplizierenden Code. Also das bedeutet, mit deiner Routing-Logik bedeutet das auch, du kopierst den Code. Um die Version 2 zu machen, die schreibst du dann entweder komplett neu oder kopierst den V1-Code und modifizierst ihn dann. Ist das richtig?",
+            "start": 2909219,
+            "end": 2924470,
+            "confidence": 0.7770681818181818,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Es kommt natürlich darauf an, wie du das grundsätzlich programmierst, aber die oberste Schicht, würde ich mal sagen, also man dupliziert natürlich nicht die gesamte Logik, aber die oberste Schicht, die entscheidet, wie zum Beispiel das Result aussieht, welche Felder da drinnen vorkommen und die ganzen Dinge, die sind natürlich dupliziert beziehungsweise dann verändert, leicht verändert, damit eben die neue Schnittstelle dementsprechend funktioniert.",
+            "start": 2924730,
+            "end": 2947440,
+            "confidence": 0.8068095238095239,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Aber du bist schon auf dem richtigen Pfad, also generell musst du natürlich auf der einen Seite erstmal die Version kenntlich machen. Und das kann durch verschiedene Arten passieren, entweder durch die URL, du hast eine eigene Domain, eine eigene Subdomain, du hast sowas wie //v1// im Pfad drin, du kannst das als Query-Parameter übertragen oder vielleicht sogar als neuen Port, wenn du einfach einen neuen Server da hinstellst. Du kannst natürlich aber auch im Request sowas angeben, wie zum Beispiel in einem HTTP-Header oder immer als Body, wo natürlich in der Regel sowas wie GET kein Body hat. Lassen wir aber mal außen vor. Irgendwo musst du angeben, mit welcher Version du sprichst. Und wenn keine Version angegeben ist, musst du natürlich auch auf deiner Serverseite ermitteln, was ist denn die Default-Version hier.",
+            "start": 2947820,
+            "end": 2990071,
+            "confidence": 0.7545522388059706,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Für mich ist ja immer sehr schwierig zu entscheiden, wann ich eine Version höher gehe. Wirklich zu definieren, okay, was sind Breaking Changes? Sind es überhaupt Breaking Changes? Sind die Changes jetzt so schlimm, dass ich wirklich eine neue Version draus mache oder kriege die irgendwie noch in dem alten Schema unter? Kann ich diese fünf Kunden vielleicht informieren? Sie sollen das einfach ändern bei ihnen. Ist es einfacher, als eine ganze neue Version jetzt hochzuziehen? Also diese Fragen sind ja dann auch immer in der Praxis gar nicht so leicht, in der Theorie klingt das alles super, bei jeder Änderung neue Versionen, aber das machst du in der Praxis natürlich auch nicht, weil du brauchst ja eine Dokumentation dazu, du musst deine Kunden informieren, du brauchst ein Datum, wann die jeweilige Version ausläuft und so weiter.",
+            "start": 2990511,
+            "end": 3032875,
+            "confidence": 0.7671532846715329,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Ja, so prinzipiell kann man schon festhalten, dass die Regeln, wann du die Rückwärtskompatibilität brichst, natürlich festgelegt sind. Nehmen wir mal zum Beispiel JSON. Du hast eine JSON-Response und du löscht einen Key. Da brichst du die Rückwärtskompatibilität, weil du kannst nicht wissen, ob nicht irgendein Client auf den Key zugreift. Ein Key hinzuzufügen ist kein Breaking Change. Den Datentyp eines vorhandenen Keys von String nach Number zu ändern, ist ein Breaking Change. weil du weißt nicht, welche Programmiersprache der Client nutzt und so weiter. Also da gibt es ja relativ klar definierte Regeln. Du hattest auch schon gesagt, wie intern deine API repräsentiert ist oder wie du die codest. Das ist völlig unterschiedlich. Ich habe Teams gesehen, die haben aus einer V1 eine V2 gemacht, indem die einfach den kompletten Source-Code einfach kopiert haben. Ist an sich ne super Idee, weil so kannst du sicherstellen, dass V1 einfach stabil bleibt. Und nicht durch irgendwelche Regressions und Vererbungen und so weiter doch irgendwie kaputt geht. Hat natürlich dann den Nachteil, dass du halt doppelt nen Code hast und so weiter. Aber das kann ja akzeptiert werden.",
+            "start": 3033459,
+            "end": 3097096,
+            "confidence": 0.7860967741935482,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Ja und vor allem, wenn du nen Bug hast, dass du ihn dann an fünf Stellen ändern musst, weil du den Code fünfmal dupliziert hast.",
+            "start": 3097116,
+            "end": 3103081,
+            "confidence": 0.58916,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Du kannst auch einfach sagen, V1 fass ich einfach nicht mehr an und ich fix die Bugs nur vorwärts. Geht natürlich auch.",
+            "start": 3103101,
+            "end": 3107305,
+            "confidence": 0.5926818181818181,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Ist die frage ob du dir das halt erlauben kannst ja du kannst natürlich.",
+            "start": 3107813,
+            "end": 3110616,
+            "confidence": 0.7002142857142857,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Auch eine ganze sache mit vererbung machen eine basisklasse interface und so weiter ich glaube das kommt halt ganz stark darauf an welche programmiersprache du verwendest und welches.",
+            "start": 3110636,
+            "end": 3118264,
+            "confidence": 0.7555000000000002,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Framework also ich glaube in der realität ist es immer schwieriger als man sich vorstellt und gerade die ganzen vererbungen und so weiter da muss das schon alles perfekt laufen dass das dann auch möglich ist. Also ich habe es bisher noch nie in irgendeinem Code gesehen, der ganz viele Versionen pflegt, dass das irgendwie sinnvoll, ganz sauber funktioniert. Es war immer irgendwo ein Pain, die ganzen Versionen mitzuziehen. Darum ist es ja auch so, dass die meisten APIs möglichst wenig Versionen haben, die parallel laufen, weil es halt einfach extrem kompliziert wird und exponentiell ansteigt mit jeder Version, würde ich sagen. Alles noch irgendwie glatt zu halten und glatt zu ziehen. Da hängt ja auch eine Datenbank hintendran, die Schemen in der Datenbank und so weiter. Das ist ja schon komplex.",
+            "start": 3118324,
+            "end": 3163557,
+            "confidence": 0.802681818181818,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Man kann schon festhalten, API-Versionierung ist super hart. Ich habe noch keine richtig geile Lösung gefunden. Es ist immer Schmerz auf der Coding-Seite. Die Version anzugeben, header.url, das ist der leichte Part. Die Frage ist, wie verarbeitest du den Request? Die viel spannendere Frage ist aber diese, ich sag mal, businessartigen Fragen. Wer sind meine Clients? Wer konsumiert eigentlich die REST API? Und wie informiere ich, dass die ihren Code anfassen müssen, am besten auf die neue Version zu wechseln? Natürlich kannst du glücklich sein, wenn du interne Clients hast und du gegebenenfalls den Source Code unter eigener Kontrolle hast. Stichwort Monorepo. Da würdest du eigentlich nur sagen, okay, in einem Commit wechselst du alle Leute von V1 auf V2.",
+            "start": 3163597,
+            "end": 3202728,
+            "confidence": 0.80195,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Super.",
+            "start": 3203229,
+            "end": 3203449,
+            "confidence": 0.55,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Aber wenn du externe Clients hast, die kannst du ja nicht alle anrufen. Gegebenenfalls kennst du die gar nicht. Also wie würde zum Beispiel GitHub alle Leute zwingen, von V1 auf V2 zu gehen. Was es aber gibt, und das habe ich in der Praxis auch noch nicht gesehen, und das habe ich auch erst in der Vorbereitung für diese Episode gelernt, Jetzt wusstest du, dass es einen HTTP-Header mit dem Namen Warning gibt, wo der Server sagen kann, das hier ist deprecated, bitte wechsel dahin.",
+            "start": 3203849,
+            "end": 3233410,
+            "confidence": 0.8069883720930231,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Habe ich nicht gewusst, aber ist halt wieder das klassische Problem. Du kannst in HTTP-Headers natürlich alles mit einbauen. Solange der Client nichts davon weiß oder diese Felder grundsätzlich kennt und darauf reagiert, hilft dir das natürlich auch wenig, weil du wirst es ja eigentlich in irgendwelchen Logs sehen oder sowas und wenn da irgendwie ein Feld ist, das niemand kennt, hast du natürlich das gleiche Problem immer wieder.",
+            "start": 3233430,
+            "end": 3257165,
+            "confidence": 0.8033333333333333,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Ich habe auch noch nie einen Client gesehen, der das Warning-HTTP-Header-Feld überprüft oder ähnliches, weil eigentlich ist es genau dafür da. Es wird erwartet, wenn der Server einen Warning-HTTP-Header zurückgibt, dass der Client das zumindestens lockt. Habe ich so auch noch nicht gesehen. Aber nur gut, man lernt nie aus. Aber das ist halt schon so ein bisschen faszinierend, dass wie viele Möglichkeiten eigentlich im Standard definiert sind und wie die Praxis einfach mal die ganze Sache einfach ignoriert.",
+            "start": 3257525,
+            "end": 3283497,
+            "confidence": 0.8124050632911394,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Und sogar wenn du das in deiner Dokumentation drin stehen hast, die Leute müssen es trotzdem erst lesen, implementieren, sich den Mehraufwand antun, weil realistisch, du bekommst ja ein E-Mail von dieser API, dass es ein Problem gibt, dass es eine neue Version gibt. Also wenn es bei einem E-Mail bleibt, du bekommst tausende E-Mails und überall bekommst du E-Mails, wenn es ein Problem gibt. Dann fragst du dich natürlich auch, okay, warum sollte dieses Zusatzfeld implementieren und darauf reagieren?",
+            "start": 3284105,
+            "end": 3309481,
+            "confidence": 0.7926499999999997,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Wenn du überhaupt nicht mit einer richtigen E-Mail registriert hast, das ist ja dann immer die nächste Frage, weil es gibt ja etliche Trash-Mails auch noch. Aber ich meine, das ist auch nicht der einzige Nachteil von REST APIs, beziehungsweise ist API-Versionierung auch nicht ein Problem von RESTful APIs, sondern, würde man fast sagen, von allem im Internet.",
+            "start": 3310041,
+            "end": 3329011,
+            "confidence": 0.6743793103448278,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Und vor allem allen APIs. Also egal, ob auf Programmier-Ebene, Libraries, was es auch immer ist, ist ein Problem und es ist schwierig.",
+            "start": 3329051,
+            "end": 3336075,
+            "confidence": 0.711913043478261,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Ich habe aber auch noch zwei Nachteile von APIs, die ich schnell erwähnen möchte, weil das war unter anderem ja auch ein Grund, warum zum Beispiel GraphQL von Facebook erfunden wurde. Und zwar ist es bei REST-APIs ja so, dass jede Ressource eine eigene URI hat. Das bedeutet natürlich auch, wenn ich mehrere Daten haben möchte, muss ich mehrere HTTP-Requests abfeuern. Und das hat natürlich den ganzen Overhead mit TTP, IP, DNS-Auflösung und so weiter und so fort. Und der Overhead multipliziert sich natürlich mit der Anzahl an Requests, die ich machen muss. Also ich will jetzt nicht nur die Informationen von mir als GitHub-User haben, sondern auch noch die Repositories und dann die Anzahl der offenen Issues in all meinen Repositories. Das sind mindestens drei Requests, die ich abfeuern muss.",
+            "start": 3336917,
+            "end": 3381481,
+            "confidence": 0.8266946564885492,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Also in der Datenbank-Welt gesprochen musst du Joins immer selbst machen und selbst auflösen und kannst es nicht mit einer Anfrage schon vor aufgelöst eben das Resultat bekommen.",
+            "start": 3381521,
+            "end": 3392567,
+            "confidence": 0.8441785714285716,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Ganz genau. Und deswegen ist GraphQL sehr, sehr toll, weil Facebook, die Startseite, hat eigentlich genau das gemacht. Facebook, die Startseite, braucht etliche Informationen von verschiedenen Endpunkten. Via REST wären das 20, 30, 40 Calls. Mit GraphQL kann man es sogar theoretisch auf einen Call runterbrechen. Also das ist halt so ein Nachteil von einer RESTful API. Und der zweite Nachteil ist, der ist ebenfalls durch GraphQL gelöst, immer wenn du eine URI, immer eine Ressource anfragst, kriegst du immer alle Daten zurück. Da gibt es jetzt kein Select, Feld 1, Feld 2, Feld 3, dass du nur meine Namen zurückkriegst, aber nicht die Adresse zum Beispiel. Und je nach Größe der HTTP-Response kann das natürlich schon einige Megabyte sein.",
+            "start": 3392587,
+            "end": 3433056,
+            "confidence": 0.7925583333333337,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Aber gleichzeitig ist das natürlich auch ein riesen Vorteil, weil dadurch die ganze Schnittstelle so einfach wird. Du kannst gar keine Zusatzinformationen, Projektionen, wie es in SQL heißt, Filter, was du auch immer alles haben willst, kannst du eigentlich gar nicht bei Definition machen. Kannst du natürlich implementieren über irgendwelche Query-Parameter und so weiter, irgendwas draufbauen geht immer. Aber grundsätzlich ist darum meiner Meinung nach REST auch so einfach zu verstehen, weil es halt relativ simpel gebaut ist. Du machst ganz simple Anfragen, bekommst deine Daten, that's it.",
+            "start": 3433656,
+            "end": 3464989,
+            "confidence": 0.8217386363636365,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Ich meine dafür sind Query-Parameter ja unter anderem da. Ich habe auch schon REST-APIs gesehen, da kann ich einen Query-Parameter mitgeben und dann gebe ich da eine komma-separierte Liste an Feldern, die ich zurückhaben möchte. Und dann kriege ich nur die.",
+            "start": 3465029,
+            "end": 3475538,
+            "confidence": 0.7066097560975608,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Natürlich geht das, das ist halt darauf gebaut und GraphQL gibt da halt einen Standard vor, den du dann verwenden kannst. Also wenn du in so einen Use Case reinläufst, ist GraphQL sicher die bessere Variante. Aber da werden wir sowieso nochmal eine eigene Episode drüber machen, da brauchen wir jetzt eigentlich nicht ins Detail gehen. Aber das war auf jeden Fall der Grund, warum es GraphQL dann gegeben hat. Ich bin immer noch ein großer REST-Fan, weil es einfach so so einfach ist und super schnell implementiert ist. Du kannst einfach mit Curl mal schnell ausprobieren. Probier mal eine GraphQL-API mit Curl abzufragen. Das ist einfach schwierig. Also die Einfachheit gewinnt ja in ganz vielen Fällen einfach, weil du gar keine komplexe API brauchst. Es hat ja nicht jeder so eine Facebook-API oder eine hochkomplexe API, sondern ganz oft ist es halt einfach so, du brauchst ein paar Ressourcen, du kannst sie simpel abfragen und da ist natürlich REST perfekt dafür geeignet. Und du brauchst heutzutage eigentlich kaum mehr was erklären, außer du kommst jetzt um die Ecke und sagst, das ist ja nicht RESTful und eigentlich ist REST viel, viel mehr. Da gebe ich dir schon recht, aber die ganz simple, dumme API, die RESTful-Zweisterne-API, die ist wirklich sehr, sehr einfach.",
+            "start": 3476379,
+            "end": 3545237,
+            "confidence": 0.7617558685446008,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Das war also unser kleiner Rundumschlag zum Thema REST. Und wenn ihr euch fragt, okay, was habe ich jetzt aus dieser Episode mitgenommen, dann wäre das mein Wunsch, dass ihr euch folgende drei Dinge mitgenommen habt. REST ist keine API, sondern REST ist ein Architekturpattern und RESTful ist eine API, die das Architekturpattern implementiert hat, damit ihr auch schön beim Mittagessen in der Agentur klugscheißen könnt. Dann, HTTP-Methoden sind nur Strings. Das bedeutet, implementiert euch gerne eure Bier-, Sekt- oder Champagner-Methode. Von mir aus auch gern Korn mit Brause. Ist mir egal, ich nutze sie sehr gerne. Ihr könnt eigene HTTP-Methoden definieren, laut HTTP-Standard. Und die meisten Webserver machen das auch mit. Und das dritte, kaum einer baut wirklich gute RESTful APIs, weil alle Leute dieses Hypermedia-as-the-engine-of-application-status einfach weglassen, obwohl das einer der Kernelemente und der wichtigsten Eigenschaft von RESTful APIs ist, nämlich die Discoverability von APIs. Und falls ihr das alles mal in der Praxis sehen wollt...",
+            "start": 3545792,
+            "end": 3611256,
+            "confidence": 0.8291962025316459,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Müssen die Leute jetzt Redis installieren oder so? Mit Redis kann man doch alles machen und alles lernen, oder?",
+            "start": 3611276,
+            "end": 3616543,
+            "confidence": 0.7990526315789476,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Es gibt bestimmt auch ein Redis-Plugin für den REST-API, das kenne ich gerade noch nicht, aber falls ihr das alles mal in der Praxis sehen wollt... All das, was wir hier geredet haben, meines Erachtens nach ist die GitHub API einer der besten REST-APIs, die es da draußen gibt, weil sie hat eine schöne Versionierung über HTTP-Header. Sie hat sogar das Aktivieren und Deaktivieren von experimentellen Features über HTTP-Header. Sie hat die Discoverability in den Responses. Sie hat eine schöne Rate-Limiting, sie benutzt meines Erachtens nach alle Standard-HTTP-Methoden und ist meines Erachtens nach fast selbsterklärend. Was aber die GitHub-API leider nicht hat, ist das sechste Prinzip, das Code-on-Demand. Da habe ich leider noch keine REST-API gefunden, die mir Code-on-Demand zur Feature-Extension schickt. Wenn ihr mal eine solche REST-API findet, kommt doch gerne in unsere Community. Link findet ihr in den Show Notes. Da würde ich gerne mal mit rumspielen, aber auch nur in einer sicheren Linux-VM.",
+            "start": 3616583,
+            "end": 3675780,
+            "confidence": 0.8160192307692306,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Hast du dir eigentlich schon mal überlegt, so ein Andis Role Models Award oder sowas zu kreieren? Da hättest du für die beste Dokumentation Redis, für die beste REST API, sorry, RESTful API GitHub, da könnten wir so eine Liste machen, die schönsten Role Models, die Andi gekürt hat.",
+            "start": 3675820,
+            "end": 3694826,
+            "confidence": 0.7635510204081633,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Ich bin auf jeden fall von paar sachen und personen sehr begeistert das stimmt schon das problem ist mit awards ist ja immer so einmal verliehen sind die ja mehr oder weniger statisch und mein geschmack verändert sich ja auch.",
+            "start": 3695246,
+            "end": 3708642,
+            "confidence": 0.8711750000000004,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Ja das kannst du ja immer ändern ist ja kein problem du kannst ja auch eine liste einfach draus machen. Vielleicht solltest du ein Repository mit der GitHub API kreieren, ein Post hinsenden, neues Repository mit einer Liste von deinen Role Models.",
+            "start": 3708682,
+            "end": 3722311,
+            "confidence": 0.6061428571428572,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Es tut mir leid. So wichtig nehme ich mich jetzt auch nicht oder bin ich auch nicht, dass sich jemand interessiert, wofür ich so, was ich so cool finde oder schön finde. Deswegen lasse ich das.",
+            "start": 3722371,
+            "end": 3730934,
+            "confidence": 0.7938055555555555,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Aufruf an die Community, wenn ihr Andis Schönheitsliste haben wollt. Bitte schreibt es in unserer Community. Und natürlich auch wie immer, wenn es sonst irgendwelche Anmerkungen, Feedback, ganz viele Dinge, die wir wahrscheinlich vergessen haben, zu erwähnen, irgendwelche interessanten Links. Passiert auch sehr oft in der Community, dass wir super interessante Links bekommen zu den ganzen Themen. Bitte wirft die rein in die Community. Es freuen sich alle Beteiligten, da Zusatzinformationen zu bekommen, inklusive uns natürlich vor allem.",
+            "start": 3730974,
+            "end": 3757293,
+            "confidence": 0.8285000000000002,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Werbung Ende. So, ich mache jetzt auf jeden Fall hier Schluss. Wolfgang, war wieder schön mit dir zu sprechen. An alle Hörerinnen und Hörer, bis zur nächsten Episode. Viel Spaß, tschüss und happy coding. Ciao!",
+            "start": 3757353,
+            "end": 3768298,
+            "confidence": 0.5417714285714286,
+            "channel": null,
+            "speaker": "A"
+        }
+    ],
+    "confidence": 0.7848413398386203,
+    "audio_duration": 3775.0,
+    "webhook_status_code": null,
+    "webhook_auth": false,
+    "summary": null,
+    "auto_highlights_result": null,
+    "content_safety_labels": null,
+    "chapters": null,
+    "sentiment_analysis_results": null,
+    "entities": null
+}
