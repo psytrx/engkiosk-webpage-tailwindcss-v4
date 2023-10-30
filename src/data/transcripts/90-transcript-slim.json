@@ -1,0 +1,810 @@
+{
+    "language_code": "de",
+    "audio_url": "https://audio1.redcircle.com/episodes/35042c18-43d7-485d-a010-aa0f1efe3ab5/stream.mp3",
+    "punctuate": true,
+    "format_text": true,
+    "dual_channel": false,
+    "webhook_url": null,
+    "webhook_auth_header_name": null,
+    "webhook_auth_header_value": null,
+    "audio_start_from": null,
+    "audio_end_at": null,
+    "word_boost": [],
+    "boost_param": null,
+    "filter_profanity": false,
+    "redact_pii": false,
+    "redact_pii_audio": false,
+    "redact_pii_policies": null,
+    "redact_pii_sub": null,
+    "speaker_labels": true,
+    "speakers_expected": 3,
+    "content_safety": false,
+    "content_safety_confidence": null,
+    "iab_categories": false,
+    "custom_spelling": null,
+    "disfluencies": false,
+    "sentiment_analysis": false,
+    "auto_chapters": false,
+    "entity_detection": false,
+    "summarization": false,
+    "summary_model": null,
+    "summary_type": null,
+    "auto_highlights": false,
+    "language_detection": false,
+    "speech_threshold": null,
+    "id": "62zklo8nj0-f92e-43c2-9470-474636a92a1a",
+    "status": "completed",
+    "error": null,
+    "utterances": [
+        {
+            "text": "Ich glaube, Innersource ist erstmal diese Idee. Die Idee zu sagen, es ist doch möglich Code Contributions across Teams zu machen. Ich glaube tatsächlich, dass manche Open-Source-Methoden theoretisch im Innersource-Bereich effizienter sein können als in Open-Source.",
+            "start": 2509,
+            "end": 16568,
+            "confidence": 0.8256944444444446,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Willkommen zu einer neuen Episode vom Engineering-Kiosk, dem deutschsprachigen Software-Engineering-Podcast. Heute geht es indirekt um Open Source. Wie die Open Source-Szene funktioniert, ist auch irgendwie faszinierend. Personen, die sich nicht kennen, arbeiten weltweit und asynchron relativ effizient zusammen und erschaffen zusammen etwas Großes. Doch kennst du auch InnerSource? InnerSource hat zum Ziel, die besten Praktiken aus Open Source in einer geschlossenen Organisation zu nutzen. Doch was bedeutet dies eigentlich? Genau dazu haben wir mit Sebastian Spier gesprochen. Wir klären, was Innersource ist, ob Innersource ohne Open-Source-Erfahrung überhaupt möglich ist, ob interne Firmenpolitik dadurch reduziert werden kann, was die Innersource-Patterns sind und warum Contributor 30 Tage Garantie auf ihren Sourcedruck geben sollten und welchen Support vom Leadership und vom Team eigentlich notwendig ist. Und los geht's! Viel Spaß! Hier im Podcast sprechen wir immer mal wieder über Open Source. Und ich meine, das ist auch eigentlich ganz logisch, denn jeder Softwareentwickler hat, ob er möchte oder nicht, Kontakt zu Open Source. Die meisten Softwareentwickler arbeiten aber in profitorientierten Unternehmen. So, und da habe ich mich gefragt, ist das eigentlich ein Konflikt? Wir sprechen die ganze Zeit über Open Source, die meisten Leute arbeiten dann in Firmen, die Geld verdienen müssen. Ist das ein Konflikt? Kann die eine Welt von der anderen lernen? Und wenn man sich mit diesem Thema mal ein bisschen beschäftigt, dann kommt man relativ schnell auf das Thema Inner Source. Oder manche Leute übersetzen das auch als Firmeninterner Open Source.",
+            "start": 19033,
+            "end": 109398,
+            "confidence": 0.796586776859504,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Ist eigentlich dein Lieblingsthema, oder?",
+            "start": 109418,
+            "end": 111580,
+            "confidence": 0.7542,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Ich bin sehr passioniert über dieses Thema, das ist richtig. Aber ich habe da gar nicht so tiefe Erfahrungen drin und deswegen haben wir uns natürlich mal wieder jemanden eingeladen, der da ein bisschen mehr zu erzählen kann. Und deswegen begrüße ich Sebastian. Hallo.",
+            "start": 111620,
+            "end": 125267,
+            "confidence": 0.8335,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Hi, freut mich, dass ihr mich eingeladen habt.",
+            "start": 125327,
+            "end": 126848,
+            "confidence": 0.2715,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Du kommst aus der Hauptstadt Deutschlands, aus Berlin.",
+            "start": 127248,
+            "end": 130232,
+            "confidence": 0.8781249999999999,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Richtig.",
+            "start": 130312,
+            "end": 130551,
+            "confidence": 0.378,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Ich dachte, das ist Bonn.",
+            "start": 130592,
+            "end": 132894,
+            "confidence": 0.5456,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Hat sich da schon wieder geändert.",
+            "start": 132934,
+            "end": 133835,
+            "confidence": 0.6476666666666667,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Hat sich, die haben das kürzlich geändert. Kürzlich.",
+            "start": 133855,
+            "end": 138420,
+            "confidence": 0.3735,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Ihr seid auch keine 20 mehr, merke ich. Du hast einen Master in Computer Science von der TU Berlin, kommst aus dem klassischen Bereich der Softwareentwicklung und bist seit einigen Jahren im Engineering Management aktiv. Du arbeitest seit knapp vier Jahren in der sogenannten Innersource Commons Foundation als ein Member of the Board of Directors mit. Was auch immer das heißt, das ist auf jeden Fall ein sehr toller Titel. Du hast aber bezüglich Innersource nichts zu verkaufen. Du bist jetzt kein Coach, Berater oder ähnliches für dieses Thema. Und, was bei meiner Recherche auch aufgefallen ist, du hast das Content-Management-System für meines Erachtens nach die geilste Domain ever geschrieben für Kneipen-Guide.de.",
+            "start": 138480,
+            "end": 182978,
+            "confidence": 0.8099285714285714,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Ist das korrekt? Ach echt? Kneipen-Guide.de hast du gefunden? Okay, cool. Ja, können wir vielleicht ganz am Ende nur noch drüber reden.",
+            "start": 183058,
+            "end": 187400,
+            "confidence": 0.35477272727272724,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Leider gibt es sie nunmehr nicht mehr und die wurde auch nie an irgendwelchen Ad-Kramen verkauft. Schade, hätte ich gerne genutzt.",
+            "start": 189141,
+            "end": 195144,
+            "confidence": 0.6914285714285713,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Schade, ja wirklich schade.",
+            "start": 195164,
+            "end": 197025,
+            "confidence": 0.50475,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Welche Programmiersprache war das damals?",
+            "start": 197065,
+            "end": 198746,
+            "confidence": 0.7852,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Okay, ich sag's aber nur hier, das war Perl.",
+            "start": 198786,
+            "end": 201748,
+            "confidence": 0.8031111111111111,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Oh, das ist dann wirklich alt.",
+            "start": 201788,
+            "end": 203189,
+            "confidence": 0.7214999999999999,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Das war Hardcore, ja.",
+            "start": 203249,
+            "end": 204449,
+            "confidence": 0.5457500000000001,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Ich glaube, das war so um 2, 3 rum.",
+            "start": 204469,
+            "end": 206510,
+            "confidence": 0.5864444444444444,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Ja, hat sogar davor angefangen, genau. So 99 haben wir schon damit angefangen, ja.",
+            "start": 206570,
+            "end": 211693,
+            "confidence": 0.4913571428571428,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Habe ich irgendwas Maßgebliches über dich als Person vergessen?",
+            "start": 211733,
+            "end": 214635,
+            "confidence": 0.7981111111111111,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Nee, glaube ich nicht. Erstmal zum Thema InnerSource passt das auf jeden Fall.",
+            "start": 215557,
+            "end": 219298,
+            "confidence": 0.6426153846153846,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Also wenn ich jetzt den Member of Boards of Directors von dieser InnerSource Comments Foundation frage, was ist denn eigentlich InnerSource? Was würdest du mir dann antworten?",
+            "start": 219338,
+            "end": 229621,
+            "confidence": 0.7783703703703702,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Dann würde ich sagen, dass was tatsächlich auch auf unserer Webseite steht, nämlich InnerSource is the use of open source best practices within the confines of an organization. Ich versuche das mal auf Deutsch zu übersetzen. Einfach die Anwendung von open source best practices innerhalb der Firmengrenzen.",
+            "start": 229641,
+            "end": 244205,
+            "confidence": 0.6987446808510637,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Werbung. Kannst du dir eigentlich vorstellen, Modelle wie Innersource in deinem Team zu pushen, mehr Verantwortung für technische Entscheidungen zu übernehmen oder komplexe Softwareprojekte fachlich zu steuern? Wenn du nun ja sagst, dann hast du in deinem Kopf den ersten wichtigen Schritt in Richtung Techlead gemacht. Vielleicht bist du auch schon Staff oder Principal Engineer und möchtest in deiner Rolle noch mehr Einfluss nehmen. In beiden Fällen ist die Techlead Masterclass der Techleaders Academy etwas für dich. Das ist ein sechswöchiges Trainingsprogramm, um dich von Softwareingenieurin zum Techlead weiterzuentwickeln. Sie findet in kleinen Gruppen mit interaktiven Workshops statt. Praxisnah und komplett remote. Du lernst, wie du den Fokus des Teams durch eine technische Vision und Roadmap auf die richtige Arbeit lenkst. Du verbesserst deine Kommunikationsskills, um deine Konzepte dem Management verständlich zu machen, sowie dein Wissen weiterzugeben. Das Programm wird von langjährigen, erfahrenen Experten durchgeführt. Auch Wolfgang übernimmt da einen kleinen Part als Coach. Wenn das interessant klingt, bekommst du unter techleaders.academy mit dem Code Kiosk10 ganze 10% auf alle Angebote. In Kombination mit dem Frühbucherpreis bis Ende September sogar ganze 25 Prozent. Alle Infos wie immer in den Show Notes. Und nochmal ein kleiner Tipp. Schau doch mal nach, ob du in deiner Firma noch etwas von deinem Personal Learning Budget übrig hast. Vielleicht kannst du es ja genau dafür nutzen. Werbung Ende.",
+            "start": 244826,
+            "end": 324119,
+            "confidence": 0.7988035714285713,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Und wie sieht das dann in der Praxis wirklich aus? Hast du da irgendwie ein Beispiel dafür, dass man sich das ein bisschen greifbarer vorstellen kann?",
+            "start": 324139,
+            "end": 330585,
+            "confidence": 0.7716538461538461,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Auf jeden Fall. Also das Beispiel würde ich als zweites machen. Als erstes vielleicht mal einfach, was ist denn die Art von Problem, mit der man sich auseinandersetzen muss, damit man überhaupt drüber nachdenkt, brauche ich irgendwie vielleicht hier noch was anderes. Die Geschichte, die ich erzählen kann, war, ich habe mit mehreren Software-Teams gearbeitet und eins von denen auch schon relativ gut so in agilen Methoden unterwegs, haben zu dem Zeitpunkt tatsächlich noch Scrum genutzt, glaube ich, oder so und irgendwie Irgendwann hatten wir so ein paar Wochen, da standen wir ständig an Bord und es gab irgendwie einfach so ein, zwei Tickets, die bewegten sich einfach nicht weiter, bewegten sich nicht weiter und irgendwann hatten wir dann schon so einen extra Magneten, den wir dann immer in unsere Magnettafel gepinnt haben, der dann hieß BLOCKED. BLOCKED by Team irgendwas, ne?",
+            "start": 331032,
+            "end": 372488,
+            "confidence": 0.7695915492957743,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Kennen wir wahrscheinlich alle nur zu gut. Jeder, der mal mit mehreren Teams gearbeitet hat.",
+            "start": 372940,
+            "end": 377343,
+            "confidence": 0.8133333333333332,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Das ist natürlich hochgradig unbefriedigend für alle Beteiligten. Und ist aber ein klassisches Problem. Also wenn zwischen unterschiedlichen Teams Abhängigkeiten bestehen und man Services, Komponenten, wie auch immer, von einem anderen Team benutzt. Dann kann es eben sein, dass man, um seine eigene User Story, also sein eigenes Implementationsziel irgendwie zu erfüllen, auch was von einer anderen Komponente braucht, was ich noch gar nicht kann. So, das heißt, dann hat man üblicherweise eben, fragt man dann im klassischen Fall, fragt man, hey, könnt ihr das hier implementieren? Und wir beschreiben grob, was wir brauchen. So, auch wieder im üblichen Fall passiert das eben nicht unmittelbar, sondern nach irgendeiner Zeit, weil das andere Team macht ja gerade auch Sachen, wenn du zu denen kommst und was von denen willst. Das heißt, du hast als Team, was diese Anfrage stellt, hast du drei Möglichkeiten. Ich warte, bis die fertig sind. Ich arbeite um das Problem herum, oft dadurch, dass ich die Funktionalität irgendwie in meinen eigenen Einflussbereich reinziehe. Das heißt, zu einem gewissen Grad duplizierst du Code. Oder, wie ich finde, die schlimmste Möglichkeit, du eskalierst das Ganze irgendwo nach oben in deiner Hierarchie.",
+            "start": 377363,
+            "end": 442608,
+            "confidence": 0.7975624999999998,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Ich glaube, das kennt auch jeder.",
+            "start": 443128,
+            "end": 444288,
+            "confidence": 0.5630000000000001,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Das kennt auch jeder, ja. Also, ich meine, wie gesagt, ich komme aus Management. Trotzdem finde ich, das ist die Schlimmste aller Methoden. Wir müssen uns unbedingt mal über Team X hier beschweren, weil die implementieren einfach unsere Story hier nicht. Ich finde, wie man schon hört, das ist einfach nicht besonders befriedigend. Man kann sicherlich so oft auch Probleme lösen und manchmal ist es auch besser, zum Beispiel zu warten. Ich finde, warten ist tatsächlich die einzige von den Lösungen, die oft ganz gut ist. Aber InnerSource hat halt die Idee, na ja, es gibt doch da noch eine vierte Möglichkeit. Wenn du Zugriff auf den Quellcode hast des anderen Teams und wenn du deine Story als User-Story beschreiben kannst, also ich brauche von euch das und das, kannst du nicht vielleicht auch die Codeänderung selber machen oder zu einem gewissen Teil selber machen? Vielleicht soweit selber machen, dass zumindest dein Code eigentlich die Spezifikation wird von dem, was du brauchst, also dass die Leute schon viel weniger Schwierigkeiten haben zu verstehen, was du mit deiner User-Story meinst, weil du hast ja ein Beispiel gegeben, wie du es implementieren würdest. Und dann muss das andere Team, was diese Komponente maintaint, muss vielleicht nur noch, in Anführungsstrichen, die Tests machen, bei der Dokumentation helfen, mit dem Deployment helfen und so weiter.",
+            "start": 444328,
+            "end": 510849,
+            "confidence": 0.7810678733031674,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Das heißt, im ganz konkreten Fall würdest du dann einfach ein Pull-Request erstellen und dem Team senden zum Reviewen, wie man es in der Open-Source-Welt auch machen würde?",
+            "start": 510889,
+            "end": 519693,
+            "confidence": 0.7848214285714284,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Ganz genau. 100 Prozent. Genau.",
+            "start": 519732,
+            "end": 521674,
+            "confidence": 0.5646,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Jetzt ist es natürlich in der Open-Source-Welt so, dass viele Leute einfach ein Pull-Request senden, ohne vorher mit irgendwem zu sprechen. Ich habe ein cooles Projekt und ich denke ganz im Ernst, dieses Projekt, das sollte jetzt einen nativen Docker-Support haben. Warum auch immer. Dann gehe ich da rein, ich fork das weg, ich mache ein Pull-Request und der originale Maintainer, der hat gar keinen Computer mehr, weil der im Gefängnis sitzt. Ja. Der kann also gar nicht den Pull-Request sehen oder hat vielleicht alle E-Mails von GitHub oder von GitLab in Spam-Folder redirected oder oder oder. Das bedeutet, dass meine Code-Modifikation liegt jetzt darum. Und jeder, der in der Softwareindustrie arbeitet und schon mal ein Code-Review gemacht hat, weiß ja auch, ein Code-Review ist ja nicht nur, ich lese den Code und gucke, ob der syntaktisch korrekt ist, sondern passt der in meine Architektur? Ist das gut umgesetzt? Hat das Test? Was ich damit sagen möchte, nur weil jemand anders Code ändert, heißt das ja nicht, dass ich keinen Aufwand habe. Und wenn du jetzt sagst, eine dieser vier Möglichkeiten, die du vorgestellt hast, ist warten. Um dieses Warten kommt man ja so oder so nicht herum, immer im Source-Bereich mit hoher Wahrscheinlichkeit länger, weil da gibt es ja keine Zeitdrücke. Aber kann das nicht auch zu diesem Dead-End führen, wenn ich einfach ein Pull-Request an ein anderes Team mache, ohne vorher mit denen zu sprechen, so wie immer im Source-Bereich?",
+            "start": 522025,
+            "end": 595297,
+            "confidence": 0.7807272727272729,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Ja, also auf jeden Fall. Das kann genauso zu dem Dead-End führen, weil ich meine, also wir reden da jetzt im Theoretischen drüber, weil wenn du natürlich einen extrem schlechten Pull-Request schickst, so, also wo du nicht mal versucht hast, was zu testen und wo du dir gar nichts angeguckt hast von dem anderen Projekt, sondern einfach, was weiß ich, alles in eine neue Klasse rein und fertig, klar, dann wird das wahrscheinlich so in dem Sinne jetzt irgendwie nicht angenommen und das Team, was diesen Pull-Request erhält, hat so das Gefühl, boah, echt, macht uns mehr Arbeit, als es uns spart, so. Ich glaube, InnerSource ist erstmal diese Idee. Die Idee zu sagen, es ist doch möglich, Code Contributions across Teams zu machen. Und dann liegt es natürlich an beiden Seiten, wie kann man das so machen, dass es tatsächlich anfängt, effektiver zu werden. Und da spielen ja viele Sachen eine Rolle. Wie gut kann derjenige verstehen, wie denn deine Architektur gemeint ist? Zum Beispiel, wenn ich von außen verstehen kann, wie du denn willst, dass dein Projekt sich weiterentwickelt, oder wenn es da vielleicht sogar, jetzt sage ich mal, den krassesten Fall, es gibt da schon ein Plugin-System, wo ich irgendwie mich reinpluggen kann, Cool. Da will der Andi wahrscheinlich, dass ich sein Ding erweitere. Aber wenn dein Projekt auf der anderen Seite der Skala ist und es gibt keine Dokumentation, keine Tests, ich kann eigentlich gar nicht rausfinden, wer das Ding überhaupt maintaint, ist wahrscheinlich, dass mein Pull-Request an dich nicht besonders erfolgsversprechend ist. Das heißt, einfach ein Pull-Request schicken, löst das Problem nicht. Aber einfach ein Pull-Request schicken, ist erstmal das Mindset, zu sagen, wir könnten das doch auch so versuchen zu lösen. Und dann ist die Frage, was für andere Sachen muss ich eben noch machen, auf beiden Seiten und auf Firmenebene, damit diese Pull-Requests eben eine größere Chance kriegen, auch gemerged zu werden.",
+            "start": 595477,
+            "end": 686086,
+            "confidence": 0.7513134796238249,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Nachdem wir jetzt wissen, was InnerSource ist, möchte ich aber schon nochmal darauf zurückkommen. Was ist denn diese InnerSource Commons Foundation und was machst du da dort eigentlich?",
+            "start": 686126,
+            "end": 695260,
+            "confidence": 0.759107142857143,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Okay, ich reiß das mal kurz an, will es aber vielleicht als Precursor sagen, dass es wahrscheinlich fürs Verständnis von Innersource gar nicht super relevant ist. Also die Innersource Foundation ist halt eine Stiftung in dem Bereich, die gegründet worden ist von einigen Leuten, die einfach passioniert über dieses Thema waren sozusagen. Also das waren hauptsächlich Leute, die eben aus dem Open-Source-Bereich kamen, die gesehen haben, dass diese Methoden in Firmen stark positiven Impact haben können. Also da waren zum Beispiel viele Leute aus dem PayPal-Bereich und so dabei. die gesagt haben, das ist ein Konzept, was wir in der Industrie vorantreiben wollen, weil wir denken, dass da viele Leute von profitieren würden, wenn das einfach mehr bekannt wäre, so als Konzept. Und ja, angefangen hat das eben mit sozusagen diesem Satz, mit dem ich da angefangen habe, Applying Open Source Best Practices. Die haben dann eben festgestellt, dass einfach in sehr vielen Firmen, wenn du das einfach sagst, das heißt für ganz viele Leute gar nichts, weil vielleicht die Open-Source-Erfahrung gar nicht da ist. Und auf der anderen Seite ist es eben auch nicht genug, also es ist nicht genug, das zu sagen, damit du wirklich eine Erfolgschance hast. So, und das ist sozusagen, das ist das, was die Inner Source Commons jetzt eben versucht zu machen. Versucht, Material zu produzieren, was es Firmen eben einfacher macht, was über Inner Source zu lernen, vielleicht schon Patterns mit an die Hand zu geben, also Implementierungsideen sozusagen, wie man bestimmte Art von Problemen in diesem Inner-Source-Bereich eben lösen kann. Da gibt's Bücher, da gibt's Community Calls, da gibt's alle möglichen Sachen. Also alles, was man so aus so einer Community eben kennt. Also die Idee ist tatsächlich einfach Education sozusagen.",
+            "start": 695672,
+            "end": 786477,
+            "confidence": 0.7434083044982694,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Die Idee nach draußen tragen oder hinaus in die Firmen, hinein in die Firmen eigentlich tragen.",
+            "start": 786518,
+            "end": 790761,
+            "confidence": 0.7543125000000002,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Richtig, ja genau, die Idee in die Firmen tragen, ja.",
+            "start": 790781,
+            "end": 793183,
+            "confidence": 0.5283,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Und was ist deine Rolle dort?",
+            "start": 793243,
+            "end": 794804,
+            "confidence": 0.7208333333333332,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Ich habe die gefunden, weil ich sozusagen in meiner Arbeit diese Art von Probleme gefunden habe. Und zu der Zeit habe ich irgendwie, die Geschichte, die ich da erzählen muss, glaube ich, ist sozusagen, wir haben ganz, ganz stark auf agile Methoden gesetzt und dafür uns irgendwie waren da in dem Modus, mit dem wir zufrieden waren. Dann haben wir die Schwelle zwischen Dev und Ops eben aufgeweicht, so wie viele andere. Das hat bei uns damals 2017 oder so, glaube ich, angefangen. Und das hat uns auch einiges gebracht. In unserem Fall hat es dazu geführt, dass wir keine Dedicated Ops Teams mehr hatten, sondern dass das Ganze Deployment und Ownership und On-Call und so weiter bei den Entwicklungsteams lag, mit also, wie man so schön sagt, immer heute End-to-End-Responsibility. Dann kamen wir aber irgendwann zu einem Fall, wo wir gemerkt haben, okay, das sind relativ gute, funktionale Einheiten, so diese Teams, die wir jetzt haben, aber jetzt rennen wir immer in so eine Probleme rein, die eben Cross-Teams sind. Und entweder es führt zu Duplication oder es führt zu krassen Waiting Times oder es führt zu Frustration oder keine Ahnung was. Und zu den Zeitungen habe ich halt angefangen, Research zu machen über was sind denn da andere Cross-Team-Collaboration-Methoden, die erfolgsversprechend irgendwie sein könnten. Und ja, dabei habe ich InnerSource gefunden und dadurch die InnerSource Commons gefunden, bin da in den in den Slack von denen gegangen, habe angefangen, mich da mit Leuten zu unterhalten, die eben sich mit dem Bereich auskannten. Genau, also so ist das gekommen, einfach über ein Arbeitsinteresse sozusagen habe ich die gefunden.",
+            "start": 795737,
+            "end": 883589,
+            "confidence": 0.7527769516728627,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Jetzt ist die Zeit schon ein großer Punkt, den du erwähnt hast natürlich, aber gibt es auch noch irgendwelche anderen Vorteile, die diese Vorgehensweise überhaupt mit sich bringt oder die Art, zusammenzuarbeiten zwischen den Teams?",
+            "start": 883609,
+            "end": 896176,
+            "confidence": 0.8720285714285713,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Es gibt einige und welcher der, also die Amerikaner nennen das ja gerne Return on Investment. Also ich mache irgendwas und will jetzt was halt dafür zurück haben. Macht auch völlig Sinn. Was für dich als Firma am relevantesten ist, hängt natürlich davon ab, wer bist du. Wie funktioniert deine Firma jetzt? Wie seid ihr gewachsen? Wie groß seid ihr? Wie seid ihr verteilt auf der Welt? was ist euer Verhältnis von Softwareentwicklern und anderen Leuten, wie ist eure Kultur, alles mögliche. Also ich kann jetzt nicht sagen, das hier ist der wichtigste Punkt. Ich kann nur sagen, das sind Punkte, die in dem Bereich relevant sind. Also einer ist, einfach, ja, Silos und Bottlenecks eben zu reduzieren. Also oft hast du es eben so, dass ein Team sehr gut im Thema XY, die maintainen da halt die paar Komponenten, die deine Organisation irgendwie braucht. Aber dadurch, dass die so klein sind und so fokussiert und so weiter, dann gehen irgendwie ein, zwei Leute aus dem Team weg. Dann wird das Team auf einmal irgendwie überraschend langsam. Neue Leute kriegst du nicht so schnell ongeboardet. Und auf einmal wird ein ganzer Bereich in deiner Architektur sozusagen, werden Änderungen auf einmal langsamer und schwieriger, weil du einfach Wissen verloren hast. Und wenn du da nicht vorher in den Bereich investiert das, ist es dann auch tatsächlich, es dauert sehr lange, das wieder zu kompensieren sozusagen. Eine andere Idee von InnerSource ist eben, naja, wie vorhin gesagt, die drei Pfade, die es klassischerweise gibt, ist warten, workaround oder escalate. So workaround führt ja normalerweise zu Code Duplication. Das heißt, du hast überall irgendwie Zeug rumliegen, wo eigentlich Team A irgendwas von Team B brauchte. Team B hatte aber keine Zeit. Also hat man sich irgendwie, hat das quasi irgendwie kopiert, ein bisschen geändert und hat das jetzt quasi eine leicht veränderte Version davon bei sich rumliegen. Kann okay sein, ja, also genau wie in der Open-Source-Welt. Kann auch forken und abändern und so weiter, kann auch die richtige Wahl sein. Aber es ist doch zumindest eine gute Idee, sich mal zu überlegen, na ja, kann ich nicht einfach das bestehende Projekt erweitern, sodass wir das Projekt einmal haben, das Projekt erweitert wird über das, was ich davon brauche, und darüber eben über die Zeit auch zu mehr, ja, zu höherer Qualität in dem Software-Projekt führen, weil halt mehrere Leute dran mitgearbeitet haben und nicht nur einer. Also, breaking down silos, reuse, also die positive Version von reducing code duplication. Ja, knowledge sharing, einfach so ganz im Allgemeinen. Wenn mehrere Teams sozusagen über Teamgrenzen hinweg anfangen, über ihre Themen miteinander zu reden, führt das eben automatisch zu knowledge sharing. Und je größer deine Firma ist, desto mehr führt es eben auch zu Dokumentation. Ja, weil du eben nicht, du kannst nicht die ganze Zeit mit den Leuten halt Meetings machen, sondern du musst auch mal irgendwann sagen können, ja, habt ihr schon Architekturdokumentation gelesen? Habt ihr schon das gelesen? Habt ihr schon jenes gelesen? Das heißt, das passiert auch automatisch. Und eine Sache, die ich vielleicht jetzt noch an der Stelle erwähnen würde, wäre persönlich finde ich einfach Developer Happiness. So, das ist jetzt vielleicht aus einer Perspektive gesprochen für Leute, die sehr viel Recruitment machen und die wissen, wie schlimm das ist, wenn gute Leute gehen, weil irgendwas nicht stimmt. Also ich finde, in dem Developer-Happiness-Bereich, wenn man Leute hat, die kommen rein, die wollen was ändern, die werden irgendwann frustriert, weil sie ihre Änderungen in der Architektur oder in der Kultur oder wie auch immer nicht umgesetzt kriegen. Ich finde, wenn du den Leuten Wege geben kannst, zum Beispiel durch InnerSource, dass die sich selber anblocken können, dass die selber Leverage kriegen, dass die sagen, ah, die hatten zwar keine Zeit, aber ich konnte es zumindest weiter treiben. Ich musste eben nicht da sitzen und eskalieren, weil das ist das Unbefriedigendste von allem. Also ich finde, den Bereich Finde ich super spannend, weiß aber auch, dass viele andere Leute würden sagen, ja okay, schreiben wir uns gerne auf die Fahne mit der Developer Happiness oder so, aber ist das wirklich so wichtig? Aber ich denke tatsächlich, zumindest wenn man über Staff Retention und so nachdenkt, ist Developer Happiness super, super wichtig und da kann einem das so aus echt helfen.",
+            "start": 896656,
+            "end": 1122477,
+            "confidence": 0.7813560500695415,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "War das bisher ein Verkaufsargument für dich in Interviews, grundsätzlich diese Innersource-Herangehensweise, sodass das dann Leute auch sehr cool gefunden haben?",
+            "start": 1123045,
+            "end": 1131827,
+            "confidence": 0.7487142857142857,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Ah, okay. Ja, wenn ich darstelle, wie die Firma arbeitet, auf jeden Fall. Genau. Ich muss sagen, dass zu dem Zeitpunkt, ich habe den Begriff Innersource damals nicht so viel benutzt, einfach weil der natürlich noch, der ist nicht so Mainstream wie jetzt Open Source oder so, ja? Also bei Open Source, ja, haben zumindest viele Leute irgendwie das Gefühl, ja klar, wir wissen, wie das funktioniert und so weiter. Innersource müsste man zu oft erklären.",
+            "start": 1131867,
+            "end": 1151250,
+            "confidence": 0.7146710526315792,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Weil eine sehr beliebte Frage, die ich zumindest immer gestellt bekommen habe von Kandidaten und Kandidatinnen war, wie arbeiten Teams denn zusammen? Weil das ja schon irgendwie das tagtägliche Geschäft eigentlich ist von einem Developer. Und wie arbeitet man einfach zusammen? Wie geht man mit Problemen um? Wie arbeiten die Teams zusammen? Wie läuft das mit den Tasks und so weiter? Und da spielt es natürlich dann schon eine große Rolle, wenn man auch grundsätzlich solche Dinge erlaubt in der Firma.",
+            "start": 1151530,
+            "end": 1177105,
+            "confidence": 0.8223703703703703,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Ja, auf jeden Fall, auf jeden Fall. Und je nachdem, wie gesagt, also wenn du jetzt deine Firma vorstellst und du hirest ja normalerweise für ein bestimmtes Team, dann wirst du ja sicherlich erstmal sagen, okay, so in unserem Team funktioniert es so ungefähr so und das sind so die Leute, die wir haben und so weiter und so fort. Dann hast du irgendwie den Dunstkreis der Teams, mit dem dein Team sich auseinandersetzt, so. Wie auch immer deine Firma das nennt, vielleicht nennt man das Tribes oder vielleicht nennt man das irgendwie anders. Das ist natürlich in dem Inner-Source-Bereich auch so, dass man eben sagen muss, naja, heißt ja eben nicht, dass, was weiß ich, ich habe zehn Teams, wenn ich halt für jede Änderung bei neun anderen Teams irgendwie ein Pull-Request schicken muss, ist jetzt auch vielleicht nicht optimal. Das heißt, wenn man diese Konzepte vorstellt und so, und wie arbeiten die Teams zusammen, dann kann man eben auch auf sowas hinweisen. Von wem hängt ihr ab, mit wem arbeitet ihr viel zusammen, was sind die Leute, die so über uns, die Gruppierungen sind.",
+            "start": 1177700,
+            "end": 1228847,
+            "confidence": 0.7306612903225803,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Jetzt hast du schon von Developer Happiness gesprochen, du hast schon von Recruiting gesprochen und du hast auch gerade, ich sag mal, den Happy Path von InnerSource beschrieben. Und meine Erfahrung im Recruiting ist nämlich folgende. Ziemlich viele Leute bewerben sich bei dir als Firma und sie bewerben sich unter anderem, weil du Known for Open Source bist, weil du da irgendwie kontributierst und so weiter. Wenn man dann mal eine Rückfrage stellt, hast du denn schon mal jemals an Open Source teilgenommen, also Contributed, also Pull Request? Dann kommt, ich würde fast sagen, zu 80 bis 85 Prozent die Antwort, nein, ich habe noch nie ein Pull-Request an ein Open-Source-Projekt gestellt. Und das ist auch nicht schlimm fürs Recruiting, doch was ich da immer faszinierend finde, ist, die Leute finden es sehr, sehr toll, dass die Firma selbst im Open-Source-Bereich aktiv ist. Und jetzt kommst du an und sagst, wir müssen Open-Source-Best-Practices, also Best-Practices von einem Bereich, wo die Leute noch nie teilgenommen haben, in der Firma durchführen. Meine Frage ist, ist das überhaupt möglich, wenn diese Menschen noch nie an Open Source teilgenommen haben? Also ist das nicht eine unglaubliche Ramp-Up-Time und super viel Training notwendig, was es eigentlich heißt, Open Source Best Practices anzuwenden und von welchen Best Practices reden wir hier eigentlich, die dann bei Inner Source eigentlich Tag für Tag in den Arbeitsworkflow integriert werden?",
+            "start": 1229438,
+            "end": 1310433,
+            "confidence": 0.8094173913043479,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Gebt ihr Recht, erstmal auf der einen Seite, das ist definitiv nicht so einfach, wie sich's anhört. Ja? Und ein Problem dabei, was man zumindest nicht anschauen muss, das klingt einfach, auch vor allem für den Leadership Level, so, ah, klasse, klingt ja einfach, gute Methoden, wir übernehmen die, bumm, fertig. Ich glaub aber tatsächlich, dass wenn eine Firma, die aus relativ starren Hierarchien kommt so mit relativ starken Aufgabentrennung und na vielleicht zum teil auch ungesunden Kultur also wenn es da irgendeine Form von Blame-Kultur gibt so ja wir haben ja unseren Teil geschafft, die da drüben haben es nicht erledigt sorry wir waren es nicht so naja gut das ist keine gesunde Kollaborationskultur so und wenn du da dann halt anfängst und anfängst diese Open Source Methoden zu erklären, dann ist das natürlich für die Leute, die das zum ersten Mal hören, tatsächlich nichts anderes als einfach sozusagen, vielleicht fühlen sie sich so wie Gehirnwäsche oder so. Wie jetzt? Wir könnten auch ganz anders arbeiten. Das würde vielleicht auch ganz anders gehen, ohne den Blame, mehr Verantwortung für mich, mehr Leverage für mich. Aber vielleicht auch mehr Learning für mich, mehr Spaß für mich, mehr Business Value für die Firma. Also zumindest mal zu sagen, da gibt es vielleicht Licht am Ende des Tunnels. Da gibt es so ein Ding, das kann ich jetzt gar nicht verstehen, aber das könnte echt viel besser gehen, als es jetzt gerade läuft. Und naja, eine Firma, die mit diesem Bereich anfängt, die muss eben bereit sein, zu einem gewissen Punkt, sich diesen Spiegel auch vorzuhalten. Also du kannst nicht sagen, bei uns ist alles toll, jetzt machen wir auch noch Inner Source. Das ist wahrscheinlich nicht der Fall. Wahrscheinlich ist es so, dass eine bestimmte Art von Kollaborationsproblemen, die durch irgendwas entstanden sind, und du willst die jetzt lösen. Ja, dann musst du eben in den Bereich investieren. Und ob du das jetzt Inner Source nennst, oder ob du das Cross-Department-Collaboration nennst, oder Cross-Team-Collaboration, oder Organisational Transformation to Optimise for Delivery Speed, ist am Ende des Tages ja völlig egal. Du musst dich immer noch damit auseinandersetzen, warum arbeiten die Menschen in meinem Unternehmen nicht zusammen.",
+            "start": 1310653,
+            "end": 1435387,
+            "confidence": 0.7864876712328773,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Ist das nicht die Kernaustage auch von Agile und DevOps nur halt auf andere Bereiche? Also bei Agile ist es halt, wie plane ich Projekte? Wie quatschen die Teams miteinander? Bei DevOps ist es, wie kollaborieren Ops und Dev? Und jetzt kommst du an mit einer dritten Methode und sagst, wie kollaborieren denn jetzt die Devs von unterschiedlichen Teams? Ist das nicht eigentlich dasselbe, nur mit einem anderen Namen drauf?",
+            "start": 1435772,
+            "end": 1458303,
+            "confidence": 0.7579714285714285,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Also ich würde sagen, ein und dasselbe ist es tatsächlich nicht. Also bei Agile für mich erstmal die Kernessenz ist ja, dass du überhaupt den Gedanken von Iterationen einführst. Wenn eine Firma gar nicht in Iterationen denken kann, dann werden auch alle anderen Sachen schwieriger. Also für mich so in meiner Gedankenwelt, aber da muss ich dazu sagen, dass mein Bias eben der ist, dass wir als Firma damals da in der Reihenfolge durchgegangen sind. Wir sind Agile, DevOps und dann ging es Richtung Inner Source, obwohl wir es noch nicht mal Inner Source genannt haben da. Ob das jetzt richtig oder nicht ist, muss irgendwie jeder für sich selber mal angucken. Ich würde behaupten, dass jede Firma, die sich jetzt gerade in irgendeiner Form für InnerSource interessiert, ich glaube nicht, dass die vorher noch nie irgendwie in Agile oder DevOps investiert haben. Halte ich für krass unwahrscheinlich, weil das hieß irgendwie, dass die die letzten 15 Jahre unter einem Stein halt Software entwickelt haben. Das würde ich einfach mal behaupten, ja, so die Grundlagen von den beiden Themen, die sind schon gut, wenn die da sind. Und ja, du hast natürlich recht, es gibt da Überlappungen so zwischen den Sachen, aber prinzipiell, wenn du dir jetzt Open Source anguckst, zum Beispiel in Open Source hast du halt so Sachen wie, du hast Maintainer und du kannst auch Maintainer werden in einem Projekt. Und wie läuft das denn ab? Und warum machen Leute das denn? Und so weiter, ne? So, das ist jetzt erstmal ein Konzept, was dir irgendwie Agile oder DevOps nicht erklärt. Oder so die ganzen Bereiche von, was gibt's denn alles an Dokumentationsmethoden, die hilfreich sind, wenn ich dafür sorgen will, dass Leute asynchron miteinander zusammenarbeiten. Auch wieder Sachen, die sicherlich vorkommen können, vor allem auch in DevOps und so, aber die vielleicht nicht so key sind für die Konzepte.",
+            "start": 1458663,
+            "end": 1556555,
+            "confidence": 0.7801405750798721,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Aber Andi hat da natürlich schon irgendwo einen Punkt, weil wenn man jetzt so an die ganze DevOps-Bewegung denkt, da ging es ja so um das Mauern einreißen in Richtung Ops, dass nicht nur Ops alles darf und dass eben die Developer auch mehr Einfluss haben, selbstständig deployen dürfen und so weiter. Und wenn man das natürlich irgendwo weiterspinnt, dann geht das natürlich schon in die Richtung, dass du jetzt eben auch nicht mehr diese Mauern vor den Teams hast, sondern die abgerissen werden, dass du eben auch mehr zusammenarbeitest, eben auch jemand außerhalb von diesem Team sich einbringen darf. Also es geht schon in diese selbe Marschrichtung, wo es einfach darum geht, Mauern vielleicht abzureißen und einfach offener miteinander umzugehen und vielleicht dem anderen auch ein bisschen mehr Verantwortung zu geben, jeweils sei es jetzt bei DevOps eben die Ops-Seite oder eben bei InnerSource dann vielleicht einfach den Zugriff auf den Code, dass man halt anderen Leuten auch zutraut, dass nicht nur ich der Meister bin in meiner Codebase und niemand anderer darf das verstehen und kann das verstehen überhaupt, weil meine Meisterleistung versteht niemand. sondern dass eben andere dann vielleicht auch irgendwo contributen dürfen, können und sollen demnach auch.",
+            "start": 1556988,
+            "end": 1619629,
+            "confidence": 0.7848955223880603,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Ja, auf jeden Fall. Das Bild, was du da gesagt hast, habe ich so noch nie benutzt. Aber ich finde, das ist ein ganz gutes Bild. Diese Mauern einreißen. Oder du sagst eben, für Firmen, wo das Bild zu stark ist, du kannst zumindest sagen, mach mal ein paar Löcher in die Mauer rein. Du fängst also an, die Dinger zu perforieren. Du fängst an, durchreiche Möglichkeiten durch diese Mauern zu kreieren. Von der Mentalität, von dieser Grundidee, bauen die Sachen sicherlich aufeinander auf und sind irgendwie artverwandt. Aber ist für mich auch irgendwie logisch, weil die kommen alle aus dieser Richtung. Das ist halt ein modernerer Ansatz der Zusammenarbeit. Weniger starr, mehr kollaborativ, mehr Fehlerkultur, mehr Bisschen einfach Transparenz, weniger Information Hoarding und so weiter. Ja, also ich finde, dass diese Sachen irgendwie hart verwandt sind und aufeinander aufbauen ist eigentlich in unserer jetzigen so Arbeit- und Leadership-Welt, ist das für mich nur logisch.",
+            "start": 1620420,
+            "end": 1678166,
+            "confidence": 0.7319483870967745,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Jetzt setzt es natürlich auch voraus, dass du irgendwie zum Beispiel Product Owner hast, die das tolerieren oder akzeptieren, dass du jetzt da Zeit investierst in irgendein Ding, was eigentlich ein anderes Team machen sollte und jetzt streiten sich sowieso immer alle Leads um Personen und die Arbeitszeit von diesen Personen. Und jetzt kommt da plötzlich jemand an und sagt, ja, 30 Prozent von der Zeit fließt jetzt eigentlich in andere Teams oder in die Software von anderen Teams wieder. Also ihr könnt mir schon vorstellen, dass das ein großes Problem ist. Siehst du sonst irgendwo Probleme, wenn wir mal davon ausgehen, InnerSource ist jetzt vorhanden und wird in der Firma angewandt? Gibt es irgendwo Probleme in der Zusammenarbeit mit den Teams oder ist dann einfach alles perfekt?",
+            "start": 1678206,
+            "end": 1720142,
+            "confidence": 0.7864921874999998,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Naja, also ich glaube, die Antwort steckt ja so ein bisschen da in der Frage, also alles perfekt ist natürlich wahrscheinlich nicht. Und ja, du musst erstmal, also du hast da unterschiedliche Level von Problemen, so ja. Also erstmal, wenn du Inner Source einführst, dieser Weg, das einzuführen, ist so ein Transformationsprozess, der eben für die Leute, je nachdem, wo die mental sind, Ist das halt ein Quantensprung, ne? Für jemanden, der wirklich aktiv ein Open-Source-Projekt maintained hat und Pull-Requests gekriegt hat, ist das, achso, wir machen das jetzt hier auch so, bumm. Ja, also für den ist das wirklich wenig, ja? Aber für einen Product-Owner, der denkt, meine Entwickler, meine Arbeitszeit, diese Menschen gehören mir, ist das ein Quantensprung und wahrscheinlich will der oder die das auch gar nicht machen, ja? Aber ja, da gibt es eben alle möglichen Arten von Gesprächen, die du da haben musst. Worum geht es denn hier wirklich? Geht es um meinen Code und deinen Code? Oder geht es darum, Business Value für unsere Kunden? Und sobald wir anfangen, über Business Value für unsere Kunden zu reden, kann man halt andere Arten von Gesprächen führen. Da kann man halt sagen, naja, kann ich dafür sorgen, dass über sage ich jetzt mal, zwei, drei Iterationen von Zusammenarbeit zwischen Team A und Team B. Eine Sache, die normalerweise für Team A drei Sprints gedauert hat, dauert jetzt nur noch einen Sprint. Und die müssen das häufig machen, sowas. Ja, dann kannst du halt sagen, ah, guck mal, das ist ein Investment sozusagen. in deine Cycle Time und wenn du so denken willst, ja, ROI sozusagen, okay, du investierst jetzt drei Sprints, wo es gefühlt langsamer wird und du das Gefühl hast, dass du jemand anderen die Arbeitszeit deiner hochgeschätzten Entwickler schenkst, aber effektiv, über zehn Sprints gesehen, wirst du schneller. Und dann gibt es eben noch die ganzen kollateralen Benefits sozusagen, die das hat. Ja, weil dann fängt an, okay, die Empathie zwischen beiden Teams wird größer, weil die haben zusammengearbeitet. Ist also viel wahrscheinlicher, dass der Andi eben nicht mehr sagt, ey, ich hab mit dem Wolfgang zusammengearbeitet, ist ja richtig bräsig, der Wolfgang. Sondern dass er sagt, ey, wow, das Ding, wo der Wolfgang dran arbeitet, ist ja richtig, richtig komplex. Hab ich gar nicht gedacht. Ja, und sofort werden die Anfragen besser, wird die Zusammenarbeit besser, wird das Gemeckere im Stand-up weniger und so weiter.",
+            "start": 1720572,
+            "end": 1838426,
+            "confidence": 0.7510597014925375,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Oh, wenn du mir das versprechen kannst, dann führen wir sofort Innersource bei der Zusammenarbeit bei uns zwei ein, wenn der Andy weniger meckert. Unbedingt. Aber heißt es dann eigentlich auch, dass die Politik weniger wird? Also diese Politik, von der man ja, ist ja nie so genau definiert, aber alle hassen irgendwie diese Politik in der Firma und das Streiten um Ressourcen und Leute und so weiter. Hattest du bisher die Erfahrung, dass es dann irgendwie zurückgeht oder da auch positive Auswirkungen hat auf diesen Bereich?",
+            "start": 1838626,
+            "end": 1864946,
+            "confidence": 0.8018505747126434,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Ich sag mal, kann es haben, wenn die Leute bereit sind, eben das auch zu sehen. Das heißt eben auch Leadership zum Teil bereit ist, das halt zu sehen, ja, zu gucken, wo sind da wirklich die Probleme. Weil klassischerweise denkst du halt immer einfach so, ah, okay, Team A oder Team B, das ist das Team, von dem alle abhängen, sind nicht schnell genug, klasse. Wir ballern da einfach mehr Entwickler rein. Super, sind ja morgen doppelt so schnell. Ja, wissen wir alle, so geht das nicht, ja. Aber du könntest zum Beispiel, nehmen wir mal den gleichen Fall, aber mit dem Inner Source Mindset, ja. So, über die Zeit machen also unterschiedliche Teams, die alle von diesem Team B abhängig waren, die machen alle Contributions dahinten, ja. So, über die Zeit werden einige von den Leuten von den anderen Teams, die werden, was wir in InnerSource Trusted Committers nennen. In Open Source würde man es oft vielleicht einfach als Maintainer übersetzen. So, die kriegen eigentlich Elevated Access zu diesem anderen Projekt. Die können zum Beispiel vielleicht da selber auch Staging deployen oder die, ne, also was auch immer das für das Projekt heißt, ja, die kriegen einfach mehr Zugriff. Das heißt, die können sozusagen länger alleine arbeiten. Und im extremen Fall, je nachdem auch wieder, wie ist dein DevOps, wie ist dein Testing, alles mögliche an Kontext, der relevant ist. Aber ja, warum nicht? Warum kann ich Team A, wenn die einen Trusted Committer haben und wenn Team B denen vertraut, warum können die nicht einfach einen neuen Release cutten und einen neuen Mineral Release von der Komponente von dem anderen Team einfach releasen? Naja, es gibt ja keinen, der diesen Mineral Release benutzt, außer Team A. Was soll denn da passieren? Aber das sind dann eben so Konzepte, wo du sagen kannst, warte mal, ich habe gar nicht Leute dem Team hinzugefügt und trotzdem wird das Gesamtkonstrukt schneller. Und wenn irgendwann gefragt wird, wer kennt sich denn eigentlich mit Bereich X aus, dann kannst du eben nicht mehr so ganz eindeutig sagen, ja, das ist ja nur Team B, sondern würdest du sagen, ja, Team B und alle, die da schon mal hincontributet haben, die kennen sich damit auch besser aus. Das heißt, du reduzierst den Buzz-Factor auf die Leute in Team B, Du machst mehr Knowledge Sharing, du hast definitiv mehr Dokumentation über diesen Bereich, weil die Leute sich halt asynchron ausgetauscht haben und so. Also ich finde diese Bereiche interessant, sozusagen wenn du die Idee weiterdenkst und was die ganzen Side Effects sind, die deine Firma davon hat.",
+            "start": 1865246,
+            "end": 1988313,
+            "confidence": 0.7501824480369522,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Eine Frage, die mir schon lange natürlich auf der Zunge liegt und die eigentlich so die Standardfrage ist, wenn man so mit EntwicklerInnen viel zusammengearbeitet hat bisher, du bist ja auch im Management-Bereich unterwegs, dann kennt man ja dieses Problem, wenn irgendeine SoftwareentwicklerInnen den Code bekommt von irgendwo anders, dann ist der immer schlecht. Der ist automatisch immer schlecht, den muss man neu schreiben, man kann jetzt automatisch immer bessern. Also diese Grundhaltung, Ja. Habe ich leider schon sehr häufig erlebt jetzt. Ist das natürlich schon ein Grundproblem, wenn man davon ausgeht, das ist mein Sourcecode, das ist meine Codebase und jetzt kommen da andere und glauben, sie können bei mir da rein contributen und können besser sein als ich oder zumindest verstehen, was ich mache. Hast du dieses Problem bisher erlebt bei der Umsetzung von innerSource und wie geht man denn am besten mit dem um?",
+            "start": 1989082,
+            "end": 2040103,
+            "confidence": 0.8125442176870749,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Also ich würde sagen, ja, im Negativfall auf jeden Fall erlebt. Was ich nur sagen will, also normalerweise, Ich bin dafür bekannt, dass ich mir normalerweise immer so ein bisschen vor die Entwickler stelle, das will ich in dem Fall auch mal machen. Heißt ja auch, das System, in dem die arbeiten, hat das nicht inzentiviert, sozusagen. Hat ein anderes Verhalten nicht inzentiviert. Oder, wenn ich wirklich sagen wollte, ja, das ist irgendwie der böse Einzelne sozusagen, ja, die haben halt sozusagen Job Security gemacht da, ja, die haben es keinem erklärt, keinem dran gelassen und sagen hier, Das ist meins, holy grail, darf keiner kontributen und dokumentieren brauche ich nicht, weil ich weiß ja alles. Naja gut, da könnte man argumentieren, da gab es dann aber einen schlechteren Engineering Manager in dem System, der nicht gesagt hat, ey Leute, wir müssen jetzt sowas auch mal machen, weil wenn der Kalle von da drüben, wenn der morgen irgendwie in den Sack haut, dann haben wir hier ein Problem, ja. Also was ich einfach da sagen will, sozusagen am Ende des Tages musst du wieder, ist es das System sozusagen, was dazu geführt hat? Aber diese Probleme, die man eben oft sieht, so Sachen wie, ja, not invented here, also schickt mir einer ein Pull-Request oder es ist nicht meine Entwicklungsqualität hier, das ist nicht gut genug oder die Tests sind falsch geschrieben oder was auch immer. Also eine Sache, die ich da spannend finde, erstens so, wenn du es wirklich machst, wenn du die Pull-Requests machst und wenn du dafür sorgst, dass die Leute halt in diesen Pull-Requests miteinander reden, zumindest mal machst du einen Teil von diesem Information-Hoarding, machst du Transparent. Du zeigst, wo es mehr passiert und wo es weniger passiert. Ja? Und wirst dann eben Teams finden, wo das gar kein Problem ist. Ja? Also die helfen dem Contributor und die kriegen die Contributions mit rein und so weiter. Und andere Teams, die einfach partout irgendwie alles rejecten. So. Und ich meine, klar, dann wird's auf jeden Fall eine Leadership-Aufgabe auch. mit den Leuten zu arbeiten, ja, und eben zu gucken, ja, woran liegt's denn hier? Und normalerweise liegt's eben nicht dran, dass ein Entwickler extrem gut ist und alle anderen extrem schlecht sind. So, ich glaube, das, das wissen wir, sondern da kann's vielleicht dran liegen, dass, ja, jemand hat irgendwelche Erwartungen von dem Code von anderen Leuten, die er aber nie irgendwo erklärt hat, ja? So, und dann kannst du halt argumentieren, ja, kannst du hier automatische Checks machen, kannst du Dokumentationen machen, kannst du mal Peer-Programming-Sessions mit den Leuten machen, kannst du den Leuten helfen. Denn wir erklären, dass wir wollen aber die Contributions haben. Wir mögen diese Idee von Cross-Team-Contribution sozusagen, ne? Also der Weg ist dahin, ist auf jeden Fall steinig, je nachdem mit, wie sind deine Leute so drauf, ja? Also wen hast du denn, wen hast du denn eingestellt? Wie hast du die denn motiviert? Wie lange hast du die in einem bestimmten Modus arbeiten lassen? Und so, ne? Aber ich will sagen, die andere Seite gibt es auf jeden Fall auch. Also es gibt auch Leute, nimm mal die andere Richtung. Nimm mal ein Junior, ist drei Monate bei dir, kriegt jetzt ein Pull-Request von Andi und denkt sich, boah, guck mal hier, wie der mein Ding hier umgebogen hat, macht immer noch das gleiche, ist aber jetzt besser testbar. Und bei dieser besseren Testbarkeit hat Andi, ich meine, Andi war ja nur an dem Projekt dran, weil er Feature X hinzufügen wollte. So, auf einmal hast du irgendwie eigentlich eine Trainingssituation erzeugt zwischen zwei Entwicklern, zwischen zwei Teams, die du eben nicht sozusagen groß ansetzen musst, ja, und sagen musst, hier, guck mal an, die zeigt uns jetzt mal, wie man in Java Testing besser macht oder so, sondern es ergibt sich organisch darüber, dass zwei Teams zusammenarbeiten müssen, ne. Also, ich finde, die andere Richtung kann man auch sehen. Was heißt das für Juniors? Was heißt das für Leute, die lernen wollen? Was heißt das für die guten Teacher, die du in deiner Organisation hast, die eigentlich ganz viel den anderen Leuten beibringen? können, aber wenn du denen sagen würdest, ey, organisier mal einen Workshop irgendwie, den machen wir nächste Woche und dann laden wir 30 Entwickler ein, dann würden die sagen, oh, eine App, boah, kann ich nicht, ist mir zu viel, wie auch immer, ne? Also, ja, ich finde einfach, das kann man von beiden Seiten auf jeden Fall beleuchten und dann, ja, dann kommen da, treten da ganz andere Dinge zutage einfach.",
+            "start": 2040143,
+            "end": 2261053,
+            "confidence": 0.7395442708333334,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Der Vorteil ist, es muss ja auch nicht wirklich jedes Team sofort umsetzen, also es ist ja wahrscheinlich ein Transformationsprozess sowas und du hast immer die Early Adopters und mit denen solltest du möglichst zusammenarbeiten und dann entsteht es ja über die Zeit, Leute sprechen miteinander und irgendwann geht es halt dann in die breite Masse, in alle Teams über, sobald die Leute den Vorteil sehen. Aber du brauchst natürlich auch, was du jetzt schon erwähnt hast, den Support vom Leadership am Anfang. Hast du da irgendwo Probleme erlebt bisher mit der Leadership-Seite oder ist das für die automatisch klar oder interessieren sich die eigentlich eh wenig dafür, wenn man da jetzt irgendwas öffnet?",
+            "start": 2262144,
+            "end": 2297287,
+            "confidence": 0.8103771929824557,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Kommt sicherlich auf deine Leadership-Kultur an. Ja, wie ticken die? Auch wieder, wie viele Erfahrungen haben die zum Beispiel? Ja, wenn du halt jemanden hast, der hat Erfahrung mit Open Source und irgendwie predigt das die ganze Zeit deinem Leadership-Team, dann bist du in einer anderen Situation, als wenn es in dem Team vielleicht gar keine Softwareentwickler gibt. Also die haben noch nie irgendwie aktiv Software gebaut. Das sind ja ganz, ganz unterschiedliche Welten dann, über die du redest. Was ich sagen würde zu deiner Frage, brauchst du Support von Leadership? Ja. Aber vielleicht nicht sofort. Also ich glaube, dass du so InnerSource-Sachen ganz gut in einem Team-Kontext anfangen kannst, um die für dich auszuprobieren und zu gucken, ob du da einfach für dich als Team erstmal Value rauskriegst. Weil du könntest ja so rum anfangen, dass du sagst, also du hältst dir selber den Spiegel vor. Okay, wir haben hier diese Komponenten. Und dann haben wir die Komponenten hier, da kriegen wir relativ viele Anfragen und wir kommen einfach nicht hinterher. Wir kommen hinter den Issues, die da geschickt werden, einfach nicht hinterher. Und dann zu überlegen, naja, welchen Teil davon liegt denn eigentlich daran einfach, dass dieses andere Team auf mich wartet und das ist eigentlich eine recht kleine Änderung ist so, die ich vielleicht, die die vielleicht selber implementieren könnten. Ja, wo es mir wirklich über die Zeit, Zeit sparen könnte, wenn ich denen helfe, das selber zu machen. Das heißt, ich denke, solche Experimente kann man teamintern auf jeden Fall selber machen. Und wenn man rumguckt in der Organisation, habe ich die Erfahrung gemacht, dass du normalerweise quasi schon inneres Haus findest. Du findest wahrscheinlich schon Projekte, die arbeiten schon effektiv in dem Modus, auch wenn die es vielleicht gar nicht so nennen. Ja, aber wahrscheinlich würdest du eben finden, dass Ich nehme jetzt mal den GitHub-Beispiel oder das Git-Repository oder wie auch immer. Du findest irgendwie das Repository. Die haben Dokumentation darüber, wer sind wir, wie kannst du uns kontaktieren, was macht diese Komponente und wie kannst du diese Komponente erweitern. Also, wie kannst du contributen in irgendeiner Art und Weise. Oder du würdest vielleicht sehen, wenn du dir die Contributors irgendwie der letzten sechs Monate anguckst, würdest du halt feststellen, ah, warte mal, hier kommen Contributions rein von Leuten, die gar nicht in diesem Team sind. Ja, dann würdest du ja auch irgendwie eigentlich wissen, ah, das ist ja quasi irgendwie in einer Source auf irgendeine Art und Weise. Egal, ob die das so genannt haben oder nicht, ne?",
+            "start": 2297307,
+            "end": 2419733,
+            "confidence": 0.7306047058823522,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Was ich persönlich öfters erlebt habe, das ist jetzt noch keine Code-Contribution, aber ganz klassisch, man fragt irgendein anderes Team, kannst du mir mal ein Code-Review machen bei meinem eigenen Projekt? Ist eine neue Programmiersprache oder ist ein neuer Bereich? Du kennst dich ja da aus in dem Bereich, mach mir mal ein Code-Review oder sowas. Also in die Richtung kann man ja auch Knowledge-Sharing machen und das ist so vielleicht dann auch der erste Schritt in der Zusammenarbeit, dass man also auch in einen anderen Source-Code von einem anderen Team überhaupt mal reinblickt und da Kontakt hat.",
+            "start": 2420080,
+            "end": 2446309,
+            "confidence": 0.7369591836734691,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Auf jeden Fall.",
+            "start": 2446749,
+            "end": 2447149,
+            "confidence": 0.32333333333333336,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Also das habe ich oft erlebt. Und dann ist der nächste Schritt natürlich relativ easy, wenn man sagt, hey, du kennst unseren Code eh schon oder du hast einmal ein Review gemacht, kannst dann auch gerne was Contribute.",
+            "start": 2447189,
+            "end": 2456175,
+            "confidence": 0.7006842105263158,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Ja, und eine ganz gute, ich nenne es jetzt mal vielleicht in dem Zusammenhang irgendwie eine positive Gateway Drug sozusagen, ist für mich Dokumentation. Also wenn du dein Projekt so baust, dass du, also du weißt schon, dass andere Teams von dir abhängig sind, das heißt, du hast ja in irgendeiner Form Developer-Documentation, ja, wie auch immer die aussieht, und wenn du da deinen Prozess schon so baust, dass die anderen Teams zumindest mal dir dabei helfen können, deine Dokumentation besser zu machen, ja, also die machen, ja, jetzt sage ich mal, Im besten Fall ist das auch eine Code Contribution, also das funktioniert auch durch ein Protoquest, aber die ändern halt irgendwie Markdown-Files oder andere Dokumentationsfiles und nicht unbedingt deinen Java-Code. Wieder das Gleiche, ja, da kannst du eben irgendwie argumentieren, okay, das dauert wahrscheinlich nicht ganz so lange, das mit dem Testing ist auch ein bisschen ein anderes bei der Dokumentation und so weiter, aber du hast die Leute schon mal dazu geführt, dass die eben, während sie deine Komponente nutzen, dir helfen, deine Komponente besser zu machen, dadurch, dass die Dokumentation besser wird. Das ist irgendwie auch wieder so ein erster kleiner Schritt und ist bei Open Source zum Beispiel ganz oft das Gleiche, ja, dass die Leute lassen irgendwie so Beginner-Issues da rumliegen oder manchmal, ich habe sogar gehört, dass Leute teilweise irgendwie kleine Fehler in die Dokumentation einbauen, damit Leute da irgendwie Spelling-Mistakes fixen können und so. Ja, also ich glaube, das kann auch ein ganz guter erster Schritt sein, um erstmal in diesen Modus, in den Modus reinzukommen, dass beide Teams verstehen, wie fühlt sich das eigentlich an, wenn ich so eine so eine Cross-Team-Contribution machen.",
+            "start": 2456733,
+            "end": 2538856,
+            "confidence": 0.7499999999999999,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Gedanken habe, dass das mal offen für andere Teams ist, dann gehe ich ganz anders auf die Dokumentation überhaupt zu. Weil ganz oft, man sieht ja irgendwelche Git-Repositories mit einem leeren Readme-File meistens. Aber wenn ich natürlich im Kopf habe, okay, es soll auch jemand anderer verwenden. Ich glaube, Zalando war ja da mit dem Open-Source-First-Ansatz recht früh dran. Ich glaube, das ist auch schon über zehn Jahre her, die gesagt haben, man muss so entwickeln, als wäre es Open-Source, auch innerhalb der Firma, weil das einfach die Dokumentation stimmt, dass das Onboarding ins Projekt möglich ist, dass man da die ganze, nicht nur Dokumentation, sondern eben, wie du sagst, auch Issues, was sind leichte Issues, die man umsetzen kann und so weiter, dass man das alles vereinfacht, damit man eben möglichst die Zusammenarbeit fördert, sei es jetzt wirklich mit Open Source oder eben bei Inner Source.",
+            "start": 2541505,
+            "end": 2588779,
+            "confidence": 0.7657891156462581,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Ja, und jetzt vielleicht auch nochmal, da kann ich nochmal einhaken zu deiner Frage, die du vorher gestellt hast, ist eben dieser Punkt, ja, wenn die Leute wissen, ah, andere Entwickler in dieser Firma werden meinen Quellcode sehen, werden meine Dokumentation sehen, werden vielleicht ein Pull-Request schicken, ja, dann werden die, also das ändert tatsächlich halt den Qualitätsanspruch, ne, den Qualitätsanspruch an die eigene Arbeit. Und da gibt's ne, sag ich mal, da gibt's ne Abwehrreaktion, im schlechtesten Fall so, die dann irgendwie kaschiert wird, ja, aber wenn die Leute ganz ehrlich wären, glaube ich, dann würden viele sagen, oh, ich bin, ich mache mir jetzt eigentlich so ein bisschen Sorgen, weil wenn der Andi jetzt meinen Java-Code liest und mir dann sagt, oh, Sebastian, das war jetzt wirklich nicht so das Goldene hier, was du da runtergeschrieben hast, solange das nichts Schlimmes ist, ja, solange das nicht penalized wird, ja, sondern solange wir irgendwie sehen, nee, Transparency, sozusagen, das ist unser Standard, ja, also jeder hat zum Beispiel, könntest du halt sagen, erstmal jeder hat auf jeden Fall lesenden Zugriff auf den Quellcode von allen anderen Teams. So, ich komme erstmal dran. Ich kann das lesen. Ja, und dann kannst du eben ab da Methoden bauen, wo du sagst, ich kann den Leuten Feedback geben, ich kann die kontaktieren, ich kann Pull-Requests schicken, ich kann Co-Maintainer werden. Wie auch immer, ne? Also sozusagen, wie viel Leverage willst du den Leuten halt geben in deinem Projekt? Aber erstmal diese Grundidee, dass der Zugriff ist da, Austausch ist wichtig, Zusammenarbeit ist wichtig, von anderen lernen ist gut, selber schlecht sein, in Anführungsstrichen, selber noch nicht alles wissen, weil ich jetzt halt ein Jahr Java programmiere und nicht 15, ist doch völlig fair. Also ich behaupte, wenn deine Firma so nicht denken kann, brauchst du dich auch nicht wundern, wenn du deine neuen Leute nicht ongeboardet kriegst, weil die sich halt die ganze Zeit nur schämen, dass sie eben noch nicht alles wissen.",
+            "start": 2589168,
+            "end": 2684458,
+            "confidence": 0.7314924471299091,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Das Problem ist natürlich bei sowas immer, dass es ein Langzeitinvestment ist, weil wenn jetzt ein Programmierer ankommt und zum Product Owner sagt oder zum Lead oder was auch immer, ich muss jetzt 20% mehr investieren, weil ich muss eine schöne Dokumentation machen, ich muss jetzt, keine Ahnung, die Issues schöner schreiben, ich muss den Code besser kommentieren und, und, und. Dann hat das natürlich mal in erster Linie negative Auswirkungen, dass alles länger dauert, wenn der das so schlecht verkauft. Das ist ja ganz allgemein das Problem von Tests, von Kommentaren und so weiter. Aber du hast natürlich das als Langzeitinvestment, dass dir das am Ende vereinfacht, wenn du einen neuen Zugang hast beim Onboarding, bei der Zusammenarbeit. Aber die Früchte kannst du natürlich erst später ernten. Das ist halt immer so das klassische Problem und du musst es dann halt verkaufen an das Leadership oder an die Leute, die das überblicken und dass die halt den Vorteil auch verstehen. Und das ist halt in der Realität oft sehr schwierig. Vor allem, wenn es jetzt nur ein Developer in einem Team halt ein Product ohne dem Lead verkaufen muss.",
+            "start": 2685143,
+            "end": 2743146,
+            "confidence": 0.7898473684210525,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Ist ein guter Punkt. Habe ich jetzt auch keinen, also ich wünschte, ich hätte jetzt irgendwie so eine Checklist, die ich dem einen Developer oder Developerin da an die Hand geben könnte sozusagen. Das ist hier dein, das ist dein Schild sozusagen, mit dem du dich da ein bisschen bewaffnen kannst, um in diese Gespräche zu gehen.",
+            "start": 2743586,
+            "end": 2758732,
+            "confidence": 0.6915614035087716,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Ja, ich glaube, du brauchst halt einfach spy in irgendwelche Sponsoren, die dir dabei helfen, dass du halt nicht der Einzige bist. Es gibt ja Leute, die das auch vielleicht gut verkaufen können oder die einfach sagen, das ist bei uns bei der Definition of Done mit dabei und Schluss aus. Und da gibt es gar keine Diskussion. Und wir verkaufen das gar nicht als 10 Prozent mehr Aufwand, sondern das ist bei uns in der Definition of Done einfach alles mit drin. Und das ist Teil der Arbeit und da gibt es gar keine Transparenz, wie viel Prozent das jetzt von der Arbeitszeit ausmacht. Und da bist du natürlich besser dran, aber du musst natürlich auch irgendwo starten und das ist natürlich dann schon das Problem. Aber umso flexibler, glaube ich, die Kultur und umso offener, umso eher lässt sich das dann auch, ja, wenn man es negativ formulieren will, reinschmuggeln in den aktuellen Zeitraum.",
+            "start": 2759360,
+            "end": 2804047,
+            "confidence": 0.7930192307692302,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Also ich denke halt, wenn du zumindest mit diesem großen themen so ja dieser was was ist der return on investment über die wir früher gesprochen haben in dem podcast also sachen mit den wie reduziere ich die silos wie mache ich mehr reuse weniger duplication wie kann ich knowledge sharing irgendwie verbessern und so weiter ich glaube bei den großen themen werden die meisten leadership leute erstmal irgendwie mit dabei ja würden sagen okay das sind auf jeden fall sachen in die wir investieren Ich glaube, dann ist die Frage, wie musst du es innerhalb von deiner Firma übersetzen? Ich glaube, der effektivste Fall wäre, irgendwie an konkreten Beispielen, die es in deiner Firma gibt, zu zeigen, guck mal hier, an den Stellen haben wir unterinvestiert und deswegen haben wir hier diesen Bildwuchs zum Beispiel. Ja, deswegen haben wir diese Komponente quasi zwölfmal. So, das können wir jetzt auch noch anders machen oder für neue Projekte können wir uns mal ein bisschen anders denken, ja? Also ich glaube, das kann helfen, weil meine Erfahrung ist eben sozusagen diese, diesen Long-Term Collateral Damage sozusagen von Unterinvestment in bestimmte Bereiche, der ist tatsächlich schwer zu sehen. Also ich glaube, der ist für jeden schwer zu sehen, aber vor allem für Leute, die vielleicht gar nicht so viel Hands-on Coding machen. Und ich glaube, an der Stelle, ja, hilft es dann eben nicht zu sagen, hey, die haben das nicht verstanden, Mist. Sondern da musst du eben als Entwickler oder als Engineering Manager oder als Agile Coach oder als Product Owner oder wer auch immer, das Problem sehen kann, musst du halt sagen, okay, ich muss jetzt einfach helfen. Ich muss helfen, das zu übersetzen. Ich muss das anders erklären, weil es ist nicht, dass die anderen Leute dumm sind. Das muss die Grundidee sein. Es ist nie, dass die anderen Leute dumm sind, sondern die können es nicht verstehen. Die haben die Empathie nicht vielleicht für diesen Bereich, weil sie es im Kleinen nicht gesehen haben. Also muss es anders übersetzen. Und ich glaube, das ist ein Problem, das hast du bei Agile oft, das hast du bei DevOps oft, das hast du bei InnerSource, aber immer noch auf die gleiche Art und Weise. Du kannst es nicht einfach annehmen, dass das jeder sofort verstehen kann, was da die positiven Effekte sind und welche Art von Probleme du eigentlich löst.",
+            "start": 2804107,
+            "end": 2914936,
+            "confidence": 0.733859649122807,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Jetzt sprichst du natürlich schon sehr viel über die Bereiche Arbeitskultur und ich habe das Gefühl, du sprichst gerade auch von sehr erwachsenen Teams. Also Teams, die immer das Gute annehmen und so weiter und so fort. Was ich mich halt gerade so frage, nicht jedes Team innerhalb der Firma ist erwachsen oder vielleicht sind die Engineering Regeln oder Guidelines in der Organisation noch gar nicht so selbst erwachsen. Was muss denn eigentlich gegeben sein aus technischer Sicht, damit die ganze Sache überhaupt eine Chance hat? Also, ich denke da an so Sachen wie einheitliche Programmierguidelines für Python, Company-wide. Oder Core-Sprachen, wie Google sie hat. C++ und Python werden von Haus aus supported und so weiter. Hilft sowas alles oder also welche technischen foundations müssen eigentlich da pro repository eigentlich gegeben sein, dass die ganze Sache überhaupt eine Chance hat.",
+            "start": 2915332,
+            "end": 2965271,
+            "confidence": 0.7861214285714284,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Ist eine sehr gute Frage, Andy. Was sind die technischen Grundlagen, damit InnerSource eine Chance hat? Auch bei Teams, die vielleicht noch nicht so erwachsen sind, wie du gesagt hast, oder noch nicht so viel Erfahrung in dem Zusammenarbeitsbereich haben oder so. Ich behaupte, gibt es eigentlich als technische Grundlage überraschend wenig, was du wirklich brauchst. So, eine Sache, die ich vorhin gesagt habe, ist, naja gut, du musst erstmal überhaupt in der Lage sein, an den Quellcode der anderen Teams anzukommen. Ja, also das heißt irgendwie im Inner-Source-Bereich wird das oft irgendwie Inner-Source-Portal genannt oder so, oder im einfachsten Fall ist halt dein Version-Control-System ist halt irgendwie so gebaut, dass die Leute halt zumindest mal lesenden Zugriff auf die anderen Sachen haben und die auch finden können, und im besten Fall, wieder Konfigurationsfrage, können zumindest mal ein Issue aufmachen, das hast du wahrscheinlich jetzt schon, entweder direkt in deinem BCS oder woanders, oder können vielleicht eben auch schon ein Pull-Request schreiben. So, also da sind so ein paar technische Grundlagen, über die musst du dir irgendwie Gedanken machen. Und je nachdem, wie respektiv deine Firma ist, ist das halt schon tatsächlich Arbeit, ja? Also wenn die Firma sagt, nee, zwischen Unit 1 und Unit 2, die dürfen halt ihr Zeug nicht sehen, aus Gründen XY. Na klar, die musst du erstmal lösen, ja? Also kein einzelner Entwickler geht jetzt hin und sagt, das Problem überwinde ich jetzt, weil warum auch? Also gibt's ja erstmal keinen Anreiz. Also ich glaube, das ist so ein Basisding, dass du erstmal zwischen den Teams, wo du überhaupt eine Chance siehst, dass das für die sinnvoll wäre, musst du dafür sorgen, dass die gegenseitig an den Quercode rankommen, weil das ist eine Kollaboration hauptsächlich auf dem Code-Level. Also das ist mal gegeben. Dann gibt es so ein paar Basissachen, so mit, was ist so Standard-Basis-Dokumentation, die du von deinen Projekten erwartest, damit Leute überhaupt wissen, wo sie loslegen sollen. Da gibt es auch einige Patterns in dem Bereich, die die Inner Source Commons hat, also was ist die Base Documentation, was sind Trusted Committers, wie beschreibt man das? Also wie gesagt, dieses Maintainer. Konzept, was ich vorhin angerissen habe, also solche Sachen, aber das ist jetzt nicht, das ist wirklich nicht Rocket Science, ja, das ist einfach irgendwie kennt man ganz oft, also wie schreibt man ein bisschen bessere Readmes halt, wie dokumentiert man das, was das Team eigentlich für sich definiert hat, so. Ich glaube dann der Bereich, den du dann erwähnt hast, so irgendwie firmenweite Sprachen, auf die du dich geeinigt hast, oder Was war dein Beispiel? Ich glaube Coding, sozusagen Coding-Style in Go oder irgendwie sowas, ne? Ich behaupte, das könntest du tatsächlich erstmal weglassen, könntest sozusagen mit den ersten Pull-Requests anfangen, könntest den Leuten das erstmal möglich machen und dann feststellen, naja, was macht denn die Reviews langsam? Ist die Review wirklich, dass sie sich jetzt auf keinen Fall auf irgendwie den Go-Style einigen können, weil whatever, Tabs versus Spaces oder was auch immer das Problem ist? Oder irgendwas Signifikanteres halt? Oder ist das Problem eigentlich auf einer anderen Ebene? Also ist das Problem irgendwie, dass zum Beispiel das Team, was jetzt diesen Product Request kriegt, sagt, oh, aber dann sind wir ja für deinen Code auch verantwortlich in Production. Was heißt denn das jetzt? Warte mal, zahlst du jetzt meinen On-Call oder was? Also ich glaube, da gibt es Bereiche, über die man sich Gedanken machen muss. Auch ein ganz interessantes Pattern, was es in der Inner Source Commons gibt, die haben das 30-Day-Warranty genannt. Also so diese Idee, du machst eine Contribution, für 30 Tage bist du auch für die Fixes verantwortlich. Finde ich zumindest erstmal als mentales Konzept, glaube ich, ganz interessant, einfach zu sagen, ja, du kannst halt nicht da irgendwas rüber schubsen und sagen, ja, passt schon so, klick mal Merge, sondern du musst eben auch sagen, naja, also ich versuche es schon so gut wie möglich zu machen und helfe dann eben auch ein Teil der Maintenance weiter. Also da gibt es schon Situationen sozusagen, die einfach signifikant neu sind. Also die sind für die Teams so neu, dass sie sie vorher noch nicht hatten, dass sie jetzt kein Rezept haben, was sie rausholen können und sagen, das machen wir immer so. Sondern da muss man sich nochmal ein bisschen neu darüber Gedanken machen. Und ich glaube, dieser Was heißt das? Ein erwachsenes Team. Also für mich persönlich, und ist wieder trivial zu sagen und ich finde es schwer zu machen, am Ende des Tages muss man immer allen Beteiligten sagen, wir produzieren gemeinsam Business Value und normalerweise auch Value für unsere Customers. Und wenn wir das nicht im Kollektiv machen, dann machen wir es eh falsch. Egal wie wir es machen.",
+            "start": 2965717,
+            "end": 3204308,
+            "confidence": 0.7516365914786971,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Und man submittet ja nicht einfach ein neues Feature so ohne irgendwann mal miteinander gesprochen zu haben, ob das Sinn macht das Feature natürlich und ob das überhaupt Platz findet im Source Code und die andere Seite wird es auch nicht einfach blind, hoffentlich nicht blind reinmerchen und dann... Also ich glaube gerade in einer Firma ist das noch wesentlich Einfacher als in der Open-Source-Welt, weil in der Open-Source-Welt prasseln auf mich so viele Feature-Requests ein und man muss dann irgendwie anfangen über Priorisieren. In der Firma findet es ja hoffentlich schon auf einer anderen Ebene oder im Vorfeld zumindestens statt, was machen wir denn eigentlich, was wollen wir erreichen, welche Features sind die nächsten und so weiter. Also da gibt es ja hoffentlich schon eine Priorisierung im Vorfeld.",
+            "start": 3204556,
+            "end": 3242530,
+            "confidence": 0.7874496124031007,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Ja, also ich glaube, du hast da einen interessanten Punkt, den wir vielleicht so noch nicht ausgesprochen haben. Ich glaube tatsächlich, dass manche Open-Source-Methoden theoretisch im Inner-Source-Bereich effizienter sein können, als in Open-Source. Ja, weil du sozusagen, weil du zum Beispiel, was du gesagt hast, so zum Beispiel die Leute gegenseitig dann doch mal im Zweifel zu erreichen, ist ein bisschen einfacher. Oder es gibt eine gemeinsame Marschrichtung irgendwie. Also so kleine Sachen, die du in der Open-Source-Welt irgendwie dann halt gar nicht hast. Auf der anderen Seite den Punkt, den du angerissen hast, naja, man würde doch erwarten, die Leute sprechen vorher miteinander. Zum Beispiel dieser Fall, dass Team A schickt zu Team B einfach ein Pull-Request. Team A sagt, der ist fertig. Wir warten jetzt nur noch, dass die endlich merchen. Also das passiert auf jeden Fall. Also ich behaupte, dass wenn du das einführst oder vielleicht auch jetzt schon, das passiert auf jeden Fall. Warum die Leute das denken, dass es so läuft, kann ich eigentlich gar nicht so final beantworten. Aber ja, das sind eben so diese Zusammenarbeitsthemen sozusagen, an die du dann halt strukturierter ran musst, dass du erklären musst, warum funktioniert es denn so nicht.",
+            "start": 3242875,
+            "end": 3304070,
+            "confidence": 0.7474726368159205,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Die Probleme hast du ja gerade im Open-Source-Bereich, und das ist ja Andis Lieblingsthema. Ich weiß nicht, wie oft er das in Episoden schon gesagt hat, du musst es im Vorhinein abklären, du musst es sinnvoll dann einreichen im PR. Macht das überhaupt Sinn? Und einfach irgendwo was über die Mauer werfen, funktioniert eigentlich sowieso nie.",
+            "start": 3304628,
+            "end": 3320514,
+            "confidence": 0.737857142857143,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Und deswegen bin ich so verwundert über eure Meinung, weil das hört sich gerade so an, ja, das ist ja sowieso schon gegeben, dass Team A immer, bevor die überhaupt an den Code gehen, rübergehen und fragen, wie soll ich das implementieren? Aber meiner Erfahrung nach, ist es genau das Gegenteil. Kaum ein Team, was zu einem anderen Team kontributieren möchte, geht vorher dahin, klingelt an und sagt, hey, ich hab eine Frage zu dieser Klasse, ich möchte die erweitern, ich würd's gern so und so implementieren, macht das in eurer Architektur Sinn? Wenn ich euch zuhöre, hört's sich so an, das ist Standard in Unternehmen. Ich weiß nicht, ob ich in den falschen Firmen gearbeitet hab, aber das war einer der größten Hürden bisher. Das mein ich nicht am Tisch vorbeigehen, Hey, Klopfen, seid ihr da? Sondern auch im Slack-Channel einfach nur eine Frage zu stellen.",
+            "start": 3320574,
+            "end": 3364360,
+            "confidence": 0.781863945578231,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Aber war das in Teams, die Inner Source gemacht haben?",
+            "start": 3364400,
+            "end": 3367160,
+            "confidence": 0.7436999999999999,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Ja, ich mein, das ist ja die Grundvoraussetzung für Inner Source. Also, dass man miteinander redet und sagt, okay, weil sonst spielst du nämlich wochenlanges Pingpong im Pull-Request, was du ja auch irgendwie mal vermeiden möchtest. Also, wir haben versucht, damals das Inner Source einzuführen. Und da das Inner Source zumindest ich so predige, und ich halte das für richtig, bitte gerne Challenges, Dann hab ich gedacht, okay gut, in der Firma sollte das gegebenenfalls auch sinnvoll sein, wenn man vorher mal kurz drüber geht und klärt, wie man das implementieren möchte, damit das wenigstens, ich sag mal, eine Erfolgschance hat. Nicht, dass man jetzt eine Woche Codingaufwand reinsteckt, einen Pull-Request über die Wand wirft und sagt, hör mal, tut mir leid, aber die Komponente von Team C macht das alles schon, weißt du, und du hast einfach mal eine Woche Engineering-Power weggeschmissen.",
+            "start": 3367200,
+            "end": 3410518,
+            "confidence": 0.7501398601398601,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Ihr könnt mir vorstellen, dass das vielleicht für Developer neu ist. Auf einer anderen Ebene wird ja hoffentlich sowieso gesprochen zwischen Teams, weil wenn du jetzt sagst bei irgendeinem Team, ich hätte gern Feature XY von dir in der API oder so, da muss es da ja Kommunikation geben, sonst weiß das andere Team ja gar nicht, dass ich darauf warte. Das heißt, es verlagert sich vielleicht auch, dass halt Developer vielleicht noch mehr Kontakt miteinander haben zwischen den Teams, was sonst vielleicht über Product Owner unter Umständen sogar abgelaufen ist oder irgendwelche Lead Devs oder sonstige Leute, die mehr die Kommunikation übernehmen. Das sehe ich als großen positiven Aspekt von dem Ganzen, dass du hoffentlich, ich sage wieder hoffentlich, in der Realität ist es vielleicht weniger, aber dass du mal im Kopf hast, okay, bevor ich jetzt irgendeine Codezeile schreibe, muss ich doch mal kurz mit denen irgendwie sprechen über irgendwas. Ich kann mir eigentlich nicht vorstellen, dass das so gar nicht passiert. Dass man jetzt sagt, okay, ich programmier da jetzt irgendwas fix fertig, bis es funktioniert, und dann würfel den Code über die Mauer, ohne dass ich jemals drüber gesprochen hab. Also das erscheint mir dann auch irgendwie wieder zu extrem, fast.",
+            "start": 3411625,
+            "end": 3475533,
+            "confidence": 0.797609756097561,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Ich würde da aber tatsächlich deine Annahme bestätigen wollen, Wolfgang. Ich glaube schon, dass das in diesem Maturity-Prozess, den vielleicht auch die Teams durchgehen, dass das schon dahin kommen kann. wenn man das entsprechend unterstützt. Also wenn man eben sagt, erstmal für die Komponenten, für die ihr Contributions kriegt, naja, schreibt doch mal bitte, zumindest kurz und knapp auf, was ihr wollt, was vor dem Pull-Request passieren soll und was in dem Pull-Request passieren soll. Wenn ihr das selber nicht wisst, ist es auch sehr schwer für die andere Seite, das zu erfüllen. Und oft ist eben so ein Teil, also viele Teams sagen so standardmäßig, okay, Issue first. Also erstmal ein Issue anlegen, da grob beschreiben, was man will. Und wenn du willst oder wenn es irgendwie deiner Beschreibung ist, kannst du natürlich sagen, guck mal hier, ich hab hier so ein WIP PR, also so ein Work in Progress gemacht, aber den mache ich nur ganz schnell, damit du einmal ungefähr verstehst, in welche Richtung das geht, ja? Also da investiere ich unter einem halben Tag in den Pull Requests, weil es geht eigentlich nur um die Erklärung, wohin die Reise gehen soll, ja? Das heißt nicht, dass du den so beherrschen sollst. Also ich glaube, wenn das in so eine Richtung gehen kann, dann wird es auf jeden Fall produktiv für die Teams untereinander. Aber ist eben auch, naja, wenn das das erste Mal ist, dass ein Team sagen muss, was erwarte ich denn von einem Contributor, dann müssen die das halt auch erstmal für sich überlegen. Und wieder, hilft beim Onboarding von neuen Leuten halt auch. Wenn du das mal ausbuchstabieren musst, warum du denn jetzt diesen anderen Pull-Request abgelehnt hast, dann führt es halt hoffentlich dazu, dass es in der Zukunft eben einfacher wird, für die Contributor eben auch ihre Sachen in dein Produkt reinzukriegen. Und Long-Term-Long-Term sozusagen, du hast jemanden, der schickt jetzt die fünfte Contribution zu deinem Projekt, dann vielleicht irgendwann ist er tatsächlich in einem Stadion, wo der sagt, ah, warte mal hier, ich erweitere eine bestehende API, sowas habe ich schon mal gemacht, bum bum bum, dann kann der vielleicht wirklich schon quasi zwei Schritte überspringen und das in Tacken irgendwie abkürzen. Aber ja, also Zumindest, also ich bin da bei dir, das hat dieses Potenzial, bin aber auch mit Andi, dass es nicht einfach so in der Firma vorhanden ist. Also wenn man einfach annimmt, das machen doch die Leute, die reden doch vorher miteinander. Ne, machen die nicht, aber auch, weil das System das eben nicht motiviert.",
+            "start": 3475553,
+            "end": 3610156,
+            "confidence": 0.7780280373831769,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Ich habe das gefühl die einführung von innersource bedarf unglaublich viel arbeit behind the scenes also sehr viel kommunikation sehr viel mindset changen über methoden reden und so.",
+            "start": 3610940,
+            "end": 3624017,
+            "confidence": 0.8296428571428572,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Weiter und kaum auf der technischen seite.",
+            "start": 3624077,
+            "end": 3626720,
+            "confidence": 0.7858571428571429,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Ich denke, es ist ein organisatorisches Problem und keine Technik, weil ein Pull-Request machst du ja hoffentlich so oder so, halt nur an das eine Repo. Du changest halt nur den Origin im Git, ja? Eine Frage hab ich aber noch zum Technischen, bevor wir zum Organisatorischen kommen. Forken ist im Open-Source-Bereich eigentlich gang und gäbe. Wir haben erfolgreiche Forks gesehen, wie Elasticsearch und OpenSearch oder Nextcloud oder Ähnliches. Und ab und zu forke ich einfach nur ein Projekt, weil ich da Lust drauf habe, das Projekt in eine andere Richtung zu entwickeln. Gibt es dazu irgendwas im Bereich InnerSource, was es heißt, eine Applikation innerhalb einer Firma zu forken?",
+            "start": 3627380,
+            "end": 3667055,
+            "confidence": 0.7719727272727273,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Also mal erstmal als Precursor sozusagen. Damit habe ich jetzt konkret keine aktive Erfahrung selber gemacht. Aber die Geschichten, die ich da zum Beispiel in der InnerSource Comments zugehört habe, ist, zu der Frage musst du dir erstmal überlegen, was heißt denn innerhalb der Firma forken? Was ist denn die Firma? Ist die Firma die GmbH in Deutschland? Oder ist das die Inc. in Amerika, die alles zusammenhält? Oder die XY in der Schweiz, die die IP sichert? Dann fängst du nämlich an mit dem Thema Transfer Pricing und so, ja? Also eine Sache wurde in einer Firma entwickelt, die in Deutschland sitzt, die GmbH. Jetzt will eine andere Firma aus Amerika das auch benutzen, aber nicht in der Form und so weiter und so fort. Die wollen jetzt einen Fork machen. Und in den Zusammenhang wird, was weiß ich, Quellcode von A nach B übertragen und so weiter und so fort. Und auf einmal musst du dir sagen, was ist wie, wo, jetzt in Benefit, Jux Jux, und musst mit Accountants reden und mit Steuerberatern und mit Legal Support und so weiter und so fort. Also, ich sag's mal so, in diesem Konvolut, das ich jetzt hier so einfach immer Inner Source nenne, wenn du signifikant größere Firmen hast, mit ganz, ganz vielen Entities, dann geht's auch irgendwann los, dass du sozusagen so legal-technische Probleme kriegst sozusagen. die wir hier jetzt vielleicht gerade mal für den Moment irgendwie so ein bisschen getrost und naiv ignorieren. Aber also sage ich mal so, prinzipiell ist dieses Forken natürlich denkbar. Also warum nicht? Aber es kommt auf jeden Fall mit seinen potenziellen Schwierigkeiten.",
+            "start": 3667115,
+            "end": 3750824,
+            "confidence": 0.735671586715867,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Aus diesem Thema möchte ich mich raushalten. Ich habe das Gefühl, immer wenn ich mit Anwälten oder Leuten aus dem Legal-Bereich spreche, habe ich danach mehr Probleme, als ich vorher hatte.",
+            "start": 3750864,
+            "end": 3758608,
+            "confidence": 0.7414516129032258,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Ich glaube, das sollte auch kein Grund sein, dass man nicht damit startet oder einfach das mal ausprobiert. Am Anfang spielt sich das ja auch nicht so in Größenordnungen ab und das Problem hast du ja immer mit der Bewertung von Software, welches Team schreibt was und wie viel Wert hat es überhaupt, gerade wenn du jetzt bloß notiert bist und solche Dinge. Da kommt da ja recht viel noch dazu. Also ich glaube, das hast du sowieso. In der Realität ist es dann öfters ein kleineres Problem, als man so denkt, weil da wird einfach irgendwas pauschal angenommen und dann wird das halt irgendwie verrechnet. Also teilweise ist es dann wieder einfacher, als man denkt und man macht sich da als Techniker vielleicht mehr Kopfzerbrechen drüber, weil das muss alles genau spezifiziert sein. Aber in dieser Welt wird ja auch ganz gern dann doch am Ende irgendwas pauschalisiert und rausgerechnet. sehe jetzt auch nicht so als großes Problem. Aber wenn wir mal zurückgehen zur kleinen Firma oder zum Start von dem Ganzen. Jetzt haben wir so viel darüber gesprochen, was es für Vorteile hat und wen du überzeugen musst und in der großen Firma. Aber wenn du jetzt ganz konkret, wenn jetzt ein Hörer, eine Hörerin sagt, okay, ich will das in meinem Team irgendwie ausprobieren und starten. Was würdest du empfehlen? Wo kann man wirklich konkret losstarten, um diesen Samen in der Firma zu pflanzen?",
+            "start": 3760349,
+            "end": 3832447,
+            "confidence": 0.7971561181434601,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Also ich würde im besten Fall, ist das Team, was diesen Ansporn hat, wo es so einen Funken gibt, ist das Team, was schon das Problem hat. Das Problem im Sinne von, die kriegen viele Requests, können die nicht in einer akzeptablen Zeit bearbeiten und auf der anderen Seite passiert das, was wir beschrieben haben, nämlich warten, duplizieren, eskalieren. So, wenn die einen Weg finden können und sagen, okay, hier gibt es Version 4, wir haben einen Weg 4 und der könnte Inner Source heißen, ich würde immer empfehlen, erstmal zu sagen, naja, welches Projekt habt ihr, wo das schon passiert, wo ihr einen anderen Ansatz ausprobieren könntet. Und dann kannst du eigentlich anfangen mit irgendwie, du schreibst die Basis-Dokumentation, also wie gesagt, da gibt es ein Base-Documentation-Pattern, was wir verlinken können. Dann guckst du dir vielleicht an, wie ist sonst so die Maturity in deinen Prozessen, also was müsstest du machen, um InnerSource zu unterstützen. Wieder das Gleiche, dann kannst du noch ein kleines Team-Assessment machen. So oder so sind das irgendwie nützliche Übungen und dauert auch nicht krass lange. Und dann fängst du im Endeffekt einfach an zu sagen, naja, anstatt jede User-Story zu beantworten mit, thank you, Karen, I've added this to my backlog, würdest du eben sagen, okay, das passt generell in unsere Architektur, hier ist der Link zur Architektur-Dokumentation, hier ist der Link zu unserer Contributing-MD, und wenn du da einen Pull-Request machen würdest, würden wir uns wirklich super freuen, und eine Review davon können wir zum Beispiel im nächsten Sprint machen. Wie auch immer ihr arbeitet, ne? Einfach jetzt mal, um irgendwie so ein sprachliches Bild davon zu zeichnen, wie sich der Austausch ändert. Und natürlich läuft das nicht immer so. Natürlich kriegst du auch Issues, wo das Issue kommt rein, du verstehst das Issue nicht, weil es sich nicht ausformuliert oder irgendwas. Das passiert ja immer noch. Das passiert ja immer noch, dass dir da irgendwer irgendwas rüberschickt und einfach so verstehe ich nicht. So, aber dann zu Andis Punkt, man denkt doch, die Leute machen das schon. Naja, musst du eben im Vorfeld da ein bisschen mehr Kommunikation haben oder den Leuten helfen, die Sachen anders zu beschreiben oder anders nachfragen oder an der Empathie arbeiten oder wie auch immer. Gibt's zig Sachen. Das zu machen, also Basisdokumentation, anders auf die Anfragen reagieren, d.h. die potenziellen Contributor sozusagen langsam, langsam in diese Richtung bringen, dass die sich das vorstellen können und sagt denen bloß nicht Inner Source, er ist doch gar nicht nötig, sondern sagt denen doch, hey, ich kann dir helfen dein eigenes Problem zu lösen und so kann es gehen, anstatt zu sagen, nein, Das Schlimmste. Oder ja, aber Backlog. Also ja, aber irgendwann. Und irgendwann ist es auch manchmal nie. Sondern du sagst, hey, Hilfe zur Selbsthilfe. Vielleicht hätte ich das früher schon mal sagen sollen für die deutschen Hörer. Hilfe zur Selbsthilfe. Inner Source. Da trug ich gleich morgens die T-Shirts.",
+            "start": 3833297,
+            "end": 3994287,
+            "confidence": 0.7435963488843816,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Ich glaube, du hast ganz viele Leute jetzt abgeschreckt, weil du gesagt hast, okay, jetzt muss erstmal Dokumentation geschrieben werden. Nein, aber Hilfe zur Selbsthilfe. Sebastian, vielen lieben Dank für diesen Slogan. Ich glaube, wenn du die Sticker mal druckst, dann möchte ich gerne auch welche haben. Finde ich nämlich grandios. Ich weiß gar nicht, ob man das wirklich so gut auf Englisch übersetzen kann. Aber ich hab so das Gefühl, Innersource ist so vielleicht das nächste Level von Agile und DevOps oder New Work for Software Engineers oder, oder, oder. Ich hab das Gefühl, da Open Source natürlich in unserer Industrie immer, immer wichtiger wird, ist es unausweichlich, dass wir bald alle, hoffentlich früher und nicht später, Innersource in der Firma praktizieren. Ich würd mich auf jeden Fall sehr freuen, wenn dieses Konzept deutlich mehr Anklang auch im guten, alten, deutschen, stabilen Mittelstand findet. Schauen wir mal, was die Zeit so bringt. Zum Abschluss, hast du, Sebastian, noch eine Nachricht, die du unseren Hörerinnen und Hörern mitgeben möchtest?",
+            "start": 3995460,
+            "end": 4054576,
+            "confidence": 0.7875621301775149,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Ja, also ich hab ganz am Anfang gesagt, ich hab nichts zu verkaufen. Stimmt auch. Aber ich hab ja vorher schon mal erzählt, dass ich da in der Inner Source Commons Foundation aktiv bin, so ein bisschen dieses Inner Source-Thema voranzutreiben. Und ich glaub, ich will da einfach mal den Pitch machen für die Leute, die irgendwie im Engineering Management sind, in irgendeiner Form im Leadership sind oder so. und die jetzt irgendwie Probleme hier im Podcast gehört haben, wo die denken, ah, so eine Probleme in der Hard haben wir irgendwie auch. Also, wir haben da in der Inner Source Comments erstmal einfach einen Slack-Channel, wo man mit Leuten sprechen kann, sozusagen, die in unterschiedlichsten Firmen arbeiten, also alles von IBM bis zu Bosch und auch kleineren Firmen natürlich, die sozusagen so ähnliche Probleme schon mal hatten, teilweise daran mit Inner Source gearbeitet haben oder auch anders. Und ich für mich kann zumindest sagen, das war für mich super hilfreich. Einfach mal mit Leuten zu reden, die in einem ganz anderen Kontext arbeiten, aber tatsächlich am Ende des Tages sehr, sehr ähnliche Probleme haben. Sprich, da kann man einfach mal reingehen, eine Frage stellen, mit Leuten quatschen, gibt alle möglichen Scheinungen, wie das immer so ist. Kann ein bisschen anfangen, sich das Material da anzugucken. Und du wirst da viele Leute finden, die einfach dir mal einen interessanten Denkansatz geben, zumindest dich in eine richtige Richtung schubsen, z.B. mal ein Buch empfehlen usw. Also es ist eine gute Möglichkeit, sich innerhalb der Industrie auszutauschen mit Leuten, die eben schon, sage ich mal, zumindest diesen Schritt in die Richtung gemacht haben. Die gesagt haben, okay, es muss da noch was geben. Es gibt noch was hinter den Strukturen, in denen wir gerade sind, die vielleicht manchmal zu starr sind, um effektiv zu sein. Also das kann ich empfehlen. Packen wir in die Shownotes rein, einfach den Slack-Channel und dann kommt ihr vorbei und sprecht mich auch gerne da an, wenn ihr mich seht.",
+            "start": 4054616,
+            "end": 4151638,
+            "confidence": 0.763294294294294,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Wir werden sowieso alle Links in die Show-Notes packen, weil alles, was du erwähnt hast, auch vielleicht mal die ein oder andere Case-Study von Firmen, die das schon machen. Und soviel ich weiß, hast du, glaube ich, auch einen Artikel mal für den.",
+            "start": 4152582,
+            "end": 4164577,
+            "confidence": 0.7461162790697674,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Heise-Verlag zu dem Thema veröffentlicht.",
+            "start": 4164617,
+            "end": 4167040,
+            "confidence": 0.797,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Stimmt auch, ja. Auch in den Show-Notes verlinkt. Sebastian, vielen lieben Dank, dass du dir die Zeit genommen hast, hier im Podcast im Engineering Cures mit uns über dieses Thema zu sprechen. Ich habe wieder Bock auf Open Source, aber auch auf Inner Source. Also ich werde jetzt erstmal direkt einen Poll-Request ans andere Team schicken. Vielen lieben Dank und ich wünsche dir einen schönen Tag.",
+            "start": 4167060,
+            "end": 4184451,
+            "confidence": 0.6462272727272728,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Bis später. Tschüss. Danke. Ciao. Ciao.",
+            "start": 4184470,
+            "end": 4186231,
+            "confidence": 0.34333333333333327,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Nicht vergessen, mit dem Code Kiosk10 gibts 10% auf alle Angebote der Tech Leaders Academy und schau mal nach, ob von deinem Personal Learning Budget noch was übrig ist. Vielleicht ist das genau dein Anmeldungsfall.",
+            "start": 4189192,
+            "end": 4200328,
+            "confidence": 0.7443428571428571,
+            "channel": null,
+            "speaker": "B"
+        }
+    ],
+    "confidence": 0.7616606917069513,
+    "audio_duration": 4200.0,
+    "webhook_status_code": null,
+    "webhook_auth": false,
+    "summary": null,
+    "auto_highlights_result": null,
+    "content_safety_labels": null,
+    "chapters": null,
+    "sentiment_analysis_results": null,
+    "entities": null
+}
