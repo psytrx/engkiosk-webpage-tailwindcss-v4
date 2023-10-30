@@ -175,12 +175,10 @@ const html = (await Astro.slots.render('default'))
 								<div id="episode-player">
 									<script class="podigee-podcast-player" src="/podcast-player/javascripts/podigee-podcast-player.js" data-configuration="playerConfiguration"></script>
 									<script>
-										let iframes = document.getElementsByTagName('iframe');
-										Array.from(iframes).forEach(function (iframe) {
-											if (!iframe.className.includes('podigee-podcast-player')) {
-												return;
-											}
-											iframe.onload = function () {
+										let maxTriesToSetPlayerCommands = 100;
+										const setPlayerCommands = function() {
+											const iframe = document.querySelector('iframe.podigee-podcast-player');
+											if (iframe && playerjs && playerjs.Player) {
 												// Tracking docs at https://developer.matomo.org/api-reference/tracking-javascript
 												const player = new playerjs.Player(iframe);
 												player.on('ready', function () {
@@ -209,30 +207,39 @@ const html = (await Astro.slots.render('default'))
 															'end', // Action
 															window.playerConfiguration.episode.title, // Event name
 														]);
-													});
-												});
+													});						
+												});																
 
-												// Click events for the transcriptions
-												const transcriptsElements = document.querySelectorAll('[data-trans-start]');
-												for (let item of transcriptsElements) {
-													item.classList.add('cursor-pointer');
-													item.addEventListener('click', (e) => {
-														player.setCurrentTime(item.dataset.transStart);
-														player.play()
-													});
-												}
+												document.addEventListener('DOMContentLoaded', function() {
+													// Click events for the transcriptions
+													const transcriptsElements = document.querySelectorAll('[data-trans-start]');
+													for (let item of transcriptsElements) {
+														item.classList.add('cursor-pointer');
+														item.addEventListener('click', (e) => {
+															player.setCurrentTime(item.dataset.transStart);
+															player.play()
+														});
+													}
 
-												// Click events for the chapters in the shownotes
-												const chapterElements = document.querySelectorAll('[data-chapter-start]');
-												for (let item of chapterElements) {
-													item.classList.add('cursor-pointer');
-													item.addEventListener('click', (e) => {
-														player.setCurrentTime(item.dataset.chapterStart);
-														player.play()
-													});
+													// Click events for the chapters in the shownotes
+													const chapterElements = document.querySelectorAll('[data-chapter-start]');
+													for (let item of chapterElements) {
+														item.classList.add('cursor-pointer');
+														item.addEventListener('click', (e) => {
+															player.setCurrentTime(item.dataset.chapterStart);
+															player.play()
+														});
+													}
+												})
+											} else {
+												// as longs as the player and iframe wasn't loaded yet, try again
+												if (maxTriesToSetPlayerCommands > 0) {
+													maxTriesToSetPlayerCommands--;
+													setTimeout(setPlayerCommands, 300);
 												}
-											};
-										});
+											}
+										}
+										setPlayerCommands();						
 									</script>
 								</div>
 							</div>
