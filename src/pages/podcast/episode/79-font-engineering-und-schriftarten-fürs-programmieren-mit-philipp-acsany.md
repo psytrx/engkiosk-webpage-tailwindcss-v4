@@ -74,10 +74,13 @@ rtlplus: ''
 speaker:
 - name: Andy Grunwald
   website: https://andygrunwald.com/
+  transcriptLetter: B
 - name: Wolfi Gassler
   website: https://wolfgang.gassler.org/
+  transcriptLetter: C
 - name: Philipp Acsany
   website: https://www.acsany.de/
+  transcriptLetter: A
 spotify: https://open.spotify.com/episode/5DIzNhGilzQ7Yo1syMdzf8
 tags:
 - Tech Kultur
