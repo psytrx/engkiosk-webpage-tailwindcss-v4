@@ -1,0 +1,1058 @@
+{
+    "language_code": "de",
+    "audio_url": "https://audio1.redcircle.com/episodes/d77dbefc-8553-4a49-81c2-27f9232b88ec/stream.mp3",
+    "punctuate": true,
+    "format_text": true,
+    "dual_channel": false,
+    "webhook_url": null,
+    "webhook_auth_header_name": null,
+    "webhook_auth_header_value": null,
+    "audio_start_from": null,
+    "audio_end_at": null,
+    "word_boost": [],
+    "boost_param": null,
+    "filter_profanity": false,
+    "redact_pii": false,
+    "redact_pii_audio": false,
+    "redact_pii_policies": null,
+    "redact_pii_sub": null,
+    "speaker_labels": true,
+    "speakers_expected": 2,
+    "content_safety": false,
+    "content_safety_confidence": null,
+    "iab_categories": false,
+    "custom_spelling": null,
+    "disfluencies": false,
+    "sentiment_analysis": false,
+    "auto_chapters": false,
+    "entity_detection": false,
+    "summarization": false,
+    "summary_model": null,
+    "summary_type": null,
+    "auto_highlights": false,
+    "language_detection": false,
+    "speech_threshold": null,
+    "id": "62xd2k8sqc-d15c-4507-8e8d-f34968ffed04",
+    "status": "completed",
+    "error": null,
+    "utterances": [
+        {
+            "text": "Sentry Datadogs, Plunk, Elasticsearch, Logstash, Kibana, OpenSearch, Elastic Cloud, Ivan, Fluentd, S3, Athena, Prometheus, Victoria Matrix, InfluxDB, M3, Grafana, PromQL, OpenGenie, Jäger, Sipkin, OpenTracing und OpenTelemetry. Und damit willkommen zu einer neuen Episode des Engineering-Kiosks. Voll mit Engineering-Porn. Denn während ich an die Frage, wie man denn heute ein Projekt richtig überwacht und Monitoring gut aufbaut, behandeln wir all diese Technologien. Aber wir klären auch, was es mit Tracing, Observability, Metricing und Alerting auf sich hat. Also rein in die Technologienschlacht des Monitorings.",
+            "start": 3826,
+            "end": 45387,
+            "confidence": 0.8305783132530119,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Wolfgang, in der letzten Episode haben wir über die Veröffentlichung deines MySQL Buches gesprochen. Hat der ehemalige Verlag dich inzwischen angeschrieben und gesagt, hey wir müssen nochmal 5000 weitere Exemplare drucken?",
+            "start": 50110,
+            "end": 62021,
+            "confidence": 0.8117096774193547,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Nein, aber wir haben natürlich von unserer Hörerschaft ganz viele E-Mails bekommen, die würden alle ein Exemplar von mir verkaufen, das ich selbst publiziere. Wir haben ja mindestens 5.000 Leute, die uns ständig hören. Also das wäre gar kein Problem.",
+            "start": 62842,
+            "end": 75250,
+            "confidence": 0.7310000000000002,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Hast du nicht noch gesagt, du hast noch etliche freie Exemplare im Keller, die du eh loswerden musst? Dann schick denen doch einfach mal was umsonst.",
+            "start": 75290,
+            "end": 83296,
+            "confidence": 0.7331153846153846,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Eben zwei oder so. Die sind noch eingeschweißt. Das steht im Regal als Andenken an meine Buchzeit.",
+            "start": 83336,
+            "end": 89460,
+            "confidence": 0.8006470588235295,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Das hat sich letztens immer so angehört, als einen ganzen Umzugskarton.",
+            "start": 89800,
+            "end": 92362,
+            "confidence": 0.30009090909090913,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Nein, leider. Ich glaube, als Autor haben wir jeweils fünf Exemplare bekommen.",
+            "start": 93096,
+            "end": 97000,
+            "confidence": 0.76275,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Hast du denn schon mal jemals dein eigenes Buch gekauft? Das wäre eigentlich eine Frage für die letzte Episode gewesen, aber die interessiert mich jetzt gerade.",
+            "start": 97020,
+            "end": 102266,
+            "confidence": 0.6559230769230768,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Ich habe mir lange überlegt, ob ich die freien Exemplare verkaufen soll, aber ich habe mir nie dazu durchgerungen.",
+            "start": 102346,
+            "end": 107191,
+            "confidence": 0.6622631578947368,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Da bin ich einfach baff. Aber nun gut, wenn man auf so eine Idee kommt, lassen wir das.",
+            "start": 107211,
+            "end": 111435,
+            "confidence": 0.7739444444444445,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Ja, mit dem Buch verdienst du ja kein Geld. Insofern, wenn du die 5 Freiexemplare verkaufst, dann hast du wahrscheinlich so viel verdient, wie wenn du 100 Bücher verkaufen würdest, was du vom Verlag bekommst. Also wer die letzte Episode noch nicht gehört hat, kann das nachhören. Da erkläre ich auch, wie viel man bei so einem Buch verdient. Für alle, die das gehört haben, wir wollen euch nicht länger langweilen mit den Büchern, darum gehen wir in das heutige Thema. Und zwar habe ich mir gedacht, ihr habt den Andi ja da an der Leitung und ihr habt ja so Side-Projects und die haben sehr wenig Budget und die können sich einen Andi gar nicht leisten als Consultant. Aber innerhalb von diesem Podcast, Andi macht das ja Gott sei Dank noch gratis, also nicht umsonst, aber gratis, kann ich mir jetzt einfach mal diese Consulting-Leistung abholen vom Andi, wenn es darum geht, wie man ein Projekt sinnvoll monitort und aufbaut und überprüft und wie man mit Logdaten überhaupt umgeht, wo man die hinspeichert. Denn gerade da bräuchte ich jetzt eigentlich die perfekte Lösung für unser Führerschein-Projekt f.online. weil wir das gerade umziehen, auf neue Beine stellen. Und Andi, da will ich jetzt deine Meinung dazu hören, wie kann man denn so ein Projekt sinnvoll aufziehen, weil du bist ja so ein SRE-Spezialist. Okay, also um mal den Kontext kurz zu erklären. Es geht um dieses Führerscheinprojekt, Applikation, die läuft mobil, online, gibt es eine Webseite. Und aktuell ist dieses Logging aus den, ich würde fast sagen, 90er Jahren, aber ich glaube, es ist auf jeden Fall zehn Jahre alt fast. Ganz viele Logs fließen in eine MySQL-Datenbank. Die werden meistens gelöscht, weil die Datenbank viel zu groß wird. Ganz klassisch. Und dann gibt es noch so Monitoring, das die Uptime von außen überprüft. Da haben wir hin und wieder Services gewechselt, aber das war's. Wenn du das jetzt auf neue Beine stellen müsstest, Und zwar von unserer Warte aus als Side-Project, also kein großes Projekt, was jetzt irgendwie Millionen macht und dementsprechend Budget hat, sondern wahrscheinlich gibt es auch ganz viele andere Leute, die so ein kleines Side-Project haben oder auch größeres Side-Project und da das ganze Logging professionalisieren wollen. Wie würdest du das jetzt von deiner SRE-Warte aus angehen und wie würdest du das aufstellen? Was wäre für dich da überhaupt wichtig und wo würdest du da anfangen?",
+            "start": 112035,
+            "end": 246915,
+            "confidence": 0.8089599999999995,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Nur nochmal ein paar Zusatzfragen. Also wir starten auf der grünen Wiese in Bezug auf Logging und so weiter.",
+            "start": 247376,
+            "end": 253245,
+            "confidence": 0.7856315789473685,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Diesbezüglich kannst du grüne Wiese annehmen, ja.",
+            "start": 253285,
+            "end": 256250,
+            "confidence": 0.6715714285714285,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Die Applikation existiert aber schon und das ist eine Web-Applikation, weil du hast irgendwas auch mit mobil erwähnt.",
+            "start": 256269,
+            "end": 261339,
+            "confidence": 0.717111111111111,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Ja, das ist eigentlich nur ein Wrapper von der Web-App. Also, du kannst es runterbrechen, ist eine klassische Web-App, ja.",
+            "start": 262089,
+            "end": 268611,
+            "confidence": 0.7569999999999999,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Und um was sprechen wir jetzt? Sprechen wir jetzt um Logging? Sprechen wir um Metriken? Sprechen wir von Monitoring und Alerting? Oder sprechen wir von Tracing? Oder ... Also, was ist denn dein ... Oder ich frag anders. Warum denkst du, du brauchst so was?",
+            "start": 268651,
+            "end": 288075,
+            "confidence": 0.8273999999999998,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Ich habe mir jetzt gedacht, ich bekomme da coole Antworten und jetzt bekomme ich so schwere Fragen gestellt. Also wenn ich die vier Teile, die du jetzt erwähnt hast, Monitoring, Logging, Metricing und Tracing, mir überlege als von der Entwicklerseite, Monitoring will ich natürlich einerseits, um irgendwie eine Info zu bekommen, wenn was nicht mehr funktioniert oder wenn wieder irgendein Server down ist oder wenn irgendwo ein Problem besteht. Logging ist für uns eigentlich wichtig, wenn es natürlich irgendwo ein Bug gibt, wenn es ein Problem gibt, das nachzuvollziehen. Das ist teilweise sehr schwierig, beziehungsweise aktuell, wenn irgendwo Errors fliegen, bekommen wir auch noch eine E-Mail. Das kann darin enden, dass man ganz, ganz viele E-Mails bekommt, wenn irgendwas kaputt geht, wenn zum Beispiel die Datenbank aus irgendeinem Grundkurs nicht erreichbar ist oder in irgendeinem Deadlock-Zustand ist. Und da hat man natürlich auch nicht alle Informationen, jetzt irgendeinen ordentlichen Trace drinnen, wo ist es genau aufgetreten, wann und kann dann nicht in die Tiefe gehen. Also das wäre natürlich schön, wenn man da irgendwie eine Möglichkeit hätte, mit Bugs, mit Problemen umzugehen. Und dann wäre natürlich auch interessant, da haben wir eigentlich aktuell sehr, sehr wenig. Wie schnell ist denn das Ganze? Ihr habt irgendwelche Servermetriken natürlich, wieviel CPU wird verwendet, aber ihr habt keine Ahnung runtergebrochen auf irgendwelche Requests. Wie schnell ist es? Wie langsam haben wir da langsam inzwischen drin? Reagiert die Datenbank immer schnell genug? Da haben wir auch keine Visibility, das wäre wahrscheinlich ganz interessant auch zu wissen. Auch wenn es darum geht, brauchen wir bessere Server, müssen wir irgendwo was skalieren, wie schaut es denn damit aus?",
+            "start": 288355,
+            "end": 379883,
+            "confidence": 0.8063161764705878,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Okay, wären wir jetzt also innerhalb einer Firma und du würdest so zu mir ankommen, dann würde ich erst mal eine ganze Menge weiterfragen in Bezug auf Produktentwicklung, ob du dieses Problem da wirklich hast und so weiter und so fort. Aber mir anscheinend geht es dir ja jetzt hier eher um so ein bisschen Engineering-Porn.",
+            "start": 380396,
+            "end": 395605,
+            "confidence": 0.8036964285714285,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Ja, du bist ja auch gratis. Du kannst jetzt sagen, was du machen würdest. Das ist ja gratis, deine Leistung. Das heißt, du kannst jetzt da alles die ja schön zusammenbauen. Wer das dann baut, ist natürlich nochmal eine andere Frage, aber du kannst dir das jetzt zusammenträumen.",
+            "start": 395645,
+            "end": 409893,
+            "confidence": 0.6856666666666668,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Ich hatte heute nochmal ein ganz kurzes Gespräch mit einem guten Kumpel, der arbeitet gerade mit Deloitte zusammen, ist ja auch einer der größeren Consulting-Firmen. Zwar nicht so im speziellen im IT, aber die... gut, was ist heute schon nicht IT, ne? Und der sagte, ja, je nachdem, wen ich da jetzt grad dran hab, kostet mich der Stundensatz 150 bis 300 und teilweise ein paar mehr Euro. Das möchte ich nur noch mal als Referenz hier lassen, weil wir auch in einer der letzten Episoden über sechsstellige Gehälter gesprochen haben. Aber fangen wir mal an. Fangen wir einfach mal mit dem Thema Logging an, weil du sagtest auch Entwicklungen und Bugs nachvollziehen und so weiter. Nochmal ganz kurz als Kontext, wie ist die Applikation aufgebaut? Also wie ist die gehostet? Ist das irgendwie Kubernetes oder ist das irgendwie, du hast einen Bare-Metal-Server und da läuft ein Apache drauf oder ist das in irgendwelchen schedulern wie nomad oder ist docker swarm oder ist das ein system die oder also wovon reden wir denn hier gerade ganz genau also um es.",
+            "start": 409933,
+            "end": 471784,
+            "confidence": 0.7757999999999998,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Ein bisschen zu vereinfachen ist einfach ein docker based setup gibt eine mysql datenbank engine x mit bhb und die laufen beide in in der docker umgebung okay.",
+            "start": 471864,
+            "end": 482970,
+            "confidence": 0.7907500000000001,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Super Gehen wir mal auf dein Backthema ein. Das bedeutet, du willst informiert werden, wenn irgendwo eine Exception fliegt, wenn irgendwo eine Warning fliegt, ein Fatal Error.",
+            "start": 483010,
+            "end": 493701,
+            "confidence": 0.730777777777778,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Genau, da schicken wir jetzt doll eine E-Mail raus.",
+            "start": 493741,
+            "end": 496144,
+            "confidence": 0.5812222222222222,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Finde ich persönlich erstmal gar nicht so verkehrt. Was ich jedoch heutzutage machen würde, ich würde in eurer Applikation Sentry einbauen. Sentry ist ein Software-as-a-Service, könnt ihr aber auch Open Source selbst hosten. Und Sentry nennt sich Application Monitoring, Error Monitoring. Das sind oft kleinere Libraries, die sich dann in den Errorhändler einhucken und wenn der Error geschmissen wird, wird der von dem Sentry Library gecatcht und schön dargestellt in der Web-UI von denen. Ist auch bis zu einem gewissen Grade kostenlos. Und warum ist das toll? Das ist toll, weil der Sentry Service gleiche Exceptions zusammenbündelt oder ähnliche Exceptions zusammenbündelt. Der gibt dir natürlich dann auch den kompletten Stacktrace mit, das komplette Environment, welche Environment-Variablen und so weiter und so fort. Und jetzt ist das supertolle Fehler, besonders in heutiger Web-Applikationen, welche kriegst du denn mit? Du kriegst in der Regel nur die Serverseitigen mit. Aber in einer JavaScript-Applikation oder in einer modernen Web-Applikation hat man ja auch JavaScript wie noch und nücher. Und Sentry hat natürlich auch eine JavaScript-Komponente. Somit bedeutet das, du kriegst natürlich auch Client-mäßige Errors mit. Mit dem kompletten Stacktrace, mit dem kompletten Environment, Zeitzone, Browser, Version, Farbtiefe, bla bla bla. Also du kriegst eigentlich alles mit, um wirklich den Fehler dann zu fixen.",
+            "start": 496184,
+            "end": 588477,
+            "confidence": 0.8142392344497605,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Wenn man das jetzt im Vergleich sieht zu irgendeiner Logging-Analyse-Plattform, wenn ich da zum Beispiel Datadog oder irgendein Elk Stack oder so aufsetze, ist da irgendwie ein Unterschied? Ist das gleiche? Kann ich damit auch alles machen, wenn ich einfach meine Arrows irgendwo rauslogge und dann passiert das über die normale Log-Pipeline, wenn die irgendwo verarbeitet wird?",
+            "start": 588977,
+            "end": 609903,
+            "confidence": 0.8150175438596491,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Mit Datadog selbst habe ich so noch nicht gearbeitet, genauso wie wenig mit Splunk. Das sind ebenfalls zwei Software-as-a-Service-Anbieter, die sehr, sehr bekannt sind im Log-Handling. Also ob die das gleiche Feature wie Sentry haben, kann ich dir gerade nicht beantworten. Was ich jedoch weiß, ist, dass Datadog und Splunk unglaublich gut sind im Log-Storage und Logs-Durchsuchen. Da ist Sentry jetzt nicht so stark drin, beziehungsweise das ist nicht der Use Case. Der Use Case ist wirklich deine Bugs und deine Exceptions und deine Errors aus dem Code rauszuholen und anders zu präsentieren und durchsuchbar zu machen.",
+            "start": 610648,
+            "end": 648953,
+            "confidence": 0.7965257731958764,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Ich habe mal versucht einen Elk-Stack aufzusetzen, der mir meine Logs parst und da war es schon auch schwierig, wenn du da nämlich sehr viel strukturierte Daten weitergeben willst, jetzt irgendwelche Stacktraces oder sonstige Dinge, da musst du halt da auch das über die Logs dann wieder parsen und überhaupt reinbekommen. Also umso strukturierter, umso tiefer das Ganze geht, ist wahrscheinlich eine eigene Lösung nur für die Arrows und Exceptions wahrscheinlich die bessere.",
+            "start": 649215,
+            "end": 675665,
+            "confidence": 0.817054794520548,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Für die Leute, die dem Wolfgang mal wieder nicht folgen können, kein Problem, ich kann ihn ebenfalls öfter nicht folgen. Er redet von Elkstack. Elkstack bedeutet Elasticsearch, Logstash und Kibana. Das bedeutet, Elasticsearch ist eine Art Suchmaschine, was aber auch sehr gut generell mit Loglines umgehen kann. Logstash ist ein Tool, was von deiner Logquelle die Logs in Elasticsearch importiert. Und Kibana ist eine Art und Weise, um Visualisierung auf Basis von Elasticsearch-Daten durchzuführen. Man kann da zum Beispiel sagen, okay, man hat IP-Adressen, und da macht man Geolook ab, und dann stellt man seine Request auf einer Weltkarte dar. Oder man macht irgendwelche Tortendiagramme oder Ähnliches. Oder einfach nur Balkendiagramme, wie oft eine gewisse Logzeile über Zeit geflogen ist. Das ist der Elk-Stack. Muss man aber heutzutage sagen, darf man im Open-Source-Bereich ja eigentlich gar nicht mehr so nennen, müsste dann gegebenenfalls der Olc-Stack heißen, wegen OpenSearch, Elasticsearch, da wurde ja die Lizenz von Elastic geändert. was es dann eigentlich gar nicht mehr so richtig opensource macht also wobei da.",
+            "start": 676201,
+            "end": 751151,
+            "confidence": 0.8383684210526317,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Ja auch nur für verboten ist oder verboten aber das limitiert wird dass du ein software service anbietest das darauf beruht also wenn du das jetzt nur persönlich für irgendeine applikation im hintergrund verwendet ist das vollkommen in ordnung.",
+            "start": 751191,
+            "end": 763944,
+            "confidence": 0.8127692307692308,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Das ist korrekt, das bedeutet Amazon darf jetzt kein Hosted Elasticsearch mehr anbieten. Daraufhin hat Amazon Elasticsearch geforkt. Das ist jetzt OpenSearch. Und jetzt kann man sagen, ja, das sind die gleichen Projekte und OpenSearch jagt immer den Features von Elasticsearch hinterher. Nein, das ist nicht mehr der Fall. OpenSearch geht jetzt einen unabhängigen Weg. Das bedeutet, wer also wirklich voll auf dem Open-Source-Track bleiben möchte, und damit meine ich nicht nur offener Quellcode, sondern auch offene Lizenz, der sollte dann gegebenenfalls auf OpenSearch migrieren.",
+            "start": 764344,
+            "end": 800046,
+            "confidence": 0.8441529411764708,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Und wenn man den Elk Stack eben selbst nicht aufsetzen will, dann kann man so ein Software-as-a-Service verwenden wie Datadog, die bieten die komplette Plattform an. Kostet dann dementsprechend auch, aber die machen wirklich einen guten Job. Gibt es auch andere Plattformen. Es gibt auch die Elastic Cloud, die bietet den ganzen Elk Stack an.",
+            "start": 800106,
+            "end": 818491,
+            "confidence": 0.8202363636363638,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Hallo, können wir bitte nicht die Konkurrenten meines Arbeitgebers erwähnen? Wer natürlich ebenfalls auch einen Open Search Cluster haben möchte, der kann sich natürlich auch gerne bei meinem Arbeitgeber Ivan.io 300 Dollar Credits suchen.",
+            "start": 818511,
+            "end": 830893,
+            "confidence": 0.7462058823529413,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Ich hoffe, wir bekommen dafür auch wenigstens irgendwas jetzt, wenn wir da schon Werbung machen. Aber ich glaube, sie ist immer noch unbezahlt, diese Werbung. Aber es gibt die Elastic Cloud und die bietet auch 10.000 Metriken, meines Wissens, gratis an. Also da kann man schon einiges abbilden. Ich habe da einige Hosts drinnen. Das funktioniert ganz gut mit 10.000 Metriken.",
+            "start": 831474,
+            "end": 850701,
+            "confidence": 0.8266885245901637,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Okay, zurück zum Thema. Für Exceptions, für Code Errors, würde ich wirklich eine Application Monitoring Plattform wie zum Beispiel Sentry nutzen. Sehr schöner Service, um nach und nach mal die Bugs aus seiner Applikation rauszuholen. Nicht nur serverseitig, sondern auch clientseitig.",
+            "start": 851081,
+            "end": 866973,
+            "confidence": 0.8294634146341466,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Da hätte ich gleich noch eine Frage, weil bei diesen ganzen Services die kostenlosen Angebote, vor allem wenn man es für so ein Side-Project macht, die haben ja sehr kurze Retention, das heißt die Daten, die ganzen Logs werden meistens nur irgendwie paar Tage gespeichert, drei Tage, sieben Tage maximal oder sogar noch kürzer. Ist das ausreichend deiner Meinung nach oder muss ich die Daten, wäre das super, wenn ich die irgendwie monatelang hätte, weil sogar die kostenpflichtigen Angebote sind halt dann teilweise ein Monat Retention, aber auch nicht länger.",
+            "start": 867373,
+            "end": 895392,
+            "confidence": 0.7637444444444441,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Die Frage kann ich für dich eigentlich nicht beantworten. Für meine Side Projects ist das immer ausreichend. Ich release eine neue Version und schaue dann irgendwie nächsten Tag nach, wie viele Exceptions sind geflogen. Und die fixe ich dann. Wenn du sagst, mein Side Project ist so wichtig und bringt mir so viel Geld, vielleicht solltest du dann darüber nachdenken, keine kostenlosen Services zu nutzen, sondern für den Service zu bezahlen, wenn dir das alles so wichtig ist.",
+            "start": 895952,
+            "end": 919670,
+            "confidence": 0.7967564102564103,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Aber auch ein Monat ist ja eigentlich nicht so lang. Also ich sehe es nur bei mir selber. Früher hatten wir halt alles geloggt in der MySQL-Datenbank und nachdem die MySQL-Datenbank dann so groß wurde, man sollte ganz allgemein nichts in Datenbanken loggen, das ist einfach der falsche Ort meiner Meinung nach, aber es hatten wir halt damals so gemacht und mittlerweile haben wir halt einen Cron-Job oder ein Event in der Datenbank, die einfach alle Dinge immer löscht alle paar Tage. Das heißt, eigentlich haben wir auch nur eine Retention von ein paar Tagen und hatten nie ein Problem.",
+            "start": 919710,
+            "end": 946070,
+            "confidence": 0.7814500000000005,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Meines Erachtens nach mischst du aber gerade, wie gesagt, zwei Themen. Gehen wir jetzt ans Logging. Wirklich, jemand hat sich registriert, jemand hat ein Bild abgerufen und so weiter, was du auch immer loggen möchtest.",
+            "start": 946430,
+            "end": 959718,
+            "confidence": 0.8351142857142858,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Was sollte man denn loggen, deiner Meinung nach alles? Also in dem zentralen System, weil ich habe da ja Nginx-Logs, ich habe vielleicht sogar ein Loadbalancer, wo noch Logs sind. Ich habe Datenbank-Logs, ich habe System-Logs vom Host. Was macht denn Sinn?",
+            "start": 959758,
+            "end": 974407,
+            "confidence": 0.8126904761904763,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Das kommt immer ganz drauf an, was du für Fragen stellen möchtest. Persönlich denke ich, klassische Info-Logs sind jetzt nicht so relevant. Bei ziemlich vielen Sachen Info-Logs auf dem Loadbalancer finde ich jetzt in der Regel nicht relevant. Auf dem Loadbalancer würde ich tracken, welche Routen nicht gecatcht wurden. Welche Routen vielleicht weitergeleitet wurden? Welche Routen vielleicht in einem Dead-End gelaufen sind? Bei einem Nginx würde ich auf jeden Fall 404 sloggen oder da vielleicht sogar alles, weil das irgendwie so eine Art Google Analytics ablösen könnte. Welche Seiten werden denn am meisten abgerufen und welche nicht? Welche haben denn 303, 301 redirect? Vielleicht sollte man da mal ein bisschen gucken, ob man nicht die Redirects ein bisschen optimiert. Das kommt immer ganz drauf an, was du wissen möchtest. Aber sowas würde ich loggen. Also aber so Connection entgegengenommen und Connection abgesendet und finde ich jetzt nicht. Vielleicht kannst du auch die gesendeten Bytes mitloggen, falls du dann irgendwie siehst, dass auf einmal eine Seite 3MB rausschießt. Könnte man das gegebenenfalls ein bisschen optimieren. Bei deiner Webseite selbst vielleicht wie oft jemand ein Passwort falsch eingegeben hat. Vielleicht kannst du da irgendwelche Attacken erkennen. Geht's aber dann in eine ganz andere Richtung, würde ich jetzt nicht über Logs alleine machen. Aber wenn du zum Beispiel asynchrone Worker hast bei einer Queue, dann logge ich da schon ziemlich viel mit, um einfach zu sehen, was wann welche Aktion getätigt wurde. Also es kommt immer wirklich ganz drauf an, auf die Komponente und dann das, was du machen möchtest. Beispiel ein Restart. von docker container logge ich auch immer sehr gerne mit wenn die alle fünf minuten restarten dann weiß ich okay da ist irgendwas ja memory killer oder sowas.",
+            "start": 974767,
+            "end": 1068272,
+            "confidence": 0.754305555555556,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Es war jetzt zum ersten mal kürzlich dass sie dass sie logs vermisst habe und zwar hatten wir bei dem führerscheinprojekt bei dem kostenlosen führerscheinprojekt eine abmahnung bekommen, Wegen den Google-Fonds, weil ihr in Deutschland natürlich da wieder irgendwas komischen Entscheid gehabt habt, wegen Google-Fonds. Jetzt haben sich da die Rechtsanwälte in Österreich gedacht, super, wir machen da eine Abmahnwelle draus. Und da hat sich irgendein schlauer Rechtsanwalt mit einem Script-Kitty zusammengetan und hat da glaube ich 60.000 Briefe ausgesendet mit Abmahnungen. wegen den Google Fonts, wenn die auf der Webseite verwendet werden. Hat uns viele Stunden gekostet. Wir haben zwar schnell rausgefunden, wir verwenden gar keine Google Fonts, aber das hilft dir halt in der Rechtswelt nichts. Musst trotzdem antworten. Und vor allem, weil das eine datenschutzrechtliche Anfrage war, hast du eigentlich die Auskunft geben müssen, wo die IP aufgetaucht ist in deine Logs. Und wir hatten aber keine Logs, weil wir Netlify verwenden als externe Plattform. Da hätte ich gerne mal wieder Logs gehabt, weil ich eigentlich schauen wollte, wie oft hat er wirklich zugegriffen? War das ein Crawler? Hat er überhaupt die ganze Webseite geladen unter dieser IP-Adresse? Aber in dem Fall externes Service hatte ich keinen Zugriff, leider.",
+            "start": 1068332,
+            "end": 1136498,
+            "confidence": 0.8119356435643571,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Wenn du gar nicht weißt, was du mitloggen sollst, würde ich sagen, log erst mal alles mit und dann schau mal im Wochentakt drüber, welche Logs du beim Durchschauen immer skippst und die schmeißt du dann raus. Wenn du alles mitloggst, der Klassiker, besonders bei einem Side-Project, besonders bei der statischen Server-Welt, mach eine Log-Retention und eine Log-Rotation. Das bedeutet, du loggst in der Regel in irgendwelche Files, baue den kleinen Cron-Job, der das File unten drunter einmal wegreißt, komprimier das mit Zip oder Tar und mach ein neues Log-File oder die viele Software-Komponenten bieten bereits automatische Log-Rotation an. Was passiert nämlich sonst? Sonst wird nämlich alles in eine Datei geloggt und die Datei wird relativ schnell mehrere Gigabyte groß, vielleicht 100 Gigabyte groß. Und dann läuft deine Disk voll und du kannst dich noch niemals mal einloggen, weil deine Disk voll ist, weil du noch niemals ein temporäres File schreiben kannst. Ein Klassiker in der Administration. Wenn du das so machen möchtest, mach das.",
+            "start": 1136518,
+            "end": 1196570,
+            "confidence": 0.781521212121212,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Vor allem Log Rotation ist ja eigentlich standardmäßig jetzt bei irgendeinem Linux-Server oder so ist das ja standardmäßig aktiviert, aber meines Wissens zum Beispiel für Docker-Logs ist es nicht aktiviert. Zumindest ist mir das selbst mal passiert, weil Docker irgendwie nicht über System-D-Log oder keine Ahnung über Standard-System vom Betriebssystem und dem musst du das dann erst recht wieder beibringen, dass da eine Log-Retention gibt und das irgendwann weggeworfen wird. Sonst hast du sehr große Logs von Docker.",
+            "start": 1197050,
+            "end": 1225231,
+            "confidence": 0.7868974358974359,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Ja gut, es kommt einfach ganz drauf an, was du da machst. Wenn du deine eigene Applikation schreibst und dich an gültige Linux-Standards hältst und dann die Tools nutzt, dann kannst du mit sehr wenig Aufwand sehr viel erreichen. Wenn du aber natürlich selbst in eine Datei in deiner Applikation schreibst, dann bist du mehr oder weniger auf dich alleine gelassen.",
+            "start": 1225731,
+            "end": 1244527,
+            "confidence": 0.7670327868852456,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Naja, aber du hast ja Bei Docker loggst du ja üblicherweise einfach nach Standard Out und das wird gespeichert und diese Logs werden zumindest bei mir, bei meiner Default-Installation wurden die nicht rotiert.",
+            "start": 1244927,
+            "end": 1257762,
+            "confidence": 0.757030303030303,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Und genau das ist das Thema, worauf ich hinaus möchte. Generell mit Logging würde ich immer nach Standard Out und Standard Error loggen, je nachdem welchen Stream du nutzen möchtest. Diesen Stream würde ich dann abfangen und weiterleiten. Mit Weiterleiten meinte ich, vielleicht in ein lokales File. Ich bin aber eher der Fan davon, dass du zum Beispiel auf derselben Kiste sowas laufen lässt wie FluentD. FluentD beschreibt sich selbst als Open Source Data Collector for Unified Logging Layer. Was das eigentlich bedeutet, der nimmt sich Logs auf einer Source, Syslog, Apache, Nginx und so weiter und schiebt die dahin, wo du es möchtest. Elasticsearch, MongoDB, Hadoop, Amazon, Google, Snowflake, von mir ist auch MySQL, ist ja egal, der schiebt dir halt die Logs weg von der Kiste. Und je nachdem, was du dann mit den Logs machen möchtest, kannst du natürlich das Ziel von FluentD selbst wählen. Ich bin immer, wenn ich noch gar nicht weiß, was ich damit machen möchte, kann ich die natürlich in eine MySQL schreiben, dann muss ich mich aber um die Datenbank kümmern. Wo ich eigentlich ein relativ großer Fan davon bin, ist, ich schreibe die Logs erst mal auf einen Amazon S3. Oder in irgendeinem S3 kompatiblen Object Storage. Sei es bei Google, sei es bei Azure, sei es bei Hetzner. Ist ja völlig egal. In einem Format, was ich dann später vielleicht nochmal processen kann. Weil Object Storage ist sehr sehr günstig. Ich schau gerade mal, was Amazon S3 kostet. Und zwar in Europa, in Irland. Für die ersten 50 Terabyte im Monat kostet jedes Gigabyte 0,023 US-Dollar. Bis dahin kann man erst mal eine ganze Menge an Docs schreiben. Die würde ich erst mal da speichern, bis ich wirklich weiß, was ich damit mache.",
+            "start": 1257822,
+            "end": 1368335,
+            "confidence": 0.8074846416382256,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Du kannst da wahrscheinlich auch eine Retention einstellen, oder? Also ich weiß nur, bei der Google Cloud kann man einstellen, je nach 30 Tagen sollen die alle gelöscht werden, wenn sie älter als 30 Tage sind.",
+            "start": 1368355,
+            "end": 1376598,
+            "confidence": 0.6614444444444444,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "So was kannst du machen, oder wenn du... Du kannst sie entweder von der Retention-Zeit löschen lassen, oder du kannst sie in eine andere Storage-Tier verlegen. Das bedeutet, S3 bietet dir verschiedene Storage-Tiers an, unter anderem... S3 Glacier heißt das, da zahlst du dann nur noch pro Gigabyte 0,004 US-Dollar und das geht sogar bis auf Glacier Deep Archive, da zahlst du 0,00009 US-Dollar pro Gigabyte.",
+            "start": 1377417,
+            "end": 1411316,
+            "confidence": 0.7844848484848487,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Dafür muss man natürlich dazu sagen, dass wenn du dann was rausholen willst, da zahlst du dann ordentlich. Also die Idee ist, dass du das eigentlich nie lesen willst. Und als Österreicher, als Tiroler muss ich noch dazu sagen, wenn bei uns schon die ganzen Gletscher schmelzen, bin ich wenigstens froh, dass bei EWS und bei GCP die Gletscher größer werden.",
+            "start": 1411836,
+            "end": 1427843,
+            "confidence": 0.7845573770491802,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Nee, das Rausholen ist glaube ich gar nicht mehr so teuer. Es geht nur darum auf die Zugriffsgeschwindigkeit. Bei diesem S3 Glacier Deep Archive kann es zum Beispiel bis zwölf Stunden dauern, bis du die Daten lesen kannst. Wenn das nicht wichtig für dich ist, dann ist sowas eine super Alternative zum Löschen. Das ist besonders sinnvoll, wenn du irgendwie Daten für ein oder zwei Jahre aufbewahren musst, wegen irgendwelchen Audits oder ähnliches. Ja, oder wie jetzt zum Beispiel bei dir. Ich weiß jetzt nicht, inwieweit oder wie lange solche Rechtsurteile mit Google-Funks gültig wären, aber für dich wäre es einfach perfekt gewesen. Du shippst die einfach alle nach S3 oder nach GCP in Object Storage mit Fluentd und sagst, nach 30 Tagen packst du die in einen Glacier Deep Archive, wo du dann einfach wirklich nur noch Peanuts für zahlst. Und falls du einen Brief bekommst, dann holst du die halt raus. Dann ist es ja egal, ob du zwölf Stunden warten musst, bis du die Datei da hast. Und dann kannst du auf das Glacier Deep Archive ja immer noch eine Retention legen, löscht das nach einem oder zwei Jahren. Und jetzt sagst du, aber ich schreibe ja so viel. Glaub mir, du musst erst mal eine ganze Menge schreiben, bis du über 50 Dollar im Monat bei Amazon S3 kommst. Weil klar, du zahlst ja auch für Netzwerktraffic. Aber Netzwerktraffic in, also in die Cloud S3 schreiben, ist umsonst. Rausholen, also lesen und quer übers Internet shippen, da zahlst du. Die Frage ist aber, brauchst du denn immer alle Logs, liest du denn immer alle Logs, ja? Das ist dann abhängig von deinem Use Case, aber wenn ich mir dich so anhöre, scheint das eine ganz gute Sache zu sein. Oder du kannst halt, wie gesagt, FluentD jetzt einfach nutzen, um das zum Beispiel nach MySQL zu shippen. Und da ist die Frage, klar wird deine Datenbank groß, aber wie optimierst du die, ja? Du musst ja keinen Indizier haben da drauf, der dann immer neu geschrieben wird, wenn du einen Insert machst, bla bla bla.",
+            "start": 1428148,
+            "end": 1535513,
+            "confidence": 0.784263610315186,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Also ich persönlich bin ein großer Fan von Dateien, weil du die einfach gut komprimieren kannst und eine Datenbank ist einfach ein Riesengeschoss. ein guter Use-Case, dass man Daten, die man ganz selten braucht, wo man ganz viele Daten hat, die man komprimieren könnte, dass man die in der Datenbank speichert. Also ich glaube, das ist kein guter Use-Case für eine Datenbank. Geht natürlich, aber wenn man sich so ein ZIP-File anschaut und wenn es nur gzip ist, wie klein das ist im Vergleich, wenn du da strukturiertes in eine Datenbank speicherst. hat meiner Meinung nach keinen Sinn, und wenn, würde irgendwie eine spezialisierte Datenbank für diesen Use Case eigentlich verwenden.",
+            "start": 1535533,
+            "end": 1571820,
+            "confidence": 0.7829189189189192,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Du musst ja noch nichtmals mehr über die Files rübergreppen oder darin suchen. Du kannst ja, wenn du die auf einem Object Storage in Amazon S3 hast, mal kurz in Asina laden und da klassische SQL-like Queries machen über Files, Oder wenn du in Google bist, kannst du eine externe Tabelle in BigQuery anlegen mit JSON-Struktur oder CSV und kannst mal eben ganz kurz dort gewisse Begriffe oder Analysen fahren und dann die externe Tabelle mit BigQuery mal kurz wieder wegschmeißen. Das sind wirklich Peanut-Beiträge, die du dann auch zahlst, wenn du das Ziel hast, ein günstiges Siteprojekt zu fahren. Das wäre so meine Art von ganz einfacher Thematik. Natürlich kann man da alles noch machen mit Elk Stack und hatten wir ja gerade. Oder alles nach Splunk schicken oder nach Datadog. Ist aber alles nicht ganz kostengünstig und maintenance-mäßig. Deswegen immer nach Standard Out, Standard Error loggen. Dann hat man den Zugriff auf eigentlich fast jedes Unix-Tool oder Linux-Tool. Ich bin ein Freund von Fluentd zum Beispiel, gibt aber Alternativen, Logstash und whatnot und dann in irgendeinen Storage shippen, aber weg von der Kiste, also weg von dem Server selbst, weil was passiert, wenn der Server komprimiert wird, Cloud-Failure hat oder ähnliches, dann hast du die Logs wenigstens so.",
+            "start": 1571840,
+            "end": 1643822,
+            "confidence": 0.804014285714286,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Okay, damit haben wir mal das ganze Logging-Thema abgeschlossen. Wenn wir jetzt in die Richtung Monitoring, Alerting und Metriken gehen, was würdest du denn sagen ist sinnvoll an Metriken? Was soll überhaupt gemonitort werden? Worauf basiert dann Alerting? Wie mache ich das überhaupt? Und wie sieht da ein gutes Deck aus?",
+            "start": 1644682,
+            "end": 1662388,
+            "confidence": 0.8292941176470587,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Fangen wir mit den Metriken an. Ich bin immer ein Fan davon, die ganze Sache zu unterteilen. Ich bin davon ein Fan, die Metriken von deinem Basissystem zu holen. CPU, Memory von deinem Service. Wie viel Memory konsumt dein Service? Ist das ein Java-basierter Metrik? Also holst du dir die JVM-Metriken. Heap, Stack, Allocations. Alles, was deine Promi-Sprache so hergibt. Was du dir von außen, von außerhalb der Applikation ziehen kannst. Von mir ist auch so was wie Uptime oder ähnliches.",
+            "start": 1662908,
+            "end": 1691586,
+            "confidence": 0.7657530864197531,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Aber wie bekommst du die jetzt wirklich? Was würdest du für ein Tool einsetzen, um das auszulesen?",
+            "start": 1691853,
+            "end": 1696295,
+            "confidence": 0.6463529411764706,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Ich glaub, Cloud-Native-mäßig ist man da ganz schnell bei Prometheus. Man kann aber auch alles andere nehmen, wie ein Icinga oder ein Zebix oder Ähnliches. Oder ein Graphite oder ... Gibt's auf jeden Fall eine ganze Menge Tools. Wenn man jetzt aber wirklich top-notch DevOps, SRE-like, bla, bla, bla sein möchte, Ja.",
+            "start": 1696695,
+            "end": 1716423,
+            "confidence": 0.7827692307692306,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Dafür habe ich die ja. Ich will ja Top-Notch natürlich sein.",
+            "start": 1716443,
+            "end": 1718784,
+            "confidence": 0.5678181818181819,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Da ist man ratzfatz bei Prometheus und dort bei dem Pull-Push-Prinzip, da würde man dann zum Beispiel klassische Exporter auf der Kiste installieren.",
+            "start": 1719264,
+            "end": 1730329,
+            "confidence": 0.8408695652173913,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Vielleicht zur Erklärung, was ist Prometheus? Was ist ein Exporter? Wo läuft der ab? Woher bekomme ich einen Exporter? Was ist das?",
+            "start": 1730369,
+            "end": 1737051,
+            "confidence": 0.7185909090909092,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Ich google jetzt natürlich die offizielle Definition, damit ich hier mir nicht in der kleinsten Terminologie irgendwie ins Knie schieße.",
+            "start": 1737091,
+            "end": 1743714,
+            "confidence": 0.7100500000000001,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Ja, du brauchst mir das ja gar nicht genau definieren. Ich will ja nur wissen, wo sitzt denn der Prometheus, wo ist der Exporter? Was ist das überhaupt? Ist das ein Tool? Ist das ein Skript? Von was sprechen wir denn da überhaupt?",
+            "start": 1744362,
+            "end": 1756969,
+            "confidence": 0.676860465116279,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Die Prometheus-Instanz selbst ist ein Tool, das installierst du, das kannst du hosten, wo du möchtest. Kannst du selbst auf der eigenen Kiste hosten, wenn du möchtest. Macht aber Sinn, dein Monitoring von einer anderen Kiste zu machen, anstatt als von deiner Applikations- Also das ist der Kern.",
+            "start": 1756989,
+            "end": 1772255,
+            "confidence": 0.7479583333333335,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Von meinem Monitoring- oder Metricing-System.",
+            "start": 1772275,
+            "end": 1775519,
+            "confidence": 0.8676,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Ja, brauchst du aber auch nicht.",
+            "start": 1775559,
+            "end": 1777682,
+            "confidence": 0.8093333333333333,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Ja, aber nehmen wir mal an, das ist der Kern und der speichert mir die Metricing auch weg.",
+            "start": 1778963,
+            "end": 1784310,
+            "confidence": 0.6950555555555558,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Der hat einen Metric Storage.",
+            "start": 1784330,
+            "end": 1785471,
+            "confidence": 0.5578000000000001,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Und wie bekomme ich die Metriken wieder raus?",
+            "start": 1786532,
+            "end": 1788352,
+            "confidence": 0.729125,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Prometheus selbst hat Matrix-Storage, da kommt es aber auf deine Retention an, wie viele Metriken hast du und wie lange willst du die halten. Der ist gar nicht so schlecht, aber du kannst natürlich auch externe Backends dahinter setzen. Externe Backends wären zum Beispiel eine Victoria-Matrix-Datenbank, eine Influx-Datenbank, also Influx-DB oder eine M3. Das sind alles Time-Series-Datenbanken, die darauf optimiert sind, ja, Time-Series unter anderem, also Zeitwerte und die Uhrzeit zu speichern.",
+            "start": 1788392,
+            "end": 1813157,
+            "confidence": 0.7928750000000001,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Zeitreihen, wie das so schön heißt auf Deutsch.",
+            "start": 1813777,
+            "end": 1816579,
+            "confidence": 0.42074999999999996,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Zeitreihen, Timeseries, Zeitreihen, in der Tat. Und auf Basis dieser Metriken kannst du dann verschiedene Sachen machen, Visualisierung oder Alerting. Aber wie kommen die Daten da rein? Natürlich kannst du die Daten klassisch wie in jeder Datenbank irgendwie da reinschreiben. Fertiges Tooling wären eigentlich sogenannte Exporter, die ein Interface zur Verfügung stellen, welches Daten in einem bestimmten Format rausgeben. Ein klassisches Beispiel. Deine Applikation ist eine Web-Applikation und diese Web-Applikation hat einen REST-Endpoint und dieser REST-Endpoint expost Metriken von innerhalb der Applikation. Und Prometheus kannst du so konfigurieren, dass dieser Endpunkt alle fünf Sekunden gecrawled wird, die Daten genommen wird und in die Timeseries-Kartenbank geschrieben wird.",
+            "start": 1816619,
+            "end": 1861528,
+            "confidence": 0.8099622641509431,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Und wenn ich da jetzt einen Exporter für meine CPU und Memory-Werte haben will, dann gibt's da wahrscheinlich irgendwas fixfertiges, was ich schnell installieren kann und das macht es dann. Also der bietet dann auch die HTTP-Schnittstelle an, um dass Prometheus das immer abholen kann.",
+            "start": 1862403,
+            "end": 1878217,
+            "confidence": 0.7801999999999999,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Ja, gibt es fertig. Die Endpoints ist nicht nur HTTP oder HTTPS, kann auch DNS, TCP, INCP oder gRPC sein. Das Protokoll ist dann recht offen und da kommt es natürlich dann darauf an, wo läuft das Ding, welche Ports sind offen, welche Schnittstellen, wie möchtest du, dass dein Alerting-System oder dein Metric-System mit deiner Endsoftware kommuniziert.",
+            "start": 1879057,
+            "end": 1900212,
+            "confidence": 0.8343859649122806,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Okay, jetzt habe ich da die Metriken rausgeholt über die Exporter von meinen Hosts, speichere die ab in Prometheus. Was mache ich dann? Die liegen da in der Datenbank. Wie komme ich zum Alerting oder zu einem tollen Graphen? Ich will da ja so ein cooles Dashboard haben. Ich will ja meinem Boss oder meiner Chefin da zeigen, dass alles grün ist oder dass irgendwelche Werte nach unten, nach oben gehen. Ja, je nachdem. Cooles Dashboard halt. Die Fernseher sind so billig, da kann man sich so einen fetten Fernseher holen und den neben dem Team aufstellen. Wie macht man das eigentlich jetzt, wenn alle remote sind? Dann hat man diese coolen Fernseher nicht mehr, wo man alle Metriken oben hat.",
+            "start": 1900918,
+            "end": 1935103,
+            "confidence": 0.7684793388429753,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Das nennt man Bookmark in dem Browser.",
+            "start": 1935652,
+            "end": 1937333,
+            "confidence": 0.41557142857142854,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Stimmt, ist sogar billiger als ein Fernseher. Okay, egal. Also wie komme ich zu diesen Dashboards oder wie komme ich dann zu meinem SMS, das mir alarmiert, dass irgendwas krumm ist bei meiner Applikation?",
+            "start": 1937433,
+            "end": 1947376,
+            "confidence": 0.7088235294117647,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Zu dem Alerting und SMS kommen wir gleich. Erstmal schreib alles mit, was du an Metriken kriegen kannst, weil du weißt nie, wann die wirklich sinnvoll sind. Zum Debuggen ist das immer ganz gut, verschiedene Graphen miteinander nebeneinander darzustellen, zu gucken, okay, haben die eine Relation. Wie grafst du? Ich würde heutzutage einen Grafana nehmen. Würde ich sagen, ist in der Cloud-Native-Welt fast der Standard. Grafana ist ein Tool, ein Visualisierungstool, wo du Dashboards erstellen kannst, importieren kannst, exportieren kannst. Ist von der Firma Grafana Labs inzwischen. Und Grafana kann dann sogenannte Queries auf diese Timeseries-Datenbanken abfeuern. Entweder gehst du mit Grafana an den Prometheus und der Prometheus geht dann an sein Backend oder du gehst über Grafana direkt an die Datenbank. InfluxDB, M3, von mir ist auch noch MySQL oder irgendeine REST-API. Die Schnittstelle, womit Grafana kommuniziert, da gibt es etliche und du kannst Plugins dafür schreiben. Also du kannst auch github.com damit querien, um zu sagen, Wie viele Pull-Requests habe ich in meinem Repository offen? Das geht auch.",
+            "start": 1947416,
+            "end": 2012199,
+            "confidence": 0.7939823529411765,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Also einfach um Dashboards ganz allgemein zu erstellen. Und ist auch Open Source meines Wissens, oder?",
+            "start": 2012239,
+            "end": 2016580,
+            "confidence": 0.7566875000000001,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Ist auch Open Source. Gibt es natürlich dann Paid-Plugins und so weiter, weil Grafana möchte auch irgendwie Geld verdienen. Und die Sprache, in der du dann diese Queries schreibst, kommt natürlich dann ganz abhängig von dem Plugin, welches du nutzt. Das bedeutet mit Prometheus, nutzt du in der Regel PromQL, das ist die Prometheus-Query-Language. Und mit der Prometheus-Query-Language kannst du halt auch so, ich sag mal, lineares Forecasting machen. Das bedeutet, alerte mich bitte, wenn in der gleichen Schreibrate wie jetzt in einer Stunde die Festplatte volllaufen würde. Wohingegen bei klassischem Alerting wäre dann, gib mir bitte eine Info, wenn die Festplatte 90 Prozent voll ist. Resultat ist vielleicht das Gleiche, aber wann da ja alle triggert, ist eine andere Art.",
+            "start": 2016640,
+            "end": 2058577,
+            "confidence": 0.7539421487603307,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Ja, ich habe einen Kollegen gehabt, der in der Travel-Branche gearbeitet hat und der hat gemeint, das war eine Katastrophe, wie Corona gekommen ist, weil er hat alle seine Alerts anpassen müssen. Er hat die Werte immer mehr nach unten gesetzt. Alert me, wenn irgendwie zu wenig Zugriffe sind, weil dann ist irgendwas krumm bei der Applikation und er hat einfach jeden Tag die Werte nach unten setzen müssen. weil halt Corona so diese Werte geändert hat und am Ende hat er irgendwie alle Alerts umschreiben müssen oder überhaupt ausgesetzt. Also da wird so ein intelligentes System wahrscheinlich, das halt prüft, ist irgendwie ein extremer Spike oder extremes Loch in irgendeinem Graphen, wird da wahrscheinlich besser reagieren.",
+            "start": 2059512,
+            "end": 2099440,
+            "confidence": 0.8306324786324791,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Meines Erachtens nach gehst du aber gerade völlig in die falsche Richtung. Jeder Systemadministrator, DevOps, SAE, der sehr viel Alerting getweakt hat, packt sich jetzt glaube ich gerade an den Kopf. Intelligente und smarter Alerts ist ein Tod. Halt dieses System, wovon ich gerade rede, so einfach wie möglich. Du musst das verstehen können. Du musst genau wissen, wann der Alert losgeht, weil wenn ein Alert losgeht, musst du eigentlich genau wissen, was schief ist. Wenn du deine Alerting-Strategie nicht sauber hast, dann kann das sein, dass wegen einem Root Cause fünf Alerts losgehen. Und wenn 5 Alerts losgehen, weißt du nicht, gehen gerade 5 Sachen auf einmal schief, was sein kann, oder gibt es nur einen Root Cause, der alle 5 Alerts triggert. Und das nennt man Alerting Noise oder auch Toil unter anderem. Und wenn du jetzt nicht nur ein System hast, sondern 20, da gehen 20 mal 5 Alerts los, Und was machst du dann würfeln welchen du als erstes machst oder.",
+            "start": 2099920,
+            "end": 2160495,
+            "confidence": 0.791539393939394,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Aber es kommt natürlich drauf an was du für Metrik hast weil wenn du Metrik hast die extrem schwanken. Dann ist es einfach schwierig nen fixen Punkt festzulegen wann wann dann alert kommt und dann hast du natürlich. mit so smarteren Alerts oder prozentuellen Alerts, wenn irgendwas, keine Ahnung, zum Beispiel um 20 Prozent einbricht, dann sende den Alert oder vielleicht eben wirklich in Schwankungen, wenn es um Bestellungen geht oder so, dass man immer das vergleicht mit den Vortragen, weil sonst bist du natürlich ständig am Anpassen der Alerts, wann bekomme ich den Alert und nur, weil du jetzt gerade eine Aktion hast und ganz viele Bestellungen reinkommen, dann bekommst du einen Alert, weil plötzlich irgendwas zu viel oder zu niedrig ist bei den Bestellungen. Also gerade bei so Produktmetriken macht das sehr wohl Sinn. Bei klassischen Hardcore-Servermetriken ist es ja im Idealfall so, dass du ungefähr die gleichen Metriken hast und auch weißt, wann du alerten musst. Wenn jetzt die Response-Zeit extrem nach oben geht, dann musst du vielleicht einen Alert senden, wenn 10% deiner Requests über einen Threshold kommen.",
+            "start": 2160515,
+            "end": 2220777,
+            "confidence": 0.7814340659340664,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Also erstmal möchte ich sagen, nur weil du die Metrik hast, heißt das nicht, du musst darauf alerten. Die zweite Geschichte ist, alerte darauf, was für deine Applikationen, für dein Business oder für deinen Use Case wirklich Sinn macht. Was meine ich damit? Nur weil die CPU auf 90% spiked, würde ich erstmal keinen Alert senden. Sofern meine Responsezeit für meine Webpage immer noch unter 200 Millisekunden ist, ist mir das doch total egal, ob die CPU auf 90% spiked. Eigentlich ist das ja auch eine ziemlich gute Sache, wenn ich meinen Server bei konstant bei 90 Prozent einfach auslasse, weil dann weiß ich, dann habe ich ein richtiges Sizing meiner Server. Natürlich kann ich dann keine Peaks abfangen und so weiter. Und wir reden ja jetzt hier nicht über Autoscaling. Das hat dann eine ganz andere Maschinerie. Was hat mein Autoscaling für eine Startup-Time, bla bla bla. Ich will nur sagen, nur weil deine Load ein bisschen höher ist, heißt das nicht, dass ich darauf alerten muss, wenn alle anderen Metriken, die für meine Applikation wichtig sind, im grünen Bereich sind. Schwellenwerte für dein Alerting zu finden, ist sowieso unglaublich schwierig. Und das Alerting anzupassen, zu tweaken, ist eine dauerhafte Arbeit, weil sich natürlich hoffentlich auch deine Applikation ändert, dein Business ändert, vielleicht kriegst du mehr Kunden, vielleicht kriegst du weniger Kunden, vielleicht kommt ein Event, sowas wie Corona und Covid, was außerhalb deines Einflusses ist. Die Travel-Industrie hat sich mit hoher Wahrscheinlichkeit auch nicht gedacht, oh toll, wir haben ja keinen Traffic, deswegen können wir jetzt erstmal Urlaub machen. Haben die sich sehr wahrscheinlich auch nicht gedacht. Das muss man sich bewusst werden, ist dauerhafte Anpassung, und man muss konzentrieren. Das Ding ist niemals perfekt.",
+            "start": 2221157,
+            "end": 2317088,
+            "confidence": 0.7937526132404189,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Und wenn ich jetzt so einen Prometheus hab, kann ich dort drin alerten? Also, der sendet mir auch Alerts?",
+            "start": 2317128,
+            "end": 2322532,
+            "confidence": 0.6201052631578949,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Ja, der Prometheus hat eine Komponente, der nennt sich Alert Manager. Und dort kannst du dann Alerts definieren. Du kannst aber auch in Grafana Alerts definieren, oder du kannst auch in Kibana Alerts definieren, zum Beispiel auf deine Logs. Geht auch.",
+            "start": 2322572,
+            "end": 2336742,
+            "confidence": 0.7792682926829269,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Und wer ruft mir jetzt an?",
+            "start": 2337322,
+            "end": 2338683,
+            "confidence": 0.6846666666666666,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Ja, das ist das Backend vom Prometheus Alert Manager. Das kannst du natürlich mit irgendwas verbinden, Twilio oder Opsgenie. Du kannst aber auch Opsgenie von Atlassian zum Beispiel nutzen und darüber deine Alerts feuern. Der Vorteil von solchen Systemen ist natürlich, dass du auch sogenannte Escalation Chains, also Eskalationsketten machen kannst. Das bedeutet, stell dir mal vor, ich würde bei deiner Fahrschule mitarbeiten.",
+            "start": 2338723,
+            "end": 2362114,
+            "confidence": 0.7947460317460315,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Ist keine Fahrschule ist nur eine Plattform.",
+            "start": 2362454,
+            "end": 2364735,
+            "confidence": 0.6144285714285714,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Ich wollte gerade sagen, ich habe gerade einen Autoführerschein, so ist es nicht, ich würde gerne mal einen LKW- oder Traktorführerschein machen.",
+            "start": 2364755,
+            "end": 2369018,
+            "confidence": 0.5294545454545454,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Ja, aber das würde mich mal interessieren, ob du schaffst, da durchzukommen überhaupt.",
+            "start": 2369258,
+            "end": 2372500,
+            "confidence": 0.654,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Ja, das können wir gerne mal machen. Auf jeden Fall kannst du dann sagen, okay, angenommen, ein Alert geht los, angenommen, der Online-Theorie-Test startet nicht mehr. Der hat einfach Response Code 404. Dann kriegst du zuerst einen Anruf und wenn du nach zehn Sekunden nicht abnimmst, dann kannst du solche Eskalationsketten definieren, da soll ich angerufen werden.",
+            "start": 2372560,
+            "end": 2393212,
+            "confidence": 0.7277719298245615,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Oder... Ja, aber wäre es nicht besser, jemanden anzurufen, der auch eine Ahnung hat oder das Problem lösen kann?",
+            "start": 2393252,
+            "end": 2397935,
+            "confidence": 0.7333684210526317,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Das ist korrekt, aber ich bin mir ja nicht sicher, ob ich die Theoriefragen beantworten muss, um dann ein IT-Problem zu beheben. Oder du kannst sagen, du nimmst den Anruf zwar an, kommst aber nicht weiter, und du eskalierst das weiter einfach die Kette hoch. Wir hatten ja mal eine Episode über Incident Management und Feuerwehr. Ich glaube, bei solchen Methoden kommt dir sowas bekannt vor, dass du einfach nach oben eskalierst. Das sind dann natürlich schon advanced use cases, würde ich mal sagen. Aber das kannst du natürlich unendlich weiterbauen.",
+            "start": 2397955,
+            "end": 2427484,
+            "confidence": 0.7995824175824178,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Das ist übrigens ein guter Hinweis. Verlinken wir natürlich auch in den Shownotes diese Episode mit dem Incident Management und Incident Management bei der Feuerwehr, sowie auch alle anderen Tools und Plattformen, die wir heute erwähnt haben, steht natürlich alles in den Shownotes. Also wird eine lange Liste an Links. Schaut gern mal da auch rein.",
+            "start": 2427944,
+            "end": 2445654,
+            "confidence": 0.8151428571428573,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Was ich nur empfehlen kann, wenn ihr Alerts aufsetzt, macht das iterativ. Fangt nicht sofort an und addet 40 Alerts, sondern startet klein. Startet mit, ist mein Service ab? Wenn ihr einen E-Commerce-Shop habt, kriege ich noch Bestellungen rein. Wie zum Beispiel jetzt mal angenommen, ihr habt einen Shop, der hat drei Bestellungen pro Woche oder so. habe ich in der letzten Woche eine Bestellung bekommen. Könnte zum Beispiel ein Alert sein. Und wenn ihr mal losgeht, dann schaut ihr, okay, habe ich wirklich keine bekommen oder funktioniert das Bestellsystem nicht mehr? Ist mein Server online? Mit so ganz basisdummen Sachen. Jetzt gar nicht, oh ja, wirklich nicht jede Kleinigkeit alerten. Ihr macht euch bekloppt.",
+            "start": 2446194,
+            "end": 2489269,
+            "confidence": 0.8050695652173919,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Und ich finde auch, da muss man immer aufpassen, dass man eben nicht zu viele Alerts sendet oder dass es eigentlich nur dann ein Informationskanal wird und man am Ende selbst der Filter wird. Ist da jetzt irgendwie wichtige Information drin oder nicht? Für mich ist Alert immer dann, wenn es wirklich was Kritisches ist, wenn ich in irgendeiner Form handeln muss und nicht nur ein Information Log sozusagen, das ich dann persönlich durchprozesse und ich persönlich bin dann der Filter. Für das hat man ja Alert Manager.",
+            "start": 2489949,
+            "end": 2516337,
+            "confidence": 0.8232840909090907,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Wir reden hier grad natürlich von sogenannt On-Call und bei einem Side-Project seid ihr natürlich On-Call. Und noch ein kleiner Hinweis. Das Alert-System, das schaut nicht auf die Uhrzeit und das Alert-System sagt auch nicht, oh, der Wolfgang, der schläft jetzt grad. Deswegen send ich mal keinen Alert. Das bedeutet, wenn ihr wirklich Alerts sendet und seid euch bitte bewusst, die können auch in der Nacht losgehen. Natürlich könnt ihr sagen, es gibt mein Handy, kann man leise machen, ist alles richtig. Ihr könnt die auch silencen für eine Woche oder zwei Wochen, weil, weiß ich nicht, irgendeine Amazon-Region jetzt gerade ein Problem hat und die Behebung deswegen außer Kontrolle ist. Geht auch alles. Nur, ich lege euch wirklich ans Herz. Macht das iterativ. Lockt zwar jede Metrik mit und schreibt die in eure Time-Series-Datenbank, aber definiert wirklich wenige Alerts, die euch wirklich weiterbringen. Weil, wenn ein Alert losgeht, dann müsst ihr das Problem debuggen. Umso mehr Metriken ihr dann habt, dann kann das auch sein, dass ihr ad-hoc neue Dashboards aufbaut. Speziell für diesen Use-Case. Erst mit Erfahrung, wie eure Applikation sich verhält, wie euer Server sich verhält und so weiter und so fort, merkt ihr, welche Metriken wichtig werden, welche Dashboards wichtig werden und ihr werdet da einfach deutlich sicherer im Umgang. Deswegen macht euch nicht für so verrückt, langsam starten und über Zeit aufbauen.",
+            "start": 2516797,
+            "end": 2594274,
+            "confidence": 0.7896872246696031,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "So, jetzt hast du schon kurz angesprochen, das soll ja ganz top-notch sein, diese Lösung und da gibt es dieses tolle Keyword, das habe ich neulich in der CT gelesen, so wie jeder gute Product Manager oder CTO liest die CT. Genau und dann du liest die wirklich noch an die hat gerade die cd in unseren video call gehalten ich habe.",
+            "start": 2594594,
+            "end": 2616365,
+            "confidence": 0.7965645161290321,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Ich lese die nicht hab kein ich hab kein kein abo doch ich habe mir eine zeitschrift bestellt wo es darum ging es ging um gartenbewässerung mit smarter ventilsteuerung das ist ein test, Und es ging um Test-Energie-Kosten-Messgeräte ab 10 Euro. Habe ich gedacht, in der aktuellen Energiekrise macht das vielleicht mal Sinn, dass ich mir mal so ein Messgerät für 20 Euro bestelle und einfach mal durchs Haus gehe, gucken, wo jetzt meine Stromfresser sind und dann vielleicht hier und da mal den einen oder anderen austausche. Und natürlich die Gartenbewässerung als Farm-Tech-Freak. Ja, also lese ich mir natürlich auch sowas gern durch. Ich glaube, das sind gute investierte 5,90 Euro gewesen.",
+            "start": 2616745,
+            "end": 2652214,
+            "confidence": 0.8017610619469028,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Ja, ich vermute, dass dieses Kiva-Tracing gar nicht in der CT vorkommt. Wahrscheinlich ist das ein anderes Level. Aber egal. Also, ich hab gelesen, Tracing und Observability, und das ist ja der neue heiße Scheiß. Also, Andi, brauche ich das bei meinem F-Online-Projekt? Was ist das? Und was hast du dazu zu sagen für die Top-Notch-Lösung?",
+            "start": 2652414,
+            "end": 2671647,
+            "confidence": 0.7272142857142855,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Lassen wir das Wort Observability mal bitte weg, weil Observability ist ein geiles Thema. Versteh mich bitte nicht falsch. Alle diese Komponenten, die wir erwähnt haben, zahlen auch auf das thema observability ein das thema observability selbst geht aber noch viel tiefer deswegen lassen wir das jetzt einfach mal weg.",
+            "start": 2672308,
+            "end": 2688856,
+            "confidence": 0.8205000000000001,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Da machen wir eine eigene episode dann draus.",
+            "start": 2688876,
+            "end": 2691037,
+            "confidence": 0.5799999999999998,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Die frage brauchst du tracing da ist meine frage brauchst du das um einfach dieses seitenprojekt online zu halten.",
+            "start": 2691077,
+            "end": 2696601,
+            "confidence": 0.8664736842105262,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Erklär mal überhaupt was das ist.",
+            "start": 2697541,
+            "end": 2699323,
+            "confidence": 0.42133333333333334,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Mittels tracing kannst du eigentlich die verbindungen deiner applikation zu anderen komponenten mitmessen. Speziell in Microsoft-Architekturen, wo ein Web-Request durch.",
+            "start": 2699343,
+            "end": 2711048,
+            "confidence": 0.8187000000000001,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Du meinst Microservices, nicht Microsoft.",
+            "start": 2711088,
+            "end": 2714849,
+            "confidence": 0.5433999999999999,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Vielleicht auch in Microsoft-Architekturen, Entschuldigung, ich meine natürlich Microservices, Service-Architekturen. Das bedeutet, wo man ein Frontend hat und dann hat man den ersten Backend-Service und dann hat man den fünften Backend-Service und so weiter und so fort. Und irgendwie dauert der ganze Request zwei Sekunden. Um zu identifizieren, welcher Service oder welche Verbindung denn nicht sehr viel Zeit frisst, kann man Tracing verbinden. Somit baut man eigentlich, man traced den Request und attributiert den mit zum Beispiel irgendwelchen Headern, mit einer Request-ID oder ähnliches und so kann man eigentlich jeden einzelnen Subcall in deiner Microservice-Architektur mittracen und identifizieren. Ah, da hinten brauche ich 700 Millisekunden, da brauche ich 200 und auf Basis dieser Daten kann man die ganze Sache natürlich optimieren.",
+            "start": 2714869,
+            "end": 2761522,
+            "confidence": 0.7937107438016525,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Also wenn jetzt zum Beispiel ein Request, ich gehe auf die Web-Applikation, F-Online, Führerscheingeschichte und merke, dass da irgendwas langsam ist, dann kann ich in so ein Network-Tab gehen, in den Dev-Tools, kann da den Request raussuchen, da steht eine ID drin und dann habe ich irgendwo ein cooles System im Backend, da gebe ich diese ID ein und dann sehe ich, diese ID hat 700 Millisekunden MySQL-Zeit, so und so viele Millisekunden Nginx, bhb hat eineinhalb Sekunden gerendert und dann kann ich da rein Zoomen, wo das wirklich das Problem liegt. Habe ich das richtig verstanden?",
+            "start": 2761931,
+            "end": 2795581,
+            "confidence": 0.6957835051546388,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Kannst du machen, wenn du es richtig implementiert hast, genau. Jetzt sagt vielleicht der ein oder andere, ja Moment mal, aber ich kann ja auch einen slow query log auf eine MySQL aktivieren. Ja, könnt ihr auch, dann könnt ihr aber nicht, dann habt ihr nur die langsamen Queries auf der Datenbank, aber ihr habt nicht direkt, woher kommt diese Query und welche Query wurde am Frontend gefeuert. wo war diese Person denn located in Indien, in Österreich oder auf einer Insel auf Hawaii und so weiter und so fort. All diese Informationen kann man natürlich dann da mitsetzen und in welchem Environment welcher Request langsam ist und damit könnt ihr natürlich dann hingehen und optimieren.",
+            "start": 2795601,
+            "end": 2832110,
+            "confidence": 0.767155172413793,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Man sieht ja das öfters, wenn man auf irgendwelche Webseiten ein Error bekommt, dass da drunter vielleicht irgendwie so eine ID steht, die 30 Zeichen lang ist oder 60 Zeichen lang. Das ist ja dann meistens genau so eine Fingerprint-ID, das ist dann alles identifiziert und wenn man ein Support kontaktiert, könnte man denen wahrscheinlich sogar die ID sagen und die können dann nachvollziehen, was da genau passiert ist, was man gerade für ein Request gesendet hat, was man ins Formular vielleicht eingegeben hat und warum der Fehler dann überhaupt passiert ist.",
+            "start": 2832556,
+            "end": 2857007,
+            "confidence": 0.7725434782608699,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Wie kann man so was implementieren? Gängige Stichwörter sind Tools wie Zipkin, Jaeger. Ich glaub, gRPC selbst hat jetzt auch so eine Art gRPC-Tracing, wer also mit Google und Google Protobuff ein bisschen unterwegs ist. Die Vereinheitlichung dieser ganzen Sache findet unter dem Namen Open Tracing statt. Open Tracing ist ebenfalls nicht so bekannt, opentracing.io. Open Tracing wurde, glaub ich, nach Open Telemetrie gegründet. Open Telemetrie kümmert sich um die ... Standardisierung unter anderem der Formate und allem drumherum von Metriken und so weiter, wie zum Beispiel diesem Prometheus-Format und so. Warum ist das wichtig, dass man diese Initiativen wie Open Tracing und Open Telemetry hat? Damit man natürlich die Wahl hat, welchen Client man einbindet und man ein gemeinsames Protokoll, einen gemeinsamen Standard hat. Wer jetzt in einem Cloud-Feld unterwegs ist, wer also alles bei Amazon oder bei Google, AWS oder GCP hat, Die haben hier und da auch Tools in ihrem Stack, die diese Standards dann implementieren. Da müsst ihr dann einfach mal im Detail gucken.",
+            "start": 2857948,
+            "end": 2925804,
+            "confidence": 0.7855773809523802,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Wenn ich jetzt diese ganzen Sachen, die du erwähnt hast, Monitoring, Alerting, Logging, Metricing, Tracing, alle implementiert habe und mir da ein Riesensystem gebaut habe, kann ich dann sagen, mir ist Observability wichtig? Ohne jetzt der Episode schon vorzugreifen, aber ist es dann Observability?",
+            "start": 2925844,
+            "end": 2942370,
+            "confidence": 0.8177727272727272,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Ist völlig egal was ich jetzt sage, weil ich glaube in diesem Spektrum in der Industrie gibt es sehr viele Leute, die würden sagen ja klar und sehr viele Leute sagen oh mein Gott nein. Das zahlt auf jeden Fall alles auf Observability Konto. Observability ist meines Verständnisses nach eigentlich das ganze drumherum, dass du dir ein Stack aufgebaut hast, bei dem du konstant die daten mitschreibst und eigentlich ein intelligentes system fragen stellen kannst über dein system selbst wo du aber noch gar nicht im vorhinein weißt welche fragen du stellen möchtest.",
+            "start": 2943590,
+            "end": 2978876,
+            "confidence": 0.8267419354838711,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Also dass sie halt sachen logge die vielleicht eigentlich gar nicht gebraucht hätte aber in dem in dem spezialfall dann sind die natürlich nützlich gleiche mit metriken dass da viele dinge im system vorliegen obwohl ich noch gar nicht weiß dass ich.",
+            "start": 2979217,
+            "end": 2991965,
+            "confidence": 0.7636904761904761,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Brauche Genau, und jetzt kann ja jeder sagen, das ist ja voll einfach, dann schreibe ich einfach immer alles mit. Ja, das ist richtig. Aber wie korrelierst du denn die Logs mit den Metriken von vor zwei Jahren und so weiter? Alles in einem System zu haben, beziehungsweise eine Anfrage an das System zu stellen, eine Query an das System zu stellen, die all diese Daten gleichzeitig hat, korreliert, darstellt, gegen irgendwelche Thresholds fährt und so weiter und so fort. Das ist eigentlich so der Oberbegriff von Observability meines Verständnisses nach. Und das mit kleinen Datenmengen zu realisieren, ist schon eine kleine Herausforderung, weil welche Data Storage nimmst du? Für die Metriken hast du eine Time-Series-Datenbank, für Logging, für Textlogging brauchst du gegebenenfalls noch eine andere Storage. Dann möchtest du, dass die Antwort auch nicht eine Stunde zum Computen braucht, Dann möchtest du nicht fünf Abfragesprachen an das System senden, sondern eine. Das ist eine unglaubliche Herausforderung schon bei kleinen Datenmengen. Stell dir mal vor, du bist eine etwas größere Webseite und hast eine Million Anfragen pro Tag und möchtest das über die letzten sechs Monate machen. Da kommt man schon an, ich will nicht sagen technische Grenzen, aber man muss schon gegebenenfalls eigene Systeme entwickeln. Das ist meines Erachtens nach Observability, weil diese Observability geht nicht nur in die technischen Metriken, sondern auch in die Usermetriken rein. Wie verhält sich eigentlich die User Experience oder mein Business, wenn die CPU-Time immer auf 90% spiket?",
+            "start": 2992005,
+            "end": 3089122,
+            "confidence": 0.8110081632653053,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Okay, also Observability ist wahrscheinlich eine ganze Herangehensweise und ein Mindset, aber wie gesagt, da machen wir mal eine eigene Episode dazu. Was ich mir jetzt mitgenommen habe, ist auf jeden Fall, dass es sehr viele Tools gibt und dass man da sehr viel machen kann, aber auch, dass man das schrittweise machen kann. Das ist ja sehr angenehm. Man kann das schrittweise aufbauen, nicht nur das Alerting, sondern auch das Logging, was man mitloggt, Metricking, man kann es dann auch dementsprechend erweitern und kann da Schritt für Schritt vorgehen. Rein persönlich noch, ich glaube, je nachdem wie viel Zeit man hat, sollte man vielleicht irgendeine fertige Lösung verwenden, weil das schon ein riesen System ist und auch viele Datenmengen sind und das komplett selbstständig aufzubauen kann unter Umständen sehr zeitintensiv sein. Also das sollte man schon mitbedenken und vielleicht ist da eine Cloud-Lösung oder eine fertige Lösung, da gibt's auch kostenlose Tiers, mit denen man sehr weit kommt eigentlich, ist vielleicht die bessere Lösung. Zumindest um zu starten und wenn man nicht so viel Zeit investieren will, weil es doch sehr große Systeme sind am Ende.",
+            "start": 3090825,
+            "end": 3150571,
+            "confidence": 0.8136951871657756,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Für alle Leute, die uns gerade zuhören, die in dem Feld aktiv sind, und auch für Leute, die nicht in dem Feld aktiv sind, es gibt eigentlich zu jeder Komponente, die hier genannt wurde, mindestens 20 Alternativen. Meines Erachtens nach gibt's kein richtig, gibt's kein falsch.",
+            "start": 3150631,
+            "end": 3164933,
+            "confidence": 0.7910652173913044,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Aber sendet uns mal diese Alternativen, wenn euch irgendwas fehlt in der Liste. Am besten auf Twitter, ING, Kiosk. Da haben wir einen Tweet zu der aktuellen Episode. Hängt da mal gerne eure Lieblingstools dran, die wir vergessen haben in dem ganzen Monitoring, Logging, Metricking und Tracing Bereich.",
+            "start": 3165452,
+            "end": 3181217,
+            "confidence": 0.8374375,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Und wenn ihr gerade ein Side-Projekt aufbaut und ihr sagt, ey cool, ich brauche Logging, ich brauche Metriken, ich brauche Tracing und ich brauche Alerting, könnt ihr alles machen. Die Frage ist, braucht ihr das wirklich? Weil sonst betreibt ihr erstmal drei Wochen Yack-Shaving. Ihr geht dann nämlich rechts ins Rabbit Hole runter, anstatt euer Side-Projekt aufzubauen.",
+            "start": 3182037,
+            "end": 3200123,
+            "confidence": 0.728421052631579,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Ich hab gedacht, Logging ist immer links.",
+            "start": 3200625,
+            "end": 3202547,
+            "confidence": 0.6479999999999999,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Boah, der war gut flach. Der war gut flach. Baut erst mal euer Site-Project und dann kümmert euch darum, wenn ihr natürlich was lernen wollt. Viel Spaß beim Lernen. Es macht meines Erachtens super viel Spaß. Man kann einen richtig geilen Engineering-Porn da aufbauen. Und wer noch nicht genug von der ganzen Toolschlacht hat, der schaut mal bei der CNCF vorbei, bei der Cloud Native Compute Foundation. Die findet ihr unter cncf.io. Dort findet ihr eigentlich fast alle Tools, die ich hier gerade genannt habe. Da könnt ihr rumschauen, installieren und so weiter. Und das Tolle ist, all das, was wir genannt haben, könnt ihr mit oder ohne Kubernetes machen. Also ihr braucht kein Kubernetes. Ihr braucht auch keinen Docker. Ihr könnt das ganz normal mit einem klassischen Server fahren oder in einem hochkomplexen, verteilten System, wie ihr wollt. Wolfgang, was baust du denn jetzt als erstes ein?",
+            "start": 3202567,
+            "end": 3254363,
+            "confidence": 0.7558918918918921,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Du hast mir auf jeden Fall Sentry schmackhaft gemacht, weil das vielleicht die E-Mails ersetzen könnte. Das wäre ganz praktisch. Das schaue ich mir auf jeden Fall mal im Detail an.",
+            "start": 3254403,
+            "end": 3263026,
+            "confidence": 0.6874838709677421,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Ich habe mal eine Mobile App mit Flutter gebaut. Hinten daran war eine GraphQL API und ein Backend. Ich hatte überall einen Sentry Client drin. Das war einfach nur so cool, weil ich auf meinem iPhone die App gelaufen hatte, die hat eine Exception geschmissen auf Basis irgendeinem Fehler aus der GraphQL API etc. Und ich habe das einfach alles im Sentry gesehen. Man mag es kaum glauben, aber es hat Spaß gemacht, Bugs zu fixen.",
+            "start": 3263066,
+            "end": 3289328,
+            "confidence": 0.7719078947368422,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Okay, bin gespannt. Vielleicht noch ganz allgemein zum Hinweis, alle Tools, die wir heute erwähnt haben, weil da auch viele Firmen und kostenpflichtige Tools dahinter stecken, das war keine bezahlte Werbung. Wir bekommen kein Geld, nicht mal von Ivan, außer Andis Gehalt, der für Ivan arbeitet, aber auch nichts für die Werbung.",
+            "start": 3290427,
+            "end": 3308953,
+            "confidence": 0.8297884615384614,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Die ganzen Firmen wissen noch nicht mal, dass wir sie erwähnen.",
+            "start": 3308973,
+            "end": 3311354,
+            "confidence": 0.7477272727272727,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Und wir sind auch überzeugt von den Tools, wenn wir das dementsprechend immer dazu sagen. Sonst wie immer, wenn ihr Feedback habt zu dem ganzen Thema oder ganz allgemein zu unserem Engineering Kiosk, online auf Twitter oder per E-Mail stetig at engineeringkiosk.dev oder per WhatsApp gerne als Audio Message oder normale Message. Telefonnummer steht auch in den Show Notes. Wir freuen uns natürlich auch immer über Fragen, die wir beantworten sollen in den Episoden oder anderen Themenvorschlägen.",
+            "start": 3311394,
+            "end": 3338964,
+            "confidence": 0.822753246753247,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Bis dahin würde ich sagen, vielen Dank fürs Zuhören und bis bald.",
+            "start": 3339785,
+            "end": 3343006,
+            "confidence": 0.6870833333333334,
+            "channel": null,
+            "speaker": "B"
+        }
+    ],
+    "confidence": 0.7862015405719109,
+    "audio_duration": 3350.0,
+    "webhook_status_code": null,
+    "webhook_auth": false,
+    "summary": null,
+    "auto_highlights_result": null,
+    "content_safety_labels": null,
+    "chapters": null,
+    "sentiment_analysis_results": null,
+    "entities": null
+}
