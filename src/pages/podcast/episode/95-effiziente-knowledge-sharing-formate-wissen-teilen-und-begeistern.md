@@ -65,7 +65,11 @@ speaker:
   website: https://wolfgang.gassler.org/
   transcriptLetter: B
 spotify: https://open.spotify.com/episode/0STTrIK5cygC6TcE6g1HXq
-tags: []
+tags:
+- Team
+- Tech Kultur
+- Knowledge Sharing
+- Kommunikation
 title: '#95 Effiziente Knowledge Sharing Formate: Wissen teilen und begeistern'
 youtube: ''
 
