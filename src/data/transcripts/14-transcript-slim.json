@@ -1,0 +1,1090 @@
+{
+    "language_code": "de",
+    "audio_url": "https://audio1.redcircle.com/episodes/3577c74d-2d25-408e-9107-1fae71daf76a/stream.mp3",
+    "punctuate": true,
+    "format_text": true,
+    "dual_channel": false,
+    "webhook_url": null,
+    "webhook_auth_header_name": null,
+    "webhook_auth_header_value": null,
+    "audio_start_from": null,
+    "audio_end_at": null,
+    "word_boost": [],
+    "boost_param": null,
+    "filter_profanity": false,
+    "redact_pii": false,
+    "redact_pii_audio": false,
+    "redact_pii_policies": null,
+    "redact_pii_sub": null,
+    "speaker_labels": true,
+    "speakers_expected": 2,
+    "content_safety": false,
+    "content_safety_confidence": null,
+    "iab_categories": false,
+    "custom_spelling": null,
+    "disfluencies": false,
+    "sentiment_analysis": false,
+    "auto_chapters": false,
+    "entity_detection": false,
+    "summarization": false,
+    "summary_model": null,
+    "summary_type": null,
+    "auto_highlights": false,
+    "language_detection": false,
+    "speech_threshold": null,
+    "id": "62be0p9bf1-7587-4f1f-972d-3d08435636e4",
+    "status": "completed",
+    "error": null,
+    "utterances": [
+        {
+            "text": "Willkommen zu einer neuen Episode des Engineering Kiosks. Asynchrone Programmierung hilft bei der idealen Auslastung von Ressourcen wie CPU und I.O. Und seit Corona sind beinahe alle IT-Arbeitsplätze auch asynchron geworden. Doch werden dabei auch die Ressourcen ideal ausgelastet? Alles das klären wir in dieser Episode neben dem richtigen Tooling und den nötigen Skills für asynchrone Kollaboration. Von Zeichentools über Design-Documents bis hin zu den Schreib-Skills. Einen schönen guten Abend, Andi.",
+            "start": 2652,
+            "end": 33982,
+            "confidence": 0.8437605633802815,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Hallo.",
+            "start": 34022,
+            "end": 34403,
+            "confidence": 0.583,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Wie viele Rückmeldungen hast du bekommen vom letzten Podcast?",
+            "start": 34423,
+            "end": 37887,
+            "confidence": 0.7796666666666666,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Unglaublich viele.",
+            "start": 37947,
+            "end": 39149,
+            "confidence": 0.6675,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Man merkt schon, wenn es um das Thema Produktivität oder Zeitmanagement geht, dann hat einfach wirklich jeder eine Meinung. Eindeutig. Darum haben wir auch unsere Meinung oder unseren Senf dazu gegeben.",
+            "start": 39169,
+            "end": 50183,
+            "confidence": 0.8514516129032259,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Ich muss ich muss aber ich muss aber sagen die die die rückmeldung die waren auch nicht immer positiv ja also manche waren noch eher hämisch und haben gedacht wie also du du pfeife du bist doch komplett chaotisch und unorganisiert du redest hier über zeit management und produktivität. Ja was soll ich sagen also wir haben aber auch viel rückmeldung bekommen. und die gesagt haben, ich sitze im selben Boot, danke dafür. Die eine oder andere Methode werde ich mir auf jeden Fall mal ansehen.",
+            "start": 50984,
+            "end": 77940,
+            "confidence": 0.7786976744186048,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Und darum werden wir uns in dieser Folge auch mal zurückbesinnen auf unsere technischen Wurzeln. Andi, was sagt dir das Wort Asynchron oder Asynchronität? Wir werden ja jetzt mal abprüfen, was du da im Studium gelernt hast in deinem Bachelorstudium.",
+            "start": 77960,
+            "end": 91969,
+            "confidence": 0.756375,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Mein Bachelorstudium war Wirtschaftsinformatik und da konnte ich ja Wahlpflichtbecher Und ich glaube, bezüglich Asynchronität hatte ich da gar nicht so viel. Aber ich glaube, wenn man in der Webentwicklung unterwegs ist, dann kommt man da einfach nicht drumrum, besonders mit dem letzten Trend in JavaScript mit klassischen Async-Await-Keywords. Oder auch im Bereich Infrastruktur unterwegs ist, klassischer Memcache, Eventloop. Das sind so die Buzzwords, die mir da einfallen.",
+            "start": 91989,
+            "end": 121406,
+            "confidence": 0.8091176470588235,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Was ist der große Vorteil von Asynchron?",
+            "start": 121847,
+            "end": 123748,
+            "confidence": 0.6835714285714286,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Der große Vorteil ist auf jeden Fall, dass du mehrere Operationen gleichzeitig laufen lassen kannst. Im Endeffekt laufen die aber nicht gleichzeitig, sofern du auf einem Eventloop bist, sondern die laufen ganz unten drunter eigentlich nacheinander. Nur der Scheduler switcht halt die einzelnen Berechnungen oder Operationen, die du durchführst, immer hin und her, hin und her. So fühlt es sich dann gleichzeitig an. Aber du hast halt eine klassische Nebenläufigkeit. Das bedeutet, du machst eine Berechnung fragst du Daten von einem externen Server ab und die Abfrage von einem externen Server blockt deinen Hauptpfad eigentlich nicht. Und wenn die Daten zurückkommen, kannst du irgendwas updaten. Also kannst halt mehrere Operationen gleichzeitig laufen lassen. Facebook ist so ein klassisches Beispiel. Wenn du da ein bisschen scrollst und auf einmal poppt oben rechts im Facebook-Messenger wieder eine Eins auf. Das bedeutet, irgendwo haben die asynchron angefragt, ob es eine neue Nachricht gab oder halt per Websocket kam es gepusht. Aber das ist eine andere Geschichte. Auf jeden Fall kannst du halt so reaktive Web-UIs mitbauen zum Beispiel. Oder eigentlich jede klassische Desktop-Applikation, so wie Slack, basiert einfach komplett auf Asynchronität. Andernfalls wäre es, glaube ich, gar nicht möglich.",
+            "start": 124608,
+            "end": 194764,
+            "confidence": 0.7391683673469389,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Ich kann mich noch erinnern, wie ich studiert habe. Es ist sehr, sehr, sehr lange her. Aber da hat man uns immer erklärt, bei der funktionalen Programmierung, das ist so toll, weil das kann man dann automatisch parallelisieren. Ich habe das nie so ganz verstanden, wie das sinnvoll funktionieren kann. Und erst später, wie ich mal Node.js ausprobiert habe, ist mir das eigentlich so richtig klar geworden, um was es da eigentlich geht, dass man parallel programmieren kann, ohne dass man eigentlich viel damit macht. Also zu Anfangszeiten von Node.js hatte man ja auch nur einen Prozess, einen CPU zur Verfügung und hat dort wirklich alles ausgelastet durch die Parallelisierung. Also es war ein sehr interessantes Konzept, ohne dass man da kompliziert irgendwelche Logs machen muss oder Monitore oder sonstige Dinge, die man vielleicht so aus der Java-Welt kennt, wenn man irgendwie mit Threads oder Parallelisierung arbeitet. Und da war die funktionale Programmierung dann eigentlich der große Vorteil. Zusammengefasst ist Asynchron meiner Meinung nach eigentlich die bessere Variante, um eine Ressource möglichst gut auszunützen.",
+            "start": 195783,
+            "end": 255973,
+            "confidence": 0.794132183908046,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Da bewegst du dich aber langsam jetzt mal auf sehr sehr dünnem Eis, besonders wenn du Asynchronität, Async-Await mit Parallelisierung in einen Topf schmeißt. Also ich meine die ganzen Leute, die was im Rust, in Go, C, C++, C Sharp und so weiter machen, ich glaube, die werden dir mal ganz schnell an den Hals springen, weil die werden dir nur sagen, ach mein Gott, was erzählt der Österreicher da denn schon wieder? Der kann doch nicht sagen, Parallelisierung und Asynchronität ist dasselbe. Also da vorsichtig, Wolfgang, vorsichtig.",
+            "start": 255993,
+            "end": 290738,
+            "confidence": 0.7532386363636362,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Naja, man kann es auf jeden Fall zur Parallelisierung sehr gut verwenden und jeder, der mal Node.js probiert hat, merkt auch, wie schnell man eine CPU auslasten kann und wie viel man mit einer CPU auch wirklich schafft. Da hat es ja damals zu Anfangszeiten von Node.js, das waren immer so die klassischen Tests, die mit Node.js beziehungsweise auch mit Nginx dann gemacht worden sind, wo man einfach gezeigt hat, dass man Millionen von Connections, von HTTP-Connections, mit einer simplen CPU abarbeiten kann und Apache ist daneben einfach eingegangen. Und da hat man dann schon gemerkt, dass es einfach unter Umständen auch einfacher ist, mit der asynchronen Herangehensweise zu parallelisieren. Möglich ist es natürlich mit vielen Konzepten.",
+            "start": 290978,
+            "end": 331163,
+            "confidence": 0.8351452991452992,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Deswegen war ich auch zum Beispiel, war immer noch, war, ich bin natürlich immer noch ein super Fan von Redis, aber Redis, der Key-Value-Store, der arbeitet leider inzwischen auch auf mehreren CPUs.",
+            "start": 331532,
+            "end": 343515,
+            "confidence": 0.8281562500000001,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Warum leider?",
+            "start": 343575,
+            "end": 344516,
+            "confidence": 0.732,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Ich finde, wenn ein Prozess auf einer CPU läuft, ist er deutlich einfacher zu verstehen, als wenn du ein Prozess, ein Programm hast, was wirklich parallel ausgeführt wird auf mehreren CPUs, mehreres Reds, vielleicht sogar andere Prozesse rausgefolgt werden. Das mentale Modell, was du dir im Kopf behalten musst bei solchen Po, bei solchen Applikationen, ist deutlich größer, deutlich komplexer. Und je nach angewandter Sprache natürlich auch deutlich fehleranfälliger. Ich sag's mal, Mood-Texte, Race-Conditions, et cetera, et cetera. Ich sag je nach angewandter Sprache, weil wenn wir über Rust reden, die Jungs machen in dem Feld eine ganze Menge richtig. Aber wenn man jetzt mal von Go oder c oder c++ redet dann kann man sich da auch schon sehr sehr schnell selbst ins knie schießen.",
+            "start": 344556,
+            "end": 391795,
+            "confidence": 0.8111984126984128,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Aber genau das finde ich ja sehr spannend an node.js oder javascript dass man da also sehr leicht einsteigen kann man kann natürlich wie man auf gut österreichisch sagt ziemlich schnell auf die pappen fliegen damit wenn man es nicht versteht.",
+            "start": 392015,
+            "end": 405082,
+            "confidence": 0.8090975609756096,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Ich bin mir nicht was sind jetzt pappen ja ist das der hintern ist das der mund.",
+            "start": 405122,
+            "end": 409044,
+            "confidence": 0.6538823529411766,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Ist der ist der mund auf die fresse fliegen fallen fliegen fliegen.",
+            "start": 409124,
+            "end": 413406,
+            "confidence": 0.7003333333333334,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Auf die fresse fliegen.",
+            "start": 413707,
+            "end": 414487,
+            "confidence": 0.315,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Wenn man es nicht versteht, aber man kann natürlich Parallelisierung eigentlich extrem einfach realisieren. Und jeder, der mal mit eben C++ oder Java oder so gearbeitet hat und da Parallelisierung machen musste, das ist schon ein anderes Konzept und ein komplexeres Konzept, meiner Meinung nach.",
+            "start": 414787,
+            "end": 431391,
+            "confidence": 0.8564222222222224,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Eine Sache noch, du redest nämlich die ganze Zeit von Node.js. Und ja, Node.js hat natürlich mit Async Await oder generell der neue JavaScript-Standard mit Async Await da schon eine ganze Menge losgetreten. Man muss aber auch sagen, vor Async-Await gab es natürlich auch die sogenannte Callback-Hell in JavaScript, so klassischer XHR, Ajax-Request, wenn das Ding zurückkommt, .then und .done und was jQuery da nicht alles eingeführt hat, ja? Also, das gab's natürlich auch. Also ... Und die andere Geschichte ist, wir reden jetzt hier von JavaScript. Ich kenn aber async, await, die Keywords schon deutlich länger aus dem Ruby-Bereich, aus dem Ruby- und Rails-Bereich. Hab ich nie wirklich produktiv geschrieben. Hast du schon mal viel mit Ruby gemacht?",
+            "start": 432031,
+            "end": 479140,
+            "confidence": 0.7760672268907559,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Ja, hab Ruby überhaupt noch nie verwendet.",
+            "start": 479180,
+            "end": 481422,
+            "confidence": 0.7727142857142857,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "So viel ich weiß, ist Homebrew, der Packagemanager auf Mac, die Formulas ziemlich viel in Ruby gemacht. Und ... Auch wenn du mal Configuration Management Chef ausprobiert hast, da kommst du auch sehr, sehr viel mit Ruby aneinander. Und das sind so meine Erfahrungen damit. Aber kommen wir wieder zurück zu Asynchronität.",
+            "start": 481922,
+            "end": 501988,
+            "confidence": 0.7545000000000002,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Ja, und da ist meine Frage natürlich, wenn man sich jetzt überlegt, wir sind ja alles Techniker und wir verwenden die asynchrone Programmierung zum perfekten Auslasten unserer Ressourcen, die wir zur Verfügung haben. Und da stellt sich natürlich für mich die Frage, warum verwenden wir nicht die asynchrone Herangehensweise, um uns selber unsere Zeit, unsere Ressource perfekt auszunützen?",
+            "start": 502928,
+            "end": 526061,
+            "confidence": 0.8467068965517243,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Die Frage ist jetzt aber meta. Hast du gerade meditiert und bist dann wirklich in dich gegangen und hast du über deinen Sinn des Lebens nachgedacht?",
+            "start": 526101,
+            "end": 532908,
+            "confidence": 0.6574230769230768,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Ich könnte das jetzt natürlich sehr meta beantworten, aber ich glaube, es ist einfach nur dieser Artikel, den vielleicht einige kennen von Peter Levers. Das ist so ein, ich würde fast sagen, Guru in der Build-in-Public-Szene. Der hat Nomad List, diese Plattform, erfunden und ist sehr, sehr aktiv auf Twitter und tweetet extrem viel in dem Bereich. Und der hat mal einen Artikel geschrieben, Über Async, die neue Zukunft, die unsere Arbeiten stark verändern wird. Und ich habe das jetzt nur ganz schlau verbunden mit unserem Async-Thema. Aber ich habe eigentlich darüber meditiert, natürlich. Das wäre die bessere Antwort.",
+            "start": 533628,
+            "end": 568048,
+            "confidence": 0.7872929292929295,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Jetzt, wo ich gerade Meditation sage, fühle ich mich auch ein, du wohnst in Amsterdam, ne?",
+            "start": 568068,
+            "end": 572870,
+            "confidence": 0.639125,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Da meditiert man auch ganz anders, ja.",
+            "start": 572910,
+            "end": 574351,
+            "confidence": 0.7380000000000001,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Genau. Okay, zurück zum Thema. Wir sprechen heute über asynchrones Arbeiten. Ich hab den Artikel grad nur kurz überflogen. Herr Wolfgang hat mir den ganz kurz im Vorgespräch gezeigt. Wolfgang, kannst du mal einen kurzen Abriss geben, was Peter Lievers in diesem Artikel eigentlich sagt?",
+            "start": 575807,
+            "end": 591150,
+            "confidence": 0.7484888888888891,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Der gute Kerl heißt Levers, ist ja auch viel cooler. Levers.io. So eine Domain muss man mal haben. Ist, glaub ich, auch Holländer, by the way. Aber ist hauptsächlich international unterwegs.",
+            "start": 591170,
+            "end": 600413,
+            "confidence": 0.5677096774193549,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Wieso auch Holländer? Du bist kein Holländer.",
+            "start": 600433,
+            "end": 602433,
+            "confidence": 0.6528571428571429,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Ja, das stimmt natürlich. Ich fühle mich schon fast als Holländer in Amsterdam. Auf jeden Fall hat er zusammengefasst, dass es einfach viele Vorteile hat, wenn man asynchron arbeitet, weil man sich dann einfach konzentrieren kann auf seine Arbeit, weil man in so einem Deep Work Cycle zum Beispiel drinnen ist, weil man arbeiten kann, von wo man will, wann man will. Man wird nicht ständig gestört mit seinem Schlafrhythmus, mit seinem natürlichen Rhythmus, den man als Entwickler vielleicht hat. Man hat aber andere zeitliche Vorteile, dass man sich das einteilen kann, z.B. wenn es nicht viel los ist, kann man einkaufen gehen oder wenn man irgendwo mit dem Auto hinfahren muss, kann man das machen, wenn nicht alle anderen auf der Straße sind z.B. Und das hat natürlich dann im Gesamten einen extremen Einfluss auf die Gesundheit und die Zufriedenheit, die man hat. Und da gibt es auch Studien dazu, dass das sehr positive Auswirkungen hat auf die Psyche und dass das eigentlich der bessere Weg ist, zusammenzuarbeiten.",
+            "start": 602882,
+            "end": 657851,
+            "confidence": 0.8094615384615387,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Gehst du damit d'accord? Würdest du die ganzen Punkte unterschreiben?",
+            "start": 658171,
+            "end": 660952,
+            "confidence": 0.5967,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Ich glaube, es gibt natürlich auch einige Nachteile, aber ich würde mal sagen, die Vorteile sind definitiv vorhanden. Und das auch, obwohl ich persönlich eigentlich ein großer Fan bin von Teamarbeit und mit Leuten zusammenzuarbeiten. Aber eine asynchrone Zusammenarbeit hat durchaus sehr viele Vorteile.",
+            "start": 660992,
+            "end": 677780,
+            "confidence": 0.8157045454545454,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Lass uns doch mal kurz die Punkte durchgehen. Der erste Punkt ist der Schlafrhythmus. Wie hältst du es so mit dem Schlafen? Also, ich hab mal ein Buch gelesen, das nennt sich, warum Programmierer nachts arbeiten. Und es ist ein ziemlich gutes Buch, jetzt nicht super tiefgehend, aber der Grundgedanke ist davon, dass es verschiedene Arten von Menschen gibt und die zu verschiedenen Zeitpunkten des Tages ihre kreative und produktive Phase haben. Und man redet eigentlich von von zwei typen und zwar von eulen und von lärchen eule du bist eine eule wenn du eher so nachmittag abends oder nachts richtig aktiv wirst und auch deine produktive phase hast dein dein hirn springt an deine kreative phase hast und du kriegst da richtig was geschafft, Und eine Lerche ist genau das Gegenteil, dass du in den Morgenstunden eher diese gute Phase hast. Und in den Morgenstunden heißt jetzt nicht, wie jeder Gründer irgendwie empfiehlt, um vier Uhr aufstehen, sondern das kann auch ganz einfach sein um acht oder halb neun oder ähnliches. Aber dass du eher früh deine produktive Phase hast.",
+            "start": 678340,
+            "end": 742988,
+            "confidence": 0.7885801104972371,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Wird er auch beantwortet, warum Developer oder Entwickler so gerne in der Nacht arbeiten?",
+            "start": 743302,
+            "end": 748945,
+            "confidence": 0.8056428571428571,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Das ist eine gute Frage. Weiß ich grad nicht mehr. Ich hab das Buch vor ein paar Jahren gelesen. Aber der Autor selbst ist ein Softwareengineer. Und ich glaub, deswegen hat er sich diese Nische für dieses Buch rausgesucht.",
+            "start": 748985,
+            "end": 761372,
+            "confidence": 0.7429743589743588,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Also wenn jemand weiß, warum das so ist, warum Entwickler ständig in der Nacht arbeiten, bitte schickt uns eine Nachricht. Wäre wirklich sehr interessant, das mal zu wissen, ob es da auch eine Studie oder so dazu gibt.",
+            "start": 761987,
+            "end": 772957,
+            "confidence": 0.8349736842105264,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Meine persönliche Theorie ist einfach, dass diese Leute Eulen sind von ihrem Schlafrhythmus her, dass in der Nacht eigentlich viele Leute schlafen und deswegen sie die hohe Fokuszeit ausnutzen können. Also Social Media ist in der Regel weniger los. Dein Handy ist still, keiner called meetings. Du hast halt relativ wenig Ablenkung und nebenbei gibt es noch viel Koffein, Club Marte.",
+            "start": 772997,
+            "end": 795055,
+            "confidence": 0.8081639344262296,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Also du glaubst, dass das eigentlich keine Eigenschaft von Entwicklern ist, sondern dass das nur notgedrungenermaßen so ist, weil sie einfach sonst keine sinnvolle Zeit finden, um mal wirklich konzentriert an was zu arbeiten, dass sie drum in die Nacht gehen.",
+            "start": 795075,
+            "end": 806642,
+            "confidence": 0.8626585365853661,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Es gibt halt im alltag sehr viele leute die die fokuszeiten nicht respektieren ja und die dann einfach mal eben reinkommen und sagen hey kannst du mal eben und wenn du schon antwortest bist du ja schon raus aus deinem fokus. Und ich denke, das ist so eine Art Schutzmechanismus dafür und ganz im Ernst, die funktioniert ja auch. Also ich programmiere hier und da auch mal die Frauen im Bett und dann fange ich an. Und wenn ich dann richtig in den Flow komme, dann immer gucke ich auf die Uhr. Oh, drei Uhr nachts, ich muss morgen arbeiten. Und ich habe irgendwie seit fünf Stunden nichts getrunken und nichts gegessen. Ja, das wäre mal Zeit. War eine coole Session und dann gehe ich auch ins Bett. Aber da hat man halt die Fokuszeit, da ruft dich keiner an.",
+            "start": 807062,
+            "end": 848645,
+            "confidence": 0.7818499999999998,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Das heißt, wenn man es eigentlich schaffen würde, so eine Fokuszeit am Tag zu etablieren, dann wäre das wahrscheinlich im Gesamten gesünder und effizienter.",
+            "start": 848685,
+            "end": 856888,
+            "confidence": 0.8288749999999997,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Also gesünder auf jeden fall denke ich weil der körper braucht ja auch vitamine durch den durch den und hormone die durch durch das tageslicht ausgestattet werden ja also das schon aber von einem von einem wesen her kann es ja trotzdem sein dass du deine kreative phase ist abends das ja.",
+            "start": 857428,
+            "end": 874668,
+            "confidence": 0.7332884615384615,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Auf jeden Fall sind wir da, glaube ich, schon bei einem sehr guten Punkt, dass asynchron eigentlich genau diese Möglichkeit geben sollte, dass wenn man wirklich asynchron arbeitet, dass man eben sich selber die Zeit einteilen kann, wenn man sinnvoll arbeitet. Aber vielleicht, um mal überhaupt zur Definition zu kommen, was verstehst du unter asynchroner Arbeitsmethodik oder Herangehensweise?",
+            "start": 875349,
+            "end": 896205,
+            "confidence": 0.8266551724137928,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Asynchrone Arbeit ist für mich, dass ich mir meine Arbeitszeit selbst einteilen kann, dass ich wirklich meine Arbeitspakete oder meine Verantwortlichkeit dann erledige, wann ich es möchte, natürlich in einem gesetzten Rahmen. Das muss bis dahin fertig sein, also sei es Deadlines oder sei es Quartalsziele, Objective Key Results, OKRs oder sprint ja wenn man jetzt im scrum umfeld ist.",
+            "start": 896645,
+            "end": 921656,
+            "confidence": 0.807016666666667,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Aber das bedeutet schon dass eigentlich arbeitszeiten nicht sinnvoll sind oder oder mit dem arbeiten oder mit dem zusammenarbeiten oder asynchrone arbeit unterstützen ein telefon ist bösartig slack oder jede ähnliche chat funktion ist bösartig.",
+            "start": 921696,
+            "end": 938500,
+            "confidence": 0.8483999999999999,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Ich halte nichts von Kernarbeitszeiten, die über den Tag sieben Stunden sind. Davon halte ich jetzt nichts, weil das bedeutet nach dem deutschen Arbeitsrecht, wenn du eine 40-Stunden-Woche hast, dann hast du eine flexible Stunde am Tag. Das ist Blödsinn. Wenn du dann von asynchronen Arbeiten redest, da passt was nix. Wenn man jedoch eine Kernarbeitszeit hat von zwei Stunden am Tag, weil man sich abstimmen muss. Also asynchron arbeiten heißt jetzt für mich nicht, dass ich mich nicht mehr abstimmen muss, sondern dass die direkte Verfügbarkeit zu einem gewissen Termin gegebenenfalls nicht dauerhaft von allen sein muss. Wie würdest du Asynchron definieren? Kommt das deiner Definition nah oder würdest du sagen, ich mache es anders?",
+            "start": 938940,
+            "end": 984189,
+            "confidence": 0.8008448275862069,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Ich habe einmal einen interessanten Vortrag gehört von jemandem, der als Digital Nomad mit seinem Land Rover durch die Welt gereist ist, also schon einige Zeit her, wo das noch nicht so ideal war bezüglich Handynetzversorgung und der war auch in Ländern unterwegs, wo das nicht so einfach war. Und der hat in der IT gearbeitet und hat auch von seinem Auto aus gearbeitet, aber der hatte das Problem, dass er eigentlich nur Empfang hatte an Tankstellen, wo es Wi-Fi gegeben hat. Und der hat dann einfach an Tankstellen geparkt in der Nacht über am Abend und da hat er alles gemacht. Er hat mit Daten gearbeitet. Das heißt, er hat auch große Datenmengen bewegen müssen und irgendwie Converter schreiben. Und trotzdem hat er das geschafft, wirklich nur an den Tankstellen zu machen. Und der hat das so perfektioniert, dass das wirklich funktioniert hat und am Tag war er unterwegs. Das ist für mich wirklich ein Paradebeispiel von Asynchron Arbeiten. Wenn man sogar mit großen Datenmengen arbeitet, das schafft es wirklich so asynchron zu erledigen, dass man wirklich nur an einem Tag oder vielleicht sogar alle drei Tage nur Internetempfang hat und trotzdem produktiv arbeiten kann. Das ist für mich also wirklich ein ideales Beispiel von asynchronem Arbeiten.",
+            "start": 984515,
+            "end": 1057143,
+            "confidence": 0.8385576923076921,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Ist ein sehr geiles Beispiel, ist aber auf der anderen Seite natürlich auch ein Extremfall. Also jetzt kommen wir mal wieder zurück zur Realität. Natürlich gibt es solche Digital Nomads und natürlich bedarf das glaube ich viel Planung in Bezug auf die Arbeit muss wirklich definiert sein und Co. Aber du hast mich gerade noch nach Beispielen gefragt, was asynchrones Arbeiten bedeutet. Das bedeutet zum Beispiel einfach, dass ich meinen Wocheneinkauf einfach morgens um neun mache oder morgens um zehn. Dass ich meinen Friseurtermin einfach quer durch die Woche legen kann und mich nicht auf die Nachmittage oder aufs Wochenende stürzen muss, wo mit hoher Wahrscheinlichkeit die Masse ihren Friseurtermin hat. Das bedeutet, dass ich Sport machen kann, wann ich auch möchte und kann mich dann in einen Fitnesskurs einbuchen, der gegebenenfalls nicht kontinuierlich überlaufen ist, weil der abends in der Woche ist. Also dass ich wirklich meine Zeit und meine Freizeit auch so gestalten kann, ohne dass meine Arbeit darunter leidet.",
+            "start": 1057510,
+            "end": 1113252,
+            "confidence": 0.8126296296296297,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Du hast jetzt schon erwähnt, wie das idealerweise ausschauen könnte und eigentlich das Resultat erklärt. Aber wie kommt man denn jetzt zu so einem asynchronen Arbeiten? Vor allem, wenn wir jetzt denken an irgendeine kleine Firma, zehn Mitarbeiter irgendwo in Deutschland, Agentur oder sonstiges Business. Was können so kleine Firmen denn machen, um mehr in Richtung asynchrones Arbeiten zu gehen, wenn das der Wunsch von den Firmen ist? Was glaubst du, was man da braucht als Voraussetzung und wie man das wirklich umsetzen könnte?",
+            "start": 1113632,
+            "end": 1144582,
+            "confidence": 0.8147499999999999,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Lass uns mal ein bisschen Kontext setzen. Also wir sprechen jetzt von einer 10-Mann-Agentur. Wir sprechen von einer Agentur, die in Deutschland ansässig ist und wir reden jetzt auch erstmal nur, dass die Leute nicht im Büro sein müssen. Ist das richtig?",
+            "start": 1145042,
+            "end": 1159422,
+            "confidence": 0.7699047619047619,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Ja, gehen wir mal davon aus, ja.",
+            "start": 1159862,
+            "end": 1161763,
+            "confidence": 0.41028571428571425,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Warum setze ich den Kontext? Macht eine ganze Menge einfacher. Ja, wir reden nicht über steuerliche Aspekte, wir reden nicht über Digital Nomads und ähnliches.",
+            "start": 1161803,
+            "end": 1171408,
+            "confidence": 0.8046800000000001,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Aber wir gehen mal schon davon aus, dass die Geschäftsleitung das unterstützen will und mal schon ermöglicht hat, dass die Leute nicht nur im Office arbeiten können. Ist jetzt nach Corona wahrscheinlich auch was, was man vielleicht eh schon voraussetzen kann.",
+            "start": 1171448,
+            "end": 1184555,
+            "confidence": 0.8579756097560978,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Okay, fangen wir mit dem menschlichen an. Meines Erachtens nach muss das Vertrauen zwischen Vorgesetzten und Mitarbeitern schon mal sehr hoch sein. Man muss seinen Mitarbeitern vertrauen, dass sie dann auch wirklich die Arbeit machen. Oder man muss die Arbeit auch in irgendeiner Art und Weise ja messbar machen. Warum sage ich das? Ich meine das gar nicht so negativ, wie das klingt, aber es ist natürlich sehr verlockend, wenn ich zu Hause bin oder wenn ich unterwegs bin alles andere zu machen als zu arbeiten kann dauerhaft die die wohnung putzen und so weiter das das hat glaube ich jetzt jeder in korona im homeoffice auch selbst gemerkt also die die disziplin muss schon von dem mitarbeiter da sein und gegeben sein und auf der anderen seite muss der vorgesetzte oder die geschäftsführung jetzt in diesem fall zehn mann agentur, Da wirst du jetzt nicht so viele Hierarchiestufen haben. Da muss das Vertrauen auch schon gegeben sein, dass die Mitarbeiter das in ordentlicher Qualität abliefern. Und da meine ich gar nicht, dass die im Büro kontrolliert werden.",
+            "start": 1185055,
+            "end": 1240441,
+            "confidence": 0.8187696629213479,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Wenn das Vertrauen nicht gegeben ist, was könnte man machen, um das Vertrauen zu erhöhen?",
+            "start": 1240462,
+            "end": 1245366,
+            "confidence": 0.8886000000000001,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Ich bin mir gar nicht sicher, ob das Vertrauen erhöht werden muss oder ob der Vorgesetzte dann auch nicht sein Mindset ein bisschen ändern muss, weil im Endeffekt, Wenn die Arbeit vorher im Büro erledigt wurde, dann ist ja die Frage, was ändert sich eigentlich. Im Büro hat man vielleicht Daily Stand-Ups. Vielleicht kann man damit, warum macht man nicht ein asynchrones Daily Stand-Up. Ein asynchrones Daily Stand-Up, einfach die drei Fragen, was habe ich gestern gemacht, was plane ich heute und wobei bin ich geblockt, wenn man anfängt zu arbeiten. schreibt die kurz in Slack oder von mir auch per E-Mail?",
+            "start": 1245646,
+            "end": 1277527,
+            "confidence": 0.8098725490196076,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Also ich glaube auch, dass Kommunikation ein sehr großer Punkt ist und da am ehesten eine Chance steht anzusetzen und auch wenn Leute Probleme mit ihrem Vorgesetzten haben, dann ist Kommunikation meistens die Lösung und vielleicht auch mal proaktiv einfach schreiben in einem Slack-Channel oder direkt, heute mache ich das oder die letzten zwei Tage habe ich das und das gemacht und das war das Resultat. So kann man das vielleicht auch schon ein bisschen verbessern, wenn das von der vorgesetzten Seite nicht automatisch schon vorhanden ist oder gefördert wird.",
+            "start": 1277587,
+            "end": 1307686,
+            "confidence": 0.7859111111111112,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Also man muss ja schon sagen, auch die Softwareentwicklung, die hat ja ein Outcome und der ist binär. Entweder hat man die paar Zeilen Code geschrieben und man hat das Ticket umgesetzt und das Feature implementiert.",
+            "start": 1307746,
+            "end": 1319251,
+            "confidence": 0.7096388888888889,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Die besten Codezeilen sind immer die, die man nicht schreibt, nicht vergessen.",
+            "start": 1319271,
+            "end": 1322933,
+            "confidence": 0.8471666666666665,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Das ist richtig. Wir reden aber von einer 10-Mann-Webagentur und.",
+            "start": 1322973,
+            "end": 1326255,
+            "confidence": 0.6963999999999999,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Die schreibt nur viele Codezeilen, meinst du?",
+            "start": 1326295,
+            "end": 1328896,
+            "confidence": 0.6151428571428571,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Nehmen wir mal, die müssen eine WordPress-Webseite für eine Apotheke machen. Ganz kleinen Job. Ich rede jetzt gar nicht von einem großen Shopper-Shop oder ähnliches. Da ist das Ergebnis relativ gut messbar und auch binär. Entweder ist es da oder nicht da. Wenn man natürlich komplexere projekte hat dann macht es natürlich die auch länger dauern dann macht natürlich super sinn diese kommunikation zu erhöhen und generell im asynchronen umfeld ist proaktivität und überkommunikation unglaublich notwendig wirklich unglaublich notwendig weil, Man muss sich vorstellen, wenn man zusammen im Meetingraum sitzt, die Leute können einen beobachten, die wissen, was du machst, du tippst, die wissen zwar nicht, ob du da im WhatsApp tippst oder in deiner ID, aber die sehen, dass du da was machst. Wenn du aber asynchron bist, wo auch immer, dann sieht dich keiner. Deswegen musst du aktiv diese Art von Metainformationen konstant über die Leitung bringen und sagen, Hey, ich bin die nächsten zwei Tage raus, weil ich brauche mal ein bisschen Deep Work. Wir müssen mal hier so ein bisschen Konzentration ranbringen. Oder, hey, ich bin mal für die nächste Stunde raus einkaufen. Einfach kurz in den Slack, damit die Leute wissen, okay, der ist gerade nicht verfügbar. Und das muss man halt auch ein bisschen das Mindset ändern, dass das auch okay ist und dass man da nicht einen doofen Spruch von links kriegt, weil besonders wenn man damit anfängt, kann das schon mal so passieren.",
+            "start": 1329474,
+            "end": 1411809,
+            "confidence": 0.789601659751037,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Jetzt haben wir ja Vertrauen und viel Kommunikation, Überkommunikation, wie du es nennst, finde ich sehr gut. Sollte man auch wirklich so sehen und denken, Überkommunikation, also es soll einen selber schon nerven, so viel kommunizieren, so viel wie man kommuniziert. Was gibt es noch für Punkte, um diese Asynchronität zu erreichen oder zu verbessern für die kleine Zehn-Mann-Firma?",
+            "start": 1412029,
+            "end": 1435428,
+            "confidence": 0.8451355932203388,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Je nach IT-Ausstattung müsste gegebenenfalls der ein oder andere Software as a Service noch dazu gekauft werden. Warum? Das Tooling, was man nutzt, das sollte halt schon wirklich kollaborativ nutzbar sein. Was meine ich damit? Mehrere Leute können an einem Dokument arbeiten. Google Docs. Perfekt. Du hast oben zwei Headlines, einer arbeitet oben, einer unten. Office 365 supportet das auch ganz gut. Du kannst sogar mit mehreren Leuten in einer PowerPoint-Präsentation arbeiten. Jedes Tooling sollte irgendeine Art von Kommentar haben, weil Leute lesen deine Arbeit und haben vielleicht eine Meinung oder wollen irgendwas ändern. Zum Beispiel eine Kommentarfunktion ist schön, aber ein Killer-Feature ist von Google Docs der Suggestion-Modus. Du kannst sagen, ich kommentiere oder ich schlage vor und wenn du vorschlägst, kannst du einen Text editieren und er kriegt das rechts als Kommentar angezeigt und kann sofort übernehmen. Warum ist das ein Killerfeature? Das ist nicht nur zu sagen, hey, was hältst du denn davon, wenn wir den Satz so und so schreiben und dieser Punkt fehlt noch, sondern du machst die Änderung direkt und diese Änderung wird als Vorschlag, ähnlich wie ein Pull-Request, ins Dokument gepackt und der Autor kann einfach sagen, akzeptiere ich oder nicht. Genauso wie du eine Überkommunikation brauchst, genauso brauchst du auch eine Proaktivität bei dem asynchronen Bearbeiten und Proofreaden von Dokumenten.",
+            "start": 1435448,
+            "end": 1518692,
+            "confidence": 0.7810550458715592,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Ich sehe das immer so ähnlich wie, was ich glaube mittlerweile schon ziemlich durchgesetzt hat, wenn man zum Beispiel einen Workshop hat, dann gibt es diese Präsentationskoffer, wo man irgendwie Stifte und so weiter drin hat. Das war früher ganz was Tolles, dass wir diese Präsentationskoffer hatten. gehabt hat, wo irgendwie Post-its drin waren, Stifte und so weiter. Aber mittlerweile ist das einfach Standard-Equipment in einem Meetingraum, wo man irgendwie zusammenarbeitet. Und so sehe ich halt diese Online-Tools für die Zusammenarbeit genauso als Basics an. Ohne die geht es einfach nicht. Ohne die kann man nicht zusammenarbeiten. Und genau wie ich meinen Filzstift brauche, meinen Adding, um auf irgendeinem Plakat was zu schreiben, eine Überschrift zu schreiben und vielleicht da Kommentare dann mit einem Post-it dazuzusetzen, Wenn ich da in einer Gruppe arbeite, genau sowas brauche ich dann auch online, weil sonst funktioniert einfach Zusammenarbeit nicht. Und im Idealfall ist die Zusammenarbeit dann eben asynchron in so einem Online-Tool.",
+            "start": 1519032,
+            "end": 1574014,
+            "confidence": 0.7847672955974849,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Was mir ganz, ganz wichtig ist, dass man halt in der asynchronen Arbeit sehr proaktiv ist. Und mit proaktiv meine ich nicht, hey, dass man einen Kommentar schreibt, hey, das sollten wir nochmal besser schreiben, sondern was hältst du denn von diesem Vorschlag? Und dann schreibt man den Satz wirklich besser. Warum? Damit man dieses konstante Ping-Pong, was ihr zum Beispiel aus E-Mails kennt, wenn ihr versucht einen Termin abzustimmen, einfach weg hat. Das macht diese Arbeit, besonders im asynchronen Umfeld, 25 mal produktiver. Das kostet euch aber auch mehr Energie. Mehr Energie, weil es ist natürlich deutlich, ich will nicht sagen anstrengender, aber anspruchsvoller, einen aktiven Vorschlag zu machen und wirklich vorzuschlagen, wie es denn besser sein sollte, versus nur zu sagen, das ist doof, bearbeite das nochmal. Es kann sehr anstrengend sein, im Endeffekt macht euch das aber wirklich zu besseren Mitarbeitern und das ist auch der Unterschied zwischen Junior, Senior und Staff Engineer, dass du objektiv bleibst und konstant mit einem aktiven Vorschlag an jemanden herantrittst und nicht nur sagst, das ist doof, das gefällt mir nicht.",
+            "start": 1574314,
+            "end": 1642880,
+            "confidence": 0.8196611111111111,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Ich glaube, das ist auch vergleichbar mit Feedback ganz allgemein. Feedback geben ist nicht so einfach und man braucht natürlich auch gewisse Empathie und Vertrauen, um Feedback einfach an eine andere Person zu senden. Aber wenn ich jetzt wirklich proaktiv etwas ändere, kommentiere und auch erkläre, dann kann es halt auch dementsprechend ein sinnvolles Feedback sein, als nur zu sagen, das ist falsch, das ist schlecht oder sonst irgendwas. Und genau solche Methoden kann ich natürlich auch in diese asynchrone Zusammenarbeit mit reinnehmen.",
+            "start": 1643180,
+            "end": 1672228,
+            "confidence": 0.793987951807229,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Ein zweiter Punkt ist Diagramme. Besorgt euch ein gutes Tool, um Diagramme zu machen. Komplexe Architekturen, Sachverhalte oder ähnliches in Worte zu beschreiben, ist schwierig, ist komplex. Auch der Leser liest euren Text und versucht dann im Kopf ein Bild zu malen, auf Basis euren Worten. Wenn ihr jetzt aber eine Diagrammsoftware habt, nehmen wir mal zum Beispiel Miro, miro.com, war mal Realtime-Board früher, glaube ich. Eine super Software. Warum ist Miro so klasse? Kommentarfunktion, Endloses, Canvas, ihr könnt super viel malen und mehrere Leute können es gleichzeitig bearbeiten. Natürlich Transparenz ist die nächste Geschichte. Mit Transparenz meine ich zum Beispiel euren Kalender. Auch wenn wir sagen, Asynchron arbeiten heißt das nicht, dass man sich nicht mehr trifft, aber den Kalender von jemandem anders einsehen zu können, um dann herauszufinden, wann man denn mal sich abstimmen kann oder ähnliches, ist notwendig. Und das bedeutet auch, dass man gegebenenfalls in den Kalender mal reinschauen muss. Gibt diverse Firmen, wo das jetzt nicht so einfach ist, aber Transparenz ist ein sehr großes Thema. Auch zum Beispiel Private und Public Channel im Slack. Lesen und Informationen einholen, wird euer täglich Brot. Umso mehr Informationen transparent zur Verfügung stehen, umso weniger muss konstant nachgefragt werden und umso mehr enabelt ihr natürlich auch alle Mitarbeiter.",
+            "start": 1672648,
+            "end": 1761380,
+            "confidence": 0.8425571428571434,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Bleiben wir mal bei Slack. Ich kenne ja auch noch einige Firmen, die keine Chatfunktion sowas wie Slack oder Teams besitzen und ich glaube, das ist sogar eher der Großteil der Firmen, die jetzt vielleicht nicht IT als Hauptprodukt haben. Das klassische Verkaufsargument von Slack oder von Microsoft Teams ist ja, dass man asynchron arbeiten kann und wegkommt vom Telefon. Siehst du das auch so, Andi, dass Slack asynchron ist?",
+            "start": 1761420,
+            "end": 1786954,
+            "confidence": 0.7904857142857142,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Das ist eine sehr schwierige Frage, wie ich das sehe. In meiner Weltansicht schreibe ich eine Nachricht und erwarte kein Feedback, sondern kein direktes Feedback. In meiner Welt ist das wie, ich schicke jemandem eine WhatsApp und die Person antwortet mir, wenn sie Zeit hat.",
+            "start": 1787414,
+            "end": 1803040,
+            "confidence": 0.7476,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Aber ist das bei den meisten Leuten so, dass man, wenn man eine WhatsApp-Message schreibt, dass das asynchron ist und man erwartet sich nicht eine Antwort innerhalb von einer Stunde, sondern kann auch mal ein Tag sein?",
+            "start": 1803480,
+            "end": 1814321,
+            "confidence": 0.8075675675675675,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Ich habe solche Leute und solche Leute. Ich denke, dass WhatsApp, E-Mail, Slack asynchron sind sollte, weil der Punkt ist, wenn ich was von denen direkt möchte, wenn ich eine direkte Antwort habe, dann rufe ich die an. Das ist ein anderes Kommunikationsmittel. Slack wird aber sehr oft so genutzt, dass man wirklich aktiv auf eine Antwort wartet und dann diese Sachen wie Wolfgang schreibt, diese Informationen, die machen es ja auch nicht besser in der hinsicht und dann frage ich mich natürlich wozu brauchen wir das denn weil da könnten wir uns ja eigentlich auch mieten.",
+            "start": 1814782,
+            "end": 1845544,
+            "confidence": 0.7950515463917524,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Also ich glaube auch dass das sehr gefährlich ist ich glaube auch dass viele firmen das telefon falsch verwenden die machen dann alles über das telefon obwohl es asynchron gemacht werden könnte in dem email zum beispiel aber die denken halt es geht dann schneller wird schneller erledigt also rufe die person an. Aber das ist ja keine neue Erfindung grundsätzlich. Also E-Mail ist ja auch schon asynchron gewesen und kann auch so verwendet werden. Und da ist halt das Problem, dass viele Slack als ein schnelleres Medium im Vergleich zu E-Mail sehen und dann auch schneller eine Antwort erwarten. Und ich glaube, da muss man einfach die Kultur auch schaffen in der Firma, dass das eben asynchron betrieben wird und dass man da auch hart bleibt. Und wenn man da 20 Channels und 30 Leute mit dem roten Punkt in Slack hat, die alle auf eine Antwort warten, dann muss man da einfach auch so hart bleiben, dass man da jetzt vielleicht nicht antwortet, damit man in seiner Zone, in seinem Deep Work Fokusbereich bleiben kann.",
+            "start": 1845564,
+            "end": 1900972,
+            "confidence": 0.795734463276836,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Ein super Beispiel sind die Slack Keywords Add Channel und Add Here. In dem Slack-Space von meiner Firma sind die deaktiviert. Die kannst du nicht machen. Und das ist natürlich super, weil ad here und ad channel. Warum macht man das? Das bedeutet ja schon irgendwie, ich brauche jetzt eine Antwort oder meine Nachricht ist super wichtig. Wenn ihr euch aber nicht sicher seid, wie Slack bei euch in der Firma gesehen wird als synchrones oder asynchrones Tool, das ist eigentlich keine doofe Frage. Stellt das doch einfach mal dem Geschäftsführer. Was für ein Verhalten erwartest du denn hier in Slack? Dass ich eine Response-Zeit von fünf Minuten habe oder wenn ich Zeit habe? Das ist keine Frage, vor der ihr euch verstecken müsst, sondern einfach mal stellen.",
+            "start": 1902153,
+            "end": 1944572,
+            "confidence": 0.7428749999999997,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Und was auch ganz gut funktioniert, was ich auch vielen Entwicklern immer empfohlen habe, ihr könnt im Slack Notifications pausieren. Das heißt, ihr könnt ganz einfach auf euren Avatar klicken, Pause Notification und dann zum Beispiel für zwei Stunden. oder ihr schließt wirklich Slack komplett. Wenn ihr mal wirklich zwei Stunden fokussiert programmieren wollt, einfach Slack schließen oder euch wirklich als away setzen, dann sehen die anderen Leute wenigstens, dass ihr gar nicht online seid und erwarten vielleicht auch nicht eine direkte Antwort. Also das ist wirklich extrem wichtig, dass man da auch wieder richtig kommuniziert und den Leuten einfach auch bewusst macht, dass das asynchron ist, indem man sich vielleicht auch nur away setzt, dass der grüne Punkt einfach bei seinem Namen Ich würde.",
+            "start": 1944612,
+            "end": 1986267,
+            "confidence": 0.8254800000000001,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Sogar noch eine Sache weitergehen. Ich würde es gar nicht nur in Slack machen, ich würde es sogar auf deinem Laptop machen, weil jedes Betriebssystem hat inzwischen ein Notification Center und jedes Betriebssystem hat inzwischen eine Do Not Disturb-Funktion und schaltet das einfach ein und ihr kriegt einfach von gar keinem Programm, nicht von deinem E-Mail-Programm, nicht vom Browser, einfach von nichts mehr eine Notification.",
+            "start": 1986287,
+            "end": 2007067,
+            "confidence": 0.792476923076923,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Und das ist auch eine gute Funktion, gerade wenn es in den privaten Bereich hineingeht, dass man also wirklich Notifications in der Zeit, in der man privat sein will, dass man dann die Notifications deaktiviert. Man kann in Slack und meines Wissens auch Teams, wobei Teams da wirklich im Vergleich relativ schlecht ist, was ich so gehört habe, Man kann Zeiten setzen, wo man zum Beispiel keine Notifications aufs Handy bekommt, weil das Handy hat man halt immer mit und wenn dann irgendjemand irgendwas um zwölf in der Nacht braucht, dann bekommt man halt eine Notification, wenn man das nicht sauber deaktiviert hat. Also auch da ist die Selbstdisziplin wieder sehr wichtig, dass man eben die Asynchronität lebt und auch dementsprechend die Notifications danach richtet.",
+            "start": 2007221,
+            "end": 2047727,
+            "confidence": 0.8119999999999998,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Jetzt reden wir die ganze Zeit über Slack, über Schreiben und da kommen wir zu einem meiner Lieblingsthemen. Für asynchrone Arbeit ist die geschriebene Form unumgänglich. Und warum ist das eins meiner Lieblingsthemen? Weil ich denke, Schreibskills sollten entwickelt werden. Jeder Softwareentwickler oder eigentlich nicht nur Softwareentwickler, jeder der am Computer arbeitet, sollte sich damit auseinandersetzen, seine Writing-Skills zu fördern. Ich denke, wenn du in der Lage bist, eine Nachricht gut runterzuschreiben, klar zu formulieren, das ist wie Storytelling, das ist eine Superpower, das ist wirklich eine Superpower und für das asynchrone Arbeiten ist das wirklich key.",
+            "start": 2048181,
+            "end": 2090043,
+            "confidence": 0.7859587628865978,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Wobei ich jetzt eigentlich nicht befürworten kann, dass da ewig lange Messages in Form einer Story geschrieben werden.",
+            "start": 2090083,
+            "end": 2095368,
+            "confidence": 0.7522222222222222,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Und genau da kommt es ja darauf an, dass du die richtige Formulierung zum richtigen Zeitpunkt nutzt. Um eine klassische Frage zu stellen, solltest du keinen großen Prolog da drum schreiben, das ist richtig. Wenn du aber Storytelling beschreibst oder Lernmaterial in Videoform produzieren möchtest, dann ist ordentliches Storytelling bei der Vorbereitung, beim Skriptschreiben aber essentiell. Von daher, den richtigen Writing-Style im richtigen Kontext anzuwenden, ist super.",
+            "start": 2095728,
+            "end": 2127543,
+            "confidence": 0.8465223880597014,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Jetzt haben wir die ganze Zeit über Slack und Messages geredet. Wo kann man diese Schreibfähigkeit noch anwenden?",
+            "start": 2127563,
+            "end": 2134448,
+            "confidence": 0.8295,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Also der erste ganz offensichtliche Fall, es ist klassisch das Ticket-System und in der Formulierung der eigentlichen Arbeit und des Outcomes vielleicht.",
+            "start": 2134488,
+            "end": 2143295,
+            "confidence": 0.8007727272727272,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Zur Erklärung, Andi, was ist ein Ticketsystem? Ich bin in letzter Zeit draufgekommen, dass es viele Firmen gibt, die kein Ticketsystem haben, erstaunlicherweise.",
+            "start": 2143755,
+            "end": 2150817,
+            "confidence": 0.7543913043478262,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Gib mir mal ganz kurz ein Beispiel, welche Firma heute kein Ticketsystem mehr hat.",
+            "start": 2150837,
+            "end": 2154477,
+            "confidence": 0.6353571428571428,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Ja, ich will da jetzt keine Firmen nennen, aber kleinere Firmen haben oft kein Ticketsystem.",
+            "start": 2154497,
+            "end": 2160699,
+            "confidence": 0.7035333333333333,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Ich hörte von Firmen, die heutzutage noch keine Continuous Integration Umgebung haben. Da sage ich noch, schreckliche Situation, aber vielleicht noch okay. Aber ein Ticketsystem lasse ich mir heute nicht mehr ausreden. Okay.",
+            "start": 2160739,
+            "end": 2173373,
+            "confidence": 0.8186060606060606,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Ich glaube, wir denken auch zu oft an die klassische Entwicklungsfirma, also die wirklich Software produziert. Da ist es wahrscheinlich schon ziemlich ein Standard. Aber es gibt ja auch zahlreiche andere Firmen, wo IT gebraucht wird. Und da gibt es, glaube ich, auch sehr viele andere Systeme, die abseits des klassischen Ticket-Systems funktionieren. Kann ja auch einfach nur eine Post-it-Wand sein, zum Beispiel, in einem kleinen Team.",
+            "start": 2173413,
+            "end": 2196820,
+            "confidence": 0.7885820895522387,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Gehen wir mal ganz kurz, was ist ein Ticketsystem? Ein Ticketsystem ist ein System, wo Anfragen eingestellt, protokolliert und bearbeitet werden. Anfragen kann wirklich sein von, diese Software hat einen Fehler, wenn ich auf den grünen Button drücke, dann würde ich erwarten, dass eine Erfolgsmeldung kommt, aber es kommt immer eine Fehlermeldung. Das kann sein, dass ein neuer Mitarbeiter in der Firma anfängt und die E-Mail-Adresse eingerichtet werden muss. Das kann alles sein. Und warum braucht man dafür ein Ticketsystem? Warum kann ich nicht dem IT-Mitarbeiter eine E-Mail schreiben? Durch ein Ticketsystem hat man alle Aufgaben an einem Ort. Auf der einen Seite können die auf mehrere Schultern verteilt werden. Auf der anderen Seite werden die Aktionen aber auch protokolliert, weil die Marie hat am 23. Februar die Anfrage gestellt, dass der Mitarbeiter, der am 1. März anfängt, eine neue E-Mail-Adresse braucht. Und dann kann man die natürlich auch messen. Wie lange dauert das denn, wenn das eine neue E-Mail-Adresse angelegt werden kann? Und so weiter und so fort. Und auch irgendwann, wenn der Gerd, der immer die E-Mail-Adressen angelegt hat, irgendwann mal die Firma verlässt, dann weiß der Nächste, ah, so hat der das immer gemacht.",
+            "start": 2197020,
+            "end": 2261778,
+            "confidence": 0.8238629441624364,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Was vielleicht auch noch wichtig zu erwähnen ist, weil du hast jetzt hauptsächlich IT-Leute in dem ganzen System erwähnt, es können natürlich auch andere User sein von so einem Ticket-System. Also es kann auch der Buchhalter zum Beispiel ein Ticket bearbeiten, wenn es eben darum geht, eine neue Einstellung oder jemand verlässt die Firma, dann sind da ja auch andere nicht-IT-Leute unter Umständen mit involviert und die können natürlich genauso in einem Ticket-System arbeiten. Es ist nicht nur für IT-Leute.",
+            "start": 2262768,
+            "end": 2290438,
+            "confidence": 0.8184875000000001,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Da muss ich mal ein großes Lob an Trivago aussprechen. Und zwar, als ich 2013 zu Trivago kam, war damals schon das Ticketsystem essenziell. Die ganze Firma hat das Ticketsystem genutzt. Die Personalabteilung, wenn du irgendwelche Fragen zur Personalabteilung hattest, dann hast du die über dasselbe Ticket eingestellt, wie Fehler oder Features für die Software geplant wurden. Dasselbe mit der Finanzabteilung, dasselbe mit der Marketingabteilung. Ja, oder ganz einfach Rezeptionen. Wenn ich einen Gast anmelden wollte, hab ich ein Ticket gemacht. Und das muss ich zugeben. 2013, Trivago, Kudos. Ihr habt mich damals sehr, sehr beeindruckt. Ihr wart die erste Firma, die ich gesehen habe, die wirklich alles über das Ticket-System gemacht hat. Wahnsinn.",
+            "start": 2291058,
+            "end": 2330474,
+            "confidence": 0.8009824561403506,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Aber kommen wir zurück. Also im Ticket-System sind Writing-Skills sehr wichtig. Noch andere Bereiche, wo du die Wichtigkeit siehst?",
+            "start": 2330514,
+            "end": 2337738,
+            "confidence": 0.8108947368421052,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Ganz klar Dokumentation und Meeting-Protokolle. Es gibt ja nicht umsonst für Dokumentationen den Jobtitel Technical Writer. Also das ist halt schon wirklich ein eigener Job. Aber auch Meeting Protokolle, Dokumentation zu welcher Entscheidung wurde wann wie wo getroffen und warum diese Entscheidung wurde so getroffen. Und unter welchem Kontext, ja, welche Rahmenbedingungen gab es da, Budgetfragen, Zeitfragen oder ähnliches?",
+            "start": 2337758,
+            "end": 2366123,
+            "confidence": 0.8453898305084746,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Jetzt sehen wir ja mal in einer Folge, wo es um Async geht. Also jetzt, wenn man mal von den Meetings absieht, wie könnte man Meetings so umsetzen, dass sie asynchron sind?",
+            "start": 2366303,
+            "end": 2377268,
+            "confidence": 0.8042812500000002,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Wenn wir über IT reden, kommen wir zu meinem Lieblingsthema Designdokumente.",
+            "start": 2377288,
+            "end": 2381249,
+            "confidence": 0.6245454545454546,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Was ist ein Designdokument?",
+            "start": 2381289,
+            "end": 2382810,
+            "confidence": 0.6812499999999999,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "In einem Designdokument schreibt man eigentlich Änderungen an einer Systemarchitektur oder einer Softwarekomponente nieder. Ich möchte das und das ändern. Das ist der Grund, warum ich das ändern möchte. Und so würde ich es machen. Und das sind die Alternativen, die ich mir angesehen habe. Da kann man einfach die komplette Änderung einmal runterschreiben. Ein klassisches Template wäre zum Beispiel, du fängst das Dokument an mit einem High-Level-Overview, beschreibst den Change in ein oder zwei Sätzen.",
+            "start": 2383390,
+            "end": 2410330,
+            "confidence": 0.7561710526315788,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Machen wir da mal ein konkretes Beispiel. Wir haben jetzt noch kein Ticket-System in der Firma. Normalerweise würden wir jetzt ein Meeting ansetzen. Wir diskutieren mal, wie wir da unser Ticket-System einführen oder ein Ticket-System einführen wollen oder überhaupt, ob das Sinn macht, ein Ticket-System einzuführen. Wie würde das mit einem Design-Dokument aussehen, dieser Prozess?",
+            "start": 2410350,
+            "end": 2429036,
+            "confidence": 0.7967272727272727,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "In deinem Fall, die Person, die das Meeting ansetzen würde, die Person, die die Änderungen wirklich vorschlagen möchte und diskutieren möchte, muss sich erstmal hinsetzen und öffnet erstmal ein Word-Dokument.",
+            "start": 2429056,
+            "end": 2440518,
+            "confidence": 0.7918000000000001,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Muss es Word sein oder dürfen wir auch nicht Microsoft Produkte verwenden?",
+            "start": 2441271,
+            "end": 2444337,
+            "confidence": 0.8023333333333332,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Von mir aus kann es auch ein Markdown-Dokument sein. Irgendwo ein Dokument. Ich bevorzuge was Kollaboratives, wo wirklich gut Kommentare dran gemacht werden können.",
+            "start": 2444880,
+            "end": 2453642,
+            "confidence": 0.74125,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Was verwendest du da normalerweise?",
+            "start": 2453682,
+            "end": 2455182,
+            "confidence": 0.6256,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Eine ganze Zeit lang habe ich Dropbox Paper genutzt. Google Drive ist super. Wenn ihr irgendwie ein Wiki-System habt, wo ihr zum Beispiel Integrationen habt mit Dashboards oder Diagrammen, auch super, wenn man das direkt integrieren kann und nicht das Bild exportieren muss. Irgendwas Kollaboratives, was ihr da habt.",
+            "start": 2455222,
+            "end": 2471606,
+            "confidence": 0.8213877551020407,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Auch da wäre wichtig die Kommentarfunktion.",
+            "start": 2472066,
+            "end": 2474227,
+            "confidence": 0.5948333333333333,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Genau. Mach ein Dokument auf und beschreibe den ganzen Change. Was heißt, beschreibe den ganzen Change? Lass uns mal ein Design-Dokument für ein Ticketsystem schreiben. Das Dokument fängt an mit einer High-Level-Übersicht. Du beschreibst die Änderungen in ein bis zwei Sätzen. Ich würde gerne ein Ticketsystem einführen, damit Standardprozesse protokolliert, dokumentiert und messbar sind. Man klassifiziert zum Beispiel die Änderungsgröße, was sich da immer sehr gut bewährt hat, sind Kleidergrößen, small, medium, large.",
+            "start": 2474967,
+            "end": 2502981,
+            "confidence": 0.7726712328767122,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Also wie groß das gesamte Projekt wäre dann in der Umsetzung?",
+            "start": 2503041,
+            "end": 2506425,
+            "confidence": 0.7585454545454545,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Genau, Projekt oder man sagt auch Feature oder ähnliches. Umso größer extra large, extra extra large, umso mehr Feedback sollte man natürlich einholen, ja, umso mehr Ressourcen bindet das im Unternehmen.",
+            "start": 2506465,
+            "end": 2520414,
+            "confidence": 0.754741935483871,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Wobei das natürlich nur Sinn macht, wenn man Vergleichsdokumente hat oder Vergleichsprojekte, weil das steht ja immer im Vergleich zu anderen Projekten. Also ich kann ja nicht jetzt ein Projekt haben mit XL, wenn ich nicht weiß, was SM oder L ist. Also ich muss natürlich auch andere Projekte schon bewertet haben oder auch parallel bewerten, dass ich sie gegeneinander irgendwie abwiegen kann, wie komplex etwas ist. Ist vor allem dann wichtig für die Priorisierung, wenn ich entscheiden muss, welches Projekt ist jetzt so wichtig, welches will ich wirklich starten und welches schiebe ich vielleicht.",
+            "start": 2520454,
+            "end": 2547811,
+            "confidence": 0.7616421052631585,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Ja schon, aber macht euch da nicht wirklich große Gedanken, weil ob da jetzt Small oder Medium oder Medium oder Large steht, der Content, der im Dokument steht, ist das Wichtige und jetzt nicht, was ihr da in die Tabelle von der Änderungsgröße eingetragen habt. Ja, das kann man relativ schnell ändern. Dann kann man in der Übersicht weitergehen, okay, welche Teams betroffen sind. Und was ich dann immer sehr gerne mache, ist so eine Art Timeline. Das bedeutet, ich habe jetzt das Dokument veröffentlicht. Ich erwarte Feedback bis von heute in zwei Wochen oder ähnliches, damit man halt so direkt ein bisschen eine kleine Deadline draufsetzt. Damit alle Leute wissen, ah, okay, bis dann, dann muss ich mir das durchgelesen haben. Dann startet man eigentlich mal mit einer kleinen Zusammenfassung. Die Zusammenfassung könnte sowas beinhalten wie zum Beispiel die Motivation, welches Problem wir eigentlich lösen wollen, was ist das aktuelle Problem, warum tun wir das und was wollen wir damit eigentlich erzielen, wenn wir das Problem gelöst haben. Als nächstes Chapter wäre dann eigentlich die vorgeschlagene Lösung. Und die vorgeschlagene Lösung kann Unterkategorien beinhalten, wie zum Beispiel eine Architekturübersicht. Wie wird das Ticketsystem in deiner vorhandenen Architektur integriert? Weil Ticketsysteme kann man zum Beispiel auch mit E-Mails verbinden, dass man Tickets via E-Mail reinbekommt oder ans ERP-System. um irgendwelche Ressourcen zu verteilen oder man connectet das an euren Active Directory für Single Sign-On oder oder oder. Ihr könnt das aber auch ganz einfach nur mal in der Cloud einkaufen und einfach testen, dann habt ihr ein sehr isoliertes System. Aber genau in diesem Bereich hilft zum Beispiel ein Diagramm sehr viel, dass ihr einfach ein paar Boxen malt, ein paar Pfeile In der vorgeschlagenen Lösung solltet ihr aber auch ein paar Use Cases beschreiben. Was ist denn hier sinnvoll? Was ist ein Ticket? Wie sieht zum Beispiel ein Ticket aus? Was könnte ein potenzieller Use Case sein, der dadurch abgedeckt wird? Klassisches Beispiel, was ihr gerade genannt hattet, Onboarding von neuen Mitarbeitern. Immer wenn ein Mitarbeiter in die Firma kommt, müssen diverse Prozesse gestartet werden, E-Mail-Adresse angelegt, IT-Hardware muss bestellt werden, etc. Und dann hättet ihr zum Beispiel als Use Case, ein neuer Mitarbeiter kommt in die Firma, Dann wird ein Ticket erstellt. Dieses Ticket hat Untertickets für die verschiedenen Teams. Einmal für den Einkauf, einmal für die Finanzabteilung, einmal für die Personalabteilung und vielleicht sogar einmal für den Manager, damit der sicherstellt, den Mitarbeiter morgens am ersten Arbeitstag zu begrüßen. In der vorgeschlagenen Lösung habt ihr natürlich auch eine Unterkategorie potenzielle Risiken, weil eine Änderung birgt auch immer Risiken. Was sind die Risiken von einem Ticketsystem? Leute kommen mit dem System nicht klar, mit der Umstellung, Produktivitätsverlust, weil Prozesse geändert werden müssen, gegebenenfalls größeres Investment, um Mitarbeiter zu schulen oder oder oder. In der vorgeschlagenen Lösung könnt ihr natürlich auch schon direkt eine Software vorschlagen. Nehmen wir mal jetzt als Secret-System Atlassian Gyra, ist glaube ich so das Enterprise-Schiff. Mantis ist eine alte PHP-Software.",
+            "start": 2547851,
+            "end": 2731914,
+            "confidence": 0.8081008064516121,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Die gibt es noch?",
+            "start": 2731934,
+            "end": 2733094,
+            "confidence": 0.47925,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Ich glaube, die gibt es noch. GitHub Issues ist auch sehr, sehr gut geworden. Speziell GitHub Projects ist aber dann mehr auf dem Track von Software-Engineers. Aber Asana Trello oder oder oder. Verschiedene Ticketsysteme. Da könnt ihr euch auch eins ansehen, vorschlagen und vielleicht auch ein paar Gründe nennen, warum ihr genau dieses gewählt habt. Kostengründe, Meisterverbreitung oder ähnliches.",
+            "start": 2733114,
+            "end": 2761510,
+            "confidence": 0.7885254237288135,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Und da könnten natürlich dann auch andere Leute dementsprechend Kommentare hinzufügen. Also ich würde dann zum Beispiel in dem Design-Dokument einfach anmerken, okay, in der tollen Liste von Ticketsystemen Redmine gäbe es auch noch als Open-Source-Variante zum Beispiel.",
+            "start": 2761550,
+            "end": 2774860,
+            "confidence": 0.7343421052631581,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Dann kommt eine Kategorie nach eurer vorgeschlagenen Lösung, die meines Erachtens nach sehr, sehr wichtig ist. Und zwar, welche Alternativen ihr euch denn angesehen habt und warum ihr diese Alternativen verworfen habt. Bei dem Ticketsystem wäre das jetzt zum Beispiel mal kurz die Auswahl der richtigen Software. Wenn ihr jetzt aber mal eine Systemarchitektur abändert, zum Beispiel ihr wollt einen neuen Streaming Service nehmen oder wenn ihr eine neue API entwickelt oder ähnliches, und ihr wählt das Framework oder ihr designt die komplette Logging-Pipeline, dann ist das der Punkt, wo ihr mal wirklich, wirklich nachdenken müsst, wie kann ich dieses eine Problem auf mehrere Arten lösen und warum habe ich die anderen Arten alle verworfen und welche Nachteile haben sie. Warum ist das so wichtig? Als ich jünger war und noch nicht so erfahren in der Softwareentwicklung, kam jemand zu mir mit einer Anforderung und ich hatte immer sofort eine Ahnung, wie ich das umsetzen würde. Ich habe überhaupt nicht nachgedacht, welche Alternativen es überhaupt noch gibt. Umso mehr Erfahrung man kriegt, umso mehr denkt man über die einzelnen Anforderungen wirklich nach und dann geht man verschiedene Lösungswege durch und das macht einen unglaublich guten Softwareentwickler aus, damit man, dass man mehr Alternativen in seinem Kopf hat. Und genau in diesem Chapter schreibt ihr auf, warum ihr welche Alternativen verworfen habt, welche Nachteile diese hat etc. Als nächstes noch eine Timeline. Eine Timeline ist ein Basisprojektplan. Dokument veröffentlicht, Feedback eingeholt, mit dem Einkauf gesprochen, System ist da und am 1. April wird der erste Testballon mit der internen IT gemacht. Nächstes Quartal wird mal die Personalabteilung reingeholt und so weiter. Einfach mal so einen groben Projektplan. Der muss nicht so super detailliert sein, da reicht auch einfach nur Datum und Action. Sowas kann man immer später anpassen.",
+            "start": 2775273,
+            "end": 2890090,
+            "confidence": 0.8134747474747475,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Dokumentierst du dann auch, was wirklich umgesetzt worden ist in dieser Timeline?",
+            "start": 2890410,
+            "end": 2896091,
+            "confidence": 0.8080833333333334,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Das ist jetzt nicht Part des Designdokuments. Die wirkliche Projektexecution und Projektdokumentation sollte dann später im Projektmanagement-Tool gemacht werden, so wie das macht. Guckt, ob das Projekt on track ist. Das Designdokument ist wirklich nur zur Entscheidungsfindung und natürlich auch zur Dokumentation. So nutze ich es. Man kann es natürlich auch als Work in Progress ansehen und dann natürlich auch alles da tracken.",
+            "start": 2896111,
+            "end": 2921938,
+            "confidence": 0.8022222222222222,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Wichtig ist auf jeden Fall, dass man es irgendwo niederschreibt, weil dann hat man eben auch dokumentiert, warum man die jeweilige Entscheidung getroffen hat oder mit wem man gesprochen hat, gerade wenn es um Entscheidungen geht, dass man zum Beispiel mit der Shaping gesprochen hat und die hat das abgenickt, dass man das halt auch dementsprechend dokumentiert, wo dann auch immer.",
+            "start": 2922239,
+            "end": 2938125,
+            "confidence": 0.7758852459016393,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Ja, genau. Und die letzte Überschrift wäre dann der Anhang. In den Anhang könnt ihr wirklich alles reinpacken, was wirklich mehr Kontext erzeugt. Wenn ihr Meeting Notes habt, wenn ihr Blogposts mal irgendwo habt, Best Practices. Wirklich alles, was jetzt nicht 100% notwendig ist, um das Design zu verstehen, aber um mehr Kontext zu geben. Ähnlich wie in wissenschaftlichen Dokumenten die Fußnoten.",
+            "start": 2938898,
+            "end": 2963313,
+            "confidence": 0.8088870967741935,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Jetzt hast du das Dokument fertiggestellt. Was ist der nächste Schritt? Was machst du jetzt mit diesem Dokument?",
+            "start": 2964153,
+            "end": 2969555,
+            "confidence": 0.7086666666666667,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Das schicke ich rum. Das schicke ich rum an die Leute, von denen ich Feedback einholen möchte. Und das sind in der Regel die betroffenen Teams, die du in der High-Level-Übersicht identifiziert hast. Aber vielleicht auch sehr, sehr erfahrene Leute in der Firma. Vielleicht sogar in einer Zehn-Mann-Firma der Geschäftsführer. Oder vielleicht auch den Einkauf, weil das Ticketsystem muss ja eingekauft werden. Dann schickst du das per E-Mail, hey, ich würde gerne mal Feedback haben. Lest euch das mal durch, kommentiert gerne im Feedback, kommentiert bitte im Dokument selbst und ja, dann warte man.",
+            "start": 2969575,
+            "end": 3002449,
+            "confidence": 0.7824893617021278,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Machst du dann mehr Iterationen noch oder ist das üblicherweise eine Iteration oder wie legst du das an? Und vor allem, wie wird dann die Entscheidung getroffen?",
+            "start": 3002489,
+            "end": 3012457,
+            "confidence": 0.7611111111111113,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Auf Basis des Feedbacks, was ich bekomme, iteriere ich natürlich schon. Je nachdem, was für ein Feedback das ist, sage ich, okay, das passt rein oder das passt nicht rein. Ich als Autor selbst entscheide, welche Suggestions ich mit übernehme und welche nicht. In diesem Fall jetzt. Wer dann den finalen Call macht, ob wir das Ticketsystem einführen, das kommt natürlich ganz auf die Änderungen an. Jetzt nehmen wir mal eine Zeeman-Agentur und führen ein Ticket ein. Da sollte schon der Geschäftsführer die finale Entscheidung treffen, weil das ja schon eine grundlegende Prozessänderung ist. Redet man aber jetzt von einer Firma mit 300 Engineers und wir reden darüber, das Basis-Framework der Kern-API zu ändern. Weiß ich jetzt nicht, ob da wirklich der Geschäftsführer eine Entscheidung machen sollte oder nicht. Vielleicht ein Architektur-Team Vielleicht sogar einfach nur das Team, was verantwortlich ist für den Service. Kommt immer ganz auf den Kontext an. Im Endeffekt, du brauchst aber jemanden, der die finale Entscheidung trifft, weil irgendjemand hat den Hut auf, weil es gibt immer Situationen da, wo du eine andere Meinung hast als ich und mit beiden Meinungen kommt man im Endeffekt zum Ziel.",
+            "start": 3012497,
+            "end": 3078500,
+            "confidence": 0.8126354166666664,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Wobei man natürlich auch dazu sagen muss, wenn man die richtigen Leute eingebunden hat, da vielleicht ein, zwei Iterationen gemacht hat, dann wird dabei ganz vielen Entscheidungen auch einfach das Team sagen, passt, winken wir sozusagen durch, alle sind einverstanden und dann kann man direkt loslegen. ohne dass man eigentlich irgendwie viele Meetings darüber gemacht hätte und extrem viele Ressourcen blockiert hätte, weil jeder einfach asynchron, je nachdem wann er Zeit gehabt hat, das Ganze gereviewt hat, Kommentare hinzugefügt hat und im Normalfall läuft es dann einfach durch und man hat sich schon wieder ein Meeting gespart.",
+            "start": 3079200,
+            "end": 3112093,
+            "confidence": 0.8338350515463923,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Und besonders jetzt zum Lesen von solchen Dokumenten. Ihr habt ja alle Laptops, da müsst ihr nicht am Schreibtisch sein. Schnappt euch euren Laptop und geht doch vielleicht einfach mal in den Park. Macht das Dokument vorher auf und ihr könnt es ja offline lesen. Oder von mir aus auf den Balkon oder in den Garten. Das hört sich jetzt alles total toll an und das Template, was wir gerade besprochen haben, verlinken wir auch in den Shownotes. Man muss aber sagen, ein Designdokument zu schreiben ist schon recht viel Arbeit, lohnt sich aber. Warum lohnt sich das? Weil es automatisch eine Dokumentation ist. Ihr habt, wenn ihr das öfter macht, irgendwann eine Hand voll, zwei Hände voll von Architekturentscheidungen und welche Lösungen ihr verworfen habt. Und das ist wirklich, das sind super Dokumente, besonders für neue Mitarbeiter, die sich in die Architektur von euch einarbeiten, weil die kommen oft rein, schlagen vor, hey, wieso nutzt ihr das denn das nicht und das nicht? Und dann können die sagen, hey, pass mal auf, hier haben wir ein paar Design-Dokumente. Das sind die Gründe, warum wir damals diese Entscheidung so getroffen haben. Das ist Gold wert.",
+            "start": 3112617,
+            "end": 3167936,
+            "confidence": 0.77151282051282,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Und ich würde auch empfehlen, einfach mal Dokumente anzulegen, auch wenn man jetzt gar nicht so sicher ist, ob man die noch verwenden wird, ob das Projekt zustande kommt. Aber man hat dann schon was dokumentiert und sonst schreibt man das irgendwo hin oder in irgendeine private Notizapplikation. Ist so ähnlich wie mit dem Zeitmanagement, was wir in der letzten Episode besprochen haben. Einfach probieren alles aufzuschreiben, weil dann hat man diesen Start mit den Grundinformationen schon mal in einem Dokument und dann ist es auch viel viel einfacher weiterzuarbeiten. Wir machen das beim Vorbereiten des Podcasts zum Beispiel auch so. Wenn jemand eine Idee hat, legen wir sofort ein Dokument an für eine Episode mit dieser Idee und dann können wir darauf aufbauen. Und auch wenn wir sie gar nicht verwenden, wir haben mal einen Start und können da jederzeit darauf zugreifen.",
+            "start": 3167976,
+            "end": 3213873,
+            "confidence": 0.8256433566433569,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Was viele Leute gar nicht wissen, wenn man etwas aufschreibt, dann denkt man viel tiefer über dieses Thema nach, als wenn ich jetzt einfach nur dem Wolfgang meine Designidee erzählen würde. Man liest sich den Text dreimal durch, viermal durch, man umschreibt ihn, man ändert Worte. Und man denkt viel tiefer über das eigentliche Thema nach und im Endeffekt wird die Nachricht, die man eigentlich übermitteln möchte, deutlich klarer und auch gegebenenfalls die Architektur oder die Änderung, die man machen möchte, vielleicht einfach besser, weil sie keine Änderung ist, die man so salopp einfach dahinsetzt.",
+            "start": 3214400,
+            "end": 3248521,
+            "confidence": 0.8280210526315787,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Also man merkt schon, asynchrones Arbeiten hat extrem viele Nebenschauplätze, wenn ich es mal so nennen darf. Aber eigentlich sind es viel wichtigere Themen als das klassische Commitment, überhaupt mal asynchron zu starten. Da braucht es also viele Bereiche, wo man einfach lernen muss und mal anfangen muss. Die ganze Schreibtechnik, Kommunikationstechnik, auch die richtigen Tools. Und erst dann ist es überhaupt möglich, asynchron zu arbeiten. Wir haben das Ganze jetzt in einem kleinen Fall für eine 10-Leute-Agentur besprochen. Wenn man jetzt natürlich auf einen größeren Bereich übergeht, zum Beispiel zu einem internationalen Unternehmen, wie zum Beispiel wo der Andi gerade arbeitet, die auf extrem vielen Kontinenten Teams sitzen haben, dann wird es natürlich viel, viel, viel schwieriger. Wir wollten zwar noch einiges erwähnen diesbezüglich, aber nachdem wir schon so fortgeschritten sind mit der Zeit, wenn wir das auf eine eigene Episode mal auslagern, lasst uns bitte wissen, wenn ihr Interesse daran habt, wie das so ist, in einem internationalen Team zusammenzuarbeiten mit verschiedenen Zeitzonen auf verschiedenen Kontinenten, von Europa bis Australien, dann schickt uns eine Nachricht, dann kann uns der Andi sicher noch einiges zu diesen Bereichen erzählen. Und sonst lasst uns mal wissen, was ihr für Tools verwendet in der asynchronen Zusammenarbeit und ob ihr sonst irgendwelche Tipps dazu habt.",
+            "start": 3249315,
+            "end": 3331980,
+            "confidence": 0.8279245283018871,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Wir würden uns wirklich über einen Austausch mit euch über asynchrone Arbeit freuen. Meiner Meinung nach, asynchrone Arbeit kann anstrengend sein, wenn man sie richtig macht. Die Vorteile überwiegen aber durch die Work-Life-Balance, das Vertrauen auch und die Eigenverantwortlichkeit, seine Arbeit zu machen und zu gestalten. Lasst uns mal wissen, wie weit ihr so seid, wie eure Firmen das Ganze sehen. Schreibt uns einfach eine E-Mail an stetisch at engineeringkiosk.dev oder wie immer über Twitter auf engkiosk. Gerne auch anonym. Wir veröffentlichen keine Firmennamen hier. Ansonsten vielen Dank fürs Zuhören und bis zur nächsten Folge.",
+            "start": 3332020,
+            "end": 3370746,
+            "confidence": 0.8514947368421059,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Noch einen schönen Abend, Tag, Wochenende, was auch immer. Schöne Podcasts, man kann es asynchron hören. Ciao.",
+            "start": 3370766,
+            "end": 3378230,
+            "confidence": 0.6851764705882353,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Wer wartet lacht.",
+            "start": 3378251,
+            "end": 3378911,
+            "confidence": 0.6596666666666667,
+            "channel": null,
+            "speaker": "B"
+        }
+    ],
+    "confidence": 0.7976259850905186,
+    "audio_duration": 3389.0,
+    "webhook_status_code": null,
+    "webhook_auth": false,
+    "summary": null,
+    "auto_highlights_result": null,
+    "content_safety_labels": null,
+    "chapters": null,
+    "sentiment_analysis_results": null,
+    "entities": null
+}
