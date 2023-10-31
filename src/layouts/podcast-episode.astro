@@ -35,7 +35,14 @@ content.speaker.forEach ((person, index) => {
 
 // Transcripts
 const episodeFilename = Path.basename(content.file);
-const episodeNumber = episodeFilename.substring(0, episodeFilename.indexOf('-'));
+let episodeNumber = episodeFilename.substring(0, episodeFilename.indexOf('-'));
+
+// We have one episode starting with -1
+// We need to treat this special ...
+if(episodeFilename.charAt(0) == '-') {
+	const filenameWithPositiveNumber = episodeFilename.substring(1, episodeFilename.length);
+	episodeNumber = episodeFilename.substring(0, filenameWithPositiveNumber.indexOf('-') + 1);
+}
 const transcriptFilename = 'src/data/transcripts/' + episodeNumber + '-transcript-slim.json';
 
 let transcriptionUtterances = [];
