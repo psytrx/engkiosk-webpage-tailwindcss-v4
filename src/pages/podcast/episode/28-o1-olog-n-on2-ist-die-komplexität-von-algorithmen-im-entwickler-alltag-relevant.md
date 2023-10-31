@@ -72,8 +72,10 @@ rtlplus: ''
 speaker:
 - name: Andy Grunwald
   website: https://andygrunwald.com/
+  transcriptLetter: A
 - name: Wolfi Gassler
   website: https://wolfgang.gassler.org/
+  transcriptLetter: B
 spotify: https://open.spotify.com/episode/1V1n57J1JlwQvq6liID45p
 tags:
 - Software Engineering
