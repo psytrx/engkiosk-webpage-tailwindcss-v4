@@ -25,8 +25,10 @@ if __name__ == "__main__":
         ]
     )
 
-    if args.Episode <= 0:
-        logging.error("Please enter an episode > 0. E.g. 43")
+    # We have one -1 and one 00 Episode.
+    # Disallow other older ones.
+    if args.Episode <= -2:
+        logging.error("Please enter an episode number. E.g. 43")
         sys.exit(1)
 
     # Sometimes we get "3", but we need "03"
