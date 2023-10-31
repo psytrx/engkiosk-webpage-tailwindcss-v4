@@ -90,14 +90,14 @@ pubDate: '2023-06-27'
 rtlplus: ''
 speaker:
 - name: Andy Grunwald
-  website: https://andygrunwald.com/
   transcriptLetter: C
+  website: https://andygrunwald.com/
 - name: Wolfi Gassler
-  website: https://wolfgang.gassler.org/
   transcriptLetter: B
+  website: https://wolfgang.gassler.org/
 - name: Diana Knodel
-  website: https://www.linkedin.com/in/dianaknodel/
   transcriptLetter: A
+  website: https://www.linkedin.com/in/dianaknodel/
 spotify: https://open.spotify.com/episode/4LsjPZYmED1ARMkOXhuQwP
 tags:
 - Tech Kultur

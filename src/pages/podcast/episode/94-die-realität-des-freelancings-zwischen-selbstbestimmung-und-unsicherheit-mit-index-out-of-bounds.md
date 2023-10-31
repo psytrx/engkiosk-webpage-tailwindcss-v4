@@ -99,17 +99,17 @@ pubDate: '2023-10-24'
 rtlplus: ''
 speaker:
 - name: Andy Grunwald
-  website: https://andygrunwald.com/
   transcriptLetter: A
+  website: https://andygrunwald.com/
 - name: Wolfi Gassler
-  website: https://wolfgang.gassler.org/
   transcriptLetter: B
+  website: https://wolfgang.gassler.org/
 - name: Thomas Diroll
-  website: https://www.thomasdiroll.com/
   transcriptLetter: D
+  website: https://www.thomasdiroll.com/
 - name: Christian Braun
-  website: https://theempathicdev.de/
   transcriptLetter: C
+  website: https://theempathicdev.de/
 spotify: https://open.spotify.com/episode/0E5BlyyQHiXrkVu2Vuknwj
 tags:
 - Karriere

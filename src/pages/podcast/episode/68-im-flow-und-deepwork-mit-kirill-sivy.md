@@ -67,14 +67,14 @@ pubDate: '2023-04-25'
 rtlplus: ''
 speaker:
 - name: Andy Grunwald
-  website: https://andygrunwald.com/
   transcriptLetter: B
+  website: https://andygrunwald.com/
 - name: Wolfi Gassler
-  website: https://wolfgang.gassler.org/
   transcriptLetter: C
+  website: https://wolfgang.gassler.org/
 - name: Kirill Sivy
-  website: https://www.linkedin.com/in/ksivy/
   transcriptLetter: A
+  website: https://www.linkedin.com/in/ksivy/
 spotify: https://open.spotify.com/episode/62rbOMaw6dLKYDgBEZWtjW
 tags:
 - Karriere

@@ -72,14 +72,14 @@ pubDate: '2023-09-26'
 rtlplus: ''
 speaker:
 - name: Andy Grunwald
-  website: https://andygrunwald.com/
   transcriptLetter: B
+  website: https://andygrunwald.com/
 - name: Wolfi Gassler
-  website: https://wolfgang.gassler.org/
   transcriptLetter: C
+  website: https://wolfgang.gassler.org/
 - name: Sebastian Spier
-  website: https://spier.hu/
   transcriptLetter: A
+  website: https://spier.hu/
 spotify: https://open.spotify.com/episode/46pnovkLChEseiNiiP15Qw
 tags:
 - Team
