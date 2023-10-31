@@ -1,0 +1,874 @@
+{
+    "language_code": "de",
+    "audio_url": "https://audio1.redcircle.com/episodes/ff17f8af-00a3-4594-8886-d1c2a3980c67/stream.mp3",
+    "punctuate": true,
+    "format_text": true,
+    "dual_channel": false,
+    "webhook_url": null,
+    "webhook_auth_header_name": null,
+    "webhook_auth_header_value": null,
+    "audio_start_from": null,
+    "audio_end_at": null,
+    "word_boost": [],
+    "boost_param": null,
+    "filter_profanity": false,
+    "redact_pii": false,
+    "redact_pii_audio": false,
+    "redact_pii_policies": null,
+    "redact_pii_sub": null,
+    "speaker_labels": true,
+    "speakers_expected": 2,
+    "content_safety": false,
+    "content_safety_confidence": null,
+    "iab_categories": false,
+    "custom_spelling": null,
+    "disfluencies": false,
+    "sentiment_analysis": false,
+    "auto_chapters": false,
+    "entity_detection": false,
+    "summarization": false,
+    "summary_model": null,
+    "summary_type": null,
+    "auto_highlights": false,
+    "language_detection": false,
+    "speech_threshold": null,
+    "id": "62bt1ahpld-e864-49c8-961d-71322383e939",
+    "status": "completed",
+    "error": null,
+    "utterances": [
+        {
+            "text": "Herzlich willkommen zu einer neuen Episode hier bei uns im Engineering-Kiosk. Heute wird es wieder etwas technischer. Heute zum Thema Datenbanken und ganz im Speziellen zum Thema MySQL. Wir haben uns gefragt, ob diese Datenbanken überhaupt noch skaliert, haben über Tools gesprochen wie SQL-Proxy und Vitesse, SQLite, wann man lieber einzelne Dateien statt Datenbanken nutzen kann und wie einfach es ist, seine eigene Datenbank zu schreiben. Und zum Schluss gibt es noch ein paar Tipps zum MySQL-Performance-Tuning. Bevor es losgeht, noch ein kleiner Hinweis in eigener Sache. Falls euch die letzte Episode gefallen hat, drückt doch mal ganz kurz auf Pause, kopiert den Link in eurer favorisierten Podcast-App und schickt ihn doch einfach mal rum an Freunde oder vielleicht auch im Filmstack. Das würde uns sehr helfen, unsere Hörerschaft zu erweitern und auch neues Feedback zu kriegen. Vielen Dank dafür und jetzt geht's ab zum Thema Datenbank.",
+            "start": 2637,
+            "end": 48177,
+            "confidence": 0.769578231292517,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Einen wunderschönen guten Abend. Ich bin ja aktuell gerade in Österreich und habe eigentlich gar keine Lust, das Podcast aufzunehmen. Ich komme gerade direkt aus dem Schnee. Der Andi zieht da natürlich wie immer durch und darum sitzen wir heute Abend bei einem Podcast. Einen schönen guten Abend.",
+            "start": 52354,
+            "end": 68635,
+            "confidence": 0.7570208333333336,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Hallo Wolfgang. Ich finde das aber schön, dass du wenigstens zugibst, dass du keine Lust hast. Und auf der anderen Seite kann ich dich, glaube ich, ein bisschen beruhigen. Ich bin mir nicht sicher, aber ich glaube, Après-Ski in den aktuellen Corona-Zeiten ist gerade nicht so wirklich, oder?",
+            "start": 68675,
+            "end": 83859,
+            "confidence": 0.7541458333333334,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Das kannst du nur du als Deutscher sagen, weil ich glaube, alle Österreicher, so wie ich auch, ich war noch nie in meinem Leben bei Après-Ski. Ich habe keine Ahnung, was das eigentlich ist. Ich kenne das nur aus dem Fernsehen. Aber ich bin auch ganz froh, dass ich das bisher eigentlich noch nie erleben habe müssen.",
+            "start": 83879,
+            "end": 96582,
+            "confidence": 0.6960877192982455,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Das würde mich wirklich interessieren also du kommst jetzt von der piste ja die meisten gondeln irgendwie machen irgendwie so die letzte bergfahrt weil sie nicht 15 45 16 uhr irgendwie sowas, und kurze frage was du kommst du machst die talabfahrt was machst du dann packst deine schier auf die schultern und gehst nach hause oder was.",
+            "start": 97057,
+            "end": 114965,
+            "confidence": 0.7280689655172414,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Ja, korrekt. Oder wenn man mit Freunden unterwegs ist, dann geht man irgendwo Bier trinken in einem netten Lokal oder in einer Kneipe, damit du es auch verstehst, und nicht in irgendeinem überfüllten Raum mit ganz vielen Holländern und Deutschen, die schon ihr fünftes Bier intus haben.",
+            "start": 115518,
+            "end": 132373,
+            "confidence": 0.7882340425531916,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Aber Micky Krause läuft schon in diesem kleinen Lokal, oder?",
+            "start": 132433,
+            "end": 135535,
+            "confidence": 0.7584000000000001,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Micky wer?",
+            "start": 135575,
+            "end": 136456,
+            "confidence": 0.7424999999999999,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Das ist eine Frichheit.",
+            "start": 136476,
+            "end": 137317,
+            "confidence": 0.51725,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Okay, kommen wir zum Thema und darum bin ich eigentlich auch motiviert, weil Andi, beziehungsweise wir haben kurz geschrieben, was wir eigentlich heute machen können und ich habe vorgeschlagen, wir könnten darüber reden, warum man keine Datenbank selber programmieren sollte, worauf Andi mir direkt eine Message geschrieben hat, ich würde gerne eigentlich eine Datenbank selber programmieren und das musst du mir jetzt kurz erklären, warum zum Geier willst du selber eine Datenbank programmieren?",
+            "start": 138158,
+            "end": 163355,
+            "confidence": 0.7685616438356164,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Ja, pass auf, die Sache ist die. Ich will immer das machen, was ich nicht verstehe, mit dem Hintergrund, so viel darüber zu lernen, dass ich es verstehe. Und das Problem dabei ist, wenn ich es verstehe, dann weiß ich ja, wie es funktioniert und dann ist es schon wieder einfach und dann möchte ich es wieder nicht machen. Kommen wir mal zum Thema Datenbanken. Und bei Datenbanken rede ich jetzt eigentlich mal so von ganz klassisch relationalen Datenbanken, SQL, und nicht von Key-Value-Stores oder ähnliches, NoSQL. Das jetzt erst mal nicht. Die sind auch komplex, aber speziell in meinem Kopf geht das so vor, wer jetzt noch nicht so viel mit Compiler-Bau oder ähnlichem zu tun hat, der hat dann immer so die Frage, wie baut man jetzt eigentlich mal so einen Query-Parser oder so einen Query-Optimizer? Wie funktioniert das eigentlich? Also, ich schmeiß da ja eine Zeichenkette rein. Select Sternchen from meine Customer-Tabelle. Und das wird dann zersplittet und ausgeführt. Also, all diese Fragen. Und wenn du so was noch nie gebaut hast und diese Detailfragen gar nicht beantworten kannst, dann ist das, glaub ich, schon eine spannende Aufgabe, die man mal in der Freizeit angehen könnte. Ich glaub, wer hier studiert hat, ich glaub, so was macht man auch im Studium, oder?",
+            "start": 164439,
+            "end": 239084,
+            "confidence": 0.804502325581396,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Ich glaube eigentlich, es ist nicht sehr üblich, aber wir haben zum Beispiel eben selber mal einen Kurs geleitet, da haben wir das probiert. Es war eigentlich so eine Vertiefungsveranstaltung für Datenbanken und wir haben uns dann überlegt, ein Kollege von mir und ich haben uns dann überlegt, wir werfen das komplett über den Haufen und machen das nicht mehr mit Slides und gehen irgendwie in die Tiefe von Datenbanken, sondern wir programmieren mit den Studenten einfach eine Datenbank von Scratch. Und wir haben dann ein ganzes Semester lang eine Datenbank programmiert und am Ende ist dann eine Datenbank nach diesem Semester rausgeputzelt. Eine Hauptspeicher-Datenbank, die aber sehr viele Features gehabt hat und eigentlich ganz gut funktioniert hat. Also das war für mich als Lehrender war das auch wirklich eine coole Erfahrung und ich habe da auch als Lehrender wirklich viel gelernt und mitgenommen.",
+            "start": 240165,
+            "end": 286314,
+            "confidence": 0.7978263888888888,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Als Hauptspeicher-Datenbank meinst du, dass die Daten innerhalb des RAM gehalten wurden und nicht auf Disks präsentiert?",
+            "start": 286754,
+            "end": 291535,
+            "confidence": 0.626470588235294,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Genau, es war keine persistente Datenbank in dem Sinne. Ich glaube, wir hatten dann mal sogar eine Feature für eine Persistenzschicht, aber im Standardfall war es eher darum, eben wie passt man eine SQL-Query, wie macht man dann einen Zugriff, wenn da ein Join ist, wenn man da die zwei verschiedenen Tabellen im Speicher haltet, wie kann man denn so einen Join überhaupt implementieren und so weiter, diese ganzen Geschichten.",
+            "start": 292025,
+            "end": 314911,
+            "confidence": 0.7622000000000002,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Also es war schon eine Datenbank, eine relationale Datenbank, wo ihr dann auch wirklich einen SQL-Query gegengeschmissen habt.",
+            "start": 315231,
+            "end": 321373,
+            "confidence": 0.6014444444444442,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Genau, es war SQL-kompatibel. Du hast dann ein Create-Statement machen können, eine Tabelle anlegen, verschiedene Datenstrukturen, verschiedene Feldtypen und hast dann wirklich SQL-Anfragen senden können, ja.",
+            "start": 321910,
+            "end": 335474,
+            "confidence": 0.7192307692307693,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Und genau davon rede ich. Du sagtest ja auch schon, üblicherweise ist das jetzt nicht Standard. Du kannst bestimmt an den Datenbank-Lehrstuhl gehen und da lachen sie dich sehr wahrscheinlich aus, dass du es noch nie gemacht hast.",
+            "start": 335534,
+            "end": 345397,
+            "confidence": 0.6392894736842106,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Das glaube ich überhaupt nicht, aber gut, nachdem ich da acht Jahre bei einem Datenbank-Lehrstuhl gearbeitet habe, aber anderes Thema. Ja, er redet gern weiter, ja. Also es ist gut, dass du die Universitätsleute so positiv siehst und dass die so viel Wissen haben. Das ist sehr gut.",
+            "start": 345743,
+            "end": 360912,
+            "confidence": 0.7199583333333335,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Also du willst mir also sagen, die Leute, die am Datenbank-Lehrstuhl lehren, wissen nichts über Datenbanken oder was möchtest du mir damit sagen?",
+            "start": 361352,
+            "end": 369017,
+            "confidence": 0.5324782608695652,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Ich glaube, die wissen sehr viel über Datenbanken, aber ich bin mir sicher, dass da 80 Prozent der Leute noch nie eine Datenbank selber programmiert haben.",
+            "start": 369037,
+            "end": 374620,
+            "confidence": 0.7717692307692305,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Ich sag auch nicht dass das ein muss ist aber ist das nicht der weg wie man das am besten lernt.",
+            "start": 375343,
+            "end": 380375,
+            "confidence": 0.8478095238095238,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Es ist zumindestens ein Weg und es ist, glaube ich, ein ganz guter Weg, weil, keine Ahnung, mir hat es zumindest Spaß gemacht und ich glaube, den Studierenden damals auch. Also es ist sicher ein guter Weg, aber man kann natürlich auch vieles in der Theorie lernen und man muss ja auch dazu sagen, wenn man sowas mal selber programmiert hat, sieht man erst, wie hart es ist, das wirklich selber zu programmieren und sonst hat man halt vielleicht zwei, drei Slides und sieht mal so, wie ein Query-Optimizer funktioniert, aber wenn du einen Query-Optimizer selber programmieren musst, das ist ein Riesending und wenn du da keine Ahnung, MySQL zum Beispiel hernimmst, die entwickeln oder Oracle, die entwickeln da seit 30 Jahren an diesen Query Optimizer. Das ist ein riesen Teil. Das ist natürlich nicht vergleichbar mit irgendwas, was du dann mal selber schnell programmierst.",
+            "start": 381253,
+            "end": 421179,
+            "confidence": 0.7548482758620692,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Aber kannst du mir mal ganz kurz einen Überblick geben, was denn so eigentlich passiert, wenn ich eine SQL-Query an eine Datenbank schmeiße? Also du kannst jetzt auch deine einfache In-Memory-Datenbank nehmen, die ihr programmiert habt. Also ich habe jetzt SELECT Sternchen FROM Kunden WHERE Nachname gleich Mülle. So, das schmeiße ich jetzt gegen deinen Server. Was passiert dann?",
+            "start": 421568,
+            "end": 440944,
+            "confidence": 0.6437796610169491,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Also wer an der Uni war und vor allem im deutschsprachigen Raum, kennt vielleicht das Fünf-Schichten-Modell von Datenbanken. Das ist so der theoretische Hintergrund, aber ich will jetzt niemanden damit langweilen und ehrlich gesagt bin ich mir gar nicht mehr sicher, ob ich alle fünf Schichten so herbekomme, ohne jetzt zu googlen. Aber wenn man die Dinge mal durchgeht, dann wird natürlich als erstes mal die SQL-Query einfach zerlegt in die Einzelteile, um überhaupt zu verstehen, was da gesendet worden ist. Dann wird das Ganze natürlich abgeglichen mit einem internen Dictionary. Gibt es diese Tabellen überhaupt? Welche Tabellen haben wir überhaupt? und dann wird es umgewandelt in einen Execution Plan, also wie so eine Query abgearbeitet wird. Das heißt, es wird zerlegt, was muss ich zuerst selektieren, was ist so eine Where-Clause, die ich dann anwenden muss, um das zu filtern. Wenn ich einen Join drin habe, wie funktioniert mein Join, welche Tabelle lade ich zuerst. Da kommt also so ein Baum im Prinzip raus, wie das dann abgearbeitet wird, die SQL Query. Und dieser Baum kann dann optimiert werden. Das ist eigentlich dieser Query Optimizer, also damit es schneller geht. Wenn ich jetzt irgendwie einen großen Join habe mit extrem vielen Tabellen und Daten, die involviert sind, dann hat zum Beispiel die Reihenfolge große Auswirkungen. Welche Tabelle nehme ich zuerst, um den Join aufzubauen? Und solche Dinge werden dann einfach optimiert anhand von internen Statistiken und Heuristiken, die da in der Datenbank stecken. Und dann wird wirklich die Query ausgeführt und die einzelnen Teilschritte einfach ausgeführt, d.h. die Daten werden von der Festplatte in den Hauptspeicher geladen und dann wird z.B. eben der Join abgewickelt, indem man einfach einzeln die Zeilen vergleicht und am Schluss dann wieder ein Result zusammenbaut. Natürlich ist das viel, viel komplexer und da gibt es extrem viel Feinheiten und Optimierungen, aber das ist einmal ganz grob eigentlich der Weg von so einer SQL Query, kein Hexenwerk in dem Sinne.",
+            "start": 441933,
+            "end": 550243,
+            "confidence": 0.785372307692308,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Hexenberg nicht, aber du sagst es ja auch schon, es hat ein paar sehr komplexe Elemente drin. Also hilf mir mal ganz kurz auf die Sprünge, so Begriffe wie Tokenizer, Lexar, in welchem Schritt, den du gerade beschrieben hast, kommen die vor? Das sind so Begriffe, die ich aus dem Studium habe.",
+            "start": 550992,
+            "end": 570225,
+            "confidence": 0.6920192307692308,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Das sind so die klassischen Bausteine, die du brauchst, um eine Query zu zerlegen, zu verstehen. Oder wenn du eine eigene Programmiersprache baust, brauchst du auch sowas. Aber das ist eigentlich gar nicht die Schwierigkeit von der Datenbank, weil das ist SQL, die gibt es auch fixfertig. Die braucht man gar nicht unbedingt selber programmieren. Das ist jetzt wirklich kein Hexenwerk sozusagen, wenn man da eine fixdefinierte SQL-Sprache hat und die zerlegen muss. Viel schwieriger sind darunter die Bausteine. Ich kann da mal ein Beispiel herausgreifen, weil ich gesagt habe, okay, man ladet halt einfach die Daten von der Festplatte in den Hauptspeicher. Aber da fängt es schon mal an bei Datenbanken. Wir sprechen da ja von extremen Datenmengen meistens. Und der Hauptspeicher ist ja nicht so groß wie die Datenbank üblicherweise. Also wenn du Terabyte an Daten gespeichert hast, dann hast du einen kleineren Hauptspeicher. Und da musst du dir überlegen, okay, welche Daten lade ich in den Hauptspeicher? Wann ladest du die in den Hauptspeicher, weil wenn du natürlich die falschen Daten in den Hauptspeicher lädst, dann ist der Hauptspeicher voll und dir fliegen wieder Daten raus, du musst sie wieder von der Festplatte einlesen, alles wird super langsam. Das heißt, da braucht es schon extrem feine Algorithmen, was lädst du denn überhaupt in den Hauptspeicher rein. Dann kommen zu Sachen, du machst dann jetzt einen Join in deinem Hauptspeicher und du musst Resultat-Set wieder generieren. Jetzt hast du womöglich das Problem, dass das Resultat so riesengroß ist, dass es auch wieder gar nicht in den Hauptspeicher passt. Sogar sehr wahrscheinlich, wenn du irgendwie zwei extrem große Tabellen miteinander joinst. Jetzt hast du keinen Platz mehr für das Result-Set im Hauptspeicher. Das heißt, du musst da extrem herum jonglieren. Du kannst natürlich einfach immer wieder aus dem Speicher rauskicken und wieder reinladen, aber das ist natürlich alles andere als performant und dauert dann Jahre, wenn du das nicht optimierst. Und Jahre ist jetzt wirklich so gemeint, also wenn du viele Terabyte an Daten hast und die falsch joinst, kannst du da Stunden oder Tage warten ohne ein Optimizer.",
+            "start": 571050,
+            "end": 683360,
+            "confidence": 0.7638428571428573,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Also wir haben das Gespräch begonnen, dass ich gerne meine Datenbank programmieren würde. Und das würde ich primär in meiner Freizeit tun. Und diese Terabyte von Daten habe ich natürlich nicht. Das bedeutet, diesen Problemen würde ich mich erst mal gar nicht widmen.",
+            "start": 683380,
+            "end": 696923,
+            "confidence": 0.8546046511627906,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Ich glaube, dass das ganz allgemein ein großes Problem ist, dass viele Leute mit so einem kleinen Problem konfrontiert sind und sich denken, das ist ja sehr einfach selbst zu lösen. Und das ist es auch. Wenn ich nur eine Tabelle habe mit 100 Datensätzen, dann ist die Frage, brauche ich überhaupt eine Datenbank oder kann ich das vielleicht anders lösen? Kann ich da was selber machen? Ganz klar. Und das ist dann auch nicht schwer. Aber wenn wir daran denken, das Ding soll mitskalieren und irgendwann kommen dann mehr Daten, dann ist es wirklich schwierig. Und da macht es auf keinen Fall Sinn, selber was zu entwickeln. Da bin ich ganz stark dieser Meinung.",
+            "start": 697420,
+            "end": 730858,
+            "confidence": 0.7895826086956523,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Du hast meine ganze Zeit lang eine sehr provokative Meinung vertreten, dass man bei 100 Datensätzen überhaupt keine Datenbank braucht, sondern eher eine Datei nehmen sollte. Bist du immer noch Fan davon?",
+            "start": 731067,
+            "end": 739489,
+            "confidence": 0.6223749999999999,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Ja klar, voll und ganz. Ich glaube, ich habe den Vortrag auch beim Meetup in Düsseldorf gemacht, wenn mich nicht alles täuscht. Ich kann den auch gerne mal verlinken. Ich bin immer noch der Meinung, der Vortrag hieß, glaube ich, Forget Databases, Use Files. Und ich bin da immer noch ein großer Fan davon, weil in ganz vielen Anwendungsbereichen brauchst du meiner Meinung nach gar keine Datenbank. Und der Grundgedanke ist mir eigentlich gekommen, wie mal in einem Tech-Team eine Diskussion hatte über ein Feature und wir mussten eine Mapping-Tabelle zur Verfügung stellen. Und die Mapping-Tabelle war keine Ahnung mehr, 100.000 Zeilen oder so, wirklich nur zwei Einträge Mapping von ID A zu ID B. Und die Mapping-Tabelle hat sich irgendwie einmal im Monat eventuell sogar seltener geändert. Und wir hatten so die Diskussion, okay, was bauen wir da? Und es war sofort die Idee, ja, wir brauchen eine Datenbank. Wir brauchen einen Ready-Server. Wir brauchen auf jeden Fall irgendwie eine größere Datenbank in einer Infrastruktur. Und ich habe wirklich lange diskutiert mit den Entwicklern, ob wir wirklich eine Datenbank brauchen. Dieses Ding ändert sich einmal im Monat oder zweimal im Monat, wenn es wirklich viel ist. Da ändert sich dann ein Eintrag. Warum nehmen wir nicht einfach eine Datei, speichern CSV-Datei zum Beispiel, speichern dieses Mapping ab, laden das beim Start in den Hauptspeicher, haben eine super performante Mapping-Tabelle, können die verwenden und wenn sich was ändert, dann wird das Ding neu deployt. Weil wenn man ein Problem hat, was einmal im Monat zu deployen, wenn sich was ändert, dann hat man sowieso ein Problem in der CD-Pipeline, CD, CI, CI, CD.",
+            "start": 739529,
+            "end": 837670,
+            "confidence": 0.7988937728937728,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Continuous Integration oder Continuous Delivery, Continuous Deployment, was möchtest du sagen, Wolfgang?",
+            "start": 837710,
+            "end": 842054,
+            "confidence": 0.49908333333333327,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "CI-CD oder? Es ist CI-CD. CI-CD-Pipeline. Der hat Probleme in seiner CI-CD. Dammit. CD-CI? CI-CD. Es ist CI-CD, oder?",
+            "start": 843017,
+            "end": 852769,
+            "confidence": 0.7742105263157896,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "ACDC?",
+            "start": 852849,
+            "end": 855071,
+            "confidence": 0.862,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Okay, whatever. Deployment-Pipeline. Der hat wirklich ein Problem in seiner Deployment-Pipeline. Und darum in so einem Anwendungsfall einfach eine Datei verwenden. Eine Datei muss ich nicht warten. Die habe ich in meinem Git liegen. Die wird mitdeployed in meinem Docker-Container im Idealfall. Die ist super klein. Die brauche ich sowieso im Hauptspeicher am Ende. Warum eine Datenbank? Also für solche Anwendungszwecke meiner Meinung nach Datenbank kompletter Overkill.",
+            "start": 855131,
+            "end": 879801,
+            "confidence": 0.7206865671641791,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Nehmen wir mal diesen Use Case. Wie viele Datensätze würdest du sagen, kann man in einer Datei nehmen? Weil irgendwann geht es halt auch an, weiß ich nicht, an Funktionalitäten wie Suchen oder Modifikationen. Wo würdest du sagen, okay, da ist vielleicht so die Grenze erreicht, wo man mal über eine andere Lösung nachdenken sollte und keine Files mehr nutzen sollte?",
+            "start": 879821,
+            "end": 900432,
+            "confidence": 0.6930163934426228,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Vielleicht sollte ich noch dazu sagen, diese Mapping-Tabelle war also wirklich begrenzt, da sind keine neuen Datensätze dazugekommen. Da hat man nur eventuell mal ein Mapping geändert. Das heißt, man hat genau gewusst, mit was man zu tun hat und die Lookups waren auch immer natürlich auf ID-Basis. Das heißt, die hatte eine ID und hatte dann Mapping für eine ID. Also da war keine Suche drinnen. Da war nichts dergleichen, das war nur Lesezugriff. Und da würde ich schon mal sagen, wenn man wirklich Schreibzugriff hat, dann braucht man natürlich eine Datenbank. Wobei auch da muss ich dazu sagen, wenn man sich ganz viele Applikationen ansieht, dann sind 90% oder 95% der Daten sind oft nur Lesezugriffdaten. Das heißt, die brauche ich eigentlich nur lesend und dann schreibe ich vielleicht irgendwelche Sessions oder irgendwelche Klickdaten. Und ganz oft kann man die eigentlich dann mit einer Datenbank oder mit einem Queuing-System oder mit einem anderen System abfrühstücken und die klassischen lesenden Daten, die ich wirklich lese, Die kann ich eigentlich wirklich im Vorhinein schreiben und statisch vorhalten als Dateien oder wie auch immer, aber ohne Datenbank. Also da brauche ich garantiert keine Datenbank, meiner Meinung nach. Aber wenn ich wirklich Schreibzugriffe habe, viele Änderungen, Transaktionen brauche, mehrere User habe, die gleichzeitig Sachen ändern, diese Dinge, dann brauche ich auf jeden Fall Datenbanken. Also Datenbanken haben schon eine Daseinsberechtigung, gar keine Frage. Aber ich glaube, dass ganz oft die Entwicklerteams viel zu schnell Datenbank schreien, bevor sie überlegt haben, ist es nicht vielleicht einfacher, wenn man irgendeine andere Lösung dafür findet.",
+            "start": 900808,
+            "end": 993483,
+            "confidence": 0.8122230769230767,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Also, dass man hier und da keine Datenmarken braucht und gegebenenfalls eine Datei nutzen kann für ganz viele Lesezugriffe und so weiter. Erwachsene Meinung. Ingenieurtechnisch total langweilig, muss ich zugeben. Ja? Sorry, ein Pfeil schreiben, das kann jeder.",
+            "start": 993985,
+            "end": 1006132,
+            "confidence": 0.7325263157894737,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Ich möchte nochmal dazu sagen, ihr habt ja so einen Test gemacht mit BHB und habt mal auch den Speed verglichen, weil man einfach solche BHB-Files zum Beispiel generiert, die diese Daten gespeichert haben. ist natürlich um Welten schneller, wenn du das direkt einfach liest über PHP-Files mit einem Include noch einfacher in PHP. Das heißt, du kannst die Daten direkt reinlesen. Das Filesystem optimiert dir das Ganze, sozusagen, weil das dann im Hauptspeicher liegt, wenn du das öfters liest. Du brauchst keine Datenbank-Connection. Du hast alles im Filesystem. Filesystem kann dir nie abschmieren. Das funktioniert einfach. Da brauchst du kein Monitoring. Also es ist eigentlich eine super speedige Lösung, die aber kaum Maintenance benötigt. Und das finde ich ist eigentlich auch technisch gesehen sehr spannende Lösung, wenn man sowas schafft.",
+            "start": 1006993,
+            "end": 1055491,
+            "confidence": 0.7785343511450383,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Du hast jetzt gerade von Netzwerk-Connection geredet. Das bedeutet, ich denke mal, du redest von einem SQL-Server. Aber was ist denn, wenn ich jetzt sowas wie SQLite nutzen würde?",
+            "start": 1055531,
+            "end": 1062513,
+            "confidence": 0.5277586206896552,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Ich glaube, das ist sehr spannend, SQLite. Das geht sehr in die Richtung, weil das speichert ja schlussendlich in dem File und hat aber diese ganzen Features, dass du ganzen SQL Queries, Filter, Suche und so weiter drin hast. Also das ist, glaube ich, eine gute Alternative und wäre für den Use Case eigentlich meiner Meinung nach eine gute Lösung. Ja, hast du vollkommen recht.",
+            "start": 1063321,
+            "end": 1082673,
+            "confidence": 0.7614615384615382,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Ich denke auch, dass sehr, sehr viele Applikationen sehr, sehr gut dran wären, SQLite zu nutzen und kein externes MySQL- oder Postgres-Server oder Ähnliches. Weil ich denke, sehr, sehr viele Applikationen müssen nicht über mehrere Server skalieren, werden nur auf einer kleinen Shared-Hosting-Maschine betrieben. Ich meine, Datenbank-Backups sind mit SQLite halt einfach super einfach. Man kopiert einfach die Datei oder lädt sie vom FTP-Server runter. Also, es hat, glaube ich, schon enorm viele Vorteile. Besonders im Webumfeld, wo wir beide, Wolfgang und ich, ja sehr, sehr viel unterwegs sind, wird das viel zu selten genutzt. Siehst du das auch so?",
+            "start": 1083075,
+            "end": 1122859,
+            "confidence": 0.7177300000000001,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Ich glaube auch und das ist ein großes Problem. Da kommen immer Facebook und die sonstigen Vorträge, wenn man bei irgendeiner Konferenz ist, wie skaliere ich Datenbank XY und dann kommen zu Use Cases, die halt die großen Funk Companies haben, also Facebook, Apple. Eigentlich heißt Funk jetzt mit Meta irgendwie anders. Funk, Funk, keine Ahnung.",
+            "start": 1122899,
+            "end": 1141662,
+            "confidence": 0.7964464285714287,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Mangen aber aber da ist die frage ob aber da da ist die frage ob weil bei fangen ist ja microsoft gar nicht drin und es geht ja schon oft die diskussion ob in diesem fangen also jetzt mang wegen meta ob man microsoft nicht langsam mal inkludieren sollte.",
+            "start": 1142263,
+            "end": 1157405,
+            "confidence": 0.8198979591836734,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Also wäre es dann mit Doppel M in Zukunft. Egal, wie auch immer, Funk Companies, die kommen natürlich mit extrem coolen Vorträgen auf so Konferenzen und dann sieht man da, was die alles machen und wie die skalieren können und dann baut man halt dementsprechend auch die Architektur nach und oft ist es halt wirklich, dass eine SQL-Lite oder ein File vielleicht ausreichend wären. Es muss ja nicht immer ausreichend sein, gar keine Frage und man kann vielleicht damit mal starten, man kann immer noch eine Datenbank mit reinnehmen später. Aber ich glaube, man sollte sich einfach nicht an diesen großen Fangvorträgen so klar orientieren. Wir hatten da gerade kürzlich auch einen Tweet über einen Blogpost, verlinken wir auch gerne, der nochmal in eine ähnliche Richtung geht, der beschreibt, dass das ein großes Problem ist, dass natürlich die Entwickler eine coole Engineering-Lösung bauen wollen und sich dann auch sehr oft an diesen Fangvorträgen orientieren. Und dann will man halt nachbauen, was Google baut oder Netflix baut. Aber man bräuchte vielleicht einfach eine SQLite, wie der Andi richtig erwähnt hat.",
+            "start": 1158398,
+            "end": 1219310,
+            "confidence": 0.7951284916201115,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Wir sind da jetzt relativ schnell von File zu SQLite gesprungen. Wolfgang, kannst du mir ganz kurz einen schnellen Abriss geben, was SQLite ist und wo es sich zum MySQL zum Beispiel unterscheidet?",
+            "start": 1219350,
+            "end": 1228952,
+            "confidence": 0.7636969696969695,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Ich würde SQLite eigentlich so erklären, ist eine vollwertige SQL-Datenbank. Das heißt, unterstützt wirklich den kompletten SQL-Syntax, sogar teilweise besser als MySQL. Das heißt, man kann WHERE-Statements schreiben, man kann JOIN schreiben, man kann filtern. Aber die SQLite Datenbank speichert alles in einer Datei weg und ist üblicherweise nur im Single-User-Mode zu verwenden. Das heißt, man hat einen User, der gleichzeitig schreibt in der Datenbank. Aber man bekommt eigentlich ganz gute Performance raus aus dieser Datenbank, obwohl da im Hintergrund einfach ein Pfeil liegt. Aber im Endeffekt auch bei MySQL liegt da im Hintergrund ein Pfeil. Also die sind gar nicht so weit auseinander. SQL spart aber mit den ganzen komplexen Mechanismen, die man halt braucht, um komplexes Rechtesystem, komplexe Multi-User-Environments, also wo wirklich viele User gleichzeitig zugreifen, dass man dann Transaktionen drauf hat und so, das sind natürlich extrem aufwändige Dinge, die man aber ganz oft eben gar nicht braucht, sogar auf einem Webserver, weil schreibend greift meistens nur dieser eine Webserver drauf zu, also das ist vollkommen in Ordnung und da kann man dann auch wirklich eine SQLite verwenden, kann auf die ganzen coolen Features zurückgreifen, braucht aber keine vollwertige SQL-Datenbank, braucht dann auch kein komplexes Monitoring, das kann man sogar teilweise im Prozess mit einbetten, SQLite, und hat da dann also wirklich eine Low-Maintenance-Lösung für eine Datenbank oder für eine Storage-Schicht.",
+            "start": 1229506,
+            "end": 1320789,
+            "confidence": 0.8316741071428574,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Ich habe gerade mal nachgeguckt, du sagtest immer SQLite, aber es wird nur mit einem L geschrieben. Heißt das dann SQLite? Weil bei Wikipedia habe ich leider auch nicht gefunden, wie man das jetzt ausspricht.",
+            "start": 1320829,
+            "end": 1331594,
+            "confidence": 0.7050000000000004,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Ich kenne es nur unter SQLite oder SQLite. Weißt du übrigens, was der Unterschied zwischen, warum manche SQL und warum manche SQL sagen? Oder warum SQL heißt überhaupt?",
+            "start": 1332054,
+            "end": 1341412,
+            "confidence": 0.6803928571428572,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Kenn ich nicht, aber ist das sowas wie China und Kina?",
+            "start": 1342290,
+            "end": 1344670,
+            "confidence": 0.6462727272727272,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Nee, hat nichts mit euch Deutschen zu tun in dem Fall. Aber es hat mit Amerikanern zu tun, weil die sagen meistens SQL. Aber das hat gar nichts mit der Sprache an sich zu tun, sondern die Vorgängerversion von SQL war SQL, wirklich mit S-E-Q-E-L geschrieben. Und das hat sich scheinbar bei vielen einfach eingeprägt und dann kam die SQL-Sprache. Und seitdem sagen einfach vor allem die Amerikaner, sagen SQL dazu. Das ist der ganze Hintergrund. Hat nichts mit Aussprache oder sonstigen Sachen zu tun.",
+            "start": 1345271,
+            "end": 1377100,
+            "confidence": 0.8325058823529415,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Wieder was gelernt. Und danke für den Abriss für SQLite, SQLite, SQLite. Ich weiß nicht, wie man das ausspricht. Wenn das jemand weiß, bitte mal ganz kurz via Twitter oder E-Mail Bescheid geben. Mich würde es gerne mal interessieren. Normalerweise hat man ja bei Wikipedia immer diesen kleinen Absatz über die Lautschrift. Leider hat man das bei SQLite nicht.",
+            "start": 1377120,
+            "end": 1395548,
+            "confidence": 0.7174745762711866,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Wenn wir gerade bei coolen Geschichten sind, warum heißt MySQL MySQL und MariaDB MariaDB?",
+            "start": 1396318,
+            "end": 1402729,
+            "confidence": 0.8654999999999998,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Weil die Person von MariaDB religiös war.",
+            "start": 1402769,
+            "end": 1406696,
+            "confidence": 0.9068571428571428,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Fast, aber auch vorbei. Der Gründer von MySQL, Monty, Nachnamen habe ich leider vergessen, dem seine Tochter heißt My, M, Y. Und nachdem er dann MariaDB gefragt hat, wie er sich zerstritten hat damals mit Oracle, beziehungsweise Sun, hat der MariaDB weggefoggt von MySQL und Maria ist einfach der Name seiner zweiten Tochter.",
+            "start": 1406736,
+            "end": 1432142,
+            "confidence": 0.7760566037735851,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Das ist cool. Also das finde ich schon was. Und Monty ist der Spitzname von Michael Widenius. Interessant, wieder was gelernt. Würdest du generell empfehlen, bei kleinen Applikationen mit MySQL zu starten oder direkt mal SQLite auszuprobieren? Wenn man gar nicht weiß, ob das erfolgreich wird oder nicht. Einfach mal, ich baue mal was und will kurz Datenspeichern.",
+            "start": 1432162,
+            "end": 1454776,
+            "confidence": 0.7140344827586208,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Grundsätzlich soll man das verwenden, wo man am schnellsten zum Ziel kommt, würde ich mal sagen, bei einem kleinen Projekt. Aber wenn SQLite ausreichend ist, würde ich auf jeden Fall auf SQLite setzen. Aber man muss auch sagen, MySQL ist mittlerweile so easy zu verwenden und es ist wirklich nicht komplex aufzusetzen und wenn man das vergleicht, Leider auch immer noch mit Postgres, meiner Meinung nach, aber auch mit einer Oracle oder sowas. Also da sind schon Welten dazwischen. Heutzutage wird MySQL bei jedem Linux-Betriebssystem mitgeliefert. Super einfach aufzusetzen. Ist also kein großes Problem, MySQL zu verwenden, wenn man wirklich die Features braucht von einer ordentlichen Datenbank.",
+            "start": 1455766,
+            "end": 1491122,
+            "confidence": 0.8136542056074766,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Soviel ich weiß, hat SQLite kein Replikationsfeature. Und da gibt es jemand in der Go-Community, der hat was ziemlich cooles gebaut. Nennt sich Lightstream. Das verfolge ich jetzt so ein bisschen. Das ist ein ganz interessantes Konzept. Und zwar ist das Replikation für SQLite. Das bedeutet, du kannst deine lokale SQLite-Datenbank woanders hin replizieren. Klassisch wie Replikationsmechanismen von Postgre und MySQLite auch.",
+            "start": 1491362,
+            "end": 1513866,
+            "confidence": 0.7390322580645158,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Okay, das ist sehr cool. Weißt du, wie das funktioniert?",
+            "start": 1514084,
+            "end": 1516645,
+            "confidence": 0.4782,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Der hängt sich an das Write-Ahead-Log. Und der kann das aber nicht nur in eine andere MySQL-SQLite replizieren, sondern auch einfach mal nach Amazon S3 oder auf dem SFTP-Server oder Ähnliches. Das ist natürlich ziemlich cool, weil da hast du nicht nur ein Snapshot-Packup, so ich kopiere mir das jetzt und hab dann bis zum nächsten Snapshot das Dataloss, sondern du kannst das halt als konstanten Prozess laufen lassen und hast halt jeden Rekord mit drin.",
+            "start": 1516665,
+            "end": 1540656,
+            "confidence": 0.7212236842105263,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Das heißt, es ist dann Row-based Replication und kein Statement-based Replication, oder?",
+            "start": 1540983,
+            "end": 1546368,
+            "confidence": 0.80225,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Das ist jetzt eine gute Frage. Da müsste ich jetzt auch nochmal nachgucken.",
+            "start": 1546408,
+            "end": 1550471,
+            "confidence": 0.8233846153846154,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Vielleicht zur Erklärung, Statement-Based Replication heißt, du sendest wirklich zum Beispiel ein Update-Statement, was 1000 Rows ändert, sendest du als ein Statement weiter zu deinem Replikations-Server oder zu dem replizierten Server. Das heißt, du sendest ein Statement und wenn du Row-Based Replication hättest, dann würdest du diese 100.000 geänderten Datensätze weitersenden an den anderen Servern. Aber wenn du aus dem Log liest, glaube ich, dass es eher Row-Based Replication dann ist.",
+            "start": 1550944,
+            "end": 1578615,
+            "confidence": 0.7544788732394363,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Da kann ich mal von einem kleinen Bug erzählen, den ich mal früher in der Agentur hatte. Und zwar hatten wir einen größeren Kunden und wir hatten ein MySQL Setup mit einem MySQL Write Master und einem Read Replicator und hatten dann Statement Based Replication. Und wir hatten irgendwie Update-Statements, so nach dem Motto Update, meine Kunden-Tabelle, Last Login gleich Now. Und Now ist eine MySQL-Funktion, die sich die aktuelle Serverzeit nimmt und dann halt einfach in die Tabelle schreibt. Dann wurde dieses Statement repliziert und hat das natürlich auf dem Replikations-Server auch gemacht. Und wir haben eine ganze Zeit lang gebraucht, um festzustellen, dass wir unterschiedliche Daten geschrieben haben. Weil Statement-based-Replikation hat zwar ihre Daseinsberechtigung, kann aber auch zu Problemen führen, besonders wenn man solche Funktionen wie now nutzt, weil now nimmt sich zum Beispiel die Zeit, die auf dem Server konfiguriert ist. Das führt natürlich dazu, dass das Login-Date auf dem WriteMaster anders sein kann als das auf dem ReadReplica.",
+            "start": 1578923,
+            "end": 1642019,
+            "confidence": 0.8152345679012343,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Das ist ein klassisches Problem. Glaube aber, dass das gelöst ist seit MySQL 8, weil da automatisch das Now einfach umgeändert wird in die Timestamp oder in die aktuelle Zeit. Und die aktuelle Zeit wird dann als Wert weiter repliziert. Ich glaube, das ist in MySQL 8 geändert worden. Müssten wir aber auch noch mal googlen. Können wir dann aber gern verlinken in den Show Notes.",
+            "start": 1642595,
+            "end": 1665187,
+            "confidence": 0.8336666666666663,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Das sind auf jeden Fall solche Schluppersteine, wie ich viel über MySQL Replikation gelernt habe.",
+            "start": 1665207,
+            "end": 1670290,
+            "confidence": 0.6964666666666666,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Ich glaube Replikation ist sowieso nochmal eine andere Liga und da kommen einfach so viele Schwierigkeiten mit rein dann. Und ehrlich gesagt, zeig mir diese Applikationen, die wirklich so viel, so groß sind, dass die wirklich Replikation brauchen. Oft wird es halt einfach nur als Backup verwendet, da gibt es aber auch andere Lösungen und das ist dann auch nicht so kritisch. Aber dass man mal wirklich mehrere Server braucht und Replikas, das ist schon eh ein seltener Use Case, würde ich mal sagen. und man glaubt gar nicht, wie viel man mit einer MySQL-Instanz eigentlich abfrühstücken kann. Also dieses eine Projekt, was ich da mal erwähnt habe mit dem Führerschein f-online, wir haben ja um die zwei Millionen Requests und ich glaube, von den zwei Millionen Requests geht wirklich jeder Request auch auf die MySQL-Datenbank und das ist überhaupt kein Problem für einen Hardware-Server. Also der ist irgendwie keine Ahnung, mit 20, 30 Prozent CPU ausgelastet, wenn überhaupt, also inklusive Webserver. Das ist überhaupt kein Problem heutzutage. Die MySQL schluckt so viel weg. Also da muss man schon ziemlich große Projekte haben, damit man wirklich Replikation braucht und dann kann man sich, glaube ich, auch eine Mitarbeiter oder Mitarbeiterin leisten, die da einfach gut drauf ist und MySQL dann dementsprechend designen kann und auch konfigurieren kann.",
+            "start": 1670638,
+            "end": 1744250,
+            "confidence": 0.799930875576037,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Die Applikation, die du gerade genannt hast, hast du da irgendwie speziell mal SQL Tuning betrieben oder ähnliches? Oder hast du einfach sagen, ich mach das jetzt einfach so?",
+            "start": 1744563,
+            "end": 1751770,
+            "confidence": 0.4737586206896552,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Na, natürlich. Also das ist, nachdem ich da ja sehr viel Zeit meines Lebens verbracht habe in dieser ganzen Datenbankwelt und SQL-Welt, habe ich natürlich schon versucht, ein paar Optimierungen einzubauen. Aber ob die jetzt unbedingt nötig gewesen wären, wage ich auch zu bezweifeln, ehrlich gesagt. Aber wer sich das mal genauer anschauen will, was daran schwierig ist, dem würde ich auf jeden Fall dieses Buch von Kleppmann empfehlen, Designing Data Intensive Applications, weil da wirklich viel von diesen Sachen eigentlich abgehandelt wird, wie schwierig es ist, wirklich Daten konsistent zu halten und auf mehreren Servern und diese ganzen Geschichten. Also der deckt eigentlich diese ganzen Probleme ab und da sieht man dann eigentlich auch sehr schnell, wie komplex das Ganze ist und warum man vielleicht auf eine gute Oldschool-Datenbank wie MySQL sie mittlerweile ist. Früher war sie eine junge Datenbank noch, wie sie noch gegen Oracle angekämpft hat, aber mittlerweile ist es einfach eine super starke Datenbank und wird in so vielen Bereichen verwendet, dass man dann lieber auf so eine Replikation vertraut, aber trotzdem muss man eben auch gewisse Sachen wissen und Probleme gibt es trotzdem, so wie die Now-Funktion, die Andi erwähnt hat, auch wenn sie vielleicht mittlerweile automatisch gefixt ist, aber es gibt viele solche Dinge, die man beachten muss und darum muss man eigentlich auch, wenn man eine stabile Software verwendet, wie MySQL, trotzdem einiges wissen, wenn man so eine verteilte Lösung baut.",
+            "start": 1752370,
+            "end": 1832222,
+            "confidence": 0.8198949579831932,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Bei dem Buch stimme ich hundertprozentig zu. Das Buch ist wirklich Gold wert. Geht natürlich nicht nur auf Relationale Datenbank ein, nicht nur auf MySQL im Speziellen, sondern generell eigentlich auf alle Datenbankkonzepte, Graf-Datenbanken, Document-Datenbanken, Key-Value-Stores. Was ich an dem Buch super finde, es erklärt alle Datenbanktypen mit den Vor- und Nachteilen. und hat auch immer Beispiele mitgegeben, wann man diese sinnvoll nutzen kann und wie man diese am besten dann ausnutzen kann, also die jeweiligen Features einer Dokumentendatenbank und warum man zum Beispiel dann in diesem Fall die Dokumentendatenbank nutzen sollte und keine Relationale. Also wirklich meines Erachtens nach eine Grundlektüre für jeden Softwareentwickler und jede Softwareentwicklerin, die wirklich mit Datenbank zu tun hat Auch für Leute, die ihre Teamkollegen mal challengen wollen, die dauerhaft sagen, nee, wir müssen jetzt irgendwas NoSQL mäßiges nehmen, weil MySQL nicht skaliert. Damit kann man wirklich mal objektive Gründe ranführen und wirklich das Problem analysieren. Ist auf jeden Fall ein guter Punkt. Verlinken wir natürlich auch in den Show Notes.",
+            "start": 1832402,
+            "end": 1896412,
+            "confidence": 0.8189461077844309,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Und das ist, glaube ich, auch die richtige Herangehensweise. Also wer Probleme hat mit der Datenbank, der sollte sich so ein Buch oder andere Bücher kaufen, wo es um Performance geht und nicht sagen, okay, MongoDB ist die Lösung. Weil es ist halt auch gerne, ja, MongoDB kann verteilen und alles wird automatisch passieren und alles wird gut sein und wir wechseln jetzt von MySQL auf MongoDB.",
+            "start": 1897010,
+            "end": 1916507,
+            "confidence": 0.8284626865671643,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "In der Regel ist eure gewählte Datenbank in der Regel nicht das Bottleneck, sondern eher die Art, wie ihr diese benutzt oder durch fehlende Optimierung. Denn ich habe in meiner bisherigen Karriere schon eine ganze Menge Leute getroffen, die sagen, nee, wir müssen da jetzt ein Caching vorsetzen und das skaliert nicht. Das hätte man auch alles tun können, dann hätte man die Infrastruktur einfach nur aufgebläht und sehr, sehr komplex gemacht. Doch ich denke, wenn man sich mal ein bisschen das Lese- und Schreibverhalten ansieht und vielleicht mal ein bisschen tiefer reingeht, dann kann man eine ganze Menge noch aus der vorhandenen Technologie rausholen, ohne großen Engineeringaufwand zu betreiben. Weil ich denke mir auch immer, es gibt viel, viel, viel, viel größere Firmen, die dieselbe Datenbank nutzen und die skalieren auch. Nehmen wir mal ein Beispiel von MySQL. Der Vergleich mag zwar ein bisschen odd klingen, aber ich meine Facebook nutzt MySQL, Booking nutzt MySQL, GitHub nutzt MySQL. Na klar, die haben ziemlich viel, ziemlich viel Datenbankadministratoren da hinten dran und so weiter und so fort. Und die machen auch nichts anderes. Ja, alles schön und gut, aber. Ich sag mal aus dem Bauch heraus, dass die meisten von uns nie in ihrem Leben auf diese Scale kommen und deswegen gar nicht eine Armee von Datenmarktadministratoren brauchen.",
+            "start": 1917087,
+            "end": 1997507,
+            "confidence": 0.811247706422019,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Man muss natürlich fairerweise sagen, dass diese Firmen auch MySQL in einer anderen Form verwenden. Das heißt, die haben dann Software noch oben drüber, um die ganzen Sachen auf MySQL zu verteilen. Aber es zeigt einfach, dass diese großen Firmen auch immer noch auf die MySQL als Storage Engine setzen, weil sie einfach so stabil, schnell und gut ist. Und auch wenn da drüber viel Magic passiert bei Facebook natürlich, weil die haben wahrscheinlich Millionen von MySQL-Datenbanken mittlerweile oder hunderttausende auf jeden Fall und die machen natürlich viel Magic und Verteilung oben drüber, aber die Basis-Datenbank, wo eure, oder keine Ahnung, ob ihr überhaupt noch Facebook verwendet, aber wenn eure Messages und eure Timeline irgendwo gespeichert wird, dann endet es am Ende in der MySQL-Tabelle. Und da sieht man schon, dass es einfach extrem leistungsstark ist noch dieses Ding. Und warum sollte es dann nicht einfach für ein übliches Projekt leicht ausreichend sein?",
+            "start": 1997923,
+            "end": 2053183,
+            "confidence": 0.8094313725490194,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Also ich meine natürlich, das Tooling, was die da alles schreiben, ist natürlich schon eine harte Nummer und auch Teil deren Erfolg. Also ich meine, nehmen wir mal Facebook. Facebook hat ja sogar eine eigene Storage-Engine geschrieben, MyRocks, die auf RocksDB basiert. Ob man das jetzt braucht, weiß ich nicht. Ich gehe mal stark davon aus, dass zumindest die Systeme, mit denen ich viel gearbeitet habe, da wurde sich noch niemals richtig viel Gedanken gemacht, ob ich jetzt hier InnoDB oder MyISAM nehme. Ich glaube, auch da gibt es schon noch viel Potenzial.",
+            "start": 2053897,
+            "end": 2085061,
+            "confidence": 0.7571182795698921,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "MyISAM ist übrigens jetzt wirklich schon deprecated, also man merkt, wie alt du schon bist, aber es ist definitiv auch eine gute Storage Engine, immer noch für gewisse, natürlich gewisse Use Cases und Loads, aber man kann sie durchaus immer noch verwenden. Was ich zuerst auch noch sagen wollte ist, ich habe mal einen Studenten betreut, der einige Datenbanken verglichen hat und ist dann zurückgekommen für einen speziellen Use Case und ist zurückgekommen und hat gesagt, MySQL ist super langsam und ich habe keine Ahnung mehr, was die andere Datenbank weiß, super schnell. Und dann habe ich ihn irgendwie mal gefragt, ob er irgendwas getweakt hat und so. Wir haben zwar auch besprochen, tweaking, man sollte vielleicht eher die Standardvarianten vergleichen. Aber ich hab halt gefragt, ob er irgendwas geändert hat und er hat gesagt, nein, MySQL einfach standardmäßig installiert. Und man muss halt auch wissen, dass in der MySQL-Standard-Installation, in den meisten zumindestens, immer noch ein Memory-Limit auf 128 MB gesetzt ist. Das heißt, wenn man MySQL in einem Default-Setting installiert, nimmt sich dieses Ding nur 128 MB Speicher, Hauptspeicher. Und dass das dann natürlich langsamer ist als andere Datenbanken, ist auch klar. Also das ist, glaube ich, ein guter Punkt, was du auch erwähnt hast. Vielleicht einfach mal schauen, kann man noch tweaken und da geht es gar nicht um Hardcore-Tweaks, sondern einfach mal, ist das Memory Limit richtig eingestellt, paar klassische Werte, da gibt es auch ein gutes Tool von Percona, da kann man einfach so durch ein Wizard durchklicken und am Ende kommt ein möglichst performante Config raus, Firma SQL, können wir auch gerne verlinken. Also einfach mal solche grundsätzlichen Dinge checken, ob die in Ordnung sind und da kann man dann auch noch extrem viel Speed rausholen und das löst oft wirklich die Probleme schon am Anfang.",
+            "start": 2085101,
+            "end": 2187433,
+            "confidence": 0.7691357615894036,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Ich war jetzt gerade ein bisschen schockiert, dass du gesagt hast, mein ISM ist deprecated, aber in der Tat, ich habe gerade einen Blogpost von Oktober 2016 gefunden, wo drin steht, so langsam wollen wir da mal von wegkommen.",
+            "start": 2187533,
+            "end": 2197877,
+            "confidence": 0.5948717948717948,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "So alt bist du schon.",
+            "start": 2197897,
+            "end": 2198697,
+            "confidence": 0.6100000000000001,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Hast du dich mal intensiver mit Postgres SQL auseinandergesetzt?",
+            "start": 2199563,
+            "end": 2204846,
+            "confidence": 0.45355555555555555,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Nie wirklich persönlich im Detail, aber ich glaube Postgres ist einfach auch eine Vorzeigedatenbank, würde ich es mal nennen, weil die extrem viele Features hat und extrem stark ist, wenn es um den SQL-Standard geht. Das Ganze ist ja von Stonebreaker, diesem Datenbank-Professor, damals entwickelt worden und darum sind auch extrem viele SQL-Features, also irgendwelche Geo-Features oder andere Features, die man in SQL mit einbauen kann, die jetzt MySQL eventuell weniger hat. Die sind da früh schon eingeflossen in Postgres, insofern ist Postgres extrem stark. Und darum wird es eben auch, weil Postgres so leistungsstark ist und so viele Features hat, wird es eben auch gerne als Replacement für Oracle verwendet. Und ich muss sagen, ich kenne jetzt einige Firmen, die einfach von diesen extrem teuren Oracle-Lizenzen weg sind und dann das Ganze mit Postgres umgesetzt haben. Und ich habe jetzt eigentlich von niemandem gehört, dass das irgendwie ein großes Problem war. Es war natürlich ein großes Projekt, gar keine Frage, wenn man eine Datenbank austauscht. Aber ich glaube Postgres kann so ziemlich alles, was eine normale Oracle-Datenbank für sie normalen Anwendungsfälle kann, kann Postgres auch. Natürlich gibt es garantiert irgendwelche Features, die nur Oracle kann und wenn man im ganz speziellen Enterprise-Umfeld ist, mag es da Sachen geben, aber ich bin mir fast sicher, dass für 80 Prozent der Use Cases Postgres garantiert ausreichend ist und Postgres komplett kostenlos einfach ist im Vergleich zu einer Oracle Lizenz, wo man eventuell nach CPUs zahlt, die dann wirklich exorbitant hoch sind.",
+            "start": 2204866,
+            "end": 2299123,
+            "confidence": 0.8010880000000002,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Ich selbst habe noch nie wirklich produktiv mit einer PostgreSQL gearbeitet. Irgendwie habe ich so ein Gefühl, so in den letzten fünf bis sechs Jahren sind die richtig steil gegangen. Die haben richtig, richtig viel gemacht, die Postgre Leute. Ist eine super Sache. Kommen wir mal zu dem Tooling, was Facebook, Booking, GitHub und so weiter nutzen. Was mir da so einfällt ist Proxy SQL oder Vites. Vites kommt glaube ich aus dem Hause von YouTube. Hast du da mal ein bisschen mitgearbeitet? Oder kannst du mal kurz erklären was das eine oder was das andere ist?",
+            "start": 2299853,
+            "end": 2331112,
+            "confidence": 0.6898865979381443,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Also mit Vitess habe ich persönlich noch nie gearbeitet, auch aus dem Grund, weil es wieder für Use Cases gedacht ist, die ziemlich groß sind und darum hat sich halt YouTube auch erfunden oder entwickelt. Und Vitess ist eigentlich genau diese Schicht, die ich auch erwähnt habe von Facebook, die eigentlich so eine Schicht über MySQL zieht und die Verteilung automatisiert. Das heißt, Vitess verteilt dann die Daten automatisch auf x beliebigen tausenden Nodes, wenn man so will. und übernimmt dann die ganze Metric von dieser Verteilung, dass eben Sharding passiert, dass sinnvolles Sharding passiert, dass die Queries dementsprechend umgeschrieben werden und so weiter. Also das macht VITESS und dazu braucht man einfach einen Use Case, der einfach extrem groß ist, wo man extrem viele Daten hat und viele Zugriffe, weil sonst würde man VITESS eher selten benötigen, würde ich mal sagen. ProxySQL ist eine andere Software in einem anderen Umfeld, die vielleicht für mehr Leute interessant ist. Es gibt auch von MySQL selbst ein ähnliches Tool, ist aber meines Wissens nicht kostenlos, wenn ich das richtig im Kopf habe. man möge mich sonst berichtigen. Und Proxy SQL ist, wie der Name schon sagt, einfach ein Proxy zwischen dem Client, zwischen der Software und der Datenbank und der kann dann sehr mächtig eingreifen in die gesamte Kommunikation zwischen dem Client und dem Server. Und das ist auch vor allem für größere Use Cases oder Szenarien dann wieder interessant, wo man einfach mehrere MySQL Server im Hintergrund hat, dass man z.B. Load Balancing macht, der Client connectet einfach zum Proxy SQL, glaubt es ist ein MySQL Server und Proxy SQL macht dann ein ganz dumm z.B. ein Round Robin Verfahren und schickt die Select Statements zu den verschiedenen MySQL Instanzen im Hintergrund. Proxy SQL kann aber auch noch viel mehr. Kann zum Beispiel Queries umschreiben, kann extrem gut Statistiken machen, wie viele Queries kommen von welchen Clients. Man kann da auch mit Kommentarfunktionen gewisse Metadaten senden. Proxy SQL kann die dann verarbeiten. Man kann auch bestimmte Permissions zusätzlich implementieren. Man kann eigene Module sogar schreiben auf Proxy SQL, dass irgendwas mit den Queries passiert und die umgeschrieben werden zum Beispiel. Man kann im Hintergrund MySQL-Server austauschen, man kann Upgrades fahren im Hintergrund, ohne dass die Clients was wissen, weil der Proxy einfach zu den richtigen Servern umleitet im Hintergrund. Man kann klassische Master-Slave Replikationen, wie heißt das mittlerweile?",
+            "start": 2331652,
+            "end": 2486057,
+            "confidence": 0.8197732997481105,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Master ist nun Source und Slave ist nun Replica. Blacklist ist nun Blocklist und Whitelist ist nun Allowlist.",
+            "start": 2486097,
+            "end": 2493840,
+            "confidence": 0.8002777777777778,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Genau, ist eigentlich gar nicht so lange her, dass das geändert worden ist. MySQL war da relativ spät dran. Auf jeden Fall, wenn man in so einem klassischen Szenario, wo man einen write Server hat und einen read Server hat, read replica, dann kann z.B. Proxy SQL auch automatisch erkennen, ok, die selekte Anfragen schicke ich zum read Server und die schreibt Update-Zugriffe, Update-Queries z.B. schicke ich automatisch zum write Server. Also solche Sachen kann Proxy SQL auch. Proxy SQL ist auch ganz angenehm. Man kann zum Beispiel Sharding recht simpel darin lösen. Man speichert zum Beispiel einfach eine Tabelle A auf Server 1 oder Server A und die Tabelle B auf Server B. Und wenn man die nicht in einem Join braucht zum Beispiel, wenn man das im Vorhinein weiß, kann man Proxy SQL auch wirklich so einstellen, wenn da irgendwas reinkommt für Tabelle A, bitte an Server A. Wenn irgendwas für Tabelle B reinkommt, dann sende an Server B. Also man kann da auch sehr transparent solche verteilten Szenarien abbilden damit, ohne dass die Clients Bescheid wissen. Und in größeren Teams ist es ganz praktisch, weil das Entwicklerteam dann einfach direkt auf eine MySQL-Instanz zugreifen kann und irgendwelche Administratoren können dann im Hintergrund transparent Sachen hin und her schaufeln, neue Server hinzufügen, was ausprobieren. Man kann zum Beispiel auch Traffic replizieren. Das ist eine nette Geschichte, habe ich mal gehört von Booking, dass sie das sehr oft machen. Die replizieren zum Beispiel den ganzen Traffic nicht nur oder schicken den gesamten Traffic nicht nur an MySQL, sondern replizieren den gesamten Traffic und schicken ihn zu MariaDB. Und jedes Mal, wenn dann die Oracle-Vertreter mal vorbeischauen, zeigen sie ganz stolz ihren MariaDB-Cluster und sagen, wir replizieren den ganzen Traffic auch auf MariaDB, um zu checken, ob MariaDB nicht auch schnell genug ist für unseren Use Case. Und dann setzt man sich gemeinsam an den Tisch und verhandelt die nächsten Lizenzgebühren für das nächste Jahr. Und das ist scheinbar auch immer sehr wirksam, was ich so gehört habe. Und für solche Szenarien, um was auszuprobieren, ist das natürlich auch ideal.",
+            "start": 2494232,
+            "end": 2619306,
+            "confidence": 0.8139371428571424,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Nennt man sowas Sales Engineering oder wie nennt man das?",
+            "start": 2619346,
+            "end": 2621909,
+            "confidence": 0.5751000000000001,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Ist auf jeden Fall schlaues Verhandeln, ja.",
+            "start": 2621949,
+            "end": 2623430,
+            "confidence": 0.7385714285714285,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Lass uns mal dafür voten, dass man nicht sofort ein ProxySQL Run wie TEST oder ähnliches auf die Infrastruktur schmeißen soll, weil auch das muss man installieren, updaten, maintainen, konfigurieren. Und keiner möchte komplexe Infrastrukturen. Deswegen Wolfgang. Du hast, als du jung warst, mal ein Buch über MySQL geschrieben. Und deswegen möchte ich von dir jetzt mal drei Tipps für alle Hörer und Hörerinnen, die sagen, ich habe Probleme mit meiner MySQL oder meine Teammitglieder sagen, wir müssen die MySQL-Datenbank austauschen, weil sie skaliert nicht. Welche drei Tipps gibst du diesen Menschen an die Hand, die sie mal überprüfen können, um ebenfalls keinen Datenbankwechsel vollziehen zu müssen, sondern einfach mal loslegen und ein bisschen links und rechts an der Schraube drehen und was optimieren.",
+            "start": 2623680,
+            "end": 2675415,
+            "confidence": 0.8209032258064513,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Also ich würde auf jeden Fall anfangen damit mal zu lokalisieren, was ist eigentlich das Problem. Sind irgendwelche Queries zu langsam? Sind es zu viele Queries? Gibt es irgendwelche Write Queries, die zu langsam sind? Sind es die Read Queries? Also man muss wirklich checken, Was sind die langsamen Queries? Das geht ganz einfach, da gibt es das slow query log in MySQL, das kann man aktivieren, dann werden da automatisch Statistiken geschrieben und man kann die auch sehr schnell dann auslesen mit einem MySQL Tool, ist bei MySQL dabei, nennt sich MySQL Dump. slow, da bekommt man dann eine Zusammenfassung, welche Art von Queries, also wenn eine Select Query zum Beispiel mit einem gleichen Muster immer sehr sehr langsam ist, dann bekommt man die einfach aufgelistet und sieht, okay, 3000 Queries werden abgefeuert mit diesem Muster und die sind immer extrem langsam. Dann weiß man mal überhaupt, wo liegt dieses Problem. Und dann kann man sich überlegen, okay, wie kann ich das Problem lösen. Wenn es klassischerweise eine Read Query ist, dann muss man sich näher mit einem Explain Statement, zum Beispiel, können wir auch verlinken, das Explain Statement, sich genauer ansehen, okay, kann man die vielleicht irgendwie optimieren, ist da ein langsamer Join dabei, habe ich da wirklich ein Problem mit meiner Query und kann ich die zum Beispiel schneller machen, indem ich einfach gewisse Sachen ändere oder einen Index hinzufüge in der Datenbank oder vielleicht einen Index lösche sogar, kann unter Umständen auch schneller sein in manchen Use Cases. Also da muss ich dann die Read Query einfach genauer beobachten. Wenn es eine Write Query ist, wenn es zu viele Writes gibt in der Datenbank, Schreibzugriffe, das ist dann natürlich ein bisschen schwieriger. Da kann ich dann in Richtung Replikation gehen. Manchmal ist es aber auch einfach, dass vielleicht zu viele Indizes angelegt sind und Indizes sind halt beim Schreiben extrem langsam, weil ich alle Indizes ständig anpassen muss. Also vielleicht kann ich da einfach bei meinem Schema etwas optimieren, dass der schneller geht mit den Write-Zugriffen und dann kann man halt auch mal grundsätzlich die Config-Werte anschauen von der Datenbank, kann man da vielleicht irgendwas tweaken und dann gibt es immer noch die Option unter Umständen einen größeren Server hinzustellen, das kann durchaus eine sinnvolle Option zu sein, weil wenn ich vielleicht nur ein paar Euro in der Cloud zahlen muss für einen größeren Server, dann würde ich das auf jeden Fall bevorzugen und machen im Vergleich zu einer verteilten Lösung, die dann super komplex wird, wo ich automatisch Monitoring brauche, diese ganzen Verteilungsprobleme auftauchen und das muss man sich nicht unbedingt ins Haus holen, wenn es nicht unbedingt nötig ist. Also diese drei Schritte würde ich einfach mal abarbeiten, zuerst identifizieren, wo liegt das Problem, kann ich meine Read Queries irgendwie optimieren, kann ich meine Write Queries irgendwo optimieren und wenn das Problem dann noch immer besteht, kann ich vielleicht eine Hardwarelösung machen, also Hardware scalen und erst dann würde ich wirklich in die Verteilung gehen. Ist zumindestens das, was mir noch aus dem Kopf, was mir so eingefallen ist aus unserem MySQL Buch, was ich übrigens mit zwei Co-Autor, also mit einem Co-Autor und einer Co-Autorin geschrieben habe.",
+            "start": 2675933,
+            "end": 2861634,
+            "confidence": 0.79790074906367,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Ich denke, mit den Tipps kann man auf jeden Fall eine ganze Menge aus seiner vorhandenen Infrastruktur rausholen und muss nicht mit einer anderen Datenbank aufschmeißen. Ich weiß, eine neue Datenbank ist geil, ist sexy, ist spannend und bringt extrem.",
+            "start": 2862354,
+            "end": 2872551,
+            "confidence": 0.739525,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Viele Probleme, neue Probleme voll.",
+            "start": 2872571,
+            "end": 2874635,
+            "confidence": 0.7651999999999999,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Das Schlimme ist, ihr wisst gar nicht, welche Probleme. Und die Probleme klingeln euch nachts raus. Und wenn ihr jetzt sagt, ah, Andi, ich bin aber gar nicht on Call, das macht das Ops-Team. Diese Leute wollt ihr auch nicht als Feinde. Diese Leute wollen nämlich gar keine neue Datenbank. Und wir sind halt alle agil und DevOps, deswegen arbeiten wir zusammen. Und wenn ihr mal mit ein paar Vorschlägen zu euren Ops-Leuten kommt, hey, lasst uns doch mal hinsetzen, lasst uns doch mal zusammen ein paar Queries anschauen, ein paar optimieren, dann werden die sich sehr freuen und mit euch die Arbeit sehr, sehr gerne durchziehen.",
+            "start": 2875050,
+            "end": 2906412,
+            "confidence": 0.7270747663551403,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Und wer sonst noch Fragen hat, kann sich einfach mal ein Buch kaufen. Na okay, Spaß beiseite. Das Buch ist, glaube ich, mittlerweile ausverkauft und die letzte Edition ist schon ziemlich lange her, also ich glaube, man bekommt es gar nicht mehr.",
+            "start": 2906732,
+            "end": 2918016,
+            "confidence": 0.690738095238095,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Wurde so wenig gedruckt oder war es wirklich beliebt?",
+            "start": 2918036,
+            "end": 2920457,
+            "confidence": 0.7851111111111111,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Ich glaube, es war beliebt, aber wir wollten keinen Update mehr schreiben. Und eigentlich wollte der Verlag da jemanden neuen suchen, der das übernimmt. Aber das war wahrscheinlich so schwierig und seitdem gibt es einfach keine neue Version. Aber wenn ich jetzt eben ein Buch empfehlen könnte, dann das schon erwähnte von Martin Kleppmann. Und wir bekommen nichts bezahlt von ihm, kennen ihn auch persönlich gar nicht. Aber es ist trotzdem ein sehr gutes Buch.",
+            "start": 2920907,
+            "end": 2945529,
+            "confidence": 0.82652,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Ich hatte mal E-Mail-Kontakt mit ihm, er hat mir sogar geantwortet, weil wir ihn für eine Konferenz einladen wollten.",
+            "start": 2946189,
+            "end": 2951331,
+            "confidence": 0.7753157894736843,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Ja, aber er hat dir abgesagt, oder?",
+            "start": 2951371,
+            "end": 2953993,
+            "confidence": 0.4858571428571429,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Leider konnte er nicht, aber er wäre gekommen, weil er das Konzept der Konferenz super fand. Ich bin grad ein bisschen stolz, merkst du?",
+            "start": 2954033,
+            "end": 2959115,
+            "confidence": 0.7023333333333336,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Hat er nicht zuerst zugesagt sogar und dann abgesagt?",
+            "start": 2959613,
+            "end": 2962875,
+            "confidence": 0.5542222222222222,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Nein, er hat leider direkt abgesagt, weil er zu busy war. Aber ich fand's supernett, dass er mir überhaupt geantwortet hat. In 17 Stunden. Also für einen Menschen eines solchen Formats und Karats, also Prospekt. Ich hatte nicht gerechnet, dass ich eine Antwort krieg. Aber wer Martin Kleppmann nicht kennt, Martin Kleppmann war unter anderem einer der Köpfe hinter Apache Kafka. der aktuellen Streaming Plattform, die auf Hacker News gefühlt jede Woche diskutiert wird.",
+            "start": 2962915,
+            "end": 2996038,
+            "confidence": 0.8220270270270271,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Das sagst du jetzt auch nur, weil du in deinem Job viel mit Kafka arbeitest.",
+            "start": 2996159,
+            "end": 3000563,
+            "confidence": 0.4874666666666666,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Auf der Webseite von Kafka stehen die Industrien, wer so alles mit Kafka arbeitet und gefühlt laut deren Webseite arbeitet jeder mit Kafka.",
+            "start": 3000603,
+            "end": 3009872,
+            "confidence": 0.8616521739130434,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Ich habe erstaunlich wenig Erfahrung mit Kafka, muss ich zugeben. Also nicht jeder in dem Fall arbeitet damit, aber ich bin ja auch keine Industrie, insofern ist das okay. Aber man sieht schon, es geht in der Datenbankwelt auch extrem viel weiter. Zum Beispiel Kafka ist ein großes Thema und dieses ganze Change Data Capturing in Kombination mit Datenbanken. Aber da machen wir, glaube ich, nochmal eine eigene Folge dazu, weil das wirklich ein riesengroßes Thema ist. Zur klassischen Datenbank-Welt, die aber, glaube ich, immer noch einen sehr großen Stellenwert hat in heutigen Architekturen, zu Recht, irgendwo muss man seine Daten speichern. haben wir jetzt glaube ich mal so im Groben und Ganzen abgefrühstückt. Würde uns natürlich auch interessieren, wie ihr so Datenbanken einsetzt. Wir haben natürlich jetzt NoSQL außen vor gelassen, würden aber auch gerne mal Rückmeldungen haben, wer setzt NoSQL Datenbanken ein oder klassische relationale Datenbanken. Wie seid ihr zufrieden? Uns würde natürlich auch freuen, wenn ihr das Ganze öffentlich macht, also nicht nur uns eine E-Mail schickt, obwohl wir natürlich froh sind um jedes E-Mail an stetisch.engineeringcuse.dev, aber wir würden uns natürlich auch freuen, wenn wir auf Twitter eine offene Kommunikation haben und andere Leute auch dementsprechend mitdiskutieren können. Und dann hätten wir auch noch eine kleine Bitte am Ende. Nachdem ihr unsere Episoden hört und einigermaßen zufrieden seid, nachdem ihr sie immer noch hört, würden wir euch wirklich mal bitten, vielleicht überlegt euch mal, ob ihr irgendeine Kollegin habt in der Firma Deutschsprachig, die vielleicht auch Interesse hätten an dem Podcast und sagt es einfach mal weiter, dass es uns gibt, sendet vielleicht einen Link. Es würde uns extrem viel helfen, unsere Hörerschaft zu erweitern. Und ich glaube, das bringt auch mehr als jeder Stern auf Spotify, obwohl die natürlich wahrscheinlich auch helfen. Zumindest sagen das alle anderen Podcaster, ich bin mir da nicht so ganz sicher. Aber empfiehlt uns einfach mal bitte weiter, das würde uns wirklich am meisten helfen und gerade jetzt am Start wäre das natürlich super cool. Wenn ihr sonst Vorschläge habt, Ideen oder sonstiges Feedback, was uns natürlich extrem helfen könnte, bitte her damit bei E-Mail, bei Twitter oder jeglichen anderen Kanal.",
+            "start": 3010415,
+            "end": 3138651,
+            "confidence": 0.8036260387811637,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Vielen Dank fürs Zuhören. Und Wolfgang, eine finale Frage. Ist das Lehrmaterial, damals, also die eigene Datenbank innerhalb des Semesters geschrieben ist, eigentlich öffentlich?",
+            "start": 3138671,
+            "end": 3147398,
+            "confidence": 0.6957916666666666,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Kann ich mal abchecken. Wenn das noch irgendwie erreichbar ist, setze ich das natürlich auch gern in die Journals.",
+            "start": 3147418,
+            "end": 3152162,
+            "confidence": 0.7072631578947368,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Das war's von uns. Ich werde jetzt mal zurück auf meinen Schreibtisch gehen und mal eine Datei öffnen für meine eigene Datenbank. Ansonsten bis dahin und bis bald. Ciao.",
+            "start": 3152610,
+            "end": 3163680,
+            "confidence": 0.7829310344827585,
+            "channel": null,
+            "speaker": "A"
+        }
+    ],
+    "confidence": 0.7784849528039962,
+    "audio_duration": 3167.0,
+    "webhook_status_code": null,
+    "webhook_auth": false,
+    "summary": null,
+    "auto_highlights_result": null,
+    "content_safety_labels": null,
+    "chapters": null,
+    "sentiment_analysis_results": null,
+    "entities": null
+}
