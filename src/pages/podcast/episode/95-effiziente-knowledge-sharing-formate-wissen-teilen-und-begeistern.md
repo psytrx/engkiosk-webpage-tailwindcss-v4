@@ -60,8 +60,10 @@ rtlplus: ''
 speaker:
 - name: Andy Grunwald
   website: https://andygrunwald.com/
+  transcriptLetter: A
 - name: Wolfi Gassler
   website: https://wolfgang.gassler.org/
+  transcriptLetter: B
 spotify: https://open.spotify.com/episode/0STTrIK5cygC6TcE6g1HXq
 tags: []
 title: '#95 Effiziente Knowledge Sharing Formate: Wissen teilen und begeistern'
