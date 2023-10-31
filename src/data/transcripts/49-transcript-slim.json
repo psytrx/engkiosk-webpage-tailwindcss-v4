@@ -1,0 +1,1194 @@
+{
+    "language_code": "de",
+    "audio_url": "https://audio1.redcircle.com/episodes/b00e1d5b-eb33-4768-97d5-c38e031c55ad/stream.mp3",
+    "punctuate": true,
+    "format_text": true,
+    "dual_channel": false,
+    "webhook_url": null,
+    "webhook_auth_header_name": null,
+    "webhook_auth_header_value": null,
+    "audio_start_from": null,
+    "audio_end_at": null,
+    "word_boost": [],
+    "boost_param": null,
+    "filter_profanity": false,
+    "redact_pii": false,
+    "redact_pii_audio": false,
+    "redact_pii_policies": null,
+    "redact_pii_sub": null,
+    "speaker_labels": true,
+    "speakers_expected": 2,
+    "content_safety": false,
+    "content_safety_confidence": null,
+    "iab_categories": false,
+    "custom_spelling": null,
+    "disfluencies": false,
+    "sentiment_analysis": false,
+    "auto_chapters": false,
+    "entity_detection": false,
+    "summarization": false,
+    "summary_model": null,
+    "summary_type": null,
+    "auto_highlights": false,
+    "language_detection": false,
+    "speech_threshold": null,
+    "id": "62yovxzmgi-cb31-4fce-9868-d48086d36a49",
+    "status": "completed",
+    "error": null,
+    "utterances": [
+        {
+            "text": "Kennt ihr Software Repository Mining? Wenn nicht, verwendet ihr es vielleicht aber trotzdem schon. Und damit willkommen zu einer neuen Episode im Engineering Kiosk, in der wir in die Metawelt der Softwareentwicklung eintauchen. Andi, der bereits vor Jahren seine Bachelorarbeit zu diesem Thema geschrieben hat, erklärt uns, wo wir heute schon Software Repository Mining einsetzen und welche Informationen in unseren Git Histories versteckt liegen. Denn diese versteckte Information kann uns schon heute im Programmieralltag helfen, aber auch in Zukunft die Basis für mehr Intelligenz im Entwicklungsprozess oder dem Co-Pilot der Zukunft sein. Neben der aktuellen Forschung erklären wir aber auch, wie ihr sofort mit dieser Zukunft für euer Projekt loslegen könnt. Also ab, zurück in die Zukunft zu Andis Bachelorarbeit. Straßen?",
+            "start": 228,
+            "end": 40770,
+            "confidence": 0.8303636363636361,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Wo wir hinfahren, brauchen wir keine Straßen.",
+            "start": 40790,
+            "end": 43131,
+            "confidence": 0.6831428571428572,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "So, an die Episode 49. Bist du schon aufgeregt kurz vor der Episode 50?",
+            "start": 48775,
+            "end": 54506,
+            "confidence": 0.7672142857142857,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Ich wäre aufgeregt, wenn ich 50 Jahre alt wäre, beziehungsweise kurz davor. Aber nein, ich bin nicht aufgeregt, ich bin stolz auf uns.",
+            "start": 54516,
+            "end": 62578,
+            "confidence": 0.7647826086956522,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Ich werde dich noch mal daran erinnern, wenn wir dann mit 50 unsere Episode 348 oder so machen. Also das ist wahrscheinlich noch mehr. Dann können wir richtig feiern. Ich bin gespannt, ob wir dann auch noch auf diesen Computerbild-Themen herumreiten, so wie letztes Mal Docker. Mit dir als Computerbild-Experte haben wir uns mal gedacht, wir gehen heute auf ein Developer-Thema zurück, also wirklich zurück in die Software.",
+            "start": 62638,
+            "end": 87413,
+            "confidence": 0.8316911764705881,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Das heutige Thema ist halt schon eine direkte Nische, finde ich. Oder hast du von dem Thema, worüber wir heute sprechen, vorher gehört, bevor du mich kennengelernt hast?",
+            "start": 87433,
+            "end": 95600,
+            "confidence": 0.7949999999999999,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Traust du dir jetzt den Namen nicht zu sagen von diesem Nischenthema?",
+            "start": 96160,
+            "end": 99721,
+            "confidence": 0.5841666666666666,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Ich wollte dir die Ehre überlassen.",
+            "start": 99741,
+            "end": 101461,
+            "confidence": 0.7653333333333333,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Also meine Frage wäre mal, warum heißt es MSR, Mining Software Repositories und nicht Software Repository Mining? Das wäre ja viel sinnvoller. Warum gibt es da überall nur MSR, MSR Konferenz? Der Wikipedia-Eintrag heißt Mining Software Repositories.",
+            "start": 101861,
+            "end": 118364,
+            "confidence": 0.7724594594594594,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Ich habe keine Ahnung, warum es in dem einen Spektrum Software Repository Mining heißt. Ich habe keine Ahnung, warum es dann ab und zu Mining Software Repository heißt. Vielleicht ist es irgendwie die eine, das eine ist irgendwie das Research-Feld, was andere die Aktivität oder ähnliches.",
+            "start": 118384,
+            "end": 130829,
+            "confidence": 0.6489565217391305,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Du bist mir schon mal ein Spezialist. Die erste Frage kannst du schon mal nicht beantworten. Aber fangen wir mal vielleicht vorne an mit einer leichten Frage. Nachdem ich dich schon angekündigt habe als Spezialist im Software Repository Mining, warum bist du denn Spezialist? Wie kommst du denn in dieses ganze Thema rein? Ist ja jetzt nicht unbedingt so ein Standard-Thema, würde ich mal sagen, was jeder jetzt irgendwie im Auge hat.",
+            "start": 130869,
+            "end": 151763,
+            "confidence": 0.6972638888888888,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Ist kein Standard-Thema, ist eher meines Erachtens ein Nischenthema. Und ob ich darin ein Experte bin, bezweifle ich auch, weil du weißt ja, umso mehr man weiß, desto mehr weiß man, was man nicht weiß.",
+            "start": 151803,
+            "end": 161182,
+            "confidence": 0.7267714285714285,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Du kannst mir auf jeden Fall mal erklären. Für mich bist du schon ein Experte.",
+            "start": 161222,
+            "end": 164923,
+            "confidence": 0.7051333333333335,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Warum ich mich seit fast über zehn Jahren mit dem Thema beschäftige, ist relativ einfach. Ich hab da unter anderem meine Bachelorarbeit drüber geschrieben. Ich hab die gestern noch mal rausgeholt. Über 60 Seiten nur diesem Thema gewidmet. Und da sind ein paar Stunden Research-Arbeit in der Düsseldorfer Unibibliothek reingeflossen.",
+            "start": 164963,
+            "end": 184429,
+            "confidence": 0.8079999999999998,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Ist es schon so lange her, dass es kein Internet gegeben hat, dass du in der Bibliothek warst?",
+            "start": 185105,
+            "end": 189007,
+            "confidence": 0.6563333333333334,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Da ging es ganz einfach um Arbeitsfokus, weil zu Hause konnte ich mich nicht fokussieren, da hätte ich lieber irgendwie World of Warcraft gespielt oder Counter-Strike. Und die Unibibliothek hatte auch bis 24 oder bis 2 Uhr nachts sogar auf, das hat sehr gut gepasst. Und die hatte einen kontinuierlichen guten Kaffeeautomaten.",
+            "start": 189027,
+            "end": 204756,
+            "confidence": 0.7844038461538461,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Das möchte ich mal bezweifeln, aber ja, okay.",
+            "start": 205577,
+            "end": 207998,
+            "confidence": 0.5503750000000001,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Es gab auch noch ein paar wissenschaftliche Bände, die ich dann nur durch meinen akademischen Zugang von der Universität als Buch zur Uni Düsseldorf hinsenden lassen konnte, weil es die irgendwie nur in München gab oder ähnliches, und deswegen war ich halt sehr oft da.",
+            "start": 208628,
+            "end": 223791,
+            "confidence": 0.8737333333333335,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Das klingt so richtig, richtig oldschool, Bücher irgendwo hinsenden lassen. In was für einem Jahrhundert war denn das?",
+            "start": 223831,
+            "end": 230313,
+            "confidence": 0.713,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Das war 2013, aber diese Materialien, diese Konferenzpaper hab ich online so nicht gefunden zumindest nicht mit den wissenschaftlichen zugängen die ich hatte.",
+            "start": 230333,
+            "end": 240256,
+            "confidence": 0.8648260869565219,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Oh jetzt wollten wir das als hippes thema bewerben und jetzt kommst du mit sowas das da nicht einmal im internet irgendwas gibt aber erklär mal worum es eigentlich geht bei dem ganzen thema im blog.",
+            "start": 240316,
+            "end": 249441,
+            "confidence": 0.7510277777777777,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Meines erachtens nach ist das ein super hippes thema ja nur diese ganze research akademik geschichte ist alles ein bisschen eingestoppt meines erachtens nach ist das ein thema was 100 prozent in den schadlöchern steht und wovon wir in naher zukunft viel viel viel mehr sehen werden und zwar.",
+            "start": 249461,
+            "end": 264689,
+            "confidence": 0.8144693877551019,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Und das steht seit 2013 in diesem Startloch, nur um das nochmal klarzustellen.",
+            "start": 265149,
+            "end": 269712,
+            "confidence": 0.6737692307692308,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Eigentlich schon seit 2004, meines Erachtens nach.",
+            "start": 269752,
+            "end": 271894,
+            "confidence": 0.834,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Okay, steht schon lange in diesem Loch. Okay.",
+            "start": 271934,
+            "end": 274676,
+            "confidence": 0.74075,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Software Repository Mining, was ist das eigentlich? Es geht um die Analyse von Daten und Metadaten, die während eines Softwareentwicklungsprozesses entstehen. Also du codest Software, du machst ein Sideproject oder von mir aus auch in deiner Produktfirma oder in deiner Agentur. Und während du dann da irgendeine Website machst, eine App codest und so weiter, fallen halt links und rechts eine ganze Menge Metadaten raus.",
+            "start": 274716,
+            "end": 296010,
+            "confidence": 0.7859846153846152,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Was wäre das zum Beispiel?",
+            "start": 296050,
+            "end": 297851,
+            "confidence": 0.5486,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Ganz klassisch erstmal alles das, was du ins Versionskontrollsystem einsteckst. Einmal der Sourcecode, einmal die SVN-Comment-Message, Git-Comment-Message, deine Bug-Tracking-Issues, Mailing-Listen-Einträge, Code-Review-Daten, welche Kommentare an welcher Zeile in deinem Pull-Request gemacht wurden. an welchem Unit-Test der Jenkins oder GitHub Actions failt, also CI-Daten, Wiki-Einträge, aber auch deinen Firmen-Chat, wie zum Beispiel Slack, oder wenn's eine andere Community ist, IRC, oder wenn's eine größere Community ist, vielleicht sogar eine Open-Source-Community, irgendwie Events, so was wie Meetups und Konferenzen und Co., ja? Also das sind alles die Datenquellen und wenn wir von Software-Repository-Mining sprechen, dann heißt Software-Repository ist jetzt nicht unbedingt das Git-Repo, sondern jeder dieser Datenquellen, Mailinglisten, Code-Review-Daten, wird als ein Software-Repository bezeichnet in dieser Hinsicht.",
+            "start": 297871,
+            "end": 350827,
+            "confidence": 0.7784385964912286,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Und wie, wenn du jetzt zum Beispiel von Meetup sprichst, wer da im Meetup irgendwo gesprochen hat, wie komm ich auf diese Daten, das Version Control System verstehe ich noch, die Git-Daten sind alle verfügbar, aber so externe Events?",
+            "start": 351331,
+            "end": 364087,
+            "confidence": 0.7734615384615385,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Naja, also die Daten sind halt schon verfügbar, ne? Du hast halt ein Tables of Content und allem drum und dran und wer spricht wann wie wo. Der Unterschied ist halt nur, wie die Daten verfügbar sind. Auf der einen Seite hast du natürlich recht strukturierte Daten und dann hast du natürlich die Herausforderung, die ganzen unstrukturierten Daten aus klassischem Fließtext und Co. Also wir bewegen uns hier schon, deswegen heißt es auch Software Repository Mining, wir bewegen uns schon im großen Teil im Bereich Data Mining und da in primär zwei Kategorien Text Mining und Web Mining. Das ist so das Hauptfeld, wo wir uns bewegen. Und da geht's natürlich ... Ich glaub, heutzutage würde man das als Data Analysis oder vielleicht schon Data Science benennen, weiß ich grad nicht. Aber damals gab's halt die ganzen Begriffe noch nicht, sondern da hieß es einfach nur Data Mining. Aber da kommt's auch ein bisschen drauf an, Datenquellen man zur Hand nimmt. Also wenn du jetzt deine Slack-Chats analysieren möchtest, dann bist du natürlich im Text-Mining. Wenn du jetzt zum Beispiel deinen Source-Code analysieren möchtest, dann kannst du auch sagen, okay, du bist jetzt hier nicht im Data-Mining, sondern schon eher so im Bereich statische oder dynamische Code-Analyse.",
+            "start": 364387,
+            "end": 426171,
+            "confidence": 0.7583236714975848,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Und die Events holen wir dann, Web-Mining klassisch, auf irgendwelchen Webseiten, die Speaker von den Events oder Meetups scrollen.",
+            "start": 426211,
+            "end": 433579,
+            "confidence": 0.7383684210526315,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Ja, genau. Also als Webmining wird ja unter anderem auch, du dumpst dir irgendeine API runter und sowas in anderen Data Storage. Also das bedeutet, du meinst das Web nach Informationen und holst dir da die entsprechenden Daten, Informationen, Konferenzseiten, Meetups, Wikidaten, Pull-Request-Daten oder ähnliches.",
+            "start": 434171,
+            "end": 451673,
+            "confidence": 0.7869111111111111,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Und was macht ihr dann mit die Daten im Endeffekt? Dann haben wir mal die Daten gecrawled oder irgendwie explodiert. Aber was macht ihr dann damit?",
+            "start": 452070,
+            "end": 457792,
+            "confidence": 0.7503846153846155,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Jetzt kannst du sagen, okay, Software Repository Mining ist die Analyse von Daten und Metadaten, die während eines Softwareentwicklungsprozesses entstehen. Aber die Frage ist auch, okay, was macht man denn damit? Ja, das Ziel ist damit auch, den Entwicklungsprozess und das Projekt kontinuierlich zu verbessern. Also jetzt nicht das eine Spezifische, sondern im Allgemeinen. Und zwar, wenn man zum Beispiel aus den Daten wirklich neue Erkenntnisse zieht und daraus Aktionen tätigt und daraus was lernt. Die ganz klassischen Anwendungsfälle, also die wirklich heute Standard sind, kann man eigentlich auch sagen, sind Software Repository Minings. Wie zum Beispiel Softwaremetriken. Also wir reden hier von zyklomatischer Komplexität, Endpath-Komplexität oder irgendwie die durchschnittliche Vererbungstiefe. Das sind jetzt eigentlich ganz klassische Metriken, die du durch Software Repository Mining, indem du statische Codeanalyse betreibst, herausfindest und sagst, Diese Klasse oder diese Methode überschreitet einen gewissen Schwellenwert der zyklogrammatischen Komplexität. Nur noch mal ganz kurz zur Info. Zyklogrammatische Komplexität bedeutet, wie viele Entscheidungspunkte innerhalb einer Methode sind. Also das bedeutet, eine Methode hat erstmal eine zyklogrammatische Komplexität von 1 und sind innerhalb der Methode 2 IF-Abfragen, dann ist das eine zyklogrammatische Komplexität von 3. Und umso höher die zyklogrammatische Komplexität ist, umso schwieriger ist es, diese Methode zu maintainen. Ja, zum Beispiel.",
+            "start": 457812,
+            "end": 534339,
+            "confidence": 0.794645631067961,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Und man will dann ein niedrigere erreichen.",
+            "start": 534379,
+            "end": 536581,
+            "confidence": 0.618857142857143,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Genau. Wenn man solche Informationen hat, kann man natürlich innerhalb des Teams oder innerhalb der Firma vielleicht sogar gewisse Regeln feststellen, hey, pass mal auf, wir sollten keine Methode mit einer zyklomatischen Komplexität über 10 haben. Und dann kann man sehen, okay, wie splitten wir diese Methode auf, wie refactoren wir diese, und dann wird die natürlich auch leichter testbar, weil umso mehr Entscheidungsmöglichkeiten da sind, umso schwieriger sind natürlich auch die Testcases, Ich sage nicht, man muss überall eine hundertprozentige Testcoverage haben, aber um eine hohe Testcoverage zu kriegen.",
+            "start": 536601,
+            "end": 564281,
+            "confidence": 0.7903,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Jetzt hast du gerade erklärt, das ist ein Nischenthema, aber die Softwaremetriken werden ja in jedem sinnvollen Team oder professionellen Team, würde ich mal sagen, was ein bisschen größer ist und was von sich hält, wird das Ganze ja eingesetzt. Das heißt, wir haben das eigentlich schon überall.",
+            "start": 564321,
+            "end": 577895,
+            "confidence": 0.7655,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Ja, das ist richtig, aber niemand kennt das als Software-Repository-Mining. Jeder sagt, okay, das ist irgendwie jetzt da und toll. Und das ist auch eher so der Standard-Case, ja, den jeder kennt. Nischenthema bezeichne ich das, weil das ganze Potenzial dieses Themas vornherein nicht ausgelebt wird. Und da kommen wir jetzt gleich zu. Zum Beispiel, welche Anwendungsfälle gibt's denn noch und wo können wir uns mal wirklich den Benefit von diesem Thema abholen?",
+            "start": 578375,
+            "end": 600772,
+            "confidence": 0.8260136986301371,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Was gibt es dann noch abseits dieser Standardsoftwaremetriken?",
+            "start": 601293,
+            "end": 604636,
+            "confidence": 0.8682500000000001,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Ein weiteres Beispiel ist die Projektmethode, wie dein Team Software entwickelt. Sehen wir einfach mal Scrum oder Kanban. Bei Scrum wäre es zum Beispiel eine klassische Velocity, weil wenn du es mal herunterbrichst, hast du Sprints über zwei Wochen. zu diesem Sprint Assigned-to-Tickets, die ihr machen wollt. Und vorher im Planning habt ihr irgendwie die Komplexität von diesem Ticket geschätzt. Und die Summe der Komplexität von den Tickets, die ihr innerhalb eines 2-Wochen-Sprints geschafft habt, nennt man Velocity. Theoretisch könnte man auch sagen, okay, die Velocity ist somit auch Teil vom Software Repository Mining, weil man ja ähnlich wie bei den Softwaremetriken eine Metrik über den Progress der letzten 2 Wochen misst. Die andere Geschichte ist halt zum Beispiel bei Kanban. Bei Kanban versuchst du immer, relativ schnell ein Ticket von links, von der To-Do-Column nach rechts, auf die Done-Column zu schieben. Und du möchtest eigentlich den Speed, den Ticket-Flow, relativ hoch halten. Also relativ kurz halten, dass ein Ticket möglichst schnell von links nach rechts geht. Das ist halt ebenfalls eine Metrik, die du aus dem Software-Repository von deinem Bug-Tracker liest. Und ein dritter Case, vielleicht haben viele Leute schon mal sowas gesehen wie, womit wurde diese Webseite gebaut? Da gibt es so Chrome-Plugins und auch so Webseiten, da kannst du einfach eine URL eingeben und dann steht da, diese Webseite wurde mit WordPress gebaut und dieses WordPress-Plugin und diese jQuery-Version ist da und so weiter. Und dann werden so große Rankings erstellt, wie viel der Fortune-500-Firmen eigentlich jQuery einsetzen oder ähnliches. Das kann man ebenfalls dem Bereich von Software Repository Mining zuschreiben.",
+            "start": 604676,
+            "end": 695846,
+            "confidence": 0.7629280303030301,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Also das sind so Seiten wie buildwith.com ist glaube ich einer der größten, wo man das dementsprechend nachschauen kann und das fällt dann auch eher in das Web Mining, was du am Anfang erwähnt hast, dass man so wirklich Public Data crawlt und daraus Informationen zieht.",
+            "start": 695886,
+            "end": 710315,
+            "confidence": 0.793608695652174,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Ja, genau. Und wenn wir das Ganze jetzt nicht nur mal auf Webseiten betreiben, sondern einfach zum Beispiel auf Libraries, NPM, JavaScript-Libraries, die ihr einsetzt, dann könnt ihr das eigentlich inzwischen auch auf GitHub tun. Ihr habt eine NPM-Library veröffentlicht und ihr wollt wissen, wie viele Leute oder andere Projekte setzen in meine Library ein. Dann könnt ihr einfach mal nach eurem Library-Namen suchen, begrenzt die Suche auf package.json und somit habt ihr ein Listing von Projekten, die eure Library einsetzen, was super interessant ist. Und dann kann man natürlich nochmal weitergehen. Dann kann man sich ansehen, welche Features von eurer Library werden denn eigentlich genutzt. Weil jetzt geht es nämlich ins wirkliche Software Repository Mining. Und jetzt kommt der Punkt, da wo ich sage, es ist ein Nischenthema und das Potenzial ist noch ungenutzt. Nehmen wir mal an, wir gehen auf buildwiz.com. und holen uns die 50 meistbesuchten Webseiten im Internet, die jQuery nutzen. Und wir analysieren diesen JavaScript-Code mit der Frage, welche Funktionalität wird denn von jQuery hier eingesetzt? Und welche? Und viel wichtiger auch, welche eigentlich nicht? Diese Information kann für das jQuery-Projekt natürlich unglaublich sinnvoll sein in Bezug auf, müssen wir oder sollten wir darüber nachdenken, die Performance von dieser Funktionsreihe zu verbessern zum Beispiel. Ja, das kann dir also ein bisschen so den Produktfokus durch Software Repository Mining geben. Und okay, wie sieht denn die nächste Roadmap aus, um einen größeren Impact zu haben?",
+            "start": 710595,
+            "end": 794983,
+            "confidence": 0.7857573221757319,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Okay, diese Metriken und Informationen gehen ja schon relativ weiter ins Produktentwicklungsfeld als für Product Manager zum Beispiel oder wenn ich eben wirklich eine Library für meine User entwickle, Open Source Library zum Beispiel. Aber was für Anwendungsfälle gibt es denn für Teams an sich? Also was abseits dieser klassischen Softwaremetriken, gibt es irgendwie Anwendungsfälle, wo ich das als Team oder als Firma intern besser nutzen kann von meinem eigenen Entwicklungsprozess?",
+            "start": 795288,
+            "end": 824295,
+            "confidence": 0.811295774647887,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Da gibt es etliche Beispiele. Man unterteilt hier zwei große Bereiche. Und zwar schaut man sich ein einzelnes Software-Repository, also eine einzelne Datenquelle an oder schaut man sich mehrere Datenquellen in einem Analysevorgang an.",
+            "start": 824715,
+            "end": 837002,
+            "confidence": 0.7806764705882355,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Und mit Datenquellen meinst du jetzt weder, das kann auch eine Wiki sein oder andere Datenquellen und nicht nur das Software-Repository, also kein GitHub-Repository oder Git-Repository?",
+            "start": 837500,
+            "end": 846865,
+            "confidence": 0.6515,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Ja, ganz genau. Zum Beispiel schauen wir uns die Pull-Requests an oder die Logs vom CI-System oder die Slack-Chat-Protokolle oder Ähnliches. Das ist jetzt eine Data-Source. Wenn wir uns mal nur auf eine Data-Source beschränken, kann man zum Beispiel sagen, okay, wir machen eine ganz klassische Commit-Analyse und aus dieser Commit-Analyse wenn wir jetzt uns die Git-Commit-Messages nehmen und wir haben irgendwie so eine Art Regel, wir prefixen zum Beispiel immer diese Git-Commits mit Bugfakes, Feature, Docs für Documentation oder ähnliches, dann kann man da schon mal erstmal die ersten Erkenntnisse rausziehen, indem man einfach nur ein klassisches Git-Log und ein Grab macht und dann das vorkommende zählt, wie ist eigentlich die Balance in den letzten drei Monaten zwischen Feature-Entwicklung, Bugfixes und Documentation oder welche Dateien in meinem Projekt wurden eigentlich in letzter Zeit vermehrt geändert. Weil, nehmen wir mal die Theorie, eine Datei, die sehr oft geändert wird, hat ein höheres Risiko, existierende Funktionalität zu brechen. Da könnte man drüber nachdenken, wenn an diesen Dateien immer konstant Änderungen sind, sollten wir die Testcoverage für diese Dateien nicht hochdrehen, damit wir sicherer sind, dass wir keine existierende Funktionalität brechen.",
+            "start": 846905,
+            "end": 920587,
+            "confidence": 0.8380582010582015,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Kleine Frage auf der Meta-Ebene dazu, wer schaut sich denn deiner Meinung nach im Team solche Metriken an? Oder wer kümmert sich denn um genau diese Fragestellungen? Weil ich denke da jetzt gerade so an ein Entwicklerteam und die programmieren alles so dahinten und probieren ihre Sprints fertig zu bekommen. Wer kümmert sich denn um so Meta-Themen und checkt da, okay, wo können wir was verbessern? Weil es klingt ja schon nach so einem Use-Case, wo es eher darum geht, so die letzten zwei Prozent irgendwie rauszuholen, gefühlt.",
+            "start": 921362,
+            "end": 949047,
+            "confidence": 0.8107045454545451,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Also nehmen wir mal an, wir machen eine Comet-Analyse, wie viele Bugfixes wir gemacht haben in den letzten drei Monaten. Und nehmen wir mal an, wir analysieren diese Bugfixes und stellen fest, 30% unserer Bugfixes waren Regression-Bugfixes. Also Fixes, wo wir einen Fehler behoben haben, ihn aber wieder irgendwann mal eingeführt haben. Dann weiß ich jetzt nicht ganz, ob es wirklich um die Optimierung von 2% geht. Kommt natürlich auf deine Kadenz drauf an, wie viele Comets ihr habt, wie schnell sich die ganze Sache weiterentwickelt. Kommen wir auf deine Frage, wer sollte sich so was ansehen? Meines Erachtens nach sollten ab-Mid-Level-Engineers wenigstens mal die Hand heben, hey, wär das nicht mal cool, wenn wir uns so was ansehen? Und ab Senior, also Senior Plus, das bedeutet Senior Engineers, Staff Engineers oder Ähnliches, die sollten so was dann schon mal entweder nach vorne treiben oder halt sehr technische Engineering Manager, weil nicht jeder Engineering Manager muss ja einen technischen Background haben. diese leute da würde ich schon die verantwortung sehen sowas nach vorne zu treiben natürlich nicht wenn die hütte brennt und alle sind irgendwie nur am löschen ja dann löscht man natürlich erst für mich zählt das alles so prozessoptimierung und meines erachtens nach ist das auch eine verantwortung auch von senior engineer ich glaube dass.",
+            "start": 949947,
+            "end": 1021583,
+            "confidence": 0.8010737327188935,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Das auch ganz wichtig ist dass das vom team selbst kommt weil auch erfahrungsgemäß sobald da was von der management seite kommt engineering manager seite oder auch womöglich noch drüber oder oder product dann fallen da sofort die Scheuklappen zu und alle Entwickler und Entwicklerinnen haben irgendwie Angst, Überwachung, man wird da irgendwie kontrolliert und da wird sofort geblockt. Also das war meine Erfahrung, immer wenn es in irgendeiner Form in Richtung Metriken geht, egal was es dann eigentlich ist, wird ziemlich schnell geblockt. Da muss man auch auf Manager Seite extrem aufpassen, wenn man sowas einführt oder wie du richtig sagst, im Idealfall kommt es einfach von den Senior Leuten und dann bildet das Team das im Idealfall auch.",
+            "start": 1021603,
+            "end": 1062045,
+            "confidence": 0.8410166666666669,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Aber nehmen wir mal vielleicht einen Use Case, der eigentlich auch zu den Hard Skills von Software Engineers gehört. Und da geht es um Software Architektur. In der Regel hat man in einer Software mehrere Pakete, Module, Packages, Plugins, wie auch immer das in eurer Sprache und in eurem System heißt. Und jetzt geht es um die Architektur. Also man kann natürlich auch sagen, man analysiert die Kopplung von einzelnen Dateien oder von einzelnen Modulen. Wie macht man das zum Beispiel? Hier ist die Idee, wenn für Features oder Bugs häufig die gleichen Dateien angefasst werden, also welche Dateien werden innerhalb eines Commits oft zusammengeändert? Und wenn man dann eine zweite Frage stellt, von diesen häufig zusammengeänderten Dateien, wie viel liegen denn im selben Package und wie viel liegen in verschiedenen Paketen? Paketen, Packages, Module, Plugins, Klassen, Was weiß ich nicht. Mit diesen Informationen können dann Entwicklern feststellen, ob sie hier eine implizite Kopplung haben. Ja, weil speziell für neue Entwickler ist das relativ schwierig. Du kommst in eine neue Codebase und du änderst eine Klasse und du denkst, ah, okay, cool, jetzt ist mein Feature drin. Aber nur der Senior Entwickler weiß, hey, ja, Moment, wenn du diese Klasse änderst, dann musst du aber die Klasse auch da hinten ändern. Und wie soll man das wissen als Neuentwickler? Weil die Kopplung ist ja nicht explizit. Durch so eine Analyse, wie viele Dateien oder welche Dateien werden häufig zusammengeändert, kann man diese impliziten Kopplungen auflösen und vielleicht sogar mal ein bisschen die Architektur verbessern, dass du halt wirklich eine einzelne Verantwortlichkeit pro Klasse oder pro Datei hast.",
+            "start": 1062740,
+            "end": 1151850,
+            "confidence": 0.8095543071161049,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Was glaubst du denn ab wann sowas Sinn macht, ab welcher Teamgröße, weil auch das, um da jetzt wieder herumzureiten auf diesem Optimieren der letzten drei Prozent, das klingt schon sehr sophisticated würde ich sagen und die wenigsten Team achten auf sowas. Jetzt macht es Sinn in einem kleinen Team sich sowas schon anzuschauen oder würdest du sagen okay es macht nur Sinn wenn man irgendwie jetzt 10 Teams hat oder sowas oder ab welcher Größe macht sowas Sinn? Und vielleicht auch da gleich mitgestellt die Frage, wie schwierig ist denn das sowas einzuführen in einem Team jetzt rein von der technischen Seite?",
+            "start": 1152478,
+            "end": 1186091,
+            "confidence": 0.763407766990291,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Ich weiß gar nicht, ob man das anhand der Teamgröße festlegen kann oder ob es nicht eine Kombination ist aus Teamgröße, Abteilungs- und Firmengröße oder auch Wichtigkeit der Software und Größe der Software.",
+            "start": 1186111,
+            "end": 1200318,
+            "confidence": 0.8134242424242424,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Oder vielleicht anders gefragt, wenn ich jetzt so ein 2-3-Leute-Team bin, würdest du dann sowas schon empfehlen? Ich arbeite an dem Projekt immer an derselben Software, an dem Produkt über Jahre.",
+            "start": 1200737,
+            "end": 1212660,
+            "confidence": 0.7639032258064514,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Wenn es eine Codebase von einer Million Zeilen ist, ja, warum nicht? Weil gute Architektur ist auch Selbstschutz. Das heißt ja nicht, dass man nur konstant mit 10.000 Leuten daran arbeiten muss, sondern das heißt auch einfach nur, weil ich in dem Bereich des Codes nicht so flüssig bin, heißt das nicht, dass eine gute Architektur mich nicht hier auch beschützen kann, Fehler zu machen.",
+            "start": 1212680,
+            "end": 1230584,
+            "confidence": 0.7686461538461539,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Das heißt erst ab einer Million Zellen.",
+            "start": 1230904,
+            "end": 1232645,
+            "confidence": 0.8494285714285714,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "War jetzt einfach nur mal ein Indikator für eine große Codebase. Aber es kommt halt auf die Komplexität an, auf die Wichtigkeit und Co. Ist schwierig zu sagen. Also diese Benefits werden natürlich deutlich sichtbarer, umso größer und komplexer die Software ist und umso mehr Leute an diesen Teams arbeiten. Das ist korrekt.",
+            "start": 1232685,
+            "end": 1249471,
+            "confidence": 0.8223207547169811,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Und wenn man das jetzt konkret einführen will, gibt es da Software dafür, wenn da jetzt ein Team losstarten will und sagt, unser Zeug ist eh alles so komplex und überall Abhängigkeiten, ich will da mal einfach ein bisschen Visibility reinbringen in das Ganze.",
+            "start": 1249891,
+            "end": 1262982,
+            "confidence": 0.760431818181818,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Software gibt es wie Noch und Löcher, professionelle, proprietäre Software, aber auch Open Source Software.",
+            "start": 1263102,
+            "end": 1269227,
+            "confidence": 0.7555999999999999,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Was wäre dann so ein Beispiel für Open-Source-Software?",
+            "start": 1269707,
+            "end": 1272509,
+            "confidence": 0.537125,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Also wenn wir jetzt auf die Kopplungen selbst eingehen, mit der Architektur, was ich gerade gesprochen habe, kenne ich nur proprietäre Enterprise-Software, die dann aber auf sprachspezifische Features gehen, wie Java oder ähnliches, die das anhand der Architektur-Diagramme geben. Wenn wir auf die Analyse der Kopplungen sind, gibt es sowas wie CSV-Analysie. Verlinken wir in den Shownotes. Ist so ein kleines Python-Skript, was hier die ganzen Daten, die ganzen Git-Comet-Messages in der SQL-Tabelle packt. Und dann kannst du da ein paar Queries drauffahren und in dem Repository gibt es auch ein paar Example-SQL-Queries.",
+            "start": 1272549,
+            "end": 1306018,
+            "confidence": 0.7152795698924728,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Das heißt aber ich muss mir das schon selber zusammenbauen wenn ich da jetzt zumindestens opensourcemäßig unterwegs sein will und jetzt nicht irgendein enterprise tool einsetzen will da gibt es jetzt nicht sowas wie sonar cube das mir das alles einfach out of the box liefert.",
+            "start": 1306678,
+            "end": 1320531,
+            "confidence": 0.7557391304347827,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Deswegen sag ich es ist noch ein Nischenthema es ist noch nicht in der in der globalen community angekommen. Ich selbst entwickle ein ähnliches Seitenprojekt, was sich mit sowas beschäftigt, was sowas einfach macht, aber auch nur, weil ich mich mit diesem Thema einfach sehr verbunden fühle und sehr viele Passion darüber habe. Aber es ist jetzt nicht so, hier, kauf dieses Tool und geht darüber. Es gibt eine Firma, die nennt sich Betergia, die macht sowas professionell für große Open-Source-Projekte, wie zum Beispiel OpenStack oder Wikimedia oder ähnliches. Die sind da schon sehr gut, weil die ist auch eine Truppe von ehemaligen Universitäts-Researchern und Doktoren, die sich nur mit diesem Thema beschäftigen. Aber kommen wir mal ein bisschen weg wieder von diesen klassischen Architektenrollen. Was fast jeder schon mal gesehen hat, ist ein Feature, was GitHub eigentlich macht. Und zwar stellt euch vor, ihr macht einen neuen Pull-Request und ihr wisst nicht, wer ist denn die geeignete Person, um einen Pull-Request hier zu reviewen. Ganz klassisch ist, du schaust dir ein Git-Blame an und schaust nach, wer hat denn diese Datei oder diese Zeile oder diese Methode die letzten zwei, drei Male eigentlich geändert.",
+            "start": 1320551,
+            "end": 1382018,
+            "confidence": 0.7825282051282051,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Moment, ich hol mir da immer meinen Kollegen, der jeden Bully-Request mit Looks good to me approves. Das ist wohl viel der schnellere Weg.",
+            "start": 1382638,
+            "end": 1391185,
+            "confidence": 0.747375,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Ja, das ist super. Ich glaube, ihr solltet auch mal eine Commit-Analyse machen, wie viel Bugfixes ihr macht. Aber das macht zum Beispiel auch GitHub. Wenn ihr ein Pull-Request macht und ihr habt ein Repository, wo ein bisschen Leben drin ist, dann schlägt euch GitHub die richtigen Leute vor, die diesen Pull-Request reviewen sollten, anhand der Änderungen, die an der Datei oder an den Zeilen gemacht wurden. Das ist zum Beispiel auch Software-Repository-Mining, weil in der Regel diese Informationen aus dem Git blamen oder aus dem Git-Comet-Log.",
+            "start": 1391525,
+            "end": 1418309,
+            "confidence": 0.7629425287356324,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Okay, jetzt hast du einige Dinge erklärt, die es schon gibt, die teilweise auch gemacht werden. Gibt's irgendwas next level, wo du sagst, das wäre cool oder da kennst du jetzt keine Umsetzung, aber es wäre cool, wenn man sowas aus den Informationen rauslesen könnte und auch dann dementsprechend nutzt?",
+            "start": 1418644,
+            "end": 1436517,
+            "confidence": 0.8085200000000001,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Also gibt's noch nicht und Next Level ist eine schwierige Kategorisierung, weil die meisten Themen in dem Bereich Software Repository Mining sind halt wirklich wahre Research-Themen und da haben sich dann irgendwelche Doktoranden damit beschäftigt und haben irgendwo enorm komplizierte Python-Skripte rumliegen, die dann die Analyse machen, aber die sind dann in der Regel nicht frei zugänglich. Du kennst das ja am besten mit Research-Ergebnissen und Research-Code, der ist meist nicht reproduzierbar.",
+            "start": 1437057,
+            "end": 1462489,
+            "confidence": 0.7789305555555556,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Also da muss ich jetzt mal einspringen. Nicht reproduzierbar, das kann sein, aber mittlerweile recht viele Konferenzen verlangen eigentlich, dass man den Source Code online stellt, verfügbar macht. Ich hoffe mal, das ist bei dieser MSR, bei der Mining Software Repository Konferenz, die es schon ziemlich lange gibt. Und zwar gibt es die schon seit 2004 in dem Fall. Läuft immer noch. Nächstes Jahr ist in Melbourne zum Beispiel. Und ich hab mir da mal auch angeschaut, was da so gemacht wird auf der Konferenz. Ist ganz interessant für alle, die jetzt weniger wissenschaftlichen Background haben. Man kann einfach auf diese Konferenz nochmal gehen und unter dem Program findet man meistens dann eine Auflistung von den ganzen Themen und Papers, die dort präsentiert worden sind. Also erst schreibt man ja ein Paper, 8-seitig, 16-seitig, je nachdem, zu den ganzen Bereichen BDF und dann präsentiert man das auf diesen Konferenzen. Und da gibt es so Themen wie, ganz hip natürlich, auch GitHub Copilot, Analysen dazu, was die verändert haben, oder auch so Dinge wie Analyse von Python Notebooks, wie die die Python-Programmierung verändert haben. Also es sind viele solche Metathemen, weil es halt bei dem Thema auch einfach um Metainformationen geht, aus den verschiedensten Datenquellen. Und da gibt es wirklich interessante Papers aus den verschiedensten Bereichen und Themen, Bereichen und meistens kann man sich das PDF dann auch jeweils durchlesen, um da die Details noch rauszuholen und im Idealfall ist dann auch ein GitHub-Link dabei zum Source-Code und ist natürlich meistens halt alles sehr experimentell, muss man auch dazu sagen. Also bei einer großen Firma das dann einfach zu klonen und einzusetzen, das spielt sich meistens nicht, aber man kann zumindest mal reinschauen, was da so gemacht wird.",
+            "start": 1462789,
+            "end": 1559635,
+            "confidence": 0.8035958188153305,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Bei diesem ganzen Research-Code habe ich immer das Gefühl, man muss genauso viel Arbeit da reinstecken, um das Ding ans Fliegen zu kriegen, wie wenn man sich eine Lösung selbst überlegen würde. Weil oft hat man irgendwie so, also das ist natürlich eine Lüge, weil diese Researcher packen unglaublich viel Arbeit da rein, ja, aber ich sag nur so, wenn ich ein GitHub-Repository sehe, mit 20 Python-Files, mit jeweils über 400.000, 500.000 Zeilen, und da ist dann immer so ein Readme dabei, und ich hab keine Ahnung, was ich hier mache, oder was, wie, wo gestartet werden muss, dann ist es halt schon echt schwierig, das zu reproduzieren.",
+            "start": 1560235,
+            "end": 1589553,
+            "confidence": 0.7620925925925925,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Du musst es so sehen, alle Entwickler wollen sowieso immer alles selber programmieren. Stell dir vor, die Researcher würden das auch noch schön programmieren, dann wäre das auch alles umsonst, weil jeder Entwickler sagt, ich mach das sowieso selber, wir machen das mit einem anderen Tool, wir haben ein anderes internes Toolset. Das machen wir selber. Also die Idee ist ja bei Grundlagenforschung, wobei das wird jetzt mal nicht als Grundlagenforschung bezeichnet, aber trotzdem bei Grundlagenforschung die Idee mal zu überprüfen, ob sie funktioniert und dann den ganzen Markt reif zu machen, das ist eine Aufgabe der Wirtschaft, muss man auch ganz klar sagen.",
+            "start": 1589913,
+            "end": 1622000,
+            "confidence": 0.7975769230769234,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Aber kommen wir mal zu dem heißen Scheiß und was ich gerne sehen würde, was ich so noch nicht gesehen habe. Und zwar geht es hier um die automatische Versionierung von Software. Stell dir mal vor, du hast eine Software und du bringst sie jetzt in Version 1 raus und deine Software 1.0.0 und deine Software folgt dem Semantic Versioning.",
+            "start": 1622040,
+            "end": 1641514,
+            "confidence": 0.7726333333333335,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Klär mal schnell, was Semware genau ist für alle, die es nicht kennen.",
+            "start": 1641554,
+            "end": 1644776,
+            "confidence": 0.7610769230769232,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Semantic Versioning befolgt einem Versionsschema, wie du deine Software versionierst anhand der Änderungen. Du hast drei Zahlen. Major Version, Minor Version, Bugfix Version. Zum Beispiel 2.0.0. Wenn du jetzt bei der Version 2.0.0 nur einen Bugfix machst, wäre deine nächste Version 2.0.1. Wenn du jetzt ein neues Feature hinzufügst, wäre deine nächste Version 2.1.0. Wenn du jetzt zum Beispiel ein Breaking Change machst, dann wäre deine nächste Version eine 3.0.",
+            "start": 1645156,
+            "end": 1678278,
+            "confidence": 0.7113285714285716,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Das heißt, Breaking Changes sind nur auf der ersten Ziffer, oder?",
+            "start": 1678288,
+            "end": 1681530,
+            "confidence": 0.7752727272727271,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "So, Semantic Version. Da gibt es noch ein paar mehr Regeln, wann du welche Versionsnummer, Major, Minor, Bugfix, wann du die erhöhst. Der Punkt ist aber, dass du anhalt der Versionsnummer sehen kannst, wie kritisch dein Upgrade ist oder ob du da mehr Arbeit reinstecken musst oder ähnliches.",
+            "start": 1681570,
+            "end": 1696760,
+            "confidence": 0.7123958333333333,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Ist übrigens alles ganz schön auf samware.org definiert, beschrieben auf Englisch, auf Deutsch, inklusive einer Sprachendefinition, was das genau ist, wie man das definiert. Also ist super genau definiert und hilft mir als User zum Beispiel extrem weiter, weil ich sofort an der Nummer sagen kann, ist das ein Problem für mich oder nicht. Und wenn man sich darauf verlassen kann, kann man sofort sagen, okay, das kann ich einfach drüber spielen, Patch Version, sollte kein Problem sein.",
+            "start": 1697264,
+            "end": 1723390,
+            "confidence": 0.782551282051282,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Passt aber bitte auf, nicht jede Software benutzt Semantic Versioning. Beispiel, die Datenbank MySQL ist unglaublich berühmt dafür, in der Bugfix-Version, also in der letzten Versionsnummer, irgendwelche Breaking Changes reinzupacken oder irgendwelche Features zu debriketen oder was weiß der Geier, nicht automatisch. Die folgen einfach keinem Semantic Versioning. Also schaut da bitte vorher nach, welche Software von euch Semantic Versioning benutzt.",
+            "start": 1723970,
+            "end": 1745907,
+            "confidence": 0.77527868852459,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Also drei Zahlen in der Versionsnummer heißt noch lange nicht, dass das Semantic Versioning ist.",
+            "start": 1746234,
+            "end": 1750638,
+            "confidence": 0.7145333333333336,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Wenn wir jetzt aber Semantic Versioning mit Software Repository Mining verbinden, dann könnten wir ja in der Theorie sowas machen wie die automatische Bestimmung der Versionsnummer für deine zukünftige Software Version, für dein zukünftiges Software Release anhand der Changes zum letzten Release. Weil, nehmen wir mal eine ganz normale Programmiersprache, PHP. Und wir machen zum Beispiel eine Library mit einem externen Interface. Und jede Programmiersprache hat ja eine gewisse Syntax und gewisse Sprachfeatures. Und je nachdem, welche Sprachfeatures man nutzt oder nicht nutzt, kann man halt sagen, okay, das ist für das externe Interface ein Breaking Change oder nicht. Nehmen wir mal an, wir haben eine Library, die ein excellentes Interface und ihr fügt einen neuen Parameter an eine Methode hinzu. Und dieser Parameter hat keinen Default-Wert. Dann ist das automatisch ein Breaking-Change, weil jeder, der diese Methode nutzt, muss beim Upgraden einen neuen Parameter hinzufügen. Das bedeutet, man kann nicht einfach die Library upgraden und hat alle Bugfixes drin, sondern man muss seine eigene Code anpassen. Wenn die Sprache aber Default-Werte für neue Parameter supportet, wie zum Beispiel jetzt PHP, und man editt einen Default-Wert, falls dieser Parameter nicht bei den Methodenaufruf übergeben wurde, dann ist das kein Breaking-Change.",
+            "start": 1750658,
+            "end": 1827147,
+            "confidence": 0.79856,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Oder du verwendest JavaScript, da kannst du einfach alles machen, weil es eh komplett egal ist. Aber in Java wäre das natürlich ein Problem, wenn du da einfach ein Parameter hinzufügst.",
+            "start": 1827167,
+            "end": 1836818,
+            "confidence": 0.7351612903225805,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Natürlich muss man das alles pro Sprache irgendwie implementieren. Zum Beispiel Golang hat jetzt keine Default Values für Parameter. Da muss man natürlich schon gucken, welche Sprache man da nutzt. Aber dadurch kann man natürlich so ein Vorschlagsmechanismus bauen. Mein letztes Tag war auf Comet 4711 und ich bin jetzt auf 5011. Analysier doch mal bitte alle Pull-Requests, die da reingegangen sind und sag mir doch mal, schlag doch mal bitte vor, was wäre die nächste Versionsnummer anhand des Semantic Versioning, anhand der Kontrolle dieser Regeln. Natürlich ist das alles ein bisschen komplizierter, wenigestens ein Edge Case und was ist, wenn ich eine externe API habe und was ist, wenn meine Applikation irgendwelche Dateien schreibt und die Struktur des geschriebenen Inhalts ändert sich von XML nach JSON und so weiter. Alles richtig, diverse Edge Cases kann man halt nur sehr schwer abbilden, aber es geht ja nicht darum, dass man der Technologie 100 Prozent vertrauen soll, sondern, dass man wichtige Dinge nicht übersieht. Und das, eine automatische SemWare-Analyse, habe ich so noch nicht gesehen. Fände ich aber mal ziemlich cool.",
+            "start": 1836858,
+            "end": 1900201,
+            "confidence": 0.8062944444444449,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Weißt du, ob es das im wissenschaftlichen Bereich schon gegeben hat irgendwo?",
+            "start": 1900241,
+            "end": 1903022,
+            "confidence": 0.5495833333333332,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Ich meine, ich habe da mal ein Paper zugelesen.",
+            "start": 1903062,
+            "end": 1904983,
+            "confidence": 0.8272222222222223,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Ja, vielleicht haben wir jetzt mit GPT und so weiter in Zukunft Möglichkeiten, dass man da vielleicht ein bisschen Intelligenz auch reinbringt.",
+            "start": 1905977,
+            "end": 1913885,
+            "confidence": 0.8453181818181815,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Aber das geht halt schon relativ in die strukturierte Datenanalyse, weil du hast ja relativ strukturierte Daten, weil du hast ja einen Abstract Syntax Tree, wenn du deinen Code auseinandernimmst, du hast ja Tokens und so weiter und so fort. Das kannst du schon relativ gut machen. Wenn wir aber mal so ein bisschen in die Textmining-Ecke gehen, dann kannst du natürlich ganz andere Themen machen, wie zum Beispiel eine Hot-Topic-Analyse, und die finde ich sehr interessant. Stell dir mal vor, du hast eine Community, oder eine Community kann auch deine Firma sein, und du hast eine ganze Menge an Text, das bedeutet entweder Mailing-Listen oder Chat-Protokolle, IRC oder Slack oder MetaMouse oder was es da nicht alles gibt. Und jetzt nimmst du dir einfach mal den ganzen Content aus den Public Channels, jagst ihn durch so einen Textprozessor, wo erstmal alle Stoppwörter, alle Artikel und so weiter, also erstmal die ganzen Füllwörter rausgenommen werden, Maps die ganzen Wörter gegen eine technische Wortliste, um einfach mal die relevanten Wörter für dein Produkt oder für deine Firma rauszufiltern und merkst auf einmal, hey, wieso sprechen wir eigentlich super oft in den letzten drei Wochen über Vererbungshierarchien oder über die Logging Library. Es kann halt so ein Indikator sein, dass das ein Thema für Unverständnis ist, sozusagen. Wenn da ziemlich viel Kommunikation um ein Thema ist, dann könnte man drüberlegen, okay, muss ich dazu eine bessere Architektur machen? Muss ich dazu mehr Tutorials machen? Muss ich das leichter gestalten? Muss ich dafür Knowledge Sharing Sessions machen? Oder, oder, oder.",
+            "start": 1913945,
+            "end": 2000405,
+            "confidence": 0.7709299610894946,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Ich habe so einen ähnlichen Anwendungsfall mal in dem Wiki gesehen. Ich habe leider vergessen, welches Wiki das war und ob es nur eine wissenschaftliche Umsetzung war. Vielleicht weiß es noch jemand. Und zwar war die Idee, dass man zu Wikieinträgen, wo du ja die normale Dokumentation machst, zu deinen grundlegenden Dingen, deiner Software oder anderen Bereichen, dass man zusätzlich unter dem Wikieintrag passende Mailinglisten-Einträge anzeigt. dass man zum Beispiel den Support-MitarbeiterInnen auch die Möglichkeit gibt, zu sehen, was läuft denn aktuell in den Mailinglisten zu diesem Thema ab. Also, dass man nicht nur die Grunddokumentation hat, sondern diese lebende Dokumentation, die ja inhärent in Mailinglisten, in Diskussionen vorhanden ist, dass man die automatisch unter diesen Wikieintrag reinpackt und man hat dann so auch zusätzliche Informationen abseits von der Standarddokumentation.",
+            "start": 2000905,
+            "end": 2051201,
+            "confidence": 0.8410846153846153,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Und das ist ein unglaublich schönes Beispiel für einen Anwendungsfall von kombinierten Software-Repositories, von kombinierten Data-Sources. Weil das, was du da gerade ansprichst, ist nämlich die Königsklasse von Software-Repository-Mining. Ich hatte gerade gesagt, das Ziel von Software-Repository-Mining ist, die Erstellung von Software und von Software-Projekten zu vereinfachen. Stell dir mal vor, du bist in deiner IDI und hast rechts so ein Kontext-Window. Und dieses Context-Window zeigt dir anhand der Datei, anhand der Methode, anhand der Klasse, in der du gerade bist, Links zu Wiki-Pages an, Links zu Open Issues im Bug-Tracker, Links zu relevanten Slack-Threads und ähnliches. Wenn du das alles miteinander verknüpft, ähnlich wie du gerade gesagt hast, du hast ein Wiki mit den Mailing-Listen-Einträgen, Das ist ja wohl Königsklasse, wenn du zu der Zeile oder zu dem Bereich, in dem du gerade programmierst, mehr Kontakt kriegst. Was sind die Fallstricke, was sind die aktuellen Probleme oder was ist der aktuelle Produktfokus hier gerade?",
+            "start": 2051601,
+            "end": 2107018,
+            "confidence": 0.7875935483870972,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Also es geht eigentlich immer weiter in Richtung GitHub Copilot, dass man automatisch Informationen zur Verfügung gestellt bekommt. Vielleicht, falls es jemand noch nicht weiß, GitHub Copilot versucht mit einem sehr umfangreichen Language Model vorzuschlagen, was man denn als nächstes programmieren soll oder macht eine Autovervollständigung der Kommentare anhand des Codes. Also versteht wirklich den Code und probiert Zusatzinformationen aus dem Netz zu geben. Also vielleicht, dass man in Zukunft gar nicht mehr auf Stack Overflow gehen muss, sondern das eben automatisch bei CoPilot angezeigt bekommt in seiner IDE. Aber was natürlich CoPilot nicht kennt, sind die ganzen internen Datenquellen. Weil ganz oft ist es ja hinter einer Mauer versteckt in der internen Firma. Und das ist aber auch leichter zugänglich, weil man braucht da kein extrem komplexes Machine Learning Model dahinter, sondern vielleicht auch nur eine normale Suche. Und wenn man das schon schafft, intern alle Datenquellen sinnvoll anzuzapfen, dann kann man da natürlich auch dementsprechend die Entwicklung beschleunigen intern.",
+            "start": 2107038,
+            "end": 2168022,
+            "confidence": 0.8336149068322984,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Ja, der Unterschied zum GitHub Copilot zu der kontextbasierten Anzeige in IDEs ist natürlich der, dass GitHub Copilot meines Erachtens nach eher für den Erstellungsprozess ist. Das bedeutet, du willst etwas Neues schreiben oder neue Funktionalitäten hinzufügen. Und die kontextbasierte Anzeige in existierendem Code ist halt was ganz anderes, wenn du Bugfix machen möchtest, wenn du die in existierende Logik ändern möchtest. Deswegen ist das halt schon nicht wie GitHub-Copilot, sondern da geht's halt wirklich um das Teure, die Maintenance von Software und die Änderung von Software. Weil ich denke, sehr guter Software- und sehr guter Software-Code ist es, wenn Leute mit weniger Kontext, mit weniger historischem Wissen Änderungen sicher durchführen können. Und ich denke, eine kontextbasierte Anzeige von IDEs mit Links zu Wikipages, Issues und Slackthreads, also Sheds, kann da schon sehr helfen.",
+            "start": 2168400,
+            "end": 2222190,
+            "confidence": 0.8233134328358208,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Das heißt eigentlich diese Anzeige, die ich zum Beispiel in VS Code habe, vermute es ist ein Plugin, es ist gar nicht direkt VS Code, aber dass ich ein Git Blame bei jeder Zeile angezeigt bekomme zum Beispiel, das wäre dann eigentlich schon Software Repository Mining, wenn ich das richtig sehe. Und es geht schon in diese Kontextrichtung, die du jetzt erklärt hast.",
+            "start": 2222850,
+            "end": 2241943,
+            "confidence": 0.7832698412698411,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Das ist ein Start, ja. Aber was ich zum Beispiel mal cool finde, wenn du es mal weiterdenkst, stell dir mal vor, du wärst Engineering Manager und stell dir mal vor, dein Ziel ist es, dein Team weiterzuentwickeln und zu einem performanten Team zu kriegen. Das ist hoffentlich einer deiner Ziele.",
+            "start": 2241963,
+            "end": 2256317,
+            "confidence": 0.6575294117647058,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Übrigens haben wir da in Episode 44 auch darüber gesprochen, der Weg zum hochperformanten Team, aber mehr auf einer Meta-Ebene.",
+            "start": 2256795,
+            "end": 2263158,
+            "confidence": 0.769,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Ein Indikator für ein gut funktionierendes Team könnte sein, wie viele Iterationen pro Pull-Request gemacht werden müssen. Weil wenn es nämlich konstant Knatsch und Zankerei in Pull-Requests gibt, wie man etwas zu lösen hat und das ist nicht richtig und dies und das und jeder Pull-Request braucht irgendwie 25 Ping-Pongs, dann könnte man sagen, okay, wir müssen mal irgendwie über unsere Arbeitsweise reden. Wenn man jetzt einfach mal sagt, wir messen einfach die Review-Cycles und die Iterationen pro Pull-Request und feststellt, hey, immer wenn eine Person im Team ein Pull-Request macht, gibt es da ganz viel Knatsch und irgendwie sind wir da bei 25 Iterationen, dass man sich diesen Fall mal genauer ansieht und einfach mal Mentoring beginnt und einfach mal ein bisschen tiefer schaut, okay, was ist denn hier los? Haben da zwei Leute im Team vielleicht ein bisschen Knatsch?",
+            "start": 2263199,
+            "end": 2307304,
+            "confidence": 0.780113475177305,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Das könnte man gut verbinden, vielleicht dann auch mit einem Check, ob die Pull-Requests immer nur LCTM looks good to me sind und einfach durchgewunken werden. Das wäre so der andere negative Case.",
+            "start": 2307504,
+            "end": 2319192,
+            "confidence": 0.7401818181818182,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Also was, das bedeutet aber durch Software Repository Meinung können wir hier auch das Team hochcoachen, ja, oder beziehungsweise man findet Bereiche, wo vielleicht man von technischer Ebene das Team ein bisschen hochcoachen kann, die vielleicht gar nicht so aus dem Engineering Management, aus der Vogelperspektive immer so sichtbar sind. Natürlich kann man da weitergehen. Da gibt es zum Beispiel eine Studie über den Linux-Körnel, wo jemand ein Modell entwickelt hat, um die Frage zu beantworten, würde mein Patch im Linux-Körnel gemerged werden? Und wenn ja, wie schnell? All solche Analysen kann man natürlich machen, um das Team nach vorn zu bringen. Und das finde ich halt tierisch interessant. Da würde ich aber jedoch bitten, nicht nur auf die blanden Zahlen zu gucken, sondern wirklich mal ein bisschen Empathie da reinzubringen und sich die einzelnen Fälle anzusehen, ob das jetzt ein Ausreißer war oder ob das jetzt hier Standard ist.",
+            "start": 2319232,
+            "end": 2364858,
+            "confidence": 0.80244,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Wie stehst du zu dem ganzen Thema, irgendwelche Ranglisten aus diesen Daten zu erstellen oder das auch öffentlich zu machen?",
+            "start": 2365517,
+            "end": 2373044,
+            "confidence": 0.8616000000000001,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Was meinst du damit genau?",
+            "start": 2373084,
+            "end": 2373805,
+            "confidence": 0.3034,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Ja, dass ich zum Beispiel dann auch öffentlich stelle, bei wem die Pull-Requests schneller gehen, wer am meisten contributed, solche Dinge.",
+            "start": 2374234,
+            "end": 2381256,
+            "confidence": 0.7244285714285714,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "In einer Firma finde ich das schwierig, weil diese Zahlen dann sehr schnell missbraucht werden können. In einem Kontext von einem Open-Source-Projekt könnte es sehr sinnvoll sein, wenn man zum Beispiel sogenannte Leaderboards erstellt, wer contributed. Angenommen, wir packen so ein bisschen Gamification drauf. und sagen, okay, für jeden Girlfriend-Pull-Request, für jeden Code-Review und ähnliches gibt's ein paar Punkte, und da kann man sagen, okay, pro Monat hat diese Person irgendwie so und so viel Punkte gesammelt. Und warum finde ich das in so einem Kontext recht nützlich? Weil man zum Beispiel im Open-Source-Kontext dann mit diesen Leuten ein Gespräch anfangen könnte und vielleicht so neue Core-Contributor finden kann, oder vielleicht sogar neue Mitarbeiter, oder einfach diese Leute mal zu Sprints oder Hackathons von Open-Source-Projekten einladen kann.",
+            "start": 2381296,
+            "end": 2425047,
+            "confidence": 0.802291338582677,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Kennst du irgendwelche Open-Source-Projekte, die das aktiv betreiben?",
+            "start": 2425287,
+            "end": 2427907,
+            "confidence": 0.4992500000000001,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Ja, TYPO3, das Contact Management System, geschrieben in PHP, betreibt das und auch ganz gut. Und eben, soviel ich weiß, machen die auch die Entdeckung von Experten dadurch. Die schauen sich dann hier und da ein bisschen an, okay, wer ist in welcher Komponente am aktivsten. Da können wir auch mal so ein Leaderboard unten verlinken.",
+            "start": 2428432,
+            "end": 2445882,
+            "confidence": 0.7843035714285719,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Ich bin ja immer beeindruckt, dass es Typo 3 immer noch gibt. Aber wenn ich auf dieses Leaderboard schaue, da gibt es schon Companies, die sehr viel contributen.",
+            "start": 2446129,
+            "end": 2454979,
+            "confidence": 0.7705000000000002,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Man muss vorsichtig sein von Gamification und Leaderboards. Man muss sich immer bewusst sein, dass jedes System und jedes Punktesystem getrickt werden kann, also gesheeted werden kann. Und in geschlossenen Teams, in Organisationen ist das, glaube ich, auch die falsche Metrik, auf die man gucken sollte. Aber in Homesource mit dem Ziel, neue Core-Container zu finden, finde ich das schon ein interessanter Anwendungsfall.",
+            "start": 2455019,
+            "end": 2476573,
+            "confidence": 0.8288095238095238,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Nachdem du jetzt schon mit einem negativen Punkt angefangen hast, weil man diese Daten eben missbraucht in gewisser Weise. Gibt es andere Herausforderungen oder Probleme oder negative Punkte von dem ganzen Bereich?",
+            "start": 2476613,
+            "end": 2488435,
+            "confidence": 0.83671875,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Den negativen Punkt, den ich gerade angesprochen habe, war ja in der Auswertung, in der Interpretation dieser Daten, die man da jetzt herausgewonnen hat. Bei der erstellung dieser ergebnisse gibt es natürlich ein paar herausforderungen auf der einen seite ist die datenqualität nicht so wie ich sage mal klassische software engineers sie erwarten würden auf der einen seite ist es natürlich toll weil ein großteil dieser daten ist halt unbiased ja also source code hat halt kein bias nach links und rechts Comment Messages drehen sich in der Regel auch nur um die Sache.",
+            "start": 2488455,
+            "end": 2518574,
+            "confidence": 0.8008617021276595,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Was man natürlich aufpassen muss, ist glaube ich, wenn man die ganzen Sachen zählt, weil ganz viele Metriken basieren natürlich auf diesen harten Zahlen und wenn man halt einfach nur etwas misst, wie viel Comment Messages oder wie lange etwas gebraucht hat, dann kann es natürlich immer in die falsche Richtung gehen. Also auch da ist glaube ich auf der moralischen, ethischen Seite schon auch immer darauf Acht zu geben, meiner Meinung nach.",
+            "start": 2518614,
+            "end": 2541152,
+            "confidence": 0.8666164383561643,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Alles richtig, da sind wir aber wieder bei der Auswertung der Daten, wie man diese betrachtet. Ich rede eher von der Datenqualität, die wir gerade analysieren. Und da dreht sich es halt in der Regel um Unbiased Daten. Das ist positiv, meines Erachtens nach, aber die Herausforderung ist hier, dass die meisten Daten wirklich noisy sind, unstrukturiert und gegebenenfalls sogar unvollständig. Besonders wenn wir von unstrukturierten Daten wie Mailinglisten, Bug-Tickets, Chat-Einträgen oder Comet-History sprechen von einem Projekt, was sehr, sehr lange existiert. Was vielleicht sogar schon mal Migrationen gemacht hat. Das bedeutet, wo früher Comet-Messages auch Subversion sind und die dann in Git überführt wurden und dann später vielleicht man auf Conventional-Comets umgestiegen ist und so weiter. Also wenn man wirklich eine verschiedene und historische Struktur hat, schwierig, da muss man halt sehr viel Arbeit ins Data Cleaning stecken oder halt die Skripte sehr sophisticated schreiben, dass man auch mit unseren unsäuberen Daten arbeiten kann.",
+            "start": 2541792,
+            "end": 2598448,
+            "confidence": 0.8385483870967738,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Und ich glaube, es ist halt wichtig, einfach zu wissen, dass man mit unsauberen Daten arbeitet und dann halt dementsprechend auch mit den Daten so umgeht. Aber das ist halt auch so ein klassisches Problem. Umso weiter das nach oben wandert in der Hierarchie, zum Beispiel in der Management-Hierarchie, umso weniger ist dann klar, woher kommen die Daten eigentlich. Und plötzlich wird das irgendwie als Fakt angesehen, obwohl das irgendwelche noisy Daten als Grundlage hat. Und da muss man, glaube ich, aufpassen, einfach was man mit den Daten macht und dass man das halt auch richtig kommuniziert. Aber ich glaube, es wäre schade, wenn man sagt, okay, ich habe noisy Daten, daher verwende ich sie gar nicht. Man muss halt einfach wissen, dass sie noisy sind und dementsprechend auch damit umgehen.",
+            "start": 2598895,
+            "end": 2633219,
+            "confidence": 0.8169236641221376,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Ich finde halt, die geben in der Regel einen guten Kontext und sind gute Indikatoren.",
+            "start": 2633519,
+            "end": 2637122,
+            "confidence": 0.6981333333333333,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Das ist so ähnlich wie mit dem GitHub Copilot oder GPT oder auch Stack Overflow. Man muss halt wissen, was dort steht. Man darf nicht allen blind vertrauen. Man muss halt schon noch selber den Überblick haben und das Wissen haben, dass man das dementsprechend verifizieren kann.",
+            "start": 2637162,
+            "end": 2652172,
+            "confidence": 0.8078510638297872,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Eine andere Herausforderung ist der Data Storage zur Analyse. Es ist zum Beispiel, also es macht in der Regel Sinn, deine unstrukturierten Daten aus dem Kompositor rauszuziehen und in irgendeine Datenbank zu packen, um dann da weitere Queries draufzuführen. Was jetzt abhängig von deiner Analyse gegebenenfalls keinen Sinn macht, ist alles immer in relationale Datenbanken oder alles immer nur in Graf-Datenbanken zu packen. Klassische Sum-Funktionen und Gruppierungsfunktionen und Co. sind natürlich in relationalen Datenbanken sehr gut aufgehoben. Analyse von sozialen Netzwerken sind zum Beispiel dann eher ein besserer Anwendungsfall für Graf-Datenbanken. Und wenn man jetzt hier gegebenenfalls sogar mit derselben Datenquelle mehrere Analysen fahren möchte, dann muss man natürlich schon zwischen mehreren Datenbanken hin und her schaffen, was natürlich schon eine Herausforderung sein kann.",
+            "start": 2652444,
+            "end": 2694447,
+            "confidence": 0.8075725806451617,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Oder man löst es halt einfach mit einem klassischen Data Warehouse oder irgendeiner Analyse-Datenbank, wo man die Sachen rein importiert aus den verschiedenen Datenquellen durch einen ETL-Job, wie es halt heutzutage so üblich ist. Und dann kann man darauf dementsprechend die Analysen fahren.",
+            "start": 2694707,
+            "end": 2708998,
+            "confidence": 0.7885813953488373,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Wo natürlich das Wort einfaches hier ganz stark in Anführungszeichen ist. Weil das ist nicht umsonst ein eigener Job, deswegen ist es in der Regel ja nicht so einfach. Meines Erachtens nach die größte Herausforderung bei der Analyse von diesen Data Sources, von diesen Software Repositories, ist jedoch das Cross-Linking. Das bedeutet, wie verbinde ich eigentlich ein Git-Comet mit einem Bug-Ticket, mit einem Shed-Eintrag? Weil nur durch die Verbindung kriegst du halt auch den wirklichen Mehrwert, wie diese verschiedenen Data Sources zusammenhängen. Natürlich kann man jetzt sagen, ja, aber jeder meiner Git-Commits hat ja immer eine Ticket-ID. Kurze Frage, ist das wirklich so? Und da muss man sich halt schon wirklich ein bisschen Gedanken machen, wie man diese Data-Sources miteinander verbindet. Eine Ticket-ID in Git-Commit ist natürlich eine gute Nummer, weil dann weiß man, okay, da ist dieses Ticket in Jira. Eine Verbindung zu Wikis und Chats, sowas wie Slack, ist natürlich dann schon ein bisschen schwieriger. Sowas kann man zum Beispiel mit Links über Pull-Requests lösen, wenn dann viele Links geshared werden und dann auf die Dateien, auf die Commits gehen. Also da muss man sich natürlich schon auch einen Graph aufbauen und je nachdem, welche Datasource man da hat.",
+            "start": 2709419,
+            "end": 2772090,
+            "confidence": 0.7994228855721398,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Und heutzutage ist es auch, glaube ich, relativ schwierig, an Daten teilweise überhaupt dran zu kommen. Gerade wenn man jetzt an Slackchats oder so denkt, ist es ja nicht mehr so einfach, dass man überhaupt Zugriff auf die Daten hat. Wenn das irgendwelche SaaS-Tools sind, die irgendwo in der Cloud liegen, dann hat man da meistens gar keinen einfachen Zugriff. Und das macht es natürlich dann umso schwieriger, noch gewisse Sachen zu verlinken.",
+            "start": 2772130,
+            "end": 2793058,
+            "confidence": 0.7546301369863017,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Generell würde ich halt auch die möglichen Gefahren als eine Herausforderung sehen, aber das ist jetzt nicht spezifisch zu Software Repository Mining, sondern das ist eher so spezifisch generell auf Metriken. Nicht einfach irgendwelchen blinden Zahlen vertrauen, sondern immer fragen, okay, woher kommen diese Daten, was machen diese Daten und wie relevant sind diese Daten überhaupt und welche Entscheidungen und Aktionen zieht man denn aus diesen Daten, ja?",
+            "start": 2793098,
+            "end": 2815155,
+            "confidence": 0.837720588235294,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Ich glaube, das ist ein ganz klassisches Problem mit Daten und Zahlen, weil man irgendwie gefühlsmäßig sofort Zahlen vertrauen will, aber man hat keine Ahnung, woher die kommen. Und dann kommt irgendein Manager und sieht auf einer Ampel, dass das von grün auf gelb geswitcht hat aus irgendeiner Metrik. Und man hat keine Ahnung, woher die Metrik kommt, aber scheinbar ist es kritisch und es muss jetzt behandelt werden. Also da ist wirklich, glaube ich, auch viel Kommunikation und auch Education nötig, dass man den Leuten wirklich klar kommuniziert, woher kommen die Daten. Das ist ganz, ganz wichtig, meiner Meinung nach.",
+            "start": 2815735,
+            "end": 2847603,
+            "confidence": 0.7887128712871283,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Du sagst jetzt gerade immer die bösen Manager, aber so ist das ja nicht, weil auch, Jeder Mensch kann falsche Entscheidungen aufbauen.",
+            "start": 2847643,
+            "end": 2854584,
+            "confidence": 0.6082727272727273,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Ja, ja, Manager sind auch Menschen, das stimmt schon.",
+            "start": 2854604,
+            "end": 2856525,
+            "confidence": 0.16933333333333334,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Aber auch ganz klassische Softwareentwickler können sagen, das steht da, die Endpasskomplexität ist aber jetzt hier viel zu hoch und so weiter. Ja, vielleicht gibt es da auch einen Grund für einen Co, ja, und ein bisschen Kontext dahinter zu setzen, das ist jetzt nicht nur eine Manager-Sache, sondern das ist generell die Gefahr, wie interpretiere ich die ganze Thematik. Man muss ja auch sagen, sich einfach auf eine Zahl, die auf einem Screen steht, zu verlassen, ist auch sehr einfach, ja? Und es ist anstrengend, darüber nachzudenken, wie stark man dieser Zahl vertraut. Von daher, das ist halt einer der größten Gefahren. Und ich denke auch, dass dies zur Akzeptanz beiträgt. Aber da haben wir ja schon gesprochen, umso eher diese ganzen Prozessverbesserungen aus dem Team herausgefordert werden, desto größer könnte die Akzeptanz dafür sein.",
+            "start": 2856565,
+            "end": 2899026,
+            "confidence": 0.7987426470588237,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Okay, wenn jetzt Leute in irgendeiner Form mit Software Repository Mining oder Mining Software Repositories beginnen wollen, hast du irgendeinen Startpunkt, wo man mal reinschauen kann, starten kann, irgendwie vielleicht auch Software findet? Also alles, was vor allem abseits von diesem klassischen Static Code Analysis und so weiter ist, weil dazu gibt es ja genug Listen und Möglichkeiten, was im Netz zu finden.",
+            "start": 2899392,
+            "end": 2922137,
+            "confidence": 0.810047619047619,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Meines Erachtens nach solltet ihr mal erst selbst starten, ohne jetzt irgendwie eine große Software darauf zu schmeißen.",
+            "start": 2922557,
+            "end": 2927602,
+            "confidence": 0.7614444444444444,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Gute Möglichkeit, um ein Side-Project zu starten. Also wer ein Side-Project sucht oder vielleicht auch ein Produkt, eigentlich die ideale Produktkategorie.",
+            "start": 2927622,
+            "end": 2936510,
+            "confidence": 0.7831428571428573,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Versucht einfach nur mal euer Git-Log mal zu parsen und dann einfach mal eine Datenbank reinzuhauen und dann einfach nur mal schauen, okay, was kriegt ihr denn da raus, dann spielt ein bisschen rum. bevor ihr dann irgendwie ein Tool da drauf schmeißt, weil diese Tools können sehr komplex sein, besonders in einem Branching-Modell und wie Git. Und dann beschäftigt ihr euch eigentlich nur, das Tool zu verstehen, anstatt die ersten Analysen rauszukriegen. Deswegen würde ich vorschlagen, Fangt einfach an, ein paar JavaScript- und Python-Skripte zu schreiben und einfach mal ein bisschen drüber zu iterieren. Natürlich gibt es auf GitHub eine ganze Menge Tools in diesem Bereich. Sehr viel von Researchern. Metrix Grimoire ist zum Beispiel so eine Toolchain, die analysieren auch Daten von meetup.com und von Mailinglisten und können das importieren in eine relationale Datenbank wie Postgre und MySQL. Oder es gibt so ein Projekt, das nennt sich Chaos. Das ist bis kurz für Community Health Analytics in Open Source Software. Die machen auch sowas. Deren Ziel ist es halt, Metriken und Metrikmodelle rund um Open Source Communities zu erstellen. Die Firma Bitergia macht da eine ganze Menge und hat auch super viel Open Source Projekte, um Dashboards für Kibana herzustellen und so weiter und so fort.",
+            "start": 2936550,
+            "end": 3003232,
+            "confidence": 0.7421538461538464,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Und wer das Startup von morgen entwickeln will, schaut mal bei der MSR-Konferenz rein, verlinken wir natürlich auch in den Shownotes. Da gibt es dann wirklich den neuen heißen Scheiß. Und wenn man daraus ein Produkt baut, ich glaube, da hat man dann durchaus große Companies, die da Interesse daran haben als Kunden.",
+            "start": 3003732,
+            "end": 3019100,
+            "confidence": 0.8324339622641509,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Kommen wir zurück zum Anfang des Podcasts.",
+            "start": 3019140,
+            "end": 3021681,
+            "confidence": 0.6218571428571428,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Genau, ich wollte dir noch die Frage stellen, was war eigentlich deine Bachelorarbeit? Aber Andi, nur im Twitter-Format, 160 Zeichen.",
+            "start": 3022101,
+            "end": 3027023,
+            "confidence": 0.6465,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Der Titel hieß Software Repository Mining Konzept und Potenziale und eigentlich habe ich mehr oder weniger.",
+            "start": 3028516,
+            "end": 3034782,
+            "confidence": 0.8290624999999999,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Ihr seht es leider nicht, aber Andi hat es jetzt gerade irgendwo links aus dem Schreibtisch rausgezogen. Hast du die immer herumliegen oder hast du die jetzt als Vorbereitung für diese Episode rausgesucht?",
+            "start": 3034822,
+            "end": 3043510,
+            "confidence": 0.7392727272727272,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Ich habe die zur Vorwartung dieser Episode rausgesucht. Und man kann eigentlich sagen, meine Bachelorarbeit ist das Podcast-Transkript ein bisschen ausgeholt. Natürlich mit viel mehr akademischen Links und dies und das und warum das sinnvoll ist und Studien und blablabla. Eigentlich habt ihr gerade meine Bachelorarbeit in Kursform gekriegt.",
+            "start": 3043970,
+            "end": 3061415,
+            "confidence": 0.7579591836734694,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Du weißt jetzt, dass jetzt alle nach deiner Bachelorarbeit suchen und die lesen wollen.",
+            "start": 3061455,
+            "end": 3064696,
+            "confidence": 0.674142857142857,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Ich glaube gar nicht, dass die öffentlich ist.",
+            "start": 3064736,
+            "end": 3065876,
+            "confidence": 0.727875,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Ja, vielleicht können wir ja da was drehen und die veröffentlichen.",
+            "start": 3066496,
+            "end": 3069357,
+            "confidence": 0.5220909090909092,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Wir schauen mal was wir da machen können aber ja vielleicht ist das mal wieder ein grund meinen blog anzuschmeißen kommen wir wieder zurück zum anfang des podcasts warum denke ich, dass dies ein nischen thema ist was bald kommt ich denke die welt wird immer komplexer ich denke irgendwann haben wir alle verstanden wie wir kommunikation teams und firmen strukturieren und dann suchen wir nach weiteren potentialen, mehr Performance aus unseren Teams, aus den Communities, aus Sourcecode rauszuholen. Und ich denke, dass die Metriken rund um Software Repository Mining enorm helfen, um zum Beispiel soziale Netzwerke zu analysieren, um die richtigen Leute an die richtigen Projekte zu setzen, um problematische Softwareareale zu finden und frühzeitig zu mitigieren. Sehr, sehr viele Startups gehen so ein bisschen in die Richtung, aber ich denke, dass zum Beispiel sehr viele große Open-Source-Projekte auch von so Hot-Topic-Analysen Vorteile rausziehen können, um die nächste Product-Roadmap zu designen. Wozu sie denn jetzt zum Beispiel mehr Content veröffentlichen, mehr Dokumentation schreiben und so weiter, um einfach die Software noch erfolgreicher zu machen.",
+            "start": 3070057,
+            "end": 3135887,
+            "confidence": 0.7910571428571429,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Also ich glaube, dass das auch immer wichtiger wird, weil auch in Firmen immer mehr Content und Inhalt produziert wird an ganz unterschiedlichsten Stellen. Es hat ja mal früher diese Google Appliance gegeben, ganz zu Beginn, wo man sich so einen Google Rechner in sein eigenes Datacenter stellen hat können und dann hat die interne Google Suchmaschine alle Informationen in der Firma durchsucht. Ist mittlerweile eingestellt worden, aber ich glaube, dass das sicher wieder kommt. Es gibt ja ein paar Ansätze in die Richtung auch Software, aber dass man das dann automatisch verknüpft, Ich glaube, das wäre das Next Level und das wird in Zukunft auch gebraucht, nicht nur bei der Entwicklung, weil es scheitert ja jetzt schon daran, dass irgendwo in größeren Firmen die eine Seite nicht weiß, was die andere macht, weil sie einfach keinen Zugriff auf die IT-Tickets zum Beispiel hat, aber da vielleicht relevante Informationen drinstehen würden. Also ich glaube, das Verknüpfen der Daten aus verschiedenen Datenquellen und dann das auch zur Verfügung stellen und das durchsuchbar machen, das ist sicher ein Hot Topic und kann glaube ich in Firmenprozesse wirklich beschleunigen und das sind nicht nur die Entwicklungsprozesse.",
+            "start": 3136148,
+            "end": 3194055,
+            "confidence": 0.8127461139896366,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Die große Herausforderung wird natürlich sein, daraus Produkte zu bauen und erstmal Awareness für die Themen zu schaffen, weil ich glaube, dass ziemlich viele Entscheider nicht wissen, wovon wir beide hier gerade drüber sprechen. Und das ganze Thema massentauglich zu machen, ist, glaube ich, eine schwierige Herausforderung.",
+            "start": 3194795,
+            "end": 3211525,
+            "confidence": 0.8359574468085106,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Aber dafür sind wir ja da.",
+            "start": 3211565,
+            "end": 3213846,
+            "confidence": 0.5715,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "So sieht es aus. Wolfgang, bist du hyped? Hast du Bock, ein bisschen Data-Analysis, Data-Science auf Software-Repositories zu machen?",
+            "start": 3213886,
+            "end": 3220390,
+            "confidence": 0.5843157894736842,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Ja, ich würde am liebsten jetzt diese Startup gründen, was die ganzen Datenquellen anbindet und die super-duper-language-model-based-search-engine-kombinierungs-eierlegende-Wollmilchsau als Produkt macht. Würdest du kaufen, oder?",
+            "start": 3221080,
+            "end": 3235752,
+            "confidence": 0.7846666666666667,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Ich bin dein erster Kunde. Ich hoffe, wir konnten euch so ein bisschen mein Passion-Thema der letzten zehn Jahre näher bringen. Wie ich auf dieses Thema gestoßen bin, könnt ihr auch in meinem Blog lesen. Es war nämlich eigentlich eine ganz lustige Story auf der FOSDEM, einer großen Open-Source-Konferenz.",
+            "start": 3237133,
+            "end": 3253482,
+            "confidence": 0.7872857142857144,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "In Belgien, bei der wir uns hoffentlich dann alle sehen übrigens. Der Plan ist ja im Februar auf der FOSDEM zu sein und da hoffen wir auch, viele von euch zu treffen, im Idealfall.",
+            "start": 3253542,
+            "end": 3263808,
+            "confidence": 0.846558823529412,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Lasst eure Gedanken mal ein bisschen schweifen, welche Fragestellungen ihr an eure Metadaten aus dem Softwareentwicklungsprozess habt und welche Optimierungspotenziale euch noch so einfallen. Lasst es uns wissen, tweetet uns die gerne an at engkiosk oder wieder E-Mail an stetisch at engineeringkiosk.dev.",
+            "start": 3264228,
+            "end": 3282635,
+            "confidence": 0.7855714285714286,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Und tragt euch schon mal im Kalender ein, 4. und 5. Februar, FOSDEM in Belgien.",
+            "start": 3282675,
+            "end": 3287557,
+            "confidence": 0.7292666666666666,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Bis dahin wünschen wir euch einen schönen.",
+            "start": 3287577,
+            "end": 3290057,
+            "confidence": 0.4838571428571429,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Tag, bis bald, tschüss. Ciao.",
+            "start": 3290097,
+            "end": 3291298,
+            "confidence": 0.3242,
+            "channel": null,
+            "speaker": "A"
+        }
+    ],
+    "confidence": 0.7858938466327704,
+    "audio_duration": 3295.0,
+    "webhook_status_code": null,
+    "webhook_auth": false,
+    "summary": null,
+    "auto_highlights_result": null,
+    "content_safety_labels": null,
+    "chapters": null,
+    "sentiment_analysis_results": null,
+    "entities": null
+}
