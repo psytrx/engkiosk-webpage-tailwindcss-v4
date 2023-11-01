@@ -10,25 +10,6 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 
 import podcastInfo from '../data/podcast-info.json';
 
-// <li class="mb-4">
-// 						<a class="inline-block text-coolGray-500 hover:text-coolGray-600 font-medium" href="https://www.instagram.com/engineeringkiosk/" title="Engineering Kiosk auf Instagram (@engineeringkiosk)">
-// 							<img src="/images/brands/instagram.svg" class="inline w-6 mr-2" alt="Instagram logo" title="Instagram logo" /> Instagram
-// 						</a>
-// 					</li>
-// 					<li class="mb-4">
-// 						<a class="inline-block text-coolGray-500 hover:text-coolGray-600 font-medium" href="https://www.youtube.com/@engineeringkiosk" title="Engineering Kiosk auf YouTube (@engineeringkiosk)">
-// 							<img src="/images/brands/youtube.svg" class="inline w-6 mr-2" alt="YouTube logo" title="YouTube logo" /> YouTube
-// 						</a>
-// 					</li>
-// 					<li class="mb-4">
-// 						<a class="inline-block text-coolGray-500 hover:text-coolGray-600 font-medium" href="https://www.linkedin.com/company/engineering-kiosk/" title="Engineering Kiosk auf LinkedIn (@engineering-kiosk)">
-// 							<img src="/images/brands/linkedin_blue.svg" class="inline w-6 mr-2" alt="LinkedIn logo" title="LinkedIn logo" /> LinkedIn
-// 						</a>
-// 					</li>
-// 					<li class="mb-4">
-// 						<a class="inline-block text-coolGray-500 hover:text-coolGray-600 font-medium" href="https://www.tiktok.com/@engineeringkiosk" title="Engineering Kiosk auf TikTok (@engineeringkiosk)">
-// 							<img src="/images/brands/tiktok.svg" class="inline w-6 mr-2" alt="TikTok logo" title="TikTok logo" /> TikTok
-
 const platforms = [
 	{ "name": "Apple", "image": "/images/brands/apple.svg", "href": podcastInfo.platformLinks.appleMusic },
 	{ "name": "Spotify", "image": "/images/brands/spotify.svg", "href": podcastInfo.platformLinks.spotify },
