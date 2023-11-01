@@ -82,11 +82,11 @@ pubDate: '2022-05-17'
 rtlplus: ''
 speaker:
 - name: Andy Grunwald
-  website: https://andygrunwald.com/
   transcriptLetter: A
+  website: https://andygrunwald.com/
 - name: Wolfi Gassler
-  website: https://wolfgang.gassler.org/
   transcriptLetter: B
+  website: https://wolfgang.gassler.org/
 spotify: https://open.spotify.com/episode/2BoVJYXWCOoK9w31nZaevF
 tags:
 - Datenbanken

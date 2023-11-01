@@ -40,11 +40,11 @@ pubDate: '2023-01-05'
 rtlplus: ''
 speaker:
 - name: Andy Grunwald
-  website: https://andygrunwald.com/
   transcriptLetter: B
+  website: https://andygrunwald.com/
 - name: Wolfi Gassler
-  website: https://wolfgang.gassler.org/
   transcriptLetter: A
+  website: https://wolfgang.gassler.org/
 spotify: https://open.spotify.com/episode/35MGyksizZ4CVxkCRhhJ5n
 tags:
 - Engineering Kiosk

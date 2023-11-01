@@ -55,11 +55,11 @@ pubDate: '2022-08-16'
 rtlplus: ''
 speaker:
 - name: Andy Grunwald
-  website: https://andygrunwald.com/
   transcriptLetter: B
+  website: https://andygrunwald.com/
 - name: Wolfi Gassler
-  website: https://wolfgang.gassler.org/
   transcriptLetter: A
+  website: https://wolfgang.gassler.org/
 spotify: https://open.spotify.com/episode/0B3LoAAfZbllsTw1KyYIjx
 tags:
 - Bewerbung

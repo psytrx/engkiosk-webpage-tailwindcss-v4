@@ -60,11 +60,11 @@ pubDate: '2022-04-12'
 rtlplus: ''
 speaker:
 - name: Andy Grunwald
-  website: https://andygrunwald.com/
   transcriptLetter: B
+  website: https://andygrunwald.com/
 - name: Wolfi Gassler
-  website: https://wolfgang.gassler.org/
   transcriptLetter: A
+  website: https://wolfgang.gassler.org/
 spotify: https://open.spotify.com/episode/2efebNjDPhMZBjGC78z9fg
 tags:
 - Team
