@@ -64,13 +64,24 @@ const { utterances } = Astro.props;
 }
 </style>
 
-<script>
+<script>import { transitionEnabledOnThisPage } from "astro:transitions/client";
+
+	// Piwik tracking
+	var _paq = window._paq || [];
+
+	const trackEvent = function(eventType) {
+		const name = window.playerConfiguration.episode.title || 'unknown'										
+		_paq.push(['trackEvent', 'transcript', eventType, name]);
+		console.log('trackEvent', eventType, name);
+	}
+
 	window.showFullTranscript = function() {
 		const transcript = document.querySelector('.transcript');
 		if (!transcript.classList.contains('show')) {
 			transcript.classList.add('show');
 			transcript.querySelector('.overlay').style.display = 'none';
 		}
+		trackEvent('show');
 		document.getElementById('showFullTranscriptButton').classList.add('hidden');
 		return true;
 	}
@@ -84,12 +95,21 @@ const { utterances } = Astro.props;
 		popup.classList.remove('hidden');
 		navigator.clipboard.writeText(link);
 		event.stopPropagation();
+
+		trackEvent('share');
+
 		return false;
 	}
+
+	// Handler to jump to a specific time
+	// in the podcast if #t=seconds is in the url
 	window.addEventListener('DOMContentLoaded', (event) => {
 		const hash = window.location.hash;
 		if (hash && hash.startsWith('#t=')) {
 			const time = parseInt(hash.substring(3));
+
+			trackEvent('incoming-link');
+
 			//find utterance div based on data-trans-start, time should be in between
 			const utterances = document.querySelectorAll('.utterance')
 			let element = null;

@@ -183,6 +183,7 @@ const html = (await Astro.slots.render('default'))
 									<script class="podigee-podcast-player" src="/podcast-player/javascripts/podigee-podcast-player.js" data-configuration="playerConfiguration"></script>
 									<script>
 										let maxTriesToSetPlayerCommands = 100;
+										var _paq = window._paq || [];
 										const setPlayerCommands = function() {
 											const iframe = document.querySelector('iframe.podigee-podcast-player');
 											if (iframe && playerjs && playerjs.Player) {
