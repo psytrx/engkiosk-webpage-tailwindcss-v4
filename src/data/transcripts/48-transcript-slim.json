@@ -1,1010 +1,1010 @@
 {
-    "language_code": "de",
-    "audio_url": "https://audio1.redcircle.com/episodes/ad2d93d9-918f-4a76-9026-0ad264afc94d/stream.mp3",
-    "punctuate": true,
-    "format_text": true,
-    "dual_channel": false,
-    "webhook_url": null,
-    "webhook_auth_header_name": null,
-    "webhook_auth_header_value": null,
-    "audio_start_from": null,
-    "audio_end_at": null,
-    "word_boost": [],
-    "boost_param": null,
-    "filter_profanity": false,
-    "redact_pii": false,
-    "redact_pii_audio": false,
-    "redact_pii_policies": null,
-    "redact_pii_sub": null,
-    "speaker_labels": true,
-    "speakers_expected": 2,
-    "content_safety": false,
-    "content_safety_confidence": null,
-    "iab_categories": false,
-    "custom_spelling": null,
-    "disfluencies": false,
-    "sentiment_analysis": false,
-    "auto_chapters": false,
-    "entity_detection": false,
-    "summarization": false,
-    "summary_model": null,
-    "summary_type": null,
-    "auto_highlights": false,
-    "language_detection": false,
-    "speech_threshold": null,
-    "id": "62y64637x8-0934-4c83-a0d5-c7f56bf713e4",
-    "status": "completed",
-    "error": null,
-    "utterances": [
-        {
-            "text": "Container, Kubernetes und Runtimes. Heute machen wir deine Buzzword-Bingo-Karte voll. Willkommen zu einer neuen Episode vom Engineering Kiosk. In Episode 46 haben wir uns mit dem Thema Docker und Container beschäftigt und darüber gesprochen, welches Problem Docker eigentlich löst. Heute gehen wir mal eine Ebene tiefer und klären, Welche Teile aus Docker herausgetrennt wurden, um für das erweiterte Container-Ökosystem nützlich zu sein? Was eine High-Level-Container-Runtime ist und was für Verantwortlichkeiten diese hat? Wie Kubernetes mit einer solchen Runtime kommuniziert? Ob es verschiedene Container-Runtimes gibt? Ob Kubernetes überhaupt Docker unterstützt? Und wir schmeißen Begriffen wie CNCF, OCI, CRI, SHIM und Co. um uns. Wenn du mit Docker noch nicht so viel zu tun hattest, empfehlen wir dir zuerst Episode 46 zu hören. Die heutige Episode kann als Folge 2 davon angesehen werden. Also, Bingo-Karten raus und los geht das Spiel.",
-            "start": 4520,
-            "end": 54746,
-            "confidence": 0.7891079136690645,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Einen wunderschönen, guten Episodenstart, Andi. Morgen sage ich jetzt nicht, weil es gibt ja vielleicht Leute, die mitten in der Nacht hören. Also einen schönen, guten Episodenstart. Andi, letztes Mal hast du die ganze Hörerschaft, wie du da Spezialist drin bist, schon beleidigt mit deinem Computerbild-Thema Docker. Das heißt, alle, die sich für Docker interessieren, sind Computerbildleser. Möchtest du jetzt, wo wir noch tiefer in Docker einsteigen, schon mal auch wieder irgendwas Beleidigendes am Anfang sagen?",
-            "start": 58477,
-            "end": 84560,
-            "confidence": 0.8134605263157897,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Also wir bewegen uns auf jeden Fall von dem Hype-Thema für die Masse jetzt langsam in dieser Episode ein bisschen weg.",
-            "start": 84740,
-            "end": 90562,
-            "confidence": 0.7533809523809525,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Moment, die letzte Episode war kein Hype-Thema. Da sind wir in die Tiefen eingedaucht. Das haben höchstwahrscheinlich die wenigsten gewusst, hoffentlich zumindest.",
-            "start": 90622,
-            "end": 98426,
-            "confidence": 0.7091818181818181,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "In der letzten Episode haben wir uns um Docker gekümmert. Primär darum, welches Problem Docker eigentlich löst, was die Vorteile sind, was die Nachteile sind, was der Unterschied zu Virtual Machine sind und so weiter und so fort. Und ich muss schon sagen, da Docker ist ja schon sehr lange auf dem Markt ist, kann man schon sagen, es ist ein Hype-Thema, weil es ist nicht nur eine Applikation, die von Linux-Kernel-Freaks genutzt wird, sondern nenn mir mal jemand, der heute in der Softwareentwicklung arbeitet, der noch keine Berührungspunkte mit Docker hat. Ich glaube, diese kleine Gruppe wird sehr schwer zu finden sein. Besonders im Webumfeld ist es natürlich mega gehypt, auch durch die Hyperscaler, Amazon, Google, Microsoft und so weiter, durch deren neuen Services. Natürlich aber auch durch Sachen wie Kubernetes und Co. Deswegen, heute bewegen wir uns ein bisschen weg von diesem Hype und gehen eine Ebene tiefer. Ich will nicht sagen, wir gehen jetzt von der Build zu Computerbuild, sondern ich würde jetzt eher sagen, wir gehen von der Build heute schon, vielleicht sogar schon auf CT-Level vom Heise Verlag. Vielleicht noch nicht auf das IX Level, weil meines Erachtens nach ist das IX Level noch ein bisschen tiefer als das CT Level. Aber ich denke, heute bewegen wir uns so irgendwo zwischen CT und IX. Ich denke, wir gehen nämlich mal ein Layer tiefer. Und das ist ja wohl keine Beleidigung, oder?",
-            "start": 98446,
-            "end": 175723,
-            "confidence": 0.825029661016949,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Es gibt sicher jemanden, den du jetzt beleidigt hast, je nachdem, was für Magazine und Zeitschriften wer liest, aber es ist okay. Für mich bist du jetzt einfach der Computerbild-Experte, eindeutig. Das bleibt ja dieser Titel.",
-            "start": 176542,
-            "end": 187295,
-            "confidence": 0.7470833333333332,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Ich muss mal eine Sache offenbaren. Und zwar habe ich früher sehr oft CT gelesen. Also in meinen jüngeren Jahren. Ich auch. Eine super Zeitschrift.",
-            "start": 187335,
-            "end": 194641,
-            "confidence": 0.7143999999999999,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Es war meine Lieblingszeitschrift damals. Vor allem, da war das Internet noch nicht so weit, wie ich noch jung war zumindest.",
-            "start": 194701,
-            "end": 200883,
-            "confidence": 0.8232857142857144,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Also damals, als ich mit diesen ganzen Computern und Sachen angefangen habe, habe ich natürlich irgendwie so Webseiten gelesen wie WinFuture und was weiß ich, um da mal ein bisschen reinzukommen. heise.de habe ich lange Zeit gar nicht so wirklich so wirklich verstanden. Irgendwann habe ich mal eine CT gekauft, da habe ich dann auch nur Bahnhof Kofferklauen verstanden und echt super lang gebraucht.",
-            "start": 201003,
-            "end": 220355,
-            "confidence": 0.7812812499999999,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Was hast du verstanden?",
-            "start": 220395,
-            "end": 221496,
-            "confidence": 0.54425,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Bahnhof Kofferklauen, also eigentlich nix. Bahnhof Kofferklauen. Ich habe die Hälfte der Artikel einfach nicht verstanden. Dann habe ich die mal wieder zur Seite gelegt und irgendwann, so ein Jahr später, habe ich mir wieder eine CT gekauft und dann habe ich die verstanden. So dann ging das so weiter und irgendwann habe ich mir ne ix gekauft da habe ich mir da wieder dann nicht mehr als die hälfte nicht verstanden habe ich die wieder zur seite gelegt und irgendwie ein jahr später habe ich mir wieder ne ix gekauft und dann habe ich angefangen auch die die tieferen artikel von ix besser zu verstehen. Also das war faszinierend, das war so ein bisschen meine Lernkurve mit CT, IX und Computern. Aber wenn du es mit der Print-Medien-Landschaft vergleichen möchtest, ist es genau da. Wir gehen heute nämlich ein Layer tiefer. Nämlich wir gehen nicht ganz runter auf Linux, aber wir gehen ein Layer tiefer als Docker und natürlich spielt da auch der aktuelle Platz hier Kubernetes eine Rolle.",
-            "start": 221516,
-            "end": 271467,
-            "confidence": 0.7805764705882352,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Okay, dann fangen wir mal ganz vorne an. Ich als normalsterblicher User und nicht als Computerbildexperte, ich rufe da ja einfach docker run auf. Was wäre denn dann die nächste tiefere Ebene? Oder was passiert denn da? Oder ist docker run schon die tiefe Ebene?",
-            "start": 271767,
-            "end": 287487,
-            "confidence": 0.8345777777777779,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "In der Programmierung würde man sagen, nein ist es natürlich nicht. Docker Run ist jetzt erstmal das User Interface von der Applikation Docker mit deinem Command Line Parsing und so weiter und so fort mit dem Befehl Start oder Docker Run hast du gerade gesagt und dann dem Image Namen und so weiter und so fort. Jetzt ist es natürlich so, dass Docker durch den Hype, durch die Verbreitung immer mehr Features dazu bekommen hat. Also das Feature-Set, was ihr heute von Docker kennt, das war ja von Anfang an nicht so. Und so wie es in jedem großen Software-Projekt ist, fangen die Software-Engineers da langsam mal an, darüber nachzudenken. Okay, wie können wir die ganze Sache denn hier mal aufteilen? Wie können wir die ganze Sache vielleicht ein bisschen modularer machen? Und als dieser Gedanke dann ein bisschen weitergetrieben wurde, hat man sich überlegt, okay, Docker selbst braucht eine sogenannte Runtime. Und diese Runtime kümmert sich eigentlich um die Verwaltung und das Lifecycle-Management von den eigentlichen Containern. Das war schon immer alles in Docker implementiert. Und als erste Modularisierung haben sie einen Teil dieser Runtime, die sogenannte High-Level-Runtime, rausgetrennt. alleine zur Verfügung gestellt?",
-            "start": 288168,
-            "end": 354484,
-            "confidence": 0.8057319587628868,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Also am Anfang war es quasi ein Monolith, das war einfach Docker, ein großes Schiff. Und man hat dann angefangen, das in Services, wenn ich es mal so mit dem Hype-Namen benennen darf, rauszutrennen, um das einfach modularer zu machen, um das auch ein bisschen zu öffnen.",
-            "start": 354524,
-            "end": 369823,
-            "confidence": 0.8089999999999999,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Ja, kann man schon so sagen. Ich denke, das war vielleicht gar nicht so freiwillig alles, weil das ganze Thema Container hat natürlich einen mega Pfad aufgenommen. Und da kam natürlich sehr viel Druck von außen. Ich sag nur so Stichwörter wie Kubernetes und Co., da kommen wir aber gleich zu. Und von außen sieht das auf jeden Fall so aus, als hätte Docker, Docker Inc., die Firma dahinter, so ein bisschen die Flucht nach vorne ergriffen und gesagt hat, okay, das Thema Container nimmt Pfad auf, da spielen grad mehr Firmen mit, dann lass uns doch als Platzhirsch etablieren, weil wir haben die Codebase ja schon. Und als ersten Move hat Docker einen Teil ihrer High-Level-Runtime herausgetrennt. Das haben sie als einzelnes Projekt auch released. Und die ganze Sache haben sie, so innovativ wie Docker auch ist, Container-D genannt. D steht in dieser Hinsicht für Daemon, so wie im klassischen Linux-Umfeld bekannt. Und Container-D ist ein einzelner Linux-Daemon mit der Hauptaufgabe, den kompletten Container-Lebenszyklus auf dem Host-System zu managen.",
-            "start": 370323,
-            "end": 426767,
-            "confidence": 0.8264117647058823,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Was ist denn ein Container Lifecycle?",
-            "start": 427507,
-            "end": 430709,
-            "confidence": 0.6618333333333334,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Da muss man jetzt einmal ganz kurz verstehen. Ich rede die ganze Zeit von High Level Runtime und Low Level Runtime. Im Container-Ecosystem unterscheidet man die ganzen Sachen. Die Low Level Runtime kümmert sich um die Fähigkeiten des Betriebssystems, Container zu erschaffen, zu isolieren und so weiter.",
-            "start": 430749,
-            "end": 446036,
-            "confidence": 0.8361702127659575,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Also das ist der Teil, der dann mit ChangeRoot und so, wie wir erklärt haben, quasi kommuniziert, beziehungsweise, wenn man sich das so einfach vorstellt, dann dieses ChangeRoot macht und dann mit dem Linux-Betriebssystem in irgendeiner Form kooperiert.",
-            "start": 446276,
-            "end": 459106,
-            "confidence": 0.821263157894737,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Ganz genau. Kernel, Space, Commands. user space commands, lxc, also linux namespaces, changeroot und all diese magie, von mir aus auch freebsd jails und solaris container und weiß jetzt grad nicht wie es auf windows heißt, aber all diese magie, also der harte kram.",
-            "start": 459146,
-            "end": 477642,
-            "confidence": 0.7925000000000001,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Der harte kram ist lowlevel, richtig?",
-            "start": 477682,
-            "end": 479264,
-            "confidence": 0.6618333333333333,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Der harte Kram ist Low-Level und das nennt man halt Low-Level-Runtime. Da kommen wir mal irgendwann in Folge 3 oder 4 zu. Auf jeden Fall, wenn es um das Managen des Container-Lebenszyklus geht, dann reden wir in der Regel von einem High-Level, von einer High-Level-Runtime.",
-            "start": 479924,
-            "end": 493675,
-            "confidence": 0.7623111111111112,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Und was jetzt zum Beispiel das Netzwerk, also die Docker-Netzwerke, die miteinander kommunizieren, ist das dann Low-Level oder ist das dann High-Level?",
-            "start": 493715,
-            "end": 502362,
-            "confidence": 0.7490909090909091,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Das gehört zum High-Level.",
-            "start": 502382,
-            "end": 503263,
-            "confidence": 0.77,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Aber die Ausführung passiert dann auch irgendwo Low-Level natürlich im Betriebssystem, aber die Organisation passiert im High-Level-Team.",
-            "start": 504107,
-            "end": 511374,
-            "confidence": 0.8115294117647058,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Ja, man kann halt einfach sagen, die High-Level-Runtime kümmert sich generell um die Verwaltung von Containern. Und das bedeutet starten, stoppen, pausieren und so weiter. Um das Herunterladen von Images, ja, aus gewissen Repositories oder von Object Storage. Um das Verwalten von Storage und von Netzwerken. Aber auch um die Überwachung von Containern, dass sie auch wirklich ausgeführt werden. Und die High-Level-Runtime gibt der Low-Level-Runtime dann natürlich auch weiter, dass die Containerprozesse tatsächlich erstellt und ausgeführt werden. Also, das ist so der Lebenszyklus, ja? Also, man lädt ein Image runter, es werden Netzwerke erstellt, es wird Storage erstellt, das Image wird vielleicht entpackt. Dann sagt man, okay, dann sagt die High-Level-Runtime, okay, starte das ganze Ding noch mal, und dann wird dieser Startbefehl an die Low-Level-Runtime übergeben. Da wird dann die Linux-Körnermagie gemacht oder halt auch Windows-Körnermagie oder Solaris-Körnermagie. Dann übernimmt die High-Level-Runtime wieder und die kümmert sich dann um die Überwachung des Containers, dass der dann wirklich läuft und all drum und dran. Also der Lebenszyklus von einem Container gemanagt bei der High-Level-Runtime-Container, die in diesem Sinne.",
-            "start": 511789,
-            "end": 579294,
-            "confidence": 0.8235898876404497,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Das Container-D, wird das dann mitgeschippt mit Docker direkt? Also wenn ich mir jetzt Docker installiere, ist das irgendwo in Docker drin versteckt oder ist das schon sauber herausgelöst?",
-            "start": 579935,
-            "end": 591144,
-            "confidence": 0.7619310344827588,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Beides. Container-D ist sauber herausgelöst. Es ist in einem eigenen GitHub-Repository. Könnt ihr selbst klonen, könnt ihr selbst nutzen. Es ist aber auch so, wenn du Docker, den Docker-Daemon installierst, bekommst du automatisch Container-D mit. Weil sie haben es wirklich so rausgelöst, dass sie es auch selbst immer noch nutzen. Und Containerd wurde halt, wie bereits schon gesagt, von Docker erstellt, von Docker rausgetrennt und wieder integriert, wenn man so möchte. Und Docker verwendet selbst Containerd. Das bedeutet, wenn man Docker installiert, wird Containerd automatisch mit installiert.",
-            "start": 591524,
-            "end": 627738,
-            "confidence": 0.8213678160919539,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Okay, ich habe jetzt gerade bei mir mal gecheckt auf meinem Fedora Linux. Ich habe einen Container, die wirklich als eigenes Package installiert wurde, scheinbar mit Docker höchstwahrscheinlich dann mal mit installiert. Aber jetzt, wenn du sagst, okay, man kann es auch mit anderen Clients ansprechen. Gibt es da jetzt irgendwas oder ist das nur in der Theorie möglich?",
-            "start": 628057,
-            "end": 646090,
-            "confidence": 0.788372881355932,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Nee, das ist möglich. Und ich kann dir aus dem Stehgreif eigentlich drei eigene Clients sogar nennen, die in der Praxis ohne Problem möglich sind. Die erste Vorstellung ist, du kannst dir deinen eigenen Client schreiben. Containerd bietet ein Programminginterface an, womit du z.B. in Go recht einfach Images aus der Registry herunterladen kannst, starten kannst usw. Das bedeutet, wenn du dann mal ein bisschen Go schreiben möchtest und dir deinen eigenen Containerclient schreiben möchtest, kannst du das sehr gut tun. Dann gibt es die, dann gibt es eine Implementierung von ContainerD selbst, nennt sich NerdControl für ContainerD-Control.",
-            "start": 646430,
-            "end": 679693,
-            "confidence": 0.7216632653061223,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Wenn du sagst von ContainerD selbst, dann steckt da wieder Docker dahinter?",
-            "start": 679713,
-            "end": 684336,
-            "confidence": 0.7240833333333333,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Nein.",
-            "start": 684376,
-            "end": 684596,
-            "confidence": 0.836,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Oder ist das mittlerweile ein offener?",
-            "start": 684636,
-            "end": 686297,
-            "confidence": 0.6901666666666667,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Das ist inzwischen ein eigenes Repository, eine eigene Organisation auf GitHub. Klar, die Hauptcontributor sind, so viel ich weiß, immer noch die Leute von Docker, aber ist jetzt nicht mehr an Docker Inc. so stark gebunden. Die Lizenz von Containerd ist nämlich die Apache-2-Lizenz. Von daher ein ganz klassisches Open-Source-Projekt, würde ich mal sagen.",
-            "start": 686317,
-            "end": 706609,
-            "confidence": 0.7986851851851852,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Okay, und was macht jetzt da deine Wattwitz-Library-Client-Containerd? Man muss das lesen, damit man diesen dummen Wattwitz versteht. Dir hat das sicher gut gefallen, oder?",
-            "start": 707108,
-            "end": 717756,
-            "confidence": 0.6169600000000002,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Bei der Vorbereitung habe ich darüber stark gelacht. Nee, NerdControl ist ein CLI-Interface, was ebenfalls Containerd implementiert. Und als Showcase haben die mal zum Beispiel so tolle Features eingebaut wie Lazy Pulling. Was zum Beispiel Docker von Haus aus nicht kann. Lazy Pulling ist eine Technik, um Container bereits zu starten, bevor das Downloaden von Images komplett abgeschlossen ist. Wie es unten runter funktioniert, weiß ich leider nicht. Klingt auf jeden Fall recht geil.",
-            "start": 717776,
-            "end": 747486,
-            "confidence": 0.806756756756757,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Das heißt aber, Container D ist auch ziemlich flexibel, weil das Downloaden übernimmt höchstwahrscheinlich Container D, das Starten auch. Das heißt, die greifen da schon ziemlich tief dann ein.",
-            "start": 747886,
-            "end": 757170,
-            "confidence": 0.8143103448275862,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Genau, wie ich gerade gesagt habe, Container D übernimmt alle möglichen Aufgaben von einer High-Level-Runtime. Beim Starten eines Containers übergibt er natürlich irgendwann die Kontrolle an die Low-Level-Runtime, je nach Betriebssystem und Co. Aber was halt zum Starten alles dazu gehört, Volumes, Storage, Netzwerk, Namen checken von bereits existierenden Containern, damit du keinen Namenskonflikt hast und so weiter und so fort. All sowas übernimmt natürlich dann die Container, die High-Level-Container, Runtime-Container D in der Hinsicht.",
-            "start": 757190,
-            "end": 784548,
-            "confidence": 0.7913200000000002,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Okay, und was ist jetzt deine Nummer drei?",
-            "start": 784588,
-            "end": 786310,
-            "confidence": 0.673125,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Nummer drei ist Kubernetes. Kubernetes kann nämlich ebenfalls mit der High-Level-Runtime-Container D zusammenarbeiten.",
-            "start": 786330,
-            "end": 791575,
-            "confidence": 0.6883076923076923,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Okay, das heißt Kubernetes verwendet gar kein Docker?",
-            "start": 791907,
-            "end": 795068,
-            "confidence": 0.72475,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Ja, die Antwort auf diese Frage ist jetzt ja und nein. Ich weiß, das bringt dich jetzt nicht weiter.",
-            "start": 795088,
-            "end": 800029,
-            "confidence": 0.8177894736842104,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Korrekt. Dann erklär mal. Computerbildspezialist.",
-            "start": 800069,
-            "end": 803750,
-            "confidence": 0.7868,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Dafür müssen wir ein bisschen ausholen.",
-            "start": 803790,
-            "end": 805111,
-            "confidence": 0.7461666666666668,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Unser Computerbildspezialist holt jetzt ein bisschen aus, um den Unterschied zwischen Container, die Docker und die Verwendung in Kubernetes zu erklären. Herr Grunwald.",
-            "start": 805151,
-            "end": 813633,
-            "confidence": 0.831086956521739,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "In den ersten Tagen von Kubernetes hat Kubernetes wirklich mit der Docker CLI geredet. Die hatten eine sogenannte Docker-Shim eingebaut, um Container von Docker zu supporten, zu starten und so weiter, und haben dann die ganze Verwaltung an Docker abgegeben, haben sich dann die Resultate rausgeholt.",
-            "start": 813673,
-            "end": 831667,
-            "confidence": 0.7994130434782606,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Das heißt, die haben quasi Docker Run aufgerufen auf der Shell, wenn man es jetzt ganz dumm sieht, so wie ich das mache. Nur Kubernetes hat das halt automatisch für mich gemacht.",
-            "start": 832263,
-            "end": 840708,
-            "confidence": 0.7852187500000001,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Ja, mit hoher Wahrscheinlichkeit haben sie das schon halt, weil Kubernetes auch in Go geschrieben ist, sich dann die Packages rein importiert und das dann auf programmatischem Level gemacht.",
-            "start": 841008,
-            "end": 848672,
-            "confidence": 0.8001379310344828,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Kannst du einfach sagen, ja, oder?",
-            "start": 848933,
-            "end": 850614,
-            "confidence": 0.36933333333333335,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Mich würde es sehr stark wundern, wenn die wirklich einen Shell-Command mit Docker Run gefeuert hätten und sich dann auf Exit-Code-Basis da irgendwas runtergeholt hätten. Aber von daher, Jetzt bin ich extra.",
-            "start": 850634,
-            "end": 859598,
-            "confidence": 0.7707812500000002,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Auf deine Ebene vom Computerbild gegangen, dass man das möglichst auf einfache Sicht auf die Dinge, aber du musst natürlich das wieder auf der tiefen Sicht sehen. Aber da merkt man halt, dass du der Spezialist bist, der Computerbildspezialist.",
-            "start": 859618,
-            "end": 872181,
-            "confidence": 0.7287948717948718,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Auf jeden Fall hat das die ganze Zeit super funktioniert. Und ich weiß nicht, aber kannst du dich noch an die Zeit erinnern? Das war in den ersten Tagen, wo Docker so gehypt wurde, da gab's nämlich einen sehr, sehr großen Competitor, nannte sich CoreOS.",
-            "start": 872221,
-            "end": 885045,
-            "confidence": 0.8034222222222223,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Um ehrlich zu sein, an mir vorbeigegangen.",
-            "start": 885085,
-            "end": 886805,
-            "confidence": 0.8537142857142855,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "CoreOS war ein Operating System, was alles in Containern hatte. Das bedeutet, jeder einzelne Prozess auf dem Operating System lief in Containern. Und die hatten eine eigene High-Level-Runtime, die nannte sich RKT, kurz für Rocket.",
-            "start": 887205,
-            "end": 903406,
-            "confidence": 0.8776285714285715,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Okay, das sagt mir wieder was.",
-            "start": 904061,
-            "end": 905643,
-            "confidence": 0.4546666666666667,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Und weil ja Kubernetes jetzt der Container-Scheduler mehr und mehr an Market-Share begriffen hat, wurde irgendwann die Frage gestellt, ja Moment mal, aber Kubernetes hat jetzt Docker eingebunden, aber ich möchte jetzt Kubernetes auf CoreOS laufen lassen und da läuft die High-Level-Runtime-Rocket. Geht das? Und die Antwort war erst mal nein. Was dann gemacht wurde, Rocket wurde ähnlich wie Docker in Kubernetes implementiert. Und du merkst schon, wohin das geht. Jeder Softwareentwickler, da kräuseln sich so langsam die Finger und Fußnägel, weil du kannst dir vorstellen, zu diesen Zeiten gab es jetzt kein standardisiertes Interface zwischen Docker und Rocket. Das bedeutet, irgendwo gab es so eine If-Else-Condition oder so eine Switch-Condition. Wenn wir jetzt hier auf der Container-Runtime-Docker unterwegs sind, dann führe bitte dieses Set an Befehlen aus. Und wenn wir auf dem Container Runtime Rocket sind, dann führen wir bitte den linken Pfad da aus. Und jetzt stell dir mal vor, wo wir heute wären, wenn dies einfach so weitergegangen wäre. Das wäre ein Riesenprogrammierpfeil mit if else, if else, if else.",
-            "start": 905683,
-            "end": 965703,
-            "confidence": 0.7807861271676301,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Genau, und jeder gute Programmierer, wenn er so ein Case hat, macht dann ein Interface üblicherweise.",
-            "start": 965723,
-            "end": 971547,
-            "confidence": 0.7563125,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Und das ist es nämlich. Die Jungs und Mädels von Kubernetes sind nämlich sehr gute Programmierer und immer wieder gedacht, hey, das kann nicht so weitergehen, wir brauchen hier mal eine Abstraktion. Und dann hat Kubernetes die sogenannte CRI, die Container, das Container Runtime Interface erstellt. Das Container Runtime Interface ist eine Kubernetes API. Die wurde im Dezember 2016 eingeführt. Nur mal kurz zur Timeline. Container D, der erste Commit von Container D als Raustrend war im November 2015, also ein Jahr davor. Ihr merkt schon, das hängt alles miteinander zusammen.",
-            "start": 971827,
-            "end": 1005446,
-            "confidence": 0.7786263736263735,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Man könnte jetzt sagen, das war natürlich einfach ... Der Lauf der Zeit, Container, die wird schön rausgetrennt, danach gibt's ein Interface, die lieben sich alle. Aber was man so mitbekommen hat, war das ja eher alles zu Krieg und etwas unfreiwilliger, das Ganze, oder? Und wer behauptet den Markt?",
-            "start": 1005626,
-            "end": 1021717,
-            "confidence": 0.7992599999999996,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Also so tief steck ich in der Politik nicht drin, aber ich glaub, ich kann das recht einfach zusammenfassen. Überall, wo sehr viel Geld im Spiel ist, und im ganzen Container-Ökosystem ist sehr viel Geld im Spiel, da wird sich, glaub ich, auch gezankt. Ja, weil Geld verändert Menschen und da wird dann hier und da natürlich auch um Marketshare gekämpft.",
-            "start": 1021977,
-            "end": 1039327,
-            "confidence": 0.8262950819672134,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Aber dieses Container-Runtime-Interface, das jetzt Kubernetes da gebaut hat, haben die das allein gebaut oder ist das ein Konsortium, das dahinter steckt? Weil klassischerweise gewinnt man ja so den Marktkrieg am ehesten mit so einem Konsortium oder wenn da möglichst viele an Bord sind. Und war der Dockerfall mit dem Spiel auch? Oder waren das Gegner dann?",
-            "start": 1039367,
-            "end": 1059523,
-            "confidence": 0.8191929824561405,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Wer jetzt alles an der CRI wirklich dran war, um die zu erstellen, kann ich dir nicht sagen. Was ich dir sagen kann, ist, dass es halt nur ein Interface, nur eine Kubernetes-API ist. Und jetzt zum Beispiel in Mesos oder in Nomad oder vielleicht sogar in EKS, im Amazon-Service, vielleicht ist die Container-Runtime-Interface gar nicht da drin. Es ist halt primär eine Kubernetes-API, die wird definiert, standardisiert und spezifiziert.",
-            "start": 1059843,
-            "end": 1086809,
-            "confidence": 0.8147142857142856,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Aber wer wer bindet die dann ein jetzt zum beispiel um die um container die jetzt zu verwenden implementiert dann implementiert dann container die dieses interface oder gibts da ein zwischenteil noch.",
-            "start": 1087589,
-            "end": 1098595,
-            "confidence": 0.8384375000000002,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Du hörst dich an wie ein wie ein früherer java entwickler wir haben eine abstraktion lassen wir nochmal eine abstraktion und drunter drauf setzen damit wir ja flexibel sind.",
-            "start": 1098635,
-            "end": 1106460,
-            "confidence": 0.6876206896551725,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Nein, ich denke mir nur, wenn Docker zum Beispiel da die Gegner sind, dann werden die ja nicht freiwillig da irgendein Interface implementieren von Kubernetes. Oder vielleicht schon, keine Ahnung, wenn es der Markt will, aber ist halt die Frage.",
-            "start": 1107060,
-            "end": 1119132,
-            "confidence": 0.7421249999999999,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Kubernetes hat dieses Runtime Interface definiert. Containerd selbst hat ein Plugin drin, um dieses Runtime-Interface zu supporten. Das bedeutet, du kannst Container D, wenn du so möchtest, über zwei Arten ansprechen. Einmal über dieses klassische Runtime-Interface, das würde ich empfehlen, weil du dann von Haus aus, wenn du aus deiner selbstgeschriebenen Container-CLI oder aus Nerd-CTL ein Runtime starten möchtest und du implementierst das Container-Runtime-Interface, dann bist du automatisch in der Lage, verschiedene High-Level-Runtimes zu nutzen.",
-            "start": 1119172,
-            "end": 1149911,
-            "confidence": 0.7929200000000001,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Aber Docker nutzt wahrscheinlich intern ihr eigenes Ding.",
-            "start": 1149951,
-            "end": 1152893,
-            "confidence": 0.7273750000000001,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Das weiß ich nicht. Müsste ich mal nachgucken. Können wir mal recherchieren und nachreichen.",
-            "start": 1153622,
-            "end": 1156985,
-            "confidence": 0.6272142857142856,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Oder falls es jemand weiß, bitte gerne eine Message schreiben.",
-            "start": 1157005,
-            "end": 1160228,
-            "confidence": 0.5558,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Die Container-Runtime-Interface definiert eigentlich nur eine API zwischen Kubernetes und der Container-Runtime. Im Speziellen die Art und Weise, wie Kubernetes mit verschiedenen Container-Runtimes interagiert, also auch wieder den Lifecycle-Manage, bedeutet Container erstellen, runterladen, verwalten, bla, bli, blub.",
-            "start": 1160268,
-            "end": 1178023,
-            "confidence": 0.8116756756756756,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Das heißt, Kubernetes spricht über das Container-Runtime-Interface mit Container-D.",
-            "start": 1178343,
-            "end": 1182806,
-            "confidence": 0.7885555555555556,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Das ist korrekt. Würdest du einem Techniker, der sich ein bisschen tiefer mit Kubernetes auskennt, genau das so an den Kopf werfen und dir sagen, kann man mal ein bisschen konkreter werden? Also Kubernetes selbst ist ja auch wieder ein Riesenschiff und besteht aus etlichen Komponenten, wie zum Beispiel einem API-Server oder einem Kubelet. Ein Kubelet ist eigentlich dieser kleine Agent, der auf jeder Node läuft, auf jedem Server, wo Container gestartet werden können. Also du musst dir vorstellen, es gibt eine Kubernetes Management Plane und dann gibt sie die kleinen fleißigen Bienchen, das sind die Worker Nodes, die von der Management Plane die Aufgaben kriegen. Launch mal bitte fünf Container.",
-            "start": 1182846,
-            "end": 1217466,
-            "confidence": 0.7665495495495493,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Also das ist das Docker in Kubernetes quasi. Das, was ich so von der Command-Line kenne, das ist der Docker-Host, den Kubernetes gemacht hat. Und der spricht dann mit Containerd.",
-            "start": 1217778,
-            "end": 1229010,
-            "confidence": 0.8026333333333331,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Genau, sowas nennt man Kubelet im Kubernetes-Universum. Das bedeutet, die eigentlichen Worker-Nodes, das Kubelet, hat die Container-Runtime-Interface implementiert. Das Kubelet kriegt dann die Aufgaben vom Kubernetes API Server und startet dann Container durch die Container Runtime Interface, zum Beispiel jetzt Container D, weil Kubernetes kann nur High-Level Container Runtimes bedienen, die auch das Container Runtime Interface unterstützen und implementieren.",
-            "start": 1229050,
-            "end": 1258179,
-            "confidence": 0.8008305084745766,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Gibt's da jetzt noch andere außer Container D, dieses Rocket Shifter? Ist die Rocket schon abgestürzt, oder gibt's die noch?",
-            "start": 1258459,
-            "end": 1265744,
-            "confidence": 0.69035,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Die Rocket ist in der Hinsicht leider abgestürzt. Im ganzen Containerkrieg gibt es leider auch Verlierer. Und zwar ist es CoreOS und Rocket und das ganze Ecosystem drumherum. Die Projekte sind alle eingestellt. Ich weiß gar nicht, wann Kubernetes dann, oder ob es da noch Leichen im Code gibt von Kubernetes mit Rocket, das weiß ich jetzt grade nicht. Was ich aber weiß ist, dass es neben Container-D, weil wir haben ja jetzt ein Container-Runtime-Interface und ein Interface ermöglicht ja andere Implementierungen, neben Container-D gibt es jetzt auch Container-Runtime-Interface-O, also kurz für Cryo. Ich weiß nicht genau wie man es richtig ausspricht, aber es gibt eine alternative High-Level-Runtime neben Container-D als Alternative.",
-            "start": 1265784,
-            "end": 1308948,
-            "confidence": 0.8264464285714282,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Also wer übrigens jetzt schon ausgestiegen ist von unseren HörerInnen, wir werden so ein Übersichtsdiagramm auf Twitter gleich mit posten. Das heißt, wenn ihr die Folge hört, schaut euch dieses Diagramm an, dann ist es vielleicht auch leichter zu folgen. Weil wenn wir jetzt das Container Runtime Interface haben und jetzt haben wir das Container Runtime Interface, was nennt sich dieses, für was steht dieses O schon wieder? Schon wieder vergessen.",
-            "start": 1309179,
-            "end": 1330893,
-            "confidence": 0.7749718309859154,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Ich würde mal fast sagen, Für Open. Ich weiß es grad gar nicht. Es steht leider ... Ich hab's nicht gefunden, wofür das O steht. Aber ich würd mal sagen, es ist ein Open-Source-Projekt für Container Runtime Interface Open.",
-            "start": 1331013,
-            "end": 1342136,
-            "confidence": 0.7221794871794872,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Also, mir ist ja mit Bild schon das fast zu schwierig, dir zu folgen. Okay, es gibt jetzt einen zweiten Platzhirsch, würd ich fast sagen. Oder neben Container D dieses Cryo. Und was kann jetzt dieses Cryo oder wer steht hinter diesem Cryo und warum nicht Container D?",
-            "start": 1342196,
-            "end": 1356819,
-            "confidence": 0.7490625,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Naja, Container D, hatten wir ja gesagt, wurde von Docker erstellt. Und jetzt stell dir mal vor, du wärst ebenfalls eine große Firma in dem ganzen Sektor. Nehmen wir mal als ganz klassisches Beispiel Red Hat oder IBM oder Intel oder Suse. Wie geil findest du das, einen Großteil deines Businesses, deines zukünftigen Businesses, weil du möchtest ja auch was vom Stück vom Containerkuchen abhaben, dich dann 100% auf Docker zu verlassen? So als Firma, so aus der Business-Sicht.",
-            "start": 1357299,
-            "end": 1383321,
-            "confidence": 0.7694050632911391,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Okay, das klingt schon wieder ganz danach, dass sich die anderen zusammengetan haben, wir machen jetzt ein Gegenprodukt. Dann lass mich raten, hinter diesem Cryo steht ein Konsortium mit SUSE, was für andere Linux-Distributionen Red Hat hast du genannt, die ganze Linux-Mafia steckt da dahinter?",
-            "start": 1383621,
-            "end": 1398865,
-            "confidence": 0.7571555555555556,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Wir nennen das jetzt einfach mal Cryo, das hört sich an so wie cry, wir müssen weinen. Aber ja, in der Tat. Und zwar Cryo wurde mit der Unterstützung von Red Hat, IBM, Intel und SUSE als Container-Runtime für Kubernetes entwickelt, weil diese Firmen haben natürlich auch ein Interesse, im ganzen Container-Ökosystem dabei zu sein. Wie zum Beispiel gibt es ja noch OpenShift. Ich glaube OpenShift ist von Red Hat. Die nutzen unten drunter natürlich auch Kubernetes, ja, also die haben dann ihre eigenen Distros da oben drauf gesetzt oder es abgewandelt. Und die wollten natürlich ihr Business jetzt nicht auf einen der Hauptkonkurrenten, wie zum Beispiel Docker, stützen, der natürlich dann die Hand über Containerd hatte. Deswegen haben wir gesagt, okay, cool, es gibt jetzt dieses Container-Runtime-Interface. Jeder kann seine eigene High-Level-Container-Runtime schreiben. Deswegen lass uns doch mal zusammentun gegen den Platz hier, der als erstes da war, Docker ein bisschen ankämpfen und lass uns mal eine alternative Implementierung zu Container D schaffen. Und daraus entstand dann jetzt Cryo.",
-            "start": 1398905,
-            "end": 1457809,
-            "confidence": 0.794811764705882,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Aber ich habe gerade gelesen, dass Cryo Cloud-Native-Computing-Foundation-Project ist. Da steckt Docker auch mit dabei, oder? In der Cloud-Native-Foundation.",
-            "start": 1457849,
-            "end": 1467452,
-            "confidence": 0.6519473684210526,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Ja und nein. Also gehen wir nochmal einen Schritt zurück. Was ist die Cloud Native Compute Foundation? Die Cloud Native Compute Foundation ist ein Teil der Linux Foundation und die bundeln eine ganze Menge Projekte in diesem Cloud Native Space zusammen. und kümmern sich darum, dass die Entwicklung von diesen ganzen Tools und Programmen weitergetrieben wird. Dass die Qualität vielleicht nicht gewissen Standards entspricht, aber dass da genug Maintainer sind, dass da ein ordentlicher Security-Prozess drauf ist, dass da ordentlich Marketing drauf ist, blabliblub. Also diese Foundation ganz oben drauf kümmert sich eigentlich um die komplette Governance und Co. Und in so einer Foundation gibt es verschiedene Projektlevel. Ähnlich wie die Apache Foundation. Und zwar gibt's da so was wie Graduated, Incubating, Sandbox und Archived. Archived sind erst mal Sachen, die eingestampft wurden. Ja, das sind die Nichtverlierer, aber die haben sich nicht so entwickelt wie gedacht. Zum Beispiel die Container Runtime Rocket ist ein Archived Cloud-Native-Compute-Foundation-Projekt. Und jetzt stell dir vor, du machst ein neues Cloud-Projekt. Du machst jetzt die Wolfgang Container Runtime. Die spricht mit dir auf Österreichisch und die ist optimiert, um auf Bergen zu laufen. Und du sagst, hey, pass mal auf, ich möchte auch Governance haben. Dann kannst du dich bei der Cloud Native Compute Foundation bewerben und dann wird dein Projekt vielleicht, wenn du Glück hast, erstmal in Sandbox aufgenommen und dann musst du dich halt ein bisschen beweisen. Kriegst du es maintained und kriegst du genug Maintainer und hat das genug Traction? Ist das wirklich relevant für das ganze Ökosystem? Und dann steigst du eigentlich mit deinem Projekt ein bisschen auf. Irgendwann kommst du vielleicht in den incubating Bereich, incubating bedeutet jedes Projekt, was im incubating, was Minimum im incubating state ist, wird als stabil angesehen und du kannst es erfolgreich in Produktion einsetzen. Und dann die Königsklasse ist zum Beispiel dann graduated Projekte, das sind so die Flaggschiffe der Cloud Native Und was ist jetzt Cryo? Cryo selbst ist noch im Incubating. Das bedeutet eigentlich, wenn wir sagen, okay, Archived ist Level 0, Sandbox ist Level 1, Incubating ist Level 2 und Graduated ist Level 3 und mehr Level ist immer besser, wissen wir ja alle, dann ist Cryo bereits auf Level 2, somit als stabil anerkannt und somit kannst du Cryo selbst als Container Runtime, als High Level Container Runtime in Produktion einsetzen. nach der Klassifizierung der Cloud-Native Computing Foundation.",
-            "start": 1467901,
-            "end": 1618280,
-            "confidence": 0.7589598997493734,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Man muss schon sagen, mit den Contributors Red Hat, Intel, SUSE, Hyper, Microsoft oder Hyper-V, Microsoft, IBM, da stecken dann schon ziemliche Größen dahinter, muss man schon sagen. Also da ist wahrscheinlich auch ziemlich Druck drauf.",
-            "start": 1618300,
-            "end": 1633430,
-            "confidence": 0.8405555555555556,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Cryo selbst wird ja als Alternative zu Container D gebaut und Container D ist ein graduated Projekt in der Cloud Native Computing Foundation.",
-            "start": 1633490,
-            "end": 1642015,
-            "confidence": 0.8097391304347825,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Das ist dann höher oder?",
-            "start": 1642055,
-            "end": 1643296,
-            "confidence": 0.6294000000000001,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Das ist dann höher. Das heißt aber nicht, dass das eine irgendwie stabiler ist als das andere oder ähnliches. Generell kannst du Kubernetes mit beiden Runtimes konfigurieren, also eigentlich sogar mit mehr.",
-            "start": 1643316,
-            "end": 1654582,
-            "confidence": 0.8564375000000001,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Wenn ich jetzt so ein Kubernetes installiert habe oder irgend so ein Managed Kubernetes verwende, woher weiß ich dann überhaupt, was dieses Ding verwendet im Hintergrund? Oder gibt es da einen Standard? Ist es immer Containerd?",
-            "start": 1654602,
-            "end": 1665546,
-            "confidence": 0.734,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Defaultmäßig kommt es natürlich darauf an, wer betreibt den Kubernetes Cluster. Ich kann mir schon sehr gut vorstellen, dass wenn du ein Managed Kubernetes Cluster auf Google betreibt, dass sie vielleicht sogar ihre eigene Container-Runtime haben, wie zum Beispiel gVisor oder sowas. Aber wenn ihr Kubernetes in der Firma einsetzt, dann fragt doch einfach mal ab, welche Container-Engine ihr benutzt mit kubectl describe-node und dann den Node-Name. Ich hatte ja vorhin erzählt, die kleinen Worker-Nodes, die Kubelets, die reden mit der Container-Runtime deswegen. Wenn ihr euch die Beschreibung, die Infos von einer aktuellen Node holt mit kubectl describe node, dann seht ihr auch, welche Container Engine, welche High-Level Container Engine ihr dort betreibt.",
-            "start": 1665566,
-            "end": 1704471,
-            "confidence": 0.7596017699115044,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Okay und was ist jetzt im Endeffekt besser? ContainerD oder Cryo oder wo ist der Unterschied überhaupt?",
-            "start": 1704531,
-            "end": 1709853,
-            "confidence": 0.8285294117647061,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Ich lehne mich mal aus dem Fenster und sage, für 95, 98, 99 Prozent der Leute, die Kubernetes, beziehungsweise Docker, beziehungsweise diese High-Level-Container-Runtimes betreiben, da werden die meisten Funktionen identisch sein wie bei Containerd. Cryo selbst hat als Marketing-Claim, dass es für Kubernetes optimiert ist und dass sie committed sind, alle Kubernetes-Tests erfolgreich auszuführen. Ist natürlich ein bisschen logisch, wenn das als Referimentsimplementierung für die Container-Runtime-Interface gebaut wurde. Ist halt immer ein bisschen Marketing. Es gibt jetzt nicht das Kernfeature, wo die sich unterscheiden. Deswegen für die meisten Leute ist das, glaube ich, völlig egal. Cryo selbst kommt aber zum Beispiel auch bei Minikube im Einsatz. Minikube ist so eine Art Mini-Kubernetes, was viele Leute lokal betreiben, um zum Beispiel einen kompletten Kubernetes-Stack auf dem Laptop zu betreiben für die Entwicklung. Da kommt Cryo, wird da mitgeliefert.",
-            "start": 1710253,
-            "end": 1762881,
-            "confidence": 0.8210145985401462,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Heißt es dann, es ist irgendwie leichter oder so als Container D?",
-            "start": 1763261,
-            "end": 1766984,
-            "confidence": 0.7874166666666667,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Unten drunter tun die sich, glaube ich, nicht wirklich viel an Ressourcen, weil beide sind in Go geschrieben, beide managen den Lifecycle von Containern. Und ich meine, das Heavy Lifting macht ja eh die Low-Level-Runtime. Das bedeutet ein bisschen was runterladen, ein bisschen was entpacken. Ich weiß jetzt nicht, inwieweit da jetzt große Performance-Unterschiede drin sind oder ob die, wenn du überhaupt Applikationen erst hochfährst, ob das überhaupt irgendwie zu Buche schlägt.",
-            "start": 1767064,
-            "end": 1790203,
-            "confidence": 0.7686666666666666,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Jetzt hast du dir sicher Feinde unter der Cryo-Community gemacht. Also wenn ihr wisst, wo ein großer Unterschied ist oder wenn ihr glaubt, irgendwo ist ein großer Unterschied, lasst es uns wissen. Wir freuen uns dann natürlich auf Input. Wo liegen die wirklichen Stärken von Cryo gegenüber Container?",
-            "start": 1790478,
-            "end": 1805806,
-            "confidence": 0.7514583333333332,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Wir reden jetzt natürlich darüber Anfang Dezember 2022. Das Container-Ekosystem ist immer noch in Flux und entwickelt sich tierisch schnell. Die ganze Sache kann Anfang 2023 natürlich anders aussehen.",
-            "start": 1805846,
-            "end": 1818013,
-            "confidence": 0.775103448275862,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Also okay, Cuplets greifen über das Container-Runtime-Interface auf ContainerD und Cryo zu und ContainerD und Cryo machen dann das ganze Image-Downloading, Image-Container-Handling und so weiter drunter. Du hast am Anfang Docker-Shim erwähnt. Spielt das jetzt noch irgendwo eine Rolle? Wird der Docker noch irgendwo verwendet? Also das klassische Docker?",
-            "start": 1818278,
-            "end": 1838102,
-            "confidence": 0.7918775510204084,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Die Antwort ist nein. Kubernetes selbst supportet, wenn man ganz genau ist, kein Docker mehr. Du hattest die Docker-SHIM erwähnt. Nochmal ganz kurz zur Begriffserklärung. Eine SHIM, S-H-I-M, ist eigentlich ein API-Übersetzungslayer, wenn man so möchte. Das bedeutet, man setzt eine Zwischenebene rein, fängt die API-Abrufe ab, passt die übergebenen Parameter an, leitet die Aufrufe um oder fühlt sich gegebenenfalls selbst die Operation aus. Die ganze Shim introduced man eigentlich zur Kompatibilitätserweiterung und ihr könnt euch schon vorstellen, dass wenn sich unten drunter ein bisschen was ändert, dann muss man kontinuierlich diese Shim anpassen, was jetzt auch in der Programmierung nicht wirklich schön und nicht wirklich sauber ist. Deswegen hat Kubernetes vor einiger Zeit gesagt, wir droppen Docker Support. Das war auf jeden Fall die große Überschrift, die durch die sozialen Medien gegangen ist und jeder, der gar nicht so tief im Container-Ekosystem war, hatte irgendwie so Angst. Oh nein, oh nein, oh nein, kann ich jetzt keine Docker-Container mehr auf Kubernetes starten? Da war die Kommunikation vielleicht etwas optimierungsbedürftig.",
-            "start": 1838622,
-            "end": 1902321,
-            "confidence": 0.806405882352941,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Vielleicht bewusst sogar.",
-            "start": 1902341,
-            "end": 1903382,
-            "confidence": 0.9063333333333333,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Vielleicht auch bewusst sogar, man weiß es nicht, aber in diesem Satz, Kubernetes droppt Docker-Support, stecken halt unglaublich viele Probleme. Weil, was ist Docker? Hatten wir schon in der ersten Episode, auch in dieser Episode. Docker ist ja nicht gleich Docker. Docker ist Docker Inc., das ist Docker CLI, die High-Level-Runtime, blablabla.",
-            "start": 1903942,
-            "end": 1922037,
-            "confidence": 0.8108076923076923,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Aber kann ich jetzt meine Docker-Images auf Kubernetes noch verwenden?",
-            "start": 1922077,
-            "end": 1925100,
-            "confidence": 0.7021000000000001,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Ja, kannst du. Und der Grund ist ganz einfach, was Docker gedroppt hat, ist die Docker-Shim. Und die Docker-Shim wurde durch Container-Runtime-Interface ersetzt, was dann wieder zur Folge hat, dass Container-D, wenn du so möchtest, oder halt auch Cryo, Docker-Container ausführen kann. Docker-Container ausführen kann in dieser Hinsicht aber auch nur in Anführungszeichen, weil immer wenn wir von Docker-Container entsprechen, sprechen wir inzwischen von Container-Images, die dem OCI-Standard entsprechen. OCI, Open Container Initiative, ist mal wieder ein neues Konsortium, was ein paar Standards festgelegt hat, wie zum Beispiel so ein Container-Image auszusehen hat, wie man das entpacken kann und wie man damit agieren kann. Die haben da oben ein Standard drauf gesetzt.",
-            "start": 1925520,
-            "end": 1970644,
-            "confidence": 0.8367053571428568,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Die Aber wenn ich jetzt in Zukunft mit EntwicklerInnen spreche und ich sage, ja, ich habe jetzt gerade ein OCI-Image hochgefahren, wie viele Leute verstehen mich denn?",
-            "start": 1970744,
-            "end": 1979932,
-            "confidence": 0.7163703703703703,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Ja, das kommt, glaube ich, darauf an, mit wem du dann sprichst. Sprichst du mit der Frontend-Abteilung, die dann in der Regel GraphQL und Next.js machen, die werden dich wahrscheinlich nicht so gut verstehen. Sprichst du mit der DevOps-Cloud-Systems-System-Engineers-SAE-Abteilung, in der Regel sollten die dich dann schon verstehen, was du meinst, ja.",
-            "start": 1979972,
-            "end": 1996075,
-            "confidence": 0.7137884615384616,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Sollten zumindestens.",
-            "start": 1996095,
-            "end": 1997195,
-            "confidence": 0.8925000000000001,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Die Aussage ist ja nicht falsch. Das bedeutet, wenn du einen Docker-Run machst auf deiner lokalen Kiste, fährst du eigentlich dann ein OCI-formatiertes und kompatibles Container-Image hoch mit der High-Level-Runtime-Engine Container-D.",
-            "start": 1997715,
-            "end": 2012062,
-            "confidence": 0.7630967741935484,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Aber wenn ich das richtig verstehe, dann ist dieser OCI-Standard aus dem Docker-Image-Standard entstanden. Also der kommt von Docker Inc. Die haben das dort reingebracht, diesen Standard.",
-            "start": 2012102,
-            "end": 2023508,
-            "confidence": 0.8106666666666668,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Da kommen wir wieder ein bisschen in die Politik und in dieses Business-Spiel. Ja, weil mehr und mehr Leute in dieses ganze Container-Ökosystem kamen, haben mehr und mehr Leute geschrieben, hey, lass doch mal einen Standard machen, damit wir zum Beispiel auch irgendwie Docker-Image starten können. Auch die Docker-Image-Spezifikation hat sich natürlich weiterentwickelt. Da gibt's Docker Version 1, Image-Spezifikation und Version 2. Und die Version 2 wurde als Basis für die Open-Container-Initiative als Image-Spezifikation genutzt, genau.",
-            "start": 2023933,
-            "end": 2052469,
-            "confidence": 0.7706578947368421,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Und das heißt jetzt, dass auch Docker innerhalb von der OCI das Ganze weiterentwickelt. Also die kochen nicht mehr ihr eigenes Süppchen, sondern fahren jetzt in dieser gemeinsamen Spezifikation weiter.",
-            "start": 2052810,
-            "end": 2062495,
-            "confidence": 0.7683666666666666,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Genau, zusammen mit anderen großen Schiffen wie Alibaba, Amazon, Cisco, Facebook, Google, Intel und so weiter und so fort. Jeder, der sagt, okay, ich möchte da einen Fuß in der Tür haben, ist in dieser Open-Container-Initiative. Jetzt ist es natürlich für die einzelnen Runtimes und für die einzelnen CLIs natürlich schon noch von Interesse, ein eigenes Feature-Set obendrauf zu bauen, was dann aber natürlich nicht kompatibel zur Spezifikation wird.",
-            "start": 2062820,
-            "end": 2087737,
-            "confidence": 0.8259855072463772,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Weil wahrscheinlich alle HörerInnen jetzt ihr Bullshit-Bingo bereits voll haben und wahrscheinlich alle schon bei Bingo sind mit Docker, mit Kubernetes, mit Kubelet, mit Container Runtime Interface, ContainerD, Cryo und der Open Container Initiative und Cloud Native Computing Foundation. Darum wollen wir euch jetzt gar nicht länger noch mit der Low Level, wie heißt dieses Ding?",
-            "start": 2087985,
-            "end": 2108278,
-            "confidence": 0.7856428571428572,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Low Level Container Runtime und weiteren Spezifizierungen und Konsortien.",
-            "start": 2108338,
-            "end": 2115503,
-            "confidence": 0.7996666666666666,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Genau, da wollen wir euch jetzt nicht weiter noch nerven. Wichtig, was ich mir mitgenommen habe, ist einfach, es ist nicht mehr alles Docker. Es gibt gemeinsame Spezifikationen wie die Open Container Initiative, wo das Ganze weitergetrieben wird. Kubernetes verwendet nicht mehr den Docker Monolithen sozusagen, sondern greift jetzt eben über das Container Runtime Interface auf ContainerD oder Cryo als Stellvertreter auch.",
-            "start": 2116063,
-            "end": 2143097,
-            "confidence": 0.8662258064516127,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Oder auf die Wolfgang Runtime.",
-            "start": 2143137,
-            "end": 2144617,
-            "confidence": 0.8737999999999999,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Die bald natürlich hoffentlich veröffentlicht wird, greift auf diese Runtime zu, die sich dann um das ganze Image Handling, Netzwerk, das Hochfahren von den Containern und so weiter kümmert. Habe ich das richtig so zusammengefasst, Andi?",
-            "start": 2144657,
-            "end": 2157393,
-            "confidence": 0.8214722222222222,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Ja, ich würde sagen, das hast du recht gut zusammengefasst. Summa summarum kann man natürlich für die Programmierer auch sagen, Durch diese ganze Modularisierung wurde natürlich auch sehr viel Möglichkeit für eigene Side-Projects gestartet. Das bedeutet, falls ihr mal Bock habt, eure eigene Container-Runtime zu schreiben, habt ihr.",
-            "start": 2157433,
-            "end": 2174970,
-            "confidence": 0.7488958333333332,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Jetzt ... Ja, mir krippelt's schon unter den Fingern. Also, ich werde jetzt gleich losstarten mit meiner Wolfgang-Runtime.",
-            "start": 2174990,
-            "end": 2179473,
-            "confidence": 0.47894444444444456,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Guckt mal ein bisschen auf GitHub, da sind so ein paar gute Starts. Es gibt auch diverse Implementierungen. Crye und Containerd sind mit hoher Wahrscheinlichkeit schon die Referenzimplementierungen für die ganzen Standards soweit. Wir sind jetzt ein Layer tiefer als Docker gegangen, haben ein bisschen den Kontext zu Kubernetes mit erklärt. In zukünftigen Folgen werden wir nochmal ein Layer tiefer gehen und die Layer tiefer werden sich dann um Themen wie die Open Cortina-Initiative drehen, inklusive der Runtime und der Image-Spezifikation. Dann gehen wir vielleicht noch ein bisschen ein auf die Low-Level-Runtime. Zum Beispiel sowas wie Run-C oder Cutter-Containers. Und wenn wir irgendwann die Zeit nochmal haben, dann wie das eigentlich auf den einzelnen Betriebssystemen aussieht. Aber bis dahin wünschen wir euch viel Spaß. Wir verlinken natürlich eine ganze Menge relevante Links, wo ihr euch ein bisschen tiefer einlesen könnt in den Shownotes. Inklusive einem sehr gut beschreibenden Bild mit ganz vielen Pfeilen, wie die ganzen Technologien dann wirklich zusammenhalten in den Shownotes. Deswegen viel Spaß beim Eintauchen.",
-            "start": 2179533,
-            "end": 2239100,
-            "confidence": 0.8036904761904761,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Und was ganz wichtig ist, wenn ihr Leute beeindrucken wollt, was früher das HTML ist, doch keine Programmiersprache war, ist jetzt, ich verwende doch einen OCI-Container, keinen Docker-Container.",
-            "start": 2239120,
-            "end": 2249168,
-            "confidence": 0.7992142857142859,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Ich muss gerade lachen, aber schön klug scheißen, gefällt mir immer richtig gut.",
-            "start": 2249708,
-            "end": 2254632,
-            "confidence": 0.5582307692307692,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Und damit bis zur nächsten Episode. Schickt uns auch gerne Feedback. Tschau. Tschüss.",
-            "start": 2254672,
-            "end": 2258455,
-            "confidence": 0.7173846153846153,
-            "channel": null,
-            "speaker": "B"
-        }
-    ],
-    "confidence": 0.7875007166746292,
-    "audio_duration": 2264.0,
-    "webhook_status_code": null,
-    "webhook_auth": false,
-    "summary": null,
-    "auto_highlights_result": null,
-    "content_safety_labels": null,
-    "chapters": null,
-    "sentiment_analysis_results": null,
-    "entities": null
+  "language_code": "de",
+  "audio_url": "https://audio1.redcircle.com/episodes/ad2d93d9-918f-4a76-9026-0ad264afc94d/stream.mp3",
+  "punctuate": true,
+  "format_text": true,
+  "dual_channel": false,
+  "webhook_url": null,
+  "webhook_auth_header_name": null,
+  "webhook_auth_header_value": null,
+  "audio_start_from": null,
+  "audio_end_at": null,
+  "word_boost": [],
+  "boost_param": null,
+  "filter_profanity": false,
+  "redact_pii": false,
+  "redact_pii_audio": false,
+  "redact_pii_policies": null,
+  "redact_pii_sub": null,
+  "speaker_labels": true,
+  "speakers_expected": 2,
+  "content_safety": false,
+  "content_safety_confidence": null,
+  "iab_categories": false,
+  "custom_spelling": null,
+  "disfluencies": false,
+  "sentiment_analysis": false,
+  "auto_chapters": false,
+  "entity_detection": false,
+  "summarization": false,
+  "summary_model": null,
+  "summary_type": null,
+  "auto_highlights": false,
+  "language_detection": false,
+  "speech_threshold": null,
+  "id": "62y64637x8-0934-4c83-a0d5-c7f56bf713e4",
+  "status": "completed",
+  "error": null,
+  "utterances": [
+    {
+      "text": "Container, Kubernetes und Runtimes. Heute machen wir deine Buzzword-Bingo-Karte voll. Willkommen zu einer neuen Episode vom Engineering Kiosk. In Episode 46 haben wir uns mit dem Thema Docker und Container beschäftigt und darüber gesprochen, welches Problem Docker eigentlich löst. Heute gehen wir mal eine Ebene tiefer und klären, Welche Teile aus Docker herausgetrennt wurden, um für das erweiterte Container-Ökosystem nützlich zu sein? Was eine High-Level-Container-Runtime ist und was für Verantwortlichkeiten diese hat? Wie Kubernetes mit einer solchen Runtime kommuniziert? Ob es verschiedene Container-Runtimes gibt? Ob Kubernetes überhaupt Docker unterstützt? Und wir schmeißen Begriffen wie CNCF, OCI, CRI, SHIM und Co. um uns. Wenn du mit Docker noch nicht so viel zu tun hattest, empfehlen wir dir zuerst Episode 46 zu hören. Die heutige Episode kann als Folge 2 davon angesehen werden. Also, Bingo-Karten raus und los geht das Spiel.",
+      "start": 4520,
+      "end": 54746,
+      "confidence": 0.7891079136690645,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Einen wunderschönen, guten Episodenstart, Andi. Morgen sage ich jetzt nicht, weil es gibt ja vielleicht Leute, die mitten in der Nacht hören. Also einen schönen, guten Episodenstart. Andi, letztes Mal hast du die ganze Hörerschaft, wie du da Spezialist drin bist, schon beleidigt mit deinem Computerbild-Thema Docker. Das heißt, alle, die sich für Docker interessieren, sind Computerbildleser. Möchtest du jetzt, wo wir noch tiefer in Docker einsteigen, schon mal auch wieder irgendwas Beleidigendes am Anfang sagen?",
+      "start": 58477,
+      "end": 84560,
+      "confidence": 0.8134605263157897,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Also wir bewegen uns auf jeden Fall von dem Hype-Thema für die Masse jetzt langsam in dieser Episode ein bisschen weg.",
+      "start": 84740,
+      "end": 90562,
+      "confidence": 0.7533809523809525,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Moment, die letzte Episode war kein Hype-Thema. Da sind wir in die Tiefen eingedaucht. Das haben höchstwahrscheinlich die wenigsten gewusst, hoffentlich zumindest.",
+      "start": 90622,
+      "end": 98426,
+      "confidence": 0.7091818181818181,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "In der letzten Episode haben wir uns um Docker gekümmert. Primär darum, welches Problem Docker eigentlich löst, was die Vorteile sind, was die Nachteile sind, was der Unterschied zu Virtual Machine sind und so weiter und so fort. Und ich muss schon sagen, da Docker ist ja schon sehr lange auf dem Markt ist, kann man schon sagen, es ist ein Hype-Thema, weil es ist nicht nur eine Applikation, die von Linux-Kernel-Freaks genutzt wird, sondern nenn mir mal jemand, der heute in der Softwareentwicklung arbeitet, der noch keine Berührungspunkte mit Docker hat. Ich glaube, diese kleine Gruppe wird sehr schwer zu finden sein. Besonders im Webumfeld ist es natürlich mega gehypt, auch durch die Hyperscaler, Amazon, Google, Microsoft und so weiter, durch deren neuen Services. Natürlich aber auch durch Sachen wie Kubernetes und Co. Deswegen, heute bewegen wir uns ein bisschen weg von diesem Hype und gehen eine Ebene tiefer. Ich will nicht sagen, wir gehen jetzt von der Build zu Computerbuild, sondern ich würde jetzt eher sagen, wir gehen von der Build heute schon, vielleicht sogar schon auf CT-Level vom Heise Verlag. Vielleicht noch nicht auf das IX Level, weil meines Erachtens nach ist das IX Level noch ein bisschen tiefer als das CT Level. Aber ich denke, heute bewegen wir uns so irgendwo zwischen CT und IX. Ich denke, wir gehen nämlich mal ein Layer tiefer. Und das ist ja wohl keine Beleidigung, oder?",
+      "start": 98446,
+      "end": 175723,
+      "confidence": 0.825029661016949,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Es gibt sicher jemanden, den du jetzt beleidigt hast, je nachdem, was für Magazine und Zeitschriften wer liest, aber es ist okay. Für mich bist du jetzt einfach der Computerbild-Experte, eindeutig. Das bleibt ja dieser Titel.",
+      "start": 176542,
+      "end": 187295,
+      "confidence": 0.7470833333333332,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Ich muss mal eine Sache offenbaren. Und zwar habe ich früher sehr oft CT gelesen. Also in meinen jüngeren Jahren. Ich auch. Eine super Zeitschrift.",
+      "start": 187335,
+      "end": 194641,
+      "confidence": 0.7143999999999999,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Es war meine Lieblingszeitschrift damals. Vor allem, da war das Internet noch nicht so weit, wie ich noch jung war zumindest.",
+      "start": 194701,
+      "end": 200883,
+      "confidence": 0.8232857142857144,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Also damals, als ich mit diesen ganzen Computern und Sachen angefangen habe, habe ich natürlich irgendwie so Webseiten gelesen wie WinFuture und was weiß ich, um da mal ein bisschen reinzukommen. heise.de habe ich lange Zeit gar nicht so wirklich so wirklich verstanden. Irgendwann habe ich mal eine CT gekauft, da habe ich dann auch nur Bahnhof Kofferklauen verstanden und echt super lang gebraucht.",
+      "start": 201003,
+      "end": 220355,
+      "confidence": 0.7812812499999999,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Was hast du verstanden?",
+      "start": 220395,
+      "end": 221496,
+      "confidence": 0.54425,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Bahnhof Kofferklauen, also eigentlich nix. Bahnhof Kofferklauen. Ich habe die Hälfte der Artikel einfach nicht verstanden. Dann habe ich die mal wieder zur Seite gelegt und irgendwann, so ein Jahr später, habe ich mir wieder eine CT gekauft und dann habe ich die verstanden. So dann ging das so weiter und irgendwann habe ich mir ne ix gekauft da habe ich mir da wieder dann nicht mehr als die hälfte nicht verstanden habe ich die wieder zur seite gelegt und irgendwie ein jahr später habe ich mir wieder ne ix gekauft und dann habe ich angefangen auch die die tieferen artikel von ix besser zu verstehen. Also das war faszinierend, das war so ein bisschen meine Lernkurve mit CT, IX und Computern. Aber wenn du es mit der Print-Medien-Landschaft vergleichen möchtest, ist es genau da. Wir gehen heute nämlich ein Layer tiefer. Nämlich wir gehen nicht ganz runter auf Linux, aber wir gehen ein Layer tiefer als Docker und natürlich spielt da auch der aktuelle Platz hier Kubernetes eine Rolle.",
+      "start": 221516,
+      "end": 271467,
+      "confidence": 0.7805764705882352,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Okay, dann fangen wir mal ganz vorne an. Ich als normalsterblicher User und nicht als Computerbildexperte, ich rufe da ja einfach docker run auf. Was wäre denn dann die nächste tiefere Ebene? Oder was passiert denn da? Oder ist docker run schon die tiefe Ebene?",
+      "start": 271767,
+      "end": 287487,
+      "confidence": 0.8345777777777779,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "In der Programmierung würde man sagen, nein ist es natürlich nicht. Docker Run ist jetzt erstmal das User Interface von der Applikation Docker mit deinem Command Line Parsing und so weiter und so fort mit dem Befehl Start oder Docker Run hast du gerade gesagt und dann dem Image Namen und so weiter und so fort. Jetzt ist es natürlich so, dass Docker durch den Hype, durch die Verbreitung immer mehr Features dazu bekommen hat. Also das Feature-Set, was ihr heute von Docker kennt, das war ja von Anfang an nicht so. Und so wie es in jedem großen Software-Projekt ist, fangen die Software-Engineers da langsam mal an, darüber nachzudenken. Okay, wie können wir die ganze Sache denn hier mal aufteilen? Wie können wir die ganze Sache vielleicht ein bisschen modularer machen? Und als dieser Gedanke dann ein bisschen weitergetrieben wurde, hat man sich überlegt, okay, Docker selbst braucht eine sogenannte Runtime. Und diese Runtime kümmert sich eigentlich um die Verwaltung und das Lifecycle-Management von den eigentlichen Containern. Das war schon immer alles in Docker implementiert. Und als erste Modularisierung haben sie einen Teil dieser Runtime, die sogenannte High-Level-Runtime, rausgetrennt. alleine zur Verfügung gestellt?",
+      "start": 288168,
+      "end": 354484,
+      "confidence": 0.8057319587628868,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Also am Anfang war es quasi ein Monolith, das war einfach Docker, ein großes Schiff. Und man hat dann angefangen, das in Services, wenn ich es mal so mit dem Hype-Namen benennen darf, rauszutrennen, um das einfach modularer zu machen, um das auch ein bisschen zu öffnen.",
+      "start": 354524,
+      "end": 369823,
+      "confidence": 0.8089999999999999,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Ja, kann man schon so sagen. Ich denke, das war vielleicht gar nicht so freiwillig alles, weil das ganze Thema Container hat natürlich einen mega Pfad aufgenommen. Und da kam natürlich sehr viel Druck von außen. Ich sag nur so Stichwörter wie Kubernetes und Co., da kommen wir aber gleich zu. Und von außen sieht das auf jeden Fall so aus, als hätte Docker, Docker Inc., die Firma dahinter, so ein bisschen die Flucht nach vorne ergriffen und gesagt hat, okay, das Thema Container nimmt Pfad auf, da spielen grad mehr Firmen mit, dann lass uns doch als Platzhirsch etablieren, weil wir haben die Codebase ja schon. Und als ersten Move hat Docker einen Teil ihrer High-Level-Runtime herausgetrennt. Das haben sie als einzelnes Projekt auch released. Und die ganze Sache haben sie, so innovativ wie Docker auch ist, Container-D genannt. D steht in dieser Hinsicht für Daemon, so wie im klassischen Linux-Umfeld bekannt. Und Container-D ist ein einzelner Linux-Daemon mit der Hauptaufgabe, den kompletten Container-Lebenszyklus auf dem Host-System zu managen.",
+      "start": 370323,
+      "end": 426767,
+      "confidence": 0.8264117647058823,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Was ist denn ein Container Lifecycle?",
+      "start": 427507,
+      "end": 430709,
+      "confidence": 0.6618333333333334,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Da muss man jetzt einmal ganz kurz verstehen. Ich rede die ganze Zeit von High Level Runtime und Low Level Runtime. Im Container-Ecosystem unterscheidet man die ganzen Sachen. Die Low Level Runtime kümmert sich um die Fähigkeiten des Betriebssystems, Container zu erschaffen, zu isolieren und so weiter.",
+      "start": 430749,
+      "end": 446036,
+      "confidence": 0.8361702127659575,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Also das ist der Teil, der dann mit ChangeRoot und so, wie wir erklärt haben, quasi kommuniziert, beziehungsweise, wenn man sich das so einfach vorstellt, dann dieses ChangeRoot macht und dann mit dem Linux-Betriebssystem in irgendeiner Form kooperiert.",
+      "start": 446276,
+      "end": 459106,
+      "confidence": 0.821263157894737,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Ganz genau. Kernel, Space, Commands. user space commands, lxc, also linux namespaces, changeroot und all diese magie, von mir aus auch freebsd jails und solaris container und weiß jetzt grad nicht wie es auf windows heißt, aber all diese magie, also der harte kram.",
+      "start": 459146,
+      "end": 477642,
+      "confidence": 0.7925000000000001,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Der harte kram ist lowlevel, richtig?",
+      "start": 477682,
+      "end": 479264,
+      "confidence": 0.6618333333333333,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Der harte Kram ist Low-Level und das nennt man halt Low-Level-Runtime. Da kommen wir mal irgendwann in Folge 3 oder 4 zu. Auf jeden Fall, wenn es um das Managen des Container-Lebenszyklus geht, dann reden wir in der Regel von einem High-Level, von einer High-Level-Runtime.",
+      "start": 479924,
+      "end": 493675,
+      "confidence": 0.7623111111111112,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Und was jetzt zum Beispiel das Netzwerk, also die Docker-Netzwerke, die miteinander kommunizieren, ist das dann Low-Level oder ist das dann High-Level?",
+      "start": 493715,
+      "end": 502362,
+      "confidence": 0.7490909090909091,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Das gehört zum High-Level.",
+      "start": 502382,
+      "end": 503263,
+      "confidence": 0.77,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Aber die Ausführung passiert dann auch irgendwo Low-Level natürlich im Betriebssystem, aber die Organisation passiert im High-Level-Team.",
+      "start": 504107,
+      "end": 511374,
+      "confidence": 0.8115294117647058,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Ja, man kann halt einfach sagen, die High-Level-Runtime kümmert sich generell um die Verwaltung von Containern. Und das bedeutet starten, stoppen, pausieren und so weiter. Um das Herunterladen von Images, ja, aus gewissen Repositories oder von Object Storage. Um das Verwalten von Storage und von Netzwerken. Aber auch um die Überwachung von Containern, dass sie auch wirklich ausgeführt werden. Und die High-Level-Runtime gibt der Low-Level-Runtime dann natürlich auch weiter, dass die Containerprozesse tatsächlich erstellt und ausgeführt werden. Also, das ist so der Lebenszyklus, ja? Also, man lädt ein Image runter, es werden Netzwerke erstellt, es wird Storage erstellt, das Image wird vielleicht entpackt. Dann sagt man, okay, dann sagt die High-Level-Runtime, okay, starte das ganze Ding noch mal, und dann wird dieser Startbefehl an die Low-Level-Runtime übergeben. Da wird dann die Linux-Körnermagie gemacht oder halt auch Windows-Körnermagie oder Solaris-Körnermagie. Dann übernimmt die High-Level-Runtime wieder und die kümmert sich dann um die Überwachung des Containers, dass der dann wirklich läuft und all drum und dran. Also der Lebenszyklus von einem Container gemanagt bei der High-Level-Runtime-Container, die in diesem Sinne.",
+      "start": 511789,
+      "end": 579294,
+      "confidence": 0.8235898876404497,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Das Container-D, wird das dann mitgeschippt mit Docker direkt? Also wenn ich mir jetzt Docker installiere, ist das irgendwo in Docker drin versteckt oder ist das schon sauber herausgelöst?",
+      "start": 579935,
+      "end": 591144,
+      "confidence": 0.7619310344827588,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Beides. Container-D ist sauber herausgelöst. Es ist in einem eigenen GitHub-Repository. Könnt ihr selbst klonen, könnt ihr selbst nutzen. Es ist aber auch so, wenn du Docker, den Docker-Daemon installierst, bekommst du automatisch Container-D mit. Weil sie haben es wirklich so rausgelöst, dass sie es auch selbst immer noch nutzen. Und Containerd wurde halt, wie bereits schon gesagt, von Docker erstellt, von Docker rausgetrennt und wieder integriert, wenn man so möchte. Und Docker verwendet selbst Containerd. Das bedeutet, wenn man Docker installiert, wird Containerd automatisch mit installiert.",
+      "start": 591524,
+      "end": 627738,
+      "confidence": 0.8213678160919539,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Okay, ich habe jetzt gerade bei mir mal gecheckt auf meinem Fedora Linux. Ich habe einen Container, die wirklich als eigenes Package installiert wurde, scheinbar mit Docker höchstwahrscheinlich dann mal mit installiert. Aber jetzt, wenn du sagst, okay, man kann es auch mit anderen Clients ansprechen. Gibt es da jetzt irgendwas oder ist das nur in der Theorie möglich?",
+      "start": 628057,
+      "end": 646090,
+      "confidence": 0.788372881355932,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Nee, das ist möglich. Und ich kann dir aus dem Stehgreif eigentlich drei eigene Clients sogar nennen, die in der Praxis ohne Problem möglich sind. Die erste Vorstellung ist, du kannst dir deinen eigenen Client schreiben. Containerd bietet ein Programminginterface an, womit du z.B. in Go recht einfach Images aus der Registry herunterladen kannst, starten kannst usw. Das bedeutet, wenn du dann mal ein bisschen Go schreiben möchtest und dir deinen eigenen Containerclient schreiben möchtest, kannst du das sehr gut tun. Dann gibt es die, dann gibt es eine Implementierung von ContainerD selbst, nennt sich NerdControl für ContainerD-Control.",
+      "start": 646430,
+      "end": 679693,
+      "confidence": 0.7216632653061223,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Wenn du sagst von ContainerD selbst, dann steckt da wieder Docker dahinter?",
+      "start": 679713,
+      "end": 684336,
+      "confidence": 0.7240833333333333,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Nein.",
+      "start": 684376,
+      "end": 684596,
+      "confidence": 0.836,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Oder ist das mittlerweile ein offener?",
+      "start": 684636,
+      "end": 686297,
+      "confidence": 0.6901666666666667,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Das ist inzwischen ein eigenes Repository, eine eigene Organisation auf GitHub. Klar, die Hauptcontributor sind, so viel ich weiß, immer noch die Leute von Docker, aber ist jetzt nicht mehr an Docker Inc. so stark gebunden. Die Lizenz von Containerd ist nämlich die Apache-2-Lizenz. Von daher ein ganz klassisches Open-Source-Projekt, würde ich mal sagen.",
+      "start": 686317,
+      "end": 706609,
+      "confidence": 0.7986851851851852,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Okay, und was macht jetzt da deine Wattwitz-Library-Client-Containerd? Man muss das lesen, damit man diesen dummen Wattwitz versteht. Dir hat das sicher gut gefallen, oder?",
+      "start": 707108,
+      "end": 717756,
+      "confidence": 0.6169600000000002,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Bei der Vorbereitung habe ich darüber stark gelacht. Nee, NerdControl ist ein CLI-Interface, was ebenfalls Containerd implementiert. Und als Showcase haben die mal zum Beispiel so tolle Features eingebaut wie Lazy Pulling. Was zum Beispiel Docker von Haus aus nicht kann. Lazy Pulling ist eine Technik, um Container bereits zu starten, bevor das Downloaden von Images komplett abgeschlossen ist. Wie es unten runter funktioniert, weiß ich leider nicht. Klingt auf jeden Fall recht geil.",
+      "start": 717776,
+      "end": 747486,
+      "confidence": 0.806756756756757,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Das heißt aber, Container D ist auch ziemlich flexibel, weil das Downloaden übernimmt höchstwahrscheinlich Container D, das Starten auch. Das heißt, die greifen da schon ziemlich tief dann ein.",
+      "start": 747886,
+      "end": 757170,
+      "confidence": 0.8143103448275862,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Genau, wie ich gerade gesagt habe, Container D übernimmt alle möglichen Aufgaben von einer High-Level-Runtime. Beim Starten eines Containers übergibt er natürlich irgendwann die Kontrolle an die Low-Level-Runtime, je nach Betriebssystem und Co. Aber was halt zum Starten alles dazu gehört, Volumes, Storage, Netzwerk, Namen checken von bereits existierenden Containern, damit du keinen Namenskonflikt hast und so weiter und so fort. All sowas übernimmt natürlich dann die Container, die High-Level-Container, Runtime-Container D in der Hinsicht.",
+      "start": 757190,
+      "end": 784548,
+      "confidence": 0.7913200000000002,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Okay, und was ist jetzt deine Nummer drei?",
+      "start": 784588,
+      "end": 786310,
+      "confidence": 0.673125,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Nummer drei ist Kubernetes. Kubernetes kann nämlich ebenfalls mit der High-Level-Runtime-Container D zusammenarbeiten.",
+      "start": 786330,
+      "end": 791575,
+      "confidence": 0.6883076923076923,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Okay, das heißt Kubernetes verwendet gar kein Docker?",
+      "start": 791907,
+      "end": 795068,
+      "confidence": 0.72475,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Ja, die Antwort auf diese Frage ist jetzt ja und nein. Ich weiß, das bringt dich jetzt nicht weiter.",
+      "start": 795088,
+      "end": 800029,
+      "confidence": 0.8177894736842104,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Korrekt. Dann erklär mal. Computerbildspezialist.",
+      "start": 800069,
+      "end": 803750,
+      "confidence": 0.7868,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Dafür müssen wir ein bisschen ausholen.",
+      "start": 803790,
+      "end": 805111,
+      "confidence": 0.7461666666666668,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Unser Computerbildspezialist holt jetzt ein bisschen aus, um den Unterschied zwischen Container, die Docker und die Verwendung in Kubernetes zu erklären. Herr Grunwald.",
+      "start": 805151,
+      "end": 813633,
+      "confidence": 0.831086956521739,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "In den ersten Tagen von Kubernetes hat Kubernetes wirklich mit der Docker CLI geredet. Die hatten eine sogenannte Docker-Shim eingebaut, um Container von Docker zu supporten, zu starten und so weiter, und haben dann die ganze Verwaltung an Docker abgegeben, haben sich dann die Resultate rausgeholt.",
+      "start": 813673,
+      "end": 831667,
+      "confidence": 0.7994130434782606,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Das heißt, die haben quasi Docker Run aufgerufen auf der Shell, wenn man es jetzt ganz dumm sieht, so wie ich das mache. Nur Kubernetes hat das halt automatisch für mich gemacht.",
+      "start": 832263,
+      "end": 840708,
+      "confidence": 0.7852187500000001,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Ja, mit hoher Wahrscheinlichkeit haben sie das schon halt, weil Kubernetes auch in Go geschrieben ist, sich dann die Packages rein importiert und das dann auf programmatischem Level gemacht.",
+      "start": 841008,
+      "end": 848672,
+      "confidence": 0.8001379310344828,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Kannst du einfach sagen, ja, oder?",
+      "start": 848933,
+      "end": 850614,
+      "confidence": 0.36933333333333335,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Mich würde es sehr stark wundern, wenn die wirklich einen Shell-Command mit Docker Run gefeuert hätten und sich dann auf Exit-Code-Basis da irgendwas runtergeholt hätten. Aber von daher, Jetzt bin ich extra.",
+      "start": 850634,
+      "end": 859598,
+      "confidence": 0.7707812500000002,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Auf deine Ebene vom Computerbild gegangen, dass man das möglichst auf einfache Sicht auf die Dinge, aber du musst natürlich das wieder auf der tiefen Sicht sehen. Aber da merkt man halt, dass du der Spezialist bist, der Computerbildspezialist.",
+      "start": 859618,
+      "end": 872181,
+      "confidence": 0.7287948717948718,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Auf jeden Fall hat das die ganze Zeit super funktioniert. Und ich weiß nicht, aber kannst du dich noch an die Zeit erinnern? Das war in den ersten Tagen, wo Docker so gehypt wurde, da gab's nämlich einen sehr, sehr großen Competitor, nannte sich CoreOS.",
+      "start": 872221,
+      "end": 885045,
+      "confidence": 0.8034222222222223,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Um ehrlich zu sein, an mir vorbeigegangen.",
+      "start": 885085,
+      "end": 886805,
+      "confidence": 0.8537142857142855,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "CoreOS war ein Operating System, was alles in Containern hatte. Das bedeutet, jeder einzelne Prozess auf dem Operating System lief in Containern. Und die hatten eine eigene High-Level-Runtime, die nannte sich RKT, kurz für Rocket.",
+      "start": 887205,
+      "end": 903406,
+      "confidence": 0.8776285714285715,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Okay, das sagt mir wieder was.",
+      "start": 904061,
+      "end": 905643,
+      "confidence": 0.4546666666666667,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Und weil ja Kubernetes jetzt der Container-Scheduler mehr und mehr an Market-Share begriffen hat, wurde irgendwann die Frage gestellt, ja Moment mal, aber Kubernetes hat jetzt Docker eingebunden, aber ich möchte jetzt Kubernetes auf CoreOS laufen lassen und da läuft die High-Level-Runtime-Rocket. Geht das? Und die Antwort war erst mal nein. Was dann gemacht wurde, Rocket wurde ähnlich wie Docker in Kubernetes implementiert. Und du merkst schon, wohin das geht. Jeder Softwareentwickler, da kräuseln sich so langsam die Finger und Fußnägel, weil du kannst dir vorstellen, zu diesen Zeiten gab es jetzt kein standardisiertes Interface zwischen Docker und Rocket. Das bedeutet, irgendwo gab es so eine If-Else-Condition oder so eine Switch-Condition. Wenn wir jetzt hier auf der Container-Runtime-Docker unterwegs sind, dann führe bitte dieses Set an Befehlen aus. Und wenn wir auf dem Container Runtime Rocket sind, dann führen wir bitte den linken Pfad da aus. Und jetzt stell dir mal vor, wo wir heute wären, wenn dies einfach so weitergegangen wäre. Das wäre ein Riesenprogrammierpfeil mit if else, if else, if else.",
+      "start": 905683,
+      "end": 965703,
+      "confidence": 0.7807861271676301,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Genau, und jeder gute Programmierer, wenn er so ein Case hat, macht dann ein Interface üblicherweise.",
+      "start": 965723,
+      "end": 971547,
+      "confidence": 0.7563125,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Und das ist es nämlich. Die Jungs und Mädels von Kubernetes sind nämlich sehr gute Programmierer und immer wieder gedacht, hey, das kann nicht so weitergehen, wir brauchen hier mal eine Abstraktion. Und dann hat Kubernetes die sogenannte CRI, die Container, das Container Runtime Interface erstellt. Das Container Runtime Interface ist eine Kubernetes API. Die wurde im Dezember 2016 eingeführt. Nur mal kurz zur Timeline. Container D, der erste Commit von Container D als Raustrend war im November 2015, also ein Jahr davor. Ihr merkt schon, das hängt alles miteinander zusammen.",
+      "start": 971827,
+      "end": 1005446,
+      "confidence": 0.7786263736263735,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Man könnte jetzt sagen, das war natürlich einfach ... Der Lauf der Zeit, Container, die wird schön rausgetrennt, danach gibt's ein Interface, die lieben sich alle. Aber was man so mitbekommen hat, war das ja eher alles zu Krieg und etwas unfreiwilliger, das Ganze, oder? Und wer behauptet den Markt?",
+      "start": 1005626,
+      "end": 1021717,
+      "confidence": 0.7992599999999996,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Also so tief steck ich in der Politik nicht drin, aber ich glaub, ich kann das recht einfach zusammenfassen. Überall, wo sehr viel Geld im Spiel ist, und im ganzen Container-Ökosystem ist sehr viel Geld im Spiel, da wird sich, glaub ich, auch gezankt. Ja, weil Geld verändert Menschen und da wird dann hier und da natürlich auch um Marketshare gekämpft.",
+      "start": 1021977,
+      "end": 1039327,
+      "confidence": 0.8262950819672134,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Aber dieses Container-Runtime-Interface, das jetzt Kubernetes da gebaut hat, haben die das allein gebaut oder ist das ein Konsortium, das dahinter steckt? Weil klassischerweise gewinnt man ja so den Marktkrieg am ehesten mit so einem Konsortium oder wenn da möglichst viele an Bord sind. Und war der Dockerfall mit dem Spiel auch? Oder waren das Gegner dann?",
+      "start": 1039367,
+      "end": 1059523,
+      "confidence": 0.8191929824561405,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Wer jetzt alles an der CRI wirklich dran war, um die zu erstellen, kann ich dir nicht sagen. Was ich dir sagen kann, ist, dass es halt nur ein Interface, nur eine Kubernetes-API ist. Und jetzt zum Beispiel in Mesos oder in Nomad oder vielleicht sogar in EKS, im Amazon-Service, vielleicht ist die Container-Runtime-Interface gar nicht da drin. Es ist halt primär eine Kubernetes-API, die wird definiert, standardisiert und spezifiziert.",
+      "start": 1059843,
+      "end": 1086809,
+      "confidence": 0.8147142857142856,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Aber wer wer bindet die dann ein jetzt zum beispiel um die um container die jetzt zu verwenden implementiert dann implementiert dann container die dieses interface oder gibts da ein zwischenteil noch.",
+      "start": 1087589,
+      "end": 1098595,
+      "confidence": 0.8384375000000002,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Du hörst dich an wie ein wie ein früherer java entwickler wir haben eine abstraktion lassen wir nochmal eine abstraktion und drunter drauf setzen damit wir ja flexibel sind.",
+      "start": 1098635,
+      "end": 1106460,
+      "confidence": 0.6876206896551725,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Nein, ich denke mir nur, wenn Docker zum Beispiel da die Gegner sind, dann werden die ja nicht freiwillig da irgendein Interface implementieren von Kubernetes. Oder vielleicht schon, keine Ahnung, wenn es der Markt will, aber ist halt die Frage.",
+      "start": 1107060,
+      "end": 1119132,
+      "confidence": 0.7421249999999999,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Kubernetes hat dieses Runtime Interface definiert. Containerd selbst hat ein Plugin drin, um dieses Runtime-Interface zu supporten. Das bedeutet, du kannst Container D, wenn du so möchtest, über zwei Arten ansprechen. Einmal über dieses klassische Runtime-Interface, das würde ich empfehlen, weil du dann von Haus aus, wenn du aus deiner selbstgeschriebenen Container-CLI oder aus Nerd-CTL ein Runtime starten möchtest und du implementierst das Container-Runtime-Interface, dann bist du automatisch in der Lage, verschiedene High-Level-Runtimes zu nutzen.",
+      "start": 1119172,
+      "end": 1149911,
+      "confidence": 0.7929200000000001,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Aber Docker nutzt wahrscheinlich intern ihr eigenes Ding.",
+      "start": 1149951,
+      "end": 1152893,
+      "confidence": 0.7273750000000001,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Das weiß ich nicht. Müsste ich mal nachgucken. Können wir mal recherchieren und nachreichen.",
+      "start": 1153622,
+      "end": 1156985,
+      "confidence": 0.6272142857142856,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Oder falls es jemand weiß, bitte gerne eine Message schreiben.",
+      "start": 1157005,
+      "end": 1160228,
+      "confidence": 0.5558,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Die Container-Runtime-Interface definiert eigentlich nur eine API zwischen Kubernetes und der Container-Runtime. Im Speziellen die Art und Weise, wie Kubernetes mit verschiedenen Container-Runtimes interagiert, also auch wieder den Lifecycle-Manage, bedeutet Container erstellen, runterladen, verwalten, bla, bli, blub.",
+      "start": 1160268,
+      "end": 1178023,
+      "confidence": 0.8116756756756756,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Das heißt, Kubernetes spricht über das Container-Runtime-Interface mit Container-D.",
+      "start": 1178343,
+      "end": 1182806,
+      "confidence": 0.7885555555555556,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Das ist korrekt. Würdest du einem Techniker, der sich ein bisschen tiefer mit Kubernetes auskennt, genau das so an den Kopf werfen und dir sagen, kann man mal ein bisschen konkreter werden? Also Kubernetes selbst ist ja auch wieder ein Riesenschiff und besteht aus etlichen Komponenten, wie zum Beispiel einem API-Server oder einem Kubelet. Ein Kubelet ist eigentlich dieser kleine Agent, der auf jeder Node läuft, auf jedem Server, wo Container gestartet werden können. Also du musst dir vorstellen, es gibt eine Kubernetes Management Plane und dann gibt sie die kleinen fleißigen Bienchen, das sind die Worker Nodes, die von der Management Plane die Aufgaben kriegen. Launch mal bitte fünf Container.",
+      "start": 1182846,
+      "end": 1217466,
+      "confidence": 0.7665495495495493,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Also das ist das Docker in Kubernetes quasi. Das, was ich so von der Command-Line kenne, das ist der Docker-Host, den Kubernetes gemacht hat. Und der spricht dann mit Containerd.",
+      "start": 1217778,
+      "end": 1229010,
+      "confidence": 0.8026333333333331,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Genau, sowas nennt man Kubelet im Kubernetes-Universum. Das bedeutet, die eigentlichen Worker-Nodes, das Kubelet, hat die Container-Runtime-Interface implementiert. Das Kubelet kriegt dann die Aufgaben vom Kubernetes API Server und startet dann Container durch die Container Runtime Interface, zum Beispiel jetzt Container D, weil Kubernetes kann nur High-Level Container Runtimes bedienen, die auch das Container Runtime Interface unterstützen und implementieren.",
+      "start": 1229050,
+      "end": 1258179,
+      "confidence": 0.8008305084745766,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Gibt's da jetzt noch andere außer Container D, dieses Rocket Shifter? Ist die Rocket schon abgestürzt, oder gibt's die noch?",
+      "start": 1258459,
+      "end": 1265744,
+      "confidence": 0.69035,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Die Rocket ist in der Hinsicht leider abgestürzt. Im ganzen Containerkrieg gibt es leider auch Verlierer. Und zwar ist es CoreOS und Rocket und das ganze Ecosystem drumherum. Die Projekte sind alle eingestellt. Ich weiß gar nicht, wann Kubernetes dann, oder ob es da noch Leichen im Code gibt von Kubernetes mit Rocket, das weiß ich jetzt grade nicht. Was ich aber weiß ist, dass es neben Container-D, weil wir haben ja jetzt ein Container-Runtime-Interface und ein Interface ermöglicht ja andere Implementierungen, neben Container-D gibt es jetzt auch Container-Runtime-Interface-O, also kurz für Cryo. Ich weiß nicht genau wie man es richtig ausspricht, aber es gibt eine alternative High-Level-Runtime neben Container-D als Alternative.",
+      "start": 1265784,
+      "end": 1308948,
+      "confidence": 0.8264464285714282,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Also wer übrigens jetzt schon ausgestiegen ist von unseren HörerInnen, wir werden so ein Übersichtsdiagramm auf Twitter gleich mit posten. Das heißt, wenn ihr die Folge hört, schaut euch dieses Diagramm an, dann ist es vielleicht auch leichter zu folgen. Weil wenn wir jetzt das Container Runtime Interface haben und jetzt haben wir das Container Runtime Interface, was nennt sich dieses, für was steht dieses O schon wieder? Schon wieder vergessen.",
+      "start": 1309179,
+      "end": 1330893,
+      "confidence": 0.7749718309859154,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Ich würde mal fast sagen, Für Open. Ich weiß es grad gar nicht. Es steht leider ... Ich hab's nicht gefunden, wofür das O steht. Aber ich würd mal sagen, es ist ein Open-Source-Projekt für Container Runtime Interface Open.",
+      "start": 1331013,
+      "end": 1342136,
+      "confidence": 0.7221794871794872,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Also, mir ist ja mit Bild schon das fast zu schwierig, dir zu folgen. Okay, es gibt jetzt einen zweiten Platzhirsch, würd ich fast sagen. Oder neben Container D dieses Cryo. Und was kann jetzt dieses Cryo oder wer steht hinter diesem Cryo und warum nicht Container D?",
+      "start": 1342196,
+      "end": 1356819,
+      "confidence": 0.7490625,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Naja, Container D, hatten wir ja gesagt, wurde von Docker erstellt. Und jetzt stell dir mal vor, du wärst ebenfalls eine große Firma in dem ganzen Sektor. Nehmen wir mal als ganz klassisches Beispiel Red Hat oder IBM oder Intel oder Suse. Wie geil findest du das, einen Großteil deines Businesses, deines zukünftigen Businesses, weil du möchtest ja auch was vom Stück vom Containerkuchen abhaben, dich dann 100% auf Docker zu verlassen? So als Firma, so aus der Business-Sicht.",
+      "start": 1357299,
+      "end": 1383321,
+      "confidence": 0.7694050632911391,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Okay, das klingt schon wieder ganz danach, dass sich die anderen zusammengetan haben, wir machen jetzt ein Gegenprodukt. Dann lass mich raten, hinter diesem Cryo steht ein Konsortium mit SUSE, was für andere Linux-Distributionen Red Hat hast du genannt, die ganze Linux-Mafia steckt da dahinter?",
+      "start": 1383621,
+      "end": 1398865,
+      "confidence": 0.7571555555555556,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Wir nennen das jetzt einfach mal Cryo, das hört sich an so wie cry, wir müssen weinen. Aber ja, in der Tat. Und zwar Cryo wurde mit der Unterstützung von Red Hat, IBM, Intel und SUSE als Container-Runtime für Kubernetes entwickelt, weil diese Firmen haben natürlich auch ein Interesse, im ganzen Container-Ökosystem dabei zu sein. Wie zum Beispiel gibt es ja noch OpenShift. Ich glaube OpenShift ist von Red Hat. Die nutzen unten drunter natürlich auch Kubernetes, ja, also die haben dann ihre eigenen Distros da oben drauf gesetzt oder es abgewandelt. Und die wollten natürlich ihr Business jetzt nicht auf einen der Hauptkonkurrenten, wie zum Beispiel Docker, stützen, der natürlich dann die Hand über Containerd hatte. Deswegen haben wir gesagt, okay, cool, es gibt jetzt dieses Container-Runtime-Interface. Jeder kann seine eigene High-Level-Container-Runtime schreiben. Deswegen lass uns doch mal zusammentun gegen den Platz hier, der als erstes da war, Docker ein bisschen ankämpfen und lass uns mal eine alternative Implementierung zu Container D schaffen. Und daraus entstand dann jetzt Cryo.",
+      "start": 1398905,
+      "end": 1457809,
+      "confidence": 0.794811764705882,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Aber ich habe gerade gelesen, dass Cryo Cloud-Native-Computing-Foundation-Project ist. Da steckt Docker auch mit dabei, oder? In der Cloud-Native-Foundation.",
+      "start": 1457849,
+      "end": 1467452,
+      "confidence": 0.6519473684210526,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Ja und nein. Also gehen wir nochmal einen Schritt zurück. Was ist die Cloud Native Compute Foundation? Die Cloud Native Compute Foundation ist ein Teil der Linux Foundation und die bundeln eine ganze Menge Projekte in diesem Cloud Native Space zusammen. und kümmern sich darum, dass die Entwicklung von diesen ganzen Tools und Programmen weitergetrieben wird. Dass die Qualität vielleicht nicht gewissen Standards entspricht, aber dass da genug Maintainer sind, dass da ein ordentlicher Security-Prozess drauf ist, dass da ordentlich Marketing drauf ist, blabliblub. Also diese Foundation ganz oben drauf kümmert sich eigentlich um die komplette Governance und Co. Und in so einer Foundation gibt es verschiedene Projektlevel. Ähnlich wie die Apache Foundation. Und zwar gibt's da so was wie Graduated, Incubating, Sandbox und Archived. Archived sind erst mal Sachen, die eingestampft wurden. Ja, das sind die Nichtverlierer, aber die haben sich nicht so entwickelt wie gedacht. Zum Beispiel die Container Runtime Rocket ist ein Archived Cloud-Native-Compute-Foundation-Projekt. Und jetzt stell dir vor, du machst ein neues Cloud-Projekt. Du machst jetzt die Wolfgang Container Runtime. Die spricht mit dir auf Österreichisch und die ist optimiert, um auf Bergen zu laufen. Und du sagst, hey, pass mal auf, ich möchte auch Governance haben. Dann kannst du dich bei der Cloud Native Compute Foundation bewerben und dann wird dein Projekt vielleicht, wenn du Glück hast, erstmal in Sandbox aufgenommen und dann musst du dich halt ein bisschen beweisen. Kriegst du es maintained und kriegst du genug Maintainer und hat das genug Traction? Ist das wirklich relevant für das ganze Ökosystem? Und dann steigst du eigentlich mit deinem Projekt ein bisschen auf. Irgendwann kommst du vielleicht in den incubating Bereich, incubating bedeutet jedes Projekt, was im incubating, was Minimum im incubating state ist, wird als stabil angesehen und du kannst es erfolgreich in Produktion einsetzen. Und dann die Königsklasse ist zum Beispiel dann graduated Projekte, das sind so die Flaggschiffe der Cloud Native Und was ist jetzt Cryo? Cryo selbst ist noch im Incubating. Das bedeutet eigentlich, wenn wir sagen, okay, Archived ist Level 0, Sandbox ist Level 1, Incubating ist Level 2 und Graduated ist Level 3 und mehr Level ist immer besser, wissen wir ja alle, dann ist Cryo bereits auf Level 2, somit als stabil anerkannt und somit kannst du Cryo selbst als Container Runtime, als High Level Container Runtime in Produktion einsetzen. nach der Klassifizierung der Cloud-Native Computing Foundation.",
+      "start": 1467901,
+      "end": 1618280,
+      "confidence": 0.7589598997493734,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Man muss schon sagen, mit den Contributors Red Hat, Intel, SUSE, Hyper, Microsoft oder Hyper-V, Microsoft, IBM, da stecken dann schon ziemliche Größen dahinter, muss man schon sagen. Also da ist wahrscheinlich auch ziemlich Druck drauf.",
+      "start": 1618300,
+      "end": 1633430,
+      "confidence": 0.8405555555555556,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Cryo selbst wird ja als Alternative zu Container D gebaut und Container D ist ein graduated Projekt in der Cloud Native Computing Foundation.",
+      "start": 1633490,
+      "end": 1642015,
+      "confidence": 0.8097391304347825,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Das ist dann höher oder?",
+      "start": 1642055,
+      "end": 1643296,
+      "confidence": 0.6294000000000001,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Das ist dann höher. Das heißt aber nicht, dass das eine irgendwie stabiler ist als das andere oder ähnliches. Generell kannst du Kubernetes mit beiden Runtimes konfigurieren, also eigentlich sogar mit mehr.",
+      "start": 1643316,
+      "end": 1654582,
+      "confidence": 0.8564375000000001,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Wenn ich jetzt so ein Kubernetes installiert habe oder irgend so ein Managed Kubernetes verwende, woher weiß ich dann überhaupt, was dieses Ding verwendet im Hintergrund? Oder gibt es da einen Standard? Ist es immer Containerd?",
+      "start": 1654602,
+      "end": 1665546,
+      "confidence": 0.734,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Defaultmäßig kommt es natürlich darauf an, wer betreibt den Kubernetes Cluster. Ich kann mir schon sehr gut vorstellen, dass wenn du ein Managed Kubernetes Cluster auf Google betreibt, dass sie vielleicht sogar ihre eigene Container-Runtime haben, wie zum Beispiel gVisor oder sowas. Aber wenn ihr Kubernetes in der Firma einsetzt, dann fragt doch einfach mal ab, welche Container-Engine ihr benutzt mit kubectl describe-node und dann den Node-Name. Ich hatte ja vorhin erzählt, die kleinen Worker-Nodes, die Kubelets, die reden mit der Container-Runtime deswegen. Wenn ihr euch die Beschreibung, die Infos von einer aktuellen Node holt mit kubectl describe node, dann seht ihr auch, welche Container Engine, welche High-Level Container Engine ihr dort betreibt.",
+      "start": 1665566,
+      "end": 1704471,
+      "confidence": 0.7596017699115044,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Okay und was ist jetzt im Endeffekt besser? ContainerD oder Cryo oder wo ist der Unterschied überhaupt?",
+      "start": 1704531,
+      "end": 1709853,
+      "confidence": 0.8285294117647061,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Ich lehne mich mal aus dem Fenster und sage, für 95, 98, 99 Prozent der Leute, die Kubernetes, beziehungsweise Docker, beziehungsweise diese High-Level-Container-Runtimes betreiben, da werden die meisten Funktionen identisch sein wie bei Containerd. Cryo selbst hat als Marketing-Claim, dass es für Kubernetes optimiert ist und dass sie committed sind, alle Kubernetes-Tests erfolgreich auszuführen. Ist natürlich ein bisschen logisch, wenn das als Referimentsimplementierung für die Container-Runtime-Interface gebaut wurde. Ist halt immer ein bisschen Marketing. Es gibt jetzt nicht das Kernfeature, wo die sich unterscheiden. Deswegen für die meisten Leute ist das, glaube ich, völlig egal. Cryo selbst kommt aber zum Beispiel auch bei Minikube im Einsatz. Minikube ist so eine Art Mini-Kubernetes, was viele Leute lokal betreiben, um zum Beispiel einen kompletten Kubernetes-Stack auf dem Laptop zu betreiben für die Entwicklung. Da kommt Cryo, wird da mitgeliefert.",
+      "start": 1710253,
+      "end": 1762881,
+      "confidence": 0.8210145985401462,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Heißt es dann, es ist irgendwie leichter oder so als Container D?",
+      "start": 1763261,
+      "end": 1766984,
+      "confidence": 0.7874166666666667,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Unten drunter tun die sich, glaube ich, nicht wirklich viel an Ressourcen, weil beide sind in Go geschrieben, beide managen den Lifecycle von Containern. Und ich meine, das Heavy Lifting macht ja eh die Low-Level-Runtime. Das bedeutet ein bisschen was runterladen, ein bisschen was entpacken. Ich weiß jetzt nicht, inwieweit da jetzt große Performance-Unterschiede drin sind oder ob die, wenn du überhaupt Applikationen erst hochfährst, ob das überhaupt irgendwie zu Buche schlägt.",
+      "start": 1767064,
+      "end": 1790203,
+      "confidence": 0.7686666666666666,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Jetzt hast du dir sicher Feinde unter der Cryo-Community gemacht. Also wenn ihr wisst, wo ein großer Unterschied ist oder wenn ihr glaubt, irgendwo ist ein großer Unterschied, lasst es uns wissen. Wir freuen uns dann natürlich auf Input. Wo liegen die wirklichen Stärken von Cryo gegenüber Container?",
+      "start": 1790478,
+      "end": 1805806,
+      "confidence": 0.7514583333333332,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Wir reden jetzt natürlich darüber Anfang Dezember 2022. Das Container-Ekosystem ist immer noch in Flux und entwickelt sich tierisch schnell. Die ganze Sache kann Anfang 2023 natürlich anders aussehen.",
+      "start": 1805846,
+      "end": 1818013,
+      "confidence": 0.775103448275862,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Also okay, Cuplets greifen über das Container-Runtime-Interface auf ContainerD und Cryo zu und ContainerD und Cryo machen dann das ganze Image-Downloading, Image-Container-Handling und so weiter drunter. Du hast am Anfang Docker-Shim erwähnt. Spielt das jetzt noch irgendwo eine Rolle? Wird der Docker noch irgendwo verwendet? Also das klassische Docker?",
+      "start": 1818278,
+      "end": 1838102,
+      "confidence": 0.7918775510204084,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Die Antwort ist nein. Kubernetes selbst supportet, wenn man ganz genau ist, kein Docker mehr. Du hattest die Docker-SHIM erwähnt. Nochmal ganz kurz zur Begriffserklärung. Eine SHIM, S-H-I-M, ist eigentlich ein API-Übersetzungslayer, wenn man so möchte. Das bedeutet, man setzt eine Zwischenebene rein, fängt die API-Abrufe ab, passt die übergebenen Parameter an, leitet die Aufrufe um oder fühlt sich gegebenenfalls selbst die Operation aus. Die ganze Shim introduced man eigentlich zur Kompatibilitätserweiterung und ihr könnt euch schon vorstellen, dass wenn sich unten drunter ein bisschen was ändert, dann muss man kontinuierlich diese Shim anpassen, was jetzt auch in der Programmierung nicht wirklich schön und nicht wirklich sauber ist. Deswegen hat Kubernetes vor einiger Zeit gesagt, wir droppen Docker Support. Das war auf jeden Fall die große Überschrift, die durch die sozialen Medien gegangen ist und jeder, der gar nicht so tief im Container-Ekosystem war, hatte irgendwie so Angst. Oh nein, oh nein, oh nein, kann ich jetzt keine Docker-Container mehr auf Kubernetes starten? Da war die Kommunikation vielleicht etwas optimierungsbedürftig.",
+      "start": 1838622,
+      "end": 1902321,
+      "confidence": 0.806405882352941,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Vielleicht bewusst sogar.",
+      "start": 1902341,
+      "end": 1903382,
+      "confidence": 0.9063333333333333,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Vielleicht auch bewusst sogar, man weiß es nicht, aber in diesem Satz, Kubernetes droppt Docker-Support, stecken halt unglaublich viele Probleme. Weil, was ist Docker? Hatten wir schon in der ersten Episode, auch in dieser Episode. Docker ist ja nicht gleich Docker. Docker ist Docker Inc., das ist Docker CLI, die High-Level-Runtime, blablabla.",
+      "start": 1903942,
+      "end": 1922037,
+      "confidence": 0.8108076923076923,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Aber kann ich jetzt meine Docker-Images auf Kubernetes noch verwenden?",
+      "start": 1922077,
+      "end": 1925100,
+      "confidence": 0.7021000000000001,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Ja, kannst du. Und der Grund ist ganz einfach, was Docker gedroppt hat, ist die Docker-Shim. Und die Docker-Shim wurde durch Container-Runtime-Interface ersetzt, was dann wieder zur Folge hat, dass Container-D, wenn du so möchtest, oder halt auch Cryo, Docker-Container ausführen kann. Docker-Container ausführen kann in dieser Hinsicht aber auch nur in Anführungszeichen, weil immer wenn wir von Docker-Container entsprechen, sprechen wir inzwischen von Container-Images, die dem OCI-Standard entsprechen. OCI, Open Container Initiative, ist mal wieder ein neues Konsortium, was ein paar Standards festgelegt hat, wie zum Beispiel so ein Container-Image auszusehen hat, wie man das entpacken kann und wie man damit agieren kann. Die haben da oben ein Standard drauf gesetzt.",
+      "start": 1925520,
+      "end": 1970644,
+      "confidence": 0.8367053571428568,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Die Aber wenn ich jetzt in Zukunft mit EntwicklerInnen spreche und ich sage, ja, ich habe jetzt gerade ein OCI-Image hochgefahren, wie viele Leute verstehen mich denn?",
+      "start": 1970744,
+      "end": 1979932,
+      "confidence": 0.7163703703703703,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Ja, das kommt, glaube ich, darauf an, mit wem du dann sprichst. Sprichst du mit der Frontend-Abteilung, die dann in der Regel GraphQL und Next.js machen, die werden dich wahrscheinlich nicht so gut verstehen. Sprichst du mit der DevOps-Cloud-Systems-System-Engineers-SAE-Abteilung, in der Regel sollten die dich dann schon verstehen, was du meinst, ja.",
+      "start": 1979972,
+      "end": 1996075,
+      "confidence": 0.7137884615384616,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Sollten zumindestens.",
+      "start": 1996095,
+      "end": 1997195,
+      "confidence": 0.8925000000000001,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Die Aussage ist ja nicht falsch. Das bedeutet, wenn du einen Docker-Run machst auf deiner lokalen Kiste, fährst du eigentlich dann ein OCI-formatiertes und kompatibles Container-Image hoch mit der High-Level-Runtime-Engine Container-D.",
+      "start": 1997715,
+      "end": 2012062,
+      "confidence": 0.7630967741935484,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Aber wenn ich das richtig verstehe, dann ist dieser OCI-Standard aus dem Docker-Image-Standard entstanden. Also der kommt von Docker Inc. Die haben das dort reingebracht, diesen Standard.",
+      "start": 2012102,
+      "end": 2023508,
+      "confidence": 0.8106666666666668,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Da kommen wir wieder ein bisschen in die Politik und in dieses Business-Spiel. Ja, weil mehr und mehr Leute in dieses ganze Container-Ökosystem kamen, haben mehr und mehr Leute geschrieben, hey, lass doch mal einen Standard machen, damit wir zum Beispiel auch irgendwie Docker-Image starten können. Auch die Docker-Image-Spezifikation hat sich natürlich weiterentwickelt. Da gibt's Docker Version 1, Image-Spezifikation und Version 2. Und die Version 2 wurde als Basis für die Open-Container-Initiative als Image-Spezifikation genutzt, genau.",
+      "start": 2023933,
+      "end": 2052469,
+      "confidence": 0.7706578947368421,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Und das heißt jetzt, dass auch Docker innerhalb von der OCI das Ganze weiterentwickelt. Also die kochen nicht mehr ihr eigenes Süppchen, sondern fahren jetzt in dieser gemeinsamen Spezifikation weiter.",
+      "start": 2052810,
+      "end": 2062495,
+      "confidence": 0.7683666666666666,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Genau, zusammen mit anderen großen Schiffen wie Alibaba, Amazon, Cisco, Facebook, Google, Intel und so weiter und so fort. Jeder, der sagt, okay, ich möchte da einen Fuß in der Tür haben, ist in dieser Open-Container-Initiative. Jetzt ist es natürlich für die einzelnen Runtimes und für die einzelnen CLIs natürlich schon noch von Interesse, ein eigenes Feature-Set obendrauf zu bauen, was dann aber natürlich nicht kompatibel zur Spezifikation wird.",
+      "start": 2062820,
+      "end": 2087737,
+      "confidence": 0.8259855072463772,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Weil wahrscheinlich alle HörerInnen jetzt ihr Bullshit-Bingo bereits voll haben und wahrscheinlich alle schon bei Bingo sind mit Docker, mit Kubernetes, mit Kubelet, mit Container Runtime Interface, ContainerD, Cryo und der Open Container Initiative und Cloud Native Computing Foundation. Darum wollen wir euch jetzt gar nicht länger noch mit der Low Level, wie heißt dieses Ding?",
+      "start": 2087985,
+      "end": 2108278,
+      "confidence": 0.7856428571428572,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Low Level Container Runtime und weiteren Spezifizierungen und Konsortien.",
+      "start": 2108338,
+      "end": 2115503,
+      "confidence": 0.7996666666666666,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Genau, da wollen wir euch jetzt nicht weiter noch nerven. Wichtig, was ich mir mitgenommen habe, ist einfach, es ist nicht mehr alles Docker. Es gibt gemeinsame Spezifikationen wie die Open Container Initiative, wo das Ganze weitergetrieben wird. Kubernetes verwendet nicht mehr den Docker Monolithen sozusagen, sondern greift jetzt eben über das Container Runtime Interface auf ContainerD oder Cryo als Stellvertreter auch.",
+      "start": 2116063,
+      "end": 2143097,
+      "confidence": 0.8662258064516127,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Oder auf die Wolfgang Runtime.",
+      "start": 2143137,
+      "end": 2144617,
+      "confidence": 0.8737999999999999,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Die bald natürlich hoffentlich veröffentlicht wird, greift auf diese Runtime zu, die sich dann um das ganze Image Handling, Netzwerk, das Hochfahren von den Containern und so weiter kümmert. Habe ich das richtig so zusammengefasst, Andi?",
+      "start": 2144657,
+      "end": 2157393,
+      "confidence": 0.8214722222222222,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Ja, ich würde sagen, das hast du recht gut zusammengefasst. Summa summarum kann man natürlich für die Programmierer auch sagen, Durch diese ganze Modularisierung wurde natürlich auch sehr viel Möglichkeit für eigene Side-Projects gestartet. Das bedeutet, falls ihr mal Bock habt, eure eigene Container-Runtime zu schreiben, habt ihr.",
+      "start": 2157433,
+      "end": 2174970,
+      "confidence": 0.7488958333333332,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Jetzt ... Ja, mir krippelt's schon unter den Fingern. Also, ich werde jetzt gleich losstarten mit meiner Wolfgang-Runtime.",
+      "start": 2174990,
+      "end": 2179473,
+      "confidence": 0.47894444444444456,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Guckt mal ein bisschen auf GitHub, da sind so ein paar gute Starts. Es gibt auch diverse Implementierungen. Crye und Containerd sind mit hoher Wahrscheinlichkeit schon die Referenzimplementierungen für die ganzen Standards soweit. Wir sind jetzt ein Layer tiefer als Docker gegangen, haben ein bisschen den Kontext zu Kubernetes mit erklärt. In zukünftigen Folgen werden wir nochmal ein Layer tiefer gehen und die Layer tiefer werden sich dann um Themen wie die Open Cortina-Initiative drehen, inklusive der Runtime und der Image-Spezifikation. Dann gehen wir vielleicht noch ein bisschen ein auf die Low-Level-Runtime. Zum Beispiel sowas wie Run-C oder Cutter-Containers. Und wenn wir irgendwann die Zeit nochmal haben, dann wie das eigentlich auf den einzelnen Betriebssystemen aussieht. Aber bis dahin wünschen wir euch viel Spaß. Wir verlinken natürlich eine ganze Menge relevante Links, wo ihr euch ein bisschen tiefer einlesen könnt in den Shownotes. Inklusive einem sehr gut beschreibenden Bild mit ganz vielen Pfeilen, wie die ganzen Technologien dann wirklich zusammenhalten in den Shownotes. Deswegen viel Spaß beim Eintauchen.",
+      "start": 2179533,
+      "end": 2239100,
+      "confidence": 0.8036904761904761,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Und was ganz wichtig ist, wenn ihr Leute beeindrucken wollt, was früher das HTML ist, doch keine Programmiersprache war, ist jetzt, ich verwende doch einen OCI-Container, keinen Docker-Container.",
+      "start": 2239120,
+      "end": 2249168,
+      "confidence": 0.7992142857142859,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Ich muss gerade lachen, aber schön klug scheißen, gefällt mir immer richtig gut.",
+      "start": 2249708,
+      "end": 2254632,
+      "confidence": 0.5582307692307692,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Und damit bis zur nächsten Episode. Schickt uns auch gerne Feedback. Tschau. Tschüss.",
+      "start": 2254672,
+      "end": 2258455,
+      "confidence": 0.7173846153846153,
+      "channel": null,
+      "speaker": "B"
+    }
+  ],
+  "confidence": 0.7875007166746292,
+  "audio_duration": 2264.0,
+  "webhook_status_code": null,
+  "webhook_auth": false,
+  "summary": null,
+  "auto_highlights_result": null,
+  "content_safety_labels": null,
+  "chapters": null,
+  "sentiment_analysis_results": null,
+  "entities": null
 }

@@ -1,938 +1,938 @@
 {
-    "language_code": "de",
-    "audio_url": "https://audio1.redcircle.com/episodes/1d125b42-5d9c-4925-8b11-52766f481f0d/stream.mp3",
-    "punctuate": true,
-    "format_text": true,
-    "dual_channel": false,
-    "webhook_url": null,
-    "webhook_auth_header_name": null,
-    "webhook_auth_header_value": null,
-    "audio_start_from": null,
-    "audio_end_at": null,
-    "word_boost": [],
-    "boost_param": null,
-    "filter_profanity": false,
-    "redact_pii": false,
-    "redact_pii_audio": false,
-    "redact_pii_policies": null,
-    "redact_pii_sub": null,
-    "speaker_labels": true,
-    "speakers_expected": 2,
-    "content_safety": false,
-    "content_safety_confidence": null,
-    "iab_categories": false,
-    "custom_spelling": null,
-    "disfluencies": false,
-    "sentiment_analysis": false,
-    "auto_chapters": false,
-    "entity_detection": false,
-    "summarization": false,
-    "summary_model": null,
-    "summary_type": null,
-    "auto_highlights": false,
-    "language_detection": false,
-    "speech_threshold": null,
-    "id": "62znl60jnb-a016-4b55-8353-81a65adab0f6",
-    "status": "completed",
-    "error": null,
-    "utterances": [
-        {
-            "text": "Also nach meinem Erlebnis damit würde ich jetzt als CTO oder eigentlich als Priority Nummer 1 sehen, meinen ProgrammiererInnen sowas zur Verfügung zu stellen. Und das ist glaube ich auch die große Stärke von Copilot, weil du ganz viele Kontext-Switches vermeidest. Ich glaube von den 100 Zeilen habe vielleicht 10 Zeilen ich geschrieben.",
-            "start": 2562,
-            "end": 23079,
-            "confidence": 0.7909433962264153,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "AI und speziell auf die Programmierung trainierte KI Modelle sind angetreten, um die Welt, wie wir programmieren, zu verändern. GitHub Copilot ist da der Platzhirsch im Markt. Viele Softwareentwicklerinnen haben den Service bereits ausprobiert, manche schwören darauf und wollen gar nicht mehr ohne, manche sagen, och ganz nett, aber nutzten es nicht regelmäßig und andere wiederum, Quote und Quote, hatten noch nicht die Zeit reinzuschauen. Wolfgang gehört zu den Early Adoptern und will gar nicht mehr ohne seinen Co-Piloten programmieren. Ich zum Beispiel habe es noch nie genutzt. In dieser Episode sprechen wir über Wolfgangs Erfahrungen und schneiden Themen an, wie zum Beispiel Bugs, die durch AI generiert werden, die Auslagerung von langweiligen Arbeiten, Training-Bias und veraltete Code-Vorschläge und ob wir wirklich schneller bzw. produktiver bei der Programmierung werden. Viel Spaß!",
-            "start": 27298,
-            "end": 75908,
-            "confidence": 0.8289389312977098,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Es gibt jetzt eine Bahnstrecke bei dir?",
-            "start": 88363,
-            "end": 90366,
-            "confidence": 0.7345714285714285,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Meine lieben Damen und Herren, der Hype-Train ist eingefahren. Willkommen zur heutigen Folge des Engineering-Cures. Heute sprechen wir mal ein bisschen über ein Hype-Thema. Wir propagieren ja eigentlich in diesem Podcast öfters, dass du nicht auf jeden Hype aufspringen solltest. Beziehungsweise, dass jeder Hype mal irgendwann wiederkommt. Auch Schlaghosen. Aber heute sprechen wir mal wirklich über ein Hype-Thema und zwar über dieses Buzzword von AI, Artificial Intelligence in der Softwareentwicklung. Und da kommt man natürlich um ein proprietäres Produkt nicht drumherum. Und zwar um GitHub Copilot. Und jetzt haben wir hier zwei verschiedene Charaktere in diesem Podcast. Einmal mich, den Late Adopter, den Dinosaurier, der, und das ist jetzt keine Lüge, noch nicht GitHub Copilot ausprobiert hat. Ich habe noch nicht mal diese 60-Tage-Testversion genutzt. Und dann haben wir auf der anderen Seite auch im tiefen Süden, aus dem Blickwinkel von Duisburg gesehen, Schon fast Italien haben wir diesen Early Adopter Dr. Wolfgang Gassler, der ohne GitHub Copilot gar nicht mehr programmieren kann. Worum geht es denn dann heute? Heute geht es um GitHub Copilot, ChatGPT und alles andere, was dann noch auf dem Markt existiert, um die Softwareentwicklung einfacher, schneller, effektiver und vielleicht auch günstiger zu machen.",
-            "start": 90406,
-            "end": 174260,
-            "confidence": 0.8037979797979796,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Also super, vielleicht bin ich Early Adopter für dich, aber ich glaube für viele Leute bin ich der Late Adopter. Ich habe mir im Dezember 22 oder so Copilot angeschaffen. Für viele ist es wahrscheinlich Late Late Late im Game. Also was ich nur damit sagen will ist, dass du wirklich altmodisch bist, Andi. Und du kennst ja diesen Satz, unsere Jobs werden nicht ersetzt durch die AI, sondern unsere Jobs werden ersetzt durch Leute, die mit AI umgehen können. Daher finde ich es gut, hast du das JetGPT schon mal ausprobiert, irgendwie in den Satz eingegeben, einmal gefragt, ob du deinen Rasen auf 1,7 Millimeter oder besser 1,9 Millimeter trimmen sollst, so Fragen, die dich beschäftigen im Leben.",
-            "start": 174639,
-            "end": 213393,
-            "confidence": 0.7949915966386556,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Habe ich schon mal noch eine kleine Korrektur zum Rasen wenn du deinen Rasen auf 1,7 oder 1,9 Millimeter mähst. Ich bin mir nicht sicher was dann wirklich noch von einem Rasen über ist, weil Rasen halb Länge misst man eigentlich in Zentimeter.",
-            "start": 214213,
-            "end": 227719,
-            "confidence": 0.7920697674418602,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Und was ist jetzt die ideale Länge?",
-            "start": 227759,
-            "end": 229800,
-            "confidence": 0.6869999999999999,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Ja das kommt immer ganz draufs Wetter an oder was du vorhast. Also nehmen wir mal zum Beispiel wenn es jetzt.",
-            "start": 229820,
-            "end": 233602,
-            "confidence": 0.6845238095238096,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Ihr wollt einfach eine kurze Antwort. Okay es ist schwierig.",
-            "start": 233622,
-            "end": 236363,
-            "confidence": 0.45309999999999995,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Kleiner Funfact, in Deutschland gibt es vermehrt Trockenperioden und alle sagen immer, mein Rasen verbrennt, mein Rasen verbrennt. Also für alle Leute, die einen Garten haben und es kommt eine längere Trockenperiode, beziehungsweise man merkt das schon, lasst den Rasen einfach mal so auf 6 plus Zentimeter stehen, dann bleibt er auch sehr sehr lange grün.",
-            "start": 237143,
-            "end": 257397,
-            "confidence": 0.811857142857143,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Ja, bei uns regnet es noch.",
-            "start": 258238,
-            "end": 259418,
-            "confidence": 0.4116666666666666,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Springen wir mal ins Thema. Du hast gesagt, du bist im Dezember...",
-            "start": 259439,
-            "end": 263082,
-            "confidence": 0.5576666666666666,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Einen Moment, bevor es weitergeht. Wir versuchen ja immer unsere Werbepartner so auszuwählen, dass es auch einen Mehrwert für euch am Audiogerät hat. Und wir erwähnen ja auch immer, dass sich in der IT eigentlich sehr dieser Arbeitsmarkt dreht. Nicht Unternehmen suchen jetzt die Fachkräfte aus, sondern die Fachkräfte, also wir, suchen uns die Unternehmen aus.",
-            "start": 263142,
-            "end": 282637,
-            "confidence": 0.8514821428571429,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Und aus diesem Grund ist PitchClub unser Partner der heutigen Episode. Man könnte sie auch als die Höhle der Löwen für Unternehmen, die Softwareentwickler suchen bezeichnen. Denn der PitchClub veranstaltet europaweit sein einzigartiges Reverse Recruiting Event, die PitchClub Developer Edition. Beim PitchClub Developer Edition pitchen Unternehmen sich selbst ihre Softwareprojekte und Jobs vor vorselektierten Softwareentwicklerinnen und Softwareentwickler. Kein langer Prozess oder wie Teilnehmer berichten, kein Bullshit Bingo. sondern knackige sechs Minuten, in denen sich das Unternehmen im Pitch präsentieren muss. Pro Event sind circa zehn Unternehmen am Start, 60 bis 80 Entwicklerinnen und nach den Pitches geht's in die One-on-One-Gespräche. Anschließend wird das ganze Event mit Snacks und Drinks bei einer Afterwork-Party abgeschlossen.",
-            "start": 283017,
-            "end": 326486,
-            "confidence": 0.8213539823008847,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Ist schon ein sehr cooles Konzept, finde ich, muss ich zugeben. Das Event hat jetzt schon 127 mal stattgefunden in über sechs Jahren und Firmen von groß bis klein haben Top-Talente dort gefunden. Da sind Firmen dabei wie SAP, Deutsche Bank, AXA, Porsche, Accenture, BWC, Check24, Pro7, Zeiss, Biontech und Andi, das wird dir am meisten gefallen als Kettensägen-Liebhaber, auch Stihl war dabei. Es sind aber nicht nur Konzerne, sondern auch Mittelständler und Startups wie Celonis, ZipGate, G-Data, Liliru, Lotum oder Crono24.",
-            "start": 326686,
-            "end": 357931,
-            "confidence": 0.8021585365853657,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Das Event funktioniert aber auch für Unternehmen sehr gut. Die Telekom war bisher zweimal auf der Pitchbühne und konnte zwei ihrer offenen Stellen besetzen. 2024 wollen sie mit weiteren Pitches an diesen Erfolg anknüpfen. Also wenn du aktuell auf der Jobsuche bist oder für dein Team oder für dein Unternehmen neue Top-Talente suchst, die nächste Möglichkeit selbst zu pitchen, beziehungsweise sich Pitches von Unternehmen anzuhören, ist am 27. Juli in München, 24. August in Dresden, 31. August in Hannover, 21. September in Berlin und am 28. September in Köln.",
-            "start": 358131,
-            "end": 393325,
-            "confidence": 0.8202921348314608,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Und natürlich am wichtigsten als Österreicher, muss ich das natürlich auch sagen, am 7.9. in Wien.",
-            "start": 393545,
-            "end": 399191,
-            "confidence": 0.7928125,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Alle Infos findet ihr unter pcde.io, paula-cesar-dora-emil.io. Link findest du aber natürlich auch in den Show Notes. Und jetzt geht's weiter mit dem Podcast. Werbung Ende. Du hast gesagt, du bist im Dezember 2022 in den Hype Train eingestiegen und hast mit der Nutzung von GitHub Copilot angefangen. Bevor wir jetzt in das Thema mal tief einsteigen, beziehungsweise bevor wir deine Erfahrungsberichte hören, nur mal ganz kurz zur Klarstellung, was GitHub Copilot ist. Auf der Webseite wird GitHub Copilot als dein Artificial Intelligence Per Programmer angepriesen. Es ist also ein AI-Tool, was dir mit der Eingabe von Code-Kommentaren Code generieren soll. Es hat grob Support für zwölf Sprachen.",
-            "start": 399231,
-            "end": 448320,
-            "confidence": 0.8235277777777776,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Was heißt denn grob? Sind es zwölf oder sind es elf? Was ist das für eine Ungenauigkeit? Diese AI-Welt, alles wird so ungenau definiert.",
-            "start": 448880,
-            "end": 455324,
-            "confidence": 0.5694583333333333,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Auf der Dokumentationsseite von GitHub stehen Programmiersprachen wie Go, Java, PHP, Python, Ruby, Scala. In anderen Quellen, denen von OpenAI, steht zum Beispiel unter anderem, dass auch Shell supportet wird. Und jetzt ist die Frage, ist Shell eine Programmiersprache? Weiß ich nicht. Deswegen ungefähr zwölf. Aber die wohl am besten supporteste Sprache ist wohl Python. Und zwar wurde GitHub Copilot mit 159 Gigabyte an Python-Code von 54 Millionen GitHub-Repositories trainiert. Also das ist wohl anscheinend das größte Trainingsmodell für eine spezifische Sprache. Was steckt hinter GitHub Copilot? Hinter GitHub Copilot steckt ein Language-Modell namens Codex. Codex wurde 2021 von OpenAI entwickelt und auch veröffentlicht. OpenAI ist auch die Firma hinter ChatGPT. Immer wenn wir von ChatGPT sprechen, sprechen wir immer von GPT3 oder GPT3 oder GPT4. Das Language-Modell Codex ist sozusagen der Nachkomme von GPT3. Und es hat eigentlich eine recht gute Integration in alle IDEs wie Visual Studio Code, JetBrains oder, Achtung, was ich auch sehr interessant fand, NeoVim. Ist die Zusammenfassung korrekt, Wolfgang?",
-            "start": 455344,
-            "end": 532757,
-            "confidence": 0.8247696969696966,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Ja, ob das alles richtig ist, kann ich natürlich nicht verifizieren, aber ich glaube, du bist alt genug, dass du schaffst, diese Webseite korrekt runterzulesen und dass sie nicht nur Bullshit verbreiten. Insofern sollte es mit den Sprachen ja stimmen. Meine Erfahrung ist, dass JavaScript super gut auch funktioniert, also ich glaube, dass da auch sehr viel Testdaten halt im Internet herumschwirren und dadurch, dass es sich halt auch gut trainieren lässt. Zu deiner Definition, was es eigentlich ist, dass es ein Tool ist, was dir Code vervollständigt, wenn du Kommentare eingibst. Ich glaube, es ist viel, viel mehr. Und ich würde es eigentlich eher so beschreiben, dass es dir Code vervollständigt, egal was die Eingabe unter Anführungszeichen ist. Also egal, ob das ein Kommentar ist, ob das schon Code ist, der vorhanden ist, ob du da eine Methode reinspringst. wird hier eine Zeile vervollständigt, ein Variablenamen, also es ist sowas ähnliches wie Autocompletion, wie man das so gewöhnt ist, dass hier zum Beispiel ein Typ in Java aufgelöst wird, schon automatisch, weil es klar ist, was das ist, aber es geht halt viel, viel weiter, dass der dir wirklich dann sinnvolle Vorschläge bis zu ganzen Funktionsblöcke vorschlägt und du kannst es einfach dann akzeptieren und hast es in deiner IDE zur Verfügung. Und es ist wirklich so jemand wie im Pair Programming, der dir Input liefert, während du programmierst. Und das ist eigentlich der große Unterschied zu JetGPT, wo du halt ein klassisches Webinterface hast, wo du einfach Fragen, Antworten sozusagen hast, wie in einem Jet. Was ich vielleicht auch noch kurz einwerfen möchte ganz vorab, weil das natürlich eigentlich schon nicht unserem Style entspricht, dass wir da ein Tool so hervorheben oder eine Firma auch so hervorheben. Und es gibt natürlich so ein paar Bestrebungen in der Open-Source-Welt in die Richtung zu gehen. Ich habe bisher noch nichts so Überzeugendes gesehen, aber wir lassen uns da gerne belehren, wenn es da schon was Cooles gibt, was wirklich da mithalten kann. Aber derzeit ist es halt leider, muss man auch dazu sagen, das einzige Tool, was wirklich super funktioniert und einfach zu verwenden ist und wir bekommen nichts bezahlt. Für diese Empfehlungen ist es einfach meine persönliche Empfehlung beziehungsweise meine Erfahrungen, die ich mit diesem Tool gemacht habe und ich zahle auch ganz normal dafür.",
-            "start": 533021,
-            "end": 656208,
-            "confidence": 0.7940259067357515,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Jetzt wird GitHub Copilot als dein AI-Pair-Programmer beschrieben. Im Pair-Programming gibt es eigentlich zwei Rollen. Einen, der den Code schreibt, der sogenannte Driver oder der Pilot. Und der andere, der sagt, wo lang es geht. Der Navigator bzw. Observer. Würdest du sagen, dass GitHub Copilot wirklich dann der Driver ist? Und du als, ich sagte gerade, Code-Kommentarschreiber, dann wirklich der Navigator und Observer?",
-            "start": 656555,
-            "end": 681036,
-            "confidence": 0.8074285714285714,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Es geht zumindestens in die Richtung, würde ich sagen. Also klar musst du noch selber viel schreiben, aber die Rollenverteilung ist schon relativ klar, aktuell zumindestens. Meiner Meinung nach, du überlegst dir, was du machen willst, wo du hingehen willst, in welche Richtung du gehen willst, wie die Funktionen vielleicht aufgeteilt sind. Und der Code wird dann vervollständigt und du musst immer wieder mal mithelfen. Auch teilweise einfach mit so einfachen Dingen, wie du fangst mit einem I an für if und dann ist es irgendwie klar, okay, du wirst jetzt irgendwie eine Weiche haben, eine Unterteilung und so kannst du auch einfach ein bisschen mithelfen mit einem Zeichen, das du eingibst, um so eine Richtung vorzugeben, weil teilweise ist es unklar für Copilot. Insofern würde ich schon sagen, es geht genau in die Richtung und aktuell musst du natürlich noch irgendwo beide Rollen übernehmen, aber man merkt auch jetzt in dem halben Jahr, wo ich das verwendet habe, dass da Optimierungen reingeflossen sind und es wird besser und Copilot übernimmt dir da noch wirklich mehr Arbeit von deinem Coding an sich.",
-            "start": 681076,
-            "end": 737057,
-            "confidence": 0.8227802197802203,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Jetzt bin ich immer ein großer Fan von dem Warum dahinter und jetzt würde ich gerne mal deine Motivation verstehen, deine Hauptmotivation. A, warum du damals im Dezember GitHub Copilot ausprobiert hast und B, wie sich die Hauptmotivation, warum du GitHub Copilot heute noch nutzt, geändert hast.",
-            "start": 737477,
-            "end": 756087,
-            "confidence": 0.8395744680851067,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Und die dritte Frage ist, warum man dann auch dafür bezahlt, weil das ist ja eigentlich das, was man sich zum Beispiel auch immer fragen sollte, wenn man ein Produkt kreiert oder stellt, gibt es Leute, die wirklich dafür bezahlen wollen und wirklich Geld dafür auf den Tisch legen, weil dann hast du die Bestätigung, dass es wirklich funktioniert, dass es einen Mehrwert schafft. Und im Prinzip genau darum ist es mir gegangen, damals herauszufinden, hatte es einen gewissen mehrwert ich war super kritisch damals letztes jahr und war eigentlich nicht sehr offen dafür so wie du natürlich klassischer bauer aus duisburg.",
-            "start": 756348,
-            "end": 785331,
-            "confidence": 0.8275196078431373,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Weil der bauer nicht kennt, der hat Frida nicht.",
-            "start": 785371,
-            "end": 787132,
-            "confidence": 0.5428888888888888,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Genau richtig und dann hatte ich mit einem freund eine pair programming session, Und der hatte Copilot, weil der schon in dem frühen Beta-Programm drin ist, weil der sehr stark in der Open-Source-Welt unterwegs ist und die gute Open-Source-Entwickler, die, keine Ahnung, es wird nicht so genau definiert, aber die wichtigen Open-Source-Entwickler hatten Zugriff zu diesem Tool früher und haben auch kostenlosen Zugriff. Und der hatte das schon. Und in einer Pair-Programming-Session habe ich mal gesehen, was da wirklich auto-vervollständigt wird. Und ich war so beeindruckt, dass ich mir gedacht habe, okay, das muss ich auch sofort selber ausprobieren. Ich war mir noch nicht sicher, ob es diese, aktuell sind es 100 Euro im Jahr, was ja eigentlich auch relativ wenig ist, muss man dazu sagen. Für ein SaaS-Tool oder so ist das ja eigentlich Standardwert und habe dann einfach mal begonnen und war dann aber in der Testphase von zwei Monaten eigentlich sowieso nach einer Woche eigentlich sold, weil ich mir gedacht habe, okay, das nimmt mir so viel Arbeit ab und ich wäre so viel produktiver, dass der Preis eigentlich gar keine Diskussion mehr war.",
-            "start": 787172,
-            "end": 844513,
-            "confidence": 0.7619839572192513,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Und wenn ich das jetzt richtig verstanden habe, habe sich die Hauptmotivation nach einer Woche Testphase bei dir jetzt auch weiter nicht geändert und das ist immer noch die Hauptmotivation, dass es für dich einfach so sinnvoll ist und ein Productivity Boost ist, dass du sagst, okay, her damit, ich nutze das weiter.",
-            "start": 844793,
-            "end": 859312,
-            "confidence": 0.7913207547169809,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Genau. Also Productivity Boost ist sicher eigentlich der Hauptgrund. Ich kann da auch mal ein Beispiel geben, ein ganz ein stupides Beispiel. Ich hatte gerade kürzlich ein großes SQL-Schema und in dem SQL-Schema hat es in circa 30 Tabellen oder so Datumsfelder gegeben und jedes Datumsfeld hatte ein Prefix, abc, efg, keine Ahnung, von den jeweiligen Tabellen. Ich hatte historische Gründe und ich wollte alle Datumsfelder umbenennen einfach in Date, damit dieses Prefix weg ist. Ich wollte einfach alle Prefixe loswerden. Was machst du normalerweise? Du gehst durch diese 30 Tabellen durch und überlegst dir diese Alter Statements, weil jedes Prefix eben anders ist, waren nicht die gleichen Prefixes. Gehst jede Tabelle durch, wie heißt die Tabelle, wie heißt dieses Feld, was muss ich für Alter Table Statement schreiben, damit dieses Feld umbenannt wird in Date. Wenn du Copilot hast, das habe ich auch gemacht, Gehst du in dieses Schema SQL-File rein, ans Ende, schreibst einmal dieses ALTER-Statement für eine Tabelle oder vielleicht für zwei Tabellen und ab diesem Zeitpunkt checkt Copilot dieses Pattern, was du eigentlich machen willst und nach zwei ALTER-Table-Statements gehst du in die nächste Zeile und es schlägt dir bereits ein drittes ALTER-Table-Statement vor von einer anderen Tabelle, die auch ein Date-Field hat mit dem jeweiligen Prefix und mit dem Kommando, um dieses Feld umzubenennen. Und so klickst du dann einfach 30 Mal auf DUB, auf Vervollständigen, 30 Mal in 9 Zeilen und hast einfach diese 30 alter Table Statements für alle Tabellen, die du in deinem ganzen Schema zur Verfügung hast. Und das dauert eine halbe Minute, würde ich mal sagen. Wenn du dir überlegst, wie lange du brauchst, um 30 alte Table Statements mit den richtigen Prefixes aus den richtigen Tabellen alleine zusammenzusuchen und dann zu schreiben, das braucht wesentlich länger. Also ich schätze mal, dass du das sicher 10 Minuten, wahrscheinlich eher länger vermute ich mal. dran bist und so brauchst du eine halbe Minute. Und das kannst du dir auch nicht programmieren. Du könntest dir natürlich jetzt irgendein komplexes Skript schreiben, was dir die Tabellen ausliest, die Namen und das vielleicht machen, aber alleine dieses Skript dauert wieder länger, weil für 30 Tabellen machst du kein eigenes Skript, das dir das irgendwie ausliest.",
-            "start": 859332,
-            "end": 985837,
-            "confidence": 0.7646172506738543,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Du hast dann aber nicht GitHub Copilot sowas gesagt wie, vervollständige mir bitte die letzten zwei alter Table Statements für die übergebliebenen 28 SQL-Tabellen.",
-            "start": 985857,
-            "end": 993001,
-            "confidence": 0.6606249999999999,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "In dem Fall war gar kein Kommentar im Spiel. Das könnte man natürlich noch probieren, in die Richtung, sowas zu kommentieren oder einfach Kontext geben. Im Prinzip Copilot ist ja ziemlich egal, ob das jetzt ein Kommentar ist, ob das irgendwo ein Text ist. Probiert halt einfach Patterns zu matchen. Aber in dem Fall war es wirklich nur zwei Alter Table Statements. Es ist sofort klar, ich will da mehr Alter Table Statements schreiben und so wird es vervollständigt.",
-            "start": 994474,
-            "end": 1016009,
-            "confidence": 0.7470253164556963,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Aber das ist schon mal ein gutes Stichwort. Und zwar hattest du gerade gesagt, du hast dem das ganze SQL-File gegeben und hast dann am Ende des SQL-Files diese Alter-Table-Statements geschrieben. Das bedeutet, die 100, 200 SQL-Zeilen waren dann ja sozusagen der Kontext, weil man sagt ja auch bei Chat-GPT, umso mehr Kontext dieses AI-Modell hat, desto besser werden die Antworten. Also so nach dem Motto, stell dir vor, du bist Maschinenbauer und du würdest jetzt einen neuen 3D-Ducker designen. Was würdest du machen? das was ist notwendig um fleisch zu drogen zum beispiel ja also du gibst ja umso mehr kontext du mitgibst das bedeutet du hast also eigentlich mit dem sql file den vorhandenen kontext reingegeben genau.",
-            "start": 1016249,
-            "end": 1056878,
-            "confidence": 0.7714957983193277,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Also der kontext ist super super wichtig weil wenn du einen normalen kollegen kollegin hast brauchst du natürlich den gewissen kontext und wir haben das ja auch oft genug auch in episoden besprochen dass der kontext so wichtig ist um zu verstehen wo man eigentlich hin will Und du musst natürlich auch einer KI ganz allgemein immer diesen Kontext mitliefern. Und das muss halt der richtige Kontext sein, weil du könntest ja auch sagen, okay, lies mein gesamtes Repository, aber das ist dann wieder zu viel Kontext, sondern es sollte halt der Kontext sein, der in dem Fall jetzt gerade gebraucht wird innerhalb dieser Datei. was es auch immer ist. Kurz erklärt an einem Beispiel, was ich selber gerade mal gehabt habe. Ein kleines Problem aus meinem nicht technischen Leben. Ich wollte einfach von einer Webseite die Infos bekommen, wenn dort neue Entries eingegeben werden. Zum Beispiel kann sich das wie eine Immobilienseite oder so vorstellen. Du wirst informiert werden über neue Wohnungen zum Beispiel. Und die Webseite hatte eben keinen Alert und die wollte mir das zusammenstückeln, dass ich da vielleicht eine Slack-Message oder sowas bekomme. Wollte eigentlich Tools verwenden, habe aber kein sinnvolles Tool gefunden, kein einfaches, kein kostenloses. Es war alles viel zu kompliziert und irgendwann habe ich mir gedacht, eigentlich wäre es doch gar nicht so schwierig, das selber zu programmieren. Und dann habe ich mir überlegt, okay, ich probiere das einfach mal schnell zusammen. Coden in JavaScript und habe mit dem Context begonnen. Das heißt, ich habe in meine JavaScript-Datei hineinkopiert als Kommentar den HTML-Code. den ich fetchen will und die URL einfach von einem Beispiel Item oder von zwei Items und habe dann angefangen mit dem Programmieren. Und dadurch dieser HTML-Code in den Kommentaren bereits verfügbar war, hat Copilot automatisch verstanden, okay, ich will da gewisse Felder aus diesem HTML-Code rauspassen. Ich will diese URL fetchen. Ich glaube, ich habe es auch in ein, zwei Kommentaren dazu geschrieben noch. Und am Ende wurde mir eigentlich fast alles vervollständigt. Copilot hat mir sofort angeboten, am Anfang Puppeteer zu importieren als Library. Ich habe noch nie in meinem Leben von Puppeteer gehört. Aber bin dann draufgekommen, es ist ein Headless-Tool, wo du einfach Webseiten fetchen kannst. Das heißt, es wurde mir sogar eine Library vorgeschlagen, die ich eigentlich gar nicht am Schirm hatte. Musste dann kurz googlen, was das überhaupt ist für eine Library. Und ich habe dann eigentlich nur ein, zwei Richtungen vorgegeben, okay, vielleicht noch eine Slack-URL, Webhook-URL, wie ich was aufteilen will, vielleicht so eine grobe Struktur. Hat schon ein, zwei Dinge gebraucht, die ich geändert haben wollte. Auf jeden Fall hatte ich am Ende 100 Zeilen Code, die mir genau das gemacht haben, die mir ein Headless-Browser geöffnet haben, genau diese Elemente rausgelesen haben in der Schleife. Das richtige Mapping hat Copilot schon gemacht. Von dem Titel hat mir da ein internes Objekt erzeugt, genau mit den Werten, mit den richtigen Pfaden, wo man das im HTML findet, also mit den zu X-Path-Pfaden im Prinzip, um das aus dem HTML-Code rauszulesen. Und am Ende hat ihr das noch mit meinem Default-Deployment in dem Docker-Container gemacht und dieses ganze Projekt hat mich ungefähr eine Stunde gekostet. Und nach einer Stunde war dieses Ding Fertig und ich glaube von den 100 Zeilen habe vielleicht 10 Zeilen ich geschrieben plus Anleitungen natürlich in welche Richtung es gehen soll, aber ich habe von den 100 Zeilen eigentlich kaum eine Zeile selber geschrieben.",
-            "start": 1056898,
-            "end": 1243191,
-            "confidence": 0.7795052083333333,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Ich nenne das Projekt jetzt einfach mal deinen Immobilienscraper.",
-            "start": 1243311,
-            "end": 1246313,
-            "confidence": 0.597,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Genau damit ich meine 300 Immobilien, die waren mir einfach zu wenig, ich will da schon ein bisschen Immobilien ansammeln noch.",
-            "start": 1246353,
-            "end": 1252799,
-            "confidence": 0.6281904761904763,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Aber da hast du mit einer leeren Datei angefangen. Bedeutet, also als du dieses Quote-und-Quote-Projekt angefangen hast, war noch nichts da, und du hast GitHub Copilot geöffnet und hast dann einen Kommentar geschrieben, was gemacht werden soll.",
-            "start": 1253039,
-            "end": 1265003,
-            "confidence": 0.758891891891892,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Kommentar, Kontext gegeben, HTML-File und dann langsam begonnen mit einer Function. Oder eben, wenn Copilot dann anfängt, irgendwas zu schreiben, dann sagst du, okay, das will ich eigentlich in einer Function auslagern, dann schreibst du const Function xy und dann wird dir das schon vervollständigt. Also, du hilfst schon so mit, Es ist jetzt nicht so wie in ChatGBD, hätte ich natürlich auch machen können, den gesamten Kontext einmal in ChatGBD kopieren und sagen, schreibe mir dieses ganze Ding unter einmal. Funktioniert ja theoretisch auch und teilweise auch ganz gut, aber Copilot ist halt mehr so dieser iterative Weg, wo du wirklich Schritt für Schritt dich vorarbeitest und Hilfe bekommst. Das ist der große Unterschied zwischen ChatGBD und Copilot, obwohl ja im Hintergrund wahrscheinlich sehr ähnliche Modelle auch stecken.",
-            "start": 1265043,
-            "end": 1306300,
-            "confidence": 0.7754728682170543,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Das bedeutet, dass du in deinem Kopf aber vorher das große Ziel, das große Problem in mehrere kleine unterteilt hast. Das bedeutet, du hast nicht GitHub Copilot diese große Aufgabe gegeben, die du haben wolltest. Scrape mir diese Webseite und hol mir all diese Informationen runter, sondern du hast das große Problem in viele kleine Probleme aufgeteilt, schon vorher in deinem Kopf, und hast dann nur die kleinen Schritte an GitHub Copilot gegeben. Ist das richtig?",
-            "start": 1306660,
-            "end": 1332650,
-            "confidence": 0.8253815789473682,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Das ist korrekt und das ist eher die Variante, die ich bevorzuge. Es gibt natürlich auch diese Variante wirklich, noch mehr Kontext, beschreibe das ganz genau, so wie in einem Ticket sozusagen, eine Story und übergib die dann JetGBD zum Beispiel oder auch Copilot. ist theoretisch auch möglich, wobei meiner Meinung nach funktioniert das mit JetGBD wesentlich besser, wenn du so eine Aufgabe hast und wirklich ein Result haben willst und dann vielleicht so iterativ noch Kommentare gibst, okay, bitte das solltest du ändern, das solltest du ändern, das ist so mehr die JetGBD herangehensweise. Und mir als Programmierer ist eigentlich die Copilot herangehensweise lieber, wo ich einfach mehr Einfluss habe, mehr Direktiven geben kann, vielleicht auch mal was auslagern kann. Man sieht dann, der Code macht Sinn, aber ich möchte eine Funktion noch auslagern, kopiere das raus. Also dass man da schon iterativ mitarbeitet, ist meine persönliche präferierte Variante, weil dann auch der schönere Code am Ende üblicherweise rauskommt.",
-            "start": 1332830,
-            "end": 1386334,
-            "confidence": 0.7894187499999998,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Inwieweit wäre das denn sinnvoll, wenn ich jetzt erst Chetchipiti nutzen würde und dann einen Prompt geben würde, a la, stell dir vor, du wärst ein Programmierer und stell dir vor, du müsstest eine Immobilienwebsite scrapen, um dir eine neue Wohnung zu mieten und du möchtest dann alle Inserate mit diesen Kriterien haben und das wäre ein Programmierprojekt. Hallo Chetchipiti, bitte breche mir dieses Programmierprojekt in einzelne abarbeitbare Schritte hinab, dass du dann einzelne Schritte bekommst und diese Schritte dann Stück für Stück nach Copilot kopierst, um dann den Code generieren zu lassen?",
-            "start": 1386614,
-            "end": 1419354,
-            "confidence": 0.7820752688172039,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Das würde wahrscheinlich sehr gut funktionieren. Das persönliche Problem, was ich habe, ich verwende auch JetGPT durchaus für Coding-Dinge, eben für so klare Anweisungen. Mein persönliches Problem ist immer, dass ich dann das gesamte Resultat durchchecken muss und auch Fehler prüfen muss und es kommen Fehler vor, ganz klar. Also das ist nie ein perfekter Code und Ich persönlich finde es immer schwieriger, ganz viel Code zu verstehen, durchzulesen. JetJPG ist auch so ein bisschen langsam, dieses Webinterface, wenn man das jetzt nicht über API oder sonst was verwendet. Das finde ich irgendwie mühsamer, unter einmal alles zu verstehen und dann wieder die Probleme zu extrahieren und wieder Feedback zu geben. Das finde ich irgendwie umständlicher. langsamer, also wenn ich in meiner Idee wirklich schrittweise sofort reagieren kann und sehe, oh das ist die falsche Richtung oder einen kleinen Tipp geben kann und sofort in die richtige Richtung die Anweisung geben kann, das fühlt sich für mich zumindest aktuell noch wesentlich schneller an. Aber ich bin auch hin und wieder beim Experimentieren, kann man wirklich Chat-GPD vielleicht ein komplettes Ticket alleine bearbeiten lassen und ich habe das gerade vor ein paar Tagen probiert mit einem JavaScript-Code, der relativ kurz war, wo ich wirklich gesagt habe, das ist der aktuelle Code, ich will das ändern, mach mir das. Und das hat eigentlich erstaunlich gut funktioniert. Aber es muss halt dann wirklich sehr abgeschlossen sein, sehr einfach, weil sonst muss man halt extrem viel drüber iterieren und das ist irgendwie, fühlt sich einfach langsam an. Vielleicht ist es auch einfach, dass es nicht integriert ist in die IDE, macht auch schon viel aus.",
-            "start": 1419394,
-            "end": 1501756,
-            "confidence": 0.7760295202952031,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Nutzt du denn in irgendeiner Art und Weise die Kombination von Chat-GPT und Co-Pilot? Vielleicht nicht um große Probleme herunterzubrechen, aber in einer anderen Art und Weise?",
-            "start": 1502292,
-            "end": 1511563,
-            "confidence": 0.8052592592592593,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Ich würde sagen, am ehesten um Inspiration zu bekommen für irgendwelche technische Lösungen. Wie könnte man sowas angehen? Oder wenn man eben auch nicht im Code so klar die Möglichkeit hat, jetzt da loszustarten schon von dem Projekt. Wenn es um irgendeinen Algorithmus geht, so ganz oberflächlich, dann finde ich es persönlich auch oft gut, einfach diese Frage in JGPT zu stellen, weil dann bekommt man eine längere Antwort. Das ist in Copilot teilweise schwieriger. Es funktioniert schon auch, aber durch die andere Herangehensweise ist es ein bisschen schwerer, da wirklich auf eine Frage eine Antwort zu bekommen.",
-            "start": 1511603,
-            "end": 1544123,
-            "confidence": 0.8184489795918364,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Kommen wir nochmal zurück auf den Kontext, den du Copilot gibst. Wir hatten gerade das Beispiel von einem SQL-File und danach hast du irgendwie HTML-Code da reinkopiert für deinen Immobilien-Scraper. Jetzt besteht aber in der Regel ja ein Software-Projekt aus mehreren Files, aus 100.000, 10.000, 100.000 Lines of Code, aufgeteilt auf Hunderte von Dateien. Inwieweit kommt GitHub Copilot mit verschiedenen Dateien und wirklich mit existierenden Software-Projekten. Klar, richtet er den Kontext wirklich aus dem kompletten Projekt, so wie eine lokale IDE mit Klassenvorschlägen und Reusen von Funktionen und so weiter und so fort?",
-            "start": 1544475,
-            "end": 1584052,
-            "confidence": 0.7864516129032255,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Also ich kann natürlich nicht genau sagen, was alles an Copilot gesendet wird. Üblicherweise ist es eher der Kontext, aber man hat schon so das Gefühl, dass in irgendeiner Form auch ein Lernen passiert mit Variablennamen zum Beispiel, die in anderen Dateien drin sind, aber das entsteht dann eher dadurch, dass man diese Variablennamen schon mal verwendet hat oder in der anderen Datei auch Vorschläge bekommen hat. Also es wird schon in irgendeiner Form dieser Kontext beibehalten, aber es ist jetzt nicht so, dass alle Dateien irgendwie an Copilot gesendet werden, weil da meines Wissens zumindest der Kontext dann zu groß wäre. Also es ist schon eher lokal beschränkt und da muss man auch sagen, das ist eine gute Kombination mit der IDE. Die ganzen klassischen Klassenvervollständigungen, die basieren einfach über die IDE wie bisher. Das funktioniert ja auch sehr gut.",
-            "start": 1584745,
-            "end": 1630175,
-            "confidence": 0.8288794326241133,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Tolles Stichwort, Kontext zu groß. Bei der Vorbereitung für diese Episode hatte ich gelesen, dass das Codex-Modell, also das erweiterte Modell von GPT-3, einen Kontext von bis zu 14 KB Python-Code kann, wohingegen GPT-3 nur 4 KB an Kontext halten kann. Und das ist ja auch einer der größten Unterschiede zu dem aktuellen Modell GPT-4, was dann einen deutlich größeren Kontext vorhalten kann. Bist du denn schon mal bei der Arbeit an das Limit des Kontext, den du Github Coop alles füttern kannst, gestoßen, dass du gesagt hast, das ist zu viel? Oder wo du gemerkt hast, die Antwort stimmt nicht wirklich, weil die erste Hälfte des Kontextes abgeschnitten wurde? Oder vielleicht die letzte?",
-            "start": 1630495,
-            "end": 1676210,
-            "confidence": 0.8307456140350882,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Bei Copilot hast du ja keinen Einfluss drauf, was wirklich der Kontext ist oder die Prompt, weil du das ja nicht wirklich eingibst in dem Sinne, sondern es passiert einfach durch den Text, der in deiner Datei steht, rundherum, wo dein Cursor gerade sitzt. Bei JetJPG laufst du natürlich oft in dieses Problem rein. Ich hatte gerade kurz auch wieder ein kleines Problem. ein Bild von einer Teilnehmerliste mit dem Handy gemacht, bei einem Workshop, von einem Ausdruck, und ich wollte den digitalisieren, möglichst schnell. Und was man halt früher so gemacht hat, ist mit irgendeiner OCR-Software, mit irgendwelchen Apps, die mal OCRt, und dann probiert, irgendwie die in eine Tabelle überzuführen, wie auch immer. Und genau das Gleiche wollte ich aber möglichst schnell probieren, und ich hab mal schnell gecheckt, wie man möglichst einfach was OCRn kann. Hab gefunden, das kann Google Cloud. Ihr habt dann einen Account, einen Kommando auf der Commandline, gcloud, das ganze OCRen, dann habe ich ein großes JSON-Fall bekommen, das habe ich in JetJPG kopiert, das war dann eben zu lang, weil das halt sehr viel Metadaten gehabt hat. Hab dann aber sehr schnell gemerkt, dass am Anfang eh eine reine Textrepräsentation in einem Feld steht von dem JSON. von diesen Namen, die in dieser Teilnehmerliste drin waren und Firmen, aber natürlich in der komplett falschen Reihenfolge, weil OCR-Tabelle, da kommt natürlich keine Tabelle raus, sondern ein langer String dann am Ende. Aber diesen String habe ich dann JGPD gefüttert und habe gesagt, okay, das ist eine Tabelle, das ist ein Output von OCR, mach mir eine Tabelle daraus und am Ende ein CSV und der Output war perfekt. Also ihr habt da auch wieder super schnell innerhalb von einer Minute, würde ich mal sagen, oder zwei Minuten, gut, ein bisschen googeln war auch noch dabei, lass es zehn Minuten sein, eine Tabelle OCRt und am Ende ein CSV rausbekommen. Und das ist halt einfach das Coole daran, dass JetGPG durch das Language Model erkennt, was ist ein Vorname, was ist ein Nachname, wie müsste die Tabellenstruktur sein, sofort dieses Pattern erkennt und das dann richtig umsetzt und auflöst, weil das war ja eigentlich der schwierige Schritt, den du sonst normal irgendwie manuell machen musst und der wird dann halt schnell erledigt und in dem Fall das JSON, das komplette JSON-File war zu groß für JGPT, aber wenn du dann den richtigen Snippet raussuchst aus diesem JSON, dann ist es wieder kein Problem und da sieht man auch, dass da Kontext gar nicht so groß sein muss, solange es der richtige Kontext ist. Und das ist natürlich dann die Herausforderung. Was für einen Kommentar schreibst du? Gibst du irgendeinen Hint in Copilot zum Beispiel? Und wenn es auch nur ein Zeichen ist, wie das if, das i vom if, das dann sofort klar ist, okay, geh neben einem anderen Entscheidungsbaum runter und schreibe jetzt keinen Kommentar oder schlag keinen Kommentar vor, sondern eine if-Struktur. Und das hilft halt dann Copilot. So simple, ganz kleine Kontext-Snippets, die man da zur Verfügung stellt.",
-            "start": 1676410,
-            "end": 1837717,
-            "confidence": 0.7670887573964491,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Jetzt hattest du schon die zweite externe API angesprochen, gerade Google Cloud, G Cloud, vorher Puppeteer. Wenn ich das richtig raushöre, schlägt dann GitHub Copilot dir also auch wirklich die Nutzung von externen APIs vor, beziehungsweise kann dann auch die APIs richtig Nutzen von externen Providern.",
-            "start": 1837957,
-            "end": 1856118,
-            "confidence": 0.8313478260869566,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Also G-Cloud war jetzt meine Idee und bzw. ich habe schnell gegoogelt, wo kann ich simpel OCRen und da ist irgendwo Google aufgetaucht, haben gedacht, okay, gibt es da vielleicht eine API, die ich einfach nutzen kann oder ein Online-Tool und da haben wir dann in der Doku gesehen, okay, ich kann da direkt das Command Line aufrufen und ich bin ja sowieso in G-Cloud, das heißt, ich kann da schnell ein Bild OCRen, gar kein Problem. Aber du könntest natürlich ChatGPT auch nach solchen Dingen fragen und im Code natürlich Libraries und solche APIs werden auf jeden Fall vorgeschlagen und das ist glaube ich auch die große Stärke von Copilot, weil du ganz viele Kontext-Switches vermeidest. Das heißt, während du programmierst, kommst du ja ganz oft an die Stelle, wo du denkst, was brauchst du jetzt für eine Funktion? Wie heißt denn diese Funktion bei dieser Library? Und du hast zwar Autovervollständigung, eine klassische, und wenn du den Anfangsbuchstaben weißt, hilft dir das vielleicht. Aber wenn du gar nicht mehr genau weißt, was ist denn das für eine Funktion? Das passiert ja sehr oft, vor allem, wenn du viele Sprachen programmierst. oder sogar im PHP manche Funktionen. Da steht Array vorne, manchmal Array hinten, historisch bedingt. Die sind alle unterschiedlich, obwohl es immer um Array Functions geht. Und solche Dinge sind natürlich super cool, weil die schlägt dir Copilot sofort vor. Und da sparst du dir diesen Context-Switch. Ich gehe aus meiner IDE hinaus, gehe in den Browser, gehe auf Stack Overflow, gehe in die Doku, was es auch immer ist, aber das ist immer ein Context-Switch in gewisser Weise. Ist zwar während dem Programmieren, aber ist trotzdem ein kleiner Context-Switch. Und der wird dir komplett übernommen, dadurch dir Copilot schon das Richtige vorschlägt, inklusive den richtigen Parametern und deine Variable vielleicht schon konvertiert in die richtige Form, weil da noch ein Map fehlt, weil da noch ein Flatten fehlt, was es auch immer ist, wandelt dir das schon richtig um und darin liegt, glaube ich, die wirkliche Stärke. Das sind so viele Kleinigkeiten, die dir aber sonst viel Zeit kosten und ich merke das auch, dass ich viel seltener auf Stack Overflow bin. Also dieses ganze schnelle, wie kann ich denn das machen, wie kann ich ein nested Array schnell flatten in dieser Sprache, würde ich einfach auf Stack Overflow nochmal schnell nachschauen. Das bringt dir Copilot einfach direkt normalerweise mit.",
-            "start": 1856418,
-            "end": 1978295,
-            "confidence": 0.7553697270471453,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Jetzt sprichst du die ganze Zeit von Vervollständigung und immer wenn wir über AI reden, reden wir über Modelle, die trainiert werden müssen. Das bedeutet, da gibt es eine ganze Menge Daten, die irgendwie angelernt werden, eingelesen werden, processed werden. Und wir hatten ja jetzt auch schon festgestellt, das Codex-Modell kann mit externen Libraries interagieren, die jetzt nicht Teil deines Codes sind. Puppeteer, G-Cloud, unabhängig davon, ob CoPilot es vorschlägt oder du es eingibst. Woher kommen die Trainingsdaten? Auf welcher Basis wurde das Codex-Modell trainiert?",
-            "start": 1978335,
-            "end": 2007259,
-            "confidence": 0.7945882352941177,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Ja, du sprichst natürlich jetzt schon ein sehr kritisches Thema an, weil das ist ja eigentlich ein großer Knackpunkt von dieser ganzen AI-KI-Thematik. Woher kommen eigentlich die Daten und welche Daten werden dort verwendet? Und GitHub hat natürlich einen Zugriff auf ganz viele Codedaten, auf alle Repositories. Egal, ob die jetzt wirklich Open Source sind, MIT License oder ob das einfach eine proprietäre Lizenz ist, aber der Source Code ist im Internet verfügbar. Und vielleicht sind da auch noch andere Quellen abseits von GitHub dabei. Das ist natürlich das gut gehütete Geheimnis, weil da kannst du halt wirklich die Qualität rausziehen. Umso besser deine Trainingsdaten sind, umso besser sind dann natürlich auch deine Vorschläge. Aber ich würde mal sagen, nachdem heutzutage alles irgendwie im GitHub liegt, hast du natürlich mit GitHub ein super tolles Trainingsmodell. Aber es kann natürlich auch sein, dass irgendwie Stack Overflow oder so mit reinbezogen wird. Könnte ich mir sehr gut vorstellen, weil da halt auch dementsprechend guter Code drinnen steht. Und wenn du das dann noch irgendwie kombinierst mit Upvotes, zum Beispiel die Antworten, die die meisten Upvotes erhalten haben, dann kannst du dadurch auch Qualität lernen. Was sind denn die besten Antworten? Was ist guter Code? Was ist schlechter Code? dasselbe mit den Stars in GitHub, was macht Sinn, was macht weniger Sinn und so weiter. Also du kannst da viele Metainformationen noch reinbringen in dein Modell und dann dadurch auch Qualitätsunterschiede machen, wie bei JGPD, wo halt Wikipedia zum Beispiel mehr gewichtet ist als andere Quellen. Und das ist ja auch der Grund, warum, oder man vermutet zumindest, dass es der Grund ist, warum Reddit jetzt mit den APIs so strikt umgeht, weil natürlich diese ganzen Kommentare und die Diskussionen super wertvoll sind, um Modelle zu generieren. Und natürlich jetzt die ganzen Firmen, die den Datenschatz besitzen, natürlich jetzt nicht wollen, dass so viel gescrapet wird oder über die APIs abgezogen wird, damit andere viel Geld verdienen mit dem Erzeugen der Modelle. Und Twitter hat ja dasselbe Problem jetzt gerade wieder gehabt mit dem ganzen Scraping und den API-Änderungen. Falls es Twitter noch gibt übrigens, also die Aufnahme passiert ja ein bisschen, bevor wir das publischen. Könnte schon sein, dass es Twitter gar nicht mehr gibt in der Zwischenzeit. Aber woher die Daten natürlich kommen, das ist eine sehr kritische Frage und da spielt natürlich dann auch noch mit, wie schaut es denn rechtlich aus, weil wenn es eben keine MIT-License war von diesem Projekt, sondern Proprietärer-Code, darf der überhaupt verwendet werden? Und da hat natürlich jetzt Copilot auch reagiert. Also du kannst da einen Flag setzen. Du wirst keinen Public Code zum Beispiel vorgeschlagen bekommen, damit du nicht in das Problem rennst, dass du Code verwendet hast in deinem Projekt, der dir vorgeschlagen wurde, der aber eigentlich nicht frei verfügbar ist, sondern eine proprietäre License zum Beispiel hat. Also das kannst du ausnehmen mit einem Flag in den Settings von Copilot.",
-            "start": 2008280,
-            "end": 2168824,
-            "confidence": 0.8133415132924333,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Public Code heißt jetzt Code, der öffentlich im Internet zugänglich ist, ohne Berücksichtigung der Lizenz. Also das bedeutet, Public Code könnte auch ein MIT-Projekt sein oder ein Repository ohne License.",
-            "start": 2169324,
-            "end": 2182153,
-            "confidence": 0.8157999999999999,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Ehrlich gesagt, keine Ahnung, wie sie das intern werten, ob sie die Licenses auch noch ausgewertet haben, wobei das ja auch nicht so leicht ist und immer klar ist, es steht ja nicht die License in jeder Datei. Mir ist es nicht ganz klar, wie sie es machen. Es gibt dieses Flag grundsätzlich. Ich glaube, es ist halt, um die Leute zu beruhigen. Ob das wirklich funktioniert und so funktioniert, ist halt schwierig zu sagen.",
-            "start": 2182213,
-            "end": 2201505,
-            "confidence": 0.7828399999999999,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Ich möchte noch mal ganz kurz einhaken. Ich bin nicht deiner Meinung, dass ein GitHub-Star den gleichen Wert wie ein Upvote auf Reddit oder Stickoverflow hat. Denn wenn ich mal nachschaue, wie ich GitHub-Stars verwende, dann hat das oft nichts mit der Qualität des Projektes zu tun, sondern primär mit der Grundidee, die in der Regel ein Satz in der Readme ist. Oder, weil das etwas ist, was ich mir später mal ansehen möchte, wo ich da natürlich nie zu komme. Oder, oder, oder. Also der Wert eines GitHub-Stars ist, man könnte fast sagen, oh das ist interessant, ich pack das meine, meine Bookmarks und irgendwann hab ich zu viele Bookmarks und lösche die eh alle. Wohingegen natürlich Stack Overflow und Reddit wirklich kuratierter Content ist.",
-            "start": 2201545,
-            "end": 2243130,
-            "confidence": 0.8260873015873015,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Natürlich hast du vollkommen recht. Das ist sowieso ein klassisches Problem. Nur weil etwas extrem hoch gevotet wird, heißt das noch lange nicht, dass es guter Content ist. Ist ja auf allen Plattformen so. Also stimmt natürlich. Da hast du bei Stack Overflow wahrscheinlich mehr Möglichkeiten, würde ich mal sagen, über die Upvotes.",
-            "start": 2243709,
-            "end": 2259253,
-            "confidence": 0.754245283018868,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Jetzt gibt es natürlich bei AI-Modellen den sogenannten Training-Bias. Umso mehr schlechter Code trainiert wird, desto besser wird das AI-Modell, schlechten Code vorzuschlagen. Weil das Resultat der Vorschläge basiert immer auf den Trainingsdaten. Hast du schon mal irgendeine Art Training-Bias bei GitHub Copilot beobachtet?",
-            "start": 2259613,
-            "end": 2278050,
-            "confidence": 0.8201590909090908,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Du meinst, ob mir schlechter Code vorgeschlagen wurde?",
-            "start": 2278090,
-            "end": 2280012,
-            "confidence": 0.74325,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Schlechter Code war jetzt nur ein Beispiel, vielleicht männliche Variablen Namen. Oder vermehrt den Hang, Python 2 Code zu schreiben, anstatt Python 3, weil Python 2 mehr in den Trainingsdaten vorhanden war, obwohl das schon seit 15 Jahren mittlerweile debrikated ist. oder PHP 5 oder Java 7 oder ähnliches?",
-            "start": 2280835,
-            "end": 2302426,
-            "confidence": 0.6903673469387754,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Also ich habe noch nie das Problem gehabt, dass mir Copilot jetzt ungegenderten Code vorgeschlagen hat. Und ich hätte gern gegendert, weil bei Variablen ist das selten ein Problem, obwohl es natürlich in anderen Modellen ganz oft ein Problem ist. Was natürlich schon ist, ist, dass einfach oft Bullshit vorgeschlagen wird. Auch ganz oft, wie du gesagt hast, so Dinge, die es schon lange gibt, die aber vielleicht nicht mehr state-of-the-art sind. Also ich denke da gerade an Datumsumformungsfunktionen. Braucht man ja ganz oft, um irgendwie ein Datum in spezielle Form zu bringen. Und da habe ich schon oft erlebt, dass mir da komplexe Funktionen vorgeschlagen wurden. Und es gibt aber seit ein, zwei Jahren in JavaScript zum Beispiel eine gewisse Funktion, die dir das einfach automatisch liefert. Und es wird dir aber natürlich immer diese komplexe Konvertierungsfunktion vorgeschlagen, wo du in deiner Funktion das Ganze selbst machst und irgendwie ausliest und baust und vielleicht noch plus ein, zwei Monate zurechnest und solche Dinge, obwohl es einen Einzeiler gäbe, weil es eine neue Funktion gibt, aber schon relativ lange. Und es wird dir aber trotzdem immer noch diese alte Variante, die umständliche Variante vorgeschlagen, weil die halt sich einfach etabliert hat über Jahre und wahrscheinlich auch heute noch von den meisten Programmierer und Programmiererinnen verwendet wird, weil es halt einfach in den Köpfen drin ist, obwohl es diese neue Funktion gibt. Und ganz klar, man sagt ja auch immer bei JetGPD, das, was da rauskommt als Antwort, als Text, ist so mittelmäßig oder obere Mittelmäßigkeit von irgendeinem deutschen Text. Und so sehe ich es beim Coden halt auch, es ist obere Mittelmäßigkeit. Aber dass du mal über dieser oberen Mittelmäßigkeit bist, da musst du schon sehr gut sein in einer gewissen Sprache. Und wenn du das natürlich kombinierst mit deinem Wissen und vielleicht auch die richtigen Anweisungen gibst, du kannst auch zum Beispiel Copilot sagen, okay, gib mir die zehn Möglichkeiten, die du intern errechnet hast und dann kannst du eine davon auswählen und da fließt dir dein Wissen mit ein. Also durch diese Kombination bist du natürlich sehr stark, aber den Bias gibt es natürlich ganz klar. Also Bullshit in, Bullshit out.",
-            "start": 2302486,
-            "end": 2419143,
-            "confidence": 0.802512396694215,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Wenn wir schon beim Thema Bullshit sind, hat Copilot dir schon mal Code vorgeschlagen, den du nicht verstanden hast? Da wo du echt gegebenenfalls sogar mehr Zeit dafür verbracht hast, den Code zu verstehen und den Code zu debuggen, der generiert wurde, anstatt ihn komplett selbst zu schreiben?",
-            "start": 2419163,
-            "end": 2433492,
-            "confidence": 0.7894166666666665,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Also was mir schon passiert ist, viel Zeit gekostet hat, sind Bugs, die Copilot eingebaut hat und ihr habt zu wenig gecheckt, was da wirklich passiert. Gerade wenn es um irgendwelche Debug-Ausgaben oder so geht und da werden dann, was super praktisch ist übrigens, die 10 Variablen ausgegeben in so einem schnellen Log. was du schreibst, wo du sonst immer zu faul bist, diese wirklich zehn Variablen hinzuschreiben und vielleicht noch den Namen der Variable für den Debug-Code. Das macht dir natürlich Copylet super schnell automatisch. Aber wenn sich da natürlich irgendwie eine Variable einschleicht, die falsch ist oder so und du siehst dann irgendwelche Errors, die fliegen und denkst dir, das kann ja gar nicht in dieser Datei sein, da hatte ich diese Variable doch gar nicht und suchst irgendwo anders. Also das hat mir schon viel Zeit gekostet.",
-            "start": 2433942,
-            "end": 2474122,
-            "confidence": 0.7878214285714288,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Moment, ganz kurz. Verstehe ich das richtig? Du hast Code durch GitHub Copilot generieren lassen, der hat einen Bug drin und dann hast du GitHub Copilot genutzt, um Console.log-Statements fürs Debugging zu schreiben?",
-            "start": 2474542,
-            "end": 2485438,
-            "confidence": 0.7852424242424241,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Nein, nein, in dem Fall ist der Bug durch Console.log entstanden.",
-            "start": 2485458,
-            "end": 2488403,
-            "confidence": 0.5975454545454546,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Ah, okay.",
-            "start": 2488483,
-            "end": 2488943,
-            "confidence": 0.5745,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Aber um auf deine Frage zurückzukommen, ja, ich habe auch schon Code-Vorschläge bekommen, die ich nicht verstanden habe, beziehungsweise auf Anhieb nicht verstanden habe. Gerade so komplexe Map-Functions, die dann irgendwie über anonyme Funktionen und so weiter irgendwelche Dinge umformen. Und da sitzt man dann teilweise schon lang und überlegt sich, kann das richtig sein? Kann das funktionieren? Und da muss man das wirklich durchdenken und auseinander trennen und wirklich analysieren. Und ganz oft stimmt es, aber ganz oft stimmt es auch nicht. Also das ist natürlich schon eine gewisse Schwäche und da musst du halt wirklich den Code überprüfen. Und wenn es so ein komplexer Code ist, kann das durchaus Zeit dauern. Das stimmt schon. Aber man muss schon sagen, im Großteil der Fälle stimmt das. Und da bist du dann auch überrascht und denkst dir, hey, das ist eine coole Lösung. Das ist so ähnlich, wie wenn du auf Stack Overflow gehst und dann so denkst, oh, das ist aber eine schöne Lösung. Das ist ja wirklich clean, einfach, kurz. Und ich mir das so komplex vorgestellt.",
-            "start": 2489484,
-            "end": 2540572,
-            "confidence": 0.7758826815642464,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Jetzt ist ja weitläufig bekannt, dass AI-Modelle nicht immer richtig liegen. JetJPT und auch das Codex-Modell ist davor nicht gewahrt. Ich habe eine Studie in der Vorbereitung gefunden, die sagt, dass die Benutzer von GitHub Copilot im Durchschnitt 26 Prozent aller Vorschläge akzeptieren. Also minimal mehr als ein Viertel. Ist das auch deine Erfahrung oder akzeptierst du mehr als ein Viertel der Vorschläge?",
-            "start": 2541000,
-            "end": 2564592,
-            "confidence": 0.8398095238095236,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Es ist super schwer, weil die Frage ist, wie das gerechnet wird, was du akzeptierst, weil ich bekomme natürlich ganz viele Vorschläge, wo ich dann aber einfach weiter tippe, um den Vorschlag zu optimieren oder der in dem Moment nicht gerade der richtige ist.",
-            "start": 2565383,
-            "end": 2578474,
-            "confidence": 0.8202272727272727,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Wenn ich das richtig verstanden habe, war die Untersuchung wirklich auf Basis des ersten Vorschlages.",
-            "start": 2578494,
-            "end": 2583318,
-            "confidence": 0.8872666666666665,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Ja, aber dadurch, dass er automatisch immer vorgeschlagen wird im Hintergrund, oder? Du hast dann in leichtem Grau immer diesen Vorschlag, der passiert ja ständig. Das heißt, du hast ganz viele Vorschläge, die du vielleicht einfach ignorierst. Also ich bin mir nicht sicher, ob das wirklich heißt, der Vorschlag ist der falsche. Klar, es war in diesem Moment nicht genau der richtige, aber dadurch halt ständig vorgeschlagen wird, während du programmierst. kann ich mir gut vorstellen, dass das eigentlich ein niedrigerer Prozentsatz ist, weil wirklich Vorschläge, die ich akzeptiere. Eben, du bekommst jetzt einen Vorschlag, denkst dir, okay, zum Beispiel, ganz klassisch, es werden ja auch Kommentare vorgeschlagen. Das heißt, wenn du einen Kommentar schreibst, wird dir das Kommentarauto vervollständigt, was übrigens auch ganz oft stimmt. Also Kommentare sind bei mir, seitdem ich CoPilot verwende, einfach ums Doppelte länger wahrscheinlich, weil ich einfach sonst zu faul bin, alles sauber zu kommentieren. Und jetzt passiert das wirklich in einem schönen Stil und meistens stimmt das. Teilweise werden sogar, habe ich auch schon erlebt, werden die URLs vervollständigt. Das heißt, es wird zu deinem Kommentar, was du machst, warum du so ein wirres Ding gerade geschrieben hast, wegen einem komischen Verhalten von einer Funktion, wird dir automatisch die URL vervollständigt, wo das dokumentiert ist, dieses schräge Verhalten. Und das stimmt meistens. Also sogar das tritt ganz oft auf. Also Kommentare werden besser. Aber es passiert halt auch oft, ich schreibe einen Kommentar und Copilot will das Kommentar noch weiterschreiben und vervollständigen. Und ich denke mir, nein, ich will jetzt aber schon programmieren, mir reicht das Kommentar. Du musst eigentlich schon so schlau sein, dass du das schaffst. Und dann schreibe ich eben dieses i für if und dann wird es automatisch gecheckt und ah, okay, es geht jetzt um Coding, nicht mehr um Kommentarschreiben. Und natürlich habe ich dann da dieses erste Kommentar, was mir noch vorgeschlagen wurde oder den ersten Vorschlag eben nicht akzeptiert, obwohl es vielleicht in dem Sinne natürlich noch gar nicht im richtigen Kontext war oder auf dem Programmierpfad, sondern noch im Kommentierpfad.",
-            "start": 2584038,
-            "end": 2690681,
-            "confidence": 0.7799536231884061,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Meine theoretische Frage. Du schreibst jetzt Code mit GitHub Copilot. Du lässt dir sogar nicht nur den Code vorschlagen, sondern auch die Kommentare. Lässt das Projekt ein paar Wochen ruhen? kommst wieder mit dem Projekt an und programmierst weiter mit GitHub Copilot. Das bedeutet, die durch GitHub Copilot geschriebenen Kommentare sind ja dann wiederum erweiterter Kontext für GitHub Copilot. Ist das richtig?",
-            "start": 2690721,
-            "end": 2712724,
-            "confidence": 0.8157419354838709,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Ja, natürlich, ja. Wobei man natürlich schon sagen muss, diese Kommentare sind ja überprüft von mir. Und ich fange ja auch einen Satz an und der vervollständigt mir dann den Satz vielleicht mit 20 Wörtern oder 5 Wörtern oder auch nur 3 Wörtern oder nur dieses Wort, das ich gerade schreiben will. Ist ja auch teilweise praktisch. Ich denke mir, allein rechtschreibungstechnisch, ich fange irgendein Wort an, überlege mir gerade, wie schreibt man das nochmal und habe schon die Vervollständigung da. Also alleine das hilft ja schon weiter. Es gibt natürlich schon auch die Möglichkeit, und das nutze ich auch immer ganz gerne, ich schreibe einen Code-Block und will den jetzt kommentieren und dann probiert JGPT Copilot, versteht dann den Code, also verstehen unter Anführungszeichen wissen wir ja alle, Aber Copilot versucht dann diesen Codeblock zu kommentieren, ohne dass ich irgendwas angefangen habe zu kommentieren. Also es geht auch in die andere Richtung, nicht nur Kommentar zu Code, sondern auch Code zu Kommentar. Und es funktioniert auch erstaunlich gut. Aber natürlich bin ich immer dabei, ich helfe, ich verbessere. und darum kann es dann auch später wieder Kontext sein, wenn ich in zwei Monaten wieder weiterschreibe, ist eh klar. Aber es ist ja auch mein überprüfter Kommentar, den ich da geschrieben habe, insofern ist das ja völlig in Ordnung. Wenn wir übrigens gerade dabei sind, was Copilot alles macht, also Kommentare, Code, aber was man auch nicht vergessen darf, sind Test Cases zum Beispiel, auch super praktisch. schreibe mir Test Cases für irgendeinen Fall. Diese ganzen dummen negativen Test Cases, die man sonst nie schreibt oder die man selten abprüft, wenn man irgendwo eine Integer Variable hat und dann mal abprüft, was passiert, wenn man minus eins eingibt oder so. Wenn du das mit Copilot machst, der schlagt dir gleich mal 20 Tests vor und dann hast du das gleich gecovert. Super praktisch.",
-            "start": 2713188,
-            "end": 2809188,
-            "confidence": 0.7976134185303512,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Das ist ein interessanter Use Case. Nutzt du GitHub Copilot primär für diese, ich sag mal, Grundwork, für diese langweilige Arbeit, um mehr Zeit für die spannende Arbeit zu haben? Oder sagst du, ich mache da keinen Unterschied, ich mache alles damit?",
-            "start": 2809528,
-            "end": 2824437,
-            "confidence": 0.8426904761904762,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Ich mache grundsätzlich keinen Unterschied, aber ich muss schon sagen, für mich und ich glaube für die meisten ist es eigentlich so, mit den Leuten, mit denen ich gesprochen habe, das Interessante ist ja irgendwie das Problem zu lösen, vielleicht in kleinere Subprobleme aufzuteilen, wie kann ich denn wirklich was lösen, aber dann die eigentliche Implementierung ist ja oft wirklich nur dummes Runtercoden. Und da hilft dir halt Copilot schon. Also ich hab schon das Gefühl, dass ich mich mit diesen Low-Level-Dingen oder man muss dann wieder irgendwie durch 20 Kommentaren in Stack Overflow durch, damit man irgendwann weiß, wie kann ich denn jetzt am schnellsten in dieser Sprache eben irgendeinen Nested Array flatten oder so. Das fällt halt alles weg und dann kann man sich schon konzentrieren auf die Struktur, auf die Architektur. Wie baue ich etwas auf? Was kommt in diese Funktion rein? Was lage ich aus? Also das Klassische, was vielleicht ein bisschen spannender ist, auf das kann man dann mehr Zeit legen und sich fokussieren.",
-            "start": 2825117,
-            "end": 2874973,
-            "confidence": 0.8012899408284019,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Aber natürlich Unit-Test-Schreiben ist natürlich eine grandiose Art und Weise, GitHub Copilot zu nutzen, denn ich denke, viele Leute haben nicht wirklich Spaß am Unit-Test-Schreiben vom existierenden Code. Wenn man das Test-Driven-Development macht, ist das natürlich eine andere Baustelle.",
-            "start": 2875013,
-            "end": 2888500,
-            "confidence": 0.6963076923076923,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Aber sogar Test-Driven Development. Also du fängst mit den Tests an und es werden dir halt einfach Sachen vervollständigt. Vorschläge sind ja auch wieder nur Vorschläge, die du gut oder schlecht finden kannst und entscheiden kannst, ob du sie aufnimmst. Und das passiert mir schon sehr oft, dass ich dann irgendwie so in einem Test zum Beispiel was vorgeschlagen bekomme, wo ich mir denke, stimmt, das ist eigentlich eine sehr gute Idee, das sollte man wirklich testen. Und man ist dann wirklich happy und denkt sich, das habe ich überhaupt nie gedacht. Aber es macht absolut Sinn natürlich.",
-            "start": 2889050,
-            "end": 2913957,
-            "confidence": 0.744295918367347,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Jetzt ist natürlich jedes AI-Modell auf existierenden Daten trainiert. Da stellt sich natürlich die Frage, inwieweit ist denn innovative Arbeit an zum Beispiel neuen Plattformen, nehmen wir mal an Quantencomputer kommen jetzt bald raus, und alles muss auf Quantencomputer angepasst werden, so ähnlich wie die ganze Software, die auf ARM am Anfang nicht richtig lief. Ich glaube, Apple-User mit einem M1-Prozessor wissen, wovon ich rede. Inwieweit siehst du die Möglichkeit, innovative Arbeit auf neuen Themen, auf neuen Plattformen mit GitHub Copilot umzusetzen? Im Endeffekt existiert ja noch nicht viel vorhandenes Material für Sachen, die jetzt wirklich neu rauskommen.",
-            "start": 2914177,
-            "end": 2949688,
-            "confidence": 0.8258979591836736,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Ja, das geht halt schon sehr in die philosophische Ecke, würde ich fast sagen, wie die Diskussion kann eine KI irgendwie ein tolles Gemälde machen, was eben nicht auf alte Patterns basiert überhaupt. Aber ich sehe das halt auch so, dass man eigentlich sagen muss, dass ja auch jetzt, um in der Kunst zu bleiben auf dieser Metaebene, dass alles, was Künstler in irgendeiner Form machen, meistens basiert auf alten Künstlerinnen, auf deren Input. Also du hast ganz viel Input und wertest den Input aus, mischst ihn neu, änderst es. Natürlich ist ja die KI aktuell noch vielleicht begrenzt, Aber ich glaube, das wird sich in Zukunft ändern. Und wenn du natürlich das runterbrichst auf Einzelprobleme, dann hast du sowieso kein Problem. Weil auch wenn du auf einer neuen Plattform bist, die If-Struktur sieht immer noch so aus. Du musst immer noch ein Array flatten. Also diese Tasks, die sowieso ähnlich sind und immer gleich sind, Wenn ja die weggenommen werden, hast du ja auch schon Produktionsgewinn. Klar, wenn du das vergleichst mit dem Beispiel, mit dem Immobilienscraper, wenn man den so nennen will, dass es Puppeteer vorschlägt und diese ganzen Dinge, klar, da brauchst du natürlich auch den Input und das muss schon länger am Markt sein. Aber wenn du jetzt ganz normal programmierst und auch an einer neuen Technologie programmierst, die ganzen Kleinigkeiten werden ja trotzdem abgenommen in der Programmiersprache. Und irgendwann in Zukunft geht es vielleicht sogar weiter, dass es halt dann wirklich neu kombiniert werden kann. Und das ist halt die große Frage. Okay, generative AI, wohin geht das Ganze? Aber das werden wir sehen in Zukunft. Aber ich glaube auch, dass das sehr bald der Fall sein kann, dass uns dann vielleicht einfach eine neue Plattform auch noch generiert wird. Oder einfach nur, wenn man das als neu bezeichnen will, dass halt die ganzen Infos auf Stack Overflow zusammengetragen werden und dann bei einer Entscheidung helfen, sollst du was so designen, Version A oder Version B in dieser Architektur von einer neuen Plattform. Und da greifst du halt dann auf das Wissen, zurück, was in den ganzen Köpfen vielleicht auch ist, weil ähnlich passieren ja auch Entscheidungen im Kopf, dass du halt dein Wissen oder in einer Gruppe dieses Wissen vereinst und dir überlegst, okay, machen wir Version A oder B, wie entscheiden wir uns, obwohl das vielleicht sonst noch nie jemand davor gemacht hat. Und so könntest du es natürlich über eine KI dann am Ende auch lösen, meiner Meinung nach. Aber ist schon sehr philosophisch.",
-            "start": 2950000,
-            "end": 3082468,
-            "confidence": 0.8045924170616114,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Du hattest Stack Overflow jetzt schon mehrmals erwähnt. Ich hatte gelesen, dass seitdem ChatGPT draußen ist, der Traffic von Stack Overflow enorm eingebrochen ist.",
-            "start": 3082748,
-            "end": 3092634,
-            "confidence": 0.7651249999999999,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Kann ich nachvollziehen. Ich bin einer davon, der Stack Overflow weniger nutzt.",
-            "start": 3092654,
-            "end": 3096216,
-            "confidence": 0.7123333333333334,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Jetzt bist du natürlich schon einer der älteren Programmierer. Das bedeutet, du weißt auch noch, wie Programmieren ohne Copilot funktioniert.",
-            "start": 3096256,
-            "end": 3103260,
-            "confidence": 0.7911999999999999,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Damals, wo wir Assembler programmiert haben, kurz nach dem Krieg, genau.",
-            "start": 3103280,
-            "end": 3106542,
-            "confidence": 0.860181818181818,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Hast du schon mal effektiv assembler geschrieben hast du mal ein richtiges programm geschrieben und nicht ich habe mal ein bisschen was in register geschrieben oder rausgeholt ja.",
-            "start": 3107092,
-            "end": 3115035,
-            "confidence": 0.7119285714285714,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Also nie produktiv oder so aber zu studiumszeiten haben wir das natürlich gemacht oder auch wie dann unterrichtet habe einfügen in die programmierung okay nein es war nicht einfügen in die programmierung es war schon was anderes aber da da hatten wir teilweise so kurz snippets und in dem emulator was gemacht ja aber richtig produktiv.",
-            "start": 3115075,
-            "end": 3131502,
-            "confidence": 0.7989642857142857,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Wenn wir jetzt daran denken, dass mehr und mehr Softwareentwickler benötigt werden, würdest du empfehlen, mit GitHub Copilot programmieren zu lernen? Beziehungsweise siehst du die Möglichkeit, oder siehst du, dass man durch die Nutzung von GitHub Copilot schneller, beziehungsweise besser, beziehungsweise effizienter programmieren lernen kann?",
-            "start": 3132722,
-            "end": 3150857,
-            "confidence": 0.8045777777777775,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Ich antworte mal mit einer Gegenfrage. Bist du dafür, dass wenn man Java lernt, dass man VI verwendet zum Java programmieren lernen oder eine IDE, die dir Autocompletion und Vervollständigung von Klassennamen und so weiter vorschlägt?",
-            "start": 3151297,
-            "end": 3166036,
-            "confidence": 0.8096944444444446,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Ich gehe stark davon aus, dass es für VI auch irgendein Java-Plugin gibt, aber ich denke, es wäre schon sehr hilfreich, wenn man eine ordentliche IDE verwendet, die einem sehr, sehr viel grafische Hilfsmittel vorgibt, wo man dann auch draufklicken kann und erklär mir das und solche Geschichten.",
-            "start": 3166236,
-            "end": 3183595,
-            "confidence": 0.8457708333333334,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Ja, so ähnlich sehe ich das eigentlich auch mit CoPilot. Wenn du davon ausgehst, dass in Zukunft jeder in irgendeiner Form so eine Unterstützung in der EDE hat, ist immer die Frage, wo startest du mit den Grundlagen, wann gehst du über in diese Hilfen, würde ich sie mal nennen, ganz allgemein, sei es eine klassische Autovervollständigung, Klassennamen. Da scheiden sich die Geister, hatten wir auch immer viel Diskussionen an der Uni, wenn wir unterrichten. Du musst da wahrscheinlich einen guten Mittelweg finden, dass du halt für Grundlagen vielleicht das einfach mal selber ausprobierst. Aber ich glaube, schlussendlich geht es darum, möglichst produktiv zu sein. Aber ganz allgemein sollte es meiner Meinung nach möglichst nahe an dem sein, was du dann später mal brauchst im Arbeitsleben oder was du auch immer machst.",
-            "start": 3183697,
-            "end": 3223853,
-            "confidence": 0.7494772727272724,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Wenn ich jetzt als Late Adopter GitHub Copilot ausprobieren möchte, auf was muss ich einstellen, was sich in meinem Programmierflow ändert?",
-            "start": 3224292,
-            "end": 3232175,
-            "confidence": 0.7976190476190477,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Gar nichts.",
-            "start": 3232215,
-            "end": 3232976,
-            "confidence": 0.8240000000000001,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Erläutere mir das mal ein bisschen, weil ich denke mir, ich muss ja schon auf die Webseite gehen und dann irgendwie Code da reinpasten oder connecte ich das sofort zu meinem GitHub Repository.",
-            "start": 3232996,
-            "end": 3240339,
-            "confidence": 0.7845454545454544,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Ja, du aktivierst das, installierst natürlich einmal das Plugin in deinem VSCode zum Beispiel und that's it und dann ist es aktiv. Das läuft einfach immer mit. Und dann wirst du langsam lernen damit umzugehen und das zu sehen. Klar wird sich dein Flow dann ändern in dem Sinne, auch mit dem Kontext, wie wir das schon besprochen haben. Aber du musst nirgends hingehen, du musst nichts kopieren. Du kannst es einfach mal aktivieren und einfach loslegen.",
-            "start": 3240599,
-            "end": 3264980,
-            "confidence": 0.7633896103896105,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Zum Kostenmodell, wenn ich das richtig nachgeschlagen habe, die ersten zwei Monate sind frei und danach für Privatanwender 10 Dollar im Monat beziehungsweise 100 Dollar im Jahr und für Firmen 19 Dollar pro User pro Monat. Würdest du sagen, das ist Peanuts gegenüber dem Value, die dieses Tool liefert?",
-            "start": 3265020,
-            "end": 3284116,
-            "confidence": 0.8115510204081632,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Das klingt jetzt langsam wirklich wie eine Verkaufsveranstaltung, aber ja. Also meiner erfahrung nach schon kannst kannst nur empfehlen würde mich natürlich auch freuen wenn es da mehr in richtung opensource gibt oder andere möglichkeiten aber die experience ist schon schon sehr gut muss man auch dazu sagen.",
-            "start": 3284136,
-            "end": 3299307,
-            "confidence": 0.7709583333333335,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Jetzt haben wir aber noch nicht über den elefanten im porzellanladen beziehungsweise pink elephant in the room gesprochen und zwar, sind wir als Deutsche, besonders deutsche Mittelständler, ja alle immer sehr konservativ mit unseren Daten, Copyright, rechtliche Thematik. Und solche AI-Themen müssen natürlich erstmal durch die Rechts- und Compliance-Abteilung. Und da kommen wir dann oft ganz viele Fragen auf, die vielleicht sogar noch gar nicht wirklich beantwortet sind. Wie sieht das ganze rechtliche Thema denn da aus? Den Code, der da generiert wird, kann ich den proprietär nutzen, verkaufen? Inwieweit sind meine Daten gesichert? Oder kann es sein, dass wenn ein Mitarbeiter von Vorwerk etwas an der Thermomix-Software durchgeht, hat Copilot-Jagd, dass ich den Code dann bald vorgeschlagen bekomme?",
-            "start": 3299447,
-            "end": 3348172,
-            "confidence": 0.8535630252100838,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Ja, gerade im Business-Umfeld ist das natürlich ein Riesenproblem. Und wir hatten ja schon kurz besprochen, Copilot hat diese Funktion, dass du sagen kannst, Public Code inkludieren oder nicht inkludieren. Da spielt natürlich auch die ganze philosophische Frage wieder auch in einer gewissen Weise eine Rolle. Weil wenn du jetzt als Einzelprogrammierer, wenn ich jetzt auf irgendeine GitHub-Seite komme, auf irgendein Repository da was finde, dann die 5-Zeilen-Code rauskopiere, obwohl es vielleicht keine MIT-License zum Beispiel war, das bei mir irgendwo verwende. Wenn das irgendwo auf Stack Overflow steht, steht da auch keine License dabei im Prinzip. Also es ist gar nicht so leicht zu entscheiden. Ich glaube bei kurzen Codesnippets ist es auch nicht so das Problem, weil da gibt es halt einfach eine Lösung, wie kann ich denn das Array flatten. Aber umso länger die Lösungen werden, umso gefährlicher wird es natürlich in irgendeiner Form. Und da ist dann auch die Frage, fließt da auch irgendwas wieder zurück an die Creator sozusagen? Also das ist dann eine gesellschaftliche Frage, die natürlich langfristig auch in irgendeiner Form geklärt werden muss. Also fließt von den aktuell sehr günstigen 100 Euro vielleicht dann irgendwann was zurück? Wie funktioniert das? Fließt da was zurück an die Open Source Community? Auf der anderen Seite bietet GitHub ja auch die Services kostenlos an. Ist ja schon in gewisser Weise auch eine Leistung. Es ist super schwer, glaube ich, das zu beantworten, aber im professionellen Umfeld gibt es natürlich die Frage und dafür ist halt genau diese Option, wird Public Code verwendet, ja oder nein. Und dann, wenn wir schon bei der rechtlichen Frage sind, ist natürlich auch ein großer Punkt, was passiert mit diesem Code, der an GitHub gesendet wird. Also dieser Kontext wird ja ständig gesendet, Snippets von mir werden ständig gesendet an Copilot und GitHub. Und auch da kann man in den Settings wählen, ob diese Snippets verwendet werden dürfen für weiteres Lernen oder nicht. Und es ist auch relativ genau definiert, wer Zugriff hat, welche Leute in GitHub, welche Leute bei OpenAI und so weiter, wie das geschützt ist. Also das ist einigermaßen genau beschrieben, finde ich ganz gut. Aber was die natürlich dann wirklich im Hintergrund damit machen, ist so eine Frage, Wobei, wenn wir uns ehrlich sind, wenn GitHub böse sein will, dann haben die eh den gesamten Source-Code der Welt, weil wahrscheinlich die meisten großen Firmen bei GitHub sind. Insofern hätten sie den Zugriff sowieso auf deinen Source-Code. Und mit der Option kannst du das grundsätzlich abschalten. Also ich glaube, man ist da relativ safe auf der Seite und es gibt ja auch Business-Angebote und sie wollen da auch noch mehr in Richtung Privacy und Sicherheit für deine Codesnippets machen und Angebote schnüren für Firmen. Also da kommt sicher auch noch einiges. Sogar ChatGPD hat das eingebaut mittlerweile, dass du deine History löschen kannst bzw. es deaktivieren kannst, dass jetzt, was du eingibst, für das Learning verwendet wird. Da kannst du die Chat History deaktivieren, das geht seit April. Also sogar ChatGPD macht das, wobei die natürlich sehr aggressiv sind, weil sie sagen, wenn ich das kostenlos anbiete, dann will ich auch was davon haben. Und da muss man sich dann halt auch gesamt wieder fragen, wenn ich so viel rausbekomme aus dem Modell, muss ich halt vielleicht auch was beisteuern, wenn ich das schon kostenlos nutze oder sehr günstig. Aber grundsätzlich ist es möglich für Firmen, Copilot zu verwenden, auch wenn es meines Wissens sehr, sehr wenig Firmen machen offiziell. Also ich kenne kaum Firmen, größere Firmen, die das in irgendeiner Form erlauben.",
-            "start": 3348492,
-            "end": 3538487,
-            "confidence": 0.802479865771812,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Auch wenn es möglich ist, ich denke trotzdem, dass bevor ihr es dann im kommerziellen Umfeld wirklich nutzt, checkt das mal intern ab und nicht einfach eine Shadow IT aufbauen.",
-            "start": 3539025,
-            "end": 3549112,
-            "confidence": 0.8005666666666666,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Also nach meinem Erlebnis damit würde ich jetzt als CTO das eigentlich als Priority Nummer 1 sehen, meinen ProgrammiererInnen sowas zur Verfügung zu stellen. Weil wenn du, wenn sie wollen zumindestens, weil wenn du da einen Productivity Lift hast, gerade jetzt mit dem ganzen Mangel von Arbeitskräften, Und du sagst jetzt, du kannst ja auch nur 20 Prozent rausholen an Produktivität und vielleicht, dass Leute happier sind, weil sie nicht den ganzen Boilerplate Code da immer schreiben müssen, dann ist das meiner Meinung nach eine Priorität, die ganz, ganz oben sein muss und nicht, wir schauen uns das mal an und klären das vielleicht mit der Rechtsabteilung irgendwann.",
-            "start": 3549152,
-            "end": 3585260,
-            "confidence": 0.7935000000000008,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Weil du jetzt schon Tipps für CTOs raushaust und den Mangel an Fachkräften erwähnt hast, stellt sich für mich die Frage, werden denn nun Programmierer ersetzt? Können nun auch Nicht-Software-Entwickler mit weniger Code-Verständnis programmieren bzw. besser programmieren?",
-            "start": 3585600,
-            "end": 3602835,
-            "confidence": 0.8460540540540539,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Ja.",
-            "start": 3603254,
-            "end": 3603694,
-            "confidence": 0.916,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Also das größte Gegenargument, was ja immer erwähnt wird, ist, Programmierer sind safe, weil damit uns nämlich andere Leute, wie zum Beispiel Produktmanager oder Kunden ersetzen, müssten sie wissen, was sie wollen. Und da hört es ja dann in der Regel auf.",
-            "start": 3603754,
-            "end": 3615196,
-            "confidence": 0.7748571428571429,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Genau, dafür gibt es Product Owner. Also ich will ja gar nicht sagen, dass alle ProgrammiererInnen arbeitslos werden. Aber das Grundsatz ist, deine Frage war ja, ob Product Leute zum Beispiel für gewisse Tasks in Zukunft keine ProgrammiererInnen mehr brauchen. Da bin ich voll überzeugt. Es geht ja jetzt schon mit dem Low-Code, No-Code-Tools in die Richtung. Wenn die dann noch intelligenter werden, dass die dir gewisse Sachen vorschlagen, best practices vielleicht, dass du irgendwas zusammen klicken kannst oder wirklich textuell das einfach eingeben kannst, was will ich haben und dann iterativ vielleicht auch arbeiten, weil das ist ja auch sowas. Ich weiß vielleicht nicht genau, was ich will, aber ich gebe das als Text ein und bekomme dann die Frage, was ich wirklich haben will oder einfach ein Output mit einem Prototypen, eine Sekunde später, und dann sage ich, oh, der Prototyp ist ja was Falsches und dann gebe ich ein, was ich gerne hätte. Und so kann ich mich auch iterativ in die richtige Richtung bewegen. Also, dass es weniger ProgrammiererInnen braucht, um ein Problem zu lösen, definitiv. Es kann aber auch sein, dass es dann viel mehr Probleme gibt, weil halt jeder das schnell ausprobieren will und vielleicht kommst du dann eher zu dem Punkt, dass du eine Firma startest und dann wirklich Leute brauchst. Das heißt, ich glaube nicht, dass es Probleme gibt mit Arbeitsplätzen, aber dass Product-Leute selber entwickeln können, bis zu einem gewissen Grad, das wird sicher kommen und gibt es eigentlich auch schon.",
-            "start": 3615216,
-            "end": 3690822,
-            "confidence": 0.803655999999999,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Das klingt für mich so ein bisschen das t-shaped engineers also generalisten eher vor dieser herausforderung stehen dass sie quote unquote ersetzt werden und dass in zukunft mehr spezialisten benötigt werden würdest du zustimmen.",
-            "start": 3691182,
-            "end": 3705733,
-            "confidence": 0.848441176470588,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Wenn es rein ums Programmieren geht, ja, weil eben der mittelmäßige Code kein Problem mehr ist. Aber natürlich, was Generalisten schon können, ist den Kontext über sehr viele Ebenen, vielleicht auch mit dem Verstehen von Problemen über mehrere Abteilungen hinweg oder mehrere Systeme, auch wenn es um Architektur geht, solche Dinge. Also da glaube ich, dass schon noch eine Zeit zumindestens Bedarf ist und Generalisten sind in dem Bereich oft ganz gut. Also ich würde grundsätzlich immer noch nicht empfehlen, dass sich jede und jeder absolut in ein Spezialthema reinarbeitet und dass es nur mehr diese Spezialisten gibt. Also ich glaube schon, dass auch Generalisten weiterhin benötigt werden.",
-            "start": 3706273,
-            "end": 3746999,
-            "confidence": 0.8517037037037036,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "So der Hype-Train, der am Anfang in den Bahnhof eingefahren ist, erreicht langsam die Endhaltestelle. Vielen Dank für deinen Erfahrungsbericht, Wolfgang. Du hast mir auf jeden Fall ein bisschen Lust gemacht, Unit-Tests durch GitHub Copilot generieren zu lassen und ich glaube, das teste ich auch mal aus. Ich möchte nochmal ganz kurz erwähnen, wir werden nicht von GitHub oder Microsoft oder OpenAI gesponsort. Das war jetzt wirklich volle Überzeugung.",
-            "start": 3747039,
-            "end": 3771488,
-            "confidence": 0.8392173913043478,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Es gibt auch leider kein Referral-Programm. Ich habe mir das schon öfters überlegt, weil ich habe schon so viele Leute überzeugt, dass ich eigentlich gerne so ein Referral-Programm hätte.",
-            "start": 3771528,
-            "end": 3778330,
-            "confidence": 0.6185862068965515,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Und diese Episode war natürlich jetzt alles ein bisschen high-level, aber sie war 100-prozentig basierend auf eigenen Erfahrungen durch Wolfgang. Neben GitHub Copilot gibt's aber natürlich auch noch andere Tools, die was Ähnliches machen, beziehungsweise auch in diesen AI-Coding-Assistant-Approach reingehen. Und zwar gibt's noch so was wie Tab9 oder auch ein Service von Amazon Web Services, CodeWhisperer, find ich sehr geil den Namen, muss ich zugeben. Das bedeutet, falls ihr GitHub eher abgeneigt seid, weil es Microsoft ist, könnt ihr die anderen Tools natürlich auch mal ausprobieren. Man muss jetzt jedoch auch sagen, du hast jetzt natürlich primär über GitHub Copilot gesprochen, GitHub hat aber vor kurzem auch GitHub Copilot X rausgebracht, beziehungsweise angekündigt. GitHub Copilot X ist dann die Erweiterung von GitHub Copilot, was dann OpenAI´s Modell GPT-4 adaptiert und die ganze Sache aus den letzten zwei Jahren natürlich so ein bisschen uplevelt und die Learnings einfließen lässt. Ich glaube, da kann man sich schon auf die Beta-Liste schreiben lassen. Einfach mal googlen GitHub Copilot X, wer direkt ein Level höher einsteigen möchte. Wer aber Wer zum Thema OpenAI und GitHub Copilot im Speziellen mehr wissen möchte, wer so ein bisschen technisch zwei, drei, vier Ebenen tiefer eintauchen möchte, für die Leute haben wir zwei Podcast-Empfehlungen. Auf der einen Seite hat die ProgrammierBar, ebenfalls ein guter Software-Engineering-Podcast, vor Kurzem einen Deep Dive mit Matthias Plappert gemacht. Matthias Plappert war ein Software-Ingenieur bei OpenAI. zu der Zeit, als auch GitHub Copilot und das Codex-Modell entwickelt wurde. Sehr interessanter Deep Dive, um mal ein bisschen hinter die Kulissen von OpenAI zu schauen. Und dann gibt es noch zwei Episoden vom To-Do-Cast. Der To-Do-Cast sind zwei Podcast-Hosts. Der eine arbeitet bei Microsoft, der andere bei GitHub. Also auch schon ein paar Internals. Und zwar gibt es da die Folge 60 zum Thema GitHub Copilot X, wie gesagt, die Erweiterung von GitHub Copilot und die Folge 65 zum Prompt Engineering, was sich dann natürlich dann mehr auf JGPT oder ähnliches bezieht, dennoch vielleicht auch eine gewisse Relevanz zu GitHub Copilot hat. verlinken wir alles in den Shownotes.",
-            "start": 3778710,
-            "end": 3916008,
-            "confidence": 0.8074069767441857,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Und nachdem wir jetzt so viel kommerzielle Firmen genannt haben, meine Bitte noch, wenn von euch jemand wirklich Erfahrung hat mit guten Open-Source-Modellen oder anderen Ansätzen, bitte kommt bei uns in der Community vorbei, lasst uns das wissen. Bin da super interessiert und ich glaube, da kommt in Zukunft auch mehr und würde mich auch freuen, wenn da mehr in den Bereich kommt, weil das halt auch gesellschaftlich ein großes Thema ist, eben auch mit der ganzen rechtlichen Geschichte und so. würde mich wirklich freuen, da mehr Open-Source-Modelle zu sehen, obwohl das natürlich auch einfach schwierig ist, weil da viel Geld dahinter steckt.",
-            "start": 3916028,
-            "end": 3948078,
-            "confidence": 0.8243203883495147,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Man muss aber auch sagen, wenn du der ProgrammierBar folgst, die haben jetzt auch AI-News und in diesen AI-News haben sie immer irgendwelche Open-Source-Trainingsmodelle drin, wie zum Beispiel das Lama-Modell. Fun Fact, irgendwie sind alle Open-Source-AI-Modelle nach irgendwelchen Tieren benannt. Hört da mal rein und diese Open-Source-Modelle, die müssen sich wirklich vor den Proprietären nicht mehr verstecken. Da gibt es dann irgendwelche Tests, die dann verglichen werden und diese Open-Source-Modelle kommen sehr, sehr nah an Open AIs, Chat-GPT und GPT-3 und 4 und 3.5 ran. Also verlinken wir auch in den Shownotes mal ein paar Open-Source-Modelle, falls da wer Bock hat, ein bisschen rumzuspielen.",
-            "start": 3948118,
-            "end": 3986204,
-            "confidence": 0.7759038461538459,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Aber gerade im Coding ist, glaube ich, noch Luft nach oben bzw. ist halt auch immer die Experience. Wenn ich dann keine Möglichkeit habe, das sinnvoll lokal in irgendeiner Form zu verwenden, das ist halt immer so die Frage. Also wer da wirklich Wissen hat und Input hat, bitte unbedingt vorbeikommen. bei uns in der Community. Und ganz allgemein würde uns natürlich super freuen, wenn ihr uns empfehlen könntet in eurer Bubble. Und nachdem ihr uns empfohlen habt, könntet ihr auch noch runter in die Shownotes gehen. Da findet ihr so zwei Daumen, einen nach unten und einen nach oben. Wenn ihr da mal vielleicht draufdrücken könntet, je nachdem wie ihr die Episode gefunden habt. Einfach so, um einen schnellen Check für uns zu ermöglichen, bekommen wir einfach die Info. Okay, wie viel Daumen rauf, wie viel Daumen runter pro Episode. Hatten wir denn und es geht auch plattformübergreifend, egal wo ihr uns hört.",
-            "start": 3986527,
-            "end": 4035155,
-            "confidence": 0.8184805194805191,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Das war's von uns. Viel Spaß beim Rumschwimmen mit GitHub Copilot und bis zum nächsten Mal.",
-            "start": 4035195,
-            "end": 4039856,
-            "confidence": 0.742875,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Tschüss. Ciao. Und nicht vergessen, wenn ihr einen neuen Job sucht oder als Firma die Top-Talente, dann schaut vorbei bei unserem Episodensponsor, dem Pitch Club. Link in den Show Notes.",
-            "start": 4039876,
-            "end": 4051921,
-            "confidence": 0.7772333333333332,
-            "channel": null,
-            "speaker": "A"
-        }
-    ],
-    "confidence": 0.7928807836598607,
-    "audio_duration": 4052.0,
-    "webhook_status_code": null,
-    "webhook_auth": false,
-    "summary": null,
-    "auto_highlights_result": null,
-    "content_safety_labels": null,
-    "chapters": null,
-    "sentiment_analysis_results": null,
-    "entities": null
+  "language_code": "de",
+  "audio_url": "https://audio1.redcircle.com/episodes/1d125b42-5d9c-4925-8b11-52766f481f0d/stream.mp3",
+  "punctuate": true,
+  "format_text": true,
+  "dual_channel": false,
+  "webhook_url": null,
+  "webhook_auth_header_name": null,
+  "webhook_auth_header_value": null,
+  "audio_start_from": null,
+  "audio_end_at": null,
+  "word_boost": [],
+  "boost_param": null,
+  "filter_profanity": false,
+  "redact_pii": false,
+  "redact_pii_audio": false,
+  "redact_pii_policies": null,
+  "redact_pii_sub": null,
+  "speaker_labels": true,
+  "speakers_expected": 2,
+  "content_safety": false,
+  "content_safety_confidence": null,
+  "iab_categories": false,
+  "custom_spelling": null,
+  "disfluencies": false,
+  "sentiment_analysis": false,
+  "auto_chapters": false,
+  "entity_detection": false,
+  "summarization": false,
+  "summary_model": null,
+  "summary_type": null,
+  "auto_highlights": false,
+  "language_detection": false,
+  "speech_threshold": null,
+  "id": "62znl60jnb-a016-4b55-8353-81a65adab0f6",
+  "status": "completed",
+  "error": null,
+  "utterances": [
+    {
+      "text": "Also nach meinem Erlebnis damit würde ich jetzt als CTO oder eigentlich als Priority Nummer 1 sehen, meinen ProgrammiererInnen sowas zur Verfügung zu stellen. Und das ist glaube ich auch die große Stärke von Copilot, weil du ganz viele Kontext-Switches vermeidest. Ich glaube von den 100 Zeilen habe vielleicht 10 Zeilen ich geschrieben.",
+      "start": 2562,
+      "end": 23079,
+      "confidence": 0.7909433962264153,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "AI und speziell auf die Programmierung trainierte KI Modelle sind angetreten, um die Welt, wie wir programmieren, zu verändern. GitHub Copilot ist da der Platzhirsch im Markt. Viele Softwareentwicklerinnen haben den Service bereits ausprobiert, manche schwören darauf und wollen gar nicht mehr ohne, manche sagen, och ganz nett, aber nutzten es nicht regelmäßig und andere wiederum, Quote und Quote, hatten noch nicht die Zeit reinzuschauen. Wolfgang gehört zu den Early Adoptern und will gar nicht mehr ohne seinen Co-Piloten programmieren. Ich zum Beispiel habe es noch nie genutzt. In dieser Episode sprechen wir über Wolfgangs Erfahrungen und schneiden Themen an, wie zum Beispiel Bugs, die durch AI generiert werden, die Auslagerung von langweiligen Arbeiten, Training-Bias und veraltete Code-Vorschläge und ob wir wirklich schneller bzw. produktiver bei der Programmierung werden. Viel Spaß!",
+      "start": 27298,
+      "end": 75908,
+      "confidence": 0.8289389312977098,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Es gibt jetzt eine Bahnstrecke bei dir?",
+      "start": 88363,
+      "end": 90366,
+      "confidence": 0.7345714285714285,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Meine lieben Damen und Herren, der Hype-Train ist eingefahren. Willkommen zur heutigen Folge des Engineering-Cures. Heute sprechen wir mal ein bisschen über ein Hype-Thema. Wir propagieren ja eigentlich in diesem Podcast öfters, dass du nicht auf jeden Hype aufspringen solltest. Beziehungsweise, dass jeder Hype mal irgendwann wiederkommt. Auch Schlaghosen. Aber heute sprechen wir mal wirklich über ein Hype-Thema und zwar über dieses Buzzword von AI, Artificial Intelligence in der Softwareentwicklung. Und da kommt man natürlich um ein proprietäres Produkt nicht drumherum. Und zwar um GitHub Copilot. Und jetzt haben wir hier zwei verschiedene Charaktere in diesem Podcast. Einmal mich, den Late Adopter, den Dinosaurier, der, und das ist jetzt keine Lüge, noch nicht GitHub Copilot ausprobiert hat. Ich habe noch nicht mal diese 60-Tage-Testversion genutzt. Und dann haben wir auf der anderen Seite auch im tiefen Süden, aus dem Blickwinkel von Duisburg gesehen, Schon fast Italien haben wir diesen Early Adopter Dr. Wolfgang Gassler, der ohne GitHub Copilot gar nicht mehr programmieren kann. Worum geht es denn dann heute? Heute geht es um GitHub Copilot, ChatGPT und alles andere, was dann noch auf dem Markt existiert, um die Softwareentwicklung einfacher, schneller, effektiver und vielleicht auch günstiger zu machen.",
+      "start": 90406,
+      "end": 174260,
+      "confidence": 0.8037979797979796,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Also super, vielleicht bin ich Early Adopter für dich, aber ich glaube für viele Leute bin ich der Late Adopter. Ich habe mir im Dezember 22 oder so Copilot angeschaffen. Für viele ist es wahrscheinlich Late Late Late im Game. Also was ich nur damit sagen will ist, dass du wirklich altmodisch bist, Andi. Und du kennst ja diesen Satz, unsere Jobs werden nicht ersetzt durch die AI, sondern unsere Jobs werden ersetzt durch Leute, die mit AI umgehen können. Daher finde ich es gut, hast du das JetGPT schon mal ausprobiert, irgendwie in den Satz eingegeben, einmal gefragt, ob du deinen Rasen auf 1,7 Millimeter oder besser 1,9 Millimeter trimmen sollst, so Fragen, die dich beschäftigen im Leben.",
+      "start": 174639,
+      "end": 213393,
+      "confidence": 0.7949915966386556,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Habe ich schon mal noch eine kleine Korrektur zum Rasen wenn du deinen Rasen auf 1,7 oder 1,9 Millimeter mähst. Ich bin mir nicht sicher was dann wirklich noch von einem Rasen über ist, weil Rasen halb Länge misst man eigentlich in Zentimeter.",
+      "start": 214213,
+      "end": 227719,
+      "confidence": 0.7920697674418602,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Und was ist jetzt die ideale Länge?",
+      "start": 227759,
+      "end": 229800,
+      "confidence": 0.6869999999999999,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Ja das kommt immer ganz draufs Wetter an oder was du vorhast. Also nehmen wir mal zum Beispiel wenn es jetzt.",
+      "start": 229820,
+      "end": 233602,
+      "confidence": 0.6845238095238096,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Ihr wollt einfach eine kurze Antwort. Okay es ist schwierig.",
+      "start": 233622,
+      "end": 236363,
+      "confidence": 0.45309999999999995,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Kleiner Funfact, in Deutschland gibt es vermehrt Trockenperioden und alle sagen immer, mein Rasen verbrennt, mein Rasen verbrennt. Also für alle Leute, die einen Garten haben und es kommt eine längere Trockenperiode, beziehungsweise man merkt das schon, lasst den Rasen einfach mal so auf 6 plus Zentimeter stehen, dann bleibt er auch sehr sehr lange grün.",
+      "start": 237143,
+      "end": 257397,
+      "confidence": 0.811857142857143,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Ja, bei uns regnet es noch.",
+      "start": 258238,
+      "end": 259418,
+      "confidence": 0.4116666666666666,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Springen wir mal ins Thema. Du hast gesagt, du bist im Dezember...",
+      "start": 259439,
+      "end": 263082,
+      "confidence": 0.5576666666666666,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Einen Moment, bevor es weitergeht. Wir versuchen ja immer unsere Werbepartner so auszuwählen, dass es auch einen Mehrwert für euch am Audiogerät hat. Und wir erwähnen ja auch immer, dass sich in der IT eigentlich sehr dieser Arbeitsmarkt dreht. Nicht Unternehmen suchen jetzt die Fachkräfte aus, sondern die Fachkräfte, also wir, suchen uns die Unternehmen aus.",
+      "start": 263142,
+      "end": 282637,
+      "confidence": 0.8514821428571429,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Und aus diesem Grund ist PitchClub unser Partner der heutigen Episode. Man könnte sie auch als die Höhle der Löwen für Unternehmen, die Softwareentwickler suchen bezeichnen. Denn der PitchClub veranstaltet europaweit sein einzigartiges Reverse Recruiting Event, die PitchClub Developer Edition. Beim PitchClub Developer Edition pitchen Unternehmen sich selbst ihre Softwareprojekte und Jobs vor vorselektierten Softwareentwicklerinnen und Softwareentwickler. Kein langer Prozess oder wie Teilnehmer berichten, kein Bullshit Bingo. sondern knackige sechs Minuten, in denen sich das Unternehmen im Pitch präsentieren muss. Pro Event sind circa zehn Unternehmen am Start, 60 bis 80 Entwicklerinnen und nach den Pitches geht's in die One-on-One-Gespräche. Anschließend wird das ganze Event mit Snacks und Drinks bei einer Afterwork-Party abgeschlossen.",
+      "start": 283017,
+      "end": 326486,
+      "confidence": 0.8213539823008847,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Ist schon ein sehr cooles Konzept, finde ich, muss ich zugeben. Das Event hat jetzt schon 127 mal stattgefunden in über sechs Jahren und Firmen von groß bis klein haben Top-Talente dort gefunden. Da sind Firmen dabei wie SAP, Deutsche Bank, AXA, Porsche, Accenture, BWC, Check24, Pro7, Zeiss, Biontech und Andi, das wird dir am meisten gefallen als Kettensägen-Liebhaber, auch Stihl war dabei. Es sind aber nicht nur Konzerne, sondern auch Mittelständler und Startups wie Celonis, ZipGate, G-Data, Liliru, Lotum oder Crono24.",
+      "start": 326686,
+      "end": 357931,
+      "confidence": 0.8021585365853657,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Das Event funktioniert aber auch für Unternehmen sehr gut. Die Telekom war bisher zweimal auf der Pitchbühne und konnte zwei ihrer offenen Stellen besetzen. 2024 wollen sie mit weiteren Pitches an diesen Erfolg anknüpfen. Also wenn du aktuell auf der Jobsuche bist oder für dein Team oder für dein Unternehmen neue Top-Talente suchst, die nächste Möglichkeit selbst zu pitchen, beziehungsweise sich Pitches von Unternehmen anzuhören, ist am 27. Juli in München, 24. August in Dresden, 31. August in Hannover, 21. September in Berlin und am 28. September in Köln.",
+      "start": 358131,
+      "end": 393325,
+      "confidence": 0.8202921348314608,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Und natürlich am wichtigsten als Österreicher, muss ich das natürlich auch sagen, am 7.9. in Wien.",
+      "start": 393545,
+      "end": 399191,
+      "confidence": 0.7928125,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Alle Infos findet ihr unter pcde.io, paula-cesar-dora-emil.io. Link findest du aber natürlich auch in den Show Notes. Und jetzt geht's weiter mit dem Podcast. Werbung Ende. Du hast gesagt, du bist im Dezember 2022 in den Hype Train eingestiegen und hast mit der Nutzung von GitHub Copilot angefangen. Bevor wir jetzt in das Thema mal tief einsteigen, beziehungsweise bevor wir deine Erfahrungsberichte hören, nur mal ganz kurz zur Klarstellung, was GitHub Copilot ist. Auf der Webseite wird GitHub Copilot als dein Artificial Intelligence Per Programmer angepriesen. Es ist also ein AI-Tool, was dir mit der Eingabe von Code-Kommentaren Code generieren soll. Es hat grob Support für zwölf Sprachen.",
+      "start": 399231,
+      "end": 448320,
+      "confidence": 0.8235277777777776,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Was heißt denn grob? Sind es zwölf oder sind es elf? Was ist das für eine Ungenauigkeit? Diese AI-Welt, alles wird so ungenau definiert.",
+      "start": 448880,
+      "end": 455324,
+      "confidence": 0.5694583333333333,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Auf der Dokumentationsseite von GitHub stehen Programmiersprachen wie Go, Java, PHP, Python, Ruby, Scala. In anderen Quellen, denen von OpenAI, steht zum Beispiel unter anderem, dass auch Shell supportet wird. Und jetzt ist die Frage, ist Shell eine Programmiersprache? Weiß ich nicht. Deswegen ungefähr zwölf. Aber die wohl am besten supporteste Sprache ist wohl Python. Und zwar wurde GitHub Copilot mit 159 Gigabyte an Python-Code von 54 Millionen GitHub-Repositories trainiert. Also das ist wohl anscheinend das größte Trainingsmodell für eine spezifische Sprache. Was steckt hinter GitHub Copilot? Hinter GitHub Copilot steckt ein Language-Modell namens Codex. Codex wurde 2021 von OpenAI entwickelt und auch veröffentlicht. OpenAI ist auch die Firma hinter ChatGPT. Immer wenn wir von ChatGPT sprechen, sprechen wir immer von GPT3 oder GPT3 oder GPT4. Das Language-Modell Codex ist sozusagen der Nachkomme von GPT3. Und es hat eigentlich eine recht gute Integration in alle IDEs wie Visual Studio Code, JetBrains oder, Achtung, was ich auch sehr interessant fand, NeoVim. Ist die Zusammenfassung korrekt, Wolfgang?",
+      "start": 455344,
+      "end": 532757,
+      "confidence": 0.8247696969696966,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Ja, ob das alles richtig ist, kann ich natürlich nicht verifizieren, aber ich glaube, du bist alt genug, dass du schaffst, diese Webseite korrekt runterzulesen und dass sie nicht nur Bullshit verbreiten. Insofern sollte es mit den Sprachen ja stimmen. Meine Erfahrung ist, dass JavaScript super gut auch funktioniert, also ich glaube, dass da auch sehr viel Testdaten halt im Internet herumschwirren und dadurch, dass es sich halt auch gut trainieren lässt. Zu deiner Definition, was es eigentlich ist, dass es ein Tool ist, was dir Code vervollständigt, wenn du Kommentare eingibst. Ich glaube, es ist viel, viel mehr. Und ich würde es eigentlich eher so beschreiben, dass es dir Code vervollständigt, egal was die Eingabe unter Anführungszeichen ist. Also egal, ob das ein Kommentar ist, ob das schon Code ist, der vorhanden ist, ob du da eine Methode reinspringst. wird hier eine Zeile vervollständigt, ein Variablenamen, also es ist sowas ähnliches wie Autocompletion, wie man das so gewöhnt ist, dass hier zum Beispiel ein Typ in Java aufgelöst wird, schon automatisch, weil es klar ist, was das ist, aber es geht halt viel, viel weiter, dass der dir wirklich dann sinnvolle Vorschläge bis zu ganzen Funktionsblöcke vorschlägt und du kannst es einfach dann akzeptieren und hast es in deiner IDE zur Verfügung. Und es ist wirklich so jemand wie im Pair Programming, der dir Input liefert, während du programmierst. Und das ist eigentlich der große Unterschied zu JetGPT, wo du halt ein klassisches Webinterface hast, wo du einfach Fragen, Antworten sozusagen hast, wie in einem Jet. Was ich vielleicht auch noch kurz einwerfen möchte ganz vorab, weil das natürlich eigentlich schon nicht unserem Style entspricht, dass wir da ein Tool so hervorheben oder eine Firma auch so hervorheben. Und es gibt natürlich so ein paar Bestrebungen in der Open-Source-Welt in die Richtung zu gehen. Ich habe bisher noch nichts so Überzeugendes gesehen, aber wir lassen uns da gerne belehren, wenn es da schon was Cooles gibt, was wirklich da mithalten kann. Aber derzeit ist es halt leider, muss man auch dazu sagen, das einzige Tool, was wirklich super funktioniert und einfach zu verwenden ist und wir bekommen nichts bezahlt. Für diese Empfehlungen ist es einfach meine persönliche Empfehlung beziehungsweise meine Erfahrungen, die ich mit diesem Tool gemacht habe und ich zahle auch ganz normal dafür.",
+      "start": 533021,
+      "end": 656208,
+      "confidence": 0.7940259067357515,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Jetzt wird GitHub Copilot als dein AI-Pair-Programmer beschrieben. Im Pair-Programming gibt es eigentlich zwei Rollen. Einen, der den Code schreibt, der sogenannte Driver oder der Pilot. Und der andere, der sagt, wo lang es geht. Der Navigator bzw. Observer. Würdest du sagen, dass GitHub Copilot wirklich dann der Driver ist? Und du als, ich sagte gerade, Code-Kommentarschreiber, dann wirklich der Navigator und Observer?",
+      "start": 656555,
+      "end": 681036,
+      "confidence": 0.8074285714285714,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Es geht zumindestens in die Richtung, würde ich sagen. Also klar musst du noch selber viel schreiben, aber die Rollenverteilung ist schon relativ klar, aktuell zumindestens. Meiner Meinung nach, du überlegst dir, was du machen willst, wo du hingehen willst, in welche Richtung du gehen willst, wie die Funktionen vielleicht aufgeteilt sind. Und der Code wird dann vervollständigt und du musst immer wieder mal mithelfen. Auch teilweise einfach mit so einfachen Dingen, wie du fangst mit einem I an für if und dann ist es irgendwie klar, okay, du wirst jetzt irgendwie eine Weiche haben, eine Unterteilung und so kannst du auch einfach ein bisschen mithelfen mit einem Zeichen, das du eingibst, um so eine Richtung vorzugeben, weil teilweise ist es unklar für Copilot. Insofern würde ich schon sagen, es geht genau in die Richtung und aktuell musst du natürlich noch irgendwo beide Rollen übernehmen, aber man merkt auch jetzt in dem halben Jahr, wo ich das verwendet habe, dass da Optimierungen reingeflossen sind und es wird besser und Copilot übernimmt dir da noch wirklich mehr Arbeit von deinem Coding an sich.",
+      "start": 681076,
+      "end": 737057,
+      "confidence": 0.8227802197802203,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Jetzt bin ich immer ein großer Fan von dem Warum dahinter und jetzt würde ich gerne mal deine Motivation verstehen, deine Hauptmotivation. A, warum du damals im Dezember GitHub Copilot ausprobiert hast und B, wie sich die Hauptmotivation, warum du GitHub Copilot heute noch nutzt, geändert hast.",
+      "start": 737477,
+      "end": 756087,
+      "confidence": 0.8395744680851067,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Und die dritte Frage ist, warum man dann auch dafür bezahlt, weil das ist ja eigentlich das, was man sich zum Beispiel auch immer fragen sollte, wenn man ein Produkt kreiert oder stellt, gibt es Leute, die wirklich dafür bezahlen wollen und wirklich Geld dafür auf den Tisch legen, weil dann hast du die Bestätigung, dass es wirklich funktioniert, dass es einen Mehrwert schafft. Und im Prinzip genau darum ist es mir gegangen, damals herauszufinden, hatte es einen gewissen mehrwert ich war super kritisch damals letztes jahr und war eigentlich nicht sehr offen dafür so wie du natürlich klassischer bauer aus duisburg.",
+      "start": 756348,
+      "end": 785331,
+      "confidence": 0.8275196078431373,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Weil der bauer nicht kennt, der hat Frida nicht.",
+      "start": 785371,
+      "end": 787132,
+      "confidence": 0.5428888888888888,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Genau richtig und dann hatte ich mit einem freund eine pair programming session, Und der hatte Copilot, weil der schon in dem frühen Beta-Programm drin ist, weil der sehr stark in der Open-Source-Welt unterwegs ist und die gute Open-Source-Entwickler, die, keine Ahnung, es wird nicht so genau definiert, aber die wichtigen Open-Source-Entwickler hatten Zugriff zu diesem Tool früher und haben auch kostenlosen Zugriff. Und der hatte das schon. Und in einer Pair-Programming-Session habe ich mal gesehen, was da wirklich auto-vervollständigt wird. Und ich war so beeindruckt, dass ich mir gedacht habe, okay, das muss ich auch sofort selber ausprobieren. Ich war mir noch nicht sicher, ob es diese, aktuell sind es 100 Euro im Jahr, was ja eigentlich auch relativ wenig ist, muss man dazu sagen. Für ein SaaS-Tool oder so ist das ja eigentlich Standardwert und habe dann einfach mal begonnen und war dann aber in der Testphase von zwei Monaten eigentlich sowieso nach einer Woche eigentlich sold, weil ich mir gedacht habe, okay, das nimmt mir so viel Arbeit ab und ich wäre so viel produktiver, dass der Preis eigentlich gar keine Diskussion mehr war.",
+      "start": 787172,
+      "end": 844513,
+      "confidence": 0.7619839572192513,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Und wenn ich das jetzt richtig verstanden habe, habe sich die Hauptmotivation nach einer Woche Testphase bei dir jetzt auch weiter nicht geändert und das ist immer noch die Hauptmotivation, dass es für dich einfach so sinnvoll ist und ein Productivity Boost ist, dass du sagst, okay, her damit, ich nutze das weiter.",
+      "start": 844793,
+      "end": 859312,
+      "confidence": 0.7913207547169809,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Genau. Also Productivity Boost ist sicher eigentlich der Hauptgrund. Ich kann da auch mal ein Beispiel geben, ein ganz ein stupides Beispiel. Ich hatte gerade kürzlich ein großes SQL-Schema und in dem SQL-Schema hat es in circa 30 Tabellen oder so Datumsfelder gegeben und jedes Datumsfeld hatte ein Prefix, abc, efg, keine Ahnung, von den jeweiligen Tabellen. Ich hatte historische Gründe und ich wollte alle Datumsfelder umbenennen einfach in Date, damit dieses Prefix weg ist. Ich wollte einfach alle Prefixe loswerden. Was machst du normalerweise? Du gehst durch diese 30 Tabellen durch und überlegst dir diese Alter Statements, weil jedes Prefix eben anders ist, waren nicht die gleichen Prefixes. Gehst jede Tabelle durch, wie heißt die Tabelle, wie heißt dieses Feld, was muss ich für Alter Table Statement schreiben, damit dieses Feld umbenannt wird in Date. Wenn du Copilot hast, das habe ich auch gemacht, Gehst du in dieses Schema SQL-File rein, ans Ende, schreibst einmal dieses ALTER-Statement für eine Tabelle oder vielleicht für zwei Tabellen und ab diesem Zeitpunkt checkt Copilot dieses Pattern, was du eigentlich machen willst und nach zwei ALTER-Table-Statements gehst du in die nächste Zeile und es schlägt dir bereits ein drittes ALTER-Table-Statement vor von einer anderen Tabelle, die auch ein Date-Field hat mit dem jeweiligen Prefix und mit dem Kommando, um dieses Feld umzubenennen. Und so klickst du dann einfach 30 Mal auf DUB, auf Vervollständigen, 30 Mal in 9 Zeilen und hast einfach diese 30 alter Table Statements für alle Tabellen, die du in deinem ganzen Schema zur Verfügung hast. Und das dauert eine halbe Minute, würde ich mal sagen. Wenn du dir überlegst, wie lange du brauchst, um 30 alte Table Statements mit den richtigen Prefixes aus den richtigen Tabellen alleine zusammenzusuchen und dann zu schreiben, das braucht wesentlich länger. Also ich schätze mal, dass du das sicher 10 Minuten, wahrscheinlich eher länger vermute ich mal. dran bist und so brauchst du eine halbe Minute. Und das kannst du dir auch nicht programmieren. Du könntest dir natürlich jetzt irgendein komplexes Skript schreiben, was dir die Tabellen ausliest, die Namen und das vielleicht machen, aber alleine dieses Skript dauert wieder länger, weil für 30 Tabellen machst du kein eigenes Skript, das dir das irgendwie ausliest.",
+      "start": 859332,
+      "end": 985837,
+      "confidence": 0.7646172506738543,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Du hast dann aber nicht GitHub Copilot sowas gesagt wie, vervollständige mir bitte die letzten zwei alter Table Statements für die übergebliebenen 28 SQL-Tabellen.",
+      "start": 985857,
+      "end": 993001,
+      "confidence": 0.6606249999999999,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "In dem Fall war gar kein Kommentar im Spiel. Das könnte man natürlich noch probieren, in die Richtung, sowas zu kommentieren oder einfach Kontext geben. Im Prinzip Copilot ist ja ziemlich egal, ob das jetzt ein Kommentar ist, ob das irgendwo ein Text ist. Probiert halt einfach Patterns zu matchen. Aber in dem Fall war es wirklich nur zwei Alter Table Statements. Es ist sofort klar, ich will da mehr Alter Table Statements schreiben und so wird es vervollständigt.",
+      "start": 994474,
+      "end": 1016009,
+      "confidence": 0.7470253164556963,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Aber das ist schon mal ein gutes Stichwort. Und zwar hattest du gerade gesagt, du hast dem das ganze SQL-File gegeben und hast dann am Ende des SQL-Files diese Alter-Table-Statements geschrieben. Das bedeutet, die 100, 200 SQL-Zeilen waren dann ja sozusagen der Kontext, weil man sagt ja auch bei Chat-GPT, umso mehr Kontext dieses AI-Modell hat, desto besser werden die Antworten. Also so nach dem Motto, stell dir vor, du bist Maschinenbauer und du würdest jetzt einen neuen 3D-Ducker designen. Was würdest du machen? das was ist notwendig um fleisch zu drogen zum beispiel ja also du gibst ja umso mehr kontext du mitgibst das bedeutet du hast also eigentlich mit dem sql file den vorhandenen kontext reingegeben genau.",
+      "start": 1016249,
+      "end": 1056878,
+      "confidence": 0.7714957983193277,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Also der kontext ist super super wichtig weil wenn du einen normalen kollegen kollegin hast brauchst du natürlich den gewissen kontext und wir haben das ja auch oft genug auch in episoden besprochen dass der kontext so wichtig ist um zu verstehen wo man eigentlich hin will Und du musst natürlich auch einer KI ganz allgemein immer diesen Kontext mitliefern. Und das muss halt der richtige Kontext sein, weil du könntest ja auch sagen, okay, lies mein gesamtes Repository, aber das ist dann wieder zu viel Kontext, sondern es sollte halt der Kontext sein, der in dem Fall jetzt gerade gebraucht wird innerhalb dieser Datei. was es auch immer ist. Kurz erklärt an einem Beispiel, was ich selber gerade mal gehabt habe. Ein kleines Problem aus meinem nicht technischen Leben. Ich wollte einfach von einer Webseite die Infos bekommen, wenn dort neue Entries eingegeben werden. Zum Beispiel kann sich das wie eine Immobilienseite oder so vorstellen. Du wirst informiert werden über neue Wohnungen zum Beispiel. Und die Webseite hatte eben keinen Alert und die wollte mir das zusammenstückeln, dass ich da vielleicht eine Slack-Message oder sowas bekomme. Wollte eigentlich Tools verwenden, habe aber kein sinnvolles Tool gefunden, kein einfaches, kein kostenloses. Es war alles viel zu kompliziert und irgendwann habe ich mir gedacht, eigentlich wäre es doch gar nicht so schwierig, das selber zu programmieren. Und dann habe ich mir überlegt, okay, ich probiere das einfach mal schnell zusammen. Coden in JavaScript und habe mit dem Context begonnen. Das heißt, ich habe in meine JavaScript-Datei hineinkopiert als Kommentar den HTML-Code. den ich fetchen will und die URL einfach von einem Beispiel Item oder von zwei Items und habe dann angefangen mit dem Programmieren. Und dadurch dieser HTML-Code in den Kommentaren bereits verfügbar war, hat Copilot automatisch verstanden, okay, ich will da gewisse Felder aus diesem HTML-Code rauspassen. Ich will diese URL fetchen. Ich glaube, ich habe es auch in ein, zwei Kommentaren dazu geschrieben noch. Und am Ende wurde mir eigentlich fast alles vervollständigt. Copilot hat mir sofort angeboten, am Anfang Puppeteer zu importieren als Library. Ich habe noch nie in meinem Leben von Puppeteer gehört. Aber bin dann draufgekommen, es ist ein Headless-Tool, wo du einfach Webseiten fetchen kannst. Das heißt, es wurde mir sogar eine Library vorgeschlagen, die ich eigentlich gar nicht am Schirm hatte. Musste dann kurz googlen, was das überhaupt ist für eine Library. Und ich habe dann eigentlich nur ein, zwei Richtungen vorgegeben, okay, vielleicht noch eine Slack-URL, Webhook-URL, wie ich was aufteilen will, vielleicht so eine grobe Struktur. Hat schon ein, zwei Dinge gebraucht, die ich geändert haben wollte. Auf jeden Fall hatte ich am Ende 100 Zeilen Code, die mir genau das gemacht haben, die mir ein Headless-Browser geöffnet haben, genau diese Elemente rausgelesen haben in der Schleife. Das richtige Mapping hat Copilot schon gemacht. Von dem Titel hat mir da ein internes Objekt erzeugt, genau mit den Werten, mit den richtigen Pfaden, wo man das im HTML findet, also mit den zu X-Path-Pfaden im Prinzip, um das aus dem HTML-Code rauszulesen. Und am Ende hat ihr das noch mit meinem Default-Deployment in dem Docker-Container gemacht und dieses ganze Projekt hat mich ungefähr eine Stunde gekostet. Und nach einer Stunde war dieses Ding Fertig und ich glaube von den 100 Zeilen habe vielleicht 10 Zeilen ich geschrieben plus Anleitungen natürlich in welche Richtung es gehen soll, aber ich habe von den 100 Zeilen eigentlich kaum eine Zeile selber geschrieben.",
+      "start": 1056898,
+      "end": 1243191,
+      "confidence": 0.7795052083333333,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Ich nenne das Projekt jetzt einfach mal deinen Immobilienscraper.",
+      "start": 1243311,
+      "end": 1246313,
+      "confidence": 0.597,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Genau damit ich meine 300 Immobilien, die waren mir einfach zu wenig, ich will da schon ein bisschen Immobilien ansammeln noch.",
+      "start": 1246353,
+      "end": 1252799,
+      "confidence": 0.6281904761904763,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Aber da hast du mit einer leeren Datei angefangen. Bedeutet, also als du dieses Quote-und-Quote-Projekt angefangen hast, war noch nichts da, und du hast GitHub Copilot geöffnet und hast dann einen Kommentar geschrieben, was gemacht werden soll.",
+      "start": 1253039,
+      "end": 1265003,
+      "confidence": 0.758891891891892,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Kommentar, Kontext gegeben, HTML-File und dann langsam begonnen mit einer Function. Oder eben, wenn Copilot dann anfängt, irgendwas zu schreiben, dann sagst du, okay, das will ich eigentlich in einer Function auslagern, dann schreibst du const Function xy und dann wird dir das schon vervollständigt. Also, du hilfst schon so mit, Es ist jetzt nicht so wie in ChatGBD, hätte ich natürlich auch machen können, den gesamten Kontext einmal in ChatGBD kopieren und sagen, schreibe mir dieses ganze Ding unter einmal. Funktioniert ja theoretisch auch und teilweise auch ganz gut, aber Copilot ist halt mehr so dieser iterative Weg, wo du wirklich Schritt für Schritt dich vorarbeitest und Hilfe bekommst. Das ist der große Unterschied zwischen ChatGBD und Copilot, obwohl ja im Hintergrund wahrscheinlich sehr ähnliche Modelle auch stecken.",
+      "start": 1265043,
+      "end": 1306300,
+      "confidence": 0.7754728682170543,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Das bedeutet, dass du in deinem Kopf aber vorher das große Ziel, das große Problem in mehrere kleine unterteilt hast. Das bedeutet, du hast nicht GitHub Copilot diese große Aufgabe gegeben, die du haben wolltest. Scrape mir diese Webseite und hol mir all diese Informationen runter, sondern du hast das große Problem in viele kleine Probleme aufgeteilt, schon vorher in deinem Kopf, und hast dann nur die kleinen Schritte an GitHub Copilot gegeben. Ist das richtig?",
+      "start": 1306660,
+      "end": 1332650,
+      "confidence": 0.8253815789473682,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Das ist korrekt und das ist eher die Variante, die ich bevorzuge. Es gibt natürlich auch diese Variante wirklich, noch mehr Kontext, beschreibe das ganz genau, so wie in einem Ticket sozusagen, eine Story und übergib die dann JetGBD zum Beispiel oder auch Copilot. ist theoretisch auch möglich, wobei meiner Meinung nach funktioniert das mit JetGBD wesentlich besser, wenn du so eine Aufgabe hast und wirklich ein Result haben willst und dann vielleicht so iterativ noch Kommentare gibst, okay, bitte das solltest du ändern, das solltest du ändern, das ist so mehr die JetGBD herangehensweise. Und mir als Programmierer ist eigentlich die Copilot herangehensweise lieber, wo ich einfach mehr Einfluss habe, mehr Direktiven geben kann, vielleicht auch mal was auslagern kann. Man sieht dann, der Code macht Sinn, aber ich möchte eine Funktion noch auslagern, kopiere das raus. Also dass man da schon iterativ mitarbeitet, ist meine persönliche präferierte Variante, weil dann auch der schönere Code am Ende üblicherweise rauskommt.",
+      "start": 1332830,
+      "end": 1386334,
+      "confidence": 0.7894187499999998,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Inwieweit wäre das denn sinnvoll, wenn ich jetzt erst Chetchipiti nutzen würde und dann einen Prompt geben würde, a la, stell dir vor, du wärst ein Programmierer und stell dir vor, du müsstest eine Immobilienwebsite scrapen, um dir eine neue Wohnung zu mieten und du möchtest dann alle Inserate mit diesen Kriterien haben und das wäre ein Programmierprojekt. Hallo Chetchipiti, bitte breche mir dieses Programmierprojekt in einzelne abarbeitbare Schritte hinab, dass du dann einzelne Schritte bekommst und diese Schritte dann Stück für Stück nach Copilot kopierst, um dann den Code generieren zu lassen?",
+      "start": 1386614,
+      "end": 1419354,
+      "confidence": 0.7820752688172039,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Das würde wahrscheinlich sehr gut funktionieren. Das persönliche Problem, was ich habe, ich verwende auch JetGPT durchaus für Coding-Dinge, eben für so klare Anweisungen. Mein persönliches Problem ist immer, dass ich dann das gesamte Resultat durchchecken muss und auch Fehler prüfen muss und es kommen Fehler vor, ganz klar. Also das ist nie ein perfekter Code und Ich persönlich finde es immer schwieriger, ganz viel Code zu verstehen, durchzulesen. JetJPG ist auch so ein bisschen langsam, dieses Webinterface, wenn man das jetzt nicht über API oder sonst was verwendet. Das finde ich irgendwie mühsamer, unter einmal alles zu verstehen und dann wieder die Probleme zu extrahieren und wieder Feedback zu geben. Das finde ich irgendwie umständlicher. langsamer, also wenn ich in meiner Idee wirklich schrittweise sofort reagieren kann und sehe, oh das ist die falsche Richtung oder einen kleinen Tipp geben kann und sofort in die richtige Richtung die Anweisung geben kann, das fühlt sich für mich zumindest aktuell noch wesentlich schneller an. Aber ich bin auch hin und wieder beim Experimentieren, kann man wirklich Chat-GPD vielleicht ein komplettes Ticket alleine bearbeiten lassen und ich habe das gerade vor ein paar Tagen probiert mit einem JavaScript-Code, der relativ kurz war, wo ich wirklich gesagt habe, das ist der aktuelle Code, ich will das ändern, mach mir das. Und das hat eigentlich erstaunlich gut funktioniert. Aber es muss halt dann wirklich sehr abgeschlossen sein, sehr einfach, weil sonst muss man halt extrem viel drüber iterieren und das ist irgendwie, fühlt sich einfach langsam an. Vielleicht ist es auch einfach, dass es nicht integriert ist in die IDE, macht auch schon viel aus.",
+      "start": 1419394,
+      "end": 1501756,
+      "confidence": 0.7760295202952031,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Nutzt du denn in irgendeiner Art und Weise die Kombination von Chat-GPT und Co-Pilot? Vielleicht nicht um große Probleme herunterzubrechen, aber in einer anderen Art und Weise?",
+      "start": 1502292,
+      "end": 1511563,
+      "confidence": 0.8052592592592593,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Ich würde sagen, am ehesten um Inspiration zu bekommen für irgendwelche technische Lösungen. Wie könnte man sowas angehen? Oder wenn man eben auch nicht im Code so klar die Möglichkeit hat, jetzt da loszustarten schon von dem Projekt. Wenn es um irgendeinen Algorithmus geht, so ganz oberflächlich, dann finde ich es persönlich auch oft gut, einfach diese Frage in JGPT zu stellen, weil dann bekommt man eine längere Antwort. Das ist in Copilot teilweise schwieriger. Es funktioniert schon auch, aber durch die andere Herangehensweise ist es ein bisschen schwerer, da wirklich auf eine Frage eine Antwort zu bekommen.",
+      "start": 1511603,
+      "end": 1544123,
+      "confidence": 0.8184489795918364,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Kommen wir nochmal zurück auf den Kontext, den du Copilot gibst. Wir hatten gerade das Beispiel von einem SQL-File und danach hast du irgendwie HTML-Code da reinkopiert für deinen Immobilien-Scraper. Jetzt besteht aber in der Regel ja ein Software-Projekt aus mehreren Files, aus 100.000, 10.000, 100.000 Lines of Code, aufgeteilt auf Hunderte von Dateien. Inwieweit kommt GitHub Copilot mit verschiedenen Dateien und wirklich mit existierenden Software-Projekten. Klar, richtet er den Kontext wirklich aus dem kompletten Projekt, so wie eine lokale IDE mit Klassenvorschlägen und Reusen von Funktionen und so weiter und so fort?",
+      "start": 1544475,
+      "end": 1584052,
+      "confidence": 0.7864516129032255,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Also ich kann natürlich nicht genau sagen, was alles an Copilot gesendet wird. Üblicherweise ist es eher der Kontext, aber man hat schon so das Gefühl, dass in irgendeiner Form auch ein Lernen passiert mit Variablennamen zum Beispiel, die in anderen Dateien drin sind, aber das entsteht dann eher dadurch, dass man diese Variablennamen schon mal verwendet hat oder in der anderen Datei auch Vorschläge bekommen hat. Also es wird schon in irgendeiner Form dieser Kontext beibehalten, aber es ist jetzt nicht so, dass alle Dateien irgendwie an Copilot gesendet werden, weil da meines Wissens zumindest der Kontext dann zu groß wäre. Also es ist schon eher lokal beschränkt und da muss man auch sagen, das ist eine gute Kombination mit der IDE. Die ganzen klassischen Klassenvervollständigungen, die basieren einfach über die IDE wie bisher. Das funktioniert ja auch sehr gut.",
+      "start": 1584745,
+      "end": 1630175,
+      "confidence": 0.8288794326241133,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Tolles Stichwort, Kontext zu groß. Bei der Vorbereitung für diese Episode hatte ich gelesen, dass das Codex-Modell, also das erweiterte Modell von GPT-3, einen Kontext von bis zu 14 KB Python-Code kann, wohingegen GPT-3 nur 4 KB an Kontext halten kann. Und das ist ja auch einer der größten Unterschiede zu dem aktuellen Modell GPT-4, was dann einen deutlich größeren Kontext vorhalten kann. Bist du denn schon mal bei der Arbeit an das Limit des Kontext, den du Github Coop alles füttern kannst, gestoßen, dass du gesagt hast, das ist zu viel? Oder wo du gemerkt hast, die Antwort stimmt nicht wirklich, weil die erste Hälfte des Kontextes abgeschnitten wurde? Oder vielleicht die letzte?",
+      "start": 1630495,
+      "end": 1676210,
+      "confidence": 0.8307456140350882,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Bei Copilot hast du ja keinen Einfluss drauf, was wirklich der Kontext ist oder die Prompt, weil du das ja nicht wirklich eingibst in dem Sinne, sondern es passiert einfach durch den Text, der in deiner Datei steht, rundherum, wo dein Cursor gerade sitzt. Bei JetJPG laufst du natürlich oft in dieses Problem rein. Ich hatte gerade kurz auch wieder ein kleines Problem. ein Bild von einer Teilnehmerliste mit dem Handy gemacht, bei einem Workshop, von einem Ausdruck, und ich wollte den digitalisieren, möglichst schnell. Und was man halt früher so gemacht hat, ist mit irgendeiner OCR-Software, mit irgendwelchen Apps, die mal OCRt, und dann probiert, irgendwie die in eine Tabelle überzuführen, wie auch immer. Und genau das Gleiche wollte ich aber möglichst schnell probieren, und ich hab mal schnell gecheckt, wie man möglichst einfach was OCRn kann. Hab gefunden, das kann Google Cloud. Ihr habt dann einen Account, einen Kommando auf der Commandline, gcloud, das ganze OCRen, dann habe ich ein großes JSON-Fall bekommen, das habe ich in JetJPG kopiert, das war dann eben zu lang, weil das halt sehr viel Metadaten gehabt hat. Hab dann aber sehr schnell gemerkt, dass am Anfang eh eine reine Textrepräsentation in einem Feld steht von dem JSON. von diesen Namen, die in dieser Teilnehmerliste drin waren und Firmen, aber natürlich in der komplett falschen Reihenfolge, weil OCR-Tabelle, da kommt natürlich keine Tabelle raus, sondern ein langer String dann am Ende. Aber diesen String habe ich dann JGPD gefüttert und habe gesagt, okay, das ist eine Tabelle, das ist ein Output von OCR, mach mir eine Tabelle daraus und am Ende ein CSV und der Output war perfekt. Also ihr habt da auch wieder super schnell innerhalb von einer Minute, würde ich mal sagen, oder zwei Minuten, gut, ein bisschen googeln war auch noch dabei, lass es zehn Minuten sein, eine Tabelle OCRt und am Ende ein CSV rausbekommen. Und das ist halt einfach das Coole daran, dass JetGPG durch das Language Model erkennt, was ist ein Vorname, was ist ein Nachname, wie müsste die Tabellenstruktur sein, sofort dieses Pattern erkennt und das dann richtig umsetzt und auflöst, weil das war ja eigentlich der schwierige Schritt, den du sonst normal irgendwie manuell machen musst und der wird dann halt schnell erledigt und in dem Fall das JSON, das komplette JSON-File war zu groß für JGPT, aber wenn du dann den richtigen Snippet raussuchst aus diesem JSON, dann ist es wieder kein Problem und da sieht man auch, dass da Kontext gar nicht so groß sein muss, solange es der richtige Kontext ist. Und das ist natürlich dann die Herausforderung. Was für einen Kommentar schreibst du? Gibst du irgendeinen Hint in Copilot zum Beispiel? Und wenn es auch nur ein Zeichen ist, wie das if, das i vom if, das dann sofort klar ist, okay, geh neben einem anderen Entscheidungsbaum runter und schreibe jetzt keinen Kommentar oder schlag keinen Kommentar vor, sondern eine if-Struktur. Und das hilft halt dann Copilot. So simple, ganz kleine Kontext-Snippets, die man da zur Verfügung stellt.",
+      "start": 1676410,
+      "end": 1837717,
+      "confidence": 0.7670887573964491,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Jetzt hattest du schon die zweite externe API angesprochen, gerade Google Cloud, G Cloud, vorher Puppeteer. Wenn ich das richtig raushöre, schlägt dann GitHub Copilot dir also auch wirklich die Nutzung von externen APIs vor, beziehungsweise kann dann auch die APIs richtig Nutzen von externen Providern.",
+      "start": 1837957,
+      "end": 1856118,
+      "confidence": 0.8313478260869566,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Also G-Cloud war jetzt meine Idee und bzw. ich habe schnell gegoogelt, wo kann ich simpel OCRen und da ist irgendwo Google aufgetaucht, haben gedacht, okay, gibt es da vielleicht eine API, die ich einfach nutzen kann oder ein Online-Tool und da haben wir dann in der Doku gesehen, okay, ich kann da direkt das Command Line aufrufen und ich bin ja sowieso in G-Cloud, das heißt, ich kann da schnell ein Bild OCRen, gar kein Problem. Aber du könntest natürlich ChatGPT auch nach solchen Dingen fragen und im Code natürlich Libraries und solche APIs werden auf jeden Fall vorgeschlagen und das ist glaube ich auch die große Stärke von Copilot, weil du ganz viele Kontext-Switches vermeidest. Das heißt, während du programmierst, kommst du ja ganz oft an die Stelle, wo du denkst, was brauchst du jetzt für eine Funktion? Wie heißt denn diese Funktion bei dieser Library? Und du hast zwar Autovervollständigung, eine klassische, und wenn du den Anfangsbuchstaben weißt, hilft dir das vielleicht. Aber wenn du gar nicht mehr genau weißt, was ist denn das für eine Funktion? Das passiert ja sehr oft, vor allem, wenn du viele Sprachen programmierst. oder sogar im PHP manche Funktionen. Da steht Array vorne, manchmal Array hinten, historisch bedingt. Die sind alle unterschiedlich, obwohl es immer um Array Functions geht. Und solche Dinge sind natürlich super cool, weil die schlägt dir Copilot sofort vor. Und da sparst du dir diesen Context-Switch. Ich gehe aus meiner IDE hinaus, gehe in den Browser, gehe auf Stack Overflow, gehe in die Doku, was es auch immer ist, aber das ist immer ein Context-Switch in gewisser Weise. Ist zwar während dem Programmieren, aber ist trotzdem ein kleiner Context-Switch. Und der wird dir komplett übernommen, dadurch dir Copilot schon das Richtige vorschlägt, inklusive den richtigen Parametern und deine Variable vielleicht schon konvertiert in die richtige Form, weil da noch ein Map fehlt, weil da noch ein Flatten fehlt, was es auch immer ist, wandelt dir das schon richtig um und darin liegt, glaube ich, die wirkliche Stärke. Das sind so viele Kleinigkeiten, die dir aber sonst viel Zeit kosten und ich merke das auch, dass ich viel seltener auf Stack Overflow bin. Also dieses ganze schnelle, wie kann ich denn das machen, wie kann ich ein nested Array schnell flatten in dieser Sprache, würde ich einfach auf Stack Overflow nochmal schnell nachschauen. Das bringt dir Copilot einfach direkt normalerweise mit.",
+      "start": 1856418,
+      "end": 1978295,
+      "confidence": 0.7553697270471453,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Jetzt sprichst du die ganze Zeit von Vervollständigung und immer wenn wir über AI reden, reden wir über Modelle, die trainiert werden müssen. Das bedeutet, da gibt es eine ganze Menge Daten, die irgendwie angelernt werden, eingelesen werden, processed werden. Und wir hatten ja jetzt auch schon festgestellt, das Codex-Modell kann mit externen Libraries interagieren, die jetzt nicht Teil deines Codes sind. Puppeteer, G-Cloud, unabhängig davon, ob CoPilot es vorschlägt oder du es eingibst. Woher kommen die Trainingsdaten? Auf welcher Basis wurde das Codex-Modell trainiert?",
+      "start": 1978335,
+      "end": 2007259,
+      "confidence": 0.7945882352941177,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Ja, du sprichst natürlich jetzt schon ein sehr kritisches Thema an, weil das ist ja eigentlich ein großer Knackpunkt von dieser ganzen AI-KI-Thematik. Woher kommen eigentlich die Daten und welche Daten werden dort verwendet? Und GitHub hat natürlich einen Zugriff auf ganz viele Codedaten, auf alle Repositories. Egal, ob die jetzt wirklich Open Source sind, MIT License oder ob das einfach eine proprietäre Lizenz ist, aber der Source Code ist im Internet verfügbar. Und vielleicht sind da auch noch andere Quellen abseits von GitHub dabei. Das ist natürlich das gut gehütete Geheimnis, weil da kannst du halt wirklich die Qualität rausziehen. Umso besser deine Trainingsdaten sind, umso besser sind dann natürlich auch deine Vorschläge. Aber ich würde mal sagen, nachdem heutzutage alles irgendwie im GitHub liegt, hast du natürlich mit GitHub ein super tolles Trainingsmodell. Aber es kann natürlich auch sein, dass irgendwie Stack Overflow oder so mit reinbezogen wird. Könnte ich mir sehr gut vorstellen, weil da halt auch dementsprechend guter Code drinnen steht. Und wenn du das dann noch irgendwie kombinierst mit Upvotes, zum Beispiel die Antworten, die die meisten Upvotes erhalten haben, dann kannst du dadurch auch Qualität lernen. Was sind denn die besten Antworten? Was ist guter Code? Was ist schlechter Code? dasselbe mit den Stars in GitHub, was macht Sinn, was macht weniger Sinn und so weiter. Also du kannst da viele Metainformationen noch reinbringen in dein Modell und dann dadurch auch Qualitätsunterschiede machen, wie bei JGPD, wo halt Wikipedia zum Beispiel mehr gewichtet ist als andere Quellen. Und das ist ja auch der Grund, warum, oder man vermutet zumindest, dass es der Grund ist, warum Reddit jetzt mit den APIs so strikt umgeht, weil natürlich diese ganzen Kommentare und die Diskussionen super wertvoll sind, um Modelle zu generieren. Und natürlich jetzt die ganzen Firmen, die den Datenschatz besitzen, natürlich jetzt nicht wollen, dass so viel gescrapet wird oder über die APIs abgezogen wird, damit andere viel Geld verdienen mit dem Erzeugen der Modelle. Und Twitter hat ja dasselbe Problem jetzt gerade wieder gehabt mit dem ganzen Scraping und den API-Änderungen. Falls es Twitter noch gibt übrigens, also die Aufnahme passiert ja ein bisschen, bevor wir das publischen. Könnte schon sein, dass es Twitter gar nicht mehr gibt in der Zwischenzeit. Aber woher die Daten natürlich kommen, das ist eine sehr kritische Frage und da spielt natürlich dann auch noch mit, wie schaut es denn rechtlich aus, weil wenn es eben keine MIT-License war von diesem Projekt, sondern Proprietärer-Code, darf der überhaupt verwendet werden? Und da hat natürlich jetzt Copilot auch reagiert. Also du kannst da einen Flag setzen. Du wirst keinen Public Code zum Beispiel vorgeschlagen bekommen, damit du nicht in das Problem rennst, dass du Code verwendet hast in deinem Projekt, der dir vorgeschlagen wurde, der aber eigentlich nicht frei verfügbar ist, sondern eine proprietäre License zum Beispiel hat. Also das kannst du ausnehmen mit einem Flag in den Settings von Copilot.",
+      "start": 2008280,
+      "end": 2168824,
+      "confidence": 0.8133415132924333,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Public Code heißt jetzt Code, der öffentlich im Internet zugänglich ist, ohne Berücksichtigung der Lizenz. Also das bedeutet, Public Code könnte auch ein MIT-Projekt sein oder ein Repository ohne License.",
+      "start": 2169324,
+      "end": 2182153,
+      "confidence": 0.8157999999999999,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Ehrlich gesagt, keine Ahnung, wie sie das intern werten, ob sie die Licenses auch noch ausgewertet haben, wobei das ja auch nicht so leicht ist und immer klar ist, es steht ja nicht die License in jeder Datei. Mir ist es nicht ganz klar, wie sie es machen. Es gibt dieses Flag grundsätzlich. Ich glaube, es ist halt, um die Leute zu beruhigen. Ob das wirklich funktioniert und so funktioniert, ist halt schwierig zu sagen.",
+      "start": 2182213,
+      "end": 2201505,
+      "confidence": 0.7828399999999999,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Ich möchte noch mal ganz kurz einhaken. Ich bin nicht deiner Meinung, dass ein GitHub-Star den gleichen Wert wie ein Upvote auf Reddit oder Stickoverflow hat. Denn wenn ich mal nachschaue, wie ich GitHub-Stars verwende, dann hat das oft nichts mit der Qualität des Projektes zu tun, sondern primär mit der Grundidee, die in der Regel ein Satz in der Readme ist. Oder, weil das etwas ist, was ich mir später mal ansehen möchte, wo ich da natürlich nie zu komme. Oder, oder, oder. Also der Wert eines GitHub-Stars ist, man könnte fast sagen, oh das ist interessant, ich pack das meine, meine Bookmarks und irgendwann hab ich zu viele Bookmarks und lösche die eh alle. Wohingegen natürlich Stack Overflow und Reddit wirklich kuratierter Content ist.",
+      "start": 2201545,
+      "end": 2243130,
+      "confidence": 0.8260873015873015,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Natürlich hast du vollkommen recht. Das ist sowieso ein klassisches Problem. Nur weil etwas extrem hoch gevotet wird, heißt das noch lange nicht, dass es guter Content ist. Ist ja auf allen Plattformen so. Also stimmt natürlich. Da hast du bei Stack Overflow wahrscheinlich mehr Möglichkeiten, würde ich mal sagen, über die Upvotes.",
+      "start": 2243709,
+      "end": 2259253,
+      "confidence": 0.754245283018868,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Jetzt gibt es natürlich bei AI-Modellen den sogenannten Training-Bias. Umso mehr schlechter Code trainiert wird, desto besser wird das AI-Modell, schlechten Code vorzuschlagen. Weil das Resultat der Vorschläge basiert immer auf den Trainingsdaten. Hast du schon mal irgendeine Art Training-Bias bei GitHub Copilot beobachtet?",
+      "start": 2259613,
+      "end": 2278050,
+      "confidence": 0.8201590909090908,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Du meinst, ob mir schlechter Code vorgeschlagen wurde?",
+      "start": 2278090,
+      "end": 2280012,
+      "confidence": 0.74325,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Schlechter Code war jetzt nur ein Beispiel, vielleicht männliche Variablen Namen. Oder vermehrt den Hang, Python 2 Code zu schreiben, anstatt Python 3, weil Python 2 mehr in den Trainingsdaten vorhanden war, obwohl das schon seit 15 Jahren mittlerweile debrikated ist. oder PHP 5 oder Java 7 oder ähnliches?",
+      "start": 2280835,
+      "end": 2302426,
+      "confidence": 0.6903673469387754,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Also ich habe noch nie das Problem gehabt, dass mir Copilot jetzt ungegenderten Code vorgeschlagen hat. Und ich hätte gern gegendert, weil bei Variablen ist das selten ein Problem, obwohl es natürlich in anderen Modellen ganz oft ein Problem ist. Was natürlich schon ist, ist, dass einfach oft Bullshit vorgeschlagen wird. Auch ganz oft, wie du gesagt hast, so Dinge, die es schon lange gibt, die aber vielleicht nicht mehr state-of-the-art sind. Also ich denke da gerade an Datumsumformungsfunktionen. Braucht man ja ganz oft, um irgendwie ein Datum in spezielle Form zu bringen. Und da habe ich schon oft erlebt, dass mir da komplexe Funktionen vorgeschlagen wurden. Und es gibt aber seit ein, zwei Jahren in JavaScript zum Beispiel eine gewisse Funktion, die dir das einfach automatisch liefert. Und es wird dir aber natürlich immer diese komplexe Konvertierungsfunktion vorgeschlagen, wo du in deiner Funktion das Ganze selbst machst und irgendwie ausliest und baust und vielleicht noch plus ein, zwei Monate zurechnest und solche Dinge, obwohl es einen Einzeiler gäbe, weil es eine neue Funktion gibt, aber schon relativ lange. Und es wird dir aber trotzdem immer noch diese alte Variante, die umständliche Variante vorgeschlagen, weil die halt sich einfach etabliert hat über Jahre und wahrscheinlich auch heute noch von den meisten Programmierer und Programmiererinnen verwendet wird, weil es halt einfach in den Köpfen drin ist, obwohl es diese neue Funktion gibt. Und ganz klar, man sagt ja auch immer bei JetGPD, das, was da rauskommt als Antwort, als Text, ist so mittelmäßig oder obere Mittelmäßigkeit von irgendeinem deutschen Text. Und so sehe ich es beim Coden halt auch, es ist obere Mittelmäßigkeit. Aber dass du mal über dieser oberen Mittelmäßigkeit bist, da musst du schon sehr gut sein in einer gewissen Sprache. Und wenn du das natürlich kombinierst mit deinem Wissen und vielleicht auch die richtigen Anweisungen gibst, du kannst auch zum Beispiel Copilot sagen, okay, gib mir die zehn Möglichkeiten, die du intern errechnet hast und dann kannst du eine davon auswählen und da fließt dir dein Wissen mit ein. Also durch diese Kombination bist du natürlich sehr stark, aber den Bias gibt es natürlich ganz klar. Also Bullshit in, Bullshit out.",
+      "start": 2302486,
+      "end": 2419143,
+      "confidence": 0.802512396694215,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Wenn wir schon beim Thema Bullshit sind, hat Copilot dir schon mal Code vorgeschlagen, den du nicht verstanden hast? Da wo du echt gegebenenfalls sogar mehr Zeit dafür verbracht hast, den Code zu verstehen und den Code zu debuggen, der generiert wurde, anstatt ihn komplett selbst zu schreiben?",
+      "start": 2419163,
+      "end": 2433492,
+      "confidence": 0.7894166666666665,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Also was mir schon passiert ist, viel Zeit gekostet hat, sind Bugs, die Copilot eingebaut hat und ihr habt zu wenig gecheckt, was da wirklich passiert. Gerade wenn es um irgendwelche Debug-Ausgaben oder so geht und da werden dann, was super praktisch ist übrigens, die 10 Variablen ausgegeben in so einem schnellen Log. was du schreibst, wo du sonst immer zu faul bist, diese wirklich zehn Variablen hinzuschreiben und vielleicht noch den Namen der Variable für den Debug-Code. Das macht dir natürlich Copylet super schnell automatisch. Aber wenn sich da natürlich irgendwie eine Variable einschleicht, die falsch ist oder so und du siehst dann irgendwelche Errors, die fliegen und denkst dir, das kann ja gar nicht in dieser Datei sein, da hatte ich diese Variable doch gar nicht und suchst irgendwo anders. Also das hat mir schon viel Zeit gekostet.",
+      "start": 2433942,
+      "end": 2474122,
+      "confidence": 0.7878214285714288,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Moment, ganz kurz. Verstehe ich das richtig? Du hast Code durch GitHub Copilot generieren lassen, der hat einen Bug drin und dann hast du GitHub Copilot genutzt, um Console.log-Statements fürs Debugging zu schreiben?",
+      "start": 2474542,
+      "end": 2485438,
+      "confidence": 0.7852424242424241,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Nein, nein, in dem Fall ist der Bug durch Console.log entstanden.",
+      "start": 2485458,
+      "end": 2488403,
+      "confidence": 0.5975454545454546,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Ah, okay.",
+      "start": 2488483,
+      "end": 2488943,
+      "confidence": 0.5745,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Aber um auf deine Frage zurückzukommen, ja, ich habe auch schon Code-Vorschläge bekommen, die ich nicht verstanden habe, beziehungsweise auf Anhieb nicht verstanden habe. Gerade so komplexe Map-Functions, die dann irgendwie über anonyme Funktionen und so weiter irgendwelche Dinge umformen. Und da sitzt man dann teilweise schon lang und überlegt sich, kann das richtig sein? Kann das funktionieren? Und da muss man das wirklich durchdenken und auseinander trennen und wirklich analysieren. Und ganz oft stimmt es, aber ganz oft stimmt es auch nicht. Also das ist natürlich schon eine gewisse Schwäche und da musst du halt wirklich den Code überprüfen. Und wenn es so ein komplexer Code ist, kann das durchaus Zeit dauern. Das stimmt schon. Aber man muss schon sagen, im Großteil der Fälle stimmt das. Und da bist du dann auch überrascht und denkst dir, hey, das ist eine coole Lösung. Das ist so ähnlich, wie wenn du auf Stack Overflow gehst und dann so denkst, oh, das ist aber eine schöne Lösung. Das ist ja wirklich clean, einfach, kurz. Und ich mir das so komplex vorgestellt.",
+      "start": 2489484,
+      "end": 2540572,
+      "confidence": 0.7758826815642464,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Jetzt ist ja weitläufig bekannt, dass AI-Modelle nicht immer richtig liegen. JetJPT und auch das Codex-Modell ist davor nicht gewahrt. Ich habe eine Studie in der Vorbereitung gefunden, die sagt, dass die Benutzer von GitHub Copilot im Durchschnitt 26 Prozent aller Vorschläge akzeptieren. Also minimal mehr als ein Viertel. Ist das auch deine Erfahrung oder akzeptierst du mehr als ein Viertel der Vorschläge?",
+      "start": 2541000,
+      "end": 2564592,
+      "confidence": 0.8398095238095236,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Es ist super schwer, weil die Frage ist, wie das gerechnet wird, was du akzeptierst, weil ich bekomme natürlich ganz viele Vorschläge, wo ich dann aber einfach weiter tippe, um den Vorschlag zu optimieren oder der in dem Moment nicht gerade der richtige ist.",
+      "start": 2565383,
+      "end": 2578474,
+      "confidence": 0.8202272727272727,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Wenn ich das richtig verstanden habe, war die Untersuchung wirklich auf Basis des ersten Vorschlages.",
+      "start": 2578494,
+      "end": 2583318,
+      "confidence": 0.8872666666666665,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Ja, aber dadurch, dass er automatisch immer vorgeschlagen wird im Hintergrund, oder? Du hast dann in leichtem Grau immer diesen Vorschlag, der passiert ja ständig. Das heißt, du hast ganz viele Vorschläge, die du vielleicht einfach ignorierst. Also ich bin mir nicht sicher, ob das wirklich heißt, der Vorschlag ist der falsche. Klar, es war in diesem Moment nicht genau der richtige, aber dadurch halt ständig vorgeschlagen wird, während du programmierst. kann ich mir gut vorstellen, dass das eigentlich ein niedrigerer Prozentsatz ist, weil wirklich Vorschläge, die ich akzeptiere. Eben, du bekommst jetzt einen Vorschlag, denkst dir, okay, zum Beispiel, ganz klassisch, es werden ja auch Kommentare vorgeschlagen. Das heißt, wenn du einen Kommentar schreibst, wird dir das Kommentarauto vervollständigt, was übrigens auch ganz oft stimmt. Also Kommentare sind bei mir, seitdem ich CoPilot verwende, einfach ums Doppelte länger wahrscheinlich, weil ich einfach sonst zu faul bin, alles sauber zu kommentieren. Und jetzt passiert das wirklich in einem schönen Stil und meistens stimmt das. Teilweise werden sogar, habe ich auch schon erlebt, werden die URLs vervollständigt. Das heißt, es wird zu deinem Kommentar, was du machst, warum du so ein wirres Ding gerade geschrieben hast, wegen einem komischen Verhalten von einer Funktion, wird dir automatisch die URL vervollständigt, wo das dokumentiert ist, dieses schräge Verhalten. Und das stimmt meistens. Also sogar das tritt ganz oft auf. Also Kommentare werden besser. Aber es passiert halt auch oft, ich schreibe einen Kommentar und Copilot will das Kommentar noch weiterschreiben und vervollständigen. Und ich denke mir, nein, ich will jetzt aber schon programmieren, mir reicht das Kommentar. Du musst eigentlich schon so schlau sein, dass du das schaffst. Und dann schreibe ich eben dieses i für if und dann wird es automatisch gecheckt und ah, okay, es geht jetzt um Coding, nicht mehr um Kommentarschreiben. Und natürlich habe ich dann da dieses erste Kommentar, was mir noch vorgeschlagen wurde oder den ersten Vorschlag eben nicht akzeptiert, obwohl es vielleicht in dem Sinne natürlich noch gar nicht im richtigen Kontext war oder auf dem Programmierpfad, sondern noch im Kommentierpfad.",
+      "start": 2584038,
+      "end": 2690681,
+      "confidence": 0.7799536231884061,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Meine theoretische Frage. Du schreibst jetzt Code mit GitHub Copilot. Du lässt dir sogar nicht nur den Code vorschlagen, sondern auch die Kommentare. Lässt das Projekt ein paar Wochen ruhen? kommst wieder mit dem Projekt an und programmierst weiter mit GitHub Copilot. Das bedeutet, die durch GitHub Copilot geschriebenen Kommentare sind ja dann wiederum erweiterter Kontext für GitHub Copilot. Ist das richtig?",
+      "start": 2690721,
+      "end": 2712724,
+      "confidence": 0.8157419354838709,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Ja, natürlich, ja. Wobei man natürlich schon sagen muss, diese Kommentare sind ja überprüft von mir. Und ich fange ja auch einen Satz an und der vervollständigt mir dann den Satz vielleicht mit 20 Wörtern oder 5 Wörtern oder auch nur 3 Wörtern oder nur dieses Wort, das ich gerade schreiben will. Ist ja auch teilweise praktisch. Ich denke mir, allein rechtschreibungstechnisch, ich fange irgendein Wort an, überlege mir gerade, wie schreibt man das nochmal und habe schon die Vervollständigung da. Also alleine das hilft ja schon weiter. Es gibt natürlich schon auch die Möglichkeit, und das nutze ich auch immer ganz gerne, ich schreibe einen Code-Block und will den jetzt kommentieren und dann probiert JGPT Copilot, versteht dann den Code, also verstehen unter Anführungszeichen wissen wir ja alle, Aber Copilot versucht dann diesen Codeblock zu kommentieren, ohne dass ich irgendwas angefangen habe zu kommentieren. Also es geht auch in die andere Richtung, nicht nur Kommentar zu Code, sondern auch Code zu Kommentar. Und es funktioniert auch erstaunlich gut. Aber natürlich bin ich immer dabei, ich helfe, ich verbessere. und darum kann es dann auch später wieder Kontext sein, wenn ich in zwei Monaten wieder weiterschreibe, ist eh klar. Aber es ist ja auch mein überprüfter Kommentar, den ich da geschrieben habe, insofern ist das ja völlig in Ordnung. Wenn wir übrigens gerade dabei sind, was Copilot alles macht, also Kommentare, Code, aber was man auch nicht vergessen darf, sind Test Cases zum Beispiel, auch super praktisch. schreibe mir Test Cases für irgendeinen Fall. Diese ganzen dummen negativen Test Cases, die man sonst nie schreibt oder die man selten abprüft, wenn man irgendwo eine Integer Variable hat und dann mal abprüft, was passiert, wenn man minus eins eingibt oder so. Wenn du das mit Copilot machst, der schlagt dir gleich mal 20 Tests vor und dann hast du das gleich gecovert. Super praktisch.",
+      "start": 2713188,
+      "end": 2809188,
+      "confidence": 0.7976134185303512,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Das ist ein interessanter Use Case. Nutzt du GitHub Copilot primär für diese, ich sag mal, Grundwork, für diese langweilige Arbeit, um mehr Zeit für die spannende Arbeit zu haben? Oder sagst du, ich mache da keinen Unterschied, ich mache alles damit?",
+      "start": 2809528,
+      "end": 2824437,
+      "confidence": 0.8426904761904762,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Ich mache grundsätzlich keinen Unterschied, aber ich muss schon sagen, für mich und ich glaube für die meisten ist es eigentlich so, mit den Leuten, mit denen ich gesprochen habe, das Interessante ist ja irgendwie das Problem zu lösen, vielleicht in kleinere Subprobleme aufzuteilen, wie kann ich denn wirklich was lösen, aber dann die eigentliche Implementierung ist ja oft wirklich nur dummes Runtercoden. Und da hilft dir halt Copilot schon. Also ich hab schon das Gefühl, dass ich mich mit diesen Low-Level-Dingen oder man muss dann wieder irgendwie durch 20 Kommentaren in Stack Overflow durch, damit man irgendwann weiß, wie kann ich denn jetzt am schnellsten in dieser Sprache eben irgendeinen Nested Array flatten oder so. Das fällt halt alles weg und dann kann man sich schon konzentrieren auf die Struktur, auf die Architektur. Wie baue ich etwas auf? Was kommt in diese Funktion rein? Was lage ich aus? Also das Klassische, was vielleicht ein bisschen spannender ist, auf das kann man dann mehr Zeit legen und sich fokussieren.",
+      "start": 2825117,
+      "end": 2874973,
+      "confidence": 0.8012899408284019,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Aber natürlich Unit-Test-Schreiben ist natürlich eine grandiose Art und Weise, GitHub Copilot zu nutzen, denn ich denke, viele Leute haben nicht wirklich Spaß am Unit-Test-Schreiben vom existierenden Code. Wenn man das Test-Driven-Development macht, ist das natürlich eine andere Baustelle.",
+      "start": 2875013,
+      "end": 2888500,
+      "confidence": 0.6963076923076923,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Aber sogar Test-Driven Development. Also du fängst mit den Tests an und es werden dir halt einfach Sachen vervollständigt. Vorschläge sind ja auch wieder nur Vorschläge, die du gut oder schlecht finden kannst und entscheiden kannst, ob du sie aufnimmst. Und das passiert mir schon sehr oft, dass ich dann irgendwie so in einem Test zum Beispiel was vorgeschlagen bekomme, wo ich mir denke, stimmt, das ist eigentlich eine sehr gute Idee, das sollte man wirklich testen. Und man ist dann wirklich happy und denkt sich, das habe ich überhaupt nie gedacht. Aber es macht absolut Sinn natürlich.",
+      "start": 2889050,
+      "end": 2913957,
+      "confidence": 0.744295918367347,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Jetzt ist natürlich jedes AI-Modell auf existierenden Daten trainiert. Da stellt sich natürlich die Frage, inwieweit ist denn innovative Arbeit an zum Beispiel neuen Plattformen, nehmen wir mal an Quantencomputer kommen jetzt bald raus, und alles muss auf Quantencomputer angepasst werden, so ähnlich wie die ganze Software, die auf ARM am Anfang nicht richtig lief. Ich glaube, Apple-User mit einem M1-Prozessor wissen, wovon ich rede. Inwieweit siehst du die Möglichkeit, innovative Arbeit auf neuen Themen, auf neuen Plattformen mit GitHub Copilot umzusetzen? Im Endeffekt existiert ja noch nicht viel vorhandenes Material für Sachen, die jetzt wirklich neu rauskommen.",
+      "start": 2914177,
+      "end": 2949688,
+      "confidence": 0.8258979591836736,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Ja, das geht halt schon sehr in die philosophische Ecke, würde ich fast sagen, wie die Diskussion kann eine KI irgendwie ein tolles Gemälde machen, was eben nicht auf alte Patterns basiert überhaupt. Aber ich sehe das halt auch so, dass man eigentlich sagen muss, dass ja auch jetzt, um in der Kunst zu bleiben auf dieser Metaebene, dass alles, was Künstler in irgendeiner Form machen, meistens basiert auf alten Künstlerinnen, auf deren Input. Also du hast ganz viel Input und wertest den Input aus, mischst ihn neu, änderst es. Natürlich ist ja die KI aktuell noch vielleicht begrenzt, Aber ich glaube, das wird sich in Zukunft ändern. Und wenn du natürlich das runterbrichst auf Einzelprobleme, dann hast du sowieso kein Problem. Weil auch wenn du auf einer neuen Plattform bist, die If-Struktur sieht immer noch so aus. Du musst immer noch ein Array flatten. Also diese Tasks, die sowieso ähnlich sind und immer gleich sind, Wenn ja die weggenommen werden, hast du ja auch schon Produktionsgewinn. Klar, wenn du das vergleichst mit dem Beispiel, mit dem Immobilienscraper, wenn man den so nennen will, dass es Puppeteer vorschlägt und diese ganzen Dinge, klar, da brauchst du natürlich auch den Input und das muss schon länger am Markt sein. Aber wenn du jetzt ganz normal programmierst und auch an einer neuen Technologie programmierst, die ganzen Kleinigkeiten werden ja trotzdem abgenommen in der Programmiersprache. Und irgendwann in Zukunft geht es vielleicht sogar weiter, dass es halt dann wirklich neu kombiniert werden kann. Und das ist halt die große Frage. Okay, generative AI, wohin geht das Ganze? Aber das werden wir sehen in Zukunft. Aber ich glaube auch, dass das sehr bald der Fall sein kann, dass uns dann vielleicht einfach eine neue Plattform auch noch generiert wird. Oder einfach nur, wenn man das als neu bezeichnen will, dass halt die ganzen Infos auf Stack Overflow zusammengetragen werden und dann bei einer Entscheidung helfen, sollst du was so designen, Version A oder Version B in dieser Architektur von einer neuen Plattform. Und da greifst du halt dann auf das Wissen, zurück, was in den ganzen Köpfen vielleicht auch ist, weil ähnlich passieren ja auch Entscheidungen im Kopf, dass du halt dein Wissen oder in einer Gruppe dieses Wissen vereinst und dir überlegst, okay, machen wir Version A oder B, wie entscheiden wir uns, obwohl das vielleicht sonst noch nie jemand davor gemacht hat. Und so könntest du es natürlich über eine KI dann am Ende auch lösen, meiner Meinung nach. Aber ist schon sehr philosophisch.",
+      "start": 2950000,
+      "end": 3082468,
+      "confidence": 0.8045924170616114,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Du hattest Stack Overflow jetzt schon mehrmals erwähnt. Ich hatte gelesen, dass seitdem ChatGPT draußen ist, der Traffic von Stack Overflow enorm eingebrochen ist.",
+      "start": 3082748,
+      "end": 3092634,
+      "confidence": 0.7651249999999999,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Kann ich nachvollziehen. Ich bin einer davon, der Stack Overflow weniger nutzt.",
+      "start": 3092654,
+      "end": 3096216,
+      "confidence": 0.7123333333333334,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Jetzt bist du natürlich schon einer der älteren Programmierer. Das bedeutet, du weißt auch noch, wie Programmieren ohne Copilot funktioniert.",
+      "start": 3096256,
+      "end": 3103260,
+      "confidence": 0.7911999999999999,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Damals, wo wir Assembler programmiert haben, kurz nach dem Krieg, genau.",
+      "start": 3103280,
+      "end": 3106542,
+      "confidence": 0.860181818181818,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Hast du schon mal effektiv assembler geschrieben hast du mal ein richtiges programm geschrieben und nicht ich habe mal ein bisschen was in register geschrieben oder rausgeholt ja.",
+      "start": 3107092,
+      "end": 3115035,
+      "confidence": 0.7119285714285714,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Also nie produktiv oder so aber zu studiumszeiten haben wir das natürlich gemacht oder auch wie dann unterrichtet habe einfügen in die programmierung okay nein es war nicht einfügen in die programmierung es war schon was anderes aber da da hatten wir teilweise so kurz snippets und in dem emulator was gemacht ja aber richtig produktiv.",
+      "start": 3115075,
+      "end": 3131502,
+      "confidence": 0.7989642857142857,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Wenn wir jetzt daran denken, dass mehr und mehr Softwareentwickler benötigt werden, würdest du empfehlen, mit GitHub Copilot programmieren zu lernen? Beziehungsweise siehst du die Möglichkeit, oder siehst du, dass man durch die Nutzung von GitHub Copilot schneller, beziehungsweise besser, beziehungsweise effizienter programmieren lernen kann?",
+      "start": 3132722,
+      "end": 3150857,
+      "confidence": 0.8045777777777775,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Ich antworte mal mit einer Gegenfrage. Bist du dafür, dass wenn man Java lernt, dass man VI verwendet zum Java programmieren lernen oder eine IDE, die dir Autocompletion und Vervollständigung von Klassennamen und so weiter vorschlägt?",
+      "start": 3151297,
+      "end": 3166036,
+      "confidence": 0.8096944444444446,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Ich gehe stark davon aus, dass es für VI auch irgendein Java-Plugin gibt, aber ich denke, es wäre schon sehr hilfreich, wenn man eine ordentliche IDE verwendet, die einem sehr, sehr viel grafische Hilfsmittel vorgibt, wo man dann auch draufklicken kann und erklär mir das und solche Geschichten.",
+      "start": 3166236,
+      "end": 3183595,
+      "confidence": 0.8457708333333334,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Ja, so ähnlich sehe ich das eigentlich auch mit CoPilot. Wenn du davon ausgehst, dass in Zukunft jeder in irgendeiner Form so eine Unterstützung in der EDE hat, ist immer die Frage, wo startest du mit den Grundlagen, wann gehst du über in diese Hilfen, würde ich sie mal nennen, ganz allgemein, sei es eine klassische Autovervollständigung, Klassennamen. Da scheiden sich die Geister, hatten wir auch immer viel Diskussionen an der Uni, wenn wir unterrichten. Du musst da wahrscheinlich einen guten Mittelweg finden, dass du halt für Grundlagen vielleicht das einfach mal selber ausprobierst. Aber ich glaube, schlussendlich geht es darum, möglichst produktiv zu sein. Aber ganz allgemein sollte es meiner Meinung nach möglichst nahe an dem sein, was du dann später mal brauchst im Arbeitsleben oder was du auch immer machst.",
+      "start": 3183697,
+      "end": 3223853,
+      "confidence": 0.7494772727272724,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Wenn ich jetzt als Late Adopter GitHub Copilot ausprobieren möchte, auf was muss ich einstellen, was sich in meinem Programmierflow ändert?",
+      "start": 3224292,
+      "end": 3232175,
+      "confidence": 0.7976190476190477,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Gar nichts.",
+      "start": 3232215,
+      "end": 3232976,
+      "confidence": 0.8240000000000001,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Erläutere mir das mal ein bisschen, weil ich denke mir, ich muss ja schon auf die Webseite gehen und dann irgendwie Code da reinpasten oder connecte ich das sofort zu meinem GitHub Repository.",
+      "start": 3232996,
+      "end": 3240339,
+      "confidence": 0.7845454545454544,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Ja, du aktivierst das, installierst natürlich einmal das Plugin in deinem VSCode zum Beispiel und that's it und dann ist es aktiv. Das läuft einfach immer mit. Und dann wirst du langsam lernen damit umzugehen und das zu sehen. Klar wird sich dein Flow dann ändern in dem Sinne, auch mit dem Kontext, wie wir das schon besprochen haben. Aber du musst nirgends hingehen, du musst nichts kopieren. Du kannst es einfach mal aktivieren und einfach loslegen.",
+      "start": 3240599,
+      "end": 3264980,
+      "confidence": 0.7633896103896105,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Zum Kostenmodell, wenn ich das richtig nachgeschlagen habe, die ersten zwei Monate sind frei und danach für Privatanwender 10 Dollar im Monat beziehungsweise 100 Dollar im Jahr und für Firmen 19 Dollar pro User pro Monat. Würdest du sagen, das ist Peanuts gegenüber dem Value, die dieses Tool liefert?",
+      "start": 3265020,
+      "end": 3284116,
+      "confidence": 0.8115510204081632,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Das klingt jetzt langsam wirklich wie eine Verkaufsveranstaltung, aber ja. Also meiner erfahrung nach schon kannst kannst nur empfehlen würde mich natürlich auch freuen wenn es da mehr in richtung opensource gibt oder andere möglichkeiten aber die experience ist schon schon sehr gut muss man auch dazu sagen.",
+      "start": 3284136,
+      "end": 3299307,
+      "confidence": 0.7709583333333335,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Jetzt haben wir aber noch nicht über den elefanten im porzellanladen beziehungsweise pink elephant in the room gesprochen und zwar, sind wir als Deutsche, besonders deutsche Mittelständler, ja alle immer sehr konservativ mit unseren Daten, Copyright, rechtliche Thematik. Und solche AI-Themen müssen natürlich erstmal durch die Rechts- und Compliance-Abteilung. Und da kommen wir dann oft ganz viele Fragen auf, die vielleicht sogar noch gar nicht wirklich beantwortet sind. Wie sieht das ganze rechtliche Thema denn da aus? Den Code, der da generiert wird, kann ich den proprietär nutzen, verkaufen? Inwieweit sind meine Daten gesichert? Oder kann es sein, dass wenn ein Mitarbeiter von Vorwerk etwas an der Thermomix-Software durchgeht, hat Copilot-Jagd, dass ich den Code dann bald vorgeschlagen bekomme?",
+      "start": 3299447,
+      "end": 3348172,
+      "confidence": 0.8535630252100838,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Ja, gerade im Business-Umfeld ist das natürlich ein Riesenproblem. Und wir hatten ja schon kurz besprochen, Copilot hat diese Funktion, dass du sagen kannst, Public Code inkludieren oder nicht inkludieren. Da spielt natürlich auch die ganze philosophische Frage wieder auch in einer gewissen Weise eine Rolle. Weil wenn du jetzt als Einzelprogrammierer, wenn ich jetzt auf irgendeine GitHub-Seite komme, auf irgendein Repository da was finde, dann die 5-Zeilen-Code rauskopiere, obwohl es vielleicht keine MIT-License zum Beispiel war, das bei mir irgendwo verwende. Wenn das irgendwo auf Stack Overflow steht, steht da auch keine License dabei im Prinzip. Also es ist gar nicht so leicht zu entscheiden. Ich glaube bei kurzen Codesnippets ist es auch nicht so das Problem, weil da gibt es halt einfach eine Lösung, wie kann ich denn das Array flatten. Aber umso länger die Lösungen werden, umso gefährlicher wird es natürlich in irgendeiner Form. Und da ist dann auch die Frage, fließt da auch irgendwas wieder zurück an die Creator sozusagen? Also das ist dann eine gesellschaftliche Frage, die natürlich langfristig auch in irgendeiner Form geklärt werden muss. Also fließt von den aktuell sehr günstigen 100 Euro vielleicht dann irgendwann was zurück? Wie funktioniert das? Fließt da was zurück an die Open Source Community? Auf der anderen Seite bietet GitHub ja auch die Services kostenlos an. Ist ja schon in gewisser Weise auch eine Leistung. Es ist super schwer, glaube ich, das zu beantworten, aber im professionellen Umfeld gibt es natürlich die Frage und dafür ist halt genau diese Option, wird Public Code verwendet, ja oder nein. Und dann, wenn wir schon bei der rechtlichen Frage sind, ist natürlich auch ein großer Punkt, was passiert mit diesem Code, der an GitHub gesendet wird. Also dieser Kontext wird ja ständig gesendet, Snippets von mir werden ständig gesendet an Copilot und GitHub. Und auch da kann man in den Settings wählen, ob diese Snippets verwendet werden dürfen für weiteres Lernen oder nicht. Und es ist auch relativ genau definiert, wer Zugriff hat, welche Leute in GitHub, welche Leute bei OpenAI und so weiter, wie das geschützt ist. Also das ist einigermaßen genau beschrieben, finde ich ganz gut. Aber was die natürlich dann wirklich im Hintergrund damit machen, ist so eine Frage, Wobei, wenn wir uns ehrlich sind, wenn GitHub böse sein will, dann haben die eh den gesamten Source-Code der Welt, weil wahrscheinlich die meisten großen Firmen bei GitHub sind. Insofern hätten sie den Zugriff sowieso auf deinen Source-Code. Und mit der Option kannst du das grundsätzlich abschalten. Also ich glaube, man ist da relativ safe auf der Seite und es gibt ja auch Business-Angebote und sie wollen da auch noch mehr in Richtung Privacy und Sicherheit für deine Codesnippets machen und Angebote schnüren für Firmen. Also da kommt sicher auch noch einiges. Sogar ChatGPD hat das eingebaut mittlerweile, dass du deine History löschen kannst bzw. es deaktivieren kannst, dass jetzt, was du eingibst, für das Learning verwendet wird. Da kannst du die Chat History deaktivieren, das geht seit April. Also sogar ChatGPD macht das, wobei die natürlich sehr aggressiv sind, weil sie sagen, wenn ich das kostenlos anbiete, dann will ich auch was davon haben. Und da muss man sich dann halt auch gesamt wieder fragen, wenn ich so viel rausbekomme aus dem Modell, muss ich halt vielleicht auch was beisteuern, wenn ich das schon kostenlos nutze oder sehr günstig. Aber grundsätzlich ist es möglich für Firmen, Copilot zu verwenden, auch wenn es meines Wissens sehr, sehr wenig Firmen machen offiziell. Also ich kenne kaum Firmen, größere Firmen, die das in irgendeiner Form erlauben.",
+      "start": 3348492,
+      "end": 3538487,
+      "confidence": 0.802479865771812,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Auch wenn es möglich ist, ich denke trotzdem, dass bevor ihr es dann im kommerziellen Umfeld wirklich nutzt, checkt das mal intern ab und nicht einfach eine Shadow IT aufbauen.",
+      "start": 3539025,
+      "end": 3549112,
+      "confidence": 0.8005666666666666,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Also nach meinem Erlebnis damit würde ich jetzt als CTO das eigentlich als Priority Nummer 1 sehen, meinen ProgrammiererInnen sowas zur Verfügung zu stellen. Weil wenn du, wenn sie wollen zumindestens, weil wenn du da einen Productivity Lift hast, gerade jetzt mit dem ganzen Mangel von Arbeitskräften, Und du sagst jetzt, du kannst ja auch nur 20 Prozent rausholen an Produktivität und vielleicht, dass Leute happier sind, weil sie nicht den ganzen Boilerplate Code da immer schreiben müssen, dann ist das meiner Meinung nach eine Priorität, die ganz, ganz oben sein muss und nicht, wir schauen uns das mal an und klären das vielleicht mit der Rechtsabteilung irgendwann.",
+      "start": 3549152,
+      "end": 3585260,
+      "confidence": 0.7935000000000008,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Weil du jetzt schon Tipps für CTOs raushaust und den Mangel an Fachkräften erwähnt hast, stellt sich für mich die Frage, werden denn nun Programmierer ersetzt? Können nun auch Nicht-Software-Entwickler mit weniger Code-Verständnis programmieren bzw. besser programmieren?",
+      "start": 3585600,
+      "end": 3602835,
+      "confidence": 0.8460540540540539,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Ja.",
+      "start": 3603254,
+      "end": 3603694,
+      "confidence": 0.916,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Also das größte Gegenargument, was ja immer erwähnt wird, ist, Programmierer sind safe, weil damit uns nämlich andere Leute, wie zum Beispiel Produktmanager oder Kunden ersetzen, müssten sie wissen, was sie wollen. Und da hört es ja dann in der Regel auf.",
+      "start": 3603754,
+      "end": 3615196,
+      "confidence": 0.7748571428571429,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Genau, dafür gibt es Product Owner. Also ich will ja gar nicht sagen, dass alle ProgrammiererInnen arbeitslos werden. Aber das Grundsatz ist, deine Frage war ja, ob Product Leute zum Beispiel für gewisse Tasks in Zukunft keine ProgrammiererInnen mehr brauchen. Da bin ich voll überzeugt. Es geht ja jetzt schon mit dem Low-Code, No-Code-Tools in die Richtung. Wenn die dann noch intelligenter werden, dass die dir gewisse Sachen vorschlagen, best practices vielleicht, dass du irgendwas zusammen klicken kannst oder wirklich textuell das einfach eingeben kannst, was will ich haben und dann iterativ vielleicht auch arbeiten, weil das ist ja auch sowas. Ich weiß vielleicht nicht genau, was ich will, aber ich gebe das als Text ein und bekomme dann die Frage, was ich wirklich haben will oder einfach ein Output mit einem Prototypen, eine Sekunde später, und dann sage ich, oh, der Prototyp ist ja was Falsches und dann gebe ich ein, was ich gerne hätte. Und so kann ich mich auch iterativ in die richtige Richtung bewegen. Also, dass es weniger ProgrammiererInnen braucht, um ein Problem zu lösen, definitiv. Es kann aber auch sein, dass es dann viel mehr Probleme gibt, weil halt jeder das schnell ausprobieren will und vielleicht kommst du dann eher zu dem Punkt, dass du eine Firma startest und dann wirklich Leute brauchst. Das heißt, ich glaube nicht, dass es Probleme gibt mit Arbeitsplätzen, aber dass Product-Leute selber entwickeln können, bis zu einem gewissen Grad, das wird sicher kommen und gibt es eigentlich auch schon.",
+      "start": 3615216,
+      "end": 3690822,
+      "confidence": 0.803655999999999,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Das klingt für mich so ein bisschen das t-shaped engineers also generalisten eher vor dieser herausforderung stehen dass sie quote unquote ersetzt werden und dass in zukunft mehr spezialisten benötigt werden würdest du zustimmen.",
+      "start": 3691182,
+      "end": 3705733,
+      "confidence": 0.848441176470588,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Wenn es rein ums Programmieren geht, ja, weil eben der mittelmäßige Code kein Problem mehr ist. Aber natürlich, was Generalisten schon können, ist den Kontext über sehr viele Ebenen, vielleicht auch mit dem Verstehen von Problemen über mehrere Abteilungen hinweg oder mehrere Systeme, auch wenn es um Architektur geht, solche Dinge. Also da glaube ich, dass schon noch eine Zeit zumindestens Bedarf ist und Generalisten sind in dem Bereich oft ganz gut. Also ich würde grundsätzlich immer noch nicht empfehlen, dass sich jede und jeder absolut in ein Spezialthema reinarbeitet und dass es nur mehr diese Spezialisten gibt. Also ich glaube schon, dass auch Generalisten weiterhin benötigt werden.",
+      "start": 3706273,
+      "end": 3746999,
+      "confidence": 0.8517037037037036,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "So der Hype-Train, der am Anfang in den Bahnhof eingefahren ist, erreicht langsam die Endhaltestelle. Vielen Dank für deinen Erfahrungsbericht, Wolfgang. Du hast mir auf jeden Fall ein bisschen Lust gemacht, Unit-Tests durch GitHub Copilot generieren zu lassen und ich glaube, das teste ich auch mal aus. Ich möchte nochmal ganz kurz erwähnen, wir werden nicht von GitHub oder Microsoft oder OpenAI gesponsort. Das war jetzt wirklich volle Überzeugung.",
+      "start": 3747039,
+      "end": 3771488,
+      "confidence": 0.8392173913043478,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Es gibt auch leider kein Referral-Programm. Ich habe mir das schon öfters überlegt, weil ich habe schon so viele Leute überzeugt, dass ich eigentlich gerne so ein Referral-Programm hätte.",
+      "start": 3771528,
+      "end": 3778330,
+      "confidence": 0.6185862068965515,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Und diese Episode war natürlich jetzt alles ein bisschen high-level, aber sie war 100-prozentig basierend auf eigenen Erfahrungen durch Wolfgang. Neben GitHub Copilot gibt's aber natürlich auch noch andere Tools, die was Ähnliches machen, beziehungsweise auch in diesen AI-Coding-Assistant-Approach reingehen. Und zwar gibt's noch so was wie Tab9 oder auch ein Service von Amazon Web Services, CodeWhisperer, find ich sehr geil den Namen, muss ich zugeben. Das bedeutet, falls ihr GitHub eher abgeneigt seid, weil es Microsoft ist, könnt ihr die anderen Tools natürlich auch mal ausprobieren. Man muss jetzt jedoch auch sagen, du hast jetzt natürlich primär über GitHub Copilot gesprochen, GitHub hat aber vor kurzem auch GitHub Copilot X rausgebracht, beziehungsweise angekündigt. GitHub Copilot X ist dann die Erweiterung von GitHub Copilot, was dann OpenAI´s Modell GPT-4 adaptiert und die ganze Sache aus den letzten zwei Jahren natürlich so ein bisschen uplevelt und die Learnings einfließen lässt. Ich glaube, da kann man sich schon auf die Beta-Liste schreiben lassen. Einfach mal googlen GitHub Copilot X, wer direkt ein Level höher einsteigen möchte. Wer aber Wer zum Thema OpenAI und GitHub Copilot im Speziellen mehr wissen möchte, wer so ein bisschen technisch zwei, drei, vier Ebenen tiefer eintauchen möchte, für die Leute haben wir zwei Podcast-Empfehlungen. Auf der einen Seite hat die ProgrammierBar, ebenfalls ein guter Software-Engineering-Podcast, vor Kurzem einen Deep Dive mit Matthias Plappert gemacht. Matthias Plappert war ein Software-Ingenieur bei OpenAI. zu der Zeit, als auch GitHub Copilot und das Codex-Modell entwickelt wurde. Sehr interessanter Deep Dive, um mal ein bisschen hinter die Kulissen von OpenAI zu schauen. Und dann gibt es noch zwei Episoden vom To-Do-Cast. Der To-Do-Cast sind zwei Podcast-Hosts. Der eine arbeitet bei Microsoft, der andere bei GitHub. Also auch schon ein paar Internals. Und zwar gibt es da die Folge 60 zum Thema GitHub Copilot X, wie gesagt, die Erweiterung von GitHub Copilot und die Folge 65 zum Prompt Engineering, was sich dann natürlich dann mehr auf JGPT oder ähnliches bezieht, dennoch vielleicht auch eine gewisse Relevanz zu GitHub Copilot hat. verlinken wir alles in den Shownotes.",
+      "start": 3778710,
+      "end": 3916008,
+      "confidence": 0.8074069767441857,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Und nachdem wir jetzt so viel kommerzielle Firmen genannt haben, meine Bitte noch, wenn von euch jemand wirklich Erfahrung hat mit guten Open-Source-Modellen oder anderen Ansätzen, bitte kommt bei uns in der Community vorbei, lasst uns das wissen. Bin da super interessiert und ich glaube, da kommt in Zukunft auch mehr und würde mich auch freuen, wenn da mehr in den Bereich kommt, weil das halt auch gesellschaftlich ein großes Thema ist, eben auch mit der ganzen rechtlichen Geschichte und so. würde mich wirklich freuen, da mehr Open-Source-Modelle zu sehen, obwohl das natürlich auch einfach schwierig ist, weil da viel Geld dahinter steckt.",
+      "start": 3916028,
+      "end": 3948078,
+      "confidence": 0.8243203883495147,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Man muss aber auch sagen, wenn du der ProgrammierBar folgst, die haben jetzt auch AI-News und in diesen AI-News haben sie immer irgendwelche Open-Source-Trainingsmodelle drin, wie zum Beispiel das Lama-Modell. Fun Fact, irgendwie sind alle Open-Source-AI-Modelle nach irgendwelchen Tieren benannt. Hört da mal rein und diese Open-Source-Modelle, die müssen sich wirklich vor den Proprietären nicht mehr verstecken. Da gibt es dann irgendwelche Tests, die dann verglichen werden und diese Open-Source-Modelle kommen sehr, sehr nah an Open AIs, Chat-GPT und GPT-3 und 4 und 3.5 ran. Also verlinken wir auch in den Shownotes mal ein paar Open-Source-Modelle, falls da wer Bock hat, ein bisschen rumzuspielen.",
+      "start": 3948118,
+      "end": 3986204,
+      "confidence": 0.7759038461538459,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Aber gerade im Coding ist, glaube ich, noch Luft nach oben bzw. ist halt auch immer die Experience. Wenn ich dann keine Möglichkeit habe, das sinnvoll lokal in irgendeiner Form zu verwenden, das ist halt immer so die Frage. Also wer da wirklich Wissen hat und Input hat, bitte unbedingt vorbeikommen. bei uns in der Community. Und ganz allgemein würde uns natürlich super freuen, wenn ihr uns empfehlen könntet in eurer Bubble. Und nachdem ihr uns empfohlen habt, könntet ihr auch noch runter in die Shownotes gehen. Da findet ihr so zwei Daumen, einen nach unten und einen nach oben. Wenn ihr da mal vielleicht draufdrücken könntet, je nachdem wie ihr die Episode gefunden habt. Einfach so, um einen schnellen Check für uns zu ermöglichen, bekommen wir einfach die Info. Okay, wie viel Daumen rauf, wie viel Daumen runter pro Episode. Hatten wir denn und es geht auch plattformübergreifend, egal wo ihr uns hört.",
+      "start": 3986527,
+      "end": 4035155,
+      "confidence": 0.8184805194805191,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Das war's von uns. Viel Spaß beim Rumschwimmen mit GitHub Copilot und bis zum nächsten Mal.",
+      "start": 4035195,
+      "end": 4039856,
+      "confidence": 0.742875,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Tschüss. Ciao. Und nicht vergessen, wenn ihr einen neuen Job sucht oder als Firma die Top-Talente, dann schaut vorbei bei unserem Episodensponsor, dem Pitch Club. Link in den Show Notes.",
+      "start": 4039876,
+      "end": 4051921,
+      "confidence": 0.7772333333333332,
+      "channel": null,
+      "speaker": "A"
+    }
+  ],
+  "confidence": 0.7928807836598607,
+  "audio_duration": 4052.0,
+  "webhook_status_code": null,
+  "webhook_auth": false,
+  "summary": null,
+  "auto_highlights_result": null,
+  "content_safety_labels": null,
+  "chapters": null,
+  "sentiment_analysis_results": null,
+  "entities": null
 }

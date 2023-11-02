@@ -1,994 +1,994 @@
 {
-    "language_code": "de",
-    "audio_url": "https://audio1.redcircle.com/episodes/89075a99-0042-4bf7-b8a3-591f701d02da/stream.mp3",
-    "punctuate": true,
-    "format_text": true,
-    "dual_channel": false,
-    "webhook_url": null,
-    "webhook_auth_header_name": null,
-    "webhook_auth_header_value": null,
-    "audio_start_from": null,
-    "audio_end_at": null,
-    "word_boost": [],
-    "boost_param": null,
-    "filter_profanity": false,
-    "redact_pii": false,
-    "redact_pii_audio": false,
-    "redact_pii_policies": null,
-    "redact_pii_sub": null,
-    "speaker_labels": true,
-    "speakers_expected": 2,
-    "content_safety": false,
-    "content_safety_confidence": null,
-    "iab_categories": false,
-    "custom_spelling": null,
-    "disfluencies": false,
-    "sentiment_analysis": false,
-    "auto_chapters": false,
-    "entity_detection": false,
-    "summarization": false,
-    "summary_model": null,
-    "summary_type": null,
-    "auto_highlights": false,
-    "language_detection": false,
-    "speech_threshold": null,
-    "id": "62xwo40oqp-4aa7-4fe5-ab78-f24d5adada4e",
-    "status": "completed",
-    "error": null,
-    "utterances": [
-        {
-            "text": "Hand aufs Herz. Wer hat sauber und up-to-date dokumentiert, wie alle Infrastrukturkomponenten von Router bis zur virtuellen Maschine zusammenspielen? Wer kann nach einem Hackerangriff bei Knopfdruck magisch die gesamte Infrastruktur in einem anderen Land in der Cloud wieder hochfahren? Das Zauberwort dafür heißt Infrastructure as Code. Willkommen zu einer neuen Episode im Engineering Kiosk, in der ich genau darüber mit unserem DevOps-Spezialisten Andy sprechen werde. Wir klären, warum Andy gar nicht Spezialist genannt werden will, was der Unterschied zwischen Configuration Management und Infrastructure Orchestration ist und welche großen Vorteile es mitbringt, sowohl für kleine Side-Projects als auch für große Unternehmensinfrastrukturen.",
-            "start": 8,
-            "end": 42219,
-            "confidence": 0.8257200000000001,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Also hinein in die Magie.",
-            "start": 42259,
-            "end": 43540,
-            "confidence": 0.5386,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Du bringst immer so eine schöne Einleitung aus dem Alltag mit. Und jetzt habe ich mir gedacht, jetzt mache ich das auch einmal und habe so nach etwas Allgemeingültigem gesucht in meinem Alltag, der mir so gestern oder vorgestern passiert ist. Und da war einfach nichts, da waren nur technische Dinge. Also muss ich jetzt einfach mit einem technischen Gehen wir einsteigen. Andi, ich habe eine Frage an dich. Wir haben von einem Hörer in der Diskussion die Frage bekommen, was ist denn so ein Data Engineer? Weil ihr ihm vorgeschlagen habt, Job, Position, Data Engineer. Und er hat gemeint, er hat keine Ahnung, ist ein Informatiker, hat Informatik studiert, kann mit dem Begriff nichts anfangen. Jetzt haben wir gedacht, jetzt frage ich mal die, was ist ein Data Engineer? Kannst du damit was anfangen?",
-            "start": 47857,
-            "end": 84512,
-            "confidence": 0.6467555555555555,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Data Engineer, Data Analyst, Data Scientist ist für mich genauso wie DevOps und Site Reliability Engineer buzzword bingo und wird von jeder Firma anders definiert und meines Erachtens nach gibt es da auch keine industrieweite Definition. So wie ich das alles verstehe sind Data Engineer Leute, die sich speziell mit der Datenaufbereitung, Data Storage und der Data Platform beschäftigen, damit zum Beispiel Data Analysten und Data Scientists effizient, schnell und gut auf das Data-Warehouse zugreifen können. Also eigentlich Leute, die dafür zusehen, dass alle Daten im Data-Warehouse landen, in den richtigen Formaten, vielleicht aus unstrukturierten Daten strukturierte Daten machen, dass zum Beispiel, wenn man jetzt große SQL-Queries hat oder große SUL-Prozeduren, dass die kontinuierlich laufen für irgendwelche Reports und so weiter und so fort. Also all so was. Weil ich meine, wenn wir jetzt an ein Data-Warehouse denken mit Hadoop Apache Flink und Kafka und was da nicht alles zugehört und BigQuery und, und, und. Da zählt ja schon eine ganze Menge Know-how zu, um das wirklich lauffähig zu machen.",
-            "start": 84800,
-            "end": 150532,
-            "confidence": 0.8252647058823527,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Ich glaube, es ist auch aktuell einer der meistgesuchten Jobs, weil die ganzen Firmen diese Pipelines und Plattformen brauchen jetzt genau für ihre Data Scientists und Data Analysts und darum suchen sie eben händeringend genau diese Leute, die mit Daten umgehen können. Ich habe mich erinnert, ich habe mal vor wirklich vielen, vielen Jahren eine Jobausschreibung gemacht und habe diesen Jobtitel genannt, Datenklempner, wenn ich es ins Deutsche übersetzen würde, Data Plumber. Und das ist eigentlich recht gut angekommen, weil am Ende bist du so ein Installateur, der irgendwie so Pipelines zusammenstöpselt und dafür sorgst, dass die Daten von links nach rechts fließen.",
-            "start": 150772,
-            "end": 188813,
-            "confidence": 0.7637475728155335,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Ja, ich würde jetzt sagen, ein Data Engineer ist jetzt keine Person, die wirklich die Analysen selbst macht, sondern dafür sorgt, dass Analysen gemacht werden können. Das ist so mein Verständnis davon.",
-            "start": 189293,
-            "end": 199302,
-            "confidence": 0.7833125,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Okay, dann haben wir das gleiche Verständnis. Ist schon mal gut.",
-            "start": 199823,
-            "end": 202405,
-            "confidence": 0.5800909090909092,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Ich glaube aber auch, dass in kleineren Firmen die Differenzierung zwischen Data Analyst, Data Engineer und Data Scientist gar nicht so notwendig ist, weil natürlich sagt die Firmengröße nichts aus über die Datengröße oder über die Größe des Data Warehouses. Auch eine Zwei-Mann-Firma kann enorm viele Daten haben, aber ich glaube, das wird erst relevant, wenn man halt größere Teams hat, die dann wirklich aus dem Data Warehouse rumtouren.",
-            "start": 202425,
-            "end": 225504,
-            "confidence": 0.8100000000000002,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Ich glaube, das ist ja so eine klassische Frage, die Data Scientists stellen, wenn sie irgendwo eine Bewerbung machen. Habt ihr denn Data Engineers? Weil diese Antwort sagt dir dann automatisch, ob du wirklich Data Science machst oder ob du 90 Prozent deiner Zeit irgendwie Data Plumbing machst und probierst, die Daten irgendwie zu organisieren, die du dann eigentlich als Data Scientist brauchst.",
-            "start": 225865,
-            "end": 245440,
-            "confidence": 0.768253968253968,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Meines Erachtens nach ist halt ein Data Scientist sehr fokussiert auf Modelle, Algorithmen, effiziente Datenverarbeitung und wirklich sich durch den Datenwust zu wühlen und aus einer Menge von Daten neue Erkenntnisse zu ziehen, um dann gegebenenfalls die richtigen Fragen zu entwickeln. Und nicht das, was zum Beispiel ein Data Analyst macht. Man hat eine Frage und der Data Analyst versucht, diese Frage anhand den Daten zu beantworten. Dahingegen geht der Data Scientist ein Stück weiter und versucht die richtigen Fragen aus dem Wust der Daten herauszufiltern und fragt sich natürlich, ist das eine neue Erkenntnis, die uns und für das Business weiterbringt.",
-            "start": 246060,
-            "end": 293465,
-            "confidence": 0.8775980392156857,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Und siehst du, jetzt haben wir in dieser Einleitung schon so viel Informationen besprochen und nicht nur irgendwas über ein 9-Euro-Ticket oder so, wo ich nicht mal das letzte Mal verstanden habe, was das 9-Euro-Ticket eigentlich ist, bis ich einen anderen Podcast gehört habe, um zu verstehen, was eigentlich das 9-Euro-Ticket ist. Kann übrigens schwer empfehlen, der Zeitalpen-Podcast, ein Österreicher, ein Deutscher und ein Schweizer diskutieren über ihre Länder und die Entwicklungen in diesen Ländern. Hast du jetzt dein 9-Euro-Ticket für Sylt schon?",
-            "start": 293760,
-            "end": 321382,
-            "confidence": 0.7177349397590361,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Nein, ich habe mein 9-Euro-Ticket noch nicht, aber es gilt ja drei Monate. Das bedeutet, ich habe ja noch ein bisschen Zeit und es ist ja erst seit drei Tagen drin und natürlich bei solchen Aktionen gibt es natürlich am Anfang immer so einen Run auf die ganze Geschichte und natürlich hat sich Deutschland mal wieder großartig dabei angestellt. Du hast schon wieder irgendwie gelesen, 9-Euro-Tickets haben hier und da nicht funktioniert und so weiter und so fort und du konntest das nicht kaufen, weil entweder die.",
-            "start": 321442,
-            "end": 341721,
-            "confidence": 0.7665402298850574,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Tickets nicht da waren Moment, ist das ein physikalisches Ticket? Da musst du noch wo hingehen und so ein Papierzeug holen, oder was?",
-            "start": 341741,
-            "end": 348745,
-            "confidence": 0.7576086956521738,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Ich glaube, also so ganz genau weiß ich das nicht.",
-            "start": 348785,
-            "end": 351266,
-            "confidence": 0.7278,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Er sagt bloß, ihr in Deutschland habt auch noch Bargeld.",
-            "start": 351326,
-            "end": 353367,
-            "confidence": 0.735,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Also ich bin mir gar nicht sicher, ob es jetzt wirklich immer nur an der Bahn oder an der IT und am 9-Euro-Ticket lag oder ob es nicht auch an diesen Bezahl-Terminals liegt, die jetzt nicht mehr funktionieren, weil die seit 2018 eigentlich keine Lizenz mehr haben und immer noch überall eingesetzt werden und wir deswegen, wir guten Deutschen, endlich beim Edeka noch bezahlen können. Achtung, weil wir noch Bargeld haben.",
-            "start": 355218,
-            "end": 374469,
-            "confidence": 0.7999436619718311,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Das stimmt, man muss sagen, als Beispiel zur holländischen Bahn, da könnt ihr mit der deutschen Bahn eigentlich recht froh sein, recht oft. Die hatten gerade kurz, ich glaube vor einem Monat oder so, die hatten ein IT-Systemproblem und irgendeinen Ausfall und die haben einfach gesagt, okay, heute fährt die Bahn nicht mehr. Es war irgendwann Vormittag, bis 24 Uhr in ganz Holland, es fährt einfach nichts mehr. Wir probieren das Problem mal zu lösen, aber wir machen jetzt einfach Schluss.",
-            "start": 374689,
-            "end": 402372,
-            "confidence": 0.797888888888889,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Hätten die nicht eher sagen können okay, dann machen wir den Tag jetzt mal den öffentlichen Nahverkehr für umsonst?",
-            "start": 402773,
-            "end": 407572,
-            "confidence": 0.7149473684210527,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Die haben einfach keine Züge mehr fahren lassen können aus technischen Gründen, weil das IT-System irgendein Problem hatte und dann hat man einfach gesagt, okay, wir probieren das nicht irgendwie möglichst schnell zu beheben oder aufrechtzuhalten, sondern Rest vom Tag bis 24 Uhr fährt einfach in gesamt Holland nichts mehr.",
-            "start": 408727,
-            "end": 423290,
-            "confidence": 0.7473600000000001,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Meines Erachtens nach ist der deutsche öffentliche Nahverkehr sowieso kaputt. Fahre ich nach Holland, fahre ich nach Hamburg zum Beispiel, dann muss ich mich erstmal 15 Minuten mit diesem Plan auseinandersetzen, mit diesen Hamburger Ringen und welches Ticket ich eigentlich brauche, komme ich nach Nordrhein-Westfalen oder nach nach düsseldorf dann habe ich auch mal preisstufe a preisstufe b in hamburg habe ich ja das hast du.",
-            "start": 423330,
-            "end": 442476,
-            "confidence": 0.7164999999999999,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Jetzt eben mit den neun euro tickets.",
-            "start": 442496,
-            "end": 444397,
-            "confidence": 0.5998571428571429,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Nicht mehr ja richtig aber das neun euro ticket ist ja nur drei monate gültig ja das ist ja wird ja.",
-            "start": 444417,
-            "end": 449421,
-            "confidence": 0.7910000000000001,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Verlängert wenn dann alle drauf kommen wie.",
-            "start": 449441,
-            "end": 451102,
-            "confidence": 0.8455714285714285,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Cool das ist das ist doch nur teil des entlastungspakets ja ich hätte lieber gern so ein system wie wie in england da gehe ich einfach zum zum bahnsteig hat meine kreditkarte dahin und wenn ich dann aussteige halte ich meine kreditkarte wieder dahin und dann rechnet mir dann automatisch ab sowas erwarte ich Wir haben.",
-            "start": 451142,
-            "end": 465732,
-            "confidence": 0.752392857142857,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Jetzt in Österreich ein Klima-Ticket. Das kostet glaube ich so 900 Euro oder so, knapp 1000 Euro. Und damit ist einfach der gesamte öffentliche Verkehr in ganz Österreich inkludiert. Jeder Bus, jede Straßenbahn, jeder Zug, einfach alles in Österreich.",
-            "start": 465752,
-            "end": 481207,
-            "confidence": 0.8163333333333332,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Bin ein bisschen neidisch. Auch die Schnellfahrzüge, ICEs?",
-            "start": 481455,
-            "end": 484659,
-            "confidence": 0.682375,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Ist alles inkludiert.",
-            "start": 484699,
-            "end": 486562,
-            "confidence": 0.8576666666666667,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Weil das 9 Euro Ticket gilt ja nur für Regionalzüge und da noch nichtmals für alle Regionalzüge.",
-            "start": 486582,
-            "end": 491348,
-            "confidence": 0.8641176470588235,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Ja, aber 9 Euro ist ja ein bisschen billiger als 900 Euro oder 1000 Euro.",
-            "start": 491368,
-            "end": 495133,
-            "confidence": 0.5946,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Ja, aber es gehört ja zum Entlastungspaket. Naja, lass uns mal weg von der Bahn, aber wir bleiben bei dem übergeordneten Thema. Und zwar geht es heute um Infrastruktur. Oh meine Güte, diese Einleitung. Wolfgang, ich bin ein bisschen stolz auf dich.",
-            "start": 495193,
-            "end": 509248,
-            "confidence": 0.764261904761905,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Ja, die war nicht geplant, aber wir kommen doch immer zu unserem Thema, das wir wollen. Und zwar habe ich mir mal überlegt, du bist ja so ein DevOps-Mensch und du machst extrem viel mit Infrastruktur. Und ich bin zwar auch sehr infrastruktur interessiert und die machbar dinge aber was für mich immer so bisschen schwarzes loch war bisher, wo ich mich noch nie so richtig drüber getraut habe ist infrastructure as code und, Heute hole ich mir dich mal als Spezialist und löcher dich, damit du mir erklärst, was denn dieses Infrastructure-as-Code ist. Vielleicht ein Beispiel an Terraform, weil das verwendet heutzutage irgendwie jeder und das scheint der hippe, coole Scheiß zu sein. Und du kannst mir jetzt mal erklären als 0815-Docker-User, was denn so cool an dem ganzen Ding ist, weil jetzt schiebe ich ja meine Dockerfiles auch irgendwo auf einen Server in die Cloud und es funktioniert auch. Also warum brauche ich dieses Infrastructure-as-Code? Was ist das überhaupt? Was hilft mir das? Aber start mal vielleicht mit, was das Ganze eigentlich so soll.",
-            "start": 509268,
-            "end": 570787,
-            "confidence": 0.7965227272727272,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Ich starte mal ganz, ganz vorne und würde ich gerne bei einem Satz korrigieren, und zwar DevOps-Person. Eigentlich, also wenn ich jetzt im beruflichen Kontext unterwegs bin, interessiert es mich eigentlich nicht mehr. Hier im Podcast habe ich aber dennoch das Gefühl, wir müssen das mal klarstellen. Ja, DevOps selbst ist keine Jobtitle, ist keine Person, sondern ist eine Kultur, ist eine Firmenkultur, wie Menschen miteinander arbeiten, sich gegeneinander respektieren, Prozesse anpassen und so weiter und so fort. Ja, also für alle Hörerinnen und Hörer, die draußen einen DevOps-Engineer als Job-Ad sehen, schluckt's einfach runter. So ist die Industrie.",
-            "start": 570807,
-            "end": 608038,
-            "confidence": 0.7989494949494951,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Was wäre denn die richtige Bezeichnung für DevOps-Person?",
-            "start": 608058,
-            "end": 611619,
-            "confidence": 0.652,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "SRE, Site Reliability Engineer, könnte eine Alternative sein, ist aber ganz unten drunter nicht genau das gleiche, wie jemand, der an Cloud-Infrastruktur oder an Infrastruktur selbst arbeitet oder versucht, die Barrieren zwischen dem Engineering-Team und dem Operations-Team niederzubrennen.",
-            "start": 612179,
-            "end": 631049,
-            "confidence": 0.8115789473684208,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Ja, was ist denn die Position? Ist es dann ein Dev-Operator?",
-            "start": 631587,
-            "end": 635293,
-            "confidence": 0.6011818181818182,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Da das eine Kultur ist, gibt es ja die Position ja gar nicht. Das kann ein System-Administrator sein, das kann ein System-Engineer sein, das kann ein Software-Entwickler sein oder das kannst du als Projekt-Manager sein, der Dev-Ops einfach ausübt und in der Firma vorantreibt.",
-            "start": 635313,
-            "end": 647111,
-            "confidence": 0.7354772727272727,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Also sonst in der Kultur ist man dann ja eigentlich der Guru. Also vielleicht dann einfach Guru Andi. Du bist der Guru heute in der DevOps-Kultur und beantwortest mir meine Fragen.",
-            "start": 647679,
-            "end": 657914,
-            "confidence": 0.7377096774193547,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Mache ich gerne. Die zweite Problematik ist, die ich ganz kurz klarstellen möchte, ist Spezialist. Das Problem ist, wenn man sich mit einem, und das haben sehr, sehr viele Leute, das Problem ist, wenn man sich mit einem Thema beschäftigt, dann geht man tiefer rein und tiefer rein, und die anderen Leute sehen dich als Spezialist. Sich selber sieht man aber nie als Spezialist, weil man immer Leute kennt und bei dem Tiefergehen auf diese Leute stößt, die immer noch mehr wissen. Deswegen, ich versuche heute, all deine Fragen zu beantworten, und ich finde, das ist, glaub ich, eine tolle Sache, weil wirklich, So viel ich weiß, im Infrastructure-as-Code- und Terraform-Bereich hast du, glaub ich, null Wissen, oder?",
-            "start": 657934,
-            "end": 694676,
-            "confidence": 0.8249067796610171,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Ich verwende Ansible. Vielleicht können wir da dann auch anfangen und anknüpfen.",
-            "start": 694716,
-            "end": 698419,
-            "confidence": 0.32675,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Das können wir gleich mal aufnehmen. Infrastructure-as-Code, fangen wir ganz vorne an. Infrastructure-as-Code bedeutet eigentlich nur, dass man seine, und ich nenn's jetzt einfach mal, Cloud-Infrastruktur, wohingegen Cloud-Infrastruktur nicht wirklich in der Cloud sein muss, ja? Das bedeutet nicht bei GCP, also bei Google Cloud Platform oder bei Amazon. Sondern es kann auch in-house sein, zum Beispiel. Wir können sowas auch mit Hardware-Servern machen. Das muss nicht immer alles virtualisiert werden.",
-            "start": 698560,
-            "end": 726219,
-            "confidence": 0.8099718309859153,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Ja, Cloud ist ja immer Hardware. Irgendwo steht ja immer irgendwo eine Hardware. Cloud ist ja nur die einfache Zurverfügungstellung eigentlich von dieser Hardware. Und ich kann ja auch meine kleine Cloud zu Hause mit meinen fünf Raspberries bauen.",
-            "start": 726379,
-            "end": 739426,
-            "confidence": 0.7776153846153844,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Ja, das ist richtig, aber wenn wir in der Regel von Cloud sprechen, dann reden wir von Hardware mit einem Hypervisor, Virtualisierung, irgendwelchen APIs obendrauf, die dann unten drunter halbe Magie machen, um neue VMs hochzufahren und so weiter. Was ich aber meine, Cloud kann auch dein eigenes Rechenzentrum sein oder dein eigenes Stockwerk oder von mir aus auch deine eigenen fünf Räume in deinen Büroräumen. wo wirklich Hardware-Rechner stehen, wo du dann per TCP-IP-Pakete dem mitteilst, hey, boote doch mal, installier mal ein Betriebssystem und so weiter und so fort. Das ist ja auch deine Cloud und das wäre dann auch Infrastructure as Code. Für die Einfachheit dieses Podcasts sagen wir jetzt, fokussieren wir uns einfach mal auf die wirkliche Cloud, so wie die Medien es verstehen und sprechen einfach mal mit Digital Ocean, Azure, Google Cloud Platform und Amazon. Also wir simplifizieren das jetzt einfach nur mal auf diesem Bereich, nur damit ihr im Kopf habt, das ist nicht alles, wir können das auch alles mit realer Hardware machen.",
-            "start": 739846,
-            "end": 803293,
-            "confidence": 0.8407836257309939,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Also die Hardware der anderen.",
-            "start": 803734,
-            "end": 804855,
-            "confidence": 0.5037999999999999,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Die Hardware der anderen. Old man yells at cloud. Infrastructure as Code bedeutet eigentlich nur, dass du deine komplette Infrastruktur, das bedeutet Server, Storage, Firewalls, von mir aus auch Domains, GitHub-Repositories, User-Management, User-Rechte-Management, also alles das, was wirklich unten drunter ist, mit Quellcode managt.",
-            "start": 805312,
-            "end": 831757,
-            "confidence": 0.8321363636363639,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Gehört das Netzwerk auch dazu? Also irgendwie so Router oder so Zeug?",
-            "start": 832037,
-            "end": 836018,
-            "confidence": 0.70175,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Das Netzwerk gehört auch dazu. Also wirklich alles. Alles von irgendjemand ist in diesem Internet und du baust dir da einen kleinen Bereich im Internet auf oder in einem Netzwerk und möchtest da drauf deine Applikationen hosten oder Daten ablegen oder ähnliches. Und all was dazugehört, dass du ermöglichst, dass andere Leute auf deinen kleinen Bereich in deinem Netzwerk zugreifen können, das ist Infrastructure as Code in der Hinsicht. Das bedeutet, wir fangen vorne an mit der Domain, dann fangen wir an mit einer Floating IP oder Static IP, dann fangen wir an mit einem Router oder Load Balancer oder pointen die IP direkt auf einen Server, dann fangen wir an mit, wir attachen da eine Disk dran, Dann fangen wir, vielleicht brauchen wir noch irgendwo ein S3, ein Object Storage, dann brauchen wir vielleicht noch irgendwo ein Kubernetes Cluster und, und, und, und, und. Ja, also all das kann man als Infrastructure as Code bezeichnen. Wo da die ganz klare Grenze ist, ist schwierig, weil ich hatte gerade auch GitHub zum Beispiel genannt. Du kannst auch deine GitHub-Organisationen mit Terraform oder mit Infrastructure as Code managen oder deine Repositories oder die Settings deines Repositories, ob da jetzt der Pandabot installiert ist oder nicht.",
-            "start": 836038,
-            "end": 909381,
-            "confidence": 0.811044117647059,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Also wenn du jetzt sagst, gemanagt mit Source Code, was bedeutet das eigentlich? Ich meine, mit Source Code kann ich nicht irgendwie einen Server hochziehen oder hochfahren oder wie funktioniert das rein technisch gesehen? Was ist Source Code? Das ist ja normalerweise ein Java-Programm oder C++. Oder JavaScript soll ja auch Source Code sein.",
-            "start": 909421,
-            "end": 929114,
-            "confidence": 0.6414814814814818,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Halt ich für ein Gerücht, aber da mach ich mir jetzt, glaub ich, Feinde. Nein, kleiner Witz. Source Code ist in diesem Fall wirklich wie dein JavaScript, TypeScript, Java, C++, .NET, Go, Python und so weiter. Also wirklich Plain-Text-Dateien, die man ganz klassisch wie Software versionieren kann, die man ganz klassisch wie im Software-Development-Lifecycle behandeln kann, mit Pull-Request, mit Qualitätskontrolle, unit integration tests und und und linter bla bla bla die sind human readable aber auch maschinen readable.",
-            "start": 929134,
-            "end": 962262,
-            "confidence": 0.7864743589743589,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "So das heißt es ist eigentlich kein kein source code in dem sinne ich schreibe jetzt da keine keine programmiersprache javascript oder so sondern eher sogar so keine jammer files oder so zeug.",
-            "start": 962322,
-            "end": 973513,
-            "confidence": 0.7323333333333335,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Ja und nein, weil jetzt kommen wir natürlich weg von dem Term Infrastructure as Code und hin zu den wirklichen Detail-Implementierungen, wie zum Beispiel Terraform oder Pulumi. Das sind zum Beispiel zwei Tools, mit denen du das machen kannst.",
-            "start": 974154,
-            "end": 989093,
-            "confidence": 0.8154358974358973,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Ich kenne nur Halloumi.",
-            "start": 989614,
-            "end": 990635,
-            "confidence": 0.45275000000000004,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Naja, weg von Käse. Ich rede heute nicht von Käse. Ich bin ja auch kein Holländer. Zumindest wohne ich ja nicht in Holland.",
-            "start": 990675,
-            "end": 995941,
-            "confidence": 0.7493478260869564,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Ja, Halloumi ist ja auch griechisch.",
-            "start": 995981,
-            "end": 997663,
-            "confidence": 0.7521666666666667,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Aber immer wenn ich an Käse denke, denke ich an Holland. Trägst du auch eigentlich diese Holzschlappen, die Antje immer trägt?",
-            "start": 997683,
-            "end": 1002728,
-            "confidence": 0.5855714285714285,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Natürlich. Täglich. Trägt jeder in holland was denkst du.",
-            "start": 1002768,
-            "end": 1006673,
-            "confidence": 0.5522222222222223,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Pulumi ist auch ein Tool ein Software Tool was Infrastructure als Code ermöglicht genauso wie Terraform. Pulumi ist nicht so populär wie Terraform gewinnt aber immer mehr an Bekanntheit. Kommen wir zurück zu deiner Source Code Frage. Der Hauptunterschied Also generell, Terraform und Pulumi können eigentlich so fast das Gleiche. Das Endziel ist eigentlich, dass du irgendeine Art Quelltext schreibst, dann auf Play drückst und dann stehen da zwei Server, ein Kubernetes-Cluster, ein Object Storage, eine Firewall und deine Netzwerkkonfiguration mit Subnets und so weiter und so fort. Ja, das ist so das Endresultat. Wie du jetzt dahin kommst, da unterscheiden sich dann jetzt die Implementationen. Gehen wir mal ganz kurz drauf ein bei zwei Tools in Terraform und Pulumi. Und ich sage von Anfang an, mit Pulumi selbst habe ich noch nicht gearbeitet. Ich habe nur Erfahrung mit Terraform.",
-            "start": 1006713,
-            "end": 1056637,
-            "confidence": 0.8132928571428572,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Jetzt noch eine Frage davor. Wenn du sagst, okay, ich schreibe dir diesen Source-Code und dieser Source-Code erstellt mir dann da meine Infrastruktur, meinen Router, meine IP-Adressen, erstellt mir da irgendwelche Server in der Cloud, die ich dazu brauche und installiert da dann Zeug. Was bringt mir denn das Ganze? Weil ich könnte jetzt auch einfach das manuell erstellen. Die Infrastruktur ändert sich ja normalerweise nicht so schnell. Wenn ich jetzt irgendwie da meine paar Server aufstelle als normale Firma, Dann mache ich das ja einmal wahrscheinlich und vielleicht ein Monat später ändere ich irgendeine Kleinigkeit. Also warum sollte ich da immer irgendwie das in Source Code schreiben und nicht einfach machen.",
-            "start": 1057117,
-            "end": 1092817,
-            "confidence": 0.7491607142857143,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Die Aussage, dass sich die Infrastruktur nicht mehr so schnell ändert, würde ich mal ganz klar challengen, speziell mit unserer Intro mit Data Engineers und geänderten Anforderungen, die täglich fast reinkommen, weil der Konkurrent irgendwie ein neues Feature gelauncht hat. Also die Infrastruktur ändert sich schneller als man gucken kann und deswegen nutzen ja ziemlich viele Firmen jetzt die Cloud und wollen in die Cloud, weil man da dynamischer ist, weil man da Kosten sparen kann. Und Kostenersparnis hast du eigentlich durch Infrastrukturänderungen, durch Rearchitekturen, Also durch das Re-Architekten deiner Infrastruktur und so weiter und so fort. Ja, also die ändert sich umso schneller. Aber wozu ist Infrastructure Code eigentlich erstmal generell sinnvoll? Erstens, wenn ich in der UI, in der Webkonsole etwas zusammenklicke, dann weiß ich, was ich gemacht habe und das weiß ich genau bis morgen zum Frühstück.",
-            "start": 1092857,
-            "end": 1140786,
-            "confidence": 0.7900500000000005,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Es hat ja nicht jeder so ein Goldfischgehirn wie du.",
-            "start": 1141175,
-            "end": 1144959,
-            "confidence": 0.5538,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Also ich schwöre dir, wenn es nicht bis morgen zum Frühstück reicht, dann reicht es vielleicht bis nächsten Monat. Aber das war es dann auch. Du weißt einfach nicht mehr, was die jeweilige Person da geklickt hat und so weiter. Jetzt stell dir vor, du arbeitest im Team. Woher sollst du wissen, warum jemand eine Netzwerkkonfiguration geändert hat? Wer das geändert hat, hat man meist in irgendeinem Audit-Log bei den Public-Cloud-Providern. Alles gut, sofern du keinen Login teilst, sofern jeder seinen eigenen Login hat. Aber Infrastructure as Code bietet dir erstmal alle Vorteile von Softwareentwicklung und somit natürlich auch Versionierung und somit natürlich auch zum Beispiel Git-Comet-Messages und somit natürlich auch eine Referenz zu einem Ticket und somit natürlich auch in irgendeiner Art und Weise Dokumentation nicht nur, was wird eigentlich gemacht, sondern wie sieht deine Infrastruktur aus, sondern auch, wieso wurde das denn gemacht. unter der Voraussetzung, dass Tickets ordentlich geschrieben werden, unter der Voraussetzung, dass Git-Comment-Messages ordentlich geschrieben werden. Die andere Thematik ist natürlich aber auch Security und Compliance. Du weißt ganz genau, wie deine Infrastruktur aussieht und du musst dich nicht durch die Netzwerktabs in der UI klicken und so weiter, sondern hast alles in einer View. Die nächste Geschichte ist, das ist erstmal Grundvoraussetzung für die Teamarbeit, weil du hast eine ganz klare Basis. Du weißt, welche Änderungen an der Infrastruktur gemacht werden, die kann im Team dokumentiert werden, weil das hoffentlich per Pull-Request gereviewt wird. Dann geht's an die Wiederverwendbarkeit. Ich kann jetzt meine komplette Infrastruktur in Europe West 4 bei Google, was glaube ich in Amsterdam ist oder Belgien, hochfahren und mit Mit wenigen Modifikationen kann ich dieselbe Infrastruktur auch in Amerika hochfahren oder in China. Und das theoretisch binnen Minuten, ohne dass ich jetzt drei Tage in der Amazon-Konsole in Amerika oder in China rumklicken muss.",
-            "start": 1145019,
-            "end": 1249665,
-            "confidence": 0.8076039603960397,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Kann ich das jetzt auch abseits von Google in der Cloud hochfahren? Also kann ich, wenn ich das jetzt für Google gebaut habe, kann ich das auf AWS dann hochfahren, das Gleiche, wenn ich Cloud wechseln will?",
-            "start": 1249705,
-            "end": 1261173,
-            "confidence": 0.6767027027027025,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Das ist einer der größten Mythen. Nein, zumindest nicht bei Terraform. Warum? Zum Beispiel in Terraform definierst du, du möchtest eine Google Compute. Das ist eine virtuelle Maschine bei Google und bei Amazon heißt das EC2. Du hast andere Metadaten und andere Settings, die du in der Google Compute setzen kannst, als bei Amazon EC2. Jetzt könnte Terraform natürlich hingehen und sagen, hey, pass mal auf, ich mache sowas wie Vererbung mit einer Mutterklasse, einer abstrakten Klasse und unten drunter sind die Detailimplementierungen, dann eine Google Compute und eine EC2. Dadurch hättest du natürlich immer nur die Möglichkeit, nur die Settings zu setzen, die von allen Cloud-Providern unterstützt werden. Und du wählst ja einen Cloud Provider, um das volle Potenzial auszuschätzen. Deswegen musst du schon spezifisch sagen, ich bin bei Google und möchte eine Google Compute VM und hier bin ich bei Amazon. Hier möchte ich eine EC2 Instanz.",
-            "start": 1261613,
-            "end": 1312189,
-            "confidence": 0.7882483221476511,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Aber war das nicht jemals Versprechen von Terraform, dass sie das unterstützen in irgendeiner Form, oder dass es leichter ist, zumindest zwischen den Clouds ... Ich bin mir.",
-            "start": 1312706,
-            "end": 1320089,
-            "confidence": 0.7244285714285714,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Nicht sicher, ob das jemals ein Versprechen von HashiCorp, der Firma hinter Terraform, die das geschrieben haben, war, oder ob das die Medien nicht so aufgepickt haben und jeder das so liest. Weil das ist einer der größten Mythen, dass du sagen kannst, ich will eine VM und kann die in jeder Cloud hochfahren. Weil das stimmt nicht, das geht nicht, zumindest nicht, wenn du das volle Potenzial von einer Cloud nutzen möchtest.",
-            "start": 1320109,
-            "end": 1340957,
-            "confidence": 0.8036849315068493,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Aber warum verwendet er nicht einfach die Sprache, die die Cloud anbietet? AWS hat ja selber so ein Infrastructure-as-Code-Ding.",
-            "start": 1341565,
-            "end": 1350622,
-            "confidence": 0.7669473684210527,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Cloudformation heißt das.",
-            "start": 1350662,
-            "end": 1351484,
-            "confidence": 0.30333333333333334,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Genau, CloudFormation. Warum verwendet ihr dann nicht direkt das? Das unterstützt wenigstens die neuesten Produkte, die AWS so rausbringt. Hingegen Terraform als externe Firma hat ja doch immer einen Delay und braucht länger für irgendwelche neuen Tools, die die Cloud anbietet.",
-            "start": 1351899,
-            "end": 1366253,
-            "confidence": 0.7758292682926827,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Sehr gute Frage. Für Amazon ist das richtig? Wie heißt denn das Infrastructure-as-Code-Tool für Google?",
-            "start": 1366273,
-            "end": 1372018,
-            "confidence": 0.7362000000000002,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Du bist der DevOps-Guru.",
-            "start": 1372058,
-            "end": 1373379,
-            "confidence": 0.6052500000000001,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Terraform. Google hat gesagt, ich baue hier nicht meinen eigenen Kram, sondern ich stütze mich auf die Industrie und Google empfiehlt selbst Terraform zu managen in der Infrastruktur. Und was du gerade gesagt hast, dass das HashiCorp als externe Firma einen Nachteil hat, jetzt kommt ja der Clou. kann gar nicht so viele Engineers einstellen, um alle APIs konstant zu überwachen und die neuen Features in Terraform zur Verfügung zu stellen. Deswegen gibt es ein Konzept von Plugins, nennt man bei Terraform Provider, und Amazon maintaint selbst den Terraform Provider. Das bedeutet, wenn Amazon ein neues Feature rausbringt, für EC2 oder für Kubernetes oder für was weiß ich nicht, für Amazon MSK zum Beispiel, das ist ja ein Kafka-Cluster, dann kümmert sich Amazon selbst darum, dass der AWS-Provider für Terraform Amazon MSK unterstützt. Und dasselbe für Google und dasselbe für GitHub. Es gibt natürlich ein paar Provider, die von Terraform selbst maintained werden, aber das ist echt wenig. Generell sind die dafür da, hey, lieber Vendor, wenn du doch einen Service anbietest, der durch Terraform gemanagt werden soll, dann kümmere dich doch bitte selbst um dein Plugin.",
-            "start": 1373420,
-            "end": 1443895,
-            "confidence": 0.8072192513368985,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Ich stelle jetzt mal eine These auf, die du mir dann validieren kannst oder auch nicht. Wenn ich in Terraform meine Infrastruktur definiere auf AWS und dann umsteigen will zu Google, bin ich dann schneller wenigstens beim Umstieg, als wenn ich CloudFormation genutzt habe, weil ich irgendwie wenigstens allgemeine Definitionen, IP und so weiter verwenden kann oder die Plugins dann halt austauschen muss, aber eine Grundlage habe, die ich schon verwenden kann? Oder siehst du da gar nicht so den großen Vorteil dazwischen?",
-            "start": 1444240,
-            "end": 1472815,
-            "confidence": 0.7819397590361449,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Das ist eine unglaublich schwierige Frage. Bist du schneller? Die Problematik hier ist, du steigst von Cloud 1 auf Cloud 2 um. Jede Cloud hat ihre Eigenheiten. Das Schwierigste bei den großen Cloud-Providern ist eigentlich das Verständnis, wie funktioniert Access Management und Identity Management. Das bedeutet, wie integriert sich das User-Handling, das Limitieren eines Users auf bestimmte Ressourcen? Darf dieser User eine Datei in diesem S3-Bucket ablegen oder lesen oder auch löschen oder versionieren? Und wie man das Netzwerk definiert. Das sind so die Kernunterschiede. Wenn man die drauf hat, top. Punkt ist aber, das läuft anders in Google und anders in AWS. Genauso wie Account Management oder wie werden Projekte gehandhabt. Das sind grundlegend unterschiedliche Konzepte bei GCP und AWS. Deswegen ist das schneller. Also wenn du gleich gutes Verständnis hast von beiden Clouds, GCP und AWS zum Beispiel, dann würde ich sagen, ist der Rewrite deiner Terraform-Files auf jeden Fall schneller, weil du bei derselben Sprache bleibst. Wohingegen du jetzt, wenn du von Amazon nach Google wechseln möchtest, und wir gehen da auch davon aus, dass du dasselbe Cloud-Verständnis hast, dann musst du ja von Cloud-Formation auf Terraform wechseln, weil du kannst ja mit Cloud-Formation keine GCP-Ressourcen managen, und somit müsstest du dich dann erst in Terraform einarbeiten. Also du hast dann einen, ich nenne es mal einen Common Nominator, und zwar dieselbe Sprache und musst halt nicht mehr eine neue Sprache lernen. Also in der Hinsicht würde ich sagen, ja, du bist schneller. Auf der anderen Seite ist die Definition deiner Infrastruktur, sofern du mit Infrastruktur als Coach schon familiär bist, nicht die Herausforderung, sondern die reale Herausforderung ist hier, das Grundverständnis der Core-Konzepte der jeweiligen Cloud. Und auf Azure mag es mit hoher Wahrscheinlichkeit anders sein, genauso wie auf DigitalOcean. Also zum Beispiel mal als Kernunterschied. Also GCP und AWS, da reden wir immer von Regions und Availability Zones, wegen Failover und allem drum und dran. Das ist ja einer der großen Kernfeatures, womit die alle immer werben. Digital Ocean hat gar nicht so das Konzept von Availability Zones. Du kannst eine Node in Amsterdam oder in Frankfurt bootstrammen, aber du hast nicht in Amsterdam drei Availability Zones. Da sind die Konzepte ja ganz anders. Und da speziell, wenn du deine Software aufbaust und deine Software auch über verschiedene Availability Zones verteilen möchtest, Reliability und Regions und allem drum und dran, die musst du dann natürlich auf Digital Ocean auch anders aufbauen als auf AWS und GCP zum Beispiel. Aber kommen wir mal ganz kurz nochmal, warum braucht man das eigentlich? Da gibt es noch ein paar mehr Punkte. Ich hatte genannt Security, Compliance, ich hatte gesagt Dokumentation. Du kannst natürlich aus Code auch etwas generieren. Aber es ist natürlich auch so, dass wenn du zum Beispiel einen Hackerangriff hast, dann kannst du die komplette Infrastruktur einfach zumachen und einfach drüben wieder aufbauen.",
-            "start": 1473055,
-            "end": 1638478,
-            "confidence": 0.7841823899371065,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Wo ist drüben?",
-            "start": 1638498,
-            "end": 1639379,
-            "confidence": 0.7436666666666666,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Ja, drüben in einer anderen Region zum Beispiel. oder unter anderem IP, du kannst dich von Hackerangriffen oder von Incidents generell sehr schnell wieder erholen, weil du hast ja deine komplette Infrastruktur in Code gekippt. Und ein anderer Grund ist natürlich, dass die Developer Experience, die inzwischen immer wichtiger wird. Ich meine zum Beispiel, warum ist denn Heroku so unglaublich populär? Heroku ist so unglaublich populär, weil die harten Dinge einfach super einfach machen. Du kannst sagen git push heroku main und du deploys deine komplette Applikation auf Heroku und hinten dran läuft ein VM und Container und was weiß der Geier nicht alles und du hast eine Applikation online mit Postgredatenbank und schieß mich tot. Das bedeutet Developer Experience immer immer wichtiger und Infrastructure Managing. ist natürlich dann via Pull-Request, was natürlich dann erst das ganze DevOps-Movement und so weiter enabelt, weil du kannst nämlich Entwickler, die es gewohnt sind, im Software-Development-Lifecycle zu leben, an Operations heranwagen. Also das bedeutet, Das ist natürlich dann schon die Grundvoraussetzung für DevOps und Site Reliability Engineering, weil die ursprüngliche Definition zum Beispiel von Site Reliability Engineering ist, du beauftragst Softwareentwickler mit der Aufgabe, Operations zu managen. Da kommt natürlich dann das komplette Software-Entwickler-Mindset natürlich auch mit ran. Das bedeutet Automatisierung, et cetera, et cetera. Und erst Infrastructure as Code ermöglicht das. Wo man hingegen natürlich sagen muss, dass Infrastructure as Code nicht Terraform oder Pulumi heißen muss, sondern von mir aus auch Bash-Skripte. Da kommen natürlich andere Herausforderungen wie Idempotenz und State-Management und all so was mit. Aber theoretisch kann ein Infrastructure as Code auch ein Bash-Skript sein.",
-            "start": 1639419,
-            "end": 1742075,
-            "confidence": 0.7866127819548874,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Ja, man kann sich auch theoretisch seine eigene Datenbank schreiben, wenn man will. Aber ob das Sinn macht, ist eine andere Frage. Aber jetzt kommen wir nochmal zurück zu meiner initialen Aussage. Ich verwende zum Beispiel Ansible. Und Ansible, ich würde mal sagen, ist so ein Tool, was sowas ähnliches macht. Du definierst in Code oder in Files. wie dein Server aussieht und ich setze da ein paar Server auf oder auch ganze Cluster, definiere, was da für Package auf diesem Server installiert sein soll, erstelle mir da irgendwelche User oder sowas. Kann ich das jetzt mit Terraform auch machen oder sollte ich auf Terraform wechseln, wenn ich sowas mache aktuell mit Ansible oder wo ist da der Unterschied?",
-            "start": 1742775,
-            "end": 1780718,
-            "confidence": 0.7596890756302521,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Killerfrage. Tools wie Ansible oder andere Tools in dem selben Sektor wie Salt, was für Salt Stack steht, Chef, Puppet, CFEngine, Bash-Skripte, Das nennt man eher Configuration Management, wohingegen man Terraform und Pulumi eher Infrastructure Orchestration nennt, beziehungsweise Infrastructure-as-Code-Software-Tool. Kannst du mit Ansible auch Infrastructure-as-Code managen, das bedeutet Server hochfahren? Ja. Kannst du mit Terraform auch irgendwie so eine Art Configuration Management machen? Ja. Wo ist der Kernunterschied? Es sind einfach zwei unterschiedliche Tools mit unterschiedlichen Spezialisierungen. Terraform hat als Spezialität das Managen von Infrastruktur. Das bedeutet Server, Firewalls und so weiter. Ansible als Configuration Management Tool hat als Spezialität das Managen der Konfiguration auf einzelnen Servern. Klassisches Beispiel, mit Terraform baue ich mir meine Static IP, route meine Domain da drauf, setze DNS Records und einen Server und sorge dafür, dass da ein Betriebssystem drauf ist. Mit Ansible kümmere ich mich darum, dass das Docker installiert ist, dass die richtigen Python Packages installiert sind, dass Systemd läuft, dass die Uhrzeit richtig eingestellt wird, dass mein SMTP-Server eingerichtet ist, dass das Logging läuft, etc., etc. Du kannst das auch mit Terraform machen. Es wird nur unglaublich kompliziert, weil Terraform darauf nicht spezialisiert ist. Du kannst klassisch... Was du zum Beispiel mit Terraform machen kannst, ist, du kannst klassische Bash-Commands abfeuern. Das Problem ist dabei, dass alle Tools mit allem, was du tust, immer berechnen, was macht denn diese Ausführung dieses Befehls. Beispiel, ich will einen Server anlegen. Terraform checkt dann, gibt es diesen Server bereits oder muss ich den neu anlegen. Wenn ich jetzt Bash in Terraform ausführen würde, dann habe ich einmal einen riesen Bash-Block und Terraform kann nicht sagen, muss ich das jetzt ausführen oder nicht. Terraform muss Bash ausführen, um das Ergebnis zu kennen. Ich lege einen Ordner an, mkdir-p slash etc irgendwas. Terraform muss das ausführen, um herauszufinden, ist dieser Ordner schon da oder wurde der angelegt. Ansible hingegen hat eine spezielle Ressource, einen speziellen Ressourcenblock, sagt sowas wie Create Folder und da gibst du deinen Pfad an und Ansible kann dann vorher prüfen, gibt es diesen Ordner bereits oder muss ich den jetzt anlegen. Das sind spezialisierte Use Cases. Was ist also jetzt hier die perfekte Kombination? Beides. Ich zum Beispiel nutze Terraform für meine komplette Infrastruktur, für meine Domains, für GitHub Repositories und so weiter. Wenn die Node hochgefahren ist und wenn die Infrastruktur steht, dann mache ich ein Ansible Play und das Ansible Play kümmert sich darum, die richtigen Softwarepakete zu installieren, Systemd zu installieren, die Unit Files dahin zu legen, alles durchzustarten und so weiter und so fort. Die Kombination ist eigentlich das Beste, weil du brauchst eigentlich beides. Aber die Kernkonzepte unten drunter sind ein bisschen anders, weil z.B. Infrastructure as Code, Terraform ist meist State-basiert. Das bedeutet, du hast irgendwo ein State-File, was den aktuellen Stand deiner Infrastruktur in einem spezifizierten Format vorhält, wohingegen Configuration Management in der Regel stateless ist. Und das bedeutet natürlich auch, dass Configuration Management bei einem Run immer alles checken muss und Terraform sich natürlich, weil es hat ja den State gespeichert, nicht auf alle Operationen immer neu stürzen muss. Wohingegen Infrastructure as Code oft auch als Kern für Immutable Infrastructure genannt wird. Was bedeutet das? Das bedeutet, du installierst einen Server und fasst den nicht mehr an. Und wenn du den Server ändern möchtest, schmeißt du den Server weg und installierst den neu, Immutable. Ähnlich wie bei der funktionalen Programmiersprache zum Beispiel. Wohingegen Ansible meist mit Mutable Infrastructure-Verhalten um die Ecke kommt. wo du einen Server hast und dann Änderungen machst. Du legst einen zweiten Orden an und drückst einfach Play, anstatt den ganzen Server neu zu installieren. Du kannst aber natürlich auch beide Varianten als Immutable und Mutable fahren. Zum Beispiel gibt es manche Operationen bei Terraform, die nicht immer den Server wegschmeißen, sondern sogenannte In-Place-Ersetzungen machen und dann die Infrastruktur falten. Es kommt aber immer ganz darauf an, was du da änderst in der Infrastruktur.",
-            "start": 1780738,
-            "end": 2050157,
-            "confidence": 0.8133889739663088,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Und würdest du jetzt sagen, dass man Configuration Management, also sowas wie Ansible, heutzutage überhaupt noch braucht, wenn man jetzt zum Beispiel alles mit Docker macht und die Docker-Images ja eigentlich schon bereitstehen und vielleicht von dem Developer-Team, wenn man das einmal trennen will, vorbereitet sind und dann eigentlich nur mehr rübergeschoben werden müssen auf die Infrastruktur und dort laufen. Also braucht sowas wie Configuration Management überhaupt noch? Oder ist es heutzutage meistens über Docker schon obsolet?",
-            "start": 2050440,
-            "end": 2077882,
-            "confidence": 0.8004675324675325,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Natürlich braucht man sowas wie heutzutage noch. Du hast jetzt einen Server und da läuft Docker drauf. Wie kommt denn das Passwort und deine Authentifizierung für deine eigene Docker Registry auf den Server?",
-            "start": 2077922,
-            "end": 2087895,
-            "confidence": 0.6762424242424243,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Ja, aber kann ich sowas, wenn ich jetzt Kubernetes oder so verwende, kann ich das nicht in Terraform spezifizieren, solche Dinge, die Kubernetes braucht, um zu laufen?",
-            "start": 2088936,
-            "end": 2097638,
-            "confidence": 0.6777407407407406,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Hab ich ja gesagt, kannst du, ja. Nur, wenn du ... Und für den Start ist das vielleicht sogar auch völlig okay, ja? Dann musst du dir nicht Ansible schaffen. Umso mehr du deine eigenen Nodes aber provisionieren möchtest, umso mehr du zum Beispiel von der Hostmaschine zum Beispiel ein Prometheus-Host-Exporter laufen lassen möchtest oder Ähnliches, ja? Also Monitoring für die Node. Umso mehr Tools müssen natürlich auf der Hostmaschine selbst installiert werden und nicht in einem Docker-Container. Kannst du auch alles mit Terraform machen. Und wenn du jetzt zum Beispiel am Anfang nur ein Python-Package installierst auf dem Host-System oder irgendwas anderes, oder eine spezielle Version von Curl oder OpenSSL, dann geht das alles. Kompliziert wird's oder herausfordernd wird's, wenn du im Software-Development-Lifecycle immer mehr addest, weil die Infrastruktur sich ändert, weil du neue Requirements kriegst oder, oder, oder. Und das heißt natürlich nicht, dass du sofort mit Terraform und Ansible starten musst, sondern du kannst auch erst mit Terraform anfangen und später Ansible dazuschreiben. Zum Beispiel ein Beispiel, was ich hatte in einem meiner Side-Projects. Ich habe mit Terraform angefangen und habe mit Terraform dann auch direkt zwei Docker-Container mitdeployed. Und zwar einmal Traffic als Loadbalancer und einmal MySQL als Datenbank. Und Terraform, habe ich ja vorhin erwähnt, unterstützt sogenannte Plugins, nennt man im Terraform-Universum Provider. Und da gibt es auch einen Docker-Provider. Da kann ich sagen, dieses Image, diese Registry und dann state run. Nochmal ganz kurz vielleicht zur Erklärung. Ein Plugin bzw. ein Provider ist unten drunter eigentlich auch nur Quellcode, geschrieben in Go, der mit externen APIs quatscht. Die Definition von HashiCorp-Files machst du eigentlich in HCL, das ist die HashiCorp-Configuration-Language, mit dem Fokus auf menschen- und maschinenfreundlich zu sein. Und das wurde damals primär für DevOps-Tools entwickelt. Und die Syntax dieser HCL, HashiCorp-Configuration-Language, wurde sehr stark von der Nginx-Konfigurations-Syntax inspiriert. Provider sind also, wenn du so möchtest, die Übersetzung von der HashiCorp-Configuration-Language, die du da schreibst, kannst dich vorstellen, so ähnlich wie YAML, nur halt mit ein paar anderen Features, auf API-Calls. Das ist eigentlich ein Provider.",
-            "start": 2097658,
-            "end": 2228435,
-            "confidence": 0.792189504373178,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Und diese HCL-Sprache, um das gerade nochmal zu verstehen, du sagst, es ist wie YAML, kann ich da dann aber auch irgendwie schleifen oder so Sachen machen, also wirklich so prozedurale Sachen, oder bin ich da nur auf deklarative Definitionen, so wie in YAML oder so, beschränkt?",
-            "start": 2228475,
-            "end": 2244765,
-            "confidence": 0.7663617021276594,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "In den letzten paar Versionen haben die mehr und mehr solcher Features mit eingebaut. Das bedeutet, du kannst zum Beispiel eine Liste haben von Usern, und dann hast du eine Resource, nennt sich das, und kannst dann sagen, führ diese Resource für jedes Element in der Liste aus. Somit kannst du zum Beispiel dein ganzes Team in eine Liste packen, deine Usernames, und die sollen alle die gleichen Berechtigungen haben, und hast nur eine Resource, und dann werden fünf Admin-User erstellt oder ähnliches. Das geht, ja. Kommen wir nochmal zurück zu diesen Providern und warum ich sage, dass manche Sachen du zwar mit Terraform machen kannst, aber nicht machen solltest und wo es da zum Beispiel Probleme gibt. Nehmen wir an, du fährst eine virtuelle Maschine auf DigitalOcean hoch und dein Ziel ist es, Docker-Container, drei Docker-Container drauf laufen zu haben. Was du dann machst ist eigentlich, du holst dir einen DigitalOcean-Provider, fährst eine VM hoch und installierst da Docker drauf. kannst auch ein vorgefertigtes Docker-Image von der Digital Ocean nutzen, wie auch immer. Dann hast du da eine VM. Dann kannst du dir von der VM in Terraform auch die IP-Adresse holen, weil die kennst du ja nicht vorher. Der Docker-Provider braucht aber die IP-Adresse, um mit der Docker-API zu sprechen. Und dann sagst du als Docker-Resource, deploy mir bitte diesen Docker-Container. Und jetzt ist so ein bisschen das Henne-Ei-Problem. Du hast auf der einen Seite Provider, also Plugins, und diese Provider erstellen, geben dir Ressourcen. Docker-Provider hat die Ressource docker-image und startet dieses Docker, diesen Docker-Container. Wenn du sagst terraform play, was der als erstes macht, der holt sich erst alle Provider und guckt, ist meine Konfiguration gültig. Und du kannst Provider nicht abhängig voneinander machen, zum Beispiel. Das bedeutet, wenn du noch keine Maschine da hast, noch keine VM, hast du noch keine IP. Somit kann der Docker-Provider nicht hochfahren, weil er keinen Docker-Host findet. Das bedeutet, du musst erst die Maschine hochfahren und danach noch mal einen Run machen, weil dann kann der Docker-Provider sich erst connecten. Du kannst Provider nicht abhängig voneinander machen, du kannst aber Ressourcen abhängig voneinander machen. Das ist dann so ein Execution-Problem, das ist zum Beispiel ein Bug bei Terraform, dass du Provider nicht abhängig voneinander machen kannst. Da ist zum Beispiel der bessere Use Case, du baust deine Infrastruktur mit Terraform und bespielst sie danach mit Ansible. Zum Beispiel, wo du dann mit Ansible deine Docker-Container deployst. Du kannst natürlich sowas alles umgehen mit Hacks, dann wartest du und deployst deinen Docker-Container mit Bash-Skript und so weiter. Das geht alles, aber da kommen wir schon wieder in eine Schiene, da rollen wir schon wieder die Zehen nicht.",
-            "start": 2244945,
-            "end": 2396590,
-            "confidence": 0.785749440715884,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Jetzt um noch deine Guru-Meinung da einzufordern, wenn wir da schon besprochen haben Ansible, Sword, Chef, Puppet und so weiter, ist da dein Favorite Ansible oder würdest du sagen irgendwas anderes ist noch cooler oder rein deine persönliche Meinung zu dem Ganzen?",
-            "start": 2397205,
-            "end": 2413571,
-            "confidence": 0.7908333333333334,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Ich habe ein bisschen Erfahrung mit Puppet, Chef, Sword, Stack, Bash, Script und Ansible. Mit CF Engine selbst habe ich noch nie gearbeitet. Mit Ansible ist das Letzte, was ich gelernt hab. Und da muss ich sagen, es kommt drauf an, was hast du für eine Infrastruktur und wie groß ist die? Bei den ganzen Configuration-Management-Tools kommt's immer eigentlich auf die Kernfrage an, ist das ein Pull- oder ist das ein Push-Prinzip? Ein Pull-Prinzip ist zum Beispiel, du definierst einen, du sagst, was gemacht werden soll. Dieser Ordner soll angelegt werden, dann soll diese Datei mit diesem Inhalt draufgeschrieben werden, dann soll dieses Python-Paket installiert werden. Und du pushst das in dein Repository, weil das ist ja auch, Configuration Management machst du auch via Codefiles. Und Pull wäre dann, die Server schauen in ihrem Repository alle zwei Minuten nach, pullen sich den letzten Code und executen das. Der Vorteil ist, das skaliert wie Hulle. Du kannst Millionen Server haben und die holen sich irgendwann den State und exekuten den dann. Der Nachteil ist, du weißt nicht wirklich, wann es exekutiert wird und du brauchst natürlich mehr Tooling drumherum, um zu wissen, wo das erfolgreich exekutiert wird. Wohingegen Push-Prinzip ist, du bist auf einem CI-Server oder auf einem Rechner und sagst, du hast diese fünf Server und du drückst jetzt Play und siehst auf deiner Maschine, ich connecte mich zum ersten Server für das aus, ich connecte mich zum zweiten Server für das aus. Von mir aus kannst du auch die Exekution der Server parallelisieren. Aber jetzt stell dir vor, das machst du mit 1000 Servern. Das dauert halt eine Weile. Ja, das ist eigentlich so die Kernfrage, die du eigentlich beantworten möchtest, Push oder Pull.",
-            "start": 2413612,
-            "end": 2505865,
-            "confidence": 0.8026035087719303,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Ansible ist Push und Salt ist zum Beispiel Pull, wenn ich das richtig verstanden habe.",
-            "start": 2506265,
-            "end": 2511127,
-            "confidence": 0.6517333333333333,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Salt kannst du in beiden Varianten fahren. Generell ist Salt aber Pull, also von Haus aus. Ganz am Anfang war Ansible nur Push, aber mit Ansible Tower und was sie da jetzt alles eingeführt haben für größere Infrastrukturen, können die auch Pull inzwischen. Prinzipiell kannst du mit fast allen Configuration Management Tools beide Varianten machen. Doch der Kern, wie sie ursprünglich implementiert wurden, ist entweder Pull oder Push. Ich, in größeren Infrastrukturen, habe ich Erfahrungen bezahlt. Finde ich ein ganz geiles Tool, muss ich zugeben. Sehr, sehr, sehr schön zu schreiben. Sehr schön zu maintain. Unglaublich schöne Features. Webhooks und allem drum und dran. Eine gute Nummer. Für meine Sideprojekte nutze ich jetzt Ansible. Auch sehr einfach zu starten und für besonders kleine Infrastrukturen. Für mich reicht in meinem Sideprojekt das Push-Verfahren, weil ich halt eine kleine Anzahl an Server habe. Da würde ich Ansible empfehlen.",
-            "start": 2511147,
-            "end": 2567258,
-            "confidence": 0.8238561643835616,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Der große Vorteil von Ansible meiner Meinung nach ist, oder allgemein vom Bush-Verfahren ist auch, dass du keine Server oder sowas benötigst. Bei Salt brauchst du normal irgendwie einen Server, damit die Server dann das pullen können eben von dieser zentralen Einheit. Das heißt, es macht es schon etwas komplexer wieder am Anfang und du brauchst Agents auf den Server, an die die laufen und sich das pullen. Mit Ansible ist es halt so ähnlich wie einfach SSH-Connections. Du baust da im Prinzip zu jedem Server eine SSH-Connection auf und führst dann diese Kommandos aus. Also zum Einsteigen ist es viel näher an dem klassischen SSH-Login und ich führe ein paar Kommandos aus. Hingegen Sort- oder Pull-Verfahren sind halt meistens, eben wie du richtig sagst, für größere Setups ausgelegt. daher meiner Meinung nach zumindestens auch ein bisschen komplizierter, um das zu verstehen und zu installieren dann am Ende, dass es auch läuft.",
-            "start": 2567506,
-            "end": 2618347,
-            "confidence": 0.7952302631578947,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Kommen natürlich dann auch mit einem ganz anderen Feature-Set für größere Organisationen, Audits, Verschlüsselungen und so weiter von Secrets, bla bla bla. Ich glaube Ansible geht auch in die Richtung oder ist da schon sogar, da muss ich zugeben, Ansible habe ich noch nicht für größere Infrastrukturen eingesetzt, aber es gibt da nicht das eine. Meines Erachtens nach ist es wichtig, dass ihr mit Infrastructure as Code arbeitet, genauso wie mit Configuration Management. Ich würde jetzt nicht auf Bash-Skripte gehen, weil du schraubst die ganze Sache halt einfach neu und größere Bash-Skripte sind halt echt schwierig zu lesen. Beziehungsweise es ist eine sehr große Herausforderung, Bash-Skripte richtig zu machen, Failure-Safe, mit allem drum und dran. Und spezialisierte Tools wie Terraform, Pulumi, Ansible, Soul Chef, Puppet, CF Engine sind Industriestandards. Okay, Bash ist auch ein Industriestandard im Serverumfeld, aber nimmt dir halt sehr, sehr viele Schmerzen auch schon ab.",
-            "start": 2618367,
-            "end": 2679445,
-            "confidence": 0.8187364864864866,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Das kann ich nur bestätigen. Also da gibt es schon einige Dinge, die das Leben einfacher machen. Vor allem bei Bash-Skripte hast du so schlechtes Feedback. Da musst du selber irgendwie loggen und dir die Logs dann anschauen und bei Uncible hast du halt sofort immer eine Rückmeldung. war irgendwas erfolgreich und, wie du richtig gesagt hast, Ansible überprüft ja dann auch wirklich, ist dieses File angelegt worden und da hast du einfach viel besseren Blick drauf, ob alles wirklich sauber durchgelaufen ist und wenn alles grün ist, dann kannst du dir sicher sein, dass da alles in Ordnung war und durchgelaufen ist und bei einem langen Bash Script musst du halt wirklich irgendwelche Logs durchparsen, damit du weißt, hat's da jetzt irgendwo Probleme gegeben, hunderttausende Ifs dazwischen, wenn irgendwas passiert, dann mach ich nicht den nächsten Schritt und Solche Sachen sind natürlich extrem komplex und die nehmt ihr dann einfach an Config Management Tool komplett ab. Jetzt haben wir über sehr viel Positives gesprochen oder die ideale Welt. Natürlich immer die wichtige Frage, gibt es auch negative Punkte oder sagst du, okay, da fehlt kein Weg herum, das muss man heutzutage sowieso verwenden, das ist die einzige Möglichkeit. Aber trotzdem, vielleicht gibt es dann irgendwo Stolpersteine oder ähnliches. Also gibt es irgendwo die negativen Punkte zu der ganzen Welt? Siehst du da irgendwo größere Probleme?",
-            "start": 2679725,
-            "end": 2755759,
-            "confidence": 0.7715796460176987,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Also wenn man im schnell lebenden Business überleben möchte, und einen Großteil seines Revenues durch digitale Services irgendwie kriegt, dann ist das der Weg zu gehen. Da kommt man nicht drumherum. Muss nicht Terraform, muss nicht Pulumi sein oder muss nicht Salt, Ansible und so weiter sein, sondern managt das irgendwie in einer wiederverwendbaren und automatisierten Form. Wie ihr das macht mit Brieftaub ist mir relativ egal. Macht's aber einfach. Gibt's negative Punkte? Ja, hundertprozentig. Software hat auch Bugs und man rennt natürlich auch rein. Davon kann sich keine Software freisprechen. Ich bin mir nicht sicher, ob ich so viele negative Punkte hab. Ich hab zwei Storys aus der realen Welt, die starke Herausforderungen sind. Bei speziell Infrastructure Orchestration und nicht bei Configuration Management. Bei Configuration Management haben wir andere Herausforderungen. Geben wir mal eine Story aus der realen Welt. Und zwar hatte ich gerade gesagt, dass man bei Terraform eigentlich eine deklarative Definition anlegt. Das bedeutet, was ist mein Endstate? Wie soll das sein? Und dann Terraform kümmert sich darum, um das zu machen. Das bedeutet dann natürlich auch, wenn ich jetzt zum Beispiel mein Base-Image von meiner virtuellen Maschine, Amazon EC2, ändere, dann ist das kein In-Place-Upgrade. Das bedeutet, Terraform geht hin, tötet deine VM und bootstrappt die neu. Mit töten meine ich delete, destroy. Und das muss man wissen. Jede Änderung an Terraform kann in der Theorie zu einem Neuanliegen der Ressource führen. Das bedeutet, das muss man im Hinterkopf haben, damit man seine Services nicht abschießt. Es gibt spezielle Ressourcen, die in-Place-Upgrades können.",
-            "start": 2755799,
-            "end": 2864181,
-            "confidence": 0.8197042801556419,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Das heißt, es ist wirklich nur dafür geeignet für Setups, wo man wirklich diesen Cloud-Gedanken komplett lebt. wo alles jederzeit sterben kann jede vm jedes service weil ich automatisch immer ein backup hab oder zumindest mehrere instanzen und die kann jederzeit irgendwas wegschießen und es lebt trotzdem alles sauber weiter also das muss gegeben sein damit die auch dementsprechend sinnvoll einsetzen kann sie das richtig muss.",
-            "start": 2864221,
-            "end": 2889499,
-            "confidence": 0.8356515151515153,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Gegebenenfalls nicht gegeben sein ihr müsst auf jeden fall daran denken und euren kopf darum rappen um das im hinterkopf zu haben und nicht ein problem oder nicht in Erklärungsnot zu kommen, warum auf einmal die Infrastruktur down ist. Also das müsst ihr schon ein bisschen beachten, aber du sagtest ja schon richtig, Cloud heißt ja nicht, dass mein Server immer da ist, weil der Hypervisor unten drunter kann ja einen Netzteilfehler haben oder ähnliches und dann ist die Cloud auch weg. Cloud kann bedeuten, dass jede Maschine, die ihr da habt, binnen Sekunden einfach tot ist. Und dann gibt es natürlich sowas wie Autoscaling oder Automatisierung, die natürlich dann die Maschine wieder ersetzt, auf eine andere Hypervisor, blablabla. Nur viele Leute vergessen das. Aber das ist jetzt nichts Spezifisches für die Cloud. Das ist auch spezifisch in einem Datacenter. Wenn die Datenbanken hopscannen oder der RAID Controller oder die CPU einfach rüber brennt, ist der Server halt down.",
-            "start": 2889539,
-            "end": 2942023,
-            "confidence": 0.7601069182389939,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Der Unterschied ist, dass man halt in der Cloud jederzeit einen neuen Server hochfahren kann. Und in deinem eigenen Datacenter, wenn der RAID Controller flöten geht, dann ist es halt schwierig, irgendwas wieder hochzufahren. Zumindest nicht in der gleichen Schnelligkeit wie in der Cloud.",
-            "start": 2942203,
-            "end": 2955646,
-            "confidence": 0.7484318181818183,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Würde ich so nicht unterschreiben. Würde ich erst mal sagen, kommt auf das Department an und was du für eine Infrastruktur hast und Automation drumherum. Also ich kenne auch Firmen, die alles auf Bare Metal betreiben und einfach unglaublich gut sind in der Hinsicht und ähnliche Also die bauen sich dann, du bist dann sehr nah, was man heutzutage Inhouse-Cloud nennt, ja?",
-            "start": 2955666,
-            "end": 2976593,
-            "confidence": 0.808790322580645,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Eben, du baust dir dann deine eigene Cloud, dann hast du natürlich wieder die gleichen Garantien sozusagen.",
-            "start": 2976634,
-            "end": 2980857,
-            "confidence": 0.6903529411764705,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Genau, nur um mal die Begrifflichkeiten halt zu trennen, Inhouse-Cloud versus Cloud.",
-            "start": 2980877,
-            "end": 2984720,
-            "confidence": 0.7420833333333334,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Wobei eine Datenbank mal schnell wieder hochzuziehen, das ist sowieso noch mal eine andere Geschichte, wenn es um assistente Daten geht. Das ist sowieso immer schwierig, weil wenn dir da der RAID-Controller wegbricht, dann sind deine Daten weg. Dann hilft dir halt auch nichts, eine EC2-Instanz wieder hochzufahren, wenn deine Daten weg sind.",
-            "start": 2984760,
-            "end": 3000172,
-            "confidence": 0.7395471698113207,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Was soll ich sagen? Ich arbeite bei einem Database-as-a-Service-Firma, die genau das macht, was du als schwierig beschreibst.",
-            "start": 3000832,
-            "end": 3006475,
-            "confidence": 0.8013888888888888,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Darum gibt's eure Firma.",
-            "start": 3006495,
-            "end": 3007555,
-            "confidence": 0.6767500000000001,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Ich will nur sagen, das geht. Ich will aber auch sagen, es ist schwierig. Immer wenn Leute mich fragen, warum ich da arbeite, sage ich, weil das technische Problem sehr spannend ist. Viele Firmen haben ein Problem mit der Skalierung von stateless Microservices. Wir machen das alles mit stateful Services, nämlich Datenbanken. Deswegen ist die technische Herausforderung sehr spannend. Aber zurück zu den Storys aus der realen Welt.",
-            "start": 3007615,
-            "end": 3030265,
-            "confidence": 0.8096323529411766,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Deine zweite Geschichte, genau.",
-            "start": 3030305,
-            "end": 3031926,
-            "confidence": 0.776,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Meine zweite Geschichte. Und da möchte ich nur noch mal ganz doll den Dominik grüßen, weil die Story kommt nämlich primär von ihm, beziehungsweise die er versucht zu lösen. Und zwar hatten wir bei Trivago ein größeres Repository mit Terraform-Modulen, wo wir die komplette Google-Cloud-Infrastruktur gemanagt haben. Und mit komplett meine ich leider nicht ganz komplett. Mit komplett meine ich die Anlage von Projekten, die Anlage von Usern, die Anlage von Gruppen und so weiter. Und zwar haben wir für jedes Google Cloud Projekt so eine Art Standard entwickelt, dass spezifische Service User angelegt werden, dass die Superadministratoren überall Rechte haben, dass die Logs, die Audit-Logs dann entsprechend in Object Storage gepackt werden und so weiter und so fort. Also wir hatten so ein Template-pro-Google-Projekt. Und dafür haben wir, oder primär Dominik hat dafür eigene Module entwickelt und hat das sehr einfach gemacht für andere Produkt-Engineering-Teams, sich ein neues Projekt zu erstellen und ihn rechts zu machen. Das waren ein paar Zeilen. Und unten drunter hat natürlich eine ganze Magie stattgefunden. Das hat aber über Zeit dazu geführt, dass wir so 30, 40, 50, 60 Google-Projekte haben, was jetzt nicht das Problem ist, sondern das Problem ist jetzt, dass ein Terraform-Run von diesem Repository so ungefähr 20, 30, 40 Minuten gedauert hat, Weil unten drunter die Provider natürlich gegen die Google-API gegangen sind und immer gefragt haben, gibt's diesen User schon, ah, muss ich den anlegen und so weiter und so fort. Ja, also du hast da konstant wegen, weiß ich nicht, tausenden von Ressourcen, weil ein Google-User ist ja nicht nur ein Google-User, da hängen ja auch Rechte dran und da muss man ja auch checken, gibt's denn diese Object Storages eigentlich und so weiter und so fort. Das hat zu verschiedenen Dingen geführt. Auf der einen Seite war der Feedback-Loop enorm langsam, weil Terraform durch alle Ressourcen gehen musste, gegen die API checken musste und dann ein Run 20, 30 Minuten gebraucht hat. Warum hat dieser Run 20 bis 30 Minuten gebraucht? Nicht, weil das Prozedural ausgeführt wird, sondern das wird schon parallelisiert. sondern weil du irgendwann in die Google API Rate Limits gerannt bist, weil du so oft diese User API hämmerst, da sagt ja mal Google, hör mal Kollege, ich stoppe dich jetzt mal hier und du machst jetzt erstmal ein bisschen langsamer. Das bedeutet, die Herausforderung, was beziehungsweise wie du es in einer größeren Organisation mit mehr Teams und so weiter managt, ist nicht klein und dass ihr dann nicht in dieselben Problematiken rennt, langsamer Feedback-Loop, da müsst ihr schon sehr, sehr viel Hirnschmalz reinstecken, weil auf der einen Seite wollt ihr natürlich, dass alle Google-Projekte in eurer Organisation zum Beispiel gleich aussehen, Compliance-mäßig oder ähnliches und nicht jeder sein eigenes Ding macht. Auf der anderen Seite wollt ihr natürlich auch keine Teams blocken oder ähnliches.",
-            "start": 3031966,
-            "end": 3193619,
-            "confidence": 0.8021125265392776,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Kann ich dann nicht einfach bei Google anrufen und sagen, hey, schreib mal das Rate Limit hoch?",
-            "start": 3194330,
-            "end": 3197832,
-            "confidence": 0.5882941176470589,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Ja, kannst du machen und wurde auch gemacht. Aber irgendwann sagen die auch, hör mal, hast du denn nicht mehr alle? Besonders, du kannst ja nicht zu europäischen Arbeitszeiten von 8 bis 17 Uhr ... Und wenn du 200 Engineers hast, die da konstant irgendwie Pulvercrest machen und dann On- und Offboarding, und du nimmst da User raus, packst da User rein, und da läuft ja von 8 bis 17 Uhr konstant irgendein Terraform-Run, du hämmerst ja dann eigentlich neun Stunden auf der Google-API rum. Das sagt Google auch. Wie viel möchtest du mir eigentlich bezahlen, damit ich dir das Rate Limiting wegschalte?",
-            "start": 3197932,
-            "end": 3225429,
-            "confidence": 0.6503300970873784,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Was mich da eigentlich immer wundert ist, dass sogar mit Google zum Beispiel, die ja wirklich mit der Google Cloud darauf spezialisiert sind, Terraform offiziell unterstützen, dir das empfehlen und dann machst du das so und dann läufst du in solche Probleme rein. Also das wundert mich immer. Die werden ja mehrere große Kunden haben und sollten dafür ja eigentlich eine gute Lösung haben. Also das fasziniert mich immer, wie gleich, würde ich mal sagen, diese Probleme auch mit großen Providern sind und man hat doch immer irgendwo dieselben Probleme wieder. Sogar wenn man glaubt, okay, wenn es um Skalierung geht und um Rate Limits auf APIs kann nicht so schwierig sein, wenn ich mit Google zusammenarbeite.",
-            "start": 3225469,
-            "end": 3264190,
-            "confidence": 0.7689914529914533,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Wundert mich eigentlich gar nicht, weil das ist alles eigentlich, Google kann da eigentlich nichts für, sondern das ist Organisationsstruktur und wie du deinen Terraform-Module und State aufbaust und was du da für Prozesse drum setzt. Deswegen ist es wie klassische Softwareprogrammierung. Es gibt gute Lösungen, es gibt schlechte Lösungen, es gibt Lösungen, die passen auf deinen Anwendungsfall und es gibt Lösungen, die werden implementiert, die funktionieren zwar, aber passen nicht auf deinen Anwendungsfall. Du kannst ja auch alles mit Perl schreiben, geht ja auch. Willst du es? Also ich will es zum Beispiel nicht. Es gibt Leute, die sagen, hey Andi, was redest du da? Natürlich kann ich alles mit Perl machen. Und natürlich mache ich auch alles mit Perl. Ja, ist richtig, mach mal.",
-            "start": 3264370,
-            "end": 3302949,
-            "confidence": 0.7458412698412695,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Aber war das jetzt eine schlechte Herangehensweise, das so aufzusetzen? Würdest du es jetzt im Nachhinein anders machen?",
-            "start": 3303029,
-            "end": 3308491,
-            "confidence": 0.7413333333333334,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Also erstens hat das Trivago sehr, sehr lange getragen. Also die Lösung ist auf jeden Fall schon länger in Produktion und funktioniert.",
-            "start": 3308651,
-            "end": 3317374,
-            "confidence": 0.8359545454545455,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Ja, ja, aber du hast ja im Idealfall davon was gelernt. Also würdest du es jetzt wieder gleich aufziehen oder würdest du es anders machen? Also würdest du lieber das Rate Limit in Kauf nehmen oder würdest du deine Prozesse vielleicht anders gestalten?",
-            "start": 3317414,
-            "end": 3329780,
-            "confidence": 0.7094883720930233,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Ich würde zusehen, dass das Template, wie ein Google-Projekt auszusehen hat, so klein wie möglich halte. Und dass man dann mehr und mehr Verantwortlichkeiten und Terraform-Ressourcen in die Entwicklerteams selbst gibt. Und soviel ich weiß, Also das grundlegende Konzept ist nicht falsch, finde ich. Und ich glaube auch, das, was ich jetzt gerade spreche, ich glaube, das befindet sich gerade auch in Entwicklung, muss ich zugeben, weiß ich nicht. Aber dass du dann wirklich mehr in die Richtung gehst, das zentrale Management so slim wie möglich zu halten und dann mehr und mehr in die Verantwortung der einzelnen Teams zu geben, weil dann umgehst du halt die große Anzahl von Ressourcen. Also ich meine, dieses große Repository hatte jetzt nicht, zum Beispiel, wenn ein Team irgendwas mit Google Dataflow gemacht hat, dann hat das große Repository nicht die Anlage des Dataflow-Clusters gemanagt, sondern das war schon immer innerhalb der jeweiligen Produktteams, sondern wirklich nur User anlegen, Rechte anlegen und so weiter und so fort. Aber auch das hat dann in der großen Multiplikation dazu geführt, dass du eine hohe Anzahl an Ressourcen und API-Calls hast.",
-            "start": 3329840,
-            "end": 3392097,
-            "confidence": 0.8283675675675675,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Das heißt, wenn jetzt ein Team zum Beispiel neun User gebraucht hat, dann haben sie das in dieses GitHub-Repository gepusht und haben dann 40 Minuten warten müssen, bis der User angelegt gewesen ist.",
-            "start": 3392657,
-            "end": 3406002,
-            "confidence": 0.8164848484848486,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Das ist korrekt. Okay.",
-            "start": 3406142,
-            "end": 3407623,
-            "confidence": 0.2265,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Naja gut, das trifft sich ja gut. Kann man in die Küche gehen, Kaffee trinken, gemütlich mit ein paar Leuten socializieren. Die Geschichten austauschen ist ja auch immer sehr hilfreich.",
-            "start": 3408263,
-            "end": 3417665,
-            "confidence": 0.6989000000000001,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Aber wenn man Open Source, also Inner Source, innerhalb der Firma macht, dann ist es ja sowieso, du machst einen Pull-Request und du erwartest ja nicht, dass dein Team alles stehen und liegen lässt und deinen Code reviewt, oder? Also ich meine, da ist ja eh immer ein Delay dazwischen. Somit finde ich, die 40 Minuten ist jetzt so an sich gar nicht schlimm, weil du sagst ja nicht Pull-Request. Und schreist dann, gehst dann in eine Slack-Ad hier, Ad-Channel, bitte, bitte, bitte, lasst alles stehen und liegen und reviewt mein Pull-Request. Ist ja auch falsch. Deswegen ist das schon noch okay, denke ich. Also, nur das Problem war, das Problem kommt eigentlich, wenn du einen sehr, sehr wichtigen Fix für einen Incident ausrollen möchtest. Ja? Also, wenn's kritisch ist, wenn du einfach mal die Prozesse über Bord wirfst und einfach mal die Produktionsinfrastruktur wieder fixen musst, dann musst du ja leider auch irgendwie 40 Minuten warten. Und das ist natürlich dann ein schlechtes Zeichen.",
-            "start": 3417685,
-            "end": 3467332,
-            "confidence": 0.7161393939393942,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Okay, also man sieht schon, viele Probleme liegen eher wieder bei dem ganzen Prozedere rundherum und bei der Kommunikation und bei der Erstellung der Prozesse und weniger an der Technik. Okay, gut, dann haben wir, glaube ich, das Thema ganz gut abgehandelt oder ich verstehe es zumindest jetzt wesentlich besser. Also wenn ich das zusammenfassen kann, es ist der Weg, wie man das heutzutage macht, der einzig richtige Weg, sagt unser Guru. Hilft mir viel, wenn es um Security geht, auch wenn ich Hackerangriffe habe, um irgendwas neu hochzufahren. Meine Dev Experience ist viel besser, weil ich das einfach schön verwaltet habe, in Code, in dem Repository gut dokumentiert habe, nachvollziehbar habe, wer was wann wie geändert hat. habe meine Commit-Messages, welches Team oder welcher User hat wann, welche Änderungen beantragt, wann wurde was ausgeführt, habe da also eine gute Nachvollziehbarkeit. Was ich für mich auch noch mitgenommen habe, ist der Unterschied zwischen Configuration Management und Infrastructure Orchestration. Also Configuration Management ist das Setup der Server an sich, also der virtuellen Server, die dann erstellt werden durch Infrastructure Orchestration. Also Infrastructure Orchestration macht mir das ganze Netzwerk, setzt mir die VMs auf und wenn es dann darum geht, der Package zu installieren in dieser VM oder die richtige Docker-Version, dann macht es mein Configuration Management. Und was ich auch noch Wichtiges gelernt habe, den Mythos, dass ich einfach mit Terraform zwischen den Clouds hin und her wechseln kann, dass das eigentlich nicht existiert. Habe ich das alles richtig zusammengefasst?",
-            "start": 3467697,
-            "end": 3562988,
-            "confidence": 0.8069718875502004,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Ja, ich denke schon. Wir haben natürlich jetzt Terraform nur auf einem recht oberflächlichen Level irgendwie besprochen. Viele Detailsachen, wie zum Beispiel, wie das Datefile eigentlich gemanagt wird, ob man das lokal auf dem Festplatte haben sollte oder zentral irgendwie in einem Object Storage für die Execution im Team. Was eigentlich ein Execution Plan ist, der Resource Graph, also das bedeutet, wie Terraform unten drunter funktioniert. Das haben wir alles mal weggelassen oder auch Provider, wie du zum Beispiel, wenn du deine eigene REST-API hast oder GraphQL-API oder was auch immer, wenn du eine eigene API hast, wie du dann einen eigenen Terraform-Provider schreibst. Können wir irgendwann mal machen. Oder auch, was für Möglichkeiten es gibt. Es gibt eigentlich Continuous Integration, Continuous Delivery und Continuous Deployment für Infrastruktur und Configuration Management zu implementieren. Weil das, was du mit Software machen kannst, das bedeutet Unit Tests, Integration Tests, Baudi Software und Chipsy of Production, all das kannst du natürlich jetzt auch, da du deine Infrastruktur und dein Configuration Management im Code hast, natürlich auch damit machen. Hat ein bisschen andere Herausforderungen. Und ja, es geht auch alles mit dem Jenkins. Gibt natürlich dann hier und da ein paar spezialisierte Tools dafür. Die gehen dann nochmal zwei, drei Schritte weiter. Unter anderem Stichwörter fallen da wie GitOps und so weiter. Ist jetzt nicht genau das gleiche, aber spielen da mit einer Rolle. All sowas haben wir natürlich jetzt nicht besprochen. Deswegen hoffe ich trotzdem, dass du dich jetzt in dem ganzen Thema ein bisschen sicherer fühlst. Bist du motiviert, das mal auszuprobieren?",
-            "start": 3563228,
-            "end": 3648874,
-            "confidence": 0.7649884615384609,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Ja, auf jeden Fall. Es gibt ja meines Wissens auch einen Hetzner Provider, obwohl die ziemlich am Anfang sind und meine Hauptinfrastruktur von meinen Side-Projects liegt ja bei Hetzner. Aber ich würde mich auf jeden Fall mal im Detail anschauen, ob ich da nicht vielleicht auch was schön dokumentieren kann, weil derzeit klicke ich alles über die Web-UI zusammen und ist mir auch klar, dass das nicht der perfekte Weg ist. Auf jeden Fall vielen Dank an unseren DevOps-Guru. Wenn ihr der Meinung seid, irgendwas war falsch und wenn ihr unseren Guru challengen wollt, gibt es ein deutsches Wort für Challengen eigentlich? Herausfordern. Wenn ihr unseren Guru herausfordern wollt, dann schreibt uns doch eine E-Mail an stetig at engineeringkiosk.dev oder direkt auf Twitter unter engkiosk. Und wir würden uns natürlich auch freuen über eure Erfahrungen in dem ganzen Bereich von Configuration Management und Infrastructure Orchestration und ob ihr das auch alle gleich seht wie unser Guru. Damit bis nächste Woche.",
-            "start": 3649174,
-            "end": 3707001,
-            "confidence": 0.7960062500000002,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Einen schönen Tag. Ciao.",
-            "start": 3707041,
-            "end": 3707682,
-            "confidence": 0.48650000000000004,
-            "channel": null,
-            "speaker": "B"
-        }
-    ],
-    "confidence": 0.7833152869282923,
-    "audio_duration": 3713.0,
-    "webhook_status_code": null,
-    "webhook_auth": false,
-    "summary": null,
-    "auto_highlights_result": null,
-    "content_safety_labels": null,
-    "chapters": null,
-    "sentiment_analysis_results": null,
-    "entities": null
+  "language_code": "de",
+  "audio_url": "https://audio1.redcircle.com/episodes/89075a99-0042-4bf7-b8a3-591f701d02da/stream.mp3",
+  "punctuate": true,
+  "format_text": true,
+  "dual_channel": false,
+  "webhook_url": null,
+  "webhook_auth_header_name": null,
+  "webhook_auth_header_value": null,
+  "audio_start_from": null,
+  "audio_end_at": null,
+  "word_boost": [],
+  "boost_param": null,
+  "filter_profanity": false,
+  "redact_pii": false,
+  "redact_pii_audio": false,
+  "redact_pii_policies": null,
+  "redact_pii_sub": null,
+  "speaker_labels": true,
+  "speakers_expected": 2,
+  "content_safety": false,
+  "content_safety_confidence": null,
+  "iab_categories": false,
+  "custom_spelling": null,
+  "disfluencies": false,
+  "sentiment_analysis": false,
+  "auto_chapters": false,
+  "entity_detection": false,
+  "summarization": false,
+  "summary_model": null,
+  "summary_type": null,
+  "auto_highlights": false,
+  "language_detection": false,
+  "speech_threshold": null,
+  "id": "62xwo40oqp-4aa7-4fe5-ab78-f24d5adada4e",
+  "status": "completed",
+  "error": null,
+  "utterances": [
+    {
+      "text": "Hand aufs Herz. Wer hat sauber und up-to-date dokumentiert, wie alle Infrastrukturkomponenten von Router bis zur virtuellen Maschine zusammenspielen? Wer kann nach einem Hackerangriff bei Knopfdruck magisch die gesamte Infrastruktur in einem anderen Land in der Cloud wieder hochfahren? Das Zauberwort dafür heißt Infrastructure as Code. Willkommen zu einer neuen Episode im Engineering Kiosk, in der ich genau darüber mit unserem DevOps-Spezialisten Andy sprechen werde. Wir klären, warum Andy gar nicht Spezialist genannt werden will, was der Unterschied zwischen Configuration Management und Infrastructure Orchestration ist und welche großen Vorteile es mitbringt, sowohl für kleine Side-Projects als auch für große Unternehmensinfrastrukturen.",
+      "start": 8,
+      "end": 42219,
+      "confidence": 0.8257200000000001,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Also hinein in die Magie.",
+      "start": 42259,
+      "end": 43540,
+      "confidence": 0.5386,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Du bringst immer so eine schöne Einleitung aus dem Alltag mit. Und jetzt habe ich mir gedacht, jetzt mache ich das auch einmal und habe so nach etwas Allgemeingültigem gesucht in meinem Alltag, der mir so gestern oder vorgestern passiert ist. Und da war einfach nichts, da waren nur technische Dinge. Also muss ich jetzt einfach mit einem technischen Gehen wir einsteigen. Andi, ich habe eine Frage an dich. Wir haben von einem Hörer in der Diskussion die Frage bekommen, was ist denn so ein Data Engineer? Weil ihr ihm vorgeschlagen habt, Job, Position, Data Engineer. Und er hat gemeint, er hat keine Ahnung, ist ein Informatiker, hat Informatik studiert, kann mit dem Begriff nichts anfangen. Jetzt haben wir gedacht, jetzt frage ich mal die, was ist ein Data Engineer? Kannst du damit was anfangen?",
+      "start": 47857,
+      "end": 84512,
+      "confidence": 0.6467555555555555,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Data Engineer, Data Analyst, Data Scientist ist für mich genauso wie DevOps und Site Reliability Engineer buzzword bingo und wird von jeder Firma anders definiert und meines Erachtens nach gibt es da auch keine industrieweite Definition. So wie ich das alles verstehe sind Data Engineer Leute, die sich speziell mit der Datenaufbereitung, Data Storage und der Data Platform beschäftigen, damit zum Beispiel Data Analysten und Data Scientists effizient, schnell und gut auf das Data-Warehouse zugreifen können. Also eigentlich Leute, die dafür zusehen, dass alle Daten im Data-Warehouse landen, in den richtigen Formaten, vielleicht aus unstrukturierten Daten strukturierte Daten machen, dass zum Beispiel, wenn man jetzt große SQL-Queries hat oder große SUL-Prozeduren, dass die kontinuierlich laufen für irgendwelche Reports und so weiter und so fort. Also all so was. Weil ich meine, wenn wir jetzt an ein Data-Warehouse denken mit Hadoop Apache Flink und Kafka und was da nicht alles zugehört und BigQuery und, und, und. Da zählt ja schon eine ganze Menge Know-how zu, um das wirklich lauffähig zu machen.",
+      "start": 84800,
+      "end": 150532,
+      "confidence": 0.8252647058823527,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Ich glaube, es ist auch aktuell einer der meistgesuchten Jobs, weil die ganzen Firmen diese Pipelines und Plattformen brauchen jetzt genau für ihre Data Scientists und Data Analysts und darum suchen sie eben händeringend genau diese Leute, die mit Daten umgehen können. Ich habe mich erinnert, ich habe mal vor wirklich vielen, vielen Jahren eine Jobausschreibung gemacht und habe diesen Jobtitel genannt, Datenklempner, wenn ich es ins Deutsche übersetzen würde, Data Plumber. Und das ist eigentlich recht gut angekommen, weil am Ende bist du so ein Installateur, der irgendwie so Pipelines zusammenstöpselt und dafür sorgst, dass die Daten von links nach rechts fließen.",
+      "start": 150772,
+      "end": 188813,
+      "confidence": 0.7637475728155335,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Ja, ich würde jetzt sagen, ein Data Engineer ist jetzt keine Person, die wirklich die Analysen selbst macht, sondern dafür sorgt, dass Analysen gemacht werden können. Das ist so mein Verständnis davon.",
+      "start": 189293,
+      "end": 199302,
+      "confidence": 0.7833125,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Okay, dann haben wir das gleiche Verständnis. Ist schon mal gut.",
+      "start": 199823,
+      "end": 202405,
+      "confidence": 0.5800909090909092,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Ich glaube aber auch, dass in kleineren Firmen die Differenzierung zwischen Data Analyst, Data Engineer und Data Scientist gar nicht so notwendig ist, weil natürlich sagt die Firmengröße nichts aus über die Datengröße oder über die Größe des Data Warehouses. Auch eine Zwei-Mann-Firma kann enorm viele Daten haben, aber ich glaube, das wird erst relevant, wenn man halt größere Teams hat, die dann wirklich aus dem Data Warehouse rumtouren.",
+      "start": 202425,
+      "end": 225504,
+      "confidence": 0.8100000000000002,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Ich glaube, das ist ja so eine klassische Frage, die Data Scientists stellen, wenn sie irgendwo eine Bewerbung machen. Habt ihr denn Data Engineers? Weil diese Antwort sagt dir dann automatisch, ob du wirklich Data Science machst oder ob du 90 Prozent deiner Zeit irgendwie Data Plumbing machst und probierst, die Daten irgendwie zu organisieren, die du dann eigentlich als Data Scientist brauchst.",
+      "start": 225865,
+      "end": 245440,
+      "confidence": 0.768253968253968,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Meines Erachtens nach ist halt ein Data Scientist sehr fokussiert auf Modelle, Algorithmen, effiziente Datenverarbeitung und wirklich sich durch den Datenwust zu wühlen und aus einer Menge von Daten neue Erkenntnisse zu ziehen, um dann gegebenenfalls die richtigen Fragen zu entwickeln. Und nicht das, was zum Beispiel ein Data Analyst macht. Man hat eine Frage und der Data Analyst versucht, diese Frage anhand den Daten zu beantworten. Dahingegen geht der Data Scientist ein Stück weiter und versucht die richtigen Fragen aus dem Wust der Daten herauszufiltern und fragt sich natürlich, ist das eine neue Erkenntnis, die uns und für das Business weiterbringt.",
+      "start": 246060,
+      "end": 293465,
+      "confidence": 0.8775980392156857,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Und siehst du, jetzt haben wir in dieser Einleitung schon so viel Informationen besprochen und nicht nur irgendwas über ein 9-Euro-Ticket oder so, wo ich nicht mal das letzte Mal verstanden habe, was das 9-Euro-Ticket eigentlich ist, bis ich einen anderen Podcast gehört habe, um zu verstehen, was eigentlich das 9-Euro-Ticket ist. Kann übrigens schwer empfehlen, der Zeitalpen-Podcast, ein Österreicher, ein Deutscher und ein Schweizer diskutieren über ihre Länder und die Entwicklungen in diesen Ländern. Hast du jetzt dein 9-Euro-Ticket für Sylt schon?",
+      "start": 293760,
+      "end": 321382,
+      "confidence": 0.7177349397590361,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Nein, ich habe mein 9-Euro-Ticket noch nicht, aber es gilt ja drei Monate. Das bedeutet, ich habe ja noch ein bisschen Zeit und es ist ja erst seit drei Tagen drin und natürlich bei solchen Aktionen gibt es natürlich am Anfang immer so einen Run auf die ganze Geschichte und natürlich hat sich Deutschland mal wieder großartig dabei angestellt. Du hast schon wieder irgendwie gelesen, 9-Euro-Tickets haben hier und da nicht funktioniert und so weiter und so fort und du konntest das nicht kaufen, weil entweder die.",
+      "start": 321442,
+      "end": 341721,
+      "confidence": 0.7665402298850574,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Tickets nicht da waren Moment, ist das ein physikalisches Ticket? Da musst du noch wo hingehen und so ein Papierzeug holen, oder was?",
+      "start": 341741,
+      "end": 348745,
+      "confidence": 0.7576086956521738,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Ich glaube, also so ganz genau weiß ich das nicht.",
+      "start": 348785,
+      "end": 351266,
+      "confidence": 0.7278,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Er sagt bloß, ihr in Deutschland habt auch noch Bargeld.",
+      "start": 351326,
+      "end": 353367,
+      "confidence": 0.735,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Also ich bin mir gar nicht sicher, ob es jetzt wirklich immer nur an der Bahn oder an der IT und am 9-Euro-Ticket lag oder ob es nicht auch an diesen Bezahl-Terminals liegt, die jetzt nicht mehr funktionieren, weil die seit 2018 eigentlich keine Lizenz mehr haben und immer noch überall eingesetzt werden und wir deswegen, wir guten Deutschen, endlich beim Edeka noch bezahlen können. Achtung, weil wir noch Bargeld haben.",
+      "start": 355218,
+      "end": 374469,
+      "confidence": 0.7999436619718311,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Das stimmt, man muss sagen, als Beispiel zur holländischen Bahn, da könnt ihr mit der deutschen Bahn eigentlich recht froh sein, recht oft. Die hatten gerade kurz, ich glaube vor einem Monat oder so, die hatten ein IT-Systemproblem und irgendeinen Ausfall und die haben einfach gesagt, okay, heute fährt die Bahn nicht mehr. Es war irgendwann Vormittag, bis 24 Uhr in ganz Holland, es fährt einfach nichts mehr. Wir probieren das Problem mal zu lösen, aber wir machen jetzt einfach Schluss.",
+      "start": 374689,
+      "end": 402372,
+      "confidence": 0.797888888888889,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Hätten die nicht eher sagen können okay, dann machen wir den Tag jetzt mal den öffentlichen Nahverkehr für umsonst?",
+      "start": 402773,
+      "end": 407572,
+      "confidence": 0.7149473684210527,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Die haben einfach keine Züge mehr fahren lassen können aus technischen Gründen, weil das IT-System irgendein Problem hatte und dann hat man einfach gesagt, okay, wir probieren das nicht irgendwie möglichst schnell zu beheben oder aufrechtzuhalten, sondern Rest vom Tag bis 24 Uhr fährt einfach in gesamt Holland nichts mehr.",
+      "start": 408727,
+      "end": 423290,
+      "confidence": 0.7473600000000001,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Meines Erachtens nach ist der deutsche öffentliche Nahverkehr sowieso kaputt. Fahre ich nach Holland, fahre ich nach Hamburg zum Beispiel, dann muss ich mich erstmal 15 Minuten mit diesem Plan auseinandersetzen, mit diesen Hamburger Ringen und welches Ticket ich eigentlich brauche, komme ich nach Nordrhein-Westfalen oder nach nach düsseldorf dann habe ich auch mal preisstufe a preisstufe b in hamburg habe ich ja das hast du.",
+      "start": 423330,
+      "end": 442476,
+      "confidence": 0.7164999999999999,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Jetzt eben mit den neun euro tickets.",
+      "start": 442496,
+      "end": 444397,
+      "confidence": 0.5998571428571429,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Nicht mehr ja richtig aber das neun euro ticket ist ja nur drei monate gültig ja das ist ja wird ja.",
+      "start": 444417,
+      "end": 449421,
+      "confidence": 0.7910000000000001,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Verlängert wenn dann alle drauf kommen wie.",
+      "start": 449441,
+      "end": 451102,
+      "confidence": 0.8455714285714285,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Cool das ist das ist doch nur teil des entlastungspakets ja ich hätte lieber gern so ein system wie wie in england da gehe ich einfach zum zum bahnsteig hat meine kreditkarte dahin und wenn ich dann aussteige halte ich meine kreditkarte wieder dahin und dann rechnet mir dann automatisch ab sowas erwarte ich Wir haben.",
+      "start": 451142,
+      "end": 465732,
+      "confidence": 0.752392857142857,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Jetzt in Österreich ein Klima-Ticket. Das kostet glaube ich so 900 Euro oder so, knapp 1000 Euro. Und damit ist einfach der gesamte öffentliche Verkehr in ganz Österreich inkludiert. Jeder Bus, jede Straßenbahn, jeder Zug, einfach alles in Österreich.",
+      "start": 465752,
+      "end": 481207,
+      "confidence": 0.8163333333333332,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Bin ein bisschen neidisch. Auch die Schnellfahrzüge, ICEs?",
+      "start": 481455,
+      "end": 484659,
+      "confidence": 0.682375,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Ist alles inkludiert.",
+      "start": 484699,
+      "end": 486562,
+      "confidence": 0.8576666666666667,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Weil das 9 Euro Ticket gilt ja nur für Regionalzüge und da noch nichtmals für alle Regionalzüge.",
+      "start": 486582,
+      "end": 491348,
+      "confidence": 0.8641176470588235,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Ja, aber 9 Euro ist ja ein bisschen billiger als 900 Euro oder 1000 Euro.",
+      "start": 491368,
+      "end": 495133,
+      "confidence": 0.5946,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Ja, aber es gehört ja zum Entlastungspaket. Naja, lass uns mal weg von der Bahn, aber wir bleiben bei dem übergeordneten Thema. Und zwar geht es heute um Infrastruktur. Oh meine Güte, diese Einleitung. Wolfgang, ich bin ein bisschen stolz auf dich.",
+      "start": 495193,
+      "end": 509248,
+      "confidence": 0.764261904761905,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Ja, die war nicht geplant, aber wir kommen doch immer zu unserem Thema, das wir wollen. Und zwar habe ich mir mal überlegt, du bist ja so ein DevOps-Mensch und du machst extrem viel mit Infrastruktur. Und ich bin zwar auch sehr infrastruktur interessiert und die machbar dinge aber was für mich immer so bisschen schwarzes loch war bisher, wo ich mich noch nie so richtig drüber getraut habe ist infrastructure as code und, Heute hole ich mir dich mal als Spezialist und löcher dich, damit du mir erklärst, was denn dieses Infrastructure-as-Code ist. Vielleicht ein Beispiel an Terraform, weil das verwendet heutzutage irgendwie jeder und das scheint der hippe, coole Scheiß zu sein. Und du kannst mir jetzt mal erklären als 0815-Docker-User, was denn so cool an dem ganzen Ding ist, weil jetzt schiebe ich ja meine Dockerfiles auch irgendwo auf einen Server in die Cloud und es funktioniert auch. Also warum brauche ich dieses Infrastructure-as-Code? Was ist das überhaupt? Was hilft mir das? Aber start mal vielleicht mit, was das Ganze eigentlich so soll.",
+      "start": 509268,
+      "end": 570787,
+      "confidence": 0.7965227272727272,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Ich starte mal ganz, ganz vorne und würde ich gerne bei einem Satz korrigieren, und zwar DevOps-Person. Eigentlich, also wenn ich jetzt im beruflichen Kontext unterwegs bin, interessiert es mich eigentlich nicht mehr. Hier im Podcast habe ich aber dennoch das Gefühl, wir müssen das mal klarstellen. Ja, DevOps selbst ist keine Jobtitle, ist keine Person, sondern ist eine Kultur, ist eine Firmenkultur, wie Menschen miteinander arbeiten, sich gegeneinander respektieren, Prozesse anpassen und so weiter und so fort. Ja, also für alle Hörerinnen und Hörer, die draußen einen DevOps-Engineer als Job-Ad sehen, schluckt's einfach runter. So ist die Industrie.",
+      "start": 570807,
+      "end": 608038,
+      "confidence": 0.7989494949494951,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Was wäre denn die richtige Bezeichnung für DevOps-Person?",
+      "start": 608058,
+      "end": 611619,
+      "confidence": 0.652,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "SRE, Site Reliability Engineer, könnte eine Alternative sein, ist aber ganz unten drunter nicht genau das gleiche, wie jemand, der an Cloud-Infrastruktur oder an Infrastruktur selbst arbeitet oder versucht, die Barrieren zwischen dem Engineering-Team und dem Operations-Team niederzubrennen.",
+      "start": 612179,
+      "end": 631049,
+      "confidence": 0.8115789473684208,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Ja, was ist denn die Position? Ist es dann ein Dev-Operator?",
+      "start": 631587,
+      "end": 635293,
+      "confidence": 0.6011818181818182,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Da das eine Kultur ist, gibt es ja die Position ja gar nicht. Das kann ein System-Administrator sein, das kann ein System-Engineer sein, das kann ein Software-Entwickler sein oder das kannst du als Projekt-Manager sein, der Dev-Ops einfach ausübt und in der Firma vorantreibt.",
+      "start": 635313,
+      "end": 647111,
+      "confidence": 0.7354772727272727,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Also sonst in der Kultur ist man dann ja eigentlich der Guru. Also vielleicht dann einfach Guru Andi. Du bist der Guru heute in der DevOps-Kultur und beantwortest mir meine Fragen.",
+      "start": 647679,
+      "end": 657914,
+      "confidence": 0.7377096774193547,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Mache ich gerne. Die zweite Problematik ist, die ich ganz kurz klarstellen möchte, ist Spezialist. Das Problem ist, wenn man sich mit einem, und das haben sehr, sehr viele Leute, das Problem ist, wenn man sich mit einem Thema beschäftigt, dann geht man tiefer rein und tiefer rein, und die anderen Leute sehen dich als Spezialist. Sich selber sieht man aber nie als Spezialist, weil man immer Leute kennt und bei dem Tiefergehen auf diese Leute stößt, die immer noch mehr wissen. Deswegen, ich versuche heute, all deine Fragen zu beantworten, und ich finde, das ist, glaub ich, eine tolle Sache, weil wirklich, So viel ich weiß, im Infrastructure-as-Code- und Terraform-Bereich hast du, glaub ich, null Wissen, oder?",
+      "start": 657934,
+      "end": 694676,
+      "confidence": 0.8249067796610171,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Ich verwende Ansible. Vielleicht können wir da dann auch anfangen und anknüpfen.",
+      "start": 694716,
+      "end": 698419,
+      "confidence": 0.32675,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Das können wir gleich mal aufnehmen. Infrastructure-as-Code, fangen wir ganz vorne an. Infrastructure-as-Code bedeutet eigentlich nur, dass man seine, und ich nenn's jetzt einfach mal, Cloud-Infrastruktur, wohingegen Cloud-Infrastruktur nicht wirklich in der Cloud sein muss, ja? Das bedeutet nicht bei GCP, also bei Google Cloud Platform oder bei Amazon. Sondern es kann auch in-house sein, zum Beispiel. Wir können sowas auch mit Hardware-Servern machen. Das muss nicht immer alles virtualisiert werden.",
+      "start": 698560,
+      "end": 726219,
+      "confidence": 0.8099718309859153,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Ja, Cloud ist ja immer Hardware. Irgendwo steht ja immer irgendwo eine Hardware. Cloud ist ja nur die einfache Zurverfügungstellung eigentlich von dieser Hardware. Und ich kann ja auch meine kleine Cloud zu Hause mit meinen fünf Raspberries bauen.",
+      "start": 726379,
+      "end": 739426,
+      "confidence": 0.7776153846153844,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Ja, das ist richtig, aber wenn wir in der Regel von Cloud sprechen, dann reden wir von Hardware mit einem Hypervisor, Virtualisierung, irgendwelchen APIs obendrauf, die dann unten drunter halbe Magie machen, um neue VMs hochzufahren und so weiter. Was ich aber meine, Cloud kann auch dein eigenes Rechenzentrum sein oder dein eigenes Stockwerk oder von mir aus auch deine eigenen fünf Räume in deinen Büroräumen. wo wirklich Hardware-Rechner stehen, wo du dann per TCP-IP-Pakete dem mitteilst, hey, boote doch mal, installier mal ein Betriebssystem und so weiter und so fort. Das ist ja auch deine Cloud und das wäre dann auch Infrastructure as Code. Für die Einfachheit dieses Podcasts sagen wir jetzt, fokussieren wir uns einfach mal auf die wirkliche Cloud, so wie die Medien es verstehen und sprechen einfach mal mit Digital Ocean, Azure, Google Cloud Platform und Amazon. Also wir simplifizieren das jetzt einfach nur mal auf diesem Bereich, nur damit ihr im Kopf habt, das ist nicht alles, wir können das auch alles mit realer Hardware machen.",
+      "start": 739846,
+      "end": 803293,
+      "confidence": 0.8407836257309939,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Also die Hardware der anderen.",
+      "start": 803734,
+      "end": 804855,
+      "confidence": 0.5037999999999999,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Die Hardware der anderen. Old man yells at cloud. Infrastructure as Code bedeutet eigentlich nur, dass du deine komplette Infrastruktur, das bedeutet Server, Storage, Firewalls, von mir aus auch Domains, GitHub-Repositories, User-Management, User-Rechte-Management, also alles das, was wirklich unten drunter ist, mit Quellcode managt.",
+      "start": 805312,
+      "end": 831757,
+      "confidence": 0.8321363636363639,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Gehört das Netzwerk auch dazu? Also irgendwie so Router oder so Zeug?",
+      "start": 832037,
+      "end": 836018,
+      "confidence": 0.70175,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Das Netzwerk gehört auch dazu. Also wirklich alles. Alles von irgendjemand ist in diesem Internet und du baust dir da einen kleinen Bereich im Internet auf oder in einem Netzwerk und möchtest da drauf deine Applikationen hosten oder Daten ablegen oder ähnliches. Und all was dazugehört, dass du ermöglichst, dass andere Leute auf deinen kleinen Bereich in deinem Netzwerk zugreifen können, das ist Infrastructure as Code in der Hinsicht. Das bedeutet, wir fangen vorne an mit der Domain, dann fangen wir an mit einer Floating IP oder Static IP, dann fangen wir an mit einem Router oder Load Balancer oder pointen die IP direkt auf einen Server, dann fangen wir an mit, wir attachen da eine Disk dran, Dann fangen wir, vielleicht brauchen wir noch irgendwo ein S3, ein Object Storage, dann brauchen wir vielleicht noch irgendwo ein Kubernetes Cluster und, und, und, und, und. Ja, also all das kann man als Infrastructure as Code bezeichnen. Wo da die ganz klare Grenze ist, ist schwierig, weil ich hatte gerade auch GitHub zum Beispiel genannt. Du kannst auch deine GitHub-Organisationen mit Terraform oder mit Infrastructure as Code managen oder deine Repositories oder die Settings deines Repositories, ob da jetzt der Pandabot installiert ist oder nicht.",
+      "start": 836038,
+      "end": 909381,
+      "confidence": 0.811044117647059,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Also wenn du jetzt sagst, gemanagt mit Source Code, was bedeutet das eigentlich? Ich meine, mit Source Code kann ich nicht irgendwie einen Server hochziehen oder hochfahren oder wie funktioniert das rein technisch gesehen? Was ist Source Code? Das ist ja normalerweise ein Java-Programm oder C++. Oder JavaScript soll ja auch Source Code sein.",
+      "start": 909421,
+      "end": 929114,
+      "confidence": 0.6414814814814818,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Halt ich für ein Gerücht, aber da mach ich mir jetzt, glaub ich, Feinde. Nein, kleiner Witz. Source Code ist in diesem Fall wirklich wie dein JavaScript, TypeScript, Java, C++, .NET, Go, Python und so weiter. Also wirklich Plain-Text-Dateien, die man ganz klassisch wie Software versionieren kann, die man ganz klassisch wie im Software-Development-Lifecycle behandeln kann, mit Pull-Request, mit Qualitätskontrolle, unit integration tests und und und linter bla bla bla die sind human readable aber auch maschinen readable.",
+      "start": 929134,
+      "end": 962262,
+      "confidence": 0.7864743589743589,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "So das heißt es ist eigentlich kein kein source code in dem sinne ich schreibe jetzt da keine keine programmiersprache javascript oder so sondern eher sogar so keine jammer files oder so zeug.",
+      "start": 962322,
+      "end": 973513,
+      "confidence": 0.7323333333333335,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Ja und nein, weil jetzt kommen wir natürlich weg von dem Term Infrastructure as Code und hin zu den wirklichen Detail-Implementierungen, wie zum Beispiel Terraform oder Pulumi. Das sind zum Beispiel zwei Tools, mit denen du das machen kannst.",
+      "start": 974154,
+      "end": 989093,
+      "confidence": 0.8154358974358973,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Ich kenne nur Halloumi.",
+      "start": 989614,
+      "end": 990635,
+      "confidence": 0.45275000000000004,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Naja, weg von Käse. Ich rede heute nicht von Käse. Ich bin ja auch kein Holländer. Zumindest wohne ich ja nicht in Holland.",
+      "start": 990675,
+      "end": 995941,
+      "confidence": 0.7493478260869564,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Ja, Halloumi ist ja auch griechisch.",
+      "start": 995981,
+      "end": 997663,
+      "confidence": 0.7521666666666667,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Aber immer wenn ich an Käse denke, denke ich an Holland. Trägst du auch eigentlich diese Holzschlappen, die Antje immer trägt?",
+      "start": 997683,
+      "end": 1002728,
+      "confidence": 0.5855714285714285,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Natürlich. Täglich. Trägt jeder in holland was denkst du.",
+      "start": 1002768,
+      "end": 1006673,
+      "confidence": 0.5522222222222223,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Pulumi ist auch ein Tool ein Software Tool was Infrastructure als Code ermöglicht genauso wie Terraform. Pulumi ist nicht so populär wie Terraform gewinnt aber immer mehr an Bekanntheit. Kommen wir zurück zu deiner Source Code Frage. Der Hauptunterschied Also generell, Terraform und Pulumi können eigentlich so fast das Gleiche. Das Endziel ist eigentlich, dass du irgendeine Art Quelltext schreibst, dann auf Play drückst und dann stehen da zwei Server, ein Kubernetes-Cluster, ein Object Storage, eine Firewall und deine Netzwerkkonfiguration mit Subnets und so weiter und so fort. Ja, das ist so das Endresultat. Wie du jetzt dahin kommst, da unterscheiden sich dann jetzt die Implementationen. Gehen wir mal ganz kurz drauf ein bei zwei Tools in Terraform und Pulumi. Und ich sage von Anfang an, mit Pulumi selbst habe ich noch nicht gearbeitet. Ich habe nur Erfahrung mit Terraform.",
+      "start": 1006713,
+      "end": 1056637,
+      "confidence": 0.8132928571428572,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Jetzt noch eine Frage davor. Wenn du sagst, okay, ich schreibe dir diesen Source-Code und dieser Source-Code erstellt mir dann da meine Infrastruktur, meinen Router, meine IP-Adressen, erstellt mir da irgendwelche Server in der Cloud, die ich dazu brauche und installiert da dann Zeug. Was bringt mir denn das Ganze? Weil ich könnte jetzt auch einfach das manuell erstellen. Die Infrastruktur ändert sich ja normalerweise nicht so schnell. Wenn ich jetzt irgendwie da meine paar Server aufstelle als normale Firma, Dann mache ich das ja einmal wahrscheinlich und vielleicht ein Monat später ändere ich irgendeine Kleinigkeit. Also warum sollte ich da immer irgendwie das in Source Code schreiben und nicht einfach machen.",
+      "start": 1057117,
+      "end": 1092817,
+      "confidence": 0.7491607142857143,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Die Aussage, dass sich die Infrastruktur nicht mehr so schnell ändert, würde ich mal ganz klar challengen, speziell mit unserer Intro mit Data Engineers und geänderten Anforderungen, die täglich fast reinkommen, weil der Konkurrent irgendwie ein neues Feature gelauncht hat. Also die Infrastruktur ändert sich schneller als man gucken kann und deswegen nutzen ja ziemlich viele Firmen jetzt die Cloud und wollen in die Cloud, weil man da dynamischer ist, weil man da Kosten sparen kann. Und Kostenersparnis hast du eigentlich durch Infrastrukturänderungen, durch Rearchitekturen, Also durch das Re-Architekten deiner Infrastruktur und so weiter und so fort. Ja, also die ändert sich umso schneller. Aber wozu ist Infrastructure Code eigentlich erstmal generell sinnvoll? Erstens, wenn ich in der UI, in der Webkonsole etwas zusammenklicke, dann weiß ich, was ich gemacht habe und das weiß ich genau bis morgen zum Frühstück.",
+      "start": 1092857,
+      "end": 1140786,
+      "confidence": 0.7900500000000005,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Es hat ja nicht jeder so ein Goldfischgehirn wie du.",
+      "start": 1141175,
+      "end": 1144959,
+      "confidence": 0.5538,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Also ich schwöre dir, wenn es nicht bis morgen zum Frühstück reicht, dann reicht es vielleicht bis nächsten Monat. Aber das war es dann auch. Du weißt einfach nicht mehr, was die jeweilige Person da geklickt hat und so weiter. Jetzt stell dir vor, du arbeitest im Team. Woher sollst du wissen, warum jemand eine Netzwerkkonfiguration geändert hat? Wer das geändert hat, hat man meist in irgendeinem Audit-Log bei den Public-Cloud-Providern. Alles gut, sofern du keinen Login teilst, sofern jeder seinen eigenen Login hat. Aber Infrastructure as Code bietet dir erstmal alle Vorteile von Softwareentwicklung und somit natürlich auch Versionierung und somit natürlich auch zum Beispiel Git-Comet-Messages und somit natürlich auch eine Referenz zu einem Ticket und somit natürlich auch in irgendeiner Art und Weise Dokumentation nicht nur, was wird eigentlich gemacht, sondern wie sieht deine Infrastruktur aus, sondern auch, wieso wurde das denn gemacht. unter der Voraussetzung, dass Tickets ordentlich geschrieben werden, unter der Voraussetzung, dass Git-Comment-Messages ordentlich geschrieben werden. Die andere Thematik ist natürlich aber auch Security und Compliance. Du weißt ganz genau, wie deine Infrastruktur aussieht und du musst dich nicht durch die Netzwerktabs in der UI klicken und so weiter, sondern hast alles in einer View. Die nächste Geschichte ist, das ist erstmal Grundvoraussetzung für die Teamarbeit, weil du hast eine ganz klare Basis. Du weißt, welche Änderungen an der Infrastruktur gemacht werden, die kann im Team dokumentiert werden, weil das hoffentlich per Pull-Request gereviewt wird. Dann geht's an die Wiederverwendbarkeit. Ich kann jetzt meine komplette Infrastruktur in Europe West 4 bei Google, was glaube ich in Amsterdam ist oder Belgien, hochfahren und mit Mit wenigen Modifikationen kann ich dieselbe Infrastruktur auch in Amerika hochfahren oder in China. Und das theoretisch binnen Minuten, ohne dass ich jetzt drei Tage in der Amazon-Konsole in Amerika oder in China rumklicken muss.",
+      "start": 1145019,
+      "end": 1249665,
+      "confidence": 0.8076039603960397,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Kann ich das jetzt auch abseits von Google in der Cloud hochfahren? Also kann ich, wenn ich das jetzt für Google gebaut habe, kann ich das auf AWS dann hochfahren, das Gleiche, wenn ich Cloud wechseln will?",
+      "start": 1249705,
+      "end": 1261173,
+      "confidence": 0.6767027027027025,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Das ist einer der größten Mythen. Nein, zumindest nicht bei Terraform. Warum? Zum Beispiel in Terraform definierst du, du möchtest eine Google Compute. Das ist eine virtuelle Maschine bei Google und bei Amazon heißt das EC2. Du hast andere Metadaten und andere Settings, die du in der Google Compute setzen kannst, als bei Amazon EC2. Jetzt könnte Terraform natürlich hingehen und sagen, hey, pass mal auf, ich mache sowas wie Vererbung mit einer Mutterklasse, einer abstrakten Klasse und unten drunter sind die Detailimplementierungen, dann eine Google Compute und eine EC2. Dadurch hättest du natürlich immer nur die Möglichkeit, nur die Settings zu setzen, die von allen Cloud-Providern unterstützt werden. Und du wählst ja einen Cloud Provider, um das volle Potenzial auszuschätzen. Deswegen musst du schon spezifisch sagen, ich bin bei Google und möchte eine Google Compute VM und hier bin ich bei Amazon. Hier möchte ich eine EC2 Instanz.",
+      "start": 1261613,
+      "end": 1312189,
+      "confidence": 0.7882483221476511,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Aber war das nicht jemals Versprechen von Terraform, dass sie das unterstützen in irgendeiner Form, oder dass es leichter ist, zumindest zwischen den Clouds ... Ich bin mir.",
+      "start": 1312706,
+      "end": 1320089,
+      "confidence": 0.7244285714285714,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Nicht sicher, ob das jemals ein Versprechen von HashiCorp, der Firma hinter Terraform, die das geschrieben haben, war, oder ob das die Medien nicht so aufgepickt haben und jeder das so liest. Weil das ist einer der größten Mythen, dass du sagen kannst, ich will eine VM und kann die in jeder Cloud hochfahren. Weil das stimmt nicht, das geht nicht, zumindest nicht, wenn du das volle Potenzial von einer Cloud nutzen möchtest.",
+      "start": 1320109,
+      "end": 1340957,
+      "confidence": 0.8036849315068493,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Aber warum verwendet er nicht einfach die Sprache, die die Cloud anbietet? AWS hat ja selber so ein Infrastructure-as-Code-Ding.",
+      "start": 1341565,
+      "end": 1350622,
+      "confidence": 0.7669473684210527,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Cloudformation heißt das.",
+      "start": 1350662,
+      "end": 1351484,
+      "confidence": 0.30333333333333334,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Genau, CloudFormation. Warum verwendet ihr dann nicht direkt das? Das unterstützt wenigstens die neuesten Produkte, die AWS so rausbringt. Hingegen Terraform als externe Firma hat ja doch immer einen Delay und braucht länger für irgendwelche neuen Tools, die die Cloud anbietet.",
+      "start": 1351899,
+      "end": 1366253,
+      "confidence": 0.7758292682926827,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Sehr gute Frage. Für Amazon ist das richtig? Wie heißt denn das Infrastructure-as-Code-Tool für Google?",
+      "start": 1366273,
+      "end": 1372018,
+      "confidence": 0.7362000000000002,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Du bist der DevOps-Guru.",
+      "start": 1372058,
+      "end": 1373379,
+      "confidence": 0.6052500000000001,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Terraform. Google hat gesagt, ich baue hier nicht meinen eigenen Kram, sondern ich stütze mich auf die Industrie und Google empfiehlt selbst Terraform zu managen in der Infrastruktur. Und was du gerade gesagt hast, dass das HashiCorp als externe Firma einen Nachteil hat, jetzt kommt ja der Clou. kann gar nicht so viele Engineers einstellen, um alle APIs konstant zu überwachen und die neuen Features in Terraform zur Verfügung zu stellen. Deswegen gibt es ein Konzept von Plugins, nennt man bei Terraform Provider, und Amazon maintaint selbst den Terraform Provider. Das bedeutet, wenn Amazon ein neues Feature rausbringt, für EC2 oder für Kubernetes oder für was weiß ich nicht, für Amazon MSK zum Beispiel, das ist ja ein Kafka-Cluster, dann kümmert sich Amazon selbst darum, dass der AWS-Provider für Terraform Amazon MSK unterstützt. Und dasselbe für Google und dasselbe für GitHub. Es gibt natürlich ein paar Provider, die von Terraform selbst maintained werden, aber das ist echt wenig. Generell sind die dafür da, hey, lieber Vendor, wenn du doch einen Service anbietest, der durch Terraform gemanagt werden soll, dann kümmere dich doch bitte selbst um dein Plugin.",
+      "start": 1373420,
+      "end": 1443895,
+      "confidence": 0.8072192513368985,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Ich stelle jetzt mal eine These auf, die du mir dann validieren kannst oder auch nicht. Wenn ich in Terraform meine Infrastruktur definiere auf AWS und dann umsteigen will zu Google, bin ich dann schneller wenigstens beim Umstieg, als wenn ich CloudFormation genutzt habe, weil ich irgendwie wenigstens allgemeine Definitionen, IP und so weiter verwenden kann oder die Plugins dann halt austauschen muss, aber eine Grundlage habe, die ich schon verwenden kann? Oder siehst du da gar nicht so den großen Vorteil dazwischen?",
+      "start": 1444240,
+      "end": 1472815,
+      "confidence": 0.7819397590361449,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Das ist eine unglaublich schwierige Frage. Bist du schneller? Die Problematik hier ist, du steigst von Cloud 1 auf Cloud 2 um. Jede Cloud hat ihre Eigenheiten. Das Schwierigste bei den großen Cloud-Providern ist eigentlich das Verständnis, wie funktioniert Access Management und Identity Management. Das bedeutet, wie integriert sich das User-Handling, das Limitieren eines Users auf bestimmte Ressourcen? Darf dieser User eine Datei in diesem S3-Bucket ablegen oder lesen oder auch löschen oder versionieren? Und wie man das Netzwerk definiert. Das sind so die Kernunterschiede. Wenn man die drauf hat, top. Punkt ist aber, das läuft anders in Google und anders in AWS. Genauso wie Account Management oder wie werden Projekte gehandhabt. Das sind grundlegend unterschiedliche Konzepte bei GCP und AWS. Deswegen ist das schneller. Also wenn du gleich gutes Verständnis hast von beiden Clouds, GCP und AWS zum Beispiel, dann würde ich sagen, ist der Rewrite deiner Terraform-Files auf jeden Fall schneller, weil du bei derselben Sprache bleibst. Wohingegen du jetzt, wenn du von Amazon nach Google wechseln möchtest, und wir gehen da auch davon aus, dass du dasselbe Cloud-Verständnis hast, dann musst du ja von Cloud-Formation auf Terraform wechseln, weil du kannst ja mit Cloud-Formation keine GCP-Ressourcen managen, und somit müsstest du dich dann erst in Terraform einarbeiten. Also du hast dann einen, ich nenne es mal einen Common Nominator, und zwar dieselbe Sprache und musst halt nicht mehr eine neue Sprache lernen. Also in der Hinsicht würde ich sagen, ja, du bist schneller. Auf der anderen Seite ist die Definition deiner Infrastruktur, sofern du mit Infrastruktur als Coach schon familiär bist, nicht die Herausforderung, sondern die reale Herausforderung ist hier, das Grundverständnis der Core-Konzepte der jeweiligen Cloud. Und auf Azure mag es mit hoher Wahrscheinlichkeit anders sein, genauso wie auf DigitalOcean. Also zum Beispiel mal als Kernunterschied. Also GCP und AWS, da reden wir immer von Regions und Availability Zones, wegen Failover und allem drum und dran. Das ist ja einer der großen Kernfeatures, womit die alle immer werben. Digital Ocean hat gar nicht so das Konzept von Availability Zones. Du kannst eine Node in Amsterdam oder in Frankfurt bootstrammen, aber du hast nicht in Amsterdam drei Availability Zones. Da sind die Konzepte ja ganz anders. Und da speziell, wenn du deine Software aufbaust und deine Software auch über verschiedene Availability Zones verteilen möchtest, Reliability und Regions und allem drum und dran, die musst du dann natürlich auf Digital Ocean auch anders aufbauen als auf AWS und GCP zum Beispiel. Aber kommen wir mal ganz kurz nochmal, warum braucht man das eigentlich? Da gibt es noch ein paar mehr Punkte. Ich hatte genannt Security, Compliance, ich hatte gesagt Dokumentation. Du kannst natürlich aus Code auch etwas generieren. Aber es ist natürlich auch so, dass wenn du zum Beispiel einen Hackerangriff hast, dann kannst du die komplette Infrastruktur einfach zumachen und einfach drüben wieder aufbauen.",
+      "start": 1473055,
+      "end": 1638478,
+      "confidence": 0.7841823899371065,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Wo ist drüben?",
+      "start": 1638498,
+      "end": 1639379,
+      "confidence": 0.7436666666666666,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Ja, drüben in einer anderen Region zum Beispiel. oder unter anderem IP, du kannst dich von Hackerangriffen oder von Incidents generell sehr schnell wieder erholen, weil du hast ja deine komplette Infrastruktur in Code gekippt. Und ein anderer Grund ist natürlich, dass die Developer Experience, die inzwischen immer wichtiger wird. Ich meine zum Beispiel, warum ist denn Heroku so unglaublich populär? Heroku ist so unglaublich populär, weil die harten Dinge einfach super einfach machen. Du kannst sagen git push heroku main und du deploys deine komplette Applikation auf Heroku und hinten dran läuft ein VM und Container und was weiß der Geier nicht alles und du hast eine Applikation online mit Postgredatenbank und schieß mich tot. Das bedeutet Developer Experience immer immer wichtiger und Infrastructure Managing. ist natürlich dann via Pull-Request, was natürlich dann erst das ganze DevOps-Movement und so weiter enabelt, weil du kannst nämlich Entwickler, die es gewohnt sind, im Software-Development-Lifecycle zu leben, an Operations heranwagen. Also das bedeutet, Das ist natürlich dann schon die Grundvoraussetzung für DevOps und Site Reliability Engineering, weil die ursprüngliche Definition zum Beispiel von Site Reliability Engineering ist, du beauftragst Softwareentwickler mit der Aufgabe, Operations zu managen. Da kommt natürlich dann das komplette Software-Entwickler-Mindset natürlich auch mit ran. Das bedeutet Automatisierung, et cetera, et cetera. Und erst Infrastructure as Code ermöglicht das. Wo man hingegen natürlich sagen muss, dass Infrastructure as Code nicht Terraform oder Pulumi heißen muss, sondern von mir aus auch Bash-Skripte. Da kommen natürlich andere Herausforderungen wie Idempotenz und State-Management und all so was mit. Aber theoretisch kann ein Infrastructure as Code auch ein Bash-Skript sein.",
+      "start": 1639419,
+      "end": 1742075,
+      "confidence": 0.7866127819548874,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Ja, man kann sich auch theoretisch seine eigene Datenbank schreiben, wenn man will. Aber ob das Sinn macht, ist eine andere Frage. Aber jetzt kommen wir nochmal zurück zu meiner initialen Aussage. Ich verwende zum Beispiel Ansible. Und Ansible, ich würde mal sagen, ist so ein Tool, was sowas ähnliches macht. Du definierst in Code oder in Files. wie dein Server aussieht und ich setze da ein paar Server auf oder auch ganze Cluster, definiere, was da für Package auf diesem Server installiert sein soll, erstelle mir da irgendwelche User oder sowas. Kann ich das jetzt mit Terraform auch machen oder sollte ich auf Terraform wechseln, wenn ich sowas mache aktuell mit Ansible oder wo ist da der Unterschied?",
+      "start": 1742775,
+      "end": 1780718,
+      "confidence": 0.7596890756302521,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Killerfrage. Tools wie Ansible oder andere Tools in dem selben Sektor wie Salt, was für Salt Stack steht, Chef, Puppet, CFEngine, Bash-Skripte, Das nennt man eher Configuration Management, wohingegen man Terraform und Pulumi eher Infrastructure Orchestration nennt, beziehungsweise Infrastructure-as-Code-Software-Tool. Kannst du mit Ansible auch Infrastructure-as-Code managen, das bedeutet Server hochfahren? Ja. Kannst du mit Terraform auch irgendwie so eine Art Configuration Management machen? Ja. Wo ist der Kernunterschied? Es sind einfach zwei unterschiedliche Tools mit unterschiedlichen Spezialisierungen. Terraform hat als Spezialität das Managen von Infrastruktur. Das bedeutet Server, Firewalls und so weiter. Ansible als Configuration Management Tool hat als Spezialität das Managen der Konfiguration auf einzelnen Servern. Klassisches Beispiel, mit Terraform baue ich mir meine Static IP, route meine Domain da drauf, setze DNS Records und einen Server und sorge dafür, dass da ein Betriebssystem drauf ist. Mit Ansible kümmere ich mich darum, dass das Docker installiert ist, dass die richtigen Python Packages installiert sind, dass Systemd läuft, dass die Uhrzeit richtig eingestellt wird, dass mein SMTP-Server eingerichtet ist, dass das Logging läuft, etc., etc. Du kannst das auch mit Terraform machen. Es wird nur unglaublich kompliziert, weil Terraform darauf nicht spezialisiert ist. Du kannst klassisch... Was du zum Beispiel mit Terraform machen kannst, ist, du kannst klassische Bash-Commands abfeuern. Das Problem ist dabei, dass alle Tools mit allem, was du tust, immer berechnen, was macht denn diese Ausführung dieses Befehls. Beispiel, ich will einen Server anlegen. Terraform checkt dann, gibt es diesen Server bereits oder muss ich den neu anlegen. Wenn ich jetzt Bash in Terraform ausführen würde, dann habe ich einmal einen riesen Bash-Block und Terraform kann nicht sagen, muss ich das jetzt ausführen oder nicht. Terraform muss Bash ausführen, um das Ergebnis zu kennen. Ich lege einen Ordner an, mkdir-p slash etc irgendwas. Terraform muss das ausführen, um herauszufinden, ist dieser Ordner schon da oder wurde der angelegt. Ansible hingegen hat eine spezielle Ressource, einen speziellen Ressourcenblock, sagt sowas wie Create Folder und da gibst du deinen Pfad an und Ansible kann dann vorher prüfen, gibt es diesen Ordner bereits oder muss ich den jetzt anlegen. Das sind spezialisierte Use Cases. Was ist also jetzt hier die perfekte Kombination? Beides. Ich zum Beispiel nutze Terraform für meine komplette Infrastruktur, für meine Domains, für GitHub Repositories und so weiter. Wenn die Node hochgefahren ist und wenn die Infrastruktur steht, dann mache ich ein Ansible Play und das Ansible Play kümmert sich darum, die richtigen Softwarepakete zu installieren, Systemd zu installieren, die Unit Files dahin zu legen, alles durchzustarten und so weiter und so fort. Die Kombination ist eigentlich das Beste, weil du brauchst eigentlich beides. Aber die Kernkonzepte unten drunter sind ein bisschen anders, weil z.B. Infrastructure as Code, Terraform ist meist State-basiert. Das bedeutet, du hast irgendwo ein State-File, was den aktuellen Stand deiner Infrastruktur in einem spezifizierten Format vorhält, wohingegen Configuration Management in der Regel stateless ist. Und das bedeutet natürlich auch, dass Configuration Management bei einem Run immer alles checken muss und Terraform sich natürlich, weil es hat ja den State gespeichert, nicht auf alle Operationen immer neu stürzen muss. Wohingegen Infrastructure as Code oft auch als Kern für Immutable Infrastructure genannt wird. Was bedeutet das? Das bedeutet, du installierst einen Server und fasst den nicht mehr an. Und wenn du den Server ändern möchtest, schmeißt du den Server weg und installierst den neu, Immutable. Ähnlich wie bei der funktionalen Programmiersprache zum Beispiel. Wohingegen Ansible meist mit Mutable Infrastructure-Verhalten um die Ecke kommt. wo du einen Server hast und dann Änderungen machst. Du legst einen zweiten Orden an und drückst einfach Play, anstatt den ganzen Server neu zu installieren. Du kannst aber natürlich auch beide Varianten als Immutable und Mutable fahren. Zum Beispiel gibt es manche Operationen bei Terraform, die nicht immer den Server wegschmeißen, sondern sogenannte In-Place-Ersetzungen machen und dann die Infrastruktur falten. Es kommt aber immer ganz darauf an, was du da änderst in der Infrastruktur.",
+      "start": 1780738,
+      "end": 2050157,
+      "confidence": 0.8133889739663088,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Und würdest du jetzt sagen, dass man Configuration Management, also sowas wie Ansible, heutzutage überhaupt noch braucht, wenn man jetzt zum Beispiel alles mit Docker macht und die Docker-Images ja eigentlich schon bereitstehen und vielleicht von dem Developer-Team, wenn man das einmal trennen will, vorbereitet sind und dann eigentlich nur mehr rübergeschoben werden müssen auf die Infrastruktur und dort laufen. Also braucht sowas wie Configuration Management überhaupt noch? Oder ist es heutzutage meistens über Docker schon obsolet?",
+      "start": 2050440,
+      "end": 2077882,
+      "confidence": 0.8004675324675325,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Natürlich braucht man sowas wie heutzutage noch. Du hast jetzt einen Server und da läuft Docker drauf. Wie kommt denn das Passwort und deine Authentifizierung für deine eigene Docker Registry auf den Server?",
+      "start": 2077922,
+      "end": 2087895,
+      "confidence": 0.6762424242424243,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Ja, aber kann ich sowas, wenn ich jetzt Kubernetes oder so verwende, kann ich das nicht in Terraform spezifizieren, solche Dinge, die Kubernetes braucht, um zu laufen?",
+      "start": 2088936,
+      "end": 2097638,
+      "confidence": 0.6777407407407406,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Hab ich ja gesagt, kannst du, ja. Nur, wenn du ... Und für den Start ist das vielleicht sogar auch völlig okay, ja? Dann musst du dir nicht Ansible schaffen. Umso mehr du deine eigenen Nodes aber provisionieren möchtest, umso mehr du zum Beispiel von der Hostmaschine zum Beispiel ein Prometheus-Host-Exporter laufen lassen möchtest oder Ähnliches, ja? Also Monitoring für die Node. Umso mehr Tools müssen natürlich auf der Hostmaschine selbst installiert werden und nicht in einem Docker-Container. Kannst du auch alles mit Terraform machen. Und wenn du jetzt zum Beispiel am Anfang nur ein Python-Package installierst auf dem Host-System oder irgendwas anderes, oder eine spezielle Version von Curl oder OpenSSL, dann geht das alles. Kompliziert wird's oder herausfordernd wird's, wenn du im Software-Development-Lifecycle immer mehr addest, weil die Infrastruktur sich ändert, weil du neue Requirements kriegst oder, oder, oder. Und das heißt natürlich nicht, dass du sofort mit Terraform und Ansible starten musst, sondern du kannst auch erst mit Terraform anfangen und später Ansible dazuschreiben. Zum Beispiel ein Beispiel, was ich hatte in einem meiner Side-Projects. Ich habe mit Terraform angefangen und habe mit Terraform dann auch direkt zwei Docker-Container mitdeployed. Und zwar einmal Traffic als Loadbalancer und einmal MySQL als Datenbank. Und Terraform, habe ich ja vorhin erwähnt, unterstützt sogenannte Plugins, nennt man im Terraform-Universum Provider. Und da gibt es auch einen Docker-Provider. Da kann ich sagen, dieses Image, diese Registry und dann state run. Nochmal ganz kurz vielleicht zur Erklärung. Ein Plugin bzw. ein Provider ist unten drunter eigentlich auch nur Quellcode, geschrieben in Go, der mit externen APIs quatscht. Die Definition von HashiCorp-Files machst du eigentlich in HCL, das ist die HashiCorp-Configuration-Language, mit dem Fokus auf menschen- und maschinenfreundlich zu sein. Und das wurde damals primär für DevOps-Tools entwickelt. Und die Syntax dieser HCL, HashiCorp-Configuration-Language, wurde sehr stark von der Nginx-Konfigurations-Syntax inspiriert. Provider sind also, wenn du so möchtest, die Übersetzung von der HashiCorp-Configuration-Language, die du da schreibst, kannst dich vorstellen, so ähnlich wie YAML, nur halt mit ein paar anderen Features, auf API-Calls. Das ist eigentlich ein Provider.",
+      "start": 2097658,
+      "end": 2228435,
+      "confidence": 0.792189504373178,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Und diese HCL-Sprache, um das gerade nochmal zu verstehen, du sagst, es ist wie YAML, kann ich da dann aber auch irgendwie schleifen oder so Sachen machen, also wirklich so prozedurale Sachen, oder bin ich da nur auf deklarative Definitionen, so wie in YAML oder so, beschränkt?",
+      "start": 2228475,
+      "end": 2244765,
+      "confidence": 0.7663617021276594,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "In den letzten paar Versionen haben die mehr und mehr solcher Features mit eingebaut. Das bedeutet, du kannst zum Beispiel eine Liste haben von Usern, und dann hast du eine Resource, nennt sich das, und kannst dann sagen, führ diese Resource für jedes Element in der Liste aus. Somit kannst du zum Beispiel dein ganzes Team in eine Liste packen, deine Usernames, und die sollen alle die gleichen Berechtigungen haben, und hast nur eine Resource, und dann werden fünf Admin-User erstellt oder ähnliches. Das geht, ja. Kommen wir nochmal zurück zu diesen Providern und warum ich sage, dass manche Sachen du zwar mit Terraform machen kannst, aber nicht machen solltest und wo es da zum Beispiel Probleme gibt. Nehmen wir an, du fährst eine virtuelle Maschine auf DigitalOcean hoch und dein Ziel ist es, Docker-Container, drei Docker-Container drauf laufen zu haben. Was du dann machst ist eigentlich, du holst dir einen DigitalOcean-Provider, fährst eine VM hoch und installierst da Docker drauf. kannst auch ein vorgefertigtes Docker-Image von der Digital Ocean nutzen, wie auch immer. Dann hast du da eine VM. Dann kannst du dir von der VM in Terraform auch die IP-Adresse holen, weil die kennst du ja nicht vorher. Der Docker-Provider braucht aber die IP-Adresse, um mit der Docker-API zu sprechen. Und dann sagst du als Docker-Resource, deploy mir bitte diesen Docker-Container. Und jetzt ist so ein bisschen das Henne-Ei-Problem. Du hast auf der einen Seite Provider, also Plugins, und diese Provider erstellen, geben dir Ressourcen. Docker-Provider hat die Ressource docker-image und startet dieses Docker, diesen Docker-Container. Wenn du sagst terraform play, was der als erstes macht, der holt sich erst alle Provider und guckt, ist meine Konfiguration gültig. Und du kannst Provider nicht abhängig voneinander machen, zum Beispiel. Das bedeutet, wenn du noch keine Maschine da hast, noch keine VM, hast du noch keine IP. Somit kann der Docker-Provider nicht hochfahren, weil er keinen Docker-Host findet. Das bedeutet, du musst erst die Maschine hochfahren und danach noch mal einen Run machen, weil dann kann der Docker-Provider sich erst connecten. Du kannst Provider nicht abhängig voneinander machen, du kannst aber Ressourcen abhängig voneinander machen. Das ist dann so ein Execution-Problem, das ist zum Beispiel ein Bug bei Terraform, dass du Provider nicht abhängig voneinander machen kannst. Da ist zum Beispiel der bessere Use Case, du baust deine Infrastruktur mit Terraform und bespielst sie danach mit Ansible. Zum Beispiel, wo du dann mit Ansible deine Docker-Container deployst. Du kannst natürlich sowas alles umgehen mit Hacks, dann wartest du und deployst deinen Docker-Container mit Bash-Skript und so weiter. Das geht alles, aber da kommen wir schon wieder in eine Schiene, da rollen wir schon wieder die Zehen nicht.",
+      "start": 2244945,
+      "end": 2396590,
+      "confidence": 0.785749440715884,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Jetzt um noch deine Guru-Meinung da einzufordern, wenn wir da schon besprochen haben Ansible, Sword, Chef, Puppet und so weiter, ist da dein Favorite Ansible oder würdest du sagen irgendwas anderes ist noch cooler oder rein deine persönliche Meinung zu dem Ganzen?",
+      "start": 2397205,
+      "end": 2413571,
+      "confidence": 0.7908333333333334,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Ich habe ein bisschen Erfahrung mit Puppet, Chef, Sword, Stack, Bash, Script und Ansible. Mit CF Engine selbst habe ich noch nie gearbeitet. Mit Ansible ist das Letzte, was ich gelernt hab. Und da muss ich sagen, es kommt drauf an, was hast du für eine Infrastruktur und wie groß ist die? Bei den ganzen Configuration-Management-Tools kommt's immer eigentlich auf die Kernfrage an, ist das ein Pull- oder ist das ein Push-Prinzip? Ein Pull-Prinzip ist zum Beispiel, du definierst einen, du sagst, was gemacht werden soll. Dieser Ordner soll angelegt werden, dann soll diese Datei mit diesem Inhalt draufgeschrieben werden, dann soll dieses Python-Paket installiert werden. Und du pushst das in dein Repository, weil das ist ja auch, Configuration Management machst du auch via Codefiles. Und Pull wäre dann, die Server schauen in ihrem Repository alle zwei Minuten nach, pullen sich den letzten Code und executen das. Der Vorteil ist, das skaliert wie Hulle. Du kannst Millionen Server haben und die holen sich irgendwann den State und exekuten den dann. Der Nachteil ist, du weißt nicht wirklich, wann es exekutiert wird und du brauchst natürlich mehr Tooling drumherum, um zu wissen, wo das erfolgreich exekutiert wird. Wohingegen Push-Prinzip ist, du bist auf einem CI-Server oder auf einem Rechner und sagst, du hast diese fünf Server und du drückst jetzt Play und siehst auf deiner Maschine, ich connecte mich zum ersten Server für das aus, ich connecte mich zum zweiten Server für das aus. Von mir aus kannst du auch die Exekution der Server parallelisieren. Aber jetzt stell dir vor, das machst du mit 1000 Servern. Das dauert halt eine Weile. Ja, das ist eigentlich so die Kernfrage, die du eigentlich beantworten möchtest, Push oder Pull.",
+      "start": 2413612,
+      "end": 2505865,
+      "confidence": 0.8026035087719303,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Ansible ist Push und Salt ist zum Beispiel Pull, wenn ich das richtig verstanden habe.",
+      "start": 2506265,
+      "end": 2511127,
+      "confidence": 0.6517333333333333,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Salt kannst du in beiden Varianten fahren. Generell ist Salt aber Pull, also von Haus aus. Ganz am Anfang war Ansible nur Push, aber mit Ansible Tower und was sie da jetzt alles eingeführt haben für größere Infrastrukturen, können die auch Pull inzwischen. Prinzipiell kannst du mit fast allen Configuration Management Tools beide Varianten machen. Doch der Kern, wie sie ursprünglich implementiert wurden, ist entweder Pull oder Push. Ich, in größeren Infrastrukturen, habe ich Erfahrungen bezahlt. Finde ich ein ganz geiles Tool, muss ich zugeben. Sehr, sehr, sehr schön zu schreiben. Sehr schön zu maintain. Unglaublich schöne Features. Webhooks und allem drum und dran. Eine gute Nummer. Für meine Sideprojekte nutze ich jetzt Ansible. Auch sehr einfach zu starten und für besonders kleine Infrastrukturen. Für mich reicht in meinem Sideprojekt das Push-Verfahren, weil ich halt eine kleine Anzahl an Server habe. Da würde ich Ansible empfehlen.",
+      "start": 2511147,
+      "end": 2567258,
+      "confidence": 0.8238561643835616,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Der große Vorteil von Ansible meiner Meinung nach ist, oder allgemein vom Bush-Verfahren ist auch, dass du keine Server oder sowas benötigst. Bei Salt brauchst du normal irgendwie einen Server, damit die Server dann das pullen können eben von dieser zentralen Einheit. Das heißt, es macht es schon etwas komplexer wieder am Anfang und du brauchst Agents auf den Server, an die die laufen und sich das pullen. Mit Ansible ist es halt so ähnlich wie einfach SSH-Connections. Du baust da im Prinzip zu jedem Server eine SSH-Connection auf und führst dann diese Kommandos aus. Also zum Einsteigen ist es viel näher an dem klassischen SSH-Login und ich führe ein paar Kommandos aus. Hingegen Sort- oder Pull-Verfahren sind halt meistens, eben wie du richtig sagst, für größere Setups ausgelegt. daher meiner Meinung nach zumindestens auch ein bisschen komplizierter, um das zu verstehen und zu installieren dann am Ende, dass es auch läuft.",
+      "start": 2567506,
+      "end": 2618347,
+      "confidence": 0.7952302631578947,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Kommen natürlich dann auch mit einem ganz anderen Feature-Set für größere Organisationen, Audits, Verschlüsselungen und so weiter von Secrets, bla bla bla. Ich glaube Ansible geht auch in die Richtung oder ist da schon sogar, da muss ich zugeben, Ansible habe ich noch nicht für größere Infrastrukturen eingesetzt, aber es gibt da nicht das eine. Meines Erachtens nach ist es wichtig, dass ihr mit Infrastructure as Code arbeitet, genauso wie mit Configuration Management. Ich würde jetzt nicht auf Bash-Skripte gehen, weil du schraubst die ganze Sache halt einfach neu und größere Bash-Skripte sind halt echt schwierig zu lesen. Beziehungsweise es ist eine sehr große Herausforderung, Bash-Skripte richtig zu machen, Failure-Safe, mit allem drum und dran. Und spezialisierte Tools wie Terraform, Pulumi, Ansible, Soul Chef, Puppet, CF Engine sind Industriestandards. Okay, Bash ist auch ein Industriestandard im Serverumfeld, aber nimmt dir halt sehr, sehr viele Schmerzen auch schon ab.",
+      "start": 2618367,
+      "end": 2679445,
+      "confidence": 0.8187364864864866,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Das kann ich nur bestätigen. Also da gibt es schon einige Dinge, die das Leben einfacher machen. Vor allem bei Bash-Skripte hast du so schlechtes Feedback. Da musst du selber irgendwie loggen und dir die Logs dann anschauen und bei Uncible hast du halt sofort immer eine Rückmeldung. war irgendwas erfolgreich und, wie du richtig gesagt hast, Ansible überprüft ja dann auch wirklich, ist dieses File angelegt worden und da hast du einfach viel besseren Blick drauf, ob alles wirklich sauber durchgelaufen ist und wenn alles grün ist, dann kannst du dir sicher sein, dass da alles in Ordnung war und durchgelaufen ist und bei einem langen Bash Script musst du halt wirklich irgendwelche Logs durchparsen, damit du weißt, hat's da jetzt irgendwo Probleme gegeben, hunderttausende Ifs dazwischen, wenn irgendwas passiert, dann mach ich nicht den nächsten Schritt und Solche Sachen sind natürlich extrem komplex und die nehmt ihr dann einfach an Config Management Tool komplett ab. Jetzt haben wir über sehr viel Positives gesprochen oder die ideale Welt. Natürlich immer die wichtige Frage, gibt es auch negative Punkte oder sagst du, okay, da fehlt kein Weg herum, das muss man heutzutage sowieso verwenden, das ist die einzige Möglichkeit. Aber trotzdem, vielleicht gibt es dann irgendwo Stolpersteine oder ähnliches. Also gibt es irgendwo die negativen Punkte zu der ganzen Welt? Siehst du da irgendwo größere Probleme?",
+      "start": 2679725,
+      "end": 2755759,
+      "confidence": 0.7715796460176987,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Also wenn man im schnell lebenden Business überleben möchte, und einen Großteil seines Revenues durch digitale Services irgendwie kriegt, dann ist das der Weg zu gehen. Da kommt man nicht drumherum. Muss nicht Terraform, muss nicht Pulumi sein oder muss nicht Salt, Ansible und so weiter sein, sondern managt das irgendwie in einer wiederverwendbaren und automatisierten Form. Wie ihr das macht mit Brieftaub ist mir relativ egal. Macht's aber einfach. Gibt's negative Punkte? Ja, hundertprozentig. Software hat auch Bugs und man rennt natürlich auch rein. Davon kann sich keine Software freisprechen. Ich bin mir nicht sicher, ob ich so viele negative Punkte hab. Ich hab zwei Storys aus der realen Welt, die starke Herausforderungen sind. Bei speziell Infrastructure Orchestration und nicht bei Configuration Management. Bei Configuration Management haben wir andere Herausforderungen. Geben wir mal eine Story aus der realen Welt. Und zwar hatte ich gerade gesagt, dass man bei Terraform eigentlich eine deklarative Definition anlegt. Das bedeutet, was ist mein Endstate? Wie soll das sein? Und dann Terraform kümmert sich darum, um das zu machen. Das bedeutet dann natürlich auch, wenn ich jetzt zum Beispiel mein Base-Image von meiner virtuellen Maschine, Amazon EC2, ändere, dann ist das kein In-Place-Upgrade. Das bedeutet, Terraform geht hin, tötet deine VM und bootstrappt die neu. Mit töten meine ich delete, destroy. Und das muss man wissen. Jede Änderung an Terraform kann in der Theorie zu einem Neuanliegen der Ressource führen. Das bedeutet, das muss man im Hinterkopf haben, damit man seine Services nicht abschießt. Es gibt spezielle Ressourcen, die in-Place-Upgrades können.",
+      "start": 2755799,
+      "end": 2864181,
+      "confidence": 0.8197042801556419,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Das heißt, es ist wirklich nur dafür geeignet für Setups, wo man wirklich diesen Cloud-Gedanken komplett lebt. wo alles jederzeit sterben kann jede vm jedes service weil ich automatisch immer ein backup hab oder zumindest mehrere instanzen und die kann jederzeit irgendwas wegschießen und es lebt trotzdem alles sauber weiter also das muss gegeben sein damit die auch dementsprechend sinnvoll einsetzen kann sie das richtig muss.",
+      "start": 2864221,
+      "end": 2889499,
+      "confidence": 0.8356515151515153,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Gegebenenfalls nicht gegeben sein ihr müsst auf jeden fall daran denken und euren kopf darum rappen um das im hinterkopf zu haben und nicht ein problem oder nicht in Erklärungsnot zu kommen, warum auf einmal die Infrastruktur down ist. Also das müsst ihr schon ein bisschen beachten, aber du sagtest ja schon richtig, Cloud heißt ja nicht, dass mein Server immer da ist, weil der Hypervisor unten drunter kann ja einen Netzteilfehler haben oder ähnliches und dann ist die Cloud auch weg. Cloud kann bedeuten, dass jede Maschine, die ihr da habt, binnen Sekunden einfach tot ist. Und dann gibt es natürlich sowas wie Autoscaling oder Automatisierung, die natürlich dann die Maschine wieder ersetzt, auf eine andere Hypervisor, blablabla. Nur viele Leute vergessen das. Aber das ist jetzt nichts Spezifisches für die Cloud. Das ist auch spezifisch in einem Datacenter. Wenn die Datenbanken hopscannen oder der RAID Controller oder die CPU einfach rüber brennt, ist der Server halt down.",
+      "start": 2889539,
+      "end": 2942023,
+      "confidence": 0.7601069182389939,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Der Unterschied ist, dass man halt in der Cloud jederzeit einen neuen Server hochfahren kann. Und in deinem eigenen Datacenter, wenn der RAID Controller flöten geht, dann ist es halt schwierig, irgendwas wieder hochzufahren. Zumindest nicht in der gleichen Schnelligkeit wie in der Cloud.",
+      "start": 2942203,
+      "end": 2955646,
+      "confidence": 0.7484318181818183,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Würde ich so nicht unterschreiben. Würde ich erst mal sagen, kommt auf das Department an und was du für eine Infrastruktur hast und Automation drumherum. Also ich kenne auch Firmen, die alles auf Bare Metal betreiben und einfach unglaublich gut sind in der Hinsicht und ähnliche Also die bauen sich dann, du bist dann sehr nah, was man heutzutage Inhouse-Cloud nennt, ja?",
+      "start": 2955666,
+      "end": 2976593,
+      "confidence": 0.808790322580645,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Eben, du baust dir dann deine eigene Cloud, dann hast du natürlich wieder die gleichen Garantien sozusagen.",
+      "start": 2976634,
+      "end": 2980857,
+      "confidence": 0.6903529411764705,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Genau, nur um mal die Begrifflichkeiten halt zu trennen, Inhouse-Cloud versus Cloud.",
+      "start": 2980877,
+      "end": 2984720,
+      "confidence": 0.7420833333333334,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Wobei eine Datenbank mal schnell wieder hochzuziehen, das ist sowieso noch mal eine andere Geschichte, wenn es um assistente Daten geht. Das ist sowieso immer schwierig, weil wenn dir da der RAID-Controller wegbricht, dann sind deine Daten weg. Dann hilft dir halt auch nichts, eine EC2-Instanz wieder hochzufahren, wenn deine Daten weg sind.",
+      "start": 2984760,
+      "end": 3000172,
+      "confidence": 0.7395471698113207,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Was soll ich sagen? Ich arbeite bei einem Database-as-a-Service-Firma, die genau das macht, was du als schwierig beschreibst.",
+      "start": 3000832,
+      "end": 3006475,
+      "confidence": 0.8013888888888888,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Darum gibt's eure Firma.",
+      "start": 3006495,
+      "end": 3007555,
+      "confidence": 0.6767500000000001,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Ich will nur sagen, das geht. Ich will aber auch sagen, es ist schwierig. Immer wenn Leute mich fragen, warum ich da arbeite, sage ich, weil das technische Problem sehr spannend ist. Viele Firmen haben ein Problem mit der Skalierung von stateless Microservices. Wir machen das alles mit stateful Services, nämlich Datenbanken. Deswegen ist die technische Herausforderung sehr spannend. Aber zurück zu den Storys aus der realen Welt.",
+      "start": 3007615,
+      "end": 3030265,
+      "confidence": 0.8096323529411766,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Deine zweite Geschichte, genau.",
+      "start": 3030305,
+      "end": 3031926,
+      "confidence": 0.776,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Meine zweite Geschichte. Und da möchte ich nur noch mal ganz doll den Dominik grüßen, weil die Story kommt nämlich primär von ihm, beziehungsweise die er versucht zu lösen. Und zwar hatten wir bei Trivago ein größeres Repository mit Terraform-Modulen, wo wir die komplette Google-Cloud-Infrastruktur gemanagt haben. Und mit komplett meine ich leider nicht ganz komplett. Mit komplett meine ich die Anlage von Projekten, die Anlage von Usern, die Anlage von Gruppen und so weiter. Und zwar haben wir für jedes Google Cloud Projekt so eine Art Standard entwickelt, dass spezifische Service User angelegt werden, dass die Superadministratoren überall Rechte haben, dass die Logs, die Audit-Logs dann entsprechend in Object Storage gepackt werden und so weiter und so fort. Also wir hatten so ein Template-pro-Google-Projekt. Und dafür haben wir, oder primär Dominik hat dafür eigene Module entwickelt und hat das sehr einfach gemacht für andere Produkt-Engineering-Teams, sich ein neues Projekt zu erstellen und ihn rechts zu machen. Das waren ein paar Zeilen. Und unten drunter hat natürlich eine ganze Magie stattgefunden. Das hat aber über Zeit dazu geführt, dass wir so 30, 40, 50, 60 Google-Projekte haben, was jetzt nicht das Problem ist, sondern das Problem ist jetzt, dass ein Terraform-Run von diesem Repository so ungefähr 20, 30, 40 Minuten gedauert hat, Weil unten drunter die Provider natürlich gegen die Google-API gegangen sind und immer gefragt haben, gibt's diesen User schon, ah, muss ich den anlegen und so weiter und so fort. Ja, also du hast da konstant wegen, weiß ich nicht, tausenden von Ressourcen, weil ein Google-User ist ja nicht nur ein Google-User, da hängen ja auch Rechte dran und da muss man ja auch checken, gibt's denn diese Object Storages eigentlich und so weiter und so fort. Das hat zu verschiedenen Dingen geführt. Auf der einen Seite war der Feedback-Loop enorm langsam, weil Terraform durch alle Ressourcen gehen musste, gegen die API checken musste und dann ein Run 20, 30 Minuten gebraucht hat. Warum hat dieser Run 20 bis 30 Minuten gebraucht? Nicht, weil das Prozedural ausgeführt wird, sondern das wird schon parallelisiert. sondern weil du irgendwann in die Google API Rate Limits gerannt bist, weil du so oft diese User API hämmerst, da sagt ja mal Google, hör mal Kollege, ich stoppe dich jetzt mal hier und du machst jetzt erstmal ein bisschen langsamer. Das bedeutet, die Herausforderung, was beziehungsweise wie du es in einer größeren Organisation mit mehr Teams und so weiter managt, ist nicht klein und dass ihr dann nicht in dieselben Problematiken rennt, langsamer Feedback-Loop, da müsst ihr schon sehr, sehr viel Hirnschmalz reinstecken, weil auf der einen Seite wollt ihr natürlich, dass alle Google-Projekte in eurer Organisation zum Beispiel gleich aussehen, Compliance-mäßig oder ähnliches und nicht jeder sein eigenes Ding macht. Auf der anderen Seite wollt ihr natürlich auch keine Teams blocken oder ähnliches.",
+      "start": 3031966,
+      "end": 3193619,
+      "confidence": 0.8021125265392776,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Kann ich dann nicht einfach bei Google anrufen und sagen, hey, schreib mal das Rate Limit hoch?",
+      "start": 3194330,
+      "end": 3197832,
+      "confidence": 0.5882941176470589,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Ja, kannst du machen und wurde auch gemacht. Aber irgendwann sagen die auch, hör mal, hast du denn nicht mehr alle? Besonders, du kannst ja nicht zu europäischen Arbeitszeiten von 8 bis 17 Uhr ... Und wenn du 200 Engineers hast, die da konstant irgendwie Pulvercrest machen und dann On- und Offboarding, und du nimmst da User raus, packst da User rein, und da läuft ja von 8 bis 17 Uhr konstant irgendein Terraform-Run, du hämmerst ja dann eigentlich neun Stunden auf der Google-API rum. Das sagt Google auch. Wie viel möchtest du mir eigentlich bezahlen, damit ich dir das Rate Limiting wegschalte?",
+      "start": 3197932,
+      "end": 3225429,
+      "confidence": 0.6503300970873784,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Was mich da eigentlich immer wundert ist, dass sogar mit Google zum Beispiel, die ja wirklich mit der Google Cloud darauf spezialisiert sind, Terraform offiziell unterstützen, dir das empfehlen und dann machst du das so und dann läufst du in solche Probleme rein. Also das wundert mich immer. Die werden ja mehrere große Kunden haben und sollten dafür ja eigentlich eine gute Lösung haben. Also das fasziniert mich immer, wie gleich, würde ich mal sagen, diese Probleme auch mit großen Providern sind und man hat doch immer irgendwo dieselben Probleme wieder. Sogar wenn man glaubt, okay, wenn es um Skalierung geht und um Rate Limits auf APIs kann nicht so schwierig sein, wenn ich mit Google zusammenarbeite.",
+      "start": 3225469,
+      "end": 3264190,
+      "confidence": 0.7689914529914533,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Wundert mich eigentlich gar nicht, weil das ist alles eigentlich, Google kann da eigentlich nichts für, sondern das ist Organisationsstruktur und wie du deinen Terraform-Module und State aufbaust und was du da für Prozesse drum setzt. Deswegen ist es wie klassische Softwareprogrammierung. Es gibt gute Lösungen, es gibt schlechte Lösungen, es gibt Lösungen, die passen auf deinen Anwendungsfall und es gibt Lösungen, die werden implementiert, die funktionieren zwar, aber passen nicht auf deinen Anwendungsfall. Du kannst ja auch alles mit Perl schreiben, geht ja auch. Willst du es? Also ich will es zum Beispiel nicht. Es gibt Leute, die sagen, hey Andi, was redest du da? Natürlich kann ich alles mit Perl machen. Und natürlich mache ich auch alles mit Perl. Ja, ist richtig, mach mal.",
+      "start": 3264370,
+      "end": 3302949,
+      "confidence": 0.7458412698412695,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Aber war das jetzt eine schlechte Herangehensweise, das so aufzusetzen? Würdest du es jetzt im Nachhinein anders machen?",
+      "start": 3303029,
+      "end": 3308491,
+      "confidence": 0.7413333333333334,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Also erstens hat das Trivago sehr, sehr lange getragen. Also die Lösung ist auf jeden Fall schon länger in Produktion und funktioniert.",
+      "start": 3308651,
+      "end": 3317374,
+      "confidence": 0.8359545454545455,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Ja, ja, aber du hast ja im Idealfall davon was gelernt. Also würdest du es jetzt wieder gleich aufziehen oder würdest du es anders machen? Also würdest du lieber das Rate Limit in Kauf nehmen oder würdest du deine Prozesse vielleicht anders gestalten?",
+      "start": 3317414,
+      "end": 3329780,
+      "confidence": 0.7094883720930233,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Ich würde zusehen, dass das Template, wie ein Google-Projekt auszusehen hat, so klein wie möglich halte. Und dass man dann mehr und mehr Verantwortlichkeiten und Terraform-Ressourcen in die Entwicklerteams selbst gibt. Und soviel ich weiß, Also das grundlegende Konzept ist nicht falsch, finde ich. Und ich glaube auch, das, was ich jetzt gerade spreche, ich glaube, das befindet sich gerade auch in Entwicklung, muss ich zugeben, weiß ich nicht. Aber dass du dann wirklich mehr in die Richtung gehst, das zentrale Management so slim wie möglich zu halten und dann mehr und mehr in die Verantwortung der einzelnen Teams zu geben, weil dann umgehst du halt die große Anzahl von Ressourcen. Also ich meine, dieses große Repository hatte jetzt nicht, zum Beispiel, wenn ein Team irgendwas mit Google Dataflow gemacht hat, dann hat das große Repository nicht die Anlage des Dataflow-Clusters gemanagt, sondern das war schon immer innerhalb der jeweiligen Produktteams, sondern wirklich nur User anlegen, Rechte anlegen und so weiter und so fort. Aber auch das hat dann in der großen Multiplikation dazu geführt, dass du eine hohe Anzahl an Ressourcen und API-Calls hast.",
+      "start": 3329840,
+      "end": 3392097,
+      "confidence": 0.8283675675675675,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Das heißt, wenn jetzt ein Team zum Beispiel neun User gebraucht hat, dann haben sie das in dieses GitHub-Repository gepusht und haben dann 40 Minuten warten müssen, bis der User angelegt gewesen ist.",
+      "start": 3392657,
+      "end": 3406002,
+      "confidence": 0.8164848484848486,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Das ist korrekt. Okay.",
+      "start": 3406142,
+      "end": 3407623,
+      "confidence": 0.2265,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Naja gut, das trifft sich ja gut. Kann man in die Küche gehen, Kaffee trinken, gemütlich mit ein paar Leuten socializieren. Die Geschichten austauschen ist ja auch immer sehr hilfreich.",
+      "start": 3408263,
+      "end": 3417665,
+      "confidence": 0.6989000000000001,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Aber wenn man Open Source, also Inner Source, innerhalb der Firma macht, dann ist es ja sowieso, du machst einen Pull-Request und du erwartest ja nicht, dass dein Team alles stehen und liegen lässt und deinen Code reviewt, oder? Also ich meine, da ist ja eh immer ein Delay dazwischen. Somit finde ich, die 40 Minuten ist jetzt so an sich gar nicht schlimm, weil du sagst ja nicht Pull-Request. Und schreist dann, gehst dann in eine Slack-Ad hier, Ad-Channel, bitte, bitte, bitte, lasst alles stehen und liegen und reviewt mein Pull-Request. Ist ja auch falsch. Deswegen ist das schon noch okay, denke ich. Also, nur das Problem war, das Problem kommt eigentlich, wenn du einen sehr, sehr wichtigen Fix für einen Incident ausrollen möchtest. Ja? Also, wenn's kritisch ist, wenn du einfach mal die Prozesse über Bord wirfst und einfach mal die Produktionsinfrastruktur wieder fixen musst, dann musst du ja leider auch irgendwie 40 Minuten warten. Und das ist natürlich dann ein schlechtes Zeichen.",
+      "start": 3417685,
+      "end": 3467332,
+      "confidence": 0.7161393939393942,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Okay, also man sieht schon, viele Probleme liegen eher wieder bei dem ganzen Prozedere rundherum und bei der Kommunikation und bei der Erstellung der Prozesse und weniger an der Technik. Okay, gut, dann haben wir, glaube ich, das Thema ganz gut abgehandelt oder ich verstehe es zumindest jetzt wesentlich besser. Also wenn ich das zusammenfassen kann, es ist der Weg, wie man das heutzutage macht, der einzig richtige Weg, sagt unser Guru. Hilft mir viel, wenn es um Security geht, auch wenn ich Hackerangriffe habe, um irgendwas neu hochzufahren. Meine Dev Experience ist viel besser, weil ich das einfach schön verwaltet habe, in Code, in dem Repository gut dokumentiert habe, nachvollziehbar habe, wer was wann wie geändert hat. habe meine Commit-Messages, welches Team oder welcher User hat wann, welche Änderungen beantragt, wann wurde was ausgeführt, habe da also eine gute Nachvollziehbarkeit. Was ich für mich auch noch mitgenommen habe, ist der Unterschied zwischen Configuration Management und Infrastructure Orchestration. Also Configuration Management ist das Setup der Server an sich, also der virtuellen Server, die dann erstellt werden durch Infrastructure Orchestration. Also Infrastructure Orchestration macht mir das ganze Netzwerk, setzt mir die VMs auf und wenn es dann darum geht, der Package zu installieren in dieser VM oder die richtige Docker-Version, dann macht es mein Configuration Management. Und was ich auch noch Wichtiges gelernt habe, den Mythos, dass ich einfach mit Terraform zwischen den Clouds hin und her wechseln kann, dass das eigentlich nicht existiert. Habe ich das alles richtig zusammengefasst?",
+      "start": 3467697,
+      "end": 3562988,
+      "confidence": 0.8069718875502004,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Ja, ich denke schon. Wir haben natürlich jetzt Terraform nur auf einem recht oberflächlichen Level irgendwie besprochen. Viele Detailsachen, wie zum Beispiel, wie das Datefile eigentlich gemanagt wird, ob man das lokal auf dem Festplatte haben sollte oder zentral irgendwie in einem Object Storage für die Execution im Team. Was eigentlich ein Execution Plan ist, der Resource Graph, also das bedeutet, wie Terraform unten drunter funktioniert. Das haben wir alles mal weggelassen oder auch Provider, wie du zum Beispiel, wenn du deine eigene REST-API hast oder GraphQL-API oder was auch immer, wenn du eine eigene API hast, wie du dann einen eigenen Terraform-Provider schreibst. Können wir irgendwann mal machen. Oder auch, was für Möglichkeiten es gibt. Es gibt eigentlich Continuous Integration, Continuous Delivery und Continuous Deployment für Infrastruktur und Configuration Management zu implementieren. Weil das, was du mit Software machen kannst, das bedeutet Unit Tests, Integration Tests, Baudi Software und Chipsy of Production, all das kannst du natürlich jetzt auch, da du deine Infrastruktur und dein Configuration Management im Code hast, natürlich auch damit machen. Hat ein bisschen andere Herausforderungen. Und ja, es geht auch alles mit dem Jenkins. Gibt natürlich dann hier und da ein paar spezialisierte Tools dafür. Die gehen dann nochmal zwei, drei Schritte weiter. Unter anderem Stichwörter fallen da wie GitOps und so weiter. Ist jetzt nicht genau das gleiche, aber spielen da mit einer Rolle. All sowas haben wir natürlich jetzt nicht besprochen. Deswegen hoffe ich trotzdem, dass du dich jetzt in dem ganzen Thema ein bisschen sicherer fühlst. Bist du motiviert, das mal auszuprobieren?",
+      "start": 3563228,
+      "end": 3648874,
+      "confidence": 0.7649884615384609,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Ja, auf jeden Fall. Es gibt ja meines Wissens auch einen Hetzner Provider, obwohl die ziemlich am Anfang sind und meine Hauptinfrastruktur von meinen Side-Projects liegt ja bei Hetzner. Aber ich würde mich auf jeden Fall mal im Detail anschauen, ob ich da nicht vielleicht auch was schön dokumentieren kann, weil derzeit klicke ich alles über die Web-UI zusammen und ist mir auch klar, dass das nicht der perfekte Weg ist. Auf jeden Fall vielen Dank an unseren DevOps-Guru. Wenn ihr der Meinung seid, irgendwas war falsch und wenn ihr unseren Guru challengen wollt, gibt es ein deutsches Wort für Challengen eigentlich? Herausfordern. Wenn ihr unseren Guru herausfordern wollt, dann schreibt uns doch eine E-Mail an stetig at engineeringkiosk.dev oder direkt auf Twitter unter engkiosk. Und wir würden uns natürlich auch freuen über eure Erfahrungen in dem ganzen Bereich von Configuration Management und Infrastructure Orchestration und ob ihr das auch alle gleich seht wie unser Guru. Damit bis nächste Woche.",
+      "start": 3649174,
+      "end": 3707001,
+      "confidence": 0.7960062500000002,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Einen schönen Tag. Ciao.",
+      "start": 3707041,
+      "end": 3707682,
+      "confidence": 0.48650000000000004,
+      "channel": null,
+      "speaker": "B"
+    }
+  ],
+  "confidence": 0.7833152869282923,
+  "audio_duration": 3713.0,
+  "webhook_status_code": null,
+  "webhook_auth": false,
+  "summary": null,
+  "auto_highlights_result": null,
+  "content_safety_labels": null,
+  "chapters": null,
+  "sentiment_analysis_results": null,
+  "entities": null
 }

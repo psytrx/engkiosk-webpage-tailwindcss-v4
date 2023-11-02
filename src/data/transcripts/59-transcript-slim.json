@@ -1,1226 +1,1226 @@
 {
-    "language_code": "de",
-    "audio_url": "https://audio1.redcircle.com/episodes/fedbb121-bf9f-46fe-9a36-15bac3ae52be/stream.mp3",
-    "punctuate": true,
-    "format_text": true,
-    "dual_channel": false,
-    "webhook_url": null,
-    "webhook_auth_header_name": null,
-    "webhook_auth_header_value": null,
-    "audio_start_from": null,
-    "audio_end_at": null,
-    "word_boost": [],
-    "boost_param": null,
-    "filter_profanity": false,
-    "redact_pii": false,
-    "redact_pii_audio": false,
-    "redact_pii_policies": null,
-    "redact_pii_sub": null,
-    "speaker_labels": true,
-    "speakers_expected": 2,
-    "content_safety": false,
-    "content_safety_confidence": null,
-    "iab_categories": false,
-    "custom_spelling": null,
-    "disfluencies": false,
-    "sentiment_analysis": false,
-    "auto_chapters": false,
-    "entity_detection": false,
-    "summarization": false,
-    "summary_model": null,
-    "summary_type": null,
-    "auto_highlights": false,
-    "language_detection": false,
-    "speech_threshold": null,
-    "id": "621g5eosuj-aa13-4272-94a2-92066b11681d",
-    "status": "completed",
-    "error": null,
-    "utterances": [
-        {
-            "text": "Moin Leute, in dieser Episode geht es mal wieder um Open Source. Und um Geld. Vielleicht bist du selbst ein Open Source Contributor oder Maintainer. Oder es steht auf einer deiner To-Do-Listen für 2023 mal den ersten Pull-Request zu eröffnen. Auf jeden Fall nutzt du Open Source in deinem Alltag. Und wenn du dir einmal Gedanken darüber machst, wer diese ganze Software eigentlich in Schuss hält, auf der unsere aktuelle Gesellschaft aufgebaut ist, dann wird dir recht schnell schlecht. Die Masse an Open-Source-Projekten wird von Freiwilligen in ihrer privaten Zeit maintained. Um dem etwas entgegenzusetzen, sprechen wir heute über die Möglichkeiten zur Finanzierung deines Open-Source-Projektes bzw. Wege, um mit deinem Open-Source-Projekt Geld zu verdienen. Vom klassischen Sponsoring, über staatliche Förderung oder dem Early Access Modell bis hin zur klassischen Anstellung als Open Source Maintainer. Und am Ende klären wir noch, ob es unmoralisch ist mit Open Source Geld zu verdienen. Viel Spaß! Lieber Wolfgang, habe ich dir eigentlich mal gesagt, dass ich mich sehr sehr gefreut habe, dass du den weiten Weg aus dem tiefen Österreich zu uns in den Westen gefunden hast, damit wir im realen Leben zusammen zur FOSDEM-Konferenz nach Brüssel fahren konnten und uns dort wirklich getroffen haben, ein Bier getrunken haben und uns glaube ich sogar ein Croissant geteilt haben?",
-            "start": 5314,
-            "end": 83957,
-            "confidence": 0.7996728971962612,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Westen? Das werde ich nie verstehen. Ich bin immer nur nach Norden gefahren, nach Duisburg. Ihr seid im Norden bitte, nicht im Westen. Im Westen ist Frankreich, im Norden ist Duisburg.",
-            "start": 83997,
-            "end": 92703,
-            "confidence": 0.6965806451612904,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Perspektive, Perspektive.",
-            "start": 93096,
-            "end": 95137,
-            "confidence": 0.348,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Aber nach Brüssel war auch kurz nach Westen. Stimmt, ab Köln fahrt man nach Westen, nach Brüssel.",
-            "start": 95177,
-            "end": 100238,
-            "confidence": 0.8198823529411765,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Für alle Personen, die uns am Rundfunkgerät hören, zum Kontext.",
-            "start": 100258,
-            "end": 104179,
-            "confidence": 0.8583000000000001,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Moment, was für Rundfunkgerät? Man kann uns gar nicht am Rundfunkgerät hören. Außerdem, die meisten Leute wissen wahrscheinlich nicht mal, was ein Rundfunkgerät mehr ist. Hast du überhaupt ein Rundfunkgerät daheim? Was ist denn im Katastrophenfall? Hast du ein Rundfunkgerät, Andi? Bei den Batteriebetrebern ist es auch noch oder so mit Kurbel am besten.",
-            "start": 104219,
-            "end": 120784,
-            "confidence": 0.6009259259259259,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Ich glaube, ich habe keins.",
-            "start": 120824,
-            "end": 121584,
-            "confidence": 0.32320000000000004,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Nein. Okay, aber bitte sag deinen Kontextsatz für den Kontext für alle.",
-            "start": 121604,
-            "end": 126515,
-            "confidence": 0.7287499999999999,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Wolfgang und ich sind vor kurzem nach Brüssel, Belgien, gefahren zur FOSDEM. Die FOSDEM ist das Free and Open Source Developer Europe Meeting und das ist eine sehr, sehr große Konferenz mit ca. 8000 Leuten zum Thema Open Source und Free Software. nur mal um den scale ein bisschen einschätzen zu können die ganze sache findet zwei tage lang an einem kompletten universitätscampus in brüssel statt es finden circa ich glaube 500 oder 600 talks statt wirklich zu allen themen und wenn ich Wenn ich alle Themen meine, dann meine ich alle Themen. Also ich hab immer gedacht, ich wüsste, was im Open-Source-Bereich abgeht und dann fährt man einmal zu dieser Konferenz und dann merkt man halt einfach keine Ahnung. Also DNS hat einen eigenen Devroom, Container, Community, BSD. Aber es gibt auch wirklich einzelne Devrooms zu LLVM, Legal and Policy Issues, Open Media, Railways und Open Transport, alles zum Thema Energy, also wie zum Beispiel eine Open Source Firmware für eure Wallbox, kompletter Themenbereich über Software, Bill of Materials, Risk 5, Real-Time Communication und, und, und. Völlig insane, sag ich euch.",
-            "start": 126555,
-            "end": 199498,
-            "confidence": 0.7872307692307688,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Und vor allem, wenn man 8000 Leute in kleine Räume einsperrt aus den 70er Jahren, das findet ja auf so einem Uni-Campus statt, dann hat das Ganze zum Resultat genauso, wie meine Stimme jetzt klingt, weil man da einfach coole Viren oder Bakterien aufschnappen kann und dann hat man wieder so eine Stimme wie ich. Also Entschuldigung gleich mal für diese Stimme, aber es gibt nicht nur Viren, sondern auch coole Dämonen, definitiv.",
-            "start": 199558,
-            "end": 220993,
-            "confidence": 0.7864794520547945,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Aber ich glaube der chaos computer club kongress der immer zwischen weihnachten und silvester stattfindet der hat auch sowas und das nennt sich dann immer kongress solche also google mal kongress solche das ist wirklich so ein ding bei den leuten die dann auf dem ccc sind aber wolfgang meine frage ist eigentlich an dich was ist das eine was dir von dem besuch in brüssel hängen geblieben ist.",
-            "start": 221433,
-            "end": 242127,
-            "confidence": 0.8238985507246378,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Natürlich unser Community treffen. Wir haben ja Hörer in Brüssel getroffen zu einem netten Abendessen bei einem Getränk. Und das ist mir eigentlich am meisten in Erinnerung geblieben. Ist es jetzt schlecht, wenn mir die soziale Komponente wichtiger war als die technischen Vorträge?",
-            "start": 242807,
-            "end": 258312,
-            "confidence": 0.8053023255813954,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Nö, nö, ist schon positiv. Ich sag ja auch immer, die Technologie ist so der einfache Part. Schwieriger ist immer die Menschen. Von daher passt das ganz gut. Mir ist aber eigentlich eine Sache im Kopf geblieben. Oder beziehungsweise wieder in Erinnerung gerufen worden, Brüssel ist tierisch teuer. Ich habe für drei Bier 27 Euro gezahlt.",
-            "start": 258372,
-            "end": 275738,
-            "confidence": 0.7307500000000001,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Also auch nichts technisches wieder.",
-            "start": 275778,
-            "end": 277678,
-            "confidence": 0.7746,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Nein, finde ich, gilt auch als soziale Komponente.",
-            "start": 277738,
-            "end": 280059,
-            "confidence": 0.855,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Ich habe gedacht, du kommst jetzt sicher mit diesem Vortrag, wie man Gigabyte große DNS Zone Einträge möglichst schnell parsen kann und es schafft einen Gigabyte pro Sekunde Raten zu bekommen, wenn man DNS Zone Files parst.",
-            "start": 280099,
-            "end": 294102,
-            "confidence": 0.8019999999999999,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Das war ein sehr genialer Vortrag, verlinken wir auch in den Shownotes. Aber warum brabbeln wir die ganze Zeit über Open Source und wie teuer Bier ist? Weil genau das heute unser Thema ist. Heute dreht sich alles um Geld und Open Source. Und da fragen sich viele, hä, wie passt denn das zusammen? Erkläre ich euch jetzt. Eigentlich basiert irgendwie alles auf Open Source. Das Ganze ist inzwischen ein fundamentaler Baustein der heutigen genutzten Services und mit hoher Wahrscheinlichkeit auch dafür verantwortlich, dass die Firma, für die ihr arbeitet, den Service betreiben kann, den sie halt betreibt. Das Tolle an Open Source ist, da gibt es irgendwie eine riesen Community in jedem Bereich. Es gibt sogar Open Source Hardware und Chip Design. Und in der Theorie kann halt wirklich jeder mitmachen. Und das tun ja auch sehr viele, was ja grandios ist. Und die Leute, die noch nicht in Open Source involviert sind, aber Software-Engineering betreiben, die haben immer auf ihrem To-Do-Zettel, ich will mal zu Open Source kontribuieren. Vielleicht erkennt ihr euch da wieder. Und wenn man die ganze Sache jetzt mal weiter spinnt, dann haben viele Leute so den großen Traum, für Open-Source-Entwicklung bezahlt zu werden oder mit einem eigenen Open-Source-Projekt Geld zu verdienen. Und das ist das Hauptthema dieser Episode. Wie realistisch ist das eigentlich? Was für Möglichkeiten gibt es zur Finanzierung von Open-Source-Projekten? Und welche Herausforderungen gibt es denn da? Weil der normale Werdegang eigentlich für Software-Engineers, die mit Open-Source anfangen, ist, die haben eine Idee, setzen sich hin, hacken und drücken dann irgendwann Git, Push, Origin, Main und publishen das auf GitHub und fertig. Also die meisten Leute machen das in ihrer Freizeit. Und es wäre natürlich immer ganz geil, wenn man vielleicht noch ein bisschen Geld dazu bekommt, wenn man seiner Passion so ein bisschen nachgeht.",
-            "start": 294742,
-            "end": 387925,
-            "confidence": 0.8014455445544554,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Da muss ich dir jetzt gleich korrigieren, weil du sagst, der Großteil macht das in seiner Freizeit. Es gibt da ja Statistiken dazu, dass 50 Prozent der Open-Source-Entwickler das im Rahmen des Jobs machen und bezahlt dafür werden. Also der Großteil ist es nicht, aber es machen sehr, sehr viele Leute in der Freizeit.",
-            "start": 388706,
-            "end": 403338,
-            "confidence": 0.7408148148148146,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Bei diesen Statistiken bin ich immer recht vorsichtig, weil ich mir da die Frage stelle, von diesen 50 Prozent sind das die Leute, die wirklich 40 Stunden in der Woche an diesem Open-Source-Projekt arbeiten? Oder sind das Leute, die hier und da mal einen Backfix kontribuieren?",
-            "start": 403358,
-            "end": 416089,
-            "confidence": 0.799086956521739,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Das ist ja egal, aber wenn 50% des Sourcecodes bezahlt ist, dann ist das schon mal die Hälfte, die bezahlt ist.",
-            "start": 416424,
-            "end": 423697,
-            "confidence": 0.7690952380952383,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Ja, das haben 50% so an sich, dass sie die Hälfte sind, das ist richtig.",
-            "start": 423717,
-            "end": 426522,
-            "confidence": 0.5948,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Eben, aber du hast ja die Mehrheit gesagt, also da muss man hier aufpassen. Aber es stimmt schon, es ist Anzahl der Code-Zeilen, wie wird das gerechnet über die E-Mail-Adresse und so weiter. Auf jeden Fall ist es ein großer Punkt, dass Companies mittlerweile viel Einfluss haben auf die Open-Source-Szene. Da hat es auch einen guten Vortrag gegeben auf der FOSDEM zu diesem Thema. dass der Einfluss von diesen großen Tech-Konzernen auch immer größer wird im Open-Source-Bereich, weil einfach die Leute stellen, die Open-Source-Contributen und dadurch halt auch der Einfluss größer wird und es teilweise nicht mehr so frei ist, wie man sich das eigentlich vorstellen würde. Können wir auch gern verlinken natürlich in den Show Notes.",
-            "start": 427307,
-            "end": 462468,
-            "confidence": 0.7926239316239317,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Ja, okay, da hast du dir jetzt irgendeine Statistik aus der Nase gezogen, das ist jetzt wie irgendwelche Firmen Leute bezahlen, aber wie sieht's denn aus, wenn ich selber ein Open-Source-Projekt hab? Wie kann ich denn Geld verdienen, Geld einsammeln, einen Benefit dafür kriegen?",
-            "start": 462888,
-            "end": 474733,
-            "confidence": 0.7045454545454546,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Also grundsätzlich, was man mal klar sagen muss, ist, dass es schwer ist. Wenn man jetzt einfach sein Wissen verkauft, irgendwas programmiert, freelanced für eine Firma, das ist wahrscheinlich wesentlich einfacheres Geld. Muss man ganz klar sagen. Also, dass man jetzt super reich wird und super schnell auch irgendwo einen Geldfluss hat, das ist bei Open Source sicherlich schwieriger. Ganz allgemein. Egal, was man macht. Ist einmal sicher ein Punkt. Aber natürlich, ich glaube, eine Quelle sind Firmen. Das heißt, dass Firmen Geld in die Hand nehmen und Open Source Sponsoring betreiben. Das heißt, wenn man eine coole Open Source Software hat, eine Library, was es auch immer ist, und einen Mehrwert bietet für eine Firma, dann kann man auch versuchen, diese Firmen anzusprechen, dass die ein Sponsoring machen und man Geld von diesen Firmen bekommt.",
-            "start": 475250,
-            "end": 520436,
-            "confidence": 0.8151764705882354,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "In der Regel hat man dafür irgendeine Art Champion innerhalb der Firma.",
-            "start": 520836,
-            "end": 524458,
-            "confidence": 0.8444999999999999,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Was ist ein Champion?",
-            "start": 524498,
-            "end": 525659,
-            "confidence": 0.618,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Ein Champion ist eigentlich jemand, der die Grundidee innerhalb der Firma treibt, weil es ist ja jetzt nicht so, als würde das Topmanagement sagen, hey, Open Source ist cool, lass mal irgendwie fünf, sechs, siebenstellige Beträge in Open Source schießen. sondern du musst den Executives das halt schon irgendwie verkaufen. Das bedeutet, du hast jemand in der Firma, ein Senior Engineer, ein Staff Engineer oder ähnliches, der macht daraus ein Case, sag ich immer. Der schreibt mal ein Dokument, warum sollten wir um Source sponsoren, welche Vorteile hätten wir dazu, welches Projekt sollten wir sponsoren, mit wie viel Geld und so weiter.",
-            "start": 525699,
-            "end": 554917,
-            "confidence": 0.7304999999999999,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Und was für Vorteile gibt's denn für so Firmen? Was würdest du da reinschreiben? Also, was springt denn für die Firma raus am Ende?",
-            "start": 554957,
-            "end": 561882,
-            "confidence": 0.7047083333333332,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Man kann die Vorteile aus verschiedenen Perspektiven beleuchten, meines Erachtens. Auf der einen Seite ist das natürlich Upskilling und Vorträge, weil man dann durch das Sponsoring gegebenenfalls ein paar privilegiertere Zugänge zu den Open-Source-Maintainern und zum Produkt bekommt, Beispiel direkter Zugriff auf die Maintainer. Man kann die mal einladen, um Vorträge zu halten oder Workshops mit dem eigenen Engineering-Team zu halten. Man kann Bugs oder Features priorisieren. Ja, das ist zum Beispiel so ein Vorteil, wo man in der Regel halt sehr viel Geld in die Hand nehmen muss, um teure Workshops bei Firmen einzukaufen, die dann mit hoher Wahrscheinlichkeit sich nur gut mit dem Tool auskennen, es aber nicht programmieren. Eine andere Thematik ist zum Beispiel das Employer Branding beziehungsweise das Recruiting. Es fällt so ein bisschen in die Kategorie, tue Gutes und rede darüber. Das bedeutet, wenn ich jetzt als Firma einfach mal 10, 15, 20.000 Euro oder mehr in die Hand nehme und das in ein Open-Source-Projekt stecke, dann kann ich damit natürlich auch hausieren gehen und sagen, hey, wir nehmen Open-Source ernst. Wir fördern dieses Open-Source-Projekt mit einer betrachtlichen Summe Geld. Und das ist auch völlig okay. Und das ist natürlich attraktiv für Engineers, besonders die im Open-Source-Bereich sind, weil das ausstrahlt, okay, wir als Firma oder die Firma nimmt Open-Source ernst.",
-            "start": 562642,
-            "end": 633268,
-            "confidence": 0.8101574074074078,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Aber ich will ja gar nicht 20.000. Ich will ja gar nicht so eine große Firma. Da kann ich dann vielleicht gar nichts bieten. Kann ich nicht irgendwas finden, wo ich weniger Geld bekomme? Also du sprichst jetzt da von einem Champion und von einem Konzern, der irgendwie 20.000 Euro in die Hand nimmt, weil die kleine Firma, die mit Open Source arbeitet, die würde jetzt kein Budget haben von 20.000, das sie mal so einfach auf der Seite haben und irgendwem direkt geben können. Also gibt es dann nichts auf kleinerer Stufe, dass ich jetzt zu meinem Nachbarn oder zu deiner Agentur aus Wanne-Eickl da irgendwie vorbeischauen kann und mal fragen kann, ob die in irgendeiner Form Sponsoring machen? Oder dass es gleich 20.000 sind?",
-            "start": 633703,
-            "end": 670049,
-            "confidence": 0.7484761904761907,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Naja prinzipiell, ich hab jetzt einfach nur mal 20.000 genommen, weil das natürlich dann bei großen Projekten wie React, Webpack und so weiter natürlich dann schon eine Summe ist, wo man dann in die höhere Kategorie kommt und dann auch das Logo da hinpacken kann. Prinzipiell ist die Höhe der Summe völlig irrelevant, meines Erachtens nach, sondern hauptsächlich, dass man halt Open Source sponsort.",
-            "start": 670089,
-            "end": 690782,
-            "confidence": 0.7986718749999999,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Moment, da habe ich gleich die wichtige Frage, du hast das ja schon öfters erwähnt, wie viel Geld muss man dir geben, damit du nackig durch die Wohnung läufst? Alle StammhörerInnen kennen das jetzt schon?",
-            "start": 691262,
-            "end": 700468,
-            "confidence": 0.7371999999999999,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Ich bin ein sehr einfach gestrickter Mensch. Ja, wenn, wenn, wenn du über GitHub Sponsors fünf Euro mir spendest für irgendeine Library, die ich mal veröffentlicht habe, reicht schon, ich freue mich wie Bolle. Also ich bin, ich bin sehr einfach gestrickt, Wolfgang.",
-            "start": 700528,
-            "end": 713779,
-            "confidence": 0.7479069767441862,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Okay, aber wie, wie kann ich es denn erreichen, dass mir jemand fünf Euro spendet oder vielleicht 500 oder so? Glaubst du, dass Agenturen das in die Hand nehmen?",
-            "start": 713839,
-            "end": 721827,
-            "confidence": 0.7536206896551726,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Ja, ich denke, ich denke, Agenturen machen das auch. Viele Agenturen machen das vielleicht nicht genau so, dass sie 500 Euro nehmen und in dieses eine Projekt packen, sondern viele Agenturen gehen eher den Weg über eine Membership in irgendeiner Association, zum Beispiel im Home-Source-Projekt Typo 3 gibt es hintendran eine Vereinigung, da kannst du Member werden, dann hast du Wahlrechte in bestimmten Komitees und solche Geschichten. Viele Open-Source-Systeme, ich glaub, Magento hatte sowas auch, PHP-Shop-System und so weiter und so fort, die haben eher so Associations und so Vereine hinten dran, die dann ein bisschen Governance drum machen, die Linux-Foundation, Apache-Foundation, das sind alles so Elemente, die hinter größeren Open-Source-Projekten stehen. Und Agenturen machen das dann da, in dieser Sicht, ja? Also, genau.",
-            "start": 722347,
-            "end": 763800,
-            "confidence": 0.7717661290322579,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Was natürlich für Agenturen immer schwierig ist, oder ganz allgemein für kleinere Firmen und kleinere Projekte, dass man da natürlich irgendwie eine Rechnung braucht, wenn man was sponsert. Das heißt, wenn ich jetzt den kleinen Entwickler von nebenan sponsern will mit seinem Open Source Projekt, dann ist das schon schwierig. Kann der eine Rechnung ausstellen? Was kann ich da machen? Das wird dann als Firma schon teilweise einfach kompliziert, weil das nicht so ein klassischer B2B Case ist, den man da hat.",
-            "start": 764480,
-            "end": 790203,
-            "confidence": 0.7927195121951219,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Schon klar, aber GitHub Sponsoring zum Beispiel stellt ja inzwischen auch eine Rechnung aus.",
-            "start": 790683,
-            "end": 795144,
-            "confidence": 0.6818571428571429,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Ist das so?",
-            "start": 795184,
-            "end": 796025,
-            "confidence": 0.7506666666666666,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Meines Wissens noch, ja.",
-            "start": 796045,
-            "end": 797165,
-            "confidence": 0.7215,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Aber da musst du natürlich auf GitHub Sponsor sein, musst die ganzen rechtlichen Dinge wieder mit GitHub abgeklärt haben, weil sobald du Geld empfängst als Open Source Entwickler, ist das gleich automatisch schwieriger. Klar. Und für die Firmen natürlich ist es demnach auch schwieriger, wenn sie keine Rechnung bekommen. Aber man kann es auch super einfach umgehen und das machen glaube ich auch viele Firmen, dass man kein klassisches Geld zur Verfügung stellt, sondern irgendwas sponsort, das heißt eine Werbeausgabe oder ein Event sponsert da, irgendein Teil zahlt, vielleicht ein Catering zahlt oder sowas und das macht es dann auch ein bisschen einfacher, da fließt halt dann kein direktes Geld zu dem Entwickler, aber man sponsert vielleicht irgendein Event. wo diese entwickler irgendwo involviert sind also diese möglichkeit gibt es immer und das macht das ganze dann vielleicht ein bisschen einfacher für firmen und für die entwickler.",
-            "start": 797205,
-            "end": 842133,
-            "confidence": 0.7997074829931969,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Innen auch ein viel größeres problem was ich eigentlich sehe wenn firmen wirklich opensource sponsoring mit direktem geld sponsern wollen ist folgendes du hast jetzt eine firma die will 234.000 euro in einer umsauce projekt stecken was sie zum beispiel verwenden view js react oder ähnliches Das Problem ist an diesen großen Projekten, die nehmen diese 2.000, 3.000, 4.000 Euro, sagen danke und machen einfach weiter, weil solche Beträge sind für die nicht unüblich, weil da stehen halt echt große Firmen hinter, teilweise Google, Microsoft und wie sie alle heißen. Und die schießen da wirklich dann 5, 6-stellige Beträge rein. Das Doofe hier eigentlich ist folgendes. React als Beispiel kriegt das Geld. React selbst basiert aber auf, mit hoher Wahrscheinlichkeit, zu vielen JavaScript-Packages. Und unten drunter, in der Dependency-Chain, die meisten gehen halt leer aus. Weil React sicher jetzt nicht die Arbeit macht, okay, welche Dependencies hab ich, und dann reicht das Geld weiter. Wolfgang und ich hatten dazu mal vor ein paar Jahren, glaub ich, eine Idee, die haben wir auch verfolgt. Die Grundidee war eigentlich, du sponserst ein Open-Source-Projekt, sagen wir mal mit 1.000 Euro, ist grad leichter zu rechnen, Und dann wird das Dependency-File, die Package.json oder Package.log genommen, analysiert und dann wird der Betrag von 1000€ prozentual aufgeteilt an alle Dependencies. Weil das Open-Source-Projekt wäre nicht möglich ohne die ganzen Dependencies.",
-            "start": 842153,
-            "end": 924192,
-            "confidence": 0.8037777777777781,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Beziehungsweise man kann auch einen Schritt höher gehen, dass man sagt, ok, alle Libraries, die ich einbinde, bekommen meinen Topf an Open Source Förderung. Ich habe diese 1000 Euro und alle Libraries, die ich verwende, inklusive allen Rekursivabhängigkeiten und darunter liegenden Libraries, bekommen dann auch einen kleinen Teil und das wird fair aufgeteilt. Die Aufteilung soll möglichst automatisch passieren. Das heißt, ich programmiere meine Software, entscheide mich, okay, Open Source ist wichtig. Ich will 1.000 Euro an die Open Source Projekte verteilen. Alles andere geht automatisch und es wird verteilt und jeder bekommt einen kleinen Teil von diesem Topf, ohne dass ich als Firma mir Gedanken machen muss, was mache ich eigentlich, wen will ich unterstützen, welche Libraries verwende ich, welche Abhängigkeiten habe ich in meinem Projekt und so weiter.",
-            "start": 924652,
-            "end": 969066,
-            "confidence": 0.7896307692307691,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Die Probleme, wenn das nicht passiert, haben wir gesehen. Sowas wie Heartbleed in OpenSSL. Da wurde festgestellt, oh, OpenSSL wird irgendwie nur von ein oder zwei Personen maintained. Oder die Sicherheitslücke Lock4Shell in Lock4J. Oh, irgendwie machen zwei Leute das in ihrer Freizeit. Aber es betrifft halt die ganze Enterprise-Schiene. Mit so einem Approach wär das halt nicht passiert, beziehungsweise hätten die Leute deutlich mehr Geld bekommen, weil, nennt mir doch mal ein Projekt, wo OpenSSL keine Rolle spielt oder wo Log4J keine Rolle spielt. Schwierig zu finden.",
-            "start": 969627,
-            "end": 1003578,
-            "confidence": 0.8181590909090908,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Wobei man dazu sagen muss, dass nur weil Geld da ist, es nicht automatisch heißt, dass du Entwickler hast und Leute, die das verfolgen, weil du musst dir die Leute auch erstmal finden, anborden und die müssen motiviert sein. Also rein mit einem Geldtopf kannst du das auch nicht machen und alle großen Firmen wissen das ja, wie schwer es ist, Entwickler innen zu bekommen. Das heißt, auch da ist es halt ein Schritt in die richtige Richtung, wenn du mehr Budget hast, aber es ist sicher nicht der einzige Punkt.",
-            "start": 1004038,
-            "end": 1029967,
-            "confidence": 0.8104505494505495,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Ist schon klar, aber es ist ganz einfach ein Motivator. Ein Motivator bestimmt einfach gegenüber.",
-            "start": 1030287,
-            "end": 1035130,
-            "confidence": 0.7530666666666668,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Moment, sagst du jetzt, dass Geld die Motivation bringt? Gerade du, du bist immer so jemand, der auf die Motivation achtet.",
-            "start": 1035790,
-            "end": 1042335,
-            "confidence": 0.6891428571428571,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Es ist einfach wissenschaftlich bewiesen, dass Geld kurzfristig die Motivation hebt.",
-            "start": 1042375,
-            "end": 1047218,
-            "confidence": 0.8509090909090908,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Kurzfristig, genau.",
-            "start": 1047318,
-            "end": 1048218,
-            "confidence": 0.5760000000000001,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Ich sage nicht sustainable, ich sage kurzfristig. Daniel Pink, Psychologe, alles in seinem Buch Drive dokumentiert, kann ich sehr ans Herz legen, warum man mit Geld keine Leute motivieren sollte. Der Punkt ist aber, bei dieser Open-Source-Geschichte hier, entscheidet eine Open-Source-Sponsoring von GitHub-Sponsors, setze ich mich heute Abend noch dran, fixe ich den Bug, oder ist Netflix mein Freund? Also von daher ... Es kann natürlich auch sein in der Second-Screen-Generation, dass ich bei Netflix einen Bug fixe, aber das ist was anderes. Naja, auf jeden Fall haben wir versucht, dieses Problem zu lösen. Also das, was wir gerade beschrieben haben, wollten wir wirklich haben. Und was soll ich sagen? Wir sind hoffnungslos gescheitert. Wolfgang, erklär doch mal bitte, wo dran sind wir gescheitert?",
-            "start": 1048238,
-            "end": 1086527,
-            "confidence": 0.7835806451612904,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Ja, wenn man das so zusammenfassen kann, wir sind gescheitert am Geld.",
-            "start": 1086912,
-            "end": 1090454,
-            "confidence": 0.76575,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "An der Geldverwaltung wohl eher, oder?",
-            "start": 1090494,
-            "end": 1092535,
-            "confidence": 0.8078333333333334,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Genau. Und zwar, sobald man irgendwie was mit Geld macht und vielleicht nicht auf den Bahamas oder so sitzt, sondern vor allem in der EU, aber Amerika genauso, hat man extrem viel Gesetze, Regularien, die da eingreifen und die das Ganze superschwierig machen. Und ihr habt es zuerst schon erwähnt, Für Firmen ist es natürlich wichtig für deren Buchhaltung, dass die eine Rechnung bekommen. Das heißt, ich als Firma kann nicht Andi einfach 500 Euro geben, ohne dass ich eine Rechnung zurückbekomme von 500 Euro oder für 500 Euro. Also ich kann das natürlich schon machen, aber dann ist es halt irgendeine Ausgabe und ich kann das nicht steuermindernd geltend machen. Und das ist natürlich ein großes Problem für Firmen. und auch für Open-Source-Entwickler, weil die müssen dann plötzlich in der Lage sein, Rechnungen zu schreiben. Die müssen das natürlich dann auch alle versteuern. Und wenn man sich das jetzt rekursiv vorstellt, alle, die JavaScript programmieren, wissen das, wie viele Libraries man denn so rekursiv einbindet. Und wenn man da so eine simple Standard-Library einbindet, kann es schon mal sein, dass man hinten dann irgendwie mit 1.000 Subpaketen wieder rauskommt bei dem ganzen Graphen. Das heißt, man müsste diese 1.000 Euro an 1.000 einzelne Entwickler verteilen. Und das Ganze noch so, dass es steuerlich funktioniert, dass das alles sauber ist, dass man das Geld richtig verteilt hat, dass eine Rechnung rausputzelt, dass die 1.000 Entwickler, die irgendwo in der Welt sitzen, in ganz verschiedenen Ländern, ihr Geld bekommen, dann einen Geldtransfer macht und man dabei nicht im Gefängnis landet. Also diese Herausforderung haben wir probiert anzugehen und sind dann einfach gescheitert. Und wir haben auch mit vielen Profis gesprochen, die ähnliche Dinge machen, die in der Branche zu Hause sind. Und wir haben einfach keine sinnvolle Lösung gefunden, um dieses Problem zu lösen. Und da sprechen wir noch nicht mal von irgendwelchen Spendenquittungen oder Spendensysteme, die in jedem Land anders sind. In der EU Rechnungen sind noch einheitlich. Aber eine Spende in Deutschland ist womöglich keine Spende mehr in Österreich oder Italien oder Frankreich. Also dieses System ist super kompliziert und ist eigentlich mit einer Fiat-Währung, also wenn man nicht auf Krypto oder sonst irgendwas setzt, beinahe unmöglich.",
-            "start": 1092575,
-            "end": 1216644,
-            "confidence": 0.8146793478260875,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Prinzipiell, auch wenn man die ganze Sache kleiner denkt, wenn man gesagt, okay, wir beschränken uns nur auf Deutschland, ist das halt rechtlich eine komplizierte Geschichte, weil wir in der Regel dann das Geld einer Firma einsammeln, es für eine gewisse Zeit halten, und hoffentlich eventuell auszahlen also das bedeutet man verwaltet geld für andere und das nennt man in der regel in im echten leben bank und dann sind wir nämlich an dieser kleinen thematik wie in deutschland der bafin das ist die finanzaufsicht und dann ist man ratzfatz in dem themenbereich muss ich dafür eine kleine banklizenz haben Ich meine, am Ende vom Lied wäre es natürlich toll, wenn man das in Deutschland legal ans Fliegen kriegt, weil ich glaube, wenn man das in Deutschland legal ans Fliegen kriegt, dann hat man das, ich lehne mich mal aus dem Fenster, fast weltweit legal ans Fliegen gebracht. Punkt ist aber, ein simpler Wunsch, Open Source Sponsorings fair zu verteilen, ist in der Realität einfach super hart. Naja, gut, auch wir fallen mal auf die Mütze.",
-            "start": 1217364,
-            "end": 1272306,
-            "confidence": 0.8285056818181817,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Aber wir wären natürlich froh, wenn das irgendwer löst und vielleicht diese Nuss knacken kann, weil es wäre wirklich allen damit geholfen. Und wie ich schon erwähnt habe, ein großer Knackpunkt ist auch das Empfangen von Geld als Open Source Entwickler oder Entwicklerin, weil das ja sofort in die ganze steuerliche Thematik mit reinspielt. Und da gibt es aber mittlerweile ein recht standardisiertes System oder eine gute Lösung. Zum Beispiel Open Collective macht sowas auch, dass man einen sogenannten Fiscal Host sich für sein Open Source Projekt holt. Und dieser Fiscal Host ist dann wie eine kleine Firma, die das Geld annimmt, Rechnungen schreiben kann, dass das alles sauber läuft. Und die Firma bewahrt dann das Geld für das Open Source Projekt auf. Und wenn man mal eine Veranstaltung hat und ein Catering braucht, wenn man mal einen Entwickler hat, der eine Rechnung stellen kann, dann kann man diese Rechnungen fürs Catering, für andere Entwickler, für eine Veranstaltung, was es auch immer ist, dann an diese Firma senden und man bekommt das Geld rückerstattet. Also das ist so ein Weg dazwischen. Das Problem ist aber, dass man da normalerweise keine Personen damit anstellen kann. Also ein klassisches Anstellungsverhältnis ist üblicherweise nicht möglich, weil das natürlich zu komplex wieder wird mit dem ganzen Arbeitsrecht. Aber man hat wenigstens mal einen Topf, wo Geld reinfließen kann und sobald man eine Rechnung hat, eine Ausgabe, kann man das wieder von seinem Open Source Topf rückerstatten. Die nehmen natürlich einen gewissen Prozentsatz von dem Ganzen für dieses Handling, aber damit ist es dann komplett gemanagt und gerade wenn man ein Projekt hat, wo mehrere Leute dran sitzen und involviert sind, kann man das Geld dann natürlich jeweils für gewisse Ausgaben von diesen Personen dann verteilen und hat nicht das Problem, wenn man dann plötzlich selber viel Geld empfängt, dass man da irgendwie Steuern zahlen müsste und dann müsste man das weiterleiten an die Kollegen, die dann noch mitarbeiten im Open Source Projekt. Also das vereinfacht das Ganze natürlich drastisch und da kann man mal Geld empfangen. Ideal ist es natürlich auch nicht, vor allem wenn man jetzt wirklich davon leben will oder wirklich Geld bekommen will, dann muss man irgendwie ein Anstellungsverhältnis im Idealfall haben. Also das macht es dann natürlich schwieriger, aber es ist zumindestens mal ein einfacher Start, um überhaupt mal Geld empfangen zu können, ohne dass man jetzt selbst gleich in steuerliche Probleme läuft.",
-            "start": 1272346,
-            "end": 1404025,
-            "confidence": 0.8068089330024811,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "So viel zu dem langweiligen Teil. Danke, Wolfgang.",
-            "start": 1404045,
-            "end": 1408105,
-            "confidence": 0.893125,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Wir sind übrigens keine Steuerberater, aber wie gesagt, wir haben uns doch schon einige Zeit damit beschäftigt.",
-            "start": 1408145,
-            "end": 1413447,
-            "confidence": 0.7037058823529412,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Wie höre ich immer in anderen Podcasts, immer wenn es um solche Themen geht? Ich bin kein Steuerberater, das ist keine Rechtsberatung, das ist hier alleiniges Entertainment.",
-            "start": 1413467,
-            "end": 1420648,
-            "confidence": 0.724111111111111,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Ja, aber deine Flachwitze sind jetzt kein großes Entertainment.",
-            "start": 1421119,
-            "end": 1423456,
-            "confidence": 0.5962222222222222,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Stay tuned, am Ende der Episode kommt noch ein Flachwitz.",
-            "start": 1423915,
-            "end": 1426537,
-            "confidence": 0.7062000000000002,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Wenn wir jetzt aber mal weggehen von diesem klassischen Modell, Firma zahlt an Entwicklern irgendwie Geld aus. Was gibt es denn noch für Möglichkeiten, um mit Open-Source-Geld in irgendeiner Form zu verdienen?",
-            "start": 1426557,
-            "end": 1438266,
-            "confidence": 0.82484375,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Eine geile Idee habe ich Ende letzten Jahres auf einem Meetup kennengelernt. Und zwar hat der Entwickler Martin Donat da einen Vortrag gehalten, wie er mit seinem Open-Source-Projekt circa 100.000 Dollar im Jahr verdient. Das Projekt, um das es geht, ist ein Theme für die Dokumentationssoftware mkdocs. Du kannst damit also eigentlich Dokumentationsseiten bauen, auf Basis von Markdown. Und er hat dann Google Material Design Theme draufgepackt. Und was er macht, ist so eine Art Early Access Model. Also er sagt, pass mal auf, du kannst hier super gut aussehende Dokumentationen für dein Projekt machen. Und dann habe ich noch dieses Feature, dieses Feature, dieses Feature. Das ist zum Beispiel automatische Light- und Dark-Modes, Such-Support für die chinesische Sprache, ein Cookie-Banner, Like-Buttons und so weiter und so fort. Also alles das, wo man sagen würde, hey cool, das hätte ich gerne in meiner Dokumentation. Und was er macht, er sucht sich immer ein Feature Set aus, entwickelt das, hält aber diese Features Closed Source, also in einem Private Repository. Und dann sagt er, okay, ich setze ein Sponsoring Goal auf von 500 Dollar. Und wenn diese 500 Dollar gesponsort wurden, dann nimmt er die Features in diesem Sponsoring Goal und packt die in die Open Source Variante. Das bedeutet also eigentlich, er schnürt immer gute Premium Features und die Leute, die Sponsoren haben Early Access. Und dadurch hat er schon eine ganze Menge Geld eingesammelt. Also du siehst auf der Webseite auch Goals Completed, also das 10.000$ Goal ist Completed. Da hat er zum Beispiel kompletten Offline Support eingebaut und jetzt gerade ist er am 12.000$ Goal dran, auch wieder mit diesen Premium Features.",
-            "start": 1438306,
-            "end": 1540032,
-            "confidence": 0.7940583941605844,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Das heißt aber, ich zahle dann für ein spezielles Feature einen gewissen Preis, den er festlegt und bekomme das Feature dann. Also das habe ich dann sicher. Aber es ist ein fix festgelegter Preis vom Entwickler.",
-            "start": 1540940,
-            "end": 1551949,
-            "confidence": 0.7191944444444445,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Ja, du musst mindestens 15 Dollar oder mehr spenden. Und oder mehr ist dann dir überlassen. Ja, aber geht ab 15 Dollar los und dann kriegst du Zugriff auf das Private Repository, bis dann das Sponsoring-Goal von jetzt in diesem Fall, jetzt sind wir bei 12.000 Dollar, erreicht ist und dann geht das ganze Feature Set in die Open Source Variante.",
-            "start": 1551969,
-            "end": 1572126,
-            "confidence": 0.7552131147540986,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Aber ich hab Zugriff auf alle Features dann, mit den 15$.",
-            "start": 1572166,
-            "end": 1576281,
-            "confidence": 0.7826363636363637,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Was meinst du, auf alle?",
-            "start": 1576291,
-            "end": 1577292,
-            "confidence": 0.6352,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Ja, auf alle Pro Features.",
-            "start": 1577312,
-            "end": 1579255,
-            "confidence": 0.634,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Es gibt ja keine Pro Features mehr. Alle Pro Features von bereits erreichten Goals sind in der Open Source Variante verfügbar.",
-            "start": 1579295,
-            "end": 1584341,
-            "confidence": 0.793857142857143,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Ja, ja, aber alle neuen Features, die da jetzt gebundelt sind, auf die hab ich dann Zugriff.",
-            "start": 1584381,
-            "end": 1588386,
-            "confidence": 0.7235294117647059,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Ja, ja, genau. Also, wenn du jetzt natürlich nur für den chinesischen Such-Support haben möchtest, ja, dann zahlst du halt 15 Dollar für dieses chinesische Such-Support, aber du hast dann auch auf die anderen Features in diesem Sponsoring-Goal Zugriff, genau.",
-            "start": 1588912,
-            "end": 1599202,
-            "confidence": 0.7181499999999998,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Und die Leute, die aber früher schon was gespendet haben, haben dann keinen Zugriff wieder auf die neuen Features. Das ist immer nur in einem Zeitrhythmus, also in einem Bundlerhythmus.",
-            "start": 1599483,
-            "end": 1609433,
-            "confidence": 0.7751000000000001,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Ja, ja und nein. Ja, also weil der Clou ist folgendermaßen, GitHub Sponsors läuft ja über monatliches Sponsoring. Das bedeutet, die Leute, die ihr Sponsoring nicht gecancelt haben, sponsoren ja weiter und haben somit weiterhin Zugriff. Du kannst natürlich auch ein One-Time-Payment machen. Geht auch. Und du kannst natürlich jederzeit dein Sponsoring canceln. Ich will nicht sagen, das ist so eine Art Freemium-Konzept, weil das ist es einfach nicht. Es ist halt ein Early-Access-Modell, was ich ziemlich attraktiv und auch irgendwie fair finde.",
-            "start": 1610233,
-            "end": 1635747,
-            "confidence": 0.7350240963855418,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Es ist halt sehr fair, dass es dann Open Source wird. Das heißt, sobald du einen gewissen Betrag verdient hast, machst du das Open Source. Und was halt sonst bei diesen anderen Modellen üblicherweise nicht der Fall ist, weil du zahlst dann, um zu Premium Features zu kommen, die werden aber nie Open Source. Das ist der große Unterschied. Und das ist halt klar transparent kommuniziert. Das hat es natürlich früher auch schon gegeben. Ich weiß es von MySQL zum Beispiel, dass das ganz oft der Fall war, ein Kunde wollte irgendwas, hat da ein Feature bezahlt, das wurde programmiert und wurde dann später auch irgendwann open-sourced unter Umständen. Aber das hat natürlich nie transparent stattgefunden. In dem Fall ist es halt wirklich transparent. Du hast dieses Goal, wenn es erreicht wird, wird alles open-sourced und so weiter. Schon ein viel transparenteres Arbeiten mit einer Nähe zu deiner Community. Da ist also schon ein großer Unterschied.",
-            "start": 1636115,
-            "end": 1679993,
-            "confidence": 0.7891410256410253,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Die Herausforderung für ihn natürlich ist der Churn, weil das eigentlich hast du genauso die klassischen Produkt SARS Metriken wie Customer Churn, dass Customer halt abspringen und deine Customer sind halt jetzt die Sponsoren und so weiter. Sehr interessanter Talk. Ich weiß gar nicht, ob er die Slides online hat. Können wir mal nachfragen und in den Show Notes verlinken. ist aber auch eine Möglichkeit, Geld mit deinem Open Source Projekt zu verdienen. Man muss aber auch dazu sagen, das Open Source Projekt muss dafür natürlich schon etwas bekannter sein und du musst ein bisschen so die Marketing Trommel rühren. Der Punkt ist aber, es ist jetzt kein klassisches Klinkenputzen in dem Sinne, sondern du packst einfach nur ein bisschen mehr, nicht nur ein bisschen mehr, sondern ein bisschen sehr mehr Effort da rein, erstellst eine ordentliche Webseite, setzt das Konzept auf, blabliblub. Kurzum, das Geld liegt hier jetzt nicht auf der Straße, du musst schon was dafür tun.",
-            "start": 1680274,
-            "end": 1727938,
-            "confidence": 0.7720628930817613,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Ich glaube, das ist ganz allgemein. Wenn du dein Open Source Projekt monetarisieren willst, dann musst du das halt wie ein Produkt sehen und dann musst du eine Monetarisierungsstrategie fahren und die bedeutet meistens in irgendeiner Form Marketing, Sales. Du musst dich darum kümmern, du musst eine Learning Page haben, du musst das irgendwie nutzen, den Kontakt zu den Firmen, die vielleicht deine Library, dein Open Source Tool verwenden. Also es wird dann schon viel mehr als ein reiner Programmierjob. Also nur etwas zu programmieren und dann automatisch Geld zu verdienen, das hätte vielleicht mit unserem Recursive-Projekt funktioniert, wenn du dann rekursiv einfach ganz viel Geld bekommst für deine kleine wichtige Library im Hintergrund. Aber im Allgemeinen würde ich mal sagen, dass das aktuell schwer ist, einfach ohne Marketing, ohne Brand, du musst da eine Open Source Brand aufbauen, Geld zu verdienen. Also ist glaube ich echt schwierig.",
-            "start": 1728418,
-            "end": 1775895,
-            "confidence": 0.7652770270270268,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Ja, ob es mit dem Recursive-Projekt heutzutage mit einer neuen Library noch mal genauso funktionieren würde, weiß ich nicht. Also nehmen wir mal das Beispiel von OpenSSL. Die Webseite, ich lehne mich mal aus dem Fenster, ist jetzt nicht Marketing first, ja?",
-            "start": 1776375,
-            "end": 1791804,
-            "confidence": 0.775452380952381,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Sollte mal jeder ausprobieren, ja. Die OpenSSL-Seite verlinken wir natürlich, ja.",
-            "start": 1791824,
-            "end": 1796607,
-            "confidence": 0.5512727272727272,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Es ist aber einer der Software-Teile, die, ich lehne mich jetzt mal wieder aus dem Fenster, aber einer der meistdeployierten Software weltweit.",
-            "start": 1796627,
-            "end": 1805112,
-            "confidence": 0.782590909090909,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Gleich nach Köln natürlich, oder?",
-            "start": 1805718,
-            "end": 1807239,
-            "confidence": 0.6704,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Ja, so selbes Level würde ich sagen. Auf jeden Fall, warum ist das so? Das ist so, weil die halt sehr früh dran waren. Stell dir mal vor, du würdest jetzt einen OpenSSL in JavaScript schreiben. Keine Ahnung, ob das jetzt nochmal die gleiche Popularität erreichen würde, ohne diese Marketing drumherum, von der wir gerade sprechen. Deswegen weiß ich jetzt nicht, aber in der Tat muss es als Produkt sehen.",
-            "start": 1807299,
-            "end": 1828247,
-            "confidence": 0.7681714285714286,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Und da muss man ganz klar sagen, ganz viele EntwicklerInnen wollen da einfach keine Zeit investieren. Und das ist ja auch okay. Aber ich glaube, wenn man Geld verdienen will, muss man wirklich auch zusätzlich zu dem ganzen Coding-Aufwand auch noch einen anderen Aufwand betreiben. Und das ist genau dieser Aufwand, um Geld zu verdienen. Und das vergisst man halt sehr oft, dass das durchaus zeitintensiv ist und dass das vielleicht sogar teilweise mehr Zeit oder gleich viel Zeit ist, wie der eigentliche Coding-Part, den man da hat.",
-            "start": 1828667,
-            "end": 1856503,
-            "confidence": 0.8386590909090909,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Mit der nächsten Möglichkeit durchbreche aber irgendwie diese Methode, weil da muss man nicht so viel Aufwand betreiben, man verdient aber trotzdem Geld. Und zwar kann man natürlich auch als Open-Source-Entwickler einer Firma als Angestellter joinen. Hä? Was meinst du denn damit? Ja, es gibt natürlich... Jetzt stellst du.",
-            "start": 1856883,
-            "end": 1874194,
-            "confidence": 0.7723673469387753,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Dir schon selber diese Fragen, anstatt dass du mir die Chance gibst, da als Co-Host eine Frage zu stellen, stellst du dir mit Micky Ma's Stimme schon selber die Fragen. Aber bitte führe deine Selbstgespräche weiter, ihr habt da nichts dagegen.",
-            "start": 1874214,
-            "end": 1885702,
-            "confidence": 0.6380975609756097,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Ja, du kommst mir wieder mit steuerlichen Themen.",
-            "start": 1885807,
-            "end": 1887690,
-            "confidence": 0.45125,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Ihr holt mir einen Kaffee in der Zwischenzeit.",
-            "start": 1887730,
-            "end": 1889151,
-            "confidence": 0.5700000000000001,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Na, auf jeden Fall, was du machen kannst. Es gibt ein paar Firmen, die stellen Open-Source-Contributor, Core-Contributor ein, geben denen ein stattliches Gehalt und lassen die weiter an Open-Source arbeiten.",
-            "start": 1890153,
-            "end": 1902569,
-            "confidence": 0.7860333333333335,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Warum machen denn die das?",
-            "start": 1902610,
-            "end": 1903571,
-            "confidence": 0.689,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Ja in der Regel sind das Firmen die ein Incentive da haben, Core Contributor für diese Projekte zu bezahlen. Ein Beispiel ist AWS mit ihrem geforgten Projekt OpenSearch. OpenSearch ist der Forg von Elasticsearch. Wer erinnert sich? Elasticsearch hat die Lizenz geändert, weil die großen Hyperscaler Google und Amazon und so weiter mehr Geld verdient. haben mit dem Hosting von Elasticsearch als Elastic selber. Deswegen haben sie die Open-Source-Lizenz geändert, verboten, dass Amazon und Google diese nutzen dürfen. Amazon hat einen offiziellen Fork von Elasticsearch gebaut, nennt sich OpenSearch und hat eine ganze Menge Core-Contributor unter Vertrag, die Vollzeit an OpenSearch hosten.",
-            "start": 1903931,
-            "end": 1941597,
-            "confidence": 0.827382352941176,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Und haben die die jetzt abgeworben dann von Elastic oder sind das einfach Core-Contributor, die sowieso irgendwo anders waren?",
-            "start": 1941637,
-            "end": 1948820,
-            "confidence": 0.730842105263158,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Ich weiß nicht, wie viel OpenSearch Core Contributor, die jetzt bei Amazon sind, früher bei Elastic waren. Könnte ich mal nachgucken. Aber mich würde überraschen, wenn das alles Abwerber sind. Ich denke, Amazon hat einfach ein Team dran gesetzt und fertig. Amazon hat natürlich in diesem Fall das Incentive, sehr viel Geld mit OpenSearch zu verdienen. Aber es gibt auch sowas wie Microsoft. Microsoft steht immer noch hinter VS Code. Es gibt Teams in Microsoft Azure, die sich sehr viel mit Microsoft Azure Kunden unterhalten und dann zum Beispiel das SDK, das Cloud SDK entwickeln. Das ist ja auch Open Source. Dann vor kurzem ist Leonard Pöttering, der Autor hinter SystemD, das Init-System von Linux inzwischen, zu Microsoft gewechselt und wird da Vollzeit bezahlt, um weiter an SystemD zu arbeiten. Oder auch mein Arbeitgeber, weil wir ein Open-Source-Database-as-a-Service sind, auch wir haben ein komplettes Team von Core-Kontributoren, die zu PostgreSQL, Kafka, Cassandra und so weiter bezahlt kontributieren. Es ist also wirklich so, dass diverse Firmen in diesem Business, um mit Open-Source Geld zu verdienen, also eigentlich professionelles Hosting, wenn man so möchte, Core-Kontributor anstellen. Und das meist im Rahmen des OSPOs, des Open-Source-Program Office, Also einer Initiative und eines Teams innerhalb der Firma, die sich wirklich um Open Source, Policies und so weiter kümmert. Also das bedeutet, kümmert euch darum, dass ihr in einem Produkt ein Standing kriegt und dann kann das gut sein, dass ihr gute Chancen habt, das als Vollzeitjob zu machen.",
-            "start": 1949240,
-            "end": 2038947,
-            "confidence": 0.8140286885245895,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Da muss ich natürlich jetzt die Datenbank-Schiene noch ergänzen. Facebook war da zum Beispiel bei MySQL immer sehr stark drin. Die haben ein eigenes MySQL-Team. Mittlerweile ist es MyRocks oder RocksDB, das dieses Team entwickelt hat. Aber die sind sehr stark connected mit MySQL zum Beispiel. Und so gibt es halt in größeren Firmen sehr oft Kontakt zur Open-Source-Welt. Ich bin ja ganz überrascht, Andi, dass du deinen Liebling vergessen hast. Andi wird jetzt rot, wenn man das Video sehen würde.",
-            "start": 2039297,
-            "end": 2065496,
-            "confidence": 0.7697654320987655,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Welchen Liebling habe ich vergessen?",
-            "start": 2065516,
-            "end": 2066478,
-            "confidence": 0.7752000000000001,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Curl.",
-            "start": 2066878,
-            "end": 2068139,
-            "confidence": 0.526,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Ja, ja. Daniel Stenberg, einer meiner Vorbilder, wirklich. Ja, aber auch ...",
-            "start": 2068199,
-            "end": 2073911,
-            "confidence": 0.7905000000000001,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Er arbeitet wo?",
-            "start": 2073922,
-            "end": 2074942,
-            "confidence": 0.6819999999999999,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Inzwischen bei WolfSSL, glaub ich. Hat vorher bei Mozilla gearbeitet, wurde auch von Mozilla jahrelang bezahlt. War aber auch sehr, sehr, sehr lange, also etliche Jahre allein unterwegs und hat kein Sponsoring für Curl bekommen. Aber inzwischen wurde er eine ganze Zeit lang von Mozilla bezahlt und inzwischen für WolfSSL. Weil, nennen wir mal ein modernes Auto, was inzwischen ohne Curl läuft. Oder meine Waschmaschine zum Beispiel, die hat auch Curl.",
-            "start": 2074982,
-            "end": 2100079,
-            "confidence": 0.7738591549295775,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Daniel Stenberg sei Dank. Jetzt haben wir schon erwähnt, dass man natürlich mit Open Source sich das Sponsoring holen kann und... oder Donations. Aber man kann natürlich auch einen anderen Weg gehen und aus dem Open Source Projekt ein Business machen. Das nennt man ganz gerne auch Open Core Modell. Das heißt, man baut um das Open Source Projekt ein Business Modell, eine Firma auf und behält aber ganz wichtig, den Kern immer noch Open Source und verkauft dann aber zum Beispiel die Managed Version, eine gewisse Enterprise Version mit Support an Firmen, an Endkunden, was die Kunden dann auch immer sind. Da gibt es also wirklich ganz, ganz viele große Projekte. die genau so ihr Geld verdienen. Der ganz große Klassiker ist Red Hat natürlich, der Support damals schon verkauft hat als Linux-Distro. Elasticsearch ist ebenfalls sehr groß geworden, hat eine Cloud, bietet es auch als Enterprise-Version an, den ganzen Stack. Ist jetzt natürlich, wie der Andi schon erzählt hat, ein bisschen strikter geworden mit der ganzen Licensing-Geschichte. Darum gibt es ja auch OpenSearch jetzt von Amazon. Aber auch Redis, MySQL, Plausible kennt vielleicht jemand, die Analytics Software als Alternative zu Google Analytics, Matomo auch eine Alternative zu Google Analytics, kyle.com eine Alternative zu Calendly, sind alles Open Source Produkte, die man aber auch hosted für Geld sich holen kann, dann ist es gemanagt, dann bekomme ich Support als Firma, habe vielleicht zusätzliche Features noch, aber im Kern ist es immer noch Open Source.",
-            "start": 2100119,
-            "end": 2195933,
-            "confidence": 0.8281877551020413,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Offen gesprochen, eine Firma auf ein Open-Source-Projekt zu setzen, ist jetzt nicht mein Leben in fünf Minuten getan. Auch ein bisschen mehr Aufwand, würde ich mal sagen. Aber falls man irgendwas hat, so im Bereich Self-Hosting, kann man natürlich theoretisch alles in eine Firma überführen. Es muss ja noch niemals das eigene Open-Source-Projekt sein, zum Beispiel Hetzner. bietet auch ein professionelles Hosting für Nextcloud an. Und Hetzner hat jetzt Nextcloud nicht programmiert. Das bedeutet, theoretisch, mal so als kleiner Hack, könntet ihr auch auf die Awesome-Liste Selfhosting gehst, verlinken wir in den Shownotes, pickt euch irgendein Tool raus und sagt, dafür biete ich jetzt professionelles Hosting an.",
-            "start": 2196345,
-            "end": 2234331,
-            "confidence": 0.8015607476635513,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Wenn es nicht Elasticsearch ist, weil Elasticsearch verbietet es mittlerweile durch die Lizenzen. Und ganz viele neue Open-Source-Projekte verbieten genau dieses Modell, aber die älteren natürlich oder die nicht das ganze ausschließen in der Lizenz. Dafür kann man natürlich dann Hosting Varianten anbieten.",
-            "start": 2234511,
-            "end": 2250616,
-            "confidence": 0.7835581395348836,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Ja, da muss man natürlich gucken, dass es Open Source ist. Das bedeutet unter einer Open Source akzeptierten Lizenz, weil Elasticsearch ist ja jetzt unter der Elastic Lizenz oder unter der Server-Side Public Lizenz und das sind keine anerkannten Open Source Lizenzen. Aber sofern das unter einer MIT, Apache 2 oder ähnliches BSD Lizenz ist, dürfte das natürlich tun. Offengesprochen, Das klingt jetzt so als wäre das alles so einfach professionelles hosting auf scale von solchen services wo ihr euch ebenfalls nicht so gut auskönnt mit den inner details und so weiter und so fort ist eine herausforderung, ist aber möglich also falls ihr ein business modell sucht, give it a go.",
-            "start": 2250956,
-            "end": 2285969,
-            "confidence": 0.7940000000000005,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Lizenzen sind sowieso ein schwieriges thema und wenn man dann unterscheidet zwischen free software und open source software und den ganzen, Modellen, ob Richard Stallman jetzt damit einverstanden ist, dass es open source ist oder free oder nicht, da kommt man dann schon sehr ins Detail. Also wenn man sich sowas antut, dann sollte man sehr genau auf die Lizenz achten, was man da macht.",
-            "start": 2286009,
-            "end": 2304503,
-            "confidence": 0.758553846153846,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Man muss ja natürlich auch sagen, wenn ihr das einfach so könnt, kann das natürlich auch jeder, weil ihr nutzt ja eine fertige Software, das bedeutet.",
-            "start": 2304563,
-            "end": 2311148,
-            "confidence": 0.7818076923076922,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Wo ist der Mehrwert?",
-            "start": 2311168,
-            "end": 2311869,
-            "confidence": 0.8755000000000001,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Mehrwert ist halt schon, dass jemand das Hosting für einen übernimmt. So ist das nicht. Dafür zahlt man ja halt, damit ich das nicht selbst hosten muss. Aber der Nachteil ist halt dann gegebenenfalls, dass ihr kein USP, keine Unique Selling Proposition habt. Also ihr habt jetzt kein Eigenmerkmal gegenüber anderen Leuten.",
-            "start": 2312909,
-            "end": 2328277,
-            "confidence": 0.8003846153846154,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Was mir auf jeden Fall vorkommt, dass in letzter Zeit es wieder mehr kommt, dass man wirklich Open-Source-Software anbietet und wirklich Open-Source startet, also Open-Core. Im Vergleich zu vor zehn Jahren war das viel, viel schwieriger und hat man viel weniger Software gesehen. Ich glaube, das hat auch mit der ganzen Cloud-Geschichte zu tun, dass man mittlerweile diesen Weg hat, das Ganze managed, hosted anzubieten. Einfach ein super Weg ist. Früher war alles self-hosted vor Cloud-Zeiten. Und dann hat man diesen Mehrwert nicht gehabt. Aber heutzutage, wenn du mit Firmen sprichst, und das habe ich auch selber jetzt einige Male erlebt, die sagen einfach, es ist cool, wenn es Open Source ist und wir wollen natürlich auch Open Source unterstützen, aber unser internes Team hat einfach nicht die Kapazität, jetzt das Self Hosted nochmal hochzuziehen. Und wir sind froh, wenn wir da jemanden haben, der das für uns hostet, der sich darum kümmert, der den Betrieb sicherstellt. Und wir zahlen das gerne, weil wir finden selber für unser Team sowieso keine Leute. Und wenn wir das einfach sicher bekommen, da kümmert sich jemand um das Backup, da kümmert sich jemand um die Sicherheit, da kümmert sich jemand am Wochenende, wenn das abstürzt, kümmert sich jemand drum. Und unser Team kann fein zu Hause schlafen am Wochenende, dann zahlen wir gerne was dafür. Also diese Mentalität, dreht sich so ein bisschen und dadurch wird es vielleicht auch wieder interessanter mit so Open Source Konzepten auch ein Business zu starten. Und es hat natürlich super viele Vorteile für mich als Firma, als Kunde von so einem Open Source Produkt, auch wenn es jetzt gehostet ist. Ihr habt natürlich die Sicherheit, wenn jetzt die Firma dahinter wegsterben sollte, aus irgendeinem Grund habe ich immer noch die Den Source Code, das ist Open Source, jemand anderer springt vielleicht ein. Das heißt, die Sicherheit für mich als Firma ist natürlich wesentlich höher, dass ich das langfristig betreiben kann, das ganze System, auch wenn es jemand anderer hostet.",
-            "start": 2329098,
-            "end": 2426942,
-            "confidence": 0.8125421686746995,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Dieses Modell ist natürlich super, um in die ganze Sache mal einzusteigen. Man könnte das auch vielleicht als Indie-Hacker-Business-Modell irgendwie verpacken. Es ist ein sehr einfacher Einstieg. Was man aber schon tun sollte, sich vielleicht gegebenenfalls dann ein bisschen freundlich zeigen, um einen gewissen Prozentsatz der Gewinne vielleicht mit dem Open-Source-Projekt dann wieder zu teilen oder ähnliches. Und dann baut man vielleicht über Zeit eine gute Verbindung zu dem Open-Source-Projekt aus. Also nach dem Motto vielleicht einfach finanziell Danke sagen, weil ihr verdient ja damit Geld. auf Basis von den Schultern der Arbeit von anderen. Und dann ist das, glaube ich, jetzt nichts Falsches, wenn man da mal ein paar Euro zurückfließen lässt.",
-            "start": 2427313,
-            "end": 2463473,
-            "confidence": 0.7586194690265483,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Und auch da wieder, ich glaube, jede Summe ist besser als nichts. Und wenn fünf Euro in Andi schon nackt durch die Wohnung tanzen lassen, dann hilft das vielleicht meinen anderen Entwicklern auch. Was dann natürlich irgendwo schon auch so ein bisschen schwierig wird, ist, wenn man dann als Entwickler irgendwas Cooles programmiert und man sieht dann eine Firma, die verdient Millionen damit und dann bekommst du irgendwie so drei Bier gesponsert. Das ist dann natürlich auch irgendwie eine Schieflage, da würde ich dann eher empfehlen, gar nichts zu sponsern, als wenn das dann unverhältnismäßig ist. Also es sollte schon irgendwo in Zusammenhang stehen und in der richtigen Ratio dann liegen.",
-            "start": 2463753,
-            "end": 2497427,
-            "confidence": 0.7886756756756758,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Ja, das kann natürlich zum Shitstorm führen, je nachdem wie angepisst der Maintainer oder die Maintainerin ist, das stimmt schon. Kommen wir zum letzten Punkt, wie man eigentlich für Open-Source-Entwicklung bezahlt werden kann. Und ich glaube, Wolfgang, da bist du schon der Experte. Wir sprechen nämlich über Förderung, Stipendien und so weiter und so fort. Kurzum, meine Steuergelder.",
-            "start": 2497447,
-            "end": 2518378,
-            "confidence": 0.7666551724137932,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Ja, du bist ja ein großer Open Source Fan, also muss das ja in deinem Interesse sein, dass Open Source gefördert wird mit deinem Steuergeld, will ich mal hoffen.",
-            "start": 2518925,
-            "end": 2526532,
-            "confidence": 0.7033793103448274,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Ist das jetzt eigentlich so, dass dann jeder Arbeitnehmer eigentlich indirekt ein Open Source Sponsor ist in Deutschland?",
-            "start": 2526572,
-            "end": 2532357,
-            "confidence": 0.8241111111111112,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Ja, und jeder Arbeitgeber auch, weil die zahlen auch Steuern. Aber grundsätzlich ja, wobei das natürlich im Vergleich immer noch super gering ist. Also in Deutschland gibt es meines Wissens eigentlich nur zwei, drei Fördertöpfe für Open Source. Lass mich da aber gerne eines anderen belehren. Was aber sehr cool ist, weil in Österreich gibt es meiner Meinung nach, meines Wissens nach, gar keine Open Source Fördertöpfe. Also das ist schon ein großer Unterschied und bei Media Tech Lab haben wir schon öfters erwähnt, wo ich mit einem Kollegen auch ein Projekt gemacht habe. Da bekommt man ja auch eine ganz stattliche Summe eigentlich von 45.000 Euro für ein sechs Monate Projekt. Ist dasselbe auch der Prototype Fund, das ist ein anderer deutscher Fund, eigentlich so eine Schwesterorganisation glaube ich fast. Und der Fund hat eine ähnliche Höhe pro Förderprojekt, die fördern glaube ich so 25 Projekte pro Jahr oder pro Durchlauf und haben bisher 12 Millionen Euro bewilligt und gefördert, 300 Projekte ungefähr. Was jetzt relativ viel klingt, aber wenn man das natürlich auf Deutschland umrechnet, ist es immer noch relativ wenig, aber es gibt zumindestens mal Förderungen und man kann dort ansuchen, ist relativ unkompliziert eigentlich auch und ist gerade wenn man eine gute Idee hat für einen einfachen Start, dass man da mal ein halbes Jahr intensiv wirklich an dem Open Source Projekt arbeitet, eine super Alternative. Was es in Deutschland meines Wissens nicht gibt, ist sowas wie Mozilla Ventures zum Beispiel, Oder auch den GitHub Accelerator, der ist auch sehr neu, die wirklich Open-Source-Projekte fördern, die das Ganze eher so wie ein Business sehen und da wirklich investiert sind in das Open-Source-Projekt. Also das ist halt so die klassische amerikanische Herangehensweise, wo man alles als Startup sieht und als Business und das Ganze als Startup aufzieht in einem Accelerator innerhalb zehn Wochen. Also das ist was anderes als die Fördertöpfe in Deutschland. Was ich jetzt neuerdings auch gelernt habe ist NLNet, das ist eine holländische Einrichtung, die aber auch in ganz Europa meines Wissens Projekte fördert. Da ist die nächste Deadline übrigens auch irgendwann jetzt bald im März. Also es gibt durchaus Fördermöglichkeiten und auch da gefühlt zumindest gibt es wesentlich mehr als wenn ich das jetzt vor zehn Jahren vergleiche. Also es gibt durchaus Töpfe, wo man auch hinkommt und wo man auch irgendwo Geld rausbekommt und das nicht extrem unwahrscheinlich ist, dass man da ein Projekt gefördert bekommt. Früher war das doch eine andere Sache und man hat Gott und die Welt kennen müssen und am besten die Bundeskanzlerin noch persönlich und dann hat man vielleicht irgendwas bekommen über Beziehungen, sondern da gibt es jetzt wirklich Möglichkeiten, wo man ansuchen kann und wo auch das reine Open Source Projekt gefördert wird, was natürlich auch cool ist, eben auch ohne Business, ohne dass deine Uni dabei ist, sondern wirklich Ich habe eine Idee, ich will ein Open-Source-Projekt machen und bekomme dann eine Förderung dafür. Und das hat sich stark geändert. Ich glaube, da ist immer noch Luft nach oben. In Österreich gibt es gar nichts dazu, meines Wissens. Bitte gerne Infos, falls jemand was kennt. Und die Anzahl der Projekte sind leider immer noch sehr niedrig, weil wenn man sich überlegt, 300 Projekte beim Prototype Fund in den letzten Jahren und 12 Millionen ist jetzt eigentlich auch nicht die Welt für ganz Deutschland, für ein Land mit 80 Millionen Einwohnerinnen. Da könnte man schon mehr bringen.",
-            "start": 2532397,
-            "end": 2723257,
-            "confidence": 0.8109001751313484,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Es ist aber auch so, dass bei diesen Funds ebenfalls ein bisschen was geleistet werden muss. Also da geht man jetzt nicht hin, sendet den GitHub-Repo als Link und sagt, ich möchte Funding haben, sondern in der Regel muss man da schon in irgendeiner Art und Weise einen Projektplan vorlegen, so ein bisschen niederschreiben, was man damit denn machen möchte, wofür das Funding denn verwendet wird, Feature-Set-Richtung oder ähnliches. So eine kleine Vision, Strategie für euer Projekt solltet ihr schon in der Tasche haben.",
-            "start": 2723317,
-            "end": 2753246,
-            "confidence": 0.7898095238095237,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Und die Idee ist natürlich auch, dass nachdem man dieses Open Source Projekt dann gebaut hat, dass das weiterlebt. Das heißt, dass da ein Business draus wird, dass man da eine Enterprise-Version draufsetzt, dass man Support für dieses Open-Source-Projekt macht und damit Geld verdient. Also damit das nicht in den Sand gesetzt ist oder andere Fördergeber findet oder irgendwelche Firmen, die das interessant finden und sponsoren. Also das ist schon langlebig gedacht und das sollte dementsprechend auch eine Idee sein, die sich dann halt auch irgendwann selbst trägt, weil es ist klar, dass es nicht ewig auf Förderungen aufbauen kann.",
-            "start": 2753646,
-            "end": 2782949,
-            "confidence": 0.81958,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Aber so sechs bis neun, zwölf Monate kommt man damit schon über die Runden, glaube ich, wenn man das ganz gut macht.",
-            "start": 2783569,
-            "end": 2788191,
-            "confidence": 0.36118181818181816,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Es ist auf jeden Fall ein super Start. Und wie kann man sonst sechs Monate zum Beispiel Fulltime an einem Open-Source-Projekt arbeiten, ohne sich Gedanken machen zu müssen? Und wenn man mit dem Geld sparsam umgeht, vielleicht auch noch ein bisschen länger.",
-            "start": 2788572,
-            "end": 2799719,
-            "confidence": 0.7621904761904762,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Und dann gibt es natürlich immer noch das lästige Thema der Steuern beziehungsweise der Besteuerung. Und bei all den Modellen, die wir hier genannt haben, sieht die Sachlage halt einfach nicht so einfach aus. Auch wenn ihr einfach Geld über GitHub Sponsoring bekommt oder aus einer Förderung oder ähnliches. In sehr, sehr vielen Fällen muss man das irgendwie ordentlich versteuern. Vielleicht ist das sogar als klassisches Einkommen klassifiziert. Wie wir schon gesagt haben, wir beide sind keine Steuerberater, wir machen keine Rechtsberatung. Und wir können euch auch nicht sagen, in eurem Fall ist das jetzt so, in dem anderen Fall ist das so, weil jeder Fall ist irgendwie ein Unique. Deswegen, falls ihr also mit GitHub Sponsors anfangen wollt, mit Förderungen oder Klinkenputzen geht bei irgendwelchen Firmen, ob die euch sponsoren wollen oder ihr macht dieses Early Access Modell, was wir zum Beispiel bei Material4MKDocs erwähnt hatten. Setzt euch da mal ganz kurz mit einem Steuerberater zusammen, ruft da an, hey, ich hab mal eine Frage. Für 100 Euro oder so was geben die euch dann bestimmt ein bisschen Beratung und dann wisst ihr mehr. Und dann habt ihr auch wirklich eine rechtlich stabile Aussage.",
-            "start": 2799979,
-            "end": 2867890,
-            "confidence": 0.8092769230769233,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Ob die immer so stabil ist, ist eine andere Frage. Vor allem, ich habe jetzt auch gelernt, dass in Deutschland das sogar in jedem Bundesland anders ist, sogar teilweise bei jedem Finanzamt anders ist und du das bei Finanzämtern dann wirklich abklären musst. Also das ist schon wirklich kompliziert. Aber was man auch dazu sagen muss und der Andi hat jetzt gemeint, geht zu einem Steuerberater, das ist natürlich immer ein guter Tipp, aber das braucht man vielleicht auch gar nicht, um mal anzufangen. Das heißt, wenn ihr einfach mal ganz lean anfangen wollt, um irgendwie paar Spenden, paar Donations oder sonst irgendwas zu bekommen und da einfach mal einen Link irgendwo auf eine Webseite setzt, wo man einen Kaffee donaten kann oder ein Bier oder sowas und die bekommt da einfach irgendwo mal 10, 20 Euro, dann braucht ihr nicht zu einem Steuerberater laufen üblicherweise. Also fangt einfach mal wirklich Lean an und wenn die Beträge in irgendeiner Form höher werden sollten, dann sollte man sich schon überlegen, was man macht. Oder wenn man jetzt eine Förderung bekommt mit 50.000 Euro, würde das auch möglichst schnell abklären natürlich mit dem Finanzamt, mit einem Steuerberater, was das auch immer ist. damit man da kein böses Erwachen hat und am Ende dann 50 Prozent irgendwie zurückzahlen muss oder so an das Finanzamt. Und das gibt es wirklich, also auch in Österreich kenne ich da Fälle, wo dann sogar Stipendien an der Uni unter Umständen nachträglich versteuert wurden. Also das ist auch nicht mehr so leicht, weil die ganzen Länder ja auch verhindern wollen, dass man da irgendwie die Steuern umgeht, auch wenn das Universitäten sind, dass man da irgendwie prekäre Anstellungsverhältnisse schafft und da irgendwie über Stipendien sich probiert, Geld zu sparen. Also auch da wird mittlerweile eingegriffen und auch bei so offiziellen Dingen wie dem Media Tech Lab Fund ist das auch eine Frage, dann was für ein Bundesland man sitzt in Deutschland, wie das versteuert wird. Also es ist alles nicht so leicht. Aber ich glaube, wenn man mal irgendwo 5 Dollar empfängt als Donation, damit der Andi da mal nackt durch die Wohnung rennen kann, wenn er irgendwie so ein Support bekommt, ich glaube, da kann man die Kirche auch im Dorf lassen. Da braucht man dann keine eigene Steuererklärung machen oder so. Also was ich damit sagen will, ist einfach, man sollte sich da jetzt nicht zu sehr Sorgen machen, dass man dann womöglich gar nicht anfängt mit dem. Also wenn man ein Open Source Projekt hat, ich glaube mal so ein Buy me a coffee Button oder so kann man einfach mal drauf klatschen und hoffen, dass man vielleicht mal irgendwo den einen oder anderen Euro bekommt und sich ein Bier damit leisten kann, weil das motiviert dann auch wirklich, auch wenn es nur so kleine Summen sind.",
-            "start": 2868362,
-            "end": 3007306,
-            "confidence": 0.8026419491525421,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Ja, also ich meine, es ist wie immer in Deutschland nichts geregelt hier, ne?",
-            "start": 3007346,
-            "end": 3010949,
-            "confidence": 0.779357142857143,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Nur alles sehr genau.",
-            "start": 3010969,
-            "end": 3011849,
-            "confidence": 0.775,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Ich habe nichts anderes erwartet. Naja, so viel zum Thema die kleinste Violine der Welt und Open Source.",
-            "start": 3012350,
-            "end": 3018875,
-            "confidence": 0.8217222222222224,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Was ist die kleinste Violine der Welt?",
-            "start": 3018915,
-            "end": 3020396,
-            "confidence": 0.5364285714285715,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Sagt man doch so umgangssprachlich.",
-            "start": 3021537,
-            "end": 3023400,
-            "confidence": 0.7314,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Und was ist das? Geld. Okay, die spielt aber laute Musik dann, diese kleinste Violine.",
-            "start": 3023440,
-            "end": 3031033,
-            "confidence": 0.7092666666666666,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Ja, das ist die kleinste Violine mit der lautesten Musik.",
-            "start": 3031073,
-            "end": 3035080,
-            "confidence": 0.6394,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Ah ja, okay, verstehe. Ist das eigentlich unmoralisch, wenn man probiert Geld zu machen mit Open Source? Weil es gibt vielleicht auch viele Open Source Entwickler, die einfach sagen, ich mache das ja nur wegen dem Open Source Gedanken und eigentlich ist es böse, damit Geld zu verdienen.",
-            "start": 3035402,
-            "end": 3049615,
-            "confidence": 0.7234999999999999,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Sehr valide und berechtigte Frage und ich denke, es gibt sehr viele Leute, die machen das wegen dem Open Source Gedanken, weil die an Free Software und so weiter und so fort glauben. Finde ich auch super, es wird ja auch keiner gezwungen, damit Geld zu verdienen. Auf der anderen Seite, Geld braucht man halt auch, um die Miete zu zahlen und Essen auf den Tisch zu stellen. Was aber von einer anderen Perspektive oft als Anforderung kommt, ist, eine Firma nutzt ein Open-Source-Package, macht einen Bugfix, schreibt dir sogar noch privat eine E-Mail, hey, wann wird das denn gefixt, die Software funktioniert ja gar nicht und so weiter. Da wird schon so eine Art Support erwartet, was dann natürlich auch hintendran schwierig sein kann, weil dann Druck aufgebaut wird und je nachdem, wie du mit dem Druck umgehst und so. Also moralisch verwerflich ist es meines Erachtens nach nicht, so funktioniert einfach die Welt. Und auf der anderen Seite, wenn du jetzt zum Beispiel Open-Source-Programmierung machst, Softwareentwicklerinnen und Softwareentwickler ist halt einfach ein High-Demand-Job aktuell. Und was du da eigentlich machst ist, du gibst halt Arbeit for free raus, wenn du es so möchtest, beziehungsweise wenn Firmen damit wirklich Geld machen. Und in diesem Kontext denke ich nicht, dass das verwerflich ist.",
-            "start": 3049675,
-            "end": 3108580,
-            "confidence": 0.7580187793427238,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Warum haben wir eigentlich noch keinen Buy-Me-A-Coffee-Button, Andi, bei unserem Podcast? Wir haben nur so eine simple Thumbs-Up-und-Down-Funktion in unseren Shownotes, wo man sagen kann, dass wir toll sind oder nicht so toll oder die Episode besser gesagt. Also bitte auch kurz mal runterscrollen und da Feedback geben, was ihr zu dieser Episode sagt. Aber was ist mit unserem Buy-Me-A-Coffee-Button? Ich will die endlich mal nackt durch die Wohnung rennen sehen, Andi.",
-            "start": 3108996,
-            "end": 3132712,
-            "confidence": 0.8134166666666667,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Dafür müsste der Buy-Me-A-Beer-Service erfunden werden, glaube ich.",
-            "start": 3132752,
-            "end": 3135394,
-            "confidence": 0.639625,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Ja das gibt's glaube ich auch bei mir Bier.",
-            "start": 3135634,
-            "end": 3138398,
-            "confidence": 0.6483333333333334,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Ja dann schauen wir das mal. Aber da wir jetzt anscheinend am Ende dieser Episode sind, wir hoffen, wir haben euch einen kleinen Überblick gegeben, die Liste ist unvollständig, weil es 10.000 verschiedene Möglichkeiten gibt. Vielleicht habt ihr ja mal jetzt die Motivation geschöpft, um mal ein bisschen in die Richtung zu gehen. Und ich habe am Anfang versprochen, dass ich einen Flachwitz habe. Und das habe ich natürlich nicht vergessen, Wolfgang. Es tut mir leid.",
-            "start": 3138438,
-            "end": 3163565,
-            "confidence": 0.7552499999999998,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Und weil... Alkman, die kleine Violine war schon der Flachwitz.",
-            "start": 3163585,
-            "end": 3166789,
-            "confidence": 0.7482999999999999,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Ah, ich bitte dich. Und weil ich... Gerade einen echt guten gefunden hab, hab ich gedacht, ich besorg direkt zwei.",
-            "start": 3166849,
-            "end": 3174973,
-            "confidence": 0.8301999999999999,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Dann bitte, die Bühne ist deine.",
-            "start": 3175013,
-            "end": 3176694,
-            "confidence": 0.7838333333333333,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Fangen wir an mit dem meines Erachtens nach schlechteren. Warum trinken Mäuse keinen Alkohol? Sie haben Angst vor dem Kater.",
-            "start": 3176754,
-            "end": 3183735,
-            "confidence": 0.7733,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Das ist nett.",
-            "start": 3185035,
-            "end": 3186816,
-            "confidence": 0.4693333333333333,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Find ich halt schon relativ schlecht.",
-            "start": 3186836,
-            "end": 3189336,
-            "confidence": 0.6946666666666667,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Find ich sehr gut.",
-            "start": 3189356,
-            "end": 3191137,
-            "confidence": 0.39675,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Jetzt kommt aber ein ganz...",
-            "start": 3191157,
-            "end": 3191977,
-            "confidence": 0.35619999999999996,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Das ist meine Kategorie.",
-            "start": 3191997,
-            "end": 3193157,
-            "confidence": 0.32699999999999996,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Jetzt kommt ein ganz guter. Der Aufzug ist kaputt. Endlich trifft es mal die da oben.",
-            "start": 3193177,
-            "end": 3197258,
-            "confidence": 0.6448749999999999,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "War das schon der Witz?",
-            "start": 3198889,
-            "end": 3201170,
-            "confidence": 0.7618,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Ja, der Aufzug ist kaputt. Endlich trifft es mal die da oben. Ich merke schon, der mit den Mäusen kann besser handeln.",
-            "start": 3201210,
-            "end": 3208415,
-            "confidence": 0.7377272727272728,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Ich werde noch nachdenken. Das mit Lift in Verbindung zu bringen, mit Aufzug, das ist schon verwirrend für mich.",
-            "start": 3208455,
-            "end": 3215980,
-            "confidence": 0.5622631578947368,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Ja, wie ist denn die Übung? Der Lift ist kaputt. Endlich drückt man die da oben. Ist das witziger?",
-            "start": 3217621,
-            "end": 3222420,
-            "confidence": 0.5686315789473685,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Ah, ja, ja, jetzt verstehe ich.",
-            "start": 3222460,
-            "end": 3225901,
-            "confidence": 0.5843333333333334,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Super. Wie immer freuen wir uns natürlich über Feedback, über die Standardkanäle. E-Mail steht tisch.engineeringquiz.dev.",
-            "start": 3225941,
-            "end": 3233205,
-            "confidence": 0.7522666666666666,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Was war das?",
-            "start": 3233245,
-            "end": 3233786,
-            "confidence": 0.47933333333333333,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "In den Show Notes steht die E-Mail-Adresse. Aber natürlich auch über Twitter. Und damit sage ich bis zur nächsten Episode. Bye-bye. Ciao.",
-            "start": 3236187,
-            "end": 3247933,
-            "confidence": 0.6032727272727273,
-            "channel": null,
-            "speaker": "A"
-        }
-    ],
-    "confidence": 0.7842307614006494,
-    "audio_duration": 3251.0,
-    "webhook_status_code": null,
-    "webhook_auth": false,
-    "summary": null,
-    "auto_highlights_result": null,
-    "content_safety_labels": null,
-    "chapters": null,
-    "sentiment_analysis_results": null,
-    "entities": null
+  "language_code": "de",
+  "audio_url": "https://audio1.redcircle.com/episodes/fedbb121-bf9f-46fe-9a36-15bac3ae52be/stream.mp3",
+  "punctuate": true,
+  "format_text": true,
+  "dual_channel": false,
+  "webhook_url": null,
+  "webhook_auth_header_name": null,
+  "webhook_auth_header_value": null,
+  "audio_start_from": null,
+  "audio_end_at": null,
+  "word_boost": [],
+  "boost_param": null,
+  "filter_profanity": false,
+  "redact_pii": false,
+  "redact_pii_audio": false,
+  "redact_pii_policies": null,
+  "redact_pii_sub": null,
+  "speaker_labels": true,
+  "speakers_expected": 2,
+  "content_safety": false,
+  "content_safety_confidence": null,
+  "iab_categories": false,
+  "custom_spelling": null,
+  "disfluencies": false,
+  "sentiment_analysis": false,
+  "auto_chapters": false,
+  "entity_detection": false,
+  "summarization": false,
+  "summary_model": null,
+  "summary_type": null,
+  "auto_highlights": false,
+  "language_detection": false,
+  "speech_threshold": null,
+  "id": "621g5eosuj-aa13-4272-94a2-92066b11681d",
+  "status": "completed",
+  "error": null,
+  "utterances": [
+    {
+      "text": "Moin Leute, in dieser Episode geht es mal wieder um Open Source. Und um Geld. Vielleicht bist du selbst ein Open Source Contributor oder Maintainer. Oder es steht auf einer deiner To-Do-Listen für 2023 mal den ersten Pull-Request zu eröffnen. Auf jeden Fall nutzt du Open Source in deinem Alltag. Und wenn du dir einmal Gedanken darüber machst, wer diese ganze Software eigentlich in Schuss hält, auf der unsere aktuelle Gesellschaft aufgebaut ist, dann wird dir recht schnell schlecht. Die Masse an Open-Source-Projekten wird von Freiwilligen in ihrer privaten Zeit maintained. Um dem etwas entgegenzusetzen, sprechen wir heute über die Möglichkeiten zur Finanzierung deines Open-Source-Projektes bzw. Wege, um mit deinem Open-Source-Projekt Geld zu verdienen. Vom klassischen Sponsoring, über staatliche Förderung oder dem Early Access Modell bis hin zur klassischen Anstellung als Open Source Maintainer. Und am Ende klären wir noch, ob es unmoralisch ist mit Open Source Geld zu verdienen. Viel Spaß! Lieber Wolfgang, habe ich dir eigentlich mal gesagt, dass ich mich sehr sehr gefreut habe, dass du den weiten Weg aus dem tiefen Österreich zu uns in den Westen gefunden hast, damit wir im realen Leben zusammen zur FOSDEM-Konferenz nach Brüssel fahren konnten und uns dort wirklich getroffen haben, ein Bier getrunken haben und uns glaube ich sogar ein Croissant geteilt haben?",
+      "start": 5314,
+      "end": 83957,
+      "confidence": 0.7996728971962612,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Westen? Das werde ich nie verstehen. Ich bin immer nur nach Norden gefahren, nach Duisburg. Ihr seid im Norden bitte, nicht im Westen. Im Westen ist Frankreich, im Norden ist Duisburg.",
+      "start": 83997,
+      "end": 92703,
+      "confidence": 0.6965806451612904,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Perspektive, Perspektive.",
+      "start": 93096,
+      "end": 95137,
+      "confidence": 0.348,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Aber nach Brüssel war auch kurz nach Westen. Stimmt, ab Köln fahrt man nach Westen, nach Brüssel.",
+      "start": 95177,
+      "end": 100238,
+      "confidence": 0.8198823529411765,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Für alle Personen, die uns am Rundfunkgerät hören, zum Kontext.",
+      "start": 100258,
+      "end": 104179,
+      "confidence": 0.8583000000000001,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Moment, was für Rundfunkgerät? Man kann uns gar nicht am Rundfunkgerät hören. Außerdem, die meisten Leute wissen wahrscheinlich nicht mal, was ein Rundfunkgerät mehr ist. Hast du überhaupt ein Rundfunkgerät daheim? Was ist denn im Katastrophenfall? Hast du ein Rundfunkgerät, Andi? Bei den Batteriebetrebern ist es auch noch oder so mit Kurbel am besten.",
+      "start": 104219,
+      "end": 120784,
+      "confidence": 0.6009259259259259,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Ich glaube, ich habe keins.",
+      "start": 120824,
+      "end": 121584,
+      "confidence": 0.32320000000000004,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Nein. Okay, aber bitte sag deinen Kontextsatz für den Kontext für alle.",
+      "start": 121604,
+      "end": 126515,
+      "confidence": 0.7287499999999999,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Wolfgang und ich sind vor kurzem nach Brüssel, Belgien, gefahren zur FOSDEM. Die FOSDEM ist das Free and Open Source Developer Europe Meeting und das ist eine sehr, sehr große Konferenz mit ca. 8000 Leuten zum Thema Open Source und Free Software. nur mal um den scale ein bisschen einschätzen zu können die ganze sache findet zwei tage lang an einem kompletten universitätscampus in brüssel statt es finden circa ich glaube 500 oder 600 talks statt wirklich zu allen themen und wenn ich Wenn ich alle Themen meine, dann meine ich alle Themen. Also ich hab immer gedacht, ich wüsste, was im Open-Source-Bereich abgeht und dann fährt man einmal zu dieser Konferenz und dann merkt man halt einfach keine Ahnung. Also DNS hat einen eigenen Devroom, Container, Community, BSD. Aber es gibt auch wirklich einzelne Devrooms zu LLVM, Legal and Policy Issues, Open Media, Railways und Open Transport, alles zum Thema Energy, also wie zum Beispiel eine Open Source Firmware für eure Wallbox, kompletter Themenbereich über Software, Bill of Materials, Risk 5, Real-Time Communication und, und, und. Völlig insane, sag ich euch.",
+      "start": 126555,
+      "end": 199498,
+      "confidence": 0.7872307692307688,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Und vor allem, wenn man 8000 Leute in kleine Räume einsperrt aus den 70er Jahren, das findet ja auf so einem Uni-Campus statt, dann hat das Ganze zum Resultat genauso, wie meine Stimme jetzt klingt, weil man da einfach coole Viren oder Bakterien aufschnappen kann und dann hat man wieder so eine Stimme wie ich. Also Entschuldigung gleich mal für diese Stimme, aber es gibt nicht nur Viren, sondern auch coole Dämonen, definitiv.",
+      "start": 199558,
+      "end": 220993,
+      "confidence": 0.7864794520547945,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Aber ich glaube der chaos computer club kongress der immer zwischen weihnachten und silvester stattfindet der hat auch sowas und das nennt sich dann immer kongress solche also google mal kongress solche das ist wirklich so ein ding bei den leuten die dann auf dem ccc sind aber wolfgang meine frage ist eigentlich an dich was ist das eine was dir von dem besuch in brüssel hängen geblieben ist.",
+      "start": 221433,
+      "end": 242127,
+      "confidence": 0.8238985507246378,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Natürlich unser Community treffen. Wir haben ja Hörer in Brüssel getroffen zu einem netten Abendessen bei einem Getränk. Und das ist mir eigentlich am meisten in Erinnerung geblieben. Ist es jetzt schlecht, wenn mir die soziale Komponente wichtiger war als die technischen Vorträge?",
+      "start": 242807,
+      "end": 258312,
+      "confidence": 0.8053023255813954,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Nö, nö, ist schon positiv. Ich sag ja auch immer, die Technologie ist so der einfache Part. Schwieriger ist immer die Menschen. Von daher passt das ganz gut. Mir ist aber eigentlich eine Sache im Kopf geblieben. Oder beziehungsweise wieder in Erinnerung gerufen worden, Brüssel ist tierisch teuer. Ich habe für drei Bier 27 Euro gezahlt.",
+      "start": 258372,
+      "end": 275738,
+      "confidence": 0.7307500000000001,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Also auch nichts technisches wieder.",
+      "start": 275778,
+      "end": 277678,
+      "confidence": 0.7746,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Nein, finde ich, gilt auch als soziale Komponente.",
+      "start": 277738,
+      "end": 280059,
+      "confidence": 0.855,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Ich habe gedacht, du kommst jetzt sicher mit diesem Vortrag, wie man Gigabyte große DNS Zone Einträge möglichst schnell parsen kann und es schafft einen Gigabyte pro Sekunde Raten zu bekommen, wenn man DNS Zone Files parst.",
+      "start": 280099,
+      "end": 294102,
+      "confidence": 0.8019999999999999,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Das war ein sehr genialer Vortrag, verlinken wir auch in den Shownotes. Aber warum brabbeln wir die ganze Zeit über Open Source und wie teuer Bier ist? Weil genau das heute unser Thema ist. Heute dreht sich alles um Geld und Open Source. Und da fragen sich viele, hä, wie passt denn das zusammen? Erkläre ich euch jetzt. Eigentlich basiert irgendwie alles auf Open Source. Das Ganze ist inzwischen ein fundamentaler Baustein der heutigen genutzten Services und mit hoher Wahrscheinlichkeit auch dafür verantwortlich, dass die Firma, für die ihr arbeitet, den Service betreiben kann, den sie halt betreibt. Das Tolle an Open Source ist, da gibt es irgendwie eine riesen Community in jedem Bereich. Es gibt sogar Open Source Hardware und Chip Design. Und in der Theorie kann halt wirklich jeder mitmachen. Und das tun ja auch sehr viele, was ja grandios ist. Und die Leute, die noch nicht in Open Source involviert sind, aber Software-Engineering betreiben, die haben immer auf ihrem To-Do-Zettel, ich will mal zu Open Source kontribuieren. Vielleicht erkennt ihr euch da wieder. Und wenn man die ganze Sache jetzt mal weiter spinnt, dann haben viele Leute so den großen Traum, für Open-Source-Entwicklung bezahlt zu werden oder mit einem eigenen Open-Source-Projekt Geld zu verdienen. Und das ist das Hauptthema dieser Episode. Wie realistisch ist das eigentlich? Was für Möglichkeiten gibt es zur Finanzierung von Open-Source-Projekten? Und welche Herausforderungen gibt es denn da? Weil der normale Werdegang eigentlich für Software-Engineers, die mit Open-Source anfangen, ist, die haben eine Idee, setzen sich hin, hacken und drücken dann irgendwann Git, Push, Origin, Main und publishen das auf GitHub und fertig. Also die meisten Leute machen das in ihrer Freizeit. Und es wäre natürlich immer ganz geil, wenn man vielleicht noch ein bisschen Geld dazu bekommt, wenn man seiner Passion so ein bisschen nachgeht.",
+      "start": 294742,
+      "end": 387925,
+      "confidence": 0.8014455445544554,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Da muss ich dir jetzt gleich korrigieren, weil du sagst, der Großteil macht das in seiner Freizeit. Es gibt da ja Statistiken dazu, dass 50 Prozent der Open-Source-Entwickler das im Rahmen des Jobs machen und bezahlt dafür werden. Also der Großteil ist es nicht, aber es machen sehr, sehr viele Leute in der Freizeit.",
+      "start": 388706,
+      "end": 403338,
+      "confidence": 0.7408148148148146,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Bei diesen Statistiken bin ich immer recht vorsichtig, weil ich mir da die Frage stelle, von diesen 50 Prozent sind das die Leute, die wirklich 40 Stunden in der Woche an diesem Open-Source-Projekt arbeiten? Oder sind das Leute, die hier und da mal einen Backfix kontribuieren?",
+      "start": 403358,
+      "end": 416089,
+      "confidence": 0.799086956521739,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Das ist ja egal, aber wenn 50% des Sourcecodes bezahlt ist, dann ist das schon mal die Hälfte, die bezahlt ist.",
+      "start": 416424,
+      "end": 423697,
+      "confidence": 0.7690952380952383,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Ja, das haben 50% so an sich, dass sie die Hälfte sind, das ist richtig.",
+      "start": 423717,
+      "end": 426522,
+      "confidence": 0.5948,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Eben, aber du hast ja die Mehrheit gesagt, also da muss man hier aufpassen. Aber es stimmt schon, es ist Anzahl der Code-Zeilen, wie wird das gerechnet über die E-Mail-Adresse und so weiter. Auf jeden Fall ist es ein großer Punkt, dass Companies mittlerweile viel Einfluss haben auf die Open-Source-Szene. Da hat es auch einen guten Vortrag gegeben auf der FOSDEM zu diesem Thema. dass der Einfluss von diesen großen Tech-Konzernen auch immer größer wird im Open-Source-Bereich, weil einfach die Leute stellen, die Open-Source-Contributen und dadurch halt auch der Einfluss größer wird und es teilweise nicht mehr so frei ist, wie man sich das eigentlich vorstellen würde. Können wir auch gern verlinken natürlich in den Show Notes.",
+      "start": 427307,
+      "end": 462468,
+      "confidence": 0.7926239316239317,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Ja, okay, da hast du dir jetzt irgendeine Statistik aus der Nase gezogen, das ist jetzt wie irgendwelche Firmen Leute bezahlen, aber wie sieht's denn aus, wenn ich selber ein Open-Source-Projekt hab? Wie kann ich denn Geld verdienen, Geld einsammeln, einen Benefit dafür kriegen?",
+      "start": 462888,
+      "end": 474733,
+      "confidence": 0.7045454545454546,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Also grundsätzlich, was man mal klar sagen muss, ist, dass es schwer ist. Wenn man jetzt einfach sein Wissen verkauft, irgendwas programmiert, freelanced für eine Firma, das ist wahrscheinlich wesentlich einfacheres Geld. Muss man ganz klar sagen. Also, dass man jetzt super reich wird und super schnell auch irgendwo einen Geldfluss hat, das ist bei Open Source sicherlich schwieriger. Ganz allgemein. Egal, was man macht. Ist einmal sicher ein Punkt. Aber natürlich, ich glaube, eine Quelle sind Firmen. Das heißt, dass Firmen Geld in die Hand nehmen und Open Source Sponsoring betreiben. Das heißt, wenn man eine coole Open Source Software hat, eine Library, was es auch immer ist, und einen Mehrwert bietet für eine Firma, dann kann man auch versuchen, diese Firmen anzusprechen, dass die ein Sponsoring machen und man Geld von diesen Firmen bekommt.",
+      "start": 475250,
+      "end": 520436,
+      "confidence": 0.8151764705882354,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "In der Regel hat man dafür irgendeine Art Champion innerhalb der Firma.",
+      "start": 520836,
+      "end": 524458,
+      "confidence": 0.8444999999999999,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Was ist ein Champion?",
+      "start": 524498,
+      "end": 525659,
+      "confidence": 0.618,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Ein Champion ist eigentlich jemand, der die Grundidee innerhalb der Firma treibt, weil es ist ja jetzt nicht so, als würde das Topmanagement sagen, hey, Open Source ist cool, lass mal irgendwie fünf, sechs, siebenstellige Beträge in Open Source schießen. sondern du musst den Executives das halt schon irgendwie verkaufen. Das bedeutet, du hast jemand in der Firma, ein Senior Engineer, ein Staff Engineer oder ähnliches, der macht daraus ein Case, sag ich immer. Der schreibt mal ein Dokument, warum sollten wir um Source sponsoren, welche Vorteile hätten wir dazu, welches Projekt sollten wir sponsoren, mit wie viel Geld und so weiter.",
+      "start": 525699,
+      "end": 554917,
+      "confidence": 0.7304999999999999,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Und was für Vorteile gibt's denn für so Firmen? Was würdest du da reinschreiben? Also, was springt denn für die Firma raus am Ende?",
+      "start": 554957,
+      "end": 561882,
+      "confidence": 0.7047083333333332,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Man kann die Vorteile aus verschiedenen Perspektiven beleuchten, meines Erachtens. Auf der einen Seite ist das natürlich Upskilling und Vorträge, weil man dann durch das Sponsoring gegebenenfalls ein paar privilegiertere Zugänge zu den Open-Source-Maintainern und zum Produkt bekommt, Beispiel direkter Zugriff auf die Maintainer. Man kann die mal einladen, um Vorträge zu halten oder Workshops mit dem eigenen Engineering-Team zu halten. Man kann Bugs oder Features priorisieren. Ja, das ist zum Beispiel so ein Vorteil, wo man in der Regel halt sehr viel Geld in die Hand nehmen muss, um teure Workshops bei Firmen einzukaufen, die dann mit hoher Wahrscheinlichkeit sich nur gut mit dem Tool auskennen, es aber nicht programmieren. Eine andere Thematik ist zum Beispiel das Employer Branding beziehungsweise das Recruiting. Es fällt so ein bisschen in die Kategorie, tue Gutes und rede darüber. Das bedeutet, wenn ich jetzt als Firma einfach mal 10, 15, 20.000 Euro oder mehr in die Hand nehme und das in ein Open-Source-Projekt stecke, dann kann ich damit natürlich auch hausieren gehen und sagen, hey, wir nehmen Open-Source ernst. Wir fördern dieses Open-Source-Projekt mit einer betrachtlichen Summe Geld. Und das ist auch völlig okay. Und das ist natürlich attraktiv für Engineers, besonders die im Open-Source-Bereich sind, weil das ausstrahlt, okay, wir als Firma oder die Firma nimmt Open-Source ernst.",
+      "start": 562642,
+      "end": 633268,
+      "confidence": 0.8101574074074078,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Aber ich will ja gar nicht 20.000. Ich will ja gar nicht so eine große Firma. Da kann ich dann vielleicht gar nichts bieten. Kann ich nicht irgendwas finden, wo ich weniger Geld bekomme? Also du sprichst jetzt da von einem Champion und von einem Konzern, der irgendwie 20.000 Euro in die Hand nimmt, weil die kleine Firma, die mit Open Source arbeitet, die würde jetzt kein Budget haben von 20.000, das sie mal so einfach auf der Seite haben und irgendwem direkt geben können. Also gibt es dann nichts auf kleinerer Stufe, dass ich jetzt zu meinem Nachbarn oder zu deiner Agentur aus Wanne-Eickl da irgendwie vorbeischauen kann und mal fragen kann, ob die in irgendeiner Form Sponsoring machen? Oder dass es gleich 20.000 sind?",
+      "start": 633703,
+      "end": 670049,
+      "confidence": 0.7484761904761907,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Naja prinzipiell, ich hab jetzt einfach nur mal 20.000 genommen, weil das natürlich dann bei großen Projekten wie React, Webpack und so weiter natürlich dann schon eine Summe ist, wo man dann in die höhere Kategorie kommt und dann auch das Logo da hinpacken kann. Prinzipiell ist die Höhe der Summe völlig irrelevant, meines Erachtens nach, sondern hauptsächlich, dass man halt Open Source sponsort.",
+      "start": 670089,
+      "end": 690782,
+      "confidence": 0.7986718749999999,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Moment, da habe ich gleich die wichtige Frage, du hast das ja schon öfters erwähnt, wie viel Geld muss man dir geben, damit du nackig durch die Wohnung läufst? Alle StammhörerInnen kennen das jetzt schon?",
+      "start": 691262,
+      "end": 700468,
+      "confidence": 0.7371999999999999,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Ich bin ein sehr einfach gestrickter Mensch. Ja, wenn, wenn, wenn du über GitHub Sponsors fünf Euro mir spendest für irgendeine Library, die ich mal veröffentlicht habe, reicht schon, ich freue mich wie Bolle. Also ich bin, ich bin sehr einfach gestrickt, Wolfgang.",
+      "start": 700528,
+      "end": 713779,
+      "confidence": 0.7479069767441862,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Okay, aber wie, wie kann ich es denn erreichen, dass mir jemand fünf Euro spendet oder vielleicht 500 oder so? Glaubst du, dass Agenturen das in die Hand nehmen?",
+      "start": 713839,
+      "end": 721827,
+      "confidence": 0.7536206896551726,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Ja, ich denke, ich denke, Agenturen machen das auch. Viele Agenturen machen das vielleicht nicht genau so, dass sie 500 Euro nehmen und in dieses eine Projekt packen, sondern viele Agenturen gehen eher den Weg über eine Membership in irgendeiner Association, zum Beispiel im Home-Source-Projekt Typo 3 gibt es hintendran eine Vereinigung, da kannst du Member werden, dann hast du Wahlrechte in bestimmten Komitees und solche Geschichten. Viele Open-Source-Systeme, ich glaub, Magento hatte sowas auch, PHP-Shop-System und so weiter und so fort, die haben eher so Associations und so Vereine hinten dran, die dann ein bisschen Governance drum machen, die Linux-Foundation, Apache-Foundation, das sind alles so Elemente, die hinter größeren Open-Source-Projekten stehen. Und Agenturen machen das dann da, in dieser Sicht, ja? Also, genau.",
+      "start": 722347,
+      "end": 763800,
+      "confidence": 0.7717661290322579,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Was natürlich für Agenturen immer schwierig ist, oder ganz allgemein für kleinere Firmen und kleinere Projekte, dass man da natürlich irgendwie eine Rechnung braucht, wenn man was sponsert. Das heißt, wenn ich jetzt den kleinen Entwickler von nebenan sponsern will mit seinem Open Source Projekt, dann ist das schon schwierig. Kann der eine Rechnung ausstellen? Was kann ich da machen? Das wird dann als Firma schon teilweise einfach kompliziert, weil das nicht so ein klassischer B2B Case ist, den man da hat.",
+      "start": 764480,
+      "end": 790203,
+      "confidence": 0.7927195121951219,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Schon klar, aber GitHub Sponsoring zum Beispiel stellt ja inzwischen auch eine Rechnung aus.",
+      "start": 790683,
+      "end": 795144,
+      "confidence": 0.6818571428571429,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Ist das so?",
+      "start": 795184,
+      "end": 796025,
+      "confidence": 0.7506666666666666,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Meines Wissens noch, ja.",
+      "start": 796045,
+      "end": 797165,
+      "confidence": 0.7215,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Aber da musst du natürlich auf GitHub Sponsor sein, musst die ganzen rechtlichen Dinge wieder mit GitHub abgeklärt haben, weil sobald du Geld empfängst als Open Source Entwickler, ist das gleich automatisch schwieriger. Klar. Und für die Firmen natürlich ist es demnach auch schwieriger, wenn sie keine Rechnung bekommen. Aber man kann es auch super einfach umgehen und das machen glaube ich auch viele Firmen, dass man kein klassisches Geld zur Verfügung stellt, sondern irgendwas sponsort, das heißt eine Werbeausgabe oder ein Event sponsert da, irgendein Teil zahlt, vielleicht ein Catering zahlt oder sowas und das macht es dann auch ein bisschen einfacher, da fließt halt dann kein direktes Geld zu dem Entwickler, aber man sponsert vielleicht irgendein Event. wo diese entwickler irgendwo involviert sind also diese möglichkeit gibt es immer und das macht das ganze dann vielleicht ein bisschen einfacher für firmen und für die entwickler.",
+      "start": 797205,
+      "end": 842133,
+      "confidence": 0.7997074829931969,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Innen auch ein viel größeres problem was ich eigentlich sehe wenn firmen wirklich opensource sponsoring mit direktem geld sponsern wollen ist folgendes du hast jetzt eine firma die will 234.000 euro in einer umsauce projekt stecken was sie zum beispiel verwenden view js react oder ähnliches Das Problem ist an diesen großen Projekten, die nehmen diese 2.000, 3.000, 4.000 Euro, sagen danke und machen einfach weiter, weil solche Beträge sind für die nicht unüblich, weil da stehen halt echt große Firmen hinter, teilweise Google, Microsoft und wie sie alle heißen. Und die schießen da wirklich dann 5, 6-stellige Beträge rein. Das Doofe hier eigentlich ist folgendes. React als Beispiel kriegt das Geld. React selbst basiert aber auf, mit hoher Wahrscheinlichkeit, zu vielen JavaScript-Packages. Und unten drunter, in der Dependency-Chain, die meisten gehen halt leer aus. Weil React sicher jetzt nicht die Arbeit macht, okay, welche Dependencies hab ich, und dann reicht das Geld weiter. Wolfgang und ich hatten dazu mal vor ein paar Jahren, glaub ich, eine Idee, die haben wir auch verfolgt. Die Grundidee war eigentlich, du sponserst ein Open-Source-Projekt, sagen wir mal mit 1.000 Euro, ist grad leichter zu rechnen, Und dann wird das Dependency-File, die Package.json oder Package.log genommen, analysiert und dann wird der Betrag von 1000€ prozentual aufgeteilt an alle Dependencies. Weil das Open-Source-Projekt wäre nicht möglich ohne die ganzen Dependencies.",
+      "start": 842153,
+      "end": 924192,
+      "confidence": 0.8037777777777781,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Beziehungsweise man kann auch einen Schritt höher gehen, dass man sagt, ok, alle Libraries, die ich einbinde, bekommen meinen Topf an Open Source Förderung. Ich habe diese 1000 Euro und alle Libraries, die ich verwende, inklusive allen Rekursivabhängigkeiten und darunter liegenden Libraries, bekommen dann auch einen kleinen Teil und das wird fair aufgeteilt. Die Aufteilung soll möglichst automatisch passieren. Das heißt, ich programmiere meine Software, entscheide mich, okay, Open Source ist wichtig. Ich will 1.000 Euro an die Open Source Projekte verteilen. Alles andere geht automatisch und es wird verteilt und jeder bekommt einen kleinen Teil von diesem Topf, ohne dass ich als Firma mir Gedanken machen muss, was mache ich eigentlich, wen will ich unterstützen, welche Libraries verwende ich, welche Abhängigkeiten habe ich in meinem Projekt und so weiter.",
+      "start": 924652,
+      "end": 969066,
+      "confidence": 0.7896307692307691,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Die Probleme, wenn das nicht passiert, haben wir gesehen. Sowas wie Heartbleed in OpenSSL. Da wurde festgestellt, oh, OpenSSL wird irgendwie nur von ein oder zwei Personen maintained. Oder die Sicherheitslücke Lock4Shell in Lock4J. Oh, irgendwie machen zwei Leute das in ihrer Freizeit. Aber es betrifft halt die ganze Enterprise-Schiene. Mit so einem Approach wär das halt nicht passiert, beziehungsweise hätten die Leute deutlich mehr Geld bekommen, weil, nennt mir doch mal ein Projekt, wo OpenSSL keine Rolle spielt oder wo Log4J keine Rolle spielt. Schwierig zu finden.",
+      "start": 969627,
+      "end": 1003578,
+      "confidence": 0.8181590909090908,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Wobei man dazu sagen muss, dass nur weil Geld da ist, es nicht automatisch heißt, dass du Entwickler hast und Leute, die das verfolgen, weil du musst dir die Leute auch erstmal finden, anborden und die müssen motiviert sein. Also rein mit einem Geldtopf kannst du das auch nicht machen und alle großen Firmen wissen das ja, wie schwer es ist, Entwickler innen zu bekommen. Das heißt, auch da ist es halt ein Schritt in die richtige Richtung, wenn du mehr Budget hast, aber es ist sicher nicht der einzige Punkt.",
+      "start": 1004038,
+      "end": 1029967,
+      "confidence": 0.8104505494505495,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Ist schon klar, aber es ist ganz einfach ein Motivator. Ein Motivator bestimmt einfach gegenüber.",
+      "start": 1030287,
+      "end": 1035130,
+      "confidence": 0.7530666666666668,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Moment, sagst du jetzt, dass Geld die Motivation bringt? Gerade du, du bist immer so jemand, der auf die Motivation achtet.",
+      "start": 1035790,
+      "end": 1042335,
+      "confidence": 0.6891428571428571,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Es ist einfach wissenschaftlich bewiesen, dass Geld kurzfristig die Motivation hebt.",
+      "start": 1042375,
+      "end": 1047218,
+      "confidence": 0.8509090909090908,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Kurzfristig, genau.",
+      "start": 1047318,
+      "end": 1048218,
+      "confidence": 0.5760000000000001,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Ich sage nicht sustainable, ich sage kurzfristig. Daniel Pink, Psychologe, alles in seinem Buch Drive dokumentiert, kann ich sehr ans Herz legen, warum man mit Geld keine Leute motivieren sollte. Der Punkt ist aber, bei dieser Open-Source-Geschichte hier, entscheidet eine Open-Source-Sponsoring von GitHub-Sponsors, setze ich mich heute Abend noch dran, fixe ich den Bug, oder ist Netflix mein Freund? Also von daher ... Es kann natürlich auch sein in der Second-Screen-Generation, dass ich bei Netflix einen Bug fixe, aber das ist was anderes. Naja, auf jeden Fall haben wir versucht, dieses Problem zu lösen. Also das, was wir gerade beschrieben haben, wollten wir wirklich haben. Und was soll ich sagen? Wir sind hoffnungslos gescheitert. Wolfgang, erklär doch mal bitte, wo dran sind wir gescheitert?",
+      "start": 1048238,
+      "end": 1086527,
+      "confidence": 0.7835806451612904,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Ja, wenn man das so zusammenfassen kann, wir sind gescheitert am Geld.",
+      "start": 1086912,
+      "end": 1090454,
+      "confidence": 0.76575,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "An der Geldverwaltung wohl eher, oder?",
+      "start": 1090494,
+      "end": 1092535,
+      "confidence": 0.8078333333333334,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Genau. Und zwar, sobald man irgendwie was mit Geld macht und vielleicht nicht auf den Bahamas oder so sitzt, sondern vor allem in der EU, aber Amerika genauso, hat man extrem viel Gesetze, Regularien, die da eingreifen und die das Ganze superschwierig machen. Und ihr habt es zuerst schon erwähnt, Für Firmen ist es natürlich wichtig für deren Buchhaltung, dass die eine Rechnung bekommen. Das heißt, ich als Firma kann nicht Andi einfach 500 Euro geben, ohne dass ich eine Rechnung zurückbekomme von 500 Euro oder für 500 Euro. Also ich kann das natürlich schon machen, aber dann ist es halt irgendeine Ausgabe und ich kann das nicht steuermindernd geltend machen. Und das ist natürlich ein großes Problem für Firmen. und auch für Open-Source-Entwickler, weil die müssen dann plötzlich in der Lage sein, Rechnungen zu schreiben. Die müssen das natürlich dann auch alle versteuern. Und wenn man sich das jetzt rekursiv vorstellt, alle, die JavaScript programmieren, wissen das, wie viele Libraries man denn so rekursiv einbindet. Und wenn man da so eine simple Standard-Library einbindet, kann es schon mal sein, dass man hinten dann irgendwie mit 1.000 Subpaketen wieder rauskommt bei dem ganzen Graphen. Das heißt, man müsste diese 1.000 Euro an 1.000 einzelne Entwickler verteilen. Und das Ganze noch so, dass es steuerlich funktioniert, dass das alles sauber ist, dass man das Geld richtig verteilt hat, dass eine Rechnung rausputzelt, dass die 1.000 Entwickler, die irgendwo in der Welt sitzen, in ganz verschiedenen Ländern, ihr Geld bekommen, dann einen Geldtransfer macht und man dabei nicht im Gefängnis landet. Also diese Herausforderung haben wir probiert anzugehen und sind dann einfach gescheitert. Und wir haben auch mit vielen Profis gesprochen, die ähnliche Dinge machen, die in der Branche zu Hause sind. Und wir haben einfach keine sinnvolle Lösung gefunden, um dieses Problem zu lösen. Und da sprechen wir noch nicht mal von irgendwelchen Spendenquittungen oder Spendensysteme, die in jedem Land anders sind. In der EU Rechnungen sind noch einheitlich. Aber eine Spende in Deutschland ist womöglich keine Spende mehr in Österreich oder Italien oder Frankreich. Also dieses System ist super kompliziert und ist eigentlich mit einer Fiat-Währung, also wenn man nicht auf Krypto oder sonst irgendwas setzt, beinahe unmöglich.",
+      "start": 1092575,
+      "end": 1216644,
+      "confidence": 0.8146793478260875,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Prinzipiell, auch wenn man die ganze Sache kleiner denkt, wenn man gesagt, okay, wir beschränken uns nur auf Deutschland, ist das halt rechtlich eine komplizierte Geschichte, weil wir in der Regel dann das Geld einer Firma einsammeln, es für eine gewisse Zeit halten, und hoffentlich eventuell auszahlen also das bedeutet man verwaltet geld für andere und das nennt man in der regel in im echten leben bank und dann sind wir nämlich an dieser kleinen thematik wie in deutschland der bafin das ist die finanzaufsicht und dann ist man ratzfatz in dem themenbereich muss ich dafür eine kleine banklizenz haben Ich meine, am Ende vom Lied wäre es natürlich toll, wenn man das in Deutschland legal ans Fliegen kriegt, weil ich glaube, wenn man das in Deutschland legal ans Fliegen kriegt, dann hat man das, ich lehne mich mal aus dem Fenster, fast weltweit legal ans Fliegen gebracht. Punkt ist aber, ein simpler Wunsch, Open Source Sponsorings fair zu verteilen, ist in der Realität einfach super hart. Naja, gut, auch wir fallen mal auf die Mütze.",
+      "start": 1217364,
+      "end": 1272306,
+      "confidence": 0.8285056818181817,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Aber wir wären natürlich froh, wenn das irgendwer löst und vielleicht diese Nuss knacken kann, weil es wäre wirklich allen damit geholfen. Und wie ich schon erwähnt habe, ein großer Knackpunkt ist auch das Empfangen von Geld als Open Source Entwickler oder Entwicklerin, weil das ja sofort in die ganze steuerliche Thematik mit reinspielt. Und da gibt es aber mittlerweile ein recht standardisiertes System oder eine gute Lösung. Zum Beispiel Open Collective macht sowas auch, dass man einen sogenannten Fiscal Host sich für sein Open Source Projekt holt. Und dieser Fiscal Host ist dann wie eine kleine Firma, die das Geld annimmt, Rechnungen schreiben kann, dass das alles sauber läuft. Und die Firma bewahrt dann das Geld für das Open Source Projekt auf. Und wenn man mal eine Veranstaltung hat und ein Catering braucht, wenn man mal einen Entwickler hat, der eine Rechnung stellen kann, dann kann man diese Rechnungen fürs Catering, für andere Entwickler, für eine Veranstaltung, was es auch immer ist, dann an diese Firma senden und man bekommt das Geld rückerstattet. Also das ist so ein Weg dazwischen. Das Problem ist aber, dass man da normalerweise keine Personen damit anstellen kann. Also ein klassisches Anstellungsverhältnis ist üblicherweise nicht möglich, weil das natürlich zu komplex wieder wird mit dem ganzen Arbeitsrecht. Aber man hat wenigstens mal einen Topf, wo Geld reinfließen kann und sobald man eine Rechnung hat, eine Ausgabe, kann man das wieder von seinem Open Source Topf rückerstatten. Die nehmen natürlich einen gewissen Prozentsatz von dem Ganzen für dieses Handling, aber damit ist es dann komplett gemanagt und gerade wenn man ein Projekt hat, wo mehrere Leute dran sitzen und involviert sind, kann man das Geld dann natürlich jeweils für gewisse Ausgaben von diesen Personen dann verteilen und hat nicht das Problem, wenn man dann plötzlich selber viel Geld empfängt, dass man da irgendwie Steuern zahlen müsste und dann müsste man das weiterleiten an die Kollegen, die dann noch mitarbeiten im Open Source Projekt. Also das vereinfacht das Ganze natürlich drastisch und da kann man mal Geld empfangen. Ideal ist es natürlich auch nicht, vor allem wenn man jetzt wirklich davon leben will oder wirklich Geld bekommen will, dann muss man irgendwie ein Anstellungsverhältnis im Idealfall haben. Also das macht es dann natürlich schwieriger, aber es ist zumindestens mal ein einfacher Start, um überhaupt mal Geld empfangen zu können, ohne dass man jetzt selbst gleich in steuerliche Probleme läuft.",
+      "start": 1272346,
+      "end": 1404025,
+      "confidence": 0.8068089330024811,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "So viel zu dem langweiligen Teil. Danke, Wolfgang.",
+      "start": 1404045,
+      "end": 1408105,
+      "confidence": 0.893125,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Wir sind übrigens keine Steuerberater, aber wie gesagt, wir haben uns doch schon einige Zeit damit beschäftigt.",
+      "start": 1408145,
+      "end": 1413447,
+      "confidence": 0.7037058823529412,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Wie höre ich immer in anderen Podcasts, immer wenn es um solche Themen geht? Ich bin kein Steuerberater, das ist keine Rechtsberatung, das ist hier alleiniges Entertainment.",
+      "start": 1413467,
+      "end": 1420648,
+      "confidence": 0.724111111111111,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Ja, aber deine Flachwitze sind jetzt kein großes Entertainment.",
+      "start": 1421119,
+      "end": 1423456,
+      "confidence": 0.5962222222222222,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Stay tuned, am Ende der Episode kommt noch ein Flachwitz.",
+      "start": 1423915,
+      "end": 1426537,
+      "confidence": 0.7062000000000002,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Wenn wir jetzt aber mal weggehen von diesem klassischen Modell, Firma zahlt an Entwicklern irgendwie Geld aus. Was gibt es denn noch für Möglichkeiten, um mit Open-Source-Geld in irgendeiner Form zu verdienen?",
+      "start": 1426557,
+      "end": 1438266,
+      "confidence": 0.82484375,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Eine geile Idee habe ich Ende letzten Jahres auf einem Meetup kennengelernt. Und zwar hat der Entwickler Martin Donat da einen Vortrag gehalten, wie er mit seinem Open-Source-Projekt circa 100.000 Dollar im Jahr verdient. Das Projekt, um das es geht, ist ein Theme für die Dokumentationssoftware mkdocs. Du kannst damit also eigentlich Dokumentationsseiten bauen, auf Basis von Markdown. Und er hat dann Google Material Design Theme draufgepackt. Und was er macht, ist so eine Art Early Access Model. Also er sagt, pass mal auf, du kannst hier super gut aussehende Dokumentationen für dein Projekt machen. Und dann habe ich noch dieses Feature, dieses Feature, dieses Feature. Das ist zum Beispiel automatische Light- und Dark-Modes, Such-Support für die chinesische Sprache, ein Cookie-Banner, Like-Buttons und so weiter und so fort. Also alles das, wo man sagen würde, hey cool, das hätte ich gerne in meiner Dokumentation. Und was er macht, er sucht sich immer ein Feature Set aus, entwickelt das, hält aber diese Features Closed Source, also in einem Private Repository. Und dann sagt er, okay, ich setze ein Sponsoring Goal auf von 500 Dollar. Und wenn diese 500 Dollar gesponsort wurden, dann nimmt er die Features in diesem Sponsoring Goal und packt die in die Open Source Variante. Das bedeutet also eigentlich, er schnürt immer gute Premium Features und die Leute, die Sponsoren haben Early Access. Und dadurch hat er schon eine ganze Menge Geld eingesammelt. Also du siehst auf der Webseite auch Goals Completed, also das 10.000$ Goal ist Completed. Da hat er zum Beispiel kompletten Offline Support eingebaut und jetzt gerade ist er am 12.000$ Goal dran, auch wieder mit diesen Premium Features.",
+      "start": 1438306,
+      "end": 1540032,
+      "confidence": 0.7940583941605844,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Das heißt aber, ich zahle dann für ein spezielles Feature einen gewissen Preis, den er festlegt und bekomme das Feature dann. Also das habe ich dann sicher. Aber es ist ein fix festgelegter Preis vom Entwickler.",
+      "start": 1540940,
+      "end": 1551949,
+      "confidence": 0.7191944444444445,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Ja, du musst mindestens 15 Dollar oder mehr spenden. Und oder mehr ist dann dir überlassen. Ja, aber geht ab 15 Dollar los und dann kriegst du Zugriff auf das Private Repository, bis dann das Sponsoring-Goal von jetzt in diesem Fall, jetzt sind wir bei 12.000 Dollar, erreicht ist und dann geht das ganze Feature Set in die Open Source Variante.",
+      "start": 1551969,
+      "end": 1572126,
+      "confidence": 0.7552131147540986,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Aber ich hab Zugriff auf alle Features dann, mit den 15$.",
+      "start": 1572166,
+      "end": 1576281,
+      "confidence": 0.7826363636363637,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Was meinst du, auf alle?",
+      "start": 1576291,
+      "end": 1577292,
+      "confidence": 0.6352,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Ja, auf alle Pro Features.",
+      "start": 1577312,
+      "end": 1579255,
+      "confidence": 0.634,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Es gibt ja keine Pro Features mehr. Alle Pro Features von bereits erreichten Goals sind in der Open Source Variante verfügbar.",
+      "start": 1579295,
+      "end": 1584341,
+      "confidence": 0.793857142857143,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Ja, ja, aber alle neuen Features, die da jetzt gebundelt sind, auf die hab ich dann Zugriff.",
+      "start": 1584381,
+      "end": 1588386,
+      "confidence": 0.7235294117647059,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Ja, ja, genau. Also, wenn du jetzt natürlich nur für den chinesischen Such-Support haben möchtest, ja, dann zahlst du halt 15 Dollar für dieses chinesische Such-Support, aber du hast dann auch auf die anderen Features in diesem Sponsoring-Goal Zugriff, genau.",
+      "start": 1588912,
+      "end": 1599202,
+      "confidence": 0.7181499999999998,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Und die Leute, die aber früher schon was gespendet haben, haben dann keinen Zugriff wieder auf die neuen Features. Das ist immer nur in einem Zeitrhythmus, also in einem Bundlerhythmus.",
+      "start": 1599483,
+      "end": 1609433,
+      "confidence": 0.7751000000000001,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Ja, ja und nein. Ja, also weil der Clou ist folgendermaßen, GitHub Sponsors läuft ja über monatliches Sponsoring. Das bedeutet, die Leute, die ihr Sponsoring nicht gecancelt haben, sponsoren ja weiter und haben somit weiterhin Zugriff. Du kannst natürlich auch ein One-Time-Payment machen. Geht auch. Und du kannst natürlich jederzeit dein Sponsoring canceln. Ich will nicht sagen, das ist so eine Art Freemium-Konzept, weil das ist es einfach nicht. Es ist halt ein Early-Access-Modell, was ich ziemlich attraktiv und auch irgendwie fair finde.",
+      "start": 1610233,
+      "end": 1635747,
+      "confidence": 0.7350240963855418,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Es ist halt sehr fair, dass es dann Open Source wird. Das heißt, sobald du einen gewissen Betrag verdient hast, machst du das Open Source. Und was halt sonst bei diesen anderen Modellen üblicherweise nicht der Fall ist, weil du zahlst dann, um zu Premium Features zu kommen, die werden aber nie Open Source. Das ist der große Unterschied. Und das ist halt klar transparent kommuniziert. Das hat es natürlich früher auch schon gegeben. Ich weiß es von MySQL zum Beispiel, dass das ganz oft der Fall war, ein Kunde wollte irgendwas, hat da ein Feature bezahlt, das wurde programmiert und wurde dann später auch irgendwann open-sourced unter Umständen. Aber das hat natürlich nie transparent stattgefunden. In dem Fall ist es halt wirklich transparent. Du hast dieses Goal, wenn es erreicht wird, wird alles open-sourced und so weiter. Schon ein viel transparenteres Arbeiten mit einer Nähe zu deiner Community. Da ist also schon ein großer Unterschied.",
+      "start": 1636115,
+      "end": 1679993,
+      "confidence": 0.7891410256410253,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Die Herausforderung für ihn natürlich ist der Churn, weil das eigentlich hast du genauso die klassischen Produkt SARS Metriken wie Customer Churn, dass Customer halt abspringen und deine Customer sind halt jetzt die Sponsoren und so weiter. Sehr interessanter Talk. Ich weiß gar nicht, ob er die Slides online hat. Können wir mal nachfragen und in den Show Notes verlinken. ist aber auch eine Möglichkeit, Geld mit deinem Open Source Projekt zu verdienen. Man muss aber auch dazu sagen, das Open Source Projekt muss dafür natürlich schon etwas bekannter sein und du musst ein bisschen so die Marketing Trommel rühren. Der Punkt ist aber, es ist jetzt kein klassisches Klinkenputzen in dem Sinne, sondern du packst einfach nur ein bisschen mehr, nicht nur ein bisschen mehr, sondern ein bisschen sehr mehr Effort da rein, erstellst eine ordentliche Webseite, setzt das Konzept auf, blabliblub. Kurzum, das Geld liegt hier jetzt nicht auf der Straße, du musst schon was dafür tun.",
+      "start": 1680274,
+      "end": 1727938,
+      "confidence": 0.7720628930817613,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Ich glaube, das ist ganz allgemein. Wenn du dein Open Source Projekt monetarisieren willst, dann musst du das halt wie ein Produkt sehen und dann musst du eine Monetarisierungsstrategie fahren und die bedeutet meistens in irgendeiner Form Marketing, Sales. Du musst dich darum kümmern, du musst eine Learning Page haben, du musst das irgendwie nutzen, den Kontakt zu den Firmen, die vielleicht deine Library, dein Open Source Tool verwenden. Also es wird dann schon viel mehr als ein reiner Programmierjob. Also nur etwas zu programmieren und dann automatisch Geld zu verdienen, das hätte vielleicht mit unserem Recursive-Projekt funktioniert, wenn du dann rekursiv einfach ganz viel Geld bekommst für deine kleine wichtige Library im Hintergrund. Aber im Allgemeinen würde ich mal sagen, dass das aktuell schwer ist, einfach ohne Marketing, ohne Brand, du musst da eine Open Source Brand aufbauen, Geld zu verdienen. Also ist glaube ich echt schwierig.",
+      "start": 1728418,
+      "end": 1775895,
+      "confidence": 0.7652770270270268,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Ja, ob es mit dem Recursive-Projekt heutzutage mit einer neuen Library noch mal genauso funktionieren würde, weiß ich nicht. Also nehmen wir mal das Beispiel von OpenSSL. Die Webseite, ich lehne mich mal aus dem Fenster, ist jetzt nicht Marketing first, ja?",
+      "start": 1776375,
+      "end": 1791804,
+      "confidence": 0.775452380952381,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Sollte mal jeder ausprobieren, ja. Die OpenSSL-Seite verlinken wir natürlich, ja.",
+      "start": 1791824,
+      "end": 1796607,
+      "confidence": 0.5512727272727272,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Es ist aber einer der Software-Teile, die, ich lehne mich jetzt mal wieder aus dem Fenster, aber einer der meistdeployierten Software weltweit.",
+      "start": 1796627,
+      "end": 1805112,
+      "confidence": 0.782590909090909,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Gleich nach Köln natürlich, oder?",
+      "start": 1805718,
+      "end": 1807239,
+      "confidence": 0.6704,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Ja, so selbes Level würde ich sagen. Auf jeden Fall, warum ist das so? Das ist so, weil die halt sehr früh dran waren. Stell dir mal vor, du würdest jetzt einen OpenSSL in JavaScript schreiben. Keine Ahnung, ob das jetzt nochmal die gleiche Popularität erreichen würde, ohne diese Marketing drumherum, von der wir gerade sprechen. Deswegen weiß ich jetzt nicht, aber in der Tat muss es als Produkt sehen.",
+      "start": 1807299,
+      "end": 1828247,
+      "confidence": 0.7681714285714286,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Und da muss man ganz klar sagen, ganz viele EntwicklerInnen wollen da einfach keine Zeit investieren. Und das ist ja auch okay. Aber ich glaube, wenn man Geld verdienen will, muss man wirklich auch zusätzlich zu dem ganzen Coding-Aufwand auch noch einen anderen Aufwand betreiben. Und das ist genau dieser Aufwand, um Geld zu verdienen. Und das vergisst man halt sehr oft, dass das durchaus zeitintensiv ist und dass das vielleicht sogar teilweise mehr Zeit oder gleich viel Zeit ist, wie der eigentliche Coding-Part, den man da hat.",
+      "start": 1828667,
+      "end": 1856503,
+      "confidence": 0.8386590909090909,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Mit der nächsten Möglichkeit durchbreche aber irgendwie diese Methode, weil da muss man nicht so viel Aufwand betreiben, man verdient aber trotzdem Geld. Und zwar kann man natürlich auch als Open-Source-Entwickler einer Firma als Angestellter joinen. Hä? Was meinst du denn damit? Ja, es gibt natürlich... Jetzt stellst du.",
+      "start": 1856883,
+      "end": 1874194,
+      "confidence": 0.7723673469387753,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Dir schon selber diese Fragen, anstatt dass du mir die Chance gibst, da als Co-Host eine Frage zu stellen, stellst du dir mit Micky Ma's Stimme schon selber die Fragen. Aber bitte führe deine Selbstgespräche weiter, ihr habt da nichts dagegen.",
+      "start": 1874214,
+      "end": 1885702,
+      "confidence": 0.6380975609756097,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Ja, du kommst mir wieder mit steuerlichen Themen.",
+      "start": 1885807,
+      "end": 1887690,
+      "confidence": 0.45125,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Ihr holt mir einen Kaffee in der Zwischenzeit.",
+      "start": 1887730,
+      "end": 1889151,
+      "confidence": 0.5700000000000001,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Na, auf jeden Fall, was du machen kannst. Es gibt ein paar Firmen, die stellen Open-Source-Contributor, Core-Contributor ein, geben denen ein stattliches Gehalt und lassen die weiter an Open-Source arbeiten.",
+      "start": 1890153,
+      "end": 1902569,
+      "confidence": 0.7860333333333335,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Warum machen denn die das?",
+      "start": 1902610,
+      "end": 1903571,
+      "confidence": 0.689,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Ja in der Regel sind das Firmen die ein Incentive da haben, Core Contributor für diese Projekte zu bezahlen. Ein Beispiel ist AWS mit ihrem geforgten Projekt OpenSearch. OpenSearch ist der Forg von Elasticsearch. Wer erinnert sich? Elasticsearch hat die Lizenz geändert, weil die großen Hyperscaler Google und Amazon und so weiter mehr Geld verdient. haben mit dem Hosting von Elasticsearch als Elastic selber. Deswegen haben sie die Open-Source-Lizenz geändert, verboten, dass Amazon und Google diese nutzen dürfen. Amazon hat einen offiziellen Fork von Elasticsearch gebaut, nennt sich OpenSearch und hat eine ganze Menge Core-Contributor unter Vertrag, die Vollzeit an OpenSearch hosten.",
+      "start": 1903931,
+      "end": 1941597,
+      "confidence": 0.827382352941176,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Und haben die die jetzt abgeworben dann von Elastic oder sind das einfach Core-Contributor, die sowieso irgendwo anders waren?",
+      "start": 1941637,
+      "end": 1948820,
+      "confidence": 0.730842105263158,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Ich weiß nicht, wie viel OpenSearch Core Contributor, die jetzt bei Amazon sind, früher bei Elastic waren. Könnte ich mal nachgucken. Aber mich würde überraschen, wenn das alles Abwerber sind. Ich denke, Amazon hat einfach ein Team dran gesetzt und fertig. Amazon hat natürlich in diesem Fall das Incentive, sehr viel Geld mit OpenSearch zu verdienen. Aber es gibt auch sowas wie Microsoft. Microsoft steht immer noch hinter VS Code. Es gibt Teams in Microsoft Azure, die sich sehr viel mit Microsoft Azure Kunden unterhalten und dann zum Beispiel das SDK, das Cloud SDK entwickeln. Das ist ja auch Open Source. Dann vor kurzem ist Leonard Pöttering, der Autor hinter SystemD, das Init-System von Linux inzwischen, zu Microsoft gewechselt und wird da Vollzeit bezahlt, um weiter an SystemD zu arbeiten. Oder auch mein Arbeitgeber, weil wir ein Open-Source-Database-as-a-Service sind, auch wir haben ein komplettes Team von Core-Kontributoren, die zu PostgreSQL, Kafka, Cassandra und so weiter bezahlt kontributieren. Es ist also wirklich so, dass diverse Firmen in diesem Business, um mit Open-Source Geld zu verdienen, also eigentlich professionelles Hosting, wenn man so möchte, Core-Kontributor anstellen. Und das meist im Rahmen des OSPOs, des Open-Source-Program Office, Also einer Initiative und eines Teams innerhalb der Firma, die sich wirklich um Open Source, Policies und so weiter kümmert. Also das bedeutet, kümmert euch darum, dass ihr in einem Produkt ein Standing kriegt und dann kann das gut sein, dass ihr gute Chancen habt, das als Vollzeitjob zu machen.",
+      "start": 1949240,
+      "end": 2038947,
+      "confidence": 0.8140286885245895,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Da muss ich natürlich jetzt die Datenbank-Schiene noch ergänzen. Facebook war da zum Beispiel bei MySQL immer sehr stark drin. Die haben ein eigenes MySQL-Team. Mittlerweile ist es MyRocks oder RocksDB, das dieses Team entwickelt hat. Aber die sind sehr stark connected mit MySQL zum Beispiel. Und so gibt es halt in größeren Firmen sehr oft Kontakt zur Open-Source-Welt. Ich bin ja ganz überrascht, Andi, dass du deinen Liebling vergessen hast. Andi wird jetzt rot, wenn man das Video sehen würde.",
+      "start": 2039297,
+      "end": 2065496,
+      "confidence": 0.7697654320987655,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Welchen Liebling habe ich vergessen?",
+      "start": 2065516,
+      "end": 2066478,
+      "confidence": 0.7752000000000001,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Curl.",
+      "start": 2066878,
+      "end": 2068139,
+      "confidence": 0.526,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Ja, ja. Daniel Stenberg, einer meiner Vorbilder, wirklich. Ja, aber auch ...",
+      "start": 2068199,
+      "end": 2073911,
+      "confidence": 0.7905000000000001,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Er arbeitet wo?",
+      "start": 2073922,
+      "end": 2074942,
+      "confidence": 0.6819999999999999,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Inzwischen bei WolfSSL, glaub ich. Hat vorher bei Mozilla gearbeitet, wurde auch von Mozilla jahrelang bezahlt. War aber auch sehr, sehr, sehr lange, also etliche Jahre allein unterwegs und hat kein Sponsoring für Curl bekommen. Aber inzwischen wurde er eine ganze Zeit lang von Mozilla bezahlt und inzwischen für WolfSSL. Weil, nennen wir mal ein modernes Auto, was inzwischen ohne Curl läuft. Oder meine Waschmaschine zum Beispiel, die hat auch Curl.",
+      "start": 2074982,
+      "end": 2100079,
+      "confidence": 0.7738591549295775,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Daniel Stenberg sei Dank. Jetzt haben wir schon erwähnt, dass man natürlich mit Open Source sich das Sponsoring holen kann und... oder Donations. Aber man kann natürlich auch einen anderen Weg gehen und aus dem Open Source Projekt ein Business machen. Das nennt man ganz gerne auch Open Core Modell. Das heißt, man baut um das Open Source Projekt ein Business Modell, eine Firma auf und behält aber ganz wichtig, den Kern immer noch Open Source und verkauft dann aber zum Beispiel die Managed Version, eine gewisse Enterprise Version mit Support an Firmen, an Endkunden, was die Kunden dann auch immer sind. Da gibt es also wirklich ganz, ganz viele große Projekte. die genau so ihr Geld verdienen. Der ganz große Klassiker ist Red Hat natürlich, der Support damals schon verkauft hat als Linux-Distro. Elasticsearch ist ebenfalls sehr groß geworden, hat eine Cloud, bietet es auch als Enterprise-Version an, den ganzen Stack. Ist jetzt natürlich, wie der Andi schon erzählt hat, ein bisschen strikter geworden mit der ganzen Licensing-Geschichte. Darum gibt es ja auch OpenSearch jetzt von Amazon. Aber auch Redis, MySQL, Plausible kennt vielleicht jemand, die Analytics Software als Alternative zu Google Analytics, Matomo auch eine Alternative zu Google Analytics, kyle.com eine Alternative zu Calendly, sind alles Open Source Produkte, die man aber auch hosted für Geld sich holen kann, dann ist es gemanagt, dann bekomme ich Support als Firma, habe vielleicht zusätzliche Features noch, aber im Kern ist es immer noch Open Source.",
+      "start": 2100119,
+      "end": 2195933,
+      "confidence": 0.8281877551020413,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Offen gesprochen, eine Firma auf ein Open-Source-Projekt zu setzen, ist jetzt nicht mein Leben in fünf Minuten getan. Auch ein bisschen mehr Aufwand, würde ich mal sagen. Aber falls man irgendwas hat, so im Bereich Self-Hosting, kann man natürlich theoretisch alles in eine Firma überführen. Es muss ja noch niemals das eigene Open-Source-Projekt sein, zum Beispiel Hetzner. bietet auch ein professionelles Hosting für Nextcloud an. Und Hetzner hat jetzt Nextcloud nicht programmiert. Das bedeutet, theoretisch, mal so als kleiner Hack, könntet ihr auch auf die Awesome-Liste Selfhosting gehst, verlinken wir in den Shownotes, pickt euch irgendein Tool raus und sagt, dafür biete ich jetzt professionelles Hosting an.",
+      "start": 2196345,
+      "end": 2234331,
+      "confidence": 0.8015607476635513,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Wenn es nicht Elasticsearch ist, weil Elasticsearch verbietet es mittlerweile durch die Lizenzen. Und ganz viele neue Open-Source-Projekte verbieten genau dieses Modell, aber die älteren natürlich oder die nicht das ganze ausschließen in der Lizenz. Dafür kann man natürlich dann Hosting Varianten anbieten.",
+      "start": 2234511,
+      "end": 2250616,
+      "confidence": 0.7835581395348836,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Ja, da muss man natürlich gucken, dass es Open Source ist. Das bedeutet unter einer Open Source akzeptierten Lizenz, weil Elasticsearch ist ja jetzt unter der Elastic Lizenz oder unter der Server-Side Public Lizenz und das sind keine anerkannten Open Source Lizenzen. Aber sofern das unter einer MIT, Apache 2 oder ähnliches BSD Lizenz ist, dürfte das natürlich tun. Offengesprochen, Das klingt jetzt so als wäre das alles so einfach professionelles hosting auf scale von solchen services wo ihr euch ebenfalls nicht so gut auskönnt mit den inner details und so weiter und so fort ist eine herausforderung, ist aber möglich also falls ihr ein business modell sucht, give it a go.",
+      "start": 2250956,
+      "end": 2285969,
+      "confidence": 0.7940000000000005,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Lizenzen sind sowieso ein schwieriges thema und wenn man dann unterscheidet zwischen free software und open source software und den ganzen, Modellen, ob Richard Stallman jetzt damit einverstanden ist, dass es open source ist oder free oder nicht, da kommt man dann schon sehr ins Detail. Also wenn man sich sowas antut, dann sollte man sehr genau auf die Lizenz achten, was man da macht.",
+      "start": 2286009,
+      "end": 2304503,
+      "confidence": 0.758553846153846,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Man muss ja natürlich auch sagen, wenn ihr das einfach so könnt, kann das natürlich auch jeder, weil ihr nutzt ja eine fertige Software, das bedeutet.",
+      "start": 2304563,
+      "end": 2311148,
+      "confidence": 0.7818076923076922,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Wo ist der Mehrwert?",
+      "start": 2311168,
+      "end": 2311869,
+      "confidence": 0.8755000000000001,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Mehrwert ist halt schon, dass jemand das Hosting für einen übernimmt. So ist das nicht. Dafür zahlt man ja halt, damit ich das nicht selbst hosten muss. Aber der Nachteil ist halt dann gegebenenfalls, dass ihr kein USP, keine Unique Selling Proposition habt. Also ihr habt jetzt kein Eigenmerkmal gegenüber anderen Leuten.",
+      "start": 2312909,
+      "end": 2328277,
+      "confidence": 0.8003846153846154,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Was mir auf jeden Fall vorkommt, dass in letzter Zeit es wieder mehr kommt, dass man wirklich Open-Source-Software anbietet und wirklich Open-Source startet, also Open-Core. Im Vergleich zu vor zehn Jahren war das viel, viel schwieriger und hat man viel weniger Software gesehen. Ich glaube, das hat auch mit der ganzen Cloud-Geschichte zu tun, dass man mittlerweile diesen Weg hat, das Ganze managed, hosted anzubieten. Einfach ein super Weg ist. Früher war alles self-hosted vor Cloud-Zeiten. Und dann hat man diesen Mehrwert nicht gehabt. Aber heutzutage, wenn du mit Firmen sprichst, und das habe ich auch selber jetzt einige Male erlebt, die sagen einfach, es ist cool, wenn es Open Source ist und wir wollen natürlich auch Open Source unterstützen, aber unser internes Team hat einfach nicht die Kapazität, jetzt das Self Hosted nochmal hochzuziehen. Und wir sind froh, wenn wir da jemanden haben, der das für uns hostet, der sich darum kümmert, der den Betrieb sicherstellt. Und wir zahlen das gerne, weil wir finden selber für unser Team sowieso keine Leute. Und wenn wir das einfach sicher bekommen, da kümmert sich jemand um das Backup, da kümmert sich jemand um die Sicherheit, da kümmert sich jemand am Wochenende, wenn das abstürzt, kümmert sich jemand drum. Und unser Team kann fein zu Hause schlafen am Wochenende, dann zahlen wir gerne was dafür. Also diese Mentalität, dreht sich so ein bisschen und dadurch wird es vielleicht auch wieder interessanter mit so Open Source Konzepten auch ein Business zu starten. Und es hat natürlich super viele Vorteile für mich als Firma, als Kunde von so einem Open Source Produkt, auch wenn es jetzt gehostet ist. Ihr habt natürlich die Sicherheit, wenn jetzt die Firma dahinter wegsterben sollte, aus irgendeinem Grund habe ich immer noch die Den Source Code, das ist Open Source, jemand anderer springt vielleicht ein. Das heißt, die Sicherheit für mich als Firma ist natürlich wesentlich höher, dass ich das langfristig betreiben kann, das ganze System, auch wenn es jemand anderer hostet.",
+      "start": 2329098,
+      "end": 2426942,
+      "confidence": 0.8125421686746995,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Dieses Modell ist natürlich super, um in die ganze Sache mal einzusteigen. Man könnte das auch vielleicht als Indie-Hacker-Business-Modell irgendwie verpacken. Es ist ein sehr einfacher Einstieg. Was man aber schon tun sollte, sich vielleicht gegebenenfalls dann ein bisschen freundlich zeigen, um einen gewissen Prozentsatz der Gewinne vielleicht mit dem Open-Source-Projekt dann wieder zu teilen oder ähnliches. Und dann baut man vielleicht über Zeit eine gute Verbindung zu dem Open-Source-Projekt aus. Also nach dem Motto vielleicht einfach finanziell Danke sagen, weil ihr verdient ja damit Geld. auf Basis von den Schultern der Arbeit von anderen. Und dann ist das, glaube ich, jetzt nichts Falsches, wenn man da mal ein paar Euro zurückfließen lässt.",
+      "start": 2427313,
+      "end": 2463473,
+      "confidence": 0.7586194690265483,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Und auch da wieder, ich glaube, jede Summe ist besser als nichts. Und wenn fünf Euro in Andi schon nackt durch die Wohnung tanzen lassen, dann hilft das vielleicht meinen anderen Entwicklern auch. Was dann natürlich irgendwo schon auch so ein bisschen schwierig wird, ist, wenn man dann als Entwickler irgendwas Cooles programmiert und man sieht dann eine Firma, die verdient Millionen damit und dann bekommst du irgendwie so drei Bier gesponsert. Das ist dann natürlich auch irgendwie eine Schieflage, da würde ich dann eher empfehlen, gar nichts zu sponsern, als wenn das dann unverhältnismäßig ist. Also es sollte schon irgendwo in Zusammenhang stehen und in der richtigen Ratio dann liegen.",
+      "start": 2463753,
+      "end": 2497427,
+      "confidence": 0.7886756756756758,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Ja, das kann natürlich zum Shitstorm führen, je nachdem wie angepisst der Maintainer oder die Maintainerin ist, das stimmt schon. Kommen wir zum letzten Punkt, wie man eigentlich für Open-Source-Entwicklung bezahlt werden kann. Und ich glaube, Wolfgang, da bist du schon der Experte. Wir sprechen nämlich über Förderung, Stipendien und so weiter und so fort. Kurzum, meine Steuergelder.",
+      "start": 2497447,
+      "end": 2518378,
+      "confidence": 0.7666551724137932,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Ja, du bist ja ein großer Open Source Fan, also muss das ja in deinem Interesse sein, dass Open Source gefördert wird mit deinem Steuergeld, will ich mal hoffen.",
+      "start": 2518925,
+      "end": 2526532,
+      "confidence": 0.7033793103448274,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Ist das jetzt eigentlich so, dass dann jeder Arbeitnehmer eigentlich indirekt ein Open Source Sponsor ist in Deutschland?",
+      "start": 2526572,
+      "end": 2532357,
+      "confidence": 0.8241111111111112,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Ja, und jeder Arbeitgeber auch, weil die zahlen auch Steuern. Aber grundsätzlich ja, wobei das natürlich im Vergleich immer noch super gering ist. Also in Deutschland gibt es meines Wissens eigentlich nur zwei, drei Fördertöpfe für Open Source. Lass mich da aber gerne eines anderen belehren. Was aber sehr cool ist, weil in Österreich gibt es meiner Meinung nach, meines Wissens nach, gar keine Open Source Fördertöpfe. Also das ist schon ein großer Unterschied und bei Media Tech Lab haben wir schon öfters erwähnt, wo ich mit einem Kollegen auch ein Projekt gemacht habe. Da bekommt man ja auch eine ganz stattliche Summe eigentlich von 45.000 Euro für ein sechs Monate Projekt. Ist dasselbe auch der Prototype Fund, das ist ein anderer deutscher Fund, eigentlich so eine Schwesterorganisation glaube ich fast. Und der Fund hat eine ähnliche Höhe pro Förderprojekt, die fördern glaube ich so 25 Projekte pro Jahr oder pro Durchlauf und haben bisher 12 Millionen Euro bewilligt und gefördert, 300 Projekte ungefähr. Was jetzt relativ viel klingt, aber wenn man das natürlich auf Deutschland umrechnet, ist es immer noch relativ wenig, aber es gibt zumindestens mal Förderungen und man kann dort ansuchen, ist relativ unkompliziert eigentlich auch und ist gerade wenn man eine gute Idee hat für einen einfachen Start, dass man da mal ein halbes Jahr intensiv wirklich an dem Open Source Projekt arbeitet, eine super Alternative. Was es in Deutschland meines Wissens nicht gibt, ist sowas wie Mozilla Ventures zum Beispiel, Oder auch den GitHub Accelerator, der ist auch sehr neu, die wirklich Open-Source-Projekte fördern, die das Ganze eher so wie ein Business sehen und da wirklich investiert sind in das Open-Source-Projekt. Also das ist halt so die klassische amerikanische Herangehensweise, wo man alles als Startup sieht und als Business und das Ganze als Startup aufzieht in einem Accelerator innerhalb zehn Wochen. Also das ist was anderes als die Fördertöpfe in Deutschland. Was ich jetzt neuerdings auch gelernt habe ist NLNet, das ist eine holländische Einrichtung, die aber auch in ganz Europa meines Wissens Projekte fördert. Da ist die nächste Deadline übrigens auch irgendwann jetzt bald im März. Also es gibt durchaus Fördermöglichkeiten und auch da gefühlt zumindest gibt es wesentlich mehr als wenn ich das jetzt vor zehn Jahren vergleiche. Also es gibt durchaus Töpfe, wo man auch hinkommt und wo man auch irgendwo Geld rausbekommt und das nicht extrem unwahrscheinlich ist, dass man da ein Projekt gefördert bekommt. Früher war das doch eine andere Sache und man hat Gott und die Welt kennen müssen und am besten die Bundeskanzlerin noch persönlich und dann hat man vielleicht irgendwas bekommen über Beziehungen, sondern da gibt es jetzt wirklich Möglichkeiten, wo man ansuchen kann und wo auch das reine Open Source Projekt gefördert wird, was natürlich auch cool ist, eben auch ohne Business, ohne dass deine Uni dabei ist, sondern wirklich Ich habe eine Idee, ich will ein Open-Source-Projekt machen und bekomme dann eine Förderung dafür. Und das hat sich stark geändert. Ich glaube, da ist immer noch Luft nach oben. In Österreich gibt es gar nichts dazu, meines Wissens. Bitte gerne Infos, falls jemand was kennt. Und die Anzahl der Projekte sind leider immer noch sehr niedrig, weil wenn man sich überlegt, 300 Projekte beim Prototype Fund in den letzten Jahren und 12 Millionen ist jetzt eigentlich auch nicht die Welt für ganz Deutschland, für ein Land mit 80 Millionen Einwohnerinnen. Da könnte man schon mehr bringen.",
+      "start": 2532397,
+      "end": 2723257,
+      "confidence": 0.8109001751313484,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Es ist aber auch so, dass bei diesen Funds ebenfalls ein bisschen was geleistet werden muss. Also da geht man jetzt nicht hin, sendet den GitHub-Repo als Link und sagt, ich möchte Funding haben, sondern in der Regel muss man da schon in irgendeiner Art und Weise einen Projektplan vorlegen, so ein bisschen niederschreiben, was man damit denn machen möchte, wofür das Funding denn verwendet wird, Feature-Set-Richtung oder ähnliches. So eine kleine Vision, Strategie für euer Projekt solltet ihr schon in der Tasche haben.",
+      "start": 2723317,
+      "end": 2753246,
+      "confidence": 0.7898095238095237,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Und die Idee ist natürlich auch, dass nachdem man dieses Open Source Projekt dann gebaut hat, dass das weiterlebt. Das heißt, dass da ein Business draus wird, dass man da eine Enterprise-Version draufsetzt, dass man Support für dieses Open-Source-Projekt macht und damit Geld verdient. Also damit das nicht in den Sand gesetzt ist oder andere Fördergeber findet oder irgendwelche Firmen, die das interessant finden und sponsoren. Also das ist schon langlebig gedacht und das sollte dementsprechend auch eine Idee sein, die sich dann halt auch irgendwann selbst trägt, weil es ist klar, dass es nicht ewig auf Förderungen aufbauen kann.",
+      "start": 2753646,
+      "end": 2782949,
+      "confidence": 0.81958,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Aber so sechs bis neun, zwölf Monate kommt man damit schon über die Runden, glaube ich, wenn man das ganz gut macht.",
+      "start": 2783569,
+      "end": 2788191,
+      "confidence": 0.36118181818181816,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Es ist auf jeden Fall ein super Start. Und wie kann man sonst sechs Monate zum Beispiel Fulltime an einem Open-Source-Projekt arbeiten, ohne sich Gedanken machen zu müssen? Und wenn man mit dem Geld sparsam umgeht, vielleicht auch noch ein bisschen länger.",
+      "start": 2788572,
+      "end": 2799719,
+      "confidence": 0.7621904761904762,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Und dann gibt es natürlich immer noch das lästige Thema der Steuern beziehungsweise der Besteuerung. Und bei all den Modellen, die wir hier genannt haben, sieht die Sachlage halt einfach nicht so einfach aus. Auch wenn ihr einfach Geld über GitHub Sponsoring bekommt oder aus einer Förderung oder ähnliches. In sehr, sehr vielen Fällen muss man das irgendwie ordentlich versteuern. Vielleicht ist das sogar als klassisches Einkommen klassifiziert. Wie wir schon gesagt haben, wir beide sind keine Steuerberater, wir machen keine Rechtsberatung. Und wir können euch auch nicht sagen, in eurem Fall ist das jetzt so, in dem anderen Fall ist das so, weil jeder Fall ist irgendwie ein Unique. Deswegen, falls ihr also mit GitHub Sponsors anfangen wollt, mit Förderungen oder Klinkenputzen geht bei irgendwelchen Firmen, ob die euch sponsoren wollen oder ihr macht dieses Early Access Modell, was wir zum Beispiel bei Material4MKDocs erwähnt hatten. Setzt euch da mal ganz kurz mit einem Steuerberater zusammen, ruft da an, hey, ich hab mal eine Frage. Für 100 Euro oder so was geben die euch dann bestimmt ein bisschen Beratung und dann wisst ihr mehr. Und dann habt ihr auch wirklich eine rechtlich stabile Aussage.",
+      "start": 2799979,
+      "end": 2867890,
+      "confidence": 0.8092769230769233,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Ob die immer so stabil ist, ist eine andere Frage. Vor allem, ich habe jetzt auch gelernt, dass in Deutschland das sogar in jedem Bundesland anders ist, sogar teilweise bei jedem Finanzamt anders ist und du das bei Finanzämtern dann wirklich abklären musst. Also das ist schon wirklich kompliziert. Aber was man auch dazu sagen muss und der Andi hat jetzt gemeint, geht zu einem Steuerberater, das ist natürlich immer ein guter Tipp, aber das braucht man vielleicht auch gar nicht, um mal anzufangen. Das heißt, wenn ihr einfach mal ganz lean anfangen wollt, um irgendwie paar Spenden, paar Donations oder sonst irgendwas zu bekommen und da einfach mal einen Link irgendwo auf eine Webseite setzt, wo man einen Kaffee donaten kann oder ein Bier oder sowas und die bekommt da einfach irgendwo mal 10, 20 Euro, dann braucht ihr nicht zu einem Steuerberater laufen üblicherweise. Also fangt einfach mal wirklich Lean an und wenn die Beträge in irgendeiner Form höher werden sollten, dann sollte man sich schon überlegen, was man macht. Oder wenn man jetzt eine Förderung bekommt mit 50.000 Euro, würde das auch möglichst schnell abklären natürlich mit dem Finanzamt, mit einem Steuerberater, was das auch immer ist. damit man da kein böses Erwachen hat und am Ende dann 50 Prozent irgendwie zurückzahlen muss oder so an das Finanzamt. Und das gibt es wirklich, also auch in Österreich kenne ich da Fälle, wo dann sogar Stipendien an der Uni unter Umständen nachträglich versteuert wurden. Also das ist auch nicht mehr so leicht, weil die ganzen Länder ja auch verhindern wollen, dass man da irgendwie die Steuern umgeht, auch wenn das Universitäten sind, dass man da irgendwie prekäre Anstellungsverhältnisse schafft und da irgendwie über Stipendien sich probiert, Geld zu sparen. Also auch da wird mittlerweile eingegriffen und auch bei so offiziellen Dingen wie dem Media Tech Lab Fund ist das auch eine Frage, dann was für ein Bundesland man sitzt in Deutschland, wie das versteuert wird. Also es ist alles nicht so leicht. Aber ich glaube, wenn man mal irgendwo 5 Dollar empfängt als Donation, damit der Andi da mal nackt durch die Wohnung rennen kann, wenn er irgendwie so ein Support bekommt, ich glaube, da kann man die Kirche auch im Dorf lassen. Da braucht man dann keine eigene Steuererklärung machen oder so. Also was ich damit sagen will, ist einfach, man sollte sich da jetzt nicht zu sehr Sorgen machen, dass man dann womöglich gar nicht anfängt mit dem. Also wenn man ein Open Source Projekt hat, ich glaube mal so ein Buy me a coffee Button oder so kann man einfach mal drauf klatschen und hoffen, dass man vielleicht mal irgendwo den einen oder anderen Euro bekommt und sich ein Bier damit leisten kann, weil das motiviert dann auch wirklich, auch wenn es nur so kleine Summen sind.",
+      "start": 2868362,
+      "end": 3007306,
+      "confidence": 0.8026419491525421,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Ja, also ich meine, es ist wie immer in Deutschland nichts geregelt hier, ne?",
+      "start": 3007346,
+      "end": 3010949,
+      "confidence": 0.779357142857143,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Nur alles sehr genau.",
+      "start": 3010969,
+      "end": 3011849,
+      "confidence": 0.775,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Ich habe nichts anderes erwartet. Naja, so viel zum Thema die kleinste Violine der Welt und Open Source.",
+      "start": 3012350,
+      "end": 3018875,
+      "confidence": 0.8217222222222224,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Was ist die kleinste Violine der Welt?",
+      "start": 3018915,
+      "end": 3020396,
+      "confidence": 0.5364285714285715,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Sagt man doch so umgangssprachlich.",
+      "start": 3021537,
+      "end": 3023400,
+      "confidence": 0.7314,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Und was ist das? Geld. Okay, die spielt aber laute Musik dann, diese kleinste Violine.",
+      "start": 3023440,
+      "end": 3031033,
+      "confidence": 0.7092666666666666,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Ja, das ist die kleinste Violine mit der lautesten Musik.",
+      "start": 3031073,
+      "end": 3035080,
+      "confidence": 0.6394,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Ah ja, okay, verstehe. Ist das eigentlich unmoralisch, wenn man probiert Geld zu machen mit Open Source? Weil es gibt vielleicht auch viele Open Source Entwickler, die einfach sagen, ich mache das ja nur wegen dem Open Source Gedanken und eigentlich ist es böse, damit Geld zu verdienen.",
+      "start": 3035402,
+      "end": 3049615,
+      "confidence": 0.7234999999999999,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Sehr valide und berechtigte Frage und ich denke, es gibt sehr viele Leute, die machen das wegen dem Open Source Gedanken, weil die an Free Software und so weiter und so fort glauben. Finde ich auch super, es wird ja auch keiner gezwungen, damit Geld zu verdienen. Auf der anderen Seite, Geld braucht man halt auch, um die Miete zu zahlen und Essen auf den Tisch zu stellen. Was aber von einer anderen Perspektive oft als Anforderung kommt, ist, eine Firma nutzt ein Open-Source-Package, macht einen Bugfix, schreibt dir sogar noch privat eine E-Mail, hey, wann wird das denn gefixt, die Software funktioniert ja gar nicht und so weiter. Da wird schon so eine Art Support erwartet, was dann natürlich auch hintendran schwierig sein kann, weil dann Druck aufgebaut wird und je nachdem, wie du mit dem Druck umgehst und so. Also moralisch verwerflich ist es meines Erachtens nach nicht, so funktioniert einfach die Welt. Und auf der anderen Seite, wenn du jetzt zum Beispiel Open-Source-Programmierung machst, Softwareentwicklerinnen und Softwareentwickler ist halt einfach ein High-Demand-Job aktuell. Und was du da eigentlich machst ist, du gibst halt Arbeit for free raus, wenn du es so möchtest, beziehungsweise wenn Firmen damit wirklich Geld machen. Und in diesem Kontext denke ich nicht, dass das verwerflich ist.",
+      "start": 3049675,
+      "end": 3108580,
+      "confidence": 0.7580187793427238,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Warum haben wir eigentlich noch keinen Buy-Me-A-Coffee-Button, Andi, bei unserem Podcast? Wir haben nur so eine simple Thumbs-Up-und-Down-Funktion in unseren Shownotes, wo man sagen kann, dass wir toll sind oder nicht so toll oder die Episode besser gesagt. Also bitte auch kurz mal runterscrollen und da Feedback geben, was ihr zu dieser Episode sagt. Aber was ist mit unserem Buy-Me-A-Coffee-Button? Ich will die endlich mal nackt durch die Wohnung rennen sehen, Andi.",
+      "start": 3108996,
+      "end": 3132712,
+      "confidence": 0.8134166666666667,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Dafür müsste der Buy-Me-A-Beer-Service erfunden werden, glaube ich.",
+      "start": 3132752,
+      "end": 3135394,
+      "confidence": 0.639625,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Ja das gibt's glaube ich auch bei mir Bier.",
+      "start": 3135634,
+      "end": 3138398,
+      "confidence": 0.6483333333333334,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Ja dann schauen wir das mal. Aber da wir jetzt anscheinend am Ende dieser Episode sind, wir hoffen, wir haben euch einen kleinen Überblick gegeben, die Liste ist unvollständig, weil es 10.000 verschiedene Möglichkeiten gibt. Vielleicht habt ihr ja mal jetzt die Motivation geschöpft, um mal ein bisschen in die Richtung zu gehen. Und ich habe am Anfang versprochen, dass ich einen Flachwitz habe. Und das habe ich natürlich nicht vergessen, Wolfgang. Es tut mir leid.",
+      "start": 3138438,
+      "end": 3163565,
+      "confidence": 0.7552499999999998,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Und weil... Alkman, die kleine Violine war schon der Flachwitz.",
+      "start": 3163585,
+      "end": 3166789,
+      "confidence": 0.7482999999999999,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Ah, ich bitte dich. Und weil ich... Gerade einen echt guten gefunden hab, hab ich gedacht, ich besorg direkt zwei.",
+      "start": 3166849,
+      "end": 3174973,
+      "confidence": 0.8301999999999999,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Dann bitte, die Bühne ist deine.",
+      "start": 3175013,
+      "end": 3176694,
+      "confidence": 0.7838333333333333,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Fangen wir an mit dem meines Erachtens nach schlechteren. Warum trinken Mäuse keinen Alkohol? Sie haben Angst vor dem Kater.",
+      "start": 3176754,
+      "end": 3183735,
+      "confidence": 0.7733,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Das ist nett.",
+      "start": 3185035,
+      "end": 3186816,
+      "confidence": 0.4693333333333333,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Find ich halt schon relativ schlecht.",
+      "start": 3186836,
+      "end": 3189336,
+      "confidence": 0.6946666666666667,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Find ich sehr gut.",
+      "start": 3189356,
+      "end": 3191137,
+      "confidence": 0.39675,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Jetzt kommt aber ein ganz...",
+      "start": 3191157,
+      "end": 3191977,
+      "confidence": 0.35619999999999996,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Das ist meine Kategorie.",
+      "start": 3191997,
+      "end": 3193157,
+      "confidence": 0.32699999999999996,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Jetzt kommt ein ganz guter. Der Aufzug ist kaputt. Endlich trifft es mal die da oben.",
+      "start": 3193177,
+      "end": 3197258,
+      "confidence": 0.6448749999999999,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "War das schon der Witz?",
+      "start": 3198889,
+      "end": 3201170,
+      "confidence": 0.7618,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Ja, der Aufzug ist kaputt. Endlich trifft es mal die da oben. Ich merke schon, der mit den Mäusen kann besser handeln.",
+      "start": 3201210,
+      "end": 3208415,
+      "confidence": 0.7377272727272728,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Ich werde noch nachdenken. Das mit Lift in Verbindung zu bringen, mit Aufzug, das ist schon verwirrend für mich.",
+      "start": 3208455,
+      "end": 3215980,
+      "confidence": 0.5622631578947368,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Ja, wie ist denn die Übung? Der Lift ist kaputt. Endlich drückt man die da oben. Ist das witziger?",
+      "start": 3217621,
+      "end": 3222420,
+      "confidence": 0.5686315789473685,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Ah, ja, ja, jetzt verstehe ich.",
+      "start": 3222460,
+      "end": 3225901,
+      "confidence": 0.5843333333333334,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Super. Wie immer freuen wir uns natürlich über Feedback, über die Standardkanäle. E-Mail steht tisch.engineeringquiz.dev.",
+      "start": 3225941,
+      "end": 3233205,
+      "confidence": 0.7522666666666666,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Was war das?",
+      "start": 3233245,
+      "end": 3233786,
+      "confidence": 0.47933333333333333,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "In den Show Notes steht die E-Mail-Adresse. Aber natürlich auch über Twitter. Und damit sage ich bis zur nächsten Episode. Bye-bye. Ciao.",
+      "start": 3236187,
+      "end": 3247933,
+      "confidence": 0.6032727272727273,
+      "channel": null,
+      "speaker": "A"
+    }
+  ],
+  "confidence": 0.7842307614006494,
+  "audio_duration": 3251.0,
+  "webhook_status_code": null,
+  "webhook_auth": false,
+  "summary": null,
+  "auto_highlights_result": null,
+  "content_safety_labels": null,
+  "chapters": null,
+  "sentiment_analysis_results": null,
+  "entities": null
 }

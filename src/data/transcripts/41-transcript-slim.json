@@ -1,1034 +1,1034 @@
 {
-    "language_code": "de",
-    "audio_url": "https://audio1.redcircle.com/episodes/51d3390e-ffce-4ec6-a6d9-350dc0cd163b/stream.mp3",
-    "punctuate": true,
-    "format_text": true,
-    "dual_channel": false,
-    "webhook_url": null,
-    "webhook_auth_header_name": null,
-    "webhook_auth_header_value": null,
-    "audio_start_from": null,
-    "audio_end_at": null,
-    "word_boost": [],
-    "boost_param": null,
-    "filter_profanity": false,
-    "redact_pii": false,
-    "redact_pii_audio": false,
-    "redact_pii_policies": null,
-    "redact_pii_sub": null,
-    "speaker_labels": true,
-    "speakers_expected": 2,
-    "content_safety": false,
-    "content_safety_confidence": null,
-    "iab_categories": false,
-    "custom_spelling": null,
-    "disfluencies": false,
-    "sentiment_analysis": false,
-    "auto_chapters": false,
-    "entity_detection": false,
-    "summarization": false,
-    "summary_model": null,
-    "summary_type": null,
-    "auto_highlights": false,
-    "language_detection": false,
-    "speech_threshold": null,
-    "id": "62xc7837zy-373b-437f-a6f6-0d33f87a97f4",
-    "status": "completed",
-    "error": null,
-    "utterances": [
-        {
-            "text": "Willkommen zu einer neuen Episode vom Engineering Kiosk. Wer von euch hat schon einmal von der Sicherheitslücke SQL Injection gehört? Wahrscheinlich ein Großteil von euch, denn dies ist doch ein alter Hut im Bereich Web Security, oder? Auch im Jahr 2022 ist dies immer noch einer der Top Sicherheitslücken, die das Internet in Atem hält. In dieser Episode schauen wir uns an, wie SQL Injections eigentlich entdeckt wurden, was der Unterschied zwischen einer Blind SQL Injection, einer Time-Based oder einer Out-of-Band SQL Injection ist und ob Fuzzing Testing die Lösung all unserer Probleme ist. Viel Spaß!",
-            "start": 3313,
-            "end": 38533,
-            "confidence": 0.8391458333333333,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "So Andi, du hast mich heute mal wieder mitten in der Nacht aus dem Bett geholt für eine Podcastaufnahme und dann noch dazu für ein Thema, das eh schon lange eigentlich erledigt ist, und zwar SQL Injections. Das ist doch schon längst abgefrühstückt, oder? Wenn ich daran denke, ich bin Entwickler, verwende da eh irgendeine Abstraktion, warum muss ich mich denn überhaupt um SQL Statements und SQL Injections kümmern? Ist doch alles geregelt, die sind irgendwie aus den 90ern, oder?",
-            "start": 42456,
-            "end": 71590,
-            "confidence": 0.7648999999999997,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Du hast sogar recht, die sind aus den 90ern. Und ja, ich wünschte, ich könnte dir zustimmen, dass das ein Thema wäre. Und ich wünschte, wir müssten diese Podcast-Episode gar nicht erst aufnehmen, weil dieses Thema dann schon so ein alter Hut ist, ähnlich wie Bitcoins und NFTs.",
-            "start": 71930,
-            "end": 86497,
-            "confidence": 0.7480416666666665,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Aber leider ist ... Moment, Bitcoins und NFTs sind ein alter Hut? In welcher Hipsterwelt lebst du? Jetzt warst du kurz in Berlin, oder? Ein paar Tage, und jetzt sind NFTs schon wieder oldschool?",
-            "start": 86557,
-            "end": 96602,
-            "confidence": 0.681235294117647,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Ja, ich bin wirklich beeindruckt von der kulturellen Vielfalt, die Berlin einfach bietet, weil ich komm in die Stadt und wirklich schon vom Weg vom Hauptbahnhof zum Hotel läufst du an etlichen Plakaten vorbei und ich hab wirklich das Gefühl, in Berlin macht wirklich jeder irgendwas nebenbei. Sei es Kunst, sei es Hacking, sei es was weiß ich nicht. Wirklich, jeder hat irgendwas am Start. Ich hab das Gefühl, in der Stadt geht einfach so dermaßen viel ab. Vielleicht ist das auch einfach nur der harte Konkurs zwischen Duisburg und Berlin. Kann natürlich auch sein.",
-            "start": 97602,
-            "end": 132924,
-            "confidence": 0.8472421052631577,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Ja, zu Duisburg hat man gleich mal einen Kontrast. Es ist nicht so schwierig.",
-            "start": 133584,
-            "end": 137025,
-            "confidence": 0.7116428571428571,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Aber zum Thema SQL-Injections, vielleicht ist es das auch genau so, weil in Berlin so viel abgeht, will natürlich jeder dann da in die Szene rein und so weiter. Ich hab jetzt auch nicht geguckt, wie viel zum Beispiel Coding-Bootcamps es in Berlin gibt. Und ich weiß auch nicht, wie viel dir über Web-Security in solchen Coding-Bootcamps denn wirklich gelehrt wird. Und deswegen denke ich, auch wenn SQL Injections aus den 90ern ist, dass das Thema immer noch und sehr, sehr lange begleiten wird.",
-            "start": 137085,
-            "end": 169265,
-            "confidence": 0.8581190476190477,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Aber warum? Ich verwende eh so irgendeine Abstraktionsschicht. Warum ist das überhaupt ein Thema für mich?",
-            "start": 169765,
-            "end": 175048,
-            "confidence": 0.54325,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Prinzipiell würde ich sagen, it depends. Das ist der Einstieg für jeden IT-Consultant. It depends, was du für eine Abstraktionsschicht verwendest. Aber nur, weil du eine Abstraktionsschicht verwendest, heißt das nicht, dass die nicht auch Lücken hat. Du hast ein Layer über ein Layer und unten drunter kann alles kaputt sein. Aber im Ernst, für alle Hörer und Hörerinnen, die uns jetzt zuhören und sagen, Boah, zieh ich mir jetzt wirklich ne Stunde über SQL Injections rein, das Thema kenn ich doch schon, das hab ich in der Uni, in der Ausbildung und ja, wir wissen doch alle, dass wir unsere Input-Parameter, Input-Parameter sanitizen sollen und blabliblub. Gibt uns ne Chance. Ich denke, wir haben in der Vorbereitung ein paar gute Themen und ein paar gute Subthemen und Details zum Thema SQL Injections rausgesucht.",
-            "start": 175068,
-            "end": 220845,
-            "confidence": 0.7336343283582085,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Ich glaube überhaupt, dass diese Vorbereitung noch nie so lang war bei uns. Ich habe noch nie ein Vorbereitungsdokument über dreieinhalb Seiten oder so bei uns gesehen.",
-            "start": 221403,
-            "end": 229188,
-            "confidence": 0.8584814814814813,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Ich habe noch nie ein Vorbereitungsdokument von dir gesehen.",
-            "start": 229208,
-            "end": 232170,
-            "confidence": 0.7855555555555556,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Ja, das ist, weil du die interessanten Themen nie machen willst, die schon in der Kiste liegen, gut vorbereitet.",
-            "start": 232517,
-            "end": 239119,
-            "confidence": 0.7748421052631578,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Gestern Abend kam die Frage von Wolfgang, Andi, was nehmen wir eigentlich morgen für ein Thema auf? Und da habe ich gedacht, okay, ich schaue mal rum. Und dann habe ich angefangen, mich vorzubereiten. Und da bin ich in das Thema rein und da bin ich in das Thema rein. Da bin ich so ein Rabbit Hole runtergegangen. Und dann habe ich sogar neue Sachen gelernt zur Vorbereitung, die ich selbst über SQL Injections noch nicht wusste.",
-            "start": 239139,
-            "end": 259084,
-            "confidence": 0.7557012987012983,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Was heißt sogar? Glaubst du, dass du jetzt der Allwissende bist im Security-Bereich?",
-            "start": 259588,
-            "end": 264430,
-            "confidence": 0.5483076923076923,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Um Gottes Willen nicht, aber auch ich hatte falsche Vermutungen. Ich habe gedacht, ich wüsste eigentlich eine ganze Menge über SQL Injections und dass das Thema enorm langweilig ist. Aber ich habe mir selbst bewiesen, dass es nicht so war, indem ich einfach mal Google angeschmissen habe.",
-            "start": 264470,
-            "end": 280916,
-            "confidence": 0.871595744680851,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Du hast mich sogar dazu getriggert, dass ich gestern noch mitten in der Nacht Sachen gegoogelt habe und probiert habe, rauszufinden, wie die technisch umgesetzt sind. Hast du also geschafft, sogar mich da anzutriggern bei diesem Topic.",
-            "start": 280956,
-            "end": 291980,
-            "confidence": 0.8127027027027027,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Und das zu einem Thema für jemanden, der einen Doktortitel im Thema Datenbanken hat, das ist faszinierend.",
-            "start": 292020,
-            "end": 299422,
-            "confidence": 0.8173529411764706,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Ja, weil es ist ja ein Security-Thema, kein Datenbank-Thema eigentlich. Nur weil SQL vorne dran steht, ist es ja trotzdem immer noch ein Security-Thema.",
-            "start": 299742,
-            "end": 307104,
-            "confidence": 0.7282916666666668,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Aber fangen wir mal ganz vorne an. Thema der heutigen Episode dreht sich alles um Security, um eine spezielle Art und Weise einer Sicherheitslücke, und zwar um die Sicherheitslücke SQL-Injections. SQL-Injections finden sich nicht nur im Webbereich, sondern eigentlich überall, wo man irgendeine Art von Datenbanken verwendet. Primär SQL-basierte Datenbanken, aber auch zum Teil für sogenannte NoSQL-Datenbanken relevant.",
-            "start": 307688,
-            "end": 338399,
-            "confidence": 0.8950517241379311,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Hast du mal ein Beispiel, was da passiert ist oder ein Beispiel, anhand man das gut verstehen kann, wie sowas funktioniert?",
-            "start": 338419,
-            "end": 345921,
-            "confidence": 0.720095238095238,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Okay, nehmen wir mal ein klassisches Beispiel. Ihr seid auf einer Webseite und ihr habt die Adresse engineeringkiosk.com.",
-            "start": 346101,
-            "end": 352664,
-            "confidence": 0.6896666666666665,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": ".Dev ist übrigens unsere Adresse. Nach so vielen Folgen muss ich dir.",
-            "start": 352704,
-            "end": 357926,
-            "confidence": 0.6498333333333334,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Jetzt erklären, wie unsere Domain... engineeringkiosk.dev slash page?id gleich 5. Das bedeutet eigentlich hintendran, hallo lieber Webserver, gib mir mal bitte die Seite mit der ID 5. Und in der Datenbank haben wir dann eine Tabelle, die hat dann ein ID-Feld und ein HTML-Feld. In dem HTML-Feld steht dann irgendwas drin, was wir ausgeben wollen. Jetzt ist es so, dass der Parameter 5 im Quellcode an die Datenbank weitergereicht wird. Und was passiert, wenn du den Parameter änderst? Du machst aus der 5 eine 6. Dann kriegst du auf einmal den Content der Seite 6. Das ist jetzt erstmal nichts schlimmes, weil das kann so gewollt sein. Was passiert denn, zum Beispiel, wenn du jetzt einfach mal die Zahlen durchrätst und dort eine 10 oder eine 15 reinmachst und dann kriegst du den Content der Seite 10 oder 15 und das ist gegebenenfalls Content, den du gar nicht sehen darfst. Das bedeutet, du spielst ein bisschen mit den Parametern rum. Was passiert denn jetzt, wenn du aus der Zahl einfach mal was ganz anderes machst, was Unerwartetes? Ein klassisches Beispiel ist 5SemiKolonDropTablePages. Das würde bedeuten, wenn wir einen Programmierfehler haben, der den Parameter id, also die Zahl 5, nicht als Integer, als Ganzzahl verwendet, sondern einfach nur als Zeichenkette durchreicht, würde das bedeuten, da steht dann select html from pages where id gleich 5 semicolon drop table pages. Somit habt ihr aus einer Zahl 5 eine komplette Zeichenkette gemacht und habt euren eigenen SQL-Befehl mit eingeschleust, der dann eins zu eins an die Datenbank weitergereicht wird. Jetzt habe ich das mit drop table gemacht, das wird dann die komplette Tabelle pages löschen, was jetzt für unsere Webseite relativ doof wäre. Und drop tables ist glaube ich so das offensichtlichste Beispiel, Wo wir dann auch merken, da ist irgendwas krumm, aber was ist denn, wenn ihr z.B. einfach nur id gleich 5 oder 1 gleich 1. Das bedeutet, ihr würdet dann z.B. irgendeine Seite kriegen. Oder ihr schleust einfach andere Befehle ein, indem ihr z.B. die komplette Datenbank ausspäht, weil ihr könnt ja auch select statements nacheinander chainen mit union statements usw. Punkt ist ganz einfach, ihr nehmt einen Parameter, der Teil einer Datenbankabfrage ist, der nicht ordentlich gesäubert wird und den verändert ihr zu euren Kunsten. Die SQL-Injection selbst, das was ich gerade beschrieben habe, ist eine Sicherheitslücke in der Regel im Zusammenhang mit SQL-Datenbanken und basiert auf einem Programmierfehler in einem Programm, das auf die Datenbank zugreift. Ein Angreifer, also ihr in diesem Fall, kann Datenbankbefehle einschleusen und abhängig vom Einzelfall weitere Daten aus der Datenbank auslesen, Daten unberechtigt ändern oder löschen oder sogar die Kontrolle über den kompletten Datenbankserver erlangen.",
-            "start": 357946,
-            "end": 536516,
-            "confidence": 0.8204819004524879,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Was du jetzt erklärt hast, wissen wahrscheinlich oder hoffentlich alle, die irgendwie mit SQL-Datenbanken arbeiten oder Datenbanken ansprechen über ihre Software. Hoffentlich. Wenn nicht, solltet ihr unbedingt da mal tiefer reingehen, weil das wirklich ein Standardproblem ist. Aber das wissen ja schon alle. Oder ist das überhaupt noch ein Problem?",
-            "start": 537837,
-            "end": 557774,
-            "confidence": 0.8168799999999998,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Warum ist das wirklich ein Problem? Für Leute, die sich damit auskennen, denken sie sich, boah, Andi Wolfgang, ernsthaft jetzt? Hab ich damals schon vor zehn Jahren gemacht. Alles richtig, ich bin safe. Ja, das ist richtig. Der Punkt ist aber noch, SQL Injections ist wirklich immer noch einer der Top-Sicherheitslücken im Internet. Und sie ist wirklich immer noch verantwortlich Tausende von sogenannten Data Breaches, wo Leute halt wirklich Daten klauen können. Aktuell ist sie auf Rang 3 von 10 beim Open Web Application Security Project. Das OWASP für kurz ist Ein Non-Profit-Projekt, was alle drei Jahre ein Top-Ranking der Web-Vulnerabilities rausbringt. Und 2021 war das immer noch auf Platz drei. 2018 oder 2017 war das auf Rang eins. Also es ist weniger geworden. Aber allein in 2022 gab es 1162 Sicherheitslücken, die erkannt und gemeldet wurden an diese offizielle CVE-Datenbank zum Thema SQL Injections. Und da denkt man sich, what the fuck, wir leben im Jahr 2022. 1.100 Sicherheitslücken im Bereich SQL-Injections.",
-            "start": 557794,
-            "end": 634117,
-            "confidence": 0.8044355828220858,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Was ist diese CVE-Datenbank? Zur Erklärung.",
-            "start": 635217,
-            "end": 638239,
-            "confidence": 0.5391666666666667,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Die CVE-Datenbank ist einer von vielen, aber sie wird oft als die offizielle genannt, die alle Sicherheitslücken listet und auch Informationen bereitstellt, welche Version betroffen ist und welche Version den Fix bereits schon hat. Beispiel, dort findet ihr auch Heartbleed, Log4Shell oder ähnliches. Das bedeutet cvedetails.com ist eigentlich die Webseite, wo alle offiziellen Security-Researcher ihre Lücken melden und wo die Details dann auch gelistet werden.",
-            "start": 638279,
-            "end": 668900,
-            "confidence": 0.826569230769231,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Jetzt wenn wir schon im Jahr 2022 angekommen sind und das immer noch ein Problem ist, um das auch sauber abzuschließen, wir sind ja ein educational podcast, wann gab es denn die erste SQL-Injection historisch gesehen? Also wenn wir von seit 2022, wo wir jetzt sind, wie lange kämpfen wir denn schon mit diesem Problem?",
-            "start": 669168,
-            "end": 687625,
-            "confidence": 0.8233090909090909,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Und das ist ein Fakt, den ich bei der Vorbereitung rausgefunden habe. Super. Woher kommt eigentlich die SQL Injection? Total random Story. Und zwar folgendermaßen. Die SQL Injection selbst gibt es schon seit 24 Jahren. What the fuck? 24 Jahre? Ist das Internet denn schon so alt? Ja, ist es. Und zwar folgendermaßen. Im Dezember 1998 gab es einen Artikel im sogenannten Hacker-Magazin WRAC. Das gibt's nicht mehr, aber alle Auflagen gibt's noch online. Und zwar hat damals Jeff Forrestal eigentlich versucht, einen Windows-NT-Server zu hacken. Und der hat dann da in dem ganzen Artikel beschrieben, wie er es gemacht hat, was er gemacht hat. Ist natürlich ziemlich viel mit Internet-Information-Server da rum, Vorwerk und so weiter und so fort. Und auf seinem Windows-NT-Server gab's auch einen MS-SQL-Server. Und in diesem Artikel, den verlinken wir auch gerne in den Shownotes, ist ein sehr langes TXT-Dokument, aber sehr, sehr, sehr schön zu lesen, hat er ... herausgefunden, hey, ich kann ja SQL-Abfragen verändern. Das bedeutet, SQL-Injections, also die Research und die Entdeckung, war eigentlich nur ein Nebeneffekt von seinem Versuch, einen Windows-NT-Server zu hacken. In diesem Artikel beschreibt er ganz genau, was er da gemacht hat, wie er es gemacht hat, wie er darauf gekommen ist. Und als guter Whitehead-Hacker hat er natürlich auch Microsoft angeschrieben, hey Jungs, ich hab hier glaube ich ein bisschen was gefunden, wie seht denn ihr das? Und da steht dann, dass Microsoft geantwortet hat, dass das für Microsoft kein Problem sei und er sich dann einfach nicht drum kümmern soll und da drüber gucken soll. O-Ton von Microsoft 1998. Superlustiges Dokument.",
-            "start": 688081,
-            "end": 794786,
-            "confidence": 0.8243421052631581,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Ist immer gute Herangehensweise, wenn du einfach was totschweigst, dann hast du dieses Problem nicht mehr und dann existiert es einfach nicht mehr. Das ist immer eine gute Herangehensweise.",
-            "start": 794826,
-            "end": 802788,
-            "confidence": 0.7086551724137932,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Ich würde fast sagen, Microsoft sieht das inzwischen ein bisschen anders. Schauen wir mal. Wir verlinken euch das Originaldokument in den Shownotes. Auf jeden Fall guter Lesestoff für den Abend. Also, 24 Jahre alt, Dezember 1998. Entdeckung von SQL Injections war ein Seiteneffekt.",
-            "start": 802828,
-            "end": 819053,
-            "confidence": 0.7616046511627906,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Und scheinbar haben wir es innerhalb der 24 Jahren immer noch nicht gelernt, das sinnvoll zu stopfen, dieses Loch.",
-            "start": 819553,
-            "end": 825077,
-            "confidence": 0.803157894736842,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Also ich denke schon, dass wir es geschafft haben, das Problem zu mitigaten, also zu verhindern, weil es gibt ja 10.000 Best Practices dafür und da kommen wir dann gleich zu. Aber ich habe mich auch mal ein bisschen auf die Suche übergeben, warum ist das denn immer noch ein Problem? Also es kann ja nicht sein, dass die Menschheit innerhalb von 24 Jahren es nicht checkt, so ein relativ triviales Problem endgültig mal zu lösen. Und da gibt es eigentlich vier Hauptgründe für, warum das denn immer noch ein Problem ist. Auf der einen Seite, super viele Entwickler und Entwicklerinnen haben einfach keinen Kontext zum Bereich Security. Früher gab es dann den Softwareentwickler und die Softwareentwicklerin und diese Person hat dann alles gemacht. Heutzutage hat ja fast jede Firma ein eigenes Security-Engineering-Team, was dann natürlich die Verantwortung vom Entwickler wegschiebt. Was natürlich auch völliger Blödsinn ist, zugegeben, aber der einzelne Entwickler sagt, oh ja, ich entwickle das Produkt und wir haben ja ein Security-Engineering-Team und die machen ja ein Security-Review und deswegen muss ich mich mit dem ganzen Thema nicht mehr auseinandersetzen. Blödsinn müsst ihr trotzdem. Eine gewisse Basis von Security-Knowledge sollte jeder haben. Aber das wäre der erste Punkt, dass die Entwickler halt irgendwie keine ausreichende Security-Awareness mehr haben oder beziehungsweise das nicht fester Bestandteil des Security-Entwicklungsprozesses ist.",
-            "start": 825918,
-            "end": 908900,
-            "confidence": 0.7951681818181818,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Dann gleich mal nachgefragt, wenn du jetzt schon alle EntwicklerInnen angreifst, so direkt. Was ist mit allen deinen Projekten? Würdest du jetzt sagen, du bist auf der sicheren Seite, du hast bei allen deinen Projekten SQL Injections gecheckt und abgeprüft und abgesichert?",
-            "start": 909444,
-            "end": 924069,
-            "confidence": 0.771595238095238,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Auf gar keinen Fall. Also ich glaube, wenn ihr auf mein Gitterprofil geht, ich denke, ihr findet da eine ganze Menge lückenhafter Software. Also ich schließe mich damit nicht aus.",
-            "start": 924089,
-            "end": 932252,
-            "confidence": 0.7927333333333332,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Du hast ja ein Sicherheitsempfinden, das du jetzt gerade angeprangert hast, dass das viele eben nicht haben. Warum passiert es denn dir trotzdem?",
-            "start": 932512,
-            "end": 940656,
-            "confidence": 0.7224782608695651,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Ja, das ist eine ganz einfache Geschichte. Ich bin auch nur ein Mensch, bin nicht perfekt und ich achte auch zu oft nicht drauf, wenn ich da einfach was runtercode. Also ich schließe mich da nicht aus und ich sage auch nicht, dass ich nicht Teil des Problems bin.",
-            "start": 941026,
-            "end": 951691,
-            "confidence": 0.6902448979591835,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Ich habe ja auch so an meine Projekte gedacht, natürlich, wie ich den Titel gelesen habe. Und ich bin mir natürlich auch sicher, dass ich extrem viele SQL-Injections irgendwo eingebaut habe oder Lücken habe. Und ein großes Problem ist eigentlich auch, dass man, meiner Meinung nach zumindest, dass man immer mehr Abstraktionslayer verwendet. Und da spreche ich jetzt gar nicht unbedingt von den SQL-Treibern direkt oder von den Schnittstellen, sondern auch darüber hat man irgendwelche Frameworks und dann vielleicht noch ein Framework obendrauf, ein ORM-Layer, obendrauf wieder eine Abstraktionsschicht, irgendwie ein eigenes Framework, In-House-Framework. Und du müsstest eigentlich immer durch alle Layer, durch alle Schichten, die ich durcharbeite, bis runter zum zum Treiber und sogar da bist du dir teilweise nicht sicher, wie es funktioniert. Um überhaupt rauszufinden, muss ich jetzt irgendwie speziell was noch zusätzlich machen? Wann muss ich es escapen? Ich sollte ja auch nicht doppelt escapen, sonst habe ich auch wieder Probleme. Also es ist gar nicht so leicht, irgendwo rauszufinden, wie das alles funktioniert. Und ich glaube, diese Arbeit macht man sich halt oft auch nicht. Weil ich habe jetzt gerade wieder ein kleines Projekt angefangen und ich habe mir auch nicht im Detail angeschaut, ehrlich gesagt, wie das im Hintergrund funktioniert und bin einfach davon ausgegangen, dass es in dem Fall mit diesem Approach sicher ist. Aber hundertprozentig sagen kann man das natürlich erst, wenn wirklich alles durchgeht und das ist schwierig.",
-            "start": 951711,
-            "end": 1031261,
-            "confidence": 0.7778607594936712,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Na ja, auf der einen Seite muss man ja auch sagen, der heutige Entwicklungsprozess ist so komplex geworden, ja, Test-Driven Development, Security, Dependency Injection, Package Manager, Microservices, Kubernetes, Hosting, Monitoring, bla bla bla. Da hat man einfach so viele Aspekte, die man im Kopf behalten muss, und da fällt halt der ein oder andere mal hinten rüber. Deswegen sag ich, okay, wenn man jetzt keine klassische Checkliste hat, fällt halt ab und zu mal vielleicht auch Security hinten rüber, weiß ich nicht. Diese Datenbank-Libraries, die du gerade genannt hast, Abstraktions-Layer-Libraries und so weiter und so fort, alles schön und gut und ich denke auch die populären Libraries bieten dir gewisse Schutzmechanismen an. Da kommt es aber immer noch auf den Software-Entwickler und auf die Software-Entwicklerin an, ob man das denn auch wirklich richtig nutzt. Weil die richtige Anwendung der Libraries ist ja halt auch nochmal eine Kunst. Du musst ja dann zum Beispiel mindestens einmal die komplette Dokumentation gelesen haben, um zu wissen, okay, das ist eine Stolperfalle, das ist keine Stolperfalle, hier benutze ich diese Methode, dort diese Funktion und so weiter. Und also auch wenn du sagst, du vertraust der Library und den Complaint Stack, bist du dir 100% sicher, dass du jede Library richtig nutzt? Oder nutzt du sie so, dass sie für dich funktioniert? Ein weiterer Grund, warum das eigentlich immer noch ein Problem ist, automatisiertes Testing von SQL Injections ist eine ziemlich harte Sache. Oder fast auch nicht existent. Beziehungsweise, wenn es automatisiertes Testing für SQL Injections gibt, dann covert das natürlich nicht die 100%ige Abdeckung.",
-            "start": 1031798,
-            "end": 1118036,
-            "confidence": 0.7970306513409957,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Was verstehst du jetzt unter automatisches Testen von SQL?",
-            "start": 1118076,
-            "end": 1121418,
-            "confidence": 0.6877777777777778,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Natürlich kann man Unitests schreiben, ob die Datenbank einen Error schmeißt. Okay, sind da keine Unitests mehr, sind da Integration-Tests. Aber auch klassische Pentesting-Tools oder Ähnliches, die man kontinuierlich in seinem Continuous-Integration-Prozess laufen lässt, gibt's zwar alles, aber die decken dann nicht alle möglichen Szenarien ab. Wo dann ein Mensch deutlich kreativer werden kann, bieten die Tools halt nur die Szenarien ab, die man auch selbst als Implementator, als ... Implementator, ist das ein Wort?",
-            "start": 1121796,
-            "end": 1151003,
-            "confidence": 0.8250533333333331,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Weiß ich nicht.",
-            "start": 1151023,
-            "end": 1151784,
-            "confidence": 0.6466666666666666,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Als Softwareentwickler, als Softwareentwicklerin halt kennt. Deswegen alle möglichen Fälle, besonders so second in line SQL Injections, sind halt unglaublich schwer zu covern.",
-            "start": 1151824,
-            "end": 1162677,
-            "confidence": 0.8244782608695652,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Hast du das mal schon in irgendwelchen Projekten wirklich gesehen, dass es da automatische Tests gibt, die in diese Richtung gehen?",
-            "start": 1162717,
-            "end": 1168123,
-            "confidence": 0.7352380952380952,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Ja, habe ich. Und zwar kannst du, es gibt so Tools wie SQL Map, kommen wir gleich drauf, die kann man, den kannst du zum Beispiel eine URL hinschmeißen, dann kannst du sagen, dieser Parameter führt in die Datenbank und so weiter und so fort. Und dann kannst du das Timebase laufen lassen. Ja, das geht.",
-            "start": 1168620,
-            "end": 1183104,
-            "confidence": 0.7119107142857145,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Aber dass das normal in der Pipeline bereits automatisch immer mit ausgeführt wird?",
-            "start": 1183144,
-            "end": 1187466,
-            "confidence": 0.8395384615384617,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Also das ist ein extremer Case von dem Projekt, was ich da gesehen habe. Es gibt da noch ein bisschen was im Bereich statische Analyse. Ist aber auch eine ganz schwierige Thematik. Kommen wir auch gleich zu, wie wir sowas eigentlich mal verhindern können.",
-            "start": 1188813,
-            "end": 1199713,
-            "confidence": 0.7624545454545455,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Okay, dann gehen wir vielleicht gleich mal in die Arten von SQL Injections, weil jeder kennt irgendwie so dieses klassische Beispiel von XKCD wahrscheinlich, dieses Comic, wo die Schule bei den Eltern anruft und sagt, sie haben ein Computerproblem durch den Sohn. Und ob die Eltern den Sohn denn wirklich Robert Strichpunkt, Strichpunkt gibt es bei euch nicht.",
-            "start": 1200116,
-            "end": 1224408,
-            "confidence": 0.7561724137931038,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Semikolon nennt sich das.",
-            "start": 1224448,
-            "end": 1225769,
-            "confidence": 0.5487500000000001,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Genau. robots, semicolon, droptables, bla bla bla genannt haben. Also das kennt wahrscheinlich jeder, verlinken wir. Aber was für Typen gibt es denn sonst noch, abgesehen von dem klassischen Case?",
-            "start": 1226009,
-            "end": 1239016,
-            "confidence": 0.7597333333333334,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Wenn wir von der normalen SQL-Injection sprechen, bedeutet das eigentlich, wir stellen uns eine Webseite vor, und die hat eine Tabelle. Und alle Tabelleneinträge kommen aus der Datenbank. Und wir haben oben ein Suchfeld. Nehmen wir mal, das ist die Mitgliederliste eines Vereins. Ja, das ist so das simpelste Beispiel. Und du kannst dann nach Vereinsmitgliedern suchen. Und dieses Suchfeld, da gebe ich dann Wolfgang ein und dann kriege ich alle Vereinsmitglieder mit dem Vornamen Wolfgang. Das ist so der ganz, ganz klassische Fall von SQL Injection, weil du dann sagen kannst, okay, ich gebe da nicht Wolfgang ein, sondern ich breche den String auf und sage dann Wolfgang Anführungszeichen union select username, Passwort from users. Und was ich dann eigentlich mache, ich sage der Datenbank, Retoniere einfach mehr Datensätze und zeige diese in die Tabelle an. Soweit so gut. Dort habe ich eigentlich ein klassisches Request-Response-Verhalten, dass ich durch ein SQL-Injection mir zusätzliche Daten abfrage und die dann in meiner Tabelle anzeige. Alles super. Das ist so das Einfachste. Als Subteil davon kann man natürlich dann weitergehen und die sogenannte Error-Based SQL Injection führen. Die Error-Based SQL Injection bedeutet eigentlich, der Angreifer, also wir, wir sind jetzt hier der Hacker, wir kümmern uns darum, dass wir einfach invalides SQL in dieses Suchfeld schmeißen und dann schauen, welche Fehler zurückkommen. Warum hilft uns das? Umso mehr Informationen wir über die Datenbank haben, desto gezielter können wir unsere Queries bauen, desto gezielter können wir unsere Attacken fahren.",
-            "start": 1239036,
-            "end": 1332234,
-            "confidence": 0.8329918699186991,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Also im Idealfall zum Beispiel, dass in der Error Message die gesamte SQL-Query entsteht, die wir eigentlich gar nicht kennen, aber durch den SQL-Error sehen wir dann SQL-Error in und womöglich wird die ganze SQL-Query angezeigt und dann können wir weiterarbeiten, weil wir sehen, da wird noch dieser Parameter abgefragt und so kann man sich dann langsam vorarbeiten.",
-            "start": 1332767,
-            "end": 1352280,
-            "confidence": 0.8757586206896553,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Das ist ein sehr offensichtlicher Fall. Error-based SQL Rejection kann auch bedeuten, du kriegst einen Error-Code, 4711, zurück und weißt, ah, das ist eine MySQL-Datenbank. Und jetzt kommt's. Wenn man sich wirklich dann mit den Datenbanken auskennt, kann man sogar anhand der Schreibweise des Fehlers die Version erkennen, weil neue Fehlercodes kommen in neueren Versionen in den Quellcode. Also wenn man da ein gutes Listing hat, welche Errorcodes in welchen MySQL-Versionen oder PostgreVersionen implementiert wurden, weiß man, ah, wir sind mindestens auf Version 5, wir sind mindestens auf Version 5.5 und so weiter. Und das hilft einem natürlich ungemein, zu verstehen, welche internen Datenbankenfunktionen sind denn da und welche kann man denn nutzen. Das bedeutet, das ist alles so eine Art Informationserhaschung. Der andere Fall, oder die andere Hauptkategorie, sind sogenannte Blind SQL Injections. Blind SQL Injections sind SQL Injections, wo wir als Angreifer das Ergebnis nicht zurückkriegen. Und jetzt sagt man, hä? Wie funktioniert denn das? Ja, das ist super interessant. Und zwar ein Subteil von Blind SQL Injections sind sogenannte Time-Based Injections. Das bedeutet, man baut in die SQL Injections sogenannte if-Abfragen ein. Die Sprache SQL hat ganz klassische if, when und so weiter Abfragen, so wie jede Programmiersprache auch. Man kann dann sagen, where firstname equal Wolfgang or if bla bla bla. Und in diesem if-Statement kann man sagen, okay, wenn es eine Tabelle mit dem Anfangsbuchstaben a gibt, Dann warte bitte zwei Sekunden. Wenn nicht, führe die Query einfach sofort aus. Was bedeutet das? Das bedeutet, falls du deine SQL-Injection getroffen hast und es gibt eine Tabelle, die mit dem Buchstaben A anfängt, ist deine Response zwei Sekunden langsamer. Daraus kannst du eigentlich diese True-False-Checks bauen und dadurch kannst du dich kontinuierlich runterhangeln. Gibt es eine Tabelle, die mit A als ersten Buchstaben und mit B als zweiten Buchstaben anfängt und so weiter und so fort.",
-            "start": 1352700,
-            "end": 1477638,
-            "confidence": 0.8212290322580649,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Also das ist, wenn die Query eigentlich keine Ergebnisse zurückliefert und dir die in der Oberfläche anzeigt, damit du dann trotzdem Daten auslesen kannst, aber du bekommst ja keine richtigen Daten zurück und über die Zeit kannst du dann über Umwege Sachen abfragen, obwohl du in der Oberfläche gar nichts ausgegeben bekommst, was da bei der Query dann schlussendlich passiert.",
-            "start": 1477838,
-            "end": 1497335,
-            "confidence": 0.7690833333333337,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Genau, du brauchst halt irgendeine Antwort vom Server, und die Antwort hier bei einer Time-Based Blind SQL Injection ist eigentlich, deine Response-Zeit wird künstlich erhöht. Du kannst eigentlich alles dann machen, ja? Und da ist die Kreativität, die kriminale Kreativität eigentlich grenzenlos. Und oft verbindet man dies halt mit sogenannten True-False-Checks. Hat diese Tabelle fünf Felder? Hat die Tabelle sechs Felder? Hat die Tabelle sieben Felder? Gibt es ein Feld, was mit A beginnt? Und so weiter und so fort. Und so hangelt man sich dann da durch und spielt halt mit der Zeit. Super effektiv. Je nachdem, wie der Server aber konfiguriert ist, kann das natürlich auch bedeuten, dass man als Angreifer sehr schnell aufliegt.",
-            "start": 1497842,
-            "end": 1541212,
-            "confidence": 0.8470172413793103,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Vorausgesetzt, Die Person hat ein gutes Monitoring im Hintergrund, sonst fällt da gar nichts auf.",
-            "start": 1541252,
-            "end": 1547536,
-            "confidence": 0.6501333333333332,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Oder man hat eine Context-Deadline, also eine sogenannte Request-Deadline eingebaut. Das bedeutet, dass kein Request länger als fünf Sekunden dauern darf und die Applikation bricht dann diesen Request ab. Aber sind wir mal ehrlich, wenn du über sowas nachdenkst, über solche Reliability-Features mit Context- und Request-Deadlines, dann gehe ich mal stark davon aus, dann hast du auch keine SQL-Injection-Probleme.",
-            "start": 1547616,
-            "end": 1569090,
-            "confidence": 0.8357796610169492,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Oder dir zumindest ins Gedanken darüber gemacht.",
-            "start": 1569718,
-            "end": 1571960,
-            "confidence": 0.4734285714285714,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Genau. Der zweite Punkt, die Subkategorie neben Time-Based Blind SQL Injections sind sogenannte Out-of-Band Blind SQL Injections. Man nennt die auch entweder Two-Channel SQL Injection oder Second-Order SQL Injection. Der Clou hier ist, dass du eigentlich zwei verschiedene Kanäle nutzt, um den Angriff zu starten und das Resultat entgegenzunehmen. Stell dir vor, du hast eine Webseite und diese ist anfällig für SQL Injections und zum Beispiel trägt die Daten in eine Datenbank ein. Das bedeutet, du bist in der Lage, ein Insert Statement zu modifizieren, um neue Daten einzutragen.",
-            "start": 1571980,
-            "end": 1611949,
-            "confidence": 0.8127303370786517,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Also zum Beispiel meine Profilseite. Ihr könnt meine Description von meinem Profil abändern. Das ist in dem Description-Field.",
-            "start": 1612389,
-            "end": 1619733,
-            "confidence": 0.7605000000000002,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Zum Beispiel. Und dann drückst du auf Speichern und die Webseite sagt dir, Eintrag gespeichert. Und jetzt stell dir vor, diese Webseite hat keine, zeig mir meine Profilseite, sondern diese Webseite hat nur ein Backend, wo dann irgendein Mitarbeiter alle Profile sieht. Du hast dann also jetzt die Attacke gefahren, du hast Quellcode in die Datenbank eingeschleust. Und das ist an einem Sonntag. Und an einem Sonntag in Deutschland arbeitet keiner, deswegen wird das Backend von einem Mitarbeiter erst wieder am Montag geöffnet. Das wäre dann der zweite Kanal, wo dann erst eine Attacke zum Zuge kommt. Weil wenn der User nämlich sein Backend aufmacht und dann sieht, ah, der Wolfgang hat ja sein Profil geupdatet, das muss ich als Mitarbeiter jetzt freigeben. Zum Beispiel hast du deine Adresse bei einer Bank geändert. oder so. Ja, kann ja sein, dass da irgendwie ein Freigabeprozess ist. Dann wird erst dein Chartcode ausgeführt und somit hast du eigentlich zwei verschiedene Wege, two channels oder out of band, wo deine Attacke ausgeführt wird. Das ist natürlich sehr zeitintensiv, sehr zielgerichtet etc. etc. und nicht so klassisch mit einem kurzen Request-Response-Cycle oder kurzen Feedback-Cycle wie bei einer normalen SQL-Injection, aber sowas gibt es natürlich auf Da kann ich noch eine tolle Story von vor ein paar Jahren bei Trivago erzählen, und zwar war Trivago eine ganze Zeit lang, oder ist glaube ich immer noch, Teil vom HackerOne. HackerOne ist eine Firma, die es möglich macht, WhiteHat-Hacker für Sicherheitslücken zu zahlen. Das bedeutet, du gibst dann da an, okay, Trivago.com, ist jetzt für dieses Programm offen und du zahlst so und so viel Geld, falls eine Sicherheitslücke an Trivago gemeldet wurde. Und dann kümmern sich motivierte Hacker darum, hey die finden dann irgendwann mal eine Lücke und melden die dann an uns und wir würden denen dann Geld zahlen. Ja, in der Regel irgendwie 2, 3, 4.000 Dollar oder je nach Lücke halt auch ein bisschen mehr. Der Vorteil da ist halt ganz einfach, dass die Firma ein bisschen Geld zahlt, um die Lücke zu bekommen versus der Hacker verkauft die oder nutzt die selbst aus. Und da haben wir irgendwann mal einen schönen Report gekriegt. Und zwar hatten wir eine SQL-Injection im Quellcode, wo es darum ging, Kreditkartendaten oder Kontodaten oder irgendwie sowas einzugeben. Und da war das wirklich genau die Story. Jemand im Backend-Bereich hat dann ein Table-Listing gehabt, wo das dann getriggert wurde. Der Angreifer hat aber nicht gesagt, hallo Welt, hat da nicht hallo Welt reingeschrieben, sondern der Angreifer hat komplettes JavaScript da eingeführt. Der hat JavaScript eingeführt, eine externe Library nachgeladen und und und. Als der Trivago-Mitarbeiter dann dieses Backend aufgemacht hat, sah alles ganz normal aus. Aber im Hintergrund, wo natürlich leider dann noch eine andere Sicherheitslinie getriggert und zwar Cross-Site Scripting, weil ja Javascript eingeführt wurde, das Javascript wurde im HTML ausgeführt und von dieser Seite wurde mittels Javascript dann ein Screenshot gemacht und dieser Screenshot wurde per Ajax-Request an einen externen Server gesendet. Und der Mitarbeiter hat nichts mitgekriegt, weil das sah ja alles ganz normal aus. Und dann haben wir den HackerOne-Report gekriegt, wo wir halt einen kompletten Screenshot von unserem ganzen Backend gekriegt haben. Irgendwie so, oh, okay. Sowas kann man dann halt, das wäre ein klassischer Out-of-Band, Two-Channel oder Second-Order SQL Injection, die man dann halt triggern kann.",
-            "start": 1619773,
-            "end": 1810670,
-            "confidence": 0.7801913357400723,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Also man kann es dann eigentlich ganz gut nützen, um irgendeinen größeren Angriff zu fahren, dass man also wirklich Daten ausspioniert und die dann in irgendeiner Form wiederverwendet für ein zweistufiges, dreistufiges, vierstufiges Verfahren im Hackerangriff sozusagen. Also das SQL-Injections ist halt dann ein kleiner Baustein in einem großen Angriff.",
-            "start": 1811542,
-            "end": 1831691,
-            "confidence": 0.8266600000000003,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Ja, umso gezielter der Angriff, umso mehr Informationen helfen natürlich. Beispiel jetzt mit diesem Backend-Angriff, den ich dir gerade erzählt habe, hätte man natürlich auch den Telefonhörer in die Hand nehmen können und sagen, hey, pass mal auf, geh mal, ich bin jetzt gerade auf dieser URL, ja, du hast ja dann direkt eine URL zum Backend-System. Hör mal, und ich sehe hier das Listing vom Walter, aber sagst du nicht auch, das ist doch keine deutsche IBAN, oder? Kannst du mir nochmal ganz kurz Die Information, und dann fragst du irgendeine Information an, die du jetzt gerade nicht in deinem Screenshot hast, und so geht es halt über Social Engineering weiter, weil du gibst halt schon sehr, sehr viele Informationen preis, die eigentlich nur ein interner Mitarbeiter haben kann. Und dann wird natürlich bei dir das Gefühl erweckt, oh, das muss ein neuer Mitarbeiter sein, der hat ja so viele Informationen, logisch, dem kann ich natürlich die Information geben.",
-            "start": 1832032,
-            "end": 1879425,
-            "confidence": 0.7427375000000003,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Aber das Ganze kann natürlich auch verwendet werden, um ganz normale User auszuspionieren, oder? Wenn ich JavaScript einschleusen kann, Cross-Site Scripting, alleine auf meiner Profilseite, wenn ich schaffe, dass auf meiner Profilseite ein JavaScript nachgeladen wird und mein Profil wird dann von anderen User angeschaut und ich spioniere deren Cookie zum Beispiel aus, dann kann ich natürlich mit dem auch wieder weiterarbeiten und kann so Daten von anderen Usern ausspionieren oder abgreifen. oder so natürlich auch Hacks fahren. Also dieses Schlupfloch, das Einschleusen von Shardcode kann ich natürlich auf ganz vielen Ebenen spielen und das ist natürlich auch ganz gefährlich, ohne dass ich irgendwo Daten nach außen gebe im ersten Moment, aber dann im zweiten Moment, wenn dann irgendein Shardcode nachgeladen wird.",
-            "start": 1879515,
-            "end": 1922068,
-            "confidence": 0.8056229508196723,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Alles richtig, da bist du natürlich dann auf mehrere Sicherheitslücken in einer Kette angewiesen. Was du jetzt gerade gesagt hast, du schreibst Schadcode in eine Datenbank, zum Beispiel Javascript, dann musst du zum Beispiel auch eine Cross-Site-Scripting-Lücke haben. Das bedeutet, dass Daten, die in der Datenbank sind, im Frontend nicht ordentlich escaped werden für deren Anwendungsfall. Und dann wird JavaScript ausgeführt und und und und und. Sowas wird man dann in deinem spezifischen Fall, zum Beispiel Cookie, wird gestohlen, wird man dann Persistent Cross-Site Scripting nennen, weil es ist ja persistiert in der Datenbank und nicht nur auf Basis von einer Adresse.",
-            "start": 1923069,
-            "end": 1957608,
-            "confidence": 0.7958627450980392,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Aber das klingt jetzt so, also braucht man da extrem viele Lücken. Ich meine, HTML-Code steht ganz oft in der Datenbank und sobald irgendwo HTML-Code in der Datenbank steht, dann kann das nicht mehr escaped werden. Und damit habe ich schon extrem offene Lücke. Also das geht eigentlich sehr schnell. Da braucht man dann nur noch die SQL-Injection dazu, wenn man irgendwo ein HTML-Feld findet.",
-            "start": 1958529,
-            "end": 1978177,
-            "confidence": 0.7858461538461539,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Wieso kann HTML nicht escaped werden, wenn es in der Datenbank steht?",
-            "start": 1978197,
-            "end": 1980958,
-            "confidence": 0.61675,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Weil es dann als HTML angezeigt werden würde, als Text. Sobald du HTML-Code in irgendeinem Feld hast und das angezeigt wird, hast du natürlich kein Escaping mehr und das heißt, du brauchst in der Datenbank, wenn du Zugriff auf die Datenbank hast, nur irgendwo ein Feld finden, wo RAW HTML-Code drinsteht und der dann schlussendlich auf irgendeiner Webseite irgendwo angezeigt wird und dann geht das eigentlich relativ schnell.",
-            "start": 1981437,
-            "end": 2002823,
-            "confidence": 0.7624558823529409,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Genau, meines Erachtens nach ist das dann Designfehler in dem CMS oder was auch immer, was du nutzt, weil du eigentlich Content aus der Datenbank in der Regel immer für das entsprechende Ausgabe-Medium escapest und nicht beim Speichern in der Regel, weil der Grund ist ganz einfach, du escapest HTML, bei der HTML-Ausgabe anders, als wenn du HTML in JavaScript implementierst, als wenn du irgendwas aus der Datenbank liest und fürs CSS generierst, ja? Also, das Ausgabe-Medium und der Ausgabe-Kontext ist ja ausschlaggebend, wie du etwas escapest.",
-            "start": 2003203,
-            "end": 2033046,
-            "confidence": 0.8121609195402297,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Aber... Ja, das ist jetzt in der... Das ist jetzt vielleicht ganz nett dahergesagt, aber in der Realität ist das nicht so. In der Realität steht ganz oft HTML-Code irgendwo in einem Feld. Es kann ja sogar sein, dass das ein Cache ist unter Umständen. Irgendwelche Webseiten werden gerendert und dann in den Cache geschrieben in der Tabelle und dann steht in der Tabelle einfach der HTML-Code, der vorgerenderte und wenn du den dann im Cache änderst, wird der genauso angezeigt. Also sobald du Zugriff auf die Datenbank hast, hast du da schon sehr viele Möglichkeiten, weil irgendwo findest du relativ einfach HTML-Code. Du musst natürlich das mal finden und suchen, aber sobald du das gefunden hast, geht das relativ schnell.",
-            "start": 2033407,
-            "end": 2069563,
-            "confidence": 0.7510165289256202,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Die Realität ist oft deutlich komplexer und deutlich dreckiger, als wir das in unserem Engineering-Porn-Kopf gerne haben würden und in der Lehre. Aber wir sprechen ja grad schon über möglichen Schaden, den man eigentlich durch eine SQL-Injection machen kann. Und das ist jetzt nicht nur, ah, ich gebe mir ein paar weitere Usernames aus, sondern ... Das ist eine ganze Latte von möglichem Schaden, die man da machen kann, wenn man eine erfolgreiche SQL-Injection durchkriegt. Auf der einen Seite kann man natürlich Daten verändern. Das bedeutet, SQL-Injections im Bereich von Insert-Statements, Update-Statements oder Delete-Statements, da ändert man natürlich Daten. Die zweite Geschichte ist zum Beispiel, je nach Datenbankserver kann man sogar Skripte auf dem Datenbankserver ausführen. Beispiel eine MSSQL Datenbankserver hat eine Funktion nennt sich goexec und dann kann man halt Commandline Befehle auf dem jeweiligen Server ausführen. unter der Voraussetzung, dass der Datenbank-User natürlich entsprechende Rechte hat. Kommen wir aber gleich zu. Jetzt hatte ich gerade gesagt, man kann Skripte auf dem Server ausführen, man kann aber auch lokale Files lesen, wie z.B. loadFile, loadDataInFile bei Postgre oder MySQL. Generell, wenn ich von sowas spreche, kann man auch sagen, ich kann einfach jede Funktion in der Datenbank aufrufen. Beispiel, current underscore user gibt dir in der Regel den aktuellen Username vom Datenbank. User, den man gerade in der Connection nutzt. Das kann man natürlich je nach Rechte dafür nutzen, um höhere Rechte zu bekommen, um sich selbst zum Admin abzugraden oder ähnliches. In neueren Datenbankenversionen wird sowas standardmäßig abgestellt. Und jetzt kommt wieder die tolle Realität. In der Regel, wenn man Datenbanken von einer alten Version zu einer neuen Version upgradet, werden die Settings rückwärtskompatibel applied. Das bedeutet, wenn zum Beispiel ein Defaultwert in einer neuen Datenbankversion deaktiviert ist, aber man upgradet von einer alten zu einer neuen Version, dann ist das immer weiter aktiviert, wenn man das nicht aktiv ändert. Ja, weil es wird ja rückwärtskompatibel geupgradet werden.",
-            "start": 2069998,
-            "end": 2197405,
-            "confidence": 0.8584031250000004,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Der Klassiker ist ja auch, dass man einfach das irgendwann mal braucht, dieses Load-File oder Load-Data-In-File in MySQL und dann grantet man mal diese Permissions für diesen User einfach, für diesen Test-Case oder man will da irgendwas manuell reinladen, nimmt da den gleichen User und vergisst es dann wieder rückgängig zu machen, diese Permission. Und dann ist es einfach für immer auf diesem User oben. Also das passiert ja in der Realität ständig. Wer legt denn einen eigenen User an oder macht das saubere Verwaltung? Oft gibt es dann auch nur einen User für das gesamte Projekt oder zwei User und man unterscheidet dann auch nicht mehr so im Detail mit diesen Rechten. Also in der Realität ist es halt so, dass man einfach schnell mal was macht und das vergisst man halt dann sehr, sehr gerne. Und das ist, glaube ich, auch eines der großen Probleme, Das, was wir ja auch immer predigen, kann man das nicht pragmatisch und schnell machen. Man muss es dann halt auch pragmatisch und schnell wieder rückgängig machen.",
-            "start": 2197990,
-            "end": 2250389,
-            "confidence": 0.82801724137931,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Jetzt haben wir ein bisschen über lokale Funktionen gesprochen, loadFile, loadData, um lokale Files zu lesen. Aber was passiert denn, wenn wir einfach ein selectIntoOutFile machen? Das bedeutet, wir sind auch in der Lage, lokale Files zu schreiben. Und was würde passieren, wenn ich auf einem PHP-Server ein lokales File schreibe, das ins WebDocumentRoot lege und mir einfach eine klassische WebShell baue? So nach dem Motto, dass jeder Parameter einfach nur an EXEC weitergegeben wird. Somit habe ich mir eine ganz klassische Webshell gebaut mittels einer SQL Injection und kann einfach eigentlich alles ausführen. Eine andere Geschichte ist, geht wieder in diese Time-Based Blind SQL Injections rein, ist, man kann zeitbasierte Angriffe führen. Viele Datenbanken haben Benchmark-Funktionen. Benchmark-Funktionen sind zum Beispiel, führe diese Fraktion eine Million mal aus. Das kann ich natürlich auch in den SQL Statement fahren und wenn ich dann 1000 Queries Auf den Server fahre, jeweils mit dem Benchmark, mit sehr teuren Operationen, mit sehr teuren Funktionen, kann das sogar zu einem Denial-of-Service vom Datenbankserver führen, weil ich mit diesen Queries den Datenbankserver deutlich überlaste. Was sind zum Beispiel teure Funktionen? Ganz teure Hashing-Funktionen oder ähnliches. Einfach eine Millionen mal ausführen. Und weil ich jetzt natürlich durch diese ganzen Möglichkeiten, wenn ich da ein bisschen was kombiniere, krieg ich natürlich auch raus, welche Version ist das, welcher Datenbankserver und so weiter und so fort. Und dann kann ich wieder auf cvedetails.com gehen, schau mir an, welche Version betroffen war von welcher Sicherheitslücke und dann gehe ich mit ganz klassischen Exploits an den Server ran, weil ich ja jetzt Detailinformationen der Infrastruktur habe und nutze einfach bekannte Sicherheitslücken von einem nicht geupdateten Server, um von da aus weiterzugehen. Das ist jetzt nur mal eine kleine Übersicht vom möglichen Schaden, den man da machen kann.",
-            "start": 2251108,
-            "end": 2366951,
-            "confidence": 0.8481452702702705,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Okay, jetzt hast du sehr sehr ausführlich erklärt, was man alles machen kann und hast wahrscheinlich sehr vielen Leuten sehr viele Ideen in den Kopf gesetzt, wie man irgendwas hacken kann. Vielen Dank dafür, Andi. Also bist du jetzt auch verantwortlich dafür, dass die Welt wieder ein kleines Stück besser wird? Also erklär mal, wie man jetzt diese ganzen Hacking-Angriffe, die du jetzt so schön erklärt hast, abwehren kann. Was gibt's für Gegenmaßnahmen?",
-            "start": 2367431,
-            "end": 2392090,
-            "confidence": 0.7751095890410957,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Darauf war ich jetzt nicht vorbereitet. Nee, kleiner Witz. Die erste Gegenmaßnahme, und das macht mich auch so enorm traurig, dass wir immer noch uns um dieses Problem drehen, sind sogenannte Prepared Statements. Und das ist meines Erachtens nach auch die sinnvollste Möglichkeit, um SQL Injections zu verhindern. SQL Injections verhindert man ganz grundlegend relativ einfach. Jedes Datenbankfeld hat einen gewissen Typ. Eine Ganzzahl, eine Integer, eine Fließkommazahl, eine Float oder eine Dezimal, ein String, Binary, Blob, was weiß ich nicht. Anhand des Datentyps muss man den Eingabe-Parameter entsprechend validieren. Das bedeutet, alles das, was ich bekomme, wenn ich das gegen ein Integer-Datenbankfeld schieße, dann kann ich da ruhig ein Incast oder ähnliches drum bauen. Das ist eigentlich ganz grundlegend die Art und Weise, wie man SQL-Injections verhindert. Bei einem String wäre das zum Beispiel, wenn da ein Anführungszeichen drin ist, dass man das Anführungszeichen entsprechend escaped mit einem Backslash und so weiter. In jeder Programmiersprache gibt es dafür entsprechende Funktionen. Moderne Datenbanken unterstützen aber auch sogenannte Prepared Statements. Was bedeutet das?",
-            "start": 2392130,
-            "end": 2459893,
-            "confidence": 0.8089651162790702,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Du bist gut. Moderne Datenbanken, Prepared Statements gibt es seit, keine Ahnung, seitdem es Datenbanken gibt wahrscheinlich fast. Also alle Datenbanken unterstützen, das will ich fast sagen.",
-            "start": 2459933,
-            "end": 2469576,
-            "confidence": 0.6381851851851851,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Okay, alle Datenbanken. Man gibt seine SQL Statements an und ich nehme jetzt einfach nur noch ein Beispiel. Select ID from users where ID gleich Fragezeichen. Das Fragezeichen ist dann deklarativ für den ersten Parameter. Man schickt also dieses Statement mit einem Prepare-Call an die Datenbank. Unten drunter kriegt man dann eine ID von dem Datenbank-Server zurück und sagt, hey, ja, ich habe dieses Statement jetzt für dich vorbereitet.",
-            "start": 2469656,
-            "end": 2499631,
-            "confidence": 0.8201014492753621,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Also man bekommt eine ID von diesem Statement, nicht die ID von dem User in der SQL-Query, sondern einen Identifier, wie man diese Query wiederverwenden kann.",
-            "start": 2500051,
-            "end": 2510019,
-            "confidence": 0.8167307692307693,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Das ist richtig. Zusammen mit dieser Statement-ID sendet man jetzt seinen Parameter mit an die Datenbank und bekommt danach das wirkliche Resultat der Datenbankabfrage.",
-            "start": 2510039,
-            "end": 2521048,
-            "confidence": 0.8493750000000002,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Also ruf mir dieses Statement Nummer 10 mit der ID 5, mit dieser User-ID 5 auf. Also ich sende nur Statement 10, Payload 5 für diese User-ID.",
-            "start": 2521648,
-            "end": 2532654,
-            "confidence": 0.7292222222222223,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Und das kann man natürlich mit deutlich mehr Parametern machen, aber so stellt man sicher, dass die Datenbank das richtige Typecasting macht, alles ordentlich escaped und so weiter und so fort und davor lagert man eigentlich die Ich nenne es mal Sicherheitsarbeit auf die Datenbank, weil die Datenbank weiß halt unter anderem am besten, wie diese Felder zu behandeln sind.",
-            "start": 2532714,
-            "end": 2554464,
-            "confidence": 0.8557833333333331,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Zusätzlicher Vorteil ist natürlich noch, dass die Datenbank die SQL-Query schon kennt, einen Ausführungsplan schon vorbereitet hat, optimiert hat und dadurch, wenn man die Query dann auch öfters verwendet, auch wirklich das Ganze wesentlich schneller ist, weil die Datenbank schon alles vorbereitet hat und man wirklich nur den Payload sendet.",
-            "start": 2554484,
-            "end": 2572329,
-            "confidence": 0.8518000000000001,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Das spiegelt sich in einem messbaren Performance Impact wieder, wenn man jetzt zum Beispiel eine While oder Vorschleife hat und dort immer mit derselben vorbereiteten Anfrage gegen Datenbankserver hämmert. Was bedeutet das beim Umkehrschluss zeitlich gesehen? braucht man mehr Zeit, wenn man eine einfache Datenbankabfrage prepared, mit Daten rübersendet und wieder schließt. Das würde bedeuten, wenn du einen SQL-Query nur einmal ausführst, dann hast du eigentlich drei Network-Roundtrips zur Datenbank versus wenn du jetzt keine prepared Statement nutzt.",
-            "start": 2573089,
-            "end": 2611208,
-            "confidence": 0.8635256410256411,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Warum hast du drei?",
-            "start": 2611248,
-            "end": 2611969,
-            "confidence": 0.664,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Weil du es ja noch schließen musst. Das bedeutet, du sendest das Prepared Statement an den Datenbank-Server, erster Roundtrip, dann sendest du die Parameter, zweiten Roundtrip, und am Ende musst du die Datenbank, das Statement selbst ja noch closen. Ich sag nicht die Datenbank-Connection closen, sondern das Prepared Statement sagen, hey, ich bin jetzt hiermit fertig.",
-            "start": 2612489,
-            "end": 2631832,
-            "confidence": 0.7699999999999999,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Ja, wenn du es schön machst. Du kannst eigentlich auch sagen, okay, wenn du die Connection resettest, dann werden dir sowieso alle Prepared Statements wieder rausgekickt. Dann brauchst du es nicht schließen. Dann wärst du eigentlich nur mehr bei zwei Roundtrips. Und dann hat man natürlich, je nachdem, was für Sprache man verwendet, was für einen Treiber man verwendet, man hat da schon viele Optimierungen drinnen. Die meisten Treiber cachen automatisch die ganzen Statements, probieren das also in irgendeiner Form zu optimieren. Und dann würde ja auch gerne eigentlich mal einen Test machen, ob da wirklich so viel Zeit verloren geht, weil im Endeffekt du hast dafür einen Plan, der schon zur Verfügung steht und eigentlich sollte ja die Connection an sich, der Roundtrip, weniger Zeit benötigen als die SQL Query selbst, das Ausführen von der SQL Query, das Zurückliefern der ganzen Daten, das sind vielleicht viele Daten. Also ich könnte mir vorstellen, dass dieser Overhead eigentlich im Endeffekt sehr, sehr, sehr, sehr klein ist. Und die Frage ist halt wirklich, brauchst du diese letzten Prozent wirklich an Performance für deine Applikation? Und wenn du dann wirklich mal so groß bist, dann hast du wahrscheinlich sowieso ein größeres Team, was sich darum kümmert oder auch einfach mehr Zeit, um dich um diese speziellen Performance-Optimierungen dann zu kümmern. Also die Sicherheit geht im Normalfall vor, meiner Meinung nach. Und für 99 Prozent der Applikationen sollte das auch kein Problem sein.",
-            "start": 2632252,
-            "end": 2710932,
-            "confidence": 0.7775481171548119,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Da stimme ich dir zu. Wer Prepared Statements aus Performance-Impact-Gründen nicht nutzt, da würde ich sagen, dass es größere Fische gibt, die man da lösen sollte, größere Probleme. Und es kommt natürlich immer ganz zu den Use-Case an, aber ich denke, es gibt bessere Optimierungen, als Prepared Statements wegzulassen. Und ich denke, dass der Benefit von Prepared Statements den Performance-Impact auch wegmacht. Speziell, wenn man in einem größeren Software-Engineering-Team arbeitet, unterschiedliche Wissensstände hat, hier und da vielleicht mal Juniors dabei hat, die mit dem ganzen Thema jetzt noch nicht so viel Berührung haben.",
-            "start": 2711372,
-            "end": 2750269,
-            "confidence": 0.8157096774193544,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Und sonst, ganz allgemein, ist immer ein guter Tipp, wenn man jetzt keine Prepared Statements verwendet und das selber escaped, wirklich mal den ganzen Stack durchgehen und wirklich auch prüfen, was wird wo escaped, was wird nicht escaped, wie schaut einfach mein gesamter Stack aus, auch sogar sind da vielleicht im Hintergrund dann irgendwo Prepared Statements im Spiel oder nicht, also dass man einfach mal das Ganze versteht, um dann überhaupt analysieren zu können, habe ich ein Problem oder nicht, muss ich noch irgendwo was escapen oder nicht und nicht einfach nur blind irgendwelche Methoden verwenden, ohne zu wissen, Ist es ein Prepared Statement? Ist es kein Prepared Statement? Ist es ein Prepared Statement nur vom Datenbanktreiber, also von der lokalen Integration, vom BHB-Datenbanktreiber zum Beispiel, der das dann erst recht wieder als normale Query absendet? Ist es wirklich ein Prepared Statement, was auf der Serverseite ausgeführt wird? Also diese ganzen Dinge einfach mal durch spielen und durchlesen, wirklich die Dokumentation von dem Treiber, von dem Abstraktionslehrer, von dem ORM, um dann wirklich Schritte zu setzen. Und das braucht halt Zeit und das ist ein gewisser Aufwand und Sicherheit ist halt nicht etwas, was man einfach out of the box bekommt.",
-            "start": 2750289,
-            "end": 2820592,
-            "confidence": 0.8044527363184076,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Generell gilt die goldene Regel, vertraue einfach keinem User-Input. Und User-Input selbst sollte jetzt in eurem Kontext definiert werden. Das bedeutet auch, vertraue womöglich nicht dem Content, der aus deiner eigenen Datenbank kommt. Besonders in einem Microservice-Umfeld, wo jetzt nicht jeder Microservice die eigene Datenbank hat, weißt du nicht, wie diese Daten geschrieben wurden. Du weißt nicht, woher diese Daten kommen. Du weißt einfach nicht, ob du diesen Daten aus der Datenbank wirklich vertrauen kannst. Das bedeutet, mit allen externen Daten, mit denen du hantierst, escape sie einfach ordentlich. Nutze prepared statements. Das ist so die goldene Regel von User Input.",
-            "start": 2821392,
-            "end": 2860167,
-            "confidence": 0.8094257425742573,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Was kann ich denn jetzt auf der Server-Seite machen? Jetzt haben wir die Software-Seite besprochen, als Entwickler. Wenn ich jetzt einen MySQL-Server administriere, egal jetzt als Developer oder als DBA oder ganz allgemein Administrator, auf was sollte ich auf der Server-Seite achten?",
-            "start": 2860923,
-            "end": 2875629,
-            "confidence": 0.7521904761904762,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Meines Erachtens nach kannst du da primär drei Sachen machen. Auf der einen Seite upgrade auf eine aktuellere Version. Und aktuellere Version meine ich jetzt nicht immer aktuellste Version, sondern auf eine neuere. Als klassisches Beispiel nenne ich da immer, ich glaube MySQL oder der PHP Client, irgendeiner von den beiden Elementen hat irgendwann mal verboten, dass du in einem SQL Query Command zwei Statements abfeuern kannst. Das bedeutet SQL Injections, wo du ein Semikolon einführst und dann einfach ein zweites Statement hinterher feuerst, also where id gleich 5 Semi-Kolon-Drop-Table-Users, ist dann nicht mehr möglich, weil diese standardmäßig geblockt werden, weil gesagt wird, hey, du feuerst hier ein SQL-Statement, somit darfst du auch nur ein SQL-Statement abfeuern und kein gechaintes SQL-Statement, also kein angehangenes SQL-Statement.",
-            "start": 2875669,
-            "end": 2927515,
-            "confidence": 0.79184,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Ist in PHP bei den meisten Implementierungen so drin, ja.",
-            "start": 2927535,
-            "end": 2930880,
-            "confidence": 0.6365999999999999,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Bei PRP5 war das aber noch standardmäßig möglich. Ich weiß jetzt grad nicht, wie die anderen Sprachen das machen. Schaut mal in eure Clients nach. Aber einfach mal die aktuellsten Versionen nutzen. Wie wir zum Beispiel auch vorher besprochen haben, super viele Datenbanken haben den Zugriff auf lokale Files oder auf lokale Skripte standardmäßig deaktiviert in den neuesten Versionen. Auch wenn ihr eure Datenbank upgradet, checkt mal bitte die neuen Default Settings eurer Datenbank. Sowas hilft natürlich auch, dass manche super sinnvollen Funktionen oft standardmäßig deaktiviert werden und somit habt ihr natürlich dann schon eine gewisse Protection.",
-            "start": 2931260,
-            "end": 2968855,
-            "confidence": 0.8090206185567013,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Und das Updaten von Datenbanken ist ja meistens nicht sehr beliebt, weil das Updaten halt eine schwierige Sache ist von Datenbanken. Drum ist es ja auch ganz interessant, wenn man Datenbanken als Service heutzutage verwendet, weil dann unter Umständen die Updates auch mehr oder weniger automatisch passieren. Weil Datenbanken stellen natürlich eine zentrale Infrastruktur meistens dar, die soll nicht ausfallen, da will man keine downtime haben und dann sind Updates natürlich schwierig und das ist halt meistens der Teil in der Infrastruktur, der am letzten abgetätet wird. Und das ist halt eigentlich dann eher auch security-technisch kontraproduktiv. Man denkt sich, das ist eh ganz hinten tief in meinem Stack, da hat kein Hacker Zugriff. Aber über die SQL-Injections geht das natürlich sehr einfach. Und wenn man dann irgendeine MySQL-Datenbank hast, die einen 90ern mehr oder weniger findet als Hacker, dann ist das natürlich ein offenes Scheunentor.",
-            "start": 2968895,
-            "end": 3018008,
-            "confidence": 0.7984246575342466,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Der andere Geschichte ist, wie legt ihr euren Datenbank-User an? Beispiel. Ihr seid jetzt Systemadministrator, DevOps, SAE, System Engineer, jemand, der für Infrastruktur verantwortlich ist. Und vielleicht habt ihr bei euch in der Firma oder auch zu Hause Tooling, was ihr selbst hostet. Nehmen wir mal einen OwnCloud, nehmen wir mal einen Typo3, nehmen wir mal einen WordPress oder was weiß ich nicht. Mit welchem Datenbank-User operiert ihr da? Operiert ihr da mit dem Root-User oder habt ihr einen eigenen Datenbank-User angelegt und hat dieser Datenbank-User limitierte Privilegien? Meines Erachtens nach sollten alle Self-Hosted-Tools ihre Datenbank-Operationen dokumentieren, Das bedeutet, was wird wirklich von dem Tool auf der Datenbank ausgeführt. Nur Select, Insert, Update, Delete, also klassisch CRUD. Oder wirklich spezielle Funktionen. Oder wirklich Datenbank-User anlegen, Grant User, Grant Permission, bla bla bla. Wenn ihr nämlich die genauen Datenback-Operationen von eurem Salesforce-Tool kennt, könnt ihr natürlich auch den User entsprechend einschränken, was natürlich dann den Attack-Vektor deutlich minimiert.",
-            "start": 3018508,
-            "end": 3088025,
-            "confidence": 0.7908407643312102,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Auch da wieder ganz klassisch die Faulheit. Das ist so wie mit den Linux-Rechten, wo man dann einfach einen Pfeil auf 777 stellt. Kennt man ja. Irgendwas funktioniert nicht mit der Datenbank. Irgendwo wird ein komischer Fehler geschmissen. Man hat keine Ahnung, was da für eine Permission verantwortlich ist. Also grantet man einfach mal super Privileges in der Datenbank und dann hat der User Vollzugriff. im Production, und dann hast du einen User, der Vollzugriff hat auf alles.",
-            "start": 3088225,
-            "end": 3112792,
-            "confidence": 0.7779358974358977,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "In diesem Sektor kann man natürlich auch die Lese- und Schreibzugriffe trennen. Das haben wir bei Trivago sehr viel gemacht. Zum Beispiel, wenn du ein Datenbanksetup hast mit PostgreSQL oder MySQL, dann willst du in der Regel kein Master-Master, keine Master-Master-Replication. Sondern was du in der Regel hast, ist ein Write-Master und diverse Read-Replica. Und was du dann im Quellcode machen kannst, ist du kannst Schreibrechte oder deine Schreiboperationen von den Leseoperationen trennen, weil deine Schreiboperationen in der Regel auf den Write Primary gehen und deine Leseoperationen dann in die Breite geschaltet werden können auf sogenannte Read Replica. Und das ist natürlich dann auch eine ganz super Sache, weil du dann auch verschiedene User nutzen kannst. Du kannst sagen, alle Leseoperationen gehen nur auf die Read-Replika und die brauchen gar keine Insert, Update, Delete-Rechte, sondern die brauchen nur Select-Rechte. Dadurch kann man natürlich dann auch schon mal ein bisschen den Attack-Vektor limitieren.",
-            "start": 3112852,
-            "end": 3170414,
-            "confidence": 0.8129342105263156,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Man kann solche Sachen unter Umständen auch automatisieren, wenn man zum Beispiel ein SQL-Proxy davor hat, der kann dann dementsprechend auch die Queries umleiten und Read- und Write-Queries anders behandeln. Also auch da hat man mit Tools, die vorgeschaltet werden, auch Möglichkeiten einzugreifen.",
-            "start": 3170774,
-            "end": 3186401,
-            "confidence": 0.8384651162790698,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Wenn man jetzt gar keine Kontrolle über die Applikation oder die Datenbank hat, dann kann man auch noch zu sogenannten Web-Application-Firewalls zugreifen, wenn man jetzt in einem Web-Umfeld ist. Diese Web-Application-Firewalls werden zwischen dem Server und dem Client geschaltet, ähnlich wie so ein Proxy. Die schauen sich dann die Adresse an oder den Post-Body oder ähnliches, inspizieren das und sagen, Ah, das sieht mir aber so aus, als wäre das eine SQL-Injection. Basieren unter anderem auf regular expressions und so weiter und so fort. Bin ich kein Riesenfan davon, kann dem Angreifer aber die ganze Sache ein bisschen schwerer machen, weil dann diese klassische Drop-Table, or 1 gleich 1, also so klassische Fälle werden dann in den Standard-Rulesets von sogenannten Web-Application-Firewalls halt schon abgefangen und diese Requests werden dann komplett geblockt und kommen dann gar nicht bis auf eure Applikation drauf. Und als letztes gibt es natürlich ganz klassische Libraries. Ihr könnt natürlich Datenbank-Connection-Libraries, Object-Relational-Mappers, ORMs benutzen. Finde ich immer ein bisschen schwierig, weil das ist dann wieder die hundertprozentige Verantwortung des Entwicklers, der Entwicklerin, das dann wirklich richtig zu verwenden. Plus, wenn ihr keinen ordentlichen Code-Review von der Library macht, ihr müsst dann natürlich der Library entsprechend vertrauen. Was aber ein nachgelagertes Problem ist, weil in der Regel die großen Libraries all solche Funktionalitäten natürlich abdecken.",
-            "start": 3186681,
-            "end": 3273578,
-            "confidence": 0.8225391705069125,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Das größere Problem bei den ORMs ist eigentlich, dass die Leute sich eher darauf verlassen, dass der ORM-Layer alles für sie weg abstrahiert und sich um die Sicherheit kümmert. Und meistens ist es aber nicht so. Du musst dann trotzdem noch escapen, du musst trotzdem noch genau checken, was verwendest du im Hintergrund, sind da prepared statements oder nicht. Also diese ganzen Dinge musst du selbst checken und die sind auch ganz wichtig, dass du die checkst. Und im Zweifelsfall sollte man davon ausgehen, dass der ORM-Lehrer nicht intelligent ist und nichts verhindert, auch damit du die Flexibilität als User hast, als Developer. Und daher ist das ganze Escaping, die Verantwortung eher auf deiner Seite anzusiedeln. Also nicht zu sehr diesen Tools vertrauen, weil meistens sind die flexibel und machen daher weniger automatisch. Obwohl man sich das vielleicht erwarten würde.",
-            "start": 3273598,
-            "end": 3325317,
-            "confidence": 0.8411642857142856,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Bei SQL Injections gilt jedoch, Prepared Statements ist die Nummer 1 Mitigation, die ihr anwenden könnt.",
-            "start": 3325826,
-            "end": 3333170,
-            "confidence": 0.7580625000000002,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Wobei da zum Beispiel bei ORMs habe ich dann schon wieder das Problem, wie kann ich denn Prepared Statements bei ORMs verwenden, weil da habe ich keinen direkten Zugriff auf meine SQL Statements. Also auch da wieder muss ich dem ORM Layer vertrauen oder das wirklich checken, was passiert da im Hintergrund und ist da auch wirklich alles sauber implementiert. Was aber wie du sagst bei den großen, hoffe ich mal schon der Fall ist.",
-            "start": 3333210,
-            "end": 3353902,
-            "confidence": 0.7931866666666665,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Das sind eigentlich so die vier, viereinhalb, fünf Maßnahmen. Prepared Statements, aktuelle Visionen nutzen, limitierte Privilegien von euren Users, Web Application Firewalls und dann die entsprechende richtige Nutzung von euren Libraries. Ich bin persönlich eher ein Fan von dem klassischen Datenbank Client. und schreibt dann meine SQL-Statement selbst, weil nur dann kann man wirklich die Einzelheiten deiner MySQL oder Postgre oder ähnliches richtig nutzen, was bei ORMs, speziell bei generierten Statements, oft schwierig ist. Aber da möchte ich keine was vorschreiben, denn auch diese ORMs haben in diversen Fällen ja auch eine Daseinsberechtigung, sonst würden sie, glaube ich, nicht so populär sein.",
-            "start": 3354136,
-            "end": 3391520,
-            "confidence": 0.7935882352941176,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Naja, dieser Mythos vom schnellen Datenbank wechseln, das ist ja auch mehr so ein Mythos und wie oft passiert das in der Realität wirklich? Also ich bin auch kein ORM-Fan, aber da haben wir eh schon in der einen oder anderen Episode schon mal drüber gesprochen. Jetzt Andi, was Was mache ich denn, wenn ich jetzt eine Applikation habe und diese überprüfen will? Was gibt es für Möglichkeiten, jetzt abgesehen davon, dass ich checke, okay, was mache ich in der Applikation? Was gibt es für Testing-Möglichkeiten, um mal zu checken, ob meine Anwendung überhaupt sicher ist?",
-            "start": 3392050,
-            "end": 3423506,
-            "confidence": 0.7753333333333337,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Das ist in der Tat jetzt gar nicht so einfach. Natürlich könnt ihr Unit Tests schreiben und ihr könnt gucken, auch wenn ihr Müll in euer Datenbank Query schreibt, wie euer Code damit umgeht. Sowas könnt ihr machen. Das ist aber dann der klassische Anwendungsfall von Unit Tests, Integration Tests und so weiter und so fort. Das überlasse ich einfach mal bei euch. Die erweiterten Techniken sind eher statische Analyse und dynamisches Testing. Bei der statischen Analyse geht es zum Beispiel um ganz klassisches Static Analysis. Das bedeutet, man baut einen Abstract Syntax Tree auf und untersucht die Applikation in einem nicht ausgeführten Zustand. Da gibt es diverse Static Analysis Tools. Wir verlinken euch auch eine Liste, die nennt sich Awesome Static Analysis. Grüße an den Matthias hier. Da habt ihr zu jeder Sprache mindestens fünf Tools, die statische Analysen auf euren Code fahren können. Das Problem ist bei statischen Analysen, für SQL-Injections, dass das Analyse-Modell natürlich auf die Sprache und sogar gegebenenfalls auf die Library angepasst werden muss. Also auf euren Datenbank-Client oder ähnliches. GitHub CodeQL ist da ganz groß zum Beispiel. Dort könnt ihr zum Beispiel eigene Modelle auch schreiben und die liefern eine ganze Menge schon mit. Verlinken wir euch auch in den Shownotes. Sowas könnt ihr Anwenden ist aber in der Regel nicht einfach ein Fünf-Minuten-Ding, sondern also nicht einfach, ihr schmeißt ein Tool da rein und fertig. Ihr müsst da in der Regel schon mal ein bisschen tiefer gucken, okay, wird denn alles, was ihr da nutzt, wirklich unterstützt? Weil das ist schon sehr, sehr spezifisch. Der Vorteil ist, eure Applikation muss nicht ausgeführt werden, sondern es ist im reinen Quellcode-Zustand analysierbar. Im Bereich dynamischen Testing, da wird es jetzt spannend, meines Erachtens nach. Dynamisches Testing bedeutet eigentlich, ihr habt eure Applikationen irgendwo laufen und schmeißt ein Tool drauf und dieses Tool macht halt, ich sag mal, gewisse Scan-Methodiken. Mein Lieblingstool dafür ist SQL Map. SQL Map ist ein Open-Source-Tool, was in Python geschrieben wurde, was eine ganze Menge Datenbanken unterstützt, wie zum Beispiel MySQL, MSQL, Oracle, Postgre, aber auch sowas wie Amazon Redshift, CockroachDB oder Apache Ignite. SQL Map schmeißt man zum Beispiel einfach eine URL hin mit Parametern, id gleich 5 und Filter gleich Username und so weiter und der untersucht automatisch diese Parameter, nimmt sich die Werte, ersetzt diese und schaut sich verschiedene SQL-Injection-Methoden an. Boolean-Based, Blind, Time-Based, Blind, Error-Based, Union-Based, Query-Based, Stack-Based und Out-of-Band. Also alles das, was wir hier besprochen haben. Du kannst ihm aber auch noch sagen, hey, ich weiß, was das für eine Datenbank ist, deswegen fokussier dich nur auf MySQL. Hey, ich weiß, dass dieser Parameter womöglich eine Lücke hat.",
-            "start": 3423526,
-            "end": 3592671,
-            "confidence": 0.8113047404063201,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Kann ich das auf dem Produktivsystem machen oder zerschießt mir das dann alles?",
-            "start": 3593051,
-            "end": 3597338,
-            "confidence": 0.7416153846153848,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Du kannst das auch auf dem Produktivsystem machen. Ich würde es halt erstmal nicht auf dem Produktivsystem machen, es sei denn, du hast natürlich keine User oder ähnliches. Deswegen mach es auf eurem Staging-System. Du kannst auch sagen, was dann gemacht werden soll, ob Daten verändert werden sollen oder nicht. Und das tolle ist, mit SQL-Map kann man wirklich mal rumspielen, denn durch diese Boolean-Base-Blind-SQL-Injection kannst du SQL-Maps haben, sagen, dumpe mir bitte die komplette Datenbank. Und der macht das dann automatisch. Sehr tolles Tool. Bitte nutzt das nicht zum Hacken bei eurer lokalen Pizzeria, die von Webentwicklung keine Ahnung haben, sondern bitte nur bei euch in einer Umgebung, die ihr selbst kontrolliert, weil auch das ist strafbar, wenn ihr das auf anderen Systemen macht. Aber SQL Map ist meines Erachtens nach ein super Tool, um dynamisches Testing für SQL Injections zu betreiben. Die Limits hier sind natürlich, dass es da um Blackbox-Testing geht. Blackbox-Testing bedeutet, man schaut sich nicht die Logik an, die in der Applikation ausgeführt wird, sondern man schaut wirklich nur von außen drauf und betrachtet das als eine große schwarze Box, was dann natürlich dazu führt, dass tiefe Analysen fehlen, dass sowas wie Second-Order-SQL-Injections, wie wir das vorhin mit dem Backend-System hatten, deutlich schwieriger sind oder vielleicht sogar gar nicht möglich. Und die dritte Art der erweiterten Testtechniken, die kommt jetzt immer mehr und mehr und zwar geht es da ums Fuzzing. Da verlinken wir euch auch mal ein Research Paper, wo sich ein Team hingesetzt hat und hat einen SQL Injection Fuzzer geschrieben, der auf Basis von Machine Learning dann noch lernt und dann die Attacken deutlich intelligenter macht. Was ist Fuzzing? Fuzzing ist eigentlich, man definiert den Methodenkopf und definiert die Inputparameter und in die Inputparameter wird einfach kompletter, müllgenerierter Content reingeschmissen. Das führt im Sicherheitsbereich sehr oft dazu, dass man Out-of-Range-Errors hat, Memory-Zugriffe, die nicht da sein sollten oder, oder, oder, weil dort einfach Content reingeschmissen wird, den man so nicht erwartet und das zu ziemlich vielen Sicherheitslücken führt, beziehungsweise zum Aufdecken dieser Sicherheitslücken. Google ist da unglaublich groß im Fuzzing und meines Erachtens nach wird in den nächsten Jahren Fuzzing immer, immer, immer wichtiger und ich hoffe auch irgendwann, dass das mal im ganz klassischen Produktalltag neben Unit- oder Integration-Tests einen Platz findet. Neben SQL-Map gibt es natürlich auch noch andere Tools. Da gibt es zum Beispiel vom OWASP-Projekt, was wir schon erwähnt haben, den ZAP-Proxy, den nun genannten Z-Attack-Proxy. Das ist generell ein Web-App-Scanner. Der scannt nicht nur auf SQL-Injections, sondern auch auf andere klassische Sicherheitslöcher, Cross-Site-Scripting und Co. Auch ein sehr nettes Ding, covert aber natürlich SQL Injections nicht so im Detail wie SQL Map, deswegen nur als Zusatztool am Rande erwähnt.",
-            "start": 3597498,
-            "end": 3778885,
-            "confidence": 0.8234955752212385,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Jetzt meine Überlegung, gerade wenn ich irgendwelche Services verwende, dann will ich ja das Ganze auslagern, damit ich eben selber keinen Aufwand mehr habe, für was es dann auch immer für Service ist, für die Datenbank oder auch ein komplexeres Service zur Verwaltung von XY, von meinen Personaldaten, keine Ahnung, was es auch immer sein soll. Und eigentlich erwarte mir, dass die Leute dann auch diese ganzen Security-Checks machen. Aber was ich eigentlich vermisse auf den ganzen Webseiten, ist, dass die mir erklären, was die denn machen für ihre Sicherheit. Also die verkaufen mir da ein extrem teures Tool zur Verwaltung von meinen Personaldaten, von meiner Buchhaltung oder auch nur ein Service, Datenbank-Service und die behaupten, es ist super sicher und toll, aber ich kenne eigentlich wenig Services oder gar keine Services, die irgendwie schreiben, was machen sie denn im Detail, um diese Sicherheit zu gewährleisten. Werden solche Penetration-Tests gemacht? Werden solche Testangriffe gemacht? Wie schaut denn das ganze Security-Konzept eigentlich aus bei diesen Services? Kennst du da irgendwas als gutes Vorbild sozusagen, was man sich anschauen könnte? Oder hast du es überhaupt schon mal gesehen?",
-            "start": 3779245,
-            "end": 3844540,
-            "confidence": 0.8089946236559139,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Ja. Die Grundlage sind Zertifizierungen. Beispiel. Klassische ISO-Zertifizierungen oder Zertifizierungen, die für Standards wie PCI DSS und so weiter notwendig sind. PCI DSS ist unter anderem für das Speichern und Verwalten und Managen von Kreditkartendaten notwendig.",
-            "start": 3844580,
-            "end": 3861497,
-            "confidence": 0.8801388888888888,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Ja, aber das hast du jetzt bei den meisten Services nicht so einen hohen Standard, beziehungsweise auch wenn da jetzt irgendein ISO-Standard drinsteht, die wir prüfen, ob du so grundsätzliche Dinge checkst, aber was da im Detail passiert, sieht man eigentlich, also ich kenne kein Beispiel, wo man irgendwie im Detail sieht, wie sieht denn jetzt ein sinnvolles Security-Konzept von diesem Service aus? Und man zahlt ja doch sehr viel für diese Services.",
-            "start": 3862197,
-            "end": 3884693,
-            "confidence": 0.7504520547945203,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Also je nach Zertifizierung und je nach Auditor werden jährliche Berichte erstellt, wo genau so was gecheckt wird. Sind die User wirklich limitiert in den Privilegien und so weiter und so fort? Also ich will nicht sagen, dass da immer alles perfekt ist, aber ich will sagen, dass diverse Zertifizierungen und so strenger der Auditor ist, der in der Regel auch öffentlich zugänglich ist, also man weiß, welche Firma von welchem Auditor gecheckt wird. Dort wird schon genau sowas abgeprüft. Welche Client-Version und ob die überall Prepared Statements und so weiter anwenden? Ne, sowas habe ich jetzt noch nicht gesehen.",
-            "start": 3884713,
-            "end": 3920675,
-            "confidence": 0.8471499999999998,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Also ich glaube, das wäre eigentlich eine gute Möglichkeit, auch um sich abzuheben. Wenn Service ist, ist wirklich proaktiv, wenn die proaktiv nach außen gehen und das auch dementsprechend bewerben, was sie wirklich im Hintergrund machen. Weil man geht immer davon aus, dass diese Services natürlich besser sind, als wenn man das selber machen würde. Und das stimmt wahrscheinlich in den meisten Fällen, weil da halt einfach üblicherweise mehr Leute an nur dem einen Service arbeiten, als wenn man das selber machen würde. Aber im Endeffekt fände ich es trotzdem eigentlich gut, wenn man mehr Informationen darüber bekommen würde, wie die mit solchen Dingen umgehen und das eben auch sehr, sehr offen kommunizieren. Würde mir persönlich zumindest Sicherheit geben und auch wenn es dann um die Auswahl von Services geht, fände ich das natürlich wesentlich besser, als wenn man da nur irgendwelche Marketing-Pages sieht, wo dann irgendwie steht, ja, wir sind ja eh zertifiziert und wir machen alles für die Sicherheit, period.",
-            "start": 3921276,
-            "end": 3972710,
-            "confidence": 0.8303395061728392,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Ja gut, da ist die Frage, wie groß ist die Zielgruppe für diese Information, weil die Erhebung dieser Information ist halt, glaube ich, für das Marketing-Team auch schon nicht einfach. Ja, natürlich kann man... Naja, wenn du.",
-            "start": 3973111,
-            "end": 3982435,
-            "confidence": 0.710810810810811,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Ein Service für Developer machst, wie eine Datenbank, finde ich das eigentlich schon sehr relevant. Und wenn ich jetzt auf Planet Scale zum Beispiel gehe, Ich finde da jetzt keine Details zu irgendwas diesbezüglich. Das ist ein großer Anbieter, dem ich jetzt vertrauen würde, aber ich sehe trotzdem nichts auf der Webseite jetzt mal so direkt.",
-            "start": 3982455,
-            "end": 4000710,
-            "confidence": 0.7410714285714286,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Schreibt ihnen doch einfach mal eine E-Mail und fragt dann mal nach.",
-            "start": 4000730,
-            "end": 4003373,
-            "confidence": 0.6139166666666666,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Ich würde ihnen ja gerne unsere Episode senden, aber das ist wieder deutsch, das ist schwieriger.",
-            "start": 4003393,
-            "end": 4008359,
-            "confidence": 0.6379374999999999,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Die haben bestimmt auch deutsche Mitarbeiter.",
-            "start": 4008379,
-            "end": 4009600,
-            "confidence": 0.6565,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Also falls uns jemand zuhört von Planet Scale, vielleicht könnt ihr das mal weitergeben. Und wie ihr schon vielleicht gemerkt habt, wir sind schon weit über der Zeit unserer normalen Episodenzeit. Zeigt vielleicht auch, wie wichtig dieses Thema ist oder wie umfangreich dieses Thema ist vor allem. Ich wiederhole jetzt nicht nochmal alles, was wir behandelt haben. Schaut in die Shownotes, ihr findet viele, viele Links da drin. Auch den Link zur OWASP-Liste, wo man sehen kann, dass SQL-Injections wieder steigen, kritischer sind in dem ganzen Bereich. Also prüft mal, wie es bei euch in eurer Software aussieht, ob es irgendwo Schwachstellen gibt, ob prepared statements verwendet werden. Und falls wir was vergessen haben, lasst uns das natürlich auch bitte gern wissen. Oder vielleicht irgendwelche Tools, die noch hilfreich sind. Schreibt uns auf Twitter unter engkiosk oder auch direkt E-Mail stetisch at engineeringkiosk.dev.",
-            "start": 4009840,
-            "end": 4060241,
-            "confidence": 0.8046013986013985,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Und natürlich haben wir auch eine Mobilfunknummer, über die ihr uns natürlich kontaktieren könnt. Entweder in geschriebener Form oder, wo wir uns wirklich, wirklich, wirklich drüber freuen würden, nach so einem schönen Audio-Render.",
-            "start": 4060281,
-            "end": 4072351,
-            "confidence": 0.808060606060606,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Ihr dürft auch was Nettes uns schicken in der Voice Message. Muss kein Rant sein. Also Rant an Andi. Wenn es um Andis Sachen geht, mir könnt ihr gern irgendwelche netten Dinge schicken.",
-            "start": 4072731,
-            "end": 4082095,
-            "confidence": 0.6789999999999999,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Telefonnummer findet ihr auf unserer Webseite engineeringkiosk.dev oder in den Shownotes. Wir würden uns auf jeden Fall freuen...",
-            "start": 4082135,
-            "end": 4087237,
-            "confidence": 0.7465555555555556,
-            "channel": null,
-            "speaker": "A"
-        },
-        {
-            "text": "Moment, auf unserer Webseite haben wir keine Telefonnummer veröffentlicht. Vielleicht sollten wir das mal machen. Ich glaube aktuell ist es nur in den Shownotes. Aber vielleicht machen wir es auf der Webseite auch noch, damit wir noch mehr Spam bekommen oder Anrufe auf unsere Telefonnummer.",
-            "start": 4087257,
-            "end": 4098902,
-            "confidence": 0.7651777777777776,
-            "channel": null,
-            "speaker": "B"
-        },
-        {
-            "text": "Wir würden uns auf jeden Fall freuen über eine Nachricht von euch. Das war's von uns diese Woche. Checkt mal eure Applikationen auf Basis von SQL-Injections oder spielt mit SQL-Map rum. Wir wünschen euch viel Spaß dabei. Bis bald! Ciao!",
-            "start": 4098942,
-            "end": 4110850,
-            "confidence": 0.6904250000000001,
-            "channel": null,
-            "speaker": "A"
-        }
-    ],
-    "confidence": 0.8011032808988788,
-    "audio_duration": 4117.0,
-    "webhook_status_code": null,
-    "webhook_auth": false,
-    "summary": null,
-    "auto_highlights_result": null,
-    "content_safety_labels": null,
-    "chapters": null,
-    "sentiment_analysis_results": null,
-    "entities": null
+  "language_code": "de",
+  "audio_url": "https://audio1.redcircle.com/episodes/51d3390e-ffce-4ec6-a6d9-350dc0cd163b/stream.mp3",
+  "punctuate": true,
+  "format_text": true,
+  "dual_channel": false,
+  "webhook_url": null,
+  "webhook_auth_header_name": null,
+  "webhook_auth_header_value": null,
+  "audio_start_from": null,
+  "audio_end_at": null,
+  "word_boost": [],
+  "boost_param": null,
+  "filter_profanity": false,
+  "redact_pii": false,
+  "redact_pii_audio": false,
+  "redact_pii_policies": null,
+  "redact_pii_sub": null,
+  "speaker_labels": true,
+  "speakers_expected": 2,
+  "content_safety": false,
+  "content_safety_confidence": null,
+  "iab_categories": false,
+  "custom_spelling": null,
+  "disfluencies": false,
+  "sentiment_analysis": false,
+  "auto_chapters": false,
+  "entity_detection": false,
+  "summarization": false,
+  "summary_model": null,
+  "summary_type": null,
+  "auto_highlights": false,
+  "language_detection": false,
+  "speech_threshold": null,
+  "id": "62xc7837zy-373b-437f-a6f6-0d33f87a97f4",
+  "status": "completed",
+  "error": null,
+  "utterances": [
+    {
+      "text": "Willkommen zu einer neuen Episode vom Engineering Kiosk. Wer von euch hat schon einmal von der Sicherheitslücke SQL Injection gehört? Wahrscheinlich ein Großteil von euch, denn dies ist doch ein alter Hut im Bereich Web Security, oder? Auch im Jahr 2022 ist dies immer noch einer der Top Sicherheitslücken, die das Internet in Atem hält. In dieser Episode schauen wir uns an, wie SQL Injections eigentlich entdeckt wurden, was der Unterschied zwischen einer Blind SQL Injection, einer Time-Based oder einer Out-of-Band SQL Injection ist und ob Fuzzing Testing die Lösung all unserer Probleme ist. Viel Spaß!",
+      "start": 3313,
+      "end": 38533,
+      "confidence": 0.8391458333333333,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "So Andi, du hast mich heute mal wieder mitten in der Nacht aus dem Bett geholt für eine Podcastaufnahme und dann noch dazu für ein Thema, das eh schon lange eigentlich erledigt ist, und zwar SQL Injections. Das ist doch schon längst abgefrühstückt, oder? Wenn ich daran denke, ich bin Entwickler, verwende da eh irgendeine Abstraktion, warum muss ich mich denn überhaupt um SQL Statements und SQL Injections kümmern? Ist doch alles geregelt, die sind irgendwie aus den 90ern, oder?",
+      "start": 42456,
+      "end": 71590,
+      "confidence": 0.7648999999999997,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Du hast sogar recht, die sind aus den 90ern. Und ja, ich wünschte, ich könnte dir zustimmen, dass das ein Thema wäre. Und ich wünschte, wir müssten diese Podcast-Episode gar nicht erst aufnehmen, weil dieses Thema dann schon so ein alter Hut ist, ähnlich wie Bitcoins und NFTs.",
+      "start": 71930,
+      "end": 86497,
+      "confidence": 0.7480416666666665,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Aber leider ist ... Moment, Bitcoins und NFTs sind ein alter Hut? In welcher Hipsterwelt lebst du? Jetzt warst du kurz in Berlin, oder? Ein paar Tage, und jetzt sind NFTs schon wieder oldschool?",
+      "start": 86557,
+      "end": 96602,
+      "confidence": 0.681235294117647,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Ja, ich bin wirklich beeindruckt von der kulturellen Vielfalt, die Berlin einfach bietet, weil ich komm in die Stadt und wirklich schon vom Weg vom Hauptbahnhof zum Hotel läufst du an etlichen Plakaten vorbei und ich hab wirklich das Gefühl, in Berlin macht wirklich jeder irgendwas nebenbei. Sei es Kunst, sei es Hacking, sei es was weiß ich nicht. Wirklich, jeder hat irgendwas am Start. Ich hab das Gefühl, in der Stadt geht einfach so dermaßen viel ab. Vielleicht ist das auch einfach nur der harte Konkurs zwischen Duisburg und Berlin. Kann natürlich auch sein.",
+      "start": 97602,
+      "end": 132924,
+      "confidence": 0.8472421052631577,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Ja, zu Duisburg hat man gleich mal einen Kontrast. Es ist nicht so schwierig.",
+      "start": 133584,
+      "end": 137025,
+      "confidence": 0.7116428571428571,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Aber zum Thema SQL-Injections, vielleicht ist es das auch genau so, weil in Berlin so viel abgeht, will natürlich jeder dann da in die Szene rein und so weiter. Ich hab jetzt auch nicht geguckt, wie viel zum Beispiel Coding-Bootcamps es in Berlin gibt. Und ich weiß auch nicht, wie viel dir über Web-Security in solchen Coding-Bootcamps denn wirklich gelehrt wird. Und deswegen denke ich, auch wenn SQL Injections aus den 90ern ist, dass das Thema immer noch und sehr, sehr lange begleiten wird.",
+      "start": 137085,
+      "end": 169265,
+      "confidence": 0.8581190476190477,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Aber warum? Ich verwende eh so irgendeine Abstraktionsschicht. Warum ist das überhaupt ein Thema für mich?",
+      "start": 169765,
+      "end": 175048,
+      "confidence": 0.54325,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Prinzipiell würde ich sagen, it depends. Das ist der Einstieg für jeden IT-Consultant. It depends, was du für eine Abstraktionsschicht verwendest. Aber nur, weil du eine Abstraktionsschicht verwendest, heißt das nicht, dass die nicht auch Lücken hat. Du hast ein Layer über ein Layer und unten drunter kann alles kaputt sein. Aber im Ernst, für alle Hörer und Hörerinnen, die uns jetzt zuhören und sagen, Boah, zieh ich mir jetzt wirklich ne Stunde über SQL Injections rein, das Thema kenn ich doch schon, das hab ich in der Uni, in der Ausbildung und ja, wir wissen doch alle, dass wir unsere Input-Parameter, Input-Parameter sanitizen sollen und blabliblub. Gibt uns ne Chance. Ich denke, wir haben in der Vorbereitung ein paar gute Themen und ein paar gute Subthemen und Details zum Thema SQL Injections rausgesucht.",
+      "start": 175068,
+      "end": 220845,
+      "confidence": 0.7336343283582085,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Ich glaube überhaupt, dass diese Vorbereitung noch nie so lang war bei uns. Ich habe noch nie ein Vorbereitungsdokument über dreieinhalb Seiten oder so bei uns gesehen.",
+      "start": 221403,
+      "end": 229188,
+      "confidence": 0.8584814814814813,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Ich habe noch nie ein Vorbereitungsdokument von dir gesehen.",
+      "start": 229208,
+      "end": 232170,
+      "confidence": 0.7855555555555556,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Ja, das ist, weil du die interessanten Themen nie machen willst, die schon in der Kiste liegen, gut vorbereitet.",
+      "start": 232517,
+      "end": 239119,
+      "confidence": 0.7748421052631578,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Gestern Abend kam die Frage von Wolfgang, Andi, was nehmen wir eigentlich morgen für ein Thema auf? Und da habe ich gedacht, okay, ich schaue mal rum. Und dann habe ich angefangen, mich vorzubereiten. Und da bin ich in das Thema rein und da bin ich in das Thema rein. Da bin ich so ein Rabbit Hole runtergegangen. Und dann habe ich sogar neue Sachen gelernt zur Vorbereitung, die ich selbst über SQL Injections noch nicht wusste.",
+      "start": 239139,
+      "end": 259084,
+      "confidence": 0.7557012987012983,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Was heißt sogar? Glaubst du, dass du jetzt der Allwissende bist im Security-Bereich?",
+      "start": 259588,
+      "end": 264430,
+      "confidence": 0.5483076923076923,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Um Gottes Willen nicht, aber auch ich hatte falsche Vermutungen. Ich habe gedacht, ich wüsste eigentlich eine ganze Menge über SQL Injections und dass das Thema enorm langweilig ist. Aber ich habe mir selbst bewiesen, dass es nicht so war, indem ich einfach mal Google angeschmissen habe.",
+      "start": 264470,
+      "end": 280916,
+      "confidence": 0.871595744680851,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Du hast mich sogar dazu getriggert, dass ich gestern noch mitten in der Nacht Sachen gegoogelt habe und probiert habe, rauszufinden, wie die technisch umgesetzt sind. Hast du also geschafft, sogar mich da anzutriggern bei diesem Topic.",
+      "start": 280956,
+      "end": 291980,
+      "confidence": 0.8127027027027027,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Und das zu einem Thema für jemanden, der einen Doktortitel im Thema Datenbanken hat, das ist faszinierend.",
+      "start": 292020,
+      "end": 299422,
+      "confidence": 0.8173529411764706,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Ja, weil es ist ja ein Security-Thema, kein Datenbank-Thema eigentlich. Nur weil SQL vorne dran steht, ist es ja trotzdem immer noch ein Security-Thema.",
+      "start": 299742,
+      "end": 307104,
+      "confidence": 0.7282916666666668,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Aber fangen wir mal ganz vorne an. Thema der heutigen Episode dreht sich alles um Security, um eine spezielle Art und Weise einer Sicherheitslücke, und zwar um die Sicherheitslücke SQL-Injections. SQL-Injections finden sich nicht nur im Webbereich, sondern eigentlich überall, wo man irgendeine Art von Datenbanken verwendet. Primär SQL-basierte Datenbanken, aber auch zum Teil für sogenannte NoSQL-Datenbanken relevant.",
+      "start": 307688,
+      "end": 338399,
+      "confidence": 0.8950517241379311,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Hast du mal ein Beispiel, was da passiert ist oder ein Beispiel, anhand man das gut verstehen kann, wie sowas funktioniert?",
+      "start": 338419,
+      "end": 345921,
+      "confidence": 0.720095238095238,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Okay, nehmen wir mal ein klassisches Beispiel. Ihr seid auf einer Webseite und ihr habt die Adresse engineeringkiosk.com.",
+      "start": 346101,
+      "end": 352664,
+      "confidence": 0.6896666666666665,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": ".Dev ist übrigens unsere Adresse. Nach so vielen Folgen muss ich dir.",
+      "start": 352704,
+      "end": 357926,
+      "confidence": 0.6498333333333334,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Jetzt erklären, wie unsere Domain... engineeringkiosk.dev slash page?id gleich 5. Das bedeutet eigentlich hintendran, hallo lieber Webserver, gib mir mal bitte die Seite mit der ID 5. Und in der Datenbank haben wir dann eine Tabelle, die hat dann ein ID-Feld und ein HTML-Feld. In dem HTML-Feld steht dann irgendwas drin, was wir ausgeben wollen. Jetzt ist es so, dass der Parameter 5 im Quellcode an die Datenbank weitergereicht wird. Und was passiert, wenn du den Parameter änderst? Du machst aus der 5 eine 6. Dann kriegst du auf einmal den Content der Seite 6. Das ist jetzt erstmal nichts schlimmes, weil das kann so gewollt sein. Was passiert denn, zum Beispiel, wenn du jetzt einfach mal die Zahlen durchrätst und dort eine 10 oder eine 15 reinmachst und dann kriegst du den Content der Seite 10 oder 15 und das ist gegebenenfalls Content, den du gar nicht sehen darfst. Das bedeutet, du spielst ein bisschen mit den Parametern rum. Was passiert denn jetzt, wenn du aus der Zahl einfach mal was ganz anderes machst, was Unerwartetes? Ein klassisches Beispiel ist 5SemiKolonDropTablePages. Das würde bedeuten, wenn wir einen Programmierfehler haben, der den Parameter id, also die Zahl 5, nicht als Integer, als Ganzzahl verwendet, sondern einfach nur als Zeichenkette durchreicht, würde das bedeuten, da steht dann select html from pages where id gleich 5 semicolon drop table pages. Somit habt ihr aus einer Zahl 5 eine komplette Zeichenkette gemacht und habt euren eigenen SQL-Befehl mit eingeschleust, der dann eins zu eins an die Datenbank weitergereicht wird. Jetzt habe ich das mit drop table gemacht, das wird dann die komplette Tabelle pages löschen, was jetzt für unsere Webseite relativ doof wäre. Und drop tables ist glaube ich so das offensichtlichste Beispiel, Wo wir dann auch merken, da ist irgendwas krumm, aber was ist denn, wenn ihr z.B. einfach nur id gleich 5 oder 1 gleich 1. Das bedeutet, ihr würdet dann z.B. irgendeine Seite kriegen. Oder ihr schleust einfach andere Befehle ein, indem ihr z.B. die komplette Datenbank ausspäht, weil ihr könnt ja auch select statements nacheinander chainen mit union statements usw. Punkt ist ganz einfach, ihr nehmt einen Parameter, der Teil einer Datenbankabfrage ist, der nicht ordentlich gesäubert wird und den verändert ihr zu euren Kunsten. Die SQL-Injection selbst, das was ich gerade beschrieben habe, ist eine Sicherheitslücke in der Regel im Zusammenhang mit SQL-Datenbanken und basiert auf einem Programmierfehler in einem Programm, das auf die Datenbank zugreift. Ein Angreifer, also ihr in diesem Fall, kann Datenbankbefehle einschleusen und abhängig vom Einzelfall weitere Daten aus der Datenbank auslesen, Daten unberechtigt ändern oder löschen oder sogar die Kontrolle über den kompletten Datenbankserver erlangen.",
+      "start": 357946,
+      "end": 536516,
+      "confidence": 0.8204819004524879,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Was du jetzt erklärt hast, wissen wahrscheinlich oder hoffentlich alle, die irgendwie mit SQL-Datenbanken arbeiten oder Datenbanken ansprechen über ihre Software. Hoffentlich. Wenn nicht, solltet ihr unbedingt da mal tiefer reingehen, weil das wirklich ein Standardproblem ist. Aber das wissen ja schon alle. Oder ist das überhaupt noch ein Problem?",
+      "start": 537837,
+      "end": 557774,
+      "confidence": 0.8168799999999998,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Warum ist das wirklich ein Problem? Für Leute, die sich damit auskennen, denken sie sich, boah, Andi Wolfgang, ernsthaft jetzt? Hab ich damals schon vor zehn Jahren gemacht. Alles richtig, ich bin safe. Ja, das ist richtig. Der Punkt ist aber noch, SQL Injections ist wirklich immer noch einer der Top-Sicherheitslücken im Internet. Und sie ist wirklich immer noch verantwortlich Tausende von sogenannten Data Breaches, wo Leute halt wirklich Daten klauen können. Aktuell ist sie auf Rang 3 von 10 beim Open Web Application Security Project. Das OWASP für kurz ist Ein Non-Profit-Projekt, was alle drei Jahre ein Top-Ranking der Web-Vulnerabilities rausbringt. Und 2021 war das immer noch auf Platz drei. 2018 oder 2017 war das auf Rang eins. Also es ist weniger geworden. Aber allein in 2022 gab es 1162 Sicherheitslücken, die erkannt und gemeldet wurden an diese offizielle CVE-Datenbank zum Thema SQL Injections. Und da denkt man sich, what the fuck, wir leben im Jahr 2022. 1.100 Sicherheitslücken im Bereich SQL-Injections.",
+      "start": 557794,
+      "end": 634117,
+      "confidence": 0.8044355828220858,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Was ist diese CVE-Datenbank? Zur Erklärung.",
+      "start": 635217,
+      "end": 638239,
+      "confidence": 0.5391666666666667,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Die CVE-Datenbank ist einer von vielen, aber sie wird oft als die offizielle genannt, die alle Sicherheitslücken listet und auch Informationen bereitstellt, welche Version betroffen ist und welche Version den Fix bereits schon hat. Beispiel, dort findet ihr auch Heartbleed, Log4Shell oder ähnliches. Das bedeutet cvedetails.com ist eigentlich die Webseite, wo alle offiziellen Security-Researcher ihre Lücken melden und wo die Details dann auch gelistet werden.",
+      "start": 638279,
+      "end": 668900,
+      "confidence": 0.826569230769231,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Jetzt wenn wir schon im Jahr 2022 angekommen sind und das immer noch ein Problem ist, um das auch sauber abzuschließen, wir sind ja ein educational podcast, wann gab es denn die erste SQL-Injection historisch gesehen? Also wenn wir von seit 2022, wo wir jetzt sind, wie lange kämpfen wir denn schon mit diesem Problem?",
+      "start": 669168,
+      "end": 687625,
+      "confidence": 0.8233090909090909,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Und das ist ein Fakt, den ich bei der Vorbereitung rausgefunden habe. Super. Woher kommt eigentlich die SQL Injection? Total random Story. Und zwar folgendermaßen. Die SQL Injection selbst gibt es schon seit 24 Jahren. What the fuck? 24 Jahre? Ist das Internet denn schon so alt? Ja, ist es. Und zwar folgendermaßen. Im Dezember 1998 gab es einen Artikel im sogenannten Hacker-Magazin WRAC. Das gibt's nicht mehr, aber alle Auflagen gibt's noch online. Und zwar hat damals Jeff Forrestal eigentlich versucht, einen Windows-NT-Server zu hacken. Und der hat dann da in dem ganzen Artikel beschrieben, wie er es gemacht hat, was er gemacht hat. Ist natürlich ziemlich viel mit Internet-Information-Server da rum, Vorwerk und so weiter und so fort. Und auf seinem Windows-NT-Server gab's auch einen MS-SQL-Server. Und in diesem Artikel, den verlinken wir auch gerne in den Shownotes, ist ein sehr langes TXT-Dokument, aber sehr, sehr, sehr schön zu lesen, hat er ... herausgefunden, hey, ich kann ja SQL-Abfragen verändern. Das bedeutet, SQL-Injections, also die Research und die Entdeckung, war eigentlich nur ein Nebeneffekt von seinem Versuch, einen Windows-NT-Server zu hacken. In diesem Artikel beschreibt er ganz genau, was er da gemacht hat, wie er es gemacht hat, wie er darauf gekommen ist. Und als guter Whitehead-Hacker hat er natürlich auch Microsoft angeschrieben, hey Jungs, ich hab hier glaube ich ein bisschen was gefunden, wie seht denn ihr das? Und da steht dann, dass Microsoft geantwortet hat, dass das für Microsoft kein Problem sei und er sich dann einfach nicht drum kümmern soll und da drüber gucken soll. O-Ton von Microsoft 1998. Superlustiges Dokument.",
+      "start": 688081,
+      "end": 794786,
+      "confidence": 0.8243421052631581,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Ist immer gute Herangehensweise, wenn du einfach was totschweigst, dann hast du dieses Problem nicht mehr und dann existiert es einfach nicht mehr. Das ist immer eine gute Herangehensweise.",
+      "start": 794826,
+      "end": 802788,
+      "confidence": 0.7086551724137932,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Ich würde fast sagen, Microsoft sieht das inzwischen ein bisschen anders. Schauen wir mal. Wir verlinken euch das Originaldokument in den Shownotes. Auf jeden Fall guter Lesestoff für den Abend. Also, 24 Jahre alt, Dezember 1998. Entdeckung von SQL Injections war ein Seiteneffekt.",
+      "start": 802828,
+      "end": 819053,
+      "confidence": 0.7616046511627906,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Und scheinbar haben wir es innerhalb der 24 Jahren immer noch nicht gelernt, das sinnvoll zu stopfen, dieses Loch.",
+      "start": 819553,
+      "end": 825077,
+      "confidence": 0.803157894736842,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Also ich denke schon, dass wir es geschafft haben, das Problem zu mitigaten, also zu verhindern, weil es gibt ja 10.000 Best Practices dafür und da kommen wir dann gleich zu. Aber ich habe mich auch mal ein bisschen auf die Suche übergeben, warum ist das denn immer noch ein Problem? Also es kann ja nicht sein, dass die Menschheit innerhalb von 24 Jahren es nicht checkt, so ein relativ triviales Problem endgültig mal zu lösen. Und da gibt es eigentlich vier Hauptgründe für, warum das denn immer noch ein Problem ist. Auf der einen Seite, super viele Entwickler und Entwicklerinnen haben einfach keinen Kontext zum Bereich Security. Früher gab es dann den Softwareentwickler und die Softwareentwicklerin und diese Person hat dann alles gemacht. Heutzutage hat ja fast jede Firma ein eigenes Security-Engineering-Team, was dann natürlich die Verantwortung vom Entwickler wegschiebt. Was natürlich auch völliger Blödsinn ist, zugegeben, aber der einzelne Entwickler sagt, oh ja, ich entwickle das Produkt und wir haben ja ein Security-Engineering-Team und die machen ja ein Security-Review und deswegen muss ich mich mit dem ganzen Thema nicht mehr auseinandersetzen. Blödsinn müsst ihr trotzdem. Eine gewisse Basis von Security-Knowledge sollte jeder haben. Aber das wäre der erste Punkt, dass die Entwickler halt irgendwie keine ausreichende Security-Awareness mehr haben oder beziehungsweise das nicht fester Bestandteil des Security-Entwicklungsprozesses ist.",
+      "start": 825918,
+      "end": 908900,
+      "confidence": 0.7951681818181818,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Dann gleich mal nachgefragt, wenn du jetzt schon alle EntwicklerInnen angreifst, so direkt. Was ist mit allen deinen Projekten? Würdest du jetzt sagen, du bist auf der sicheren Seite, du hast bei allen deinen Projekten SQL Injections gecheckt und abgeprüft und abgesichert?",
+      "start": 909444,
+      "end": 924069,
+      "confidence": 0.771595238095238,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Auf gar keinen Fall. Also ich glaube, wenn ihr auf mein Gitterprofil geht, ich denke, ihr findet da eine ganze Menge lückenhafter Software. Also ich schließe mich damit nicht aus.",
+      "start": 924089,
+      "end": 932252,
+      "confidence": 0.7927333333333332,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Du hast ja ein Sicherheitsempfinden, das du jetzt gerade angeprangert hast, dass das viele eben nicht haben. Warum passiert es denn dir trotzdem?",
+      "start": 932512,
+      "end": 940656,
+      "confidence": 0.7224782608695651,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Ja, das ist eine ganz einfache Geschichte. Ich bin auch nur ein Mensch, bin nicht perfekt und ich achte auch zu oft nicht drauf, wenn ich da einfach was runtercode. Also ich schließe mich da nicht aus und ich sage auch nicht, dass ich nicht Teil des Problems bin.",
+      "start": 941026,
+      "end": 951691,
+      "confidence": 0.6902448979591835,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Ich habe ja auch so an meine Projekte gedacht, natürlich, wie ich den Titel gelesen habe. Und ich bin mir natürlich auch sicher, dass ich extrem viele SQL-Injections irgendwo eingebaut habe oder Lücken habe. Und ein großes Problem ist eigentlich auch, dass man, meiner Meinung nach zumindest, dass man immer mehr Abstraktionslayer verwendet. Und da spreche ich jetzt gar nicht unbedingt von den SQL-Treibern direkt oder von den Schnittstellen, sondern auch darüber hat man irgendwelche Frameworks und dann vielleicht noch ein Framework obendrauf, ein ORM-Layer, obendrauf wieder eine Abstraktionsschicht, irgendwie ein eigenes Framework, In-House-Framework. Und du müsstest eigentlich immer durch alle Layer, durch alle Schichten, die ich durcharbeite, bis runter zum zum Treiber und sogar da bist du dir teilweise nicht sicher, wie es funktioniert. Um überhaupt rauszufinden, muss ich jetzt irgendwie speziell was noch zusätzlich machen? Wann muss ich es escapen? Ich sollte ja auch nicht doppelt escapen, sonst habe ich auch wieder Probleme. Also es ist gar nicht so leicht, irgendwo rauszufinden, wie das alles funktioniert. Und ich glaube, diese Arbeit macht man sich halt oft auch nicht. Weil ich habe jetzt gerade wieder ein kleines Projekt angefangen und ich habe mir auch nicht im Detail angeschaut, ehrlich gesagt, wie das im Hintergrund funktioniert und bin einfach davon ausgegangen, dass es in dem Fall mit diesem Approach sicher ist. Aber hundertprozentig sagen kann man das natürlich erst, wenn wirklich alles durchgeht und das ist schwierig.",
+      "start": 951711,
+      "end": 1031261,
+      "confidence": 0.7778607594936712,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Na ja, auf der einen Seite muss man ja auch sagen, der heutige Entwicklungsprozess ist so komplex geworden, ja, Test-Driven Development, Security, Dependency Injection, Package Manager, Microservices, Kubernetes, Hosting, Monitoring, bla bla bla. Da hat man einfach so viele Aspekte, die man im Kopf behalten muss, und da fällt halt der ein oder andere mal hinten rüber. Deswegen sag ich, okay, wenn man jetzt keine klassische Checkliste hat, fällt halt ab und zu mal vielleicht auch Security hinten rüber, weiß ich nicht. Diese Datenbank-Libraries, die du gerade genannt hast, Abstraktions-Layer-Libraries und so weiter und so fort, alles schön und gut und ich denke auch die populären Libraries bieten dir gewisse Schutzmechanismen an. Da kommt es aber immer noch auf den Software-Entwickler und auf die Software-Entwicklerin an, ob man das denn auch wirklich richtig nutzt. Weil die richtige Anwendung der Libraries ist ja halt auch nochmal eine Kunst. Du musst ja dann zum Beispiel mindestens einmal die komplette Dokumentation gelesen haben, um zu wissen, okay, das ist eine Stolperfalle, das ist keine Stolperfalle, hier benutze ich diese Methode, dort diese Funktion und so weiter. Und also auch wenn du sagst, du vertraust der Library und den Complaint Stack, bist du dir 100% sicher, dass du jede Library richtig nutzt? Oder nutzt du sie so, dass sie für dich funktioniert? Ein weiterer Grund, warum das eigentlich immer noch ein Problem ist, automatisiertes Testing von SQL Injections ist eine ziemlich harte Sache. Oder fast auch nicht existent. Beziehungsweise, wenn es automatisiertes Testing für SQL Injections gibt, dann covert das natürlich nicht die 100%ige Abdeckung.",
+      "start": 1031798,
+      "end": 1118036,
+      "confidence": 0.7970306513409957,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Was verstehst du jetzt unter automatisches Testen von SQL?",
+      "start": 1118076,
+      "end": 1121418,
+      "confidence": 0.6877777777777778,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Natürlich kann man Unitests schreiben, ob die Datenbank einen Error schmeißt. Okay, sind da keine Unitests mehr, sind da Integration-Tests. Aber auch klassische Pentesting-Tools oder Ähnliches, die man kontinuierlich in seinem Continuous-Integration-Prozess laufen lässt, gibt's zwar alles, aber die decken dann nicht alle möglichen Szenarien ab. Wo dann ein Mensch deutlich kreativer werden kann, bieten die Tools halt nur die Szenarien ab, die man auch selbst als Implementator, als ... Implementator, ist das ein Wort?",
+      "start": 1121796,
+      "end": 1151003,
+      "confidence": 0.8250533333333331,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Weiß ich nicht.",
+      "start": 1151023,
+      "end": 1151784,
+      "confidence": 0.6466666666666666,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Als Softwareentwickler, als Softwareentwicklerin halt kennt. Deswegen alle möglichen Fälle, besonders so second in line SQL Injections, sind halt unglaublich schwer zu covern.",
+      "start": 1151824,
+      "end": 1162677,
+      "confidence": 0.8244782608695652,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Hast du das mal schon in irgendwelchen Projekten wirklich gesehen, dass es da automatische Tests gibt, die in diese Richtung gehen?",
+      "start": 1162717,
+      "end": 1168123,
+      "confidence": 0.7352380952380952,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Ja, habe ich. Und zwar kannst du, es gibt so Tools wie SQL Map, kommen wir gleich drauf, die kann man, den kannst du zum Beispiel eine URL hinschmeißen, dann kannst du sagen, dieser Parameter führt in die Datenbank und so weiter und so fort. Und dann kannst du das Timebase laufen lassen. Ja, das geht.",
+      "start": 1168620,
+      "end": 1183104,
+      "confidence": 0.7119107142857145,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Aber dass das normal in der Pipeline bereits automatisch immer mit ausgeführt wird?",
+      "start": 1183144,
+      "end": 1187466,
+      "confidence": 0.8395384615384617,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Also das ist ein extremer Case von dem Projekt, was ich da gesehen habe. Es gibt da noch ein bisschen was im Bereich statische Analyse. Ist aber auch eine ganz schwierige Thematik. Kommen wir auch gleich zu, wie wir sowas eigentlich mal verhindern können.",
+      "start": 1188813,
+      "end": 1199713,
+      "confidence": 0.7624545454545455,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Okay, dann gehen wir vielleicht gleich mal in die Arten von SQL Injections, weil jeder kennt irgendwie so dieses klassische Beispiel von XKCD wahrscheinlich, dieses Comic, wo die Schule bei den Eltern anruft und sagt, sie haben ein Computerproblem durch den Sohn. Und ob die Eltern den Sohn denn wirklich Robert Strichpunkt, Strichpunkt gibt es bei euch nicht.",
+      "start": 1200116,
+      "end": 1224408,
+      "confidence": 0.7561724137931038,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Semikolon nennt sich das.",
+      "start": 1224448,
+      "end": 1225769,
+      "confidence": 0.5487500000000001,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Genau. robots, semicolon, droptables, bla bla bla genannt haben. Also das kennt wahrscheinlich jeder, verlinken wir. Aber was für Typen gibt es denn sonst noch, abgesehen von dem klassischen Case?",
+      "start": 1226009,
+      "end": 1239016,
+      "confidence": 0.7597333333333334,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Wenn wir von der normalen SQL-Injection sprechen, bedeutet das eigentlich, wir stellen uns eine Webseite vor, und die hat eine Tabelle. Und alle Tabelleneinträge kommen aus der Datenbank. Und wir haben oben ein Suchfeld. Nehmen wir mal, das ist die Mitgliederliste eines Vereins. Ja, das ist so das simpelste Beispiel. Und du kannst dann nach Vereinsmitgliedern suchen. Und dieses Suchfeld, da gebe ich dann Wolfgang ein und dann kriege ich alle Vereinsmitglieder mit dem Vornamen Wolfgang. Das ist so der ganz, ganz klassische Fall von SQL Injection, weil du dann sagen kannst, okay, ich gebe da nicht Wolfgang ein, sondern ich breche den String auf und sage dann Wolfgang Anführungszeichen union select username, Passwort from users. Und was ich dann eigentlich mache, ich sage der Datenbank, Retoniere einfach mehr Datensätze und zeige diese in die Tabelle an. Soweit so gut. Dort habe ich eigentlich ein klassisches Request-Response-Verhalten, dass ich durch ein SQL-Injection mir zusätzliche Daten abfrage und die dann in meiner Tabelle anzeige. Alles super. Das ist so das Einfachste. Als Subteil davon kann man natürlich dann weitergehen und die sogenannte Error-Based SQL Injection führen. Die Error-Based SQL Injection bedeutet eigentlich, der Angreifer, also wir, wir sind jetzt hier der Hacker, wir kümmern uns darum, dass wir einfach invalides SQL in dieses Suchfeld schmeißen und dann schauen, welche Fehler zurückkommen. Warum hilft uns das? Umso mehr Informationen wir über die Datenbank haben, desto gezielter können wir unsere Queries bauen, desto gezielter können wir unsere Attacken fahren.",
+      "start": 1239036,
+      "end": 1332234,
+      "confidence": 0.8329918699186991,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Also im Idealfall zum Beispiel, dass in der Error Message die gesamte SQL-Query entsteht, die wir eigentlich gar nicht kennen, aber durch den SQL-Error sehen wir dann SQL-Error in und womöglich wird die ganze SQL-Query angezeigt und dann können wir weiterarbeiten, weil wir sehen, da wird noch dieser Parameter abgefragt und so kann man sich dann langsam vorarbeiten.",
+      "start": 1332767,
+      "end": 1352280,
+      "confidence": 0.8757586206896553,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Das ist ein sehr offensichtlicher Fall. Error-based SQL Rejection kann auch bedeuten, du kriegst einen Error-Code, 4711, zurück und weißt, ah, das ist eine MySQL-Datenbank. Und jetzt kommt's. Wenn man sich wirklich dann mit den Datenbanken auskennt, kann man sogar anhand der Schreibweise des Fehlers die Version erkennen, weil neue Fehlercodes kommen in neueren Versionen in den Quellcode. Also wenn man da ein gutes Listing hat, welche Errorcodes in welchen MySQL-Versionen oder PostgreVersionen implementiert wurden, weiß man, ah, wir sind mindestens auf Version 5, wir sind mindestens auf Version 5.5 und so weiter. Und das hilft einem natürlich ungemein, zu verstehen, welche internen Datenbankenfunktionen sind denn da und welche kann man denn nutzen. Das bedeutet, das ist alles so eine Art Informationserhaschung. Der andere Fall, oder die andere Hauptkategorie, sind sogenannte Blind SQL Injections. Blind SQL Injections sind SQL Injections, wo wir als Angreifer das Ergebnis nicht zurückkriegen. Und jetzt sagt man, hä? Wie funktioniert denn das? Ja, das ist super interessant. Und zwar ein Subteil von Blind SQL Injections sind sogenannte Time-Based Injections. Das bedeutet, man baut in die SQL Injections sogenannte if-Abfragen ein. Die Sprache SQL hat ganz klassische if, when und so weiter Abfragen, so wie jede Programmiersprache auch. Man kann dann sagen, where firstname equal Wolfgang or if bla bla bla. Und in diesem if-Statement kann man sagen, okay, wenn es eine Tabelle mit dem Anfangsbuchstaben a gibt, Dann warte bitte zwei Sekunden. Wenn nicht, führe die Query einfach sofort aus. Was bedeutet das? Das bedeutet, falls du deine SQL-Injection getroffen hast und es gibt eine Tabelle, die mit dem Buchstaben A anfängt, ist deine Response zwei Sekunden langsamer. Daraus kannst du eigentlich diese True-False-Checks bauen und dadurch kannst du dich kontinuierlich runterhangeln. Gibt es eine Tabelle, die mit A als ersten Buchstaben und mit B als zweiten Buchstaben anfängt und so weiter und so fort.",
+      "start": 1352700,
+      "end": 1477638,
+      "confidence": 0.8212290322580649,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Also das ist, wenn die Query eigentlich keine Ergebnisse zurückliefert und dir die in der Oberfläche anzeigt, damit du dann trotzdem Daten auslesen kannst, aber du bekommst ja keine richtigen Daten zurück und über die Zeit kannst du dann über Umwege Sachen abfragen, obwohl du in der Oberfläche gar nichts ausgegeben bekommst, was da bei der Query dann schlussendlich passiert.",
+      "start": 1477838,
+      "end": 1497335,
+      "confidence": 0.7690833333333337,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Genau, du brauchst halt irgendeine Antwort vom Server, und die Antwort hier bei einer Time-Based Blind SQL Injection ist eigentlich, deine Response-Zeit wird künstlich erhöht. Du kannst eigentlich alles dann machen, ja? Und da ist die Kreativität, die kriminale Kreativität eigentlich grenzenlos. Und oft verbindet man dies halt mit sogenannten True-False-Checks. Hat diese Tabelle fünf Felder? Hat die Tabelle sechs Felder? Hat die Tabelle sieben Felder? Gibt es ein Feld, was mit A beginnt? Und so weiter und so fort. Und so hangelt man sich dann da durch und spielt halt mit der Zeit. Super effektiv. Je nachdem, wie der Server aber konfiguriert ist, kann das natürlich auch bedeuten, dass man als Angreifer sehr schnell aufliegt.",
+      "start": 1497842,
+      "end": 1541212,
+      "confidence": 0.8470172413793103,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Vorausgesetzt, Die Person hat ein gutes Monitoring im Hintergrund, sonst fällt da gar nichts auf.",
+      "start": 1541252,
+      "end": 1547536,
+      "confidence": 0.6501333333333332,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Oder man hat eine Context-Deadline, also eine sogenannte Request-Deadline eingebaut. Das bedeutet, dass kein Request länger als fünf Sekunden dauern darf und die Applikation bricht dann diesen Request ab. Aber sind wir mal ehrlich, wenn du über sowas nachdenkst, über solche Reliability-Features mit Context- und Request-Deadlines, dann gehe ich mal stark davon aus, dann hast du auch keine SQL-Injection-Probleme.",
+      "start": 1547616,
+      "end": 1569090,
+      "confidence": 0.8357796610169492,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Oder dir zumindest ins Gedanken darüber gemacht.",
+      "start": 1569718,
+      "end": 1571960,
+      "confidence": 0.4734285714285714,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Genau. Der zweite Punkt, die Subkategorie neben Time-Based Blind SQL Injections sind sogenannte Out-of-Band Blind SQL Injections. Man nennt die auch entweder Two-Channel SQL Injection oder Second-Order SQL Injection. Der Clou hier ist, dass du eigentlich zwei verschiedene Kanäle nutzt, um den Angriff zu starten und das Resultat entgegenzunehmen. Stell dir vor, du hast eine Webseite und diese ist anfällig für SQL Injections und zum Beispiel trägt die Daten in eine Datenbank ein. Das bedeutet, du bist in der Lage, ein Insert Statement zu modifizieren, um neue Daten einzutragen.",
+      "start": 1571980,
+      "end": 1611949,
+      "confidence": 0.8127303370786517,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Also zum Beispiel meine Profilseite. Ihr könnt meine Description von meinem Profil abändern. Das ist in dem Description-Field.",
+      "start": 1612389,
+      "end": 1619733,
+      "confidence": 0.7605000000000002,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Zum Beispiel. Und dann drückst du auf Speichern und die Webseite sagt dir, Eintrag gespeichert. Und jetzt stell dir vor, diese Webseite hat keine, zeig mir meine Profilseite, sondern diese Webseite hat nur ein Backend, wo dann irgendein Mitarbeiter alle Profile sieht. Du hast dann also jetzt die Attacke gefahren, du hast Quellcode in die Datenbank eingeschleust. Und das ist an einem Sonntag. Und an einem Sonntag in Deutschland arbeitet keiner, deswegen wird das Backend von einem Mitarbeiter erst wieder am Montag geöffnet. Das wäre dann der zweite Kanal, wo dann erst eine Attacke zum Zuge kommt. Weil wenn der User nämlich sein Backend aufmacht und dann sieht, ah, der Wolfgang hat ja sein Profil geupdatet, das muss ich als Mitarbeiter jetzt freigeben. Zum Beispiel hast du deine Adresse bei einer Bank geändert. oder so. Ja, kann ja sein, dass da irgendwie ein Freigabeprozess ist. Dann wird erst dein Chartcode ausgeführt und somit hast du eigentlich zwei verschiedene Wege, two channels oder out of band, wo deine Attacke ausgeführt wird. Das ist natürlich sehr zeitintensiv, sehr zielgerichtet etc. etc. und nicht so klassisch mit einem kurzen Request-Response-Cycle oder kurzen Feedback-Cycle wie bei einer normalen SQL-Injection, aber sowas gibt es natürlich auf Da kann ich noch eine tolle Story von vor ein paar Jahren bei Trivago erzählen, und zwar war Trivago eine ganze Zeit lang, oder ist glaube ich immer noch, Teil vom HackerOne. HackerOne ist eine Firma, die es möglich macht, WhiteHat-Hacker für Sicherheitslücken zu zahlen. Das bedeutet, du gibst dann da an, okay, Trivago.com, ist jetzt für dieses Programm offen und du zahlst so und so viel Geld, falls eine Sicherheitslücke an Trivago gemeldet wurde. Und dann kümmern sich motivierte Hacker darum, hey die finden dann irgendwann mal eine Lücke und melden die dann an uns und wir würden denen dann Geld zahlen. Ja, in der Regel irgendwie 2, 3, 4.000 Dollar oder je nach Lücke halt auch ein bisschen mehr. Der Vorteil da ist halt ganz einfach, dass die Firma ein bisschen Geld zahlt, um die Lücke zu bekommen versus der Hacker verkauft die oder nutzt die selbst aus. Und da haben wir irgendwann mal einen schönen Report gekriegt. Und zwar hatten wir eine SQL-Injection im Quellcode, wo es darum ging, Kreditkartendaten oder Kontodaten oder irgendwie sowas einzugeben. Und da war das wirklich genau die Story. Jemand im Backend-Bereich hat dann ein Table-Listing gehabt, wo das dann getriggert wurde. Der Angreifer hat aber nicht gesagt, hallo Welt, hat da nicht hallo Welt reingeschrieben, sondern der Angreifer hat komplettes JavaScript da eingeführt. Der hat JavaScript eingeführt, eine externe Library nachgeladen und und und. Als der Trivago-Mitarbeiter dann dieses Backend aufgemacht hat, sah alles ganz normal aus. Aber im Hintergrund, wo natürlich leider dann noch eine andere Sicherheitslinie getriggert und zwar Cross-Site Scripting, weil ja Javascript eingeführt wurde, das Javascript wurde im HTML ausgeführt und von dieser Seite wurde mittels Javascript dann ein Screenshot gemacht und dieser Screenshot wurde per Ajax-Request an einen externen Server gesendet. Und der Mitarbeiter hat nichts mitgekriegt, weil das sah ja alles ganz normal aus. Und dann haben wir den HackerOne-Report gekriegt, wo wir halt einen kompletten Screenshot von unserem ganzen Backend gekriegt haben. Irgendwie so, oh, okay. Sowas kann man dann halt, das wäre ein klassischer Out-of-Band, Two-Channel oder Second-Order SQL Injection, die man dann halt triggern kann.",
+      "start": 1619773,
+      "end": 1810670,
+      "confidence": 0.7801913357400723,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Also man kann es dann eigentlich ganz gut nützen, um irgendeinen größeren Angriff zu fahren, dass man also wirklich Daten ausspioniert und die dann in irgendeiner Form wiederverwendet für ein zweistufiges, dreistufiges, vierstufiges Verfahren im Hackerangriff sozusagen. Also das SQL-Injections ist halt dann ein kleiner Baustein in einem großen Angriff.",
+      "start": 1811542,
+      "end": 1831691,
+      "confidence": 0.8266600000000003,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Ja, umso gezielter der Angriff, umso mehr Informationen helfen natürlich. Beispiel jetzt mit diesem Backend-Angriff, den ich dir gerade erzählt habe, hätte man natürlich auch den Telefonhörer in die Hand nehmen können und sagen, hey, pass mal auf, geh mal, ich bin jetzt gerade auf dieser URL, ja, du hast ja dann direkt eine URL zum Backend-System. Hör mal, und ich sehe hier das Listing vom Walter, aber sagst du nicht auch, das ist doch keine deutsche IBAN, oder? Kannst du mir nochmal ganz kurz Die Information, und dann fragst du irgendeine Information an, die du jetzt gerade nicht in deinem Screenshot hast, und so geht es halt über Social Engineering weiter, weil du gibst halt schon sehr, sehr viele Informationen preis, die eigentlich nur ein interner Mitarbeiter haben kann. Und dann wird natürlich bei dir das Gefühl erweckt, oh, das muss ein neuer Mitarbeiter sein, der hat ja so viele Informationen, logisch, dem kann ich natürlich die Information geben.",
+      "start": 1832032,
+      "end": 1879425,
+      "confidence": 0.7427375000000003,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Aber das Ganze kann natürlich auch verwendet werden, um ganz normale User auszuspionieren, oder? Wenn ich JavaScript einschleusen kann, Cross-Site Scripting, alleine auf meiner Profilseite, wenn ich schaffe, dass auf meiner Profilseite ein JavaScript nachgeladen wird und mein Profil wird dann von anderen User angeschaut und ich spioniere deren Cookie zum Beispiel aus, dann kann ich natürlich mit dem auch wieder weiterarbeiten und kann so Daten von anderen Usern ausspionieren oder abgreifen. oder so natürlich auch Hacks fahren. Also dieses Schlupfloch, das Einschleusen von Shardcode kann ich natürlich auf ganz vielen Ebenen spielen und das ist natürlich auch ganz gefährlich, ohne dass ich irgendwo Daten nach außen gebe im ersten Moment, aber dann im zweiten Moment, wenn dann irgendein Shardcode nachgeladen wird.",
+      "start": 1879515,
+      "end": 1922068,
+      "confidence": 0.8056229508196723,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Alles richtig, da bist du natürlich dann auf mehrere Sicherheitslücken in einer Kette angewiesen. Was du jetzt gerade gesagt hast, du schreibst Schadcode in eine Datenbank, zum Beispiel Javascript, dann musst du zum Beispiel auch eine Cross-Site-Scripting-Lücke haben. Das bedeutet, dass Daten, die in der Datenbank sind, im Frontend nicht ordentlich escaped werden für deren Anwendungsfall. Und dann wird JavaScript ausgeführt und und und und und. Sowas wird man dann in deinem spezifischen Fall, zum Beispiel Cookie, wird gestohlen, wird man dann Persistent Cross-Site Scripting nennen, weil es ist ja persistiert in der Datenbank und nicht nur auf Basis von einer Adresse.",
+      "start": 1923069,
+      "end": 1957608,
+      "confidence": 0.7958627450980392,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Aber das klingt jetzt so, also braucht man da extrem viele Lücken. Ich meine, HTML-Code steht ganz oft in der Datenbank und sobald irgendwo HTML-Code in der Datenbank steht, dann kann das nicht mehr escaped werden. Und damit habe ich schon extrem offene Lücke. Also das geht eigentlich sehr schnell. Da braucht man dann nur noch die SQL-Injection dazu, wenn man irgendwo ein HTML-Feld findet.",
+      "start": 1958529,
+      "end": 1978177,
+      "confidence": 0.7858461538461539,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Wieso kann HTML nicht escaped werden, wenn es in der Datenbank steht?",
+      "start": 1978197,
+      "end": 1980958,
+      "confidence": 0.61675,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Weil es dann als HTML angezeigt werden würde, als Text. Sobald du HTML-Code in irgendeinem Feld hast und das angezeigt wird, hast du natürlich kein Escaping mehr und das heißt, du brauchst in der Datenbank, wenn du Zugriff auf die Datenbank hast, nur irgendwo ein Feld finden, wo RAW HTML-Code drinsteht und der dann schlussendlich auf irgendeiner Webseite irgendwo angezeigt wird und dann geht das eigentlich relativ schnell.",
+      "start": 1981437,
+      "end": 2002823,
+      "confidence": 0.7624558823529409,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Genau, meines Erachtens nach ist das dann Designfehler in dem CMS oder was auch immer, was du nutzt, weil du eigentlich Content aus der Datenbank in der Regel immer für das entsprechende Ausgabe-Medium escapest und nicht beim Speichern in der Regel, weil der Grund ist ganz einfach, du escapest HTML, bei der HTML-Ausgabe anders, als wenn du HTML in JavaScript implementierst, als wenn du irgendwas aus der Datenbank liest und fürs CSS generierst, ja? Also, das Ausgabe-Medium und der Ausgabe-Kontext ist ja ausschlaggebend, wie du etwas escapest.",
+      "start": 2003203,
+      "end": 2033046,
+      "confidence": 0.8121609195402297,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Aber... Ja, das ist jetzt in der... Das ist jetzt vielleicht ganz nett dahergesagt, aber in der Realität ist das nicht so. In der Realität steht ganz oft HTML-Code irgendwo in einem Feld. Es kann ja sogar sein, dass das ein Cache ist unter Umständen. Irgendwelche Webseiten werden gerendert und dann in den Cache geschrieben in der Tabelle und dann steht in der Tabelle einfach der HTML-Code, der vorgerenderte und wenn du den dann im Cache änderst, wird der genauso angezeigt. Also sobald du Zugriff auf die Datenbank hast, hast du da schon sehr viele Möglichkeiten, weil irgendwo findest du relativ einfach HTML-Code. Du musst natürlich das mal finden und suchen, aber sobald du das gefunden hast, geht das relativ schnell.",
+      "start": 2033407,
+      "end": 2069563,
+      "confidence": 0.7510165289256202,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Die Realität ist oft deutlich komplexer und deutlich dreckiger, als wir das in unserem Engineering-Porn-Kopf gerne haben würden und in der Lehre. Aber wir sprechen ja grad schon über möglichen Schaden, den man eigentlich durch eine SQL-Injection machen kann. Und das ist jetzt nicht nur, ah, ich gebe mir ein paar weitere Usernames aus, sondern ... Das ist eine ganze Latte von möglichem Schaden, die man da machen kann, wenn man eine erfolgreiche SQL-Injection durchkriegt. Auf der einen Seite kann man natürlich Daten verändern. Das bedeutet, SQL-Injections im Bereich von Insert-Statements, Update-Statements oder Delete-Statements, da ändert man natürlich Daten. Die zweite Geschichte ist zum Beispiel, je nach Datenbankserver kann man sogar Skripte auf dem Datenbankserver ausführen. Beispiel eine MSSQL Datenbankserver hat eine Funktion nennt sich goexec und dann kann man halt Commandline Befehle auf dem jeweiligen Server ausführen. unter der Voraussetzung, dass der Datenbank-User natürlich entsprechende Rechte hat. Kommen wir aber gleich zu. Jetzt hatte ich gerade gesagt, man kann Skripte auf dem Server ausführen, man kann aber auch lokale Files lesen, wie z.B. loadFile, loadDataInFile bei Postgre oder MySQL. Generell, wenn ich von sowas spreche, kann man auch sagen, ich kann einfach jede Funktion in der Datenbank aufrufen. Beispiel, current underscore user gibt dir in der Regel den aktuellen Username vom Datenbank. User, den man gerade in der Connection nutzt. Das kann man natürlich je nach Rechte dafür nutzen, um höhere Rechte zu bekommen, um sich selbst zum Admin abzugraden oder ähnliches. In neueren Datenbankenversionen wird sowas standardmäßig abgestellt. Und jetzt kommt wieder die tolle Realität. In der Regel, wenn man Datenbanken von einer alten Version zu einer neuen Version upgradet, werden die Settings rückwärtskompatibel applied. Das bedeutet, wenn zum Beispiel ein Defaultwert in einer neuen Datenbankversion deaktiviert ist, aber man upgradet von einer alten zu einer neuen Version, dann ist das immer weiter aktiviert, wenn man das nicht aktiv ändert. Ja, weil es wird ja rückwärtskompatibel geupgradet werden.",
+      "start": 2069998,
+      "end": 2197405,
+      "confidence": 0.8584031250000004,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Der Klassiker ist ja auch, dass man einfach das irgendwann mal braucht, dieses Load-File oder Load-Data-In-File in MySQL und dann grantet man mal diese Permissions für diesen User einfach, für diesen Test-Case oder man will da irgendwas manuell reinladen, nimmt da den gleichen User und vergisst es dann wieder rückgängig zu machen, diese Permission. Und dann ist es einfach für immer auf diesem User oben. Also das passiert ja in der Realität ständig. Wer legt denn einen eigenen User an oder macht das saubere Verwaltung? Oft gibt es dann auch nur einen User für das gesamte Projekt oder zwei User und man unterscheidet dann auch nicht mehr so im Detail mit diesen Rechten. Also in der Realität ist es halt so, dass man einfach schnell mal was macht und das vergisst man halt dann sehr, sehr gerne. Und das ist, glaube ich, auch eines der großen Probleme, Das, was wir ja auch immer predigen, kann man das nicht pragmatisch und schnell machen. Man muss es dann halt auch pragmatisch und schnell wieder rückgängig machen.",
+      "start": 2197990,
+      "end": 2250389,
+      "confidence": 0.82801724137931,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Jetzt haben wir ein bisschen über lokale Funktionen gesprochen, loadFile, loadData, um lokale Files zu lesen. Aber was passiert denn, wenn wir einfach ein selectIntoOutFile machen? Das bedeutet, wir sind auch in der Lage, lokale Files zu schreiben. Und was würde passieren, wenn ich auf einem PHP-Server ein lokales File schreibe, das ins WebDocumentRoot lege und mir einfach eine klassische WebShell baue? So nach dem Motto, dass jeder Parameter einfach nur an EXEC weitergegeben wird. Somit habe ich mir eine ganz klassische Webshell gebaut mittels einer SQL Injection und kann einfach eigentlich alles ausführen. Eine andere Geschichte ist, geht wieder in diese Time-Based Blind SQL Injections rein, ist, man kann zeitbasierte Angriffe führen. Viele Datenbanken haben Benchmark-Funktionen. Benchmark-Funktionen sind zum Beispiel, führe diese Fraktion eine Million mal aus. Das kann ich natürlich auch in den SQL Statement fahren und wenn ich dann 1000 Queries Auf den Server fahre, jeweils mit dem Benchmark, mit sehr teuren Operationen, mit sehr teuren Funktionen, kann das sogar zu einem Denial-of-Service vom Datenbankserver führen, weil ich mit diesen Queries den Datenbankserver deutlich überlaste. Was sind zum Beispiel teure Funktionen? Ganz teure Hashing-Funktionen oder ähnliches. Einfach eine Millionen mal ausführen. Und weil ich jetzt natürlich durch diese ganzen Möglichkeiten, wenn ich da ein bisschen was kombiniere, krieg ich natürlich auch raus, welche Version ist das, welcher Datenbankserver und so weiter und so fort. Und dann kann ich wieder auf cvedetails.com gehen, schau mir an, welche Version betroffen war von welcher Sicherheitslücke und dann gehe ich mit ganz klassischen Exploits an den Server ran, weil ich ja jetzt Detailinformationen der Infrastruktur habe und nutze einfach bekannte Sicherheitslücken von einem nicht geupdateten Server, um von da aus weiterzugehen. Das ist jetzt nur mal eine kleine Übersicht vom möglichen Schaden, den man da machen kann.",
+      "start": 2251108,
+      "end": 2366951,
+      "confidence": 0.8481452702702705,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Okay, jetzt hast du sehr sehr ausführlich erklärt, was man alles machen kann und hast wahrscheinlich sehr vielen Leuten sehr viele Ideen in den Kopf gesetzt, wie man irgendwas hacken kann. Vielen Dank dafür, Andi. Also bist du jetzt auch verantwortlich dafür, dass die Welt wieder ein kleines Stück besser wird? Also erklär mal, wie man jetzt diese ganzen Hacking-Angriffe, die du jetzt so schön erklärt hast, abwehren kann. Was gibt's für Gegenmaßnahmen?",
+      "start": 2367431,
+      "end": 2392090,
+      "confidence": 0.7751095890410957,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Darauf war ich jetzt nicht vorbereitet. Nee, kleiner Witz. Die erste Gegenmaßnahme, und das macht mich auch so enorm traurig, dass wir immer noch uns um dieses Problem drehen, sind sogenannte Prepared Statements. Und das ist meines Erachtens nach auch die sinnvollste Möglichkeit, um SQL Injections zu verhindern. SQL Injections verhindert man ganz grundlegend relativ einfach. Jedes Datenbankfeld hat einen gewissen Typ. Eine Ganzzahl, eine Integer, eine Fließkommazahl, eine Float oder eine Dezimal, ein String, Binary, Blob, was weiß ich nicht. Anhand des Datentyps muss man den Eingabe-Parameter entsprechend validieren. Das bedeutet, alles das, was ich bekomme, wenn ich das gegen ein Integer-Datenbankfeld schieße, dann kann ich da ruhig ein Incast oder ähnliches drum bauen. Das ist eigentlich ganz grundlegend die Art und Weise, wie man SQL-Injections verhindert. Bei einem String wäre das zum Beispiel, wenn da ein Anführungszeichen drin ist, dass man das Anführungszeichen entsprechend escaped mit einem Backslash und so weiter. In jeder Programmiersprache gibt es dafür entsprechende Funktionen. Moderne Datenbanken unterstützen aber auch sogenannte Prepared Statements. Was bedeutet das?",
+      "start": 2392130,
+      "end": 2459893,
+      "confidence": 0.8089651162790702,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Du bist gut. Moderne Datenbanken, Prepared Statements gibt es seit, keine Ahnung, seitdem es Datenbanken gibt wahrscheinlich fast. Also alle Datenbanken unterstützen, das will ich fast sagen.",
+      "start": 2459933,
+      "end": 2469576,
+      "confidence": 0.6381851851851851,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Okay, alle Datenbanken. Man gibt seine SQL Statements an und ich nehme jetzt einfach nur noch ein Beispiel. Select ID from users where ID gleich Fragezeichen. Das Fragezeichen ist dann deklarativ für den ersten Parameter. Man schickt also dieses Statement mit einem Prepare-Call an die Datenbank. Unten drunter kriegt man dann eine ID von dem Datenbank-Server zurück und sagt, hey, ja, ich habe dieses Statement jetzt für dich vorbereitet.",
+      "start": 2469656,
+      "end": 2499631,
+      "confidence": 0.8201014492753621,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Also man bekommt eine ID von diesem Statement, nicht die ID von dem User in der SQL-Query, sondern einen Identifier, wie man diese Query wiederverwenden kann.",
+      "start": 2500051,
+      "end": 2510019,
+      "confidence": 0.8167307692307693,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Das ist richtig. Zusammen mit dieser Statement-ID sendet man jetzt seinen Parameter mit an die Datenbank und bekommt danach das wirkliche Resultat der Datenbankabfrage.",
+      "start": 2510039,
+      "end": 2521048,
+      "confidence": 0.8493750000000002,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Also ruf mir dieses Statement Nummer 10 mit der ID 5, mit dieser User-ID 5 auf. Also ich sende nur Statement 10, Payload 5 für diese User-ID.",
+      "start": 2521648,
+      "end": 2532654,
+      "confidence": 0.7292222222222223,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Und das kann man natürlich mit deutlich mehr Parametern machen, aber so stellt man sicher, dass die Datenbank das richtige Typecasting macht, alles ordentlich escaped und so weiter und so fort und davor lagert man eigentlich die Ich nenne es mal Sicherheitsarbeit auf die Datenbank, weil die Datenbank weiß halt unter anderem am besten, wie diese Felder zu behandeln sind.",
+      "start": 2532714,
+      "end": 2554464,
+      "confidence": 0.8557833333333331,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Zusätzlicher Vorteil ist natürlich noch, dass die Datenbank die SQL-Query schon kennt, einen Ausführungsplan schon vorbereitet hat, optimiert hat und dadurch, wenn man die Query dann auch öfters verwendet, auch wirklich das Ganze wesentlich schneller ist, weil die Datenbank schon alles vorbereitet hat und man wirklich nur den Payload sendet.",
+      "start": 2554484,
+      "end": 2572329,
+      "confidence": 0.8518000000000001,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Das spiegelt sich in einem messbaren Performance Impact wieder, wenn man jetzt zum Beispiel eine While oder Vorschleife hat und dort immer mit derselben vorbereiteten Anfrage gegen Datenbankserver hämmert. Was bedeutet das beim Umkehrschluss zeitlich gesehen? braucht man mehr Zeit, wenn man eine einfache Datenbankabfrage prepared, mit Daten rübersendet und wieder schließt. Das würde bedeuten, wenn du einen SQL-Query nur einmal ausführst, dann hast du eigentlich drei Network-Roundtrips zur Datenbank versus wenn du jetzt keine prepared Statement nutzt.",
+      "start": 2573089,
+      "end": 2611208,
+      "confidence": 0.8635256410256411,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Warum hast du drei?",
+      "start": 2611248,
+      "end": 2611969,
+      "confidence": 0.664,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Weil du es ja noch schließen musst. Das bedeutet, du sendest das Prepared Statement an den Datenbank-Server, erster Roundtrip, dann sendest du die Parameter, zweiten Roundtrip, und am Ende musst du die Datenbank, das Statement selbst ja noch closen. Ich sag nicht die Datenbank-Connection closen, sondern das Prepared Statement sagen, hey, ich bin jetzt hiermit fertig.",
+      "start": 2612489,
+      "end": 2631832,
+      "confidence": 0.7699999999999999,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Ja, wenn du es schön machst. Du kannst eigentlich auch sagen, okay, wenn du die Connection resettest, dann werden dir sowieso alle Prepared Statements wieder rausgekickt. Dann brauchst du es nicht schließen. Dann wärst du eigentlich nur mehr bei zwei Roundtrips. Und dann hat man natürlich, je nachdem, was für Sprache man verwendet, was für einen Treiber man verwendet, man hat da schon viele Optimierungen drinnen. Die meisten Treiber cachen automatisch die ganzen Statements, probieren das also in irgendeiner Form zu optimieren. Und dann würde ja auch gerne eigentlich mal einen Test machen, ob da wirklich so viel Zeit verloren geht, weil im Endeffekt du hast dafür einen Plan, der schon zur Verfügung steht und eigentlich sollte ja die Connection an sich, der Roundtrip, weniger Zeit benötigen als die SQL Query selbst, das Ausführen von der SQL Query, das Zurückliefern der ganzen Daten, das sind vielleicht viele Daten. Also ich könnte mir vorstellen, dass dieser Overhead eigentlich im Endeffekt sehr, sehr, sehr, sehr klein ist. Und die Frage ist halt wirklich, brauchst du diese letzten Prozent wirklich an Performance für deine Applikation? Und wenn du dann wirklich mal so groß bist, dann hast du wahrscheinlich sowieso ein größeres Team, was sich darum kümmert oder auch einfach mehr Zeit, um dich um diese speziellen Performance-Optimierungen dann zu kümmern. Also die Sicherheit geht im Normalfall vor, meiner Meinung nach. Und für 99 Prozent der Applikationen sollte das auch kein Problem sein.",
+      "start": 2632252,
+      "end": 2710932,
+      "confidence": 0.7775481171548119,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Da stimme ich dir zu. Wer Prepared Statements aus Performance-Impact-Gründen nicht nutzt, da würde ich sagen, dass es größere Fische gibt, die man da lösen sollte, größere Probleme. Und es kommt natürlich immer ganz zu den Use-Case an, aber ich denke, es gibt bessere Optimierungen, als Prepared Statements wegzulassen. Und ich denke, dass der Benefit von Prepared Statements den Performance-Impact auch wegmacht. Speziell, wenn man in einem größeren Software-Engineering-Team arbeitet, unterschiedliche Wissensstände hat, hier und da vielleicht mal Juniors dabei hat, die mit dem ganzen Thema jetzt noch nicht so viel Berührung haben.",
+      "start": 2711372,
+      "end": 2750269,
+      "confidence": 0.8157096774193544,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Und sonst, ganz allgemein, ist immer ein guter Tipp, wenn man jetzt keine Prepared Statements verwendet und das selber escaped, wirklich mal den ganzen Stack durchgehen und wirklich auch prüfen, was wird wo escaped, was wird nicht escaped, wie schaut einfach mein gesamter Stack aus, auch sogar sind da vielleicht im Hintergrund dann irgendwo Prepared Statements im Spiel oder nicht, also dass man einfach mal das Ganze versteht, um dann überhaupt analysieren zu können, habe ich ein Problem oder nicht, muss ich noch irgendwo was escapen oder nicht und nicht einfach nur blind irgendwelche Methoden verwenden, ohne zu wissen, Ist es ein Prepared Statement? Ist es kein Prepared Statement? Ist es ein Prepared Statement nur vom Datenbanktreiber, also von der lokalen Integration, vom BHB-Datenbanktreiber zum Beispiel, der das dann erst recht wieder als normale Query absendet? Ist es wirklich ein Prepared Statement, was auf der Serverseite ausgeführt wird? Also diese ganzen Dinge einfach mal durch spielen und durchlesen, wirklich die Dokumentation von dem Treiber, von dem Abstraktionslehrer, von dem ORM, um dann wirklich Schritte zu setzen. Und das braucht halt Zeit und das ist ein gewisser Aufwand und Sicherheit ist halt nicht etwas, was man einfach out of the box bekommt.",
+      "start": 2750289,
+      "end": 2820592,
+      "confidence": 0.8044527363184076,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Generell gilt die goldene Regel, vertraue einfach keinem User-Input. Und User-Input selbst sollte jetzt in eurem Kontext definiert werden. Das bedeutet auch, vertraue womöglich nicht dem Content, der aus deiner eigenen Datenbank kommt. Besonders in einem Microservice-Umfeld, wo jetzt nicht jeder Microservice die eigene Datenbank hat, weißt du nicht, wie diese Daten geschrieben wurden. Du weißt nicht, woher diese Daten kommen. Du weißt einfach nicht, ob du diesen Daten aus der Datenbank wirklich vertrauen kannst. Das bedeutet, mit allen externen Daten, mit denen du hantierst, escape sie einfach ordentlich. Nutze prepared statements. Das ist so die goldene Regel von User Input.",
+      "start": 2821392,
+      "end": 2860167,
+      "confidence": 0.8094257425742573,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Was kann ich denn jetzt auf der Server-Seite machen? Jetzt haben wir die Software-Seite besprochen, als Entwickler. Wenn ich jetzt einen MySQL-Server administriere, egal jetzt als Developer oder als DBA oder ganz allgemein Administrator, auf was sollte ich auf der Server-Seite achten?",
+      "start": 2860923,
+      "end": 2875629,
+      "confidence": 0.7521904761904762,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Meines Erachtens nach kannst du da primär drei Sachen machen. Auf der einen Seite upgrade auf eine aktuellere Version. Und aktuellere Version meine ich jetzt nicht immer aktuellste Version, sondern auf eine neuere. Als klassisches Beispiel nenne ich da immer, ich glaube MySQL oder der PHP Client, irgendeiner von den beiden Elementen hat irgendwann mal verboten, dass du in einem SQL Query Command zwei Statements abfeuern kannst. Das bedeutet SQL Injections, wo du ein Semikolon einführst und dann einfach ein zweites Statement hinterher feuerst, also where id gleich 5 Semi-Kolon-Drop-Table-Users, ist dann nicht mehr möglich, weil diese standardmäßig geblockt werden, weil gesagt wird, hey, du feuerst hier ein SQL-Statement, somit darfst du auch nur ein SQL-Statement abfeuern und kein gechaintes SQL-Statement, also kein angehangenes SQL-Statement.",
+      "start": 2875669,
+      "end": 2927515,
+      "confidence": 0.79184,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Ist in PHP bei den meisten Implementierungen so drin, ja.",
+      "start": 2927535,
+      "end": 2930880,
+      "confidence": 0.6365999999999999,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Bei PRP5 war das aber noch standardmäßig möglich. Ich weiß jetzt grad nicht, wie die anderen Sprachen das machen. Schaut mal in eure Clients nach. Aber einfach mal die aktuellsten Versionen nutzen. Wie wir zum Beispiel auch vorher besprochen haben, super viele Datenbanken haben den Zugriff auf lokale Files oder auf lokale Skripte standardmäßig deaktiviert in den neuesten Versionen. Auch wenn ihr eure Datenbank upgradet, checkt mal bitte die neuen Default Settings eurer Datenbank. Sowas hilft natürlich auch, dass manche super sinnvollen Funktionen oft standardmäßig deaktiviert werden und somit habt ihr natürlich dann schon eine gewisse Protection.",
+      "start": 2931260,
+      "end": 2968855,
+      "confidence": 0.8090206185567013,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Und das Updaten von Datenbanken ist ja meistens nicht sehr beliebt, weil das Updaten halt eine schwierige Sache ist von Datenbanken. Drum ist es ja auch ganz interessant, wenn man Datenbanken als Service heutzutage verwendet, weil dann unter Umständen die Updates auch mehr oder weniger automatisch passieren. Weil Datenbanken stellen natürlich eine zentrale Infrastruktur meistens dar, die soll nicht ausfallen, da will man keine downtime haben und dann sind Updates natürlich schwierig und das ist halt meistens der Teil in der Infrastruktur, der am letzten abgetätet wird. Und das ist halt eigentlich dann eher auch security-technisch kontraproduktiv. Man denkt sich, das ist eh ganz hinten tief in meinem Stack, da hat kein Hacker Zugriff. Aber über die SQL-Injections geht das natürlich sehr einfach. Und wenn man dann irgendeine MySQL-Datenbank hast, die einen 90ern mehr oder weniger findet als Hacker, dann ist das natürlich ein offenes Scheunentor.",
+      "start": 2968895,
+      "end": 3018008,
+      "confidence": 0.7984246575342466,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Der andere Geschichte ist, wie legt ihr euren Datenbank-User an? Beispiel. Ihr seid jetzt Systemadministrator, DevOps, SAE, System Engineer, jemand, der für Infrastruktur verantwortlich ist. Und vielleicht habt ihr bei euch in der Firma oder auch zu Hause Tooling, was ihr selbst hostet. Nehmen wir mal einen OwnCloud, nehmen wir mal einen Typo3, nehmen wir mal einen WordPress oder was weiß ich nicht. Mit welchem Datenbank-User operiert ihr da? Operiert ihr da mit dem Root-User oder habt ihr einen eigenen Datenbank-User angelegt und hat dieser Datenbank-User limitierte Privilegien? Meines Erachtens nach sollten alle Self-Hosted-Tools ihre Datenbank-Operationen dokumentieren, Das bedeutet, was wird wirklich von dem Tool auf der Datenbank ausgeführt. Nur Select, Insert, Update, Delete, also klassisch CRUD. Oder wirklich spezielle Funktionen. Oder wirklich Datenbank-User anlegen, Grant User, Grant Permission, bla bla bla. Wenn ihr nämlich die genauen Datenback-Operationen von eurem Salesforce-Tool kennt, könnt ihr natürlich auch den User entsprechend einschränken, was natürlich dann den Attack-Vektor deutlich minimiert.",
+      "start": 3018508,
+      "end": 3088025,
+      "confidence": 0.7908407643312102,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Auch da wieder ganz klassisch die Faulheit. Das ist so wie mit den Linux-Rechten, wo man dann einfach einen Pfeil auf 777 stellt. Kennt man ja. Irgendwas funktioniert nicht mit der Datenbank. Irgendwo wird ein komischer Fehler geschmissen. Man hat keine Ahnung, was da für eine Permission verantwortlich ist. Also grantet man einfach mal super Privileges in der Datenbank und dann hat der User Vollzugriff. im Production, und dann hast du einen User, der Vollzugriff hat auf alles.",
+      "start": 3088225,
+      "end": 3112792,
+      "confidence": 0.7779358974358977,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "In diesem Sektor kann man natürlich auch die Lese- und Schreibzugriffe trennen. Das haben wir bei Trivago sehr viel gemacht. Zum Beispiel, wenn du ein Datenbanksetup hast mit PostgreSQL oder MySQL, dann willst du in der Regel kein Master-Master, keine Master-Master-Replication. Sondern was du in der Regel hast, ist ein Write-Master und diverse Read-Replica. Und was du dann im Quellcode machen kannst, ist du kannst Schreibrechte oder deine Schreiboperationen von den Leseoperationen trennen, weil deine Schreiboperationen in der Regel auf den Write Primary gehen und deine Leseoperationen dann in die Breite geschaltet werden können auf sogenannte Read Replica. Und das ist natürlich dann auch eine ganz super Sache, weil du dann auch verschiedene User nutzen kannst. Du kannst sagen, alle Leseoperationen gehen nur auf die Read-Replika und die brauchen gar keine Insert, Update, Delete-Rechte, sondern die brauchen nur Select-Rechte. Dadurch kann man natürlich dann auch schon mal ein bisschen den Attack-Vektor limitieren.",
+      "start": 3112852,
+      "end": 3170414,
+      "confidence": 0.8129342105263156,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Man kann solche Sachen unter Umständen auch automatisieren, wenn man zum Beispiel ein SQL-Proxy davor hat, der kann dann dementsprechend auch die Queries umleiten und Read- und Write-Queries anders behandeln. Also auch da hat man mit Tools, die vorgeschaltet werden, auch Möglichkeiten einzugreifen.",
+      "start": 3170774,
+      "end": 3186401,
+      "confidence": 0.8384651162790698,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Wenn man jetzt gar keine Kontrolle über die Applikation oder die Datenbank hat, dann kann man auch noch zu sogenannten Web-Application-Firewalls zugreifen, wenn man jetzt in einem Web-Umfeld ist. Diese Web-Application-Firewalls werden zwischen dem Server und dem Client geschaltet, ähnlich wie so ein Proxy. Die schauen sich dann die Adresse an oder den Post-Body oder ähnliches, inspizieren das und sagen, Ah, das sieht mir aber so aus, als wäre das eine SQL-Injection. Basieren unter anderem auf regular expressions und so weiter und so fort. Bin ich kein Riesenfan davon, kann dem Angreifer aber die ganze Sache ein bisschen schwerer machen, weil dann diese klassische Drop-Table, or 1 gleich 1, also so klassische Fälle werden dann in den Standard-Rulesets von sogenannten Web-Application-Firewalls halt schon abgefangen und diese Requests werden dann komplett geblockt und kommen dann gar nicht bis auf eure Applikation drauf. Und als letztes gibt es natürlich ganz klassische Libraries. Ihr könnt natürlich Datenbank-Connection-Libraries, Object-Relational-Mappers, ORMs benutzen. Finde ich immer ein bisschen schwierig, weil das ist dann wieder die hundertprozentige Verantwortung des Entwicklers, der Entwicklerin, das dann wirklich richtig zu verwenden. Plus, wenn ihr keinen ordentlichen Code-Review von der Library macht, ihr müsst dann natürlich der Library entsprechend vertrauen. Was aber ein nachgelagertes Problem ist, weil in der Regel die großen Libraries all solche Funktionalitäten natürlich abdecken.",
+      "start": 3186681,
+      "end": 3273578,
+      "confidence": 0.8225391705069125,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Das größere Problem bei den ORMs ist eigentlich, dass die Leute sich eher darauf verlassen, dass der ORM-Layer alles für sie weg abstrahiert und sich um die Sicherheit kümmert. Und meistens ist es aber nicht so. Du musst dann trotzdem noch escapen, du musst trotzdem noch genau checken, was verwendest du im Hintergrund, sind da prepared statements oder nicht. Also diese ganzen Dinge musst du selbst checken und die sind auch ganz wichtig, dass du die checkst. Und im Zweifelsfall sollte man davon ausgehen, dass der ORM-Lehrer nicht intelligent ist und nichts verhindert, auch damit du die Flexibilität als User hast, als Developer. Und daher ist das ganze Escaping, die Verantwortung eher auf deiner Seite anzusiedeln. Also nicht zu sehr diesen Tools vertrauen, weil meistens sind die flexibel und machen daher weniger automatisch. Obwohl man sich das vielleicht erwarten würde.",
+      "start": 3273598,
+      "end": 3325317,
+      "confidence": 0.8411642857142856,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Bei SQL Injections gilt jedoch, Prepared Statements ist die Nummer 1 Mitigation, die ihr anwenden könnt.",
+      "start": 3325826,
+      "end": 3333170,
+      "confidence": 0.7580625000000002,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Wobei da zum Beispiel bei ORMs habe ich dann schon wieder das Problem, wie kann ich denn Prepared Statements bei ORMs verwenden, weil da habe ich keinen direkten Zugriff auf meine SQL Statements. Also auch da wieder muss ich dem ORM Layer vertrauen oder das wirklich checken, was passiert da im Hintergrund und ist da auch wirklich alles sauber implementiert. Was aber wie du sagst bei den großen, hoffe ich mal schon der Fall ist.",
+      "start": 3333210,
+      "end": 3353902,
+      "confidence": 0.7931866666666665,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Das sind eigentlich so die vier, viereinhalb, fünf Maßnahmen. Prepared Statements, aktuelle Visionen nutzen, limitierte Privilegien von euren Users, Web Application Firewalls und dann die entsprechende richtige Nutzung von euren Libraries. Ich bin persönlich eher ein Fan von dem klassischen Datenbank Client. und schreibt dann meine SQL-Statement selbst, weil nur dann kann man wirklich die Einzelheiten deiner MySQL oder Postgre oder ähnliches richtig nutzen, was bei ORMs, speziell bei generierten Statements, oft schwierig ist. Aber da möchte ich keine was vorschreiben, denn auch diese ORMs haben in diversen Fällen ja auch eine Daseinsberechtigung, sonst würden sie, glaube ich, nicht so populär sein.",
+      "start": 3354136,
+      "end": 3391520,
+      "confidence": 0.7935882352941176,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Naja, dieser Mythos vom schnellen Datenbank wechseln, das ist ja auch mehr so ein Mythos und wie oft passiert das in der Realität wirklich? Also ich bin auch kein ORM-Fan, aber da haben wir eh schon in der einen oder anderen Episode schon mal drüber gesprochen. Jetzt Andi, was Was mache ich denn, wenn ich jetzt eine Applikation habe und diese überprüfen will? Was gibt es für Möglichkeiten, jetzt abgesehen davon, dass ich checke, okay, was mache ich in der Applikation? Was gibt es für Testing-Möglichkeiten, um mal zu checken, ob meine Anwendung überhaupt sicher ist?",
+      "start": 3392050,
+      "end": 3423506,
+      "confidence": 0.7753333333333337,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Das ist in der Tat jetzt gar nicht so einfach. Natürlich könnt ihr Unit Tests schreiben und ihr könnt gucken, auch wenn ihr Müll in euer Datenbank Query schreibt, wie euer Code damit umgeht. Sowas könnt ihr machen. Das ist aber dann der klassische Anwendungsfall von Unit Tests, Integration Tests und so weiter und so fort. Das überlasse ich einfach mal bei euch. Die erweiterten Techniken sind eher statische Analyse und dynamisches Testing. Bei der statischen Analyse geht es zum Beispiel um ganz klassisches Static Analysis. Das bedeutet, man baut einen Abstract Syntax Tree auf und untersucht die Applikation in einem nicht ausgeführten Zustand. Da gibt es diverse Static Analysis Tools. Wir verlinken euch auch eine Liste, die nennt sich Awesome Static Analysis. Grüße an den Matthias hier. Da habt ihr zu jeder Sprache mindestens fünf Tools, die statische Analysen auf euren Code fahren können. Das Problem ist bei statischen Analysen, für SQL-Injections, dass das Analyse-Modell natürlich auf die Sprache und sogar gegebenenfalls auf die Library angepasst werden muss. Also auf euren Datenbank-Client oder ähnliches. GitHub CodeQL ist da ganz groß zum Beispiel. Dort könnt ihr zum Beispiel eigene Modelle auch schreiben und die liefern eine ganze Menge schon mit. Verlinken wir euch auch in den Shownotes. Sowas könnt ihr Anwenden ist aber in der Regel nicht einfach ein Fünf-Minuten-Ding, sondern also nicht einfach, ihr schmeißt ein Tool da rein und fertig. Ihr müsst da in der Regel schon mal ein bisschen tiefer gucken, okay, wird denn alles, was ihr da nutzt, wirklich unterstützt? Weil das ist schon sehr, sehr spezifisch. Der Vorteil ist, eure Applikation muss nicht ausgeführt werden, sondern es ist im reinen Quellcode-Zustand analysierbar. Im Bereich dynamischen Testing, da wird es jetzt spannend, meines Erachtens nach. Dynamisches Testing bedeutet eigentlich, ihr habt eure Applikationen irgendwo laufen und schmeißt ein Tool drauf und dieses Tool macht halt, ich sag mal, gewisse Scan-Methodiken. Mein Lieblingstool dafür ist SQL Map. SQL Map ist ein Open-Source-Tool, was in Python geschrieben wurde, was eine ganze Menge Datenbanken unterstützt, wie zum Beispiel MySQL, MSQL, Oracle, Postgre, aber auch sowas wie Amazon Redshift, CockroachDB oder Apache Ignite. SQL Map schmeißt man zum Beispiel einfach eine URL hin mit Parametern, id gleich 5 und Filter gleich Username und so weiter und der untersucht automatisch diese Parameter, nimmt sich die Werte, ersetzt diese und schaut sich verschiedene SQL-Injection-Methoden an. Boolean-Based, Blind, Time-Based, Blind, Error-Based, Union-Based, Query-Based, Stack-Based und Out-of-Band. Also alles das, was wir hier besprochen haben. Du kannst ihm aber auch noch sagen, hey, ich weiß, was das für eine Datenbank ist, deswegen fokussier dich nur auf MySQL. Hey, ich weiß, dass dieser Parameter womöglich eine Lücke hat.",
+      "start": 3423526,
+      "end": 3592671,
+      "confidence": 0.8113047404063201,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Kann ich das auf dem Produktivsystem machen oder zerschießt mir das dann alles?",
+      "start": 3593051,
+      "end": 3597338,
+      "confidence": 0.7416153846153848,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Du kannst das auch auf dem Produktivsystem machen. Ich würde es halt erstmal nicht auf dem Produktivsystem machen, es sei denn, du hast natürlich keine User oder ähnliches. Deswegen mach es auf eurem Staging-System. Du kannst auch sagen, was dann gemacht werden soll, ob Daten verändert werden sollen oder nicht. Und das tolle ist, mit SQL-Map kann man wirklich mal rumspielen, denn durch diese Boolean-Base-Blind-SQL-Injection kannst du SQL-Maps haben, sagen, dumpe mir bitte die komplette Datenbank. Und der macht das dann automatisch. Sehr tolles Tool. Bitte nutzt das nicht zum Hacken bei eurer lokalen Pizzeria, die von Webentwicklung keine Ahnung haben, sondern bitte nur bei euch in einer Umgebung, die ihr selbst kontrolliert, weil auch das ist strafbar, wenn ihr das auf anderen Systemen macht. Aber SQL Map ist meines Erachtens nach ein super Tool, um dynamisches Testing für SQL Injections zu betreiben. Die Limits hier sind natürlich, dass es da um Blackbox-Testing geht. Blackbox-Testing bedeutet, man schaut sich nicht die Logik an, die in der Applikation ausgeführt wird, sondern man schaut wirklich nur von außen drauf und betrachtet das als eine große schwarze Box, was dann natürlich dazu führt, dass tiefe Analysen fehlen, dass sowas wie Second-Order-SQL-Injections, wie wir das vorhin mit dem Backend-System hatten, deutlich schwieriger sind oder vielleicht sogar gar nicht möglich. Und die dritte Art der erweiterten Testtechniken, die kommt jetzt immer mehr und mehr und zwar geht es da ums Fuzzing. Da verlinken wir euch auch mal ein Research Paper, wo sich ein Team hingesetzt hat und hat einen SQL Injection Fuzzer geschrieben, der auf Basis von Machine Learning dann noch lernt und dann die Attacken deutlich intelligenter macht. Was ist Fuzzing? Fuzzing ist eigentlich, man definiert den Methodenkopf und definiert die Inputparameter und in die Inputparameter wird einfach kompletter, müllgenerierter Content reingeschmissen. Das führt im Sicherheitsbereich sehr oft dazu, dass man Out-of-Range-Errors hat, Memory-Zugriffe, die nicht da sein sollten oder, oder, oder, weil dort einfach Content reingeschmissen wird, den man so nicht erwartet und das zu ziemlich vielen Sicherheitslücken führt, beziehungsweise zum Aufdecken dieser Sicherheitslücken. Google ist da unglaublich groß im Fuzzing und meines Erachtens nach wird in den nächsten Jahren Fuzzing immer, immer, immer wichtiger und ich hoffe auch irgendwann, dass das mal im ganz klassischen Produktalltag neben Unit- oder Integration-Tests einen Platz findet. Neben SQL-Map gibt es natürlich auch noch andere Tools. Da gibt es zum Beispiel vom OWASP-Projekt, was wir schon erwähnt haben, den ZAP-Proxy, den nun genannten Z-Attack-Proxy. Das ist generell ein Web-App-Scanner. Der scannt nicht nur auf SQL-Injections, sondern auch auf andere klassische Sicherheitslöcher, Cross-Site-Scripting und Co. Auch ein sehr nettes Ding, covert aber natürlich SQL Injections nicht so im Detail wie SQL Map, deswegen nur als Zusatztool am Rande erwähnt.",
+      "start": 3597498,
+      "end": 3778885,
+      "confidence": 0.8234955752212385,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Jetzt meine Überlegung, gerade wenn ich irgendwelche Services verwende, dann will ich ja das Ganze auslagern, damit ich eben selber keinen Aufwand mehr habe, für was es dann auch immer für Service ist, für die Datenbank oder auch ein komplexeres Service zur Verwaltung von XY, von meinen Personaldaten, keine Ahnung, was es auch immer sein soll. Und eigentlich erwarte mir, dass die Leute dann auch diese ganzen Security-Checks machen. Aber was ich eigentlich vermisse auf den ganzen Webseiten, ist, dass die mir erklären, was die denn machen für ihre Sicherheit. Also die verkaufen mir da ein extrem teures Tool zur Verwaltung von meinen Personaldaten, von meiner Buchhaltung oder auch nur ein Service, Datenbank-Service und die behaupten, es ist super sicher und toll, aber ich kenne eigentlich wenig Services oder gar keine Services, die irgendwie schreiben, was machen sie denn im Detail, um diese Sicherheit zu gewährleisten. Werden solche Penetration-Tests gemacht? Werden solche Testangriffe gemacht? Wie schaut denn das ganze Security-Konzept eigentlich aus bei diesen Services? Kennst du da irgendwas als gutes Vorbild sozusagen, was man sich anschauen könnte? Oder hast du es überhaupt schon mal gesehen?",
+      "start": 3779245,
+      "end": 3844540,
+      "confidence": 0.8089946236559139,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Ja. Die Grundlage sind Zertifizierungen. Beispiel. Klassische ISO-Zertifizierungen oder Zertifizierungen, die für Standards wie PCI DSS und so weiter notwendig sind. PCI DSS ist unter anderem für das Speichern und Verwalten und Managen von Kreditkartendaten notwendig.",
+      "start": 3844580,
+      "end": 3861497,
+      "confidence": 0.8801388888888888,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Ja, aber das hast du jetzt bei den meisten Services nicht so einen hohen Standard, beziehungsweise auch wenn da jetzt irgendein ISO-Standard drinsteht, die wir prüfen, ob du so grundsätzliche Dinge checkst, aber was da im Detail passiert, sieht man eigentlich, also ich kenne kein Beispiel, wo man irgendwie im Detail sieht, wie sieht denn jetzt ein sinnvolles Security-Konzept von diesem Service aus? Und man zahlt ja doch sehr viel für diese Services.",
+      "start": 3862197,
+      "end": 3884693,
+      "confidence": 0.7504520547945203,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Also je nach Zertifizierung und je nach Auditor werden jährliche Berichte erstellt, wo genau so was gecheckt wird. Sind die User wirklich limitiert in den Privilegien und so weiter und so fort? Also ich will nicht sagen, dass da immer alles perfekt ist, aber ich will sagen, dass diverse Zertifizierungen und so strenger der Auditor ist, der in der Regel auch öffentlich zugänglich ist, also man weiß, welche Firma von welchem Auditor gecheckt wird. Dort wird schon genau sowas abgeprüft. Welche Client-Version und ob die überall Prepared Statements und so weiter anwenden? Ne, sowas habe ich jetzt noch nicht gesehen.",
+      "start": 3884713,
+      "end": 3920675,
+      "confidence": 0.8471499999999998,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Also ich glaube, das wäre eigentlich eine gute Möglichkeit, auch um sich abzuheben. Wenn Service ist, ist wirklich proaktiv, wenn die proaktiv nach außen gehen und das auch dementsprechend bewerben, was sie wirklich im Hintergrund machen. Weil man geht immer davon aus, dass diese Services natürlich besser sind, als wenn man das selber machen würde. Und das stimmt wahrscheinlich in den meisten Fällen, weil da halt einfach üblicherweise mehr Leute an nur dem einen Service arbeiten, als wenn man das selber machen würde. Aber im Endeffekt fände ich es trotzdem eigentlich gut, wenn man mehr Informationen darüber bekommen würde, wie die mit solchen Dingen umgehen und das eben auch sehr, sehr offen kommunizieren. Würde mir persönlich zumindest Sicherheit geben und auch wenn es dann um die Auswahl von Services geht, fände ich das natürlich wesentlich besser, als wenn man da nur irgendwelche Marketing-Pages sieht, wo dann irgendwie steht, ja, wir sind ja eh zertifiziert und wir machen alles für die Sicherheit, period.",
+      "start": 3921276,
+      "end": 3972710,
+      "confidence": 0.8303395061728392,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Ja gut, da ist die Frage, wie groß ist die Zielgruppe für diese Information, weil die Erhebung dieser Information ist halt, glaube ich, für das Marketing-Team auch schon nicht einfach. Ja, natürlich kann man... Naja, wenn du.",
+      "start": 3973111,
+      "end": 3982435,
+      "confidence": 0.710810810810811,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Ein Service für Developer machst, wie eine Datenbank, finde ich das eigentlich schon sehr relevant. Und wenn ich jetzt auf Planet Scale zum Beispiel gehe, Ich finde da jetzt keine Details zu irgendwas diesbezüglich. Das ist ein großer Anbieter, dem ich jetzt vertrauen würde, aber ich sehe trotzdem nichts auf der Webseite jetzt mal so direkt.",
+      "start": 3982455,
+      "end": 4000710,
+      "confidence": 0.7410714285714286,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Schreibt ihnen doch einfach mal eine E-Mail und fragt dann mal nach.",
+      "start": 4000730,
+      "end": 4003373,
+      "confidence": 0.6139166666666666,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Ich würde ihnen ja gerne unsere Episode senden, aber das ist wieder deutsch, das ist schwieriger.",
+      "start": 4003393,
+      "end": 4008359,
+      "confidence": 0.6379374999999999,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Die haben bestimmt auch deutsche Mitarbeiter.",
+      "start": 4008379,
+      "end": 4009600,
+      "confidence": 0.6565,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Also falls uns jemand zuhört von Planet Scale, vielleicht könnt ihr das mal weitergeben. Und wie ihr schon vielleicht gemerkt habt, wir sind schon weit über der Zeit unserer normalen Episodenzeit. Zeigt vielleicht auch, wie wichtig dieses Thema ist oder wie umfangreich dieses Thema ist vor allem. Ich wiederhole jetzt nicht nochmal alles, was wir behandelt haben. Schaut in die Shownotes, ihr findet viele, viele Links da drin. Auch den Link zur OWASP-Liste, wo man sehen kann, dass SQL-Injections wieder steigen, kritischer sind in dem ganzen Bereich. Also prüft mal, wie es bei euch in eurer Software aussieht, ob es irgendwo Schwachstellen gibt, ob prepared statements verwendet werden. Und falls wir was vergessen haben, lasst uns das natürlich auch bitte gern wissen. Oder vielleicht irgendwelche Tools, die noch hilfreich sind. Schreibt uns auf Twitter unter engkiosk oder auch direkt E-Mail stetisch at engineeringkiosk.dev.",
+      "start": 4009840,
+      "end": 4060241,
+      "confidence": 0.8046013986013985,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Und natürlich haben wir auch eine Mobilfunknummer, über die ihr uns natürlich kontaktieren könnt. Entweder in geschriebener Form oder, wo wir uns wirklich, wirklich, wirklich drüber freuen würden, nach so einem schönen Audio-Render.",
+      "start": 4060281,
+      "end": 4072351,
+      "confidence": 0.808060606060606,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Ihr dürft auch was Nettes uns schicken in der Voice Message. Muss kein Rant sein. Also Rant an Andi. Wenn es um Andis Sachen geht, mir könnt ihr gern irgendwelche netten Dinge schicken.",
+      "start": 4072731,
+      "end": 4082095,
+      "confidence": 0.6789999999999999,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Telefonnummer findet ihr auf unserer Webseite engineeringkiosk.dev oder in den Shownotes. Wir würden uns auf jeden Fall freuen...",
+      "start": 4082135,
+      "end": 4087237,
+      "confidence": 0.7465555555555556,
+      "channel": null,
+      "speaker": "A"
+    },
+    {
+      "text": "Moment, auf unserer Webseite haben wir keine Telefonnummer veröffentlicht. Vielleicht sollten wir das mal machen. Ich glaube aktuell ist es nur in den Shownotes. Aber vielleicht machen wir es auf der Webseite auch noch, damit wir noch mehr Spam bekommen oder Anrufe auf unsere Telefonnummer.",
+      "start": 4087257,
+      "end": 4098902,
+      "confidence": 0.7651777777777776,
+      "channel": null,
+      "speaker": "B"
+    },
+    {
+      "text": "Wir würden uns auf jeden Fall freuen über eine Nachricht von euch. Das war's von uns diese Woche. Checkt mal eure Applikationen auf Basis von SQL-Injections oder spielt mit SQL-Map rum. Wir wünschen euch viel Spaß dabei. Bis bald! Ciao!",
+      "start": 4098942,
+      "end": 4110850,
+      "confidence": 0.6904250000000001,
+      "channel": null,
+      "speaker": "A"
+    }
+  ],
+  "confidence": 0.8011032808988788,
+  "audio_duration": 4117.0,
+  "webhook_status_code": null,
+  "webhook_auth": false,
+  "summary": null,
+  "auto_highlights_result": null,
+  "content_safety_labels": null,
+  "chapters": null,
+  "sentiment_analysis_results": null,
+  "entities": null
 }
