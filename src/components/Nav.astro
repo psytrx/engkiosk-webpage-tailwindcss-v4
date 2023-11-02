@@ -5,6 +5,8 @@ export interface Props {
 
 const { title } = Astro.props;
 
+import podcastInfo from '../data/podcast-info.json';
+
 // Determine the latest episode
 // We have places where the last episode is linked
 let allEpisodes = await Astro.glob('../pages/podcast/episode/*.md');
@@ -17,13 +19,13 @@ let episode = episodesToShow[0];
 	<div class="bg-tarnsparent">
 		<nav class="flex justify-between p-6 px-4">
 			<div class="flex justify-between items-center w-full">
-				<div class="w-1/2 xl:w-2/12">
-					<a class="block max-w-max" href="/" title="Engineering Kiosk Startseite">
+				<div>
+					<a href="/" title="Engineering Kiosk Startseite">
 						<img class="h-8" src="/images/logos/engineering-kiosk-logo.png" alt="Engineering Kiosk Logo" title="Engineering Kiosk Logo" />
 					</a>
 				</div>
-				<div class="w-6/12 xl:w-8/12">
-					<ul class="hidden xl:flex xl:justify-center">
+				<div class="hidden md:block">
+					<ul class="flex xl:justify-center">
 						<li class="mr-12">
 							<a class="text-coolGray-500 hover:text-coolGray-900 font-medium" href="/" title="Engineering Kiosk Startseite"> Home</a>
 						</li>
@@ -46,14 +48,28 @@ let episode = episodesToShow[0];
 						</li>
 					</ul>
 				</div>
-				<div class="w-6/12 xl:w-4/12">
-					<div class="hidden xl:flex items-center justify-end">
+				<div class="">
+					<div class="hidden xl:block">
 						<a class="inline-block py-2 px-4 mr-2 leading-5 text-coolGray-500 hover:text-coolGray-900 bg-transparent font-medium rounded-md" href={episode.url} title={`Aktuelle Engineering Kiosk Podcast Episode ${episode.frontmatter.title}`}> Aktuelle Episode</a>
-						<a class="inline-block py-2 px-4 text-sm leading-5 text-yellow-50 bg-yellow-500 hover:bg-yellow-600 font-medium focus:ring-2 focus:ring-yellow-500 focus:ring-opacity-50 rounded-md" href="/#jetzt-folgen" title="Höre Engineering Kiosk in deiner Podcast App"> Hören in deiner App...</a>
+						<a class="inline-block py-2 px-4 text-sm leading-5 text-yellow-50 bg-yellow-500 hover:bg-yellow-600 font-medium focus:ring-2 focus:ring-yellow-500 focus:ring-opacity-50 rounded-md" href="/#jetzt-folgen" title="Höre Engineering Kiosk in deiner Podcast App">in deiner App 🎧</a>
 					</div>
 				</div>
+				<div class="flex md:hidden m-auto">						
+					<a href={podcastInfo.platformLinks.appleMusic} title="Engineering Kiosk bei Apple Podcasts">
+						<img class="w-6 grayscale mx-2" src="/images/brands/apple.svg" alt="Engineering Kiosk bei Apple Podcasts" title="Engineering Kiosk bei Apple Podcasts" />
+					</a>
+					<a href={podcastInfo.platformLinks.spotify} title="Engineering Kiosk bei Spotify">
+						<img class="w-6 grayscale mx-2" src="/images/brands/spotify.svg" alt="Engineering Kiosk bei Spotify" title="Engineering Kiosk bei Spotify" />
+					</a>
+					<a href={podcastInfo.platformLinks.pocketCasts} title="Engineering Kiosk auf Pocket Casts">
+							<img class="w-6 grayscale mx-2" src="/images/brands/pocketcasts.svg" alt="Engineering Kiosk bei Pocket Casts" title="Engineering Kiosk bei Pocket Casts" />
+					</a>
+					<a href={podcastInfo.platformLinks.rss} title="Engineering Kiosk als RSS-Feed">
+						<img class="w-6 grayscale mx-2" src="/images/brands/rss.svg" alt="Engineering Kiosk als RSS-Feed" title="Engineering Kiosk als RSS-Feed" />
+					</a>
+				</div>
 			</div>
-			<button class="navbar-burger self-center xl:hidden" aria-label="Öffne das Navigations-Menü" onclick="openMenu()">
+			<button class="navbar-burger self-center md:hidden" aria-label="Öffne das Navigations-Menü" onclick="openMenu()">
 				<svg width="35" height="35" viewbox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
 					<rect class="text-coolGray-50" width="32" height="32" rx="6" fill="currentColor"></rect>
 					<path
