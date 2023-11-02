@@ -1,0 +1,58 @@
+---
+import Footer from '../components/Footer.astro';
+import MainHead from '../components/MainHead.astro';
+import Nav from '../components/Nav.astro';
+import PodcastEpisodeListing from '../components/PodcastEpisodeListing.astro';
+
+let title = 'Das Engineering Kiosk';
+let description = 'Alle Episoden vom deutschsprachigen Software-Engineering-Podcast mit Wolfgang Gassler und Andy Grunwald über die Themen Engineering-Kultur, Open Source und Technologie.';
+const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+
+import podcastInfo from '../data/podcast-info.json';
+
+const platforms = [
+	{ "name": "Apple", "image": "/images/brands/apple.svg", "href": podcastInfo.platformLinks.appleMusic },
+	{ "name": "Spotify", "image": "/images/brands/spotify.svg", "href": podcastInfo.platformLinks.spotify },
+	{ "name": "Amazon", "image": "/images/brands/amazonmusic_black.svg", "href": podcastInfo.platformLinks.amazonMusic },
+	{ "name": "YouTube", "image": "/images/brands/youtube.svg", "href": podcastInfo.platformLinks.youTube },
+	{ "name": "TikTok", "image": "/images/brands/tiktok.svg", "href": "https://www.tiktok.com/@engineeringkiosk" },
+	{ "name": "Instagram", "image": "/images/brands/instagram.svg", "href": "https://www.instagram.com/engineeringkiosk/" },
+	{ "name": "RSS", "image": "/images/brands/rss.svg", "href": podcastInfo.platformLinks.rss },
+]
+
+---
+
+<html lang="de">
+	<head>
+		<MainHead title={title} description={description} image="/images/logos/pocast-episode-logo-cover.png" {canonicalURL} />
+	</head>
+
+	<body class="antialiased bg-body text-body font-body">
+		<div>
+			<Nav title={title} />
+
+			<section class="relative bg-white overflow-hidden" style="background-image: url('/images/elements/pattern-white.svg'); background-position: center;">
+				<div class="py-12 md:py-28">
+					<div class="container px-4 mx-auto text-center">
+						<h1 class="text-3xl md:text-5xl lg:text-5xl 2xl:text-6xl leading-tight font-bold tracking-tight">Der Engineering Kiosk Podcast</h1>
+						<img class="inline-block m-4 w-1/2 md:w-1/3 rounded-7xl mt-8" src="/images/headers/andy-grunwald-wolfgang-gassler-lounge.jpg" alt="Andy Grunwald und Wolfgang Gassler am 06. Februar 2023 in Duisburg" title="Andy Grunwald und Wolfgang Gassler am 06. Februar 2023 in Duisburg" />
+					</div>
+					<div class="text-center mt-4">
+						{
+							platforms.map((platform) => (
+								<a class="inline-block" href={platform.href} title={`Engineering Kiosk bei ${platform.name}`}>
+									<img class="m-2 h-8 grayscale" src={platform.image} alt={`Engineering Kiosk bei ${platform.name}`} title={`Engineering Kiosk bei ${platform.name}`} />
+								</a>
+							))
+						}
+					</div>
+				</div>
+				
+			</section>	
+
+			<PodcastEpisodeListing numberOfItems="6" />
+
+			<Footer />
+		</div>
+	</body>
+</html>
