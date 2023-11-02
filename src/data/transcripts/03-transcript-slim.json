@@ -1,650 +1,650 @@
 {
-  "language_code": "de",
-  "audio_url": "https://audio1.redcircle.com/episodes/8ab59758-598f-459b-8d7f-f832ced2b87f/stream.mp3",
-  "punctuate": true,
-  "format_text": true,
-  "dual_channel": false,
-  "webhook_url": null,
-  "webhook_auth_header_name": null,
-  "webhook_auth_header_value": null,
-  "audio_start_from": null,
-  "audio_end_at": null,
-  "word_boost": [],
-  "boost_param": null,
-  "filter_profanity": false,
-  "redact_pii": false,
-  "redact_pii_audio": false,
-  "redact_pii_policies": null,
-  "redact_pii_sub": null,
-  "speaker_labels": true,
-  "speakers_expected": 2,
-  "content_safety": false,
-  "content_safety_confidence": null,
-  "iab_categories": false,
-  "custom_spelling": null,
-  "disfluencies": false,
-  "sentiment_analysis": false,
-  "auto_chapters": false,
-  "entity_detection": false,
-  "summarization": false,
-  "summary_model": null,
-  "summary_type": null,
-  "auto_highlights": false,
-  "language_detection": false,
-  "speech_threshold": null,
-  "id": "62bhv7780y-beca-419e-be0a-9fc6c40a0232",
-  "status": "completed",
-  "error": null,
-  "utterances": [
-    {
-      "text": "Willkommen im Engineering Kiosk. Heute haben wir im Sonderangebot Overengineering. Was das ist, erklären wir gleich und ich diskutiere auch mit Andi, ob es Underengineering gibt, wie Hacker News Overengineering beeinflusst und wenn ihr wirklich dranbleibt, dann plaudern wir auch ein paar Geheimnisse aus. Zum Beispiel, welche Leichen die Wissenschaft, aber auch Google, im Keller haben.",
-      "start": 2405,
-      "end": 24357,
-      "confidence": 0.8322321428571428,
-      "channel": null,
-      "speaker": "A"
-    },
-    {
-      "text": "Guten Morgen Wolfgang, ich freue mich wieder an einem schönen Montagmorgen mit dir zusammen zu sitzen, um eine neue Folge vom Engineering Kiosk aufzunehmen. Wie geht's dir?",
-      "start": 29230,
-      "end": 37676,
-      "confidence": 0.7300370370370372,
-      "channel": null,
-      "speaker": "B"
-    },
-    {
-      "text": "Schönen guten Morgen, es ist wie immer früh, ist ja fast mitten in der Nacht, aber das macht man nicht alles für eine neue Podcast-Folge.",
-      "start": 37716,
-      "end": 44600,
-      "confidence": 0.7949999999999998,
-      "channel": null,
-      "speaker": "A"
-    },
-    {
-      "text": "Für die Hörer, wir haben gerade 10.52 Uhr und der Wolfgang war jahrelang Akademiker. Ich bin mir nicht sicher, ob es da einen Zusammenhang gibt. Das überlasse ich euch. Aber, Wolfgang, mitten in der Nacht gutes Stichwort. Du hast mir eine ganze Zeit lang schlaflose Nächte bereitet durch deine Kritik in den vorherigen Podcast-Folgen, dass ich mit meinem Side-Project und dem Einsatz eines Message-Queue-Servers von RabbitMQ over-engineert habe. Und ich frage mich die ganze Zeit, warum? Was hätte ich anders tun sollen, um dein Verständnis zu kriegen?",
-      "start": 45045,
-      "end": 76482,
-      "confidence": 0.7051379310344826,
-      "channel": null,
-      "speaker": "B"
-    },
-    {
-      "text": "Ich habe jetzt sogar ein wirklich schlechtes Gewissen, muss ich sagen. Ich habe das ähnliche Gefühl gehabt nach den Podcast-Folgen. Wir haben so oft schlecht über Over-Engineering gesprochen und eigentlich glaube ich, dass das mehr eigentlich als Schimpfwort verwendet wird heutzutage, als dass es wirklich Substanz hat und dass es wirklich ein Problem gibt. Ich glaube, RabbitMQ ist sicher eine super Lösung und vor allem im Vergleich zum Selberprogrammieren, wenn man das neu programmiert, was immer eine schlechte Idee ist. Meiner Meinung nach, wenn es eine gute Lösung am Markt gibt, die man verwenden kann, dann macht es auf jeden Fall Sinn, die zu verwenden und ist in dem Fall nicht overengineering, würde ich so mal sagen. Aber was ist denn für dich overengineering, wenn wir bei dem Thema bleiben?",
-      "start": 76502,
-      "end": 119893,
-      "confidence": 0.8144692307692306,
-      "channel": null,
-      "speaker": "A"
-    },
-    {
-      "text": "Für mich ist Overengineering, wenn man an seinem eigentlichen Problem gar nicht mehr arbeitet, sondern einfach nur die Probleme drumherum löst.",
-      "start": 119973,
-      "end": 127373,
-      "confidence": 0.8415714285714286,
-      "channel": null,
-      "speaker": "B"
-    },
-    {
-      "text": "Hast du da ein Beispiel?",
-      "start": 127433,
-      "end": 128235,
-      "confidence": 0.1544,
-      "channel": null,
-      "speaker": "A"
-    },
-    {
-      "text": "Nehmen wir mal das Beispiel, wir wollen Kundendaten aus einer Tabelle, aus einer Datenbanktabelle auslesen und diese anzeigen. Wir könnten ganz einfach eine Datenbankverbindung aufbauen, eine Datenbankabfrage absetzen und die Daten in einer Ansicht wie z.B. HTML rendern. Wir könnten aber auch einen kompletten ORM einsetzen, die Query komplett optimieren, so dass diese in unter einer Millisekunde funktioniert, komplette Verfügbarkeit einbauen mit Reconnection Support etc. etc. Wir könnten eine hochkomplexe Template Engine einbauen, damit wir für jeden möglichen Anwendungsfall gewappnet sind, obwohl das eigentlich gar nicht gebraucht wird, weil wir wollen ja eigentlich nur ein Listing unserer Kunden. Das ist jetzt mal sehr vereinfacht gesagt.",
-      "start": 129351,
-      "end": 170308,
-      "confidence": 0.8066761904761901,
-      "channel": null,
-      "speaker": "B"
-    },
-    {
-      "text": "Du hast da einen sehr wichtigen Punkt. Es geht auch darum, was du erreichen willst und in welchem Umfeld du das Ganze machst. Wenn du jetzt sprichst, okay, du willst einen Prototyp machen, du hast ein Side-Project, du willst mit dem starten, dass du alle Kunden auflistest auf einer Website. Dann hast du sicher andere Anforderungen, als wenn du bei Trivago, wo hunderte Entwickler an der gleichen Codebase arbeiten, wenn du dort etwas implementierst oder weiterentwickelst, dann hast du sicher ganz andere Anforderungen und da ist Over-Engineering dann natürlich was ganz anderes, als wenn du ein Prototypen schreibst. Und ich glaube, darum war das Over-Engineering auch so präsent in unseren letzten Talks, weil es um Side-Projects gegangen ist. Und in einem Side-Project hast du, oder wäre meine Herangehensweise, dass man einfach einfach startet und wirklich schnell zu einem Ergebnis kommt. Aber wenn ich jetzt im Trivago-Umfeld wieder als Beispiel, wenn ich dort Kunden aufliste, dann mache ich das natürlich mit einem anderen System, mit einem komplexeren System, weil ich da ja auch weitsichtig arbeiten will und auch weiß, dass da nicht nur das kommt, sondern eine Woche später kommt noch was anderes. Da gibt es ja hoffentlich auch eine Vision, wo soll so ein Produkt hingehen und was soll mit dem erreicht werden. Und das ist natürlich ein kompletter Unterschied zu irgendeinem Prototypen, wo man einfach schnell mal was ausprobiert und irgendwie schnell zu einem Ergebnis kommen will.",
-      "start": 170569,
-      "end": 258733,
-      "confidence": 0.7965210084033613,
-      "channel": null,
-      "speaker": "A"
-    },
-    {
-      "text": "Aber da sind wir doch gerade schon beim Knackpunkt. Du beschreibst ja gerade genau das, was ich auch sage, dass man in einem gewissen Umfeld Probleme lösen soll, weil sie kommen. Aber in meiner Erfahrung, die heutige Geschäftswelt ist so komplex und schnelllebig, dass wenn du sagst, diese Anforderung kommt nächste Woche, habe ich das schon sehr oft erlebt, dass diese Anforderungen erst gar nicht kamen. Und somit hast du schon wieder Over-Engineering betrieben, weil du ein Problem gelöst hast, was zurzeit noch gar nicht auf dem Tisch liegt. Und dann kommt sehr wahrscheinlich auch die Frage von irgendeinem Manager, von deinem Vorgesetzten, warum dauert das denn so lange? Es kann doch nicht so komplex sein, zehn Kunden aus einer Datenbacktabelle auszulesen.",
-      "start": 258774,
-      "end": 296290,
-      "confidence": 0.8309016393442622,
-      "channel": null,
-      "speaker": "B"
-    },
-    {
-      "text": "Also, ich glaube, das wird auch gerne von den Chefs verwendet. Die springen sehr schnell auf dieses Over-Engineering-Stichwort auf. Ich kann mich erinnern an einen unserer Chefs, den wir beide mal hatten. Der ist da auch sehr, sehr schnell aufgesprungen, sobald jemand irgendwie was sinnvoll entwickelt hat. Und ich kann mir dann ein Beispiel erinnern. Der Kollege, da ist es nur darum gegangen, wie speichere ich Länder ab, also was für eine Sprache zum Beispiel verwendet wird für irgendeinen Inhalt. Und ich glaube, der hat einige Meetings gemacht und jeder würde natürlich sagen, um Gottes Willen, warum macht der schon wieder ein Meeting? Es geht ja nur um irgendwelche Länder und speicher einfach eins für Deutschland, zwei für USA und drei für Italien zum Beispiel. Aber wenn man sich das Problem dann genauer ansieht, da geht es um Daten, die in zehn verschiedenen Teams verwendet werden, die möglichst einheitlich sein sollen. Ländercodes sind super kompliziert. Wenn man in die Schweiz schaut zum Beispiel, da gibt es Deutsch, Italienisch und Französisch. Also es gibt Gibt da auch Standards, die man verwenden kann? Und wenn man da eine Lösung baut, die Trivago-weit von hunderten Entwicklern irgendwie unterstützt werden soll und verwendet werden soll, da muss man sich das natürlich genauer ansehen. Was macht man da wirklich in so einem komplexen System wie Trivago, wo es, keine Ahnung, 60 Sprachen oder sowas gibt, die unterstützt werden und noch mehr Länder? dann muss man da natürlich andere Maßstäbe setzen. Und da kommt natürlich dieses Wort sofort, ja, das ist overengineering, das ist nur, weil derjenige so einen akademischen Background hat oder von der Uni kommt und alles so machen will wie auf der Uni. Aber man vergisst dann, wie komplex sowas ist und wenn man es in so einem großen Umfeld wirklich sinnvoll umsetzen will. Und du kennst es ja auch, bei Firmen oder auch wenn der Code läuft, der noch zehn Jahre alt ist oder wo Sachen, Entscheidungen, die vor zehn Jahren passiert sind, noch immer hereinreichen und Sachen wesentlich komplizierter machen, weil einfach die falsche Entscheidung vor zehn Jahren getroffen worden ist und das ist dann für immer so geblieben und man hat einfach immer diesen falschen ID-Wert oder diese falsche Bezeichnung verwendet und es wird dann so in Stein gemeißelt. Bei solchen Entscheidungen, finde ich, ist es sehr, sehr wichtig, weil man einfach mehr Zeit investiert und das kann dann ein Chef gerne als Oberengineering sehen oder du jetzt auch. Solche Entscheidungen sind einfach wichtig, aber du hast vollkommen recht, man soll nicht alles prophezeien und einfach vorhersagen sind schwierig, vor allem wenn sie die Zukunft betreffen, heißt es ja immer. Man soll nicht irgendwelche Features vordenken oder zu weit denken, sondern halt einfach so das Ganze bauen, dass es offen ist für Erweiterungen. Aber ich glaube, bei so Kernentscheidungen kann man sich ruhig auch Zeit nehmen und sich überlegen, wenn das wirklich ein ganz großes System betrifft oder ganz viele Leute, dann kann man da auch gewisse Zeit investieren. Aber das macht man natürlich normalerweise weniger bei einem Side-Project.",
-      "start": 297030,
-      "end": 473047,
-      "confidence": 0.8273163064833009,
-      "channel": null,
-      "speaker": "A"
-    },
-    {
-      "text": "Du hast aber gerade von Quellcode gesprochen, der zehn Jahre läuft. Hast du den jetzt als overengineered oder als underengineered bezeichnet?",
-      "start": 473647,
-      "end": 480090,
-      "confidence": 0.6825714285714284,
-      "channel": null,
-      "speaker": "B"
-    },
-    {
-      "text": "Wenn die falschen Entscheidungen getroffen worden sind, dann finde ich, ist es underengineert, weil damals halt sich niemand die Zeit genommen hat, mal zu einer Stunde zu schauen, okay, gibt es da vielleicht einen internationalen Standard, wenn wir bei den Ländercodes bleiben. Es gibt natürlich internationale Standards und wenn sich da einmal jemand ein paar Stunden hingesetzt hätte und geschaut hätte, was gibt es denn, was können wir verwenden, dann wäre es meiner Meinung nach kein overengineering gewesen, sondern richtiges engineering. Aber vielleicht hat damals ein Manager gesagt, wir haben keine drei Stunden Zeit für diese Ländercodes, mach mal einfach irgendwas mit IDs.",
-      "start": 480394,
-      "end": 514039,
-      "confidence": 0.8250194174757278,
-      "channel": null,
-      "speaker": "A"
-    },
-    {
-      "text": "Und du hattest den akademischen Background von der Person angesprochen. Denkst du, dass wenn man mehr über die Theorie weiß, dass man einen Hang zum Overengineering hat? Denkst du, da gibt es eine Relation?",
-      "start": 514078,
-      "end": 526763,
-      "confidence": 0.6827352941176469,
-      "channel": null,
-      "speaker": "B"
-    },
-    {
-      "text": "Ich fühle mich da ja immer fast persönlich angegriffen, nachdem ich ja lange in der wissenschaftlichen Welt auch unterwegs war, weil immer alle sagen, ja, du kommst ja von der Uni, da muss alles perfekt sein. Das können nur Leute sagen, die noch nie auf der Uni waren, weil alles, was ich gesehen habe auf der Uni, was programmiert worden ist, fast unterster Standard. Es ist alles andere als overengineert. Es ist nur, um möglichst schnell zu einem Ergebnis zu kommen, weil meistens geht es nur darum, ich kann ein Ergebnis veröffentlichen und alles, was programmiert wird, ist super dreckig, muss man ganz ehrlich sagen. Ehrlich sagen. Natürlich, es gibt Studienrichtungen, wo es dann wirklich um schöne Architektur oder sowas geht oder wie man richtige Architektur macht. Natürlich, das ist die Theorie dann dahinter. Auf das stützen sich dann viele. Aber im Großen und Ganzen, wissenschaftliche Welt ist dreckig. Das Programmieren möchte ich nur mal ganz klar sagen. Also ich habe nie einen schönen wissenschaftlichen Code gesehen, um mal das einzuwerfen.",
-      "start": 527063,
-      "end": 579718,
-      "confidence": 0.7693567251461988,
-      "channel": null,
-      "speaker": "A"
-    },
-    {
-      "text": "Du hast jetzt zwei Welten miteinander verglichen. Die geschäftliche Welt, wo du ein bisschen Overengineering für gut befindest. Die akademische Welt, wo du sagst, dort gibt es sowas eigentlich gar nicht. Ich frage mich gerade, wann weiß ich denn, wann ich da Arbeit reinstecken soll, um ein bisschen mehr über die Problemdomäne zu erfahren und wann ich einfach loslegen sollte. Also da bin ich jetzt ein bisschen überfragt.",
-      "start": 580098,
-      "end": 603688,
-      "confidence": 0.8260294117647057,
-      "channel": null,
-      "speaker": "B"
-    },
-    {
-      "text": "Das ist auch eine extrem schwierige Frage und ich möchte nur nochmal sagen, ich glaube eben nicht, dass es Over-Engineering ist, aber man sollte auch nicht davon sprechen, in einem Enterprise-Umfeld sollte man Over-Engineeren, weil das ist eben nicht Over-Engineering. Over-Engineering wird dann gern als Schimpfwort wieder von irgendeinem Manager verwendet. Aber es ist eigentlich ordentliches Engineering. Und klar ist die Gratwanderung sehr schwierig. Und ich würde eigentlich in dem Bereich vor allem immer darauf schauen, wie viele Leute arbeiten mit dem Produkt. Und dementsprechend kann man auch ganz gut sehen, glaube ich, in welche Richtung man gehen muss. Weil am Anfang, wenn ich alleine bin, kann ich mal relativ dreckig beginnen. Wenn ich in einem Umfeld bin, wo 300 Entwickler an demselben Code arbeiten, dann ist es, finde ich, viel, viel kritischer, dass man extrem sauber programmiert, dass man die Schnittzellen sauber definiert, dass man Zeit investiert in die Kommunikation mit den anderen Teams, dass alle den gleichen Wissensstand haben und so weiter. Also da gibt es dann viele Bereiche, die da auch noch mit reinfließen. Wir sprechen jetzt nur über den Code, aber es gibt ja auch viele andere Bereiche, wo man overengineeren kann, Design, Product, wo auch immer.",
-      "start": 604060,
-      "end": 673447,
-      "confidence": 0.8192985074626864,
-      "channel": null,
-      "speaker": "A"
-    },
-    {
-      "text": "Du redest jetzt sehr, sehr viel von Theorie. Wenn das dann ist und wenn die Teamgröße größer als 7 ist.",
-      "start": 673787,
-      "end": 679270,
-      "confidence": 0.7896,
-      "channel": null,
-      "speaker": "B"
-    },
-    {
-      "text": "Ja, du wolltest ein Regelwerk.",
-      "start": 679290,
-      "end": 682771,
-      "confidence": 0.466,
-      "channel": null,
-      "speaker": "A"
-    },
-    {
-      "text": "Jetzt schieben wir den Akademiker mal zur Seite und lassen mal den Ruhrpott wieder raushängen. Lass uns mal zur Praxis. Lass uns mal die Hände dreckig machen. Ist die meiste Java-Software zum Beispiel overengineert? Ich meine, Java ist bekannt dafür, jedes Designpattern anzuwenden, was es gibt. Factory over Factory, over Designpattern etc. Wie ist deine Meinung dazu?",
-      "start": 682811,
-      "end": 703160,
-      "confidence": 0.7525789473684209,
-      "channel": null,
-      "speaker": "B"
-    },
-    {
-      "text": "Also ich glaube, es liegt grundsätzlich nicht an der Sprache. Natürlich ist Java sehr verbose, wie man das auch immer auf Deutsch sagt. Man muss viel schreiben, im Normalfall, um an dasselbe Ergebnis zu kommen. Aber diese ganzen Patterns, die du anwendest, die sind ja nicht von Java vorgegeben. Also die wendest du ja freiwillig an. Und bei Patterns bin ich auch der Meinung, dass das nicht unbedingt Overengineering ist. Klar kann man vieles overengineeren und es gibt das klassische Beispiel, wenn du eine Klasse hast, dann brauchst du ein Interface dazu, was natürlich kompletter Blödsinn ist, weil meiner Meinung nach brauchst du ein Interface genau dann, sobald du mehrere Implementierungen hast und es gibt so Leute, die machen einfach für alles ein Interface, egal ob es da mehrere Implementierungen gibt oder nicht. Das zählt für mich einfach unter frühzeitige oder voreilige Optimierung, premature optimization, weil das kann man auch später einführen, wenn es dann eine zweite Implementierung dann gibt für eine Klasse.",
-      "start": 703380,
-      "end": 758102,
-      "confidence": 0.8017116564417182,
-      "channel": null,
-      "speaker": "A"
-    },
-    {
-      "text": "Aber kann man nicht prinzipiell dreckig mit allem starten und das dann später schön machen?",
-      "start": 758503,
-      "end": 764110,
-      "confidence": 0.746,
-      "channel": null,
-      "speaker": "B"
-    },
-    {
-      "text": "Ich hatte eine lange Diskussion mal mit einem Entwickler genau darüber, weil ich glaube, es gibt viele Entwickler, die sagen, man kann auch sehr schön sauber programmieren, ohne dass man viel Zeit verliert. Und ich glaube, das stimmt auch, wenn man sehr gut darin ist, die Patterns kennt, dann werden die einfach natürlich angewendet. Es ist so ähnlich, wie wenn du zum Beispiel für deine Infrastruktur automatisch immer, wie nennt sich diese Language, um allgemeingültig auf allen Clouds was zu deployen.",
-      "start": 764701,
-      "end": 794968,
-      "confidence": 0.8584074074074075,
-      "channel": null,
-      "speaker": "A"
-    },
-    {
-      "text": "Terraform.",
-      "start": 795049,
-      "end": 796049,
-      "confidence": 0.542,
-      "channel": null,
-      "speaker": "B"
-    },
-    {
-      "text": "Danke.",
-      "start": 796089,
-      "end": 796689,
-      "confidence": 0.642,
-      "channel": null,
-      "speaker": "A"
-    },
-    {
-      "text": "HashiCorp Configuration Language, ganz genau. Und Terraform ist das Tool.",
-      "start": 796729,
-      "end": 800530,
-      "confidence": 0.44109999999999994,
-      "channel": null,
-      "speaker": "B"
-    },
-    {
-      "text": "Wenn du zum Beispiel Terraform verwendest, um irgendwas automatisiert zu deployen, dann werden auch viele sagen, what the fuck, warum? Das kann man doch einfach dreckig lösen. Aber für dich ist das einfach der Standard und du bist wahrscheinlich schneller damit, als wenn du das manuell irgendwo aufsetzt. Und so ähnlich sehe ich das mit Patterns. Wenn Programmierer sehr gut in dem Umfeld sind und genau wissen, was sie machen, dann kann das sogar das Ganze beschleunigen und trotzdem einen sehr sauberen Code am Ende ausspucken in dem Projekt. Und andere Entwickler können dann schneller damit weiterarbeiten. Also ich glaube, Patterns sind nicht automatisch overengineering. Und Terraform ist nicht automatisch overengineering. Also es kommt wirklich darauf an, was du gewöhnt bist, was die anderen Entwickler gewöhnt sind. Und dann kann man auch sauber arbeiten. Also man muss nicht unbedingt immer dreckig arbeiten, um schnell an ein Ergebnis zu kommen. Aber wenn es natürlich gerade in einem Bereich ist, wo man neu ist, dann wird man wahrscheinlich eher dreckiger starten müssen, weil man einfach weniger Erfahrung hat.",
-      "start": 800550,
-      "end": 862011,
-      "confidence": 0.811568181818182,
-      "channel": null,
-      "speaker": "A"
-    },
-    {
-      "text": "Ich denke, ich muss da jetzt aber mal eine Lanze brechen. Und zwar, wenn ich immer nur das nutze, was ich schon kenne, ist mir als Entwickler ja super langweilig. Als Entwickler habe ich natürlich auch einen gewissen Entdeckungsdrang. Ich möchte mehr lernen, andere Technologien, andere Tools. Und deswegen versuche ich natürlich auch, neue Technologie, neue Tools in meinem aktuellen Anwendungsfall, in meinem Code, um ein Problem zu lösen, einzuführen. Und jetzt sagst du, nimm doch bitte immer das, was du schon kennst, dann bist du schneller, dann ist das auch kein Over-Engineering. Wie passt das zusammen?",
-      "start": 862171,
-      "end": 891278,
-      "confidence": 0.7544742268041238,
-      "channel": null,
-      "speaker": "B"
-    },
-    {
-      "text": "Also was ich gemeint habe, du hast mich vielleicht auch falsch verstanden, ist, dass wenn man sich in dem Bereich gut auskennt, dass es nicht overengineering ist automatisch, nur weil andere Leute sich nicht auskennen. Da kommt wieder dieses Schimpfwort ins Spiel, RabbitMQ ist overengineering, was ich gesagt habe, weil ihr halt einfach weniger Wissen habt und für mich ist das eine Riesentechnologie und warum sollte man die anwenden für den einfachen Use Case. Darum dieses Schimpfwort Overengineering. Das heißt aber nicht, dass man keine neuen Technologien einsetzen kann oder lernen kann oder sich mit neuen Sachen befassen kann. Da ist halt immer die Frage, wann hat man diese Zeit und wann hat man die Zeit, wo man diese neuen Sachen lernen kann oder die Zeit investieren kann, um neue Technologien ausprobieren zu können. Hoffentlich sind es nicht nur Side Projects, hoffentlich hat der Arbeitgeber das auch so weit im Blick, dass man in einem Job auch lernen darf und hoffentlich soll, neue Technologien oder was es auch immer ist.",
-      "start": 892282,
-      "end": 952226,
-      "confidence": 0.8263588235294123,
-      "channel": null,
-      "speaker": "A"
-    },
-    {
-      "text": "Kennst du das Konzept der Innovation Tokens?",
-      "start": 953423,
-      "end": 955265,
-      "confidence": 0.665,
-      "channel": null,
-      "speaker": "B"
-    },
-    {
-      "text": "Erklär mal.",
-      "start": 955325,
-      "end": 955985,
-      "confidence": 0.4815,
-      "channel": null,
-      "speaker": "A"
-    },
-    {
-      "text": "Du sagtest gerade, hoffentlich gibt der Arbeitgeber dir entsprechend Zeit, um dich weiterzubilden, neue Konzepte, neue Methoden, neue Technologien zu lernen. Doch ich habe die Erfahrung gemacht, immer wenn ich einen kleinen Prototypen baue mit neuer Technologie, dann funktioniert der immer. Und immer wenn ich das versuche in Produktion einzusetzen, also wirklich einzusetzen, dann komme ich immer recht schnell an Grenzen, die ich vorher gar nicht gesehen habe, weil ich dann wirklich ein reales Problem löse. Das Konzept der Innovations Tokens ist so gemeint, dass du eine gewisse Anzahl an Tokens zu vergeben hast, wo du innovativ bist. Und innovativ heißt in diesem Falle, eine neue Datenbanktechnologie einzusetzen, eine neue Sprache einzusetzen, etc., um in deinem Projekt nur eine gewisse Anzahl an Herausforderungen zu haben. Und die anderen Herausforderungen werden durch Lösungen gelöst, die das Team bereits kennt. Einen Moment, mein Hund hier gerade mal eben, bitte.",
-      "start": 956005,
-      "end": 1007208,
-      "confidence": 0.817517006802721,
-      "channel": null,
-      "speaker": "B"
-    },
-    {
-      "text": "Während Andi versucht da seinen Hund zu beruhigen, versuche ich dabei mal zu antworten. Ich finde eine sehr gute Herangehensweise an das Ganze, auch wenn das Ganze eher in Richtung Innovation und Lernen geht, weniger in Over-Engineering. Ich glaube, das wird eben auch immer verwechselt, dass neue Technologien irgendwie automatisch Over-Engineering ist. Eine neue Technologie kann ja auch Sachen vereinfachen und muss nicht unbedingt irgendwas komplexer machen.",
-      "start": 1009341,
-      "end": 1035311,
-      "confidence": 0.8131194029850745,
-      "channel": null,
-      "speaker": "A"
-    },
-    {
-      "text": "Das ist korrekt, aber woher weißt du denn, dass die neue Technologie es nicht komplexer macht und es vereinfacht? Also ich meine, das weißt du doch erst, wenn du es eingebaut hast, oder? Und mal wirklich genutzt und die Erfahrung gemacht hast.",
-      "start": 1035542,
-      "end": 1046948,
-      "confidence": 0.7318333333333334,
-      "channel": null,
-      "speaker": "B"
-    },
-    {
-      "text": "Oder du hast dich mal schlau gemacht und weißt ganz genau, was diese Software macht oder diese Library. Oder man probiert sie mal schnell aus. Du hast ja auch auf Twitter gefragt, was die Leute unter Over-Engineering verstehen. Was hast du denn dafür Antworten bekommen?",
-      "start": 1046988,
-      "end": 1062355,
-      "confidence": 0.7677999999999999,
-      "channel": null,
-      "speaker": "A"
-    },
-    {
-      "text": "Ja genau, ich wollte die Zuhörer einfach mal in unseren Podcast ein bisschen mit einbinden und habe auf Twitter gefragt, was deren erster Gedanke zum Thema Overengineering ist. Und wir haben eine größere Anzahl an Antworten bekommen, was uns sehr freut. Und da waren ziemlich viele verschiedene Ansichten bei, was mir auch gezeigt hat, jeder hat ein unterschiedliches Verständnis von Overengineering. Hier mal ein paar Antworten auf meine Frage. Zu viel Zeitaufwand und zu schwer zu verstehen. Man hätte das Problem mit einer einfachen Lösung lösen können. You ain't gonna need it. Vorzeitige Optimierung und übermäßige Anwendung des Dry-Prinzips, das zu einer engen Kopplung zwischen nicht miteinander verbundenen Bereichen führt. Abstraktionsebenen. Den finde ich schön, den nächsten. Erster Gedanke, das Armaturenbrett eines modernen Autos. Zweiter Gedanke, eine einfache Webseite, die mit Frameworks auf Frameworks auf Template Engines auf weiteren Frameworks auf Routern auf Containern auf AWS den ganzen Weg nach unten gemacht wurde. Ich glaube, das ist die Mehrheit der heutigen Websites. Dependency Injection und die Zwiebelarchitektur und das, was du auch im Vorhinein gesagt hattest, Interfaces für Klassen, die höchstwahrscheinlich nie eine weitere Implementierung benötigen.",
-      "start": 1062720,
-      "end": 1132753,
-      "confidence": 0.829360215053764,
-      "channel": null,
-      "speaker": "B"
-    },
-    {
-      "text": "Mit was bist du einverstanden?",
-      "start": 1133785,
-      "end": 1135306,
-      "confidence": 0.6826000000000001,
-      "channel": null,
-      "speaker": "A"
-    },
-    {
-      "text": "Ich glaube mit der Mischung aus allem. Also auf der einen Seite stimme ich zu, auf der anderen Seite irgendwie nicht. Nehmen wir mal ein Beispiel, wo ich zustimme. Mit den klassischen Programmierparadigmen wie you ain't gonna need it oder don't repeat yourself. Ich glaube da bin ich d'accord mit. Zu schwer zu verstehen, finde ich, ist schwierig, weil das ein höchst subjektiver Begriff ist. Ich verstehe etwas nicht, wenn ich das Vorwissen nicht habe. Und da muss man einfach sein Team oder seine Kollegen kennen. Aber wenn ich jetzt drüber rede, fällt mir auch ein, Was ich zum Beispiel nie bei Quellcode verstehe ist Byte-Shifting. Und ich habe schon ein paar Entwickler gesehen, die haben dann eine Prozedur geschrieben, die Byte-Shifting enthält, weil die Programmierer dachten, das ist nur so eine total kluge Lösung, das so zu machen und die sieht total intelligent aus. Und als ich drauf geguckt habe, ich habe es einfach nicht verstanden. bin da einfach, muss ich zugeben, zu blöd für. Und dann habe ich mich mit der Person hingesetzt und habe mal gefragt, ob die mir das erklären kann. Als ich das dann konzeptionell verstanden habe, habe ich gefragt, ob man das nicht einfach mit drei, vier Booleans lösen könnte. Und dann kam die Antwort, ja, das könnte man auch. Und dann haben wir es umgeschrieben, damit ich es dann halt auch nächste Woche noch verstehe. Also ich glaube, darüber lässt sich sehr, sehr lange diskutieren, was jetzt schwer zu verstehen ist.",
-      "start": 1135346,
-      "end": 1210386,
-      "confidence": 0.7864032258064528,
-      "channel": null,
-      "speaker": "B"
-    },
-    {
-      "text": "Ich glaube, das geht auch sehr in die Richtung von Premature Optimization, dass du einfach diese Micro-Optimizations auf so einem kleinen Level Optimierungen machst, weil du glaubst, dass das performance-technisch so viel bringt. Natürlich bringt es was, gar keine Frage. Und man kann jetzt auch diskutieren, ob man minus minus x oder x minus minus macht. Aber zu 99% ist es wahrscheinlich egal, weil du in dem Umfeld arbeitest, wo diese Mikrooptimierung einfach nicht nötig ist. Klar, wenn du jetzt, keine Ahnung, in MySQL, in irgendeinem tiefen Kern in MySQL entwickelst, Also nicht mit MySQL, sondern in MySQL, in dem MySQL-Source-Code. Dann mag es wichtig sein, dass du da Micro-Optimierungen machst, weil das hat einfach extreme Auswirkungen dann. Aber wenn du in einer normalen Business-Logik in irgendeinem Java-Server programmierst, ist meiner Meinung nach wichtiger, dass du einfach so programmierst, dass es andere und du selber auch später leicht verstehst, anstatt irgendwelche Optimierungen zu machen, die dann kein Mensch versteht. Also mittlerweile sind wir einfach so weit bei den meisten Sprachen, dass die Compiler so viel abnehmen und diese Optimierungen auf Compilerebene machen, dass wir das eigentlich auf Sourcecode-Ebene gar nicht mehr machen müssen, außer in wirklichen Spezialanwendungsbereichen. Ich glaube, da geht es einfach darum, schön zu programmieren, sauber zu programmieren, dass es andere Leute und man selber eben auch fünf Monate später auch noch leicht verstehen kann.",
-      "start": 1211052,
-      "end": 1302505,
-      "confidence": 0.8168898678414099,
-      "channel": null,
-      "speaker": "A"
-    },
-    {
-      "text": "Oder nehmen wir mal das Dry-Prinzip. Don't repeat yourself. Prinzipiell eine ganz gute Sache. Du schreibst eine Logik nur einmal, lagerst die irgendwie aus, damit du die aus verschiedenen Stellen irgendwie aufrufen kannst. Super. Da bin ich auch ein recht großer Fan von, sofern diese Logik denn auch größer ist, die du ja auslagerst. Wenn die Prozedur aber zu klein wird, dann ist das Dry-Prinzip, hat das einen Hang zum Over-Engineering. Nehmen wir mal das Beispiel der JavaScript-Bibliothek LeftPad. LeftPad war eine Funktion, Oder ist sogar noch eine Funktion. Ich glaube, das Paket gibt es sogar noch. Da hast du ein String reingeschmissen und hast gesagt, okay, diese Zeichenkette soll 10 Zeichen lang sein und wenn die Zeichenkette nur 6 Zeichen lang ist, pack bitte 4 Zeichen vorne dran. Du baust also ein Präfix vor diese Zeichenkette. Diese Funktion wurde in ein extra JavaScript-Paket ausgelagert, um dann als Abhängigkeit in ganz viele Pakete und Applikationen reingezogen zu werden. Da muss ich zugeben, ist das nicht vielleicht ein bisschen übertrieben? Oder ist die Anwendung des Don't Repeat Yourself Prinzip da nicht ein bisschen übertrieben worden? Deswegen bin ich so ein riesen Fan von der Sprache Go, Golang. Die Autoren der Programmiersprache sind unglaublich große Fans von Einfachheit. Die sagen, hey, nur weil es da drüben paket gibt und du brauchst aber wirklich nur zwei prozent dieses paketes schau doch mal lieber nach ob du die die code zeilen nicht kopieren kannst und in dein paket und in deiner applikation zu integrieren anstatt die ganze dependency mit einzubinden und am anfang dachte ich warum das ist doch da und das maintain doch wer anders und All die Vorteile, die man dann kriegt. Inzwischen muss ich sagen, es ist deutlich leichter zu verstehen, wenn ich nur einen Bruchteil des externen Paketes nutze, anstatt dass ich mir das ganze Paket hole. Weil da kommt natürlich auch eine ganze Menge mit. Du musst diese Abhängigkeit kontinuierlich up-to-date halten. Du musst die Doku dauerhaft lesen, weil beim Update sich gegebenenfalls was von der Schnittstelle geändert haben kann, et cetera, et cetera. Also ist auch wieder so ein großer Diskussionspunkt, wo ich mich nicht auf eine Seite schlagen kann.",
-      "start": 1302898,
-      "end": 1427768,
-      "confidence": 0.7899226519337023,
-      "channel": null,
-      "speaker": "B"
-    },
-    {
-      "text": "Ich glaube, das ist dann ja auch der Begriff Dependency Hell, wo man einfach so viele Dependencies hat, die man dann auch maintainen muss und wo man dann angewiesen ist auf die externen Leute. Und ich kenne das selber von diesem F-Online-Projekt. Wer jetzt nicht weiß, um was es geht, soll mal in Episode 2 reinhören. wo einfach Dependencies in JavaScript die Jahre alt sind, wo das Ding einfach extrem schwierig ist überhaupt zu bauen aktuell, weil viele Dependencies einfach weg sind. Die gibt es nicht mehr, die machen Probleme und teilweise sind es wirklich einfache Libraries, wie es halt so im JavaScript Umfeld Teilweise ist die auch rekursiv natürlicher Dependencies sind. Das heißt, die wird gar nicht direkt eingebunden, aber ein anderes Projekt bindet die ein. Und da hat man dann natürlich schon auch mehr Aufwand, den man dann wieder rechtfertigen muss bzw. mit einrechnen muss in die Maintenance von dem Projekt. Also ich glaube, das darf man auch nicht vergessen. Ob das jetzt Over-Engineering ist, wage ich mal zu bezweifeln, weil wenn wir da auf die ursprüngliche Definition zurückgehen, Code that solves problems you don't have, Naja, das Problem wurde ja gelöst. Die Frage ist immer, wie wurde es gelöst und was habe ich mir da an mehr Aufwand mit reinkauft durch diese Library oder externe Library, die ich verwende.",
-      "start": 1428361,
-      "end": 1509411,
-      "confidence": 0.7921936936936933,
-      "channel": null,
-      "speaker": "A"
-    },
-    {
-      "text": "Gehen wir mal auf einen anderen Punkt. Unnötige Abstraktionsebenen. Und da kommt mir irgendwie immer das Beispiel eines ORMs in den Kopf. Ein ORM ist ein Datenbankabstraktionslayer. Und ich denke, es gibt eine Daseinsberechtigung von ORMs, speziell in Produkten, die auf unterschiedlichen Architekturen und Infrastrukturen laufen, nehmen wir mal ein klassisches Content-Management-System, Typo3 oder WordPress oder Joomla. In der Regel hat dieses System eine relationale Datenbank, wie MySQL, PostgreSQL, MariaDB oder ähnliches als Backend. Da würde ich sagen, okay, da macht gegebenenfalls ein ORM Sinn. Wenn du aber dein eigenes Produkt baust, Hast du in der Regel auch deine Infrastruktur unter Kontrolle oder du mietest dir irgendwo eine Datenbank bei irgendeinem Cloud-Provider oder von mir aus auch bei Hetzner und 1&1 oder in deinem PHP-Webspace bei Strato, es ist ja völlig egal, aber ob ich da ein ORM einsetzen würde, eher nicht. Warum nicht? Ich habe sehr, sehr viele Projekte dieser Art gesehen. Du hast ein eigenes Produkt. Dieses Produkt hat ein ORM integriert. Es war aber von vornherein klar, dass das Produkt immer mit einer MySQL-Datenbank läuft oder immer nur mit einer PostGrid-Datenbank läuft. Ich persönlich war noch nie in einem Projekt, wo nur die Datenbank-Engine geändert wurde. Man hat die MySQL mit einer Post ausgetauscht und alles lief weiter. Es waren immer riesengroße Anpassungen notwendig und in der Regel war es sowieso immer ein kompletter Rewrite. Und dann hat man festgestellt, oh wir brauchen den ORM gar nicht oder der ORM hat dieses Feature gar nicht oder der ORM kann genau dieses eine Feature dieser Datenbank nicht ausnutzen. das genau wir jetzt aber brauchen, um die Performance von dieser Applikation zu steigern. Also für mich ist in sehr, sehr vielen Fällen zum Beispiel ein ORM, ein Datenbankabstraktionsflair, eine unnötige Abstraktionsebene. Hast du schon mal ein Projekt gesehen, wo du einfach nur ohne Probleme die Datenbankengine ausgetauscht hast und dann lief alles weiter?",
-      "start": 1509431,
-      "end": 1618258,
-      "confidence": 0.7853439490445869,
-      "channel": null,
-      "speaker": "B"
-    },
-    {
-      "text": "Wenn ich mich da zurückerinnere an meine Zeit als Student, wir mussten damals ORMs verwenden und ich kann mich erinnern, die haben damals statt einem Join zum Beispiel direkt abzufeuern, haben die teilweise 600 Queries abgefeuert, weil die einfach direkt Abhängigkeiten dann jeweils mit einer Query abgefragt haben. Wie gesagt, sie sind schon intelligenter geworden, aber ich glaube immer noch, dass es gerade performance-technisch mit den ganzen Joins und ähnlichen Dingen kaum möglich ist, einen performanten ORM zu bauen bzw. zu verwenden. Ganz abgesehen davon, wie du gesagt hast, eine Datenbank ändert man mal nicht so schnell und meistens, wenn man ein Produkt hat, was wirklich mehrere Datenbanken unterstützt, dann ist es so komplex, dass man wahrscheinlich auch irgendwelche speziellen Features von Datenbanken verwenden will oder muss performance-technisch und da macht es auch wenig Sinn. Also hat sich mir auch bisher noch nicht erschlossen. Gerne die Hörerinnen, wenn ihr andere Erfahrungen habt oder irgendwo den Sinn seht in ORMs, sendet uns eine Message. Wir ändern gerne unsere Meinung. Aber ich habe ehrlich gesagt auch mit meinem Datenbank-Background nie einen sinnvollen Anwendungszweck gefunden.",
-      "start": 1618525,
-      "end": 1691034,
-      "confidence": 0.8134065934065934,
-      "channel": null,
-      "speaker": "A"
-    },
-    {
-      "text": "Bei einer Antwort von einem Twitter-User bin ich aber nicht der gleichen Meinung. Und zwar wurde Dependency Injection als Over-Engineering bezeichnet. Da würde ich die klassische Informatiker-Antwort geben. Es kommt darauf an. Dependency Injection bedeutet eigentlich, dass du eine Abhängigkeit zu einer Klasse reinreißt und diese austauschbar machst. Ein klassisches Beispiel wäre, du schreibst eine Prozedur, die eine Datenbank-Connection benötigt und du reichst diese Datenbank-Connection als Objekt in diese Prozedur rein und somit kannst du die Datenbank-Connection jederzeit austauschen. Sie muss nur eine gewisse Schnittstelle erfüllen. In diesem Fall würde ich sagen, Dependency Injection ist super sinnvoll, weil man dadurch die Datenbank Connection austauschen kann oder aber auch für Unit und Integration Tests mocken kann und somit nicht immer eine Datenbank hochfahren muss. Da halte ich das schon für sehr sehr sehr sehr sinnvoll.",
-      "start": 1691074,
-      "end": 1745144,
-      "confidence": 0.8214552238805971,
-      "channel": null,
-      "speaker": "B"
-    },
-    {
-      "text": "Ich glaube auch, dass das wieder so ein Klassiker ist, neue Technologie. In mancher Software ist das auch verknüpft mit der ganzen Magic, die passiert mit Autowiring, dass die automatisch injected werden und so weiter. Aber die Grundidee von Dependency Injection ist ja genau die, die du jetzt gerade erklärt hast und die kann man auch ohne irgendeine Library, ohne irgendein Framework implementieren, dass man einfach sauber Abhängigkeiten in eine Klasse zum Beispiel reinreicht über den Konstruktor. Da brauche ich keine Library, da brauche ich kein Auto-Wiring, da brauche ich keine Magic von irgendeinem Framework, auch wenn die bei größeren Projekten sicher sehr sinnvoll ist und glaube ich auch in größeren Teams viel abnimmt. Aber die Grundidee Abhängigkeiten zu reduzieren ist glaube ich eine perfekte Idee, sei es im Source Code, sei es bei Teamstrukturen. Egal wo, Abhängigkeiten machen meistens Probleme.",
-      "start": 1745662,
-      "end": 1800814,
-      "confidence": 0.8001560283687944,
-      "channel": null,
-      "speaker": "A"
-    },
-    {
-      "text": "Du hattest gerade neue Technologien erwähnt. Kennst du eigentlich den Begriff Hacker News Driven Development?",
-      "start": 1801355,
-      "end": 1805557,
-      "confidence": 0.34820000000000007,
-      "channel": null,
-      "speaker": "B"
-    },
-    {
-      "text": "Nö, erklär mal.",
-      "start": 1805718,
-      "end": 1807019,
-      "confidence": 0.437,
-      "channel": null,
-      "speaker": "A"
-    },
-    {
-      "text": "Kennst du die Plattform Hacker News?",
-      "start": 1807059,
-      "end": 1808700,
-      "confidence": 0.6421666666666667,
-      "channel": null,
-      "speaker": "B"
-    },
-    {
-      "text": "Natürlich.",
-      "start": 1808780,
-      "end": 1809541,
-      "confidence": 0.67,
-      "channel": null,
-      "speaker": "A"
-    },
-    {
-      "text": "Für alle Hörer, die es nicht kennen, Hacker News ist eine News-Informationsseite der Venture Capital Firma Y Combinator. Und diese Newsseite stellt keine eigenen News her oder ähnliches, sondern basiert allein auf den Einreichungen von Links und Blogartikeln von Usern. Und andere User können diese Artikel dann hochwerten und runterwerten. Und diese Plattform ist sehr, sehr bekannt dafür, sehr kritisch zu sein, auch in den Kommentarfunktionen, aber auch immer die neuesten Trends zu zeigen. Wenn irgendwo eine neue Datenbank hochkommt, dann ist die auf jeden Fall auf Hacker News. Theoretisch kann man also jeden Tag auf Hacker News gehen und sieht sechs neue Technologien. Hacker News Driven Development ist also eigentlich, man geht auf Hacker News, sieht eine Technologie, cool, die klingt interessant, die möchte ich lernen, die integriere ich jetzt erstmal direkt in mein Projekt und ship die in Production. Das ist für mich auch so eine Art von Over-Engineering, obwohl das natürlich auch klassische Entwickler-Neugier ist. Aber ich war auch schon in Projekten, da wurde jedes neueste Framework eingebunden und man ist nur in irgendwelche Fehler gerannt, weil die Version 0.0.1 minus Alpha minus 15 war und da fragt man sich, Oft muss das sein oder hätte es da auch nicht einfach das Framework von vor einem Jahr gereicht? Hast du auch schon mal sowas erlebt?",
-      "start": 1809581,
-      "end": 1888597,
-      "confidence": 0.7449862385321103,
-      "channel": null,
-      "speaker": "B"
-    },
-    {
-      "text": "Das haben wir auch in der zweiten Episode schon ein bisschen angeschnitten mit diesen alten Technologien, die sehr gut funktionieren. Und das ist halt das Problem mit neuen Technologien, die man einfach so einführt. Aber was du mit Innovation Tokens schon erwähnt hast, kann man das ja relativ einfach in den Griff bekommen, dass man das wirklich systematisch angeht und sagt, wir haben ein gewisses Budget, für Innovation oder für neue Technologien und probieren das dann dementsprechend aus. Also ich glaube, das ist lösbar. Aber was da natürlich auch noch zusätzlich mitspielt und man merkt das schon ein bisschen so bei den Tweets auch, die wir als Antworten bekommen haben und ich kenne das auch von mir selber, dass man halt einfach oft seine subjektive Meinung da zu stark einbringt und wenn es irgendeine Lösung ist, die man selber nicht gemacht hätte oder die man selber eben nicht kennt, dann schreibt man sofort overengineering. Das ist overengineered. Aber man muss sich da halt auch wirklich überlegen, habe ich vielleicht einfach weniger Erfahrung oder ist es ein Bereich, wo ich mich schlechter auskenne, kenne ich diese Software einfach nur nicht und da sollte man halt auch ein bisschen aufpassen und da Da möchte ich mich selber auch ein bisschen an den Haaren ziehen, wo ich wahrscheinlich zu schnell Overengineering gerufen habe bei deinen Projekten, weil man das halt einfach so scherzhaft unter Entwicklern oft sagt. Aber ich glaube, es ist halt auch sehr, sehr gefährlich, weil dieser Begriff hat sich mittlerweile so eingespielt und auch unter Managern vor allem, dass der glaube ich in erstens falschen Kontext verwendet wird und halt mittlerweile wirklich so als Totschlagargument verwendet wird, um einfach jegliche sinnvolle, saubere Arbeit einfach sofort mit dem Totschlagargument, that's overengineering, einfach beendet und gar nicht wirklich tiefer reinschaut in das Projekt, wo liegen die Probleme, warum dauert was länger, sondern alles ist sofort overengineert.",
-      "start": 1888617,
-      "end": 1998258,
-      "confidence": 0.797515923566879,
-      "channel": null,
-      "speaker": "A"
-    },
-    {
-      "text": "Wir reden hier aber die ganze Zeit über Overengineering mit einem negativen Hintergrund. Hattest du denn schon mal gute Erfahrungen im Bereich Overengineering? Also wo du etwas gesehen hast und sagst, hey, das war jetzt aber eigentlich hier unnötig, aber im Endeffekt war das genau der richtige Weg?",
-      "start": 1998378,
-      "end": 2012745,
-      "confidence": 0.7341875,
-      "channel": null,
-      "speaker": "B"
-    },
-    {
-      "text": "Ich glaube, dass das eben sehr oft vorkommt, wo dann eben extrem viele Leute sagen, das ist overengineering oder Manager das sagen, aber dabei war es einfach nur sauberes Engineering mit bisschen Weitblick, weil wenn ich jetzt ein Framework einführe oder wenn ich jetzt mit einem simplen Projekt starte und das auf Symphony-Framework aufbaue, Mag das vielleicht in der ersten Woche overengineering sein oder vielleicht am Anfang, weil ich mir erst einlernen muss, wie funktioniert das mit diesem Framework. Aber wenn ich ein Produkt baue, was länger überleben soll als zwei Monate, dann macht sicher Sinn, komplexeres Framework oder gutes Framework wie Symfony im BHB-Bereich zum Beispiel einzusetzen, obwohl ich da eine Lernkurve habe und mich erst damit anfreunden muss oder mehrere Entwickler vielleicht. Aber langfristig macht es natürlich absolut Sinn. Und darum glaube ich, dass ganz viel von Over-Engineering eigentlich gar kein Over-Engineering ist, sondern einfach sauberes Engineering und die Zukunft wirklich erleichtert. Und wenn du jetzt auf Terraform aufsetzt, hast du vielleicht auch Vorteile in Zukunft, wenn du was ändern willst, dass du einfach schneller bist, als wenn du das manuell gemacht hättest oder womöglich dein eigenes RabbitMQ entwickelt hättest.",
-      "start": 2013181,
-      "end": 2088827,
-      "confidence": 0.8182760416666667,
-      "channel": null,
-      "speaker": "A"
-    },
-    {
-      "text": "Okay, das macht Sinn. Was ich bei mir aber öfters beobachte, immer wenn ich eine neue Idee verfolge und schaue, wie das funktioniert, dann muss ich mich während des Prozesses, während der Programmierung immer wieder dran erinnern, hey, löst ein originales Problem, löst ein originales Problem. Weil links und rechts die Probleme zu lösen, ist auch sehr spannend. Und ich muss mich immer zwingen, bei dem Hauptproblem zu bleiben und nicht zu overengineeren, damit ich überhaupt was geschafft kriege. Und ich bin mir nicht sicher, ob das ein klassisches Entwicklerproblem ist oder mein eigenes Problem, Hast du das auch oder wie, was sind die Methoden, die du anwendest, um dich vor Overengineering zu schützen?",
-      "start": 2088847,
-      "end": 2121802,
-      "confidence": 0.7622280701754388,
-      "channel": null,
-      "speaker": "B"
-    },
-    {
-      "text": "Was ich allgemein mache, ist glaube ich einfach probieren, den Kontext möglichst gut zu verstehen. Das heißt, welche Informationen habe ich über die Zukunft, wo soll das Ganze hingehen, in welchem Stadium befindet sich dieses Projekt gerade oder der Source Code oder was es auch immer ist. Und wo will ich hingehen mit dem Ganzen? Und dann probiere ich, die beste Lösung für diesen Zeitraum zu finden. Natürlich, man sollte nicht zu sehr in die Zukunft denken, aber so eine gewisse, grobe Einschätzung von dem Ganzen kann man ja haben. Eben ist das einfach ein Side Project, das will ich ausprobieren, Proof of Concept. Ich habe keine Ahnung, ob das überhaupt irgendwie angenommen wird von Usern, dann mache ich das einmal extrem schnell, damit die möglichst schnell zu einem Ergebnis kommen. Wenn das eine Software ist für einen Kunden zum Beispiel, wo ich weiß, der wird das garantiert ein Jahr einsetzen, der wird in dem Jahr noch ein paar Änderungen haben, die werde ich selber wieder machen müssen als Auftragnehmer zum Beispiel für diese Software, dann werde ich mir überlegen, okay, wie kann ich das so programmieren, dass ich selber den Source-Code verstehe in Zukunft, dass ich Änderungen wieder schnell einpflegen kann, dass ich schnell Updates machen kann von der Software, dass ich da keine Probleme habe. Wenn das in einem Umfeld ist mit 500 Entwicklern, Trivago, dann weiß ich, dass eine Software mehrere Jahre halten muss, dass da viele Entwickler dran arbeiten. Dann werde ich da sicher nochmal noch mehr Augenmerk drauf legen, was ich wirklich mache. Und das wird dann auch langsamer. Das muss man sich auch bewusst sein. Umso mehr Entwickler in einem größeren Umfeld an etwas arbeiten, umso langsamer werden alle im Endeffekt, wenn man das vergleicht mit einem Team von drei Leuten oder wenn ich alleine an einem Side-Project arbeite. Und so probiere ich das möglichst über die Zeit dann zu managen. Und wenn ich ein Kundenprojekt habe, dann habe ich da ja auch meine geschätzte Zeit und dann probiere ich einfach möglichst in dem Zeitrahmen zu bleiben natürlich. Und jedes Mal, wenn ich eine Idee habe oder eine neue Technologie einsetzen will, überlege ich mir, kann ich das in meiner Zeit irgendwie schaffen oder will ich diese Zeit investieren? Macht es wirklich Sinn, diese Zeit zu investieren? Also ich versuche es über den Kontext und die Zeit möglichst dann den Weg zu finden.",
-      "start": 2121862,
-      "end": 2256095,
-      "confidence": 0.7844060150375939,
-      "channel": null,
-      "speaker": "A"
-    },
-    {
-      "text": "Du drückst das zwar sehr schön aus, aber das klingt, also so runtergebrochen sagst du eigentlich okay, du hast ein paar Jahre Erfahrung und du hast eine Glaskugel auf deinem Tisch stehen und je nachdem was die Glaskugel so sagt, beschäftigst du dich mehr oder weniger mit dem Thema. So hört sich das jetzt für mich gerade an.",
-      "start": 2256803,
-      "end": 2271458,
-      "confidence": 0.719,
-      "channel": null,
-      "speaker": "B"
-    },
-    {
-      "text": "Es ist natürlich sehr viel Erfahrung dabei, klar. Ich glaube, es gibt da keine Regeln, die man irgendwie auf Metriken oder so runterbrechen kann. Ich glaube, Zeit ist sicher die beste Metrik, wo man das irgendwie abschätzen kann. Wie viel Zeit würde das Einsetzen von einem neuen Framework wirklich brauchen? Wie viel Zeit habe ich? Und ist das gerechtfertigt, diese Zeit?",
-      "start": 2271698,
-      "end": 2291970,
-      "confidence": 0.8270491803278691,
-      "channel": null,
-      "speaker": "A"
-    },
-    {
-      "text": "Welchen Tipp würdest du Leuten geben, die gerade noch nicht so viel Erfahrung haben, um sich mit dem Thema Overengineering ein bisschen zu beschäftigen und versuchen, besseres gefühl dafür zu kriegen um sich ihre eigene glaskugel aufzubauen so wie du sie hast.",
-      "start": 2292170,
-      "end": 2304320,
-      "confidence": 0.4529523809523809,
-      "channel": null,
-      "speaker": "B"
-    },
-    {
-      "text": "Da werden jetzt viele vielleicht eine andere meinung haben und du auch andi aber ich glaube dass im großen und ganzen over engineering viel zu selten passiert und dass die meisten Lösungen im professionellen Umfeld zu wenig overengineert sind. Und dass sich gerade wenn Leute neu anfangen, die sollen sich mit neuen Technologien beschäftigen. Und üblicherweise, wenn man in einem Team arbeitet, dann bekommt man schon das Feedback. Aber gerade junge Leute haben es extrem schwer, oft neue Technologien durchzusetzen und einzubringen. Und ich glaube, dass eher der Druck, vor allem im professionellen Umfeld der Druck ist, eher größer, auf keinen Fall irgendwo mehr Zeit zu investieren. Darum würde ich eher sagen, im professionellen Umfeld sollten die Leute mehr zum Over Engineering tendieren.",
-      "start": 2304360,
-      "end": 2350849,
-      "confidence": 0.8333577235772356,
-      "channel": null,
-      "speaker": "A"
-    },
-    {
-      "text": "Das war eine Wendung im Podcast, die ich so nicht erwartet habe, das ist richtig. Ich bin da persönlich kein Fan von, das ist auch richtig, weil ich schlage nämlich genau in die gegenteilige Kerbe. Und zwar denke ich, man sollte gegebenenfalls erstmal die ganze Sache ans Fliegen bringen. Das bedeutet, hack die einfach rein. Schau, dass es erstmal läuft und danach können wir immer noch weiter gucken, welche Anforderungen wir überhaupt haben an Stabilität, an Das muss testbar sein, schön sein etc. Es kommt natürlich immer auf die Projektgröße an etc.",
-      "start": 2351430,
-      "end": 2383650,
-      "confidence": 0.7493913043478263,
-      "channel": null,
-      "speaker": "B"
-    },
-    {
-      "text": "Aber ich glaube gerade im professionellen Umfeld ist genau das das größte Problem, weil danach die Zeit zu bekommen um was schön zu machen, die Zeit bekommt man ganz ganz selten und dann fliegen diese ganzen halbfertigen Lösungen, gehackten Lösungen herum, Und es werden dann teilweise Millionen Umsatz auf diesen hacky Lösungen gemacht und keiner traut sich mehr, das Ding anzugreifen, weil es fast auseinanderbricht. Also ich glaube, dass diese Herangehensweise im professionellen Umfeld ein großes Problem darstellt.",
-      "start": 2383710,
-      "end": 2414623,
-      "confidence": 0.8365769230769227,
-      "channel": null,
-      "speaker": "A"
-    },
-    {
-      "text": "Ich stimme dir teilweise zu, weil ich auch ich habe schon sehr sehr viele Stunden an gehacktem Source Code verbracht, wo ich glaube ich innerhalb von wenigen Minuten um Tage gealtert bin.",
-      "start": 2415133,
-      "end": 2425782,
-      "confidence": 0.83378125,
-      "channel": null,
-      "speaker": "B"
-    },
-    {
-      "text": "Ja du bist ja sowieso noch jung, bei dir ist das ja egal, ein paar Jahre.",
-      "start": 2425802,
-      "end": 2430266,
-      "confidence": 0.5354375,
-      "channel": null,
-      "speaker": "A"
-    },
-    {
-      "text": "Komm du mein alter. Dennoch denke ich, dass sehr sehr viel aus Source Code, der geschrieben wird, im Leben nicht mehr angepackt wird. Und wo ich dann denke, dass man diesen Sourcecode vielleicht zu viel optimiert hat, weil genau das ist die Last Rule, von der ich gerade spreche. Wir sind, wenn wir wirklich im agilen Umfeld arbeiten, heißt das auch, dass wir konstant in der Lage sind, Sourcecode zu ändern. Ich sage nicht, schafft ihr dein nächstes Grab, aber ich sage auch, dass es Sourcecode gibt, der vor zehn Jahren geschrieben wurde, der auf irgendeinem Server rennt und immer noch Millionen Umsatz macht. Und er bedarf keiner Änderung. Und für solche Fälle denke ich mir, warum muss er jetzt unglaublich schön sein und dies und das, er soll verständlich sein. Doch er muss nicht dem Drei-Prinzip entsprechen, er muss nicht unglaublich testbar sein, etc., etc. Es kommt natürlich immer auf die Größe an, etc. Und ich glaube, ich werde jetzt ziemlich viele Leute auf die Palme bringen, die das hören. Doch ich bin ein Freund von Iteration. Ich bin ein Freund davon, bring es erstmal auf die Straße, mach es erstmal lauffähig. Danach bring es in einen Zustand, dass dein Team damit zufrieden ist. Wenn dieser Source-Code wirklich kontinuierlich angepasst werden muss, dann wird es so oder so eingeplant. Natürlich solltest du auch den Anforderungen entsprechen. Das bedeutet, die Datenbank-Connection muss supporten, dass das Programm nicht abstürzt, wenn die Datenbank neu startet etc. sowas muss gegeben sein das sind ja ganz normale anforderungen aber es muss nicht man muss nicht zehn stunden lang das thema researchen klar bei bei fundamentalen grundlegenden sachen ist es wieder eine andere geschichte wie iso codes für sprachen und länder bei rocket internet die mal wieder ein internationales startup machen müssen das ist das sind grundlagen die sollten richtig sein. Ich denke persönlich, dass auch bei Google, obwohl die ich glaube Nummer 1 im Bereich Engineering sind weltweit, in irgendwelchen Datacentern ein Server steht, der sehr sehr viel Staub sammelt, der aber nicht abgeschaltet werden darf, weil dieser Server betreibt die Suchmaschine oder AdWords oder Gmail. Es ist halt in der Industrie so, Legacy verdient das Geld und Das Problem mit der Informatik und besonders im Programmierumfeld ist, kommen wir zurück aufs Hacker News Driven Development, jeden Tag kommt irgendein neues Konzept, das bedeutet, den Code, den du gestern geschrieben hast, der ist gar nicht mehr up to date und du hast den Drang dafür, den perfekten Code zu schreiben und du hast den Drang dazu, den Code von gestern nach den neuen Prinzipien anzupassen. Doch der Code von gestern ist gut genug, weil er funktioniert und er tut genau das, was er tun soll. Und mit hoher Wahrscheinlichkeit wirst du den in zwei Wochen oder in zwei Jahren nicht mehr ändern.",
-      "start": 2430286,
-      "end": 2573386,
-      "confidence": 0.7864273504273499,
-      "channel": null,
-      "speaker": "B"
-    },
-    {
-      "text": "Aber ich glaube, du malst da auch diesen Teufel gleich immer an die Wand, den Overengineering-Teufel, weil es gibt einen Unterschied zwischen dem perfekten Code und es gibt einen Unterschied zwischen Tracking-Code, ich beachte nicht mal das DRIVE-Prinzip, weil ich glaube, dass das DRIVE-Prinzip grundsätzlich vieles vereinfacht, auch am Weg, bei der täglichen Arbeit mit dem Code. Also gar nicht bei einem riesengroßen Projekt. Das sind so Grundlagen, wenn ich eine saubere Struktur in meinem Code reinbringe. Ich glaube, das sind Grundlagen, die man auf jeden Fall immer machen sollte. Da gibt es schon Zwischenwege zwischen ganz dreckig und dem perfekten Code. Und ich glaube, diesen Zwischenweg muss man finden und nicht alles, was nur in irgendeiner Form verbessert ist oder einem gewissen Pattern folgt, so wie du deine Variablen benennst zum Beispiel. Das sind so grundlegende Grundlegende Dinge, die brauchen nicht mehr Zeit und die verbessern aber den Code und die Code-Qualität extrem. Und ich glaube, solche Dinge kann man sehr wohl immer beachten, aber ob man das zehnte Framework verwenden muss, das ist halt dann, glaube ich, nochmal eine andere Frage oder die zehnte Micro-Optimierung oder solche Dinge. Aber ich glaube, so eine grundlegende Qualität muss man eigentlich schon an den Tag legen.",
-      "start": 2573667,
-      "end": 2651124,
-      "confidence": 0.821717073170732,
-      "channel": null,
-      "speaker": "A"
-    },
-    {
-      "text": "Bei variablen Namen machst du natürlich gerade ein ganz anderes Fass auf, aber ich bin halt ein riesen Fan von diesem Paradigma make it work, make it right, make it fast. Ob man die letzte Stufe make it fast immer braucht, sei dahingestellt, aber bring es erstmal ins Laufen und wenn das dann funktioniert, dann kannst du immer noch gucken, inwieweit du es korrekt, schön, testbar machst. Aber du hast erstmal eine Grundlage, auf der du aufbaust, bevor du stundenlang in irgendein Rabbit Hole reingehst, die Theorie untersuchst, wie genau dieser Kopierbefehl auf der CPU, auf Intel und ARM Architektur ausgeführt wird, etc. Obwohl wir ein Accept Cookie Feature für eine Webseite bauen. Verstehst du? Das kannst du alles machen, du kannst das alles researchen, aber es macht halt einfach keinen Sinn.",
-      "start": 2651945,
-      "end": 2696509,
-      "confidence": 0.7431818181818178,
-      "channel": null,
-      "speaker": "B"
-    },
-    {
-      "text": "Ja, ich glaube, es ist wirklich, wie viel Zeit solltest du investieren in ein Projekt. Und da muss man halt sicher lernen, einen guten Mittelweg zu finden. Aber ich glaube, man sollte nicht sich in den Kopf schreiben, starte mal dreckig. Ich glaube, das ist einfach ein Motto, das, glaube ich, falsch ist, weil man kann sauber programmieren und man kann, wie gesagt, grundsätzlich gute Software schreiben, auch in sehr, sehr kurzer Zeit und macht sich dadurch das Leben definitiv einfacher.",
-      "start": 2696701,
-      "end": 2725113,
-      "confidence": 0.8035185185185184,
-      "channel": null,
-      "speaker": "A"
-    },
-    {
-      "text": "Ich finde unglaublich schön, dass wir gerade endlich mal einer Meinung sind, weil die Meinung ist, ich sage, du bist falsch mit deiner Meinung, dass zu wenig overengineert wird und du sagst, ich bin falsch, weil man heckig starten sollte. Finde ich super, finde ich schön.",
-      "start": 2725931,
-      "end": 2737778,
-      "confidence": 0.7802826086956521,
-      "channel": null,
-      "speaker": "B"
-    },
-    {
-      "text": "Vielleicht abschließend noch, damit wir doch noch gleicher Meinung sind, ich habe ein sehr gutes Beispiel von Under Engineering, was trotzdem aber sehr gut funktioniert. Und zwar schicke ich meine Kletterschuhe oft, wenn sie kaputt sind, zum Reparieren nach Tschechien, weil die sehr gutes Service haben. Das gar nicht so leicht zu finden ist, Leute, die das machen. Und wie deren Ablauf funktioniert, man lädt sich ein PDF-Formular runter, füllt dieses PDF-Formular auf und schickt denen per Post einfach diese Schuhe. Die wollen kein Geld. Man registriert sich nirgends, sondern man schickt es einfach los. Die reparieren dir dann deine Schuhe und kontaktieren dich bei E-Mail, dass du bitte ihnen Geld sendest. Und wenn die das Geld haben, schicken sie dir die Schuhe wieder. Alles bei E-Mail, kein Online-System, nichts. Wirklich ganz simpel bei E-Mail. Funktioniert aber jedes Mal perfekt. Ist ein bisschen gewöhnungsbedürftig. Null Automatisierung in dem ganzen Bereich, aber trotzdem sehr zufriedenstellende Service eigentlich als Kunde. Und da frage ich mich schon öfters dann auch, muss man alles so hochautomatisiert und komplex bauen? Es skaliert wahrscheinlich auch nicht dieses Service, aber trotzdem eigentlich von Kundensicht kann auch was perfekt sein, ohne es overengineert zu bauen.",
-      "start": 2737818,
-      "end": 2810449,
-      "confidence": 0.8293807106598988,
-      "channel": null,
-      "speaker": "A"
-    },
-    {
-      "text": "Die Story erinnert mich an einen unglaublich populären Artikel, der heißt Do Things That Don't Scale. Und zwar geht's da prinzipiell um die Idee, du möchtest ein Produkt launchen, ein Startup launchen, etc. Und immer wenn du so was tust, überlegst du dir, uh, was ist denn, wenn ich jetzt Rechnungen stellen muss? Uh, das muss ich programmieren, das muss ich automatisieren. Und du überlegst dir das zu einem Zeitpunkt, wo du gegebenenfalls noch gar keine Kunden hast. Der Artikel sagt dann aber, hol doch erstmal Kunden und mache Dinge, die nicht skalieren. Wie zum Beispiel, stell doch erstmal für die ersten 200 Kunden deine Rechnung manuell aus. Ist das Arbeit? Ja. Skaliert das? Nein. Funktioniert es aber erstmal und sparst du dir den Aufwand, alles durchzuautomatisieren, eine automatische Rechnungserstellung etc. etc. zu machen? Ja. Aber du beweist dann erstmal, okay, du findest dann erst wirklich heraus, was du wirklich brauchst. Und das finde ich ganz schön und das finde ich auch ganz schön in deiner Kletterschuh-Reparier-Story. Auf der anderen Seite, denke ich, auch die Kletterszene ist generell sehr kollegial und vertrauenswürdig, oder? Oder hast du andere Erfahrungen gemacht?",
-      "start": 2810669,
-      "end": 2871007,
-      "confidence": 0.7324603174603175,
-      "channel": null,
-      "speaker": "B"
-    },
-    {
-      "text": "Es ist gar nicht so viel auf Vertrauen, weil wenn du denen kein Geld zeigst, bekommst du deine Schuhe nicht zurück. Also für deren Seite ist es eigentlich ganz okay. Für dich ist es halt, du schickst denen irgendwas, du hast keine Ahnung, was dann passiert natürlich. Also es ist mehr von Vertrauensseite, von Kundenseite. Aber ich glaube, das ist auch ein gutes Beispiel, was du genannt hast. Das ist halt einfach das Overengineering, wenn es um Automation geht. Wie viel muss man wirklich automatisieren? Und ich glaube, das ist auch noch ein Riesenthema, aber das hast du eh schon ganz geschickt mit deinem Beispiel abgearbeitet. dass es einfach auch da natürlich Over-Engineering gibt und man auch da nicht frühzeitig optimieren sollte, sondern halt erst dann, wenn man das wirklich braucht. Und auch jede Automation hat wieder Maintenance, die man machen muss. Und die kann auch dann zum großen Problem werden, wenn man ganz viele Automatisierungen dann zu verwalten hat und zu pflegen hat.",
-      "start": 2871027,
-      "end": 2925967,
-      "confidence": 0.7857073170731709,
-      "channel": null,
-      "speaker": "A"
-    },
-    {
-      "text": "Okay ich glaube wir nähern uns dem ende dieser episode und ich denke final kann man sagen, dass sich vor overengineering eigentlich keiner so wirklich schützen kann denn es betrifft uns alle es ist nicht, ein thema was du alleine beackern musst auch deine team kollegen leute in anderen firmen haben dieses problem, jeder overengineert zu einem gewissen grad manche leute andere ingenieren zu einem gewissen grad und ich denke man bekommt es einfach nur durch mehr erfahrung besser in den griff beziehungsweise bekommt einen besseren blick dafür wie sich die firma das projekt oder ähnliches entwickeln wird und somit baut man sich seine eigene glaskugel auf so ähnlich wie wolfgang auf seinem schreibtisch.",
-      "start": 2926627,
-      "end": 2968500,
-      "confidence": 0.8305526315789472,
-      "channel": null,
-      "speaker": "B"
-    },
-    {
-      "text": "Dem kann ich nur beipflichten, vielleicht noch als Empfehlung oder als Wunsch, auch an mich selber gerichtet, vielleicht überlegen wir uns alle, wenn wir in Zukunft das Wort Over-Engineering verwenden, ob es als Schimpfwort gemeint ist oder ob es einfach ein Problem ist, weil wir es subjektiv anders gemacht hätten oder ob es wirklich Over-Engineering ist oder ob man vielleicht nicht einfach das eigentliche Problem anspricht oder vielleicht irgendwo in die Tiefe geht, anstatt immer sofort Over-Engineering zu schreien. Vor allem alle Manager, die zuhören, sollten sich das, glaube ich, wirklich überlegen, ob es ein Problem mit der Zeit ist oder ob es wirklich Over-Engineering ist. Und sogar wenn es wirklich Over-Engineering ist, würde ich da sehr vorsichtig als Manager auf dieses Problem zugehen und vielleicht eher probieren, im Team zu lösen, auf einer kollegialen Ebene unter den Kollegen und Kolleginnen, dass man da irgendwo eine Lösung findet, anstatt sofort diesen Stempel Over-Engineering aufgedrückt zu bekommen. Das ist, glaube ich, nie fein, wenn man das hört. Und Andi, du hast ja sicher, du hast eine dicke Haut, aber auch sorry für mein ganzes Overengineering, du brauchst sicher schöne Solutions und schöne Architektur.",
-      "start": 2968774,
-      "end": 3037701,
-      "confidence": 0.8216614583333334,
-      "channel": null,
-      "speaker": "A"
-    },
-    {
-      "text": "Obwohl sie hacky sind. Naja, lassen wir das so stehen. Vielen Dank fürs Zuhören. Wie immer gilt, alle Artikel, die wir erwähnt haben, findet ihr in den Shownotes. Wenn ihr uns Feedback geben wollt und auch eure Meinung zum Thema Overengineering mitteilen wollt, ob ihr lieber auf Wolfgangs Seite seid, mit ich overengineere für mein Leben gern, oder ob ihr auf meiner Seite seid, hacky, hacky, hacky, bringen das Ding erstmal ans Fliegen und danach schauen wir weiter, lasst es uns wissen, entweder über E-Mail stetisch at engineeringkiosk.dev oder über Twitter engkiosk. Wir freuen uns und wir sagen Bis bald.",
-      "start": 3038281,
-      "end": 3072217,
-      "confidence": 0.7558499999999999,
-      "channel": null,
-      "speaker": "B"
-    },
-    {
-      "text": "Ciao. Bis zum nächsten Mal.",
-      "start": 3072257,
-      "end": 3073279,
-      "confidence": 0.7046,
-      "channel": null,
-      "speaker": "A"
-    }
-  ],
-  "confidence": 0.7930216024688536,
-  "audio_duration": 3079.0,
-  "webhook_status_code": null,
-  "webhook_auth": false,
-  "summary": null,
-  "auto_highlights_result": null,
-  "content_safety_labels": null,
-  "chapters": null,
-  "sentiment_analysis_results": null,
-  "entities": null
+    "language_code": "de",
+    "audio_url": "https://audio1.redcircle.com/episodes/8ab59758-598f-459b-8d7f-f832ced2b87f/stream.mp3",
+    "punctuate": true,
+    "format_text": true,
+    "dual_channel": false,
+    "webhook_url": null,
+    "webhook_auth_header_name": null,
+    "webhook_auth_header_value": null,
+    "audio_start_from": null,
+    "audio_end_at": null,
+    "word_boost": [],
+    "boost_param": null,
+    "filter_profanity": false,
+    "redact_pii": false,
+    "redact_pii_audio": false,
+    "redact_pii_policies": null,
+    "redact_pii_sub": null,
+    "speaker_labels": true,
+    "speakers_expected": 2,
+    "content_safety": false,
+    "content_safety_confidence": null,
+    "iab_categories": false,
+    "custom_spelling": null,
+    "disfluencies": false,
+    "sentiment_analysis": false,
+    "auto_chapters": false,
+    "entity_detection": false,
+    "summarization": false,
+    "summary_model": null,
+    "summary_type": null,
+    "auto_highlights": false,
+    "language_detection": false,
+    "speech_threshold": null,
+    "id": "62bhv7780y-beca-419e-be0a-9fc6c40a0232",
+    "status": "completed",
+    "error": null,
+    "utterances": [
+        {
+            "text": "Willkommen im Engineering Kiosk. Heute haben wir im Sonderangebot Overengineering. Was das ist, erklären wir gleich und ich diskutiere auch mit Andi, ob es Underengineering gibt, wie Hacker News Overengineering beeinflusst und wenn ihr wirklich dranbleibt, dann plaudern wir auch ein paar Geheimnisse aus. Zum Beispiel, welche Leichen die Wissenschaft, aber auch Google, im Keller haben.",
+            "start": 2405,
+            "end": 24357,
+            "confidence": 0.8322321428571428,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Guten Morgen Wolfgang, ich freue mich wieder an einem schönen Montagmorgen mit dir zusammen zu sitzen, um eine neue Folge vom Engineering Kiosk aufzunehmen. Wie geht's dir?",
+            "start": 29230,
+            "end": 37676,
+            "confidence": 0.7300370370370372,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Schönen guten Morgen, es ist wie immer früh, ist ja fast mitten in der Nacht, aber das macht man nicht alles für eine neue Podcast-Folge.",
+            "start": 37716,
+            "end": 44600,
+            "confidence": 0.7949999999999998,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Für die Hörer, wir haben gerade 10.52 Uhr und der Wolfgang war jahrelang Akademiker. Ich bin mir nicht sicher, ob es da einen Zusammenhang gibt. Das überlasse ich euch. Aber, Wolfgang, mitten in der Nacht gutes Stichwort. Du hast mir eine ganze Zeit lang schlaflose Nächte bereitet durch deine Kritik in den vorherigen Podcast-Folgen, dass ich mit meinem Side-Project und dem Einsatz eines Message-Queue-Servers von RabbitMQ over-engineert habe. Und ich frage mich die ganze Zeit, warum? Was hätte ich anders tun sollen, um dein Verständnis zu kriegen?",
+            "start": 45045,
+            "end": 76482,
+            "confidence": 0.7051379310344826,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Ich habe jetzt sogar ein wirklich schlechtes Gewissen, muss ich sagen. Ich habe das ähnliche Gefühl gehabt nach den Podcast-Folgen. Wir haben so oft schlecht über Over-Engineering gesprochen und eigentlich glaube ich, dass das mehr eigentlich als Schimpfwort verwendet wird heutzutage, als dass es wirklich Substanz hat und dass es wirklich ein Problem gibt. Ich glaube, RabbitMQ ist sicher eine super Lösung und vor allem im Vergleich zum Selberprogrammieren, wenn man das neu programmiert, was immer eine schlechte Idee ist. Meiner Meinung nach, wenn es eine gute Lösung am Markt gibt, die man verwenden kann, dann macht es auf jeden Fall Sinn, die zu verwenden und ist in dem Fall nicht overengineering, würde ich so mal sagen. Aber was ist denn für dich overengineering, wenn wir bei dem Thema bleiben?",
+            "start": 76502,
+            "end": 119893,
+            "confidence": 0.8144692307692306,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Für mich ist Overengineering, wenn man an seinem eigentlichen Problem gar nicht mehr arbeitet, sondern einfach nur die Probleme drumherum löst.",
+            "start": 119973,
+            "end": 127373,
+            "confidence": 0.8415714285714286,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Hast du da ein Beispiel?",
+            "start": 127433,
+            "end": 128235,
+            "confidence": 0.1544,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Nehmen wir mal das Beispiel, wir wollen Kundendaten aus einer Tabelle, aus einer Datenbanktabelle auslesen und diese anzeigen. Wir könnten ganz einfach eine Datenbankverbindung aufbauen, eine Datenbankabfrage absetzen und die Daten in einer Ansicht wie z.B. HTML rendern. Wir könnten aber auch einen kompletten ORM einsetzen, die Query komplett optimieren, so dass diese in unter einer Millisekunde funktioniert, komplette Verfügbarkeit einbauen mit Reconnection Support etc. etc. Wir könnten eine hochkomplexe Template Engine einbauen, damit wir für jeden möglichen Anwendungsfall gewappnet sind, obwohl das eigentlich gar nicht gebraucht wird, weil wir wollen ja eigentlich nur ein Listing unserer Kunden. Das ist jetzt mal sehr vereinfacht gesagt.",
+            "start": 129351,
+            "end": 170308,
+            "confidence": 0.8066761904761901,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Du hast da einen sehr wichtigen Punkt. Es geht auch darum, was du erreichen willst und in welchem Umfeld du das Ganze machst. Wenn du jetzt sprichst, okay, du willst einen Prototyp machen, du hast ein Side-Project, du willst mit dem starten, dass du alle Kunden auflistest auf einer Website. Dann hast du sicher andere Anforderungen, als wenn du bei Trivago, wo hunderte Entwickler an der gleichen Codebase arbeiten, wenn du dort etwas implementierst oder weiterentwickelst, dann hast du sicher ganz andere Anforderungen und da ist Over-Engineering dann natürlich was ganz anderes, als wenn du ein Prototypen schreibst. Und ich glaube, darum war das Over-Engineering auch so präsent in unseren letzten Talks, weil es um Side-Projects gegangen ist. Und in einem Side-Project hast du, oder wäre meine Herangehensweise, dass man einfach einfach startet und wirklich schnell zu einem Ergebnis kommt. Aber wenn ich jetzt im Trivago-Umfeld wieder als Beispiel, wenn ich dort Kunden aufliste, dann mache ich das natürlich mit einem anderen System, mit einem komplexeren System, weil ich da ja auch weitsichtig arbeiten will und auch weiß, dass da nicht nur das kommt, sondern eine Woche später kommt noch was anderes. Da gibt es ja hoffentlich auch eine Vision, wo soll so ein Produkt hingehen und was soll mit dem erreicht werden. Und das ist natürlich ein kompletter Unterschied zu irgendeinem Prototypen, wo man einfach schnell mal was ausprobiert und irgendwie schnell zu einem Ergebnis kommen will.",
+            "start": 170569,
+            "end": 258733,
+            "confidence": 0.7965210084033613,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Aber da sind wir doch gerade schon beim Knackpunkt. Du beschreibst ja gerade genau das, was ich auch sage, dass man in einem gewissen Umfeld Probleme lösen soll, weil sie kommen. Aber in meiner Erfahrung, die heutige Geschäftswelt ist so komplex und schnelllebig, dass wenn du sagst, diese Anforderung kommt nächste Woche, habe ich das schon sehr oft erlebt, dass diese Anforderungen erst gar nicht kamen. Und somit hast du schon wieder Over-Engineering betrieben, weil du ein Problem gelöst hast, was zurzeit noch gar nicht auf dem Tisch liegt. Und dann kommt sehr wahrscheinlich auch die Frage von irgendeinem Manager, von deinem Vorgesetzten, warum dauert das denn so lange? Es kann doch nicht so komplex sein, zehn Kunden aus einer Datenbacktabelle auszulesen.",
+            "start": 258774,
+            "end": 296290,
+            "confidence": 0.8309016393442622,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Also, ich glaube, das wird auch gerne von den Chefs verwendet. Die springen sehr schnell auf dieses Over-Engineering-Stichwort auf. Ich kann mich erinnern an einen unserer Chefs, den wir beide mal hatten. Der ist da auch sehr, sehr schnell aufgesprungen, sobald jemand irgendwie was sinnvoll entwickelt hat. Und ich kann mir dann ein Beispiel erinnern. Der Kollege, da ist es nur darum gegangen, wie speichere ich Länder ab, also was für eine Sprache zum Beispiel verwendet wird für irgendeinen Inhalt. Und ich glaube, der hat einige Meetings gemacht und jeder würde natürlich sagen, um Gottes Willen, warum macht der schon wieder ein Meeting? Es geht ja nur um irgendwelche Länder und speicher einfach eins für Deutschland, zwei für USA und drei für Italien zum Beispiel. Aber wenn man sich das Problem dann genauer ansieht, da geht es um Daten, die in zehn verschiedenen Teams verwendet werden, die möglichst einheitlich sein sollen. Ländercodes sind super kompliziert. Wenn man in die Schweiz schaut zum Beispiel, da gibt es Deutsch, Italienisch und Französisch. Also es gibt Gibt da auch Standards, die man verwenden kann? Und wenn man da eine Lösung baut, die Trivago-weit von hunderten Entwicklern irgendwie unterstützt werden soll und verwendet werden soll, da muss man sich das natürlich genauer ansehen. Was macht man da wirklich in so einem komplexen System wie Trivago, wo es, keine Ahnung, 60 Sprachen oder sowas gibt, die unterstützt werden und noch mehr Länder? dann muss man da natürlich andere Maßstäbe setzen. Und da kommt natürlich dieses Wort sofort, ja, das ist overengineering, das ist nur, weil derjenige so einen akademischen Background hat oder von der Uni kommt und alles so machen will wie auf der Uni. Aber man vergisst dann, wie komplex sowas ist und wenn man es in so einem großen Umfeld wirklich sinnvoll umsetzen will. Und du kennst es ja auch, bei Firmen oder auch wenn der Code läuft, der noch zehn Jahre alt ist oder wo Sachen, Entscheidungen, die vor zehn Jahren passiert sind, noch immer hereinreichen und Sachen wesentlich komplizierter machen, weil einfach die falsche Entscheidung vor zehn Jahren getroffen worden ist und das ist dann für immer so geblieben und man hat einfach immer diesen falschen ID-Wert oder diese falsche Bezeichnung verwendet und es wird dann so in Stein gemeißelt. Bei solchen Entscheidungen, finde ich, ist es sehr, sehr wichtig, weil man einfach mehr Zeit investiert und das kann dann ein Chef gerne als Oberengineering sehen oder du jetzt auch. Solche Entscheidungen sind einfach wichtig, aber du hast vollkommen recht, man soll nicht alles prophezeien und einfach vorhersagen sind schwierig, vor allem wenn sie die Zukunft betreffen, heißt es ja immer. Man soll nicht irgendwelche Features vordenken oder zu weit denken, sondern halt einfach so das Ganze bauen, dass es offen ist für Erweiterungen. Aber ich glaube, bei so Kernentscheidungen kann man sich ruhig auch Zeit nehmen und sich überlegen, wenn das wirklich ein ganz großes System betrifft oder ganz viele Leute, dann kann man da auch gewisse Zeit investieren. Aber das macht man natürlich normalerweise weniger bei einem Side-Project.",
+            "start": 297030,
+            "end": 473047,
+            "confidence": 0.8273163064833009,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Du hast aber gerade von Quellcode gesprochen, der zehn Jahre läuft. Hast du den jetzt als overengineered oder als underengineered bezeichnet?",
+            "start": 473647,
+            "end": 480090,
+            "confidence": 0.6825714285714284,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Wenn die falschen Entscheidungen getroffen worden sind, dann finde ich, ist es underengineert, weil damals halt sich niemand die Zeit genommen hat, mal zu einer Stunde zu schauen, okay, gibt es da vielleicht einen internationalen Standard, wenn wir bei den Ländercodes bleiben. Es gibt natürlich internationale Standards und wenn sich da einmal jemand ein paar Stunden hingesetzt hätte und geschaut hätte, was gibt es denn, was können wir verwenden, dann wäre es meiner Meinung nach kein overengineering gewesen, sondern richtiges engineering. Aber vielleicht hat damals ein Manager gesagt, wir haben keine drei Stunden Zeit für diese Ländercodes, mach mal einfach irgendwas mit IDs.",
+            "start": 480394,
+            "end": 514039,
+            "confidence": 0.8250194174757278,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Und du hattest den akademischen Background von der Person angesprochen. Denkst du, dass wenn man mehr über die Theorie weiß, dass man einen Hang zum Overengineering hat? Denkst du, da gibt es eine Relation?",
+            "start": 514078,
+            "end": 526763,
+            "confidence": 0.6827352941176469,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Ich fühle mich da ja immer fast persönlich angegriffen, nachdem ich ja lange in der wissenschaftlichen Welt auch unterwegs war, weil immer alle sagen, ja, du kommst ja von der Uni, da muss alles perfekt sein. Das können nur Leute sagen, die noch nie auf der Uni waren, weil alles, was ich gesehen habe auf der Uni, was programmiert worden ist, fast unterster Standard. Es ist alles andere als overengineert. Es ist nur, um möglichst schnell zu einem Ergebnis zu kommen, weil meistens geht es nur darum, ich kann ein Ergebnis veröffentlichen und alles, was programmiert wird, ist super dreckig, muss man ganz ehrlich sagen. Ehrlich sagen. Natürlich, es gibt Studienrichtungen, wo es dann wirklich um schöne Architektur oder sowas geht oder wie man richtige Architektur macht. Natürlich, das ist die Theorie dann dahinter. Auf das stützen sich dann viele. Aber im Großen und Ganzen, wissenschaftliche Welt ist dreckig. Das Programmieren möchte ich nur mal ganz klar sagen. Also ich habe nie einen schönen wissenschaftlichen Code gesehen, um mal das einzuwerfen.",
+            "start": 527063,
+            "end": 579718,
+            "confidence": 0.7693567251461988,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Du hast jetzt zwei Welten miteinander verglichen. Die geschäftliche Welt, wo du ein bisschen Overengineering für gut befindest. Die akademische Welt, wo du sagst, dort gibt es sowas eigentlich gar nicht. Ich frage mich gerade, wann weiß ich denn, wann ich da Arbeit reinstecken soll, um ein bisschen mehr über die Problemdomäne zu erfahren und wann ich einfach loslegen sollte. Also da bin ich jetzt ein bisschen überfragt.",
+            "start": 580098,
+            "end": 603688,
+            "confidence": 0.8260294117647057,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Das ist auch eine extrem schwierige Frage und ich möchte nur nochmal sagen, ich glaube eben nicht, dass es Over-Engineering ist, aber man sollte auch nicht davon sprechen, in einem Enterprise-Umfeld sollte man Over-Engineeren, weil das ist eben nicht Over-Engineering. Over-Engineering wird dann gern als Schimpfwort wieder von irgendeinem Manager verwendet. Aber es ist eigentlich ordentliches Engineering. Und klar ist die Gratwanderung sehr schwierig. Und ich würde eigentlich in dem Bereich vor allem immer darauf schauen, wie viele Leute arbeiten mit dem Produkt. Und dementsprechend kann man auch ganz gut sehen, glaube ich, in welche Richtung man gehen muss. Weil am Anfang, wenn ich alleine bin, kann ich mal relativ dreckig beginnen. Wenn ich in einem Umfeld bin, wo 300 Entwickler an demselben Code arbeiten, dann ist es, finde ich, viel, viel kritischer, dass man extrem sauber programmiert, dass man die Schnittzellen sauber definiert, dass man Zeit investiert in die Kommunikation mit den anderen Teams, dass alle den gleichen Wissensstand haben und so weiter. Also da gibt es dann viele Bereiche, die da auch noch mit reinfließen. Wir sprechen jetzt nur über den Code, aber es gibt ja auch viele andere Bereiche, wo man overengineeren kann, Design, Product, wo auch immer.",
+            "start": 604060,
+            "end": 673447,
+            "confidence": 0.8192985074626864,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Du redest jetzt sehr, sehr viel von Theorie. Wenn das dann ist und wenn die Teamgröße größer als 7 ist.",
+            "start": 673787,
+            "end": 679270,
+            "confidence": 0.7896,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Ja, du wolltest ein Regelwerk.",
+            "start": 679290,
+            "end": 682771,
+            "confidence": 0.466,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Jetzt schieben wir den Akademiker mal zur Seite und lassen mal den Ruhrpott wieder raushängen. Lass uns mal zur Praxis. Lass uns mal die Hände dreckig machen. Ist die meiste Java-Software zum Beispiel overengineert? Ich meine, Java ist bekannt dafür, jedes Designpattern anzuwenden, was es gibt. Factory over Factory, over Designpattern etc. Wie ist deine Meinung dazu?",
+            "start": 682811,
+            "end": 703160,
+            "confidence": 0.7525789473684209,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Also ich glaube, es liegt grundsätzlich nicht an der Sprache. Natürlich ist Java sehr verbose, wie man das auch immer auf Deutsch sagt. Man muss viel schreiben, im Normalfall, um an dasselbe Ergebnis zu kommen. Aber diese ganzen Patterns, die du anwendest, die sind ja nicht von Java vorgegeben. Also die wendest du ja freiwillig an. Und bei Patterns bin ich auch der Meinung, dass das nicht unbedingt Overengineering ist. Klar kann man vieles overengineeren und es gibt das klassische Beispiel, wenn du eine Klasse hast, dann brauchst du ein Interface dazu, was natürlich kompletter Blödsinn ist, weil meiner Meinung nach brauchst du ein Interface genau dann, sobald du mehrere Implementierungen hast und es gibt so Leute, die machen einfach für alles ein Interface, egal ob es da mehrere Implementierungen gibt oder nicht. Das zählt für mich einfach unter frühzeitige oder voreilige Optimierung, premature optimization, weil das kann man auch später einführen, wenn es dann eine zweite Implementierung dann gibt für eine Klasse.",
+            "start": 703380,
+            "end": 758102,
+            "confidence": 0.8017116564417182,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Aber kann man nicht prinzipiell dreckig mit allem starten und das dann später schön machen?",
+            "start": 758503,
+            "end": 764110,
+            "confidence": 0.746,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Ich hatte eine lange Diskussion mal mit einem Entwickler genau darüber, weil ich glaube, es gibt viele Entwickler, die sagen, man kann auch sehr schön sauber programmieren, ohne dass man viel Zeit verliert. Und ich glaube, das stimmt auch, wenn man sehr gut darin ist, die Patterns kennt, dann werden die einfach natürlich angewendet. Es ist so ähnlich, wie wenn du zum Beispiel für deine Infrastruktur automatisch immer, wie nennt sich diese Language, um allgemeingültig auf allen Clouds was zu deployen.",
+            "start": 764701,
+            "end": 794968,
+            "confidence": 0.8584074074074075,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Terraform.",
+            "start": 795049,
+            "end": 796049,
+            "confidence": 0.542,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Danke.",
+            "start": 796089,
+            "end": 796689,
+            "confidence": 0.642,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "HashiCorp Configuration Language, ganz genau. Und Terraform ist das Tool.",
+            "start": 796729,
+            "end": 800530,
+            "confidence": 0.44109999999999994,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Wenn du zum Beispiel Terraform verwendest, um irgendwas automatisiert zu deployen, dann werden auch viele sagen, what the fuck, warum? Das kann man doch einfach dreckig lösen. Aber für dich ist das einfach der Standard und du bist wahrscheinlich schneller damit, als wenn du das manuell irgendwo aufsetzt. Und so ähnlich sehe ich das mit Patterns. Wenn Programmierer sehr gut in dem Umfeld sind und genau wissen, was sie machen, dann kann das sogar das Ganze beschleunigen und trotzdem einen sehr sauberen Code am Ende ausspucken in dem Projekt. Und andere Entwickler können dann schneller damit weiterarbeiten. Also ich glaube, Patterns sind nicht automatisch overengineering. Und Terraform ist nicht automatisch overengineering. Also es kommt wirklich darauf an, was du gewöhnt bist, was die anderen Entwickler gewöhnt sind. Und dann kann man auch sauber arbeiten. Also man muss nicht unbedingt immer dreckig arbeiten, um schnell an ein Ergebnis zu kommen. Aber wenn es natürlich gerade in einem Bereich ist, wo man neu ist, dann wird man wahrscheinlich eher dreckiger starten müssen, weil man einfach weniger Erfahrung hat.",
+            "start": 800550,
+            "end": 862011,
+            "confidence": 0.811568181818182,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Ich denke, ich muss da jetzt aber mal eine Lanze brechen. Und zwar, wenn ich immer nur das nutze, was ich schon kenne, ist mir als Entwickler ja super langweilig. Als Entwickler habe ich natürlich auch einen gewissen Entdeckungsdrang. Ich möchte mehr lernen, andere Technologien, andere Tools. Und deswegen versuche ich natürlich auch, neue Technologie, neue Tools in meinem aktuellen Anwendungsfall, in meinem Code, um ein Problem zu lösen, einzuführen. Und jetzt sagst du, nimm doch bitte immer das, was du schon kennst, dann bist du schneller, dann ist das auch kein Over-Engineering. Wie passt das zusammen?",
+            "start": 862171,
+            "end": 891278,
+            "confidence": 0.7544742268041238,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Also was ich gemeint habe, du hast mich vielleicht auch falsch verstanden, ist, dass wenn man sich in dem Bereich gut auskennt, dass es nicht overengineering ist automatisch, nur weil andere Leute sich nicht auskennen. Da kommt wieder dieses Schimpfwort ins Spiel, RabbitMQ ist overengineering, was ich gesagt habe, weil ihr halt einfach weniger Wissen habt und für mich ist das eine Riesentechnologie und warum sollte man die anwenden für den einfachen Use Case. Darum dieses Schimpfwort Overengineering. Das heißt aber nicht, dass man keine neuen Technologien einsetzen kann oder lernen kann oder sich mit neuen Sachen befassen kann. Da ist halt immer die Frage, wann hat man diese Zeit und wann hat man die Zeit, wo man diese neuen Sachen lernen kann oder die Zeit investieren kann, um neue Technologien ausprobieren zu können. Hoffentlich sind es nicht nur Side Projects, hoffentlich hat der Arbeitgeber das auch so weit im Blick, dass man in einem Job auch lernen darf und hoffentlich soll, neue Technologien oder was es auch immer ist.",
+            "start": 892282,
+            "end": 952226,
+            "confidence": 0.8263588235294123,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Kennst du das Konzept der Innovation Tokens?",
+            "start": 953423,
+            "end": 955265,
+            "confidence": 0.665,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Erklär mal.",
+            "start": 955325,
+            "end": 955985,
+            "confidence": 0.4815,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Du sagtest gerade, hoffentlich gibt der Arbeitgeber dir entsprechend Zeit, um dich weiterzubilden, neue Konzepte, neue Methoden, neue Technologien zu lernen. Doch ich habe die Erfahrung gemacht, immer wenn ich einen kleinen Prototypen baue mit neuer Technologie, dann funktioniert der immer. Und immer wenn ich das versuche in Produktion einzusetzen, also wirklich einzusetzen, dann komme ich immer recht schnell an Grenzen, die ich vorher gar nicht gesehen habe, weil ich dann wirklich ein reales Problem löse. Das Konzept der Innovations Tokens ist so gemeint, dass du eine gewisse Anzahl an Tokens zu vergeben hast, wo du innovativ bist. Und innovativ heißt in diesem Falle, eine neue Datenbanktechnologie einzusetzen, eine neue Sprache einzusetzen, etc., um in deinem Projekt nur eine gewisse Anzahl an Herausforderungen zu haben. Und die anderen Herausforderungen werden durch Lösungen gelöst, die das Team bereits kennt. Einen Moment, mein Hund hier gerade mal eben, bitte.",
+            "start": 956005,
+            "end": 1007208,
+            "confidence": 0.817517006802721,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Während Andi versucht da seinen Hund zu beruhigen, versuche ich dabei mal zu antworten. Ich finde eine sehr gute Herangehensweise an das Ganze, auch wenn das Ganze eher in Richtung Innovation und Lernen geht, weniger in Over-Engineering. Ich glaube, das wird eben auch immer verwechselt, dass neue Technologien irgendwie automatisch Over-Engineering ist. Eine neue Technologie kann ja auch Sachen vereinfachen und muss nicht unbedingt irgendwas komplexer machen.",
+            "start": 1009341,
+            "end": 1035311,
+            "confidence": 0.8131194029850745,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Das ist korrekt, aber woher weißt du denn, dass die neue Technologie es nicht komplexer macht und es vereinfacht? Also ich meine, das weißt du doch erst, wenn du es eingebaut hast, oder? Und mal wirklich genutzt und die Erfahrung gemacht hast.",
+            "start": 1035542,
+            "end": 1046948,
+            "confidence": 0.7318333333333334,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Oder du hast dich mal schlau gemacht und weißt ganz genau, was diese Software macht oder diese Library. Oder man probiert sie mal schnell aus. Du hast ja auch auf Twitter gefragt, was die Leute unter Over-Engineering verstehen. Was hast du denn dafür Antworten bekommen?",
+            "start": 1046988,
+            "end": 1062355,
+            "confidence": 0.7677999999999999,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Ja genau, ich wollte die Zuhörer einfach mal in unseren Podcast ein bisschen mit einbinden und habe auf Twitter gefragt, was deren erster Gedanke zum Thema Overengineering ist. Und wir haben eine größere Anzahl an Antworten bekommen, was uns sehr freut. Und da waren ziemlich viele verschiedene Ansichten bei, was mir auch gezeigt hat, jeder hat ein unterschiedliches Verständnis von Overengineering. Hier mal ein paar Antworten auf meine Frage. Zu viel Zeitaufwand und zu schwer zu verstehen. Man hätte das Problem mit einer einfachen Lösung lösen können. You ain't gonna need it. Vorzeitige Optimierung und übermäßige Anwendung des Dry-Prinzips, das zu einer engen Kopplung zwischen nicht miteinander verbundenen Bereichen führt. Abstraktionsebenen. Den finde ich schön, den nächsten. Erster Gedanke, das Armaturenbrett eines modernen Autos. Zweiter Gedanke, eine einfache Webseite, die mit Frameworks auf Frameworks auf Template Engines auf weiteren Frameworks auf Routern auf Containern auf AWS den ganzen Weg nach unten gemacht wurde. Ich glaube, das ist die Mehrheit der heutigen Websites. Dependency Injection und die Zwiebelarchitektur und das, was du auch im Vorhinein gesagt hattest, Interfaces für Klassen, die höchstwahrscheinlich nie eine weitere Implementierung benötigen.",
+            "start": 1062720,
+            "end": 1132753,
+            "confidence": 0.829360215053764,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Mit was bist du einverstanden?",
+            "start": 1133785,
+            "end": 1135306,
+            "confidence": 0.6826000000000001,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Ich glaube mit der Mischung aus allem. Also auf der einen Seite stimme ich zu, auf der anderen Seite irgendwie nicht. Nehmen wir mal ein Beispiel, wo ich zustimme. Mit den klassischen Programmierparadigmen wie you ain't gonna need it oder don't repeat yourself. Ich glaube da bin ich d'accord mit. Zu schwer zu verstehen, finde ich, ist schwierig, weil das ein höchst subjektiver Begriff ist. Ich verstehe etwas nicht, wenn ich das Vorwissen nicht habe. Und da muss man einfach sein Team oder seine Kollegen kennen. Aber wenn ich jetzt drüber rede, fällt mir auch ein, Was ich zum Beispiel nie bei Quellcode verstehe ist Byte-Shifting. Und ich habe schon ein paar Entwickler gesehen, die haben dann eine Prozedur geschrieben, die Byte-Shifting enthält, weil die Programmierer dachten, das ist nur so eine total kluge Lösung, das so zu machen und die sieht total intelligent aus. Und als ich drauf geguckt habe, ich habe es einfach nicht verstanden. bin da einfach, muss ich zugeben, zu blöd für. Und dann habe ich mich mit der Person hingesetzt und habe mal gefragt, ob die mir das erklären kann. Als ich das dann konzeptionell verstanden habe, habe ich gefragt, ob man das nicht einfach mit drei, vier Booleans lösen könnte. Und dann kam die Antwort, ja, das könnte man auch. Und dann haben wir es umgeschrieben, damit ich es dann halt auch nächste Woche noch verstehe. Also ich glaube, darüber lässt sich sehr, sehr lange diskutieren, was jetzt schwer zu verstehen ist.",
+            "start": 1135346,
+            "end": 1210386,
+            "confidence": 0.7864032258064528,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Ich glaube, das geht auch sehr in die Richtung von Premature Optimization, dass du einfach diese Micro-Optimizations auf so einem kleinen Level Optimierungen machst, weil du glaubst, dass das performance-technisch so viel bringt. Natürlich bringt es was, gar keine Frage. Und man kann jetzt auch diskutieren, ob man minus minus x oder x minus minus macht. Aber zu 99% ist es wahrscheinlich egal, weil du in dem Umfeld arbeitest, wo diese Mikrooptimierung einfach nicht nötig ist. Klar, wenn du jetzt, keine Ahnung, in MySQL, in irgendeinem tiefen Kern in MySQL entwickelst, Also nicht mit MySQL, sondern in MySQL, in dem MySQL-Source-Code. Dann mag es wichtig sein, dass du da Micro-Optimierungen machst, weil das hat einfach extreme Auswirkungen dann. Aber wenn du in einer normalen Business-Logik in irgendeinem Java-Server programmierst, ist meiner Meinung nach wichtiger, dass du einfach so programmierst, dass es andere und du selber auch später leicht verstehst, anstatt irgendwelche Optimierungen zu machen, die dann kein Mensch versteht. Also mittlerweile sind wir einfach so weit bei den meisten Sprachen, dass die Compiler so viel abnehmen und diese Optimierungen auf Compilerebene machen, dass wir das eigentlich auf Sourcecode-Ebene gar nicht mehr machen müssen, außer in wirklichen Spezialanwendungsbereichen. Ich glaube, da geht es einfach darum, schön zu programmieren, sauber zu programmieren, dass es andere Leute und man selber eben auch fünf Monate später auch noch leicht verstehen kann.",
+            "start": 1211052,
+            "end": 1302505,
+            "confidence": 0.8168898678414099,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Oder nehmen wir mal das Dry-Prinzip. Don't repeat yourself. Prinzipiell eine ganz gute Sache. Du schreibst eine Logik nur einmal, lagerst die irgendwie aus, damit du die aus verschiedenen Stellen irgendwie aufrufen kannst. Super. Da bin ich auch ein recht großer Fan von, sofern diese Logik denn auch größer ist, die du ja auslagerst. Wenn die Prozedur aber zu klein wird, dann ist das Dry-Prinzip, hat das einen Hang zum Over-Engineering. Nehmen wir mal das Beispiel der JavaScript-Bibliothek LeftPad. LeftPad war eine Funktion, Oder ist sogar noch eine Funktion. Ich glaube, das Paket gibt es sogar noch. Da hast du ein String reingeschmissen und hast gesagt, okay, diese Zeichenkette soll 10 Zeichen lang sein und wenn die Zeichenkette nur 6 Zeichen lang ist, pack bitte 4 Zeichen vorne dran. Du baust also ein Präfix vor diese Zeichenkette. Diese Funktion wurde in ein extra JavaScript-Paket ausgelagert, um dann als Abhängigkeit in ganz viele Pakete und Applikationen reingezogen zu werden. Da muss ich zugeben, ist das nicht vielleicht ein bisschen übertrieben? Oder ist die Anwendung des Don't Repeat Yourself Prinzip da nicht ein bisschen übertrieben worden? Deswegen bin ich so ein riesen Fan von der Sprache Go, Golang. Die Autoren der Programmiersprache sind unglaublich große Fans von Einfachheit. Die sagen, hey, nur weil es da drüben paket gibt und du brauchst aber wirklich nur zwei prozent dieses paketes schau doch mal lieber nach ob du die die code zeilen nicht kopieren kannst und in dein paket und in deiner applikation zu integrieren anstatt die ganze dependency mit einzubinden und am anfang dachte ich warum das ist doch da und das maintain doch wer anders und All die Vorteile, die man dann kriegt. Inzwischen muss ich sagen, es ist deutlich leichter zu verstehen, wenn ich nur einen Bruchteil des externen Paketes nutze, anstatt dass ich mir das ganze Paket hole. Weil da kommt natürlich auch eine ganze Menge mit. Du musst diese Abhängigkeit kontinuierlich up-to-date halten. Du musst die Doku dauerhaft lesen, weil beim Update sich gegebenenfalls was von der Schnittstelle geändert haben kann, et cetera, et cetera. Also ist auch wieder so ein großer Diskussionspunkt, wo ich mich nicht auf eine Seite schlagen kann.",
+            "start": 1302898,
+            "end": 1427768,
+            "confidence": 0.7899226519337023,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Ich glaube, das ist dann ja auch der Begriff Dependency Hell, wo man einfach so viele Dependencies hat, die man dann auch maintainen muss und wo man dann angewiesen ist auf die externen Leute. Und ich kenne das selber von diesem F-Online-Projekt. Wer jetzt nicht weiß, um was es geht, soll mal in Episode 2 reinhören. wo einfach Dependencies in JavaScript die Jahre alt sind, wo das Ding einfach extrem schwierig ist überhaupt zu bauen aktuell, weil viele Dependencies einfach weg sind. Die gibt es nicht mehr, die machen Probleme und teilweise sind es wirklich einfache Libraries, wie es halt so im JavaScript Umfeld Teilweise ist die auch rekursiv natürlicher Dependencies sind. Das heißt, die wird gar nicht direkt eingebunden, aber ein anderes Projekt bindet die ein. Und da hat man dann natürlich schon auch mehr Aufwand, den man dann wieder rechtfertigen muss bzw. mit einrechnen muss in die Maintenance von dem Projekt. Also ich glaube, das darf man auch nicht vergessen. Ob das jetzt Over-Engineering ist, wage ich mal zu bezweifeln, weil wenn wir da auf die ursprüngliche Definition zurückgehen, Code that solves problems you don't have, Naja, das Problem wurde ja gelöst. Die Frage ist immer, wie wurde es gelöst und was habe ich mir da an mehr Aufwand mit reinkauft durch diese Library oder externe Library, die ich verwende.",
+            "start": 1428361,
+            "end": 1509411,
+            "confidence": 0.7921936936936933,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Gehen wir mal auf einen anderen Punkt. Unnötige Abstraktionsebenen. Und da kommt mir irgendwie immer das Beispiel eines ORMs in den Kopf. Ein ORM ist ein Datenbankabstraktionslayer. Und ich denke, es gibt eine Daseinsberechtigung von ORMs, speziell in Produkten, die auf unterschiedlichen Architekturen und Infrastrukturen laufen, nehmen wir mal ein klassisches Content-Management-System, Typo3 oder WordPress oder Joomla. In der Regel hat dieses System eine relationale Datenbank, wie MySQL, PostgreSQL, MariaDB oder ähnliches als Backend. Da würde ich sagen, okay, da macht gegebenenfalls ein ORM Sinn. Wenn du aber dein eigenes Produkt baust, Hast du in der Regel auch deine Infrastruktur unter Kontrolle oder du mietest dir irgendwo eine Datenbank bei irgendeinem Cloud-Provider oder von mir aus auch bei Hetzner und 1&1 oder in deinem PHP-Webspace bei Strato, es ist ja völlig egal, aber ob ich da ein ORM einsetzen würde, eher nicht. Warum nicht? Ich habe sehr, sehr viele Projekte dieser Art gesehen. Du hast ein eigenes Produkt. Dieses Produkt hat ein ORM integriert. Es war aber von vornherein klar, dass das Produkt immer mit einer MySQL-Datenbank läuft oder immer nur mit einer PostGrid-Datenbank läuft. Ich persönlich war noch nie in einem Projekt, wo nur die Datenbank-Engine geändert wurde. Man hat die MySQL mit einer Post ausgetauscht und alles lief weiter. Es waren immer riesengroße Anpassungen notwendig und in der Regel war es sowieso immer ein kompletter Rewrite. Und dann hat man festgestellt, oh wir brauchen den ORM gar nicht oder der ORM hat dieses Feature gar nicht oder der ORM kann genau dieses eine Feature dieser Datenbank nicht ausnutzen. das genau wir jetzt aber brauchen, um die Performance von dieser Applikation zu steigern. Also für mich ist in sehr, sehr vielen Fällen zum Beispiel ein ORM, ein Datenbankabstraktionsflair, eine unnötige Abstraktionsebene. Hast du schon mal ein Projekt gesehen, wo du einfach nur ohne Probleme die Datenbankengine ausgetauscht hast und dann lief alles weiter?",
+            "start": 1509431,
+            "end": 1618258,
+            "confidence": 0.7853439490445869,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Wenn ich mich da zurückerinnere an meine Zeit als Student, wir mussten damals ORMs verwenden und ich kann mich erinnern, die haben damals statt einem Join zum Beispiel direkt abzufeuern, haben die teilweise 600 Queries abgefeuert, weil die einfach direkt Abhängigkeiten dann jeweils mit einer Query abgefragt haben. Wie gesagt, sie sind schon intelligenter geworden, aber ich glaube immer noch, dass es gerade performance-technisch mit den ganzen Joins und ähnlichen Dingen kaum möglich ist, einen performanten ORM zu bauen bzw. zu verwenden. Ganz abgesehen davon, wie du gesagt hast, eine Datenbank ändert man mal nicht so schnell und meistens, wenn man ein Produkt hat, was wirklich mehrere Datenbanken unterstützt, dann ist es so komplex, dass man wahrscheinlich auch irgendwelche speziellen Features von Datenbanken verwenden will oder muss performance-technisch und da macht es auch wenig Sinn. Also hat sich mir auch bisher noch nicht erschlossen. Gerne die Hörerinnen, wenn ihr andere Erfahrungen habt oder irgendwo den Sinn seht in ORMs, sendet uns eine Message. Wir ändern gerne unsere Meinung. Aber ich habe ehrlich gesagt auch mit meinem Datenbank-Background nie einen sinnvollen Anwendungszweck gefunden.",
+            "start": 1618525,
+            "end": 1691034,
+            "confidence": 0.8134065934065934,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Bei einer Antwort von einem Twitter-User bin ich aber nicht der gleichen Meinung. Und zwar wurde Dependency Injection als Over-Engineering bezeichnet. Da würde ich die klassische Informatiker-Antwort geben. Es kommt darauf an. Dependency Injection bedeutet eigentlich, dass du eine Abhängigkeit zu einer Klasse reinreißt und diese austauschbar machst. Ein klassisches Beispiel wäre, du schreibst eine Prozedur, die eine Datenbank-Connection benötigt und du reichst diese Datenbank-Connection als Objekt in diese Prozedur rein und somit kannst du die Datenbank-Connection jederzeit austauschen. Sie muss nur eine gewisse Schnittstelle erfüllen. In diesem Fall würde ich sagen, Dependency Injection ist super sinnvoll, weil man dadurch die Datenbank Connection austauschen kann oder aber auch für Unit und Integration Tests mocken kann und somit nicht immer eine Datenbank hochfahren muss. Da halte ich das schon für sehr sehr sehr sehr sinnvoll.",
+            "start": 1691074,
+            "end": 1745144,
+            "confidence": 0.8214552238805971,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Ich glaube auch, dass das wieder so ein Klassiker ist, neue Technologie. In mancher Software ist das auch verknüpft mit der ganzen Magic, die passiert mit Autowiring, dass die automatisch injected werden und so weiter. Aber die Grundidee von Dependency Injection ist ja genau die, die du jetzt gerade erklärt hast und die kann man auch ohne irgendeine Library, ohne irgendein Framework implementieren, dass man einfach sauber Abhängigkeiten in eine Klasse zum Beispiel reinreicht über den Konstruktor. Da brauche ich keine Library, da brauche ich kein Auto-Wiring, da brauche ich keine Magic von irgendeinem Framework, auch wenn die bei größeren Projekten sicher sehr sinnvoll ist und glaube ich auch in größeren Teams viel abnimmt. Aber die Grundidee Abhängigkeiten zu reduzieren ist glaube ich eine perfekte Idee, sei es im Source Code, sei es bei Teamstrukturen. Egal wo, Abhängigkeiten machen meistens Probleme.",
+            "start": 1745662,
+            "end": 1800814,
+            "confidence": 0.8001560283687944,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Du hattest gerade neue Technologien erwähnt. Kennst du eigentlich den Begriff Hacker News Driven Development?",
+            "start": 1801355,
+            "end": 1805557,
+            "confidence": 0.34820000000000007,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Nö, erklär mal.",
+            "start": 1805718,
+            "end": 1807019,
+            "confidence": 0.437,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Kennst du die Plattform Hacker News?",
+            "start": 1807059,
+            "end": 1808700,
+            "confidence": 0.6421666666666667,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Natürlich.",
+            "start": 1808780,
+            "end": 1809541,
+            "confidence": 0.67,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Für alle Hörer, die es nicht kennen, Hacker News ist eine News-Informationsseite der Venture Capital Firma Y Combinator. Und diese Newsseite stellt keine eigenen News her oder ähnliches, sondern basiert allein auf den Einreichungen von Links und Blogartikeln von Usern. Und andere User können diese Artikel dann hochwerten und runterwerten. Und diese Plattform ist sehr, sehr bekannt dafür, sehr kritisch zu sein, auch in den Kommentarfunktionen, aber auch immer die neuesten Trends zu zeigen. Wenn irgendwo eine neue Datenbank hochkommt, dann ist die auf jeden Fall auf Hacker News. Theoretisch kann man also jeden Tag auf Hacker News gehen und sieht sechs neue Technologien. Hacker News Driven Development ist also eigentlich, man geht auf Hacker News, sieht eine Technologie, cool, die klingt interessant, die möchte ich lernen, die integriere ich jetzt erstmal direkt in mein Projekt und ship die in Production. Das ist für mich auch so eine Art von Over-Engineering, obwohl das natürlich auch klassische Entwickler-Neugier ist. Aber ich war auch schon in Projekten, da wurde jedes neueste Framework eingebunden und man ist nur in irgendwelche Fehler gerannt, weil die Version 0.0.1 minus Alpha minus 15 war und da fragt man sich, Oft muss das sein oder hätte es da auch nicht einfach das Framework von vor einem Jahr gereicht? Hast du auch schon mal sowas erlebt?",
+            "start": 1809581,
+            "end": 1888597,
+            "confidence": 0.7449862385321103,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Das haben wir auch in der zweiten Episode schon ein bisschen angeschnitten mit diesen alten Technologien, die sehr gut funktionieren. Und das ist halt das Problem mit neuen Technologien, die man einfach so einführt. Aber was du mit Innovation Tokens schon erwähnt hast, kann man das ja relativ einfach in den Griff bekommen, dass man das wirklich systematisch angeht und sagt, wir haben ein gewisses Budget, für Innovation oder für neue Technologien und probieren das dann dementsprechend aus. Also ich glaube, das ist lösbar. Aber was da natürlich auch noch zusätzlich mitspielt und man merkt das schon ein bisschen so bei den Tweets auch, die wir als Antworten bekommen haben und ich kenne das auch von mir selber, dass man halt einfach oft seine subjektive Meinung da zu stark einbringt und wenn es irgendeine Lösung ist, die man selber nicht gemacht hätte oder die man selber eben nicht kennt, dann schreibt man sofort overengineering. Das ist overengineered. Aber man muss sich da halt auch wirklich überlegen, habe ich vielleicht einfach weniger Erfahrung oder ist es ein Bereich, wo ich mich schlechter auskenne, kenne ich diese Software einfach nur nicht und da sollte man halt auch ein bisschen aufpassen und da Da möchte ich mich selber auch ein bisschen an den Haaren ziehen, wo ich wahrscheinlich zu schnell Overengineering gerufen habe bei deinen Projekten, weil man das halt einfach so scherzhaft unter Entwicklern oft sagt. Aber ich glaube, es ist halt auch sehr, sehr gefährlich, weil dieser Begriff hat sich mittlerweile so eingespielt und auch unter Managern vor allem, dass der glaube ich in erstens falschen Kontext verwendet wird und halt mittlerweile wirklich so als Totschlagargument verwendet wird, um einfach jegliche sinnvolle, saubere Arbeit einfach sofort mit dem Totschlagargument, that's overengineering, einfach beendet und gar nicht wirklich tiefer reinschaut in das Projekt, wo liegen die Probleme, warum dauert was länger, sondern alles ist sofort overengineert.",
+            "start": 1888617,
+            "end": 1998258,
+            "confidence": 0.797515923566879,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Wir reden hier aber die ganze Zeit über Overengineering mit einem negativen Hintergrund. Hattest du denn schon mal gute Erfahrungen im Bereich Overengineering? Also wo du etwas gesehen hast und sagst, hey, das war jetzt aber eigentlich hier unnötig, aber im Endeffekt war das genau der richtige Weg?",
+            "start": 1998378,
+            "end": 2012745,
+            "confidence": 0.7341875,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Ich glaube, dass das eben sehr oft vorkommt, wo dann eben extrem viele Leute sagen, das ist overengineering oder Manager das sagen, aber dabei war es einfach nur sauberes Engineering mit bisschen Weitblick, weil wenn ich jetzt ein Framework einführe oder wenn ich jetzt mit einem simplen Projekt starte und das auf Symphony-Framework aufbaue, Mag das vielleicht in der ersten Woche overengineering sein oder vielleicht am Anfang, weil ich mir erst einlernen muss, wie funktioniert das mit diesem Framework. Aber wenn ich ein Produkt baue, was länger überleben soll als zwei Monate, dann macht sicher Sinn, komplexeres Framework oder gutes Framework wie Symfony im BHB-Bereich zum Beispiel einzusetzen, obwohl ich da eine Lernkurve habe und mich erst damit anfreunden muss oder mehrere Entwickler vielleicht. Aber langfristig macht es natürlich absolut Sinn. Und darum glaube ich, dass ganz viel von Over-Engineering eigentlich gar kein Over-Engineering ist, sondern einfach sauberes Engineering und die Zukunft wirklich erleichtert. Und wenn du jetzt auf Terraform aufsetzt, hast du vielleicht auch Vorteile in Zukunft, wenn du was ändern willst, dass du einfach schneller bist, als wenn du das manuell gemacht hättest oder womöglich dein eigenes RabbitMQ entwickelt hättest.",
+            "start": 2013181,
+            "end": 2088827,
+            "confidence": 0.8182760416666667,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Okay, das macht Sinn. Was ich bei mir aber öfters beobachte, immer wenn ich eine neue Idee verfolge und schaue, wie das funktioniert, dann muss ich mich während des Prozesses, während der Programmierung immer wieder dran erinnern, hey, löst ein originales Problem, löst ein originales Problem. Weil links und rechts die Probleme zu lösen, ist auch sehr spannend. Und ich muss mich immer zwingen, bei dem Hauptproblem zu bleiben und nicht zu overengineeren, damit ich überhaupt was geschafft kriege. Und ich bin mir nicht sicher, ob das ein klassisches Entwicklerproblem ist oder mein eigenes Problem, Hast du das auch oder wie, was sind die Methoden, die du anwendest, um dich vor Overengineering zu schützen?",
+            "start": 2088847,
+            "end": 2121802,
+            "confidence": 0.7622280701754388,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Was ich allgemein mache, ist glaube ich einfach probieren, den Kontext möglichst gut zu verstehen. Das heißt, welche Informationen habe ich über die Zukunft, wo soll das Ganze hingehen, in welchem Stadium befindet sich dieses Projekt gerade oder der Source Code oder was es auch immer ist. Und wo will ich hingehen mit dem Ganzen? Und dann probiere ich, die beste Lösung für diesen Zeitraum zu finden. Natürlich, man sollte nicht zu sehr in die Zukunft denken, aber so eine gewisse, grobe Einschätzung von dem Ganzen kann man ja haben. Eben ist das einfach ein Side Project, das will ich ausprobieren, Proof of Concept. Ich habe keine Ahnung, ob das überhaupt irgendwie angenommen wird von Usern, dann mache ich das einmal extrem schnell, damit die möglichst schnell zu einem Ergebnis kommen. Wenn das eine Software ist für einen Kunden zum Beispiel, wo ich weiß, der wird das garantiert ein Jahr einsetzen, der wird in dem Jahr noch ein paar Änderungen haben, die werde ich selber wieder machen müssen als Auftragnehmer zum Beispiel für diese Software, dann werde ich mir überlegen, okay, wie kann ich das so programmieren, dass ich selber den Source-Code verstehe in Zukunft, dass ich Änderungen wieder schnell einpflegen kann, dass ich schnell Updates machen kann von der Software, dass ich da keine Probleme habe. Wenn das in einem Umfeld ist mit 500 Entwicklern, Trivago, dann weiß ich, dass eine Software mehrere Jahre halten muss, dass da viele Entwickler dran arbeiten. Dann werde ich da sicher nochmal noch mehr Augenmerk drauf legen, was ich wirklich mache. Und das wird dann auch langsamer. Das muss man sich auch bewusst sein. Umso mehr Entwickler in einem größeren Umfeld an etwas arbeiten, umso langsamer werden alle im Endeffekt, wenn man das vergleicht mit einem Team von drei Leuten oder wenn ich alleine an einem Side-Project arbeite. Und so probiere ich das möglichst über die Zeit dann zu managen. Und wenn ich ein Kundenprojekt habe, dann habe ich da ja auch meine geschätzte Zeit und dann probiere ich einfach möglichst in dem Zeitrahmen zu bleiben natürlich. Und jedes Mal, wenn ich eine Idee habe oder eine neue Technologie einsetzen will, überlege ich mir, kann ich das in meiner Zeit irgendwie schaffen oder will ich diese Zeit investieren? Macht es wirklich Sinn, diese Zeit zu investieren? Also ich versuche es über den Kontext und die Zeit möglichst dann den Weg zu finden.",
+            "start": 2121862,
+            "end": 2256095,
+            "confidence": 0.7844060150375939,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Du drückst das zwar sehr schön aus, aber das klingt, also so runtergebrochen sagst du eigentlich okay, du hast ein paar Jahre Erfahrung und du hast eine Glaskugel auf deinem Tisch stehen und je nachdem was die Glaskugel so sagt, beschäftigst du dich mehr oder weniger mit dem Thema. So hört sich das jetzt für mich gerade an.",
+            "start": 2256803,
+            "end": 2271458,
+            "confidence": 0.719,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Es ist natürlich sehr viel Erfahrung dabei, klar. Ich glaube, es gibt da keine Regeln, die man irgendwie auf Metriken oder so runterbrechen kann. Ich glaube, Zeit ist sicher die beste Metrik, wo man das irgendwie abschätzen kann. Wie viel Zeit würde das Einsetzen von einem neuen Framework wirklich brauchen? Wie viel Zeit habe ich? Und ist das gerechtfertigt, diese Zeit?",
+            "start": 2271698,
+            "end": 2291970,
+            "confidence": 0.8270491803278691,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Welchen Tipp würdest du Leuten geben, die gerade noch nicht so viel Erfahrung haben, um sich mit dem Thema Overengineering ein bisschen zu beschäftigen und versuchen, besseres gefühl dafür zu kriegen um sich ihre eigene glaskugel aufzubauen so wie du sie hast.",
+            "start": 2292170,
+            "end": 2304320,
+            "confidence": 0.4529523809523809,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Da werden jetzt viele vielleicht eine andere meinung haben und du auch andi aber ich glaube dass im großen und ganzen over engineering viel zu selten passiert und dass die meisten Lösungen im professionellen Umfeld zu wenig overengineert sind. Und dass sich gerade wenn Leute neu anfangen, die sollen sich mit neuen Technologien beschäftigen. Und üblicherweise, wenn man in einem Team arbeitet, dann bekommt man schon das Feedback. Aber gerade junge Leute haben es extrem schwer, oft neue Technologien durchzusetzen und einzubringen. Und ich glaube, dass eher der Druck, vor allem im professionellen Umfeld der Druck ist, eher größer, auf keinen Fall irgendwo mehr Zeit zu investieren. Darum würde ich eher sagen, im professionellen Umfeld sollten die Leute mehr zum Over Engineering tendieren.",
+            "start": 2304360,
+            "end": 2350849,
+            "confidence": 0.8333577235772356,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Das war eine Wendung im Podcast, die ich so nicht erwartet habe, das ist richtig. Ich bin da persönlich kein Fan von, das ist auch richtig, weil ich schlage nämlich genau in die gegenteilige Kerbe. Und zwar denke ich, man sollte gegebenenfalls erstmal die ganze Sache ans Fliegen bringen. Das bedeutet, hack die einfach rein. Schau, dass es erstmal läuft und danach können wir immer noch weiter gucken, welche Anforderungen wir überhaupt haben an Stabilität, an Das muss testbar sein, schön sein etc. Es kommt natürlich immer auf die Projektgröße an etc.",
+            "start": 2351430,
+            "end": 2383650,
+            "confidence": 0.7493913043478263,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Aber ich glaube gerade im professionellen Umfeld ist genau das das größte Problem, weil danach die Zeit zu bekommen um was schön zu machen, die Zeit bekommt man ganz ganz selten und dann fliegen diese ganzen halbfertigen Lösungen, gehackten Lösungen herum, Und es werden dann teilweise Millionen Umsatz auf diesen hacky Lösungen gemacht und keiner traut sich mehr, das Ding anzugreifen, weil es fast auseinanderbricht. Also ich glaube, dass diese Herangehensweise im professionellen Umfeld ein großes Problem darstellt.",
+            "start": 2383710,
+            "end": 2414623,
+            "confidence": 0.8365769230769227,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Ich stimme dir teilweise zu, weil ich auch ich habe schon sehr sehr viele Stunden an gehacktem Source Code verbracht, wo ich glaube ich innerhalb von wenigen Minuten um Tage gealtert bin.",
+            "start": 2415133,
+            "end": 2425782,
+            "confidence": 0.83378125,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Ja du bist ja sowieso noch jung, bei dir ist das ja egal, ein paar Jahre.",
+            "start": 2425802,
+            "end": 2430266,
+            "confidence": 0.5354375,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Komm du mein alter. Dennoch denke ich, dass sehr sehr viel aus Source Code, der geschrieben wird, im Leben nicht mehr angepackt wird. Und wo ich dann denke, dass man diesen Sourcecode vielleicht zu viel optimiert hat, weil genau das ist die Last Rule, von der ich gerade spreche. Wir sind, wenn wir wirklich im agilen Umfeld arbeiten, heißt das auch, dass wir konstant in der Lage sind, Sourcecode zu ändern. Ich sage nicht, schafft ihr dein nächstes Grab, aber ich sage auch, dass es Sourcecode gibt, der vor zehn Jahren geschrieben wurde, der auf irgendeinem Server rennt und immer noch Millionen Umsatz macht. Und er bedarf keiner Änderung. Und für solche Fälle denke ich mir, warum muss er jetzt unglaublich schön sein und dies und das, er soll verständlich sein. Doch er muss nicht dem Drei-Prinzip entsprechen, er muss nicht unglaublich testbar sein, etc., etc. Es kommt natürlich immer auf die Größe an, etc. Und ich glaube, ich werde jetzt ziemlich viele Leute auf die Palme bringen, die das hören. Doch ich bin ein Freund von Iteration. Ich bin ein Freund davon, bring es erstmal auf die Straße, mach es erstmal lauffähig. Danach bring es in einen Zustand, dass dein Team damit zufrieden ist. Wenn dieser Source-Code wirklich kontinuierlich angepasst werden muss, dann wird es so oder so eingeplant. Natürlich solltest du auch den Anforderungen entsprechen. Das bedeutet, die Datenbank-Connection muss supporten, dass das Programm nicht abstürzt, wenn die Datenbank neu startet etc. sowas muss gegeben sein das sind ja ganz normale anforderungen aber es muss nicht man muss nicht zehn stunden lang das thema researchen klar bei bei fundamentalen grundlegenden sachen ist es wieder eine andere geschichte wie iso codes für sprachen und länder bei rocket internet die mal wieder ein internationales startup machen müssen das ist das sind grundlagen die sollten richtig sein. Ich denke persönlich, dass auch bei Google, obwohl die ich glaube Nummer 1 im Bereich Engineering sind weltweit, in irgendwelchen Datacentern ein Server steht, der sehr sehr viel Staub sammelt, der aber nicht abgeschaltet werden darf, weil dieser Server betreibt die Suchmaschine oder AdWords oder Gmail. Es ist halt in der Industrie so, Legacy verdient das Geld und Das Problem mit der Informatik und besonders im Programmierumfeld ist, kommen wir zurück aufs Hacker News Driven Development, jeden Tag kommt irgendein neues Konzept, das bedeutet, den Code, den du gestern geschrieben hast, der ist gar nicht mehr up to date und du hast den Drang dafür, den perfekten Code zu schreiben und du hast den Drang dazu, den Code von gestern nach den neuen Prinzipien anzupassen. Doch der Code von gestern ist gut genug, weil er funktioniert und er tut genau das, was er tun soll. Und mit hoher Wahrscheinlichkeit wirst du den in zwei Wochen oder in zwei Jahren nicht mehr ändern.",
+            "start": 2430286,
+            "end": 2573386,
+            "confidence": 0.7864273504273499,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Aber ich glaube, du malst da auch diesen Teufel gleich immer an die Wand, den Overengineering-Teufel, weil es gibt einen Unterschied zwischen dem perfekten Code und es gibt einen Unterschied zwischen Tracking-Code, ich beachte nicht mal das DRIVE-Prinzip, weil ich glaube, dass das DRIVE-Prinzip grundsätzlich vieles vereinfacht, auch am Weg, bei der täglichen Arbeit mit dem Code. Also gar nicht bei einem riesengroßen Projekt. Das sind so Grundlagen, wenn ich eine saubere Struktur in meinem Code reinbringe. Ich glaube, das sind Grundlagen, die man auf jeden Fall immer machen sollte. Da gibt es schon Zwischenwege zwischen ganz dreckig und dem perfekten Code. Und ich glaube, diesen Zwischenweg muss man finden und nicht alles, was nur in irgendeiner Form verbessert ist oder einem gewissen Pattern folgt, so wie du deine Variablen benennst zum Beispiel. Das sind so grundlegende Grundlegende Dinge, die brauchen nicht mehr Zeit und die verbessern aber den Code und die Code-Qualität extrem. Und ich glaube, solche Dinge kann man sehr wohl immer beachten, aber ob man das zehnte Framework verwenden muss, das ist halt dann, glaube ich, nochmal eine andere Frage oder die zehnte Micro-Optimierung oder solche Dinge. Aber ich glaube, so eine grundlegende Qualität muss man eigentlich schon an den Tag legen.",
+            "start": 2573667,
+            "end": 2651124,
+            "confidence": 0.821717073170732,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Bei variablen Namen machst du natürlich gerade ein ganz anderes Fass auf, aber ich bin halt ein riesen Fan von diesem Paradigma make it work, make it right, make it fast. Ob man die letzte Stufe make it fast immer braucht, sei dahingestellt, aber bring es erstmal ins Laufen und wenn das dann funktioniert, dann kannst du immer noch gucken, inwieweit du es korrekt, schön, testbar machst. Aber du hast erstmal eine Grundlage, auf der du aufbaust, bevor du stundenlang in irgendein Rabbit Hole reingehst, die Theorie untersuchst, wie genau dieser Kopierbefehl auf der CPU, auf Intel und ARM Architektur ausgeführt wird, etc. Obwohl wir ein Accept Cookie Feature für eine Webseite bauen. Verstehst du? Das kannst du alles machen, du kannst das alles researchen, aber es macht halt einfach keinen Sinn.",
+            "start": 2651945,
+            "end": 2696509,
+            "confidence": 0.7431818181818178,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Ja, ich glaube, es ist wirklich, wie viel Zeit solltest du investieren in ein Projekt. Und da muss man halt sicher lernen, einen guten Mittelweg zu finden. Aber ich glaube, man sollte nicht sich in den Kopf schreiben, starte mal dreckig. Ich glaube, das ist einfach ein Motto, das, glaube ich, falsch ist, weil man kann sauber programmieren und man kann, wie gesagt, grundsätzlich gute Software schreiben, auch in sehr, sehr kurzer Zeit und macht sich dadurch das Leben definitiv einfacher.",
+            "start": 2696701,
+            "end": 2725113,
+            "confidence": 0.8035185185185184,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Ich finde unglaublich schön, dass wir gerade endlich mal einer Meinung sind, weil die Meinung ist, ich sage, du bist falsch mit deiner Meinung, dass zu wenig overengineert wird und du sagst, ich bin falsch, weil man heckig starten sollte. Finde ich super, finde ich schön.",
+            "start": 2725931,
+            "end": 2737778,
+            "confidence": 0.7802826086956521,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Vielleicht abschließend noch, damit wir doch noch gleicher Meinung sind, ich habe ein sehr gutes Beispiel von Under Engineering, was trotzdem aber sehr gut funktioniert. Und zwar schicke ich meine Kletterschuhe oft, wenn sie kaputt sind, zum Reparieren nach Tschechien, weil die sehr gutes Service haben. Das gar nicht so leicht zu finden ist, Leute, die das machen. Und wie deren Ablauf funktioniert, man lädt sich ein PDF-Formular runter, füllt dieses PDF-Formular auf und schickt denen per Post einfach diese Schuhe. Die wollen kein Geld. Man registriert sich nirgends, sondern man schickt es einfach los. Die reparieren dir dann deine Schuhe und kontaktieren dich bei E-Mail, dass du bitte ihnen Geld sendest. Und wenn die das Geld haben, schicken sie dir die Schuhe wieder. Alles bei E-Mail, kein Online-System, nichts. Wirklich ganz simpel bei E-Mail. Funktioniert aber jedes Mal perfekt. Ist ein bisschen gewöhnungsbedürftig. Null Automatisierung in dem ganzen Bereich, aber trotzdem sehr zufriedenstellende Service eigentlich als Kunde. Und da frage ich mich schon öfters dann auch, muss man alles so hochautomatisiert und komplex bauen? Es skaliert wahrscheinlich auch nicht dieses Service, aber trotzdem eigentlich von Kundensicht kann auch was perfekt sein, ohne es overengineert zu bauen.",
+            "start": 2737818,
+            "end": 2810449,
+            "confidence": 0.8293807106598988,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Die Story erinnert mich an einen unglaublich populären Artikel, der heißt Do Things That Don't Scale. Und zwar geht's da prinzipiell um die Idee, du möchtest ein Produkt launchen, ein Startup launchen, etc. Und immer wenn du so was tust, überlegst du dir, uh, was ist denn, wenn ich jetzt Rechnungen stellen muss? Uh, das muss ich programmieren, das muss ich automatisieren. Und du überlegst dir das zu einem Zeitpunkt, wo du gegebenenfalls noch gar keine Kunden hast. Der Artikel sagt dann aber, hol doch erstmal Kunden und mache Dinge, die nicht skalieren. Wie zum Beispiel, stell doch erstmal für die ersten 200 Kunden deine Rechnung manuell aus. Ist das Arbeit? Ja. Skaliert das? Nein. Funktioniert es aber erstmal und sparst du dir den Aufwand, alles durchzuautomatisieren, eine automatische Rechnungserstellung etc. etc. zu machen? Ja. Aber du beweist dann erstmal, okay, du findest dann erst wirklich heraus, was du wirklich brauchst. Und das finde ich ganz schön und das finde ich auch ganz schön in deiner Kletterschuh-Reparier-Story. Auf der anderen Seite, denke ich, auch die Kletterszene ist generell sehr kollegial und vertrauenswürdig, oder? Oder hast du andere Erfahrungen gemacht?",
+            "start": 2810669,
+            "end": 2871007,
+            "confidence": 0.7324603174603175,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Es ist gar nicht so viel auf Vertrauen, weil wenn du denen kein Geld zeigst, bekommst du deine Schuhe nicht zurück. Also für deren Seite ist es eigentlich ganz okay. Für dich ist es halt, du schickst denen irgendwas, du hast keine Ahnung, was dann passiert natürlich. Also es ist mehr von Vertrauensseite, von Kundenseite. Aber ich glaube, das ist auch ein gutes Beispiel, was du genannt hast. Das ist halt einfach das Overengineering, wenn es um Automation geht. Wie viel muss man wirklich automatisieren? Und ich glaube, das ist auch noch ein Riesenthema, aber das hast du eh schon ganz geschickt mit deinem Beispiel abgearbeitet. dass es einfach auch da natürlich Over-Engineering gibt und man auch da nicht frühzeitig optimieren sollte, sondern halt erst dann, wenn man das wirklich braucht. Und auch jede Automation hat wieder Maintenance, die man machen muss. Und die kann auch dann zum großen Problem werden, wenn man ganz viele Automatisierungen dann zu verwalten hat und zu pflegen hat.",
+            "start": 2871027,
+            "end": 2925967,
+            "confidence": 0.7857073170731709,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Okay ich glaube wir nähern uns dem ende dieser episode und ich denke final kann man sagen, dass sich vor overengineering eigentlich keiner so wirklich schützen kann denn es betrifft uns alle es ist nicht, ein thema was du alleine beackern musst auch deine team kollegen leute in anderen firmen haben dieses problem, jeder overengineert zu einem gewissen grad manche leute andere ingenieren zu einem gewissen grad und ich denke man bekommt es einfach nur durch mehr erfahrung besser in den griff beziehungsweise bekommt einen besseren blick dafür wie sich die firma das projekt oder ähnliches entwickeln wird und somit baut man sich seine eigene glaskugel auf so ähnlich wie wolfgang auf seinem schreibtisch.",
+            "start": 2926627,
+            "end": 2968500,
+            "confidence": 0.8305526315789472,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Dem kann ich nur beipflichten, vielleicht noch als Empfehlung oder als Wunsch, auch an mich selber gerichtet, vielleicht überlegen wir uns alle, wenn wir in Zukunft das Wort Over-Engineering verwenden, ob es als Schimpfwort gemeint ist oder ob es einfach ein Problem ist, weil wir es subjektiv anders gemacht hätten oder ob es wirklich Over-Engineering ist oder ob man vielleicht nicht einfach das eigentliche Problem anspricht oder vielleicht irgendwo in die Tiefe geht, anstatt immer sofort Over-Engineering zu schreien. Vor allem alle Manager, die zuhören, sollten sich das, glaube ich, wirklich überlegen, ob es ein Problem mit der Zeit ist oder ob es wirklich Over-Engineering ist. Und sogar wenn es wirklich Over-Engineering ist, würde ich da sehr vorsichtig als Manager auf dieses Problem zugehen und vielleicht eher probieren, im Team zu lösen, auf einer kollegialen Ebene unter den Kollegen und Kolleginnen, dass man da irgendwo eine Lösung findet, anstatt sofort diesen Stempel Over-Engineering aufgedrückt zu bekommen. Das ist, glaube ich, nie fein, wenn man das hört. Und Andi, du hast ja sicher, du hast eine dicke Haut, aber auch sorry für mein ganzes Overengineering, du brauchst sicher schöne Solutions und schöne Architektur.",
+            "start": 2968774,
+            "end": 3037701,
+            "confidence": 0.8216614583333334,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Obwohl sie hacky sind. Naja, lassen wir das so stehen. Vielen Dank fürs Zuhören. Wie immer gilt, alle Artikel, die wir erwähnt haben, findet ihr in den Shownotes. Wenn ihr uns Feedback geben wollt und auch eure Meinung zum Thema Overengineering mitteilen wollt, ob ihr lieber auf Wolfgangs Seite seid, mit ich overengineere für mein Leben gern, oder ob ihr auf meiner Seite seid, hacky, hacky, hacky, bringen das Ding erstmal ans Fliegen und danach schauen wir weiter, lasst es uns wissen, entweder über E-Mail stetisch at engineeringkiosk.dev oder über Twitter engkiosk. Wir freuen uns und wir sagen Bis bald.",
+            "start": 3038281,
+            "end": 3072217,
+            "confidence": 0.7558499999999999,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Ciao. Bis zum nächsten Mal.",
+            "start": 3072257,
+            "end": 3073279,
+            "confidence": 0.7046,
+            "channel": null,
+            "speaker": "A"
+        }
+    ],
+    "confidence": 0.7930216024688536,
+    "audio_duration": 3079.0,
+    "webhook_status_code": null,
+    "webhook_auth": false,
+    "summary": null,
+    "auto_highlights_result": null,
+    "content_safety_labels": null,
+    "chapters": null,
+    "sentiment_analysis_results": null,
+    "entities": null
 }

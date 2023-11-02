@@ -1,962 +1,962 @@
 {
-  "language_code": "de",
-  "audio_url": "https://audio1.redcircle.com/episodes/4e4aac42-9156-408c-9805-2b0d14a968f2/stream.mp3",
-  "punctuate": true,
-  "format_text": true,
-  "dual_channel": false,
-  "webhook_url": null,
-  "webhook_auth_header_name": null,
-  "webhook_auth_header_value": null,
-  "audio_start_from": null,
-  "audio_end_at": null,
-  "word_boost": [],
-  "boost_param": null,
-  "filter_profanity": false,
-  "redact_pii": false,
-  "redact_pii_audio": false,
-  "redact_pii_policies": null,
-  "redact_pii_sub": null,
-  "speaker_labels": true,
-  "speakers_expected": 3,
-  "content_safety": false,
-  "content_safety_confidence": null,
-  "iab_categories": false,
-  "custom_spelling": null,
-  "disfluencies": false,
-  "sentiment_analysis": false,
-  "auto_chapters": false,
-  "entity_detection": false,
-  "summarization": false,
-  "summary_model": null,
-  "summary_type": null,
-  "auto_highlights": false,
-  "language_detection": false,
-  "speech_threshold": null,
-  "id": "62zbm6xevs-6982-41ee-b28e-ddc20031f8ff",
-  "status": "completed",
-  "error": null,
-  "utterances": [
-    {
-      "text": "Es gibt ja Projekte, da gibt es nur ganz wenige Personen, die Code merchen können. Bei uns ist es so, dass jeder Pull-Request, der einkommt, muss zwei Reviews haben von zwei anderen Personen und dann wird er gemerged. Man muss einfach nur andere zwei Personen finden, die derselben Meinung sind. Und niemand davon muss jetzt Angestellter der Firma sein. Es kann auch komplett die Community sein. Es können ja drei Personen aus der Community sein. Eine Person macht einen super Vorschlag. Dann find's gut, da ist es gemerged. Das meine ich mit Offenheit. Da gibt's nicht irgendwie die Firma, die das letzte Recht hat und dann noch irgendwie alles approven muss. Sowas haben wir nicht.",
-      "start": 2467,
-      "end": 35994,
-      "confidence": 0.7146782608695657,
-      "channel": null,
-      "speaker": "A"
-    },
-    {
-      "text": "Willkommen zu einer neuen Episode vom Engineering Kiosk, der Podcast rund um die Themen Engineering Kultur, Open Source, Menschen und Software Engineering. Wir haben Frank Kaliček, den Kopf hinter OwnCloud und Nextcloud zu Gast. 2010 hat Frank die Open Source Software OwnCloud als Alternative zu Dropbox gestartet. 2016 hat Frank mit dem Core-Team OwnCloud verlassen und seine ursprüngliche Software sowie seine Firma unter dem neuen Namen Nextcloud gefolgt. Als er 2018 diese Story auf der 4STEM-Konferenz als Vortrag erzählte, bekam er von der Open-Source-Community Standing Ovations. Wir sprachen mit Frank über das Forken einer Firma, GPL-basierte Software im Business, wie man eins der größten Open-Source-Projekte der Welt managt, sowie über Lobbyismus und Open-Source in der Politik. Viel Spaß!",
-      "start": 36014,
-      "end": 79176,
-      "confidence": 0.793203389830509,
-      "channel": null,
-      "speaker": "B"
-    },
-    {
-      "text": "Andi, begleite mich mal bitte kurz in meine Vergangenheit. Und zwar vor über zehn Jahren, das war sehr früh, als ich noch an der Uni gearbeitet habe und dort gelehrt habe, habe ich nach einer Lösung gesucht, wo ich meine Daten, Adressbuch, Kalender, Bilder und so weiter abspeichern kann, ohne dass ich das Ganze im Google-Universe mache. Und ich habe dann eine coole Software gefunden, namens OwnCloud damals. Ich war so überzeugt, nachdem ich die selbst gehostet habe, dass ich sogar meine Studenten damals überzeugt habe, zum Beispiel eine Bachelor-Arbeit zu machen und eine Erweiterung zu schreiben im Bereich Gesichtserkennung damals, weil ich meine Bilder eben auch erkennen wollte. Und ich bin heute nach über zehn Jahren immer noch bei dieser Software. Mittlerweile verwende ich NextCloud, den Fork von dem Ganzen. Und einige Jahre später, 2018, war ich mit dir auf der FOSDEM, falls du dich daran noch erinnern kannst. Und da waren wir beide bei einem Vortrag, der geheißen hat, Why I Forged My Own Project and My Own Company, von Frank Karliczek. Und das war wirklich eine Extrem coole Stimmung, wenn ich mich da zurück erinnere. Es war ein Riesenraum und Frank hat damals präsentiert, warum er OwnCloud geforkt hat und NextCloud gegründet hat und warum Open Source so wichtig ist. Und ich kann mich erinnern, der Abschluss war Standing Ovations von dem ganzen großen Raum und es war wirklich eine Stimmung, die ich bei der FOSDEM schon lange nicht mehr erlebt habe. Und wir haben es in der Tat geschafft, Frank zu uns in den Podcast zu bekommen. Und ich bin super happy. Willkommen, Frank, dass du dir die Zeit nimmst, über Open Source bei uns im Podcast zu sprechen.",
-      "start": 83784,
-      "end": 174714,
-      "confidence": 0.8223321554770323,
-      "channel": null,
-      "speaker": "C"
-    },
-    {
-      "text": "Ja, vielen Dank. Danke für die Einladung. Ich freue mich sehr auf den Austausch heute.",
-      "start": 174934,
-      "end": 179218,
-      "confidence": 0.6677333333333332,
-      "channel": null,
-      "speaker": "A"
-    },
-    {
-      "text": "Du bist seit den späten 90ern ein aktives Mitglied der Open Source Community. Soviel ich weiß, kommst du ursprünglich aus dem Bereich Linux, KDE, teilweise auch GNOME. Du warst für eine gewisse Zeit Vorstand und Vizepräsident sogar des KDE e.V. Ich wusste bis zur Vorbereitung noch nicht, dass KDE einen eigenen Verein hatte. Aber du hast auch opendesktop.org mitgegründet. Seitdem setzt du dich primär auch für Privatsphäre und die eigene Datenhoheit ein. Du bist unter anderem Mitautor des User Data Manifestos. Du bist regelmäßiger Speaker auf sehr, sehr großen Konferenzen und Universitäten wie der FOSDEM, der LinuxCon, aber auch dem MIT Harvard. dem zern und der eth zürich und ich glaube wo die meisten dich drunter kennen ist als gründer und ehemaliger hauptentwickler würde ich glaube ich auch sagen von der cloud software own cloud und natürlich dann jetzt auch seit 2016 der firma next cloud und dem projekt next cloud ist das korrekt habe ich irgendwas wichtiges vergessen.",
-      "start": 179258,
-      "end": 238479,
-      "confidence": 0.8102955974842768,
-      "channel": null,
-      "speaker": "B"
-    },
-    {
-      "text": "Nee, das ist, glaube ich, alles korrekt. Da fehlt auch nicht so viel. Natürlich gibt es noch andere Dinge, die ich sonst noch so mache, die ja im privaten Bereich sind, irgendwie so Fotografie und sowas, aber heute soll es ja um Software gehen.",
-      "start": 239802,
-      "end": 249485,
-      "confidence": 0.5171818181818181,
-      "channel": null,
-      "speaker": "A"
-    },
-    {
-      "text": "Ich vermute, du verwendest Nextcloud, um deine Bilder zu speichern. Natürlich.",
-      "start": 249525,
-      "end": 254027,
-      "confidence": 0.7070909090909091,
-      "channel": null,
-      "speaker": "C"
-    },
-    {
-      "text": "Immer wenn ich das CERN lese, frage ich mich, hattest du die Ehre, den Large Hadron Collider auch zu sehen? Kriegt man sowas zu sehen, wenn man da einen Vortrag hält?",
-      "start": 254067,
-      "end": 262410,
-      "confidence": 0.8293225806451612,
-      "channel": null,
-      "speaker": "B"
-    },
-    {
-      "text": "Dann habe ich tatsächlich sehen dürfen, speziell den Atlas-Detektor, was ja so der Kern davon ist. Das hat jetzt aber gar nicht so viel zu tun, weil ich da so ein ganz besonderer Ehrengast war. Das war ich da jetzt gar nicht, war da einer von vielen Speakern. Und das war auch eine Timingsache. Sondern man kann letztendlich das Experiment nur zu ganz, ganz bestimmten Zeiten besuchen, weil sonst, wenn es in Betrieb ist, dann strahlt das natürlich und es geht ansonsten nicht. Aber ich war zur richtigen Zeit am richtigen Ort, wo ich es besuchen durfte.",
-      "start": 262710,
-      "end": 289916,
-      "confidence": 0.6165051546391753,
-      "channel": null,
-      "speaker": "A"
-    },
-    {
-      "text": "Dann lasst uns mal kurz in das Thema von dieser ganzen Nextcloud und Oncloud einsteigen. Also vor über zehn Jahren, wo ich das verwendet habe, ihr habt probiert herauszufinden, wann das so war, weil es dürfte irgendwann 2011 gewesen sein. Da war das schon eine super Software und ich war super happy, diese zu finden. Was war denn dein Grundgedanke, deine Grundintention damals eigentlich, wie du OnCloud gegründet hast und entwickelt hast? Und wie hat sich denn das Ganze so entwickelt? Wo steht denn NextCloud heute? Und ist es noch die eigentliche Idee von damals? Oder hat sich da irgendwas geändert, was es heute ist und was es damals hätte sein sollen?",
-      "start": 289956,
-      "end": 326090,
-      "confidence": 0.8214642857142855,
-      "channel": null,
-      "speaker": "C"
-    },
-    {
-      "text": "Ich glaube, es kommt immer ein bisschen besser rüber, wenn man so sagt, nein, das war schon immer die einzige Vision und ich bin dem allen treu geblieben und ich bin als Kind schon aufgewacht und hatte schon die Idee im Kopf. Aber es war tatsächlich nicht ganz so. Und zwar, die Gründungsgeschichte ist tatsächlich ein bisschen anders. Und zwar, ich faktete ja gerade schon, dass ich lange in verschiedenen Open-Source-Projekten gearbeitet habe. Beispielsweise im KDE-Projekt war ich sehr aktiv. Und das war ja die Zeit Ende der 90er, Anfang 2000er, dann mittlere 2010er. Die Zeit, wo es gibt ja diesen Witz mit dem Linux-Desktop. Der ist dazu letztens entstanden. Weil davor hatte eigentlich Linux den Servermarkt total übernommen und dominiert in den 90er Jahren. Und da ist man davon ausgegangen, dass dasselbe mit dem Desktop-Markt auch passiert. Und da gab es ja Projekte wie Gnome und KDE, ich war in KDE aktiv. Und da gab es viele Fortschritte, es ist jedes Jahr besser geworden. Und eigentlich haben alle darauf gewartet, dass im nächsten Jahr das Jahr des Linux-Desktops kommt und alle verwenden dann nur Linux statt irgendwie Windows. Naja, das ist nicht ganz eingetreten, aber zu der Zeit war ich da involviert. Und man konnte dann so um 2007, 2008, 2009 beobachten, dass viele der Personen, die Linux und KDE benutzt haben auf ihrem Laptop, dann angefangen haben, Cloud-Services zu benutzen, wie zum Beispiel Gmail für Mail oder Dropbox für Dateiaustausch oder irgendwie Google-Kalender eben für Kalender und so weiter. Und ich habe mich dann immer so ein bisschen gewundert, weil Es ist zwar toll, dass wir dann alle noch hier schön für den Linux-Desktop kämpfen, aber man benutzt ja gar keine Linux-Applikation mehr, sondern benutzt ja eine Cloud-Applikation. Und dann ist es zwar schön, dass man kein Windows benutzt, aber dafür liegen die Daten dann eben in der proprietären Cloud von Google oder Microsoft oder Dropbox oder woanders. Deswegen bin ich zu dem Punkt gekommen, dass ich dachte, naja, für so eine richtig freie Open-Source-Experience braucht man eigentlich nicht nur ein freies Betriebssystem auf dem Laptop, sondern braucht eigentlich auch freie Cloud-Infrastruktur. Und da habe ich letztendlich dann OwnCloud. Das war tatsächlich, das weiß niemand mehr, aber OwnCloud die ersten Monate war ein offizielles KDE-Projekt. Also OwnCloud war quasi Teil von KDE. Also so habe ich das damals positioniert, weil ich dachte, naja, wir brauchen eben auch eine Cloud-Komponente zum freien Desktop. Und erst später hat sich das dann so ein bisschen davon entfernt. Und es ist eben auch wichtig, dass es auch mit Gnome und Windows und macOS funktioniert. Und heutzutage ist es ja eher eine generische Software, die jetzt gar nicht mehr so viel mit dem Linux-Desktop zu tun hat.",
-      "start": 326430,
-      "end": 480079,
-      "confidence": 0.7326431718061677,
-      "channel": null,
-      "speaker": "A"
-    },
-    {
-      "text": "Aber es war ursprünglich dann schon dafür gedacht, Dateien abzuspeichern?",
-      "start": 480327,
-      "end": 483690,
-      "confidence": 0.8651,
-      "channel": null,
-      "speaker": "C"
-    },
-    {
-      "text": "Genau, ich habe mit Dateien angefangen. Das war die Hauptanwendung. Also in Omcloud 1.0 habe ich damals noch alleine geschrieben, 100%. Da ist, glaube ich, nichts mehr von dem Code übrig, hoffe ich mal. Inzwischen haben wir bessere Entwickler als ich. Und es hat tatsächlich angefangen mit Dateiaustausch. Allerdings gab es eigentlich schon ab der Version 2, die wenige Monate danach kam, schon dieses Konzept der Apps, dass man letztendlich andere Komponenten entwickeln kann, die sich in das ganze System einhängen. Und da war Kalender einer der ersten. Dann kamen halt die an Contacts und dann später ja Office und Chat und so weiter dazu.",
-      "start": 483730,
-      "end": 519067,
-      "confidence": 0.7286666666666661,
-      "channel": null,
-      "speaker": "A"
-    },
-    {
-      "text": "Und was würdest du sagen, ist es dann heute, wenn du heute auf Nextcloud blickst?",
-      "start": 519386,
-      "end": 523688,
-      "confidence": 0.7640666666666668,
-      "channel": null,
-      "speaker": "C"
-    },
-    {
-      "text": "Also ich habe das ganz am Anfang hatte ich das Problem, dass es keinen richtigen Namen für diese Produktkategorie gibt in der Form. Ich hab das dann irgendwie Open Source Dropbox genannt. Das ist ein bisschen doof, wenn man sich über seinen Mitbewerber identifiziert. Da hat dann kurz danach zum Glück Gartner, Gartner ist ja so eine IT-Analystenfirma, die haben mir geholfen, weil die haben dann offiziell den FileSyncing-Share-Markt ins Leben gerufen. Also Dateiaustausch, typischerweise eben für Unternehmen, Und von da an war dann OnCloud und dann später NextCloud eben eine File-Sync-and-Share-Lösung oder Enterprise-File-Sync-and-Share. Allerdings sagte ich ja gerade schon, dass es für mich eigentlich klar war, dass die Dateien nur der erste Teil davon sein können, sondern es geht wirklich um alles. Nachrichten, Notizen, Chat-Videokonferenzen, Mail und so weiter. Und von Anfang an war das ja schon angelegt mit diesen Erweiterungen, dass man letztendlich die ganzen anderen Use Cases auch abdeckt. Das war auch nicht nur jetzt irgendwie meine Meinung, sondern die anderen am Markt haben das genauso gesehen. Microsoft hat letztendlich dann OneDrive auch entsprechend erweitert zu Microsoft 365 und Google hat ja inzwischen auch Google Workspace mit der Kombination dieser ganzen Tools. Da hatte ich dann wieder das Problem, dass ich keinen richtigen Namen für Nextcloud hatte. Da sagte ich auch, ja, sowas wie Microsoft 365. Aber zum Glück hat mir Gartner wieder geholfen, weil die haben das dann umgenannt in den Content Collaboration Platform Markt. Also offiziell sind wir jetzt eine Content Collaboration Platform Software. Da dachte ich erst so, oje, was ist denn das für ein Begriff? Wer hat sich denn sowas ausgedacht? Aber so schlecht ist es eigentlich gar nicht, weil erstmal Content, man merkt schon, es geht nicht nur um Dateien, sondern Content gibt ja auch Mails und Notizen und alles mögliche, was keine Dateien sind. Dann Collaboration, weil man kann natürlich sowas wie Nextcloud alleine verwenden, aber eigentlich ist es nur so richtig toll, wenn man eben mit anderen Personen zusammenarbeitet, kollaborativ zusammenarbeitet. Und der dritte Teil ist Plattform. Plattform heißt eben, dass es eine erweiterbare Lösung ist mit weiteren Konnektoren und Apps, die man oben drauf installieren kann. Und genau sowas haben wir ja auch. Und deswegen ist die Antwort auf deine Frage eine Content Collaboration Plattform.",
-      "start": 523727,
-      "end": 645958,
-      "confidence": 0.7160239361702126,
-      "channel": null,
-      "speaker": "A"
-    },
-    {
-      "text": "Am Anfang habt ihr euch mit Dropbox, ich sag mal, gebettelt, beziehungsweise wolltet als Konkurrent zu Dropbox antreten. Heutzutage targetet ihr eher Google Workspaces und Office 365 an, oder?",
-      "start": 645998,
-      "end": 659727,
-      "confidence": 0.7763793103448278,
-      "channel": null,
-      "speaker": "B"
-    },
-    {
-      "text": "Ja.",
-      "start": 660468,
-      "end": 660788,
-      "confidence": 0.528,
-      "channel": null,
-      "speaker": "A"
-    },
-    {
-      "text": "Also wenn man so das Produktportfolio einmal anhört, dann könnte man wirklich darauf schließen, okay, damit kann ich halt eine komplette Firma kollaborativ betreiben.",
-      "start": 660848,
-      "end": 669539,
-      "confidence": 0.8521666666666667,
-      "channel": null,
-      "speaker": "B"
-    },
-    {
-      "text": "Genau, ja.",
-      "start": 669559,
-      "end": 669979,
-      "confidence": 0.23299999999999998,
-      "channel": null,
-      "speaker": "A"
-    },
-    {
-      "text": "Jetzt ist ja seit der Gründung von OwnCloud eine ganze Menge passiert. 2016 habt ihr oder hast du OwnCloud weggeforkt hin zu NextCloud aufgrund von Meinungsverschiedenheit über den Kurs von OwnCloud. Wie war da so die ersten paar Wochen? Soviel ich weiß habt ihr auch als ihr den Fork erstellt habt. recht schnell Gas gegeben und sogar nach den ersten zwei, drei Wochen sogar das erste Release sogar rausgehauen von der neuen Software. Und das ist ja schon beeindruckend, weil von meiner Open-Source-Erfahrung ein Fork von solch großen und erfolgreichen Projekten schafft erst mal Unsicherheit in der Community. Unsicherheit so nach dem Motto, welches Projekt wird überleben? Wie hat sich so die erste Zeit nach dem Fork angefühlt, beziehungsweise wo habt ihr die großen Prioritäten dran gesetzt? Weil ihr hattet ja die tiefe Erfahrungen in der UMSUR-Szene?",
-      "start": 670700,
-      "end": 722744,
-      "confidence": 0.7767810218978105,
-      "channel": null,
-      "speaker": "B"
-    },
-    {
-      "text": "Als erstes war es sicherlich die intensivste Zeit in meinem Leben, was Arbeitslast und Anspannung letztendlich angeht. Aber auf der anderen Seite war es auch eine unglaublich tolle Zeit, weil es hat sich da letztendlich so ein großer Knoten gelöst, der eigentlich das Problem war. Weil es gibt ja einen Grund für den Fork. Und da möchte ich auch nochmal darauf hinweisen, dass ich es auch nicht alleine geforkt habe, sondern es waren letztendlich zwölf Kernpersonen, die mit mir zusammen damals OnCloud verlassen haben und NextCloud gegründet haben. Und dann natürlich die komplette Community. Es war ja wirklich ziemlich schnell eigentlich die komplette Community auf NextCloud-Seite.",
-      "start": 722784,
-      "end": 760073,
-      "confidence": 0.7534339622641516,
-      "channel": null,
-      "speaker": "A"
-    },
-    {
-      "text": "Wie viele Leute waren es vom Gesamtteam dann? Also wie viele waren da im gesamten OnCloud-Team? Waren die zwölf Leute dann eh fast 100 Prozent von dem Team oder in welcher Größenordnung sprechen wir da?",
-      "start": 760093,
-      "end": 770455,
-      "confidence": 0.7413714285714288,
-      "channel": null,
-      "speaker": "C"
-    },
-    {
-      "text": "Das ist gar nicht so einfach zu beantworten, weil einer der Gründe, warum der Fork passiert ist, dass eigentlich OwnCloud vor dem Aus stand. Da sind eine ganze Reihe von einfach Fehlern passiert mit Mitgründern von mir, Investoren, Missmanagement und anderen Dingen, dass letztendlich dann die Firma, die OwnCloud damals halt vor dem Aus stand. Das sind dann auch schon Leute dann auch schon gegangen oder gegangen worden. Also das war wirklich kurz vorm Ende eigentlich. Da gab es eine ganze Reihe Leute, die in den USA dann auch noch waren. Da hatte ich, ich weiß gar nicht, vielleicht diesen Drittel der Personen letztendlich, die sich dann entschlossen haben, das zu machen. Aber es waren ja nicht nur die Probleme innerhalb der Firma, sondern auch in der Community. Es gab da wirklich sehr, sehr viele Probleme und Konflikte mit der Open-Source-Community. Das beginnt einmal darin, dass unklar zu dem Zeitpunkt, also das wurde mir quasi aufgezwungen von dem Management und den Investoren, eben halt eine spezielle Enterprise, was man hatte, die nicht Open Source war, was einen Konflikt mit der Community erzeugt hat. Und es gab andere Dinge, dass es ganz, ganz aktive Kontributoren gab, die einfach von dem Unternehmen ausgebremst wurden. Beispielsweise die Android-App. Da gab es mehrere, insbesondere zwei Personen, die wirklich unglaublich viel aus der Community, viel beigetragen haben. Und die haben es einfach gar nicht, also die festangestellten Entwicklerinnen und Entwickler, haben einfach die Änderung nicht gemerged. Die haben einfach so kein Interesse daran gehabt. Community sind irgendwie Spinner im Internet, mir doch egal. Wir machen hier unsere eigene Roadmap und die tolle Community-Arbeit wurde überhaupt nicht gemerged. Und als dann der Fork entstand, dann ist wirklich wie ein Knoten geplatzt, weil dann konnten die plötzlich alle machen, was sie wollten. Und die ganzen Änderungen, die ganzen tollen Dinge, die sich aufgestaut haben über die Jahre, konnte man dann super schnell umsetzen. Also die Android-App zum Beispiel war nach kürzester Zeit unendlich viel besser als die OnCloud-App, weil die Community einfach, da wurden sozusagen die Handbremse gelöst und da konnte man alle konnten alle Gas geben. Und das war in anderen Bereichen genauso. Und ich selbst war auch überrascht, dass wir tatsächlich nach zwei Wochen schon das erste Release hatten. Aber ja, unsere Community war da so begeistert und hat gesagt, okay, jetzt können wir endlich mal machen, was wir wollen. Und kurz zu dieser Zeit sind ganz viele tolle Dinge passiert. Und dann war das erste Release schon da und dann ging es gerade so weiter.",
-      "start": 770775,
-      "end": 907074,
-      "confidence": 0.7446318289786225,
-      "channel": null,
-      "speaker": "A"
-    },
-    {
-      "text": "Ein Moment noch, bevor wir tiefer in das Interview eintauchen. In dieser Episode hören wir noch etwas darüber, wie schwierig es sein kann, Open Source mit kommerziellem Interesse zu verbinden. Deswegen freuen wir uns besonders, dass unser Episodensponsor es sich zur Aufgabe gemacht hat, dieses Problem anzugehen. Das Programm Media Tech Lab fördert innovative Open Source-Projekte für die Medienlandschaft mit 50.000 Euro. Wolfgang hat bereits letztes Jahr an diesem Programm teilgenommen. Erzählen wir mal bitte, wie das Ganze denn eigentlich abläuft.",
-      "start": 908590,
-      "end": 933380,
-      "confidence": 0.8276790123456792,
-      "channel": null,
-      "speaker": "B"
-    },
-    {
-      "text": "Klar, gemeinsam mit einem Programmierkollegen haben wir eine kurze Beschreibung von unserer Idee im Bereich Podcast Analytics eingereicht. Und das Schöne daran ist, man kann als Zweierteam oder als Einzelperson die Ideen umsetzen. Und wenn die Idee dann ausgewählt ist, erhält man großzügige 50.000 Euro Förderung für die Projektlaufzeit von nur sechs Monaten. Und was ich besonders geschätzt habe, ist auch die Flexibilität. Ihr könnt das Projekt entweder in Vollzeit oder so, wie wir es gemacht haben, in Teilzeit umsetzen. Zusätzlich zu den 50.000 Euro bekommt man auch Zugang zu Medienunternehmen über das umfangreiche Netzwerk des Media Labs. Denn euer Projekt soll nicht nur umgesetzt, sondern im Idealfall auch von der Medienlandschaft erfolgreich verwendet werden. Die langfristige Perspektive ist ebenso wichtig wie die Initialförderung. Wir bauen zum Beispiel gerade eine Firma um unser Open Source Projekt auf.",
-      "start": 933700,
-      "end": 975877,
-      "confidence": 0.8534306569343065,
-      "channel": null,
-      "speaker": "C"
-    },
-    {
-      "text": "Euer Projekt muss jedoch nicht im Bereich Podcasting sein. Eine Idee im Bereich Medienlandschaft kann eigentlich alles sein, zum Beispiel Video Streaming, Augmented und Mixed Reality, Semantic Tagging, AI für Audio Transcriptions oder, oder, oder. Falls euer Interesse geweckt ist und ihr mehr über dieses Förderprogramm erfahren wollt, besucht doch einfach mal die Webseite des Media Lab Bayern. Dort findet ihr auch Informationen über bereits abgeschlossene Projekte und alles, was ihr für die Einreichung benötigt. Die Bewerbungsphase läuft übrigens vom 1. September bis zum 13. Oktober. Also hopp hopp und ran mit deiner Idee. Links wie immer in den Shownotes. Werbung Ende. Das bringt mich zu der Frage, wie wichtig ist es nach deiner Erfahrung, dass das Management von einer Firma mit einem Open-Source-Produkt auch schon ein aktiver Teil der Open-Source-Community war? Weil es besteht ja schon immer irgendwie der Konflikt bezüglich Open-Source, Sustainable, Alles transparent versus Profitabilität, große Exits, Venture Capital und so weiter. Also ich meine, inwieweit findest du das essentiell, dass das Management von einer solchen Firma auch, ich sag mal, die Wurzeln von der Open-Source-Community mitträgt, versteht und vielleicht sogar Teil dessen Ganzen war?",
-      "start": 976397,
-      "end": 1046327,
-      "confidence": 0.8411861702127656,
-      "channel": null,
-      "speaker": "B"
-    },
-    {
-      "text": "Ja, also das ist natürlich essentiell. Also ich meine, man kann ja auch nicht irgendwie ein toller Koch sein, wenn man das Essen gar nicht mag. Oder man kann ja auch nicht irgendwie Chef von einer Autofirma sein, wenn man irgendwie keinen Führerschein hat. Oder irgendwie Chef von einem Fußballklub, wenn man Fußball nicht mag. Also natürlich muss man Open Source verstehen, wenn man eine Open Source Firma erfolgreich machen möchte. Aber das war teilweise leider zu wenig der Fall damals.",
-      "start": 1046747,
-      "end": 1070817,
-      "confidence": 0.7641975308641973,
-      "channel": null,
-      "speaker": "A"
-    },
-    {
-      "text": "Und auf was hast du dann besonders geachtet, wie du Nextcloud gegründet hast oder wie ihr das alle weggefolgt habt? Was war für euch wichtig? Was wollt ihr dir wirklich ändern? Oder was habt ihr da mitgenommen von der OnCloud-Seite, was unbedingt geändert werden hat müssen?",
-      "start": 1071437,
-      "end": 1086240,
-      "confidence": 0.8074130434782608,
-      "channel": null,
-      "speaker": "C"
-    },
-    {
-      "text": "Ja, wir haben uns damals zusammengesetzt, eine Woche, ganz viel diskutiert, aber auch gemacht und haben da eine ganze Reihe von Prinzipien ausgearbeitet, die uns wichtig waren, denen wir folgen wollten. reicht von das nächste 100% Open Source sein soll. Wir haben ja wie gesagt diesen Open Core, teilweise kommerzielle Komponenten und so weiter, das wollten wir einfach nicht mehr haben. Das ist hier nicht ganz wichtig.",
-      "start": 1086420,
-      "end": 1109747,
-      "confidence": 0.6804776119402984,
-      "channel": null,
-      "speaker": "A"
-    },
-    {
-      "text": "Wo war da eigentlich das große Problem? Also wo hat es da am meisten geknirscht, wenn du irgendwie zwei Lizenzen hast, eine Open-Source-Lizenz und eine Enterprise-Lizenz? Wo war da das größte Problem deiner Meinung nach?",
-      "start": 1110323,
-      "end": 1121371,
-      "confidence": 0.8346285714285714,
-      "channel": null,
-      "speaker": "C"
-    },
-    {
-      "text": "Ein Beispiel. Es gibt eine Möglichkeit, sich in OneCloud oder Nextcloud einzuloggen, verschiedene Protokolle zur Authentifizierung. Eines davon ist SAML, was oft verwendet wird. Das ist ein Protokoll, das wird auch ganz oft verwendet, so im universitären Umfeld, wo man sich mit einem Login an der Uni in verschiedene System einloggen kann. Da hat dann das Management damals, also nicht ich, beschlossen, dass eben diese Semmel-Authentifizierung, dass die quasi nicht Open Source sein soll, sondern die ist halt kommerziell und das bekommen nur bezahlende Kunden. Klar, mit der Denkweise, naja, da bekomme ich jetzt alle Unis der Welt dazu zu bezahlen, weil die brauchen das Feature. Erst mal im ersten Augenblick denkt man so, ja, macht ja irgendwie Sinn. Jetzt ist das natürlich in so einer Open-Source-Welt funktioniert die Dinge doch etwas anders. Beispielsweise haben da natürlich manche Unis und Personen angefangen eine Open-Source-Implementierung zu schreiben. Die haben gesagt, naja, dann habe ich keine Lust darauf, dafür zu bezahlen. Dann entwickle ich einfach diesen SAML-Connector einfach selbst. Und dann hat man die Situation als Unternehmen, dass man plötzlich mit der eigenen Community konkurriert. Weil eigentlich möchte man ja mit den großen Mitbewerbern Microsoft, Google und so weiter konkurrieren, aber plötzlich muss man sich mit der eigenen Community streiten. Er sagt, nein, diese Änderung akzeptieren wir jetzt aber nicht als Pull-Request im Code und wenn es ein extra Plugin ist, dann darfst du das auch nicht auf unsere offiziellen App-Store hochladen, dann musst du es in deinem eigenen privaten App-Store hochladen, wir bewerben das auch nicht. Und dann fängt halt die Konflikt an. Dann fängt man an, gegeneinander zu arbeiten. macht dann sich gegenseitig das Leben schwer und dann hat man auch keine Energie mehr, um es mit den eigentlichen großen Feinden wie Microsoft aufzunehmen.",
-      "start": 1121412,
-      "end": 1221780,
-      "confidence": 0.7206598639455783,
-      "channel": null,
-      "speaker": "A"
-    },
-    {
-      "text": "Das heißt, alles Open Source ist wirklich, würde ich mal sagen, nicht sehr üblich heutzutage. Also gerade wenn man so Startups und so anschaut, meistens ist es halt Open Core und dann gibt es eine zweite Lizenz. Welche Prinzipien habt ihr sonst noch aufgestellt?",
-      "start": 1221820,
-      "end": 1234724,
-      "confidence": 0.8432045454545455,
-      "channel": null,
-      "speaker": "C"
-    },
-    {
-      "text": "Ja, eben eine ganz große Community-Orientierung. Das heißt, dass die Software eben zu 100% im Offenen, auf GitHub in unserem Fall, könnte aber auch auf GitLab sein, aber im Offenen entwickelt wird, wo man eben nicht nur den Code sieht und die Bugs und die Feature Requests und die Roadmap, sondern eben auch die aktive Entwicklung mit Pull Requests und Reviews und Tests und so weiter letztendlich alles sehen kann und auch alle Personen mitmachen können. Da sind wirklich alle eingeladen und in dem Moment, wo ein Unternehmen anfängt, jetzt irgendwie in internen Repositories zu arbeiten oder mit irgendwelchen internen Roadmaps und sowas, kann man einfach die Community nicht mehr so richtig integrieren. Eine komplette Offenheit ist ein weiteres Ziel für uns gewesen.",
-      "start": 1234764,
-      "end": 1282337,
-      "confidence": 0.7603902439024391,
-      "channel": null,
-      "speaker": "A"
-    },
-    {
-      "text": "Ist das aufgegangen, das Ziel? Also habt ihr irgendwie gemerkt, dass es mehr EntwicklerInnen gibt, die mitmachen?",
-      "start": 1282377,
-      "end": 1288541,
-      "confidence": 0.8013529411764705,
-      "channel": null,
-      "speaker": "C"
-    },
-    {
-      "text": "Ja, also Nextcloud ist eines der größeren Open-Source-Projekte der Welt. Wir haben über 2.000 Personen, die nur im Core selbst mitarbeiten. Das sind diese Apps, die es noch gibt außenrum, noch nicht mal mitgezählt. Da gibt es ja nochmal irgendwie 300, glaube ich, momentan, über 300. Dann gibt es irgendwie Übersetzungen in 90 Sprachen, die alle in Finland Community gemacht werden. Ja, es ist absolut aufgegangen. So wird man letztendlich attraktiv für Kontributoren und so kann man plötzlich auch ganz viel bewegen, was man so allein als kleine Firma gar nicht könnte.",
-      "start": 1288841,
-      "end": 1320877,
-      "confidence": 0.7025978260869566,
-      "channel": null,
-      "speaker": "A"
-    },
-    {
-      "text": "Aber das Management dieser Community bedarf ja schon sehr, sehr viel Arbeit. Wie viele Leute arbeiten denn wirklich an der Codebase rund um Nextcloud, aber halt auch am Management der Community? Weil man sagt ja immer, Open Source ist vielleicht so eine Art kreatives Chaos. Aber wenn da natürlich auch Jobs von abhängen mit eurer Firma, die dann Professional Services darum anbietet, also geidet ihr die Community dann irgendwie? Weil irgendwer im Endeffekt hat Mergerechte. Und irgendwer sagt, okay, das kommt rein oder das kommt nicht. Also wie viele Leute kümmern sich da drum?",
-      "start": 1321077,
-      "end": 1356713,
-      "confidence": 0.8218617021276595,
-      "channel": null,
-      "speaker": "B"
-    },
-    {
-      "text": "Tja, da müssen wir jetzt erstmal definieren, was darum genau ist. Also erstmal zu den Merge-Rechten. Es gibt ja Projekte, da gibt es nur ganz wenige Personen, die Code mergen können. Also wirklich so Schlüssellöcher, wo man dann irgendwie durch muss. Bei uns ist es so, dass jeder Pull-Request, der einkommt, muss zwei Reviews haben von zwei anderen Personen und dann wird er gemerged. Es gibt nicht irgendwie eine spezielle Klasse von Personen, die nur die haben, die haben Merge-Rechte, sondern im Prinzip hat jeder Merge-Rechte. Man muss einfach nur andere zwei Personen finden, die derselben Meinung sind. Und niemand davon muss jetzt Angestellter der Firma sein. Es kann auch komplett die Community sein. Es können ja drei Personen aus der Community sein, eine Person macht einen super Vorschlag, zwei anderen finden es gut, dann ist es gemerged. Das meine ich mit Offenheit. Da gibt es nicht irgendwie die Firma, die das letzte Recht hat und dann auch irgendwie alles approven muss, sowas haben wir nicht.",
-      "start": 1357133,
-      "end": 1407435,
-      "confidence": 0.7257349397590362,
-      "channel": null,
-      "speaker": "A"
-    },
-    {
-      "text": "Das heißt aber, ihr habt auch alles in einem Repository und es gibt nur eine Version. Also ihr habt jetzt nicht eine Version, die intern irgendwie pflegt und eine für Enterprise-Kunden, sondern ihr habt wirklich alles eigentlich in einem Strang.",
-      "start": 1407955,
-      "end": 1421807,
-      "confidence": 0.8463749999999999,
-      "channel": null,
-      "speaker": "C"
-    },
-    {
-      "text": "Es gibt viele Repositories. Das liegt einfach daran, dass es eben für unterschiedliche Teile von xCloud, für die unterschiedlichen Apps. Aber es gibt nur einen Stand, ja. Genau, es gibt nur einen Stand und wir haben keine interne Version. Das Entwicklungsmodell ist eben so, dass es Master gibt. Das ist eben da, wo die Hauptentwicklung passiert. Und da gibt es dann Branches, die davon abgehen für die entsprechenden Stable-Versionen. Also momentan haben wir die Version 27 gelaunched, demnächst kommt die Version 28. Und da gibt es dann entsprechende Stable-Branches. Aber das ist alles. Wir haben keine internen Repositories. Also wir haben interne Repositories für irgendwelche confidential Daten von Kunden oder sowas, aber nicht für wirklichen Code.",
-      "start": 1421847,
-      "end": 1460077,
-      "confidence": 0.6643189655172416,
-      "channel": null,
-      "speaker": "A"
-    },
-    {
-      "text": "Ich sehe auch schon anhand der Branch Names, dass ihr einige Fixes anscheinend backportet in ältere Stable-Versionen.",
-      "start": 1460117,
-      "end": 1466583,
-      "confidence": 0.7941764705882354,
-      "channel": null,
-      "speaker": "B"
-    },
-    {
-      "text": "Genau.",
-      "start": 1466603,
-      "end": 1467164,
-      "confidence": 0.51,
-      "channel": null,
-      "speaker": "A"
-    },
-    {
-      "text": "Faszinierend.",
-      "start": 1467184,
-      "end": 1467644,
-      "confidence": 0.193,
-      "channel": null,
-      "speaker": "B"
-    },
-    {
-      "text": "Nee, das hat einfach damit zu tun, dass wir auf der einen Seite einen relativ schnellen Release-Zyklus haben. Also wir haben ungefähr drei Major-Versionen pro Jahr. Dieses Jahr werden es wahrscheinlich sogar vier werden. Also relativ schnell. Und da kann ich auch verstehen, dass es nicht alle BenutzerInnen, die jetzt irgendwelche großen Instanzen irgendwie betreiben, ständig die ganze Zeit updaten wollen. Deswegen supporten wir natürlich auch die älteren Versionen für eine gewisse Zeit. Deswegen werden auch kritische Bugfixes immer zurückportiert.",
-      "start": 1467953,
-      "end": 1495951,
-      "confidence": 0.7006624999999997,
-      "channel": null,
-      "speaker": "A"
-    },
-    {
-      "text": "Und unter welcher Lizenz läuft eigentlich das Ganze? Habt ihr nur eine Lizenz? Habt ihr mehrere Lizenzen?",
-      "start": 1496131,
-      "end": 1501194,
-      "confidence": 0.7878235294117647,
-      "channel": null,
-      "speaker": "C"
-    },
-    {
-      "text": "Eigentlich haben wir alles, was serverseitig läuft, ist AGPL V3 und alles, was kleinseitig läuft, also hier Mac, Windows, Linux, iOS, Android, ist GPL V3.",
-      "start": 1501234,
-      "end": 1511041,
-      "confidence": 0.7765599999999999,
-      "channel": null,
-      "speaker": "A"
-    },
-    {
-      "text": "Jetzt ist es natürlich bei GPL und eGPL noch freier eigentlich immer die Frage, ihr habt ja auch Kosten, ihr seid ein großes Team, ihr habt EntwicklerInnen angestellt, wie macht ihr denn dann am Ende überhaupt Geld mit GPL und eGPL?",
-      "start": 1511761,
-      "end": 1525850,
-      "confidence": 0.8015609756097558,
-      "channel": null,
-      "speaker": "C"
-    },
-    {
-      "text": "Das ist die Frage der Fragen. Ja, indem wir bestimmte Services anbieten für die großen Kunden. Man kann es immer ein bisschen vergleichen. Es ist nicht genau dasselbe, aber man kann es vergleichen mit beispielsweise Red Hat oder SUSE oder Canonical Ubuntu. Gut, Red Hat ist vielleicht ein schlechtes Beispiel. einiges gerade durcheinander geht, aber eigentlich ist es ja so, dass Red Hat erstmal eine Software ist, Red Hat Enterprise Linux, die man auch so verwenden kann, weil im Großen und Ganzen ist die nicht so viel anders wie Fedora oder auch CentOS. Es ist einfach eine Version, die ist halt zertifiziert, sag ich mal. Da gibt es einen ganz definierten Update-Zyklus, wann gibt es irgendwelche Patches, wie lange wird es supported, 5 Jahre oder vielleicht sogar 10 Jahre. Man kann dann auf dieser Version Certified Engineer werden. Es gibt dafür eine spezielle Dokumentation und Knowledge Base. Andere Software, wenn man jetzt irgendeine Oracle oder SAP drauf installieren möchte, ist es halt wie gesagt zertifiziert dafür. Dann gibt es da Security Zertifizierung von BSI oder sonstigen Dingen. Letztendlich ist es halt so eine enterprise-infizierte Version der Software, die eigentlich vom Code her gar nicht so anders ist als das, was jeder von der Webseite runterladen kann als Community. Aber es kommt eben mit so einigen Enterprise-Dingen außen rum, die ein großes Unternehmen braucht. Auch Support gehört zum Beispiel dazu, dass man eben auch direkt bei den Entwicklerinnen bei uns anrufen kann und dann im Prinzip Probleme schildern kann, die gefixt werden und so weiter und so fort. Hast du da ein paar Beispiele von.",
-      "start": 1525890,
-      "end": 1621135,
-      "confidence": 0.7275340909090913,
-      "channel": null,
-      "speaker": "A"
-    },
-    {
-      "text": "Kunden, weil du sagst auch große Kunden?",
-      "start": 1621175,
-      "end": 1623257,
-      "confidence": 0.8972857142857142,
-      "channel": null,
-      "speaker": "C"
-    },
-    {
-      "text": "Auf Nextcloud setzt. Der Rollout ist immer noch im Gange, aber die Endausbaustufe soll in 300.000 Personen sein. Dann gibt es die französische Regierung, die schwedische Regierung, die Europäische Kommission mit ähnlichen Projekten, eine ganze Reihe von Länderprojekten in Deutschland und europaweit, auch eine Reihe von Schulprojekten, dass ganze Bundesländer auf Nextcloud setzen für den schulischen Einsatz. Berlin zum Beispiel haben jetzt neulich gewonnen, dass alle Schulen Berlin Nextcloud verwenden. Dann gibt es eine ganze Reihe von Service-Providern, beispielsweise die Magenta Cloud. Der Deutschen Telekom ist ja vielleicht bekannt. Das ist Nextcloud unter einem anderen Namen. Das heißt, mit der Deutschen Telekom haben wir einen sehr guten Vertrag, dass sie Nextcloud nehmen und mit leichten Branding-Modifikationen als Magenta Cloud vermarkten. Dann gibt es eine ganze Reihe von Industrieunternehmen, also Mahle, Infineon, Siemens, auch ARD und ZDF, die Nextcloud verwenden. Und noch eine ganze Reihe mehr, wo wir die Namen sagen dürfen.",
-      "start": 1627823,
-      "end": 1687464,
-      "confidence": 0.7684238410596025,
-      "channel": null,
-      "speaker": "A"
-    },
-    {
-      "text": "Und es ist immer noch BHB und MySQL, seht ihr das richtig? Großteils zumindest. Weil es gibt ja immer so dieses BHB-Bashing, aber es ist ein gutes Beispiel für ein großes BHB-Projekt, was gut läuft.",
-      "start": 1687504,
-      "end": 1697834,
-      "confidence": 0.7735142857142857,
-      "channel": null,
-      "speaker": "C"
-    },
-    {
-      "text": "Also erstmal muss ich sagen, das ist tatsächlich sehr erstaunlich. Manchmal wunde ich mich selbst darüber. dass es eine Software ist, die daheim, auf dem Raspberry Pi, für die Familie funktioniert, aber dann auch für eine große Regierung oder die Telekom klaut. Und es ist wirklich, bis auf wenige Ausnahmen, derselbe Code. Das ist eigentlich irgendeine Sache, die laut Lehrbuch gar nicht funktionieren dürfte. Eigentlich, und das kann dir bei keiner, aber es ist derselbe Code, ja.",
-      "start": 1697854,
-      "end": 1722668,
-      "confidence": 0.6818961038961041,
-      "channel": null,
-      "speaker": "A"
-    },
-    {
-      "text": "Wenn jetzt 300.000 Leute in der Endausbau-Stufe auf einer Nextcloud-Instanz rumtournen, das wird ja kein 2-Gigabyte-RAM-Server sein unten drunter. Das wird ja schon ein bisschen was Größeres sein.",
-      "start": 1722968,
-      "end": 1735360,
-      "confidence": 0.6652500000000001,
-      "channel": null,
-      "speaker": "B"
-    },
-    {
-      "text": "Genau, das ist natürlich auch ein Cluster, also nicht nur eine Maschine, sondern Datenbank-Cluster, Storage-Cluster, Applikations-Server-Cluster, Redis-Cluster und so weiter. Natürlich klar. Und da ist auch tatsächlich PHP, klar, ist immer einfach darauf rumzuhacken, aber PHP hat tatsächlich einige ganz gute Vorteile bezüglich der Skalierbarkeit. Nämlich bei PHP ist es ja so, dass jeder Request eigentlich in Isolation bearbeitet wird. Kommt quasi rein zu dem eigenen Prozess, gefolgt oder ist schon davor schon da. Dann wird der Request ausgeführt und dann endet der und dann ist vorbei und dann kommt der nächste. Und es gibt kein Shared Memory und kein Shared State. Die einzelnen Requests, die können eigentlich gar nicht so richtig miteinander kommunizieren, außer über irgendwelche Hilfswerkzeuge. Und das hat eigentlich totale Vorteile bei der Skalierbarkeit. Deswegen kann man das einfach super auf irgendwie 100 Server parallel verteilen, weil Die haben sowieso nichts mit mir zu tun, die kann man eigentlich super horizontal skalieren. Also dann sozusagen die Features, die irgendwie Node oder Go oder sowas haben, mit irgendwie ganz tollem internen Multi-Threading und Shared Memory und sowas, sind manchmal gar nicht so gut. Manchmal ist es schöner, das einfach zu haben und man skaliert das besser.",
-      "start": 1735400,
-      "end": 1808817,
-      "confidence": 0.7278636363636362,
-      "channel": null,
-      "speaker": "A"
-    },
-    {
-      "text": "Das ist Balsam auf meinem PHP-Herz, Andi als großer Go-Fan.",
-      "start": 1808857,
-      "end": 1812219,
-      "confidence": 0.8531000000000001,
-      "channel": null,
-      "speaker": "C"
-    },
-    {
-      "text": "Aber das wusste ich jetzt nicht, mit wem von euch ich mich jetzt gerade verscherze.",
-      "start": 1813757,
-      "end": 1818020,
-      "confidence": 0.2638666666666667,
-      "channel": null,
-      "speaker": "A"
-    },
-    {
-      "text": "Nee, nee, nee, alles gut. Ich hab mit PHP gelernt und noch sehr viele Jahre mit PHP Geld verdient. Und ist immer noch eine super Sprache. Gar keine Frage, aber ich find's beachtlich. Ich find's wirklich spannend. Und es geht jetzt nicht mit PHP-Bashing oder ich schreib auch noch sehr viel PHP aktuell.",
-      "start": 1818040,
-      "end": 1833931,
-      "confidence": 0.8025471698113207,
-      "channel": null,
-      "speaker": "B"
-    },
-    {
-      "text": "Es gibt so was wie Wikipedia oder auch Facebook oder so was ist auch PHP, ne? Also, es ist nicht so, dass wir mit PHP keine große Software erschrecken können.",
-      "start": 1834051,
-      "end": 1842617,
-      "confidence": 0.5091333333333332,
-      "channel": null,
-      "speaker": "A"
-    },
-    {
-      "text": "Wenn wir jetzt schon bei Skalierung sind, die Services, die ihr anbietet, die skalieren ja wahrscheinlich weniger, weil ihr da wirklich Arbeitskraft auch mit reinbringen müsst jetzt bei den Services. Hat es schon den Fall gegeben, dass ihr Kunden ablehnen musstet, weil ihr einfach am Limit seid von Subscription, Support und ähnliche Dinge?",
-      "start": 1842777,
-      "end": 1859965,
-      "confidence": 0.7951132075471697,
-      "channel": null,
-      "speaker": "C"
-    },
-    {
-      "text": "Wir wachsen ja auch als Unternehmen ganz gut, sind so ein bisschen über 90 Personen momentan und sind, ich weiß gar nicht, wie viel wir gewachsen sind dieses Jahr, ich hab das schon wieder ganz deutlich, also wir stellen wirklich ständig neu ein und das klappt ganz gut, weil beim Hiring ist es eben so, dass es auch einer der vielen, vielen Vorteile unserer Open-Source-Strategie ist, dass es uns sehr, sehr leicht fällt, sehr, sehr gute Personen zu finden, weil ich kann einfach in unsere Community schauen und dann kann ich schauen, was sind hier so die Top-Personen und dann die ansprechend sagen, hey, das, was du als Hobby machst, möchtest du nicht dasselbe als Job machen? Und dann gelingt es uns tatsächlich ganz gut, gute Personen zu finden, sodass wir sehr gut wachsen können. Aber um auf die Frage noch kurz zurückzukommen, wir haben tatsächlich schon Kunden abgelehnt. Das hatte aber nichts damit zu tun, dass wir die kapazitätsmäßig nicht mehr verkraftet hätten, sondern das hat auch mit unseren Zielen zu tun, die ich am Anfang schon sagte. Wir möchten einfach für bestimmte Dinge, wie zum Beispiel Rüstungsindustrie und sowas, möchten wir nicht arbeiten und da legen wir dann Kunden ab.",
-      "start": 1861005,
-      "end": 1922185,
-      "confidence": 0.7193465346534652,
-      "channel": null,
-      "speaker": "A"
-    },
-    {
-      "text": "Im Podcast bringe ich auch öfter das Beispiel, dass zum Beispiel ich selbst nie für Hackler und Koch programmieren würde, weil Und kann ich kann ich sehr gut verstehen aber du sagtest gerade ihr seid gerade ein bisschen mehr als 90 personen und in der recherche habe ich mal ein paar zahlen gehört und zwar 2018 hattest du in dem vortrag gesagt ihr seid 38 personen 221 hattest du in dem podcast gesagt ihr seit 55 personen und ich habe gerade mir noch ein paar eingestellt und jetzt schon 90 also also respekt wie viele leute von den von den 90 also prozentual gesehen sind denn da wirklich softwareentwickler und wie viele leute sind dann ich sag mal vertrieb oder akquise oder projektmanager oder oder also alles darum was jetzt nicht pure softwareentwicklung.",
-      "start": 1922225,
-      "end": 1967207,
-      "confidence": 0.7702030075187961,
-      "channel": null,
-      "speaker": "B"
-    },
-    {
-      "text": "Ist Angefangen hat es wirklich mit einem sehr, sehr großen Anteil der Softwareentwickler und Entwicklerinnen. Am Anfang war tatsächlich bei uns das Marketingvertrieb noch sehr, sehr klein. Allerdings ist es tatsächlich ein Bereich, der bei uns jetzt eher wächst, weil die Software – ich will nicht sagen, die ist fertig, die ist natürlich auch nicht fertig – aber wir sind tatsächlich auf einem ziemlich guten Level, sodass man wirklich auch richtig in die Breite gehen kann im Vertrieb, sage ich mal. Und speziell Internationalisierung zum Beispiel. Deswegen investieren wir da tatsächlich gerade ein bisschen mehr. Ich glaube, wir sind um die 55 Personen im Engineering und die restlichen sind eben Marketing und Sales.",
-      "start": 1967247,
-      "end": 2005481,
-      "confidence": 0.697619469026549,
-      "channel": null,
-      "speaker": "A"
-    },
-    {
-      "text": "Ein großer Unterschied, wenn man mal nach OwnCloud versus NextCloud googelt, ist, dass ihr das Contributor License Agreement abgeschafft habt. Das bedeutet, wenn ich zu Nextcloud contributen möchte, trete ich nicht mein Intellectual Property an euch ab, sondern es ist mein Code, wenn man so möchte. Und soviel ich weiß, könnt ihr dann auch die Lizenz ohne meine Zustimmung, zumindest für diesen Code Part, auch nie wieder ändern. Ist das korrekt?",
-      "start": 2005521,
-      "end": 2033139,
-      "confidence": 0.7985352112676056,
-      "channel": null,
-      "speaker": "B"
-    },
-    {
-      "text": "Korrekt, ja.",
-      "start": 2033159,
-      "end": 2034540,
-      "confidence": 0.7155,
-      "channel": null,
-      "speaker": "A"
-    },
-    {
-      "text": "Habt ihr eine Veränderung oder einen Anstieg der Contributions gesehen, als ihr das CLA gedroppt habt?",
-      "start": 2034580,
-      "end": 2040525,
-      "confidence": 0.7970625,
-      "channel": null,
-      "speaker": "B"
-    },
-    {
-      "text": "Also wir haben das CLA tatsächlich gleichzeitig getroppt mit dem Launch von Nextcloud. Also von Anfang an. Deswegen kann ich es gar nicht so genau sagen. Ich sagte ja vorhin schon, dass da schon so ein bisschen ein Knoten geplatzt ist und dann die Community viel viel aktiver geworden ist. Da gehört bestimmt das CLA auch mit dazu. Das hat bestimmt auch andere Personen abgehalten. Warum muss ich jetzt einen komischen Vertrag unterschreiben? Ich will doch noch einen Bug fixen.",
-      "start": 2040845,
-      "end": 2063929,
-      "confidence": 0.6139999999999997,
-      "channel": null,
-      "speaker": "A"
-    },
-    {
-      "text": "Ich meine, da spielt ja noch eine ganz andere Sache mit, wie zum Beispiel, wenn ich jetzt während meiner Arbeitszeit was an Nextcloud fixen möchte, dann muss theoretisch mein Arbeitgeber sogar zustimmen, weil das ist ja das Intellectual Property, was ich für meinen Arbeitgeber erstelle und das wird dann an euch transferiert und so weiter und so fort. Also ich glaube schon, dass ihr da eine riesen Hürde weggenommen habt.",
-      "start": 2063969,
-      "end": 2081297,
-      "confidence": 0.7644571428571426,
-      "channel": null,
-      "speaker": "B"
-    },
-    {
-      "text": "Genau, also das ist eigentlich eine ganz komische Sache, die ja auch gar nicht so richtig natürlich ist. Also, wenn man das mit anderen Dingen vergleicht, Wikipedia zum Beispiel, das ist ja auch so, wenn ich jetzt an Wikipedia einen Artikel schreiben will, dann muss ich ja auch nur sagen, naja, das muss eben auch mit einer freien Creative Commons Lizenz verfügbar sein, aber ich müsste deswegen nicht mein komplettes Intellectual Property an irgendwie Wikimedia e.V. transferieren, das ist ja ganz seltsam. Und das ist bei Open Source ja auch so. Wahrscheinlich das erfolgreichste Open Source-Projekt überhaupt ist der Linux-Körner. Da ist es letztendlich ja auch so, jeder Entwicklerin, jeder Entwickler behält die Rechte an dem eigenen Code. Beim Linux-Körnern arbeiten ja ganz viele Unternehmen mit. Da hat dann auch irgendwie Microsoft und Intel und AMD auch, soweit ich mich das kopiere, einen Teil von ihrem Code. Es gibt also das Agreement, also eben alles muss unter einer einzigen Lizenz veröffentlicht werden. Bei den Lebenskörnern eben TPL-2, bei uns eben AGPL-3 und das ist alles. Dann können die Personen ihre Kopplheit behalten.",
-      "start": 2081597,
-      "end": 2139672,
-      "confidence": 0.7052692307692306,
-      "channel": null,
-      "speaker": "A"
-    },
-    {
-      "text": "Du hast völlig recht mit dem Linux-Kernel, doch ich frage mich immer bei dem Vergleich von anderen Open-Source-Projekten mit dem Linux-Kernel, ob dieser Vergleich immer so valide ist. Denn der Linux-Kernel, muss man ja schon sagen, die Domäne, zu der man da kontributiert, da braucht man sehr, sehr, sehr viel vorheriges Wissen über A-C-Programmierung oder jetzt teilweise auch Rust-Programmierung. sehr tiefes Low-Level-Wissen. Also, ich hab das Gefühl, die Hürde, um zum Linux-Körnel zu kontributen, ist open-source-technisch nicht höher, dennoch domänentechnisch sehr hoch. Wohingegen, wenn ich jetzt über Nextcloud spreche, und zumindest über den Nextcloud-Server oder über die Web-UI, das ist ja, ich sag mal, auch ein Großteil webentwicklungsnah. Was einen viel größeren Zugang hat durch YouTube und Bootcamps und was weiß der Geier nicht, oder?",
-      "start": 2140100,
-      "end": 2187578,
-      "confidence": 0.8285760000000002,
-      "channel": null,
-      "speaker": "B"
-    },
-    {
-      "text": "Ja, das ist sicherlich richtig. Also, klar, jetzt irgendwie in Lebenskörner einen Driver zu kontributieren oder sowas, klar, das ist jetzt nicht, das machen wir jetzt nicht mehr am Wochenende. Ja, wobei natürlich Nextcloud auch, ich will das jetzt nicht vergleichen, aber auch eine gewisse Komplexität hat. Na klar gibt es ein Web-Interface und da gibt es irgendwie JavaScript und HTML, aber, also, das ist eigentlich der spannende Bereich. Der Spannende ist da tatsächlich wirklich auch die Applikationslogik und da ist es leider inzwischen auch so, dass man das jetzt nicht so in fünf Minuten gelernt hat. Deswegen ist es für uns wichtig im Übrigen, dass es auch einen weichen Einstieg gibt in das Contributen, weil wir haben ja dieses Apps-System, also dieses Plugin-System, wo man Erweiterungen und Applikationen schreiben kann, die auf Nextcloud oben aufsetzen. Und das sind ja Dinge, die können die Personen erstmal in Isolation auch machen. Da kann man was rumbasteln, für sich selbst irgendwas programmieren, dann kann man das irgendwann mal in den App-Store publizieren, damit die restliche Welt es auch verwenden kann. Und erst nach einer gewissen Zeit fängt man dann wirklich an, am allgegenen Core von Nextcloud mitzumachen, weil das ist jetzt auch nicht so einfach, leider.",
-      "start": 2188138,
-      "end": 2247553,
-      "confidence": 0.6223725490196079,
-      "channel": null,
-      "speaker": "A"
-    },
-    {
-      "text": "Stellt ihr da dann auch gewisse Ressourcen zur Verfügung oder habt ihr da Leute, die konkret wirklich an dem Onboarding arbeiten, dass ihr Leute einfacher onboardet, dass Leute was entwickeln können? Also, um den ganzen Teil zu vereinfachen, weil klassische Firmen, die sagen halt, okay, wir sind open source, wenn jemand will und sich wirklich da einliest, dann darf er was contributen. Aber bei euch hat man ja schon das Gefühl, dass ihr das wollt und die Community natürlich auch irgendwie an Land zieht.",
-      "start": 2247593,
-      "end": 2274158,
-      "confidence": 0.7812738095238096,
-      "channel": null,
-      "speaker": "C"
-    },
-    {
-      "text": "Habt ihr das Gefühl? Das freut mich ja. Ja, weil es liegt uns tatsächlich am Herzen, definitiv. Wir haben tatsächlich sogar ein eigenes kleines Team aufgebaut letztes Jahr dazu, Develop Experience, wo wir ganz viele Dinge machen. Jetzt haben wir zum Beispiel in der letzten Version unsere Dokumentation der APIs komplett auf OpenAPI umgestellt, was das Ganze eben halt sehr viel einfacher zum Lesen macht. Deswegen haben wir auch jetzt SDKs zur Verfügung gestellt, die man nutzen kann, um mit den APIs zu interagieren. Dann haben wir eine ganze Reihe von Tutorials, Offline-Text-Tutorials oder Video-Tutorials auch ins Netz gestellt. wie man bestimmte Dinge machen kann, wie man bestimmte einfache Dinge, irgendwie ein Dashboard-Widget oder so ein Smart-Picker-Plugin oder sowas, ziemlich einfach in ein paar Minuten eigentlich programmieren kann. Dann haben wir unsere Konferenz ja regelmäßig im September. Vielleicht kann ich eine kurze Werbung machen. Ende September findet unsere Next-Level-Konferenz in Berlin statt, wo alle eingeladen sind. Das ist natürlich eine super Gelegenheit für Personen, um einfach so mit dem Kernteam in Verbindung zu kommen, sich auszutauschen, mal was zu lernen, was Neues zu machen. Da bieten wir auch teilweise Travel-Support an, dass wir Personen, Studenten, die sich das nicht leisten können, auch helfen bei der Anreise. Da haben wir auch ein spezielles Include-Diversity-Programm, wo wir auch speziell Personen aus unterrepräsentierten Gruppen finanziell unterstützen. Da bieten wir auch Mentoring und Internships an. Da habe ich bestimmt noch ganz viele Dinge vergessen. Also wir machen eine ganze Reihe von Dingen, um sozusagen den Einstieg für neue Personen in die Nextcloud-Welt zu vereinfachen. Es ist wirklich sinnvoll für das Unternehmen, aber auch eine Herzensangelegenheit für mich und das Kernteam, weil ich persönlich arbeite einfach super gerne an einem internationalen, diversen Team mit ganz vielen unterschiedlichen Persönlichkeiten zusammen. Es macht unglaublich viel Spaß und deswegen fördern wir es auch aktiv.",
-      "start": 2274318,
-      "end": 2383685,
-      "confidence": 0.7055359477124187,
-      "channel": null,
-      "speaker": "A"
-    },
-    {
-      "text": "Jetzt, wenn ihr so viel Zuspruch habt und wenn ich mich da zurück erinnere, zum Beispiel an meinen Studenten, der da ein Bachelor-Projekt gemacht hat, siehst du auch dieses Problem, dass es einfach Personen gibt, die mal reinspringen, ihr Problem lösen und dann sofort wieder weg sind? Also bei meinem Studenten zum Beispiel, der wollte eigentlich mein Problem lösen, weil ich wollte die Gesichtserkennung. Aber der hatte dann seine Note und war dann mehr oder weniger natürlich wieder weg. Das heißt, man verliert dann irgendwie wieder die Contributor. Wie geht ihr denn damit um oder seht ihr dieses Problem auch?",
-      "start": 2383985,
-      "end": 2413101,
-      "confidence": 0.8337699999999999,
-      "channel": null,
-      "speaker": "C"
-    },
-    {
-      "text": "Das ist eine super Frage und die ist noch nicht mal abgesprochen, glaube ich. Da kann ich gleich drauf einhaken, weil das ist eigentlich auch mit ein Grund, warum es eigentlich das Nextstart-Unternehmen überhaupt gibt. Das ist wirklich eine ganz, ganz wichtige Frage, weil in der Einladung wurde ja schon gesagt, dass sich in anderen Projekten viel aktiver, in KDE zum Beispiel, KDE ist ja auch ein sehr, sehr großes Open-Source-Projekt, wo es aber kein Unternehmen gibt. Wirklich ein reines Volontierprojekt, wo einfach Freiwillige zusammenkommen und die Software schreiben. Da gibt es den KDEV, der allerdings eine Rolle eher im Hintergrund einnimmt. Das ist eine Organisation, die hält halt das Trademark. Das muss halt irgendjemand machen. Der Organisation gehört eben die Domain. Es muss halt auch irgendjemand sein. Und dann gibt es auch ab und zu mal Spenden, die eingesammelt werden. Die werden dann halt verteilt. Das macht der e.V. Aber ansonsten ist es eine komplett los Organisation von Freiwilligen. Und da habe ich ja viele, viele Jahre mitgemacht und ich finde es auch ganz toll. Allerdings gab es da genau das Problem, was du sagtest. Es gibt junge Menschen, Studenten, die kommen, machen mit, ein Jahr, zwei Jahre vielleicht, und dann plötzlich finden sie sozusagen in Anführungszeiten einen richtigen Job, den sie auch brauchen, weil irgendwann muss man ja auch Geld verdienen, dann wird man auch die Familie gründen. Und dann sind die halt weg. Dann sind die einfach nicht mehr da. Und so ist es halt so, dass bei Projekten wie KD oder Gnome oder anderen gibt es einen ständigen Durchlauf. Da kommen neue Leute rein, fallen raus, kommen rein, fallen wieder raus. Und ich habe da viel, viel drüber nachgedacht. Ich habe da auch vor langer Zeit auch mal Vorträge dazu gehalten, was man eigentlich machen kann, dass die Leute ein bisschen mehr dabei bleiben können bei dem Open-Source-Thema. Und das ist eigentlich der einzige Grund, warum es Nextcloud GmbH überhaupt gibt, weil wir eben einfach eine Möglichkeit gesucht haben, Leute zu bezahlen, an Nextcloud zu arbeiten. Deswegen sind wir eben in der guten Situation, dass wir über 50 Personen jetzt bezahlen können, um ein Source-Code zu schreiben. Dafür brauchen wir eben das Geschäftsmittel, um das Geld zu bekommen dafür. Aber das ist der Zweck des Unternehmens, um sozusagen zusätzlich zur Community auch noch Vollzeitpersonen zu haben.",
-      "start": 2413121,
-      "end": 2532552,
-      "confidence": 0.718138461538461,
-      "channel": null,
-      "speaker": "A"
-    },
-    {
-      "text": "Ich glaube, sehr vielen Leuten, die das gerade hören und hier und da auch mal Open Source zu kontributen, geht gerade ein Riesenherz auf. Also vielen Dank dafür, dass du über 50 Leuten auf jeden Fall dies ermöglichst. Ich glaube, das sollte nicht standardmäßig so hingenommen werden.",
-      "start": 2532857,
-      "end": 2548314,
-      "confidence": 0.8275531914893618,
-      "channel": null,
-      "speaker": "B"
-    },
-    {
-      "text": "Danke.",
-      "start": 2549355,
-      "end": 2549556,
-      "confidence": 0.381,
-      "channel": null,
-      "speaker": "A"
-    },
-    {
-      "text": "Ist es natürlich so, es ist ein Open Source Projekt, es ist unter GPL, du hast gesagt ihr betreibt die Merge Rechte oder wie Changes gemerged werden auch sehr sehr offen, dass nur zwei Reviews da sein müssen. Wie sieht das denn mit einer klassischen Produktroadmap aus, denn Bei anderen Open-Source-Projekten, wie zum Beispiel Python, hat man eigentlich Guido von Rossum als Projektleiter. Bei Redis war das Salvatore Sanfilippo, also Antires. Und jede größere Open-Source-Community hat so ein, zwei Leute, die auf gut Deutsch den Hut aufhaben. Wie macht ihr Produktmanagement, beziehungsweise wie verändert sich klassisches Produktmanagement, Roadmap-Planning bei einer Open-Source-Firma so, wie ihr sie betreibt?",
-      "start": 2550236,
-      "end": 2595242,
-      "confidence": 0.8278962264150943,
-      "channel": null,
-      "speaker": "B"
-    },
-    {
-      "text": "Also Andi will eigentlich wissen, ob du der Kopf bist da oben, oder? Habe ich das richtig verstanden?",
-      "start": 2595502,
-      "end": 2601327,
-      "confidence": 0.7504444444444445,
-      "channel": null,
-      "speaker": "C"
-    },
-    {
-      "text": "Erstmal verändert sich das ständig. Wir haben da auch schon einige Iterationen durchgemacht über die Jahre. Das hat auch mit dem Wachstum der Firma natürlich auch zu tun. Man arbeitet halt anders, wenn man größer ist, als wenn man kleiner ist. Also das Erste, was ich dazu sagen möchte, ist, dass es natürlich jetzt keine Roadmap für unsere Community gibt. Das heißt, unsere Community-Personen machen natürlich das, was sie wollen. Das sind ja alles Freiwillige. Die würden jetzt nicht, wenn ich jetzt sage, hey, du programmier mal das und das Feature, dann würden die sagen, ja warum, ich bin doch hier aus Spaß hier, ich mach, was ich will. Das heißt, diese 2000 Personen plus die App-Entwickler, ich weiß gar nicht, wie viele es insgesamt sind, aber wirklich die große Community, die macht irgendwie, was sie will. Ganz viele davon machen eben ein Feature, was sie selbst benutzen wollen. Das höre ich ganz oft, wenn ich mit den Personen rede, dass sie sowas halt selbst haben wollen. Oder es gibt irgendwie einen Bug, den sie halt haben, oder möchten irgendwas lernen. Also komplett aus eigener Motivation. Das heißt, da gibt es keine Roadmap. Für die Personen, die jetzt im Unternehmen arbeiten, da ist es natürlich schon so, dass die in gewissem Maße eine Roadmap haben. Das liegt daran, dass wir halt ein Stück weit tatsächlich schon auch unsere Kunden glücklich machen müssen. Das ist so. Das heißt, wenn ich jetzt nur, weiß ich nicht, Nextinvasion von Nextcloud hat irgendwie Tetris eingebaut, dann werden würde irgendwie unsere Kunden sagen, was ist denn das für ein Quatsch? Also da müssen wir schon ein bisschen gucken, dass wir auch das entwickeln, was die auch irgendwie haben wollen. Und auch wenn es dann irgendwelche Support-Tickets gibt und irgendwas funktioniert nicht oder die Performance stimmt irgendwo nicht, dann müssen wir halt daran und daran arbeiten. Da gehen wir so vor, dass wir eine Gruppe von Personen haben bei uns intern, das sind dann Vertreter aus dem Sales, der weiß, was die Kunden wollen, Vertreter aus dem Marketing, Vertreter aus dem Support, Vertreter aus dem UI-Design-Bereich. Ich bin dann auch dabei und wir kommen regelmäßig zusammen. verschiedene Bereiche von Nextcloud, wo wir uns überlegen, in welche Richtung soll das denn gehen? Wollen wir ein bisschen mehr in die Richtung entwickeln, ein bisschen mehr in die Richtung entwickeln? Und das sind dann schon Dinge, die wir dann versuchen als Unternehmen umzusetzen. Auch nicht zu 100 Prozent. Also die Leute haben auch immer noch dezentral quasi die Freiheit zu entwickeln, was sie so wollen. Aber da gibt es quasi schon so eine gewisse Steuerung und da kann ich jetzt nicht abstreiten, tatsächlich schon auch sehr opinionated und ich habe da tatsächlich schon auch meine eigene Aber nicht alleine, sondern mit anderen Personen.",
-      "start": 2601367,
-      "end": 2741897,
-      "confidence": 0.6886314655172417,
-      "channel": null,
-      "speaker": "A"
-    },
-    {
-      "text": "Also, ich mein, opinionate zu sein ist ja nicht schlecht. Ich glaub, Ruby oder beziehungsweise Ruby on Rails wurde da so groß, ne? Oder Go ist ja auch sehr opinionated. Also, ich glaub, das ist gar nichts Schlechtes. Aber kann ich das so verstehen, dass ihr eigentlich, ich sag mal, so die Protection-Ebene für die Prioritäten bei Open-Source-Arbeit seid? Denn die Prioritäten bei Open-Source-Arbeit, die sind ja schon ab und zu mal ... Wie soll ich das jetzt nennen? Sehr unterschiedlich. Also, ich hab zum Beispiel sehr viel Spaß, irgendwelche Funktionen zu refactoren, ohne ein neues Feature zu adden. Und auf der anderen Seite können aber alle User theoretisch sich über einen sehr kritischen Bug beschweren. Also, ihr sorgt dann schon intern dafür, dass es da so eine Art Protection Layer gibt, dass ich das weiter refactoren kann, weil ich das in der Freizeit mach. Aber wenn es jetzt wirklich kritische Bugs gibt, dann schaut ihr auch da mal drauf wegen der generellen User Experience. Ist das richtig?",
-      "start": 2741957,
-      "end": 2792007,
-      "confidence": 0.7947678571428569,
-      "channel": null,
-      "speaker": "B"
-    },
-    {
-      "text": "Protection Layer ... Ich weiß nicht, wie ich's so nennen würde. Aber wir müssen natürlich, weil wir Kunden haben, die uns bezahlen, irgendwie darauf achten, dass das Produkt funktioniert. Also im Sinne von, die Usability ist okay, die Performance ist okay, die Bugzahl ist gering, die Features sind ungefähr so, wie die Personen sich das auch so vorstellen, die das benutzen, also mitwettbewerbsfähig. Accessibility ist da, Security ist da und so weiter. Das heißt, wir müssen natürlich als Organisation dafür sorgen, dass das Produkt funktionsfähig ist.",
-      "start": 2792247,
-      "end": 2827253,
-      "confidence": 0.7480116279069766,
-      "channel": null,
-      "speaker": "A"
-    },
-    {
-      "text": "Vielleicht ist Qualitätssicherung ein besserer Begriff oder ähnliches. Protection gehört sich in der Tat ein bisschen schlimm an, gebe ich zu.",
-      "start": 2827273,
-      "end": 2834475,
-      "confidence": 0.7202857142857142,
-      "channel": null,
-      "speaker": "B"
-    },
-    {
-      "text": "Qualitätssicherung gehört auch dazu, genau. Also wenn man da eben sagt, es ist ein Balance. Ihr kommt ja auch zur Softwareentwicklung. Die einen Leute sagen, wir müssen jetzt irgendwie hier die supercoolen Features machen. Die anderen sagen, wir müssen nur Bugfixen machen. Die anderen sagen, wir haben nur Performance, wir müssen nur refactoren. Und natürlich liegt die Wahrheit eben in der Mitte.",
-      "start": 2834515,
-      "end": 2851260,
-      "confidence": 0.5495967741935485,
-      "channel": null,
-      "speaker": "A"
-    },
-    {
-      "text": "Jetzt hast du ja schon erwähnt, wer hauptsächlich eure Kunden sind und was euer Business-Modell ist. Ganz viele andere Firmen haben ja jetzt zusätzlich eingeführt, Elasticsearch ganz voran oder kürzlich, dass ihre Produkte nicht mehr gehostet werden, weil sie dadurch einen Revenue-Stream verlieren, wenn andere damit Geld machen. EWS bei Elasticsearch war ja der große Konflikt. Jetzt ist bei euch natürlich mit AGBL eigentlich keine Möglichkeit, da irgendwas einzuschränken. Und es gibt ja auch ganz viele Hosting-Angebote. Fleckt ihr da irgendwelche Partnerschaften mit denen? Siehst du das kritisch, dass jetzt andere mit eurer Software in dem Sinne Geld machen und das weiterverkaufen? Oder wie blickst du auf die Dinge?",
-      "start": 2851500,
-      "end": 2892398,
-      "confidence": 0.7996422018348621,
-      "channel": null,
-      "speaker": "C"
-    },
-    {
-      "text": "Ich denke, es ist immer schlecht, mit so einer Neidbrille auf Dinge zu schauen, denke ich. Natürlich stört es mich überhaupt gar nicht, dass Personen Geld mit Nextcloud verdienen. Das ist doch super. Das ist ja total legitim. Und ehrlich gesagt habe ich das Ganze ja damals auch gegründet, weil ich wollte, dass ganz viele Personen auf der ganzen Welt die Software einfach frei und offen dezentral betreiben können. Also dass das viel passiert, ist ja fantastisch. Und wenn da jemand Geld nicht verdienen will, ist auch gut. Was natürlich mir schon wichtig ist, dass wir als Next hat auch genug Geld verdienen, dass wir eben die Gelder bezahlen können und vielleicht auch wachsen können. Aber das ist ja gegeben. Das heißt, wir haben Partnerschaften mit bestimmten Providern. Sagte ich ja schon, wie im Agenda Cloud, der Telekom, mit IONOS, OVH in Frankreich und so weiter. Das sind typischerweise eben so die etwas größeren, professionelleren Provider. Mit denen haben wir Verträge, mit denen arbeiten wir zusammen und so verdienen wir unser Geld. Und dass es noch ganz, ganz viele, sage ich jetzt mal so, kleinere, wilde Community-Betreiber gibt, die auch Geld verdienen, ist doch super. Ist gar kein Problem damit.",
-      "start": 2892619,
-      "end": 2959873,
-      "confidence": 0.6928300000000007,
-      "channel": null,
-      "speaker": "A"
-    },
-    {
-      "text": "Das heißt, ihr bekommt von den Leuten auch teilweise wieder Contributions zurück, wenn es schon kein Geld ist, oder kommt da eher weniger zurück?",
-      "start": 2959913,
-      "end": 2969019,
-      "confidence": 0.8555416666666668,
-      "channel": null,
-      "speaker": "C"
-    },
-    {
-      "text": "Nee, das ist tatsächlich weniger. Also ich habe das Gefühl, dass die Personen, die dann irgendwie so ein Fünf-Personen-Service-Provider, Nextcloud für irgendeine Zielgruppe, das sind meistens nicht so die Coder, die dann irgendwas zurückkontributieren. Da kommt tatsächlich nicht viel. Aber man muss ja auch nicht, machen dafür andere.",
-      "start": 2969199,
-      "end": 2984404,
-      "confidence": 0.643125,
-      "channel": null,
-      "speaker": "A"
-    },
-    {
-      "text": "Wie viele eurer Kunden kontributieren denn code-technisch zurück?",
-      "start": 2984424,
-      "end": 2988805,
-      "confidence": 0.7150000000000001,
-      "channel": null,
-      "speaker": "B"
-    },
-    {
-      "text": "Kann ich gar nicht so richtig sagen. Es gibt tatsächlich einige der Größeren, die das tun. Ich glaube nicht, dass ich jetzt irgendwelche NDAs gerade verletze, aber beispielsweise die Deutsche Telekom macht das. Die haben ein eigenes Entwicklerteam, was quasi dann Ihre Weltentwicklung, die Sie haben wollen, ganz normal bei uns auf GitHub einstellt, was ein ganz normales Produkt einfließt, was wirklich ganz, ganz fantastisch ist. Und andere, größere gibt es auch. Wo es wenig passiert, ist tatsächlich im universitären Umfeld. Da habe ich mich gerade gefreut, als du gesagt hast, dass es ein Student von dir war. Das höre ich tatsächlich überraschend wenig. Ich hätte eigentlich gedacht, dass Uni es total prädestiniert ist, irgendwelche Next-Level-Apps zu schreiben, aber das gibt es gar nicht so oft.",
-      "start": 2988825,
-      "end": 3028997,
-      "confidence": 0.736507936507936,
-      "channel": null,
-      "speaker": "A"
-    },
-    {
-      "text": "Ich glaube, es waren sogar zwei Bachelorarbeiten, wenn ich das richtig im Kopf habe. Aber das Problem ist natürlich, dass das immer sehr kurze Laufzeit ist und wenn die Leute dann nicht absolut motiviert sind von sich aus, dann stirbt natürlich so eine App wieder sehr schnell. Das ist halt der große Nachteil, wenn es jetzt Studierende sind. Aber ich weiß eben auch, dass sehr viele Unis Nextcloud verwenden und eigentlich, die könnten natürlich zurückkontributieren. Das wäre eigentlich eine gute Möglichkeit. Aber die Ressourcen als Insider an der Uni, weiß ich das natürlich auch, sind natürlich immer begrenzt und eigentlich lebt sowas nur von privater Motivation, wenn sich irgendwer berufen fühlt, da mitzuwirken. Leider.",
-      "start": 3029157,
-      "end": 3067571,
-      "confidence": 0.8118859649122805,
-      "channel": null,
-      "speaker": "C"
-    },
-    {
-      "text": "Jetzt hattest du gerade schon ein paar größere Provider. Angesprochen, OVH in Frankreich ist zum Beispiel meines Wissens nach sehr sehr bekannt, um Datenschutzrichtlinien zu respektieren und das geht ja in dieselbe Schiene wie Nextcloud auch. Inwieweit beobachtet ihr denn die ganzen Bewegungen auf politischer Ebene von der EU oder jetzt hier auch mit diesem großen Projekt, wie nennt sich es, GaiaX glaube ich. So seid ihr seid ihr da vorne mit dabei und und ich sag sogar vielleicht sogar teil der gespräche oder kommen die leute auf euch zu nachdem sie gesehen haben oh das ist ja ein.",
-      "start": 3067992,
-      "end": 3101719,
-      "confidence": 0.7940707070707073,
-      "channel": null,
-      "speaker": "B"
-    },
-    {
-      "text": "Top gitter projekt also, Ja, tatsächlich. Also speziell ich bin da tatsächlich sehr viel involviert in viele, viele Gespräche, was irgendwie mich immer wieder so ein bisschen wundert und ich weiß immer noch gar nicht, ob ich es so gut finde, weil eigentlich, ich komme ja auch aus der Softwareentwicklung und ich habe mich eigentlich jetzt nicht dazu entschlossen, irgendwann mal Politik zu machen oder so ein der Info zu stoßen, aber es ist tatsächlich so, dass ich viele, viele Gespräche führe mit vielen europäischen Regierungen, mit der Europäischen Kommission, mit vielen verschiedenen Lobbyorganisationen, die sich für freie Daten-Obersource einsetzen, da bin ich tatsächlich sehr involviert. Also GAIA-X hatte ich schon angesprochen, da waren wir tatsächlich von Anfang an dabei, alle drei Gründungsmitglieder, aber auch andere Aktuelle Themen für Digital Markets Act, Digital Service Act, ganz aktuelle Gesetzgebung der EU, momentan ganz heiß diskutiert, Cyber Resilience Act oder auch der AI Act, also da sind wir oder ich speziell tatsächlich sehr viel tiefer involviert, als ich das eigentlich manchmal möchte.",
-      "start": 3101739,
-      "end": 3161828,
-      "confidence": 0.7032235294117642,
-      "channel": null,
-      "speaker": "A"
-    },
-    {
-      "text": "Jetzt hattest du natürlich auch schon Lobbyismus ein bisschen angesprochen und du hattest auch schon Behörden als Kunden angesprochen. Ich kenne das nur aus meinem beruflichen Umfeld, wenn man ziemlich viel mit internationalen Behörden zu tun hat, dann haben die oft Anforderungen, wie in Amerika zum Beispiel FedRAMP oder spezielle Verschlüsselungen wie vom NIST oder ähnliches. Das gilt jetzt natürlich nur speziell für amerikanische Unternehmen. Ist das denn auch der Fall? Und ich glaube, du hattest vorhin auch eine BSI-Zertifizierung angesprochen. Ist das dann bei den ganzen Ländern und Behörden wirklich der Fall, dass ihr dann diese Zertifizierungen auch liefern müsst, weil eine Zertifizierung kostet natürlich auch unglaublich viel Geld und das Produkt muss gegebenenfalls so angepasst werden und und und. Also ich meine das sind ja schon teilweise sehr sehr große Investments.",
-      "start": 3162422,
-      "end": 3204687,
-      "confidence": 0.7682406015037593,
-      "channel": null,
-      "speaker": "B"
-    },
-    {
-      "text": "Ja ist tatsächlich so. Also da gibt es eine ganze Reihe von Anforderungen, die wir da liefern müssen. Ja, sowas wie BSI Grundschutz zum Beispiel, das hat Dinge mit bestimmten Basisanforderungen abgedeckt für den sicheren Betrieb von so einer Software wie Nextcloud. Da gehört aber auch sowas wie die BitV-Zertifizierung dazu für Barrierefreiheit und ja, es gibt eine ganze Reihe weiterer. Und wie gesagt, teilweise in unterschiedlichen Ländern hast du es auch nicht einfacher gemacht. Speziell auch für kleinere Ressource-Unternehmen wie wir, muss man auch sagen. Also Zertifizierung ist natürlich für Google und Microsoft Peanuts. Aber ja, so jemand wie Nextcloud, da sitzen auch schon einige Personen dann auch mal so ein paar Monate dran.",
-      "start": 3204967,
-      "end": 3243287,
-      "confidence": 0.6667652173913045,
-      "channel": null,
-      "speaker": "A"
-    },
-    {
-      "text": "Gibt es da für Open Source Projekte Support von der Free Software Foundation oder von größeren Unternehmen, die sich in dem Bereich vielleicht auch besser auskennen, weil sie zum Beispiel wirklich aktiv in den Aufwänden der EU involviert sind?",
-      "start": 3243307,
-      "end": 3256736,
-      "confidence": 0.820153846153846,
-      "channel": null,
-      "speaker": "B"
-    },
-    {
-      "text": "Ja, also die Free Software Foundation, mit der arbeiten wir zwar schon sehr eng zusammen, aber das ist ja auch Eine sehr kleine Organisation, die sich hauptsächlich um Lobbying-Themen kümmert. Finanziell können die leider nicht viel ausrichten. Aber es ist dann tatsächlich so, dass wir das von unseren Kunden dann auch teilweise bezahlen lassen. Wenn wir Behörden dann extra einsetzen wollen, dann kostet es eben das und das extra, damit wir die Zertifizierung machen können.",
-      "start": 3257276,
-      "end": 3280260,
-      "confidence": 0.6946666666666668,
-      "channel": null,
-      "speaker": "A"
-    },
-    {
-      "text": "Wie schafft ihr das eigentlich, gegen Microsoft und Google anzukommen? Weil die haben hunderte Lobbyisten und können sich, wie du gesagt hast, viel, viel mehr leisten, wenn es um irgendwelche Zertifizierungen geht oder Ähnliches oder einfach ein Sales-Team, ein riesengroßes Sales-Team haben. Also wie schafft ihr das überhaupt, da irgendwie durchzukommen?",
-      "start": 3280520,
-      "end": 3299232,
-      "confidence": 0.7935098039215687,
-      "channel": null,
-      "speaker": "C"
-    },
-    {
-      "text": "Ich schaffe das auch nicht. Das ist nicht so einfach. Also ich meine, es gibt eben einige Dinge, die fundamental besser sind an Nextcloud. Das muss man nämlich trotzdem kommunizieren, damit die Leute das verstehen. Zum Beispiel ist es eben so, dass Nextcloud ja ein Software ist und nicht ein Service. Einfach Software, die man nehmen kann und die man so installieren und betreiben kann, wie man das möchte. Beispielsweise betreibt ja der Bund ein eigenes Netzwerk, das Internet des Bundes. Also ein Netzwerk mit vielen verschiedenen Rechenzentren, was nicht mit dem Internet verbunden ist. Ein komplettes internes Netzwerk. Also da kann man Nextcloud oder ist auch Nextcloud im Betrieb, eben komplett intern und abgeschottet vom Internet. Sowas würde natürlich mit Google und mit Microsoft überhaupt gar nicht funktionieren, weil die Software gibt es eben nur aus der amerikanischen Cloud. Wenn man jetzt sagt, ich hätte jetzt hier irgendwie gerne eine Videokonferenz-Lösung, wo verschiedene Botschaften international über VPN-Strecken miteinander Videokonferenz machen können, Ja, dann gehe ich eben nur mit Nextcloud und nicht mit Teams oder so. Also haben wir einige ganz fundamentale Vorteile einfach. Natürlich hast du trotzdem recht, es ist die große Herausforderung, das auch zu erklären, weil es natürlich auch manche Politiker und Entscheider gibt, die sagen, ja, tut schon, passt schon, aber ist nicht so wichtig.",
-      "start": 3299452,
-      "end": 3372874,
-      "confidence": 0.7246073059360729,
-      "channel": null,
-      "speaker": "A"
-    },
-    {
-      "text": "Inwieweit beobachtest du eine Veränderung in eurem Vertrieb, beziehungsweise inwieweit steigt die Akzeptanz bei Firmen, GPL-basierte Software einzusetzen und auch das, was ihr im Professional Service Bereich dann für die Kunden umsetzt, dass dies dann wieder auch Open Source wird? Also wird das mit der Zeit besser oder ist es immer noch so schwierig wie 2005?",
-      "start": 3373254,
-      "end": 3395150,
-      "confidence": 0.8422499999999999,
-      "channel": null,
-      "speaker": "B"
-    },
-    {
-      "text": "Ich habe das Gefühl, dass es besser wird. Wir hatten noch irgendwie vor zehn Jahren viel häufiger die Diskussion, nice doch Open Source, warum kostet das jetzt Geld? Das hören wir jetzt immer weniger. Oder auch so Dinge wie, oh, GPL, das ist ja viral, das irgendwie infiziert jetzt meine Organisation und dann zwei Stunden später muss ich dann irgendwie, keine Ahnung, unsere Steuerdaten offenlegen oder irgendwie so ein Quatsch. Und das ist tatsächlich, kommt immer weniger vor. Die Leute verstehen heutzutage, dass Open Source eigentlich Sicherheit bringt und nicht wegnimmt. Und die verstehen auch, dass man, ja, natürlich Open Source aus dem Internet runterladen kann, einfach betreiben kann, wenn man das möchte. Wenn man aber, ja, Support und gewisse professionelle Services außenrum haben möchte, dann eben sich eine Organisation sucht wie Nextcloud oder oder eben Red Hat oder MariaDB oder wie auch immer, die dazu beauftragt, die Scription abschließt und dann hat man eben eine professionelle Enterprise-Software, die auch sicher ist. Und das wird alles definitiv besser. Also besteht Hoffnung.",
-      "start": 3395160,
-      "end": 3453630,
-      "confidence": 0.7075964912280704,
-      "channel": null,
-      "speaker": "A"
-    },
-    {
-      "text": "Bei der Vorbereitung zu diesem Podcast kam mir natürlich auch das Projekt der Stadt München in den Kopf. Damals, wo sie, glaube ich, auf Linux umstellen wollten mit LibreOffice, ist das, glaube ich, richtig?",
-      "start": 3454211,
-      "end": 3466006,
-      "confidence": 0.8431176470588235,
-      "channel": null,
-      "speaker": "B"
-    },
-    {
-      "text": "Ja.",
-      "start": 3466686,
-      "end": 3467287,
-      "confidence": 0.476,
-      "channel": null,
-      "speaker": "A"
-    },
-    {
-      "text": "Wo sie dann aber, glaube ich, nach zwei, drei Jahren wieder zurückgerollt sind. Und da kam mir auch die Überlegung, Wenn du jetzt sagst, es wird einfacher beim Verkauf von Open-Source-Software, beziehungsweise bei den Services, die da drum sind, dass ihr ja schon in irgendeiner Art und Weise Pioniersarbeit macht, meines Erachtens nach.",
-      "start": 3467307,
-      "end": 3485037,
-      "confidence": 0.8263773584905658,
-      "channel": null,
-      "speaker": "B"
-    },
-    {
-      "text": "Ja, ihr habt ja WMS definiert, ja klar. Also natürlich genauso, was wir jetzt machen, hat auch vorher noch nie jemand gemacht. Aber wie du schon sagtest, gab es natürlich auch andere Versuche mit Open-Source, bestimmte Dinge in der Verwaltung und in anderen Bereichen halt zu modernisieren, wie München. was ein Fell geschlagen ist. Aber München war ja ein Projekt, da hat man eigentlich angefangen, die Arbeitsplätze zu migrieren. Und um die Serverinfrastruktur wollte man sich später kümmern. durch den gegengesetzten Ansatz. Also wenn man dann letztendlich ihr Windows-Desktop und ihr Microsoft-Office und ihr Outlook und alles wegnimmt und dann ihr die Linux-Software installiert und das letztendlich auf allen Arbeitsplätzen, dann gibt es da natürlich schon eine gewisse, ja, muss man da bestimmte Widerstände einreißen, weil die Leute mögen erstmal nicht Veränderungen. Und wenn es anders aussieht, dann ist es erstmal komisch und mögen sie nicht. Ich kann euch eine kleine Geschichte erzählen aus meiner Zeit aus KDE. Da sollte ja auch zum Beispiel KDE verwendet werden für den Linux-Desktop in der Münchner Verwaltung. Und da gab es dann irgendwann einen Request von uns, dass wir doch unsere Ordner-Icons, die aus irgendwelchen Gründen bei KDE blau sind und unter Windows gelb, eben von Blau zu Gelb ändern sollten, weil die Personen sonst ihre Orte nicht finden. Es sieht ein bisschen anders aus und schon ist es irgendwie verwirrend. Und bei den jetzigen Projekten in der Verwaltung, wo wir auch involviert sind, werden die Clients im ersten Schritt gar nicht ausgetauscht. Die Leute haben weiterhin ihr Windows oder ihr Smartphone oder ihr Tablet oder irgendwas und es wird letztendlich das Backend ausgetauscht. Und da ist es ja auch so, dass das Backend sich ja so ändert, weil Microsoft möchte ja auch gar kein selbst gehostetes Outlook oder selbst gehostetes Exchange oder Sharepoint oder Windows Server, das stirbt ja alles. Und das geht ja alles zu Microsoft 3.5 und seitdem in die Cloud. Das heißt, es verändert sich sowieso. Und wenn es sich sowieso verändert, dann kann man es ja auch in die Open Source Cloud tun. Und das ist tatsächlich dann, da machen wir einige Projekte, die sind auch alle erfolgreich momentan. Und da sind die Widerstände viel, viel geringer, als es eben damals in München war.",
-      "start": 3485377,
-      "end": 3606207,
-      "confidence": 0.717688829787234,
-      "channel": null,
-      "speaker": "A"
-    },
-    {
-      "text": "Jetzt bist du ja sehr stark verankert in der ganzen Open-Source-Szene mit KDE und Nextcloud natürlich. Wenn wir da jetzt mal rauszoomen, Nextcloud ist jetzt ein sehr gutes Beispiel oder ein erfolgreiches Beispiel natürlich. Es gibt natürlich auch andere Beispiele, so wie Firefox. Die verlieren extrem viel Marktanteil in letzter Zeit. Wie blickst du denn auf die gesamte Open-Source-Szene eigentlich so? Siehst du da einen positiven Trend oder geht es wieder zurück?",
-      "start": 3606407,
-      "end": 3631427,
-      "confidence": 0.8190555555555556,
-      "channel": null,
-      "speaker": "C"
-    },
-    {
-      "text": "Die große Frage. Die große Frage. Open Source erstmal wird immer populärer. Immer mehr Software wird unter Open Source Lizenzen veröffentlicht. Also wenn man zum Beispiel jetzt irgendwas machen möchte, irgendwie im Bereich Programmiersprachen oder Middleware oder Datenbanken oder Speichersysteme oder irgendwas, Dann ist es ja gar nicht mehr vorstellbar, dass da irgendein Startup kommt mit proprietärer Software. Das wird ja überhaupt keine Akzeptanz mehr bekommen. Das heißt, in den Bereichen gibt es wirklich unglaublich viel Open Source. Klar, Android ist Open Source. Ganz viele Libraries und Frameworks, die verwendet werden. Über alle möglichen Software ist Open Source. Von daher kann man erstmal sagen, es ist erstmal toll und es nimmt auch zu und wird bestimmt auch weiterhin zunehmen. Jetzt ist es natürlich so, dass in meiner Wahrnehmung, in meiner Welt erstmal Open Source oder freie Software jetzt kein Selbstzweck sind. Also es ist ja nicht so, dass es jetzt irgendwie, wenn es jetzt irgendwie 1000 Zeilen Open Source Code gibt, dass es die Welt besser geworden ist, als wenn es nur 100 Zeilen Open Source Code gibt. Sondern dieser Code hat ja immer irgendwas mit Werten und Zielen zu tun. Beispielsweise gibt es ja die vier Freiheiten von Richard Stallman oder auch die entsprechende Definition der Open Source Initiative, wo letztendlich ja klar ist, warum Open Source gut ist. Nämlich, dass man die Software sich anschauen kann, man kann sie verändern, man kann sie weitergeben, man kann sie auch kostenlos verwenden und so weiter. Es hat aber einen ganz hohen gesellschaftlichen Vorteil, freie Software. Aber das greift nur, wenn eben alles freie Software ist. Das ist zum Beispiel das Problem an Android. Na klar, Android ist irgendwie, weiß ich nicht, 95% Open Source. Ja, schön. Aber dann gibt es eben noch die 5%, die Google-Services, die da noch drinstecken, oder irgendwelche provozierenden Applikationen, oder irgendwelche Treiber, oder irgendwelche Spezial-Patches von Samsung oder sonst irgendwas, die dann eher halt nicht Open Source sind. Und die machen letztendlich die ganzen Freiheiten kaputt. Weil dann kann ich plötzlich das Ganze nicht mehr anschauen und verteilen, weiterverwenden und weiterentwickeln und so weiter. Das heißt, Open Source wächst immer mehr sozusagen unter der Decke, aber dann gibt es immer noch so den dünnen Layer oben drüber, was dann proprietär ist. Microsoft sagt ja auch, ja, wir sind der größte Open Source Contributor und die Azure Cloud basiert auf 99 Prozent Open Source. Ja, ist ja toll, aber wenn halt die 1 Prozent proprietär sind, dann kann ich es halt trotzdem nicht bei mir selbst lokal installieren und betreiben und anschauen und verändern und mit Vente-Logging umgehen und so weiter. Das heißt, ja, Open Source wächst und gedeiht, und das ist toll. Was ich halt nicht erkennen kann, ist, dass das dann direkt zu Freiheiten und mehr Unabhängigkeit von Big-Tech-Unternehmen führt. Das leider nicht. Von daher ja und nein auf die Frage.",
-      "start": 3632268,
-      "end": 3793864,
-      "confidence": 0.762811320754717,
-      "channel": null,
-      "speaker": "A"
-    },
-    {
-      "text": "Ich glaube, mit diesem Plädoyer für Open Source können wir definitiv abschließen. Ich glaube, wenn wir alle ein bisschen mehr in Richtung Open Source gehen, das ist nie eine schlechte Idee. Wenn ich das richtig verstanden habe, hättest du auch gern, dass ein paar Unis mehr Code contributen bei euch. Vielleicht können wir das auch noch an die Unis weitersenden. Programmierst du selbst eigentlich noch oder bist du schon komplett weg vom Fenster und bist nur mehr Lobbyist quasi?",
-      "start": 3794152,
-      "end": 3817129,
-      "confidence": 0.7606962025316453,
-      "channel": null,
-      "speaker": "C"
-    },
-    {
-      "text": "Also das letzte Feature in Nextcloud, was ich selbst programmiert habe, ist glaube ich jetzt auch schon wieder 2-3 Jahre her. Wirklich zeitlich schwierig. Wir haben jetzt nächste Woche hier wieder so ein Treffen, wo die ganze Firma zusammenkommt. Da hoffe ich, dass ich dann so ein paar Minuten am Abend mal irgendwas Spannendes machen kann. Ich habe neulich mal so ein bisschen mit AI, Machine Learning Dingen gespielt, aber auch am Wochenende, weil ich von dem Tag eigentlich tatsächlich weniger Zeit habe. Deswegen immer, wenn ich mal wieder was programmiert, denke ich so, wow, das macht ja total Spaß, aber die Zeit ist meistens leider nicht da.",
-      "start": 3820661,
-      "end": 3850942,
-      "confidence": 0.6694444444444447,
-      "channel": null,
-      "speaker": "A"
-    },
-    {
-      "text": "Dann kann ich auch nur sagen, vielen lieben Dank, Frank, dass du dir die Zeit genommen hast, mit uns über dieses Thema zu sprechen. Für mich war es eine unglaublich inspirierende Folge und ich finde es wirklich wirklich wirklich enorm wichtig was du tust und aber auch enorm beeindruckend wie du es machst und auf welcher größe auch inzwischen 90 leute können davon leben und meines erachten nach treibst du natürlich auch mit all deiner arbeit auf dem auf der politischen ebene von der du vielleicht nicht so der Fan bist, wie ich rausgehört habe, aber schon, dass die Bundesregierung sowas einsetzt, finde ich deutlich besser, als wenn sie das Geld für proprietary Software irgendwie ausgeben, wo es dann hinten dran irgendwie wieder Millionen versenkt werden. Vielen lieben Dank für all deine Arbeit, die du Wahrscheinlich jeden Tag und nicht nur Montag bis Freitag tust. Deswegen danke dafür und danke für deine Zeit, dass wir mit dir sprechen durften.",
-      "start": 3850962,
-      "end": 3905445,
-      "confidence": 0.7896792452830188,
-      "channel": null,
-      "speaker": "B"
-    },
-    {
-      "text": "Danke für das tolle Interview. Hat wirklich Spaß gemacht und sehr inspirierende Fragen auch von euch.",
-      "start": 3905465,
-      "end": 3910129,
-      "confidence": 0.4143125000000001,
-      "channel": null,
-      "speaker": "A"
-    },
-    {
-      "text": "Vielen, vielen Dank. Es liegen nämlich nicht nur meine Kalenderdaten in der Nextcloud, sondern auch unser Podcast. Alle unsere MP3-Dateien liegen auch in der Nextcloud. Also vielen Dank dafür. Hat uns bisher noch nie im Stich gelassen. Super.",
-      "start": 3910169,
-      "end": 3920818,
-      "confidence": 0.7991315789473683,
-      "channel": null,
-      "speaker": "C"
-    },
-    {
-      "text": "Vielen Dank.",
-      "start": 3920858,
-      "end": 3921879,
-      "confidence": 0.46699999999999997,
-      "channel": null,
-      "speaker": "A"
-    },
-    {
-      "text": "Danke. Tschüss. Bis zum nächsten Mal.",
-      "start": 3921919,
-      "end": 3923280,
-      "confidence": 0.44583333333333336,
-      "channel": null,
-      "speaker": "B"
-    },
-    {
-      "text": "Tschüss. Ciao.",
-      "start": 3923300,
-      "end": 3923980,
-      "confidence": 0.2155,
-      "channel": null,
-      "speaker": "A"
-    },
-    {
-      "text": "Und nicht vergessen, falls ihr eine Förderung in Höhe von 50.000 Euro für euer Open Source Projekt haben wollt, bewerbt euch beim Media Tech Lab. Link in den Show Notes.",
-      "start": 3927096,
-      "end": 3934709,
-      "confidence": 0.7825333333333332,
-      "channel": null,
-      "speaker": "B"
-    }
-  ],
-  "confidence": 0.7425933190578164,
-  "audio_duration": 3934.0,
-  "webhook_status_code": null,
-  "webhook_auth": false,
-  "summary": null,
-  "auto_highlights_result": null,
-  "content_safety_labels": null,
-  "chapters": null,
-  "sentiment_analysis_results": null,
-  "entities": null
+    "language_code": "de",
+    "audio_url": "https://audio1.redcircle.com/episodes/4e4aac42-9156-408c-9805-2b0d14a968f2/stream.mp3",
+    "punctuate": true,
+    "format_text": true,
+    "dual_channel": false,
+    "webhook_url": null,
+    "webhook_auth_header_name": null,
+    "webhook_auth_header_value": null,
+    "audio_start_from": null,
+    "audio_end_at": null,
+    "word_boost": [],
+    "boost_param": null,
+    "filter_profanity": false,
+    "redact_pii": false,
+    "redact_pii_audio": false,
+    "redact_pii_policies": null,
+    "redact_pii_sub": null,
+    "speaker_labels": true,
+    "speakers_expected": 3,
+    "content_safety": false,
+    "content_safety_confidence": null,
+    "iab_categories": false,
+    "custom_spelling": null,
+    "disfluencies": false,
+    "sentiment_analysis": false,
+    "auto_chapters": false,
+    "entity_detection": false,
+    "summarization": false,
+    "summary_model": null,
+    "summary_type": null,
+    "auto_highlights": false,
+    "language_detection": false,
+    "speech_threshold": null,
+    "id": "62zbm6xevs-6982-41ee-b28e-ddc20031f8ff",
+    "status": "completed",
+    "error": null,
+    "utterances": [
+        {
+            "text": "Es gibt ja Projekte, da gibt es nur ganz wenige Personen, die Code merchen können. Bei uns ist es so, dass jeder Pull-Request, der einkommt, muss zwei Reviews haben von zwei anderen Personen und dann wird er gemerged. Man muss einfach nur andere zwei Personen finden, die derselben Meinung sind. Und niemand davon muss jetzt Angestellter der Firma sein. Es kann auch komplett die Community sein. Es können ja drei Personen aus der Community sein. Eine Person macht einen super Vorschlag. Dann find's gut, da ist es gemerged. Das meine ich mit Offenheit. Da gibt's nicht irgendwie die Firma, die das letzte Recht hat und dann noch irgendwie alles approven muss. Sowas haben wir nicht.",
+            "start": 2467,
+            "end": 35994,
+            "confidence": 0.7146782608695657,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Willkommen zu einer neuen Episode vom Engineering Kiosk, der Podcast rund um die Themen Engineering Kultur, Open Source, Menschen und Software Engineering. Wir haben Frank Kaliček, den Kopf hinter OwnCloud und Nextcloud zu Gast. 2010 hat Frank die Open Source Software OwnCloud als Alternative zu Dropbox gestartet. 2016 hat Frank mit dem Core-Team OwnCloud verlassen und seine ursprüngliche Software sowie seine Firma unter dem neuen Namen Nextcloud gefolgt. Als er 2018 diese Story auf der 4STEM-Konferenz als Vortrag erzählte, bekam er von der Open-Source-Community Standing Ovations. Wir sprachen mit Frank über das Forken einer Firma, GPL-basierte Software im Business, wie man eins der größten Open-Source-Projekte der Welt managt, sowie über Lobbyismus und Open-Source in der Politik. Viel Spaß!",
+            "start": 36014,
+            "end": 79176,
+            "confidence": 0.793203389830509,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Andi, begleite mich mal bitte kurz in meine Vergangenheit. Und zwar vor über zehn Jahren, das war sehr früh, als ich noch an der Uni gearbeitet habe und dort gelehrt habe, habe ich nach einer Lösung gesucht, wo ich meine Daten, Adressbuch, Kalender, Bilder und so weiter abspeichern kann, ohne dass ich das Ganze im Google-Universe mache. Und ich habe dann eine coole Software gefunden, namens OwnCloud damals. Ich war so überzeugt, nachdem ich die selbst gehostet habe, dass ich sogar meine Studenten damals überzeugt habe, zum Beispiel eine Bachelor-Arbeit zu machen und eine Erweiterung zu schreiben im Bereich Gesichtserkennung damals, weil ich meine Bilder eben auch erkennen wollte. Und ich bin heute nach über zehn Jahren immer noch bei dieser Software. Mittlerweile verwende ich NextCloud, den Fork von dem Ganzen. Und einige Jahre später, 2018, war ich mit dir auf der FOSDEM, falls du dich daran noch erinnern kannst. Und da waren wir beide bei einem Vortrag, der geheißen hat, Why I Forged My Own Project and My Own Company, von Frank Karliczek. Und das war wirklich eine Extrem coole Stimmung, wenn ich mich da zurück erinnere. Es war ein Riesenraum und Frank hat damals präsentiert, warum er OwnCloud geforkt hat und NextCloud gegründet hat und warum Open Source so wichtig ist. Und ich kann mich erinnern, der Abschluss war Standing Ovations von dem ganzen großen Raum und es war wirklich eine Stimmung, die ich bei der FOSDEM schon lange nicht mehr erlebt habe. Und wir haben es in der Tat geschafft, Frank zu uns in den Podcast zu bekommen. Und ich bin super happy. Willkommen, Frank, dass du dir die Zeit nimmst, über Open Source bei uns im Podcast zu sprechen.",
+            "start": 83784,
+            "end": 174714,
+            "confidence": 0.8223321554770323,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Ja, vielen Dank. Danke für die Einladung. Ich freue mich sehr auf den Austausch heute.",
+            "start": 174934,
+            "end": 179218,
+            "confidence": 0.6677333333333332,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Du bist seit den späten 90ern ein aktives Mitglied der Open Source Community. Soviel ich weiß, kommst du ursprünglich aus dem Bereich Linux, KDE, teilweise auch GNOME. Du warst für eine gewisse Zeit Vorstand und Vizepräsident sogar des KDE e.V. Ich wusste bis zur Vorbereitung noch nicht, dass KDE einen eigenen Verein hatte. Aber du hast auch opendesktop.org mitgegründet. Seitdem setzt du dich primär auch für Privatsphäre und die eigene Datenhoheit ein. Du bist unter anderem Mitautor des User Data Manifestos. Du bist regelmäßiger Speaker auf sehr, sehr großen Konferenzen und Universitäten wie der FOSDEM, der LinuxCon, aber auch dem MIT Harvard. dem zern und der eth zürich und ich glaube wo die meisten dich drunter kennen ist als gründer und ehemaliger hauptentwickler würde ich glaube ich auch sagen von der cloud software own cloud und natürlich dann jetzt auch seit 2016 der firma next cloud und dem projekt next cloud ist das korrekt habe ich irgendwas wichtiges vergessen.",
+            "start": 179258,
+            "end": 238479,
+            "confidence": 0.8102955974842768,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Nee, das ist, glaube ich, alles korrekt. Da fehlt auch nicht so viel. Natürlich gibt es noch andere Dinge, die ich sonst noch so mache, die ja im privaten Bereich sind, irgendwie so Fotografie und sowas, aber heute soll es ja um Software gehen.",
+            "start": 239802,
+            "end": 249485,
+            "confidence": 0.5171818181818181,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Ich vermute, du verwendest Nextcloud, um deine Bilder zu speichern. Natürlich.",
+            "start": 249525,
+            "end": 254027,
+            "confidence": 0.7070909090909091,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Immer wenn ich das CERN lese, frage ich mich, hattest du die Ehre, den Large Hadron Collider auch zu sehen? Kriegt man sowas zu sehen, wenn man da einen Vortrag hält?",
+            "start": 254067,
+            "end": 262410,
+            "confidence": 0.8293225806451612,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Dann habe ich tatsächlich sehen dürfen, speziell den Atlas-Detektor, was ja so der Kern davon ist. Das hat jetzt aber gar nicht so viel zu tun, weil ich da so ein ganz besonderer Ehrengast war. Das war ich da jetzt gar nicht, war da einer von vielen Speakern. Und das war auch eine Timingsache. Sondern man kann letztendlich das Experiment nur zu ganz, ganz bestimmten Zeiten besuchen, weil sonst, wenn es in Betrieb ist, dann strahlt das natürlich und es geht ansonsten nicht. Aber ich war zur richtigen Zeit am richtigen Ort, wo ich es besuchen durfte.",
+            "start": 262710,
+            "end": 289916,
+            "confidence": 0.6165051546391753,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Dann lasst uns mal kurz in das Thema von dieser ganzen Nextcloud und Oncloud einsteigen. Also vor über zehn Jahren, wo ich das verwendet habe, ihr habt probiert herauszufinden, wann das so war, weil es dürfte irgendwann 2011 gewesen sein. Da war das schon eine super Software und ich war super happy, diese zu finden. Was war denn dein Grundgedanke, deine Grundintention damals eigentlich, wie du OnCloud gegründet hast und entwickelt hast? Und wie hat sich denn das Ganze so entwickelt? Wo steht denn NextCloud heute? Und ist es noch die eigentliche Idee von damals? Oder hat sich da irgendwas geändert, was es heute ist und was es damals hätte sein sollen?",
+            "start": 289956,
+            "end": 326090,
+            "confidence": 0.8214642857142855,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Ich glaube, es kommt immer ein bisschen besser rüber, wenn man so sagt, nein, das war schon immer die einzige Vision und ich bin dem allen treu geblieben und ich bin als Kind schon aufgewacht und hatte schon die Idee im Kopf. Aber es war tatsächlich nicht ganz so. Und zwar, die Gründungsgeschichte ist tatsächlich ein bisschen anders. Und zwar, ich faktete ja gerade schon, dass ich lange in verschiedenen Open-Source-Projekten gearbeitet habe. Beispielsweise im KDE-Projekt war ich sehr aktiv. Und das war ja die Zeit Ende der 90er, Anfang 2000er, dann mittlere 2010er. Die Zeit, wo es gibt ja diesen Witz mit dem Linux-Desktop. Der ist dazu letztens entstanden. Weil davor hatte eigentlich Linux den Servermarkt total übernommen und dominiert in den 90er Jahren. Und da ist man davon ausgegangen, dass dasselbe mit dem Desktop-Markt auch passiert. Und da gab es ja Projekte wie Gnome und KDE, ich war in KDE aktiv. Und da gab es viele Fortschritte, es ist jedes Jahr besser geworden. Und eigentlich haben alle darauf gewartet, dass im nächsten Jahr das Jahr des Linux-Desktops kommt und alle verwenden dann nur Linux statt irgendwie Windows. Naja, das ist nicht ganz eingetreten, aber zu der Zeit war ich da involviert. Und man konnte dann so um 2007, 2008, 2009 beobachten, dass viele der Personen, die Linux und KDE benutzt haben auf ihrem Laptop, dann angefangen haben, Cloud-Services zu benutzen, wie zum Beispiel Gmail für Mail oder Dropbox für Dateiaustausch oder irgendwie Google-Kalender eben für Kalender und so weiter. Und ich habe mich dann immer so ein bisschen gewundert, weil Es ist zwar toll, dass wir dann alle noch hier schön für den Linux-Desktop kämpfen, aber man benutzt ja gar keine Linux-Applikation mehr, sondern benutzt ja eine Cloud-Applikation. Und dann ist es zwar schön, dass man kein Windows benutzt, aber dafür liegen die Daten dann eben in der proprietären Cloud von Google oder Microsoft oder Dropbox oder woanders. Deswegen bin ich zu dem Punkt gekommen, dass ich dachte, naja, für so eine richtig freie Open-Source-Experience braucht man eigentlich nicht nur ein freies Betriebssystem auf dem Laptop, sondern braucht eigentlich auch freie Cloud-Infrastruktur. Und da habe ich letztendlich dann OwnCloud. Das war tatsächlich, das weiß niemand mehr, aber OwnCloud die ersten Monate war ein offizielles KDE-Projekt. Also OwnCloud war quasi Teil von KDE. Also so habe ich das damals positioniert, weil ich dachte, naja, wir brauchen eben auch eine Cloud-Komponente zum freien Desktop. Und erst später hat sich das dann so ein bisschen davon entfernt. Und es ist eben auch wichtig, dass es auch mit Gnome und Windows und macOS funktioniert. Und heutzutage ist es ja eher eine generische Software, die jetzt gar nicht mehr so viel mit dem Linux-Desktop zu tun hat.",
+            "start": 326430,
+            "end": 480079,
+            "confidence": 0.7326431718061677,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Aber es war ursprünglich dann schon dafür gedacht, Dateien abzuspeichern?",
+            "start": 480327,
+            "end": 483690,
+            "confidence": 0.8651,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Genau, ich habe mit Dateien angefangen. Das war die Hauptanwendung. Also in Omcloud 1.0 habe ich damals noch alleine geschrieben, 100%. Da ist, glaube ich, nichts mehr von dem Code übrig, hoffe ich mal. Inzwischen haben wir bessere Entwickler als ich. Und es hat tatsächlich angefangen mit Dateiaustausch. Allerdings gab es eigentlich schon ab der Version 2, die wenige Monate danach kam, schon dieses Konzept der Apps, dass man letztendlich andere Komponenten entwickeln kann, die sich in das ganze System einhängen. Und da war Kalender einer der ersten. Dann kamen halt die an Contacts und dann später ja Office und Chat und so weiter dazu.",
+            "start": 483730,
+            "end": 519067,
+            "confidence": 0.7286666666666661,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Und was würdest du sagen, ist es dann heute, wenn du heute auf Nextcloud blickst?",
+            "start": 519386,
+            "end": 523688,
+            "confidence": 0.7640666666666668,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Also ich habe das ganz am Anfang hatte ich das Problem, dass es keinen richtigen Namen für diese Produktkategorie gibt in der Form. Ich hab das dann irgendwie Open Source Dropbox genannt. Das ist ein bisschen doof, wenn man sich über seinen Mitbewerber identifiziert. Da hat dann kurz danach zum Glück Gartner, Gartner ist ja so eine IT-Analystenfirma, die haben mir geholfen, weil die haben dann offiziell den FileSyncing-Share-Markt ins Leben gerufen. Also Dateiaustausch, typischerweise eben für Unternehmen, Und von da an war dann OnCloud und dann später NextCloud eben eine File-Sync-and-Share-Lösung oder Enterprise-File-Sync-and-Share. Allerdings sagte ich ja gerade schon, dass es für mich eigentlich klar war, dass die Dateien nur der erste Teil davon sein können, sondern es geht wirklich um alles. Nachrichten, Notizen, Chat-Videokonferenzen, Mail und so weiter. Und von Anfang an war das ja schon angelegt mit diesen Erweiterungen, dass man letztendlich die ganzen anderen Use Cases auch abdeckt. Das war auch nicht nur jetzt irgendwie meine Meinung, sondern die anderen am Markt haben das genauso gesehen. Microsoft hat letztendlich dann OneDrive auch entsprechend erweitert zu Microsoft 365 und Google hat ja inzwischen auch Google Workspace mit der Kombination dieser ganzen Tools. Da hatte ich dann wieder das Problem, dass ich keinen richtigen Namen für Nextcloud hatte. Da sagte ich auch, ja, sowas wie Microsoft 365. Aber zum Glück hat mir Gartner wieder geholfen, weil die haben das dann umgenannt in den Content Collaboration Platform Markt. Also offiziell sind wir jetzt eine Content Collaboration Platform Software. Da dachte ich erst so, oje, was ist denn das für ein Begriff? Wer hat sich denn sowas ausgedacht? Aber so schlecht ist es eigentlich gar nicht, weil erstmal Content, man merkt schon, es geht nicht nur um Dateien, sondern Content gibt ja auch Mails und Notizen und alles mögliche, was keine Dateien sind. Dann Collaboration, weil man kann natürlich sowas wie Nextcloud alleine verwenden, aber eigentlich ist es nur so richtig toll, wenn man eben mit anderen Personen zusammenarbeitet, kollaborativ zusammenarbeitet. Und der dritte Teil ist Plattform. Plattform heißt eben, dass es eine erweiterbare Lösung ist mit weiteren Konnektoren und Apps, die man oben drauf installieren kann. Und genau sowas haben wir ja auch. Und deswegen ist die Antwort auf deine Frage eine Content Collaboration Plattform.",
+            "start": 523727,
+            "end": 645958,
+            "confidence": 0.7160239361702126,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Am Anfang habt ihr euch mit Dropbox, ich sag mal, gebettelt, beziehungsweise wolltet als Konkurrent zu Dropbox antreten. Heutzutage targetet ihr eher Google Workspaces und Office 365 an, oder?",
+            "start": 645998,
+            "end": 659727,
+            "confidence": 0.7763793103448278,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Ja.",
+            "start": 660468,
+            "end": 660788,
+            "confidence": 0.528,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Also wenn man so das Produktportfolio einmal anhört, dann könnte man wirklich darauf schließen, okay, damit kann ich halt eine komplette Firma kollaborativ betreiben.",
+            "start": 660848,
+            "end": 669539,
+            "confidence": 0.8521666666666667,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Genau, ja.",
+            "start": 669559,
+            "end": 669979,
+            "confidence": 0.23299999999999998,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Jetzt ist ja seit der Gründung von OwnCloud eine ganze Menge passiert. 2016 habt ihr oder hast du OwnCloud weggeforkt hin zu NextCloud aufgrund von Meinungsverschiedenheit über den Kurs von OwnCloud. Wie war da so die ersten paar Wochen? Soviel ich weiß habt ihr auch als ihr den Fork erstellt habt. recht schnell Gas gegeben und sogar nach den ersten zwei, drei Wochen sogar das erste Release sogar rausgehauen von der neuen Software. Und das ist ja schon beeindruckend, weil von meiner Open-Source-Erfahrung ein Fork von solch großen und erfolgreichen Projekten schafft erst mal Unsicherheit in der Community. Unsicherheit so nach dem Motto, welches Projekt wird überleben? Wie hat sich so die erste Zeit nach dem Fork angefühlt, beziehungsweise wo habt ihr die großen Prioritäten dran gesetzt? Weil ihr hattet ja die tiefe Erfahrungen in der UMSUR-Szene?",
+            "start": 670700,
+            "end": 722744,
+            "confidence": 0.7767810218978105,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Als erstes war es sicherlich die intensivste Zeit in meinem Leben, was Arbeitslast und Anspannung letztendlich angeht. Aber auf der anderen Seite war es auch eine unglaublich tolle Zeit, weil es hat sich da letztendlich so ein großer Knoten gelöst, der eigentlich das Problem war. Weil es gibt ja einen Grund für den Fork. Und da möchte ich auch nochmal darauf hinweisen, dass ich es auch nicht alleine geforkt habe, sondern es waren letztendlich zwölf Kernpersonen, die mit mir zusammen damals OnCloud verlassen haben und NextCloud gegründet haben. Und dann natürlich die komplette Community. Es war ja wirklich ziemlich schnell eigentlich die komplette Community auf NextCloud-Seite.",
+            "start": 722784,
+            "end": 760073,
+            "confidence": 0.7534339622641516,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Wie viele Leute waren es vom Gesamtteam dann? Also wie viele waren da im gesamten OnCloud-Team? Waren die zwölf Leute dann eh fast 100 Prozent von dem Team oder in welcher Größenordnung sprechen wir da?",
+            "start": 760093,
+            "end": 770455,
+            "confidence": 0.7413714285714288,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Das ist gar nicht so einfach zu beantworten, weil einer der Gründe, warum der Fork passiert ist, dass eigentlich OwnCloud vor dem Aus stand. Da sind eine ganze Reihe von einfach Fehlern passiert mit Mitgründern von mir, Investoren, Missmanagement und anderen Dingen, dass letztendlich dann die Firma, die OwnCloud damals halt vor dem Aus stand. Das sind dann auch schon Leute dann auch schon gegangen oder gegangen worden. Also das war wirklich kurz vorm Ende eigentlich. Da gab es eine ganze Reihe Leute, die in den USA dann auch noch waren. Da hatte ich, ich weiß gar nicht, vielleicht diesen Drittel der Personen letztendlich, die sich dann entschlossen haben, das zu machen. Aber es waren ja nicht nur die Probleme innerhalb der Firma, sondern auch in der Community. Es gab da wirklich sehr, sehr viele Probleme und Konflikte mit der Open-Source-Community. Das beginnt einmal darin, dass unklar zu dem Zeitpunkt, also das wurde mir quasi aufgezwungen von dem Management und den Investoren, eben halt eine spezielle Enterprise, was man hatte, die nicht Open Source war, was einen Konflikt mit der Community erzeugt hat. Und es gab andere Dinge, dass es ganz, ganz aktive Kontributoren gab, die einfach von dem Unternehmen ausgebremst wurden. Beispielsweise die Android-App. Da gab es mehrere, insbesondere zwei Personen, die wirklich unglaublich viel aus der Community, viel beigetragen haben. Und die haben es einfach gar nicht, also die festangestellten Entwicklerinnen und Entwickler, haben einfach die Änderung nicht gemerged. Die haben einfach so kein Interesse daran gehabt. Community sind irgendwie Spinner im Internet, mir doch egal. Wir machen hier unsere eigene Roadmap und die tolle Community-Arbeit wurde überhaupt nicht gemerged. Und als dann der Fork entstand, dann ist wirklich wie ein Knoten geplatzt, weil dann konnten die plötzlich alle machen, was sie wollten. Und die ganzen Änderungen, die ganzen tollen Dinge, die sich aufgestaut haben über die Jahre, konnte man dann super schnell umsetzen. Also die Android-App zum Beispiel war nach kürzester Zeit unendlich viel besser als die OnCloud-App, weil die Community einfach, da wurden sozusagen die Handbremse gelöst und da konnte man alle konnten alle Gas geben. Und das war in anderen Bereichen genauso. Und ich selbst war auch überrascht, dass wir tatsächlich nach zwei Wochen schon das erste Release hatten. Aber ja, unsere Community war da so begeistert und hat gesagt, okay, jetzt können wir endlich mal machen, was wir wollen. Und kurz zu dieser Zeit sind ganz viele tolle Dinge passiert. Und dann war das erste Release schon da und dann ging es gerade so weiter.",
+            "start": 770775,
+            "end": 907074,
+            "confidence": 0.7446318289786225,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Ein Moment noch, bevor wir tiefer in das Interview eintauchen. In dieser Episode hören wir noch etwas darüber, wie schwierig es sein kann, Open Source mit kommerziellem Interesse zu verbinden. Deswegen freuen wir uns besonders, dass unser Episodensponsor es sich zur Aufgabe gemacht hat, dieses Problem anzugehen. Das Programm Media Tech Lab fördert innovative Open Source-Projekte für die Medienlandschaft mit 50.000 Euro. Wolfgang hat bereits letztes Jahr an diesem Programm teilgenommen. Erzählen wir mal bitte, wie das Ganze denn eigentlich abläuft.",
+            "start": 908590,
+            "end": 933380,
+            "confidence": 0.8276790123456792,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Klar, gemeinsam mit einem Programmierkollegen haben wir eine kurze Beschreibung von unserer Idee im Bereich Podcast Analytics eingereicht. Und das Schöne daran ist, man kann als Zweierteam oder als Einzelperson die Ideen umsetzen. Und wenn die Idee dann ausgewählt ist, erhält man großzügige 50.000 Euro Förderung für die Projektlaufzeit von nur sechs Monaten. Und was ich besonders geschätzt habe, ist auch die Flexibilität. Ihr könnt das Projekt entweder in Vollzeit oder so, wie wir es gemacht haben, in Teilzeit umsetzen. Zusätzlich zu den 50.000 Euro bekommt man auch Zugang zu Medienunternehmen über das umfangreiche Netzwerk des Media Labs. Denn euer Projekt soll nicht nur umgesetzt, sondern im Idealfall auch von der Medienlandschaft erfolgreich verwendet werden. Die langfristige Perspektive ist ebenso wichtig wie die Initialförderung. Wir bauen zum Beispiel gerade eine Firma um unser Open Source Projekt auf.",
+            "start": 933700,
+            "end": 975877,
+            "confidence": 0.8534306569343065,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Euer Projekt muss jedoch nicht im Bereich Podcasting sein. Eine Idee im Bereich Medienlandschaft kann eigentlich alles sein, zum Beispiel Video Streaming, Augmented und Mixed Reality, Semantic Tagging, AI für Audio Transcriptions oder, oder, oder. Falls euer Interesse geweckt ist und ihr mehr über dieses Förderprogramm erfahren wollt, besucht doch einfach mal die Webseite des Media Lab Bayern. Dort findet ihr auch Informationen über bereits abgeschlossene Projekte und alles, was ihr für die Einreichung benötigt. Die Bewerbungsphase läuft übrigens vom 1. September bis zum 13. Oktober. Also hopp hopp und ran mit deiner Idee. Links wie immer in den Shownotes. Werbung Ende. Das bringt mich zu der Frage, wie wichtig ist es nach deiner Erfahrung, dass das Management von einer Firma mit einem Open-Source-Produkt auch schon ein aktiver Teil der Open-Source-Community war? Weil es besteht ja schon immer irgendwie der Konflikt bezüglich Open-Source, Sustainable, Alles transparent versus Profitabilität, große Exits, Venture Capital und so weiter. Also ich meine, inwieweit findest du das essentiell, dass das Management von einer solchen Firma auch, ich sag mal, die Wurzeln von der Open-Source-Community mitträgt, versteht und vielleicht sogar Teil dessen Ganzen war?",
+            "start": 976397,
+            "end": 1046327,
+            "confidence": 0.8411861702127656,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Ja, also das ist natürlich essentiell. Also ich meine, man kann ja auch nicht irgendwie ein toller Koch sein, wenn man das Essen gar nicht mag. Oder man kann ja auch nicht irgendwie Chef von einer Autofirma sein, wenn man irgendwie keinen Führerschein hat. Oder irgendwie Chef von einem Fußballklub, wenn man Fußball nicht mag. Also natürlich muss man Open Source verstehen, wenn man eine Open Source Firma erfolgreich machen möchte. Aber das war teilweise leider zu wenig der Fall damals.",
+            "start": 1046747,
+            "end": 1070817,
+            "confidence": 0.7641975308641973,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Und auf was hast du dann besonders geachtet, wie du Nextcloud gegründet hast oder wie ihr das alle weggefolgt habt? Was war für euch wichtig? Was wollt ihr dir wirklich ändern? Oder was habt ihr da mitgenommen von der OnCloud-Seite, was unbedingt geändert werden hat müssen?",
+            "start": 1071437,
+            "end": 1086240,
+            "confidence": 0.8074130434782608,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Ja, wir haben uns damals zusammengesetzt, eine Woche, ganz viel diskutiert, aber auch gemacht und haben da eine ganze Reihe von Prinzipien ausgearbeitet, die uns wichtig waren, denen wir folgen wollten. reicht von das nächste 100% Open Source sein soll. Wir haben ja wie gesagt diesen Open Core, teilweise kommerzielle Komponenten und so weiter, das wollten wir einfach nicht mehr haben. Das ist hier nicht ganz wichtig.",
+            "start": 1086420,
+            "end": 1109747,
+            "confidence": 0.6804776119402984,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Wo war da eigentlich das große Problem? Also wo hat es da am meisten geknirscht, wenn du irgendwie zwei Lizenzen hast, eine Open-Source-Lizenz und eine Enterprise-Lizenz? Wo war da das größte Problem deiner Meinung nach?",
+            "start": 1110323,
+            "end": 1121371,
+            "confidence": 0.8346285714285714,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Ein Beispiel. Es gibt eine Möglichkeit, sich in OneCloud oder Nextcloud einzuloggen, verschiedene Protokolle zur Authentifizierung. Eines davon ist SAML, was oft verwendet wird. Das ist ein Protokoll, das wird auch ganz oft verwendet, so im universitären Umfeld, wo man sich mit einem Login an der Uni in verschiedene System einloggen kann. Da hat dann das Management damals, also nicht ich, beschlossen, dass eben diese Semmel-Authentifizierung, dass die quasi nicht Open Source sein soll, sondern die ist halt kommerziell und das bekommen nur bezahlende Kunden. Klar, mit der Denkweise, naja, da bekomme ich jetzt alle Unis der Welt dazu zu bezahlen, weil die brauchen das Feature. Erst mal im ersten Augenblick denkt man so, ja, macht ja irgendwie Sinn. Jetzt ist das natürlich in so einer Open-Source-Welt funktioniert die Dinge doch etwas anders. Beispielsweise haben da natürlich manche Unis und Personen angefangen eine Open-Source-Implementierung zu schreiben. Die haben gesagt, naja, dann habe ich keine Lust darauf, dafür zu bezahlen. Dann entwickle ich einfach diesen SAML-Connector einfach selbst. Und dann hat man die Situation als Unternehmen, dass man plötzlich mit der eigenen Community konkurriert. Weil eigentlich möchte man ja mit den großen Mitbewerbern Microsoft, Google und so weiter konkurrieren, aber plötzlich muss man sich mit der eigenen Community streiten. Er sagt, nein, diese Änderung akzeptieren wir jetzt aber nicht als Pull-Request im Code und wenn es ein extra Plugin ist, dann darfst du das auch nicht auf unsere offiziellen App-Store hochladen, dann musst du es in deinem eigenen privaten App-Store hochladen, wir bewerben das auch nicht. Und dann fängt halt die Konflikt an. Dann fängt man an, gegeneinander zu arbeiten. macht dann sich gegenseitig das Leben schwer und dann hat man auch keine Energie mehr, um es mit den eigentlichen großen Feinden wie Microsoft aufzunehmen.",
+            "start": 1121412,
+            "end": 1221780,
+            "confidence": 0.7206598639455783,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Das heißt, alles Open Source ist wirklich, würde ich mal sagen, nicht sehr üblich heutzutage. Also gerade wenn man so Startups und so anschaut, meistens ist es halt Open Core und dann gibt es eine zweite Lizenz. Welche Prinzipien habt ihr sonst noch aufgestellt?",
+            "start": 1221820,
+            "end": 1234724,
+            "confidence": 0.8432045454545455,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Ja, eben eine ganz große Community-Orientierung. Das heißt, dass die Software eben zu 100% im Offenen, auf GitHub in unserem Fall, könnte aber auch auf GitLab sein, aber im Offenen entwickelt wird, wo man eben nicht nur den Code sieht und die Bugs und die Feature Requests und die Roadmap, sondern eben auch die aktive Entwicklung mit Pull Requests und Reviews und Tests und so weiter letztendlich alles sehen kann und auch alle Personen mitmachen können. Da sind wirklich alle eingeladen und in dem Moment, wo ein Unternehmen anfängt, jetzt irgendwie in internen Repositories zu arbeiten oder mit irgendwelchen internen Roadmaps und sowas, kann man einfach die Community nicht mehr so richtig integrieren. Eine komplette Offenheit ist ein weiteres Ziel für uns gewesen.",
+            "start": 1234764,
+            "end": 1282337,
+            "confidence": 0.7603902439024391,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Ist das aufgegangen, das Ziel? Also habt ihr irgendwie gemerkt, dass es mehr EntwicklerInnen gibt, die mitmachen?",
+            "start": 1282377,
+            "end": 1288541,
+            "confidence": 0.8013529411764705,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Ja, also Nextcloud ist eines der größeren Open-Source-Projekte der Welt. Wir haben über 2.000 Personen, die nur im Core selbst mitarbeiten. Das sind diese Apps, die es noch gibt außenrum, noch nicht mal mitgezählt. Da gibt es ja nochmal irgendwie 300, glaube ich, momentan, über 300. Dann gibt es irgendwie Übersetzungen in 90 Sprachen, die alle in Finland Community gemacht werden. Ja, es ist absolut aufgegangen. So wird man letztendlich attraktiv für Kontributoren und so kann man plötzlich auch ganz viel bewegen, was man so allein als kleine Firma gar nicht könnte.",
+            "start": 1288841,
+            "end": 1320877,
+            "confidence": 0.7025978260869566,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Aber das Management dieser Community bedarf ja schon sehr, sehr viel Arbeit. Wie viele Leute arbeiten denn wirklich an der Codebase rund um Nextcloud, aber halt auch am Management der Community? Weil man sagt ja immer, Open Source ist vielleicht so eine Art kreatives Chaos. Aber wenn da natürlich auch Jobs von abhängen mit eurer Firma, die dann Professional Services darum anbietet, also geidet ihr die Community dann irgendwie? Weil irgendwer im Endeffekt hat Mergerechte. Und irgendwer sagt, okay, das kommt rein oder das kommt nicht. Also wie viele Leute kümmern sich da drum?",
+            "start": 1321077,
+            "end": 1356713,
+            "confidence": 0.8218617021276595,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Tja, da müssen wir jetzt erstmal definieren, was darum genau ist. Also erstmal zu den Merge-Rechten. Es gibt ja Projekte, da gibt es nur ganz wenige Personen, die Code mergen können. Also wirklich so Schlüssellöcher, wo man dann irgendwie durch muss. Bei uns ist es so, dass jeder Pull-Request, der einkommt, muss zwei Reviews haben von zwei anderen Personen und dann wird er gemerged. Es gibt nicht irgendwie eine spezielle Klasse von Personen, die nur die haben, die haben Merge-Rechte, sondern im Prinzip hat jeder Merge-Rechte. Man muss einfach nur andere zwei Personen finden, die derselben Meinung sind. Und niemand davon muss jetzt Angestellter der Firma sein. Es kann auch komplett die Community sein. Es können ja drei Personen aus der Community sein, eine Person macht einen super Vorschlag, zwei anderen finden es gut, dann ist es gemerged. Das meine ich mit Offenheit. Da gibt es nicht irgendwie die Firma, die das letzte Recht hat und dann auch irgendwie alles approven muss, sowas haben wir nicht.",
+            "start": 1357133,
+            "end": 1407435,
+            "confidence": 0.7257349397590362,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Das heißt aber, ihr habt auch alles in einem Repository und es gibt nur eine Version. Also ihr habt jetzt nicht eine Version, die intern irgendwie pflegt und eine für Enterprise-Kunden, sondern ihr habt wirklich alles eigentlich in einem Strang.",
+            "start": 1407955,
+            "end": 1421807,
+            "confidence": 0.8463749999999999,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Es gibt viele Repositories. Das liegt einfach daran, dass es eben für unterschiedliche Teile von xCloud, für die unterschiedlichen Apps. Aber es gibt nur einen Stand, ja. Genau, es gibt nur einen Stand und wir haben keine interne Version. Das Entwicklungsmodell ist eben so, dass es Master gibt. Das ist eben da, wo die Hauptentwicklung passiert. Und da gibt es dann Branches, die davon abgehen für die entsprechenden Stable-Versionen. Also momentan haben wir die Version 27 gelaunched, demnächst kommt die Version 28. Und da gibt es dann entsprechende Stable-Branches. Aber das ist alles. Wir haben keine internen Repositories. Also wir haben interne Repositories für irgendwelche confidential Daten von Kunden oder sowas, aber nicht für wirklichen Code.",
+            "start": 1421847,
+            "end": 1460077,
+            "confidence": 0.6643189655172416,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Ich sehe auch schon anhand der Branch Names, dass ihr einige Fixes anscheinend backportet in ältere Stable-Versionen.",
+            "start": 1460117,
+            "end": 1466583,
+            "confidence": 0.7941764705882354,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Genau.",
+            "start": 1466603,
+            "end": 1467164,
+            "confidence": 0.51,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Faszinierend.",
+            "start": 1467184,
+            "end": 1467644,
+            "confidence": 0.193,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Nee, das hat einfach damit zu tun, dass wir auf der einen Seite einen relativ schnellen Release-Zyklus haben. Also wir haben ungefähr drei Major-Versionen pro Jahr. Dieses Jahr werden es wahrscheinlich sogar vier werden. Also relativ schnell. Und da kann ich auch verstehen, dass es nicht alle BenutzerInnen, die jetzt irgendwelche großen Instanzen irgendwie betreiben, ständig die ganze Zeit updaten wollen. Deswegen supporten wir natürlich auch die älteren Versionen für eine gewisse Zeit. Deswegen werden auch kritische Bugfixes immer zurückportiert.",
+            "start": 1467953,
+            "end": 1495951,
+            "confidence": 0.7006624999999997,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Und unter welcher Lizenz läuft eigentlich das Ganze? Habt ihr nur eine Lizenz? Habt ihr mehrere Lizenzen?",
+            "start": 1496131,
+            "end": 1501194,
+            "confidence": 0.7878235294117647,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Eigentlich haben wir alles, was serverseitig läuft, ist AGPL V3 und alles, was kleinseitig läuft, also hier Mac, Windows, Linux, iOS, Android, ist GPL V3.",
+            "start": 1501234,
+            "end": 1511041,
+            "confidence": 0.7765599999999999,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Jetzt ist es natürlich bei GPL und eGPL noch freier eigentlich immer die Frage, ihr habt ja auch Kosten, ihr seid ein großes Team, ihr habt EntwicklerInnen angestellt, wie macht ihr denn dann am Ende überhaupt Geld mit GPL und eGPL?",
+            "start": 1511761,
+            "end": 1525850,
+            "confidence": 0.8015609756097558,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Das ist die Frage der Fragen. Ja, indem wir bestimmte Services anbieten für die großen Kunden. Man kann es immer ein bisschen vergleichen. Es ist nicht genau dasselbe, aber man kann es vergleichen mit beispielsweise Red Hat oder SUSE oder Canonical Ubuntu. Gut, Red Hat ist vielleicht ein schlechtes Beispiel. einiges gerade durcheinander geht, aber eigentlich ist es ja so, dass Red Hat erstmal eine Software ist, Red Hat Enterprise Linux, die man auch so verwenden kann, weil im Großen und Ganzen ist die nicht so viel anders wie Fedora oder auch CentOS. Es ist einfach eine Version, die ist halt zertifiziert, sag ich mal. Da gibt es einen ganz definierten Update-Zyklus, wann gibt es irgendwelche Patches, wie lange wird es supported, 5 Jahre oder vielleicht sogar 10 Jahre. Man kann dann auf dieser Version Certified Engineer werden. Es gibt dafür eine spezielle Dokumentation und Knowledge Base. Andere Software, wenn man jetzt irgendeine Oracle oder SAP drauf installieren möchte, ist es halt wie gesagt zertifiziert dafür. Dann gibt es da Security Zertifizierung von BSI oder sonstigen Dingen. Letztendlich ist es halt so eine enterprise-infizierte Version der Software, die eigentlich vom Code her gar nicht so anders ist als das, was jeder von der Webseite runterladen kann als Community. Aber es kommt eben mit so einigen Enterprise-Dingen außen rum, die ein großes Unternehmen braucht. Auch Support gehört zum Beispiel dazu, dass man eben auch direkt bei den Entwicklerinnen bei uns anrufen kann und dann im Prinzip Probleme schildern kann, die gefixt werden und so weiter und so fort. Hast du da ein paar Beispiele von.",
+            "start": 1525890,
+            "end": 1621135,
+            "confidence": 0.7275340909090913,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Kunden, weil du sagst auch große Kunden?",
+            "start": 1621175,
+            "end": 1623257,
+            "confidence": 0.8972857142857142,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Auf Nextcloud setzt. Der Rollout ist immer noch im Gange, aber die Endausbaustufe soll in 300.000 Personen sein. Dann gibt es die französische Regierung, die schwedische Regierung, die Europäische Kommission mit ähnlichen Projekten, eine ganze Reihe von Länderprojekten in Deutschland und europaweit, auch eine Reihe von Schulprojekten, dass ganze Bundesländer auf Nextcloud setzen für den schulischen Einsatz. Berlin zum Beispiel haben jetzt neulich gewonnen, dass alle Schulen Berlin Nextcloud verwenden. Dann gibt es eine ganze Reihe von Service-Providern, beispielsweise die Magenta Cloud. Der Deutschen Telekom ist ja vielleicht bekannt. Das ist Nextcloud unter einem anderen Namen. Das heißt, mit der Deutschen Telekom haben wir einen sehr guten Vertrag, dass sie Nextcloud nehmen und mit leichten Branding-Modifikationen als Magenta Cloud vermarkten. Dann gibt es eine ganze Reihe von Industrieunternehmen, also Mahle, Infineon, Siemens, auch ARD und ZDF, die Nextcloud verwenden. Und noch eine ganze Reihe mehr, wo wir die Namen sagen dürfen.",
+            "start": 1627823,
+            "end": 1687464,
+            "confidence": 0.7684238410596025,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Und es ist immer noch BHB und MySQL, seht ihr das richtig? Großteils zumindest. Weil es gibt ja immer so dieses BHB-Bashing, aber es ist ein gutes Beispiel für ein großes BHB-Projekt, was gut läuft.",
+            "start": 1687504,
+            "end": 1697834,
+            "confidence": 0.7735142857142857,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Also erstmal muss ich sagen, das ist tatsächlich sehr erstaunlich. Manchmal wunde ich mich selbst darüber. dass es eine Software ist, die daheim, auf dem Raspberry Pi, für die Familie funktioniert, aber dann auch für eine große Regierung oder die Telekom klaut. Und es ist wirklich, bis auf wenige Ausnahmen, derselbe Code. Das ist eigentlich irgendeine Sache, die laut Lehrbuch gar nicht funktionieren dürfte. Eigentlich, und das kann dir bei keiner, aber es ist derselbe Code, ja.",
+            "start": 1697854,
+            "end": 1722668,
+            "confidence": 0.6818961038961041,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Wenn jetzt 300.000 Leute in der Endausbau-Stufe auf einer Nextcloud-Instanz rumtournen, das wird ja kein 2-Gigabyte-RAM-Server sein unten drunter. Das wird ja schon ein bisschen was Größeres sein.",
+            "start": 1722968,
+            "end": 1735360,
+            "confidence": 0.6652500000000001,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Genau, das ist natürlich auch ein Cluster, also nicht nur eine Maschine, sondern Datenbank-Cluster, Storage-Cluster, Applikations-Server-Cluster, Redis-Cluster und so weiter. Natürlich klar. Und da ist auch tatsächlich PHP, klar, ist immer einfach darauf rumzuhacken, aber PHP hat tatsächlich einige ganz gute Vorteile bezüglich der Skalierbarkeit. Nämlich bei PHP ist es ja so, dass jeder Request eigentlich in Isolation bearbeitet wird. Kommt quasi rein zu dem eigenen Prozess, gefolgt oder ist schon davor schon da. Dann wird der Request ausgeführt und dann endet der und dann ist vorbei und dann kommt der nächste. Und es gibt kein Shared Memory und kein Shared State. Die einzelnen Requests, die können eigentlich gar nicht so richtig miteinander kommunizieren, außer über irgendwelche Hilfswerkzeuge. Und das hat eigentlich totale Vorteile bei der Skalierbarkeit. Deswegen kann man das einfach super auf irgendwie 100 Server parallel verteilen, weil Die haben sowieso nichts mit mir zu tun, die kann man eigentlich super horizontal skalieren. Also dann sozusagen die Features, die irgendwie Node oder Go oder sowas haben, mit irgendwie ganz tollem internen Multi-Threading und Shared Memory und sowas, sind manchmal gar nicht so gut. Manchmal ist es schöner, das einfach zu haben und man skaliert das besser.",
+            "start": 1735400,
+            "end": 1808817,
+            "confidence": 0.7278636363636362,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Das ist Balsam auf meinem PHP-Herz, Andi als großer Go-Fan.",
+            "start": 1808857,
+            "end": 1812219,
+            "confidence": 0.8531000000000001,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Aber das wusste ich jetzt nicht, mit wem von euch ich mich jetzt gerade verscherze.",
+            "start": 1813757,
+            "end": 1818020,
+            "confidence": 0.2638666666666667,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Nee, nee, nee, alles gut. Ich hab mit PHP gelernt und noch sehr viele Jahre mit PHP Geld verdient. Und ist immer noch eine super Sprache. Gar keine Frage, aber ich find's beachtlich. Ich find's wirklich spannend. Und es geht jetzt nicht mit PHP-Bashing oder ich schreib auch noch sehr viel PHP aktuell.",
+            "start": 1818040,
+            "end": 1833931,
+            "confidence": 0.8025471698113207,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Es gibt so was wie Wikipedia oder auch Facebook oder so was ist auch PHP, ne? Also, es ist nicht so, dass wir mit PHP keine große Software erschrecken können.",
+            "start": 1834051,
+            "end": 1842617,
+            "confidence": 0.5091333333333332,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Wenn wir jetzt schon bei Skalierung sind, die Services, die ihr anbietet, die skalieren ja wahrscheinlich weniger, weil ihr da wirklich Arbeitskraft auch mit reinbringen müsst jetzt bei den Services. Hat es schon den Fall gegeben, dass ihr Kunden ablehnen musstet, weil ihr einfach am Limit seid von Subscription, Support und ähnliche Dinge?",
+            "start": 1842777,
+            "end": 1859965,
+            "confidence": 0.7951132075471697,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Wir wachsen ja auch als Unternehmen ganz gut, sind so ein bisschen über 90 Personen momentan und sind, ich weiß gar nicht, wie viel wir gewachsen sind dieses Jahr, ich hab das schon wieder ganz deutlich, also wir stellen wirklich ständig neu ein und das klappt ganz gut, weil beim Hiring ist es eben so, dass es auch einer der vielen, vielen Vorteile unserer Open-Source-Strategie ist, dass es uns sehr, sehr leicht fällt, sehr, sehr gute Personen zu finden, weil ich kann einfach in unsere Community schauen und dann kann ich schauen, was sind hier so die Top-Personen und dann die ansprechend sagen, hey, das, was du als Hobby machst, möchtest du nicht dasselbe als Job machen? Und dann gelingt es uns tatsächlich ganz gut, gute Personen zu finden, sodass wir sehr gut wachsen können. Aber um auf die Frage noch kurz zurückzukommen, wir haben tatsächlich schon Kunden abgelehnt. Das hatte aber nichts damit zu tun, dass wir die kapazitätsmäßig nicht mehr verkraftet hätten, sondern das hat auch mit unseren Zielen zu tun, die ich am Anfang schon sagte. Wir möchten einfach für bestimmte Dinge, wie zum Beispiel Rüstungsindustrie und sowas, möchten wir nicht arbeiten und da legen wir dann Kunden ab.",
+            "start": 1861005,
+            "end": 1922185,
+            "confidence": 0.7193465346534652,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Im Podcast bringe ich auch öfter das Beispiel, dass zum Beispiel ich selbst nie für Hackler und Koch programmieren würde, weil Und kann ich kann ich sehr gut verstehen aber du sagtest gerade ihr seid gerade ein bisschen mehr als 90 personen und in der recherche habe ich mal ein paar zahlen gehört und zwar 2018 hattest du in dem vortrag gesagt ihr seid 38 personen 221 hattest du in dem podcast gesagt ihr seit 55 personen und ich habe gerade mir noch ein paar eingestellt und jetzt schon 90 also also respekt wie viele leute von den von den 90 also prozentual gesehen sind denn da wirklich softwareentwickler und wie viele leute sind dann ich sag mal vertrieb oder akquise oder projektmanager oder oder also alles darum was jetzt nicht pure softwareentwicklung.",
+            "start": 1922225,
+            "end": 1967207,
+            "confidence": 0.7702030075187961,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Ist Angefangen hat es wirklich mit einem sehr, sehr großen Anteil der Softwareentwickler und Entwicklerinnen. Am Anfang war tatsächlich bei uns das Marketingvertrieb noch sehr, sehr klein. Allerdings ist es tatsächlich ein Bereich, der bei uns jetzt eher wächst, weil die Software – ich will nicht sagen, die ist fertig, die ist natürlich auch nicht fertig – aber wir sind tatsächlich auf einem ziemlich guten Level, sodass man wirklich auch richtig in die Breite gehen kann im Vertrieb, sage ich mal. Und speziell Internationalisierung zum Beispiel. Deswegen investieren wir da tatsächlich gerade ein bisschen mehr. Ich glaube, wir sind um die 55 Personen im Engineering und die restlichen sind eben Marketing und Sales.",
+            "start": 1967247,
+            "end": 2005481,
+            "confidence": 0.697619469026549,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Ein großer Unterschied, wenn man mal nach OwnCloud versus NextCloud googelt, ist, dass ihr das Contributor License Agreement abgeschafft habt. Das bedeutet, wenn ich zu Nextcloud contributen möchte, trete ich nicht mein Intellectual Property an euch ab, sondern es ist mein Code, wenn man so möchte. Und soviel ich weiß, könnt ihr dann auch die Lizenz ohne meine Zustimmung, zumindest für diesen Code Part, auch nie wieder ändern. Ist das korrekt?",
+            "start": 2005521,
+            "end": 2033139,
+            "confidence": 0.7985352112676056,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Korrekt, ja.",
+            "start": 2033159,
+            "end": 2034540,
+            "confidence": 0.7155,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Habt ihr eine Veränderung oder einen Anstieg der Contributions gesehen, als ihr das CLA gedroppt habt?",
+            "start": 2034580,
+            "end": 2040525,
+            "confidence": 0.7970625,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Also wir haben das CLA tatsächlich gleichzeitig getroppt mit dem Launch von Nextcloud. Also von Anfang an. Deswegen kann ich es gar nicht so genau sagen. Ich sagte ja vorhin schon, dass da schon so ein bisschen ein Knoten geplatzt ist und dann die Community viel viel aktiver geworden ist. Da gehört bestimmt das CLA auch mit dazu. Das hat bestimmt auch andere Personen abgehalten. Warum muss ich jetzt einen komischen Vertrag unterschreiben? Ich will doch noch einen Bug fixen.",
+            "start": 2040845,
+            "end": 2063929,
+            "confidence": 0.6139999999999997,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Ich meine, da spielt ja noch eine ganz andere Sache mit, wie zum Beispiel, wenn ich jetzt während meiner Arbeitszeit was an Nextcloud fixen möchte, dann muss theoretisch mein Arbeitgeber sogar zustimmen, weil das ist ja das Intellectual Property, was ich für meinen Arbeitgeber erstelle und das wird dann an euch transferiert und so weiter und so fort. Also ich glaube schon, dass ihr da eine riesen Hürde weggenommen habt.",
+            "start": 2063969,
+            "end": 2081297,
+            "confidence": 0.7644571428571426,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Genau, also das ist eigentlich eine ganz komische Sache, die ja auch gar nicht so richtig natürlich ist. Also, wenn man das mit anderen Dingen vergleicht, Wikipedia zum Beispiel, das ist ja auch so, wenn ich jetzt an Wikipedia einen Artikel schreiben will, dann muss ich ja auch nur sagen, naja, das muss eben auch mit einer freien Creative Commons Lizenz verfügbar sein, aber ich müsste deswegen nicht mein komplettes Intellectual Property an irgendwie Wikimedia e.V. transferieren, das ist ja ganz seltsam. Und das ist bei Open Source ja auch so. Wahrscheinlich das erfolgreichste Open Source-Projekt überhaupt ist der Linux-Körner. Da ist es letztendlich ja auch so, jeder Entwicklerin, jeder Entwickler behält die Rechte an dem eigenen Code. Beim Linux-Körnern arbeiten ja ganz viele Unternehmen mit. Da hat dann auch irgendwie Microsoft und Intel und AMD auch, soweit ich mich das kopiere, einen Teil von ihrem Code. Es gibt also das Agreement, also eben alles muss unter einer einzigen Lizenz veröffentlicht werden. Bei den Lebenskörnern eben TPL-2, bei uns eben AGPL-3 und das ist alles. Dann können die Personen ihre Kopplheit behalten.",
+            "start": 2081597,
+            "end": 2139672,
+            "confidence": 0.7052692307692306,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Du hast völlig recht mit dem Linux-Kernel, doch ich frage mich immer bei dem Vergleich von anderen Open-Source-Projekten mit dem Linux-Kernel, ob dieser Vergleich immer so valide ist. Denn der Linux-Kernel, muss man ja schon sagen, die Domäne, zu der man da kontributiert, da braucht man sehr, sehr, sehr viel vorheriges Wissen über A-C-Programmierung oder jetzt teilweise auch Rust-Programmierung. sehr tiefes Low-Level-Wissen. Also, ich hab das Gefühl, die Hürde, um zum Linux-Körnel zu kontributen, ist open-source-technisch nicht höher, dennoch domänentechnisch sehr hoch. Wohingegen, wenn ich jetzt über Nextcloud spreche, und zumindest über den Nextcloud-Server oder über die Web-UI, das ist ja, ich sag mal, auch ein Großteil webentwicklungsnah. Was einen viel größeren Zugang hat durch YouTube und Bootcamps und was weiß der Geier nicht, oder?",
+            "start": 2140100,
+            "end": 2187578,
+            "confidence": 0.8285760000000002,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Ja, das ist sicherlich richtig. Also, klar, jetzt irgendwie in Lebenskörner einen Driver zu kontributieren oder sowas, klar, das ist jetzt nicht, das machen wir jetzt nicht mehr am Wochenende. Ja, wobei natürlich Nextcloud auch, ich will das jetzt nicht vergleichen, aber auch eine gewisse Komplexität hat. Na klar gibt es ein Web-Interface und da gibt es irgendwie JavaScript und HTML, aber, also, das ist eigentlich der spannende Bereich. Der Spannende ist da tatsächlich wirklich auch die Applikationslogik und da ist es leider inzwischen auch so, dass man das jetzt nicht so in fünf Minuten gelernt hat. Deswegen ist es für uns wichtig im Übrigen, dass es auch einen weichen Einstieg gibt in das Contributen, weil wir haben ja dieses Apps-System, also dieses Plugin-System, wo man Erweiterungen und Applikationen schreiben kann, die auf Nextcloud oben aufsetzen. Und das sind ja Dinge, die können die Personen erstmal in Isolation auch machen. Da kann man was rumbasteln, für sich selbst irgendwas programmieren, dann kann man das irgendwann mal in den App-Store publizieren, damit die restliche Welt es auch verwenden kann. Und erst nach einer gewissen Zeit fängt man dann wirklich an, am allgegenen Core von Nextcloud mitzumachen, weil das ist jetzt auch nicht so einfach, leider.",
+            "start": 2188138,
+            "end": 2247553,
+            "confidence": 0.6223725490196079,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Stellt ihr da dann auch gewisse Ressourcen zur Verfügung oder habt ihr da Leute, die konkret wirklich an dem Onboarding arbeiten, dass ihr Leute einfacher onboardet, dass Leute was entwickeln können? Also, um den ganzen Teil zu vereinfachen, weil klassische Firmen, die sagen halt, okay, wir sind open source, wenn jemand will und sich wirklich da einliest, dann darf er was contributen. Aber bei euch hat man ja schon das Gefühl, dass ihr das wollt und die Community natürlich auch irgendwie an Land zieht.",
+            "start": 2247593,
+            "end": 2274158,
+            "confidence": 0.7812738095238096,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Habt ihr das Gefühl? Das freut mich ja. Ja, weil es liegt uns tatsächlich am Herzen, definitiv. Wir haben tatsächlich sogar ein eigenes kleines Team aufgebaut letztes Jahr dazu, Develop Experience, wo wir ganz viele Dinge machen. Jetzt haben wir zum Beispiel in der letzten Version unsere Dokumentation der APIs komplett auf OpenAPI umgestellt, was das Ganze eben halt sehr viel einfacher zum Lesen macht. Deswegen haben wir auch jetzt SDKs zur Verfügung gestellt, die man nutzen kann, um mit den APIs zu interagieren. Dann haben wir eine ganze Reihe von Tutorials, Offline-Text-Tutorials oder Video-Tutorials auch ins Netz gestellt. wie man bestimmte Dinge machen kann, wie man bestimmte einfache Dinge, irgendwie ein Dashboard-Widget oder so ein Smart-Picker-Plugin oder sowas, ziemlich einfach in ein paar Minuten eigentlich programmieren kann. Dann haben wir unsere Konferenz ja regelmäßig im September. Vielleicht kann ich eine kurze Werbung machen. Ende September findet unsere Next-Level-Konferenz in Berlin statt, wo alle eingeladen sind. Das ist natürlich eine super Gelegenheit für Personen, um einfach so mit dem Kernteam in Verbindung zu kommen, sich auszutauschen, mal was zu lernen, was Neues zu machen. Da bieten wir auch teilweise Travel-Support an, dass wir Personen, Studenten, die sich das nicht leisten können, auch helfen bei der Anreise. Da haben wir auch ein spezielles Include-Diversity-Programm, wo wir auch speziell Personen aus unterrepräsentierten Gruppen finanziell unterstützen. Da bieten wir auch Mentoring und Internships an. Da habe ich bestimmt noch ganz viele Dinge vergessen. Also wir machen eine ganze Reihe von Dingen, um sozusagen den Einstieg für neue Personen in die Nextcloud-Welt zu vereinfachen. Es ist wirklich sinnvoll für das Unternehmen, aber auch eine Herzensangelegenheit für mich und das Kernteam, weil ich persönlich arbeite einfach super gerne an einem internationalen, diversen Team mit ganz vielen unterschiedlichen Persönlichkeiten zusammen. Es macht unglaublich viel Spaß und deswegen fördern wir es auch aktiv.",
+            "start": 2274318,
+            "end": 2383685,
+            "confidence": 0.7055359477124187,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Jetzt, wenn ihr so viel Zuspruch habt und wenn ich mich da zurück erinnere, zum Beispiel an meinen Studenten, der da ein Bachelor-Projekt gemacht hat, siehst du auch dieses Problem, dass es einfach Personen gibt, die mal reinspringen, ihr Problem lösen und dann sofort wieder weg sind? Also bei meinem Studenten zum Beispiel, der wollte eigentlich mein Problem lösen, weil ich wollte die Gesichtserkennung. Aber der hatte dann seine Note und war dann mehr oder weniger natürlich wieder weg. Das heißt, man verliert dann irgendwie wieder die Contributor. Wie geht ihr denn damit um oder seht ihr dieses Problem auch?",
+            "start": 2383985,
+            "end": 2413101,
+            "confidence": 0.8337699999999999,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Das ist eine super Frage und die ist noch nicht mal abgesprochen, glaube ich. Da kann ich gleich drauf einhaken, weil das ist eigentlich auch mit ein Grund, warum es eigentlich das Nextstart-Unternehmen überhaupt gibt. Das ist wirklich eine ganz, ganz wichtige Frage, weil in der Einladung wurde ja schon gesagt, dass sich in anderen Projekten viel aktiver, in KDE zum Beispiel, KDE ist ja auch ein sehr, sehr großes Open-Source-Projekt, wo es aber kein Unternehmen gibt. Wirklich ein reines Volontierprojekt, wo einfach Freiwillige zusammenkommen und die Software schreiben. Da gibt es den KDEV, der allerdings eine Rolle eher im Hintergrund einnimmt. Das ist eine Organisation, die hält halt das Trademark. Das muss halt irgendjemand machen. Der Organisation gehört eben die Domain. Es muss halt auch irgendjemand sein. Und dann gibt es auch ab und zu mal Spenden, die eingesammelt werden. Die werden dann halt verteilt. Das macht der e.V. Aber ansonsten ist es eine komplett los Organisation von Freiwilligen. Und da habe ich ja viele, viele Jahre mitgemacht und ich finde es auch ganz toll. Allerdings gab es da genau das Problem, was du sagtest. Es gibt junge Menschen, Studenten, die kommen, machen mit, ein Jahr, zwei Jahre vielleicht, und dann plötzlich finden sie sozusagen in Anführungszeiten einen richtigen Job, den sie auch brauchen, weil irgendwann muss man ja auch Geld verdienen, dann wird man auch die Familie gründen. Und dann sind die halt weg. Dann sind die einfach nicht mehr da. Und so ist es halt so, dass bei Projekten wie KD oder Gnome oder anderen gibt es einen ständigen Durchlauf. Da kommen neue Leute rein, fallen raus, kommen rein, fallen wieder raus. Und ich habe da viel, viel drüber nachgedacht. Ich habe da auch vor langer Zeit auch mal Vorträge dazu gehalten, was man eigentlich machen kann, dass die Leute ein bisschen mehr dabei bleiben können bei dem Open-Source-Thema. Und das ist eigentlich der einzige Grund, warum es Nextcloud GmbH überhaupt gibt, weil wir eben einfach eine Möglichkeit gesucht haben, Leute zu bezahlen, an Nextcloud zu arbeiten. Deswegen sind wir eben in der guten Situation, dass wir über 50 Personen jetzt bezahlen können, um ein Source-Code zu schreiben. Dafür brauchen wir eben das Geschäftsmittel, um das Geld zu bekommen dafür. Aber das ist der Zweck des Unternehmens, um sozusagen zusätzlich zur Community auch noch Vollzeitpersonen zu haben.",
+            "start": 2413121,
+            "end": 2532552,
+            "confidence": 0.718138461538461,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Ich glaube, sehr vielen Leuten, die das gerade hören und hier und da auch mal Open Source zu kontributen, geht gerade ein Riesenherz auf. Also vielen Dank dafür, dass du über 50 Leuten auf jeden Fall dies ermöglichst. Ich glaube, das sollte nicht standardmäßig so hingenommen werden.",
+            "start": 2532857,
+            "end": 2548314,
+            "confidence": 0.8275531914893618,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Danke.",
+            "start": 2549355,
+            "end": 2549556,
+            "confidence": 0.381,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Ist es natürlich so, es ist ein Open Source Projekt, es ist unter GPL, du hast gesagt ihr betreibt die Merge Rechte oder wie Changes gemerged werden auch sehr sehr offen, dass nur zwei Reviews da sein müssen. Wie sieht das denn mit einer klassischen Produktroadmap aus, denn Bei anderen Open-Source-Projekten, wie zum Beispiel Python, hat man eigentlich Guido von Rossum als Projektleiter. Bei Redis war das Salvatore Sanfilippo, also Antires. Und jede größere Open-Source-Community hat so ein, zwei Leute, die auf gut Deutsch den Hut aufhaben. Wie macht ihr Produktmanagement, beziehungsweise wie verändert sich klassisches Produktmanagement, Roadmap-Planning bei einer Open-Source-Firma so, wie ihr sie betreibt?",
+            "start": 2550236,
+            "end": 2595242,
+            "confidence": 0.8278962264150943,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Also Andi will eigentlich wissen, ob du der Kopf bist da oben, oder? Habe ich das richtig verstanden?",
+            "start": 2595502,
+            "end": 2601327,
+            "confidence": 0.7504444444444445,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Erstmal verändert sich das ständig. Wir haben da auch schon einige Iterationen durchgemacht über die Jahre. Das hat auch mit dem Wachstum der Firma natürlich auch zu tun. Man arbeitet halt anders, wenn man größer ist, als wenn man kleiner ist. Also das Erste, was ich dazu sagen möchte, ist, dass es natürlich jetzt keine Roadmap für unsere Community gibt. Das heißt, unsere Community-Personen machen natürlich das, was sie wollen. Das sind ja alles Freiwillige. Die würden jetzt nicht, wenn ich jetzt sage, hey, du programmier mal das und das Feature, dann würden die sagen, ja warum, ich bin doch hier aus Spaß hier, ich mach, was ich will. Das heißt, diese 2000 Personen plus die App-Entwickler, ich weiß gar nicht, wie viele es insgesamt sind, aber wirklich die große Community, die macht irgendwie, was sie will. Ganz viele davon machen eben ein Feature, was sie selbst benutzen wollen. Das höre ich ganz oft, wenn ich mit den Personen rede, dass sie sowas halt selbst haben wollen. Oder es gibt irgendwie einen Bug, den sie halt haben, oder möchten irgendwas lernen. Also komplett aus eigener Motivation. Das heißt, da gibt es keine Roadmap. Für die Personen, die jetzt im Unternehmen arbeiten, da ist es natürlich schon so, dass die in gewissem Maße eine Roadmap haben. Das liegt daran, dass wir halt ein Stück weit tatsächlich schon auch unsere Kunden glücklich machen müssen. Das ist so. Das heißt, wenn ich jetzt nur, weiß ich nicht, Nextinvasion von Nextcloud hat irgendwie Tetris eingebaut, dann werden würde irgendwie unsere Kunden sagen, was ist denn das für ein Quatsch? Also da müssen wir schon ein bisschen gucken, dass wir auch das entwickeln, was die auch irgendwie haben wollen. Und auch wenn es dann irgendwelche Support-Tickets gibt und irgendwas funktioniert nicht oder die Performance stimmt irgendwo nicht, dann müssen wir halt daran und daran arbeiten. Da gehen wir so vor, dass wir eine Gruppe von Personen haben bei uns intern, das sind dann Vertreter aus dem Sales, der weiß, was die Kunden wollen, Vertreter aus dem Marketing, Vertreter aus dem Support, Vertreter aus dem UI-Design-Bereich. Ich bin dann auch dabei und wir kommen regelmäßig zusammen. verschiedene Bereiche von Nextcloud, wo wir uns überlegen, in welche Richtung soll das denn gehen? Wollen wir ein bisschen mehr in die Richtung entwickeln, ein bisschen mehr in die Richtung entwickeln? Und das sind dann schon Dinge, die wir dann versuchen als Unternehmen umzusetzen. Auch nicht zu 100 Prozent. Also die Leute haben auch immer noch dezentral quasi die Freiheit zu entwickeln, was sie so wollen. Aber da gibt es quasi schon so eine gewisse Steuerung und da kann ich jetzt nicht abstreiten, tatsächlich schon auch sehr opinionated und ich habe da tatsächlich schon auch meine eigene Aber nicht alleine, sondern mit anderen Personen.",
+            "start": 2601367,
+            "end": 2741897,
+            "confidence": 0.6886314655172417,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Also, ich mein, opinionate zu sein ist ja nicht schlecht. Ich glaub, Ruby oder beziehungsweise Ruby on Rails wurde da so groß, ne? Oder Go ist ja auch sehr opinionated. Also, ich glaub, das ist gar nichts Schlechtes. Aber kann ich das so verstehen, dass ihr eigentlich, ich sag mal, so die Protection-Ebene für die Prioritäten bei Open-Source-Arbeit seid? Denn die Prioritäten bei Open-Source-Arbeit, die sind ja schon ab und zu mal ... Wie soll ich das jetzt nennen? Sehr unterschiedlich. Also, ich hab zum Beispiel sehr viel Spaß, irgendwelche Funktionen zu refactoren, ohne ein neues Feature zu adden. Und auf der anderen Seite können aber alle User theoretisch sich über einen sehr kritischen Bug beschweren. Also, ihr sorgt dann schon intern dafür, dass es da so eine Art Protection Layer gibt, dass ich das weiter refactoren kann, weil ich das in der Freizeit mach. Aber wenn es jetzt wirklich kritische Bugs gibt, dann schaut ihr auch da mal drauf wegen der generellen User Experience. Ist das richtig?",
+            "start": 2741957,
+            "end": 2792007,
+            "confidence": 0.7947678571428569,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Protection Layer ... Ich weiß nicht, wie ich's so nennen würde. Aber wir müssen natürlich, weil wir Kunden haben, die uns bezahlen, irgendwie darauf achten, dass das Produkt funktioniert. Also im Sinne von, die Usability ist okay, die Performance ist okay, die Bugzahl ist gering, die Features sind ungefähr so, wie die Personen sich das auch so vorstellen, die das benutzen, also mitwettbewerbsfähig. Accessibility ist da, Security ist da und so weiter. Das heißt, wir müssen natürlich als Organisation dafür sorgen, dass das Produkt funktionsfähig ist.",
+            "start": 2792247,
+            "end": 2827253,
+            "confidence": 0.7480116279069766,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Vielleicht ist Qualitätssicherung ein besserer Begriff oder ähnliches. Protection gehört sich in der Tat ein bisschen schlimm an, gebe ich zu.",
+            "start": 2827273,
+            "end": 2834475,
+            "confidence": 0.7202857142857142,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Qualitätssicherung gehört auch dazu, genau. Also wenn man da eben sagt, es ist ein Balance. Ihr kommt ja auch zur Softwareentwicklung. Die einen Leute sagen, wir müssen jetzt irgendwie hier die supercoolen Features machen. Die anderen sagen, wir müssen nur Bugfixen machen. Die anderen sagen, wir haben nur Performance, wir müssen nur refactoren. Und natürlich liegt die Wahrheit eben in der Mitte.",
+            "start": 2834515,
+            "end": 2851260,
+            "confidence": 0.5495967741935485,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Jetzt hast du ja schon erwähnt, wer hauptsächlich eure Kunden sind und was euer Business-Modell ist. Ganz viele andere Firmen haben ja jetzt zusätzlich eingeführt, Elasticsearch ganz voran oder kürzlich, dass ihre Produkte nicht mehr gehostet werden, weil sie dadurch einen Revenue-Stream verlieren, wenn andere damit Geld machen. EWS bei Elasticsearch war ja der große Konflikt. Jetzt ist bei euch natürlich mit AGBL eigentlich keine Möglichkeit, da irgendwas einzuschränken. Und es gibt ja auch ganz viele Hosting-Angebote. Fleckt ihr da irgendwelche Partnerschaften mit denen? Siehst du das kritisch, dass jetzt andere mit eurer Software in dem Sinne Geld machen und das weiterverkaufen? Oder wie blickst du auf die Dinge?",
+            "start": 2851500,
+            "end": 2892398,
+            "confidence": 0.7996422018348621,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Ich denke, es ist immer schlecht, mit so einer Neidbrille auf Dinge zu schauen, denke ich. Natürlich stört es mich überhaupt gar nicht, dass Personen Geld mit Nextcloud verdienen. Das ist doch super. Das ist ja total legitim. Und ehrlich gesagt habe ich das Ganze ja damals auch gegründet, weil ich wollte, dass ganz viele Personen auf der ganzen Welt die Software einfach frei und offen dezentral betreiben können. Also dass das viel passiert, ist ja fantastisch. Und wenn da jemand Geld nicht verdienen will, ist auch gut. Was natürlich mir schon wichtig ist, dass wir als Next hat auch genug Geld verdienen, dass wir eben die Gelder bezahlen können und vielleicht auch wachsen können. Aber das ist ja gegeben. Das heißt, wir haben Partnerschaften mit bestimmten Providern. Sagte ich ja schon, wie im Agenda Cloud, der Telekom, mit IONOS, OVH in Frankreich und so weiter. Das sind typischerweise eben so die etwas größeren, professionelleren Provider. Mit denen haben wir Verträge, mit denen arbeiten wir zusammen und so verdienen wir unser Geld. Und dass es noch ganz, ganz viele, sage ich jetzt mal so, kleinere, wilde Community-Betreiber gibt, die auch Geld verdienen, ist doch super. Ist gar kein Problem damit.",
+            "start": 2892619,
+            "end": 2959873,
+            "confidence": 0.6928300000000007,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Das heißt, ihr bekommt von den Leuten auch teilweise wieder Contributions zurück, wenn es schon kein Geld ist, oder kommt da eher weniger zurück?",
+            "start": 2959913,
+            "end": 2969019,
+            "confidence": 0.8555416666666668,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Nee, das ist tatsächlich weniger. Also ich habe das Gefühl, dass die Personen, die dann irgendwie so ein Fünf-Personen-Service-Provider, Nextcloud für irgendeine Zielgruppe, das sind meistens nicht so die Coder, die dann irgendwas zurückkontributieren. Da kommt tatsächlich nicht viel. Aber man muss ja auch nicht, machen dafür andere.",
+            "start": 2969199,
+            "end": 2984404,
+            "confidence": 0.643125,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Wie viele eurer Kunden kontributieren denn code-technisch zurück?",
+            "start": 2984424,
+            "end": 2988805,
+            "confidence": 0.7150000000000001,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Kann ich gar nicht so richtig sagen. Es gibt tatsächlich einige der Größeren, die das tun. Ich glaube nicht, dass ich jetzt irgendwelche NDAs gerade verletze, aber beispielsweise die Deutsche Telekom macht das. Die haben ein eigenes Entwicklerteam, was quasi dann Ihre Weltentwicklung, die Sie haben wollen, ganz normal bei uns auf GitHub einstellt, was ein ganz normales Produkt einfließt, was wirklich ganz, ganz fantastisch ist. Und andere, größere gibt es auch. Wo es wenig passiert, ist tatsächlich im universitären Umfeld. Da habe ich mich gerade gefreut, als du gesagt hast, dass es ein Student von dir war. Das höre ich tatsächlich überraschend wenig. Ich hätte eigentlich gedacht, dass Uni es total prädestiniert ist, irgendwelche Next-Level-Apps zu schreiben, aber das gibt es gar nicht so oft.",
+            "start": 2988825,
+            "end": 3028997,
+            "confidence": 0.736507936507936,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Ich glaube, es waren sogar zwei Bachelorarbeiten, wenn ich das richtig im Kopf habe. Aber das Problem ist natürlich, dass das immer sehr kurze Laufzeit ist und wenn die Leute dann nicht absolut motiviert sind von sich aus, dann stirbt natürlich so eine App wieder sehr schnell. Das ist halt der große Nachteil, wenn es jetzt Studierende sind. Aber ich weiß eben auch, dass sehr viele Unis Nextcloud verwenden und eigentlich, die könnten natürlich zurückkontributieren. Das wäre eigentlich eine gute Möglichkeit. Aber die Ressourcen als Insider an der Uni, weiß ich das natürlich auch, sind natürlich immer begrenzt und eigentlich lebt sowas nur von privater Motivation, wenn sich irgendwer berufen fühlt, da mitzuwirken. Leider.",
+            "start": 3029157,
+            "end": 3067571,
+            "confidence": 0.8118859649122805,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Jetzt hattest du gerade schon ein paar größere Provider. Angesprochen, OVH in Frankreich ist zum Beispiel meines Wissens nach sehr sehr bekannt, um Datenschutzrichtlinien zu respektieren und das geht ja in dieselbe Schiene wie Nextcloud auch. Inwieweit beobachtet ihr denn die ganzen Bewegungen auf politischer Ebene von der EU oder jetzt hier auch mit diesem großen Projekt, wie nennt sich es, GaiaX glaube ich. So seid ihr seid ihr da vorne mit dabei und und ich sag sogar vielleicht sogar teil der gespräche oder kommen die leute auf euch zu nachdem sie gesehen haben oh das ist ja ein.",
+            "start": 3067992,
+            "end": 3101719,
+            "confidence": 0.7940707070707073,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Top gitter projekt also, Ja, tatsächlich. Also speziell ich bin da tatsächlich sehr viel involviert in viele, viele Gespräche, was irgendwie mich immer wieder so ein bisschen wundert und ich weiß immer noch gar nicht, ob ich es so gut finde, weil eigentlich, ich komme ja auch aus der Softwareentwicklung und ich habe mich eigentlich jetzt nicht dazu entschlossen, irgendwann mal Politik zu machen oder so ein der Info zu stoßen, aber es ist tatsächlich so, dass ich viele, viele Gespräche führe mit vielen europäischen Regierungen, mit der Europäischen Kommission, mit vielen verschiedenen Lobbyorganisationen, die sich für freie Daten-Obersource einsetzen, da bin ich tatsächlich sehr involviert. Also GAIA-X hatte ich schon angesprochen, da waren wir tatsächlich von Anfang an dabei, alle drei Gründungsmitglieder, aber auch andere Aktuelle Themen für Digital Markets Act, Digital Service Act, ganz aktuelle Gesetzgebung der EU, momentan ganz heiß diskutiert, Cyber Resilience Act oder auch der AI Act, also da sind wir oder ich speziell tatsächlich sehr viel tiefer involviert, als ich das eigentlich manchmal möchte.",
+            "start": 3101739,
+            "end": 3161828,
+            "confidence": 0.7032235294117642,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Jetzt hattest du natürlich auch schon Lobbyismus ein bisschen angesprochen und du hattest auch schon Behörden als Kunden angesprochen. Ich kenne das nur aus meinem beruflichen Umfeld, wenn man ziemlich viel mit internationalen Behörden zu tun hat, dann haben die oft Anforderungen, wie in Amerika zum Beispiel FedRAMP oder spezielle Verschlüsselungen wie vom NIST oder ähnliches. Das gilt jetzt natürlich nur speziell für amerikanische Unternehmen. Ist das denn auch der Fall? Und ich glaube, du hattest vorhin auch eine BSI-Zertifizierung angesprochen. Ist das dann bei den ganzen Ländern und Behörden wirklich der Fall, dass ihr dann diese Zertifizierungen auch liefern müsst, weil eine Zertifizierung kostet natürlich auch unglaublich viel Geld und das Produkt muss gegebenenfalls so angepasst werden und und und. Also ich meine das sind ja schon teilweise sehr sehr große Investments.",
+            "start": 3162422,
+            "end": 3204687,
+            "confidence": 0.7682406015037593,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Ja ist tatsächlich so. Also da gibt es eine ganze Reihe von Anforderungen, die wir da liefern müssen. Ja, sowas wie BSI Grundschutz zum Beispiel, das hat Dinge mit bestimmten Basisanforderungen abgedeckt für den sicheren Betrieb von so einer Software wie Nextcloud. Da gehört aber auch sowas wie die BitV-Zertifizierung dazu für Barrierefreiheit und ja, es gibt eine ganze Reihe weiterer. Und wie gesagt, teilweise in unterschiedlichen Ländern hast du es auch nicht einfacher gemacht. Speziell auch für kleinere Ressource-Unternehmen wie wir, muss man auch sagen. Also Zertifizierung ist natürlich für Google und Microsoft Peanuts. Aber ja, so jemand wie Nextcloud, da sitzen auch schon einige Personen dann auch mal so ein paar Monate dran.",
+            "start": 3204967,
+            "end": 3243287,
+            "confidence": 0.6667652173913045,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Gibt es da für Open Source Projekte Support von der Free Software Foundation oder von größeren Unternehmen, die sich in dem Bereich vielleicht auch besser auskennen, weil sie zum Beispiel wirklich aktiv in den Aufwänden der EU involviert sind?",
+            "start": 3243307,
+            "end": 3256736,
+            "confidence": 0.820153846153846,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Ja, also die Free Software Foundation, mit der arbeiten wir zwar schon sehr eng zusammen, aber das ist ja auch Eine sehr kleine Organisation, die sich hauptsächlich um Lobbying-Themen kümmert. Finanziell können die leider nicht viel ausrichten. Aber es ist dann tatsächlich so, dass wir das von unseren Kunden dann auch teilweise bezahlen lassen. Wenn wir Behörden dann extra einsetzen wollen, dann kostet es eben das und das extra, damit wir die Zertifizierung machen können.",
+            "start": 3257276,
+            "end": 3280260,
+            "confidence": 0.6946666666666668,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Wie schafft ihr das eigentlich, gegen Microsoft und Google anzukommen? Weil die haben hunderte Lobbyisten und können sich, wie du gesagt hast, viel, viel mehr leisten, wenn es um irgendwelche Zertifizierungen geht oder Ähnliches oder einfach ein Sales-Team, ein riesengroßes Sales-Team haben. Also wie schafft ihr das überhaupt, da irgendwie durchzukommen?",
+            "start": 3280520,
+            "end": 3299232,
+            "confidence": 0.7935098039215687,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Ich schaffe das auch nicht. Das ist nicht so einfach. Also ich meine, es gibt eben einige Dinge, die fundamental besser sind an Nextcloud. Das muss man nämlich trotzdem kommunizieren, damit die Leute das verstehen. Zum Beispiel ist es eben so, dass Nextcloud ja ein Software ist und nicht ein Service. Einfach Software, die man nehmen kann und die man so installieren und betreiben kann, wie man das möchte. Beispielsweise betreibt ja der Bund ein eigenes Netzwerk, das Internet des Bundes. Also ein Netzwerk mit vielen verschiedenen Rechenzentren, was nicht mit dem Internet verbunden ist. Ein komplettes internes Netzwerk. Also da kann man Nextcloud oder ist auch Nextcloud im Betrieb, eben komplett intern und abgeschottet vom Internet. Sowas würde natürlich mit Google und mit Microsoft überhaupt gar nicht funktionieren, weil die Software gibt es eben nur aus der amerikanischen Cloud. Wenn man jetzt sagt, ich hätte jetzt hier irgendwie gerne eine Videokonferenz-Lösung, wo verschiedene Botschaften international über VPN-Strecken miteinander Videokonferenz machen können, Ja, dann gehe ich eben nur mit Nextcloud und nicht mit Teams oder so. Also haben wir einige ganz fundamentale Vorteile einfach. Natürlich hast du trotzdem recht, es ist die große Herausforderung, das auch zu erklären, weil es natürlich auch manche Politiker und Entscheider gibt, die sagen, ja, tut schon, passt schon, aber ist nicht so wichtig.",
+            "start": 3299452,
+            "end": 3372874,
+            "confidence": 0.7246073059360729,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Inwieweit beobachtest du eine Veränderung in eurem Vertrieb, beziehungsweise inwieweit steigt die Akzeptanz bei Firmen, GPL-basierte Software einzusetzen und auch das, was ihr im Professional Service Bereich dann für die Kunden umsetzt, dass dies dann wieder auch Open Source wird? Also wird das mit der Zeit besser oder ist es immer noch so schwierig wie 2005?",
+            "start": 3373254,
+            "end": 3395150,
+            "confidence": 0.8422499999999999,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Ich habe das Gefühl, dass es besser wird. Wir hatten noch irgendwie vor zehn Jahren viel häufiger die Diskussion, nice doch Open Source, warum kostet das jetzt Geld? Das hören wir jetzt immer weniger. Oder auch so Dinge wie, oh, GPL, das ist ja viral, das irgendwie infiziert jetzt meine Organisation und dann zwei Stunden später muss ich dann irgendwie, keine Ahnung, unsere Steuerdaten offenlegen oder irgendwie so ein Quatsch. Und das ist tatsächlich, kommt immer weniger vor. Die Leute verstehen heutzutage, dass Open Source eigentlich Sicherheit bringt und nicht wegnimmt. Und die verstehen auch, dass man, ja, natürlich Open Source aus dem Internet runterladen kann, einfach betreiben kann, wenn man das möchte. Wenn man aber, ja, Support und gewisse professionelle Services außenrum haben möchte, dann eben sich eine Organisation sucht wie Nextcloud oder oder eben Red Hat oder MariaDB oder wie auch immer, die dazu beauftragt, die Scription abschließt und dann hat man eben eine professionelle Enterprise-Software, die auch sicher ist. Und das wird alles definitiv besser. Also besteht Hoffnung.",
+            "start": 3395160,
+            "end": 3453630,
+            "confidence": 0.7075964912280704,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Bei der Vorbereitung zu diesem Podcast kam mir natürlich auch das Projekt der Stadt München in den Kopf. Damals, wo sie, glaube ich, auf Linux umstellen wollten mit LibreOffice, ist das, glaube ich, richtig?",
+            "start": 3454211,
+            "end": 3466006,
+            "confidence": 0.8431176470588235,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Ja.",
+            "start": 3466686,
+            "end": 3467287,
+            "confidence": 0.476,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Wo sie dann aber, glaube ich, nach zwei, drei Jahren wieder zurückgerollt sind. Und da kam mir auch die Überlegung, Wenn du jetzt sagst, es wird einfacher beim Verkauf von Open-Source-Software, beziehungsweise bei den Services, die da drum sind, dass ihr ja schon in irgendeiner Art und Weise Pioniersarbeit macht, meines Erachtens nach.",
+            "start": 3467307,
+            "end": 3485037,
+            "confidence": 0.8263773584905658,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Ja, ihr habt ja WMS definiert, ja klar. Also natürlich genauso, was wir jetzt machen, hat auch vorher noch nie jemand gemacht. Aber wie du schon sagtest, gab es natürlich auch andere Versuche mit Open-Source, bestimmte Dinge in der Verwaltung und in anderen Bereichen halt zu modernisieren, wie München. was ein Fell geschlagen ist. Aber München war ja ein Projekt, da hat man eigentlich angefangen, die Arbeitsplätze zu migrieren. Und um die Serverinfrastruktur wollte man sich später kümmern. durch den gegengesetzten Ansatz. Also wenn man dann letztendlich ihr Windows-Desktop und ihr Microsoft-Office und ihr Outlook und alles wegnimmt und dann ihr die Linux-Software installiert und das letztendlich auf allen Arbeitsplätzen, dann gibt es da natürlich schon eine gewisse, ja, muss man da bestimmte Widerstände einreißen, weil die Leute mögen erstmal nicht Veränderungen. Und wenn es anders aussieht, dann ist es erstmal komisch und mögen sie nicht. Ich kann euch eine kleine Geschichte erzählen aus meiner Zeit aus KDE. Da sollte ja auch zum Beispiel KDE verwendet werden für den Linux-Desktop in der Münchner Verwaltung. Und da gab es dann irgendwann einen Request von uns, dass wir doch unsere Ordner-Icons, die aus irgendwelchen Gründen bei KDE blau sind und unter Windows gelb, eben von Blau zu Gelb ändern sollten, weil die Personen sonst ihre Orte nicht finden. Es sieht ein bisschen anders aus und schon ist es irgendwie verwirrend. Und bei den jetzigen Projekten in der Verwaltung, wo wir auch involviert sind, werden die Clients im ersten Schritt gar nicht ausgetauscht. Die Leute haben weiterhin ihr Windows oder ihr Smartphone oder ihr Tablet oder irgendwas und es wird letztendlich das Backend ausgetauscht. Und da ist es ja auch so, dass das Backend sich ja so ändert, weil Microsoft möchte ja auch gar kein selbst gehostetes Outlook oder selbst gehostetes Exchange oder Sharepoint oder Windows Server, das stirbt ja alles. Und das geht ja alles zu Microsoft 3.5 und seitdem in die Cloud. Das heißt, es verändert sich sowieso. Und wenn es sich sowieso verändert, dann kann man es ja auch in die Open Source Cloud tun. Und das ist tatsächlich dann, da machen wir einige Projekte, die sind auch alle erfolgreich momentan. Und da sind die Widerstände viel, viel geringer, als es eben damals in München war.",
+            "start": 3485377,
+            "end": 3606207,
+            "confidence": 0.717688829787234,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Jetzt bist du ja sehr stark verankert in der ganzen Open-Source-Szene mit KDE und Nextcloud natürlich. Wenn wir da jetzt mal rauszoomen, Nextcloud ist jetzt ein sehr gutes Beispiel oder ein erfolgreiches Beispiel natürlich. Es gibt natürlich auch andere Beispiele, so wie Firefox. Die verlieren extrem viel Marktanteil in letzter Zeit. Wie blickst du denn auf die gesamte Open-Source-Szene eigentlich so? Siehst du da einen positiven Trend oder geht es wieder zurück?",
+            "start": 3606407,
+            "end": 3631427,
+            "confidence": 0.8190555555555556,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Die große Frage. Die große Frage. Open Source erstmal wird immer populärer. Immer mehr Software wird unter Open Source Lizenzen veröffentlicht. Also wenn man zum Beispiel jetzt irgendwas machen möchte, irgendwie im Bereich Programmiersprachen oder Middleware oder Datenbanken oder Speichersysteme oder irgendwas, Dann ist es ja gar nicht mehr vorstellbar, dass da irgendein Startup kommt mit proprietärer Software. Das wird ja überhaupt keine Akzeptanz mehr bekommen. Das heißt, in den Bereichen gibt es wirklich unglaublich viel Open Source. Klar, Android ist Open Source. Ganz viele Libraries und Frameworks, die verwendet werden. Über alle möglichen Software ist Open Source. Von daher kann man erstmal sagen, es ist erstmal toll und es nimmt auch zu und wird bestimmt auch weiterhin zunehmen. Jetzt ist es natürlich so, dass in meiner Wahrnehmung, in meiner Welt erstmal Open Source oder freie Software jetzt kein Selbstzweck sind. Also es ist ja nicht so, dass es jetzt irgendwie, wenn es jetzt irgendwie 1000 Zeilen Open Source Code gibt, dass es die Welt besser geworden ist, als wenn es nur 100 Zeilen Open Source Code gibt. Sondern dieser Code hat ja immer irgendwas mit Werten und Zielen zu tun. Beispielsweise gibt es ja die vier Freiheiten von Richard Stallman oder auch die entsprechende Definition der Open Source Initiative, wo letztendlich ja klar ist, warum Open Source gut ist. Nämlich, dass man die Software sich anschauen kann, man kann sie verändern, man kann sie weitergeben, man kann sie auch kostenlos verwenden und so weiter. Es hat aber einen ganz hohen gesellschaftlichen Vorteil, freie Software. Aber das greift nur, wenn eben alles freie Software ist. Das ist zum Beispiel das Problem an Android. Na klar, Android ist irgendwie, weiß ich nicht, 95% Open Source. Ja, schön. Aber dann gibt es eben noch die 5%, die Google-Services, die da noch drinstecken, oder irgendwelche provozierenden Applikationen, oder irgendwelche Treiber, oder irgendwelche Spezial-Patches von Samsung oder sonst irgendwas, die dann eher halt nicht Open Source sind. Und die machen letztendlich die ganzen Freiheiten kaputt. Weil dann kann ich plötzlich das Ganze nicht mehr anschauen und verteilen, weiterverwenden und weiterentwickeln und so weiter. Das heißt, Open Source wächst immer mehr sozusagen unter der Decke, aber dann gibt es immer noch so den dünnen Layer oben drüber, was dann proprietär ist. Microsoft sagt ja auch, ja, wir sind der größte Open Source Contributor und die Azure Cloud basiert auf 99 Prozent Open Source. Ja, ist ja toll, aber wenn halt die 1 Prozent proprietär sind, dann kann ich es halt trotzdem nicht bei mir selbst lokal installieren und betreiben und anschauen und verändern und mit Vente-Logging umgehen und so weiter. Das heißt, ja, Open Source wächst und gedeiht, und das ist toll. Was ich halt nicht erkennen kann, ist, dass das dann direkt zu Freiheiten und mehr Unabhängigkeit von Big-Tech-Unternehmen führt. Das leider nicht. Von daher ja und nein auf die Frage.",
+            "start": 3632268,
+            "end": 3793864,
+            "confidence": 0.762811320754717,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Ich glaube, mit diesem Plädoyer für Open Source können wir definitiv abschließen. Ich glaube, wenn wir alle ein bisschen mehr in Richtung Open Source gehen, das ist nie eine schlechte Idee. Wenn ich das richtig verstanden habe, hättest du auch gern, dass ein paar Unis mehr Code contributen bei euch. Vielleicht können wir das auch noch an die Unis weitersenden. Programmierst du selbst eigentlich noch oder bist du schon komplett weg vom Fenster und bist nur mehr Lobbyist quasi?",
+            "start": 3794152,
+            "end": 3817129,
+            "confidence": 0.7606962025316453,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Also das letzte Feature in Nextcloud, was ich selbst programmiert habe, ist glaube ich jetzt auch schon wieder 2-3 Jahre her. Wirklich zeitlich schwierig. Wir haben jetzt nächste Woche hier wieder so ein Treffen, wo die ganze Firma zusammenkommt. Da hoffe ich, dass ich dann so ein paar Minuten am Abend mal irgendwas Spannendes machen kann. Ich habe neulich mal so ein bisschen mit AI, Machine Learning Dingen gespielt, aber auch am Wochenende, weil ich von dem Tag eigentlich tatsächlich weniger Zeit habe. Deswegen immer, wenn ich mal wieder was programmiert, denke ich so, wow, das macht ja total Spaß, aber die Zeit ist meistens leider nicht da.",
+            "start": 3820661,
+            "end": 3850942,
+            "confidence": 0.6694444444444447,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Dann kann ich auch nur sagen, vielen lieben Dank, Frank, dass du dir die Zeit genommen hast, mit uns über dieses Thema zu sprechen. Für mich war es eine unglaublich inspirierende Folge und ich finde es wirklich wirklich wirklich enorm wichtig was du tust und aber auch enorm beeindruckend wie du es machst und auf welcher größe auch inzwischen 90 leute können davon leben und meines erachten nach treibst du natürlich auch mit all deiner arbeit auf dem auf der politischen ebene von der du vielleicht nicht so der Fan bist, wie ich rausgehört habe, aber schon, dass die Bundesregierung sowas einsetzt, finde ich deutlich besser, als wenn sie das Geld für proprietary Software irgendwie ausgeben, wo es dann hinten dran irgendwie wieder Millionen versenkt werden. Vielen lieben Dank für all deine Arbeit, die du Wahrscheinlich jeden Tag und nicht nur Montag bis Freitag tust. Deswegen danke dafür und danke für deine Zeit, dass wir mit dir sprechen durften.",
+            "start": 3850962,
+            "end": 3905445,
+            "confidence": 0.7896792452830188,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Danke für das tolle Interview. Hat wirklich Spaß gemacht und sehr inspirierende Fragen auch von euch.",
+            "start": 3905465,
+            "end": 3910129,
+            "confidence": 0.4143125000000001,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Vielen, vielen Dank. Es liegen nämlich nicht nur meine Kalenderdaten in der Nextcloud, sondern auch unser Podcast. Alle unsere MP3-Dateien liegen auch in der Nextcloud. Also vielen Dank dafür. Hat uns bisher noch nie im Stich gelassen. Super.",
+            "start": 3910169,
+            "end": 3920818,
+            "confidence": 0.7991315789473683,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Vielen Dank.",
+            "start": 3920858,
+            "end": 3921879,
+            "confidence": 0.46699999999999997,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Danke. Tschüss. Bis zum nächsten Mal.",
+            "start": 3921919,
+            "end": 3923280,
+            "confidence": 0.44583333333333336,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Tschüss. Ciao.",
+            "start": 3923300,
+            "end": 3923980,
+            "confidence": 0.2155,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Und nicht vergessen, falls ihr eine Förderung in Höhe von 50.000 Euro für euer Open Source Projekt haben wollt, bewerbt euch beim Media Tech Lab. Link in den Show Notes.",
+            "start": 3927096,
+            "end": 3934709,
+            "confidence": 0.7825333333333332,
+            "channel": null,
+            "speaker": "B"
+        }
+    ],
+    "confidence": 0.7425933190578164,
+    "audio_duration": 3934.0,
+    "webhook_status_code": null,
+    "webhook_auth": false,
+    "summary": null,
+    "auto_highlights_result": null,
+    "content_safety_labels": null,
+    "chapters": null,
+    "sentiment_analysis_results": null,
+    "entities": null
 }

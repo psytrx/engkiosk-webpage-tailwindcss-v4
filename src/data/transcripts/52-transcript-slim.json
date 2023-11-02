@@ -1,1218 +1,1218 @@
 {
-  "language_code": "de",
-  "audio_url": "https://audio1.redcircle.com/episodes/5f100418-9dc0-463b-9033-bf99e1b6da3c/stream.mp3",
-  "punctuate": true,
-  "format_text": true,
-  "dual_channel": false,
-  "webhook_url": null,
-  "webhook_auth_header_name": null,
-  "webhook_auth_header_value": null,
-  "audio_start_from": null,
-  "audio_end_at": null,
-  "word_boost": [],
-  "boost_param": null,
-  "filter_profanity": false,
-  "redact_pii": false,
-  "redact_pii_audio": false,
-  "redact_pii_policies": null,
-  "redact_pii_sub": null,
-  "speaker_labels": true,
-  "speakers_expected": 2,
-  "content_safety": false,
-  "content_safety_confidence": null,
-  "iab_categories": false,
-  "custom_spelling": null,
-  "disfluencies": false,
-  "sentiment_analysis": false,
-  "auto_chapters": false,
-  "entity_detection": false,
-  "summarization": false,
-  "summary_model": null,
-  "summary_type": null,
-  "auto_highlights": false,
-  "language_detection": false,
-  "speech_threshold": null,
-  "id": "621upjmhoj-db36-4d9f-b92d-4dbcf03abde8",
-  "status": "completed",
-  "error": null,
-  "utterances": [
-    {
-      "text": "Herzlich willkommen zu einer neuen Episode vom Engineering Kiosk. Heute geht es um das Thema Message Queues, also die asynchrone Verarbeitung von Nachrichten durch dedizierte Worker oder auch Consumer genannt. Wir klären, was Message Queues sind und welche klassischen Anwendungsfälle damit abgedeckt werden können, was der Open Source Platzhirsch RabbitMQ als Message Broker so drauf hat, ob eine relationale Datenbank auch als Message Queue genutzt werden kann, wo der Unterschied zu PubSub und Streams ist und was Redis, Kafka und ZeroMQ damit zu tun haben. Und los geht's! Viel Spaß! Lieber Wolfgang, ein frohes neues Jahr. Mich würde mal interessieren, wann standest du das letzte Mal in einer Warteschlange? Wann musstest du mit einer Reihe von Leuten auf etwas warten?",
-      "start": 4025,
-      "end": 51910,
-      "confidence": 0.8117166666666669,
-      "channel": null,
-      "speaker": "A"
-    },
-    {
-      "text": "Da, wo ich am meisten warte in letzter Zeit, ist bei der Post, wenn ich irgend so ein dummes Paket, das ich nicht in so einem Automaten abgeben kann, wirklich eine Person überreichen muss zum Zurücksenden von irgendeinem Online-Versand. Und ich ärgere mich jedes Mal wieder.",
-      "start": 52258,
-      "end": 64649,
-      "confidence": 0.7596086956521738,
-      "channel": null,
-      "speaker": "B"
-    },
-    {
-      "text": "Also hier in Deutschland kann man dem Paketboten, wenn der kommt, auch die Retouren wieder mitgeben. Geht das bei euch nicht?",
-      "start": 64688,
-      "end": 71636,
-      "confidence": 0.8126666666666666,
-      "channel": null,
-      "speaker": "A"
-    },
-    {
-      "text": "Das geht nur bei dir am Land, weil du den persönlich kennst und der noch bei der Feuerwehr ist und ein Kollege aus dem Dorf.",
-      "start": 72176,
-      "end": 77739,
-      "confidence": 0.70632,
-      "channel": null,
-      "speaker": "B"
-    },
-    {
-      "text": "Nee, das ist ein offizieller Service der Deutschen Post, aber ich gebe auch zu, hier bei mir in den Dörfern haben wir nicht so eine Packstation. Das bedeutet, das, was du da sagst, das kenne ich halt auch, dass man noch zu so einer Postfiliale fahren muss und so weiter, aber die Tage hat mich mein Paketbote angesprochen und sagte, immer die ganzen Sachen, die ich euch zustelle, so Kleidung, so passt die euch immer alles? Ich sag so, Wieso sollte die uns immer passen? Natürlich passt sie uns nicht. Ja, ihr gebt nie was bei mir zurück und das machen aber alle hier im Dorf. Und da habe ich dann erst gelernt, ich kann dem Paketboten auch Retouren zurückgeben.",
-      "start": 77779,
-      "end": 111604,
-      "confidence": 0.8072166666666668,
-      "channel": null,
-      "speaker": "A"
-    },
-    {
-      "text": "Ja, du siehst denn ja, ich sehe den gar nie. Der wirft das Paket irgendwo immer hin in eine Ecke und ist dann wieder weg.",
-      "start": 111644,
-      "end": 117230,
-      "confidence": 0.7199599999999999,
-      "channel": null,
-      "speaker": "B"
-    },
-    {
-      "text": "Hast du denn eine Abstellerlaubnis erteilt?",
-      "start": 117250,
-      "end": 118992,
-      "confidence": 0.6321666666666667,
-      "channel": null,
-      "speaker": "A"
-    },
-    {
-      "text": "Nein, aber das wird trotzdem immer so gemacht.",
-      "start": 119172,
-      "end": 122516,
-      "confidence": 0.736,
-      "channel": null,
-      "speaker": "B"
-    },
-    {
-      "text": "Also oft sehe ich den nicht, weil bei mir wird auch immer alles vor die Haustür gelegt und dann kann ich aber auch einfach nur Pakete da hinlegen und sage einfach bitte mitnehmen und dann wird das auch einfach mitgenommen.",
-      "start": 122556,
-      "end": 131867,
-      "confidence": 0.8316000000000002,
-      "channel": null,
-      "speaker": "A"
-    },
-    {
-      "text": "Ziemlich gutes Service, hätte ich auch gern.",
-      "start": 131907,
-      "end": 133809,
-      "confidence": 0.5435714285714286,
-      "channel": null,
-      "speaker": "B"
-    },
-    {
-      "text": "Hast du denn am Paketboden auch eine kleine Freude zu Weihnachten gemacht?",
-      "start": 133829,
-      "end": 137033,
-      "confidence": 0.7111666666666667,
-      "channel": null,
-      "speaker": "A"
-    },
-    {
-      "text": "Ja, nachdem ich ihn nie sehe, habe ich da kein Problem damit.",
-      "start": 137273,
-      "end": 139936,
-      "confidence": 0.6367499999999999,
-      "channel": null,
-      "speaker": "B"
-    },
-    {
-      "text": "Vielleicht ist das genau der Unterschied. Ich habe nämlich eine kleine Merci-Schokoladentafel für meinen Paketboten gekauft, weil der immer so nett ist.",
-      "start": 140407,
-      "end": 147772,
-      "confidence": 0.7835909090909091,
-      "channel": null,
-      "speaker": "A"
-    },
-    {
-      "text": "Moment, dein Paketbote bekommt eine Merci-Schokolade, eben noch nie eine Merci-Schokolade von dir bekommen.",
-      "start": 147812,
-      "end": 152635,
-      "confidence": 0.6973571428571429,
-      "channel": null,
-      "speaker": "B"
-    },
-    {
-      "text": "Du bringst mir auch keine Pakete.",
-      "start": 152675,
-      "end": 154256,
-      "confidence": 0.7293333333333333,
-      "channel": null,
-      "speaker": "A"
-    },
-    {
-      "text": "Ja, aber jede Woche wieder ein neues großes Stück Wissen.",
-      "start": 154296,
-      "end": 158019,
-      "confidence": 0.8721,
-      "channel": null,
-      "speaker": "B"
-    },
-    {
-      "text": "Zurück zum Thema Warteschlangen. Ich war vor kurzem mal wieder in einem Restaurant in Düsseldorf, und zwar im japanischen Viertel.",
-      "start": 158059,
-      "end": 165283,
-      "confidence": 0.8228500000000001,
-      "channel": null,
-      "speaker": "A"
-    },
-    {
-      "text": "Da sind wirklich immer viele Schlangen, kann ich mich noch gut erinnern.",
-      "start": 165303,
-      "end": 167865,
-      "confidence": 0.5788333333333333,
-      "channel": null,
-      "speaker": "B"
-    },
-    {
-      "text": "Und dann stand ich vor einem koreanischen Restaurant im japanischen Viertel, das muss man sich auf der Zunge zergehen lassen, und hatte auch sogar Tisch reserviert. Also ich komme da an und meine Frau schon, ach du meine Güte, müssen wir uns jetzt hier anstehen? Ein Moment, mal kurz die Schlange gefragt, habt ihr reserviert? Nein, ich einfach vorne durchgegangen und stand dann ganz vorne, weil ich reserviert hatte. Und dann habe ich mich gefragt, dann hat die Dame vom Restaurant gesagt, okay, warten Sie mal bitte noch ein paar Minuten, ist gerade noch kein Tisch frei, aber wir haben Ihre Reservierung hier stehen. Und auf jeden Fall habe ich mich dann gefragt, okay, wie händeln das eigentlich Restaurants, beziehungsweise Restaurantbetreiber, dass, wenn das Ding konstant voll ist, dass dann immer zu der reservierten Zeit ein Tisch frei ist, ohne großen Ausfall, nenne ich mal, zu haben. Beispiel, man hat für 20 Uhr reserviert und um 19.30 Uhr zahlt wer. Die halten ja nicht eine halbe Stunde den Tisch vor, oder?",
-      "start": 168305,
-      "end": 220762,
-      "confidence": 0.7631228070175439,
-      "channel": null,
-      "speaker": "A"
-    },
-    {
-      "text": "Mir fällt gerade auf, das wäre eigentlich eine ideale, coole Frage für Interviews, für Tech-Interviews. Wie würde man sowas programmieren und realisieren, um das möglichst effizient abzubilden? Was würdest du für eine Technologie verwenden, Andi, dafür? Das ist immer die beste Frage, die Technologie davor zu klären, bevor man eigentlich das Problem und den Algorithmus definiert hat, setzt man sich schon mal fest auf was für Technologie.",
-      "start": 220802,
-      "end": 242711,
-      "confidence": 0.7433582089552235,
-      "channel": null,
-      "speaker": "B"
-    },
-    {
-      "text": "Ich glaube, ich würde mir ziemlich viele Daten besorgen, wie lang ein Essen in der Küche braucht, um fertig zu werden und dann die Zeiten, indem man die Zwischensteps messen. Okay, Essen ist ausgeliefert, Essen ist gegessen, Teller wurde wieder abgeholt und so weiter. Weil dann kann man, glaube ich, relativ gut abschätzen. Ach so, und das dann noch korrelieren mit der Gruppengröße. Also sitzen da zwei Leute, sitzen da vier Leute und so weiter und so fort. Und dann über Zeit so Estimations machen.",
-      "start": 243132,
-      "end": 271148,
-      "confidence": 0.769764705882353,
-      "channel": null,
-      "speaker": "A"
-    },
-    {
-      "text": "Also du würdest Process Mining machen. Du bist schon in einer hippen Industrie jetzt unterwegs. So von den neuen, coolen, milliardenbewerteten Startups wie Celonis und so weiter. Business Process Mining.",
-      "start": 271188,
-      "end": 284153,
-      "confidence": 0.7406666666666665,
-      "channel": null,
-      "speaker": "B"
-    },
-    {
-      "text": "Ich wusste nicht, dass man das Process Mining nennt, aber die nächste Frage wäre, wie würde man das from the get-go, also bei einem neuen Restaurant machen? Weil das Process Mining, wenn du es so nennst, basiert ja auf den Daten und die sammelt man ja nur über Zeit und wenn alle Leute, die die reservieren, immer eine halbe Stunde warten, dann kommen die Gäste ja nicht, dann erreiche ich die Zeit für die Datensammlung ja gar nicht.",
-      "start": 284593,
-      "end": 304610,
-      "confidence": 0.7953974358974358,
-      "channel": null,
-      "speaker": "A"
-    },
-    {
-      "text": "Ja, du holst dir dann eine AI.",
-      "start": 305190,
-      "end": 306950,
-      "confidence": 0.757,
-      "channel": null,
-      "speaker": "B"
-    },
-    {
-      "text": "Eine was?",
-      "start": 307010,
-      "end": 307730,
-      "confidence": 0.801,
-      "channel": null,
-      "speaker": "A"
-    },
-    {
-      "text": "Eine AI. Keine AI, sondern nur eine AI, eine Intelligence. Du holst dir einfach eine Person, die das schon mal gemacht hat und diese Better Recognition schon drauf hat und einfach weiß, wie so ein Restaurant funktioniert. Da sieht man wieder dieses Over-Engineering von Technikern. Die ganzen Restaurantbesitzer haben das einfach intus, wahrscheinlich, wie das funktioniert. Das ist total easy.",
-      "start": 307770,
-      "end": 327254,
-      "confidence": 0.7576999999999999,
-      "channel": null,
-      "speaker": "B"
-    },
-    {
-      "text": "Kommen wir zurück zu meiner Warteschlange. Wir mussten dann auch nicht lange stehen, hatten dann, dank der Reservierung, einen relativ schnellen Tisch.",
-      "start": 327274,
-      "end": 334555,
-      "confidence": 0.7872727272727272,
-      "channel": null,
-      "speaker": "A"
-    },
-    {
-      "text": "Und dank einer AI, die die haben, einer Intelligence, die das übernimmt.",
-      "start": 335175,
-      "end": 338936,
-      "confidence": 0.69625,
-      "channel": null,
-      "speaker": "B"
-    },
-    {
-      "text": "Ja, da waren mehrere intelligente Leute auf jeden Fall. Die hatten, die waren auf jeden Fall auf Zack, würde man sagen. Da war ich halt schon ein bisschen beeindruckt, wie das ganze Queuing da so funktioniert.",
-      "start": 338956,
-      "end": 349318,
-      "confidence": 0.805777777777778,
-      "channel": null,
-      "speaker": "A"
-    },
-    {
-      "text": "Und jetzt kommt diese Traumüberleitung von dir zu Queuing im IT-Sektor.",
-      "start": 349358,
-      "end": 355039,
-      "confidence": 0.754090909090909,
-      "channel": null,
-      "speaker": "B"
-    },
-    {
-      "text": "Genau. Heute sprechen wir über Message Queuing.",
-      "start": 355079,
-      "end": 358360,
-      "confidence": 0.8362857142857143,
-      "channel": null,
-      "speaker": "A"
-    },
-    {
-      "text": "Du bist der Meister der Überleitungen. Darf ich dir das mal sagen? Du wirst eine Messie-Schachtel von mir bekommen als Dankeschön für diese Überleitungen.",
-      "start": 359819,
-      "end": 368486,
-      "confidence": 0.7215416666666669,
-      "channel": null,
-      "speaker": "B"
-    },
-    {
-      "text": "Bevor wir ins Thema einsteigen, eine finale Frage. Wenn du so eine Messie-Packung hast, ist das auch so, dass du manche Sachen isst, die zum Beispiel mit Nuss, aber die dann mit Marzipan liegen lässt? Oder bist du so ein Typ, der alle Messie-Geschmäcker...",
-      "start": 368506,
-      "end": 380255,
-      "confidence": 0.763431818181818,
-      "channel": null,
-      "speaker": "A"
-    },
-    {
-      "text": "Wieso? Marzipan ist auch gut.",
-      "start": 380275,
-      "end": 381736,
-      "confidence": 0.5912000000000001,
-      "channel": null,
-      "speaker": "B"
-    },
-    {
-      "text": "Ja, aber du lässt dann auch bestimmte Messie-Farben liegen, oder?",
-      "start": 381776,
-      "end": 385780,
-      "confidence": 0.8582999999999998,
-      "channel": null,
-      "speaker": "A"
-    },
-    {
-      "text": "Natürlich, Grün ist immer das Beste.",
-      "start": 386500,
-      "end": 388141,
-      "confidence": 0.7600000000000001,
-      "channel": null,
-      "speaker": "B"
-    },
-    {
-      "text": "Ich wusste nicht, dass dieser Tag kommt. Grün ist Nuss, ne?",
-      "start": 388181,
-      "end": 390841,
-      "confidence": 0.7716363636363636,
-      "channel": null,
-      "speaker": "A"
-    },
-    {
-      "text": "Ja, natürlich.",
-      "start": 390861,
-      "end": 391742,
-      "confidence": 0.7190000000000001,
-      "channel": null,
-      "speaker": "B"
-    },
-    {
-      "text": "Ich wusste nicht, dass dieser Tag kommt. Wir haben eine Gemeinsamkeit. Wolfgang, ich habe gedacht, wir bleiben seit Jahr und Tag auf diesem Kaiserschmarrn mit oder ohne Rosinen stecken, aber bei Messi haben wir uns getroffen. Ernsthaft?",
-      "start": 391782,
-      "end": 403465,
-      "confidence": 0.853945945945946,
-      "channel": null,
-      "speaker": "A"
-    },
-    {
-      "text": "Ja, aber das ist doch bei jeder Person so, oder? Grün ist immer das Beste.",
-      "start": 403485,
-      "end": 407286,
-      "confidence": 0.6644666666666666,
-      "channel": null,
-      "speaker": "B"
-    },
-    {
-      "text": "Ja, ich frage mich halt, gibt es Personen auf dieser Welt... Ja, die mit einer Nuss-Allergie. Ja, aber die lassen ja da Nuss liegen. Ich frage mich ja, gibt es Personen auf dieser Welt, die alle Messy-Farben mögen?",
-      "start": 407646,
-      "end": 416293,
-      "confidence": 0.7959473684210526,
-      "channel": null,
-      "speaker": "A"
-    },
-    {
-      "text": "Ja, hoffentlich nicht. Diversity. Ganz wichtig.",
-      "start": 416574,
-      "end": 419556,
-      "confidence": 0.8046666666666668,
-      "channel": null,
-      "speaker": "B"
-    },
-    {
-      "text": "Kommen wir zurück zum Thema Message-Queuing. Heute geht es mal ein bisschen um Message-Queuing und wir steigen mal ein bisschen das Thema ein. Was ist Message-Queuing? Warum braucht man das? Was sind typische Anwendungsfälle? aber auch was gibt es denn da für Tools auf dem Markt beziehungsweise wir schauen uns ein ganz spezielles an und zwar RabbitMQ und wir versuchen mal so ein bisschen Licht ins Dunkle der Warteschlange zu bringen.",
-      "start": 419576,
-      "end": 443148,
-      "confidence": 0.7940281690140846,
-      "channel": null,
-      "speaker": "A"
-    },
-    {
-      "text": "Dann erleuchte mich mal und erklär mir was Message Queues sind und vielleicht noch besser für was brauche ich Message Queues? Also in was für einem Anwendungsfall würdest du sagen, wenn jetzt wieder klassische Interviewfrage für das Restaurant zum Beispiel, wo braucht man Message Queues? Was ist der klassische Anwendungsfall?",
-      "start": 443168,
-      "end": 460332,
-      "confidence": 0.7477200000000002,
-      "channel": null,
-      "speaker": "B"
-    },
-    {
-      "text": "Message Queues sind generell erstmal eine Subkomponente oder ein Subsystem deiner größeren Anwendung und im generellen geht es eigentlich darum, dass alle Anwendungsfälle, die asynchron behandelt werden können, abgebildet werden können. Hä, boah, jetzt hör doch mal auf da mit diesen Fachbegriffen blablabla, bleib mal praktisch.",
-      "start": 460612,
-      "end": 479492,
-      "confidence": 0.7190869565217392,
-      "channel": null,
-      "speaker": "A"
-    },
-    {
-      "text": "Jetzt redest du schon mit dir selber. So weit ist es schon.",
-      "start": 479552,
-      "end": 483672,
-      "confidence": 0.45291666666666663,
-      "channel": null,
-      "speaker": "B"
-    },
-    {
-      "text": "Der optimalste Anwendungsfall ist eigentlich mal so ein Newsletter-Versand oder ein E-Mail-Versand. Es gibt ja nichts Asynchroneres als E-Mail. Die versende ich jetzt und bei E-Mails ist es ja nicht wichtig, ob die in einer Sekunde, fünf Sekunden oder 60 Sekunden ankommt. Deswegen kann sowas perfekt asynchron gemacht werden.",
-      "start": 483692,
-      "end": 500073,
-      "confidence": 0.8190612244897961,
-      "channel": null,
-      "speaker": "A"
-    },
-    {
-      "text": "Okay, nehmen wir mal an, ich weiß noch nicht, dass Newsletter das neue, hippe Werbetool eigentlich schlechthin ist und ich bin auch der alten Meinung, dass kein Mensch mehr E-Mails liest. Gibt es irgendwelche anderen Anwendungsfälle, die ganz klassisch sind?",
-      "start": 500313,
-      "end": 511780,
-      "confidence": 0.768075,
-      "channel": null,
-      "speaker": "B"
-    },
-    {
-      "text": "Zum Beispiel Bildverarbeitung. Wenn du jetzt irgendwo dein Bild hochlädst, Beispiel du hast dich bei einem neuen sozialen Netzwerk angemeldet.",
-      "start": 511800,
-      "end": 519424,
-      "confidence": 0.8364000000000003,
-      "channel": null,
-      "speaker": "A"
-    },
-    {
-      "text": "Mastodon zum Beispiel.",
-      "start": 519464,
-      "end": 520784,
-      "confidence": 0.794,
-      "channel": null,
-      "speaker": "B"
-    },
-    {
-      "text": "Zum Beispiel. Und du lädst dein Avatar hoch, ein Gesicht von dir. In der Regel nehmen sich diese Services dein Bild, 2000 x 2000 und 10 MB groß, schmeißen das in eine Warteschlange und rechnen dieses Bild dann in verschiedene Größen und weboptimiert runter und legen das dann irgendwo ab, um einfach nur Traffic zu sparen, wenn jemand auf dein Profil geht, um dein Avatar zu gucken. Das ist zum Beispiel ein perfekter Use Case für asynchrone Verarbeitung, denn dein Bild wird hochgeladen, irgendwo hingespeichert, dann wird eine Nachricht in eine Warteschlange gepackt und dann wird dein Bild in verschiedene Formate und Größen konvertiert. Und das kann, das muss ja nicht on the fly passieren, das kann ja auch ein paar Sekunden brauchen. Und in der Zeit, wo das noch nicht verarbeitet ist, stellen die halt das Originalbild auf der Webseite dar. Und wenn das neue dann fertig ist, dann nehmen sie die kleineren Größe. Das ist so einer der Anwendungsfelder. Ein anderer ist zum Beispiel Log Processing. Dein Webserver oder deine Applikation generiert eine ganze Menge Logs. Wann, wie, wo, welcher User worauf zugegriffen hat. Diese Logs irgendwo zu speichern, zu analysieren, Summen darüber zu bilden, wie viele User haben diese Webseite aufgerufen und so weiter und so fort. Sowas kann man ja im Backend oder Zeit unabhängig machen. Also da ist es in der Regel nicht systemkritisch, ob die Daten eine Sekunde oder drei Sekunden später kommen.",
-      "start": 520825,
-      "end": 597648,
-      "confidence": 0.792100418410042,
-      "channel": null,
-      "speaker": "A"
-    },
-    {
-      "text": "Das heißt eigentlich geht es darum, wenn ich große Datenmengen in irgendeiner Form verarbeiten will und die Verarbeitung braucht Zeit, so dass ich es nicht real-time machen kann und dass es auch nicht kritisch ist. Also wenn ich irgendeine Zeile in eine Datenbank einfüge, dann geht das erstens mal relativ schnell üblicherweise und es ist kritisch, dass ich die Antwort abwarten muss. Aber wenn ich asynchron irgendwas abarbeiten kann, was länger dauert, dann ist Message Queues eine gute Technologie dafür. Seht es richtig.",
-      "start": 597688,
-      "end": 625113,
-      "confidence": 0.7864337349397591,
-      "channel": null,
-      "speaker": "B"
-    },
-    {
-      "text": "Ja, ich würde es jetzt nicht auf große Datenmengen limitieren, auch auf kleine Datenmengen. Eigentlich alles, wo du nicht sofort eine Response brauchst, was halt zeitunabhängig ist. Es gibt sogar Leute, die würden E-Commerce-Bestellungen durch ein Message-Queue-System jagen. Kann man auch machen, ist jetzt aber sehr wahrscheinlich nicht der prädestinierteste Anwendungsfall. Also überall da, wo die Response-Zeit delayed werden kann.",
-      "start": 625453,
-      "end": 648034,
-      "confidence": 0.8192333333333331,
-      "channel": null,
-      "speaker": "A"
-    },
-    {
-      "text": "Okay, jetzt habe ich so einen Anwendungsfall und jetzt würde ich mir das ganz klassisch selber in meiner Datenbank zusammenstricken. Ich speichere das irgendwo rein in eine Tabelle, das ist meine Warteschlange und dann speichere ich dazu, ob das bearbeitet ist oder nicht und dann baue ich mir da irgendwie so ein Ding, was da die Datenbank ständig abfragt und weiterschickt. Habe ich dann eine Message Queue?",
-      "start": 648434,
-      "end": 667345,
-      "confidence": 0.6980298507462688,
-      "channel": null,
-      "speaker": "B"
-    },
-    {
-      "text": "Ja, prinzipiell schon. Also generell besteht eine Message Queue aus drei Komponenten. Auf der einen Seite hast du irgendwas, was deine Nachricht erzeugt, also sagt, hey, hier hast du was zu verarbeiten. Dann hast du was in der Mitte, eine Warteschlange, in deinem Fall zum Beispiel eine Tabelle. Da packst du diesen Job, diesen, hey, das muss verarbeitet werden, rein. Und dann hast du die dritte Komponente, irgendein Prozess, was sich diesen Job nimmt und verarbeitet. Die erste Komponente, die die Nachricht erzeugt, nennt man Producer oder Publisher. Die Tabelle, wo du das reinschreibst, nennt man eigentlich Queue beziehungsweise Warteschlange. Und das Moped, was sich diesen Job aus der Warteschlange, aus der Queue nimmt, nennt man entweder Worker oder Consumer. Wenn du all das in deiner Datenbank abbilden kannst, dann hast du eigentlich eine Basis Message Queue. Jetzt hattest du das ganze Konzept mit einer Datenbank in Verbindung gebracht. Du kannst dir das auch alles selbst bauen, indem du zum Beispiel eine relationale Tabelle einfach nur als Queue, also als Warteschlange nutzt. Machen auch sehr viele.",
-      "start": 667385,
-      "end": 727682,
-      "confidence": 0.7768295454545455,
-      "channel": null,
-      "speaker": "A"
-    },
-    {
-      "text": "Dann muss es ja gut sein, wenn es so viele machen.",
-      "start": 727702,
-      "end": 730483,
-      "confidence": 0.743181818181818,
-      "channel": null,
-      "speaker": "B"
-    },
-    {
-      "text": "Ist auf jeden Fall recht simpel. Es gibt aber dedizierte Systeme für Message Queuing, also so wie es MySQL und Postgre für relationale Datenbanken gibt. Oder von mir aus auch Oracle oder MariaDB. Gibt es natürlich auch für den Message Queue Anwendungsfall dedizierte Systeme, wie zum Beispiel RabbitMQ, ActiveMQ oder oder oder.",
-      "start": 730543,
-      "end": 749975,
-      "confidence": 0.8103461538461537,
-      "channel": null,
-      "speaker": "A"
-    },
-    {
-      "text": "Und warum sollt ihr dann so dedizierte Systeme verwenden? Jetzt habe ich eh schon die Datenbank und kann das in die Datenbank speichern.",
-      "start": 750015,
-      "end": 755180,
-      "confidence": 0.6759130434782608,
-      "channel": null,
-      "speaker": "B"
-    },
-    {
-      "text": "Naja, Message Queueing ist halt auch nicht ganz so einfach. Und zwar gibt es da so ein paar Fallstricke, so ein paar Tricky Parts, die diese dedizierten Systeme natürlich lösen. Auf der einen Seite geht es nämlich um die Fragestellung, wie oft kann, darf, muss beziehungsweise sollte denn eine einzelne Nachricht an einen Consumer, an einen Worker abgeliefert werden. Da geht es um die Stichwörter exactly once, at least once, at most once delivery. Wer in deiner Architektur, also die Datenbank bzw. der Consumer, wer stellt da sicher, dass jede Nachricht verarbeitet wird, jede Nachricht mindestens einmal oder genau einmal verarbeitet wird?",
-      "start": 755500,
-      "end": 797803,
-      "confidence": 0.8123333333333337,
-      "channel": null,
-      "speaker": "A"
-    },
-    {
-      "text": "Also wenn ich bei einem Newsletter zum Beispiel dann an eine Person fünf E-Mails raussende, dieselbe Newsletter E-Mail, dann werden die wahrscheinlich wenig Spaß haben. Insofern will ich da eine Verarbeitung von genau einmal haben.",
-      "start": 798423,
-      "end": 809249,
-      "confidence": 0.7902,
-      "channel": null,
-      "speaker": "B"
-    },
-    {
-      "text": "Ja, das ist jetzt eine gute Frage. Du willst natürlich, dass jeder in deiner Kunden Newsletter haben möchte. Das bedeutet, du wärst dann eher im Exactly Once Delivery Modus oder At Most Once Delivery Modus, weil die Frage ist, wie kritisch ist das, wenn einer deiner tausend Leute den Newsletter nicht kriegt hat?",
-      "start": 809629,
-      "end": 827219,
-      "confidence": 0.7856037735849056,
-      "channel": null,
-      "speaker": "A"
-    },
-    {
-      "text": "Aber wo ist jetzt das Problem, wenn ich es in der Datenbank mache, aber fällt? Wurde das versendet? Ja, nein? Das setze ich.",
-      "start": 828100,
-      "end": 833181,
-      "confidence": 0.6712608695652174,
-      "channel": null,
-      "speaker": "B"
-    },
-    {
-      "text": "Ja, was passiert denn, wenn dein Worker, dein Consumer sich einen Job aus der Datenbank holt, der macht dann so einen Select, dann unterbricht die Verbindung und der kann nicht sagen, hey, ich habe mir die Nachricht geholt. Und in der Zeit kommt ein zweiter Worker hoch, weil es heißt ja nicht nur, dass du eine Tabelle und einen Worker hast, sondern du kannst ja eine Tabelle und 100 Worker haben, die dann um die Jobs bei der Datenbank abfragen. Und was ist, wenn du da eine Race Condition hast? Das bedeutet, wenn einer sich eine Nachricht geholt hat, die Verbindung abbricht oder Der Server stirbt, oder, oder, oder. Dann holt sich ein anderer Worker die Nachricht. Was passiert, wenn der erste Worker sich die Nachricht holt? Die Connection zur Datenbank abbricht, der Worker aber noch weiterläuft und die Nachricht dann erfolgreich verarbeitet. Der konnte aber der Datenbank nicht sagen, hey, diese Nachricht wurde schon von einem Worker geholt. Somit wacht ein zweiter Worker auf, holt sich den Job. Dann hast du dieselbe Nachricht in zwei verschiedenen Workern, zum Beispiel deinem Newsletter, und der wird dann zweimal an dieselbe Person versendet.",
-      "start": 833201,
-      "end": 890872,
-      "confidence": 0.819549738219895,
-      "channel": null,
-      "speaker": "A"
-    },
-    {
-      "text": "Okay und die Message Queue nimmt mir das Ganze ab, die kümmert sich darum, wenn ich diese Einstellungen setze, dann kümmert sich die Message Queue um alles.",
-      "start": 891172,
-      "end": 898997,
-      "confidence": 0.7269259259259259,
-      "channel": null,
-      "speaker": "B"
-    },
-    {
-      "text": "Jede Message Queue hat andere Garantien, aber prinzipiell ja. Und mit anderen Garantien meine ich ganz genau sowas wie, wird die Nachricht genau einmal zugestellt, Minimum einmal zugestellt oder maximal einmal zugestellt. Exactly once, at least once delivery, at most once delivery.",
-      "start": 899017,
-      "end": 915348,
-      "confidence": 0.8006666666666669,
-      "channel": null,
-      "speaker": "A"
-    },
-    {
-      "text": "Jetzt hast du von 100 Workern gesprochen. Was ist jetzt so ein Worker und warum brauche ich 100 davon? Macht ja alles komplizierter.",
-      "start": 915735,
-      "end": 921977,
-      "confidence": 0.6449130434782608,
-      "channel": null,
-      "speaker": "B"
-    },
-    {
-      "text": "Naja, generell redet man da von granulare Skalierbarkeit. Jetzt stell dir mal vor, wir haben Black Friday und da kommen auf einmal ganz viele Bestellungen rein oder ganz viele neue Newsletter-Abonnenten und denen willst du natürlich auch alle deinen ersten Newsletter senden. Und wenn du jetzt in der Regel pro Woche zwei neue Newsletter-Abonnenten hast und jetzt zu Black Friday hast du nämlich, bietest du den Gutschein an, über 20% und auf einmal kriegst du 10.000, Dann kannst du natürlich die Warteschlange für deinen Newsletter natürlich einzeln skalieren, weil dann kommen sehr viele Nachrichten in der Newsletter-Warteschlange und dann kannst du sagen, oh, ich brauche nicht nur einen Newsletter-Consumer, sondern auf einmal 100 und buff, werden die innerhalb von wenigen Minuten relativ schnell abgearbeitet. Also du kannst natürlich auch dann deinen Load und deine Anfragen deutlich besser parallelisieren. Du kannst die Verarbeitung auf verschiedene Server, auf verschiedene Maschinen verteilen und dadurch hast du natürlich auch eine erhöhte Ausfallsicherheit. Und wenn du dir darüber ein bisschen Gedanken machst, dann hast du natürlich eine vereinfachte Entkopplung. Also reden wir mal von Microservices. Message Shearing kann auch super dafür genutzt werden, damit zwei Microservices miteinander sprechen. Die müssen keine synchrone Kommunikation haben, wie zum Beispiel HTTP-Calls hin und her, sondern die können auch über eine dritte Komponente, wie zum Beispiel eine Warteschlange in der Mitte, asynchron miteinander kommunizieren. Und das kann dir natürlich helfen, wie zum Beispiel bei einer Migration von Monolithen auf Microservices, damit du das nicht mit einer Big Bang Migration machen kannst, sondern dass du einfach ganz normal und ganz langsam wirklich zu Microservice oder vielleicht sogar Serverless, nehmen wir mal Lambda Functions oder ähnliches, migrieren kannst.",
-      "start": 922017,
-      "end": 1015917,
-      "confidence": 0.7583140794223827,
-      "channel": null,
-      "speaker": "A"
-    },
-    {
-      "text": "Okay, nehmen wir mal an, ich habe da jetzt mein Projekt und glaube, dass Message Queuing mir helfen würde, um das zu entkoppeln oder zu vereinfachen. Und du hast ja schon erwähnt, RabbitMQ ist so, würde ich sagen, das bekannteste, das mir auch so immer unterkommt, wenn es um Message Queues geht. Wenn ich mir da jetzt RabbitMQ reinhole in mein Projekt, was ist denn RabbitMQ eigentlich? Was für ein Schiff hole ich mir denn da an Bord? Kann man sich ein Schiff an Bord holen? Egal. Was ist RabbitMQ?",
-      "start": 1016260,
-      "end": 1041349,
-      "confidence": 0.692577777777778,
-      "channel": null,
-      "speaker": "B"
-    },
-    {
-      "text": "Also jedes Kreuzfahrtschiff hat auf jeden Fall so ein kleines Paddelboot und wenn du möchtest ist für ein kleines Paddelboot bestimmt auch ein Schiff für dich, ja.",
-      "start": 1042180,
-      "end": 1048872,
-      "confidence": 0.6945185185185188,
-      "channel": null,
-      "speaker": "A"
-    },
-    {
-      "text": "Jetzt hast du die ganzen RabbitMQ-Fans schon beleidigt, dass es nur ein BattleBot ist.",
-      "start": 1049262,
-      "end": 1053366,
-      "confidence": 0.5415714285714286,
-      "channel": null,
-      "speaker": "B"
-    },
-    {
-      "text": "Also RabbitMQ ist schon ein Schiff, muss man schon sagen. Aber prinzipiell ist es halt der Marktführer. Es ist ein Open-Source-Message-Broker. Und als Message-Broker bezeichnet man eigentlich eine neue Technologie-Komponente, die sich primär um den Anwendungsfall von Message-Queuing kümmert. Das ganze Ding ist in Erlang geschrieben. Warum ist das wichtig zu erwähnen? Das Besondere an Erlang An der Sprache ist, dass sie speziell um die Fähigkeiten von Parallelität, hohe Verfügbarkeit, Fehlertoleranz und das Auswechseln von Modulen zur Laufzeit entwickeln wurde. Damals primär für die Telekommunikationsindustrie, wurde alles in Ericsson entwickelt, deswegen eher lang, heißt auch Ericsson Language für die Leute, die sowas zum ersten Mal hören. Und ich erwähne das, weil diese Sprache schon recht prädestiniert ist für ein verteiltes System, wie zum Beispiel eine Message-To-Server.",
-      "start": 1053946,
-      "end": 1104087,
-      "confidence": 0.8415873015873011,
-      "channel": null,
-      "speaker": "A"
-    },
-    {
-      "text": "Wie viel Kontakt habe ich da zu diesem Erlang, wenn ich jetzt diese Software verwende, muss ich Erlang verstehen irgendwie?",
-      "start": 1104387,
-      "end": 1110833,
-      "confidence": 0.7338000000000001,
-      "channel": null,
-      "speaker": "B"
-    },
-    {
-      "text": "Für die Anwendung vom System eher nicht, für den Betrieb musst du auch kein Erlang lesen können. Wenn du ein RabbitMQ Cluster aufsetzen möchtest, kommst du dann mal kurz in Berührung mit so Sachen wie einem Erlang-Cookie und Co. und Erlang-Virtuellen Maschinen und so weiter und so fort.",
-      "start": 1110873,
-      "end": 1127148,
-      "confidence": 0.7904791666666665,
-      "channel": null,
-      "speaker": "A"
-    },
-    {
-      "text": "Okay, aber für den normalen Anwendungsfall kann ich ja einfach losstarten.",
-      "start": 1127802,
-      "end": 1131383,
-      "confidence": 0.5030909090909091,
-      "channel": null,
-      "speaker": "B"
-    },
-    {
-      "text": "Der normale Anwendungsfall, da wirst du eigentlich mit Erlang nicht in Kontakt kommen, weil die ganze Sache eigentlich um das AMQP-Protokoll gebaut ist, das sogenannte Advanced Messaging Queuing Protocol. Ist ein offener Standard seit 2011. Und weil es ein toller offener Standard ist, gibt's natürlich diverse Client-Libraries in Java, .NET, Ruby, Python, PHP, JavaScript, Go, Objective-C, Swift, Rust. Und mich würd auch nicht wundern, wenn eins in Lowell-Code gibt.",
-      "start": 1131403,
-      "end": 1157432,
-      "confidence": 0.7910144927536231,
-      "channel": null,
-      "speaker": "A"
-    },
-    {
-      "text": "Das heißt eigentlich, wenn ihr das verwendet, dann in meiner Sprache ist das komplett abstrahiert und ihr verwendet dann nur diese Library oder den Client, der sich dann um alles kümmert.",
-      "start": 1157892,
-      "end": 1167054,
-      "confidence": 0.7925483870967741,
-      "channel": null,
-      "speaker": "B"
-    },
-    {
-      "text": "Genau. Und diese Client Library, die spricht dann AMQP. AMQP selbst ist ein binäres Netzwerkprotokoll, was damals in der Bankenwelt erfunden wurde. Und zwar ist es recht interessant, wo die ganze Sache herkommt. 2003 haben Mitarbeiter bei JP Morgan die ganze Sache entwickelt, haben gesagt, hey, damals war, JMS so ein Riesending. JMS, falls du dich erinnerst, war Jakarta Messaging, ganz früher Java Messaging Service. Also du merkst schon, wir sind schon wieder ganz in der Java-Welt. Und da sind wir natürlich in der kompletten Banken- und Finanzindustrie. Und die ganze Banken- und Finanzindustrie, die war nämlich relativ groß im Bereich MOM. Und MOM steht für Message-orientierte Middleware.",
-      "start": 1167094,
-      "end": 1209220,
-      "confidence": 0.794277777777778,
-      "channel": null,
-      "speaker": "A"
-    },
-    {
-      "text": "Also langsam haben wir ein Bingo, aber in dieser Java-Welt ist es immer das Gleiche, diesen Abkürzungen.",
-      "start": 1210086,
-      "end": 1215148,
-      "confidence": 0.6814705882352943,
-      "channel": null,
-      "speaker": "B"
-    },
-    {
-      "text": "So, und die Jungs und Mädels dachten sich, Hämmer, pass mal auf, wär doch ziemlich cool, wenn wir mal einen Standard haben, und der vielleicht sprachunabhängig ist. Und so haben die angefangen, AMQP zu entwickeln. Und so, wie es halt natürlich immer ist, wenn so eine große Bank wie JP Morgan Chase mit so was um die Ecke kommt, dann sagen die anderen Banken, so wie die Bank of America, die Barclays Bank, Goldman Sachs, bla bla bla, Jungs, was macht ihr da? Ihr revolutioniert gerade irgendwie unsere Message-Mittelwehr. Da will ich mitmischen. So und so hat sich dann ein Konsortium aus Finanzinstitutionen entwickelt. Natürlich war da auch Reddit und 4MWare und Microsoft und Cisco dabei. Und die haben dann angefangen an dem offenen Standard da rumzuschrauben. Der Erfolg von AMQP kam eigentlich daher, dass AMQP eigentlich alle Features von dem vorherigen JMS, also von dem Jakarta Messaging, mit implementiert. Das bedeutet, die ganzen Finanzindustrien konnten also eigentlich direkt auf den neuen Standard wechseln.",
-      "start": 1215528,
-      "end": 1275153,
-      "confidence": 0.8141158536585363,
-      "channel": null,
-      "speaker": "A"
-    },
-    {
-      "text": "Heißt das, ich brauche gar keinen Revit MQ Client, sondern kann einen allgemeinen AMQP Client verwenden und da kann dann kommunizieren mit Revit MQ?",
-      "start": 1275953,
-      "end": 1285777,
-      "confidence": 0.7919583333333331,
-      "channel": null,
-      "speaker": "B"
-    },
-    {
-      "text": "Genau, du bist ja jetzt nicht an Revit MQ gebunden. Du kannst auch sowas anders machen wie Active MQ oder einen JBoss AMQ oder SWIFT MQ oder von mir aus auch bei Microsoft Azure gibt es den Azure Service Bus. All die supporten auch das AMQP Protokoll, was seit 2011 in Version 1 standardisiert ist. Und von mir aus kannst du jetzt auch deinen eigenen Message Queue Server schreiben, der AMQP spielt.",
-      "start": 1285817,
-      "end": 1312667,
-      "confidence": 0.7275277777777777,
-      "channel": null,
-      "speaker": "A"
-    },
-    {
-      "text": "Das klingt für mich jetzt eigentlich alles sehr schrecklich. Für mich als Open-Source-Mensch, der irgendwie leichtgewichtige Sachen haben will und du bekommst da jetzt mit irgendwelchen Java- und Bankengeschichten und schlag mich tot, ist das was für mein Open-Source-Projekt oder verheirate ich mich dann mit irgendwelchen Java-Enterprise-Zeug?",
-      "start": 1313378,
-      "end": 1332521,
-      "confidence": 0.7722340425531917,
-      "channel": null,
-      "speaker": "B"
-    },
-    {
-      "text": "Mit Java hast du nix am Hut und ich bin bei weitem kein JVM-Freund, aber mit Java hast du nix am Hut und ja, RabbitMQ ist halt schon nicht ganz leichtgewichtig, aber es ist immer die Frage, was brauchst du? Willst du eigentlich nur eine Warteschlange haben, dann ist dein Datenbank-Anwendungsfall, den du am Anfang erwähnt hast, vielleicht auch gar nicht so verkehrt. Möchtest du das gar nicht in der Datenbank implementieren, weil du vielleicht gar keine relationale Datenbank hast, kannst du natürlich auch ohne Probleme dir etwas leichteres ins Haus holen, wie zum Beispiel Amazon SQS, was für Simple Queuing Service steht. Das bietet dir nicht die Features an, die dir ein dedizierter Message Broker zur Verfügung stellt, sondern nur eine simple Warteschlange. Aber da muss ich dir leider mit dieser Consulting-Antwort kommen, it depends.",
-      "start": 1332941,
-      "end": 1379538,
-      "confidence": 0.7962794117647056,
-      "channel": null,
-      "speaker": "A"
-    },
-    {
-      "text": "Was wären denn jetzt so coole advanced features?",
-      "start": 1379818,
-      "end": 1382460,
-      "confidence": 0.5443749999999999,
-      "channel": null,
-      "speaker": "B"
-    },
-    {
-      "text": "In der Einleitung hatten wir simpel erwähnt, dass eine Message Queue aus drei Komponenten besteht. Jemanden, der die Nachricht erzeugt, einen Producer. Jemanden in der Mitte, die sogenannte Warteschlange, die Queue. Und jemand am Ende, der die Nachricht aus der Queue nimmt und verarbeitet, der Consumer. Jetzt ist es doch nun mal so, dass das eine sehr, sehr vereinfachte Ansicht auf die Problemstellung ist. Denn wenn du über die Zustellung von Nachrichten sprichst, dann kommen dir auch relativ schnell komplexe Szenarien in den Sinn. Nehmen wir zum Beispiel mal den Anwendungsfall, du hast eine Nachricht, die möchtest du in mehrere Queues packen. Der Wolfgang lädt auf Twitter ein neues Avatar hoch und die Information, dass dieses Avatar, dieses Bild jetzt verarbeitet werden muss, soll in vier verschiedenen Queues. Eine Queue, die konvertiert das nach PNG, eine nach JPEG und die dritte nach SVG und die vierte geht ans AI-Modell, was dann mit Hilfe deines Bildes wieder das Modell trainiert. Wie würdest du sowas zum Beispiel mit einer Datenbanklösung machen? Du würdest mit hoher Wahrscheinlichkeit eine Nachricht mit vier Inserts in vier verschiedene Tabellen schreiben, oder?",
-      "start": 1382500,
-      "end": 1442377,
-      "confidence": 0.8330702702702703,
-      "channel": null,
-      "speaker": "A"
-    },
-    {
-      "text": "Wäre auf jeden Fall eine Möglichkeit, ja.",
-      "start": 1442657,
-      "end": 1444598,
-      "confidence": 0.3032857142857143,
-      "channel": null,
-      "speaker": "B"
-    },
-    {
-      "text": "Bei einem dedizierten Message Broker hast du halt so Konstrukte drumherum wie Exchanges und Routes. Das bedeutet, du hast auf der einen Seite vier Warteschlangen, aber vor den vier Warteschlangen hast du so eine Art Loadbalancer geschaltet. Deine Applikation schickt nur die Nachricht, Wolfgang hat ein neues Bild hochgeladen an den Loadbalancer, an den sogenannten Exchange, und der Exchange kümmert sich dann um die Verteilung deiner Nachricht in vier verschiedene Queues, abhängig von der Konfiguration von dem Exchange. Und dann kannst du sagen, hey lieber Loadbalancer, also hey lieber Exchange, da gibt es noch einen Routing Key. Dein Routing Key kann zum Beispiel das Format, in dem du das Bild hochgeladen hast, PNG, JPEG und Co. Weil wenn du PNG hochgeladen hast, muss die Nachricht ja nicht in die PNG Queue rein, weil ein PNG nach PNG konvertieren wäre ein bisschen doof. Du kannst dann anhand von Regeln sagen, okay, in welche Queues diese Message dann inserted werden soll.",
-      "start": 1444638,
-      "end": 1497334,
-      "confidence": 0.7568805031446538,
-      "channel": null,
-      "speaker": "A"
-    },
-    {
-      "text": "Also da kann man ja gewisse Logik hinterlegen. Genau.",
-      "start": 1497374,
-      "end": 1499999,
-      "confidence": 0.7345555555555556,
-      "channel": null,
-      "speaker": "B"
-    },
-    {
-      "text": "Und dann kannst du halt die Nachrichten in die verschiedenen Queues routen. Du kannst halt sagen, okay, route die bitte von einem Exchange in eine Queue. Oder du kannst ein Fanout machen. Jede Nachricht, die an diesen Exchange kommt, geht in alle Queues. Oder du kannst anhand von Regeln der Nachricht in spezifische Queues routen, zum Beispiel in drei von fünf oder ähnliches. Wenn wir von solchen Features reden, reden wir aber auch von Sachen wie Priority Queues oder Priority Messages. Mit hoher Wahrscheinlichkeit, wenn du mehr und mehr Message Queuing in deinem System verwendest, wirst du auch Nachrichten haben, die einen höheren Stellenwert haben als andere.",
-      "start": 1501123,
-      "end": 1536060,
-      "confidence": 0.7742429906542055,
-      "channel": null,
-      "speaker": "A"
-    },
-    {
-      "text": "Meine haben primär immer höchste Priorität. Kann man das implementieren? Wenn der User Wolfgang dran ist, werden immer priorisiert.",
-      "start": 1536100,
-      "end": 1543466,
-      "confidence": 0.7141578947368421,
-      "channel": null,
-      "speaker": "B"
-    },
-    {
-      "text": "Genau das kann man tun. Nehmen wir mal ein Beispiel. Die Verarbeitung deiner Finanzdaten sind mit hoher Wahrscheinlichkeit deutlich wichtiger als die Konvertierung deines Avatars. Oder die Newsletter sind mit hoher Wahrscheinlichkeit wichtiger als die Verarbeitung deiner Log-Dateien. Mithilfe von Priority-Warteschlangen oder Priority-Nachrichten kannst du halt den Consumern, also den Workern, die deine Nachricht verarbeiten, wirklich sagen, okay, behandle die mal bitte mit der Priorität. Du kannst aber auch sagen, hey, alle Nachrichten, die ich in eine spezifische Warteschlange packe, haben nur eine gewisse Gültigkeit, sogenannte Time-to-Live-Nachrichten. Und wenn die in der Zeit nicht verarbeitet werden, entfallen die. Der Grund für die, warum die nicht verarbeitet werden, kann vielfältig sein. Entweder weil da gerade keiner auf dieser Queue lauscht oder weil da zu viel drauf ist oder oder oder.",
-      "start": 1544126,
-      "end": 1590832,
-      "confidence": 0.7733023255813958,
-      "channel": null,
-      "speaker": "A"
-    },
-    {
-      "text": "Wie mache ich das dann mit Logging und Monitoring? Ich muss das ja irgendwie meistens zumindestens mitbekommen, wenn da irgendwas schief geht. Und habe ich da dann auch Schnittstellen, um irgendwelche Monitoring-Tools und ähnliche Sachen anzubinden? um zu sehen zum Beispiel, wie viele Messages jetzt aufgrund dem TTL nicht verarbeitet worden sind oder oder verworfen worden sind.",
-      "start": 1590872,
-      "end": 1611483,
-      "confidence": 0.8071754385964914,
-      "channel": null,
-      "speaker": "B"
-    },
-    {
-      "text": "All die Informationen gibt ihr RabbitMQ raus, entweder in einem schönen Dashboard oder von mir aus auch als Prometheus-Exporter, damit du die im Grafana haben kannst oder oder oder. Sowas ist alles mitgeliefert. Eins der Killer-Features, die eigentlich bei jedem dedizierten Message-Broker verfügbar ist, ist das sogenannte Message-Acknowledgement und die Rejections. Das bedeutet, du hast einen Consumer, der connectet sich zu einer Queue und sagt, lieber Message Broker, falls eine neue Nachricht reinkommt, gib mir die mal. Der Message Broker liefert diese Nachricht dann an den Consumer und reserviert diese Nachricht auf den Message Broker und hält sie vor, dass kein zweiter Consumer diese selbe Nachricht zugestellt bekommt. Mein Consumer, der die Nachricht jetzt hat, kann die verarbeiten und kann am Ende der Verarbeitung sagen, acknowledged. Und durch dieses Acknowledged teilt der Consumer dem Message Broker mit, diese Nachricht wurde erfolgreich verarbeitet.",
-      "start": 1611503,
-      "end": 1666378,
-      "confidence": 0.7780704225352113,
-      "channel": null,
-      "speaker": "A"
-    },
-    {
-      "text": "Das müsste man in meiner Datenbanklösung natürlich alles selber programmieren, müsste damit Datenbanktransaktionen herum hantieren und vielleicht irgendwie zwischendrin in die Tabelle speichern. Das ist aktuell in Bearbeitung. Dann was passiert, wenn die Transaktion ausläuft, wenn der Broker weg stirbt? Also diese ganzen Sachen müsst ihr dann implementieren und vor allem verstehen und bei einem Message Broker hat sich da jemand beziehungsweise meistens eine Gruppe schon jahrelang Gedanken darüber gemacht, wie man die ganzen Edge Cases abfängt und behandelt.",
-      "start": 1666959,
-      "end": 1698281,
-      "confidence": 0.8233797468354427,
-      "channel": null,
-      "speaker": "B"
-    },
-    {
-      "text": "Richtig, und das ist nämlich der Killer-Unterschied. Und wenn wir jetzt von diesem Message Acknowledgement sprechen, da reden wir von einem Happy Pass. Aber was passiert, wenn da mal was schief geht? Der Gegensatz zum Message Acknowledgement sind Message Rejections. Das bedeutet, stell dir vor, du kriegst eine Nachricht als Consumer, verarbeitest die, und die Verarbeitung ist aber nicht erfolgreich. Da kannst du das Gegenteil von Acknowledgement machen, du kannst sie rejecten, Und wenn du die rejectest, dann geht die Nachricht zurück an den Message-Broker und der Message-Broker verteilt diese Nachricht an einen anderen Consumer weiter.",
-      "start": 1699101,
-      "end": 1730454,
-      "confidence": 0.7892604166666666,
-      "channel": null,
-      "speaker": "A"
-    },
-    {
-      "text": "Kann man da auch dann irgendwie Regeln drüber legen? Zum Beispiel, wenn jetzt ein E-Mail-Versand fehlschlägt, dass der einfach erst in 10 Minuten wieder probiert wird oder sowas?",
-      "start": 1730474,
-      "end": 1738598,
-      "confidence": 0.7504642857142859,
-      "channel": null,
-      "speaker": "B"
-    },
-    {
-      "text": "Ob RabbitMQ selbst jetzt gerade so Delayed Messages kann, weiß ich jetzt gerade nicht. Müsste man nachgucken. Sowas kann man aber natürlich relativ einfach bauen. Und jetzt haben wir gerade von diesem Acknowledgement und dem Reactions gesprochen. Das machst du ja aktiv. Aber was passiert, wenn der Consumer einfach gar keine Rückmeldung kriegt? Der kriegt eine Nachricht und Timed Out, stirbt oder ähnliches. Dann kannst du eine Dead Letter Queue einrichten. Eine Dead Letter Queue ist eine zweite Warteschlange, die nur dafür da ist, die nicht verarbeiteten Nachrichten bzw. die Nachrichten im Fehlerfall abzufangen. Und das ist natürlich für Entwickler ein Traum, weil dann kannst du nämlich in diese Warteschlange reingucken und sagen, okay, was ist an dieser Nachricht jetzt so speziell, dass diese nicht erfolgreich verarbeitet werden konnte? Und so kannst du dein System kontinuierlich verbessern, Fehlerfälle rausbügeln usw. Und du kannst diese Nachrichten aus dem Dead Letter Queue natürlich wieder in die Original Queue einspielen und somit wirklich sicherstellen, dass all deine Nachrichten verarbeitet werden.",
-      "start": 1738978,
-      "end": 1798719,
-      "confidence": 0.7697185628742516,
-      "channel": null,
-      "speaker": "A"
-    },
-    {
-      "text": "Aber ich muss natürlich da auch reinschauen, wenn ich das einfach nur blind laufen lasse, dann habe ich natürlich irgendwann ein Problem, wenn die Messages nicht verarbeitet werden, wenn ich das nicht sauber monitor das ganze. Also ich habe schon wieder das Problem, dass ich eine zusätzliche Komponente habe, die ich auch verstehen muss, monitoren muss, dementsprechend reagieren muss.",
-      "start": 1799010,
-      "end": 1817667,
-      "confidence": 0.7609152542372879,
-      "channel": null,
-      "speaker": "B"
-    },
-    {
-      "text": "Ja alles richtig, aber du kaufst ja auch keinen Neuwagen und fährst dann einfach 200.000 Kilometer ohne Ölwechsel. Also die neue Komponente ist halt genauso wie jedes andere Teil in deinem Software-Stack. Und wenn du nicht drum kümmerst, dann rostet das natürlich ebenfalls.",
-      "start": 1817707,
-      "end": 1829718,
-      "confidence": 0.7544418604651162,
-      "channel": null,
-      "speaker": "A"
-    },
-    {
-      "text": "Aber ich muss mir halt im Klaren sein, dass ich mir da wieder was zusätzlich reinhole und was man vor allem auch verstehen muss. Und gerade in dem Bereich ist es ja auch gar nicht so leicht, immer alles zu verstehen, gerade so Asynchronität, Fehlerfälle, diese ganzen Garantien oder eben nicht Garantien, ob etwas ausgeliefert wird, nur einmal ausgeliefert wird. Also es ist schon auch ein komplexes Thema, mit dem man sich beschäftigen muss. Das ist nicht einmal install und dann läuft alles, sondern man sollte sich schon ein bisschen damit beschäftigen.",
-      "start": 1830155,
-      "end": 1854750,
-      "confidence": 0.777260869565217,
-      "channel": null,
-      "speaker": "B"
-    },
-    {
-      "text": "Und das, meine ich ja genau, ist der große Unterschied zu deiner Datenbanklösung. Deine Datenbanklösung ist nichts Falsches. Doch die Frage ist, möchtest du dir all diese Gedanken, die sich eine Gruppe von sehr intelligenten Menschen gemacht hat, für diese Anwendungsfälle selbst machen und neu programmieren, oder möchtest du einfach was Vorgefertigtes nehmen?",
-      "start": 1854910,
-      "end": 1871936,
-      "confidence": 0.8120943396226413,
-      "channel": null,
-      "speaker": "A"
-    },
-    {
-      "text": "Wenn ich jetzt sowas verwende, wie du erwähnt hast mit der Cloud zum Beispiel von Amazon, dieses SQS, muss ich mir dann weniger Gedanken machen? Ist dieses Simple dann so simple, dass ich es einfach verwenden kann?",
-      "start": 1871976,
-      "end": 1884921,
-      "confidence": 0.666,
-      "channel": null,
-      "speaker": "B"
-    },
-    {
-      "text": "Ja, ist es, aber du kannst jetzt dann auch nur simple Anwendungsfälle abbilden, beziehungsweise brauchst mehr Glue-Code drumherum. Nehmen wir mal ein Beispiel. Bei SQS gibt es jetzt keinen simplen Weg, eine Nachricht an mehrere Consumer zu stellen, weil was du hast, ist du hast eine Queue, da packst du eine Nachricht rein und diese Queue wird von einem Worker verarbeitet. Du hast jetzt nicht sowas wie den Exchange, den sogenannten Load Balancer, von dem ich gerade gesprochen habe. Das müsstest du dann selbst bauen, wie du hast eine Lambda Function an deiner SQS und immer wenn eine Nachricht in die erste Queue reinkommt, nimmt die Lambda Function die Nachricht und packt die in drei andere Queues auf Basis von deinen Regeln. Und diese Regeln musst du alle selbst in der Lambda Function dann programmieren, wo du die beim Exchange, bei RabbitMQ zum Beispiel, ganz einfach hinterlegen kannst.",
-      "start": 1884961,
-      "end": 1936408,
-      "confidence": 0.7721486486486487,
-      "channel": null,
-      "speaker": "A"
-    },
-    {
-      "text": "Aber das Monitoring muss ich trotzdem noch machen. Dead Letter Queue oder sowas.",
-      "start": 1936448,
-      "end": 1941092,
-      "confidence": 0.3776153846153847,
-      "channel": null,
-      "speaker": "B"
-    },
-    {
-      "text": "Eine Dead Letter Queue gibt es zum Beispiel bei SQS dann gar nicht. Das müsstest du dann auch alles selbst bauen. Da würdest du dann die klassische Amazon Cloud-Lösung für Monitoring, CloudWatch und Co. nehmen. Bei Amazon selbst gibt es aber neben SQS auch noch Amazon MQ, was ein vollständig verwalteter Open-Source-Message-Broker ist. Da weiß ich gar nicht, ob da jetzt hinter einem Rabbit MQ steht oder nicht. Aber mich würde sehr stark wundern, wenn der sehr weit weg von den RabbitMQ Anwendungsfällen ist. Nur das ist dann natürlich bei weitem nicht mehr so simpel wie SQS, der Simple Queuing Service von Amazon.",
-      "start": 1941392,
-      "end": 1976083,
-      "confidence": 0.8100873786407765,
-      "channel": null,
-      "speaker": "A"
-    },
-    {
-      "text": "Damit wir jetzt nicht nur Werbung für Amazon machen, Google hat natürlich das gleiche PubSub und wahrscheinlich gibt es noch ganz viele andere Angebote, die gehostet sind. Zu Google PubSub, was ist da der Unterschied?",
-      "start": 1976123,
-      "end": 1987255,
-      "confidence": 0.7679142857142855,
-      "channel": null,
-      "speaker": "B"
-    },
-    {
-      "text": "Ja, Google hat jetzt nicht genau das gleiche. Und zwar ist das jetzt ein Publish-Subscribe, weil Publish-Subscribe, also Pub-Sub, ist ein bisschen was anderes als Message-Queuing. Bei Publish-Subscribe sagt man üblicherweise ist, man publischt was und wenn, zum Beispiel in eine Warteschlange, aber wenn da keiner an der Warteschlange horcht, dann ist das, ich schrei in den Wald hinein und die Message geht verloren. Wohin du gegen bei Message Queuing in der Regel eine Warteschlange dazwischen hast, die dann, auch wenn es gerade keine Consumer gibt, deine Nachricht zwischenspeichert. Wohingegen bei PubSub in der Regel kein persistenter Storage mittendrin. Das ist so der klassische Unterschied zwischen Message Queuing und PubSub. Wenn kein Subscriber da ist, dann geht die Published Message auch einfach verloren. Was im Cloud-Umfeld in der Regel nicht passiert, weil du bei Google zum Beispiel in der Regel eine Cloud-Funktion danach hast, die eigentlich immer an deiner Pub-Sub-Queue hängt.",
-      "start": 1987735,
-      "end": 2044620,
-      "confidence": 0.8207947019867547,
-      "channel": null,
-      "speaker": "A"
-    },
-    {
-      "text": "Ja, vor allem geht es ja darum, dass die subscribed ist. Das heißt nicht, dass die sofort reagieren muss, weil es ist ja genauso ein Worker, der eine Minute später das konsumieren kann, aber er muss halt registriert sein, dass er hocht auf diese Messages, weil intern wird das ja genauso zwischengespeichert irgendwo bei Google. Aber vom Konzept her ist es natürlich was anderes.",
-      "start": 2044640,
-      "end": 2061647,
-      "confidence": 0.7925312499999999,
-      "channel": null,
-      "speaker": "B"
-    },
-    {
-      "text": "Genau.",
-      "start": 2061687,
-      "end": 2062067,
-      "confidence": 0.827,
-      "channel": null,
-      "speaker": "A"
-    },
-    {
-      "text": "Wenn ich mir jetzt nicht dieses große Schiff an Bord holen will, aber auch keine Cloud-Lösung verwenden will, gibt es irgendwelche anderen simpleren Lösungen abseits von meiner Datenbank?",
-      "start": 2062087,
-      "end": 2071293,
-      "confidence": 0.8400357142857144,
-      "channel": null,
-      "speaker": "B"
-    },
-    {
-      "text": "Was sehr viele Leute nutzen als Alternative ist zum Beispiel Redis. Und Redis würde man jetzt eigentlich nicht in Verbindung mit Message Queuing bringen, Aber.",
-      "start": 2071614,
-      "end": 2079998,
-      "confidence": 0.8040800000000001,
-      "channel": null,
-      "speaker": "A"
-    },
-    {
-      "text": "Du machst das, weil du einfach so ein großer Redis-Fan bist. Das wissen wir jetzt alle mittlerweile.",
-      "start": 2080039,
-      "end": 2085521,
-      "confidence": 0.6411176470588235,
-      "channel": null,
-      "speaker": "B"
-    },
-    {
-      "text": "Redis hat einfach zwei oder fast sogar drei Komponenten, die für diesen Anwendungsfall ganz gut zu gebrauchen sind. Auf der einen Seite hat Redis auch eine ganz klassische PubSub-Methode, ähnlich wie Google PubSub. Schmeißt du da eine Nachricht rein. Und wenn Subscriber da sind, kriegen die die. Das ist ein 1 zu N Modell. Die zweite prädestinierte Datenstruktur sind eigentlich ganz klassische Listen. Weil eigentlich, wenn du ganz weit weg gehst und die Details mal ausblendest, ist eine Message Queue auch eigentlich eine Liste. Du packst oben einen neuen Eintrag rein, deine neue Nachricht und nimmst die unten wieder raus. Und das kannst du natürlich mit Redis auch machen. Man muss natürlich ein bisschen aufpassen, wie groß deine Queue, also deine Liste wird, aber mit klassischen Listenbefehlen wie Push und Pop kannst du dir natürlich da auch eine Art persistente Wartestange aufbauen.",
-      "start": 2085621,
-      "end": 2135689,
-      "confidence": 0.7949295774647887,
-      "channel": null,
-      "speaker": "A"
-    },
-    {
-      "text": "Musst aber natürlich im Hintergrund auch wieder viel im Kopf mitdenken und dementsprechend beachten. Also du bekommst jetzt kein vollwertiges Message Queuing System da.",
-      "start": 2135729,
-      "end": 2144911,
-      "confidence": 0.7885833333333334,
-      "channel": null,
-      "speaker": "B"
-    },
-    {
-      "text": "Ja, all die Anwendungsfälle mit Exchange und Routing und was weiß der Gei nicht noch alles, Dead Letter Queues, Time to Live, obwohl Time to Live hat man bei Redis auch, aber all diese spezifischen Sachen wie Message Acknowledgement, Rejections und so weiter, all sowas sind natürlich da nicht, nicht da, weil Redis Listen sind halt nicht auf Message Queue ausgelegt. Und die dritte Komponente ist, die es noch gar nicht so lange bei Redis gibt, da geht es um Redis Streams. Was nicht Message Queueing ist, viele Leute missbrauchen Streams aber als Message Queueing.",
-      "start": 2145291,
-      "end": 2178436,
-      "confidence": 0.7970631578947367,
-      "channel": null,
-      "speaker": "A"
-    },
-    {
-      "text": "Es ist ein interessanter Punkt, wo siehst du den Unterschied zu Streams? Wo ist der Unterschied zwischen einem Message Queue und einem Streaming-System oder Streams ganz allgemein?",
-      "start": 2178476,
-      "end": 2188044,
-      "confidence": 0.7107777777777777,
-      "channel": null,
-      "speaker": "B"
-    },
-    {
-      "text": "Nur mal ganz zur Erklärung, der Begriff Streams kam eigentlich, also den gibt es schon Ewigkeiten, In den letzten paar Jahren hat er sehr viel Popularität erhascht durch Kafka, durch Apache Kafka. Und Apache Kafka hatte die Eigenheit, wie Streams implementiert wurden. Und zwar, dass es ein Append-Only-Log war. Also das bedeutet, man hat einfach immer nur Daten dran gepackt und dann auf Disks persistiert. Ganz High-Level gesprochen. Alle Kaffee-Experten würden mich glaube ich jetzt gerade in der Luft zerreißen. Als das so populär wurde, haben andere Systeme wie zum Beispiel RabbitMQ oder wie zum Beispiel Redis auch dieses AppendOnly-Log implementiert. Wo ist jetzt genau der Unterschied zwischen Message Queueing und Streams? Auf der einen Seite ermöglichen Streams ein sogenanntes Replay oder Time Traveling. Die Nachrichten innerhalb eines Streams werden in der Regel persistiert und wenn dort ein Consumer diese Nachrichten konsumiert, werden diese Nachrichten nicht aus der Queue gelöscht. Weil es ist keine Queue, es ist eigentlich nur ein Append-Only-Log. Und der Consumer konsumiert die Nachrichten und speichert sich intern. Oh, ich habe die fünfte Nachricht schon gelesen, deswegen muss ich bei der sechsten wieder anfangen. Wohingegen das Message-Queue-System die Message an den Consumer zustellt und dann diese zugestellte Nachricht nicht für einen zweiten Consumer verfügbar ist. Das ermöglicht natürlich auch, dass du in einem Stream alle Daten replayen kannst, beziehungsweise Time-Traveling machen kannst. und zwar einfach zu der zehnten, zwanzigsten oder vierzigsten Nachricht springen kannst.",
-      "start": 2188064,
-      "end": 2280574,
-      "confidence": 0.8294135021097044,
-      "channel": null,
-      "speaker": "A"
-    },
-    {
-      "text": "Also wenn man zum Beispiel jetzt ein Use Case annimmt, man verarbeitet die Logs von ganz vielen Servern und speichert die in einem Elasticsearch Cluster ab und mir schmiert dieser ganze Elasticsearch Cluster ab, wenn ich das über ein Message Queuing System gelöst habe, dass die Logdaten weitergeleitet werden. Dann habe ich ein Problem, den wieder aufzubauen von Null, wenn der mir abschmiert und alle Daten weg sind. Aber wenn ich einen Stream habe, kann der einfach wieder bei Null beginnen, kann sich wieder alles einlesen, wird zwar eine lange Zeit brauchen, aber dann habe ich alle Daten wieder in meinem Elasticsearch Cluster drinnen. Das heißt, es ist fast so wie ein Backup, wenn man das so sehen will.",
-      "start": 2281114,
-      "end": 2316718,
-      "confidence": 0.8002436974789918,
-      "channel": null,
-      "speaker": "B"
-    },
-    {
-      "text": "Wenn man das so sehen möchte, es gibt in der Streaming-Community ja die große Diskussion, ist Kafka eine Datenbank? Und da gibt es bestimmt Gründe dafür und Gründe dagegen. Die Frage werden wir hier nicht beantworten, aber so kann man das sehen.",
-      "start": 2317258,
-      "end": 2330872,
-      "confidence": 0.8705,
-      "channel": null,
-      "speaker": "A"
-    },
-    {
-      "text": "Aber jetzt hast du schon Kafka erwähnt. Kann ich Kafka jetzt auch verwenden als ein Message-Queuing-System in dem Sinne, wenn ich das zum Beispiel jetzt schon irgendwo in Verwendung habe?",
-      "start": 2330932,
-      "end": 2341462,
-      "confidence": 0.7249333333333332,
-      "channel": null,
-      "speaker": "B"
-    },
-    {
-      "text": "Kannst du, es ist nicht der prädestinierte Anwendungsfall dafür, weil auch diese spezifischen Eigenheiten von einem Message Queue System sind da nicht verfügbar. Der große Unterschied ist, dass du gegebenenfalls mehr Logik im Client, also im Consumer haben musst. Weil der Consumer muss sich mitspeichern, welche Nachricht du bereits konsumiert hast. So Sachen wie Rejection und Acknowledgement gibt's da nicht, wird aber auch eigentlich nicht benötigt, da eine Nachricht ja auch von mehreren Consumern verarbeitet werden kann, was ein großer Unterschied ist. Besonders wenn du einen Use Case hast von sogenannten Large Fanouts, du hast also eine Warteschlange, und ganz viele Consumer müssen eine Nachricht verarbeiten, Dann ist sowas wie Streaming natürlich schon besser. Nehmen wir mal als Beispiel Mobile Push Notifications. Du hast eine Warteschlange, ein Stream, da gehen Push Notifications rein und du hast ganz viele Handys, die darauf lauschen und müssen dann den Ping kriegen, dass jetzt irgendein Angebot verfügbar ist. Dann ist sowas wie Streaming natürlich bevorzugt gegenüber Message Queuing, weil bei Message Queuing müsstest du ganz viele Queues haben, also du müsstest ein Queue pro Handy haben, wenn du so möchtest. Weil wenn die Nachricht verarbeitet ist, dann ist sie ja aus der Queue raus. Also das ist so ein großer Unterschied.",
-      "start": 2342122,
-      "end": 2415333,
-      "confidence": 0.8082801932367144,
-      "channel": null,
-      "speaker": "A"
-    },
-    {
-      "text": "Wobei mit PubSub würde das ganz gut funktionieren, oder? Das ist genau für diesen Use Case auch gemacht worden, dass ich viele Subscriber habe.",
-      "start": 2415373,
-      "end": 2421616,
-      "confidence": 0.7118749999999999,
-      "channel": null,
-      "speaker": "B"
-    },
-    {
-      "text": "Mit PubSub wird das auch funktionieren, mit dem großen Unterschied, dass die Nachricht dann nicht persistent wäre, weil die ist ja dann auch lost.",
-      "start": 2421656,
-      "end": 2429341,
-      "confidence": 0.8510833333333334,
-      "channel": null,
-      "speaker": "A"
-    },
-    {
-      "text": "Nachdem du ja auch bei einer Firma arbeitest, die Kafka hostet, anbietet, Was würdest denn du sagen, wenn du jetzt ein Message Queuing System brauchst, also wirklich nur ein klassisches Message Queuing System? Ist RabbitMQ einfacher aufzusetzen oder Kafka? Weil Kafka ist ja der neue heiße Scheiß und ich will mich eigentlich wirklich mit den neuen Technologien immer beschäftigen, RabbitMQ ist ja schon zu alt.",
-      "start": 2429381,
-      "end": 2451236,
-      "confidence": 0.7769384615384614,
-      "channel": null,
-      "speaker": "B"
-    },
-    {
-      "text": "Das ist eine Scheißfrage. Also das ist wirklich auf deinem Anwendungsfall und welchen Scale du hast. Also wenn wir sagen RabbitMQ ist ein Schiff, dann ist Kafka gegebenenfalls eine Raumstation. Also Kafka und RabbitMQ zu vergleichen ist sehr sehr schwierig, weil die Natur von beiden Systemen ist sehr unterschiedlich. Kafka ist von Haus aus ein verteiltes System, was RabbitMQ von Haus aus nicht ist. RabbitMQ supportet auch Cluster. Ja, alles schön gut, aber... In der Regel betreibt man keinen One-Node-Kafka-Cluster. Ein Kafka-Cluster ist das Minimum, was du eigentlich betreibst mit drei Nodes. Wohingegen beim RabbitMQ du auch ohne Probleme mit einem Active-Passive, also mit einem Zwei-Node-Cluster, super zurande kommen kannst. Es kommt halt wirklich ganz auf deinen Use-Case drauf an, weil da bin ich eher der Fan, nutze das richtige Tool für das richtige Problem. Willst du Streaming oder Message-Queuing machen? Bei Kafka kommt halt eine enorme Komplexität mit, was natürlich auch den Aufbau von einem Cluster supportet, wie zum Beispiel Zookeeper. Klar, da gibt's in der Kafka-Community gerade so Diskussionen oder neue Features wie K-Raft, dass du Zookeeper-less-Kafka-Cluster betreiben kannst und so weiter und so fort. Das ist aber noch gar nicht so weit fortgeschritten. Und da gibt's auch noch so andere geile Features, so wie Tiered Storage, dass du deinen Kafka ... deine Kafka-Daten auf Object-Storage ablegen kannst und so weiter und so fort. Aber du merkst schon, das geht halt schon so super in so recht große Enterprise-Use-Cases, wohingegen ein klassischer RabbitMQ jetzt auch nicht ganz so einfach zu betreiben ist. Aber für Kafka ist halt schon wirklich bevorzugt, dass du da Leute hast, die sich dediziert drum kümmern. Aber es kommt da wirklich drauf an, was du machen möchtest, ja? Also, wenn du wirklich klassisches Message-Queueing hast, dann würde ich dir auch ein Message-Queue-System empfehlen. Hast du Kafka in deinem Stack schon drin, und brauchst alle die dedizierten Message-View-Funktionalitäten nicht, dann könnte man auch überlegen, ob es den Aufwand wert ist, eine neue Komponente in den Stack zu introducen. Ich würde jetzt aber auch nicht ein Message-View-System als Streaming nutzen, weil das sind halt auch andere Anwendungsfälle, weil ein RabbitMQ kriegt in der Regel nicht den High-Performance-Durchsatz wie ein Kafka auf Basis der Detailimplementierung.",
-      "start": 2451256,
-      "end": 2576079,
-      "confidence": 0.7630326086956525,
-      "channel": null,
-      "speaker": "A"
-    },
-    {
-      "text": "Okay, dann gehen wir mal zurück zu Message Queues, weg von Streaming, bleiben wir bei diesem Thema. Wie sieht es denn mit ZeroMQ aus? Weil ich habe immer ganz oft gehört, ZeroMQ ist wie RabbitMQ, nur viel leichtgewichtiger und besser und cooler.",
-      "start": 2576619,
-      "end": 2590877,
-      "confidence": 0.7762619047619046,
-      "channel": null,
-      "speaker": "B"
-    },
-    {
-      "text": "Naja, ZeroMQ ist ja erstmal nur eine Library. Ist ja keine richtige Systemkomponente, also ist ja keine Applikation. ZeroMQ ist eine Library für asynchronen Nachrichtenaustausch. Und ich habe mit ZeroMQ jetzt noch nicht so viel gearbeitet, aber mein Verständnis ist, dass du ZeroMQ unter anderem in deiner Applikation embeddest, wohingegen du RabbitMQ als externe Komponente in deinem Stack betreibst.",
-      "start": 2591257,
-      "end": 2616440,
-      "confidence": 0.7486779661016948,
-      "channel": null,
-      "speaker": "A"
-    },
-    {
-      "text": "Also wenn ich noch einen kleineren Anwendungsfall habe, wo ich jetzt nicht hunderttausende Server habe und irgendwie über Server hinweg und verschiedene Anwendungen das Ganze realisieren muss, dann kann ich mir ZeroMQ holen und das im kleinen Stile in meiner Applikation abbilden, aber habe trotzdem diese Queuing Functionality.",
-      "start": 2616900,
-      "end": 2633925,
-      "confidence": 0.7791249999999997,
-      "channel": null,
-      "speaker": "B"
-    },
-    {
-      "text": "Richtig, natürlich ohne die ganzen Reliability-Garantien, Ausfall und Co. Da musst du dich natürlich selbst drum kümmern, weil das natürlich dann als Embedded Library Part deiner Applikation ist. Aber ja, ich sehe das immer so ein bisschen, und der Vergleich hinkt vielleicht ein bisschen, aber wenn du ein paar Schritte zurückgehst, sehe ich ZeroMQ im Bereich Message Queueing sowie SQLite im Bereich Datenbank. weil du SQLite auch sehr oft in deiner Applikation wirklich embedden kannst, um einen SQL-ähnlichen Storage zu haben. Oder da tue ich jetzt SQLite nichts Gutes, wenn ich sage SQL-ähnlich, weil es ist natürlich schon eine vollwertige Datenbank mit allem Drum und Dran, aber sehr gut, um innerhalb deiner Applikation zu embedden. Und so ist es halt auch ZeroMQ. Ist natürlich unglaublich leichtgewichtig, ne? Also wer auf den Memory-Verbrauch achten muss, wer gar nicht so super viel spezifische MQ-Funktionalitäten braucht, Zero MQ ist auch ein Top-Ding.",
-      "start": 2634365,
-      "end": 2693816,
-      "confidence": 0.8043154362416105,
-      "channel": null,
-      "speaker": "A"
-    },
-    {
-      "text": "Wo würdest du denn Rapid MQ nicht einsetzen? Oder spricht irgendwas gegen Rapid MQ?",
-      "start": 2693876,
-      "end": 2698699,
-      "confidence": 0.7875,
-      "channel": null,
-      "speaker": "B"
-    },
-    {
-      "text": "Man sollte sich halt schon überlegen, ob man RebellionPube betreiben möchte, weil es kann schon ein bisschen tricky werden, wenn man das maintainen möchte. Speziell wenn man einen Cluster betreiben möchte, dann muss man sich halt schon ein bisschen mit dem Unterbau beschäftigen. Also ich rede da von dem von Erlang, von der Erlang VM zum Beispiel. Wenn zwei Erlang-Applikationen über einen Cluster, über einen Server hinweg kommunizieren sollen, dann muss das Erlang-Cookie da sein, richtig gesetzt sein. Also ein bisschen Erlang-Knowledge im Operations-Team würde da schon Sinn machen. Oder Erlang hat auch so eine Embedded-Database, NESIA nennt sich das. Da muss man sich halt schon ein bisschen mit auseinandersetzen. Also wenn du es im Hochverfügbarkeit-Bereich einsetzen möchtest, dann überlegst du dir zweimal, ob du ein RabbitMQ einsetzen möchtest, wenn du zum Beispiel schon Kafka im Stack hast. Also da kommt es wirklich drauf an, hast du ein MQ-Use-Case, also ein Message-Q-Use-Case oder nicht. Die zweite Geschichte ist halt natürlich, welche Garantien brauchst du im Message-Q-Bereich? Also da reden wir schon von diesen harten Problemen wie Exactly-Once-Delivery. Aufgrund der Kombination von komplexem Routing und der pushbasierten Zustellung von RabbitMQ, also so wie RabbitMQ intern die Nachrichten an die Consumer zustellt, supportet RabbitMQ selbst keine Exactly-Once-Delivery, sondern eher At-Least-Once-Delivery.",
-      "start": 2699159,
-      "end": 2785171,
-      "confidence": 0.792221153846154,
-      "channel": null,
-      "speaker": "A"
-    },
-    {
-      "text": "Das heißt meine Newsletter-Abonnentinnen bekommen dann wenigstens garantiert eine E-Mail zugestellt, aber können halt vielleicht auch fünfmal die gleiche bekommen, bei At-Least-Once.",
-      "start": 2785211,
-      "end": 2795217,
-      "confidence": 0.8033181818181819,
-      "channel": null,
-      "speaker": "B"
-    },
-    {
-      "text": "Ja und nein. Also, RabbitMQ stellt die Nachricht aus der Warteschlange minimum einmal zu deinem Consumer, aber auch gegebenenfalls mehrmals. Und da ist es jetzt ganz wichtig, dass die Consumer idempotent geschrieben werden. Das bedeutet, dass sie eine Nachricht mehrfach verarbeiten können, aber immer dasselbe Ergebnis rauskommt.",
-      "start": 2795257,
-      "end": 2815491,
-      "confidence": 0.8668936170212769,
-      "channel": null,
-      "speaker": "A"
-    },
-    {
-      "text": "Was bei E-Mail schwierig ist.",
-      "start": 2816015,
-      "end": 2817656,
-      "confidence": 0.7986,
-      "channel": null,
-      "speaker": "B"
-    },
-    {
-      "text": "Da brauchst du halt irgendwo ein zentrales Log. Hat dieser Kunde diese E-Mail schon erhalten? Und dann würdest du bei einem zweiten Processing sagen, oh, der hat die schon erhalten, deswegen acknowledge ich die einfach mal, weil RabbitMQ die Nachricht zweimal zugestellt hat. Das ist so ein klassisches Pattern bei Message Queueing generell. Und das musst du aber auch dann bei Kafka, bei Streaming beachten. Also das ist jetzt nicht RabbitMQ spezifisch, das ist generell spezifisch zu der asynchronen Verarbeitung von Nachrichten, sei es im Message-Queering-Bereich oder im Streaming-Bereich.",
-      "start": 2817696,
-      "end": 2848151,
-      "confidence": 0.7803146067415729,
-      "channel": null,
-      "speaker": "A"
-    },
-    {
-      "text": "Das heißt, ihr würd mir dann in der Datenbank das Ganze nochmal abspeichern. Mach ich wahrscheinlich sowieso, weil ich ja irgendwie loggen will, wann diese E-Mail ausgesendet wurde oder damit ich irgendwelche Statistiken habe, auch wie viele E-Mails ausgesendet wurden. dann würde ich das nochmal in der Datenbank abspeichern und der Consumer fragt da ab, ist das schon lockt da, wurde das schon ausgesendet und wenn das schon passiert ist, ignoriere das ganze. Aber das klingt schon sophisticated, also ich bin mir nicht sicher, ob das Newsletter Worker wirklich in der Realität auch so machen.",
-      "start": 2848191,
-      "end": 2877404,
-      "confidence": 0.7733684210526314,
-      "channel": null,
-      "speaker": "B"
-    },
-    {
-      "text": "Das weiß ich nicht. Ich habe noch nie ein Newsletter-System selbst geschrieben. Und da ist auch die nächste Frage, ob du sowas selbst schreiben solltest oder nicht einfach einen Service nehmen solltest wie Cleverreach, Mailchimp, Amazon, Schießmichtod, Newsletter-Service, keine Ahnung.",
-      "start": 2877764,
-      "end": 2892413,
-      "confidence": 0.8316250000000001,
-      "channel": null,
-      "speaker": "A"
-    },
-    {
-      "text": "Ja, da geht es ja dann auch mehr um das E-Mail-Versenden. Das ist eigentlich die Kunst, das so zu versenden, dass es nicht im Spam-Folder landet. Also da geht es ja weniger um die Message-Queues, sondern mehr um das Versenden selbst.",
-      "start": 2892673,
-      "end": 2903739,
-      "confidence": 0.7241219512195122,
-      "channel": null,
-      "speaker": "B"
-    },
-    {
-      "text": "Ja, aber unten drunter werden die halt schon ein ähnliches System haben. Weil auch die werden das natürlich nicht alles in einem Request-Response-Behavior abfeiern. Was natürlich auch noch ein Riesenvorteil von RabbitMQ ist, wir hatten vorhin darüber gesprochen, dass die AMQP supporten als Protokoll. Die einzelnen MQ-Server haben natürlich ein Interesse, mehrere Protokolle zu supporten, um natürlich ihre Anwendungsfälle ein bisschen breiter zu fächern. RabbitMQ selbst kann auch MQTT, die ganzen Leute, die sich ein bisschen mit Heimautomatisierung auseinandersetzen, werden da gegebenenfalls jetzt hellhörig, oder aber auch eine Connection via klassisch HTTP und Websockets, was natürlich dann auch recht interessant ist für die einfache Anbindung von existierenden Systemen.",
-      "start": 2903999,
-      "end": 2949482,
-      "confidence": 0.8034629629629628,
-      "channel": null,
-      "speaker": "A"
-    },
-    {
-      "text": "Das ist halt auch der Vorteil von so einem alten System, alt im positiven Sinne, was sich einfach über lange Zeit entwickelt hat, dass der Support von Protokollen gut ist, die Dokumentation, du findest viele Informationen darüber, du bekommst Plugins, Integrationen von anderen Services, Monitoring zum Beispiel oder Authentifizierung. Die ganzen Dinge sind halt schon zigfach gelöst worden und das ist halt auch ein Vorteil, wenn man irgendwas einführen will, weil man da halt einfach guten Support hat. Einerseits auf der Dokumentationsseite, aber andererseits auch auf der Tooling-Seite rundherum in diesem ganzen Ecosystem.",
-      "start": 2950042,
-      "end": 2985978,
-      "confidence": 0.8653440860215054,
-      "channel": null,
-      "speaker": "B"
-    },
-    {
-      "text": "Ich selbst nutze Revit MQ schon seit ein paar Jahren in recht vielen meiner Seitenprojekte und betreibe es in einem Docker-Container mit reingemountetem Storage und bin mega Fan. Ich kann Leute verstehen, die sagen i-bar, Revit MQ, Erlang, Riesenschiff. Ja, ist alles nicht falsch, aber wenn man einmal seinen Kopf um ordentliches Message Queueing, Routing, von Nachrichten, verschiedene Types von Exchanges, diese Art Notebalancer, die ich vorhin erwähnt habe, Priority Queues und Dead Letter Queues. Wenn man da einmal mal den Use Case verstanden hat, dann habe ich das Gefühl, ich habe einen Hammer für jeden Nagel irgendwie. Weil du kannst, also du willst nicht mehr ohne und es ist halt einfach so bequem. Du kannst halt einfach auf Knopfdruck deine Worker hoch und runter skalieren und einfach Lastspitzen abfeiern. Und das Tolle ist, du kannst sogar Metadaten pro Nachricht hinzufügen und das bedeutet, Ich weiß ganz genau, welche Nachricht von welcher App erstellt wurde, welcher Content-Type drin ist, JSON, XML oder ähnliches und kann natürlich durch zusätzliche Header noch so Sachen wie Tracing enablen, was natürlich dann fürs Debugging ein Traum ist.",
-      "start": 2986418,
-      "end": 3052107,
-      "confidence": 0.7852076502732239,
-      "channel": null,
-      "speaker": "A"
-    },
-    {
-      "text": "Okay, ich habe also gelernt, Streaming und Message Queues sind nicht dasselbe. Also Kafka ist nicht unbedingt ein Ersatz für RabbitMQ. Wenn ich es einfacher haben will, ZeroMQ ist eine gute Anlaufstelle oder eines der gehosteten Cloud-Varianten, SQS, PubSub. Aber gibt es auch sicher viel kleinere noch. Man muss ja nicht immer nur die großen verwenden. Ist dann meistens auch kostengünstiger. Aber ich habe auch gelernt, dass der Andi gar nicht so negativ gegenüber den eigenen Implementierungen in der eigenen Datenbank steht. Ich persönlich sehe da schon wieder ganz viele Probleme bei einer eigenen Implementierung in der Datenbank. Also ich persönlich, wenn es irgendwie geht, würde eher auf sowas wie den Zero MQ setzen, weil ich mir einfach selber gar nicht diese Gedanken machen will, was da alles schief gehen könnte und das haben sich andere Leute überlegt und wie der Andi richtig gesagt hat, in dem ganzen Processing und Parallelität verstecken sich viele Hürden und Fallstricke, und denen möchte ich eigentlich gar nicht begegnen.",
-      "start": 3052899,
-      "end": 3114590,
-      "confidence": 0.8247999999999999,
-      "channel": null,
-      "speaker": "B"
-    },
-    {
-      "text": "Ist, glaube ich, informationstechnisch recht interessant, solche Probleme zu lösen. Also, falls ihr mal eine Herausforderung haben wollt, setzt euch doch mal einen Abend hin oder ein ganzes Wochenende und versucht mal so was wie Exactly Once Delivery ordentlich zu implementieren. Da haben sich sehr, sehr viele Programmierer bereits die Zähne und die Haare ausgebissen und ausgerissen.",
-      "start": 3114630,
-      "end": 3132134,
-      "confidence": 0.7682982456140351,
-      "channel": null,
-      "speaker": "A"
-    },
-    {
-      "text": "Können wir ja mal eine eigene Episode darüber machen, weil mich interessieren diese Themen ja brennend, auch mit meinem Datenbank-Background, aber sie interessieren mich nicht, wenn ich am Wochenende irgendwo chill und das System einfach funktionieren muss. Und wenn ich das selber programmiert habe, dann wird es halt meistens genau dann nicht funktionieren, wenn ich eigentlich meine Ruhe haben will.",
-      "start": 3132655,
-      "end": 3151372,
-      "confidence": 0.7969666666666669,
-      "channel": null,
-      "speaker": "B"
-    },
-    {
-      "text": "Lasst uns doch mal wissen, welchen Anwendungsfall ihr mit Message Queueing oder sogar Streaming abgedeckt habt. Vielleicht etwas kurioses dabei wie die Kommunikation oder das Update von Leaderboards bei Massive Multiplayer Online Games oder irgendwie das Rauspuschen von Fußballergebnissen während der WM. Mich würde es interessieren, was ihr so alles abgedeckt habt. und welche Message Queue Systeme ihr so im Einsatz habt. So ein Schiff wie RabbitMQ, irgendeine gehostete Lösung oder vielleicht auch die ganz klassische Implementierung von ich habe eine Datenmarkttabelle, wie Wolfgang es bevorzugt. Gerne über Twitter an atengkiosk oder via E-Mail an stetisch at engineeringkiosk.dev Und lasst.",
-      "start": 3151652,
-      "end": 3191656,
-      "confidence": 0.8078399999999999,
-      "channel": null,
-      "speaker": "A"
-    },
-    {
-      "text": "Uns vielleicht auch wissen, wenn ihr irgendwelche Anbieter, kleinere Anbieter kennt, von coolen Message-Queuing-Systemen. Vielleicht können wir da auch eine kleine Liste zusammenstellen. Es interessiert sicher viele Leute, was es da denn für Alternativen gibt und welche junge Systeme wir da noch nicht auf dem Schirm haben. Und genießt euer Jahr 2023! Tschö! Ciao!",
-      "start": 3191696,
-      "end": 3210475,
-      "confidence": 0.7612962962962962,
-      "channel": null,
-      "speaker": "B"
-    }
-  ],
-  "confidence": 0.7828231344091797,
-  "audio_duration": 3219.0,
-  "webhook_status_code": null,
-  "webhook_auth": false,
-  "summary": null,
-  "auto_highlights_result": null,
-  "content_safety_labels": null,
-  "chapters": null,
-  "sentiment_analysis_results": null,
-  "entities": null
+    "language_code": "de",
+    "audio_url": "https://audio1.redcircle.com/episodes/5f100418-9dc0-463b-9033-bf99e1b6da3c/stream.mp3",
+    "punctuate": true,
+    "format_text": true,
+    "dual_channel": false,
+    "webhook_url": null,
+    "webhook_auth_header_name": null,
+    "webhook_auth_header_value": null,
+    "audio_start_from": null,
+    "audio_end_at": null,
+    "word_boost": [],
+    "boost_param": null,
+    "filter_profanity": false,
+    "redact_pii": false,
+    "redact_pii_audio": false,
+    "redact_pii_policies": null,
+    "redact_pii_sub": null,
+    "speaker_labels": true,
+    "speakers_expected": 2,
+    "content_safety": false,
+    "content_safety_confidence": null,
+    "iab_categories": false,
+    "custom_spelling": null,
+    "disfluencies": false,
+    "sentiment_analysis": false,
+    "auto_chapters": false,
+    "entity_detection": false,
+    "summarization": false,
+    "summary_model": null,
+    "summary_type": null,
+    "auto_highlights": false,
+    "language_detection": false,
+    "speech_threshold": null,
+    "id": "621upjmhoj-db36-4d9f-b92d-4dbcf03abde8",
+    "status": "completed",
+    "error": null,
+    "utterances": [
+        {
+            "text": "Herzlich willkommen zu einer neuen Episode vom Engineering Kiosk. Heute geht es um das Thema Message Queues, also die asynchrone Verarbeitung von Nachrichten durch dedizierte Worker oder auch Consumer genannt. Wir klären, was Message Queues sind und welche klassischen Anwendungsfälle damit abgedeckt werden können, was der Open Source Platzhirsch RabbitMQ als Message Broker so drauf hat, ob eine relationale Datenbank auch als Message Queue genutzt werden kann, wo der Unterschied zu PubSub und Streams ist und was Redis, Kafka und ZeroMQ damit zu tun haben. Und los geht's! Viel Spaß! Lieber Wolfgang, ein frohes neues Jahr. Mich würde mal interessieren, wann standest du das letzte Mal in einer Warteschlange? Wann musstest du mit einer Reihe von Leuten auf etwas warten?",
+            "start": 4025,
+            "end": 51910,
+            "confidence": 0.8117166666666669,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Da, wo ich am meisten warte in letzter Zeit, ist bei der Post, wenn ich irgend so ein dummes Paket, das ich nicht in so einem Automaten abgeben kann, wirklich eine Person überreichen muss zum Zurücksenden von irgendeinem Online-Versand. Und ich ärgere mich jedes Mal wieder.",
+            "start": 52258,
+            "end": 64649,
+            "confidence": 0.7596086956521738,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Also hier in Deutschland kann man dem Paketboten, wenn der kommt, auch die Retouren wieder mitgeben. Geht das bei euch nicht?",
+            "start": 64688,
+            "end": 71636,
+            "confidence": 0.8126666666666666,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Das geht nur bei dir am Land, weil du den persönlich kennst und der noch bei der Feuerwehr ist und ein Kollege aus dem Dorf.",
+            "start": 72176,
+            "end": 77739,
+            "confidence": 0.70632,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Nee, das ist ein offizieller Service der Deutschen Post, aber ich gebe auch zu, hier bei mir in den Dörfern haben wir nicht so eine Packstation. Das bedeutet, das, was du da sagst, das kenne ich halt auch, dass man noch zu so einer Postfiliale fahren muss und so weiter, aber die Tage hat mich mein Paketbote angesprochen und sagte, immer die ganzen Sachen, die ich euch zustelle, so Kleidung, so passt die euch immer alles? Ich sag so, Wieso sollte die uns immer passen? Natürlich passt sie uns nicht. Ja, ihr gebt nie was bei mir zurück und das machen aber alle hier im Dorf. Und da habe ich dann erst gelernt, ich kann dem Paketboten auch Retouren zurückgeben.",
+            "start": 77779,
+            "end": 111604,
+            "confidence": 0.8072166666666668,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Ja, du siehst denn ja, ich sehe den gar nie. Der wirft das Paket irgendwo immer hin in eine Ecke und ist dann wieder weg.",
+            "start": 111644,
+            "end": 117230,
+            "confidence": 0.7199599999999999,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Hast du denn eine Abstellerlaubnis erteilt?",
+            "start": 117250,
+            "end": 118992,
+            "confidence": 0.6321666666666667,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Nein, aber das wird trotzdem immer so gemacht.",
+            "start": 119172,
+            "end": 122516,
+            "confidence": 0.736,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Also oft sehe ich den nicht, weil bei mir wird auch immer alles vor die Haustür gelegt und dann kann ich aber auch einfach nur Pakete da hinlegen und sage einfach bitte mitnehmen und dann wird das auch einfach mitgenommen.",
+            "start": 122556,
+            "end": 131867,
+            "confidence": 0.8316000000000002,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Ziemlich gutes Service, hätte ich auch gern.",
+            "start": 131907,
+            "end": 133809,
+            "confidence": 0.5435714285714286,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Hast du denn am Paketboden auch eine kleine Freude zu Weihnachten gemacht?",
+            "start": 133829,
+            "end": 137033,
+            "confidence": 0.7111666666666667,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Ja, nachdem ich ihn nie sehe, habe ich da kein Problem damit.",
+            "start": 137273,
+            "end": 139936,
+            "confidence": 0.6367499999999999,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Vielleicht ist das genau der Unterschied. Ich habe nämlich eine kleine Merci-Schokoladentafel für meinen Paketboten gekauft, weil der immer so nett ist.",
+            "start": 140407,
+            "end": 147772,
+            "confidence": 0.7835909090909091,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Moment, dein Paketbote bekommt eine Merci-Schokolade, eben noch nie eine Merci-Schokolade von dir bekommen.",
+            "start": 147812,
+            "end": 152635,
+            "confidence": 0.6973571428571429,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Du bringst mir auch keine Pakete.",
+            "start": 152675,
+            "end": 154256,
+            "confidence": 0.7293333333333333,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Ja, aber jede Woche wieder ein neues großes Stück Wissen.",
+            "start": 154296,
+            "end": 158019,
+            "confidence": 0.8721,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Zurück zum Thema Warteschlangen. Ich war vor kurzem mal wieder in einem Restaurant in Düsseldorf, und zwar im japanischen Viertel.",
+            "start": 158059,
+            "end": 165283,
+            "confidence": 0.8228500000000001,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Da sind wirklich immer viele Schlangen, kann ich mich noch gut erinnern.",
+            "start": 165303,
+            "end": 167865,
+            "confidence": 0.5788333333333333,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Und dann stand ich vor einem koreanischen Restaurant im japanischen Viertel, das muss man sich auf der Zunge zergehen lassen, und hatte auch sogar Tisch reserviert. Also ich komme da an und meine Frau schon, ach du meine Güte, müssen wir uns jetzt hier anstehen? Ein Moment, mal kurz die Schlange gefragt, habt ihr reserviert? Nein, ich einfach vorne durchgegangen und stand dann ganz vorne, weil ich reserviert hatte. Und dann habe ich mich gefragt, dann hat die Dame vom Restaurant gesagt, okay, warten Sie mal bitte noch ein paar Minuten, ist gerade noch kein Tisch frei, aber wir haben Ihre Reservierung hier stehen. Und auf jeden Fall habe ich mich dann gefragt, okay, wie händeln das eigentlich Restaurants, beziehungsweise Restaurantbetreiber, dass, wenn das Ding konstant voll ist, dass dann immer zu der reservierten Zeit ein Tisch frei ist, ohne großen Ausfall, nenne ich mal, zu haben. Beispiel, man hat für 20 Uhr reserviert und um 19.30 Uhr zahlt wer. Die halten ja nicht eine halbe Stunde den Tisch vor, oder?",
+            "start": 168305,
+            "end": 220762,
+            "confidence": 0.7631228070175439,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Mir fällt gerade auf, das wäre eigentlich eine ideale, coole Frage für Interviews, für Tech-Interviews. Wie würde man sowas programmieren und realisieren, um das möglichst effizient abzubilden? Was würdest du für eine Technologie verwenden, Andi, dafür? Das ist immer die beste Frage, die Technologie davor zu klären, bevor man eigentlich das Problem und den Algorithmus definiert hat, setzt man sich schon mal fest auf was für Technologie.",
+            "start": 220802,
+            "end": 242711,
+            "confidence": 0.7433582089552235,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Ich glaube, ich würde mir ziemlich viele Daten besorgen, wie lang ein Essen in der Küche braucht, um fertig zu werden und dann die Zeiten, indem man die Zwischensteps messen. Okay, Essen ist ausgeliefert, Essen ist gegessen, Teller wurde wieder abgeholt und so weiter. Weil dann kann man, glaube ich, relativ gut abschätzen. Ach so, und das dann noch korrelieren mit der Gruppengröße. Also sitzen da zwei Leute, sitzen da vier Leute und so weiter und so fort. Und dann über Zeit so Estimations machen.",
+            "start": 243132,
+            "end": 271148,
+            "confidence": 0.769764705882353,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Also du würdest Process Mining machen. Du bist schon in einer hippen Industrie jetzt unterwegs. So von den neuen, coolen, milliardenbewerteten Startups wie Celonis und so weiter. Business Process Mining.",
+            "start": 271188,
+            "end": 284153,
+            "confidence": 0.7406666666666665,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Ich wusste nicht, dass man das Process Mining nennt, aber die nächste Frage wäre, wie würde man das from the get-go, also bei einem neuen Restaurant machen? Weil das Process Mining, wenn du es so nennst, basiert ja auf den Daten und die sammelt man ja nur über Zeit und wenn alle Leute, die die reservieren, immer eine halbe Stunde warten, dann kommen die Gäste ja nicht, dann erreiche ich die Zeit für die Datensammlung ja gar nicht.",
+            "start": 284593,
+            "end": 304610,
+            "confidence": 0.7953974358974358,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Ja, du holst dir dann eine AI.",
+            "start": 305190,
+            "end": 306950,
+            "confidence": 0.757,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Eine was?",
+            "start": 307010,
+            "end": 307730,
+            "confidence": 0.801,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Eine AI. Keine AI, sondern nur eine AI, eine Intelligence. Du holst dir einfach eine Person, die das schon mal gemacht hat und diese Better Recognition schon drauf hat und einfach weiß, wie so ein Restaurant funktioniert. Da sieht man wieder dieses Over-Engineering von Technikern. Die ganzen Restaurantbesitzer haben das einfach intus, wahrscheinlich, wie das funktioniert. Das ist total easy.",
+            "start": 307770,
+            "end": 327254,
+            "confidence": 0.7576999999999999,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Kommen wir zurück zu meiner Warteschlange. Wir mussten dann auch nicht lange stehen, hatten dann, dank der Reservierung, einen relativ schnellen Tisch.",
+            "start": 327274,
+            "end": 334555,
+            "confidence": 0.7872727272727272,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Und dank einer AI, die die haben, einer Intelligence, die das übernimmt.",
+            "start": 335175,
+            "end": 338936,
+            "confidence": 0.69625,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Ja, da waren mehrere intelligente Leute auf jeden Fall. Die hatten, die waren auf jeden Fall auf Zack, würde man sagen. Da war ich halt schon ein bisschen beeindruckt, wie das ganze Queuing da so funktioniert.",
+            "start": 338956,
+            "end": 349318,
+            "confidence": 0.805777777777778,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Und jetzt kommt diese Traumüberleitung von dir zu Queuing im IT-Sektor.",
+            "start": 349358,
+            "end": 355039,
+            "confidence": 0.754090909090909,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Genau. Heute sprechen wir über Message Queuing.",
+            "start": 355079,
+            "end": 358360,
+            "confidence": 0.8362857142857143,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Du bist der Meister der Überleitungen. Darf ich dir das mal sagen? Du wirst eine Messie-Schachtel von mir bekommen als Dankeschön für diese Überleitungen.",
+            "start": 359819,
+            "end": 368486,
+            "confidence": 0.7215416666666669,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Bevor wir ins Thema einsteigen, eine finale Frage. Wenn du so eine Messie-Packung hast, ist das auch so, dass du manche Sachen isst, die zum Beispiel mit Nuss, aber die dann mit Marzipan liegen lässt? Oder bist du so ein Typ, der alle Messie-Geschmäcker...",
+            "start": 368506,
+            "end": 380255,
+            "confidence": 0.763431818181818,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Wieso? Marzipan ist auch gut.",
+            "start": 380275,
+            "end": 381736,
+            "confidence": 0.5912000000000001,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Ja, aber du lässt dann auch bestimmte Messie-Farben liegen, oder?",
+            "start": 381776,
+            "end": 385780,
+            "confidence": 0.8582999999999998,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Natürlich, Grün ist immer das Beste.",
+            "start": 386500,
+            "end": 388141,
+            "confidence": 0.7600000000000001,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Ich wusste nicht, dass dieser Tag kommt. Grün ist Nuss, ne?",
+            "start": 388181,
+            "end": 390841,
+            "confidence": 0.7716363636363636,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Ja, natürlich.",
+            "start": 390861,
+            "end": 391742,
+            "confidence": 0.7190000000000001,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Ich wusste nicht, dass dieser Tag kommt. Wir haben eine Gemeinsamkeit. Wolfgang, ich habe gedacht, wir bleiben seit Jahr und Tag auf diesem Kaiserschmarrn mit oder ohne Rosinen stecken, aber bei Messi haben wir uns getroffen. Ernsthaft?",
+            "start": 391782,
+            "end": 403465,
+            "confidence": 0.853945945945946,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Ja, aber das ist doch bei jeder Person so, oder? Grün ist immer das Beste.",
+            "start": 403485,
+            "end": 407286,
+            "confidence": 0.6644666666666666,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Ja, ich frage mich halt, gibt es Personen auf dieser Welt... Ja, die mit einer Nuss-Allergie. Ja, aber die lassen ja da Nuss liegen. Ich frage mich ja, gibt es Personen auf dieser Welt, die alle Messy-Farben mögen?",
+            "start": 407646,
+            "end": 416293,
+            "confidence": 0.7959473684210526,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Ja, hoffentlich nicht. Diversity. Ganz wichtig.",
+            "start": 416574,
+            "end": 419556,
+            "confidence": 0.8046666666666668,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Kommen wir zurück zum Thema Message-Queuing. Heute geht es mal ein bisschen um Message-Queuing und wir steigen mal ein bisschen das Thema ein. Was ist Message-Queuing? Warum braucht man das? Was sind typische Anwendungsfälle? aber auch was gibt es denn da für Tools auf dem Markt beziehungsweise wir schauen uns ein ganz spezielles an und zwar RabbitMQ und wir versuchen mal so ein bisschen Licht ins Dunkle der Warteschlange zu bringen.",
+            "start": 419576,
+            "end": 443148,
+            "confidence": 0.7940281690140846,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Dann erleuchte mich mal und erklär mir was Message Queues sind und vielleicht noch besser für was brauche ich Message Queues? Also in was für einem Anwendungsfall würdest du sagen, wenn jetzt wieder klassische Interviewfrage für das Restaurant zum Beispiel, wo braucht man Message Queues? Was ist der klassische Anwendungsfall?",
+            "start": 443168,
+            "end": 460332,
+            "confidence": 0.7477200000000002,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Message Queues sind generell erstmal eine Subkomponente oder ein Subsystem deiner größeren Anwendung und im generellen geht es eigentlich darum, dass alle Anwendungsfälle, die asynchron behandelt werden können, abgebildet werden können. Hä, boah, jetzt hör doch mal auf da mit diesen Fachbegriffen blablabla, bleib mal praktisch.",
+            "start": 460612,
+            "end": 479492,
+            "confidence": 0.7190869565217392,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Jetzt redest du schon mit dir selber. So weit ist es schon.",
+            "start": 479552,
+            "end": 483672,
+            "confidence": 0.45291666666666663,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Der optimalste Anwendungsfall ist eigentlich mal so ein Newsletter-Versand oder ein E-Mail-Versand. Es gibt ja nichts Asynchroneres als E-Mail. Die versende ich jetzt und bei E-Mails ist es ja nicht wichtig, ob die in einer Sekunde, fünf Sekunden oder 60 Sekunden ankommt. Deswegen kann sowas perfekt asynchron gemacht werden.",
+            "start": 483692,
+            "end": 500073,
+            "confidence": 0.8190612244897961,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Okay, nehmen wir mal an, ich weiß noch nicht, dass Newsletter das neue, hippe Werbetool eigentlich schlechthin ist und ich bin auch der alten Meinung, dass kein Mensch mehr E-Mails liest. Gibt es irgendwelche anderen Anwendungsfälle, die ganz klassisch sind?",
+            "start": 500313,
+            "end": 511780,
+            "confidence": 0.768075,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Zum Beispiel Bildverarbeitung. Wenn du jetzt irgendwo dein Bild hochlädst, Beispiel du hast dich bei einem neuen sozialen Netzwerk angemeldet.",
+            "start": 511800,
+            "end": 519424,
+            "confidence": 0.8364000000000003,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Mastodon zum Beispiel.",
+            "start": 519464,
+            "end": 520784,
+            "confidence": 0.794,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Zum Beispiel. Und du lädst dein Avatar hoch, ein Gesicht von dir. In der Regel nehmen sich diese Services dein Bild, 2000 x 2000 und 10 MB groß, schmeißen das in eine Warteschlange und rechnen dieses Bild dann in verschiedene Größen und weboptimiert runter und legen das dann irgendwo ab, um einfach nur Traffic zu sparen, wenn jemand auf dein Profil geht, um dein Avatar zu gucken. Das ist zum Beispiel ein perfekter Use Case für asynchrone Verarbeitung, denn dein Bild wird hochgeladen, irgendwo hingespeichert, dann wird eine Nachricht in eine Warteschlange gepackt und dann wird dein Bild in verschiedene Formate und Größen konvertiert. Und das kann, das muss ja nicht on the fly passieren, das kann ja auch ein paar Sekunden brauchen. Und in der Zeit, wo das noch nicht verarbeitet ist, stellen die halt das Originalbild auf der Webseite dar. Und wenn das neue dann fertig ist, dann nehmen sie die kleineren Größe. Das ist so einer der Anwendungsfelder. Ein anderer ist zum Beispiel Log Processing. Dein Webserver oder deine Applikation generiert eine ganze Menge Logs. Wann, wie, wo, welcher User worauf zugegriffen hat. Diese Logs irgendwo zu speichern, zu analysieren, Summen darüber zu bilden, wie viele User haben diese Webseite aufgerufen und so weiter und so fort. Sowas kann man ja im Backend oder Zeit unabhängig machen. Also da ist es in der Regel nicht systemkritisch, ob die Daten eine Sekunde oder drei Sekunden später kommen.",
+            "start": 520825,
+            "end": 597648,
+            "confidence": 0.792100418410042,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Das heißt eigentlich geht es darum, wenn ich große Datenmengen in irgendeiner Form verarbeiten will und die Verarbeitung braucht Zeit, so dass ich es nicht real-time machen kann und dass es auch nicht kritisch ist. Also wenn ich irgendeine Zeile in eine Datenbank einfüge, dann geht das erstens mal relativ schnell üblicherweise und es ist kritisch, dass ich die Antwort abwarten muss. Aber wenn ich asynchron irgendwas abarbeiten kann, was länger dauert, dann ist Message Queues eine gute Technologie dafür. Seht es richtig.",
+            "start": 597688,
+            "end": 625113,
+            "confidence": 0.7864337349397591,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Ja, ich würde es jetzt nicht auf große Datenmengen limitieren, auch auf kleine Datenmengen. Eigentlich alles, wo du nicht sofort eine Response brauchst, was halt zeitunabhängig ist. Es gibt sogar Leute, die würden E-Commerce-Bestellungen durch ein Message-Queue-System jagen. Kann man auch machen, ist jetzt aber sehr wahrscheinlich nicht der prädestinierteste Anwendungsfall. Also überall da, wo die Response-Zeit delayed werden kann.",
+            "start": 625453,
+            "end": 648034,
+            "confidence": 0.8192333333333331,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Okay, jetzt habe ich so einen Anwendungsfall und jetzt würde ich mir das ganz klassisch selber in meiner Datenbank zusammenstricken. Ich speichere das irgendwo rein in eine Tabelle, das ist meine Warteschlange und dann speichere ich dazu, ob das bearbeitet ist oder nicht und dann baue ich mir da irgendwie so ein Ding, was da die Datenbank ständig abfragt und weiterschickt. Habe ich dann eine Message Queue?",
+            "start": 648434,
+            "end": 667345,
+            "confidence": 0.6980298507462688,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Ja, prinzipiell schon. Also generell besteht eine Message Queue aus drei Komponenten. Auf der einen Seite hast du irgendwas, was deine Nachricht erzeugt, also sagt, hey, hier hast du was zu verarbeiten. Dann hast du was in der Mitte, eine Warteschlange, in deinem Fall zum Beispiel eine Tabelle. Da packst du diesen Job, diesen, hey, das muss verarbeitet werden, rein. Und dann hast du die dritte Komponente, irgendein Prozess, was sich diesen Job nimmt und verarbeitet. Die erste Komponente, die die Nachricht erzeugt, nennt man Producer oder Publisher. Die Tabelle, wo du das reinschreibst, nennt man eigentlich Queue beziehungsweise Warteschlange. Und das Moped, was sich diesen Job aus der Warteschlange, aus der Queue nimmt, nennt man entweder Worker oder Consumer. Wenn du all das in deiner Datenbank abbilden kannst, dann hast du eigentlich eine Basis Message Queue. Jetzt hattest du das ganze Konzept mit einer Datenbank in Verbindung gebracht. Du kannst dir das auch alles selbst bauen, indem du zum Beispiel eine relationale Tabelle einfach nur als Queue, also als Warteschlange nutzt. Machen auch sehr viele.",
+            "start": 667385,
+            "end": 727682,
+            "confidence": 0.7768295454545455,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Dann muss es ja gut sein, wenn es so viele machen.",
+            "start": 727702,
+            "end": 730483,
+            "confidence": 0.743181818181818,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Ist auf jeden Fall recht simpel. Es gibt aber dedizierte Systeme für Message Queuing, also so wie es MySQL und Postgre für relationale Datenbanken gibt. Oder von mir aus auch Oracle oder MariaDB. Gibt es natürlich auch für den Message Queue Anwendungsfall dedizierte Systeme, wie zum Beispiel RabbitMQ, ActiveMQ oder oder oder.",
+            "start": 730543,
+            "end": 749975,
+            "confidence": 0.8103461538461537,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Und warum sollt ihr dann so dedizierte Systeme verwenden? Jetzt habe ich eh schon die Datenbank und kann das in die Datenbank speichern.",
+            "start": 750015,
+            "end": 755180,
+            "confidence": 0.6759130434782608,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Naja, Message Queueing ist halt auch nicht ganz so einfach. Und zwar gibt es da so ein paar Fallstricke, so ein paar Tricky Parts, die diese dedizierten Systeme natürlich lösen. Auf der einen Seite geht es nämlich um die Fragestellung, wie oft kann, darf, muss beziehungsweise sollte denn eine einzelne Nachricht an einen Consumer, an einen Worker abgeliefert werden. Da geht es um die Stichwörter exactly once, at least once, at most once delivery. Wer in deiner Architektur, also die Datenbank bzw. der Consumer, wer stellt da sicher, dass jede Nachricht verarbeitet wird, jede Nachricht mindestens einmal oder genau einmal verarbeitet wird?",
+            "start": 755500,
+            "end": 797803,
+            "confidence": 0.8123333333333337,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Also wenn ich bei einem Newsletter zum Beispiel dann an eine Person fünf E-Mails raussende, dieselbe Newsletter E-Mail, dann werden die wahrscheinlich wenig Spaß haben. Insofern will ich da eine Verarbeitung von genau einmal haben.",
+            "start": 798423,
+            "end": 809249,
+            "confidence": 0.7902,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Ja, das ist jetzt eine gute Frage. Du willst natürlich, dass jeder in deiner Kunden Newsletter haben möchte. Das bedeutet, du wärst dann eher im Exactly Once Delivery Modus oder At Most Once Delivery Modus, weil die Frage ist, wie kritisch ist das, wenn einer deiner tausend Leute den Newsletter nicht kriegt hat?",
+            "start": 809629,
+            "end": 827219,
+            "confidence": 0.7856037735849056,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Aber wo ist jetzt das Problem, wenn ich es in der Datenbank mache, aber fällt? Wurde das versendet? Ja, nein? Das setze ich.",
+            "start": 828100,
+            "end": 833181,
+            "confidence": 0.6712608695652174,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Ja, was passiert denn, wenn dein Worker, dein Consumer sich einen Job aus der Datenbank holt, der macht dann so einen Select, dann unterbricht die Verbindung und der kann nicht sagen, hey, ich habe mir die Nachricht geholt. Und in der Zeit kommt ein zweiter Worker hoch, weil es heißt ja nicht nur, dass du eine Tabelle und einen Worker hast, sondern du kannst ja eine Tabelle und 100 Worker haben, die dann um die Jobs bei der Datenbank abfragen. Und was ist, wenn du da eine Race Condition hast? Das bedeutet, wenn einer sich eine Nachricht geholt hat, die Verbindung abbricht oder Der Server stirbt, oder, oder, oder. Dann holt sich ein anderer Worker die Nachricht. Was passiert, wenn der erste Worker sich die Nachricht holt? Die Connection zur Datenbank abbricht, der Worker aber noch weiterläuft und die Nachricht dann erfolgreich verarbeitet. Der konnte aber der Datenbank nicht sagen, hey, diese Nachricht wurde schon von einem Worker geholt. Somit wacht ein zweiter Worker auf, holt sich den Job. Dann hast du dieselbe Nachricht in zwei verschiedenen Workern, zum Beispiel deinem Newsletter, und der wird dann zweimal an dieselbe Person versendet.",
+            "start": 833201,
+            "end": 890872,
+            "confidence": 0.819549738219895,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Okay und die Message Queue nimmt mir das Ganze ab, die kümmert sich darum, wenn ich diese Einstellungen setze, dann kümmert sich die Message Queue um alles.",
+            "start": 891172,
+            "end": 898997,
+            "confidence": 0.7269259259259259,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Jede Message Queue hat andere Garantien, aber prinzipiell ja. Und mit anderen Garantien meine ich ganz genau sowas wie, wird die Nachricht genau einmal zugestellt, Minimum einmal zugestellt oder maximal einmal zugestellt. Exactly once, at least once delivery, at most once delivery.",
+            "start": 899017,
+            "end": 915348,
+            "confidence": 0.8006666666666669,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Jetzt hast du von 100 Workern gesprochen. Was ist jetzt so ein Worker und warum brauche ich 100 davon? Macht ja alles komplizierter.",
+            "start": 915735,
+            "end": 921977,
+            "confidence": 0.6449130434782608,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Naja, generell redet man da von granulare Skalierbarkeit. Jetzt stell dir mal vor, wir haben Black Friday und da kommen auf einmal ganz viele Bestellungen rein oder ganz viele neue Newsletter-Abonnenten und denen willst du natürlich auch alle deinen ersten Newsletter senden. Und wenn du jetzt in der Regel pro Woche zwei neue Newsletter-Abonnenten hast und jetzt zu Black Friday hast du nämlich, bietest du den Gutschein an, über 20% und auf einmal kriegst du 10.000, Dann kannst du natürlich die Warteschlange für deinen Newsletter natürlich einzeln skalieren, weil dann kommen sehr viele Nachrichten in der Newsletter-Warteschlange und dann kannst du sagen, oh, ich brauche nicht nur einen Newsletter-Consumer, sondern auf einmal 100 und buff, werden die innerhalb von wenigen Minuten relativ schnell abgearbeitet. Also du kannst natürlich auch dann deinen Load und deine Anfragen deutlich besser parallelisieren. Du kannst die Verarbeitung auf verschiedene Server, auf verschiedene Maschinen verteilen und dadurch hast du natürlich auch eine erhöhte Ausfallsicherheit. Und wenn du dir darüber ein bisschen Gedanken machst, dann hast du natürlich eine vereinfachte Entkopplung. Also reden wir mal von Microservices. Message Shearing kann auch super dafür genutzt werden, damit zwei Microservices miteinander sprechen. Die müssen keine synchrone Kommunikation haben, wie zum Beispiel HTTP-Calls hin und her, sondern die können auch über eine dritte Komponente, wie zum Beispiel eine Warteschlange in der Mitte, asynchron miteinander kommunizieren. Und das kann dir natürlich helfen, wie zum Beispiel bei einer Migration von Monolithen auf Microservices, damit du das nicht mit einer Big Bang Migration machen kannst, sondern dass du einfach ganz normal und ganz langsam wirklich zu Microservice oder vielleicht sogar Serverless, nehmen wir mal Lambda Functions oder ähnliches, migrieren kannst.",
+            "start": 922017,
+            "end": 1015917,
+            "confidence": 0.7583140794223827,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Okay, nehmen wir mal an, ich habe da jetzt mein Projekt und glaube, dass Message Queuing mir helfen würde, um das zu entkoppeln oder zu vereinfachen. Und du hast ja schon erwähnt, RabbitMQ ist so, würde ich sagen, das bekannteste, das mir auch so immer unterkommt, wenn es um Message Queues geht. Wenn ich mir da jetzt RabbitMQ reinhole in mein Projekt, was ist denn RabbitMQ eigentlich? Was für ein Schiff hole ich mir denn da an Bord? Kann man sich ein Schiff an Bord holen? Egal. Was ist RabbitMQ?",
+            "start": 1016260,
+            "end": 1041349,
+            "confidence": 0.692577777777778,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Also jedes Kreuzfahrtschiff hat auf jeden Fall so ein kleines Paddelboot und wenn du möchtest ist für ein kleines Paddelboot bestimmt auch ein Schiff für dich, ja.",
+            "start": 1042180,
+            "end": 1048872,
+            "confidence": 0.6945185185185188,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Jetzt hast du die ganzen RabbitMQ-Fans schon beleidigt, dass es nur ein BattleBot ist.",
+            "start": 1049262,
+            "end": 1053366,
+            "confidence": 0.5415714285714286,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Also RabbitMQ ist schon ein Schiff, muss man schon sagen. Aber prinzipiell ist es halt der Marktführer. Es ist ein Open-Source-Message-Broker. Und als Message-Broker bezeichnet man eigentlich eine neue Technologie-Komponente, die sich primär um den Anwendungsfall von Message-Queuing kümmert. Das ganze Ding ist in Erlang geschrieben. Warum ist das wichtig zu erwähnen? Das Besondere an Erlang An der Sprache ist, dass sie speziell um die Fähigkeiten von Parallelität, hohe Verfügbarkeit, Fehlertoleranz und das Auswechseln von Modulen zur Laufzeit entwickeln wurde. Damals primär für die Telekommunikationsindustrie, wurde alles in Ericsson entwickelt, deswegen eher lang, heißt auch Ericsson Language für die Leute, die sowas zum ersten Mal hören. Und ich erwähne das, weil diese Sprache schon recht prädestiniert ist für ein verteiltes System, wie zum Beispiel eine Message-To-Server.",
+            "start": 1053946,
+            "end": 1104087,
+            "confidence": 0.8415873015873011,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Wie viel Kontakt habe ich da zu diesem Erlang, wenn ich jetzt diese Software verwende, muss ich Erlang verstehen irgendwie?",
+            "start": 1104387,
+            "end": 1110833,
+            "confidence": 0.7338000000000001,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Für die Anwendung vom System eher nicht, für den Betrieb musst du auch kein Erlang lesen können. Wenn du ein RabbitMQ Cluster aufsetzen möchtest, kommst du dann mal kurz in Berührung mit so Sachen wie einem Erlang-Cookie und Co. und Erlang-Virtuellen Maschinen und so weiter und so fort.",
+            "start": 1110873,
+            "end": 1127148,
+            "confidence": 0.7904791666666665,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Okay, aber für den normalen Anwendungsfall kann ich ja einfach losstarten.",
+            "start": 1127802,
+            "end": 1131383,
+            "confidence": 0.5030909090909091,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Der normale Anwendungsfall, da wirst du eigentlich mit Erlang nicht in Kontakt kommen, weil die ganze Sache eigentlich um das AMQP-Protokoll gebaut ist, das sogenannte Advanced Messaging Queuing Protocol. Ist ein offener Standard seit 2011. Und weil es ein toller offener Standard ist, gibt's natürlich diverse Client-Libraries in Java, .NET, Ruby, Python, PHP, JavaScript, Go, Objective-C, Swift, Rust. Und mich würd auch nicht wundern, wenn eins in Lowell-Code gibt.",
+            "start": 1131403,
+            "end": 1157432,
+            "confidence": 0.7910144927536231,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Das heißt eigentlich, wenn ihr das verwendet, dann in meiner Sprache ist das komplett abstrahiert und ihr verwendet dann nur diese Library oder den Client, der sich dann um alles kümmert.",
+            "start": 1157892,
+            "end": 1167054,
+            "confidence": 0.7925483870967741,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Genau. Und diese Client Library, die spricht dann AMQP. AMQP selbst ist ein binäres Netzwerkprotokoll, was damals in der Bankenwelt erfunden wurde. Und zwar ist es recht interessant, wo die ganze Sache herkommt. 2003 haben Mitarbeiter bei JP Morgan die ganze Sache entwickelt, haben gesagt, hey, damals war, JMS so ein Riesending. JMS, falls du dich erinnerst, war Jakarta Messaging, ganz früher Java Messaging Service. Also du merkst schon, wir sind schon wieder ganz in der Java-Welt. Und da sind wir natürlich in der kompletten Banken- und Finanzindustrie. Und die ganze Banken- und Finanzindustrie, die war nämlich relativ groß im Bereich MOM. Und MOM steht für Message-orientierte Middleware.",
+            "start": 1167094,
+            "end": 1209220,
+            "confidence": 0.794277777777778,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Also langsam haben wir ein Bingo, aber in dieser Java-Welt ist es immer das Gleiche, diesen Abkürzungen.",
+            "start": 1210086,
+            "end": 1215148,
+            "confidence": 0.6814705882352943,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "So, und die Jungs und Mädels dachten sich, Hämmer, pass mal auf, wär doch ziemlich cool, wenn wir mal einen Standard haben, und der vielleicht sprachunabhängig ist. Und so haben die angefangen, AMQP zu entwickeln. Und so, wie es halt natürlich immer ist, wenn so eine große Bank wie JP Morgan Chase mit so was um die Ecke kommt, dann sagen die anderen Banken, so wie die Bank of America, die Barclays Bank, Goldman Sachs, bla bla bla, Jungs, was macht ihr da? Ihr revolutioniert gerade irgendwie unsere Message-Mittelwehr. Da will ich mitmischen. So und so hat sich dann ein Konsortium aus Finanzinstitutionen entwickelt. Natürlich war da auch Reddit und 4MWare und Microsoft und Cisco dabei. Und die haben dann angefangen an dem offenen Standard da rumzuschrauben. Der Erfolg von AMQP kam eigentlich daher, dass AMQP eigentlich alle Features von dem vorherigen JMS, also von dem Jakarta Messaging, mit implementiert. Das bedeutet, die ganzen Finanzindustrien konnten also eigentlich direkt auf den neuen Standard wechseln.",
+            "start": 1215528,
+            "end": 1275153,
+            "confidence": 0.8141158536585363,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Heißt das, ich brauche gar keinen Revit MQ Client, sondern kann einen allgemeinen AMQP Client verwenden und da kann dann kommunizieren mit Revit MQ?",
+            "start": 1275953,
+            "end": 1285777,
+            "confidence": 0.7919583333333331,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Genau, du bist ja jetzt nicht an Revit MQ gebunden. Du kannst auch sowas anders machen wie Active MQ oder einen JBoss AMQ oder SWIFT MQ oder von mir aus auch bei Microsoft Azure gibt es den Azure Service Bus. All die supporten auch das AMQP Protokoll, was seit 2011 in Version 1 standardisiert ist. Und von mir aus kannst du jetzt auch deinen eigenen Message Queue Server schreiben, der AMQP spielt.",
+            "start": 1285817,
+            "end": 1312667,
+            "confidence": 0.7275277777777777,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Das klingt für mich jetzt eigentlich alles sehr schrecklich. Für mich als Open-Source-Mensch, der irgendwie leichtgewichtige Sachen haben will und du bekommst da jetzt mit irgendwelchen Java- und Bankengeschichten und schlag mich tot, ist das was für mein Open-Source-Projekt oder verheirate ich mich dann mit irgendwelchen Java-Enterprise-Zeug?",
+            "start": 1313378,
+            "end": 1332521,
+            "confidence": 0.7722340425531917,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Mit Java hast du nix am Hut und ich bin bei weitem kein JVM-Freund, aber mit Java hast du nix am Hut und ja, RabbitMQ ist halt schon nicht ganz leichtgewichtig, aber es ist immer die Frage, was brauchst du? Willst du eigentlich nur eine Warteschlange haben, dann ist dein Datenbank-Anwendungsfall, den du am Anfang erwähnt hast, vielleicht auch gar nicht so verkehrt. Möchtest du das gar nicht in der Datenbank implementieren, weil du vielleicht gar keine relationale Datenbank hast, kannst du natürlich auch ohne Probleme dir etwas leichteres ins Haus holen, wie zum Beispiel Amazon SQS, was für Simple Queuing Service steht. Das bietet dir nicht die Features an, die dir ein dedizierter Message Broker zur Verfügung stellt, sondern nur eine simple Warteschlange. Aber da muss ich dir leider mit dieser Consulting-Antwort kommen, it depends.",
+            "start": 1332941,
+            "end": 1379538,
+            "confidence": 0.7962794117647056,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Was wären denn jetzt so coole advanced features?",
+            "start": 1379818,
+            "end": 1382460,
+            "confidence": 0.5443749999999999,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "In der Einleitung hatten wir simpel erwähnt, dass eine Message Queue aus drei Komponenten besteht. Jemanden, der die Nachricht erzeugt, einen Producer. Jemanden in der Mitte, die sogenannte Warteschlange, die Queue. Und jemand am Ende, der die Nachricht aus der Queue nimmt und verarbeitet, der Consumer. Jetzt ist es doch nun mal so, dass das eine sehr, sehr vereinfachte Ansicht auf die Problemstellung ist. Denn wenn du über die Zustellung von Nachrichten sprichst, dann kommen dir auch relativ schnell komplexe Szenarien in den Sinn. Nehmen wir zum Beispiel mal den Anwendungsfall, du hast eine Nachricht, die möchtest du in mehrere Queues packen. Der Wolfgang lädt auf Twitter ein neues Avatar hoch und die Information, dass dieses Avatar, dieses Bild jetzt verarbeitet werden muss, soll in vier verschiedenen Queues. Eine Queue, die konvertiert das nach PNG, eine nach JPEG und die dritte nach SVG und die vierte geht ans AI-Modell, was dann mit Hilfe deines Bildes wieder das Modell trainiert. Wie würdest du sowas zum Beispiel mit einer Datenbanklösung machen? Du würdest mit hoher Wahrscheinlichkeit eine Nachricht mit vier Inserts in vier verschiedene Tabellen schreiben, oder?",
+            "start": 1382500,
+            "end": 1442377,
+            "confidence": 0.8330702702702703,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Wäre auf jeden Fall eine Möglichkeit, ja.",
+            "start": 1442657,
+            "end": 1444598,
+            "confidence": 0.3032857142857143,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Bei einem dedizierten Message Broker hast du halt so Konstrukte drumherum wie Exchanges und Routes. Das bedeutet, du hast auf der einen Seite vier Warteschlangen, aber vor den vier Warteschlangen hast du so eine Art Loadbalancer geschaltet. Deine Applikation schickt nur die Nachricht, Wolfgang hat ein neues Bild hochgeladen an den Loadbalancer, an den sogenannten Exchange, und der Exchange kümmert sich dann um die Verteilung deiner Nachricht in vier verschiedene Queues, abhängig von der Konfiguration von dem Exchange. Und dann kannst du sagen, hey lieber Loadbalancer, also hey lieber Exchange, da gibt es noch einen Routing Key. Dein Routing Key kann zum Beispiel das Format, in dem du das Bild hochgeladen hast, PNG, JPEG und Co. Weil wenn du PNG hochgeladen hast, muss die Nachricht ja nicht in die PNG Queue rein, weil ein PNG nach PNG konvertieren wäre ein bisschen doof. Du kannst dann anhand von Regeln sagen, okay, in welche Queues diese Message dann inserted werden soll.",
+            "start": 1444638,
+            "end": 1497334,
+            "confidence": 0.7568805031446538,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Also da kann man ja gewisse Logik hinterlegen. Genau.",
+            "start": 1497374,
+            "end": 1499999,
+            "confidence": 0.7345555555555556,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Und dann kannst du halt die Nachrichten in die verschiedenen Queues routen. Du kannst halt sagen, okay, route die bitte von einem Exchange in eine Queue. Oder du kannst ein Fanout machen. Jede Nachricht, die an diesen Exchange kommt, geht in alle Queues. Oder du kannst anhand von Regeln der Nachricht in spezifische Queues routen, zum Beispiel in drei von fünf oder ähnliches. Wenn wir von solchen Features reden, reden wir aber auch von Sachen wie Priority Queues oder Priority Messages. Mit hoher Wahrscheinlichkeit, wenn du mehr und mehr Message Queuing in deinem System verwendest, wirst du auch Nachrichten haben, die einen höheren Stellenwert haben als andere.",
+            "start": 1501123,
+            "end": 1536060,
+            "confidence": 0.7742429906542055,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Meine haben primär immer höchste Priorität. Kann man das implementieren? Wenn der User Wolfgang dran ist, werden immer priorisiert.",
+            "start": 1536100,
+            "end": 1543466,
+            "confidence": 0.7141578947368421,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Genau das kann man tun. Nehmen wir mal ein Beispiel. Die Verarbeitung deiner Finanzdaten sind mit hoher Wahrscheinlichkeit deutlich wichtiger als die Konvertierung deines Avatars. Oder die Newsletter sind mit hoher Wahrscheinlichkeit wichtiger als die Verarbeitung deiner Log-Dateien. Mithilfe von Priority-Warteschlangen oder Priority-Nachrichten kannst du halt den Consumern, also den Workern, die deine Nachricht verarbeiten, wirklich sagen, okay, behandle die mal bitte mit der Priorität. Du kannst aber auch sagen, hey, alle Nachrichten, die ich in eine spezifische Warteschlange packe, haben nur eine gewisse Gültigkeit, sogenannte Time-to-Live-Nachrichten. Und wenn die in der Zeit nicht verarbeitet werden, entfallen die. Der Grund für die, warum die nicht verarbeitet werden, kann vielfältig sein. Entweder weil da gerade keiner auf dieser Queue lauscht oder weil da zu viel drauf ist oder oder oder.",
+            "start": 1544126,
+            "end": 1590832,
+            "confidence": 0.7733023255813958,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Wie mache ich das dann mit Logging und Monitoring? Ich muss das ja irgendwie meistens zumindestens mitbekommen, wenn da irgendwas schief geht. Und habe ich da dann auch Schnittstellen, um irgendwelche Monitoring-Tools und ähnliche Sachen anzubinden? um zu sehen zum Beispiel, wie viele Messages jetzt aufgrund dem TTL nicht verarbeitet worden sind oder oder verworfen worden sind.",
+            "start": 1590872,
+            "end": 1611483,
+            "confidence": 0.8071754385964914,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "All die Informationen gibt ihr RabbitMQ raus, entweder in einem schönen Dashboard oder von mir aus auch als Prometheus-Exporter, damit du die im Grafana haben kannst oder oder oder. Sowas ist alles mitgeliefert. Eins der Killer-Features, die eigentlich bei jedem dedizierten Message-Broker verfügbar ist, ist das sogenannte Message-Acknowledgement und die Rejections. Das bedeutet, du hast einen Consumer, der connectet sich zu einer Queue und sagt, lieber Message Broker, falls eine neue Nachricht reinkommt, gib mir die mal. Der Message Broker liefert diese Nachricht dann an den Consumer und reserviert diese Nachricht auf den Message Broker und hält sie vor, dass kein zweiter Consumer diese selbe Nachricht zugestellt bekommt. Mein Consumer, der die Nachricht jetzt hat, kann die verarbeiten und kann am Ende der Verarbeitung sagen, acknowledged. Und durch dieses Acknowledged teilt der Consumer dem Message Broker mit, diese Nachricht wurde erfolgreich verarbeitet.",
+            "start": 1611503,
+            "end": 1666378,
+            "confidence": 0.7780704225352113,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Das müsste man in meiner Datenbanklösung natürlich alles selber programmieren, müsste damit Datenbanktransaktionen herum hantieren und vielleicht irgendwie zwischendrin in die Tabelle speichern. Das ist aktuell in Bearbeitung. Dann was passiert, wenn die Transaktion ausläuft, wenn der Broker weg stirbt? Also diese ganzen Sachen müsst ihr dann implementieren und vor allem verstehen und bei einem Message Broker hat sich da jemand beziehungsweise meistens eine Gruppe schon jahrelang Gedanken darüber gemacht, wie man die ganzen Edge Cases abfängt und behandelt.",
+            "start": 1666959,
+            "end": 1698281,
+            "confidence": 0.8233797468354427,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Richtig, und das ist nämlich der Killer-Unterschied. Und wenn wir jetzt von diesem Message Acknowledgement sprechen, da reden wir von einem Happy Pass. Aber was passiert, wenn da mal was schief geht? Der Gegensatz zum Message Acknowledgement sind Message Rejections. Das bedeutet, stell dir vor, du kriegst eine Nachricht als Consumer, verarbeitest die, und die Verarbeitung ist aber nicht erfolgreich. Da kannst du das Gegenteil von Acknowledgement machen, du kannst sie rejecten, Und wenn du die rejectest, dann geht die Nachricht zurück an den Message-Broker und der Message-Broker verteilt diese Nachricht an einen anderen Consumer weiter.",
+            "start": 1699101,
+            "end": 1730454,
+            "confidence": 0.7892604166666666,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Kann man da auch dann irgendwie Regeln drüber legen? Zum Beispiel, wenn jetzt ein E-Mail-Versand fehlschlägt, dass der einfach erst in 10 Minuten wieder probiert wird oder sowas?",
+            "start": 1730474,
+            "end": 1738598,
+            "confidence": 0.7504642857142859,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Ob RabbitMQ selbst jetzt gerade so Delayed Messages kann, weiß ich jetzt gerade nicht. Müsste man nachgucken. Sowas kann man aber natürlich relativ einfach bauen. Und jetzt haben wir gerade von diesem Acknowledgement und dem Reactions gesprochen. Das machst du ja aktiv. Aber was passiert, wenn der Consumer einfach gar keine Rückmeldung kriegt? Der kriegt eine Nachricht und Timed Out, stirbt oder ähnliches. Dann kannst du eine Dead Letter Queue einrichten. Eine Dead Letter Queue ist eine zweite Warteschlange, die nur dafür da ist, die nicht verarbeiteten Nachrichten bzw. die Nachrichten im Fehlerfall abzufangen. Und das ist natürlich für Entwickler ein Traum, weil dann kannst du nämlich in diese Warteschlange reingucken und sagen, okay, was ist an dieser Nachricht jetzt so speziell, dass diese nicht erfolgreich verarbeitet werden konnte? Und so kannst du dein System kontinuierlich verbessern, Fehlerfälle rausbügeln usw. Und du kannst diese Nachrichten aus dem Dead Letter Queue natürlich wieder in die Original Queue einspielen und somit wirklich sicherstellen, dass all deine Nachrichten verarbeitet werden.",
+            "start": 1738978,
+            "end": 1798719,
+            "confidence": 0.7697185628742516,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Aber ich muss natürlich da auch reinschauen, wenn ich das einfach nur blind laufen lasse, dann habe ich natürlich irgendwann ein Problem, wenn die Messages nicht verarbeitet werden, wenn ich das nicht sauber monitor das ganze. Also ich habe schon wieder das Problem, dass ich eine zusätzliche Komponente habe, die ich auch verstehen muss, monitoren muss, dementsprechend reagieren muss.",
+            "start": 1799010,
+            "end": 1817667,
+            "confidence": 0.7609152542372879,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Ja alles richtig, aber du kaufst ja auch keinen Neuwagen und fährst dann einfach 200.000 Kilometer ohne Ölwechsel. Also die neue Komponente ist halt genauso wie jedes andere Teil in deinem Software-Stack. Und wenn du nicht drum kümmerst, dann rostet das natürlich ebenfalls.",
+            "start": 1817707,
+            "end": 1829718,
+            "confidence": 0.7544418604651162,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Aber ich muss mir halt im Klaren sein, dass ich mir da wieder was zusätzlich reinhole und was man vor allem auch verstehen muss. Und gerade in dem Bereich ist es ja auch gar nicht so leicht, immer alles zu verstehen, gerade so Asynchronität, Fehlerfälle, diese ganzen Garantien oder eben nicht Garantien, ob etwas ausgeliefert wird, nur einmal ausgeliefert wird. Also es ist schon auch ein komplexes Thema, mit dem man sich beschäftigen muss. Das ist nicht einmal install und dann läuft alles, sondern man sollte sich schon ein bisschen damit beschäftigen.",
+            "start": 1830155,
+            "end": 1854750,
+            "confidence": 0.777260869565217,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Und das, meine ich ja genau, ist der große Unterschied zu deiner Datenbanklösung. Deine Datenbanklösung ist nichts Falsches. Doch die Frage ist, möchtest du dir all diese Gedanken, die sich eine Gruppe von sehr intelligenten Menschen gemacht hat, für diese Anwendungsfälle selbst machen und neu programmieren, oder möchtest du einfach was Vorgefertigtes nehmen?",
+            "start": 1854910,
+            "end": 1871936,
+            "confidence": 0.8120943396226413,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Wenn ich jetzt sowas verwende, wie du erwähnt hast mit der Cloud zum Beispiel von Amazon, dieses SQS, muss ich mir dann weniger Gedanken machen? Ist dieses Simple dann so simple, dass ich es einfach verwenden kann?",
+            "start": 1871976,
+            "end": 1884921,
+            "confidence": 0.666,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Ja, ist es, aber du kannst jetzt dann auch nur simple Anwendungsfälle abbilden, beziehungsweise brauchst mehr Glue-Code drumherum. Nehmen wir mal ein Beispiel. Bei SQS gibt es jetzt keinen simplen Weg, eine Nachricht an mehrere Consumer zu stellen, weil was du hast, ist du hast eine Queue, da packst du eine Nachricht rein und diese Queue wird von einem Worker verarbeitet. Du hast jetzt nicht sowas wie den Exchange, den sogenannten Load Balancer, von dem ich gerade gesprochen habe. Das müsstest du dann selbst bauen, wie du hast eine Lambda Function an deiner SQS und immer wenn eine Nachricht in die erste Queue reinkommt, nimmt die Lambda Function die Nachricht und packt die in drei andere Queues auf Basis von deinen Regeln. Und diese Regeln musst du alle selbst in der Lambda Function dann programmieren, wo du die beim Exchange, bei RabbitMQ zum Beispiel, ganz einfach hinterlegen kannst.",
+            "start": 1884961,
+            "end": 1936408,
+            "confidence": 0.7721486486486487,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Aber das Monitoring muss ich trotzdem noch machen. Dead Letter Queue oder sowas.",
+            "start": 1936448,
+            "end": 1941092,
+            "confidence": 0.3776153846153847,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Eine Dead Letter Queue gibt es zum Beispiel bei SQS dann gar nicht. Das müsstest du dann auch alles selbst bauen. Da würdest du dann die klassische Amazon Cloud-Lösung für Monitoring, CloudWatch und Co. nehmen. Bei Amazon selbst gibt es aber neben SQS auch noch Amazon MQ, was ein vollständig verwalteter Open-Source-Message-Broker ist. Da weiß ich gar nicht, ob da jetzt hinter einem Rabbit MQ steht oder nicht. Aber mich würde sehr stark wundern, wenn der sehr weit weg von den RabbitMQ Anwendungsfällen ist. Nur das ist dann natürlich bei weitem nicht mehr so simpel wie SQS, der Simple Queuing Service von Amazon.",
+            "start": 1941392,
+            "end": 1976083,
+            "confidence": 0.8100873786407765,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Damit wir jetzt nicht nur Werbung für Amazon machen, Google hat natürlich das gleiche PubSub und wahrscheinlich gibt es noch ganz viele andere Angebote, die gehostet sind. Zu Google PubSub, was ist da der Unterschied?",
+            "start": 1976123,
+            "end": 1987255,
+            "confidence": 0.7679142857142855,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Ja, Google hat jetzt nicht genau das gleiche. Und zwar ist das jetzt ein Publish-Subscribe, weil Publish-Subscribe, also Pub-Sub, ist ein bisschen was anderes als Message-Queuing. Bei Publish-Subscribe sagt man üblicherweise ist, man publischt was und wenn, zum Beispiel in eine Warteschlange, aber wenn da keiner an der Warteschlange horcht, dann ist das, ich schrei in den Wald hinein und die Message geht verloren. Wohin du gegen bei Message Queuing in der Regel eine Warteschlange dazwischen hast, die dann, auch wenn es gerade keine Consumer gibt, deine Nachricht zwischenspeichert. Wohingegen bei PubSub in der Regel kein persistenter Storage mittendrin. Das ist so der klassische Unterschied zwischen Message Queuing und PubSub. Wenn kein Subscriber da ist, dann geht die Published Message auch einfach verloren. Was im Cloud-Umfeld in der Regel nicht passiert, weil du bei Google zum Beispiel in der Regel eine Cloud-Funktion danach hast, die eigentlich immer an deiner Pub-Sub-Queue hängt.",
+            "start": 1987735,
+            "end": 2044620,
+            "confidence": 0.8207947019867547,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Ja, vor allem geht es ja darum, dass die subscribed ist. Das heißt nicht, dass die sofort reagieren muss, weil es ist ja genauso ein Worker, der eine Minute später das konsumieren kann, aber er muss halt registriert sein, dass er hocht auf diese Messages, weil intern wird das ja genauso zwischengespeichert irgendwo bei Google. Aber vom Konzept her ist es natürlich was anderes.",
+            "start": 2044640,
+            "end": 2061647,
+            "confidence": 0.7925312499999999,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Genau.",
+            "start": 2061687,
+            "end": 2062067,
+            "confidence": 0.827,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Wenn ich mir jetzt nicht dieses große Schiff an Bord holen will, aber auch keine Cloud-Lösung verwenden will, gibt es irgendwelche anderen simpleren Lösungen abseits von meiner Datenbank?",
+            "start": 2062087,
+            "end": 2071293,
+            "confidence": 0.8400357142857144,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Was sehr viele Leute nutzen als Alternative ist zum Beispiel Redis. Und Redis würde man jetzt eigentlich nicht in Verbindung mit Message Queuing bringen, Aber.",
+            "start": 2071614,
+            "end": 2079998,
+            "confidence": 0.8040800000000001,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Du machst das, weil du einfach so ein großer Redis-Fan bist. Das wissen wir jetzt alle mittlerweile.",
+            "start": 2080039,
+            "end": 2085521,
+            "confidence": 0.6411176470588235,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Redis hat einfach zwei oder fast sogar drei Komponenten, die für diesen Anwendungsfall ganz gut zu gebrauchen sind. Auf der einen Seite hat Redis auch eine ganz klassische PubSub-Methode, ähnlich wie Google PubSub. Schmeißt du da eine Nachricht rein. Und wenn Subscriber da sind, kriegen die die. Das ist ein 1 zu N Modell. Die zweite prädestinierte Datenstruktur sind eigentlich ganz klassische Listen. Weil eigentlich, wenn du ganz weit weg gehst und die Details mal ausblendest, ist eine Message Queue auch eigentlich eine Liste. Du packst oben einen neuen Eintrag rein, deine neue Nachricht und nimmst die unten wieder raus. Und das kannst du natürlich mit Redis auch machen. Man muss natürlich ein bisschen aufpassen, wie groß deine Queue, also deine Liste wird, aber mit klassischen Listenbefehlen wie Push und Pop kannst du dir natürlich da auch eine Art persistente Wartestange aufbauen.",
+            "start": 2085621,
+            "end": 2135689,
+            "confidence": 0.7949295774647887,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Musst aber natürlich im Hintergrund auch wieder viel im Kopf mitdenken und dementsprechend beachten. Also du bekommst jetzt kein vollwertiges Message Queuing System da.",
+            "start": 2135729,
+            "end": 2144911,
+            "confidence": 0.7885833333333334,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Ja, all die Anwendungsfälle mit Exchange und Routing und was weiß der Gei nicht noch alles, Dead Letter Queues, Time to Live, obwohl Time to Live hat man bei Redis auch, aber all diese spezifischen Sachen wie Message Acknowledgement, Rejections und so weiter, all sowas sind natürlich da nicht, nicht da, weil Redis Listen sind halt nicht auf Message Queue ausgelegt. Und die dritte Komponente ist, die es noch gar nicht so lange bei Redis gibt, da geht es um Redis Streams. Was nicht Message Queueing ist, viele Leute missbrauchen Streams aber als Message Queueing.",
+            "start": 2145291,
+            "end": 2178436,
+            "confidence": 0.7970631578947367,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Es ist ein interessanter Punkt, wo siehst du den Unterschied zu Streams? Wo ist der Unterschied zwischen einem Message Queue und einem Streaming-System oder Streams ganz allgemein?",
+            "start": 2178476,
+            "end": 2188044,
+            "confidence": 0.7107777777777777,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Nur mal ganz zur Erklärung, der Begriff Streams kam eigentlich, also den gibt es schon Ewigkeiten, In den letzten paar Jahren hat er sehr viel Popularität erhascht durch Kafka, durch Apache Kafka. Und Apache Kafka hatte die Eigenheit, wie Streams implementiert wurden. Und zwar, dass es ein Append-Only-Log war. Also das bedeutet, man hat einfach immer nur Daten dran gepackt und dann auf Disks persistiert. Ganz High-Level gesprochen. Alle Kaffee-Experten würden mich glaube ich jetzt gerade in der Luft zerreißen. Als das so populär wurde, haben andere Systeme wie zum Beispiel RabbitMQ oder wie zum Beispiel Redis auch dieses AppendOnly-Log implementiert. Wo ist jetzt genau der Unterschied zwischen Message Queueing und Streams? Auf der einen Seite ermöglichen Streams ein sogenanntes Replay oder Time Traveling. Die Nachrichten innerhalb eines Streams werden in der Regel persistiert und wenn dort ein Consumer diese Nachrichten konsumiert, werden diese Nachrichten nicht aus der Queue gelöscht. Weil es ist keine Queue, es ist eigentlich nur ein Append-Only-Log. Und der Consumer konsumiert die Nachrichten und speichert sich intern. Oh, ich habe die fünfte Nachricht schon gelesen, deswegen muss ich bei der sechsten wieder anfangen. Wohingegen das Message-Queue-System die Message an den Consumer zustellt und dann diese zugestellte Nachricht nicht für einen zweiten Consumer verfügbar ist. Das ermöglicht natürlich auch, dass du in einem Stream alle Daten replayen kannst, beziehungsweise Time-Traveling machen kannst. und zwar einfach zu der zehnten, zwanzigsten oder vierzigsten Nachricht springen kannst.",
+            "start": 2188064,
+            "end": 2280574,
+            "confidence": 0.8294135021097044,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Also wenn man zum Beispiel jetzt ein Use Case annimmt, man verarbeitet die Logs von ganz vielen Servern und speichert die in einem Elasticsearch Cluster ab und mir schmiert dieser ganze Elasticsearch Cluster ab, wenn ich das über ein Message Queuing System gelöst habe, dass die Logdaten weitergeleitet werden. Dann habe ich ein Problem, den wieder aufzubauen von Null, wenn der mir abschmiert und alle Daten weg sind. Aber wenn ich einen Stream habe, kann der einfach wieder bei Null beginnen, kann sich wieder alles einlesen, wird zwar eine lange Zeit brauchen, aber dann habe ich alle Daten wieder in meinem Elasticsearch Cluster drinnen. Das heißt, es ist fast so wie ein Backup, wenn man das so sehen will.",
+            "start": 2281114,
+            "end": 2316718,
+            "confidence": 0.8002436974789918,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Wenn man das so sehen möchte, es gibt in der Streaming-Community ja die große Diskussion, ist Kafka eine Datenbank? Und da gibt es bestimmt Gründe dafür und Gründe dagegen. Die Frage werden wir hier nicht beantworten, aber so kann man das sehen.",
+            "start": 2317258,
+            "end": 2330872,
+            "confidence": 0.8705,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Aber jetzt hast du schon Kafka erwähnt. Kann ich Kafka jetzt auch verwenden als ein Message-Queuing-System in dem Sinne, wenn ich das zum Beispiel jetzt schon irgendwo in Verwendung habe?",
+            "start": 2330932,
+            "end": 2341462,
+            "confidence": 0.7249333333333332,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Kannst du, es ist nicht der prädestinierte Anwendungsfall dafür, weil auch diese spezifischen Eigenheiten von einem Message Queue System sind da nicht verfügbar. Der große Unterschied ist, dass du gegebenenfalls mehr Logik im Client, also im Consumer haben musst. Weil der Consumer muss sich mitspeichern, welche Nachricht du bereits konsumiert hast. So Sachen wie Rejection und Acknowledgement gibt's da nicht, wird aber auch eigentlich nicht benötigt, da eine Nachricht ja auch von mehreren Consumern verarbeitet werden kann, was ein großer Unterschied ist. Besonders wenn du einen Use Case hast von sogenannten Large Fanouts, du hast also eine Warteschlange, und ganz viele Consumer müssen eine Nachricht verarbeiten, Dann ist sowas wie Streaming natürlich schon besser. Nehmen wir mal als Beispiel Mobile Push Notifications. Du hast eine Warteschlange, ein Stream, da gehen Push Notifications rein und du hast ganz viele Handys, die darauf lauschen und müssen dann den Ping kriegen, dass jetzt irgendein Angebot verfügbar ist. Dann ist sowas wie Streaming natürlich bevorzugt gegenüber Message Queuing, weil bei Message Queuing müsstest du ganz viele Queues haben, also du müsstest ein Queue pro Handy haben, wenn du so möchtest. Weil wenn die Nachricht verarbeitet ist, dann ist sie ja aus der Queue raus. Also das ist so ein großer Unterschied.",
+            "start": 2342122,
+            "end": 2415333,
+            "confidence": 0.8082801932367144,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Wobei mit PubSub würde das ganz gut funktionieren, oder? Das ist genau für diesen Use Case auch gemacht worden, dass ich viele Subscriber habe.",
+            "start": 2415373,
+            "end": 2421616,
+            "confidence": 0.7118749999999999,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Mit PubSub wird das auch funktionieren, mit dem großen Unterschied, dass die Nachricht dann nicht persistent wäre, weil die ist ja dann auch lost.",
+            "start": 2421656,
+            "end": 2429341,
+            "confidence": 0.8510833333333334,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Nachdem du ja auch bei einer Firma arbeitest, die Kafka hostet, anbietet, Was würdest denn du sagen, wenn du jetzt ein Message Queuing System brauchst, also wirklich nur ein klassisches Message Queuing System? Ist RabbitMQ einfacher aufzusetzen oder Kafka? Weil Kafka ist ja der neue heiße Scheiß und ich will mich eigentlich wirklich mit den neuen Technologien immer beschäftigen, RabbitMQ ist ja schon zu alt.",
+            "start": 2429381,
+            "end": 2451236,
+            "confidence": 0.7769384615384614,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Das ist eine Scheißfrage. Also das ist wirklich auf deinem Anwendungsfall und welchen Scale du hast. Also wenn wir sagen RabbitMQ ist ein Schiff, dann ist Kafka gegebenenfalls eine Raumstation. Also Kafka und RabbitMQ zu vergleichen ist sehr sehr schwierig, weil die Natur von beiden Systemen ist sehr unterschiedlich. Kafka ist von Haus aus ein verteiltes System, was RabbitMQ von Haus aus nicht ist. RabbitMQ supportet auch Cluster. Ja, alles schön gut, aber... In der Regel betreibt man keinen One-Node-Kafka-Cluster. Ein Kafka-Cluster ist das Minimum, was du eigentlich betreibst mit drei Nodes. Wohingegen beim RabbitMQ du auch ohne Probleme mit einem Active-Passive, also mit einem Zwei-Node-Cluster, super zurande kommen kannst. Es kommt halt wirklich ganz auf deinen Use-Case drauf an, weil da bin ich eher der Fan, nutze das richtige Tool für das richtige Problem. Willst du Streaming oder Message-Queuing machen? Bei Kafka kommt halt eine enorme Komplexität mit, was natürlich auch den Aufbau von einem Cluster supportet, wie zum Beispiel Zookeeper. Klar, da gibt's in der Kafka-Community gerade so Diskussionen oder neue Features wie K-Raft, dass du Zookeeper-less-Kafka-Cluster betreiben kannst und so weiter und so fort. Das ist aber noch gar nicht so weit fortgeschritten. Und da gibt's auch noch so andere geile Features, so wie Tiered Storage, dass du deinen Kafka ... deine Kafka-Daten auf Object-Storage ablegen kannst und so weiter und so fort. Aber du merkst schon, das geht halt schon so super in so recht große Enterprise-Use-Cases, wohingegen ein klassischer RabbitMQ jetzt auch nicht ganz so einfach zu betreiben ist. Aber für Kafka ist halt schon wirklich bevorzugt, dass du da Leute hast, die sich dediziert drum kümmern. Aber es kommt da wirklich drauf an, was du machen möchtest, ja? Also, wenn du wirklich klassisches Message-Queueing hast, dann würde ich dir auch ein Message-Queue-System empfehlen. Hast du Kafka in deinem Stack schon drin, und brauchst alle die dedizierten Message-View-Funktionalitäten nicht, dann könnte man auch überlegen, ob es den Aufwand wert ist, eine neue Komponente in den Stack zu introducen. Ich würde jetzt aber auch nicht ein Message-View-System als Streaming nutzen, weil das sind halt auch andere Anwendungsfälle, weil ein RabbitMQ kriegt in der Regel nicht den High-Performance-Durchsatz wie ein Kafka auf Basis der Detailimplementierung.",
+            "start": 2451256,
+            "end": 2576079,
+            "confidence": 0.7630326086956525,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Okay, dann gehen wir mal zurück zu Message Queues, weg von Streaming, bleiben wir bei diesem Thema. Wie sieht es denn mit ZeroMQ aus? Weil ich habe immer ganz oft gehört, ZeroMQ ist wie RabbitMQ, nur viel leichtgewichtiger und besser und cooler.",
+            "start": 2576619,
+            "end": 2590877,
+            "confidence": 0.7762619047619046,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Naja, ZeroMQ ist ja erstmal nur eine Library. Ist ja keine richtige Systemkomponente, also ist ja keine Applikation. ZeroMQ ist eine Library für asynchronen Nachrichtenaustausch. Und ich habe mit ZeroMQ jetzt noch nicht so viel gearbeitet, aber mein Verständnis ist, dass du ZeroMQ unter anderem in deiner Applikation embeddest, wohingegen du RabbitMQ als externe Komponente in deinem Stack betreibst.",
+            "start": 2591257,
+            "end": 2616440,
+            "confidence": 0.7486779661016948,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Also wenn ich noch einen kleineren Anwendungsfall habe, wo ich jetzt nicht hunderttausende Server habe und irgendwie über Server hinweg und verschiedene Anwendungen das Ganze realisieren muss, dann kann ich mir ZeroMQ holen und das im kleinen Stile in meiner Applikation abbilden, aber habe trotzdem diese Queuing Functionality.",
+            "start": 2616900,
+            "end": 2633925,
+            "confidence": 0.7791249999999997,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Richtig, natürlich ohne die ganzen Reliability-Garantien, Ausfall und Co. Da musst du dich natürlich selbst drum kümmern, weil das natürlich dann als Embedded Library Part deiner Applikation ist. Aber ja, ich sehe das immer so ein bisschen, und der Vergleich hinkt vielleicht ein bisschen, aber wenn du ein paar Schritte zurückgehst, sehe ich ZeroMQ im Bereich Message Queueing sowie SQLite im Bereich Datenbank. weil du SQLite auch sehr oft in deiner Applikation wirklich embedden kannst, um einen SQL-ähnlichen Storage zu haben. Oder da tue ich jetzt SQLite nichts Gutes, wenn ich sage SQL-ähnlich, weil es ist natürlich schon eine vollwertige Datenbank mit allem Drum und Dran, aber sehr gut, um innerhalb deiner Applikation zu embedden. Und so ist es halt auch ZeroMQ. Ist natürlich unglaublich leichtgewichtig, ne? Also wer auf den Memory-Verbrauch achten muss, wer gar nicht so super viel spezifische MQ-Funktionalitäten braucht, Zero MQ ist auch ein Top-Ding.",
+            "start": 2634365,
+            "end": 2693816,
+            "confidence": 0.8043154362416105,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Wo würdest du denn Rapid MQ nicht einsetzen? Oder spricht irgendwas gegen Rapid MQ?",
+            "start": 2693876,
+            "end": 2698699,
+            "confidence": 0.7875,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Man sollte sich halt schon überlegen, ob man RebellionPube betreiben möchte, weil es kann schon ein bisschen tricky werden, wenn man das maintainen möchte. Speziell wenn man einen Cluster betreiben möchte, dann muss man sich halt schon ein bisschen mit dem Unterbau beschäftigen. Also ich rede da von dem von Erlang, von der Erlang VM zum Beispiel. Wenn zwei Erlang-Applikationen über einen Cluster, über einen Server hinweg kommunizieren sollen, dann muss das Erlang-Cookie da sein, richtig gesetzt sein. Also ein bisschen Erlang-Knowledge im Operations-Team würde da schon Sinn machen. Oder Erlang hat auch so eine Embedded-Database, NESIA nennt sich das. Da muss man sich halt schon ein bisschen mit auseinandersetzen. Also wenn du es im Hochverfügbarkeit-Bereich einsetzen möchtest, dann überlegst du dir zweimal, ob du ein RabbitMQ einsetzen möchtest, wenn du zum Beispiel schon Kafka im Stack hast. Also da kommt es wirklich drauf an, hast du ein MQ-Use-Case, also ein Message-Q-Use-Case oder nicht. Die zweite Geschichte ist halt natürlich, welche Garantien brauchst du im Message-Q-Bereich? Also da reden wir schon von diesen harten Problemen wie Exactly-Once-Delivery. Aufgrund der Kombination von komplexem Routing und der pushbasierten Zustellung von RabbitMQ, also so wie RabbitMQ intern die Nachrichten an die Consumer zustellt, supportet RabbitMQ selbst keine Exactly-Once-Delivery, sondern eher At-Least-Once-Delivery.",
+            "start": 2699159,
+            "end": 2785171,
+            "confidence": 0.792221153846154,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Das heißt meine Newsletter-Abonnentinnen bekommen dann wenigstens garantiert eine E-Mail zugestellt, aber können halt vielleicht auch fünfmal die gleiche bekommen, bei At-Least-Once.",
+            "start": 2785211,
+            "end": 2795217,
+            "confidence": 0.8033181818181819,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Ja und nein. Also, RabbitMQ stellt die Nachricht aus der Warteschlange minimum einmal zu deinem Consumer, aber auch gegebenenfalls mehrmals. Und da ist es jetzt ganz wichtig, dass die Consumer idempotent geschrieben werden. Das bedeutet, dass sie eine Nachricht mehrfach verarbeiten können, aber immer dasselbe Ergebnis rauskommt.",
+            "start": 2795257,
+            "end": 2815491,
+            "confidence": 0.8668936170212769,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Was bei E-Mail schwierig ist.",
+            "start": 2816015,
+            "end": 2817656,
+            "confidence": 0.7986,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Da brauchst du halt irgendwo ein zentrales Log. Hat dieser Kunde diese E-Mail schon erhalten? Und dann würdest du bei einem zweiten Processing sagen, oh, der hat die schon erhalten, deswegen acknowledge ich die einfach mal, weil RabbitMQ die Nachricht zweimal zugestellt hat. Das ist so ein klassisches Pattern bei Message Queueing generell. Und das musst du aber auch dann bei Kafka, bei Streaming beachten. Also das ist jetzt nicht RabbitMQ spezifisch, das ist generell spezifisch zu der asynchronen Verarbeitung von Nachrichten, sei es im Message-Queering-Bereich oder im Streaming-Bereich.",
+            "start": 2817696,
+            "end": 2848151,
+            "confidence": 0.7803146067415729,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Das heißt, ihr würd mir dann in der Datenbank das Ganze nochmal abspeichern. Mach ich wahrscheinlich sowieso, weil ich ja irgendwie loggen will, wann diese E-Mail ausgesendet wurde oder damit ich irgendwelche Statistiken habe, auch wie viele E-Mails ausgesendet wurden. dann würde ich das nochmal in der Datenbank abspeichern und der Consumer fragt da ab, ist das schon lockt da, wurde das schon ausgesendet und wenn das schon passiert ist, ignoriere das ganze. Aber das klingt schon sophisticated, also ich bin mir nicht sicher, ob das Newsletter Worker wirklich in der Realität auch so machen.",
+            "start": 2848191,
+            "end": 2877404,
+            "confidence": 0.7733684210526314,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Das weiß ich nicht. Ich habe noch nie ein Newsletter-System selbst geschrieben. Und da ist auch die nächste Frage, ob du sowas selbst schreiben solltest oder nicht einfach einen Service nehmen solltest wie Cleverreach, Mailchimp, Amazon, Schießmichtod, Newsletter-Service, keine Ahnung.",
+            "start": 2877764,
+            "end": 2892413,
+            "confidence": 0.8316250000000001,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Ja, da geht es ja dann auch mehr um das E-Mail-Versenden. Das ist eigentlich die Kunst, das so zu versenden, dass es nicht im Spam-Folder landet. Also da geht es ja weniger um die Message-Queues, sondern mehr um das Versenden selbst.",
+            "start": 2892673,
+            "end": 2903739,
+            "confidence": 0.7241219512195122,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Ja, aber unten drunter werden die halt schon ein ähnliches System haben. Weil auch die werden das natürlich nicht alles in einem Request-Response-Behavior abfeiern. Was natürlich auch noch ein Riesenvorteil von RabbitMQ ist, wir hatten vorhin darüber gesprochen, dass die AMQP supporten als Protokoll. Die einzelnen MQ-Server haben natürlich ein Interesse, mehrere Protokolle zu supporten, um natürlich ihre Anwendungsfälle ein bisschen breiter zu fächern. RabbitMQ selbst kann auch MQTT, die ganzen Leute, die sich ein bisschen mit Heimautomatisierung auseinandersetzen, werden da gegebenenfalls jetzt hellhörig, oder aber auch eine Connection via klassisch HTTP und Websockets, was natürlich dann auch recht interessant ist für die einfache Anbindung von existierenden Systemen.",
+            "start": 2903999,
+            "end": 2949482,
+            "confidence": 0.8034629629629628,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Das ist halt auch der Vorteil von so einem alten System, alt im positiven Sinne, was sich einfach über lange Zeit entwickelt hat, dass der Support von Protokollen gut ist, die Dokumentation, du findest viele Informationen darüber, du bekommst Plugins, Integrationen von anderen Services, Monitoring zum Beispiel oder Authentifizierung. Die ganzen Dinge sind halt schon zigfach gelöst worden und das ist halt auch ein Vorteil, wenn man irgendwas einführen will, weil man da halt einfach guten Support hat. Einerseits auf der Dokumentationsseite, aber andererseits auch auf der Tooling-Seite rundherum in diesem ganzen Ecosystem.",
+            "start": 2950042,
+            "end": 2985978,
+            "confidence": 0.8653440860215054,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Ich selbst nutze Revit MQ schon seit ein paar Jahren in recht vielen meiner Seitenprojekte und betreibe es in einem Docker-Container mit reingemountetem Storage und bin mega Fan. Ich kann Leute verstehen, die sagen i-bar, Revit MQ, Erlang, Riesenschiff. Ja, ist alles nicht falsch, aber wenn man einmal seinen Kopf um ordentliches Message Queueing, Routing, von Nachrichten, verschiedene Types von Exchanges, diese Art Notebalancer, die ich vorhin erwähnt habe, Priority Queues und Dead Letter Queues. Wenn man da einmal mal den Use Case verstanden hat, dann habe ich das Gefühl, ich habe einen Hammer für jeden Nagel irgendwie. Weil du kannst, also du willst nicht mehr ohne und es ist halt einfach so bequem. Du kannst halt einfach auf Knopfdruck deine Worker hoch und runter skalieren und einfach Lastspitzen abfeiern. Und das Tolle ist, du kannst sogar Metadaten pro Nachricht hinzufügen und das bedeutet, Ich weiß ganz genau, welche Nachricht von welcher App erstellt wurde, welcher Content-Type drin ist, JSON, XML oder ähnliches und kann natürlich durch zusätzliche Header noch so Sachen wie Tracing enablen, was natürlich dann fürs Debugging ein Traum ist.",
+            "start": 2986418,
+            "end": 3052107,
+            "confidence": 0.7852076502732239,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Okay, ich habe also gelernt, Streaming und Message Queues sind nicht dasselbe. Also Kafka ist nicht unbedingt ein Ersatz für RabbitMQ. Wenn ich es einfacher haben will, ZeroMQ ist eine gute Anlaufstelle oder eines der gehosteten Cloud-Varianten, SQS, PubSub. Aber gibt es auch sicher viel kleinere noch. Man muss ja nicht immer nur die großen verwenden. Ist dann meistens auch kostengünstiger. Aber ich habe auch gelernt, dass der Andi gar nicht so negativ gegenüber den eigenen Implementierungen in der eigenen Datenbank steht. Ich persönlich sehe da schon wieder ganz viele Probleme bei einer eigenen Implementierung in der Datenbank. Also ich persönlich, wenn es irgendwie geht, würde eher auf sowas wie den Zero MQ setzen, weil ich mir einfach selber gar nicht diese Gedanken machen will, was da alles schief gehen könnte und das haben sich andere Leute überlegt und wie der Andi richtig gesagt hat, in dem ganzen Processing und Parallelität verstecken sich viele Hürden und Fallstricke, und denen möchte ich eigentlich gar nicht begegnen.",
+            "start": 3052899,
+            "end": 3114590,
+            "confidence": 0.8247999999999999,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Ist, glaube ich, informationstechnisch recht interessant, solche Probleme zu lösen. Also, falls ihr mal eine Herausforderung haben wollt, setzt euch doch mal einen Abend hin oder ein ganzes Wochenende und versucht mal so was wie Exactly Once Delivery ordentlich zu implementieren. Da haben sich sehr, sehr viele Programmierer bereits die Zähne und die Haare ausgebissen und ausgerissen.",
+            "start": 3114630,
+            "end": 3132134,
+            "confidence": 0.7682982456140351,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Können wir ja mal eine eigene Episode darüber machen, weil mich interessieren diese Themen ja brennend, auch mit meinem Datenbank-Background, aber sie interessieren mich nicht, wenn ich am Wochenende irgendwo chill und das System einfach funktionieren muss. Und wenn ich das selber programmiert habe, dann wird es halt meistens genau dann nicht funktionieren, wenn ich eigentlich meine Ruhe haben will.",
+            "start": 3132655,
+            "end": 3151372,
+            "confidence": 0.7969666666666669,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Lasst uns doch mal wissen, welchen Anwendungsfall ihr mit Message Queueing oder sogar Streaming abgedeckt habt. Vielleicht etwas kurioses dabei wie die Kommunikation oder das Update von Leaderboards bei Massive Multiplayer Online Games oder irgendwie das Rauspuschen von Fußballergebnissen während der WM. Mich würde es interessieren, was ihr so alles abgedeckt habt. und welche Message Queue Systeme ihr so im Einsatz habt. So ein Schiff wie RabbitMQ, irgendeine gehostete Lösung oder vielleicht auch die ganz klassische Implementierung von ich habe eine Datenmarkttabelle, wie Wolfgang es bevorzugt. Gerne über Twitter an atengkiosk oder via E-Mail an stetisch at engineeringkiosk.dev Und lasst.",
+            "start": 3151652,
+            "end": 3191656,
+            "confidence": 0.8078399999999999,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Uns vielleicht auch wissen, wenn ihr irgendwelche Anbieter, kleinere Anbieter kennt, von coolen Message-Queuing-Systemen. Vielleicht können wir da auch eine kleine Liste zusammenstellen. Es interessiert sicher viele Leute, was es da denn für Alternativen gibt und welche junge Systeme wir da noch nicht auf dem Schirm haben. Und genießt euer Jahr 2023! Tschö! Ciao!",
+            "start": 3191696,
+            "end": 3210475,
+            "confidence": 0.7612962962962962,
+            "channel": null,
+            "speaker": "B"
+        }
+    ],
+    "confidence": 0.7828231344091797,
+    "audio_duration": 3219.0,
+    "webhook_status_code": null,
+    "webhook_auth": false,
+    "summary": null,
+    "auto_highlights_result": null,
+    "content_safety_labels": null,
+    "chapters": null,
+    "sentiment_analysis_results": null,
+    "entities": null
 }
