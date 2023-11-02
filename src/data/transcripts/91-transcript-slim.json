@@ -1,1162 +1,1162 @@
 {
-  "language_code": "de",
-  "audio_url": "https://audio1.redcircle.com/episodes/2f6b4d3d-af38-4f97-ad65-5cc65eaaf79a/stream.mp3",
-  "punctuate": true,
-  "format_text": true,
-  "dual_channel": false,
-  "webhook_url": null,
-  "webhook_auth_header_name": null,
-  "webhook_auth_header_value": null,
-  "audio_start_from": null,
-  "audio_end_at": null,
-  "word_boost": [],
-  "boost_param": null,
-  "filter_profanity": false,
-  "redact_pii": false,
-  "redact_pii_audio": false,
-  "redact_pii_policies": null,
-  "redact_pii_sub": null,
-  "speaker_labels": true,
-  "speakers_expected": 2,
-  "content_safety": false,
-  "content_safety_confidence": null,
-  "iab_categories": false,
-  "custom_spelling": null,
-  "disfluencies": false,
-  "sentiment_analysis": false,
-  "auto_chapters": false,
-  "entity_detection": false,
-  "summarization": false,
-  "summary_model": null,
-  "summary_type": null,
-  "auto_highlights": false,
-  "language_detection": false,
-  "speech_threshold": null,
-  "id": "62zr71hx65-7894-4a5a-9708-583bcb1a6008",
-  "status": "completed",
-  "error": null,
-  "utterances": [
-    {
-      "text": "Deine Datenbank skaliert nicht mehr? Hol dir doch einfach ein verteiltes Datenbanksystem. Das funktioniert doch heute alle schon out of the box. Habt ihr diesen Dialog auch schon einmal gehört? So oder so ähnlich? Wenn man dann aber genauer nachfragt, wie die verteilte Datenhaltung denn funktioniert, welche Kriterien erfüllt werden und wie sich das System bei einem Ausfall von Knoten verhält, wird es sehr oft sehr schnell leise. Und damit willkommen zu einer neuen Episode des Engineering Kiosks, dem deutschsprachigen Software-Engineering-Podcast mit Wolfgang Gassler und Andi Grunwald rund um die Themen Engineering Kultur, Open Source, Menschen, Technologie und allen anderen Bereichen, die damit in Verbindung stehen. Wir besprechen in dieser Episode anhand des CAP-Theorems die Schwierigkeit von verteilten Systemen. Und für alle, für die CAP ein alter Hut ist, wir sprechen auch über Buck Elk, die große Schwester vom CAP-Theorem, Aber auch über Konsistenzkriterien, Ausfalltoleranzen, verteilte COMIT-Protokolle und wie sich das Ganze auch abseits von Datenbanken auf verteilte Systeme auswirkt. Und wer wissen will, warum verteilte Systeme wie Handwerker sind, sollte auf jeden Fall weiterhören. Ich glaube, ich brauche nicht dazu sagen, dass dieser Vergleich von Andi kommt. Aber starten wir ins Thema und los geht's.",
-      "start": 3370,
-      "end": 68989,
-      "confidence": 0.8256122448979586,
-      "channel": null,
-      "speaker": "A"
-    },
-    {
-      "text": "Willkommen zu einer neuen Episode vom Engineering Kiosk. Heute in einem etwas anderen Setup. Ich bin stimmlich etwas angeschlagen. Ich entschuldige mich jetzt schon mal, aber...",
-      "start": 75882,
-      "end": 85813,
-      "confidence": 0.8557692307692307,
-      "channel": null,
-      "speaker": "B"
-    },
-    {
-      "text": "Du klingst wie der Imam, der jetzt gerade im Hintergrund bei mir sein Gebet an die Leute weiterreicht.",
-      "start": 85833,
-      "end": 91699,
-      "confidence": 0.8592222222222222,
-      "channel": null,
-      "speaker": "A"
-    },
-    {
-      "text": "Und lustigerweise höre ich das sogar durch dein Mikro. Wolfgang, wo bist du jetzt gerade?",
-      "start": 92059,
-      "end": 97805,
-      "confidence": 0.8306,
-      "channel": null,
-      "speaker": "B"
-    },
-    {
-      "text": "Jetzt gerade gemütlich auf 500 Höhenmeter, also fast wie in Innsbruck zwischen Bergen, aber im Kosovo.",
-      "start": 97825,
-      "end": 104112,
-      "confidence": 0.858125,
-      "channel": null,
-      "speaker": "A"
-    },
-    {
-      "text": "Du bist da, wie sagt man so bei euch, auf Urlaub und nicht beruflich, richtig?",
-      "start": 104152,
-      "end": 108257,
-      "confidence": 0.7940666666666664,
-      "channel": null,
-      "speaker": "B"
-    },
-    {
-      "text": "Ja, Workation nennen wir es mal so. Ich genieße das Remote Setup zum Beispiel mit dir, aber auch den Kosovo.",
-      "start": 108869,
-      "end": 117454,
-      "confidence": 0.7159500000000001,
-      "channel": null,
-      "speaker": "A"
-    },
-    {
-      "text": "Ich finde es auf jeden Fall super, dass du uns nicht hängen lässt, damit die Hörerinnen und Hörer jede Woche eine neue Episode Engineering Curse haben.",
-      "start": 117474,
-      "end": 124618,
-      "confidence": 0.7041923076923078,
-      "channel": null,
-      "speaker": "B"
-    },
-    {
-      "text": "Ja, haben wir ja gesagt, es gibt keinen Urlaub bei uns.",
-      "start": 124638,
-      "end": 127119,
-      "confidence": 0.7693636363636365,
-      "channel": null,
-      "speaker": "A"
-    },
-    {
-      "text": "Ich bin gespannt, wann wir das erste Mal unsere eigene Regel brechen oder irgendwann selbst aufweichen oder ähnliches. Naja, schauen wir mal.",
-      "start": 127139,
-      "end": 133183,
-      "confidence": 0.7946363636363636,
-      "channel": null,
-      "speaker": "B"
-    },
-    {
-      "text": "Und heute haben wir wieder mal ein ordentliches technisches Thema, was sich ja viele gewünscht haben.",
-      "start": 133203,
-      "end": 137265,
-      "confidence": 0.789875,
-      "channel": null,
-      "speaker": "A"
-    },
-    {
-      "text": "Über welches thema sprechen wir heute was geht dir gerade wirklich so hart auf die nerven beziehungsweise was kommunizierst du zurzeit öfter denn je mal wieder.",
-      "start": 137585,
-      "end": 147417,
-      "confidence": 0.8839999999999999,
-      "channel": null,
-      "speaker": "B"
-    },
-    {
-      "text": "Also eigentlich war das ja deine idee muss man sagen dieses thema weil übers theorem und die schwierigkeiten von verteilten datenbanken referiere ich eigentlich relativ selten muss ich zugeben.",
-      "start": 147437,
-      "end": 157449,
-      "confidence": 0.7928965517241378,
-      "channel": null,
-      "speaker": "A"
-    },
-    {
-      "text": "Ich komme mit dem Thema des Cup Theorems in letzter Zeit immer und immer und immer häufiger in Berührung. Und das liegt unter anderem auch an meiner Arbeit. Ich arbeite mit Datenbanken, ich betreibe Datenbanken beruflich, weil ich bei einem Database-as-a-Service-Provider arbeite. Und das bedeutet natürlich auch, dass ab und zu manche Kunden Herausforderungen haben, beziehungsweise Kunden sind verantwortlich für Konfigurationen und ab und zu mal etwas nicht so läuft, wie es laufen soll. Und dann schaut man sich die ganze Sache an, und dann merkt man, die ganze Sache wurde falsch konfiguriert, vielleicht nicht ganz zu Ende gedacht, oder vielleicht, Achtung, wurde sich über das Cup-Theorem keine Gedanken gemacht. Denn viele Datenbanken implementieren viele Elemente des Cup-Theorems. Der Anwender muss trotzdem wissen, was er tut, und der Anwender muss trotzdem wissen, was er will, und der Anwender muss trotzdem entsprechend die ganze Thematik ordentlich konfigurieren.",
-      "start": 157649,
-      "end": 209818,
-      "confidence": 0.8542054794520547,
-      "channel": null,
-      "speaker": "B"
-    },
-    {
-      "text": "Naja, eigentlich kann ja eine Datenbank gar nichts implementieren. Vom CAP-Theorem ist ja ein Theorem, das quasi immer gültig ist. Aber bevor wir da mal in das Thema einsteigen, beginnen wir mal ganz grundsätzlich. Für alle, die das noch nie gehört haben, dieses CAP-Theorem, also wir befinden uns in der Welt der Datenbanken oder der Datenhaltung im weitesten Sinne.",
-      "start": 210198,
-      "end": 230403,
-      "confidence": 0.8674406779661015,
-      "channel": null,
-      "speaker": "A"
-    },
-    {
-      "text": "Meines Erachtens nach sogar noch eine Ebene höher in den Bereich verteilte Systeme.",
-      "start": 230423,
-      "end": 235604,
-      "confidence": 0.8829230769230769,
-      "channel": null,
-      "speaker": "B"
-    },
-    {
-      "text": "Genau, aber es geht um das Speichern eines States. Also wenn man keinen State hat, braucht man sich darüber eigentlich keine Gedanken machen. Also wenn man nur irgendwelche stateless Services hat, die kann man einfach auf Nodes hochfahren, 10, 20, 30, killen, hochfahren, ist ganz egal. Aber sobald man natürlich irgendwelche Daten speichern will, ein State halten will, dann wird die ganze Sache schwierig. Und ich kann auch nur empfehlen, das möglichst weit nach hinten zu schieben. Also wenn man irgendwann mal in die Entscheidungsphase kommt, will ich jetzt eine verteilte Datenbank, eine verteilte Datenhaltung haben oder nicht? Wenn es irgendwie möglich ist, würde ich davon Abstand nehmen, weil es einfach extrem kompliziert wird mit der Zeit. Also das klassische Modell, was man ja ganz oft macht, wenn man jetzt so eine klassische Datenbank hat, MySQL, Postgres, dass man einfach das Ganze repliziert, dass man sagt, ich habe einen zweiten Server und alles, was auf den ersten Server auf dem Source geschrieben wird, wird auf der Replica am zweiten Server nachgezogen, mehr oder weniger synchron. Und alles, was schreibend ist, basiert dann am Source und alles, was lesend ist, kann auf beiden Servern basieren. Da hat man auch noch kein Problem, weil es kein verteiltes System ist. Ich verteile ja meine Daten eigentlich nur zum Lesen, aber schwierig wird natürlich das Ganze, wenn man den Schreibprozess verteilen will. Und das ist eigentlich der eigentliche Kern von dem Ganzen, beziehungsweise die Schwierigkeit, wenn man wirklich auf mehreren Servern schreiben will und die Daten wirklich verteilen will. Und da kommt man eigentlich relativ schnell im Problem.",
-      "start": 235624,
-      "end": 321222,
-      "confidence": 0.7972765151515154,
-      "channel": null,
-      "speaker": "A"
-    },
-    {
-      "text": "Positives Wording, Wolfgang. Positiv. Wir haben keine Probleme, wir haben nur Herausforderungen.",
-      "start": 321242,
-      "end": 326206,
-      "confidence": 0.8199166666666668,
-      "channel": null,
-      "speaker": "B"
-    },
-    {
-      "text": "Genau, und da würde man meinen, dass dieses Diese Herausforderung, die es ja schon seit Ewigkeiten gibt, eigentlich gelöst wurde. Aber wenn man sich das Ganze ein bisschen ansieht, dann ist es eigentlich ein recht modernes Problem, weil früher hat man alles probiert synchron zu lösen. Das heißt, ich habe meine Datenbanken verteilt und habe dann synchron meine Verteilung durchgeführt. Das heißt, wenn ich jetzt irgendwo geschrieben habe auf einem Server, dann wurden synchron alle Knoten, alle Replikas nachgezogen. Wirklich in einem synchronen Kommit. Jeder, der Informatik studiert hat, hoffentlich hat wahrscheinlich mal das Zwei-Phasen-Kommit-Protokoll gehört. Andi, hast du es gelernt in deinem Studium? Oder war das erst nach dem Studium Abbruch gekommen als Thema?",
-      "start": 326246,
-      "end": 373214,
-      "confidence": 0.8156260869565216,
-      "channel": null,
-      "speaker": "A"
-    },
-    {
-      "text": "Es war bestimmt drin in den Slides, aber wenn du mich jetzt fragst, biete bitte das Zwei-Phasen-Commit-Protokoll runter, dann muss ich ja sagen, wir sehen uns morgen.",
-      "start": 373666,
-      "end": 382233,
-      "confidence": 0.6924444444444445,
-      "channel": null,
-      "speaker": "B"
-    },
-    {
-      "text": "Das Zwei-Phasen-Commit-Protokoll ist ja total simpel, es ist ja nichts anderes als, ihr habt zwei Phasen, ich frage mal alle meinen Server, hey, darf ich dort schreiben? Und indem ich frage, sperren alle Server, Diese Zeile zum Beispiel in der Datenbank, das ist die erste Phase und wenn dann alle Server aufgezeigt haben, ja, ich habe gesperrt, ich habe gesperrt, ich habe gesperrt, dann kommt der Schreibzugriff, dann wird alles geschrieben, auf allen Servern wird geschrieben und dann wird wieder zurückgeliefert, okay, Commit beendet, alles ist geschrieben. Drum zwei Phasen Commit-Protokoll. Ist einfach synchrones Schreiben auf den verschiedenen Knoten.",
-      "start": 382253,
-      "end": 413979,
-      "confidence": 0.8239595959595959,
-      "channel": null,
-      "speaker": "A"
-    },
-    {
-      "text": "Klingt aber relativ langsam, oder?",
-      "start": 413999,
-      "end": 415160,
-      "confidence": 0.6376000000000001,
-      "channel": null,
-      "speaker": "B"
-    },
-    {
-      "text": "Genau das ist das große Problem. Es ist halt super langsam, weil du musst auf alle Server warten. Jetzt wenn du einen Server hast, der ist zu langsam und du hast dann 5 Server, dann sind halt alle 5 Server gleich langsam. Das heißt, du hast eigentlich wenig Vorteile. Der einzige Vorteil ist, dass du halt überall lesen kannst. Lesen geht schnell, brauchst du nicht sperren. Aber beim Schreiben bist du natürlich genauso langsam.",
-      "start": 416205,
-      "end": 434480,
-      "confidence": 0.7409324324324321,
-      "channel": null,
-      "speaker": "A"
-    },
-    {
-      "text": "Und warum muss ich dann immer direkt auf alle 5 Server mit dem 2-Phasen-Comet-Protokoll schreiben?",
-      "start": 434941,
-      "end": 438804,
-      "confidence": 0.8035333333333333,
-      "channel": null,
-      "speaker": "B"
-    },
-    {
-      "text": "Ja, 5 war jetzt nur ein Beispiel, aber wenn du halt die Daten 5 mal verteilst und du willst absolute Konsistenz haben, das heißt, alle Daten zu jedem Zeitpunkt müssen überall auf den 5 Servern gleich sein, weil dir das wichtig ist, dass dein Bankkonto zum Beispiel immer den gleichen Stand anzeigt und das Bankkonto ist halt aus Sicherheitsgründen auf 3 Servern gespeichert, da musst du sicherstellen, dass alle 3 Server immer den gleichen Kontostand haben und nicht dir irgendeinen zu hohen oder zu niedrigen Kontostand anzeigt.",
-      "start": 439415,
-      "end": 465263,
-      "confidence": 0.7990574712643678,
-      "channel": null,
-      "speaker": "A"
-    },
-    {
-      "text": "Aber das gibt es ja heutzutage auch noch, ne? Also es gibt ja Datenbanksysteme, da kann ich auch Daten synchron schreiben. Auf mehreren Clustern sogar, auf mehreren Nodes, Entschuldigung.",
-      "start": 465578,
-      "end": 473502,
-      "confidence": 0.7307241379310344,
-      "channel": null,
-      "speaker": "B"
-    },
-    {
-      "text": "Natürlich, ist ganz klassisches System. Also kannst du machen, vor allem wenn die Geschwindigkeit nicht so relevant ist, ist das natürlich das einfachste System, weil das hundertprozentige, also mehr oder weniger hundertprozentige Sicherheit dir garantiert. Weil sogar in einem Split-Brain-Fall schaltet deine Datenbank einfach ab und ist halt nicht mehr da. ist auch eine gewisse Sicherheit. Dein Kontostand bleibt garantiert gleich, aber die Datenbank ist halt nicht mehr erreichbar.",
-      "start": 473542,
-      "end": 496716,
-      "confidence": 0.7950579710144926,
-      "channel": null,
-      "speaker": "A"
-    },
-    {
-      "text": "Aber das, was du jetzt gerade beschreibst, da sind wir schon mitten drin im Cup-Theorem, beziehungsweise das, was du beschrieben hast, ist ein großer Teil davon. Und fangen wir mal an, da reinzugehen. Und ich möchte mit einem Vergleich starten, den eigentlich jeder kennt.",
-      "start": 496756,
-      "end": 508790,
-      "confidence": 0.7627727272727274,
-      "channel": null,
-      "speaker": "B"
-    },
-    {
-      "text": "Lass mir raten er hinkt aber na start mal los.",
-      "start": 509310,
-      "end": 511952,
-      "confidence": 0.6737,
-      "channel": null,
-      "speaker": "A"
-    },
-    {
-      "text": "Der hinkt nicht der ist super und zwar ist es der typische handwerksvergleich ja ich habe ich beauftrage jemand der baut mir eine garage und natürlich möchte ich es günstig haben ich möchte es natürlich morgen haben schnell ja und natürlich in einer sehr hohen qualität. Das bedeutet billig, schnell und gut. Und was sagt der Handwerker zu mir? Ja, so wünsche ich das leider jeder, aber wählen Sie zwei. Und jetzt stellt sich natürlich die Frage, was wähle ich? Billig und schnell?",
-      "start": 511972,
-      "end": 537790,
-      "confidence": 0.7865060240963853,
-      "channel": null,
-      "speaker": "B"
-    },
-    {
-      "text": "Moment, billig und gut. Wie geht billig und gut?",
-      "start": 537830,
-      "end": 540512,
-      "confidence": 0.8591111111111112,
-      "channel": null,
-      "speaker": "A"
-    },
-    {
-      "text": "Prinzipiell würde ich dir jetzt antworten, okay, dann ist es halt nicht schnell, aber du hast da auch schon wieder unglaublich was getroffen und zwar ist auch das also wie geht eigentlich billig und gut, aufs Cup-Theorem übertragbar und zwar mit der Partition Tolerance. Aber da kommen wir gleich zu, wenn wir da einmal sind. Generell gibt es aber bei diesen drei Möglichkeiten, wenn du zwei wählen solltest, gar keinen richtig oder falsch, denn es ist immer irgendwie ein Trade-Off.",
-      "start": 540532,
-      "end": 567090,
-      "confidence": 0.8246249999999999,
-      "channel": null,
-      "speaker": "B"
-    },
-    {
-      "text": "Ich bin ja ehrlich gesagt gar kein großer Fan von diesen Dreiecken, weil mir kommt immer vor, da hat man sich dann überlegt, so ein Dreieck wäre eigentlich extrem cool, wähle zwei und dann fangt man immer an, so etwas zu erfinden, weil auch beim Cup-Theorem, ich finde das hinkt auch teilweise ein bisschen oder es verstehen viele Leute falsch. Das ist, glaube ich, ein großes Problem. Aber Andi, erklär mal, was ist dieses C, A, P und wie sieht unser Dreieck denn aus?",
-      "start": 567110,
-      "end": 590524,
-      "confidence": 0.7434642857142858,
-      "channel": null,
-      "speaker": "A"
-    },
-    {
-      "text": "Werbung. Das Cup-Theorem ist in verteilten und weltweit skalierten Systemen eine große Herausforderung. Diese Art von Skalierungsproblemen findest du auch bei unserem heutigen Episodensponsor Trivago aus Düsseldorf. Millionen von Reisenden weltweit verwenden die Hotelsuchmaschine auf über 50 Länderplattformen. Das System darunter ist technisch hochkomplex, die Preisanfragen und Marktplatz-Auktionen finden in Realtime statt, es sind genug Daten vorhanden, um mit Machine-Learning-Techniken das Produkt zu verbessern und die Plattform wird aus mehreren Cloud-Regionen weltweit ausgeliefert. Die Theorie des CAP-Theorems findet also in der Infrastruktur von Trivago wirklich Anwendung. Über 300 Tech-Professionals aus allen Richtungen arbeiten daran, das Produkt nach vorne zu bringen. Durch den großen und weltweiten Scale können auch kleine Änderungen durch Dich einen großen Impact auf die User und auf die Plattform haben. Wolfgang und ich waren selbst lange Zeit ein Teil des Teams. Dort haben wir auch unter anderem gelernt, datengetrieben zu arbeiten. AB-Testing sowie schnelle datengetriebene Entscheidungen sind einige der Grundbausteine von Trivago. Dadurch lässt sich sehr viel in kurzer Zeit ausprobieren. Nicht nur im Produkt, auch in der Infrastruktur. Wenn das für dich interessant klingt, werde doch mal Teil des Teams und bewirb dich noch heute. Interessante offene Positionen findest du unter careers.trivago.com.in. Initiativbewerbungen sind ebenfalls gern gesehen. Einfach die Bewerbung an joinusattrivago.com mit dem Treff-Engineering-Kiosk senden. Alle Infos findest du natürlich auch in den Show Notes. Werbung Ende. für die Leute, die im Wolfganggrad nicht folgen können. Also das CAP-Theorem wird geschrieben CAP. Das sind die Anfangsbuchstaben von Consistency, Availability und Partition Tolerance. Und visuell wird das oft dargestellt als Dreieck, wo du immer nur eine Kante des Dreiecks wählen sollst, damit du dann zwei dieser drei Attribute wählen kannst. Denn wähle zwei, es gibt keine drei.",
-      "start": 592045,
-      "end": 699624,
-      "confidence": 0.8321637010676154,
-      "channel": null,
-      "speaker": "B"
-    },
-    {
-      "text": "Also entweder C und A, C, P, AP.",
-      "start": 700188,
-      "end": 703249,
-      "confidence": 0.88225,
-      "channel": null,
-      "speaker": "A"
-    },
-    {
-      "text": "Genau, und jetzt hat Wolfgang gerade gesagt, wie geht denn billig und gut? Und da kommen wir gleich zu, denn das ist auch die höchste Kritik an der Visualisierung des Cup-Theorems in einem Dreieck. Aber lasst uns erstmal beschreiben, was das Cup-Theorem überhaupt ist. Meines Erachtens nach gehört das zu den Grundlagen des Cloud Computings, beziehungsweise zum Design von Cloud-Anwendungen generell. Also das CAP-Theorem ist anwendbar in jedem verteilten System und Cloud-Anwendungen heutzutage sind verteilte Systeme durch unendliche Skalierungsmöglichkeiten. Aber aufgrund der Zusicherung dieser Flexibilität, die du in modernen Clouds hast, musst du halt immer einen Trade-off eingehen, also immer einen Kompromiss.",
-      "start": 703289,
-      "end": 740633,
-      "confidence": 0.81171568627451,
-      "channel": null,
-      "speaker": "B"
-    },
-    {
-      "text": "Wobei wir natürlich nur von der Datenspeicherung sprechen. Also wenn du keine Daten speichern musst, keinen State halten musst, dann ist es irrelevant.",
-      "start": 741305,
-      "end": 747628,
-      "confidence": 0.835086956521739,
-      "channel": null,
-      "speaker": "A"
-    },
-    {
-      "text": "Das ist korrekt. Aber nennen wir mal fast eine Applikation, die heutzutage keine Daten mehr speichert. Ich glaube, mein Handy speichert mehr Daten.",
-      "start": 748328,
-      "end": 754731,
-      "confidence": 0.7659565217391303,
-      "channel": null,
-      "speaker": "B"
-    },
-    {
-      "text": "Als... Ja, und du hast natürlich sogar die Metadaten. In irgendeinem Kubernetes-Cluster zum Beispiel musst du ja die Metadaten auch konsistent irgendwo halten, was für Service läuft, wo und so weiter.",
-      "start": 754771,
-      "end": 764515,
-      "confidence": 0.7353870967741937,
-      "channel": null,
-      "speaker": "A"
-    },
-    {
-      "text": "Generell ist die Kernaussage des CAP-Theorems, in einem verteilten System ist es unmöglich, alle drei Eigenschaften Konsistenz, Verfügbarkeit, also Availability und Partition Tolerance, also Ausfalltoleranz zu garantieren. Bis heute wurde noch kein Beweis dargelegt, dass ein verteiltes System streng konsistent, dauerhaft verfügbar und mit einer sehr hohen Ausfalltoleranz ausgestattet werden kann.",
-      "start": 765358,
-      "end": 791116,
-      "confidence": 0.8808235294117646,
-      "channel": null,
-      "speaker": "B"
-    },
-    {
-      "text": "Erklär mal die drei Begriffe, weil konsistent ist ja gerade in der Datenbankwelt ein Wort, was sehr gerne verwendet wird und in ganz unterschiedlichen Bereichen eigentlich.",
-      "start": 791724,
-      "end": 800799,
-      "confidence": 0.8628076923076923,
-      "channel": null,
-      "speaker": "A"
-    },
-    {
-      "text": "Den meisten Leuten wird im Begriff Konsistenz auch der Begriff Transaktionen irgendwie in den Sinn kommen. Generell gilt es, dass in einem verteilten System mit replizierten Daten, dass es da sichergestellt werden muss, dass nach Abschluss einer Transaktion alle Replikate den Datensatz aktualisiert haben und den gleichen Datensatz zurückgeben. Das bedeutet, alle Clients sehen zum gleichen Zeitpunkt die gleichen Daten. Dann ist deine Datenhaltung in deinem verteilten System konsistent. Jetzt gibt es natürlich bei diesen ganzen NoSQL-Datenbanken und so weiter immer noch den Begriff eventual consistent, was bedeutet, nach einer gewissen Zeit, Replizierung, asynchrone Replizierung oder ähnliches, sind die Daten wieder konsistent. Das ist richtig. Das erfüllt aber nicht die Konsistenz-Eigenschaft des Kapp-Theorems, denn die Konsistenz-Eigenschaft des Kapp-Theorems sagt strenge Konsistenz und sie wird auch als starke Konsistenz oder als immediate consistency beschrieben.",
-      "start": 801417,
-      "end": 857758,
-      "confidence": 0.8751353383458641,
-      "channel": null,
-      "speaker": "B"
-    },
-    {
-      "text": "Also wenn wir eine klassische Replikation haben, wo es eine Source gibt und eine Replica, MySQL zum Beispiel, dann haben wir da keine harte Konsistenz, weil die Replica-Node kann immer hinterherhinken, teilweise Stunden unter Umständen. Die hat zwar einen konsistenten Datenbestand in sich, aber auf dem Source, der vielleicht sechs Stunden weiter ist sozusagen in der Zukunft, der hat natürlich einen anderen Datenstand als die Replica-Node, die sechs Stunden hinterherhinkt. Also da hast du keine richtige Konsistenz, aber beide Datenbanken sind natürlich in sich konsistent. Das schon, aber eben nicht den gleichen Datenstand. Also wir sprechen da wirklich vom konsistenten Datenstand auf allen Nodes.",
-      "start": 858259,
-      "end": 898897,
-      "confidence": 0.8409807692307694,
-      "channel": null,
-      "speaker": "A"
-    },
-    {
-      "text": "Wenn ich jetzt aber eine einzelne MySQL-Node habe, also ein Server mit einer MySQL-Datenbank, ich mache da ein Insert, dann ist das ebenfalls konsistent, weil da gibt es.",
-      "start": 898917,
-      "end": 907902,
-      "confidence": 0.7924642857142857,
-      "channel": null,
-      "speaker": "B"
-    },
-    {
-      "text": "Ja nichts zu interpretieren. Da ist dann sowieso alles konsistent. Da ist ACID-Consistency, normale Consistency, da ist alles konsistent, klar.",
-      "start": 907922,
-      "end": 913245,
-      "confidence": 0.4149,
-      "channel": null,
-      "speaker": "A"
-    },
-    {
-      "text": "Kommen wir zu den Buchstaben A, Availability. Auf deutsch Verfügbarkeit. Es wird übersetzt als die Verfügbarkeit im Sinne einer akzeptablen Antwortzeit.",
-      "start": 913626,
-      "end": 926585,
-      "confidence": 0.8344285714285714,
-      "channel": null,
-      "speaker": "B"
-    },
-    {
-      "text": "Whatever that means.",
-      "start": 926626,
-      "end": 927407,
-      "confidence": 0.45599999999999996,
-      "channel": null,
-      "speaker": "A"
-    },
-    {
-      "text": "Whatever this means ist richtig. Fünf Sekunden halte ich nicht für akzeptabel, beziehungsweise die heutige Kundschaft hält das nicht mehr für akzeptabel. Aber es wird mehr oder weniger beschrieben als alle Anfragen, die an das System gestellt werden, werden stets beantwortet, auch wenn ein Server oder ein ganzes Datacenter ausfällt. Das bedeutet, alle Clients können zu jeder Zeit Lese- und Schreibzugriffe durchführen, die natürlich dann auch vom System beantwortet werden. Eine Antwort hier muss nicht immer eine erfolgreiche Antwort sein. Es kann auch ein Fehlerfall sein, solange die Applikation läuft und verfügbar ist. Das muss man natürlich sagen. Wenn du eine scheiß Anfrage machst und dein Programm mit einem Fehler reagiert, dann ist sie trotzdem verfügbar.",
-      "start": 928155,
-      "end": 964596,
-      "confidence": 0.8184224137931034,
-      "channel": null,
-      "speaker": "B"
-    },
-    {
-      "text": "Wichtig ist vielleicht auch, dass wir von Schreibzugriffen genauso sprechen. Es ist nicht nur rein Lesezugriffe, sondern auch Schreibzugriffe. Wenn man nur Lesezugriffe betrachtet, wäre natürlich die Welt schön einfach und simpel. Aber in der Realität haben wir natürlich auch Schreibzugriffe. So, und jetzt kommt dieses berühmte P oder B, wie wir Österreicher sagen, Partition Tolerance.",
-      "start": 964616,
-      "end": 983745,
-      "confidence": 0.8396607142857142,
-      "channel": null,
-      "speaker": "A"
-    },
-    {
-      "text": "Wieso nennt ihr das B?",
-      "start": 983785,
-      "end": 985166,
-      "confidence": 0.5894,
-      "channel": null,
-      "speaker": "B"
-    },
-    {
-      "text": "Ja, bei uns ist alles B. BP ist ja alles das Gleiche.",
-      "start": 985206,
-      "end": 988087,
-      "confidence": 0.6931666666666666,
-      "channel": null,
-      "speaker": "A"
-    },
-    {
-      "text": "BP ist ein Ölkonzern.",
-      "start": 988107,
-      "end": 989168,
-      "confidence": 0.8225,
-      "channel": null,
-      "speaker": "B"
-    },
-    {
-      "text": "Ja, siehst du, da ist auch BB, genau.",
-      "start": 989677,
-      "end": 992718,
-      "confidence": 0.32675,
-      "channel": null,
-      "speaker": "A"
-    },
-    {
-      "text": "Nee, jetzt geht's eigentlich um das Wesentliche, worum auch immer so ein bisschen gezankt wird, und zwar ist das die Partition Tolerance beziehungsweise die Ausfalltoleranz. Da geht's wirklich um die Ausfalltoleranz der Rechner beziehungsweise Servernetze. Und wenn dein System Partition Tolerant ist, dann bedeutet das, dass das System auch weiterarbeitet, wenn es partitioniert wird. Das heißt, wenn Knoten nicht mehr miteinander kommunizieren können, um zum Beispiel Daten miteinander auszutauschen oder konsistent zu halten. Das bedeutet natürlich auch, dass das System weiterarbeiten muss, wenn einzelne Knoten nicht mehr miteinander kommunizieren können. Und das ist natürlich, ich sage mal, die hohe Kunst des Cloud Computings.",
-      "start": 992738,
-      "end": 1028440,
-      "confidence": 0.8277961165048544,
-      "channel": null,
-      "speaker": "B"
-    },
-    {
-      "text": "Und genau da kommt eigentlich mein Punkt rein, dass sich da wieder irgendwer überlegt hat, damals der Brewer, der das veröffentlicht hat, dass man das in so einem Dreieck eigentlich vielleicht darstellen könnte, was ja eigentlich gar nicht so richtig ist, weil du wählst ja nicht eine der drei Ecken oder zwei der drei Ecken, sorry, sondern was du ja eigentlich mit dem Cap-Theorem sagst, ist im Falle einer Situation, wo du zwei Partitionen hast, also irgendeinen Ausfall, dann musst du zwischen Availability oder Consistency wählen. Also eigentlich ist es relativ vereinfacht, das Ganze auf einen Satz. Im Falle eines Ausfalls musst du eben wählen zwischen C oder A. Und eigentlich, du kannst nicht nur CP wählen, weil CP wäre der Fall eigentlich, wenn alles funktioniert. Also das ist eigentlich genau das, was du mit billig und gut gemeint hast. Also man kann eigentlich nicht alles wählen in diesem Dreieck. Drum würde ich das einfach immer runterbrechen auf den Satz im Falle von einem Ausfall, wo sie wählen Consistency oder Availability.",
-      "start": 1028775,
-      "end": 1087245,
-      "confidence": 0.8315204678362573,
-      "channel": null,
-      "speaker": "A"
-    },
-    {
-      "text": "Du hast vollkommen recht, du hast genau die Kritik angebracht, die viele Leute beim Cup-Theorem an den Tag legen, dass man gar nicht alle Kanten des Dreiecks wählen kann, weil in einem verteilten System Partition Tolerance einfach nicht wegdenkbar ist. Partition Tolerance, Netzwerkausfälle, unreliable Netzwerk und so weiter. hast du einfach in der realen Welt, das ist einfach da. Und deswegen wird auch besagt, dass das CAP-Theorem eigentlich nur ein Trade-Off bezüglich Consistency und Availability ist, so wie du grad gesagt hast. Und deswegen der Handwerksvergleich grade, billig und gut, weiß ich jetzt nicht wirklich, ob's geht. Aber warum es eine Datenbank gibt, die sagt, wir sind verteilt, aber müssen keine Partition Tolerance unterstützen, dazu kommen wir später, weil wir gehen natürlich gleich auch noch mal ein bisschen in die Praxis. Und da versuchen wir, deinen Punkt mal ein bisschen zu widerlegen.",
-      "start": 1087533,
-      "end": 1136681,
-      "confidence": 0.793943661971831,
-      "channel": null,
-      "speaker": "B"
-    },
-    {
-      "text": "Und ich glaube, das ist jetzt eben ganz wichtig, dieses CAP-Theorem, die eben zeigt, wie du am Anfang schon auch richtig erwähnt hast, es gibt keine Datenbank, die alles ermöglicht. Und viele Leute vergessen diese Problematik von verteilten Systemen. Die setzen eine Datenbank ein, die setzen eine verteilte Datenbank ein, setzen so einen Postgres Cluster auf, einen MySQL Cluster. denken sich, das funktioniert eh alles schön, das ist super sicher, wie meine Single Instance MySQL und denken aber nie an diesen Problemfall, wenn eben ein Ausfall ist in diesem KAP3-Eck, weil dann habe ich genau ein Problem und dann muss die Datenbank das handeln, teilweise muss ich es auch selber handeln, teilweise gibt es Konflikte und da gibt es dann meistens Probleme, die nicht mehr so einfach zu beheben sind. Und die Datenbank kann über ein Jahr super laufen und irgendwann hat sie dann dieses Problem und dann sind die meisten Leute überfordert, weil die nie daran gedacht haben, dass das irgendwo ein schweres Problem irgendwann einmal auftreten kann, weil die Datenbank managt ja alles selber im verteilten Betrieb. Aber in der Realität ist es eben so, dass genau, wenn man ein Problem hat, muss man plötzlich die ganzen Details verstehen, alles von der Architektur, wie läuft das? Und da hat man halt dann meistens diesen Stress. Und darum sehe ich das so als großes Problem an, dass man einfach so verteilte Datenbanken auf ein Problem wirft. Und MongoDB war damals der klassische Fall, wo alle gesagt haben, out of the box, es skaliert, es kann einfach draufwerfen. Und es haben viele die Rechnung dann später bezahlt, wie sie dann in Probleme gelaufen sind. Und das hängt gar nicht mit der MongoDB-Datenbank zusammen, vielleicht auch, aber ich glaube, es passiert mit jeder Datenbank. Wenn man halt diese ganzen Komplexitäten, die im Hintergrund da ablaufen, nicht versteht, dann wird man irgendwann in Probleme rennen, die wesentlich komplexer sind als bei einer Single Instance.",
-      "start": 1136921,
-      "end": 1237116,
-      "confidence": 0.8152453416149069,
-      "channel": null,
-      "speaker": "A"
-    },
-    {
-      "text": "Wie MongoDB das Cup-Theorem umsetzt, beziehungsweise wofür MongoDB sich entschieden hat, da kommen wir gleich auch noch zu. Aber fühlen wir uns mal ganz kurz vor Augen, was es eigentlich bedeuten würde, wenn ein verteiltes System alle drei Eigenschaften erfüllen würde. Das würde bedeuten, dass bei einer Unterbrechung der Verbindung zwischen deinen Nodes, dass das System weiterhin antworten muss, also verfügbar ist. also auf anderen Orten reagieren muss, und zwar konsistent. Und jetzt kommt's. Und wenn nun Daten auf einer Node geändert werden, müsste theoretisch mit einer unterbrochenen Verbindung die Daten auf den anderen Nodes ebenfalls konsistent gehalten werden, was natürlich nicht funktioniert.",
-      "start": 1237136,
-      "end": 1279402,
-      "confidence": 0.8566407766990288,
-      "channel": null,
-      "speaker": "B"
-    },
-    {
-      "text": "Also man kann sich das ganz gut vorstellen, man hat zwei Datacenters, eines in Amerika, eines in Europa und die Leitung zwischen diesen Datacenters bricht. Dann willst du natürlich deinen europäischen Kunden weiterhin die Datenbank zur Verfügung stellen und deinen amerikanischen. Aber es ist ganz klar, wenn beide schreibend zugreifen, wirst du irgendwie ein Problem haben, wenn diese fette Leitung zwischen Amerika und Europa nicht mehr da ist. Egal wie viele Server hast, egal wie viele Replikationen du hast, egal wie oft du Daten doppelt irgendwo speicherst, du wirst dieses Split-Brain haben zwischen Europa und Amerika. Und genau das ist eigentlich dieses unlösbare Problem, was das CAP-Theorem auch beschreibt und wo es keine sinnvolle Lösung gibt, sofern du deinen europäischen Kunden und den amerikanischen Kunden weiterhin dein Service anbieten willst. Wenn du natürlich sagst, okay, in dem Fall ist mein Service nicht mehr verfügbar, dann ist es ja in Ordnung, aber das ist genau dieses Availability, was dann wegfällt.",
-      "start": 1280030,
-      "end": 1331478,
-      "confidence": 0.8130943396226414,
-      "channel": null,
-      "speaker": "A"
-    },
-    {
-      "text": "Genau, weil das ist jetzt der harte Trade-Off. Wie entscheidest du dich, das System zu betreiben? Entweder inkonsistent oder gar nicht. Was gibst du also auf? Entweder Consistency oder Availability.",
-      "start": 1332370,
-      "end": 1341852,
-      "confidence": 0.7508666666666668,
-      "channel": null,
-      "speaker": "B"
-    },
-    {
-      "text": "Und so einfach ist die SCAP-Theorie. Schon alles erklärt.",
-      "start": 1341912,
-      "end": 1344693,
-      "confidence": 0.6001111111111112,
-      "channel": null,
-      "speaker": "A"
-    },
-    {
-      "text": "Wahnsinn. Vielen Dank. Willkommen zu meinem Tech-Talk. Ich wünsche euch noch einen schönen Tag. Nee, der Clou ist ja, das hört sich alles jetzt total einfach an. Ja, klar, habe ich verstanden. So, und jetzt geht mal bitte zu euch in die Firma. Und jetzt sprecht mal mit euren Teamkollegen. Wie soll sich euer System in diesem Fehlerfall verhalten? Und ich gehe stark davon aus, du hast eine andere Meinung. als der Produktmanager, als seine Chefin und Co.",
-      "start": 1344713,
-      "end": 1365640,
-      "confidence": 0.6857307692307694,
-      "channel": null,
-      "speaker": "B"
-    },
-    {
-      "text": "Ja, aber Moment, wir haben doch einfach diesen Postgres Cluster installiert und er macht doch alles für uns.",
-      "start": 1365680,
-      "end": 1369963,
-      "confidence": 0.7413888888888889,
-      "channel": null,
-      "speaker": "A"
-    },
-    {
-      "text": "Wir möchten nochmal in Erinnerung rufen, nicht nur bei Reed, sondern auch bei Ride Operations. Und das ist ja die Kündigsklasse. Aber ich bin immer ein Fan davon, wo kommt die Klamotte denn immer her? Ja, also ich meine, Cup Theorem, seit wann gibt's das? 70er, 80er, 60er? Nee, ist gar nicht so alt. Und zwar hat Eric Brewer, hat inzwischen auch mal bei Google gearbeitet, glaube ich. Ist Professor am MIT aktuell, glaube ich. Hat's erst im Jahr 2000 vorgestellt in der Keynote, beziehungsweise 1999 in dem Paper veröffentlicht. Also, das Kapitalismus ist noch gar nicht so alt. Irgendwie so 23 Jahre. Wow, hab ich mir gedacht. Auf jeden Fall ...",
-      "start": 1369983,
-      "end": 1406337,
-      "confidence": 0.7387142857142855,
-      "channel": null,
-      "speaker": "B"
-    },
-    {
-      "text": "Es ist ja schön, dass du immer mit der Historie ankommst, weil eigentlich würde man das ja von mir als Wissenschaftler erwarten. Auch vielleicht zu meiner Theorie, warum das erst so spät aufgekommen ist. Das Problem gibt's natürlich schon lange, muss man auch dazusagen. Es wurde halt nicht in dieser Form beschrieben. Aber man muss ja auch schauen, wenn man sich die Hardware so ansieht und was so bis in die 90er Jahren eigentlich passiert ist, dann war das halt meistens Mainframe-Systeme, alles auf einem System, möglichst synchron. Datenbanken wurden synchron, wie wir schon beschrieben haben, mit dem Zwei-Phasen-Commit einfach repliziert bzw. das Commit durchgeführt. Das heißt, es war alles eher so Single-Node-Architektur. Und erst in den 2000ern ist es eigentlich so langsam dieses ganze, ich will es jetzt nicht Cloud Computing nennen, aber Multithreading, das Verteilen über Nodes. Google hat damit angefangen, im großen Stile mit MapReduce dann auch das auf mehrere Knoten zu verteilen. Also diese ganze Verteilung im Sinne, wie wir es heute kennen in der Cloud, die ist eigentlich erst so in den späten 90ern bis 2000ern eigentlich überhaupt langsam aufgekommen. Und darum auch meine Vermutung, dass es dementsprechend spät so einen Anklang gefunden hat oder halt dementsprechend auch beschrieben wurde.",
-      "start": 1406347,
-      "end": 1474559,
-      "confidence": 0.8067268292682928,
-      "channel": null,
-      "speaker": "A"
-    },
-    {
-      "text": "Ein weiterer Grund hat Eric Brewer bei der Vorstellung mitgegeben, und zwar sagte er, dass sich so um 1999, 2000 die ganze Forschung um verteilte Systeme eigentlich primär auf verteilte Berechnungen bezogen hat und nicht auf die verteilte Speicherung von Daten. Denn Berechnungen kann man immer wieder neu berechnen, auch wenn eine Node hops geht, aber ein persistenter Zustand in verteilten Systemen ist halt ein echt schwieriges Problem.",
-      "start": 1474959,
-      "end": 1500922,
-      "confidence": 0.8118088235294114,
-      "channel": null,
-      "speaker": "B"
-    },
-    {
-      "text": "Es war damals einfach keine Datenbank am Markt, die da irgendwie so ein Cluster oder sowas angeboten hat. Du hast da die großen Player mit DB2 auf ihren Mainframes gehabt, aber es war alles Single-Core-Architektur und alles vertikal skaliert.",
-      "start": 1501802,
-      "end": 1515707,
-      "confidence": 0.7572307692307692,
-      "channel": null,
-      "speaker": "A"
-    },
-    {
-      "text": "Ich bin immer noch ein riesen Fan von IBM Mainframes und ich weiß inzwischen auch, dass ein IBM Mainframe auch ein Kubernetes betreiben kann und das nenne ich wirklich reale vertikale Skalierung. Weil ich würde gerne mal mit jemandem sprechen, der ein Kubernetes auf einem Mainframe betreibt, der muss ja mit Network Partitions eigentlich nichts mehr im Hut haben, oder? Ich meine, der muss ja das beste Leben haben, keine Netzwerkprobleme, alles super. Weil wie viel CPUs und wie viel RAM hat so ein Ding? So ein aktueller Z7, das ist schon ordentlich, glaube ich, oder?",
-      "start": 1515967,
-      "end": 1543142,
-      "confidence": 0.7381666666666667,
-      "channel": null,
-      "speaker": "B"
-    },
-    {
-      "text": "Viel, würde ich mal sagen, glaube ich zumindest. Also falls jemand übrigens irgendwen kennt, der sich sehr gut mit Mainframes auskennt, bitte unbedingt uns eine Message schicken.",
-      "start": 1543822,
-      "end": 1551947,
-      "confidence": 0.7841111111111113,
-      "channel": null,
-      "speaker": "A"
-    },
-    {
-      "text": "Kommen wir zurück zur Geschichte. Und zwar Eric Brewer hat damals ganz stark an globalen Suchmaschinen und verteilten Webcaches gearbeitet. Und beide zählen halt zu dem Bereich der verteilten Systeme. Im Bereich der verteilten Systeme hast du ein System verteilt auf mehrere Nodes und was hast du da natürlich ein Netzwerk dazwischen und wie Werner Vogels schon gesagt hat, everything fails all the time. Somit hast du natürlich ein instabiles Netzwerk. Das bedeutet, Network Partitions hast du dauerhaft. Jetzt hast du aber das Problem, wenn du nämlich ein State hast, einen persistenten Zustand, den du auch behalten möchtest, dass du dein System halt, wie das CAP Theorem halt sagt, dich zwischen Consistency und Availability entscheiden musst. Im Jahr 2000 gab's dann eigentlich mehr oder weniger nur zwei, ich nenn's mal Begriffe. Und zwar auf der einen Seite ist das ACID, aus der klassischen relationalen Datenbankwelt, auf der anderen Seite ist das BASE. ACID, wir erinnern uns, damals aus der Uni oder aus dem Informatikunterricht, Transaktionen und so weiter. Atomar, konsistent, isoliert und dauerhaft.",
-      "start": 1551987,
-      "end": 1616287,
-      "confidence": 0.8065028901734103,
-      "channel": null,
-      "speaker": "B"
-    },
-    {
-      "text": "Hättest du das jetzt hinbekommen ohne Notes? Nee.",
-      "start": 1616307,
-      "end": 1619108,
-      "confidence": 0.525,
-      "channel": null,
-      "speaker": "A"
-    },
-    {
-      "text": "Aber ich meine, das muss ich auch nicht. Also ich meine, wie oft, ich habe noch nie irgendwie in letzter Zeit gesagt, ja hör mal, sorry, aber deine Operationen sind jetzt hier nicht Asset-konform.",
-      "start": 1621410,
-      "end": 1630818,
-      "confidence": 0.7028823529411765,
-      "channel": null,
-      "speaker": "B"
-    },
-    {
-      "text": "Also ich kann mich erinnern, ich war mal auf einer Konferenz und da war damals der Chefentwickler von dem neuen Datenbank-Storage-Format von MariaDB, ist schon lange her. Es hat auch damals noch anders geheißen, ich habe es leider vergessen, irgendwas mit A. Und er hatte im Vortrag ewig lang nach ACID gesucht, nach dem Vote, und hat gemeint, da gibt es ja dieses wissenschaftliche Zeug, was man da irgendwie so, dass es irgendwie beschreibt und so weiter. Und das Publikum hat ihm weiterhelfen müssen, weil er hat keine Ahnung von dieser wissenschaftlichen Annäherung gehabt. Es war für mich unverständlich, wie man Datenbanksysteme entwerfen kann, wirklich eine Storage Engine, ohne dass man ACID versteht, aber in dem Fall war es so.",
-      "start": 1631478,
-      "end": 1668266,
-      "confidence": 0.7860916666666665,
-      "channel": null,
-      "speaker": "A"
-    },
-    {
-      "text": "Naja, ich glaube, Asset ist aus der Welt der relationalen Datenbanken nicht mehr wegzudenken, aber man muss sich den mal im Hinterkopf behalten, wenn wir von Asset reden und wenn wir auch von verteilten Systemen sprechen, dann tauschen wir eigentlich die Isolation und die Konsistenz gegen die Performance, weil Wie Wolfgang auch schon sagte, das konsistente Schreiben von Daten auf mehrere Nodes geht halt zulasten der Performance. Auf der anderen Seite hat es natürlich ein paar tolle Attribute, wie zum Beispiel, es ist halt wirklich stark konsistent, alles ist isoliert, alles, wenn etwas committed auf der Disk ist, dann ist das auch wirklich gespeichert. Hat natürlich auch ein paar Nachteile, wie zum Beispiel die Hochverfügbarkeit oder halt die schwierige Evolution deines Schemas oder ähnliches.",
-      "start": 1669032,
-      "end": 1710457,
-      "confidence": 0.8249435483870966,
-      "channel": null,
-      "speaker": "B"
-    },
-    {
-      "text": "Und ich glaube, das ist das große Problem, was viele dann auch bei der Verteilung vergessen oder bei der MongoDB, was es auch immer ist, da steht irgendwie Base und Eventually Consistent. Das heißt aber nicht, dass ich keine Daten zum Beispiel verlieren kann. Wenn mir da am Weg irgendwo ein Server wegbricht und es ist noch nicht sinnvoll repliziert worden, dann ist es nicht Eventually Consistent. dann ist es unter Umständen einfach weg, je nachdem wie die Implementierung ist, muss man auch dazu sagen, aber man muss da wirklich ins Detail gehen, um zu verstehen, wie funktioniert es und was wird da geschrieben und was eben nicht und wie sicher ist dann am Ende meine Datenbank. Also das ist nicht vergleichbar mit, wie gesagt, mit einer Single Instanz. Das muss man ganz klar sehen, auch wenn da Datenbank und sicher und alles drüber steht.",
-      "start": 1711290,
-      "end": 1752438,
-      "confidence": 0.8183862068965518,
-      "channel": null,
-      "speaker": "A"
-    },
-    {
-      "text": "Und weil du schon von Verständnis gesprochen hast, schaffen wir jetzt mal ein bisschen Verständnis um den damaligen NoSQL-Hype. Weil damals, als die ersten NoSQL-Datenbanken hochkamen, gab's in der Regel immer nur ACID. Und das, was ACID für die Relationale Datenbank ist, ist Base für NoSQL-Datenbanken, beziehungsweise oft für NoSQL-Datenbanken. Base steht für Basically Available, Soft State, Eventually Consistent. Hört sich an wie ein Buzzword-Bingo. Kannst auch deine Hand heben, du hast den Pott gewonnen.",
-      "start": 1753087,
-      "end": 1780624,
-      "confidence": 0.7614133333333335,
-      "channel": null,
-      "speaker": "B"
-    },
-    {
-      "text": "Ich war zwar selber sehr froh, wie wir unsere Datenbank-Vorlesung, die wir gegeben haben in unserer Forschungsgruppe, erweitern haben können durch diesen Begriff BASE. Kommt immer cool. Neues Akronym. Kann man auch prüfen. In der Klausur. Ist immer ganz praktisch. Aber meiner Meinung nach ist es absolut Bullshit. Da ist irgendwer dahergekommen und hat gedacht, wir müssen jetzt irgendwas gegen ACID in die Welt setzen. BASE klingt cool. Säure und basisch. Ideal. Alles cool. Und hat sich, glaube ich, danach überlegt, was das eigentlich bedeutet.",
-      "start": 1781945,
-      "end": 1810045,
-      "confidence": 0.801176470588235,
-      "channel": null,
-      "speaker": "A"
-    },
-    {
-      "text": "Und es ist wirklich fast das Gegenteil wie ACID, wo ACID stark konsistent ist, legt BASE den Fokus auf Availability. Ungefähre Antworten sind okay. Man hat eine schwache Konsistenz, also man kriegt eventual consistent data nach einer Replikation oder ähnliches. Man hat gegebenenfalls überhaupt kein Schema. Siehe MongoDB, man speichert irgendwelches B.Json. Es ist halt einfach nur, ich sag mal, einfacher gehalten, dafür natürlich auch enorm performant.",
-      "start": 1810323,
-      "end": 1837927,
-      "confidence": 0.8400447761194028,
-      "channel": null,
-      "speaker": "B"
-    },
-    {
-      "text": "Und es ist nicht genau definiert, das ist ja auch das Problem. Also dieses ganze Basically Available ist ja auch nicht stark definiert. Bei ACID hast du eine ganz starke Definition, was bedeutet das ACID, was bedeuten die Buchstaben, was heißt es, wenn isoliert wird, was gibt es für Isolationslevels und so weiter. Bei BASE hast du das eigentlich kaum und darum ist es halt einfach so wieder ein Bingo-Wort, was mal erfunden wurde und meiner Meinung nach wenig Sinn macht.",
-      "start": 1838267,
-      "end": 1864693,
-      "confidence": 0.8003703703703702,
-      "channel": null,
-      "speaker": "A"
-    },
-    {
-      "text": "Du sagst, dass das nicht definiert ist, ist ein Problem. Ich sage, für mich als NoSQL-Datenbank-Hersteller ist das eine, wie soll ich sagen, Möglichkeit. Da kann ich machen, was ich möchte.",
-      "start": 1865177,
-      "end": 1875164,
-      "confidence": 0.7622903225806453,
-      "channel": null,
-      "speaker": "B"
-    },
-    {
-      "text": "Es ist ein sehr komplexes Thema und ich glaube nicht, dass es mit vier Buchstaben in irgendeiner Form abgedeckt ist, weil es da eben so viele kleine Feinheiten gibt, wie sich Systeme in dieser verteilten Welt verhalten und weil das so komplex ist.",
-      "start": 1875224,
-      "end": 1888312,
-      "confidence": 0.8373720930232558,
-      "channel": null,
-      "speaker": "A"
-    },
-    {
-      "text": "Okay, jetzt kann man aber sagen, Acid und Base, ich kann nur eins wählen. Ja, falsch. Eric Brewer hat damals gesagt, okay, Acid und Base, das ist kein entweder-oder, sondern das ist halt ein Spektrum. Und damals hat er gesagt, okay, wir stellen was Neues vor, wir stellen das Cup-Theorem vor, und das Cup-Theorem wird ab und zu auch Brewer-Theorem genannt. wo es wirklich das Spektrum ist zwischen Consistency, Availability und Partition Tolerances. Und wenn wir sagen, man kann nur zwei aus den drei Eigenschaften wählen, dann hat man natürlich gewisse Ausprägungen. Man kann zum Beispiel sagen, okay, mein System ist konsistent und toleriert Network Partitions. Das bedeutet natürlich auch, wenn die Konsistenz der Daten nicht mehr gewährleistet werden kann, ist das System nicht mehr verfügbar.",
-      "start": 1888817,
-      "end": 1930910,
-      "confidence": 0.8138650793650795,
-      "channel": null,
-      "speaker": "B"
-    },
-    {
-      "text": "Oder read-only zumindest.",
-      "start": 1931470,
-      "end": 1933132,
-      "confidence": 0.42733333333333334,
-      "channel": null,
-      "speaker": "A"
-    },
-    {
-      "text": "Was laut Cup-Theorien dann auch nicht verfügbar ist, weil du keine Daten mehr schreiben könntest. Und oft als sehr High-Level-Beispiel, was ich eigentlich nicht so mag, aber irgendwie ist es halt wahr, werden oft Banking-Anwendungen angeführt. Denn wenn der Geldautomat die Konsistenz der Daten nicht mehr halten kann, dann wird der Geldautomat selbst halt nicht verfügbar gemacht, denn die Verfügbarkeit ist in diesem Sinne zweitrangig, denn die Konsistenz der Daten, der Finanzdaten, hat halt einfach höchste Priorität. Also wenn zum Beispiel eine Störung im Datenverkehr ...",
-      "start": 1933192,
-      "end": 1961365,
-      "confidence": 0.7800348837209302,
-      "channel": null,
-      "speaker": "B"
-    },
-    {
-      "text": "Warum findest du das Beispiel nicht so cool?",
-      "start": 1961375,
-      "end": 1963096,
-      "confidence": 0.55175,
-      "channel": null,
-      "speaker": "A"
-    },
-    {
-      "text": "Ich find das, weil, ich weiß nicht, aber das wird immer angeführt.",
-      "start": 1963136,
-      "end": 1968638,
-      "confidence": 0.7050000000000001,
-      "channel": null,
-      "speaker": "B"
-    },
-    {
-      "text": "Vor allem bin ich mir gar nicht sicher, ob's wirklich stimmt im Hintergrund so.",
-      "start": 1968658,
-      "end": 1972080,
-      "confidence": 0.7735714285714285,
-      "channel": null,
-      "speaker": "A"
-    },
-    {
-      "text": "Auch das, ich find, das ist zu high-level, dieses Beispiel.",
-      "start": 1972120,
-      "end": 1975842,
-      "confidence": 0.5918000000000001,
-      "channel": null,
-      "speaker": "B"
-    },
-    {
-      "text": "Also ich glaube, dass da wesentlich mehr Schritte schon dazwischen dann ablaufen und da selten auf die Datenbank committed wird in so einem Geldautomat, meiner Meinung nach. Aber es eignet sich zumindestens gut, um das darzustellen, wo es vielleicht Sinn machen würde, in was für einem Umfeld zumindestens würde es Sinn machen, die Datenbank einfach abzuschalten, bevor man Inkonsistenzen überhaupt erlaubt.",
-      "start": 1976653,
-      "end": 1995791,
-      "confidence": 0.8104262295081963,
-      "channel": null,
-      "speaker": "A"
-    },
-    {
-      "text": "Wenn natürlich jetzt die Network Partition, also die Verbindung zwischen den Nodes wiederhergestellt ist, dann beginnt in der Regel, in der Praxis oft eine Art Replikation, dann wird die Konsistenz wiederhergestellt und danach wird das ganze System auch erstmal wieder für zum Beispiel jetzt hier Schreibzugriffe verfügbar gemacht. Die nächste Ausprägung wäre dann eigentlich die Availability und die Partition Tolerance. Und jetzt, finde ich, kommt ein richtig schönes Beispiel. Und zwar sind es entweder Caching-Systeme oder das DNS-System. Denn das DNS-System hat durch die Layer-Struktur eine enorm hohe Verfügbarkeit. Es ist also super tolerant gegen den Ausfall einzelner DNS-Server. Wenn jetzt einer der Root-Server ausfällt, so what? Die Daten sind 10.000 mal repliziert. Die Konsistenz ist aber nicht unbedingt gegeben, denn teilweise kann es halt Tage dauern, bis ein geänderter DNS-Eintrag in der ganzen Hierarchie propagiert ist. In der Praxis kommt es in der Regel nicht vor.",
-      "start": 1996332,
-      "end": 2047551,
-      "confidence": 0.8328843537414966,
-      "channel": null,
-      "speaker": "B"
-    },
-    {
-      "text": "Und du kannst vor allem nicht schreiben. Also meiner Meinung nach wäre das eigentlich ein falsches Beispiel, weil die Availability, hast du ja gesagt, nur schreibend. Und wenn der Server wegbricht, der die Zone ownt, kannst du eigentlich nichts mehr schreiben.",
-      "start": 2048630,
-      "end": 2061400,
-      "confidence": 0.7328048780487806,
-      "channel": null,
-      "speaker": "A"
-    },
-    {
-      "text": "Aber eine Zone wird ja nicht nur von einem Server geownt oder von einem Cluster.",
-      "start": 2061440,
-      "end": 2064621,
-      "confidence": 0.7585333333333332,
-      "channel": null,
-      "speaker": "B"
-    },
-    {
-      "text": "Ja, du könntest trotzdem in Split-Brain, also in Split-Brain weniger, aber halt, dass deine Server, die die Zone verwalten, wegbrechen und dann hast du auf jeden Fall keine Availability mehr. Und das sind ja relativ wenig Server, zwei Server zum Beispiel oder so. Oder wenn das Netz eben weg ist, im Sinne von Split-Brain, dass die Netzwerkkonnection nach außen von deinem Datacenter weg ist, wo deine zwei Nameserver stehen.",
-      "start": 2065344,
-      "end": 2085047,
-      "confidence": 0.7461159420289853,
-      "channel": null,
-      "speaker": "A"
-    },
-    {
-      "text": "Stimmt, aber ich hatte ja gerade gesagt, die ganze Sache ist halt ein Spektrum. Wenn man Availability bevorzugt über Konsistenz, dann sagt man eigentlich nur, dass man keine strenge Konsistenz erwartet, aber halt eine völlig inkonsistente Datenhaltung ist halt auch nicht erwünscht. Und da muss ich zugeben, passt das DNS-Beispiel dann schon wieder. Es wird auch oft irgendwie so Social Media, also moderne Cloud-Anwendungen als Beispiel angeführt, so Twitter oder Facebook. Denn wenn du deinen Tweet nicht schreiben kannst, interessiert es einen Großteil der Welt halt einfach nicht. Aber es ist für den Großteil der Welt besser, wenn das System verfügbar ist, anstatt dass die deinen Tweet lesen. Also das könnte man auch schon als RP-Availability und Partition Tolerance bezeichnen. Wenn halt nicht alle Nachrichten bei allen Nutzern gleichzeitig eingetroffen, eintrifft. Und ich meine, speziell in diesem Bereich AP fallen halt ziemlich viele NoSQL-Datenbanken, die sich halt als Eventual Consistent beschreiben. Und da sind wir wieder bei diesem Base, Basically, Available, Soft State, Eventual Consistent, die halt Availability über Konsistenz bevorzugen.",
-      "start": 2085938,
-      "end": 2144084,
-      "confidence": 0.8023567251461988,
-      "channel": null,
-      "speaker": "B"
-    },
-    {
-      "text": "Wobei natürlich auch da wieder so ein Asterix eigentlich dran ist, weil die gehen ja meistens nach irgendeinem Election-Verfahren und checken dann, wie groß ist der Cluster noch und wenn man dann kleiner als die Mehrheit ist, dann schaltet der Teil meistens ab. Also auch da wird das Split-Brain normal so in irgendeiner Form dann verhindert und es kann auch sein, dass dann Teile vom Cluster einfach sich abschalten, weil sie zu wenig sind und keine Connection mehr zur Mehrheit vom Cluster haben und dann ist der Teil eigentlich auch nicht mehr available. Also verschwimmt das Ganze natürlich auch immer drum. Wie gesagt, man muss wirklich ins Detail immer reingehen, was passiert, in was für einem konkreten Use Case. Und es gibt halt zahlreiche Szenarien, die da wirklich passieren können in so einer verteilten Welt.",
-      "start": 2144515,
-      "end": 2185618,
-      "confidence": 0.7986888888888889,
-      "channel": null,
-      "speaker": "A"
-    },
-    {
-      "text": "Genau, bei dem, was du da ansprichst, sind wir natürlich im Bereich Quorum, wie viele Server hast du in deinem Cluster, wie viele Ausfälle kannst du akzeptieren und so weiter und so fort. Hängt natürlich sehr stark auch an der Konfiguration des jeweiligen Systems ab. Und der letzte Fall, da wo viele Leute sagen, geht eigentlich gar nicht, ist nämlich konsistent und verfügbar ohne Partition Tolerances. Was natürlich eine Frage aufwirft. Hä? Ich denke, wir sind in einem verteilten System. Genau! Und das ist nämlich die ganze Kritik an dieser ganzen Geschichte. Es geht halt nicht billig und gut, Und da werden halt oft irgendwie so Single-Site-Databases als Beispiel angeführt, also wirklich so MySQL, Postgre oder Oracle, die dann einfach gar kein Netzwerk haben oder halt auch nur eine asynchrone Replikation. Aber auf den sogenannten Followern, auf den Replikas kann man in der Regel ja nicht schreiben. Und deswegen hat man da eigentlich... Da ist halt die Frage, ist das eigentlich noch das Kapp-Theorem? Fällt das darauf zu? Ich weiß es nicht.",
-      "start": 2186176,
-      "end": 2236783,
-      "confidence": 0.7797674418604648,
-      "channel": null,
-      "speaker": "B"
-    },
-    {
-      "text": "Die andere Interpretation ist auch oft, dass man sagt, Consistency und Availability ist, wenn eben kein Ausfall passiert. Und da gibt es zum Beispiel auch ein anderes Theorem, was dann ungefähr zehn Jahre später auf den Markt gekommen ist, sage ich mal, von Daniel Abadie. Das war ein PhD von Michael Stonebreaker, der Postgres erfunden hat, dieser Professor. Und der hat eigentlich genau gesagt, CAP-Theorem, das bezieht sich eigentlich nur auf den negativen Fall, wenn es einen Ausfall gibt und beschreibt eigentlich nicht den Fall, wenn alles in Ordnung ist. Weil auch wenn alles in Ordnung ist, wenn deine verteilte Datenbank läuft, alle Network Connections aufrecht sind, du kannst kommunizieren in deinem Cluster, dann musst du trotzdem zwischen Latenz und Konsistenz wählen, beziehungsweise dich für eine oder die andere Richtung entscheiden, was dir wichtiger ist. Das heißt, wenn wir wieder zurückdenken an das Zwei-Phasen-Commit-Protokoll, wo du synchron committest, das heißt, du fragst jeden Server, bist du bereit zum Schreiben, jeder der aufzeigt und so weiter, wenn alle aufgezeigt haben, alle Server, dann darf geschrieben werden im Ende. Wenn man von dem weggeht, also das in irgendeiner Form asynchron macht, dann hast du ja automatisch Inkonsistenzen, weil wenn du sagst, du wartest nicht, bis alle Server geschrieben hat, bis du dein Commit beendest, deine Transaktion, dann gibt es da irgendwo Server draußen in deinem Cluster, Nodes, die vielleicht eine Sekunde hinterherhängen oder eine Millisekunde. Das heißt, du hast Inkonsistenzen. Und genau das beschreibt eigentlich dieses Buck-Elk, hat es der Abadi genannt, Theorem, also die ersten drei Buchstaben Buck, sind nur Cup umgedreht, weil es cooler klingt wahrscheinlich. Also das kommt vom Bug. Und das E steht für Else. Also wenn kein Netzwerkausfall ist, also wenn das Cup-Theorem nicht Anwendung findet, weil alles in Ordnung ist, dann musst du dich entscheiden zwischen Latenz oder Konsistenz. Also dieses LC. Das heißt Cup-Theorem, Else, LC. So ist das Bug-Elk aufgetrennt. Und das heißt eben einfach, dass du dich entscheidest, ist Latenz wichtiger oder Konsistenz und Datenbanken haben teilweise die Möglichkeit, moderne Datenbanken, dass du entscheidest, was ist dir wichtiger und das ist auch wieder ein Spektrum, aber du kannst es teilweise wirklich einstellen. Mir sind die Daten zu wichtig, mir ist die Konsistenz wichtiger, darum warte ich ein bisschen länger oder mir ist die Konsistenz nicht so wichtig, ich will lieber möglichst schnell sein, weil mir egal ist, wenn irgendwas ein paar Millisekunden hinterher hinkt, Solange das sicher alles abläuft, aber ich brauche nicht diese extrem hohe Konsistenz, die jetzt bei deinem Geldautomaten zum Beispiel bräuchte, wenn man das wieder als Beispiel bemüht.",
-      "start": 2237368,
-      "end": 2392987,
-      "confidence": 0.8125920745920744,
-      "channel": null,
-      "speaker": "A"
-    },
-    {
-      "text": "Der Kollege hat aber auch nicht im Marketing gearbeitet mit der Abkürzung, oder?",
-      "start": 2393028,
-      "end": 2395912,
-      "confidence": 0.7137692307692307,
-      "channel": null,
-      "speaker": "B"
-    },
-    {
-      "text": "Buck Elk, klingt doch super.",
-      "start": 2395952,
-      "end": 2397334,
-      "confidence": 0.7564000000000001,
-      "channel": null,
-      "speaker": "A"
-    },
-    {
-      "text": "Nee, aber das, was du sagst, ist eigentlich oft der Standard in vielen modernen Datenbanksystemen, wie zum Beispiel in Cassandra. In Cassandra kannst du pro einzelner Abfrage, pro einzelner Datenbankoperation bestimmen, nämlich das Konsistenzlevel. Und das Konsistenzlevel besagt dann natürlich auch, wie oft werden diese Daten auf wie viele verschiedene Knoten während meiner Operation geschrieben oder wie schnell kommt die Anfrage zurück. Und da ist nämlich ganz genau die praktische Umsetzung von deinem Pack-Elk-Konzept, Theorem, wie heißt das? Keine Ahnung. in die Praxis umgesetzt.",
-      "start": 2398195,
-      "end": 2430208,
-      "confidence": 0.8271666666666663,
-      "channel": null,
-      "speaker": "B"
-    },
-    {
-      "text": "Man kann ganz grob sagen, dass eigentlich die klassischen relationalen Datenbanksysteme wie MySQL, Postgres, aber sogar MongoDB eher auf Konsistenz gehen. Also die haben das SC und dann diese NoSQL-Datenbanken wie DynamoDB zum Beispiel oder auch Cassandra, die gehen da mehr auf Latency. Die akzeptieren das, dass eben was nicht Konsistenz ist, dafür aber super schnell gelesen werden kann oder halt geschrieben werden kann in der Datenbank. Gibt es auch im Wikipedia-Artikel vom Baccalc-Theorem gibt es so eine Tabelle, wo man genau sieht, was sind die Datenbanken auf der Bacc-Seite, also auf der CAP-Seite besser gesagt, und was sind sie auf der LC-Seite.",
-      "start": 2430248,
-      "end": 2467533,
-      "confidence": 0.8181941747572821,
-      "channel": null,
-      "speaker": "A"
-    },
-    {
-      "text": "Ich meine, die Praxis ist natürlich noch mal ein anderes Paar Schuhe und lassen wir uns da jetzt ein bisschen einstellen. Und zwar, die meisten NOS-Gelddatenbanken sind in der Regel horizontal skalierbar, somit vom Design her natürlich verteilt. Und somit findet natürlich das Cup-Theorem seine Anwendung. Weil sie verteilt sind, sprechen wir von einem Verteiltensystem, somit sind Network Partitions erstmal schon mal gegeben. Jetzt ist aber der Begriff Network Partition auch schon recht schwierig, denn heißt das denn jetzt, alle Knoten sind wirklich voneinander abgeschnitten und können nicht mehr miteinander kommunizieren? oder können nur zwei knoten nicht mehr miteinander kommunizieren und der rest schon oder was ist eigentlich ein system mit einer schlechten netzwerkverbindung ist das dann in einem zwischenzustand also all das ist auch eine sehr sehr schwierige thematik ich meine deswegen gibt es ja auch unter anderem einen unglaublich talentierten und sehr berühmten informatiker a4 nennt er sich mit dem tool japson der eigentlich alle Datenbanken genau auf dieses Cup-Theorem, auf ihre Schreibkonsistenz und Co. testet. Der hat so ein mega Framework gebaut und wird auch bezahlt von den ganzen Datenbankherstellern, um wirklich zu gucken, okay, wo sind Race Conditions und so weiter. Der testet das ganze Cup-Theorem und ob die ganzen Marketing-Papers auch wirklich ihr Versprechen halten.",
-      "start": 2468252,
-      "end": 2540969,
-      "confidence": 0.8035190476190474,
-      "channel": null,
-      "speaker": "B"
-    },
-    {
-      "text": "Und der hat so in, glaube ich, jeder Datenbank schon irgendwelche Flaws gefunden. Und wie du richtig sagst, die Datenbankhersteller bezahlen den mittlerweile, dass der denen hilft, ihre Datenbank zu verbessern. Weil der hat noch in jeder Datenbank irgendwas rausgefunden und Situationen entdeckt, in denen dann eben irgendwas nicht konsistent ist oder Daten verloren gehen und so weiter.",
-      "start": 2541209,
-      "end": 2561395,
-      "confidence": 0.8343103448275864,
-      "channel": null,
-      "speaker": "A"
-    },
-    {
-      "text": "Wir verlinken ein paar Blogposts und ein paar Tests, denn die ganzen Tests von MongoDB, Cassandra, Kafka und so weiter veröffentlicht er alle. Die verlinken wir in den Shownotes. Bevor ich wirklich tief das Cup-Theorem verstanden habe, habe ich viele dieser Blogposts nicht verstanden. Die sind sehr hart zu lesen, sie gehen sehr tief rein, sind aber unglaublich interessant. Aber du hattest gerade schon von MongoDB erwähnt, beziehungsweise schon ein paar Mal während dieser Episode. Wo befindet sich MongoDB aktuell im Cup-Theorem? Wo würdest du das einordnen? Favorisiert ist Consistency oder eher Availability?",
-      "start": 2561435,
-      "end": 2595595,
-      "confidence": 0.761795698924731,
-      "channel": null,
-      "speaker": "B"
-    },
-    {
-      "text": "Also MongoDB ist Availability im CAP-Theorem und Consistency im Back-Elk.",
-      "start": 2596056,
-      "end": 2602921,
-      "confidence": 0.8285999999999998,
-      "channel": null,
-      "speaker": "A"
-    },
-    {
-      "text": "Meines Erachtens nach stimmt das nämlich nicht. Meines Erachtens nach ist nämlich MongoDB Consistency und Partition-Tolerant, weil MongoDB selbst ein Single-Master-System hat und jedes Replica-Set nur auf einem Primärknoten liegt. Und somit sind Schreiboperationen, wenn der Primärknoten für ein Replikaset abstürzt, nicht mehr gegeben. Ich meine, der Sekundärknoten, die Replika, wird irgendwann zum neuen Primärknoten. Aber in der Zeit, bis das gegeben ist, bis der Sekundärknoten nicht zum neuen Master elektet wurde, ist das System nicht verfügbar. Zumindest auf diesem Replikaset.",
-      "start": 2602961,
-      "end": 2635050,
-      "confidence": 0.8412222222222222,
-      "channel": null,
-      "speaker": "B"
-    },
-    {
-      "text": "Ja, ich kann dir da jetzt auch wenig widersprechen. Ich kenn mich zu wenig aus wie MongoDB, wie schnell die Leader Election oder sonst irgendwas stattfindet. Aber ich glaub dir jetzt einfach mal. Auch wenn Wikipedia was anderes sagt, natürlich.",
-      "start": 2635686,
-      "end": 2646587,
-      "confidence": 0.7438750000000002,
-      "channel": null,
-      "speaker": "A"
-    },
-    {
-      "text": "Ich meine, das Problem ist beim MongoDB, du hast natürlich solche Geschichten wie natürlich eine Read Preference, wo du die Availability einfordern kannst, aber die Konsistenz vernachlässigt. Dann hast du bei deinen Schreiboperationen das Setting Right Concern, wo du natürlich auch festlegen kannst, wie viele Notes den Datensatz geschrieben haben müssen. Also du merkst schon, ich glaube, du kannst den Fall je nach Design und Datenhaltung und Konfiguration deiner Datenbanken halt auch irgendwie für beide Sachen machen. Aber, wie auch schon am Anfang erwähnt, du musst genau wissen, was du tust. Du musst wissen, wann kannst du bei deinen lesenden Operationen auf Konsistenz verzichten? Wann kannst du bei einem möglichen Note Outage bei deinem Schreibzugriff auf Konsistenz verzichten oder auf Performance? Und da frage ich mich, wie viele Leute machen sich wirklich über diese Settings Gedanken?",
-      "start": 2647225,
-      "end": 2691467,
-      "confidence": 0.7833970588235292,
-      "channel": null,
-      "speaker": "B"
-    },
-    {
-      "text": "Ja und wie du schon gesagt hast, es hängt ja auch wirklich von der Anzahl der Knoten immer ab. Also was heißt denn Fall Tolerance? Die Fall Tolerance hat ja meistens auch eine Zahl irgendwo dran, wie viele Knoten können ausfallen. Die kannst du ja auch ändern unter Umständen und das hat dann natürlich auch dementsprechend Einfluss auf Availability, weil wenn dir ganz viele Knoten wegbrechen, einfach dann ist es klar, dann wirst du nie Availability haben, logisch.",
-      "start": 2691740,
-      "end": 2713973,
-      "confidence": 0.7496794871794872,
-      "channel": null,
-      "speaker": "A"
-    },
-    {
-      "text": "Wenn wir uns Kassandra mal ansehen, Kassandra ist eigentlich nicht weit entfernt. In den Default Settings bevorzugen sie Availability über Consistent. Du kannst die ganze Sache aber auch mit geringerter Availability und höherer Konsistenz fahren. Denn Kassandra hat so eine tolle Geschichte wie ein sogenanntes Consistency Level. Und zwar kannst du jeder Operation, also Read oder Write, kannst du bei Kassandra mitgeben, okay, welches Consistency Level erwarte ich denn für diese Operation? Und das kann wirklich ... Bei einer Schreiboperation kannst du sagen, okay, schreibe das bitte auf das Quorum. Das bedeutet, wenn du wirklich ... Also, auf die Masse aller Nodes oder auf alle Nodes oder nur auf zwei Nodes oder auf eine Node. Also, du kannst wirklich ganz klar steuern, auf wie viele Nodes der Datensatz geschrieben werden soll, von wie vielen Nodes ich diesen lesen kann. Und umso höher natürlich dieses Consistency-Level gesetzt wird, desto mehr leidet natürlich die Verfügbarkeit der ganzen Thematik.",
-      "start": 2714638,
-      "end": 2768616,
-      "confidence": 0.7626858974358977,
-      "channel": null,
-      "speaker": "B"
-    },
-    {
-      "text": "Und das ist genau dieses LC Tradeoff bei BuckELC, das du dort einstellen kannst, wo du wirklich eben das dynamisch setzen kannst und das das wirklich beeinflusst.",
-      "start": 2769319,
-      "end": 2778971,
-      "confidence": 0.7785555555555553,
-      "channel": null,
-      "speaker": "A"
-    },
-    {
-      "text": "Also wenn du jetzt drei Nodes hast in deinem Cassandra Cluster und du das Consistency Level auf drei gesetzt hast und eine Node fehlt, ist der Cluster halt nicht mehr verfügbar, aber konsistent. Also, mach dir halt Gedanken, was du für Daten speicherst, wie du die speicherst. Und dann hast du nämlich da auch eigentlich keine Probleme. Aber jetzt bist du natürlich der große Verfechter von, das CAP-Theorem ist nur für Datenbanken. Und ich sag, das CAP-Theorem ist für verteilte Systeme. Was sagst du denn zu Kubernetes und dem CAP-Theorem?",
-      "start": 2779571,
-      "end": 2809018,
-      "confidence": 0.7746333333333332,
-      "channel": null,
-      "speaker": "B"
-    },
-    {
-      "text": "Ja, für Kubernetes selbst ist es natürlich quasi egal, aber ich vermute auch, dass Kubernetes Metadaten irgendwo speichert. Und diese Metadaten musst du ja auch in irgendeiner Form verfügbar halten und verteilt verfügbar halten, sonst kann dir ja nie irgendein Node wegbrechen. Wenn dir der Node wegbricht, wo du alle Metadaten gespeichert hast, ist alles tot. Das wirst du ja auch verhindern. Das heißt, du musst die Daten irgendwie wieder verteilen. Ich vermute ja, Kubernetes hat das nicht neu erfunden. Ich vermute, die verwenden unter der Haube auch irgendein Datenhaltungssystem.",
-      "start": 2809785,
-      "end": 2840106,
-      "confidence": 0.7716666666666665,
-      "channel": null,
-      "speaker": "A"
-    },
-    {
-      "text": "So viel ich weiß, nutzen die ETCD unten drunter. Eben.",
-      "start": 2840126,
-      "end": 2844488,
-      "confidence": 0.8174000000000001,
-      "channel": null,
-      "speaker": "B"
-    },
-    {
-      "text": "Ist ja sehr beliebt in der Welt. Super leichtgewichtige Datenbank, verteilte Datenbank.",
-      "start": 2844528,
-      "end": 2849549,
-      "confidence": 0.8047499999999999,
-      "channel": null,
-      "speaker": "A"
-    },
-    {
-      "text": "Ich meine, im Endeffekt, Kubernetes ist designt und optimiert, hochverfügbare Workloads zu schedulen. Und auch wenn eine Kubernetes-Node halt nicht mehr zum Master kommunizieren kann, werden trotzdem noch User-Requests beantwortet. Die müssen dann nicht unbedingt konsistent sein von der Pod-Konfiguration, aber sie werden beantwortet. Und somit fällt Kubernetes eigentlich unter einen AP-System, also Favored Availability über Consistency.",
-      "start": 2850169,
-      "end": 2880155,
-      "confidence": 0.7840701754385966,
-      "channel": null,
-      "speaker": "B"
-    },
-    {
-      "text": "Natürlich, aber das hängt natürlich auch von den Services ab, die dort laufen haben, weil wenn die Services natürlich auf irgendeine Datenbank oder so zugreifen müssen oder irgendwas lesen müssen über das Netzwerk, dann sind sie zwar verfügbar, die Bots oder die Services, aber sie können halt keine sinnvollen Anfragen beantworten.",
-      "start": 2880195,
-      "end": 2896745,
-      "confidence": 0.8212549019607844,
-      "channel": null,
-      "speaker": "A"
-    },
-    {
-      "text": "Ja, ja, klar, ich rede jetzt nur vom Kubernetes Kernsystem. Ich rede nicht von den Applikationen, die du auf Kubernetes hostest. Das ist natürlich ein wichtiger Punkt, den du erwähnst, denn für jede Applikation selbst musst du beurteilen, was du favorisierst. Und wenn du natürlich auf Kubernetes etwas favorisierst, was konsistent höher liegt als der Availability, dann musst du halt in einer Applikationsprobe gucken, wie du damit umgehst. Du kannst die beiden halt nicht irgendwie miteinander verheiraten und sagen, okay, Kubernetes ist available, meine Datenbank ist consistent, oder passt das, dann habe ich ein System mit allen drei. Das funktioniert halt jetzt so nicht, sondern du musst jedes System halt schon einzeln betrachten.",
-      "start": 2897147,
-      "end": 2934311,
-      "confidence": 0.7623982300884958,
-      "channel": null,
-      "speaker": "B"
-    },
-    {
-      "text": "Und du hast ja natürlich auch andere Datenhaltungssysteme darunter, wenn du ein verteiltes Filesystem hast, zum Beispiel irgendein ClusterFS zum Beispiel, dann hast du dann natürlich die gleichen Probleme, die du in der verteilten Welt oder in der verteilten Datenbankwelt hast, weil ob du jetzt eine Datei speicherst oder eine Tabelle speicherst, ist ja im Prinzip dasselbe. Also auch da wieder liegt extrem viel darunter. Darum ist meiner Meinung nach ja so ein verteiltes System, was auf Kubernetes mit verteilten Dateisystemen und vielleicht noch mit verteilten Datenbanken arbeitet, einfach super komplex, weil du halt auf ganz vielen Ebenen diese Verteilungsprobleme hast und die potenzieren sich dann natürlich dadurch und macht es super kompliziert, wenn du irgendwo ein Bug, irgendwo ein Problem hast, dann das Problem zu lösen. Da musst du schon ziemlich fit auf sehr vielen Ebenen sein.",
-      "start": 2934351,
-      "end": 2978920,
-      "confidence": 0.8061956521739132,
-      "channel": null,
-      "speaker": "A"
-    },
-    {
-      "text": "Und kommen wir jetzt mal zu dem Flaggschiff, kommen wir mal zu Kafka. Wir haben die ganze Zeit davon gesprochen, dass eigentlich jedes verteilte System Partition Tolerance sein muss. Laut LinkedIn, dem Autor von Kafka, ist aber Kafka ein CA-System. Also es favort Consistency und Availability über Netzwerkpartitions. Und das ist natürlich recht interessant. Und zwar die Begründung ist, dass LinkedIn, Kafka im eigenen Datasetter laufen, wo sie natürlich das Netzwerk unter ihrer Kontrolle haben und natürlich dann ordentliche Netzwerkkomponenten nehmen, wo dann natürlich Network Partitions sehr rar sind. Die haben ja nicht unrecht. Wenn du alles unter deiner Kontrolle hast, kannst du natürlich auch die Qualität beeinflussen. Du kannst natürlich auch redundante Netzwerksysteme aufbauen.",
-      "start": 2979241,
-      "end": 3023133,
-      "confidence": 0.8176,
-      "channel": null,
-      "speaker": "B"
-    },
-    {
-      "text": "Nur halt auch jedes Teil kann irgendwie fehlen. Also wenn der Bagger deine Glasfaserleitung durchbricht und auf der anderen Seite irgendein anderes Hardware-Problem ist, dann hast du halt deine Redundanz auch nicht mehr am Ende. Die Redundanz hast du schon, aber du hast die Connection nicht mehr.",
-      "start": 3024020,
-      "end": 3040413,
-      "confidence": 0.7710425531914894,
-      "channel": null,
-      "speaker": "A"
-    },
-    {
-      "text": "Ich hoffe, liegt inhaltlich kein Bagger im Datacenter. Aber was sonst wird schon im Bagger?",
-      "start": 3040913,
-      "end": 3046498,
-      "confidence": 0.7151333333333335,
-      "channel": null,
-      "speaker": "B"
-    },
-    {
-      "text": "Die haben ja auch mehrere Datacenter zwischen irgendwelchen Kontinenten oder sowas.",
-      "start": 3046518,
-      "end": 3050321,
-      "confidence": 0.7728181818181816,
-      "channel": null,
-      "speaker": "A"
-    },
-    {
-      "text": "Ja richtig, aber die Kafka-Systeme werden ja nicht über Kontinente gespannt. Also dann hast du ja einzelne Systeme, die ja in sich dann immer noch konsistent sind und verfügbar. Also die Replikation ist dann eine andere Baustelle. Ähnlich wie bei Cassandra und bei MongoDB gibt es natürlich auch bei Kafka ein paar Settings, die das ganze CAP-Theorien beeinflussen. Und zwar sind das nämlich deine Minimum-In-Sync-Replikas. Das ist dein Replication-Faktor für deine Topics und für deine Partitions. Und das ist das sogenannte AXE-Setting von deinem Producer. Der Producer ist der Prozessor, der die Daten in den Kafka schreibt. Denn wenn der Replication-Faktor auf 3 gesetzt ist, das bedeutet du replizierst das Topic 3 mal insgesamt, das liegt auf 3 verschiedenen Nodes, deine Minimum-in-Sync-Replikas aber auf 1 gesetzt sind und die Node fliegt dir weg, dann hast du natürlich immer noch Datenverlust, somit bist du nicht mehr konsistent, weil deine Daten zwar von einer Note angenommen werden, auf eine Note geschrieben werden, aber dann über Eventual Consistency rüberrepliziert werden. Wenn du jetzt aber natürlich sagst, okay, der Prozess, der die Daten schreibt, ähnlich wie das sogenannte Consistency Level bei Cassandra oder die Write Concerns bei MongoDB, Wenn du sagst, okay, der Kafka-Cluster muss mir einen Hack geben, wenn das mindestens auf allen Nodes geschrieben ist, dann hast du natürlich Consistency, dann hast du natürlich deine Daten repliziert und somit auch verfügbar und dann ist die ganze Sache natürlich auch sicher. Aber das bedeutet natürlich auch mehrfachen Speicherplatz, Datenvorhaltung und da wissen wir alle, Cloud-Infrastruktur kann teuer sein, dann wird es natürlich auch teuer.",
-      "start": 3050779,
-      "end": 3150345,
-      "confidence": 0.7983065134099622,
-      "channel": null,
-      "speaker": "B"
-    },
-    {
-      "text": "Und ein Split-Brain kannst du ja trotzdem haben, weil es wird ja wieder irgendeinen Leader geben, der einen Bereich schreiben darf und dann kann dir das natürlich genauso wieder passieren mit einem Split-Brain, wenn ihr das irgendwo dazwischen wegbricht.",
-      "start": 3150628,
-      "end": 3162023,
-      "confidence": 0.735051282051282,
-      "channel": null,
-      "speaker": "A"
-    },
-    {
-      "text": "Logisch, da kommt dann das Setting der Unclean Leader Election zugute, was man natürlich auch mit sehr, sehr viel Vorsicht genießen sollte, aber das sind dann wiederum die Eigenheiten von Kafka. Also, ihr merkt schon, dass Amazon und Co. diese Datenbanken betreiben, macht schon Sinn, weil das ist sehr harter Tobak. Die Konfiguration der Datenbanken überlassen sie aber dem Kunden, denn Ihr habt jetzt schon an den drei Beispielen von MongoDB, Cassandra und Kafka gemerkt, die Datenbankanbieter wissen nicht, was ihr bevorzugt. Konsistenz oder Verfügbarkeit, das müsst ihr schon selbst entscheiden. Und ich habe schon sehr, sehr viele Teams gesehen, die sich über sowas gar keine Gedanken gemacht haben, aber Wenn die Festplatte mal kaputt ist, sich dann über Datenverlust wundern oder über nicht verfügbare Systeme. Und das finde ich dann immer schade, dass das immer im Nachgang auf die Agenda kommt. Weil das bedeutet, man möchte dann oft, oh Refactoring und ah, wie schaffe ich die Daten denn darüber und so weiter und so fort. Und dann ist immer der Stunk groß, sage ich mal.",
-      "start": 3162410,
-      "end": 3216509,
-      "confidence": 0.8088238636363632,
-      "channel": null,
-      "speaker": "B"
-    },
-    {
-      "text": "Und daher auch immer meine Empfehlung, kann man es nicht mit einem Singlesystem, wo ein Backup hintendran hängt, nicht auch machen. Und wenn mal was Schlimmes passiert mit der Datenbank, ist man eine Stunde offline. Reicht es nicht für die 95 Prozent aller Projekte auch aus.",
-      "start": 3216864,
-      "end": 3230394,
-      "confidence": 0.8193260869565215,
-      "channel": null,
-      "speaker": "A"
-    },
-    {
-      "text": "Das ist aber nicht Hacker News Driven Development Wolfgang.",
-      "start": 3230434,
-      "end": 3232436,
-      "confidence": 0.4847777777777778,
-      "channel": null,
-      "speaker": "B"
-    },
-    {
-      "text": "Das stimmt. Ich habe gerade kürzlich mit jemanden gesprochen, der einen MySQL Cluster einsetzt und der hat auch gesagt, er hat seit Ewigkeiten Probleme und immer wieder crasht mal irgendwo was und es ist einfach super kompliziert, das Ganze zu maintainen. Dem ist halt der Single Node dann irgendwann zu schwach geworden. Aber meiner Meinung nach lieber in irgendeinen Hyperscaler nochmal 100 Euro investieren für eine größere Maschine und auf einer Single Instanz bleiben. Das kann wirklich viele Kopfschmerzen verhindern und jeder der mal in so Probleme gelaufen ist in der verteilten Welt weiß wovon ich spreche.",
-      "start": 3233292,
-      "end": 3265517,
-      "confidence": 0.7814226804123706,
-      "channel": null,
-      "speaker": "A"
-    },
-    {
-      "text": "Viele Leute wollen es nicht hören, aber Vertikal skalieren ist eine Option und das geht inzwischen sehr, sehr, sehr groß. Lustiger Funfact, auf GCP kannst du mit SSDs eine Compute Node, also eine EC2 Instanz auf GCP auf 12 GB Storage bringen. ohne Netzwerkstorage zu nutzen. Das ist schon mal eine Hausnummer, oder?",
-      "start": 3265742,
-      "end": 3287447,
-      "confidence": 0.7589811320754718,
-      "channel": null,
-      "speaker": "B"
-    },
-    {
-      "text": "12 Gigabyte.",
-      "start": 3287457,
-      "end": 3288628,
-      "confidence": 0.5885,
-      "channel": null,
-      "speaker": "A"
-    },
-    {
-      "text": "Terabyte, Entschuldigung, 12 Terabyte. Du kannst 12 Terabyte SSD-Discs in deine Compute-Note auf Google schopfen. Und wenn du dann ... Bis du erst mal Netzwerkstorage anfassen musst.",
-      "start": 3288828,
-      "end": 3300654,
-      "confidence": 0.7286296296296297,
-      "channel": null,
-      "speaker": "B"
-    },
-    {
-      "text": "Ja, und sogar Netzwerkstorage funktioniert ja sehr gut. Aber selten ist ja Storage das Problem bei Datenbanken. Sondern meistens ist es halt wirklich die Compute-Power. Aber auch da kann man viel dazukaufen. viel mit einem Single Node kompensieren und manchmal macht es auch einfach Sinn, haben wir auch schon öfters darüber gesprochen, mal vielleicht sich die Queries anzusehen, kann ich da noch irgendwo was optimieren, vielleicht habe ich da ein paar Queries, wenn ich die abende, habe ich plötzlich 70% weniger Load oder sowas auf meiner Datenbank, anstatt sich einen Cluster ins Haus zu holen und wirklich die Probleme damit zu haben. Weil, das kann ich euch garantieren, also wenn ihr bisher Datenbanken irgendwie als Einzelperson oder so gemaintaint habt, bei Clustern wird es dann wirklich schwierig, das als Einzelperson zu machen und überall noch die Ahnung zu haben.",
-      "start": 3300694,
-      "end": 3344335,
-      "confidence": 0.7992158273381297,
-      "channel": null,
-      "speaker": "A"
-    },
-    {
-      "text": "Wir hoffen, euer Kopf raucht jetzt nicht. War schon sehr viel Theorie, war schon sehr viel C, A, P, E, Latency, Consistency. Im Marketing müssten die, glaube ich, auch noch mal alle anfangen. Aber das Einzige, was ihr euch merken müsst, Cup-Theorien. Entscheidet euch zwischen Consistency oder Availability. Macht euch Gedanken, wie euer System sich verhalten soll. Wenn ihr eine verteilte Datenbank wie Kafka, Cassandra, MongoDB oder ähnliches im Einsatz habt, fragt auch mal bei den Mädels und Jungs nach, die die betreiben, oder schaut euch die Topic-Konfiguration und eure Producer-Konfiguration an und eure Clients. Welche Settings ihr da eigentlich wählt. Bei MongoDB sind es Read and Read Preferences, Write Concern. Bei Cassandra ist es primär das Consistency-Level. Bei Kafka sind es die Producer-Axe, die Min-In-Sync-Replikas auf dem Topic und auf den Partitions und den Replication-Faktor auf dem Topic.",
-      "start": 3345297,
-      "end": 3395370,
-      "confidence": 0.7690215827338129,
-      "channel": null,
-      "speaker": "B"
-    },
-    {
-      "text": "Und fürs Bullshit-Bingo, ganz wichtig, jeder der sagt Cup, könnt ihr dann sagen, Cup betrachtet ja nur den negativen Fall, eigentlich ist Buck Elk das wahre und das muss man sich eigentlich anschauen.",
-      "start": 3396073,
-      "end": 3406340,
-      "confidence": 0.7623030303030304,
-      "channel": null,
-      "speaker": "A"
-    },
-    {
-      "text": "Wir verlinken euch natürlich noch eine ganze Menge Links in den Shownotes, auch ein paar schöne Comics, wie man sich das Ganze ein bisschen vorstellen kann, auch warum Kafka unter anderem ein CA-System sein soll und kein Netzwerk Partitions haben sollte, haben wir auch schon erklärt, aber die offizielle geschriebene Erklärung verlinken wir völlig auch. Ich hoffe, ihr hört diese Episode nicht an dem Wochenende, weil das an dem Wochenende, finde ich, ein bisschen harter Tobak. Zumindest, wenn man da irgendwie mal noch einen Kater hat oder ähnliches von der Party von gestern. Aber nur gut. Kann natürlich auch euch mal wieder wach machen. Oder ihr nutzt das Einschlaf-Podcast. Das ist auch okay für uns.",
-      "start": 3406640,
-      "end": 3441620,
-      "confidence": 0.7528695652173911,
-      "channel": null,
-      "speaker": "B"
-    },
-    {
-      "text": "Einschlafen mit dem Engineering-Kiosk. In dem Sinne, eine gute Woche. Bis zur nächsten Episode.",
-      "start": 3441660,
-      "end": 3447282,
-      "confidence": 0.8022142857142857,
-      "channel": null,
-      "speaker": "A"
-    },
-    {
-      "text": "Bis bald. Tschüss. Ciao.",
-      "start": 3447302,
-      "end": 3448523,
-      "confidence": 0.40025000000000005,
-      "channel": null,
-      "speaker": "B"
-    },
-    {
-      "text": "Und nicht vergessen, wenn du noch eine neue Herausforderung suchst, zum Beispiel in weltweit skalierten Systemen, klick mal auf den Link in den Shownotes zu Career-Seite von unserem Episodensponsor Trivago.",
-      "start": 3451764,
-      "end": 3461144,
-      "confidence": 0.8319,
-      "channel": null,
-      "speaker": "A"
-    }
-  ],
-  "confidence": 0.7978648405478356,
-  "audio_duration": 3461.0,
-  "webhook_status_code": null,
-  "webhook_auth": false,
-  "summary": null,
-  "auto_highlights_result": null,
-  "content_safety_labels": null,
-  "chapters": null,
-  "sentiment_analysis_results": null,
-  "entities": null
+    "language_code": "de",
+    "audio_url": "https://audio1.redcircle.com/episodes/2f6b4d3d-af38-4f97-ad65-5cc65eaaf79a/stream.mp3",
+    "punctuate": true,
+    "format_text": true,
+    "dual_channel": false,
+    "webhook_url": null,
+    "webhook_auth_header_name": null,
+    "webhook_auth_header_value": null,
+    "audio_start_from": null,
+    "audio_end_at": null,
+    "word_boost": [],
+    "boost_param": null,
+    "filter_profanity": false,
+    "redact_pii": false,
+    "redact_pii_audio": false,
+    "redact_pii_policies": null,
+    "redact_pii_sub": null,
+    "speaker_labels": true,
+    "speakers_expected": 2,
+    "content_safety": false,
+    "content_safety_confidence": null,
+    "iab_categories": false,
+    "custom_spelling": null,
+    "disfluencies": false,
+    "sentiment_analysis": false,
+    "auto_chapters": false,
+    "entity_detection": false,
+    "summarization": false,
+    "summary_model": null,
+    "summary_type": null,
+    "auto_highlights": false,
+    "language_detection": false,
+    "speech_threshold": null,
+    "id": "62zr71hx65-7894-4a5a-9708-583bcb1a6008",
+    "status": "completed",
+    "error": null,
+    "utterances": [
+        {
+            "text": "Deine Datenbank skaliert nicht mehr? Hol dir doch einfach ein verteiltes Datenbanksystem. Das funktioniert doch heute alle schon out of the box. Habt ihr diesen Dialog auch schon einmal gehört? So oder so ähnlich? Wenn man dann aber genauer nachfragt, wie die verteilte Datenhaltung denn funktioniert, welche Kriterien erfüllt werden und wie sich das System bei einem Ausfall von Knoten verhält, wird es sehr oft sehr schnell leise. Und damit willkommen zu einer neuen Episode des Engineering Kiosks, dem deutschsprachigen Software-Engineering-Podcast mit Wolfgang Gassler und Andi Grunwald rund um die Themen Engineering Kultur, Open Source, Menschen, Technologie und allen anderen Bereichen, die damit in Verbindung stehen. Wir besprechen in dieser Episode anhand des CAP-Theorems die Schwierigkeit von verteilten Systemen. Und für alle, für die CAP ein alter Hut ist, wir sprechen auch über Buck Elk, die große Schwester vom CAP-Theorem, Aber auch über Konsistenzkriterien, Ausfalltoleranzen, verteilte COMIT-Protokolle und wie sich das Ganze auch abseits von Datenbanken auf verteilte Systeme auswirkt. Und wer wissen will, warum verteilte Systeme wie Handwerker sind, sollte auf jeden Fall weiterhören. Ich glaube, ich brauche nicht dazu sagen, dass dieser Vergleich von Andi kommt. Aber starten wir ins Thema und los geht's.",
+            "start": 3370,
+            "end": 68989,
+            "confidence": 0.8256122448979586,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Willkommen zu einer neuen Episode vom Engineering Kiosk. Heute in einem etwas anderen Setup. Ich bin stimmlich etwas angeschlagen. Ich entschuldige mich jetzt schon mal, aber...",
+            "start": 75882,
+            "end": 85813,
+            "confidence": 0.8557692307692307,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Du klingst wie der Imam, der jetzt gerade im Hintergrund bei mir sein Gebet an die Leute weiterreicht.",
+            "start": 85833,
+            "end": 91699,
+            "confidence": 0.8592222222222222,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Und lustigerweise höre ich das sogar durch dein Mikro. Wolfgang, wo bist du jetzt gerade?",
+            "start": 92059,
+            "end": 97805,
+            "confidence": 0.8306,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Jetzt gerade gemütlich auf 500 Höhenmeter, also fast wie in Innsbruck zwischen Bergen, aber im Kosovo.",
+            "start": 97825,
+            "end": 104112,
+            "confidence": 0.858125,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Du bist da, wie sagt man so bei euch, auf Urlaub und nicht beruflich, richtig?",
+            "start": 104152,
+            "end": 108257,
+            "confidence": 0.7940666666666664,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Ja, Workation nennen wir es mal so. Ich genieße das Remote Setup zum Beispiel mit dir, aber auch den Kosovo.",
+            "start": 108869,
+            "end": 117454,
+            "confidence": 0.7159500000000001,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Ich finde es auf jeden Fall super, dass du uns nicht hängen lässt, damit die Hörerinnen und Hörer jede Woche eine neue Episode Engineering Curse haben.",
+            "start": 117474,
+            "end": 124618,
+            "confidence": 0.7041923076923078,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Ja, haben wir ja gesagt, es gibt keinen Urlaub bei uns.",
+            "start": 124638,
+            "end": 127119,
+            "confidence": 0.7693636363636365,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Ich bin gespannt, wann wir das erste Mal unsere eigene Regel brechen oder irgendwann selbst aufweichen oder ähnliches. Naja, schauen wir mal.",
+            "start": 127139,
+            "end": 133183,
+            "confidence": 0.7946363636363636,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Und heute haben wir wieder mal ein ordentliches technisches Thema, was sich ja viele gewünscht haben.",
+            "start": 133203,
+            "end": 137265,
+            "confidence": 0.789875,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Über welches thema sprechen wir heute was geht dir gerade wirklich so hart auf die nerven beziehungsweise was kommunizierst du zurzeit öfter denn je mal wieder.",
+            "start": 137585,
+            "end": 147417,
+            "confidence": 0.8839999999999999,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Also eigentlich war das ja deine idee muss man sagen dieses thema weil übers theorem und die schwierigkeiten von verteilten datenbanken referiere ich eigentlich relativ selten muss ich zugeben.",
+            "start": 147437,
+            "end": 157449,
+            "confidence": 0.7928965517241378,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Ich komme mit dem Thema des Cup Theorems in letzter Zeit immer und immer und immer häufiger in Berührung. Und das liegt unter anderem auch an meiner Arbeit. Ich arbeite mit Datenbanken, ich betreibe Datenbanken beruflich, weil ich bei einem Database-as-a-Service-Provider arbeite. Und das bedeutet natürlich auch, dass ab und zu manche Kunden Herausforderungen haben, beziehungsweise Kunden sind verantwortlich für Konfigurationen und ab und zu mal etwas nicht so läuft, wie es laufen soll. Und dann schaut man sich die ganze Sache an, und dann merkt man, die ganze Sache wurde falsch konfiguriert, vielleicht nicht ganz zu Ende gedacht, oder vielleicht, Achtung, wurde sich über das Cup-Theorem keine Gedanken gemacht. Denn viele Datenbanken implementieren viele Elemente des Cup-Theorems. Der Anwender muss trotzdem wissen, was er tut, und der Anwender muss trotzdem wissen, was er will, und der Anwender muss trotzdem entsprechend die ganze Thematik ordentlich konfigurieren.",
+            "start": 157649,
+            "end": 209818,
+            "confidence": 0.8542054794520547,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Naja, eigentlich kann ja eine Datenbank gar nichts implementieren. Vom CAP-Theorem ist ja ein Theorem, das quasi immer gültig ist. Aber bevor wir da mal in das Thema einsteigen, beginnen wir mal ganz grundsätzlich. Für alle, die das noch nie gehört haben, dieses CAP-Theorem, also wir befinden uns in der Welt der Datenbanken oder der Datenhaltung im weitesten Sinne.",
+            "start": 210198,
+            "end": 230403,
+            "confidence": 0.8674406779661015,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Meines Erachtens nach sogar noch eine Ebene höher in den Bereich verteilte Systeme.",
+            "start": 230423,
+            "end": 235604,
+            "confidence": 0.8829230769230769,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Genau, aber es geht um das Speichern eines States. Also wenn man keinen State hat, braucht man sich darüber eigentlich keine Gedanken machen. Also wenn man nur irgendwelche stateless Services hat, die kann man einfach auf Nodes hochfahren, 10, 20, 30, killen, hochfahren, ist ganz egal. Aber sobald man natürlich irgendwelche Daten speichern will, ein State halten will, dann wird die ganze Sache schwierig. Und ich kann auch nur empfehlen, das möglichst weit nach hinten zu schieben. Also wenn man irgendwann mal in die Entscheidungsphase kommt, will ich jetzt eine verteilte Datenbank, eine verteilte Datenhaltung haben oder nicht? Wenn es irgendwie möglich ist, würde ich davon Abstand nehmen, weil es einfach extrem kompliziert wird mit der Zeit. Also das klassische Modell, was man ja ganz oft macht, wenn man jetzt so eine klassische Datenbank hat, MySQL, Postgres, dass man einfach das Ganze repliziert, dass man sagt, ich habe einen zweiten Server und alles, was auf den ersten Server auf dem Source geschrieben wird, wird auf der Replica am zweiten Server nachgezogen, mehr oder weniger synchron. Und alles, was schreibend ist, basiert dann am Source und alles, was lesend ist, kann auf beiden Servern basieren. Da hat man auch noch kein Problem, weil es kein verteiltes System ist. Ich verteile ja meine Daten eigentlich nur zum Lesen, aber schwierig wird natürlich das Ganze, wenn man den Schreibprozess verteilen will. Und das ist eigentlich der eigentliche Kern von dem Ganzen, beziehungsweise die Schwierigkeit, wenn man wirklich auf mehreren Servern schreiben will und die Daten wirklich verteilen will. Und da kommt man eigentlich relativ schnell im Problem.",
+            "start": 235624,
+            "end": 321222,
+            "confidence": 0.7972765151515154,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Positives Wording, Wolfgang. Positiv. Wir haben keine Probleme, wir haben nur Herausforderungen.",
+            "start": 321242,
+            "end": 326206,
+            "confidence": 0.8199166666666668,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Genau, und da würde man meinen, dass dieses Diese Herausforderung, die es ja schon seit Ewigkeiten gibt, eigentlich gelöst wurde. Aber wenn man sich das Ganze ein bisschen ansieht, dann ist es eigentlich ein recht modernes Problem, weil früher hat man alles probiert synchron zu lösen. Das heißt, ich habe meine Datenbanken verteilt und habe dann synchron meine Verteilung durchgeführt. Das heißt, wenn ich jetzt irgendwo geschrieben habe auf einem Server, dann wurden synchron alle Knoten, alle Replikas nachgezogen. Wirklich in einem synchronen Kommit. Jeder, der Informatik studiert hat, hoffentlich hat wahrscheinlich mal das Zwei-Phasen-Kommit-Protokoll gehört. Andi, hast du es gelernt in deinem Studium? Oder war das erst nach dem Studium Abbruch gekommen als Thema?",
+            "start": 326246,
+            "end": 373214,
+            "confidence": 0.8156260869565216,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Es war bestimmt drin in den Slides, aber wenn du mich jetzt fragst, biete bitte das Zwei-Phasen-Commit-Protokoll runter, dann muss ich ja sagen, wir sehen uns morgen.",
+            "start": 373666,
+            "end": 382233,
+            "confidence": 0.6924444444444445,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Das Zwei-Phasen-Commit-Protokoll ist ja total simpel, es ist ja nichts anderes als, ihr habt zwei Phasen, ich frage mal alle meinen Server, hey, darf ich dort schreiben? Und indem ich frage, sperren alle Server, Diese Zeile zum Beispiel in der Datenbank, das ist die erste Phase und wenn dann alle Server aufgezeigt haben, ja, ich habe gesperrt, ich habe gesperrt, ich habe gesperrt, dann kommt der Schreibzugriff, dann wird alles geschrieben, auf allen Servern wird geschrieben und dann wird wieder zurückgeliefert, okay, Commit beendet, alles ist geschrieben. Drum zwei Phasen Commit-Protokoll. Ist einfach synchrones Schreiben auf den verschiedenen Knoten.",
+            "start": 382253,
+            "end": 413979,
+            "confidence": 0.8239595959595959,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Klingt aber relativ langsam, oder?",
+            "start": 413999,
+            "end": 415160,
+            "confidence": 0.6376000000000001,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Genau das ist das große Problem. Es ist halt super langsam, weil du musst auf alle Server warten. Jetzt wenn du einen Server hast, der ist zu langsam und du hast dann 5 Server, dann sind halt alle 5 Server gleich langsam. Das heißt, du hast eigentlich wenig Vorteile. Der einzige Vorteil ist, dass du halt überall lesen kannst. Lesen geht schnell, brauchst du nicht sperren. Aber beim Schreiben bist du natürlich genauso langsam.",
+            "start": 416205,
+            "end": 434480,
+            "confidence": 0.7409324324324321,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Und warum muss ich dann immer direkt auf alle 5 Server mit dem 2-Phasen-Comet-Protokoll schreiben?",
+            "start": 434941,
+            "end": 438804,
+            "confidence": 0.8035333333333333,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Ja, 5 war jetzt nur ein Beispiel, aber wenn du halt die Daten 5 mal verteilst und du willst absolute Konsistenz haben, das heißt, alle Daten zu jedem Zeitpunkt müssen überall auf den 5 Servern gleich sein, weil dir das wichtig ist, dass dein Bankkonto zum Beispiel immer den gleichen Stand anzeigt und das Bankkonto ist halt aus Sicherheitsgründen auf 3 Servern gespeichert, da musst du sicherstellen, dass alle 3 Server immer den gleichen Kontostand haben und nicht dir irgendeinen zu hohen oder zu niedrigen Kontostand anzeigt.",
+            "start": 439415,
+            "end": 465263,
+            "confidence": 0.7990574712643678,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Aber das gibt es ja heutzutage auch noch, ne? Also es gibt ja Datenbanksysteme, da kann ich auch Daten synchron schreiben. Auf mehreren Clustern sogar, auf mehreren Nodes, Entschuldigung.",
+            "start": 465578,
+            "end": 473502,
+            "confidence": 0.7307241379310344,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Natürlich, ist ganz klassisches System. Also kannst du machen, vor allem wenn die Geschwindigkeit nicht so relevant ist, ist das natürlich das einfachste System, weil das hundertprozentige, also mehr oder weniger hundertprozentige Sicherheit dir garantiert. Weil sogar in einem Split-Brain-Fall schaltet deine Datenbank einfach ab und ist halt nicht mehr da. ist auch eine gewisse Sicherheit. Dein Kontostand bleibt garantiert gleich, aber die Datenbank ist halt nicht mehr erreichbar.",
+            "start": 473542,
+            "end": 496716,
+            "confidence": 0.7950579710144926,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Aber das, was du jetzt gerade beschreibst, da sind wir schon mitten drin im Cup-Theorem, beziehungsweise das, was du beschrieben hast, ist ein großer Teil davon. Und fangen wir mal an, da reinzugehen. Und ich möchte mit einem Vergleich starten, den eigentlich jeder kennt.",
+            "start": 496756,
+            "end": 508790,
+            "confidence": 0.7627727272727274,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Lass mir raten er hinkt aber na start mal los.",
+            "start": 509310,
+            "end": 511952,
+            "confidence": 0.6737,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Der hinkt nicht der ist super und zwar ist es der typische handwerksvergleich ja ich habe ich beauftrage jemand der baut mir eine garage und natürlich möchte ich es günstig haben ich möchte es natürlich morgen haben schnell ja und natürlich in einer sehr hohen qualität. Das bedeutet billig, schnell und gut. Und was sagt der Handwerker zu mir? Ja, so wünsche ich das leider jeder, aber wählen Sie zwei. Und jetzt stellt sich natürlich die Frage, was wähle ich? Billig und schnell?",
+            "start": 511972,
+            "end": 537790,
+            "confidence": 0.7865060240963853,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Moment, billig und gut. Wie geht billig und gut?",
+            "start": 537830,
+            "end": 540512,
+            "confidence": 0.8591111111111112,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Prinzipiell würde ich dir jetzt antworten, okay, dann ist es halt nicht schnell, aber du hast da auch schon wieder unglaublich was getroffen und zwar ist auch das also wie geht eigentlich billig und gut, aufs Cup-Theorem übertragbar und zwar mit der Partition Tolerance. Aber da kommen wir gleich zu, wenn wir da einmal sind. Generell gibt es aber bei diesen drei Möglichkeiten, wenn du zwei wählen solltest, gar keinen richtig oder falsch, denn es ist immer irgendwie ein Trade-Off.",
+            "start": 540532,
+            "end": 567090,
+            "confidence": 0.8246249999999999,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Ich bin ja ehrlich gesagt gar kein großer Fan von diesen Dreiecken, weil mir kommt immer vor, da hat man sich dann überlegt, so ein Dreieck wäre eigentlich extrem cool, wähle zwei und dann fangt man immer an, so etwas zu erfinden, weil auch beim Cup-Theorem, ich finde das hinkt auch teilweise ein bisschen oder es verstehen viele Leute falsch. Das ist, glaube ich, ein großes Problem. Aber Andi, erklär mal, was ist dieses C, A, P und wie sieht unser Dreieck denn aus?",
+            "start": 567110,
+            "end": 590524,
+            "confidence": 0.7434642857142858,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Werbung. Das Cup-Theorem ist in verteilten und weltweit skalierten Systemen eine große Herausforderung. Diese Art von Skalierungsproblemen findest du auch bei unserem heutigen Episodensponsor Trivago aus Düsseldorf. Millionen von Reisenden weltweit verwenden die Hotelsuchmaschine auf über 50 Länderplattformen. Das System darunter ist technisch hochkomplex, die Preisanfragen und Marktplatz-Auktionen finden in Realtime statt, es sind genug Daten vorhanden, um mit Machine-Learning-Techniken das Produkt zu verbessern und die Plattform wird aus mehreren Cloud-Regionen weltweit ausgeliefert. Die Theorie des CAP-Theorems findet also in der Infrastruktur von Trivago wirklich Anwendung. Über 300 Tech-Professionals aus allen Richtungen arbeiten daran, das Produkt nach vorne zu bringen. Durch den großen und weltweiten Scale können auch kleine Änderungen durch Dich einen großen Impact auf die User und auf die Plattform haben. Wolfgang und ich waren selbst lange Zeit ein Teil des Teams. Dort haben wir auch unter anderem gelernt, datengetrieben zu arbeiten. AB-Testing sowie schnelle datengetriebene Entscheidungen sind einige der Grundbausteine von Trivago. Dadurch lässt sich sehr viel in kurzer Zeit ausprobieren. Nicht nur im Produkt, auch in der Infrastruktur. Wenn das für dich interessant klingt, werde doch mal Teil des Teams und bewirb dich noch heute. Interessante offene Positionen findest du unter careers.trivago.com.in. Initiativbewerbungen sind ebenfalls gern gesehen. Einfach die Bewerbung an joinusattrivago.com mit dem Treff-Engineering-Kiosk senden. Alle Infos findest du natürlich auch in den Show Notes. Werbung Ende. für die Leute, die im Wolfganggrad nicht folgen können. Also das CAP-Theorem wird geschrieben CAP. Das sind die Anfangsbuchstaben von Consistency, Availability und Partition Tolerance. Und visuell wird das oft dargestellt als Dreieck, wo du immer nur eine Kante des Dreiecks wählen sollst, damit du dann zwei dieser drei Attribute wählen kannst. Denn wähle zwei, es gibt keine drei.",
+            "start": 592045,
+            "end": 699624,
+            "confidence": 0.8321637010676154,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Also entweder C und A, C, P, AP.",
+            "start": 700188,
+            "end": 703249,
+            "confidence": 0.88225,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Genau, und jetzt hat Wolfgang gerade gesagt, wie geht denn billig und gut? Und da kommen wir gleich zu, denn das ist auch die höchste Kritik an der Visualisierung des Cup-Theorems in einem Dreieck. Aber lasst uns erstmal beschreiben, was das Cup-Theorem überhaupt ist. Meines Erachtens nach gehört das zu den Grundlagen des Cloud Computings, beziehungsweise zum Design von Cloud-Anwendungen generell. Also das CAP-Theorem ist anwendbar in jedem verteilten System und Cloud-Anwendungen heutzutage sind verteilte Systeme durch unendliche Skalierungsmöglichkeiten. Aber aufgrund der Zusicherung dieser Flexibilität, die du in modernen Clouds hast, musst du halt immer einen Trade-off eingehen, also immer einen Kompromiss.",
+            "start": 703289,
+            "end": 740633,
+            "confidence": 0.81171568627451,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Wobei wir natürlich nur von der Datenspeicherung sprechen. Also wenn du keine Daten speichern musst, keinen State halten musst, dann ist es irrelevant.",
+            "start": 741305,
+            "end": 747628,
+            "confidence": 0.835086956521739,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Das ist korrekt. Aber nennen wir mal fast eine Applikation, die heutzutage keine Daten mehr speichert. Ich glaube, mein Handy speichert mehr Daten.",
+            "start": 748328,
+            "end": 754731,
+            "confidence": 0.7659565217391303,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Als... Ja, und du hast natürlich sogar die Metadaten. In irgendeinem Kubernetes-Cluster zum Beispiel musst du ja die Metadaten auch konsistent irgendwo halten, was für Service läuft, wo und so weiter.",
+            "start": 754771,
+            "end": 764515,
+            "confidence": 0.7353870967741937,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Generell ist die Kernaussage des CAP-Theorems, in einem verteilten System ist es unmöglich, alle drei Eigenschaften Konsistenz, Verfügbarkeit, also Availability und Partition Tolerance, also Ausfalltoleranz zu garantieren. Bis heute wurde noch kein Beweis dargelegt, dass ein verteiltes System streng konsistent, dauerhaft verfügbar und mit einer sehr hohen Ausfalltoleranz ausgestattet werden kann.",
+            "start": 765358,
+            "end": 791116,
+            "confidence": 0.8808235294117646,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Erklär mal die drei Begriffe, weil konsistent ist ja gerade in der Datenbankwelt ein Wort, was sehr gerne verwendet wird und in ganz unterschiedlichen Bereichen eigentlich.",
+            "start": 791724,
+            "end": 800799,
+            "confidence": 0.8628076923076923,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Den meisten Leuten wird im Begriff Konsistenz auch der Begriff Transaktionen irgendwie in den Sinn kommen. Generell gilt es, dass in einem verteilten System mit replizierten Daten, dass es da sichergestellt werden muss, dass nach Abschluss einer Transaktion alle Replikate den Datensatz aktualisiert haben und den gleichen Datensatz zurückgeben. Das bedeutet, alle Clients sehen zum gleichen Zeitpunkt die gleichen Daten. Dann ist deine Datenhaltung in deinem verteilten System konsistent. Jetzt gibt es natürlich bei diesen ganzen NoSQL-Datenbanken und so weiter immer noch den Begriff eventual consistent, was bedeutet, nach einer gewissen Zeit, Replizierung, asynchrone Replizierung oder ähnliches, sind die Daten wieder konsistent. Das ist richtig. Das erfüllt aber nicht die Konsistenz-Eigenschaft des Kapp-Theorems, denn die Konsistenz-Eigenschaft des Kapp-Theorems sagt strenge Konsistenz und sie wird auch als starke Konsistenz oder als immediate consistency beschrieben.",
+            "start": 801417,
+            "end": 857758,
+            "confidence": 0.8751353383458641,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Also wenn wir eine klassische Replikation haben, wo es eine Source gibt und eine Replica, MySQL zum Beispiel, dann haben wir da keine harte Konsistenz, weil die Replica-Node kann immer hinterherhinken, teilweise Stunden unter Umständen. Die hat zwar einen konsistenten Datenbestand in sich, aber auf dem Source, der vielleicht sechs Stunden weiter ist sozusagen in der Zukunft, der hat natürlich einen anderen Datenstand als die Replica-Node, die sechs Stunden hinterherhinkt. Also da hast du keine richtige Konsistenz, aber beide Datenbanken sind natürlich in sich konsistent. Das schon, aber eben nicht den gleichen Datenstand. Also wir sprechen da wirklich vom konsistenten Datenstand auf allen Nodes.",
+            "start": 858259,
+            "end": 898897,
+            "confidence": 0.8409807692307694,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Wenn ich jetzt aber eine einzelne MySQL-Node habe, also ein Server mit einer MySQL-Datenbank, ich mache da ein Insert, dann ist das ebenfalls konsistent, weil da gibt es.",
+            "start": 898917,
+            "end": 907902,
+            "confidence": 0.7924642857142857,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Ja nichts zu interpretieren. Da ist dann sowieso alles konsistent. Da ist ACID-Consistency, normale Consistency, da ist alles konsistent, klar.",
+            "start": 907922,
+            "end": 913245,
+            "confidence": 0.4149,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Kommen wir zu den Buchstaben A, Availability. Auf deutsch Verfügbarkeit. Es wird übersetzt als die Verfügbarkeit im Sinne einer akzeptablen Antwortzeit.",
+            "start": 913626,
+            "end": 926585,
+            "confidence": 0.8344285714285714,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Whatever that means.",
+            "start": 926626,
+            "end": 927407,
+            "confidence": 0.45599999999999996,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Whatever this means ist richtig. Fünf Sekunden halte ich nicht für akzeptabel, beziehungsweise die heutige Kundschaft hält das nicht mehr für akzeptabel. Aber es wird mehr oder weniger beschrieben als alle Anfragen, die an das System gestellt werden, werden stets beantwortet, auch wenn ein Server oder ein ganzes Datacenter ausfällt. Das bedeutet, alle Clients können zu jeder Zeit Lese- und Schreibzugriffe durchführen, die natürlich dann auch vom System beantwortet werden. Eine Antwort hier muss nicht immer eine erfolgreiche Antwort sein. Es kann auch ein Fehlerfall sein, solange die Applikation läuft und verfügbar ist. Das muss man natürlich sagen. Wenn du eine scheiß Anfrage machst und dein Programm mit einem Fehler reagiert, dann ist sie trotzdem verfügbar.",
+            "start": 928155,
+            "end": 964596,
+            "confidence": 0.8184224137931034,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Wichtig ist vielleicht auch, dass wir von Schreibzugriffen genauso sprechen. Es ist nicht nur rein Lesezugriffe, sondern auch Schreibzugriffe. Wenn man nur Lesezugriffe betrachtet, wäre natürlich die Welt schön einfach und simpel. Aber in der Realität haben wir natürlich auch Schreibzugriffe. So, und jetzt kommt dieses berühmte P oder B, wie wir Österreicher sagen, Partition Tolerance.",
+            "start": 964616,
+            "end": 983745,
+            "confidence": 0.8396607142857142,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Wieso nennt ihr das B?",
+            "start": 983785,
+            "end": 985166,
+            "confidence": 0.5894,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Ja, bei uns ist alles B. BP ist ja alles das Gleiche.",
+            "start": 985206,
+            "end": 988087,
+            "confidence": 0.6931666666666666,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "BP ist ein Ölkonzern.",
+            "start": 988107,
+            "end": 989168,
+            "confidence": 0.8225,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Ja, siehst du, da ist auch BB, genau.",
+            "start": 989677,
+            "end": 992718,
+            "confidence": 0.32675,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Nee, jetzt geht's eigentlich um das Wesentliche, worum auch immer so ein bisschen gezankt wird, und zwar ist das die Partition Tolerance beziehungsweise die Ausfalltoleranz. Da geht's wirklich um die Ausfalltoleranz der Rechner beziehungsweise Servernetze. Und wenn dein System Partition Tolerant ist, dann bedeutet das, dass das System auch weiterarbeitet, wenn es partitioniert wird. Das heißt, wenn Knoten nicht mehr miteinander kommunizieren können, um zum Beispiel Daten miteinander auszutauschen oder konsistent zu halten. Das bedeutet natürlich auch, dass das System weiterarbeiten muss, wenn einzelne Knoten nicht mehr miteinander kommunizieren können. Und das ist natürlich, ich sage mal, die hohe Kunst des Cloud Computings.",
+            "start": 992738,
+            "end": 1028440,
+            "confidence": 0.8277961165048544,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Und genau da kommt eigentlich mein Punkt rein, dass sich da wieder irgendwer überlegt hat, damals der Brewer, der das veröffentlicht hat, dass man das in so einem Dreieck eigentlich vielleicht darstellen könnte, was ja eigentlich gar nicht so richtig ist, weil du wählst ja nicht eine der drei Ecken oder zwei der drei Ecken, sorry, sondern was du ja eigentlich mit dem Cap-Theorem sagst, ist im Falle einer Situation, wo du zwei Partitionen hast, also irgendeinen Ausfall, dann musst du zwischen Availability oder Consistency wählen. Also eigentlich ist es relativ vereinfacht, das Ganze auf einen Satz. Im Falle eines Ausfalls musst du eben wählen zwischen C oder A. Und eigentlich, du kannst nicht nur CP wählen, weil CP wäre der Fall eigentlich, wenn alles funktioniert. Also das ist eigentlich genau das, was du mit billig und gut gemeint hast. Also man kann eigentlich nicht alles wählen in diesem Dreieck. Drum würde ich das einfach immer runterbrechen auf den Satz im Falle von einem Ausfall, wo sie wählen Consistency oder Availability.",
+            "start": 1028775,
+            "end": 1087245,
+            "confidence": 0.8315204678362573,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Du hast vollkommen recht, du hast genau die Kritik angebracht, die viele Leute beim Cup-Theorem an den Tag legen, dass man gar nicht alle Kanten des Dreiecks wählen kann, weil in einem verteilten System Partition Tolerance einfach nicht wegdenkbar ist. Partition Tolerance, Netzwerkausfälle, unreliable Netzwerk und so weiter. hast du einfach in der realen Welt, das ist einfach da. Und deswegen wird auch besagt, dass das CAP-Theorem eigentlich nur ein Trade-Off bezüglich Consistency und Availability ist, so wie du grad gesagt hast. Und deswegen der Handwerksvergleich grade, billig und gut, weiß ich jetzt nicht wirklich, ob's geht. Aber warum es eine Datenbank gibt, die sagt, wir sind verteilt, aber müssen keine Partition Tolerance unterstützen, dazu kommen wir später, weil wir gehen natürlich gleich auch noch mal ein bisschen in die Praxis. Und da versuchen wir, deinen Punkt mal ein bisschen zu widerlegen.",
+            "start": 1087533,
+            "end": 1136681,
+            "confidence": 0.793943661971831,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Und ich glaube, das ist jetzt eben ganz wichtig, dieses CAP-Theorem, die eben zeigt, wie du am Anfang schon auch richtig erwähnt hast, es gibt keine Datenbank, die alles ermöglicht. Und viele Leute vergessen diese Problematik von verteilten Systemen. Die setzen eine Datenbank ein, die setzen eine verteilte Datenbank ein, setzen so einen Postgres Cluster auf, einen MySQL Cluster. denken sich, das funktioniert eh alles schön, das ist super sicher, wie meine Single Instance MySQL und denken aber nie an diesen Problemfall, wenn eben ein Ausfall ist in diesem KAP3-Eck, weil dann habe ich genau ein Problem und dann muss die Datenbank das handeln, teilweise muss ich es auch selber handeln, teilweise gibt es Konflikte und da gibt es dann meistens Probleme, die nicht mehr so einfach zu beheben sind. Und die Datenbank kann über ein Jahr super laufen und irgendwann hat sie dann dieses Problem und dann sind die meisten Leute überfordert, weil die nie daran gedacht haben, dass das irgendwo ein schweres Problem irgendwann einmal auftreten kann, weil die Datenbank managt ja alles selber im verteilten Betrieb. Aber in der Realität ist es eben so, dass genau, wenn man ein Problem hat, muss man plötzlich die ganzen Details verstehen, alles von der Architektur, wie läuft das? Und da hat man halt dann meistens diesen Stress. Und darum sehe ich das so als großes Problem an, dass man einfach so verteilte Datenbanken auf ein Problem wirft. Und MongoDB war damals der klassische Fall, wo alle gesagt haben, out of the box, es skaliert, es kann einfach draufwerfen. Und es haben viele die Rechnung dann später bezahlt, wie sie dann in Probleme gelaufen sind. Und das hängt gar nicht mit der MongoDB-Datenbank zusammen, vielleicht auch, aber ich glaube, es passiert mit jeder Datenbank. Wenn man halt diese ganzen Komplexitäten, die im Hintergrund da ablaufen, nicht versteht, dann wird man irgendwann in Probleme rennen, die wesentlich komplexer sind als bei einer Single Instance.",
+            "start": 1136921,
+            "end": 1237116,
+            "confidence": 0.8152453416149069,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Wie MongoDB das Cup-Theorem umsetzt, beziehungsweise wofür MongoDB sich entschieden hat, da kommen wir gleich auch noch zu. Aber fühlen wir uns mal ganz kurz vor Augen, was es eigentlich bedeuten würde, wenn ein verteiltes System alle drei Eigenschaften erfüllen würde. Das würde bedeuten, dass bei einer Unterbrechung der Verbindung zwischen deinen Nodes, dass das System weiterhin antworten muss, also verfügbar ist. also auf anderen Orten reagieren muss, und zwar konsistent. Und jetzt kommt's. Und wenn nun Daten auf einer Node geändert werden, müsste theoretisch mit einer unterbrochenen Verbindung die Daten auf den anderen Nodes ebenfalls konsistent gehalten werden, was natürlich nicht funktioniert.",
+            "start": 1237136,
+            "end": 1279402,
+            "confidence": 0.8566407766990288,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Also man kann sich das ganz gut vorstellen, man hat zwei Datacenters, eines in Amerika, eines in Europa und die Leitung zwischen diesen Datacenters bricht. Dann willst du natürlich deinen europäischen Kunden weiterhin die Datenbank zur Verfügung stellen und deinen amerikanischen. Aber es ist ganz klar, wenn beide schreibend zugreifen, wirst du irgendwie ein Problem haben, wenn diese fette Leitung zwischen Amerika und Europa nicht mehr da ist. Egal wie viele Server hast, egal wie viele Replikationen du hast, egal wie oft du Daten doppelt irgendwo speicherst, du wirst dieses Split-Brain haben zwischen Europa und Amerika. Und genau das ist eigentlich dieses unlösbare Problem, was das CAP-Theorem auch beschreibt und wo es keine sinnvolle Lösung gibt, sofern du deinen europäischen Kunden und den amerikanischen Kunden weiterhin dein Service anbieten willst. Wenn du natürlich sagst, okay, in dem Fall ist mein Service nicht mehr verfügbar, dann ist es ja in Ordnung, aber das ist genau dieses Availability, was dann wegfällt.",
+            "start": 1280030,
+            "end": 1331478,
+            "confidence": 0.8130943396226414,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Genau, weil das ist jetzt der harte Trade-Off. Wie entscheidest du dich, das System zu betreiben? Entweder inkonsistent oder gar nicht. Was gibst du also auf? Entweder Consistency oder Availability.",
+            "start": 1332370,
+            "end": 1341852,
+            "confidence": 0.7508666666666668,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Und so einfach ist die SCAP-Theorie. Schon alles erklärt.",
+            "start": 1341912,
+            "end": 1344693,
+            "confidence": 0.6001111111111112,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Wahnsinn. Vielen Dank. Willkommen zu meinem Tech-Talk. Ich wünsche euch noch einen schönen Tag. Nee, der Clou ist ja, das hört sich alles jetzt total einfach an. Ja, klar, habe ich verstanden. So, und jetzt geht mal bitte zu euch in die Firma. Und jetzt sprecht mal mit euren Teamkollegen. Wie soll sich euer System in diesem Fehlerfall verhalten? Und ich gehe stark davon aus, du hast eine andere Meinung. als der Produktmanager, als seine Chefin und Co.",
+            "start": 1344713,
+            "end": 1365640,
+            "confidence": 0.6857307692307694,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Ja, aber Moment, wir haben doch einfach diesen Postgres Cluster installiert und er macht doch alles für uns.",
+            "start": 1365680,
+            "end": 1369963,
+            "confidence": 0.7413888888888889,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Wir möchten nochmal in Erinnerung rufen, nicht nur bei Reed, sondern auch bei Ride Operations. Und das ist ja die Kündigsklasse. Aber ich bin immer ein Fan davon, wo kommt die Klamotte denn immer her? Ja, also ich meine, Cup Theorem, seit wann gibt's das? 70er, 80er, 60er? Nee, ist gar nicht so alt. Und zwar hat Eric Brewer, hat inzwischen auch mal bei Google gearbeitet, glaube ich. Ist Professor am MIT aktuell, glaube ich. Hat's erst im Jahr 2000 vorgestellt in der Keynote, beziehungsweise 1999 in dem Paper veröffentlicht. Also, das Kapitalismus ist noch gar nicht so alt. Irgendwie so 23 Jahre. Wow, hab ich mir gedacht. Auf jeden Fall ...",
+            "start": 1369983,
+            "end": 1406337,
+            "confidence": 0.7387142857142855,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Es ist ja schön, dass du immer mit der Historie ankommst, weil eigentlich würde man das ja von mir als Wissenschaftler erwarten. Auch vielleicht zu meiner Theorie, warum das erst so spät aufgekommen ist. Das Problem gibt's natürlich schon lange, muss man auch dazusagen. Es wurde halt nicht in dieser Form beschrieben. Aber man muss ja auch schauen, wenn man sich die Hardware so ansieht und was so bis in die 90er Jahren eigentlich passiert ist, dann war das halt meistens Mainframe-Systeme, alles auf einem System, möglichst synchron. Datenbanken wurden synchron, wie wir schon beschrieben haben, mit dem Zwei-Phasen-Commit einfach repliziert bzw. das Commit durchgeführt. Das heißt, es war alles eher so Single-Node-Architektur. Und erst in den 2000ern ist es eigentlich so langsam dieses ganze, ich will es jetzt nicht Cloud Computing nennen, aber Multithreading, das Verteilen über Nodes. Google hat damit angefangen, im großen Stile mit MapReduce dann auch das auf mehrere Knoten zu verteilen. Also diese ganze Verteilung im Sinne, wie wir es heute kennen in der Cloud, die ist eigentlich erst so in den späten 90ern bis 2000ern eigentlich überhaupt langsam aufgekommen. Und darum auch meine Vermutung, dass es dementsprechend spät so einen Anklang gefunden hat oder halt dementsprechend auch beschrieben wurde.",
+            "start": 1406347,
+            "end": 1474559,
+            "confidence": 0.8067268292682928,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Ein weiterer Grund hat Eric Brewer bei der Vorstellung mitgegeben, und zwar sagte er, dass sich so um 1999, 2000 die ganze Forschung um verteilte Systeme eigentlich primär auf verteilte Berechnungen bezogen hat und nicht auf die verteilte Speicherung von Daten. Denn Berechnungen kann man immer wieder neu berechnen, auch wenn eine Node hops geht, aber ein persistenter Zustand in verteilten Systemen ist halt ein echt schwieriges Problem.",
+            "start": 1474959,
+            "end": 1500922,
+            "confidence": 0.8118088235294114,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Es war damals einfach keine Datenbank am Markt, die da irgendwie so ein Cluster oder sowas angeboten hat. Du hast da die großen Player mit DB2 auf ihren Mainframes gehabt, aber es war alles Single-Core-Architektur und alles vertikal skaliert.",
+            "start": 1501802,
+            "end": 1515707,
+            "confidence": 0.7572307692307692,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Ich bin immer noch ein riesen Fan von IBM Mainframes und ich weiß inzwischen auch, dass ein IBM Mainframe auch ein Kubernetes betreiben kann und das nenne ich wirklich reale vertikale Skalierung. Weil ich würde gerne mal mit jemandem sprechen, der ein Kubernetes auf einem Mainframe betreibt, der muss ja mit Network Partitions eigentlich nichts mehr im Hut haben, oder? Ich meine, der muss ja das beste Leben haben, keine Netzwerkprobleme, alles super. Weil wie viel CPUs und wie viel RAM hat so ein Ding? So ein aktueller Z7, das ist schon ordentlich, glaube ich, oder?",
+            "start": 1515967,
+            "end": 1543142,
+            "confidence": 0.7381666666666667,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Viel, würde ich mal sagen, glaube ich zumindest. Also falls jemand übrigens irgendwen kennt, der sich sehr gut mit Mainframes auskennt, bitte unbedingt uns eine Message schicken.",
+            "start": 1543822,
+            "end": 1551947,
+            "confidence": 0.7841111111111113,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Kommen wir zurück zur Geschichte. Und zwar Eric Brewer hat damals ganz stark an globalen Suchmaschinen und verteilten Webcaches gearbeitet. Und beide zählen halt zu dem Bereich der verteilten Systeme. Im Bereich der verteilten Systeme hast du ein System verteilt auf mehrere Nodes und was hast du da natürlich ein Netzwerk dazwischen und wie Werner Vogels schon gesagt hat, everything fails all the time. Somit hast du natürlich ein instabiles Netzwerk. Das bedeutet, Network Partitions hast du dauerhaft. Jetzt hast du aber das Problem, wenn du nämlich ein State hast, einen persistenten Zustand, den du auch behalten möchtest, dass du dein System halt, wie das CAP Theorem halt sagt, dich zwischen Consistency und Availability entscheiden musst. Im Jahr 2000 gab's dann eigentlich mehr oder weniger nur zwei, ich nenn's mal Begriffe. Und zwar auf der einen Seite ist das ACID, aus der klassischen relationalen Datenbankwelt, auf der anderen Seite ist das BASE. ACID, wir erinnern uns, damals aus der Uni oder aus dem Informatikunterricht, Transaktionen und so weiter. Atomar, konsistent, isoliert und dauerhaft.",
+            "start": 1551987,
+            "end": 1616287,
+            "confidence": 0.8065028901734103,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Hättest du das jetzt hinbekommen ohne Notes? Nee.",
+            "start": 1616307,
+            "end": 1619108,
+            "confidence": 0.525,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Aber ich meine, das muss ich auch nicht. Also ich meine, wie oft, ich habe noch nie irgendwie in letzter Zeit gesagt, ja hör mal, sorry, aber deine Operationen sind jetzt hier nicht Asset-konform.",
+            "start": 1621410,
+            "end": 1630818,
+            "confidence": 0.7028823529411765,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Also ich kann mich erinnern, ich war mal auf einer Konferenz und da war damals der Chefentwickler von dem neuen Datenbank-Storage-Format von MariaDB, ist schon lange her. Es hat auch damals noch anders geheißen, ich habe es leider vergessen, irgendwas mit A. Und er hatte im Vortrag ewig lang nach ACID gesucht, nach dem Vote, und hat gemeint, da gibt es ja dieses wissenschaftliche Zeug, was man da irgendwie so, dass es irgendwie beschreibt und so weiter. Und das Publikum hat ihm weiterhelfen müssen, weil er hat keine Ahnung von dieser wissenschaftlichen Annäherung gehabt. Es war für mich unverständlich, wie man Datenbanksysteme entwerfen kann, wirklich eine Storage Engine, ohne dass man ACID versteht, aber in dem Fall war es so.",
+            "start": 1631478,
+            "end": 1668266,
+            "confidence": 0.7860916666666665,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Naja, ich glaube, Asset ist aus der Welt der relationalen Datenbanken nicht mehr wegzudenken, aber man muss sich den mal im Hinterkopf behalten, wenn wir von Asset reden und wenn wir auch von verteilten Systemen sprechen, dann tauschen wir eigentlich die Isolation und die Konsistenz gegen die Performance, weil Wie Wolfgang auch schon sagte, das konsistente Schreiben von Daten auf mehrere Nodes geht halt zulasten der Performance. Auf der anderen Seite hat es natürlich ein paar tolle Attribute, wie zum Beispiel, es ist halt wirklich stark konsistent, alles ist isoliert, alles, wenn etwas committed auf der Disk ist, dann ist das auch wirklich gespeichert. Hat natürlich auch ein paar Nachteile, wie zum Beispiel die Hochverfügbarkeit oder halt die schwierige Evolution deines Schemas oder ähnliches.",
+            "start": 1669032,
+            "end": 1710457,
+            "confidence": 0.8249435483870966,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Und ich glaube, das ist das große Problem, was viele dann auch bei der Verteilung vergessen oder bei der MongoDB, was es auch immer ist, da steht irgendwie Base und Eventually Consistent. Das heißt aber nicht, dass ich keine Daten zum Beispiel verlieren kann. Wenn mir da am Weg irgendwo ein Server wegbricht und es ist noch nicht sinnvoll repliziert worden, dann ist es nicht Eventually Consistent. dann ist es unter Umständen einfach weg, je nachdem wie die Implementierung ist, muss man auch dazu sagen, aber man muss da wirklich ins Detail gehen, um zu verstehen, wie funktioniert es und was wird da geschrieben und was eben nicht und wie sicher ist dann am Ende meine Datenbank. Also das ist nicht vergleichbar mit, wie gesagt, mit einer Single Instanz. Das muss man ganz klar sehen, auch wenn da Datenbank und sicher und alles drüber steht.",
+            "start": 1711290,
+            "end": 1752438,
+            "confidence": 0.8183862068965518,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Und weil du schon von Verständnis gesprochen hast, schaffen wir jetzt mal ein bisschen Verständnis um den damaligen NoSQL-Hype. Weil damals, als die ersten NoSQL-Datenbanken hochkamen, gab's in der Regel immer nur ACID. Und das, was ACID für die Relationale Datenbank ist, ist Base für NoSQL-Datenbanken, beziehungsweise oft für NoSQL-Datenbanken. Base steht für Basically Available, Soft State, Eventually Consistent. Hört sich an wie ein Buzzword-Bingo. Kannst auch deine Hand heben, du hast den Pott gewonnen.",
+            "start": 1753087,
+            "end": 1780624,
+            "confidence": 0.7614133333333335,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Ich war zwar selber sehr froh, wie wir unsere Datenbank-Vorlesung, die wir gegeben haben in unserer Forschungsgruppe, erweitern haben können durch diesen Begriff BASE. Kommt immer cool. Neues Akronym. Kann man auch prüfen. In der Klausur. Ist immer ganz praktisch. Aber meiner Meinung nach ist es absolut Bullshit. Da ist irgendwer dahergekommen und hat gedacht, wir müssen jetzt irgendwas gegen ACID in die Welt setzen. BASE klingt cool. Säure und basisch. Ideal. Alles cool. Und hat sich, glaube ich, danach überlegt, was das eigentlich bedeutet.",
+            "start": 1781945,
+            "end": 1810045,
+            "confidence": 0.801176470588235,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Und es ist wirklich fast das Gegenteil wie ACID, wo ACID stark konsistent ist, legt BASE den Fokus auf Availability. Ungefähre Antworten sind okay. Man hat eine schwache Konsistenz, also man kriegt eventual consistent data nach einer Replikation oder ähnliches. Man hat gegebenenfalls überhaupt kein Schema. Siehe MongoDB, man speichert irgendwelches B.Json. Es ist halt einfach nur, ich sag mal, einfacher gehalten, dafür natürlich auch enorm performant.",
+            "start": 1810323,
+            "end": 1837927,
+            "confidence": 0.8400447761194028,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Und es ist nicht genau definiert, das ist ja auch das Problem. Also dieses ganze Basically Available ist ja auch nicht stark definiert. Bei ACID hast du eine ganz starke Definition, was bedeutet das ACID, was bedeuten die Buchstaben, was heißt es, wenn isoliert wird, was gibt es für Isolationslevels und so weiter. Bei BASE hast du das eigentlich kaum und darum ist es halt einfach so wieder ein Bingo-Wort, was mal erfunden wurde und meiner Meinung nach wenig Sinn macht.",
+            "start": 1838267,
+            "end": 1864693,
+            "confidence": 0.8003703703703702,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Du sagst, dass das nicht definiert ist, ist ein Problem. Ich sage, für mich als NoSQL-Datenbank-Hersteller ist das eine, wie soll ich sagen, Möglichkeit. Da kann ich machen, was ich möchte.",
+            "start": 1865177,
+            "end": 1875164,
+            "confidence": 0.7622903225806453,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Es ist ein sehr komplexes Thema und ich glaube nicht, dass es mit vier Buchstaben in irgendeiner Form abgedeckt ist, weil es da eben so viele kleine Feinheiten gibt, wie sich Systeme in dieser verteilten Welt verhalten und weil das so komplex ist.",
+            "start": 1875224,
+            "end": 1888312,
+            "confidence": 0.8373720930232558,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Okay, jetzt kann man aber sagen, Acid und Base, ich kann nur eins wählen. Ja, falsch. Eric Brewer hat damals gesagt, okay, Acid und Base, das ist kein entweder-oder, sondern das ist halt ein Spektrum. Und damals hat er gesagt, okay, wir stellen was Neues vor, wir stellen das Cup-Theorem vor, und das Cup-Theorem wird ab und zu auch Brewer-Theorem genannt. wo es wirklich das Spektrum ist zwischen Consistency, Availability und Partition Tolerances. Und wenn wir sagen, man kann nur zwei aus den drei Eigenschaften wählen, dann hat man natürlich gewisse Ausprägungen. Man kann zum Beispiel sagen, okay, mein System ist konsistent und toleriert Network Partitions. Das bedeutet natürlich auch, wenn die Konsistenz der Daten nicht mehr gewährleistet werden kann, ist das System nicht mehr verfügbar.",
+            "start": 1888817,
+            "end": 1930910,
+            "confidence": 0.8138650793650795,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Oder read-only zumindest.",
+            "start": 1931470,
+            "end": 1933132,
+            "confidence": 0.42733333333333334,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Was laut Cup-Theorien dann auch nicht verfügbar ist, weil du keine Daten mehr schreiben könntest. Und oft als sehr High-Level-Beispiel, was ich eigentlich nicht so mag, aber irgendwie ist es halt wahr, werden oft Banking-Anwendungen angeführt. Denn wenn der Geldautomat die Konsistenz der Daten nicht mehr halten kann, dann wird der Geldautomat selbst halt nicht verfügbar gemacht, denn die Verfügbarkeit ist in diesem Sinne zweitrangig, denn die Konsistenz der Daten, der Finanzdaten, hat halt einfach höchste Priorität. Also wenn zum Beispiel eine Störung im Datenverkehr ...",
+            "start": 1933192,
+            "end": 1961365,
+            "confidence": 0.7800348837209302,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Warum findest du das Beispiel nicht so cool?",
+            "start": 1961375,
+            "end": 1963096,
+            "confidence": 0.55175,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Ich find das, weil, ich weiß nicht, aber das wird immer angeführt.",
+            "start": 1963136,
+            "end": 1968638,
+            "confidence": 0.7050000000000001,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Vor allem bin ich mir gar nicht sicher, ob's wirklich stimmt im Hintergrund so.",
+            "start": 1968658,
+            "end": 1972080,
+            "confidence": 0.7735714285714285,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Auch das, ich find, das ist zu high-level, dieses Beispiel.",
+            "start": 1972120,
+            "end": 1975842,
+            "confidence": 0.5918000000000001,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Also ich glaube, dass da wesentlich mehr Schritte schon dazwischen dann ablaufen und da selten auf die Datenbank committed wird in so einem Geldautomat, meiner Meinung nach. Aber es eignet sich zumindestens gut, um das darzustellen, wo es vielleicht Sinn machen würde, in was für einem Umfeld zumindestens würde es Sinn machen, die Datenbank einfach abzuschalten, bevor man Inkonsistenzen überhaupt erlaubt.",
+            "start": 1976653,
+            "end": 1995791,
+            "confidence": 0.8104262295081963,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Wenn natürlich jetzt die Network Partition, also die Verbindung zwischen den Nodes wiederhergestellt ist, dann beginnt in der Regel, in der Praxis oft eine Art Replikation, dann wird die Konsistenz wiederhergestellt und danach wird das ganze System auch erstmal wieder für zum Beispiel jetzt hier Schreibzugriffe verfügbar gemacht. Die nächste Ausprägung wäre dann eigentlich die Availability und die Partition Tolerance. Und jetzt, finde ich, kommt ein richtig schönes Beispiel. Und zwar sind es entweder Caching-Systeme oder das DNS-System. Denn das DNS-System hat durch die Layer-Struktur eine enorm hohe Verfügbarkeit. Es ist also super tolerant gegen den Ausfall einzelner DNS-Server. Wenn jetzt einer der Root-Server ausfällt, so what? Die Daten sind 10.000 mal repliziert. Die Konsistenz ist aber nicht unbedingt gegeben, denn teilweise kann es halt Tage dauern, bis ein geänderter DNS-Eintrag in der ganzen Hierarchie propagiert ist. In der Praxis kommt es in der Regel nicht vor.",
+            "start": 1996332,
+            "end": 2047551,
+            "confidence": 0.8328843537414966,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Und du kannst vor allem nicht schreiben. Also meiner Meinung nach wäre das eigentlich ein falsches Beispiel, weil die Availability, hast du ja gesagt, nur schreibend. Und wenn der Server wegbricht, der die Zone ownt, kannst du eigentlich nichts mehr schreiben.",
+            "start": 2048630,
+            "end": 2061400,
+            "confidence": 0.7328048780487806,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Aber eine Zone wird ja nicht nur von einem Server geownt oder von einem Cluster.",
+            "start": 2061440,
+            "end": 2064621,
+            "confidence": 0.7585333333333332,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Ja, du könntest trotzdem in Split-Brain, also in Split-Brain weniger, aber halt, dass deine Server, die die Zone verwalten, wegbrechen und dann hast du auf jeden Fall keine Availability mehr. Und das sind ja relativ wenig Server, zwei Server zum Beispiel oder so. Oder wenn das Netz eben weg ist, im Sinne von Split-Brain, dass die Netzwerkkonnection nach außen von deinem Datacenter weg ist, wo deine zwei Nameserver stehen.",
+            "start": 2065344,
+            "end": 2085047,
+            "confidence": 0.7461159420289853,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Stimmt, aber ich hatte ja gerade gesagt, die ganze Sache ist halt ein Spektrum. Wenn man Availability bevorzugt über Konsistenz, dann sagt man eigentlich nur, dass man keine strenge Konsistenz erwartet, aber halt eine völlig inkonsistente Datenhaltung ist halt auch nicht erwünscht. Und da muss ich zugeben, passt das DNS-Beispiel dann schon wieder. Es wird auch oft irgendwie so Social Media, also moderne Cloud-Anwendungen als Beispiel angeführt, so Twitter oder Facebook. Denn wenn du deinen Tweet nicht schreiben kannst, interessiert es einen Großteil der Welt halt einfach nicht. Aber es ist für den Großteil der Welt besser, wenn das System verfügbar ist, anstatt dass die deinen Tweet lesen. Also das könnte man auch schon als RP-Availability und Partition Tolerance bezeichnen. Wenn halt nicht alle Nachrichten bei allen Nutzern gleichzeitig eingetroffen, eintrifft. Und ich meine, speziell in diesem Bereich AP fallen halt ziemlich viele NoSQL-Datenbanken, die sich halt als Eventual Consistent beschreiben. Und da sind wir wieder bei diesem Base, Basically, Available, Soft State, Eventual Consistent, die halt Availability über Konsistenz bevorzugen.",
+            "start": 2085938,
+            "end": 2144084,
+            "confidence": 0.8023567251461988,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Wobei natürlich auch da wieder so ein Asterix eigentlich dran ist, weil die gehen ja meistens nach irgendeinem Election-Verfahren und checken dann, wie groß ist der Cluster noch und wenn man dann kleiner als die Mehrheit ist, dann schaltet der Teil meistens ab. Also auch da wird das Split-Brain normal so in irgendeiner Form dann verhindert und es kann auch sein, dass dann Teile vom Cluster einfach sich abschalten, weil sie zu wenig sind und keine Connection mehr zur Mehrheit vom Cluster haben und dann ist der Teil eigentlich auch nicht mehr available. Also verschwimmt das Ganze natürlich auch immer drum. Wie gesagt, man muss wirklich ins Detail immer reingehen, was passiert, in was für einem konkreten Use Case. Und es gibt halt zahlreiche Szenarien, die da wirklich passieren können in so einer verteilten Welt.",
+            "start": 2144515,
+            "end": 2185618,
+            "confidence": 0.7986888888888889,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Genau, bei dem, was du da ansprichst, sind wir natürlich im Bereich Quorum, wie viele Server hast du in deinem Cluster, wie viele Ausfälle kannst du akzeptieren und so weiter und so fort. Hängt natürlich sehr stark auch an der Konfiguration des jeweiligen Systems ab. Und der letzte Fall, da wo viele Leute sagen, geht eigentlich gar nicht, ist nämlich konsistent und verfügbar ohne Partition Tolerances. Was natürlich eine Frage aufwirft. Hä? Ich denke, wir sind in einem verteilten System. Genau! Und das ist nämlich die ganze Kritik an dieser ganzen Geschichte. Es geht halt nicht billig und gut, Und da werden halt oft irgendwie so Single-Site-Databases als Beispiel angeführt, also wirklich so MySQL, Postgre oder Oracle, die dann einfach gar kein Netzwerk haben oder halt auch nur eine asynchrone Replikation. Aber auf den sogenannten Followern, auf den Replikas kann man in der Regel ja nicht schreiben. Und deswegen hat man da eigentlich... Da ist halt die Frage, ist das eigentlich noch das Kapp-Theorem? Fällt das darauf zu? Ich weiß es nicht.",
+            "start": 2186176,
+            "end": 2236783,
+            "confidence": 0.7797674418604648,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Die andere Interpretation ist auch oft, dass man sagt, Consistency und Availability ist, wenn eben kein Ausfall passiert. Und da gibt es zum Beispiel auch ein anderes Theorem, was dann ungefähr zehn Jahre später auf den Markt gekommen ist, sage ich mal, von Daniel Abadie. Das war ein PhD von Michael Stonebreaker, der Postgres erfunden hat, dieser Professor. Und der hat eigentlich genau gesagt, CAP-Theorem, das bezieht sich eigentlich nur auf den negativen Fall, wenn es einen Ausfall gibt und beschreibt eigentlich nicht den Fall, wenn alles in Ordnung ist. Weil auch wenn alles in Ordnung ist, wenn deine verteilte Datenbank läuft, alle Network Connections aufrecht sind, du kannst kommunizieren in deinem Cluster, dann musst du trotzdem zwischen Latenz und Konsistenz wählen, beziehungsweise dich für eine oder die andere Richtung entscheiden, was dir wichtiger ist. Das heißt, wenn wir wieder zurückdenken an das Zwei-Phasen-Commit-Protokoll, wo du synchron committest, das heißt, du fragst jeden Server, bist du bereit zum Schreiben, jeder der aufzeigt und so weiter, wenn alle aufgezeigt haben, alle Server, dann darf geschrieben werden im Ende. Wenn man von dem weggeht, also das in irgendeiner Form asynchron macht, dann hast du ja automatisch Inkonsistenzen, weil wenn du sagst, du wartest nicht, bis alle Server geschrieben hat, bis du dein Commit beendest, deine Transaktion, dann gibt es da irgendwo Server draußen in deinem Cluster, Nodes, die vielleicht eine Sekunde hinterherhängen oder eine Millisekunde. Das heißt, du hast Inkonsistenzen. Und genau das beschreibt eigentlich dieses Buck-Elk, hat es der Abadi genannt, Theorem, also die ersten drei Buchstaben Buck, sind nur Cup umgedreht, weil es cooler klingt wahrscheinlich. Also das kommt vom Bug. Und das E steht für Else. Also wenn kein Netzwerkausfall ist, also wenn das Cup-Theorem nicht Anwendung findet, weil alles in Ordnung ist, dann musst du dich entscheiden zwischen Latenz oder Konsistenz. Also dieses LC. Das heißt Cup-Theorem, Else, LC. So ist das Bug-Elk aufgetrennt. Und das heißt eben einfach, dass du dich entscheidest, ist Latenz wichtiger oder Konsistenz und Datenbanken haben teilweise die Möglichkeit, moderne Datenbanken, dass du entscheidest, was ist dir wichtiger und das ist auch wieder ein Spektrum, aber du kannst es teilweise wirklich einstellen. Mir sind die Daten zu wichtig, mir ist die Konsistenz wichtiger, darum warte ich ein bisschen länger oder mir ist die Konsistenz nicht so wichtig, ich will lieber möglichst schnell sein, weil mir egal ist, wenn irgendwas ein paar Millisekunden hinterher hinkt, Solange das sicher alles abläuft, aber ich brauche nicht diese extrem hohe Konsistenz, die jetzt bei deinem Geldautomaten zum Beispiel bräuchte, wenn man das wieder als Beispiel bemüht.",
+            "start": 2237368,
+            "end": 2392987,
+            "confidence": 0.8125920745920744,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Der Kollege hat aber auch nicht im Marketing gearbeitet mit der Abkürzung, oder?",
+            "start": 2393028,
+            "end": 2395912,
+            "confidence": 0.7137692307692307,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Buck Elk, klingt doch super.",
+            "start": 2395952,
+            "end": 2397334,
+            "confidence": 0.7564000000000001,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Nee, aber das, was du sagst, ist eigentlich oft der Standard in vielen modernen Datenbanksystemen, wie zum Beispiel in Cassandra. In Cassandra kannst du pro einzelner Abfrage, pro einzelner Datenbankoperation bestimmen, nämlich das Konsistenzlevel. Und das Konsistenzlevel besagt dann natürlich auch, wie oft werden diese Daten auf wie viele verschiedene Knoten während meiner Operation geschrieben oder wie schnell kommt die Anfrage zurück. Und da ist nämlich ganz genau die praktische Umsetzung von deinem Pack-Elk-Konzept, Theorem, wie heißt das? Keine Ahnung. in die Praxis umgesetzt.",
+            "start": 2398195,
+            "end": 2430208,
+            "confidence": 0.8271666666666663,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Man kann ganz grob sagen, dass eigentlich die klassischen relationalen Datenbanksysteme wie MySQL, Postgres, aber sogar MongoDB eher auf Konsistenz gehen. Also die haben das SC und dann diese NoSQL-Datenbanken wie DynamoDB zum Beispiel oder auch Cassandra, die gehen da mehr auf Latency. Die akzeptieren das, dass eben was nicht Konsistenz ist, dafür aber super schnell gelesen werden kann oder halt geschrieben werden kann in der Datenbank. Gibt es auch im Wikipedia-Artikel vom Baccalc-Theorem gibt es so eine Tabelle, wo man genau sieht, was sind die Datenbanken auf der Bacc-Seite, also auf der CAP-Seite besser gesagt, und was sind sie auf der LC-Seite.",
+            "start": 2430248,
+            "end": 2467533,
+            "confidence": 0.8181941747572821,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Ich meine, die Praxis ist natürlich noch mal ein anderes Paar Schuhe und lassen wir uns da jetzt ein bisschen einstellen. Und zwar, die meisten NOS-Gelddatenbanken sind in der Regel horizontal skalierbar, somit vom Design her natürlich verteilt. Und somit findet natürlich das Cup-Theorem seine Anwendung. Weil sie verteilt sind, sprechen wir von einem Verteiltensystem, somit sind Network Partitions erstmal schon mal gegeben. Jetzt ist aber der Begriff Network Partition auch schon recht schwierig, denn heißt das denn jetzt, alle Knoten sind wirklich voneinander abgeschnitten und können nicht mehr miteinander kommunizieren? oder können nur zwei knoten nicht mehr miteinander kommunizieren und der rest schon oder was ist eigentlich ein system mit einer schlechten netzwerkverbindung ist das dann in einem zwischenzustand also all das ist auch eine sehr sehr schwierige thematik ich meine deswegen gibt es ja auch unter anderem einen unglaublich talentierten und sehr berühmten informatiker a4 nennt er sich mit dem tool japson der eigentlich alle Datenbanken genau auf dieses Cup-Theorem, auf ihre Schreibkonsistenz und Co. testet. Der hat so ein mega Framework gebaut und wird auch bezahlt von den ganzen Datenbankherstellern, um wirklich zu gucken, okay, wo sind Race Conditions und so weiter. Der testet das ganze Cup-Theorem und ob die ganzen Marketing-Papers auch wirklich ihr Versprechen halten.",
+            "start": 2468252,
+            "end": 2540969,
+            "confidence": 0.8035190476190474,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Und der hat so in, glaube ich, jeder Datenbank schon irgendwelche Flaws gefunden. Und wie du richtig sagst, die Datenbankhersteller bezahlen den mittlerweile, dass der denen hilft, ihre Datenbank zu verbessern. Weil der hat noch in jeder Datenbank irgendwas rausgefunden und Situationen entdeckt, in denen dann eben irgendwas nicht konsistent ist oder Daten verloren gehen und so weiter.",
+            "start": 2541209,
+            "end": 2561395,
+            "confidence": 0.8343103448275864,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Wir verlinken ein paar Blogposts und ein paar Tests, denn die ganzen Tests von MongoDB, Cassandra, Kafka und so weiter veröffentlicht er alle. Die verlinken wir in den Shownotes. Bevor ich wirklich tief das Cup-Theorem verstanden habe, habe ich viele dieser Blogposts nicht verstanden. Die sind sehr hart zu lesen, sie gehen sehr tief rein, sind aber unglaublich interessant. Aber du hattest gerade schon von MongoDB erwähnt, beziehungsweise schon ein paar Mal während dieser Episode. Wo befindet sich MongoDB aktuell im Cup-Theorem? Wo würdest du das einordnen? Favorisiert ist Consistency oder eher Availability?",
+            "start": 2561435,
+            "end": 2595595,
+            "confidence": 0.761795698924731,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Also MongoDB ist Availability im CAP-Theorem und Consistency im Back-Elk.",
+            "start": 2596056,
+            "end": 2602921,
+            "confidence": 0.8285999999999998,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Meines Erachtens nach stimmt das nämlich nicht. Meines Erachtens nach ist nämlich MongoDB Consistency und Partition-Tolerant, weil MongoDB selbst ein Single-Master-System hat und jedes Replica-Set nur auf einem Primärknoten liegt. Und somit sind Schreiboperationen, wenn der Primärknoten für ein Replikaset abstürzt, nicht mehr gegeben. Ich meine, der Sekundärknoten, die Replika, wird irgendwann zum neuen Primärknoten. Aber in der Zeit, bis das gegeben ist, bis der Sekundärknoten nicht zum neuen Master elektet wurde, ist das System nicht verfügbar. Zumindest auf diesem Replikaset.",
+            "start": 2602961,
+            "end": 2635050,
+            "confidence": 0.8412222222222222,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Ja, ich kann dir da jetzt auch wenig widersprechen. Ich kenn mich zu wenig aus wie MongoDB, wie schnell die Leader Election oder sonst irgendwas stattfindet. Aber ich glaub dir jetzt einfach mal. Auch wenn Wikipedia was anderes sagt, natürlich.",
+            "start": 2635686,
+            "end": 2646587,
+            "confidence": 0.7438750000000002,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Ich meine, das Problem ist beim MongoDB, du hast natürlich solche Geschichten wie natürlich eine Read Preference, wo du die Availability einfordern kannst, aber die Konsistenz vernachlässigt. Dann hast du bei deinen Schreiboperationen das Setting Right Concern, wo du natürlich auch festlegen kannst, wie viele Notes den Datensatz geschrieben haben müssen. Also du merkst schon, ich glaube, du kannst den Fall je nach Design und Datenhaltung und Konfiguration deiner Datenbanken halt auch irgendwie für beide Sachen machen. Aber, wie auch schon am Anfang erwähnt, du musst genau wissen, was du tust. Du musst wissen, wann kannst du bei deinen lesenden Operationen auf Konsistenz verzichten? Wann kannst du bei einem möglichen Note Outage bei deinem Schreibzugriff auf Konsistenz verzichten oder auf Performance? Und da frage ich mich, wie viele Leute machen sich wirklich über diese Settings Gedanken?",
+            "start": 2647225,
+            "end": 2691467,
+            "confidence": 0.7833970588235292,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Ja und wie du schon gesagt hast, es hängt ja auch wirklich von der Anzahl der Knoten immer ab. Also was heißt denn Fall Tolerance? Die Fall Tolerance hat ja meistens auch eine Zahl irgendwo dran, wie viele Knoten können ausfallen. Die kannst du ja auch ändern unter Umständen und das hat dann natürlich auch dementsprechend Einfluss auf Availability, weil wenn dir ganz viele Knoten wegbrechen, einfach dann ist es klar, dann wirst du nie Availability haben, logisch.",
+            "start": 2691740,
+            "end": 2713973,
+            "confidence": 0.7496794871794872,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Wenn wir uns Kassandra mal ansehen, Kassandra ist eigentlich nicht weit entfernt. In den Default Settings bevorzugen sie Availability über Consistent. Du kannst die ganze Sache aber auch mit geringerter Availability und höherer Konsistenz fahren. Denn Kassandra hat so eine tolle Geschichte wie ein sogenanntes Consistency Level. Und zwar kannst du jeder Operation, also Read oder Write, kannst du bei Kassandra mitgeben, okay, welches Consistency Level erwarte ich denn für diese Operation? Und das kann wirklich ... Bei einer Schreiboperation kannst du sagen, okay, schreibe das bitte auf das Quorum. Das bedeutet, wenn du wirklich ... Also, auf die Masse aller Nodes oder auf alle Nodes oder nur auf zwei Nodes oder auf eine Node. Also, du kannst wirklich ganz klar steuern, auf wie viele Nodes der Datensatz geschrieben werden soll, von wie vielen Nodes ich diesen lesen kann. Und umso höher natürlich dieses Consistency-Level gesetzt wird, desto mehr leidet natürlich die Verfügbarkeit der ganzen Thematik.",
+            "start": 2714638,
+            "end": 2768616,
+            "confidence": 0.7626858974358977,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Und das ist genau dieses LC Tradeoff bei BuckELC, das du dort einstellen kannst, wo du wirklich eben das dynamisch setzen kannst und das das wirklich beeinflusst.",
+            "start": 2769319,
+            "end": 2778971,
+            "confidence": 0.7785555555555553,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Also wenn du jetzt drei Nodes hast in deinem Cassandra Cluster und du das Consistency Level auf drei gesetzt hast und eine Node fehlt, ist der Cluster halt nicht mehr verfügbar, aber konsistent. Also, mach dir halt Gedanken, was du für Daten speicherst, wie du die speicherst. Und dann hast du nämlich da auch eigentlich keine Probleme. Aber jetzt bist du natürlich der große Verfechter von, das CAP-Theorem ist nur für Datenbanken. Und ich sag, das CAP-Theorem ist für verteilte Systeme. Was sagst du denn zu Kubernetes und dem CAP-Theorem?",
+            "start": 2779571,
+            "end": 2809018,
+            "confidence": 0.7746333333333332,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Ja, für Kubernetes selbst ist es natürlich quasi egal, aber ich vermute auch, dass Kubernetes Metadaten irgendwo speichert. Und diese Metadaten musst du ja auch in irgendeiner Form verfügbar halten und verteilt verfügbar halten, sonst kann dir ja nie irgendein Node wegbrechen. Wenn dir der Node wegbricht, wo du alle Metadaten gespeichert hast, ist alles tot. Das wirst du ja auch verhindern. Das heißt, du musst die Daten irgendwie wieder verteilen. Ich vermute ja, Kubernetes hat das nicht neu erfunden. Ich vermute, die verwenden unter der Haube auch irgendein Datenhaltungssystem.",
+            "start": 2809785,
+            "end": 2840106,
+            "confidence": 0.7716666666666665,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "So viel ich weiß, nutzen die ETCD unten drunter. Eben.",
+            "start": 2840126,
+            "end": 2844488,
+            "confidence": 0.8174000000000001,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Ist ja sehr beliebt in der Welt. Super leichtgewichtige Datenbank, verteilte Datenbank.",
+            "start": 2844528,
+            "end": 2849549,
+            "confidence": 0.8047499999999999,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Ich meine, im Endeffekt, Kubernetes ist designt und optimiert, hochverfügbare Workloads zu schedulen. Und auch wenn eine Kubernetes-Node halt nicht mehr zum Master kommunizieren kann, werden trotzdem noch User-Requests beantwortet. Die müssen dann nicht unbedingt konsistent sein von der Pod-Konfiguration, aber sie werden beantwortet. Und somit fällt Kubernetes eigentlich unter einen AP-System, also Favored Availability über Consistency.",
+            "start": 2850169,
+            "end": 2880155,
+            "confidence": 0.7840701754385966,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Natürlich, aber das hängt natürlich auch von den Services ab, die dort laufen haben, weil wenn die Services natürlich auf irgendeine Datenbank oder so zugreifen müssen oder irgendwas lesen müssen über das Netzwerk, dann sind sie zwar verfügbar, die Bots oder die Services, aber sie können halt keine sinnvollen Anfragen beantworten.",
+            "start": 2880195,
+            "end": 2896745,
+            "confidence": 0.8212549019607844,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Ja, ja, klar, ich rede jetzt nur vom Kubernetes Kernsystem. Ich rede nicht von den Applikationen, die du auf Kubernetes hostest. Das ist natürlich ein wichtiger Punkt, den du erwähnst, denn für jede Applikation selbst musst du beurteilen, was du favorisierst. Und wenn du natürlich auf Kubernetes etwas favorisierst, was konsistent höher liegt als der Availability, dann musst du halt in einer Applikationsprobe gucken, wie du damit umgehst. Du kannst die beiden halt nicht irgendwie miteinander verheiraten und sagen, okay, Kubernetes ist available, meine Datenbank ist consistent, oder passt das, dann habe ich ein System mit allen drei. Das funktioniert halt jetzt so nicht, sondern du musst jedes System halt schon einzeln betrachten.",
+            "start": 2897147,
+            "end": 2934311,
+            "confidence": 0.7623982300884958,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Und du hast ja natürlich auch andere Datenhaltungssysteme darunter, wenn du ein verteiltes Filesystem hast, zum Beispiel irgendein ClusterFS zum Beispiel, dann hast du dann natürlich die gleichen Probleme, die du in der verteilten Welt oder in der verteilten Datenbankwelt hast, weil ob du jetzt eine Datei speicherst oder eine Tabelle speicherst, ist ja im Prinzip dasselbe. Also auch da wieder liegt extrem viel darunter. Darum ist meiner Meinung nach ja so ein verteiltes System, was auf Kubernetes mit verteilten Dateisystemen und vielleicht noch mit verteilten Datenbanken arbeitet, einfach super komplex, weil du halt auf ganz vielen Ebenen diese Verteilungsprobleme hast und die potenzieren sich dann natürlich dadurch und macht es super kompliziert, wenn du irgendwo ein Bug, irgendwo ein Problem hast, dann das Problem zu lösen. Da musst du schon ziemlich fit auf sehr vielen Ebenen sein.",
+            "start": 2934351,
+            "end": 2978920,
+            "confidence": 0.8061956521739132,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Und kommen wir jetzt mal zu dem Flaggschiff, kommen wir mal zu Kafka. Wir haben die ganze Zeit davon gesprochen, dass eigentlich jedes verteilte System Partition Tolerance sein muss. Laut LinkedIn, dem Autor von Kafka, ist aber Kafka ein CA-System. Also es favort Consistency und Availability über Netzwerkpartitions. Und das ist natürlich recht interessant. Und zwar die Begründung ist, dass LinkedIn, Kafka im eigenen Datasetter laufen, wo sie natürlich das Netzwerk unter ihrer Kontrolle haben und natürlich dann ordentliche Netzwerkkomponenten nehmen, wo dann natürlich Network Partitions sehr rar sind. Die haben ja nicht unrecht. Wenn du alles unter deiner Kontrolle hast, kannst du natürlich auch die Qualität beeinflussen. Du kannst natürlich auch redundante Netzwerksysteme aufbauen.",
+            "start": 2979241,
+            "end": 3023133,
+            "confidence": 0.8176,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Nur halt auch jedes Teil kann irgendwie fehlen. Also wenn der Bagger deine Glasfaserleitung durchbricht und auf der anderen Seite irgendein anderes Hardware-Problem ist, dann hast du halt deine Redundanz auch nicht mehr am Ende. Die Redundanz hast du schon, aber du hast die Connection nicht mehr.",
+            "start": 3024020,
+            "end": 3040413,
+            "confidence": 0.7710425531914894,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Ich hoffe, liegt inhaltlich kein Bagger im Datacenter. Aber was sonst wird schon im Bagger?",
+            "start": 3040913,
+            "end": 3046498,
+            "confidence": 0.7151333333333335,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Die haben ja auch mehrere Datacenter zwischen irgendwelchen Kontinenten oder sowas.",
+            "start": 3046518,
+            "end": 3050321,
+            "confidence": 0.7728181818181816,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Ja richtig, aber die Kafka-Systeme werden ja nicht über Kontinente gespannt. Also dann hast du ja einzelne Systeme, die ja in sich dann immer noch konsistent sind und verfügbar. Also die Replikation ist dann eine andere Baustelle. Ähnlich wie bei Cassandra und bei MongoDB gibt es natürlich auch bei Kafka ein paar Settings, die das ganze CAP-Theorien beeinflussen. Und zwar sind das nämlich deine Minimum-In-Sync-Replikas. Das ist dein Replication-Faktor für deine Topics und für deine Partitions. Und das ist das sogenannte AXE-Setting von deinem Producer. Der Producer ist der Prozessor, der die Daten in den Kafka schreibt. Denn wenn der Replication-Faktor auf 3 gesetzt ist, das bedeutet du replizierst das Topic 3 mal insgesamt, das liegt auf 3 verschiedenen Nodes, deine Minimum-in-Sync-Replikas aber auf 1 gesetzt sind und die Node fliegt dir weg, dann hast du natürlich immer noch Datenverlust, somit bist du nicht mehr konsistent, weil deine Daten zwar von einer Note angenommen werden, auf eine Note geschrieben werden, aber dann über Eventual Consistency rüberrepliziert werden. Wenn du jetzt aber natürlich sagst, okay, der Prozess, der die Daten schreibt, ähnlich wie das sogenannte Consistency Level bei Cassandra oder die Write Concerns bei MongoDB, Wenn du sagst, okay, der Kafka-Cluster muss mir einen Hack geben, wenn das mindestens auf allen Nodes geschrieben ist, dann hast du natürlich Consistency, dann hast du natürlich deine Daten repliziert und somit auch verfügbar und dann ist die ganze Sache natürlich auch sicher. Aber das bedeutet natürlich auch mehrfachen Speicherplatz, Datenvorhaltung und da wissen wir alle, Cloud-Infrastruktur kann teuer sein, dann wird es natürlich auch teuer.",
+            "start": 3050779,
+            "end": 3150345,
+            "confidence": 0.7983065134099622,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Und ein Split-Brain kannst du ja trotzdem haben, weil es wird ja wieder irgendeinen Leader geben, der einen Bereich schreiben darf und dann kann dir das natürlich genauso wieder passieren mit einem Split-Brain, wenn ihr das irgendwo dazwischen wegbricht.",
+            "start": 3150628,
+            "end": 3162023,
+            "confidence": 0.735051282051282,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Logisch, da kommt dann das Setting der Unclean Leader Election zugute, was man natürlich auch mit sehr, sehr viel Vorsicht genießen sollte, aber das sind dann wiederum die Eigenheiten von Kafka. Also, ihr merkt schon, dass Amazon und Co. diese Datenbanken betreiben, macht schon Sinn, weil das ist sehr harter Tobak. Die Konfiguration der Datenbanken überlassen sie aber dem Kunden, denn Ihr habt jetzt schon an den drei Beispielen von MongoDB, Cassandra und Kafka gemerkt, die Datenbankanbieter wissen nicht, was ihr bevorzugt. Konsistenz oder Verfügbarkeit, das müsst ihr schon selbst entscheiden. Und ich habe schon sehr, sehr viele Teams gesehen, die sich über sowas gar keine Gedanken gemacht haben, aber Wenn die Festplatte mal kaputt ist, sich dann über Datenverlust wundern oder über nicht verfügbare Systeme. Und das finde ich dann immer schade, dass das immer im Nachgang auf die Agenda kommt. Weil das bedeutet, man möchte dann oft, oh Refactoring und ah, wie schaffe ich die Daten denn darüber und so weiter und so fort. Und dann ist immer der Stunk groß, sage ich mal.",
+            "start": 3162410,
+            "end": 3216509,
+            "confidence": 0.8088238636363632,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Und daher auch immer meine Empfehlung, kann man es nicht mit einem Singlesystem, wo ein Backup hintendran hängt, nicht auch machen. Und wenn mal was Schlimmes passiert mit der Datenbank, ist man eine Stunde offline. Reicht es nicht für die 95 Prozent aller Projekte auch aus.",
+            "start": 3216864,
+            "end": 3230394,
+            "confidence": 0.8193260869565215,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Das ist aber nicht Hacker News Driven Development Wolfgang.",
+            "start": 3230434,
+            "end": 3232436,
+            "confidence": 0.4847777777777778,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Das stimmt. Ich habe gerade kürzlich mit jemanden gesprochen, der einen MySQL Cluster einsetzt und der hat auch gesagt, er hat seit Ewigkeiten Probleme und immer wieder crasht mal irgendwo was und es ist einfach super kompliziert, das Ganze zu maintainen. Dem ist halt der Single Node dann irgendwann zu schwach geworden. Aber meiner Meinung nach lieber in irgendeinen Hyperscaler nochmal 100 Euro investieren für eine größere Maschine und auf einer Single Instanz bleiben. Das kann wirklich viele Kopfschmerzen verhindern und jeder der mal in so Probleme gelaufen ist in der verteilten Welt weiß wovon ich spreche.",
+            "start": 3233292,
+            "end": 3265517,
+            "confidence": 0.7814226804123706,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Viele Leute wollen es nicht hören, aber Vertikal skalieren ist eine Option und das geht inzwischen sehr, sehr, sehr groß. Lustiger Funfact, auf GCP kannst du mit SSDs eine Compute Node, also eine EC2 Instanz auf GCP auf 12 GB Storage bringen. ohne Netzwerkstorage zu nutzen. Das ist schon mal eine Hausnummer, oder?",
+            "start": 3265742,
+            "end": 3287447,
+            "confidence": 0.7589811320754718,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "12 Gigabyte.",
+            "start": 3287457,
+            "end": 3288628,
+            "confidence": 0.5885,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Terabyte, Entschuldigung, 12 Terabyte. Du kannst 12 Terabyte SSD-Discs in deine Compute-Note auf Google schopfen. Und wenn du dann ... Bis du erst mal Netzwerkstorage anfassen musst.",
+            "start": 3288828,
+            "end": 3300654,
+            "confidence": 0.7286296296296297,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Ja, und sogar Netzwerkstorage funktioniert ja sehr gut. Aber selten ist ja Storage das Problem bei Datenbanken. Sondern meistens ist es halt wirklich die Compute-Power. Aber auch da kann man viel dazukaufen. viel mit einem Single Node kompensieren und manchmal macht es auch einfach Sinn, haben wir auch schon öfters darüber gesprochen, mal vielleicht sich die Queries anzusehen, kann ich da noch irgendwo was optimieren, vielleicht habe ich da ein paar Queries, wenn ich die abende, habe ich plötzlich 70% weniger Load oder sowas auf meiner Datenbank, anstatt sich einen Cluster ins Haus zu holen und wirklich die Probleme damit zu haben. Weil, das kann ich euch garantieren, also wenn ihr bisher Datenbanken irgendwie als Einzelperson oder so gemaintaint habt, bei Clustern wird es dann wirklich schwierig, das als Einzelperson zu machen und überall noch die Ahnung zu haben.",
+            "start": 3300694,
+            "end": 3344335,
+            "confidence": 0.7992158273381297,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Wir hoffen, euer Kopf raucht jetzt nicht. War schon sehr viel Theorie, war schon sehr viel C, A, P, E, Latency, Consistency. Im Marketing müssten die, glaube ich, auch noch mal alle anfangen. Aber das Einzige, was ihr euch merken müsst, Cup-Theorien. Entscheidet euch zwischen Consistency oder Availability. Macht euch Gedanken, wie euer System sich verhalten soll. Wenn ihr eine verteilte Datenbank wie Kafka, Cassandra, MongoDB oder ähnliches im Einsatz habt, fragt auch mal bei den Mädels und Jungs nach, die die betreiben, oder schaut euch die Topic-Konfiguration und eure Producer-Konfiguration an und eure Clients. Welche Settings ihr da eigentlich wählt. Bei MongoDB sind es Read and Read Preferences, Write Concern. Bei Cassandra ist es primär das Consistency-Level. Bei Kafka sind es die Producer-Axe, die Min-In-Sync-Replikas auf dem Topic und auf den Partitions und den Replication-Faktor auf dem Topic.",
+            "start": 3345297,
+            "end": 3395370,
+            "confidence": 0.7690215827338129,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Und fürs Bullshit-Bingo, ganz wichtig, jeder der sagt Cup, könnt ihr dann sagen, Cup betrachtet ja nur den negativen Fall, eigentlich ist Buck Elk das wahre und das muss man sich eigentlich anschauen.",
+            "start": 3396073,
+            "end": 3406340,
+            "confidence": 0.7623030303030304,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Wir verlinken euch natürlich noch eine ganze Menge Links in den Shownotes, auch ein paar schöne Comics, wie man sich das Ganze ein bisschen vorstellen kann, auch warum Kafka unter anderem ein CA-System sein soll und kein Netzwerk Partitions haben sollte, haben wir auch schon erklärt, aber die offizielle geschriebene Erklärung verlinken wir völlig auch. Ich hoffe, ihr hört diese Episode nicht an dem Wochenende, weil das an dem Wochenende, finde ich, ein bisschen harter Tobak. Zumindest, wenn man da irgendwie mal noch einen Kater hat oder ähnliches von der Party von gestern. Aber nur gut. Kann natürlich auch euch mal wieder wach machen. Oder ihr nutzt das Einschlaf-Podcast. Das ist auch okay für uns.",
+            "start": 3406640,
+            "end": 3441620,
+            "confidence": 0.7528695652173911,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Einschlafen mit dem Engineering-Kiosk. In dem Sinne, eine gute Woche. Bis zur nächsten Episode.",
+            "start": 3441660,
+            "end": 3447282,
+            "confidence": 0.8022142857142857,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Bis bald. Tschüss. Ciao.",
+            "start": 3447302,
+            "end": 3448523,
+            "confidence": 0.40025000000000005,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Und nicht vergessen, wenn du noch eine neue Herausforderung suchst, zum Beispiel in weltweit skalierten Systemen, klick mal auf den Link in den Shownotes zu Career-Seite von unserem Episodensponsor Trivago.",
+            "start": 3451764,
+            "end": 3461144,
+            "confidence": 0.8319,
+            "channel": null,
+            "speaker": "A"
+        }
+    ],
+    "confidence": 0.7978648405478356,
+    "audio_duration": 3461.0,
+    "webhook_status_code": null,
+    "webhook_auth": false,
+    "summary": null,
+    "auto_highlights_result": null,
+    "content_safety_labels": null,
+    "chapters": null,
+    "sentiment_analysis_results": null,
+    "entities": null
 }
