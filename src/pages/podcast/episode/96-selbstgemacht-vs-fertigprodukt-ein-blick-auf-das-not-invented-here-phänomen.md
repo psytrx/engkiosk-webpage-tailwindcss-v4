@@ -52,7 +52,10 @@ speaker:
 - name: Wolfi Gassler
   website: https://wolfgang.gassler.org/
 spotify: https://open.spotify.com/episode/6V9sXNoWh8iBcv3aukDWic
-tags: []
+tags:
+- Team
+- Software Engineering
+- Software Qualität
 title: "#96 Selbstgemacht vs. Fertigprodukt: Ein Blick auf das Not-Invented-Here-Ph\xE4\
   nomen"
 youtube: ''
