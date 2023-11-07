@@ -115,10 +115,10 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 						</div>
 						<script>
 							window.submitRegisterForm = function(form) {
-								const email = form.email.value;
+								const regId = form.regId.value; // we use regId instead of email to confuse bots
 								const formMessage = document.getElementById('formMessage');
 								formMessage.classList.remove('hidden');
-								formMessage.innerHTML = `Registering ${email}...`;
+								formMessage.innerHTML = `Registering ${regId}...`;
 								const formData = new FormData(form);
 								// use simple urlencoded form data instead of multipart
 								fetch(form.action, {
@@ -130,7 +130,7 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 								})
 								.then((response) => {
 									if (response.ok) {
-										formMessage.innerHTML = `${email} registered successfully!`;
+										formMessage.innerHTML = `${regId} registered successfully!`;
 									} else {
 										formMessage.innerHTML = 'Something went wrong. Please try again later or contact us via email.';
 									}
