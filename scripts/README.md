@@ -13,7 +13,7 @@ Select a podcast episode which you want to transcribe.
 Lets say episode 90.
 
 ```sh
-$ ASSEMBLYAI_API_KEY="<API KEY>" python transcribe_audio_file.py 90
+$ ASSEMBLYAI_API_KEY="<API KEY>" python transcribe_published_episode.py 90
 ```
 
 This will write the full raw data into `src/data/transcripts`.
