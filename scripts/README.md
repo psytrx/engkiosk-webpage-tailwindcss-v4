@@ -58,6 +58,12 @@ You may want to check the Audio and the Transcript on who starts speaking.
 Thats is everything.
 Commit. Deploy. And enjoy the transcription on the website.
 
+## Transcribe an audio file
+
+```sh
+ASSEMBLYAI_API_KEY="<API KEY>" python transcribe_audio_file.py --url https://my.file.com/foo.mp3 --speaker 3
+``````
+
 ## Script `podcast_feed_to_content.py`
 
 A script that parses our Podcast XML Feed and generates the correct content files for our website.
