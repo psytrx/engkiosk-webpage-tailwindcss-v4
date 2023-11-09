@@ -10,11 +10,15 @@ from functions import EPISODES_STORAGE_DIR, TRANSCRIPT_STORAGE_DIR, build_correc
 
 
 if __name__ == "__main__":
-    cli_parser = argparse.ArgumentParser(description='Transcribe an audio file')
+    cli_parser = argparse.ArgumentParser(
+        description='Transcribe an audio file')
 
-    cli_parser.add_argument('-u', '--url', type=str, required=True, help='Audio file URL to transcribe')
-    cli_parser.add_argument('-s', '--speaker', type=int, const=2, nargs='?', help='Number of speaker in the audio file')
-    cli_parser.add_argument('-o', '--output', type=str, default="transcript.json", nargs='?', help='Output filename')
+    cli_parser.add_argument('-u', '--url', type=str,
+                            required=True, help='Audio file URL to transcribe')
+    cli_parser.add_argument('-s', '--speaker', type=int, const=2,
+                            nargs='?', help='Number of speaker in the audio file')
+    cli_parser.add_argument('-o', '--output', type=str,
+                            default=None, nargs='?', help='Output filename')
     args = cli_parser.parse_args()
 
     # Setup logger
@@ -30,6 +34,10 @@ if __name__ == "__main__":
     if not validators.url(args.url):
         logging.error("Please enter a valud url")
         sys.exit(1)
+
+    # if no output filename is given, use the filename from the url
+    if not args.output:
+        args.output = args.url.split('/')[-1].split('.')[0] + '.json'
 
     logging.info(f"Audio url: {args.url}")
     logging.info(f"Number of speaker: {args.speaker}")
@@ -53,21 +61,22 @@ if __name__ == "__main__":
     config = aai.TranscriptionConfig(
         speaker_labels=True,
         speakers_expected=args.speaker,
-        language_code="de", 
-        punctuate=True, 
-        content_safety=False, 
+        language_code="de",
+        punctuate=True,
+        content_safety=False,
+        # disfluencies=True,  # if true, transcribe "uhm" and "ahm" but only in english
         # Not supported with our language
         # auto_highlights=True,
-        #summarization=True,
-        #summary_model=aai.SummarizationModel.conversational,
-        #summary_type=aai.SummarizationType.paragraph,
-        #entity_detection=True,
+        # summarization=True,
+        # summary_model=aai.SummarizationModel.conversational,
+        # summary_type=aai.SummarizationType.paragraph,
+        # entity_detection=True,
     )
     transcript = transcriber.transcribe(audio_url, config)
     logging.info("Requesting transcript ... Success")
-    
+
     logging.info(f"Writing transcript to disk to {args.output} ...")
     with open(args.output, 'w', encoding='utf-8') as f:
         json.dump(transcript.json_response, f, ensure_ascii=False, indent=4)
-    
+
     logging.info(f"Writing transcript to disk to {args.output} ... Success")
