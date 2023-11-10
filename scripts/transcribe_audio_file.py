@@ -4,16 +4,21 @@ import sys
 import os
 import assemblyai as aai
 import json
+import validators
 
 from functions import EPISODES_STORAGE_DIR, TRANSCRIPT_STORAGE_DIR, build_correct_file_path, get_podcast_episode_by_number
 
 
 if __name__ == "__main__":
-    cli_parser = argparse.ArgumentParser(description='Transcribe a podcast episode')
-    cli_parser.add_argument('Episode',
-        metavar='episode',
-        type=int,
-        help='Episode to process for transcription. Example value: "68"')
+    cli_parser = argparse.ArgumentParser(
+        description='Transcribe an audio file')
+
+    cli_parser.add_argument('-u', '--url', type=str,
+                            required=True, help='Audio file URL to transcribe')
+    cli_parser.add_argument('-s', '--speaker', type=int, const=2,
+                            nargs='?', help='Number of speaker in the audio file')
+    cli_parser.add_argument('-o', '--output', type=str,
+                            default=None, nargs='?', help='Output filename')
     args = cli_parser.parse_args()
 
     # Setup logger
@@ -25,29 +30,18 @@ if __name__ == "__main__":
         ]
     )
 
-    # We have one -1 and one 00 Episode.
-    # Disallow other older ones.
-    if args.Episode <= -2:
-        logging.error("Please enter an episode number. E.g. 43")
+    # URL validation
+    if not validators.url(args.url):
+        logging.error("Please enter a valud url")
         sys.exit(1)
 
-    # Sometimes we get "3", but we need "03"
-    episode_number = str(args.Episode)
-    episode_number = episode_number.zfill(2)
+    # if no output filename is given, use the filename from the url
+    if not args.output:
+        args.output = args.url.split('/')[-1].split('.')[0] + '.json'
 
-    logging.info(f"Searching for podcast episode {episode_number} ...")
-    p = build_correct_file_path(EPISODES_STORAGE_DIR)
-    episode = get_podcast_episode_by_number(p, episode_number)
-    logging.info(f"Searching for podcast episode {episode_number} ... Found")
-
-    episode_audio_url = episode.get("audio")
-    if not episode_audio_url:
-        logging.error("No audio url available")
-        sys.exit(1)
-    logging.info(f"Podcast episode audio url: {episode_audio_url}")
-
-    episode_speaker_num = len(episode.get("speaker"))
-    logging.info(f"Podcast episode speaker: {episode_speaker_num}")
+    logging.info(f"Audio url: {args.url}")
+    logging.info(f"Number of speaker: {args.speaker}")
+    logging.info(f"Output file: {args.output}")
 
     ASSEMBLYAI_API_KEY = os.getenv('ASSEMBLYAI_API_KEY')
     if not ASSEMBLYAI_API_KEY:
@@ -58,33 +52,31 @@ if __name__ == "__main__":
     aai.settings.api_key = ASSEMBLYAI_API_KEY
     logging.info("Assemblyai API Key found")
 
-    logging.info("Requesting podcast episode transcript ...")
+    logging.info("Requesting transcript ...")
     transcriber = aai.Transcriber()
     audio_url = (
-        episode_audio_url
+        args.url
     )
     # https://www.assemblyai.com/docs/api-reference/transcript
     config = aai.TranscriptionConfig(
         speaker_labels=True,
-        speakers_expected=episode_speaker_num,
-        language_code="de", 
-        punctuate=True, 
-        content_safety=False, 
+        speakers_expected=args.speaker,
+        language_code="de",
+        punctuate=True,
+        content_safety=False,
+        # disfluencies=True,  # if true, transcribe "uhm" and "ahm" but only in english
         # Not supported with our language
         # auto_highlights=True,
-        #summarization=True,
-        #summary_model=aai.SummarizationModel.conversational,
-        #summary_type=aai.SummarizationType.paragraph,
-        #entity_detection=True,
+        # summarization=True,
+        # summary_model=aai.SummarizationModel.conversational,
+        # summary_type=aai.SummarizationType.paragraph,
+        # entity_detection=True,
     )
     transcript = transcriber.transcribe(audio_url, config)
-    logging.info("Requesting podcast episode transcript ... Success")
-    
-    transcript_filename = f"{episode_number}-transcript.json"
-    full_transcript_filepath = f"{build_correct_file_path(TRANSCRIPT_STORAGE_DIR)}/{transcript_filename}"
+    logging.info("Requesting transcript ... Success")
 
-    logging.info(f"Writing podcast episode transcript to disk to {full_transcript_filepath} ...")
-    with open(full_transcript_filepath, 'w', encoding='utf-8') as f:
+    logging.info(f"Writing transcript to disk to {args.output} ...")
+    with open(args.output, 'w', encoding='utf-8') as f:
         json.dump(transcript.json_response, f, ensure_ascii=False, indent=4)
-    
-    logging.info(f"Writing podcast episode transcript to disk to {full_transcript_filepath} ... Success")
+
+    logging.info(f"Writing transcript to disk to {args.output} ... Success")

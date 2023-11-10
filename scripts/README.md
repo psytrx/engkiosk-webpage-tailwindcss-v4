@@ -13,7 +13,7 @@ Select a podcast episode which you want to transcribe.
 Lets say episode 90.
 
 ```sh
-$ ASSEMBLYAI_API_KEY="<API KEY>" python transcribe_audio_file.py 90
+$ ASSEMBLYAI_API_KEY="<API KEY>" python transcribe_published_episode.py 90
 ```
 
 This will write the full raw data into `src/data/transcripts`.
@@ -57,6 +57,12 @@ You may want to check the Audio and the Transcript on who starts speaking.
 
 Thats is everything.
 Commit. Deploy. And enjoy the transcription on the website.
+
+## Transcribe an audio file
+
+```sh
+ASSEMBLYAI_API_KEY="<API KEY>" python transcribe_audio_file.py --url https://my.file.com/foo.mp3 --speaker 3
+``````
 
 ## Script `podcast_feed_to_content.py`
 
