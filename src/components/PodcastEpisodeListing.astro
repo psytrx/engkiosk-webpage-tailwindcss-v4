@@ -4,13 +4,14 @@ export interface Props {
 	numberOfItems: number;
 }
 
+import { getCollection } from "astro:content";
 import PodcastEpisodePreview from '../components/PodcastEpisodePreview.astro';
 
 const { numberOfItems } = Astro.props;
 
 // Build the list of Podcast Episodes
-let allEpisodes = await Astro.glob('../pages/podcast/episode/*.md');
-allEpisodes.sort((a, b) => new Date(b.frontmatter.pubDate).valueOf() - new Date(a.frontmatter.pubDate).valueOf());
+let allEpisodes = await getCollection("podcast");
+allEpisodes.sort((a, b) => new Date(b.data.pubDate).valueOf() - new Date(a.data.pubDate).valueOf());
 
 // Default wise list all items,
 // only limit it if requested

@@ -1,4 +1,5 @@
 ---
+import { getCollection } from "astro:content";
 import Footer from '../../components/Footer.astro';
 import MainHead from '../../components/MainHead.astro';
 import Nav from '../../components/Nav.astro';
@@ -14,8 +15,8 @@ export async function getStaticPaths() {
 	let allBlogPostTagsUnique = [...new Set(allBlogPosts.flatMap((p) => p.frontmatter.tags))];
 
 	// Get tags from podcast episodes
-	const allPodcastEpisode = await Astro.glob('../podcast/episode/*.md');
-	let allPodcastEpisodeTagsUnique = [...new Set(allPodcastEpisode.flatMap((e) => e.frontmatter.tags))];
+	const allPodcastEpisode = await getCollection("podcast");
+	let allPodcastEpisodeTagsUnique = [...new Set(allPodcastEpisode.flatMap((e) => e.data.tags))];
 	const allTagsUnique = [...new Set([...allBlogPostTagsUnique, ...allPodcastEpisodeTagsUnique])];
 
 	// We URLify the tag here to get dynamic url friendly names
@@ -52,7 +53,7 @@ if (tagInfo.hasOwnProperty(tagHumanName)) {
 const blogPosts = allBlogPosts.filter((post) => post.frontmatter.tags.includes(tagHumanName)).sort((a, b) => new Date(b.frontmatter.pubDate).valueOf() - new Date(a.frontmatter.pubDate).valueOf());
 
 // Filter podcast episodes by tag, sort by date
-const podcastEpisodes = allPodcastEpisode.filter((episode) => episode.frontmatter.tags.includes(tagHumanName)).sort((a, b) => new Date(b.frontmatter.pubDate).valueOf() - new Date(a.frontmatter.pubDate).valueOf());
+const podcastEpisodes = allPodcastEpisode.filter((episode) => episode.data.tags.includes(tagHumanName)).sort((a, b) => new Date(b.data.pubDate).valueOf() - new Date(a.data.pubDate).valueOf());
 ---
 
 <html lang="de">

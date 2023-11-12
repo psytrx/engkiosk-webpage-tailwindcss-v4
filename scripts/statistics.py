@@ -15,7 +15,7 @@ from functions import (
 import frontmatter
 
 # Global variables
-PATH_EPISODE_MARKDOWN_FILES = 'src/pages/podcast/episode'
+PATH_EPISODE_MARKDOWN_FILES = 'src/content/podcast'
 PATH_BLOG_MARKDOWN_FILES = 'src/pages/blog/post'
 PATH_PODCAST_INFO_JSON_FILE = 'src/data/podcast-info.json'
 PATH_TAGS_JSON_FILE = 'src/data/tags.json'

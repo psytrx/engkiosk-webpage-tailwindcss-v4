@@ -27,7 +27,7 @@ import deezer
 
 # Global variables
 PODCAST_RSS_FEED = "https://feeds.redcircle.com/0ecfdfd7-fda1-4c3d-9515-476727f9df5e"
-PATH_MARKDOWN_FILES = 'src/pages/podcast/episode'
+PATH_MARKDOWN_FILES = 'src/content/podcast'
 PATH_IMAGE_FILES = 'public/images/podcast/episode'
 TOML_FILE = 'netlify.toml'
 REDIRECT_PREFIX = '/episodes/'
@@ -344,7 +344,6 @@ def sync_podcast_episodes(rss_feed, path_md_files, path_img_files, no_api_calls=
             spotify_link = spotify_episode["external_urls"]["spotify"]
 
         data = {
-            'layout': '../../../layouts/podcast-episode.astro',
             'title': title,
             'audio': mp3_link,
             'pubDate': date_parsed,

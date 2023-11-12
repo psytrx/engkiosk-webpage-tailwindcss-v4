@@ -8,7 +8,7 @@ import logging
 import frontmatter
 
 # Global variables
-PODCAST_CONTENT_FILES = 'src/pages/podcast/episode'
+PODCAST_CONTENT_FILES = 'src/content/podcast'
 BLOGPOST_CONTENT_FILES = 'src/pages/blog/post'
 GERMAN_TECH_PODCAST_DATA = 'src/data/german-tech-podcasts.json'
 TAG_FILE_CONTENT = 'src/data/tags.json'

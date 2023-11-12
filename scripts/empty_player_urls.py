@@ -7,7 +7,7 @@ import sys
 import frontmatter
 
 # Global variables
-PATH_MARKDOWN_FILES = 'src/pages/podcast/episode'
+PATH_MARKDOWN_FILES = 'src/content/podcast'
 
 
 def find_empty_player_urls(path_md_files) -> int:

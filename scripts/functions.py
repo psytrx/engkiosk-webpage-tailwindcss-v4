@@ -5,7 +5,7 @@ from os.path import isfile, join
 # External libraries
 import frontmatter
 
-EPISODES_STORAGE_DIR = 'src/pages/podcast/episode'
+EPISODES_STORAGE_DIR = 'src/content/podcast'
 TRANSCRIPT_STORAGE_DIR = 'src/data/transcripts'
 
 def build_correct_file_path(file_path) -> str:

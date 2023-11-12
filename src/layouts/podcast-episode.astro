@@ -12,29 +12,31 @@ import { formatDate, humanTimestampToSecondsTo } from '../scripts/date.js';
 import podcastInfo from '../data/podcast-info.json';
 import '../styles/podcast_episode.scss';
 
-const { content } = Astro.props;
+const { episode } = Astro.props;
+const frontmatter = episode.data;
+
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 
-let content_image = new URL(content.image, Astro.site.href).href;
-let title = ''.concat(content.title, ' - Engineering Kiosk');
+let content_image = new URL(frontmatter.image, Astro.site.href).href;
+let title = ''.concat(frontmatter.title, ' - Engineering Kiosk');
 let encodedUrl = encodeURI(canonicalURL);
 
 // We need to replace #, because this is treated as a twitter hastag
-let social_text = 'Bock auf nen guten Software Engineering Podcast? Hör doch mal in die Episode "' + content.title.replace('#', '') + '" rein';
+let social_text = 'Bock auf nen guten Software Engineering Podcast? Hör doch mal in die Episode "' + frontmatter.title.replace('#', '') + '" rein';
 let encoded_social_text = encodeURI(social_text);
 
 // Prepare speaker names for transcript
 // Our transcript only contains "Speaker A" and "Speaker B".
 // In the Podcast Episode Metadata, we also have real names :)
 const speakerMap = new Map();
-content.speaker.forEach ((person, index) => {
+frontmatter.speaker.forEach ((person, index) => {
 	if ('transcriptLetter' in person) {
 		speakerMap.set(person.transcriptLetter, person.name);
 	}
 });
 
 // Transcripts
-const episodeFilename = Path.basename(content.file);
+const episodeFilename = Path.basename(episode.id);
 let episodeNumber = episodeFilename.substring(0, episodeFilename.indexOf('-'));
 
 // We have one episode starting with -1
@@ -63,7 +65,7 @@ if (fs.existsSync(transcriptFilename)) {
 // Headlines is in a format like
 //	"links::Links||sprungmarken::Sprungmarken||hosts::Hosts
 //	"<slug>::<headline>||..."
-let headline_split = content.headlines.split('||');
+let headline_split = frontmatter.headlines.split('||');
 let header = [];
 
 // If we have a transcript, push the headline
@@ -83,7 +85,7 @@ headline_split.forEach(function callback(val) {
 	});
 });
 
-let tags = content.tags.map((element) => URLify(element));
+let tags = frontmatter.tags.map((element) => URLify(element));
 
 // Edit slot code (real content)
 // We need to edit it here, because the content comes from our Podcast hosting platform.
@@ -103,7 +105,7 @@ const html = (await Astro.slots.render('default'))
 
 <html lang="de">
 	<head>
-		<MainHead title={title} description={content.description} image={content.image} {canonicalURL} ogType="article" />
+		<MainHead title={title} description={frontmatter.description} image={frontmatter.image} {canonicalURL} ogType="article" />
 
 		<!-- https://github.com/embedly/player.js -->
 		<script type="text/javascript" src="/js/player-0.1.0.min.js"></script>
@@ -111,7 +113,7 @@ const html = (await Astro.slots.render('default'))
 			Full configuration docs available at
 			https://github.com/podigee/podigee-podcast-player/blob/master/docs/configuration.md
 		-->
-		<script define:vars={{ podcastInfo, content, canonicalURL, content_image }}>
+		<script define:vars={{ podcastInfo, frontmatter, canonicalURL, content_image }}>
 			window.playerConfiguration = {
 				options: {
 					theme: 'default',
@@ -143,13 +145,13 @@ const html = (await Astro.slots.render('default'))
 					},
 				},
 				episode: {
-					title: content.title,
+					title: frontmatter.title,
 					coverUrl: content_image,
 					media: {
-						mp3: content.audio,
+						mp3: frontmatter.audio,
 					},
-					chaptermarks: content.chapter,
-					description: content.description,
+					chaptermarks: frontmatter.chapter,
+					description: frontmatter.description,
 					url: canonicalURL,
 				},
 			};
@@ -167,17 +169,17 @@ const html = (await Astro.slots.render('default'))
 							<div class="w-full md:w-1/2 2xl:w-5/12 px-4 mb-8 md:mb-0">
 								<div class="mx-auto md:ml-0 max-w-max overflow-hidden rounded-lg">
 									<!-- TODO Set max height/width of 554 - take care of other screens/devices -->
-									<img src={content.image} alt={content.title} title={content.title} />
+									<img src={frontmatter.image} alt={frontmatter.title} title={frontmatter.title} />
 								</div>
 							</div>
 							<div class="w-full md:w-1/2 px-4">
 								<div class="flex items-center">
 									<p class="inline-block text-yellow-500 font-medium">
-										<time class="date" datetime={content.pubDate}>{formatDate(content.pubDate)}</time>
+										<time class="date" datetime={frontmatter.pubDate}>{formatDate(frontmatter.pubDate)}</time>
 									</p>
 								</div>
 								<h1 class="mb-8 text-3xl md:text-4xl lg:text-5xl leading-tight text-darkCoolGray-900 font-bold tracking-tighter">
-									{content.title}
+									{frontmatter.title}
 								</h1>
 								<div id="episode-player">
 									<script class="podigee-podcast-player" src="/podcast-player/javascripts/podigee-podcast-player.js" data-configuration="playerConfiguration"></script>
@@ -279,7 +281,7 @@ const html = (await Astro.slots.render('default'))
 								}
 								<div class="flex items-center">
 									<a
-										title={`Kopiere den Link der Episode ${content.title} in dein Clipboard`}
+										title={`Kopiere den Link der Episode ${frontmatter.title} in dein Clipboard`}
 										class="inline-flex mr-4 items-center justify-center py-2 px-4 text-coolGray-300 border border-coolGray-200 hover:border-coolGray-300 rounded-md shadow-md transition duration-200"
 										id="copy-url"
 										data-href={canonicalURL}
@@ -293,7 +295,7 @@ const html = (await Astro.slots.render('default'))
 										<span class="ml-2 text-sm text-coolGray-500 font-medium">Copy Link</span>
 									</a>
 									<a
-										title={`Teile die Episode ${content.title} auf Facebook`}
+										title={`Teile die Episode ${frontmatter.title} auf Facebook`}
 										class="inline-flex mr-2 h-9 w-9 items-center justify-center text-coolGray-500 border border-coolGray-200 hover:border-coolGray-300 rounded-md shadow-md transition duration-200"
 										href={`https://www.facebook.com/sharer/sharer.php?u=${encodedUrl}&quote=${encoded_social_text}`}
 									>
@@ -304,7 +306,7 @@ const html = (await Astro.slots.render('default'))
 										</svg>
 									</a>
 									<a
-										title={`Teile die Episode ${content.title} auf twitter`}
+										title={`Teile die Episode ${frontmatter.title} auf twitter`}
 										class="inline-flex mr-2 h-9 w-9 items-center justify-center text-coolGray-500 border border-coolGray-200 hover:border-coolGray-300 rounded-md shadow-md transition duration-200"
 										href={`https://twitter.com/intent/tweet?text=${encoded_social_text}&url=${encodedUrl}&via=EngKiosk`}
 									>
@@ -318,63 +320,63 @@ const html = (await Astro.slots.render('default'))
 							</div>
 							<div class="w-full md:w-7/12 lg:w-8/12 xl:w-9/12 md:flex-1 px-4">
 								{
-									(content.spotify || content.apple_podcasts || content.google_podcasts) && (
+									(frontmatter.spotify || frontmatter.apple_podcasts || frontmatter.google_podcasts) && (
 										<section class="mb-6 py-4">
 											<div class="mb-8 text-xl md:text-xl font-semibold text-coolGray-400 text-center">Diese Episode in deiner Podcast-App hören...</div>
 											<div class="container px-4 mx-auto">
 												<div class="flex flex-wrap justify-center">
-													{content.apple_podcasts && (
+													{frontmatter.apple_podcasts && (
 														<div class="m-2">
-															<a class="flex items-center" href={content.apple_podcasts} title={`Engineering Kiosk ${content.title} bei Apple Podcasts`}>
-																<img class="w-12" src="/images/brands/apple.svg" alt={`Engineering Kiosk ${content.title} bei Apple Podcasts`} />
+															<a class="flex items-center" href={frontmatter.apple_podcasts} title={`Engineering Kiosk ${frontmatter.title} bei Apple Podcasts`}>
+																<img class="w-12" src="/images/brands/apple.svg" alt={`Engineering Kiosk ${frontmatter.title} bei Apple Podcasts`} />
 																<span class="text-lg m-2">Apple</span>
 															</a>
 														</div>
 													)}
-													{content.spotify && (
+													{frontmatter.spotify && (
 														<div class="m-2">
-															<a class="flex items-center" href={content.spotify} title={`Engineering Kiosk ${content.title} auf Spotify`}>
-																<img class="w-12" src="/images/brands/spotify.svg" alt={`Engineering Kiosk ${content.title} auf Spotify`} />
+															<a class="flex items-center" href={frontmatter.spotify} title={`Engineering Kiosk ${frontmatter.title} auf Spotify`}>
+																<img class="w-12" src="/images/brands/spotify.svg" alt={`Engineering Kiosk ${frontmatter.title} auf Spotify`} />
 																<span class="text-lg m-2">Spotify</span>
 															</a>
 														</div>
 													)}
-													{content.google_podcasts && (
+													{frontmatter.google_podcasts && (
 														<div class="m-2">
-															<a class="flex items-center" href={content.google_podcasts} title={`Engineering Kiosk ${content.title} bei Google Podcasts`}>
-																<img class="w-12" src="/images/brands/google.svg" alt={`Engineering Kiosk ${content.title} auf Google Podcasts`} />
+															<a class="flex items-center" href={frontmatter.google_podcasts} title={`Engineering Kiosk ${frontmatter.title} bei Google Podcasts`}>
+																<img class="w-12" src="/images/brands/google.svg" alt={`Engineering Kiosk ${frontmatter.title} auf Google Podcasts`} />
 																<span class="text-lg m-2">Google</span>
 															</a>
 														</div>
 													)}
-													{content.amazon_music && (
+													{frontmatter.amazon_music && (
 														<div class="m-2">
-															<a class="flex items-center" href={content.amazon_music} title={`Engineering Kiosk ${content.title} bei Amazon Music`}>
-																<img class="w-12" src="/images/brands/amazonmusic_black.svg" alt={`Engineering Kiosk ${content.title} auf Amazon Music`} />
+															<a class="flex items-center" href={frontmatter.amazon_music} title={`Engineering Kiosk ${frontmatter.title} bei Amazon Music`}>
+																<img class="w-12" src="/images/brands/amazonmusic_black.svg" alt={`Engineering Kiosk ${frontmatter.title} auf Amazon Music`} />
 																<span class="text-lg m-2">Amazon</span>
 															</a>
 														</div>
 													)}
-													{content.deezer && (
+													{frontmatter.deezer && (
 														<div class="m-2">
-															<a class="flex items-center" href={content.deezer} title={`Engineering Kiosk ${content.title} bei Deezer`}>
-																<img class="w-12" src="/images/brands/deezer.svg" alt={`Engineering Kiosk ${content.title} auf Deezer`} />
+															<a class="flex items-center" href={frontmatter.deezer} title={`Engineering Kiosk ${frontmatter.title} bei Deezer`}>
+																<img class="w-12" src="/images/brands/deezer.svg" alt={`Engineering Kiosk ${frontmatter.title} auf Deezer`} />
 																<span class="text-lg m-2">deezer</span>
 															</a>
 														</div>
 													)}
-													{content.rtlplus && (
+													{frontmatter.rtlplus && (
 														<div class="m-2">
-															<a class="flex items-center" href={content.rtlplus} title={`Engineering Kiosk ${content.title} bei RTL Plus Musik`}>
-																<img class="h-6" src="/images/brands/rtl-plus.svg" alt={`Engineering Kiosk ${content.title} auf RTL Plus Musik`} />
+															<a class="flex items-center" href={frontmatter.rtlplus} title={`Engineering Kiosk ${frontmatter.title} bei RTL Plus Musik`}>
+																<img class="h-6" src="/images/brands/rtl-plus.svg" alt={`Engineering Kiosk ${frontmatter.title} auf RTL Plus Musik`} />
 																<span class="text-lg m-2">&nbsp;</span>
 															</a>
 														</div>
 													)}
-													{content.youtube && (
+													{frontmatter.youtube && (
 														<div class="m-2">
-															<a class="flex items-center" href={content.youtube} title={`Engineering Kiosk ${content.title} auf YouTube`}>
-																<img class="w-12" src="/images/brands/youtube.svg" alt={`Engineering Kiosk ${content.title} auf YouTube`} />
+															<a class="flex items-center" href={frontmatter.youtube} title={`Engineering Kiosk ${frontmatter.title} auf YouTube`}>
+																<img class="w-12" src="/images/brands/youtube.svg" alt={`Engineering Kiosk ${frontmatter.title} auf YouTube`} />
 																<span class="text-lg m-2">YouTube</span>
 															</a>
 														</div>

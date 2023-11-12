@@ -26,7 +26,7 @@ $ python trim_transcribe_raw_data.py
 
 The raw data contains a speaker detection with the label Speaker A, Speaker B, ...
 We need to create a mapping who is Speaker A.
-Go to your episode `.md` file (in this case `src/pages/podcast/episode/90-inner-source-open-source-best-practices-zur-besseren-zusammenarbeit-zwischen-teams-mit-sebastian-spier.md`) and edit
+Go to your episode `.md` file (in this case `src/content/podcast/90-inner-source-open-source-best-practices-zur-besseren-zusammenarbeit-zwischen-teams-mit-sebastian-spier.md`) and edit
 
 ```toml
 speaker:
