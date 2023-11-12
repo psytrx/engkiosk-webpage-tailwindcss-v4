@@ -296,9 +296,7 @@ def sync_podcast_episodes(rss_feed, path_md_files, path_img_files, no_api_calls=
 
         # Date format: Tue, 05 Apr 2022 04:25:00 +0000
         pub_date = item.find('pubDate').text
-        # See full list of format codes here
-        # https://docs.python.org/3/library/datetime.html#strftime-strptime-behavior
-        date_parsed = datetime.datetime.strptime(pub_date, '%a, %d %b %Y %H:%M:%S %z').strftime('%Y-%m-%d')
+        date_parsed = datetime.datetime.strptime(pub_date, '%a, %d %b %Y %H:%M:%S %z')
 
         mp3 = item.find('enclosure')
         mp3_link = mp3.attrib.get('url')
