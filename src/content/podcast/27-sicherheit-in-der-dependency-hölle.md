@@ -62,7 +62,7 @@ headlines: links::Links||weitere-nicht-behandelte-incidents::Weitere nicht behan
   Incidents||sprungmarken::Sprungmarken||hosts::Hosts
 image: "/images/podcast/episode/27-sicherheit-in-der-dependency-h\xF6lle.jpg"
 length_second: 3378
-pubDate: 2022-07-12
+pubDate: 2022-07-12 04:00:00+00:00
 rtlplus: ''
 speaker:
 - name: Andy Grunwald

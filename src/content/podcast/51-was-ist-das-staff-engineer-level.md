@@ -60,7 +60,7 @@ headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts||feedback-gern
   (gerne auch als Voice Message)
 image: /images/podcast/episode/51-was-ist-das-staff-engineer-level.jpg
 length_second: 3101
-pubDate: 2022-12-27
+pubDate: 2022-12-27 05:00:00+00:00
 rtlplus: ''
 speaker:
 - name: Andy Grunwald

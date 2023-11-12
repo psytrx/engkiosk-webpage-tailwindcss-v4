@@ -69,7 +69,7 @@ headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts||feedback-gern
 image: "/images/podcast/episode/86-open-source-als-herz-einer-firma-mit-nextcloud-gr\xFC\
   nder-frank-karlitschek.jpg"
 length_second: 3934
-pubDate: 2023-08-29
+pubDate: 2023-08-29 04:00:00+00:00
 rtlplus: ''
 speaker:
 - name: Andy Grunwald

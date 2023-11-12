@@ -48,7 +48,7 @@ headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts||feedback-gern
   (gerne auch als Voice Message)
 image: /images/podcast/episode/56-applikations-skalierung-wann-wieso-was-kostet-es-stateless-und-stateful-horizontal-vs-vertikal.jpg
 length_second: 3026
-pubDate: 2023-01-31
+pubDate: 2023-01-31 05:00:00+00:00
 rtlplus: ''
 speaker:
 - name: Andy Grunwald

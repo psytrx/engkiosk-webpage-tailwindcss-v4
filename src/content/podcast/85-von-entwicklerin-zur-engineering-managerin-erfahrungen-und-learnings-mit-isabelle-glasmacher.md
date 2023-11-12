@@ -59,7 +59,7 @@ headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts||feedback-gern
   (gerne auch als Voice Message)
 image: /images/podcast/episode/85-von-entwicklerin-zur-engineering-managerin-erfahrungen-und-learnings-mit-isabelle-glasmacher.jpg
 length_second: 4052
-pubDate: 2023-08-22
+pubDate: 2023-08-22 04:00:00+00:00
 rtlplus: ''
 speaker:
 - name: Andy Grunwald

@@ -53,7 +53,7 @@ headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts||feedback-gern
   (gerne auch als Voice Message)
 image: /images/podcast/episode/42-lexer-parser-und-open-source-in-counterstrike.jpg
 length_second: 3218
-pubDate: 2022-10-25
+pubDate: 2022-10-25 04:00:00+00:00
 rtlplus: ''
 speaker:
 - name: Andy Grunwald

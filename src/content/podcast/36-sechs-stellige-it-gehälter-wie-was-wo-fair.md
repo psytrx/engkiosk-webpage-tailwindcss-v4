@@ -49,7 +49,7 @@ headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts||feedback-gern
   (gerne auch als Voice Message)
 image: "/images/podcast/episode/36-sechs-stellige-it-geh\xE4lter-wie-was-wo-fair.jpg"
 length_second: 3255
-pubDate: 2022-09-13
+pubDate: 2022-09-13 04:00:00+00:00
 rtlplus: ''
 speaker:
 - name: Andy Grunwald

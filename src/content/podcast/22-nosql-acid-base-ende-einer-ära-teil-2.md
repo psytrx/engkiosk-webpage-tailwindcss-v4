@@ -65,7 +65,7 @@ google_podcasts: https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5yZWRjaXJjbG
 headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts
 image: "/images/podcast/episode/22-nosql-acid-base-ende-einer-\xE4ra-teil-2.jpg"
 length_second: 3636
-pubDate: 2022-06-07
+pubDate: 2022-06-07 04:00:00+00:00
 rtlplus: ''
 speaker:
 - name: Andy Grunwald

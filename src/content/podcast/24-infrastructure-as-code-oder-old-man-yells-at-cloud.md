@@ -57,7 +57,7 @@ google_podcasts: https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5yZWRjaXJjbG
 headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts
 image: /images/podcast/episode/24-infrastructure-as-code-oder-old-man-yells-at-cloud.jpg
 length_second: 3712
-pubDate: 2022-06-21
+pubDate: 2022-06-21 04:00:00+00:00
 rtlplus: ''
 speaker:
 - name: Andy Grunwald

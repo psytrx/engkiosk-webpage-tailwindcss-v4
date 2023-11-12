@@ -53,7 +53,7 @@ headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts||feedback-gern
   (gerne auch als Voice Message)
 image: /images/podcast/episode/62-technologien-konsolidieren-oder-wie-startups-sammeln.jpg
 length_second: 4100
-pubDate: 2023-03-14
+pubDate: 2023-03-14 05:00:00+00:00
 rtlplus: ''
 speaker:
 - name: Andy Grunwald

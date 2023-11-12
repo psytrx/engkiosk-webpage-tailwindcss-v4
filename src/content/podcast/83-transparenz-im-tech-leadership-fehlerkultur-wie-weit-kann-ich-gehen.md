@@ -51,7 +51,7 @@ headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts||feedback-gern
   (gerne auch als Voice Message)
 image: /images/podcast/episode/83-transparenz-im-tech-leadership-fehlerkultur-wie-weit-kann-ich-gehen.jpg
 length_second: 3864
-pubDate: 2023-08-08
+pubDate: 2023-08-08 04:00:00+00:00
 rtlplus: ''
 speaker:
 - name: Andy Grunwald

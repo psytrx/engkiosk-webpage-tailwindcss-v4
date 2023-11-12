@@ -50,7 +50,7 @@ headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts||feedback-gern
   (gerne auch als Voice Message)
 image: /images/podcast/episode/32-die-richtigen-leute-anstellen-die-recruiting-pipeline.jpg
 length_second: 3868
-pubDate: 2022-08-16
+pubDate: 2022-08-16 04:00:00+00:00
 rtlplus: ''
 speaker:
 - name: Andy Grunwald

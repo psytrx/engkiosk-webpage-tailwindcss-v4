@@ -68,7 +68,7 @@ headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts||feedback-gern
   (gerne auch als Voice Message)
 image: /images/podcast/episode/49-die-zukunft-software-repository-mining.jpg
 length_second: 3295
-pubDate: 2022-12-13
+pubDate: 2022-12-13 05:00:00+00:00
 rtlplus: ''
 speaker:
 - name: Andy Grunwald

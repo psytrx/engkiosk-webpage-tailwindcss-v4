@@ -59,7 +59,7 @@ headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts||feedback-gern
   (gerne auch als Voice Message)
 image: /images/podcast/episode/40-wie-wird-man-und-frau-zum-senior-dev.jpg
 length_second: 2983
-pubDate: 2022-10-11
+pubDate: 2022-10-11 04:00:00+00:00
 rtlplus: ''
 speaker:
 - name: Andy Grunwald

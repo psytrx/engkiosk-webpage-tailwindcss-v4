@@ -80,7 +80,7 @@ headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts||feedback-gern
   (gerne auch als Voice Message)
 image: "/images/podcast/episode/81-copilot-ai-im-dev-test-produktivit\xE4ts-boost-oder-nur-hype.jpg"
 length_second: 4052
-pubDate: 2023-07-25
+pubDate: 2023-07-25 04:00:00+00:00
 rtlplus: ''
 speaker:
 - name: Andy Grunwald

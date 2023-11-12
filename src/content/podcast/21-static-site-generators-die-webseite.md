@@ -49,7 +49,7 @@ google_podcasts: https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5yZWRjaXJjbG
 headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts
 image: /images/podcast/episode/21-static-site-generators-die-webseite.jpg
 length_second: 3214
-pubDate: 2022-05-31
+pubDate: 2022-05-31 04:35:00+00:00
 rtlplus: ''
 speaker:
 - name: Andy Grunwald

@@ -56,7 +56,7 @@ headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts||feedback-gern
   (gerne auch als Voice Message)
 image: /images/podcast/episode/80-junior-devs-steckt-das-wahre-potential-in-unerfahrenen-talenten.jpg
 length_second: 4077
-pubDate: 2023-07-18
+pubDate: 2023-07-18 07:07:16+00:00
 rtlplus: ''
 speaker:
 - name: Andy Grunwald

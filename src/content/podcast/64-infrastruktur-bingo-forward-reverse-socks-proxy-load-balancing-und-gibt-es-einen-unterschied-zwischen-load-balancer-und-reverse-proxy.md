@@ -55,7 +55,7 @@ headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts||feedback-gern
   (gerne auch als Voice Message)
 image: /images/podcast/episode/64-infrastruktur-bingo-forward-reverse-socks-proxy-load-balancing-und-gibt-es-einen-unterschied-zwischen-load-balancer-und-reverse-proxy.jpg
 length_second: 3417
-pubDate: 2023-03-28
+pubDate: 2023-03-28 03:00:00+00:00
 rtlplus: ''
 speaker:
 - name: Andy Grunwald

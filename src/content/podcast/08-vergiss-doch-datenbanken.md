@@ -60,7 +60,7 @@ google_podcasts: https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5yZWRjaXJjbG
 headlines: "links::Links||erwahnte-personen::Erw\xE4hnte Personen||sprungmarken::Sprungmarken||hosts::Hosts"
 image: /images/podcast/episode/08-vergiss-doch-datenbanken.jpg
 length_second: 3167
-pubDate: 2022-03-01
+pubDate: 2022-03-01 11:30:00+00:00
 rtlplus: ''
 speaker:
 - name: Andy Grunwald

@@ -58,7 +58,7 @@ headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts||feedback-gern
 image: "/images/podcast/episode/31-ich-automatisiere-mir-die-welt-wie-sie-mir-gef\xE4\
   llt-mit-github-actions.jpg"
 length_second: 3675
-pubDate: 2022-08-09
+pubDate: 2022-08-09 04:00:00+00:00
 rtlplus: ''
 speaker:
 - name: Andy Grunwald

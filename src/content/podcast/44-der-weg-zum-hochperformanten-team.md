@@ -54,7 +54,7 @@ headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts||feedback-gern
   (gerne auch als Voice Message)
 image: /images/podcast/episode/44-der-weg-zum-hochperformanten-team.jpg
 length_second: 3380
-pubDate: 2022-11-08
+pubDate: 2022-11-08 05:00:00+00:00
 rtlplus: ''
 speaker:
 - name: Andy Grunwald

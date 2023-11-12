@@ -59,7 +59,7 @@ headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts||feedback-gern
   (gerne auch als Voice Message)
 image: "/images/podcast/episode/41-sql-injections-ein-untersch\xE4tztes-risiko.jpg"
 length_second: 4117
-pubDate: 2022-10-18
+pubDate: 2022-10-18 04:00:00+00:00
 rtlplus: ''
 speaker:
 - name: Andy Grunwald

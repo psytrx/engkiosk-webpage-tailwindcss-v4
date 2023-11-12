@@ -53,7 +53,7 @@ headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts||feedback-gern
   (gerne auch als Voice Message)
 image: /images/podcast/episode/34-wie-cloudy-bist-du.jpg
 length_second: 2959
-pubDate: 2022-08-30
+pubDate: 2022-08-30 04:00:00+00:00
 rtlplus: ''
 speaker:
 - name: Andy Grunwald

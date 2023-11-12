@@ -53,7 +53,7 @@ google_podcasts: https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5yZWRjaXJjbG
 headlines: "sprungmarken::Sprungmarken||erwahnte-personen::Erw\xE4hnte Personen||hosts::Hosts"
 image: "/images/podcast/episode/01-side-projects-fluch-oder-segen-f\xFCr-die-karriere.jpg"
 length_second: 2782
-pubDate: 2022-01-03
+pubDate: 2022-01-03 12:00:00+00:00
 rtlplus: ''
 speaker:
 - name: Andy Grunwald

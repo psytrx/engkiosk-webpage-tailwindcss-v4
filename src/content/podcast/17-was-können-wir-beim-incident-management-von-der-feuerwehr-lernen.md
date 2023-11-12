@@ -83,7 +83,7 @@ google_podcasts: https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5yZWRjaXJjbG
 headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts
 image: "/images/podcast/episode/17-was-k\xF6nnen-wir-beim-incident-management-von-der-feuerwehr-lernen.jpg"
 length_second: 4174
-pubDate: 2022-05-03
+pubDate: 2022-05-03 04:00:00+00:00
 rtlplus: ''
 speaker:
 - name: Andy Grunwald

@@ -51,7 +51,7 @@ headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts||feedback-gern
   (gerne auch als Voice Message)
 image: /images/podcast/episode/74-rest-das-oft-falsch-verstandene-architektur-paradigma.jpg
 length_second: 3775
-pubDate: 2023-06-06
+pubDate: 2023-06-06 04:00:00+00:00
 rtlplus: ''
 speaker:
 - name: Andy Grunwald

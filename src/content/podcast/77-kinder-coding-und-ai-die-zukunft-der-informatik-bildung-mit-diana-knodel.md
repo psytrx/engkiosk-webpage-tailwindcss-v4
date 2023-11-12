@@ -85,7 +85,7 @@ headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts||feedback-gern
   (gerne auch als Voice Message)
 image: /images/podcast/episode/77-kinder-coding-und-ai-die-zukunft-der-informatik-bildung-mit-diana-knodel.jpg
 length_second: 3678
-pubDate: 2023-06-27
+pubDate: 2023-06-27 04:00:00+00:00
 rtlplus: ''
 speaker:
 - name: Andy Grunwald

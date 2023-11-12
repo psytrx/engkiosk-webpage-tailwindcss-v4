@@ -54,7 +54,7 @@ headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts||feedback-gern
   (gerne auch als Voice Message)
 image: /images/podcast/episode/65-clean-code-macht-software-langsam.jpg
 length_second: 3357
-pubDate: 2023-04-04
+pubDate: 2023-04-04 04:00:00+00:00
 rtlplus: ''
 speaker:
 - name: Andy Grunwald

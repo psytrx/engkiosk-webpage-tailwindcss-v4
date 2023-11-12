@@ -73,7 +73,7 @@ headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts||feedback-gern
   (gerne auch als Voice Message)
 image: /images/podcast/episode/29-die-andere-seite-meetups-konferenzen-organisieren.jpg
 length_second: 4128
-pubDate: 2022-07-26
+pubDate: 2022-07-26 04:00:00+00:00
 rtlplus: ''
 speaker:
 - name: Andy Grunwald

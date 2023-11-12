@@ -58,7 +58,7 @@ headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts||feedback-gern
   (gerne auch als Voice Message)
 image: /images/podcast/episode/69-mysql-vs-mariadb.jpg
 length_second: 4259
-pubDate: 2023-05-02
+pubDate: 2023-05-02 04:00:00+00:00
 rtlplus: ''
 speaker:
 - name: Andy Grunwald

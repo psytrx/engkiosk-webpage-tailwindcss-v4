@@ -66,7 +66,7 @@ headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts||feedback-gern
 image: "/images/podcast/episode/30-ist-ein-informatikstudium-sinnvoll-welche-ausbildung-f\xFC\
   r-devs.jpg"
 length_second: 3936
-pubDate: 2022-08-02
+pubDate: 2022-08-02 04:00:00+00:00
 rtlplus: ''
 speaker:
 - name: Andy Grunwald

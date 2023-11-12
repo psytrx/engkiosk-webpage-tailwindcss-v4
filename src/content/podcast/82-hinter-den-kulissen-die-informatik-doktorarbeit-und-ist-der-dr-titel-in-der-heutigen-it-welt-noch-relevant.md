@@ -62,7 +62,7 @@ headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts||feedback-gern
   (gerne auch als Voice Message)
 image: /images/podcast/episode/82-hinter-den-kulissen-die-informatik-doktorarbeit-und-ist-der-dr-titel-in-der-heutigen-it-welt-noch-relevant.jpg
 length_second: 4189
-pubDate: 2023-08-01
+pubDate: 2023-08-01 04:00:00+00:00
 rtlplus: ''
 speaker:
 - name: Andy Grunwald

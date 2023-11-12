@@ -55,7 +55,7 @@ headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts||feedback-gern
   (gerne auch als Voice Message)
 image: /images/podcast/episode/35-knowledge-sharing-oder-die-person-die-nie-gehen-sollte.jpg
 length_second: 3784
-pubDate: 2022-09-06
+pubDate: 2022-09-06 04:00:00+00:00
 rtlplus: ''
 speaker:
 - name: Andy Grunwald

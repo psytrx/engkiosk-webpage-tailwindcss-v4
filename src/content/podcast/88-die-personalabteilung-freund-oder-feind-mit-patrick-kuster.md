@@ -66,7 +66,7 @@ headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts||feedback-gern
   (gerne auch als Voice Message)
 image: /images/podcast/episode/88-die-personalabteilung-freund-oder-feind-mit-patrick-kuster.jpg
 length_second: 4600
-pubDate: 2023-09-12
+pubDate: 2023-09-12 04:00:00+00:00
 rtlplus: ''
 speaker:
 - name: Andy Grunwald

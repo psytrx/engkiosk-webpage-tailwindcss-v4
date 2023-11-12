@@ -64,7 +64,7 @@ headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts||feedback-gern
 image: "/images/podcast/episode/84-die-evolution-von-javascript-vom-ducktyping-zum-monopol-im-browser-mit-peter-kr\xF6\
   ner.jpg"
 length_second: 5219
-pubDate: 2023-08-15
+pubDate: 2023-08-15 04:00:00+00:00
 rtlplus: ''
 speaker:
 - name: Andy Grunwald

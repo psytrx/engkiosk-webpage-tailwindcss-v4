@@ -60,7 +60,7 @@ google_podcasts: https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5yZWRjaXJjbG
 headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts
 image: /images/podcast/episode/23-schaltest-du-noch-oder-automatisiert-du-schon-home-automation.jpg
 length_second: 3812
-pubDate: 2022-06-14
+pubDate: 2022-06-14 04:00:00+00:00
 rtlplus: ''
 speaker:
 - name: Andy Grunwald

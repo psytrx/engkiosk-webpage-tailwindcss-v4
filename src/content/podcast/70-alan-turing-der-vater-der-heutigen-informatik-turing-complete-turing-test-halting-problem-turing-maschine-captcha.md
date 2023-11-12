@@ -40,7 +40,7 @@ headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts||feedback-gern
   (gerne auch als Voice Message)
 image: /images/podcast/episode/70-alan-turing-der-vater-der-heutigen-informatik-turing-complete-turing-test-halting-problem-turing-maschine-captcha.jpg
 length_second: 3419
-pubDate: 2023-05-09
+pubDate: 2023-05-09 04:00:00+00:00
 rtlplus: ''
 speaker:
 - name: Andy Grunwald

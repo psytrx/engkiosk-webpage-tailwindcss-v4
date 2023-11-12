@@ -54,7 +54,7 @@ headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts||feedback-gern
   (gerne auch als Voice Message)
 image: "/images/podcast/episode/57-servant-leadership-f\xFChrungsstil-der-neuen-generation.jpg"
 length_second: 3462
-pubDate: 2023-02-07
+pubDate: 2023-02-07 05:00:00+00:00
 rtlplus: ''
 speaker:
 - name: Andy Grunwald

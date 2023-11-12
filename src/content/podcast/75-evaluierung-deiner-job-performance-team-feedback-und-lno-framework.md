@@ -59,7 +59,7 @@ headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts||feedback-gern
   (gerne auch als Voice Message)
 image: /images/podcast/episode/75-evaluierung-deiner-job-performance-team-feedback-und-lno-framework.jpg
 length_second: 3699
-pubDate: 2023-06-13
+pubDate: 2023-06-13 04:00:00+00:00
 rtlplus: ''
 speaker:
 - name: Andy Grunwald

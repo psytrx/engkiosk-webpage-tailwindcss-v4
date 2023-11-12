@@ -67,7 +67,7 @@ headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts||feedback-gern
 image: "/images/podcast/episode/54-key-value-store-redis-einsatzm\xF6glichkeiten-fallstricke-datenstrukturen-hyperloglog-und-fl\xFC\
   chtige-persistenz.jpg"
 length_second: 3727
-pubDate: 2023-01-17
+pubDate: 2023-01-17 05:00:00+00:00
 rtlplus: ''
 speaker:
 - name: Andy Grunwald

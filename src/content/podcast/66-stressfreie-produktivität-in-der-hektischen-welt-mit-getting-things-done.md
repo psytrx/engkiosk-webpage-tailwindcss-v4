@@ -47,7 +47,7 @@ headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts||feedback-gern
   (gerne auch als Voice Message)
 image: "/images/podcast/episode/66-stressfreie-produktivit\xE4t-in-der-hektischen-welt-mit-getting-things-done.jpg"
 length_second: 3660
-pubDate: 2023-04-11
+pubDate: 2023-04-11 04:00:00+00:00
 rtlplus: ''
 speaker:
 - name: Andy Grunwald

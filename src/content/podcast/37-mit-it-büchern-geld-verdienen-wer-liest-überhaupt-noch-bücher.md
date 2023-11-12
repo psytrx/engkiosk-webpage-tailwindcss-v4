@@ -68,7 +68,7 @@ headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts||feedback-gern
 image: "/images/podcast/episode/37-mit-it-b\xFCchern-geld-verdienen-wer-liest-\xFC\
   berhaupt-noch-b\xFCcher.jpg"
 length_second: 3621
-pubDate: 2022-09-20
+pubDate: 2022-09-20 04:00:00+00:00
 rtlplus: ''
 speaker:
 - name: Andy Grunwald

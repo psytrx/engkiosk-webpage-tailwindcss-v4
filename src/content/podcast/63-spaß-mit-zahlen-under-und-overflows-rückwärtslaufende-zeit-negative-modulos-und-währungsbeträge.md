@@ -55,7 +55,7 @@ headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts||feedback-gern
 image: "/images/podcast/episode/63-spa\xDF-mit-zahlen-under-und-overflows-r\xFCckw\xE4\
   rtslaufende-zeit-negative-modulos-und-w\xE4hrungsbetr\xE4ge.jpg"
 length_second: 3667
-pubDate: 2023-03-21
+pubDate: 2023-03-21 04:00:00+00:00
 rtlplus: ''
 speaker:
 - name: Andy Grunwald

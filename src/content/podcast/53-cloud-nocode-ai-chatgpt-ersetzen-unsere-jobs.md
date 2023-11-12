@@ -34,7 +34,7 @@ headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts||feedback-gern
   (gerne auch als Voice Message)
 image: /images/podcast/episode/53-cloud-nocode-ai-chatgpt-ersetzen-unsere-jobs.jpg
 length_second: 3959
-pubDate: 2023-01-10
+pubDate: 2023-01-10 05:00:00+00:00
 rtlplus: ''
 speaker:
 - name: Andy Grunwald

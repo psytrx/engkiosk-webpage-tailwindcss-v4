@@ -58,7 +58,7 @@ headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts||feedback-gern
   (gerne auch als Voice Message)
 image: "/images/podcast/episode/50-dei-erh\xF6ht-innovation-und-den-finanziellen-erfolg.jpg"
 length_second: 3450
-pubDate: 2022-12-20
+pubDate: 2022-12-20 05:00:00+00:00
 rtlplus: ''
 speaker:
 - name: Andy Grunwald

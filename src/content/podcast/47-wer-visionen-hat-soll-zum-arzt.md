@@ -66,7 +66,7 @@ headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts||feedback-gern
   (gerne auch als Voice Message)
 image: /images/podcast/episode/47-wer-visionen-hat-soll-zum-arzt.jpg
 length_second: 2633
-pubDate: 2022-11-29
+pubDate: 2022-11-29 04:00:00+00:00
 rtlplus: ''
 speaker:
 - name: Andy Grunwald

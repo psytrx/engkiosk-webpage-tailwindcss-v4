@@ -54,7 +54,7 @@ headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts||feedback-gern
   (gerne auch als Voice Message)
 image: /images/podcast/episode/59-kann-man-mit-open-source-geld-verdienen.jpg
 length_second: 3251
-pubDate: 2023-02-21
+pubDate: 2023-02-21 05:00:00+00:00
 rtlplus: ''
 speaker:
 - name: Andy Grunwald

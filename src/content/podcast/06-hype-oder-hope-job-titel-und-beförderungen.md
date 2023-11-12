@@ -45,7 +45,7 @@ google_podcasts: https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5yZWRjaXJjbG
 headlines: "links::Links||erwahnte-personen::Erw\xE4hnte Personen||sprungmarken::Sprungmarken||hosts::Hosts"
 image: "/images/podcast/episode/06-hype-oder-hope-job-titel-und-bef\xF6rderungen.jpg"
 length_second: 3133
-pubDate: 2022-02-15
+pubDate: 2022-02-15 05:00:00+00:00
 rtlplus: ''
 speaker:
 - name: Andy Grunwald

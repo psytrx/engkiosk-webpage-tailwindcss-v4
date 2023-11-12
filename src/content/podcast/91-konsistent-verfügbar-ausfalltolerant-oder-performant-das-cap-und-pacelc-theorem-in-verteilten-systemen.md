@@ -71,7 +71,7 @@ headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts||feedback-gern
   (gerne auch als Voice Message)
 image: "/images/podcast/episode/91-konsistent-verf\xFCgbar-ausfalltolerant-oder-performant-das-cap-und-pacelc-theorem-in-verteilten-systemen.jpg"
 length_second: 3461
-pubDate: 2023-10-03
+pubDate: 2023-10-03 04:00:00+00:00
 rtlplus: ''
 speaker:
 - name: Andy Grunwald

@@ -61,7 +61,7 @@ headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts||feedback-gern
   (gerne auch als Voice Message)
 image: /images/podcast/episode/76-mit-open-source-100000-verdienen-sponsorware-und-plattform-risiken-bei-github-mit-martin-donath.jpg
 length_second: 4694
-pubDate: 2023-06-20
+pubDate: 2023-06-20 04:00:00+00:00
 rtlplus: ''
 speaker:
 - name: Andy Grunwald

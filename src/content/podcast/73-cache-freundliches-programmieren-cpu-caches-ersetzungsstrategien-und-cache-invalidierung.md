@@ -45,7 +45,7 @@ headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts||feedback-gern
   (gerne auch als Voice Message)
 image: /images/podcast/episode/73-cache-freundliches-programmieren-cpu-caches-ersetzungsstrategien-und-cache-invalidierung.jpg
 length_second: 3583
-pubDate: 2023-05-30
+pubDate: 2023-05-30 04:00:00+00:00
 rtlplus: ''
 speaker:
 - name: Andy Grunwald

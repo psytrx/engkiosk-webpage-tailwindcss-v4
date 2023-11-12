@@ -94,7 +94,7 @@ headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts||feedback-gern
   (gerne auch als Voice Message)
 image: "/images/podcast/episode/94-die-realit\xE4t-des-freelancings-zwischen-selbstbestimmung-und-unsicherheit-mit-index-out-of-bounds.jpg"
 length_second: 5247
-pubDate: 2023-10-24
+pubDate: 2023-10-24 04:00:00+00:00
 rtlplus: ''
 speaker:
 - name: Andy Grunwald

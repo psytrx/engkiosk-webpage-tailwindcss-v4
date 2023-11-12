@@ -45,7 +45,7 @@ headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts||feedback-gern
   (gerne auch als Voice Message)
 image: /images/podcast/episode/55-weiterbildung-zertifizierung-newsletter-konferenzen-wie-warum-und-wer-zahlt-das-ganze.jpg
 length_second: 3621
-pubDate: 2023-01-24
+pubDate: 2023-01-24 05:00:00+00:00
 rtlplus: ''
 speaker:
 - name: Andy Grunwald

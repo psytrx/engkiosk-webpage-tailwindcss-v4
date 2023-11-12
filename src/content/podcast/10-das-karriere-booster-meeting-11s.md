@@ -46,7 +46,7 @@ google_podcasts: https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5yZWRjaXJjbG
 headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts
 image: /images/podcast/episode/10-das-karriere-booster-meeting-11s.jpg
 length_second: 2756
-pubDate: 2022-03-15
+pubDate: 2022-03-15 05:30:00+00:00
 rtlplus: ''
 speaker:
 - name: Andy Grunwald

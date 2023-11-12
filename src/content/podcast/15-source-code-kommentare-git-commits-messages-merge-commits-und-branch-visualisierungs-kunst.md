@@ -73,7 +73,7 @@ google_podcasts: https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5yZWRjaXJjbG
 headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts
 image: /images/podcast/episode/15-source-code-kommentare-git-commits-messages-merge-commits-und-branch-visualisierungs-kunst.jpg
 length_second: 3904
-pubDate: 2022-04-19
+pubDate: 2022-04-19 04:30:00+00:00
 rtlplus: ''
 speaker:
 - name: Andy Grunwald

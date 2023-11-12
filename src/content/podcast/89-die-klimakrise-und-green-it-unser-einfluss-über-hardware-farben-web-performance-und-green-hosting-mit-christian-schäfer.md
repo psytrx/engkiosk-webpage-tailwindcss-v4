@@ -61,7 +61,7 @@ headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts||feedback-gern
 image: "/images/podcast/episode/89-die-klimakrise-und-green-it-unser-einfluss-\xFC\
   ber-hardware-farben-web-performance-und-green-hosting-mit-christian-sch\xE4fer.jpg"
 length_second: 4563
-pubDate: 2023-09-19
+pubDate: 2023-09-19 04:00:00+00:00
 rtlplus: ''
 speaker:
 - name: Andy Grunwald

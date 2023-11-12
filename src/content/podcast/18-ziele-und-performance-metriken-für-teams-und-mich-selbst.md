@@ -64,7 +64,7 @@ google_podcasts: https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5yZWRjaXJjbG
 headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts
 image: "/images/podcast/episode/18-ziele-und-performance-metriken-f\xFCr-teams-und-mich-selbst.jpg"
 length_second: 4248
-pubDate: 2022-05-10
+pubDate: 2022-05-10 04:30:00+00:00
 rtlplus: ''
 speaker:
 - name: Andy Grunwald

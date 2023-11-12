@@ -35,7 +35,7 @@ headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts||feedback-gern
   (gerne auch als Voice Message)
 image: /images/podcast/episode/-1-wrap-up-2022-und-1-geburtstag-learnings-statistiken-und-was-2023-geplant-ist.jpg
 length_second: 1847
-pubDate: 2023-01-05
+pubDate: 2023-01-05 05:00:00+00:00
 rtlplus: ''
 speaker:
 - name: Andy Grunwald

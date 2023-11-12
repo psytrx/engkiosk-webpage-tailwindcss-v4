@@ -66,7 +66,7 @@ google_podcasts: https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5yZWRjaXJjbG
 headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts
 image: "/images/podcast/episode/28-o1-olog-n-on2-ist-die-komplexit\xE4t-von-algorithmen-im-entwickler-alltag-relevant.jpg"
 length_second: 3333
-pubDate: 2022-07-19
+pubDate: 2022-07-19 04:00:00+00:00
 rtlplus: ''
 speaker:
 - name: Andy Grunwald

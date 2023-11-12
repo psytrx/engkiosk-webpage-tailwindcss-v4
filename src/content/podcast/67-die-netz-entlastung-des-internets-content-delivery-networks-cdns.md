@@ -60,7 +60,7 @@ headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts||feedback-gern
   (gerne auch als Voice Message)
 image: /images/podcast/episode/67-die-netz-entlastung-des-internets-content-delivery-networks-cdns.jpg
 length_second: 4002
-pubDate: 2023-04-18
+pubDate: 2023-04-18 04:00:00+00:00
 rtlplus: ''
 speaker:
 - name: Andy Grunwald

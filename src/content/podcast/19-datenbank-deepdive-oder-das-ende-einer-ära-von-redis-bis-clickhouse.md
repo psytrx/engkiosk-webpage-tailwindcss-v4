@@ -77,7 +77,7 @@ google_podcasts: https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5yZWRjaXJjbG
 headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts
 image: "/images/podcast/episode/19-datenbank-deepdive-oder-das-ende-einer-\xE4ra-von-redis-bis-clickhouse.jpg"
 length_second: 3842
-pubDate: 2022-05-17
+pubDate: 2022-05-17 04:30:00+00:00
 rtlplus: ''
 speaker:
 - name: Andy Grunwald

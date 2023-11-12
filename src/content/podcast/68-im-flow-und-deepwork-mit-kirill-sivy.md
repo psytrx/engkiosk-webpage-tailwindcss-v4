@@ -62,7 +62,7 @@ headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts||feedback-gern
   (gerne auch als Voice Message)
 image: /images/podcast/episode/68-im-flow-und-deepwork-mit-kirill-sivy.jpg
 length_second: 4178
-pubDate: 2023-04-25
+pubDate: 2023-04-25 04:00:00+00:00
 rtlplus: ''
 speaker:
 - name: Andy Grunwald

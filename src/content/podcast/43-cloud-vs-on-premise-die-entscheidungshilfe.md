@@ -53,7 +53,7 @@ headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts||feedback-gern
   (gerne auch als Voice Message)
 image: /images/podcast/episode/43-cloud-vs-on-premise-die-entscheidungshilfe.jpg
 length_second: 4264
-pubDate: 2022-11-01
+pubDate: 2022-11-01 05:00:00+00:00
 rtlplus: ''
 speaker:
 - name: Andy Grunwald

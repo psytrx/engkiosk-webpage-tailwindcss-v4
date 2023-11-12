@@ -51,7 +51,7 @@ headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts||feedback-gern
   (gerne auch als Voice Message)
 image: /images/podcast/episode/93-barbara-liskov-das-l-in-solid-liskovsches-substitutionsprinzip-abstraktion.jpg
 length_second: 3161
-pubDate: 2023-10-17
+pubDate: 2023-10-17 04:00:00+00:00
 rtlplus: ''
 speaker:
 - name: Andy Grunwald

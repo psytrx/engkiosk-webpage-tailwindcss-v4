@@ -54,7 +54,7 @@ headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts||feedback-gern
   (gerne auch als Voice Message)
 image: /images/podcast/episode/58-software-updates-alte-software-long-term-support-und-end-of-life-dates.jpg
 length_second: 3399
-pubDate: 2023-02-14
+pubDate: 2023-02-14 05:00:00+00:00
 rtlplus: ''
 speaker:
 - name: Andy Grunwald
