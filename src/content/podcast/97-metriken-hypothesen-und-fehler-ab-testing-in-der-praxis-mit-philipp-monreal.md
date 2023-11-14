@@ -50,9 +50,8 @@ google_podcasts: ''
 headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts||feedback-gerne-auch-als-voice-message::Feedback
   (gerne auch als Voice Message)
 image: /images/podcast/episode/97-metriken-hypothesen-und-fehler-ab-testing-in-der-praxis-mit-philipp-monreal.jpg
-layout: ../../../layouts/podcast-episode.astro
 length_second: 4126
-pubDate: '2023-11-14'
+pubDate: 2023-11-14 05:00:00+00:00
 rtlplus: ''
 speaker:
 - name: Andy Grunwald
