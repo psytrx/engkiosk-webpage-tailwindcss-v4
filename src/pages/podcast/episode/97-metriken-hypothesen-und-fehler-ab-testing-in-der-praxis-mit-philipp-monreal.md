@@ -60,7 +60,10 @@ speaker:
 - name: Wolfi Gassler
   website: https://wolfgang.gassler.org/
 spotify: https://open.spotify.com/episode/2HBjOXro2pEmeuaIql76BQ
-tags: []
+tags:
+- Tech Kultur
+- Software Engineering
+- Interview
 title: '#97 Metriken, Hypothesen und Fehler: A/B-Testing in der Praxis mit Philipp
   Monreal'
 youtube: ''
