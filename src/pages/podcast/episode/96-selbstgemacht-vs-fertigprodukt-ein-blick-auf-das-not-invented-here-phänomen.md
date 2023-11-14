@@ -48,16 +48,16 @@ pubDate: '2023-11-07'
 rtlplus: ''
 speaker:
 - name: Andy Grunwald
-  website: https://andygrunwald.com/
   transcriptLetter: B
+  website: https://andygrunwald.com/
 - name: Wolfi Gassler
-  website: https://wolfgang.gassler.org/
   transcriptLetter: A
+  website: https://wolfgang.gassler.org/
 spotify: https://open.spotify.com/episode/6V9sXNoWh8iBcv3aukDWic
 tags:
 - Team
 - Software Engineering
-- Software Qualität
+- "Software Qualit\xE4t"
 title: "#96 Selbstgemacht vs. Fertigprodukt: Ein Blick auf das Not-Invented-Here-Ph\xE4\
   nomen"
 youtube: https://youtu.be/-NsoXayhb34
