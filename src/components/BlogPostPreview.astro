@@ -1,6 +1,8 @@
 ---
+import type { CollectionEntry } from 'astro:content';
+
 export interface Props {
-	post: any;
+	post: CollectionEntry<'blog'>;
 	n: number;
 }
 
