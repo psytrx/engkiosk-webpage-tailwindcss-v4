@@ -15,7 +15,7 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 
 let title = ''.concat(content.title, ' - Engineering Kiosk');
 
-let encodedUrl = encodeURI(canonicalURL);
+let encodedUrl = encodeURI(canonicalURL.toString());
 
 let social_text = 'Den Blog-Post vom Engineering Kiosk fand ich ganz interessant. Schau doch mal rein und lass mich wissen, was du darüber denkst: ' + content.title;
 let encoded_social_text = encodeURI(social_text);
