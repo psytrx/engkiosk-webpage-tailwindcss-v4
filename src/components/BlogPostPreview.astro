@@ -11,7 +11,7 @@ import { formatDate } from '../scripts/date.js';
 import '../styles/blogpost-preview.scss';
 
 const { post, n } = Astro.props;
-const { frontmatter } = post;
+const { data } = post;
 
 // n represents the number of the post to display.
 // Why does this matter?
@@ -34,21 +34,21 @@ switch (n) {
 		cssClass = 'mb-8';
 }
 
-let tags = frontmatter.tags.map((element) => URLify(element));
+let tags = data.tags.map((element) => URLify(element));
 ---
 
 <div class={`w-full md:w-1/2 lg:w-1/3 px-4 ${cssClass}`}>
-	<a class="block mb-6 overflow-hidden rounded-md" href={post.url}>
-		<img class="w-full" src={frontmatter.thumbnail} alt={frontmatter.title} title={frontmatter.title} />
+	<a class="block mb-6 overflow-hidden rounded-md" href={`/blog/post/${post.slug}/`}>
+		<img class="w-full" src={data.thumbnail} alt={data.title} title={data.title} />
 	</a>
 	<p class="mb-2 text-coolGray-500 font-medium">
-		<time class="date" datetime={frontmatter.pubDate}>{formatDate(frontmatter.pubDate)}</time>
+		<time class="date" datetime={data.pubDate}>{formatDate(data.pubDate)}</time>
 	</p>
-	<a class="inline-block mb-4 text-2xl leading-tight text-coolGray-800 hover:text-coolGray-900 font-bold hover:underline" href={post.url}>
-		{frontmatter.title}
+	<a class="inline-block mb-4 text-2xl leading-tight text-coolGray-800 hover:text-coolGray-900 font-bold hover:underline" href={`/blog/post/${post.slug}/`}>
+		{data.title}
 	</a>
 	<span class="text">
-		<Markdown content={frontmatter.description} />
+		<Markdown content={data.description} />
 	</span>
 	{
 		tags.map((element) => (

@@ -9,7 +9,7 @@ import frontmatter
 
 # Global variables
 PODCAST_CONTENT_FILES = 'src/content/podcast'
-BLOGPOST_CONTENT_FILES = 'src/pages/blog/post'
+BLOGPOST_CONTENT_FILES = 'src/content/blog'
 GERMAN_TECH_PODCAST_DATA = 'src/data/german-tech-podcasts.json'
 TAG_FILE_CONTENT = 'src/data/tags.json'
 TAG_FILE_GERMAN_TECH_PODCASTS = 'src/data/german-tech-podcasts-tags.json'

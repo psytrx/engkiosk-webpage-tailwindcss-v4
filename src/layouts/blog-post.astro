@@ -9,7 +9,8 @@ import { formatDate } from '../scripts/date.js';
 
 import '../styles/blogpost.scss';
 
-const { content } = Astro.props;
+const { post } = Astro.props;
+const content = post.data;
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 
 let title = ''.concat(content.title, ' - Engineering Kiosk');
