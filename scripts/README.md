@@ -62,7 +62,7 @@ Commit. Deploy. And enjoy the transcription on the website.
 
 ```sh
 ASSEMBLYAI_API_KEY="<API KEY>" python transcribe_audio_file.py --url https://my.file.com/foo.mp3 --speaker 3
-``````
+```
 
 ## Script `podcast_feed_to_content.py`
 

@@ -3,8 +3,8 @@ import { getCollection } from 'astro:content';
 
 // Docs: https://docs.astro.build/en/guides/rss/
 export async function GET(context) {
-	const blogPosts = await getCollection("blog");
-	const podcastEpisodes = await getCollection("podcast");
+	const blogPosts = await getCollection('blog');
+	const podcastEpisodes = await getCollection('podcast');
 
 	let rssItems = blogPosts.map((post) => ({
 		title: post.data.title,
@@ -13,12 +13,12 @@ export async function GET(context) {
 		link: `/posts/${post.slug}/`,
 	}));
 
-	podcastEpisodes.map(function(episode) {
+	podcastEpisodes.map(function (episode) {
 		rssItems.push({
 			title: episode.data.title,
 			pubDate: episode.data.pubDate,
 			description: episode.data.description,
-			link: `/podcast/episode/${episode.slug}/`
+			link: `/podcast/episode/${episode.slug}/`,
 		});
 	});
 
