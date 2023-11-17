@@ -10,11 +10,11 @@ const { episode } = Astro.props;
 
 let episodeString = episode.toString();
 
-// TODO Query collection
-let episodeFiles = await getCollection("podcast");
-let episodes = episodeFiles.filter((item) => item.id.includes(`${episodeString}-`));
-let content = episodes[0];
-let data = content.data;
+const episodes = await getCollection("podcast", ({ id }) => {
+  return id.startsWith(`${episodeString}-`);
+});
+const content = episodes[0];
+const data = content.data;
 
 const description = cutText(data.description, 200);
 ---
