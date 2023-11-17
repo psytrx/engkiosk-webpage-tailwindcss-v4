@@ -10,6 +10,13 @@ import { URLify } from '../scripts/urlify.js';
 import { cutText } from '../scripts/strings.js';
 import { formatDateWithoutWeekday } from '../scripts/date.js';
 
+// Testimonials images
+import testimonialLuiseHaack from "../images/testimonials/luise-haack.jpeg";
+import testimonialPascalLandau from "../images/testimonials/pascal-landau.jpeg";
+import testimonialSaskiaKeil from "../images/testimonials/saskia-keil.png";
+import testimonialSebastianHammerl from "../images/testimonials/sebastian-hammerl.jpg";
+import testimonialYanivPreiss from "../images/testimonials/yaniv-preiss.jpeg";
+
 import podcastInfo from '../data/podcast-info.json';
 
 let title = 'Engineering Kiosk - Der Software-Engineering-Podcast';
@@ -188,7 +195,7 @@ let currentEpisodeDescription = cutText(episode.data.description, 170);
 									Der Engineering Kiosk Podcast ist großartig - verschiedene interessante Themen, einfach erklärt dennoch von hoher Qualität. Diese zeichnet sich u.a. aus durch tiefe Unterhaltungen, Beispiele und Erklärungen.
 								</h3>
 								<div class="flex items-center py-8 pl-4 pr-2">
-									<img class="w-20 md:w-24 h-20 md:h-24 mr-6 rounded-full" src="/images/testimonials/yaniv-preiss.jpeg" alt="Yaniv Preiss" title="Yaniv Preiss" />
+									<Image class="w-20 md:w-24 h-20 md:h-24 mr-6 rounded-full" src={testimonialYanivPreiss} alt="Yaniv Preiss" title="Yaniv Preiss" />
 									<div>
 										<h4 class="mb-1 text-lg font-semibold">Yaniv Preiss</h4>
 										<p class="text-lg text-coolGray-400">Head Of Engineering, NewStore</p>
@@ -202,7 +209,7 @@ let currentEpisodeDescription = cutText(episode.data.description, 170);
 									Podcast mit aktuellen und interkulturellem Witz über IT- und Führungsfragen. Was ich höre, lässt mich meine Rolle als Führungskraft reflektieren und hilft mir Ratschläge als Karrierecoach für Studierende auf ihre Relevanz abzuchecken.
 								</h3>
 								<div class="flex items-center py-8 pl-4 pr-2">
-									<img class="w-20 md:w-24 h-20 md:h-24 mr-6 rounded-full" src="/images/testimonials/luise-haack.jpeg" alt="Luise Haack" title="Luise Haack" />
+									<Image class="w-20 md:w-24 h-20 md:h-24 mr-6 rounded-full" src={testimonialLuiseHaack} alt="Luise Haack" title="Luise Haack" />
 									<div>
 										<h4 class="mb-1 text-lg font-semibold">Luise Haack</h4>
 										<p class="text-lg text-coolGray-400">Referatsleiterin, Uni Passau</p>
@@ -214,7 +221,7 @@ let currentEpisodeDescription = cutText(episode.data.description, 170);
 							<div class="flex flex-col h-full bg-white shadow-md rounded-md">
 								<h3 class="pb-14 mb-auto p-8 text-xl text-coolGray-500 leading-loose font-medium">Ein entspannter Podcast, der sich selber auch nicht zu ernst nimmt. Insbesondere die Erfahrung von Andy & Wolfgang ist viel Wert und hilft mir in meiner Position als noch recht junger Techlead.</h3>
 								<div class="flex items-center py-8 pl-4 pr-2">
-									<img class="w-20 md:w-24 h-20 md:h-24 mr-6 rounded-full" src="/images/testimonials/saskia-keil.png" alt="Saskia Keil" title="Saskia Keil" />
+									<Image class="w-20 md:w-24 h-20 md:h-24 mr-6 rounded-full" src={testimonialSaskiaKeil} alt="Saskia Keil" title="Saskia Keil" />
 									<div>
 										<h4 class="mb-1 text-lg font-semibold">Saskia Keil</h4>
 										<p class="text-lg text-coolGray-400">Techlead, trivago</p>
@@ -228,7 +235,7 @@ let currentEpisodeDescription = cutText(episode.data.description, 170);
 									Jede Woche neue Ansichten und Eindrücke in die unterschiedlichsten Engineering- und Management-Themen. In den kurzweiligen Folgen regen mich Wolfgang und Andy zum Nachdenken an und holen mich aus meiner "Blase" heraus.
 								</h3>
 								<div class="flex items-center py-8 pl-4 pr-2">
-									<img class="w-20 md:w-24 h-20 md:h-24 mr-6 rounded-full" src="/images/testimonials/sebastian-hammerl.jpg" alt="Sebastian Hammerl" title="Sebastian Hammerl" />
+									<Image class="w-20 md:w-24 h-20 md:h-24 mr-6 rounded-full" src={testimonialSebastianHammerl} alt="Sebastian Hammerl" title="Sebastian Hammerl" />
 									<div>
 										<h4 class="mb-1 text-lg font-semibold">Sebastian Hammerl</h4>
 										<p class="text-lg text-coolGray-400">Leiter Software-Entwicklung, Getslash</p>
@@ -240,7 +247,7 @@ let currentEpisodeDescription = cutText(episode.data.description, 170);
 							<div class="flex flex-col h-full bg-white shadow-md rounded-md">
 								<h3 class="pb-14 mb-auto p-8 text-xl text-coolGray-500 leading-loose font-medium">Ich bin Hörer seit Episode #1 und von der Breite sowie Tiefe der Themen positiv überrascht. Nicht nur die Theorie wird diskutiert, sondern man merkt deutlich den Einfluss praktischer Erfahrungen.</h3>
 								<div class="flex items-center py-8 pl-4 pr-2">
-									<img class="w-20 md:w-24 h-20 md:h-24 mr-6 rounded-full" src="/images/testimonials/pascal-landau.jpeg" alt="Pascal Landau" title="Pascal Landau" />
+									<Image class="w-20 md:w-24 h-20 md:h-24 mr-6 rounded-full" src={testimonialPascalLandau} alt="Pascal Landau" title="Pascal Landau" />
 									<div>
 										<h4 class="mb-1 text-lg font-semibold">Pascal Landau</h4>
 										<p class="text-lg text-coolGray-400">Technical Director, ABOUT YOU</p>
