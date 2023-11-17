@@ -17,6 +17,9 @@ import testimonialSaskiaKeil from "../images/testimonials/saskia-keil.png";
 import testimonialSebastianHammerl from "../images/testimonials/sebastian-hammerl.jpg";
 import testimonialYanivPreiss from "../images/testimonials/yaniv-preiss.jpeg";
 
+// Header image
+import headerImageAndyWolfiLounge from "../images/headers/andy-grunwald-wolfgang-gassler-lounge.jpg";
+
 import podcastInfo from '../data/podcast-info.json';
 
 let title = 'Engineering Kiosk - Der Software-Engineering-Podcast';
@@ -77,7 +80,7 @@ let currentEpisodeDescription = cutText(episode.data.description, 170);
 								<div class="relative mx-auto md:mr-0 max-w-max">
 									<img class="absolute z-10 -left-14 -top-12 w-28 md:w-auto" src="/images/elements/circle3-red.svg" alt="Roter Kreis" />
 									<img class="absolute z-10 -right-7 -bottom-8 w-28 md:w-auto" src="/images/elements/dots3-green.svg" alt="Grüne Punkte" />
-									<img class="relative rounded-7xl" src="/images/headers/andy-grunwald-wolfgang-gassler-lounge.jpg" alt="Andy Grunwald und Wolfgang Gassler am 06. Februar 2023 in Duisburg" title="Andy Grunwald und Wolfgang Gassler am 06. Februar 2023 in Duisburg" />
+									<Image class="relative rounded-7xl" src={headerImageAndyWolfiLounge} alt="Die Podcast-Hosts Andy Grunwald und Wolfgang Gassler" title="Die Podcast-Hosts Andy Grunwald und Wolfgang Gassler" />
 								</div>
 							</div>
 						</div>
