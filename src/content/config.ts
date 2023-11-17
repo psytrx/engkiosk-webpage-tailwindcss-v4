@@ -38,14 +38,14 @@ const podcastEpisodeCollection = defineCollection({
 // Schema for Blog Entries
 const blogEntryCollection = defineCollection({
 	type: 'content',
-	schema: z.object({
+	schema: ({ image }) => z.object({
 		title: z.string(),
 		subtitle: z.string(),
 		description: z.string(),
 		tags: z.array(z.string()),
 		pubDate: z.date(),
-		thumbnail: z.string(),
-		headerimage: z.string(),
+		thumbnail: image(),
+		headerimage: image(),
 	}),
 });
 
