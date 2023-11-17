@@ -3,7 +3,7 @@ import { z, defineCollection } from 'astro:content';
 // Schema for Podcast Episodes
 const podcastEpisodeCollection = defineCollection({
 	type: 'content',
-	schema: z.object({
+	schema: ({ image }) => z.object({
 		amazon_music: z.string(),
 		apple_podcasts: z.string(),
 		audio: z.string(),
@@ -17,7 +17,7 @@ const podcastEpisodeCollection = defineCollection({
 		description: z.string(),
 		google_podcasts: z.string(),
 		headlines: z.string(),
-		image: z.string(),
+		image: image(),
 		length_second: z.number(),
 		pubDate: z.date(),
 		rtlplus: z.string(),
