@@ -1,12 +1,8 @@
 ---
 import { formatDateWithoutWeekday } from '../../scripts/date.js';
+import { getNextMeetups } from '../../scripts/meetups.js';
 
-// Build the list of Meetups
-let allMeetups = await Astro.glob('../../pages/meetup/alps/meetups/*.md');
-let upcomingMeetups = allMeetups.filter((meetup) => new Date(meetup.frontmatter.date) > new Date(new Date().setHours(23, 59, 59, 999)));
-upcomingMeetups.sort((a, b) => new Date(a.frontmatter.date).valueOf() - new Date(b.frontmatter.date).valueOf());
-
-let dates = upcomingMeetups.map((meetup) => meetup.frontmatter.date);
+let dates = getNextMeetups().slice(1).map((meetup) => meetup.date);
 
 ---
 <section class="py-4 md:py-24 bg-coolGray-50" style="background-image: url('/images/elements/pattern-light-big.svg'); background-position: center;">
@@ -31,7 +27,7 @@ let dates = upcomingMeetups.map((meetup) => meetup.frontmatter.date);
 		<div class="mb-16 text-center">
 			<h4 class="mb-4 text-xl md:text-xl leading-tight text-coolGray-900 font-bold tracking-tighter">Upcoming tentative meetups:</h4>
 			<p>
-				{dates.slice(1).map((date) =>
+				{dates.map((date) =>
 					<b>{formatDateWithoutWeekday(date, 'en-US')}</b><br/>
 				)}
 			<br/>
