@@ -42,7 +42,10 @@ PODCAST_APPLE_URL = "https://itunes.apple.com/lookup?id=1603082924&media=podcast
 SPOTIFY_SHOW_ID = "0tJRC0UsObPCWLmmzmOkIs"
 PODCAST_GOOGLE_URL = "https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5yZWRjaXJjbGUuY29tLzBlY2ZkZmQ3LWZkYTEtNGMzZC05NTE1LTQ3NjcyN2Y5ZGY1ZQ"
 DEEZER_PODCAST_ID = 3330122
-# TODO Add episode single view link retrieval for Amazon Music
+# Amazon Music is missing here.
+# We are adding this link manually, because there is no API available
+# and the HTML page of Amazon Music is full of async JavaScript.
+# Manual operations might be easier here.
 
 # From the Django project
 # See https://docs.djangoproject.com/en/2.1/_modules/django/utils/text/#slugify
@@ -110,8 +113,6 @@ def parse_headlines_from_html(raw_html):
     """
     We get HTML from the Podcast platforms Rich Text Editor.
     Often, this is not the best generated HTML, but yeah. Lets keep it for now.
-
-    TODO Link sprungmarken
     """
     html = raw_html
 
