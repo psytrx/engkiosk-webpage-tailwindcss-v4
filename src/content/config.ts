@@ -3,7 +3,7 @@ import { z, defineCollection } from 'astro:content';
 // Schema for Podcast Episodes
 const podcastEpisodeCollection = defineCollection({
 	type: 'content',
-	schema: z.object({
+	schema: ({ image }) => z.object({
 		amazon_music: z.string(),
 		apple_podcasts: z.string(),
 		audio: z.string(),
@@ -17,7 +17,7 @@ const podcastEpisodeCollection = defineCollection({
 		description: z.string(),
 		google_podcasts: z.string(),
 		headlines: z.string(),
-		image: z.string(),
+		image: image(),
 		length_second: z.number(),
 		pubDate: z.date(),
 		rtlplus: z.string(),
@@ -38,14 +38,14 @@ const podcastEpisodeCollection = defineCollection({
 // Schema for Blog Entries
 const blogEntryCollection = defineCollection({
 	type: 'content',
-	schema: z.object({
+	schema: ({ image }) => z.object({
 		title: z.string(),
 		subtitle: z.string(),
 		description: z.string(),
 		tags: z.array(z.string()),
 		pubDate: z.date(),
-		thumbnail: z.string(),
-		headerimage: z.string(),
+		thumbnail: image(),
+		headerimage: image(),
 	}),
 });
 

@@ -28,7 +28,7 @@ import deezer
 # Global variables
 PODCAST_RSS_FEED = "https://feeds.redcircle.com/0ecfdfd7-fda1-4c3d-9515-476727f9df5e"
 PATH_MARKDOWN_FILES = 'src/content/podcast'
-PATH_IMAGE_FILES = 'public/images/podcast/episode'
+PATH_IMAGE_FILES = 'src/content/podcast'
 TOML_FILE = 'netlify.toml'
 REDIRECT_PREFIX = '/episodes/'
 
