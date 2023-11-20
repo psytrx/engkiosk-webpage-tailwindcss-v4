@@ -7,6 +7,7 @@ import CompanyLogo from '../../../components/CompanyLogo.astro';
 import Newsletter from '../../../components/meetup-alps/Newsletter.astro';
 import Discord from '../../../components/meetup-alps/Discord.astro';
 import Team from '../../../components/meetup-alps/Team.astro';
+import { Image } from "astro:assets";
 
 import { formatDateWithoutWeekday, formatTime } from '../../../scripts/date.js';
 import { getNextMeetups } from '../../../scripts/meetups.js';
@@ -21,6 +22,8 @@ const dateAndTime = `${dateString} - open doors at ${timeString} (talks start ~1
 let title = 'Meetup Alps - Engineering Kiosk - Innsbruck';
 let description = `Tech Meetup in Innsbruck (Next: ${dateString}): Brings together tech enthusiasts, engineers, and professionals from various fields to explore the intersection of engineering culture, open source, people and technology.`;
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+
+const alpsImage = (await import('../../../images/meetup-alps/ibk.jpg')).default;
 
 ---
 
@@ -85,7 +88,7 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 								<div class="relative mx-auto md:mr-0 max-w-max">
 									<img class="absolute z-10 -left-14 -top-12 w-28 md:w-auto" src="/images/elements/circle3-red.svg" alt="Roter Kreis" />
 									<img class="absolute z-10 -right-7 -bottom-8 w-28 md:w-auto" src="/images/elements/dots3-green.svg" alt="Grüne Punkte" />
-									<img class="relative rounded-7xl" src="/meetup/alps/images/ibk.jpg" alt="View on Innsbruck" title="View on Innsbruck" />
+									<Image class="relative rounded-7xl" src={alpsImage} alt="View on Innsbruck" title="View on Innsbruck" />
 								</div>
 							</div>
 						</div>
