@@ -675,6 +675,4 @@ if __name__ == "__main__":
 
             sync_podcast_episodes(PODCAST_RSS_FEED, f"{folder_prefix}{PATH_MARKDOWN_FILES}", f"{folder_prefix}{PATH_IMAGE_FILES}", no_api_calls=args.no_api_calls, spotify_client=spotify_client)
         case "redirect":
-            # TODO Once Python 3.11 is out, replace toml library with stdlib
-            # See https://peps.python.org/pep-0680/
             create_redirects(TOML_FILE, PATH_MARKDOWN_FILES, REDIRECT_PREFIX)
