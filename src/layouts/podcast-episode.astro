@@ -19,7 +19,7 @@ const frontmatter = episode.data;
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 
-let content_image = new URL(frontmatter.image, Astro.site.href).href;
+let content_image = new URL(frontmatter.image.src, Astro.site.href).href;
 let title = ''.concat(frontmatter.title, ' - Engineering Kiosk');
 let encodedUrl = encodeURI(canonicalURL);
 
@@ -107,7 +107,7 @@ const html = (await Astro.slots.render('default'))
 
 <html lang="de">
 	<head>
-		<MainHead title={title} description={frontmatter.description} image={frontmatter.image} {canonicalURL} ogType="article" />
+		<MainHead title={title} description={frontmatter.description} image={frontmatter.image.src} {canonicalURL} ogType="article" />
 
 		<!-- https://github.com/embedly/player.js -->
 		<script type="text/javascript" src="/js/player-0.1.0.min.js"></script>
