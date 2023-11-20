@@ -13,6 +13,7 @@ talks:
     bio: 'As partner and founding member of CERTAINITY I’m leading our security engineering practice. I’ve been working as a security architect, business consultant and software engineer for over two decades. Currently I focus on secure software and product development, the implementation of security architectures and the establishment of associated processes - especially in areas of critical infrastructure.'
     linkedin: 'michael-brunner-92690487'
     website: 'https://certainity.com'
+    slides: '2311-mike-brunner.pdf'
   - avatar: '2311-lukas.jpg'
     name: 'Lukas Ruetz'
     title: 'Tales from updating a software appliance over 15 years'
