@@ -58,8 +58,8 @@ description: "Green IT und die CO2-Emissionen durch die IT, das Internet und die
 google_podcasts: https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5yZWRjaXJjbGUuY29tLzBlY2ZkZmQ3LWZkYTEtNGMzZC05NTE1LTQ3NjcyN2Y5ZGY1ZQ/episode/NjY0Zjk3OTUtOTlkYS00YTExLThmMDYtZjhiZTg2NDc3MjBk?sa=X&ved=2ahUKEwiZwozds8eBAxW6omoFHRAVCMgQkfYCegQIARAF
 headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts||feedback-gerne-auch-als-voice-message::Feedback
   (gerne auch als Voice Message)
-image: "./89-die-klimakrise-und-green-it-unser-einfluss-\xFC\
-  ber-hardware-farben-web-performance-und-green-hosting-mit-christian-sch\xE4fer.jpg"
+image: "./89-die-klimakrise-und-green-it-unser-einfluss-\xFCber-hardware-farben-web-performance-und-green-hosting-mit-christian-sch\xE4\
+  fer.jpg"
 length_second: 4563
 pubDate: 2023-09-19 04:00:00+00:00
 rtlplus: ''
