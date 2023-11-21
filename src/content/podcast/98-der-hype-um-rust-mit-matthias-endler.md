@@ -66,7 +66,10 @@ speaker:
 - name: Wolfi Gassler
   website: https://wolfgang.gassler.org/
 spotify: https://open.spotify.com/episode/4NmrV8nCZ1jcrIcEzb8s5v
-tags: []
+tags:
+- Software Engineering
+- Interview
+- Backend
 title: '#98 Der Hype um Rust mit Matthias Endler'
 youtube: ''
 
