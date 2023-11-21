@@ -322,9 +322,8 @@ def sync_podcast_episodes(rss_feed, path_md_files, path_img_files, no_api_calls=
             else:
                 image_filename = f"{image_filename}{file_ext}"
 
-            # Remove prefix "public"
-            image_filename = image_filename.split("public")
-            image_filename = image_filename[1]
+            # Get only the filename
+            image_filename = f"./{os.path.basename(image_filename)}"
 
         else:
             image = ""
