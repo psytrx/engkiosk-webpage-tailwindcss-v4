@@ -24,7 +24,7 @@ const podcastEpisodeCollection = defineCollection({
 		speaker: z.array(
 			z.object({
 				name: z.string(),
-				transcriptLetter: z.string(),
+				transcriptLetter: z.string().optional(),
 				website: z.string(),
 			})
 		),
