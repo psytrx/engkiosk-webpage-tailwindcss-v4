@@ -1,0 +1,1938 @@
+{
+    "language_code": "de",
+    "audio_url": "https://audio1.redcircle.com/episodes/56f16cda-84aa-4c92-91f2-d6b7aa976d9a/stream.mp3",
+    "punctuate": true,
+    "format_text": true,
+    "dual_channel": false,
+    "webhook_url": null,
+    "webhook_auth_header_name": null,
+    "webhook_auth_header_value": null,
+    "audio_start_from": null,
+    "audio_end_at": null,
+    "word_boost": [],
+    "boost_param": null,
+    "filter_profanity": false,
+    "redact_pii": false,
+    "redact_pii_audio": false,
+    "redact_pii_policies": null,
+    "redact_pii_sub": null,
+    "speaker_labels": true,
+    "speakers_expected": 3,
+    "content_safety": false,
+    "content_safety_confidence": null,
+    "iab_categories": false,
+    "custom_spelling": null,
+    "disfluencies": false,
+    "sentiment_analysis": false,
+    "auto_chapters": false,
+    "entity_detection": false,
+    "summarization": false,
+    "summary_model": null,
+    "summary_type": null,
+    "auto_highlights": false,
+    "language_detection": false,
+    "speech_threshold": null,
+    "id": "ea8dbcb8-a46d-4e42-8279-b4804f1e4c5d",
+    "status": "completed",
+    "error": null,
+    "utterances": [
+        {
+            "text": "Wenn man viele Entwicklerinnen fragt, welche Programmiersprache sie als nächstes gerne lernen wollen, fällt oft dieselbe Antwort. Rust. Man könnte schon fast von einem kleinen Hype sprechen. Projekte auf Gitter prahlen damit, dass diese mit Rust geschrieben wurden und jede zweite Case Study einer großen Tech-Firma hat etwas mit Rust zu tun. Doch was ist dran am Hype? Ist es nur Marketing oder steckt wirklich der Knaller der nächsten 40 Jahre dahinter? Ist hier wirklich alles Gold, was glänzt? Genau darüber sprechen wir mit Matthias Endler. Matthias ist von Anfang an bei Rust dabei und weiß, wovon er redet. In dieser Episode klären wir, welches Problem eigentlich von Rust gelöst wird, machen einen Deep Dive in die Kernkonzepte der Sprache, werfen einen Blick auf die Lernkurve von Rust, schauen uns an, wie die Sprache eine gewisse Rückwärtskompatibilität gewährleistet und noch vieles, vieles mehr. Bleibt dran, los geht's!",
+            "start": 4177,
+            "end": 53759,
+            "confidence": 0.8454557823129251,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Wir haben heute ein sehr schräges Setup. Das hatten wir schon einmal. Und zwar sitzt der Andi remote in Duisburg vor seinem Bildschirm mit dem bekannten Coronavirus. Ich bin extra aus Innsbruck nach Düsseldorf gekommen oder nach Duisburg und sitze jetzt in Düsseldorf, ein paar Häuserblocks weiter quasi von Duisburg, mit unserem heutigen Gast aus Bayern. Und darum habe ich auch ein sehr gutes Maxl Helles vor mir.",
+            "start": 55799,
+            "end": 84114,
+            "confidence": 0.8105000000000002,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Das gute Maxl.",
+            "start": 84134,
+            "end": 84595,
+            "confidence": 0.3143333333333333,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Genau, weil du als original Bayer, der auch in Düsseldorf, also internationaler geht's ja fast nicht mehr, oder interdeutscher, ah egal, ich will mich da gar nicht verzerren. Besser geht's gar nicht mehr, aber wir haben heute natürlich ein ernstes Thema oder haben wir das Bier Thema? Ein bierernstes Thema. Und zwar sprechen wir heute über, Andi, weißt du schon oder bist du in einem Corona Delirium?",
+            "start": 85435,
+            "end": 110179,
+            "confidence": 0.7706119402985073,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Über was Rostiges.",
+            "start": 110200,
+            "end": 111380,
+            "confidence": 0.8156666666666667,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Genau, über Rust. Was ist Rust?",
+            "start": 111420,
+            "end": 114402,
+            "confidence": 0.8633333333333333,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Rust ist eine systemneue Programmiersprache von Mozilla.",
+            "start": 114463,
+            "end": 117485,
+            "confidence": 0.756,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Wollen wir den Matthias jetzt mal vorstellen?",
+            "start": 118165,
+            "end": 119586,
+            "confidence": 0.301,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Schöne Einleitung. Ja, okay, stellen wir den Matthias vor, wenn es unbedingt sein muss. Ich kenne ja Matthias schon jahrelang, fast besser als den Andi. Matthias begleitet mich ja tagtäglich eigentlich. Wir haben ja auch ein gemeinsames Projekt, hatten schon Projekte gemeinsam, haben immer noch ein Projekt. Aber Andi, dir gebührt die Ehre, unseren Gast vorzustellen aus Bayern. Moment, Franken ist das Bayern? Andi, stell mal vor.",
+            "start": 119626,
+            "end": 143875,
+            "confidence": 0.7953134328358208,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Das ist in der Tat für mich eine wirklich schwierige Folge, weil ich bin jetzt der Norddeutsche hier. Wir haben jemanden nicht aus Bayern, nicht aus Franken, aus der Oberpfalz. Drei Kilometer von der Grenze von Franken. Das wurde mir so eben noch bestätigt, weil ich glaube, da gibt es so einen richtigen Hass da unten. Wie dem auch sei, er hat auch einen harten Dialekt, der für mich als Deutscher teilweise echt schwierig zu verstehen ist, aber Lieber Matthias, wir beide, Wolfgang und ich, sind schon eng verwoben mit dir. Zum einen haben wir mal zusammen gearbeitet, zum anderen hatten wir beide zumindest, du und ich, diverse Hackathon-Nächte mit Club Marte, Wodka und Helene Fischer um 4 Uhr morgens.",
+            "start": 144455,
+            "end": 187170,
+            "confidence": 0.8222000000000003,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Ich frage gar nicht, warum Helene Fischer.",
+            "start": 187470,
+            "end": 189690,
+            "confidence": 0.5988571428571429,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Weil unser Prototyp natürlich nicht lief. Kommen wir weg von unserer Beziehung. Wer bist du? Du hast dich vor kurzem selbstständig gemacht und bist Gründer einer Rust-Consulting-Firma namens Corode. Du brennst für Open Source, so ähnlich wie ich, bist aber deutlich erfolgreicher mit Repositories wie z.B. Idiomatic Rust mit 5.000 Stars, einer Markdown-Datei, die sogar Geld verdient, mit einer Liste von Static Analysis über 30 Programmiersprachen mit 12.000 Stars. Du hast einen Fast Async and Stream Based Link Checker in Rust geschrieben, womit man unter anderem tote Links von Static Websites parsen kann und der auch von Amazon für die Amazon Web Service Dokumentation genutzt wird, also Hut ab. Du hast in irgendeiner Art und Weise ein Fable für Entertainment und Storytelling. Und das hast du mehrfach unter Beweis gestellt mit deinem YouTube-Channel Hello Rust, den du leider nach zehn oder zwölf Episoden wieder eingestellt hast. Du erzählst öfters mal recht lustige Storys auf Meetups. Und wir dürfen uns bald auf einen eigenen Podcast von dir namens Rust in Production freuen. Release-Date, glaub ich, noch kurz vor Weihnachten.",
+            "start": 189710,
+            "end": 259925,
+            "confidence": 0.8164719101123593,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Jo.",
+            "start": 260325,
+            "end": 261026,
+            "confidence": 0.842,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Super. Und weil das noch nicht genug ist, Hast du auch noch mal ein Projekt gestartet, womit man seine GitHub-History als Poster printen kann? Also, wer dieses grüne Mosaik liebt, der kann mal Codeprints googeln. Da kannst du deinen GitHub-Profil angeben und dann kannst du das als Bild zugesendet bekommen. Ich hatte auch mal eins an der Wand, sehr, sehr schön.",
+            "start": 261086,
+            "end": 281281,
+            "confidence": 0.778016393442623,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Was heißt, du hattest eines an der Wand? Du hast es nicht mehr an der Wand.",
+            "start": 281301,
+            "end": 283663,
+            "confidence": 0.672125,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Es hängt leider nicht mehr.",
+            "start": 284003,
+            "end": 284904,
+            "confidence": 0.6178000000000001,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Du warst ein erster Test-User.",
+            "start": 284924,
+            "end": 286044,
+            "confidence": 0.23900000000000002,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Ja, es hängt leider nicht mehr an der Wand.",
+            "start": 286085,
+            "end": 287666,
+            "confidence": 0.6353333333333332,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Ich werde da persönlich noch mal nachschauen.",
+            "start": 287706,
+            "end": 290068,
+            "confidence": 0.5752857142857143,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Der Wolfgang war auch dabei übrigens, ja? Also, den wollen wir nicht vergessen. Auch CodePrince ist auch sein Kind.",
+            "start": 290108,
+            "end": 295171,
+            "confidence": 0.5422105263157895,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Und ohne Wolfgang kannst du anscheinend auch nicht, weil inzwischen baut ihr auch ein weiteres Produkt zusammen, namens OpenPodcast, um podcastanalytische Daten zusammenzufassen von verschiedenen Providern. Und jetzt mein Lieblingsfakt über dich. Du magst esoterische Programmiersprachen. Und ich erinnere mich auch noch an deinen schönen Code, den du in LOL-Code geschrieben hast, nämlich an den HTTP-Retry-Mechanismus, so viel ich weiß.",
+            "start": 295231,
+            "end": 321823,
+            "confidence": 0.8034333333333332,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Ja ja es war tatsächlich ja curl in lolcode und dann auch der versuch einen server in lolcode zu schreiben. Aber ja macht mir tatsächlich spaß esoterische programmiersprachen auszuprobieren.",
+            "start": 322740,
+            "end": 335475,
+            "confidence": 0.8416551724137931,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Was würdest du sagen ist die esoterischste programmiersprache die du jemals angefasst hast.",
+            "start": 336295,
+            "end": 340821,
+            "confidence": 0.7123846153846155,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Das ist eine gute frage.",
+            "start": 340841,
+            "end": 341902,
+            "confidence": 0.7412,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Befunch ist komisch.",
+            "start": 342751,
+            "end": 349174,
+            "confidence": 0.7266666666666666,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Befunch, eine sehr esoterische Programmiersprache also wenn du lolcode schon esoterisch findest. Dann ist B-Funch nochmal eine härtere Nummer. Die Idee von B-Funch ist, dass es per Definition schwer zu schreiben ist. Also das ist die Sprache, die sich im Endeffekt am schwersten schreiben lässt.",
+            "start": 349234,
+            "end": 369313,
+            "confidence": 0.7786222222222223,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Das heißt du hast ein Faible für schwer erlernbare Sprachen, darum machst du auch Rust.",
+            "start": 369353,
+            "end": 373539,
+            "confidence": 0.6764,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Also ich denke ich habe ein fable für ideen mit denen man maschinen dinge beibringen kann also, wenn man irgendwas auf einer maschine ausführen lassen will dann muss man das nicht immer in beispielsweise c oder python machen.",
+            "start": 375280,
+            "end": 390006,
+            "confidence": 0.8019736842105262,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Okay, dann gehen wir gleich mal tief Vollgas rein in Rust. Was ist Rust für alle, die noch nie Rust programmiert haben oder gesehen haben?",
+            "start": 390506,
+            "end": 398271,
+            "confidence": 0.8162,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Rust ist eine Art und Weise, Programme zu schreiben, wie man sie eigentlich vorher noch nicht hatte. Und zwar in einer Art und Weise, dass man Fehler vermeidet, die in typischen Programmiersprachen wie C++ und C einfach prävalent sind. Also da geht es um Memory Safety. Das ist eigentlich so das große über thema bei rust dass man versucht zu vermeiden speicher falsch zu verwalten an sich hat sich da eine community drum gebildet die viel viel mehr macht als nur.",
+            "start": 398651,
+            "end": 430412,
+            "confidence": 0.8631975308641975,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Das mittlerweile bleiben wir mal da also bei der bei der speicherverwaltung java sagt mir auch speicher wird super verwaltet und ich muss wenig tun. Was macht jetzt rust besser?",
+            "start": 430452,
+            "end": 440181,
+            "confidence": 0.7154333333333334,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Java verwaltet speicher für dich mit einem garbage collector. Und zur Runtime wird da ab und zu mal einfach aufgeräumt und das ist eigentlich auch vollkommen okay. Sehr sehr viele Dinge werden auf dem Heap allokiert und es gibt zum Beispiel Reference Counting. Das sind alles wunderbare Maßnahmen um Speicher zu verwalten, aber die haben natürlich auch Kosten und zwar in Form von Overhead. Und der Overhead wird eben zur Laufzeit bezahlt. was in manchen Bereichen nicht gewünscht ist oder gar nicht möglich ist, also beispielsweise in systemnaher Programmierung in Embedded Systemen, da gibt es einfach gar keine Speicherverwaltung zur Runtime, das ist einfach zu komplex, es gibt vielleicht gar keinen Heap. Und Rust ist eine Möglichkeit, Speicher auf andere Art zu verwalten, indem der Compiler zur Compile-Zeit erkennt, ob Speicher beispielsweise von mehreren Stellen mutable, also veränderlich, beschrieben wird oder genutzt wird. Und das wird dann verhindert und das verhindert auch sehr, sehr viele Probleme zur Laufzeit. Aber das Interessante ist, dass man, wenn man das verhindern kann, derselbe mechanismus auch dafür zuständig ist speicher aufzuräumen mit einem system von ownership und borrowing, bei dem daten hin und her gereicht werden zwischen den einzelnen funktionen die die daten benutzen und der letzte macht das licht aus und räumt dann daten auf.",
+            "start": 440261,
+            "end": 521186,
+            "confidence": 0.8296981132075474,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Andi, jedes Mal, wenn du wieder JavaScript programmierst, dann fragst du mich um Hilfe.",
+            "start": 524067,
+            "end": 528850,
+            "confidence": 0.8057857142857143,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Das ist korrekt. Möchtest du mir nicht mehr helfen?",
+            "start": 528890,
+            "end": 530450,
+            "confidence": 0.5681111111111111,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Es ist meine wertvolle Zeit. Hast du dir schon mal überlegt, vielleicht einen ordentlichen Kurs für Webtechnologien zu machen? So abseits von deiner ganzen Go-Backend-Ecke. Ihr könnt da sicherlich mit unserem Episodensponsor workshops.de sprechen, weil die bieten Remote-Schulungen für den ganzen Web-Bereich an. Angular, React, Vue.js, Spring Boot, alles was du willst. Und die hätten sogar Lifetime-Schulungen. Also da hast du Zugriff auf die Materialien ein Leben lang. Dann hast nicht mal du mehr irgendeine Ausrede und könntest mit deinem Tempo einfach lernen.",
+            "start": 530730,
+            "end": 560240,
+            "confidence": 0.8129879518072284,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Du musst das so sehen. Ich bin ein sozialer Mensch und lerne sehr sehr gerne im Team und besonders sehr gerne mit dir.",
+            "start": 560420,
+            "end": 565221,
+            "confidence": 0.6410869565217391,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Ja, da gibt es natürlich auch eine Lösung. Du schnappst dir einfach die maßgeschneiderten Inhouse-Schulungen von Workshops.de und kannst dann das Ganze mit deinem Team machen. Und da ist dann genug Zeit zum Kaffee trinken mit deinem Team.",
+            "start": 565647,
+            "end": 576713,
+            "confidence": 0.8301315789473684,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Jetzt hast du mich. Workshops.de schaue ich mir mal an. Danke.",
+            "start": 576733,
+            "end": 579574,
+            "confidence": 0.5550909090909091,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Link findest du übrigens in den Show Notes, Andi. Bevor wir da ins Detail gehen. Also okay, das Speichermanagement ist sehr optimiert. Geschwindigkeit hast du schon erwähnt. Gibt es sonst irgendwie Vorteile von Rust noch?",
+            "start": 579614,
+            "end": 592441,
+            "confidence": 0.7496285714285715,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Geschwindigkeit ist für viele ein Einstiegsfaktor, weil die einfach aus Sprachen kommen, die vielleicht generell etwas langsam sind, wie Python oder JavaScript für manche Bereiche. Aber was viel interessanter ist, für Firmen auch besonders, ist, dass die irgendwann merken, dass Rust einfach eine stabilere Sprache ist. Also man kann robusteren Code schreiben, der zur Laufzeit vielleicht nicht sehr viele Überraschungen bereithält. Das geht natürlich zum einen wieder um die Garbage Collection, aber zum anderen viel, viel mehr auch um Dinge, die Programme fragil machen. Also wann zum Beispiel gibt's Probleme zur Laufzeit, wenn nicht ganz klar ist, was zum Beispiel in diesem Objekt steckt oder ob da vielleicht ein Null-Pointer dahinter ist. Und das sind einfach Dinge, die Rust verhindern kann. Und das ist natürlich extrem lukrativ für Firmen, solche Dinge vielleicht auch einzubauen oder zu nutzen, weil man sich da extrem viele Kosten sparen kann. Stichwort On-Call.",
+            "start": 593780,
+            "end": 645378,
+            "confidence": 0.8450270270270271,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Ist das das, was Leute immer wähnen, was man so hört, wenn die mit Rust beginnen, dass sie sagen, dieser Compiler ist so intelligent, der Compiler sagt mir Sachen, die habe ich sonst überhaupt noch nie mitbekommen bei irgendeiner anderen Sprache, sind es genau diese Dinge, die dann vom Compiler kommen und gesehen werden und frühzeitig abgefangen werden?",
+            "start": 645838,
+            "end": 663075,
+            "confidence": 0.8253103448275865,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Ja, es gibt so dieses Meme in der Rust-Community, wenn's baut, dann läuft's auch. Und das ist auch in weiten Teilen sehr richtig. Und das andere Meme ist Fighting with the BorrowChecker. Der BorrowChecker ist ein Teil des Rust-Compilers, der eben genau für Ownership und Borrowing zuständig ist und diese Regeln überprüft. Diese Regeln gibt es in anderen Programmiersprachen auch, wie zum Beispiel in C++ mit Ray Resource Allocation is Initialization. Aber das wird halt nicht vom Compiler entforst, also es wird vom Programmierer verlangt, dass eine gewisse Disziplin herrscht im Code. Und dieses Prinzip wird einfach vom Rust-Compiler vorausgesetzt. Also es gibt gar keine Möglichkeit, da rumzukommen.",
+            "start": 663635,
+            "end": 706585,
+            "confidence": 0.822537037037037,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Gibt es eigentlich nur einen Compiler? Also bei C gibt es mittlerweile doch einige Compiler. Gibt es bei Rust nur einen?",
+            "start": 706606,
+            "end": 713469,
+            "confidence": 0.8497619047619048,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Es gibt einen Referenz-Compiler, Rust-C.",
+            "start": 713529,
+            "end": 716371,
+            "confidence": 0.8747999999999999,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Der von Mozilla dann auch entwickelt wurde.",
+            "start": 716411,
+            "end": 718232,
+            "confidence": 0.8751428571428572,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Genau. Es gibt allerdings auch mittlerweile einen WebAssembly-basierten Compiler. Nennt sich CraneLift. Und der ist etwas langsamer zu Runtime, also zu Laufzeit, aber schneller zu Compile-Zeit.",
+            "start": 718273,
+            "end": 731664,
+            "confidence": 0.8425769230769232,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Aber ich meine, jetzt gibt es ja auch Programmiersprachen wie Lisp zum Beispiel. Schon ein bisschen was älter. Teilweise Flugzeugsoftware und Zugsoftware wird damit geschrieben. Da kannst du jetzt auch nicht sagen, dass sie als unsicher gilt. Die haben auch Features drin, wie zum Beispiel du hast einen Integer mit einem Wertebereich und wenn du dann ein Switch-Case-Statement hast, dann sagt der Compiler dir, hey, da ist ein Fall, der ist nicht berücksichtigt bei deinem Case, könnte zur Runtime krachen, compile ich den nicht. Also das, was du jetzt gerade so erwähnt, andere Sprachen liefern das ja auch mit.",
+            "start": 732264,
+            "end": 760442,
+            "confidence": 0.7141919191919192,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Lisp hat natürlich auch ein Garbage Collector und eine Runtime und auch in dem Sinn Overhead, genau wie beispielsweise Java oder Kotlin auch. Und ich finde an Lisp kann man sich auch orientieren, was vielleicht die Art und Weise der Programmierung angeht. Also Lisp ist ja eine pure funktionale Sprache mit keinen seitendeffekten also ohne seitendeffekte das heißt seitendeffekt ist einfach etwas was bei einer funktion passiert und das ist nicht die hauptaufgabe dieser funktion.",
+            "start": 761970,
+            "end": 790536,
+            "confidence": 0.8208266666666666,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Aber rust ist nicht funktional nur dass wir da ist imperative.",
+            "start": 790576,
+            "end": 793797,
+            "confidence": 0.7896363636363636,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Genau, Rust ist eine Multi-Paradigm-Programmiersprache. Man kann in Rust mehrere Paradigmen programmieren.",
+            "start": 794652,
+            "end": 800854,
+            "confidence": 0.7620833333333333,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Also so wie du heutzutage auch in Java funktionale Elemente drin hast.",
+            "start": 800894,
+            "end": 804554,
+            "confidence": 0.6474166666666668,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Ganz genau, ja. Auch in Rust gibt es diesen funktionalen Anteil. Und Rust kommt eigentlich auch aus der funktionalen Welt, also aus den ML-Sprachen und war früher auch viel, viel funktionaler, ist mittlerweile weniger funktional und eher objektorientiert. Aber ich würde sagen, ja, man kann in beiden Sprachen Ich arbeite gerne objektorientiert im Großen und funktional im Kleinen in Rust.",
+            "start": 804574,
+            "end": 826520,
+            "confidence": 0.7494833333333335,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Und warum hat Mozilla damals die Sprache entwickelt? Was ist der Hintergrund von dieser Sprache überhaupt? Beziehungsweise wann ist das passiert? Es ist ja derzeit ein absoluter Hype mit Rust, sogar dass Andi als Go-Fanboy Rust kennt.",
+            "start": 839487,
+            "end": 854904,
+            "confidence": 0.8499189189189189,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Ist die alt die sprache ist die.",
+            "start": 856905,
+            "end": 858406,
+            "confidence": 0.8009999999999999,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Jetzt irgendwie zwei jahre alt wann wann ist denn die so entstanden.",
+            "start": 858426,
+            "end": 861127,
+            "confidence": 0.7945833333333333,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Also mozilla ist eine firma die ist bekannt für eigentlich zwei große projekte würde ich behaupten zum einen in firefox der webbrowser und zum anderen thunderbird, der email client und zu den besten seiten hatte mozilla auch den sehr sehr hohen markteanteil also ich glaube mal auch in deutschland über 40 prozent was echt beachtlich ist. Und dieser Browser ist natürlich ein starkes Stück Software. Also da muss man schon wirklich sagen, es ist sehr, sehr komplex, einen Browser zu schreiben. Es ist nicht einfach. Und es gibt auch einfach sehr viele Dinge, die man beim Parsen von Webseiten beachten muss.",
+            "start": 861847,
+            "end": 894451,
+            "confidence": 0.813762376237624,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "JavaScript Engine hängt auch noch mit dabei, so eine kleine.",
+            "start": 894571,
+            "end": 897733,
+            "confidence": 0.7091000000000001,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Genau. Mittlerweile ist das ein fast komplettes Betriebssystem mit allen Bindings zu allen möglichen Dingen wie Audio, Video und so weiter. Und diese Komplexität hat Mozilla irgendwann zu schaffen gemacht. Das war irgendwann so 2010, vielleicht kurz vorher, hat man gemerkt, dass Firefox, was ja in C++ geschrieben ist, einfach Probleme hat, die man sehr, sehr schwer in den Griff bekommt. Memory Leaks, aber auch Null Pointer Exceptions. und einfach dinge die zur laufzeit passieren die die software instabil machen und dann hat man nach ideen gesucht vielleicht dieses problem in den griff zu kriegen und es gab ein hobbyprojekt von dem entwickler bei mozilla von graden und der hat einfach vorher schon an was entwickelt in seiner freizeit und hat ein bisschen rumgespielt hat das anderen leuten beim mozilla. gezeigt die fanden das auch immer ganz gut aber das war nie die idee dass das mal teil von mozilla wird oder dass mozilla das fand jedenfalls 2010 oder vielleicht ein bisschen später um die zeit rum haben die dann angefangen ernsthaft drüber nachzudenken rust einzubauen in firefox teil teile von firefox umzuschreiben in dieser neuen sprache und haben natürlich dann auch gemerkt dass man das sehr viel training und funding braucht und großes team drauf aufgebaut. 2015 wurde die Sprache dann stabilisiert. Da gab es dann den ersten 1.0-Release im März. Seitdem hat die Sprache eigentlich einen sehr, sehr guten Roof, dass sie vielleicht schwierig zu lernen ist, aber dass die Dokumentation sehr gut ist und dass auch die Backwards-Compatibility, also die Rückwärts-Kompatibilität, sehr gegeben ist. Und ja, also die Sprache wurde mit dem Browser entwickelt und hat sich aber dann irgendwann verselbstständigt. Und dann hat man plötzlich andere Dinge auch mit dieser Sprache gemacht.",
+            "start": 897753,
+            "end": 1002489,
+            "confidence": 0.8312902097902096,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Aber in Firefox, also Firefox selbst ist es nicht Rust?",
+            "start": 1002789,
+            "end": 1006813,
+            "confidence": 0.7881000000000001,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Firefox ist nicht komplett in Rust geschrieben, es gab ein Projekt das nennt sich Quantum und in diesem Projekt, im Rahmen dieses Projektes haben die Teile von Firefox neu in Rust geschrieben, unter anderem in den CSS-Parser und ich würde sagen 20% von Firefox sind in Rust. Das heißt, beide Sprachen werden unterstützt. Es gab einen anderen Browser, der hieß Servo. Und das war eigentlich ein experimenteller Browser, den Mozilla entwickelt hat, um Dinge auszuprobieren. Die Idee war nie, dass der produktiv geht, sondern die Idee war eigentlich, dass man Konzepte ausprobiert und das dann später in Firefox integriert. Und der ist natürlich sehr performant, was Nebenläufigkeit angeht. Ich glaube, wir kommen dazu noch, aber kurz vorab, Rust ist einfach eine sehr, sehr gute Sprache, mit der man auch parallel programmieren kann, weil eben dieses Ownership-Modell diverse Fehlerklassen einfach komplett ausschließt. Und in Servo hat man das immer extrem ausgenutzt. Also da war der Renderer zum Beispiel komplett parallel. Und das hilft natürlich bei der Performance. Aber Servo an sich ist dann irgendwann eingeschlafen und wurde erst letztes Jahr wiederbelebt und ist jetzt auch wieder in aktiver Entwicklung.",
+            "start": 1006873,
+            "end": 1078595,
+            "confidence": 0.8508457446808507,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Wenn ich dich so reden höre, dann frage ich mich, wofür sollte ich Rust nicht einsetzen? Aber ich gehe stark davon aus, dass es, ich sag mal, den klassischen Anwendungsfall von Rust gibt, denn irgendwie hat den jede Sprache. PHP baust du in der Webseite, Python ist prädestiniert für Data Science, Statistik und allem darüber dran, mit Neuling Libraries, mit Machine Learning. Was würdest du sagen, ist der ursprünglich klassische Anwendungsfall von Rust?",
+            "start": 1079052,
+            "end": 1104046,
+            "confidence": 0.7724794520547947,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Also erstens mal vielleicht zu der ersten Teilfrage, wofür würde ich Rust nicht einsetzen, da würde ich ganz klar sagen, bei Scripting und bei Prototypes ist es wahrscheinlich etwas übertrieben.",
+            "start": 1105211,
+            "end": 1116538,
+            "confidence": 0.8690000000000001,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Also wenn es schnell gehen muss.",
+            "start": 1116598,
+            "end": 1118159,
+            "confidence": 0.718,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Wenn es schnell gehen muss.",
+            "start": 1118199,
+            "end": 1119100,
+            "confidence": 0.8146000000000001,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Und im Sinne nicht von Performance schnell, sondern schnelle Entwicklung.",
+            "start": 1119160,
+            "end": 1122742,
+            "confidence": 0.7459,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Ganz, ganz genau. Oder wenn ich etwas habe, was ich vielleicht auf einer Unix-Maschine schnell als Skript ausführen will, wenn ich relativ Unix-basiert mit einfachen kleinen Skripten hin und her hantiere, dann würde ich sagen, da ist es einfach nicht das richtige Tool dafür. Oder man müsste vielleicht das Ziel haben, dass man das erweitert. Klassisch benutzt man Rust dann, wenn man, ich sag jetzt mal, irgendwo zwischen dem Hardware- und Software-Interface agiert. Also alles, was relativ nah am Metall ist. Beispielsweise ein Betriebssystem, ein Dateisystem, vielleicht ein Webserver oder ein Proxy. Alles, was so Richtung High-Performance geht, ist natürlich ein spannendes Thema. Wenn es dann Richtung Stabilität geht, wird es auch spannend. Also ich nenne mal ein paar Beispiele. Amazon beispielsweise verwendet Rust für Firecracker. Das ist eine kleine Micro-VM und da geht es eben darum, dass man sehr viele kleine, 5 Megabyte große VMs auf großen Cloud-Maschinen laufen lassen kann. Und damit haben die die Kosten um 50 Prozent reduziert. Einfach mit dieser neuen Technologie. Das wäre mit Rust sehr, sehr schwer möglich, weil ohne Rust hättest du die Sicherheit nicht, dass diese Isolationsschicht wirklich gut funktioniert. Ein anderes Thema Dropbox, die haben ihre Data Layer neu geschrieben. Alles was in Dropbox gespeichert ist, läuft erstmal durch Rust-Code und dann werden diese ganzen Metadaten und das Storage und so weiter, das wird alles dort gemacht in Rust und dann werden die Daten in Code Storage abgelegt. Also auch da ist man relativ nah an der Hardware, an der Infrastruktur, irgendwo im Internet, im Netzwerk unterwegs und da ist Rust natürlich spannend.",
+            "start": 1123402,
+            "end": 1216539,
+            "confidence": 0.8037376425855507,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Naja, das hört sich alles super gut an, aber nehme ich mal ein anderes Beispiel. Wenn ich jetzt Java dagegen setze, würden die meisten Leute sagen, uh, schwierig, kommt bei weitem nicht dran. Und dann sehe ich aber so Software wie Kafka, welche in Java geschrieben sind, und dann stelle ich mir die Frage, ist die intelligente Nutzung von Datenstrukturen, wie bei Kafka in AppendWriteLog, nicht viel maßgeblicher für die Performance, für die System-Performance, Und man könnte auch sagen kafka ist relativ nah an der hardware wenn man an die disk denkt ist das nicht viel ausschlaggebender als die sprache selbst.",
+            "start": 1216839,
+            "end": 1251513,
+            "confidence": 0.8311881188118813,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Das finde ich fair ich glaube man muss nicht alles in rust neu schreiben aber jeder der kafka schon mal operativ eingesetzt hat der weiß natürlich wie komplex das ist also erstens mal wie kriege ich diese java applikationen deployed, wie mache ich die maintenance wie stabil läuft das dann in production muss ich vielleicht overprovisioning machen das heißt brauche ich mehr ressourcen um so latency peaks und vielleicht auch usage peaks abzufangen und da wird es dann halt relativ spannend also java ist natürlich was ich sage jetzt mal zum beispiel arbeitsbeiche angeht relativ. Durstig. Also da muss man schon aufpassen, dass man nicht vielleicht eine Maschine hat, die zu klein ist, um Kafka-Class zu betreiben zu können. Und ich genau an der Stelle würde ich sagen, da wäre es an sich spannend, über Rust nachzudenken, um solche Dinge zu optimieren. Der klassische Faktor ist ungefähr zwischen 5 und 7. Und man sagt, das ist der Unterschied zwischen Java Runtime Performance und Rust Runtime Performance. Das heißt, man kann sich schon vielleicht, wenn man eine Rust-Instanz hat, dagegen vier Java-Instanzen sparen, was extrem spannend ist, würde ich sagen, auch aus Kostensicht wiederum. Und da sehe ich schon auch die Vorteile bei Rust.",
+            "start": 1251533,
+            "end": 1327540,
+            "confidence": 0.826068965517241,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Jetzt hast du aufgezählt, okay, es ist super performant, es ist super schlau, weil der smarte Compiler mir alle Fehler schon im Vorhinein zeigt. Es ist super sicher dadurch. Du hast super Speichermanagement, es ist hardwarenah, es ist einfach super schnell, es ist eigentlich perfekt. Und wenn ich mich jetzt so zurück erinnere an meine erste Erfahrung mit Rust, die dankenswerterweise, schweres Wort, ich dir zu verdanken habe, weil du was in Rust geschrieben hast und ich hab dann probiert, eine Funktion abzuändern. Und für mich hat sich das angefühlt wie so vor 25 Jahren oder vor 35 Jahren, so alt bin ich noch.",
+            "start": 1327580,
+            "end": 1363571,
+            "confidence": 0.7290769230769232,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Nicht.",
+            "start": 1363591,
+            "end": 1363751,
+            "confidence": 0.165,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Vor 25 bis 30 jahren wo ich das erste mal programmiert habe, wo ich so probiert habe ein zeichen abzuändern und dann mal das laufen gelassen habe, ah fehler okay scheinbar war das das falsche, probier mal ein anderes zeichen und hab dann irgendwas kopiert eins zu eins hat nicht funktioniert. Also die Lernkurve ist schon so eine Sache, also für mich, ich habe viele Sprachen schon in meinem Leben entwickelt, aber bei Rust war es so wirklich, wo bin ich da, wie so der erste Mensch in der Programmierung, so wirklich copy-based und was abändern, mal ausprobieren, funktioniert da was. Also der Einstieg war schon extrem schwierig.",
+            "start": 1366854,
+            "end": 1401781,
+            "confidence": 0.7786481481481483,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Kann ich vollkommen unterschreiben. Das ist auch ein großer Kritikpunkt, wo ich sagen würde, eine Firma, die Rust einsetzt, muss sich bewusst sein, dass man da in Trainings und in Entwickler-Ausbildung investieren muss.",
+            "start": 1402702,
+            "end": 1418508,
+            "confidence": 0.8512727272727273,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Ich muss natürlich dazusagen, als klassischer Entwickler, der viel von sich hält, bin natürlich einfach drauf losgegangen, habe gedacht, das schaffe ich schon. Ich brauche da keine Dokumentation lesen oder mir mal den Syntax anschauen. Es kann nicht so schwierig sein, es ist einfach eine Programmiersprache. Ja bin ziemlich auf die Pappen geflogen wie man bei uns sagt.",
+            "start": 1418568,
+            "end": 1434635,
+            "confidence": 0.6933103448275859,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Ja ja was man natürlich bedenken muss ist Rust ist schwierig wenn man es schwierig macht und man macht sich schwierig indem dass man gegen die Sprache kämpft je früher man anfängt aufzuhören zu kämpfen und zu lernen wie diese Sprache wirklich funktioniert desto leichter kann man sich das Leben machen. Der Klassiker ist zum Beispiel aus der C- oder C++-Ecke Leute, die Rust lernen, die haben Probleme mit diesem Ownership-Modell, weil die das einfach vorher intuitiv in C++ irgendwie gemacht haben, aber haben gar nicht festgestellt, dass die vielleicht irgendwelche Leaks einbauen oder Nullpointer. Und Leute die interessanterweise eher aus der, ich sag jetzt mal Python oder vielleicht JavaScript Ecke kommen, haben da relativ wenig Probleme damit, weil die diese Konzepte überhaupt gar nicht kennen. Also die hatten vorher noch nie mit manueller Speicherverwaltung zu tun und für die ist das einfach ein komplett neues Konzept und darauf lassen die sich ein.",
+            "start": 1435215,
+            "end": 1484234,
+            "confidence": 0.8420130718954251,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Speicherkonzept in der Tat war für mich eigentlich relativ einfach zu verstehen oder man hat viel davon gehört und für mich war das dann relativ logisch, also muss ich auch dazu sagen. Also bleiben wir vielleicht gleich mal beim Speicherkonzept, wie funktioniert dieses ominöse Borrowing Speicherkonzept, was die Welt verändert.",
+            "start": 1485014,
+            "end": 1501564,
+            "confidence": 0.80218,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Okay angenommen ich habe jetzt einen Integer Wert.",
+            "start": 1502019,
+            "end": 1506284,
+            "confidence": 0.774,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Kenne ich ja 5, 6, 7.",
+            "start": 1506304,
+            "end": 1508717,
+            "confidence": 0.6766666666666667,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Genau nimm dir einen beliebigen.",
+            "start": 1508727,
+            "end": 1511349,
+            "confidence": 0.7307999999999999,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Andi du kannst ja auch gerne einen aussuchen.",
+            "start": 1511389,
+            "end": 1512871,
+            "confidence": 0.42900000000000005,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Wünsche dir einen gerne. 24. 24.",
+            "start": 1512911,
+            "end": 1514062,
+            "confidence": 0.5643333333333334,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Ne 42 ist schwach aber okay.",
+            "start": 1514072,
+            "end": 1514913,
+            "confidence": 0.25066666666666665,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Ja, und wir haben diese 24 irgendwo im Speicher liegen. Wo liegt die generell? Ja, das kommt jetzt drauf an. In Python liegt die auf dem Heap. In Java liegt die auf dem Heap oder auf dem Stack. In Rust liegt die auf dem Stack. Der Stack ist ein relativ einfacher kleiner Speicher, der einfach nach oben wächst und wo man an sich immer irgendwas drauf stapelt. Deswegen Stack. Und man kann von oben was nehmen oder man kann irgendwas drauflegen. Das macht den schnell, aber das macht den auch relativ trivial. Und das macht den auch nicht gut einsetzbar für manche speziellen fälle wie zum beispiel dateien aber für integer ist er wunderbar das heißt wir legen uns diese integer auf den stack die 24 ganz wichtig und irgendwann mal holen wir die wieder vom stack und zwar wenn wir die vielleicht benutzen und irgendwie was addieren und dann legen wir das ergebnis wieder auf den stack. Und irgendwann verschieben wir das in eine Funktion hinein und dann ist die Frage, was passiert dann? Ist dieser Wert dann weg oder ist der dann noch da? In Rust gibt es Traits. Traits sind wie Interfaces eigentlich. Und eine Interface, die relativ wichtig ist, ist das Copy Trait. Und jeder Datentyp, der den Copy Trait implementiert, kann frei kopiert werden. Und das Kopieren ist relativ günstig. Im Fall von einer Funktionsübergabe gehen neue stack frame auf das heißt man startet mit einem leeren stack und legt diese zahl auf diesen leeren stack also macht ein copy.",
+            "start": 1518584,
+            "end": 1604451,
+            "confidence": 0.8133215686274508,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Das heißt ein call by value.",
+            "start": 1604491,
+            "end": 1606851,
+            "confidence": 0.5866666666666667,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Ganz genau so rust ist halt in der beziehung relativ explizit im vergleich zu anderen sprachen weil jetzt wird es spannend angenommen ich habe jetzt kein integer sondern ich habe einen komplexeren datentyp wie eine datei. Dann liegt auf dem Stack eventuell nur ein Pointer, also was heißt eventuell, da liegt nur der Pointer auf diese Datei und die Datei selber ist irgendein Objekt im Heap. Heap ist ein großer Speicher, der komplett weggelöst ist von der CPU. Der wird von mir aus verwaltet vom Betriebssystem und liegt irgendwo auf einer Memorypage. Das heißt, man hat schon intuitiv das Gefühl, da sind mehrere Ebenen der Indirektion zwischendrin, bis man sich darauf zugreifen kann. Das heißt, es ist ein relativ großer, aber auch relativ langsamer vergleichsweise Speicher. Jetzt bei einer Datei ist es so, angenommen, ich habe jetzt wieder einen Funktionsaufruf und ich übergebe diese Datei, dann kann ich danach nicht erwarten, dass diese Datei in meiner Funktion, wo ich die andere Funktion von aufgerufen habe, noch verfügbar ist. Die Datei ist weg. Die Ownership ist übertragen auf die neue Funktion. Jetzt fragt man sich natürlich, warum?",
+            "start": 1606871,
+            "end": 1673092,
+            "confidence": 0.8187204301075268,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Moment, was heißt Ownership?",
+            "start": 1673132,
+            "end": 1675394,
+            "confidence": 0.7454999999999999,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Die Idee dahinter ist, Es gibt einen Besitzer dieses Speicherbereichs, es gibt einen Besitzer dieser Datei, genau. Und im echten Leben ist es ja auch so, wenn ich dir die Fernbedienung gebe, dann habe ich nicht die Fernbedienung, sondern du hast sie dann. Ist jetzt die Frage, ob ich sie dir geschenkt habe oder ob ich sie dir geliehen habe.",
+            "start": 1675434,
+            "end": 1692517,
+            "confidence": 0.8200333333333332,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Das heißt, du reichst die Fernbedienung an diese Funktion weiter und solange die Funktion diese Fernbedienung besitzt, kann nur diese Funktion in die Datei schreiben oder die, was auch immer mit der Fernbedienung zu machen ist.",
+            "start": 1693018,
+            "end": 1704742,
+            "confidence": 0.8185555555555557,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Ganz genau.",
+            "start": 1704782,
+            "end": 1705862,
+            "confidence": 0.9085,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Und du hast sie nicht mehr.",
+            "start": 1705902,
+            "end": 1707042,
+            "confidence": 0.7765,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Genau. Aber auch wenn diese Funktion dann returnt, ist immer noch die Frage, was mit dieser Datei passiert. Nur wenn dann wieder eine Zuweisung passiert, also wenn ich mir die Datei wiederhole von der Funktion, habe ich sie auch wieder. Wenn die Funktion einfach beendet und nichts.",
+            "start": 1707082,
+            "end": 1721467,
+            "confidence": 0.8631489361702128,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Zurückgibt, Das heißt, du kannst die Ownership dann auch returnen wieder.",
+            "start": 1721507,
+            "end": 1726408,
+            "confidence": 0.6610909090909091,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Genau, und das ist ein ganz ganz wichtiges Konzept. So funktioniert Speicherverwaltung in Rust.",
+            "start": 1726428,
+            "end": 1731089,
+            "confidence": 0.7805714285714286,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Das heißt, es kann wirklich nur eine Funktion, ein Block, wie man es auch immer sieht, auf eine Ressource zugreifen. Und es können nie zwei parallele Welten auf die Datei zugreifen zum Beispiel.",
+            "start": 1731129,
+            "end": 1743552,
+            "confidence": 0.8076666666666668,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Es gibt noch ein zusätzliches Konzept, das nennt sich Borrowing. Und beim Borrowing ist es so, solange es nur lesende Zugriffe sind, kann ich die beliebig oft verteilen, diese Werte. Ich kann ein Borrow zum Beispiel an verschiedene Leute geben. Angenommen, ich habe jetzt ein Gästebuch, dann können verschiedene Leute da reinschauen gleichzeitig und können lesen.",
+            "start": 1743919,
+            "end": 1763484,
+            "confidence": 0.8117142857142857,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Das heißt, es wird zwischen Lesen und Schreiben nochmal unterschieden.",
+            "start": 1763504,
+            "end": 1765904,
+            "confidence": 0.797,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Ganz genau, ja. Aber das Spannende ist eben dieses Ownership-Konzept, bei dem Speicher dann weitergereicht wird. Das ist für viele auch kontraproduktiv. weil in C++ ist es vollkommen valide, dass man eine Funktion aufruft und hat danach noch einen Pointer auf zum Beispiel diese Datei. Aber eben ist klar, dass mit dieser Datei etwas Böses passiert, wenn die Funktion delete heißt. Ja, delete file, dann ist ganz klar, danach ist diese File nicht mehr da. Und ich glaube, das sind so Stützen, die man sich zunutze machen kann in Rust und sich immer wieder vor Augen führt, was kann denn am allerschlimmsten passieren? Und Rust ist in der Beziehung extrem explizit, und will, dass schlimme Dinge nicht passieren.",
+            "start": 1765924,
+            "end": 1805625,
+            "confidence": 0.8276101694915254,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Das heißt aber, wenn die Fernbedienung nicht zurückgeliefert wird, also nicht returned wird, dann kommt auch irgendwann Speichermanagement, Garbage Collector und removed meine Datei aus dem Speicher.",
+            "start": 1805685,
+            "end": 1818116,
+            "confidence": 0.8598148148148148,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Es gibt keinen Garbage Collector, aber ähnlich wie in C mit free gibt es in Rust ein Drop. Und dieses Drop wird automatisch ausgeführt und wird eingefügt an die Stelle, wo die Funktion beendet.",
+            "start": 1818176,
+            "end": 1829886,
+            "confidence": 0.8369117647058825,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Das heißt, wenn die Ownership verloren geht, dann wird automatisch getroppt.",
+            "start": 1830606,
+            "end": 1838168,
+            "confidence": 0.8270909090909092,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Ganz genau. Und dieses Konzept gibt es auch aus C++ und das heißt eben dort Ray und da ist auch die Konvention, dass der Owner für das Aufräumen verantwortlich ist, es sei denn, er gibt die Ownership weiter.",
+            "start": 1838208,
+            "end": 1851112,
+            "confidence": 0.8092105263157895,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Und Ray ist ein Plugin oder sowas oder ist es wirklich Teil der C++ Sprache?",
+            "start": 1851172,
+            "end": 1855933,
+            "confidence": 0.6898666666666667,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Das ist nur ein Konzept. Das ist eine Abmachung, an die sich C++-Entwickler halten sollten, um genau dieses Problem zu vermeiden. Und der Rust-Compiler verpflichtet den Entwickler, das zu tun.",
+            "start": 1856213,
+            "end": 1869165,
+            "confidence": 0.8551333333333334,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Okay, also dann schalten wir mal zu unserer Corona-Außenstelle. Da kommt sicher eine Go-Frage.",
+            "start": 1869886,
+            "end": 1875451,
+            "confidence": 0.7612857142857143,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Super interessantes Konzept, aber wie werden denn Pointer und Referenzen gehandhabt? Oder gibt es das gar nicht?",
+            "start": 1875471,
+            "end": 1881216,
+            "confidence": 0.8649999999999998,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Es gibt Pointer, es gibt Raw Pointer, das sind wirklich tatsächlich Pointer, so wie man sie aus C oder C++ kennt. Im Endeffekt einfach nur große Zahlen, U-Size, die auf irgendeine Adresse im Speicher zeigen. Es gibt aber auch Smart Pointer, die man vielleicht auch aus C++ kennt oder auch nicht. Aber Smart Pointer haben die interessante Eigenschaft, dass sie etwas smarter sind als normale Pointer, was der Name ja schon sagt. Das Konzept ist relativ einfach. Ich habe etwas, was mir diese Speicherverwaltung für diesen Pointer leichter macht. Also, es ist ein Objekt, das wiederum aufgeräumt wird, wie beispielsweise eine Box in Rust. Und die beinhaltet einen Pointer. Aber auf diesen Pointer greife ich selber gar nicht zu, sondern ich verwalte nur den Speicher über diese Box. Und diese Box ist etwas, was der Rust-Compiler kennt und verwalten kann und auch selber aufräumen kann. Und eigentlich ist damit die pointer verwaltung viel viel sicherer.",
+            "start": 1882017,
+            "end": 1937927,
+            "confidence": 0.8486258064516129,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Und jetzt stelle ich mal eine kätzerische frage weil wir die hatten wir vor kurzem nämlich im podcast in episode 93 als wir über barbara liskov das l in solid gesprochen haben gibt es in russ globale variablen.",
+            "start": 1937967,
+            "end": 1949437,
+            "confidence": 0.7509473684210527,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Es gibt in Rust globale Variablen.",
+            "start": 1950250,
+            "end": 1952232,
+            "confidence": 0.7735,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Wie funktioniert das Borrowing oder der Borrower Checker bei globalen Variablen?",
+            "start": 1952272,
+            "end": 1957135,
+            "confidence": 0.7443636363636362,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Natürlich gibt es in Rust auch Mutexes und es gibt Atomic Ref Counts. Eigentlich muss man sich ganz ganz klar sein, wie man seine Daten verwaltet und was man mit den Daten machen will. Also, warum hat man überhaupt globale Daten? Naja, man hat etwas, was vielleicht an mehreren Stellen gleichzeitig entweder lesend oder schreibend verwendet wird. Wenn es jetzt schreibend ist, dann ist die Frage, kann ich überhaupt an mehreren Stellen gleichzeitig schreiben? Das ist ja nicht immer der Fall. Also wir nehmen jetzt mal ein typisches Beispiel von einer globalen Variable. Das ist eine Config für einen Server. Vielleicht will ich da nur lesend drauf zugreifen. Ja, dann ist das vielleicht vollkommen fein. Aber wenn ich eine globale Variable habe, die vielleicht veränderlich ist, also schon ein Pointer zu einer File und ich habe mehrere Writer, dann muss ich diesen Datensatz, diesen Block im Speicher, muss ich auch irgendwie schützen. Und dann kann ich zum Beispiel einen mutex drum machen mutex was ist mutex ja ich muss einen mutex locken also acquiren eigentlich und bei dieser acquisition kriege ich das recht als einziger diese datei verändern zu dürfen.",
+            "start": 1957175,
+            "end": 2031200,
+            "confidence": 0.8540105263157892,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Aber ist der mutex dann verpflichtend wenn ich eine globale variable mache.",
+            "start": 2031240,
+            "end": 2035862,
+            "confidence": 0.7724166666666665,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Nee es gibt nämlich auch fälle wo es vollkommen okay ist dass man dinge zum beispiel gleichzeitig liest.",
+            "start": 2035902,
+            "end": 2041485,
+            "confidence": 0.851388888888889,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Aber jetzt im schreibenden Fall.",
+            "start": 2042297,
+            "end": 2044179,
+            "confidence": 0.8927999999999999,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Im schreibenden Fall ist auch wiederum das Problem, okay, wenn ich wirklich eine globale Variable haben will, dann komme ich natürlich in Konflikten.",
+            "start": 2044239,
+            "end": 2054067,
+            "confidence": 0.8383043478260869,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Mir ist klar, dass es keinen Sinn macht, aber ist es verpflichtend von der Sprache her, ich habe einen globalen Counter zum Beispiel, muss ich da dann mit Mutex drauf zugreifen, wenn jetzt keine Ahnung mehrere Prozesse habe oder Threats oder keine Ahnung wie es in, in rust heißt aber ich greife jetzt auf diesen globalen counter zu ohne mutex ist es grundsätzlich möglich oder ist es sowieso nur über mutex möglich.",
+            "start": 2054107,
+            "end": 2075762,
+            "confidence": 0.7562916666666667,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Also in rust gibt es auch atomics das heißt da macht das der die cpu für dich und entscheidet dann dass du atomar zum beispiel eine zahl erhöhst also ein increment machst.",
+            "start": 2076181,
+            "end": 2088549,
+            "confidence": 0.8565625000000002,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Was aber auch wieder mutex eigentlich im hintergrund mehr oder weniger ist.",
+            "start": 2088589,
+            "end": 2091389,
+            "confidence": 0.8196666666666665,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Ja das ist halt ein Mutex in Hardware oder du hast halt einen klassischen Mutex. Dann ist halt eigentlich auch die Frage, willst du davon mehreren Threads auszugreifen oder nur von mehreren Stellen im selben Thread.",
+            "start": 2091710,
+            "end": 2106646,
+            "confidence": 0.7322777777777778,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Aber ich meine diese ganze Atomic und Mutex Geschichte, das ist ja nicht Rust spezifisch. Das gibt es in Go, das gibt es in Java, das gibt es in C++, das gibt es ja überall.",
+            "start": 2106706,
+            "end": 2113533,
+            "confidence": 0.6988,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Ja die frage ist halt ob es verpflichtend ist.",
+            "start": 2113928,
+            "end": 2115931,
+            "confidence": 0.7931111111111111,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Genau also hilft der compiler dir und sagt nee ist nicht oder weil ich meine du setzt ja schon das ownership und borrowchecker modell komplett außer außer kraft in irgendeiner art und weise.",
+            "start": 2115951,
+            "end": 2124261,
+            "confidence": 0.756030303030303,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Nee nee das ist immer noch genau so präsent wie ganz am anfang.",
+            "start": 2124301,
+            "end": 2127705,
+            "confidence": 0.7579230769230769,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Also der compiler verpflichtet dich dazu.",
+            "start": 2127725,
+            "end": 2129247,
+            "confidence": 0.6831666666666667,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Der compiler verpflichtet sich dazu das zu entscheiden. An der Stelle, an der du mit dem Compiler, mit diesen Regeln in Konflikt kommst, wird dein Programm nicht kompilieren, und dein Compiler sagt dir dann auch ganz genau warum. Also entweder du hast dann den Fall, dass Ownership übertragen wurde zu einem anderen Writer beispielsweise, und dann musst du entscheiden, wie du das verhindern kannst. Eben durch einen Clone, dass du die Daten kopierst beispielsweise, oder dass du einen Mutext drumherum machst. Oder du kannst es eben nicht so modellieren und musst dir eine andere Lösung suchen, wie Atomics, oder du hast halt einfach am besten gar keine globalen Variablen.",
+            "start": 2129267,
+            "end": 2162830,
+            "confidence": 0.7945963302752297,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Das heißt, dieses Modell vereinfacht mir dann das parallele Arbeiten genauso?",
+            "start": 2162850,
+            "end": 2166832,
+            "confidence": 0.8206363636363636,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Ja, in der parallelen Welt ist sowas zum Beispiel noch viel, viel wichtiger. Also angenommen, ich habe jetzt ein Threadpool mit zehn Threads. Ja, dann ist ein Mutex alleine nicht genug, weil dann muss ich mich fragen, wann kann ich beispielsweise dieses diese Variable aufräumen. Ich kann ja nicht einfach hergehen und dann sagen, okay, der eine braucht das nicht mehr, räume ich mal auf. Nein, weil die neuen anderen eventuell auch noch drauf zugreifen.",
+            "start": 2167272,
+            "end": 2191481,
+            "confidence": 0.8095600000000002,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Aber da hilft mir dann der Compiler damit, weil in Java, da kann ja jeden, sogar in Java, das eigentlich sehr restriktiv ist, kann ja doch sehr viel Bullshit bauen, sobald ich Threads verwende und einfach parallel auf irgendwelche Dinge schreiben und es gibt einen großen Fuck-up am Ende.",
+            "start": 2191521,
+            "end": 2208407,
+            "confidence": 0.7962857142857142,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Ja, aber wie? Der Compiler macht folgendes. Man bekommt als Threaten eine Variable mit einem mutex übergeben. An einer Stelle ist dann beispielsweise Schluss mit einer Funktion und dann würde diese Variable aufgeräumt werden, weil da ein implizites Drop eingefügt wird. Und dann hat man aber in einer anderen Stelle im Code oder vielleicht im selben Threadpool nochmal einen anderen Thread, der auch darauf zugreifen will. Und dann sagt einem der Compiler, ja das ist aber nicht möglich, weil die Variable ist jetzt schon gedroppt. Dann musst du dir überlegen, wie du das machst. Dann kannst du beispielsweise einen Arc drum herum bauen, also einen Atomic Reference Count. Atomic tatsächlich, weil das wiederum in Hardware ist. Die CPU unterstützt das und da wird einfach hochgezählt, wie viele Owner es in dem Fall gibt auf diesen Mutex, in dem die Variable steckt. Dann wird das hochgezählt und wenn der Zähler bei 0 ist, dann wird aufgeräumt. Also da ist der Compiler schon sehr gut und sehr unterstützend.",
+            "start": 2208967,
+            "end": 2263375,
+            "confidence": 0.7888614457831324,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Das klassische Entwicklermodell ist ja eigentlich, du programmierst was, compilest das und du kriegst irgendwie eine komische kryptische Errormeldung. Du packst die früher nach Google, vielleicht jetzt nach JetGPT, bist auf Stack Overflow gelandet.",
+            "start": 2263875,
+            "end": 2278180,
+            "confidence": 0.7565882352941176,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Du sprichst jetzt von Go, oder?",
+            "start": 2278220,
+            "end": 2280021,
+            "confidence": 0.5828333333333333,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Ne, so generell.",
+            "start": 2280141,
+            "end": 2280981,
+            "confidence": 0.54,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Mit den kryptischen Fehlermeldungen.",
+            "start": 2281001,
+            "end": 2282082,
+            "confidence": 0.264,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Von PHP, von mir ist auch Runtime Fettel Error. Python irgendwas mit einem Dict, ne? Wir kennen das alle. Auf jeden Fall kopierst du dann die erste Stack-Overflow-Antwort und jetzt die erste Chat-GPT-Antwort und dann geht's einfach weiter. Und vom Compiler im Rust hört man nur Gutes. Der sagt dir genau diese Zeile, diese Stelle, das machst du falsch und das sollte der Code sein, der da stehen sollte.",
+            "start": 2282102,
+            "end": 2303688,
+            "confidence": 0.6990144927536229,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Ist so ein Co-Pilot, der aber recht hat.",
+            "start": 2304530,
+            "end": 2306551,
+            "confidence": 0.595,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Ja, aber irgendwie ohne AI. Ja, aber schon noch das, was vielleicht ein Mensch verstehen kann.",
+            "start": 2306571,
+            "end": 2311173,
+            "confidence": 0.7241875,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Statistisch berechnen, oder statistisch einfach durchkalkuliert, ja genau.",
+            "start": 2311233,
+            "end": 2315155,
+            "confidence": 0.64275,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Ändert sich dein Entwicklungsworkflow?",
+            "start": 2315215,
+            "end": 2317397,
+            "confidence": 0.84425,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Absolut.",
+            "start": 2317597,
+            "end": 2318277,
+            "confidence": 0.808,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Also, verstehst du mehr die Fehler? Weil ich habe das Gefühl, umso mehr ich auf SecOverflow bin, umso weniger nehme ich mir die Zeit, die Beschreibung zu lesen.",
+            "start": 2318357,
+            "end": 2326141,
+            "confidence": 0.7923571428571429,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Oder noch schlimmer ist ja ein segfault, so ganz klassisch segfault, period, that's it.",
+            "start": 2326735,
+            "end": 2332357,
+            "confidence": 0.7302142857142856,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Absolut ändert sich das. Also man wird generell defensiver, man wird aufmerksamer und checkt mehr nach Fehlern, also man schaut, habe ich da wirklich geprüft, ob diese Variable beispielsweise null ist in anderen Sprachen oder nicht. In Rust gibt's kein Null, aber es gibt beispielsweise auch ein None. Und auch dieser Fall muss gehandelt werden. Beispielsweise gibt's in Rust das Konzept von Some Types, Results und Option. Und in Result ist es beispielsweise so, das sind zwei Werte, die eventuell passieren können. Entweder man hat einen OK-Wert, das heißt, da ist ein OK, und man klickt den Wert aus diesem OK, aus dieser Variante. Und die andere Variante ist ein Error, und dann klickt man ein Error aus dieser Variante. Aber man muss beide Fälle abdecken und irgendwie handeln. Man kann natürlich auch ein Unwrap machen und dann einfach auf den Fall hoffen, dass da wirklich auch ein Wert drin ist. Aber an der Stelle würde ich sagen, es ist auch da explizit, dass man diesen Fall irgendwie behandeln muss. Und ich denke, man wird da in der Beziehung auch vom Compiler ein bisschen an die Hand genommen und besser geschult. und eigentlich hätte ich ganz gerne so ein tool vor 15 jahren gehabt als ich das erste mal vielleicht oder vielleicht sogar vor 20 jahren schon als ich das erste mal c programmiert habe weil das wäre ein richtig guter trainer gewesen der einem sagt was für fehlerfälle passieren können leider musste ich das auf die harte art und weise lernen Aber es wäre schon sehr schön gewesen, so einen Compiler früher zu haben.",
+            "start": 2332377,
+            "end": 2423487,
+            "confidence": 0.8202754716981137,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Wir reden jetzt ziemlich viel über Memory Safety, über der Compiler hilft dir, über ... Es gibt fast keine Runtime-Fehler. Und dann gibt's diese dreckige Ecke da drüben, ja? Dieses unsafe Keyword, ja? Meine Frage ist, gibt es unsafe Rusts? Und was sind valide Anwendungsfälle dafür, sich in diese Ecke zu begeben?",
+            "start": 2423507,
+            "end": 2445834,
+            "confidence": 0.8306730769230767,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Fundamental ist alles, was man am Computer macht, unsafe. Das ist einfach eine Realität des Lebens. Es kann passieren, dass einem ein User einfach keinen validen Input gibt. Es kann passieren, dass ein Prozess abstürzt, den man irgendwo als Subroutine gestartet hat. Es kann passieren, dass beispielsweise das Netzwerk flöten geht oder dass die Disk voll ist oder dass das Betriebssystem einen Bug hat. Also eigentlich ist die ganze Welt unsafe. Und man muss sich nur überlegen, wie man damit umgeht. Man kann jetzt zum Beispiel den Weg einschlagen, dass man sagt, okay, wenn alles unsafe ist, dann ist es ja auch egal, was ich in meiner Programmiersprache mache, weil ich kann ja eh die Welt nicht retten. Das ist so der Ansatz vielleicht von C oder C++, wo unsafe einfach Standard ist. Man kann auch den Weg gehen und sagen, eigentlich ist alles schön der heile Welt und ich kümmere mich gar nicht darum, sondern ich gehe mal davon aus, alles ist safe. Und dann läuft man halt einfach zur Runtime in gewisse Probleme wie bei Python oder PHP. Oder man kann einfach wie Rust sagen, okay, es gibt unsafe, aber das heißt nicht, dass unser Code selber unsafe sein muss. Wenn man in die Rust Standard Library reinschaut, wird man sehr, sehr viel Unsafe finden. Eben genau diese Fälle, also Architekturunterschiede zwischen verschiedenen Betriebssystemen oder verschiedenen Architekturen vom System. Und das abstrahiert man eben über Unsafe, weil man da wissen muss, dass diese Dinge fehlschlagen können und dass diese Dinge inhärent schwierig zu handeln sind. Also Memory Management. Angenommen, ich kriege ein Paket übers Netzwerk, ist da jetzt wirklich das drin was ich erwarte ja ich muss das irgendwie interpretieren dann muss ich das transmuten dann kann es passieren dass das vielleicht nicht valide ist, aber darum herum hat man eben an safe rapper gebaut damit andere leute also die rust user nicht damit arbeiten müssen die müssen sich solche gedanken nicht machen, sondern die können sich darauf verlassen, dass diese eine Implementierung, die es in der Standard Library gibt, genau für dieses Problem eben peer-reviewed ist und sehr viele Leute da drauf geschaut haben, um festzustellen, dass alle Fehler behandelt worden sind. Also Stichwort Sortierung beispielsweise. Das ist natürlich ein superschneller Algorithmus, bei dem sehr, sehr viele Dinge im Speicher gemacht werden, mutable gemacht werden, und die sind natürlich alle unsafe. Aber nur weil ich den Sortieralgorithmus benutze, heißt es nicht, dass meine Daten beispielsweise auch unsafe sind. Ich übergebe die dieser Standard-Library-Funktion, und ich weiß, die machen die richtigen Dinge, weil da sehr viele Leute draufgeschaut haben, und dann ist das okay. Und die Art und Weise, wie man Rust programmiert, ist eigentlich, dass man sehr, sehr wenig Unsafe programmiert. Also ich kann aus Erfahrung sprechen, ich habe Unsafe wahrscheinlich zwei-, dreimal gebraucht in den ganzen Jahren, in denen ich jetzt Rust programmiere, seit 2015 oder 2014.",
+            "start": 2446754,
+            "end": 2618299,
+            "confidence": 0.8416985446985444,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Jetzt ist Rust natürlich auch eine sehr junge Sprache. Und immer, wenn etwas Neues begonnen wird, stelle ich mir die Frage, wann wird man sich über die Fehler, die man implementiert hat, bewusst? Und jetzt kommen wir zu diesem Thema, was Go-Leute natürlich lieben, Backwards-Kompatibilität. Leider muss man da sagen, Go ist da unglaublich stark, bereits über zehn Jahre. Wie geht Rust mit Rückwärtskompatibilität um?",
+            "start": 2618309,
+            "end": 2644363,
+            "confidence": 0.8292923076923076,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Ja, erstens mal, wie macht's Go? Go sagt einfach, wir wollen nicht auf eine 2.0, das heißt, alles, was wir bis jetzt gemacht haben, muss irgendwie backwards compatible sein. Was extrem beeindruckend ist, das muss ich wirklich zugeben.",
+            "start": 2645023,
+            "end": 2658328,
+            "confidence": 0.828263157894737,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Das hat BHB auch gemacht, ich weiß nicht, ob das so beeindruckend ist.",
+            "start": 2658368,
+            "end": 2660809,
+            "confidence": 0.48853846153846153,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Ja, der Unterschied ist allerdings, dass Go intern sehr, sehr lange entwickelt wurde und sehr lange benutzt wurde, bevor es freigegeben wurde. Das heißt, diese ganzen rückwärts inkompatiblen Changes haben die vorher gemacht.",
+            "start": 2661749,
+            "end": 2673734,
+            "confidence": 0.8306969696969698,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Ja, ich meine, klar, BHP ist sicher das schlechteste Beispiel, wenn du dir anschaust, wie Funktionennamen und so weiter. Aber das ist eine andere Historie, muss man auch dazu sagen.",
+            "start": 2673754,
+            "end": 2682738,
+            "confidence": 0.5908666666666665,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Aber ich meine, auch mit Go 2.0 sind jetzt die ersten Blogposts rausgekommen und sie überlegen auch in 2.0, keine Rückwärtskompatibilität zu brechen. Sondern, wenn es wirklich notwendig ist, soweit ich das verstanden habe, Supported Tooling halt zur Transition zu geben. Dass du halt Tools hast, die deinen Source-Code, ich sag mal, ein bisschen modifizieren oder Änderungen vorschlagen, damit die neue Struktur schaffen können. Ich sag jetzt nicht so wie Python 2 auf Python 3 oder so Packages wie Sixt, was versucht, irgendwie beides zu supporten. Das sind für sich nur alle, würde man sagen, offiziell in die Hose gegangen ist. Aber mich würde mal interessieren, wie macht Rust das? Also wie sorgt Rust dafür, zum Beispiel neue Features wie Async, das Async-Keyword haben sie vor anderthalb Jahren eingeführt oder ähnliches. Und was wäre passiert, hätte ich eine Variable mit dem Namen Async gehabt?",
+            "start": 2682778,
+            "end": 2733933,
+            "confidence": 0.7858680555555557,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Das ist ein echt gutes Beispiel. Ich komme auf dieses Async-Keyword gleich nochmal zu sprechen, weil es ist spannend. Ich erinnere mich daran, wenn ich es vergesse. Die grundsätzliche Idee ist, man will ja keine backwards incompatible changes haben. Warum ist das so? Weil Toolchains einfach darauf basieren, weil gewisse Prozesse in Firmen darauf basieren, dass der Compiler stabil ist. wenn ich nen change mache dann ist das immer eine große disruption das hat man bei python 2 vs 3 gesehen das hat, jahre gedauert ich weiß nicht vielleicht zehn jahre insgesamt bis dass die endlich mal anstand sind dass die meisten abgegradet haben das heißt für eine sprache ist es extrem aufwendig und schwierig sowas zu tun. Rust will das natürlich mit allen Mitteln verhindern und Anfang 2017, vermute ich mal, hat man festgestellt, dass man wahrscheinlich Breaking Changes braucht. Das war eine Zeit nach Rust 1.0, die Leute haben das zum ersten Mal wirklich produktiv eingesetzt, haben dann festgestellt, es gibt ein paar Bugs, die man nur beheben kann, indem man ändert, was der Compiler macht. Nicht, was der Compiler für Code generiert, sondern wie der Compiler gewisse Dinge handelt. Da geht es Richtung auch wieder Ownership und Borrowing und Lifetimes, non-lexical Lifetimes. Da hat man einfach festgestellt, okay, wir können das nicht einführen, wenn wir da kein Bracking Change machen. Async ist auch zum Beispiel ein Keyword gewesen, was man zu der Zeit reservieren wollte, weil man wusste, dass man das eventuell braucht. Aber es ist richtig. Was ist denn, wenn man ein Keyword in seinem Code hat? Dann ist der Code potenziell invalide, wenn der neue Compiler rauskommt. Angenommen, ich schreibe jetzt Async und das ist aber jetzt ein Keyword in der neuesten Version, dann ist das ein Breaking Change. Dann hat man sich natürlich überlegt, wie kann man das machen, ohne dass man jetzt sehr viele Menschen verkrault und vor allen Dingen die Firmen, die jetzt da sehr viel investiert haben und sehr gewillt sind, das auszuprobieren. Man hat sich echt ein interessantes Konzept einfallen lassen. Am Anfang nannte man das Epochs, mittlerweile heißt es Editions. Und die Idee von einer Edition ist, dass die im Compiler in der Standard Library eingebunden ist. Und dass dort steht, für welche Compiler-Version welche Standard Library gilt und welcher Compiler gilt. Das heißt, es gibt nicht einen Compiler, den man sich installiert, sondern mehrere. Wenn man jetzt den Rust-Compiler in Anführungszeichen herunterlädt, dann lädt man immer alle Editions herunter. Man kann frei in diesen Editions hin und her wechseln. indem dass man einfach in der Cargo-Trommel seine Edition angibt. Also die aktuelle ist 2021 und es gibt wahrscheinlich auch eine 2024er Version wieder. Es gibt eine 2015er Version, das war die davor. Und das war im Endeffekt Rust 1.0. Aber der ganze Compiler, die ganze Legacy ist da mit drin. Die wird weiter verwaltet. Aber das ist für viele Leute besser, als wenn man die Legacy auslagert in die Applikationen, die Rust verwenden. Das ist ein interessantes Konzept. Jetzt kann man natürlich auch fragen, muss man dann für jeden Breaking Change eine neue Edition machen? Das wäre ja fatal. Dann könnte man ja an sich nicht viel ändern, weil man immer gebunden wäre an diese Editions. Und Editions selber sind auch ein großer Aufwand, bei dem man dann meistens auch die Toolchain aktualisiert, wie LLVM, die Low-Level Virtual Machine von Apple. Das ist der Compiler Generator im Backend. aber wie kann man das vermeiden man will zum einen kleine breaking changes machen aber man will nicht immer wieder eine neue edition rausgeben und da gibt es ein cooles konzept das nennt sich crater das ist ein tool mit dem alle kreis, die jemals veröffentlicht wurden kreis sind externe libraries genau packages libraries dependencies genau und die sind auf kreis.io und jeder kann natürlich ein eigenes kreis veröffentlichen und mittlerweile gibt es da hunderttausende davon, Wenn jetzt festgestellt wird, dass man etwas im Compiler ändern will, dann kann man einen sogenannten Crater Run machen. Und der geht her und lädt wirklich jede Dependency herunter, kompiliert die mit der geplanten Änderung und schaut, ob dieses Crate davon beeinflusst ist. Wenn das nicht der Fall ist, dann macht man diese Änderung einfach. Und dann ist es kein Breaking-Change, man nennt das dann Soft-Breaking-Change, weil technisch gesehen ist es ja einer. Aber man braucht keine neue Version dafür, weil dieses Feature benutzt keiner. Und damit ist es fine.",
+            "start": 2734754,
+            "end": 2995409,
+            "confidence": 0.806819293478261,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Willst du mir eigentlich sagen, die Leute, die Rust schreiben und maintainen, haben sich ein Ecosystem und ein Tooling geschaffen, womit die verifizieren können, ob Features genutzt werden und wie sie genutzt werden?",
+            "start": 2995429,
+            "end": 3007932,
+            "confidence": 0.8281212121212119,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Ja. Und dieses Tooling ist Open Source und diese ganze Infrastruktur wird gesponsert, ich glaube von AWS. Und da laufen Tag und Nacht große Maschinen, die Crater Runs machen und das komplette Ecosystem auf solche Änderungen checken.",
+            "start": 3007972,
+            "end": 3022541,
+            "confidence": 0.8277837837837839,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Also sehr pragmatischer Ansatz eigentlich.",
+            "start": 3022601,
+            "end": 3025263,
+            "confidence": 0.786,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Sehr pragmatisch.",
+            "start": 3025283,
+            "end": 3026104,
+            "confidence": 0.8314999999999999,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Also man schließt ja nicht damit aus, dass niemand das verwendet, aber zumindest der Großteil, die Masse.",
+            "start": 3026144,
+            "end": 3032348,
+            "confidence": 0.7151176470588235,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Sehr, sehr ähnlich ist. Die schauen sich das Ecosystem an und schauen, wie werden Features genutzt, zum Beispiel jetzt Logging-Libraries oder damals das Package-Management und versuchen dann, ich sag mal, die beste Lösung, das beste Design in die Sprache zu überführen. Und ich muss sagen, Hut ab, also Wahnsinn, ja? Also immer, wenn wir von datengetriebenen Entscheidungen sprechen, du kannst zwar immer noch von einer opinionated Implementierung sprechen, aber es ist halt schon sehr, sehr datenbasiert, weil du hast halt die komplette Community, sourcecode auf auf crates.io das bedeutet natürlich leider nur open source version sind damit berücksichtigt glaube ich ja was glaube ich schade ist weil die großen firmen bin ich sicher dass jetzt amazon jetzt nicht alles öffentlich macht oder dropbox oder wen auch immer.",
+            "start": 3034755,
+            "end": 3078970,
+            "confidence": 0.8016850393700782,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Du nannt hast selber schuld Liebes Dropbox.",
+            "start": 3078990,
+            "end": 3083675,
+            "confidence": 0.6208571428571429,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Kannst du bitte deinen Metadatenstorage veröffentlichen?",
+            "start": 3083695,
+            "end": 3086158,
+            "confidence": 0.5735,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Entweder Open Source oder man wird nicht berücksichtigt, das ist schon ein fairer Zugang würde ich sagen.",
+            "start": 3086198,
+            "end": 3090324,
+            "confidence": 0.6838823529411764,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Also was man da vielleicht noch kurz anmerken will ist, dass Rust halt immer noch einen Schritt weiter geht. Die checken nicht nur, ob eine änderung irgendwelchen impact auf grades hat sondern wenn die feststellen das sind auch grades die davon betroffen sind dann gehen die her kontaktieren die maintainer und senden den pull request und sagen es tut uns leid wir müssen hier eine soft breaking change machen kannst du diese änderung merchen und nur wenn die gemerged ist gehen die auch her und machen das wirklich diese änderung das ist schon wirklich next level würde ich sagen sehr sehr gut also.",
+            "start": 3090364,
+            "end": 3122870,
+            "confidence": 0.8185436893203888,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Ich finde schon kunst ist sehr spannend dass man diese Vernetzung der welt einfach nutzt diese daten die man heutzutage bekommt diese statistischen daten von den usern von der usage ist schon sehr cool aber ich probiere mal raus zu zoomen auf meter level und zwar ich bin aktuell gerade in so einem gremium und wir diskutieren gerade über so einen lehrplan für eine schule für einen informatikzweig Und interessanterweise wir haben über sprachen diskutiert und dann ist so rust aufgekommen und alle haben irgendwie so gemeint rust ist super wir sollten rust machen und dann habe ich irgendwie so nachgefragt hat jemand von euch schon mal rust probiert und wir alle nein aber rust ist ja cool rust sollten wir schon probieren wie schafft rust dieses marketing dass alle leute irgendwie über rust sprechen und ich kenne ganz wenig leute die wirklich rust mal probiert haben ich selber ich bin irgendwie eigentlich schon sehr überzeugt über rust aber meine rust erfahrung das sind eigentlich fatale erfahrung paar zeilen und ich bin gescheitert also warum warum ist rust so beliebt obwohl es niemand verwendet weil es wäre wirklich Du weißt es ja selber als Berater, es gibt ein paar Nischen, wo Rust verwendet wird, aber es ist sicher keine breite Masse, die Rust verwendet.",
+            "start": 3122910,
+            "end": 3195542,
+            "confidence": 0.7588831775700938,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Ja, der erste Anstoß ist natürlich immer, ich will was Neues lernen. Ich fühle mich eingeschränkt in meiner aktuellen Umgebung. Also sowas bei mir zumindest. Ich habe Python sehr gemocht, aber habe einfach festgestellt, da gibt es einfach gewisse Dinge, die ich in Python nicht bauen wollen würde. Dinge, die ich aber immer schon mal bauen wollte. Eine Shell vielleicht.",
+            "start": 3196597,
+            "end": 3216454,
+            "confidence": 0.7754166666666666,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Ja, aber du bist ja ein Hardcore Rust-User und Rust-Fan. Warum sind so viele Leute Rust-Fan, obwohl sie es nie probiert haben?",
+            "start": 3216474,
+            "end": 3223260,
+            "confidence": 0.6723636363636364,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Das marketing ist also warum ist warum.",
+            "start": 3224005,
+            "end": 3225907,
+            "confidence": 0.5539999999999999,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Hat rast so ein gutes image das ist meine frage warum hat rast so.",
+            "start": 3225927,
+            "end": 3230051,
+            "confidence": 0.5982857142857144,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Ein gutes image ich glaube es ist wie bei allen neuen dingen die haben halt was magisches in sich, denke auch dass das irgendwann verfliegt und dass dann einfach die realität die sprache auch irgendwann wieder einholen wird man muss natürlich auch bedenken, Man ändert jetzt nicht oft seine Programmiersprache. C++ ist vielleicht 40 Jahre alt, C über 60 und man kann jetzt nicht sagen, dass man jetzt von heute auf morgen direkt anfängt, komplett produktiv Frost zu entwickeln. Also das Interesse ist da. Warum ist das Interesse da? Naja, weil man natürlich immer von diesen Erfolgsgeschichten hört. Zehnmal so schnell und der Compiler ist so gut und das Marketing ist natürlich extrem gut in der Beziehung. Und Leute profilieren sich natürlich auch gerne drüber dass sie vielleicht auch über den Tellerrand schauen und einfach neue Features ausprobieren wollen und am aktuellsten Puls der Zeit sind. Vielleicht ist rust jetzt momentan einfach die gehypte Sprache und in ein paar Jahren ist es dann vielleicht sick oder was weiß ich wie oder irgendwas anderes.",
+            "start": 3230071,
+            "end": 3288896,
+            "confidence": 0.8276416184971097,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Man muss schon sagen, es sind natürlich Features, die man nicht gewöhnt ist. Man ist nicht gewöhnt, dass der Compiler intelligent antwortet. Der Compiler ist immer dumm und man ist gewöhnt eben, im schlimmsten Fall, du führst das Programm aus, kriegst einen Sack voll und hast null Ahnung, was passiert. Und die Compiler-Meldungen, gerade wenn man an C und C++ denkt, sind manchmal so kryptisch, dass du keine Ahnung hast und du überhaupt mal ewig lang probieren musst, überhaupt zu verstehen, was denn da das Problem ist. Und könnte man sich schon vorstellen, dass das viele Leute als sehr cool empfinden und das gerne verwenden würden, ohne dass sie es wirklich verwenden. Aber man hört das halt und ich bin ja selber auch so. Man hört halt diese Dinge und man wünscht sich eigentlich diese Dinge mit normalen Programmiersprachen. Rust hat dann natürlich eben diese Lernkurve und mal einen schwierigen Einstieg. Glaubst du, dass sich da irgendwas in Zukunft auch noch verändert wird? Rust irgendwann zu die Massensprache oder bleibt es einfach für die, ich sag mal Nische, aber für diesen Spezialbereich von großer Performance, Hardware nahe?",
+            "start": 3289396,
+            "end": 3350929,
+            "confidence": 0.7830427807486634,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Kommt natürlich auf sehr viele Faktoren drauf an. Zum einen entwickeln die User natürlich auch zum Teil die Sprache weiter oder beeinflussen die Sprache besser gesagt. wenn jetzt sehr sehr viele leute beispielsweise aus dem web umfeld kommen und auch merken dass da das ecosystem noch nicht so gut ist und dann vielleicht einfach ihre ideen einbringen dann kann das schon sein, dass sich die sprache in der beziehung schon verbessert persönlich glaube ich es wird nicht soweit kommen dass rust vielleicht javascript oder typescript es wird nicht das neue javascript werden Nee, es ist momentan so, dass das natürlich das größte Ecosystem ist. Rust hat momentan 3,7 Millionen Nutzer und 600.000 davon allein in den letzten sechs Monaten, was ein extrem beachtliches Wachstum ist. Also da ist schon was dahinter, aber ich glaube, es wird vielleicht eher C++ Konkurrenz machen für neue Projekte. Und wenn man jetzt mal überlegt, ist C++ beispielsweise eine beliebte Sprache oder nicht, dann werden die nächste Frage, in welchem Bereich oder für wen. Und C++ ist definitiv eine sehr populäre Sprache in sehr vielen Bereichen wie Gaming, Real-Time, Automotive, Embedded und solche Sachen. Und ich glaube, da ist schon Potenzial, dass das Raster einen großen Teil vom Markt übernimmt. Aber dass es jetzt Python in Data Science große Konkurrenz macht, also nicht als Library, sondern wirklich als User-Facing-Sprache, oder JavaScript im Web-Bereich, das sehe ich jetzt gerade nicht.",
+            "start": 3350949,
+            "end": 3437908,
+            "confidence": 0.8365683760683759,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Du verdienst dein Geld mit Rust und deswegen erwarte ich aber auch eine ehrliche Antwort von dir, neben den ganzen tollen, positiven Dingen.",
+            "start": 3439255,
+            "end": 3447738,
+            "confidence": 0.7981739130434783,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Das war jetzt ein Paradoxon, oder? Wenn man Geld damit verdient, ehrlich zu sein.",
+            "start": 3447778,
+            "end": 3451439,
+            "confidence": 0.7578571428571428,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Ich habe mich auch gewundert. Ich versuche aber trotzdem ehrlich zu sein.",
+            "start": 3452800,
+            "end": 3457101,
+            "confidence": 0.49983333333333335,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Der Andi ist nur ehrlich in seinem Job, obwohl er Geld verdient.",
+            "start": 3457141,
+            "end": 3460022,
+            "confidence": 0.7765833333333333,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Wir sind ja alle ehrlich. Du kriegst eine ehrliche Antwort.",
+            "start": 3460042,
+            "end": 3463243,
+            "confidence": 0.6859,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Was würdest du sagen, sind die Pitfalls und Shortcomings von Rust?",
+            "start": 3463283,
+            "end": 3466104,
+            "confidence": 0.7739999999999999,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Das Async-Ecosystem ist natürlich noch sehr, sehr jung. Viele springen jetzt auf den Zug auf.",
+            "start": 3466459,
+            "end": 3471364,
+            "confidence": 0.8148,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Kannst du kurz erklären, was Async heißt?",
+            "start": 3471384,
+            "end": 3473285,
+            "confidence": 0.6081428571428571,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Genau.",
+            "start": 3473305,
+            "end": 3474326,
+            "confidence": 0.552,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Also ich kenne Async nur aus JavaScript.",
+            "start": 3474366,
+            "end": 3476288,
+            "confidence": 0.6574285714285715,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Ja, es ist sehr ähnlich wie in JavaScript. Du willst mehrere Dinge concurrent ausführen, also nebenläufig, wie man im Deutschen so schön sagt. Du hast zwei Web-Requests, die vielleicht Daten von irgendeiner Datei lesen. Und warum können die nicht nebenläufig ausgeführt werden? Der Compiler und die CPU verwalten das schon für einen.",
+            "start": 3476668,
+            "end": 3497106,
+            "confidence": 0.7780000000000004,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Also ich muss keine Threads und so weiter explizit machen, sondern ich mache Async und das passiert dann automatisch.",
+            "start": 3497146,
+            "end": 3502051,
+            "confidence": 0.6460526315789474,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Genau. Es ist eigentlich auch eine spannende Idee. Viele Leute waren auch sehr große Verfechter von dieser Idee. Ich war unter anderem auch jemand, der sehr stark darauf gewartet hat. Es hat sich halt herausgestellt, dass es mittlerweile so ist, dass man um Async Rust schwer herumkommt. Und dann muss man sich natürlich fragen, warum ist das überhaupt schlimm, weil eigentlich ist es ja eine gute Sache. Aber es ändert auf jeden Fall die Art und Weise, wie man Rust programmiert. Es ist fast wie ein Dialekt. Also ich vergleiche das, es ist so ähnlich wie Spanisch und Portugiesisch. Es klingt sehr ähnlich, es reimt sich, aber es ist halt trotzdem eine andere Sprache. Wenn man jetzt Async Rust benutzt, dann kommt man in dieses Ecosystem halt leicht rein und alle anderen Libraries sind halt auch in Async Rust. Aber wenn man...",
+            "start": 3502091,
+            "end": 3543690,
+            "confidence": 0.746852112676056,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Was heißt das jetzt benutzen? Das ist kein Standard von Rust selber.",
+            "start": 3543730,
+            "end": 3547971,
+            "confidence": 0.6796666666666668,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Das ist irgendwie... Ja, also nur Teile davon sind standardisiert. Das Async und the Wait Keyword ist standardisiert. Futures, das ist ein Trade, ist standardisiert und das ist alles in der Standard Library. Der Rest wird momentan dem Ecosystem überlassen, was eine sehr gute Strategie ist, weil sich die besten Ideen so weiterentwickeln. Außerhalb von der Standard Library ist es natürlich Tokio.",
+            "start": 3548011,
+            "end": 3568942,
+            "confidence": 0.7631612903225808,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Aber ich kann normal Rust runterladen und kann Async, Await verwenden schon.",
+            "start": 3569366,
+            "end": 3574468,
+            "confidence": 0.8023333333333335,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Ja, mit ein paar Sternchen, also man braucht einen Executor, ein Executor ist etwas was die Futures dann ausführt, also eigentlich eine Futures Runtime. Und da gibt es eben eigentlich nur eine große, die heißt Tokio. Damit kann man sehr gut nebenläufige Programmierung betreiben. Aber man kauft sie natürlich ein in dieses komplette Ecosystem. Man braucht dann nicht nur Tokio, sondern vielleicht auch eine Library, um Web-Requests zu machen mit Request. Und all diese Dinge sind halt Async. Das ist halt die große Gefahr, weil dieses System noch relativ neu ist. Ja, der Bereich von Rust ist natürlich noch Ich würde fast sagen experimentell und die art und weise wie man da programmiert ist anders also man muss einfach viele dinge. Bespielsweise in den mutex oder in ark rappen weil dinge einfach. auf verschiedenen Threads ausgeführt werden können und übertragen werden können. Und das muss man zur Compile-Zeit garantieren. Und damit werden die Datentypen leicht komplexer. Und das ist halt eine Gefahr, die man da hat. Und insgesamt würde ich sagen, generell ist es so, dass das Ecosystem halt noch sehr, sehr jung ist. Es gibt sehr viele Libraries, die stabil sind und benutzt werden. Aber es gibt auch sehr viele Dinge, die noch nicht 1.0 erreicht haben.",
+            "start": 3575108,
+            "end": 3647452,
+            "confidence": 0.809600961538462,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Das heißt, kann ich das produktiv schon einsetzen?",
+            "start": 3647872,
+            "end": 3650513,
+            "confidence": 0.6875000000000001,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Auf jeden Fall, ja. Also man muss halt bei den Dependencies ähnlich aufpassen wie beim Node.js. Man kann sich da sehr schnell verfangen und hat sehr, sehr viele Dependencies. Aber natürlich, man kann wunderbar in Rust produktiv programmieren. Ich würde sagen, man sollte etwas defensiv sein und lieber eher auf die explizite Art und Weise programmieren. Also lieber auch mal eine Zeile mehr schreiben oder den Datentypen mehr angeben, auch wenn vielleicht der Compiler das automatisch könnte. Und das ermöglicht halt auch, dass man sehr ergonomisch in Rust programmieren kann. Aber das ist natürlich auf jeden Fall ein Nachteil, würde ich behaupten. Wenn man jetzt ein super stabiles Ecosystem erwartet mit sehr, sehr vielen Libraries und vielen Firmen, die auch Frameworks verwenden und bereitstellen, ja, dann würde ich eher vielleicht woanders hinschauen momentan. Also beispielsweise PHP mit Symfony und Laravel ist ein Gegenbeispiel.",
+            "start": 3650833,
+            "end": 3700986,
+            "confidence": 0.8134965034965034,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "So Matthias ich hab das Gefühl du.",
+            "start": 3701687,
+            "end": 3703049,
+            "confidence": 0.6025714285714285,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Hast einen wichtigen Punkt vergessen.",
+            "start": 3703069,
+            "end": 3704691,
+            "confidence": 0.8176000000000002,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Ich ahne schlimmes.",
+            "start": 3705351,
+            "end": 3706713,
+            "confidence": 0.89,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Es hat mit Go zu tun, lass mich raten.",
+            "start": 3706753,
+            "end": 3708475,
+            "confidence": 0.7556666666666667,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Es hat natürlich mit Go zu tun. Worin ist Go gut in unglaublich schnellen Compiletimes? Wo hat Rust vielleicht noch ein bisschen was nachzubessern?",
+            "start": 3708515,
+            "end": 3717066,
+            "confidence": 0.8094166666666665,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Ja, aber der Compiler spuckt ja auch sinnvolle Fehlermeldungen aus im Gegensatz zu Go.",
+            "start": 3717576,
+            "end": 3721577,
+            "confidence": 0.6695000000000001,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Wie verteidigst du dies?",
+            "start": 3721597,
+            "end": 3722738,
+            "confidence": 0.7355,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Fehlerpunkt ist auch ein Punkt, der in den Stack-Overflow-Surveys jedes Jahr genannt wird und in den Rust-Surveys, die es auch jedes Jahr gibt, die übrigens sehr spannend sind. Compiletimes sind ein Riesenproblem, vor allen Dingen bei großen Applikationen. Ich sehe jetzt nicht das Problem bei kleineren Applikationen.",
+            "start": 3723298,
+            "end": 3741664,
+            "confidence": 0.7916808510638299,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Für mich als Nicht-Rust-Entwickler, von was sprechen wir da? jetzt bei einem großen projekt oder bei einem mittelgroßen projekt sprechen wir dann von.",
+            "start": 3741684,
+            "end": 3748686,
+            "confidence": 0.7547826086956522,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Von stunden oder nein nein das nicht aber wenn du jetzt eine applikation hast weil ich hatte hunderttausend zahlen code und du hast einen einigermaßen soliden linux laptop beispielsweise, Und du nutzt ein paar Features wie vielleicht 30 für Parsing, ja dann bist du schon mal bei Peilzeiten vielleicht zwischen 40 Sekunden und 2-3 Minuten, also das kann schon mal passieren, je nachdem was du da benutzt und das summiert sich natürlich auch.",
+            "start": 3748726,
+            "end": 3777182,
+            "confidence": 0.7530273972602742,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Erklär das mal mit dem Android oder Swift Entwickler, die da irgendwie 20 Minuten teilweise warten.",
+            "start": 3777262,
+            "end": 3784348,
+            "confidence": 0.6865000000000001,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Da muss ich natürlich auch sagen, das ist halt so eine Programmiersprache-Gebäsche. Aber auch das ist ja natürlich völlig in Ordnung. Ein paar Minuten und so weiter. Auch jeder C++-Entwickler wird sich freuen, wenn wir bei ein paar Minuten bleiben können.",
+            "start": 3785048,
+            "end": 3797900,
+            "confidence": 0.8006341463414635,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Also fairerweise, es wird daran gearbeitet. Auch der Rust-Compiler wird schneller, man kann es kaum glauben. Auf dem neuen Apple M1, muss ich sagen, ist es auch viel viel besser geworden. Hardware tut dann natürlich sein Übriges, aber der Compiler wird auch selbst jedes Jahr um die 10% schneller, was ein guter Wert ist. Und auf der anderen Seite, was macht der Compiler im Vergleich zu Go? Bei Go ist es natürlich so, viele Sachen werden zu Runtime erledigt, deswegen ist Rust ist halt auch ein bisschen schneller als Go. Was sind diese Dinge? In Rust wird beispielsweise für jeden Input, den eine generische Funktion hat, eine konkrete Version zur Compile-Zeit gebaut. Angenommen, ich habe eine Funktion, die nimmt alles an, was ein Interface implementiert, dann wird für jede Variante, die wirklich auch benutzt wird, beispielsweise String oder Int, eine Funktion gemacht, nur für diesen speziellen Fall. Und das kostet natürlich Zeit. Die andere Sache ist, LLVM ist ein Backend, was nicht das schnellste ist. Go hat das eigene Backend, die haben selber eins geschrieben und das ist auch in Go geschrieben mittlerweile, war früher glaube ich nicht in Go. Und Rust passiert halt auf LLVM, was in C++ geschrieben ist. Und auch da will man viel mehr Sachen ins Frontend ziehen, also in den Rust-Compiler selbst und dem LLVM-Backend weniger Arbeit überlassen.",
+            "start": 3798278,
+            "end": 3875481,
+            "confidence": 0.8145426008968607,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Ich würde auch sagen, wenn du jetzt keine multimillionen Lines-of-Code Rust-Applications hast, dann spielen auch auf CI-Systemen die Compiletines nicht wirklich eine Rolle. Lokal geht es natürlich dann schon um die Developer Experience, die dann halt natürlich bei kürzeren Compiletines, muss man sagen, nicht zu vernachlässigen. absolut du hattest am anfang erwähnt dass rast eine multi paradigmen sprache ist multi paradigmen da klingelt das bei mir immer so op funktional und so weiter so und jetzt meine frage du kennst ja wahrscheinlich das tolle buch der gang of four über design patterns und co. wie sehen design und architecture patterns in rust aus kann ich also wirklich das factory pattern da anwenden oder das singleton oder die fassade oder ein decorator also ist sind das alles standard patterns die ich in normalem rust source code finde oder würdest du sagen so multi paradigmen sind wir dann jetzt auch nicht.",
+            "start": 3876090,
+            "end": 3934896,
+            "confidence": 0.7698926174496642,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Das ist ja eh nur ein Paradigma.",
+            "start": 3935767,
+            "end": 3937148,
+            "confidence": 0.6131428571428571,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Aber okay, egal. Ja, da wäre ich wahrscheinlich auch dabei, dass ich sagen würde, die Patterns in Rust sind halt etwas anders. Es gibt fairerweise in der Beziehung relativ wenige Ressourcen bis jetzt, was meiner Meinung nach auch so ein Punkt ist, wo man vielleicht noch sagen könnte, Rust hätte da auch noch Defizite. Es gibt dieses Ideomatic Rust Repository, was du angesprochen hast, wo ich solche Ressourcen eben sammle. Da kann man mal nachschauen. Eine Ressource, die da auch angesprochen ist, ist ein Design-Patterns-Buch, das es mal gab. Also Buch in Anführungszeichen, weil das ist eigentlich nur eine Webseite, aber in der Rust-Community nennt man sowas immer Buch, wenn es dann mehrere Chapter sind. Und da werden halt einfach mal auch Design-Patterns genannt. Ein klassisches Pattern ist das Builder-Pattern, weil in Rust gibt es keine Funktionen mit einer variablen Anzahl von Variablen. Variatoric Functions im Endeffekt.",
+            "start": 3937368,
+            "end": 3994128,
+            "confidence": 0.811115646258503,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Also von Parametern auf Funktionskopf.",
+            "start": 3994168,
+            "end": 3996929,
+            "confidence": 0.6884,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Genau, und eine Strategie, um sowas vielleicht trotzdem in Rust zu gewährleisten, ist das Builder-Pattern. Da rufe ich halt dann auf einen Hauptstruct, also sowas wie auf einem Objekt, rufe ich dann diese Methoden auf und spezifiziere dann mein Objekt und zum Schluss rufe ich dann eine Methode auf, die heißt zum Beispiel Build, und da fällt dann ein konfiguriertes Objekt draus. Das ist ein Pattern.",
+            "start": 3996949,
+            "end": 4018357,
+            "confidence": 0.8247424242424243,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Aber bei so ganzen Fassaden und so weiter, das kommt ja alles sehr stark aus dem objektorientierten Bereich. Objektorientierung wird grundsätzlich unterstützt. Ja. Aber es ist jetzt keine Hardcore Objektorientierung mit polymorphie und den ganzen Geschichten.",
+            "start": 4018737,
+            "end": 4034035,
+            "confidence": 0.776,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Nee es gibt keine mehrfachvererbung beispielsweise es gibt keine.",
+            "start": 4034585,
+            "end": 4039550,
+            "confidence": 0.821888888888889,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Die hat java auch nicht oder oder.",
+            "start": 4039750,
+            "end": 4041232,
+            "confidence": 0.4778571428571428,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Hat java mittlerweile mehrfachvererbung. Aber in rust wird sowas halt mit traits abgebildet also was sind traits traits sind eigenschaften die dinge, haben können oder auch nicht. Also wenn du zum Beispiel ein Struct hast, das heißt Plane, also ein Flugzeug, dann kann das zum Beispiel das Fly Trait haben. Also das hat die Eigenschaft zu fliegen, ist ja irgendwie auch logisch. Und dann hat dieses Plane Object vielleicht noch einen Drive trade weil das kann ja auch auf dem landeplatz hin und her fahren auf eine gewisse art und weise und so kann man eigenschaften zu objekten hinzufügen es ist vielleicht ein bisschen gewöhnungsbedürftig aber funktioniert dann ganz gut aber.",
+            "start": 4041272,
+            "end": 4081218,
+            "confidence": 0.793333333333333,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Zum beispiel funktionen überladen oder solche dinge das funktioniert nicht.",
+            "start": 4081238,
+            "end": 4085142,
+            "confidence": 0.7746999999999999,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Funktionsüberladung gibt's, es gibt zum Beispiel auch die Möglichkeit Operatoren zu überladen, das wird auch sehr genutzt, aber es sind schon auch trotzdem Edge Cases, wo man wirklich sagt, okay, der macht das Sinn und ansonsten macht man halt einfach sehr viel explizit über Methoden, dass man einfach Methodenaufrufe macht. Und insgesamt gewöhnt man sich da aber sehr, sehr schnell dann an diese Art eher zu komponieren, also Composition über Inheritance zu machen. Inheritance ist ja die Idee der Vererbung eben, aber bei Composition geht es darum, eigentlich unterschiedliche Eigenschaften zu kombinieren in einem Objekt, was dann ganz speziell für diesen Anwendungsfall passt. Ja, und das sind Modelle oder vielleicht auch Patterns, wenn man die so nennen will, die in Rust-Gang und Geber sind. Die kommen eigentlich auch eher, würde ich fast behaupten, aus der funktionalen Welt, mit algebraischen Datentypen, wie man sie vielleicht auch aus Haskell kennt. Trotzdem würde ich sagen, die Sprache entwickelt sich. Ich habe angefangen auch mal diese Design Pattern selber aufzuschreiben auf meinem Blog und versuche einfach in jedem Artikel eins dieser Ideen, wie man idiomatisch Rust schreibt, auch zu erklären und einfach mal ein paar Beispiele zu finden, damit man dieses Wissen auch hat, damit das nicht verloren geht, weil vieles ist einfach momentan kulturell bedingt irgendwo verankert, aber nirgends niedergeschrieben.",
+            "start": 4085528,
+            "end": 4161933,
+            "confidence": 0.8393640552995385,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Wir haben ja schon in der Episode Was war's, Andi? 93 mit Barbara Liskov, wo wir gelernt haben, dass Vererbung ja böse ist. Verlinken wir natürlich in den Shownotes. Insofern ist nur ein Beweis mehr, dass Vererbung gar nicht mehr so das Nonplusultra ist, wie es früher mal war, meiner Meinung nach. Okay, jetzt haben wir eigentlich schon extrem viele Details zu Rust gehört. Du hast ja auch einen ziemlich coolen Blogartikel geschrieben, Why Rust in Production? Da hast du noch mehr Details, weil alle können wir jetzt nicht besprechen, auch wenn Andi schon auf Nadeln sitzt und eigentlich noch 20 andere Fragen hat. Aber Andi, du hast noch eine Frage, weil sonst kommst du vom Zittern gar nicht mehr weg.",
+            "start": 4162553,
+            "end": 4200721,
+            "confidence": 0.7859917355371899,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Jeder möchte Rust lernen und niemand hat Zeit. Was ist die eine Ressource, die du den Hörerinnen und Hörern und inklusive mir empfehlen würdest, wenn ich zwei Stunden pro Woche investieren möchte, um Rust zu lernen?",
+            "start": 4201462,
+            "end": 4214493,
+            "confidence": 0.8453888888888887,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Deinen youtube kanal natürlich mit den alten videos anschauen.",
+            "start": 4215628,
+            "end": 4219609,
+            "confidence": 0.782,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Ja genau das kann man sich zum spaß gerne mal anschauen.",
+            "start": 4219629,
+            "end": 4223050,
+            "confidence": 0.7001818181818181,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Verlinken wir auch in den show notes.",
+            "start": 4223190,
+            "end": 4225250,
+            "confidence": 0.5948571428571429,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Definitiv bitte subscriben und die kleine glocke und läuten und alles. Aber was ist wenn man jetzt heute 2023 rust lernen will und hat zwei stunden zeit. Gute Frage. Wenn man aus dem Web-Bereich kommt, würde ich sagen, eine Ressource, die man sich anschauen kann, ist von einem Freund von mir, Luca Palmieri, Zero to Production in Rust. Da geht es darum, wie man eine Web-Applikation von der Pike auf, von Null in Rust schreibt, bis sie in Produktion ist. Alle Themen werden da abgedeckt. Authentifizierung, Deployment, Webframeworks. Da ist alles drin, mit dem man starten kann. Eine praktische Applikation wird auch gebaut in dem Buch. Und wenn man da durch ist, dann weiß man zum Schluss, okay, so funktioniert Rust im Web-Bereich, was vielleicht viele HörerInnen auch interessieren könnte.",
+            "start": 4225290,
+            "end": 4274200,
+            "confidence": 0.8041230769230768,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Vielen, vielen Dank für alle Informationen. Wir verlinken natürlich alles in den Shownotes, alles was du so genannt hast, deine YouTube Channels, alles was sonst noch so abgeht im Rust-Bereich. Wenn jemand Fragen hat, wir verlinken natürlich auch deine Profile und wir freuen uns alle schon auf den Rust in Production Podcast, ein Konkurrenz-Podcast, aber wir werden den sicher auch mal... Freundliche Konkurrenz hier. Das geht so in die Tiefe. Das macht mit uns keine Konkurrenz, wo wir immer nur an der Oberfläche da ein bisschen kratzen mit Andi v.a. Vielen, vielen Dank, Matthias, für deine ganzen Insights und deine Details. Jetzt bin ich doch wieder ein bisschen motiviert, Rust irgendwie zu lernen. Vielleicht investiere ich die zwei Stunden von Andi doch nochmal in die Rust-Weiterbildung.",
+            "start": 4275067,
+            "end": 4318933,
+            "confidence": 0.7210396825396823,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Sehr, sehr gerne. Gute investierte Zeit.",
+            "start": 4319637,
+            "end": 4322038,
+            "confidence": 0.7431666666666668,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Vielen lieben Dank, Matthias. Schön, auch mal etwas über eine andere Programmiersprache zu hören. Und ja, ich bin auch motiviert. Und da ich vielleicht zwei Stunden pro Woche investieren möchte, schaue ich mir deine Ressource mal an.",
+            "start": 4322058,
+            "end": 4333902,
+            "confidence": 0.7699189189189192,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Du hast jetzt eh Corona, du hast Zeit, Andi. Gute Besserung übrigens.",
+            "start": 4333922,
+            "end": 4336883,
+            "confidence": 0.6859999999999999,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Dankeschön.",
+            "start": 4336903,
+            "end": 4337203,
+            "confidence": 0.235,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Das war es wieder von uns, liebe Hörerinnen und Hörer von einer neuen Folge Engineering Heroes. Falls ihr ein bisschen Feedback habt oder uns weiterempfehlen wollt, darüber würden wir uns sehr, sehr freuen, denn damit unterstützt ihr diesen Podcast. Und falls ihr uns noch nicht auf den gängigen Plattformen wie Apple Music Oder Spotify heißt die andere Plattform. Abonniert habt, bitte da einmal kurz abonnieren. Das ist eure Art, wie ihr uns supporten könnt.",
+            "start": 4338326,
+            "end": 4364951,
+            "confidence": 0.7433108108108106,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Und vielleicht auch Thumbs up oder Thumbs down in unseren Shownotes. Und falls ihr irgendein Feedback habt, wie ihr Maxl helles Bier findet oder wir werden uns jetzt auch noch diese Mozartkugeln, wenigstens was österreichisches gönnen. Gerne alle Rückmeldungen, Feedback auch bei uns im Discord-Channel.",
+            "start": 4364991,
+            "end": 4379616,
+            "confidence": 0.7292222222222222,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Dankeschön, bis nächste Woche und tschüss.",
+            "start": 4380037,
+            "end": 4382738,
+            "confidence": 0.5335,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Ciao.",
+            "start": 4382778,
+            "end": 4383038,
+            "confidence": 0.386,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Ciao, ciao. Kamera, ist ja abgeschaltet.",
+            "start": 4383058,
+            "end": 4387110,
+            "confidence": 0.2735,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Schade, sollen wir mal die Batterie schnell wechseln? Da haben wir den Schluss auch noch mit drauf. Wäre dumm, wenn nicht eigentlich. Ah nee, die Batterie ist kurz leer.",
+            "start": 4387150,
+            "end": 4393131,
+            "confidence": 0.33899999999999997,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Nur Amateure.",
+            "start": 4393231,
+            "end": 4394452,
+            "confidence": 0.6114999999999999,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Wir haben echt technische Probleme heute, ich weiß nicht.",
+            "start": 4394472,
+            "end": 4397473,
+            "confidence": 0.754,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Der Kollege aus diesem kleinen Land namens Austria ist das Problem.",
+            "start": 4397513,
+            "end": 4401894,
+            "confidence": 0.8522727272727273,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Jaja, seh ich auch so, also.",
+            "start": 4402194,
+            "end": 4404675,
+            "confidence": 0.4056666666666667,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Mir ist das ein bisschen peinlich.",
+            "start": 4404695,
+            "end": 4405775,
+            "confidence": 0.5711666666666667,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Schon wieder live.",
+            "start": 4405815,
+            "end": 4407376,
+            "confidence": 0.5499999999999999,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Bisschen peinlich, wir haben einen Aufnahmetermin im Jahr, wir haben zwei gestern diesen Tag und es fällt hier eins nach dem anderen aus.",
+            "start": 4407456,
+            "end": 4414018,
+            "confidence": 0.8263478260869563,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Wieso, das war einfach der Akku, der hat nicht durchgehalten, weil du so viel redest. Der ist auf eine Stunde zehn genau gedimt, der Akku.",
+            "start": 4415178,
+            "end": 4424044,
+            "confidence": 0.74192,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Komm, gib Gas.",
+            "start": 4424084,
+            "end": 4424824,
+            "confidence": 0.4923333333333333,
+            "channel": null,
+            "speaker": "C"
+        }
+    ],
+    "confidence": 0.7959547371836477,
+    "audio_duration": 4425.0,
+    "webhook_status_code": null,
+    "webhook_auth": false,
+    "summary": null,
+    "auto_highlights_result": null,
+    "content_safety_labels": null,
+    "chapters": null,
+    "sentiment_analysis_results": null,
+    "entities": null
+}
