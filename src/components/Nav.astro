@@ -1,19 +1,35 @@
 ---
+import type { CollectionEntry } from 'astro:content';
+
 export interface Props {
 	title?: string;
+	episode?: CollectionEntry<'podcast'>;
 }
 
 import { getCollection } from "astro:content";
 import podcastInfo from '../data/podcast-info.json';
 
-const { title } = Astro.props;
+const { title, episode } = Astro.props;
+
+// If {episodeProp} is available, the navigation will be shown in context
+// of a podcast episode detail view.
+let spotifyLink = podcastInfo.platformLinks.spotify;
+let appleLink = podcastInfo.platformLinks.appleMusic;
+if (episode) {
+	if (episode.data.spotify) {
+		spotifyLink = episode.data.spotify;
+	}
+	if (episode.data.apple_podcasts) {
+		appleLink = episode.data.apple_podcasts;
+	}
+}
 
 // Determine the latest episode
 // We have places where the last episode is linked
 let allEpisodes = await getCollection("podcast");
 allEpisodes.sort((a, b) => new Date(b.data.pubDate).valueOf() - new Date(a.data.pubDate).valueOf());
 let episodesToShow = allEpisodes.slice(0, 1);
-let episode = episodesToShow[0];
+let latestEpisode = episodesToShow[0];
 ---
 
 <section class="relative bg-white overflow-hidden" style="background-image: url('/images/elements/pattern-white.svg'); background-position: center;">
@@ -51,15 +67,15 @@ let episode = episodesToShow[0];
 				</div>
 				<div class="">
 					<div class="hidden xl:block">
-						<a class="inline-block py-2 px-4 mr-2 leading-5 text-coolGray-500 hover:text-coolGray-900 bg-transparent font-medium rounded-md" href={`/podcast/episode/${episode.slug}/`} title={`Aktuelle Engineering Kiosk Podcast Episode ${episode.data.title}`}> Aktuelle Episode</a>
+						<a class="inline-block py-2 px-4 mr-2 leading-5 text-coolGray-500 hover:text-coolGray-900 bg-transparent font-medium rounded-md" href={`/podcast/episode/${latestEpisode.slug}/`} title={`Aktuelle Engineering Kiosk Podcast Episode ${latestEpisode.data.title}`}> Aktuelle Episode</a>
 						<a class="inline-block py-2 px-4 text-sm leading-5 text-yellow-50 bg-yellow-500 hover:bg-yellow-600 font-medium focus:ring-2 focus:ring-yellow-500 focus:ring-opacity-50 rounded-md" href="/#jetzt-folgen" title="Höre Engineering Kiosk in deiner Podcast App">in deiner App 🎧</a>
 					</div>
 				</div>
 				<div class="flex md:hidden m-auto">						
-					<a href={podcastInfo.platformLinks.appleMusic} title="Engineering Kiosk bei Apple Podcasts">
+					<a href={appleLink} title="Engineering Kiosk bei Apple Podcasts">
 						<img class="w-6 grayscale mx-2" src="/images/brands/apple.svg" alt="Engineering Kiosk bei Apple Podcasts" title="Engineering Kiosk bei Apple Podcasts" />
 					</a>
-					<a href={podcastInfo.platformLinks.spotify} title="Engineering Kiosk bei Spotify">
+					<a href={spotifyLink} title="Engineering Kiosk bei Spotify">
 						<img class="w-6 grayscale mx-2" src="/images/brands/spotify.svg" alt="Engineering Kiosk bei Spotify" title="Engineering Kiosk bei Spotify" />
 					</a>
 					<a href={podcastInfo.platformLinks.pocketCasts} title="Engineering Kiosk auf Pocket Casts">
@@ -117,7 +133,7 @@ let episode = episodesToShow[0];
 						</ul>
 						<div class="flex flex-wrap">
 							<div class="w-full mb-2">
-								<a class="inline-block py-2 px-4 w-full text-sm leading-5 text-coolGray-500 hover:text-coolGray-900 bg-transparent font-medium text-center rounded-md" href={`/podcast/episode/${episode.slug}/`} title={`Aktuelle Engineering Kiosk Podcast Episode ${episode.data.title}`}> Aktuelle Episode</a>
+								<a class="inline-block py-2 px-4 w-full text-sm leading-5 text-coolGray-500 hover:text-coolGray-900 bg-transparent font-medium text-center rounded-md" href={`/podcast/episode/${latestEpisode.slug}/`} title={`Aktuelle Engineering Kiosk Podcast Episode ${latestEpisode.data.title}`}> Aktuelle Episode</a>
 							</div>
 							<div class="w-full">
 								<a
