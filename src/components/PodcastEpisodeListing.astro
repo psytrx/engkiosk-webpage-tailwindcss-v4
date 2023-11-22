@@ -24,12 +24,14 @@ let episodesToShow = allEpisodes;
 let showAllButton = false;
 let headline = 'Alle Podcast Episoden vom Engineering Kiosk';
 let mainPage = true;
+let descriptionChars = 300;
 
 if (episodes) {
 	headline = 'Ausgewählte Podcast Episoden für dich';
 	mainPage = false;
 	showAllButton = true;
 	episodesToShow = [];
+	descriptionChars = -1;
 
 	// Check if latest in the episodes
 	let queryEpisode;
@@ -71,7 +73,7 @@ if (episodes) {
 			}
 		</div>
 		<div class="flex flex-wrap -mx-4">
-			{episodesToShow.map((episode, i) => <PodcastEpisodePreview episode={episode} descriptionChars="300" />)}
+			{episodesToShow.map((episode, i) => <PodcastEpisodePreview episode={episode} descriptionChars={descriptionChars} />)}
 		</div>
 		<div class="flex flex-wrap items-center mt-8 mb-12">
 			{
