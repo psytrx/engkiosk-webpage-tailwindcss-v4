@@ -1,29 +1,53 @@
 ---
 export interface Props {
 	// Number of items to show in the listing
-	numberOfItems: number;
+	numberOfItems?: number;
+
+	// Handpicked episode numbers
+	// When entered a number, it is the episode number
+	// As string, only "latest" is supported for now - Which represents the top episode
+	episodes: Array<string|number>;
 }
 
-import { getCollection } from "astro:content";
+import { getCollection, getEntry } from "astro:content";
+
 import PodcastEpisodePreview from '../components/PodcastEpisodePreview.astro';
 
-const { numberOfItems } = Astro.props;
+const { numberOfItems, episodes } = Astro.props;
 
 // Build the list of Podcast Episodes
 let allEpisodes = await getCollection("podcast");
 allEpisodes.sort((a, b) => new Date(b.data.pubDate).valueOf() - new Date(a.data.pubDate).valueOf());
 
-// Default wise list all items,
-// only limit it if requested
+// Default wise list all items, only limit it if requested
 let episodesToShow = allEpisodes;
 let showAllButton = false;
 let headline = 'Alle Podcast Episoden vom Engineering Kiosk';
 let mainPage = true;
-if (numberOfItems > 0) {
-	headline = 'Die aktuellsten Podcast Episoden';
+
+if (episodes) {
+	headline = 'Ausgewählte Podcast Episoden für dich';
 	mainPage = false;
-	episodesToShow = allEpisodes.slice(0, numberOfItems);
 	showAllButton = true;
+	episodesToShow = [];
+
+	// Check if latest in the episodes
+	let queryEpisode;
+	for (let i = 0; i < episodes.length; i++) {
+		if (episodes[i] == "latest") {
+			episodesToShow.push(allEpisodes[0]);
+		} else {
+			queryEpisode = await getEntry('podcast', episodes[i]);
+			episodesToShow.push(queryEpisode);
+		}
+	}
+} else {
+	if (numberOfItems && numberOfItems > 0) {
+		headline = 'Die aktuellsten Podcast Episoden';
+		mainPage = false;
+		episodesToShow = allEpisodes.slice(0, numberOfItems);
+		showAllButton = true;
+	}
 }
 ---
 
