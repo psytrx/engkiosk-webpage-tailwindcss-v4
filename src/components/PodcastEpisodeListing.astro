@@ -1,29 +1,59 @@
 ---
 export interface Props {
 	// Number of items to show in the listing
-	numberOfItems: number;
+	numberOfItems?: number;
+
+	// Handpicked episode numbers
+	// When entered a number, it is the episode number
+	// As string, only "latest" is supported for now - Which represents the top episode
+	episodes: Array<string|number>;
 }
 
-import { getCollection } from "astro:content";
-import PodcastEpisodePreview from '../components/PodcastEpisodePreview.astro';
+import { getCollection, getEntry } from "astro:content";
 
-const { numberOfItems } = Astro.props;
+import PodcastEpisodePreview from '../components/PodcastEpisodePreview.astro';
+import { collections } from "../content/config";
+
+const { numberOfItems, episodes } = Astro.props;
 
 // Build the list of Podcast Episodes
 let allEpisodes = await getCollection("podcast");
 allEpisodes.sort((a, b) => new Date(b.data.pubDate).valueOf() - new Date(a.data.pubDate).valueOf());
 
-// Default wise list all items,
-// only limit it if requested
+// Default wise list all items, only limit it if requested
 let episodesToShow = allEpisodes;
 let showAllButton = false;
 let headline = 'Alle Podcast Episoden vom Engineering Kiosk';
 let mainPage = true;
-if (numberOfItems > 0) {
-	headline = 'Die aktuellsten Podcast Episoden';
+let descriptionChars = 300;
+
+// if episodes are filtered
+if (episodes) {
+	headline = 'Ausgewählte Podcast Episoden für dich';
 	mainPage = false;
-	episodesToShow = allEpisodes.slice(0, numberOfItems);
 	showAllButton = true;
+	episodesToShow = [];
+	descriptionChars = -1;
+
+	// check if contains "latest-X" where X is the number of episodes to show
+	const latest = episodes.find((episode) => episode.startsWith('latest'));
+	if (latest) {
+		const latestNumber = parseInt(latest.split('-')[1]) || 1;
+		episodesToShow = episodesToShow.concat(allEpisodes.slice(0, latestNumber));
+	}
+
+	episodesToShow = episodesToShow.concat(
+		allEpisodes.filter((episode) => episodes.includes(episode.slug))
+	)
+
+
+} else {
+	if (numberOfItems && numberOfItems > 0) {
+		headline = 'Die aktuellsten Podcast Episoden';
+		mainPage = false;
+		episodesToShow = allEpisodes.slice(0, numberOfItems);
+		showAllButton = true;
+	}
 }
 ---
 
@@ -47,7 +77,7 @@ if (numberOfItems > 0) {
 			}
 		</div>
 		<div class="flex flex-wrap -mx-4">
-			{episodesToShow.map((episode, i) => <PodcastEpisodePreview episode={episode} descriptionChars="300" />)}
+			{episodesToShow.map((episode, i) => <PodcastEpisodePreview episode={episode} descriptionChars={descriptionChars} />)}
 		</div>
 		<div class="flex flex-wrap items-center mt-8 mb-12">
 			{
