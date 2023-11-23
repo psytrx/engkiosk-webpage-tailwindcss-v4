@@ -52,36 +52,13 @@ const year = new Date().getFullYear();
 			<div class="w-full md:w-1/4 lg:w-2/12 px-4 mb-16 lg:mb-0">
 				<h3 class="mb-5 text-lg font-bold text-coolGray-900">Social Media</h3>
 				<ul>
-					<li class="mb-4">
-						<a class="inline-block text-coolGray-500 hover:text-coolGray-600 font-medium" href={podcastInfo.socials.twitter.link} title={podcastInfo.socials.twitter.linkTitle}>
-							<img src={podcastInfo.socials.twitter.icon} class="inline w-6 mr-2" alt={podcastInfo.socials.twitter.iconAlt} title={podcastInfo.socials.twitter.iconTitle} /> {podcastInfo.socials.twitter.name}
-						</a>
-					</li>
-					<li class="mb-4">
-						<a class="inline-block text-coolGray-500 hover:text-coolGray-600 font-medium" href={podcastInfo.socials.mastodon.link} title={podcastInfo.socials.mastodon.linkTitle}>
-							<img src={podcastInfo.socials.mastodon.icon} class="inline w-6 mr-2" alt={podcastInfo.socials.mastodon.iconAlt} title={podcastInfo.socials.mastodon.iconTitle} /> {podcastInfo.socials.mastodon.name}
-						</a>
-					</li>
-					<li class="mb-4">
-						<a class="inline-block text-coolGray-500 hover:text-coolGray-600 font-medium" href={podcastInfo.socials.instagram.link} title={podcastInfo.socials.instagram.linkTitle}>
-							<img src={podcastInfo.socials.instagram.icon} class="inline w-6 mr-2" alt={podcastInfo.socials.instagram.iconAlt} title={podcastInfo.socials.instagram.iconTitle} /> {podcastInfo.socials.instagram.name}
-						</a>
-					</li>
-					<li class="mb-4">
-						<a class="inline-block text-coolGray-500 hover:text-coolGray-600 font-medium" href={podcastInfo.platformLinks.youTube} title="Engineering Kiosk auf YouTube (@engineeringkiosk)">
-							<img src="/images/brands/youtube.svg" class="inline w-6 mr-2" alt="YouTube logo" title="YouTube logo" /> YouTube
-						</a>
-					</li>
-					<li class="mb-4">
-						<a class="inline-block text-coolGray-500 hover:text-coolGray-600 font-medium" href={podcastInfo.socials.linkedin.link} title={podcastInfo.socials.linkedin.linkTitle}>
-							<img src={podcastInfo.socials.linkedin.icon} class="inline w-6 mr-2" alt={podcastInfo.socials.linkedin.iconAlt} title={podcastInfo.socials.linkedin.iconTitle} /> {podcastInfo.socials.linkedin.name}
-						</a>
-					</li>
-					<li class="mb-4">
-						<a class="inline-block text-coolGray-500 hover:text-coolGray-600 font-medium" href={podcastInfo.socials.tiktok.link} title={podcastInfo.socials.tiktok.linkTitle}>
-							<img src={podcastInfo.socials.tiktok.icon} class="inline w-6 mr-2" alt={podcastInfo.socials.tiktok.iconAlt} title={podcastInfo.socials.tiktok.iconTitle} /> {podcastInfo.socials.tiktok.name}
-						</a>
-					</li>
+					{ ["twitter", "mastodon", "instagram", "youTube", "linkedin", "tiktok"].map((social) => (
+						<li class="mb-4">
+							<a class="inline-block text-coolGray-500 hover:text-coolGray-600 font-medium" href={podcastInfo.socials[social].link} title={podcastInfo.socials[social].linkTitle}>
+								<img src={podcastInfo.socials[social].icon} class="inline w-6 mr-2" alt={podcastInfo.socials[social].iconAlt} title={podcastInfo.socials[social].iconTitle} /> {podcastInfo.socials[social].name}
+							</a>
+						</li>
+					))}
 				</ul>
 			</div>
 			<div class="w-full md:w-1/3 lg:w-4/12 px-4">
