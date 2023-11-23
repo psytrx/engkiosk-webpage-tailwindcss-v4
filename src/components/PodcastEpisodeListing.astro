@@ -12,6 +12,7 @@ export interface Props {
 import { getCollection, getEntry } from "astro:content";
 
 import PodcastEpisodePreview from '../components/PodcastEpisodePreview.astro';
+import { collections } from "../content/config";
 
 const { numberOfItems, episodes } = Astro.props;
 
@@ -26,6 +27,7 @@ let headline = 'Alle Podcast Episoden vom Engineering Kiosk';
 let mainPage = true;
 let descriptionChars = 300;
 
+// if episodes are filtered
 if (episodes) {
 	headline = 'Ausgewählte Podcast Episoden für dich';
 	mainPage = false;
@@ -33,16 +35,18 @@ if (episodes) {
 	episodesToShow = [];
 	descriptionChars = -1;
 
-	// Check if latest in the episodes
-	let queryEpisode;
-	for (let i = 0; i < episodes.length; i++) {
-		if (episodes[i] == "latest") {
-			episodesToShow.push(allEpisodes[0]);
-		} else {
-			queryEpisode = await getEntry('podcast', episodes[i]);
-			episodesToShow.push(queryEpisode);
-		}
+	// check if contains "latest-X" where X is the number of episodes to show
+	const latest = episodes.find((episode) => episode.startsWith('latest'));
+	if (latest) {
+		const latestNumber = parseInt(latest.split('-')[1]) || 1;
+		episodesToShow = episodesToShow.concat(allEpisodes.slice(0, latestNumber));
 	}
+
+	episodesToShow = episodesToShow.concat(
+		allEpisodes.filter((episode) => episodes.includes(episode.slug))
+	)
+
+
 } else {
 	if (numberOfItems && numberOfItems > 0) {
 		headline = 'Die aktuellsten Podcast Episoden';
