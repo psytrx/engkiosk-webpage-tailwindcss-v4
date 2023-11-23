@@ -57,9 +57,9 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 										></path>
 									</svg>
 								</div>
-								<h3 class="mb-2 text-2xl md:text-3xl leading-9 text-coolGray-900 font-bold">Twitter</h3>
+								<h3 class="mb-2 text-2xl md:text-3xl leading-9 text-coolGray-900 font-bold">{podcastInfo.socials.twitter.name}</h3>
 								<p class="mb-4 text-lg md:text-xl font-medium text-coolGray-500 leading-7">Zwitscher uns einen.</p>
-								<a class="text-lg md:text-xl text-yellow-500 hover:text-yellow-600 font-medium" href={podcastInfo.socials.twitter} title="Engineering Kiosk auf twitter (@EngKiosk)"> @EngKiosk</a>
+								<a class="text-lg md:text-xl text-yellow-500 hover:text-yellow-600 font-medium" href={podcastInfo.socials.twitter.link} title={podcastInfo.socials.twitter.linkTitle}> {podcastInfo.socials.twitter.handle}</a>
 							</div>
 						</div>
 						<div class="w-full md:w-1/4 px-4 mb-12 md:mb-0">
@@ -71,9 +71,9 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 											fill="inherit"></path>
 									</svg>
 								</div>
-								<h3 class="mb-2 text-2xl md:text-3xl leading-9 text-coolGray-900 font-bold">Mastodon</h3>
+								<h3 class="mb-2 text-2xl md:text-3xl leading-9 text-coolGray-900 font-bold">{podcastInfo.socials.mastodon.name}</h3>
 								<p class="mb-4 text-lg md:text-xl font-medium text-coolGray-500 leading-7">Dezentral. Open Source.</p>
-								<a class="text-lg md:text-xl text-yellow-500 hover:text-yellow-600 font-medium" href={podcastInfo.socials.mastodon} title="Engineering Kiosk auf Mastodon (@engkiosk@podcasts.social)"> @EngKiosk@podcasts.social</a>
+								<a class="text-lg md:text-xl text-yellow-500 hover:text-yellow-600 font-medium" href={podcastInfo.socials.mastodon.link} title={podcastInfo.socials.mastodon.linkTitle}> {podcastInfo.socials.mastodon.handle}</a>
 							</div>
 						</div>
 						<div class="w-full md:w-1/4 px-4">
