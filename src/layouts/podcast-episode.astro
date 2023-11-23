@@ -162,7 +162,7 @@ const html = (await Astro.slots.render('default'))
 
 	<body class="antialiased bg-body text-body font-body">
 		<div>
-			<Nav />
+			<Nav episode={episode} />
 
 			<main>
 				<section class="py-16 md:py-24 bg-white" style="background-image: url('/images/elements/pattern-white.svg'); background-repeat: no-repeat; background-position: center top;">

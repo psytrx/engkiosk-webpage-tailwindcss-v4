@@ -24,6 +24,15 @@ const platforms = [
 	{ "name": "RSS", "image": "/images/brands/rss.svg", "href": podcastInfo.platformLinks.rss },
 ]
 
+// List of Slugs of episodes we want to show on this linktree site
+const episodesToShow = [
+	"latest-3",
+	"51-was-ist-das-staff-engineer-level",
+	"46-welches-problem-löst-docker",
+	"28-o1-olog-n-on2-ist-die-komplexität-von-algorithmen-im-entwickler-alltag-relevant",
+	"66-stressfreie-produktivität-in-der-hektischen-welt-mit-getting-things-done",
+	"84-die-evolution-von-javascript-vom-ducktyping-zum-monopol-im-browser-mit-peter-kröner"
+];
 ---
 
 <html lang="de">
@@ -54,7 +63,7 @@ const platforms = [
 				
 			</section>	
 
-			<PodcastEpisodeListing numberOfItems={6} />
+			<PodcastEpisodeListing episodes={episodesToShow} />
 
 			<Footer />
 		</div>
