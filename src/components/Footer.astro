@@ -1,7 +1,6 @@
 ---
 import Matomo from './Matomo.astro';
-
-// Static website footer
+import podcastInfo from '../data/podcast-info.json';
 
 const year = new Date().getFullYear();
 ---
@@ -53,36 +52,13 @@ const year = new Date().getFullYear();
 			<div class="w-full md:w-1/4 lg:w-2/12 px-4 mb-16 lg:mb-0">
 				<h3 class="mb-5 text-lg font-bold text-coolGray-900">Social Media</h3>
 				<ul>
-					<li class="mb-4">
-						<a class="inline-block text-coolGray-500 hover:text-coolGray-600 font-medium" href="https://twitter.com/engkiosk/" title="Engineering Kiosk auf twitter (@EngKiosk)">
-							<img src="/images/brands/twitter_blue.svg" class="inline w-6 mr-2" alt="twitter logo" title="twitter logo" /> Twitter
-						</a>
-					</li>
-					<li class="mb-4">
-						<a class="inline-block text-coolGray-500 hover:text-coolGray-600 font-medium" rel="me" href="https://podcasts.social/@engkiosk" title="Engineering Kiosk auf Mastodon (@engkiosk@podcasts.social)">
-							<img src="/images/brands/mastodon_purple.svg" class="inline w-6 mr-2" alt="Mastodon logo" title="Mastodon logo" /> Mastodon
-						</a>
-					</li>
-					<li class="mb-4">
-						<a class="inline-block text-coolGray-500 hover:text-coolGray-600 font-medium" href="https://www.instagram.com/engineeringkiosk/" title="Engineering Kiosk auf Instagram (@engineeringkiosk)">
-							<img src="/images/brands/instagram.svg" class="inline w-6 mr-2" alt="Instagram logo" title="Instagram logo" /> Instagram
-						</a>
-					</li>
-					<li class="mb-4">
-						<a class="inline-block text-coolGray-500 hover:text-coolGray-600 font-medium" href="https://www.youtube.com/@engineeringkiosk" title="Engineering Kiosk auf YouTube (@engineeringkiosk)">
-							<img src="/images/brands/youtube.svg" class="inline w-6 mr-2" alt="YouTube logo" title="YouTube logo" /> YouTube
-						</a>
-					</li>
-					<li class="mb-4">
-						<a class="inline-block text-coolGray-500 hover:text-coolGray-600 font-medium" href="https://www.linkedin.com/company/engineering-kiosk/" title="Engineering Kiosk auf LinkedIn (@engineering-kiosk)">
-							<img src="/images/brands/linkedin_blue.svg" class="inline w-6 mr-2" alt="LinkedIn logo" title="LinkedIn logo" /> LinkedIn
-						</a>
-					</li>
-					<li class="mb-4">
-						<a class="inline-block text-coolGray-500 hover:text-coolGray-600 font-medium" href="https://www.tiktok.com/@engineeringkiosk" title="Engineering Kiosk auf TikTok (@engineeringkiosk)">
-							<img src="/images/brands/tiktok.svg" class="inline w-6 mr-2" alt="TikTok logo" title="TikTok logo" /> TikTok
-						</a>
-					</li>
+					{ ["twitter", "mastodon", "instagram", "youTube", "linkedin", "tiktok"].map((social) => (
+						<li class="mb-4">
+							<a class="inline-block text-coolGray-500 hover:text-coolGray-600 font-medium" href={podcastInfo.socials[social].link} title={podcastInfo.socials[social].linkTitle}>
+								<img src={podcastInfo.socials[social].icon} class="inline w-6 mr-2" alt={podcastInfo.socials[social].iconAlt} title={podcastInfo.socials[social].iconTitle} /> {podcastInfo.socials[social].name}
+							</a>
+						</li>
+					))}
 				</ul>
 			</div>
 			<div class="w-full md:w-1/3 lg:w-4/12 px-4">
