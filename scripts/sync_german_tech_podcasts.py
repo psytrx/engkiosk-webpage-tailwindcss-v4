@@ -4,6 +4,10 @@ import tempfile
 import json
 import shutil
 
+from functions import (
+    build_correct_file_path
+)
+
 from git import Repo
 from PIL import Image
 
@@ -94,16 +98,8 @@ if __name__ == "__main__":
         ]
     )
 
-    # Determine if the script is called from root
-    # or from the scripts directory.
-    directory_path = os.getcwd()
-    folder_name = os.path.basename(directory_path)
-    folder_prefix = ""
-    if folder_name == "scripts":
-        folder_prefix = "../"
-
-    merged_json_file_path = f"{folder_prefix}{PODCAST_JSON_FILE}"
-    image_storage_path = f"{folder_prefix}{IMAGE_STORAGE}"
-    opml_storage_path = f"{folder_prefix}{OPML_STORAGE}"
+    merged_json_file_path = build_correct_file_path(PODCAST_JSON_FILE)
+    image_storage_path = build_correct_file_path(IMAGE_STORAGE)
+    opml_storage_path = build_correct_file_path(OPML_STORAGE)
 
     sync_german_tech_podcasts(merged_json_file_path, image_storage_path, opml_storage_path)
