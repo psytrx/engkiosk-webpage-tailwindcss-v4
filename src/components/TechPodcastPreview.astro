@@ -1,17 +1,19 @@
 ---
+import type { CollectionEntry } from 'astro:content';
+import { Image } from "astro:assets";
+
 export interface Props {
-	podcast: any;
+	podcast: CollectionEntry<'germantechpodcasts'>;
 }
 
 import { URLify } from '../scripts/urlify.js';
 import { formatDate, formatUnixTimestampToDate } from '../scripts/date.js';
 
 const { podcast } = Astro.props;
-const podcast_image = podcast.image.replace(/^.*[\\\/]/, '');
 
 let tags = [];
-if (podcast.tags) {
-	tags = podcast.tags.map((element) => URLify(element));
+if (podcast.data.tags) {
+	tags = podcast.data.tags.map((element) => URLify(element));
 }
 
 /**
@@ -60,7 +62,7 @@ function daysBetween(dateOne, dateTwo) {
 	return days;
 }
 
-let episode_status = getLastEpisodeStatus(podcast.latestEpisodePublished);
+let episode_status = getLastEpisodeStatus(podcast.data.latestEpisodePublished);
 let episode_status_emojy = episode_status[0];
 
 // data-* attribute to identify if this is an active or inactive podcast
@@ -69,19 +71,19 @@ const dataEpisodePublishingStatus_str = episode_status[1];
 
 // data-* attribute to identify when was the last episide published (in number of days)
 // - Attribute "data-days-since-last-episode"
-const lastEpisodePublished = new Date(podcast.latestEpisodePublished * 1000);
+const lastEpisodePublished = new Date(podcast.data.latestEpisodePublished * 1000);
 const today = new Date();
 const dataDaysSinceLastEpisode = daysBetween(today, lastEpisodePublished);
 
 // If a Podcast is not available on Apple Podcasts,
 // we add different css classes.
 let spotifyClassName = 'm-4';
-if (podcast.itunesID == 0) {
+if (podcast.data.itunesID == 0) {
 	spotifyClassName = 'mb-4 mt-4 mr-4';
 }
 
 // Generate id based on the name
-const nameId = URLify(podcast.name);
+const nameId = URLify(podcast.data.name);
 ---
 
 <section
@@ -103,48 +105,48 @@ const nameId = URLify(podcast.name);
 				}
 
 				<h2 class="mb-8 text-4xl md:text-5xl leading-tight text-coolGray-900 font-bold tracking-tighter">
-					<a href={podcast.website} class="hover:underline hover:text-yellow-500" title={`Website von ${podcast.name}`}>
-						{podcast.name}
+					<a href={podcast.data.website} class="hover:underline hover:text-yellow-500" title={`Website von ${podcast.data.name}`}>
+						{podcast.data.name}
 					</a>
 				</h2>
 				<p class="mb-6 text-lg md:text-xl text-coolGray-500 font-medium">
-					{podcast.description}
+					{podcast.data.description}
 				</p>
 				<ul class="mb-4 text-lg md:text-xl text-coolGray-500 font-medium list-disc list-inside">
-					<li>Anzahl Episoden: {podcast.episodeCount}</li>
-					<li>Aktuellste Episode vom {formatUnixTimestampToDate(podcast.latestEpisodePublished)} {episode_status_emojy}</li>
+					<li>Anzahl Episoden: {podcast.data.episodeCount}</li>
+					<li>Aktuellste Episode vom {formatUnixTimestampToDate(podcast.data.latestEpisodePublished)} {episode_status_emojy}</li>
 					{
-						podcast.weekly_downloads_avg.value > 0 && (
+						podcast.data.weekly_downloads_avg.value > 0 && (
 							<li>
-								Wöchentliche downloads (avg): {podcast.weekly_downloads_avg.value} (Zahl von {formatDate(podcast.weekly_downloads_avg.updated)})
+								Wöchentliche downloads (avg): {podcast.data.weekly_downloads_avg.value} (Zahl von {formatDate(podcast.data.weekly_downloads_avg.updated)})
 							</li>
 						)
 					}
 				</ul>
 				<div class="flex flex-wrap">
 					{
-						podcast.itunesID > 0 && (
+						podcast.data.itunesID > 0 && (
 							<div class="mb-4 mt-4 mr-4">
-								<a class="flex items-center" href={`https://podcasts.apple.com/de/podcast/${podcast.itunesID}`} title={`${podcast.name} bei Apple Podcasts`}>
-									<img class="w-8" src="/images/brands/apple.svg" alt={`${podcast.name} bei Apple Podcasts`} title={`${podcast.name} bei Apple Podcasts`} />
+								<a class="flex items-center" href={`https://podcasts.apple.com/de/podcast/${podcast.data.itunesID}`} title={`${podcast.data.name} bei Apple Podcasts`}>
+									<img class="w-8" src="/images/brands/apple.svg" alt={`${podcast.data.name} bei Apple Podcasts`} title={`${podcast.data.name} bei Apple Podcasts`} />
 									<span class="text-coolGray-500 text-lg m-2">Apple</span>
 								</a>
 							</div>
 						)
 					}
 					{
-						podcast.spotify.length > 0 && (
+						podcast.data.spotify.length > 0 && (
 							<div class={spotifyClassName}>
-								<a class="flex items-center" href={podcast.spotify} title={`${podcast.name} auf Spotify`}>
-									<img class="w-8" src="/images/brands/spotify.svg" alt={`${podcast.name} auf Spotify`} title={`${podcast.name} auf Spotify`} />
+								<a class="flex items-center" href={podcast.data.spotify} title={`${podcast.data.name} auf Spotify`}>
+									<img class="w-8" src="/images/brands/spotify.svg" alt={`${podcast.data.name} auf Spotify`} title={`${podcast.data.name} auf Spotify`} />
 									<span class="text-coolGray-500 text-lg m-2">Spotify</span>
 								</a>
 							</div>
 						)
 					}
 					<div class="mb-4 mt-4 ml-4">
-						<a class="flex items-center" href={podcast.rssFeed} title={`${podcast.name} als RSS-Feed`}>
-							<img class="w-8" src="/images/brands/rss.svg" alt={`${podcast.name} als RSS-Feed`} title={`${podcast.name} als RSS-Feed`} />
+						<a class="flex items-center" href={podcast.data.rssFeed} title={`${podcast.data.name} als RSS-Feed`}>
+							<img class="w-8" src="/images/brands/rss.svg" alt={`${podcast.data.name} als RSS-Feed`} title={`${podcast.data.name} als RSS-Feed`} />
 							<span class="text-coolGray-500 text-lg m-2">RSS</span>
 						</a>
 					</div>
@@ -152,8 +154,8 @@ const nameId = URLify(podcast.name);
 			</div>
 			<div class="w-full md:w-4/12 px-4">
 				<div class="relative mx-auto md:mr-0 max-w-max">
-					<a href={podcast.website} title={`Website von ${podcast.name}`}>
-						<img class="rounded-3xl" src={`/images/german-tech-podcasts/${podcast_image}`} alt={`Podcast ${podcast.name}`} title={`Podcast ${podcast.name}`} />
+					<a href={podcast.data.website} title={`Website von ${podcast.data.name}`}>
+						<Image class="rounded-3xl" src={podcast.data.image} alt={`Podcast ${podcast.data.name}`} title={`Podcast ${podcast.data.name}`} />
 					</a>
 				</div>
 			</div>

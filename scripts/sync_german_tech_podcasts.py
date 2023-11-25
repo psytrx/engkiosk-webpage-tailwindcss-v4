@@ -1,8 +1,12 @@
 import os
-import logging
-import tempfile 
 import json
+import logging
+import tempfile
 import shutil
+
+from functions import (
+    build_correct_file_path
+)
 
 from git import Repo
 from PIL import Image
@@ -13,12 +17,12 @@ GIT_REPO_NAME = "GermanTechPodcasts"
 JSON_PATH_IN_GIT_REPO = "generated"
 IMAGES_PATH_IN_GIT_REPO = "generated/images"
 OPML_FILE_PATH_IN_GIT_REPO = "podcasts.opml"
-PODCAST_JSON_FILE = 'src/data/german-tech-podcasts.json'
-IMAGE_STORAGE = "public/images/german-tech-podcasts/"
+JSON_STORAGE = "src/content/germantechpodcasts/"
+IMAGE_STORAGE = "src/content/germantechpodcasts/"
 OPML_STORAGE = "public/deutsche-tech-podcasts/podcasts.opml"
 
 
-def sync_german_tech_podcasts(merged_json_file_path, image_storage_path, opml_storage_path):
+def sync_german_tech_podcasts(json_storage_path, image_storage_path, opml_storage_path):
     tmp_dir = tempfile.gettempdir()
     tmp_clone_dir = os.path.join(tmp_dir, GIT_REPO_NAME)
     
@@ -32,24 +36,28 @@ def sync_german_tech_podcasts(merged_json_file_path, image_storage_path, opml_st
     json_files = [json_file for json_file in os.listdir(json_file_dir) if json_file.endswith('.json')]
     logging.info(f"Found {len(json_files)} JSON files in {json_file_dir}")
     
-    # Read and combine JSON Podcast data
-    logging.info(f"Merging {len(json_files)} JSON files into one ...")
-    podcast_data = []
+    # Copy JSON files over
     for json_file in json_files:
-        abs_file_path = os.path.join(json_file_dir, json_file)
-        with open(abs_file_path) as f:
-            data = json.load(f)
-            podcast_data.append(data)
+        # Copy files over
+        src = os.path.join(tmp_clone_dir, JSON_PATH_IN_GIT_REPO, json_file)
+        dst = os.path.join(json_storage_path, json_file)
+        logging.info(f"Copying {json_file} from {src} to {dst}...")
+        shutil.copy2(src, dst)
 
-    # Dump Podcast data into file
-    logging.info(f"Writing merged JSON file {merged_json_file_path} ...")
-    with open(merged_json_file_path, 'w') as fp:
-        json.dump(podcast_data, fp, indent=4)
+        # Modify file content
+        with open(dst) as f:
+            data = json.load(f)
+            # Modify image key to only contain the filename
+            data["image"] = f"./{os.path.basename(data['image'])}"
+
+        # Write new file content
+        with open(dst, 'w') as fp:
+            json.dump(data, fp, indent=4)
 
     # Copy images over
     # Right now we only do it oneway.
     # If a podcast updates its image, we don't delete the old one.
-    # Dirty? Maybe. However, fast for now and the assumption is, that thos
+    # Dirty? Maybe. However, fast for now and the assumption is, that this
     # will not happen very often. If this assumption is wrong, we will update the
     # piece of code below.
     images_file_dir = os.path.join(tmp_clone_dir, IMAGES_PATH_IN_GIT_REPO)
@@ -94,16 +102,8 @@ if __name__ == "__main__":
         ]
     )
 
-    # Determine if the script is called from root
-    # or from the scripts directory.
-    directory_path = os.getcwd()
-    folder_name = os.path.basename(directory_path)
-    folder_prefix = ""
-    if folder_name == "scripts":
-        folder_prefix = "../"
+    image_storage_path = build_correct_file_path(IMAGE_STORAGE)
+    json_storage_path = build_correct_file_path(JSON_STORAGE)
+    opml_storage_path = build_correct_file_path(OPML_STORAGE)
 
-    merged_json_file_path = f"{folder_prefix}{PODCAST_JSON_FILE}"
-    image_storage_path = f"{folder_prefix}{IMAGE_STORAGE}"
-    opml_storage_path = f"{folder_prefix}{OPML_STORAGE}"
-
-    sync_german_tech_podcasts(merged_json_file_path, image_storage_path, opml_storage_path)
+    sync_german_tech_podcasts(json_storage_path, image_storage_path, opml_storage_path)

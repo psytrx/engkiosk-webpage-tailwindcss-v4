@@ -76,9 +76,34 @@ const meetupCollection = defineCollection({
   })
 });
 
+// Schema for German Tech Podcasts
+const germantechpodcastsCollection = defineCollection({
+	type: 'data',
+	schema: ({ image }) => z.object({
+		name: z.string(),
+		slug: z.string(),
+		website: z.string(),
+		podcastIndexID: z.number(),
+		rssFeed: z.string(),
+		spotify: z.string(),
+		description: z.string(),
+		tags: z.array(z.string()).nullable(),
+		weekly_downloads_avg: z.object({
+			value: z.number(),
+			updated: z.string(),
+		}),
+		episodeCount: z.number(),
+		latestEpisodePublished: z.number(),
+		archive: z.boolean(),
+		itunesID: z.number(),
+		image: image()
+	})
+});
+
 // Export a single `collections` object to register your collection(s)
 export const collections = {
   podcast: podcastEpisodeCollection,
   blog: blogEntryCollection,
-  meetup: meetupCollection
+  meetup: meetupCollection,
+  germantechpodcasts: germantechpodcastsCollection
 };

@@ -5,12 +5,14 @@ import Nav from '../../components/Nav.astro';
 import TechPodcastPreview from '../../components/TechPodcastPreview.astro';
 import { URLify } from '../../scripts/urlify.js';
 
-import germanTechPodcasts from '../../data/german-tech-podcasts.json';
+import { getCollection } from "astro:content";
+
 import germanTechPodcastsTags from '../../data/german-tech-podcasts-tags.json';
 
 export async function getStaticPaths() {
 	// Get tags from the german tech podcasts
-	const allPodcastTagsUniqueInclNull = [...new Set(germanTechPodcasts.flatMap((p) => p.tags))];
+	const germanTechPodcasts = await getCollection("germantechpodcasts");
+	const allPodcastTagsUniqueInclNull = [...new Set(germanTechPodcasts.flatMap((p) => p.data.tags))];
 	const allPodcastTagsUnique = allPodcastTagsUniqueInclNull.filter(function (tag) {
 		return tag != null;
 	});
@@ -46,22 +48,26 @@ if (germanTechPodcastsTags.hasOwnProperty(tagHumanName)) {
 }
 
 // Filter german tech podcasts by tag, sort by name
+const germanTechPodcasts = await getCollection("germantechpodcasts");
 let podcasts = germanTechPodcasts.filter(function (p) {
-	if (p.tags == null) {
+	if (p.data.tags == null) {
 		return false;
 	}
-	return p.tags.includes(tagHumanName);
+	return p.data.tags.includes(tagHumanName);
 });
 
-podcasts = podcasts.sort(function (a, b) {
-	if (a < b) {
+function orderByName(a, b) {
+	if (a.data.name.toLowerCase() < b.data.name.toLowerCase()) {
 		return -1;
 	}
-	if (a > b) {
+
+	if (a.data.name.toLowerCase() > b.data.name.toLowerCase()) {
 		return 1;
 	}
+
 	return 0;
-});
+}
+podcasts = podcasts.sort(orderByName);
 ---
 
 <html lang="de">

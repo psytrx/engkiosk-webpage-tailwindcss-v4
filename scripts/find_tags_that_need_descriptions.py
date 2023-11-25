@@ -10,7 +10,7 @@ import frontmatter
 # Global variables
 PODCAST_CONTENT_FILES = 'src/content/podcast'
 BLOGPOST_CONTENT_FILES = 'src/content/blog'
-GERMAN_TECH_PODCAST_DATA = 'src/data/german-tech-podcasts.json'
+GERMAN_TECH_PODCAST_CONTENT_FILES = 'src/content/germantechpodcasts'
 TAG_FILE_CONTENT = 'src/data/tags.json'
 TAG_FILE_GERMAN_TECH_PODCASTS = 'src/data/german-tech-podcasts-tags.json'
 
@@ -31,7 +31,7 @@ def read_all_tags_from_content_files(pathes):
     for p in pathes:
         logging.info(f"Reading tags from files in {p} ...")
 
-        # Get existing content files (podcast episodes and blog posts)
+        # Get existing content files in Markdown or MDX
         content_files = [f for f in os.listdir(p) if isfile(join(p, f)) and (f.endswith('.md') or f.endswith('.mdx'))]
         for content_file in content_files:
             full_file_path = f'{p}/{content_file}'
@@ -47,34 +47,21 @@ def read_all_tags_from_content_files(pathes):
                     else:
                         tags[tag] = 1
 
-    return tags
+        # Get existing content files in JSON
+        content_files = [f for f in os.listdir(p) if isfile(join(p, f)) and f.endswith('.json')]
+        for content_file in content_files:
+            full_file_path = f'{p}/{content_file}'
+            logging.info(f"Processing file {full_file_path} ...")
 
-def read_all_tags_from_german_podcast_data(content_file):
-    """
-    Reads all tags from {content_file}.
-    {content_file} is expected to be a JSON file with
-    multiple entrys, each containing a "tags" key.
-
-    Returns a dictonary with the tag as key and the
-    usage count as value.
-
-    @param: Filepath of a JSON file with entries each containing a "tags" key
-    @return: Dict with tags as keys and usage count as values
-    """
-    tags = {}
-    logging.info(f"Processing file {content_file} ...")
-
-    with open(content_file) as f:
-        data = json.load(f)
-        for podcast in data:
-            if podcast["tags"] is None:
-                continue
-
-            for tag in podcast["tags"]:
-                if tag in tags:
-                    tags[tag] += 1
-                else:
-                    tags[tag] = 1
+            with open(full_file_path) as f:
+                fm = json.load(f)
+                frontmatter_tags = fm.get("tags")
+                if frontmatter_tags is not None:
+                    for tag in frontmatter_tags:
+                        if tag in tags:
+                            tags[tag] += 1
+                        else:
+                            tags[tag] = 1
 
     return tags
 
@@ -166,8 +153,10 @@ if __name__ == "__main__":
 
     if args.mode == "german-tech-podcasts":
         TAG_FILE_PATH = f"{folder_prefix}{TAG_FILE_GERMAN_TECH_PODCASTS}"
-        content_path = f"{folder_prefix}{GERMAN_TECH_PODCAST_DATA}"
-        tags = read_all_tags_from_german_podcast_data(content_path)
+        content_pathes = [
+            f"{folder_prefix}{GERMAN_TECH_PODCAST_CONTENT_FILES}"
+        ]
+        tags = read_all_tags_from_content_files(content_pathes)
 
     len_content_tags = len(tags)
     logging.info(f"Reading existing tag descriptions from {TAG_FILE_PATH} ...")
