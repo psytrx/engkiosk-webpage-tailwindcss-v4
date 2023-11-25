@@ -9,10 +9,9 @@ export interface Props {
 	episodes: Array<string|number>;
 }
 
-import { getCollection, getEntry } from "astro:content";
+import { getCollection } from "astro:content";
 
 import PodcastEpisodePreview from '../components/PodcastEpisodePreview.astro';
-import { collections } from "../content/config";
 
 const { numberOfItems, episodes } = Astro.props;
 
