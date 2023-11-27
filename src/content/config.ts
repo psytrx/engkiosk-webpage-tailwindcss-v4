@@ -56,6 +56,7 @@ const meetupCollection = defineCollection({
 	type: 'content',
 	schema: z.object({
 		date: z.date(),
+		eventId: z.string().optional(),
 		location: z.object({
 			name: z.string(),
 			address: z.string(),
