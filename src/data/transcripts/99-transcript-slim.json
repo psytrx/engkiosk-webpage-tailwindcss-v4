@@ -1,0 +1,1650 @@
+{
+    "language_code": "de",
+    "audio_url": "https://cloud.inlupus.at/s/y2NfQg5qQAEiRLc/download/ep99_modern_sql.mp3",
+    "punctuate": true,
+    "format_text": true,
+    "dual_channel": false,
+    "webhook_url": null,
+    "webhook_auth_header_name": null,
+    "webhook_auth_header_value": null,
+    "audio_start_from": null,
+    "audio_end_at": null,
+    "word_boost": [],
+    "boost_param": null,
+    "filter_profanity": false,
+    "redact_pii": false,
+    "redact_pii_audio": false,
+    "redact_pii_policies": null,
+    "redact_pii_sub": null,
+    "speaker_labels": true,
+    "speakers_expected": 3,
+    "content_safety": false,
+    "content_safety_confidence": null,
+    "iab_categories": false,
+    "custom_spelling": null,
+    "disfluencies": false,
+    "sentiment_analysis": false,
+    "auto_chapters": false,
+    "entity_detection": false,
+    "summarization": false,
+    "summary_model": null,
+    "summary_type": null,
+    "auto_highlights": false,
+    "language_detection": false,
+    "speech_threshold": null,
+    "id": "42df03bd-04cd-4bdf-a6e6-a871ed33bf55",
+    "status": "completed",
+    "error": null,
+    "utterances": [
+        {
+            "text": "Ich habe ja einmal einen 1. April-Artikel verfasst, nachdem Oracle MySQL übernommen hat, so als Nachruf auf MySQL. Jetzt wirst du zur Grabe getragen in diesem Sinne. Wow, ich habe mich getäuscht. Das Beste, was MySQL jemals passiert ist, ist die Übernahme durch Oracle. Das alles oder nichts ist die Idee, dass wenn man ein ORM verwendet, dass man alles mit dem ORM machen muss. Und die ist eine Blödsinn meiner Meinung nach. Selbst wenn man heutzutage in die Hibernet-Dokumentation reinschaut, dann steht da drinnen, ja das ist ein Tool und das verwendet man neben SQL.",
+            "start": 2170,
+            "end": 30533,
+            "confidence": 0.7743020833333332,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Für die meisten Software-Engineers ist SQL ein alter Hut. Select Sternchen, From-Tabelle, Where-Foo-Gleichbar, Group-By-ID. Das haben wohl die meisten gelernt und damit kommt man schon recht weit. Doch war es das mit den Möglichkeiten von SQL? Klare Antwort, nein. Die Sprache wird weiterentwickelt, bekommt moderne Features und hat weitaus mehr zu bieten als manch einer denkt. Doch welche Datenbank unterstützt welches Feature? SQL ist ja irgendwie überall. MySQL, PostgreSQL, Oracle, MSSQL, SQLite, Google BigQuery und so weiter. Und genau darüber sprechen wir in dieser Episode mit dem SQL-Experten Markus Wienand. Wir sprechen über modernes SQL und unbekannte Features, die verschiedenen SQL-Standards, ORMs und die Trennung von Datenlogik und Applikationslogik, sowie über eine Can-I-Use-Plattform für SQL-Features. Und noch viel, viel mehr. Los geht's!",
+            "start": 34215,
+            "end": 82989,
+            "confidence": 0.8353196721311477,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Viel Spaß!",
+            "start": 83029,
+            "end": 83310,
+            "confidence": 0.5135,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Willkommen zu einer neuen Episode vom Engineering Kiosk Podcast. Heute sind wir mal wieder zu dritt im Studio mit einem Thema, wo eigentlich niemand aus der Tech-Industrie vorbeikommt. Und zwar fange ich mal mit dem abgedroschenen Satz Data is the new Oil an. Ich glaube, der wurde vor 20 Jahren geprägt. Punkt ist aber, diese Daten müssen auch irgendwie abgefragt werden und gespeichert werden. Und da kommen dann in der Regel Datenbanken in die Praxis. Und warum ich sage, dass niemand in der Tech-Industrie daran vorbeikommt, ist eigentlich, dass auch Produktmanager, Data-Analysten, Software-Entwickler und Co. mit Datenbanken arbeiten. Und wenn man noch von Datenbanken spricht, hat jeder irgendeine andere Datenbank im Sinn, aber was sehr, sehr viele Datenbanken vereint, ist das Thema SQL, die Abfragesprache oder halt auch nicht Abfragesprache, das werden wir unter anderem in diesem Podcast auch mal erklären. Und der Wolfgang hat zwar einen Doktor in Informatik im Fachbereich Datenbanken, dennoch denke ich mir, wir sollten uns mal einen richtigen Experten hier ans Mikrofon holen und deswegen begrüße ich Markus Wienand, hallo.",
+            "start": 86021,
+            "end": 149823,
+            "confidence": 0.8204057142857143,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Ja hallo, danke für die Einladung.",
+            "start": 150023,
+            "end": 152044,
+            "confidence": 0.4608333333333334,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Markus, ganz kurz zu dir. Du kommst aus dem schönen Wien aus Österreich. Wir beide haben uns schon vor ein paar Jahren kennengelernt und zwar hast du mal einen Vortrag auf dem lokalen Web Engineering Meetup Düsseldorf im Dezember 2018 gehalten zum Thema modernes SQL Evolution of a Dinosaur. Du bist Seit über 14 Jahren Trainer, Speaker und Consultant mit der Spezialisierung auf SQL. Dabei spielt es eigentlich gar keine Rolle, ob Oracle, MySQL, MS SQL, Postgre oder Google BigQuery, denn das ist dein Fachgebiet. strebst an oder pusht eigentlich projekte durchs internet um uns alle ein bisschen mehr wissen über sql mitzugeben wie use the index look.com und modern sql.com und du bezeichnest dich selbst als sql renaissancebotschafter habe.",
+            "start": 152084,
+            "end": 207521,
+            "confidence": 0.8210583333333332,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Ich was vergessen na ich glaube das könnte vollständig gewesen sein meine erste frage.",
+            "start": 207541,
+            "end": 213545,
+            "confidence": 0.8775714285714284,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Ist was ist ein sql renaissancebotschafter ja.",
+            "start": 213605,
+            "end": 217228,
+            "confidence": 0.8631428571428571,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Das ist ein selbstersonnener Titel, der dann irgendwie in einer Rolle widerspiegelt, in die ich über die Jahre hineingewachsen bin. Zumindest habe ich so ein bisschen das Gefühl. Denn es geht ja doch im SQL, in dem Pendel, das wir da hatten mit den Datenbanken, auch NuSQL, war SQL doch sehr verpönt. Und jetzt schwingt das Pendel in die andere Richtung. Es gibt also eine Renaissance. Und ich bin da der Botschafter in dem Sinne, dass ich da einfach die Botschaft vorantreibe, dass das SQL, das wir heute haben, nicht mehr das von unseren Großeltern ist.",
+            "start": 218299,
+            "end": 248298,
+            "confidence": 0.8183020833333333,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Warst du arbeitslos, wie NoSQL da am Start war?",
+            "start": 249041,
+            "end": 252722,
+            "confidence": 0.7597777777777778,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Nein, nein. Also NoSQL war für mich geschäftlich gesehen, hat es zu vielen Fragen geführt von Kunden, aber letztendlich die Unternehmen, die SQL schon verwenden, die sind da geblieben sowieso. Also es war eher eine Bubble im Startup-Bereich aus meiner Sicht.",
+            "start": 252762,
+            "end": 268187,
+            "confidence": 0.8443414634146342,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Ist das eine Bubble, die geplatzt ist, oder würdest du sagen, NoSQL hat sich jetzt auch neben SQL als zusätzliche Komponente etabliert?",
+            "start": 268710,
+            "end": 276214,
+            "confidence": 0.7261818181818182,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Es haben sich einzelne Produkte berechtigterweise etabliert. Da könnte ich jetzt Namen nennen. Mache ich vielleicht auch als Elasticsearch, ist quasi omnipräsent. Da braucht man nichts sagen. Und es hat seine Existenzberechtigung, das kann etwas, wo SQL jetzt nicht so doll darauf spezialisiert ist. Es gibt aber auch eine Unzahl von NoSQL-Produkten, die halt einfach nur letztendlich Venture-Capital-Einsammelmaschinen waren. Die sind dann halt natürlich jetzt nicht mehr vorhanden. Sie haben für die Gründer wohl ihren Zweck erfüllt, nämlich das Venture-Capital einzusammeln. Ja, aber das war's dann auch schon. Aber natürlich, es bleibt technologisch immer was Interessantes übrig. Also diese ganze verteilte Thematik, da hatte ich erst neulich, glaube ich, eine Episode dazu, die ist dadurch, glaube ich, ein bisschen mehr ins Rampenlicht geraten.",
+            "start": 276254,
+            "end": 320287,
+            "confidence": 0.7740731707317071,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Immer wenn ich das Wort Konsultant höre, frage ich mich, was macht ein Konsultant, was macht ein Berater? Und jetzt würde mich mal interessieren, prozentual gesehen, was würdest du sagen, ist der größte Anteil deiner Arbeit als SQL-Konsultant? Ist es Training? Ist es Speaker auf Konferenzen? Ist es wirklich Hands-on-Helfen bei Performance-Issues? Oder womit würdest du sagen, okay, da ist dein Fachgebiet und das wird auch am meisten angefragt?",
+            "start": 320700,
+            "end": 348123,
+            "confidence": 0.7930434782608696,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Und als Renaissance-Botschafter natürlich.",
+            "start": 348163,
+            "end": 349784,
+            "confidence": 0.5737500000000001,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Ja, weil du sagst Konferenzen und ich war ja auch bei euch in Düsseldorf. Das ist durch Corona durchaus ein bisschen eingerissen. Nicht nur deswegen, weil sie nicht mehr physisch möglich waren, sondern auch, weil es bei mir private Turbulenzen gab, die sich jetzt erst wieder glätten müssen. Insofern kann ich jetzt in den letzten zwei, drei Jahren diese Rolle nur online erfüllen. Kommerziell gesprochen muss ich sagen, mein Hauptgeschäft ist definitiv Schulungen. Es gibt zunehmend Leute, das Pendel schwingt zurück, die sagen, ja, das SQL ist da, aber kann ja nicht so sein wie vor 30 Jahren. Und da wollen wir einerseits mal ein Update haben, was gibt es denn da Neues, was kann denn konkret mein Produkt jetzt Neues, sei es BigQuery oder was auch immer. Da habe ich sicherlich den Schwerpunkt. Die Beratungstätigkeit geht großteils noch zurück auf mein erstes Buch, das ja justindexlook.com auf der Webseite gratis zu lesen ist, wo es um Performance geht. Da drückt nach wie vor der Schuh, dass einfach irgendwas zu langsam ist. Im Ergebnis stelle ich aber vermehrt fest, dass die Ursachen dieser Performance-Probleme häufig eben ein fundamentales Missverständnis davon ist, was SQL überhaupt ist. Ja, Stichwort Abfragesprache. Also jeder der SQL mit dem Begriff Abfragesprache verbindet, hat meiner Meinung nach schon ein ganz fundamentales Missverständnis.",
+            "start": 350097,
+            "end": 424961,
+            "confidence": 0.797782407407407,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Dann bleiben wir gleich mal bei dem Punkt, was ist denn SQL deiner Meinung nach?",
+            "start": 424981,
+            "end": 428805,
+            "confidence": 0.8568,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Ja, SQL ist deutlich mehr. Es ist eher eine Transformationssprache. Natürlich kann man damit auch ganz, ganz einfache Abfragen machen, ja, oder die typischen CRUD-Operationen, nicht Create, Read, Update, Delete, wo man meistens dann einfach nur mit einem Primärschlüssel auf irgendwas zugreift. Aber das ist natürlich relativ langweilig. Dafür brauche ich keine eigene Sprache. SQL stellt die Transformation eigentlich in den Vordergrund. Und das war eigentlich sogar schon immer so. Alleine die Idee, dass man sagt, Nun ja, die persistente Datenschicht, das, was ich auf der Disk habe, das, was nachhaltig bleibt, das wird immer schwer zu ändern sein. Wenn ich mich da einmal für irgendein Schema, Tabellenformat, Spalten entscheide, dann ist es relativ mühsam, wenn ich mal eine Petabyte zusammengesammelt habe, das umzubauen. Und das ist relativ unabhängig davon, für was für ein Format man sich entscheidet, ob es jetzt ein tabellarisches ist oder, sagen wir, MongoDB, halt ein JSON-Store. oder XMLs. Wenn ich mich mal für ein persistentes Datenformat entschieden habe, ist es relativ mühsam, das dann zu ändern, wenn ich Daten angesammelt habe. Und mit dem Gedanken im Hintergrund sehe ich das ganze SQL so, dass man sagt, naja, wir wissen, das eine, was wir wirklich wissen, ist, dass wir nicht wissen, was die Zukunft bringt. Insbesondere nicht, was wir mit den Daten, die wir heute sammeln, in der Zukunft anstellen wollen werden. Das heißt, ein Ansatz, den ich grundsätzlich für grundfalsch aus der SQL-Sicht erachte, ist, die persistente Datenschicht so anzulegen, wie die Daten gerade anfangen oder wie ich sie jetzt gerade brauche. Weil diese Dinge, die sind ziemlich variabel. Es kann sein, dass ich die Daten aus anderen Quellen beziehe, dann kriege ich sie vielleicht nicht als JSON, sondern als XML und so weiter. Und das Marketing vielleicht morgen mit einer neuen Anforderung für Ihren Report kommt, ist jetzt auch nicht allzu überraschend. Das kommt ständig einmal vor. Das heißt, das, was extrem variabel ist, ist, was wollen wir mit den Daten machen und wo kommen sie her? Und wenn man das jetzt verheiratet möchte mit der Idee, dass man die Daten langfristig speichert, dann hat man da eben diesen Gap, nicht? Wenn ich sie so speichere, wie sie heute anfallen, dann werde ich übermorgen ein Problem mit der Abfrage haben. So, jetzt schmeiße ich noch das Wort Normalisierung in den Ring. Denn genau darum geht es. Und vergesst mal jetzt einmal diese ganzen Normalformen. Ja, du hast studiert und hast den Doktor. Gratuliere. Vergiss die Normalformen für einen Moment.",
+            "start": 429085,
+            "end": 557319,
+            "confidence": 0.8001590361445783,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Der Andi freut sich schon wieder.",
+            "start": 558380,
+            "end": 559582,
+            "confidence": 0.5905,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Bleiben wir mal einfach nur beim wahrhaften Wort normal. Was ist denn eigentlich jetzt normal für die Daten? In was für einem Schema würden sich die Daten wohlfühlen, wenn wir jetzt einmal die Daten selbst fragen? Und da gebe ich euch noch so ein Bild mit. Ihr kennt vielleicht die Thunfisch-Werbung mit dem Grissini. Kennt ihr die? Da geht es darum, dass man aus einer Dose Thunfisch, der ist so zart, dass man mit einem Grissini den Thunfisch zerteilen kann und er fällt quasi halt in seine Filetstücke.",
+            "start": 560814,
+            "end": 586673,
+            "confidence": 0.7994886363636364,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Das gibt es bei euch da oben im Laden nicht, Andi.",
+            "start": 587073,
+            "end": 588995,
+            "confidence": 0.6583636363636365,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Ne, da habt ihr was verpasst. Das ist eine ganz klassische Werbung hier bei uns, die ist relativ bekannt, glaube ich. Aber stellen wir uns mal vor, unsere Daten sind jetzt der Thunfisch. Und wir tun da ganz sorgfältig ein bisschen antupsen und schauen, wie diese Daten auf natürliche Weise dann zerfallen. Und das ist für mich das Normalisieren. Da stellt sich dann heraus, na gut, wenn ich von einem nur eins habe und von anderen null bis N haben kann, dann kann das nicht in dieselbe Tabelle gehören. Da brauche ich nichts über Wissenschaft noch gar nicht reden. Wenn man so eben versucht herauszufinden, was ist denn jetzt das normale Schema für die Daten, dann kommt man auf etwas, Das in der Regel nicht dementspricht, wie die Daten gerade anfallen und auch nicht dementspricht, wie man sie dann brauchen wird für die Anforderungen, die man jetzt gerade hat. Aber etwas, das sich auf die Dauer bewährt. Denn die intrinsische Natur, wie die Daten geformt sind, die ändert sich gar nicht so oft. Da kommt vielleicht einmal eine Spalte dazu. Vielleicht kommt einmal eine neue Tabelle dazu. Aber wenn ich eine 1 zu N Beziehung habe, dann ändert sich da ganz selten was. Manchmal glaube ich, es ist vielleicht nur eine 1 zu 1 Beziehung. Dann stellt sich heraus, es ist doch eine 1 zu N Beziehung. Dann muss man da unter Umständen was rausziehen. Aber im Vergleich dazu, was wir mit den Daten machen wollen, ist es extrem statisch. Und das ist der Vorteil der Normalisierung, wenn man das eben dann so persistent speichert, dass man damit relativ gut über lange Frist zurechtkommt.",
+            "start": 589075,
+            "end": 665744,
+            "confidence": 0.7816058394160579,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Also es ist eine Transformationssprache und keine Abfragesprache, weil du ja die Daten eben transformierst.",
+            "start": 666832,
+            "end": 672395,
+            "confidence": 0.7595333333333333,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Und jetzt kommt dann die Frage, naja, was mache ich jetzt mit diesen Haufen von Tabellen, die da wunderbar normalisiert auf der PS-Platte liegen? Ich habe doch jetzt eine ganz einfache Anfrage und plötzlich muss ich sieben Tabellen verjoinen. Und da sagt man jetzt, naja gut, okay, nachdem das dann eine sehr regelmäßige Anforderung sein wird, wäre es sehr praktisch, wenn wir da eine domainspecific language haben, eine problemorientierte Sprache, die halt einfach genau das gut kann, ja, dieses Transformieren, sowohl beim Reinschreiben als auch beim Rausziehen dann, weil das muss ich ständig machen. Und das passiert eben on the fly. Das, was ich persistent auf der Disc habe, das ist relativ statisch und schwer zu ändern. Was ich aber dann damit mache, das kann ich mir eben mit SQL transformieren, in welche Form auch immer jetzt gerade bequem ist für meine Anforderungen.",
+            "start": 672756,
+            "end": 714103,
+            "confidence": 0.7915804195804191,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Und warum ist SQL so beliebt, würdest du sagen? Warum hat sich das so lange gehalten? Vermutlich werden wir die meisten Leute heutzutage gefragt, okay, was verwendet ihr? Und sie sagen SQL. Und man fragt sie noch, was ist SQL? Dann würden die wahrscheinlich sagen, ja, das ist eine uralte Sprache aus den 70er Jahren, 80er Jahren. Seitdem hat sich nie mehr was entwickelt. Und die müssen wir halt verwenden, weil es so das Einzige ist, was es irgendwie gibt. Aber ist das wirklich der Erfolgsfaktor? Es gibt nichts anderes? Oder warum glaubst du, ist das ganze Ding erfolgreich und immer noch erfolgreich und sogar wieder erfolgreich, wenn man die Renaissance betrachtet?",
+            "start": 714143,
+            "end": 747370,
+            "confidence": 0.7893928571428568,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Naja, ich glaube schon, dass es der First Mover quasi war in diesem Feld und einfach einen Startvorteil hatte, damals vor vielen Jahren. Es hat eine solide Basis durch die Wissenschaft bekommen, das ist immer mal ein Plus. Und die Benefits, die die neueren Versuche oder anderen Versuche bringen, die sind dann nicht so gigantisch. Also es freut mich total, dass du gesagt hast, SQL ist beliebt. Das entspricht nicht meiner Wahrnehmung. Aber es freut mich, wenn du das so siehst. Was ich zum Beispiel oft merke, ist, dass die Syntax einfach mit so vielen Schlüsselworten als ausgesprochen abstoßend und unnatürlich aus heutiger Sicht empfunden wird. Und das geht natürlich Hand in Hand damit, naja, das ist was aus den 70ern, 80ern und das muss man halt, ist so quasi wie das Kobold. Aber SQL ist da insofern, ich möchte nicht sagen anders, ich kann nichts über Kobold sagen, also weiß ich nicht, wie sich das weiterentwickelt hat. Aber SQL ist dadurch, dass es doch letztendlich ein ISO-Standard ist, ist es einer Änderung zwangsläufig unterworfen, weil allein schon ISO vorgibt, so alle vier bis fünf Jahre muss eine überarbeitete Version rauskommen. Und bei diesen überarbeiteten Versionen werden halt auf die aktuellen Trends halt so versucht zu normalisieren, also standardisieren. Ihr könnt euch vorstellen, es läuft grob gesprochen so, dass es irgendeinen neuen Hype gibt, nehmen wir mal Jason, und dann gibt es verschiedenste Hersteller von SQL-Produkten, die irgendwas zu dem Thema machen. Und dann kommt meistens im Nachfeld der Standard daher und sagt, puh, das ist aber jetzt ein Wildwuchs, wollen wir da nicht irgendwie was vereinheitlichen? Und dann setzen sich die Leute an den Tisch und fangen an zu diskutieren. und vergleichen die eine Lösung mit der anderen Lösung von dem Produkt und versuchen so ein bisschen das Beste herauszutestellieren. Und der Prozess dauert. Also so fünf Jahre Zyklus ist da absolut üblich. Am Ende kommt aber etwas raus, was dann extrem tagfähig ist, einfach weil es viele Benefits von verschiedenen Ansätzen, die schon so ein bisschen ausprobiert wurden in manchen Produkten, vereinheitlichen kann und dadurch halt einfach vom Anfang an her schon so ein bisschen Bulletproof möchte ich nicht sagen, was könnte man da sagen? Es ist halt schon battle-tested quasi ein bisschen.",
+            "start": 747989,
+            "end": 877273,
+            "confidence": 0.8149466666666667,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Ich finde es schön, dass, ich musste gerade so ein bisschen grinsen, weil ich finde es nämlich schön, dass du sagst, okay, der Zyklus dauert fünf Jahre und ich dachte mir, puh, also bis man Change im Linux Kernel in der weltweiten Produktion auf Servern wirklich ankommt, sind fünf Jahre schon recht schnell.",
+            "start": 878138,
+            "end": 894526,
+            "confidence": 0.753698113207547,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Naja, die fünf Jahre sind, ja, Papier ist geduldig, sagt man, gell. Also der SQL-Standard ist, ich würde gerne sagen, ein Haufen Papier, in Wirklichkeit ist es ein PDF-Download. Damit ist noch nicht viel gewonnen, dass die neue Version da ist. Wir hatten jetzt erst kürzlich eine neue Version. Am 1.6.2023 ist jetzt der aktuelle Standard rausgekommen. Davor war es 2016 der letzte. Da sieht man, dass die fünf Jahre nicht immer halten.",
+            "start": 894546,
+            "end": 917534,
+            "confidence": 0.7774931506849314,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Zu den SQL-Standards würde ich gleich gerne kommen. Ich würde noch eine Sache fragen bezüglich, wie beliebt denn SQL wirklich ist. Und zwar habe ich das Gefühl, dass SQL wirklich immer mehr beliebter wird, denn auch, ich sage mal so, die Hippen aus dem Low-SQL-Bereich, die springen ganz auf. Nehmen wir mal jetzt hier im Stream-Processing mit Flink-SQL, um wirklich Streams abzufragen, oder Kafka mit KSQL, oder halt auch, ich sag mal, in Anführungszeichen Dialekte wie die Cassandra-Query-Language, die eigentlich fast aussieht wie SQL.",
+            "start": 917574,
+            "end": 953221,
+            "confidence": 0.8335595238095242,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Ja, sehe ich ein bisschen kritisch, diesen Trend, diesen QL, inflationäre Explosion von QLs. Das entspricht genau dem Gegenteil, was man mit einem Standard bewirken möchte.",
+            "start": 953381,
+            "end": 963226,
+            "confidence": 0.7682692307692307,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Aber es zeigt, dass das grundsätzlich wieder irgendwie hipper ist. Ich kann mich auch erinnern an die Zeit, an die ganze NoSQL-Zeit. Da war es fast verpönt, in irgendeinem Lebenslauf oder in einer Jobausschreibung SQL zu schreiben. Und jetzt hast du bei jeder Data-Science-Ausschreibung, bei jedem Data-Analyst, wahrscheinlich sogar bei jedem Programmierer, überall SQL eigentlich in jeder Job-Description drinnen. Das ist fast eine Grundvoraussetzung heutzutage geworden. Und eben, wie der Andi sagt, jetzt sogar die Hippen springen auf, auch wenn das natürlich dann kein Standard SQL ist. Das ist natürlich immer das Problem. Aber auch die Datenbanken halten sich ja auch nur teilweise an den Standard grundsätzlich. Also gerade so MySQL war da ja immer berühmt, dass es eher weit abseits des Standards arbeitet.",
+            "start": 964119,
+            "end": 1006785,
+            "confidence": 0.7934435483870966,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Ja, da hast du in allem, was du sagst, recht. Papiersgeduldig kann ich nur nochmal wiederholen. Viele der Inkompatibilitäten, die wir trotz Standard haben, gehen einfach auf die graue Vorzeit zurück. Da sind Features entstanden oder Implementierungen von SQL entstanden zu einer Zeit, wo der Standard halt noch nicht etabliert war.",
+            "start": 1007826,
+            "end": 1028546,
+            "confidence": 0.8364509803921569,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Wie entsteht denn überhaupt dieser Standard oder wer steckt hinter dem Standard? Das ist immer so die Idee.",
+            "start": 1029146,
+            "end": 1033429,
+            "confidence": 0.6698333333333333,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "ISO, also die internationale Standardorganisation. Die steckt dahinter, die haben die Schirnherrschaft organisatorischer Natur im Wesentlichen. Die geben die Prozesse vor, von denen kaufst du dann den Standard am Schluss.",
+            "start": 1033449,
+            "end": 1044210,
+            "confidence": 0.7868999999999998,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Und da sind dann in den Gremien sind dann aber auch Datenbankhersteller wahrscheinlich mit dabei, oder?",
+            "start": 1044550,
+            "end": 1050112,
+            "confidence": 0.738875,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Naja, indirekt. Also grundsätzlich sitzen dort Menschen, möchte ich einmal vorher vorheben. Das sind Leute. Das sind Leute wie du und ich, die können miteinander reden. Natürlich werden die Leute alle von irgendjemand bezahlt. Rein formell gesehen wird dann abgestimmt, nachdem es die internationale Standards-Organisation ist, wird auch länderweise abgestimmt. Aber das hat nicht wirklich die praktische Bedeutung. Praktisch gesehen passiert die Arbeit in den sogenannten Working Groups und da sitzen Leute drin, ich kann nur wiederholen, wie du und ich, die sich für dieses Thema speziell interessieren und halt mehr oder weniger zufällig von irgendjemand bezahlt werden.",
+            "start": 1050192,
+            "end": 1084025,
+            "confidence": 0.7990306122448977,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Hat sich das irgendwie geändert gegenüber früher? Ich könnte mir vorstellen, früher, da hat es Oracle und DB2 gegeben. That's it. Keine Ahnung, da war der wahrscheinlich bestimmt von denen. Und keine Ahnung, wie weit jetzt die kleineren Datenbanksysteme da jetzt neuerdings auch Einfluss haben oder in den letzten Jahrzehnten vielleicht Einfluss.",
+            "start": 1084145,
+            "end": 1101491,
+            "confidence": 0.759846153846154,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Das ist ein wunderbares Beispiel, was du sagst. Natürlich hat sich da, die Menschen, die drin sitzen, haben sich geändert und sind jetzt auch von kleineren vertreten. Aktuell sind meines Wissens nach zwei Leute, die man in die Postgres-Schublade legen würde, im Standard-Committee vorhanden. Oder ein anderes Beispiel, wenn du sagst, kleinere Datenbanken. Im aktuellen Standard, im 23er Standard, das Killer Feature, was da eingeführt wurde, war die Grafen, eine Grafenabfragesprache. Und wenn ich da jetzt Neo4j erwähne, dann klingelt da bestimmt beim einen oder anderen Zuhörer die Glocke. Und wenn das jetzt in SQL ähnlich ausschaut wie bei Neo4j, dann ist das kein Zufall. Es sitzen die Leute von Neo4j da drinnen und arbeiten damit, das zu standardisieren. Und es geht jetzt in dem konkreten Fall sogar noch weiter als nur SQL. Es ist ein kompletter neuer Standard für Grafabfragesprachen entstanden und der kann jetzt teilweise in SQL auch benutzt werden.",
+            "start": 1101631,
+            "end": 1152973,
+            "confidence": 0.7749210526315788,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Aber wie darf man sich das dann vorstellen? Kämpfen die dann dafür, dass dann die Cypher-Language irgendwie da reingekippt wird?",
+            "start": 1153013,
+            "end": 1158617,
+            "confidence": 0.6697499999999998,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Natürlich machen sie das. Ich bin jetzt selbst nicht Teil des Gremiums. Ich bin da auch nur ein außenstehender Beobachter. Aber ganz ehrlich, warum denn auch nicht? Wenn es eine etablierte Sprache ist, die schon viele Fragen beantwortet hat, dann ist es ja nur völlig korrekt, dass man darauf aufbaut und nicht etwas neu erfindet, wie wir es so gerne tun. Da ist nichts verböntes dran. Am Schluss, also vom Prozess her müsst ihr es euch so vorstellen. Es schreibt irgendwer ein Paper, der reicht einem einen Änderungsvorschlag für den Standard. Da kannst du dir vorstellen, das ist wie ein Patch. Da steht dann drinnen eine Überschrift und so weiter und da steht drinnen, den Absatz würde ich gerne so ändern und den Absatz so und so weiter. Und darüber wird dann letztendlich abgestimmt.",
+            "start": 1158657,
+            "end": 1197607,
+            "confidence": 0.7015074626865669,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Aber heißt das dann nicht im Umkehrschluss, dass SQL dann partiell zumindest auf dem Weg ist, eine eierlegende Wollmilchsau zu werden, beziehungsweise SQL-Datenbanken, die dann diese neuen Standards implementieren? Ich meine, diese ganzen Multi-Methoden-Datenbanken wie, weiß ich nicht, AranguDB, die halt wirklich eine Graf-Datenbank haben, einen Key-Value-Store, einen relationalen Layer und so weiter und so fort. Da hat man auf den ersten Blick, also laut Marketing funktioniert ja immer alles, aber auf den zweiten Blick ist es halt so, okay, aber wie kannst du als einzelne Datenbank alle verschiedenen Methoden integrieren? Und wieso gibt es dann noch, weiß ich nicht, Redis als Key-Value-Store, Postgreer als Relational? Also wird das dann nicht eine eierlegende Würmichsau?",
+            "start": 1197647,
+            "end": 1241244,
+            "confidence": 0.8122368421052629,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Nicht unbedingt. Weil der SQL-Standard versteht sich jetzt nicht so, dass er dir vorschreibt, dass du alles können musst. Es gibt schon beim 99er-Standard, wie der herausgekommen ist, also schon ein Weilchen her, hat jemand aus dem Standard-Komitee selbst gesagt, es wird nie wieder eine Datenbank geben, die den kompletten Standard umsetzt. Das ist auch so. Der Standard hat einen gewissen Kern, das nennen wir Core-SQL. Und das ist das, was jedes System, das SQL kann, können sollte. Und das ist bitte im Wesentlichen das, was man von vor 30 Jahren kennt.",
+            "start": 1241264,
+            "end": 1271667,
+            "confidence": 0.8539891304347829,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Also das ist, was die meisten Leute auch verwenden in der Realität wahrscheinlich.",
+            "start": 1272421,
+            "end": 1276142,
+            "confidence": 0.7114615384615384,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Genau, das ist das, was gemeinhalt so als SQL oft gekannt wird.",
+            "start": 1276162,
+            "end": 1280104,
+            "confidence": 0.6621666666666667,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Darum sagen die Leute wahrscheinlich auch, was gibt's denn da Neues, das SQL ist ja irgendwie aus den 70ern, es hat sich nie was getan, ich schreibe immer noch SELECT, STARN, FROM und eine WHERE-CLASS hinten und das war's.",
+            "start": 1280124,
+            "end": 1289947,
+            "confidence": 0.677794871794872,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Genau, also das ist alles Core-SQL. Die neuen Sachen sind dann halt eben als optionale Features mehrheitlich eingeführt worden. Ich bin mir gar nicht sicher, ob es irgendein Mandatory Feature seither neu gab. Das müsste ich jetzt echt recherchieren, kann ich gar nicht beantworten. Aber ich vermute nicht.",
+            "start": 1289967,
+            "end": 1304830,
+            "confidence": 0.7347083333333333,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Aber wir sprechen ja jetzt schon, du hast es schon mehrmals erwähnt, SQL-Standards. Du hast gerade den 23er-Standard erwähnt, den 99er-Standard, dann die Kategorisierung der Features in Core-SQL. Kannst du uns mal, ich sag mal ganz kurz, einen Abriss über SQL-Standards geben? Also, wie viele Standards gab es? In welchem Intervall kommen die raus? Mal eine grobe Übersicht.",
+            "start": 1305255,
+            "end": 1326639,
+            "confidence": 0.7433103448275864,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Ich habe gerade irgendwo offen, da steht dann immer die Edition drin, also momentan haben wir die 6. Edition, die 6. Ausgabe. Ja, historisch gesehen, 70er, 80er, ich mache es ganz, ganz kurz. Der erste Standard ist tatsächlich von ANSI, also von den Amerikanern herausgebracht worden, im Jahre 86 meines Wissens. Und da gibt es auch heute oft noch den Begriff ANSI SQL, den ich eben auch nicht sehr mag, weil er ist dann relativ kurz, ich glaube es war dann schon 89, an die ISO übergeben worden, wenn auch ANSI bis heute das Sekretariat stellt, das Personal zur Verfügung stellt für die Organisation. Dann gab es, also 86, 89, 92. 92 war, ich finde, ein wunderbarer SQL-Standard. Der hat das alles so ein bisschen abgerundet. Da sind so die letzten fehlenden Sachen dazu gekommen, dass es eine praktikabel nutzbare Sprache war. Allerdings noch de facto im relationalen Käfig eingesperrt. Also nur relational gedacht. Nur Joins, ein bisschen Aggregationen, ja das schon, aber ansonsten nix eigentlich. Ja und Das ist das, was die meisten eben kennen und das, was sie heute im Wesentlichen KSK lesen. Dann 99. Da haben wir wieder ein größeres Loch. Da hat sich auch verdammt viel getan und da war so manches ein Räuberbier, sagen wir das ganz ehrlich. Schlüsselwort Objektdatenbank. Also SQL hat die Idee der Objektdatenbank komplett standardisiert. Es gibt ja das Statement create type in SQL und man kann Methoden machen und man kann das alles dann in Spalten ablegen und es ist alles in dem typensicheren Sprachhandling ist das alles eingebaut. Ja, ich würde es als Rohrkrepierer bezeichnen.",
+            "start": 1326679,
+            "end": 1419494,
+            "confidence": 0.7656616541353385,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Hast du da in der Praxis irgendwas noch erlebt? Gibt es da Firmen, die noch mit sowas arbeiten? Oder ist es wirklich komplett tot?",
+            "start": 1419534,
+            "end": 1426199,
+            "confidence": 0.7981249999999999,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Nein, das ist meiner Meinung nach. Also es gibt schon Systeme, wo halt Typen hier und da mal verwendet werden. Also Bostl ist da wieder zu nennen. Da ist das halbwegs brauchbar implementiert. Und da gibt es dann auch immer wieder mal Anwendungsfälle, wo das einfach praktisch ist. Aber im breiten Feld würde ich sagen, nein. Das, was da gewonnen hat, waren die ORMs. Das Mapping wurde anders gelöst, als dass man das Objekt als solches in der Datenbank speichert. Man hat eine Transformationsschicht dazu erfunden. Aber 99 war auch ansonsten ein riesiger Standard. Also die Rekursionen sind zum Beispiel dazu gekommen. Damit haben wir überhaupt nochmal eine komplett andere Ebene, wie man arbeiten kann, mit Graphen zum Beispiel. Das war die erste Methode, wie man überhaupt irgendwie mit Graphen in SQL umgehen konnte. Und da sind wir wirklich in einer Welt, die hat mit Relationen jetzt im eigentlichen Sinn nichts mehr zu tun.",
+            "start": 1426239,
+            "end": 1474727,
+            "confidence": 0.7339090909090907,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Ja wo du sagst rekursionen und relationale daten ich kann mich noch an früher erinnern dass wir auf diesen webseiten immer diese breadcrumbs hatten ja wo wir gerade sind oder wenn du wenn du wenn du die welt in einer datenbank ablegen möchtest das bedeutet du hast die welt und dann darunter hast du kontinente oder länder und darunter bundesländer und so weiter und so fort.",
+            "start": 1475047,
+            "end": 1494118,
+            "confidence": 0.7499393939393937,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Hierarchien, meinst du?",
+            "start": 1494138,
+            "end": 1496421,
+            "confidence": 0.484,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Entschuldigung, genau, ja, Hierarchien, obwohl es natürlich dann bei der Welt alles ein bisschen schwieriger wird, wenn du über Sachen wie La Reunion nachdenkst, das gehört zu Frankreich, liegt aber nicht in Europa. Da gibt es natürlich dann immer diese Grenzfälle.",
+            "start": 1496441,
+            "end": 1510558,
+            "confidence": 0.8245853658536584,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Ganz abgesehen von den politischen Dingen und.",
+            "start": 1511179,
+            "end": 1514041,
+            "confidence": 0.7297142857142856,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Ganz genau politisch und geografisch ist da vielleicht nochmal getrennt aber und und wo du jetzt gerade rekursion ansprichst und du sagst das kam im 99er standard also ich meine wir haben jetzt 2023 das.",
+            "start": 1514061,
+            "end": 1522647,
+            "confidence": 0.6993714285714285,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Sind 14 jahre her und 24.",
+            "start": 1522667,
+            "end": 1526139,
+            "confidence": 0.7050000000000001,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Siehst du für mich ist alles was so man kennt das ich habe die daten immer den normalisiert abgelegt. Ja, hättest du mir vor acht Jahren gesagt, ja Moment mal, aber deine Datenbank hat eine Rekursion, dann kannst du das ja alles auch auf die Datenbank auslagern. Ob man das soll oder nicht, sei da dahingestellt, können wir vielleicht auch nochmal drüber sprechen, wo dann die Applikationslogik hin soll. Aber ich hab so das Gefühl, dass manche Features aus dem 99er Standard gar nicht in der heutigen Entwicklerwelt angekommen sind.",
+            "start": 1526149,
+            "end": 1550866,
+            "confidence": 0.710611111111111,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Ja, und deswegen braucht es ja einen SQL Renaissance Ambassador.",
+            "start": 1551506,
+            "end": 1557510,
+            "confidence": 0.6007999999999999,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Schön.",
+            "start": 1557650,
+            "end": 1557770,
+            "confidence": 0.098,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Ja. Ja, auf diese Erkenntnis läuft meine Schaffungsgeschichte rund um Modern SQL letztendlich heraus. Also ich möchte dabei nicht nur der breiten Öffentlichkeit bekannt machen, dass es diese Features gibt, sondern ich möchte auch bekannt machen, dass das kein Spezifikum einer Oracle oder Microsoft SQL Server oder IBM DB2 oder was auch immer ist. Das ist bitte ein internationaler Standard. Und das ist auf breiter Basis mittlerweile unterstützt. Also Rekursionen kann fast jedes System. Es gibt ganz wenige Ausnahmen. Big Query fällt mir da jetzt ein. Okay, das ist halt im Data Warehouse ein bisschen, braucht man das halt nicht so dringend. Aber es kann eigentlich fast jedes System heutzutage Rekursionen abbilden. Wird ja auch höchste Zeit für 20 Jahre später.",
+            "start": 1557790,
+            "end": 1598487,
+            "confidence": 0.7485454545454544,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Wie war das gerade zur Erklärung, wenn so ein Standard rauskommt, jetzt 99, haben dann Oracle und DB2 das schon früher unterstützt und der Standard war dann verspätet oder umgekehrt?",
+            "start": 1599107,
+            "end": 1608455,
+            "confidence": 0.7099999999999999,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Es kann so und so sein. Also die Sachen, die sich bewähren, die gab es schon vorher, würde ich mal sagen. Also die Rekursion ist, ich habe es jetzt auch nicht im Kopf, ich glaube IBM war da schon da, bevor der Standard da war.",
+            "start": 1608795,
+            "end": 1619323,
+            "confidence": 0.7245777777777778,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Also ich vermute mal auch, ich kann es auch nicht sicher sagen, ich weiß, dass man das so 2002, haben wir das unterrichtet, auch auf jeden Fall, oder unterrichtet bekommen und unterrichtet schon. Also ich vermute, es war schon länger irgendwie in den Datenbanken drin, auch wenn.",
+            "start": 1619363,
+            "end": 1631569,
+            "confidence": 0.7487446808510634,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Der Standard dann Ich glaube, es war DB2. Es war sicher nicht Oracle. Oracle ist ganz spät gekommen, weil die haben ihr eigenes Connect-Byte gehabt für ähnliche Sachen. Es gibt aber auch umgekehrte Fälle, wo es einfach Features im Standard gibt, von denen ich keine Implementierung kenne. fragt man sich ja, wo kommt denn das eigentlich her? Und ja, die Frage kann ich auch nicht beantworten, weil ich sitze ja, wie gesagt, nicht im Standard. Aber sie sind dann manchmal trotzdem nützlich und hier und da werden sie dann vielleicht doch einmal, wenn man Bewusstsein dafür schafft, dass es das gibt und welche Probleme dieses Feature lösen würde, dann kann man gerade bei Open-Source-Datenbanken auch mit Lobbying ein bisschen was erreichen, dass das dann vielleicht auch einmal in der einen auftaucht. Und dann habe ich eben auf ModernSQL diese wunderbaren Matrixen und Darstellungen, wo ich ganz schön das Git Blame quasi mache, wer kann was, wer kann was nicht. Und da wird es dann früher oder später mal peinlich für Datenbankhersteller, wenn es dann Features gibt, die jetzt die Konkurrenz alle können, aber sie selber nicht und das dann auch noch gute Use Cases hat. Irgendwann fängt dann so ein Lawineneffekt an. Das habe ich schon zwei, drei Mal beobachtet, dass eben, wenn ein Feature von einem Produkt mal implementiert wird, dann zieht das nächste, ein ganz klassisches Postless macht irgendwas, SQLite zieht nach. Das ist ganz klassisch. Und damit haben es schon mal zwei, die relativ unterschiedlich sind. Und dann, naja, Maisküren möchte ich dann unter Umständen auch nicht so die Blöße geben gegenüber Postles, weil das ist ja auch ein hart erbieteter Markt da, naja, dann flutzt es da schon weiter. Und dann können die kommerziellen Liefern auch nicht mehr aus. Es dauert alles viele, viele Jahre. Aber solche Beispiele gibt es tatsächlich.",
+            "start": 1631589,
+            "end": 1719973,
+            "confidence": 0.7622688524590155,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Die Datenbanken, also wirklich die Hersteller anschaust, gibt es da irgendwelche Vorreiter, wo du sagst, du hast jetzt gerade Postgres erwähnt oder SQLite, gibt es da welche, die irgendwie sehr immer stark vorpreschen und sofort die Standards implementieren? Gibt es langsamere? Sieht man da irgendwie einen Pattern?",
+            "start": 1722175,
+            "end": 1738763,
+            "confidence": 0.7646595744680851,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Das Pattern, was man sieht, ist, dass generell in den letzten zehn Jahren eine enorme Dynamik eingekehrt ist. Während auch die Implementierungen, also nicht nur das, was wir glauben, dass SQL ist, es sind halt auch die Produkte relativ statisch geblieben vom SQL-Umfang noch vor zehn Jahren. In den letzten zehn Jahren ist da, wie gesagt, eine enorme Dynamik reingekommen. Der Höhepunkt war vermutlich, dass dann MySQL eben auch mal aus dem SQL-92-Nische herausgekommen ist und dann eben plötzlich Window funktionieren kann und rekursionen kann und so weiter und so weiter. Also MySQL als Produkt, das eigentlich traditionell sehr, sehr schwach im SQL-Dialekt aufgebaut war, hat da dann nachgezogen. Und jetzt, also der Trend ist die Dynamik. Momentan bewegt sich alles viel, viel schneller als noch vor zehn Jahren.",
+            "start": 1739163,
+            "end": 1782145,
+            "confidence": 0.81206976744186,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Hast du da irgendeine Theorie, warum sich da alles schneller bewegt? Sind es irgendwie die, dass es eben so viele Startups gegeben hat, NoSQL-Hypes oder dass einfach mehr und mehr Konkurrenz jetzt am Markt ist als früher?",
+            "start": 1782733,
+            "end": 1794276,
+            "confidence": 0.7692972972972975,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Ja, so eine wirklich belastbare Theorie habe ich nicht. Es wird natürlich so sein, dass frisches Blut einmal alles ein bisschen in Schwung bringt. Das ist definitiv so, würde ich sagen. Man sieht auch, es gibt immer wieder mal so Vorstöße eben aus der New SQL oder No SQL oder was auch immer Ecke, die dann halt irgendein QL auch bauen, wo dann einfach der Bedarf auch bei SQL-Usern geweckt wird letztendlich. Da gibt es zum Beispiel das Accept. Also man kann ja im Standard SQL kann man bis heute nicht sagen, ich hätte gerne alle Spalten dieser Tabelle, aber bloß nicht die eine. Dass ich sagen kann, Select Stern, Accept irgendwelche anderen. Das gibt es im Standard SQL nicht. Es gibt aber wohl Produkte, die das können. Und ich sage ganz ehrlich, ich hätte es gerne. Also das kann vielleicht einmal da reinschwappen, weil es ist ja jetzt eine Kleinigkeit, die eigentlich relativ praktisch ist. Das wird sicherlich, frisches Blut bringt immer Bewegung rein. Das wird sicherlich ein wichtiger Faktor dabei sein.",
+            "start": 1794336,
+            "end": 1849415,
+            "confidence": 0.7894508670520229,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Auch wenn man jetzt die Standards anschaut, wenn du sagst, es ist die sechste Edition jetzt und du hast irgendwie 92, 99, dann sind ganz viele Editions seitdem eigentlich auch entstanden, oder? Ja, ja, es geht dann noch weiter. Also beim Standard hat sich sehr viel entwickelt dann in der kurzen Zeit eigentlich im Vergleich zu seit 84.",
+            "start": 1849770,
+            "end": 1865575,
+            "confidence": 0.6452241379310343,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Ja, kurze Zeit ist jetzt relativ, ja. Ja, 99 war halt aus meiner Sicht war so ein bisschen ein Da hat sich die Idee dazu ein bisschen geändert, wie man herangeht. Während es bei 92 noch großteils versucht wurde, die relationalen Ideen umzusetzen, hat man bei 99 mehr auf die industriellen Probleme geschaut. Das war der große Durchbruch eigentlich mit 99. Ich sage auch immer, da ist man aus dem relationalen Käfig ausgebrochen, auf ganz, ganz vielen Ebenen. Man möge sich nur denken, es wurden eben Objekte eingeführt. Das heißt, man kann jetzt eine Spalte haben, wo man reiche Datentypen drinnen hat, so wie zum Beispiel Geldbeträge, die sich zusammensetzen aus einer Zahl und einem Währungskürzel. Das wäre ja im ursprünglichsten SQL-Denken, da hat man von atomaren Werten gesprochen, die dort stehen sollen. Das bricht das komplett auf. Es entspricht eben nicht mehr der ursprünglichsten relationalen Definition. Das hat sich eben sehr weiterentwickelt. Also 99 war eben da die Revolution, dass man gesagt hat, das Relationale ist nicht anders und nur weil es eine Lösung gibt in der relationalen Darstellung, heißt es nicht, dass die industriell praktikabel ist. Der Theta-Join war ja immer so eine Standardantwort im relationalen Denken auf alle möglichen Fragen, der aber eigentlich performance-mäßig und wartbarkeitsmäßig ein absolutes No-Go ist.",
+            "start": 1865585,
+            "end": 1937789,
+            "confidence": 0.7904084507042257,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Das sieht man auch sehr selten in der Praxis.",
+            "start": 1937849,
+            "end": 1939770,
+            "confidence": 0.6323333333333334,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Gott sei Dank, heutzutage. Ja, was ist dann passiert? Dann gab es den 2003er Standard, da war XML zum Beispiel ein großes Thema. Das lasse ich jetzt ein bisschen sickern, weil im Jahre 2003 wurde SQL auch zum Document Store. Die eierlegende Wollmilchsau, die du da schon angesprochen hast. die war schon SQL 2003 mäßig gedanklich da drinnen, dass man gesagt hat, naja, das war noch ein großer Sprung, weil zuvor mit den Typen hatte man zwar komplexe Typen, aber sie waren noch immer sehr starr. Also ein Geldbetrag hat halt immer eine Zahl und einen Währungskürzel. Mit den Dokumenten hat man dann eben noch gesagt, okay, jetzt brechen wir die Box komplett auf der Pandora und erlauben auch dynamischen Inhalt. In manchen Spalten gibt es ein Element, in anderen nicht. Also in manchen Zeilen gibt es ein Element, In anderen nicht. Das war halt ja damals auch XML, wenn ihr euch zurückdenkt, wann war XML populär? Ja, das geht damit einher. Ein bisschen verspätet ist es dann in den Standard hineingekommen.",
+            "start": 1939850,
+            "end": 1996444,
+            "confidence": 0.7758372093023257,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Stichwort Zoop APIs.",
+            "start": 1996484,
+            "end": 1997405,
+            "confidence": 0.529,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Ja, genau, genau.",
+            "start": 1997425,
+            "end": 2000449,
+            "confidence": 0.6080000000000001,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Es hat auch reine XML Datenbank gegeben, Andi.",
+            "start": 2000509,
+            "end": 2004134,
+            "confidence": 0.776625,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Die gibt es sogar heute noch. Ja, dann gab es 2006 gab es noch eine kleine Revision, das zählt nicht so als echte. Die richtig große ist dann 2008 herausgekommen. Puh, lasst mich mal überlegen, was war denn da so drinnen? Na, fällt mir nichts ein. War dann doch nicht so groß.",
+            "start": 2004154,
+            "end": 2018817,
+            "confidence": 0.7416538461538462,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Scheint ja nicht so das Killer-Release gewesen zu sein.",
+            "start": 2019977,
+            "end": 2022318,
+            "confidence": 0.4977777777777777,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Also es gab die 2008, vielleicht kann ich noch was nachreichen, aber jetzt gerade fällt mir nichts ein, was jetzt tagtäglich relevant wäre. Die 2011er, die war dann auch sehr interessant. Damit sind dann die temporalen Datenbanken gekommen, auch mit Jahrzehntenverspätung. Das wollte man ursprünglich schon im 99er Standard einbauen. Ja, was ist jetzt eine temporale Datenbank? Eine temporale Datenbank heißt, die Daten, wie wir sie kennen, die sind in Wirklichkeit nicht immer statisch. Wenn ich jetzt zum Beispiel an Stammdaten denke, also Personendaten von Kunden zum Beispiel, Dann nur, weil die Person jetzt so heißt, heißt das nicht, dass die morgen auch noch so heißt. Und ja, natürlich kann man ein einfaches Update machen und dann hat die Datenbank quasi vergessen, wie der alte Name war. Und da gab es schon ganz, ganz oft die Anforderung, dass man das nachvollziehbar haben möchte. Wenn ich ein Update mache, dass die alten Daten auch noch da sind, aber jetzt mal die neuen Daten.",
+            "start": 2022358,
+            "end": 2071998,
+            "confidence": 0.7927962962962964,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Das ist eine Art Versionierung eigentlich.",
+            "start": 2072458,
+            "end": 2074438,
+            "confidence": 0.6066666666666667,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Genau, genau. Da kommt schon die zwei Versionierungsfronten, die es dann in SQL gibt. Die Systemversionierung, die Applikationsversionierung ist beides mit 2011 gekommen. wo es um zwei verschiedene Zeitachsen geht, die man abbilden möchte. Die eine Zeitachse ist, wann haben wir von irgendeiner Neuigkeit erfahren? Wann haben wir erfahren, dass du jetzt einen neuen Namen hast? Alles Gute zur Hochzeit. Und ja, das ist halt der gängige Fall. Das kann über die Systemversionierung vollautomatisch abgedeckt werden, weil die Datenbank halt einfach, wenn du das Update machst, dann weiß es, wie spät es jetzt gerade ist. Die schaut einfach auf die Uhr und kann dann im Hintergrund die Daten einfach eben nicht überschreiben, sondern bei den alten Daten einfach nur das Gültigkeitsende entsprechend setzen auf jetzt. und dann die neuen Daten mit den Änderungen versehen, das Gültigkeitsdatum ab jetzt setzt. Und das geht systemversioniert, das heißt das System, das RDBMS, das kümmert sich darum, das zu erledigen und du brauchst die Applikation gar nicht ändern. Das muss man sich jetzt auch mal auf der Zunge zergehen lassen. Man schaltet es im Hintergrund ein, ändert die Applikation nicht und hat aber dann jederzeit die Möglichkeit mit einer speziellen Extra-Klausel vom Select, da sagt man dann, Select Stern from Tabellenname und dann sagt man as of system time und dann schreibst du einen Zeitstempel hin und dann siehst du die Tabelle so, als wäre es diese Uhrzeit, die du da gerade angebst.",
+            "start": 2074478,
+            "end": 2151872,
+            "confidence": 0.7745355648535566,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Du hör bitte auf zu reden, weil du machst mir gerade ein total schlechtes Gewissen, wie viel Source Code ich geschrieben habe, um so etwas nachzubauen. Offen gesprochen, ich habe gerade mal nachgeguckt, soweit ich das sehen kann, ich habe sehr viel früher mit MySQL gearbeitet und MySQL kann das nicht, deswegen war der Source Code, den ich geschrieben habe, wohl anscheinend doch notwendig und all diese Log-Tabellen nenne ich es mal, nicht Log mit CK, sondern mit G, so nach dem Motto Data has transitioned from A to B und ähnliches. Hätte ich damals einfach nur eine andere Datenbank genommen, sagst du mir gerade... Naja, damals.",
+            "start": 2151912,
+            "end": 2186253,
+            "confidence": 0.775439252336449,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Wann war denn das? Das Problem ist halt, da war der Standard wirklich, wirklich spät. Da gab es ganz ewig lange Diskussionen, wie man das eigentlich einbaut und dann hat sich letztendlich irgendeiner davon halt dann doch noch durchgesetzt. Ob es jetzt die beste war oder nicht, sei dahingestellt. Aber wie der Standard halt so ist, es ist ein optionales Feature. Niemand ist gezwungen, das umzusetzen. In der Open Source, im Open Source Bereich ist es MariaDB, die es haben. Aus, Ende, Stop. Im kommerziellen eigentlich fast alle würde ich sagen. Im kommerziellen Bereich hat das mittlerweile jeder. Letztendlich braucht man es ja. Trotzdem muss ich sagen ist das Feature, ich war damals ganz hellauf begeistert wie das dann endlich gekommen ist. In der Praxis ist es noch immer zweischneidig. In der Praxis hat jeder der es gebraucht hat, hat es sich eh schon händisch implementiert. Und die Never Change a Running System, also viele verwenden das, was sie händisch gemacht haben, weiter und das muss ich auch sagen, ist eine gute Entscheidung. Und das eine große, was der Standard so überhaupt nicht behandelt hat, ist die Schema-Evolution von solchen Tabellen. Was mache ich jetzt, wenn eine Spalte wegfällt oder wenn eine neue dazukommt? Was gebe ich dann für eine Antwort, wenn jemand fragt S auf drei Jahre in der Vergangenheit? Das ist leider halt nicht abgedeckt durch die Funktionalität vom Standard.",
+            "start": 2186273,
+            "end": 2257233,
+            "confidence": 0.7889612068965517,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Aber schon jetzt, wo du es gerade ansprichst, also diese Schema-Evolution, die ist mir gar nicht als Problem in den Sinn gekommen, aber jetzt, wo du es darauf ansprichst, frage ich mich wirklich, wie löst man das denn?",
+            "start": 2258168,
+            "end": 2268331,
+            "confidence": 0.7464210526315787,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Naja, es gibt immer wieder Fälle, wo der Standard sich dann quasi sehr nobel zurückzieht und sagt, ja, ich habe da keine gute Lösung, da sollen die Vendoren machen, was sie wollen letztendlich. Ein anderes Beispiel, was mir dazu einfällt, also es gibt so unlösbare Probleme und bei der Date-Time-Arithmetik, Also beim Rechnen mit Zeitpunkten, also zum Beispiel gestern minus heute, da hat SQL eine ganze Arithmetik dazu und auch einen eigenen Typ, also die Differenz von zwei Zeitpunkten nennt man dann den Intervall vom Typ. Und mit so Intervallen kann man dann auch herumrechnen. Ich kann das verdreifachen, ich kann es vierteln oder was auch immer, ich kann zwei Intervalle zusammenzählen, ich kann einen Intervall auf einen Zeitpunkt draufgeben, kriege einen anderen Zeitpunkt, alles was halt so logisch möglich ist. Aber unser Kalender ist halt ein bisschen schwierig, weil so Intervalle, ja mit Sekunden kann ich rechnen, mit Minuten kann ich rechnen und so weiter, aber irgendwo gibt es diesen Übergang von Tagen auf Monate und da bricht das Kartenhaus dann in sich zusammen. Weil was ist denn heute plus ein Monat? Und ist das was anderes? Ist das jetzt 30 Tage, ist das 31 Tage oder was entspricht das? Da gibt es einfach keine allgemein immer richtige Antwort. Und was der Standard da gemacht hat, er hat einfach zwei mehr oder weniger inkompatible Typen eingeführt, nämlich das Intervall, das nur von den Sekunden bis zu den Tagen geht. Mit dem kannst du herumrechnen, so viel du willst. Und das zweite Intervall, was dann nur Monate und Jahre abbildet, mit dem kannst du auch herumrechnen, so viel du willst. Aber gegeneinander sind sie inkompatibel.",
+            "start": 2268351,
+            "end": 2346690,
+            "confidence": 0.7563927272727274,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Ich hab damals auch Applikationslogik geschrieben, um alle deutschen Feiertage, auch auf Bundeslandebene und so weiter, mit einzufließen. Und ich sag dir, es war ... Zum Glück hatte ich Unitests. Aber jetzt ist es ja natürlich so, XML haben wir grad drüber gesprochen, aber ziemlich viele Datenbanken können ja jetzt auch, ich sag mal, das neue XML, aka. JSON, ja? Wie sieht's denn damit aus? Also, kam das später?",
+            "start": 2347410,
+            "end": 2374956,
+            "confidence": 0.8038550724637681,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Ja, das sehen wir jetzt genau in der Chronologie. Wir waren 2011 an die temporalen Datenbanken und noch viele andere Sachen. Ich picke mir da jeweils noch ein paar Features raus. 2016 kam dann JSON und da war es eigentlich schon relativ leicht im Vergleich zum XML, weil die Art und Weise, wie JSON in SQL eingebaut wurde, ist letztendlich analog zu XML. Dementsprechend wurde auch eine Sprache erfunden, eine Subsprache, die das analoge Gegenstück zu dem XPath von XML ist. Also wenn man ein XML-Dokument zum Beispiel abspeichert und dann nur einen Teil davon beziehen möchte, dann kann man da einen XPath-Ausdruck verwenden. Und für JSON wurde halt jetzt auch sowas eingeführt, so eine Abfragesprache. Und die Funktionen, die so im Umgang mit denen sind, die sind auch von der Benennung her eigentlich analog zu XML. Es gibt eine Funktion, die heißt JSON-Table, aber es gab vorher schon eine, die hieß XML-Table. Einfach dieselben Ideen sind eins zu eins umgesetzt. Wenn man eine Ideenwelt kennt, dann kann man damit die andere genauso verwenden.",
+            "start": 2374996,
+            "end": 2432726,
+            "confidence": 0.7786206896551725,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Dein Blog oder dein aktuelles Projekt Modern SQL heißt ja Modern SQL. Was ist denn jetzt das Modern SQL? Ist das, was die Zukunft bringt, was die letzten zehn Jahre gebracht hat oder noch länger zurück? Wo siehst du da die Grenzen? Was ist modern für dich?",
+            "start": 2433607,
+            "end": 2450501,
+            "confidence": 0.7930212765957446,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Ich sehe die Grenze zwischen dem 92er und dem 99er Standard. Der 92er war ganz klar fokussiert mit den Scheuklappen auf die relationalen Konzepte. und der 99er, der dann auf industrielle Probleme gehört hat und für den das einfach kein einschränkendes Kriterium mehr war, dass das dann halt nicht relational ist, dass es da keine Entsprechung gibt. Das ist für mich der große moderne Ansatz. Dass das jetzt erst 20 Jahre später oder 15 Jahre später dann in der breiten Öffentlichkeit ankommt, das mag jetzt mit dem Wort modern nicht so ganz argumentierbar sein, aber ja, so ist es halt jetzt für mich.",
+            "start": 2450521,
+            "end": 2484991,
+            "confidence": 0.7810291262135921,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Kannst du kurz erklären, was du machst auf der modern-sql-Webseite?",
+            "start": 2485011,
+            "end": 2488233,
+            "confidence": 0.5464,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Also auf Modern SQL möchte ich Transparenz schaffen. Und zwar sowohl für die Benutzer von SQL und SQL-Produkten, als auch für die Hersteller untereinander und damit ein bisschen die Konkurrenz schüren. Man kann sich vorstellen, auf Modern SQL habe ich einen Bereich, der heißt Can I Use? Und ich bin überzeugt, viele kennen das Can I Use, wenn es um CSS, HTML-Kompatibilität geht. Und die Idee habe ich letztendlich aufgegriffen. Und hab gesagt, naja, sowas bräuchte man eigentlich für SQL auch. Und so kann man dort dann zum Beispiel nachschauen, nach irgendeinem gewissen Feature, einer Window-Funktion XY zum Beispiel, kann man in der Suche eingeben und dann findet man, und da sieht man dann, welches Produkt kann dieses Feature und zwar auch seit wann, das ist so mit einer Zeitleiste dargestellt, und eventuelle Abweichungen vom Standard sind dann auch noch hervorgehoben. Und damit weiß dann eigentlich der Benutzer, ob das jetzt irgendein obskures Feature vom Hersteller XY ist und man damit sein Vendor-Login verschlimmert, wenn man das benutzt. Oder ob das irgendwas ist, was auf breiter Basis eh verfügbar ist und mich jetzt eigentlich nicht großartig einschränkt. Plus noch die Fallen sind natürlich genannt.",
+            "start": 2488677,
+            "end": 2549896,
+            "confidence": 0.7946701030927841,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Ich habe gerade gesehen, dass MySQL Over unterstützt. War mir auch neu, muss ich ganz ehrlich zugeben.",
+            "start": 2549916,
+            "end": 2554397,
+            "confidence": 0.675764705882353,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Ja, die 8er-Version. Also mit der 8er-Version hat Oracle, muss man sagen, Ich habe ja einmal einen 1. April Artikel verfasst, nachdem Oracle MySQL übernommen hat, so als Nachruf auf MySQL. Jetzt wirst du zur Grabe getragen in diesem Sinne. Wow, ich habe mich getäuscht. Also das Beste, was MySQL jemals passiert ist, ist die Übernahme durch Oracle. Die haben sowohl intern den Code aufgeräumt, als auch eben diese Features gemacht. Sie machen inkompatible Änderungen und das ist wirklich etwas, das macht ein Datenbankhersteller sehr, sehr selten. Aber sie bügeln diese wirklich groben Batzer aus den späten 90ern Jahren aus und sind sich auch nicht so schade, da inkompatible Änderungen zu machen. Wohlgemerkt mit einem Switch, damit man es dann noch so wie vorher haben kann. Aber da ist viel passiert und mit der 8. Release sind Rekursionen und auch Window-Funktionen gekommen. Das war definitiv ein Game-Changer für SQL at all. Weil halt einfach MySQL ist für viele noch das, was SQL ist. Wenn es MySQL nicht kann, dann ist es nicht SQL.",
+            "start": 2554417,
+            "end": 2613250,
+            "confidence": 0.7878381502890178,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Ich glaube, du bist die einzige Person, die ich je getroffen habe, die das gesagt hat. Und du hast eine gute Argumentation, in der Tat. Wahnsinn.",
+            "start": 2613270,
+            "end": 2620793,
+            "confidence": 0.7263846153846155,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Ich glaube, dass sich viele das schon im Nachhinein gedacht haben. Also ich glaube, es haben viele aufgeschrien damals und in der professionellen MySQL-Welt und haben dann aber auch gemerkt, dass da schon dann Druck dahinter ist, weil das größte Problem, keine Ahnung, kennt einen Blogartikel nicht, verlinken wir gerne, wenn es ihn noch gibt übrigens, damit man mal sieht, wie man sich täuschen kann, aber ich glaube, das haben haben sich eigentlich alle getäuscht, weil alle Großen waren der Meinung, es wird jetzt gekillt und es stirbt MySQL und dann sind da plötzlich Entwickler draufgesetzt worden und gepusht und neue Features. Es hat sich einfach ganz anders entwickelt und ich glaube, die Szene hat das schon auch gesehen, auch wenn es jetzt hinter verschlossenen Türen passiert und ich glaube, die Transparenz ist eine andere Sache, aber im Großen und Ganzen, wie viel passiert ist, das war schon wahnsinnig gegenüber früher. Da war schon Druck dahinter oder ist immer noch.",
+            "start": 2622085,
+            "end": 2671520,
+            "confidence": 0.7597437499999999,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Und vor allem in gute Richtungen. Das Investment da muss echt gigantisch gewesen sein, weil die Codebasis, muss man sagen, war keine schöne. Es kann sich jeder mal den Spaß machen, die Release-Loads von MySQL 8.0 durchzulesen. Das ist wie ein Horror-Kabinett der Dinge, die vorher alle schiefgehen konnten.",
+            "start": 2671960,
+            "end": 2688588,
+            "confidence": 0.834979591836735,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Man muss aber auch sagen und das habe ich schon mal in diesem podcast erwähnt meines erachtens nach gibt es nur ganz wenig leute auf diesem planeten die die mysql release notes wirklich lesen können und zwar ist das mit hoher wahrscheinlichkeit oracle die jungs und mädels von maria db, dann vielleicht noch facebook und booking und github weil die machen halt ziemlich viel damit mit auch mit ihren eigenen storage engines oder so und die jungs und damen von perkona so dann dann wird schon sehr sehr sehr sehr eng und der primäre grund ist für mich dass der backtracker nicht öffentlich ist.",
+            "start": 2688808,
+            "end": 2722055,
+            "confidence": 0.8471057692307691,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Ja es sind lauter links sind es nicht.",
+            "start": 2722255,
+            "end": 2724437,
+            "confidence": 0.5785,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Ganz genau und wenn du halt nicht hundertprozentig dich mit diesem thema beschäftigt so wie du zum beispiel dann ist es unglaublich schwer zu wissen welcher bug wurde gefixt bin ich davon effektet und so weiter und so fort und deswegen die release notes von my sequel finde ich Auch wenn du, auch wenn du den ganzen Effort der hochlobst, was ich verstehe, bei den Release Notes meines Erachtens nach gibt es noch sehr, sehr viel zu tun.",
+            "start": 2724478,
+            "end": 2749941,
+            "confidence": 0.7856025641025641,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Bei Dokumentation ist das, glaube ich, ganz generell. Auch wir als Entwickler, glaube ich, ist Dokumentation nicht unsere Lieblingsbeschäftigung. Ich kann mir gut vorstellen, dass das so auch dort irgendwie abläuft.",
+            "start": 2749981,
+            "end": 2760867,
+            "confidence": 0.8331290322580646,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Man muss ja auch dazu sagen, dass man halt das von Open Source anders gewöhnt ist. Bei Oracle hast du das sowieso nicht. Bei Oracle kannst du nicht ins interne Bug-Tracking-Tool reinschauen oder wie die intern arbeiten. Da ist man das gewöhnt. Aber bei Open Source ist es natürlich was anderes. Das ist halt eine schräge Welt, diese zwei Welten hinter den Türen innerhalb von Oracle bei den Entwicklern für MySQL und außerhalb.",
+            "start": 2761948,
+            "end": 2782819,
+            "confidence": 0.7371369863013696,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Du hast gerade ein schönes Wort genannt bzw. einen schönen Begriff, Vendor-Login bei SQL. Auf der einen Seite haben wir jetzt hier die Standards, klar, die sollten das standardisieren und in einer perfekten Welt würde jede Datenbank, jede SQL-ähnliche Datenbank den kompletten Standard implementieren, den man wechseln könnte. Ist nicht der Fall, wie deine Can I Use Modern SQL-Seite zeigt, weil sonst müsste man diese Webseite eigentlich nicht haben in einer perfekten Welt. Auf der anderen Seite stelle ich mir natürlich die Frage, inwieweit kommt das denn wirklich in der Praxis vor, dass jemand von der einen SQL-Datenbank auf die andere SQL-Datenbank wechselt?",
+            "start": 2782840,
+            "end": 2820496,
+            "confidence": 0.7647572815533982,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Also das, was häufig vorkommt, ist, dass es ein Produkt gibt, das mit mehreren Backends zu betreiben ist. Also es gibt irgendeinen Softwarehersteller, der macht irgendeine Software. Und die muss halt nur noch einmal mit Oracle, SQL Server und wer weiß ich Gott, was alle noch laufen. Das möchte sich dann der Kunde letztendlich entscheiden. Also das ist das eine Häufige. Das, was definitiv nicht häufig ist, ist, dass ein bestehendes Produkt, das genau für eine Datenbank gebaut wurde, dann großartig migriert wird auf eine andere. Passiert auch, ist aber definitiv die Ausnahme. Das, was aber schon wichtig ist, es geht ja nicht nur um die Software, es geht ja auch um uns Menschen bei der Sache. Und was schon oft passiert, ist, dass jemand, der heute in einem Maiskürl-Shop arbeitet, den nächsten Job in einer Postkreditschmiede hat. Und für den macht es einen Riesenunterschied. Und für den mache ich letztendlich auch die Webseite.",
+            "start": 2820837,
+            "end": 2865792,
+            "confidence": 0.8039090909090904,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Jetzt ist es natürlich auch so, du hast grad auch schon die Applikationen angesprochen. Das ist richtig. Die Praxis ist aber viel schwieriger, hab ich das Gefühl. Denn nehmen wir mal an, der Standard sagt, wir haben jetzt eine Graph Query Language. Dann dauert das erst mal, bis die ganzen Datenbanken das implementieren. Wenn es überhaupt überall implementiert wird. Siehe for system time, die temporalen Datenbanken.",
+            "start": 2866637,
+            "end": 2891898,
+            "confidence": 0.8014696969696972,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Optionale Features, es gibt keine Zweifel.",
+            "start": 2891959,
+            "end": 2894260,
+            "confidence": 0.5176666666666667,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "So, dann kommt es in die neue Version und die neue Version wird released. Und wenn du jetzt nicht Nutzer eines Datenbank-as-a-Service-Provider bist, bis dann die lokale Systemadministrationstruppe die Datenbank wirklich updatet, ist ja dann nochmal eine Komplexität darüber. Und deswegen frage ich mich, wie aktiv wird denn modernes SQL eigentlich in der Praxis genutzt? Oder wie oft siehst du eigentlich, auch durch deine tägliche Arbeit, dass es gar nicht genutzt werden kann, weil noch alte Versionen von den Datenbanken in der Praxis genutzt werden?",
+            "start": 2895141,
+            "end": 2929046,
+            "confidence": 0.8536235294117647,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Also das Problem sehe ich eigentlich nicht mehr. Auch da ist viel Dynamik dazu gekommen. Also wenn ich angefangen habe mit meiner Beratungstätigkeit 2009, Da war es durchaus üblich, dass man noch zehn Jahre alte Datenbankversionen in Produktion sieht. Das sehe ich heute eigentlich nicht mehr. Also die sind heute so drei bis fünf Jahre hinter der aktuellsten hinterher. Ich würde sagen, das hat sich ungefähr halbiert. Da vermute ich einfach, dass das ganze Virtualisierung einfach vieles vieles einfacher gemacht hat. Es ist einfach nicht mehr so ein Riesendeal, eine neue Datenbank zu installieren. Also das ist gar nicht mehr so das Problem. Ich glaube, das Problem ist tatsächlich einfach das Know-how, dass es das gibt und dass das nützlich wäre. Das ist das Hauptproblem, weil es wird ja eigentlich nach wie vor, wenn ich jetzt an irgendeine Uni gehe und mich in einen SQL-Kurs setze, ich traue mich ja wetten, dass im Wesentlichen das alte.",
+            "start": 2929426,
+            "end": 2973976,
+            "confidence": 0.7925448717948722,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "SQL-Unterricht Da müsst ihr jetzt dagegen reden wahrscheinlich, aber ich habe auch keinen Beweis wobei. Wenn ich mich zurück erinnere, ich habe schon die ganzen neuen Sachen unterrichtet, weil also temporale Datenbanken zum Beispiel, das kommt ja alles, das ist ja so aus der Wissenschaftszeit von den 90ern oder so, so in Papers und so aufgetaucht, aber natürlich, dass es ein Standard ist und so weiter, das war dann natürlich weniger der Fall, aber dass man diese ganzen Konzepte und so weiter unterrichtet, Das auf jeden Fall, wie weit dann die neuesten Standards mit drinnen sind, keine Ahnung. Wir hatten immer das Problem damals, wir haben die neuen Standards unterrichtet und die neuen Features und es war aber nicht richtig verfügbar. Das heißt, es ist nie richtig. Wir hatten immer DB2, die waren doch am ehesten irgendwie, so damals in den 2000ern, dass sie halt weit vorne waren. Aber es war einfach das Problem, du hast halt irgendwas den Leuten erklärt und du wusstest genau, die können das in der Realität nie verwenden, weil es gibt es einfach noch nicht sinnvoll und es macht halt nur bedingt Sinn. Aber ich hoffe mal, dass die Unis ein bisschen weiter sind heutzutage.",
+            "start": 2974076,
+            "end": 3033410,
+            "confidence": 0.7938050000000003,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Ich habe natürlich auch immer wieder Studierte in meinen Schulungen sitzen. Es gibt immer mal wieder welche, die es wissen, aber ich muss sagen, die wissen es dann mehr von der Arbeit eigentlich. Wenn man dann nachfragt, hast du das in der Uni gelernt? Na ja, na, vielleicht wurde es erwähnt, irgendwo so am Rande mal, aber gelernt habe ich es eigentlich dann auch nicht schon.",
+            "start": 3034751,
+            "end": 3051660,
+            "confidence": 0.750348484848485,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Ich glaube, es hängt aber auch sehr, sehr stark vom Lehrenden ab.",
+            "start": 3051880,
+            "end": 3055461,
+            "confidence": 0.6708333333333333,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Es ist klar.",
+            "start": 3055521,
+            "end": 3056421,
+            "confidence": 0.8456666666666667,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Natürlich wird es überall positive Ausnahmen geben. Generell gesehen möchte ich keinen Vorwurf daraus stricken, weil ganz ehrlich, Wenn ich jetzt SQL unterrichten muss, dann kann ich ja das alte SQL nicht weglassen, die Relationalität. Das geht ja nicht. Damit muss ich ja sowieso anfangen. Und wenn die Zeit nicht massiv mehr geworden ist, so irgendwie fünffach so viel, dann kriege ich das neue Zeug nicht mehr unter. Das geht sich einfach nicht aus.",
+            "start": 3056441,
+            "end": 3078721,
+            "confidence": 0.7447297297297297,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Also ich habe damals Rekursion unterrichtet, auch sogar mit den Wirtschaftsinformatikern. Ich habe Datenbanken für Wirtschaftsinformatiker auch mal unterrichtet. Da habe ich auch Rekursion unterrichtet, aber das war dann schon grenzwertig mit den Wirtschaftsinformatikern, muss ich zugeben, weil das ist schon so ein bisschen Brainfuck, also Rekursion ist schon... Ja, für Entwickler ist das ein Standard, aber wenn du so aus einer anderen Welt kommst, ist Rekursion durchaus gar nicht so leicht zu verstehen und in dem relationalen Modell dann drinnen noch mit... Es ist schwieriger für die Leute zu verstehen am Ende, als man so denkt, vor allem wenn man aus der Entwicklerseite kommt, weil da Rekursion halt einfach der Standard ist und da hast du überhaupt kein Problem mit dem Verständnis.",
+            "start": 3078761,
+            "end": 3117511,
+            "confidence": 0.7837479674796749,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Ich habe ja auch meine Schulungen, wo ich das auch unterrichte und da ist die Rekursion definitiv eine besondere Challenge.",
+            "start": 3118698,
+            "end": 3124302,
+            "confidence": 0.6603999999999999,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Lehre ist aber ein gutes Stichwort. Ich habe damals gelernt, wenn es möglich ist, verlagere deine Berechnungslogik und die Arbeit in die Datenbank. Ich sage jetzt nicht unbedingt Stored Procedures und Trigger, sondern eher auf Query-Ebene. Die neuen Features bei modernem SQL, commentable expressions mit der with-clause, Rekursion, over, gegebenenfalls select from for system time und so weiter, erlauben mir ja natürlich sehr, sehr viel Arbeit in die Datenbank zu verlegen. Ist das, was ich damals gelernt habe, würdest du sagen, das ist richtig oder würdest du sagen, nimm so viel Logik aus der Datenbank raus und eher in deine Applikationslogik?",
+            "start": 3124342,
+            "end": 3165853,
+            "confidence": 0.8096039603960395,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Ja, da kann man noch einmal die Grenze hervorheben zwischen dem alten SQL und dem neuen SQL. Du hast jetzt dort Procedures genannt. Das sind ja auch standardisiert im SQL-Standard. Und ich bin echt kein großer Fan davon. Man hat sie im alten SQL gebraucht, weil es einfach irrsinnig viel gab, das man nicht mit nativem SQL umsetzen konnte. Weil es einfach die Features nicht gab, weil der relationale Käfig halt einfach zu eng war. Mittlerweile kann man extrem viele Sachen, die man früher mit stored procedures machen musste, mit ganz normalem, also deklarativen SQL machen. Und da sehen wir auch, das ist eben der moderne Ansatz, dass ich in die Datenbank eigentlich interessante Logik auslagern kann, ohne dass ich deswegen jetzt eine doch eher fremde Sprache wie was Prozedurales da in der Datenbank drin habe. Wenn wir beim Thema Rekursionen bleiben. Ein Lehrbeispiel, das ich da ganz gerne verwende, auch im Zusammenhang ORM und was mache ich wo. Das ist jetzt, wenn ich zum Beispiel ein objektorientiertes Programm habe, in dem ich einfach so eine Hierarchie irgendwie reinladen muss. Damit muss ich halt dann irgendwas machen. Dann tue ich mir mit dem alten SQL extrem schwer, weil da kann ich eigentlich nur Zeile für Zeile abfragen und sagen, wer ist denn quasi dein Parent, wenn ich hier so einen Parent-Point damit abgespeichert habe und kann da halt herum blubbern. Und es geht natürlich ständig Ping-Pong, Ping-Pong zwischen der Applikation und der Datenbank. Und das wird nie gut performen. Aber genau das kann man jetzt eben mit, ich sage eben Datenlogik dazu, die Identifikation der Daten, die die Applikation braucht, ist keine Applikationslogik, sondern reine Datenlogik. Und das ist eben genau diese transformative Kraft, die SQL hat. Da sage ich dann einfach rüber, du, ich brauche jetzt ausgehend von dem alles nach unten und dann kommen die Zeilen einfach darüber geschossen. Und ich denke, da wird schon relativ klar, dass der Vorteil jetzt des rein deklarativen Ansatzes mit normalem SQL, nicht mit PLSQL, einfach darin liegt, dass es dann nur einen Roundtrip gibt, dass es sowieso datenbankseitig viel, viel schneller ist. Ich könnte auch noch weitere Filter- und Ergänzungssachen serverseitig machen, ohne dass ich Roundtrips dafür brauche. Das ist eigentlich da, wo ich sage, genau das ist die Transformation.",
+            "start": 3167195,
+            "end": 3288983,
+            "confidence": 0.8023535620052769,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Das heißt aber, um es nochmal konkreter zu machen, Procedures und Trigger siehst du jetzt als weniger sinnvoll heutzutage an.",
+            "start": 3290014,
+            "end": 3296760,
+            "confidence": 0.7772,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Also Procedures kann ich mich jetzt nicht erinnern, dass ich irgendwann mal irgendjemandem gesagt hätte, da brauchst du jetzt unbedingt deine Procedure, anders geht es nicht.",
+            "start": 3297240,
+            "end": 3304586,
+            "confidence": 0.7103461538461537,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Ja, brauchen ist ja, ich meine, du hast einfach zwei Möglichkeiten, oder? Du kannst Teile in der Applikation oder Businesslogik in der Applikation haben oder in der Datenbank.",
+            "start": 3304626,
+            "end": 3313253,
+            "confidence": 0.7565,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Ja, du sagst Businesslogik, ich sage Datenlogik.",
+            "start": 3313753,
+            "end": 3315755,
+            "confidence": 0.5062857142857142,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Okay, Datenlogik. Aber Procedures sind ja teilweise wirklich Businesslogik und Trigger. Also das geht ja wirklich in die Businesslogik-Seite.",
+            "start": 3317175,
+            "end": 3324139,
+            "confidence": 0.7567894736842106,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Das sehe ich eben die Grenze anders. Also du hast schon recht, es wurde früher oft gemacht, dass jetzt unter Umständen die Businesslogik in der Datenbank lag. Das kann man machen, Es gibt ganze Applikationen, die in der Datenbank drin sind. Es gibt Web-Server, die in SQLite laufen quasi. Also kann man schon machen, wenn man will. Bin ich jetzt auch nicht so überzeugt davon, sage ich ganz ehrlich.",
+            "start": 3324159,
+            "end": 3344195,
+            "confidence": 0.8175652173913044,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Aber Views zum Beispiel würdest du schon noch dann auf der Datenlogik sehen?",
+            "start": 3344795,
+            "end": 3348616,
+            "confidence": 0.7793846153846155,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Ja, ein View ist jetzt überhaupt nichts Böses. Das ist halt einfach zur Wiederverwendbarkeit. Wir haben halt in SQL, wie man halt auch Funktionen in anderen Programmiersprachen haben, haben halt auch da Sachen, die man wiederverwenden kann aus verschiedenen Szenarien.",
+            "start": 3348816,
+            "end": 3361178,
+            "confidence": 0.7087,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Bei Vue hast du natürlich das Problem, dass es vielleicht intransparenter für die Entwicklerseite ist, dass die Entwicklerin halt nicht sieht, was steckt da für eine SQL-Query dahinter oder nicht direkt, je nachdem wie viel Zugriff du hast und so weiter, aber es ist natürlich schon ein bisschen Abstraktion dann auch dabei. Kann positiv oder negativ sein.",
+            "start": 3361641,
+            "end": 3379830,
+            "confidence": 0.8105438596491228,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Genau, das kann eben positiv oder negativ sein. Wenn man da jetzt ganz weit zurückdenkt, jetzt wieder im alten SQL schon, waren ja Vues eigentlich wirklich wie Tabellen zu sehen oder sind es bis heute noch? Das heißt insbesondere, dass sie auch das Ziel von Data-Modifying-Statements sein können, also Insert-Update-Delete. Natürlich nicht alle Views. Wenn ich jetzt in ein View ein Group-By drin mache, dann kann ich nicht mehr inserten. Aber wenn es ein ganz normaler Select-Stern von irgendwas mit ein paar Werklauseln und vielleicht auch ein einfacher Inner-Join ist, dann kann man da zum Beispiel schon mal ein Update auf irgendeine Spalte machen. Da war schon die Idee, dass das quasi nicht nur ausschaut wie eine Tabelle, sondern im Wesentlichen zu benutzen ist wie eine Tabelle und damit besteht die Dokumentation im Wesentlichen daraus, was bedeuten die Spalten, was bedeuten die Zeilen.",
+            "start": 3379850,
+            "end": 3419822,
+            "confidence": 0.7358251748251747,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Ich glaube, der wesentliche Unterschied bezüglich einem View, den man als Tabelle sieht und zum Beispiel sowas wie ein Trigger ist, dass der Trigger einfach den Nachteil hat, dass der nicht sichtbar ist für die Entwickler. Ein View, den definiert man, man hat die Query, das muss irgendwie im Schema da sein, aber ein Trigger ist etwas, was hinten dran so passiert, was ein normaler Applikationsentwickler vielleicht gar nicht im Sinn hat. Wenn ich die Spalte jetzt update, dann triggert da hinten der Trigger auch schon.",
+            "start": 3420180,
+            "end": 3447056,
+            "confidence": 0.8288255813953487,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Genau.",
+            "start": 3447076,
+            "end": 3447257,
+            "confidence": 0.245,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Es ist halt noch mal versteckter, das Ganze.",
+            "start": 3448753,
+            "end": 3451155,
+            "confidence": 0.8215000000000001,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Ja, es ist aber noch immer sehr transparent. Man muss es ja vielleicht gar nicht wissen. Was man spürt, ist vielleicht, dass es langsamer wird. Die Trigger sind jetzt ein bisschen aus der Mode geraten, vor allem durch das Thema CDC, das Change Data Capture. Heutzutage werden solche Events eben nicht mehr durch Trigger abgegriffen, sondern eben aus den Logs letztendlich. Da gibt es ja ganz tolle Tools, die das auf viele, viele Produkte einfach abgreifen können und dann in irgendeinen Streaming-Engine reinschicken. Das hat das Thema Trigger ein bisschen entschärft, würde ich sagen.",
+            "start": 3451195,
+            "end": 3480762,
+            "confidence": 0.7684468085106381,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Wo man natürlich sagen muss, wenn du mit Change Data Capture anfängst, die Infrastruktur, die du aufsetzt, die erreicht ja ein Komplexitätslevel. Also, du hast dann deine Datenbank. Dann hast du dann das Well-File oder was auch immer du da possitiv hast. Dann hast du irgendwas wie ein Debezium oder Ähnliches, was das interpretiert. Dann geht das in einen Stream-Prozessor rein. Dann brauchst du auch einen Konsumenten, der das streamt. Du hast ja dann nicht nur deine Datenbank. Du hast ja, ich sag mal, ein ganzes Konglomariat an Sachen, die du auf einmal mitteilen, updaten musst und so weiter.",
+            "start": 3481002,
+            "end": 3516943,
+            "confidence": 0.7218484848484846,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Natürlich ist es von der Komplexität gleich einmal ein völlig anderes Kaliber. Das ist jetzt, wenn ich wieder zurückkomme, auf die eierlegende Wollmilchsorte, die du vorher angesprochen hast. Ich finde, das ist für mich persönlich auch so ein Charme von SQL, dass es grundsätzlich extrem viel kann, nicht? Also Document Store oder Relational oder Rekursion, bla bla bla bla bla. Das heißt, wenn ich mich jetzt in die Situation eines Startups z.B. versetze, wo ich noch nicht so genau weiß, wohin geht denn eigentlich die Reise, was wird denn für mich eigentlich das Wichtige sein in der Zukunft und was brauche ich, glaube ich jetzt, dass wichtig ist, aber wer weiß, ob es dann wirklich wichtig ist, dann ist SQL ein erstaunlich vielfältiges Tool eigentlich, weil ich eben, ja, Ich habe eine gewisse Konfidenz, dass ich damit noch derzeit noch unbekannte Probleme lösen können werde. Und die habe ich halt bei den ganzen hochspezialisierten Sachen eher nicht so. Wenn ich jetzt ein MongoDB oder ein Cassandra oder was auch immer so hernehme oder Redis, die sind halt hochspezialisiert. Aber ich traue mich wetten, man wird relativ schnell darauf kommen, dass man irgendwas braucht, was da halt rausfällt aus dieser Spezialisierung. Da finde ich, ist der Ansatz irgendwie besser, dass ich mit etwas sehr generischem anfange und dann, wenn sich herausstellt, dass jetzt das eine Thema, da tue ich mir jetzt echt schwer, das ist total kritisch für mein Business und in der Datenbank, ja, man kann so la la machen, keine Frage, aber da ist es mir jetzt wert, eine zweite Technologie nebenan zu stellen, mit dem ganzen Aufwand, den ich habe, von Lizenz, Schulung, Infrastruktur, bla bla bla, weil das ist halt einfach mission critical. Und wo wir das tagtäglich mehr oder weniger sehen, ist eben das Thema Elasticsearch. Das ist das eine, was meistens nebenan zu einer SQL-Datenbank betrieben wird, weil ja, SQL-Datenbanken können auch Volltext suchen, du kannst auch so semantische Sachen und bla bla bla, aber so wirklich gut sind es nicht, die meisten Produkte.",
+            "start": 3516983,
+            "end": 3613122,
+            "confidence": 0.7904690265486722,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Obwohl natürlich jetzt der große Konkurrent zu Elastic bzw. OpenSearch jetzt auf den Markt kommt, was dann wieder eine SQL-ähnliche Datenbank ist, mit Clickhouse. Weil mehr und mehr Firmen setzen jetzt Clickhouse ein für die Anwendung, für die aktuell Elastic bzw. OpenSearch eingesetzt wird. Und das sogar sehr erfolgreich.",
+            "start": 3613457,
+            "end": 3632617,
+            "confidence": 0.8326122448979589,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Ja, ich muss gestehen, der Trend ist jetzt bei mir noch nicht angekommen.",
+            "start": 3633660,
+            "end": 3636701,
+            "confidence": 0.7629999999999999,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Bei mir auch nicht. Ich glaube, der Andi hat da viele Hinsights. Aber Clickhunt ist sicher beliebt, ja. Das kann man durchaus sagen.",
+            "start": 3636741,
+            "end": 3644103,
+            "confidence": 0.5856956521739131,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Was ich jetzt in jüngerer Vergangenheit spüre, ist eben die Frage nach Vektordatenbanken.",
+            "start": 3644143,
+            "end": 3647865,
+            "confidence": 0.8606923076923076,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Logisch. Der ganze AI-Hype macht, glaube ich, auch bei dir keinen Halt.",
+            "start": 3647905,
+            "end": 3651186,
+            "confidence": 0.68275,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Ja, da spüre ich viel, da gibt es auch viel dazu. Aber jetzt, also Clickhaus, ja, ist mir ein Begriff. Aber einen großen Trend weg von Elasticsearch hätte ich persönlich jetzt noch nicht beobachtet.",
+            "start": 3652948,
+            "end": 3663077,
+            "confidence": 0.7792058823529411,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Aber weil du gerade schon über Vector-Datenbanken gesprochen hast, finde ich es auch wieder interessant, um zurückzukommen auf diese eierlegende Wollmilchsau, weil Postgre hatte dieses Extension-Feature. Ich glaube, MySQL hat auch Extensions, ist aber nicht so wirklich viel genutzt. Aber auch die Extension PG Vector spielt natürlich jetzt in der ganzen Vector-Datenbank eine Riesenrolle. Und da frage ich mich schon wieder, wow, Postgre kann es schon wieder bedienen. Es ist vielleicht einfacher zu fragen, was kann Postgre nicht in Zukunft, als zu fragen, was kann Postgre?",
+            "start": 3663097,
+            "end": 3692118,
+            "confidence": 0.7879302325581395,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Was es nicht kann, sind z.B. temporale Sachen out of the box. Da fallen mir schon Sachen ein, die es nicht kann. Ja, das mit den Extensions, das ist tatsächlich sehr mächtig bei Post. Und dieses PG Vector ist mir natürlich jetzt auch schon untergekommen. Aber ich würde da fast sogar ein anderes Paradebeispiel nennen wollen, nämlich das PostGIS. Das ist nämlich tatsächlich der Goldstandard der Datenbanken in dem Bereich für GIS. Also da gibt es durchaus Stimmen auch von den anderen Herstellern, die sagen, naja, so gut wie die müssen wir erst einmal werden. Und das ist aber letztendlich ja Extension.",
+            "start": 3692138,
+            "end": 3727105,
+            "confidence": 0.7671862745098038,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Vor ca. 8-10 Jahren war ich in einem Projekt involviert, was sehr viel mit geografischen Daten hantiert hat und in einer Firma, die eigentlich ein MySQL-Shop war. Und da wurde dann auch nach ein paar Anfangsdiskussionen sofort gesagt, tut mir leid, aber um Postgre kommen wir hier nicht drumherum, weil die geografischen Daten. Und ich habe auch das Gefühl, dass Postgre so, ich will nicht sagen richtig bekannt wurde, aber dass das, wie du auch schon sagtest, das Alleinstellungsmerkmal ist. Und in letzter Zeit ist so in meiner Bubble, und wenn ich von letzter Zeit rede, die letzten vier Jahre, Postgre irgendwie überall. Überall Postgre, Postgre, Postgre. Hast du in deiner Arbeit mit Kunden diesen Hype auch irgendwie gesehen oder bin ich in meiner Bubble und du zeigst mir jetzt mal das Spiegelbild?",
+            "start": 3727165,
+            "end": 3776431,
+            "confidence": 0.7988796992481204,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Also deine Bubble ist bestimmt etwas überzeichnet, aber grundsätzlich gibt es den Trend. Postgre ist momentan hip, das möchte ich schon so sagen, aber ich möchte euch in Erinnerung rufen, ganz ganz viel Industrie ist im heimlichen stillen Kämmerlein, die ihr einfach nicht mitkriegt. Das sind dann halt trotzdem Kunden von mir, die Buchungen, Schulungen buchen oder Consulting buchen. Und da sehe ich dann schon auch noch die ganzen anderen Produkte, die man halt so kennt. Also ich glaube generell auf den Markt verteilt wird deine Babel einfach ein überspitztes Bild wiedergeben.",
+            "start": 3777071,
+            "end": 3807598,
+            "confidence": 0.8052608695652175,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Ich habe gerade selbst bei einem Kunden eine neue Datenbank kennengelernt und ich habe mir wirklich gedacht, die kennen eigentlich die meisten Datenbanken, aber Progress ist eine Datenbank und die ist scheinbar durchaus teilweise in Verwendung. Ich weiß nicht, ob du sie schon mal gehört gehört hat.",
+            "start": 3808358,
+            "end": 3823320,
+            "confidence": 0.6539787234042556,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Ist damit etwas sehr altes gemeint?",
+            "start": 3823360,
+            "end": 3824941,
+            "confidence": 0.7186666666666666,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Ich glaube, es ist gar nicht so alt. Es kommt aus der 4G-Zeit oder es ist zumindest so eine 4G-Sprache, aber durchaus aktuelle Software basiert noch auf denen. Die wird auch sinnvoll weiterentwickelt, aber war für mich auch eine neue Datenbank. Also nicht neu im Sinne von neu erschienen, aber dass ich sie nicht am Schirm hatte.",
+            "start": 3825721,
+            "end": 3846047,
+            "confidence": 0.8409122807017545,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Heißt das Brogress, also so wie das Jugendwort Bro für Bruder?",
+            "start": 3846087,
+            "end": 3850048,
+            "confidence": 0.5926363636363637,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Nein, es ist schon ein hartes P. Du weißt ja, wir Österreicher unterscheiden nicht.",
+            "start": 3851328,
+            "end": 3854790,
+            "confidence": 0.6038571428571428,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Zwischen P und P. Ja, aber ich schaue gerade ins Wikipedia. The original Progress for GL was designed in 81.",
+            "start": 3854810,
+            "end": 3861084,
+            "confidence": 0.43995000000000006,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Ja, ja, genau. Also ich glaube, es ist schon... Dann.",
+            "start": 3861094,
+            "end": 3863635,
+            "confidence": 0.6889,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Habe ich es zumindest schon mal aufgeschnappt, ja.",
+            "start": 3863655,
+            "end": 3865597,
+            "confidence": 0.7366250000000001,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Aber es gibt durchaus noch wirklich aktuelle Software, die darauf aufbaut, sogar Cloud-Software und so.",
+            "start": 3865657,
+            "end": 3871740,
+            "confidence": 0.8959333333333334,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Es gibt Nachfolger von D-Base, die noch in Verwendung sind.",
+            "start": 3871780,
+            "end": 3874842,
+            "confidence": 0.7745,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Genau, man lernt nie aus... Was ja auch so mal ein großer Trend war und vielleicht kommt er auch jetzt so wieder, das waren die ganzen Raster-Datenbanken, die gehen ja auch so eher in die GIS-Richtung, aber auch so Array-Datenbanken, also wo es wirklich um mathematische Berechnungen gegangen ist, das werden jetzt wahrscheinlich eher so die Vector-Datenbanken werden. Das ist ja so das Neue, was man berechnen muss und wo halt Heavy-Loads drauf sind. Also ich bin schon gespannt, was da kommt. Aber was Andi auch gerade erwähnt hat in der BHB-Welt, die ORMs, die es gibt, das ist also die komplette Abstraktion, würde ich fast sagen. Ich verwende eigentlich nur ein ORM in meiner Sprache, in BHB oder was es dann auch immer ist. Und hinten passiert alles automatisch, magic. Und die Datenbank ist halt da irgendwo. Da ist vielleicht ein DBA, der sich darum kümmert. Aber ich als Entwicklerin habe eigentlich überhaupt nichts damit zu tun. Wie siehst du den Trend oder ganz allgemein ORMs? Keine Ahnung, ob es noch so der Trend ist.",
+            "start": 3874862,
+            "end": 3929077,
+            "confidence": 0.8080000000000003,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Naja, es ist schon sehr omnipräsent. Die Idee ist einfach sehr verlockend, dass man in seiner Objektwelt denkt und dort gefangen ist, möchte ich fast sagen. Und alles andere ist nicht mehr mein Problem. Das sehe ich schon noch oft.",
+            "start": 3929870,
+            "end": 3942373,
+            "confidence": 0.8250249999999999,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Aber wie siehst du das auf der technischen Seite?",
+            "start": 3942827,
+            "end": 3945830,
+            "confidence": 0.657888888888889,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Das Hauptproblem, was ich daran sehe, ist, dass die Denkwelt so eingeschränkt dann ist. Alles ist ein Objekt und alles muss als Primärschlüssel irgendwas Einspaltiges haben, was möglichst kein Business-Value hat. Also so, als wäre es ein Pointer in einer objektorientierten Sprache. Und dadurch entstehen halt dann einfach in diesem persistenten Datenbankmodell auf der Disk, entstehen dann halt einfach mörderische Probleme, weil dann eben die Normalisierung nicht mehr richtig funktioniert, so wie sie eigentlich gedacht war. Man hat ständig mit diesen surrogate values zu tun, muss ständig von einer Tabelle in die andere hüpfen, nur um letztendlich den Schlüssel aufzuschlüsseln. Es wird alles mühsam und langsam dadurch. Und das ist fast mein größtes Problem mit ORM-Tools. Oder ein noch größeres habe ich. Die Alles-oder-nichts-Idee, die ist auch sehr präsent.",
+            "start": 3945850,
+            "end": 3994716,
+            "confidence": 0.8211627906976746,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Was bedeutet die Alles-oder-nichts-Idee?",
+            "start": 3994756,
+            "end": 3996797,
+            "confidence": 0.74025,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Das Alles-oder-nichts ist die Idee, dass wenn man ein ORM verwendet, dass man alles mit dem ORM machen muss. Und dieser Blödsinn meiner Meinung nach. Selbst wenn man heutzutage in die Hibernet-Dokumentation reinschaut, dann steht da drinnen, ja, das ist ein Tool und das verwendet man neben SQL. Das soll heißen, die Frage, verwende ich ein ORM, ja oder nein, das ist keine Projektentscheidung, sondern das ist eine Problementscheidung. Nicht, wenn ich jetzt gerade eine konkrete Anforderung umsetze, dann kann ich mich fragen, welchen Mehrwert bringt das Ganze jetzt, wenn ich ein ORM mache und welchen Mehrwert bringt es, wenn ich einfach ein Select schreibe. Und deswegen muss ich eigentlich Problem für Problem entscheiden, ist es da jetzt gescheit oder nicht.",
+            "start": 3996837,
+            "end": 4030861,
+            "confidence": 0.7828429752066115,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Aber ganz oft wird ja eigentlich das Argument genannt für ORMs, dass man dann hinten einfach die Datenbank austauschen könnte. Das geht mir dann natürlich komplett verloren. Sobald ich beginne dann meine eigenen Queries zu schreiben und eine Rekursion zu schreiben in SQL, dann kann ich natürlich die Datenbank nicht mehr einfach austauschen.",
+            "start": 4030901,
+            "end": 4046287,
+            "confidence": 0.7936415094339624,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Also gerade bei Rekursionen funktioniert es fast sehr gut. Fast sehr gut. Das ist überhaupt auch so ein Trend. Die neueren SQL Features, da hat die Standardisierung besser funktioniert als bei den älteren. Bei den älteren haben die Produkte einfach schon was gekonnt, bevor der Standard da war und das wird jetzt nicht geändert. Das ist jetzt einfach ein Schränkelmessel. Aber bei den neueren Sachen sind die Implementierungen eigentlich erstaunlich nah am Standard dran. Also bei den Rekursionen ist das Hauptproblem tatsächlich einfach nur das Schlüsselwort recursive. Bei manchen Datenbanken darf man es einfach nicht hinschreiben. Das ist das Einzige, ansonsten funktioniert es eigentlich sehr gut. Window-Funktionen funktionieren exzellent produktübergreifend. Ich würde sagen, Window-Funktionen ist eines der Features, das wirklich den besten Cross-Plattform-Kompatibilitätslevel hat. Also ich könnte mir vorstellen, dass du da das Problem ein bisschen überschätzt, aber nichtsdestotrotz stimme ich dir zu, dass es da andere Tools geben muss und sollte und teilweise auch gibt, die einfach also domain-specific language, eine internet domain-specific language, wie zum Beispiel Juke bei Java, ist da ganz löblich zu erwähnen, wo man dann halt einfach nicht als String ein SQL hinschreibt mit hochkomma select und so weiter und so weiter und dann ist das einfach für die Sprache nur ein String, das kann ja alles mögliche an Gipfelern drin sein. Sondern, dass man halt einfach Methoden hat. Da heißt dann halt die Methode Select und da gebe ich als Parameter, welche Spalten ich haben möchte und so weiter. Hab dann halt die Objekte, die eins zu eins nur die Datenbankstruktur widerspiegeln, aber sonst keine Logik haben. Und kann mir so eben was zusammenbauen, was dann aber auch diese Kompatibilität der.",
+            "start": 4047641,
+            "end": 4135330,
+            "confidence": 0.7837256317689522,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Datenbanken Ich glaube, dass das sowieso ein absoluter Mythos ist, dass man Datenbanken so einfach austauschen kann und es auch macht in der Realität. Also ich kenne wirklich sehr, sehr wenige Fälle, wo das wirklich gemacht wird bei größeren Applikationen.",
+            "start": 4135370,
+            "end": 4150068,
+            "confidence": 0.8265500000000001,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Den Fall, den ich halt tatsächlich kenne, ist, dass ein Produkt von Anfang an schon auf mehreren Datenbanken laufen muss.",
+            "start": 4150148,
+            "end": 4154993,
+            "confidence": 0.7497999999999999,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Ja, klar.",
+            "start": 4155033,
+            "end": 4155453,
+            "confidence": 0.5585,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Aber sind UAMs heute in der Lage, Code, SQL-Code zu generieren, welches die moderneren SQL-Features nutzt? With-Clause, also Commentable Expression Recursion und so weiter?",
+            "start": 4156895,
+            "end": 4168920,
+            "confidence": 0.7922083333333331,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Also im Großen und Ganzen würde ich es verneinen. Da mag es punktuell die eine oder andere Ausnahme geben, aber im Großen und Ganzen nein.",
+            "start": 4168960,
+            "end": 4174703,
+            "confidence": 0.7253999999999999,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Ich hatte gerade neulich mit einem Kollegen gesprochen, der mir irgendwie erklärt hat, er hat einen MySQL Cluster und er hat so und so viele tausende Queries pro Minute und ich hab mir gedacht, die haben ja nur so ein kleines Produkt, woher kommen diese Queries? Und am Ende bin ich dann draufgekommen, dass sie verwenden Hibernate und Hibernate macht einfach so viele Queries, weil du halt einfach keine Ahnung, was du sonst mit einem Join oder so womöglich abdecken könntest, da werden halt einfach tausend Queries gefeuert oder so unter Umständen.",
+            "start": 4175493,
+            "end": 4203138,
+            "confidence": 0.7231847826086956,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Ja, es kann viel leichter was schief gehen, weil man sieht ja nicht mehr, es ist wieder eine Schicht, die irgendwas tut, wo die meisten gar nicht wissen, was es ist. Es ist jetzt Hibernet, kann man jetzt an den Pranger stellen oder egal welches Tool, aber ich sage es so rum, egal welches Tool man als Entwickler verwendet, man sollte damit umzugehen lernen. Und da haben wir nicht nur bei SQL ein Bildungsproblem, sondern auch bei ORMs.",
+            "start": 4203748,
+            "end": 4224834,
+            "confidence": 0.7777179487179486,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Gehe ich mal ein bisschen wieder weg von ORMs. Was ist denn das coolste SQL Feature, was am unbekanntesten ist? Also gerne eine sehr, sehr subjektive Antwort. Was würdest du sagen, dieses Feature ist komplett unterrepräsentiert?",
+            "start": 4224854,
+            "end": 4241112,
+            "confidence": 0.8058611111111111,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Noch vielleicht auch.",
+            "start": 4242672,
+            "end": 4243454,
+            "confidence": 0.8166666666666668,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Ja, als Renaissance-Botschafter kannst du das, hast du eine Mission, dies zu ändern?",
+            "start": 4243654,
+            "end": 4247383,
+            "confidence": 0.7376923076923076,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Da möchte ich jetzt ein bisschen Bedenkzeit.",
+            "start": 4247624,
+            "end": 4249589,
+            "confidence": 0.7844285714285714,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Gerne, gerne.",
+            "start": 4250632,
+            "end": 4251113,
+            "confidence": 0.5405,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Also, ich möchte zwei Sachen exemplarisch nennen, die sehr konträr sind von dem, was sie können und was sie sind. Das erste ist die Filter-Klausel. Es gibt tatsächlich das Schlüsselwort Filter im Standard SQL. Und das ist etwas, das stellt man einer Aggregatfunktion, sowieso min, max und so weiter, nach und schreibt dann in Klammern nochmal eine zweite Verklausel ein. Und das bedeutet letztendlich, die Aggregatfunktion soll nur jene Zeilen kriegen und verarbeiten, die dieser zusätzlichen Verklausel entsprechen.",
+            "start": 4252578,
+            "end": 4280748,
+            "confidence": 0.8257179487179488,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Moment mal, dieses Feature wird ja etliche Subqueries zerstören.",
+            "start": 4280926,
+            "end": 4284212,
+            "confidence": 0.6122222222222222,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Ja, das ist richtig. Das ist eins der Self-Join-Killer-Features.",
+            "start": 4284613,
+            "end": 4287838,
+            "confidence": 0.531,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Und wie viele können das?",
+            "start": 4287879,
+            "end": 4289101,
+            "confidence": 0.8618,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Zwei. Oder von denen, die ich mir anschaue. Lass mich kurz online auf meiner eigenen Webseite nachschauen. Meines Wissens nach jetzt zwei, also Postless und Escolite.",
+            "start": 4289562,
+            "end": 4299436,
+            "confidence": 0.7278461538461538,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Okay, ich bin voll bei dir mit dem Feature.",
+            "start": 4299897,
+            "end": 4302778,
+            "confidence": 0.4297777777777777,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Es ist wirklich, man kommt auch ohne Recht gut zurecht, weil man kann es eins zu eins auch umsetzen, indem man einen Case-Ausdruck in die Aggregatfunktion reinsetzt. Insofern ist es jetzt, es ändert nichts an dem, was man macht, aber von der Didaktik her und von der Klarheit her, Und von der Einfachheit, also ich würde am liebsten, seid mir nicht böse, wenn ich das jetzt so sage, auf wienerisch, die Hersteller watschen, die das nicht machen.",
+            "start": 4302818,
+            "end": 4322170,
+            "confidence": 0.7892597402597404,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Watschen heißt aufhaken.",
+            "start": 4322795,
+            "end": 4324056,
+            "confidence": 0.661,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Genau. Okay. Das kann ja nur einfach umzusetzen sein. Es gibt übrigens einen MySQL-Plugin, weil wir davon auch gesprochen haben, das macht es mit einer Regex.",
+            "start": 4324096,
+            "end": 4332620,
+            "confidence": 0.7834615384615387,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Ach du meine Güte.",
+            "start": 4332861,
+            "end": 4334101,
+            "confidence": 0.55525,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Das fährt oft das Query, was du reinschickst, mit einer Regex über und macht das Filter in ein Case aus.",
+            "start": 4334121,
+            "end": 4338524,
+            "confidence": 0.7368,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Okay, ob das stabil ist, weiß ich jetzt auch nicht. Aber okay, ich bin voll bei dir. Unterrepräsentiertes Feature. Was ist deine zweite Wahl?",
+            "start": 4338584,
+            "end": 4346008,
+            "confidence": 0.767375,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Meine zweite Wahl ist das Row-Pattern-Matching oder Row-Pattern-Recognition. Das ist auch was, das ist mit dem 2016er Standard gekommen und das ist eigentlich affenartig geil, kann nur einer, nur ein kommerzieller Orgel, also von den Produkten, die ich typischerweise so anschaue. Und da geht es darum, dass man die Idee, dass man die Regular Expressions kennt ja mehr oder weniger jeder, nicht so Sternchen ist 0 bis Vieles und Plus ist 1 bis Vieles und Fragezeichen und so weiter und oder und so weiter, das kennt man ja, dass man diese Ideen darauf umsetzt, dass man eben nicht Charakter matcht, sondern dass man Zeilen matcht. Und damit kann man dann zum Beispiel in Zeitleisten ganz interessante Sachen fragen, wie zum Beispiel matchen wir alles, was jetzt zum Beispiel, wo ein Event binnen 30 Minuten auf den vorigen folgt. Und dann matchen wir alle diese Zeilen, das ist dann so ein Sternchen. Die Beginnung ist halt einfach Falk binnen 30 Minuten. Und dann sage ich Sternchen so oft wie es geht. kann ich auch Sternchen-Fragezeichen sagen, so wenig wie es geht und so weiter, also die Regular Expression-Idee und kann mir da dann quasi alle Zeilen, die eben dieser Bedienung jetzt entsprechen, die eben jetzt chronologisch fortlaufend zum Beispiel ist, kann ich mir quasi in eine Gruppe mal zusammenfassen, die ich dann in der Hand habe und darauf kann ich dann zum Beispiel Lagergradfunktionen anwenden oder kann zum Beispiel das erste Minus dem letzten machen, um zu wissen, wie lange hat jetzt die Session zum Beispiel gedauert. Und diese Sprache, damit kann ich auch so Sachen machen, wie zum Beispiel matche mir alles, wo der Wert der Spalte X größer als der vorige Wert der Spalte X ist, nicht? Und dann habe ich einen raufsteigenden Trend. Und dann kann ich auch sagen, okay, und danach muss ich einen rückläufigen Trend geben, nicht? Dann kann ich absterren sagen, downsterren, absterren, downsterren, kann lauter solche Sachen matchen, ja? Bin-fitting-Probleme und solche Sachen kann man damit behandeln.",
+            "start": 4346028,
+            "end": 4438358,
+            "confidence": 0.7539069069069068,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Das ist ja wirklich mit diesem look forward, look back Feature von regular expressions.",
+            "start": 4438378,
+            "end": 4442401,
+            "confidence": 0.6709285714285713,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Ja, also die negative Lookarounds ganz generell gibt es jetzt in der Form nicht. Es ist schon ein bisschen anders, aber die Grundidee von den Regular Expressions von der Basis ist dort drinnen. Dadurch, dass man nicht mit Charaktern arbeitet, bei einer Regular Expression steht ja jeder Charakter mal grundsätzlich für sich selbst, mit der Ausnahme von ein paar Speziellen. Aber dort arbeitet man mit Zeilen und da muss man dann halt einfach Zeileneigenschaften zuordnen. Also ich muss zuerst einmal definieren, eine Zeile, die jetzt in der Spalte, weiß ich nicht, gelöscht den Wert ja hat, die könnte gelöscht heißen. Und wenn ich dann irgendwo in meinem Pattern dann habe gelöscht, Sternchen, dann kann er dort nur Zeilen matchen, die halt ja haben. Also ich muss diesen einen extra Schritt, das Vokabular definieren, das muss ich machen. Aber da habe ich dann eben auch die Möglichkeit, dass ich sage, nach vorher oder nach nachher schauen.",
+            "start": 4443354,
+            "end": 4489921,
+            "confidence": 0.796709677419355,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Okay, ich muss mehr Can-I-Use auf modernesql.com nutzen. Das ist ja der Wahnsinn. Ich bin aber auch kein Oracle-User. Schade, würde ich sagen.",
+            "start": 4490302,
+            "end": 4500272,
+            "confidence": 0.6739130434782608,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Ja, das finde ich wirklich hochkomplex und sicher nicht trivial umzusetzen, aber es würde mich sehr freuen, wenn ich das in mehr Produkten sehen würde.",
+            "start": 4500312,
+            "end": 4506858,
+            "confidence": 0.76536,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Markus, wenn wir in die Zukunft blicken, wo siehst du denn den ganzen Trend, diesen Zug hinfahren? Hast du schon irgendwelche Insights, was in der Zukunft kommen wird im Standard oder Vermutungen, in welche Richtung es gehen wird?",
+            "start": 4506878,
+            "end": 4521912,
+            "confidence": 0.7706315789473682,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Naja, es gibt so ein paar Themen, an denen schon lange gearbeitet wird. Also zum Beispiel das Thema Streaming SQL ist schon länger in Arbeit, aber offenbar noch nicht spruchreif. Ich denke, da wird noch aktiv daran gearbeitet, meines Wissens nach. Was jetzt das große nächste Feature sein wird im nächsten Standard, das weiß ich nicht. Es gibt jetzt schon Kleinigkeiten, die schon durchsickern. Etwas, was mich auch sehr freuen wird, weil es nämlich einfach notwendig ist, ist, dass es eine Möglichkeit geben wird, Ein Cast sicher zu machen, die gibt es jetzt in Standard SQL derzeit nicht. Also wenn ich versuche, wenn ich jetzt ein String habe und da steht vermutlich eine Zahl drinnen und ich caste das jetzt auf ein Integer oder so, dann klappt das, wenn es tatsächlich eine Zahl ist oder ich kriege eine Fehlermeldung, wenn es keine Zahl ist und das Ganze wirklich steht. Und da wird es dann die Möglichkeit geben, dass man das eben prüft, bist denn du jetzt eine Zahl, bist du castbar quasi als solches, damit man da dann einfach damit arbeiten kann, auch wenn jetzt einmal Blödsinn daherkommt. Ist jetzt eher so ein kleines Randthema. Ja, was wird sich noch tun? Es wird ziemlich sicher an dem, was erst kürzlich dazugekommen ist, weitergearbeitet werden. Das soll also insbesondere die Grafabfragesprachen sein. Da hat man sich jetzt beim 23er-Standard dazu entschieden, mal nur die Queries zu erlauben und noch gar nicht so das Schreiben in die Grafen zu unterstützen. Also das ist jetzt eine offensichtliche Baustelle, wo man das in die andere Richtung dann auch noch irgendwann erlauben wird müssen. Ich würde mich auch nicht überraschen, wenn sich bei JSON noch ein bisschen was tut, da hat sich ja auch bei 23 ganz schön viel getan. Aus JSON-Zurinnerung ist mit dem 16er Standard erstmals gekommen und ist jetzt mit dem 23er Standard maßgeblich erweitert worden. Also insbesondere des Syntax kann man jetzt viel bequemer eben auf JSON-Elemente zugreifen. Da wird sicher auch noch irgendwas dazukommen. Ja, aber ansonsten sind wir jetzt froh, dass wir den 23er-Standard haben und verschnaufen ein bisschen.",
+            "start": 4522212,
+            "end": 4622238,
+            "confidence": 0.7530714285714287,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Siehst du den langsamen SQL-Zug noch irgendwo in den AI-Hype-Bahnhof einfahren? Irgendwas da am Schirm?",
+            "start": 4623019,
+            "end": 4631201,
+            "confidence": 0.6736666666666667,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Ja, wie gesagt, von der Benutzersicht gibt es die Nachfrage nach Vektordatenbanken. Aus Standardisierungssicht habe ich jetzt noch nichts dazu gehört. Das wäre was, das könnte sich gerade noch ausgehen für den nächsten Standard. Wenn man jetzt anfängt daran zu arbeiten, dann geht sich das in dem Vierjahreszyklus ungefähr aus.",
+            "start": 4631261,
+            "end": 4645685,
+            "confidence": 0.73612,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Vielen lieben Dank, Markus. Ich denke, das war ein tolles Abschlusswort, wo die Trends in der Zukunft bezüglich SQL so hingehen. Ich für meinen Teil habe eine neue Lieblingswebseite, canIusemodernSQL. Ich glaube, da werde ich in den nächsten paar Wochen die öfter benutzen, als die wirkliche Kenner-Use. Faszinierend. Vielen lieben Dank für deine Arbeit, nicht nur mit modernen SQL, sondern auch mit den ganzen Performance-Optimierungen mit Use-the-Index-Look. Ich habe über diese Folge enorm viel über SQL gelernt. Und ich bin einer dieser Typen, der dachte, ich wüsste ein bisschen was über SQL. Und du hast mir mal gezeigt, ich habe einen ganz großen Blindspot. Vielen Dank dafür. Gibt es von deiner Seite noch irgendetwas, was du unseren Hörerinnen und Hörern noch mitgeben möchtest?",
+            "start": 4646477,
+            "end": 4697471,
+            "confidence": 0.841048780487805,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Das Wichtigste ist für mich persönlich, dass man realisiert, dass relational und SQL, das passt eigentlich gar nicht mehr so recht zusammen, die zwei Begriffe. SQL ist einfach über das relationale Denken hinausgewachsen und hat irrsinnig praktikable Lösungen für häufige Probleme. Damit könnte sich jeder eigentlich ein bisschen Arbeit ersparen.",
+            "start": 4698511,
+            "end": 4716715,
+            "confidence": 0.8269,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Das ist auch mal ein gutes Schlusswort. Ich glaube, das können wir alle uns zu Herzen nehmen, da mal tiefer reinzugehen. Und man ist halt einfach verführt, es so zu machen, wie man es immer früher gemacht hat. Und nicht mal zu schauen, gibt es da nicht vielleicht eine neue Funktion, ein neues Keyword oder sonst irgendwas. Vielen, vielen lieben Dank auch von meiner Seite. Wir verlinken natürlich alle deine Projekte. Markus ist sicher auch bereit, wenn es irgendwelche anderen Fragen gibt oder wenn es Bedarf gibt für irgendwelche Hardcore-Schulungen, die in die Tiefe gehen oder sonstige Dinge. Wir verlinken das alles in den Show Notes, wie ihr Markus kontaktieren könnt.",
+            "start": 4717265,
+            "end": 4750826,
+            "confidence": 0.8182972972972976,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Der Vorteil ist ja, Markus kann man genau dafür bezahlen. Das ist ja das Tolle an dieser ganzen Geschichte hier.",
+            "start": 4750846,
+            "end": 4755589,
+            "confidence": 0.74445,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Kann man, muss man aber gar nicht, weil der meiste Content ist for free online auf meinen Webseiten.",
+            "start": 4756832,
+            "end": 4761235,
+            "confidence": 0.7241666666666666,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Vielen lieben Dank, Markus, dass wir uns hoffentlich nicht erst in fünf Jahren wiedersehen, um A, in die Glaskugel zu schauen oder B, für einen zweiten Meetup-Talk. Vielleicht mach deine Konferenztour mal wieder, drück das Gaspedal, schauen wir mal. Ansonsten vielen lieben Dank für deine Zeit und bis zum nächsten Mal.",
+            "start": 4761515,
+            "end": 4780166,
+            "confidence": 0.7930000000000001,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Bye bye.",
+            "start": 4780406,
+            "end": 4782007,
+            "confidence": 0.5855,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Danke, tschüss.",
+            "start": 4782167,
+            "end": 4783068,
+            "confidence": 0.327,
+            "channel": null,
+            "speaker": "C"
+        }
+    ],
+    "confidence": 0.7791174655420675,
+    "audio_duration": 4789.0,
+    "webhook_status_code": null,
+    "webhook_auth": false,
+    "summary": null,
+    "auto_highlights_result": null,
+    "content_safety_labels": null,
+    "chapters": null,
+    "sentiment_analysis_results": null,
+    "entities": null
+}
