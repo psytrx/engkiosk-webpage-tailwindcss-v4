@@ -30,7 +30,7 @@ chapter:
   title: Wo geht der SQL Trend hin?
 - start: 01:17:26
   title: Abschlusswort von Markus Winand
-deezer: ''
+deezer: https://www.deezer.com/episode/580055482
 description: "SQL is Dead, Long Live SQL! Fast jede Applikation hat irgendeine Form\
   \ von persistenter Datenhaltung. Oft in Form einer Datenbank. Der Platzhirsch bei\
   \ Datenbanken sind Systeme, die sich mit der Structured Query Language (kurz SQL)\
