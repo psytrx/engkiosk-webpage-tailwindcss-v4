@@ -65,7 +65,10 @@ speaker:
   transcriptLetter: A
   website: https://winand.at/de
 spotify: https://open.spotify.com/episode/5KRaRib5wNZ3AbE8ApPCss
-tags: []
+tags:
+- Software Engineering
+- Interview
+- Datenbanken
 title: '#99 Modernes SQL ist mehr als SELECT * FROM - mit Markus Winand'
 youtube: ''
 
