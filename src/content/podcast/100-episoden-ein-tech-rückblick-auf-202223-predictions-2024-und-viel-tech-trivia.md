@@ -79,7 +79,10 @@ speaker:
 - name: Wolfi Gassler
   website: https://wolfgang.gassler.org/
 spotify: https://open.spotify.com/episode/5PgUBY6MhEIc3ID1zlugq5
-tags: []
+tags:
+- Software Engineering
+- Engineering Kiosk
+- Cloud
 title: "#100 Episoden: ein Tech R\xFCckblick auf 2022/23, Predictions 2024 und viel\
   \ Tech Trivia"
 youtube: ''
