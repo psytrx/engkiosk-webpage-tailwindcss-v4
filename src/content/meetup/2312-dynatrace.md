@@ -1,7 +1,7 @@
 ---
 date: 2023-12-14T18:30:00+01:00
 location:
-  name: 'dynatrace'
+  name: 'Dynatrace'
   address: 'Höttinger Au 74, 6020 Innsbruck'
   url: 'https://careers.dynatrace.com/locations/innsbruck/'
 talks:
