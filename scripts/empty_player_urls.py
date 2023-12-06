@@ -33,7 +33,8 @@ def find_empty_player_urls(path_md_files) -> int:
                 'google_podcasts',
                 'apple_podcasts',
                 'amazon_music',
-                'deezer'
+                'deezer',
+                'youtube'
             ]
             missing = []
             for key in keys_to_check:
