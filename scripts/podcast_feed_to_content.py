@@ -24,6 +24,7 @@ import spotipy
 from spotipy.oauth2 import SpotifyClientCredentials
 from PIL import Image
 import deezer
+from pyyoutube import Client as YoutubeClient
 
 # Global variables
 PODCAST_RSS_FEED = "https://feeds.redcircle.com/0ecfdfd7-fda1-4c3d-9515-476727f9df5e"
@@ -42,6 +43,8 @@ PODCAST_APPLE_URL = "https://itunes.apple.com/lookup?id=1603082924&media=podcast
 SPOTIFY_SHOW_ID = "0tJRC0UsObPCWLmmzmOkIs"
 PODCAST_GOOGLE_URL = "https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5yZWRjaXJjbGUuY29tLzBlY2ZkZmQ3LWZkYTEtNGMzZC05NTE1LTQ3NjcyN2Y5ZGY1ZQ"
 DEEZER_PODCAST_ID = 3330122
+YOUTUBE_PLAYLIST_ID = "PLgeInf3w5xXsu6mPZY3Xe0Lpq2IY5ecv6"
+
 # Amazon Music is missing here.
 # We are adding this link manually, because there is no API available
 # and the HTML page of Amazon Music is full of async JavaScript.
@@ -175,7 +178,7 @@ def remove_rel_nofollow_from_internal_links(html_content):
     return new_html_content
 
 
-def sync_podcast_episodes(rss_feed, path_md_files, path_img_files, no_api_calls=False, spotify_client=None):
+def sync_podcast_episodes(rss_feed, path_md_files, path_img_files, no_api_calls=False, spotify_client=None, youtube_client=None):
     """
     Syncs the Podcast Episodes from the RSS feed down to disk
     and prepares the content to match the structure of the used
@@ -213,6 +216,7 @@ def sync_podcast_episodes(rss_feed, path_md_files, path_img_files, no_api_calls=
     spotify_episodes = []
     google_podcast_content = ""
     deezer_episodes = []
+    youtube_playlist_items = []
     if no_api_calls:
         logging.info("Requesting content from Podcast sites is disabled via `--no-api-calls` flag!")
 
@@ -221,6 +225,8 @@ def sync_podcast_episodes(rss_feed, path_md_files, path_img_files, no_api_calls=
         apple_podcast_content = get_json_content_from_url(PODCAST_APPLE_URL)
         spotify_episodes = spotify_client.show_episodes(SPOTIFY_SHOW_ID, limit=50, offset=0, market="DE")
         google_podcast_content = get_raw_content_from_url(PODCAST_GOOGLE_URL)
+        youtube_playlist_response = youtube_client.playlistItems.list(parts="snippet", maxResults=50, playlist_id=YOUTUBE_PLAYLIST_ID)
+        youtube_playlist_items = youtube_playlist_response.items
 
         # Pagination and auth not respected.
         # Right now it works, because a) we don't make that much requests and
@@ -355,7 +361,7 @@ def sync_podcast_episodes(rss_feed, path_md_files, path_img_files, no_api_calls=
             'amazon_music': '',
             'deezer': get_episode_link_from_deezer(deezer_episodes, title),
             'rtlplus': '',
-            'youtube': '',
+            'youtube': get_episode_link_from_youtube(youtube_playlist_items, title),
             'tags': [],
             'length_second': length_second,
             'speaker': DEFAULT_SPEAKER,
@@ -577,6 +583,34 @@ def get_episode_from_spotify(episodes, title: str) -> dict:
     return e
 
 
+def get_episode_link_from_youtube(episodes, title: str) -> str:
+    """
+    Parses the Youtube Episode Single View link (matching with title) from episodes list.
+    episodes is an API representation from the YouTube API / Engineering Kiosk Playlist.
+    title is the full title of a single episode.
+
+    If no title matches, it will return an empty string.
+    """
+    # Get the start of the episode title (#<number>)
+    episode_id = ""
+    matches = re.match("(#(\d+)\s)", title)
+    if matches:
+        episode_id = matches.group(1)
+
+    print(f"episode_id: {episode_id}")
+
+    u = ""
+    if not episode_id:
+        return u
+
+    for video in episodes:
+        print(f"video.snippet.title: {video.snippet.title}")
+        if video.snippet.title.startswith(episode_id):
+            u = f"https://www.youtube.com/watch?v={video.snippet.resourceId.videoId}"
+
+    return u
+
+
 def get_episode_link_from_deezer(episodes, title: str) -> str:
     """
     Parses the Deezer Episode Single View link (matching with title) from episodes list.
@@ -660,9 +694,11 @@ if __name__ == "__main__":
 
     match args.Mode:
         case "sync":
-            # Bootstrapping Spotify API client
+            # Bootstrapping API clients
             spotify_client = None
+            youtube_client = None
             if not args.no_api_calls:
+                # Spotify
                 SPOTIFY_APP_CLIENT_ID = os.getenv('SPOTIFY_APP_CLIENT_ID')
                 SPOTIFY_APP_CLIENT_SECRET = os.getenv('SPOTIFY_APP_CLIENT_SECRET')
                 if not SPOTIFY_APP_CLIENT_ID or not SPOTIFY_APP_CLIENT_SECRET:
@@ -672,6 +708,14 @@ if __name__ == "__main__":
 
                 spotify_client = create_spotify_client(SPOTIFY_APP_CLIENT_ID, SPOTIFY_APP_CLIENT_SECRET)
 
-            sync_podcast_episodes(PODCAST_RSS_FEED, f"{folder_prefix}{PATH_MARKDOWN_FILES}", f"{folder_prefix}{PATH_IMAGE_FILES}", no_api_calls=args.no_api_calls, spotify_client=spotify_client)
+                # YouTube
+                YOUTUBE_API_KEY = os.getenv('YOUTUBE_API_KEY')
+                if not YOUTUBE_API_KEY:
+                    logging.error("Env var YOUTUBE_API_KEY is not set properly.")
+                    logging.error("Please double check and restart.")
+                    sys.exit(1)
+                youtube_client = YoutubeClient(api_key=YOUTUBE_API_KEY)
+
+            sync_podcast_episodes(PODCAST_RSS_FEED, f"{folder_prefix}{PATH_MARKDOWN_FILES}", f"{folder_prefix}{PATH_IMAGE_FILES}", no_api_calls=args.no_api_calls, spotify_client=spotify_client, youtube_client=youtube_client)
         case "redirect":
             create_redirects(TOML_FILE, PATH_MARKDOWN_FILES, REDIRECT_PREFIX)
