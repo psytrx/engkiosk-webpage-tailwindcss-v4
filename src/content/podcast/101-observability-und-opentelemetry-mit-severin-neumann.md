@@ -1,5 +1,5 @@
 ---
-amazon_music: ''
+amazon_music: https://music.amazon.com/podcasts/c35a09fe-4116-4e04-8f68-77d61b112e46/episodes/72510b99-a2b0-4fca-8ecd-a3969347c78f/engineering-kiosk-101-observability-und-opentelemetry-mit-severin-neumann
 apple_podcasts: https://podcasts.apple.com/us/podcast/101-observability-und-opentelemetry-mit-severin-neumann/id1603082924?i=1000638267638&uo=4
 audio: https://audio1.redcircle.com/episodes/627265ce-6d39-4cc5-a9af-c1c3a3b68095/stream.mp3
 chapter:
