@@ -1,0 +1,922 @@
+{
+    "language_code": "de",
+    "audio_url": "https://audio1.redcircle.com/episodes/627265ce-6d39-4cc5-a9af-c1c3a3b68095/stream.mp3",
+    "punctuate": true,
+    "format_text": true,
+    "dual_channel": false,
+    "webhook_url": null,
+    "webhook_auth_header_name": null,
+    "webhook_auth_header_value": null,
+    "audio_start_from": null,
+    "audio_end_at": null,
+    "word_boost": [],
+    "boost_param": null,
+    "filter_profanity": false,
+    "redact_pii": false,
+    "redact_pii_audio": false,
+    "redact_pii_policies": null,
+    "redact_pii_sub": null,
+    "speaker_labels": true,
+    "speakers_expected": 3,
+    "content_safety": false,
+    "content_safety_confidence": null,
+    "iab_categories": false,
+    "custom_spelling": null,
+    "disfluencies": false,
+    "sentiment_analysis": false,
+    "auto_chapters": false,
+    "entity_detection": false,
+    "summarization": false,
+    "summary_model": null,
+    "summary_type": null,
+    "auto_highlights": false,
+    "language_detection": false,
+    "speech_threshold": null,
+    "id": "416355f4-23f9-4ee4-9c00-28028eaddd80",
+    "status": "completed",
+    "error": null,
+    "utterances": [
+        {
+            "text": "Früher waren viele Applikationen eine Blackbox, besonders für die Ops aka Betriebsabteilung. Dann fing das Logging an. Apps haben Loglines geschrieben, zum Beispiel wann die App fertig hochgefahren ist oder wenn etwas schiefgegangen ist. In einer Art und Weise haben durch Logs die Devs angefangen mit den Ops Leuten zu kommunizieren. Irgendwann später gab es Metriken, wie viel RAM verbraucht die App, wie oft wurde der Garbage Collector getriggert oder auch Businessmetriken, wie oft eine Bestellung ausgeführt wurde und wann eine Geo anstatt einer Textsuche gestartet wurde. War das alles? Natürlich nicht. Der neueste Hype? Traces. Eine genaue Einsicht, welchen Codepass die App genommen hat und wie lange dieser gedauert hat inklusive aller Metadaten, die wir uns wünschen. Und wenn man dies nun alles in einen Sack packt, gut durchschüttelt und man ein System hat, das man auf Basis dieser Daten Fragen stellen kann, dann nennt man das Observability. Und genau da setzt das Projekt OpenTelemetry an. Und in dieser Episode sprechen wir mit dem Experten Severin Neumann über Observability und OpenTelemetry. Viel Spaß, los geht's! Jeder Software-Ingenieur kennt diese Situation. Man hat etwas programmiert, hat etwas deployed, auf dem eigenen Laptop lief es eigentlich ganz gut und in Produktion funktioniert irgendwie gar nichts oder nur die Hälfte. Und jetzt hat man natürlich dieses Problem, Production ist so diese heilige Umgebung an die man nicht ran darf und da hat man jetzt seine Applikationen am Laufen und das ist so eine ganz klassische Blackbox. Und was macht man als Nächstes? Ganz früher hat man sich die Datei wieder runtergeladen, hat da irgendwelche Console-Logs eingefügt oder FMT-Printline oder System-Outline-Printline und hat die dann deployed und hat gehofft, da kommt dann irgendwas. So war Debugging früher.",
+            "start": 3653,
+            "end": 110266,
+            "confidence": 0.8296373239436627,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Moment, willst du mir jetzt meine Console-Log ausreden? Das heißt früher, ich mach das immer noch so.",
+            "start": 110306,
+            "end": 115670,
+            "confidence": 0.6435882352941177,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Und wenn der Wolfgang das immer noch so macht, dann ist diese Episode genau etwas für ihn. Denn die Informatik und die Softwareentwicklung hat sich so ein bisschen weiterentwickelt und inzwischen gibt es eine ganze Menge große Entwicklungen im Bereich Logging, im Bereich Metriken, im Bereich Tracing. Und diese ganze Thematik wird unter anderem zu Open Telemetry, Observability, Monitoring und so weiter und so fort zu all diesen Buzzwords zusammengefasst. Und da Wolfgang keine Ahnung davon hat und ich auch nur User bin, haben wir uns diesmal einen Experten für dieses Thema ans Mikro geholt. Hallo Severin.",
+            "start": 116761,
+            "end": 155852,
+            "confidence": 0.8802577319587631,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Hallo freut mich hier zu sein.",
+            "start": 156052,
+            "end": 158013,
+            "confidence": 0.436,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Severin wer bist du du bist aus dem süden deutschlands aus bayern du hast computer science an der uni passau studiert und warst dort auch als wissenschaftlicher mitarbeiter für ein paar monate unterwegs. Wo du kryptografie lineare algebra logik und programmierung gelehrt hast. Du hast bei AppDynamics, einer Application Performance Monitoring Plattform oder jetzt Observability Plattform, gearbeitet als Sales Engineer und bist dann irgendwann als Senior Product Manager weitergezogen und inzwischen bist du bei Cisco und dort bist du Open Source Program Manager. Mit dem Thema OpenTelemetry kennst du dich aus, weil du bist Co-Maintainer der Special Interest Group Communications, die verantwortlich ist für die Website und die Dokumentation. Und du bist Maintainer einer doch recht populären Chrome-Extension namens DemoMonkey. Meine zwei Anfangsfragen. A. Was ist ein Sales Engineer und B. Was hat Demo Monkey mit Sales zu tun?",
+            "start": 158053,
+            "end": 221416,
+            "confidence": 0.8351438848920865,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Sehr gut. Ein ganz anderes Thema als Observability. Ein Sales Engineer ist, zu deutsch würde man ja sagen, ein Vertriebsingenieur. Das heißt, da ist dein Job im Prinzip mit mitten im Vertriebler mitzugehen zum Kunden und da dann quasi technisch zu erklären, wie deine Lösung funktioniert, mit denen vielleicht zusammen einen, wir haben es damals immer nicht Proof of Concept, sondern eher einen Proof of Value genannt, also mit denen zu gucken, okay, was würde dir diese Lösung bringen, wenn du die halt implementieren würdest. Klar, wir sind sehr teuer, aber auf der gleichen Seite, Hier sind die Kosten, die du einsparst. Und was ich an dem Job eigentlich immer ganz schön fand, und da kommen wir ja danach auch zur Observability, APM hat da ja so gewisse Ähnlichkeiten, du kommst halt zu Kunden rein, kannst denen ihre Applikationen sehen, wie die alle interagieren, welche Probleme die haben und denen dann eben auch helfen, diese Probleme zu lösen.",
+            "start": 222277,
+            "end": 273340,
+            "confidence": 0.7932278481012657,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "APM ist Application Performance Monitoring, oder?",
+            "start": 273562,
+            "end": 276645,
+            "confidence": 0.5063333333333333,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Genau, genau. Also da kann man jetzt drüber streiten, wo da die Grenzen zum Observability sind, aber da können wir dann später auch mal noch tiefer einsteigen in das Thema.",
+            "start": 276685,
+            "end": 284331,
+            "confidence": 0.7299333333333332,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Aber jetzt bespannender, was ist diese Demo Monkey?",
+            "start": 284371,
+            "end": 286512,
+            "confidence": 0.7284999999999999,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Ja, genau. Demo Monkey ist eine... Wenn du zu so einem Kunden hingehst, das allererste, was du machst, ist, du gibst dem eine Demo. Du zeigst dem halt, okay, so würde das ausschauen, wenn du das bei uns implementierst. Ein Feature, was eben AppDynamics hat und was, sag ich mal, immer sehr schön für die Kunden ist, ist diese sogenannte Application Flow Map, also wo du halt siehst, okay, deine ganzen Microservices interagieren ja irgendwie miteinander und dann ist da vielleicht eine Datenbank und ein Partyservice und halt irgendwie so eine schöne Landschaftskarte von deinen Services, wie die miteinander sprechen. Und unsere Standarddemo war so eine E-Commerce-Umgebung, aber jetzt sprichst du ja nicht nur mit E-Commerce-Kunden, sondern du sprichst ja auch mal mit einem KFZ-Hersteller, der einen Konfigurator für sein Auto macht. Oder du sprichst mit einer Firma, die, keine Ahnung, ein internes Buchungssystem hat. Und die haben vielleicht auch ganz tolle Namen, die du vielleicht sogar weißt. Und Demobunky ist im Prinzip eine Browser-Extension, die auf UI-Ebene hergeht und, sag ich mal, einfach Wörter ersetzt. Und was wir dann damit machen in den Demos, ist halt, wenn wir mit dem Kunden quasi vor dem ersten Gespräch sprechen oder Recherchen machen, dass wir dann hergehen und sagen, okay, wir nehmen diese Demo-Umgebung und passen die so ein bisschen an denen seine Sprache, an denen seine Welt an. Also dass der dann halt nicht eine, ja hier ist eine E-Commerce-Umgebung und das müssen sie sich jetzt mal vorstellen, wie das funktionieren könnte, sondern dass wir sagen, okay, wir wissen, dass sie jetzt eben diesen Konfigurator für neue Autos haben und da ist halt hier das Frontend und da ist hier das Backend und da gibt es vielleicht diese und jene Module. Und dann ist das natürlich deutlich nachvollziehbarer für den Kunden, worum es da geht. Das Tool ganz nett ist aber eigentlich, dass es nicht spezifisch für AppDynamics ist. Also, wir haben es damals quasi ausgerollt, aber ich kriege heute immer mal wieder noch von irgendwelchen Leuten Nachrichten, die sagen, hey, wir haben das bei uns ausgerollt und finde ich ja total cool und es hilft uns total viel, um unsere was-was-immer-auch-Lösung zu verkaufen.",
+            "start": 286653,
+            "end": 398013,
+            "confidence": 0.7622341597796137,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Ich find das unglaublich schön. Ich krieg immer wieder Nachrichten. Bing! Bing! Ich find deinen Timing gut.",
+            "start": 399178,
+            "end": 405841,
+            "confidence": 0.6842941176470587,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Ja, das war Absicht. Das war Absicht.",
+            "start": 405942,
+            "end": 410664,
+            "confidence": 0.7004285714285715,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Aber dann kommen wir mal zum eigentlichen Thema, zu Observability.",
+            "start": 410704,
+            "end": 414326,
+            "confidence": 0.9059999999999999,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Und bevor es losgeht, ein kleiner Werbespot. AboutYou verkauft nicht nur Fashion, sondern verarbeitet auch Daten von 5 Millionen App- und Website-Usern pro Tag in 30 Ländern mit einem Volumen von mehreren Terabyte via Data-Pipelines in der Google Cloud. Für dieses Cloud-Plattform-Setup sucht AboutYou einen Lead DevOps- beziehungsweise einen Lead DataOps-Ingenieur. Zu den Aufgaben zählen unter anderem das Einführen einer Data Culture mit Prinzipien wie Data as Code und Data Ownership und die Unterstützung von Data Engineering Teams mit Tooling und Skalierungs-Know-How. Also wenn du Interesse hast, die über 250 Google Cloud Projekte und das Team weiterzuentwickeln, egal ob lokal in Hamburg oder voll remote aus ganz Deutschland mit einem attraktiven Gehaltspaket inklusive Aktienoptionen, besuche jetzt engineeringkiosk.dev slash about you. Alles zusammengeschrieben. oder klicke auf den Link in den Show Notes. Dort findest du die Details, die Gehaltsrange und auch andere Stellen, wie zum Beispiel einen Lead Platform Engineer mit Schwerpunkt AWS. Und weiter geht's mit der Folge.",
+            "start": 415847,
+            "end": 474990,
+            "confidence": 0.8034556962025314,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Aber dann kommen wir mal zum eigentlichen Thema, zu Observability. Und für mich, ich komme ja eher aus dieser System Print und Console Log und so weiter Zeit und das höchste der Gefühle war dann so die ganze Monitoring-Geschichte, dass man mal so angefangen hat irgendwie zu monitoren, irgendwas ist was live. Und mittlerweile liest man ja überall diese Schlagwort Observability. Wie würdest du denn Observability überhaupt definieren, auch im Hinblick auf Monitoring? Was ist das Ganze? Wofür braucht man das? Und was hat sich auch geändert gegenüber dem Monitoring von vor zehn Jahren?",
+            "start": 476513,
+            "end": 511919,
+            "confidence": 0.8667340425531921,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Also wie du sagst, man hört es ja überall und jeder ist ja gerade dabei, einfach das Wort Monitoring mit Observability zu ersetzen. leider mittlerweile auch so ein bisschen so einen Marketing-Buzzword-Touch. Ich habe letztens was gesehen, wo ich mir gedacht habe, das ist eigentlich ein super Beispiel, um den Unterschied zwischen Monitoring und Observability zu erklären. Also wenn man jetzt so das klassische Thema, wie funktioniert Monitoring? Also ich sitze in meinem Opsroom oder auch heutzutage ja zu Hause in meinem Laptop und habt ihr so ein schönes Dashboard und da sind ganz viele Metriken drauf und die sagen mir ja sag ich mal jetzt so im weitesten Sinne, ob mein System das macht, was es machen soll. Und da gibt es ja ganz viele von diesen Metriken, da weiß ich auch, wenn die sich nicht so verhalten, wie ich das möchte, was ich dann tun muss. Jetzt nehmen wir mal ein ganz triviales Beispiel. Ich messe, wie voll meine Festplatten sind in meinen Servern und dann sehe ich halt bei irgendeiner, okay, die ist jetzt zu 90 Prozent voll. Na ja gut, dann weiß ich halt, okay, ich muss halt vielleicht irgendeinen Prozess anstoßen, der die Festplatte reinigt. Oder jetzt mal angenommen, man ist eben noch in der alten Welt. Ich gehe halt einfach runter in den Keller, in den Data Center und stecke halt mal noch eine Festplatte mit dazu. Problem gelöst. Ja, also ich habe irgendwie diesen Zusammenhang zwischen hier ist meine Metrik und hier ist eine bekannte Lösung. Also ich habe ein bekanntes Problem. Das Einzige, was ich nicht weiß, wann es auftritt. Ja, also man spricht da ja dann im Englischen immer und auf den ganzen Seiten, wo es dann um Observability Monitoring geht und diese Noun, Unnouns und diese Unknown Unnouns. Und da kommen wir dann plötzlich zum Thema Observability. Blöd wäre das Ganze dann, wenn ich eine Metrik habe, sowas wie die Antwortszeit von meiner Checkout-Methode in meinem Webshop, um bei dem schönen Beispiel zu bleiben. ist super wichtig, damit verdiene ich ja meine Kohle. Wenn das Ding jetzt plötzlich durch die Decke geht, wenn das jetzt halt nicht mehr eineinhalb Sekunden dauert, sondern acht Sekunden, neun Sekunden und plötzlich die 400er und 500er Fehler zunehmen, dann kann ich Glück haben und den Zusammenhang vielleicht sogar wissen, weil ich vielleicht meine Software gut kenne und halt einfach weiß, okay, das und das ist das Problem. Aber sehr oft sitze ich ja dann erst mal davor und weiß gar nicht, was die Ursache ist. Und der Unterschied ist nun, wenn ich jetzt Observability habe, ist, dass ich sage, ich kann vielleicht diese Metrik sogar anklicken und sagen, okay, und jetzt gib mir mal für dieses Zeitfenster, für diese letzten 15 Minuten, wo diese Metrik durch die Decke gegangen ist, zusätzliche Informationen. Und da kommen wir dann plötzlich vor allem eben zum Thema Tracing, wo ich dann einfach sage, okay, ich kann dann plötzlich in meine Applikation reingucken, was die halt in dieser Zeit gemacht hat, um dann plötzlich viel, viel besser zu verstehen, was ist denn jetzt die Ursache von dem Problem? Und dann komme ich vielleicht darauf, okay, Mein Frontend-Service ruft irgendeinen anderen Service und der ruft eine Datenbank auf und in dieser Datenbank, was weiß ich auch immer, werden plötzlich viel zu viele Calls ausgeführt und deswegen habe ich so dieses, wie sagt man so schön auf Englisch, death by a thousand paper cuts. 1000 SQL-Queries, die halt jeder für sich genommen ganz langsam sind, aber die halt einfach das ganze Thema in die Knie zwingen. Oder was auch immer.",
+            "start": 512880,
+            "end": 689862,
+            "confidence": 0.7585993322203672,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Und diese Zusatzinformationen, die du jetzt erwähnt hast, das wären dann diese Informationen von der Datenbank? Also alle, die irgendwie mit der Metrik zusammenhängen? Wie komme ich zu den Zusatzinformationen, die da dranhängen? Oder wie hängt das an der Metrik dran?",
+            "start": 689922,
+            "end": 704353,
+            "confidence": 0.813951219512195,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Genau, also die Metrik sagt dir das ja nicht. Und jetzt auch vielleicht hast du auf deinem Dashboard sogar auch eine Metrik zur Datenbank, die sagt dir das aber auch nicht. Die sagt halt, naja, meine Queries sind halt alle ganz schnell. Aber was du halt eben hast, ja, und ich habe ja vorhin zum Beispiel von dieses Beispiel gebracht, von dieser Application Flow Map, wo du halt einfach siehst, dass Services ja miteinander sprechen und die ja dann miteinander verbunden sind und was mir ja dann eben eine Observability-Lösung ermöglicht. Und das gerade eben mit dem Tracing, dass ich sage, ich kann durch diese verschiedenen Schritte, die jetzt zum Beispiel eine Beispieltransaktion gebraucht hat, durchgehen und gucken, okay, wo tritt denn hier ein Fehler oder wo tritt denn hier eine Langsamkeit auf. Das heißt, ich kann halt von dieser Metrik, die mir ja eigentlich nur ein Aggregat ist, eine Zusammenfassung, Beispiele rauspicken, Und einfach sagen, okay, was ist denn jetzt hier genau passiert? Was hat denn mein Code jetzt genau gemacht? Also welche Methoden wurden da mit welcher Laufzeit ausgeführt und so weiter und so fort. Also ich kann diese Daten mir zuschneiden. Ich kann halt verschiedene Fragen stellen. Ich kann beobachten, was meine Software macht.",
+            "start": 704893,
+            "end": 772618,
+            "confidence": 0.7942173913043472,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Und Observability heißt dann im Prinzip, dass ich die Möglichkeit habe, solche Drilldown-Funktionalität überhaupt anzuwenden, also dass ich da reinzoomen kann. Das ist eigentlich die Observability.",
+            "start": 773198,
+            "end": 784806,
+            "confidence": 0.8406923076923077,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Das wäre für mich so der klare Unterschied zwischen dem Monitoring und dem Observability. Monitoring gibt mir halt diese statischen Informationen und da muss ich halt selber wissen, was der Zusammenhang ist und Observability gibt mir halt diesen Drilldown und kann mir halt helfen, dieses warum hinter eben so einem unbekannten problem zu verstehen wenn ich.",
+            "start": 785326,
+            "end": 804379,
+            "confidence": 0.8143928571428569,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Jetzt ganz stümperhaft an die thematik rangehe Wäre es nicht auch schon Observability, wenn ich an jede zweite oder dritte Codezeile eine Logline in die Datenbank speichere oder ähnliches? Oder auf die Festplatte male? Also, ich meine, im Endeffekt habe ich ja dann wirklich so alle zwei, drei Codezeilen mache ich ein System.out.println. Step 4, Step 5, Step 6. Ich mein, dann hab ich ja auch den Execution Pass, und dann kann ich mir das ja auch aufrufen. Ist das nicht schon Observability ganz schlimperhaft?",
+            "start": 804419,
+            "end": 837866,
+            "confidence": 0.7835647058823528,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Ja, könnte man wahrscheinlich sagen. Also, ich würde gern Nein sagen, aber irgendwie ja, ja? Also, ich mein, wenn du ... Ja, wir müssen da ja dann sicherlich in jedem Moment drüber reden, was Tracing ja ist. Also heißt es zu Deutsch Spuren. Ja, also ich habe Spuren, die mein Code hinterlässt. Und klar, also ich meine, wenn ich erst mal ganz naiv an das Thema rangehe, dann ist ja genau das, was ich sage, wo ich sage, naja, ich sage, Okay, Function Begin, Function End und schreibt es dann immer hin und schreibt es dann natürlich raus. Der Teil, der natürlich dann, sag ich mal, das Ganze viel, viel schwieriger macht, ist natürlich, wenn ich jetzt nicht einen Monolithen, sondern eine Microservice-Umgebung habe, wo ich ja dann natürlich sagen muss, okay, wie kriege ich jetzt diese Unmengen an Loglines, die ich jetzt in der einen Applikation gedruckt habe und die ich in der anderen Applikation gedruckt habe, wo ist denn da der Zusammenhang? Und da muss ich ja dann mit so einem Thema wie Korrelation und sowas anfangen. Und auch da gibt es ja, also man muss ja immer sagen, Observability ist ja nicht in einem Vakuum entstanden. Ja, also das kenne ich auch einige Leute, die tun immer gerne so, als wäre Monitoring so und Observability, da gibt es, das eine ist plötzlich aus dem Nichts entstanden und viel, viel besser, sondern wenn man überlegt, jeder von uns ist schon mal hergegangen und hat auch so, ja, ich habe mit Loglines meinen Code dokumentiert, dann habe ich irgendwann gedacht, naja, ich hänge mal so eine Correlation-ID rein und dann, kann ich da noch besser also das das ganze ist ja ist ja schön schön auch sage ich mal von von vielen geistern zusammengeführt worden und.",
+            "start": 839027,
+            "end": 928415,
+            "confidence": 0.7763636363636363,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Du hast gerade du hast gerade ein schönes beispiel genannt und dieses beispiel das kenne ich wirklich aus meinem vorherigen job wir hatten log lines und wir hatten sogenannte such ids Mit dieser Such-ID bin ich dann in acht verschiedene Systeme gegangen und konnte dann in der Microservice-Architektur sowas verbinden und das war zeitaufwendig, würde ich es mal nett beschreiben, zeitaufwendig. Du hattest gerade schon von diesen Spuren gesprochen, von Tracing und ist Observability nur Tracing oder? gehören da noch andere Signale hinzu?",
+            "start": 928435,
+            "end": 958664,
+            "confidence": 0.786843373493976,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Also am Ende, ich habe es ja gerade auch irgendwie versucht, das ist relativ schwierig, aber am Ende ist natürlich Observability jetzt ja erst mal ein theoretisches Konstrukt, wo ich einfach sage, okay, ich möchte meine Software beobachtbarer machen. Also man hat sich ja diesen Begriff auch aus der Physik, glaube ich, ausgeliehen, aus dieser Kontrolltheorie oder irgendwie sowas, wo man sagt, okay, Observability ist die Eigenschaft von dem System, wie gut kann ich quasi aus den Outputs, die dieses System hier gibt, rausfinden, was intern in diesem System passiert. Also das hat man sicher da irgendwo gelebt. Und da sagt ja noch keiner was über Traces oder Logs oder Metrics. Aber die Realität ist ja natürlich zum einen, dass wir ja heute viele dieser Microservices haben. Das heißt, ich brauche irgendwas, was mir eben nicht nur, sag ich mal, Informationen über ein System, sondern auch über mehrere Systeme gibt. Und auch wenn ich jetzt so einen klassischen Monolithen habe, Tracing ist ja, sag ich mal, dann in dem Fall ja auch ein bisschen eine, wie soll man sagen, strukturierte Herangehensweise an dieses, ich schreibe da jetzt eine Logline für jeden Methodenaufruf, sondern Also ein Trace setzt sich ja zusammen aus sogenannten Spans, also Zeitspannen, wo ich halt einfach sag, hier beginnt was, hier endet was. Und dann kann ich da eine Hierarchie machen und quasi ein Span kann den Sub-Span, kann den Sub-Sub-Span haben. Und dann kann ich halt schön diese Wasserfalldiagramme machen und sehen, was in meinem Code passiert. Deswegen, um auf die Frage zurückzukommen, ja, Observability und Tracing hängt deswegen am Ende sehr, sehr nah beieinander, ja. Und werden dann natürlich immer in einem Zusammenhang genannt.",
+            "start": 958924,
+            "end": 1049506,
+            "confidence": 0.7689928315412188,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Jetzt bist du ja auch, haben wir ja schon erwähnt, Co-Maintainer von SICK Communications, also von dieser ganzen Dokumentation von OpenTelemetry. Jetzt mal die grundsätzliche Frage, was ist denn OpenTelemetry eigentlich? Also alle, die uns regelmäßig zuhören, wissen ja, dass wir ungern irgendwelche Produkte vorstellen oder Produkte besprechen. Es ist also schon mal kein Produkt. Aber was ist denn das Ganze und warum macht denn das Sinn?",
+            "start": 1050108,
+            "end": 1074981,
+            "confidence": 0.8388805970149253,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Also Open Telemetry ist im Prinzip ein offener Standard, der oder den man, den ein Entwickler, den eine Entwicklerin hernehmen kann, um quasi diese Observability für seinen eigenen Code zu bekommen. Indem dann eben dieser Code anfängt, Logs, klassisch, aber eben auch Metriken und vor allem eben auch Spans und Traces, sag ich mal, zu schicken. Wie macht Open Telemetry das? Es gibt quasi eine API, die ich als Entwickler in meinen Code dann eben einweben kann, also man spricht dann immer von Instrumentierung, also ich instrumentiere meinen Code, dass ich halt einfach eben sag, okay, hier beginnt ein Span, eben hier endet ein Span, hier möchte ich eine Metrik hoch und runter zählen, ja, und dafür gibt es eben eine API, die ist standardisiert, auch über Sprachgrenzen hinweg, ja, also da gibt es erstmal ein Papier, eine Specification, wo steht, okay, so machst du einen Span, so machst du eine Metrik, so machst du eine Logline, so annotierst du die, und so weiter und so fort. Das ist, sag ich mal, die Open Telemetry API. Und was für den Entwickler erstmal ganz cool ist, weil ich das ja so alles in meinen Code dann mit einweben kann, und was es dann, sag ich mal, noch dazu gibt, ist dann so Dinge wie einen sogenannten Open Telemetry Collector, weil diese Daten, die ich ja in meiner Applikation sammle, die müssen ja irgendwo hingeschickt werden, ja, und dieser Open Telemetry Collector kann halt dann diese Daten verarbeiten und kann die dann halt in so ein Observability-Backend eben schicken, wo ich dann oder eine Ops-Person aus diesen Daten schlau werden kann. Dieser letzte Teil ist aber explizit nicht Teil von OpenTelemetry. Also OpenTelemetry kümmert sich wirklich nur um so diesen Teil. Hier, ich habe ein Stück Software, ich generiere da meine Telemetrie. Ich schicke die dann eben, sag ich mal, auf eine lange Reise. Also es gibt mittlerweile den Begriff der Observability-Pipelines, wo dann so ganz viele Komponenten hast. Und das Protokoll ist eben, es gibt ein OpenTelemetry-Protokoll und darum kümmert sich im Prinzip dieser Standard.",
+            "start": 1075241,
+            "end": 1196818,
+            "confidence": 0.7790697674418606,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Also du hast jetzt gesagt, was man da für Vorteile hat, aber da würde ich jetzt ja auch argumentieren, okay, wenn ich jetzt Dynatrace, AppDynamics, wo du mal gearbeitet hast, Datadog, Sentry, keine Ahnung, die bieten mir das ja auch alle an, die machen das ja auch mit mehreren Sprachen, deren Agents kann ich integrieren, funktioniert das genauso. Also warum brauche ich jetzt irgendwie ein Standard oder was Neues in der Welt, funktioniert das schon?",
+            "start": 1197098,
+            "end": 1222065,
+            "confidence": 0.7701066666666668,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Bevor ich sage, warum du es nicht brauchst. Erstmal natürlich, wenn du das hast und wenn das für dich gut funktioniert. Und ich sage das jetzt nicht nur, weil ich lange bei einem dieser Anbieter gearbeitet habe. Es gilt ja auch für die anderen Anbieter. dann ist es auch gut dabei zu bleiben. Also ich meine, es löste oft ähnliche und gleiche Probleme. Was das Gute an dem Standard ist, ist zum einen, wie du gesagt hast, so ein Hersteller hat Agenten für bestimmte Sprachen. Das ist dann so klassisch java.net und so ein paar andere. Aber dann hört es natürlich auf. Also da gibt es dann viele andere Sprachen. Nehmen wir jetzt zum Beispiel mal Rust. Weiß ich jetzt nicht viele APM Hersteller, die das irgendwie unterstützen oder da irgendwas im Angebot haben. Das andere ist natürlich, was ist, wenn ich eine Software quasi mir ins Haus hole und die eben jetzt, wenn sie mit Java geschrieben ist, wie schon gesagt, habe ich vielleicht eine Möglichkeit, aber die ist jetzt in Go geschrieben und ich möchte aber von der auch Observability-Daten haben. Das kann ich dann natürlich nicht einbauen, ja? Sogar ein Open-Source-Projekt. Ich kann ja nicht zu einem Open-Source-Projekt hingehen und sagen, hey, baut mal AppDynamics, baut mal Dynatrace, baut mal Datadog in euren Code ein. An die kann ich aber herangehen und sagen, baut ein OpenTelemetry. Und das ist ja zum Beispiel etwas, was gerade massiv passiert. Also wir haben eine Liste von über 20 Projekten, die alle OpenTelemetry unterstützen. Vorneweg Kubernetes, der API-Server. der jetzt OpenTelemetry zur Verfügung stellt. Es gibt ein Matlab-Plugin, wo ich sage, ich kann in Matlab OpenTelemetry hernehmen. MySQL, die haben ein leider nicht öffentlich zugängliches Feature, wo du Tracing in der Datenbank machen kannst. Das sind ja alles Dinge, die kann ich mit einer APM-Lösung nur sehr, sehr schwer abbilden, weil ich ja genau diesen, wie es immer so schön heißt, Vendor-Login habe, wo ich sage, na ja, wir haben halt als kommerzieller Anbieter eine gewisse Menge an Engineers, und die können halt so und so viele Agenten, so und so viele Sprachen und Features unterstützen, aber alles andere, was da draußen ist, das können wir gar nicht machen. Das heißt so dieses, okay, das kann überall verwendet werden, ist ein ganz, ganz großes Thema. Und ein anderes Thema ist natürlich, was man auch so schön neudeutsch sagt, die Commodity, also das man sagt Open Telemetry, ist ja viel, viel zugänglicher auch für kleine Unternehmen. Ja, oder für Open-Source-Projekte eben auch, oder für vielleicht Leute, die sagen, okay, ich habe gar kein Interesse, mir eine kommerzielle Lösung in mein Haus zu holen, weil mein Budget dafür gar nicht da ist, etc. Also einige dieser APM-Lösungen sind ja auch nicht günstig.",
+            "start": 1222105,
+            "end": 1370897,
+            "confidence": 0.7911764705882349,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Heißt das auch, es dreht sich so ein bisschen um, weil wenn ich jetzt an, sorry, dass ich jetzt Datadog wieder erwähne, eigentlich sollte man ja nicht so viele Produkte nennen, aber die APMs, wie du es immer auch nennst, oder diese Plattformen, die entwickeln ja ihre Agenten selbst. Und mit einem offenen Standard können dann aber die Produkte an sich, wie eine MySQL oder ein MATLAB, wenn man unbedingt will, bin ich übrigens sehr interessiert, wer MATLAB in Production irgendwo verwendet, aber okay. dass sich das irgendwie umdreht und dann die Produkte das eben einmal implementieren und dadurch dann mehrfach zugänglich machen können, im Gegensatz dazu, dass es eben die APM-Plattform von sich aus implementieren muss und natürlich nie die Kapazität hat, das für alle Produkte da draußen zu machen.",
+            "start": 1371717,
+            "end": 1414637,
+            "confidence": 0.7815648854961831,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Das ist ja genau das, was auch interessanterweise passiert. Wie bin ich zu OpenTelemetry gekommen? Ich habe bei AppDynamics gearbeitet. Ich hatte so ein bisschen das Steckenpferd für die, sag ich mal, eher dynamischen Programmiersprachen Python, PHP, Node.js. Und da kam halt dann auch immer wieder das Thema auf, wo man einfach sagt, okay, wie können wir die langfristig gut unterstützen? Man hat dann halt irgendwann gemerkt, okay, ein offener Standard, der ja dann quasi Open Tracing, Open Sensors, die ja dann zu Open Telemetry sich verschmelzen haben, ist dann mehr und mehr aufgekommen, wo dann immer mehr eben dieses Thema aufkam, zu sagen, okay, warum nicht auf das Pferd setzen, ja, warum nicht sagen, okay, wir beschäftigen uns weniger, wie du sagst, mit der Instrumentierung und gehen einfach irgendwann davon aus, dass die Software das eingebaut hat und verschieben unseren Fokus dann viel mehr auf dieses Thema, Wie analysieren wir jetzt diese Daten? Wie geben wir unseren Kunden dann auch bestmöglichste Informationen über ihre Umgebungen, ihren ganzen Software-Stack? Und das ist was, was man halt jetzt im Moment sieht. Und ich denke, das ist so ein bisschen so dieser Wandel, den alle eben RPM-Anbieter durchlaufen, gerade eben zum Thema Observability hin. Ich muss halt einfach sagen, okay, wir gehen Schritt für Schritt weg von diesen proprietären Agenten oder Lösungen hin zu einer Open-Source-Lösung, die dann plötzlich uns aber auch Zugang in ganz andere Bereiche bringt. Im Moment wird zum Beispiel auch CICD-Telemetry besprochen. Wie können wir Open Telemetry in unser GitLab, in unser Jenkins einbauen? Und dann da auch eine Überwachung reinmachen. Und dann plötzlich... ist zum Beispiel, was wir gern sagen, oder was aus dem Cisco und AppDynamics-Universe kommt, aber die anderen auch immer mal wieder hernehmen, diesen Begriff Full-Stack-Observability, wo du halt einfach sagst, okay, es geht ja nicht mehr nur darum, um meine Applikation zu überwachen, eben Application Performance Monitoring, sondern halt wirklich den ganzen Stack, wo ich auch sag, okay, wie kann ich dann plötzlich eben meinen Container, meine Container-Orchestration, etc., etc. verstehen. Und es bläht sich damit natürlich auf, Da kommen wir wieder dahin zurück, die Anbieter dieser verschiedenen Lösungen haben dann natürlich ein großes Interesse daran zu sagen, okay, wir müssen uns eigentlich weniger mit dieser Instrumentierung, weniger damit rumschlagen, jetzt die neueste Version von Spring Boot zu unterstützen, sondern wir können uns halt viel mehr darauf konzentrieren, Mehrwert im Backend zu erschaffen.",
+            "start": 1415298,
+            "end": 1563285,
+            "confidence": 0.8176600000000004,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Aber ist das nicht auch ein Problem für die ganzen EPM-Anbieter, dass die dann den Lock-In-Effekt verlieren? Weil wenn ich jetzt deren Agents nicht mehr verwende, dann kann ich ja auch relativ schnell auf eine andere Lösung switchen.",
+            "start": 1563904,
+            "end": 1575898,
+            "confidence": 0.7820789473684211,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Auf der einen Seite ja, klar. Und ein spannender Teil, den natürlich OpenTelemetry hat, ich muss ja noch nicht mehr switchen. Ich kann ja auch mehrere Lösungen gleichzeitig verwenden. Also das ist ein, sag ich mal, ganz spannendes Feature, gerade vom Open Telemetry Protokoll und auch vom Open Telemetry Collector, dass ich sagen kann, ich kann diese Daten jetzt in verschiedene Backends schicken. Ist natürlich dann auch spannend, wenn ich sage, okay, ich will vielleicht diese Daten nicht nur für Observability, sondern für auch was anderes hier nehmen. Aber es wird natürlich auch dafür hergenommen, um zu sagen, okay, Ich teste jetzt verschiedene Anbieter aus und gucke halt einfach, welcher passt, sag ich mal, zu mir besser oder ich tausche den aus. Ich denke, um auf die Frage zurückzukommen, ist das eine Bedrohung für diese Anbieter? Ich denke, ein Thema muss man natürlich sehen. Das wird noch dauern. Das ist jetzt zumindest meine Perspektive auf die Dinge, wenn ich mir so verschiedene APM-Agenten anschaue. Die können natürlich noch wahnsinnig viele Dinge, die eine Open-Telemetry-Lösung Stand heute noch nicht kann. Da können wir auch noch tiefer drauf kommen.",
+            "start": 1575938,
+            "end": 1635968,
+            "confidence": 0.7809411764705886,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Was wäre das gerade als ein Beispiel?",
+            "start": 1635988,
+            "end": 1637349,
+            "confidence": 0.6021428571428572,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Naja, zum Beispiel, es gibt die Möglichkeit, jetzt, ich kann da natürlich immer am besten über die AppDynamics-Agenten sprechen, aber ein Thema ist zum Beispiel, dass ich meinen Agenten remote konfigurieren kann, ja, dass ich dem remote sagen kann, hey, ich möchte meine Instrumentierung verändern, ich möchte zusätzliche Daten sammeln, sonst was.",
+            "start": 1637809,
+            "end": 1653884,
+            "confidence": 0.8101346153846154,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Dass man zum Beispiel das Detail-Level nach oben schraubt und mehr Daten sammelt, dynamisch.",
+            "start": 1654458,
+            "end": 1659139,
+            "confidence": 0.7987857142857143,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Und da gibt es in Open Telemetry auch ein sogenanntes Op-Amp, also Open Agent Management Protocol. Es gibt eine Bewegung, das auch zu ermöglichen, aber das steckt halt noch so richtig in den Kinderschuhen. Das heißt, da wird es einfach noch dauern, wie lange auch immer, um da auch an den Punkt hinzukommen. Und was natürlich die verschiedenen Anbieter gleichzeitig machen, ist natürlich Differenzierung on top auf dann eben den offenen Standard obendrauf. Also wie man es ja in jedem anderen offenen Standard auch hat, zu sagen, okay, wir können halt jetzt nicht nur das, was Open Telemetry, sag ich mal, als offener Standard hat, sondern wir haben noch bestimmte Features obendrauf. Meine Hoffnung natürlich, ich meine, da habe ich dann immer zwei Hüte auf, dass dann die Anbieter irgendwann hergehen und merken, okay, wir geben das dann irgendwann doch wieder in die Open-Source-Community zurück, weil der Wettbewerbsvorteil natürlich über die Zeit geringer wird. Aber ich denke, dahin werden wir uns bewegen. Also, um jetzt mal über die Zukunft zu sprechen, was ja immer gefährlich ist.",
+            "start": 1659960,
+            "end": 1722511,
+            "confidence": 0.8015170454545454,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Ich zerstöre mal ganz kurz deine Glaskugel, dann kommen wir wieder zur Gegenwart. Du hattest auch schon von Open Telemetry als offener Standard gesprochen. Und immer, wenn ich Standards höre, das Wort, erinnert mich das an diesen XKCD-Comic, oh, wir haben 19 Competing Standards, wir müssen den 20. machen, der alles vereint. Und du hattest auch schon erwähnt, dass ein Projekt namens Open Tracing in OpenTelemetry aufgegangen ist. Meine Frage ist eigentlich so, auch weil du grad die ganzen großen Vendoren AppDynamics und Dynatracing usw. erwähnt hast, was macht OpenTelemetry selbst? eigentlich anders, warum das jetzt das Pferd ist, auf das wir alle festen sollten. Ich mein, du hattest auch grad explizit beschrieben, es gibt Kollektoren, die senden dann die Daten nirgendwo hin, aber das Storage-Backend, das ist außerhalb des Bereiches von Open Telemetry. Wie bringt Open Telemetry als Standard alle Leute zusammen und hält die auch im Rahmen, dass es keine eierlegende Wollmichsau wird?",
+            "start": 1722551,
+            "end": 1779374,
+            "confidence": 0.7738903225806447,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Das sind jetzt im Prinzip zwei Fragen. Das eine ist eher so, okay, warum Open Telemetry Irgendwas anderes. Und dann ja auch so die Frage, okay, wie passt man da natürlich auch auf, wie soll man sagen, nicht über seine ursprüngliche Idee und Vision hinaus zu wachsen. Was, sag ich mal, Open Telemetry ja ausmacht, also du hast ja eben Open Tracing und Open Census erwähnt und ja auch diesen XKCD-Comic. Open Tracing und Open Census sind ja zu Open Telemetry verschmolzen. Das heißt, diese beiden Standards gibt es nicht mehr. Das heißt, wir haben ein Minus 2 plus 1, also von daher sind wir ganz gut dabei. Aber natürlich ist das eine spannende Frage, weil OpenTelemetry ist natürlich nicht der erste Versuch, da irgendwas in der Art und Weise zu standardisieren. Was aber OpenTelemetry natürlich Einen gewissen Vorteil gibt es an zwei Dinge. Das eine ist, und ihr habt es ja schon so ein bisschen, oder ich habe es ja auch schon so ein bisschen erwähnt, die verschiedenen Anbieter, ja, also sei es eben eine Appdynamics, sei es eine Dynatrace, eine Datadog, eine Honeycomb, eine Cygnos. Also ich glaube, das sind, wir führen ja eine Liste, ich glaube, das sind 40 oder 50 verschiedene Anbieter gibt es mittlerweile, die sagen, ja, wir setzen auf Open Telemetry. Und viele von denen sind eben auch in der Community vertreten. inklusive auch Google, Amazon, Microsoft, die das Ganze von einer Cloud-Perspektive betreiben. Also die gar nicht sagen, ja, die haben alle natürlich auch mittlerweile ihre Lösungen zu dem Thema, aber für die kommt es auch daher. Das heißt, du hast erstmal einen riesen Industrie-Support. Und das andere ist, dass man dann gesagt hat, Moment mal, dieses Open Telemetry, das ist jetzt eben nicht Open Telemetry by Vendor Name, Ja, und ich meine, wir kennen ja genug Open-Source-Projekte, wo es dann irgendwann hieß, ach wisst ihr was, wir ändern jetzt mal die Lizenz. Das Ganze wurde an die Cloud-Native-Foundation, sag ich mal, übergeben. Ja, und OpenTelemetry ist ein CNCF-Project. Das heißt, damit ist auch sichergestellt, dass es eben dieser offene Standard bleibt. Und das sind, glaube ich, so zwei ganz große Faktoren, die OpenTelemetry unterstützen, einfach erfolgreich zu sein als Standard gegenüber anderen Standards, ja. Gleichzeitig versucht man aber auch, mit diesen anderen Standards eine gewisse Menge an Interoperabilität zu erzeugen. Es gibt viele Gespräche zwischen Leuten von Prometheus und OpenTelemetry. Das war gerade, wo das Thema Metriken bei OpenTelemetry aufkam, natürlich so ein Thema, wo man sagt, die sind ja auch ein CNCF-Projekt, die sind, auch viele Leute von denen sind irgendwie, sag ich mal, in unserer Bubble mit drin. Und dann gibt es ja Open Metrics, und da gibt es dann halt verschiedene Möglichkeiten, da auch, sag ich mal, Kompatibilität zu erzeugen. Die andere Sache ist halt, und da komme ich dann vielleicht auch so ein bisschen zu der eierlegenden Wollmilchsau, man hat halt eine Spezifikation. Also man sagt halt einfach, okay, das macht Open Telemetry, und das macht Open Telemetry nicht. Also es gibt dann halt ganz viele Dinge, die da halt nicht dazu gehören, wie eben zu sagen, okay, wir stellen auch ein Standard Backend zur Verfügung oder so müsst ihr Alerting machen oder es gab zum Beispiel mal die Anfrage an OpenTelemetry, hey, jetzt wo es standardisierte Daten gibt, wollt ihr nicht auch eine standardisierte Telemetry Query Language machen? Und dann wurde ganz klar gesagt, nee, das ist einfach nicht Teil unserer Mission und Vision. Macht da doch ein eigenes Projekt. Wir unterstützen euch gern. Ja, wir können da auch quasi so ungefähr das machen. Aber OpenTelemetry, der Fokus ist eben dieses, wir wollen, dass eure Software Telemetrie erzeugt, die einfach, universal, vendorneutral, nicht gekoppelt ist, die eingebaut ist. Und das habe ich gerade alles gelesen. Das ist unsere Vision und das wollen wir. Und was da halt nicht drin liegt, ist im Prinzip Bandwan-Problem oder andere Open-Source-Projekte.",
+            "start": 1779654,
+            "end": 1995727,
+            "confidence": 0.7764415384615385,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Also es fokussiert sich nur auf den Sendenbereich, also auf die Daten zu senden, zu instrumentalisieren in der Software und die Daten zu bekommen, aber nicht zu speichern, zu querieren. Alles, was dahinter steckt, ist nicht im Standard und wird auch nicht im Standard sein.",
+            "start": 1995747,
+            "end": 2011537,
+            "confidence": 0.8751111111111108,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Genau. Also ich meine, diese Bereiche sind natürlich nie überlappungsfrei. Aber es ist schon so, dass du sagst, okay, in dem Moment, wo Daten quasi, sagen wir, spätestens den Open Telemetry Collector verlassen und in eine, was auch immer geartete Observability-Lösung, Datenbank, reinfließen, ist das nicht mehr unser Problem. Was aber Open Telemetry da zum Beispiel zur Verfügung stellt, und das finde ich selber ein wahnsinnig spannendes Thema, aber gleichzeitig auch eines der allerschwierigsten Themen der Spezifikation, sind die sogenannten Semantic Conventions. Also, dass du halt einfach sagst, wir geben dir nicht nur eine Syntax und eine API und wie halt diese ganzen Dinge zusammengehören, sondern auch wie deine Telemetrie benannt werden soll. Was meine ich damit? Wenn ich jetzt einen HTTP-Request mache, dann hat der ja eine URL, eine Methode, Headers, kriegt einen Response-Code, etc., etc. Jetzt ist ja die Frage, wie nenne ich das Ding dann in meinem Backend? Heißt das dann HTTP.method, HTTP.verb, oder ist da kein Dot, sondern ein Underscore? Und was können denn da eigentlich die Werte sein, die da hinten rauskommen? Das heißt, man versucht auch bis zu einem gewissen Grad, diese Semantik zu standardisieren und zu sagen, okay, wenn diese Daten dann in deinem wie auch immer gelagerten Backend liegen, dann haben die auch eine erwartbare Semantik. Und das ist dann gerade, und da bin ich dann auch nicht mehr der Experte, aber ich glaube, das ist sehr, sehr spannend, dann für diese ganzen Leute, die Data Analytics und Data Engineering und sonst was machen, zu sagen, okay, wir haben da eine gewisse Menge an Erwartbarkeit. Also, wie schon gesagt, das ist ein total schwieriges Thema und ich Da bin ich mir froh, dass ich mich vor allem um die Dokumentation und nicht darum kümmer. Aber als jemand, der ja lang RPM-Lösungen verkauft hat und eben immer mal wieder auch an diese Situation gekommen ist, dass man dann gemerkt hat, okay, da sind halt Dinge doch nicht gleich benannt, bin ich da ganz großer Fan davon.",
+            "start": 2011877,
+            "end": 2117701,
+            "confidence": 0.7708678678678675,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Ich glaube, eine gemeinsame Semantik oder beziehungsweise auf dem einfachsten Level ein gemeinsames Wording hilft ungemein. Und ich meine, im Endeffekt berührt dich das natürlich bei der Maintenance von der Dokumentation ja auch. Also ich meine, du sorgst natürlich auch dafür, dass das Wording hoffentlich überall gleich ist.",
+            "start": 2118423,
+            "end": 2136138,
+            "confidence": 0.8040208333333334,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Ja, wir haben da auch viel zu viele Diskussionen über Wordings. Also das ist dann sicherlich Teil des Ganzen, ja.",
+            "start": 2136178,
+            "end": 2142463,
+            "confidence": 0.7370500000000001,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Jetzt kann ich mir vorstellen, dass, wenn wir über die Signale in Observability und auch in Telemetrie ein bisschen sprechen, über Metrics, wie viel Memory braucht eigentlich mein Prozess, über Loglines, oh, ich bin jetzt gestartet oder ich bin jetzt gecrashed, und über Traces, Die verschiedenen Signale haben natürlich eine andere Relevanz auf der einen Seite für Entwickler und auf der anderen Seite auch nur für Operations. Ich kann mir gut vorstellen, dass Entwickler sehr an Metriken interessiert sind und auch sehr an den Traces. Und aus dem ganz klassischen Ops, nenn ich's mal, die machen erst mal System D oder Journal CTL, gib mir mal meine Logs oder Cube CTL, Show Logs oder wie das auch immer heißt. Die schauen sich in der Regel nur die Logs an. Siehst du auch, zum Beispiel in deiner täglichen Arbeit und in der Community, dass sich mehr Ops-Leute auf, ich sag mal, das Tracing stürzen und dort auch mehr Informationen rausziehen? Weil im Endeffekt, das ist ja, ich sag mal, Quote an Quote, der klassische Betrieb. Ja, der klassische Betrieb, sofern es keine Skriptsprache ist, wie Python oder PHP, wird ja, zumindest früher, nichts am Code ändern.",
+            "start": 2143258,
+            "end": 2210469,
+            "confidence": 0.7958256410256409,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Es ist definitiv ein spannendes Thema, dass, wenn du mit jemandem sprichst, der ... aus der Entwicklerschiene kommt und auf OpenTelemetry guckt und jemand, der aus der Ops-Schiene kommt und der auf OpenTelemetry guckt, die manchmal eine ganz andere Wahrnehmung haben, weil sie auch unterschiedliche Mehrwerte bekommen. Also wir sind auch irgendwann mal in der Dokumentation hergegangen und ich weiß nicht, ob es so eine gute Idee war, aber ich hoffe doch, dass wir versuchen, zwei Einstiege, sag ich mal, anzubieten. Also einen Einstieg für Operations und einen Einstieg für für Dev, wo wir halt einfach sagen, okay, wenn du Operations hast, dann ist, das hat mal jemand so schön zu mir gesagt, dann ist es ja im Prinzip so, da kommt so ein Entwickler, der wirft Code über den Zaun, ja, und du musst es dann halt deployen und laufen lassen. Also so ist ja, klar, wir haben heute DevOps und SRE und da funktioniert das hoffentlich alles ganz anders, aber das ist ja so irgendwie so die klassische Trennung davon. Und da ist ja das Schöne, wenn du jetzt eine RPM-Lösung hast, da kann ich ja schön mal in den Agenten reinqueren, quetschen und der drückt mir dann quasi die Telemetrie aus der Applikation raus und dann kann ich als Ops mir das rausholen, was ich haben möchte. Und sowas bietet Open Telemetry auch an, also eine sogenannte Automatic Instrumentation, wo ich sage, ich habe eine Applikation, die hat gar keine Telemetrie und da kann ich eben was einbauen, also was Externes, was mir diese Telemetrie erzeugt. Da gibt es sogar einen Operator für Kubernetes, der dann halt hergeht und das auf all meinen Applikationen macht, die da halt in dem Cluster rennen und dann es wäre Licht. Ich sehe halt dann im Prinzip, wie die alle miteinander interagieren. Ob jetzt eine Ops-Person mehr am Tracing oder an Metric, also ob die sich für ein bestimmtes Signal mehr interessieren, kann ich nicht mal sagen. Ich meine, ich bin jetzt keine Ops-Person in dem Sinne und auch kein Entwickler, wenn man ganz ehrlich ist. Aber meine Vorstellung ist natürlich schon die, dass du sagst, naja, natürlich gucke ich erst mal auf die Metriken, wie ich sie am Anfang erklärt habe, und dann tauche ich immer tiefer ein. Und irgendwo gibt es ja dann den Hand-off. Irgendwo gibt es ja dann den Punkt, wo ich sage, okay, hier irgendwo in diesem Microservice, in dem Modul muss da irgendwie das Problem stattfinden, hier lieber Entwickler. machen wir da weiter. Von daher wird der Ops wahrscheinlich eher so Metriken und dann Traces gehen, während der Entwickler ja hoffentlich dann, um dann die Seite zu wechseln, von dem ja dann die Traces bekommt, die ja vielleicht für ihn hilfreich sind. Und um darauf wieder eben zurückzukommen, dem Entwickler geben wir dann aber eher an die Hand, zu sagen, okay, die sogenannte manuelle Instrumentierung, wo wir sagen, okay, passt deinen Code entsprechend an, um quasi Telemetrie zu erzeugen, ja. Und die Realität liegt dann halt natürlich irgendwo in der Mitte. Also man kann die beiden auch netterweise bei den meisten Sprachen zumindest kombinieren, um dann eben, ja, am Ende DevOps zu ermöglichen, ja. Also ich meine, das ist ja eigentlich genau das Schöne. Man hat dann plötzlich eine Sprache, um miteinander zu sprechen.",
+            "start": 2210729,
+            "end": 2378041,
+            "confidence": 0.7626557377049181,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Meine Theorie wäre ja, dass Ops sowieso eigentlich nicht mehr so existiert oder hoffentlich bald nicht mehr so existiert und dass das sowieso alles sehr verschwimmt und eine gemeinsame Rolle wird. Und dass das eigentlich nicht mehr so diese Mauer ist, wo man eben irgendwas drüber wirft, sei es jetzt eine Logline oder ein Ticket oder ein Employment Job oder was auch immer.",
+            "start": 2378556,
+            "end": 2397216,
+            "confidence": 0.7342222222222224,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Du bist aber auch sehr in deiner Bubble, ne?",
+            "start": 2397236,
+            "end": 2398918,
+            "confidence": 0.349,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Natürlich, ich bin ja immer am Happy Path, wie du das öfteren feststellst, aber das ist so meine Zukunftsvision. Es sollte ja eigentlich schon so sein, dass es in der Realität anders ist, sei mal dahingestellt. Aber was du selber schon gesagt hast, die Tools, die ihr den Entwicklern an die Hand legt oder an die Hand gibt, an die Hand, schwieriges Wort, egal, die ihr zur Verfügung stellt. Für mich jetzt als Entwickler oder für jeden anderen Entwickler, Entwicklerin, wenn man da losstarten will und jetzt instrumentalisieren will in seiner Software, wie geht man das Ganze an? Was muss man da machen? Wie schwierig ist das? Was gibt es für Tools? Wie kann ich denn da überhaupt losstarten und wie komplex ist das Ganze? Das hört sich ja jetzt mal schon sehr komplex an. Ich muss da irgendeinen Standard implementieren und muss da vielleicht irgendwas anpassen, muss den ganzen Standard zuerst verstehen. Also wie starte ich da einfach mal los als Entwickler?",
+            "start": 2399318,
+            "end": 2453111,
+            "confidence": 0.7907975460122698,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Also die Hoffnung ist ja natürlich, dass du als Entwickler den Standard nicht verstehen musst, sondern dass ja quasi die, die dann in der spezifischen Sprache OpenTelemetry implementieren, sich darum kümmern. Also du machst ja am Ende auch nur API-Aufrufe und sagst dann halt, okay, ich will halt jetzt, dass hier OpenTelemetry was macht oder nicht macht und die kümmern sich hoffentlich um alles.",
+            "start": 2454151,
+            "end": 2475121,
+            "confidence": 0.77740625,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Aber ganz konkret, wenn ich jetzt in Node.js zum Beispiel, der Andi beschwert sich ja über myConsole.log immer, wenn ich das jetzt wegbekommen will, was mache ich dann konkret?",
+            "start": 2475785,
+            "end": 2484252,
+            "confidence": 0.7298620689655171,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Node.js ist ein gutes Beispiel. Also ich würde dir empfehlen, natürlich in die OpenTelemetry-Dokumentation zu gehen.",
+            "start": 2484312,
+            "end": 2489336,
+            "confidence": 0.6369999999999999,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Die soll ja besonders gut sein, habe ich gehört.",
+            "start": 2490725,
+            "end": 2493267,
+            "confidence": 0.36988888888888893,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Ja, genau. Da kann man eine eigene Episode drüber machen. Aber auf jeden Fall, du gehst in die OpenTelemetry-Dokumentation und was du da finden willst, ist so eine Getting Started, wo unsere Idee so ein bisschen ist, zu sagen, okay, da wollen wir, dass du in fünf Minuten in der Lage bist, dass OpenTelemetry dir Telemetrie auf die Konsole rausschreibt. Und was du im Prinzip machst, du bindest das Node-SDK ein, also du sagst, Möglichst früh in deinem Code, okay, hier ist das OpenTelemetry-Node-SDK und das starte ich jetzt und dann kannst du halt dieses Node-SDK konfigurieren. Du kannst diesem Node-SDK so ein paar, sag ich mal, Konfigurationsparameter geben, wo du dich vielleicht schon ein bisschen dann mit der Logik von OpenTelemetry beschäftigen musst. Also das eine, was du ihm geben musst, ist einen sogenannten Exporter. Also wo sollen die Daten hin? Also sollen die eben an ein Backend oder möchte ich sie vielleicht erst mal auf die Konsole gedruckt kriegen oder irgendwie sowas. Das ist das eine, was du ihm geben musst. Das andere, was du ihm geben kannst, sind sogenannte Ressourcen. Also wenn du sagst, okay, ich möchte aber auch zu meiner Telemetrie hinzu, auf welchem Container läuft es, auf welchem Betriebssystem läuft es. Das nennen wir im weitesten Sinne Ressource. Das kannst du ihm, sag ich mal, mitgeben. Und das dritte ist dann sogenannte Instrumentation Libraries, die quasi dann für deine ganzen Dependencies, für deine Frameworks, für dein ExpressJS, für dein, was es da alles gibt, um mit deinen Datenbanken zu sprechen, Instrumentierungen mitgeben. wenn die das noch nicht haben. Die könnten natürlich OpenTelemetry selber implementieren. Ich glaube, es ist ein Next.js. Die unterstützen OpenTelemetry nativ. Da brauchst du keine Instrumentation Library, also so ein Hilfskonstrukt. Aber für ganz viele Standardbibliotheken kannst du das einfach laden. Da sagst du einfach, ja, lad die einfach alle rein. sag ich mal, wenn du das alles gemacht hast und an den Knopf drückst und eine Applikation startest und dann mir in den HTTP-Request hinschickst, dann solltest du eben anfangen, deine Traces, deine Logs, deine Metrics zu sehen.",
+            "start": 2493307,
+            "end": 2615177,
+            "confidence": 0.7580749279538908,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Und ersetzt mir das dann meine Logger-Library, also wenn ich jetzt in Node.js Winston verwende oder Java Log4j oder sowas, mache ich denn dann das nur mit dem SDK und das macht mir auch auf meinem Standard Out oder Standard Arrow, auch die ganzen Log-Lines, also wird das komplett ersetzt oder arbeitet das dann irgendwie zusammen mit diesen Logging-Libraries?",
+            "start": 2615697,
+            "end": 2637552,
+            "confidence": 0.7660338983050847,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Logs sind da in der Beziehung jetzt natürlich eine spannende Frage. Also, das erste ist natürlich, in dem Moment, wo du Tracing und eben diesen Spans hast, ist ja natürlich immer die Frage, wie viele Logs brauchst du eigentlich noch? Weil gerade so diese Logs, hier fängt was an, hier hört was auf, die brauchst du ja dann nicht mehr. Das macht ja dann idealerweise Open Telemetry für dich. Und wenn du es nicht automatisch machst, dann benutzt du die Open Telemetry API selber und sagst halt, okay, fang hier einen Span an, hör hier einen Span auf. Wenn du jetzt aber sagst, okay, ich will aber bestimmte Logs weiterhin haben, um die zu schreiben, dann hast du eine Möglichkeit, das ist aber leider noch nicht ganz zu Ende entwickelt, also den Standard gibt es, aber die Implementierung noch nicht vollständig, dass du eine Logging Bridge verwendest, wo du dann einfach sagst, okay, ich benutze halt eben Winston, Lockford, JS oder sonst was und die sollen jetzt eben nicht auf die Konsole schreiben oder die sollen halt jetzt nicht, die haben ja auch irgendwelche Transports oder sonst irgendwas, sondern diese Daten sollen in das Open Telemetry gegeben werden, und die massieren mir dann diese Daten und machen dann zum Beispiel auch sowas wie eine Correlation, dass ich sage, okay, wenn diese Log-Line geschrieben wird, während ein Span aktiv ist, dann verknüpfe ich die zwei miteinander. Das heißt, dann später in meinem Backend kann ich dann eben auch mir die Logs und die Spans zusammen anschauen und so weiter und so fort.",
+            "start": 2638261,
+            "end": 2719777,
+            "confidence": 0.7615057471264369,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Aber ich kann mir die Spans schon einfach standard out auch ausgeben lassen, jetzt während der Entwicklung zum Beispiel.",
+            "start": 2719877,
+            "end": 2725340,
+            "confidence": 0.7671052631578947,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Ja genau, weil da das Format, also ich wünsche mir noch jemanden, also ich glaube, ich habe letztens ein Projekt gesehen, ich habe es mir noch nicht genau angeschaut, aber jemand, der so ein bisschen Pretty Printing dafür macht, weil im Moment ist es halt so ein Jason Dump und es schaut jetzt nicht unbedingt schön aus und ohne, dass du da jetzt dir einen zum Beispiel ein Jaeger oder sowas anmachst, also was ja so ein klassisches Open-Source-Tracing-Backend ist, macht es jetzt nicht besonders viel Spaß. Aber im Prinzip ja. Also im Prinzip, wenn du sagst, hier, ich habe eine Node.js-Applikation, hänge dieses Node-SDK von OpenTelemetry mal rein. Wie schon gesagt, Vegamia setzt vielleicht sowas wie ein Jäger in einem Docker-Container auf, verknüpft es miteinander, nimmt dir da mal eine halbe Stunde, Stunde Zeit, und dann solltest du da auch wirklich schon Ergebnisse sehen. Und spannend wird das Ganze natürlich, wenn du sagst, naja, ich habe ja nicht nur diese Node.js-Applikation, sondern die spricht ja mit einer Java-Applikation, und die will ich jetzt auch noch sehen, um dann da, sage ich mal, dann auch eben dieses Distributed-Thema im Blick zu haben.",
+            "start": 2725440,
+            "end": 2780801,
+            "confidence": 0.7401249999999998,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Aber würdest du sagen, das ist üblich, dass das auch während der Entwicklung dann verwendet wird? Oder ist das dann eher was für die Production?",
+            "start": 2781202,
+            "end": 2788548,
+            "confidence": 0.8218000000000002,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Idealerweise wird es natürlich in der Entwicklung gemacht. Also ich habe ja vorhin über dieses automatische Instrumentieren und diese Agenten gesprochen. Und das ist natürlich so dieses, wenn ich jetzt eine Ops-Person bin und jemand gibt mir eine Applikation und die hat kein Open Telemetry oder kein Tracing drin, dann ist das natürlich eine schöne Möglichkeit, das reinzubauen. Aber eigentlich ist schon die Idee dieses, gibt es diesen schönen Begriff Observability Driven Development, wo du halt einfach sagst, okay, während du entwickelst, baust du im Prinzip deine Spans und deine Traces halt im Prinzip ein. Also ich meine, das Schöne ist, wie schon gesagt, für viele Standardbibliotheken gibt es eben Support, wo du nichts machen musst. Oder die fangen gerade an, nativ in ihren Code OpenTelemetry mit einzubauen. Also das ist ja dann Teil der großen Vision, wo du sagst, naja, OpenTelemetry steckt ja eh überall drin. Und in dem Moment, wo ich jetzt sage, ich nehme mir ein ExpressJS in meine Applikation rein, kann das schon OpenTelemetry und ich muss dem eigentlich nur noch sagen, wo es seine Spans und Logs und Metrics hinschicken soll.",
+            "start": 2788568,
+            "end": 2850682,
+            "confidence": 0.7699999999999997,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Bei jedem neuen Hype-Cycle, der in der Softwareentwicklung irgendwie ankommt, denke ich mir, okay, das war's jetzt. Was soll denn jetzt noch kommen? Während des Gesprächs hattest du ja schon gesagt, ja, da gibt's jetzt auch so eine Jenkins-Integration. Denk ich mir, okay, du hast schon von Observability-Pipelines gesprochen. Wo hört Observability dann eigentlich auf? Und jetzt kommst du mit dem nächsten Buzzword. Da hab ich gedacht, what? Observability-Driven-Development. Also Test-Driven-Development ist da drüben irgendwo. Wir sind schon bei Observability-Driven-Development. Find ich schön, die neuen Buzzwords. jetzt hattest du von Auto-Instrumentation gesprochen, ist ja erstmal super. Also ich mein, ich hab mir grad mal ein bisschen die Dokumentation angesehen, für die meisten Sprachen ist es wirklich, ich klink ne kurze Library rein und krieg schonmal 90% for free. Logs, haben wir grad drüber gesprochen, ist noch so ein bisschen hakelig vielleicht, aber für gewisse Traces, gewisse Metriken kriegt man schonmal for free. Mega. Wie sieht das denn aus, wenn ich jetzt wirklich verschiedene Apps hab? Microservice-Architektur oder du hast eine Message-Queue dazwischen oder, oder, oder. Die müssen ja irgendwie, ich sag mal, ein bisschen voneinander wissen, oder? Da muss man irgendwie so eine Request-ID haben. Wie geht man da vor? Geht das auch automatisch?",
+            "start": 2850722,
+            "end": 2924886,
+            "confidence": 0.7150735294117647,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Genau, also da, wenn du Glück hast, geht's automatisch, sagen wir mal so. Also, da gibt's auch einen Standard. Oder anders, es gibt mehrere Standards, wobei einer sich grade anfängt durchzusetzen. Der ist vom World Wide Web Consortium. Ja, also bekannt für viele andere Standards auch. Das sind diese Traceheaders. Genau. Also, du kannst im Prinzip ... Hast einen standardisierten HTTP-Header, wo halt drinsteht, hier ist deine TraceID, hier ist quasi ... die ID von dem Spam, der quasi diesen HTTP-Aufruf erzeugt hat. Also, das wird dann später dein Parent.",
+            "start": 2924906,
+            "end": 2958269,
+            "confidence": 0.7827888888888891,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "TraceParent heißt der Header.",
+            "start": 2958309,
+            "end": 2959990,
+            "confidence": 0.512,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Genau, genau, den suche ich. TraceParent. Und das ist einfach standardisiert, ja? Also, das nutzt nicht nur OpenTelemetry. Es gibt noch ein paar andere, und da muss man halt dann, sag ich mal, kann man auch OpenTelemetry umkonfigurieren, um die zu verwenden. Aber das ist so ein Standard erst mal für HTTP. Aber man fängt auch an, diesen Standard jetzt in andere Protokolle einfach mit zu übernehmen. Einfach zu sagen, okay, das ist so eine grobe Struktur, die macht irgendwie Sinn. Da gibt es eine Trace-ID und eine Span-ID. Und die schicken wir halt übers Kabel mit. Und der Empfänger kann dann halt sagen, ah, okay, da gibt es jetzt Papa oder Mama Span. Und mit denen kann ich mich jetzt dann quasi verknüpfen. Und dann eben im Observability-Backend kann ich dann halt diese schöne Gesamtlandschaft aufzeichnen.",
+            "start": 2960030,
+            "end": 3004593,
+            "confidence": 0.8044233576642333,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Ich hab grad mal, während du gesprochen hast, mal ein bisschen gegoogelt. Und zwar wirklich, der Standard ist jetzt noch relativ neu, Trace Context von der W3C heißt der Standard, vom November 21. Und just in dem Moment hab ich mir die Frage gestellt, HTTP, und da hast du auch angefangen davon zu sprechen. Und im AMQP-Protokoll, also auch Message Queueing, ist der Standard von März 2022. Und ja, sie sprechen schon darüber. Also faszinierend, was da losgeht. Und OpenTelemetry kann den Header schon? Oder supportet den zumindest?",
+            "start": 3005498,
+            "end": 3034613,
+            "confidence": 0.7650795454545455,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Man muss auch dazu sagen, wenn du mal guckst, wer diesen Standard macht und wer in OpenTelemetry ist, da gibt's einen gewissen Overlap.",
+            "start": 3034633,
+            "end": 3043119,
+            "confidence": 0.8042608695652175,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Ah, ich merk schon hier. Microsoft, Google, Dynatrace ist auch eben ... Faszinierend. Ja, gut.",
+            "start": 3043199,
+            "end": 3049063,
+            "confidence": 0.6851333333333335,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Ja, genau. Aber ist ja eigentlich nett, wenn du halt einfach sagst, na ja, das ist ja ... Also, dieses ganze HTTP-Zeug gehört ja ins World Wide Web. Web-Konsortium und halt eben nicht ins DNCF, sondern sonst was. Und man macht es halt da, wo sich's auch irgendwo hingehört, ja?",
+            "start": 3049083,
+            "end": 3068028,
+            "confidence": 0.6541199999999998,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Wie sieht das denn in der Praxis aus? Wenn ich jetzt Tracing implementiert hab, hab ich dann Tracing konstant an? Oder hab ich da irgendwie so ein Feature-Flag und mach das an oder aus? Weil ich kann mir vorstellen, dass dieses Sammeln von diesen ganzen Daten in einem sehr großen Trace, einem sehr großen Call-Stack ja schon das ein oder andere Megabyte sein kann, oder?",
+            "start": 3068048,
+            "end": 3088242,
+            "confidence": 0.7976153846153846,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Genau, also das Problem hast du immer in dem Moment, wo du Daten sammelst, kommst du ja zu dem Thema, wo du sagst, okay, ich werde von dem Zeug erdrückt, überflutet. Also von, okay, irgendjemand muss ja diese Daten empfangen und speichern, bis hin zu, naja, wenn ich mir einen kommerziellen Observability-Anbieter suche, der halt pro eingespeisten Trace ein paar Cent verlangt, da können die Rechnungen sehr schnell, sehr teuer werden. Und da gibt's was, das nennt sich Sampling, wo man halt einfach sagt, Man trifft eine Entscheidung und sagt halt einfach, okay, ich nehme halt nicht alle Traces, sondern nur ein Prozent davon oder nur ein Promittel davon oder irgendwie sowas. Und da gibt es dann auch wieder verschiedene Ansätze. Es gibt auch Forschung zu dem Thema. Also es gibt Papers zum Thema, es nennt sich Probabilistic Sampling, wo man halt versucht, dieses ganze Thema auch gut anzugehen, weil man halt eben auch sagt, naja, jetzt sind wir doch mal ganz ehrlich, wenn ich jetzt so einen um bei meinem Beispiel wieder zu sein, wenn ich bei einer Checkout-Transaktion bin, die schauen ja oft sehr ähnlich aus. Da wird halt einfach gesagt, okay, hier ist eine Order-ID und hier ist vielleicht das Graffel, was da in dem Einkaufswagen drin ist. Aber ansonsten ist das ja im Prinzip immer das Gleiche. Da muss ich ja nicht alle 5.000 von denen, die ich pro Minute hereinkriege, von Anfang bis Ende ablegen, sondern mir genügen ja vielleicht 100 davon und die 7, die halt einen Fehler hatten.",
+            "start": 3088562,
+            "end": 3167585,
+            "confidence": 0.7502078431372543,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Wir hatten auch schon ein bisschen über Loglines gesprochen. Ich kann mir vorstellen, es ist superinteressant zu wissen, ich ruf Methode eins auf, Methode eins ruft Methode zwei auf, das dauert so lange. Aber irgendwie fehlt mir ja da auch noch so ein bisschen, ich sag mal, die Metadaten. Inwieweit kann man denn Traces auch mit, ja, vielleicht sogar kontextspezifischen Metadaten und sogar den Loglines, also wie kann man die verschiedenen Signale miteinander verbinden, dass man wirklich, ja, Full Observability hat.",
+            "start": 3167805,
+            "end": 3198925,
+            "confidence": 0.8505802469135796,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Also, das eine ist natürlich, wenn du jetzt Tracing machst und eben so einen Span erzeugst, kannst du natürlich an den Attribute dranhängen, ja, und kannst halt einfach, was ich ja vorhin eben erzählt hab, mit den semantischen Konventionen, gibt's da so ein paar Standards. Aber ich kann natürlich auch meine eigenen machen, ja, wo ich halt einfach sag, okay, das ist halt jetzt hier ein E-Commerce-System, und da brauch ich halt die Order-ID und die Card-ID, hoffentlich nicht die User-ID, ja, also, die lassen wir mal außen vor. Also ich kann natürlich das Zeug annotieren, so viel wie ich möchte und diese Informationen dort hinterlegen. Und da kommt ja dann auch so dieses Thema automatische versus manuelle Instrumentierung auch nochmal so ein bisschen ins Spiel. Eine automatische Instrumentierung ist zwar toll, um mal so die grundsätzliche Verständnis dafür zu bekommen, aber Ich brauche natürlich die manuelle Instrumentierung, um ja diesen ganzen Business-Kontext zu dem Thema ja irgendwie hinzuzufügen und zu sagen, okay, das ist ja, hat ja einen Bestellvorgang, hat ja noch Business-Logik zusätzlich. Und das andere ist, ich habe es ja schon mal erwähnt, du kannst ja quasi Spans Span-ID und Trace-ID, die wir jetzt auch eben hatten, auch in den Log injizieren und dann dadurch natürlich eine Korrelation zwischen Logs und Metriken erzeugen. Um jetzt den Kreis ganz zu schließen zu den Metriken, wo ich ganz am Anfang gemeint habe, naja, ich will ja auf so eine Metrik draufklicken können und dann quasi den Kontext oder so haben, da gibt es etwas, das nennt sich Exemplar. Das heißt, während quasi ich meine Spans aufnehme und auch meine Metriken aufnehme, kann ich auch sagen, okay, für diese Metrik hier, ja, also für diese die Dauer von HTTP-Requests im Durchschnitt berechnet, möchte ich auch ein paar Beispiele verknüpft haben. Und das sind meine Exemplars. Und so kann ich quasi vor- und zurückspringen.",
+            "start": 3198985,
+            "end": 3298511,
+            "confidence": 0.7526293929712458,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Wo du grad schon von User-ID als Metadata gesprochen hast, da stell ich mir halt schon die Frage, da muss man ja schon echt teilweise wirklich aufpassen, dass man da irgendwie keine ganzen Objekte oder so was als Metadata dran gibt. Auf einmal liegen da Passwörter drin oder Ähnliches. Da muss man ja schon sehr, sehr aufpassen. Aber umso mehr Metadaten und Trace dran sind, da frage ich mich, löst das nicht bald irgendwie diese ganzen Remote-Debugger ab? Es gibt ja immer noch in verschiedenen Sprachen diese Art von Remote-Debugger. Meine Frage ist, ist das ein kleines Ziel von OpenTelemetry, dass wir die Remote-Debugger endlich mal loswerden?",
+            "start": 3298811,
+            "end": 3334649,
+            "confidence": 0.8156261682242985,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Das ist ehrlich gesagt eine schwierige Frage. Die Bagger geben dir natürlich noch mal viel mehr Kontrolle. Während du in der Applikation drin bist, kannst du trotzdem noch irgendwas machen. Ob du das immer willst in Produktion, darüber kann man ja auch streiten.",
+            "start": 3335149,
+            "end": 3349576,
+            "confidence": 0.6013953488372094,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Wahnsinne gibt es überall.",
+            "start": 3349616,
+            "end": 3350637,
+            "confidence": 0.74175,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Aber diese Möglichkeiten gibt es natürlich. Ich meine, was da sicherlich spannend wird, also bei OpenTelemetry, wie schon gesagt, wir haben ja viel über Tracing, Metrics, Logs gesprochen. Es gibt im Moment so eine Gruppe, die kümmert sich auch um das Thema Profiles. Also CPU, GPU, Memory, Profiles. Wie können wir die mit Traces verheiraten? Und dann hast du natürlich nochmal einen viel, viel tieferen Blick in deinen Code rein.",
+            "start": 3351437,
+            "end": 3375917,
+            "confidence": 0.7932428571428567,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Jetzt distanziert sich OpenTelemetry von der ganzen Storage-Logik. Die stellen zwar den Kollektor, der das irgendwo hinsendet, aber ...",
+            "start": 3376638,
+            "end": 3385615,
+            "confidence": 0.8789473684210526,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Distanzieren klingt jetzt sehr negativ, also ...",
+            "start": 3385625,
+            "end": 3388617,
+            "confidence": 0.6792857142857143,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Naja, sie schließen es aus, weil ich glaub, der Sammelpunkt, wo das alles gesammelt wird, ist ja schon irgendwie so eine Art Datenbank, glaub ich. Und das ist ja schon so was, effizient zu speichern, verschiedene Signale, ist ja schon, glaub ich, wirklich nicht einfach. Aber jetzt mal die praktische frage was gibt es denn da so auf dem markt was kann ich denn als kollektor ziel angeben also ich meine, sind das sind das dann drei verschiedene systeme einmal elastic search oder open search für logs dann einmal irgendwie eine tanos für metriken und dann vielleicht nochmal für die traces ein jäger oder ein zipkin oder, Gibt es ja auch die eierlegende Wollmichsau als das System?",
+            "start": 3388627,
+            "end": 3428043,
+            "confidence": 0.7879059829059829,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Oder vielleicht auch anders gefragt von den kommerziellen Anbietern zumindest. Gibt es irgendwen, der Open Telemetry nicht unterstützt? Oder ist es mittlerweile schon komplett supported überall?",
+            "start": 3428083,
+            "end": 3440140,
+            "confidence": 0.8395769230769231,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Also ich habe sie gerade aufgemacht. Wir haben auf der Open Telemetry Webseite eine Seite, die nennt sich Vendors, also Ecosystem Vendors. Da müssten um die 50 draufstehen. Also viele sind natürlich, Observability ist natürlich gerade ein großer Hype und das haben sich natürlich auch viele, sag ich mal, gegründet in dem Bereich und es sind natürlich viele eben da, die, sag ich mal, aus dem APM, aus dem Monitoring, aus dem Metrics-Bereich kommen und, sag ich mal, auf den Ja, auf den Zugabhängen würde ich noch nicht mal sagen, aber halt in diesem Ökosystem halt unterwegs sind und halt netterweise und sehr gut für uns zu sagen, okay, wir unterstützen Open Telemetry auch, wir finden das mit dem Standard eigentlich gut. Das heißt, das sind ein bisschen mehr als drei. Und du wirst eben eigentlich mittlerweile de facto alle großen Monitoring-Anbieter dort irgendwie finden. Also, das haben alle sich auf die Fahne geschrieben. Und ich finde es auch, wir hatten ja vorhin diese Frage, naja, wenn ich jetzt schon da eine Lösung habe, soll ich die jetzt wegschmeißen und auf ein Telemetry setzen? Und ich habe ja so gemeint, naja, würde ich jetzt nicht machen. Ich denke, was da ja eigentlich ganz schön ist, viele bieten ja auch Migrationspfade, sag ich mal, an. Also irgendwie so integrierte Lösungen, wo man versucht, okay, wir können die alte und die neue Welt, um es mal so zu nennen, dir irgendwie gleichzeitig darstellen. Also es gibt schon da auch Möglichkeiten, darüber zu kommen. Wenn du jetzt noch gar nichts hast und ich sage mal, okay, ich will da mal damit rumspielen und will vielleicht auch mit Open Source anfangen, wenn ihr euch diese Liste eben anschaut, wir haben mal die Open Source Lösungen oben. aufgestellt, ja, wo du halt dann einfach sagen kannst, okay, da ist eben eine Jäger, also das ist ja auch ein CNCF-Project, die eben Tracing machen, kann man natürlich nehmen, eine Prometheus für Metriken und dann gibt es natürlich die ein oder anderen Komplettlösungen, die halt dann das Ganze auch als eine Open Source oder als eine kommerzielle Lösung zusammenbringen.",
+            "start": 3440387,
+            "end": 3550024,
+            "confidence": 0.7772215909090909,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Aber speichert Jäger auch oder ist Jäger nur zur Auswertung gedacht?",
+            "start": 3550064,
+            "end": 3553507,
+            "confidence": 0.9026363636363637,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Also Jäger hat, glaube ich, sogar mehrere Backends, die sie unterstützen. Du kannst Kassandra, ich glaube, dann haben sie irgendwas für die All-in-One, also wo du ein Docker-Image hast und halt so ein In-Memory. Ich glaube, dass sie auch Clickhouse mittlerweile unterstützen. Also die haben da drei oder vier Backends mittlerweile, die sie im Prinzip supporten.",
+            "start": 3553962,
+            "end": 3574343,
+            "confidence": 0.7715535714285716,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Ich warte eigentlich nur auf die PostgreSQL-Extension, weil irgendwie gibt's ja Postgre alles in Extension. Also von daher, da warte ich nur drauf.",
+            "start": 3575340,
+            "end": 3582442,
+            "confidence": 0.6603478260869565,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Es gab doch, wie hieß denn die? Die hatten doch diese Timeseries-Database, die hat doch irgendwie auf Postgres aufgebaut.",
+            "start": 3582482,
+            "end": 3590524,
+            "confidence": 0.7621052631578946,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Timescale.",
+            "start": 3590564,
+            "end": 3591485,
+            "confidence": 0.716,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Timescale, ja, genau.",
+            "start": 3591525,
+            "end": 3593005,
+            "confidence": 0.6643333333333333,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Aber wenn ich jetzt zum Beispiel meine Metriken in Prometheus speicher und meine Traces in Jäger, wie komme ich dann zu der Korrelation? Also es sind ja zwei komplett unterschiedliche Systeme. Wie kann ich die dann sinnvoll gemeinsam nutzen?",
+            "start": 3593365,
+            "end": 3607887,
+            "confidence": 0.811128205128205,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Gut, ich meine, wenn du jetzt eben Jäger und Prometheus hernimmst, also die arbeiten da, soweit ich weiß, zum Teil eben auch an Lösungen, um das zu ermöglichen. Aber klar, du willst natürlich eine Lösung, die beides kann. Ich glaube, Open Source gibt es zwei oder drei, die das machen. Also Grafana auf jeden Fall. Also die nutzen auch Prometheus und die Jäger-UI. Und ich glaube, da muss ich mich zu weit aus dem Fenster lehnen, wie da genau die Architektur ist. Aber die machen genau das, was ich eben vorhin erwähnt habe, dass du sagst, du kannst auf eine Trace klicken, Und wenn es dazu einen Log gibt, der eine Log-ID hat, dann kannst du da halt hin und her springen. Und das Gleiche halt, was jetzt so allmählich kommt, das ist noch relativ, in den Kinderschuhen sind halt diese Exemplare mit den Metriken. Und entsprechend halt bei den kommerziellen Anbietern ist das eigentlich, also gerade so dieses Trace-Log-Correlation ist eigentlich so ein Must-Have-Feature. Also herabkam, dass das jemand nicht mehr hat.",
+            "start": 3608287,
+            "end": 3659182,
+            "confidence": 0.7535491329479769,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Jetzt haben wir relativ positiv über die ganze Sache gesprochen, weil sie klingt wirklich zu gut, um wahr zu sein. Also es scheint so, als ist das der 20. Standard, der wirklich alle 19 vereint, wie XKCD sagen würde. Was würdest du denn sagen, sind so die Pitfalls, die Shortcomings von der ganzen Thematik?",
+            "start": 3659422,
+            "end": 3676360,
+            "confidence": 0.828,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Abgesehen von den Dingen, die du erwähnt hast, wie dass das eine oder andere noch nicht komplett fertig ist und vielleicht ausformuliert ist oder noch auf der Roadmap steht. Gibt es irgendwelche anderen Shortcomings oder vielleicht auch jetzt als Praktiker, sollte ich es einfach einsetzen oder gibt es auch irgendwie Systeme oder Szenarien, wo du sagen würdest, macht vielleicht weniger Sinn?",
+            "start": 3677207,
+            "end": 3697549,
+            "confidence": 0.8166557377049184,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Ich meine, ganz klar, ich würde es natürlich jedem ans Herz legen, das zu verwenden, uns auch in Produktion zu verwenden. Also wir haben auch viel, viel Feedback von großen Unternehmen, die Open Telemetry in großem Stil einsetzen. Also wenn ihr mal in unseren Blog geht, wir hatten auch so die ein oder anderen Gespräche mit einigen Firmen, die es halt wirklich auch produktiv einsetzen. Also das kannst du auf jeden Fall machen. Es gibt natürlich so einige Themen, über die man da kurz reden kann. Das eine ist noch nicht mal OpenTelemetry spezifisch, weil du gesagt hast, gibt es da irgendwie Grenzen, wo man das einsetzen kann. Generell dieses ganze Thema Ich möchte, dass meine Applikation mir Logs, Traces, Metrics schickt. Das kommt ja immer zu einem Preis. Das kostet mich CPU-Zyklen, das sorgt dafür, dass ich eine Network-Request machen muss. Ich habe eine zusätzliche Dependency in meiner Applikation. Das heißt, gerade in Bereichen, wo solche Themen kritisch sind, wo ich sage, bei mir geht es halt um die 10 Millisekunden. in den Requests. Warum auch immer. Es gibt ja so High Frequency Trading Platforms oder was immer. Das ist natürlich das Schöne an Open Telemetry schon, ich kann das sehr minimal einsetzen. Wenn ich zum Beispiel sage, ein APM-Agent würde da deutlich größere Probleme haben. Aber klar, ich führe dieses Thema ein und bezahle dafür. Oder wir hatten ja auch schon das Thema, Tracing kann auch ziemlich explosiv sein. Und gerade wenn du diese Agenten in die Applikation reinsteckst, ich würde das auch versuchen, nicht erstmal nur in Produktion zu machen, weil du plötzlich natürlich diese Flut an Daten bekommst. Und das mit dem Sampling halt auch. Also ich denke, ein ganz, ganz spezielles Thema mit Open Telemetry ist sicherlich, oder mit dem Observability-Thema generell, es ist natürlich vieles noch am Anfang. Es gibt ja immer eben diesen schönen Hype-Cycle und es schießt gerade durch die Decke. Also jeder denkt die besten und tollsten Dinge von Open Telemetry und Observability und wird dann halt an den ein oder anderen Stellen sicherlich auch enttäuscht. Nicht, weil es das nicht kann, sondern weil es es noch nicht kann. Und um da vielleicht auch noch ein bisschen, so zu sagen, eigenkritischer zu sein, ein Thema, was die Open Telemetry Community in der Vergangenheit, was wir, sag ich mal, immer mal wieder gemacht haben, was rückblickend betrachtet ein bisschen problematisch war, wir haben irgendwas spezifiziert, zum Beispiel, wir haben gesagt, okay, Metriken sind jetzt stable. Das ist aber nicht, dass deine Java, deine Go, deine Node.js-Implementierung stable war, sondern das Papier war stable, ja? So ungefähr. Wir haben gesagt, da wird jetzt nichts mehr am Papier geändert. Aber das heißt halt natürlich noch lange nicht, dass die Implementierung da ist. Das heißt, da sind viele Leute enttäuscht worden, weil sie gesagt haben, oh cool, jetzt kann ich mit OpenTelemetry auch Metrics machen. Dann sind sie hergegangen und dann gab es keine Dokumentation dazu, gab es keine Implementierung dazu. Das ist sicherlich etwas, was man an vielen, vielen anderen Stellen auch immer mal wieder feststellen wird, wo man halt einfach sagt, na ja, OpenTelemetry hat da zwar was spezifiziert, aber es muss sich halt auch noch irgendjemand hinsetzen und das Zeug implementieren. Und dann noch jemanden dokumentieren, aber das ist ja nochmal ein anderes Thema.",
+            "start": 3697810,
+            "end": 3878632,
+            "confidence": 0.783576086956522,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Was ist denn, wenn ich einen an Monolithen habe, brauche ich dann überhaupt das Ganze oder kann ich mir das dann sparen?",
+            "start": 3880055,
+            "end": 3885161,
+            "confidence": 0.7809545454545457,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Nee, kannst du genauso hernehmen. Hat auch der Philipp, der mit mir zusammen die Dokumentation macht, mein Co-Maintainer, hat auf der letzten CubeCon den Vortrag gemacht auf dem Telemetry, der Monolith oder irgendwie so, also könnt ihr mal raussuchen. Klar, kannst du ganz genau so machen.",
+            "start": 3885562,
+            "end": 3900839,
+            "confidence": 0.7398695652173913,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Und es bringt mir auch was.",
+            "start": 3900879,
+            "end": 3902020,
+            "confidence": 0.7701666666666668,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Bringt dir was. Ich vermute mal, dass du aber vielleicht ein bisschen mehr auch selber Hand anlegen musst. Also weil ja viele dieser Instrumentation Libraries, also wo du halt Dinge, sag ich mal, umsonst kriegst, viel ja natürlich dieses Thema, wo läuft was in meine Applikation rein und wo läuft aus meiner Applikation was raus. Das sind ja eigentlich so die Sachen. Und wenn du jetzt sagst, na ja, meine Applikation ist monolöd und macht komplexe Berechnungen und ich will diese Berechnungsstritte nachvollziehen, dann muss der halt dann selber Hand anlegen.",
+            "start": 3902040,
+            "end": 3930262,
+            "confidence": 0.7687032967032968,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Du sagtest gerade Co-Maintainer. Braucht ihr zum Beispiel noch Hilfe in der Dokumentation? Also möchtest du Co-Co-Co-Maintainer werden?",
+            "start": 3930302,
+            "end": 3936225,
+            "confidence": 0.7375555555555554,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Ja, unbedingt. Gut, dass du das sagst. Das hier ist ein Aufruf an jeden. Die OpenTelemetry-Community kann immer Hilfe und Unterstützung brauchen. gerade eben auch im Dokumentationsbereich. Die Dokumentation wurde auch lange sehr, sehr kritisiert und ich behaupte auch, dass sie noch viel Liebe und Zuneigung braucht. Können wir auch über die Gründe reden, aber ich denke, wir brauchen viele Leute, die dokumentieren können. Und ich finde auch, das ist meine eigene Erfahrung, auch wenn man ins Thema Open Source einsteigen will, ist die Dokumentation wirklich eine gute Möglichkeit, weil man halt einfach mal hergehen kann und sagen, okay, ich lese mir mal die nähere Dokumentation durch, ich mache mal das Open Telemetry Node.js Getting Started und wenn ich in Probleme renne, dann fixe ich das, mache eine Pull Request auf und sage, hey Leute, das funktioniert gar nicht, hier ist eine Lösung. Also so bin ich dazu gekommen, so habe ich angefangen. Ich habe irgendwelche Dinge in der Doku gefixt und dann gesagt, ja, können wir da nicht was dran ändern.",
+            "start": 3936365,
+            "end": 3996297,
+            "confidence": 0.7782558139534884,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Machst du das eigentlich in deiner Freizeit oder wirst du da supported von Cisco?",
+            "start": 3996962,
+            "end": 4001427,
+            "confidence": 0.6852142857142857,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Ich habe das große Glück, dass das quasi Teil meiner Arbeit ist.",
+            "start": 4001467,
+            "end": 4005832,
+            "confidence": 0.8445833333333334,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Kann man ja auch mal positiv hervorheben, wenn Firmen in Open Source investieren.",
+            "start": 4005852,
+            "end": 4009816,
+            "confidence": 0.7653076923076922,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Welche Skills muss ich mitbringen und wo muss ich mich melden?",
+            "start": 4009856,
+            "end": 4012519,
+            "confidence": 0.8139090909090908,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Also wenn du Dokumentation machen willst, musst du zumindest ein bisschen Englisch können, sag ich mal. weil die größten teils auf englisch geschrieben ist. Ansonsten du kannst auf die OpenTelemetry.io Website gehen. Durch so ein Tutorial sagen wir mal durchgehen. Also bleiben wir mal bei Node.js und wenn du dann einen Fehler findest, kannst du oben rechts auf Edit this page klicken. Das führt dich rüber auf GitHub. Klar langfristig, wenn du öfters kontributierst, ist es natürlich besser, dass in der in einer IDE zu machen, aber du kannst dann im Prinzip im GitHub Inline Editor hergehen und sagen, okay, hier ist ein Typo, hier ist ein Port falsch, sonst irgendwas. Dann den Pull-Request erzeugen. Also man sollte so ein bisschen mit der ganzen GitHub-Logik umgehen. Man lernt es dann, also wenn man es nicht kann, man lernt es spätestens dann. Und man soll sich da auch nicht scheuen, also wenn man dann immer das Gefühl hat, also wir haben dann immer ganz viele Contributor, die das das erste Mal machen und sich dann entschuldigen, dass das halt nicht so toll ist und sonst irgendwas. Ich kann euch so viele Pull-Requests von den letzten vier Wochen zeigen von mir, die furchtbar ausschauen. Da muss man sich definitiv nicht genieren. Ich glaube, das Einzige, was halt einfach schön ist, wenn man freundlich mit den Leuten kommuniziert und offen für Feedback ist.",
+            "start": 4013140,
+            "end": 4079855,
+            "confidence": 0.7439434782608695,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Vielen lieben Dank, Severin. Wir sind am Ende von der Reise durch Observability und Open Telemetry. Gibt es noch etwas, was du unseren Hörerinnen und Hörern mitteilen möchtest?",
+            "start": 4080755,
+            "end": 4092080,
+            "confidence": 0.8562142857142856,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Wir haben ja gerade darüber geredet. Wir freuen uns über jeden, der uns unterstützt. Probiert Open Telemetry aus. Lasst es uns wissen, welche Erfahrungen ihr damit macht. Und noch mehr freut es mich, wenn Leute kommen und in der Dokumentation oder auch im Code mithelfen wollen.",
+            "start": 4092121,
+            "end": 4108287,
+            "confidence": 0.8235434782608693,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Du hast mich auf jeden Fall überzeugt, dass ich das garantiert ausprobieren werde, weil ich habe auch parallel die Dokumentation angeschaut und es war wirklich super easy und es sind wirklich nur ein paar Zeilen Code. Werde ich auf jeden Fall ausprobieren, damit der Andi dann auch weniger zum Jammern hat bei meinem Konsol-Log-Output.",
+            "start": 4108809,
+            "end": 4125738,
+            "confidence": 0.7932222222222222,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Alle Links verlinken wir natürlich in den Shownotes, damit ihr das natürlich auch binnen fünf Minuten, das ist das Versprechen hier von Orm Telemetrie, in eurer App einnimmt.",
+            "start": 4125779,
+            "end": 4133904,
+            "confidence": 0.8089285714285712,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Vielen lieben Dank, Severin.",
+            "start": 4133924,
+            "end": 4135944,
+            "confidence": 0.43599999999999994,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Und ich sage Tschüss, bis bald.",
+            "start": 4135986,
+            "end": 4137727,
+            "confidence": 0.6846666666666666,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Danke.",
+            "start": 4138067,
+            "end": 4138227,
+            "confidence": 0.321,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Und nicht vergessen, About You sucht einen Lead DevOps DataOps Engineer für ihre Google Cloud Plattform. Das Ganze findet ihr unter engineeringcures.dev slash about you oder in den Show Notes.",
+            "start": 4142508,
+            "end": 4152752,
+            "confidence": 0.7463666666666667,
+            "channel": null,
+            "speaker": "A"
+        }
+    ],
+    "confidence": 0.777640745240986,
+    "audio_duration": 4153.0,
+    "webhook_status_code": null,
+    "webhook_auth": false,
+    "summary": null,
+    "auto_highlights_result": null,
+    "content_safety_labels": null,
+    "chapters": null,
+    "sentiment_analysis_results": null,
+    "entities": null
+}
