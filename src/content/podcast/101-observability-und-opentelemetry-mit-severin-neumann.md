@@ -74,7 +74,10 @@ speaker:
   transcriptLetter: C
   website: https://www.linkedin.com/in/severinneumann/
 spotify: https://open.spotify.com/episode/1RkWRmsfnRMBfDrYKNGDRf
-tags: []
+tags:
+- DevOps
+- Software Engineering
+- Interview
 title: '#101 Observability und OpenTelemetry mit Severin Neumann'
 youtube: ''
 
