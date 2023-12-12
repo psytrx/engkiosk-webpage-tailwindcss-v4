@@ -225,8 +225,8 @@ def sync_podcast_episodes(rss_feed, path_md_files, path_img_files, no_api_calls=
         apple_podcast_content = get_json_content_from_url(PODCAST_APPLE_URL)
         spotify_episodes = spotify_client.show_episodes(SPOTIFY_SHOW_ID, limit=50, offset=0, market="DE")
         google_podcast_content = get_raw_content_from_url(PODCAST_GOOGLE_URL)
-        youtube_playlist_response = youtube_client.playlistItems.list(parts="snippet", maxResults=50, playlist_id=YOUTUBE_PLAYLIST_ID)
-        youtube_playlist_items = youtube_playlist_response.items
+        #youtube_playlist_response = youtube_client.playlistItems.list(parts="snippet", maxResults=50, playlist_id=YOUTUBE_PLAYLIST_ID)
+        #youtube_playlist_items = youtube_playlist_response.items
 
         # Pagination and auth not respected.
         # Right now it works, because a) we don't make that much requests and
@@ -709,13 +709,13 @@ if __name__ == "__main__":
                 spotify_client = create_spotify_client(SPOTIFY_APP_CLIENT_ID, SPOTIFY_APP_CLIENT_SECRET)
 
                 # YouTube
-                YOUTUBE_API_KEY = os.getenv('YOUTUBE_API_KEY')
-                if not YOUTUBE_API_KEY:
-                    logging.error("Env var YOUTUBE_API_KEY is not set properly.")
-                    logging.error("Please double check and restart.")
-                    sys.exit(1)
-                youtube_client = YoutubeClient(api_key=YOUTUBE_API_KEY)
+                #YOUTUBE_API_KEY = os.getenv('YOUTUBE_API_KEY')
+                #if not YOUTUBE_API_KEY:
+                #    logging.error("Env var YOUTUBE_API_KEY is not set properly.")
+                #    logging.error("Please double check and restart.")
+                #    sys.exit(1)
+                #youtube_client = YoutubeClient(api_key=YOUTUBE_API_KEY)
 
-            sync_podcast_episodes(PODCAST_RSS_FEED, f"{folder_prefix}{PATH_MARKDOWN_FILES}", f"{folder_prefix}{PATH_IMAGE_FILES}", no_api_calls=args.no_api_calls, spotify_client=spotify_client, youtube_client=youtube_client)
+            sync_podcast_episodes(PODCAST_RSS_FEED, f"{folder_prefix}{PATH_MARKDOWN_FILES}", f"{folder_prefix}{PATH_IMAGE_FILES}", no_api_calls=args.no_api_calls, spotify_client=spotify_client, youtube_client=None)
         case "redirect":
             create_redirects(TOML_FILE, PATH_MARKDOWN_FILES, REDIRECT_PREFIX)
