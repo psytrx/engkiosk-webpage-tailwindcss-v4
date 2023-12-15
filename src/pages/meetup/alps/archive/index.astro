@@ -6,10 +6,14 @@ import Nav from '../../../../components/Nav.astro';
 import Discord from '../../../../components/meetup-alps/Discord.astro';
 import Newsletter from '../../../../components/meetup-alps/Newsletter.astro';
 import Team from '../../../../components/meetup-alps/Team.astro';
+import { getPastMeetups } from '../../../../scripts/meetups';
 
 let title = 'Meetup Alps - Engineering Kiosk - Innsbruck';
 let description = 'Tech Meetup in Innsbruck, brings together tech enthusiasts, engineers, and professionals from various fields to explore the intersection of engineering culture, open source, people and technology.';
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+
+const meetupArchive = getPastMeetups()
+
 ---
 
 <html lang="de">
@@ -47,7 +51,7 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 			</section>
 		</div>
 
-    <MeetupListing numberOfItems="0" />
+    <MeetupListing headline='Meetup Tech Talk Archive' archive={true}	meetupsToShow={meetupArchive} />
 
 		<Newsletter />
 		<Discord />

@@ -1,7 +1,4 @@
 ---
-export interface Props {
-	numberOfItems: number;
-}
 
 import MeetupEvent from '../components/MeetupEvent.astro';
 import Talk from '../components/Talk.astro';
@@ -9,22 +6,14 @@ import Talk from '../components/Talk.astro';
 import { formatDateWithoutWeekday } from '../scripts/date.js';
 import CompanyLogo from './CompanyLogo.astro';
 
-import { getNextMeetups, getPastMeetups } from '../scripts/meetups.js'
-
-const { numberOfItems } = Astro.props;
-
-// Default wise list all items,
-// only limit it if requested
-let meetupsToShow, archive, headline;
-if (numberOfItems > 0) {
-	headline = 'Awesome Community Talks';
-	archive = false;
-	meetupsToShow = getNextMeetups(numberOfItems);
-} else {
-	headline = 'Meetup Archive';
-	archive = true;
-	meetupsToShow = getPastMeetups();
+export interface Props {
+	headline: string;
+	meetupsToShow: any[];
+	archive?: boolean;
 }
+
+const { headline, meetupsToShow, archive } = Astro.props
+
 ---
 
 <section class="py-24 bg-coolGray-50" style="background-image: url('/images/elements/pattern-light-big.svg'); background-position: center;">

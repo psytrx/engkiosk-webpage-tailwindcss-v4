@@ -10,10 +10,11 @@ import Team from '../../../components/meetup-alps/Team.astro';
 import { Image } from "astro:assets";
 
 import { formatDateWithoutWeekday, formatTime } from '../../../scripts/date.js';
-import { getNextMeetups } from '../../../scripts/meetups.js';
+import { getNextMeetup } from '../../../scripts/meetups.js';
 
 // Current Meetup
-const nextMeetup = getNextMeetups(1)[0];
+const bufferDays = 2 // wait 2 days after meetup before showing next meetup
+const nextMeetup = getNextMeetup(bufferDays);
 const dateString = formatDateWithoutWeekday(nextMeetup.date, 'en-US');
 const timeString = formatTime(nextMeetup.date);
 const dateAndTime = `${dateString} - open doors at ${timeString} (talks start ~15min later)`;
@@ -96,7 +97,7 @@ const alpsImage = (await import('../../../images/meetup-alps/ibk.jpg')).default;
 				</div>
 			</section>
 
-			<MeetupListing numberOfItems="1" />
+			<MeetupListing meetupsToShow={[nextMeetup]} headline='Awesome Community Talks' />
 
 			<section class="py-4 md:py-24 bg-white" style="background-image: url('/images/elements/pattern-white.svg'); background-position: center;">
 				<div class="container px-4 mx-auto w-full md:w-1/2">
