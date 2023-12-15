@@ -4,6 +4,7 @@ location:
   name: 'Dynatrace'
   address: 'Höttinger Au 74, 6020 Innsbruck'
   url: 'https://careers.dynatrace.com/locations/innsbruck/'
+  logo: 'dynatrace.svg'
 talks:
   - avatar: '2312-johannes.jpg'
     name: 'Johannes Troppacher'
