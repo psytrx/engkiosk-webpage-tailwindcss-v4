@@ -1,0 +1,1098 @@
+{
+    "language_code": "de",
+    "audio_url": "https://cloud.inlupus.at/s/GACA36stsWnbjaD/download/ep103_dev_platforms.mp3",
+    "punctuate": true,
+    "format_text": true,
+    "dual_channel": false,
+    "webhook_url": null,
+    "webhook_auth_header_name": null,
+    "webhook_auth_header_value": null,
+    "audio_start_from": null,
+    "audio_end_at": null,
+    "word_boost": [],
+    "boost_param": null,
+    "filter_profanity": false,
+    "redact_pii": false,
+    "redact_pii_audio": false,
+    "redact_pii_policies": null,
+    "redact_pii_sub": null,
+    "speaker_labels": true,
+    "speakers_expected": 3,
+    "content_safety": false,
+    "content_safety_confidence": null,
+    "iab_categories": false,
+    "custom_spelling": null,
+    "disfluencies": false,
+    "sentiment_analysis": false,
+    "auto_chapters": false,
+    "entity_detection": false,
+    "summarization": false,
+    "summary_model": null,
+    "summary_type": null,
+    "auto_highlights": false,
+    "language_detection": false,
+    "speech_threshold": null,
+    "id": "92563858-0e97-4cc0-bc24-e78148232d8d",
+    "status": "completed",
+    "error": null,
+    "utterances": [
+        {
+            "text": "2023 wird als das Jahr der Effizienz bezeichnet. Viele Firmen schauen sich im Detail an, wie die Arbeit der eigenen Softwareentwicklungsteams effizienter gestaltet werden kann. Die Bereiche Infrastruktur, Cloud, Buildpipelines, Deployment & Co. stehen oft im Mittelpunkt der Frage, was kann optimiert werden, damit wir uns schneller bewegen. In der Regel dauert es nicht lange, bis die Buzzwords interne Developer-Plattform, Developer-Experience und Platform-Engineering fallen. Doch worum geht es eigentlich beim Platform-Engineering? Was ist eine interne Developer-Plattform? Genau darüber sprechen wir heute mit unserem Gast Pouya Abassi. Wir klären, was das alles ist, welche Probleme eigentlich gelöst werden sollen, wie eine erfolgreiche Plattform aussieht, was klassische Fallstricke sind, ab wann sich die ganze Sache eigentlich lohnt und noch vieles, vieles mehr. Wir springen direkt rein. Viel Spaß! In den letzten drei Jahren hat sich so ein Buzzword Bereich entwickelt, um den man eigentlich nicht herumkommt. Jetzt denken natürlich alle, ich spreche über AI, Artificial Intelligence, künstliche Intelligenz und so weiter. Nee, ich spreche heute mal über die Bereiche Developer Experience, Platform Engineering und interne Developer Plattformen. Warum ist das ein Buzzword? Meines Erachtens ist das ein Buzzword, weil sogar McKinsey davon Studien hat und veröffentlicht hat. Und besonders jetzt, Ende 23, bekommt das ganze Thema immer mehr Traction. Besonders im Infrastrukturbereich, Cloud-Bereich, Developer Experience. Jeder möchte Spaß haben beim Entwickeln. Und genau das ist das Thema für diese heutige Podcast-Episode. Und dafür haben wir uns einen Experten eingeladen. Und deswegen heiße ich willkommen Pouya Abassi.",
+            "start": 3868,
+            "end": 105237,
+            "confidence": 0.8145122950819668,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Hi, schön euch zu treffen.",
+            "start": 105697,
+            "end": 107559,
+            "confidence": 0.36219999999999997,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Puja, ganz kurz zu dir. Wer bist du? Du wohnst aus meiner Perspektive in der falschen Stadt, in Köln. Hast aber auch schon in China gelebt. Du bist genauso wie ich studierter Wirtschaftsinformatiker.",
+            "start": 107599,
+            "end": 122131,
+            "confidence": 0.8775151515151515,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Moment, ganz wichtig, Puja, heißt's China oder China?",
+            "start": 122171,
+            "end": 125934,
+            "confidence": 0.8220000000000001,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Ich würd's China aussprechen.",
+            "start": 126094,
+            "end": 129176,
+            "confidence": 0.49625,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Zieh den Kürzeren hier.",
+            "start": 129217,
+            "end": 130418,
+            "confidence": 0.43174999999999997,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Der Wolfgang kriegt hier einen drauf. Dein background ist nicht im software engineering oder im produkt dein background ist im bereiche data scientist. Oder data science besser gesagt danach warst du irgendwie developer advocate im bereich cloud bei der cncf und bist jetzt bei giants form dort hast du die stelle des vice presidents of product. Giant Swarm selbst beschreibt sich als Kubernetes as a service mit auf salopp gesprochen allem drum und dran nenne ich es mal. Euer Claim ist smarter Platform Engineering und ihr habt unter anderem eine App-Plattform. Da ist das Wort Plattform schon wieder von dem ich die ganze Zeit spreche. Du bist Cloud Native Computing Foundation Ambassador und zwei Fun Facts. Deine Webseite puja.dev hat ein invalides SSL-Zertifikat. Und du bist seit 2010 Doktorand an der Uni Köln. Das macht dich offiziell zu dem Gewinner heutzutage, denn du bist länger an deinem Doktor beschäftigt als der Prüfung. Ich hab gedacht, das geht nicht mehr. Jetzt möchte ich gerne eine Rechtfertigung zu deinem invaliden SSL-Zertifikat, währenddessen du CNCF-Ambassador bist, für Sicherheit für Cloud und Co. und bezüglich deines Doktors.",
+            "start": 130478,
+            "end": 209884,
+            "confidence": 0.805338797814208,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Also ich möchte schon mal sagen, dass das SSL-Zertifikat viel schlimmer ist, als länger am Doktor dran zu sein. Also da kann ich voll mitfühlen natürlich. Und es ist erst ein richtiger Doktor, wenn es zweistellig wird, die Jahresanzahl. Eindeutig.",
+            "start": 209924,
+            "end": 222570,
+            "confidence": 0.8262,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Der muss ja auch ein bisschen gären, der Doktor. Das SSL-Zertifikat, das wusste ich noch nicht mal. Unglaublich. Ich hätte jetzt echt ... Das ist mal ein Funfact, den ich noch selber nicht wusste. Wollte ich direkt mal gucken.",
+            "start": 223693,
+            "end": 237021,
+            "confidence": 0.6473333333333333,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Andi ist auf jeden Fall ein gutes Monitoring. Das kann man schon immer davon ausgehen.",
+            "start": 237061,
+            "end": 241304,
+            "confidence": 0.6948666666666666,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Jetzt muss ich mal ein Monitoring einstellen wahrscheinlich.",
+            "start": 241324,
+            "end": 243926,
+            "confidence": 0.744,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Es ist ... Unglaublich. Da scheint der Pod für die Let's Encrypt Renew-Geschichte abgeraucht zu sein, oder?",
+            "start": 245707,
+            "end": 251571,
+            "confidence": 0.6687647058823529,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "In der Tat, in der Tat. Das ist wahrscheinlich hier auf meinem Homecluster. Den hab ich auch vor Kurzem mal aufgesetzt.",
+            "start": 251631,
+            "end": 257255,
+            "confidence": 0.8158095238095239,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Aber genau darum setzt man ja eigentlich auf gewisse Tools und andere Plattformen, die einem das automatisieren und damit man eben diese Dinge nicht selber machen müssen. Aber jetzt für mich mal, für mich als Laien, ich bin ja hier in der Runde der, der am wenigsten Ahnung hat von dem ganzen CNCF-Bereich. Ich kann es auch nicht aussprechen, genauso wie Andi. Wie, Andi, wie heißt das ausgesprochen?",
+            "start": 257593,
+            "end": 279711,
+            "confidence": 0.8443088235294115,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Cloud Native Compute Foundation.",
+            "start": 280612,
+            "end": 281973,
+            "confidence": 0.4595,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Sehr schön, jetzt hast du es gesagt.",
+            "start": 281993,
+            "end": 283794,
+            "confidence": 0.3885714285714286,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Ich kann es auch jedes mal nicht.",
+            "start": 285477,
+            "end": 288741,
+            "confidence": 0.6489999999999999,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Ich vertausche immer, ich weiß jetzt nicht, ob er ist Cloud oder er ist Computing. Also Computing Native hört sich ein bisschen doof an. Okay, Cloud Native verstehe ich, aber es ist auch ein kleiner Zungenbrecher für Non-Native.",
+            "start": 289242,
+            "end": 299854,
+            "confidence": 0.681,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Also für mich als Laien unter Anführungszeichen, dieser ganze Bereich Plattform-Engineering, Developer-Plattforms oder Portale, dieses Wort schwirrt da auch immer in der Gegend herum. Kannst du mir mal eine Einführung geben, was bedeuten diese Worte eigentlich? Wo grenzt sich das Ganze ab? Ich war immer der Meinung, ich habe da Kubernetes und alles ist sowieso out of the box. Warum brauche ich da überhaupt noch eine Plattform oder was macht das ganze Ding da rundherum und warum brauche ich das eigentlich?",
+            "start": 300111,
+            "end": 327935,
+            "confidence": 0.7843580246913583,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Die Idee ist eigentlich gar nicht so neu. Wir hatten schon, weiß nicht, vor 15, 20 Jahren gab's die PaaS-Systeme, Heroku und diese ganzen Dinger. Man wollte eigentlich immer schneller entwickeln, also weniger Hürden im Weg der Entwickler haben. Vielmehr einfach Code pushen, und dann ist der irgendwann mal in Produktion. Und dann haben wir immer wieder neue Konzepte drumherum bekommen.",
+            "start": 329311,
+            "end": 356578,
+            "confidence": 0.8221639344262296,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Was wären das für Konzepte als Beispiel?",
+            "start": 358020,
+            "end": 360041,
+            "confidence": 0.5891428571428572,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Am Anfang haben wir eher so rund um Docker erstmal Containerisierung, dann hatten wir Microservices in dem Kontext auch, das sollte uns auch schneller machen als Entwickler und die Grenze zwischen dem Entwickler und dem Betrieb irgendwie auflösen. Dann haben wir irgendwie DevOps gehabt und dann haben wir gesagt, okay, Jetzt gibt es gar keine Grenze mehr, wir haben DevOps oder SRE, man sollte im Grunde eben DevOps-Team die Ownership mit rein, den Betrieb mit zur Entwicklung haben. Und dann irgendwann kam dann mal Kubernetes und alle dachten, ja, jetzt haben wir Kubernetes und damit haben wir das Problem gelöst.",
+            "start": 360081,
+            "end": 400045,
+            "confidence": 0.8007799999999997,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Genau, Kubernetes löst alles. Das war auch so meine Meinung. Du setzt Kubernetes ein, alle sind glücklich, alles ist gelöst.",
+            "start": 400669,
+            "end": 406372,
+            "confidence": 0.78255,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Da gibt es, glaube ich, auch diesen Dilbert-Comic zu. Du kannst keine Buzzwords nehmen, um Probleme zu lösen und dann sagt er, ja, Kubernetes. Das Problem war, dass irgendwann dann haben die Leute gemerkt, ja Kubernetes reicht ja auch nicht. Und Kubernetes war ja auch gar nicht dafür gedacht. Kubernetes, wenn man sich so anguckt, was so die Gründer Joe Bieder darüber gesagt haben, war im Grunde schon eine Plattform. aber eine Plattform, um überhaupt Entwicklerplattformen zu bauen. Kubernetes war ja nicht irgendwie direkt für den Entwickler gedacht. Und oft, am Anfang haben es ein paar kritisiert und irgendwann nicht mehr. Es ist schon nicht so einfach, mit Kubernetes umzugehen. Und dann kam ja im Grunde das ganze Ökosystem, ist da drumherum aufgepoppt. Das ist das Ganze, was wir jetzt Cloud Native Computing Foundation, hab ich's richtig ausgesprochen?",
+            "start": 406672,
+            "end": 459920,
+            "confidence": 0.7797681159420289,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Aber wenn du jetzt Entwicklerplattform sagst, was heißt Entwicklerplattform für mich? Wenn ich jetzt als Entwickler eine Entwicklerplattform verwende, was macht die für mich?",
+            "start": 460560,
+            "end": 470484,
+            "confidence": 0.8135416666666667,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Also im idealsten Fall löst die deine Probleme und beantwortet deine Fragen. Das heißt, als Entwickler habe ich irgendwie, mein Job ist, Code zu schreiben und hoffentlich ins Produkt zu integrieren oder ein neues Produkt irgendwie in Produktion zu bekommen. Und dafür brauche ich am Anfang, muss ich wahrscheinlich wissen, wie machen wir das bei uns in der Firma? Gibt's da irgendwelche Standards? Gibt's da irgendwie schon APIs, Services, die ich nutzen kann? Und ich muss auch wissen, wie kriege ich das denn deployed? Auf welche Infrastruktur, was muss ich nutzen? Gibt's bestimmte Pipelines, die ich nutzen kann oder muss? Und ich will mir das hoffentlich auch nicht alles selber bauen müssen. Sondern hoffentlich, je nachdem wie entwickelt, wie weit entwickelt diese Plattform ist und wie automatisiert, kriege ich da relativ viel von der Plattform geliefert.",
+            "start": 470524,
+            "end": 527965,
+            "confidence": 0.8395441176470587,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Das heißt aber auch, es ist wirklich vor dem Deployment auch schon, also irgendein Code-Style-Guide oder solche Dinge, sollte mir diese Plattform dann auch schon liefern, diese Informationen.",
+            "start": 528025,
+            "end": 537816,
+            "confidence": 0.8462500000000001,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Ja, im weiteren Sinne der Plattformen oder auch so ein bisschen der Hintergrund, wo diese Portale herkommen und die Lösungen für Portale, war im Grunde die Discoverability von internen Entwicklerlösungen besser hinzubekommen.",
+            "start": 538710,
+            "end": 556318,
+            "confidence": 0.82921875,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Aber ist dann mein Big Key, das ich da intern habe in meiner Firma, ist das dann auch schon eine Entwicklerplattform?",
+            "start": 556358,
+            "end": 563101,
+            "confidence": 0.7285714285714285,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Absolut. Und ich glaub, ich hab letztens noch mal so ein Talk über diese Team Topologies über das Buch gehört von den zwei Autoren, und das ist von vier Jahre her, der Talk. Und da sagen die schon, die dünnste Plattform, die ich mir bauen kann, ist im Grunde Dokumentation. Und ob das jetzt ein Wiki ist, in supervielen Firmen jetzt noch, das ist das Confluence im Grunde, oder zumindest der Einstiegspunkt in die Plattform. Da ist auch vielleicht so ein bisschen der Unterschied zwischen, was ist jetzt wirklich die Plattform und was ist das Portal. Das ist, muss ich sagen, sehr blurry in letzter Zeit, gerade in diesem Hype, gerade mit aktuellen Tools, die da rausgekommen sind, wie Backstage. Die haben ein bisschen das verschwommen, verschwemmen lassen, oder wie nennt man das?",
+            "start": 563766,
+            "end": 608245,
+            "confidence": 0.7777518796992482,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Vielleicht in einem Satz, was ist Backstage? Ist es das Wiki++ sozusagen?",
+            "start": 608825,
+            "end": 614588,
+            "confidence": 0.7234166666666667,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "In der Tat, das ist so ein bisschen das Wiki++. Das kam aus Spotify heraus. Die haben sich ihr internes Wiki gebaut, wo sie ihre internen APIs dokumentiert haben, aber auch, wie setze ich jetzt ein neues Java-Projekt auf? Das ist so das Interne, die Herkunft gewesen. Und dann haben die so ein Plugin-Modell damit reingebaut, dass man halt auch die anderen Interfaces, die man so hat als Entwickler, weiß nicht, vielleicht ein Grafana oder irgendwelche anderen Interfaces, auch von diesem Portal aus ansteuern kann. Und das hat sich mittlerweile, das ist jetzt auch ein Open-Source-Projekt, ist in der CNCF, das hat so ein bisschen, das ist so gehypt in letzter Zeit. Dadurch, dass das eigentlich nur ein Interface ist, eins von vielen hoffentlich, Aber dass das so bekannt ist und sogar C-Level-Leute reden davon, dadurch verschwimmt so ein bisschen die Grenze zwischen Plattform und Portal. Weil alle denken, dann stelle ich mir dann halt so ein Portal hin und dann habe ich eine Plattform, oder?",
+            "start": 614648,
+            "end": 672192,
+            "confidence": 0.8007108433734939,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Aber was bringt mir dann dieses Portal gegenüber meinem Wiki? Also warum kann ich nicht bei meinem Confluence bleiben?",
+            "start": 672972,
+            "end": 679319,
+            "confidence": 0.7381052631578948,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Das kann man sehr gut. Also ich würde sagen, also für viele, je nachdem, also für viele Firmen könnte so ein Confluence oder Wiki innerhalb von welcher Wiki-Umgebung man auch gerne sich befindet, absolut alle Anforderungen erfüllen. Das einzige, was jetzt so ein Portal, gerade wenn es jetzt ein Open-Source-Portal mit sich bringt, ist, dass dadurch, dass man so ein bisschen so eine Plug-In-Funktionalität hat, halt auch andere existierende Interfaces und andere, ja, im Grunde Tools in der Toolchain sich schneller da rein integrieren und ich nicht alles selber schreiben muss.",
+            "start": 680225,
+            "end": 719840,
+            "confidence": 0.8351208791208791,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Was wäre da so ein Plugin, was ich jetzt mit einem klassischen Wiki eher schwer einbinden könnte?",
+            "start": 720481,
+            "end": 725746,
+            "confidence": 0.7650588235294118,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Also was man zum Beispiel super oft sieht ist GitHub GitLab, also je nachdem, was für ein Git man da nutzt, dass man das direkt da mit drin hat. Und daraus dann zum Beispiel, sobald ich eine Komponente sehe, also ich gucke mir eine Komponente zum Beispiel im Portal an, die vielleicht anderes Team gerade entwickelt und ich kann mir die API dazu angucken, aber ich kann halt auch direkt nach GitHub springen und mir den Code angucken. Und das ist halt alles da einfach integriert, ohne dass ich dann unterschiedliche Webseiten besuchen muss. Und vielleicht sehe ich sogar das Grafana und sehe, ob der Service ganz gut läuft oder ob der viele Fehler hat.",
+            "start": 726066,
+            "end": 763672,
+            "confidence": 0.814852173913043,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Also was ich in meinem klassischen Wiki über irgendwelche Templates manuell lösen müsste oder so, wird dann halt automatisch über so ein Plugin eingebunden.",
+            "start": 764322,
+            "end": 772805,
+            "confidence": 0.81325,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Ja, genau.",
+            "start": 773305,
+            "end": 775345,
+            "confidence": 0.6455,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Also eigentlich geht es darum, ich als Softwareentwickler habe eine neue Applikation, die möchte ich jetzt in Produktion bringen und ich schaue mich in meiner Organisation um, in meinem Ecosystem, ok, welche Logging Library kann ich verwenden. wo kann ich das deployen wo sich meine metriken und co also eigentlich ich sag mal so eine so eine art self service wie kriege ich denn jetzt mein produkt an den kunden und das natürlich mit allen sicherheitsstandards der firma das kann auf der einen seite jetzt durch playbooks runbooks oder tutorials in irgendein wiki sein da folge ich oder ich kann wie jetzt Spotify Backstage, eine tolle Web-UI, wo ich sagen möchte, da ist mein Git-Repo, klick, bau mir alles zusammen und dann passiert irgendeine Magie dahinter und dann kriege ich eine Adresse zurück und dann ist mein Ding live.",
+            "start": 775385,
+            "end": 823866,
+            "confidence": 0.8288848920863312,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Kann man das so zusammenfassen? Ja, ich würde sagen schon. Und gerade, ich glaube, dieser Self-Service-Charakter, das ist so das, was mittlerweile irgendwie sich hinzu, ja, entwickelt hat. Weil ich glaube, das hatten wir früher noch nicht so. Man sieht oft, gerade in größeren Firmen, dann sind da diese 17 Seiten Formular, die ich ausfüllen muss. Und bis ich irgendwie eine Entwicklerumgebung bekomme oder meine VM gestartet, VM wäre im Hintergrund oder auf dem Cloud Provider der Wahl, Und genau diesen Self-Service halt, ne, jetzt auch automatisiert zu bekommen, das ist wahrscheinlich der Punkt, der sich in modernen Entwicklerplattformen, wo sich moderne Entwicklerplattformen auch ein bisschen absetzen von dem, was ich bisher nur mit Wikis und Confluence hinbekommen konnte.",
+            "start": 823886,
+            "end": 872807,
+            "confidence": 0.8230924369747901,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Also, eigentlich kann man sagen, wo ich früher die Applikation, das tar.gz, das JAR-File, das GoBinary über die Wand geschmissen hab, Der Betrieb, die Ops-Leute haben das dann irgendwie gemacht. Das kann ich jetzt dann alles, also im Optimalfall kann ich das dann alles selber.",
+            "start": 873468,
+            "end": 889688,
+            "confidence": 0.8580444444444445,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Genau, es ist so ein bisschen im Grunde eben die DevOps-Version von dem, was früher mal Entwickler-Enablement war.",
+            "start": 889748,
+            "end": 897859,
+            "confidence": 0.7650000000000001,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Also im Prinzip ist es die Software, die man dazu braucht, sinnvoll DevOps, dieses DevOps-Mindset, wie mir der Andi beigebracht hat, das ist ja keine Position, sondern ein Mindset, erklärt er mir jedes Mal, dass man dieses Mindset eben sinnvoll umsetzen kann oder diese Software und die Toolchain dieses Mindset zusätzlich noch unterstützt.",
+            "start": 898391,
+            "end": 916428,
+            "confidence": 0.829811320754717,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Genau, und Andi hatte eigentlich auch einen sehr guten Punkt, dass man halt auch alle Services, die du so drumherum um den Entwickler so schwörend, dass man die sehr direkt integriert in diesen Service und sagt, okay, von Anfang an, wenn du jetzt startest mit deinem neuen Softwareprojekt, kriegst du schon deine Observability-Umgebung und hast schon die ganzen Security-Standards integriert. Und das ist da, wo richtig Plattformen halt auch viel Arbeit abnehmen können. Was natürlich aber auch schwer ist, weil was ist, wenn dann mal ein neuer Security-Standard reinkommt? Wenn ich die ganze Zeit nur Repositories geforkt habe und Templates, dann habe ich wahrscheinlich keine Versionierung da drin. Und das ist das, wo so die Komplexität in die Plattformen kommt und wo die meisten Plattform-Teams dann auch meistens in Probleme kommen, wie Wie rolle ich einen neuen Service aus oder Änderungen an bestimmten Teilen meiner Services?",
+            "start": 917008,
+            "end": 977684,
+            "confidence": 0.8306712328767125,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Ich stell mir grad die Frage bei ganzen Hyperscalern, Google und Amazon. Bei Google gibt's Google App Engine, bei Amazon gibt's Elastic Beanstalk. Da schmeiß ich auch nur eine Binary hin oder einen Container, einen Docker-Container oder Ähnliches, und dann läuft das Ding. Ist es das nicht schon? Also, ich mein, ist das, was die Hyperscaler zur Verfügung stellen, nicht schon meine Entwicklerplattform, mein Developer-Enablement?",
+            "start": 978132,
+            "end": 1002308,
+            "confidence": 0.7671076923076923,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Ich denke, für gewisse Use Cases ja, und genauso wie es damals Heroku ganz viele Probleme gelöst hat. Aber das, was wir, glaube ich, gerade so rund um die Docker-Szene, die Kontainerisierungs-Szene so ein bisschen gesehen haben, war schon damals, dass mit so viel Automatisierung stößt man immer wieder an die Grenzen dieser Plattform. Und das, was aktuelle Plattformen, gerade so aus der Open-Source-Welt und aus der eher offenen Software-Welt wie der CNCF, anders versuchen zu machen zumindest, ist, die Plattform offen zu halten und nicht mehr den End-User, im Grunde den Entwickler als Kunden dann nicht mehr komplett auszusperren, sondern Transparenz zu schaffen. Und wenn der Entwickler ein bisschen über seine Wand hinwegschauen will und sagen will, okay, ich gucke mir das mal an, wie das im Hintergrund läuft, vielleicht brauche ich ja mal mehr, dass man dem dann auch wirklich die Möglichkeit gibt, zumindest eine Änderung an der Plattform zu beantragen.",
+            "start": 1003185,
+            "end": 1066912,
+            "confidence": 0.8606209150326798,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Wenn ich das richtig verstehe, dann ist ja die CNCF, obwohl da Cloud so im Vordergrund steht und vorne dran steht, ich kann ja alles, was in dem Ecosystem herumschwirrt, auch bei mir im Data Center on-premise einsetzen, oder? Also Private Cloud oder gar keine Cloud, wenn man so will, funktioniert ja genauso, ohne dass ich jetzt von Google oder EWS spreche.",
+            "start": 1067270,
+            "end": 1089350,
+            "confidence": 0.8386774193548385,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Genau. Wie wir das in der CNCF immer sagen, es geht nicht um Cloud, es geht um Cloud nativ. Also, dass die Entwicklung und das Tooling und die Prozesse so sind, wie man sie oft automatisiert von Cloud-Providern gewohnt ist. Ob das aber wirklich auf Bare-Metal oder auf privaten VM-Umgebungen läuft, das ist egal. Und das ist auch etwas, was groß gefördert wird natürlich. Nicht jede Industrie kann in die Cloud und nicht jeder will in die Cloud.",
+            "start": 1089710,
+            "end": 1122964,
+            "confidence": 0.8285769230769233,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Du hattest gerade schon oder schon ein paar mal Heroku als gutes Beispiel erwähnt und man muss ja schon sagen, damals hat Heroku ja schon einen neuen Goldstandard gesetzt, wenn man so möchte. Ich habe gerade noch mal in die Dokumentation geguckt, wie startet man eigentlich eine Deployment-Plattform auf Heroku und man lädt sich ein CLI runter, tippt Heroku Create und dann Git push Heroku Main. Und dann läuft deine App. Und da muss man ja schon sagen, wow. Ist ja schon Respekt. Und dann kannst du mit Heroku Logs, siehst du all deine Logs. Mit Heroku Scale kannst du deine Plattform hochskalieren und runterskalieren. Und da frage ich mich, wenn ich mich jetzt zum Beispiel an Kubernetes heranwage, dann habe ich ja auch kubectl oder kubectl, das ist das CLI. Und dann mache ich ja auch kubectl apply und dann eine YAML-Definition, die unten drunter ja auch irgendwie sagt, da ist meine App. Ist dann nicht Kubernetes die Plattform selbst?",
+            "start": 1123004,
+            "end": 1185179,
+            "confidence": 0.8096708074534164,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "In gewissem Sinne ist Kubernetes eine Plattform. Das Problem mit Kubernetes ist, dass man muss sehr, sehr viele Definitionen schreiben. Es ist nicht nur so, dass ich dem einfach mein Git-Repo gebe und sage hier, das ist eine Go-App oder eine Python-App. Und der weiß dann, wie sie das ans Laufen bekommt. Sondern ich muss sagen, hier, da hängt mein Dockerfile. Das muss ich vorher schon gebaut haben. Ich brauche übrigens auch noch persistenten Speicher. Und dann musst du das bitte über einen Loadbalancer raus und über diese Domain noch mal rausziehen. Und dann muss ich vielleicht sogar irgendwelche Security-Einstellungen machen, Network-Policies, irgendwelche... Pod Security Standards reinbringen, und es wird dann immer, immer komplizierter, und je mehr Tools ich dann in diesem Kubernetes hab, ne, dann hab ich für Observability irgendwelche Observability-Tools, die muss ich dann auch nochmal dann damit ansprechen. Und dann hab ich ungefähr 15 YAML-Dateien, je nachdem, die ich dann schreiben muss, und als Entwickler steh ich dann da und denk, okay, das ist jetzt echt viel Arbeit. Morgen ändern sich die API-Versionen, dann muss ich das auch machen. Und daraus kam dann dieses Platform-Engineering oder diese Platform-Teams bei vielen Firmen, dass man gesagt hat, okay, irgendwie man muss den Leuten ein bisschen von dieser Arbeit abnehmen, weil das ist ja, zumindest innerhalb einer Firma, kann man da relativ viel standardisieren. Und so ein bisschen Abstraktion schaffen zwischen dem, was sehr, sehr mächtig ist in Kubernetes, und deswegen war es ja auch, ist es ja auch der Standard geworden, weil es sehr, sehr mächtig ist, und dem, was man wirklich als Firma dann wirklich am Ende braucht, im Grunde eben diese Abstraktion zu schaffen, aber dadurch, dass es Kubernetes ist, die Transparenz zu halten, dass, wenn der Entwickler dann sieht, oh, da hat die interne Plattform mir irgendwie zu viel Steine in den Weg gesetzt, dass man da danach noch was sagen kann und sehen kann, okay, hier können wir da mal vielleicht was ändern. Nehmen wir mal sehr gerne das Beispiel, ich habe ja ein Data Science Background. Mit dem Data Science Background denke ich mir immer, okay, eine der Plattformen, die ich auf Kubernetes zur Verfügung stellen könnte, wäre eine Data Science Plattform. Und als Plattform-Team denke ich mir dann, ja, dann brauchen die bestimmt GPUs und dann haben wir die GPUs in den Maschinen und dann mache ich da die Data-Science-Plattform drauf, vielleicht mit Kubeflow oder irgendwelchen anderen Tools und dann gebe ich den Data-Scientist das einfach. Dann kommt der Data-Scientist da an und sagt, okay, jetzt habe ich meine Jupyter-Notebooks und fülle das alles aus und das läuft auch alles cool, aber dann sehe ich, ah, das ist aber eigentlich nicht schnell genug. Ich weiß aber, dass ich, ich weiß nicht, TensorFlow zum Beispiel benutze und dass es dafür spezielle CPUs gibt, also spezielle TPUs zum Beispiel. Und dann könnte ich zum Beispiel als Entwickler, gerade wenn es irgendwie zum Beispiel Inner Source Plattformen gibt bei mir, vielleicht sogar ein PR machen und sagen, hier könnt ihr nicht bitte die Plattform ändern, dass ich auch TPUs bekomme und nicht nur GPUs. Und so stelle ich mir das so ein bisschen vor, diese Interaktion da ein bisschen besser, nicht mehr über die Wand werfen, auch nicht die Plattform, sondern ein besseres Kommunikationsmittel zwischen dem Entwickler und dem Plattform-Team zu schaffen.",
+            "start": 1186096,
+            "end": 1376392,
+            "confidence": 0.7984010791366902,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Aber umso mehr ich mir das so anhöre, umso mehr geht es auch in die Mindset-Richtung. Also ich habe nicht eine Plattform, eine Software, die Feature XYZ erfüllt, wie jetzt Kubernetes selbst, wo ich sage, okay, das ist einfach zum Verteilen von meinen Containern, sondern das ist eigentlich eine Mindset, eine Herangehensweise, wie ich meine Informationen an die Entwickler weitergebe und je nach Firma, je nach Entwicklungsstil, nach Flow sind es komplett unterschiedliche Systeme. Also das eine System ist dann vielleicht für Data Scientists, da verwende ich eben GPUs, die andere Firma hat die Information oder braucht die Information gar nicht oder hat andere Tools im Hintergrund, verwendet gar kein Kubernetes zum Beispiel. Also es ist super individuell, wenn ich das richtig verstehe. Es ist nicht jetzt die Wir sprechen von keiner Standardsoftware oder überhaupt keine Software eigentlich, sondern von einer Herangehensweise, wie ich Informationen und Knowledge im Allgemeinen, mein Wissen in der Firma speichere und zur Verfügung stelle und meine Pipelines den Entwicklern zur.",
+            "start": 1376432,
+            "end": 1436299,
+            "confidence": 0.7962969696969697,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Verfügung stelle im weitesten Sinne. Im Grunde, was man auch sieht, löst das nicht eigentlich schon alle Probleme. Und da sieht man meistens auch das Problem, dass die meisten Plattformen intern dann irgendwann früher oder später haben, ist, man hat angefangen, und das wurde einem ja auch so geraten, mit Technologie. Man hat gesagt, hol dir mal ein paar Kubernetes-Cluster und dann hast du keine Probleme. Und dann, ja okay, jetzt brauchst du GitOps, dann brauchst du ein GitOps-Tool, installier dir das auch. Ja, jetzt hast du das Problem gelöst. Am Ende hast du dann 15, 20, 25 Tools aus Open Source oder auch nicht Open Source installiert und betreibst sie auch, hältst sie up to date und versuchst die Sicherheitsanforderungen innerhalb der Firma da noch mit rein zu coden. Und das war dann deine Plattform. Und dann hat man sich aber angeguckt, ja, die Entwickler benutzen aber gar nicht so viel meine Plattform. Oder manche benutzen es, manche nicht und so richtig zufrieden sind sie nicht. Und das war halt im Grunde das, wo jetzt, glaube ich, erst vor kurzem ein bisschen besser verstanden wurde so, wir müssen vom Mindset ein bisschen wieder zurückgehen zu diesem Developer-Enablement. Das war ja eigentlich, was wir machen wollten. Mit all unseren Tools, seit Docker rauskam, wollten wir den Entwickler glücklich machen. und am ende haben wir ganz viel technologie dahingesetzt und ob der entwickler wirklich jetzt glücklich ist oder nicht so richtig haben wir uns da oft nicht so die gedanken gemacht aber ich finde du.",
+            "start": 1436339,
+            "end": 1528111,
+            "confidence": 0.7963622047244093,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Sprichst da gerade ein super spannenden punkt an weil in meiner karriere habe ich immer wieder versucht das software engineers on call zu kriegen also sie auch wirklich ich sag mal für den betrieb zu begeistern und dass sie dann auch für den betrieb verantwortlich sind und Es hat mich immer sehr, sehr viel Zeit, Kraft und, ja, Energie gekostet, diese Menschen umzustimmen und, ich sag mal, eine positive Quintessenz daraus zu kriegen. Und dieses ganze Plattform-Engineering, hab ich das Gefühl, geht irgendwie in die Richtung, wir versuchen, die ganze Komplexität, die du ja grad auch beschrieben hast, ja, du hast ja Kubernetes mit Gitlobs und Ingress und alles, was dazugehört, wegzuabstrahieren. Vielleicht sogar wie Heroku auf ein Git-Push. Git-Push, man geht einen Kaffee holen, das Ding ist live. Und wenn ich mir das dann so ansehe, da steckt eine ganze Menge hartes Software-Engineering hinter, würde ich sagen. Um das auf jeden Fall so einfach und so weit zu treiben, dass die Entwickler sagen können, wow, mein Deployment hat Spaß gemacht. Weil offengesprochen habe ich so noch nie gehört, dass irgendjemand gesagt hat, geil, ich darf wieder deployen, das macht Spaß.",
+            "start": 1528131,
+            "end": 1595367,
+            "confidence": 0.7911570680628274,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Aber wenn ich das jetzt richtig verstehe und wenn ich mich jetzt mal in die CTO-Rolle begebe oder CEO-Rolle, vielleicht noch schlimmer. Jetzt habe ich schon früher mein gutes altes Ops-Team gehabt. Das waren drei Leute, die haben sich um alles gekümmert. Dann sind die komischen Entwickler da und Entwicklerinnen angekommen und haben gemeint, wir wollen DevOps da mit neuem Mindset und gibt noch irgendwelche DevOps-Teams oder SRT-Teams. Und jetzt brauche ich ein Plattform-Team auch noch. Die kommen ständig mit neuen Teams um die Ecke und ich brauche immer noch mehr Leute. Und eigentlich machen wir das Gleiche, was früher meine drei Ops-Leute ja auch gemacht haben. Oder sind es überhaupt drei unterschiedliche Teams? Oder wie sieht es in der Realität denn aus?",
+            "start": 1596267,
+            "end": 1635999,
+            "confidence": 0.8202845528455284,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Ich denke, in der Realität gab es da eine Entwicklung auch. Also auch die drei Ops-Leute waren irgendwann mal, haben sie sich eher als SRE verstanden als Ops-Leute, teilweise vielleicht auch, um eine bessere Karriere machen zu können, weil das ein trendiger Titel ist. Aber hoffentlich halt auch wirklich im Sinne von damals SRE, im Sinne von, dass man mehr automatisiert in seinem Job. Und mit DevOps halt auch wirklich zumindest das Verständnis zwischen den Welten von Betrieb und Entwicklung ein bisschen glatt zu ziehen und Ja, im Grunde dieses Verständnis zwischen Developern, also Entwicklern, und dem Betrieb, der war ja nie da. Im Grunde hatten wir halt immer das typische Über-die-Mauer-Werfen. Was DevOps ja zumindest vom Konzept ein bisschen geschaffen hat, ist, dass sich beide Seiten ein bisschen mehr Gedanken machen umeinander. Auch in manchen Fällen ein Team werden. In manchen Fällen sind es dieselben Personen, wenn man dann endlich mal auch jemanden da hat, der als Entwickler auch On-Call für seinen eigenen Service macht. Ja, der ideale Fall in DevOps. Was man aber dann oft hat, ist so, dass, um einen Entwickler da hinzubekommen, dass die dieses DevOps-Mindset durchziehen können, brauchen die relativ viel Hilfe. Deshalb hat man gesagt, okay, statt jetzt einfach nur den Betrieb auszulagern, haben wir jetzt ein Team, das Plattform-Team, das baut im Grunde eine Automatisierung dieser ganzen Geschichten, sodass sich halt kein Entwickler mehr und kein Betriebsleiter, also auch kein Operationsperson mehr drum kümmern muss, sondern dass die Plattform sich darum kümmert und ich diese Leute, die sonst früher viel Zeit drauf aufgewendet haben, ihre eigene Infrastruktur da hochzuziehen oder auch einfach nur die Infrastruktur, die im Betrieb dann betrieben wurde, zu nutzen, weil die halt doch relativ viel Komplexität oben drüber hatte, dass ich deren Köpfe ein bisschen frei bekomme und die wieder darauf fokussieren kann, dass die wirklich Produkte bauen.",
+            "start": 1636860,
+            "end": 1764354,
+            "confidence": 0.8317831715210351,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Also in der Realität sind es dann SRE und Plattformen sind normalerweise unterschiedliche Teams oder in größeren Firmen zumindest unterschiedliche Teams.",
+            "start": 1764494,
+            "end": 1773279,
+            "confidence": 0.8690476190476191,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Oft sieht man das. Also das Plattform-Team arbeitet doch oft sehr auch selber als SRE oder selber in einer SRE-Rolle, zumindest für die Plattform selber. Für die Workloads, also für im Grunde die Software, die dann auf der Plattform läuft, sieht man sehr unterschiedliche Konzepte. Oft ist ein SRE im DevOps-Team. Ein Teil des DevOps-Teams oder des Produkt-Teams sind auch SREs. Das heißt, ich habe Softwareentwickler und vielleicht Produktler und UXler, aber Dann habe ich dann auch Leute, die sich als SRE fühlen und dann für die Reliability des Softwareprodukts verantwortlich sind.",
+            "start": 1773359,
+            "end": 1810477,
+            "confidence": 0.8406413043478259,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Jetzt hat das Management der Wolfgang, unser CTO, CEO, die McKinsey-Studie gelesen, kommt Montagmorgen in die Firma und sagt, Mädels, Jungs, wir brauchen sowas, wir brauchen eine Developerplattform. Die erste Frage, die ich mir stellen muss als Mittelmanagement, ab welcher Größe, welcher Firmengröße lohnt sich sowas denn überhaupt? Brauche ich eine komplett Self-Service automatisierte Developer-Plattform, wenn ich fünf Software-Engineers habe?",
+            "start": 1810517,
+            "end": 1838768,
+            "confidence": 0.7871166666666671,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Das ist echt eine gute Frage, die habe ich mir in letzter Zeit auch öfters mal gestellt. Ich habe mit ganz vielen Unternehmen in letzter Zeit versucht mal zu sprechen und zu gucken, was wäre denn deren ideale Plattform oder was sind die Plattformen, die sie sich schon gebaut haben. Was man natürlich ganz klar sieht ist, je größer die Firma, desto mehr Vorteile bringt so eine Plattform, gerade wenn man sich diese ganzen Discoverability-Geschichten anguckt. Also in größeren Firmen hat man das eher, dass sich Leute beschweren, dass Entwickler noch nicht mal wissen, dass wir Database as a Service haben, intern zum Beispiel, oder dass es drei verschiedene Kubernetes-Services gibt innerhalb einer Organisation, wenn nicht noch mehr. Also diese Probleme, die sieht man natürlich viel, viel mehr, je größer die Firma ist und je globaler dann auch noch. Da kämpft man natürlich auch andere Kämpfe. Aber was mich überrascht hat, als ich mit kleineren Organisationen gesprochen habe, die vielleicht eben zwischen 10 und 15 Entwicklern hatten, dass die zwar gesagt haben, okay, hier unser Confluence oder unser internes Wiki ist, und wir sitzen auch alle im selben Raum oder sind alle im selben Slack und wir reden viel miteinander, wir brauchen den Teil eigentlich nicht. Aber am Ende, wenn man auch so den anderen Teil von Plattform, diesen reinen, diesen Automatisierungsteil sich anguckt, wie Andi das gerade meinte, von Git-Push zu Produktion und das durchautomatisiert, der Teil ist super interessant sogar für Kleine. Das ist so, wo die Augen der Entwickler anfangen zu glänzen und sagt, oh ja, das würde ich auch als Kleiner gerne haben. Hoffentlich muss ich es mir nicht selber bauen. Hoffentlich gibt es da ein Produkt. Wüsste ich jetzt nicht, ob es das auf dem Markt gibt. Viele versuchen es, glaube ich, gerade. Deswegen ist auch dieses Wort, Platform Engineering und Plattform, so am Trenden. Und ich glaube, jede Firma in der CNCF versucht gerade irgendwie, Plattformen für sich zu gewinnen und ein Produkt daraus zu bringen. Aber das ist so der Teil, der mich überrascht hat, dass sogar kleine Firmen an so Plattformen interessiert sind, rein durch diesen Automatisierungsgedanken.",
+            "start": 1839108,
+            "end": 1967194,
+            "confidence": 0.8138704225352114,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Deiner Erfahrung nach, woher kommt da eigentlich mehr der Druck von oben, von Management-Seite, die jetzt wirklich McKinsey gelesen haben, falls McKinsey das überhaupt empfiehlt, keine Ahnung, ob die schon soweit sind, oder kommt der Druck dann eher von unten und die Entwickler, die sagen, wir brauchen jetzt sowas, wir wollen so eine Plattform haben, um unser Leben einfacher zu machen? Und wissen die das überhaupt, dass es sowas gibt? Irgend so ein Tool, was mein Leben dann einfacher macht am Ende?",
+            "start": 1967760,
+            "end": 1995597,
+            "confidence": 0.8117804878048779,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Ich glaube, das hat sich über die letzten Monate oder über das letzte Jahr relativ geändert. Wenn es um Kontinuierung und Kubernetes ging, dann kam das relativ bottom-up. Das kam zumindest in der ersten Phase weniger von oben. Was man jetzt mit Plattform-Engineering und Entwickler-Plattformen sieht, ist, dass man viel öfters eben das in der, weiß nicht, Computerwoche oder irgendwelchen anderen C-Level-Magazinen darüber gelesen wurde und eben McKinsey redet darüber, Gartner redet darüber und hat Paper darüber, dass jetzt plötzlich auch von oben jetzt dieses Ding kommt, dass, oh, wir brauchen doch jetzt eine echte Plattform.",
+            "start": 1996131,
+            "end": 2036387,
+            "confidence": 0.8383333333333333,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Aber was ist dein Argument? Weil wenn das McKinsey empfiehlt oder Gartner, dann ist ja da meistens Geld irgendwo im Spiel. Ist es dann so klar, dass das dann am Ende finanziell irgendwie einen Vorteil bringt, für mich als CTO oder CEO so was einzusetzen? Weil sonst ist es ja für mich nur ein zusätzlicher Kostenpunkt und ich muss da jetzt eine teure Plattform kaufen und meine Entwickler funktionieren ja sowieso schon. Also der Andy schafft es ja sowieso was zu deployen und er ist in der Nacht auch erreichbar. Also was bringt mir so eine Plattform überhaupt, wo die jetzt als CEO natürlich denken.",
+            "start": 2037167,
+            "end": 2068465,
+            "confidence": 0.7746380952380952,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Ich glaube, was mittlerweile auch teilweise mit Daten gezeigt wird und deswegen ist es, denke ich, dann auch bei McKinsey und Co. ein bisschen größer aufgehangen, ist, dass es wirklich mittlerweile zumindest in manchen Cases bewiesen ist, dass es die Effizienz der Entwickler erhöht und dadurch, dass wir Im Moment natürlich auch noch immer ein bisschen aufs Geld gucken müssen in der Wirtschaft. Sind die Firmen natürlich auch immer daran interessiert, wo kann ich entweder Effizienz steigern mit dem, was ich bisher ausgebe, oder Kosten sparen auf der anderen Seite. Und das ist so der andere Teil von Plattformen, wo sich die Firmen dann denken, Okay, die Plattform standardisiert Sachen und bei einer standardisierteren Lösung kann ich mehr Effizienz auch aus der Infrastruktur rausholen oder halt auch zentralisiert dann solche Cost-Reduction-Maßnahmen durchführen.",
+            "start": 2069364,
+            "end": 2121237,
+            "confidence": 0.8549621212121215,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Ich meine jetzt gerade, ich glaube 2023 wurde auch als das Jahr der Effizienz betitelt. Und mehr und mehr Leute gucken halt jetzt wirklich auch auf ihre Cloud Kosten oder Infrastruktur Kosten deswegen kommen ja auch so so Movements wie FinOps hoch und solche Geschichten. Also da geht's dann natürlich schon in die Effizienzsteigerung wie du sagtest.",
+            "start": 2121637,
+            "end": 2140927,
+            "confidence": 0.7623684210526315,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Was ist denn FinOps?",
+            "start": 2140967,
+            "end": 2141847,
+            "confidence": 0.8350000000000001,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Financial Ops, also ein Team, was sich wirklich auf zum Beispiel die effiziente Nutzung der Cloud-Infrastruktur und auf die Berechnungen stürzt und so weiter. Aber die nicht nur sagt, mach mal Committed Use Discons, sondern halt deutlich weitergeht neben den Discons. Also wirklich ein Team, was sich um all so was kümmert. Ist relativ neu, kommt wie immer aus den Staaten, soviel ich weiß. Machen wir bestimmt auch mal irgendwann eine Folge zu.",
+            "start": 2142687,
+            "end": 2169036,
+            "confidence": 0.7788082191780822,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Da gibt es auch mittlerweile Firmen drumherum und ganze Projekte.",
+            "start": 2169256,
+            "end": 2173938,
+            "confidence": 0.5366,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Es ist ein Riesen-Movement gerade, weil es ist glaube ich, dass Cloud-Kosten in vielen Firmen wie Aktien gehandelt werden. Sie gehen immer nach oben. Das ist natürlich jetzt gerade in der wirtschaftlichen Lage nicht so super. Aber wenn wir jetzt schon ein bisschen über Kosteneinsparungen sprechen, du sagtest auch schon, Umso größer die Firma ist, umso mehr Software-Engineers da sind, umso mehr Applikationen deployed werden müssen, desto effizienter ist es natürlich, irgendwie eine Vereinheitlichung durch eine Plattform zu haben. Du sagtest aber auch gerade, das Ecosystem der CNCF ist relativ komplex und da gehört eine ganze Menge dazu, besonders wenn man von einem Git-Push zu einem Deployment kommt. Vielleicht sogar mit einer Custom-Domain und Zertifikate und temporären ... Valide Zertifikate. Valide Zertifikate, temporären Access-Tokens, Credential-Management, Log-Access, Tracing vielleicht noch, Open-Telemetrie und all das, was dazugehört. Dann ist es natürlich firmenseitig schon ein Rieseninvestment, was man da stemmen muss. Das, was ich jetzt grad gesagt hab, in meinem Kopf hört sich das nicht nach zwei Wochen Arbeit an. Und da frage ich mich auch, okay, wie erwachsen muss denn eine solche Organisation sein? Also, in welchem, ich sag mal, Maturity-Level, welche Level muss die Firma schon durchgespielt haben, dass man überhaupt an so eine Plattform denken kann? Oder sagst du auch, du kannst auch jetzt noch beim klassischen Ops-Betrieb, und ich schmeiß meine Applikation über die Wand sein, dann überspringst du halt ein paar Level und gehst sofort zum Plattform-Engineering. Wie ist da deine Meinung?",
+            "start": 2173998,
+            "end": 2268364,
+            "confidence": 0.8039139344262293,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Ich glaube, von der Erwachsenheit ist es so, also von der Maturity in der Organisation geht es eher da, was wir zumindest mehr sehen, ist, man hat eh schon gewisse Plattformen oder Teile von Plattformen in den meisten Firmen gebaut. Und sei es, dass jetzt das eigene Team oder eines der Teams schon mal ein bisschen was für sich hat oder Unterschiedliche Teile der Organisation haben sich Plattformen gebaut. Und früher oder später erkennt jemand, dass es da doch auch Schmerzen gibt. Entweder mit der Entwicklung generell, wir pushen nicht so schnell in Produktion, wir releasen nicht so schnell. Oder auch, es gibt plötzlich jetzt drei verschiedene Insellösungen. Und so langsam müssen wir mal standardisieren. Es gab mal zwischendurch so diesen Trend, jedem die Freiheit zu lassen. Uber hat das ganz groß sich auf die Fahne geschrieben gehabt mit 2000 unterschiedlichen Entwicklern und 200 Teams, die jeder ihre Freiheit haben, alles Mögliche machen dürfen. Irgendwann ist man auch wieder zurückgerudert und gesagt, ja, so schön ist das nicht. Das ist total schmerzhaft und verbraucht auch echt viel Ressourcen und Kosten. Und jetzt müssen wir uns schon mal drum kümmern, da mehr zu standardisieren. Oft sieht man schon, dass erwachsen muss es nicht sein, aber es muss schon gewisse Schmerzen geben. Eine Organisation entwickelt sich kaum, wenn sie gut geht.",
+            "start": 2269224,
+            "end": 2353742,
+            "confidence": 0.8292831050228313,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Also es muss gewollt sein, auch von der Firma sozusagen. Überstülpen funktioniert in dem Fall, wie meistens so, wenn es um Mindsets geht, eher schwierig.",
+            "start": 2354022,
+            "end": 2363572,
+            "confidence": 0.8460799999999999,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Ja genau, das muss gewollt sein, also zumindest Teile der Organisation müssen es wollen. Und dann sieht man schon dann oft auch, dass eventuell eins der existierenden Teile, die vielleicht schon mal mit einer Plattform angefangen haben, dann halt auch versuchen, ihre Plattform rund zu tragen und zu etablieren in der Firma. und zu sagen, okay, lasst doch mal standardisieren auf diese Plattform. Wir haben da schon mal was angefangen. Wir fangen mal an zu reden mit mehr Teams und vielleicht auch mit anderen Business Units oder anderen globalen Subunternehmen, dass wir allen im Grunde dieselbe Plattform anbieten können. Und oft die, die es gut machen, sind dann die, die oft dann auch zeigen können, Guck mal, unsere Entwickler sind mit dieser Plattform schon sehr zufrieden und wir haben da auch schon einiges hingelegt. Auch Management ist da zufrieden, weil wir sind effizienter geworden. Wollt ihr das nicht auch haben?",
+            "start": 2363592,
+            "end": 2419300,
+            "confidence": 0.8099866666666665,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Jetzt wenn wir annehmen, da gibt es diesen Schmerz, von dem du jetzt gesprochen hast in der Firma und es gibt Leute, die das ändern wollen. Wo startet man denn dann am besten? Was können so Leute machen in der Firma, um überhaupt mal loszulegen oder was benötigt man in der Firma, jetzt abgesehen von dem Willen, da irgendwas zu ändern oder den Schmerz zu beheben oder eben das Ganze zu beschleunigen, die Pipelines zu beschleunigen, die EntwicklerInnen glücklicher zu machen am Ende.",
+            "start": 2419615,
+            "end": 2447228,
+            "confidence": 0.8484457831325302,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Ich denke, das, was man als erstes braucht, ist wahrscheinlich ein gewisses Level an Erlaubnis von oben, um überhaupt was zu machen. Und das Backing, das sieht man auch oft in Use Cases, die dann auch vielleicht mal in Talks vorgestellt werden. dass wenn das da ist, wenn das Backing vom Management da ist, dann dass solche Plattform-Projekte vielleicht, also zumindest, besser vorangehen, weil da eine gewisse Sicherheit im Hintergrund ist, dass man halt auch investiert in eine Plattform. Ohne diese Investition ist ja auch nicht genug Zeit, um so eine Plattform zu bauen. Man muss sich schon auch wirklich, also so eine Gruppe muss halt auch wirklich den Fokus dann drauf haben, so eine Plattform zu bauen, ohne jetzt nebenbei auch unglaublich viele andere Jobs zu erfüllen.",
+            "start": 2447748,
+            "end": 2494270,
+            "confidence": 0.7969609375,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Aber jetzt nehmen wir mal an, unser CEO hat da in der CT gelesen, das ist ein super cooles Ding und wir werden super effizient dadurch. Okay, und sie sagt, legt mal los, da sind zwei, drei Leute, macht mal einfach. Und die drei Leute, was machen die dann? Backstage installieren and that's it?",
+            "start": 2494290,
+            "end": 2515905,
+            "confidence": 0.8162962962962963,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Leider nicht. Das wäre natürlich schön, einfach eine Sache zu installieren.",
+            "start": 2515945,
+            "end": 2519386,
+            "confidence": 0.610090909090909,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Immer gedacht, Backstage ist das neue Kubernetes, dass wenn ich Backstage installiere, dass dann alles geregelt ist. Immer noch nicht. Die eierlegende Wollmilchsau scheint es immer noch nicht zu geben.",
+            "start": 2519426,
+            "end": 2528190,
+            "confidence": 0.7681333333333331,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Das scheint wirklich der Backstage-Hype zu sein. Hört man oft, wirklich. Gerade dann, wenn es von oben kommt. Es gibt auch schon Backstage. Kann man das nicht einfach installieren? Und das hat auch ganz viele Funktionen. Nur Backstage ist halt auch wirklich nur ein Portal, oder es ist als Portal gedacht gewesen. Und ein Portal ist per Definition eins von vielen Interfaces. Und gerade wenn man sich anguckt, eine Plattform ist ja ein Produkt, das für Entwickler gebaut ist. Also ich will ja Entwickler enablen. Ich will ja nicht, dass alle dahin kommen, wo ich die erwarte, sondern ich will den Entwickler da auftreffen, wo er sich eh schon befindet. Wenn der Entwickler sich in der IDE oder in GitHub oder auf der Kommandozeile befindet, will ich ja den Entwickler nicht dazu zwingen, dass der dann in eine WebUI, in ein Portal wechseln muss.",
+            "start": 2528210,
+            "end": 2578253,
+            "confidence": 0.8374791666666661,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Aber willst du mir jetzt erklären, Backstage hat kein Emacs-Plugin oder wo ich auf Emacs, auf Backstage zugreifen kann für meine Emacs-Entwickler?",
+            "start": 2578547,
+            "end": 2586233,
+            "confidence": 0.7495454545454546,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Absolut, oder mittlerweile VS Code Plugins. VS Code Plugins sind übrigens ein sehr, sehr effektives Tool für Plattformen, weil ich dem Entwickler im Grunde die Funktionalität da zur Verfügung stelle, wo vielleicht 60, 70 Prozent der Zeit verbracht wird. Und so schön ein Backstage und ein Portal ist, es löst im Grunde eigentlich hauptsächlich dieses Discoverability-Problem. Zu wissen, was ist da und wie nutze ich es? Das ist aber dann wirklich zu nutzen, das hilft das Portal meistens nicht, sondern ab irgendeinem gewissen Zeitpunkt habe ich dann meine Git-Repo und dann ist meine Arbeit eigentlich in Git. und in Merge Requests oder Pull Requests, und dann hoffentlich ist die Plattform so flexibel, dass sie mich auch innerhalb des Pull Requests unterstützt und sagt, hier in Produktion kommst du aber nur, wenn du diese Sicherheitsanforderungen auch mit implementiert hast. Und wenn du das nicht hast, dann siehst du das hoffentlich nicht erst später beim Deployment, sondern siehst es sehr, sehr früh, sodass du dann die zusätzlichen Informationen, die vielleicht für so ein Sicherheits-Setup gebraucht werden, die früh hinzufügen kannst.",
+            "start": 2586313,
+            "end": 2653982,
+            "confidence": 0.80285393258427,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Das heißt aber, Backstage an sich liefert mir gar nichts jetzt Security-technisch. Ich muss mir das im Hintergrund alles irgendwie selber zusammenconnecten, Glue-Code irgendwo schreiben oder halt Plugins verwenden, konfigurieren. Also ich muss wissen, was ich da mache am Ende und was meine internen Regeln sind Security-technisch, um da überhaupt was rauszubekommen. Wenn ich jetzt Backstage nur installiere, an sich ist es leer.",
+            "start": 2654367,
+            "end": 2678583,
+            "confidence": 0.8339047619047619,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Genau, das ist dann erstmal leer und dann kommen vielleicht ein paar Plugins für die Tools, die ich schon nutze, da rein. Und dennoch hilft es dann erstmal dem Entwickler nicht, jetzt die ganzen Sachen zu nutzen, was es dann doch noch mitgibt. Und das muss man dann gucken, ob man das innerhalb von Backstage nutzt oder in anderen Teilen der Plattform ist. Ich kann ein neues Projekt anlegen. Und dann hoffentlich ist dieses Projekt basierend auf einem Template, das ich intern habe, direkt mit bestimmten Sicherheitseinstellungen und gewissen anderen Standards in meiner Firma aufgesetzt. Wobei ich immer dazu raten würde, dass man nicht so viel Business Logic in ein Portal reinbaut. Also architektonisch gesehen sollte ich immer die Funktionen im Backend haben, also im Portal, im Plattform selber. Und das Portal ist nur ein Portal in diese Plattform rein. Aber ich kann ja auch Use Cases haben, dass ich plötzlich 10 neue Projekte einlegen muss oder 100 oder 100 existierende Projekte da rein importieren muss, weil ich eine Firma gekauft habe vielleicht. Und dann will ich natürlich da nicht jedes Mal in so ein Webportal und da rumklicken, sondern ich will eigentlich diese Aufgaben auch wegautomatisieren können.",
+            "start": 2678923,
+            "end": 2752303,
+            "confidence": 0.8314595959595957,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Und für mich jetzt nochmal zum Verständnis, Backstage speichert aber auch Daten ab. Also das ist schon, hält auch Daten grundsätzlich.",
+            "start": 2752343,
+            "end": 2760688,
+            "confidence": 0.8473333333333332,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Backstage hat so eine Mischung aus reinem Frontend und es kann auch Daten halten. Plugins können Daten halten und Backstage selber kann auch noch Daten halten. Das heißt, es bricht so ein bisschen mit der Architektur, die man von einem reinen Client oder Interface gewohnt ist. Oder es könnte dazu motivieren, dass man da Sachen reinbaut, die man dann nur noch in Backstage hat und die man nirgendwo anders zur Verfügung gestellt bekommt.",
+            "start": 2761135,
+            "end": 2787712,
+            "confidence": 0.8475753424657535,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Aber gibt mir dann Backstage so irgendwie Best Practices an die Hand oder sagt Backstage wirklich, es ist nur eigentlich ein Tool, um eine Plattform zu bauen oder ein Element von dieser Plattform? Oder gibt es da dann auch rundherum Best Practices oder irgendwelche Standards, die schon drin sind oder Vorschläge, was jetzt Security Standards wären oder Felder oder keine Ahnung. Gibt mir das irgendwas an die Hand oder muss ich da dann wirklich der Profi sein und wissen, was ich mache?",
+            "start": 2787932,
+            "end": 2815655,
+            "confidence": 0.8142682926829266,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Ja, leider gibt es sehr wenig in die Hand. Sogar wie man es nutzt, gibt es wenig Best Practices. Das kommt jetzt so langsam. Das kommt jetzt so langsam jetzt durch die CNCF und Backstage gehört auch zur CNCF. Kommt so langsam, nutzen es mehr Leute und machen sich natürlich jetzt auch Gedanken, wie nutze ich es am effektivsten. Und gerade in der cloud-nativen Welt ist man ja auch sehr API-zentrisch unterwegs. Da kommen schon bei den meisten dann irgendwann auch, kommen die auf die Architektur. Ich sollte meine Plattform eigentlich wahrscheinlich als automatisierte API anbieten. Und dann werde ich wahrscheinlich eine Dokumentation und ein Portal und eine CLI haben. Und dann kann ich mir mit der API meiner Automatisierung in die unterschiedlichen Tools einbauen. Leider muss ich mir das alles noch alles selber bauen. Das heißt, ich muss hingehen und sagen, okay, welche Tools brauche ich denn? Welche Pipelines habe ich schon? Oder welche CI-CD nutze ich schon? Kann ich die integrieren? Brauche ich da was Neues? Und im Moment heißt es meistens noch, dass man sich relativ viel Kleber dazwischen schreiben muss, um die ganzen Sachen zu verbinden und das halt wirklich zu automatisieren.",
+            "start": 2816095,
+            "end": 2886704,
+            "confidence": 0.8309846938775506,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Backstage gehört also nicht mehr Spotify, sondern CNCF.",
+            "start": 2886884,
+            "end": 2890928,
+            "confidence": 0.8438749999999999,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Genau.",
+            "start": 2890968,
+            "end": 2891128,
+            "confidence": 0.216,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Und ist jetzt ein offizielles CNCF-Projekt.",
+            "start": 2891148,
+            "end": 2893610,
+            "confidence": 0.7251666666666666,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Genau.",
+            "start": 2893770,
+            "end": 2894370,
+            "confidence": 0.599,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Und ist komplett open source in dem Fall.",
+            "start": 2894411,
+            "end": 2896953,
+            "confidence": 0.767125,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Genau, das Basisprojekt ist komplett open source. Da gibt es auch Riesen, mittlerweile glaube ich 900 Leute waren auf der letzten BackstageCon. Das ist eine Vorkonferenz zur KubeCon und die ist immer komplett ausverkauft. Da kommen richtig viele Leute. Ist, muss ich sagen, aber auch ein bisschen so ein Hype. Ich wollte gerade sagen, kommen wir mal.",
+            "start": 2896993,
+            "end": 2919306,
+            "confidence": 0.7328245614035087,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Wieder zurück auf den Teppich. Backstage, wir reden die ganze Zeit vom Portal und so weiter. It is a frontend, it is a website. Ist das richtig?",
+            "start": 2919326,
+            "end": 2925749,
+            "confidence": 0.6237407407407408,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Ja absolut.",
+            "start": 2926049,
+            "end": 2927211,
+            "confidence": 0.5665,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Und du redest gerade von einer Konferenz für eine javascript geschriebene Webseite nur das Frontend was eigentlich noch nicht die Applikations Logik also Backstage fährt ja kein kubernetes hoch Backstage macht ja keine DNS Propagation und Co.",
+            "start": 2927291,
+            "end": 2941612,
+            "confidence": 0.768081081081081,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Aber Moment, da gibt's schon ein Backend, oder? Wenn das Ding Daten hält, dann muss es ja auch ein Java-Backend oder sowas geben. Wenn Spotify ist, vermute ich mal, da ist Java irgendwo im Hintergrund, oder?",
+            "start": 2942493,
+            "end": 2951763,
+            "confidence": 0.7430555555555555,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Ne, also Backstage selber hat, ja klar, ein minimales Backend, aber es ist eigentlich nur das Frontend. Die eigentliche Automatisierung und die eigentliche Plattform, die man braucht, die muss schon irgendwo laufen. Und in der CNCF läuft die meistens irgendwie auf Kubernetes und als Kubernetes API, aber die muss man eigentlich schon haben. Und bei den meisten Firmen, die man sieht, also alle wirklich weiten, also die Firmen, die jetzt schon sehr erwachsen sind in der Cloud-Native-Computing-Foundation, die End-User, die haben sich so ein Portal ja auch schon gebaut. Da hat ja nicht jemand irgendwie sechs Jahre gerade gewartet, bis Backstage um die Ecke gekommen ist, sondern die meisten Firmen, die die Kubernetes nutzen und die sich Abstraktionen darum gebaut haben, haben dann auch schon Webseiten interne gebaut oder sich Templates in Confluence oder in Jira oder in andere Teile. Das heißt, die werden jetzt auch nicht direkt auf Backstage alle umsteigen. Es sind auch große Projekte, da gibt es bestimmt jetzt wieder Consultants drumherum, die jetzt Backstage integrieren über ein Jahr.",
+            "start": 2951783,
+            "end": 3015475,
+            "confidence": 0.7830697674418602,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Also ich mein, Backstage ist ja, ich sag mal, das Flaggschiff, was 2020 von Spotify, ich sag mal so, den ganzen Hype angetrieben hat. Und wenn ich mir jetzt mal hier diese Plugins ansehe auf der Backstage-Website, da gibt's ja auch noch eine ganze Menge. Also du kannst da ohne Probleme Backstage mit Kubernetes verbinden, mit hoher Wahrscheinlichkeit scannt der dann irgendwie deine Namespaces und deine Pods. mit Google Analytics, mit Apollo, also Graph APIs, Argo CD, AWS Cloud Formation und so weiter. Da gibt's also schon ziemlich viel, was man da, ich sag mal, mit, ja, Glue zusammenkleben kann. Was ich mich jetzt aber die ganze Zeit die Frage stelle, und zwar, du hast dieses, ich nenn's mal Frontend, es tut mir leid für alle Leute, die Backstage entwickeln, Du hast dieses Frontend, und du sagst ja auch gerade, gegebenenfalls ist das relativ falsch, die APIs in Backstage zu machen, weil du möchtest die Entwickler da abholen, wo sie sind, im GitHub, auf der CLI, im Visual Studio Code. Und mit diesen Plugins kommt man ja nur begrenzt weit. Besonders wenn ich jetzt an existierende Infrastruktur denke. Dann kommen wir irgendwann zu dem Punkt, oh, hier hätt ich jetzt eine Wall, eine Wand, und muss von hier weiter, damit ich mein Custom-Log-System anbinden kann. Und dann fängt ja, ich sag mal, die wirkliche Produktentwicklung des Plattformteams an. Und ich weiß nicht, was deine Erfahrung ist. Mein Software-Engineering-Background hat mir eigentlich gezeigt, dass Software-Entwickler relativ kacke sind, zu wissen, was Kunden wollen. Die denken immer, dieses technische Feature, das baue ich und danach bin ich reich.",
+            "start": 3016447,
+            "end": 3111139,
+            "confidence": 0.7872969924812031,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Du sprichst aus eigener Erfahrung, oder?",
+            "start": 3111179,
+            "end": 3112559,
+            "confidence": 0.5775,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Ich hab so viele Side Projects gegen die Wand gefahren. Ich hab noch nie mit einem Kunden gesprochen, sondern immer angefangen zu entwickeln. Und jetzt stell ich mir grad die Frage, wir bauen eine Plattform von Entwicklern für Entwickler. Ist das, was ich grad beschrieben habe, also ich denke, ich weiß, was die Kunden, nämlich meine anderen Softwareentwicklungskollegen, wollen. Ein Vorteil hier, weil ich domänenspezifisches Wissen habe, ich weiß, wie man eine App deployed, Oder sollte ich das eigentlich wie in einem klassischen Produkt machen, rausgehen, User Research und mich dann wieder ans Reißbrett setzen, um dann zu sagen, das bauen wir jetzt.",
+            "start": 3112991,
+            "end": 3149722,
+            "confidence": 0.8034660194174755,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Ich glaube, das ist genau die Fallacy eines Entwicklerprodukts. Alle Entwicklerprodukte oder viele Entwicklerprodukte haben gesagt, from engineers for engineers. Das stand auch immer auf den ganzen Startups in dem Bereich. Das hat sich ja jeder auf die Fahne geschrieben. Und das ist auch im Grunde dieser Mindset, dass man sagt, ich kenne meinen Kunden ja schon, ich war der selber. Ich war ja selbst Ingenieur. Ich bin ja auch noch Ingenieur, weil ich baue ja noch immer Software. Das hat sich aber geändert. Und das Problem ist, dass man das gar nicht wahrhaben will als Entwickler einer Entwicklerplattform, weil man ist ja Entwickler gewesen und man hat ja auch so ein bisschen den Stolz, nee, ich verstehe meine Kunden. Und die kommen ja auch daher und fragen mich nach genau den Fragen. und genau den Tools, die ich eh schon auf meiner Backlog hab und die ich nächste Woche installieren wollte. Und das hat am Anfang vielleicht ganz gut funktioniert. Am Anfang hat, glaube ich, auch die ganze Community und die ganze CNCF das auch gefördert, zu sagen, ja, Wir verstehen unsere Entwickler, weil wir sind auch Entwickler. Und ja, die wollen halt ein Kubernetes haben und die wollen diesen ganzen Kram haben, den wir denen da hinstellen. Das genau war das Problem. Deswegen hatten wir auch noch nicht mal Produktleute in den meisten Plattformteams oder in den meisten Firmen, die diese Entwicklertools geschrieben haben. Und das kam dann jetzt irgendwie erst vor kurzem, kam dieser Trend auf. Was ist denn eigentlich mit dem Produkt-Mindset? Haben wir nicht irgendwie den Entwickler vergessen? Und dann haben sich die Leute mal an die eigene Nase gefasst und gesagt, okay, ich bin jetzt als Plattform-Entwickler im Plattform-Engineering-Team oder im Plattform-Team, bin ich so oft schon und so lange schon in dieser Kubernetes-CNCF-Community, dass ich doch eigentlich die Scheuklappen auf habe. Und ich bin in meiner Bubble, in der Bubble, und ich kenne ja die ganzen Sachen, und für mich ist das einfach. In den echten End-User-Produkt-Entwickler kann ich mich gar nicht mehr reinversetzen. Und so offen muss man mit sich sein, das ist nicht jeder. Leider, viele denken noch immer, ey, ich verstehe den. Entwickler. Aber manche, und gerade auch jetzt eben dadurch, dass das so ein bisschen im Trend ist, das Thema, und dass jetzt Management auch so ein bisschen mehr in die Richtung guckt und da halt auch nicht mehr das ignoriert, dass es da Infrastrukturthemen und Plattformthemen gibt, werden Produktladern eingesetzt. Und dann ist die typische Lösung, ha, jetzt habe ich einen Produktmanager eingestellt für mein Produkt, für mein Plattformteam, jetzt habe ich es auch gelöst. Funktioniert leider nicht. Oft ist der Produktler dann eh auch sehr technisch, weil der muss ja verstehen, wie so ein technisches Produkt auch funktioniert. Der hat oft einen technischen Hintergrund. Und wenn nicht, dann gibt es da auch die Struggles, weil er dann einen Lead-Architekt oder einen Lead-Engineer neben sich braucht. Oft wird dieser Produktmanager sich nicht unbedingt durchsetzen. Und was wir viel mehr dann brauchen und was wir gemerkt haben, auch bei uns, ist, dass eigentlich jeder Entwickler in diesem Plattform-Team, in Plattform-Engineering, muss ein gewisses Product Mindset haben. Und das ist nicht einfach. Das hat schon immer nicht gut funktioniert, die Entwickler zu überreden, sich auch mal um den End-User Gedanken zu machen, und nicht nur einfach Code zu schreiben. Aber gerade bei Entwickler-Enablement ist es besonders schwer. Es ist besonders schwer, weil auch der Kunde dann ankommt und sagt, kannst du mir bitte Prometheus installieren oder Grafana? Sagt aber nicht, ich brauche jetzt Monitoring. Sogar Monitoring ist eigentlich die falsche Frage. Weil der eigentliche Job des Entwicklers ist, wie du schon meintest, der muss eigentlich nur Code in Produktion bringen. Und der einzige Grund, wieso ich irgendwelche Observability- und Monitoring-Tools brauche, ist, damit ich weiß, dass auch dieser Code einständig funktioniert oder wenn ich Probleme habe, um den zu debuggen. Und erst wenn ich mir um dieses Problem Gedanken mache, dann kann ich auch bessere Lösungen dafür finden. Und nicht einfach nur die Lösung, die ich schon immer hatte in der Firma, einfach durch ein neues Tool wieder unterstützen.",
+            "start": 3150387,
+            "end": 3390667,
+            "confidence": 0.8188432510885337,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Jetzt hast du gesagt, bisher haben ganz viele Firmen schon intern eben irgendwas dahin entwickelt und vielleicht fangen sie jetzt langsam an, auch eben dieses Product Mindset ein bisschen umzusetzen. Aber du hast auch die CNCF erwähnt, dass sie eigentlich sehr viel macht. Siehst du das Product Mindset in der CNCF? Die Idee ist ja immer, wenn das irgendwie so sehr viele Leute machen oder Leute machen, die sehr viel Erfahrung haben, dann haben die eben diese Erfahrung und machen es genau richtig. Entwickelt sich die CNCF in diesem Bereich, im Plattformbereich, in die richtige Richtung und gibt mir dann die CNCF auch diese Best Practices an die Hand, wo ich vielleicht das anders gemacht hätte als Entwickler, wenn ich jetzt nur vor mich hin entwickelt hätte?",
+            "start": 3391028,
+            "end": 3432157,
+            "confidence": 0.8175984251968507,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Ich muss sagen, bis vor kurzem hat die CNCF da nicht sehr viel getan, da war noch immer sehr, sehr groß dieses mehr Tools, noch mehr Tools und noch mehr Tools.",
+            "start": 3432797,
+            "end": 3441506,
+            "confidence": 0.8571612903225805,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Also auch auf der technischen Seite mehr geblieben bisher?",
+            "start": 3441546,
+            "end": 3443868,
+            "confidence": 0.8300000000000001,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Rein, sind ja alles technische Leute, die da arbeiten, oder man ist da sehr technisch. Aber was sich jetzt geändert hat, ich muss sagen, in den letzten anderthalb Jahren wahrscheinlich, ist, dass gerade mit diesem Trend von Plattformen gibt's eine Workgroup, die entstanden ist, rund um Plattformen und Plattform-Engineering, die nennt sich Workgroup-Platforms. Die ist Teil einer Tag, ich weiß gar nicht, wofür Tag steht übrigens, Aber Tech App Delivery. Es geht also um App Delivery, um Auslieferung von Software. Und dann hat man gesagt, okay, für die Auslieferung von Software brauchen wir mittlerweile Plattformen. Und da sollte sich vielleicht mal ein Teil der CNCF oder der Mitglieder der CNCF mal hinsetzen und in der Workgroup mal definieren, was so eine Plattform ist. Schon beim ersten White Paper, das da rauskam, rund um Plattforms, stand schon dieses Product Mindset mit drin. die haben im Grunde auch Ziele für Plattformen definiert, und die Ziele sind sehr, sehr produktlastig. Das Ziel ist eigentlich, auch die Hauptjobs eines Plattformentwicklers sind in dem Paper definiert als Ich mache Research rund um meine End-User und was die brauchen und baue eine Feature-Roadmap, also typisches Produkt. Und dann gehe ich rum und evangelize oder mache Marketing rund um meine Plattform. Das heißt, ich versuche, Product Market Fit zu finden. Und dann, ich glaube, der dritte Job war, ich brauche unterschiedliche Interfaces, also ein Portal, eine API, Dokumentation. Und das ist im Grunde nur noch der Teil, wo ich den Entwickler da antreffe, wo er schon ist.",
+            "start": 3443908,
+            "end": 3545072,
+            "confidence": 0.8152479999999998,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Heißt das dann, dass mir dieses White Paper eigentlich nicht erklärt, wie ich etwas zu lösen habe, sondern mir eigentlich nur Hilfe gibt, wie ich an die Informationen komme, damit ich weiß, wie ich meine Probleme lösen kann?",
+            "start": 3545092,
+            "end": 3556882,
+            "confidence": 0.8694999999999997,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Ja, ich glaube, das White Paper, also zumindest das erste White Paper, hatte eher als Ziel, überhaupt diesen Plattform-Gedanken und das Plattform-Engineering zu definieren und dabei dann auch klarzumachen, was ist denn da wichtig. Es geht jetzt nicht mehr um Technologie. Und die Leute, die das geschrieben haben, hatten doch relativ starken Tech-Background. haben aber wirklich sehr, sehr darauf geachtet, Technologie rauszulassen und zu sagen, was war denn eigentlich das Ziel hinter Plattformen und lasst doch wieder zurück dahin kommen, dass wir wirklich Entwickler-Enablement durchführen. weil Technologie haben wir mittlerweile genug und darüber müssen wir auch nicht reden. Es gibt natürlich immer wieder auch Leute in der Gruppe oder auch vielleicht auch Firmen, die der Gruppe beigehören, die dann versuchen, eher von der technologischen Seite zumindest die Lösung, die es bisher gibt, zu evaluieren. Das Ziel ist aber auch grundsätzlich in der Gruppe, nicht ein gewisses Tool herauszustellen oder einen Standard zu schaffen, was die Technologie angeht, sondern eher das Mindset glatt zu ziehen und zu sagen, okay, das ist das Mindset, das wir erwarten und mit dem man erfolgreich sein wird, hoffentlich. Und deswegen hat man dann auch in diese Richtung versucht, mehr Paper zu schreiben. Also es im Moment noch wäre weniger ein Entwicklungsgremium, sondern eher ein Research- und Blogging- und Konsensusgremium, wo dann nach der Definition einer Plattform haben wir uns dann Gedanken gemacht, und da bin ich ein bisschen dazugestoßen, war, was sind denn die unterschiedlichen Dimensionen einer Plattform, und wie können wir Maturity auf diesen Dimensionen definieren, das ist das Maturity-Model. Das kam jetzt gerade kurz vor CubeCon Chicago, ich glaube vor einem Monat ungefähr, raus. Wir haben aber auch wirklich auf einem höheren Level gesagt, es gibt zum Beispiel die Dimension Investment. Man kann rein ohne Investment starten. Das ist vielleicht so das erste Level. Ab einem gewissen Level an Maturity braucht man auch halt eben Investment und Buy-in von Management da drin. Oder eine andere Dimension wäre vielleicht Interface. Und man muss auch nicht alle Dimensionen immer komplett mature sein. Als kleinere Firma kann man sich auch auf niedrigeren Levels befinden. Also man braucht nicht das Non-Plus-Ultra-Interface und alles Mögliche an Automatisierung, wenn man nur 15 Entwickler hat wahrscheinlich.",
+            "start": 3557493,
+            "end": 3707312,
+            "confidence": 0.8144836065573775,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Und warum habe ich so ein Maturity-Level? Wer würde dann so ein Maturity-Level nutzen? Oder was nutzt es mir?",
+            "start": 3708241,
+            "end": 3715383,
+            "confidence": 0.7383157894736841,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Das Ziel, das wir damit hatten, war, sich einmal selbst einschätzen zu können und zu schauen, was sind die Ziele? Wo setze ich mir mein Ziel? bin ich im Moment auf dem Level, also in dieser Dimension Level 1, muss ich überhaupt zu Level 2? So ein bisschen zu beschreiben, wie sieht Level 2 aus und wann macht das überhaupt dann auch Sinn? Und sich halt auch ein bisschen so eine Roadmap aufbauen zu können auf den unterschiedlichen Dimensionen einer Plattform.",
+            "start": 3715403,
+            "end": 3745088,
+            "confidence": 0.8285185185185183,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Aber um auf die ganz ursprüngliche Frage zurückzukommen, was wir diskutiert haben, wenn ich jetzt neu losstarte, macht es Sinn für mich als neues Plattform-Team diese White Papers zu lesen? Also bringt mir das dann irgendwas oder für wen sind diese White Papers auch gedacht?",
+            "start": 3745842,
+            "end": 3761414,
+            "confidence": 0.8425555555555555,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Die White Papers sind schon auch eben für neue Plattform-Teams und deren Management gedacht, damit das Mindset im Grunde für so eine Plattform stimmt, damit man eben versucht, nicht irgendwie einfach nur Technologie-Klumpen da hinzubauen und eine sehr lange Backlog zu haben, sondern halt auch wirklich schaut, dass man guckt, okay, wie entwickeln wir zurzeit in der Firma, Und für mich ganz wichtig, auch da in diesem Produkt-Mindset, wo sind denn überhaupt die Probleme, die wir haben? Wenn wir gar keine Probleme gerade mit Infrastrukturprovisionierung haben, vielleicht muss ich da gar nichts machen. Vielleicht kann ich da irgendwo anders ansetzen, wo die Entwickler wirklich gerade Probleme haben. Das heißt, ich muss auch wirklich mit meinen internen Kunden reden.",
+            "start": 3762264,
+            "end": 3810115,
+            "confidence": 0.839220338983051,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Während ihr beide gesprochen habt, hab ich mir das White Paper und das Maturity Model aufgemacht. Das White Paper ist wirklich faszinierend. Wenn du sagst, das wird von technischen Leuten geschrieben, dann sag ich Chapeau, weil in diesem White Paper keine einzelne Technologie erwähnt, sondern wirklich ganz klar, warum eine Plattform, was ist eine Plattform, was sind Attribute eines Plattformteams, was sind die Herausforderungen, aber auch, sehr schön, wie man den Erfolg einer Plattform misst. Und da habe ich ganz kurz etwas gefunden, was ich von sehr, sehr vielen Technikern gar nicht erwartet hätte. Und zwar wird unter anderem über das Thema User Satisfaction und Productivity gesprochen. Und als Measurement-Kriterium wird der Net Promoter Score genannt, der meines Wissens nach aus dem Marketing sehr viel bekannt ist. Net Promoter Score, korrigiert mich bitte, falls ich das falsch sage, ist würdest du dieses produkt deinen freunden empfehlen oder würdest du dieses produkt aktiv aus deinem namen weiter empfehlen das ist glaube ich der promoter score und das auf eine interne developer plattform für developer experience übertragen, Muss ich zugeben, ist logisch, super, aber von reinen Technikern selten gehört bisher. Zum Maturity-Model fand ich's auch sehr schön, weil du hattest grad diese verschiedenen Aspekte, Dimensionen, Investment und Interfaces genannt. Ich find aber die Dimension Adoption auch ganz schön. Weil ich find nämlich, wie viele Teams in deiner Firma nutzen eigentlich die Plattform. Und da gibt es von dem Maturity-Level Nämlich die niedrigere Stufe, Extrinsic Push. Dein Chef sagt, nutz mal bitte die Plattform von dem Team da drüben. Und als nächstes erwachseneres Level, Intrinsic Pull. Ich als Team möchte diese Plattform nutzen. Und ich glaube, wenn man von Extrinsic Push to Intrinsic Pull wechselt, ich glaube, da kriegt jeder von uns hier gerade ein Grinsen ins Gesicht.",
+            "start": 3810375,
+            "end": 3930659,
+            "confidence": 0.8172644067796607,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Ja, es sind eigentlich ganz klassische Metriken, die man aus der Produktentwicklung kennt. Also klingt alles nach klassischer Produktentwicklung.",
+            "start": 3931107,
+            "end": 3939157,
+            "confidence": 0.7248947368421051,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Das Interessante finde ich gerade bei so einer internen Entwicklungsplattform, also die ersten Fragen, die immer kommen, sind, wie messe ich das? Das war auch, glaube ich, eine der ersten Fragen, die ich auf der KubeCon jetzt in China nach meinem Talk bekommen habe. Was sind denn Measurements? Welche KPIs kann ich ansetzen? Und das ist immer unglaublich schwer. Also sowas wie Net Promoter Score, super. Und Adoption ist auf jeden Fall ein super Metric. Aber irgendwie das, was das Management dann irgendwann ja auch sehen will, ist ja auch, wie viel effizienter, ihr habt mir Effizienz hier versprochen, wie viel effizienter sind wir denn? Und sowas ist ja unglaublich schwer zu messen. Also so Entwickler-Productivity ist ja so das Ding, was man immer schon messen wollte, aber keiner so richtig, ja, unglaublich gut schon umgesetzt hat. Es gibt natürlich immer diese Dora-Metrics und ähnliche Frameworks, wie man sowas misst. Aber manchmal ist dann eher so ein subjektives Measurement wie Die Leute nutzen das wirklich gerne, und die nutzen das viel. Viel ausschlaggebender als, oh, die sind jetzt genau 13 Prozent schneller geworden. Weil wahrscheinlich ist diese Zahl noch nicht mal richtig.",
+            "start": 3939177,
+            "end": 4008935,
+            "confidence": 0.8198489583333335,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Jetzt ist die CNCF natürlich ... unter anderem für Kubernetes bekannt. Und wenn man an Kubernetes denkt, dann denke ich unter anderem auch an Docker. Und dann, wenn ich an Docker denke, denke ich auch an diesen ganzen Hype um Container. Und dann denke ich immer, Achtung, langer Gedankengang, an die Standardisierung von diesen ganzen Containern. Thema Runtime Interface, Open Container Initiative. Cryo und wie sie alle heißen. Und für mich ist die CNCF als Foundation ja auch dafür da, Hype-Faktoren einzufangen, zu standardisieren, um ihre Plattform-Unabhängigkeit und Vendor-Login in irgendeiner Art und Weise weiter nach vorne zu treiben. Und jetzt hattest du ja schon gesagt, es passiert sehr viel in der CNCF zum Thema Plattform, Plattform-Engineering. Ist irgendwie absehbar, dass sich was im Bereich Platform Engineering oder Platform as a Product, dass da irgendwie eine Standardisierung stattfindet?",
+            "start": 4008955,
+            "end": 4067127,
+            "confidence": 0.8032028985507247,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Das ist eine wirklich gute Frage, weil ich hab's bisher noch nicht so richtig gesehen. Bisher ist gerade die Workgroup innerhalb der CNCF noch sehr fokussiert auf Definition und überhaupt ein bisschen auch Platform-as-a-Product zu erforschen. Also das nächste Platform-as-Product-Paper geht darum, wirklich mit Endusern, mit Firmen Interviews zu machen und zu gucken, ist denn diese Hypothese, dass wir sagen, wenn man ein Produktmindset hat, dann ist man erfolgreicher als Plattform-Team und hat eine erfolgreichere Plattform. Ist das denn überhaupt richtig? Weil wir wissen es ja eigentlich gar nicht. Also wir nehmen das natürlich immer jetzt so an. Wissen tun wir das nicht und das ist im Grunde erstmal der nächste Schritt und deswegen hatte ich immer Community-Standards rund um Plattformen immer sehr weit weg gesehen. Ich würde mir das sehr wünschen und gerade jetzt erst in den letzten Ja, zwei Wochen hat sich das im Slack-Channel der Plattform-Workgroup so ein bisschen entwickelt. Da hat jemand mal eine API und ein Tool vorgeschlagen und hat gesagt, hey, wir müssten doch eigentlich mal den Plattform-Engineers ein bisschen helfen, da vielleicht eine gemeinsame API zu finden oder ein standardisierendes Tool Wo man dann halt auch Abstraktionen drin hat, wo man jetzt nicht sagen muss, okay, das funktioniert nur mit Argo oder nur mit Flux, sondern das hat irgendwie offene Interfaces. Das fanden natürlich ganz viele sehr cool. Das Problem da ist immer, wie technisch wird man bei so einem Tool und bei so einer Abstraktion. Ich wünsche mir im Moment eher eine Abstraktion und eine Standardrichtung, wie könnte ich im Grunde Softwareprojekte und Workloads besser abstrahieren und die unabhängiger von der Plattform zu machen, weil die Plattform daraus davon, ja, denke ich, große Vorteile nehmen würde, weil im Moment habe ich diese Abstraktion nicht zwischen Plattform und was läuft auf der Plattform. Ich ziehe da alles immer eigentlich direkt zusammen in Kubernetes. Auf der anderen Seite gucken sich die Leute natürlich sehr gerne an, so, ja, wie kriege ich denn die ganzen Tools installiert? Und sollte man nicht mal irgendwie so einen standardisierten Installer, so was haben? Es gibt natürlich ganz viele, die sowas schon probiert haben. Und da wird man dann sehr, ja, sehr opinionated in den Tools. Aber immerhin passiert jetzt endlich die Diskussion. Angetrieben durch eine Kollegin aus China, die hat da gerade angefangen. Auch schon mal APIs vorgeschlagen. Und jetzt bin ich mal gespannt. Also die Workgroup ist sehr, sehr aktiv. Ich muss sagen, ich war selten irgendwie upstream in irgendeiner Gruppe aktiv, die so viel, ja, geredet und sich so schnell bewegt hat. Diese Paper kommen raus innerhalb von zwei, drei Monaten. Da arbeiten irgendwie 20, 30 Leute mit dran. Es funktioniert irgendwie, ich weiß nicht, wie. Aber ... Ich grinse die ganze Zeit.",
+            "start": 4067147,
+            "end": 4252548,
+            "confidence": 0.8239234135667398,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Weil das ist so stereotypenhaft, was du gerade beschreibst. Während du das erklärt hast, habe ich mal so ein Paper gerade ausgemacht und da steht halt unter anderem drin sowas wie Adopting a Product Mindset und dann nächstes Chapter What is Product Thinking? Also wirklich erstmal die Problemdefinition und das finde ich unglaublich schön. Aber dann beschreibst du direkt im selben Atemzug, wie stereotypenhaft wir eigentlich sind. Jemand im Slack hat erstmal angefangen zu coden. Jungs, wir müssen jetzt mal Technik machen hier. So können wir jetzt mal hier weitergehen. Und das bringt mich immer so richtig schön ans Grinsen gerade, weil dann doch schon ein bisschen die Technikverliebtheit mit standardisierten APIs. Ja, wir kennen das Problem noch nicht richtig, aber wir machen schon mal eine API.",
+            "start": 4252568,
+            "end": 4290730,
+            "confidence": 0.7638661417322835,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Genau, genau.",
+            "start": 4292317,
+            "end": 4294119,
+            "confidence": 0.5105,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Jetzt hast du schon ganz, ganz viel über, über Abstraktion gesprochen und wenn ich so zurückdenke, am Anfang, oder was war eigentlich vor Docker, gab's da schon eine Abstraktion, VMs vielleicht oder so, dann kam die ganze Container-Geschichte, Dann kam Kubernetes und irgendwie bei jedem Schritt dachte man, es geht eigentlich nicht weiter. Es ist nicht möglich, nochmal eine Abstraktion drüber zu setzen. Jetzt sind wir bei dem Plattform-Gedanken, eine Plattform zu haben, die wieder das Ganze abstrahiert, die Kubernetes abstrahiert. Glaubst du, es kommt noch mehr Abstraktion? Ist jetzt Ende mit Abstraktion bzw. Abschlussfrage, was würdest du am liebsten abstrahiert sehen in den nächsten fünf Jahren?",
+            "start": 4294139,
+            "end": 4334854,
+            "confidence": 0.8288785046728969,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Für mich ist, glaube ich, der nächste Schritt an Abstraktionen nicht die Abstraktion einer Plattform in Richtung End-User, sondern dass wir nicht mehr von einer Abstraktion reden, sondern von verschiedenen Abstraktionen. Dass die Abstraktionen im Grunde oder die Plattformen, die ich zur Verfügung, also dass ich keine einzelne Plattform mehr zur Verfügung stelle, sondern dass der nächste Schritt ist, ich spezialisiere die Plattform für meine Endkunden. Und das ist genau dieses Data-Science-Beispiel, was ich schon erwähnt habe. Die Data-Science-Engineers wollen ja nicht mit einem Git-Push arbeiten. Die haben eine ganz andere Art von Interface, eine ganz andere Art von Plattform. Und das auf dem Level zu abstrahieren, auf dem wirklich der End-User steht, das ist für mich das nächste Level. Und was dann in fünf Jahren kommt, da bin ich echt auch mal gespannt.",
+            "start": 4335899,
+            "end": 4387542,
+            "confidence": 0.8397835820895522,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Solange wir Entwickler da nicht weg abstrahiert werden und irgendwann OpenAI direkt auf die Plattform hinzugreift. Mal abwarten.",
+            "start": 4388842,
+            "end": 4396528,
+            "confidence": 0.8541111111111113,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Vielen lieben Dank, Puja. Du hast so ein bisschen für mich das Tor zu einer neuen Welt geöffnet, weil ich bin zwar im ganzen Cloud-Space unterwegs, aber ich geb auch zu, ich hab noch nie die Developer-Plattform gebaut. Und von außen sieht so ein Heroku, was als Beispiel genannt wurde, natürlich immer so einfach aus. Wenn man darüber redet, Product-Mindset, User-Research und dann auch wirklich alles als Self-Service bauen, ich glaub, Wir, zumindestens ich, habe die Komplexität deutlichst unterschätzt. Vielen lieben Dank für diese Insights, vielen lieben Dank für das ganze Wissen, auch was du mit deiner Arbeit bei der CNCF mit uns geteilt hast und auch für die ganzen Ressourcen, weil von diesen ganzen Working Groups oder beziehungsweise von diesen Tags, was außerdem Technical Advisory Group heißt, hab ich grad auch noch mal nachgeschaut, Vielen Dank, dass ihr da so viel Arbeit reinsteckt, um hoffentlich das ganze Thema weiterzutreiben und vielleicht sogar, wer weiß es, später auch zu stigmatisieren.",
+            "start": 4397937,
+            "end": 4460102,
+            "confidence": 0.82156875,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Sehr, sehr gerne.",
+            "start": 4460522,
+            "end": 4461543,
+            "confidence": 0.4366666666666667,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Vielen, vielen Dank. Vielleicht geben wir einfach dieses Product-Mindset allen HörerInnen ein bisschen mit und Andi dir auch. Das nächste Mal nicht coden, denk an dein Side-Project, sondern probier mal den Kunden zu fragen, was er braucht.",
+            "start": 4461563,
+            "end": 4474033,
+            "confidence": 0.7982702702702703,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Wie du siehst, sind Leute im CNCF Slack nicht anders als ich.",
+            "start": 4474533,
+            "end": 4479195,
+            "confidence": 0.8220833333333332,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Also von daher ... Ja, das ist keine Ausrede. Puja hat uns jetzt erklärt, wie man's richtig macht. Also versuch, das richtig zu machen. Vielen lieben Dank. Und wir werden natürlich alle deine Links in unsere Show Notes packen. Working Groups bis zu White Papers. Alles, was du an Informationen für unsere Hörerinnen so hast. Und natürlich auch deine Profile, wenn irgendwer mit dir in Kontakt treten will.",
+            "start": 4479255,
+            "end": 4502246,
+            "confidence": 0.7565147058823529,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Nur nicht die nicht-SSL-gestützte Website.",
+            "start": 4503066,
+            "end": 4506889,
+            "confidence": 0.7816000000000001,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Du hast ja bis zum Erscheinen dieser Episode natürlich das SSL-Zertifikat gefixt. Und ich erwarte jetzt eigentlich auch den neuen Dilbert-Comic. Also ein kombiniertes Dilbert-Comic, den kannte ich nämlich noch nicht. Den habe ich gerade auch nochmal gegoogelt, den du am Anfang der Episode erwähnt hast. Den findet natürlich auch in den Shorts.",
+            "start": 4506909,
+            "end": 4524720,
+            "confidence": 0.6321509433962267,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Alle mutigen Leute können sich durch die Sicherheitswarnungen durchklicken, damit sie dann auf deine Webseite kommen.",
+            "start": 4524760,
+            "end": 4529764,
+            "confidence": 0.7950625000000001,
+            "channel": null,
+            "speaker": "C"
+        },
+        {
+            "text": "Genau. Vielen lieben Dank. Bis bald. Tschö.",
+            "start": 4529964,
+            "end": 4533557,
+            "confidence": 0.5605714285714286,
+            "channel": null,
+            "speaker": "A"
+        },
+        {
+            "text": "Bis dann.",
+            "start": 4533597,
+            "end": 4534279,
+            "confidence": 0.5415,
+            "channel": null,
+            "speaker": "B"
+        },
+        {
+            "text": "Ciao. Ciao.",
+            "start": 4534339,
+            "end": 4534660,
+            "confidence": 0.266,
+            "channel": null,
+            "speaker": "A"
+        }
+    ],
+    "confidence": 0.808784407119578,
+    "audio_duration": 4542.0,
+    "webhook_status_code": null,
+    "webhook_auth": false,
+    "summary": null,
+    "auto_highlights_result": null,
+    "content_safety_labels": null,
+    "chapters": null,
+    "sentiment_analysis_results": null,
+    "entities": null
+}
