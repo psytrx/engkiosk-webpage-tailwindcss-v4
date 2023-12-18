@@ -14,10 +14,13 @@ talks:
     github: 'JohT'
     linkedin: 'johannes-troppacher-683437217'
     website: 'https://joht.github.io/johtizen/index.html'
+    slides: '2312-johannes-troppacher-graph-analysis.pdf'
   - avatar: '2312-christoph.jpg'
     name: 'Christoph Stanger'
     title: 'Avalanche Safety in the Cloud: Automating Avalanche Reports with Serverless and Speech Synthesis'
     description: 'If a process is repetitive or a routine does not become a natural habit, we should automate! This applies not only to software development, but also to offline routines, such as internalizing the latest avalanche report before heading out into the snowy mountains. Automate. In this session, Christoph will provide insights into the "Avalanche Report Synthesizer" application, which automates the daily creation of a podcast-like avalanche report to make the reports more naturally accessible and audible. He will dive into this event-driven, serverless application and uncover the tools and frameworks used, from Pulumi (IaC), TypeScript serverless best practices to Speech Synthesis Markup Language (SSML).'
     bio: 'Christoph works as a Strategic Cloud Engineer at Google and focuses on the modernization of containerized applications and the development of serverless applications. NodeJS and Typescript are his favorite tools to go fast. Prior to Google, he worked at AWS and MaibornWolff developing apps and services on various web, mobile and cloud platforms. Originally from Zirl, he enjoys being close to the ‘cloud’ during mountaineering as well.'
+    slides: '2312-christoph-stanger-automating-avalanche-reports.pdf'
+    linkedin: 'cstanger'
 eventId: '456r8e4uttr5dfpqkhs2bn27av'
 ---
