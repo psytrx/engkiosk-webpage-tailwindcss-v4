@@ -53,7 +53,11 @@ speaker:
 - name: Wolfi Gassler
   website: https://wolfgang.gassler.org/
 spotify: https://open.spotify.com/episode/0QoeZE4jDt514EIYLGhM7B
-tags: []
+tags:
+- Gehalt
+- Karriere
+- Bewerbung
+- Interview
 title: '#102 Quereinstieg in die Software-Entwicklung mit Melanie Patrick'
 youtube: https://www.youtube.com/watch?v=MZfM0dHkYM8
 
