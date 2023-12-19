@@ -1,5 +1,5 @@
 ---
-amazon_music: ''
+amazon_music: https://music.amazon.com/podcasts/c35a09fe-4116-4e04-8f68-77d61b112e46/episodes/bfb9b3e2-79d0-464c-9663-36508b627c14/engineering-kiosk-102-quereinstieg-in-die-software-entwicklung-mit-melanie-patrick
 apple_podcasts: https://podcasts.apple.com/us/podcast/102-quereinstieg-in-die-software-entwicklung-mit-melanie/id1603082924?i=1000639028947&uo=4
 audio: https://audio1.redcircle.com/episodes/cc2e232f-3859-4bf8-a8ae-89c3381238d1/stream.mp3
 chapter:
