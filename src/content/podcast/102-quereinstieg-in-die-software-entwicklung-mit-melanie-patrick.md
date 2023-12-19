@@ -49,9 +49,14 @@ pubDate: 2023-12-19 05:00:00+00:00
 rtlplus: ''
 speaker:
 - name: Andy Grunwald
+  transcriptLetter: A
   website: https://andygrunwald.com/
 - name: Wolfi Gassler
+  transcriptLetter: B
   website: https://wolfgang.gassler.org/
+- name: Melanie Patrick
+  transcriptLetter: C
+  website: https://www.linkedin.com/in/mgapatrick/
 spotify: https://open.spotify.com/episode/0QoeZE4jDt514EIYLGhM7B
 tags:
 - Gehalt
