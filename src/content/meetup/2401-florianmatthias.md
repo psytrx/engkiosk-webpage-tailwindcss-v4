@@ -13,7 +13,7 @@ talks:
     bio: "Martin studied computer science at the University of Innsbruck. While working towards his PhD, he got in touch with the founders of Txture, the startup company he's working for today as a senior backend developer and software architect. His favorite topics include Kotlin, the Java Virtual Machine and databases. Outside of his job he's a passionate gamer, from the latest blockbusters on PC and consoles to classic tabletop dungeons and dragons."
   - avatar: 'avatar.png'
     name: 'Simon Legner'
-    title: 'tbd'
-    description: '...'    
+    title: 'Snow, Code, and Safety: A Deep Dive into Avalanche.report'
+    description: 'Since 1960, the Avalanche Warning Service Tyrol has been a crucial element in ensuring the safety of both winter sports enthusiasts and Alpine residents. Starting from December 2018, a joint bulletin has been published for the Euregio Tyrol–South-Tyrol–Trentino in seven languages. The entire software stack supporting this service is open source (FOSS) and undergoes continuous development on GitLab. This talk provides an in-depth look into the software powering the daily avalanche bulletin, along with the standards (EAWS, CAAML) and processes that operate behind the scenes.'    
 eventId: '77tocfleahk4hcuepk7sqca5rm'
 ---
