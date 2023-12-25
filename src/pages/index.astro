@@ -92,7 +92,7 @@ let currentEpisodeDescription = cutText(episode.data.description, 170);
 				<div class="container px-4 mx-auto">
 					<div class="flex flex-wrap lg:items-center -mx-4">
 						<div class="w-full md:w-1/2 px-4 mb-16 md:mb-0">
-							<div class="relative md:w-full mx-auto md:ml-0 max-w-max overflow-hidden rounded-lg border border-yellow-500">
+							<div class="relative md:w-full mx-auto md:ml-0 max-w-max overflow-hidden rounded-lg">
 								<a href={`/podcast/episode/${episode.slug}/`} title={`Engineering Kiosk Episode ${episode.data.title}`}>
 									<Image src={episode.data.image} alt={`Engineering Kiosk Episode ${episode.data.title}`} title={`Engineering Kiosk Episode ${episode.data.title}`} />
 								</a>
