@@ -53,7 +53,10 @@ speaker:
   transcriptLetter: B
   website: https://www.linkedin.com/in/mgapatrick/
 spotify: https://open.spotify.com/episode/1AvjA3G4RKiCL6sVFjuqdi
-tags: []
+tags:
+- DevOps
+- Software Engineering
+- Interview
 title: '#103 Plattform Engineering und Interne Developer Plattformen mit Puja Abbassi'
 youtube: https://www.youtube.com/watch?v=_k4DTov5Cf8
 
