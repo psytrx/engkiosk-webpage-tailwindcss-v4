@@ -14,6 +14,6 @@ talks:
   - avatar: 'avatar.png'
     name: 'Simon Legner'
     title: 'Snow, Code, and Safety: A Deep Dive into Avalanche.report'
-    description: 'Since 1960, the Avalanche Warning Service Tyrol has been a crucial element in ensuring the safety of both winter sports enthusiasts and Alpine residents. Starting from December 2018, a joint bulletin has been published for the Euregio Tyrol–South-Tyrol–Trentino in seven languages. The entire software stack supporting this service is open source (FOSS) and undergoes continuous development on GitLab. This talk provides an in-depth look into the software powering the daily avalanche bulletin, along with the standards (EAWS, CAAML) and processes that operate behind the scenes.'    
+    description: 'Since 1960, the Avalanche Warning Service Tyrol has been a crucial element in ensuring the safety of both winter sports enthusiasts and Alpine residents. Starting from December 2018, a joint bulletin has been published for the Euregio Tyrol–South-Tyrol–Trentino in seven languages. The entire software stack supporting this service is open source (FOSS) and undergoes continuous development on GitLab. This talk provides an in-depth look into the software powering the daily avalanche bulletin, along with the standards (EAWS, CAAML) and processes that operate behind the scenes.'
 eventId: '77tocfleahk4hcuepk7sqca5rm'
 ---
