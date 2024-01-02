@@ -58,7 +58,11 @@ speaker:
   transcriptLetter: C
   website: https://anna-momber.com/
 spotify: https://open.spotify.com/episode/4pBT9j4rsBoeY658Ddw2lK
-tags: []
+tags:
+- Karriere
+- Kommunikation
+- Knowledge Sharing
+- Interview
 title: "#104 Pr\xE4sentieren mit Wirkung: Public Speaking und Storytelling mit Anna\
   \ Momber"
 youtube: https://www.youtube.com/watch?v=belzrZARW7U
