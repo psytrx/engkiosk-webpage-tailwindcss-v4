@@ -25,7 +25,7 @@ chapter:
   title: Kenne dein Setup, den Raum und die Aufregung/Adrenalin
 - start: 01:03:27
   title: Vorbereitung eines Vortrages
-deezer: ''
+deezer: https://www.deezer.com/episode/589653482
 description: "Story-Telling und richtig Pr\xE4sentieren: Ein Skill der mehr Aufmerksamkeit\
   \ verdient! Irgendwann im Leben muss jeder von uns mal etwas vor einer Gruppe von\
   \ Personen pr\xE4sentieren. Sei es eine Abschlussarbeit, ein Ergebnis von einem\
