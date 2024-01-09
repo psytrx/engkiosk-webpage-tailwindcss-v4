@@ -1,6 +1,7 @@
 ---
 import { formatDateWithoutWeekday } from '../../scripts/date.js';
 import { getNextMeetups } from '../../scripts/meetups.js';
+import NewsletterMailerlite from './NewsletterMailerlite.astro'
 
 let dates = getNextMeetups().map((meetup) => meetup.date);
 
@@ -14,7 +15,7 @@ let dates = getNextMeetups().map((meetup) => meetup.date);
 				Register to our Engineering Kiosk Alps newsletter and receive emails about upcoming meetups.<br />
 				No worries, we won't spam you and you can unsubscribe at any time.
 			</p>
-			<script async src="https://eocampaign1.com/form/63653456-acf6-11ee-b6a1-7db247ecd140.js" data-form="63653456-acf6-11ee-b6a1-7db247ecd140"></script>
+			<NewsletterMailerlite />
 		</div>
 	</div>
 	<div class="container px-4 mx-auto w-full md:w-1/2">
