@@ -52,7 +52,9 @@ speaker:
 - name: Wolfi Gassler
   website: https://wolfgang.gassler.org/
 spotify: https://open.spotify.com/episode/15RYXXCVhC8fa10dq5V2tf
-tags: []
+tags:
+- DevOps
+- Cloud
 title: "#105 Cloud-Ausfallsicherheit: Die Realit\xE4t von Regionen und Availability\
   \ Zones"
 youtube: https://www.youtube.com/watch?v=--so3WiArps
