@@ -48,8 +48,10 @@ pubDate: 2024-01-09 05:00:00+00:00
 rtlplus: ''
 speaker:
 - name: Andy Grunwald
+  transcriptLetter: B
   website: https://andygrunwald.com/
 - name: Wolfi Gassler
+  transcriptLetter: A
   website: https://wolfgang.gassler.org/
 spotify: https://open.spotify.com/episode/15RYXXCVhC8fa10dq5V2tf
 tags:

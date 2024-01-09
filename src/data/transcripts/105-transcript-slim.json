@@ -1,0 +1,1338 @@
+{
+    "language_code": "de",
+    "audio_url": "https://cloud.inlupus.at/s/9fEHf2FdZzAxngr/download/ep105_availability_zones.mp3",
+    "punctuate": true,
+    "format_text": true,
+    "dual_channel": false,
+    "webhook_url": null,
+    "webhook_auth_header_name": null,
+    "webhook_auth_header_value": null,
+    "audio_start_from": null,
+    "audio_end_at": null,
+    "word_boost": [],
+    "boost_param": null,
+    "filter_profanity": false,
+    "redact_pii": false,
+    "redact_pii_audio": false,
+    "redact_pii_policies": null,
+    "redact_pii_sub": null,
+    "speaker_labels": true,
+    "speakers_expected": 2,
+    "content_safety": false,
+    "content_safety_confidence": null,
+    "iab_categories": false,
+    "custom_spelling": null,
+    "disfluencies": false,
+    "sentiment_analysis": false,
+    "auto_chapters": false,
+    "entity_detection": false,
+    "summarization": false,
+    "summary_model": null,
+    "summary_type": null,
+    "auto_highlights": false,
+    "language_detection": false,
+    "speech_threshold": null,
+    "id": "19555923-41e6-466b-a68d-317a3af83c39",
+    "status": "completed",
+    "error": null,
+    "utterances": [
+        {
+            "text": "Das Cloud-Marketing verspricht ja viel. Unter anderem Hochverfügbarkeit und Resilienz. Aber wenn dann doch einmal die eigene Applikation offline ist, denkt man vielleicht zurück an dieses Einstellungsmenü bei der Erstellung. Da stand vielleicht etwas von Single Region, Multi Region, Multi Availability Zone, Affinity oder Anti-Affinity. Doch was bedeutet das alles? Und damit willkommen zu einer neuen Engineering Kiosk Episode, in der wir uns das einmal genauer ansehen. Wie sind denn diese Regions und Availability Zones eigentlich bei den Cloud Providern definiert? Reichen zum Beispiel zwei Availability Zones aus, um einen eventuellen Brand in einem Google Data Center Stand zu halten? Gibt es Unterschiede zwischen Google, Amazon, Oracle oder Azure? Was sind denn Local Zones oder Wavelength Zones, Fault Domains? Und was brauche ich davon für meine Applikation? Welche Kosten sind mit Hochverfügbarkeit verbunden und wie oft fällt die Cloud eigentlich aus? In dieser Episode versuchen wir etwas Licht ins Dunkle zu bringen und erklären auch, warum ein einfacher Baum eine gesamte Cloud lahmlegen kann. Und los geht's! Andi, wie ist das Wetter bei dir?",
+            "start": 4182,
+            "end": 72495,
+            "confidence": 0.8147241379310344,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Deutschland ist gerade von einem Dauerregen geplagt. Ich denke, das haben die Weltmedien inzwischen mitgeteilt bekommen und dass Flüsse und Co. übers Ufer treten. Also regnerisch. Aber Wolfgang, erstens, wie plakativ und stereotypenhaft ist das eigentlich, über das Wetter zu reden, wenn wir einen Podcast aufnehmen? Denn mit dem Wetter fängt man immer an, wenn man nicht weiß, wie man anfängt. Und zweitens, ist das eigentlich gut, zeitrelevante Sachen in einem Podcast zu erwähnen oder regnet es immer öfter und deswegen sagst du, Wetter passt immer.",
+            "start": 72515,
+            "end": 102945,
+            "confidence": 0.8205697674418603,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Ich habe mir jetzt eigentlich erwartet, dass du als guter Deutscher über das Wetter schimpfst, so wie du über die deutsche Bahn schimpfst und über alles schimpfst, weil dann hätte ich dir jetzt gefragt, du bist ja eigentlich großer Cloud-Fan und du bist ja ein Fan von platten Witzen, insofern hätte das perfekt gepasst, dass du ja großer Cloud-Unterstützer bist und eigentlich den Regen lieben müsstest. Und deine Liebe geht so weit, dass du sogar dir Bumpen und so weiter anschaffst, um irgendwelche Keller auszubumpen, weil du den Regen und die Cloud so gerne hast.",
+            "start": 102965,
+            "end": 128994,
+            "confidence": 0.7749473684210524,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Also ich mag die Cloud und ich mag auch Wolken. Regen deprimiert mich jedoch immer so ein bisschen, obwohl deprimiert ist schon ein starkes Wort. Regen bringt mich nicht gerade zum Lachen. Also ich meine, früher habe ich bestimmt mit kleinen Gummistiefeln in irgendwelchen Pfützen bin ich rumgesprungen. Aber die Cloud kann natürlich auch toll sein, wenn es einmal sich ein bisschen vor die Sonne schiebt und meinen Sonnenbrand verhindert. Und die Pumpen, na gut, ist halt leider eine Notwendigkeit, wenn der Keller vollläuft, dann muss leider da irgendwer Hand anlegen. Und das kann ich jetzt mit Eimern tun oder in der Hoffnung, wenn man noch Strom hat, dass das automatisiert wird, wie ein guter Infrastrukturingenieur es machen würde.",
+            "start": 129033,
+            "end": 169050,
+            "confidence": 0.8016134453781512,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Okay, ich komme jetzt einfach weg von den platten Einleitungen, weil platter kann es gar nicht mehr werden. Aber ich übernehme jetzt mal deine deutsche Rolle und ich beschwere mich. Und zwar nicht über die deutsche Bahn, sondern über die Cloud. Und zwar hast du mir ja immer vorgeschwärmt, wie toll die Cloud ist. Dann gehe ich in die Cloud, setze da einen Service in die Cloud, alles ist skaliert, alles funktioniert, immer toll. Und dann ist mein Service einfach vier Stunden offline, weil die Cloud mal gerade weg ist. Warum, Andi?",
+            "start": 169307,
+            "end": 194607,
+            "confidence": 0.7731630434782609,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Weil du mir nie zuhörst wolfgang das ist ganz einfach du hörst mir nicht zu ich wie du mich immer bezeichnen als fanboy von werner vogels wiederhole des öfteren über diese über 100 episoden dieses podcasts everything fails all the time und die cloud gehört dazu wer nicht hören will muss fühlen merkst du das wolfgang.",
+            "start": 195207,
+            "end": 216206,
+            "confidence": 0.767482142857143,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Als kleine Info übrigens für alle ZuhörerInnen, der Andi ist nicht nass und schüttelt sich, falls das jemand hört, sondern es ist ein Hund, der sich im Hintergrund abschüttelt.",
+            "start": 217092,
+            "end": 225520,
+            "confidence": 0.8004137931034482,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Das hört man im Mikrofon? Okay. Ja, in der Tat. Es ist sehr regnerisch in Deutschland und meinen Hund, dem verwehre ich natürlich nicht den Ausgang. Deswegen habe ich mir Regenklamotten angezogen und bin einfach mal eine Stunde durch den Regen mit meinem Hund. Und jetzt muss er sich etwas schütteln. Aber er hat einen Bademantel an. Und wenn ihr alle in die Community kommt, kriegt ihr ein Foto von meinem braunen Labrador in Bademann.",
+            "start": 225960,
+            "end": 247235,
+            "confidence": 0.7683199999999999,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Okay, also Labrador-Fanboy und Werner Vogels-Fanboy. Also es kann immer was schiefgehen in der Cloud, okay, habe ich verstanden. Aber darum gehe ich ja in die Cloud, damit mir die Cloud dieses Problem löst, dass ich eben selber nicht mehr auf meinen einzelnen Hardware-Server irgendwas installieren muss, sondern dass es eben in der Cloud ist, skaliert und automatisch immer funktioniert.",
+            "start": 248338,
+            "end": 269746,
+            "confidence": 0.8022833333333331,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Und genau da sind wir beim heutigen Thema Cloud-Regionen und Availability-Zones. Und zwar all das, was der Wolfgang gerade beschrieben hat. Ich bin in die Cloud gegangen und da war mein Service vier Stunden down. All da kann man natürlich mal ein bisschen gegenwirken, indem man proper Engineering betreibt. Ja, macht die ganze Sache ordentlich und macht da nicht immer Gaffer-Tape drum, Wolfgang.",
+            "start": 269806,
+            "end": 292695,
+            "confidence": 0.7943968253968255,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Aber was sind denn jetzt diese, schwieriges Wort, Availability Zones und Regions? Und jetzt muss ich mir erst recht wieder mit so vielen Sachen auseinandersetzen in der Cloud?",
+            "start": 292715,
+            "end": 302740,
+            "confidence": 0.7657142857142857,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Genau, das Marketing der Cloud ist halt nicht immer ganz geil. Die Cloud hat halt unglaublich viele Vorurteile. Du musst nicht immer alles selbst managen und so weiter und so fort. Du musst dir aber natürlich auch enorm viel neues Wissen drauf schaffen. Und eines dieser Wissen geht nämlich genau um Regionen und Availability. Und was das eigentlich ist, da kommen wir nämlich jetzt zu. Die meisten Leute werden jetzt denken, wie lang geht die Folge? 10 Minuten? Ne, heute packen wir mal den Sack aus. Heute greifen wir mal so ein bisschen ganz tief in die Schatzkiste. Und zwar haben wir mal das komplette Wissen des Internets in 60 bis 90 Minuten gepackt. Über.",
+            "start": 303695,
+            "end": 343783,
+            "confidence": 0.8084173913043479,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Sack passt glaube ich ganz gut, den Sack den man sich da einkauft von der Cloud und nicht weiß was alles drin ist.",
+            "start": 344984,
+            "end": 351408,
+            "confidence": 0.7095217391304349,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Also für Leute die noch nicht so viel Cloud Erfahrung haben und dass wir mal jeden abholen. Eine Cloud Region ist eigentlich ein Standort eines Cloud Providers irgendwo auf der Welt. Eine Cloud-Region selbst besteht aus mehreren, in der Regel, wie wir gleich noch lernen werden, sogenannten Zones. Eine Zone besteht in der Regel aus mehreren Data-Centern und die Zones selbst sind hoffentlich, was wir gleich auch noch lernen, physikalisch unabhängig und mindestens 20 bis 30 Kilometer voneinander getrennt.",
+            "start": 351448,
+            "end": 386728,
+            "confidence": 0.8594556962025315,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Also Region wäre dann Deutschland oder ist es was kleineres dann? Also Region ist auf jeden Fall die größte Einheit, seht es richtig. Region ist das Größte, danach unterteilt in Zones und nochmal unterteilt vielleicht in Datacentern.",
+            "start": 387128,
+            "end": 399334,
+            "confidence": 0.8011351351351351,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Die Unterteilung ist richtig. Was eine Region jetzt genau ist, das wird von den Cloud-Providern unterschiedlich definiert. Innerhalb von Deutschland gibt es zum Beispiel mehrere Regionen. Es gibt in Berlin eine, es gibt in Frankfurt eine, es gibt in Paris zum Beispiel eine, es gibt mehrere in Europa, es gibt mehrere pro Land, je nach Größe des Landes sehen wir mal zum Beispiel Amerika, da gibt es eine ganze Menge, also USA, da gibt es eine ganze Menge Regionen.",
+            "start": 399594,
+            "end": 424508,
+            "confidence": 0.8129999999999997,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Und das Klassische, was man so kennt, Frankfurt, London oder so bei EWS zum Beispiel, aber GCP glaube ich auch Frankfurt, ist das dann eine Region oder ist das dann was kleineres?",
+            "start": 425168,
+            "end": 436315,
+            "confidence": 0.8044999999999999,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Das sind Regionen.",
+            "start": 436355,
+            "end": 437696,
+            "confidence": 0.9269999999999999,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Das heißt aber, da sind in Frankfurt jetzt von EWS zum Beispiel mehrere Datacenter stehen?",
+            "start": 437736,
+            "end": 443319,
+            "confidence": 0.8191333333333335,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Ja, genau. Also zum Beispiel nehmen wir mal Frankfurt in Europa. Das ist Europe Central Run in Amazon Sprech sozusagen. Und ich kenne jetzt nicht die Details, wie viel Datacenter jetzt Amazon in Frankfurt selbst hat. Aber laut dem Marketingmaterial auf der Webseite hat Europe Central Run, also Frankfurt, drei Availability Zones. Und das sollten mindestens drei Datacenter sein mit einer Distanz von ein paar Kilometern.",
+            "start": 443908,
+            "end": 472875,
+            "confidence": 0.8194090909090908,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Zwischen Aber datacenter da sprechen wir also wirklich von von gebäuden also nicht nur von dem stockwerk oder so in dem datacenter wenn die ein paar kilometer auseinander sein müssen dann muss das ja eigentlich so sein.",
+            "start": 472895,
+            "end": 484557,
+            "confidence": 0.7513513513513516,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Ich wünschte ich könnte dir diese information geben wir könnten auch von stockwerken sprechen denn schauen wir uns mal frankfurt an frankfurt ist sehr sehr dicht bebaut und so viel expansionsfläche gibt es natürlich in.",
+            "start": 484597,
+            "end": 495360,
+            "confidence": 0.8329142857142855,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Frankfurt nicht Jaja, weil wenn ein paar Kilometer zwischen den Availability Zones sein müssen, dann könnte nicht eine Zone Stockwerker 1 sein und die nächste Zone auf Stockwerker 2 oder so.",
+            "start": 495380,
+            "end": 504387,
+            "confidence": 0.7143870967741935,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Oh nein, überhaupt nicht. Das ist nicht der Fall. Denn da kommen wir zu den hässlichen Details. Und zwar habe ich mir mal die Mühe gemacht und habe mir die Definitionen von Regionen und Availability Zones von den drei Hyperscalern mal rausgesucht. Drei Hyperscaler, darunter fallen Amazon Web Services, AWS, Microsoft Azure und GCP, also die Google Cloud.",
+            "start": 504447,
+            "end": 526733,
+            "confidence": 0.835741379310345,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Dass die Verwendung von mehreren Regions und Availability Zones aber auch ganz andere Probleme lösen kann, zeigt ein Fall von unserem Episodensponsor About You. About You betreibt ein Server-Side-Tracking-Setup zur Verarbeitung von mehreren Milliarden Events pro Monat in der Google Cloud. Und dabei ist der Steam bei der Skalierung auf harte Ressourcen-Limitierungen gestoßen. Auch Quoteerhöhungen durch Google waren nicht mehr möglich. Und der einzige Ausweg war die Aufteilung des Workloads auf Cloud-Run-Instanzen in unterschiedlichen Regionen, um die Limitierung zu umgehen. Dieses Projekt ist aber nur eines von über 250 Projekten von About You in der Google Cloud. Also wenn auch du Interesse hast an derartigen Challenges und auch Datenteams weiterentwickeln willst, also sowohl technologisch wie auch die Kultur in den Teams, About You sucht nach Verstärkung. Details zu diesen Stellen, egal ob fully remote oder auch im schönen Hamburg vor Ort, im Bereich GCB, aber auch EWS, findest du unter engineeringkiosk.dev slash about you oder über einen einfachen Klick in unseren Show Notes. Und nun zurück in die Episode zu anderen Eigenheiten und Details zu Regions und Availability Zones.",
+            "start": 528288,
+            "end": 595996,
+            "confidence": 0.8198324022346367,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Fangen wir mal ganz kurz mit Amazon an. Generell haben die 33 Regionen und 105 Availability Zones. Ziemlich fett schon, würde ich sagen.",
+            "start": 597077,
+            "end": 604926,
+            "confidence": 0.7906956521739129,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Was heißt denn Availability Zones auf Deutsch? Ist so ein schwieriges Wort auf Englisch. Availability Zones.",
+            "start": 604946,
+            "end": 611052,
+            "confidence": 0.6642500000000001,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Verfügbarkeitszone.",
+            "start": 611072,
+            "end": 611693,
+            "confidence": 0.686,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Darf man nicht viel getrunken haben. Wir nennen das einfach Zones, das macht es einfacher.",
+            "start": 611713,
+            "end": 616198,
+            "confidence": 0.5946666666666667,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "AWS beschreibt eine Region als einen physischen Standort auf der Welt, an dem verschiedene Rechenzentren zusammengefasst werden. Jede Gruppe logischer Rechenzentren wird als eine sogenannte Availability Zone, also AZ abgekürzt. Jede Region besteht aus mindestens drei isolierten und physisch getrennten Availability Zones innerhalb eines geografischen Gebietes. Jede Availability Zone verfügt über eine unabhängige Stromversorgung, Kühlung, physische Sicherheit und ist über redundante Netzwerke mit extrem niedriger Latenz verbunden. Und jetzt kommt was ganz ganz wichtiges, was Amazon auch wirklich auf ihrer Webseite beschreibt. Die Availability Zones sind physisch durch eine beträchtliche Entfernung viele Kilometer von jeder anderen Availability Zone getrennt, obwohl alle innerhalb von 100 Kilometern voneinander entfernt sind.",
+            "start": 616238,
+            "end": 669109,
+            "confidence": 0.8499907407407405,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Warum ist das wichtig?",
+            "start": 669149,
+            "end": 670189,
+            "confidence": 0.73725,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Das ist wichtig, da wenn man jetzt zum Beispiel einen Standort an einer Küste hat und es kommt ein Tsunami, dann wird mit hoher Wahrscheinlichkeit einer dieser AZs recht nah an der Küste sein, weil jeder Cloud-Provider zum Beispiel auch irgendwie Energie braucht und auf der Küste oder auf dem Wasser wird sehr viel Strom erzeugt durch Wasser, Windenergie und so weiter. Aber wenn du jetzt sagen kannst, okay, 30 oder 40 Kilometer Inland ist die nächste Availability Zone und da kommt eine Flutwelle, dann ist eine AC weg, aber nicht die andere.",
+            "start": 670209,
+            "end": 701840,
+            "confidence": 0.8353118279569888,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Und deswegen ist es... Und warum innerhalb 100 Kilometer?",
+            "start": 701860,
+            "end": 705081,
+            "confidence": 0.7907777777777779,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Das wird mit hoher Wahrscheinlichkeit bezüglich der Netzwerklatency sein, weil da gibt es sowas wie die Physik und Netzwerkkabel und Daten.",
+            "start": 705101,
+            "end": 711983,
+            "confidence": 0.858,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Und Licht... Ja dann, Mr. Physix, 100 Kilometer, was haben wir da für eine Latenz mit Lichtgeschwindigkeit?",
+            "start": 712003,
+            "end": 718745,
+            "confidence": 0.7695882352941177,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "So, da zieh ich ja jetzt mal meine Studienabbrecher-AKA-Bachelor-Karte.",
+            "start": 719305,
+            "end": 724947,
+            "confidence": 0.7572222222222222,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "3,34 Mikroseconds per Kilometer.",
+            "start": 724957,
+            "end": 727808,
+            "confidence": 0.7155,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Ja, gut. Du rechnest jetzt grad nur die Transfergeschwindigkeit. Du hast natürlich dann auch noch Switches und Hops und alle drum und dran.",
+            "start": 728749,
+            "end": 735371,
+            "confidence": 0.7870434782608696,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Gut, die hast du sowieso, egal, wie weit's ist.",
+            "start": 735391,
+            "end": 737772,
+            "confidence": 0.5518888888888889,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Ja, ja, ganz genau. Aber umso mehr du addest, umso mehr Processing hast du natürlich. Und das zählt natürlich dann alles auf die Millisekunden. Aber was entnehmen wir dieser Definition? Dieser Definition entnehmen wir, dass jede Region mindestens drei Availability Zones hat. Und dass diese wirklich unabhängige Standorte sind, die mehrere Kilometer voneinander entfernt sind. Jetzt würde man sich denken, ach, das hat ja Google auch so. Und das müsste bei Microsoft ja auch der Fall sein. Ha! Pustekuchen. Denn Microsoft definiert eine Region als eine Gruppe von Rechenzentren, die innerhalb eines latenzdefinierten Bereichs eingerichtet sind und über ein dediziertes regionales Netzwerk verbunden sind. Und jetzt kommt's. Azure-Rechenzentren sind einzigartige physische Gebäude, die über den gesamten Globus verteilt sind und eine Gruppe von vernetzten Computer-Servern beherbergen. Das bedeutet, wir könnten eine Availability Zone in Azure in zwei Gebäuden haben, die fünf Meter voneinander entfernt sind. Anders ist das nämlich nicht definiert.",
+            "start": 737812,
+            "end": 803144,
+            "confidence": 0.8575960264900665,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Also im Gegensatz zu Amazon gibt es keine Distanzkriterien. Aber sonst ist es eigentlich ziemlich gleich, oder? Eine Region sind einfach mehrere Datacenter, die in irgendeiner Form mit Low Latency verbunden sind. Also ungefähr dasselbe.",
+            "start": 803164,
+            "end": 816156,
+            "confidence": 0.8118285714285715,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Bei Azure wird nur gesagt, es sind unterschiedliche Gebäude. Das bedeutet auch, eine komplette Region kann mit mehreren Gebäuden am exakt selben Standort betrieben werden.",
+            "start": 816756,
+            "end": 827219,
+            "confidence": 0.8932800000000001,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Genau, also die Distanzkriterien fallen weg.",
+            "start": 827579,
+            "end": 829820,
+            "confidence": 0.7143333333333333,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Genau.",
+            "start": 829840,
+            "end": 830780,
+            "confidence": 0.948,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Wie schaut das jetzt bei Google aus?",
+            "start": 830800,
+            "end": 832401,
+            "confidence": 0.745142857142857,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Google definiert Regionen eigentlich genau so, sind unabhängig geografische Bereiche, die aus Zonen bestehen. Zonen und Regionen sind logische Abstraktionen der zugrunde liegenden physischen Ressourcen, die in einem oder mehreren psychischen Rechenzentren beteiligen.",
+            "start": 832441,
+            "end": 844444,
+            "confidence": 0.8014848484848487,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Also gerade psychische Rechenzentren gesagt. Oder physische.",
+            "start": 844705,
+            "end": 848826,
+            "confidence": 0.5302857142857144,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Physischen Ressourcen, die in einem oder mehreren physischen Rechenzentren bereitgestellt werden. Und jetzt kommt's. Die Rechenzentren können im Besitz von Google sein oder sie können von Drittanbietern von Rechenzentren gemietet werden. Was bedeutet das? Nicht alle Datacenters, aus denen Google Cloud betrieben wird, gehören Google. Nummer eins. Nummer zwei. Eine Availability Zone kann aus mehreren Datacentern bestehen.",
+            "start": 848846,
+            "end": 873992,
+            "confidence": 0.8402105263157892,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Das ist aber bei den anderen genauso wenig definiert, oder? Ob das wirklich im Besitz von denen ist. Also, ob jetzt Microsoft irgendwie bei T-Systems irgendwelche Datacenter mietet, sagen sie auch nicht.",
+            "start": 874232,
+            "end": 885135,
+            "confidence": 0.8413750000000001,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Richtig, das sagen sie da so jetzt auch nicht. Weiter geht's mit, eine Zone ist ein Bereitstellungsbereich für Google Cloud Ressourcen innerhalb einer Region. Zonen sollten als eine einzelne Fehlerdomäne innerhalb einer Region betrachtet werden, um fehlertolerante Anwendungen mit hoher Verfügbarkeit bereitzustellen. Und um sich vor unerwarteten Ausfällen zu schützen, sollten Sie Ihre Anwendung in mehreren Zonen unterhalb einer Region bereitstellen. Google Cloud beabsichtigt, mindestens drei Verfügbarkeitszonen, physisch und logisch getrennte Zonen, in jeder Region für allgemeine Zwecke anzubieten. Was bedeutet dies? Laut Google können zwei Availability Zones im selben physischen Rechenzentrum betrieben werden und würden trotzdem nicht die von Google Cloud aufgestellte Definition verstoßen. Fassen wir kurz zusammen. Amazon definiert wirklich sogar, wie weit Availability Zones voneinander entfernt sind. Azure sagt nur, eine Availability Zone ist nicht im selben Gebäude wie der anderen. Google Cloud sagt da einfach mal gar nichts drüber. und sagt einfach, wir haben drei Availability Zones. Was bedeutet jetzt der Unterschied? Das ist nämlich auch sehr faszinierend aus der Sicht der Hyperscaler. AWS führt ganz klar einen hart isolierten Standortansatz. Ich glaube, wenn wir über Reliability sprechen, ist das eine super Sache. Bei Azure und Google ist die Location-Trennung nicht wirklich ganz eindeutig. Das bedeutet natürlich auch Flexibilität in der Auslegung. Könnten sich im selben Gebäude oder in benachbarten Gebäuden befinden, die einzelnen Availability Zones. Das heißt aber auch, Azure und Google können neue Availability Zones schneller einrichten und billiger betreiben. Knackpunkt ist natürlich dann, es könnte gegebenenfalls zu weniger wirklicher Redundanz führen. Und ich sag mal, weniger in Anführungszeichen. Klar, bei einer großen Naturkatastrophe hat Amazon irgendwie die Hand oben. Aber weniger in Anführungszeichen ist halt die Frage, wie viel Redundanz brauchst du. Aber das ist halt schon ein knallharter Unterschied, find ich.",
+            "start": 885195,
+            "end": 1004618,
+            "confidence": 0.8169584775086505,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Das heißt aber auch, wenn ich sicher gehen will, dass meine Applikation sicher ist, meine Daten sicher sind, dann muss ich bei Azure und bei Google eigentlich auf mehrere Regionen gehen. Also gerade wenn es um Naturkatastrophen geht, wo irgendwie vielleicht auch größere Regionen betroffen sind, ganze Datacenter-Bereiche, vielleicht Datacenter-Parks. Teilweise sind ja Datacenter auch sehr knapp nebeneinander von den unterschiedlichen Anbietern. Wenn da irgendwas Größeres passiert in so einer Region oder besser gesagt Zone eigentlich oder vielleicht mehreren Zonen, die nebeneinander liegen, dann habe ich ein Problem. Das heißt, nur bei Amazon bin ich eigentlich auf der sicheren Seite, wenn ich auf Zones verteile. Und bei Google und Azure muss ich auf Regionen gehen, wenn ich hundertprozentig sicher sein will.",
+            "start": 1004858,
+            "end": 1047989,
+            "confidence": 0.8332975206611571,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Also ja und nein. Bei Azure und Google, gebe ich dir recht? Bei Naturkatastrophen kann das sein, dass die komplette Region weggespült wird oder unbrauchbar gemacht wird, weil einfach die Distanzkriterien für die Availability Zones nicht gegeben sind. Bei Amazon kann es natürlich sein, dass die komplette Region einen Ausfall hat. Dann kommst du einfach an deine Daten nicht mehr ran. Und jetzt gehen wir mal vom Schlimmsten aus. Stell dir vor, der Cloud-Betreiber, komplett Amazon, hat irgendwie einen Treiberfehler für den Festplattentreiber oder ähnliches, der in einem Rare Case zu einem Data Loss führt. Sehr unwahrscheinlich, aber theoretisch möglich. Was bedeutet das? Eigentlich, wenn du wirkliche Datensicherheit brauchst, machst du nicht Multi-Region, sondern schippst es sogar noch zu einem anderen Cloud-Provider.",
+            "start": 1048029,
+            "end": 1088082,
+            "confidence": 0.7750491803278694,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Zumindest irgendeine Disaster-Recovery-Variante, also ein Backup oder so, dass man wirklich die Daten woanders hat.",
+            "start": 1088122,
+            "end": 1096984,
+            "confidence": 0.6282666666666666,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Also wirklich bei jemand anders, der andere Software einsetzt vielleicht sogar. Aber ich bin mir nicht sicher, von wie vielen Firmen weltweit wir hier reden.",
+            "start": 1097024,
+            "end": 1103425,
+            "confidence": 0.7533600000000001,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Aber da wäre es auch okay, ich habe einen kleinen Bandroboter bei mir in der Firma, Hardware, und ich nehme da regelmäßig dann Bänder mit nach Hause oder Safe oder Schlag mich tot. Gibt sehr viele Varianten.",
+            "start": 1104043,
+            "end": 1115269,
+            "confidence": 0.7567297297297296,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Klar, du nutzt aber in der Regel die Cloud, damit du dich mit sowas nicht rumschlagen musst, ne?",
+            "start": 1115289,
+            "end": 1118791,
+            "confidence": 0.6592222222222223,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Im Idealfall, ja. Kommt auf das Sicherheitslevel drauf an. Ich glaube, viele wollen halt auch vielleicht dann einfach zu Hause in einem Safe das Backup-Band nochmal einfach haben, um besser schlafen zu können. Oder vielleicht sogar in irgendeinem großen, es gibt ja so Angebote, die dann in irgendeinem Bergwerk, einem alten, aufgelassenen Bergwerk deine Bänder sichern, also die wirklich nur auf Backup und Disaster Recovery optimiert und ausgelegt sind. Haben wir zumindest in den Alpen einige.",
+            "start": 1118811,
+            "end": 1146522,
+            "confidence": 0.8022763157894736,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "So, jetzt haben wir ein bisschen über die Definition von Regionen und Availability Zones gesprochen. Jetzt könnte man sagen, aha, okay, jetzt habe ich die Distanzkriterien oder halt auch nicht. Und jetzt ist es ja egal, welche Region ich eigentlich für meine Services nutze. Wäre die Welt doch alles mal so einfach, denn das Marketing von den Cloud-Providern ist wirklich grandios. Denn wenn man mal ein bisschen im Detail reinschaut, dann haben sehr viele Regionen und sehr viele Availability Zones ihre gewissen Eigenheiten. Und da gehen wir jetzt mal durch so ein paar Eigenheiten von Cloud-Providern von Regionen. Generell kann man sagen, dass es neben den Regionen auch noch andere Standorte gibt, sogenannte Edge-Locations. Die meisten oder die großen drei haben eigentlich sogenannte Edge-Locations. Edge-Locations sind eigentlich ganz kleine Datacenter, die primär zur Auslieferung von Content-Delivery-Network-Daten, also Bilder, Videos und so weiter, genutzt werden, um näher an den Kunden zu kommen, um die Latenz ein bisschen zu reduzieren. Das sind keine vollwertigen Regionen, sondern die stehen einfach über auf der Welt. Die werden einfach nur ausgewiesen als Ad-Location und da hat man auch nicht jeden Cloud-Service verfügbar. Das ist mal so vorne weg. Aber bei der Wahl deiner Region ist unter anderem auch wichtig, dass nicht jeder Service in jeder Region verfügbar ist. Also nur weil Google sogenannte Cloud Functions anbietet, was bei AWS die Lambda Functions sind, heißt das nicht, dass die überall verfügbar sind. Zum Beispiel in Paris, in Europe West 9 gibt es keine Google Cloud Functions. Die werden da einfach nicht als Service angeboten. Jeder Cloud Provider hat eigentlich so eine große Matrix, in welcher Region welcher Service angeboten wird und welcher nicht.",
+            "start": 1146903,
+            "end": 1245549,
+            "confidence": 0.800357400722022,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Was heißt das in der Praxis für mich?",
+            "start": 1246737,
+            "end": 1248819,
+            "confidence": 0.7911250000000001,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Das bedeutet, wenn deine Applikation jetzt auf Cloud Functions basiert, dann fällt Europe West 9 Paris erstmal für dich weg.",
+            "start": 1248839,
+            "end": 1255865,
+            "confidence": 0.7195,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Das heißt, ich muss im Vorhinein eigentlich schon überlegen, was brauche ich denn so oder was werde ich in Zukunft brauchen, weil wenn ich in der falschen Region alles deploye und dann am Ende sage, eigentlich wären noch Cloud Functions ganz praktisch, dann habe ich ein Problem, wenn ich Paris gewählt habe, weil Paris irgendwie CO2 freundlich oder so ist oder neutral ist oder ausgewiesen ist und ich nicht aufgepasst habe, ob da Cloud Functions drauflaufen.",
+            "start": 1256045,
+            "end": 1277580,
+            "confidence": 0.753,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Prinzipiell richtig. Du kannst natürlich dann deine Cloud Functions natürlich auch irgendwie Cross-Region mäßig betreiben. Was das für Vor- oder Nachteile hat, kommen wir gleich noch zu. Aber ja, dein Innovationspotenzial, was du da mit Cloud Functions erreichst, wird dann gegebenenfalls etwas limitiert.",
+            "start": 1277600,
+            "end": 1293085,
+            "confidence": 0.7827209302325582,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Also das, was am Anfang nur so ein Dropdown ist, was man so schnell, schnell mal auswählt bei dem ersten Service, das ist eigentlich dann schon sehr festgesetzt, weil später mal was zu ändern, ist natürlich dann sehr mühsam irgendwie zwischen Regions dann zu wechseln oder auch dann den Traffic zwischen den Regions zu haben. Es ist ja auch eine Performance-Sache dann schlussendlich.",
+            "start": 1293765,
+            "end": 1310653,
+            "confidence": 0.7790476190476194,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Also hoffen wir mal, du hast die ganze Sache ordentlich gebaut und deine Infrastruktur mit Infrastructure as Code gebaut, wie Terraform oder ähnliches, dann sollte deine Region hoffentlich eigentlich nur ein String sein, den du in einer Variable ersetzt. Natürlich ersetzt dies nicht die Migration von Region 1 zu Region 2 und mit ordentlichem Traffic umleiten und Co. Das ist dann alles schon mal ein bisschen größer. Aber ja, das ist gefährlich, das Marketing.",
+            "start": 1310853,
+            "end": 1334907,
+            "confidence": 0.8043783783783784,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Haben wir eine eigene Episode übrigens zu Infrastructure as Code verlinken wir natürlich gerne in den Journals.",
+            "start": 1335567,
+            "end": 1339932,
+            "confidence": 0.5068823529411766,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Ein weiterer Knackpunkt ist, nicht jede Region ist für jeden verfügbar. In Amerika gibt es zum Beispiel die sogenannte GovCloud. Die GovCloud ist für die meisten Governments und in dieser Region oder in diesen Regionen, herrschen natürlich ein paar andere Regeln, ein paar andere Security-Mechanismen. Und um da reinzukommen, braucht man zum Beispiel so eine FedRAMP-Zertifizierung. Eine FedRAMP ist die Federal Risk and Authorization Management Program Zertifizierung. Und die kann zum Beispiel nicht jede Firma kriegen. Du brauchst nämlich einen Government Sponsor, der dich durch die Zertifizierung zieht. In der Regel ein Millioneninvestment für Firmen. Oder es gibt ein paar Regionen auf der Welt, die sind mehr und mehr im Kommen. Ich sag mal so in Richtung Saudi-Arabien, vor allem nicht der Arabische Emirat und solche Geschichten. Da hat zum Beispiel, ich glaube, Amazon oder Google gerade eine neue Region gelauncht, in Dammam. Und dafür brauchst du ebenfalls Approval von dem jeweiligen Cloud-Provider, um da reinzukommen. Von diesen Regionen gibt es ein paar Stück auf der Welt.",
+            "start": 1339972,
+            "end": 1404297,
+            "confidence": 0.8145029940119763,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Da dürfen dann nur Männer arbeiten, oder?",
+            "start": 1404717,
+            "end": 1407720,
+            "confidence": 0.4164285714285714,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Was die genauen Kriterien sind, weiß ich nicht. Ich glaube, deine Firma muss da vor Ort sein und müssen wir mal nachgucken. Aber ich glaube, wenn du da Business machst, um da wirklich eine Cloud-Region nutzen zu müssen, ich glaube, dann kennst du dich da aus. Die weitere Baustelle ist, dass nicht jede Region die gleiche Art der Connectivity zu anderen Regionen hat, dass sie zum Beispiel deutlich abgeschotteter sind. Ich glaube, was uns alle in den Sinn kommt, ist die große chinesische Mauer und China.",
+            "start": 1407760,
+            "end": 1433028,
+            "confidence": 0.8091627906976744,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Muss ich noch dazu sagen, dass es eigentlich China heißt, aber... China.",
+            "start": 1433048,
+            "end": 1436352,
+            "confidence": 0.53075,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Die asia china region ist zum beispiel deutlichst abgeschotteter und die netzwerk connectivity zu anderen regionen ist sehr eingeschränkt habe ich selbst erfahrung beruflich mit dann hat oracle zum beispiel noch einige regionen in europa die komplett von der amerikanischen oracle infrastruktur abgeschnitten sind, Da geht es natürlich dann um Datenschutz und dass die amerikanischen Sicherheitsbehörden, FBI, CIA und wie sie alle heißen, natürlich nicht über die US-Rechte auf die Server zugreifen können. Genauso wie Oracle bietet auch spezielle Regionen nur für die englischen Behörden an. für das UK-Government, da kommen auch nur englische Behörden drauf. Also, da muss man immer ein bisschen gucken, in welche Region wollt ihr, wo macht ihr Business und welcher Cloud-Provider bietet es an und was sind die Hürden, um auch da reinzukommen. Apropos Business, es gibt ein paar Kontinente, die sind nicht so gut befleckt, wenn es in Sachen Cloud-Regionen geht. Da sprechen wir primär über Afrika und Südamerika. Afrika sind die meisten irgendwie in Südafrika unterwegs, aber in Zentralafrika wird's ein bisschen mau mit Regionen. Südamerika ist ebenfalls noch nicht so wirklich gut bedeckt, was das angeht. Oracle hat jetzt zum Beispiel sich damit ... hat da ein bisschen mit rumgeprallt, dass seit Dezember letzten Jahres ist Oracle der erste Hyperscaler mit zwei Cloudregionen in Chile. Ich weiß jetzt auch nicht, warum sie das gemacht haben. Scheint anscheinend ein paar große Kunden da zu haben.",
+            "start": 1437433,
+            "end": 1529801,
+            "confidence": 0.8318405172413792,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Warum heißt Chile aber nicht China? Müsste ja Schiele heißen.",
+            "start": 1529841,
+            "end": 1534422,
+            "confidence": 0.8378,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Ja, Schiele, sag ich doch.",
+            "start": 1534822,
+            "end": 1535862,
+            "confidence": 0.6132,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Ah, du sagst Chile. Ich sag China. Hopfen und Malz verloren. Zählt eigentlich Oracle mittlerweile zu den Hyperscalern? Oder schimpfen sie sich selbst nur als Hyperscaler?",
+            "start": 1535922,
+            "end": 1546325,
+            "confidence": 0.6924230769230768,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Sie bezeichnen sich selbst. Das ist eine Pressemitteilung, die war natürlich auch in den Shownotes verlinkt. Sie beschimpfen sich selbst als Hyperscaler. Dann bei den Regionen, beziehungsweise bei der Regionauswahl, ist auch ganz interessant zu wissen, dass manche Services der Cloud-Provider einfach multi-regional by default sind. Das bedeutet, da ist es völlig egal, was ihr für eine Region nehmt. Manche sind weltweit verfügbar, manche sind irgendwie über Regionsgruppen. Nehmen wir mal zum Beispiel Google Cloud Bigtable und BigQuery. Da kann man sagen, okay, ich möchte meine Daten irgendwie in Europa haben, genauso wie die Container Registry oder Spanner, und dann sind die Daten primär in Europa. Dann muss man jetzt nicht Paris auswählen oder Holland oder Belgien oder Ähnliches. Andere Services wiederum sind global verfügbar, entweder bei Default oder Aktivierbar. Das sind so meistens Services sowas wie DNS, CDN-Services, Loadbalancer, viel im Security- und Netzwerkbereich zum Beispiel. Dann gibt's eine Eigenheit zum Beispiel mit Amazon, wo oft das Internet wirklich drüber lacht bei Regionen. Und zwar ist das nämlich über die erste Region, die Amazon 2006 gelauncht hat. Und zwar ist das US East 1. Das ist, glaube ich, North Virginia. der der running joke im internet ist eigentlich wenn us east one einmal nie ist wackelt die welt weil das eine core region ist und in dieser region laut gerüchten hostet amazon sehr sehr viele core services von sich da kommen wir auch gleich noch mal zu wenn wir über region outages sprechen Jetzt ist das.",
+            "start": 1546345,
+            "end": 1645324,
+            "confidence": 0.8163198380566806,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Ganze ja schön und gut mit den ganzen Zones und ich kann ihn auf Zones verteilen und bei manchen Services ist mir das ja ziemlich egal, wenn da die Latency ein bisschen höher ist, wenn da irgendwas im Hintergrund verteilt wird, wenn das Commit länger braucht, bis da meine Artefakte geschrieben sind in meiner Registry zum Beispiel. Aber was ist denn, wenn ich jetzt High-Latency brauche und aber trotzdem vielleicht auf mehreren Zones oder irgendwie diese Sicherheit erhalten will, trotzdem.",
+            "start": 1645364,
+            "end": 1670838,
+            "confidence": 0.8205999999999998,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Meinst du jetzt High-Latency oder High-Speed? Also, meinst du eigentlich Low-Latency?",
+            "start": 1670858,
+            "end": 1675580,
+            "confidence": 0.6117272727272727,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Ich mein natürlich Low-Latency, also ordentlichen Speed, High-Speed.",
+            "start": 1676401,
+            "end": 1680422,
+            "confidence": 0.618,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Verstehe.",
+            "start": 1680442,
+            "end": 1680823,
+            "confidence": 0.842,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Sprichst du mir auch schon durcheinander?",
+            "start": 1681003,
+            "end": 1682483,
+            "confidence": 0.38116666666666665,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Ist aber auch ein hartes Passwort-Bingo heute, na ja. Auf jeden Fall, ja. Die wirklichen Hyperscaler, die Enterprise-Cloud-Provider können dir da auch ein bisschen helfen. Und zwar hat Amazon noch zwei interessante Konzepte für wirklich Low-Latency-Applikationen. Und zwar sind das einmal Local Zones und einmal Wavelength Zones. Local Zones sind eigentlich spezielle Zonen innerhalb von Regionen, die speziell die Requirements von Low-Latency in speziellen geografischen Areas erfüllen. Nehmen wir mal die Use-Case von Streaming oder Online-Spielen-Plattformen. Da hast du wirklich Compute Storage, Load Balancer und DDoS-Schutz. Und da haben die mit hoher Wahrscheinlichkeit Premium-Netzwerk-Komponenten und sind wirklich näher am Kunden oder näher an der Edge. Achtung, es sind keine Edge-Locations, denn Edge-Locations sind wirklich optimiert für Content Delivery. Und Local Zones bieten dir zum Beispiel wirklich Compute VMs, also EC2 und EBS-Storage, Block-Storage und so weiter. Und jetzt kommt wirklich was krasses, was ich von Amazon schon sehr, sehr geil finde. Wenn du sagst, okay, Local Zones, das ist mir noch nicht Low Latency genug. Ich brauche jetzt mal wirklich was für meinen Tesla, wo wir im einstelligen Latenzbereich liegen. Und zwar hat Amazon sogenannte Wavelength Zones.",
+            "start": 1682503,
+            "end": 1763435,
+            "confidence": 0.7952513368983962,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Einstellige Millisekunden, meinst du oder wahrscheinlich?",
+            "start": 1764003,
+            "end": 1766967,
+            "confidence": 0.6338333333333334,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Genau, Entschuldigung, einstellige Millisekunden Bereich.",
+            "start": 1767008,
+            "end": 1770172,
+            "confidence": 0.7412000000000001,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Dollar, Dollar ist wahrscheinlich ein ganzes Gegenteil.",
+            "start": 1770312,
+            "end": 1773216,
+            "confidence": 0.7488571428571429,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Ganz genau, die Saison kostet natürlich ein paar Mark mehr, aber die Saison sind speziell für Mobilgerät und Endbenutzer. wo du wirklich schnellen kram brauchst denn irgendwie haben die es geschafft compute direkt an die edge von den mobilfunkbetreibern zu setzen so dass du deine compute note eigentlich direkt im 5g netz hast nehmen wir mal für vernetzte fahrzeuge und tesla und so weiter die könnten natürlich sehr sehr große vorteile davon ziehen.",
+            "start": 1773256,
+            "end": 1803116,
+            "confidence": 0.8260684931506846,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Ist es dann sowas ähnliches wie die Edgeworker von Cloudflare zum Beispiel, die halt dann wirklich Compute-Power anbieten auf den Edge-Nodes?",
+            "start": 1803802,
+            "end": 1813790,
+            "confidence": 0.7954761904761906,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Ja, obwohl natürlich Wavelength deutlich niedriger in der Latenz ist mit Millisekunden, da die natürlich im 5G-Netz hängen, im Mobilfunknetz und Cloudworker sind ja eigentlich nur Lambda-Funktionen oder Cloud-Funktionen, Serverless-Funktionen auf den CDN-Nodes, auf der Edge, wie Amazon auch. Ja, was natürlich dann schon ein großer Unterschied ist.",
+            "start": 1813850,
+            "end": 1836590,
+            "confidence": 0.8119374999999999,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Bei diesen Wavelength Zones sind wir jetzt schon bei wirklich spezialen Anwendungen, wie du ja schon richtig gesagt hast, mit vernetzten Fahrzeugen und so weiter. Jetzt, das braucht jetzt wahrscheinlich eher die Minderheit, würde ich mal sagen, von uns in der Praxis. Wie relevant ist denn das Ganze mit den Zones? Braucht man diese Zones, wenn ich da jetzt mein normales Service aufbaue, muss ich mich da wirklich darum kümmern, dass das so stark verteilt ist? Wie sieht denn das in der Realität denn aus?",
+            "start": 1836958,
+            "end": 1863749,
+            "confidence": 0.7913764705882356,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Ja, ich glaube schon, dass viele Softwareentwickler sagen, ja, das braucht man, das geht gar nicht anders. In der Realität sieht es halt oft anders aus. Ich denke, dass viele Softwareentwickler ihre Applikationen wirklich in einer Availability-Zone betreiben. Und wenn die dann mal hops geht, dann ist deine Applikation hops, beziehungsweise hops meine ich für eine gewisse Zeit nicht verfügbar. Aber da kommt Oracle ins Spiel. Und das hätte man von denen gar nicht erwartet, denn wer schon mal sich das Pricing einer normalen Oracle-Datenbank angesehen hat, der denkt eher, ist doch alles Enterprise und sind doch alles teurer. Aber die Mädels und Jungs von Oracle haben eine tolle Sache eingeführt, nennt sich Fault Domains. Und zwar haben die gesagt, innerhalb einer Availability Zone, bei Oracle heißt eine Availability Zone, Availability Domain, ist genau das gleiche. Innerhalb einer Availability Zone trennen wir ein Datacenter nochmal in sogenannte Fault Domains. Stell dir vor, du hast ein Datacenter mit 30 Racks und dort richten die dann drei Fault Domains ein, denn jede Availability Zone bei Oracle hat drei Fault Domains und eine Fault Domain selbst ist eigentlich eine Gruppe von Servern. die unabhängig maintained wird und wo du wirklich sagen kannst, okay, das, was du bei Availability Zones hast, hast du dann auf Server-Ebene oder auf Rack-Ebene. Die haben dann sehr wahrscheinlich auch, was nicht ganz definiert ist, aber eigene Power Supply beziehungsweise für dieses Rack. Und so kann man schon so eine Art und Weise von Reliability aber auf Datacenter-Ebene machen. Und das finde ich schon relativ schön.",
+            "start": 1864009,
+            "end": 1955566,
+            "confidence": 0.7787003891050585,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Aber entspricht das nicht eigentlich den Zones von Google Cloud zum Beispiel genauso, weil Google Cloud hat ja keine Distanzkriterien und sagt eine Zone ist eine Failure Domain, eine Single Failure Domain und wenn man auf mehrere Zones verteilt, hat man diese Sicherheit. Aber es kann ja auch in einem Datacenter eben sein, auf verschiedenen Stockwerken zum Beispiel.",
+            "start": 1955846,
+            "end": 1972797,
+            "confidence": 0.755206896551724,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Ja, das kann ich nicht bejahen und nicht verneinen, da ich kein Google Cloud Datacenter-Ingenieur bin. Aber bei Oracle hast du ganz unten Fault Domains, dann hast du Availability Domains und dann hast du Regions.",
+            "start": 1973447,
+            "end": 1985795,
+            "confidence": 0.7879999999999999,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Das heißt, die haben nochmal fein granulare Aufteilung.",
+            "start": 1985835,
+            "end": 1988397,
+            "confidence": 0.75075,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Dass du innerhalb einer Zone nochmal aufteilen kannst. Da geht es ja in das Keyword Affinity und Anti-Affinity. Sorg halt dafür, dass wenn du mehrere Instanzen an deinem Service hast, diese Instanzen nicht auf demselben physikalischen Host sind. Denn die meisten Cloud-Provider haben Virtualisierung drunter. Wenn du eine VM hast, landen in der Regel mehrere VMs auf einem physikalischen Host und da kann es sein, dass du zwei VMs hast, die auf dem physikalischen Host hast. Wenn du sagst, aber meine zwei Services sollen auf unterschiedlichen Vault Domains laufen, dann sorgt Oracle dafür, dass deine Applikationen 100% nicht auf demselben physikalischen Host laufen.",
+            "start": 1988949,
+            "end": 2029754,
+            "confidence": 0.8007961165048545,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Jetzt haben wir die vier großen, ich nehme jetzt mal Oracle mit rein, eben Oracle, wenn man es als Hyperscaler bezeichnen will. Und natürlich Azure, Google Cloud und AWS. Wie sieht es denn mit den ganzen anderen Anbietern aus? Wir sind ja ein Anbieter-agnostischer Podcast. Wir machen ja keine Werbung für irgendwelche Anbieter. Wie sieht es denn mit den ganzen anderen aus? Digital Ocean, OVH, ist ja sehr bekannt worden, wie sie da in Belgien ihr Datacenter abgefackelt haben, wo dann sehr viele draufgekommen sind. Ist doch nicht so easy, wenn man irgendwo in der Cloud ist. Hetzner natürlich ist mittlerweile ein sehr großer in Deutschland, aber gibt natürlich auch noch viele andere. Wie sieht es denn da bei denen aus?",
+            "start": 2029774,
+            "end": 2069060,
+            "confidence": 0.773322314049587,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Ja, leider nicht so gut. Generell kann man sagen, je günstiger eine Cloud, desto weniger Availability Zones haben sie. Aber zum Beispiel DigitalOcean hat mehrere Regionen, aber die haben das Konzept von Availability Zones eigentlich gar nicht. Genauso wie OVH oder auch Hetzner. Wobei man sagen muss natürlich, dass nur weil diese kleineren Cloud-Anbieter nur eine Availability-Zone haben, heißt das nicht, dass das ein Datacenter ist. Viele dieser Cloud-Provider, DigitalOcean, OVH, Hetzner und Vulture und wie sie alle heißen, die betreiben natürlich pro Region immer noch mehrere Datacenter.",
+            "start": 2069525,
+            "end": 2108668,
+            "confidence": 0.8030340909090911,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Das ist sogar bei Hetzner, weiß ich das selber zum Beispiel, da sieht man ja immer anhand vom Host-Namen, da ist das Rechenzentrum hineinkodiert, wie viele Rechenzentren da es eigentlich gibt und man denkt sich, ja, man hat da so zwei Server, die stehen eigentlich eh nebeneinander und dabei stehen die irgendwie in komplett unterschiedlichen Data-Centern und man hat dann ganz andere Relatenzen zum Beispiel zwischen den Rechnern, wobei das in der Realität natürlich auch nicht so ins Gewicht fällt, weil die sowieso alle gut miteinander vernetzt sind.",
+            "start": 2109540,
+            "end": 2134622,
+            "confidence": 0.7982954545454543,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Ja, also ich glaube, wenn du jetzt irgendwie Stock Trading machst und wirklich sub Millisekunden im Bereich unterwegs bist wegen irgendwelchen Finanzen, dann wirst du mit hoher Wahrscheinlichkeit nicht auf Hetzner gehen.",
+            "start": 2134898,
+            "end": 2145284,
+            "confidence": 0.72634375,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Ja, aber da wirst du wahrscheinlich sowieso dann in irgendeinem Datacenter neben dem Börsenrechner sitzen wollen. Das ist dann sowieso nochmal eine andere Liga. Also heutzutage mit Fiber muss man schon sagen, dass man auf solchen Latenzen ist, die wahrscheinlich in den meisten Fällen einfach für uns alle schnell genug sind, muss man wirklich ganz klar dazu sagen.",
+            "start": 2145524,
+            "end": 2165416,
+            "confidence": 0.7835344827586205,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Ein kleiner Trost ist jedoch, dass die kleineren Hoster deutlichst transparenter mit den Informationen sind. Also auf Hetzner kannst du zum Beispiel sehen, welche Netzwerk-Hardware die nutzen, welchen Netzwerk-Throughput die haben. Genauso wie auf OVH ist auch relativ transparent, also deutlichst transparenter als die großen vier, Amazon, Google, Azure und Oracle.",
+            "start": 2165436,
+            "end": 2185595,
+            "confidence": 0.7797647058823529,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Oder alleine das Rechenzentrum reinkodiert in den Hostnamen. Versucht es mal bei Google zu wissen, herauszufinden, wo deine Hardware steht, wo du jetzt gerade drauf bist.",
+            "start": 2186288,
+            "end": 2196035,
+            "confidence": 0.7915384615384615,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Es wäre natürlich schön, wenn diese kleinen Cloud-Provider, wenn sie keine mehreren Availability-Zones haben, auch dieses Fault-Domain-Konzept von Oracle adaptieren würden. Weil das finde ich schon relativ smart, dass du sagen kannst, okay, dass ich wenigstens irgendwie Rack-aware bin oder ähnlich.",
+            "start": 2196555,
+            "end": 2212386,
+            "confidence": 0.7842926829268294,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Aber kommen wir mal jetzt wirklich in die Praxis. Eben schon am Anfang erwähnt, haben Service deployed. Ist natürlich dann schief gegangen. Availability Zone ist down. Drei Stunden, vier Stunden, vielleicht auch mal mehrere Stunden. Und das ganze Service ist down. Wie komme ich denn jetzt zu dem Punkt, wo ich überhaupt Multi-Zone-Deployment machen kann? Wie funktioniert das? Was habe ich denn da für Möglichkeiten?",
+            "start": 2213243,
+            "end": 2236169,
+            "confidence": 0.7861230769230768,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Die Frage, was hast du für Möglichkeiten, ist eigentlich eine relativ doofe, muss ich zugeben, weil du bestimmst ja, wo du die Applikation hostest. Und ob du deine Applikation überhaupt Multi-Availability-Zone betreiben kannst, das weißt in der Regel nur du, der die Applikation geschrieben hat. Also es kommt natürlich ganz auf die Art und Weise deiner Applikation an. Nehmen wir mal jedes verteilte System, zum Beispiel eine Datenbank, Kafka, Cassandra. Diese Systeme sind prädestiniert um diese Multi-AZ zu hosten. Kafka hat sogar Settings dafür um die verschiedenen Broker in verschiedenen Availability Zones zu hosten.",
+            "start": 2236189,
+            "end": 2274047,
+            "confidence": 0.8040425531914895,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Was ist ein Broker für alle die noch nie mit Kafka gearbeitet haben?",
+            "start": 2274087,
+            "end": 2277371,
+            "confidence": 0.627,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Broker ist eine Note im Kafka-Verteiltensystem, also die Komponenten, die Server innerhalb eines Kafka-Clusters nennt man Broker. Und die einzelnen Broker, die kannst du rack-aware schalten, ne? Wir erinnern uns, LinkedIn hat Kafka damals ... programmiert, um es on-premise zu betreiben. Wenn du deine eigenen Datacenter hostest, hast du sogenannte Racks, in denen Endserver sind. Und Kafka hat ein Setting, dass du die Replika, die Kopien deiner Daten in verschiedenen Racks speicherst. Und jetzt haben smarte Leute gesagt, ja, Moment mal, aber ich bin ja gar nicht on-premise, ich bin ja in der Cloud, dann lass uns doch einfach dieses Rack-Aware-Setting ummünzen auf Rack gleich Availability zone. Und somit kannst du eigentlich die einzelnen Nodes in einem Kafka-Cluster ohne Probleme in verschiedenen Availability-Zones hosten. Ähnlich wie bei Cassandra, ähnlich wie bei OpenSearch oder Elasticsearch. Also eigentlich in jedem verteilten System, was aus mehreren Nodes besteht. Da gibt natürlich die Frage, wie Shetty ist dein System? Wie viel Kommunikation geht denn da über die Leitung? Denn Multi-AZ, Multi-Availability-Zone hat natürlich auch einen Nachteil. Und zwar geht es da um die Kosten und da kommen wir jetzt gleich zu. Wenn wir über relationale Datenbanken sprechen, dann hat man ja in der Regel ein Primary-System und dann mehrere Follower. Früher hat man das Master und Slave genannt. Du kannst auch eine Multi-Master-Replikation bei MySQL betreiben. Die kannst du auch über mehrere Availability-Zones strecken. Und die letzte Kategorie, die ich gerade rausgehört habe, sind eigentlich die klassischen Stateless-Applikationen, so API-Server oder Ähnliches. Da kommt es natürlich darauf an, wie du die auf der Cloud hostest. Wenn man das jetzt zum Beispiel mit so einem Kubernetes da macht, mit so einem Managed Kubernetes bei Amazon und bei Google Cloud, kann man die Kubernetes Server auf sogenannte Regional Clusters ummünzen. Das bedeutet, dass die automatisch ihre Kubernetes Nodes und die Pods dann in die verschiedenen Availability Zones schieben und ob man die ganze sache jetzt möchte oder nicht das hängt eigentlich von einem geldbeutel ab würde ich sagen denn. Wir sprechen nun ein bisschen über Netzwerktransferkosten. Und zwar ist das eine der ganz großen Einnahmequellen der ganzen Cloud-Provider. Wir sprechen von sogenanntem Egress und Ingress. Oder wie neuerdings auch bei Google Cloud es heißt Data Transfer Out, das ist Egress und Data Transfer In, das ist Ingress.",
+            "start": 2278138,
+            "end": 2434055,
+            "confidence": 0.8249580052493436,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Und ich finde das viel besser, mit egress und ingress habe ich mir ewig lange überlegen müssen, was was ist.",
+            "start": 2434835,
+            "end": 2440418,
+            "confidence": 0.7932000000000001,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Pass auf, kennst du die Eselsbrücke zu Steuerbord und Backbord?",
+            "start": 2440438,
+            "end": 2444760,
+            "confidence": 0.8019000000000001,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Ich weiß nicht mal, ist das links und rechts oder hinten und vorne? Links und rechts, oder?",
+            "start": 2444820,
+            "end": 2449243,
+            "confidence": 0.6542941176470588,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Genau, wir reden von der Schifffahrt, Steuer, Steuer, rechts, Steuerbord und Backbord ist dann links. Egress, external, ingress, internal.",
+            "start": 2449283,
+            "end": 2460028,
+            "confidence": 0.7356842105263158,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Ja, deswegen muss ich trotzdem überlegen, was das heißt. Die kann man sich immer herleiten. Aber es braucht halt.",
+            "start": 2460048,
+            "end": 2465593,
+            "confidence": 0.7091578947368422,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "So, vor kurzem wurde zumindest bei Google Cloud Egress in Data Transfer Out und Egress in Data Transfer In umbenannt. Warum? Nicht freiwillig. Ja, es gibt eine EU-Klage. Und zwar ist da Cloudflare ganz vorne dabei. Und die sagen, Hammer, es kann doch nicht sein, dass Cloudprovider so viel für Egress berechnen. Und da hat die EU langsam gesagt, ja, das stimmt, das ist alles doof. Und jetzt haben sie in der Klage wohl irgendwie Egress und Ingress genau genannt und jetzt versucht sich Google Cloud mit der Umbenennung da so ein bisschen rauszuziehen. Also die Gerichtsurteile von der EU, das dauert jetzt wohl noch ein bisschen, weil die haben sie jetzt erst mal Data Transfer Out genannt und somit sind die in der Hoffnung von Ihnen von der Klage nicht mehr betroffen, was die Kostensenkung für Netzwerktransfer raus aus der Cloud betrifft. Mal ganz kurz, wir sprechen jetzt nur über Traffic, was die Availability Zone verlässt. Denn bei den meisten Cloud-Providern ist der Data Transfer in kostenfrei, gratis. Weil die haben natürlich einen Incentive, dass du viele Daten in die Cloud schaffst. Und wenn du jetzt viele Systeme, die sehr viel miteinander quatschen, über mehrere Availability Zones hast, dann kann das sehr teuer werden, denn der Traffic geht aus einer Availability Zone raus in die nächste rein und das 3-4 mal und das geht alles schön auf deine monatliche Cloud Rechnung. Mal als Beispiel, wenn zwei Availability Zones in einer Region miteinander kommunizieren, ist das günstiger, als wenn zwei Regionen miteinander kommunizieren auf demselben Kontinent? Ist das günstiger, als wenn zwei Regionen auf unterschiedlichen Kontinenten miteinander quatschen? Ist das günstiger, als wenn du mit Indonesien oder Ozeanien, Australien oder Ähnliches sprichst? Datatransfer in Indonesien und Australien, Neuseeland ist ungefähr das teuerste, was du aktuell in der Welt machen kannst, denn die Internetleitung nach Downunder ist jetzt nicht die beste.",
+            "start": 2466073,
+            "end": 2590155,
+            "confidence": 0.8244774193548396,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Das heißt aber, das ist nur relevant, wenn natürlich meine Nodes miteinander irgendwie kommunizieren. Wenn ich jetzt ein Docker-File habe, was nur meine statischen Assets ausliefert und die deploy das in alle Regions, dann hat es null Kommunikation miteinander, nur mit dem Kunden, dann habe ich immer den Traffic und damit keine Mehrkosten.",
+            "start": 2590716,
+            "end": 2609547,
+            "confidence": 0.8157735849056603,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Genau, wir reden hier jetzt nur von Systemen, die untereinander kommunizieren, so was wie.",
+            "start": 2609987,
+            "end": 2615529,
+            "confidence": 0.8251428571428571,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Zum Beispiel eine verteilte Datenbank zum Beispiel oder sowas, die halt ständig irgendwie Sachen herumshiften und Daten hin und her schieben.",
+            "start": 2615549,
+            "end": 2622792,
+            "confidence": 0.7534761904761905,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Prinzipiell kannst du ... Oder du hast einen Zookeeper oder einen ETCD oder irgendwie so was, ja? Also eigentlich alles, was ein Konsensusalgorithmus wie Raft oder Paxos hat, die quatschen relativ viel miteinander. Und ich glaub, ein Kubernetes nutzt auch einen ETCD, die müssen miteinander quatschen.",
+            "start": 2623745,
+            "end": 2641768,
+            "confidence": 0.7221956521739128,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Wobei das natürlich auch nur Metatraffic dann ist. Es sollte eigentlich nicht so viel sein, würde ich mal sagen.",
+            "start": 2641788,
+            "end": 2647509,
+            "confidence": 0.658578947368421,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Ja gut, wenn du jetzt deinen eigenen Kafka-Cluster hostest, da könnten schon mal ein paar Terabyte durchgehen.",
+            "start": 2647529,
+            "end": 2650810,
+            "confidence": 0.5491176470588236,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Ja, Kafka schon, aber jetzt nur in Kubernetes an sich hat hoffentlich nicht zu viel Traffic. Und die paar Health Checks, die regelmäßig da drüber fliegen, wird wahrscheinlich jetzt nicht so die Masse ausmachen.",
+            "start": 2651526,
+            "end": 2662035,
+            "confidence": 0.7280882352941175,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Wenn du jetzt natürlich solche speziellen Zonen wie die Local Zones oder sowas von Amazon nutzt, da kostet auch Data Transfer In. Aber wenn du soweit bist, dann sollte dich das eigentlich nicht mehr stören.",
+            "start": 2662055,
+            "end": 2672244,
+            "confidence": 0.7826285714285716,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Also wenn ich die jetzt richtig verstehe, Multi-Zone-Deployment oder Betrieb, wie nennt man sowas professionell? Multi-AC-Betrieb. Egal. Macht auf jeden Fall Sinn für die meisten Applikationen, die halt eine gewisse Verfügbarkeit haben sollen. Wie sieht es denn jetzt aus mit Multi-Region, wenn wir jetzt noch eine Stufe höher gehen, also nicht nur auf zwei Zonen oder auf drei Zonen geht, sondern wirklich auf mehrere Regionen? Wann macht es wirklich Sinn? Wann brauche ich das überhaupt? Und was kaufe ich mir da zusätzlich noch ein mit dem Sack, den ich mir da wieder an meinen Service binde?",
+            "start": 2672564,
+            "end": 2708721,
+            "confidence": 0.823583333333333,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Ja, generell würde ich sagen, es gibt drei Use Cases. wo du irgendwie Multi-Region brauchst. Auf der einen Seite ist das für Disaster Recovery, oder eigentlich zwei Use Cases. Disaster Recovery, das bedeutet, du hast Backups oder eine Replika in einer anderen Region von einer relationalen Datenbank. Oder du hast die Infrastruktur da schon mal hochgefahren und hältst sie nur vor.",
+            "start": 2709041,
+            "end": 2730920,
+            "confidence": 0.7863114754098359,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Also so als Hot Standby.",
+            "start": 2730960,
+            "end": 2732182,
+            "confidence": 0.3902,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Ganz genau so ist Hot Standby, denn wenn ein Cloud Provider ein Regional Outage hat, dann wird meist empfohlen, bitte migrier auf eine andere Region. Kannst du dann aber in der Regel ja nicht, weil du nicht an deine Original Region rankommst, wenn du nicht vorbereitet bist.",
+            "start": 2732932,
+            "end": 2745265,
+            "confidence": 0.7462553191489362,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Das heißt aber, ihr habt da wirklich die doppelten Kosten dran, wenn das wirklich Hot Standby ist.",
+            "start": 2745305,
+            "end": 2749490,
+            "confidence": 0.7468235294117648,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "In der Regel hast du die deutlich runter skaliert und machst dann im Ernstfall skalierst du dann wieder hoch. Also es sind hoffentlich nicht dieselben Kosten. Die zweite Geschichte ist, dass viele Kosten natürlich auch Traffic bedingt sind, wie zum Beispiel bei DynamoDB hast du ja Read and Write Operations oder bei Data Transfer Outkosten. Ja, die hast du natürlich dann beim Hot Standby nicht.",
+            "start": 2749997,
+            "end": 2770056,
+            "confidence": 0.7473846153846154,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Wobei natürlich, wenn ich jetzt meine Daten natürlich dort auch haben will, dann muss ich eigentlich alles, was in meiner Hot-Region, was in meiner aktiven Region geschrieben wird, auch in meiner Hot-Standby-Region schreiben, weil sonst habe ich natürlich die Daten dort nicht. Also den Schreibtraffic hast du dann auf beiden Regions.",
+            "start": 2770276,
+            "end": 2787883,
+            "confidence": 0.76978431372549,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Wenn du natürlich wirklich ein Hot-Standby haben möchtest, ja, du kannst aber auch einfach nur ein Database-Dump oder das UL-File darüber legen und dann zahlst du nur die Object-Storage-Kosten und dann im Ernstfall fährst du die Datenbank hoch mit dem Backup.",
+            "start": 2787903,
+            "end": 2798728,
+            "confidence": 0.5953902439024392,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Es kommt immer drauf an, wie schnell du halt wieder online sein willst.",
+            "start": 2799373,
+            "end": 2801876,
+            "confidence": 0.7439999999999999,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Genau, genau.",
+            "start": 2801936,
+            "end": 2803378,
+            "confidence": 0.54,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Das spiegelt sich dann in den Kosten wieder.",
+            "start": 2803398,
+            "end": 2806101,
+            "confidence": 0.7766249999999999,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Ganz genau. Die zweite Geschichte ist, wenn du wirklich eine weltweit verteilte App hast oder Kundschaft auf verschiedenen Kontinenten. Wenn du sehr stark in Amerika bist, dann willst du natürlich deine Web-App oder deine Mobile-App natürlich auch aus Amerika bedienen und Europa. Und in diesem Fall wärst du nämlich dann auch wieder multiregional unterwegs. Was man dann aber natürlich, wie gesagt, beachten muss, Traffic über Regionen hinweg ist natürlich deutlich teurer als über Availability Zones hinweg. Und Traffic über Kontinente ist noch mal ein bisschen teurer als über Regionen auf demselben Kontinent. Dann gibt's natürlich auch die Frage, okay, wir haben grad schon über Datenbanken gesprochen. Wie krieg ich die Daten denn darüber? Macht's vielleicht auch Sinn, einen Kafka-Cluster oder einen Cassandra-Cluster über mehrere Regionen zu spannen? Kann man machen, würd ich jetzt nicht empfehlen. Hab ich so auch noch nicht gesehen, dass du einen Cluster über wirkliche Regionen spannst. Was du in der Regel machst, ist, dass du die über eine Replikation miteinander connectest. Wenn du zwei unabhängige Kafka-Cluster und schippst die Daten von A nach B über Tools wie einen Mirror Maker oder Ähnliches. Also, dass das alles ein bisschen entkoppelt ist. Es gibt auch proprietäre Lösungen, die so was machen. Mit so was hab ich noch nie gearbeitet. Ich glaub, Confluent hat so was. Nennt sich Control Manager oder so was von denen. Ich hab keine Ahnung, wie gut so was funktioniert. Also, falls du in eurer Firma irgendeine Datenbank wirklich über ... wirklich einen Cluster über mehrere Regionen gespannt hast, das würd mich mal interessieren.",
+            "start": 2806141,
+            "end": 2893817,
+            "confidence": 0.791057915057915,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Aber wenn du jetzt zwei Regions fährst und beide hot sind und wirklich aktiv, dann musst du ja das eigentlich fast über einen Cluster machen, wenn du in zwei Regionen schreibst.",
+            "start": 2894484,
+            "end": 2904467,
+            "confidence": 0.8224516129032259,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Aber das würde ich gar nicht so sagen. Das ist eine ganz große Frage des Data-Shardings, welche Daten du wo, wie brauchst. Vielleicht kannst du auch einfach die Daten lokal halten. Und vielleicht hast du Daten, die US-spezifisch sind, oder europaspezifisch. Dann brauchst du die US-Daten nicht in Europa. Also, das kommt sehr stark drauf an, mit was für Daten du hantierst und welche Aktualität da wirklich notwendig ist. Es ist immer so, ich hatte mal eine tolle Story, da kam ein Produktmanager auf mich zu, weil ich da im Infrastruktur-Team war, und dann wurde gesagt, ja, diese Daten brauchen wir in Realtime auf der ganzen Welt. Und dann habe ich da ein bisschen nachgehakt, um was ging es dann, und dann hieß es, ja, das Login-Datum muss binnen wenigen Sekunden weltweit repliziert werden. Ich so, warum muss das Login-Datum weltweit repliziert werden? Und dann hatte ich da echt, weiß ich nicht, ein paar Tage mit ihm diskutiert, weil er hielt natürlich seine Lösung für die wichtigste. Und dann habe ich ihm einfach mal vorgerechnet, was für ein operationeller Aufwand es ist, jeden Datensatz weltweit verfügbar zu machen innerhalb Sekunden. Und auch, was für Kosten das erzeugt. Und dann war er ganz schnell weg von seiner Lösung. Denn haltet euch eins vor Augen, umso verfügbarer und umso schneller ein Datensatz weltweit da sein muss, desto teurer wird die ganze Geschichte. Nicht nur infrastrukturtechnisch, sondern auch engineering effortmäßig. Deswegen macht euch sehr, sehr viele Gedanken, welche Daten müsst ihr wo vorhalten, wie aktuell oder out of date dürfen sie sein? Denn das erleichtert euren engineering effort enormst.",
+            "start": 2904828,
+            "end": 2992203,
+            "confidence": 0.8105225563909775,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Und vor allem, wie oft schreibt man die Daten wirklich? Das ist ja dann auch nochmal eine Sache. Aber wir wandern schon wieder in die ganze Datenbank-Welt.",
+            "start": 2992868,
+            "end": 2999959,
+            "confidence": 0.7494074074074075,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Ja, aber irgendwie wandern wir da oft ab, aber da sieht man auch, dass Datenbanken halt leider der Key ist.",
+            "start": 2999999,
+            "end": 3005367,
+            "confidence": 0.6839,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Also zurück zum Thema und die Frage, die sich mir ja immer stellt, ist, brauche ich das Ganze eigentlich? Also wie oft kommen denn diese Outages wirklich vor? Muss ich mir diesen ganzen Mehraufwand eigentlich wirklich reinholen? Weil wir haben das ja schon oft besprochen, es ist ein extremer großer Schritt von einem Single-System auf ein Multi-System zu gehen, egal ob das jetzt AC, also innerhalb von Zones verteilt ist oder Regions verteilt sind. Es ist einfach ein extremer Mehraufwand natürlich und darum macht man das ja auch meistens so, dass man einfach mal in einer Zone startet. Also wie oft kommen denn diese ganzen Outages auch wirklich vor oder sprechen wir davon, keine Ahnung, ein, zwei Minuten im Jahr?",
+            "start": 3005387,
+            "end": 3045995,
+            "confidence": 0.8303083333333333,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Also dass eine Availability Zone mal abbraucht oder nicht verfügbar ist, das kommt eigentlich immer mal wieder vor.",
+            "start": 3046778,
+            "end": 3051900,
+            "confidence": 0.7753888888888888,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Was ist denn immer mal wieder? Also sprechen wir da von Wochen? Also wenn ich da jetzt in einer Zone deploy, muss ich dann damit rechnen, dass ich da alle paar Wochen mal einen Ausfall habe, wirklich einen längeren? Oder sprechen wir da trotzdem irgendwie von Monaten oder Jahren?",
+            "start": 3051940,
+            "end": 3066265,
+            "confidence": 0.7772448979591834,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Aber ich hab da jetzt keine harten Statistiken zu und offengesprochen ist das auch immer ein bisschen schwierig harte Statistiken zu kriegen, denn zum Beispiel die Incident Page von Azure, die löscht die Outages nach ein paar Wochen wieder von der Incident Page runter. Deswegen ist das alles ein bisschen schwierig zu tracken.",
+            "start": 3066985,
+            "end": 3084982,
+            "confidence": 0.8069811320754718,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Aber du arbeitest ja bei einer Firma, die sehr viel mit allen Cloud-Providern macht und zu tun hat. Was ist denn dein Gefühl, wie oft sowas vorkommt? Also aus deinen Erzählungen kommt bei euch ja irgendwie ein Outage jeden Tag irgendwo auf der Welt vor. Aber das sind natürlich immer andere Anbieter, andere Zones. Also was würdest du denn da so als Schätzung mal in den Raum werfen? Ist immer super, wenn du dich festlegst, weil dann bist du da gepinnt und dann hoffe ich, dass ganz viele ZuhörerInnen dann mit den Hard Facts kommen und zeigen, dass du falsch warst. Okay.",
+            "start": 3085682,
+            "end": 3118373,
+            "confidence": 0.7886960784313727,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Also, was ich natürlich sehe, ich sehe das Gesamtbild von allen Cloud-Providern und von sehr, sehr vielen Regionen und von sehr, sehr vielen Availability Zones. Ich sehe pro Quartal schon mindestens drei bis vier Availability Zones über die Provider hinweg, die wegfliegen, ja?",
+            "start": 3118433,
+            "end": 3136690,
+            "confidence": 0.8504186046511629,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Und zwar wirklich länger, also jetzt nicht nur eine Minute.",
+            "start": 3136730,
+            "end": 3138932,
+            "confidence": 0.7794,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Ja, länger, ich sag mal, so zehn Minuten teilweise schon. Also, dass es Stundenoutages sind für Willebit, ist sehr, sehr selten, geb ich zu. Aber weltweit passiert das schon öfters mal. Das kann wirklich recht viel ... Also, der Grund ist völlig unterschiedlich. Ab und zu ist es nur ein Ein-Minuten-Hiccup, ab und zu zehn Minuten Hiccups. Aber das heißt jetzt nicht, dass ihr euch jetzt ganz spezifisch Gedanken macht, in welche Region ihr geht. dass man jetzt wirklich sagt, oh, Europe West 4 ist, glaub ich, in Belgien oder in Holland bei Google. Da kann ich mich jetzt zum Beispiel einzeln nicht dran erinnern, dass die mal eine Availability Zone Flip hatten. Und wenn man das jetzt mal so sieht, Regional Outages generell sind auch sehr, sehr rar, weil einzelne Regionen sind halt so gebaut, um resilient zu sein. Dennoch war 2023 ein relativ lustiges Jahr, lustig in Anführungszeichen, weil die drei Hyperscaler Azure, Google Cloud und Amazon hatten in diesem Jahr mehrere Stunden jeweils Outage vor einer kompletten Region. Und die Outsiders hab ich mir mal im Detail angesehen. Und dann, wenn du da mal ein bisschen reingehst, dann ist es schon ein bisschen zu schmunzeln. Ich fang mit einem guten Beispiel an. Und zwar ist im Oktober 23 einen Sturm über den Niederlanden, über Amsterdam, gefegt. War ein bisschen windig. Holland hat auch gesagt, hör mal, pass mal auf, da kommt jetzt ein Sturm, haltet mal bitte eure Fahrräder fest. Und auf einmal war die Region West-Europe von Azerdown. Was ist passiert? Down in diesem Sinne bedeutet effektiv, dass die eine Traffic-Loss-Rate von den Paketen von bis zu 10 Prozent hatten. Also die Netzwerk-Connectivity ist deutlich eingebrochen. jetzt müsst ihr wissen regions und availability zones sind natürlich redundant ausgelegt was netzwerk connectivity angeht und deswegen wenn wir sagen die region war down es handelt sich nur um zehn prozent packet loss alle netzwerkler werden sich jetzt an die haare fassen nur zehn prozent packet loss Das ist schon eine ganze Menge. Und als Hintergrundinformation, Azure war genau in diesem Zeitpunkt, als dieser Incident passiert ist, gerade dabei, die Netzwerkkapazität von Europe West zu erhöhen, weil Europe West fast am Anschlag war von der Netzwerkkapazität. Dann kam dieser Sturm und dieser Sturm hat einen Baum weggesäbelt. Der ganze Baum ist umgekippt. Warum betrifft das jetzt die Netzwerkkonnektivität von Azure? Weil die Wurzeln des Baums sich um die Glasfaserkabel gebunden haben und somit durch das Umstürzen die Glasfaserkabel mit aus der Erde gerissen haben. Jetzt sagst du, das ist eine harte Nummer, kann man sich nicht gegen wehren. Ja, stimmt auch, kann man sich in diesem Fall nicht gegen wehren. Und Azure hat natürlich auch versucht, die ganze Sache relativ schnell zu beheben. War natürlich ein bisschen schwierig, wenn ein Sturm über Holland fegt.",
+            "start": 3140078,
+            "end": 3328321,
+            "confidence": 0.7983311827956987,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Aber du kannst es ja eigentlich dann umrouten, oder? Wenn das nur einen Teil der Glasfaser betrifft, sollte das ja eigentlich Würde man ja meinen, relativ schnell, selbst Thailand müsste das ja ziemlich schnell umgeroutet werden.",
+            "start": 3328501,
+            "end": 3339332,
+            "confidence": 0.7450833333333332,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Ja, ja, das ist richtig, käme da nicht dieser Punkt, den ich gerade erwähnt hätte, dass diese Region schon netzwerktechnisch hot gelaufen ist und somit am Kapazitätsende war. Also die waren gerade dabei, neue Leitungen in Produktion zu nehmen, hat nicht geklappt im ersten Sprung, dann kam ein Baum, hat die Hälfte weggerissen, deswegen waren ja auch nur 10% Traffic Loss und nicht komplett down, aber 10% ist für viele Applikationen komplett down. Und Azure hat eine Incident Response gemacht, super geil. Die haben ein 23-minütiges Video veröffentlicht, wo die komplette Sache besprechen. Und da zeigen die auch Bilder von dem Baum, der rausgerissen wurde, mit den Kabeln dran. Ist ganz interessant, verlinken wir auch in den Show-Notice-Video. Und in dem Video sagen sie auch, was auch ganz interessant ist, Azure sieht circa 40 durchgeschnittene Glasfaserkabel pro Tag weltweit. Also Fiber-Cuts zählen die als business as usual. Was schon sehr beachtlich ist, muss ich zugeben. 40-mal pro Tag geht irgendwo ein Fiber-Cut hops. Faszinierend. In diesem Fall hätte natürlich auch das Multi-AZ-Paradigma in Azure West, in Europe West, nix geholfen. Da hätte nur Multi-Region Diplomats geholfen von daher. Eine andere schöne Geschichte hat Google sich im April geleistet, und zwar in Paris, in der Paris Region, Europe West 9. Und zwar ist in einem Raum im Paris Data Center Wasser ausgelaufen. Und zwar im Batterieraum. Und die Batterien haben dann Feuer gefangen. Somit stand eine Availability Zone oder beziehungsweise ein Data Center einer Availability Zone in Paris in Flammen. Leider hatte dies zur Folge, dass zwei von drei Availabilityzones offline genommen werden mussten. Jetzt fragt man sich, wenn ein Datacenter in einer Availabilityzone brennt, warum müssen dann zwei Availabilityzones offline genommen werden? Wir haben ganz am Anfang dieser Episode geklärt, was ist die Definition von Google Cloud und von den Availabilityzones? Wolfgang, wiederhol sie noch mal. Hast du aufgepasst?",
+            "start": 3339512,
+            "end": 3466692,
+            "confidence": 0.826401294498382,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Sind physikalisch getrennt, aber keine angegebene Distanz.",
+            "start": 3466712,
+            "end": 3469953,
+            "confidence": 0.8481428571428572,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Es könnte also auch sein, dass zwei Availability-Zones von zwei Stockwerken in einem Gebäude betrieben werden. Das wissen wir nicht. Das ist unklar, ob die Zone A und C der Paris-Region in einem Gebäude betrieben werden. Auf jeden Fall mussten, weil in einem Datacenter was gebrannt hat, zwei Availability-Zones offline genommen werden. Der Postmortem ist auch sehr interessant und da kommen wir wieder zu dem Keyword Affinity und Anti-Affinity. Kurz noch mal zur Erklärung. Affinity ist, wenn du zum Beispiel zwei Applikationen auf demselben Host haben möchtest oder in derselben Availability Zone. Anti-Affinity, wenn du das gerade nicht möchtest. Wir haben ein bisschen was über Kafka und Rack Awareness gesprochen. Das wäre Anti-Affinity, wenn ein Rack down geht, dass du dann nicht den kompletten Kafka Cluster down hast. Warum mussten jetzt zwei Availability Zones offline genommen werden? Und zwar hat Google ein Produkt namens Spanner. Spanner ist eine weltweit verfügbare Datenbank. Und Spanner arbeitet unter anderem auch mit einem Konsensusalgorithmus Raft oder Paxos. Das bedeutet, es ist ein verteiltes System. Was Google in der Paris-Region hatte, war, dass zwei von drei Replikas in derselben Availability-Zone waren. Das bedeutet, Spanner war nicht Anti-Affinity. Und somit, wenn genau die Availability-Zone hops gegangen ist, wo zwei von drei Replikas drin gehostet wurden, dann kann das verteilte System nicht mehr operieren. Und somit mussten Teile der kompletten Region downgenommen werden. Und da sieht man auch wieder die Komplexität von Multi-AZ-Deployments, dass auch Google das mit ihren internen Systemen, dass da auch ein paar Herausforderungen sind. Das bedeutet, wenn ihr Multi-AZ-Deployments macht, achtet haargenau drauf, dass ihr dann auch den Effekt mitnehmt. und dass dann eure Applikation wirklich gleichmäßig über die Availability Zones verteilt ist und ihr Anti-Affinity macht. Bei Kubernetes könnt ihr das auch einstellen. Da gibt's Affinity und Anti-Affinity Settings pro Pod. Auch Google rennt in dieses Problem.",
+            "start": 3470662,
+            "end": 3609814,
+            "confidence": 0.8400327868852462,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "So, jetzt hatten wir Azure Outage, Google Outage. Ich bin mir sicher, du hast auch einen AWS Outage für uns.",
+            "start": 3610374,
+            "end": 3616218,
+            "confidence": 0.6843500000000001,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Jungs und Mädels lassen mich natürlich nicht allein. Aber ja, die haben sich im Juni auch ein Fauxpas geleistet, und zwar mit ihrer ersten Region, US East One. Da sagt man nach, dass das eine sehr spezielle Region ist, da sehr viele AWS-Core-Services gehostet werden. Es ist auch AWS' größte Region, ich glaube, mit sechs Availability Zones. Und Gerüchten zufolge werden da Core-Services wie zum Beispiel IAM, also das rechte Management, da gehostet. Und was die im Juni hatten, die haben einen Load-Test für Lambda gemacht. Also die Lambda-Teams haben gesagt, pass mal auf, wir testen einfach mal, wir schicken mal einen Load-Test auf Lambda-Services. Und der ging leider ein bisschen nach hinten los. Also super, dass die Jungs und Mädels Load-Tests für Lambda machen. Aber das hat den Lambda-Service degraded, also er war nicht mehr so verfügbar. Das Riesenproblem war eigentlich jetzt, dass super viele Core-Services von Amazon auf Lambda basieren. Weil Lambda in US East One down war, waren 104 Services impacted. Plus, weltweit konnten sich Leute nicht mehr in die AWS-Konsole einloggen. Und, jetzt kommt der Clou dabei, sie konnten beim Amazon Support noch nicht mal mehr anrufen oder in den Chat bedienen, weil das Support-System ebenfalls eine harte Dependency auf US East One und Lambda hatte.",
+            "start": 3617073,
+            "end": 3698649,
+            "confidence": 0.8152904761904761,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Ob das ein Unterschied zu sonst ist, sei mal dahingestellt. Zumindest, wenn ich mal bei AWS jemand probiert habe zu erreichen. Aber ich bin auch kein so gut zahlender Kunde, muss man auch dazu sagen. Das heißt, auch die Großen machen Fehler und scheinen nur Menschen zu sein und scheinen mit Wasser zu kochen.",
+            "start": 3698689,
+            "end": 3714160,
+            "confidence": 0.793685185185185,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Also die Regions sind nicht gleich Regions. Die haben alle ihre Eigenheiten. Sei es Verfügbarkeit, sei es Service Availability, sei es Number of Availability Zones, sei es die Abhängigkeiten hier, sei es die Überlastung des Netzwerks, wie wir bei Azure mit dem Sturm in Holland gesehen haben. sei es über die Affinity- und Anti-Affinity-Settings, wie wir bei Google in Paris gesehen haben. Also, das ist nicht alles irgendwie so ganz geil. Und das sollte auch eine Erinnerung sein, dass auch Cloud-Services offline gehen können. Und das ist wahr für Public Clouds, wie jetzt hier die Hyperscaler, aber auch private Clouds. Denn all das, was wir erzählt haben, ist eigentlich auch anwendbar auf On-Premise. Da könnt ihr verschiedene Co-Locations haben, verschiedene Datacenter, auch in Düsseldorf oder in Frankfurt gibt es verschiedene Datacenter. Und da könnt ihr mehr oder weniger auch eure eigenen kleinen Availability Zones aufbauen. Aber wenn ihr das tut, dann merkt ihr halt auch, wie hart und wie schwierig das eigentlich wirklich ist.",
+            "start": 3714400,
+            "end": 3772341,
+            "confidence": 0.7943292682926834,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Also wir lernen daraus eigentlich, dass auch wenn ich die Cloud verwende, ich habe zwar helfende Hände und Hände, die mir gewisse Sachen abnehmen und zur Verfügung stellen, aber auf einer logischen abstrahierten Ebene muss ich mich auch selber wieder darum kümmern. Wo liegen meine Daten? Wie sicher sind meine Daten? Was muss ich verteilen? Aber ich kann dann Services nutzen, die mir das Ganze vereinfachen und erleichtern. Aber die Planung und die Konzeption liegt trotzdem bei mir selbst.",
+            "start": 3773067,
+            "end": 3800746,
+            "confidence": 0.8594683544303798,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Vielleicht, wenn ihr Produktmanager seid, Data Scientist, Software Engineer und ihr habt mit dem ganzen Cloud-Gedöns gar nicht so viel zu tun und ihr fahrt nächstes Mal nochmal ins Büro, geht dann mal zu euren Ops-Leuten, zu euren SLEs, zu euren System-Administratoren und umarmt die doch einfach mal und sagt einfach, ich habe die Engineering-Kiosk-Folge gehört. Ich weiß, dir geht's schlecht. Ich möchte nur dir sagen, dass ich für dich da bin. Die werden sich freuen.",
+            "start": 3801050,
+            "end": 3822958,
+            "confidence": 0.7371973684210523,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Ich wollte gerade sagen, sei nicht so negativ, aber es ist jetzt doch noch positiv herumgekommen.",
+            "start": 3823258,
+            "end": 3827280,
+            "confidence": 0.61025,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Das war ein bisschen die dreckige Seite von Cloud Regions und Availability Zones. Also glaubt nicht alles, was die Cloud Leute euch im Marketing erzählen, denn wenn man mal ein bisschen den Teppich hochhebt, dann ist da echt viel Dreck runtergekehrt worden. Wolfgang, hast du jetzt mehr Respekt davor oder sagst du einfach... Ja gut, dann akzeptiere ich halt einfach, dass meine App noch ein bisschen offline ist.",
+            "start": 3827650,
+            "end": 3849392,
+            "confidence": 0.7381911764705883,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Also ich würde mal sagen, bei den meisten Anwendungen, mit denen ich es so zu tun habe, ist es vollkommen in Ordnung, wenn die ein paar Stunden down sind. Und ich bin immer noch froh, dass sich Leute darum kümmern, die das wesentlich besser machen, als wenn ich selber die Hardware betreiben würde. Und darum bin ich ganz glücklich damit. Und vor allem muss man ja auch dazusagen, bei ganz vielen Services wie irgendeinem Object Storage oder so einem klassischen Storage ist es ein Dropdown, dass ich Multi-Zone bin oder das Sicherheitslevel einstelle und dann passiert es im Hintergrund transparent und automatisiert und ich muss mich um nichts kümmern. Also auch da ist es teilweise nur ein Klick und ein bisschen höherer Preis und ich bin auf der sicheren Seite.",
+            "start": 3850033,
+            "end": 3891960,
+            "confidence": 0.8085461538461539,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Genau, aber wie du sagtest, ein bisschen höherer Preis, dafür machst du halt auch deine Geldtasche auf.",
+            "start": 3892589,
+            "end": 3896243,
+            "confidence": 0.626,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Ja, aber total überschaubar, gerade bei Storage. Und wenn es um Backups geht oder solche Dinge, kann man einfach super einfach ohne viel Aufwand das Multi-AC machen. Wenn ich natürlich wirklich einen Service mit Datenbanken und so weiter mache, dann ist das natürlich eine wesentlich komplexere Sache. Und so kann man, glaube ich, ganz gut abwägen, wo macht es Sinn, wo kann ich den höheren Preis tolerieren, wo macht es einfach Sinn, dass ich solche Services verwende und wo mache ich dann wirklich selber eine große Planung. habe mein eigenes Kubernetes drüber gestülpt und so kann man dann glaube ich ganz gut je nachdem was für Service man fährt das abwiegen und der große Vorteil ist auch wenn man so ein Preisschild dran hat kann man das auch sehr gut kalkulieren und kann sich dann überlegen wie viel ist es mir wert dass ich eventuell diese drei Stunden überbrücken kann und dann kann ich das sehr hart einfach gegenrechnen will ich mir das Reinholen will ich den Aufwand betreiben, die Mehrkosten in Anspruch nehmen und dafür eben auch in dem Fall von einem Ausfall diese vier Stunden mit einer anderen Zone, mit einer anderen Region zu überbrücken.",
+            "start": 3896549,
+            "end": 3954810,
+            "confidence": 0.7998121827411167,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Und es kann auch sein, dass dich das gerade gar nicht betrifft mit deiner Applikation. Dennoch ist es mal ganz gut, die Fragen zu stellen, das im Hinterkopf zu haben und vielleicht für das nächste Projekt mit einzubeziehen.",
+            "start": 3955630,
+            "end": 3966394,
+            "confidence": 0.8051315789473685,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Und ich glaube, es ist auch ganz wichtig, die Info einfach zu haben, weil in den Cloud-Services gibt es ganz oft dieses Dropdown, wo dann steht, wie viele Zones willst du haben, wie viele Regions willst du haben. Und da ist es einfach gut, dieses Konzept zu verstehen, was eine Zone ist, was eine Availability Zone ist, was eine Region ist. um dann auch dementsprechend das sinnvoll auswählen zu können.",
+            "start": 3966734,
+            "end": 3986642,
+            "confidence": 0.7599285714285714,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "All die Informationen, die wir in diesem Podcast genannt haben, sind frei verfügbar. Wir verlinken auch eine ganze Menge Ressourcen in den Show Notes. Doch die jeweiligen Cloud-Dokumentationen, die sind nicht immer ganz übersichtlich. Zumindest finde ich das. Das war's von uns. Ein bisschen Cloud-Gebäsche bei Regen. Am liebsten würde ich mir jetzt wirklich so eine Wolke nehmen und da konstant draufhauen, damit der Regen mal aufhört. Aber kann man nicht ändern. Falls ihr auch so ein paar Cloud-Availability und Cloud-Region-Horror-Stories habt, kommt doch einfach in unsere Discord-Community. Ich wäre sehr interessiert daran, denn oft hat man da zusammen was zu lachen. Und somit sage ich, everything fails all the time. Mal wieder Werner Vogel zitieren. Und tschüss, bis zum nächsten Mal.",
+            "start": 3986702,
+            "end": 4029051,
+            "confidence": 0.7433606557377043,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Ciao. Und nicht vergessen, About You sucht noch Verstärkung für ihre Cloud-Teams. Details findest du in den Show Notes.",
+            "start": 4029191,
+            "end": 4037595,
+            "confidence": 0.6386315789473684,
+            "speaker": "A",
+            "channel": null
+        }
+    ],
+    "confidence": 0.796351828153564,
+    "audio_duration": 4037.0,
+    "webhook_status_code": null,
+    "webhook_auth": false,
+    "summary": null,
+    "auto_highlights_result": null,
+    "content_safety_labels": null,
+    "chapters": null,
+    "sentiment_analysis_results": null,
+    "entities": null
+}
