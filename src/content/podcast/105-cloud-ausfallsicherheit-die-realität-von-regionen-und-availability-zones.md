@@ -1,5 +1,5 @@
 ---
-amazon_music: ''
+amazon_music: https://music.amazon.com/podcasts/c35a09fe-4116-4e04-8f68-77d61b112e46/episodes/9e613932-9177-45e0-858e-dd081482a726/engineering-kiosk-105-cloud-ausfallsicherheit-die-realit%C3%A4t-von-regionen-und-availability-zones
 apple_podcasts: https://podcasts.apple.com/us/podcast/105-cloud-ausfallsicherheit-die-realit%C3%A4t-von-regionen/id1603082924?i=1000640988582&uo=4
 audio: https://audio1.redcircle.com/episodes/9858e71c-f914-4f97-ab5d-c776e0da7fef/stream.mp3
 chapter:
