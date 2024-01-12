@@ -165,12 +165,7 @@ def build_blog_statistics(path_md_files) -> dict:
 
     # Get existing podcast episodes
     posts = [f for f in os.listdir(path_md_files) if isfile(join(path_md_files, f)) and f.endswith('.mdx')]
-    for post in posts:
-        file_path = f"{path_md_files}/{post}"
-        with open(file_path) as f:
-            post_frontmatter = frontmatter.load(f)
-            
-            stats['number_of_blog_posts'] += 1
+    stats['number_of_blog_posts'] = len(posts)
             
     return stats
 
