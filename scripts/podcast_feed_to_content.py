@@ -237,7 +237,7 @@ def sync_podcast_episodes(rss_feed, path_md_files, path_img_files, no_api_calls=
         deezer_episodes = deezer_podcast.get_episodes()
         logging.info("Requesting content from Podcast sites ... Successful")
 
-        logging.info("Processing Podcast Episode items ...")
+    logging.info("Processing Podcast Episode items ...")
 
     # Parse the XML and process all items
     parsed_xml = ET.fromstring(feed_response.text)
@@ -593,8 +593,6 @@ def get_episode_link_from_youtube(episodes, title: str) -> str:
     matches = re.match("(#(\d+)\s)", title)
     if matches:
         episode_id = matches.group(1)
-
-    print(f"episode_id: {episode_id}")
 
     u = ""
     if not episode_id:
