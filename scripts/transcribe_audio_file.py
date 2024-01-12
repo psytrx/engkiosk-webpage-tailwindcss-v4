@@ -6,8 +6,6 @@ import assemblyai as aai
 import json
 import validators
 
-from functions import EPISODES_STORAGE_DIR, TRANSCRIPT_STORAGE_DIR, build_correct_file_path, get_podcast_episode_by_number
-
 
 if __name__ == "__main__":
     cli_parser = argparse.ArgumentParser(
