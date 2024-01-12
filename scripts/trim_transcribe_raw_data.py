@@ -18,7 +18,7 @@ if __name__ == "__main__":
         ]
     )
 
-    logging.info(f"Searching for raw and uncompressed transcription data ...")
+    logging.info("Searching for raw and uncompressed transcription data ...")
 
     storage_dir = build_correct_file_path(TRANSCRIPT_STORAGE_DIR)
     uncompressed_suffix = "-transcript.json"
@@ -26,7 +26,7 @@ if __name__ == "__main__":
 
     logging.info(f"Searching for raw and uncompressed transcription data ... {len(raw_transcriptions)} found")
     if len(raw_transcriptions) == 0:
-        logging.info(f"Nothing to do here")
+        logging.info("Nothing to do here")
         sys.exit(0)
 
     for transcription_file in raw_transcriptions:

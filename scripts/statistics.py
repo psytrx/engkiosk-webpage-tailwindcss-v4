@@ -165,12 +165,7 @@ def build_blog_statistics(path_md_files) -> dict:
 
     # Get existing podcast episodes
     posts = [f for f in os.listdir(path_md_files) if isfile(join(path_md_files, f)) and f.endswith('.mdx')]
-    for post in posts:
-        file_path = f"{path_md_files}/{post}"
-        with open(file_path) as f:
-            post_frontmatter = frontmatter.load(f)
-            
-            stats['number_of_blog_posts'] += 1
+    stats['number_of_blog_posts'] = len(posts)
             
     return stats
 
@@ -222,7 +217,7 @@ def print_podcast_episode_stats(stats):
     print(f"Total length of content: {get_time_human_readable(stats['total_length_seconds'])}")
     print(f"Avg of episode length: {get_time_human_readable(seconds_per_episode_avg)}")
     print(f"Number of tags: {stats['total_num_tags']}")
-    print(f"Top 5 tags:")
+    print("Top 5 tags:")
     for v in stats['top_5_tags']:
         print(f"\t{v}")
 
