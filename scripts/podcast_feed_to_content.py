@@ -1,4 +1,3 @@
-from xml.sax.handler import feature_validation
 import argparse
 import requests
 import xml.etree.ElementTree as ET
