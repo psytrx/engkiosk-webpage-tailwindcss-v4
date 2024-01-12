@@ -17,7 +17,6 @@ import pathlib
 
 # External libraries
 from bs4 import BeautifulSoup
-from slugify import slugify
 import frontmatter
 import spotipy
 from spotipy.oauth2 import SpotifyClientCredentials
