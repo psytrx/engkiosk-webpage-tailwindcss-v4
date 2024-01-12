@@ -222,7 +222,7 @@ def print_podcast_episode_stats(stats):
     print(f"Total length of content: {get_time_human_readable(stats['total_length_seconds'])}")
     print(f"Avg of episode length: {get_time_human_readable(seconds_per_episode_avg)}")
     print(f"Number of tags: {stats['total_num_tags']}")
-    print(f"Top 5 tags:")
+    print("Top 5 tags:")
     for v in stats['top_5_tags']:
         print(f"\t{v}")
 
