@@ -95,8 +95,12 @@ let tags = frontmatter.tags.map((element) => URLify(element));
 // However, the spacing doesn't look good in web.
 // Hence we need to make it look good ;)
 const html = (await Astro.slots.render('default'))
-	//remove all <p><br></p>
+	// remove all <p><br></p>
 	.replace(/<p><br><\/p>/g, '')
+	// The Rich Text Editor of RedCircle introduces sometimes <p><span> and not only a <p>
+	// We aim to fix this here (in a dirty way)
+	.replace(/<p><span>/g, '<p>')
+	.replace(/<\/span><\/p>/g, '</p>')
 	// add class + data attribute to p tag of format "<p>(01:18:00)"
 	.replace(/<p>(\(\d\d:\d\d:\d\d\))/g, function (match, capture) {
 		return '<p class="timestamp" data-chapter-start="' + humanTimestampToSecondsTo(capture) + '">' + capture;
