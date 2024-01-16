@@ -73,7 +73,10 @@ speaker:
   transcriptLetter: B
   website: https://www.linkedin.com/in/michael-lihs/
 spotify: https://open.spotify.com/episode/6wJdF8fZd6B3AUWaiqf1qC
-tags: []
+tags:
+- DevOps
+- Tech Kultur
+- Software Engineering
 title: '#106 CI - Continuous Integration in der Praxis mit Michael Lihs von Thoughtworks'
 youtube: https://www.youtube.com/watch?v=E5Va0uqfpcs
 
