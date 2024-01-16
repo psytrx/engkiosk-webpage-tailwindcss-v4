@@ -1,0 +1,994 @@
+{
+    "language_code": "de",
+    "audio_url": "https://cloud.inlupus.at/s/jQowxRN2cT7ECCw/download/ep106_ci.mp3",
+    "punctuate": true,
+    "format_text": true,
+    "dual_channel": false,
+    "webhook_url": null,
+    "webhook_auth_header_name": null,
+    "webhook_auth_header_value": null,
+    "audio_start_from": null,
+    "audio_end_at": null,
+    "word_boost": [],
+    "boost_param": null,
+    "filter_profanity": false,
+    "redact_pii": false,
+    "redact_pii_audio": false,
+    "redact_pii_policies": null,
+    "redact_pii_sub": null,
+    "speaker_labels": true,
+    "speakers_expected": 3,
+    "content_safety": false,
+    "content_safety_confidence": null,
+    "iab_categories": false,
+    "custom_spelling": null,
+    "disfluencies": false,
+    "sentiment_analysis": false,
+    "auto_chapters": false,
+    "entity_detection": false,
+    "summarization": false,
+    "summary_model": null,
+    "summary_type": null,
+    "auto_highlights": false,
+    "language_detection": false,
+    "speech_threshold": null,
+    "id": "dea354ae-aba9-4fb5-92b6-f517d9fd171e",
+    "status": "completed",
+    "error": null,
+    "utterances": [
+        {
+            "text": "Willkommen zu einer weiteren Episode vom Engineering Kiosk. Viele Softwareentwickler haben den Begriff Continuous Integration schon mal gehört. Ach, natürlich bauen wir die Software täglich. Das Thema mag langweilig klingen, weil es ein täglicher Bestandteil der Softwareentwicklung ist. Dennoch steckt da viel, viel mehr dahinter. Woher kommt der Begriff Continuous Integration eigentlich? Inwieweit hat sich das Konzept von CI sowie die Tools in den letzten 17 Jahren entwickelt? Was bedeuten die Buzzwords DevPipelineParity, ShiftLeft, CI Theater, DevDone und DoneDone eigentlich? Warum sollte auch das Management dafür sorgen, dass der Bild immer grün ist? Und wie sieht CI eigentlich außerhalb der Welt von Web, Cloud und Mobile aus? Zum Beispiel in Industrien wie Automotive und IoT? All das und noch viel, viel mehr klären wir in dieser Podcast-Episode. Viel Spaß! Was mich immer wieder an der Softwareentwicklung fasziniert ist, dass die meisten Leute, die heutzutage unterwegs sind und Software entwickeln, irgendwie immer auf den neuesten Hype-Train aufspringen. Hype-Driven-Development, Hacker-News-Driven-Development. Aber Praxis, die wir täglich anwenden, ist eigentlich schon super alt. Wie zum Beispiel etwas, was vor ca. 25 Jahren mit Extreme-Programming eingeführt wurde. Extreme Programming hatte eine Praxis, die nannte sich permanente Integration. Das ist nicht der heutige Name, den wir verwenden, denn der heutige Name, der wurde ein paar Jahre später von Martin Fowler in einem Artikel von 2006 geprägt und zwar hat er dies mit Continuous Integration übersetzt. Und Continuous Integration kommt heute in allen Formen, Farben und Co. Aber es ist, wenn man es mal zurückführt, eine sehr alte Praxis und ich hoffe in jeder Firma heute Standard. Weil Wolfgang und ich das natürlich auch machen, aber auch immer nur im Cloud- und Websektor. Und wir eine Podcast-Episode zu diesem Thema mal aufnehmen wollen, haben wir uns etwas Hilfe geholt, der ein paar mehr Systeme gesehen hat als Wolfgang und ich in unserem Leben. Deswegen begrüße ich Michael. Hallo.",
+            "start": 4251,
+            "end": 128163,
+            "confidence": 0.820061093247589,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Hallo.",
+            "start": 128184,
+            "end": 128785,
+            "confidence": 0.469,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Michael, wer bist du? du kommst aus dem großraum stuttgart du hast am berühmten kit am karlsruher institut für technologie studiert also für mich ist das zumindest berühmt als einer der top informatik unis meines wissens nach du bist immer mal wieder als speaker auf den bühnen dieser welt auf technologie konferenzen unterwegs, dein geld verdienst du als infrastructure consultant bei sortworks und du bist passionierter radfahrer und hast allein im juni diesen jahres juni 2023 circa 1200 kilometer auf deinem drahtesel abgerissen ist das korrekt.",
+            "start": 128824,
+            "end": 166983,
+            "confidence": 0.8483488372093024,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Ich glaube das trifft ganz gut ja.",
+            "start": 167023,
+            "end": 168624,
+            "confidence": 0.4732857142857143,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Wie reist man 1200 Kilometer im Juni auf dem Drahtesel ab?",
+            "start": 169524,
+            "end": 174708,
+            "confidence": 0.8182727272727274,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Wenn man sich für Wettbewerbe vorbereitet, wo man das dann in vier Tagen macht, dann ist es ganz gut, wenn man das davor mal innerhalb von einem Monat gemacht hat. Also dieses Jahr war für mich eher ein Jahr mit wenig Kilometern und Juni vielleicht einer, der ein bisschen herausgestochen ist, aber ich mache das regelmäßig.",
+            "start": 174728,
+            "end": 190439,
+            "confidence": 0.7696249999999999,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Du redest gerade über irgendwelche ultra fahrrad rennen oder ähnliches.",
+            "start": 190971,
+            "end": 195413,
+            "confidence": 0.8192,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Ja genau also man nennt das privates es unterscheidet sich ein bisschen von diesen hardcore ultra cycling events weil es nicht um die zeit geht sondern im letzten letztlich darum ob man das schafft oder nicht und das eigentliche so ein rennen gegen sich selber ist und nicht gegen andere ich würde mich jetzt nicht als ultra cycler bezeichnen aber leute verstehen das wahrscheinlich inzwischen drunter.",
+            "start": 195454,
+            "end": 214464,
+            "confidence": 0.7679848484848486,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Also ich gebe dazu, wenn ich von hier zum Bäcker fahre, tut mir der Popo schon weh. Also von daher, vielleicht habe ich auch einfach nur den falschen Sattel. Aber nun gut, sprechen wir ein bisschen über Continuous Integration. Ich habe immer so das Gefühl, dass jeder, der schon mal eine Zeile Code geschrieben hat, Berührung mit Continuous Integration hat. Und dass jeder denkt, er versteht dieses Thema. Und dass jeder genau weiß, was es ist. Aber in diesem ganzen Space schwirren ja unglaublich viele Buzzwords mit. Und deswegen würde ich dich mal fragen, wie würdest du denn Continuous Integration definieren? Was würdest du sagen ist Continuous Integration?",
+            "start": 215124,
+            "end": 250795,
+            "confidence": 0.7759444444444447,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Ich würde sagen, im Kern ist Continuous Integration die Fähigkeit, dass unsere Software immer in einem auslieferbaren Zustand ist. Also, dass egal welche Änderungen wir an Software machen, ob das Features oder Bugfixes sind oder Refactoring, dass wir spätestens nach einem Tag wieder einen Zustand haben, wo wir die Software potenziell ausliefern könnten. Das ist für mich eigentlich der Kern von Continuous Integration.",
+            "start": 251729,
+            "end": 273824,
+            "confidence": 0.7753650793650793,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Und ausliefern bedeutet jetzt also wirklich in Produktion bringen, was dann auch immer Produktion heißt, Kubernetes oder Web-Server oder von mir aus auch einen Raspberry Pi.",
+            "start": 274444,
+            "end": 285053,
+            "confidence": 0.8423461538461537,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Genau, also das kommt eben auf die Software an, die wir bauen, ob wir die danach in die Cloud deployen und das ein Web-Service oder eine Webseite ist, oder ob wir die Software als Mobile-App auf ein Smartphone shippen, wenn du so möchtest, oder in einen App-Store stellen, oder ob wir sie eben als Embedded-Software auf ein Device spielen.",
+            "start": 285093,
+            "end": 303668,
+            "confidence": 0.7252033898305086,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Continuous Integration ist aus der Softwareentwicklung nicht mehr wegzudenken. Aber auch bei modernen Datenpipelines und Datenplattformen findet Continuous Integration seine Anwendung. So arbeitet unser Episodensponsor About You ebenfalls an der Integration von Best Practices und der Weiterentwicklung ihrer Dateninfrastruktur. Dafür sucht About You einen Tech Lead, um das Datenteam und die Dateninfrastruktur auf die nächste Stufe zu heben. Und diese Infrastruktur ist alles andere als klein und langweilig. Das Google Cloud Setup des weltweit agierenden Fashion Online Shops aus Hamburg besteht aus über 250 Projekten zur Datenverarbeitung und verarbeitet mehrere Milliarden Events pro Monat. Deine Aufgabe als Mix aus DevOps und DataOps-Engineer ist somit nicht nur die Weiterentwicklung der Dateninfrastruktur mit Best Practices à la GitOps, sondern auch die Definition einer strategischen Roadmap, um im About-You-Äkosystem die richtigen Daten zur Verfügung stellen zu können. Wenn du Interesse an dieser Challenge hast, findest du alle Details zu dieser Stelle, welche fully remote oder aus dem schönen Hamburg angetreten werden kann, unter engineeringkeys.dev slash about you oder natürlich auch in den Show Notes. Aber jetzt hat man natürlich auch Programmiersprachen, die jetzt zum Beispiel jetzt gar nicht, ich sag mal, gebaut werden müssen, wie zum Beispiel PHP. PHP ist fertig, man hat einen File und das kann ich dann per SCP oder per SFTP irgendwo hinschieben. Das bedeutet, brauche ich für solche Programmiersprachen wie PHP dann eigentlich gar kein Continuous Integration, weil es ist ja eigentlich immer auslieferbar, oder?",
+            "start": 305463,
+            "end": 392572,
+            "confidence": 0.819987341772152,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Naja, man muss jetzt unterscheiden zwischen ausliefern im Sinne von die Software ist gebaut, ich habe ein Binary, das läuft, und die Software ist gebaut und so getestet, dass sie das tut, was sie soll. Und wenn du eine durchschnittliche Continuous Integration Pipeline oder einen Ablauf anschaust, dann ist normalerweise das Bauen auch bei Sprachen, die kompiliert werden müssen, quasi der kleinste Anteil eigentlich fast. Ja, geht mal kürzer, mal länger. Aber was wirklich Zeit braucht und auch Hirnschmalz in der Automatisierung, ist das automatisierte Testen, das eben unerlässlich ist für Continuous Integration, weil mir nur das automatisierte Testen im Prinzip des Sicherheitsnetzes gibt, wo ich am Ende weiß, ich habe das zwar alles automatisiert, aber trotzdem tut die Software das, was ich erwarte. Sie funktioniert, wie sie soll.",
+            "start": 392572,
+            "end": 436027,
+            "confidence": 0.8142945736434111,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Du hast jetzt vom automatisierten Testen gesprochen, und da kommen mir natürlich die anderen beiden Buzzwords, die da immer mitschwingen, in den Kopf, und zwar Continuous Deployment und Continuous Delivery. A, was ist Continuous Deployment und Continuous Delivery? Und B, warum gibt's dieselbe Abkürzung, nämlich immer CD für beide? Und C, wie grenzen die sich zu Continuous Integration ab? Kann man das eine ohne das andere haben?",
+            "start": 436407,
+            "end": 461428,
+            "confidence": 0.8173880597014926,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Also ich denke, wenn man sagt CI und CD, dann grenzt sich CD von CI ab, dass es quasi eine Erweiterung ist im Sinne von, ich baue meine Software nicht nur und habe sie in einem Zustand, den ich potenziell ausliefern könnte, sondern ich automatisiere auch die Auslieferung selber. Das heißt, ich habe zum Beispiel einen vollautomatisierten Workflow, der mir es erlaubt, meinen Webservice bis in die Cloud, bis in Produktion durchzudeployen, der dann das entsprechende Monitoring triggert. Und in dieser Prozesskette quasi von ich komm mit einer Änderung zu der Service ist in Produktion, sind im Idealfall bei Continuous Delivery keine manuellen Schritte mehr, außer jemand drückt das Knöpfchen und sagt, ja, ich möchte das ausliefern. Und darin unterscheidet sich für mich Continuous Delivery auch von Continuous Deployment, wobei sich da die Industrie nicht ganz einig ist. Da gibt es verschiedene Definitionen. Also in Continuous Delivery habe ich eben dieses berühmte Knöpfchen, wo jemand die Geschäftsentscheidung trifft, ja, ausliefern. Und in Continuous Deployment habe ich auch das noch wegautomatisiert. Das heißt, in Continuous Deployment, wenn ich als Entwickler, als Entwicklerin, einen Commit in den Repository mache, dann läuft es vollautomatisiert bis in Produktion durch, vorausgesetzt, dass alle Tests funktionieren und die Pipeline nicht irgendwo zwischendrin bricht.",
+            "start": 462388,
+            "end": 537338,
+            "confidence": 0.7815748792270532,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Hast du für dich einen Merksatz gefunden, wie du für dich Continuous Deployment und Continuous Delivery unterscheiden kannst? Weil ich habe immer die Problematik, ich kenne beides und ich verstehe sie auch genauso, wie du gerade gesagt hast, doch ich vertausche sie immer.",
+            "start": 537378,
+            "end": 551043,
+            "confidence": 0.8039767441860465,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Also ich habe da vielleicht einen blöden Merksatz, wenn ich von CD spreche, dann habe ich immer Continuous Delivery im Kopf. Und im Prinzip, wenn wir Deploymentautomatisierung sehen, dann ist das eigentlich auch das, was wir im Regelfall vorfinden, dass jemand eben das Knöpfchen noch möchte. Also ist Delivery der Regelfall und Deployment eher die Ausnahme. Also ich habe in Produktivprojekten noch nicht erlebt, dass sich eine Firma traut, wirklich Continuous Deployment zu machen, im Sinne von niemand entscheidet mehr, ob ausgeliefert wird oder nicht, sondern die Pipeline ist grün, dann wird ausgeliefert. Also Continuous Deployment ist für mich immer noch eher die Ausnahme, Continuous Delivery, wenn automatisiert wird, der Regelfall.",
+            "start": 551523,
+            "end": 587067,
+            "confidence": 0.7824054054054055,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Jetzt hat ja der Andi in seiner Einleitung schon so schön gesagt, genau das, was er mir immer vorwirft. Er hat gemeint, CI sowieso Standard in jeder Firma. Und er wirft mir immer vor, dass ich mir die Welt schöner male, als sie ist. Und jetzt kommt er mit dieser Aussage, dass CI eh überall schon im Einsatz ist. Jetzt hast du sehr viele Firmenprojekte gesehen. Was ist denn deine Meinung dazu? Ist CI wirklich so der Standard, der schon überall im Einsatz ist und nirgends mehr wegzudenken ist? Oder gibt es schon Bereiche, wo das noch nicht so angekommen ist, würde ich mal sagen, auch wenn es ein altes Thema ist?",
+            "start": 587409,
+            "end": 623042,
+            "confidence": 0.7809017857142856,
+            "speaker": "C",
+            "channel": null
+        },
+        {
+            "text": "Also ich glaube, was wir schon überall sehen, ist, dass Leute anfangen oder Entwicklungsteams anfangen, CI-Pipelines zu bauen und CI-Systeme zu nutzen und zu einem gewissen Grad auch automatisiert zu testen. Aber um nochmal auf den Kern von Continuous Integration zurückzukommen, was wir trotzdem nicht sehen, ist, dass Leute wirklich ihre Software in einem Zustand halten, der ihnen erlauben würde, dass sie jeden Tag ausliefern können oder dass die Mainline der Software, wie wir auch sagen, weil sie in einem stabilen Zustand ist, aus unterschiedlichsten Gründen. Das heißt, die Tools sind da, der Wille ist da, aber der Kern von Continuous Integration wird trotzdem oft nicht erreicht.",
+            "start": 623242,
+            "end": 664452,
+            "confidence": 0.7921401869158878,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Und wenn wir jetzt schon bei dem Kern sind, was macht denn so eine CI-Pipeline aus, also täglich zu bauen? Aber gibt es irgendwie noch, wie sieht die perfekte CI-Pipeline aus, deiner Meinung nach, beziehungsweise auf was muss man achten?",
+            "start": 664512,
+            "end": 677699,
+            "confidence": 0.7665499999999998,
+            "speaker": "C",
+            "channel": null
+        },
+        {
+            "text": "Da muss man sagen, dass das ein Stück weit immer noch vom Projekt abhängt. Aber ich würde mal sagen, eine perfekte CI-Pipeline gibt mir zehn Minuten, nachdem ich meinen Commit gemacht habe oder gepusht habe, ein 99-prozentiges Feedback, ob dieser Build funktioniert oder nicht. Und mit Build meine ich jetzt quasi die Software baut, sie kann getestet werden, sie kann deployed werden. Das wäre für mich, glaube ich, eine ideale Pipeline, die dazukommt, dass die Pipeline mir im Fehlerfall ein sehr spezifisches Feedback gibt, was kaputt ist, wenn meine Software nicht funktioniert.",
+            "start": 677950,
+            "end": 712093,
+            "confidence": 0.8065652173913043,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Jetzt sagtest du zehn Minuten, und es gibt ja immer diesen Mythos, oh, unsere CI-Pipeline oder der Build dauert zu lange oder der Compile oder dauert zu lange, da kann ich erst mal einen Kaffee holen. Zehn Minuten, da krieg ich schon einen Kaffee gezogen, oder? Ist das nicht zu lang?",
+            "start": 712563,
+            "end": 725955,
+            "confidence": 0.7056862745098038,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Das kommt halt drauf an. Also, wenn du jetzt einen Microservice mit Java baust und das so die üblichen Größen an Services sind, die du dann vielleicht in dem Zusammenhang kennst, dann ist zehn Minuten vielleicht lang, vier Minuten realistisch. Wenn du jetzt aber zum Beispiel im Automotive-Bereich dir anguckst, wie Steuergerätesoftware gebaut wird, dann sprechen die oft von Bildzeiten von sechs Stunden oder noch mehr. Und für diesen zehn Minuten wirklich eine Herausforderung, die im Moment, würde ich sagen, eher unrealistisch ist. Also das ist eben das Spektrum von einfachen Anwendungen zu komplexen Systemen, die vielleicht auch bei den Tools im Moment noch nicht für Continuous Integration optimiert sind.",
+            "start": 725995,
+            "end": 767015,
+            "confidence": 0.7924818181818181,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Was beinhaltet denn so eine CI-Pipeline üblicherweise? Wenn die jetzt zehn Minuten läuft, warum braucht es zehn Minuten? Was passiert da oder was sollte passieren.",
+            "start": 767937,
+            "end": 776462,
+            "confidence": 0.81696,
+            "speaker": "C",
+            "channel": null
+        },
+        {
+            "text": "Auch in so einer Pipeline idealerweise? Also, das hat sich in den letzten Jahren, finde ich, auch so ein bisschen standardisiert. Was wir eben häufig sehen, ist, dass wir erstmal so eine statische Code-Analyse machen, das heißt Linting, Code-Style-Checks, vielleicht auch so was wie vulnerable Dependencies rauszufinden, das vielleicht in so einem ersten statischen Check. Dann wird bei kompilierter Software diese meistens gebaut, dann werden Unit-Tests ausgeführt und danach, abhängig vom System, ob ich jetzt ein verteiltes System habe, eben oft noch so Ende-zu-Ende-Tests, wo die Software im Zusammenspiel mit anderen Komponenten getestet wird. Und wenn die Software zum Beispiel in die Cloud deployed wird, dann ist oft auch schon im CI-Teil ein Deployment in eine produktionsähnliche Umgebung mit inbegriffen, wo ich dann teste, wie verhält sich denn meine Software, wenn sie tatsächlich auf dem Zielsystem läuft. Das sind, glaube ich, so die groben Schritte, die ich in der CI-Pipeline sehen würde. Und es kommt jetzt eben ganz stark auf die Größe der Software und auf die Tools, wie schnell das letztlich umgesetzt werden kann.",
+            "start": 776502,
+            "end": 838012,
+            "confidence": 0.7971599999999999,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Jetzt hatte ich in der Einleitung auch gesagt, dass der Begriff permanente Integration von 1999 ist, Ende der 90er, dass Martin Fowler die ganze Sache 2006 irgendwie nochmal in eine neue Weinflasche gefüllt hat. Und Martin Fowler hat 2006 einen Blogpost darüber geschrieben, was aus seiner Sicht Continuous Integration ist, was es sein sollte, was es nicht ist. Und meine Frage ist jetzt, ich meine, wir haben 2013, 2023, 2024. Was hat sich in den letzten 17, 18 Jahren seit dem originalen Blogpost von Martin Fowler eigentlich in Continuous Integration geändert? Hat sich überhaupt was geändert, oder haben wir uns in diesem Bereich einfach gar nicht weiterentwickelt?",
+            "start": 838292,
+            "end": 884208,
+            "confidence": 0.7873084112149532,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Also vielleicht würde ich dazu noch mal einen kleinen Schritt zurückgehen, weil wir haben jetzt sozusagen schon über Pipelines und Laufzeiten und so gesprochen, aber vielleicht wollen wir uns erstmal nochmal diesen Gesamt-Workflow, diesen Arbeitsablauf von Continuous Integration anschauen. Und der fängt eben schon vorne im CI-System an. Also der fängt damit an, dass ich meine gesamte Software, allen Source-Code erstmal in Versionskontrolle habe. Weil ohne dass ich sozusagen jedwede Änderung überhaupt nachvollziehen kann, kann ich auch nachher keine Automatisierung triggern. Versionskontrolle hat also in dem Sinne einmal die Aufgabe, dass ich Änderungen nachvollziehbar machen kann, dass ich von Commit zu Commit sehen kann, was hat sich denn verändert und hat aber eben dann auch die Funktion, dass ich mit jeder Änderung, die Einfluss auf meine Software hat, nachher auch Automatisierung triggern kann. Dann ist es ganz wichtig, dass mein Bild wirklich automatisiert abläuft. Also das ist, glaube ich, das ist vielleicht was, was sich geändert hat die letzten Jahre oder seit diesem Artikel 2006. Also ich muss sagen, 2006, da habe ich gerade so studiert, da hatte ich herzlich wenig Ahnung von komplexen, großen Softwaresystemen und Builds, aber dem Hörensagen nach war es damals halt schwierig, ein Software wirklich vollautomatisiert zu bauen. Also ich stelle mir halt vor, dass Tools wie Gradle oder Maven damals entweder noch gar nicht existiert haben oder halt in ihren Kinderschuhen steckten. Das heißt, die Bildautomatisierung war damals schon eine gewisse Herausforderung für ein Software-Team und das ist heute quasi business as usual, wie wir es sagen. Dafür gibt es Tools, dafür gibt es Bücher, dafür kann ich mir jedwede Skripte als Vorlage aus dem Internet runterladen. Vor 17 Jahren mag das anders ausgeschaut haben. Wenn ich jetzt alles in Versionskontrolle habe, mein Bild automatisiert habe, dann kommt die leidige Frage der Testautomatisierung. Welche Tests, wie viele Tests, reichen mir Unit-Tests aus, brauche ich Integration-Tests, wie sieht es im Zusammenspiel mit anderen Systemen aus? Wichtig ist, dass ich auf mein Softwareprojekt angepasste Teststrategie habe, die es mir erlaubt, mit hoher Sicherheit zu sagen, wenn meine Tests durchgelaufen sind, dann wird sich die Software in Produktion so verhalten, wie ich das möchte, wie das meinen Kunden versprochen würde, andere Systeme von meinem System erwarten. Und in der Herausforderung, gute, funktionierende und aussagekräftige Tests zu schreiben, hat sich, glaube ich, in den 17 Jahren wahrscheinlich nicht so viel verändert. Auch da sind die Frameworks jetzt wieder besser geworden. Ja, also, was weiß ich, JUnit, PHP-Unit, die Standard-Frameworks, die wir heutzutage einsetzen, die mag es damals auch noch nicht in der Qualität und Verfügbarkeit gegeben haben. Aber der Hirnschmalz, der läuft sozusagen in die, oder muss in die Qualität der Tests gehen. Und das Test-Framework ist da sozusagen nur ein sehr, sehr kleiner Anteil. Das heißt, glaube ich, die Herausforderung oder die Challenge für ein Software-Entwicklungsteam, ein gutes Netz an Tests zu haben, das ist vermutlich ähnlich schwierig geblieben. Und dann kommt dieser Disziplinanteil. Also wir haben Versionskontrolle, wir haben Bildautomatisierung, wir haben Testautomatisierung. kommt dieser Teildisziplin eines Softwareentwicklungsteams, den es braucht, damit sozusagen die Pipeline am Leben erhalten wird. Du hattest vorher kurz über Bildfatigue gesprochen. Wie geht ein Team damit um, wenn eine Pipeline rot wird? Wird diese Pipeline in absehbarer Zeit gefixt? Oder denken Leute nach einer Weile, ah, das ist eh immer rot. Das ist mir egal. Mein Zeug funktioniert auf meiner Maschine. Ich shippe das jetzt mal. Das wird in Produktion schon funktionieren. Wenn dieser Moment eintritt, dann ist Continuous Integration kaputt. Dann funktioniert zwar vielleicht mein Server noch und ich habe noch eine Pipeline, aber der eigentliche Sinn und Zweck von Continuous Integration ist in dem Moment beim Teufel. Und ich glaube, auch darin hat sich vielleicht ein bisschen was geändert, dass die Tools es einfacher machen, die Pipeline grün zu halten, also dass du schnelleres Feedback bekommst, dass das Feedback vielleicht spezifischer wird, dass du schneller weißt, was muss ich reparieren, wenn es kaputt ist. Aber dieser Disziplin Teil, der ist nicht weggegangen. Es ist immer noch am Team, sozusagen sich an die Regeln zu halten.",
+            "start": 884969,
+            "end": 1128582,
+            "confidence": 0.7881449704142016,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Also es ist dann vielmehr eine Mindset-Frage als eine technische Frage.",
+            "start": 1128902,
+            "end": 1132805,
+            "confidence": 0.7701818181818182,
+            "speaker": "C",
+            "channel": null
+        },
+        {
+            "text": "Es wurde mehr zu einer Mindset-Frage, würde ich sagen. Insommer. Die technischen Probleme sind gelöst. Die Tools sind ubiquitär. Du kriegst GitHub-Actions für umme mit Open-Source-Projekten. Du kriegst für sehr wenig Geld, wenn du kommerzielle Software machst. Die Tools sind nicht mehr das Problem. Du musst es schon gleich gar nicht mehr selber bauen. Du musst es nur noch anwenden. Es gibt zig Bücher, Blogposts, Podcasts über das Thema. Aber ja, du musst das Mindset haben und du musst dich sozusagen an die Regeln halten ein Stück weit, dass es am Ende funktionieren kann.",
+            "start": 1133294,
+            "end": 1161185,
+            "confidence": 0.7676595744680851,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Es ist sehr schön, nur mehr anwenden, unter Anführungszeichen. Es ist nur die Anwendung.",
+            "start": 1161557,
+            "end": 1168003,
+            "confidence": 0.6567142857142857,
+            "speaker": "C",
+            "channel": null
+        },
+        {
+            "text": "Das hat sich grad so alles so super einfach angehört. Versionskontrolle, okay, ich würd fast sagen, da sind inzwischen eine ganze Menge Leute drauf, ja? Also, von mir aus auch noch auf CVS oder SVN. Da muss ja nicht immer Git sein. Oder Mercurial oder Ähnliches, was es da halt noch so alles gibt. Bildautomation, okay, kriegt man auch noch hin, die ganze Sache automatisch jeden Tag um 3 Uhr zu starten oder ähnliches. Das kriegt man noch hin. Und dann fand ich's schön, du hast über Testautomation gesprochen, und danach hast du über Disziplin gesprochen. Da muss ich so ein bisschen grinsen. Bezüglich Disziplin und den Bild dann auch grün zu halten und keine Bildfatigue einschleichen zu lassen. Ich habe mal eine schöne Story gelesen von Flickr, dieser Foto Plattform, die haben mal vor zehn Jahren oder so, haben die sich eine Straßenampel gekauft, haben die ins Büro gestellt und haben da ihren, ihr CI Tool, ich glaube Jenkins angeschlossen. Und wenn der dann rot gegangen ist, dann war natürlich das ganze Büro rot, weil die da eins, zwei, drei Straßenampeln stehen hatten. Und das fand ich, das fand ich schon eine sehr schöne Geschichte. Und als ich das gelesen habe, habe ich mehr und mehr Fotos auf Twitter gesehen, wie mehr und mehr Leute dann ihre Art von, oh, der Bild ist rot im Büro anzeigen. Ja, die hatten, paar Leute hatten so große Fernseher und so. Und natürlich war ich dann Hyped und ich wollte das auch bauen. Und dann war ich aber zu schorrig, irgendwie 100 Euro für eine Straßenampel bei Ebay auszugeben. Zugegeben, mir fehlen auch, glaube ich, die, die Fähigkeiten, das dann irgendwie mit Software zu verbinden.",
+            "start": 1168043,
+            "end": 1262947,
+            "confidence": 0.775681978798586,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Aber man merkt Andi, dass du nie mit Österreichern zusammengearbeitet hast, weil die gehen auch über rote Ampeln. Das ist nicht so wie die ganzen Deutschen, die stoppen vor der roten Ampel. Also man kann auch im Office dann sitzen mit einer roten Ampel und einfach die rote Ampel ignorieren. Die Umgebung fragt dann ständig nach oder auch vielleicht mal die Chefin oder der Chef, warum ist denn diese Ampel rot? Also vielleicht wirkt es dann doch irgendwo in Richtung Mindset-Entwicklung.",
+            "start": 1264005,
+            "end": 1287682,
+            "confidence": 0.773950617283951,
+            "speaker": "C",
+            "channel": null
+        },
+        {
+            "text": "Also wenn man den Artikel von Martin, der übrigens sehr, sehr viele gute Details beinhaltet und, finde ich, den Kern der Geschichte sehr gut herausarbeitet, wenn man den mal genau liest, dann hat er auch ein Kapitel über, ich glaube, er nennt es Radiate the Results oder sowas in die Richtung. wo es darum geht, wie publiziere ich oder mache ich denn den Zustand meiner Pipelines sichtbar. Und eine der nettesten Sachen, das war ganz am Anfang meiner Reise in Continuous Integration bei meiner kleinen Webagentur in Karlsruhe, wo ich damals gearbeitet habe, Wir hatten so Lavalampen, die über eine Netzwerksteckdose getriggert wurden. Und das Nette an einer Lavalampe ist ja, dass sie am Anfang eine Weile braucht, bis sie blubbert, bis sie warm wird. Das heißt, diese zehn Minuten, wo man sagt, in der Zeit sollte eine Pipeline wieder gefixt werden oder ein Bild wieder gefixt werden, wenn er mal kaputt war, das war etwa die Zeit, wo es gedauert hat, bis die Lava anfing zu blubbern. Und also erst mal ging die Lampe an und dann wusste das Team, oh, oh, oh, oh, oh. Und dieser Gamification-Teil da drin, den finde ich nach wie vor super toll. Also das hat mit der Zeit auch ein bisschen seinen Reiz verloren leider. Aber ich finde, sowas zu machen hilft sehr dabei, dass auch, sage ich mal, diese Disziplin Spieler ist, in einem Team ein bisschen einzuhalten und einzuführen.",
+            "start": 1287922,
+            "end": 1359208,
+            "confidence": 0.7611302521008397,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Das ist wirklich eine schöne Sache, weil das ist ja wirklich ein realer Wettlauf mit der Zeit. Der Blog-Boss von Martin Fowler hat auch eine interessante Kategorie, und zwar nennt er sie Test in a clone of the production environment. Und meiner Meinung nach oder meiner Erfahrung nach ist, jedes Team versucht, das Produktionsenvironment lokal irgendwie nachzubilden, auf einem Staging-Server und Ähnliches. Es ist aber nie das Gleiche. Egal, ob man Automatisierung hat und Ansible und Terraform und Cloud-Formation wie auch immer sein Produktionsanwalt aussieht, es ist irgendwie nie das gleiche, denn es ist immer irgendwas anders. Wie ist deine Erfahrung? Hast du schon mal Teams gesehen, die das geschafft haben? Also, wo man wirklich sagen würde, keine Änderung, wenn das läuft, läuft es in Produktion.",
+            "start": 1359228,
+            "end": 1402165,
+            "confidence": 0.7477063492063492,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Ich habe leider noch nie in einem Projekt gearbeitet, wo diese Idee von Test in Production 100 Prozent durchgezogen hat. Ich glaube, das Projekt, wo wir da am nächsten dran gekommen sind, das war ein verteiltes System mit vielen Microservices, wo wir uns an irgendeiner Stelle die Frage gestellt haben, Gegen welches Environment anderer Systeme teste ich denn meine neue Version? Und am Anfang war das sozusagen Dev gegen Dev und dann haben wir festgestellt, dass das sozusagen völlig instabil wird, weil niemand die Disziplin hatte, Dev stabil zu halten und das ja auch gar nicht Sinn und Zweck von Dev ist, dass du ein stabiles Umfeld schaffst und eine stabile Umgebung schaffst, sondern dass Dev ja eigentlich möglichst immer deinen aktuellen Stand widerspiegelt, der eben zwischendrin auch mal instabil sein kann. Und wir haben das dann Stück für Stück dahin verändert, dass wir gesagt haben, jedes System, das sozusagen gegen ein anderes System getestet wird, stellt sich selber nur in Produktion zur Verfügung. Also ich möchte es so ein bisschen vergleichen mit, wenn du an irgendeiner Stelle in deinem Workflow zum Beispiel GitHub einsetzt, und du hast einen Test-Workflow und du hast einen Produktiv-Workflow, dann würdest du auch nie auf die Idee kommen, GitHub zu fragen, ob sie dich auf ihr Testsystem lassen, um deinen Test-Workflow zu testen, sondern du bist auch mit deinem Test-Workflow immer auf der Produktiv-Version von GitHub. Das heißt, dein externes System ist immer in Produktion, du testest immer gegen Produktion, nur dein eigenes System geht sozusagen die verschiedenen Stages durch, und du testest quasi auf einer Integration-Stage oder einer Integrationsumgebung deines eigenen Systems gegen die Produktivkomponenten der Nachbarsysteme. Und dieser Schritt hat uns in dem Projekt immens geholfen, die Stabilität unserer Tests zu erhöhen, weil eben die Dependency-Systeme, gegen die wir getestet haben, in Produktion immer wesentlich stabiler waren und die Realität deutlich besser abgebildet haben, wie wenn wir gegen Integration oder Dev dieser Drittsysteme getestet haben.",
+            "start": 1402385,
+            "end": 1520997,
+            "confidence": 0.8082755417956657,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Also ich mag den Ansatz ungemein, aber ich frage mich gerade, ob der nur für Lese-Requests an die Produktionssysteme geeignet ist, weil ich meine, wenn du nämlich veränderbare Operationen machst, Inserts oder Updates oder von mir aus auch Daten löscht, dann ist es natürlich schon ein bisschen komplizierter, oder?",
+            "start": 1521197,
+            "end": 1537608,
+            "confidence": 0.8428367346938777,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Also vielleicht triffst du auch da wieder den Vergleich mit GitHub, ja. GitHub stört es erstmal nicht, wenn ich ein Testrepository anlege und das klar flaggt als solches. Solange dieses Testrepository dann hinterher nicht irgendwie in meine Produktion wandert oder die Daten darin, kann ich das einfach wieder wegschmeißen. Das heißt, wenn ich das Produktivsystem von Grund auf so design, dass ich vielleicht ein Stück weit mit Testdaten umgehen kann, dass ich zum Beispiel in meiner Datenbank irgendwie einen Flex setzt, das ist Produktivdaten, das sind Testdaten, dann sollte es mir auch relativ einfach möglich sein, dieses Produktivsystem dahingehend wieder aufzuräumen, dass das Testdaten einfach wieder weggeschmissen werden können. Idealerweise von der Partei, wogegen das System testet. Es sollte nicht Aufgabe des Teams sein, was das System betreibt, rauszufinden, welches andere Team jetzt Test- und Produktivdaten da reingeschrieben hat und das wieder aufzuräumen. Macht GitHub auch nicht. Aber es gibt vielleicht so eine Idee, in welche Richtung ich das Problem lösen kann. Das war jetzt aber nur ein Teil auf deine Antwort. Ich glaube, letztlich war die Frage eher, wie kann ich mein System selber in einer Umgebung testen, die möglichst nah an Produktion rankommt. Ich glaube, eine erste einfache Annäherung daran kann, so blöd das klingt, Docker geben. Mit Docker hat sich massiv verändert, wie wir Systeme paketieren und betreiben. Und mit Docker bin ich halt auch auf einem Arbeitslaptop, wenn ich meine Software in einen Container laufen lasse, und nachher in Produktion auch in einem Container laufen, da ist schon sehr nah an der Produktivumgebung dran. Klar habe ich andere Hardware, habe ganz andere Kapazitäten, habe andere Netzwerk-Topologien oder Netzwerk-Probleme. Aber im Vergleich zu früher, sag ich mal, wo wir PHP auf einem LAMP-Stack auf einem Mac ausgeführt haben und das dann irgendwie auf ein ganz anderes System auf einem Web-Server gepackt haben, erlaubt mir Docker doch schon eine sehr gute Annäherung an Produktion, wenn ich meine Software containerisiere. als der Ernährung dahin. Das zweite ist natürlich, dass es mit Cloud-Technologie viel, viel leichter geworden ist, on the fly ein komplettes Produktivsystem hochzuziehen. Also ich habe kürzlich einen super tollen Talk von Zalando gesehen, den können wir vielleicht in den Referenzen zu dem Podcast mit aufnehmen, wo sie gezeigt haben, wie sie ihre Kubernetes-Cluster testen. Und im Prinzip macht halt jeder Pull-Request auf die Config von so einem Cluster fährt das komplette Cluster in der Cloud, hochtestet Ende zu Ende, geht sogar so weit, dass es das Cluster erst in der Version vor der Änderung hochfährt, dann die Änderung anwendet und dann quasi auf diesem geänderten Cluster testet, um noch näher an dem dran zu sein, was nachher in Produktion passiert. Und das machen die sozusagen on the fly und schmeißen nachher alles wieder weg. Das wäre vor zehn Jahren, würde ich sagen, nahezu unmöglich gewesen. Und heutzutage ist das machbar. Das ist das, was ich meinte mit dem Effort in die Testautomatisierung. Wenn sich ein Team ernsthaft dahinter klemmt und es sozusagen geschäftskritisch ist, dass ich so teste, dann kann ich das in der Cloud relativ leicht machen. Und das erlaubt mir natürlich ein ganz anderes Testen in einer produktionsähnlichen Umgebung, wie ich das noch vor zehn Jahren konnte.",
+            "start": 1537848,
+            "end": 1719518,
+            "confidence": 0.7823515037593983,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Jetzt waren wir schon bei den Dingen, die man nicht machen soll, eben DEV gegen DEV zum Beispiel testen oder die anderen Systeme als DEV einbinden. Gibt es sonst irgendwo noch so Best Practices oder Dinge, die man auf keinen Fall machen sollte oder eben positiv formuliert machen sollte, die positive Variante davon?",
+            "start": 1720335,
+            "end": 1738911,
+            "confidence": 0.8554905660377354,
+            "speaker": "C",
+            "channel": null
+        },
+        {
+            "text": "Ja gut, das ist natürlich, da gibt es viel. Ist die Frage, wo wir da anfangen wollen.",
+            "start": 1739532,
+            "end": 1745277,
+            "confidence": 0.47035294117647064,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Wir haben Zeit, kein Problem.",
+            "start": 1745297,
+            "end": 1746298,
+            "confidence": 0.6923999999999999,
+            "speaker": "C",
+            "channel": null
+        },
+        {
+            "text": "Okay, also ich fange vielleicht mal da an. Ich habe gesagt, eine Kernidee von Continuous Integration oder die Kernidee ist, dass meine Software in einem auslieferbaren Zustand bleibt. Und ich glaube, ein sehr, sehr wichtiges Konzept dafür ist, dass ich von meinem CI-System, von meiner Pipeline, zeitnah spezifisches Feedback bekommen. Also ich würde sogar so weit gehen und sagen, das ist sozusagen der kritischste Teil oder, wenn du so möchtest, die Kernidee von Kineos Integration, dass du schnelles spezifisches Feedback bekommst. Und für mich sind die zwei Dimensionen von diesem Feedback einmal, wie schnell kriege ich das. Also stell dir einfach vor, du arbeitest an einem Softwareprojekt, du machst eine Änderung und eine Woche später sagt irgendjemand, oh, das ist übrigens kaputt. Was hast du davon noch? Was weißt du eine Woche später noch davon, was du da gemacht hast? Also ich kann sagen, ich weiß da nichts mehr davon. Mein Kopf funktioniert so nicht. Ich bin super vergesslich. Für mich würde dieses Feedback eine Woche später, da fange ich von null an. Ich muss den ganzen mentalen Zustand wieder aufbauen. Ich muss mich da wieder reinfuchsen, nachvollziehen, was habe ich da gemacht. Also bringt mir nichts. Also die Zeit, die ich komme, ist total wichtig. Wenn ich das Feedback, jetzt sind wir wieder bei den 10 Minuten, 10 Minuten nach meiner Änderung kriege, dann weiß ich noch ziemlich genau, was ich da gemacht habe. Dann ist das eine Sache von Minuten, das zu beheben. Die zweite Dimension ist die Größe der Änderung. Stell dir als ein Extrem vor, du änderst eine Zeile Code und machst daraus ein Commit und dein System geht kaputt. Dann musst du am Ende genau eine Zeile Code angucken, um rauszufinden, was da jetzt nicht funktioniert. Relativ einfach. Jetzt stell dir vor, du sammelst deine Änderungen über eine Woche und du schickst ein Pull-Request mit 1000 Zeilen Codeänderung an einen Kollegen. Und danach geht was kaputt. Dann hast du einen ganz anderen Aufwand, rauszufinden, was denn da jetzt kaputt gegangen sein könnte, welche Seiteneffekte da vielleicht aufgedreht sind, die irgendein Drittsystem kaputt machen oder einen Konsumenten brechen. Das heißt, diese Größe des Batch Sizes, wie wir sagen, diese Größe der Änderungen, hat großen Einfluss drauf, wie einfach es nachher ist, einen Fehler zu finden. Und wenn wir das jetzt abstrakt betrachten, dann ist sozusagen jedwede Arbeitsweise, die entweder das Feedback verzögert oder den Batch Size vergrößert, ein Antipattern. Und da sind wir eben direkt bei Themen wie Branching-Strategien, Trunk-Based Development, Pull Requests, blockierendes Code Review. Diese ganzen Themen spielen da sozusagen rein und verschlechtern meistens die Qualität von Continuous Integration, wenn ich es falsch mache.",
+            "start": 1746829,
+            "end": 1895638,
+            "confidence": 0.7825295454545449,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Kannst du da mal einen groben Überblick geben, was es so für Branching-Strategies gibt, wie du die beurteilen würdest, was du empfehlen würdest und wie das mit CI zusammenspielt?",
+            "start": 1896072,
+            "end": 1905620,
+            "confidence": 0.7550344827586208,
+            "speaker": "C",
+            "channel": null
+        },
+        {
+            "text": "Also ich würde sagen, es gibt grundlegend zwei Branching-Strategien. Die eine Branching-Strategie hat eben super kurzlebige Branches und im Kern genommen ist ja, wenn ich mit Git einen Checkout auf ein lokales System mache, erzeuge ich damit ja schon einen Branch. Durch das, dass ich ein verteiltes Versionskontrollsystem habe, mache ich ja mit dem Checkout schon den Branch auf. Das heißt, zu sagen, es gibt keine Branches oder es darf keine Branches geben, ist ab einem gewissen Punkt nicht zielführend, ja. Hilft uns nicht weiter, sondern die wichtige Frage ist, wie lange leben diese Branches und wie groß werden die Änderungen in diesen Branches, bis ich sie wieder in die Mainline zurückführe. Und ich würde sagen, jedwedes Branching-Modell, wo dir nicht erlaubt, Dass du spätestens am Ende des Tages diesen Branch wieder zurück in dein Main Branch führst, sind nicht dienlich für Continuous Integration. Ja, jetzt kannst du dir verschiedene Branching-Modelle angucken. Ich bin leider schlecht mit Namen, aber es gab ganz am Anfang mal, wo Git groß wurde, diesen berühmten Blogpost mit den Release-Dev-Branches. Wie hieß das? Ich hab's vergessen.",
+            "start": 1905660,
+            "end": 1967736,
+            "confidence": 0.7633093922651941,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "War das GitFlow?",
+            "start": 1967756,
+            "end": 1968877,
+            "confidence": 0.8406666666666668,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Ich glaub, es war GitFlow, genau. Das war so ein Kaktus. Auf diesem Blogpost sah es aus wie ein Kaktus, hab ich in meiner Erinnerung. Und Leute haben sich wirklich blind darauf gestürzt. Ich weiß auch noch, eben in dieser Agentur in Karlsruhe haben das dann auch gemacht. Voll cool, so muss man das machen. Und da gab es eben diesen ominösen Development Branch, der dann monatsweise zurück in Master gemerged wurde. Und ich erinnere mich noch gut an diese Merge-Aktionen, die waren Hölle. Und da konnte man eigentlich nicht mehr von Continuous Integration sprechen. Also, dass du quasi monatlich einen Merge durchgeführt hast, den Continuous Integration täglich von dir fordert, zeigt einfach, dieses Branching-Modell ist letztlich inkompatibel mit Continuous Integration.",
+            "start": 1968917,
+            "end": 2010936,
+            "confidence": 0.7410495867768596,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Die Continuous Integration machst du ja dann schon auf diesen Development Branches und so weiter, oder?",
+            "start": 2010976,
+            "end": 2015857,
+            "confidence": 0.707625,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Ja, aber dann ist dein Development Branch dein Master Branch, wenn du so möchtest. Warum trennst du das dann noch? Warum gibt es noch einen weiteren Branch, der sich im schlimmsten Fall quasi divergierend von deinem Development Branch verändern kann und deine Produktion widerspiegelt? Das ist eben genau der Punkt. Wenn Dev die Quelle der Wahrheit ist, warum ist es dann nicht Main? Warum hast du Dev dann? Warum gibt es diese Zwischenstufe? die eben Gefahr läuft zu divergieren.",
+            "start": 2016338,
+            "end": 2039646,
+            "confidence": 0.7248101265822784,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Sprechen wir dann von diesem berühmten und berüchtigten Trunk Development. Ist es dann genau das, wo man möglichst schnell wieder auf Trunk zurück mergt?",
+            "start": 2039686,
+            "end": 2049152,
+            "confidence": 0.8412083333333333,
+            "speaker": "C",
+            "channel": null
+        },
+        {
+            "text": "Ich würde sagen, ja. Also für mich, wie gesagt, es gibt sozusagen die Modelle mit langlebigen Branches und es gibt das Trunk-Based-Modell. Das wären für mich die zwei Hauptkategorien. Und ich würde Trunk-Based kategorisieren als alles, was du tust, wo am Ende des Tages wieder jede Änderung auf Main ist. Und egal, ob das jetzt Feature-Branches sind oder nur lokale Checkouts, wenn das quasi gewährleistet werden kann, dann würde ich sagen, du arbeitest Trunk-Based. Bei allen Modellen, wo deine Feature-Branches oder deine Branches länger leben wie einen Tag, worst case Wochen, Monate, machst du keinen Trunk-Based Development.",
+            "start": 2049993,
+            "end": 2082458,
+            "confidence": 0.7953195876288657,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Ist es trunk-based eigentlich von SVN gekommen, damals mit trunk? Und hat SVN das ermöglicht überhaupt oder war das davor irgendwie? Eigentlich müsste es davor ja genauso möglich gewesen sein, oder?",
+            "start": 2082692,
+            "end": 2094175,
+            "confidence": 0.7455483870967742,
+            "speaker": "C",
+            "channel": null
+        },
+        {
+            "text": "Das ist total interessant, weil man sieht, er agiert immer als Fortschritt zur SVN. Aber ich denke, diese Fähigkeit, leicht Branches zu erzeugen und damit umzugehen, die Git eingeführt hat, die hat auch zu einer Menge Probleme geführt, die wir davor nicht hatten. Und ich glaube tatsächlich, also ich habe nie viel mit SVN gearbeitet, das war so ein bisschen vor meiner Zeit, aber tatsächlich glaube ich, konntest du in SVN gar nicht, ohne weiteres, nicht Trunk-based arbeiten.",
+            "start": 2094215,
+            "end": 2117893,
+            "confidence": 0.8026282051282051,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Ja das ist das ist nicht ganz korrekt ich habe sehr sehr viel mit subversion gearbeitet und ich finde es immer wieder faszinierend jeder jeder hol dich zu git klar git macht branching einfach es ist ein first class citizen aber subversion kann ebenfalls branchen und mergen es ist nicht ganz so einfach wie in git das ist richtig aber Und es ist auch kein First Class Citizen, das ist richtig. Aber es war immer möglich, ja? Also ein Development Branch zu ziehen und dann wieder auf Trunk. Und Achtung, mal ganz kurz für alle Leute, die erst seit zwei, drei Jahren in der Softwareentwicklung sind. Der Name Trunk ist eigentlich der Main beziehungsweise Master von Subversion. Es ist genau das Gleiche, was wir in Git heute Master und Main nennen, wo wir in Subversion trunken.",
+            "start": 2118579,
+            "end": 2158838,
+            "confidence": 0.7625000000000002,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Aber es war eigentlich nie üblich in Subversion so einfach viele Branches zu haben, rauszubranchen, wieder zurück rausbranchen. Das war einfach vom Modell anders vorgesehen. Zumindest so wie ich das immer empfunden habe mit Subversion. Ja es war es war es war.",
+            "start": 2159575,
+            "end": 2173840,
+            "confidence": 0.7927380952380955,
+            "speaker": "C",
+            "channel": null
+        },
+        {
+            "text": "Wie gesagt kein first class citizen es war es war ja nicht so ich meine als geht raus kam hatten wir gerade git flow wie michael gesagt hat und das was man jetzt auf github macht mit diesem pull request und zurück in main das nennt man jetzt auch github flow ja und es gibt ja glaube ich noch andere branching modelle also man hat nie so darüber nachgedacht.",
+            "start": 2173860,
+            "end": 2191116,
+            "confidence": 0.8211304347826085,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Also ich wollte nicht sagen, dass Branching in Subversion nicht möglich war. Also mir ist bewusst, dass das ging. Ich glaube, die Veränderung kam, wie du gesagt hast, Andy, mit der Leichtigkeit, wie man Branches in Git anlegen kann und natürlich dann auch, mit, glaube ich, ein paar irreführenden Konzepten, die zu Beginn von Git propagiert und blind befolgt wurden. Ich glaube, ein weiteres irreführendes Konzept, was Leute mehr oder weniger blind kopiert haben, ist eben auch dieser Pull-Request-basierte Workflow, der eben aus der Open-Source-Welt kommt. Also man muss sich einfach verdeutlichen, Git hat war zu Beginn erstmal ein Tool, das sozusagen Sourceforge abgelöst hat, wenn es darum ging, Open-Source-Projekte zu managen. Die Open-Source- und verteilt arbeitende Teams haben die Möglichkeit, Git als Verwaltungskontrollsystem einzusetzen. Und in dieser Open-Source-Welt, wo du sagen wir mal Kernkontributoren hast und dann weitere Kontributoren, die jetzt eher weiter weg sind vom Projekt und vielleicht eine gewisse Qualitätskontrolle notwendig ist, dass nicht jede Veränderung, die dahin zu und kurz in so einem Repo macht, gleich in Main wandert, in so einem Kontext machen Pull-Requests und Code-Reviews von Kernkontributoren natürlich völlig Sinn. Wenn ich das jetzt aber blind auf ein Softwareentwicklungsteam in einer Firma übertrage, die sozusagen im Idealfall noch in einem Zimmer Schreibtisch an Schreibtisch nebeneinander sitzen, dann macht dieses Konzept gar keinen Sinn, weil du sozusagen nur noch Kernkontributoren hast, die ihre Software kennen, die sich gegenseitig kennen, die miteinander reden können, die sozusagen jeden Tag zusammen arbeiten. Und dort den gleichen Workflow einzuführen, der eben in diesem Open Source Umfeld funktioniert, führt letztlich nur zur Verzögerung von deinem Feedback und zu unnötigen Kontextswitches bei den Leuten. führt aber die die eigentliche absicht ja die die qualität der software hochzuhalten im worst case sogar ad absurdum und macht das gegenteil davon.",
+            "start": 2191596,
+            "end": 2307861,
+            "confidence": 0.8145521885521879,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Wenn wir reden ja schon derzeit von von ci pipelines und und schnellen feedback und so weiter wie hat sich denn das tooling eigentlich entwickelt also. Ich meine, zum Beispiel, wenn wir jetzt über CI-Tools sprechen, ich glaube Jenkins ist bzw. war immer noch der federführende CI-Executor, bin mir gerade nicht sicher. Aber seitdem kamen ja auch etliche neue Tools. Travis CI war zwischenzeitlich mal da, Circle CI, GitHub Actions. Es kamen super viele proprietäre Angebote dazwischen. Konntest du auch in irgendeiner Art und Weise eine Weiterentwicklung im CI-Tooling selbst entdecken, dass sich das da irgendwie gewandelt hat, dass wir uns weiterentwickelt haben?",
+            "start": 2307901,
+            "end": 2351634,
+            "confidence": 0.7998058252427186,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Definitiv. Also da hat sich immens viel getan. Und zwar jetzt nicht nur was die Anzahl an Anbietern betrifft, sondern eben auch die Konzepte dahinter, finde ich, haben sich maßgeblich weiterentwickelt zum Positiven. Also ich würde sagen, den ersten großen Shift, den wir gesehen haben, war von dieser On-Prem-Installation, wie sie halt Jenkins erfordert hat, hin zu so einer SaaS-Lösung, dass sich die Tools in die Cloud verlagert haben, dass ich sozusagen nicht mehr die Kiste mit Software kaufe, sondern eben den Service beziehen kann. Travis war da meines Wissens so der erste Anbieter in diese Richtung. Ein weiterer großer Shift war dann, glaube ich, bei den Tools, die Pipelines als First Class Citizens hatten. Also interessanterweise hatte Jenkins ja lange keine Pipelines als Grundkonzept, sondern die sind dann später so ein bisschen drangepflanzt worden, was auch zu einer ganzen Menge Probleme geführt hat oder das System unnötig kompliziert gemacht hat oder komplex gemacht hat. Und ich glaube, diese Einführung von Pipelines als Grundverständnis, wie wir CI-Workflows aufbauen, das war dann so ein weiterer großer Shift. Dann wurden diese Pipelines mehr und mehr zu Code. Das heißt, ich habe meine Pipelines nicht mehr in der UI zusammengeklickt und hat sie damit irgendwie nicht einfach reproduzierbar. sondern ich habe mehr und mehr Systeme, wo Pipelines wirklich zum Beispiel in Form von einer YAML-Datei oder anderen Skripten mit meinem Source-Code-Repository zusammenversioniert werden können. Und wir haben dann auch immer mehr gesehen, dass das in Richtung deklarative Beschreibung geht, sodass ich also keine volle Programmiersprache mehr verwenden musste, um eine Pipeline zu beschreiben, sondern das eben deklarativ zum Beispiel in YAML geschehen konnte, was ich finde ja große Vorteile in der Verständlichkeit von Pipelines mit sich brachte und auch eine leichtere Trennung zwischen dem scripting und der bildautomatisierung und der tatsächlichen pipeline definition brachte.",
+            "start": 2351674,
+            "end": 2472374,
+            "confidence": 0.8429235880398668,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Ich kann mich noch daran erinnern ich glaube jenkins hat auch irgendwann das jenkins file eingeführt was ja dann auch die die pipeline als code war aber das.",
+            "start": 2472414,
+            "end": 2481616,
+            "confidence": 0.7964285714285716,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "War in der sprache groovy war das.",
+            "start": 2481636,
+            "end": 2484297,
+            "confidence": 0.7465714285714286,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Groovy es hat mich immer so ein bisschen abgeschrieben ich habe noch nie groovy geschrieben Aber allein der Name hat mich dann so ein bisschen abgeschreckt, und dann kam halt diese Jaml-Geschichte mit Travis CI oder GitHub Actions oder irgendwas. Und das war natürlich dann, ja, vielleicht, wie geht unsere Version, einfacher.",
+            "start": 2484337,
+            "end": 2503008,
+            "confidence": 0.731903846153846,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Ja, aber um da vielleicht noch ein bisschen weiterzugehen in den Konzepten, die sich eben eingewirbelt und verändert haben. Ich glaube, ein weiterer großer Schritt war dann nochmal dieser Übergang zu containerisierten Bildumgebungen. Also das ist, glaube ich, auch etwas, was ich das erste Mal in Travis CI gesehen habe, dass du einfach ein Docker-Image angeben konntest, in dem dein Bild abläuft. was halt den großen, großen Vorteil hatte, dass ich sozusagen meine komplette Bildumgebung wieder deklarativ in einem Dockerfile beschreiben konnte und dann auch shippen konnte. Das heißt, ich konnte lokal genau den gleichen Container ausführen und mein Bild darin ausprobieren, wie er danach im CI-System abgelaufen ist. Also hier auch wieder Stichwort Produktionsnähe. Ich spreche da immer gern von Dev-Pipeline-Parity, also wie nahe komme ich in meiner Entwicklungsumgebung an meine Pipeline-Umgebung ran. Weil in dem Moment, wo ich was debunken muss, kann das auch eine wichtige Frage sein. Das heißt, Einführung von kontainerisierten Bildumgebungen war ein weiterer Meilenstein, meines Erachtens. Und dann, und das war vielleicht ein bisschen weniger spektakulär, hat sich auch das Plugin-Konzept drastisch verändert von Jenkins zu jetzt zum Beispiel GitHub Actions als einer der moderneren Player. Weil mit Jenkins hast du sozusagen auf Systemebene bestimmt, welche Plugins zum Einsatz kamen und die Gefahr war immer, wenn ich jetzt als Jenkins Systemadministrator ein Plugin geupdatet habe, welche Pipelines habe ich dann gebrochen. Und das hat sich dahingehend verändert, dass mit GitHub Actions der Autor der Pipeline bestimmt, welches Plugin in Anführungszeichen, ja jetzt heißt es Tasks oder Actions, eingesetzt wird und damit sozusagen du dein unterliegendes System jederzeit problemlos updaten konntest und niemals die Pipeline gebrochen hast, was es viel, viel einfacher macht oder vielleicht ein Stück weit überhaupt als eine Möglichkeit, sowas als SaaS betreiben zu können. Und ich denke, das war so.",
+            "start": 2503048,
+            "end": 2615359,
+            "confidence": 0.8090969899665544,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Die.",
+            "start": 2617960,
+            "end": 2618080,
+            "confidence": 0.862,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Letzte große konzeptionelle Veränderung, wo ich jetzt beobachtet habe, wo ich denke, die uns wirklich vorangebracht hat im Zusammenhang mit CI-Systemen.",
+            "start": 2618120,
+            "end": 2625723,
+            "confidence": 0.8691904761904762,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Du hattest grad schon die populären Tools von heute erwähnt. Ich kann den Schmerz, den du erwähnt hast, mit dem Upgraden von Jenkins-Instanzen fühlen. Ich weiß nicht, wie viele Stunden ich damit verbracht habe. Große Jenkins-Instanzen, die locker 150 Projekte auf der Instanz hatten, mit diversen Slaves oder Followern geupdatet haben, mehrere Stunden investiert. Jetzt stelle ich mir immer die Frage, mit modernen Tools ist das relativ simpel eine CI-Pipeline aufzubauen. Ich habe ein kleines Golang-Projekt, weiß ich nicht, 400 Zeilen Code, GoBuild, GoTest und dann kommt dann eine Binary raus, alles super. Jetzt gab es oder gibt es, glaube ich, immer noch, aber in vielen Firmen dieses Movement von einem Monorepo. Weil, auch wenn man eine Microservice-Architektur hat oder vielleicht eine gewisse Standardisierung durch ein Plattformteam, dass man eine zentralisierte Logging-Library hat oder ähnliches und man möchte ein Breaking-Change einführen, dass man den einfach komplett in allen Applikationen mit einem Commit durchführt. Ich meine, ich glaube, Google hat das damals sehr durchs Dorf getrieben, wie toll das doch ist. Die ganze Sache bringt aber natürlich dann auch ein paar Herausforderungen mit. Also ich stelle mir jetzt vor, ich habe das Backend in einem Repository und in demselben Repository habe ich noch das Frontend mit JavaScript und TypeScript und dann sind da vielleicht noch meine Data Science Prozesse drin, weil irgendwie Produktion auch ans Data Warehouse angeschlossen ist und so weiter und so fort. Also wir haben ziemlich verschiedene Teams, arbeiten an einem großen Repository in verschiedenen Sprachen. Und wenn ich da jetzt an über Continuous Integration nachdenke, frage ich mich, muss ich bei jedem das komplette monorepo bauen oder wie verhält sich das mit dem schnellen feedback loop von continuous integration in dem monorepo weil umso mehr ich bauen muss umso mehr verschiedene sprachen hat umso herausfordernder ist ein zehn minuten feedback loop.",
+            "start": 2626365,
+            "end": 2742636,
+            "confidence": 0.807141447368422,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Das ist eine sehr spannende frage. Ich hoffe, dass ich jetzt die richtigen Termini verwende, um sie zu beantworten. Ich glaube, wenn man Monorepos betrachtet, dann sollte man erst mal schauen, wo das Konzept in jüngster Zeit eigentlich herkam, wer es sozusagen populär gemacht hat und welches Problem damit gelöst wurde. Und letztlich, die meisten Leute referenzieren Monorepo oder bringen Monorepo immer in Zusammenhang mit Google. Google hat ein Monorepo, deswegen wollen wir oder müssen wir das jetzt auch machen. Und dann, glaube ich, ist es wichtig zu schauen, welches Problem Google mit diesem Monorepo eigentlich lösen wollte. Und nach meinem Verständnis war das Google-Problem, dass sie in ganz vielen verschiedenen Softwareprojekten jeweils Abhängigkeiten hatten, die dann jeweils transitive Abhängigkeiten hatten. Also du hast ein Java-Projekt und bindest eine Library ein, über Gradle und diese Library hat selbst wieder Abhängigkeiten. Das bezeichne ich als transitive Abhängigkeiten. Und das große Problem, das jetzt auftreten kann, ist, wenn zwei eingebundene Libraries die gleiche transitive Abhängigkeit haben und du diese transitive Abhängigkeit plötzlich in unterschiedlichen Versionen hast. Weil dann kann es nämlich passieren, dass du in einem Projekt zwei transitive Abhängigkeiten mit einem Versionskonflikt hast. Und um dieses Problem zu lösen, hat Google irgendwann gesagt, wir wollen jede Abhängigkeit nur noch in einer Version haben. Und um das zu managen, verwenden wir ein Monorepo, in dem diese Abhängigkeit genau einmal auftaucht. Und das war sozusagen ihr Ansatz, um das Problem von Versionskonflikten in Abhängigkeiten zu lösen. Jetzt hat Google aber nicht nur einfach blindlings den Schiff zu einer Monorepo gemacht, sondern Google hat sich da drumherum ein sehr, sehr ausgeklügeltes Tooling überlegt, um dieses Monorepo am Ende des Tages überhaupt handelbar zu machen, weil diese Terabyte an Daten, die kann weder jemand auschecken, noch kann ein Tool wie Git damit umgehen, noch kann ein XBD bis Bildsystem damit umgehen. Das heißt, Google hat sozusagen, um das überhaupt handelbar zu machen, ein eigenes Versionskontrollsystem dazu gebaut, das partielle Checkouts erlaubt, und hat in einem weiteren Schritt ein Bildsystem gebaut, das es erlaubt, durch sehr, sehr ausgeklügeltes Caching und Optimierung, so ein Bild, wie du ihn gerade beschrieben hast, über das ganze Monorepo hinweg, überhaupt handelbar zu machen. Das Tool heißt Bazel, vielleicht kennt es der eine oder andere. Beziehungsweise Bazel ist die Open Source-Version von dem internen Tool, das Blaze heißt. Und was Bazel eben eingeführt hat, ist, dass es sozusagen, ich will mal sagen, Hermetis abgeschlossene Bildinstruktionen gibt, die Teile dieser Software bauen. wo durch die Funktionsweise des Tools sichergestellt ist, dass wenn ich den gleichen Bild mit gleichem Softwarestand und gleichen Parametern zweimal ausführe, ich garantiert eine gecachede Version davon nehmen kann. Und das erlaubt eben immens schnelle Builds auch über so ein Monorepo hinweg, weil nur die Teile wirklich gebaut werden, die sich geändert haben. Und wenn die Projekte klein genug sind, dann kann ich wahrscheinlich auch mit Git und den heutzutage üblichen Build-Tools einen Monorepo abbilden. Aber ich sollte nicht naiv davon ausgehen, dass das beliebig skaliert. Und wenn die Projekte groß genug waren, die deine Source-Code-Base eine gewisse kritische Größe übersteigt, dann wird man damit vermutlich mit Git und handelsüblichen Build-Tools in Probleme laufen. Dann ist ein Monorepo nicht feasible, nicht realistisch.",
+            "start": 2742676,
+            "end": 2949738,
+            "confidence": 0.8312457786116325,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Es ist ja sowieso immer mit Vorsicht zu genießen, wenn jemand sagt, wir müssen das so machen, weil es macht Google so oder Facebook so oder Amazon so. Und ganz oft ist es ja die falsche Lösung für mich als kleine Firma oder als kleines Team oder auch als mittelgroßes Team. Deiner Erfahrung nach, kennst du in der wilden Welt da draußen im wilden Westen irgendwelche Monorepos, die funktionieren bei Teams, die jetzt vielleicht größer als zwei Personen sind?",
+            "start": 2950593,
+            "end": 2977243,
+            "confidence": 0.840367088607595,
+            "speaker": "C",
+            "channel": null
+        },
+        {
+            "text": "Also wir hatten jetzt gerade ein Projekt in Automotive, die Monorepo eingesetzt haben und ich würde sagen auch erfolgreich eingesetzt haben. Allerdings muss man auch sagen, dass in diesem Projekt, in dem meines Wissens etwa 100 Leute beteiligt waren, ein Team von, lass mich lügen, fünf bis zehn Leuten ausschließlich damit beschäftigt war, die LCI-Systeme zu betreiben, das Bazel-Build-System zu hosten, zu betreiben, und das schon ein immenser Aufwand war.",
+            "start": 2977583,
+            "end": 3009442,
+            "confidence": 0.8420857142857143,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Bei mir, beim aktuellen Arbeitgeber, haben wir auch ein Monorepo, auch mit circa 150 Engineers, wird darauf rumgeturnt. Wir haben auch ein Team von fünf Leuten, die sich nur darum kümmern, Und es ist schon was anderes. Es ist schon sehr herausfordernd, die Buildtimes runterzukriegen und genau zu wissen, wann welche Subdirectories gebaut werden müssen und welche Abhängigkeiten dabei sind. Wir verwenden keinen Bazel, deswegen kann ich da relativ wenig zu sagen. Es wird auch sehr viel geschaut. Okay, muss ich jetzt hier alles bauen? Was muss gebaut werden? Welche Abhängigkeiten da sind? Also es ist schon sehr herausfordernd.",
+            "start": 3009502,
+            "end": 3044248,
+            "confidence": 0.8043535353535353,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Aber wie viele Module oder wie viele Systeme habt ihr in eurem Monorepo? Weil das ist immer die Frage, wenn du sagst, du hast ein Monorepo. Es kann ja auch nur eine Applikation sein, einen Monolithen, wo 150 Leute dran arbeiten. Das gibt es ja auch in der Realität. Also wie viele Systeme sind da wirklich dahinter? Wie viele einzelne Bildschritte bräuchtest du eigentlich, um das ganze Monorepo zu bauen? Nur um so eine Größenordnung zu bekommen.",
+            "start": 3044268,
+            "end": 3066205,
+            "confidence": 0.7458571428571428,
+            "speaker": "C",
+            "channel": null
+        },
+        {
+            "text": "Die Applikationen, das sind schon so 20, 25, 30 Stück, die da in dem Monorepo drin sind. Manchmal verschiedene Sprachen, ein bisschen Go, ein bisschen Python, dann Frontend natürlich, Javascript und Co. Und ein paar Shared Libraries. Also das ist schon recht herausfordernd, je nachdem, was man ändert, diese Importpfade nachzuvollziehen und so weiter.",
+            "start": 3066685,
+            "end": 3087269,
+            "confidence": 0.7731111111111113,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Und würdet ihr dann noch in der Lava-Lampen-Zeit sein von zehn Minuten, um alles zu bauen?",
+            "start": 3087389,
+            "end": 3092150,
+            "confidence": 0.8161875000000001,
+            "speaker": "C",
+            "channel": null
+        },
+        {
+            "text": "Nein, leider nicht. Wir wären nicht in der Lava-Lampen-Zeit. Bei uns kann man vielleicht zwei Kaffee holen oder drei, vielleicht auch ein bisschen mehr. Der Build dauert ein bisschen, aber da werden teilweise auch Images gebaut und Linux-Packages, RPM-Packages. Es ist jetzt nicht die klassische Go-Build und NPM-Install, sondern da wird ein bisschen mehr gemacht. Und die Tests laufen, das sind auch keine klassischen Unit-Tests, da wird auch sehr viel Cloud-Infrastruktur hochgefahren, weil Datenbanken getestet werden und solche Geschichten. Also das ist dann alles ein bisschen größer und leider sind wir damit nicht mehr in den 10 Minuten.",
+            "start": 3092470,
+            "end": 3128100,
+            "confidence": 0.7871734693877555,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Und ihr baut wirklich alles jedes Mal neu in der Pipeline?",
+            "start": 3128320,
+            "end": 3131603,
+            "confidence": 0.6492727272727273,
+            "speaker": "C",
+            "channel": null
+        },
+        {
+            "text": "Das muss ich zugeben, weiß ich jetzt gerade gar nicht, ob das auf jedem Comet ist oder ob das nicht zeitig getriggert ist, alle 10 Minuten, 15 Minuten, 20 Minuten, damit man mehrere Changes bündelt, weil das natürlich dann je nach CI-Infrastruktur auch sehr kostenintensiv sein kann, wenn wir sehr viel Cloud-Infrastruktur hinten dran fahren, hochfahren. Muss sich passen, müsste ich nachrechnen.",
+            "start": 3131986,
+            "end": 3150531,
+            "confidence": 0.791451612903226,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Aber wenn ihr das alle 10 Minuten baut, dann euren grünen Fußabdruck habt ihr dann auch keinen.",
+            "start": 3150927,
+            "end": 3157470,
+            "confidence": 0.6187058823529412,
+            "speaker": "C",
+            "channel": null
+        },
+        {
+            "text": "Das ist korrekt, aber du kannst bei uns, wenn du, ich mache jetzt keine Werbung, aber du kannst auch sagen, okay, meine Cloud-Infrastruktur verbraucht so viel CO2 und so weiter. Also das liefern wir inzwischen über unsere API zurück. Also dann können wir dann.",
+            "start": 3157490,
+            "end": 3168874,
+            "confidence": 0.8183181818181819,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Aber nicht von eurer eigenen Pipeline scheinbar.",
+            "start": 3168914,
+            "end": 3172155,
+            "confidence": 0.6502857142857144,
+            "speaker": "C",
+            "channel": null
+        },
+        {
+            "text": "Das muss ich zugeben, das weiß ich nicht. Ich kenne die Berechnung nicht. Also, du hättest gut draus geredet. Ich komm aus dem Pott, es tut mir leid. Was soll ich machen? Michael, du hattest schon während des Talks bisher das eine oder andere Buzzword fallen gelassen. Du hattest das Buzzword Dev-Pipeline-Parity fallen lassen. Fand ich auch sehr schön. Wir hatten grad ein bisschen über Bildfatigue gesprochen. Und zwei Buzzwords kommen mir immer auch so vor in dem Kontext von Continuous Integration. Und zwar einmal ist das das sogenannte CI-Theater und einmal das Buzzword Shift-Left, was ich gerade ganz hoch im Management höre. Kannst du uns einmal kurz erklären, was das CI-Theater ist und einmal, was Shift-Left ist?",
+            "start": 3172175,
+            "end": 3219077,
+            "confidence": 0.7297542372881355,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Ja, dann fangen wir doch mit dem managementrelevanten Shift-Left an. Also ich habe vorher über Feedback gesprochen und ich denke für Shift-Left, es wäre schön, wenn wir ein Whiteboard hätten, das aufmalen könnten, aber wenn wir uns den einen Entwicklungsworkflow auf einem Zeitstrahl vorstellen oder so einen Software-Lifecycle auf einem Zeitstrahl, der vielleicht so mit Idee, Design anfängt, dann Implementierung und dann irgendwann in Richtung Auslieferung in Produktion geht, dann sehen wir oft Aktivitäten, die auf dem Zeitstrahl sehr weit rechts liegen. Also im Worst-Case zum Beispiel gibt es erst nachdem Software gebaut wurde von einem Entwicklungsteam, ein Team, das die Software testet. Das heißt, das Testen funktioniert irgendwie kurz vor ich gehe in die Produktionsstätte, ist ein manueller Prozess. Und Shift-Left hat im Kern die Idee, diese Aktivitäten so weit links wie möglich, also so früh wie möglich in meinen Zeitstrahl zu bringen. Konkret bezogen auf das Thema Testing könnte das zum Beispiel heißen, ich höre auf, mein Entwicklungsteam und mein Testteam voneinander zu trennen, sondern ich habe die Tester in meinem Entwicklungsteam. Ich höre auf, manuell zu testen, nachdem die Software gebaut wurde, sondern ich versuche, quasi das Testen in meinen Source Code mit einzubauen, automatisierte Tests zu haben und mach das eben schon während ich meinen Code entwickle, zum Beispiel in Form von Pair-Programming oder von Pairing von Testern und Softwareentwicklern, die zusammenarbeiten und hab damit sozusagen kein spät stattfindendes brechendes Feedback mehr. sondern habe das Feedback schon während ich meinen Code schreibe und betraue eben schon das Entwicklungsteam damit, sich um Softwarequalität zu kümmern und mache das nicht zu einer nachgelagerten Aufgabe. Der zweite Zusammenhang, in dem wir oft von Shift-Left sprechen, ist bei Security, wo eben genau das gleiche Problem auftreten kann, dass ich ausgelagerte Security-Teams habe, die sich speziell um das Thema Software-Security kümmern, und das meistens erst sehr spät im Entwicklungslifecycle machen. Auch hier ist eben die Frage, wie kann ich Security in die Softwareentwicklung integrieren? Das ist zum einen wieder eine Toolingfrage, ja, sowas wie Security Scanners in meine Pipeline einzubauen, aber eben auch die entsprechende Awareness im Entwicklungsteam zu schaffen, wo wir eher wieder bei Kultur und Mindset sind. so dass ich zum Beispiel solche Dinge wie Threat Modeling schon sehr früh im Entwicklungszyklus mache und mit dem Entwicklungsteam durchexerziere, statt dass sich darüber jetzt nur irgendwelche spezialisierten Security-Leute Gedanken machen und ich damit eine Separation zwischen den Themen Entwicklung und Security habe.",
+            "start": 3219097,
+            "end": 3383200,
+            "confidence": 0.8252263681592032,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Wie siehst denn du das ganz allgemein mit den Teams, weil so ein Team muss ja immer mehr eigentlich selbst machen und die ganze DevOps-Schiene, die noch mitspielt und man soll die Server selber betreuen, man soll am besten beim Produkt mitarbeiten, man soll noch Kontakt zum Kunden am besten haben, damit man das Produkt auch versteht und damit man das nahe alles entwickeln kann, jetzt kommt die ganze Security-Ecke noch und meine eigene Hardware soll ich mir auch noch aussuchen, inklusive meinem Tisch und irgendwie macht am Ende das Team alles. Siehst du da irgendwo ein Problem schlussendlich? Kann man das irgendwie auffangen, weil wie soll ein Team sich überall auskennen am Ende?",
+            "start": 3383653,
+            "end": 3419971,
+            "confidence": 0.8073508771929822,
+            "speaker": "C",
+            "channel": null
+        },
+        {
+            "text": "Ja, das ist eine super gute Frage und wir fassen dieses Problem oft unter dem Stichwort Cognitive Load zusammen, um jetzt nochmal ein weiteres Passwort hier einzustreuen. Das heißt, unterm Strich geht es darum, was muss ich als Entwicklerin alles im Kopf behalten und überblicken können, um meine Arbeit tun zu können. Und ich denke, das ist so ein ganz netter Übergang in dieses Thema Platforming oder Platform Engineering oder Engineering Platforms, was wir in den letzten Jahren sehen, was versucht, genau dieses Problem ein Stück weit zu lindern. Also, ich sage immer, wenn ich Ende-zu-Ende-Verantwortung in einem Softwareentwicklungsteam möchte, wenn ich diese vertikalen Schnitte haben möchte, die wir heutzutage als effizient für Softwareentwicklung betrachten, Dann ist die große Frage, wie kann ich trotz vertikaler Schnitte die kognitive Last, das was ein Entwickler, eine Entwicklerin stemmen muss, so reduzieren, dass es handelbar bleibt. Und wenn ich es gut mache, dann können zum Beispiel Developer-Plattforms dort Abhilfe schaffen, indem ich also bestimmte Querschnittsbelange aus meinen Software-Teams rausziehe, und eine Plattform pack. Das kann aber auch heillos nach hinten losgehen, wenn ich sozusagen die falschen Dinge rausziehe oder anfange, Sachen zu standardisieren, die eben nicht standardisiert werden dürfen. Und ich glaube, diese Balance zu finden, zu wissen, was erhöht die Effizienz von meinem Entwicklungsteam und was macht das Plattformteam zu einem Flaschenhals, das wäre wahrscheinlich einen eigenen Podcast wert.",
+            "start": 3420554,
+            "end": 3509978,
+            "confidence": 0.8176387665198237,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Und ich hatte nach zwei buzzwords gefragt schiff left und siehst du hast nach dem drittes eingestellt was ist das continuous integration theater kann man kann man das besuchen und ist das so wie die opa in wien.",
+            "start": 3510927,
+            "end": 3522325,
+            "confidence": 0.6552631578947367,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Ja, das ist ein Begriff, den hat mein lieber Kollege Michael Veith mir beigebracht. Ich weiß gar nicht, wie offiziell der ist, aber letztlich ist CI-Theater das, was ich vorher ein bisschen angesprochen habe. Wenn ich quasi nur ein CI-System habe und darauf irgendwelche Skripte ausführe und dann davon ausgehe, dass das Continuous Integration ist, dann ist es eben kein Continuous Integration, sondern es ist Continuous Integration Theater, wie wir es nennen, ja. Ich weiß nicht, ob euch der Begriff oder das Konzept vom Cargo-Kalt bekannt ist oder ob ihr das schon mal gesehen oder gehört habt. Letztlich ist die Geschichte die, dass wohl in bestimmten weit entfernten menschlichen Ansiedlungen höhere Kultur auftauchte, zum Beispiel so was wie Flugzeuge hatten und Flugplätze bauten und dann kamen mit den Flugzeugen immer die coolen Güter vom Himmel und die Menschen, die dann da zurückgelassen wurden, die fänden das natürlich toll und wollten das weiterhin haben. Also haben sie Strohflugzeuge gebaut und Landebahnen gebaut und da quasi ihre religiösen Rituale vollzogen, in der Hoffnung, dass die Flugzeuge wieder landen. Genauso wie vielleicht Entwicklungsteams, die einen Jenkinserver mit irgendwelchen Skripten betreiben, hoffen, dass sie dadurch kontinuierliche Integration bekommen. Aber dass eben viel mehr ist, als dass ich nur irgendeinen Task automatisiert ablaufen lasse. Ich weiß nicht, ob das hilft, dieses Konzept ein bisschen zu verdeutlichen, ob ich jetzt zu arg abgeschweift bin.",
+            "start": 3522889,
+            "end": 3611307,
+            "confidence": 0.7887105263157893,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Also, ich würd sagen, Storytelling kriegst du eine Eins plus. Also, das ist wirklich geil. Ich würd sagen, ich setz auch mal Jenkins auf und hoffe, dass ich sie einmache.",
+            "start": 3612367,
+            "end": 3621832,
+            "confidence": 0.7120000000000001,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Wahnsinn.",
+            "start": 3621852,
+            "end": 3623933,
+            "confidence": 0.491,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Hoffnungsorientiertes Entwickeln gibt's ja sehr oft in vielen Bereichen. Gibt's ja auch im Sport, oder? Wenn man sich das beste Equipment kauft, das beste Rad, dann hat man extrem gute Konditionen am Ende. Das hängt ja auch immer direkt miteinander zusammen.",
+            "start": 3623973,
+            "end": 3639200,
+            "confidence": 0.8105365853658538,
+            "speaker": "C",
+            "channel": null
+        },
+        {
+            "text": "Ja, wir sagen immer, wenn der Bauer nicht schwimmen kann, ist die Badehose schuld. Ich weiß nicht, woher das kommt. Andi, du darfst das ins Hochdeutsche übersetzen.",
+            "start": 3639612,
+            "end": 3647137,
+            "confidence": 0.5655555555555556,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Aber wenn wir jetzt schon bei dem Thema sind, dass Leute das ganze Thema ein bisschen falsch verstehen, was man ja auch ganz oft so hört, sind irgendwie so gängige Ausreden. Das funktionierte bei uns nicht, weil wir machen ein Medizinprodukt und da haben wir ganz andere Auflagen, darum können wir kein CI machen. Bei uns wird es dann ja am Ende in einem Satelliten deployed, in einem Auto. Also macht das alles keinen Sinn. Und das können wir ja gar nicht machen, weil wir haben ja ganz andere Prozesse und ganz andere Abläufe. Hast du einen Einblick in so andere Industrien, die jetzt keine klassische Web-Development-Sache machen, wo man halt klarerweise auch Continuous Deployment dann theoretisch auch ganz gut machen kann? Aber auch, was dann natürlich da mit reinspielt, ob es da Schwierigkeiten gibt, ob es da andere Ansätze gibt, ob man da dasselbe einsetzen kann oder nicht, oder ob man da irgendwas adaptieren muss, oder ob es wirklich so Industrien vielleicht auch gibt, wo CI gar keinen Sinn macht, deiner Meinung nach. Oder macht CI wirklich immer Sinn?",
+            "start": 3651811,
+            "end": 3713825,
+            "confidence": 0.8331055555555544,
+            "speaker": "C",
+            "channel": null
+        },
+        {
+            "text": "Also ich wüsste nicht. Ich habe noch nichts gesehen, wo ich jetzt sagen würde, da würde für mich CI keinen Sinn machen oder ich habe es verdrängt oder vergessen. Was diese regulierten Industrien angeht, ja, ich glaube, also wir haben vorher von gesprochen, dass CI so ein bisschen Common Practice wurde. Das heißt, wenn du heute als Beratung für CI, CD irgendwo reingeholt wirst, dann sind es diese Edge Cases. Dann sind es genau die Industrien, die Fälle, wo du die Konzepte vielleicht jetzt nicht ohne weiteres Eins-zu-Eins aus dem Buch übertragen kannst, sondern wo du Anpassung brauchst, wo du Kreativität brauchst, um CI, CD in diesen Industrien einsetzen zu können, sagen wir mal so. Und ich glaube, ein Kernproblem, was ich sehe, ist, wer treibt den Softwareprozess? Wird der Softwareprozess in erster Linie getrieben von Regulation und den Abteilungen in der Firma, die sozusagen auf Zertifizierung und Homologation achten, wie das zum Beispiel in der Automobilbranche heißt? Oder wird der Softwareprozess getrieben von Softwareleuten, die sich dann in einem zweiten Schritt Gedanken machen, wie machen wir das prozesskonform? Versteht ihr, was ich meine? Also wenn ich sozusagen, wenn mein Prozesstreiber die Regulatorien sind, die ich einhalten muss, Dann komme ich oft zu hochgradigen manuellen Prozessen, die sehr dokumentenlastig sind, wo ich manuelle Quality Gates habe, die letztlich sehr schwer sind zu automatisieren. Wenn aber mein Prozesstreiber ein effizienter Softwareentwicklungsprozess ist und ich dann im zweiten Schritt schaue, wie erfülle ich meine Regulatorischen, wie sagt man, Bedingungen oder, fällt mir das Wort nicht ein, Requirements.",
+            "start": 3714225,
+            "end": 3816023,
+            "confidence": 0.7796078431372547,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Voraussetzungen.",
+            "start": 3816063,
+            "end": 3816623,
+            "confidence": 0.656,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Ja, Voraussetzungen. dann komme ich oft zu einem ganz anderen Prozess. Und ich habe zum Beispiel, ohne dass ich die Prozesse im Detail kenne und dass ich da jetzt in die Legenden abschweifen möchte, ich habe zum Beispiel den Eindruck, dass eine Firma wie Tesla den Softwareprozess in den Vordergrund stellt und auf Softwareentwicklungseffizienz optimiert und die Regulatorien sozusagen als Add-on darauf betrachtet. wohingegen gerade in Deutschland in der Automobilindustrie oft das Gegenteil der Fall ist. Und das hat auch einen Grund. Also das ist nicht so, dass man das jetzt einfachst ändern könnte. Wir sahen uns da immer wieder großen Herausforderungen gegenüber gestellt, weil diese Prozesse so komplex sind. Ich sehe die immer wie so ein Kartenhaus. Die hat jemand ganz mühsam aufgebaut und im Moment stehen die und funktionieren die. Und jetzt kommen die Softwareleute und sagen, ihr müsst die auf Softwareeffizienz optimieren. Und dann ist das wie wenn ich in so einem Kartenhaus eine Karte rausziehe. Da muss ich höllisch aufpassen, dass nicht das ganze Haus zusammenfällt. Und ich bleibe halt auf der sicheren Seite, wenn ich das Haus stehen lasse und irgendwie drumherum arbeite.",
+            "start": 3817163,
+            "end": 3880304,
+            "confidence": 0.7986436170212764,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Und es wird Aber ist dieses Haus definiert durch wirklich die Regulatorien oder ist es dann ein hausgemachtes Haus? Ein hausgemachtes Haus ist doppelt gemoppelt, aber du weißt, was ich meine.",
+            "start": 3880344,
+            "end": 3891373,
+            "confidence": 0.7510967741935485,
+            "speaker": "C",
+            "channel": null
+        },
+        {
+            "text": "Ein hausgemachtes Problem.",
+            "start": 3891393,
+            "end": 3892473,
+            "confidence": 0.6786666666666666,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Genau, das ist quasi, wie soll ich das sagen? Das ist, glaube ich, der verzweifelte Versuch, bei Einhaltung aller Regulatorien irgendeinen Prozess zu finden, der wirklich funktioniert, wo zum Beispiel im Automotive am Ende wirklich noch ein Auto vom Band rollt, das die Software innehat, die da davor entwickelt wurde. Das heißt, es ist so eine Mischung, glaube ich, aus sehr komplexen Regularien mit gewachsenen Prozessen, die vielleicht zu einer Zeit definiert und gemacht wurden, als es viel Tooling noch nicht gab. Und natürlich auch immer mit dem Background des produzierenden Gewerbes und nicht der Softwareindustrie. Und ich glaube, diese Mischung macht diese Prozesse so unglaublich komplex und auch so schwer zu ändern. Und jetzt kommen wir vielleicht wieder zurück zu Continuous Integration. Ich glaube, eine Sache, die ich einleitend nicht gesagt habe, die da im Verständnis ganz wichtig ist, wir sagen oft auch, CI, CD macht das Releasen unserer Software zu einer Geschäftsentscheidung oder ermöglicht uns, dass das Releasen unserer Software eine Geschäftsentscheidung wird. Das heißt, ich bin nicht mehr von meinen Techies abhängig, die mir dann irgendwann sagen, ah, wir sind jetzt so weit, ich glaube, wir trauen uns zu releasen. sondern ich kann das sozusagen in die Hände der Verantwortungsträger in meiner Firma geben, dass sie entscheiden, wann sie ein Release raushauen wollen, in Produktion schicken wollen und wann nicht. Und das hilft uns natürlich auch in diesen regulierten Umgebungen, dass wir sagen können, unsere Unsere Software ist im Zustand, wir können ausliefern und jetzt könnt ihr euch sozusagen aus Geschäftsseite Gedanken machen, ob ihr diese Software rausgeben wollt oder nicht. Also meistens ist halt das Gegenteil der Fall, ja. Das Business drängt auf Release, Release, Release und die Techies sagen, tut uns leid, es ist einfach kaputt, es funktioniert nicht. Wir können nicht integrieren. Wir haben gedacht, alles ist grün, aber jetzt, wo wir die Systeme zusammengebracht haben, sehen wir, das performt nicht oder skaliert nicht oder Uns gehen Transaktionen verloren oder was auch immer. Und das Ziel von Continuous Integration, Continuous Delivery ist eben, das umzudrehen. Die Techies sind quasi immer in einem Zustand, wo sie sagen, Software funktioniert, ihr könnt ausrollen, entscheidet, wann ihr es machen wollt.",
+            "start": 3893154,
+            "end": 4023340,
+            "confidence": 0.7783471074380158,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Das heißt ja, dass man, was man sonst ja immer sagt, man empowert das Team bei DevOps und bei dem ganzen Mindset, dass das Team zum Beispiel deployen kann selbstständig. Ist das ja mal auch ein Empowerment von Business und Product, dass die entscheiden können, wann was released wird? Also auch in diese Richtung gibt es Empowerment in dem Fall.",
+            "start": 4024029,
+            "end": 4043635,
+            "confidence": 0.83485,
+            "speaker": "C",
+            "channel": null
+        },
+        {
+            "text": "Ich glaube, das Empowerment, das im Idealfall stattfindet, ist, dass das Management einen sicheren Überblick über den Fortschritt von Projekten hat. Also ich nenne das an manchen Stellen gerne der Unterschied zwischen Dev-Done und Done-Done. Also ein Entwickler sagt ja, ich bin fertig, läuft auf meiner Maschine. zu entwickler sagt ja ich bin fertig weil ich weiß das läuft in produktion das funktioniert in produktion und ich glaube wenn ich diesen übergang schaff dann wird es für projektmanagement zum beispiel auch wieder viel einfacher den überblick zu behalten wo ich denn tatsächlich stehe mit meinem projekt und ob ich wirklich 80 prozent fertig bin wenn die entwickler mir sagen sie sind 80 prozent fertig Oder ob 80% fertig nur heißt, 80% von dem, was ich haben will, läuft auf irgendeine Entwicklungsmaschine.",
+            "start": 4044235,
+            "end": 4089410,
+            "confidence": 0.7867175572519084,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Ich meine, je nach Umgebung kann Continuous Integration natürlich auch sehr komplex werden. Medizinsoftware kommt mir da zum Beispiel jetzt in den Sinn. Ich hoffe, dass die Testabdeckung eines Herzschrittmachers sehr, sehr gut ist zum Beispiel. Und was ich fasziniert ...",
+            "start": 4089450,
+            "end": 4103411,
+            "confidence": 0.7408048780487805,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Da ist meine Lieblingsgeschichte immer noch, wenn ich die kurz einwerfen darf, von einem Hardware-Medizinprodukt, die vor ... ist schon ein paar Jahre her, aber die gesagt haben, wir können kein Version Control einsetzen. Und auf irgendeinem File-Server Folder erzeugt haben, die jeweils mit dem Datum gedaggt waren von der Version, weil sie gesagt haben, wir sind ein Medizinprodukt, wir dürfen das nicht einsetzen. Was natürlich Bullshit war. Aber solche Sachen passieren dann natürlich auch in der Medizinwelt.",
+            "start": 4103421,
+            "end": 4130018,
+            "confidence": 0.7925897435897439,
+            "speaker": "C",
+            "channel": null
+        },
+        {
+            "text": "Aber das ist ein perfektes Beispiel zu dem, was ich vorher vielleicht etwas abstrakt geschildert habe mit den Prozessen, die zu einer Zeit entstanden sind, wo vielleicht datenbasierte Folder Stein der Dinge waren und das dann in einer Art und Weise in den Prozess verankert wurde, wie es einem Entwickler glauben machte, der Shift von Folder zu Versionskontrolle widerspricht meinem Prozess. Dabei war die Intention des Prozesses eine ganz andere. Nur die geht dann verloren. Es geht dann oft dieser Shift von Intention zur Ausführung. Der läuft Gefahr, dass vergessen wird, was wir eigentlich mit dem Prozess erreichen wollen.",
+            "start": 4130318,
+            "end": 4163345,
+            "confidence": 0.852030303030303,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Man muss ja auch sagen, ab und zu werden diese regulatorischen Voraussetzungen oder Anforderungen natürlich auch als Ausrede genutzt.",
+            "start": 4164346,
+            "end": 4173670,
+            "confidence": 0.7556315789473684,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Oft ... Oder falsch interpretiert als Unwissenheit kann ja genauso passieren, dass man einfach ... Es war halt so bisher und man traut sich das vielleicht gar nicht umzustellen. Und es kann dir auch niemand beantworten. Ganz oft ist das ja so schwammig, alles definiert. Und dann brauchst du irgendwelche Consultants, die dir dann auch nur sagen, ja, so 100-prozentig ist es nicht definiert. Es könnte funktionieren, man kann es so machen oder nicht. Es ist halt immer extrem schwierig dann.",
+            "start": 4173729,
+            "end": 4197037,
+            "confidence": 0.7487160493827161,
+            "speaker": "C",
+            "channel": null
+        },
+        {
+            "text": "Mir ist auf jeden Fall schon öfters in meiner Karriere untergekommen, dass jemand PCI DSS und die Zertifizierung dahinter, also PCI DSS ist für die Verarbeitung von Zahlungstransaktionen und Co., Kreditkartendaten und all so was, dass man so was, wenn man so was hat, wenn man solchen Zertifizierungen unterliegt, dass man kein kontinuierliches Deployment machen kann und Co. Ist natürlich für alle offen gesprochen Blödsinn. Natürlich kann man das. Denn diese Zertifizierung hat nicht explizit da drinstehen, ihr dürft kein Continuous Deployment machen, sondern natürlich muss man auf ein paar Sachen achten, aber es ist möglich. Und das finde ich immer schade, wenn ich irgendwo mit jemandem spreche, der sagt, das können wir nicht machen wegen Zertifizierung ABC oder halt irgendwelchen anderen Regulatoren.",
+            "start": 4197815,
+            "end": 4241503,
+            "confidence": 0.7837154471544713,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Darf ich nochmal auf deine Frage eingehen, Wolfgang, weil vielleicht habe ich es erst jetzt besser verstanden, wenn du von Empowerment sprichst. Ich habe vorher von dem Shift Left gesprochen und warum es wichtig ist, zum Beispiel Themen wie Qualität und Security im Team zu verankern. Ich würde vielleicht an der Stelle noch ein bisschen weitergehen. Wenn ein Softwareentwicklungsteam gewohnt ist, dass die Prozesse, nach denen sie arbeiten, von außen vorgegeben werden, Dann wird es vermutlich sehr viel brauchen, dass diese Leute daran rütteln und anfangen, das zu hinterfragen und zu optimieren. Wenn du das Team dahingegen empowerst, dass du sagst, das sind die Kriterien, die ihr erfüllen müsst, damit wir sozusagen regulatorisch konform bleiben. Überlegt euch, wie ihr das am besten hinkriegt. Dann ist es ein ganz anderes Empowerment von dem Team aus meiner Sicht und dann wird ein Team ganz anders mit diesen Fragen umgehen. und vielleicht auch ganz andere Lösungen finden, modernere Lösungen finden, wie wenn diese Prozesse von dem berühmten PMT-Department in meinem Konzern vorgegeben waren. Vielleicht hilft das nochmal.",
+            "start": 4243424,
+            "end": 4303354,
+            "confidence": 0.7959367816091953,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Also auch die Sicherheit dann dem Team geben, wenn ihr die und die Kriterien erfüllt, dann habt ihr, seid ihr sonst frei und wir haben dann die Sicherheit und alle agreeen darauf, dass das halt dann so funktioniert im Prozess.",
+            "start": 4303394,
+            "end": 4316322,
+            "confidence": 0.819375,
+            "speaker": "C",
+            "channel": null
+        },
+        {
+            "text": "Dass man wegkommt von der Vorgabe des Prozesses und mehr zu der Vorgabe der Kriterien zurückkehrt und sagt, das sind die Kriterien, die wir nach außen erfüllen müssen, sonst bekommt unser Auto keine Straßenzulassung, sonst bekommt unser medizinisches Gerät keine Zulassung von welcher Behörde auch immer. Aber nicht sagen, ihr müsst haarklein diese Schritte erfüllen, weil wir denken, dass ihr damit die Kriterien erfüllt. Das ist ein Unterschied in der Denke. Und ich glaube, das erlaubt auch den Leuten, die näher am tatsächlichen Doing sind, sich zu überlegen, was ist der effizienteste und beste Weg, die Kriterien zu erfüllen. Das ist jetzt alles sehr abstrakt. Entschuldigung.",
+            "start": 4317102,
+            "end": 4354421,
+            "confidence": 0.8158867924528297,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Wobei man da natürlich auch, was ich so gehört habe von Personen, die in der Branche auch arbeiten und mehr drin sind, dass da natürlich das Problem wieder von, ich glaube, du hast Cognitive Load genannt, dass da natürlich nochmal, so wie die Security-Ecke, auch nochmal die Regulatorien auf die Entwickler und Entwicklerinnen zukommen. Das heißt, ich muss nochmal mehr mitdenken. Kann natürlich schon ein Empowerment sein, aber ist natürlich auch so, dass ganz viele EntwicklerInnen einfach sagen, warum muss ich mich jetzt mit den ganzen Regulatorien da auch noch auseinandersetzen und verstehen jetzt, wie diese ganzen komplexen Zertifizierungen laufen. Also da sind ja auch, glaube ich, viele Leute einfach gar nicht bereit dafür, sich darauf einzulassen. Also das ist wahrscheinlich bei Entwicklerteams schon, kann schon auch noch ein Problem sein in der Branche zumindest.",
+            "start": 4354738,
+            "end": 4403661,
+            "confidence": 0.8161555555555557,
+            "speaker": "C",
+            "channel": null
+        },
+        {
+            "text": "Definitiv. Ich denke, das alles muss am Ende machbar bleiben. Vielleicht hilft es ja nochmal, ein Kollege hat mir das kürzlich gesagt und das war für mich sehr hilfreich für mein mentales Modell, zu unterscheiden, was ist kurzfristige Cognitive Load in einem Team und was ist langfristige Cognitive Load. Und kurzfristig wäre für mich zum Beispiel, du kriegst die Aufgabe, einen Prozess zu bauen, der bestimmte regulatorische Kriterien erfüllt, also zum Beispiel die Dokumentation von Veränderungen, ja. Muss ich das mit jedem Release, muss ich von Hand durch meine Commits durchgehen oder meine Tickets durchgehen und rauskamüsen, was habe ich da jetzt gemacht? Oder baue ich eine Automatisierung, wo ich mit einer gewissen Konvention sage, Veränderung wird folgendermaßen in meinen Commits getaggt, und ich kann am Schluss ein Skript drüber laufen lassen, das mir ein Release-Dokument erstellt. Ja, dann habe ich kurzfristig eine relativ hohe Load, weil ich mir Gedanken drüber machen muss, wie automatisiere ich den Prozess. Aber das ist dann letztlich wie eine Story in meinem Backlog, die ich abarbeite. Das mündet nicht in langfristige Cognitive Load, wo ich mich wieder und wieder mit der Erfüllung dieses regulatorischen Kriteriums beschäftigen muss.",
+            "start": 4404775,
+            "end": 4469522,
+            "confidence": 0.7916683937823839,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Also ich glaube ganz allgemein, dass das natürlich eine super Herangehensweise ist und so wie man halt auch meiner Meinung nach das Produkt verstehen muss, gehört es halt auch dazu, weil es halt Teil des Produktes ist, auch zu verstehen, was da dahinter steckt bezüglich Regulatorien und Zertifizierungen und was man so erreichen muss. Aber in der Realität und in der Praxis ist es halt auch so, dass da ganz viele sture Entwickler herumlaufen, die einfach sagen, ich möchte mich um meinen technischen Teil kümmern, and that's it. Und ich glaube, das predigen wir ja auch im Podcast und in ganz vielen Episoden, dass es eben wichtig ist, da auch mehr zu verstehen, was außerhalb der klassischen Technik so abläuft. Und nur dann kann man sinnvolles Produkt entwickeln und auch hervorbringen. Und ich glaube, da ist es halt dann eben nochmal komplexer in der Welt, wenn man in der Medizinentwicklung ist oder in der Autoentwicklung.",
+            "start": 4470370,
+            "end": 4520606,
+            "confidence": 0.8271419354838704,
+            "speaker": "C",
+            "channel": null
+        },
+        {
+            "text": "Definitiv.",
+            "start": 4520646,
+            "end": 4521827,
+            "confidence": 0.795,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Das bedeutet, der allgemeine Wunsch ist, nicht der sture Entwickler zu sein und nur auf seinen Code zu gucken. Ist das richtig?",
+            "start": 4521867,
+            "end": 4526573,
+            "confidence": 0.7826818181818183,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Ich glaube, ein Blick links und rechts über den Tellerrand schadet schon nicht. Wir sagen bei ThoughtWorks immer, dass wir erst mal das Geschäft verstehen müssen, um eine gute Lösung zu bauen. Ein großer Teil unserer Arbeit ist es immer, erst mal von den Leuten erklärt zu kriegen, was wollen sie denn da eigentlich machen, welches Problem wollen sie eigentlich lösen, was sind die geschäftswerte Geschäftsziele, die sie mit einem Softwareprodukt erreichen wollen.",
+            "start": 4527314,
+            "end": 4551733,
+            "confidence": 0.7887808219178086,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Michael, wow, wow, wow. Ich bin in diesen Podcast gegangen mit dem Gedanken, ich weiß doch, was CI ist, und gehe fast eine Stunde, Stunde, anderthalb später raus mit, ich denke, ich habe jetzt ein deutlich besseres Verständnis von CI. Besonders im Buzzword-Bingo mit CI-Theater. DevDunDunDun fand ich sehr schön. Und besonders auch das Empowerment mit Shift-Left, dass man eigentlich mit einer guten, funktionierenden CI-Pipeline vielleicht auch einfach dem Management sagen kann, entscheidet doch einfach, wann wir releasen. Und triffst du die Entscheidung, wann es das Beste für das Business ist. Und das hat mir zumindest eine neue Perspektive eröffnet. Wir haben natürlich ein paar Sachen noch außen vor gelassen, aber ich glaub, das Thema ist so komplex, dass wir das alles gar nicht in einer Stunde, Stundeeinhalb covern können. Hast du noch etwas, was du dir von unseren Hörerinnen und Hörern wünschen würdest oder was du denen mit auf den Weg geben möchtest?",
+            "start": 4553533,
+            "end": 4616277,
+            "confidence": 0.8250974025974024,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Ich bin eigentlich immer froh, wenn ich Feedback kriege, wie verständlich meine Aussagen waren, wo ich Leute vielleicht vor den Kopf gestoßen habe oder irgendwas gesagt habe, was Leute nicht verstehen oder wo ich konkreter werden kann. Also wenn es dort irgendwelches Feedback gibt, wäre ich sehr dankbar, egal in welcher Form. Und ich freue mich natürlich über Detailfragen oder Dinge, die offen geblieben sind und hoffe, ich kann die irgendwie in Form von Kommentaren oder wie auch immer beantworten. Würde mich sehr freuen.",
+            "start": 4616741,
+            "end": 4643297,
+            "confidence": 0.7630476190476193,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Ja, wir haben ja unseren Discord-Server, da kann ja jeder vorbeikommen und auch was einwerfen. Also wenn es da draußen noch irgendwelche Firmen gibt, die sagen, es macht Sinn, Folder mit Datum zu erzeugen, statt Version Control zu verwenden. Dann auch da immer super interessant. Vielleicht gibt es ja irgendwo einen Bereich, wo das Sinn macht oder andere Bereiche, was der Michael gesagt hat. Also kommt gerne vorbei. Links sind natürlich in den Shownotes auch von Michael, was du jetzt alles erwähnt hast, sammeln wir natürlich zusammen und knallen wir dann in die Shownotes. Vielen, vielen Dank auch von meiner Seite. Super viel gelernt. Für mich super interessant auch immer, wie viel das Mindset eigentlich ausmacht bei diesen ganzen Dingen. Und wenn es um moderne Entwicklung geht, wie wenig unter Anfangszeichen, wie wenig die technische Seite immer wichtig ist und wie viel eigentlich so Mindset-Geschichten ausschlaggebend sind und das Team auch weiterbringen können und wo man halt wirklich dann auch was verändern kann und den Prozess ändern muss und kann und aber auch dahinter stehen muss und nicht nur ein Tool einsetzen kann oder soll, das dann die Probleme löst. Ein Jenkins wird halt keine Probleme lösen.",
+            "start": 4644685,
+            "end": 4711623,
+            "confidence": 0.8233502538071071,
+            "speaker": "C",
+            "channel": null
+        },
+        {
+            "text": "Ich habe den Cargo-Kult sehr gut gefunden mit diesem Strohflugzeug. Die Systeme, die fand ich schön. Okay, das bedeutet eigentlich, ich muss mit meinem Jenke jetzt auch mal was tun. Die Installation reicht leider nicht. Michael, vielen lieben Dank. Grüße in den Süden und bis bald. Tschüss.",
+            "start": 4712380,
+            "end": 4729372,
+            "confidence": 0.7485531914893616,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Sehr gerne. Danke euch. Danke. Ciao.",
+            "start": 4729773,
+            "end": 4735197,
+            "confidence": 0.5873333333333334,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Und nicht vergessen, About You sucht noch Verstärkung für ihre Cloud-Teams. Details findest du in den Show Notes.",
+            "start": 4735217,
+            "end": 4740861,
+            "confidence": 0.6718888888888889,
+            "speaker": "C",
+            "channel": null
+        }
+    ],
+    "confidence": 0.794038095238096,
+    "audio_duration": 4741.0,
+    "webhook_status_code": null,
+    "webhook_auth": false,
+    "summary": null,
+    "auto_highlights_result": null,
+    "content_safety_labels": null,
+    "chapters": null,
+    "sentiment_analysis_results": null,
+    "entities": null
+}
