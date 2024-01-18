@@ -11,7 +11,6 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 // Current Meetup
 const nextMeetup = getNextMeetups(1)[0];
 const dateString = formatDate(nextMeetup.date, 'en-US');
-const timeString = formatTime(nextMeetup.date);
 
 ---
 
