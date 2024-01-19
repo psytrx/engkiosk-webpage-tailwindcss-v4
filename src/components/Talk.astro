@@ -15,6 +15,9 @@ export interface Props {
 const { avatar, name, title, description, github, twitter, linkedin, website, bio, slides } = Astro.props;
 
 const talkId = `talk-${name.toLowerCase()}-${title.toLowerCase()}`.replace(/[^a-z0-9-]/g, '-');
+// replace new lines by <br>
+console.log(description);
+const htmlDescription = description.replace(/\n/g, '<br>');
 
 ---
 
@@ -29,7 +32,7 @@ const talkId = `talk-${name.toLowerCase()}-${title.toLowerCase()}`.replace(/[^a-
 		<span class="inline-block mb-6 text-lg font-medium text-yellow-500">
 			{name}
 		</span>
-		<p class="mb-8 text-coolGray-500 font-medium description" set:html={description} />
+		<p class="mb-8 text-coolGray-500 font-medium description" set:html={htmlDescription} />
 		{bio && <p class="mb-8 text-coolGray-500 font-medium bio">{bio}</p>}
 		<div class="flex items-center justify-center">
 			{
