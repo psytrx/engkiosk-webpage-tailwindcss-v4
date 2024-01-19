@@ -2,7 +2,7 @@
 import { formatDateWithoutWeekday } from '../../scripts/date.js';
 import { getNextMeetups } from '../../scripts/meetups.js';
 
-let dates = getNextMeetups().slice(1).map((meetup) => meetup.date);
+let dates = getNextMeetups().map((meetup) => meetup.date);
 
 ---
 <section class="py-4 md:py-24 bg-coolGray-50" style="background-image: url('/images/elements/pattern-light-big.svg'); background-position: center;">
