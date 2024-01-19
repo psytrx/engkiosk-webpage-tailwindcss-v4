@@ -11,8 +11,17 @@ talks:
     title: 'Snow, Code, and Safety: A Deep Dive into Avalanche.report'
     description: 'Since 1960, the Avalanche Warning Service Tyrol has been a crucial element in ensuring the safety of both winter sports enthusiasts and Alpine residents. Starting from December 2018, a joint bulletin has been published for the Euregio Tyrol–South-Tyrol–Trentino in seven languages. The entire software stack supporting this service is open source (FOSS) and undergoes continuous development on GitLab. This talk provides an in-depth look into the software powering the daily avalanche bulletin, along with the standards (EAWS, CAAML) and processes that operate behind the scenes.'
   - avatar: 'generic-you.jpg'
-    name: 'Replacement Program'
-    title: 'Your Lightning Talks'
-    description: "Unfortunately, one of our scheduled speakers has fallen ill and won't be able to deliver the planned talk. However, we're turning this situation into an opportunity for some spontaneous and engaging lightning talks! We invite you to share any tech-related topic that you're passionate about or find interesting. Whether it's a new technology, your experience with a specific tool, an idea for an open-source project, or even seeking feedback on a potential side project, we want to hear from you. In case you want to give a lightning talk, please get in touch with us via email or on site at the meetup."
+    name: 'Richard Weinberger, Peter Kandolf, Anand, David Peer, Jacob Rief, Simon Legner'
+    title: 'Lightning Talks'
+    slides: '2401-richard-weinberger-procfs_gems.pdf'
+    description: "Hidden Gems in Linux’s /proc File System by Richard Weinberger (slides available below)
+
+    Keep the fun alive in your company chats by Peter Kandolf
+
+    Autoscaling in Kubernetes with Custom Metrics and KEDA by Anand
+
+    Avalanche Detection in Videos by David Peer
+
+    Playwright in Action by Jacob Rief, Devdocs by Simon Legner"
 eventId: '77tocfleahk4hcuepk7sqca5rm'
 ---
