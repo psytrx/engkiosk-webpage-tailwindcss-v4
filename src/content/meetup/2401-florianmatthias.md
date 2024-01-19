@@ -10,6 +10,9 @@ talks:
     name: 'Simon Legner'
     title: 'Snow, Code, and Safety: A Deep Dive into Avalanche.report'
     description: 'Since 1960, the Avalanche Warning Service Tyrol has been a crucial element in ensuring the safety of both winter sports enthusiasts and Alpine residents. Starting from December 2018, a joint bulletin has been published for the Euregio Tyrol–South-Tyrol–Trentino in seven languages. The entire software stack supporting this service is open source (FOSS) and undergoes continuous development on GitLab. This talk provides an in-depth look into the software powering the daily avalanche bulletin, along with the standards (EAWS, CAAML) and processes that operate behind the scenes.'
+    slides: '2401-simon-legner-avalanche-report.pdf'
+    github: 'simon04'
+    website: 'https://simon04.net/'
   - avatar: 'generic-you.jpg'
     name: 'Richard Weinberger, Peter Kandolf, Anand, David Peer, Jacob Rief, Simon Legner'
     title: 'Lightning Talks'
@@ -22,6 +25,8 @@ talks:
 
     Avalanche Detection in Videos by David Peer
 
-    Playwright in Action by Jacob Rief, Devdocs by Simon Legner"
+    Playwright in Action by Jacob Rief
+    
+    devdocs.io by Simon Legner"
 eventId: '77tocfleahk4hcuepk7sqca5rm'
 ---
