@@ -34,7 +34,7 @@ chapter:
   title: "Volle Verantwortung im Team f\xFCr die ganze Pipeline"
 - start: 01:00:51
   title: "Continuous Integration in Industrien au\xDFerhalb von Web- und Cloud-Development"
-deezer: ''
+deezer: https://www.deezer.com/episode/593697322
 description: "Continuous Integration: Ein muss f\xFCr jedes Software-Projekt Die kontinuierliche\
   \ Integration, wie z.B. das Herunterladen von Dependencies, das Kompilieren der\
   \ Applikation sowie das Ausf\xFChren von Unit- oder Integrationstests, ist ein \u201C\
