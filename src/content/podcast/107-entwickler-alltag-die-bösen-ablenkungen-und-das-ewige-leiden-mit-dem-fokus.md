@@ -1,5 +1,5 @@
 ---
-amazon_music: ''
+amazon_music: https://music.amazon.com/podcasts/c35a09fe-4116-4e04-8f68-77d61b112e46/episodes/20f88652-d258-4202-a3b2-af196e60819f/engineering-kiosk-107-entwickler-alltag-die-b%C3%B6sen-ablenkungen-und-das-ewige-leiden-mit-dem-fokus
 apple_podcasts: https://podcasts.apple.com/us/podcast/107-entwickler-alltag-die-b%C3%B6sen-ablenkungen-und-das/id1603082924?i=1000642588414&uo=4
 audio: https://audio1.redcircle.com/episodes/4db9491a-b84b-40d3-a72e-b59288ba11c5/stream.mp3
 chapter:
