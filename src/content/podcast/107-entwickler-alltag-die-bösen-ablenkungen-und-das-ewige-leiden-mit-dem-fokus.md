@@ -46,7 +46,10 @@ speaker:
   website: https://wolfgang.gassler.org/
   transcriptLetter: A
 spotify: https://open.spotify.com/episode/43VCIrj71wckc9ArnYT76D
-tags: []
+tags:
+- Team
+- Kommunikation
+- Produktivität
 title: "#107 Entwickler-Alltag: Die \"b\xF6sen\" Ablenkungen und das ewige Leiden\
   \ mit dem Fokus"
 youtube: https://www.youtube.com/watch?v=g9DLVervwNw
