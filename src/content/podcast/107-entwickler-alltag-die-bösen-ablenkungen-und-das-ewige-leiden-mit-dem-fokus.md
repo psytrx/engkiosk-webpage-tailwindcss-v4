@@ -41,8 +41,10 @@ rtlplus: ''
 speaker:
 - name: Andy Grunwald
   website: https://andygrunwald.com/
+  transcriptLetter: B
 - name: Wolfi Gassler
   website: https://wolfgang.gassler.org/
+  transcriptLetter: A
 spotify: https://open.spotify.com/episode/43VCIrj71wckc9ArnYT76D
 tags: []
 title: "#107 Entwickler-Alltag: Die \"b\xF6sen\" Ablenkungen und das ewige Leiden\
