@@ -17,7 +17,7 @@ chapter:
   title: "Meetings als Blockade f\xFCr Fokus"
 - start: 00:53:23
   title: "Feedback, dass du der Fokus-Zerst\xF6rer bist"
-deezer: ''
+deezer: https://www.deezer.com/episode/595739202
 description: "Fokus-Zeit f\xFCr Software-Engineers Software-Engineers und andere Knowledge-Worker\
   \ kennen es. Du arbeitest an etwas, hochkonzentriert, h\xE4ltst diverse Kontext\
   \ relevante Informationen in deinem Kopf und es kommt von links jemand und fragt\
@@ -40,16 +40,16 @@ pubDate: 2024-01-23 05:00:00+00:00
 rtlplus: ''
 speaker:
 - name: Andy Grunwald
-  website: https://andygrunwald.com/
   transcriptLetter: B
+  website: https://andygrunwald.com/
 - name: Wolfi Gassler
-  website: https://wolfgang.gassler.org/
   transcriptLetter: A
+  website: https://wolfgang.gassler.org/
 spotify: https://open.spotify.com/episode/43VCIrj71wckc9ArnYT76D
 tags:
 - Team
 - Kommunikation
-- Produktivität
+- "Produktivit\xE4t"
 title: "#107 Entwickler-Alltag: Die \"b\xF6sen\" Ablenkungen und das ewige Leiden\
   \ mit dem Fokus"
 youtube: https://www.youtube.com/watch?v=g9DLVervwNw
