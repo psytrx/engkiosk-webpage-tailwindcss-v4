@@ -74,7 +74,11 @@ speaker:
 - name: Wolfi Gassler
   website: https://wolfgang.gassler.org/
 spotify: https://open.spotify.com/episode/0hlLIxCU2RTEZRbxRbnkuJ
-tags: []
+tags:
+- Team
+- Kommunikation
+- Projektmanagement
+- Interview
 title: '#108 Agile Multi-Team Projekte: Die Kunst, hunderte Leute effektiv zu koordinieren
   mit Stephan Strack'
 youtube: https://www.youtube.com/watch?v=xSQconBhqgA
