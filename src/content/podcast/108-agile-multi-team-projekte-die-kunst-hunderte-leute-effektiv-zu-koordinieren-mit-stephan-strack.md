@@ -1,5 +1,5 @@
 ---
-amazon_music: ''
+amazon_music: https://music.amazon.com/podcasts/c35a09fe-4116-4e04-8f68-77d61b112e46/episodes/40530a4e-ac9e-46c2-9008-4cbbc7038d98/engineering-kiosk-108-agile-multi-team-projekte-die-kunst-hunderte-leute-effektiv-zu-koordinieren-mit-stephan-strack
 apple_podcasts: https://podcasts.apple.com/us/podcast/108-agile-multi-team-projekte-die-kunst-hunderte-leute/id1603082924?i=1000643471773&uo=4
 audio: https://audio1.redcircle.com/episodes/5efb56dd-d53a-4480-ac62-d2d3731742f1/stream.mp3
 chapter:
