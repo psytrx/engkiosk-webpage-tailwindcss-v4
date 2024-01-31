@@ -1,10 +1,10 @@
 ---
-date: 2024-02-22T18:30:00+01:00
+date: 2024-02-22T18:00:00+01:00
 location:
-  name: '???'
-  address: '???, 6020 Innsbruck'
-  url: ''
-  logo: ''
+  name: 'DeepOpinion & Intelligent and Interactive Systems@Uni Innsbruck'
+  address: 'EG, Seminarraum 1/2, Technikerstr 21a, 6020 Innsbruck'
+  url: 'https://deepopinion.ai'
+  logo: 'deepopinion-uibk.png'
 talks:
   - avatar: '2402-maximilian.jpg'
     name: 'Maximilian Schellhorn'
