@@ -45,7 +45,10 @@ speaker:
 - name: Wolfi Gassler
   website: https://wolfgang.gassler.org/
 spotify: https://open.spotify.com/episode/2jetmpKHx5KlSbaC8UtoWs
-tags: []
+tags:
+- Software Engineering
+- Software Qualit\u00e4t
+- Kommunikation
 title: '#109 Freeze! Warum dein Code manchmal eine Pause braucht'
 youtube: ''
 
