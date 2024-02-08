@@ -49,7 +49,7 @@ speaker:
 spotify: https://open.spotify.com/episode/2jetmpKHx5KlSbaC8UtoWs
 tags:
 - Software Engineering
-- Software Qualit\u00e4t
+- Software Qualität
 - Kommunikation
 title: '#109 Freeze! Warum dein Code manchmal eine Pause braucht'
 youtube: https://www.youtube.com/watch?v=aNs6xTsxTlE
