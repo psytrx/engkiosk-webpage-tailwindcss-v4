@@ -65,6 +65,7 @@ image: ./11-die-suche-nach-dem-it-traumjob.jpg
 length_second: 3531
 pubDate: 2022-03-22 12:45:00+00:00
 rtlplus: ''
+six_user_needs: []
 speaker:
 - name: Andy Grunwald
   transcriptLetter: B

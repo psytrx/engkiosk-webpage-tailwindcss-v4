@@ -61,6 +61,7 @@ image: "./41-sql-injections-ein-untersch\xE4tztes-risiko.jpg"
 length_second: 4117
 pubDate: 2022-10-18 04:00:00+00:00
 rtlplus: ''
+six_user_needs: []
 speaker:
 - name: Andy Grunwald
   transcriptLetter: A

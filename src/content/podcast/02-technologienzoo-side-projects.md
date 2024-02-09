@@ -80,6 +80,7 @@ image: ./02-technologienzoo-side-projects.jpg
 length_second: 2690
 pubDate: 2022-01-10 15:00:00+00:00
 rtlplus: ''
+six_user_needs: []
 speaker:
 - name: Andy Grunwald
   transcriptLetter: B

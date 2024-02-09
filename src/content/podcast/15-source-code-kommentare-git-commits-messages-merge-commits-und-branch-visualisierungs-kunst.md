@@ -75,6 +75,7 @@ image: ./15-source-code-kommentare-git-commits-messages-merge-commits-und-branch
 length_second: 3904
 pubDate: 2022-04-19 04:30:00+00:00
 rtlplus: ''
+six_user_needs: []
 speaker:
 - name: Andy Grunwald
   transcriptLetter: A

@@ -91,6 +91,7 @@ image: ./92-technologie-trifft-deutsche-ausbildungskultur-die-moderne-it-berufsa
 length_second: 4747
 pubDate: 2023-10-10 04:00:00+00:00
 rtlplus: ''
+six_user_needs: []
 speaker:
 - name: Andy Grunwald
   transcriptLetter: B

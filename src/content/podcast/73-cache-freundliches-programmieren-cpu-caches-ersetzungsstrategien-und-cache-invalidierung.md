@@ -47,6 +47,7 @@ image: ./73-cache-freundliches-programmieren-cpu-caches-ersetzungsstrategien-und
 length_second: 3583
 pubDate: 2023-05-30 04:00:00+00:00
 rtlplus: ''
+six_user_needs: []
 speaker:
 - name: Andy Grunwald
   transcriptLetter: A

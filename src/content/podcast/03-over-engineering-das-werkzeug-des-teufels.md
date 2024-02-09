@@ -66,6 +66,7 @@ image: ./03-over-engineering-das-werkzeug-des-teufels.jpg
 length_second: 3079
 pubDate: 2022-01-18 10:50:00+00:00
 rtlplus: ''
+six_user_needs: []
 speaker:
 - name: Andy Grunwald
   transcriptLetter: B

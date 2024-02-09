@@ -73,6 +73,7 @@ image: "./91-konsistent-verf\xFCgbar-ausfalltolerant-oder-performant-das-cap-und
 length_second: 3461
 pubDate: 2023-10-03 04:00:00+00:00
 rtlplus: ''
+six_user_needs: []
 speaker:
 - name: Andy Grunwald
   transcriptLetter: B

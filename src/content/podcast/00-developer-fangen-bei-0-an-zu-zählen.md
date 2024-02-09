@@ -63,6 +63,7 @@ image: "./00-developer-fangen-bei-0-an-zu-z\xE4hlen.jpg"
 length_second: 1751
 pubDate: 2022-02-08 05:00:00+00:00
 rtlplus: ''
+six_user_needs: []
 speaker:
 - name: Andy Grunwald
   transcriptLetter: A

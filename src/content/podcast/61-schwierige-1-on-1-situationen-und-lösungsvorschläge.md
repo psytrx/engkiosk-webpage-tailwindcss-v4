@@ -64,6 +64,7 @@ image: "./61-schwierige-1-on-1-situationen-und-l\xF6sungsvorschl\xE4ge.jpg"
 length_second: 3331
 pubDate: 2023-03-07 05:00:00+00:00
 rtlplus: ''
+six_user_needs: []
 speaker:
 - name: Andy Grunwald
   transcriptLetter: B

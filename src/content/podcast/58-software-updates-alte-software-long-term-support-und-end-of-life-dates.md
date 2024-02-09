@@ -56,6 +56,7 @@ image: ./58-software-updates-alte-software-long-term-support-und-end-of-life-dat
 length_second: 3399
 pubDate: 2023-02-14 05:00:00+00:00
 rtlplus: ''
+six_user_needs: []
 speaker:
 - name: Andy Grunwald
   transcriptLetter: A

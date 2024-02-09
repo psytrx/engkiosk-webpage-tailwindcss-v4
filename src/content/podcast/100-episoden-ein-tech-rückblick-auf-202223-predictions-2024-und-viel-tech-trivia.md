@@ -73,6 +73,7 @@ image: "./100-episoden-ein-tech-r\xFCckblick-auf-202223-predictions-2024-und-vie
 length_second: 5242
 pubDate: 2023-12-05 05:00:00+00:00
 rtlplus: ''
+six_user_needs: []
 speaker:
 - name: Andy Grunwald
   transcriptLetter: A

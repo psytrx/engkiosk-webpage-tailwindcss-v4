@@ -56,6 +56,7 @@ image: ./95-effiziente-knowledge-sharing-formate-wissen-teilen-und-begeistern.jp
 length_second: 3909
 pubDate: 2023-10-31 05:00:00+00:00
 rtlplus: ''
+six_user_needs: []
 speaker:
 - name: Andy Grunwald
   transcriptLetter: A

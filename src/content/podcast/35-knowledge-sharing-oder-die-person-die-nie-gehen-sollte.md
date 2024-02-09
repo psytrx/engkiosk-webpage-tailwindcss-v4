@@ -57,6 +57,7 @@ image: ./35-knowledge-sharing-oder-die-person-die-nie-gehen-sollte.jpg
 length_second: 3784
 pubDate: 2022-09-06 04:00:00+00:00
 rtlplus: ''
+six_user_needs: []
 speaker:
 - name: Andy Grunwald
   transcriptLetter: B

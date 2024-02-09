@@ -45,6 +45,7 @@ image: "./96-selbstgemacht-vs-fertigprodukt-ein-blick-auf-das-not-invented-here-
 length_second: 4163
 pubDate: 2023-11-07 05:00:00+00:00
 rtlplus: ''
+six_user_needs: []
 speaker:
 - name: Andy Grunwald
   transcriptLetter: B

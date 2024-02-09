@@ -53,6 +53,7 @@ image: ./93-barbara-liskov-das-l-in-solid-liskovsches-substitutionsprinzip-abstr
 length_second: 3161
 pubDate: 2023-10-17 04:00:00+00:00
 rtlplus: ''
+six_user_needs: []
 speaker:
 - name: Andy Grunwald
   transcriptLetter: A

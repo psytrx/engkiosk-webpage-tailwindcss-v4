@@ -42,6 +42,7 @@ image: ./103-plattform-engineering-und-interne-developer-plattformen-mit-puja-ab
 length_second: 4542
 pubDate: 2023-12-26 05:00:00+00:00
 rtlplus: ''
+six_user_needs: []
 speaker:
 - name: Andy Grunwald
   transcriptLetter: A

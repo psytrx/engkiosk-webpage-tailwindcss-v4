@@ -53,6 +53,7 @@ image: "./46-welches-problem-l\xF6st-docker.jpg"
 length_second: 3305
 pubDate: 2022-11-22 05:00:00+00:00
 rtlplus: ''
+six_user_needs: []
 speaker:
 - name: Andy Grunwald
   transcriptLetter: A

@@ -61,6 +61,7 @@ image: ./40-wie-wird-man-und-frau-zum-senior-dev.jpg
 length_second: 2983
 pubDate: 2022-10-11 04:00:00+00:00
 rtlplus: ''
+six_user_needs: []
 speaker:
 - name: Andy Grunwald
   transcriptLetter: B

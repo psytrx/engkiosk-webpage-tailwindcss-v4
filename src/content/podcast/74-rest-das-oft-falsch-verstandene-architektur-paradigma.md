@@ -53,6 +53,7 @@ image: ./74-rest-das-oft-falsch-verstandene-architektur-paradigma.jpg
 length_second: 3775
 pubDate: 2023-06-06 04:00:00+00:00
 rtlplus: ''
+six_user_needs: []
 speaker:
 - name: Andy Grunwald
   transcriptLetter: A

@@ -37,6 +37,7 @@ image: ./-1-wrap-up-2022-und-1-geburtstag-learnings-statistiken-und-was-2023-gep
 length_second: 1847
 pubDate: 2023-01-05 05:00:00+00:00
 rtlplus: ''
+six_user_needs: []
 speaker:
 - name: Andy Grunwald
   transcriptLetter: B

@@ -48,6 +48,7 @@ image: ./10-das-karriere-booster-meeting-11s.jpg
 length_second: 2756
 pubDate: 2022-03-15 05:30:00+00:00
 rtlplus: ''
+six_user_needs: []
 speaker:
 - name: Andy Grunwald
   transcriptLetter: B

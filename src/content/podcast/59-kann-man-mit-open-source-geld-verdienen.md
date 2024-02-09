@@ -56,6 +56,7 @@ image: ./59-kann-man-mit-open-source-geld-verdienen.jpg
 length_second: 3251
 pubDate: 2023-02-21 05:00:00+00:00
 rtlplus: ''
+six_user_needs: []
 speaker:
 - name: Andy Grunwald
   transcriptLetter: A

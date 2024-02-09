@@ -82,6 +82,7 @@ image: "./81-copilot-ai-im-dev-test-produktivit\xE4ts-boost-oder-nur-hype.jpg"
 length_second: 4052
 pubDate: 2023-07-25 04:00:00+00:00
 rtlplus: ''
+six_user_needs: []
 speaker:
 - name: Andy Grunwald
   transcriptLetter: B

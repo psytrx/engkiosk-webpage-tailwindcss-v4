@@ -53,6 +53,7 @@ image: ./20-off-boarding-und-on-boarding-wie-verlasse-ich-eine-firma-richtig.jpg
 length_second: 4402
 pubDate: 2022-05-24 04:30:00+00:00
 rtlplus: ''
+six_user_needs: []
 speaker:
 - name: Andy Grunwald
   transcriptLetter: B

@@ -75,6 +75,7 @@ image: ./04-lohnt-der-einstieg-in-open-source.jpg
 length_second: 3044
 pubDate: 2022-01-25 05:00:00+00:00
 rtlplus: ''
+six_user_needs: []
 speaker:
 - name: Andy Grunwald
   transcriptLetter: B

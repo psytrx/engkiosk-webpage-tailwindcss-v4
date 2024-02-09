@@ -56,6 +56,7 @@ image: ./44-der-weg-zum-hochperformanten-team.jpg
 length_second: 3380
 pubDate: 2022-11-08 05:00:00+00:00
 rtlplus: ''
+six_user_needs: []
 speaker:
 - name: Andy Grunwald
   transcriptLetter: A

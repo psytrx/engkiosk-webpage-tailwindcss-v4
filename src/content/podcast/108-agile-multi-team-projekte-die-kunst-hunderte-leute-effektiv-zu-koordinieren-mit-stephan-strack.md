@@ -68,6 +68,7 @@ image: ./108-agile-multi-team-projekte-die-kunst-hunderte-leute-effektiv-zu-koor
 length_second: 4505
 pubDate: 2024-01-30 05:00:00+00:00
 rtlplus: ''
+six_user_needs: []
 speaker:
 - name: Andy Grunwald
   transcriptLetter: B

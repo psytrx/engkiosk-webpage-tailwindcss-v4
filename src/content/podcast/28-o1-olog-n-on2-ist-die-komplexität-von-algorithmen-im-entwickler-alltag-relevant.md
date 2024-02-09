@@ -68,6 +68,7 @@ image: "./28-o1-olog-n-on2-ist-die-komplexit\xE4t-von-algorithmen-im-entwickler-
 length_second: 3333
 pubDate: 2022-07-19 04:00:00+00:00
 rtlplus: ''
+six_user_needs: []
 speaker:
 - name: Andy Grunwald
   transcriptLetter: A

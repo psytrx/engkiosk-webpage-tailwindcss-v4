@@ -51,6 +51,7 @@ image: ./72-meetings-jeder-hat-sie-keiner-will-sie.jpg
 length_second: 3866
 pubDate: 2023-05-23 04:00:00+00:00
 rtlplus: ''
+six_user_needs: []
 speaker:
 - name: Andy Grunwald
   transcriptLetter: A

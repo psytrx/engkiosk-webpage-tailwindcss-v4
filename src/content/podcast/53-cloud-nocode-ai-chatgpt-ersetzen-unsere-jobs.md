@@ -36,6 +36,7 @@ image: ./53-cloud-nocode-ai-chatgpt-ersetzen-unsere-jobs.jpg
 length_second: 3959
 pubDate: 2023-01-10 05:00:00+00:00
 rtlplus: ''
+six_user_needs: []
 speaker:
 - name: Andy Grunwald
   transcriptLetter: B

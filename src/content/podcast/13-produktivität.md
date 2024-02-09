@@ -54,6 +54,7 @@ image: "./13-produktivit\xE4t.jpg"
 length_second: 3529
 pubDate: 2022-04-05 04:25:00+00:00
 rtlplus: ''
+six_user_needs: []
 speaker:
 - name: Andy Grunwald
   transcriptLetter: B

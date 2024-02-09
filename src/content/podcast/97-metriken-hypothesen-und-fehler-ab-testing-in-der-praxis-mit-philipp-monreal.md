@@ -53,6 +53,7 @@ image: ./97-metriken-hypothesen-und-fehler-ab-testing-in-der-praxis-mit-philipp-
 length_second: 4126
 pubDate: 2023-11-14 05:00:00+00:00
 rtlplus: ''
+six_user_needs: []
 speaker:
 - name: Andy Grunwald
   transcriptLetter: A

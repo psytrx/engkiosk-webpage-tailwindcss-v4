@@ -66,6 +66,7 @@ image: "./18-ziele-und-performance-metriken-f\xFCr-teams-und-mich-selbst.jpg"
 length_second: 4248
 pubDate: 2022-05-10 04:30:00+00:00
 rtlplus: ''
+six_user_needs: []
 speaker:
 - name: Andy Grunwald
   transcriptLetter: A

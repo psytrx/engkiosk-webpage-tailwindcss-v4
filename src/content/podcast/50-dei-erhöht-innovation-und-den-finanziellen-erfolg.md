@@ -60,6 +60,7 @@ image: "./50-dei-erh\xF6ht-innovation-und-den-finanziellen-erfolg.jpg"
 length_second: 3450
 pubDate: 2022-12-20 05:00:00+00:00
 rtlplus: ''
+six_user_needs: []
 speaker:
 - name: Andy Grunwald
   transcriptLetter: A

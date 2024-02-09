@@ -59,6 +59,7 @@ image: ./24-infrastructure-as-code-oder-old-man-yells-at-cloud.jpg
 length_second: 3712
 pubDate: 2022-06-21 04:00:00+00:00
 rtlplus: ''
+six_user_needs: []
 speaker:
 - name: Andy Grunwald
   transcriptLetter: B

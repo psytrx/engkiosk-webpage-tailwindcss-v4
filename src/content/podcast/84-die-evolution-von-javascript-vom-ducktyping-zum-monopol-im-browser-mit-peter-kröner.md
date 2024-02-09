@@ -66,6 +66,7 @@ image: "./84-die-evolution-von-javascript-vom-ducktyping-zum-monopol-im-browser-
 length_second: 5219
 pubDate: 2023-08-15 04:00:00+00:00
 rtlplus: ''
+six_user_needs: []
 speaker:
 - name: Andy Grunwald
   transcriptLetter: B

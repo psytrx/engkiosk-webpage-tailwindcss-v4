@@ -35,6 +35,7 @@ image: "./39-gemischte-t\xFCte-software-engineer-github-opensource-git-und-homeo
 length_second: 2866
 pubDate: 2022-10-04 04:00:00+00:00
 rtlplus: ''
+six_user_needs: []
 speaker:
 - name: Andy Grunwald
   transcriptLetter: A

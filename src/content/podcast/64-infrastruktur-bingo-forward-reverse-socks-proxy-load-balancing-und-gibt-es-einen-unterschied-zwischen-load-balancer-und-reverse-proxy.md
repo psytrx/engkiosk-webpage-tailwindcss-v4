@@ -57,6 +57,7 @@ image: ./64-infrastruktur-bingo-forward-reverse-socks-proxy-load-balancing-und-g
 length_second: 3417
 pubDate: 2023-03-28 03:00:00+00:00
 rtlplus: ''
+six_user_needs: []
 speaker:
 - name: Andy Grunwald
   transcriptLetter: A

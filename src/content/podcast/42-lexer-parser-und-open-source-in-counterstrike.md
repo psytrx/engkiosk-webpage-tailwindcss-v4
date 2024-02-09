@@ -55,6 +55,7 @@ image: ./42-lexer-parser-und-open-source-in-counterstrike.jpg
 length_second: 3218
 pubDate: 2022-10-25 04:00:00+00:00
 rtlplus: ''
+six_user_needs: []
 speaker:
 - name: Andy Grunwald
   transcriptLetter: B

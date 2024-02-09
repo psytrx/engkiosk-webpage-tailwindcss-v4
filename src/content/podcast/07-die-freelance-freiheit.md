@@ -68,6 +68,7 @@ image: ./07-die-freelance-freiheit.jpg
 length_second: 3841
 pubDate: 2022-02-22 05:00:00+00:00
 rtlplus: ''
+six_user_needs: []
 speaker:
 - name: Andy Grunwald
   transcriptLetter: B

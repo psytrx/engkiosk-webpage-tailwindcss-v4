@@ -64,6 +64,7 @@ image: ./82-hinter-den-kulissen-die-informatik-doktorarbeit-und-ist-der-dr-titel
 length_second: 4189
 pubDate: 2023-08-01 04:00:00+00:00
 rtlplus: ''
+six_user_needs: []
 speaker:
 - name: Andy Grunwald
   transcriptLetter: A

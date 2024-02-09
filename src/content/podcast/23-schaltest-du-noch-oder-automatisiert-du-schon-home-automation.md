@@ -62,6 +62,7 @@ image: ./23-schaltest-du-noch-oder-automatisiert-du-schon-home-automation.jpg
 length_second: 3812
 pubDate: 2022-06-14 04:00:00+00:00
 rtlplus: ''
+six_user_needs: []
 speaker:
 - name: Andy Grunwald
   transcriptLetter: A

@@ -67,6 +67,7 @@ image: "./22-nosql-acid-base-ende-einer-\xE4ra-teil-2.jpg"
 length_second: 3636
 pubDate: 2022-06-07 04:00:00+00:00
 rtlplus: ''
+six_user_needs: []
 speaker:
 - name: Andy Grunwald
   transcriptLetter: A

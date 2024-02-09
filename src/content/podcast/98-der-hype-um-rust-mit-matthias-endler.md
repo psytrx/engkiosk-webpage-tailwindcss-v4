@@ -60,6 +60,7 @@ image: ./98-der-hype-um-rust-mit-matthias-endler.jpg
 length_second: 4425
 pubDate: 2023-11-21 05:00:00+00:00
 rtlplus: ''
+six_user_needs: []
 speaker:
 - name: Andy Grunwald
   transcriptLetter: A

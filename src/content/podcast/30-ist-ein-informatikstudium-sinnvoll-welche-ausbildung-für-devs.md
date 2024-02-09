@@ -67,6 +67,7 @@ image: "./30-ist-ein-informatikstudium-sinnvoll-welche-ausbildung-f\xFCr-devs.jp
 length_second: 3936
 pubDate: 2022-08-02 04:00:00+00:00
 rtlplus: ''
+six_user_needs: []
 speaker:
 - name: Andy Grunwald
   transcriptLetter: A

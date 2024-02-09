@@ -51,6 +51,7 @@ image: ./21-static-site-generators-die-webseite.jpg
 length_second: 3214
 pubDate: 2022-05-31 04:35:00+00:00
 rtlplus: ''
+six_user_needs: []
 speaker:
 - name: Andy Grunwald
   transcriptLetter: A

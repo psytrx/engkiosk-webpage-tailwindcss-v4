@@ -69,6 +69,7 @@ image: ./90-inner-source-open-source-best-practices-zur-besseren-zusammenarbeit-
 length_second: 4200
 pubDate: 2023-09-26 04:00:00+00:00
 rtlplus: ''
+six_user_needs: []
 speaker:
 - name: Andy Grunwald
   transcriptLetter: B

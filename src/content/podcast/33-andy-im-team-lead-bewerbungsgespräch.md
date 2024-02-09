@@ -53,6 +53,7 @@ image: "./33-andy-im-team-lead-bewerbungsgespr\xE4ch.jpg"
 length_second: 3654
 pubDate: 2022-08-23 04:00:00+00:00
 rtlplus: ''
+six_user_needs: []
 speaker:
 - name: Andy Grunwald
   transcriptLetter: B

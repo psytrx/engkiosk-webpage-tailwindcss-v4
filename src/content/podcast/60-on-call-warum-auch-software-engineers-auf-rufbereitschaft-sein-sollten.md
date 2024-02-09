@@ -64,6 +64,7 @@ image: ./60-on-call-warum-auch-software-engineers-auf-rufbereitschaft-sein-sollt
 length_second: 3571
 pubDate: 2023-02-28 05:00:00+00:00
 rtlplus: ''
+six_user_needs: []
 speaker:
 - name: Andy Grunwald
   transcriptLetter: A

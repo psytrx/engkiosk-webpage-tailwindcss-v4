@@ -61,6 +61,7 @@ image: ./75-evaluierung-deiner-job-performance-team-feedback-und-lno-framework.j
 length_second: 3699
 pubDate: 2023-06-13 04:00:00+00:00
 rtlplus: ''
+six_user_needs: []
 speaker:
 - name: Andy Grunwald
   transcriptLetter: A

@@ -56,6 +56,7 @@ image: ./65-clean-code-macht-software-langsam.jpg
 length_second: 3357
 pubDate: 2023-04-04 04:00:00+00:00
 rtlplus: ''
+six_user_needs: []
 speaker:
 - name: Andy Grunwald
   transcriptLetter: B

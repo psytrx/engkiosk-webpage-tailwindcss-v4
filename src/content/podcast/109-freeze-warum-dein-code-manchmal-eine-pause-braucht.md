@@ -39,6 +39,7 @@ image: ./109-freeze-warum-dein-code-manchmal-eine-pause-braucht.jpg
 length_second: 3228
 pubDate: 2024-02-06 05:00:00+00:00
 rtlplus: ''
+six_user_needs: []
 speaker:
 - name: Andy Grunwald
   transcriptLetter: A
@@ -49,7 +50,7 @@ speaker:
 spotify: https://open.spotify.com/episode/2jetmpKHx5KlSbaC8UtoWs
 tags:
 - Software Engineering
-- Software Qualität
+- "Software Qualit\xE4t"
 - Kommunikation
 title: '#109 Freeze! Warum dein Code manchmal eine Pause braucht'
 youtube: https://www.youtube.com/watch?v=aNs6xTsxTlE

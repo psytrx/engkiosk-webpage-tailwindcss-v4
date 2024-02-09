@@ -70,6 +70,7 @@ image: ./45-datengetriebene-entscheidungen-und-der-perfekte-dashboard-stack.jpg
 length_second: 3068
 pubDate: 2022-11-15 05:00:00+00:00
 rtlplus: ''
+six_user_needs: []
 speaker:
 - name: Andy Grunwald
   transcriptLetter: A

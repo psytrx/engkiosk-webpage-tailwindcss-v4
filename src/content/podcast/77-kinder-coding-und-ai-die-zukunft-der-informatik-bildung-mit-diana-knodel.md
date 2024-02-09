@@ -87,6 +87,7 @@ image: ./77-kinder-coding-und-ai-die-zukunft-der-informatik-bildung-mit-diana-kn
 length_second: 3678
 pubDate: 2023-06-27 04:00:00+00:00
 rtlplus: ''
+six_user_needs: []
 speaker:
 - name: Andy Grunwald
   transcriptLetter: C

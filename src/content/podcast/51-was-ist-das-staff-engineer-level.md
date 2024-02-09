@@ -62,6 +62,7 @@ image: ./51-was-ist-das-staff-engineer-level.jpg
 length_second: 3101
 pubDate: 2022-12-27 05:00:00+00:00
 rtlplus: ''
+six_user_needs: []
 speaker:
 - name: Andy Grunwald
   transcriptLetter: B

@@ -68,6 +68,7 @@ image: ./47-wer-visionen-hat-soll-zum-arzt.jpg
 length_second: 2633
 pubDate: 2022-11-29 04:00:00+00:00
 rtlplus: ''
+six_user_needs: []
 speaker:
 - name: Andy Grunwald
   transcriptLetter: B

@@ -38,6 +38,7 @@ image: "./107-entwickler-alltag-die-b\xF6sen-ablenkungen-und-das-ewige-leiden-mi
 length_second: 3603
 pubDate: 2024-01-23 05:00:00+00:00
 rtlplus: ''
+six_user_needs: []
 speaker:
 - name: Andy Grunwald
   transcriptLetter: B

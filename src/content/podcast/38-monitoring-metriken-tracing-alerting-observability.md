@@ -53,6 +53,7 @@ image: ./38-monitoring-metriken-tracing-alerting-observability.jpg
 length_second: 3350
 pubDate: 2022-09-27 04:00:00+00:00
 rtlplus: ''
+six_user_needs: []
 speaker:
 - name: Andy Grunwald
   transcriptLetter: B

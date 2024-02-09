@@ -42,6 +42,7 @@ image: ./70-alan-turing-der-vater-der-heutigen-informatik-turing-complete-turing
 length_second: 3419
 pubDate: 2023-05-09 04:00:00+00:00
 rtlplus: ''
+six_user_needs: []
 speaker:
 - name: Andy Grunwald
   transcriptLetter: B

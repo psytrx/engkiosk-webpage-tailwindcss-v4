@@ -56,6 +56,7 @@ image: "./57-servant-leadership-f\xFChrungsstil-der-neuen-generation.jpg"
 length_second: 3462
 pubDate: 2023-02-07 05:00:00+00:00
 rtlplus: ''
+six_user_needs: []
 speaker:
 - name: Andy Grunwald
   transcriptLetter: A

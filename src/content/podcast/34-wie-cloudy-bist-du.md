@@ -55,6 +55,7 @@ image: ./34-wie-cloudy-bist-du.jpg
 length_second: 2959
 pubDate: 2022-08-30 04:00:00+00:00
 rtlplus: ''
+six_user_needs: []
 speaker:
 - name: Andy Grunwald
   transcriptLetter: B

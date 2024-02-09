@@ -50,6 +50,7 @@ image: ./56-applikations-skalierung-wann-wieso-was-kostet-es-stateless-und-state
 length_second: 3026
 pubDate: 2023-01-31 05:00:00+00:00
 rtlplus: ''
+six_user_needs: []
 speaker:
 - name: Andy Grunwald
   transcriptLetter: B

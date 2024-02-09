@@ -65,6 +65,7 @@ image: ./26-my-english-is-not-the-yellow-from-the-egg-arbeiten-in-internationale
 length_second: 3970
 pubDate: 2022-07-05 04:00:00+00:00
 rtlplus: ''
+six_user_needs: []
 speaker:
 - name: Andy Grunwald
   transcriptLetter: B

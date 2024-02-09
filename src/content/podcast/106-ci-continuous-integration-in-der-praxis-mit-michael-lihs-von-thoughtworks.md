@@ -62,6 +62,7 @@ image: ./106-ci-continuous-integration-in-der-praxis-mit-michael-lihs-von-though
 length_second: 4741
 pubDate: 2024-01-16 05:00:00+00:00
 rtlplus: ''
+six_user_needs: []
 speaker:
 - name: Andy Grunwald
   transcriptLetter: A

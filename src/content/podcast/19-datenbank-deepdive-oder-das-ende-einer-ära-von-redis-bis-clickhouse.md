@@ -79,6 +79,7 @@ image: "./19-datenbank-deepdive-oder-das-ende-einer-\xE4ra-von-redis-bis-clickho
 length_second: 3842
 pubDate: 2022-05-17 04:30:00+00:00
 rtlplus: ''
+six_user_needs: []
 speaker:
 - name: Andy Grunwald
   transcriptLetter: A

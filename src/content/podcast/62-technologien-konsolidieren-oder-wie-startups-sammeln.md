@@ -55,6 +55,7 @@ image: ./62-technologien-konsolidieren-oder-wie-startups-sammeln.jpg
 length_second: 4100
 pubDate: 2023-03-14 05:00:00+00:00
 rtlplus: ''
+six_user_needs: []
 speaker:
 - name: Andy Grunwald
   transcriptLetter: B

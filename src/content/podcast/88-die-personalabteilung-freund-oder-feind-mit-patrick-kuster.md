@@ -68,6 +68,7 @@ image: ./88-die-personalabteilung-freund-oder-feind-mit-patrick-kuster.jpg
 length_second: 4600
 pubDate: 2023-09-12 04:00:00+00:00
 rtlplus: ''
+six_user_needs: []
 speaker:
 - name: Andy Grunwald
   transcriptLetter: A

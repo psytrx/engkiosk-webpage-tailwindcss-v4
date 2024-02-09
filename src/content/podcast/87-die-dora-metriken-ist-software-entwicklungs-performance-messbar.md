@@ -58,6 +58,7 @@ image: ./87-die-dora-metriken-ist-software-entwicklungs-performance-messbar.jpg
 length_second: 3282
 pubDate: 2023-09-05 04:00:00+00:00
 rtlplus: ''
+six_user_needs: []
 speaker:
 - name: Andy Grunwald
   transcriptLetter: A

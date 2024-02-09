@@ -57,6 +57,7 @@ image: ./14-async-und-await-asynchrones-arbeiten-im-alltag.jpg
 length_second: 3389
 pubDate: 2022-04-12 04:30:00+00:00
 rtlplus: ''
+six_user_needs: []
 speaker:
 - name: Andy Grunwald
   transcriptLetter: B

@@ -58,6 +58,7 @@ image: ./80-junior-devs-steckt-das-wahre-potential-in-unerfahrenen-talenten.jpg
 length_second: 4077
 pubDate: 2023-07-18 07:07:16+00:00
 rtlplus: ''
+six_user_needs: []
 speaker:
 - name: Andy Grunwald
   transcriptLetter: A

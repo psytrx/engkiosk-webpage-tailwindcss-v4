@@ -96,6 +96,7 @@ image: "./94-die-realit\xE4t-des-freelancings-zwischen-selbstbestimmung-und-unsi
 length_second: 5247
 pubDate: 2023-10-24 04:00:00+00:00
 rtlplus: ''
+six_user_needs: []
 speaker:
 - name: Andy Grunwald
   transcriptLetter: A

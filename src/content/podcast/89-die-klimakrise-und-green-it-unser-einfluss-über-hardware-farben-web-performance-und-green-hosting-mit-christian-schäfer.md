@@ -63,6 +63,7 @@ image: "./89-die-klimakrise-und-green-it-unser-einfluss-\xFCber-hardware-farben-
 length_second: 4563
 pubDate: 2023-09-19 04:00:00+00:00
 rtlplus: ''
+six_user_needs: []
 speaker:
 - name: Andy Grunwald
   transcriptLetter: A

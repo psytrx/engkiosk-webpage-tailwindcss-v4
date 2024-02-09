@@ -69,6 +69,7 @@ image: "./54-key-value-store-redis-einsatzm\xF6glichkeiten-fallstricke-datenstru
 length_second: 3727
 pubDate: 2023-01-17 05:00:00+00:00
 rtlplus: ''
+six_user_needs: []
 speaker:
 - name: Andy Grunwald
   transcriptLetter: A

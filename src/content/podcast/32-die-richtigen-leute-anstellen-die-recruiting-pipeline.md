@@ -52,6 +52,7 @@ image: ./32-die-richtigen-leute-anstellen-die-recruiting-pipeline.jpg
 length_second: 3868
 pubDate: 2022-08-16 04:00:00+00:00
 rtlplus: ''
+six_user_needs: []
 speaker:
 - name: Andy Grunwald
   transcriptLetter: B

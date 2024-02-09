@@ -49,6 +49,7 @@ image: "./66-stressfreie-produktivit\xE4t-in-der-hektischen-welt-mit-getting-thi
 length_second: 3660
 pubDate: 2023-04-11 04:00:00+00:00
 rtlplus: ''
+six_user_needs: []
 speaker:
 - name: Andy Grunwald
   transcriptLetter: B

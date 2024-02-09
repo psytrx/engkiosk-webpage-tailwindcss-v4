@@ -51,6 +51,7 @@ image: "./36-sechs-stellige-it-geh\xE4lter-wie-was-wo-fair.jpg"
 length_second: 3255
 pubDate: 2022-09-13 04:00:00+00:00
 rtlplus: ''
+six_user_needs: []
 speaker:
 - name: Andy Grunwald
   transcriptLetter: A

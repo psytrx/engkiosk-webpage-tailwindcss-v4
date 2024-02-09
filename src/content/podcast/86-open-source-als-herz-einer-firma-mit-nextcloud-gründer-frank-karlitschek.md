@@ -70,6 +70,7 @@ image: "./86-open-source-als-herz-einer-firma-mit-nextcloud-gr\xFCnder-frank-kar
 length_second: 3934
 pubDate: 2023-08-29 04:00:00+00:00
 rtlplus: ''
+six_user_needs: []
 speaker:
 - name: Andy Grunwald
   transcriptLetter: B

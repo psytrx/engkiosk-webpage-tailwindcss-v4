@@ -48,6 +48,7 @@ image: ./71-tim-berners-lee-was-ist-das-world-wide-web-und-was-ist-seine-zukunft
 length_second: 3710
 pubDate: 2023-05-16 04:00:00+00:00
 rtlplus: ''
+six_user_needs: []
 speaker:
 - name: Andy Grunwald
   transcriptLetter: B

@@ -47,6 +47,7 @@ image: ./55-weiterbildung-zertifizierung-newsletter-konferenzen-wie-warum-und-we
 length_second: 3621
 pubDate: 2023-01-24 05:00:00+00:00
 rtlplus: ''
+six_user_needs: []
 speaker:
 - name: Andy Grunwald
   transcriptLetter: B

@@ -55,6 +55,7 @@ image: ./05-team-lead-der-einzige-ausweg.jpg
 length_second: 2412
 pubDate: 2022-02-01 10:05:00+00:00
 rtlplus: ''
+six_user_needs: []
 speaker:
 - name: Andy Grunwald
   transcriptLetter: A

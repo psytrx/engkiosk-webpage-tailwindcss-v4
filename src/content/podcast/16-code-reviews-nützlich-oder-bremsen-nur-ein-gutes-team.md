@@ -78,6 +78,7 @@ image: "./16-code-reviews-n\xFCtzlich-oder-bremsen-nur-ein-gutes-team.jpg"
 length_second: 3543
 pubDate: 2022-04-26 04:30:00+00:00
 rtlplus: ''
+six_user_needs: []
 speaker:
 - name: Andy Grunwald
   transcriptLetter: A

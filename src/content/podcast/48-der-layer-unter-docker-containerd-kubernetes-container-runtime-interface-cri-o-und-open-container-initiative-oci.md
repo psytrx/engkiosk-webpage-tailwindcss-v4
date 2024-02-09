@@ -57,6 +57,7 @@ image: ./48-der-layer-unter-docker-containerd-kubernetes-container-runtime-inter
 length_second: 2264
 pubDate: 2022-12-06 09:21:47+00:00
 rtlplus: ''
+six_user_needs: []
 speaker:
 - name: Andy Grunwald
   transcriptLetter: A

@@ -55,6 +55,7 @@ image: "./01-side-projects-fluch-oder-segen-f\xFCr-die-karriere.jpg"
 length_second: 2782
 pubDate: 2022-01-03 12:00:00+00:00
 rtlplus: ''
+six_user_needs: []
 speaker:
 - name: Andy Grunwald
   transcriptLetter: A

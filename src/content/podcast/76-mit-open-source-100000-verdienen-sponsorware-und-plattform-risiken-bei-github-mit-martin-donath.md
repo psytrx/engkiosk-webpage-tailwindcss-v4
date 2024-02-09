@@ -63,6 +63,7 @@ image: ./76-mit-open-source-100000-verdienen-sponsorware-und-plattform-risiken-b
 length_second: 4694
 pubDate: 2023-06-20 04:00:00+00:00
 rtlplus: ''
+six_user_needs: []
 speaker:
 - name: Andy Grunwald
   transcriptLetter: C

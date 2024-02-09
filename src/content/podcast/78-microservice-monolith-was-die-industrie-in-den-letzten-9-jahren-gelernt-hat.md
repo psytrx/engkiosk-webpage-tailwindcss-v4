@@ -63,6 +63,7 @@ image: ./78-microservice-monolith-was-die-industrie-in-den-letzten-9-jahren-gele
 length_second: 3685
 pubDate: 2023-07-04 04:00:00+00:00
 rtlplus: ''
+six_user_needs: []
 speaker:
 - name: Andy Grunwald
   transcriptLetter: B

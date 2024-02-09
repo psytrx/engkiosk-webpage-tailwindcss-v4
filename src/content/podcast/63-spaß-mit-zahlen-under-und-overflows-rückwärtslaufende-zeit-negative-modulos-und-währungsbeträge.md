@@ -57,6 +57,7 @@ image: "./63-spa\xDF-mit-zahlen-under-und-overflows-r\xFCckw\xE4rtslaufende-zeit
 length_second: 3667
 pubDate: 2023-03-21 04:00:00+00:00
 rtlplus: ''
+six_user_needs: []
 speaker:
 - name: Andy Grunwald
   transcriptLetter: B

@@ -46,6 +46,7 @@ image: "./105-cloud-ausfallsicherheit-die-realit\xE4t-von-regionen-und-availabil
 length_second: 4037
 pubDate: 2024-01-09 05:00:00+00:00
 rtlplus: ''
+six_user_needs: []
 speaker:
 - name: Andy Grunwald
   transcriptLetter: B

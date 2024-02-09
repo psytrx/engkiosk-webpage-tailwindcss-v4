@@ -60,6 +60,7 @@ image: ./69-mysql-vs-mariadb.jpg
 length_second: 4259
 pubDate: 2023-05-02 04:00:00+00:00
 rtlplus: ''
+six_user_needs: []
 speaker:
 - name: Andy Grunwald
   transcriptLetter: A

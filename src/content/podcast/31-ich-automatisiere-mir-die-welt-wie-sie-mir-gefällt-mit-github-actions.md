@@ -59,6 +59,7 @@ image: "./31-ich-automatisiere-mir-die-welt-wie-sie-mir-gef\xE4llt-mit-github-ac
 length_second: 3675
 pubDate: 2022-08-09 04:00:00+00:00
 rtlplus: ''
+six_user_needs: []
 speaker:
 - name: Andy Grunwald
   transcriptLetter: A

@@ -64,6 +64,7 @@ image: "./27-sicherheit-in-der-dependency-h\xF6lle.jpg"
 length_second: 3378
 pubDate: 2022-07-12 04:00:00+00:00
 rtlplus: ''
+six_user_needs: []
 speaker:
 - name: Andy Grunwald
   transcriptLetter: A

@@ -62,6 +62,7 @@ image: ./08-vergiss-doch-datenbanken.jpg
 length_second: 3167
 pubDate: 2022-03-01 11:30:00+00:00
 rtlplus: ''
+six_user_needs: []
 speaker:
 - name: Andy Grunwald
   transcriptLetter: A

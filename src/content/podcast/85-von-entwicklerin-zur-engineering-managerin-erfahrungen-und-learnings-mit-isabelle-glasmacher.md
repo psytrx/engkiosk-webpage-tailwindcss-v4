@@ -61,6 +61,7 @@ image: ./85-von-entwicklerin-zur-engineering-managerin-erfahrungen-und-learnings
 length_second: 4052
 pubDate: 2023-08-22 04:00:00+00:00
 rtlplus: ''
+six_user_needs: []
 speaker:
 - name: Andy Grunwald
   transcriptLetter: C

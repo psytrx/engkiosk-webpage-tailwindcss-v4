@@ -47,6 +47,7 @@ image: "./06-hype-oder-hope-job-titel-und-bef\xF6rderungen.jpg"
 length_second: 3133
 pubDate: 2022-02-15 05:00:00+00:00
 rtlplus: ''
+six_user_needs: []
 speaker:
 - name: Andy Grunwald
   transcriptLetter: B

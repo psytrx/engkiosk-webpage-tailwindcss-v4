@@ -61,6 +61,7 @@ image: ./25-tech-entlassungswellen-job-interview-skills.jpg
 length_second: 4376
 pubDate: 2022-06-28 04:00:00+00:00
 rtlplus: ''
+six_user_needs: []
 speaker:
 - name: Andy Grunwald
   transcriptLetter: A
