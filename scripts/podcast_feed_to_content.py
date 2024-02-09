@@ -360,6 +360,8 @@ def sync_podcast_episodes(rss_feed, path_md_files, path_img_files, no_api_calls=
             'rtlplus': '',
             'youtube': get_episode_link_from_youtube(youtube_playlist_items, title),
             'tags': [],
+            # Based on https://www.linkedin.com/pulse/bbcs-secret-growth-revolutionary-six-user-needs-ghada-hashish-acca/
+            'six_user_needs': [],
             'length_second': length_second,
             'speaker': DEFAULT_SPEAKER,
         }
@@ -387,6 +389,7 @@ def sync_podcast_episodes(rss_feed, path_md_files, path_img_files, no_api_calls=
                     'rtlplus',
                     'youtube',
                     'tags',
+                    'six_user_needs',
                     'length_second',
                     'speaker',
                 ]
