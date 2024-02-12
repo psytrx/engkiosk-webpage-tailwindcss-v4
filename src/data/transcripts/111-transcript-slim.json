@@ -1,0 +1,1674 @@
+{
+    "language_code": "de",
+    "audio_url": "https://cloud.inlupus.at/s/AFMeCZd2X24EoPg/download/ep111_techstack_podcast.mp3",
+    "punctuate": true,
+    "format_text": true,
+    "dual_channel": false,
+    "webhook_url": null,
+    "webhook_auth_header_name": null,
+    "webhook_auth_header_value": null,
+    "audio_start_from": null,
+    "audio_end_at": null,
+    "word_boost": [],
+    "boost_param": null,
+    "filter_profanity": false,
+    "redact_pii": false,
+    "redact_pii_audio": false,
+    "redact_pii_policies": null,
+    "redact_pii_sub": null,
+    "speaker_labels": true,
+    "speakers_expected": 2,
+    "content_safety": false,
+    "content_safety_confidence": null,
+    "iab_categories": false,
+    "custom_spelling": null,
+    "disfluencies": false,
+    "sentiment_analysis": false,
+    "auto_chapters": false,
+    "entity_detection": false,
+    "summarization": false,
+    "summary_model": null,
+    "summary_type": null,
+    "auto_highlights": false,
+    "language_detection": false,
+    "speech_threshold": null,
+    "id": "074c04d1-9fad-43a8-8988-243235e70c51",
+    "status": "completed",
+    "error": null,
+    "utterances": [
+        {
+            "text": "Side Projects werden oft aus Experimentierfreudigkeit gestartet. Man probiert einfach etwas Neues aus, will etwas Neues lernen, abseits vom täglichen Job. Bei uns war das nicht anders und wir haben den Engineering Kiosk Podcast gestartet. Und irgendwie scheinen Side Projects super interessant zu sein, vielleicht interessanter als der eigentliche Job. Denn in letzter Zeit haben wir immer öfter die Frage bekommen, was unser Tech Stack vom Podcast ist. Und darum führen wir euch heute in dieser Episode in den Maschinenraum von unserem Audio-Format ein und zeigen euch, was alles notwendig ist, um dieses Hörerlebnis für euch zu erzeugen. Von den Mikrofonen, über die technischen Pipelines, unseren Workflows, Automatisierungen, Software, die wir verwenden, unsere Strategie, interessante Gäste zu finden und natürlich auch über Fehler und unsere Betriebenes Oberengineering. Also die dreckige Wahrheit. Und los geht's!",
+            "start": 3972,
+            "end": 65473,
+            "confidence": 0.8424029850746265,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Jedes Jahr Anfang Februar fahren Wolfgang und ich nach Brüssel zur FOSDEM, einer sehr sehr großen Open Source Konferenz.",
+            "start": 69695,
+            "end": 76857,
+            "confidence": 0.8207894736842105,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Was heißt FOSDEM?",
+            "start": 76897,
+            "end": 77898,
+            "confidence": 0.8300000000000001,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "FOSDEM steht für Free and Open Source Develop Europe Meeting.",
+            "start": 77938,
+            "end": 82259,
+            "confidence": 0.6862999999999999,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Das hätte ich mir nicht erwartet, dass du das weißt. Ich war dahin seit 2016 und ich habe keine Ahnung, was das FOSDEM eigentlich heißt. Bravo, Andi.",
+            "start": 82299,
+            "end": 90062,
+            "confidence": 0.7063333333333335,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "FOSDEM kann eigentlich als die größte Open Source Konferenz der Welt bezeichnet werden.",
+            "start": 90122,
+            "end": 93923,
+            "confidence": 0.8346153846153844,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Zumindest in Europa. Lass uns mal klein machen.",
+            "start": 94263,
+            "end": 96564,
+            "confidence": 0.47275,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Ich kenne keine größere Open-Source-Konferenz, die gratis ist, weltweit.",
+            "start": 97056,
+            "end": 100819,
+            "confidence": 0.7589999999999999,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Ich habe mal von einem Brasilianer gehört, es gibt sowas in Brasilien, so mit 5.000, 6.000 Leuten. Also es könnte, es wird knapp.",
+            "start": 101100,
+            "end": 108165,
+            "confidence": 0.6829565217391304,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Auf jeden Fall fahren Wolfgang und ich und ein paar andere Freunde immer dahin, denn nach einem Jahr Open-Source-Arbeit denken wir, wir wüssten, was in der Open-Source-Welt abgeht und dann fährt man dahin, da wird man erstmal ordentlich geerdet, denn man hat keine Ahnung, was in der Open-Source abgeht, beziehungsweise wie groß das Open-Source-Welt eigentlich ist.",
+            "start": 108205,
+            "end": 122397,
+            "confidence": 0.677857142857143,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Moment, da brauchst du die FOSDEM dazu, dass du weißt, dass du nicht überall eine Ahnung hast.",
+            "start": 122417,
+            "end": 126160,
+            "confidence": 0.5390000000000001,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Ich habe von sehr viel keine Ahnung, aber da treffe ich auch Areale, von denen ich noch niemals wusste, dass diese existieren.",
+            "start": 126600,
+            "end": 132525,
+            "confidence": 0.7816363636363636,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "So wie Railways, was die deutsche Bahn macht, um ihre Züge zu optimieren.",
+            "start": 132565,
+            "end": 136348,
+            "confidence": 0.8639230769230768,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Ganz genau.",
+            "start": 136368,
+            "end": 136848,
+            "confidence": 0.763,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Und die machen wirklich was, um die Züge zu optimieren. Man glaubt es kaum. Fun Fact, ich bin zweieinhalb Stunden in einem Zug gestanden, wie ich zu Foster gefahren bin und hatte eine Gesamtverspätung von über fünf Stunden. Bin trotzdem passionierter Zugfahrer, möchte ich dazu sagen.",
+            "start": 136888,
+            "end": 153922,
+            "confidence": 0.7827391304347827,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Auf jeden Fall nutzen wir auch jedes Jahr beziehungsweise dieses Jahr 2024 das zweite Mal die Chance, einige Community-Mitglieder aus dem Engineering-Kiosk-Universum auf der 4Cent zu treffen. Und dieses Jahr haben wir unser zweites Community-Treffen organisiert. Und bei ein paar Burgern und ein paar Bier habe ich die Frage gestellt bekommen, Andi, wie sieht eigentlich der Tech-Stack vom Podcast aus? Und da habe ich denen mit sehr viel Passion wirklich erzählt, glaube ich, weil ich bin natürlich schon irgendwie ein bisschen begeistert. Aber, nachdem ich dann fertig war und auf dem Weg nach Hause war, kam mir die, lass uns doch mal ne Podcast Episode dazu machen und da hab ich ein bisschen drüber nachgedacht und dann kam ich auf die Idee, eigentlich ist das ja auch so ein bisschen back to the roots, denn unsere Episode 1 und 2 ging worüber, Wolfgang?",
+            "start": 154122,
+            "end": 198929,
+            "confidence": 0.7822937062937059,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Lass mich überlegen. Auf jeden Fall kann man nicht mehr erinnern. War das Episode 1 oder 2 mit Side Projects?",
+            "start": 199049,
+            "end": 205674,
+            "confidence": 0.5843499999999999,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Episode 1 und 2 ging über Side Projects und deren Tech Stack. Und da wir natürlich jetzt zwei Jahre weiter sind und auch in Episode 104 wieder etwas dazugelernt haben, nämlich sogenannte Storytelling, dachten wir uns, wir erzählen euch in dieser Episode einfach mal, wie sieht eigentlich der Tech Stack vom Engineering Kiosk aus.",
+            "start": 205734,
+            "end": 226592,
+            "confidence": 0.7876296296296295,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Und wir machen natürlich noch mehr, wir erzählen auch so ein bisschen alles, was rundherum passiert, was man da so mitdenken muss von Marketing, was wir für Automation gemacht haben, was wir vielleicht auch falsch gemacht haben, wo wir zu früh automatisiert haben, was wir für Fehler gemacht haben, wo wir Geld in den Sand gesetzt hat. Wo wir uns professionalisiert haben und was wir alles so rundherum erlebt haben. Also es wird so ein kompletter Abriss von eigentlich unserem Hauptzeitprojekt aktuell, würde ich mal sagen.",
+            "start": 227312,
+            "end": 257514,
+            "confidence": 0.8371627906976744,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Aber auch zum Beispiel, welche Hardware nutzen wir und dass man nicht immer ein Materialspieler sein muss.",
+            "start": 257534,
+            "end": 263277,
+            "confidence": 0.8447647058823529,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Da bin ich gespannt. Das aus deinem Munde.",
+            "start": 263297,
+            "end": 265338,
+            "confidence": 0.612375,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Wolfgang hat das Wort schon genannt, Side Project und der Engineering Kiosk Podcast, offengesprochen, er ist nicht nur ein Podcast, es ist inzwischen eine Dachmarke mit einem Meetup in Innsbruck, mit einem Software Engineering Meetup, was mich inzwischen sehr freut, aber es ist so, ich würde sagen, das größte Side Project beziehungsweise das Side Project mit dem höchsten, das Side Project mit der höchsten Frequenz, oder? Kann man das auch sagen?",
+            "start": 265784,
+            "end": 288447,
+            "confidence": 0.7027183098591545,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Du meinst jetzt mit der Zeit, die man investiert aktuell? Ja, definitiv.",
+            "start": 288913,
+            "end": 292796,
+            "confidence": 0.7209166666666667,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Das anstrengendste Side-Project würde ich sagen.",
+            "start": 292956,
+            "end": 295357,
+            "confidence": 0.5815,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Auf jeden Fall.",
+            "start": 295417,
+            "end": 296238,
+            "confidence": 0.8926666666666666,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Und Wolfgang, Testfrage. Womit beginnt jedes Side-Project?",
+            "start": 296298,
+            "end": 299800,
+            "confidence": 0.6704285714285714,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Bei mir immer mit einer Domain.",
+            "start": 299840,
+            "end": 301701,
+            "confidence": 0.6326666666666666,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "So sieht es aus. Und natürlich haben wir auch die Domain als erstes gekauft. Engineeringcurious.dev. Dieses Jahr kam wieder die Abrechnung. Stolze 17 Euro kostet uns die im Jahr.",
+            "start": 301721,
+            "end": 312508,
+            "confidence": 0.7726896551724137,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Wobei, ich bin mir nicht sicher. Ich glaube, wir haben gesagt, bevor wir nicht die erste Episode aufgenommen haben, kaufen wir die Domain nicht, oder? Die kam relativ spät. Wir müssen nochmal nachschauen, aber ich glaube, die kam relativ spät. Wir hatten da sogar eine Regel. Wir kaufen nicht die Domain, bevor wir nicht begonnen haben wirklich damit.",
+            "start": 313197,
+            "end": 328812,
+            "confidence": 0.7774655172413791,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Ja, es kann gut sein, dass wir aus vorherigen Zeitprojekts gelernt haben, denn oft ist das so, kauft man die Domain, macht man es halt nicht Ende. Aber Wolfgang, du bist der Ältere von uns. Erzähl doch mal bitte vom Krieg. Erzähl doch mal bitte die Anfänge vom Engineering Kiosk.",
+            "start": 329255,
+            "end": 341687,
+            "confidence": 0.73914,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Ja, das ist super schön, weil da kann ich jetzt meine Sicht auf die Dinge erzählen. Und ich bin mir ganz sicher, du wolltest damals die Domain kaufen sofort und dir war der Name wichtig, aber ich kann mich erinnern, wir haben dann gemeinsam, ganz wichtig, gemeinsam ein Konzept auf die Beine gestellt, wo wir aligned haben, was wir wirklich wollen. Und dann hatten wir, glaube ich, die erste Episode aufgenommen. Wir erzählen, glaube ich, in Episode 0 und Minus 1, verlinken wir gerne auch noch mehr dazu zum echten Start, darum werde ich da gar nicht zu viel verlieren. Aber wir haben auf jeden Fall offiziell 2022 die erste Episode gestartet. Und super interessant, wie die meisten HörerInnen, die uns länger schon verfolgen, wissen, wir haben eine Astro-Webseite und Andy ist ja super Astro-Fan. Und jetzt in der Vorbereitung hat er zu mir gesagt, wann haben wir eigentlich Astro eingeführt? Und ich habe gesagt, wir hatten vier Monate bis April keine Webseite. Und was hast du gesagt?",
+            "start": 341707,
+            "end": 390390,
+            "confidence": 0.7796071428571432,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Nie im Leben.",
+            "start": 390430,
+            "end": 390831,
+            "confidence": 0.6733333333333333,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Und er hat natürlich dann ewig wieder auf seinem Gitlock herumspielen müssen, bis er mir geglaubt hat, obwohl ich heute Nachmittag schon nachgeschaut habe, dass wir wirklich bis April keine Webseite hatten. Wir hatten eine Domain, wir hatten einen Podcast, aber wir hatten keine Webseite.",
+            "start": 391371,
+            "end": 405801,
+            "confidence": 0.8326444444444445,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Dabei müssen wir sagen, Wir hosten den Podcast bei einem externen Dienstleister. Also nur mal ganz kurzer Abriss, wie funktioniert Podcasting? Man hat ein MP3-File, das wird irgendwo ins Internet geschmissen auf irgendeine Festplatte und aus diesen MP3-Files wird ein RSS-Feed generiert und Podcasting im Allgemeinen ist eigentlich ein RSS-Feed mit ein paar Attributen und irgendwo steht dann eine MP3-Datei drin. Und das zieht sich Spotify rein, das zieht sich Apple rein und das zieht sich auch euer Antennapod oder euer lokaler Client rein. Also das ist eigentlich Podcast in a Nutshell. Und unser Hoster, unser Podcast-Hoster bietet auch so eine Art Mini-Webseite für jede Episode an.",
+            "start": 405841,
+            "end": 442661,
+            "confidence": 0.7810280373831775,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "So eine Landingpage quasi, wo dann Player und so weiter oben ist.",
+            "start": 442701,
+            "end": 446048,
+            "confidence": 0.7937500000000001,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Und da haben wir dann die ersten vier Monate die Episoden drauf redirected.",
+            "start": 446600,
+            "end": 451501,
+            "confidence": 0.7734615384615384,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Aber wichtig, wir hatten eben schon das Konzept, wir werden diese Domain haben und damit wir die Domain verwenden können und die Links in Social Media zum Beispiel verwenden können und wir hatten ja die Absicht, wenn das größer wird, dann machen wir eine Webseite, haben wir diese Domain schon verwendet, haben da nur Redirects draufgepackt, dass wir eben engineeringkiosk slash ep4 für Episode 4 schon irgendwo verwenden können, verlinken können, aber wir ownen diesen Link und können ihn am Anfang umleiten zu Red Circle, unserem Hoster, und später haben wir dann eben umgeleitet auf unsere Webseite. Also das ist sicher eine sinnvolle Verwendung, würde ich mal sagen, einer Domain, ohne dass man schon eine komplette Webseite aufbaut, sondern wirklich lean die Links owned und dann später aber eben auf die jeweiligen Seiten redirecten kann.",
+            "start": 451541,
+            "end": 500748,
+            "confidence": 0.8313407407407406,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Würde ich auch wieder jedem empfehlen, own your content und gebt euren Content, egal was ihr macht, ihr schreibt etwas, ihr macht Bilder, ihr macht Audio-Files, das würde ich wirklich, wirklich sagen, own your content. Bei dem initialen Konzept, der Wolfgang spielt das gerade so runter und der hat mich auch am Anfang immer noch ausgelacht, weil ich bin ja immer ein Fan davon, alles niederzuschreiben. Im Konzept selbst haben wir uns erstmal einen Gedanken gemacht, okay, kriegen wir eigentlich 20, 30, 40, 50 Themen zusammen, weil wenn du so ein Podcast startest, dann ist es halt so, okay, der wächst über Zeit und da haben wir glaube ich erstmal eine Themenliste gemacht von 30 oder 40 Themen, kriegen wir eigentlich 40 Episoden hin. Und Achtung, diese Themenliste existiert heute noch und wir sammeln diese weiter und wir räumen sie auch konstant auf. Also aus irgendwelchen Gründen hat der Aufwand, den wir im Dezember 21 da reingesteckt haben, immer noch einen gewissen Wert. Aber, wenn wir über Audio sprechen, über einen Podcast, dann denkt man natürlich an Rock am Ring, an die Anlage, an die Konzerte und Co. und man weiß, wenn man schon mal auf einem Konzert oder einem Festival war, dann ist das eine Materialschlacht. Das sieht natürlich bei uns nicht anders aus. Deswegen, lasst uns mal ein bisschen in die Hardware-Sektion gehen und wer jetzt mal irgendwie populäre Podcaster und YouTuber mal so ein bisschen verfolgt und sich fragt, Welches Mikrofon haben die Jungs eigentlich da? Dann landet man eigentlich relativ schnell bei dem Standard und das ist das Shure SM7B für 389 Euro und Achtung, das haben wir nicht, weil wir hatten einfach kein Geld.",
+            "start": 501088,
+            "end": 598307,
+            "confidence": 0.7859964157706094,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Wobei mir ja der Andi seit Monaten immer die Ohren voll raunzt. So im Zwei-Monate-Abschnitt kommt er wieder mit irgendeinem Influencer oder mit irgendeinem Podcast und sagt, es klingt schon sehr gut. Sollen wir uns das nicht auch zulegen? Und ich glaube, es gibt ja zwei verschiedene Schuhe. Das andere kostet ja eher um die 600 Euro, was du mir da immer schickst. Also ich muss das immer abblocken und ich glaube, ich habe das damals auch abgeblockt, weil du wolltest natürlich auch sofort in die gute Hardware investieren, so wie man, ja, wenn man eine Kondition will, um auf dem Berg zu radeln, kauft man sich ein 7.000 Euro Mountainbike, weil da kauft man sich die Kondition mit. So ähnlich ist es bei den Mikrofonen, da kauft man sich den guten Content mit, oder?",
+            "start": 599377,
+            "end": 639856,
+            "confidence": 0.788414814814815,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Mountainbike, E-Bike, oder?",
+            "start": 639896,
+            "end": 641357,
+            "confidence": 0.5443333333333332,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Ja, das ist so wie JetGPT, die deinen Podcast-Content erstellen kann.",
+            "start": 641397,
+            "end": 644880,
+            "confidence": 0.6649090909090909,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Nee, aber das ist immer so die Falle. Also falls ihr mal einen Outdoor-Podcast machen wollt, ich hab jetzt auch auf die harte Tour gelernt, nämlich durch einen argumentierenden Österreicher. Ich brauche leider keinen Schuh SM7B und wir haben bis heute keins. Also das funktioniert auch ganz gut so.",
+            "start": 645333,
+            "end": 659400,
+            "confidence": 0.7651020408163266,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Und ich habe Andi damals überredet, das Samsung Q2U zu bestellen. Das ist glaube ich eine chinesische Marke, ist aber eher auf der qualitativeren Seite. Ich habe mir extrem viele Tests durchgelesen, YouTube-Videos angeschaut und habe dann beschlossen, das ist das Mikrofon to go. Und damit hat der Andi gestartet. Ich habe mit einem noch billigeren No-Name-Mikrofon gestartet, irgendwie so um 20 Euro. Da war die Qualität so mäßig, würde ich mal sagen. Ist immer noch besser als die meisten Laptop-Mikrofone und ist einfach ein physikalisch größeres Mikrofon. Und mittlerweile haben wir eigentlich beide größere Mikrofone. Also ich bin immer noch am Samsung und Andi ist am Rode NT, auf der USB-Version, das man so kennt. Kostet so um die 130 Euro.",
+            "start": 659637,
+            "end": 703529,
+            "confidence": 0.7840983606557376,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Genau, das Samsung Q2U, das haben wir damals für 67 Euro geschossen. Ich habe gerade noch mal nachgeschaut. Inzwischen sind wir da bei 100 Euro. Da würde ich sagen, ist ein gutes Beispiel, wie die Inflation mal reinkickt. Aber ist ein sehr gutes dynamisches Mikrofon. Und ich habe von meinem letzten Arbeitgeber, von meinem damaligen Arbeitskollegen, vielen Dank nochmal an alle, die ja vielleicht noch zuhören, ein sogenanntes Rode NT-USB geschenkt bekommen. Auch sehr schönes Mikrofon, was ein Kondensatormikrofon ist. So und der Wolfgang ist so der Audio Techniker von uns, deswegen Wolfgang kannst du mir nochmal einen ganz kurzen Abriss geben, was ist der Unterschied zwischen einem dynamischen und einem Kondensator Mikrofon?",
+            "start": 705049,
+            "end": 741552,
+            "confidence": 0.7738141592920356,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Physikalisch kann ich das gar nicht so genau erklären. Die Kondensatormikrofone brauchen meistens Energie fürs Mikrofon, darum haben sie auch diese Phantom Power üblicherweise und dynamische nicht. Dynamische Mikrofone sind das, was man so klassisch bei Radiosprechern sieht, auf der Bühne sieht, so die ganz klassischen Handmikrofone, die man so kennt, das sind meistens dynamische Mikrofone. Und die Kondensatormikrofone, das sind die üblichen Podcast-Mikrofone, die man so auf den Podcast-Ständern kennt und eben Das Rode gibt es in beiden Varianten, es gibt verschiedene Rode. Auf jeden Fall der große Unterschied ist, dass das dynamische Mikrofon wesentlich unempfindlicher ist auf Umgebungsgeräusche. Und das Kondensatormikrofon hat zwar den besseren Klang vielleicht, nimmt ein breiteres Spektrum auf, ist aber viel, viel empfindlicher, wenn man irgendwo dagegen stoßt, wenn man einen hallenden Raum hat, so wie der Andi. Drum hört man beim Andi immer gerne einen Hall im Hintergrund, weil er ein Kondensatormikrofon hat und kein dynamisches. Heute nehmen wir beide mit dem dynamischen auf. Sonst hat Andi ein Kondensatormikrofon, also könnt ihr gerne mal vergleichen, wie das so klingt. Aber gerade wenn man Hintergrundgeräusche hat und drum sind halt Radio, Bühne und so weiter, wo alles laut rundherum ist, sind immer dynamische Mikrofone eigentlich.",
+            "start": 742305,
+            "end": 813143,
+            "confidence": 0.8138805970149252,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Für Leute, die bei uns im Podcast ganz genau aufpassen, in diversen Podcast-Episoden hört man auch immer zu, mein Hund, wie er sich die Pfoten leckt oder mal meine Frau, wie sie den Thermomix bedient und irgendwas schreddert. Also so verhält sich das dann mit einem Kondensator-Mikrofon. Inzwischen habe ich für das Mikrofon aber auch noch einen Mikrofonarm und zwar habe ich mir da damals das Rode PSA 1 Plus den Mikrofonarm gekauft. Der ist ein sehr hochqualitatives Mikrofonarm von Rode selbst. Kostet leider 135 Euro, ist eine teure Geschichte. aber dafür sehr schön in den Schreibtisch integriert. Und auch Wolfgang hatte gerade noch mal gesagt, oh, die Qualität von diesem Mikrofonarm ist doch schon um einiges besser, weil der Wolfgang hat nämlich ebenfalls in einen Mikrofonarm investiert und hat ganze 19 Euro investiert.",
+            "start": 814269,
+            "end": 863223,
+            "confidence": 0.835492537313433,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Ich glaube, es war sowas um den Dreh. Also da ist schon ein Qualitätsunterschied, muss man schon auch sagen. Aber ich bin halt eher der Mensch, der probiert, gute Qualität um einen kleinen Preis zu bekommen. Und der hat natürlich externe Federn und solche Dinge, die halt jetzt nicht so schön sind bei Audio. Aber es funktioniert auch und macht einen guten Job. Also ich bin super zufrieden.",
+            "start": 863592,
+            "end": 880891,
+            "confidence": 0.7819264705882353,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Offen gesprochen, braucht man ein Mikrofonarm? Nein, braucht man nicht. Ist es super bequem, wenn du einfach einen festen Schreibtisch hast und dein Mikrofon, dein Audio-Setup einfach fest? Ja, super, weil du kannst das Mikrofon einfach wegschieben und so weiter. Wir haben beide kein Audio-Interface. Wir connecten das alles via USB und das reicht auch. Eigentlich Samsung Q2U 67 Euro oder 90 Euro, 100 Euro kostet das, USB-Anschluss und ihr seid good to go. Es muss kein Shure SM7B für 400 oder 500 Euro sein, externes Audio-Interface von Thomann und so weiter. Das muss es alles nicht. Natürlich, wenn ihr Geld im Möbelverfluss habt, könnt ihr es gerne rausgeben, ich halte euch da nicht ab, aber das muss es wirklich nicht.",
+            "start": 881111,
+            "end": 925680,
+            "confidence": 0.7536280991735538,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Was man auf jeden Fall sagen muss, und das merken wir jetzt auch gerade bei den Interviews sehr oft, AirPods, ein Laptop-Mikrofon, hat einfach eine schlechtere Qualität. Das ist weiter weg, das ist ein großer Punkt. Und gerade die AirPods, da hast du halt physikalisch einfach weniger Volumen, wie du so ein Mikrofon bauen kannst. Das ist zwar eigentlich eine gute Qualität und man kann über Software einiges machen, aber da hört man schon einen extremen Unterschied, wenn wir da einen Podcast aufnehmen mit Interviewen, wie das so klingt. Man braucht wirklich nicht viel Geld ausgeben, man braucht auch keine 100 Euro ausgeben, auch wenn man irgendwie um 20, 25 Euro ein Mikrofon kauft, irgendwie sogar auf AliExpress. Die sind normal alle wesentlich besser als jegliches Laptop-Mikrofon. Also irgendwas, was physikalisch ein bisschen größer ist, das würde ich auf jeden Fall empfehlen, um gute Qualität zu kriegen. Und das kann ich auch empfehlen für jeden Videocall. Einfach, wenn man Videocalls macht. Wenn ihr ein gutes Setup haben wollt, kauft euch wirklich ein physikalisch externes Mikrofon, was nahe an euch dran ist und vielleicht eine gute Kamera. Aber primär ein gutes Mikrofon. Das kann also wirklich einiges bewegen und die Qualität wird um vielfaches besser.",
+            "start": 926086,
+            "end": 991950,
+            "confidence": 0.7990000000000004,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Das Learning haben wir gemacht, als wir die ersten paar Gäste im Podcast hatten und zu dem Zeitpunkt hatten wir noch keine Mikrofone zum Versenden. Das haben wir inzwischen ein bisschen geändert und zwar haben wir nochmal zwei Samsung Q2U gekauft für jeweils 90 Euro und dazu noch sogenannte Flight Pro-Cases, das sind so kleine Boxen, ein bisschen mit Schaumstoff ausgestattet, die eigentlich, ich sag mal so, die Form von dem kleinsten DHL-Paket haben. Und Gästen bieten wir jetzt an, sofern sie kein eigenes externes Mikrofon haben, dass wir ein Mikrofon dann zum Gast senden mit einem Rücksendeschein. Denn diese Menschen investieren Zeit, diese Menschen investieren ihr Wissen. Wir bezahlen sie nicht, beziehungsweise haben wir nicht so einen großen Income für den Podcast, dass wir da leider eine Aufwandsentschädigung geben können. Deswegen übernehmen wir zumindestens mal die Versandkosten und verschicken dann auch ein Mikrofon, damit die Audioqualität natürlich für euch auch Und.",
+            "start": 992310,
+            "end": 1056353,
+            "confidence": 0.8670328947368422,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Das hat sich natürlich auch geändert mit der Werbung, seitdem wir ein bisschen ein Income haben, also wir verdienen definitiv keine goldene Nase, wir sind noch weit unter dem Mindestlohn, wenn man das auf Stunden umrechnet, aber wir haben halt jetzt die Flexibilität, dass wir mal ein Mikrofon kaufen können oder ein Equipment oder das Herumsenden, da einfach eine gewisse Flexibilität haben. Und da vielleicht auch ein kleines Dankeschön an alle, die die Werbung anhören und wir hoffen, dass euch die Werbung auch irgendwas bringt, weil wir versuchen die ja auch so auszuwählen, dass ihr den HörerInnen was bringt und natürlich der Firma, die die Werbung macht.",
+            "start": 1056373,
+            "end": 1088310,
+            "confidence": 0.770252336448598,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Ich meine, unser Ziel ist auch nicht reich zu werden damit, ganz und gar nicht, oder einen Lebensunterhalt zu bestreiten. Ich meine, das wäre super toll, wenn wir da von diesem Spaß hier einen Lebensunterhalt bestreiten könnten. Aber wie gesagt, der Mindestlohn, ich habe gerade nochmal nachgeschaut, liegt bei 12,89 Euro aktuell in Deutschland. Wenn wir die Stundenlohn rechnen, ich bin mir gar nicht sicher, ob wir auf über 2 Euro kommen. Ich glaube, wir sind weit darunter immer noch von unserem Stundenlohn, was wir hier an Arbeit investieren.",
+            "start": 1088590,
+            "end": 1111295,
+            "confidence": 0.7657415730337082,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Also wer vielleicht eine Firma kennt oder so, oder wenn ihr Jobs anzubieten habt und da Werbung machen wollt, einfach mal kontaktieren.",
+            "start": 1111815,
+            "end": 1118380,
+            "confidence": 0.7857272727272728,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Also genau, die Werbung ist einfach nur dafür da, dass wir nicht alles aus unserer eigenen Tasche zahlen, denn über die Monate, da kommen ein paar Euro zusammen. Wir haben gerade gesagt, wir haben inzwischen drei Samsung Q2-Mikrofone, das sind knapp 300 Euro, ein NT-USB 130 Euro, die Cases sind nochmal 40 Euro, dann der Versand und so weiter. Also wir haben noch ein paar Lizenzkosten zur Software, da kommen wir gleich noch zu. Das ist halt alles schon ein teures Hobby und da wollen wir wenigstens halt nicht so viel aus unserer eigenen Tasche zahlen, weil die Investition der Zeit deklarieren wir schon eigentlich als sehr großes Investment von uns.",
+            "start": 1118420,
+            "end": 1152144,
+            "confidence": 0.7890630630630626,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Aber jetzt haben wir auch erwähnt, dass wir eigentlich immer Lean waren und möglichst wenig investiert haben, aber wir haben natürlich auch Fail-Investitionen, würde ich sie mal nennen, getätigt. Es war nicht so schlimm, aber wir hatten mal vor, wesentlich mehr Video zu machen, bis wir dann rausgefunden haben, wie kompliziert Video ist und wie anstrengend Video ist. Und da haben wir zum Beispiel Funkmikrofone gekauft oder auch Scheinwerfer. Die haben wir später dann re-usen können für ein Fotoshooting wenigstens, weil die Fotografin ihre nicht mit hatte und es war verdammt dunkel. Und dann haben wir professionell gesagt, hey, wir haben professionelle Scheinwerfer hier, zwei Stück und die habt ihr dann ausgerichtet, so wie ich das auch noch nie gesehen habe. Also auch da kann man viel dazu lernen und daraus sind auch unsere Bilder entstanden, die wir aktuell auf der Webseite verwenden.",
+            "start": 1152582,
+            "end": 1195527,
+            "confidence": 0.8086643356643355,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Da geht der Dank nochmal an die Chrissy Gahlemann. Vielen lieben Dank für deine Unterstützung. Diese Scheinwerfer haben wir seitdem leider nicht mehr so genutzt, die liegen bei mir zu Hause rum.",
+            "start": 1195888,
+            "end": 1207692,
+            "confidence": 0.8185937499999998,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Also Andi verwendet sie nicht mal für sein Webcam-Setup. Du könntest die dir jetzt endlich mal aufbauen in deinem Büro, dass du eine ordentliche Ausleuchtung hättest.",
+            "start": 1207712,
+            "end": 1214854,
+            "confidence": 0.6902692307692307,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Zum Audio-Editing kommen wir gleich noch und dann können wir euch mal sagen, warum wir das alles mit den Videopodcasts nicht so machen, denn...",
+            "start": 1214894,
+            "end": 1221596,
+            "confidence": 0.8019583333333332,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Vielleicht noch, gerade als Information, was wir da ausgegeben haben, das waren auch keine Welten, man bekommt heutzutage Zwei Funk-Mikrofone, die Synco, das sind so ein bisschen Alternative von den Rode-Mikrofonen, die man so kennt von den Influencern, bekommt man zwei Stück um 200 Euro. Die Scheinwerfer waren irgendwie so 100, 160, 170 Euro. Professionelle Scheinwerfer wirklich starke. Das spielt sich alles im Rahmen ab, aber brauchen wir ehrlich gesagt aktuell weniger. Aber wir haben es zur Verfügung und irgendwann verwendet sich Andi vielleicht für seine neue Influencer-Karriere.",
+            "start": 1221616,
+            "end": 1255116,
+            "confidence": 0.769715909090909,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Also falls ihr mal in Duisburg seid und Scheinwerfer braucht, wir haben welche zu verleihen. Das Engineering-Kiosk wird dann zum Verleihstandort. Und jetzt ist es ja so, dass der Wolfgang auch ab und zu mal im schönen Deutschland ist und besonders in Duisburg und Das ist jetzt auch gerade der Fall. Wir nehmen in meinem Büro auf. Das ist endlich mal eine schöne Situation. Wir trinken hier gerade ein Weinchen dabei. Wir erzählen vom Krieg. Wie läuft das eigentlich? Und für diese On-Site-Aufnahmen haben wir uns damals auch nochmal ein Recording-Gerät gekauft. Und zwar das Zoom PodTrack P4. Bei der ersten offiziellen On-Site-Aufnahme wollten wir das auch testen und Wolfgang kam nach Duisburg. Wir hatten auch einen Termin ausgemacht mit jemandem aus Düsseldorf, Hammonds.",
+            "start": 1255496,
+            "end": 1299420,
+            "confidence": 0.7757419354838708,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Hast du es versaut, auf gut Deutsch.",
+            "start": 1301307,
+            "end": 1303308,
+            "confidence": 0.39271428571428574,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Ich habe mir einmal Corona eingefangen, also ist Wolfgang von Innsbruck nach Duisburg gefahren, um dann nach Düsseldorf zum Gast zu fahren, eine Aufnahme zu machen und mich über das Internet wieder reinzuschleusen in den Podcast.",
+            "start": 1303348,
+            "end": 1314512,
+            "confidence": 0.7949999999999998,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Also das war die Aufnahme mit Philipp Monreal über AP-Testing und da haben wir schon eigentlich das gesamte Spektrum vom Podtrack ausnützen können, weil das war natürlich auch so geplant von mir, eh klar, wie ich entschieden habe, das zu kaufen. Weil das coole am Podtrack ist, dass man über einen externen Audio-Klinken-Stecker, beziehungsweise über USB, jemand externen von einem Video-Call mit reinnehmen kann und das Ding nimmt aber physikalisch auf, auf eine Speicherkarte und du kannst über XLR-Anschlüsse vier klassische Mikrofone dran schließen, auch mit Phantom-Power und kannst aber zusätzlich eben noch einen externen reinholen und in dem Fall war es der Corona-Kranke Andi, den wir da isoliert haben, und das hat erstaunlich gut funktioniert. Also dieses Tool kann man wirklich empfehlen, vor allem wenn man lokale Aufnahmen macht, also wirklich physikalische Aufnahmen. Das nimmt die einzelnen Spuren auf, speichert das auf eine Speicherkarte, kann da alles schön einstellen, man kann da auch vier Kopfhörer dran schließen, dass jeder einen eigenen Kopfhörer hat. Also das ist wirklich ein super einfaches Gerät, was erstaunlich günstig ist mit die 180 Euro und für lokale Aufnahmen also wirklich zu empfehlen ist.",
+            "start": 1314552,
+            "end": 1381063,
+            "confidence": 0.7949470899470896,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Dennoch müssen wir sagen, das ist leider die Seltenheit. Und zwar Wolfgang aus irgendwelchen Gründen möchte da unten bei den Bergen bleiben. Ich verstehe es auch nicht ganz.",
+            "start": 1381812,
+            "end": 1392002,
+            "confidence": 0.8609285714285714,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Auf jeden Fall... Hey, du warst gerade in den Bergen bei uns.",
+            "start": 1392042,
+            "end": 1395605,
+            "confidence": 0.6283333333333333,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Die Masse unserer Podcasts wird jedoch remote aufgenommen. Und da nutzen wir einen Online-Service, da nutzen wir nicht irgendwie Zoom-Lizenzen oder du musst ja auch keine lokale Software installieren. Und zwar nutzen wir sendcaster.com. Offen gesprochen, einer der besten Internet-Services, die ich wirklich seit langem genutzt habe und es ist alles schon passiert. Während der Aufnahme, irgendein Internet ist weggekachelt, der Browser ist abgestürzt. Alles, alles was man sich vorstellen kann, ist gefailt und man kommt wieder zurück in den Call und alles ist noch da. Alles wird irgendwie lokal in einem Local Storage gespeichert und wenn du da bist, wieder hochgeladen. Also Zencaster ist eine Remote-Podcasting-Plattform, würde ich mal sagen. Wir zahlen da inzwischen auch für, ich kenne die Monatsgebühren gerade nicht, aber durch unsere...",
+            "start": 1395625,
+            "end": 1438807,
+            "confidence": 0.7951587301587303,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Wir zahlen irgendwas um die 20 Euro oder so. Am Anfang haben wir sogar lange den kostenlosen Tier genutzt, die haben dann was geändert. Diese lokale Speicherung, die du jetzt gerade erwähnt hast, ist ja auch super von der Qualität her, weil eben die lokale Tonspur wirklich in hoher Qualität aufgenommen wird. Und sonst bei einem Videocall hast du ja immer diese Kompression und hast eine niedrige Qualität. Mir ist es ein Rätsel, warum wirklich professionelle Podcaster von großen Medienhäusern immer noch scheinbar irgendwie schlechte Software verwenden und nicht solche Software, die wirklich die lokale gute Spur aufnimmt. Ist mir ein Rätsel, aber so ein Tool ist wirklich super, vor allem mit Gästen, weil denen schickt man einen Link, die können einsteigen. Wenn man selber das Ganze macht, nur zu zweit, dann könnte man da lokale Aufnahmen machen, gar kein Problem. Aber gerade mit Gästen, Link raussenden, das funktioniert in deren Browser, alles wird aufgenommen. Und wie gesagt, wurde jetzt bei über 100 Episoden, wurden wir noch nie enttäuscht.",
+            "start": 1438847,
+            "end": 1493310,
+            "confidence": 0.7823136094674555,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Und ich glaube, die Barriere einen Podcast aufzunehmen, besonders mit externen Leuten, war niemals niedriger. Also das ist schon faszinierend. Ich bin aber immer wieder überrascht und zwar würde ich das als Key-Learning bezeichnen. Die Podcast-Remote-Aufnahme ist für mich und ich bin nur ein Nutznießer. Diese ganze Audio-Technik hier, XLR-Kabel und so weiter, das macht alles der Wolfgang. Ich bin nur ein Nutznießer, aber was der da immer für einen Aufwand reinsteckt, diese ganze Sache aufzubauen und gestern kam ich in meine Küche, da haben wir auch eine Podcast-Aufnahme gemacht. Und auf einmal liegt der ganze Tisch voll Kabel, von Geräten und so weiter. Ich denke so, was haben wir denn hier? Ich denke, wir quatschen nur eine Runde. Naja, gut. Wolfgang, ich will mal Dank aussprechen. Danke, dass du dich um diese ganze Audio-Technik kümmerst.",
+            "start": 1493350,
+            "end": 1535849,
+            "confidence": 0.7407573529411763,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Kann man als Hobby bezeichnen. Aber man muss natürlich auch sagen, wir machen das seltener. Insofern ist es halt ein Setup, was wir nicht so trainiert haben. Aber auch beim Schneiden zum Beispiel macht das einen großen Unterschied. Weil wenn du im selben Raum aufnimmst, du kannst zwar eigene Spuren haben, aber du hörst natürlich auf jedem Mikrofon immer leicht im Hintergrund die andere Person. Und das musst du beim Schneiden dann auch dementsprechend beachten. Also auch wenn man remote aufnimmt, hat man einfach zwei cleane oder drei cleane Spuren, wo wenn einer hustet, blendest du das aus und fertig. Aber wenn du im gleichen Raum bist, hörst du das Husten natürlich auf allen Mikrofonen zum Beispiel. Also es ist auch beim Schneiden wesentlich komplizierter und nicht nur beim Setup selbst. Also auch da finde ich Remote ist einfach einfacher. Und auch die Gäste, die kümmern sich um ihren Remote Setup, wir kümmern uns um unser Remote Setup, alles läuft, fertig.",
+            "start": 1535869,
+            "end": 1584143,
+            "confidence": 0.8005279503105593,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Und da kommen wir natürlich auch zum nächsten Punkt. Wir machen leider keine One-Takes. Warum sage ich leider? Ich habe höchsten Respekt vor jedem Podcast, vor allen Leuten, die wirklich One-Takes machen. die den auf Rekord drücken, Abfahrt und dann...",
+            "start": 1584163,
+            "end": 1602835,
+            "confidence": 0.8172750000000001,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Es verspricht sich ja nicht jeder ständig so wie du.",
+            "start": 1602875,
+            "end": 1605237,
+            "confidence": 0.6783000000000001,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Aber es ist einfach schwierig über eine halbe Stunde, eine Stunde, wenig Aims, Füllwörter und den Gesprächsflow so hinzukriegen. Deswegen, also Respekt, ihr macht das alles wahnsinnig gut an alle Podcaster da draußen. Wir auf jeden Fall editieren den Podcast, wir schneiden den Podcast. Das bedeutet, wir cutten Pausen raus und allem drum und dran, der unser Audio-Engineer Herr Dr. Gassler wird, um da gleich noch ein bisschen mehr Details zu nennen. Aber was wir nicht tun, und das möchte ich mal ganz klar sagen, wir verändern nicht den Flow des Gespräches. Also wir schreiben, wir verschieben keine Fragen von vorne, verschieben wir nach hinten oder ähnliches, sondern das ist alles schon in der Zeitleiste so aufgenommen und das ist auch alles in der Zeitleiste so besprochen. Aber damit ihr natürlich ein tolles Audio-Erlebnis habt, geht der Wolfgang da noch ein bisschen drüber. Und Wolfgang, das ist für mich ebenfalls ein rotes Tuch. Ich habe keine Ahnung von Audio-Engineering. Ich sage immer, hier hast du ja die Aufnahme, mach was draus und ein paar Tage später kriege ich ein fertiges MP3-File.",
+            "start": 1605297,
+            "end": 1662525,
+            "confidence": 0.747386740331492,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Ja, wenn es ein paar Tage später wäre, wäre es schön, aber nicht immer zumindest. Grundsätzlich haben wir die Pipeline natürlich auch über Zeit verbessert und optimiert und automatisiert. Und wir haben kürzlich mal unsere Pipeline geändert, weil wir ein bisschen anders unseren Workflow jetzt gebaut haben mit den Transkripten und so weiter. Und ich habe mich immer noch nicht ganz gewöhnt an diesen neuen Workflow, weil Andi jetzt in einem anderen Schritt was machen muss, die Chapters. Und das ist für mich extrem schwierig. Also das hat sich schon über die Zeit auch entwickelt, muss man sagen.",
+            "start": 1662545,
+            "end": 1691707,
+            "confidence": 0.7271632653061223,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Kannst du einmal mal kurz nen Run-Through über die Pipeline, wie sie vorher war und wie sie aktuell ist geben?",
+            "start": 1692053,
+            "end": 1698918,
+            "confidence": 0.69005,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Ja, so starten wir mal ganz klassisch. Wir bekommen da MP3-Fallreihen, Spuren von den einzelnen, von uns zwei oder dann auch mit Gästen. Ich verwende da Audacity, Open Source Tool, super leistungsstark. Hab mir da auch ein paar Makros zurechtgelegt, die am Anfang zum Beispiel die Lautstärke anpassen, dass die Lautstärke einheitlich ist von den ganzen Spuren. Dann werden lange Pausen automatisch rausgeschnitten. Das hat den Vorteil zum Beispiel, wenn wir Denkpausen drinnen haben, haben wir uns das angewöhnt einfach leise zu sein, nachzudenken und dann fliegen die Pausen einfach raus.",
+            "start": 1698958,
+            "end": 1732378,
+            "confidence": 0.8276593406593411,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Und das ist nicht nur bei Denkpausen so, denn was wir festgestellt haben, was menschlich sehr faszinierend ist, Wenn du eine Frage hast und Leute müssen ganz kurz überlegen und sie haben Angst, dass ihnen das Wort weggenommen wird durch den Interviewgast, dann setzen sie automatisch Füllwörter ein. Die halten das Gespräch durch Füllwörter am Laufen, bis sie die Antwort überlegt haben. Und was wir explizit dann auch bei unseren Gästen sagen ist, hey, wenn wir eine Frage gestellt haben, bleib einfach still, wir nehmen dir nicht das Wort weg, überleg in Ruhe, denn dieser kleine Satz ermöglicht Wolfgang einfach später sein Makro zu feuern, die Pausen automatisch rauszuschneiden, weil sonst hat man immer konstant, weil die Person oft, psychologisch bedingt, Angst hat, dass man ihnen das Wort wegnimmt.",
+            "start": 1732398,
+            "end": 1778104,
+            "confidence": 0.8437674418604647,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Aber man muss schon sagen, das muss man trainieren. Wir haben da echt lange dafür gebraucht und man kann das Leuten natürlich sagen, aber wenn du das nicht gewöhnt bist oder Profi bist, dann kannst du auch nicht so schnell umstellen. Und keine Ahnung, wie viele Wochen wir das wirklich trainiert haben und uns gegenseitig darauf hingewiesen haben, wo es Tränen sind. Und man kann das trainieren und die Qualität wird dann wesentlich besser. Man glaubt gar nicht, man braucht das unter Umständen auch gar nicht in wirklichen Gesprächen ständig einbauen, also auch da kann man durchaus Pausen machen. Und wenn man professionelle Moderationen sich anhört, auch da sind ganz oft längere Pausen. Also man darf das nicht unterschätzen und man kann sich das schon angewöhnen, also das kann schon auch viel helfen. Wie gesagt, die Pausen waren automatisch rausgeschnitten und dann mache ich den Rest eigentlich manuell, höre mir das einfach an, schneide gewisse Errors raus, wenn es zu viele sind, schneide irgendwelche Versprecher raus, hält sich eigentlich in Grenzen, was da wirklich rausfällt und mittlerweile schneide ich auch so auf einem Speed von 1,8. Das heißt, ich höre Andi immer in der Mickey Mouse Stimme, weil dieses Tool, das leider nicht den Pitch anpasst, passt.",
+            "start": 1778554,
+            "end": 1844191,
+            "confidence": 0.7991787439613532,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Solange ich nicht goofy oder sowas bin, ist es okay.",
+            "start": 1844411,
+            "end": 1846913,
+            "confidence": 0.3795,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Ich habe gestern eine Episode geschnitten und dann bist du reingekommen in deine Küche und hast in der normalen Stimme gesprochen. Das war total komisch, weil ich habe die gerade ständig auf Mickey Maus gehört. Aber auch da wird man dadurch dann eben schneller. Aber es braucht schon pro Episode, würde ich mal sagen, so eineinhalb Stunden, um den Schnitt zu machen. Wir haben da auch schon ein paar AI-Tools ausprobiert, so Mouth Sounds und Auphonic, die gewisse Anpassungen, automatische Anpassungen machen oder Mouth Sounds schneidet die Eins raus. Funktioniert eigentlich erstaunlich gut und macht in den meisten Fällen guten Job. Ich war nicht so hundertprozentig zufrieden einfach wie geschnitten wird, weil dann teilweise so Wörter noch abgeschnitten sind. Daran haben wir noch nie so richtig anfreunden können mit dem Tools. Auphonic ist ein super Tool und das sage ich jetzt nicht nur, weil das Österreicher sind. und die wirklich eigentlich so die Weltführer im Hintergrund sind von den ganzen Podcast-Studios. Unglaublich, wer all der Aphonic verwendet. Die passen primär die Lautstärke an und wenn du Interviews, Live-Interviews hast, ist es ganz wichtig, dass wenn die Leute den Kopf bewegen, mal vom Mikro wegrücken, hinrücken, die Lautstärke einfach sich ständig ändert, dass das wirklich sauber angepasst wird. Bei unserem Setup üblicherweise, wenn alle gleich weit von ihrem Mikrofon entfernt sitzen, gerade bei uns Zweien, braucht man das gar nicht. Aber wenn man jetzt wirklich lokale Interviews hat und eine extreme Varianz drin hat, ist auch Phonics super praktisch. MP3-File fertig gehabt habe, habe ich es wieder an den Andi einfach versendet und der hat dann weitergemacht in unserem Workflow. Also wir verwenden da die Nextcloud, der Dai wird hochgeladen und Andi bearbeitet das Ganze dann weiter. Und was hast du dann gemacht?",
+            "start": 1847393,
+            "end": 1943382,
+            "confidence": 0.7945239726027395,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Ich habe eine ganze Zeit lang mir dieselbe Podcast-Episode nochmal angehört und ich bin eigentlich nicht der Fan, der Podcast irgendwie in erhöhtem Speed hört. Das bedeutet, ich habe das in 1,0 gehört, also ganz normal.",
+            "start": 1943402,
+            "end": 1953489,
+            "confidence": 0.7178611111111112,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Ziemlich langweilig mich in 1,0 zu hören.",
+            "start": 1955310,
+            "end": 1957932,
+            "confidence": 0.6867142857142857,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Mein Ziel war eigentlich A, eine Art Qualitätskontrolle, okay haben wir kein Blödsinn gesprochen, B, ein paar Informationen mitgeschrieben, Stichworte, Links, die wir erwähnt haben, ich hab Kapitelmarken gemacht, ich hab die Shownotes geschrieben. Und das habe ich eigentlich relativ lang gemacht. Ich würde sagen bis Episode 70, bis Episode 80 oder ähnliches. Das bedeutet, das ist natürlich schon ein riesiger Zeitaufwand. Du nimmst die Podcast-Episode auf, sie geht ins Editing. Danach höre ich mir die nochmal an. Und ich höre sie mir ja nicht in der normalen Länge an, sondern einen Tick länger, weil ich immer Pause mache, den Timestamp mitschreibe für die Kapitel und so weiter und so fort.",
+            "start": 1957972,
+            "end": 1992255,
+            "confidence": 0.7506666666666668,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Also wer sich schon immer gefreut hat über diese tollen Chapter-Titel und Fragen und so weiter, die kommen nur aus Andis Hand. Also wenn ihr mal in die Shownotes geht, falls ihr nicht Shownotes kennt, weil so erstaunlich viele Leute es nicht kennen, da ist ja eine Description dabei bei jeder Episode, scrollt mal nach unten, Timestamps, Kategorisierung, schöne Kapitelmarken, wo man auch springen kann, man kann, kleiner Geheimtipp, sogar Werbung überspringen, solltet ihr natürlich nicht tun. Aber man kann da herumspringen und genau zu seinem Punkt kommen, den man hören will.",
+            "start": 1992295,
+            "end": 2023244,
+            "confidence": 0.7949565217391301,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Und auch für die Leute, die gerne Files analysieren, diese Kapitel sind auch alle im mp3-File selbst. Also falls ihr das mp3-File wirklich runterladet, alles ist im mp3-File als Meta-Daten. Ja und ich weiß nicht, ob ihr es mitbekommen habt, aber im Jahr 2023 kam dieses JetGPT. Und ich hab das Gefühl, es war nicht das Jahr des Linux-Desktops, sondern das Jahr der Generative AI. Und irgendwie wie Pilze aus dem Boden sind dann halt diese AI-Tools rausgekommen. Wolfgang und ich waren immer auf der Suche okay wie können wir diesen Episoden Workflow irgendwie ein bisschen zeitlich interessanter gestalten also zeitlich verkürzen auf gut deutsch wie können wir da die ganze Arbeit einfach mal ein bisschen reduzieren.",
+            "start": 2023284,
+            "end": 2064576,
+            "confidence": 0.7915128205128203,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Wir sind ja Fans von Automation und Automatisierung und man muss sagen, diese Transcript Services, die gibt es ja schon sehr lange. Aber das war immer eine Herausforderung. Deutsche Sprache, bei uns ist es noch schlimmer, das ist Pott und Österreich. Und wir haben ganz viele englische Ausdrücke. Das heißt, es ist ein Wirrwarr von Sprachen und von Wörtern, die die meisten Transcript Services einfach nicht handeln haben können.",
+            "start": 2064596,
+            "end": 2089204,
+            "confidence": 0.8058985507246375,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Und offen gesagt, viele Transcript Services, also Speech-to-Text-Services, waren auch unverschämt teuer. Wir haben uns auf jeden Fall dann mal im Jahr 2023 ein bisschen damit beschäftigt und wir haben auch die OpenAI Whisper API ausprobiert. Das ist nämlich deren Speech-to-Text-Service. Und offengesprochen, die Resultate waren unglaublich schlecht. Weil es ist ja, was wir wollen, ist nicht nur Speech-to-Text, sondern wir wollen auch Speaker Recognition. Wer spricht da denn gerade? Und so eine Whisper-API, zumindest das Angebot von OpenAI damals, konnte es nicht. Die Open Source Whisper-APIs, die du dir runterladen konntest und selbst laufen lassen konntest, die konnten das anscheinend laut Dokumentation. Aber machen wir uns mal nichts vor, wir wollen hier einen Podcast machen, wir wollen jetzt hier kein AI-Hoster werden. Und deswegen haben wir ein bisschen weiter geguckt. Auf Phonic selbst bietet es auch Transkripte an, mit denen war ich persönlich jetzt nicht zufrieden. Ich habe ein paar Qualitätskontrollen gemacht. Wir haben einen alten Arbeitskollegen, der hat ein AI-Tool gelauncht, der nennt sich PodSqueeze. Haben wir auch mal zwei, drei Monate bezahlt und auch mal ein paar analytische Tests gemacht. So richtig zufrieden war ich da auch nicht. Im Endeffekt, was machen viele dieser Tools? Die machen einen Speech-to-Text, nehmen das Transkript, jagen das als Kontext irgendwie in OpenAI rein und machen dann einen intelligenten Prompt drauf. Zugegeben, die machen das gut und zugegeben, man merkt auch, die haben da sehr, sehr viele Stunden für den Prompt investiert. Aber im Endeffekt kam das an, ich sag mal, die manuelle Qualität, die ich damals geliefert habe, beziehungsweise die Genauigkeit, als ich das noch manuell gehört habe, ich war noch nicht so ganz zufrieden.",
+            "start": 2089244,
+            "end": 2182801,
+            "confidence": 0.7679163636363631,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Wobei man da jetzt zur Erklärung sagen muss, du sprichst jetzt von den Chapters, von den Timestamps, also dass die AI automatisch diese Chapters generiert. Also Transkript ist immer die Basis. Und dann probiert man eben mit OpenAI zum Beispiel diese Chapters zu generieren oder eine automatische Zusammenfassung. Aber die genügt unseren Qualitätskriterien zum Beispiel noch nicht. Wir haben Botsquiz lange verwendet, verlinken wir auch gerne. Avonic eben auch. Botsquiz war noch wesentlich besser und das hatten wir mal so als Basis in unserem Workflow drin. Haben wir aber mittlerweile auch rausgeschmissen, weil wir einfach selber ein Transcript erstellen mit Assembly AI, nennt sich die API, ist super günstig. bringt einen super Output, unserer Meinung nach den besten Output und jetzt sind wir gerade dabei herumzuexperimentieren, wie wir endlich Andy ersetzen können. Durch OpenAI und durch JetGPT, dass der vielleicht gewisse Sachen automatisiert, Chapters und da die Kategorien raussucht oder zum Beispiel auch checkt, haben wir irgendwas vergessen in den Shownotes, wenn wir zum Beispiel immer sagen, ja das verlinken wir dann in den Shownotes. Teilweise vergessen wir da irgendwas, vor allem wenn es Andi jetzt nicht mehr durchhört, immer als Qualitätskontrolle und das könnte da natürlich dann JetJPG schon rausfinden im Idealfall. Da sind wir gerade beim Herumexperimentieren, ist aber noch nicht so weit, dass wir sagen, das hat wirklich unsere Qualitätsstandards erreicht, die wir gerne hätten.",
+            "start": 2182841,
+            "end": 2262387,
+            "confidence": 0.8179868421052627,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Im Allgemeinen, alles was wir erwähnen, auch das Hardware Setup und so weiter, werden wir alles in den Shownotes verlinken. Das Problem ist, was wir so ein bisschen haben, wir kriegen keine Daten, wie viele Leute sich wirklich die Shownotes ansehen. Und deswegen wissen wir gar nicht, ob die Arbeit, die wir in die Shownotes stecken, wirklich gerechtfertigt ist. Ich meine, wir stecken da relativ viel Arbeit rein. Aber auch, weil wir gemerkt haben, durch Google, weil alle Show Notes werden auch auf unserer Webseite veröffentlicht, nicht nur im Spotify und Apple und Google Podcast, sondern auch auf unserer Webseite. Und wir merken selbst, dass wir super oft nach irgendeinem Wort suchen und dann Zeit Doppelpunkt, EngineeringKears.dev, nur um uns gegenseitig zu beweisen, dass wir schon mal über das Thema gesprochen haben. Und durch die Transkripte hat das natürlich nochmal einen höheren Wert bekommen. Assembly AI wurde gerade schon von Wolfgang genannt, kostet circa 60 Dollar Cent pro Audio Stunde. Also wer ein Transkript von irgendeinem Audio File braucht, Assembly AI kann ich sehr empfehlen. Für Deutsch sind die Features leider limitiert. Ich warte noch auf die sogenannte Sentiment-Analyse, auch für die deutsche Sprache. Das kann nämlich dann sagen, inwieweit, wie aggressiv oder freundlich wir unseren Podcast betreiben.",
+            "start": 2262727,
+            "end": 2332387,
+            "confidence": 0.8084711538461539,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Ich weiß bis heute nicht, für was du das verwenden willst, aber du bist super happy, wenn du dieses Feature endlich bekommst. Mein Wunsch-Feature wäre, dass es die 1 mittranskribiert, weil die könnt ihr dann nutzen mit den Zeitstempeln, um automatisch die 1 wegzuschneiden, weil das kostet mir extrem viel Zeit.",
+            "start": 2332427,
+            "end": 2349432,
+            "confidence": 0.6960980392156864,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Genau, solche Art nennt man auf Englisch Filler-Words, geht für die englische Sprache. Es gibt auch eine Feature-Matrix, welche Features von Assembly.ai auf welche Sprache gehen. Leider ist die deutsche Sprache jetzt nicht die populärste Sprache für Sie, das ist leider der Fall, aber ich habe noch keinen anderen, besseren Service gefunden als Assembly.ai, zumindest nicht für den Preis und für die Ergebnisse, deswegen nutzen wir ihn erstmal weiter.",
+            "start": 2349792,
+            "end": 2376347,
+            "confidence": 0.7880434782608697,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Und Andi hat das so weit integriert, dass das halt super schnell dann auf der Webseite auch verfügbar ist, automatisiert. Ihr könnt auf die Webseite gehen zu jeder Episode, seht unten das Transkript, könnt da direkt auf die Stelle springen, das euch wirklich anhören, auch sharen, direkt mit einem Link, wenn ihr das mit irgendwem teilen wollt, man kann dann wirklich direkt hinspringen. Und wenn der Andi das fertig gemacht hat, dieser Teil, dann komme ich wieder ins Spiel, weil ich muss ja seine Chapters und Timestamps wieder weiterverarbeiten. Da habe ich mir ein kleines Skript geschrieben, was zum Beispiel seine Timestamps aus dem Dokument nimmt und dann umformt, um das dann wirklich ins MP3 reinzuschreiben. Also ich habe da ein paar kleine Tools, die mir einfach so helfen, mein tagtägliches Leben zu automatisieren, würde ich mal sagen. Timestamp schreiben, die Bildergrößen von irgendwelchen Covern anpassen oder sogar die ganzen Rohschnitte zu archivieren, zu zippen, automatisch in Nextcloud zu sichern. Also einfach so das, was man halt so ständig macht, habe ich einfach ausgelagert in kleine Scripts, die mir dann helfen und mir persönlich Zeit sparen.",
+            "start": 2377043,
+            "end": 2437444,
+            "confidence": 0.802241935483871,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Um die Kapitelmarken ins MP3 selbst als Metadaten zu überführen, haben wir so ein kleines Tool auf GitHub gefunden, nennt sich MP3 Chaps. Verlinken wir auch unten. Ist wirklich irgendwie so ein 100 Zeilen, 200 Zeilen Python-Skript. Faszinierend. Also wir machen hier wirklich Duct Tape a la Perfektion.",
+            "start": 2437830,
+            "end": 2453486,
+            "confidence": 0.7445416666666663,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Und haben halt mit der Zeit immer automatisiert. Also ich habe das am Anfang alles manuell gemacht und irgendwann habe ich einmal gemerkt, okay, jede Woche resize ich dieses dumme Bild von 3000 Pixel auf 1500 Pixel, damit es kleiner ist, weil es teilweise raw ausgeliefert wird. Und irgendwann schreibt man sich dann halt ein Skript dafür. Und mittlerweile geht das einfach alle Bilder durch, verkleinert die und ich rufe das schnell auf und für mich ist es halt jetzt ein Call, anstatt da immer wieder den Call rauszusuchen. Und so kann man halt dann doch am Ende recht viel Zeit sparen, weil wenn das halt am Ende 300 Command-Line-Calls sind, auch nur die kleinen, die man eh in der History hat, aber trotzdem, das macht was aus und da kann man sich definitiv Zeit sparen und vor allem kann man sich viel Kopfweh ersparen, weil es ist einfach extrem nervig und frustrierend, immer die gleichen Commands aufrufen und es macht ja auch keinen Spaß am Ende. Fließbandarbeit.",
+            "start": 2453953,
+            "end": 2502754,
+            "confidence": 0.7584880952380957,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Da wir zum Beispiel Assembly.AI, also die Transkripte erst im Oktober 2023 eingeführt haben und da natürlich schon fast 22 Monate am Start waren und natürlich schon Audio produziert haben, habe ich dann einmal alle Episoden durch Assembly.AI gejagt. Das hat dann auch einmal, ich glaube, 50 Dollar gekostet, aber ich denke, es ist Wertvoll. Wo wir gerade bei Automatisierung sind, der Wolfgang hat ja schon gesagt, der Wolfgang macht das MP3-File fertig und ich hab mir Skripte inzwischen für alles geschrieben, das sind alles so 100, 150 Zeilen lange Python-Skripte.",
+            "start": 2503294,
+            "end": 2536234,
+            "confidence": 0.7630879120879119,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Die ich mal probiert hab zu verstehen, ich hab's aufgegeben, aber ihr müsst es ja auch nicht machen, macht ihr an. Haben wir die eigentlich public?",
+            "start": 2536274,
+            "end": 2543691,
+            "confidence": 0.6319615384615385,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Die sind alle public. Alle Python-Skripte und alle Automatisierungs-Skripte, die wir haben, findet ihr auf unserem GitHub.",
+            "start": 2543731,
+            "end": 2548959,
+            "confidence": 0.8051764705882353,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Aber das sollte man eigentlich nicht machen. Die sind alle so dahin gerotzt, dass man die vielleicht gar nicht public stellen sollte eigentlich. Also bitte am besten nicht hingehen.",
+            "start": 2548999,
+            "end": 2556029,
+            "confidence": 0.7789310344827587,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Ein guter Hack ist ein Provisorium und es funktioniert einfach. Aber wie sind diese Skripte aufgebaut zum Beispiel? Ich gebe einfach nur eine mp3-File ein als URL und sage, wie viele Speaker sind dabei. Also ich kann auch Input-Parameter für die AI geben. Sind wir zwei Speaker, drei Speaker, vier Speaker für die Speaker-Recognition. Und danach kriege ich ein JSON-File. Das speichere ich mir auf Disk mit allen Transkripten. Das konvertiere ich, schiebe das dann in die Webseite. Ich habe aber auch Python-Skripte für wirklich alles. Für einen Import neuer Episoden Beispiel jeden Dienstag läuft um 6 Uhr morgens eine GitHub-Action. Die lädt von unserem Podcast-Hoster automatisch den RSS-Feed runter und importiert dann die Podcast-Episode. Importiert bedeutet eigentlich, ich lege eine Markdown-File irgendwo in spezifischen Folder mit einem ordentlichen Front-Meta, so ähnlich wie das bei klassischen Static-Side-Generatoren kennt und dann wird die ganze Sache automatisch gerendert. Das bedeutet jeden Dienstag stehe ich auf und das neue Cover ist automatisch auf unserer Webseite.",
+            "start": 2556690,
+            "end": 2615857,
+            "confidence": 0.783246913580247,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Außer letztes Mal, wo du dann Dienstagnachmittag gesagt hast, hey Moment, warum ist da auf unserer Webseite noch nichts online? Also Monitoring könnte man noch verbessern, aber der Andi arbeitet ja nicht im Monitoring-Bereich, gar keine Frage. Wenn ihr da übrigens Näheres wissen wollt, Episode 31 haben wir über GitHub Actions und Automation eben anhand unseres Projektes auch gesprochen. Könnt ihr mal reinhören, da hört ihr alle Details, wie das wirklich funktioniert mit dem Import, mit der Generierung, mit dem Static Site Generator und wie das alles funktioniert.",
+            "start": 2616522,
+            "end": 2642923,
+            "confidence": 0.7511136363636362,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Da gibt's noch super viele andere kleine Skripte, wie zum Beispiel, ich kontrolliere, dass alle Player-URLs von allen Episoden immer gefüllt sind. Das bedeutet, wir publishen den Podcast natürlich auf Amazon, auf Google Podcast, auf YouTube, auf RTL+, auf Podio, auf Podimo. Auf dieser und so weiter und so fort. Und all diese Logos haben wir natürlich auch auf unserer Webseite und die verlinken wir auch und deswegen habe ich so Skripte, die crawlen, diese Dienste. Ich habe aber auch ein Skript zur Statistikgenerierung, denn wir halten uns immer vor, wer denn jetzt hier bei den Podcasts endlich jetzt mehr redet. Immer war es so, boah. Du hast aber wieder so einen Monolog geführt, das ging mir jetzt aber schon wieder auf die Nerven. Und dann warst du so, hä, ich hab doch gar nicht geredet in der Podcast Episode, du hast doch 90% geredet. Ja, und dank der Transkripte habe ich das jetzt einfach mal errechnet und jetzt können wir wirklich effektiv sagen, wer wie viel Redeanteil hat und ich möchte mich weiter zu diesem Statistik nicht äußern.",
+            "start": 2643303,
+            "end": 2697637,
+            "confidence": 0.7521899441340779,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Also man kann sich denken, wer mehr redet, aber das wissen sowieso alle, wer mehr redet, ist ja klar.",
+            "start": 2698398,
+            "end": 2702541,
+            "confidence": 0.5961052631578947,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Aber da geht es dann halt so um die Statistiken, wie viele Episoden haben wir, was für eine Länge haben wir, was ist die durchschnittliche Episode, was ist das meistgenutzte Tag, weil wir taggen auch jede Episode und so weiter und so fort. Die Webseite selbst zahlen wir auch nichts für, liegt auf GitHub, wird von Netlify gefetcht und von Netlify kostenlos gehostet.",
+            "start": 2703167,
+            "end": 2725194,
+            "confidence": 0.7980634920634921,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Superschnell, CDN, danke Netlify. Funktioniert erstaunlich gut, hatten nie Probleme irgendwie da mit Static Site Generator, haben wir auch eine eigene Episode dazu gemacht zu Static Site Generators. Die eigentliche Hosting Plattform ist ja Red Circle, das haben wir schon erwähnt, also da wo die MP3-Files liegen und wirklich die ganzen Metadaten, sprich die Shownotes, der Titel. Also dieser RSS-Feed, der dann wirklich ausgeliefert wird an Spotify, an Apple, an Pocket Casts und die ganzen Podcast Fetcher, die es so gibt. Und das ist unser Single Source of Truth, weil auch da nehmen wir eigentlich unsere Daten dann her, um die Webseite zu generieren.",
+            "start": 2725214,
+            "end": 2758983,
+            "confidence": 0.766153846153846,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Red Circle, muss man nochmal kurz wissen, es gibt etliche Podcast-Hoster, aber Red Circle ist eigentlich ein Service für dynamische Ad-Injections in Podcasts.",
+            "start": 2759457,
+            "end": 2769824,
+            "confidence": 0.7927826086956521,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Naja, das ist ein Feature, wo sie am ehesten Geld damit verdienen. Wir verwenden immer noch die kostenlose Variante, müssen wir dazusagen, weil wir das andere Zeug alles nicht brauchen, diese Ad-Injections und so weiter. Da ist auch nicht viel weitergegangen bei denen, aber es ist kostenlos, da dürfen wir uns wirklich nicht beschweren. Die machen einen guten Job, hatten auch nie Probleme bisher. Der kleine, kleine Nachteil, den ich so sehe, ist, dass wir halt keine API haben dort, um irgendwas automatisiert draufzuladen. Und drum ist unsere Single Source of Truth woanders. Und das ist ein bisschen so bei mir noch ein Dorn im Auge. Da haben wir nämlich keine richtige Ownership von unseren Daten. Wir haben schon die Daten alle in Google Docs, wo wir das vorbereiten. Aber es ist halt irgendwie nicht so schön und man könnte dann schon gewisse Sachen automatisieren, vielleicht die Covers automatisch generieren und die Titel und solche Sachen in Covers. Da sind wir noch sehr manuell eigentlich am Weg, weil wir da auch eben ein bisschen abhängig sind von RedCircle, die keine saubere API haben, wo wir was hinsenden können.",
+            "start": 2769884,
+            "end": 2824502,
+            "confidence": 0.7823776595744686,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Du sagst, der kleine Nachteil, es gibt in letzter Zeit nichts, was mir härter auf den Sack geht, als dass RedCircle keine API hat.",
+            "start": 2824782,
+            "end": 2832466,
+            "confidence": 0.7585416666666668,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Ja, du musst ja nichts machen mit RedCircle, mache ja alles ich.",
+            "start": 2832486,
+            "end": 2834727,
+            "confidence": 0.5463333333333333,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Also wenn uns ein Red-Circle-Engineer zuhört, bitte baut mal eine API oder schaltet sie uns frei.",
+            "start": 2835127,
+            "end": 2840808,
+            "confidence": 0.7220624999999998,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Also es gibt auch kostenpflichtig keine API, dass das nur klar ist. Dann würden wir wahrscheinlich sogar zahlen dafür, aber nur damit wir Dynamic Ad Injections machen können, was wir nicht brauchen, zahlen wir natürlich auch nicht. Es gibt andere Hoster, aber es ist halt auch schwierig, dann wieder umzusteigen. Es ist gewisser Aufwand. Also da ist auf jeden Fall Verbesserungsbedarf, aber da kommen wir später nochmal darauf zurück.",
+            "start": 2841108,
+            "end": 2862913,
+            "confidence": 0.7886521739130434,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Könnten wir unser Podcast-Hoster umziehen? Ja, könnten wir. Ist es uns so viel wert? Nee, weil es ist schon wieder ein riesiger Hekmik.",
+            "start": 2863380,
+            "end": 2870003,
+            "confidence": 0.7622608695652174,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Ja, so schwierig ist es ja gar nicht, aber es ist halt Aufwand, der betrieben werden muss. Und sonst, wie gesagt, könnten wir doch einige Sachen optimieren. Eben auch zum Beispiel die Cover-Erstellung, die ist derzeit manuell. Show Notes ist auch sehr manuell. Das machen wir über Google Docs geshared, eben wir zwei gemeinsam. Wir haben zwar ein paar Skripte, die da Sachen machen, eben die Chapters zum Beispiel. zu konvertieren aus einem normalen Textformat, das ihr bei den Show Notes findet, damit wir das eben automatisch in die MP3 schreiben können als Chapters. Also da gibt es schon Möglichkeiten, aber da ist noch viel manuelle Arbeit eigentlich drin. Und wenn wir dann über sowas wie Marketing sprechen, wo wir Reels haben, Videos, da ist halt dann wirklich viel manuelle Arbeit drin. Da sind wir gerade dabei Möglichkeiten zu finden, zu automatisieren und da passiert ja auch ganz viel eigentlich am Markt aktuell. Die Tools, die behaupten, wir machen automatisch Reels, finden die perfekte Stelle aus deinem Podcast, wenn du das mit uns aufnimmst. Riverside zum Beispiel. Auch Sendcaster, was wir verwenden, hat so ein Feature. Aber ehrlich gesagt, deutsche Podcasts und die finden dann irgendwelche komischen Stellen, wo wo Andy irgendwas daher schwafelt, was niemanden interessiert, macht er ein schwindiges Reel draus, was niemanden interessiert. Also es funktioniert aktuell einfach null, würde ich mal sagen. Also da haben wir null Hilfe davon. Und da ist super viel manuelle Arbeit. Also diese ganzen kleinen Dinge, die Video, Reels, auch Audio, Video zusammen betreffen, weil wir schneiden ja Audio, haben dann aber ein Video, was eben nicht geschnitten ist und nicht gesynkt wieder mit dem Audio. Das ist eigentlich so ein Problem. Falls wer da eine gute Lösung hat dafür, wie man da in irgendeiner Form besser automatisieren könnte, sofort her damit bitte.",
+            "start": 2870724,
+            "end": 2974966,
+            "confidence": 0.8017086092715233,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Und seit ich mal gesehen habe, wie viel Arbeit eigentlich so die Erstellung eines Instagram Reels, YouTube Shorts oder von mir aus auch TikTok ist, muss ich zugeben.",
+            "start": 2975366,
+            "end": 2983689,
+            "confidence": 0.7352142857142857,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Bewunderst du alle Influencer?",
+            "start": 2984225,
+            "end": 2987126,
+            "confidence": 0.80075,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Jeder, der sagt, du bist Influencer, das ist ja gar keine Arbeit. Ihr seid so falsch, ihr seid so off. Diese Erstellung von diesem Reel, also entweder musst du da eine unglaubliche Passion für haben, aber es ist einfach mega viel Arbeit.",
+            "start": 2987146,
+            "end": 2998590,
+            "confidence": 0.7340476190476192,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Ich glaube, das sagen auch viele einfach, dass die acht Stunden da an Reels Erstellung sitzen und ich bin jetzt kein Profi natürlich und ich mache nicht viele Reels. Aber wenn man für so einen dummen Reel, der 30 Sekunden dauert, dann zwei Stunden sitzt, um die ganzen Schritte zu machen, um da ein Transkript reinzukriegen, um Untertitel reinzukriegen, um irgendwelche Effekte reinzukriegen, mal die Stelle überhaupt suchen, die auszuschneiden, drei Videos zusammenfassen aus drei Streams mit dem Interviewer. Also das dauert alles ewig, der Feinschliff am Ende. Also wenn da eine AI ist, die mir die Arbeit abnehmen würde, ich würde sie sofort nehmen.",
+            "start": 2998610,
+            "end": 3030996,
+            "confidence": 0.7581142857142859,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Thema Reels, warum machen wir den ganzen Quatsch eigentlich? Im Endeffekt ist das Ziel, dass wir unsere Hörerschaft ein bisschen vergrößern. Also wenn ihr uns zum Beispiel ein bisschen Arbeit abnehmen wollt, nehmt einfach den Podcast, schmeißt den mal bei euch im Firmen Slack rum oder Teams oder Google Chat oder Mastodon oder was ihr auch immer habt und sagt mal, hey, die beiden, die machen ab und zu mal ganz guten Content, hört doch mal rein, das wäre Uns wirklich, muah, Chefkiss. Vielen lieben Dank dafür, dass ihr uns einfach mal weiterempfehlt. Da würdet ihr dem Wolfgang, offengesprochen der Wolfgang ist unser Realschneider, etliche Stunden Arbeit sparen.",
+            "start": 3031336,
+            "end": 3064288,
+            "confidence": 0.7096481481481483,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Und wir veröffentlichen natürlich auch auf Twitter, Masterdon, LinkedIn, TikTok, Insta, alles was da dazugehört. Wir verstehen die wenigsten Plattformen, muss man auch dazu sagen. Ist einfach ein Zeitproblem. Aber wir haben uns auch ein paar andere Marketing-Ideen überlegt, die vielleicht nicht jeder macht, weil auf Twitter und Masterdon und LinkedIn ist ja jeder. Aber wir haben uns da auch ein paar andere Dinge überlegt über die Zeit, wo wir den Podcast so aufgebaut haben.",
+            "start": 3065030,
+            "end": 3087233,
+            "confidence": 0.7803466666666665,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Und zwar hatten wir gedacht, können wir irgendwie viral gehen? Und die Antwort war, nein können wir nicht. Das haben wir versucht. Wir haben mal ein kleines Projekt gestartet zu Open-Source-Software-Namen. Woher haben eigentlich populäre Open-Source-Softwares ihre Namen? Wie MySQL, MariaDB, Apache Hadoop, Apache Kafka, Kubernetes, Curl, Debian, Laravel und so weiter und so fort. Und diese ganze Information ist als eine Art Markdown-File auf GitHub verfügbar. Offen gesprochen, ich finde die Idee immer noch geil. Aus irgendwelchen Gründen haben wir die gar nicht so weiterverfolgt. Und den Buzz darum haben wir auch noch nicht gemacht. Vielleicht ist das noch so ein Hidden Feature. Schauen wir mal, ob wir das nochmal irgendwann weitermachen. Aber verlinken wir natürlich auch. Also...",
+            "start": 3087907,
+            "end": 3128312,
+            "confidence": 0.7429075630252102,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Aber eine Awesome List, die wirklich funktioniert hat, und das ist ja nichts anderes als eine Awesome List, in dem Fall von Open Source Namen, aber wir haben eine Awesome List kreiert von deutschen Tech-Podcasts. Und der Hintergrund von dem Ganzen war eigentlich, dass wir uns überlegt haben, in unserem Konzept, das wir schon erwähnt haben am Anfang, was wir eigentlich machen wollen. Wir wollen ja so ein Podcast machen im Tech-Bereich, das einerseits die Technik ein bisschen abdeckt, aber auch den ganzen Bereich rundherum. Denn Tech ist ja nicht so schwer. Die Leute sind das Problem. Das macht ja sonst niemand in Deutschland. Wir hatten das schon so grob gesucht und hatten keine Podcasts gefunden. Und dann haben wir uns mal überlegt, was gibt's denn sonst für Tech-Podcasts eigentlich am deutschen Markt? Das war schon später. Und dann haben wir gemerkt, oh, waren wir falsch. Es gibt so viele deutsche Tech-Podcasts und so viele coole deutsche Tech-Podcasts von Gaming, Security, auch Engineering Manager, Daemon, zumindest teilweise. Also wir sind nicht die einzigen da draußen, die so eine gute Idee hatten, einen Podcast zu starten.",
+            "start": 3129313,
+            "end": 3189492,
+            "confidence": 0.7899837837837839,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Ich dachte initial, wir füllen eine Nische, aber inzwischen haben wir 96 kuratierte deutsche Tech-Podcasts, deutschsprachige, nicht deutsche, also da gehören natürlich auch Österreicher und Schweizer dazu.",
+            "start": 3189847,
+            "end": 3198710,
+            "confidence": 0.679074074074074,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Ich glaube, wir haben einen Schweizer Podcast, oder? Das ist der einzige. Aber es sind zumindest ein paar Deutsche und Österreicher dabei. Sorry, Schweizer und Österreicher in den Podcasts oder Österreicherinnen.",
+            "start": 3198931,
+            "end": 3208254,
+            "confidence": 0.6441612903225808,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Und da sind ein paar richtig, richtig, richtige Perlen dabei. Und immer wenn ich etwas Neues suche zum Hören, muss ich zugeben, gehe ich inzwischen in unsere eigene deutschsprachige Tech-Podcast-Liste. Und das war wirklich, das ist ein spannendes Phänomen, denn immer mal wieder poste ich auf LinkedIn die Neuzugänge und tagge dann die Autoren dieser Podcasts. Und da kriegt man dann schon immer mal wieder so ein bisschen Buzz mit, Marketing Buzz, das ist immer schön. Dann sagen die, hey danke, da habe ich auch einen neuen Podcast entdeckt. Und dieses Feedback kriegen wir regelmäßig, dass Leute in dieser Liste neue Podcasts entdecken.",
+            "start": 3208294,
+            "end": 3240892,
+            "confidence": 0.7706504854368932,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Es ist auch eine super besuchte Seite, also da gehen wirklich viele Leute drauf, das freut uns natürlich extrem, also wir haben kein Problem mit Konkurrenz, da hat jeder seine Nische und wir sind sogar mittlerweile mit einigen Podcast-Hosts befreundet, wir haben da Kontakt aufgebaut, wir sind da mit allen bei E-Mail in Kontakt getreten, dass wir diese Liste haben, natürlich auch eine gewisse Marketing-Idee dahinter, aber wir haben da jetzt einfach auch eine größere Gruppe, die Austausch betreibt, wie macht ihr das, wie funktioniert das und wir Haben da einfach mittlerweile nette Leute getroffen. Ihr könnt es auch in Podcast Episode 100 unserer Jubiläumsfolge hören, wo uns andere Podcaster und Podcasterinnen Fragen stellen. Also begonnen hat es irgendwie so als Marketing-Idee und geendet hat es einfach als eine große Community, glaube ich, die allen hilft und uns hilft und anderen Leuten hilft, neue Podcasts zu entdecken. Und genau das soll es am Ende sein.",
+            "start": 3241092,
+            "end": 3292752,
+            "confidence": 0.8095935483870969,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Das Schöne ist, auch wie in der Software-Engineering-Welt, haben wir festgestellt, alle kochen nur mit Wasser. Vielleicht hat der eine oder andere ein paar mehr Wasserkocher, so ähnlich wie Facebook, aber im Endeffekt machen die alle das Gleiche, haben dieselben Probleme. Und als schönes Endresultat wurde mal ein T3N-Artikel über diese Liste sogar veröffentlicht. Das hat mich sehr gefreut, denn natürlich auch T3N hat ein gewisses Interesse an der Podcast-Community.",
+            "start": 3293072,
+            "end": 3317007,
+            "confidence": 0.7718857142857143,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Ob es uns am Ende so viel gebracht hat, wissen wir nicht, aber es ist auf jeden Fall eine nette Sammlung, die wir einfach extrem toll finden. Also wenn ihr noch irgendwie einen Podcast habt, den ihr da vermisst, wir akzeptieren auch Pull-Requests und solange das in einem technischen Umfeld passiert, sind wir da auch happy, das hinzuzufügen. Eine andere Community, die wir gestartet haben, und das war vor allem uns wichtig, also es ist zwar nett, mit anderen Podcastern zu sprechen, aber es ist immer noch ein Problem, wir sprechen da ständig in so ein schwarzes Mikrofon, in ein schwarzes Loch eigentlich hinein, und wir haben keine Ahnung, wer da draußen eigentlich uns hört, und uns hat dieser Rückkanal extrem gefehlt. Klar bekommt man hin und wieder ein E-Mail, aber wir wollten irgendwie das nutzen, weil es ist ja auch eine ganz spezielle Nischen-Community, wir EntwicklerInnen, die so im deutschsprachigen Raum unterwegs sind. Und darum haben wir uns irgendwann entschlossen, auch zusammen, mit dem Zeitpunkt, wo die letzte FOSDEM war, dass wir uns mal auf der FOSDEM treffen und einen Kanal brauchen, um zu kommunizieren mit den Leuten, mit denen wir uns treffen, und haben darum unsere Discord-Community gestartet, um den Rückkanal zu haben. Und wir haben jetzt eine Discord-Community, wo EntwicklerInnen mit dabei sind. Es joinen wirklich einige Leute pro Woche. Das ist eine Community, die Personen aus den unterschiedlichsten Bereichen haben, also wirklich Man kann sich das gar nicht vorstellen, wir haben da so einen Channel, wo man sich vorstellen kann, also das sind von Quereinsteigern bis zu absoluten Profis, die seit 30 Jahren in irgendeinem Thema drin sind. Das sind wirklich coole Leute aus den unterschiedlichsten Firmen, auch großen Firmen und das ist auch unser Ziel, dass nicht wir dann nur Informationen verbreiten, sondern das sollte ja auch eine Dachmarke sein, das Engineering Kiosk. um Wissensaustausch zu haben, nicht nur in den Meetups, sondern eben auch remote in so einem Discord-Server zum Beispiel, wo man einfach Fragen stellen kann. Was meint ihr? Und wir hatten da auch zum Beispiel Themen, wo es um wirklich kritische Sachen geht in dem Team, wenn man Probleme mit Leuten hat, wo super Austausch stattgefunden hat, wo nicht wir geantwortet haben, sondern wirklich andere Leute und wo man Meinungen bekommt. Und genau darum haben wir eigentlich Engineering Kiosk hier gegründet, um genau diesen Wissensaustausch auf mehreren Ebenen zu haben. Und Discord ist eine davon. Also, wer noch nicht dabei ist, was kannst du sagen?",
+            "start": 3317587,
+            "end": 3449415,
+            "confidence": 0.8143220338983044,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Es ist aber noch nicht zu spät, dieser Community beizutreten. Also, link natürlich wie immer in den Show Notes oder auf unserer Webseite. Schaut einfach mal rein, was da so abgeht. Stellt auch eure technischen Fragen, da kriegt ihr auf jeden Fall reale Antworten, wie andere Leute das in Firmen lösen. Jetzt betreiben wir dieses ganze Side Project ja schon ein bisschen länger als zwei Jahre und der Wolfgang lacht zwar immer drüber im Podcast und es ist zum Glück noch kein Running Gag, aber ich bin ein großer Fan vom Aufschreiben. Nicht, weil ich dumm bin, einfach nur, weil ich so viel um die Ohren habe, dass ich das einfach nur vergesse. Und durch das Aufschreiben hat es so ein kleines Movement zur Professionalisierung gegeben. Denn über die Zeit ist unsere Dokumentation doch schon sehr angewachsen und ich würde sagen auch schon sehr, sehr professionalisiert. Also eigentlich haben wir Listen für alles. Wir haben Listen für die Checklisten zum Publishen einer neuen Episode. Das bedeutet, jeden Dienstag acker ich eine Checkliste ab, was ich alles tun muss, um eine Episode zu veröffentlichen. Das ist, die Episode taggen, einen LinkedIn-Post machen, auf Twitter was posten und den Tweet dann oben pinnen und so weiter und so fort. Das kann eigentlich theoretisch jeder, es macht aber eigentlich immer dieselbe Person, aber damit man … Achieve-Marketing-Officer. Achieve-Marketing-Officer, genau. Aber generell ist unsere Art und Weise von Dokumentation sehr hoch. Wir hatten vorhin mal auch mal kurz Gäste erwähnt. Auch da ist die Professionalisierung vorangeschritten. Das bedeutet, wir haben ein Template erstellt, wo wir alle Informationen, wie wir aufnehmen, was unser Ziel ist, was ist unsere Zielgruppe, wie sieht unsere Statistik aus, Altersverteilung und so weiter. All das nutzen wir auch und schicken wir der Person auch im Vorhinein zu, damit die Person sich dann noch entsprechend vorbereiten kann. Und wir haben auch sehr, sehr positives Feedback bekommen und uns wurde auch gesagt, wo ich stark lachen musste, Wolfgang jetzt nicht, der sagt doch, das stimmt ja doch, aber ich musste stark lachen. Er sagt, boah, wie professionell agiert ihr hier? Und ich so, ich hab doch nur zwei Sachen aufgeschrieben.",
+            "start": 3449455,
+            "end": 3564040,
+            "confidence": 0.8001983240223466,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Also es klingt jetzt so kompliziert, Template und so weiter. Das ist einfach ein Google Doc, wo wir die Sachen immer reinschreiben, die frequently asked questions, diese Dinge, die halt einfach wichtig sind. Wie funktioniert es technisch? Was braucht man für ein Equipment? Bitte habt Kopfhörer, damit wir da keine Rückkopplungen haben. Was für Themen sollen wir vorbereiten? Was für Zielgruppe wollen wir erreichen? Und so weiter. Und da haben wir eigentlich ein vorbereitetes Dokument, das schicken wir aus. Und dann können die Leute, die wir interviewen, auch da halt Kommentare reinsetzen, ihre Themen reinbringen. Das heißt, man hat auch so einen asynchronen Flow, wo man super das Ganze vorbereiten kann. Alle Beteiligten haben Zugriff drauf, wissen, um was es geht. Wir haben da einen roten Faden am Ende drin, thematisch, den wir abhandeln wollen in dem Interview. Und das ist super praktisch. Wir haben das auch übrigens beim Meetup. Danke Andi dafür. Also wir haben das fortgeführt bei unserem Meetup. Genauso, da haben wir ein Dokument für den Location-Host, für den Speaker, das senden wir einfach raus. Da steht genau drinnen, was Sache ist, wie lang der Talk sein soll und so weiter. Also umso mehr man da einfach definiert hat, umso besser, weil dann hat man das einfach aufgeschrieben, kann es raussenden und gerade die Dinge, die wiederholen sich halt ständig. Also egal, ob es jetzt ein Meetup ist, ein Speaker, ein Interview, die Sachen braucht man ständig und schreibt man sich halt einmal auf, kann man schön erweitern, ist ein lebendiges Dokument. Und das haut man dann einfach raus und das vereinfacht den Ablauf unglaublich. Und da hat man auch so Features in Google Docs wie Kommentare zum Beispiel. Das unterschätzt man, wie wichtig das ist, weil wie kommuniziert man denn mit jemandem, den man interviewen will? Da hat man ja nun die E-Mail-Adresse. Soll man jetzt 20 E-Mails hin und her senden? So macht man einen Kommentar rein und das funktioniert automatisch. Google Docs kennt jeder. Das ist super easy zu arbeiten, asynchroner Flow. Und das ist auch eine gewisse Art von Automatisierung. Das würde man vielleicht jetzt nicht glauben, aber das automatisiert Dinge.",
+            "start": 3564420,
+            "end": 3671209,
+            "confidence": 0.7868435754189933,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Offen gesprochen, der Wolfgang ist nicht der größte Schreiber bei uns in den Dokumenten, aber ich sag mal so.",
+            "start": 3671229,
+            "end": 3676213,
+            "confidence": 0.5726842105263157,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Ich bin ja Nutzer, nicht Schreiber. Schreiben kannst du, aber ich bin Nutzer. Nutzen isser.",
+            "start": 3676253,
+            "end": 3680096,
+            "confidence": 0.6947333333333333,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Ich maintaine auch Listen zur Episodenplanung, denn ab und zu haben wir Wochen, wie zum Beispiel, wenn der Wolfgang mal wieder auf Reisen ist oder ich irgendwo, dann müssen wir natürlich vorproduzieren und dann haben wir uns irgendwie angewöhnt, eine gewisse Episodenplanung auf den Tisch zu legen. Wann veröffentlichen wir welche Episode, um natürlich auch irgendwie den Gästen eine Möglichkeit zu geben, sich darauf vorzubereiten, wann ihre Episode kommt. Um das Thema Gäste nochmal so ein bisschen abzuschließen. Wir haben mit den Gästen erst im April 23 angefangen, also ich würde mal sagen knapp anderthalb Jahre nachdem wir den Podcast gemacht haben. Nicht weil Wolfgang und uns die Themen ausgegangen sind, sondern primär weil wir... Wolfgang.",
+            "start": 3680651,
+            "end": 3716318,
+            "confidence": 0.7789482758620686,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Und uns, sprichst du jetzt schon von dir in der Mehrzahl. Die majestätische Mehrzahl, oder?",
+            "start": 3716358,
+            "end": 3721500,
+            "confidence": 0.6877999999999999,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Weil Wolfgang und mir die Themen ausgegangen sind, sondern vielmehr, weil die Informatik und die Softwareentwicklung und die Techbranche viel, viel größer ist, als dass wir da irgendwelches Fachwissen in manchen Bereichen vorbereiten.",
+            "start": 3721860,
+            "end": 3731767,
+            "confidence": 0.7704545454545456,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Ja, wir wollen ja auch was lernen außerdem.",
+            "start": 3731787,
+            "end": 3733408,
+            "confidence": 0.394,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Ja, stimmt.",
+            "start": 3733448,
+            "end": 3734668,
+            "confidence": 0.47050000000000003,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Von dir lernt ihr nichts mehr.",
+            "start": 3734708,
+            "end": 3735909,
+            "confidence": 0.44733333333333336,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Zwischen uns lernen haben wir schon lange aufgegeben. Nee, aber deswegen haben wir uns viele interessante Gäste seitdem auch schon einladen dürfen. Und wie läuft das eigentlich ab? Im Endeffekt mache ich ein Outreach via E-Mail oder ich spreche diese Leute auf irgendeinem Meetup an. erkläre kurz das Konzept des Podcasts und frage, ob Interesse da ist. Danach versende ich meist ein bisschen mehr Informationen. Das bedeutet, wie läuft die Aufnahme ab, worauf wollen wir den Fokus legen oder lassen uns natürlich auch das Thema ein bisschen erklären. Und danach sammeln wir Informationen, wir bereiten uns alle vor und danach haben wir in der Regel eine Art Interviewformat. Vieles machen wir auch in einem Pre-Call. Dann treffen wir uns vorher in einem 20-minütigen Video-Call. Ab und zu verbinden wir den Pre-Call mit der Aufnahme, je nachdem wie podcast-erfahren die Person ist. Und dann geht es natürlich dann an die Aufnahme und dann den Editing-Workflow hatten wir schon beschrieben und später gibt es die Veröffentlichung. Jetzt ist natürlich die große Frage, wie finden wir Gäste? Und ich muss zugeben, schwierige Frage. Im Endeffekt lassen wir uns von dem Internet, den Konferenzen, von unserem Netzwerk schon irgendwie inspirieren. Wir stellen uns auf der einen Seite die Frage, über welches Thema wollen wir denn mal was hören? Welches Areal finden die denn mal interessant? Und dann schauen wir uns an, was gibt es denn für eine Person in dem Bereich? Wir hatten aber auch schon Elemente, da saßen wir auf einer Konferenz und haben uns ein Talk angesehen und haben gesagt, wow, was war das denn hier für ein Thema? Ich wusste gar nicht, dass das so tief geht. Ja, danach kurz die Speakerin angequatscht und flups, so kam eine Connection zustande und von da aus geht's weiter. Ganz, ganz komisch, ganz wild. Wir lassen uns einfach, ich sag mal, von der Umgebung inspirieren.",
+            "start": 3735929,
+            "end": 3836496,
+            "confidence": 0.7865337620578774,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Was uns aber auch noch wichtig ist, und das schränkt das Ganze ein bisschen ein, ist, dass wir versuchen, Leute zu bekommen, die sich wohlfühlen auf der Audiospur, würde ich mal sagen. Und ein Thema irgendwo erklären können. Und das probieren wir natürlich im Vorfeld auch irgendwie rauszubekommen. Gibt's da vielleicht ein Talk von der Person oder gibt's da schon Audio-Material? Weil es gibt natürlich Spezialisten, die absolut in dem Thema drin sind, aber dann vielleicht einfach nicht so die Bühnenleute sind, die da Spaß dran haben, das rüberzubringen. Und das ist dann halt auch für alle Beteiligten schwierig. Und darum probieren wir das im Vorfeld auch so weit möglich natürlich in irgendeiner Form rauszubekommen. Und das schränkt dann natürlich schon ein. Also wir wollen interessante Leute haben. Es soll keine Werbung werden. Die Leute sollen natürlich in irgendeiner Form Erfahrung haben in dem Bereich, wo wir sie interviewen. Und dann sollen sie sich auch noch wohlfühlen in einem Audio-Podcast-Format, wo man keine Slides hat, wo man nicht irgendwas mit den Händen zeigen kann, sondern wo man nur die Stimme hat, was ja uns selber auch ganz oft Probleme macht, da irgendwie ein Thema zu erklären, vor allem wenn es technische Themen sind. Wie soll man denn irgendein Code-Beispiel erklären über Audio? super schwierig und dann ist es gar nicht so leicht, da die richtigen Leute zu finden und dann noch eben zu fragen, dass sie zu uns kommen als Interviewgäste. Also wir sind echt sehr dankbar, dass da Leute zu uns kommen und ihre Zeit kostenlos zur Verfügung stellen und das ist wirklich, das sind alles unbezahlte Interviews und wir bekommen nichts bezahlt, die Leute bekommen nichts bezahlt und die wollen eben auch nur ihr Wissen teilen und danke dafür.",
+            "start": 3836536,
+            "end": 3925612,
+            "confidence": 0.8127560137457039,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Offen gesprochen, wir machen auch keine Sponsoring-Episoden. Das bedeutet, man kann auch keine Episoden kaufen oder niemals haben wir einen Speaker genommen, der uns selbst angeschrieben hat, hey, ich möchte bei euch im Podcast sein.",
+            "start": 3926012,
+            "end": 3937842,
+            "confidence": 0.724,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Was übrigens sehr üblich ist in der Branche. Wir bekommen extrem viele Angebote diesbezüglich und wir kennen auch viele Fälle, wo Interviews einfach bezahlt werden. Und vor allem die großen Podcasts, die es so gibt da draußen, da sind ganz viele Interviews bezahlt. Und zwar, dass die Podcaster bezahlt bekommen für das, dass jemand interviewt wird, irgendein CEO, ein CTO.",
+            "start": 3937862,
+            "end": 3959481,
+            "confidence": 0.8056500000000001,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Im Endeffekt kann man diesen Podcast und auch die Gäste, die wir einladen, schon so als kleine Spielwiese für uns betrachten, denn auch Wolfgang und ich fragen uns, ist dieser Gast oder ist diese Person oder diese Dame sehr interessant für uns? Können wir da was lernen? Haben wir da Bock drauf auf dieses Thema?",
+            "start": 3959501,
+            "end": 3976179,
+            "confidence": 0.8346363636363635,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Was natürlich schon oft schwierig ist, weil wir haben schon unterschiedliche Interessen, muss man schon auch dazu sagen.",
+            "start": 3977000,
+            "end": 3981963,
+            "confidence": 0.7841111111111112,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Wir rattern auch mal aneinander, muss man auch dazu sagen. Und ich bin dann auch oft hart genervt von Wolfgang und er, glaube ich, auch von mir. Aber ich glaube, das ist ähnlich wie in einer Ehe.",
+            "start": 3981983,
+            "end": 3991308,
+            "confidence": 0.7318648648648647,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Am Ende sollte eine gute Qualität raus schauen. Ich hoffe, das ist irgendwo ersichtlich. Unsere Kämpfe enden dann in guter Qualität, hoffentlich.",
+            "start": 3991348,
+            "end": 3997872,
+            "confidence": 0.7574545454545455,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Ich hatte schon von Ehe gesprochen und Ehe bedarf auch einer gewissen Art von Professionalisierung, denn... Ach jetzt, du professionalisierst deine.",
+            "start": 3998132,
+            "end": 4006197,
+            "confidence": 0.7489999999999999,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Ehe, das ist interessant. Ich bin ja nicht verheiratet, du bist verheiratet.",
+            "start": 4006237,
+            "end": 4009659,
+            "confidence": 0.5815,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Jetzt ist es so, auch der Wolfgang und ich betreiben dieses Seitenprojekt schon recht professionell. Wir machen einmal im Quartal eine sogenannte Milestone-Review. Die machen wir seit Anfang an und wir beginnen diese Milestone-Review immer mit der Frage, hey Wolfgang, Ja bitte. Macht dir das noch Spaß? Das ist auch immer die Key-Frage und in dem Dokument dokumentieren wir auch so ein paar Zahlen.",
+            "start": 4009699,
+            "end": 4031931,
+            "confidence": 0.7610468750000001,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Wichtig ist, muss nicht ein Dokument sein, beim Annehmen muss immer ein Dokument dahinterstecken.",
+            "start": 4031951,
+            "end": 4035233,
+            "confidence": 0.5373571428571429,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Wachstumszahlen und aber auch was wir uns für das nächste Quartal vornehmen, Zielungen und so weiter, denn natürlich können wir das hier halbherzig machen, aber ganz im Ernst, wenn wir das halbherzig machen, dann können wir das auch einstellen. Deswegen ist immer eine spannende Milestone Review. Teilweise sehr ehrliche Antworten und ab und zu gefallen uns die Antworten von dem anderen auch nicht immer so, aber immer auch gute Diskussionen dabei. Hat auch schon sehr viel gelernt darüber, muss man auch sagen. Also kann ich wirklich nur jedem ans Herz legen, der ein Seitenprojekt mit einer Partnerin oder einem Partner macht, dass dann halt wirklich auch offen über die Schwierigkeiten gesprochen wird. Denn ab und zu ist es auch nicht so einfach, in meinem privaten Leben ist es ab und zu nicht so einfach und ich kann bestimmt nicht immer so viel Zeit für dieses Projekt irgendwie committen und das ist bei Wolfgang nicht anders und dann müssen wir uns auch, also ich trage auch meine Urlaube ein, also Wolfgang weiß auch wann ich im Urlaub bin zum Beispiel, weil dann können wir ja keine Aufnahmen machen. Und all sowas. Also das ist schon eine harte Planung, würde ich sagen.",
+            "start": 4035253,
+            "end": 4092402,
+            "confidence": 0.7437900000000001,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Und man hat halt einfach einen fixen Punkt, wo man reflektieren kann. Und alle, die Software entwickeln als Scrum und so weiter, wissen das ja, wie das ist mit den Retrospektiven, wo man sich eben zusammensitzt und darüber diskutiert und genau dasselbe machen. Wir im Prinzip auch. Und da besprechen wir natürlich auch, was wir in Zukunft machen wollen, was die nächsten Milestones sind, was wir erreichen wollen. Und das ist schon ein guter Punkt. Jetzt haben wir schon viel gesprochen über das, was aktuell läuft, was automatisiert ist, wie unser Tech Stack da aussieht. Wir haben übrigens Astro gar nicht erwähnt, oder? Dein tolles Pre-Alpha-Framework. Ich bin eh schon ganz zufrieden. Nur zur Information, dass wir das als Static Site Generator verwenden, aber da haben wir, glaube ich, auch eine eigene Episode, beziehungsweise bei den GitHub Actions Episode 31 darüber gesprochen. Aber Andi, was bringt die Zukunft? Was willst du noch verbessern von unserem Textstack, von der Automatisierung? Wir haben jetzt schon ein bisschen wegautomatisiert, du musst die Episode nicht mehr hören, sondern du transkribierst sie und liest sie dann nur mehr im Überflug. Wo ist Potenzial?",
+            "start": 4092442,
+            "end": 4152435,
+            "confidence": 0.7699361702127662,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Ja, jetzt kann man darüber streiten, ob wir ins Overengineering gehen oder nicht, aber auf jeden Fall, wir haben auf jeden Fall noch mal ein paar Ideen für die Zukunft und wie wir auch unser Workflow ein bisschen erleichtern. Und zwar maintainen wir aktuell alle Daten in sogenannten Markdown Files mit einem Front Matter in unserem Repository und auch die Source of Truth ist leider Red Circle, wo wir die Daten dann einstellen.",
+            "start": 4152876,
+            "end": 4172942,
+            "confidence": 0.7899726027397259,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Also es wird als Red-Circle-Metadaten als erstes aus dem RSS-Feed Markdown erzeugt, die nicht mehr verändert werden, automatisiert, aber dort können wir dann Änderungen vornehmen.",
+            "start": 4173362,
+            "end": 4184115,
+            "confidence": 0.8646400000000001,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Genau. Was wir jetzt machen wollen, wir wollen uns so eine Art Metadata-Storage aufbauen. Eigentlich wollen wir vor der Veröffentlichung einer Podcast-Episode ein Markdown-File erstellen und da alle Metadaten reinschreiben. Mit Metadaten meinen wir möglicherweise LinkedIn-Posts, Bilder, Informationen und so weiter.",
+            "start": 4184154,
+            "end": 4205584,
+            "confidence": 0.8436341463414632,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Ja, aber auf der Titel einfach. Also einfach die Grundinformationen, die aktuell in Red Circle liegen. Das Problem ist, wir haben keine API mit Red Circle. Aber wenn wir die Daten natürlich haben, digital, dann könnten wir auch gewisse Sachen daraus automatisiert generieren.",
+            "start": 4205744,
+            "end": 4218206,
+            "confidence": 0.8021162790697675,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Aktuell legen wir halt ein Google Docs Dokument an und da sind die ganzen Metadaten aber unstrukturiert. Hätten wir nicht das Google Docs Dokument, sondern würden wir eigentlich einen Markdown File nehmen mit einem Frontmeta, hätten wir die ganzen Daten strukturiert vorliegen und von da aus, das wäre dann der Start für wirklich automatische Covergenerierungen Meine Frage wäre jetzt.",
+            "start": 4218685,
+            "end": 4239113,
+            "confidence": 0.8017627118644068,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Wenn das nirgends strukturiert vorliegt, so Timestamps und so Zeug, wie kannst du denn dann auf der Webseite auf einen Timestamp klicken?",
+            "start": 4239133,
+            "end": 4246876,
+            "confidence": 0.7619545454545453,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "So, der Wolfgang spricht gerade auf ein.",
+            "start": 4246916,
+            "end": 4248757,
+            "confidence": 0.7075714285714285,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Paar Duct-Tape-Lösungen... Bissl Salz in die Wunde streuen.",
+            "start": 4248797,
+            "end": 4252598,
+            "confidence": 0.601,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Der Wolfgang spricht gerade auf ein paar Duct-Tape-Lösungen an und zwar sind wir professionelle Regexer. Wir parsen mit Regex RSS-Feeds, aber jetzt nicht Tags oder ähnliches, das macht man schon mit einem ordentlichen XML-Parser, sondern eher den Content von den Tags.",
+            "start": 4252618,
+            "end": 4267283,
+            "confidence": 0.7755853658536586,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Also die Shownotes im Prinzip.",
+            "start": 4267783,
+            "end": 4269224,
+            "confidence": 0.5166,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Die Shownotes, und da verlinken wir hart und regexeln da durch, aber hey, ich weiß ja nicht, wie es euch geht, aber dieses Provisorium hält schon etliche Monate und ist noch nie gebrochen, also halte ich es für gut genug. Eine andere Idee, die wir haben, ähnlich wie diese Liste, diese Awesome Liste mit den German Tech Podcasts, bin ich gerade dabei, eine Liste von Software Engineering Documentaries zu sammeln, würde ich sagen.",
+            "start": 4269264,
+            "end": 4294281,
+            "confidence": 0.7739999999999999,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Also so Filme.",
+            "start": 4294341,
+            "end": 4295162,
+            "confidence": 0.6836666666666668,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Genau, Filme, wie zum Beispiel, es gibt irgendwie auf Netflix den Spotify-Film, es gibt auf YouTube eine Dokumentation über Laravel, über eBPF, über Prometheus, über Kubernetes, über Rails und so weiter und so fort. Es gibt Sendungen auf Apple TV wie WeCrash, das ist die Story von dem Startup WeWork. Und das geht halt schon alles irgendwie so in die Richtung Software-Engineering, Startups und so weiter und so fort. Und ich schaue mir diese Filme und diese Dokumentationen einfach unglaublich gerne an. Nicht, weil es über die Technik geht, sondern es geht eigentlich um die Komplexität, um die Menschen dahinter. Und deswegen hatte ich mir überlegt, okay, warum machen wir als Marketing-Idee nicht einfach mal eine Awesome-Liste mit all diesen Dokumentationen. Rendern sie natürlich dann auch ordentlich auf der Webseite unserer Seite.",
+            "start": 4295722,
+            "end": 4345402,
+            "confidence": 0.8193636363636364,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Also die nächste Awesome-List. Was einmal gut funktioniert hat, sollte doch wieder gut funktionieren, genau. Und wo natürlich eine große Baustelle ist, sind die ganzen Reels, die Marketingaktivitäten, wie wir das automatisieren können, weitermachen können, verstärken können. Am besten würde uns natürlich helfen, wenn ihr uns da irgendwie weiterempfehlt, besser als jeder Reel.",
+            "start": 4345442,
+            "end": 4365907,
+            "confidence": 0.8049999999999998,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Also, springt jetzt kurz in den Slack. Einfach mal irgendeine Podcast-Episode, die ihr wirklich gut fand. Zum Beispiel im Jahr 2023 ging die Podcast-Episode, welches Problem löst Docker eigentlich, sehr steil. Vielleicht nehmt ihr die einfach mal als Einstieg.",
+            "start": 4366367,
+            "end": 4379697,
+            "confidence": 0.7900256410256409,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Glaubst du nicht, dass das nervt, die ständige Werbung bezüglich Recommendations?",
+            "start": 4379717,
+            "end": 4383740,
+            "confidence": 0.6195454545454546,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Ja logisch.",
+            "start": 4383880,
+            "end": 4385061,
+            "confidence": 0.2895,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Es ist ja interessant, ich habe heute, ich mache mit einem anderen Kollegen, den wir auch schon im Interview hatten in der Rust-Folge, ein Open-Podcast-Projekt, wo es um Analytics geht, und der hat mir heute die Frage gestellt, eure Votes, die ihr da in den Show-Notes habt, wo man Up-Votes und Down-Votes machen kann.",
+            "start": 4385121,
+            "end": 4400489,
+            "confidence": 0.7991851851851853,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Ja die nerven mich.",
+            "start": 4400810,
+            "end": 4401890,
+            "confidence": 0.607,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Da hat er gesagt, schau dir mal an, meine Rust-Folge, hat super viele Upvotes. Die Leute lieben die Rust-Episode. Dann war meine Argumentation, wir haben in dieser Folge erwähnt, dass es diese Up- und Downvotes gibt. Und dann habe ich ihm gezeigt, dass jedes Mal, wenn wir die Up- und Downvotes erwähnen, ungefähr doppelt so viele Up- und Downvotes zu finden sind. Also jedes Mal, wenn wir irgendwas sagen, ich kenne es ja von mir selber, man ist faul, man denkt nicht an gewisse Sachen, dann springen die Statistiken dann nach oben. Also, by the way, geht mal runter in die Show Notes, Thumbs up, Thumbs down. würde uns auch immer helfen, einfach so als kleines Feedback oder auf Discord noch besser wirklich, was euch inhaltlich bewegt hat, was sinnvoll war, was besser wäre, was schlecht war. Gerne auch wirklich direktes Feedback oder bei E-Mail, haben wir schon lange nicht mehr erwähnt, stetisch at engineeringcuse.dev. Aber jetzt ganz wichtige Frage, weil wir jetzt schon immer gesprochen haben, wir sind so lean unterwegs, so gemütlich und haben da nie in irgendeiner Form Overengineering betrieben. Andi, ehrliche Antwort, nirgends Overengineering, gibt's ja gar nicht.",
+            "start": 4401930,
+            "end": 4466059,
+            "confidence": 0.7901822916666666,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Astro. Also hätten wir diese ganze Automatisierung am Anfang gebraucht? Nein, wahrscheinlich nicht.",
+            "start": 4466119,
+            "end": 4471564,
+            "confidence": 0.7551538461538462,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Ja, wobei am Anfang haben wir sie nicht gebaut. Wir haben sie schon vorzu immer gebaut, muss man auch fairerweise sagen.",
+            "start": 4472004,
+            "end": 4476548,
+            "confidence": 0.7495238095238095,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Naja, offen gesprochen, also hier und da habe ich schon ein bisschen overengineert. Punkt ist aber, da wir, und das konnte man natürlich vorher nicht wissen, die ganze Sache seit zwei Jahren oder ein bisschen über zwei Jahre machen, inzwischen sage ich, jedes Skript, was wir gebaut haben, spart uns Stunden von Arbeit jeden Monat. Würde ich also sagen, haben wir overengineert? Nee. Du sagst zwar immer, okay, ich habe Astro damals als Alpha 001 eingesetzt, gebe ich zu, war vielleicht nicht die klügste Entscheidung, offen gesprochen, inzwischen ...",
+            "start": 4476668,
+            "end": 4510270,
+            "confidence": 0.8196966292134831,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Wahrscheinlich wolltest du ja damals Astro schon im Februar einsetzen, habt ihr bis April rausgezögert noch, wie wir angefangen haben.",
+            "start": 4510280,
+            "end": 4516443,
+            "confidence": 0.69805,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Inzwischen, sagst aber auch du, und das würde ich gerne offen von dir im Podcast recordet haben, das war keine schlechte Entscheidung, und auch du hast ab und zu mal Comments in das Repository inzwischen.",
+            "start": 4516484,
+            "end": 4528150,
+            "confidence": 0.8271428571428571,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Gemacht, Ja, ich bin großer Astro-Fan geworden, oder zumindest vom Stil von Astro. Und ich habe ja auch einen Hugo-Blog laufen, deine Lieblingssprache, Go und Static Site Generator. Das ist ja ein Horror im Gegensatz zu Astro. Also da bin ich schon auf der Astro-Seite. Ich bin ja alter TypeScript-Fan mittlerweile geworden.",
+            "start": 4528250,
+            "end": 4545868,
+            "confidence": 0.6730192307692309,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Also ich würde sagen, haben wir Over-Engineering betrieben? Wir haben bestimmt das eine oder andere zu früh automatisiert. Fair enough. Hat sich das alles über die Laufzeit von zwei Jahren oder ein bisschen mehr als zwei Jahren ausgezahlt? Würde ich so unterschreiben. Und welche dreckige Skript hast du noch im Petto, wo du denkst, wir haben overengineert?",
+            "start": 4545908,
+            "end": 4563660,
+            "confidence": 0.7803157894736844,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Ja, bei den Skripts gar nicht, aber was wir schon natürlich haben ist, wir haben einen sehr hohen Qualitätsstandard, würde ich mal sagen, und ich bin mir nicht sicher, ob der nötig ist. Als Beispiel Chapters. Wir investieren so viel Zeit in Chapters, sei es in den Show Notes, sei es dann in die MP3s zu codieren. Es machen uns zwar jetzt viele nach, aber ich bin mir nicht sicher, wie viele Leute eigentlich Chapters verwenden, diese Sprungmarken, wo man nach hinten springen kann zu einem anderen Thema. Ist es wirklich nötig? Wer schaut in die Shownotes? Das ist das Problem. Wir haben null Statistiken. Das wäre mal was, was Spotify erheben könnte. Wie viele Leute klicken auf Read More, damit die Shownotes wirklich aufgehen? Das wäre eine Info, die hilfreich ist. Und da investieren wir schon viel Zeit. Das ist jetzt kein klassisches Overengineering von technischer Seite, aber das ist natürlich in unserem Flow, in unserem Prozess extrem viel Zeit. Weil das manuelle Arbeit ist. Und da bin ich mir nicht sicher, ist das überhaupt nötig. Viele andere Podcaster machen das gar nicht. Sind die schlechter am Weg? Glaube ich nicht. Das sind halt so Sachen, die... Aber ich habe natürlich auch keine Zahlen und ich bin halt ein datengetriebener Mensch und ich hätte gerne Zahlen.",
+            "start": 4564029,
+            "end": 4630887,
+            "confidence": 0.7814009216589861,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Testfrage, nutzt du Chapters in deinem Podcast?",
+            "start": 4631800,
+            "end": 4634341,
+            "confidence": 0.418,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Wenig, würde ich sagen. Aber es gibt schon Chapters, die ich nutze, ja. Und ich schaue ganz oft in Chapters. Also, ich höre ja den Wartungsfenster-Podcast, das ein komplett anderer Bereich ist, muss ich ganz ehrlich sagen. Das ist eine Windows-Welt, Admin-Welt und Sys-Admin-Welt. Und da schaue ich schon ganz oft in die Chapters, was wird denn da so besprochen.",
+            "start": 4634381,
+            "end": 4653285,
+            "confidence": 0.7354166666666668,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Aber nutzt du diese? Klickst du dran?",
+            "start": 4653325,
+            "end": 4654845,
+            "confidence": 0.6467142857142857,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Und da springe ich dann schon teilweise herum, wo ich mir denke, okay, das ist... Spezialthema in irgendeinem speziellen Windows-Bereich über Wii 4 oder sonst irgendwas und da springe ich dann drüber oder höre mir den Anfang an und denke mir, okay, interessiert mich jetzt weniger, springe ich weiter.",
+            "start": 4654865,
+            "end": 4669993,
+            "confidence": 0.7240612244897962,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Okay, reicht mir dann, machen wir so weiter. Ich nutze keine Chapters, ja, habe ich auch noch nie genutzt in irgendeinem Podcast, aber hey, wenn du diese nutzt, nutzen wir weiter.",
+            "start": 4670033,
+            "end": 4677558,
+            "confidence": 0.5733225806451614,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Also vielleicht auch da draußen, wenn ihr Chapters nutzt, lasst uns das einfach wissen. Es ist super hilfreich sowas, weil, wie gesagt, man spricht einfach in diesen schwarzen Mikrofonstoff, der in der Form hier liegt.",
+            "start": 4677598,
+            "end": 4688124,
+            "confidence": 0.6948571428571428,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Jetzt haben wir ziemlich viel über den sogenannten Quote-on-Quote-Tag-Stack vom Engineering Kills gesprochen. Und wenn ihr jetzt noch dran seid, Respekt, vielen Dank. Weil jetzt kommt eine schwierige Geschichte. Und zwar, auch wir hören sehr viel Podcast. Und natürlich verfolgen wir auch ähnliche Leute, die den Podcast als Seitenprojekt machen. Wir verfolgen aber auch professionelle Podcast, die das hauptberuflich machen. Und ab und zu kickt da so ein bisschen das Impostor-Syndrom ein. Sind wir gut genug? Die anderen sind doch alle viel besser. Und vor kurzem kam eine Folge zum Jahresende von 2023 vom Online-Marketing-Rockstar-Podcast und von der ProgrammierBar, wo die mal ein bisschen so philosophiert haben, was steckt eigentlich hinter deren Podcasts. Und diese beiden Podcasts haben Wolfgang und ich, haben uns die angehört und waren auch, offengesprochen, ein bisschen stolz. Denn Online-Marketing-Rockstars ist eine Marketingfirma. Ja, Podcast ist einer deren Hauptkanäle, aber Über 10 Leute waren da primär mit dem Podcast beschäftigt.",
+            "start": 4688877,
+            "end": 4750884,
+            "confidence": 0.7875519480519482,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Ja, ich glaube 18 sogar. 18 Leute. Also vielleicht nicht fulltime alle 18, aber 18 Leute sind damit beschäftigt.",
+            "start": 4750904,
+            "end": 4757530,
+            "confidence": 0.6550000000000001,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Offen gesprochen, Sie releasen auch zweimal in der Woche und Jahr. Sie haben auch deutlich hochkarätige Leute, also hochkarätig möchte ich noch gar nicht sagen, sondern eher populärere Leute als wir. Bekannte Leute. Aber ob die hochkarätiger sind, möchte ich gar nicht sagen.",
+            "start": 4757570,
+            "end": 4772184,
+            "confidence": 0.7320930232558139,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Die sind vielleicht schwerer zu bekommen als unsere Gäste, muss man dazu sagen, die Promis.",
+            "start": 4772604,
+            "end": 4777308,
+            "confidence": 0.7517333333333335,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Ja, vielleicht sind sie auch schwerer zu bekommen, weiß ich nicht. Aber es sind halt Promis, A, B, C, D, E, F, G, H Promis, keine Ahnung. Aber ist mir auch relativ egal. Es ist einfach nur, wir sind zwei Leute, machen das neben unserem Beruf und das sind weit über zehn hauptberuflich. Einfach nur mal die Skaleneffekte nebeneinander legen. Die Programmierbar, da steckt auch eine Firma dahinter, Lotus GmbH, glaube ich, für die Spieleentwicklung. Und sind auch mehrere Leute im Podcast involviert. Außerdem, super Podcast. Ja, ich höre euch sehr gerne. Falls ihr uns zuhört, Kudos für das, was ihr da macht. Ihr macht ja auch das Meetup, aber Respekt, liebe Jungs und Mädels. Aber da sind auch deutlichst mehr Leute involviert, auch inzwischen einen Community Manager von der Firma eingestellt. Und ich möchte das gar nicht kleinreden, denn dieses Projekt, was wir hier tun, wir investieren schon sehr sehr viel Zeit und auch sehr sehr viel private Zeit und Energie ungemein. Aber es war halt auch mal wieder schön zu sehen, wie andere Podcasts, die wir hören, zu denen wir auch aufschauen, ja, muss man auch sagen. Das Machen und was dahinter steckt, denn das ist halt nicht mal eben, wir setzen uns nur vor ein Mikro und brabbeln eine Stunde, sondern das war so eine Art Bestätigung und auch Imposter-Syndrom kickt da rein. Ab und zu braucht man halt mal so ein Motivational Boost, weil jeder kennt das, wenn du etwas zwei, zweieinhalb Jahre lang machst, du hast Fehler und du sagst auch, warum mache ich die Scheiße eigentlich, was soll das denn?",
+            "start": 4777348,
+            "end": 4867418,
+            "confidence": 0.8103120300751886,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Klassisches Imposter Syndrome, die anderen sind immer besser, was macht man denn so selber?",
+            "start": 4867438,
+            "end": 4871442,
+            "confidence": 0.7421428571428572,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Deswegen, für alle, die noch dran sind, vielen lieben Dank. Wir machen den Podcast für euch. Wir freuen uns immer, wenn wir eine E-Mail als kleines Dankeschön bekommen. Wir freuen uns, wenn wir vielleicht hier und da mal einen positiven Effekt auf euch, auf eure Firma, auf eure Mitarbeiter haben.",
+            "start": 4872182,
+            "end": 4887508,
+            "confidence": 0.7908000000000003,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Aber wir freuen uns auch über wirklich, ich will es jetzt nicht negatives Feedback nennen, aber irgendwas, was wir besser machen können oder auch sehr kritisches Feedback. Wir bekommen das manchmal von sehr privater Seite, aber es ist selten, dass wir das irgendwie von Discord Seite, von Leuten, die uns weniger gut kennen, bekommen. Und auch da der Aufruf, bitte gebt uns diese Informationen, weil unsere privaten Kanäle sind natürlich limitiert. Und umso mehr Infos wir bekommen, das muss ich jetzt nicht sagen, ihr macht die absolute Scheiße, aber vielleicht einfach das Thema hat mich weniger interessiert. Super Information, super hilfreich.",
+            "start": 4888175,
+            "end": 4920790,
+            "confidence": 0.8032376237623763,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Im Endeffekt denkt immer dran, wir sind auch nur zwei Menschen, wir machen genau dieselben Fehler wie ihr und wir löschen auch die Produktion.",
+            "start": 4921030,
+            "end": 4926675,
+            "confidence": 0.7712499999999999,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Ja Moment, ich mache weniger Fehler als du, nur dass wir das niedergeschrieben haben im Transkript.",
+            "start": 4926695,
+            "end": 4931420,
+            "confidence": 0.5971249999999999,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Dann mache ich halt doppelt so viele Fehler wie Wolfgang. Das ist auch fein. Und wir löschen auch die Produktionsdatenbank. Das passiert uns genauso wie euch. Auf jeden Fall gebt uns bitte hartes Feedback, denn wir investieren sehr viel Zeit in dieses Projekt und wir würden auch gerne lernen. Und falls wir Blödsinn erzählen, dann machen wir das natürlich nicht mit Absicht, sondern weil wir es a. vielleicht nicht besser wissen oder falsch informiert sind, denn dann würden wir noch viel lieber von euch lernen.",
+            "start": 4931440,
+            "end": 4958161,
+            "confidence": 0.7797764705882348,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Schaut vorbei in die Community-Discord-Server.",
+            "start": 4959042,
+            "end": 4961383,
+            "confidence": 0.4826,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Genau. Jetzt sind wir nämlich am Ende von dieser superlangen Folge. Ich hatte auf jeden Fall ein bisschen Spaß, ein bisschen Retrospektive zu betreiben. Ich hoffe, wir haben ein paar Fragen beantwortet, wie der TechStack aussieht, was wir noch so vorhaben, aber auch, wie wir es bisher gemacht haben. Und bevor ihr hier abschaltet, geht nochmal kurz in den Slack, packt nochmal eine Episode rein, helft uns da bitte. Ihr glaubt gar nicht, was ihr damit anstellt, sondern wirklich, wirklich pure Liebe für uns.",
+            "start": 4961423,
+            "end": 4987290,
+            "confidence": 0.7261428571428571,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Oder das eine oder andere Sternchen in dem Review, inklusive textueller Beschreibung, noch besser auf Apple zum Beispiel.",
+            "start": 4987490,
+            "end": 4994294,
+            "confidence": 0.8153333333333336,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Also, Apple oder Spotify, falls ihr da noch keine Bewertung abgegeben habt, macht das doch mal eben. Das wird uns wirklich, wirklich helfen. Ich glaube, wir waren auch noch nie in den Spotify-Charts. Das wäre natürlich auch schon mal so...",
+            "start": 4994334,
+            "end": 5004981,
+            "confidence": 0.7125249999999996,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Ja, doch, doch, natürlich. Aber in irgendwelchen Sub-Charts.",
+            "start": 5005001,
+            "end": 5007583,
+            "confidence": 0.6505,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Also, einmal so irgendwie so in den Top 20 der deutschen Tech-Spotify-Charts, das wäre schon so ein kleiner Traum. So Bucket-List-Check.",
+            "start": 5007623,
+            "end": 5014507,
+            "confidence": 0.6769523809523811,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Und wenn ihr noch irgendwelche Fragen habt diesbezüglich, kommt vorbei im Discord-Server, wir beantworten die gerne. Sei es Hardware, sei es wie wir was begonnen haben, sei es eine technische Frage, wie man ein Podcast startet. Wir sind da wirklich offen und wie gesagt, wir haben auch so eine kleine Podcast-Community, wo wir uns untereinander austauschen. Also einfach nur Kontakt aufnehmen. Wir sind offen für alle.",
+            "start": 5015486,
+            "end": 5035790,
+            "confidence": 0.7861818181818183,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Das war's von uns. Vielen Dank fürs dranbleiben. Wir wünschen euch noch einen schönen Tag. Rock die Woche und bis bald.",
+            "start": 5036070,
+            "end": 5041571,
+            "confidence": 0.46414285714285725,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Danke, ciao.",
+            "start": 5041591,
+            "end": 5042611,
+            "confidence": 0.3705,
+            "speaker": "A",
+            "channel": null
+        }
+    ],
+    "confidence": 0.778846791162544,
+    "audio_duration": 5049.0,
+    "webhook_status_code": null,
+    "webhook_auth": false,
+    "summary": null,
+    "auto_highlights_result": null,
+    "content_safety_labels": null,
+    "chapters": null,
+    "sentiment_analysis_results": null,
+    "entities": null
+}
