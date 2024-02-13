@@ -58,8 +58,13 @@ six_user_needs: []
 speaker:
 - name: Andy Grunwald
   website: https://andygrunwald.com/
+  transcriptLetter: A
 - name: Wolfi Gassler
   website: https://wolfgang.gassler.org/
+  transcriptLetter: B
+- name: Marco Alberti
+  website: https://murakamy.com/team
+  transcriptLetter: C
 spotify: https://open.spotify.com/episode/748QoqMS0CRY2DDOaTjwiI
 tags:
 - Team
