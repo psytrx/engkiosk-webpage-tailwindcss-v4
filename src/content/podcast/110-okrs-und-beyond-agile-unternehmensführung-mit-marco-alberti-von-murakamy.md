@@ -61,7 +61,11 @@ speaker:
 - name: Wolfi Gassler
   website: https://wolfgang.gassler.org/
 spotify: https://open.spotify.com/episode/748QoqMS0CRY2DDOaTjwiI
-tags: []
+tags:
+- Team
+- Leadership
+- Kommunikation
+- Interview
 title: "#110 OKRs und Beyond: Agile Unternehmensf\xFChrung mit Marco Alberti von Murakamy"
 youtube: ''
 
