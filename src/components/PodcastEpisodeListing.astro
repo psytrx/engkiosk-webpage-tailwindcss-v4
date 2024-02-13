@@ -42,7 +42,7 @@ if (episodes) {
 	}
 
 	episodesToShow = episodesToShow.concat(
-		allEpisodes.filter((episode) => episodes.includes(episode.slug))
+		allEpisodes.filter((episode) => episodes.some((ep) => episode.slug.includes(ep)))
 	)
 
 
