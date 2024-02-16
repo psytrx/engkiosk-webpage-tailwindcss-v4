@@ -75,7 +75,6 @@ speaker:
 spotify: https://open.spotify.com/episode/1PFpdXNHVvRgGPPUxC59Te
 tags:
 - DevOps
-- Feuerwehr
 - Software Engineering
 - Frontend
 - Backend
