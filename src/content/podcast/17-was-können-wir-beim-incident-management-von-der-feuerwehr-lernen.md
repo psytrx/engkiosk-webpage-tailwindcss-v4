@@ -96,7 +96,6 @@ speaker:
 spotify: https://open.spotify.com/episode/4FyZmHWjqNmlWn7bl7bPaP
 tags:
 - DevOps
-- Feuerwehr
 title: "#17 Was k\xF6nnen wir beim Incident Management von der Feuerwehr lernen?"
 youtube: https://www.youtube.com/watch?v=ITZhQyCatTs
 
