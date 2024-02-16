@@ -66,6 +66,7 @@ tags:
 - Turing Award
 - Software Engineering
 - "Software Qualit\xE4t"
+- Women in Tech
 title: '#93 Barbara Liskov - Das L in SOLID (Liskovsches Substitutionsprinzip & Abstraktion)'
 youtube: https://youtu.be/2jYqADkEqFE
 

@@ -64,6 +64,7 @@ tags:
 - Kommunikation
 - Knowledge Sharing
 - Interview
+- Women in Tech
 title: "#104 Pr\xE4sentieren mit Wirkung: Public Speaking und Storytelling mit Anna\
   \ Momber"
 youtube: https://www.youtube.com/watch?v=belzrZARW7U
