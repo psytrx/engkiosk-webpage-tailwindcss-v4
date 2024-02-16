@@ -64,6 +64,7 @@ tags:
 - Karriere
 - Bewerbung
 - Interview
+- Women in Tech
 title: '#102 Quereinstieg in die Software-Entwicklung mit Melanie Patrick'
 youtube: https://www.youtube.com/watch?v=MZfM0dHkYM8
 

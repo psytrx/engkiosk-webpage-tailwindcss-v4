@@ -74,6 +74,7 @@ tags:
 - Tech Kultur
 - Kommunikation
 - Leadership
+- Women in Tech
 title: "#50 DEI erh\xF6ht Innovation und den finanziellen Erfolg"
 youtube: https://www.youtube.com/watch?v=6Dz1pgBbn8g
 
