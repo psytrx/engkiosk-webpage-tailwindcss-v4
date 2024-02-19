@@ -16,45 +16,25 @@ All commands are run from the root of the project, from a terminal.
 Available `Makefile` commands:
 
 ```
-build                                                           Compiles the application into static content
-clean                                                           Deletes the generated content and node_modules
-episode-check                                                   Checks all Podcast Episodes if all player links (Spotify, etc.) are set
-eslint                                                          Statically analyzes of basic JavaScript scripts
-find_tags_that_need_descriptions-content-files-dump             Find all used tags in content files (blog posts and podcasts) that need SEO descriptions and dump it down to disk into tag-file
-find_tags_that_need_descriptions-content-files                  Checks all used tags in content files (blog posts and podcasts) that need SEO descriptions and output them on stdout
-find_tags_that_need_descriptions-german-tech-podcast-file-dump  Find all used tags in the german tech podcasts that need SEO descriptions and dump it down to disk into tag-file
-find_tags_that_need_descriptions-german-tech-podcast-file       Checks all used tags in the german tech podcasts that need SEO descriptions and output them on stdout
-help                                                            Outputs the help
-init                                                            Installs dependencies
-prettier                                                        Run prettier (file formatting)
-run                                                             Starts the development server
-sync_german_tech_podcasts                                       Syncs German Tech Podcasts data from https://github.com/EngineeringKiosk/GermanTechPodcasts
-update-content                                                  Pulls the latest Podcast RSS feed and updates the content
-update-redirects                                                Writes all short url redirects for Podcast episodes to netlify.toml
-```
-
-Native npm commands:
-
-| Command           | Action                                       |
-| :---------------- | :------------------------------------------- |
-| `npm install`     | Installs dependencies                        |
-| `npm run dev`     | Starts local dev server at `localhost:3000`  |
-| `npm run build`   | Build your production site to `./dist/`      |
-| `npm run preview` | Preview your build locally, before deploying |
-
-Native python [script](./scripts) commands:
-
-```sh
-$ python3 podcast_feed_to_content.py -h
-usage: podcast_feed_to_content.py [-h] [mode]
-
-Automate new Podcast Episide parsing
-
-positional arguments:
-  mode        Mode to execute. Supported: sync, redirect (default: sync)
-
-options:
-  -h, --help  show this help message and exit
+build                                               Compiles the application into static content
+check-episode-player-urls                           Checks all podcast episodes if all player links (Spotify, etc.) are set
+clean                                               Deletes all generated items (like node_modules, build output, caches)
+find-missing-tag-descriptions-content-files         Finds all used tags in content files that need SEO descriptions and output them on stdout
+find-missing-tag-descriptions-german-tech-podcast   Finds all used tags in the german tech podcasts that need SEO descriptions and output them on stdout
+help                                                Outputs the help
+init-javascript                                     Installs JavaScript dependencies
+init-python                                         Installs python dependencies and creates a virtualenv
+init                                                Installs all dependencies (JavaScript and python)
+optimize-episode-transcriptions                     Trims and shortens the episode text transcriptions to only the data we actually need
+prettier                                            Run code formatter prettier (for JavaScript)
+run                                                 Starts the development server
+update-episode-content-no-api                       Pulls the latest Podcast RSS feed from RedCircle and updates the content (without doing external API calls)
+update-episode-content                              Pulls the latest Podcast RSS feed from RedCircle and updates the content
+update-episode-redirects                            Writes all short url redirects for Podcast episodes to netlify.toml
+update-german-tech-podcasts                         Updates the German Tech Podcasts data from https://github.com/EngineeringKiosk/GermanTechPodcasts
+update-missing-tag-descriptions-content-files       Finds all used tags in content files that need SEO descriptions and updates the tag-file
+update-missing-tag-descriptions-german-tech-podcast Find all used tags in the german tech podcasts that need SEO descriptions and updates the tag-file
+update-podcast-statistics                           Calculates and updates podcast statistics
 ```
 
 ## Blog posts: Image sizes
