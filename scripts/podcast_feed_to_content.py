@@ -602,7 +602,6 @@ def get_episode_link_from_youtube(episodes, title: str) -> str:
         return u
 
     for video in episodes:
-        print(f"video.snippet.title: {video.snippet.title}")
         if video.snippet.title.startswith(episode_id):
             u = f"https://www.youtube.com/watch?v={video.snippet.resourceId.videoId}"
 

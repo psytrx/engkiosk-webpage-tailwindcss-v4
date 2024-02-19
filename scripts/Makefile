@@ -13,23 +13,5 @@ venv/touchfile: requirements.txt
 	. $(VENV_ACTIVATE) && pip install --require-virtualenv -Ur requirements.txt
 	touch $(VENV_NAME)/touchfile
 
-venv: venv/touchfile
-
 .PHONY: init
-init: venv ## Creates a virtualenv and installs python requirements
-
-.PHONY: episode-check
-episode-check: ## Checks all Podcast Episodes if all player links (Spotify, etc.) are set
-	. $(VENV_ACTIVATE); python empty_player_urls.py
-
-.PHONY: find_tags_that_need_descriptions-website-content
-find_tags_that_need_descriptions-website-content: ## Checks all used tags that need SEO descriptions in Website content like podcasts or blog articles
-	. $(VENV_ACTIVATE); python find_tags_that_need_descriptions.py website-content
-
-.PHONY: find_tags_that_need_descriptions-german-tech-podcasts
-find_tags_that_need_descriptions-german-tech-podcasts: ## Checks all used tags that need SEO descriptions in external content like the german tech podcasts
-	. $(VENV_ACTIVATE); python find_tags_that_need_descriptions.py german-tech-podcasts
-
-.PHONY: statistics
-statistics: ## Creates a Podcast summary with statistics
-	. $(VENV_ACTIVATE); python statistics.py
+init: venv/touchfile ## Installs python dependencies and creates a virtualenv

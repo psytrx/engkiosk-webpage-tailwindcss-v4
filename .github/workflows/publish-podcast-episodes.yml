@@ -18,17 +18,17 @@ jobs:
           cache: 'pip'
 
       - name: Install python dependencies
-        run: pip install -r scripts/requirements.txt
+        run: make init-python
 
-      - name: Run make update-content
-        run: make update-content
+      - name: Run make update-episode-content
+        run: make update-episode-content
         env:
           SPOTIFY_APP_CLIENT_ID: ${{ secrets.SPOTIFY_APP_CLIENT_ID }}
           SPOTIFY_APP_CLIENT_SECRET: ${{ secrets.SPOTIFY_APP_CLIENT_SECRET }}
           YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
 
-      - name: Run make update-redirects
-        run: make update-redirects
+      - name: Run make update-episode-redirects
+        run: make update-episode-redirects
 
       # Commit results back to repository
       - uses: stefanzweifel/git-auto-commit-action@v5
