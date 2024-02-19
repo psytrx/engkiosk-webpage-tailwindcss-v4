@@ -18,13 +18,13 @@ jobs:
           cache: 'pip'
 
       - name: Install python dependencies
-        run: pip install -r scripts/requirements.txt
+        run: make init-python
 
       - name: Search for missing SEO tags in content files
-        run: make find_tags_that_need_descriptions-content-files-dump
+        run: make update-missing-tag-descriptions-content-files
 
       - name: Search for missing SEO tags in the German Tech Podcast file
-        run: make find_tags_that_need_descriptions-german-tech-podcast-file-dump
+        run: make update-missing-tag-descriptions-german-tech-podcast
 
       # Commit results back to repository
       - uses: stefanzweifel/git-auto-commit-action@v5

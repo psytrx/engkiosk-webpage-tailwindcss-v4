@@ -18,7 +18,7 @@ jobs:
           cache: 'pip'
 
       - name: Install python dependencies
-        run: pip install -r scripts/requirements.txt
+        run: make init-python
 
-      - name: Run make episode-check
-        run: make episode-check
+      - name: Run make check-episode-player-urls
+        run: make check-episode-player-urls
