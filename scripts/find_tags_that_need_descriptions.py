@@ -173,8 +173,10 @@ if __name__ == "__main__":
         # We let it fail, because in a perfect world, there should be
         # no missing descriptions. However, if we let this run as a CI
         # job, the CI job failure pings us to take action.
-        if len(tags):
+        if len(tags_without_desc):
             sys.exit(1)
+
+        sys.exit(0)
 
     logging.info(f"Writing missing tag structures into file {TAG_FILE_PATH} ...")
 
