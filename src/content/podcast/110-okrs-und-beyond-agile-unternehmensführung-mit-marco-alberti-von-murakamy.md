@@ -54,7 +54,9 @@ image: "./110-okrs-und-beyond-agile-unternehmensf\xFChrung-mit-marco-alberti-von
 length_second: 4683
 pubDate: 2024-02-13 05:00:00+00:00
 rtlplus: ''
-six_user_needs: []
+six_user_needs:
+- Give me perspective
+- Educate me
 speaker:
 - name: Andy Grunwald
   transcriptLetter: A
