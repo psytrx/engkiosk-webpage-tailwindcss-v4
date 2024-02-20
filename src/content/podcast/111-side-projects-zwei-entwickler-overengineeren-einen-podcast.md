@@ -53,7 +53,10 @@ speaker:
 - name: Wolfi Gassler
   website: https://wolfgang.gassler.org/
 spotify: https://open.spotify.com/episode/2QOvlMpbNafEIVd9XoQhfa
-tags: []
+tags:
+- Side Projects
+- Automation
+- Engineering Kiosk
 title: '#111 Side-Projects: Zwei Entwickler overengineeren einen Podcast'
 youtube: ''
 
