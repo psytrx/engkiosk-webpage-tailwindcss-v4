@@ -1,5 +1,5 @@
 ---
-amazon_music: ''
+amazon_music: https://music.amazon.com/podcasts/c35a09fe-4116-4e04-8f68-77d61b112e46/episodes/b6c36a21-9cb5-4c3f-8c13-f75ef459778e/engineering-kiosk-111-side-projects-zwei-entwickler-overengineeren-einen-podcast
 apple_podcasts: https://podcasts.apple.com/us/podcast/111-side-projects-zwei-entwickler-overengineeren-einen/id1603082924?i=1000645952540&uo=4
 audio: https://audio1.redcircle.com/episodes/8cddc3a3-e0da-40b8-8d10-2e577c60c797/stream.mp3
 chapter:
