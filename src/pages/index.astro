@@ -9,6 +9,8 @@ import PodcastEpisodeListing from '../components/PodcastEpisodeListing.astro';
 import { URLify } from '../scripts/urlify.js';
 import { cutText } from '../scripts/strings.js';
 import { formatDateWithoutWeekday } from '../scripts/date.js';
+import { getNextMeetup } from '../scripts/meetups.js';
+import AnnouncmentBar from '../components/AnnouncmentBar.astro';
 
 // Testimonials images
 import testimonialLuiseHaack from "../images/testimonials/luise-haack.jpeg";
@@ -40,6 +42,20 @@ let episode = episodesToShow[0];
 let currentEpisodeTags = episode.data.tags.map((element) => URLify(element));
 // Cut description text
 let currentEpisodeDescription = cutText(episode.data.description, 170);
+
+// get next meetup and show announcment bar if it is in the next 3 days
+const nextMeetup = getNextMeetup();
+const showAnnouncmentBarDays = 3;
+let showAnnouncmentBarStart = new Date();
+let showAnnouncmentBarEnd = new Date();
+let nextMeetupDate = ""
+if (nextMeetup && nextMeetup.date) {
+	showAnnouncmentBarStart.setDate(nextMeetup.date.getDate() - showAnnouncmentBarDays);
+	showAnnouncmentBarEnd = nextMeetup.date;
+	nextMeetupDate = nextMeetup.date.toLocaleDateString('en-UK', { weekday: 'short', year: 'numeric', month: 'short', day: '2-digit' });
+}
+
+
 ---
 
 <html lang="de">
@@ -51,7 +67,8 @@ let currentEpisodeDescription = cutText(episode.data.description, 170);
 		<div>
 			<Nav title={title} />
 
-			<!-- <AnnouncmentBar message="Meetup in Innsbruck, am 13. Juli 2023: Engineering Kiosk Alps" link="/meetup/alps/" /> -->
+			<AnnouncmentBar message={`Upcoming Meetup in Innsbruck! ${nextMeetupDate}: Engineering Kiosk Alps 🛈`	}
+			 link="/meetup/alps/" showStart={showAnnouncmentBarStart} showEnd={showAnnouncmentBarEnd} />
 
 			<section class="relative bg-white overflow-hidden" style="background-image: url('/images/elements/pattern-white.svg'); background-position: center;">
 				<div class="py-20 md:py-28">
