@@ -2,7 +2,7 @@
 date: 2024-02-22T18:00:00+01:00
 location:
   name: 'DeepOpinion & Intelligent and Interactive Systems@Uni Innsbruck'
-  address: 'EG, Seminarraum 1/2, Technikerstr 21a, 6020 Innsbruck'
+  address: 'ICT Gebäude, EG, Seminarraum 1/2, Technikerstr 21a, 6020 Innsbruck'
   url: 'https://deepopinion.ai'
   logo: 'deepopinion-uibk.png'
 talks:
