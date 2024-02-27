@@ -57,7 +57,11 @@ speaker:
 - name: Wolfi Gassler
   website: https://wolfgang.gassler.org/
 spotify: https://open.spotify.com/episode/4f3t8rVvTuZEfoFzIbQGrP
-tags: []
+tags:
+- Tech Kultur
+- Karriere
+- Leadership
+- Interview
 title: '#112 Das Engineering Manager Pendulum: Zwischen Coding und Leadership mit
   Tom Bartel'
 youtube: ''
