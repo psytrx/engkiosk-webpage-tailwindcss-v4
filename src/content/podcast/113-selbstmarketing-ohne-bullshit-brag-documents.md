@@ -63,7 +63,9 @@ speaker:
   transcriptLetter: B
   website: https://wolfgang.gassler.org/
 spotify: https://open.spotify.com/episode/111RvzCYv0Qr77qrlmLkKo
-tags: []
+tags:
+- Karriere
+- Kommunikation
 title: '#113 Selbstmarketing ohne Bullshit: Brag Documents'
 youtube: https://www.youtube.com/watch?v=SBxYn21KRvs
 
