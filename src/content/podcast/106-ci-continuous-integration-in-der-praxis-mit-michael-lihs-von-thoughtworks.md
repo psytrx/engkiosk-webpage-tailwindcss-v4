@@ -78,6 +78,7 @@ tags:
 - DevOps
 - Tech Kultur
 - Software Engineering
+- Interview
 title: '#106 CI - Continuous Integration in der Praxis mit Michael Lihs von Thoughtworks'
 youtube: https://www.youtube.com/watch?v=E5Va0uqfpcs
 
