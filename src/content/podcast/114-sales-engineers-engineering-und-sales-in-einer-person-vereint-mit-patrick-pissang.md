@@ -55,7 +55,11 @@ speaker:
 - name: Wolfi Gassler
   website: https://wolfgang.gassler.org/
 spotify: https://open.spotify.com/episode/1g6M7QpdErJzFmSJlShE7F
-tags: []
+tags:
+- Team
+- Karriere
+- Kommunikation
+- Interview
 title: '#114 Sales Engineers: Engineering und Sales in einer Person vereint mit Patrick
   Pissang'
 youtube: ''
