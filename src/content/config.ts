@@ -63,6 +63,7 @@ const meetupCollection = defineCollection({
 			address: z.string(),
 			url: z.string().optional(),
 			logo: z.string().optional(),
+			note: z.string().optional(),
 		}),
 		talks: z.array(
 			z.object({

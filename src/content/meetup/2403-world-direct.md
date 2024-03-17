@@ -1,10 +1,11 @@
 ---
 date: 2024-03-28T18:30:00+01:00
 location:
-  name: 'World Direct'
+  name: 'World-Direct'
   address: 'Unternehmerzentrum 8a, 6071 Sistrans'
   url: 'https://www.world-direct.at'
   logo: 'worlddirect.svg'
+  note: '↣ <a href="/meetup/alps/tmp/Lageplan_WD.pdf" class="underline">Local Map</a>'
 talks:
   - avatar: '2401-martinHaeusler.jpg'
     name: 'Martin Häusler'
