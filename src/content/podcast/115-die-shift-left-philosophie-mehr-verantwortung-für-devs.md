@@ -60,7 +60,11 @@ speaker:
 - name: Wolfi Gassler
   website: https://wolfgang.gassler.org/
 spotify: https://open.spotify.com/episode/1iv3GwlMuhbWa0pvYS9bZO
-tags: []
+tags:
+- Tech Kultur
+- Karriere
+- Software Engineering
+- Software Qualität
 title: "#115 Die Shift Left Philosophie: Mehr Verantwortung f\xFCr Devs"
 youtube: ''
 
