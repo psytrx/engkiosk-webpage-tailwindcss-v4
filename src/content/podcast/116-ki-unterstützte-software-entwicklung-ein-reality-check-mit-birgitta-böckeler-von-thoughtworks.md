@@ -62,7 +62,12 @@ speaker:
   transcriptLetter: A
   website: https://www.linkedin.com/in/birgittaboeckeler/
 spotify: https://open.spotify.com/episode/44FSlJr24G0QmYxZgZ8QOJ
-tags: []
+tags:
+- Software Engineering
+- Software Qualität
+- Automation
+- Interview
+- Women in Tech
 title: "#116 KI unterst\xFCtzte Software Entwicklung: Ein Reality Check mit Birgitta\
   \ B\xF6ckeler von Thoughtworks"
 youtube: https://www.youtube.com/watch?v=WnONvkRjvrg
