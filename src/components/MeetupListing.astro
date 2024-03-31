@@ -14,13 +14,14 @@ export interface Props {
 
 const { headline, meetupsToShow, archive } = Astro.props
 
+
 ---
 
 <section class="py-24 bg-coolGray-50" style="background-image: url('/images/elements/pattern-light-big.svg'); background-position: center;">
 	{
 		meetupsToShow.map((meetup, i) => (
 			<>
-				<div class="container px-4 mx-auto">
+				<div class="container px-4 mx-auto" id={`meetup-${formatDateWithoutWeekday(meetup.date, 'en-GB').toLowerCase().replace(/[^a-z0-9-]/g, '-')}`}>
 					<div class="mb-16 text-center">
 						<span class="inline-block py-px px-2 mb-4 text-xs leading-5 text-yellow-500 bg-yellow-100 font-medium uppercase rounded-9xl">{headline}</span>
 						<h1 class="mb-4 text-3xl md:text-5xl leading-tight text-coolGray-900 font-bold tracking-tighter">
