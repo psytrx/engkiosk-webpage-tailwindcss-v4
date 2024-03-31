@@ -15,8 +15,6 @@ export interface Props {
 const { avatar, name, title, description, github, twitter, linkedin, website, bio, slides } = Astro.props;
 
 const talkId = `talk-${name.toLowerCase()}-${title.toLowerCase()}`.replace(/[^a-z0-9-]/g, '-');
-// replace new lines by <br>
-console.log(description);
 const htmlDescription = description.replace(/\n/g, '<br>');
 
 ---

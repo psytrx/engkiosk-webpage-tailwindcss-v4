@@ -19,7 +19,6 @@ const { message, link, showStart, showEnd } = Astro.props;
 
 <script define:vars={{ showStart, showEnd }}>
 	const now = new Date();
-	console.log(showStart, showEnd);
 	if (now < new Date(showEnd) && now > new Date(showStart)) {
 		document.getElementById('announcmentBar').style.display = 'block';
 	}	
