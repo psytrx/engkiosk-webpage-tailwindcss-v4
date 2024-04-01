@@ -1,0 +1,851 @@
+{
+    "language_code": "de",
+    "audio_url": "https://cloud.inlupus.at/s/S5c6tifn8jy89Bt/download/ep117_vanilla_web.mp3",
+    "punctuate": true,
+    "format_text": true,
+    "dual_channel": false,
+    "webhook_url": null,
+    "webhook_auth_header_name": null,
+    "webhook_auth_header_value": null,
+    "audio_start_from": null,
+    "audio_end_at": null,
+    "word_boost": [],
+    "boost_param": null,
+    "filter_profanity": false,
+    "redact_pii": false,
+    "redact_pii_audio": false,
+    "redact_pii_policies": null,
+    "redact_pii_sub": null,
+    "speaker_labels": true,
+    "speakers_expected": 3,
+    "content_safety": false,
+    "content_safety_confidence": null,
+    "iab_categories": false,
+    "custom_spelling": null,
+    "disfluencies": false,
+    "sentiment_analysis": false,
+    "auto_chapters": false,
+    "entity_detection": false,
+    "summarization": false,
+    "summary_model": null,
+    "summary_type": null,
+    "auto_highlights": false,
+    "language_detection": false,
+    "speech_threshold": null,
+    "speech_model": null,
+    "id": "7c0e5e09-d0ff-4cba-91d6-85d77175353c",
+    "status": "completed",
+    "error": null,
+    "utterances": [
+        {
+            "text": "Die Frontend-Entwicklung hat in den letzten Jahren einen ziemlich großen Wandel erlebt und Web-Apps wurden immer mehr Desktop-like. Früher wurde CSS und JavaScript einfach via Script-Tag inkludiert. Heute sind Stichwörter wie Minification, Tree-Shaking, Polyfills, Transpilieren und Kompilieren aus dem Frontend-Stack nicht mehr wegzudenken. Die Komplexität hat zugenommen durch gestiegene Anforderungen, State-Management, aber auch durch große Frameworks wie React, Angular, Vue.js und Co. Auf der anderen Seite erleben Frameworks wie HTMX, die mit Einfachheit werben, einen neuen Hype. Das Ganze wirft für mich ein paar Fragen auf. Erkaufen wir uns durch diesen großen Tooling-Stack wirklich Einfachheit? Oder schließen wir uns durch die Komplexität in eine proprietäre API ein, die es schwieriger macht, das Framework zu wechseln? Ist die Komplexität wirklich gerechtfertigt? Und überhaupt, entwickeln wir uns eigentlich weiter und die Konzepte sind alle neu? Oder ist das alles nur alter Wein in neuen Schläuchen? Genau das besprechen wir mit Golo Roden. Golo ist Frontend-Experte und spezialisiert auf native Web-Technologie. Mit ihm behandeln wir unter anderem Themen wie die Probleme von aktuellen UI-Frameworks und woher diese Probleme eigentlich kommen, wie er zu den Konzepten wie HTMX steht, über mögliche Lösungsansätze für die Probleme des heutigen Frontend-Stacks, Standards wie Web-Components und welche Rolle Typescript in dem ganzen Mix einnimmt. Wir springen direkt rein und los geht's. Viel Spaß!",
+            "start": 3833,
+            "end": 84400,
+            "confidence": 0.8389395348837204,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Andi, wie du ja weißt, bin ich ja jetzt schon einige Zeit in der ganzen IT unterwegs und was mir aufgefallen ist, ist, dass sich eigentlich gewisse Technologien immer wiederholen. Also es hat früher so irgendwie RPC gegeben, dann ist so die Zeit gekommen in meinem Studium, um Gottes Willen, RPC so kompliziert und das will keiner und das ganze Java-Zeug mit RPC ist so kompliziert. Mittlerweile haben wir wieder gRPC und RPC ist doch irgendwie wieder hip. In meiner Datenbank-Welt war das selbe. NoSQL hat dann irgendwie diesen Hype ausgelöst, kein SQL mehr und mittlerweile ist SQL wieder hip und die absolute coole Technologie. Also es wiederholt sich irgendwie alles. Auf der Uni hat man das auch immer so wieder, diese Meinung gehört, ach das neue Zeug, es wiederholt sich eh nur alles und lasst die Jungen nur drauf kommen. dass es auch schlecht ist, das Ganze. Und jetzt frage ich mich immer in der JavaScript-Welt, die dreht sich ja viel viel schneller und man sagt ja immer, die ist innovativ, da kommt jede Woche irgendwie ein neues Framework raus und da dreht sich alles so schnell und da ist das neue hippe Zeug zu Hause. Und da habe ich mir eigentlich überlegt, gibt es dort diese Wiederholungen auch? Wiederholt sich dort auch irgendwie diese Technologie? Und wie sieht denn das Ganze aus in diesem ganzen Java-Ecosystem und der Kommunikation zwischen Client und Server oder FAT-Client, je nachdem, wie man es sieht, oder Frontend vor Backend und was noch alles dazwischen steckt, also in der ganzen Web-Applikationswelt? Wie gesund ist dieses Ecosystem? Und nachdem du keine Ahnung von JavaScript hast, und ich auch sehr wenig von JavaScript weiß, haben wir uns überlegt, wir schauen, dass wir uns irgendwen zu uns ins Podcaststudio holen, der sich auskennt in dem ganzen Bereich. Und darum freut es mich umso mehr, einen absoluten Spezialisten in dem Bereich zu haben, der auch sehr bekannt ist und viel bloggt und schreibt zu dem ganzen Thema. Golo, willkommen bei uns im Podcast.",
+            "start": 87449,
+            "end": 194242,
+            "confidence": 0.8250833333333332,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Hallo, schön, dass ich da sein darf.",
+            "start": 194522,
+            "end": 195723,
+            "confidence": 0.32385714285714284,
+            "speaker": "C",
+            "channel": null
+        },
+        {
+            "text": "Ich finde das faszinierend, dass du Innovation und JavaScript in einem Wort oder in einem Satz erwähnst, weil für mich... Jetzt.",
+            "start": 196043,
+            "end": 203267,
+            "confidence": 0.8359523809523809,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Bist ja nur du immer so negativ am Weg mit JavaScript.",
+            "start": 203287,
+            "end": 205688,
+            "confidence": 0.6564545454545455,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Für mich ist das so ein bisschen, dass jede Woche ein neues Framework rauskommt, ist keine Innovation, das ist für mich so ein bisschen Chaos. Aber nun gut, meine Meinung.",
+            "start": 205990,
+            "end": 213695,
+            "confidence": 0.7009000000000002,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Nun gut, Golo, wer bist du?",
+            "start": 213936,
+            "end": 216357,
+            "confidence": 0.6905,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Und zwar kenne ich dich als Gründer der ersten deutschen Enterprise-JavaScript-Konferenz, der sogenannten EnterJS, auf der ich auch mal sprechen durfte, obwohl ich relativ wenig Ahnung von JavaScript habe.",
+            "start": 216397,
+            "end": 229907,
+            "confidence": 0.853896551724138,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Du hast wahrscheinlich gesprochen, warum Go besser ist und man zu Go wechseln sollte von JavaScript, oder?",
+            "start": 229987,
+            "end": 234270,
+            "confidence": 0.6760588235294118,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Damals hatte ich noch kein Go auf dem Schirm. Damals habe ich, glaube ich, über Codemetriken, zyklomatische Komplexität, Endplastik, Kontinplexität und Co. zu JavaScript gesprochen, weil das ist ein Thema, was man sehr gut aus anderer Sprache nehmen kann, nämlich zum Beispiel aus Java. Auf jeden Fall, ich glaube, die Jüngeren unter uns kennen dich als sehr erfolgreichen YouTuber mit deinem TheNativeWebAccount, mit über 30.000 Followern und über, Achtung, 700 Videos. Jeder Content Creator oder jeder, der jede Woche mal ein Foto auf Instagram postet, weiß, wie viel 700 Videos sind. Du bist aber nicht nur YouTuber, sondern auch Gründer und Geschäftsführer der Native Web GmbH, die sich auf Consulting, Entwicklung und Trainings im Bereich Nativen, Webtechnologien und Cloud spezialisiert hat. Du bist Buchautor des ersten deutschsprachigen Buchs über Node.js und Co. Und das war im Jahre 2012, also zwölf Jahre her. Wow, ich wusste gar nicht, dass Node.js so alt ist. Du schreibst aber nicht nur Bücher, sondern auch für Fachmagazine zum Thema JavaScript, TypeScript, Node.js, Open Source und Co. Und das unter anderem auch für Heise. Und was den Wolfgang sehr zum Lachen gebracht hat, du bist Monkey Island Fan. Hab ich irgendwas vergessen?",
+            "start": 234663,
+            "end": 313539,
+            "confidence": 0.7987142857142853,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Als du das gerade so aufgezählt hast, hab ich erst mal gedacht, das hört sich irgendwie sehr, sehr viel an, was ich so mache. Um das vielleicht ein bisschen zu relativieren, ich mach das ja nicht alles gleichzeitig. Also zum Beispiel jetzt mit dem Aufkommen des YouTube-Kanals. Das ist jetzt so, dass wir das ungefähr seit dreieinhalb Jahren machen. Zum einen mach ich das nicht alleine, sondern da stecken ja auch Kolleginnen und Kollegen von mir. mit dahinter, auch wenn ich derjenige bin, der zu 99,9 Prozent vor der Kamera zu sehen ist, hinter der Kamera sind dann noch ein paar mehr Menschen aktiv. Also das könnte ich alleine gar nicht stemmen. Und mit dem Aufkommen Von dem YouTube ist auch zum Beispiel die Schreibaktivität doch ein bisschen zurückgegangen. Also von daher, ich könnte das alles gar nicht alleine stemmen und nicht in der Menge. Ob du was vergessen hast? Ich würde mal sagen, ich habe natürlich auch noch mein Privatleben. Ganz klar, das ist wichtig als Ausgleich bei der ganzen Geschichte. Aber ansonsten so, wenn man mal das berufliche Schrägstrich Community-mäßige Engagement zusammennimmt, ich glaube, dann sind so im Wesentlichen waren das so die wichtigen Punkte. Ja, das stimmt schon.",
+            "start": 313579,
+            "end": 377999,
+            "confidence": 0.8169651741293533,
+            "speaker": "C",
+            "channel": null
+        },
+        {
+            "text": "Auch wenn du sagst, du machst das nicht alles gleichzeitig, sondern ganz schön sequenziell und vielleicht auch nicht alleine, halte ich das dennoch für einen relativ harten Track Record. Werbung. Hast du dir einmal überlegt, für ein Medienhaus zu arbeiten? 160.000 Subscriptions, 15 Millionen Besucher, drei Milliarden Requests in einem Monat zur Orientierung und Meinungsbildung in Wirtschaft und Politik. Na, Interesse geweckt? Bei der Handelsblatt Media Group mit den Kernprodukten Handelsblatt und Wirtschaftswoche arbeiten über 50 Personen in verschiedenen Tech-Teams von Frontend und Mobile über Backend bis Cloud-Infrastructure, Quality Assurance und Data Engineering. Die meisten Produkte werden In-House entwickelt und basieren auf einem modernen Stack, der auch mit Lastspitzen umgehen können muss. Im Einsatz sind TypeScript, Python, Swift, Kotlin, Java, Spring, Kubernetes und auch die Azure Cloud. Alle Teams arbeiten hybrid mit meistens einem fixen Tag im Büro. Also, wenn du in einem spannenden interdisziplinären Umfeld tätig sein möchtest, um Menschen zu befähigen Wirtschaft zu verstehen, egal ob tief im Backend oder in einem KI unterstützten Frontend für Redakteurinnen, findest du mehr Informationen unter engineeringkiosk.dev slash handelsblatt. Den Link findest du natürlich auch unten in den Show Notes. hören uns viele Softwareentwicklerinnen und Softwareentwickler zu. Und irgendwie hat Monkey Island so eine Verbindung für viele. Das stimmt. Bei der Recherche hab ich festgestellt, dass du sehr gerne Monkey Island mit deinem Kind spielst. Und du hast im Programmierbar-Podcast 2020 gesagt, was dich an diesem Spiel fasziniert und dass dieses Spiel wohl sehr kindergerecht ist. beziehungsweise für kinder geeignet ist ich habe monkey island leider nie gespielt wolfgang lästert deswegen immer noch über mich und große lücke an die große hat mir so ein bisschen monkey island education gegeben und er fragt was bringt es den kindern wenn sie wissen wie sie auf dreiköpfige affen reagieren sollen.",
+            "start": 378320,
+            "end": 499962,
+            "confidence": 0.8123749999999997,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Ja, das ist, okay, so hab ich mir die Frage auch noch nie gestellt. Also der Grund, warum ich das Ganze so gerne mag, ich weiß nicht mehr genau, was ich ehrlich gesagt vor drei, vier Jahren in dem Podcast dazu gesagt habe, aber ich glaube, erst mal das, was mich persönlich so fasziniert an Monkey Island ist, dass das Ganze von der Geschichte lebt, dass das nicht auf bombastische Grafik und Wahnsinns, 3D-Sound und den ganzen Schnickschnack angewiesen ist. Also es überzeugt nicht unbedingt aus technischer Perspektive, sondern halt aus inhaltlicher Perspektive. die Handlung des Spiels, die könntest du auch gut einfach als Geschichte aufschreiben und jemandem vorlesen. Und das wäre immer noch unterhaltsam und lustig. In Monkey Island steckt sehr viel Wortwitz drin, sehr viele Anspielungen und Doppeldeutigkeiten und solche Dinge. Und das ist, glaube ich, schon was, wo vieles zusammenkommt, was Kinder und auch Jugendliche interessant finden. Weil das zum einen erst mal für sich genommen einfach eine lustige, nette, interessante, spannende Geschichte ist. Und dann aber eben auch so dieses Spiel mit der Sprache, mit gewissen Fantasiegestalten, wie eben dem dreiköpfigen Affen, die ja auch in einem gewissen Kreis zumindest einen gewissen Kultstatus erreicht haben. Ich glaube, das ist schon was, wo man auch solche, und sei es nur innerhalb der Familie, wo sich quasi so, ich nenne es mal in Anführungszeichen, Insiderwitze etablieren können. Dass halt, wenn du dich irgendwie, keine Ahnung, du hattest mit jemandem Streit, und wenn du dann auf dein Kind zugehst, oder dein Kind auf dich zugeht, und halt nicht zu dir sagt, Papa, du bist doof, oder irgendwie sowas, sondern wenn er halt kommt Papa, du kämpfst wie ein dummer Bauer. Und du dir das Lachen schon verkneifen musst und genau weißt, wenn du sagst, wie passend, du kämpfst wie eine Kuh, dann ist viel gewonnen. Es lehrt dich, vieles nicht so ganz bierernst zu nehmen. Das ist, glaub ich, was ich an dem Spiel sehr schätze und sehr mag. Dass es da einen großen Teil zubeitragen kann. Das ist übrigens auch nicht nur bei Monkey Island so. Es gilt für viele der Spiele von Lucasfilm, wie sie damals hießen, beziehungsweise LucasArts aus der Zeit. Aber insbesondere Monkey Island ist da meiner Meinung nach so das Highlight schlechthin.",
+            "start": 503373,
+            "end": 627593,
+            "confidence": 0.7841190476190472,
+            "speaker": "C",
+            "channel": null
+        },
+        {
+            "text": "Was mich hier fasziniert, ist, ich hab auch meinem Neffen kürzlich Monkey Island 1 geredet. Und er hat Spaß daran mit zehn, elf Jahren. Obwohl das Spiel eigentlich, ja, aus den ... 80ern oder so ist, keine Ahnung, 90ern oder sowas in der Gegend. Auf jeden Fall klar mit einer ein bisschen aufgebleibten Grafik mittlerweile, das hat es ja mal gegeben, diese auffolierte Version. Aber trotzdem, es lebt einfach vom Inhalt und das ist schon sehr beeindruckend, wie man sowas machen kann, was im heutigen Zeitgeist noch funktioniert.",
+            "start": 627633,
+            "end": 662449,
+            "confidence": 0.7637499999999996,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Und interessant finde ich, dass der Hauptmacher hinter Monkey Island, also derjenige, von dem die Geschichte stammt, der Ron Gilbert, der entwickelt immer noch Computerspiele. Heute ist er nicht mehr bei LucasArts. Der hat ein eigenes Studio inzwischen, das heißt Terrible Toybox, und die haben vor ein paar Jahren auch ein fantastisches Adventure rausgebracht, was auch in diesem 8-Bit-Retro-Charme gemacht ist, namens Thimbleweed Park. Und das ist eine unglaublich tolle Geschichte. Die hat wahnsinnig viel Tiefgang und du rechnest im Leben am Anfang nicht damit, worauf das mal hinausläuft. Und das schafft diesen Spagat aus. Das ist eine unterhaltsame Geschichte, wenn du so willst, für Kinder. Und das regt übelst zum Nachdenken an als Erwachsener, und das halt gleichzeitig hinzubekommen, das gibt es sehr, sehr selten. Und das finde ich da sehr, sehr gelungen.",
+            "start": 662489,
+            "end": 713311,
+            "confidence": 0.8183880597014926,
+            "speaker": "C",
+            "channel": null
+        },
+        {
+            "text": "Jetzt fällt es mir schwer, deine Überleitung zu JavaScript zu finden, weil es ist eigentlich so ein positives Thema, und ich muss jetzt da zu diesem JavaScript-Thema überleiten. Wenn wir mal in dieses JavaScript-Thema eintauchen und vielleicht ganz allgemein in das Web-Thema, wie blickst denn du aktuell so auf diesen Bereich? Wie würdest du denn so einen aktuellen Stack erklären, beschreiben, den man heutzutage, wenn man ein Web-Projekt startet, den man so anwendet und der so üblich ist? Du hast ja doch sehr viel Erfahrung in dem Bereich, was Firmen verwenden, was Web-Apps verwenden. Wie sieht denn so ein moderner, unter Anführungszeichen, der dem Zeitgeist entspricht, stack heutzutage erst?",
+            "start": 713871,
+            "end": 755212,
+            "confidence": 0.7746788990825688,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Das ist schwer zu beantworten, so pauschal. Also zunächst mal muss man ja mal unterscheiden, ob man übers Backend oder übers Frontend spricht. Im Backend war die Frage sehr lange Zeit sehr viel einfacher zu beantworten. Weil wenn du JavaScript im Backend machen wolltest, hattest du halt Node, Punkt. Aber selbst da ist ja inzwischen der Punkt erreicht, wo es alternative Laufzeitumgebungen gibt. Das heißt, du hast Node oder du hast Dino oder du hast Bun oder jetzt... kommen ja so Sachen wie WinterJS auf, plus dann gibt es halt nicht nur npm als Paketmanager, sondern alternativ könntest du auch pnpm verwenden oder yarn oder dies oder das oder jenes und das wird im Backend gerade sehr viel diversifizierter, also die Varianz wird sehr viel höher. Und das ist, glaube ich, eine Entwicklung, also die finde ich persönlich nicht unbedingt positiv, um es mal ganz vorsichtig auszudrücken. Aber damit passt sich das Backend unterm Strich dem Frontend-Bereich an, weil das ist was, was im Frontend eigentlich seit jeher gang und gäbe ist. Also völlig egal, wenn du für eine Business-Applikation eine grafische Oberfläche schaffen willst, dann hast du die Wahl zwischen, nehme ich jetzt Angular oder nehme ich jetzt React oder nehme ich jetzt Vue oder nehme ich jetzt Ember oder nehme ich jetzt You name it. Also wie ihr eben schon gesagt habt, alle gefühlt zehn Minuten kommt irgendein neues JavaScript Framework um die Ecke. Und da ist eine gewisse Stagnation für eine Zeit lang mal eingetreten gewesen, wo man so das Gefühl hatte, React und Angular, das sind so die beiden großen Platzhirsche, die haben es irgendwie geschafft und die dominieren jetzt den Markt, aber da ist wieder mehr Schwung reingekommen und ich glaube, also von daher, man kann es schlecht auf einen gemeinsamen Nenner bringen, was aber all diese Varianten gemeint haben, ist, dass sie einen furchtbaren Rattenschwanz nach sich ziehen. Also du, installierst halt nicht React und das war's, sondern du installierst halt React und damit du das rendern kannst, brauchst du React DOM und damit du das überhaupt mit TypeScript zusammen benutzen kannst, musst du halt TypeScript installieren und damit du das nachher kompilieren kannst, brauchst du halt vielleicht Webpack oder damit du es bundeln kannst, brauchst du vielleicht sowas wie Webpack. Und dann brauchst du vielleicht noch Babel und noch irgendwelche Presets und ein Linter. Und ja, du bist halt ratzfatz, ohne dass du überhaupt irgendwas inhaltlich gemacht hast. Nur für deinen Basis-Setup hast du halt ganz schnell 20, 30, 40, 50 Dependencies dir an Bord geholt. Und das artet sehr schnell sehr aus. Und das ist aber halt nicht nur bei React so. Das ist bei Angular oder bei Vue oder bei sonst was genau dasselbe. Und das ist erst mal so, finde ich, das kennzeichnende Merkmal in der JavaScript-Welt. dass es nicht nur zum einen ständig was Neues gibt, sondern dass es auch unglaublich viel ist, von dem es ständig was Neues gibt.",
+            "start": 755252,
+            "end": 904564,
+            "confidence": 0.7678370672097762,
+            "speaker": "C",
+            "channel": null
+        },
+        {
+            "text": "Wie bewertest du denn das Neue? Ist es neu? Ist es eine Wiederholung? Oder kommt da die Innovation, die der Andi nicht sieht bei den Frameworks?",
+            "start": 904584,
+            "end": 915413,
+            "confidence": 0.8052307692307691,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Also für meine empfinden ist da viel wiederholung drin alter wein in neuen schläuchen.",
+            "start": 916825,
+            "end": 924112,
+            "confidence": 0.9008571428571427,
+            "speaker": "C",
+            "channel": null
+        },
+        {
+            "text": "Wie es so schön heißt andys lieblingsspruch.",
+            "start": 924152,
+            "end": 926455,
+            "confidence": 0.6769999999999999,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Ja okay das wusste ich nicht aber es ist glaube ich viel, so unausgesprochen die Suche nach der perfekten Lösung. Und da habe ich das Gefühl, dass es die in mehreren Jahrzehnten, die es nun Webtechnologien gibt, dass die noch niemand so richtig gefunden hat. Und da gibt es halt verschiedene Ansätze, was natürlich ganz stark damit einhergeht, was du für Anforderungen hast und was du für vielleicht auch Ansprüche teilweise hast. Fängt mit so ganz harmlosen Sachen an, wie spielt Internationalisierung eine Rolle für dich? Spielt irgendwie Thembarkeit eine Rolle für dich? Alleine diese zwei Fragen können dich schon in eine ganz andere Richtung steuern. Kommst du eher aus der Entwicklungswelt, also bist du eher JavaScript getrieben, kommst du eher aus der Designwelt, bist du vielleicht eher HTML und CSS getrieben und so weiter und so fort. Und da, je nachdem aus welcher Perspektive du halt drauf schaust, hast du halt ein anderes Wertesystem oder andere Dinge, die dir wichtig sind. Und dann wird versucht, etwas zu bauen, was dem gerecht wird. Und das löst halt dein Problem, überspitzt gesagt, ganz gut, aber halt nicht notwendigerweise das Problem von anderen oder es löst das Problem von anderen. nur bedingt, und die haben natürlich dieselbe Idee, dass man ja sich ein Framework erschaffen könnte, und wenn das genug Menschen machen, dann hast du halt genau diesen Effekt, dass du halt nachher ganz viele verschiedene Frameworks hast, die zwar irgendwie alle dasselbe machen, sich auch in gewissen Bereichen überschneiden oder überlappen, so ein bisschen anders sind sie dann doch alle, aber irgendwie so, ja, man kommt aber halt nicht auf einen Nenner, weil es diesen einen Nenner nicht geben wird, weil die unterschiedlichen Entwicklerinnen und Entwickler halt unterschiedliche Anforderungen haben. Und damit wirst du halt diesen Zoo halt weiterhin haben. Und solange alle durch die Welt rennen und meinen, ja, ich baue jetzt das nächste Framework, was dieses Problem löst, werden wir halt aus diesem Hamsterrad, oder wie du es nennen willst, werden wir nicht rauskommen, sondern das wird halt immer weiter befeuert. Und dann stellt sich halt raus, dass es gar nicht so viele neue Konzepte gibt, sondern dass es im Grunde genommen immer wieder dieselben 27 Aspekte ein bisschen anders verpackt sind. Und das ist halt tragisch, wenn du dann an der Stelle sehr technologiegetrieben bist und meinst, alle sechs Monate auf den neuesten Hype aufspringen zu müssen. dann wirst du sehr schnell quasi getrieben vom Markt. Und da ist es eine gute Idee, mal einen Schritt zurückzutreten und mal so ein bisschen hinter die Kulissen zu gucken und sich mal mit diesen Basiskonzepten zu beschäftigen, damit man eben nicht ständig meint, oh, das und das ist jetzt total neu. Nee, es ist nicht neu. Das gab es schon vor 30 Jahren. Das ist nur anders verpackt worden.",
+            "start": 926515,
+            "end": 1074997,
+            "confidence": 0.7971194029850743,
+            "speaker": "C",
+            "channel": null
+        },
+        {
+            "text": "Ich möchte nur mal ganz kurz anmerken bezüglich Innovation und alter meine neuen Schläuchen und Probleme immer wieder neu lösen. jQuery 4.0 ist im Februar rausgekommen. Also für mich hat jQuery natürlich damals eine ganze Menge Probleme gelöst, speziell diese Cross-Browser-Geschichten. Und wenn du da jetzt mal an Sachen wie Babel denkst, ja, was ist ja ... Babel ist für mich so ein bisschen, zumindest mit den Polyfills, das JQuery von heute. Weil es kommen neue Features in die Browser rein, aber die ganzen Enterprise- oder Firmenanwendungen müssen alte Browser supporten. Und im Endeffekt macht Babel das. Klar, anders, nicht durch Vereinheitlichung und Check, sondern Transpillierung und Ähnliches, fair genug. Aber irgendwie so, weiß ich nicht, Ja, Babel ist das jQuery von 2.24. Würdest du da mitgehen?",
+            "start": 1075712,
+            "end": 1126588,
+            "confidence": 0.8051968503937009,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Im gewissen Sinne ja, wobei selbst Babel ja schon wieder ... Gut, es hängt natürlich auch immer krass von der Babel ab, in der du dich bewegst. Ich würde sagen, ich hab Babel jetzt auch schon ein paar Jahre nicht mehr in der Praxis gesehen, weil das in der Regel durch den TypeScript-Compiler erledigt wird. Aber das liegt natürlich daran, dass ich halt für mich persönlich primär mit Menschen zu tun habe, die halt mit TypeScript arbeiten. Insofern braucht da einfach niemand Babel. Aber so dieses Konzept, wenn man das mal ein bisschen weicht sozusagen das Konzept des Transpilers heute, weil nichts anderes ist ja Babel oder auch TypeScript an der Stelle, eines Pre-Compilers, der halt neuere oder abgefahrene oder was auch immer erdachte Sprachkonstrukte sozusagen in klassisches JavaScript übersetzt. Das ist in gewissem Sinne so eine Art JQuery, nur halt zur Compile-Zeit statt zur Laufzeit, könnte man, finde ich, schon so sagen, ja.",
+            "start": 1126628,
+            "end": 1173084,
+            "confidence": 0.8177012987012986,
+            "speaker": "C",
+            "channel": null
+        },
+        {
+            "text": "Offen gesprochen simplifiziere ich die ganze Thematik natürlich gerade enorm. Babylon macht natürlich viel mehr, also laut Website, laut Marketing. Aber meine Frage ist halt auch irgendwie so, die ganzen Probleme, die wir seit dem JQuery-Release bekommen haben, sind das denn wahre Probleme? Oder sind das wirklich jetzt nur die Probleme von Facebook mit, nehmen wir mal React, mit dem ganzen State-Management und Co.? ? Also haben wir diese Probleme oder nutzen wir diese Frameworks, weil wir diese Probleme haben wollen oder weil wir denken, wir haben diese Probleme mal in Zukunft.",
+            "start": 1173670,
+            "end": 1205043,
+            "confidence": 0.7900869565217391,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Also vielleicht gerade noch wegen der jQuery vs. Babel Sache noch ein ganz wesentlicher Punkt ist natürlich, dass Babel per se erstmal keinen unterschiedlichen Code für unterschiedliche Browser rausgibt. Das ist ja der Dreh- und Angelpunkt von jQuery. Quasi auf verschiedenen Laufzeitarumgebungen in verschiedenen Browsern, geringfügig unterschiedlich verhalten oder aussehen, quasi einen einheitlichen Abstraktionslayer draufzusetzen. Das ist bei Babel ein bisschen was anderes. Also nur, falls das jetzt jemand von den Zuhörerinnen oder Zuhörern im falschen Hals ansonsten bekommen sollte, dass wir da vielleicht Babel und JQuery noch ein bisschen nach einordnen. Wegen deiner Frage, Es ist so ein zweischneidiges Schwert. Auf der einen Seite steigt natürlich die Erwartungshaltung, was eine Web-Anwendung heutzutage leisten können soll. Da orientiert man sich natürlich an Facebook, an Instagram und Co., weil das ist ja das, was man tagtäglich sozusagen vorgelebt bekommt. Und da sind einfach gewisse Erwartungshaltungen da und gewisse Verhaltensweisen, die man sich halt auch für seine eigene Anwendung wünscht. Und insofern gibt's einen Teil der Probleme, und da wird State Management irgendwo unter der Haube sicherlich mit reinspielen, spielt das natürlich schon mit eine Rolle und da ist ein bestimmter Bedarf da. Auf der anderen Seite ist aber vieles auch so, es wird so zum Selbstzweck erhoben. Also mein Lieblingsbeispiel an der Stelle ist eigentlich Redux. Ich will nicht sagen, dass Redux eine blöde Idee wäre. Im Gegenteil, Redux ist eine fantastische Bibliothek, wenn du das Problem hast, was Redux löst. Und das ist das Problem, dass viel zu oft gar nicht geguckt wird, brauche ich überhaupt Redux, habe ich dieses Problem wirklich? sondern dann wird die Argumentation angebracht so nach dem Motto, ja, aber die Großen benutzen das doch auch, ja, und ich habe gehört, das ist irgendwie eine gute Idee und das sei wichtig und dann machen wir das jetzt auch, womit du dir unterm Strich unter Umständen vieles von dem, was du viel einfacher haben könntest, unnötig verkompliziert und dann in Probleme reinrennst, die du gar nicht haben müsstest. Also insofern, das ist so eine zweischneidige Sache, finde ich, an der Stelle. Ich glaube, dass ich vieles einfacher lösen ließe in der Webentwicklung, wenn man von vornherein sich mal davon lösen würde, immer direkt nach irgendeiner Bibliothek oder einem Framework ausschaut zu halten, die das Problem löst. Weil das ist was, was mir schon auffällt, was ich so in den letzten 10, 15 Jahren vielleicht geändert hat in der Webentwicklung. Wir als Entwicklerinnen und als Entwickler sind unglaublich darauf getrimmt worden zu fragen, ja, also du willst eine Webanwendung bauen, krass, mit welchem Framework machst du das denn? Die Frage, brauche ich überhaupt ein Framework, die stellt keiner mehr. Wer auch immer das quasi verursacht hat, aber wer durchsetzen wollte, dass Leute immer per se mit einem Framework arbeiten, ohne das zu hinterfragen, die Person hat auf jeden Fall Erfolg gehabt.",
+            "start": 1206144,
+            "end": 1365723,
+            "confidence": 0.7996173361522197,
+            "speaker": "C",
+            "channel": null
+        },
+        {
+            "text": "Wenn der Andi schon jQuery ins Spiel bringt, hab ich mir auch gedacht, jQuery ist tot. Aber irgendwie verfolgt mich jQuery aus irgendeinem Grund. Wir hatten ja in der Episode 84 mit Peter Kröner über die ganze JavaScript-Ecke gesprochen. Und er ist ja auch der Überzeugung, man soll möglichst mit plain vanilla JavaScript starten. Und nur, wenn man dann irgendwas benötigt, soll man langsam irgendwas dazunehmen und aufzubauen. Und das entspricht ja nicht genau dem, jQuery-Ansatz, dass ich einfach nur mal eine HTML-Seite habe und dann brauche ich zum Beispiel einen Datepicker und dann verwende ich jQuery, um einen aufwendigeren Datepicker zum Beispiel zu haben, was ein Kollege von mir bei einem Projekt bei mir gerade eingebaut hat und ich bin fast in Ohmach geflogen und wollte den PR gar nicht akzeptieren, weil ich jQuery gesehen habe, aber Um ehrlich zu sein, es war eine einfache Lösung, die eigentlich einen schönen Date-Picker zur Verfügung gestellt hat und sonst halt nicht groß aufwendig war, einfach simpel eingebunden und eigentlich den Job gemacht hat, den man sich wünscht eigentlich. Also warum dann irgendwie was Größeres einbauen und nicht das alte klassische JQuery?",
+            "start": 1367050,
+            "end": 1430308,
+            "confidence": 0.8095157894736842,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Ich habe eben schon mal gesagt, das hängt, glaube ich, sehr ab von der Bubble, in der man sich bewegt. Und das Problem Oder eins der Probleme ist meines Erachtens, dass wir auch unglaublich viele verschiedene Dinge in einen Topf werfen, die wir versuchen mit Webtechnologien zu erschlagen. Weil da hast du das simple, ich möchte eine Webseite bauen, was weiß ich, meine persönliche private Webseite, fünf Unterseiten. Und da soll halt ein Kontaktformular drauf. Und wenn man das abschickt, dann muss ein JSON-Request, also ein HTTP-Request mit JSON, muss irgendwo hingeschickt werden. Und das ist die komplette Interaktion auf der Seite. Hey, dafür React einzusetzen, das wäre totaler Overkill. Natürlich ist da jQuery grundsätzlich eine gute Idee. Da kann man sogar die Frage stellen, Brauchst du überhaupt jQuery oder geht das nicht auch mit Browserboard-Mitteln vielleicht so? Das ist das eine Ende der Fahnenstange. Das andere Ende der Fahnenstange ist dann, du baust, was weiß ich, Photoshop im Browser nach. Ja, das hat einen anderen Grad an Komplexität. Und da wirst du viel eher mit solchen Themen wie State Management und Co. natürlich zu tun haben. Und das auch in einer ganz anderen Größenordnung. Und da würde ich persönlich die Krise kriegen, wenn da jemand kommt und sagt, hey, ich baue Photoshop nach und mache das mit jQuery. Also dieser schöne ausgelutschte alte Satz mit the right tool for the job, da ist schon irgendwie was wahres dran. Auch da neigen wir halt, glaube ich, je nachdem, aus welcher Ecke man kommt. Das ist nämlich ganz spannend, dass je nachdem, aus welcher Ecke man kommt, was man so inhaltlich macht, die Meinungen da sehr auseinandergehen, was wichtig ist. Das schließt sich der Kreis zu dem, was ich vorhin gesagt habe, dass die Meinungen sehr auseinandergehen, was wichtig ist. Zum Beispiel, wenn du ausschließlich Webseiten baust oder primär Webseiten baust, dann hast du wenig mit APIs zu tun. Und dann ist natürlich der Bedarf an einer maschinenansprechbaren API, die du in irgendwelche Meshes integrieren kannst, geht gegen null. Wenn du aus einer servicebasierten, verteilten Architekturwelt kommst, wo eine API das A und O ist, weil ohne die funktioniert nichts und APIs müssen versioniert sein und APIs müssen selbstbeschreibend sein und blablabla, Ja, da kämmst du im Leben nicht auf die Idee zu sagen, die API ist nicht so wichtig und die lasst du einfach mal außen vor, aber dafür, hey, können wir das irgendwie mit einem anderen Framework lösen oder so. Und das ist halt das, was ich meine mit, es gibt zu viele verschiedene Facetten, die wir nicht auf einen Nenner kriegen werden.",
+            "start": 1430328,
+            "end": 1569517,
+            "confidence": 0.7687626728110591,
+            "speaker": "C",
+            "channel": null
+        },
+        {
+            "text": "Und du hast mir unglaublich viel Futter für eine tolle Überleitung gegeben, weil auf der einen Seite haben wir den Podcast begonnen mit, okay, es gibt Leute, die kommen aus dem Designer-Bereich, HTML, CSS, die kommen aus der Programmier-Ecke, JavaScript. Dann hast du gerade ein bisschen was über Use Cases erzählt und bzw. wenn du nur eine Webseite erstellen möchtest. ohne API und so weiter. Und im Allgemeinen sprechen wir natürlich über die Frage, wiederholt sich hier eigentlich die Geschichte. Wolfgang hat das mit Datenbankwelten eingeleitet. Und ich würde mal sagen, in Anführungszeichen, vor kurzem kam mal wieder ein neues Framework raus. Das nennt sich HTMX. Und das hat auch so ein bisschen den Anschluss dazu gegeben, dass wir dich kontaktiert haben, um diese Podcast-Präsenz hier zu haben. Weil du hast nämlich auch ein Video zu HTMX gemacht mit dem Titel Die perfekte UI-Technologie. Moment.",
+            "start": 1570358,
+            "end": 1620756,
+            "confidence": 0.7680896551724139,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Die perfekte ui technologie fragezeichen ausrufezeichen das ist ganz ganz wichtig weil das ist ansonsten 180 grad andere aussage.",
+            "start": 1621656,
+            "end": 1629558,
+            "confidence": 0.7924736842105262,
+            "speaker": "C",
+            "channel": null
+        },
+        {
+            "text": "Und genau darauf gehen wir jetzt ein kannst du mal für für so für so back end und datenbank leute wie mich ja leute die. Zwar vielleicht eine javascript variablen deklarieren können aber nicht die den unterschied zwischen let und wahr kennen erklären was htmx überhaupt ist und welches problem es lösen sollte.",
+            "start": 1631079,
+            "end": 1649904,
+            "confidence": 0.7896415094339622,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Ja, also stell dir vor, du hast als Oberfläche so einfach eine ganz klassische, ganz normale, langweilige HTML-Seite. Und jetzt klickst du irgendwo drauf und dieses Ich-klicke-irgendwo-drauf soll irgendeinen Request an den Server schicken, also so einen typischen AJAX-Request, wie man das früher genannt hat. Dafür muss ich JavaScript-Code schreiben. Dann, wenn ich jetzt mit einer JSON-API zum Beispiel spreche, dann produziert die API irgendein Ergebnis, kriegt JSON zurück. Dieses JSON kann ich aber nicht direkt verarbeiten, muss ich wieder JavaScript-Code schreiben, der das parst, der das validiert, und der dann irgendwie dynamisch HTML generiert, kleinzeitig, um das Ganze zur Anzeige zu bringen. Und das ist relativ aufwendig für verhältnismäßig wenig Effekt, sagen wir mal so. Und die Idee bei HTMX ist jetzt, dass statt mit einer JSON-API zu reden, du mit einem Server-Endpunkt redest, der dir einfach schon das fertige HTML-Schnipsel zurückschickt, was du anzeigen möchtest. Und dann musst du das sozusagen nur noch an der richtigen Stelle ins DOM einklinken. Und HTMX ist eine Bibliothek, die stellt dir eine Handvoll HTML-Attribute zur Verfügung, also so die Dinger, die du an Tags dran schreiben kannst. Und mit diesen Attributen kannst du dann zum Beispiel sagen, okay, wenn ich angeklickt werde, schicke was an folgende Serveradresse. Und was vom Server dann zurückkommt, was ja wieder ein HTML-Schnipsel ist, zeigt das als inner-HTML von folgendem Diff an. Und damit kannst du das komplett deklarativ machen. Du hast im Prinzip nur 1, 2, 3 HTML-Attribute, die du in dein HTML reinschreibst. Und du schreibst halt keinerlei JavaScript-Code. Und solange du mit, ich tausche ein bisschen HTML mit meinem Server aus, glücklich bist, ist das ein sehr einfacher und sehr geradliniger Weg, sozusagen eine halbwegs dynamische UI zu bauen. Und für viele einfachere Sachen wird das grundsätzlich erstmal ausreichen vermutlich.",
+            "start": 1650164,
+            "end": 1759123,
+            "confidence": 0.7733333333333333,
+            "speaker": "C",
+            "channel": null
+        },
+        {
+            "text": "Da gibt es ja schon Angular. Hat es vor zehn Jahren gegeben? Nein, wie lange ist Angular her? Zehn Jahre oder so?",
+            "start": 1759163,
+            "end": 1764825,
+            "confidence": 0.7349545454545456,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Ungefähr. Ein bisschen mehr vielleicht sogar.",
+            "start": 1764845,
+            "end": 1766886,
+            "confidence": 0.7123333333333334,
+            "speaker": "C",
+            "channel": null
+        },
+        {
+            "text": "War ja genau derselbe Ansatz.",
+            "start": 1766926,
+            "end": 1768086,
+            "confidence": 0.7742000000000001,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Ja, wobei du da schon noch mehr JavaScript schreiben musst. Also, da musstest du ja schon noch JavaScript schreiben, weil du hattest ja schon damals auch Services und du hattest Komponenten, die du definieren konntest. Aber klar, diese Bindings mit ng-for und ng-if und so, also quasi das HTML zu erweitern und Custom-Attribute, das gab's in Angular damals auch schon.",
+            "start": 1769912,
+            "end": 1788001,
+            "confidence": 0.7361333333333332,
+            "speaker": "C",
+            "channel": null
+        },
+        {
+            "text": "Von dem Pfad ist man ja eigentlich weggegangen. Also, der Angular-Pfad wurde ja dann verlassen aus, keine Ahnung, guten Gründen oder nicht guten Gründen, das ist immer die Frage, aber er wurde auf jeden Fall verlassen. Meines Wissens war das ziemlich tot, würde ich mal sagen, dieser Pfad. Und man hat diese aufgeblasenen HTML-Elemente und Tags irgendwie eigentlich nicht mehr gesehen, zumindest im Großen und Ganzen, würde ich sagen.",
+            "start": 1788021,
+            "end": 1811811,
+            "confidence": 0.7715942028985504,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Jetzt muss man erst mal sagen, es gab ja erst mal Angular 1. AngularJS hieß das, glaube ich, damals. Und dann gab es ja den ganz großen, wir machen alles anders, Bruch auf Angular 2, was ja im Prinzip außer der Name gleich geblieben ist und dem kompletten Rewrite entsprach. Und da war ja ein ganz großer Bruch in der Angular-Welt. Ziemlich zeitgleich mit diesem Angular 2, wo sich dann ja viele auch ein bisschen geärgert haben. So, toll, jetzt hab ich Zeit investiert, mich mit AngularJS, also Angular 1, anzufreunden, mich da einzuarbeiten und so weiter. Jetzt geht Google hin und schmeißt das alles weg und macht's noch mal neu. Hm, geht das mir dann mit Angular 3 und Angular 4 vielleicht wieder so? Also, da war so die Skepsis schon gegeben und man wusste nicht so genau, ist das jetzt so eine tolle Idee, da jetzt auf Angular 2 zu setzen? Und ziemlich zeitgleich damit ist React erschienen. Und React hatte den großen Charme damals, weil das HTML ... Also, Angular war ja sehr HTML-zentriert, und du hängst quasi JavaScript in das HTML rein. Bei React ist es so, dass du im Prinzip komplett deine UI in JavaScript entwickelst. Und der Witz an der Sache, was React damals unglaublich interessant gemacht hat, war, dass du das JavaScript, was deine UI produziert, natürlich nicht nur im Browser laufen lassen kannst, wo JavaScript ausgeführt werden kann, sondern auch auf dem Server. Das heißt, mit Node.js konntest du auch serverseitig eine UI produzieren. Das heißt, du hast das erste Mal mit einer Codebase, mit einem Set an Komponenten hast du quasi clientseitiges und auch serverseitiges Rendering durchführen können, was natürlich in so Sachen dann wie Universal Rendering, wo man das eine mit dem anderen zur Laufzeit verbindet und so gipfelt, das hat React ja erst mal ermöglicht. Und das war damals neu. Und dadurch sind natürlich viele dann auch zu React hingegangen. Sei es, dass ihnen das zu unsicher war, was wird aus Angular? Sei es, dass sie dieses Serverseitige und Universal Rendering irgendwie spannend fanden. Und da hat Angular im Lauf der Zeit aber natürlich auch wieder zugelernt und aufgeholt. Und da hat sich die Welt weiterentwickelt. Das geht heute mit Angular genauso grundsätzlich. Und ich würde sagen, das ist schon einer so der Kernunterschiede, weil Angular ist dieser Idee, Custom-Attribute in HTML unterzubringen, schon treu geblieben. Also ein ng-if und ng-for gibt's ja heute immer noch. Es ist vielleicht nur nicht mehr so prominent oder es wird nicht mehr so... prominent in den Vordergrund, weil es a. nicht mehr neu ist und weil es b. andere Ansätze gibt, wie halt mit React beispielsweise. Und das war damals, so 2010, 2011 rum, da war AngularJS auch nicht alleine, da gab es dann zum Beispiel noch Knockout. Und das hat auch so einen ähnlichen Ansatz gehabt mit Custom-Attributen. Und das war halt damals so, wo man das Gefühl hatte, ha, das ist jetzt the way to go, das ist die Zukunft. Und wie das immer so ist mit diesem schönen Hype-Life-Cycle, naja, irgendwann tritt die Ernüchterung ein, dann stellt man fest, okay, das hat auch seine Schattenseiten und dann levelt sich das irgendwo ein und da sind wir halt heute irgendwo. Also insofern gibt es das schon noch, aber es ist nicht mehr so prominent oder so präsent, wie das damals mal war.",
+            "start": 1811831,
+            "end": 1991243,
+            "confidence": 0.7737900355871888,
+            "speaker": "C",
+            "channel": null
+        },
+        {
+            "text": "Jetzt muss ich natürlich sagen, so wie du HTMX beschrieben hast, ich als Backhandler muss sagen, hey cool, geil, ich brauche da jetzt gar keine 15 Megabyte Javascript, ganz cool. Und dann hast du weitergemacht und dann hast du gesagt, okay, der Request gibt HTML zurück. Und da habe ich dann als Backhandler gesagt, uh. Was ist das denn? Also Moment mal, ich hab jetzt wenig, ja, was es gibt im Frontend, aber dafür baue ich jetzt ein eigenes Backend fürs Frontend, weil wir haben uns doch jetzt alles angefreundet mit RESTful APIs und allem Drum und Dran und dann JSON zurückzugeben oder von mir aus auch XML oder Ähnliches. Und da räumen sich so ein bisschen die Fußfingernägel auf bei mir als Backendler. Ist das auch dein Kritikpunkt, weswegen du gesagt hast, die perfekte UI-Technologie, Ausrufezeichen, Fragezeichen?",
+            "start": 1991283,
+            "end": 2036971,
+            "confidence": 0.7125724637681158,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Es ist einer der Kritikpunkte. Also, es vereinfacht erstmal Dinge im Frontend. Das muss man HTMX erstmal zugutehalten. Der Preis, den du dafür zahlst, weil im Englischen gibt's diese schöne Redewendung, der ist no free lunch. Ich weiß immer nie, wie ich die ins Deutsche übersetzen soll adäquat, aber ihr wisst, was gemeint ist. Der Haken an der Geschichte ist, ich habe nicht unbedingt weniger Komplexität, ich habe eine andere Komplexität und zwar an anderer Stelle. Weil das ich es mir jetzt im Frontend deutlich leichter machen kann, heißt ich muss auf dem Server HTML generieren. Was, und da sind wir wieder an dem Punkt, aus welcher Welt kommst du sozusagen. Was jetzt erst mal, wenn du halt gewohnt bist, mit Maschinen ansprechbaren APIs zu hantieren, was sich irgendwie nach einer ganz gruseligen Idee anhört. Und, ne, weil, uah, nee, also, ne, ne API, da würde ich halt noch nicht mal das Wort API dran schreiben, ich persönlich, aber halt einen Endpunkt, der HTML zurückgibt und der jetzt auch noch HTMX-proprietäre und spezifische HTTP-Statuscodes berücksichtigen muss. Das ist das genaue Gegenteil von Interoperabilität. Und das ist für mich der Dreh- und Angelpunkt oder eins der Kernargumente, warum ich eine API haben will. weil es der API egal ist, von welchem Frontend her sie angesprochen wird. Da kann man natürlich jetzt argumentieren, naja, es gibt ja aber auch dieses BFF-Pattern, Backend for Frontend, dass man für ein Frontend ein dediziertes Backend dazu baut, was halt die Aufgaben übernimmt, die halt genau für dieses Frontend notwendig sind, und jetzt könntest du ja hingehen und könntest vor deinen Server, der eine JSON-API hat, könntest du ja quasi einen BFF-Server davor stellen, der diese JSON-API anspricht, und der wiederum seinerseits nach vorne raus HTML spricht, und zwar so, wie HTMX das haben will. Und dann hättest du ja quasi beide Fliegen mit einer Klappe. Du hast eine klassische JSON-API, und du könntest eine dedizierte API für HTMX zur Verfügung stellen. Und dann kommen wir halt an den Punkt, wo ich sage, ja, klar, okay, ja, ist richtig, kann ich machen, dann wär das Problem gelöst. Aber war der Ansatz nicht, dass es einfacher werden soll?",
+            "start": 2037842,
+            "end": 2157741,
+            "confidence": 0.8001191135734073,
+            "speaker": "C",
+            "channel": null
+        },
+        {
+            "text": "Für mich verschiebt sich die Komplexität ja einfach nur wieder. Du nimmst die links weg und packst sie dann nach rechts. Wenn man ein Full-Stack-Entwickler ist, muss man den gleichen Code schreiben, eigentlich?",
+            "start": 2158381,
+            "end": 2170444,
+            "confidence": 0.7191515151515154,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Im Prinzip ja. Der Punkt ist halt nur, dass je nachdem, in welchem Umfeld du unterwegs bist oder was deine Rolle ist, du es dir damit natürlich eventuell einfacher machen kannst. Und wenn du jetzt, wie ich vorhin schon mal sagte, wenn du vielleicht aus einem Umfeld kommst, wo eine JSON-API überhaupt nicht relevant ist, Wo es einfach nur darum geht, du hast ein Produkt, das besteht aus einem Client und aus einem Server und die beiden sind die einzigen, die jemals miteinander quatschen werden. Da wird es keine Integration mit irgendwelchen Third-Party-Produkten geben und, und, und. Wir brauchen keine JSON-API. Das ist die Argumentation, wozu soll ich mir dann den Aufwand machen und jetzt ein JavaScript-Frontend mit viel Schi-Schi schreiben, um dann das JSON, was da kommt, wieder zu parsen und daraus wieder dynamisch eine UI, wenn der Server einfach die UI liefern kann. Tut er ja im initialen ersten Schritt sowieso. Und das ist eine Sichtweise, die ich nachvollziehen kann. Ich persönlich halte sie nicht für besonders zukunftsträchtig, weil dieses mit, ja, wir werden keine Third-Party-Integration haben, nächsten Dienstag sieht das anders aus, und es vermischt mir zu viele verschiedene Belange, die meines Erachtens getrennt sein sollten. Mein größter und hauptsächlicher Kritikpunkt an HTMX ist aber, dass auch HTMX, also es ist absehbar, dass es seine Grenzen hat. Insofern wird das nicht die UI-Technologie sein, mit der wir in Zukunft alles machen werden, sondern es ist sogar auf einen sehr speziellen Anwendungsfall eigentlich beschränkt. Das heißt, es ist ein Nischenwerkzeug. Aus dieser Nische wird es auch mit dem Ansatz meines Erachtens nicht rauskommen. Und es erzwingt aber, dass du wieder mal eine proprietäre Syntax lernst, weil du halt Custom-Attribute, ja, und das mögen nicht viele sein, bla bla bla, aber trotzdem lernst du HTML-spezifischen, proprietären Kram. Und da denke ich mir halt, und da wiederholt sich Geschichte tatsächlich, Ja, das hab ich vor 10 Jahren schon mal gemacht mit AngularJS. Und das hab ich davor schon mal gemacht mit Knockout.js. Und was genau bringen mir denn die Custom-Attribute, die ich damals in Knockout.js gelernt habe, heute noch? Um ehrlich zu sein, nix. Und insofern ist halt irgendwo absehbar, dass mir halt die HTML-X-spezifischen Sachen, die ich heute lerne, in Zukunft auch nicht so wahnsinnig viel bringen werden. Weil das wird nicht das 1. und nicht das letzte Framework seiner Art gewesen sein. Oder die 1. oder letzte Bibliothek ihrer Art. gewesen sein und damit hast du halt als entwicklerin oder als entwickler wieder so einem hype hinterher der wenn in fünf jahren davon kein mensch mehr redet toll du hast wieder was gelernt was du.",
+            "start": 2170504,
+            "end": 2318160,
+            "confidence": 0.8049748283752863,
+            "speaker": "C",
+            "channel": null
+        },
+        {
+            "text": "Wegschmeißen kannst was was meinst du mit grenzen weil du gesagt hast es es hat seine grenzen du meinst jetzt von der leistungsfähigkeit oder wie komplexe projekte du umsetzen kannst meinst du diese grenzen mal.",
+            "start": 2318180,
+            "end": 2329562,
+            "confidence": 0.7825142857142856,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Ganz platt gesagt das ist ein abstraktionslehrer bei ajax calls wenn du um bei dem Doofen Beispiel zu bleiben, wenn du Photoshop im Browser nachbauen willst und komplexes State Management im Client hast und eine sehr aufwendige Geschäftslogik im Client hast, da wirst du ja auch mit HTMX an JavaScript nicht vorbeikommen. Und insofern, das wirst du nie im Leben mit HTMX umsetzen können.",
+            "start": 2329602,
+            "end": 2350702,
+            "confidence": 0.7657500000000002,
+            "speaker": "C",
+            "channel": null
+        },
+        {
+            "text": "Ja, wobei, wenn ich jetzt die Devil Advocate Seite einnehmen müsste, dann sagt es ja wahrscheinlich auch niemand, dass du damit einen Photoshop bauen sollst, sondern 99 Prozent der Projekte im Web sind irgendwelche recht einfachen Use Cases oder ein bisschen Kommunikationsserver-Client und das war's.",
+            "start": 2351477,
+            "end": 2367426,
+            "confidence": 0.7668,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Dass man vielleicht das Photoshop damit auch nicht bauen sollte, damit gehe ich d'accord. Deswegen die Aussage, es ist nur auf einem begrenzten Teilbereich überhaupt anwendbar. Das sieht nämlich zum Beispiel mit so etwas wie Angular oder React anders aus. Die lassen sich wesentlich weiter gefächert verwenden. Ob das vom Aufwand her gerechtfertigt ist, sei mal dahingestellt, aber es wäre zumindest möglich. Bei HTMX geht es noch nicht mal. konzeptionell bedingt. Und ob das jetzt 99% der Seiten sind oder halt nicht, das hängt wieder davon ab, was dein Job ist, was du gerade machst. Wenn du tatsächlich Webseiten im klassischen Sinne entwickelst, mit ein bisschen Dynamik da drauf und ein bisschen Interaktivität, dann ist das 99% dessen, was du machst. Wenn du ein verteiltes CRM-System entwickelst, was sich in alle möglichen sonstigen Produkte integrieren soll, was von APIs und skalierbaren Services und Co. lebt, wo die UI eigentlich nur so ein Beiwerk ist, ja, dann wird halt HTMX nicht 99% dessen abdecken, was du halt brauchst. Und das ist halt immer sehr, wie gesagt, in welcher Blase steckt man drin. Ich bin ein großer Fan von, es gibt so einen schönen Satz, den ich immer sehr gut finde, um Technologien zu bewerten, make simple things simple and complex things possible. Und meine Erfahrung ist, dass sich Technologien durchsetzen, für die beides gilt. Also die sowohl den Einstieg einfach machen, als auch die komplexen Sachen ermöglichen. Und die meisten Technologien scheitern entweder an einem oder an dem anderen Punkt. Und HTMX ist für mich ein Paradebeispiel für make simple things simple. Jo, aber make complex things possible definitiv nicht. Und deswegen wird es in the long run für komplexe Dinge nicht genutzt werden und damit ist es an der Stelle eine Sackgasse. Und es wird unterliegen irgendeinem anderen Ansatz, der beides vereint und der beides auf die Reihe kriegt. Und insofern ist das, also ich will da jetzt gar nicht so sehr auf HTMX rumhacken, aber insofern ist das absehbar, dass das nicht das Mittel der Wahl für die nächsten, um es jetzt sehr weit auszudenken, für die nächsten Jahrzehnte sein wird.",
+            "start": 2367606,
+            "end": 2485366,
+            "confidence": 0.7901363636363636,
+            "speaker": "C",
+            "channel": null
+        },
+        {
+            "text": "Moment, wer ist in den JavaScript unterwegs? Bleiben wir mal bei den nächsten Monaten.",
+            "start": 2485747,
+            "end": 2488768,
+            "confidence": 0.5786428571428571,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Ja, aber der Punkt ist einfach, das zeigt sich in so vielen Beispielen. Also Visual Basic war auch so ein Fall von Make Simple Things Simple, definitiv. Make Complex Things Possible, naja, da hast du dann doch lieber C++ genommen, wenn's drauf ankam. Wo ist VB heute? Weg vom Fenster.",
+            "start": 2488788,
+            "end": 2507692,
+            "confidence": 0.7424000000000001,
+            "speaker": "C",
+            "channel": null
+        },
+        {
+            "text": "In Excel.",
+            "start": 2507732,
+            "end": 2508072,
+            "confidence": 0.6819999999999999,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Ja, in Excel. Anderes Beispiel, Webpack. Webpack, make complex things possible. Definitiv. Make simple things simple?",
+            "start": 2508764,
+            "end": 2515717,
+            "confidence": 0.5980624999999999,
+            "speaker": "C",
+            "channel": null
+        },
+        {
+            "text": "Nee.",
+            "start": 2515757,
+            "end": 2516178,
+            "confidence": 0.828,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "War viel zu kompliziert zu konfigurieren. Selbst nach dem großen Webpack ist jetzt mit Zero Configuration und so. In Webpack 3 oder 4, selbst nach der großen Offensive, war Webpack viel zu kompliziert. Und wo ist Webpack heute? Also es existiert noch, aber da gibt es inzwischen auch TurboPack und da gibt es ES Build und da gibt es Rollup. Und womit werben die alle? Hey, wir sind alle viel einfacher zu benutzen als Webpack. Und warum benutzen es die Leute? Weil es viel einfacher zu benutzen ist als Webpack. Und das wird mit HTMX auf die eine oder andere Art meines Erachtens über kurz oder lang auch passieren. Ich sage damit übrigens nicht, damit wir uns da nicht falsch verstehen, dass Angular und React und Co. irgendwie die magische Silberkugel wären, die alles perfekt machen und dass die keine Probleme hätten. Das will ich damit um Himmels Willen nicht sagen. Ich sage nur, HTMX wird nicht das Ding sein, was uns die nächsten zehn Jahre weit trägt. In einer Größenordnung, in einer Menge, also meiner persönlichen Meinung nach, dass es den aufwand das ding zu lernen heute wert.",
+            "start": 2516218,
+            "end": 2570927,
+            "confidence": 0.7982698412698412,
+            "speaker": "C",
+            "channel": null
+        },
+        {
+            "text": "Wäre jetzt hattest du auch gesagt okay htmx markenvaliden anwendungsfall haben wenn man nur eine website hat und keine kein cross publishing cms zum beispiel mit einer rest api und dann mit einer ipad app und so weiter und so fort meiner erfahrung nach, wenn das produkt erfolgreich ist kommt man um irgendwas mobiles später sowieso nicht drumherum, ist vielleicht htmx eine gute sache zum starten aber naja auf jeden fall enthält man da ziemlich viel jetzt hast du bei einem punkt gesagt und da habe ich mal eine frage zu du sagtest man lernt eine proprietäre syntax. Und da habe ich mir die frage gestellt ist das nicht eigentlich bei jedem framework der fall bis dass ich sag mal standardisiert wird weil, wenn ich das was ich aus dem javascript bereich kenne war zum beispiel diese art module zu schreiben da gab es common js da gab es drei oder vier verschiedene wege.",
+            "start": 2570947,
+            "end": 2621857,
+            "confidence": 0.7744545454545452,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Glaube ich die umd gab es noch umd definitions system js gab es mal und er kann so einiges zusammen und.",
+            "start": 2621897,
+            "end": 2628939,
+            "confidence": 0.746809523809524,
+            "speaker": "C",
+            "channel": null
+        },
+        {
+            "text": "So viel ich weiß hat sich das jetzt standardisiert und da gibt es gibt es jetzt einen gewinner ja Ist das grade eigentlich nicht genau das? Also, ich mein, lern ich nicht Angular und React und Svelte und Vue, bis wir uns in drei Jahren drauf geeinigt haben, was jetzt der Standard ist, und dann wird das von den Browsern implementiert, und dann hab ich keine proprietäre Sprache mehr. Und wie geh ich damit um? Weil ich mein, im Endeffekt kann ich ja nicht drei Jahre jetzt auf jQuery bleiben, bis ich warte, bis da ein Standard ist.",
+            "start": 2628959,
+            "end": 2654973,
+            "confidence": 0.7960102040816328,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Das ist richtig, ja, also zu einem gewissen Grad stimmt das natürlich, weil du natürlich in, also klar, lernst du, wenn du React lernst, lernst du natürlich React spezifische Konstrukte und Funktionen und APIs. Wenn du Angular lernst, lernst du Angular spezifische Konstrukte und APIs und so weiter. Das ist richtig, aber der Punkt ist, trotzdem kann man sich als Framework dabei, wie sage ich das jetzt nett? Als Framework kann man sich dabei intelligenter und weniger intelligent anstellen. Und eine Sache zum Beispiel, die ich an Angular nie verstanden habe. Also wir haben HTML, wir haben JavaScript, jetzt kommt Angular als Player ins Spiel. Jetzt möchte ich irgendetwas bedingt anzeigen. Dann kriegst du beigebracht, ja, also da gibt's ein Angular, gibt's ein Attribut, das heißt ngif. Das kannst du da dranschreiben. Und an ngif hat die und die Syntax. Und ngif hat das und das Verhalten. Und bei ngif musst du auf das und das und das achten. Wozu genau muss ich denn ein Conditional lernen, wie das in Angular funktioniert? JavaScript hat doch ein if. Genauso das Gleiche. Ich will in Angular irgendwas geloopt, also eine Liste von irgendwas anzeigen. Ja, da gibt es ein ngfor. Das ist quasi eine Vorschleife. Ja, super. Warum kann ich da nicht die Vorschleife, die es schon gibt, verwenden in JavaScript? Und das ist so der Punkt, wo ich mir denke, da lerne ich sehr viel Framework-proprietäres. Was mich erstmal nicht weiterbringt, sondern was einfach nur aus technischen Gründen eine zusätzliche Syntaxhürde ist. Weil davon, dass ich jetzt weiß, wie ich eine Vorschleife in Angular schreibe mit ng4, dadurch schreibe ich keine besseren Applikationen. Ich habe nur jetzt noch eine weitere Möglichkeit, wie ich eine Schleife schreiben kann. Das macht das Ganze ja erstmal nicht besser. sondern eher nur schlimmer. Und das ist was, was React, meines Erachtens, deutlich besser gelöst hat, weil React diesen JavaScript-zentrischen Weg geht, und wenn du halt in React eine Bedingung brauchst, dann nimmst du halt einen If, beziehungsweise den tamären Operator. Wenn du in React eine Schleife brauchst, dann nimmst du halt eine Schleife aus JavaScript, beziehungsweise die Map-Funktion aus JavaScript. Und insofern macht die Beschäftigung mit React dich unter Umständen gleichzeitig zu einem besseren JavaScript-Entwickler, beziehungsweise die Beschäftigung mit JavaScript macht dich gleichzeitig auch zu einer besseren React-Entwicklerin, weil die beiden sich sozusagen entgegenkommen und sich ergänzen. Und bei vielen anderen, also insbesondere bei denen, die mit diesem deklarativen, wir ergänzen mal HTML um irgendwelche Custom-Geschichten, arbeiten, da hast du halt genau das Gegenteil. Ja, dass du halt mal wieder damit anfängst, wie schreibe ich ein If, wie schreibe ich ein For, wie schreibe ich ein Switch, wie mache ich dieses, wie mache ich jenes. Und das sind alles keine komplizierten Sachen, aber es sind unnötige Sachen. Und ich würde, wenn ich die Wahl hätte, also natürlich gibt es Dinge, die muss ich framework-spezifisch lernen, weil das Framework ja dann irgendwas leisten soll, was halt mit Bordmitteln erstmal nicht geht. Insofern, klar, gibt es da Neues, was ich lernen muss, und das wird framework-spezifisch sein, aber ich würde das doch gerne möglichst gering halten und möglichst viel wiederverwendbares Wissen haben. Das ist mir halt irgendwo an der Stelle... Ich verstehe den Punkt einfach nicht, warum ich mich da mit diesen Custom-Attributen herumschlagen sollte, die halt historisch gesehen schon bewiesen haben, mehr als einmal, dass sie nicht nachhaltig sind, sondern dass das halt, ja, Lernen für die Tonne ist. Das finde ich irgendwie traurig, wenn man halt was lernt, wo man von vornherein weiß, das kannst du in ein paar Jahren definitiv wieder vergessen, weil es komplett unnütz ist.",
+            "start": 2656033,
+            "end": 2849024,
+            "confidence": 0.76601824212272,
+            "speaker": "C",
+            "channel": null
+        },
+        {
+            "text": "Jetzt ein Vorteil von HTMX, der auch immer in den Vordergrund gestellt wird, ist ja auch so ein bisschen die Schlankheit und die Größe, dass das alles ein bisschen schneller und schlanker ist und das spiegelt sich auch in einem Hacker News Post, der mal vor keine Ahnung, vor ein paar Wochen ziemlich steil gegangen ist, wo es darum gegangen ist, dass heutzutage die JavaScript-Frameworks alle so groß werden. Und wenn man diverse Webseiten anschaut, dann sind da 10 MB JavaScript-Code, 15 MB, die du herunterlädst. Und irgendwie ist alles so aufgeblasen heute. Wie blickst du denn auf das bloated JavaScript?",
+            "start": 2849744,
+            "end": 2884602,
+            "confidence": 0.7976534653465347,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Also das ist grundsätzlich erst mal richtig. Und ich habe ja vorhin schon mal gesagt, dass wir heute oft in der Situation uns befinden, wo wir fragen, welches Framework sollte ich nehmen und gar nicht mehr die Frage stellen, sollte ich überhaupt ein Framework verwenden. Und wir haben vergangene Woche einen Livestream bei uns auf dem YouTube-Kanal. Und da hatte ich jemanden zu Gast. Und wir haben uns den Quellcode von einem Computerspiel von 1989 angeschaut, der freigegeben wurde. Und dieses Spiel, das war Prince of Persia, wurde in Assembler geschrieben. Und 80.000 Zeilen Assembler-Code. Also für mich, ich habe von Assembler keine Ahnung, für mich war das ein Buch mit sieben Siegeln und ich war mega beeindruckt, was man da alles draus lesen kann, was man da alles draus lernen kann und wie man das angehen kann, was man über die damalige Zeit auch lernt. Und mir ist dann so bewusst geworden, weil wir haben dann ganz am Anfang ein kleines Hallo Welt in Assembler gebaut. Und das hatte nachher irgendwie 30 Byte oder so, das Kompilat. Also das ist das Binary. Und schreibt mal heutzutage, hallo Welt, such dir irgendeine x-beliebige Sprache raus. C-Sharp, Go, völlig egal, Rust, Haskell, scheißegal. Da kommst du unter, wenn du unter einem Megabyte bist, bist du ja schon echt klein. Bist gerne im 2, 3, 4, 5 Megabyte Bereich mitten im doofen Hallo Welt. Und unter der Haube passiert unterm Strich auch nichts anderes, als was dieses ganz einfache Assemblerprogrammchen gemacht hat. Aber der Punkt ist, dass du dich natürlich in dem Moment, wo du eine Hochsprache verwendest, hast du ein anderes Abstraktionsniveau. Das heißt, du musst dich um viele Details nicht mehr kümmern. Und dieses Wegabstrahieren von Details hat aber seinen Preis. Und genau das ist das, was auch in der JavaScript-Welt passiert. Je mehr wir Framework auf Framework auf Framework auf Framework stapeln und schachteln, desto Größer werden die Dinge naturgemäß. Stell mal die Frage, was ist denn der Unterschied, technisch gesehen, zwischen einem Stack und einem Heap? Was bedeutet das fürs Memory Management? Warum ist der Heap, was hat der mit der Garbage Collection zu tun? Warum muss der Stack nicht gegarbage collected werden? Und warum ist es also von dem her performance-mäßig ein Unterschied, ob ich das oder das mache in JavaScript und so weiter? Frag das mal. Und es gibt zu viele Entwicklerinnen und Entwickler, die dir das nicht beantworten können, die da keine Ahnung von haben, weil die sich damit nie beschäftigen mussten. Strings im Speicher, sind die null terminiert oder haben die einen Längenbyte am Anfang oder beides? Und was sind die Vorteile? Das sind alles so Low-Level-Dinge, mit denen müssen wir uns nicht mehr beschäftigen, weil uns das von irgendeiner Runtime oder irgendeiner Bibliothek oder irgendeinem Framework abgenommen wird. Nur, je mehr wir davon aufeinander stapeln, desto größer wird das halt, was wir da bauen. Und das ist insofern, wenn man so will, man könnte viel kleinere Sachen bauen, wenn man sich so ein bisschen back to the basics quasi wieder auf die Grundlagen fokussieren würde. Im Prinzip das, was ihr vorhin erwähnt habt, was der Peter Kröner gesagt hat, dass man erstmal versuchen sollte, möglichst weit mit Vanilla-JavaScript zu kommen. und erstmal so versuchen sollte, mit Bordmitteln auszukommen. Man wird überrascht sein, wie klein JavaScript-Lösungen sein können.",
+            "start": 2886383,
+            "end": 3071737,
+            "confidence": 0.7901389891696755,
+            "speaker": "C",
+            "channel": null
+        },
+        {
+            "text": "Ist ja auch sehr schön, bei diesem Hacker-News-Beitrag, den wir gerne in den Show Notes natürlich auch verlinken, das Kommentar, das absolut hochgevotet wurde, ist am Platz 1. ist, dass man eigentlich nur in die Bono-Industrie schauen muss. Und wenn man auf Pornhub geht, dann sieht man, wie JavaScript wirklich funktioniert, weil die gesamte Pornhub-Seite hat irgendwie 1,4 Megabyte an JavaScript. Und ich habe mir das auch mal angeschaut, natürlich rein als Forschungszwecken. Sie verwenden jQuery. Sehr stark. Also setzen scheinbar auch sehr, sehr klassisch auf jQuery und haben natürlich sehr viel optimiert, muss man auch sagen. Und investieren da wahrscheinlich viel Zeit. Und da stellt sich halt auch immer die Frage, wie viel Zeit darf ich investieren für mein Produkt? Bekomme ich überhaupt die Zeit von meinem, keine Ahnung, Product Owner, Chef, Chefin, was auch immer? Und macht es auch Sinn oder ist es vielleicht einfach okay, wenn es 5 Megabyte sind, weil es waren dann sowieso 300 Megabyte Bilddaten nachgeladen auf meiner Spiegelseite.",
+            "start": 3071797,
+            "end": 3125893,
+            "confidence": 0.796066666666667,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Deswegen musste ich gerade lachen, weil ich gedacht habe, klar, auf einer Webseite, die am Tag 27 Milliarden Terabyte an Videomaterial ausspielt, da ist es natürlich krass wichtig, dass wir 100 Kilobyte JavaScript sparen. Aber es hat natürlich auch was mit Ladezeiten zu tun. Je weniger geladen werden muss, desto schneller ist die Seite da.",
+            "start": 3125933,
+            "end": 3144461,
+            "confidence": 0.8111818181818182,
+            "speaker": "C",
+            "channel": null
+        },
+        {
+            "text": "Die User-Experience leidet natürlich.",
+            "start": 3144501,
+            "end": 3146062,
+            "confidence": 0.5225000000000001,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Genau, die User-Experience. Und je weniger du laden oder je weniger Code du hast, desto weniger Potenzial für Bugs hast du, desto geringer ist potenziell auch deine Angriffsoberfläche und Ähnliches. Also von daher, das macht schon auch durchaus Sinn, auch bei diesen, wenn du halt diese riesigen Datenmengen Auch da ist es am Ende des Tages natürlich wieder die Frage, in welcher Bubble bin ich unterwegs, wenn ich Line of Business Anwendungen schreibe, die im Intranet laufen und auf die immer über einen 10-Gigabit-Laden zugegriffen wird. ist das völlig egal, ob das ein Megabyte mehr oder weniger ist. Wenn ich eine Web-Anwendung baue, die im Wald funktionieren muss, wenn du Glück hast, der Edge-Verbindung, dann kannst du auf 300 Byte ankommen, die du halt sparen kannst oder halt nicht. Also, it depends. Und da ist halt so, das ist das, was ich vorhin meinte mit, was ist dir wichtig? Und das hängt von deinem Use Case, das hängt von deinem Szenario ab. Wie wichtig ist zum Beispiel eine schnelle Ladezeit aufgrund eines kleinen Bundles? Muss das überhaupt ein Bundle sein? Da wird ja auch immer gesagt, so, wir müssen alles bundlen, damit wir nicht so viel HTTP-Overhead haben. Es wird genug Szenarien geben, wo das überhaupt keine Rolle spielt, ob du da HTTP-Overhead drin hast oder nicht, weil das, was dauert, ist nicht das initiale Laden deiner Applikation. Und das ist halt das, was ich meine mit, das wirst du nicht auf einen Nenner kriegen, weil da halt zwischen den Leuten, die im Intranet, was weiß ich, bei einer Versicherung sitzen und irgendeine Intranet-Applikation aufrufen und dem Förster oder Försterin, die im Wald umherspaziert und versucht, irgendwelche Baumstämme über Smartphones zu taggen, da liegen halt Welten dazwischen. Und da kommt es halt auf unterschiedliche Dinge an. Es ist halt immer die Frage, an der Stelle, wie groß soll denn mein Komfortgewinn sein als Entwicklerin oder als Entwickler auf der einen Seite, wie viel Abstraktion möchte ich denn haben? Und demgegenüber, wie viel Wert lege ich auf Performance oder muss ich auf Performance legen zum Beispiel? Und das ist sicherlich was, was irgendwo diametral gegenübersteht.",
+            "start": 3146082,
+            "end": 3262618,
+            "confidence": 0.7766129943502831,
+            "speaker": "C",
+            "channel": null
+        },
+        {
+            "text": "Ich habe eine ganz kurze Frage, seid ihr beide auch die richtigen Gesprächspartner, wenn ich eine Podcast Episode machen möchte zum Thema User Experience auf einer Webseite für Erwachsenen Entertainment?",
+            "start": 3263447,
+            "end": 3272301,
+            "confidence": 0.8125666666666667,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Wo unterscheidet sich die zu anderen Webseiten, bitte?",
+            "start": 3273185,
+            "end": 3275407,
+            "confidence": 0.636875,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Das ist gegebenenfalls mal ein guter Punkt, wo wir länger drüber diskutieren könnten. Aber ich musste gerade nur sehr stark grinsen, als gesagt wurde, okay, User Experience auf Pornhub. Da habe ich mich gefragt, wie sieht denn gute User Experience da jetzt aus? Weil die Seite hat ja schon einen speziellen Anwendungsfall.",
+            "start": 3275427,
+            "end": 3294205,
+            "confidence": 0.8094038461538461,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Ohne witz also das ist doch im prinzip ist es doch dasselbe wie bei youtube also du willst dass du willst dass wenn du auf ein video drauf klickst dass es schnell startet du willst die richtigen videos vorgeschlagen bekommen du hast kategorisierung von videos du hast vielleicht favorisierte videos und so weiter das ist eigentlich dasselbe in grün insofern bin ich da bei wolfgang wo ist der unterschied Ganz.",
+            "start": 3294645,
+            "end": 3314163,
+            "confidence": 0.7302714285714287,
+            "speaker": "C",
+            "channel": null
+        },
+        {
+            "text": "Einfach, YouTube hat das Ziel, dass du lange auf der Webseite bleibst. Ich weiß nicht, ob das ein Erfolgskriterium ist, wenn du lange auf Youporn bleibst.",
+            "start": 3314203,
+            "end": 3319709,
+            "confidence": 0.7232692307692307,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Solange du Werbung anklickst, warum nicht, klar.",
+            "start": 3319729,
+            "end": 3322052,
+            "confidence": 0.6394285714285715,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Müssen wir nicht jetzt diskutieren, aber es ist tatsächlich eine interessante Fragestellung. Was ist deren primärer Treiber? Also ist es wirklich, dass du möglichst lange auf der Webseite bleibst? haben die andere kriterien woran sie festmachen wann du sozusagen ein wertvoller besucher beziehungsweise wertvolle besucherin bist wann haben sie sozusagen ihr ziel erreicht.",
+            "start": 3322092,
+            "end": 3341792,
+            "confidence": 0.8056037735849059,
+            "speaker": "C",
+            "channel": null
+        },
+        {
+            "text": "Wenn also ein produktmanager von mindgeek uns zuhört mindgeek ist die firma dahinter bitte einmal melden bei uns wir haben fragen.",
+            "start": 3341812,
+            "end": 3350780,
+            "confidence": 0.8665238095238098,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Kommen wir mal zurück zum vielleicht so wie es gemacht gehört, weil kürzlich hat auf unserer Community jemand gefragt, er hat irgendwie einen Praktikanten oder einen Junior, der jetzt neu bei ihm anfängt und er würde gerne so ein paar Sachen mit ihm durchspielen, was man so macht in der Webwelt und wie man da so beginnt und er hat halt eben an einen Go-Server gedacht und vielleicht HTMX und ich war da eben auch nicht sehr happy mit dem HTMX und die Frage stellt sich jetzt natürlich, was wäre denn das sinnvolle Weg, wenn man in die Webwelt so eindacht. Wie würde denn eine schöne Architektur aussehen? Du hast schon das KISS-Prinzip genannt und make simple things simple and complex things possible. Aber wenn du jetzt so an die Zusammenarbeit zwischen Client und Server denkst, wie siehst du das Ganze und was würdest du da empfehlen von der Architektur her, um möglichst flexibel zu bleiben und vielleicht eben nicht proprietären Code zu haben oder lernen zu müssen, irgendwelche Commands? sondern möglichst flexibel und zukunftsorientiert zu sein, damit der junge Junior dann eben auch irgendwie was lernt für die Zukunft.",
+            "start": 3351020,
+            "end": 3411859,
+            "confidence": 0.7896578947368422,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Es gibt ja Millionen von Patterns und sonst was, woran man sich bei Architektur halten soll. Selbst wenn du nur das sehr eng gefasste Themengebiet der Objektorientierung nimmst, dann hast du schon diese ganzen Patterns der Gang of Four, also die klassischen Design-Patterns von Singleton über Visitor, über Bridge, über was weiß ich was, was da alles dazugehört. Dann hast du die Solid-Prinzipien und du hast diesen ganzen Clean-Code-Krempel, der dann noch dazukommt. Da reden wir ja nur über den objektorientierten Teil. Grundsätzlich halte ich vieles davon für in gewissem Sinne überflüssig. Nicht, weil es falsch wäre, sondern weil es viel einfachere grundlegendere Regeln gibt, auf die man sich besinnen könnte. Also fast alle Architekturregeln zahlen im Prinzip auf zwei Dinge ein. Nämlich zum einen, dass du eine niedrige technische Kopplung hast. Du willst Spaghetti-Code vermeiden. Du willst nicht, dass, wenn du an der Schraube hinten links drehst, sich vorne rechts irgendwas verändert, wo keiner weiß, wo der Zusammenhang zwischen diesen beiden Stellen liegt. Das heißt, du willst Änderungen möglichst isoliert machen können. ohne dass die Auswirkungen auf 10.000 andere Stellen haben. Insofern niedrige Kopplung. Und außerdem willst du, wenn du eine bestimmte Änderung haben willst, eine fachliche Änderung oder wenn du einen Bug fixen musst oder irgendwie sowas, dann willst du nicht an 10.000 Stellen rumschrauben müssen. Im Idealfall gibt es genau eine Stelle, die für ein bestimmtes Verhalten zuständig ist. Das heißt, du hast alles, was quasi zu einer Aufgabenstellung gehört, nah beieinander. Das nennt man hohe Kohäsion. Alle so diese Design-Prinzipien, die es so gibt, also gerade zum Beispiel die Solid-Prinzipien sind ein wunderschönes Beispiel für, am Ende des Tages sind das nur konkretere Varianten von Regeln, die darauf einzahlen, dass du entweder eine niedrige Kopplung oder eine hohe Kohäsion oder beides bekommst. Und niedrige Kopplung, hohe Kohäsion ist manchmal so ein bisschen zu abstrakt, ist vielleicht ein bisschen schlecht greifbar. Das ist dann der Grund, warum es diese ganzen weiteren Regeln und Prinzipien und Patterns und so weiter gibt. Aber im Grunde genommen kann man sich darauf erstmal besinnen. Und um das zum Beispiel mal konkret zu machen, niedrige Kopplung heißt, wenn ich mich für ein UI-Framework entscheide, dann sollte dieses UI-Framework sich nicht in jeder einzelnen Klasse und in jeder einzelnen Funktion und in jedem kleinen einzelnen Fitzelchen von meiner UI wiederfinden, weil ich damit eine ganz riesengroße Abhängigkeit, eine ganz hohe Kopplung auf dieses UI-Framework geschaffen habe. Das heißt, je minimalinvasiver sozusagen das UI-Framework ist, aus technischer Sicht, ist das grundsätzlich schon mal eine gute Sache. Ich kann es auf die Frage runterbrechen, wenn ich das irgendwann austauschen will, wie viele Dateien muss ich anfassen? Und je weniger das sind, desto besser. glaube ich, was worauf wir bei der Auswahl von Technologien zu wenig gucken, weil dann zum Beispiel, also React sagt ja zum Beispiel bewusst, React ist kein Framework, sondern React ist eine Bibliothek und die Aufgabe von React ist gar nicht, dass du eine UI baust, sondern die Aufgabe von React ist, dass du rendern kannst. Das ist nur ein ganz kleiner Ausschnitt aus quasi diesem ganzen Konglomerat, was halt zu wir bauen mal eine UI sozusagen dazugehört. Was heißt, wenn du es richtig anstellst, kannst du nachher quasi React durch irgendwas anderes austauschen, was das Rendering angeht, aber weite Teile deiner UI Logik kannst du halt 1 zu 1 weiter behalten.",
+            "start": 3411899,
+            "end": 3612918,
+            "confidence": 0.793526785714285,
+            "speaker": "C",
+            "channel": null
+        },
+        {
+            "text": "Siehst du das in der Praxis?",
+            "start": 3613618,
+            "end": 3615319,
+            "confidence": 0.7254999999999999,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Jein. Der Punkt ist, also, es wird häufig mit dem Argument sozusagen erst mal eingekauft, React. Das Problem ist, dass du natürlich dann nur von diesem ganzen, das halt zu wir bauen mal eine UI dazugehört, dass du halt nur einen einzelnen Baustein hast. Weil du hast kein Routing, du hast keine Internationalisierung, du hast kein Testing, du hast dies nicht, du hast das nicht, du hast jenes nicht. Und dann kommt irgendjemand ganz schnell, oh, da gibt's den React-Router und da gibt's dann React dies und React jenes. dann hast du ganz viele React-spezifische Bibliotheken auf einmal drin, und dann hast du zwar React mit einer losen Kopplung oder mit einer niedrigen Kopplung, das nützt dir nur nix, weil der ganze Rest, den du drauf aufgebaut hast, sich halt in den Rest der Anwendung reinzieht. und der halt von React abhängt. Also insofern bedingt. Und das macht's dann auch nicht besser als Angular, weil Angular ist halt eher so der Ansatz, so die All-in-one-Lösung. Du brauchst nur Angular, und da ist einfach alles drin, was erst mal unter diesem Aspekt der hohen Kopplung sehr viel abschreckender klingt. Dafür kriegst du's aber wenigstens aus einer Hand, und am Ende des Tages sieht's bei React oft nicht anders aus. Und da ist halt der Punkt, dass man sich da für mein Empfinden viel öfter die Zeit nehmen müsste, einen Schritt zurücktreten müsste und überlegen müsste, brauchen wir denn dafür wirklich ein Framework? Brauchen wir dafür wirklich eine Bibliothek? Oder wäre das was, was wir nicht mit Bordmitteln machen können? Und da wird halt sehr oft, weil es zügig geht, weil es bequem ist, weil es erprobt ist, wird halt auf irgendeine schlüsselfertige Lösung gesetzt, die du von npm runterladen installieren kannst. Aber das hat seinen Preis. Und der wird sich nicht heute rächen, oder der wird nicht heute wehtun, der wird in drei Jahren wehtun, wenn du dann bestimmte Dinge austauschen müsstest. Und das ist so der Punkt, wo ich glaube, da ist noch eine Menge Luft nach oben.",
+            "start": 3615380,
+            "end": 3719889,
+            "confidence": 0.7908254437869824,
+            "speaker": "C",
+            "channel": null
+        },
+        {
+            "text": "Jetzt, wenn du schon Komponenten basiert ins Spiel bringst und die lose Kopplung und im Prinzip haben wir das ja auch mit den Server-APIs, die du erwähnt hast, wenn wir da eine saubere Server-API haben, die JSON zurückliefert, dann ist das halt auch weniger Kopplung, als wenn ich da jetzt HTMX-spezifisches HTML irgendwie zur Verfügung stelle, natürlich, weil sonst habe ich dort auch wieder eine Abhängigkeit. Aber auch im Client-Bereich sind ja Web-Komponenten oder ursprünglich Komponenten, und irgendwann wurden es dann zu Web-Komponenten, eigentlich immer so ein wichtiges Thema. Wie siehst du die Web-Komponentenbewegung? Ist die dort angekommen, wo sie angekommen sein soll? Wird das Ganze verwendet? Geht das den richtigen Weg?",
+            "start": 3720772,
+            "end": 3760296,
+            "confidence": 0.7906249999999998,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Also, wenn Web-Components im großen Stil da wären, gäbe es deutlich weniger Notwendigkeit, auf diese großen Frameworks zu setzen. Die Frameworks machen mehr, als dass ich nur Komponenten definieren kann, aber das ist einer der Haupttreiber dahinter, warum ich diese Frameworks einsetze. Ich würde mal behaupten, wenn du das Thema Komponenten, wenn du das Thema Routing und wenn du das Thema Internationalisierung und gegebenenfalls noch Theming, wenn du die vier Sachen nativ erschlagen würdest, würde der Bedarf an solchen Frameworks dramatisch zurückgehen.",
+            "start": 3761197,
+            "end": 3796461,
+            "confidence": 0.7981097560975605,
+            "speaker": "C",
+            "channel": null
+        },
+        {
+            "text": "Aber gibt's da irgendwelche Bewegungen in die Richtung, das nativ abzubilden, jetzt abgesehen von Web Components?",
+            "start": 3796501,
+            "end": 3801264,
+            "confidence": 0.8065624999999998,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Also das ist natürlich so, das ist auch so ein schönes Schlagwort, was irgendwie in diese Komponentengeschichte reinzahlt, sozusagen. Das ist natürlich so ein bisschen angetreten. Es hat den Anschein erweckt, dass es so, hey, statt React-Komponenten zu bauen oder statt Angular-Komponenten zu bauen, schreibt auch eine Web Component. Da kommen wieder so ein paar Punkte zusammen. Also zum einen ist das überhaupt nicht so gedacht, dass eine Web-Component ein Ersatz für eine meinetwegen React- oder Angular-Component ist. Die haben eine etwas andere Ausrichtung, die haben ein bisschen anderes Mindset, das ist ein bisschen eine andere Konzeption, die dahinter steckt. Man kann mit Web-Components sehr gut komponentenorientiert arbeiten, aber man kann es nicht eins zu eins, so wie man es von Angular oder von React erkennt, einfach so übersetzen, was die Eintrittshürde in Web Components ein bisschen höher macht, als man so erstmal meint. Dann kommt hinzu, dass Web Components so ein bisschen, naja, so seit 10 Jahren ungefähr gefühlt ist jedes Jahr das Jahr von, dieses Jahr wird aber das Jahr von Web Components werden. Und irgendwie gefühlt wird es das halt nicht. Dann kommt hinzu, dass halt Web Components, wie viele von diesen nativen Browser APIs, so ein bisschen, um es mal vorsichtig zu sagen, so ein bisschen altbacken wirken. Also vom API-Design her, wie bestimmte Dinge funktionieren, wie Dinge benannt sind, kommt man schon sehr schnell an den Punkt, wo man sich denkt, na ja, das hätte man sich jetzt vielleicht im Jahr 2024 ein bisschen moderner gewünscht oder ein bisschen anders gewünscht, was natürlich auch nicht ganz so attraktiv wird. Wenn man sich da drauf aber mal einlässt, dann kommt man mit Web Components schon recht gut, recht weit. Da ist nativ auf jeden Fall was da, womit man Komponenten definieren kann. Und lustigerweise, die Aufgabe von HTML ist ja, HTML-Elemente zu orchestrieren. Und Web Components sind ja am Ende des Tages nichts anderes als Custom-HTML-Elemente. Und was so die Themen angeht, jetzt zum Beispiel wie Theming, ich meine, das ist über CSS mit CSS-Variablen, ist ein Satz, den man fahren kann. Sicherlich auch nicht für immer und alles geeignet, aber ist für viele Situationen ein guter Ansatz. Das Thema Internationalisierung, ja. Also blöd gesagt, ich habe ein Key plus eine Sprache und mache dazu ein Lookup, was das jetzt übersetzt heißt. Meinetwegen noch mit singular Plural, Form und so für das korrekte Stamming und so. Aber das klingt jetzt für mich nicht nach etwas, wo ich jetzt sagen würde, oh, da brauche ich jetzt unbedingt React oder Angular für. Und sowas wie Routing, ich meine, wir haben jetzt seit wie vielen Jahren die History API im Browser und PushState und ähnliche Geschichten. Also wenn man will, kann man das schon machen. Es gibt viele Bausteine. Was fehlt noch, ist so ein bisschen so die Bewegung, diese Bausteine mal miteinander zu verheiraten und das quasi mal nativ so aufzuziehen, dass es ein halbwegs adäquater Ersatz für Angular, React und Co. sein könnte.",
+            "start": 3801304,
+            "end": 3971664,
+            "confidence": 0.8059536290322589,
+            "speaker": "C",
+            "channel": null
+        },
+        {
+            "text": "Das Schwierige ist halt immer, sobald du nativ bist, bist du halt immer irgendwo veraltet, weil wenn mal was nativ unterstützt wird, hat es halt ein gewisses Alter, bis das durchgeht, in allen Browsern verfügbar ist und so weiter. Das braucht halt einfach seine Zeit drum. Wirken Standards halt immer irgendwie altbacken, weil sie halt immer irgendwie in der Vergangenheit erzeugt worden sind, erstellt worden sind und nie das neue, hippe, coole Zeug sind, wo dann ja unter Umständen irgendwelche Libraries drüber bauen, was ja teilweise auch okay ist, solange die Standards dann auch verwendet werden.",
+            "start": 3972125,
+            "end": 4001363,
+            "confidence": 0.8204583333333337,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Ja, da kommen halt so Sachen mit rein, also was ich zum Beispiel bei Web Components nicht nachvollziehen kann, ist, wenn du eine Web Component, also quasi ein eigenes HTML-Element, wenn du das sozusagen definierst, dann musst du es, um es verwenden zu können, musst du es in der zentralen Registry ablegen und dieses in der zentralen Registry ablegen, also du schreibst eine JavaScript-Klasse und diese JavaScript-Klasse musst du unter dem Namen des HTML-Elements unter dem du das nachher verwenden möchtest, sozusagen registrieren. Und diese Zeile, also quasi nimm diese JavaScript-Klasse und registriere die unter dem Namen xyz als Custom-Element. Die steckt, und das ist das, was du in allen Tutorials, in allen Guides überall liest, die steckt üblicherweise nicht in der Anwendung, die die Komponente lädt, sondern diese Zeile steckt üblicherweise in der Komponente. Ja, und da kann man sich an fünf Fingern abzählen, was vorprogrammiert ist. Namenskonflikte. Was mach ich, wenn ich zwei Komponenten lade, die blöderweise beide auf die Idee kommen? Ich würde gerne MyButton heißen. Dann hab ich ein Problem. Das ist so was, wo dann zehn Jahre lang drumrum geeiert wurde. Dann kommt man auf den Punkt, ja, man könnte ja auch mit lokalen Registries und so ... Das ist eins der Beispiele, wo ich sage, Ich finde die API einfach nicht besonders gelungen, weil dass das ein Problem ist, dass ein globaler Namespace eine schlechte Idee ist, das haben wir nun echt schon mehr als genug in der Geschichte der Softwareentwicklung gesehen. Das wäre absehbar gewesen.",
+            "start": 4001703,
+            "end": 4090052,
+            "confidence": 0.7959246031746032,
+            "speaker": "C",
+            "channel": null
+        },
+        {
+            "text": "Da gibt es ein, zwei Beispiele. Namespacing sollte kommen bald, deiner Meinung nach.",
+            "start": 4090092,
+            "end": 4095234,
+            "confidence": 0.7505384615384616,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Ja, also das hätte man zum Beispiel vermeiden können. Oder man hätte ein anderes Pattern von vornherein etablieren sollen und sagen sollen, naja, wer halt eine Komponente lädt, ist in der Verantwortung, sie entsprechend einzubinden. Was dann aber natürlich die Frage aufwirft, was macht eine Komponente, die ihrerseits eine Komponente laden will? Also, dann müsste die ja in die globale Registry und so weiter. Und das sind halt so Dinge, wo ich denke, hm... hätte man ein bisschen anders lösen können. Auf der anderen Seite ist es natürlich sehr einfach, sich im Nachhinein hinzustellen, den Finger drauf zu zeigen und zu sagen, ja, das hätte ich ja anders gemacht. Hinterher ist man immer schlauer, wie es so schön heißt.",
+            "start": 4095554,
+            "end": 4128522,
+            "confidence": 0.7446806722689079,
+            "speaker": "C",
+            "channel": null
+        },
+        {
+            "text": "Okay, dann versuchen wir mal, nicht weniger in die Vergangenheit zu blicken, sondern in die Zukunft. Wenn wir schon bei Nativ sind und Vanilla Web und Bildless, wie weit sind wir denn entfernt von diesem perfekten Zustand, deiner Meinung nach? Und was braucht es vielleicht noch?",
+            "start": 4128582,
+            "end": 4143670,
+            "confidence": 0.8148043478260866,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Ja, also man kommt schon relativ weit. Wir haben vor einer Weile bei The Native Web, wir sind hingegangen und haben mal durchgezählt bei einer React-Anwendung, einer überschaubar kleinen React-Anwendung, wie viele Dependencies wir hatten. Also das ist völlig gestört, welche Anzahl da zusammenkommt. Und wir haben dann gesagt, okay, wir versuchen einfach die gleiche UI jetzt mal zu bauen, so Vanilla, wie wir es hinkriegen. Wir hatten so zwei, drei Anforderungen, wie zum Beispiel, wir möchten mit TypeScript arbeiten. Das ist für uns derzeit, das steht nicht zur Debatte, darauf zu verzichten. Vanilla JavaScript funktioniert meines Erachtens gut, wenn du alleine oder zu zweit entwickelst, sobald du in einem größeren Team arbeitest. Du brauchst ein paar Leitplanken, du brauchst ein paar Garantien, was Schnittstellenstabilität angeht, und da ist TypeScript eine enorm große Hilfe. Das kann und möchte ich mir nicht ohne einen Compiler vorstellen. Also, das war so eine der Geschichten. Und dann haben wir aber gesagt, okay, also, lasst uns mal React weglassen, lasst uns mal auf Web Components setzen. Lass uns mal SASS weglassen. Lass uns mal gucken, wie weit kommen wir mit nativem CSS. Ja, und die erste Reaktion, immer wenn ich das jemandem erzähle, ist, wie könnt ihr denn SASS weglassen? Man muss doch CSS nesten können, ansonsten wird das doch total unlesbar. Ja, das kann CSS inzwischen von Haus aus. brauchst du keinen Sass für. Auch diese ganzen Hilfsfunktionen, wie ich möchte eine Farbe zehn Prozent heller haben oder ich möchte zwei Farben mischen oder kann CSS inzwischen alles von Haus aus. Seaming kann man mal über CSS-Variablen probieren. Und wir sind jetzt am Ende, also wir sind da jetzt seit etlichen Monaten mit dieser UI am Arbeiten und wir sind insgesamt auf vier Dependencies gekommen. Also wir haben TypeScript, Dann brauchen wir natürlich einen, also ja, wir haben einen Bundler am Ende verwendet, da haben wir eher das Bild verwendet. Wir wollten ein Tool für Formatting, Linting und so weiter haben, da haben wir Biom verwendet, das ist das dritte, und wir haben Lit verwendet. Lit ist quasi nochmal, wenn man so will, ein Framework, was auf Web Components aufsetzt, aber was, also was ist, was diese Web Component API ein bisschen zugänglicher macht, was aber am Ende des Tages trotzdem dazu führt, dass du immer noch standardkonforme Web Components schreibst, und das sind die Web Components, die sind zur Laufzeit nicht auf Lit angewiesen, sondern die kannst du halt in irgendeine Web-Anwendung reinschmeißen und die funktionieren halt. Und mit den vier Dependencies, und das ist ein Traum, wenn du keine 70 Dependencies hast, sondern nur vier, und du nicht einmal in der Woche von Dependabot 95.000 Pull-Requests bekommst, sondern nur vier, Und das ist schon echt schön. Und das ist schnuckelig, klein, das ist überschaubar. Man muss sich an ein paar Stellen ein bisschen umgewöhnen, man muss ein paar Dinge ein bisschen anders lösen. Aber das funktioniert schon ganz gut. Wir hätten das Bild als Bundling-Schritt auch noch weglassen können, theoretisch. Aber kompilieren müssen wir halt so oder so, solange TypeScript nicht nativ ausgeführt werden kann. Und dann hat sich halt angeboten, okay, dann können wir auch noch bundlen, dann ist es egal an der Stelle.",
+            "start": 4144050,
+            "end": 4331564,
+            "confidence": 0.7867247191011234,
+            "speaker": "C",
+            "channel": null
+        },
+        {
+            "text": "Warum gibt es eigentlich im Typescript-Bereich so wenig Bewegung? Warum wird Typescript nicht irgendwann nativ? Oder warum gibt es da keine Bestrebungen, das nativ zu machen, meines Wissens zumindest?",
+            "start": 4331604,
+            "end": 4341955,
+            "confidence": 0.8898620689655171,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Also die eine Option wäre ja, dass die Browser tatsächlich nativ TypeScript verstehen, dass sie es ausführen können. Das wäre Option Nummer 1. Keine Ahnung, da habe ich auch noch nichts mitbekommen, in die Richtung passiert nichts. Option Nummer 2 wäre, dass all die lustigen Features, die TypeScript hat, die in JavaScript nicht enthalten sind, dass die in JavaScript nachgezogen werden. Also mal zum Beispiel ein optionales statisches Typsystem für JavaScript wäre so eine Maßnahme. Dann bräuchte man gar kein TypeScript mehr. Ist aber irgendwie auch nichts. Zumindest nicht, dass ich es mitbekommen hätte auf der Agenda. Die schlechteste Option, das ist leider die, die zumindest von Microsoft verfolgt wird. oder verfolgt wurde. Ich weiß nicht, wie jetzt der tagesaktuelle Stand ist. Microsoft hat ein ganz merkwürdiges Proposal gehabt. Und zwar war die Idee, dass alles das, was in TypeScript quasi TypeScript-spezifische Anmerkungen sind, also die Type Annotations zum Beispiel, dass das als gültige JavaScript-Syntax deklariert wird in JavaScript. Aber nicht, dass das in Javascript Typ-Annotationen wären, sondern Kommentare. Also das quasi, wenn ich, war, const x, Doppelpunkt number ist gleich Tüdelü-Schreiber, dass das Doppelpunkt number als Kommentar angesehen wird. Wo ich mir denke, das öffnet doch Tür und Tor, also das macht das Parsing saukompliziert. Das öffnet Tür und Tor für irgendwelche völlig kaputten, merkwürdigen Konstrukte. Und... Das klingt einfach nach einer blöden Idee und du verbaust dir komplett die Syntax, falls du jemals Type Annotations in JavaScript reinbringen wolltest. Insofern, ich weiß nicht, wie erfolgreich Sie mit diesem Proposal insgesamt sind und ob Sie das noch weiterverfolgen. Aber nur zeitlang war das mal die Idee. Und warum da ansonsten so herzlich wenig passiert gefühlt, keine Ahnung.",
+            "start": 4342455,
+            "end": 4445749,
+            "confidence": 0.8026510791366905,
+            "speaker": "C",
+            "channel": null
+        },
+        {
+            "text": "Was ist denn Böse daran, etwas zu kompilieren? Weil sonst müsstest du es ja, wenn TypeScript nativ im Browser unterstützt wird, müsstest du es ja im Browser jedes Mal kompilieren oder irgendwie cachen. Keine Ahnung, wo man das dann am besten macht. Aber immer kompilieren und immer die Types checken macht ja eigentlich auch wenig Sinn.",
+            "start": 4445769,
+            "end": 4462413,
+            "confidence": 0.7897857142857143,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Der Zeitaufwand ist das Problem. Weil der Typescript-Compiler, also, das tut mir leid, aber der Typescript-Compiler ist echt schnarchlangsam. Und es ist ja im Moment so ein Trend, würd ich's mal nennen, zu beobachten, so, egal welches Tooling du hast in der JavaScript-Welt, irgendjemand bringt eine neue Version oder eine neue Variante dafür raus, und es ist in Rust geschrieben, und deswegen ist das blazing fast. Das ist immer derselbe Spruch, der auf der Webseite steht. Und worauf ich warte, ist, dass irgendjemand, und im Idealfall wäre das natürlich Microsoft selber, dass irgendjemand mal mit einem Blazing Fast TypeScript Compiler um die Ecke kommt, weil TypeScript gerade bei größeren Projekten und gerade wenn du komplexere Typen hast, doch sehr schnell sehr langsam wird und auf einmal zum naja, lokal halt so ein bisschen zum Showstopper wird. Und das ist ja dann Wahnsinn, wenn dein Formatter in 13 Nanosekunden durch dein Projekt durchrennt und dein Linter in 25 Millisekunden durch ist. Wenn TypeScript danach 30 Sekunden kompiliert, ist das halt unlustig. Und dann ist es auch egal, ob der Linter eine Sekunde mehr oder weniger gebraucht hätte.",
+            "start": 4463193,
+            "end": 4527129,
+            "confidence": 0.8018655913978494,
+            "speaker": "C",
+            "channel": null
+        },
+        {
+            "text": "Aber noch weniger macht es natürlich Sinn, es dann im Browser bei jedem Client aufruf zu machen, würde ich mal sagen. Auch wenn es schnell ist, auch wenn es 100 Millisekunden benötigt, wenn ich dann 100 Millisekunden mal hunderte, tausende Male das mache, macht es weniger Sinn.",
+            "start": 4527725,
+            "end": 4540828,
+            "confidence": 0.7272127659574469,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Was im Endeffekt die Frage aufwirft, warum baut man quasi, wo doch offensichtlich der Großteil der JavaScript-Welt der Meinung ist, dass das eine gute Idee sei, ein optionales, das muss man sich ja mal auf der Zunge zergehen lassen, ein optionales statisches Typsystem zu haben. Warum wird JavaScript nicht einfach darum erweitert und wir brauchen kein TypeScript mehr? Das wäre doch das Einfachste der Welt, dass die Browser das einfach von Haus aus können. Und wer es nicht verwenden möchte, kann es ja lassen, weil es ist optional. Das wäre so einfach.",
+            "start": 4540848,
+            "end": 4570249,
+            "confidence": 0.8074130434782608,
+            "speaker": "C",
+            "channel": null
+        },
+        {
+            "text": "Ja, die Frage ist natürlich trotzdem, ob das nicht dann extrem viel Computational Overhead bedeutet, wenn ich jedes Mal diese Types checke im Browser. Also idealerweise mache ich das ja schon in irgendeinem Compile-Schritt und habe dann irgendwie einen Zwischencode oder einen Bytecode oder irgend sowas in der Richtung, der dann schnell ausgeführt werden kann, gerade im Web, wo es halt unter Umständen millionenfach aufgerufen wird.",
+            "start": 4570269,
+            "end": 4591501,
+            "confidence": 0.7815000000000002,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Man muss auch dazusagen, was ich eben so sagte, das wäre so einfach. Das ist natürlich auch von außen leicht gesagt. Vermutlich jetzt ein statisches Typsystem mal eben im Nachhinein in JavaScript in die Engines reinzubringen, das wird natürlich nicht mal eben so einfach sein, dass das Google-V8-Team sagt, ja, uns ist gerade langweilig, Freitagnachmittag, wir haben noch eine halbe Stunde Zeit, machen wir mal eben. Das wird wohl eher eine Aufgabe von etlichen Monaten sein, das zu machen für viele Personen.",
+            "start": 4591761,
+            "end": 4617573,
+            "confidence": 0.7930121951219515,
+            "speaker": "C",
+            "channel": null
+        },
+        {
+            "text": "Da bleiben wir mal in der Zwischenzeit einfach bei dem Compiler schneller machen, dass der TypeScript Compiler einfach schneller wird. Da wird vielen geholfen, glaube ich.",
+            "start": 4617934,
+            "end": 4626309,
+            "confidence": 0.8445384615384616,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Ja, genau, das wäre wahrscheinlich schon mal ein großer Benefit. Und ich glaube, wenn man da wäre, wenn man einen schnelleren TypeScript-Compiler hätte, in Verbindung mit sich generell mal ein bisschen bewusst versuchen zu lösen von diesem zwingenden, wir müssen auf ein Framework setzen, hin zu, lass mal einfach mal wieder revalidieren oder re-evaluieren, was die Browser heutzutage von Haus aus können. Ich glaube, damit wäre schon viel gewonnen. Ich sage ja auch gar nicht, dass du unter gar keinen Umständen ein Framework verwenden solltest. Ich sage nur, es sollte nicht diese gottgegebene Selbstverständlichkeit sein, die nie hinterfragt wird.",
+            "start": 4626852,
+            "end": 4659886,
+            "confidence": 0.8231717171717173,
+            "speaker": "C",
+            "channel": null
+        },
+        {
+            "text": "Wir haben eine ganze Menge über Probleme, Herausforderungen, aber auch mögliche Lösungen gesprochen. Wahnsinn. Ich bin ja totaler Frontnet-Noob. Aus meiner Sichtweise stimme ich dir wirklich zu, dass die ganze Sache overly komplex geworden ist. Die Tage auch noch was mit Webpack versucht, dann bin ich bei Rollup gelandet, weil es einfacher war und weniger macht. Und für mich reicht's in dieser Hinsicht. Ich würde mir auch ein bisschen, ich sag mal, ja, Diät bei der ganzen Sache wünschen, ja, im Frontend. Wenn man also Hilfe braucht, so wie ich, dann kann man natürlich auch den Golo anquatschen. Denn beim Golo kann man dafür auch Geld ausgeben. Der macht das dann professionell, berät euch dann natürlich zu eurem spezifischen Anwendungsfall. Alle Links haben wir natürlich auch in den Shownotes. Und da findet ihr auch eine Art und Weise, wie ihr den Golo kontaktieren könnt. Was würdest du denn zum abschluss unseren hören und hören noch mitgeben wollen ich.",
+            "start": 4660896,
+            "end": 4721197,
+            "confidence": 0.851537974683544,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Hab das vorhin schon mal zwischendrin erwähnt und ich glaube das ist es nochmal wert das nochmal hervorzuheben, weil wir als entwickler und entwicklern ja ständig mit neuem konfrontiert werden und weil wir ständig, vor der Wahl stehen, womit wir uns beschäftigen sollen und in welche Richtung man sich weiterentwickeln soll. Und du kannst nicht alles machen. Dafür ist es einfach viel zu viel und es wandelt sich in viel zu schneller Zeit. Und deswegen würde ich da nochmal auf den Satz Make simple things simple and complex things possible zurückkommen, weil das, glaube ich, eine sehr gute Richtlinie so auch für einen selbst sein kann. woran man sich orientieren kann, welche Technologien es wert sind, Zeit mit ihnen zu verbringen oder Zeit in sie zu investieren, weil Technologien, die beides erfüllen, die machen Spaß, weil man kommt leicht rein und man kann einfache Sachen damit mal eben erledigen. Aber sie haben eben auch das Potenzial, langfristig dich quasi zu tragen. Und du hast weder die hohe, nervige Einstiegswürde, wo es überhaupt keinen Spaß macht, bis du mal an den Punkt kommst, wo es sich bezahlt macht, sozusagen. Und du rennst nicht über kurz oder lang gegen irgendeine Glaswand, die du erst mal nicht gesehen hast. Und insofern, make simple things simple and complex things possible. Und das ist, glaube ich, eine gute Richtung.",
+            "start": 4721237,
+            "end": 4790939,
+            "confidence": 0.7786026785714287,
+            "speaker": "C",
+            "channel": null
+        },
+        {
+            "text": "Finde ich super. Damit kann man jetzt jedes JavaScript-Framework in Zukunft evaluieren. In einem Satz ist es einfach und zukunftsorientiert perfekt.",
+            "start": 4790959,
+            "end": 4798525,
+            "confidence": 0.8163333333333334,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Ich glaube, das ist auch so ein Spruch, den sollte ich mir mal auf so eine Postkarte schreiben und irgendwie hier an meinen Bildschirm kleben. Kolo, vielen lieben Dank, dass du dir die Zeit genommen hast, mit uns zu sprechen. Wir sehen das nicht als selbstverständlich an. Vielen Dank, dass du uns da ein bisschen educated hast, mich zumindest. Ich habe eine ganze Menge gelernt als Bond-Edu. Dann würden wir sagen, vielen Dank und heute Abend schaue ich mal ein bisschen weiter auf deinem YouTube-Kanal vorbei, damit ich noch mehr davon lerne. Ich würde sagen, bis bald.",
+            "start": 4799597,
+            "end": 4826977,
+            "confidence": 0.718298969072165,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Tschüss.",
+            "start": 4826997,
+            "end": 4827257,
+            "confidence": 0.282,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Danke euch. Macht's gut. Ciao. Ciao.",
+            "start": 4827797,
+            "end": 4831919,
+            "confidence": 0.42166666666666663,
+            "speaker": "C",
+            "channel": null
+        },
+        {
+            "text": "Und nicht vergessen, deine vielleicht zukünftige Textstelle bei der Handelsblatt Media Group findest du über den Link in den Shownotes.",
+            "start": 4831979,
+            "end": 4837302,
+            "confidence": 0.7716000000000001,
+            "speaker": "A",
+            "channel": null
+        }
+    ],
+    "confidence": 0.789262533352055,
+    "audio_duration": 4837.0,
+    "webhook_status_code": null,
+    "webhook_auth": false,
+    "summary": null,
+    "auto_highlights_result": null,
+    "content_safety_labels": null,
+    "chapters": null,
+    "sentiment_analysis_results": null,
+    "entities": null
+}
