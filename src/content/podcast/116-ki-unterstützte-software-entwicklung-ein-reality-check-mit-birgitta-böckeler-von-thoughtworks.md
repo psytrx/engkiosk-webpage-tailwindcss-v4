@@ -58,13 +58,13 @@ speaker:
 - name: Wolfi Gassler
   transcriptLetter: B
   website: https://wolfgang.gassler.org/
-- name: Birgitta Böckeler
+- name: "Birgitta B\xF6ckeler"
   transcriptLetter: A
   website: https://www.linkedin.com/in/birgittaboeckeler/
 spotify: https://open.spotify.com/episode/44FSlJr24G0QmYxZgZ8QOJ
 tags:
 - Software Engineering
-- Software Qualität
+- "Software Qualit\xE4t"
 - Automation
 - Interview
 - Women in Tech
