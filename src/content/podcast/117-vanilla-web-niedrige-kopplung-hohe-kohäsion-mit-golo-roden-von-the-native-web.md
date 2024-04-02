@@ -73,7 +73,10 @@ speaker:
 - name: Wolfi Gassler
   website: https://wolfgang.gassler.org/
 spotify: https://open.spotify.com/episode/4LVXap7zai5WCPvQTDgOhy
-tags: []
+tags:
+- Software Engineering
+- Frontend
+- Interview
 title: "#117 Vanilla Web: Niedrige Kopplung & hohe Koh\xE4sion mit Golo Roden von\
   \ the native web"
 youtube: https://www.youtube.com/watch?v=75J3S4lURLA
