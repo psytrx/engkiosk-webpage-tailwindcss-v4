@@ -4,7 +4,7 @@ location:
   name: 'Asteas Technologies, Seminarraum 2'
   address: 'Eduard-Bodem-Gasse 5-7, 6020 Innsbruck'
   url: 'https://www.iacbox.com'
-  logo: 'iacbox.svg'
+  logo: 'asteas.png'
 talks:
   - avatar: '2404-max.jpg'
     name: 'Maximilian Obwexer'
