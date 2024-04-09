@@ -66,7 +66,10 @@ speaker:
 - name: Wolfi Gassler
   website: https://wolfgang.gassler.org/
 spotify: https://open.spotify.com/episode/7Dc6ZlaXIfaQmItwCiHluQ
-tags: []
+tags:
+- Software Engineering
+- Backend
+- Datenbanken
 title: '#118 Wie funktioniert eine moderne Suche? Von Indexierung bis Ranking'
 youtube: https://www.youtube.com/watch?v=ZpVGVVLfIGQ
 
