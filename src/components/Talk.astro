@@ -17,6 +17,8 @@ const { avatar, name, title, description, github, twitter, linkedin, website, bi
 const talkId = `talk-${name.toLowerCase()}-${title.toLowerCase()}`.replace(/[^a-z0-9-]/g, '-');
 const htmlDescription = description.replace(/\n/g, '<br>');
 
+const linkedInArray = linkedin ? Array.isArray(linkedin) ? linkedin : [linkedin] : [];
+
 ---
 
 <div class="w-full md:w-1/2 lg:w-1/2 px-4 mb-10 hostpreview" id={talkId}>
@@ -48,10 +50,12 @@ const htmlDescription = description.replace(/\n/g, '<br>');
 				)
 			}
 			{
-				linkedin && (
-					<a class="inline-block mr-6 hover:opacity-80" href={`https://linkedin.com/in/${linkedin}`}>
-						<img src="/images/brands/linkedin.svg" alt={`${name} auf LinkedIn`} />
-					</a>
+				linkedInArray && linkedInArray.length && (
+					linkedInArray.map(handle => (
+							<a class="inline-block mr-6 hover:opacity-80" href={`https://linkedin.com/in/${handle}`}>
+									<img src="/images/brands/linkedin.svg" alt={`${name} auf LinkedIn`} />
+							</a>
+					))
 				)
 			}
 			{
