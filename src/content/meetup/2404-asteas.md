@@ -1,8 +1,9 @@
 ---
 date: 2024-04-25T18:30:00+02:00
 location:
-  name: 'Asteas Technologies, Seminarraum 2'
-  address: 'Eduard-Bodem-Gasse 5-7, 6020 Innsbruck'
+  name: 'Asteas Technologies'
+  address: 'Eduard-Bodem-Gasse 5, 6020 Innsbruck'
+  note: ' - Large, covered main entrance at the red building. On the ground floor, straight ahead to Seminarraum 2'
   url: 'https://www.iacbox.com'
   logo: 'asteas.png'
 talks:
