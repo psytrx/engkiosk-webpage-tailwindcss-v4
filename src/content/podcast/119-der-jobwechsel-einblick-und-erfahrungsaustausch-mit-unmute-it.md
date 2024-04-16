@@ -90,7 +90,12 @@ speaker:
 - name: Wolfi Gassler
   website: https://wolfgang.gassler.org/
 spotify: https://open.spotify.com/episode/5Rr2XG4jBMPptPxjuqd0iW
-tags: []
+tags:
+- Karriere
+- Bewerbung
+- Gehalt
+- Interview
+- Women in Tech
 title: '#119 Der Jobwechsel: Einblick und Erfahrungsaustausch mit UNMUTE IT'
 youtube: https://www.youtube.com/watch?v=xLQxRzNPdFs
 
