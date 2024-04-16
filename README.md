@@ -84,3 +84,17 @@ The main differences of the fork in comparision to its origin can be found in th
 
 In combination, we downloaded a minified version of [https://github.com/embedly/player.js](https://github.com/embedly/player.js) into `public/js`.
 If we aim to upgrade _player.js_, download and replace the minified javascript file.
+
+## BBC user needs
+
+More information:
+- https://mediamakersmeet.com/the-challenge-of-audience-engagement-publishers-experiment-with-6-user-needs-and-other-strategies/
+- https://www.linkedin.com/pulse/bbcs-secret-growth-revolutionary-six-user-needs-ghada-hashish-acca/
+
+User needs:
+- Update me
+- Keep me on the trend
+- Give me perspective
+- Inspire me
+- Amuse me
+- Educate me
