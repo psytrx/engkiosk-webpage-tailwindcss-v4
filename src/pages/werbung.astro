@@ -13,6 +13,7 @@ const episode86 = await getEntry('podcast', '86-open-source-als-herz-einer-firma
 let title = 'Werbung im Engineering Kiosk Podcast';
 let description = 'Erreiche die schwer erreichbare Zielgruppe von Softwareentwicklern und technischen Entscheidern im Engineering Kiosk Podcast.';
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+
 ---
 
 <html lang="de">
@@ -24,7 +25,7 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 		<div>
 			<Nav title={title} />
 
-			<section class="py-20 bg-white" style="background-image: url('/images/elements/pattern-white.svg'); background-position: center;">
+			<section class="py-10 bg-white" style="background-image: url('/images/elements/pattern-white.svg'); background-position: center;">
 				<div class="container px-4 mx-auto">
 					<div class="flex flex-wrap mb-24 lg:mb-18 justify-between items-center">
 						<div class="w-full mb-10 lg:mb-0">
@@ -47,53 +48,90 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 							</p>
 						</div>
 					</div>
+				</div>
+			</section>
 
-					<div class="container px-4 mx-auto">
-						<h2 class="mb-16 text-4xl md:text-5xl text-darkCoolGray-900 font-bold tracking-tighter leading-tight">Beispiele Werbung</h2>
-						<div class="flex flex-wrap lg:items-center -mx-4 my-8">
-							<div class="w-full md:w-1/5 px-4 mb-16 md:mb-0">
-								<div class="relative mx-auto md:ml-0 max-w-max overflow-hidden rounded-lg">
-									<a href={`/podcast/episode/${episode86.slug}/#t=907`}>
-										<Image class="w-full rounded-lg shadow-lg" src={episode86.data.image} alt={`Episode ${episode86.data.title}`} title={`Episode ${episode86.data.title}`} />
-									</a>
-								</div>
-							</div>
-							<div class="w-full md:w-4/5 px-4">
-								<span class="inline-block py-px px-2 mb-4 mr-3 text-xs leading-5 text-yellow-900 bg-yellow-100 font-medium uppercase rounded-full shadow-sm">
-									Episode 86
-								</span>
-								<h1 class="mb-8 text-3xl md:text-4xl leading-tight text-darkCoolGray900 font-bold tracking-tighter">
-									<a href={`/podcast/episode/${episode86.slug}/#t=908`} class="hover:underline">
-										Open Source als Herz einer Firma mit Nextcloud Gründer Frank Karlitschek
-									</a>
-								</h1>
-								<p class="mb-6 text-lg md:text-xl text-coolGray-400 font-medium">Host-gelesene Werbung von Media Lab Bayern bei Minute 15:07</p>
-							</div>
-						</div>
-					
-						<div class="flex flex-wrap lg:items-center -mx-4 my-8">
-							<div class="w-full md:w-1/5 px-4 mb-16 md:mb-0">
-								<div class="relative mx-auto md:ml-0 max-w-max overflow-hidden rounded-lg">
-									<a href={`/podcast/episode/${episode85.slug}/#t=697`}>
-										<Image class="w-full rounded-lg shadow-lg" src={episode85.data.image} alt={`Episode ${episode85.data.title}`} title={`Episode ${episode85.data.title}`} />
-									</a>
-								</div>
-							</div>
-							<div class="w-full md:w-4/5 px-4">
-								<span class="inline-block py-px px-2 mb-4 mr-3 text-xs leading-5 text-yellow-900 bg-yellow-100 font-medium uppercase rounded-full shadow-sm">
-									Episode 85
-								</span>
-								<h1 class="mb-8 text-3xl md:text-4xl leading-tight text-darkCoolGray900 font-bold tracking-tighter">
-									<a href={`/podcast/episode/${episode85.slug}/#t=699`} class="hover:underline">
-										Von Entwicklerin zur Engineering Managerin - Erfahrungen und Learnings mit Isabelle Glasmacher
-									</a>
-								</h1>
-								<p class="mb-6 text-lg md:text-xl text-coolGray-400 font-medium">Host-gelesene Werbung von trivago bei Minute 11:37</p>
-							</div>
-						</div>
-					</div>			
+			<style type="text/css">
+				.partner-image {
+					@apply grayscale h-20 w-auto mx-8 my-8;
+				}
+			</style>
 
-					<div class="flex flex-wrap mt-8 md:mt-32">
+			<section class="py-10 bg-white" style="background-image: url('/images/elements/pattern-light1.svg'); background-position: center;">
+				<div class="container px-4 mx-auto">
+					<div class="flex flex-wrap mb-24 lg:mb-18 justify-between items-center">
+						<div class="w-full mb-10 lg:mb-0">
+							<span class="inline-block py-px px-2 mb-4 text-xs leading-5 text-yellow-500 bg-yellow-100 font-medium uppercase rounded-9xl">In guter Gesellschaft</span>
+							<h2 class="mb-4 text-4xl md:text-5xl text-darkCoolGray-900 font-bold tracking-tighter leading-tight">Auszug Werbepartner</h2>
+							<div class="flex flex-wrap">
+								<Image class="partner-image p-2" src={(await import(`../images/partners/handelsblatt.svg`)).default} alt="Handelsblatt" title="Handelsblatt" />
+								<Image class="partner-image" src={(await import(`../images/partners/trivago.svg`)).default} alt="trivago" title="trivago" />
+								<Image class="partner-image" src={(await import(`../images/partners/eurowingsdigital.webp`)).default} alt="Eurowings Digital" title="Eurowings Digital" />
+								<Image class="partner-image" src={(await import(`../images/partners/medialabbayern.webp`)).default} alt="Media Lab Bayern" title="Media Lab Bayern" />
+								<Image class="partner-image" src={(await import(`../images/partners/aboutyou.svg`)).default} alt="About You" title="About You" />
+								<Image class="partner-image" src={(await import(`../images/partners/iuhochschule.svg`)).default} alt="IU Hochschule" title="IU Hochschule" />
+								<Image class="partner-image" src={(await import(`../images/partners/workshopsde.svg`)).default} alt="Workshops.de" title="Workshops.de" />
+							</div>	
+					</div>		
+				</div>
+			</section>	
+
+
+			<section class="py-10 bg-white" style="background-image: url('/images/elements/pattern-white.svg'); background-position: center;">
+				<div class="container px-4 mx-auto">
+					<div class="flex flex-wrap mb-24 lg:mb-18 justify-between items-center">
+						<div class="w-full mb-10 lg:mb-0">
+							<span class="inline-block py-px px-2 mb-4 text-xs leading-5 text-yellow-500 bg-yellow-100 font-medium uppercase rounded-9xl">Beispiele</span>
+							<h2 class="mb-4 text-4xl md:text-5xl text-darkCoolGray-900 font-bold tracking-tighter leading-tight">Host-Read Werbung</h2>
+									<div class="flex flex-wrap lg:items-center -mx-4 my-8">
+										<div class="w-full md:w-1/5 px-4 mb-16 md:mb-0">
+											<div class="relative mx-auto md:ml-0 max-w-max overflow-hidden rounded-lg">
+												<a href={`/podcast/episode/${episode86.slug}/#t=907`}>
+													<Image class="w-full rounded-lg shadow-lg" src={episode86.data.image} alt={`Episode ${episode86.data.title}`} title={`Episode ${episode86.data.title}`} />
+												</a>
+											</div>
+										</div>
+										<div class="w-full md:w-4/5 px-4">
+											<span class="inline-block py-px px-2 mb-4 mr-3 text-xs leading-5 text-yellow-900 bg-yellow-100 font-medium uppercase rounded-full shadow-sm">
+												Episode 86
+											</span>
+											<h1 class="mb-8 text-3xl md:text-4xl leading-tight text-darkCoolGray900 font-bold tracking-tighter">
+												<a href={`/podcast/episode/${episode86.slug}/#t=908`} class="hover:underline">
+													Open Source als Herz einer Firma mit Nextcloud Gründer Frank Karlitschek
+												</a>
+											</h1>
+											<p class="mb-6 text-lg md:text-xl text-coolGray-400 font-medium">Host-gelesene Werbung von Media Lab Bayern bei Minute 15:07</p>
+										</div>
+									</div>
+								
+									<div class="flex flex-wrap lg:items-center -mx-4 my-8">
+										<div class="w-full md:w-1/5 px-4 mb-16 md:mb-0">
+											<div class="relative mx-auto md:ml-0 max-w-max overflow-hidden rounded-lg">
+												<a href={`/podcast/episode/${episode85.slug}/#t=697`}>
+													<Image class="w-full rounded-lg shadow-lg" src={episode85.data.image} alt={`Episode ${episode85.data.title}`} title={`Episode ${episode85.data.title}`} />
+												</a>
+											</div>
+										</div>
+										<div class="w-full md:w-4/5 px-4">
+											<span class="inline-block py-px px-2 mb-4 mr-3 text-xs leading-5 text-yellow-900 bg-yellow-100 font-medium uppercase rounded-full shadow-sm">
+												Episode 85
+											</span>
+											<h1 class="mb-8 text-3xl md:text-4xl leading-tight text-darkCoolGray900 font-bold tracking-tighter">
+												<a href={`/podcast/episode/${episode85.slug}/#t=699`} class="hover:underline">
+													Von Entwicklerin zur Engineering Managerin - Erfahrungen und Learnings mit Isabelle Glasmacher
+												</a>
+											</h1>
+											<p class="mb-6 text-lg md:text-xl text-coolGray-400 font-medium">Host-gelesene Werbung von trivago bei Minute 11:37</p>
+										</div>
+									</div>
+								</div>			
+					</div>
+				</div>
+			</section>
+
+			<section class="py-10 bg-white" style="background-image: url('/images/elements/pattern-light1.svg'); background-position: center;">
+				<div class="container px-4 mx-auto">
+					<div class="flex flex-wrap my-8">
 						<div class="max-w-xs mx-auto text-center">
 							<div class="inline-flex mb-6 items-center justify-center w-12 h-12 bg-yellow-500 rounded-full">
 								<svg class="h-6 text-white" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
