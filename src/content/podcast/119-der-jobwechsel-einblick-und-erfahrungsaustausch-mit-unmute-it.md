@@ -83,7 +83,9 @@ image: ./119-der-jobwechsel-einblick-und-erfahrungsaustausch-mit-unmute-it.jpg
 length_second: 6982
 pubDate: 2024-04-16 04:00:00+00:00
 rtlplus: ''
-six_user_needs: ["Give me perspective", "Inspire me"]
+six_user_needs:
+- Give me perspective
+- Inspire me
 speaker:
 - name: Andy Grunwald
   transcriptLetter: A
