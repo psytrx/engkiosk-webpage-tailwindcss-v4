@@ -84,7 +84,10 @@ speaker:
   website: https://wolfgang.gassler.org/
   transcriptLetter: A
 spotify: https://open.spotify.com/episode/5ZpcUZ2Wijz2RlDcdtQyj0
-tags: []
+tags:
+- Software Engineering
+- Software Qualität
+- Automation
 title: '#120 No-Code ist technische Schuld!'
 youtube: https://www.youtube.com/watch?v=CRAgjmnoxEk
 
