@@ -13,6 +13,7 @@ talks:
     description: "This talk examines the role of Bitcoin mining in accelerating and economizing the energy transition. We'll explore how integrating Bitcoin mining with renewable energy sources can reduce the environmental footprint of heating and make renewable energy more financially viable. The presentation will focus on the practical aspects of this integration, demonstrating how it can lead to more stable green energy grids and provide an economic boost to areas with renewable resources. Attendees will gain insights into the symbiotic relationship between bitcoin and sustainable energy, understanding how Bitcoin mining can support the transition to a greener economy."
     linkedin: 'matthias-triendl-42b260a8'
     website: 'https://21energy.com/'
+    slides: '2404-Matthias-Triendl-Bitcoin-Energy.pdf'
   - avatar: '2404-sigma.png'
     name: 'Richard Weinberger & David Gstir'
     title: 'What the xz backdoor can teach us about supply chain security'
@@ -23,5 +24,6 @@ talks:
     linkedin:
       - 'david-g42'
       - 'penguinwarrior'
+    slides: '2404-richard-weinberger-david-gstir-supply-chain.pdf'
 eventId: '3594f0aavb0je6dcbot1vh6g39'
 ---
