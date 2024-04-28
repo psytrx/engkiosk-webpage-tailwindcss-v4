@@ -13,7 +13,7 @@ talks:
     bio: ''
   - avatar: 'avatar.png'
     name: 'Jacob Rief'
-    title: 'django'
+    title: 'tbd'
     description: ''
     bio: ''
 eventId: '45225s2tfrlbaauanf7e0im9gj'
