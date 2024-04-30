@@ -85,7 +85,11 @@ speaker:
   transcriptLetter: C
   website: https://www.linkedin.com/in/tina-m%C3%BCller-642931154/
 spotify: https://open.spotify.com/episode/7vy2WEHtQMx8YnmnPMweIp
-tags: []
+tags:
+- Software Engineering
+- DevOps
+- Interview
+- Women in Tech
 title: "#121 YAML: Mehr als Konfiguration! Aliases, Tags und YAMLScript mit Tina M\xFC\
   ller"
 youtube: https://www.youtube.com/watch?v=HNMb2mF2IfE
