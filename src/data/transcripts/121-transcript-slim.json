@@ -1,0 +1,1555 @@
+{
+  "language_code": "de",
+  "audio_url": "https://cloud.inlupus.at/s/6yZLHaB8TmAk7a8/download/ep121_yaml.mp3",
+  "punctuate": true,
+  "format_text": true,
+  "dual_channel": false,
+  "webhook_url": null,
+  "webhook_auth_header_name": null,
+  "webhook_auth_header_value": null,
+  "audio_start_from": null,
+  "audio_end_at": null,
+  "word_boost": [],
+  "boost_param": null,
+  "filter_profanity": false,
+  "redact_pii": false,
+  "redact_pii_audio": false,
+  "redact_pii_policies": null,
+  "redact_pii_sub": null,
+  "speaker_labels": true,
+  "speakers_expected": 3,
+  "content_safety": false,
+  "content_safety_confidence": null,
+  "iab_categories": false,
+  "custom_spelling": null,
+  "disfluencies": false,
+  "sentiment_analysis": false,
+  "auto_chapters": false,
+  "entity_detection": false,
+  "summarization": false,
+  "summary_model": null,
+  "summary_type": null,
+  "auto_highlights": false,
+  "language_detection": false,
+  "speech_threshold": null,
+  "speech_model": null,
+  "id": "a34671b9-0aca-4a06-bcad-066af1df116d",
+  "status": "completed",
+  "error": null,
+  "utterances": [
+    {
+      "text": "Wenn du glaubst, dass du YAML kennst, dann solltest du dranbleiben. YAML Ain't Markup Language, ursprünglich Yet Another Markup Language, kennen viele nur als Sprache für Konfigurationsdateien. Laut dem Gründer von YAML, ingi.net, ist das Format aber nicht dafür gedacht. Und überhaupt nutzen sehr viele Tools nur einen Bruchteil der Fähigkeiten von YAML. Welche das sind, hat uns Tina Müller erklärt. Tina ist unter anderem Kontributorin zur YAML Spezifikation und gibt uns mal einen Einblick in das Serialisierungsformat. Wir sprechen darüber, welches Problem YAML lösen sollte, wie es in der Realität genutzt wird, wie YAML selbst sowie die YAML-Parser in verschiedenen Programmiersprachen weiterentwickelt werden, über die Flaws von YAML wie zum Beispiel das Norway-Problem oder die Billion Love Attack und schauen, welche Features nicht so bekannt sind wie YAML-Tags, Aliases oder YAML-Skript. Also, bleibt dran, los geht's!",
+      "start": 3992,
+      "end": 59635,
+      "confidence": 0.8199197080291973,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Fendi, du kannst dich vielleicht noch erinnern, wir haben mal vor vielen, vielen Jahren gemeinsam einen Hackathon absolviert und waren zufälligerweise in einem Team. Vielleicht war das auch der Fehler damals. Auf jeden Fall kann ich mich noch gut erinnern, ich hatte damals die Aufgabe, ein YAML-Dokument zu schreiben, irgendwie ein Config-File oder so und hatte ziemliche Probleme damit. Es wurde irgendwie nicht akzeptiert, irgendwie durch den Linter kamen schräge Fehlermeldungen raus und dann kamst du und sagst, Lass mich mal hin, du hast keine Ahnung von YAML. Nach 20 Minuten konntest du das Problem auch nicht lösen und dann kam unser dritter Kollege aus unserem Team, der Senior Engineer, weil wir waren ja damals Engineering Manager, und der sagte, okay, ihr Managementleute, geht mal weg von dem Computer, lasst den Profi ran. Nach 20 Minuten konnte der auch den Fehler nicht finden und wir haben dann irgendwie teilweise Zeile für Zeile rauskopiert. Wir haben bis heute nicht genau verstanden, was das Problem ist. Vielleicht habe ich dadurch auch irgendwie ein Problem mit diesen Whitespace-Formaten. Also ich gebe es zu, ich bin kein großer Freund davon. Aber jetzt bei der FOSDEM, vor ein paar Wochen eigentlich, war ich bei einem Talk von der Dina Müller über YAML. Und ich habe mir schon gedacht, wie kann man einen Talk halten, nur über so ein Textformat, über ein Format. Und sie hat begonnen den Talk, indem sie gesagt hat, sie ist süchtig nach YAML. Vielleicht hat sie einfach eine Schwäche für falsch verstandene Sprachen. Und genau das hat mich dann interessiert, warum ich oder wahrscheinlich auch viele andere die Sprache falsch verstehen, missverstehen. Und dann habe ich mir überlegt, das Einfachste ist eigentlich, wir fragen die Tina gleich direkt selber und lassen uns erklären, warum wir die Sprache falsch verstehen. Und daher willkommen, Tina, bei uns im Podcast. Cool, dass du dabei bist und uns mal erklärst, wie YAML funktioniert.",
+      "start": 62014,
+      "end": 163542,
+      "confidence": 0.7951823899371063,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Ja, hallo.",
+      "start": 163780,
+      "end": 164821,
+      "confidence": 0.487,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Ja, auch danke von mir, dass du dir die Zeit nimmst. Klassischerweise stelle ich die Leute vor und das möchte ich natürlich bei dir auch tun. Wer ist also Tina? Tina hat, wie gesagt, auf der Ausdäm 2024 ein Talk über Do you know YAML? oder How well do you know YAML? gehalten. Du wohnst in der deutschen Hauptstadt, in Berlin. Du bist Softwareentwicklerin bei SUSE und arbeitest da hauptsächlich am OpenQA-Projekt, was ein automatisiertes Testing für Operating Systems ist. Dadurch habe ich auch gelernt, es gibt eine .qa-Top-Level-Domain. Das war mir vorher auch noch nicht bewusst. Und im Vorgespräch haben wir auch herausgefunden, woher die Domain kommt, nämlich aus dem Land Katar. Wieder was gelernt. Du bist seit 1998 in der Perl-Community zu Hause. magst also in irgendeiner art und weise dann auch kamele du bist über 15 jahre open source contributorin und seit ein paar jahren beschäftigst du dich mit dem textbasierten dateiformat jammel jammel oder wie man es auch immer ausspricht schauen wir gleich.",
+      "start": 164861,
+      "end": 222470,
+      "confidence": 0.7808143712574851,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Mal bitte süchtig süchtig war das Und.",
+      "start": 222531,
+      "end": 226977,
+      "confidence": 0.6168571428571428,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Du bist natürlich auch Kontributorin in diesem Projekt und da natürlich speziell auch in der YAML 1.2 Library bei Perl, unter anderem bei der C-Implementierung von LibYAML, in der Python-Implementierung PyYAML, aber auch zu der YAML Test Suite, zu der wir später auch noch im Podcast kommen. Und du bist Commentatorin der offiziellen YAML-Spezifikation und dadurch habe ich auch erfahren, dass es eine offizielle YAML-Spezifikation gibt. Stimmt das alles?",
+      "start": 227017,
+      "end": 255080,
+      "confidence": 0.8407246376811596,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Das stimmt soweit alles, genau. Es gibt eine Spezifikation und die ist sehr lange, also man liest sie normalerweise nicht komplett, wenn man YAML nur benutzen möchte.",
+      "start": 255635,
+      "end": 264252,
+      "confidence": 0.8371481481481483,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Da gehen wir gleich auch mal drauf ein. Meine Intro-Frage ist, und jetzt darfst du mich bitte nicht ganz ernst nehmen, und zwar...",
+      "start": 265254,
+      "end": 270358,
+      "confidence": 0.7162608695652174,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Das machen wir nie.",
+      "start": 270438,
+      "end": 271579,
+      "confidence": 0.7752500000000001,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Perl ist für mich so die Kunst, das richtige Zeichen auf der Tastatur zu finden. Und ich möchte von dir wissen, welchen Tipp kannst du mir geben, sich in dem Dschungel von Sonderzeichen bei Perl zurechtzufinden? Weil ich hab das Gefühl, wenn ich Perl programmiere, hab ich zumindestens die Möglichkeit, jedes Sonderzeichen auf meiner Tastatur zu nutzen.",
+      "start": 271619,
+      "end": 288592,
+      "confidence": 0.8040350877192983,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Also ich finde, so viele sind das gar nicht. Es gibt natürlich solche schönen Beispiele auch im Netz, da irgendwie ein Braindump und das führst du aus und das Pearl akzeptiert das als valides Programm. Das ist natürlich ein bisschen übertrieben. Aber diese ganzen Zeichen sind halt nützlich, mit Dollarzeichen und Ad und Hashtzeichen zur Unterscheidung der verschiedenen Typen und so weiter. Und ich glaube, da muss man sich einfach reinarbeiten.",
+      "start": 289714,
+      "end": 317490,
+      "confidence": 0.8076338028169012,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Ich glaube, Perl hat eine große Daseinsberechtigung. Ich glaube, super viele Administratoren machen da immer noch sehr, sehr viel mit. Ich hörte immer mal wieder, dass Booking, glaube ich, komplett in Perl geschrieben sei. OpenQA ist ja auch in Perl geschrieben. Soviel ich weiß, also automatische Testing für Operating Systems ist ja auch jetzt keine Kinderaufgabe, würde ich mal sagen.",
+      "start": 318070,
+      "end": 335985,
+      "confidence": 0.800966666666667,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Also zumindest ist das ein Ding, was mir fehlt, zum Beispiel in Python, dass man da zum Beispiel bei der Interpolation oder überhaupt, dass man nicht so gut unterscheiden kann, was ist eine Variable und eine Funktion.",
+      "start": 336950,
+      "end": 347093,
+      "confidence": 0.777837837837838,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Ich verstehe sowieso nicht ganz, Andi, weil du kommst aus der PHP-Welt, das heißt Dollar solltest du gewöhnt sein. Jetzt bist du auf der Manager-Ebene, da sollte das Add-Symbol in deinem Outlook ja auch irgendwie vertraut sein. Also eigentlich ist das ja die ideale Sprache für dich.",
+      "start": 347333,
+      "end": 359837,
+      "confidence": 0.7446382978723407,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Ja, aber ich habe auch bei Bash zum Beispiel, hat das Add ja auch eine Funktion bezüglich Arrays oder so? Ich komme halt da auch immer ein bisschen raus und ich muss immer nachschauen, aber ich springe auch zwischen Sprachen und deswegen versuche ich ab und zu, wenn ich etwas in Python geschrieben habe und dann wieder nach Go wechsle, dann merke ich wieder, ah, okay, wir haben ja hier Klammern und dann und so weiter, also ich mixe da auch Dialekte deswegen. Aber ich habe auch, glaube ich, zu wenig Perl in meinem Leben geschrieben, aber ich muss da mal irgendwann wieder ran.",
+      "start": 359877,
+      "end": 386930,
+      "confidence": 0.7307307692307696,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Aber kommen wir mal von der einen missverstandenen Sprache zur anderen und zum eigentlichen Thema, zu YAML. Jetzt, wenn du die Spezifikationen ja auch in- und auswendig kennst demnach, wie wahrscheinlich wenige, aber wie würdest du denn grundsätzlich YAML jemandem erklären, der jetzt nicht Cloud Engineer ist und das acht Stunden am Tag irgendwie verwendet, irgendwelche Definitionsfälle schreibt? Also was ist für dich YAML und wie zeichnet sich YAML aus?",
+      "start": 387575,
+      "end": 412915,
+      "confidence": 0.8323714285714287,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Also da kommt es natürlich schon darauf an, wem ich das kläre. Also ob es auch einen Entwicklerhintergrund gibt oder nicht. Also es ist erstmal eine Serialisierungssprache. Man kann im Prinzip alle Datenstrukturen damit ausdrücken. Es hat zum Beispiel auch noch bestimmte Features, die man jetzt nicht so kennt. Aber wenn zum Beispiel eine Sprache einen Tuppel hat, dann kann man das Alt in YAML auch ausdrücken. Da verwendet man dann noch spezielle Features für. Gleichzeitig soll es aber auch menschenlesbar sein. Man hat diese Mappings mit Doppelpunkten und dann hat man Listen mit Spiegelstrichen. Und wenn man sich jetzt vorstellt, ich mache eine Checkliste für die nächste Party, dann mache ich das auch oft mit Spiegelstrichen auf dem Zettel.",
+      "start": 413347,
+      "end": 457175,
+      "confidence": 0.8196249999999999,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Was sind denn Spiegelstriche? Für mich als Österreicher ist das ein deutscher Ausdrucksspiegelstrich. Das habe ich noch nie gehört.",
+      "start": 457195,
+      "end": 463218,
+      "confidence": 0.6395789473684211,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Ja, einfach ein Minus.",
+      "start": 463258,
+      "end": 464799,
+      "confidence": 0.798,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Bei uns heißt es immer klassisch Spindelstriche in Österreich, aber Spiegelstriche habe ich wirklich noch nie gehört. Okay, ist ja gut, dass ich auch mal was Neues nenne.",
+      "start": 465159,
+      "end": 472882,
+      "confidence": 0.6054285714285713,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Ich bin halt bei dem ganzen Jammelthema eigentlich komplett im Englischen unterwegs. Deswegen ist es relativ ungewohnt, dass ich darüber in Deutsch rede und Spiegelstrich ist mir als erstes tatsächlich eingefallen.",
+      "start": 472922,
+      "end": 484045,
+      "confidence": 0.7942580645161291,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Du kannst natürlich auch sehr gerne englische Wörter nehmen.",
+      "start": 484085,
+      "end": 485906,
+      "confidence": 0.6047777777777779,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Das heißt, im Englischen, in der Spezifikation, nennt sich es dann Dash oder?",
+      "start": 485946,
+      "end": 489507,
+      "confidence": 0.7314615384615385,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Das ist eigentlich das falsche Wort, wie ich auch gelernt habe, sondern hyphen wäre der richtige Ausdruck. Aber die meisten sagen das und jeder weiß, was gemeint ist. Und ja, genau, das ist jedenfalls so das Intuitive von YAML, dass man eben gleichzeitig alle Daten damit ausdrücken kann, aber gleichzeitig soll es für den Menschen lesbar und schreibbar sein. Genau.",
+      "start": 489887,
+      "end": 512147,
+      "confidence": 0.8398499999999999,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Jetzt stelle ich mir immer die Frage, wofür steht eigentlich YAML? Oder ist das ein Eigenwort, YAML?",
+      "start": 512602,
+      "end": 518046,
+      "confidence": 0.4492941176470589,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Die allererste Abkürzung war tatsächlich Yet Another Markup Language, aber dann wurde das relativ schnell ersetzt mit YAML Ain't Markup Language, um halt zu sagen, dass es doch nicht einfach nur eine weitere Markup Language ist. Der Hintergrund, der Ursprung war so ein bisschen XML. Gab halt zu der Zeit, das war so 2001, als die sich zusammengesetzt haben, die drei Leute, und da gab es halt Und man wollte aber eine Sprache zum Serialisieren von Daten und jetzt kann man XML mögen oder nicht, aber ich glaube, es ist nicht so ganz so sinnvoll als Serialisierungssprache. Und XML ist halt Markup und ja, dann hat man eben gesagt, DML ist kein Markup.",
+      "start": 518066,
+      "end": 559373,
+      "confidence": 0.831938053097345,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Jetzt Jason, habe ich gerade nachgeschaut, 1997 ist das Ganze herausgekommen, damals von Douglas Crockford, also JavaScript Universe. Warum hat man denn dann später noch wieder was Neues eingeführt und wie steht denn das Ganze zu Jason?",
+      "start": 559767,
+      "end": 573700,
+      "confidence": 0.8057837837837838,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Also soweit ich weiß, wurde Jason zumindest 2001 veröffentlicht. Also ich weiß nicht genau, was jetzt 1997 schon da war und was nicht. Also soweit mir auch irgendwie einer der YAML-Erfinder erzählt hat, war das so ein bisschen zeitgleich, diese ganze Geschichte. Ich glaube, zu dem Zeitpunkt waren sie sich von JSON noch nicht wirklich bewusst. Aber JSON hat eben auch seine Grenzen. Also JSON ist ein Datenaustauschformat und man kann damit ja einiges an Daten austauschen. Hashes oder Objekte und Arrays und Zahlen und null. Aber dann ist es auch relativ schnell zu Ende. Und alles, was darüber hinausgeht, kann man damit eben nicht wirklich serialisieren.",
+      "start": 574070,
+      "end": 619052,
+      "confidence": 0.8231869158878508,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Und was wäre das jetzt als Beispiel, was darüber hinausgeht, wo YAML mehr Funktionalität hat?",
+      "start": 619485,
+      "end": 625168,
+      "confidence": 0.7670666666666667,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Also zum einen schon allein, es gibt Sprachen, wo man zum Beispiel Zahlen als Hashkeys hat. Bei JSON gehen wirklich nur Strings. Und es gibt auch Sprachen, wo man als Hashkeys Objekte hat oder wiederum Arrays oder Hashes. Das ist alles möglich. Also ich glaube in Ruby, aber bin mir nicht ganz sicher. Und dann eben, wie schon gesagt, Tuple gibt es als Datentyp. und den kann man in YAML ausdrücken. Da muss man eben Tags verwenden, da kommen wir vielleicht später noch zu, oder eben auch andere Datentypen und auch Binärdaten kann man serialisieren.",
+      "start": 625208,
+      "end": 660018,
+      "confidence": 0.8445473684210528,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Jetzt hattest du gesagt, dass JSON eigentlich ein Datenaustauschformat ist und YAML ein Serialisierungsformat. Jetzt meine Frage wäre, bedeutet das dann auch, dass YAML dafür gedacht ist, ich sag mal, nicht als Datenaustauschformat genutzt zu werden, um das von Service A nach Service B zu schicken? Offengesprochen, ich habe jetzt noch keine Microservices oder irgendwelche HTTP-APIs getroffen, die mir YAML zurückgeben.",
+      "start": 757475,
+      "end": 784654,
+      "confidence": 0.8001311475409834,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Also es ist schon auch dafür gedacht, durchaus. Es kann halt, wie gesagt, ein bisschen mehr und was zum Beispiel auch mit in der Spezifikation ist, ist Streaming. Also nicht nur, dass du jetzt zum Beispiel einen HTTP-Request machst, Request und Response, sondern dass du auch Sachen streamst und deswegen gibt es eben auch das Multi-Document, Also die Eigenschaft, dass du eben wirklich mehrere YAML-Dokumente hintereinander einfach packen kannst und durch drei Punkte beendest. Dann sagst du eben der Gegenseite, okay, das Dokument ist jetzt fertig, kannst du verarbeiten. Und es ist schon auch dafür gedacht, Daten auszutauschen. Die Unterscheidung zwischen den beiden Begriffen ist natürlich ein bisschen, also kann man jetzt nicht komplett trennen.",
+      "start": 784714,
+      "end": 826471,
+      "confidence": 0.8138521739130435,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Sind solche Dinge dann in neuen Spezifikationen dazugekommen oder so Streaming war das schon von Anfang an eigentlich mit im Konzept?",
+      "start": 826891,
+      "end": 834738,
+      "confidence": 0.8419523809523808,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Das war schon von Anfang an mit drin, ja.",
+      "start": 834778,
+      "end": 838000,
+      "confidence": 0.21166666666666664,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Das heißt eigentlich, wenn man es so einsetzt, wenn ich jetzt irgendwo ein simples Config-File schreibe, dann verwende ich eigentlich nur einen ganzen kleinen Teil von dem, was da eigentlich dahinter steckt.",
+      "start": 838020,
+      "end": 847528,
+      "confidence": 0.7704375,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Ja, tatsächlich. Und Ingi sagt auch immer, dass er eigentlich das hasst, dass die Leute einfach YAML für Config-Dateien verwenden, weil eigentlich für Config-Dateien gibt es ja Indie-Files.",
+      "start": 847930,
+      "end": 857899,
+      "confidence": 0.82075,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Wer ist Ingi, nur zur Erklärung?",
+      "start": 857939,
+      "end": 859340,
+      "confidence": 0.6703333333333333,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Also Ingi, ingi.net ist einer der Erfinder von YAML.",
+      "start": 859400,
+      "end": 862643,
+      "confidence": 0.8442222222222221,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Das finde ich aber mal ein geiles Statement. Die komplette Industrie nutzt irgendwie YAML zum primär Konfigurieren, offen gesprochen. Also zumindest ist es das, womit ich so in Berührung komme und weniger mit dem, wofür es eigentlich gedacht ist. Und der Erfinder bzw. Gründer mag das nicht. Auch eine schöne Sache. Also eigentlich müsste man doch froh sein, dass YAML doch so eine solch große Popularität hat, oder?",
+      "start": 864016,
+      "end": 885592,
+      "confidence": 0.7654852941176469,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Das schon, ja. Aber es gibt für Config-Dateien, die keine wirkliche Hierarchie haben, ist es tatsächlich manchmal sinnvoller, INI zu verwenden. Die ganzen Features auch mit Datentypen und so weiter, das hat man oft gar nicht, das Bedürfnis für Config-Dateien. Und dann benutzen das Leute, die wenig Ahnung von YAML haben. Ja, ganz sicher.",
+      "start": 886157,
+      "end": 907487,
+      "confidence": 0.8014999999999999,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Aber wie steht denn jetzt YAML? Ich meine, wir hatten schon JSON angesprochen, du hattest gerade das INI-Format angesprochen und dann schwirrt noch bei mir im Kopf dieses Format TOML rum. Ich glaube, das steht für Tom's Language oder so, glaube ich. Bin mir da nicht mehr genau sicher. Aber wie würdest du jetzt YAML im Vergleich zu den anderen Formaten einordnen beziehungsweise auch abgrenzen?",
+      "start": 907547,
+      "end": 925693,
+      "confidence": 0.7169076923076922,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Ja, also Tommel ist, denke ich mal, noch ein mächtigeres Config-Format. Also das ist wahrscheinlich wirklich das Format, was man verwenden sollte, wenn man klassische Config-Dateien möchte. Und dort muss man zum Beispiel auch rings quoten. Und wenn man Zahlen hat, macht man keine Quotes drumherum. Und wenn man jetzt irgendwas drin hat, was eigentlich keine Zahl ist, dann sagt es einem, hey, das ist nicht valide. Und das ist sicher ganz praktisch. Da muss man sich halt weniger damit auskennen.",
+      "start": 925942,
+      "end": 955020,
+      "confidence": 0.8375802469135798,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Das heißt, die AMEL verzeiht mir mehr diesbezüglich?",
+      "start": 955578,
+      "end": 959002,
+      "confidence": 0.801625,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Ja, verzeihen in dem Sinne nicht. Also es sagt dann halt, okay, wenn du das hast, keine Quote drumherum, aber es ist auch keine Zahl, dann ist es ein String. Aber es kann nachher was Falsches dabei rauskommen oder ein falscher Datentyp. Das ist, glaube ich, so das Problem. Oder es ist eben ein Datentyp, von dem du es nicht erwartest, wie zum Beispiel No ist dasselbe wie False und du wolltest aber nur die Abkürzung für Norway schreiben.",
+      "start": 959042,
+      "end": 982914,
+      "confidence": 0.7765316455696204,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Zu den Flaws kommen wir gleich noch, obwohl es Flaws eigentlich sind.",
+      "start": 982954,
+      "end": 987616,
+      "confidence": 0.48191666666666677,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Noch kurz zu Tommel, also das ist auf jeden Fall schon recht mächtig. Was es aber halt nicht hat, ist so eine hierarchische Datenstruktur oder man kann das damit abbilden, aber das wird dann sehr schnell hässlich, besonders wenn man eben Listen drin hat, dann muss man mit diesen doppelten Klammern arbeiten und das wird dann irgendwann nicht mehr schön.",
+      "start": 987656,
+      "end": 1006167,
+      "confidence": 0.8134833333333332,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Sprechen wir mal ein bisschen über die Verbreitung von YAML. Macht ihr euch in der, ich sag mal, engeren YAML-Community denn auch Gedanken, warum das Format beziehungsweise die Sprache denn jetzt auf einmal so einen Popularitätsboost hat? Also beobachtet ihr das Ecosystem und schaut ihr dann auch, wie wird denn YAML wirklich genutzt und was können wir denn jetzt wirklich zur Spezifikation schieben? Also du hast grad gesagt zum Beispiel Streaming. wird supported, Wolfgang sagt, das war mir neu. Wird da jetzt zum Beispiel mehr an wirklich Datentypen in der Spezifikation geschraubt aufgrund der Verbreitung in der Popularität und habt ihr das so im Auge oder wie beobachtet ihr die ganze Thematik?",
+      "start": 1006587,
+      "end": 1046238,
+      "confidence": 0.7901607142857145,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Im Auge schon so ein bisschen. Es gab jetzt allerdings länger keine wirkliche neue Version und es gab mal den Gedanken, eine Version 1.3 zu machen. Das war aber ausgerichtet auf die Einfachheit des Parsings, weil es einfach ein paar Sachen gibt, die wirklich schwer zu implementieren sind und den Parser sehr komplex machen. Und da sind wir aber so ein bisschen hängen geblieben. Und eigentlich ist auch noch die Aufgabe, eben die 1.2-Situation zu verbessern. Aber ja, also ich beobachte schon verschiedene Communities, aber es ist einfach so viel. Also ich beobachte mehrere Repositories wie GoYAML und JSYAML und so weiter und versuche auch dort, Fragen zu beantworten. Und da sehe ich ja schon so ein bisschen, was reinkommt an Fragen und was die Leute auch wirklich benutzen. auch bei Payamel. Und dann kommen auch Leute in unseren Matrix-Channel und fragen dann aber Sachen, wie geht das in Ansible, was wir dann nicht unbedingt beantworten können. Das ist ein sehr weites Feld. Neue Features sind erstmal so nicht reingekommen, aber da ist auf jeden Fall Überlegung, was man da machen könnte.",
+      "start": 1046298,
+      "end": 1110804,
+      "confidence": 0.8069780219780225,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Jetzt frage ich mich natürlich, wenn es so ein einfaches Textformat ist, wenn ich das mal so abwertend sagen darf, warum brauche ich denn dann überhaupt neue Standards? Also was kommt denn da dazu, wenn es jetzt 1.1, 1.2 gibt? Also es ist ja immer noch irgendwie jammerl. Also gibt es da dann neue Features oder was ist in so einem Standard überhaupt drin, in so einer Spezifikation dann?",
+      "start": 1111727,
+      "end": 1133329,
+      "confidence": 0.7418405797101452,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Also der große Unterschied von 1.1 und 1.2 war tatsächlich, also zum einen hat man gesehen, Jason ist da, so parallel entstanden, und dann hat man geguckt, diese Flow-Notation in YAML, dass man so in Klammern auch Dinge schreiben kann, das sieht ja eigentlich fast aus wie Jason. Und dann hat man geguckt, man könnte die Spezifikation anpassen und nur ein paar kleine Dinge verändern und dann wäre YAML automatisch ein Superset von JSON. Und dann hat man das tatsächlich gemacht, sodass die 1.1 ist noch kein Superset, aber die Version 1.2 ist es dann.",
+      "start": 1133612,
+      "end": 1168396,
+      "confidence": 0.8207789473684208,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Das heißt, ich kann JSON dann in YAML schreiben?",
+      "start": 1168456,
+      "end": 1171218,
+      "confidence": 0.7543333333333334,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Genau, du kannst jedes JSON-Dokument mit einer YAML-Library auch lesen.",
+      "start": 1171259,
+      "end": 1177143,
+      "confidence": 0.7165999999999999,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Aber heißt das, dass das JSON dann in YAML drin, also dass ich das mischen kann, oder kann ich jedes valide JSON dann auch mit einem YAML-Bowser passen? Oder kann ich das auch wirklich dann mischen in irgendeiner Form?",
+      "start": 1177658,
+      "end": 1189907,
+      "confidence": 0.7367179487179489,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Du kannst das auch mischen. Also einmal jedes JSON-Dokument ist automatisch auch YAML und dann hast du im klassischen YAML dieses Block-Format mit auf jeder Zeile ein Wert und dann kannst du aber anfangen mit Square Brackets und Curly Braces eben auch so eine Art JSON zu schreiben. Du musst aber die Dinge nicht quoten. Das heißt, es sieht ein bisschen aus wie JSON. Du kannst es auch alles quoten, sodass es dann wirklich JSON innerhalb eines YAML-Dokuments ist. Aber du musst es nicht quoten und du kannst auch Kommas am Ende dazu schreiben oder auch darin Kommentare. Das heißt, es ist eigentlich auch ein besseres JSON.",
+      "start": 1189947,
+      "end": 1228003,
+      "confidence": 0.787271028037383,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Das heißt aber, die Umstellung ist dann auch super einfach. Das heißt, wenn ich einen YAML-Bowser habe, dann kann ich auch JSON damit pausen und verwenden und bin dann komplett flexibel. Also eigentlich, wenn ich auf YAML setze, können die Freaks, die da gern JSON verwenden, weil sie das Format halt so lieben, genauso das Ganze definieren und am Ende kommt eigentlich die korrekte Struktur rauszuladen. Das sind natürlich die, die in derselben Struktur irgendwie definiert wird.",
+      "start": 1228063,
+      "end": 1251995,
+      "confidence": 0.7936363636363637,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Ja, kann man machen. Also ich würde es jetzt nicht machen, wenn ich zum Beispiel irgendwo JSON über eine API lese, weil YAML-Parser ist einfach von der Natur aus ein bisschen langsamer, weil er eben viele Sachen beachten muss. Also ist nicht unbedingt der effizienteste Ansatz.",
+      "start": 1252187,
+      "end": 1268116,
+      "confidence": 0.7638695652173915,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Aber ich könnte jetzt zum Beispiel, wenn ich jetzt an Docker denke und an so eine Definition von Docker Compose, könnte ich die in JSON schreiben und sofern Docker Compose jetzt den Standard 1.2 unterstützt, wäre das eine valide Definition.",
+      "start": 1268156,
+      "end": 1281624,
+      "confidence": 0.757325,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Ja, genau.",
+      "start": 1281870,
+      "end": 1282771,
+      "confidence": 0.36,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Cool.",
+      "start": 1282851,
+      "end": 1283331,
+      "confidence": 0.536,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Also, ich kannte den Flow-Style von YAML noch gar nicht. Und während ihr gesprochen habt, habe ich mir das mal ganz kurz angesehen. Und geil, das ist ja JSON mit Kommentaren, wie du schon sagtest. Warum schreibe ich eigentlich überhaupt noch JSON? Wahnsinn. Und jetzt brauche ich nur irgendwie so eine Art, weiß ich nicht, Präprozessor für meine JavaScript-Sachen, damit ich das dann wirklich wieder in JavaScript packen kann. Dann muss ich nämlich gar kein JSON mehr schreiben.",
+      "start": 1283391,
+      "end": 1303726,
+      "confidence": 0.7330128205128205,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Das nennt sich dann YAML-Parser, Andi.",
+      "start": 1303766,
+      "end": 1306828,
+      "confidence": 0.26266666666666666,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Moment mal, gibt's denn YAML-Parser in JavaScript? Bestimmt, ja.",
+      "start": 1306888,
+      "end": 1311126,
+      "confidence": 0.473,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Es gibt mittlerweile auch einen, der wirklich 1.2 unterstützt.",
+      "start": 1311726,
+      "end": 1315807,
+      "confidence": 0.7702222222222221,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Wie neu ist 1.2? Wann ist es rausgekommen?",
+      "start": 1315827,
+      "end": 1319448,
+      "confidence": 0.638375,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Das ist jetzt durchaus schon ein bisschen älter. 2009 ist es rausgekommen, aber es wurde halt nicht so richtig angenommen, weil es gab ja PyJML und LibJML. PyJML wurde geschrieben von Kirill Simonov, ich hatte es rausgesucht, 2005. glaube ich, oder 2006. Ich glaube, beim Google auf Code. Und der hat das dann auch noch nach LibYAML portiert. Und das war einfach so, damit hat er einen Standard gesetzt, so ein bisschen von der Spezifikation abgewichen. Und das wurde dann halt benutzt. Es kamen immer mehr Dinge, die YAML benutzen wollten, und keiner hat sich darum gekümmert, dass es jetzt eine neue Version da irgendwie gibt.",
+      "start": 1319488,
+      "end": 1356192,
+      "confidence": 0.7491037735849057,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Es ist immer schlimm, wie lange solche Versionen brauchen in der IT. Wir hatten gerade kürzlich das Problem, ich habe ein UTF-8-Zeichen verwendet und der Andi hat gesagt, bei mir wird das nicht dargestellt. Und das ist eigentlich ein Standard von 2007, aber Mac kann scheinbar diesen UTF, keine Ahnung was es war, 6 oder 7 Standard noch nicht von 2007. Also auch da, es braucht einfach alles lange, lange Zeit.",
+      "start": 1357464,
+      "end": 1380181,
+      "confidence": 0.7939014084507043,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Sprechen wir mal nicht über die Bash-Version, die beim Standard Mac OS X mit ausgeliefert wird.",
+      "start": 1380221,
+      "end": 1383727,
+      "confidence": 0.6123125,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Ja, das darf man sowieso nicht erwähnen.",
+      "start": 1383747,
+      "end": 1385710,
+      "confidence": 0.2592857142857143,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Ja, aber die muss man ja aktiv installieren, also von daher. Lass uns mal ganz kurz über die Arten von YAML sprechen. Du hattest auch gerade schon gesagt, ja, dann war da jemand, der hat PyYAML implementiert und der ist ein bisschen von der Spezifikation abgewichen. Und so habe ich auch das Gefühl, wird YAML so ein bisschen in freier Wildbahn verwendet. Und zwar hattest du nämlich in deinem Talk bei der FOSDEM auch gesagt, Was viele Leute für YAML halten, ist eigentlich gar kein richtiges YAML. Du hattest drei Beispiele. Du hattest einmal Zollstack genannt und dann sogenannte SLS-Files. Die haben dann glaube ich auch Vorschleifen drin, also Loops generell. Ähnliches mit Ansible-Files. Alles was noch durch Jinda-Templating gegangen wird. Und dann glaube ich war dein drittes Beispiel GitHub. Wie seht ihr das? Schaut ihr euch diese Sprachen an und sagt, wow, das könnten wir mal nativ wirklich zu YAML machen? Oder sagt ihr, ist so eine Misconception, dass dann SoulStack, Ansible und GitHub das Format so ein bisschen, ich nenne es mal, freier interpretiert.",
+      "start": 1389811,
+      "end": 1451577,
+      "confidence": 0.7801022727272723,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Ja, also eigentlich frei interpretieren vielleicht nicht unbedingt. Also bei SaltStack ist es halt wirklich, es ist einfach definitiv kein YAML, weil du eben vorher dieses Pre-Processing hast. Lässt ein Jinja-Templating drüberlaufen mit For-Loops, wie gesagt, wo dann irgendwelche Werte reinkommen mit Host-Namen und was man da in SaltStack typischerweise hat. Und erst danach ist es YAML. Das Problem dabei ist natürlich, dass so Du siehst diese Datei und kannst vorher überhaupt nicht sagen, ob das valides YAML ist und noch nicht mal auch, ob es nachher einem bestimmten Schema entspricht. Du kannst es nur, indem du die Daten durchlaufen lässt. Das heißt, Unit Tests kannst du damit auch nicht so einfach schreiben.",
+      "start": 1452259,
+      "end": 1496043,
+      "confidence": 0.8031946902654868,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Du hast auch keinen Support in der IDE dann natürlich, weil es geht natürlich genauso wenig.",
+      "start": 1496587,
+      "end": 1501048,
+      "confidence": 0.46381249999999996,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Weil Solstack ja gar nicht weiß, was potenziell an Daten reinkommen könnte. Bei Ansible ist es halt so, dass es besser gelöst, weil da wird tatsächlich das Ganze erstmal geladen ganz normal und die Jinja-Templates sind in den Strings drin und dann wird Pyjama verwendet und dann hast du das in einer Datenstruktur und dann wird mit Jinja nochmal drüber gelaufen.",
+      "start": 1501068,
+      "end": 1522994,
+      "confidence": 0.8319836065573769,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Okay, das bedeutet theoretisch wird alles, alle zusätzliche Logik wirklich in Quotes gepackt und das könnte somit auch ein regulärer YAML-String sein.",
+      "start": 1524276,
+      "end": 1532032,
+      "confidence": 0.8155454545454544,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Ja, also die Ansible-Dateien sind auf jeden Fall alle, sollten reguläres YAML sein. Was halt nicht so klar ist, ist auch, welcher parser wird eigentlich verwendet und welche YAML-Version. Das findet man in der Dokumentation nicht wirklich und das wäre schon mal ganz interessant. Also ich fände es nett, wenn die Leute das da zuschreiben würden, damit man überhaupt mal weiß, worauf kann man sich verlassen, was funktioniert und was nicht.",
+      "start": 1532464,
+      "end": 1558458,
+      "confidence": 0.8377887323943659,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Ich habe ganz allgemein das Gefühl, es spricht jeder von YAML, aber es weiß eigentlich niemand so genau, was da dahinter steckt. Also auch ich verwende YAML tagtäglich bei Docker und überall, aber ich muss jedes Mal nachdenken, was eigentlich die Struktur ist, was jetzt dieser Spiegelstrich heißt, was er jetzt bedeutet, was ist, wenn du den Spiegelstrich weglässt, die Aufzählung, was wird da dann ein Objekt und was nicht und so weiter. Also es ist irgendwie so, man beschäftigt sich nie damit. ist so im Flow und man denkt nie darüber nach, was da überhaupt dahinter steckt, wie die Struktur ist. Und obwohl man das ständig verwendet, hat man keine Ahnung darüber. Und ich würde auch nie nach einer Version irgendwo suchen, was da unterstützt wird, weil ich eben eh denke, das ist Jaml. Und ja, Jaml ist Jaml, da gibt es wenig. Also ich glaube, man beschäftigt sich verdammt wenig damit. Ich glaube, das ist auch ein großes Problem. Aber ich habe selber, muss ich ganz ehrlich sagen, muss ich mir an der Nase fassen, noch nie darüber nachgedacht irgendwie mehr. Oder vielleicht auch mal einfach eine halbe Stunde zu investieren und mal ordentlich den Syntax einfach durchlösen.",
+      "start": 1558658,
+      "end": 1618878,
+      "confidence": 0.81172,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Genau, das ist, glaube ich, so das Problem. Und wenn man jetzt JSON als Vergleich sieht, da ist das ja auch eigentlich gar nicht notwendig. Das hat man sehr schnell begriffen, was da passiert. Und dann trifft man halt auf Ansible oder SaltStack oder sonst was und da wird YAML verwendet. Und dann sieht man halt die spezifischen Beispiele für diese Anwendung und denkt dann, ach, das nennt sich YAML. Und es sagt eigentlich keiner, lern doch eigentlich mal vorher mal grundsätzlich, was YAML eigentlich ist, sonst hast du halt später ständig Probleme, wenn du dich fragst, was soll das denn jetzt hier. Ja, das sehe ich schon, weil es ist einfach komplexer, es ist halt mächtiger, aber du kannst halt auch viele Fehler machen.",
+      "start": 1619199,
+      "end": 1660075,
+      "confidence": 0.8054,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Jetzt hast du bei Andi schon gemerkt, Andi hat das ja auch schon irgendwie gesagt, das ist eigentlich YAML, aber dabei ist es Ginger Templating, was dahinter läuft. Passiert dir das öfter, dass Leute glauben, das ist Teil vom YAML-Standard und eigentlich ist es ein Templating-System, was irgendwie dahinter oder davor abläuft, pre-processor oder post-processor?",
+      "start": 1660682,
+      "end": 1678403,
+      "confidence": 0.7665454545454543,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Ja, ich glaube, das ist schon einigen nicht so bewusst. Also es gibt schon mehrere Leute, die bei uns im IAC oder in Matrix reinkommen und einfach so ein Stück YAML posten und sagen, was muss ich jetzt da schreiben? Ich kriege da eine Fehlermeldung. Und die Fehlermeldung ist dann aber oft von der Applikation selber, die sagt, dass hier irgendwie irgendein Key nicht hingehört. Aber das YAML selber ist völlig in Ordnung. Das wird halt einfach nicht wirklich auseinandergehalten. Ja, kann ich natürlich auch verstehen.",
+      "start": 1678772,
+      "end": 1704893,
+      "confidence": 0.8026860465116281,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Das führt mich eigentlich zu der Frage, ob diese großen Projekte wie Soulstack, Ansible und GitHub Actions sich eigentlich selbstbewusst sind, welche YAML-Funktion bzw. Version dort eingesetzt wird oder welche sie implementieren. Weißt du das zufällig?",
+      "start": 1705153,
+      "end": 1717820,
+      "confidence": 0.8064722222222223,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Also auf jeden Fall bei Ansible haben wir halt einen Entwickler, der bei uns bei PyYAML mitmacht, der Matt Davis. Der arbeitet an Ansible und der ist sich da schon bewusst. Bei den anderen weiß ich es nicht wirklich genau. Ich habe noch niemanden von GitHub kennengelernt, der bei uns vielleicht mal reingekommen wäre und gefragt hätte oder so.",
+      "start": 1718181,
+      "end": 1736633,
+      "confidence": 0.8082542372881354,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Sprechen wir mal ein bisschen über die EML-Spezifikation und dann auch über die Features. Wie kommt eigentlich ein neues Feature in die Spec? Also ich meine, gibt es da so eine Art Project Governance oder – ich kann das Wort jetzt nicht BDFL sowie Linus Torvalds bei Linus, also einer der darüber sagt ja und nein oder wie heißt das? Benevolent Dictator for Life. Ich kann das wohl nicht aussprechen.",
+      "start": 1736793,
+      "end": 1762147,
+      "confidence": 0.8005142857142853,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Ja, also Ingi, den ich ja schon genannt hatte, der ist so derjenige, der noch aktiv an YAML arbeitet. Ich würde mal sagen, der ist so derjenige, der hat so das letzte Wort, aber er würde sich jetzt selber nicht als BDFL bezeichnen wollen. Und wir haben so in den letzten Jahren mit einer Gruppe von Leuten zusammengesessen und haben uns Dinge überlegt. Da ging es halt auch um die Vereinfachung. Beispielsweise kann man in YAML MT-Keys verwenden. Also da steht dann einfach der Doppelpunkt am Anfang der Zeile. Und das LibYAML und PyYAML haben gesagt, das implementiere ich nicht und wir brauchen das. Und dann haben wir halt überlegt, das würden wir gerne rausschmeißen, weil das ein Stück ist, was den Parser komplizierter macht und ein paar andere Dinge. Und dann haben wir darüber abgestimmt und wir haben das auch auf GitHub gestellt, unsere Vorschläge und Pro und Contra abgelegt. Und das ist so ein bisschen eingeschlafen, der Prozess, weil wir eben gleichzeitig eben auch noch die 1.2-Version, weil wir daran gearbeitet haben, die unter die Leute zu bringen, weil das ja auch noch nicht wirklich passiert ist. Aber das ist halt so ein halb demokratischer Prozess, würde ich sagen.",
+      "start": 1762453,
+      "end": 1831348,
+      "confidence": 0.8180348258706458,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Ist bei YAML eigentlich so die Referenzimplementierung?",
+      "start": 1831948,
+      "end": 1834809,
+      "confidence": 0.5328571428571428,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Nicht wirklich Referenz, nee. Es ist halt die populärste.",
+      "start": 1834849,
+      "end": 1838330,
+      "confidence": 0.6793333333333333,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Oder gibt es eine Referenzimplementierung?",
+      "start": 1838370,
+      "end": 1840850,
+      "confidence": 0.4894,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Genau, es gibt seit vielleicht jetzt drei Jahren oder so eine Referenzimplementierung. Und zwar hat INGI sich die Spezifikationen genommen und maschinell in ein Programm gegossen sozusagen. Und da gibt es jetzt auch, glaube ich, drei Sprachen. Also in Perl, in JavaScript und in noch einer dritten Sprache läuft es, glaube ich. Und es ist auch auf dem Layground zu sehen. Und ja genau, die Referenzimplementierung ist nach unserem Wissen korrekt, 100 Prozent. Es kann immer noch Sachen geben, die wir noch nicht entdeckt haben.",
+      "start": 1840890,
+      "end": 1873345,
+      "confidence": 0.819447058823529,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Aber die Referenzimplementierung ist dann wirklich nicht zum produktiven Einsatz gedacht, sondern nur zum Überprüfen, ob dann eine andere LIB richtig funktioniert.",
+      "start": 1873385,
+      "end": 1881952,
+      "confidence": 0.8621363636363636,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Genau. Und die ist auch einfach zu langsam. Also für fünf Zeilen Jammel ist das okay. Ansonsten wird es schnell relativ langsam und die Fehlermeldungen sind eben auch nicht, also es gibt im Prinzip keine wirkliche Fehlermeldung, sondern einfach nur ist nicht valide. Das ist tatsächlich auch eine sehr schwierige Sache, die Fehlermeldung wirklich gut zu gestalten. Das kannst du gar nicht automatisiert aus der Spezifikation machen.",
+      "start": 1882572,
+      "end": 1905578,
+      "confidence": 0.834537313432836,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Die meisten Sprachlibraries implementieren die eigene YAML-Parser in ihrer eigenen Programmiersprache oder nutzen die meisten Sprachlibraries irgendwie die libYAML als C-Binding. Weil ich meine, im Endeffekt müssen die ja dann alles, ich sag mal, nachimplementieren in ihrer Sprache, wo natürlich dann das Binding, klar, der Kompilierungsprozess vielleicht ein bisschen komplizierter wird, aber natürlich implementierst du den Parser einmal und hast dann eigentlich nur noch das Sprachbinding.",
+      "start": 1906009,
+      "end": 1931568,
+      "confidence": 0.7399545454545452,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Ja, also es gibt ein paar, die LibJammel verwendet haben. Ich kann jetzt gar nicht sagen, wie viele das sind, aber ich glaube, die Sachen, die neu entstehen, die richten sich vielleicht auch danach noch. Aber es sind jetzt in den letzten Jahren schon einige neue Bibliotheken entstanden, die wirklich das komplett selber implementieren. Soweit ich weiß, gibt es jetzt auch eine Rust-Implementierung und der Autor sagt, es ist 100% grün. Die Test-Suite, ich bin noch nicht dazu gekommen, das auszuprobieren. Und das ist auch eine komplett eigene Implementierung. Und ja, wenn LibYAML verwendet werden sollte, dann wäre jetzt auch die neuere Alternative LibFYAML. Also einer von unserer Gruppe hat eben das Ganze in C nochmal neu implementiert und ist jetzt auch wirklich nach der Spezifikation gegangen. 1.2. Wenn man ein neues Binding schreibt, sollte man Libf-Yaml jetzt verwenden.",
+      "start": 1932121,
+      "end": 1987785,
+      "confidence": 0.8413165467625903,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Wofür steht denn das F in diesem Libf-Yaml? Für foremost oder forward oder?",
+      "start": 1987805,
+      "end": 1993835,
+      "confidence": 0.8170000000000001,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Nee, einmal darfst du noch raten.",
+      "start": 1993875,
+      "end": 1995017,
+      "confidence": 0.5818333333333333,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Nee, ich hab keine Ahnung. Für fast.",
+      "start": 1997238,
+      "end": 1999179,
+      "confidence": 0.7800000000000001,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Fancy.",
+      "start": 1999219,
+      "end": 2002581,
+      "confidence": 0.578,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Okay, den Lipp fancy, aber finde ich gut. Jetzt ist es natürlich so, jetzt ist einer der klassischen Programmierfingerübungen immer, ich baue mir mal einen eigenen Parser mit Lexa und allem drum und dran. Und dann habe ich zwar meinen einzelnen Testcase mit meinen fünf Zeilen YAML und der Pass dann auch, aber Ihr habt ja eine YAML-Testsuite entworfen, wenn ich das richtig recherchiert habe. Was ist die YAML-Testsuite und wie sieht die aus? Und wie viele Sprachlibraries passen alle Tests? Und gib uns doch mal bitte einen Überblick.",
+      "start": 2002661,
+      "end": 2037239,
+      "confidence": 0.7662808988764046,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Ja, gerne. Also die Testsuite besteht momentan aus knapp über 400 Tests. Und so ein einzelner Test beinhaltet einfach ein YAML-Dokument und dazu zum Beispiel eine JSON-Datei. wenn dieses YAML in JSON überhaupt ausdrückbar ist, das ist ja nicht immer der Fall, und eine Event-Serie, sage ich mal. Also das ist dann halt auf der Parser-Ebene. Der Parser sieht, es wird eine Liste angefangen oder ein Mapping angefangen und Da wird dann in einer bestimmten Syntax so ein Event ausgegeben, also eventbasiertes Parsing. Und wenn die Leute eine Bibliothek implementieren wollen, können sie eben, wenn sie dieses Format so ausgeben, können sie gucken, stimmt mein Output genau mit der Test Suite überein. Ich glaube, das hat auch dazu geführt, dass in den letzten Jahren wirklich mehr Leute gekommen sind und gesagt haben, ich implementiere jetzt auch mal YAML. Und bei mir war das auch der Fall. Wir haben in Perl so ein bisschen das Problem gehabt, den Segen und den Fluch, dass Ingi damals für die Version 1.0 ein Perl-Modul geschrieben hat und noch nicht mal auch so richtig komplett implementiert. Die Perl-Community hatte dann ein YAML-Modul und hat früh damit angefangen, YAML zu verwenden, aber es war halt nicht wirklich richtig YAML, also weit davon entfernt. Und da haben die Leute 15 Jahre lang mitgearbeitet. Und ich habe dann irgendwann gesagt, 2017, ich baue jetzt mal ein neues Modul, das YAML parsen kann. Und zwar richtig. Und habe das, glaube ich, nur gemacht, weil es eben die Test Suite gibt. Ich habe aber während dieser Phase auch ganz viele Tests selber hinzugefügt. Man merkt dann irgendwie, Was ist denn jetzt eigentlich mit diesem Dokument? Das ist ja noch gar nicht in der Testsuite drin und dann muss man in der Spezifikation nachschauen oder fragt die Leute, die noch besser darüber Bescheid wissen. Und so sind dann die ganzen Tests zusammengekommen.",
+      "start": 2037639,
+      "end": 2151779,
+      "confidence": 0.8243858520900323,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Jetzt wenn du sagst, es sind über 400 Tests, also für mich persönlich klingt ja immer noch sehr einfach. Hast du da irgendwie ein Beispiel, was da so ein komplexer Test ist oder was da abgetestet wird neben den klassischen Dingen natürlich? Ich stelle mir vor, bei 400, das klingt nach extrem vielen Edge Cases und Zusatzdingen, die jetzt abseits von definieren String und eine Liste eigentlich ist.",
+      "start": 2151799,
+      "end": 2177458,
+      "confidence": 0.778735294117647,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Tatsächlich, ja. Also zum einen ist eben, was ich eben schon erwähnt habe, dass man leere Keys haben kann, also wo einfach Doppelpunkt vorne steht. Und LibYAML zum Beispiel hat das nie implementiert und andere Dinge.",
+      "start": 2177478,
+      "end": 2189768,
+      "confidence": 0.8347777777777777,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Also das meine ich, dass die, der variablen Namen sozusagen, wenn man es so sehen will, leer ist, also empty ist.",
+      "start": 2189789,
+      "end": 2196715,
+      "confidence": 0.7159523809523809,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Genau. Whitespace ist so eine Sache, die man abtesten muss und dann eben auch in allen Varianten. Dadurch, dass es eben doch relativ viele Features hat, will man die auch in allen Varianten abtesten und einmal im Blockformat, also das, was ihr so kennt, und dann eben im Flow oder JSON-Style mit Quoting zum Beispiel. Es gibt ja viele Arten, um einen String zu quoten und die sind teilweise auch recht komplex zu implementieren. Es gibt auch Feature, wo Ingi sich bis heute darüber ärgert, dass es mit reingekommen ist, weil es eigentlich das Ganze noch ein bisschen komplizierter macht. Dann eben die Alias, um Referenzen oder Pointer zu bilden, oder die Tags, die eigentlich fast die wenigsten eigentlich kennen. Und da kommt dann schon einiges zusammen.",
+      "start": 2197401,
+      "end": 2243665,
+      "confidence": 0.8502204724409446,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Und wie viel unterstützen dann wirklich diese ganzen Features, also von den üblichen Lips? Oder gibt es überhaupt irgendeine Lip, die da komplett grün ist und alle 402 Test Cases schafft?",
+      "start": 2243685,
+      "end": 2254513,
+      "confidence": 0.7798064516129032,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Also LibF-YAML ist tatsächlich eine, die alle Tests passt. Und dabei muss man auch beachten, dass es eben die validen Tests gibt und auch die nicht validen. Das heißt, wir haben auch YAML drin, was nicht valide ist. Und dann testen wir darauf, ob die Bibliothek dann auch wirklich sagt, das ist nicht valide, weil das ist eigentlich genauso schlimm wie umgekehrt. Soweit ich weiß, ist auch die JavaScript-Yaml-Library komplett grün. Allerdings auf der Matrix-Seite, die ich da verlinkt hatte, ist es glaube ich noch nicht grün. Ich muss da nochmal neu drüber laufen lassen. Das ist immer ein bisschen aufwendig. Und dann fängt es aber wirklich an mit kleinen Fehlern. Also da sind dann Bibliotheken, wo man sagen kann, die kannst du verwenden. Die sind zwar nicht komplett grün in den Tests, aber das sind so Fälle, da wirst du nicht drüber stolpern. So einen Jammel schreibst du nie im Leben. Von daher, ja. Aber es gibt auch noch viel zu tun.",
+      "start": 2255320,
+      "end": 2311136,
+      "confidence": 0.8209999999999998,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Verteilt ihr eigentlich so einen TÜV-Gütesiegel? Diese Library besteht. Unsere Testsuite. Das wäre doch mal was.",
+      "start": 2311176,
+      "end": 2317098,
+      "confidence": 0.4404375,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Also wir haben auf jeden Fall die Matrix-Seite, wo die Bibliotheken aufgelistet sind.",
+      "start": 2317648,
+      "end": 2322831,
+      "confidence": 0.8403076923076921,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Wo findet man diese Matrix?",
+      "start": 2322851,
+      "end": 2325153,
+      "confidence": 0.724,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Matrix.yaml.info und die ist eigentlich auch verlinkt, wenn man auf die YAML-Testsuite auf GitHub geht.",
+      "start": 2325193,
+      "end": 2331477,
+      "confidence": 0.8266000000000001,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Verlinken wir natürlich in den Show Notes und da kann ich dann nachschauen, welcher Lib wie gut ist und ob meine Lib, die ich verwende, auch dementsprechend die 1.2 Specs erfüllt.",
+      "start": 2331497,
+      "end": 2339882,
+      "confidence": 0.7443870967741935,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Genau. Also ich muss zum Beispiel die Rust-Bibliothek, die neuere, muss ich da auch noch hinzufügen. Und ja, das ist schon ein bisschen Arbeit. Das ist halt alles in Containern, was schon ganz gut ist. Aber ich muss halt rausfinden, wie baue ich diese Bibliothek und welchen Container sollte ich verwenden? Reicht mir ein Alpine oder soll ich lieber Debian verwenden? Und ja, die fehlende Zeit. Aber das kennen wir ja alle.",
+      "start": 2341147,
+      "end": 2362892,
+      "confidence": 0.7776805555555554,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Gehen wir mal auf ein schöneres Thema. Gehen wir mal auf das Thema Urlaub. Skandinavien und im speziellen Norwegen. Und Leute, die sich mit YAML beschäftigen, kennen das vielleicht schon, das sogenannte Norway-Problem. Du hattest das auch schon erwähnt. Führ uns mal ganz kurz dadurch, was ist ein Norway-Problem in einer Serialisierungssprache.",
+      "start": 2364006,
+      "end": 2383103,
+      "confidence": 0.8351923076923081,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Genau, wie schon erwähnt, da muss man ja ein YAML-Things nicht quoten. Und YAML hat das Feature, dass über reguläre Ausdrücke halt bestimmt wird, ist das jetzt eine Zahl oder ein Null oder ein Boolean. Und jetzt stellt man sich vor, ich mache eine Liste von Country Codes mit .de oder ohne Punkt natürlich, .de, .es, .no, so und bumm. Wenn du .no schreibst, dann wird das Ganze als dasselbe wie false interpretiert und dann landet ein Boolean in deiner Liste. Du merkst es dann natürlich irgendwann und die Frage ist, wann. Also wenn du jetzt deine Daten auch schön testest, dann merkst du das hoffentlich früh genug. Aber das ist natürlich was komplett Unerwartetes. Also No und Yes und On und Off gibt es auch noch. Und das natürlich auch in Groß- und Kleinschreibung. Und ich denke, man hat gedacht, das ist ganz cool, weil es in manchen Dateien, die man schreibt, wäre Yes. oder on, der passendere Ausdruck statt true. True ist so sehr technisch und YAML war ja nicht unbedingt nur dafür gedacht. Ja, und dann hat man sich später wohl überlegt, das war glaube ich doch keine gute Idee, so viele verschiedenen Booleans, also 22 an der Zahl, als Booleans zu erkennen. Und dann hat man das in der Version 1.2 ein bisschen eingedampft, genauso mit Zahlen, Die octal values wurden vorher mit einer einzelnen führenden 0 definiert, also 0,7 zum Beispiel. Das ist dann halt eine oktale Zahl. Und in der 1.2-Version hat man ja gesagt, es muss noch ein kleines o dazwischen stehen. Also 0, kleines o und dann die oktale Zahl. Weil sonst ist es auch sehr unerwartet.",
+      "start": 2384052,
+      "end": 2484144,
+      "confidence": 0.7873709090909091,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Wie viele values resolven wir jetzt auf true und false? 6 Stück. Von früher 22 und jetzt sind es 6. Okay, das klingt überschaubar.",
+      "start": 2484424,
+      "end": 2492787,
+      "confidence": 0.6133333333333334,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Das bedeutet aber auch, ich sag mal, in der YAML-Version 1.1, wenn man dann auf 1.2 geht, das ist ja eigentlich ein Breaking Change, weil vielleicht gibt es ja Leute, die wirklich auf dieses Behavior mit On und Off, No für No Way in diesem Sinne jetzt, weil das nicht gequotet, wirklich, wirklich sagen, okay, das muss so, das hab ich jetzt so, das ist der Stand, also das kann auch nach hinten losgehen für einen Tierparser, oder?",
+      "start": 2493637,
+      "end": 2514800,
+      "confidence": 0.7651410256410257,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Ja, genau. Also da sollte man auf keinen Fall jetzt sagen, zum Beispiel, also wenn Ansible jetzt sagen würde, wir nehmen jetzt einen 1.2-Parser und releasen das dann, da geht sehr viel kaputt, denke ich. Das muss man sich dann überlegen, wo man das einsetzt und woran man das festmacht, auch wenn man jetzt gemischte Versionen vielleicht einsetzt. Es gibt die Möglichkeit, eine YAML-Version oben anzugeben. Also mit dem Prozentzeichen und dann YAML und dann 1.1 oder 1.2. Und das implementieren eben auch manche Bibliotheken schon so, zum Beispiel die JavaScript Library oder auch mein Perl-Modul, dass es dann darauf reagiert, okay, das soll jetzt also 1.2 sein. Und dann nehme ich das neuere Schema mit den sechs Booleans oder eben die ältere und dann kann man den Default noch vorgeben.",
+      "start": 2514960,
+      "end": 2565277,
+      "confidence": 0.8172748091603049,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Das heißt, wenn ich jetzt alle meine Dateien einfach mal mit 1.0-Flagge sozusagen, dann kann ich jederzeit umsteigen und alles, was da neu ist, kann ich auf 1.2 machen.",
+      "start": 2565886,
+      "end": 2576133,
+      "confidence": 0.7497241379310345,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Also 1.1 würdest du verwenden wollen? Oder 1.1, ja. Aber das können halt noch nicht so viele Parser. Das ist eben noch das Problem. Das wäre tatsächlich auch nochmal was, was man noch getrennt checken könnte. Welche der Bibliotheken, die in der Matrix aufgelistet sind, genau das unterstützen.",
+      "start": 2576374,
+      "end": 2594647,
+      "confidence": 0.8027083333333332,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Gibt es da eine Möglichkeit, dass ich einfach sage, okay, prüfe mir mal meine ganzen Config-Files in 1.1 und dann nochmal in 1.2 und vergleiche den Output?",
+      "start": 2595167,
+      "end": 2603793,
+      "confidence": 0.7315925925925926,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Ja, ich habe auch mal überlegt, ob das vielleicht noch ein Feature wäre für mein YAML-Tidy-Programm. Du bist ja nicht der Erste, der nach sowas in der Art fragt und das will man natürlich auf jeden Fall automatisiert machen können. Ist natürlich nicht immer einfach, wenn du jetzt, genau, also den Output könnte man vergleichen. Ja, genau. Ansonsten kann man natürlich erstmal schwer entscheiden, soll on jetzt ein String sein oder eben nicht. Das weiß natürlich dann das Tool nicht unbedingt.",
+      "start": 2604213,
+      "end": 2630452,
+      "confidence": 0.8224197530864196,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Aber wenn ich natürlich die Unterschiede sehe, aufgelistet, dann kann ich halt manuell nochmal checken, okay, was war damals gemeint, was ist es jetzt.",
+      "start": 2630492,
+      "end": 2637459,
+      "confidence": 0.8079583333333334,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Erinnert mich so ein bisschen an Static Analysis für YAML oder irgendwie so ein Upgrade-Check wie bei Postgre. Da gibt's zum Beispiel PG-Upgrade, der prüft dann, okay, kann ich meine Postgre-Version 15 auf 16 hochheben und allem Drum und Dran. Klingt so nach, zum Glück, aus Upgrade-Check und Shell-Check oder so, okay. Best Practice für YAML.",
+      "start": 2638128,
+      "end": 2659540,
+      "confidence": 0.7007857142857138,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Das ist auf jeden Fall auch noch ein Feature genau für das YAML-Teil, die momentan kann es halt nur 1.2. verstehen sozusagen und sagen, okay, du hast hier einen String, der muss nicht gequotet werden. Aber das ist dir automatisch dann halt die Werte ersetzt. Das wäre tatsächlich noch ein Feature. Aber da gibt es noch sehr viel Luft nach oben, was die Tools so alles machen könnten.",
+      "start": 2659580,
+      "end": 2679295,
+      "confidence": 0.7874852941176469,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Jetzt hat der Wolfgang schon mehrmals erwähnt, dass für ihn YAML eine relativ einfache Sprache ist. Meines Erachtens hast du schon mehrfach bewiesen, dass dem eigentlich nicht so ist. Nämlich, dass hinter YAML viel, viel mehr steckt. Was würdest du denn sagen, sind denn so die zwei, drei wenig bekannteren Features, wo du auch sagen würdest, die machen vielleicht auch die Implementierung eines Parsers einen Tick komplexer?",
+      "start": 2679335,
+      "end": 2703613,
+      "confidence": 0.7977910447761196,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Also das Komplexe sind zum einen halt auch die Syntax-Sachen, muss man sagen. Die interessieren natürlich aus User-Sicht jetzt nicht unbedingt so. Aber von den Features her, es gibt durchaus einige, die Aliases, Anchors und Aliases nicht kennen.",
+      "start": 2703995,
+      "end": 2720769,
+      "confidence": 0.8713947368421052,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "So wie ich zum Beispiel?",
+      "start": 2721310,
+      "end": 2722331,
+      "confidence": 0.6286,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Ja. Damit kann man eben Referenzen oder Pointer beschreiben und sowas gibt es halt in JSON gar nicht. Wenn du jetzt eine Datenstruktur innerhalb einer Datenstruktur hast und die wird an zwei Stellen verwendet mit einem Pointer oder so, dann würde das in JSON einfach doppelt ausgegeben. Obwohl es ja eigentlich in der Sprache selber denselben Speicherplatz belegt. Und in YAML kann man das machen. Da hängt man dann einen Anchor vorne dran, wenn es zum ersten Mal auftaucht, mit einem ampersand Zeichen. Und dann kann man das später mit einem Sternchen und demselben Namen wiederverwenden.",
+      "start": 2722831,
+      "end": 2758517,
+      "confidence": 0.8263020833333333,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Das Problem, was es dann löst, ist Copy und Paste vermeiden, oder?",
+      "start": 2758537,
+      "end": 2761500,
+      "confidence": 0.665,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Ja, und also Serialisierung, man hat ja eventuell solche Datenstrukturen und genau, also Copy und Paste, wenn man das tatsächlich in seiner Konfiguration oder wo auch immer man das ja beschreibt, wenn man da dasselbe eigentlich verwenden möchte, dann will man das nicht zweimal schreiben, genau.",
+      "start": 2762070,
+      "end": 2778593,
+      "confidence": 0.835391304347826,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Ja, und du kannst halt wirklich auch Pointer realisieren, oder? Also wenn du jetzt irgendwie eine klassische Datenbank oder so hast, wo du halt einfach deine Rechnungen mit Kunden verknüpfst, dann könntest du das natürlich über sowas auch lösen. Und sonst hättest du halt tausendmal die Daten dupliziert unter Umständen.",
+      "start": 2779065,
+      "end": 2794154,
+      "confidence": 0.7905600000000002,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Genau, ja.",
+      "start": 2794394,
+      "end": 2795195,
+      "confidence": 0.671,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Gefällt mir schon dieses Feature. Finde ich cool. Als Datenbankler sowieso.",
+      "start": 2795235,
+      "end": 2798377,
+      "confidence": 0.6312727272727273,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Wolfgang, du hast es gerade schon gut angesprochen, immer wenn ich mir an Pointer und Anchor denke, dann kommt so der Security-Mensch bei mir raus und sagt, ah, Moment mal, immer wenn ich Pointer und Anchor habe, dann kann ich zyklische Strukturen nachbilden und daraus könnte man eigentlich auch so eine Denial-of-Service-Attacke bauen, indem man da einfach, keine Ahnung, eine YAML-Injection macht. Also theoretisch kann ich eine endlose Baumstruktur bauen, oder? Also wirklich eine rekursive Baumstruktur, die dann eigentlich doch den Memory des Parsers irgendwie explodieren lassen könnte, oder?",
+      "start": 2798971,
+      "end": 2828403,
+      "confidence": 0.7840786516853931,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Also man kann zyklische Strukturen bilden, genau. Da muss man in der Implementierung eventuell aufpassen, denn wenn man da nicht aufpasst, dann kann es ein Memory-Leak geben tatsächlich. In Perl muss man dann beispielsweise den Referenz-Counter manuell sozusagen runtersetzen, damit die Datenstruktur nachher auch wieder gelöscht wird. Das Problem ist aber noch, ja, also es ist lösbar, aber man sollte auf jeden Fall darauf aufpassen. Ansonsten ist es aber erst mal nur eine zyklische Struktur und zeigt auf dieselben Sachen. Wenn du natürlich jetzt unvorsichtig bist und willst die Struktur jetzt ausgeben mit einem JSON, in einem JSON-Format, dass das nicht beachtet, das ist natürlich dann schwierig. Aber ich denke mal, die meisten Ausgabetools, die achten dann auch darauf und sagen, okay, hier war ich schon mal an der Stelle.",
+      "start": 2829083,
+      "end": 2879277,
+      "confidence": 0.8261000000000002,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Habt ihr das in eurer Test-Suite drin als einen Test?",
+      "start": 2879850,
+      "end": 2883193,
+      "confidence": 0.6668999999999999,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Da fragst du mich etwas. Ich glaube, wir haben die zyklische Datenstruktur nicht drin.",
+      "start": 2883233,
+      "end": 2889839,
+      "confidence": 0.7557857142857143,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Aber das könnte ja Andi dann contributen, damit Andi dann auch glücklich ist, wenn er das als DOS-Attacke sieht.",
+      "start": 2889879,
+      "end": 2896064,
+      "confidence": 0.7548421052631579,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Wir haben erstmal den Fokus auf die Syntax gelegt und das ist kein klassisches Pasa-Problem, sondern eher eine Ebene drüber beim Bauen der Datenstrukturen. Aber was halt auch noch problematisch ist, ist die Billion Loves Attack und da ist es keine zyklische Datenstruktur, sondern einen Baum, der halt recht schnell sehr groß wird. Also man kann von einem String einen Anchor setzen und in der nächsten Zeile sagt man dann, ich verwende diesen Anchor jetzt zehnmal. Und darauf setze ich wieder einen Anchor. Und wenn ich das oft genug mache, dann habe ich eine Datenstruktur mit 1000 Entries.",
+      "start": 2897906,
+      "end": 2935504,
+      "confidence": 0.8388265306122449,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Also einfach ist das schon exponentieller Wachstum wahrscheinlich, oder?",
+      "start": 2935882,
+      "end": 2939743,
+      "confidence": 0.7972222222222222,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Genau, mit einer Billion oder im Deutschen Milliarde. Und das ist eigentlich erstmal auch nicht problematisch. Also wenn ich das mit einem YAML-Modul lese, dann habe ich eben Alias in meiner Datenstruktur, die zeigen eben oft dasselbe. Das ist alles ganz harmlos. Aber wenn ich dann sage, ich schreibe mir das jetzt mal als JSON, auf die Festplatte, dann wird es sehr schnell sehr unangenehm. Oder ich laufe über die Datenstruktur rüber und dann dauert es endlos lange. Das heißt, das Problem ist nicht auf der YAML-Seite, aber es wäre natürlich schön, wenn man trotzdem in der YAML-Bibliothek irgendwas dagegen tun könnte. Und das geht halt nicht einfach, indem man die Alias erzielt, weil die Verwendung von Aliasen, das sind dann halt 100 Stück, aber es kommen tatsächlich eine Million Entries raus. Man kann da was gegen tun, ja.",
+      "start": 2939783,
+      "end": 2988950,
+      "confidence": 0.829064748201439,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "RAM nachschieben, oder?",
+      "start": 2989525,
+      "end": 2991586,
+      "confidence": 0.407,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Also man könnte jetzt zählen, also ich habe das in meinem Vollmodul auch schon gemacht, aber noch nicht released, dass ich halt die Größe der Datenstruktur zähle beim Parsen. Also ich gucke halt, hier habe ich jetzt ein Alias und das Alias selber hat schon eine Punktezahl und dann rechne ich die noch mit drauf und würde dann tatsächlich am Ende auf diese Millionen kommen, ungefähr, und kann halt ein Limit angeben, was im Normalfall nie ausgereizt würde.",
+      "start": 2991626,
+      "end": 3015843,
+      "confidence": 0.8392051282051282,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Aber man muss ja auch sagen, das ist eigentlich das Behavior, was man gerne hätte, weil wenn ich daraus ein JSON machen will, dann ist es halt so, ist ja eigentlich eine korrekte Vorgehensweise. Also damit muss ich eigentlich immer rechnen, wenn ich meine Datenbank deserialisiere in irgendeiner Form und dann alle Referenzen auflöse, kommen auch ganz viele Daten am Ende raus. Also das ist halt die korrekte Vorgehensweise, würde ich mal sagen.",
+      "start": 3016790,
+      "end": 3037796,
+      "confidence": 0.7655342465753425,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Ja, man muss halt nur vorsichtig sein, wenn man Wellen hat, denen man nicht wirklich vertraut. Und das ist ja heutzutage auch immer ein größer werdender Punkt, dass man YAML-Dateien liest von irgendwelchen GitHub-Pull-Requests oder sonst wo. Und dann kann man sagen, man kann immer rausfinden, wer denn der Böse gewesen ist oder die Böse, aber dann ist es vielleicht schon zu spät. Da muss man sich auf jeden Fall schützen. Also der klassische Angriffsvektor mit erstellen von Objekten und ausführen von beliebigen Code. Das ist mittlerweile, würde ich mal sagen, in allen Bibliotheken gelöst. PyYAML hatte als Default tatsächlich das mit drin als Feature, dass man beliebigen Code ausführen konnte. Und das wurde jetzt so geändert, dass man das Safeload als Default hat.",
+      "start": 3038118,
+      "end": 3082787,
+      "confidence": 0.839008064516129,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Du hast schon YAML-Tags erwähnt. Kannst du mir das als YAML-Lion auch noch erklären?",
+      "start": 3082828,
+      "end": 3087830,
+      "confidence": 0.7423571428571428,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Also Tags sind eigentlich ein Grund-, ein Basisfeature von YAML. Du siehst sie nur nicht. Die werden implizit benutzt. Also Strings und Integer-Tags, die sind implizit durch die regulären Ausdrücke. Man kann aber auch sagen, wie zum Beispiel das Beispiel mit dem Tuple. Wenn ich jetzt also einen Tupel in YAML haben möchte, dann kann ich bei Ausrufezeichen verwenden und Python slash Tupel schreiben und dann schreibe ich eine ganz normale Liste dahinter und dann wird das aber eben in Python als Tupel geladen. Also da gibt es eine ganze Reihe von von Tags, die halt in PyYAML so implementiert sind, sodass man alle Python-Datentypen damit auch sehr realisieren kann. Man kann aber eben auch sich eigene Tags definieren und Ansible oder AWS machen das, also in Ansible gibt es das Vault Tag, also Ausrufezeichen Vault und da steht dann ein verschlüsseltes Passwort drin und das wird dann beim Laden eben automatisch end.",
+      "start": 3088248,
+      "end": 3147647,
+      "confidence": 0.8239411764705878,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Das verwende ich sogar. Also hätte es mir ja wieder mal nicht gedacht, aber ich verwende es sogar. Aber das ist halt wieder so der Klassiker, copy-based irgendwo und man hat eigentlich keine Ahnung, dass da ein Feature dahinter steckt.",
+      "start": 3149591,
+      "end": 3159755,
+      "confidence": 0.7601749999999999,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Genau. Und das lässt sich eben bei manchen YAML-Bibliotheken auch wirklich sehr einfach definieren. Du verwendest PyYAML und hast jetzt hier ein schönes neues Tag, was du verwenden möchtest. Und dann sagst du dem PyYAML einfach, den Tag-Namen und welche Funktion aufgerufen wird. Und dann funktioniert das. Und damit kann man eben, wie gesagt, bestimmte Objekte laden und in AWS wird das verwendet. Die haben auch die entsprechende JSON-Version, aber da muss man dann eben ein Objekt machen mit einem bestimmten, mit dem Objekt-Namen als Key und dann das eigentliche Objekt, was dann halt sehr verbose wird. Und mit Tags in YAML ist das ein bisschen schöner.",
+      "start": 3159775,
+      "end": 3196638,
+      "confidence": 0.8064299065420565,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Ich habe gerade mal nachgeschaut, es wird wirklich bei AWS CloudFormation sehr viel in der Dokumentation erwähnt, in der Tat. Jetzt hattest du während deines FOSDEM Talks auch etwas angesprochen, wo ich noch nicht ganz genau weiß, wie ich damit umgehen soll. Und ich spreche von YAML-Skript. Was ist YAML-Skript und welches Problem löst YAML-Skript?",
+      "start": 3197072,
+      "end": 3218322,
+      "confidence": 0.8053636363636366,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Ja, das ist noch relativ neu und das Problem, was eigentlich so immer von Leuten gefragt wird, ist, ich möchte jetzt hier irgendwas Programmatisches mit YAML machen. Ein klassisches Problem ist, ich möchte eine Liste wiederverwenden und merchen oder ein Hash wiederverwenden und merchen in einen anderen Hash. Das ist auch tatsächlich möglich. Das ist aber wirklich das einzige Feature, was man als programmatisch bezeichnen könnte in YAML. Und ansonsten ist es wirklich nur eine Serialisierung und keine Programmiersprache. Aber man möchte das eben haben. Und dann war halt die Überlegung auch, wollen wir eine neue YAML-Version, wo wir irgendwie sowas mit einbauen? Aber wie machen wir das? Und kommt dann auch schnell an seine Grenzen? Ist es dann eine richtige Programmiersprache oder nicht? Und dann hat Ingi sich gedacht, ich schreibe jetzt einfach mal eine komplette Programmiersprache in YAML selber. Und das ist dann wirklich, also das Skript selber ist eine valide YAML-Datei. Und es wird zu Clojure kompiliert. Und viel mehr kann ich auch gar nicht darüber sagen, weil das, also Clojure kenne ich auch nicht wirklich. Ist auf jeden Fall was mit Java. Also ein schöneres Java, sage ich mal. Und genau, mit YAML-Skript kann man also Daten und die Programmierung sehr gut vereinen. Also in dem Sinne, klar, man könnte alles auch mit einer normalen Skript-Sprache erledigen. Aber gerade wenn man eben Daten verarbeiten will, hat man mit YAML Script halt wirklich alles in einem. Man kann zwischen Daten und Programmierung in YAML Script hin und her wechseln. Man kann vom Datenmodus in den Programmiersprachenmodus wechseln. Und ich könnte mir jetzt zum Beispiel vorstellen, SaltDeck wäre so eine Anwendung, die vielleicht mit YAML Script besser lösbar wäre als mit Jinja Templating.",
+      "start": 3219008,
+      "end": 3328969,
+      "confidence": 0.8408140350877191,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Du hattest schon die Frage aufgeworfen, die meine nächste Frage gewesen wäre. Warum brauchen wir jetzt YAML-Skript, wenn wir PHP, Perl, Python, JavaScript und etliche andere Skript-Sprachen haben? Du hast natürlich zwei gute Punkte genannt. Zum einen ist es, glaube ich, und den würde ich wirklich kaufen, das Argument, die wirkliche Verbindung, dass du alles in einem File hast, weil sonst hast du nämlich hier diese Daten und dann drüben in einem anderen Ordner, in dem Scripts-Folder, da liegt so dieses magische Python-Skript und du musst erstmal irgendwie in deinem Kopf verbinden, dass dieses magische Python-Skript da hinten mit diesem YAML-File funktioniert, beziehungsweise dass der Pre- oder Post-Prozessor ist. Und ja, du hast, glaube ich, auch den Mega-Use-Case von SaltStack rausgeholt, würde ich, glaube ich, auch sagen, okay, dann können die Jungs Mädels von Zork dann ein valides YAML schreiben vielleicht. Das wäre natürlich dann schon eine super Sache.",
+      "start": 3329487,
+      "end": 3380850,
+      "confidence": 0.7542281879194632,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Auf der anderen Seite muss man natürlich sagen, wenn ich jetzt zurückdenke, ich komme ja aus der Datenbankwelt, in den 70er Jahren war das die große Errungenschaft, dass man Daten von dem Code, von der Programmierung an sich trennt, mit dem relationalen Modell unter anderem und Jetzt geht man wieder eigentlich zurück und mischt das wieder alles. Irgendwie erscheint mir das auch sehr eigenartig. Aber ich kenne es natürlich selber von Ansible. Es ist teilweise so schwierig, in irgendeiner Form so eine For-Loop reinzubringen. Und für mich als Programmierer ist das eigentlich so schwerfällig. Und auch Debugging ist extrem mühsam. Ich verstehe, woher man da kommt. Und wenn man da eine gute Lösung findet, macht das meiner Meinung nach sicherlich Sinn.",
+      "start": 3380870,
+      "end": 3421981,
+      "confidence": 0.8018760330578519,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Ja, also ich frage mich aber auch noch so ein bisschen, wo die Reise hingeht. Also gerade eben das Problem mit den Quellen, denen man nicht vertraut. Also ein YAML-Skript will man natürlich nicht von jedem annehmen und ausführen. Also das beschränkt sich dann wirklich nur auf den Teil, wo du eben selber Kontrolle hast. Und das ist eben auch noch ein Unterschied zu dem klassischen YAML-Ansatz, wo es verschiedene Sprachen gibt, die das implementieren. Und hier ist eher der Ansatz, Ingi hat diese Bibliothek geschrieben und es gibt jetzt eine Shared Library und in möglichst vielen Sprachen wird das als Binding implementiert. Also hast praktisch eine Implementierung als Shared Library. Und Ingi ist halt eher so der Erfinder, so ein Visionär. Und man muss vielleicht auch ein bisschen neu denken, um sich Anwendungsfälle auszudenken. Ich bin wirklich selber sehr gespannt. Also er hat da wahnsinnig viel Arbeit reingesteckt. Und vielleicht werden wir es in zwei Jahren alle verwenden.",
+      "start": 3422379,
+      "end": 3475798,
+      "confidence": 0.8202704402515724,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Das ist jetzt aber noch nicht im Standard, im 1-2-Standard drin? Oder ist das schon Teil vom Standard?",
+      "start": 3475818,
+      "end": 3481280,
+      "confidence": 0.7409444444444445,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Nee, das ist also komplett getrennt, sag ich mal, vom YAML-Standard. Also das YAML-Skript ist in YAML geschrieben und muss valides YAML 1.2 sein. Von der Syntax gar nichts Neues. Du kannst also mit der YAML-Version einfach YAML-Skript schreiben, weil es die Syntax schon erlaubt.",
+      "start": 3481729,
+      "end": 3497914,
+      "confidence": 0.734888888888889,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Also es ist dann die Interpretation des Inhaltes eigentlich. Das ist dann der Programmcode, der dann transbilliert wird oder wie man da auch immer dann sagt.",
+      "start": 3497934,
+      "end": 3506097,
+      "confidence": 0.677423076923077,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Auf yaml-script.org gibt es auf jeden Fall diverse Beispiele. Verlinken wir natürlich auch in den Show Notes. Und Humor ist auch dabei. Wenn man ganz runter scrollt, dann steht nämlich da, a stable release of YAML Script version 0 is expected in quarter 2 of 2024. Das finde ich, habe ich gerade zum grinsen gemacht. Schöne Nummer, jammelscript.org, schaut euch das mal an, falls ihr vor habt, Jammellateien zu modifizieren. Tina, was würdest du denn jetzt noch allen Leuten an die Hand geben, die in irgendeiner Art und Weise mit Jaml arbeiten? Welche Tools würdest du als dein Schweizer Taschenmesser beschreiben, ohne die man jetzt da eigentlich nicht mehr drum rum kommt?",
+      "start": 3507193,
+      "end": 3545882,
+      "confidence": 0.8085267857142858,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Ja, also auf jeden Fall würde ich YAML Lint empfehlen, den Standard Linter für YAML. Und ich glaube, das verwenden auch schon wirklich viele. Das macht es einfach ein bisschen sauberer, dass die Einrückung gleich ist und überflüssige Spaces und so weiter. Und YAML Tidy ist ein Projekt von mir, was noch relativ neu ist und noch nicht so viele Features hat. Man kann das aber auch zusammen verwenden. Also YAML-Tidy kann dir schon mal Spaces rauswerfen oder unnütze Quotes, dann kannst du aber hinterher immer nochmal YAMLint drüberlaufen lassen. Und insbesondere, wenn man eben also Quellen hat, denen man nicht vertraut, ein Schema sich zu überlegen für die YAML-Dateien und ein, also zum Beispiel JSON-Schema drüberlaufen zu lassen.",
+      "start": 3546208,
+      "end": 3587005,
+      "confidence": 0.7991092436974788,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Das heißt, ich kann dann JSON-Schema verwenden, um YAML zu spezifizieren, also um die Struktur zu spezifizieren.",
+      "start": 3587065,
+      "end": 3593988,
+      "confidence": 0.7515882352941174,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Genau, am Ende lädst du es ja auch in eine Datenstruktur und woher die Datenstruktur kommt, ist dem Schemachecker ja dann egal.",
+      "start": 3594457,
+      "end": 3602807,
+      "confidence": 0.7558181818181818,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Aber muss ich dann den Umweg über JSON machen?",
+      "start": 3602827,
+      "end": 3605230,
+      "confidence": 0.8028888888888889,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Nö, also du lädst es einfach nur mit der Bibliothek, die du nehmen möchtest, in eine Datenstruktur ein und lässt dann den Validator drüber laufen.",
+      "start": 3605390,
+      "end": 3614260,
+      "confidence": 0.7339199999999998,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Also gibt es jetzt sowas wie JSON-Schema, auch YAML-Schema? Weil du hast ja gesagt, YAML ist umfangreicher. Das heißt, ich kann ja eigentlich mit JSON nicht alles ausdrücken, was ich in YAML definieren könnte.",
+      "start": 3614593,
+      "end": 3625260,
+      "confidence": 0.7145294117647057,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Das stimmt. Also es gibt noch keinen Schema-Validator, der jetzt die speziellen Sachen validieren könnte. Aber das sind eben auch Sachen, die selten vorkommen. Und JSON-Schema sollte da schon für die allermeisten Sachen ausreichend sein. ich auch noch empfehlen. Da sind noch ein paar Basics erklärt und sich einfach ein bisschen mit Jaml beschäftigen, auch wenn es vielleicht weh tut am Anfang. Aber die Features sind gleichzeitig auch manchmal ein Fluch.",
+      "start": 3625280,
+      "end": 3658039,
+      "confidence": 0.8445633802816902,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Aber Jetzt eine persönliche Frage noch von mir, weil ich am Anfang mich auch beschwert habe. Ich glaube, es ist schon fast zehn Jahre her oder so, wie wir da mit Andi gekämpft haben. Und das waren irgendwelche unsichtbaren Chars, die wir nicht gefunden haben und so weiter. Obwohl wir alles probiert haben, unsichtbare White Spaces anzuzeigen und alles Mögliche. Hilft mir da Jammerlind in der Form oder sagt Jammerlind nur falsch? Oder gibt mir das auch irgendwie Hinweise, wo was falsch sein könnte? Und da mehr Informationen.",
+      "start": 3658080,
+      "end": 3685468,
+      "confidence": 0.8218295454545455,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Also YAMLint sollte dir eigentlich die Stelle auch zeigen, die Zeilennummer und Column. Ich verwende persönlich auch noch YAMLpp-Highlight. Das ist halt ein Skript von meinem YAML-Modul und das macht halt das Highlighting vom YAML und sobald die Stelle kommt, wo das Ganze invalide wird, wird alles rot angezeigt. Das finde ich sehr praktisch. Da siehst du wirklich sehr schnell, an welcher Stelle der Fehler ist, ohne selber jetzt die Zeilennummer irgendwie suchen zu müssen.",
+      "start": 3685873,
+      "end": 3711756,
+      "confidence": 0.8053733333333335,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Ich glaube, das hätte uns damals Zeit erspart. Wir haben zwar irgendeinen Linter ausprobiert, glaube ich, aber wir sind da auch nicht wirklich weitergekommen. Aber ich hoffe mal, in den letzten zehn Jahren hat sich was getan.",
+      "start": 3712078,
+      "end": 3721740,
+      "confidence": 0.8261621621621621,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Kennst du diese Leute in deinem Freundeskreis, die immer sagen, Wolfgang, damals, als wir im Kindergarten waren, weißt du noch dieser eine Tag, wo wir mit diesem Elefantenspielzeug irgendwie Rennen gefahren sind oder so? Ich so, nee, keine Ahnung. Und so ähnlich geht es mir gerade mit deinem Jammelproblem auf einem Hackathon. Anscheinend habe ich das so verdrängt, ich verstehe nicht, wann das war, ich weiß es nicht mehr.",
+      "start": 3722725,
+      "end": 3742580,
+      "confidence": 0.7911449275362319,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Ja, du hast das nur verdrängt, weil du unbedingt YAML verwenden wolltest und ich wollte ja nicht verwenden. Darum ist mir das natürlich so im Kopf gelegen. Aber ich sehe schon, mit den richtigen Tools an der Hand ist das alles beherrschbar. Also das ist kein Problem.",
+      "start": 3742920,
+      "end": 3755013,
+      "confidence": 0.7378936170212766,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "War vielleicht auch ein Parser, den ihr da verwendet habt, der irgendwie was falsch gemacht hat?",
+      "start": 3755033,
+      "end": 3758917,
+      "confidence": 0.7366250000000002,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Das kann natürlich auch gut sein. War sicher irgendwas in Go, wenn der Andi dabei war.",
+      "start": 3758957,
+      "end": 3764283,
+      "confidence": 0.7839375,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Vor wie vielen Jahren?",
+      "start": 3764323,
+      "end": 3765364,
+      "confidence": 0.31875,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Damals gab's die Teststudio noch nicht. Also, ich glaub, die kam danach. Da hätten wir natürlich auf die Teststudio geguckt und uns den richtigen Parser rausgesucht.",
+      "start": 3766785,
+      "end": 3773747,
+      "confidence": 0.6383461538461538,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Ja, aber da gibt's wirklich noch viel zu tun. Also, ich könnte jetzt, glaub ich, ein halbes Jahr Vollzeit an Dingen arbeiten, an YAML-Geschichten.",
+      "start": 3774647,
+      "end": 3781409,
+      "confidence": 0.7829166666666666,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Ja, ich würd sagen, da hilft nur eins, eine YAML-Foundation gründen. Oder irgendwie Teil der Linux-Foundation zu werden und von da aus weiterzumachen.",
+      "start": 3782129,
+      "end": 3790791,
+      "confidence": 0.8327826086956521,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Tatsächlich auch schon angedacht, so was. Aber mal schauen.",
+      "start": 3790811,
+      "end": 3793532,
+      "confidence": 0.6802222222222222,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Dann wünschen wir dir natürlich viel, viel Erfolg dabei. Und für alle Hörerinnen und Hörer, die gerne etwas mehr über YAML erfahren wollen. Wir haben eine umfangreiche Linkliste in den Shownotes verlinkt. Da findet ihr auch das Gitterprofil von Tina und unter anderem dann auch natürlich die YAML-Libraries an, sie mitarbeitet, falls ihr Lust habt ein bisschen was für das YAML-Ökosystem zu tun, ich glaube Pull-Requests für die Test-Suite sind auch sehr gerne willkommen, anscheinend besonders im Container-Bereich und im Integrieren von neuen Libraries.",
+      "start": 3794278,
+      "end": 3826294,
+      "confidence": 0.8310357142857143,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Ja, Andy, du deliverst dann diese zyklomatische, den Check, oder, dafür, für dieses Problem?",
+      "start": 3826334,
+      "end": 3831415,
+      "confidence": 0.6485714285714285,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Und ganz auf die Liste, genau, direkt nach Podcast produzieren. Und Tina, gibt's noch irgendwas von deiner Seite, was du den Hörerinnen und Hörern zum Thema YAML mitgeben möchtest?",
+      "start": 3831855,
+      "end": 3841980,
+      "confidence": 0.8536206896551725,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Oh, jetzt haben wir schon über so viel gesprochen, jetzt die Frage.",
+      "start": 3842381,
+      "end": 3845762,
+      "confidence": 0.5073333333333333,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Du kannst auch einen Kriegsaufruf machen, nutz YAML, das ist das bessere Jason oder sowas.",
+      "start": 3845782,
+      "end": 3849424,
+      "confidence": 0.7459333333333333,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Das ist ja ein Superset, das ist schon erledigt.",
+      "start": 3850165,
+      "end": 3852246,
+      "confidence": 0.3976666666666666,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Ihr könnt auch tatsächlich gerne Tummel verwenden und damit macht ihr bestimmt Ingi glücklich, der sich ärgert, dass YAML für einfache Config-Files verwendet wird. Also ärgert euch nicht über YAML, sondern denkt einfach, es ist einfach so mächtig und es hat Vorteile und Nachteile. Es kann vieles und es kann auch Spaß machen.",
+      "start": 3853573,
+      "end": 3871050,
+      "confidence": 0.8233207547169813,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Vielen lieben Dank. Du hast mir auf jeden Fall aufgezeigt, meine Schwäche, obwohl ich ja jeden Tag verwende, wie wenig Ahnung ich eigentlich habe. Es ist ja meistens nur eine halbe Stunde, die man investiert, um den Syntax richtig zu verstehen. Alleine das ist eigentlich schon peinlich, muss ich sagen, dass ich das nicht auf die Reihe bekomme. Aber das werde ich auf jeden Fall mal machen und die ganzen neuen Features schaue ich mir gerne auch mal an, weil das klingt schon nach sehr coolem Zeug, was man auch damit realisieren kann. Abschließend, würdest du jetzt eine API noch wirklich mit YAML bedienen, wo man heutzutage ja überall JSON verwendet, oder würdest du sagen, es macht dann weniger Sinn, wenn man in die Richtung geht?",
+      "start": 3872210,
+      "end": 3909939,
+      "confidence": 0.7741031746031749,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Das kann schon sinnvoll sein, eine YAML-Option zu haben. Also die meisten API-Sachen lassen sich mit JSON ausdrücken, aber eine YAML-Option zu haben, einfach um es lesbarer zu machen, finde ich schon ganz praktisch. Sonst muss ich immer irgendwie mit JQ noch drübergehen.",
+      "start": 3910358,
+      "end": 3924506,
+      "confidence": 0.798348837209302,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Du fährst mit JSON-Buzzer eigentlich, um es lesbarer irgendwie zu machen. Das stimmt, wenn da so ein Zeug daherkommt, ja. Also das sehe ich jetzt auch, könnte natürlich ganz cool sein, da was menschlich Verständliches zu haben, lesbares zu haben.",
+      "start": 3924546,
+      "end": 3936093,
+      "confidence": 0.6923499999999998,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Und wir freuen uns auch, das wollte ich noch erwähnen, wir freuen uns auch, wenn ihr in unseren Matrix-Channel kommt und da Fragen stellt. Das ist jetzt noch nicht so überlaufen. Ja, kommen ab und zu mal ein paar interessante Fragen.",
+      "start": 3936545,
+      "end": 3947849,
+      "confidence": 0.7073170731707316,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Diese Episode zeigt mir immer wieder, wie viel man eigentlich durch die Produktion eines Podcasts und durch so interessante Gäste wie dir, Tina, lernen kann. Am Anfang des Podcasts, also hättest du mich vor zwei Jahren gefragt, lass doch mal über Jammel reden. Hätte ich gesagt, ja, sorry, aber da kriegen wir doch keine halbe Stunde mitgefühlt. Es ist wirklich faszinierend, wie tief diese einzelnen Themen gehen und ich habe gerade auch nochmal die Test Suite aufgemacht und auf der Test Suite gibt es nämlich oben links einen Link, der nennt sich Test Case Sheet und da klickt man da auf Valid und dann kriegt man eine ellenlange Browserseite über alle validen YAML Cases. Ich habe gedacht, ich verstehe was von YAML und jetzt habe ich aufgegeben, nein, ich tue es eindeutig nicht. Ich habe auf jeden Fall eine ganze Menge zu lernen, nicht nur YAML Flow Style, wie wir besprochen haben, sondern auch Tags. Man kann anscheinend mit .binary Datentypen entforcen, wie ich gerade gesehen habe. Wahnsinn. Ja, ich habe ein bisschen Angst, dass ich jetzt YAML overengineere und dann meine Parser in den ganzen Tools auf die Mütze fallen. Aber nun schauen wir mal, wo ich dann lande. Tina, vielen lieben Dank für deine Zeit. Grüße aus dem Ruhrgebiet in die Hauptstadt. Vielen lieben Dank für deine Zeit und habe noch einen schönen Tag.",
+      "start": 3947869,
+      "end": 4028486,
+      "confidence": 0.7471194690265488,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Ja, vielen Dank fürs Zuhören und dass ich hier sein durfte. Danke.",
+      "start": 4028597,
+      "end": 4031923,
+      "confidence": 0.7614166666666667,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Danke. Ciao.",
+      "start": 4031963,
+      "end": 4033205,
+      "confidence": 0.6980000000000001,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Ciao. Bye-bye.",
+      "start": 4033225,
+      "end": 4033786,
+      "confidence": 0.4085,
+      "speaker": "C",
+      "channel": null
+    }
+  ],
+  "confidence": 0.791953931977689,
+  "audio_duration": 3943,
+  "webhook_status_code": null,
+  "webhook_auth": false,
+  "summary": null,
+  "auto_highlights_result": null,
+  "content_safety_labels": null,
+  "chapters": null,
+  "sentiment_analysis_results": null,
+  "entities": null
+}
