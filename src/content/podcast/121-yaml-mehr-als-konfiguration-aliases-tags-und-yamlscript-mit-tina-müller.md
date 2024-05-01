@@ -81,7 +81,7 @@ speaker:
 - name: Wolfi Gassler
   transcriptLetter: B
   website: https://wolfgang.gassler.org/
-- name: Tina Müller
+- name: "Tina M\xFCller"
   transcriptLetter: C
   website: https://www.linkedin.com/in/tina-m%C3%BCller-642931154/
 spotify: https://open.spotify.com/episode/7vy2WEHtQMx8YnmnPMweIp
