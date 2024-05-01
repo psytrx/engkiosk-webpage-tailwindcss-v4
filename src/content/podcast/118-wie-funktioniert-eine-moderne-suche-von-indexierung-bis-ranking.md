@@ -85,7 +85,7 @@ description: "Explain my like i am five: Die Grundlagen moderner Suchen Wir, als
   \ FeedbackEngKiosk Community: https://engineeringkiosk.dev/join-discord\_Email:\
   \ stehtisch@engineeringkiosk.devLinkedIn: https://www.linkedin.com/company/engineering-kiosk/Mastodon:\
   \ https://podcasts.social/@engkioskTwitter: https://twitter.com/EngKiosk"
-google_podcasts: ''
+google_podcasts: https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5yZWRjaXJjbGUuY29tLzBlY2ZkZmQ3LWZkYTEtNGMzZC05NTE1LTQ3NjcyN2Y5ZGY1ZQ/episode/YjM1Y2I0NWYtODAxZC00MjIyLWJkNDYtYjc4ZjM4NmU5Mjcz?sa=X&ved=0CAUQkfYCahcKEwiIjJvY6euFAxUAAAAAHQAAAAAQAQ
 headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts||feedback::Feedback
 image: ./118-wie-funktioniert-eine-moderne-suche-von-indexierung-bis-ranking.jpg
 length_second: 4340
