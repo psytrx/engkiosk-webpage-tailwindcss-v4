@@ -88,10 +88,12 @@ If we aim to upgrade _player.js_, download and replace the minified javascript f
 ## BBC user needs
 
 More information:
+
 - https://mediamakersmeet.com/the-challenge-of-audience-engagement-publishers-experiment-with-6-user-needs-and-other-strategies/
 - https://www.linkedin.com/pulse/bbcs-secret-growth-revolutionary-six-user-needs-ghada-hashish-acca/
 
 User needs:
+
 - Update me
 - Keep me on the trend
 - Give me perspective
