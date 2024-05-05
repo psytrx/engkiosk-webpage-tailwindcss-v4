@@ -75,6 +75,7 @@ const meetupCollection = defineCollection({
 				twitter: z.string().optional(),
 				// string or array of strings
 				linkedin: z.union([z.string(), z.array(z.string())]).optional(),
+				mastodon: z.string().optional(),
 				website: z.string().optional(),
 				bio: z.string().optional(),
 				slides: z.string().optional(),
