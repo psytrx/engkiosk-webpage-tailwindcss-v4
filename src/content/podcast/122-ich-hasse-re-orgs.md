@@ -80,7 +80,11 @@ speaker:
   website: https://wolfgang.gassler.org/
   transcriptLetter: B
 spotify: https://open.spotify.com/episode/2T6zhVOMrE4c88oDL9IsME
-tags: []
+tags:
+- Team
+- Tech Kultur
+- Kommunikation
+- Leadership
 title: '#122 Ich hasse Re-Orgs'
 youtube: https://www.youtube.com/watch?v=rIk4V40L-tA
 
