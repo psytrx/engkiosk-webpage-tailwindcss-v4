@@ -95,3 +95,7 @@ update-missing-tag-descriptions-german-tech-podcast: ## Find all used tags in th
 # Python scripts that don't have a make target yet
 # - transcribe_audio_file.py
 # - transcribe_published_episode.py
+
+.PHONY: export-metadata
+export-metadata: ## Exports all metadata (e.g. for ai pipelines) to a JSON file
+	node scripts/exportEpisodes.js > /tmp/ansager_titel_episodes.json
