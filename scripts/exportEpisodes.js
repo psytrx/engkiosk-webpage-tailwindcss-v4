@@ -48,9 +48,15 @@ const fetchEpisodeMetadata = () => {
 		const data = fs.readFileSync(metadataPath + file, 'utf8')
 		// parse matter
 		const { data: metadata } = matter(data)
+
+		const chapters = metadata.chapter.map(chapter => {
+			return `(${chapter.start}) ${chapter.title}`
+		})
+
 		return {
 			episodeNumber,
-			title: metadata.title
+			title: metadata.title,
+			chapters
 		}
 
 	})
