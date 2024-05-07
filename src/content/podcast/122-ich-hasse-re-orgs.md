@@ -75,8 +75,10 @@ six_user_needs: []
 speaker:
 - name: Andy Grunwald
   website: https://andygrunwald.com/
+  transcriptLetter: A
 - name: Wolfi Gassler
   website: https://wolfgang.gassler.org/
+  transcriptLetter: B
 spotify: https://open.spotify.com/episode/2T6zhVOMrE4c88oDL9IsME
 tags: []
 title: '#122 Ich hasse Re-Orgs'
