@@ -72,7 +72,7 @@ image: ./120-no-code-ist-technische-schuld.jpg
 length_second: 4076
 pubDate: 2024-04-23 04:00:00+00:00
 rtlplus: ''
-six_user_needs: []
+six_user_needs: [ 'Keep me on the trend', 'Give me perspective' ]
 speaker:
 - name: Andy Grunwald
   transcriptLetter: B

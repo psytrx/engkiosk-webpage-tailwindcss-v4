@@ -73,7 +73,7 @@ image: "./121-yaml-mehr-als-konfiguration-aliases-tags-und-yamlscript-mit-tina-m
 length_second: 4039
 pubDate: 2024-04-30 04:00:00+00:00
 rtlplus: ''
-six_user_needs: []
+six_user_needs: [ 'Educate me', 'Inspire me' ]
 speaker:
 - name: Andy Grunwald
   transcriptLetter: A

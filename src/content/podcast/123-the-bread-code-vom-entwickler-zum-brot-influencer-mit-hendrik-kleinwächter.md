@@ -74,7 +74,7 @@ image: "./123-the-bread-code-vom-entwickler-zum-brot-influencer-mit-hendrik-klei
 length_second: 3940
 pubDate: 2024-05-14 04:00:00+00:00
 rtlplus: ''
-six_user_needs: []
+six_user_needs: [ 'Inspire me', 'Amuse/divert me' ]
 speaker:
 - name: Andy Grunwald
   transcriptLetter: A

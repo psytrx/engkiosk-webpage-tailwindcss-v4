@@ -71,7 +71,7 @@ image: ./122-ich-hasse-re-orgs.jpg
 length_second: 4035
 pubDate: 2024-05-07 04:00:00+00:00
 rtlplus: ''
-six_user_needs: []
+six_user_needs: [ 'Give me perspective' ]
 speaker:
 - name: Andy Grunwald
   transcriptLetter: A
