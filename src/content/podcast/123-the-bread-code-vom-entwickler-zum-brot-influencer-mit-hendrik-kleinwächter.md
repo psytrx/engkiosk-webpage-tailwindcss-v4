@@ -86,7 +86,11 @@ speaker:
   transcriptLetter: C
   website: https://www.hkleinwaechter.com/
 spotify: https://open.spotify.com/episode/3pEBDEBuZ77WnLaHembvuM
-tags: []
+tags:
+- Open Source
+- Tech Kultur
+- Side Projects
+- Interview
 title: "#123 The Bread Code: vom Entwickler zum Brot-Influencer mit Hendrik Kleinw\xE4\
   chter"
 youtube: ''
