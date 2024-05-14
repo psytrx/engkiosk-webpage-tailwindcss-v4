@@ -23,7 +23,7 @@ chapter:
   title: Troubleshooting-Guide beim Brot backen
 - start: 01:00:37
   title: Das minimalste Setup um ein Brot zu backen
-deezer: ''
+deezer: https://www.deezer.com/episode/632634252
 description: "Brot backen und Software-Engineering: Wie passt das zusammen? Das Brot\
   \ ist den Deutschen heilig. Manche bezeichnen Deutschland als die Brotnation. Der\
   \ 21. April ist sogar der Tag des Deutschen Brotes. Was es nicht alles gibt. Das\
@@ -71,7 +71,7 @@ google_podcasts: ''
 headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts||feedback::Feedback
 image: "./123-the-bread-code-vom-entwickler-zum-brot-influencer-mit-hendrik-kleinw\xE4\
   chter.jpg"
-length_second: 0
+length_second: 3940
 pubDate: 2024-05-14 04:00:00+00:00
 rtlplus: ''
 six_user_needs: []
@@ -80,7 +80,7 @@ speaker:
   website: https://andygrunwald.com/
 - name: Wolfi Gassler
   website: https://wolfgang.gassler.org/
-spotify: ''
+spotify: https://open.spotify.com/episode/3pEBDEBuZ77WnLaHembvuM
 tags: []
 title: "#123 The Bread Code: vom Entwickler zum Brot-Influencer mit Hendrik Kleinw\xE4\
   chter"
