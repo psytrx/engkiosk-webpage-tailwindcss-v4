@@ -13,6 +13,7 @@ talks:
     bio: 'Nico is an engineering manager at Dynatrace, working with teams building the cloud and CI/CD foundations of an internal developer platform. With a background in robotics and devops, he’s passionate about all things automation and creating software that simplifies life. Nico co-organizes agile and leadership meetups and volunteers at robotics competitions for children.'
     linkedin: 'nico-riedmann'
     website: 'https://riedmann.dev/'
+    slides: '2405-nico-riedmann-retro-patterns.pdf'
   - avatar: '2405-jacob.jpg'
     name: 'Jacob Rief'
     title: 'How to use web components with any CSS toolkit'
