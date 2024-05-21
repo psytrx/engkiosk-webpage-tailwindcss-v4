@@ -80,7 +80,11 @@ speaker:
   transcriptLetter: B
   website: https://wolfgang.gassler.org/
 spotify: https://open.spotify.com/episode/08NNwJIk0jVTZoD7zBIg9C
-tags: []
+tags:
+- Team
+- Tech Kultur
+- Karriere
+- Leadership
 title: "#124 Technische Glaubw\xFCrdigkeit bewahren: M\xFCssen Leads den Code kennen?"
 youtube: https://www.youtube.com/watch?v=SmHYjTQFbmU
 
