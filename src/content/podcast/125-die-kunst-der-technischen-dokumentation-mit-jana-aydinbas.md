@@ -89,7 +89,12 @@ speaker:
 - name: Wolfi Gassler
   website: https://wolfgang.gassler.org/
 spotify: https://open.spotify.com/episode/0y7OB0W7MzrDZvfWcJURLf
-tags: []
+tags:
+- Software Engineering
+- Software Qualität
+- Knowledge Sharing
+- Interview
+- Women in Tech
 title: '#125 Die Kunst der technischen Dokumentation mit Jana Aydinbas'
 youtube: https://www.youtube.com/watch?v=_aVHZ4XGivc
 
