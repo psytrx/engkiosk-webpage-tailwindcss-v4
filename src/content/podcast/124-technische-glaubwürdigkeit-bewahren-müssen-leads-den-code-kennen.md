@@ -65,7 +65,7 @@ description: "Hands-On als Engineering Manager: Yay or Nei?\_ Leute, die einmal 
   \ coffee: https://www.buymeacoffee.com/engineeringkioskEmail: stehtisch@engineeringkiosk.devLinkedIn:\
   \ https://www.linkedin.com/company/engineeringkiosk/Mastodon: https://podcasts.social/@engkioskTwitter:\
   \ https://twitter.com/EngKiosk"
-google_podcasts: ''
+google_podcasts: https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5yZWRjaXJjbGUuY29tLzBlY2ZkZmQ3LWZkYTEtNGMzZC05NTE1LTQ3NjcyN2Y5ZGY1ZQ/episode/NGVlMzkyMDEtMmRkNi00YzA2LThlOTEtNWMxNzVlZTg5OTM4?sa=X&ved=0CAUQkfYCahcKEwjoiKPHhrqGAxUAAAAAHQAAAAAQAQ
 headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts||feedback::Feedback
 image: "./124-technische-glaubw\xFCrdigkeit-bewahren-m\xFCssen-leads-den-code-kennen.jpg"
 length_second: 2991
