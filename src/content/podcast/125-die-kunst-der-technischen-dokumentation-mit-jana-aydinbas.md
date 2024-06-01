@@ -76,7 +76,7 @@ description: "Dokumentation: Jeder braucht sie, keiner will sie schreiben Vielen
   \ a coffee: https://www.buymeacoffee.com/engineeringkioskEmail: stehtisch@engineeringkiosk.devLinkedIn:\
   \ https://www.linkedin.com/company/engineering-kiosk/Mastodon: https://podcasts.social/@engkioskTwitter:\
   \ https://twitter.com/EngKiosk"
-google_podcasts: ''
+google_podcasts: https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5yZWRjaXJjbGUuY29tLzBlY2ZkZmQ3LWZkYTEtNGMzZC05NTE1LTQ3NjcyN2Y5ZGY1ZQ/episode/MTZiYTlmNzYtNzU5MS00MzBkLTk5ZmItZTVlYWE0YWJjZDY4?sa=X&ved=0CAUQkfYCahcKEwjoiKPHhrqGAxUAAAAAHQAAAAAQAQ
 headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts||feedback::Feedback
 image: ./125-die-kunst-der-technischen-dokumentation-mit-jana-aydinbas.jpg
 length_second: 3763
