@@ -65,7 +65,7 @@ description: "Die Umstrukturierung der Firma: Hart f\xFCr alle oder eine neue Ch
   \ a coffee: https://engineeringkiosk.dev/kaffee\_Email: stehtisch@engineeringkiosk.devLinkedIn:\
   \ https://www.linkedin.com/company/engineering-kiosk/Mastodon: https://podcasts.social/@engkioskTwitter:\
   \ https://twitter.com/EngKiosk"
-google_podcasts: ''
+google_podcasts: https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5yZWRjaXJjbGUuY29tLzBlY2ZkZmQ3LWZkYTEtNGMzZC05NTE1LTQ3NjcyN2Y5ZGY1ZQ/episode/MWRmMjFkZGMtMzBjYi00MmYyLWIzNWItMGE3MGE2N2JkNDM2?sa=X&ved=0CAUQkfYCahcKEwiIzoHZh7qGAxUAAAAAHQAAAAAQAQ
 headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts||feedback::Feedback
 image: ./122-ich-hasse-re-orgs.jpg
 length_second: 4035
