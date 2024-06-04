@@ -88,7 +88,10 @@ speaker:
 - name: Wolfi Gassler
   website: https://wolfgang.gassler.org/
 spotify: https://open.spotify.com/episode/4ddRZ5zYA58cK65RTnmjxX
-tags: []
+tags:
+- Software Engineering
+- Software Qualität
+- Interview
 title: '#126 Killing the Mutant: Teststrategien mit Sebastian Bergmann'
 youtube: https://www.youtube.com/watch?v=dZI8Isttx4U
 
