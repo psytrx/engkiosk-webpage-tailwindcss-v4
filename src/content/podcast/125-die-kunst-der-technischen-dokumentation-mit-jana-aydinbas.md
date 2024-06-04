@@ -96,7 +96,7 @@ speaker:
 spotify: https://open.spotify.com/episode/0y7OB0W7MzrDZvfWcJURLf
 tags:
 - Software Engineering
-- Software Qualität
+- "Software Qualit\xE4t"
 - Knowledge Sharing
 - Interview
 - Women in Tech
