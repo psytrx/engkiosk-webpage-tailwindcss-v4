@@ -1,5 +1,5 @@
 ---
-amazon_music: ''
+amazon_music: https://music.amazon.com/podcasts/c35a09fe-4116-4e04-8f68-77d61b112e46/episodes/3e31d20a-6996-4e5a-8b83-b2e5bce69009/engineering-kiosk-126-killing-the-mutant-teststrategien-mit-sebastian-bergmann
 apple_podcasts: https://podcasts.apple.com/us/podcast/126-killing-the-mutant-teststrategien-mit-sebastian/id1603082924?i=1000657748026&uo=4
 audio: https://audio1.redcircle.com/episodes/42539c02-499a-4ed4-84d0-e992116f9a2b/stream.mp3
 chapter:
