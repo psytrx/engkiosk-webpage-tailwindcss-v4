@@ -1,0 +1,1228 @@
+{
+  "language_code": "de",
+  "audio_url": "https://cloud.inlupus.at/s/ExfW4TzDNSXf2WF/download/ep126_testing.mp3",
+  "punctuate": true,
+  "format_text": true,
+  "dual_channel": false,
+  "webhook_url": null,
+  "webhook_auth_header_name": null,
+  "webhook_auth_header_value": null,
+  "audio_start_from": null,
+  "audio_end_at": null,
+  "word_boost": [],
+  "boost_param": null,
+  "filter_profanity": false,
+  "redact_pii": false,
+  "redact_pii_audio": false,
+  "redact_pii_audio_quality": null,
+  "redact_pii_policies": null,
+  "redact_pii_sub": null,
+  "speaker_labels": true,
+  "speakers_expected": 3,
+  "content_safety": false,
+  "content_safety_confidence": null,
+  "iab_categories": false,
+  "custom_spelling": null,
+  "disfluencies": false,
+  "sentiment_analysis": false,
+  "auto_chapters": false,
+  "entity_detection": false,
+  "summarization": false,
+  "summary_model": null,
+  "summary_type": null,
+  "auto_highlights": false,
+  "language_detection": false,
+  "speech_threshold": null,
+  "speech_model": null,
+  "id": "ec828551-34b4-48a4-9ff7-fd58a1bc659a",
+  "status": "completed",
+  "error": null,
+  "utterances": [
+    {
+      "text": "Wenn wir über unit testing sprechen, winken ziemlich viele Softwareentwicklerinnen ab. Laaaaangweilig. Das kenne ich doch schon in und auswendig. Aber in der Praxis lässt dann doch die Anzahl der Tests zu wünschen übrig. Oft unterschätzen wir das Thema Testing. Unit Tests sind halt auch nicht immer der heilige Gral. Oder anders beim unit testing fängt doch erst das ganze Buzzword Bingo so richtig an. Wie sieht es denn aus mit Static Testing, non functional testing, Whitebox Testing, end to end testing, Dynamic Testing oder Integration testing aus? Und hast du eigentlich schon mal von Mutantentests gehört? Und dabei haben wir noch gar nicht die Frage beantwortet, was eigentlich gute Tests sind, wie viele Tests genug Tests sind, wie AI uns helfen kann, bessere Tests zu schreiben oder ob Testing eigentlich moderner Kram ist oder schon seit Anbeginn des Programmierzeitalters eine Rolle gespielt hat. In dieser Episode gibt es einen Rundumschlag zum Thema Testing mit Sebastian Bergmann. Viel Spaß.",
+      "start": 3960,
+      "end": 60740,
+      "confidence": 0.9113433962264148,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Andi. Wir sprechen ja heute über Testing und eigentlich wollte ja starten mit der klassischen Einleitung bzw. Mit der Ausrede, warum wir schon 120 Episoden jetzt ohne Testing ausgekommen sind, dass eigentlich Testing niemand gerne hat und gerne macht und das eigentlich immer so in einer Ecke liegt. Und dann ist mir eingefallen, ich habe mal einen Studenten gehabt, der hat sich auf die Bühne gestellt bei seiner Bachelor Präsentation und hat gesagt ich liebe Testing, ich will mein ganzes Leben testing machen. Man sieht jetzt schon an deinem Gesichtsausdruck, Andi, du kannst es fast nicht glauben, aber es gibt also auch Leute, die testing sehr cool finden. Und ich kenne es ja auch von mir selber, dass ich, wenn Tests dann funktionieren und mich auf irgendwas hinweisen, dass man eigentlich super glücklich ist über diese Tests. Aber dieses Schreiben ist halt doch immer immer noch so eine Sache. Auf jeden Fall haben wir jetzt es geschafft nach 120 Episoden, unsere Schande da mal gleich vorweg, die wir gebraucht haben, bis wir da in das Testing Thema einsteigen. Und Andy, du bist ja auch nicht der absolute Testing König. Du hast gerade in unserem gemeinsamen Podcast mit Index out of Bounds gesagt, guter Code ist für dich, wenn er bei dir irgendwo mal als SRI irgendwie aufsteckt und fehlschlägt. Also da können auch nicht viele Tests im Spiel sein. Und darum ich besonders stolz und happy, dass wir da einen absoluten Spezialisten bei uns begrüßen können. Also ich kenne den Namen Sebastian Bergmann eigentlich auch aus meiner Jugend, wie ich noch der kleine Wolfgang studiert habe und so in dem ganzen PHP Bereich, in den ERN und ERN eingestiegen bin, habe ich den Sebastian nur so auf Büchertitel eigentlich gesehen als Autor. Und heute ist er bei uns im Podcast. Willkommen, Sebastian.",
+      "start": 70320,
+      "end": 168442,
+      "confidence": 0.9085366556291392,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Hallo Wolfgang, hallo Andi, hallo Menschen da draußen. Danke für die Einladung. Schön, dass ich hier sein darf.",
+      "start": 168636,
+      "end": 174166,
+      "confidence": 0.8940033333333334,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Sebastian, dein Name ist kein Unbekannter und wie üblich in diesem Podcast habe ich ein paar Fakten zu dir rausgesucht. Und zwar kommst du aus der Nähe von Bonn, aus Siegburg. Das ist geografisch, ich glaube rechts neben Bonn, wenn man, also ist auf jeden Fall relativ nah an Bonn dran.",
+      "start": 174238,
+      "end": 192302,
+      "confidence": 0.9481692156862743,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Geografisch rechts ist schon mal super. Osten heißt es.",
+      "start": 192446,
+      "end": 197050,
+      "confidence": 0.9135522222222223,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Du bist ein Urgestein in der PHP Community. Du bist der Autor, ich glaube des de facto einzigen, aber auch Standard PHP Testing Framework, PHP Unit. Und das zwar schon seit 20 Jahren, als ich das heute recherchiert habe. Das erste Release war am fünfzehnter Mär. 2004. Also erstmal herzlichen Glückwunsch zum jährigen in dem Bereich. Und da habe ich mich auch gefragt Wow, wie kann man sich eigentlich 20 Jahre auf ein Projekt fokussieren und begeistern? Also da ziehe ich meinen Hut vor. Kommen wir gleich noch zu. Du bist Autor bzw. Co Autor von diversen Büchern. Die genaue Anzahl konnte ich gar nicht finden. Es sind mindestens vier auf jeden Fall. Ich denke aber, es sind irgendwas so real um die sechs bis acht von meiner Recherche her. Du bist Co Gründer oder Co Founder von der PHP Consultant Consultant Company, the PHP CC. Und wie ich im Vorgespräch erfahren habe, hast du deine Wurzeln bei der Programmierung auf dem Amiga und du besitzt einen Amiga mit HDMI Anschluss. Und meine erste Frage ist, wie oft schaust du denn Filme auf dem Amiga? Das bedeutet, wie oft nutzt du denn wirklich diesen HDMI Anschluss? Oder hast du da nicht noch so einen alten. Richtig CRT Monitor mit VGA oder was war vor VGA?",
+      "start": 197910,
+      "end": 282030,
+      "confidence": 0.908429488372093,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Vor VGA weiß ich nicht. Der Amiga hat so ein komisches d Sub irgendwas, Videoausgang analog. Den habe ich aber jetzt die letzten 10 Jahre, wo ich wieder was mit dem Amiga mache, nicht mehr benutzt, weil mein alter CAT Monitor ist kaputt. Der war damals schon in den ERN kaputt und ich habe ihn trotzdem verwendet, weil ich habe den mal reparieren lassen, aber der hat halt in der Mitte so einen 2 cm Durchmesser schwarzen Fleck, weil da mal die Kathodenröhre durchgebrannt ist. Und das ist nicht schön und das hat damals vor allem auch nicht gut gerochen, als das passiert ist.",
+      "start": 282570,
+      "end": 317992,
+      "confidence": 0.9352447115384616,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Aber im Sinne von Sustainability und alles wirklich bis zum Ende zu nutzen. CRT Monitore kann man ja wirklich noch aufschrauben und reparieren, oder? Da gibt es die Möglichkeit ja noch.",
+      "start": 318176,
+      "end": 329116,
+      "confidence": 0.8968687096774192,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Der ist repariert und der würde funktionieren, aber du musst halt, also damit du da wieder alles sehen könntest, müsstest du halt ein passendes Glas finden, wo nicht, weil das, was da gebrannt hat, das hat das Glas so kaputt gemacht, dass man da das Glas austauschen müsste. Und Das passende Glas findest du nicht.",
+      "start": 329308,
+      "end": 346100,
+      "confidence": 0.9518974545454545,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Aber du schaust keine Filme drauf, oder? Da merkt man, dass Andy sehr jung ist, dass er nicht weiß, dass Amiga wahrscheinlich nicht fähig ist, Filme zu schauen, oder?",
+      "start": 346180,
+      "end": 354228,
+      "confidence": 0.9018051724137931,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Naja, ich könnte Filme auf dem Amiga schauen, aber wirklich wollen will ich das nicht. Aber der Amiga ist natürlich in der Filmbranche eine feste Größe gewesen zu seiner Blütezeit. Also es gibt diverse Fernsehserien und Kinofilme, wo mit dem Amiga die Spezialeffekte gemacht wurden zum einen und wo beispielsweise mit Amigas am Set die Kamerafahrten für so Miniature shots, also für Practical Effects programmiert und durchgeführt wurden.",
+      "start": 354284,
+      "end": 383602,
+      "confidence": 0.9317233823529413,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Aber könnte man wirklich live jetzt irgendwie ein Video abspielen auf dem Amiga? Würde das schaffen, leistungstechnisch?",
+      "start": 383666,
+      "end": 389488,
+      "confidence": 0.8578764705882351,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Du kannst MP Audio ohne Probleme auf meinem Rechner abspielen und du könntest auch kleinere Videos abspielen, also moderne MPEG Videos. Damals hab ich was gelernt. Also damals gab es ganz viel so Zeichentrick Animationsfilme, die konnte man auch sinnvoll in dreiig FPS oder mehr ohne großen Hardwareaufwand abspielen. Aber das waren natürlich keine echten Filmproduktionen oder so, sondern es war so Dinge aus der Szene.",
+      "start": 389544,
+      "end": 414822,
+      "confidence": 0.8659106060606061,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Und dass du da jetzt kleine Videos drauf abspielen kannst, ist limitiert bei dem Arbeitsspeicher oder bei der Festplatte oder bei der Grafikkarte, oder? Nee, bei der Grafikkarte kannst du eigentlich nicht.",
+      "start": 415006,
+      "end": 425582,
+      "confidence": 0.8945424999999998,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Nee, also durch die CPU würde ich glaube ich sagen. Also ich habe es jetzt nicht versucht, also weil mich interessieren einfach andere Dinge. Also der Retro Computing ist ja so der Eskapismus aus der Entity Fication der IT, wie wir sie heute teilweise haben. Und das macht man ja, oder ich mache das zumindest, um die Dinge noch mal wieder zu erleben, so wie sie damals waren, was ich damals gemacht habe und jetzt nicht zwingend Dinge zu tun, die ich heute auch mit anderen Geräten tun könnte. Also so kann ich beispielsweise mit einem meinem Amiga 1200 übers WLAN ins Internet gehen, hier bei mir im Haus. Aber das möchte ich eigentlich nicht, weil wenn ich an der Kiste bin, möchte ich das tun, was ich damals getan habe. Und das sind meine alten Programme für Erweiterung von Mailbox Software. Mir mehr anschauen, mich darüber wundern, wie wenig der 13 jährige Sebastian damals über sinnvolle Softwareentwicklungen wusste und schauen, wie das damals alles so funktioniert hat. Also das ist, was mich interessiert.",
+      "start": 425606,
+      "end": 484538,
+      "confidence": 0.9176555747126438,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Diese Software, die du damals geschrieben hast, hat die heutzutage Tests?",
+      "start": 484634,
+      "end": 487714,
+      "confidence": 0.9580763636363637,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Nein.",
+      "start": 487802,
+      "end": 488510,
+      "confidence": 0.99289,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Gibt es kein PHP Testing Framework für den Amiga? Das wollte ich jetzt nicht fragen.",
+      "start": 489050,
+      "end": 493538,
+      "confidence": 0.9438146666666667,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Ich habe PHP Unit auf meinem Amiga 1200 lauffähig, eine ganz alte Version. Das ist phpunit zwei Punkt irgendwas. Also die letzte Version von PHP Unit zweite, die noch mit PHP vier funktioniert hat, weil PHP vier ist die letzte Version von PHP, für die es offizielle Binarys gibt für den Amiga.",
+      "start": 493594,
+      "end": 514970,
+      "confidence": 0.8900478846153845,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Das ist eine schöne Geschichte.",
+      "start": 515270,
+      "end": 516526,
+      "confidence": 0.9905079999999999,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Ich habe auch MySQL 322 auf meinem Amiga, wenn ich das möchte. Und ein apache 1. Mär.",
+      "start": 516558,
+      "end": 522214,
+      "confidence": 0.8680317647058826,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Also einen klassischen Lamp Amiga dann.",
+      "start": 522302,
+      "end": 524454,
+      "confidence": 0.8368883333333333,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Genau. Ich habe damals tatsächlich meine erste Webseite auf dem Amiga gebaut in HTML. Da gab es noch kein CSS, da gab es noch kein JavaScript. Und als das mit PHP losging, habe ich tatsächlich auch ein bisschen mit PHP auf dem Amiga programmiert. Also der Anfang, dass ich mit PHP angefangen habe zu programmieren, das war so diese Übergangsphase, wo ich schon meinen ersten PC hatte. Den habe ich 1998 im Herbst mir geholt erst und aber noch fast täglich meinen Amiga benutzt habe für andere Dinge. Ja, bin ich dann mit dem Amiga übers Modem, habe ich irgendwelche Mailboxen angerufen, um mit Freunden zu chatten und Dinge zu tun und bin aber auch schon mit dem PC über dasselbe Modem ins Internet gegangen, um E Mail und was auch immer zu machen. Also e Mail war so eines der ersten Dinge, die ich damals vom Amiga auf den PC migriert habe. Von Yam Yet another Mailer auf Netscape Messenger auf dem PC. Und Yam, diese e Mail Software, die wird heutzutage immer noch weiterentwickelt. Die ist nach wie vor, also damals war sie Shareware, heute ist sie Open Source. Die wird auf GitHub entwickelt und jedes Mal, wenn gepusht wird, läuft da tatsächlich eine CI Pipeline, die die c Quellen übersetzt, die automatisierten Tests ausführt in einem emulierten Amiga in der GitHub Action.",
+      "start": 524542,
+      "end": 610700,
+      "confidence": 0.9097296888888887,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Ja, ich würde sagen, wenn man solche Bild Pipelines inzwischen auf GitHub Actions betreibt, das ist wirkliches Retro Cloud Computing, man so möchte. Kommen wir mal zu dem Projekt, was dich seit 20 Jahren beschäftigt.",
+      "start": 611040,
+      "end": 624418,
+      "confidence": 0.8786294285714287,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Ich muss dich leider unterbrechen. Ich wollte, also jetzt muss ich, eben habe ich mich noch darum gedrückt. Ich muss dich leider korrigieren. Es sind 25 Jahre.",
+      "start": 680474,
+      "end": 688682,
+      "confidence": 0.8659311111111111,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "25. Was habe ich verpasst?",
+      "start": 688786,
+      "end": 690842,
+      "confidence": 0.983538,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Also ich habe 2000 angefangen, an PHP Unit zu arbeiten und die ersten Check ins Inversionskontrolle, weil ich mich die ersten Monate nicht getraut habe, das mit der Welt zu teilen, weil ich tatsächlich geglaubt habe, außer mir interessiert es niemanden und ist für niemanden niemanden. Gut. Die ersten Check ins in CVS PHP Net, den CVS Server des PHP Projekts damals, das war irgendwann 2000 erste und da gab es dann auch die erste Version. Ist halt immer so eine Sache, wie du darauf schaust. Wann ist denn die erste richtig sinnvolle Version veröffentlicht worden? Das wird irgendwo zwischen 20 und 25 Jahren gewesen sein.",
+      "start": 690906,
+      "end": 732640,
+      "confidence": 0.8958620754716983,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Vor allem ist ja interessant, weil man nämlich sich das ganze ansieht. 97 ist kenned back mit mit Junit um die Ecke gekommen. Also du warst ja wirklich extrem früh dran. Diese ganze Testingzeit ist Ende der er Anfang 2000 eigentlich aufgekommen. Ich kann mich nur erinnern, wir hatten da einen Professor, der sehr modern unterwegs war und da schon mit XP und so weiter jetzt experimentiert hat und uns da natürlich das auch reingedrückt hat. Und das war eigentlich immer so mein Gefühl. Zu dieser Zeit hat man gesagt okay, dort draußen wird nirgends getestet und ihr müsst mehr testen und man muss testen, testen, testen und es will aber keiner. Hast du das Gefühl, dass sich das jetzt geändert hat? 25 Jahre später sind Tests der absolute Standard geworden in der Industrie? Oder ist es immer noch so, dass man den Leuten sagen muss Test, Test?",
+      "start": 732800,
+      "end": 776240,
+      "confidence": 0.9324264864864867,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Komme ich gleich darauf zurück. Ich erlaube mir einen ganz kurzen Exkurs, denn es ist ganz lustig. Vor ein paar Jahren sind Forschende in den USA in Altersheime gegangen und haben noch lebende Softwareentwicklerinnen gefragt, die bei der NASA in den ERN und ERN gearbeitet haben, wie die gearbeitet haben. Und die Antworten, die waren sehr überraschend. Die haben nämlich wir haben in kurzen Iterationen gearbeitet. Wir haben zwei Iterationen am Tag gemacht. Wir hatten zwei Daily Stand ups. Wir haben uns zum Frühstück getroffen, haben uns erzählt, was wir am Nachmittag vorher gemacht haben, was wir jetzt am Vormittag vorhaben, wo es gerade hakt und haben sich dann zum Mittagessen getroffen und das wiederholt. Die haben meistens in Paaren gearbeitet und die haben testgetrieben gearbeitet. Die haben zuerst die Tests geschrieben und dann den Produktivcode. Und auf die völlig überraschte Frage der Forschenden, die die Interviews geführt haben, warum sie das gemacht haben, war ja, wie hätten wir es denn sonst machen sollen? Alles andere ergibt keinen Sinn. So haben wir es gelernt von John von Neumann, also dem Erfinder der von Neumann Architektur Architektur, wie unsere CPUs und Computer heute immer noch funktionieren. Und da hat sich jeder dran gehalten und das ist vergessen worden. Insofern Ende der er Jahre, wissen wir mittlerweile, ist das wiederentdeckt worden. Damals haben Erich Gamma, Kent Beck, Robert C. Martin und andere zu Recht vermutlich gedacht und geglaubt und darüber geschrieben und gesprochen, dass sie das entdeckt haben. Populär ist es ja alles geworden in diesem Chrysler Comprehensive Compensation Project. Ende der er das ist eine sehr gut dokumentierte Projektrettung in diversen Artikeln und Büchern. Und da haben die genannten Menschen halt zum ersten Mal dann ihre Ideen, die sie damals als sehr extrem wahrgenommen haben und dann auch extrem formuliert haben, mit so Dingen wie Pair Programming und Test Driven Development experimentiert und konnten dadurch tatsächlich das Projekt retten. Live gegangen ist es dann trotzdem nie, weil Daimler Chrysler gekauft hat und Daimler gesagt hat, wir haben eine funktionierende Payroll Software, dieses Projekt da brauchen wir nicht.",
+      "start": 776540,
+      "end": 918158,
+      "confidence": 0.9148941329479765,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Das ist aber jetzt mal eine super interessante Frage. Wenn das damals, also wenn das eigentlich der normale Standard ist und jetzt gar nicht, ich sag mal, der moderne Hype von Leuten, die das aufgetrieben haben, dann ist natürlich jetzt mal eine interessante Studie, die ich gerne lesen würde, ob das der Hauptgrund ist, warum jetzt immer noch diese Software, die damals geschrieben wurde, auf irgendwelche Satelliten rumtourent und so weiter. Da war ja, ich glaube vor kurzem ein Artikel, dass sie auf die Voyager irgendwie so ein Bugfix deployen mussten, Software von 1989 87 oder ähnliches. Und da würde mich natürlich schon mal interessieren, hat diese Art von Entwicklung, dieses zweimal pro Tag Stand up und so weiter und so fort, da ein effektiven Qualitätsmerkmal? Also ist das der Grund, warum diese Satelliten heute noch laufen? Keine Ahnung.",
+      "start": 918294,
+      "end": 964990,
+      "confidence": 0.9214824460431653,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Also ich würde vermuten, dass es zumindest ein kontribuierender Faktor ist. Ob es das jetzt das alleinige Grund ist, weiß ich nicht. Mir wäre da keine Studie oder Artikel oder so dazu bekannt, wo das untersucht worden wäre. Aber ja, auch ich würde mich dafür sehr interessieren, finde ich spannend. Aber wir haben es halt vergessen. Genau wie sich andere Dinge in der Softwareentwicklung seit damals geändert haben. Ja, also damals waren waren es hauptsächlich Frauen, die programmiert haben, aus dem ganz einfachen, völlig falschen Grund, aber aus dem einfachen Grund, dass die Männer gesagt ja, wir machen die richtige Arbeit, wir erfinden und bauen die Maschine und das Programmieren der Maschine ist genauso eine niedere Tätigkeit wie die einer Sekretärin, die auf die Schreibmaschine haut. Und erst als sich das in den folgenden 10 1520 Jahren änderte, dass man erkannt hat, Softwareentwicklung ist auf einmal doch etwas Wertvolles, das ist nicht eine stupide Arbeit, haben die Männer sehr schnell, sehr intensiv dieses Arbeitsfeld, den Frauen weggenommen und unattraktiv gemacht. Und unter den Folgen davon leiden wir.",
+      "start": 965070,
+      "end": 1034468,
+      "confidence": 0.9447041807909601,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Heute noch 25 Jahre, nicht 20 Jahre. Es tut mir leid. Ich habe die Information von Wikipedia und dort steht das Datum des ersten Erscheinungsjahres.",
+      "start": 1034484,
+      "end": 1044068,
+      "confidence": 0.9474031999999997,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Ich habe, Entschuldigung, wenn ich unterbreche, ich habe vor vielen Jahren mal versucht, den Wikipedia Eintrag zu korrigieren und das wurde rückgängig gemacht und mir wurde gesagt, ich als beteiligte Person darf den Eintrag nicht editieren.",
+      "start": 1044164,
+      "end": 1057614,
+      "confidence": 0.9165527777777775,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Okay, das können wir ja dann gerne übernehmen im Nachgang, gar kein Problem.",
+      "start": 1057782,
+      "end": 1062690,
+      "confidence": 0.8996653846153848,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Wenn wir jetzt mal über das Thema Testing sprechen, da spreche ich jetzt nicht im partiellen über unit testing, sondern generell über die Buzzwords, die mit Testing verbunden werden. Wenn ich jetzt einmal nun mal google, dann kommen mir wirklich Wörter auf den Screen. Static Testing, Dynamic Testing, Functional Testing, Non Functional Testing, Blackbox, Whiteboard, unit testing, manual testing, Automated Testing, Integration Testing, end to end testing. Und ich glaube, wenn ich weiter google, dann finde ich noch mehr.",
+      "start": 1063470,
+      "end": 1094546,
+      "confidence": 0.8991288607594934,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Machst du da gerade eine Bingo Karte voll, Andi?",
+      "start": 1094658,
+      "end": 1096802,
+      "confidence": 0.9228999999999998,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Ja, mit der Podcast Episode veröffentlicht die Bingo Karte und dann können wir mal schauen, wann die voll ist. Jetzt kann das ja nicht alles eine Art von Programmierung sein, sondern ich gehe stark davon aus, die ganzen Buzzworde, die ich gerade genannt habe, ist irgendwie ein Mix zwischen Methoden und Ansichtsweisen und was testet man und was nicht. Kannst du uns diese ganzen Begriffe, ich sag mal so ein bisschen schubladen technisch kategorisieren, dass wir auf jeden Fall mal irgendwie so ein Modell haben und sagen, okay, wir können wenigstens ein bisschen.",
+      "start": 1096906,
+      "end": 1126352,
+      "confidence": 0.9110551612903227,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Das kann ich auf jeden Fall gerne versuchen. Und ich glaube, Schubladen und Kategorien sind da schon die richtigen Wegweiser in diese Diskussion. Denn bei vielen dieser Begriffe, die du gerade genannt hast, Andy, geht es darum zu versuchen, eine Einordnung entlang unterschiedlicher Achsen für die unterschiedlichen Arten von Tests zu finden, die wir bei der Softwareentwicklung machen können. Fangen wir an mit statischen Tests versus dynamische Tests. Was diese Begrifflichkeiten eigentlich nur aussagen, ist, bei einem statischen Test teste ich meine Software, ohne dass ich sie ausführe. Ich benutze also ein Werkzeug, das auf welche Art auch immer sich den Code, den Quelltext, den Programmcode meiner Software anschaut und bewertet. Das kann sein, hey, du hast hier die Coding Guidelines verletzt, wir wollen Spaces und keine Tabs und die geschweiften Klammern hätten wir gerne so und überhaupt hätten wir in dem Quelltext einer Klasse gerne zuerst die Public Methoden, dann die Protected Methoden und ganz unten die private Methoden. Das ist eine Art von statischem Testen. Eine andere Art von statischem Testen könnte sein, dass ich mir die Typdeklarationen anschaue in meiner Software. Also welche Parametertypen erwartet eine Funktion oder Methode, welchen Rückgabewert gibt diese Methode zurück? Und dann kann ich mir anschauen, alle Stellen in meiner Software, wo diese Methode aufgerufen wird und kann in sehr, sehr, sehr vielen Fällen, kommt natürlich auch auf die Programmiersprache an, ohne dass ich die Software ausführe, eine Entscheidung treffen. Jawohl, ich habe keine Verletzung meines Typsystems, ich rufe nirgendwo eine Methode mit dem falschen Typ auf und ich gehe nirgendwo mit dem Rückgabewert einer Methode falsch um und kann damit ohne Ausführen der Software, also noch nicht mal zum Testzweck ausgeführt, die Software eine Aussage darüber treffen, dass ob und wenn ja, wo bestimmte Klassen von Fehlern in meiner Software sind. Und das ist schon sehr mächtig, weil das vor allem auch sehr schnell geht und sehr zuverlässig geht.",
+      "start": 1126456,
+      "end": 1263898,
+      "confidence": 0.9286203459119499,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Das heißt, wenn jetzt mein TypeScript Compiler mir da irgendwas ausspuckt, dann ist es eigentlich auch schon ein Test.",
+      "start": 1264074,
+      "end": 1270378,
+      "confidence": 0.8975521052631579,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Ja, das kommt halt darauf an, durch welche Brille du da drauf schaust. Also gerade wenn das beim Compiler passiert, also im Compiler passiert, dann kannst du dir jetzt aussuchen, ob das das Durchsetzen einer Regel der Sprache durch den Compiler für die Sprache ist oder ob das Testen basierend auf statischer Code Analyse ist. Beim Compiler ist das immer ein bisschen schwierig zu unterscheiden, weil es halt sehr ähnliche Dinge sind, die zur gleichen Zeit dann da passieren. Im konkreten Fall von TypeScript, das ist ja, TypeScript ist ja ein Superset von JavaScript und da ist ja zwischengeschaltet eine Code Transformation. Da passiert statische Analyse und die wird dir dann anstelle sagen, hier, da hast du eine Verletzung des Typsystems, mach das heile, mach das richtig und versuch es noch mal.",
+      "start": 1270554,
+      "end": 1319162,
+      "confidence": 0.8967070454545453,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Und Dynamic Testing wäre dann alles, was mit der Ausführung an sich zu tun hat.",
+      "start": 1319226,
+      "end": 1323530,
+      "confidence": 0.9767913333333331,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Ganz genau. Dynamic Testing ist all das, was nicht Static testing ist. Das ist ja das Schöne bei solchen gegensätzlichen Kategorisierungen. Und dabei ist es völlig egal, welchen Aspekt ich testen möchte meiner Software, außer um diesen Aspekt zu testen, muss ich die Software ausführen. Das kann ich tun, um korrektes Verhalten zu überprüfen. Da sind wir bei den klassischen Unit Tests, end to end Test, Integrationstests, Akzeptanztests, welche Labels wir da alle dran pappen müssen. Zu den einzelnen Begriffen komme ich gleich noch. Ich kann mit dynamischen Tests aber auch andere Eigenschaften meiner Software überprüfen. Also Performance, Skalierbarkeit, funktioniert sie auf unterschiedlichen Plattformen mit unterschiedlichen Versionen von irgendwelchen Abhängigkeiten oder oder oder, sodass wir da ziemlich schnell zu anderen Kategorisierungen kommen. Also warum teste ich hier eigentlich, was mache ich hier gerade? Functional Testing oder Non Functional testing?",
+      "start": 1323570,
+      "end": 1384000,
+      "confidence": 0.918159496402878,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Functional Testing wäre dann jetzt wirklich, ich sag mal so das klassische Beispiel von okay, ich habe eine Funktion, die addiert zwei Zahlen. Functional testing ist dann kommt dann die Summe bei raus und non functional wäre dann in diesem Fall die Performance z.b. ganz genau.",
+      "start": 1384340,
+      "end": 1395560,
+      "confidence": 0.9065063043478261,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Also mit non functional tests testest du die Einhaltung von Qualitätszielen, die du dir für deine Software gegeben hast, wenn die.",
+      "start": 1395720,
+      "end": 1407288,
+      "confidence": 0.9133809523809523,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Realität doch mal so aussehen würde, dass diese immer existieren.",
+      "start": 1407304,
+      "end": 1410304,
+      "confidence": 0.9478909999999999,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Das ist ja genau, also die müssen halt existieren, damit du sie überprüfen kannst und sie sind auch nur dann sinnvoll, wenn sie überprüfbar sind. Und das Überprüfen von solchen nicht funktionalen Anforderungen und ich hasse diesen Begriff, ich hasse ihn so sehr, weil es sind natürlich nicht die Anforderungen dafür, dass die Software nicht funktioniert, sondern es ist halt all das, was ich testen kann, was nichts mit dem korrekten Funktionieren zu tun hat. Deswegen mag ich persönlich den Begriff der Qualitätsziele viel lieber als nicht funktionale Anforderungen.",
+      "start": 1410392,
+      "end": 1442850,
+      "confidence": 0.9434562921348314,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Obwohl man natürlich sagen muss, dass heutige Applikationen, wenn die jetzt sag mal, nicht performant sind und schnell sind für den Kunden, ja eigentlich aus Kundenbrille nicht funktionieren, weil sie sind ja langsam und dann springen die ab und allem drum und dran. Ich meine, das ist ja, man könnte jetzt glaube ich sehr, sehr lange darüber diskutieren, ob Performance jetzt ein functional requirement ist, aber in dem Sinne von okay, kommt da jetzt die Summe von zwei Zahlen raus, das ist natürlich schon was anderes.",
+      "start": 1443150,
+      "end": 1467924,
+      "confidence": 0.8928399999999997,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Ja, ist halt ein ein Prioritätsthema auch was, was priorisierst du jetzt höher? Und ich würde sagen, mir ist kein Fall bis jetzt bekannt gewesen, wo Performance höher priorisiert gewesen wäre als korrektes Funktionieren. Deswegen würde ich immer zuerst schauen, dass es korrekt funktioniert und dann schauen, können wir es noch bei irgendwelchen Qualitätszielen besser machen.",
+      "start": 1468012,
+      "end": 1488898,
+      "confidence": 0.9212860714285716,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Wenn wir jetzt beim Funktionieren bleiben und eine Stufe höher gehen, dann kommen wir da irgendwo Richtung Blackbox. Schwieriges Wort. Blackbox Testing. Ist es eigentlich dasselbe wie End to End Tests oder gibt es da auch einen Unterschied?",
+      "start": 1488994,
+      "end": 1502082,
+      "confidence": 0.9085518421052633,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Das kommt drauf an.",
+      "start": 1502226,
+      "end": 1503630,
+      "confidence": 0.8804400000000001,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Wie immer in der Informatik.",
+      "start": 1504010,
+      "end": 1505418,
+      "confidence": 0.99613,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Ja, wie immer in der Informatik. Es ist kompliziert. Nein, eigentlich ist es nicht kompliziert. Es sind überlappende Begriffe, wo es auf die Perspektive darauf ankommt, wie du gerade auf deinen Test schaust. Also fangen wir an mit Black Box versus Whitebox. Das meint eigentlich nichts anderes, wie viel wissen darf ich als Person, die gerade einen Test formuliert oder einen Test ausführt, über die getestete Software mitbringen? Das ist eine oder ein Erklärungsansatz davon. Ein anderer wä bin ich eigentlich festgelegt da drauf, wenn meine Anwendung in einer bestimmten Programmiersprache geschrieben ist, dass ich den Test in derselben Programmiersprache formuliere? Wenn meine Anwendung in PHP beispielsweise implementiert ist, dann ist es sehr naheliegend, dass ich meine Unit Tests, die ja auf Code Ebene meinen Produktivcode testen und mit denen in derselben Programmiersprachen Runtime interagieren, dass ich die Tests auch in PHP schreibe. Ich habe es in all den Jahren, in denen ich jetzt zum Thema Testen unterwegs bin, ein einziges Mal erlebt, dass Unit Tests für eine PHP Anwendung geschrieben worden sind. Nicht in PHP und nicht mit phpUnit dann, sondern da hatte jemand, weil er nicht wusste, dass es PHP Unit gibt, eine Extension verwendet, mit der man Perlcode in der PHP Runtime ausführen kann und PHP Code in der Perl Runtime ausführen kann und hat dann die Tests in Perl geschrieben für seine PHP Anwendung. Aber das ist Einzelfall, das lassen wir mal beiseite. Anekdotisches Wissen, lustig, aber nicht relevant.",
+      "start": 1505474,
+      "end": 1606936,
+      "confidence": 0.9095181481481479,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Sorry, darüber möchte ich gerne wirklich einen Blogpost lesen, weil ich denke, der wird auf Reddit steil gehen. Ich glaube, der wird auf Hacker News steil gehen. Allein diese Kreativität, da muss man ja immer den Hut vollziehen.",
+      "start": 1607048,
+      "end": 1616530,
+      "confidence": 0.8709657894736842,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Und das war bei einem Unternehmen, das eigentlich jeder kennt, aber mehr darf ich dazu leider nicht sagen. Genau. Je größer mein Test ist, wir werden nachher noch über Größe von Test reden, weil das vermutlich die wichtigste Kategorie Rimension ist für Tests. Je größer der Test wird, desto unwichtiger wird es, dass mein Test in derselben Programmiersprache steht. Ist ja. Also wenn ich jetzt wirklich in Richtung end to End Test gehe und Fragen beantworten will, wie funktioniert meine Anwendung als Ganzes, da ist es völlig egal, in welcher Programmiersprache meine Web Anwendung beispielsweise implementiert ist. Dann nehme ich halt heutzutage Playwright. Und dem Playwright ist es völlig egal, was für eine Programmiersprache da auf dem Server läuft, wo der HTTP Request hingeschickt wird. Solange da eine HTTP response zurückkommt, kann ich das mit Playwright testen.",
+      "start": 1616690,
+      "end": 1669656,
+      "confidence": 0.9044217518248174,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Also Playwright zur Erklärung ist eine Oberflächentest Framework, wo ich Klicks simulieren kann und solche Dinge im Browser.",
+      "start": 1669728,
+      "end": 1676480,
+      "confidence": 0.8986216666666669,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Genau. Standardlösung, aktuell Open Source für das Testen von Web Anwendungen im end to end kontext.",
+      "start": 1676560,
+      "end": 1684248,
+      "confidence": 0.908499375,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Also das moderne Selenium sozusagen.",
+      "start": 1684384,
+      "end": 1686888,
+      "confidence": 0.9747579999999999,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Oder sowas wie Selenium und nur 20.",
+      "start": 1686944,
+      "end": 1690032,
+      "confidence": 0.9268357142857143,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Jahre weiter mit einem Headless Browser sind wahrscheinlich dann irgendwie, oder?",
+      "start": 1690096,
+      "end": 1694496,
+      "confidence": 0.7559081818181818,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Ganz ehrlich, ich habe mir noch nie angeschaut bei Playwright, wie das tatsächlich unter der Haube funktioniert.",
+      "start": 1694688,
+      "end": 1699968,
+      "confidence": 0.875765294117647,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Also es kann auf jeden Fall Headless Chrome, das weiß ich, aber keine Ahnung, ob man darauf. Ich glaube, man kann auf Firefox hochfahren. Ich glaube, das geht alles im Prinzip.",
+      "start": 1700064,
+      "end": 1709454,
+      "confidence": 0.9251422580645163,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Vermutlich ja. Also damals, als Selenium rauskam und das Thema, wir können unseren Browser fernsteuern für end to End Tests, da war ich so enthusiastisch und interessiert und habe mir angeschaut, wie das im Detail funktioniert. Das habe ich jetzt bei Playwright noch nicht gemacht.",
+      "start": 1709502,
+      "end": 1724470,
+      "confidence": 0.9441813333333332,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "So eine klassische Frage, die sich mir immer wieder stellt, ist auch der Unterschied zwischen Integration und end to End Tests, weil das ja sehr, sehr ähnlich klingt. Gibt es einen Unterschied oder sind es nur unterschiedliche Wörter, die ich selber eigentlich mache?",
+      "start": 1724590,
+      "end": 1737946,
+      "confidence": 0.9269806976744187,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Da sind wir bei den Größen von Tests hauptsächlich. Also wir können ja ganz klein testen, eine Code Einheit isoliert von all ihren Abhängigkeiten. Dann hätten wir den klassischen Unit Test. Wir können end to end testen, das ist am anderen Ende des Spektrums, wenn das Spektrum die Größe des Tests ist. Und einen end to end Test kann ich mit unterschiedlichen Zielsetzungen ausführen. Den kann ich ausführen, um beispielsweise nicht funktionale Anforderungen, ah, da war es wieder, Qualitätsziele zu verifizieren. Ja, wenn ich hier ein Request schicke, wie lange dauert es denn eigentlich, bis der Response kommt? Und ist das mit meinem SLA kompatibel? Bin ich da fein oder muss ich da was optimieren? Ich kann so einen end to End Test aber auch ausführen und das kann der Akku der exakt selbe end to End Test sein, um die Frage zu beantworten, funktioniert meine Software hier gerade korrekt? Ja, dann würde ich den end to end Test ausführen, um Akzeptanzkriterien zu überprüfen und dann würde man von einem Akzeptanztest sprechen. Ja, ihr seht, es ist schwierig, weil für exakt denselben Test kann es mehrere Wörter geben oder Begrifflichkeiten geben, je nachdem, welcher Aspekt mich an dem Test gerade interessiert. Und das kann man runterbrechen auf fünf unterschiedliche Fragen, die man mit so einem Test beantworten kann. Was will ich mit dem Test erreichen? Will ich überprüfen, dass etwas schnell genug ist, dass etwas portabel ist, dass etwas einfach zu verwenden ist, dass etwas korrekt funktioniert? Wie viel Code muss ich ausführen, um das zu verifizieren, was mich gerade interessiert? Reicht es, wenn ich paar Zeilen Code ausführe? Ja, dann mache ich doch bitte, bitte, bitte einen Unit Test. Dann auch sehr präzises Feedback gibt, weil je weniger Code ich ausführe, ja, desto schneller ist der Test noch in der Ausführung. Das ist schön, aber das ist Bonus. Das Hauptaugenmerk ist darauf, je weniger Code ich ausführe, desto weniger Code muss ich mir anschauen bei der Fehlersuche, wenn der Test denn mal fehlschlägt. Ja, und wenn ich eine Frage, die mich brennend interessiert, über meine Software mit einem Unit Test beantworten kann, da bin ich sehr gut beraten, wenn ich das tue.",
+      "start": 1737978,
+      "end": 1871778,
+      "confidence": 0.9196324517906328,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Also umso kleiner, umso besser im Normalfall. Aber es ist halt auch zeitaufwendiger höchstwahrscheinlich, weil ein end to End Test ist halt schnell geschrieben und testet eben vielleicht im Idealfall ganz viel, was darunter liegt.",
+      "start": 1871894,
+      "end": 1883682,
+      "confidence": 0.913403142857143,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Das hast du sehr schön formuliert. Es kommt halt darauf an, was ich optimieren will. Also wenn ich noch gar nichts habe und möglichst schnell mit dem Testen starten will, dann fängt man tatsächlich, also erst recht in einer bestehenden Anwendung, wo es bislang noch keine Tests gibt, da fängst du an mit großen Tests, weil du damit sehr schnell sehr viel erreichen kannst. Wir kommen später noch mal darauf zurück, aber jetzt gerade noch mal die Fragen, wie formuliere ich den Test, wäre dann die dritte Frage. Und da kommt es dann auf die Präferenz der Entwicklerin, des Entwicklers an. Wenn ich jetzt mit PHP arbeite, liegt es vermutlich nahe, dass ich PHP Unit auf jeden Fall verwende für Unit Tests. Es sei denn, ich bin in irgendeinem Ökosystem unterwegs, wo spezialisierte Anpassungen von PHP Unit gibt, die framework spezifische Dinge tun. Aber in der Regel wird das PHP Unit sein. Je größer der Test ist, desto weniger gesetzt würde ich jetzt auch PHP Unit sehen in der PHP Anwendung. Ich kann mit PHPunit auch ohne Probleme große Tests schreiben, Integrationstests schreiben, End to End Tests schreiben. Das kann ich auch mit einem JUnit für Java tun. Damit kann ich die kleinen Unit Tests schreiben, damit kann ich die großen Tests schreiben. Wird das viel getan? Vermutlich nicht, weil es bessere Alternativen gibt für diese größeren Tests, wie beispielsweise Playwright oder andere Testlösungen.",
+      "start": 1883746,
+      "end": 1966952,
+      "confidence": 0.915401837606838,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Jetzt hast du dich ja um ganz um meine initiale Frage, wie du die aktuelle Industrie so bewährt ist, herumgeschlichen. Aber ein anderer Punkt ist ja auch Manual testing, was das Automated Testing, das ist ja auch sowas, was sich die letzten 20 Jahre, würde ich mal sagen, sehr stark geändert hat in Richtung Automated Tests. Also in den ERN, glaube ich, war das Wort CI, CD zumindest noch nicht so Anfang, der er so weit verbreitet zumindestens. Also auch wieder meine Frage, vielleicht kannst du die andere auch gleich mit beantworten. Wie blickst du aktuell auf die Industrie? Haben sich automated tests und Testing an sich durchgesetzt oder wie würdest du das beurteilen, was heutzutage Standard ist im Testingbereich?",
+      "start": 1967136,
+      "end": 2011066,
+      "confidence": 0.9161913333333334,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Also ich versuche mich über unterschiedliche Antwortpfade auf die Frage zu nähern. Also als ich mit PRP Unit angefangen habe vor 25 Jahren, hat das die ersten Jahre niemanden interessiert. Also ich meine wirklich niemanden außer mir. Als ich das erste mal auf einer Konferenz einen Vortrag gehalten habe über PRP unit, hatte ich zwei Teilnehmende in meinem Raum. Der eine Teilnehmer ist nach dem Vortrag zu mir gekommen und hat gesagt, ja, ich war jetzt nur hier in diesem Vortrag, weil das der einzige war in einer Sprache, die ich in diesem Zeitslot verstehen konnte. Und deswegen war ich hier. Interessiert hat mich aber nicht, aber war irgendwie nett. Ja, schönen Tag noch. Das hat sich erst geändert, dieses Interesse, dass es also überhaupt ein wahrnehmbares Interesse gab, als es in der PHP Welt mit den Frameworks losging. Ja, so Ende 2005 bis Mitte 2006 kamen so die ersten Frameworks für PHP, so das erste Symphony, das erste Send Framework. Und die haben von Anfang an aufs Testen gesetzt und haben dafür PHP Unit verwendet und haben halt von den Kontributoren verlangt, hier, ihr müsst Test schreiben. Und damit ist es.",
+      "start": 2011138,
+      "end": 2084198,
+      "confidence": 0.9170957291666659,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Also zur Entwicklung des Frameworks selbst.",
+      "start": 2084214,
+      "end": 2086070,
+      "confidence": 0.80405,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Zur Entwicklung des Frameworks selbst und auch empfohlen, hey, wenn du eine Anwendung basierend auf diesem Framework baust, es ist eine gute Idee, auch deinen eigenen Code dann zu testen.",
+      "start": 2086110,
+      "end": 2098166,
+      "confidence": 0.9242456666666663,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Aber war die Industrie damals noch nicht so weit, dass sie das verstanden haben? Also hatte, ich sag mal, Junit in diesem Falle, die waren ja glaube ich ein paar Jahre früher da, ebenfalls diese Herausforderungen oder war das eher ein komplett neues Feld für PHP damals, was natürlich dann noch halt ganz anders programmiert wurde als heute?",
+      "start": 2098318,
+      "end": 2118856,
+      "confidence": 0.9124018965517241,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Ja, zum einen wurde damals PHP anders programmiert als heute. Zum einen gab es damals auch nicht so die Sensibilität dafür, dass wir eigentlich sinnvolle Softwareentwicklung machen sollten und nicht nur einfach programmieren. Ich glaube aber, dass das nicht ein reines PHP Thema gewesen ist, sondern dass zu der Zeit auch in anderen Programmiersprachen es nicht viel besser war. Also ich bin im Laufe der Jahre immer mal wieder auf nicht PHP spezifischen Konferenzen gewesen, rund ums Thema Testen. Beispielsweise war ich ein paar mal auf der Google Test Automation Conference, als es die noch gab und bin da immer mit so einem Anflug von Minderwertigkeitskomplex und Impostor Syndrom hingegangen über, ja, weil ich bin jetzt hier der aus der PHP Welt und hier sind jetzt alles mögliche, cjava.net, was auch immer, Entwicklerinnen und Entwickler und die leben ja im Paradies und bei denen wird ja alles getestet und da ist alles ganz toll und ich muss mich hier als PHP Mensch schämen, dass wir dann noch nicht so weit sind und quasi in jedem Gespräch, was ich so im Hallway Track oder bei den Zeiten geführt habe. Nee, da brauchst du dir keine Gedanken machen. Wir sind da auch nicht weiter. Also ich habe auch, ich habe da mit Beratern gesprochen, die im Java und Net unterwegs sind. Nee, ich bin jede Woche bei Kunden, die haben auch noch nie was davon gehört, dass man testen kann und die fangen da gerade erst an. Und also das stellt sich vielleicht von außen so dar, als wären wir da in unseren Communities viel weiter, aber in Wirklichkeit ist es nicht so.",
+      "start": 2118968,
+      "end": 2216826,
+      "confidence": 0.930922878228782,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Also ich hoffe, ich hoffe, dein Impostor Syndrom hat sich in der Zeit ein bisschen geändert, denn ich kann dir heutzutage immer noch in 2024 bestätigen, dass ganz viele Java Software, die ich schon in Produktion gesehen habe, eine einstellige Anzahl an Unitis hat oder Integration oder ähnliches. Also das hat sich auch mit der Zeit nicht gebessert. Die Leute wissen vielleicht, was das ist, aber schreiben scheint immer noch irgendeine Art von Hürde zu sein.",
+      "start": 2216988,
+      "end": 2240094,
+      "confidence": 0.924850131578947,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Ja, meine Komplexe diesbezüglich habe ich mittlerweile komplett abgelegt. Also das ist vorbei. Ich glaube, der große oder ein großer Unterschied heute im Vergleich zu vor 1520 Jahren ist, ist, dass ich heute nicht mehr auf Softwareentwicklerinnen und entwickler stoße, die noch nie vom Testen gehört haben. Sie wissen, dass es das gibt, sie wissen, dass sie das tun sollten. Sie dürfen es nicht immer oder sie können es nicht immer. Ja, aber das grundlegende Wissen, dass es das gibt und dass das eine gute Sache ist, das ist da und man ist da auch aufgeschlossen für gegenüber.",
+      "start": 2240262,
+      "end": 2280886,
+      "confidence": 0.9537410204081632,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Jetzt ist aber trotzdem noch irgendwie da ein großer Gap zu. Es gibt dann ganz viele Tests. Wo Siehst du denn da die größten Probleme von diesem Mindset? Oder das Mindset scheint ja da zu sein. Tests sind sinnvoll, kenne ich von mir selber auch, aber irgendwie das Schreiben ist dann doch wieder irgendwie ein Problem. Oder man schreibt dann zu Alibi halber mal ein paar bei Unit Tests oder so, denkt sich, das ist eh nur ein side Project, ist nicht so wichtig. Aber es ist ja auch im professionellen Umfeld oft ein Problem. Also wie komme ich von diesem guten Mindset auch zu wirklich den Tests am Ende oder zu einer Testingkultur, vielleicht auch in der Firma, dass da Tests wirklich akzeptiert werden?",
+      "start": 2281038,
+      "end": 2317164,
+      "confidence": 0.9225668800000001,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Ja, die banale zwei Wort Antwort ist einfach anfangen. Ja, das klingt, das klingt doof, ich weiß. Aber was ich im Laufe der letzten Jahre immer mal wieder gehört habe, auch als Grund, warum noch nicht damit angefangen wurde, ja, das ist alles so schwierig und man schaut da in die Dokumentation vom PHP Unit und das ist alles so viel, was man da lernen muss. Und das ist natürlich sehr, sehr nützliches Feedback für mich als Autor vom Tool und auch leider als Autor von der Dokumentation, die ich eigentlich nicht schreiben sollte. Ja, weil ich bin vermutlich der schlechteste Autor für die Dokumentation, weil ich immer einige Dinge vergesse zu dokumentieren, weil sie mir völlig klar ist. Betriebsblindheit. Ich habe das Feature gebaut und dann vergesse ich beim dokumentieren was. Da wäre es viel besser, wenn jemand anders das dokumentieren würde und mich halt ausfragen würde und anderes Thema. Aber was ich zunehmend versuche in der Dokumentation ist klar zu hey, das hier ist ein Feature, das braucht man in diesem einen Edge Case. Und damit man sich nicht davon abschrecken lässt, es gibt so viel, das ich lernen muss. Und das wichtigste, das bringe ich mittlerweile Teams in zwei 3 Stunden bei und dann können die ersten sinnvollen Tests für die eigene Software geschrieben werden.",
+      "start": 2317332,
+      "end": 2394434,
+      "confidence": 0.9397436238532113,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Also so die klassischen Ausreden oder ich nenne es jetzt mal Ausreden, Business will das nicht, das dauert alles zu lang und ihr habt doch keine Zeit für Testing. Die würdest du nicht gelten lassen bzw. Siehst du auch nicht so als Problem in der Industrie?",
+      "start": 2394562,
+      "end": 2408290,
+      "confidence": 0.9113104347826085,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Ich sehe es als Problem in der Industrie, aber ich lasse es nicht gelten. Aber es ist ja nie so ganz einfach, weil es kommt ja auf den Kontext an. Das ist ja was völlig anderes, wenn ich jetzt eine Agentur bin, die ein Projekt nach dem anderen für Kunden baut oder ich bin eine Firma, die eine Software für den Inhouse Betrieb baut, wo ich natürlich ein ganz anderes Interesse daran habe, dass diese Software langfristig sinnvoll funktioniert. Also da ist es mittlerweile viel üblicher, dass das sinnvoll getestet ist oder zumindest auch vom Business unterstützt wird, dass man da jetzt vielleicht mal endlich mit dem Testen losgeht.",
+      "start": 2408980,
+      "end": 2450270,
+      "confidence": 0.9471921100917432,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Ich kenne auch aus meiner Agenturzeit, ich sollte keine Zeit auf Tests verbringen, weil das zahlt der Kunde ja nicht. Weil ich weiß nicht, ob das heutzutage in den Agenturen immer noch so ist. Ich hoffe, das hat sich ein bisschen geändert, dass man auch Tests verkaufen kann oder einrechnen kann oder die Planung direkt ein bisschen höher zieht oder so als früher. Aber.",
+      "start": 2450850,
+      "end": 2468006,
+      "confidence": 0.9252298437499998,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Na, das Problem ist, dass du die Tests nicht separat verkaufen darfst. Ich weiß nicht, wie es geht ihr mal hin und wieder in ein Restaurant essen?",
+      "start": 2468118,
+      "end": 2475614,
+      "confidence": 0.9306755555555555,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Ja, kommt vorher vielleicht sogar viel zu oft.",
+      "start": 2475742,
+      "end": 2478490,
+      "confidence": 0.93546,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Wenn du da auf die Speisekarte schaust im Restaurant, wo siehst du da einen Preis dafür, dass die Küche gereinigt wird? Wir haben ganz viele Vorschriften für die Reinigung einer Küche, zum Teil vom Brandschutz, zum Teil vom Gesundheitsamt. Also wenn ich eine Arbeitsfläche habe und ich habe da gerade Fleisch drauf zubereitet, wenn ich mit dem Fleisch fertig bin, muss ich sauber machen, bevor ich damit Gemüse oder Fisch hingehe, das Fett muss einmal die Woche abgesaugt werden.",
+      "start": 2479310,
+      "end": 2510046,
+      "confidence": 0.9382863291139237,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Ja, das kannst du im Pott nicht sagen, weil manche Pommes schmecken nur so gut, weil das Fett einfach so lange da drin ist.",
+      "start": 2510158,
+      "end": 2516190,
+      "confidence": 0.9493366666666668,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Ja, das kannst du eine gewisse Zeit nicht machen, dann kommt irgendwann das Gesundheitsamt, du kannst es eine gewisse Zeit noch länger nicht machen, dann kommt die Feuerwehr, weil dann explodiert es so.",
+      "start": 2516310,
+      "end": 2530362,
+      "confidence": 0.9482660606060608,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Oder der Arzt.",
+      "start": 2530426,
+      "end": 2531434,
+      "confidence": 0.8271499999999999,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Ja, genau. So und das sind Aspekte, die finden sich in der Speisekarte nicht als separater Preis, weil sonst würde der Gast sagen, ja hier, dass du deine Küche reinigst, das erwarte ich von dir ja ohnehin, weil da bist du zu verpflichtet, das streich ich dir. Streichposten zahle ich nicht. Und ähnlich ist es bei Agenturen und ihren Kunden. Du hast eine Gewährleistung, ja, ich mache mit dir einen Vertrag, dass du mir eine Software baust, die sinnvoll funktioniert. Da ist es mir als Kunde doch egal, was du tust, damit die Software funktioniert. Wenn sie nicht funktioniert, gehe ich dann halt im schlimmsten Fall den Rechtsweg.",
+      "start": 2531562,
+      "end": 2567712,
+      "confidence": 0.9328485185185186,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Genau. Ich hätte jetzt als Gegenargument erst gesagt, okay, du hast jetzt aber keine gesetzlichen Bestimmungen, dass du Tests machst, aber dann kamst du mit der Gewährleistung und da muss ich zugeben, das ist schon ganz gut, weil ich meine das BSI, das sagt ja jetzt nicht jede Agentur, die irgendwie Software verkauft oder jeder Freelancer oder Kleingewerbe oder wer auch immer, muss Tests dafür schreiben. Das hat das BSI ja jetzt nicht in der Hinsicht, aber mit der Gewährleistung noch nicht. Aber wenn das kommt, ich glaube, da weiß ich nicht, was dann passiert. Das wird glaube ich mal spannend zu beobachten.",
+      "start": 2567776,
+      "end": 2596130,
+      "confidence": 0.9147934951456309,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Ich möchte den Rahmen dieses Podcast jetzt nicht sprengen, aber ich springe da jetzt mal gerade auf dieses Thema ein, weil das eines ist, dass mich gerade auch beschäftigt. Ich bin ja auch im Vorstand der PHP Foundation und zusammen mit anderen Open Source Foundations erarbeiten wir gerade Vorschläge für die europäische Kommission, wie in Zukunft mit Open Source umgegangen werden soll vor dem Hintergrund von Cyber Resilience Act und Product Liability Directive. Das sind zwei aktuelle EU Gesetzgebungen, die kommen und die sehr stark die Rechte der Verbraucher schützen, aber auch von Unternehmen, die sich Software entwickeln lassen. Und je nachdem, wie das da ausgelegt wird, was da in den Richtlinien steht, kommen da interessante Zeiten. Und ich musste mich da, als ich das gelesen habe, erinnern an, ich glaube vor 10 Jahren hat Robert C. Martin einen Artikel geschrieben, wo er gesagt hat, die Ärzte haben sich vor Jahrtausenden den hippokratischen Eid gegeben, andere Ingenieursdisziplinen haben verbindliche Standards. Schau dir die Richtlinien des Elektrikerverbands in Deutschland an, wenn du deine Stromleitungen in deinem Haus nicht so verkabelst, wie die da sagen, dann sagt jede Versicherung, wenn das Haus abbrennt, wir zahlen nicht. Punkt. Wir als Softwareentwicklungsindustrie haben uns keine verbindlichen Standards und Richtlinien gegeben und es gibt aktuell sowohl in den USA als auch in der EU Bestrebungen, ja, wenn die sich nicht selber regulieren, das funktioniert offensichtlich nicht, dann müssen wir als Gesetzgeber vorgeben, wie in Zukunft Software gebaut werden soll.",
+      "start": 2596210,
+      "end": 2707276,
+      "confidence": 0.9178435245901637,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Was ich halt aus der Praxis auch noch mitgenommen habe, immer, weil ich auch viel mit Firmen zusammenarbeite und bei denen halt aber am Ende ganz oft einfach der Preis ausschlaggebend ist und denen kannst du noch so oft erklären, das ist aber die qualitativere Software und die ist besser getestet und bringt weniger Probleme, wenn sie am Ende das Doppelte kostet, greifen ganz viele trotzdem zu billigeren, weil das ist irgendein Problem in der Zukunft und das BSI schaut eh nicht sofort vorbei und das ist leider vielen Egal. Aber ja, da muss man dann auch hart durchgreifen teilweise und sagen, okay, dann.",
+      "start": 2707428,
+      "end": 2738808,
+      "confidence": 0.9131164423076924,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Solange wir Marktakteure haben, die nicht offen und ehrlich damit umgehen und mit Preisen unterbieten und sagen, wir machen halt nicht Qualität und wir schreiben keine Tests, weil wir haben hier den Auftrag, diese Software zu bauen und da ist keine langfristige Wartung drin, ja, welches Interesse habe ich denn dann als Agentur? Dann klopp ich das runter und liefer das ab, hoffe, dass es abgenommen wird und danach ist es nicht mehr mein Problem. Und wenn der Kunde dann kommt nach ein, zwei Jahren, ja, ich hätte jetzt hier aber gerne noch diese Änderung und diese Erweiterung, dann gibt es dann halt ein Angebot, was deutlich höher ist, als es sein müsste, wenn die Software sinnvoll gebaut worden wäre, um dann eben diese Änderungen vorzunehmen in einer Software, die vermutlich nicht änderbar, wartbar und getestet ist.",
+      "start": 2738904,
+      "end": 2788306,
+      "confidence": 0.9330917518248178,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Eine Frage, die ich mir natürlich jetzt stelle, wenn man sagt, okay, in Zukunft werden Tests immer wichtiger, vielleicht gibt es auch irgendwann mal eine Regelung oder ein Gesetz oder was weiß der Geier, dann stellt sich natürlich auch die Frage, hey, ab wann ist denn ein Test ein guter Test? Denn z.B. bei der Elektrik, da hat man Kabeldurchmesser und da hat man A und v und und was da nicht noch alles gibt. Aber bei einem Test ist es ja so, der kann ja grün sein, wenn ich auf den Test von außen drauf gucke, aber keine einzige Zeile getestet. Also welche Art von, ich sag mal, Metriken gibt es denn da, wo man sagen würde, okay, das ist ein guter Test, das ist ein schlechter Test, gibt es da überhaupt eine qualitative Metrik oder kann man das so quantitativ, nein, quantitativ, gibt es überhaupt eine quantitative Metrik oder kann man das nur qualitativ feststellen.",
+      "start": 2788378,
+      "end": 2837876,
+      "confidence": 0.9148138216560511,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Es gibt Metriken, mit denen man die Frage, ist das ein guter Test oder habe ich ausreichend Tests, beantworten kann. Noch ganz kurz zu dem, was du vorhin gesagt hast. Es gibt schon Bereiche, in der es Softwareentwicklung sehr stark gesetzlich geregelt ist. Also insbesondere auch beim Testen. Software, die im Cockpit von einem Flugzeug läuft, die braucht 100 % Fahrtabdeckung.",
+      "start": 2837988,
+      "end": 2863730,
+      "confidence": 0.904983770491803,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Kannst du kurz erklären, was Fahrt Abdeckung ist?",
+      "start": 2864630,
+      "end": 2866798,
+      "confidence": 0.8322025,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Fahrt Abdeckung ist die härteste oder eine sehr harte Auslegung von Code Coverage. Also bei Code Coverage spricht man davon Testabdeckung. Während ich meine Tests ausführe, führe ich Protokoll darüber, welcher Code ausgeführt wird, wenn ein Test läuft, so dass ich im einfachsten Fall hinterher sagen kann, hey, hier gibt es n Zeilen ausführbaren Code in meiner Anwendung, m Zeilen davon sind ausgeführt. Also insgesamt habe ich vielleicht 20 % meines Codes, der noch nicht durch Tests abgedeckt ist. Das ist die Code Coverage. Und in der einfachsten Ausprägung davon reden wir von Line Coverage, Zeilenabdeckung, wenn ich wirklich nur schaue, welche Zeilen werden ausgeführt, das ist ein notwendiges Kriterium für volle Testabdeckung, aber kein hinreichendes, weil, und leider auch sowas habe ich schon gesehen, weil sobald du eine Metrik einführst und die misst und versuchst daraufhin zu optimieren, wird es Menschen geben, die versuchen zu bescheißen. Und du kannst da ganz einfach betrügen und deinen ganzen Code einer Datei in eine Zeile schreiben. Und sobald da auch nur eine Anweisung in dieser Zeile ausgeführt wird, ist die ganze Zeile grün. Also durch Tests abgedeckt.",
+      "start": 2866854,
+      "end": 2948052,
+      "confidence": 0.9131487567567567,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Das ist ja dreckig, aber ja, sie wie Kolon sei Dank.",
+      "start": 2948156,
+      "end": 2951876,
+      "confidence": 0.8705290909090909,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Ja, ganz genau. So, das kann man nicht wollen. Und wir stellen uns jetzt mal vor, als würden wir in einer Welt leben, wo das kein Problem wäre. Selbst dann ist das kein hinreichendes Kriterium, weil du hast ja Statements, Anweisungen wie if oder switch oder eine Schleife. Und ein if Statement kann ja zwei Outcomes haben. Das kann ja true oder false sein. Und das wäre dann die nächst härtere Ebene, wenn du dir sowas anschaust von coder Coverage, also da sind wir bei Branch Coverage, wird jeder Ausführungs, Entschuldigung, jede mögliche Verzweigung durch mindestens einen Test abgedeckt. Also wenn ich ein if Statement habe, brauche ich mindestens zwei Tests. Einen, wo der Body vom if Statement auf true evaluiert und einer, wo das auf false evaluiert. Und jetzt kann ich das noch eine Stufe weiter treiben und sagen, ich schaue mir auch die Verschachtelung von Schleifen, von if Statements, von Switches und Cases und was es nicht alles gibt. Ja, wir haben jetzt in PHP beispielsweise vor ein paar Jahren das Match Statement bekommen, das ist auch so ein Kandidat dafür. Ich schaue mir nicht nur die Verzweigungspunkte an, sondern ich schaue mir an, wie der Code verschachtelt ist und welche, Achtung, jetzt wird es mathematisch, es tut mir leid, welche linear unabhängigen Ausführungspfade es durch eine Code Einheit gibt. Das heißt, ich kann tatsächlich durch statische Code Analyse und ein bisschen Mathematik, Graphentheorie sei Dank, aufzählen, welche möglichen Pfade kann ich durch ein Stück Code gehen, kann entsprechende Daten, während die Tests ausgeführt werden, sammeln und dann eine Aussage treffen. Ja, nicht nur 10 von 10 Zeilen werden ausgeführt, sondern alle 123 von 123 möglichen Ausführungspfad sind durch einen Test abgedeckt. Und Software in einem Cockpit eines Flugzeugs hat das regulatorische Requirement 100 % Pfadabdeckung. Ähnliches gilt für Software, die in einem Herzschrittmacher oder sowas läuft. Ja, und ich glaube, das ist auch sehr gut so.",
+      "start": 2951988,
+      "end": 3084674,
+      "confidence": 0.9169387774294668,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Das bedeutet aber auch, wenn ich darauf jetzt optimiere, auf die Pfadabdeckung, z.B. dann teste ich ja viel mehr, dass die innere Implementierung als die Funktions API doch.",
+      "start": 3084762,
+      "end": 3099736,
+      "confidence": 0.8758260714285715,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Eigentlich, oder da kommen wir jetzt zurück zu einer Begrifflichkeit, die wir vor einiger Zeit hatten, Black Box vs. Whitebox. Spätestens wenn du dir so Code Coverage Auswertungen anschaust, bist du bei Whitebox. Ja, also du nutzt Informationen, wie ist der Code implementiert und was findet das Testwerkzeug beim Ausführen deiner Tests über den Code heraus. Wenn du diese Informationen benutzt, um zu steuern, welche Tests schreibe ich als nächstes, dann bist du definitiv bei Whitebox. Also weißer geht es nicht. Aber das ist auch nicht etwas, was du für den ganzen Code vermutlich machst, sondern wenn du ein ganz wichtiges Stück Code hast, wo großes Risiko besteht, dass schlimme Dinge passieren, du verlierst Geld oder noch schlimmer, Menschenleben stehen auf dem Spiel, dann wirst du dir solche kritischen Code Einheiten so ganz genau anschauen wollen. Das ist nichts, was du, also auch aus Praktikabilitätsgründen, weil Pfadabdeckung ist eine sehr, sehr teuer zu berechnende Metrik.",
+      "start": 3099768,
+      "end": 3164696,
+      "confidence": 0.9136743225806451,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Wie sieht es denn da jetzt mit dem klassischen Fall aus, wenn ich Exceptions catchen muss, die vielleicht dann auch aus Libraries darunter oder so kommen, sind die dann damit abgedeckt? Wäre das dann ein Pfad, der da mitberechnet wird oder sind es dann wieder andere Dinge?",
+      "start": 3164768,
+      "end": 3180068,
+      "confidence": 0.8942119148936171,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Das Werfen einer Exception ist auch Teil eines Ausführungspfades. Du hast dann den Ausführungspfad, wo ein Rückgabewert kommt und du hast einen Ausführungspfad, wo eine Exception geworfen wird, wenn das.",
+      "start": 3180164,
+      "end": 3192092,
+      "confidence": 0.9434840000000001,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Jetzt mein eigener Code ist. Aber wenn ich jetzt eine Library verwende und einfach einen Call habe, wo dann im Hintergrund File Reads sind und Writes und da kann mir die API, die darunterliegende, eine Exception werfen, die ja in meinem Code gar nicht sichtbar ist, wenn ich statische Analyse machen würde.",
+      "start": 3192116,
+      "end": 3209170,
+      "confidence": 0.8877976923076923,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Naja, die statische Analyse würde dir sagen, dass du da einen Ausführungspfad hast, wo eine Exception passieren kann in deiner Abhängigkeit und du machst und du gehst damit halt aktuell noch nicht um. Das heißt, das würdest du sogar schon viel früher im statischen Testen herausfinden.",
+      "start": 3209250,
+      "end": 3224786,
+      "confidence": 0.9311071739130433,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Könnte. Könnte man nicht lieber sagen, hey Wolfgang, nutz doch ordentlich Dependency Injection, um deine Dependencies irgendwie weg zu mocken und dann zu testen, testen selbst, weil ich meine, im Endeffekt, wenn er dann halt irgendwie komplett alle Libraries mittestet, dann macht er ja keinen Unit Test mehr, sondern einen Integrationstest, oder?",
+      "start": 3224938,
+      "end": 3241662,
+      "confidence": 0.8118798076923077,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Es kommt halt darauf an, was für einen Test du gerade machen willst. Also du kannst dir die Welt so zurecht mocken, wie du willst. Ich mocke mir die Welt würde würde, wie sie mir gefällt. Und du kannst dich damit aber dann auch sehr schön selbst betrügen. Also wenn du dir dann die Abhängigkeit im MOC so konfigurierst, dass immer schönes Wetter ist, dann hast du auf einmal lügende Tests, die der Wirklichkeit halt nicht mehr entsprechen.",
+      "start": 3241766,
+      "end": 3264772,
+      "confidence": 0.912970384615385,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Andere Frage, wenn ich jetzt mal weg von diesen harten Metriken, von den Zahlen gehe und wirklich teste, ob mein Test wirklich gut ist, dann bin ich bei der Recherche auf diesem Podcast, bei der Vorbereitung auf etwas gestoßen, das nannte sich Mutantentesting oder Mutation testing. Und und ich musste da, ganz selten gucke ich das, aber ich musste dafür mal ein YouTube Video gucken, damit mir das jemand mal erklärt. Beschreib uns doch mal bitte, was mutation testing ist, weil ich fand das so dermaßen interessant.",
+      "start": 3264916,
+      "end": 3296110,
+      "confidence": 0.9239219540229888,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Mutation Testing funktioniert wie folgt du führst einmal deine Tests aus und alle Tests funktionieren. Das ist die Voraussetzung als Ausgangssituation. Du bist in einem Zustand, wo alle deine existierenden Tests grün sind. Dann führt das Mutation testing, das mutation Testing Werkzeug, das du verwendest, in der PHP Welt wäre das Infection, in der Java Welt gab es mal Jester. Ich weiß nicht, ob das immer noch aktuell ist oder ob es da neuere Werkzeuge mittlerweile gibt. In der Python Welt gab es Pester. Das mutation Testing Werkzeug geht dann hin, führt eine statische Codeanalyse des getesteten Codes durch und findet Stellen, an denen automatisiert der getestete Code geändert werden kann. Und dann gibt es eine einen großen Katalog von sogenannten Mutationen, wie beispielsweise, wenn da ein True steht, dann mache ich daraus ein False. Wenn da eine Eins steht, dann mache ich da mal eine null draus. Ja, da steht ein größer, mache ich mal ein kleiner draus. Also Dutzende von solchen Mutationen und Jede mögliche Mutation wird einmal gemacht. Und für jede solche Mutation werden die Tests noch mal ausgeführt. Und wenn nicht mindestens ein Test fehlschlägt, nachdem eine solche Mutation durchgeführt worden ist, dann spricht man davon, dass der Mutant entkommen ist. Wenn mindestens ein Test fehlschlägt, dann heißt es, der Mutant wurde gekillt. Und auch das Thema Mutation testing ist kein neues. Das gab es schon in den ERN oder ERN kam die Idee auf, wurde damals aber aus Praktikabilitätsgründen sehr schnell verworfen, weil die Computer damals einfach viel zu langsam waren. Denn für jeden Mutanten oder für jede Mutation, die du durchführst, musst du das Projekt ja neu kompilieren und die Tests noch mal neu ausführen. Das sind alles Dinge, die jetzt erst in den letzten Jahren sinnvoll möglich geworden sind.",
+      "start": 3297050,
+      "end": 3430448,
+      "confidence": 0.91777831081081,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Und das testet mir quasi die Qualität. Also wenn ich jetzt einen Mutation Test schreibe, dann simuliere ich den Wolf in der Zukunft, der dann irgendwas kaputt macht in ein paar Monaten. Und dann im Idealfall schlägt mein Test fehl, weil ich eben irgendwas kaputt gemacht habe oder mein Kollege oder meine Kollegin im Team. Das geht dann in diese Richtung, oder?",
+      "start": 3430584,
+      "end": 3449552,
+      "confidence": 0.9003101612903223,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Ja, die Metapher, die ich immer mal wieder höre, ist, du rüttelst mit einem Mutation Testing Werkzeug an deinem Code und schaust, ob und wo etwas umfällt. Und das kann zwei Gründe haben. Also du lässt deine Tests, du lässt das Mutation testing laufen, eine Mutante überlebt. Jetzt gibt es zwei Möglichkeiten, warum die Mutante überlebt hat. Entweder hast du gerade entdeckt, dass dann noch ein Test fehlt. Super, schreibst du den fehlenden Test. Das Feedback, was du vom mutation testing Framework bekommst, ist meistens so präzise, dass du ganz genau weißt, welchen Test du da jetzt schreiben musst, oder? Und natürlich, wie bei allem, das Werkzeug kann das menschliche Gehirn nicht ersetzen. Du musst da als Mensch draufschauen und die Entscheidung treffen, jawohl, da fehlt mir ein Test oder nee, meine Tests, die sind ausreichend, weil ich habe testgetriebene Entwicklung angewandt. Es gibt in meinem Code keine Zeile Code oder kein Statement oder sollte es zumindest nicht geben, das nicht durch mindestens einen Test mutiert ist. Und mir fehlt hier kein Test, weil ich weiß, dass meine Tests vollständig sind, dann erlaubt dein Code zu viel Freiheitsgrad, dann hast du unter Umständen zu viel Code hingeschrieben. Und das ist auch super Feedback, weil dann kannst du Code löschen. Ja, und es heißt ja immer so schö was ist der Unterschied zwischen einem Junior Developer und einem Senior Developer? Das Senior Developer löscht Code. Ja, Code löschen ist super. Jede Zeile Code, die ich nicht habe, ist eine, in der kann ich keinen Security issue haben, in der kann ich keinen Bug haben, die steht mir nicht im Weg, wenn ich irgendwann mal refactoren will oder ein neues Feature einbauen. Und es sind diese zwei Möglichkeiten. Die dritte auch möglich, false positive das Tool ist noch nicht so gut, aber das sehe ich in letzter Zeit immer selten. Also es eigentlich immer mir fehlt der Test oder ah, der Code, der lässt zu viel Freiheit, da kann ich noch enger werden, noch präziser werden, weniger erlauben, dass das da durchgeht.",
+      "start": 3449616,
+      "end": 3570648,
+      "confidence": 0.9180617352941179,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Jetzt hast du schon erwähnt, es braucht immer noch den Kopf und das Gehirn des Entwicklers oder der Entwicklerin, um die sinnvollen Tests dann zu schreiben und die richtigen zu schreiben. Wie siehst du das ganze KI Thema um das kommt mir aktuell nicht herum. Wird es in Zukunft die Tests alle automatisieren? Was ist deine Erfahrung bisher damit? Und brauche ich dann noch das Gehirn des Entwicklers?",
+      "start": 3570704,
+      "end": 3592100,
+      "confidence": 0.9158297058823529,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Also ich glaube schon, dass wir um das Thema KI da mittel bis langfristig nicht herumkommen werden. Ich glaube nur, dass das nicht so sein wird, wie es aktuell, also wie ich es zumindest aktuell meistens sehe, dass man den Testcode automatisiert generieren lassen kann. Also ich habe mir da ein, zwei Werkzeuge angeschaut, die das für PHP machen und dann PHP Code analysieren und dann PHP Unit Tests erzeugen. Und Die Tests kann man dann auch ausführen und sie sind grün, aber sie sind furchtbar. Also vielleicht muss ich an der Stelle noch einmal kurz ausholen. Für mich sind Tests und jetzt völlig egal, ob das kleine Unit Tests sind oder end to End Tests oder Integrationstests in der Mitte, für mich sind Tests immer mehr als ausführbare Verifikationen. Ja, das ist das, was ursprünglich das Ziel war. Ich möchte aufschreiben, was das erwartete korrekte Verhalten von einem Aspekt meiner Software ist und ich möchte das auf Knopfdruck automatisiert verifizieren können. Das ist eine super Idee, das war eine super Idee, das bleibt eine super Idee, aber da steckt noch so viel mehr drin. Für mich sind Tests immer ausführbare Dokumentation. Wenn ich meine Tests mit sinnvollen Namen versehen habe, dann kann ich in pHPUnit ein Feature verwenden, das heißt heißt Test Docs. Das schreibt mir basierend auf den Testnamen für jeden Test, der ausgeführt wird, einen Satz in die Ausgabe, wo ich lesen kann, Menschen lesbar, was tut diese Code Einheit? Was ist deren Aufgabe? Was ist das erwartete Verhalten? Was ist der Kontext, wo das verwendet wird? Und hinter jedem solchen Satz steckt ja ein Code Beispiel in Form des Tests, Testcodes, sodass wenn ich jetzt beispielsweise als neuer Entwickler, neue Entwicklerin in ein Team komme und da gibt es sinnvolle Tests und die haben sinnvolle Namen, dann kann ich mir das anschauen. Wenn ich jetzt beispielsweise zum ersten Mal mit einem Contract oder Shopping Card oder was auch immer Objekt arbeiten will, schaue ich mir diese Ausgabe an, sehe, was kann das, wie wird das verwendet und kann direkt loslegen, weil ich habe verifiziert funktionierende Beispiele, wie das richtig verwendet wird. Das ist für mich ausführbare Dokumentation. Und einen Schritt weiter, wenn ich testgetrieben entwickle, dann ist das für mich ausführbare Spezifikation. Dann schreibe ich ja zuerst meinen Test, schreibe dann das Stück Code, das es braucht, damit dieser neue Test auch grün wird. Und dann weiß ich, das klingt immer so esoterisch, ich weiß, aber das ist psychologisch untersucht von Arbeitspsychologen zusammen mit Informatiker innen vor vielen, vielen Jahren schon. Das gibt einem ein gutes Gefühl, dieses Grün zu sehen, weil ich dann weiß, aha, ich habe nichts kaputt gemacht, was in der Vergangenheit funktioniert hat und das, was ich gerade gemacht habe, funktioniert auch. Und noch viel ich weiß, dass ich fertig bin mit dem aktuellen Schritt, wenn. Und für mich ist das schon lange so gewesen, ich fühle mich total unwohl, wenn ich nicht mit Tests arbeite oder testgetrieben arbeite, weil ich ja nie weiß, wann ich fertig bin. Ich habe kein messbares Ziel, wann bist du fertig? Und das gibt mir das testgetriebene denken und entwickeln. Ich glaube, dass es sinnvoller wäre, wenn der Mensch die Tests schreibt und dann vielleicht die KI irgendwann den Code schreibt, der dafür sorgt, dass die Tests grün werden. Wenn die Tests nämlich dann gut sind, dann ist mir ja egal, wie der getestete Code aussieht vielleicht.",
+      "start": 3592260,
+      "end": 3806060,
+      "confidence": 0.9329668126094566,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Aber wenn du jetzt beschreibst, diese Sätze, die da zurückgeliefert werden, die Beschreibung von einem solchen Test und solche Dinge, da ist ja, so meine Erfahrung zumindest copilot extrem gut, solche Dinge zu beschreiben, auch wenn ich Code z.B. geschrieben habe und dann eine textuelle Repräsentation aus meinem Code oder aus meinem Test. Also das könnte mir gut vorstellen, bzw. Frage an dich, wo siehst du denn jetzt die starken, wo mir das Testing in irgendeiner Form vereinfacht wird durch einen Copilot, was es auch immer ist, da.",
+      "start": 3806140,
+      "end": 3839822,
+      "confidence": 0.9393122727272726,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Habe ich noch zu wenig Erfahrung, um da eine sinnvolle Aussage zu treffen. Ich glaube, wir stehen da noch ganz am Anfang von den Dingen, die da kommen werden.",
+      "start": 3839846,
+      "end": 3847446,
+      "confidence": 0.9530303448275861,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Also da bin ich, bin ich 100 % mit dir einer Meinung, dass wir noch ganz am Anfang stehen. Ich bin ja so ein GitHub Copilot, Late Adopter, wenn du so möchtest. Also ich habe das irgendwie vor anderthalb Monaten erst installiert und Wolfgang lacht da immer sehr laut über mich.",
+      "start": 3847558,
+      "end": 3859054,
+      "confidence": 0.9176017647058823,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Wir haben Andi gezwungen, aber mein erster.",
+      "start": 3859102,
+      "end": 3862394,
+      "confidence": 0.9067157142857143,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Fall ist es kein Witz war, ich habe für eine PHP Software einen Unit Test generieren lassen und da speziell jetzt nicht den Unit Test selbst, was er testet, sondern primär die Daten, die halt in die Funktion reingeschmissen werden. So eine Art, wie nennt man das, glaube ich, table Test oder ähnliches. Also ich habe halt irgendwie eine Liste von Daten, die schmeiße ich dann dagegen. Und das sind dann nicht alles einzelne unit Tests, sondern ist ein Test, der iteriert halt durch fünf und dreiig Datensätze. Ich glaube, das nennt man Data Provider.",
+      "start": 3862442,
+      "end": 3891220,
+      "confidence": 0.9013167368421054,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Glaube ich, das Feature von Papunitized Data Provider. Damit kannst du Testcode von Testdaten entkoppeln und leichtgewichtig einfach neue Datensätze hinzufügen, um mit mehr Datensätzen zu testen.",
+      "start": 3891300,
+      "end": 3903460,
+      "confidence": 0.8506692592592593,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Genau, da habe ich dann einfach nur dem Copilot gesagt Hey, generiere mir bitte Testdaten in diesem Format. Das sind die Ränder, damit man auch so Edge hat, so minus eins, null und eins. Ja, und nicht nur 101000 und ähnliches. Und muss ich zugeben, war sehr schnell, schneller als ich es hätte tippen können. Recht komplett, würde ich mal so sagen. Also oder ich habe den Bug noch nicht gefunden. Mit hoher Wahrscheinlichkeit ist das zweite. Also ich kann mir schon vorstellen, dass das irgendwie auf jeden Fall dazu verleitet, dass Testschreiben wieder mehr Spaß macht, weil ich habe die Tage einen guten Tweet gelesen. Diese ganze AI Geschichte und so weiter, die bringt erfahrenen Programmierern wieder Spaß, weil die nicht mehr diesen, ich nenne es mal Boilerplate schreiben müssen. Die können sich auf das Wesentliche konzentrieren. Und das fand ich einen ganz spannenden Punkt, denn die Realität sagt auch, zumindest so beobachte ich sie, jetzt muss ich da, jetzt habe ich die Implementierung fertig, jetzt muss ich noch unittest schreiben. Ernsthaft. Und ich hoffe, da kommt dann wenigstens so ein bisschen okay, die AI nimmt mir wenigstens den Boilerplate ab. Kannst du das nachvollziehen, Sebastian? Oder wie denkst du darüber?",
+      "start": 3903540,
+      "end": 3971340,
+      "confidence": 0.9017905940594056,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Also ich glaube dir, dass das sich das für dich vielleicht so anfühlt und dass sich das für viele Menschen auch anfühlt. Für mich ist es nicht so. Also ich, also ich kann nachvollziehen, dass das für euch so ist. Für mich ist es nicht so. Ich habe eigentlich immer in den letzten 25 Jahren Spaß gehabt, Tests zu schreiben. Das mag man mir glauben oder nicht, aber mir macht es Spaß, weil es eine sinnvolle Tätigkeit ist und was Sinnvolles macht mir eigentlich grundsätzlich spaß.",
+      "start": 3971720,
+      "end": 4002728,
+      "confidence": 0.9440666279069766,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Ich würde es vielleicht auch gar nicht so negativ sehen, weil es ist ja auch beim normalen Coding, wo dir ein Copilot helfen kann. Und normales Coding, jetzt nach der Analogie von Andi, die macht ja Spaß. Aber auch da kann man natürlich boilerplate geschrieben werden von dem Copilot. Und die Kombination könnte es natürlich bei Testing auch geben. Auch wenn es mir Spaß macht, dass sie gewisse Sachen, die sich einfach, die sonst vielleicht copy pasten würde und dann wieder was ausbessern oder so, um den ähnlichen Test zu schreiben, keine Ahnung, sowas in die Richtung, dass mir da natürlich einfach gewisse Schreibarbeit abgenommen wird. Aber das ist noch keine komplett automatische Testgenerierung, muss man auch dazu sagen.",
+      "start": 4002824,
+      "end": 4038296,
+      "confidence": 0.918868991596639,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Ja, ich würde mir, glaube ich, eher wünschen, dass man viel von dem Boilerplate los wird.",
+      "start": 4038328,
+      "end": 4044008,
+      "confidence": 0.920546875,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Aber du meinst jetzt auf der strukturellen Seite, also mit irgendwelchen Tooling und nicht, das ist einfach geschrieben.",
+      "start": 4044144,
+      "end": 4050074,
+      "confidence": 0.8828766666666668,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Also das ist weder der Mensch noch so ein Tool, wie Copilot erzeugen muss.",
+      "start": 4050202,
+      "end": 4057470,
+      "confidence": 0.9428385714285713,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Jetzt ganz eine andere Richtung nochmal, weil Andi gesagt hat, das Testschreiben, das tut er nicht gerne. Kann ich auch irgendwo nachvollziehen.",
+      "start": 4057930,
+      "end": 4067034,
+      "confidence": 0.9040804545454545,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Das findet immer so viel Fehler bei mir, verstehst du?",
+      "start": 4067082,
+      "end": 4069590,
+      "confidence": 0.919675,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Andi hat ja gemeint, so im Nachhinein, da muss man jetzt auch noch die Test schreiben. Es gibt ja dieses berühmt berüchtigte Test Driven Development. Jetzt siehst du ja massig von Firmen dort draußen, mit denen du zusammenarbeitest, wo du Workshops gibst. Wie verbreitet ist denn aktuell test driven development wirklich ist? Gibt es diesen Hype noch? Hat sich das irgendwie etabliert oder sieht man das in der Realität kaum? Ich habe es leider noch nie irgendwo. Richtig, richtig, dass das am Anfang wirklich mit Tests gestartet wird, eine Entwicklung. Ich habe das eigentlich noch nie in der Realität irgendwo gesehen. Aber du hast viel mehr Einblick darauf, warum die Frage?",
+      "start": 4070490,
+      "end": 4103660,
+      "confidence": 0.8878997297297295,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Ich glaube, der Hype ist vorbei, weil es als Konzept etabliert ist. Was nicht bedeutet, dass es jedes Team immer macht. Also ich habe ganz wenige, also nicht ganz wenig, aber es ist weniger Teams, mit denen ich arbeite, die das permanent machen. Was durchaus häufiger ist, ist, dass Teams bestimmte Bereiche in der Codebasis identifiziert haben, wo sie sagen, das ist so wichtig, da gehen wir immer testgetrieben dran und da gehen wir vielleicht auch im Pair Programming dran. Ja, aber nicht immer und überall. Aber es gibt es, es kommt vor. Und ich persönlich kann mittlerweile schon seit vielen Jahren nicht mehr anders arbeiten. Also ich kann das immer mal wieder für eine halbe h oder h, aber dann merke ich, irgendwas fühlt sich gerade nicht gut an. Ja, was natürlich manchmal ein Problem ist, weil etwas, was ich in 25 Jahren noch nicht herausgefunden habe, wie das richtig und überall geht, ist ein Test Framework testgetrieben zu entwickeln. Da habe ich noch den einen oder anderen Knoten im Kopf.",
+      "start": 4103820,
+      "end": 4167120,
+      "confidence": 0.9397430232558139,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Was für eine Abdeckung hat eigentlich BHB Unit? Aktuell 92, %, aber was für eine Abdeckung?",
+      "start": 4167580,
+      "end": 4175812,
+      "confidence": 0.8876793749999999,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Line Coverage, weil Pass Coverage viel zu lange dauert, um das ständig auszuführen, um da drauf schauen zu können. Jetzt ist PHPUnit aber auch ein spezial gelagerter Sonderfall, weil Code Coverage Daten ja nur gesammelt werden, wenn ein Test läuft. Das ist für alles, was man mit PHP Unit testet, außer PHP Unit selbst, genau das, was man will. Aber ganz viel von PHP Unit passiert ja, wenn gerade kein Test läuft. Und das sind dann so Bereiche, die nicht unbedingt nicht durch Code Coverage visualisiert werden können, dass sie getestet sind. Also es ist vermutlich fast alles von PHP Unit getestet, aber es taucht im Code Coverage Report nicht auf, weil die Daten da nicht gesammelt werden. Ich habe vor ein paar Jahren mal, als mich das total gefrustet hat, PHP Unit modifiziert, dass es, wenn die eigenen Tests laufen, überall die Code Coverage Daten sammelt. Das hat dann aber zu anderen Problemen geführt. Und das ist ja auch eine sehr schlechte Praktik, eine sehr, sehr schlechte Bad Practice Software zu modifizieren, damit man sie testen kann. Und das ist beim Test Framework nicht anders. Ich glaube, ich werde einfach damit leben müssen, dass ich nicht an die 100 % komme, weil es einfach blinde Flecken gibt. Und weswegen ich eben so diese 92 % so direkt sagen konnte, ist, weil ich in den letzten Wochen immer mal wieder, wenn ich im Zug saß, daran gearbeitet habe, mit anderem Tooling zu identifizieren, was sind denn die Code Zeilen, die ich wegen bestimmter Einschränkungen nicht durch Code Coverage abdecken kann, obwohl sie getestet werden, und markiere die jetzt einfach kategorisch, dass die von der Code Coverage Analyse ausgeschlossen werden, damit die Daten ehrlicher werden.",
+      "start": 4175996,
+      "end": 4288262,
+      "confidence": 0.9232181338028164,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Da kam natürlich dann schon so ein bisschen der kleinere inneren Monk raus, dass man die 100 % wirklich haben möchte, oder?",
+      "start": 4288366,
+      "end": 4294566,
+      "confidence": 0.8794863636363636,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Naja, ich sag's mal so, also bei 100 % fängt es an, interessant zu werden. Also solange ich nicht die 100 % habe, weiß ich, dass es Code gibt, der noch nicht getestet ist. Also die 100 % sind notwendig dafür, dass ich überhaupt mal eine Grundabdeckung habe.",
+      "start": 4294758,
+      "end": 4310662,
+      "confidence": 0.947914166666667,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Eine Grundabdeckung bei 100? %. Also ich meine, da würden, glaube ich, super viele Firmen mit ihrer Software von träumen, wenn die Grundabdeckung 20 % wäre, oder?",
+      "start": 4310766,
+      "end": 4319860,
+      "confidence": 0.8651266666666666,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Ja, irgendwo muss man halt anfangen und hoffentlich fängt man da an, wo es wichtig ist.",
+      "start": 4320160,
+      "end": 4326060,
+      "confidence": 0.9358162499999998,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Und das bringt mich zu der Frage, du hast jetzt 92, %, du sagst, 100 % ist anscheinend aktuell, nach aktuellem Maßstab jetzt nicht möglich ohne Modifikation, vielleicht wegen Bootstrapping Code oder ähnliches. Aber was würdest du denn deinen Kunden empfehlen? Was würdest du sagen, okay, kann man das Pareto Prinzip anwenden und sagen, ja, wenn er 80 % hast, dann bist du schon sehr, sehr gut dabei? Oder sagst du, Core Logik, keine Ahnung, bei einer Versicherung, die Berechnung der Versicherungssumme sollte getestet werden, aber ob jetzt das PDF rauspurzelt, ist nicht so wichtig, oder wie?",
+      "start": 4326440,
+      "end": 4360756,
+      "confidence": 0.8895376288659791,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Jetzt kommt die typische Beraterantwort. Es kommt drauf an. Das Problem, was ich habe mit Aussagen wie 80 % ist genug, ist, dass erfahrungsgemäß dann die 20 % nicht getestet werden, die schwierig sind und die vielleicht relevant wären. Und ja, wir sind ja gut genug, wir haben ja die 80 % erreicht, aber das, was eigentlich gerade wichtig ist, das haben wir nicht getestet, weil das ist uns zu eklig, das ist uns zeitaufwendig und es ist nur gefordert, die 80. %. Das ist mein Problem, was ich damit habe. Ein anderer Aspekt davon ist, in welchem Kontext bin ich gerade unterwegs? Fange ich mit testen an in einer Software, die dreiig Jahre alt ist und ich arbeite momentan mit einem Team, mit einer PHP Software, die 29 Jahre alt ist, wo bis vor einem halben Jahr noch kein einziger Test war. Da ist es natürlich völlig illusorisch, von irgendwelchen großen Prozentzahlen zu reden. Da schaut man sich an, was sind unsere wichtigsten Use Cases, man priorisiert und schreibt dann konsequent Tests für diesen einen Use Case und freut sich, wenn die Tests funktionieren und man nicht feststellt, oh, hier ist ein Feature, was seit 10 Jahren schon kaputt ist. Aber auch das ist ja schon ein positiver Effekt vom wir fangen mal mit dem Testen an. Was ich oder wovon ich wirklich überzeugt bin, ist, wenn ich ein neues Projekt anfange und testgetrieben entwickle, dann gibt es keinen Grund dafür, unter 100 % zu sein. Und ganz ehrlich, man muss sich dann schon anstrengen, wenn man testgetrieben arbeitet, dass man nicht bei der 100 % ist.",
+      "start": 4360868,
+      "end": 4460160,
+      "confidence": 0.9220761194029841,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Du hast gerade fast erwähnt, was ich super spannend finde, du hast gerade gesagt, okay, wenn man jetzt irgendwie sagt, man testet nur 80, %, dass Leute sich darauf dann aufhängen so nach dem Motto wir haben diese Metrik, dieses Ziel erreicht, mehr muss ich gar nicht. Das ist ein spannender Aspekt. Ja, vielleicht ist das einfach nur Fehler, wenn man da jetzt mal eine KPI draufsetzt. Stimmt schon.",
+      "start": 4460980,
+      "end": 4482890,
+      "confidence": 0.877719275362319,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Wie es mit Metriken halt so ist. Also es gibt Metriken, wenn ich da anfange drauf zu optimieren und ich gucke mir nur diese eine Metrik an, dann wird es im schlimmsten Fall schlecht. Schlimmer als es vorher war. Also es muss, du musst halt deine Metriken in Balance halten. Ich habe vor vielen Jahren mal mit einem Team gearbeitet, wo wir gesagt haben, also wir kamen dahin, haben uns die existierende Software angeschaut und haben gesagt ja, also eure Methoden sind viel zu lang. Ja, das waren tausende Zeilen pro Methode. Hat das Team gesagt okay, nehmen wir mit, wir fangen jetzt ein neues Projekt an, da versuchen wir diese Regeln anzuwenden. Und dann kamen wir nach ein paar Wochen wieder dahin und haben die neue Software gesehen und haben gesagt, eure Methoden sind zu kurz, weil die hatten dann keine Methode in ihrem Code, die mehr als zwei Zeilen hatte. Und da war halt alles, was eigentlich im Kontext der Metrik Kohäsion zusammen sein sollte in einer Methode, weil es einfach logisch zusammenhängt, verteilt über 1015 Methoden mit ein, zwei Zeilen. Das ist es halt auch nicht. Also du musst halt die Balance finden und du kannst nicht ja einfach auf die eine Metrik optimieren, weil das ist nicht gut.",
+      "start": 4483550,
+      "end": 4565500,
+      "confidence": 0.9269426886792453,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Die klassische Spanne zwischen den Extremen, das habe ich zum Grinsen gebracht.",
+      "start": 4566200,
+      "end": 4570488,
+      "confidence": 0.9128691666666667,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Ja, also es ist wieder so ein Klassiker It, die Bands. Es ist einfach immer schwierig, aber man sieht schon, wie groß eigentlich dieses ganze Testing Thema ist. Und ich glaube, wir könnten uns da noch ziemlich lange unterhalten. Wir sind jetzt schon weit über über 1 Stunde, aber aber vielen dank Sebastian, dass du uns mal einen extrem guten Überblick gegeben hast, was es so gibt in dem ganzen Testingbereich. Und ich glaube, wir können da noch einige Episoden draufsetzen und in die Tiefe gehen. Da bin ich mir ganz sicher. Also vielen, vielen Dank mal dafür. Gibt es von deiner Seite noch irgendwas, was du unseren Hörer innen mitgeben willst für die Zukunft, wenn es um Testing geht?",
+      "start": 4570584,
+      "end": 4610248,
+      "confidence": 0.9025975833333334,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Also erstmal war ich sehr gerne hier, hat mich sehr gefreut, mit euch über das Thema zu reden. Was kann ich noch mitgeben? Wenn ihr noch nicht testet, fangt damit an. Lasst euch nicht davon abschrecken, dass in Dokumentation für Test Frameworks ganz viele Features erwähnt sind. Die meisten davon werdet ihr hoffentlich nie brauchen. Und natürlich muss ich mir jetzt zum Schluss oder setze ich mir zum Schluss mal kurz die Verkaufsmütze auf. Von Open Source Entwicklung kann man leider immer noch nicht leben. Also ich kriege natürlich ein bisschen Spenden von einzelnen Entwicklerinnen und von ein paar Firmen für meine Arbeit an Open Source Projekten, aber man kann mir Geld geben, damit ich euch helfe, mit dem Testen zu starten. Meine Firma the PHP Consulting Company, wir bieten alles rund um Wissenstransfer zur Softwareentwicklung an, Beratung, Schulung.",
+      "start": 4610424,
+      "end": 4661320,
+      "confidence": 0.9261861870503595,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Es ist natürlich auch so, auch wenn man nicht immer nur was zum Thema Testing lernen möchte, ich glaube, ihr bietet auch sowas an, dass ihr mal einen neutralen Blick auf die Software werft und dann sag mal, okay, das könnte man verbessern oder da ist euer Team einfach mal richtig gut, weil Lob darf man auch mal aussprechen.",
+      "start": 4661440,
+      "end": 4678850,
+      "confidence": 0.9330650847457628,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Ich glaube einfach, es überrascht immer so, wenn man lobt, weil man immer mit der Erwartung kommt, jetzt wird es ganz schlimm. Ja, ja. Also wir Architekturberatung, audits, all das machen wir und schauen uns die Software an und nehmen das Team dann an die Hand, vermitteln das Wissen, was notwendig ist, um Dinge besser zu machen und gehen direkt ins Doing und machen mit den Leuten in ihrer Code Basis direkt die praktische Umsetzung vom Gelernten.",
+      "start": 4678930,
+      "end": 4703202,
+      "confidence": 0.9075975324675324,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Bedeutet, wenn ihr ein bisschen mehr in diese ganze Thema Architektur und Testing einsteigen wollt, Kontaktdaten von Sebastian und natürlich auch von der PHP CC Firma findet ihr in den Shownotes, auch wie alle anderen Links. Sebastian, vielen lieben Dank, dass du dir die Zeit genommen hast, hier bei uns im Podcast aufzutauchen. Für alle, die es nicht sehen, das hatte ich noch gar nicht erwähnt, wir machen den Podcast. Wir nehmen den Podcast über einen Video Call auf und Sebastians Hintergrund. Wir haben gerade am Anfang ziemlich viel über Amiga gesprochen, aber er macht nicht nur alles immer digital, denn es scheint, er ist ein sehr, sehr großer Board Game bzw. Gesellschaftsspiele Fan. Und ich werde mal irgendwann aus dem Video einen Screenshot rauspacken, damit ihr die diese doch beachtliche Sammlung meines Erachtens nach dann auch mal sehen könnt. Und ich weiß nicht, ob man dich vielleicht auch irgendwo nach Bordspielemesse gibt, sowas bestimmt antrifft.",
+      "start": 4703266,
+      "end": 4758406,
+      "confidence": 0.8871483974358969,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Gibt es bestimmt und da bin ich auch zu finden.",
+      "start": 4758478,
+      "end": 4761050,
+      "confidence": 0.9816680000000002,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Super.",
+      "start": 4761910,
+      "end": 4762558,
+      "confidence": 0.9682,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Sebastian, vielen lieben Dank. Genießt deinen restlichen Tag an alle Hörerinnen und Hörer, ihr wisst, wo ihr Sebastian findet und ansonsten sage ich vielen Dank und bis bald. Tschüss.",
+      "start": 4762694,
+      "end": 4772486,
+      "confidence": 0.9007117241379309,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Tschüss.",
+      "start": 4772638,
+      "end": 4773206,
+      "confidence": 0.59698,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Danke. Ciao.",
+      "start": 4773318,
+      "end": 4773990,
+      "confidence": 0.524075,
+      "speaker": "B",
+      "channel": null
+    }
+  ],
+  "confidence": 0.9172147134256,
+  "audio_duration": 4724,
+  "webhook_status_code": null,
+  "webhook_auth": false,
+  "summary": null,
+  "auto_highlights_result": null,
+  "content_safety_labels": null,
+  "chapters": null,
+  "sentiment_analysis_results": null,
+  "entities": null
+}
