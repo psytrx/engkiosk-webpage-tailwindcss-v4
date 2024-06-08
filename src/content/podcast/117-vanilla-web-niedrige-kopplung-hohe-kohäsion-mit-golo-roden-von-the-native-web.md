@@ -1,4 +1,5 @@
 ---
+advertiser: 'Handelsblatt'
 amazon_music: https://music.amazon.com/podcasts/c35a09fe-4116-4e04-8f68-77d61b112e46/episodes/9e9d2635-a97e-4518-b56c-18971e31e1b8/engineering-kiosk-117-vanilla-web-niedrige-kopplung-hohe-koh%C3%A4sion-mit-golo-roden-von-the-native-web
 apple_podcasts: https://podcasts.apple.com/us/podcast/117-vanilla-web-niedrige-kopplung-hohe-koh%C3%A4sion-mit/id1603082924?i=1000651142427&uo=4
 audio: https://audio1.redcircle.com/episodes/e42910cd-67ee-4541-8d27-fafafaa4ced7/stream.mp3

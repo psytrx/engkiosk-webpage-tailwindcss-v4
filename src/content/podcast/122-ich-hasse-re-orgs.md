@@ -1,4 +1,5 @@
 ---
+advertiser: ''
 amazon_music: https://music.amazon.com/podcasts/c35a09fe-4116-4e04-8f68-77d61b112e46/episodes/f1d6d0c9-448f-46ae-9441-16fdaba4a8c6/engineering-kiosk-122-ich-hasse-re-orgs
 apple_podcasts: https://podcasts.apple.com/us/podcast/122-ich-hasse-re-orgs/id1603082924?i=1000654759175&uo=4
 audio: https://audio1.redcircle.com/episodes/41fcdc98-04d6-4a8b-b8e4-0cba599f8ede/stream.mp3

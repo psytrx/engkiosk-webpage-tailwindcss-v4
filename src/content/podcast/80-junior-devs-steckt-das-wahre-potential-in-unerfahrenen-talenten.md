@@ -1,4 +1,5 @@
 ---
+advertiser: ''
 amazon_music: https://music.amazon.com/podcasts/c35a09fe-4116-4e04-8f68-77d61b112e46/episodes/79f0c2a2-ed07-4b0b-bf64-c662c83a7879/engineering-kiosk-80-junior-devs-steckt-das-wahre-potential-in-unerfahrenen-talenten
 apple_podcasts: https://podcasts.apple.com/us/podcast/80-junior-devs-steckt-das-wahre-potential-in-unerfahrenen/id1603082924?i=1000621483681&uo=4
 audio: https://audio1.redcircle.com/episodes/5809e7ab-403c-4f95-ae21-b7b0b1f2128a/stream.mp3

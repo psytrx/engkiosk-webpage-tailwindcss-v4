@@ -1,4 +1,5 @@
 ---
+advertiser: ''
 amazon_music: https://music.amazon.com/podcasts/c35a09fe-4116-4e04-8f68-77d61b112e46/episodes/0550735b-e673-45ff-bd8b-67815763e651/engineering-kiosk-33-andy-im-team-lead-bewerbungsgespr%C3%A4ch
 apple_podcasts: https://podcasts.apple.com/us/podcast/33-andy-im-team-lead-bewerbungsgespr%C3%A4ch/id1603082924?i=1000577040259&uo=4
 audio: https://audio1.redcircle.com/episodes/69b11617-0285-4631-bf15-9121e0a0c30b/stream.mp3

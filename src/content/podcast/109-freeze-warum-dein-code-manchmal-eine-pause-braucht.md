@@ -1,4 +1,5 @@
 ---
+advertiser: ''
 amazon_music: https://music.amazon.com/podcasts/c35a09fe-4116-4e04-8f68-77d61b112e46/episodes/e9612ddd-12d8-42ae-8b63-520e52e76300/engineering-kiosk-109-freeze-warum-dein-code-manchmal-eine-pause-braucht
 apple_podcasts: https://podcasts.apple.com/us/podcast/109-freeze-warum-dein-code-manchmal-eine-pause-braucht/id1603082924?i=1000644304664&uo=4
 audio: https://audio1.redcircle.com/episodes/ab06dd36-5bbe-4c2b-9b19-b02be47e6a68/stream.mp3

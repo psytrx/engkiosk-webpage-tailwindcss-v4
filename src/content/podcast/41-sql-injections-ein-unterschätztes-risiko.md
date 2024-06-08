@@ -1,4 +1,5 @@
 ---
+advertiser: ''
 amazon_music: https://music.amazon.com/podcasts/c35a09fe-4116-4e04-8f68-77d61b112e46/episodes/1aa39b24-8c09-496d-9505-20c0ddb6981d/engineering-kiosk-41-sql-injections---ein-untersch%C3%A4tztes-risiko
 apple_podcasts: https://podcasts.apple.com/us/podcast/41-sql-injections-ein-untersch%C3%A4tztes-risiko/id1603082924?i=1000582974713&uo=4
 audio: https://audio1.redcircle.com/episodes/51d3390e-ffce-4ec6-a6d9-350dc0cd163b/stream.mp3

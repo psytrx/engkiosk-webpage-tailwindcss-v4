@@ -1,4 +1,5 @@
 ---
+advertiser: ''
 amazon_music: https://music.amazon.com/podcasts/c35a09fe-4116-4e04-8f68-77d61b112e46/episodes/2d950303-1f89-4f52-be56-c19594b41029/engineering-kiosk-31-ich-automatisiere-mir-die-welt-wie-sie-mir-gef%C3%A4llt-mit-github-actions
 apple_podcasts: https://podcasts.apple.com/us/podcast/31-ich-automatisiere-mir-die-welt-wie-sie-mir-gef%C3%A4llt/id1603082924?i=1000575453470&uo=4
 audio: https://audio1.redcircle.com/episodes/b66c9d23-eee3-438d-9a7c-5ede3ec90491/stream.mp3

@@ -1,4 +1,5 @@
 ---
+advertiser: ''
 amazon_music: https://music.amazon.com/podcasts/c35a09fe-4116-4e04-8f68-77d61b112e46/episodes/d97a8967-066c-42f6-9ada-257b8babb3b0/engineering-kiosk-18-ziele-und-performance-metriken-f%C3%BCr-teams-und-mich-selbst
 apple_podcasts: https://podcasts.apple.com/us/podcast/18-ziele-und-performance-metriken-f%C3%BCr-teams-und-mich-selbst/id1603082924?i=1000560207020
 audio: https://audio1.redcircle.com/episodes/0e0b7c29-15dd-4a06-aeaa-3bd87ebad9aa/stream.mp3

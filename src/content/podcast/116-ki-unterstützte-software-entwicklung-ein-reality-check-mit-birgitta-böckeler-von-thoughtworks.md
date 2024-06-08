@@ -1,4 +1,5 @@
 ---
+advertiser: 'IU Internationale Hochschule'
 amazon_music: https://music.amazon.com/podcasts/c35a09fe-4116-4e04-8f68-77d61b112e46/episodes/28d9baeb-f5ca-4b44-a7bf-9995a74872b5/engineering-kiosk-116-ki-unterst%C3%BCtzte-software-entwicklung-ein-reality-check-mit-birgitta-b%C3%B6ckeler-von-thoughtworks
 apple_podcasts: https://podcasts.apple.com/us/podcast/116-ki-unterst%C3%BCtzte-software-entwicklung-ein-reality/id1603082924?i=1000650450310&uo=4
 audio: https://audio1.redcircle.com/episodes/1d196f88-2c88-4853-8589-c40d829853b4/stream.mp3

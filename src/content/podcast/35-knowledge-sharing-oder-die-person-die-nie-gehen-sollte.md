@@ -1,4 +1,5 @@
 ---
+advertiser: ''
 amazon_music: https://music.amazon.com/podcasts/c35a09fe-4116-4e04-8f68-77d61b112e46/episodes/6942efb9-ecab-496c-8193-3b4fec4a87c9/engineering-kiosk-35-knowledge-sharing-oder-die-person-die-nie-gehen-sollte
 apple_podcasts: https://podcasts.apple.com/us/podcast/35-knowledge-sharing-oder-die-person-die-nie-gehen-sollte/id1603082924?i=1000578487137&uo=4
 audio: https://audio1.redcircle.com/episodes/d1f80691-ab3f-48d5-889d-309d64f399f8/stream.mp3

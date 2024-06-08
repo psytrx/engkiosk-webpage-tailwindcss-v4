@@ -1,4 +1,5 @@
 ---
+advertiser: ''
 amazon_music: https://music.amazon.com/podcasts/c35a09fe-4116-4e04-8f68-77d61b112e46/episodes/7eb7fbdf-9a61-4d85-bd7c-c9ef89e81e9f/engineering-kiosk-70-alan-turing-der-vater-der-heutigen-informatik-turing-complete-turing-test-halting-problem-turing-maschine-captcha
 apple_podcasts: https://podcasts.apple.com/us/podcast/70-alan-turing-der-vater-der-heutigen-informatik-turing/id1603082924?i=1000612267909&uo=4
 audio: https://audio1.redcircle.com/episodes/09191ebd-f313-4ef9-9c77-b2a32217ca2c/stream.mp3

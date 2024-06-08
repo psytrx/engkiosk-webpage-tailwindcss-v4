@@ -1,4 +1,5 @@
 ---
+advertiser: ''
 amazon_music: https://music.amazon.com/podcasts/c35a09fe-4116-4e04-8f68-77d61b112e46/episodes/3dbb8bc3-645b-4b36-9e8b-67c617d69375/engineering-kiosk-56-applikations-skalierung-wann-wieso-was-kostet-es-stateless-und-stateful-horizontal-vs-vertikal
 apple_podcasts: https://podcasts.apple.com/us/podcast/56-applikations-skalierung-wann-wieso-was-kostet-es/id1603082924?i=1000597357438&uo=4
 audio: https://audio1.redcircle.com/episodes/c3af9548-59fe-4cf7-934a-878aa505b686/stream.mp3

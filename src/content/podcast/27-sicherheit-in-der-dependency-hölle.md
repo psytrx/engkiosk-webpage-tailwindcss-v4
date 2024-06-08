@@ -1,4 +1,5 @@
 ---
+advertiser: ''
 amazon_music: https://music.amazon.com/podcasts/c35a09fe-4116-4e04-8f68-77d61b112e46/episodes/e8d90855-9b3f-419c-9542-57c3a97b4b77/engineering-kiosk-27-sicherheit-in-der-dependency-h%C3%B6lle
 apple_podcasts: https://podcasts.apple.com/us/podcast/27-sicherheit-in-der-dependency-h%C3%B6lle/id1603082924?i=1000569619207&uo=4
 audio: https://audio1.redcircle.com/episodes/c7e9056c-7eb5-467d-a127-846879640678/stream.mp3

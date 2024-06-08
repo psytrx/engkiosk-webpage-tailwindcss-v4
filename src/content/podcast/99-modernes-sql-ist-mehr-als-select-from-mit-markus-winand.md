@@ -1,4 +1,5 @@
 ---
+advertiser: ''
 amazon_music: https://music.amazon.com/podcasts/c35a09fe-4116-4e04-8f68-77d61b112e46/episodes/f449ed0c-f718-4589-803f-c9f946c6ed90/engineering-kiosk-99-modernes-sql-ist-mehr-als-select-from---mit-markus-winand
 apple_podcasts: https://podcasts.apple.com/us/podcast/99-modernes-sql-ist-mehr-als-select-from-mit-markus-winand/id1603082924?i=1000636736246&uo=4
 audio: https://audio1.redcircle.com/episodes/8c47c4e8-31ce-49d1-bc3d-12f56e074e8a/stream.mp3

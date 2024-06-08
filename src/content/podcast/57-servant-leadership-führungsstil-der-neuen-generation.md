@@ -1,4 +1,5 @@
 ---
+advertiser: ''
 amazon_music: https://music.amazon.com/podcasts/c35a09fe-4116-4e04-8f68-77d61b112e46/episodes/aac42988-d496-4ab5-bf61-111fe8fff9cb/engineering-kiosk-57-servant-leadership-f%C3%BChrungsstil-der-neuen-generation
 apple_podcasts: https://podcasts.apple.com/us/podcast/57-servant-leadership-f%C3%BChrungsstil-der-neuen-generation/id1603082924?i=1000598385014&uo=4
 audio: https://audio1.redcircle.com/episodes/bf8cce4e-1429-46dc-af38-50386761964a/stream.mp3

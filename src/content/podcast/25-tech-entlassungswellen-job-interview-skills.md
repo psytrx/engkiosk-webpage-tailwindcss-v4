@@ -1,4 +1,5 @@
 ---
+advertiser: ''
 amazon_music: https://music.amazon.com/podcasts/c35a09fe-4116-4e04-8f68-77d61b112e46/episodes/8f536d85-6866-4272-b9e9-605ce637757f/engineering-kiosk-25-tech-entlassungswellen-job-interview-skills
 apple_podcasts: https://podcasts.apple.com/us/podcast/25-tech-entlassungswellen-job-interview-skills/id1603082924?i=1000567936094&uo=4
 audio: https://audio1.redcircle.com/episodes/543a3dd5-93fb-42a7-b61d-514816f9d4bd/stream.mp3

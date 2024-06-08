@@ -1,4 +1,5 @@
 ---
+advertiser: ''
 amazon_music: https://music.amazon.com/podcasts/c35a09fe-4116-4e04-8f68-77d61b112e46/episodes/32005152-5853-4d9e-a37f-565996c54508/engineering-kiosk-73-cache-freundliches-programmieren-cpu-caches-ersetzungsstrategien-und-cache-invalidierung
 apple_podcasts: https://podcasts.apple.com/us/podcast/73-cache-freundliches-programmieren-cpu-caches-ersetzungsstrategien/id1603082924?i=1000614941494&uo=4
 audio: https://audio1.redcircle.com/episodes/c4c3001c-2a6c-4384-9409-474583b5fb53/stream.mp3

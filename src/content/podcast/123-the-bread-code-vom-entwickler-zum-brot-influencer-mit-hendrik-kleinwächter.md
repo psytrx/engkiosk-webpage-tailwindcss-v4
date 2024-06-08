@@ -1,4 +1,5 @@
 ---
+advertiser: ''
 amazon_music: https://music.amazon.com/podcasts/c35a09fe-4116-4e04-8f68-77d61b112e46/episodes/b4c3219c-10d0-4f7e-a04e-58e2c0f90718/engineering-kiosk-123-the-bread-code-vom-entwickler-zum-brot-influencer-mit-hendrik-kleinw%C3%A4chter
 apple_podcasts: https://podcasts.apple.com/us/podcast/123-the-bread-code-vom-entwickler-zum-brot-influencer/id1603082924?i=1000655514958&uo=4
 audio: https://audio1.redcircle.com/episodes/6b2ecca1-a2ff-4da0-b55c-eb5cc0577399/stream.mp3

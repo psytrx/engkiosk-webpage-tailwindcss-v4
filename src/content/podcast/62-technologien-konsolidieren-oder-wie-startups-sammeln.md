@@ -1,4 +1,5 @@
 ---
+advertiser: ''
 amazon_music: https://music.amazon.com/podcasts/c35a09fe-4116-4e04-8f68-77d61b112e46/episodes/3ec8653e-b012-4152-9820-6e2c35cbfbfc/engineering-kiosk-62-technologien-konsolidieren-oder-wie-startups-sammeln
 apple_podcasts: https://podcasts.apple.com/us/podcast/62-technologien-konsolidieren-oder-wie-startups-sammeln/id1603082924?i=1000604053727&uo=4
 audio: https://audio1.redcircle.com/episodes/6a30b75c-16a5-4fc8-b7d6-70b9fae6c9ae/stream.mp3

@@ -1,4 +1,5 @@
 ---
+advertiser: ''
 amazon_music: https://music.amazon.com/podcasts/c35a09fe-4116-4e04-8f68-77d61b112e46/episodes/06af1212-634d-416e-9195-6255d68943a4/engineering-kiosk-21-static-site-generators-die-webseite
 apple_podcasts: https://podcasts.apple.com/de/podcast/21-static-site-generators-die-webseite/id1603082924?i=1000564628540
 audio: https://audio1.redcircle.com/episodes/a2744dda-da03-476a-bcc8-f6646e8b0c95/stream.mp3

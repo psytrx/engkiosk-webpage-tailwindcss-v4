@@ -1,4 +1,5 @@
 ---
+advertiser: ''
 amazon_music: https://music.amazon.com/podcasts/c35a09fe-4116-4e04-8f68-77d61b112e46/episodes/75cadcb5-b937-4df5-a417-7deac2488676/engineering-kiosk-22-nosql-acid-base-ende-einer-%C3%A4ra-teil-2
 apple_podcasts: https://podcasts.apple.com/us/podcast/22-nosql-acid-base-ende-einer-%C3%A4ra-teil-2/id1603082924?i=1000565464152&uo=4
 audio: https://audio1.redcircle.com/episodes/57035bbc-8934-4a78-8416-61fa02778ab4/stream.mp3

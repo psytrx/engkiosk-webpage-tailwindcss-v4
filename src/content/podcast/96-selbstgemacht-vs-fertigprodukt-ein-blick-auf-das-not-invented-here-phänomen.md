@@ -1,4 +1,5 @@
 ---
+advertiser: ''
 amazon_music: https://music.amazon.com/podcasts/c35a09fe-4116-4e04-8f68-77d61b112e46/episodes/22d8ee88-4744-4892-a79e-8656b6442bea/engineering-kiosk-96-selbstgemacht-vs-fertigprodukt-ein-blick-auf-das-not-invented-here-ph%C3%A4nomen
 apple_podcasts: https://podcasts.apple.com/us/podcast/96-selbstgemacht-vs-fertigprodukt-ein-blick-auf-das/id1603082924?i=1000633943908&uo=4
 audio: https://audio1.redcircle.com/episodes/f6932fa8-172b-4ff2-8f00-107a2a2503f0/stream.mp3

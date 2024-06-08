@@ -1,4 +1,5 @@
 ---
+advertiser: ''
 amazon_music: https://music.amazon.com/podcasts/c35a09fe-4116-4e04-8f68-77d61b112e46/episodes/bc377094-e1cf-4de2-86c9-771ed0aa7477/engineering-kiosk-125-die-kunst-der-technischen-dokumentation-mit-jana-aydinbas
 apple_podcasts: https://podcasts.apple.com/us/podcast/125-die-kunst-der-technischen-dokumentation-mit-jana/id1603082924?i=1000656984273&uo=4
 audio: https://audio1.redcircle.com/episodes/a45c1ba1-3139-427d-9dde-4a1806861157/stream.mp3

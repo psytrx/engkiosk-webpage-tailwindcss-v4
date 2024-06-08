@@ -1,4 +1,5 @@
 ---
+advertiser: ''
 amazon_music: https://music.amazon.com/podcasts/c35a09fe-4116-4e04-8f68-77d61b112e46/episodes/bd4e3f9d-4a06-4954-b5fe-63d7b71208aa/engineering-kiosk-02-technologienzoo-side-projects
 apple_podcasts: https://podcasts.apple.com/us/podcast/02-technologienzoo-side-projects/id1603082924?i=1000547431502
 audio: https://audio1.redcircle.com/episodes/7cce4a7c-8405-40c3-a9bf-dd902f0a07d8/stream.mp3

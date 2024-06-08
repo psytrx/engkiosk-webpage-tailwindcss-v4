@@ -1,4 +1,5 @@
 ---
+advertiser: ''
 amazon_music: https://music.amazon.com/podcasts/c35a09fe-4116-4e04-8f68-77d61b112e46/episodes/3c35275b-250a-4bcb-9933-d697cc236085/engineering-kiosk-77-kinder-coding-und-ai-die-zukunft-der-informatik-bildung-mit-diana-knodel
 apple_podcasts: https://podcasts.apple.com/us/podcast/77-kinder-coding-und-ai-die-zukunft-der-informatik/id1603082924?i=1000618442143&uo=4
 audio: https://audio1.redcircle.com/episodes/c2267db9-951c-4ab1-89aa-78f2be5bfe67/stream.mp3
