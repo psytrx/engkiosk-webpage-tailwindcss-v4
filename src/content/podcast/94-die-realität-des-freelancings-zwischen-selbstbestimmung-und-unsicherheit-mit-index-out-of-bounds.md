@@ -1,5 +1,5 @@
 ---
-advertiser: 'Workshops.de'
+advertiser: Workshops.de
 amazon_music: https://music.amazon.com/podcasts/c35a09fe-4116-4e04-8f68-77d61b112e46/episodes/cedbb666-a8f0-4220-902a-bccc641f5c32/engineering-kiosk-94-die-realit%C3%A4t-des-freelancings-zwischen-selbstbestimmung-und-unsicherheit-mit-index-out-of-bounds
 apple_podcasts: https://podcasts.apple.com/us/podcast/94-die-realit%C3%A4t-des-freelancings-zwischen-selbstbestimmung/id1603082924?i=1000632389239&uo=4
 audio: https://audio1.redcircle.com/episodes/b7e59af5-cd61-4f6c-97d8-9baab461a562/stream.mp3
@@ -119,6 +119,8 @@ tags:
 - Interview
 title: "#94 Die Realit\xE4t des Freelancings: Zwischen Selbstbestimmung und Unsicherheit\
   \ mit Index out of bounds"
+transcript_raw: src/data/transcripts/94-transcript.zip
+transcript_slim: src/data/transcripts/94-transcript-slim.json
 youtube: https://youtu.be/hJn8X5Gfico
 
 ---

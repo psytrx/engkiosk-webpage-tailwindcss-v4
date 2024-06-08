@@ -58,6 +58,8 @@ tags:
 - Turing Award
 title: '#70 Alan Turing: Der Vater der heutigen Informatik (Turing-Complete, Turing-Test,
   Halting-Problem, Turing-Maschine, Captcha)'
+transcript_raw: src/data/transcripts/70-transcript.zip
+transcript_slim: src/data/transcripts/70-transcript-slim.json
 youtube: https://www.youtube.com/watch?v=_OEvB3Skcsg
 
 ---

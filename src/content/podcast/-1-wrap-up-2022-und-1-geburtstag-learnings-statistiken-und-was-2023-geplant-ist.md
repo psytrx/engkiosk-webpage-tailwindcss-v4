@@ -51,6 +51,8 @@ tags:
 - Engineering Kiosk
 title: '#-1: Wrap Up 2022 und 1. Geburtstag: Learnings, Statistiken und was 2023 geplant
   ist'
+transcript_raw: src/data/transcripts/-1-transcript.zip
+transcript_slim: src/data/transcripts/-1-transcript-slim.json
 youtube: https://youtu.be/AMJzKWYsHgY
 
 ---

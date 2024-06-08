@@ -81,6 +81,8 @@ tags:
 - Backend
 title: '#78 Microservice & Monolith: Was die Industrie in den letzten 9 Jahren gelernt
   hat'
+transcript_raw: src/data/transcripts/78-transcript.zip
+transcript_slim: src/data/transcripts/78-transcript-slim.json
 youtube: https://youtu.be/JAN2qHSXUeA
 
 ---

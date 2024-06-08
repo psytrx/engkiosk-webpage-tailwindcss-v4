@@ -76,6 +76,8 @@ spotify: https://open.spotify.com/episode/4TZwqBTtO2fNDt8XjQXjuR
 tags:
 - Engineering Kiosk
 title: "#00 Developer fangen bei 0 an zu z\xE4hlen"
+transcript_raw: src/data/transcripts/00-transcript.zip
+transcript_slim: src/data/transcripts/00-transcript-slim.json
 youtube: https://www.youtube.com/watch?v=dwe_Xw1IVzU
 
 ---

@@ -1,5 +1,5 @@
 ---
-advertiser: 'Media Lab Bayern'
+advertiser: Media Lab Bayern
 amazon_music: https://music.amazon.com/podcasts/c35a09fe-4116-4e04-8f68-77d61b112e46/episodes/1f4e3a28-fb66-48c5-a59b-55aa5b4528fa/engineering-kiosk-52-asynchrone-verarbeitung-durch-message-queues---vor--und-nachteile
 apple_podcasts: https://podcasts.apple.com/de/podcast/52-asynchrone-verarbeitung-durch-message-queues-vor/id1603082924?i=1000591978596
 audio: https://audio1.redcircle.com/episodes/5f100418-9dc0-463b-9033-bf99e1b6da3c/stream.mp3
@@ -78,6 +78,8 @@ tags:
 - Software Engineering
 - Open Source
 title: '#52 Asynchrone Verarbeitung durch Message Queues - Vor- und Nachteile'
+transcript_raw: src/data/transcripts/52-transcript.zip
+transcript_slim: src/data/transcripts/52-transcript-slim.json
 youtube: https://www.youtube.com/watch?v=ew9SFEmpbOg
 
 ---

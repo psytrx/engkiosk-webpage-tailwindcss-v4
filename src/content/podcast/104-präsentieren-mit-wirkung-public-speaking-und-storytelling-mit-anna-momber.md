@@ -68,6 +68,8 @@ tags:
 - Women in Tech
 title: "#104 Pr\xE4sentieren mit Wirkung: Public Speaking und Storytelling mit Anna\
   \ Momber"
+transcript_raw: src/data/transcripts/104-transcript.zip
+transcript_slim: src/data/transcripts/104-transcript-slim.json
 youtube: https://www.youtube.com/watch?v=belzrZARW7U
 
 ---

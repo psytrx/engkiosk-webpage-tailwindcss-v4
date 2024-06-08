@@ -80,6 +80,8 @@ spotify: https://open.spotify.com/episode/7uPMZDpC2KQ5ZMbAtAN2S7
 tags:
 - Datenbanken
 title: "#22 NoSQL: ACID, BASE, Ende einer \xC4ra Teil 2"
+transcript_raw: src/data/transcripts/22-transcript.zip
+transcript_slim: src/data/transcripts/22-transcript-slim.json
 youtube: https://www.youtube.com/watch?v=0bjnqEWrn3k
 
 ---

@@ -84,6 +84,8 @@ tags:
 - Interview
 title: '#76 Mit Open Source 100.000$ verdienen, Sponsorware und Plattform-Risiken
   bei GitHub mit Martin Donath'
+transcript_raw: src/data/transcripts/76-transcript.zip
+transcript_slim: src/data/transcripts/76-transcript-slim.json
 youtube: https://youtu.be/_qIbIw0yZHU
 
 ---

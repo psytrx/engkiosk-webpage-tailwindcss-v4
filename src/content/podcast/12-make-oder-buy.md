@@ -74,6 +74,8 @@ tags:
 - "Produktivit\xE4t"
 - Cloud
 title: '#12 Make oder Buy'
+transcript_raw: src/data/transcripts/12-transcript.zip
+transcript_slim: src/data/transcripts/12-transcript-slim.json
 youtube: https://www.youtube.com/watch?v=6P5E-iHeMkk
 
 ---

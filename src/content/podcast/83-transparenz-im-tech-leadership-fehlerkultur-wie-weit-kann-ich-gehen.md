@@ -69,6 +69,8 @@ tags:
 - Kommunikation
 - Leadership
 title: '#83 Transparenz im Tech-Leadership & Fehlerkultur: Wie weit kann ich gehen?'
+transcript_raw: src/data/transcripts/83-transcript.zip
+transcript_slim: src/data/transcripts/83-transcript-slim.json
 youtube: https://youtu.be/Y75j_UjFb9Q
 
 ---

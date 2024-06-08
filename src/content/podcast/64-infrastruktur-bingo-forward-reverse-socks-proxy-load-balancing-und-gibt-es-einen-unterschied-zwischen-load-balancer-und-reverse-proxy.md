@@ -75,6 +75,8 @@ tags:
 - Cloud
 title: '#64 Infrastruktur-Bingo: Forward-, Reverse-, SOCKS-Proxy, Load Balancing und
   gibt es einen Unterschied zwischen Load-Balancer und Reverse-Proxy?'
+transcript_raw: src/data/transcripts/64-transcript.zip
+transcript_slim: src/data/transcripts/64-transcript-slim.json
 youtube: https://www.youtube.com/watch?v=j6R512nHB4E
 
 ---

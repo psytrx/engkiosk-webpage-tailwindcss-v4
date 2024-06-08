@@ -69,6 +69,8 @@ tags:
 - Software Engineering
 - Cloud
 title: '#38 Monitoring, Metriken, Tracing, Alerting, Observability'
+transcript_raw: src/data/transcripts/38-transcript.zip
+transcript_slim: src/data/transcripts/38-transcript-slim.json
 youtube: https://www.youtube.com/watch?v=mnsIq8msouo
 
 ---

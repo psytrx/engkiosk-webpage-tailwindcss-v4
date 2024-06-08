@@ -72,6 +72,8 @@ tags:
 - Interview
 - Datenbanken
 title: '#99 Modernes SQL ist mehr als SELECT * FROM - mit Markus Winand'
+transcript_raw: src/data/transcripts/99-transcript.zip
+transcript_slim: src/data/transcripts/99-transcript-slim.json
 youtube: https://youtu.be/okw42PNioJQ
 
 ---

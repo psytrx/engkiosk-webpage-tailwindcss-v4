@@ -68,6 +68,8 @@ spotify: https://open.spotify.com/episode/0uT54qYXLeoYPIerWNK6WY
 tags:
 - Side Projects
 title: "#01 Side Projects - Fluch oder Segen f\xFCr die Karriere?"
+transcript_raw: src/data/transcripts/01-transcript.zip
+transcript_slim: src/data/transcripts/01-transcript-slim.json
 youtube: https://www.youtube.com/watch?v=u-JSOLHD1NI
 
 ---

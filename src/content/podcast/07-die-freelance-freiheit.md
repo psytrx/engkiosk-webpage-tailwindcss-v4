@@ -82,6 +82,8 @@ tags:
 - Karriere
 - "Produktivit\xE4t"
 title: '#07 Die Freelance Freiheit'
+transcript_raw: src/data/transcripts/07-transcript.zip
+transcript_slim: src/data/transcripts/07-transcript-slim.json
 youtube: https://www.youtube.com/watch?v=rdFzorKTqck
 
 ---

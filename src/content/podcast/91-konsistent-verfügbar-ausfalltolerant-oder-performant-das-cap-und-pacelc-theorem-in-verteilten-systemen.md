@@ -1,5 +1,5 @@
 ---
-advertiser: 'trivago'
+advertiser: trivago
 amazon_music: https://music.amazon.com/podcasts/c35a09fe-4116-4e04-8f68-77d61b112e46/episodes/b5fcebfa-b7b8-4558-892f-7ab0f0947bbe/engineering-kiosk-91-konsistent-verf%C3%BCgbar-ausfalltolerant-oder-performant-das-cap--und-pacelc-theorem-in-verteilten-systemen
 apple_podcasts: https://podcasts.apple.com/us/podcast/91-konsistent-verf%C3%BCgbar-ausfalltolerant-oder-performant/id1603082924?i=1000629992728&uo=4
 audio: https://audio1.redcircle.com/episodes/2f6b4d3d-af38-4f97-ad65-5cc65eaaf79a/stream.mp3
@@ -90,6 +90,8 @@ tags:
 - Cloud
 title: "#91 Konsistent, Verf\xFCgbar, Ausfalltolerant oder Performant: Das CAP- und\
   \ PACELC-Theorem in verteilten Systemen"
+transcript_raw: src/data/transcripts/91-transcript.zip
+transcript_slim: src/data/transcripts/91-transcript-slim.json
 youtube: https://youtu.be/Uk4PzoF5sAg
 
 ---

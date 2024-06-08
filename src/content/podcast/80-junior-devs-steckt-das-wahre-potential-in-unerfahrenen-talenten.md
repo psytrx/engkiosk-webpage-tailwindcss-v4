@@ -74,6 +74,8 @@ tags:
 - Bewerbung
 - Leadership
 title: '#80 Junior Devs: Steckt das wahre Potential in unerfahrenen Talenten?'
+transcript_raw: src/data/transcripts/80-transcript.zip
+transcript_slim: src/data/transcripts/80-transcript-slim.json
 youtube: https://youtu.be/IzDsvTymIxg
 
 ---

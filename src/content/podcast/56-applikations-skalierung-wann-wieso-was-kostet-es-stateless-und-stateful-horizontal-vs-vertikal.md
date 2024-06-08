@@ -66,6 +66,8 @@ tags:
 - Cloud
 title: '#56 Applikations-Skalierung: Wann, wieso, was kostet es? Stateless und Stateful,
   Horizontal vs. Vertikal'
+transcript_raw: src/data/transcripts/56-transcript.zip
+transcript_slim: src/data/transcripts/56-transcript-slim.json
 youtube: https://www.youtube.com/watch?v=fpWfjz3YjPg
 
 ---

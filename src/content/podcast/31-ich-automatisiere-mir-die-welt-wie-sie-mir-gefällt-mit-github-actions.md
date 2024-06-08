@@ -75,6 +75,8 @@ tags:
 - Software Engineering
 - "Software Qualit\xE4t"
 title: "#31 Ich automatisiere mir die Welt wie sie mir gef\xE4llt (mit GitHub Actions)"
+transcript_raw: src/data/transcripts/31-transcript.zip
+transcript_slim: src/data/transcripts/31-transcript-slim.json
 youtube: https://www.youtube.com/watch?v=hJoA3jMZQ38
 
 ---

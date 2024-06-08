@@ -81,6 +81,8 @@ tags:
 - Backend
 - Sicherheit
 title: "#27 Sicherheit in der Dependency H\xF6lle"
+transcript_raw: src/data/transcripts/27-transcript.zip
+transcript_slim: src/data/transcripts/27-transcript-slim.json
 youtube: https://www.youtube.com/watch?v=8K3ccal3BnI
 
 ---
