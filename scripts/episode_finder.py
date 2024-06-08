@@ -2,8 +2,9 @@ import os
 from os.path import isfile, join
 import re
 
-# External libraries
-import frontmatter
+from episode import (
+    Episode
+)
 
 class EpisodeFinder:
     def __init__(self, episode_storage_path):
@@ -23,15 +24,14 @@ class EpisodeFinder:
         episodes = [f for f in os.listdir(self.__episode_storage_path) if isfile(join(self.__episode_storage_path, f)) and f.endswith('.md')]
         for episode in episodes:
             episode_file_path = os.path.join(self.__episode_storage_path, episode)
-            with open(episode_file_path) as f:
-                episode_frontmatter = frontmatter.load(f)
+            episode_object = Episode(episode_file_path)
 
             # Frontmatter by episode filename
-            self.__episodes_by_filename[episode_file_path] = episode_frontmatter
+            self.__episodes_by_filename[episode_file_path] = episode_object
 
             # Frontmatter by episode number
             episode_number = self.get_episode_number_from_filename(episode_file_path)
-            self.__episodes_by_number[episode_number] = episode_frontmatter
+            self.__episodes_by_number[episode_number] = episode_object
     
     def get_episodes(self):
         """

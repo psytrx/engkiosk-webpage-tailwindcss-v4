@@ -45,7 +45,7 @@ def build_episode_statistics(path_md_files) -> dict:
     episodes = episode_finder.get_episodes()
     for episode in episodes.values():
         stats['number_of_episodes'] += 1
-        stats['total_length_seconds'] += episode['length_second']
+        stats['total_length_seconds'] += episode.get('length_second')
             
     return stats
 
@@ -78,10 +78,10 @@ def build_episode_speaking_time_statistics(path_md_files) -> dict:
         transcript_data = get_podcast_episode_transcript_by_number(episode_number)
 
         speaker_map = {}
-        for s in episode['speaker']:
+        for s in episode.get('speaker'):
             speaker_map[s['transcriptLetter']] = s['name']
 
-        overall_speaking_time['total_length_s'] += episode['length_second']
+        overall_speaking_time['total_length_s'] += episode.get('length_second')
 
         ms_sum = 0
         speaking_time = {}
@@ -99,7 +99,7 @@ def build_episode_speaking_time_statistics(path_md_files) -> dict:
             speaking_time[speaker] += length
             overall_speaking_time['speaker'][speaker] += length
 
-        episode_length_ms = episode['length_second'] * 1000
+        episode_length_ms = episode.get('length_second') * 1000
         if ms_sum < episode_length_ms:
             leftover_ms = episode_length_ms - ms_sum
             speaking_time['Unbekannt'] = leftover_ms
@@ -112,9 +112,9 @@ def build_episode_speaking_time_statistics(path_md_files) -> dict:
         sorted_speaking_time = dict(sorted(speaking_time.items(), key=lambda item: item[1], reverse=True))
         episode_speaking_time.append({
             'speaking': sorted_speaking_time,
-            'title': episode['title'],
-            'pubDate': episode['pubDate'],
-            'length_second': episode['length_second'],
+            'title': episode.get('title'),
+            'pubDate': episode.get('pubDate'),
+            'length_second': episode.get('length_second'),
         })
 
     # Sort episodes by publishing date
