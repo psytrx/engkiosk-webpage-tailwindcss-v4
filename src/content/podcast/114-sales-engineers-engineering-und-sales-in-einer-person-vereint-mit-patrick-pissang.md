@@ -1,5 +1,5 @@
 ---
-advertiser: ''
+advertiser: 'Media Lab Bayern'
 amazon_music: https://music.amazon.com/podcasts/c35a09fe-4116-4e04-8f68-77d61b112e46/episodes/df43de72-9bb4-44a9-bd1b-76f19e2edd83/engineering-kiosk-114-sales-engineers-engineering-und-sales-in-einer-person-vereint-mit-patrick-pissang
 apple_podcasts: https://podcasts.apple.com/us/podcast/114-sales-engineers-engineering-und-sales-in-einer/id1603082924?i=1000648861048&uo=4
 audio: https://audio1.redcircle.com/episodes/0408568e-3d36-4054-b0a5-754217c3910b/stream.mp3

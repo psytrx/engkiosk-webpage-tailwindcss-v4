@@ -1,5 +1,5 @@
 ---
-advertiser: ''
+advertiser: 'Media Lab Bayern'
 amazon_music: https://music.amazon.com/podcasts/c35a09fe-4116-4e04-8f68-77d61b112e46/episodes/5a38dcbb-d183-4a93-baeb-bf39937c2b7c/engineering-kiosk-84-die-evolution-von-javascript-vom-ducktyping-zum-monopol-im-browser-mit-peter-kr%C3%B6ner
 apple_podcasts: https://podcasts.apple.com/us/podcast/84-die-evolution-von-javascript-vom-ducktyping-zum/id1603082924?i=1000624471764&uo=4
 audio: https://audio1.redcircle.com/episodes/3f53b8b5-059d-4369-b4de-ebfd7f0f9444/stream.mp3

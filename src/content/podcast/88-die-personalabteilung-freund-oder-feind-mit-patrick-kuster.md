@@ -1,5 +1,5 @@
 ---
-advertiser: ''
+advertiser: 'Synsugar'
 amazon_music: https://music.amazon.com/podcasts/c35a09fe-4116-4e04-8f68-77d61b112e46/episodes/45398a48-774e-404b-a740-1913fea1b415/engineering-kiosk-88-die-personalabteilung-freund-oder-feind-mit-patrick-kuster
 apple_podcasts: https://podcasts.apple.com/us/podcast/88-die-personalabteilung-freund-oder-feind-mit-patrick/id1603082924?i=1000627552935&uo=4
 audio: https://audio1.redcircle.com/episodes/211295fe-9079-453f-a2b0-2efed15cf6e6/stream.mp3
