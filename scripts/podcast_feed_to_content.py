@@ -16,6 +16,8 @@ from urllib.parse import urlparse
 import pathlib
 
 from functions import (
+    EPISODES_STORAGE_DIR,
+    EPISODES_IMAGES_STORAGE_DIR,
     get_podcast_episode_number_from_filename_number,
     get_podcast_episode_transcript_slim_path_by_episode_number,
     get_podcast_episode_transcript_raw_path_by_episode_number
@@ -32,8 +34,6 @@ from pyyoutube import Client as YoutubeClient
 
 # Global variables
 PODCAST_RSS_FEED = "https://feeds.redcircle.com/0ecfdfd7-fda1-4c3d-9515-476727f9df5e"
-PATH_MARKDOWN_FILES = 'src/content/podcast'
-PATH_IMAGE_FILES = 'src/content/podcast'
 TOML_FILE = 'netlify.toml'
 REDIRECT_PREFIX = '/episodes/'
 
@@ -724,6 +724,6 @@ if __name__ == "__main__":
                     sys.exit(1)
                 youtube_client = YoutubeClient(api_key=YOUTUBE_API_KEY)
 
-            sync_podcast_episodes(PODCAST_RSS_FEED, f"{folder_prefix}{PATH_MARKDOWN_FILES}", f"{folder_prefix}{PATH_IMAGE_FILES}", no_api_calls=args.no_api_calls, spotify_client=spotify_client, youtube_client=youtube_client)
+            sync_podcast_episodes(PODCAST_RSS_FEED, f"{folder_prefix}{EPISODES_STORAGE_DIR}", f"{folder_prefix}{EPISODES_IMAGES_STORAGE_DIR}", no_api_calls=args.no_api_calls, spotify_client=spotify_client, youtube_client=youtube_client)
         case "redirect":
-            create_redirects(TOML_FILE, PATH_MARKDOWN_FILES, REDIRECT_PREFIX)
+            create_redirects(TOML_FILE, EPISODES_STORAGE_DIR, REDIRECT_PREFIX)

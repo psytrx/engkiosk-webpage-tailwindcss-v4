@@ -5,10 +5,13 @@ from os.path import isfile, join
 import sys
 import logging
 
+from functions import (
+    EPISODES_STORAGE_DIR
+)
+
 import frontmatter
 
 # Global variables
-PODCAST_CONTENT_FILES = 'src/content/podcast'
 BLOGPOST_CONTENT_FILES = 'src/content/blog'
 GERMAN_TECH_PODCAST_CONTENT_FILES = 'src/content/germantechpodcasts'
 TAG_FILE_CONTENT = 'src/data/tags.json'
@@ -146,7 +149,7 @@ if __name__ == "__main__":
         TAG_FILE_PATH = f"{folder_prefix}{TAG_FILE_CONTENT}"
 
         content_pathes = [
-            f"{folder_prefix}{PODCAST_CONTENT_FILES}",
+            f"{folder_prefix}{EPISODES_STORAGE_DIR}",
             f"{folder_prefix}{BLOGPOST_CONTENT_FILES}",
         ]
         tags = read_all_tags_from_content_files(content_pathes)
