@@ -68,6 +68,8 @@ tags:
 - Karriere
 - "Produktivit\xE4t"
 title: "#13 Produktivit\xE4t"
+transcript_raw: ''
+transcript_slim: ''
 youtube: https://www.youtube.com/watch?v=uV3FkeHeY94
 
 ---

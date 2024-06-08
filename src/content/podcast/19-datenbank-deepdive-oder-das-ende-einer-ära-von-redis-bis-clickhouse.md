@@ -92,6 +92,8 @@ spotify: https://open.spotify.com/episode/2BoVJYXWCOoK9w31nZaevF
 tags:
 - Datenbanken
 title: "#19 Datenbank-Deepdive (oder das Ende einer \xC4ra): von Redis bis ClickHouse"
+transcript_raw: ''
+transcript_slim: ''
 youtube: https://www.youtube.com/watch?v=3SkD7AxatxY
 
 ---

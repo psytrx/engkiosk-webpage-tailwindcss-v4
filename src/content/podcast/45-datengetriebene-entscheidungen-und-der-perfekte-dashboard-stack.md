@@ -85,6 +85,8 @@ tags:
 - Kommunikation
 - Knowledge Sharing
 title: '#45 Datengetriebene Entscheidungen und der perfekte Dashboard Stack'
+transcript_raw: ''
+transcript_slim: ''
 youtube: https://www.youtube.com/watch?v=nrEh_J-lszA
 
 ---

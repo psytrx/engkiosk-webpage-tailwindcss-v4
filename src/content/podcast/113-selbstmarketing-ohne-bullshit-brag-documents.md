@@ -1,5 +1,5 @@
 ---
-advertiser: 'Eurowings Digital'
+advertiser: Eurowings Digital
 amazon_music: https://music.amazon.com/podcasts/c35a09fe-4116-4e04-8f68-77d61b112e46/engineering-kiosk
 apple_podcasts: https://podcasts.apple.com/de/podcast/113-selbstmarketing-ohne-b-t-brag-documents/id1603082924?i=1000648030502
 audio: https://audio1.redcircle.com/episodes/35003b2d-5ea3-4957-ac5c-dcdff6dfb76b/stream.mp3
@@ -68,6 +68,8 @@ tags:
 - Karriere
 - Kommunikation
 title: '#113 Selbstmarketing ohne Bullshit: Brag Documents'
+transcript_raw: ''
+transcript_slim: ''
 youtube: https://www.youtube.com/watch?v=SBxYn21KRvs
 
 ---

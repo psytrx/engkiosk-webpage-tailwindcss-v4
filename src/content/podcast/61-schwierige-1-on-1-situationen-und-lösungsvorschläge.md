@@ -79,6 +79,8 @@ tags:
 - Leadership
 - Kommunikation
 title: "#61 Schwierige 1-on-1 Situationen und L\xF6sungsvorschl\xE4ge"
+transcript_raw: ''
+transcript_slim: ''
 youtube: https://www.youtube.com/watch?v=KGB1t4634Nk
 
 ---

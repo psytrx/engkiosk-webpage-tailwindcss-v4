@@ -70,6 +70,8 @@ tags:
 - DevOps
 - Cloud
 title: '#34 Wie cloudy bist du?'
+transcript_raw: ''
+transcript_slim: ''
 youtube: https://www.youtube.com/watch?v=83x2rZuMd-8
 
 ---

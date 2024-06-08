@@ -61,6 +61,8 @@ tags:
 - Automation
 - Engineering Kiosk
 title: '#111 Side-Projects: Zwei Entwickler overengineeren einen Podcast'
+transcript_raw: ''
+transcript_slim: ''
 youtube: https://www.youtube.com/watch?v=rN4_d6dHgO0
 
 ---

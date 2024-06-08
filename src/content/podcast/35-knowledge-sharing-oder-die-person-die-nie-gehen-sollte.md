@@ -74,6 +74,8 @@ tags:
 - Tech Kultur
 - Knowledge Sharing
 title: '#35 Knowledge Sharing oder die Person, die nie "gehen" sollte...'
+transcript_raw: ''
+transcript_slim: ''
 youtube: https://www.youtube.com/watch?v=MPJ5MZCGMmg
 
 ---

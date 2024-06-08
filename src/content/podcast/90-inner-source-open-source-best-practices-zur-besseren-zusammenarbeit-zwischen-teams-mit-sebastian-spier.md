@@ -1,5 +1,5 @@
 ---
-advertiser: 'Synsugar'
+advertiser: Synsugar
 amazon_music: https://music.amazon.com/podcasts/c35a09fe-4116-4e04-8f68-77d61b112e46/episodes/9f2a4db5-6afd-4e82-ac6b-686644474da8/engineering-kiosk-90-inner-source-open-source-best-practices-zur-besseren-zusammenarbeit-zwischen-teams-mit-sebastian-spier
 apple_podcasts: https://podcasts.apple.com/us/podcast/90-inner-source-open-source-best-practices-zur-besseren/id1603082924?i=1000629154163&uo=4
 audio: https://audio1.redcircle.com/episodes/35042c18-43d7-485d-a010-aa0f1efe3ab5/stream.mp3
@@ -90,6 +90,8 @@ tags:
 - Interview
 title: '#90 Inner Source: Open Source Best Practices zur besseren Zusammenarbeit zwischen
   Teams mit Sebastian Spier'
+transcript_raw: ''
+transcript_slim: ''
 youtube: https://youtu.be/ZzXq-QUTi-4
 
 ---

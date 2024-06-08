@@ -72,6 +72,8 @@ tags:
 - Kommunikation
 - Team
 title: '#44 Der Weg zum hochperformanten Team'
+transcript_raw: ''
+transcript_slim: ''
 youtube: https://www.youtube.com/watch?v=7A_y6dwaPXw
 
 ---

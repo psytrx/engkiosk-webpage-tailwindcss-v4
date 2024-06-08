@@ -67,6 +67,8 @@ tags:
 - Projektmanagement
 - Kommunikation
 title: '#72 Meetings: Jeder hat sie, keiner will sie'
+transcript_raw: ''
+transcript_slim: ''
 youtube: https://www.youtube.com/watch?v=AhNw83ii0Jk
 
 ---

@@ -84,6 +84,8 @@ tags:
 - Kommunikation
 - Knowledge Sharing
 title: "#37 Mit IT-B\xFCchern Geld verdienen? Wer liest \xFCberhaupt noch B\xFCcher?"
+transcript_raw: ''
+transcript_slim: ''
 youtube: https://www.youtube.com/watch?v=De_jiPFOAYw
 
 ---

@@ -95,6 +95,8 @@ tags:
 - Backend
 - Software Engineering
 title: "#16 Code Reviews: N\xFCtzlich oder bremsen nur ein gutes Team?"
+transcript_raw: ''
+transcript_slim: ''
 youtube: https://www.youtube.com/watch?v=uvPmOmb-HsE
 
 ---

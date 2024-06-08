@@ -85,6 +85,8 @@ tags:
 - Open Source
 title: "#54 Key Value Store Redis: Einsatzm\xF6glichkeiten, Fallstricke, Datenstrukturen,\
   \ HyperLogLog und (fl\xFCchtige) Persistenz"
+transcript_raw: ''
+transcript_slim: ''
 youtube: https://www.youtube.com/watch?v=Y6ajwtbTExY
 
 ---

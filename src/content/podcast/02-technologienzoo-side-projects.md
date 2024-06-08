@@ -95,6 +95,8 @@ tags:
 - Frontend
 - Backend
 title: '#02 Technologienzoo Side Projects'
+transcript_raw: ''
+transcript_slim: ''
 youtube: https://www.youtube.com/watch?v=ZWlTNgopKHs
 
 ---

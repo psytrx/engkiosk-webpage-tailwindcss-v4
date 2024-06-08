@@ -81,6 +81,8 @@ tags:
 - Karriere
 - Bewerbung
 title: "#30 Ist ein Informatikstudium sinnvoll? Welche Ausbildung f\xFCr Devs?"
+transcript_raw: ''
+transcript_slim: ''
 youtube: https://www.youtube.com/watch?v=1TYzlBwp05I
 
 ---

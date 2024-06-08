@@ -86,6 +86,8 @@ tags:
 - Datenbanken
 - "Produktivit\xE4t"
 title: '#49 Die Zukunft: Software Repository Mining'
+transcript_raw: ''
+transcript_slim: ''
 youtube: https://www.youtube.com/watch?v=dOk--EQs4pY
 
 ---

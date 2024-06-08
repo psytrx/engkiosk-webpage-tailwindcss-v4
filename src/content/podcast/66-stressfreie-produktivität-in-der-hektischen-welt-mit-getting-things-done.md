@@ -64,6 +64,8 @@ tags:
 - "Produktivit\xE4t"
 title: "#66 Stressfreie Produktivit\xE4t in der hektischen Welt mit Getting Things\
   \ Done"
+transcript_raw: ''
+transcript_slim: ''
 youtube: https://www.youtube.com/watch?v=KXtOT2CXCQM
 
 ---

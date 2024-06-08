@@ -70,6 +70,8 @@ tags:
 - DevOps
 - Cloud
 title: '#43 Cloud vs. On-Premise: Die Entscheidungshilfe'
+transcript_raw: ''
+transcript_slim: ''
 youtube: https://www.youtube.com/watch?v=FHLf4KRRRXE
 
 ---

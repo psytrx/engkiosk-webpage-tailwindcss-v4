@@ -63,6 +63,8 @@ tags:
 - Knowledge Sharing
 title: '#55 Weiterbildung: Zertifizierung, Newsletter, Konferenzen, ... Wie? Warum?
   Und wer zahlt das Ganze?'
+transcript_raw: ''
+transcript_slim: ''
 youtube: https://www.youtube.com/watch?v=PCVYDwOvTTo
 
 ---

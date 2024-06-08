@@ -71,6 +71,8 @@ tags:
 - Open Source
 - "Software Qualit\xE4t"
 title: '#58 Software-Updates, alte Software, Long Term Support und End of Life-Dates'
+transcript_raw: ''
+transcript_slim: ''
 youtube: https://www.youtube.com/watch?v=94RZcJefzR8
 
 ---

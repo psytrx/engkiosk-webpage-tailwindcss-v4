@@ -1,5 +1,5 @@
 ---
-advertiser: 'Pitch Club'
+advertiser: Pitch Club
 amazon_music: https://music.amazon.com/podcasts/c35a09fe-4116-4e04-8f68-77d61b112e46/episodes/2a310785-0e0e-4e8c-8f78-90234f878291/engineering-kiosk-81-copilot-ai-im-dev-test-produktivit%C3%A4ts-boost-oder-nur-hype
 apple_podcasts: https://podcasts.apple.com/us/podcast/81-copilot-ai-im-dev-test-produktivit%C3%A4ts-boost-oder-nur-hype/id1603082924?i=1000622222659&uo=4
 audio: https://audio1.redcircle.com/episodes/1d125b42-5d9c-4925-8b11-52766f481f0d/stream.mp3
@@ -98,6 +98,8 @@ tags:
 - Software Engineering
 - "Produktivit\xE4t"
 title: "#81 Copilot & AI im Dev-Test: Produktivit\xE4ts-Boost oder nur Hype?"
+transcript_raw: ''
+transcript_slim: ''
 youtube: https://youtu.be/Ak6_hhMMq9M
 
 ---

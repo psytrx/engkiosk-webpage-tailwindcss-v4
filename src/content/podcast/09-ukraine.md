@@ -72,6 +72,8 @@ spotify: https://open.spotify.com/episode/30CdS9BlvI3GXsCgswRgm8
 tags:
 - Tech Kultur
 title: '#09 Ukraine'
+transcript_raw: ''
+transcript_slim: ''
 youtube: https://www.youtube.com/watch?v=ccXO7cHaGsI
 
 ---

@@ -1,5 +1,5 @@
 ---
-advertiser: 'Media Lab Bayern'
+advertiser: Media Lab Bayern
 amazon_music: https://music.amazon.com/podcasts/c35a09fe-4116-4e04-8f68-77d61b112e46/episodes/ae6a8803-d57e-4493-b8be-f73480a35f01/engineering-kiosk-53-cloud-nocode-ai-chatgpt-ersetzen-unsere-jobs
 apple_podcasts: https://podcasts.apple.com/us/podcast/53-cloud-nocode-ai-chatgpt-ersetzen-unsere-jobs/id1603082924?i=1000593364238&uo=4
 audio: https://audio1.redcircle.com/episodes/3b5c3ca2-bb65-4f7c-bab3-a2d4439ef6ad/stream.mp3
@@ -51,6 +51,8 @@ tags:
 - Automation
 - Cloud
 title: '#53 Cloud / NoCode/ AI / ChatGPT ersetzen unsere Jobs?'
+transcript_raw: ''
+transcript_slim: ''
 youtube: https://www.youtube.com/watch?v=6jSO8-ZJp6g
 
 ---

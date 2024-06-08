@@ -74,6 +74,8 @@ tags:
 - Cloud
 title: '#48 Der Layer unter Docker: containerd, Kubernetes, Container Runtime Interface,
   CRI-O und Open Container Initiative (OCI)'
+transcript_raw: ''
+transcript_slim: ''
 youtube: https://www.youtube.com/watch?v=U0_i4N_xyCE
 
 ---

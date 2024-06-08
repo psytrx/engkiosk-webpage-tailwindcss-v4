@@ -96,6 +96,8 @@ tags:
 - Interview
 title: "#123 The Bread Code: vom Entwickler zum Brot-Influencer mit Hendrik Kleinw\xE4\
   chter"
+transcript_raw: ''
+transcript_slim: ''
 youtube: https://www.youtube.com/watch?v=vsvVHN0O6vo
 
 ---

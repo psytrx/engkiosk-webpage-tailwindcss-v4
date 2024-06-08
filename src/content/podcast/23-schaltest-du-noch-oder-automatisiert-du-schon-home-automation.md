@@ -75,6 +75,8 @@ spotify: https://open.spotify.com/episode/36a2YKzzvfrrRzM3qZTHaC
 tags:
 - Automation
 title: '#23 Schaltest du noch oder automatisiert du schon: Home Automation'
+transcript_raw: ''
+transcript_slim: ''
 youtube: https://www.youtube.com/watch?v=RCcA2vW1PEM
 
 ---

@@ -79,6 +79,8 @@ tags:
 - Karriere
 - Bewerbung
 title: '#11 Die Suche nach dem IT Traumjob'
+transcript_raw: ''
+transcript_slim: ''
 youtube: https://www.youtube.com/watch?v=KwnFxEXT-J8
 
 ---

@@ -83,6 +83,8 @@ tags:
 - Kommunikation
 - Leadership
 title: '#47 Wer Visionen hat, soll zum Arzt!?'
+transcript_raw: ''
+transcript_slim: ''
 youtube: https://www.youtube.com/watch?v=Sn9PSxd2uyg
 
 ---

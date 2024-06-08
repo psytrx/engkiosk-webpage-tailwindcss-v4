@@ -90,6 +90,8 @@ tags:
 - Kommunikation
 - Knowledge Sharing
 title: '#29 Die andere Seite: Meetups & Konferenzen organisieren'
+transcript_raw: ''
+transcript_slim: ''
 youtube: https://www.youtube.com/watch?v=IgT00Sq8A7w
 
 ---

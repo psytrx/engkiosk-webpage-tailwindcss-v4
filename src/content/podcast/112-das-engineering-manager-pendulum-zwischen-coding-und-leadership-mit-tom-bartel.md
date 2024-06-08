@@ -1,5 +1,5 @@
 ---
-advertiser: 'Eurowings Digital'
+advertiser: Eurowings Digital
 amazon_music: https://music.amazon.com/podcasts/c35a09fe-4116-4e04-8f68-77d61b112e46/episodes/9614d16a-41b9-461b-a234-63e5da854f9a/engineering-kiosk-112-das-engineering-manager-pendulum-zwischen-coding-und-leadership-mit-tom-bartel
 apple_podcasts: https://podcasts.apple.com/us/podcast/112-das-engineering-manager-pendulum-zwischen-coding/id1603082924?i=1000647181431&uo=4
 audio: https://audio1.redcircle.com/episodes/4a471106-aeda-4dfc-8bf8-5386d2a68f96/stream.mp3
@@ -70,6 +70,8 @@ tags:
 - Interview
 title: '#112 Das Engineering Manager Pendulum: Zwischen Coding und Leadership mit
   Tom Bartel'
+transcript_raw: ''
+transcript_slim: ''
 youtube: https://www.youtube.com/watch?v=7YTbx4931lU
 
 ---

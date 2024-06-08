@@ -73,6 +73,8 @@ tags:
 - Datenbanken
 title: "#63 Spa\xDF mit Zahlen: Under- und Overflows, R\xFCckw\xE4rtslaufende Zeit,\
   \ Negative Modulos und W\xE4hrungsbetr\xE4ge"
+transcript_raw: ''
+transcript_slim: ''
 youtube: https://www.youtube.com/watch?v=kp5PnKgpEgs
 
 ---

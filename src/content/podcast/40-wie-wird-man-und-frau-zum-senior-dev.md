@@ -77,6 +77,8 @@ tags:
 - Kommunikation
 - Leadership
 title: '#40 Wie wird man und Frau zum Senior Dev?'
+transcript_raw: ''
+transcript_slim: ''
 youtube: https://www.youtube.com/watch?v=gRuQUM2htJA
 
 ---

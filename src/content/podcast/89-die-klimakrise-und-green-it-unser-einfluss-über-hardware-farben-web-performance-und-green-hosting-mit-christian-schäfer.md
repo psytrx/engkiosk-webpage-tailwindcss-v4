@@ -1,5 +1,5 @@
 ---
-advertiser: 'Media Lab Bayern'
+advertiser: Media Lab Bayern
 amazon_music: https://music.amazon.com/podcasts/c35a09fe-4116-4e04-8f68-77d61b112e46/episodes/51122290-da74-45e6-9f04-054b2ddbfd84/engineering-kiosk-89-die-klimakrise-und-green-it-unser-einfluss-%C3%BCber-hardware-farben-web-performance-und-green-hosting-mit-christian-sch%C3%A4fer
 apple_podcasts: https://podcasts.apple.com/us/podcast/89-die-klimakrise-und-green-it-unser-einfluss-%C3%BCber/id1603082924?i=1000628360112&uo=4
 audio: https://audio1.redcircle.com/episodes/a4d80c45-c3c5-4609-9331-e20e84e73a03/stream.mp3
@@ -83,6 +83,8 @@ tags:
 - Interview
 title: "#89 Die Klimakrise und Green IT: unser Einfluss \xFCber Hardware, Farben,\
   \ Web-Performance und Green-Hosting mit Christian Sch\xE4fer"
+transcript_raw: ''
+transcript_slim: ''
 youtube: https://youtu.be/q7qS6AFW7L0
 
 ---

@@ -79,6 +79,8 @@ tags:
 - Backend
 - DevOps
 title: '#60 On-Call: Warum auch Software-Engineers auf Rufbereitschaft sein sollten'
+transcript_raw: ''
+transcript_slim: ''
 youtube: https://www.youtube.com/watch?v=9Ijzxuc4zKc
 
 ---

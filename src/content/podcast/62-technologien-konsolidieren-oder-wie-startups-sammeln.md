@@ -71,6 +71,8 @@ tags:
 - Tech Kultur
 - Team
 title: '#62 Technologien konsolidieren, oder wie Startups sammeln?'
+transcript_raw: ''
+transcript_slim: ''
 youtube: https://www.youtube.com/watch?v=8uLM_aC43i0
 
 ---

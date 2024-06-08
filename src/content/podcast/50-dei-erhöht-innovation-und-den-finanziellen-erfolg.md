@@ -77,6 +77,8 @@ tags:
 - Leadership
 - Women in Tech
 title: "#50 DEI erh\xF6ht Innovation und den finanziellen Erfolg"
+transcript_raw: ''
+transcript_slim: ''
 youtube: https://www.youtube.com/watch?v=6Dz1pgBbn8g
 
 ---

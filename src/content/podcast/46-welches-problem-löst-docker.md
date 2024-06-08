@@ -68,6 +68,8 @@ tags:
 - DevOps
 - Open Source
 title: "#46 Welches Problem l\xF6st Docker?"
+transcript_raw: ''
+transcript_slim: ''
 youtube: https://www.youtube.com/watch?v=dkKwZ8uQFso
 
 ---

@@ -87,6 +87,8 @@ tags:
 - Karriere
 - Leadership
 title: "#124 Technische Glaubw\xFCrdigkeit bewahren: M\xFCssen Leads den Code kennen?"
+transcript_raw: ''
+transcript_slim: ''
 youtube: https://www.youtube.com/watch?v=SmHYjTQFbmU
 
 ---

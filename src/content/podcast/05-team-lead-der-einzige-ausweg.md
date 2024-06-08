@@ -69,6 +69,8 @@ tags:
 - Karriere
 - Leadership
 title: '#05 Team Lead - der einzige Ausweg'
+transcript_raw: ''
+transcript_slim: ''
 youtube: https://www.youtube.com/watch?v=gek6ZsOFo0c
 
 ---

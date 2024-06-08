@@ -80,6 +80,8 @@ tags:
 - Team
 - Karriere
 title: "#18 Ziele und Performance-Metriken f\xFCr Teams und mich selbst"
+transcript_raw: ''
+transcript_slim: ''
 youtube: https://www.youtube.com/watch?v=U2Ob0SS2Yks
 
 ---

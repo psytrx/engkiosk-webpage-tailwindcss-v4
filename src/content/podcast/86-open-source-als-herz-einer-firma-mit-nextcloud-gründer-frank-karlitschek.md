@@ -1,5 +1,5 @@
 ---
-advertiser: 'Media Lab Bayern'
+advertiser: Media Lab Bayern
 amazon_music: https://music.amazon.com/podcasts/c35a09fe-4116-4e04-8f68-77d61b112e46/episodes/4e1507c0-7db2-4377-b886-b796553ecb77/engineering-kiosk-86-open-source-als-herz-einer-firma-mit-nextcloud-gr%C3%BCnder-frank-karlitschek
 apple_podcasts: https://podcasts.apple.com/us/podcast/86-open-source-als-herz-einer-firma-mit-nextcloud-gr%C3%BCnder/id1603082924?i=1000626034745&uo=4
 audio: https://audio1.redcircle.com/episodes/4e4aac42-9156-408c-9805-2b0d14a968f2/stream.mp3
@@ -89,6 +89,8 @@ tags:
 - Leadership
 - Interview
 title: "#86 Open Source als Herz einer Firma mit Nextcloud Gr\xFCnder Frank Karlitschek"
+transcript_raw: ''
+transcript_slim: ''
 youtube: https://youtu.be/K0y0lk8KULI
 
 ---

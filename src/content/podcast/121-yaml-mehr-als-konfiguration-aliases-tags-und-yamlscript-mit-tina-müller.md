@@ -1,5 +1,5 @@
 ---
-advertiser: 'Computertruhe'
+advertiser: Computertruhe
 amazon_music: https://music.amazon.com/podcasts/c35a09fe-4116-4e04-8f68-77d61b112e46/episodes/c1bdf0af-956c-4de5-bedb-58bd60437139/engineering-kiosk-121-yaml-mehr-als-konfiguration-aliases-tags-und-yamlscript-mit-tina-m%C3%BCller
 apple_podcasts: https://podcasts.apple.com/us/podcast/121-yaml-mehr-als-konfiguration-aliases-tags-und-yamlscript/id1603082924?i=1000654000460&uo=4
 audio: https://audio1.redcircle.com/episodes/2dad69ad-999c-4fd7-868f-765d45e864b7/stream.mp3
@@ -95,6 +95,8 @@ tags:
 - Women in Tech
 title: "#121 YAML: Mehr als Konfiguration! Aliases, Tags und YAMLScript mit Tina M\xFC\
   ller"
+transcript_raw: ''
+transcript_slim: ''
 youtube: https://www.youtube.com/watch?v=HNMb2mF2IfE
 
 ---

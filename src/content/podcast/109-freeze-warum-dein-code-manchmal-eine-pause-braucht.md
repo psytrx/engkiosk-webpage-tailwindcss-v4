@@ -54,6 +54,8 @@ tags:
 - "Software Qualit\xE4t"
 - Kommunikation
 title: '#109 Freeze! Warum dein Code manchmal eine Pause braucht'
+transcript_raw: ''
+transcript_slim: ''
 youtube: https://www.youtube.com/watch?v=aNs6xTsxTlE
 
 ---

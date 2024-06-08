@@ -68,6 +68,8 @@ tags:
 - Team
 - Projektmanagement
 title: '#20 Off-Boarding und On-Boarding: Wie verlasse ich eine Firma richtig?'
+transcript_raw: ''
+transcript_slim: ''
 youtube: https://www.youtube.com/watch?v=Ezn-ks0CV1Y
 
 ---

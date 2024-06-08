@@ -75,6 +75,8 @@ tags:
 - Kommunikation
 - Interview
 title: "#110 OKRs und Beyond: Agile Unternehmensf\xFChrung mit Marco Alberti von Murakamy"
+transcript_raw: ''
+transcript_slim: ''
 youtube: https://www.youtube.com/watch?v=JshsMVFC29I
 
 ---

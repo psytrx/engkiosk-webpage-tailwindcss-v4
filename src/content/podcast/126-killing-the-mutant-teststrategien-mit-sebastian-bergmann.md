@@ -99,6 +99,8 @@ tags:
 - "Software Qualit\xE4t"
 - Interview
 title: '#126 Killing the Mutant: Teststrategien mit Sebastian Bergmann'
+transcript_raw: ''
+transcript_slim: ''
 youtube: https://www.youtube.com/watch?v=dZI8Isttx4U
 
 ---

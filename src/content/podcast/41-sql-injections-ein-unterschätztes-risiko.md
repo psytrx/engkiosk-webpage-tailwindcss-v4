@@ -77,6 +77,8 @@ tags:
 - Sicherheit
 - Software Engineering
 title: "#41 SQL Injections - Ein untersch\xE4tztes Risiko"
+transcript_raw: ''
+transcript_slim: ''
 youtube: https://www.youtube.com/watch?v=EPfWgGvFtM4
 
 ---

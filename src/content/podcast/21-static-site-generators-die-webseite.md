@@ -64,6 +64,8 @@ spotify: https://open.spotify.com/episode/7FpteXc95QPAnKihOuUUpX?si=9ea7bd26f6ec
 tags:
 - Frontend
 title: '#21 Static Site Generators & DIE Webseite'
+transcript_raw: ''
+transcript_slim: ''
 youtube: https://www.youtube.com/watch?v=r8i9Htz0PMM
 
 ---

@@ -90,6 +90,8 @@ tags:
 - "Produktivit\xE4t"
 - Interview
 title: "#79 Font-Engineering und Schriftarten f\xFCrs Programmieren mit Philipp Acsany"
+transcript_raw: ''
+transcript_slim: ''
 youtube: https://youtu.be/6gQrYHGL7wo
 
 ---

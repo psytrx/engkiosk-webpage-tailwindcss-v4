@@ -81,6 +81,8 @@ tags:
 - Kommunikation
 title: '#26 My English is not the yellow from the egg - Arbeiten in internationalen
   Teams'
+transcript_raw: ''
+transcript_slim: ''
 youtube: https://www.youtube.com/watch?v=Klpv8gtDbsI
 
 ---

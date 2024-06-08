@@ -75,6 +75,8 @@ tags:
 - Bewerbung
 - Karriere
 title: '#25 Tech-Entlassungswellen & Job-Interview Skills'
+transcript_raw: ''
+transcript_slim: ''
 youtube: https://www.youtube.com/watch?v=aMprRZCLOqU
 
 ---

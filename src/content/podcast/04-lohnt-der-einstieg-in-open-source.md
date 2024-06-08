@@ -90,6 +90,8 @@ tags:
 - Software Engineering
 - Kommunikation
 title: '#04 Lohnt der Einstieg in Open Source?'
+transcript_raw: ''
+transcript_slim: ''
 youtube: https://www.youtube.com/watch?v=6VHDt0awHY8
 
 ---

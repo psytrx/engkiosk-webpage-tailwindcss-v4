@@ -364,6 +364,8 @@ def sync_podcast_episodes(rss_feed, path_md_files, path_img_files, no_api_calls=
             'spotify': spotify_link,
             'tags': [],
             'title': title,
+            'transcript_slim': '',
+            'transcript_raw': '',
             'youtube': get_episode_link_from_youtube(youtube_playlist_items, title),
         }
 
@@ -393,6 +395,8 @@ def sync_podcast_episodes(rss_feed, path_md_files, path_img_files, no_api_calls=
                     'speaker',
                     'spotify',
                     'tags',
+                    'transcript_slim',
+                    'transcript_raw',
                     'youtube',
                 ]
                 for key in keys_to_keep:

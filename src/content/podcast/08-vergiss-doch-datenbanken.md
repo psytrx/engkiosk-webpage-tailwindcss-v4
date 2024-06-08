@@ -75,6 +75,8 @@ spotify: https://open.spotify.com/episode/49HSkGcpuzL3yTbEsguOMB
 tags:
 - Datenbanken
 title: '#08 Vergiss doch Datenbanken!'
+transcript_raw: ''
+transcript_slim: ''
 youtube: https://www.youtube.com/watch?v=r9m32Vl5xyQ
 
 ---

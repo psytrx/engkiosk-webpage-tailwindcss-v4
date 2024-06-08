@@ -63,6 +63,8 @@ tags:
 - Leadership
 - Kommunikation
 title: '#10 Das Karriere Booster Meeting 1:1s'
+transcript_raw: ''
+transcript_slim: ''
 youtube: https://www.youtube.com/watch?v=dgiPioNQ4Sk
 
 ---
