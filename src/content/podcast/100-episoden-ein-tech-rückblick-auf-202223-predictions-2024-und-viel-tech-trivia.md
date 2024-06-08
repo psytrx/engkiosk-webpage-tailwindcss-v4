@@ -92,8 +92,8 @@ tags:
 - Cloud
 title: "#100 Episoden: ein Tech R\xFCckblick auf 2022/23, Predictions 2024 und viel\
   \ Tech Trivia"
-transcript_raw: ''
-transcript_slim: ''
+transcript_raw: src/data/transcripts/100-transcript.zip
+transcript_slim: src/data/transcripts/100-transcript-slim.json
 youtube: https://www.youtube.com/watch?v=FPH88dJ1UQ0
 
 ---

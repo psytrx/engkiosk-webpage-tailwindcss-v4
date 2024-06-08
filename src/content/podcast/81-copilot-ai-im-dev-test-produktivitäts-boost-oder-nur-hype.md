@@ -98,8 +98,8 @@ tags:
 - Software Engineering
 - "Produktivit\xE4t"
 title: "#81 Copilot & AI im Dev-Test: Produktivit\xE4ts-Boost oder nur Hype?"
-transcript_raw: ''
-transcript_slim: ''
+transcript_raw: src/data/transcripts/81-transcript.zip
+transcript_slim: src/data/transcripts/81-transcript-slim.json
 youtube: https://youtu.be/Ak6_hhMMq9M
 
 ---

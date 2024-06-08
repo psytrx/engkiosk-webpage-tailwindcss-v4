@@ -75,8 +75,8 @@ tags:
 - Software Engineering
 - Datenbanken
 title: '#69 MySQL vs. MariaDB'
-transcript_raw: ''
-transcript_slim: ''
+transcript_raw: src/data/transcripts/69-transcript.zip
+transcript_slim: src/data/transcripts/69-transcript-slim.json
 youtube: https://www.youtube.com/watch?v=Uzt2ia_yMFE
 
 ---

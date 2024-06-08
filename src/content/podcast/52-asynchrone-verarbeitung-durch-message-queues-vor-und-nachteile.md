@@ -78,8 +78,8 @@ tags:
 - Software Engineering
 - Open Source
 title: '#52 Asynchrone Verarbeitung durch Message Queues - Vor- und Nachteile'
-transcript_raw: ''
-transcript_slim: ''
+transcript_raw: src/data/transcripts/52-transcript.zip
+transcript_slim: src/data/transcripts/52-transcript-slim.json
 youtube: https://www.youtube.com/watch?v=ew9SFEmpbOg
 
 ---

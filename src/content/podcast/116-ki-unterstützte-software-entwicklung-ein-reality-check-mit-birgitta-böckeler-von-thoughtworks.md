@@ -71,8 +71,8 @@ tags:
 - Women in Tech
 title: "#116 KI unterst\xFCtzte Software Entwicklung: Ein Reality Check mit Birgitta\
   \ B\xF6ckeler von Thoughtworks"
-transcript_raw: ''
-transcript_slim: ''
+transcript_raw: src/data/transcripts/116-transcript.zip
+transcript_slim: src/data/transcripts/116-transcript-slim.json
 youtube: https://www.youtube.com/watch?v=WnONvkRjvrg
 
 ---

@@ -77,8 +77,8 @@ tags:
 - "Produktivit\xE4t"
 - Leadership
 title: '#75 Evaluierung deiner Job-Performance, Team-Feedback und LNO Framework'
-transcript_raw: ''
-transcript_slim: ''
+transcript_raw: src/data/transcripts/75-transcript.zip
+transcript_slim: src/data/transcripts/75-transcript-slim.json
 youtube: https://www.youtube.com/watch?v=7qkAgKo7mis
 
 ---

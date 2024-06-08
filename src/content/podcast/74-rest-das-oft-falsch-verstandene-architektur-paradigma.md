@@ -67,8 +67,8 @@ tags:
 - Software Engineering
 - Backend
 title: '#74 REST: Das oft falsch verstandene Architektur-Paradigma'
-transcript_raw: ''
-transcript_slim: ''
+transcript_raw: src/data/transcripts/74-transcript.zip
+transcript_slim: src/data/transcripts/74-transcript-slim.json
 youtube: https://www.youtube.com/watch?v=l0f_Qak2-Bg
 
 ---

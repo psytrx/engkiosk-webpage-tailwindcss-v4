@@ -104,3 +104,23 @@ def get_podcast_episode_transcript_by_number(number):
         data = json.load(f)
 
     return data
+
+
+def get_podcast_episode_transcript_slim_path_by_episode_number(episode_number) -> str:
+    transcript_file = f"{episode_number}-transcript-slim.json"
+    return get_podcast_episode_transcript_path_by_episode_number(transcript_file)
+
+def get_podcast_episode_transcript_raw_path_by_episode_number(episode_number) -> str:
+    transcript_file = f"{episode_number}-transcript.zip"
+    return get_podcast_episode_transcript_path_by_episode_number(transcript_file)
+
+def get_podcast_episode_transcript_path_by_episode_number(transcript_file) -> str:
+    file_path = build_correct_file_path(TRANSCRIPT_STORAGE_DIR) + '/' + transcript_file
+
+    if os.path.exists(file_path):
+        # Depending on which subfolder the script is called, we need to adjust the path.
+        if file_path.startswith('../'):
+            file_path = file_path[3:]
+        return file_path
+
+    return ''

@@ -74,8 +74,8 @@ tags:
 - Remote work
 - Leadership
 title: '#14 async und await: asynchrones Arbeiten im Alltag'
-transcript_raw: ''
-transcript_slim: ''
+transcript_raw: src/data/transcripts/14-transcript.zip
+transcript_slim: src/data/transcripts/14-transcript-slim.json
 youtube: https://www.youtube.com/watch?v=Pho7eauXAqU
 
 ---

@@ -78,8 +78,8 @@ tags:
 - Interview
 - Backend
 title: '#98 Der Hype um Rust mit Matthias Endler'
-transcript_raw: ''
-transcript_slim: ''
+transcript_raw: src/data/transcripts/98-transcript.zip
+transcript_slim: src/data/transcripts/98-transcript-slim.json
 youtube: https://youtu.be/XQ2FFjNEZTE
 
 ---

@@ -65,8 +65,8 @@ tags:
 - Cloud
 - Turing Award
 title: '#71 Tim Berners-Lee: Was ist das World Wide Web und was ist seine Zukunft?'
-transcript_raw: ''
-transcript_slim: ''
+transcript_raw: src/data/transcripts/71-transcript.zip
+transcript_slim: src/data/transcripts/71-transcript-slim.json
 youtube: https://www.youtube.com/watch?v=uz_QIiAgGQY
 
 ---

@@ -95,8 +95,8 @@ tags:
 - Women in Tech
 title: "#121 YAML: Mehr als Konfiguration! Aliases, Tags und YAMLScript mit Tina M\xFC\
   ller"
-transcript_raw: ''
-transcript_slim: ''
+transcript_raw: src/data/transcripts/121-transcript.zip
+transcript_slim: src/data/transcripts/121-transcript-slim.json
 youtube: https://www.youtube.com/watch?v=HNMb2mF2IfE
 
 ---

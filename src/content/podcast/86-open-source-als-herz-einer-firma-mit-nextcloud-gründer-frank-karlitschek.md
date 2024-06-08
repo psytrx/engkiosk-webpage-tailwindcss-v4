@@ -89,8 +89,8 @@ tags:
 - Leadership
 - Interview
 title: "#86 Open Source als Herz einer Firma mit Nextcloud Gr\xFCnder Frank Karlitschek"
-transcript_raw: ''
-transcript_slim: ''
+transcript_raw: src/data/transcripts/86-transcript.zip
+transcript_slim: src/data/transcripts/86-transcript-slim.json
 youtube: https://youtu.be/K0y0lk8KULI
 
 ---

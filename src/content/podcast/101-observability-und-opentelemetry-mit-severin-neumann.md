@@ -81,8 +81,8 @@ tags:
 - Software Engineering
 - Interview
 title: '#101 Observability und OpenTelemetry mit Severin Neumann'
-transcript_raw: ''
-transcript_slim: ''
+transcript_raw: src/data/transcripts/101-transcript.zip
+transcript_slim: src/data/transcripts/101-transcript-slim.json
 youtube: https://www.youtube.com/watch?v=h8NdY4zBJIE
 
 ---

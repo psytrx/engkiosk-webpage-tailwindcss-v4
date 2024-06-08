@@ -69,8 +69,8 @@ tags:
 - "Software Qualit\xE4t"
 - Women in Tech
 title: '#93 Barbara Liskov - Das L in SOLID (Liskovsches Substitutionsprinzip & Abstraktion)'
-transcript_raw: ''
-transcript_slim: ''
+transcript_raw: src/data/transcripts/93-transcript.zip
+transcript_slim: src/data/transcripts/93-transcript-slim.json
 youtube: https://youtu.be/2jYqADkEqFE
 
 ---

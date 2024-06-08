@@ -15,6 +15,12 @@ import sys
 from urllib.parse import urlparse
 import pathlib
 
+from functions import (
+    get_podcast_episode_number_from_filename_number,
+    get_podcast_episode_transcript_slim_path_by_episode_number,
+    get_podcast_episode_transcript_raw_path_by_episode_number
+)
+
 # External libraries
 from bs4 import BeautifulSoup
 import frontmatter
@@ -344,6 +350,7 @@ def sync_podcast_episodes(rss_feed, path_md_files, path_img_files, no_api_calls=
 
             spotify_link = spotify_episode["external_urls"]["spotify"]
 
+        episode_number = get_podcast_episode_number_from_filename_number(filename)
         data = {
             'advertiser': '',
             'amazon_music': '',
@@ -364,8 +371,8 @@ def sync_podcast_episodes(rss_feed, path_md_files, path_img_files, no_api_calls=
             'spotify': spotify_link,
             'tags': [],
             'title': title,
-            'transcript_slim': '',
-            'transcript_raw': '',
+            'transcript_slim': get_podcast_episode_transcript_slim_path_by_episode_number(episode_number),
+            'transcript_raw': get_podcast_episode_transcript_raw_path_by_episode_number(episode_number),
             'youtube': get_episode_link_from_youtube(youtube_playlist_items, title),
         }
 
@@ -395,8 +402,6 @@ def sync_podcast_episodes(rss_feed, path_md_files, path_img_files, no_api_calls=
                     'speaker',
                     'spotify',
                     'tags',
-                    'transcript_slim',
-                    'transcript_raw',
                     'youtube',
                 ]
                 for key in keys_to_keep:

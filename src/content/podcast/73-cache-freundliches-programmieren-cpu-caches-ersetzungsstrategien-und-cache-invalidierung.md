@@ -62,8 +62,8 @@ tags:
 - Backend
 title: '#73 Cache-freundliches Programmieren, CPU-Caches, Ersetzungsstrategien und
   Cache-Invalidierung'
-transcript_raw: ''
-transcript_slim: ''
+transcript_raw: src/data/transcripts/73-transcript.zip
+transcript_slim: src/data/transcripts/73-transcript-slim.json
 youtube: https://www.youtube.com/watch?v=6vHAhiVTj10
 
 ---

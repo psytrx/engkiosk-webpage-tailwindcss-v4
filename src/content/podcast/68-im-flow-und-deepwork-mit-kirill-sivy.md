@@ -83,8 +83,8 @@ tags:
 - "Produktivit\xE4t"
 - Interview
 title: '#68 Im "Flow" und Deepwork mit Kirill Sivy'
-transcript_raw: ''
-transcript_slim: ''
+transcript_raw: src/data/transcripts/68-transcript.zip
+transcript_slim: src/data/transcripts/68-transcript-slim.json
 youtube: https://www.youtube.com/watch?v=uIcKfRwfHa4
 
 ---

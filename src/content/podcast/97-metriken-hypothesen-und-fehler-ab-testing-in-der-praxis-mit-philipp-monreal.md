@@ -72,8 +72,8 @@ tags:
 - Interview
 title: '#97 Metriken, Hypothesen und Fehler: A/B-Testing in der Praxis mit Philipp
   Monreal'
-transcript_raw: ''
-transcript_slim: ''
+transcript_raw: src/data/transcripts/97-transcript.zip
+transcript_slim: src/data/transcripts/97-transcript-slim.json
 youtube: https://youtu.be/iAF5IAFR_hY
 
 ---

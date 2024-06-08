@@ -90,8 +90,8 @@ tags:
 - Interview
 title: '#90 Inner Source: Open Source Best Practices zur besseren Zusammenarbeit zwischen
   Teams mit Sebastian Spier'
-transcript_raw: ''
-transcript_slim: ''
+transcript_raw: src/data/transcripts/90-transcript.zip
+transcript_slim: src/data/transcripts/90-transcript-slim.json
 youtube: https://youtu.be/ZzXq-QUTi-4
 
 ---

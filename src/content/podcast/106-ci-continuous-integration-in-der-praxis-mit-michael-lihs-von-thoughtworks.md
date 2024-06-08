@@ -81,8 +81,8 @@ tags:
 - Software Engineering
 - Interview
 title: '#106 CI - Continuous Integration in der Praxis mit Michael Lihs von Thoughtworks'
-transcript_raw: ''
-transcript_slim: ''
+transcript_raw: src/data/transcripts/106-transcript.zip
+transcript_slim: src/data/transcripts/106-transcript-slim.json
 youtube: https://www.youtube.com/watch?v=E5Va0uqfpcs
 
 ---

@@ -70,8 +70,8 @@ tags:
 - Software Engineering
 - Open Source
 title: '#42 Lexer, Parser und Open Source in Counterstrike'
-transcript_raw: ''
-transcript_slim: ''
+transcript_raw: src/data/transcripts/42-transcript.zip
+transcript_slim: src/data/transcripts/42-transcript-slim.json
 youtube: https://www.youtube.com/watch?v=yCHvgVEkP4Y
 
 ---

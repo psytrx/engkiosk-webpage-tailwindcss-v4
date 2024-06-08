@@ -82,8 +82,8 @@ tags:
 - Women in Tech
 title: '#85 Von Entwicklerin zur Engineering Managerin: Erfahrungen und Learnings
   mit Isabelle Glasmacher'
-transcript_raw: ''
-transcript_slim: ''
+transcript_raw: src/data/transcripts/85-transcript.zip
+transcript_slim: src/data/transcripts/85-transcript-slim.json
 youtube: https://youtu.be/qIt0QfNzPv8
 
 ---
