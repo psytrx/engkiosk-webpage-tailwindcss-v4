@@ -1,4 +1,5 @@
 ---
+advertiser: ''
 amazon_music: https://music.amazon.com/podcasts/c35a09fe-4116-4e04-8f68-77d61b112e46/episodes/6e7c836a-8930-4b03-b8f3-af88caa6e3db/engineering-kiosk-55-weiterbildung-zertifizierung-newsletter-konferenzen-wie-warum-und-wer-zahlt-das-ganze
 apple_podcasts: https://podcasts.apple.com/us/podcast/55-weiterbildung-zertifizierung-newsletter-konferenzen/id1603082924?i=1000596198729&uo=4
 audio: https://audio1.redcircle.com/episodes/dcd03165-daad-42bd-90d6-0524fe595693/stream.mp3
@@ -55,7 +56,6 @@ speaker:
 - name: Wolfi Gassler
   transcriptLetter: A
   website: https://wolfgang.gassler.org/
-sponsor: ''
 spotify: https://open.spotify.com/episode/21JxLUnmiUv2XQwFUILJoE
 tags:
 - Team

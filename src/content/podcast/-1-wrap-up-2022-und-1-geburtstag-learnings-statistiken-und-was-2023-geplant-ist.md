@@ -1,4 +1,5 @@
 ---
+advertiser: ''
 amazon_music: https://music.amazon.com/podcasts/c35a09fe-4116-4e04-8f68-77d61b112e46/episodes/780bd6d1-fc32-4159-a06d-aac9e12bf713/engineering-kiosk--1-wrap-up-2022-und-1-geburtstag-learnings-statistiken-und-was-2023-geplant-ist
 apple_podcasts: https://podcasts.apple.com/us/podcast/1-wrap-up-2022-und-1-geburtstag-learnings-statistiken/id1603082924?i=1000592553537&uo=4
 audio: https://audio1.redcircle.com/episodes/714d7f63-9e23-4a7c-8cd6-ea9c47bb3cc0/stream.mp3
@@ -45,7 +46,6 @@ speaker:
 - name: Wolfi Gassler
   transcriptLetter: A
   website: https://wolfgang.gassler.org/
-sponsor: ''
 spotify: https://open.spotify.com/episode/35MGyksizZ4CVxkCRhhJ5n
 tags:
 - Engineering Kiosk

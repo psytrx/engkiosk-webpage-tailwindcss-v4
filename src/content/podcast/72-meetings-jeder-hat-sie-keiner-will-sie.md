@@ -1,4 +1,5 @@
 ---
+advertiser: ''
 amazon_music: https://music.amazon.com/podcasts/c35a09fe-4116-4e04-8f68-77d61b112e46/episodes/b88686c6-ee34-4078-868e-41cd7310e3d3/engineering-kiosk-72-meetings-jeder-hat-sie-keiner-will-sie
 apple_podcasts: https://podcasts.apple.com/us/podcast/72-meetings-jeder-hat-sie-keiner-will-sie/id1603082924?i=1000614089572&uo=4
 audio: https://audio1.redcircle.com/episodes/f3a4a1ba-d5b1-44b9-bab3-5dd91a59069b/stream.mp3
@@ -59,7 +60,6 @@ speaker:
 - name: Wolfi Gassler
   transcriptLetter: B
   website: https://wolfgang.gassler.org/
-sponsor: ''
 spotify: https://open.spotify.com/episode/1P97rTHEVtGQxzTw1eV8KY
 tags:
 - Team

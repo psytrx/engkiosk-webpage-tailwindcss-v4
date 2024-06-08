@@ -345,6 +345,7 @@ def sync_podcast_episodes(rss_feed, path_md_files, path_img_files, no_api_calls=
             spotify_link = spotify_episode["external_urls"]["spotify"]
 
         data = {
+            'advertiser': '',
             'amazon_music': '',
             'apple_podcasts': get_episode_link_from_apple(apple_podcast_content, title),
             'audio': mp3_link,
@@ -360,7 +361,6 @@ def sync_podcast_episodes(rss_feed, path_md_files, path_img_files, no_api_calls=
             # Based on https://www.linkedin.com/pulse/bbcs-secret-growth-revolutionary-six-user-needs-ghada-hashish-acca/
             'six_user_needs': [],
             'speaker': DEFAULT_SPEAKER,
-            'sponsor': '',
             'spotify': spotify_link,
             'tags': [],
             'title': title,
@@ -382,6 +382,7 @@ def sync_podcast_episodes(rss_feed, path_md_files, path_img_files, no_api_calls=
                 episode = frontmatter.load(f)
 
                 keys_to_keep = [
+                    'advertiser',
                     'amazon_music',
                     'apple_podcasts',
                     'deezer',
@@ -390,7 +391,6 @@ def sync_podcast_episodes(rss_feed, path_md_files, path_img_files, no_api_calls=
                     'rtlplus',
                     'six_user_needs',
                     'speaker',
-                    'sponsor',
                     'spotify',
                     'tags',
                     'youtube',

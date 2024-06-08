@@ -5,6 +5,7 @@ const podcastEpisodeCollection = defineCollection({
 	type: 'content',
 	schema: ({ image }) =>
 		z.object({
+			advertiser: z.string(),
 			amazon_music: z.string(),
 			apple_podcasts: z.string(),
 			audio: z.string(),
@@ -30,7 +31,6 @@ const podcastEpisodeCollection = defineCollection({
 					website: z.string(),
 				})
 			),
-			sponsor: z.string(),
 			spotify: z.string(),
 			tags: z.array(z.string()),
 			title: z.string(),

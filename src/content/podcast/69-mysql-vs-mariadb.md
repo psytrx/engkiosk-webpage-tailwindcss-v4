@@ -1,4 +1,5 @@
 ---
+advertiser: ''
 amazon_music: https://music.amazon.com/podcasts/c35a09fe-4116-4e04-8f68-77d61b112e46/episodes/95885981-0216-4fd0-abb4-f1c0ff890f92/engineering-kiosk-69-mysql-vs-mariadb
 apple_podcasts: https://podcasts.apple.com/us/podcast/69-mysql-vs-mariadb/id1603082924?i=1000611387208&uo=4
 audio: https://audio1.redcircle.com/episodes/99914b64-7888-4ad3-a241-795144e52468/stream.mp3
@@ -68,7 +69,6 @@ speaker:
 - name: Wolfi Gassler
   transcriptLetter: B
   website: https://wolfgang.gassler.org/
-sponsor: ''
 spotify: https://open.spotify.com/episode/6DwWMYYRP38mDMc09gjq25
 tags:
 - Backend

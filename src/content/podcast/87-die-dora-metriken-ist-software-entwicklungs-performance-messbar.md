@@ -1,4 +1,5 @@
 ---
+advertiser: ''
 amazon_music: https://music.amazon.com/podcasts/c35a09fe-4116-4e04-8f68-77d61b112e46/episodes/67c8fd70-875c-445f-9333-1025f115bcd2/engineering-kiosk-87-die-dora-metriken-ist-software-entwicklungs-performance-messbar
 apple_podcasts: https://podcasts.apple.com/us/podcast/87-die-dora-metriken-ist-software-entwicklungs-performance/id1603082924?i=1000626765082&uo=4
 audio: https://audio1.redcircle.com/episodes/2bb77f37-875f-448e-8863-907c231ace1d/stream.mp3
@@ -66,7 +67,6 @@ speaker:
 - name: Wolfi Gassler
   transcriptLetter: B
   website: https://wolfgang.gassler.org/
-sponsor: ''
 spotify: https://open.spotify.com/episode/59P2u5VvAq7Zr74xIy8cpw
 tags:
 - Team

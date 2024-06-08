@@ -1,4 +1,5 @@
 ---
+advertiser: ''
 amazon_music: https://music.amazon.com/podcasts/c35a09fe-4116-4e04-8f68-77d61b112e46/episodes/8cf04e14-6a65-4a27-9335-623689012ff4/engineering-kiosk-95-effiziente-knowledge-sharing-formate-wissen-teilen-und-begeistern
 apple_podcasts: https://podcasts.apple.com/us/podcast/95-effiziente-knowledge-sharing-formate-wissen-teilen/id1603082924?i=1000633177166&uo=4
 audio: https://audio1.redcircle.com/episodes/4e365934-8578-45ca-8c48-61afefa4185a/stream.mp3
@@ -64,7 +65,6 @@ speaker:
 - name: Wolfi Gassler
   transcriptLetter: B
   website: https://wolfgang.gassler.org/
-sponsor: ''
 spotify: https://open.spotify.com/episode/0STTrIK5cygC6TcE6g1HXq
 tags:
 - Team

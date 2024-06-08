@@ -1,4 +1,5 @@
 ---
+advertiser: ''
 amazon_music: https://music.amazon.com/podcasts/c35a09fe-4116-4e04-8f68-77d61b112e46/episodes/62f280db-b69f-4fb9-823c-4f59a74c2e05/engineering-kiosk-42-lexer-parser-und-open-source-in-counterstrike
 apple_podcasts: https://podcasts.apple.com/us/podcast/42-lexer-parser-und-open-source-in-counterstrike/id1603082924?i=1000583770577&uo=4
 audio: https://audio1.redcircle.com/episodes/e755c20a-94fc-4d0f-baa2-95c5486ec18d/stream.mp3
@@ -63,7 +64,6 @@ speaker:
 - name: Wolfi Gassler
   transcriptLetter: A
   website: https://wolfgang.gassler.org/
-sponsor: ''
 spotify: https://open.spotify.com/episode/1OvywjCGrYah9AGX6w8Bnn
 tags:
 - Backend

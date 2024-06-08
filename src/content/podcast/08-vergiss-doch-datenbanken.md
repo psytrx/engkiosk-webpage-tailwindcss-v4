@@ -1,4 +1,5 @@
 ---
+advertiser: ''
 amazon_music: https://music.amazon.com/podcasts/c35a09fe-4116-4e04-8f68-77d61b112e46/episodes/e4c5e0e2-4078-4764-888f-9c9ddc435bd3/engineering-kiosk-08-vergiss-doch-datenbanken
 apple_podcasts: https://podcasts.apple.com/us/podcast/08-vergiss-doch-datenbanken/id1603082924?i=1000552569027
 audio: https://audio1.redcircle.com/episodes/ff17f8af-00a3-4594-8886-d1c2a3980c67/stream.mp3
@@ -70,7 +71,6 @@ speaker:
 - name: Wolfi Gassler
   transcriptLetter: B
   website: https://wolfgang.gassler.org/
-sponsor: ''
 spotify: https://open.spotify.com/episode/49HSkGcpuzL3yTbEsguOMB
 tags:
 - Datenbanken

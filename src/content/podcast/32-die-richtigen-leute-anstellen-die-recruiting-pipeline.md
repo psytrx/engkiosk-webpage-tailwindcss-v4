@@ -1,4 +1,5 @@
 ---
+advertiser: ''
 amazon_music: https://music.amazon.com/podcasts/c35a09fe-4116-4e04-8f68-77d61b112e46/episodes/166a84cc-2bb3-4867-8455-afb144aebfaf/engineering-kiosk-32-die-richtigen-leute-anstellen-die-recruiting-pipeline
 apple_podcasts: https://podcasts.apple.com/us/podcast/32-die-richtigen-leute-anstellen-die-recruiting-pipeline/id1603082924?i=1000576207101&uo=4
 audio: https://audio1.redcircle.com/episodes/acb5234c-92c1-4998-8c83-ddb1b16fff38/stream.mp3
@@ -60,7 +61,6 @@ speaker:
 - name: Wolfi Gassler
   transcriptLetter: A
   website: https://wolfgang.gassler.org/
-sponsor: ''
 spotify: https://open.spotify.com/episode/0B3LoAAfZbllsTw1KyYIjx
 tags:
 - Bewerbung

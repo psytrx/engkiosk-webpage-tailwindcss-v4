@@ -1,4 +1,5 @@
 ---
+advertiser: ''
 amazon_music: https://music.amazon.com/podcasts/c35a09fe-4116-4e04-8f68-77d61b112e46/episodes/5794dda5-4d8a-4c18-9c6a-b266dae8e600/engineering-kiosk-79-font-engineering-und-schriftarten-f%C3%BCrs-programmieren-mit-philipp-acsany
 apple_podcasts: https://podcasts.apple.com/us/podcast/79-font-engineering-und-schriftarten-f%C3%BCrs-programmieren/id1603082924?i=1000620704044&uo=4
 audio: https://audio1.redcircle.com/episodes/10bee4a4-c6fe-4cad-90c9-2b33633ad09f/stream.mp3
@@ -81,7 +82,6 @@ speaker:
 - name: Philipp Acsany
   transcriptLetter: A
   website: https://www.acsany.de/
-sponsor: ''
 spotify: https://open.spotify.com/episode/5DIzNhGilzQ7Yo1syMdzf8
 tags:
 - Tech Kultur

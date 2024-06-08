@@ -1,4 +1,5 @@
 ---
+advertiser: ''
 amazon_music: https://music.amazon.com/podcasts/c35a09fe-4116-4e04-8f68-77d61b112e46/episodes/3a1c7cb3-6259-4c47-a129-f93a96345d89/engineering-kiosk-03-over-engineering-das-werkzeug-des-teufels
 apple_podcasts: https://podcasts.apple.com/us/podcast/03-over-engineering-das-werkzeug-des-teufels/id1603082924?i=1000548219975
 audio: https://audio1.redcircle.com/episodes/8ab59758-598f-459b-8d7f-f832ced2b87f/stream.mp3
@@ -74,7 +75,6 @@ speaker:
 - name: Wolfi Gassler
   transcriptLetter: A
   website: https://wolfgang.gassler.org/
-sponsor: ''
 spotify: https://open.spotify.com/episode/7HI6NDwFJnM0w7W8xYjGqG
 tags:
 - Software Engineering

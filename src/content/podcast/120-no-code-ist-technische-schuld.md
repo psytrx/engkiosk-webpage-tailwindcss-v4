@@ -1,4 +1,5 @@
 ---
+advertiser: ''
 amazon_music: https://music.amazon.com/podcasts/c35a09fe-4116-4e04-8f68-77d61b112e46/episodes/c713d47b-6224-426d-be2b-9f48ddf558f1/engineering-kiosk-120-no-code-ist-technische-schuld
 apple_podcasts: https://podcasts.apple.com/us/podcast/120-no-code-ist-technische-schuld/id1603082924?i=1000653285343&uo=4
 audio: https://audio1.redcircle.com/episodes/62bdaeb9-a8d8-460c-9ac1-faca90db4180/stream.mp3
@@ -82,7 +83,6 @@ speaker:
 - name: Wolfi Gassler
   transcriptLetter: A
   website: https://wolfgang.gassler.org/
-sponsor: ''
 spotify: https://open.spotify.com/episode/5ZpcUZ2Wijz2RlDcdtQyj0
 tags:
 - Software Engineering

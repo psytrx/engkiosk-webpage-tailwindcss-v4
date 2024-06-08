@@ -1,4 +1,5 @@
 ---
+advertiser: ''
 amazon_music: https://music.amazon.com/podcasts/c35a09fe-4116-4e04-8f68-77d61b112e46/episodes/b763ca60-3dc6-4848-99de-2f887f5863ea/engineering-kiosk-59-kann-man-mit-open-source-geld-verdienen
 apple_podcasts: https://podcasts.apple.com/us/podcast/59-kann-man-mit-open-source-geld-verdienen/id1603082924?i=1000600724657&uo=4
 audio: https://audio1.redcircle.com/episodes/fedbb121-bf9f-46fe-9a36-15bac3ae52be/stream.mp3
@@ -64,7 +65,6 @@ speaker:
 - name: Wolfi Gassler
   transcriptLetter: B
   website: https://wolfgang.gassler.org/
-sponsor: ''
 spotify: https://open.spotify.com/episode/715h8uioolNKRzxMjzQL3E
 tags:
 - Open Source

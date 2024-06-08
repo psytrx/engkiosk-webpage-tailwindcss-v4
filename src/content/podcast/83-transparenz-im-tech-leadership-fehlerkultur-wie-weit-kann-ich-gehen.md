@@ -1,4 +1,5 @@
 ---
+advertiser: ''
 amazon_music: https://music.amazon.com/podcasts/c35a09fe-4116-4e04-8f68-77d61b112e46/episodes/dff243ea-8aef-4b63-88e6-e064eaf76709/engineering-kiosk-83-transparenz-im-tech-leadership-fehlerkultur-wie-weit-kann-ich-gehen
 apple_podcasts: https://podcasts.apple.com/us/podcast/83-transparenz-im-tech-leadership-fehlerkultur-wie/id1603082924?i=1000623756371&uo=4
 audio: https://audio1.redcircle.com/episodes/f799a796-6463-44c8-b132-a544e59fb859/stream.mp3
@@ -61,7 +62,6 @@ speaker:
 - name: Wolfi Gassler
   transcriptLetter: B
   website: https://wolfgang.gassler.org/
-sponsor: ''
 spotify: https://open.spotify.com/episode/5eMHJFouRpXxAmutig1O1w
 tags:
 - Team

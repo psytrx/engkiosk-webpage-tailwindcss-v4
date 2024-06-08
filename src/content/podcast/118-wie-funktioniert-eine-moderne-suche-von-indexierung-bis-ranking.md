@@ -1,4 +1,5 @@
 ---
+advertiser: ''
 amazon_music: https://music.amazon.com/podcasts/c35a09fe-4116-4e04-8f68-77d61b112e46/episodes/887584b2-f9ff-4b60-9351-71838e5d75bf/engineering-kiosk-118-wie-funktioniert-eine-moderne-suche-von-indexierung-bis-ranking
 apple_podcasts: https://podcasts.apple.com/us/podcast/118-wie-funktioniert-eine-moderne-suche-von-indexierung/id1603082924?i=1000651847129&uo=4
 audio: https://audio1.redcircle.com/episodes/4e79a08f-fd60-4229-8e3a-a1ff36c6e7d0/stream.mp3
@@ -99,7 +100,6 @@ speaker:
 - name: Wolfi Gassler
   transcriptLetter: A
   website: https://wolfgang.gassler.org/
-sponsor: ''
 spotify: https://open.spotify.com/episode/7Dc6ZlaXIfaQmItwCiHluQ
 tags:
 - Software Engineering

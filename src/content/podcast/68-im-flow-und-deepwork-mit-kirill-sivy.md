@@ -1,4 +1,5 @@
 ---
+advertiser: ''
 amazon_music: https://music.amazon.com/podcasts/c35a09fe-4116-4e04-8f68-77d61b112e46/episodes/b1f7d627-14e1-4d05-bb2a-b5b0bccb01b0
 apple_podcasts: https://podcasts.apple.com/us/podcast/68-im-flow-und-deepwork-mit-kirill-sivy/id1603082924?i=1000610502910&uo=4
 audio: https://audio1.redcircle.com/episodes/b3ae8251-d641-4dcc-a45e-73dc88c91c3c/stream.mp3
@@ -75,7 +76,6 @@ speaker:
 - name: Kirill Sivy
   transcriptLetter: A
   website: https://www.linkedin.com/in/ksivy/
-sponsor: ''
 spotify: https://open.spotify.com/episode/62rbOMaw6dLKYDgBEZWtjW
 tags:
 - Karriere

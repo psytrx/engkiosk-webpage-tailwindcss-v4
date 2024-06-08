@@ -1,4 +1,5 @@
 ---
+advertiser: ''
 amazon_music: https://music.amazon.com/podcasts/c35a09fe-4116-4e04-8f68-77d61b112e46/episodes/db1a0c53-a506-40c7-9535-d1403ee12c45/engineering-kiosk-119-der-jobwechsel-einblick-und-erfahrungsaustausch-mit-unmute-it
 apple_podcasts: https://podcasts.apple.com/us/podcast/119-der-jobwechsel-einblick-und-erfahrungsaustausch/id1603082924?i=1000652568772&uo=4
 audio: https://audio1.redcircle.com/episodes/ee35a48d-fb7f-4ab8-81ad-0c555414c175/stream.mp3
@@ -99,7 +100,6 @@ speaker:
 - name: Doreen Sacker
   transcriptLetter: D
   website: https://www.linkedin.com/in/doreen-sacker/
-sponsor: ''
 spotify: https://open.spotify.com/episode/5Rr2XG4jBMPptPxjuqd0iW
 tags:
 - Karriere

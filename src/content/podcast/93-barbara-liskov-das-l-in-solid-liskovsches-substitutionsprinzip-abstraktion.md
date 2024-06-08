@@ -1,4 +1,5 @@
 ---
+advertiser: ''
 amazon_music: https://music.amazon.com/podcasts/c35a09fe-4116-4e04-8f68-77d61b112e46/episodes/25e5fb83-4b3e-4bd5-b370-4f5126809af5/engineering-kiosk-93-barbara-liskov---das-l-in-solid-liskovsches-substitutionsprinzip-abstraktion
 apple_podcasts: https://podcasts.apple.com/us/podcast/93-barbara-liskov-das-l-in-solid-liskovsches/id1603082924?i=1000631558829&uo=4
 audio: https://audio1.redcircle.com/episodes/a715517d-ad6f-445b-8f59-1af1ae45fe40/stream.mp3
@@ -61,7 +62,6 @@ speaker:
 - name: Wolfi Gassler
   transcriptLetter: B
   website: https://wolfgang.gassler.org/
-sponsor: ''
 spotify: https://open.spotify.com/episode/1Weh8HW6nFm1bznCqTqDoQ
 tags:
 - Turing Award

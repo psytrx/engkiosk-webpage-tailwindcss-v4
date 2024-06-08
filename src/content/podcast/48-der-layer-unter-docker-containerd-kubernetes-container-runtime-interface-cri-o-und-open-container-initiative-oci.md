@@ -1,4 +1,5 @@
 ---
+advertiser: ''
 amazon_music: https://music.amazon.com/podcasts/c35a09fe-4116-4e04-8f68-77d61b112e46/episodes/503f44c9-7a01-4b14-b7ee-acd70d03d040/engineering-kiosk-48-der-layer-unter-docker-containerd-kubernetes-container-runtime-interface-cri-o-und-open-container-initiative-oci
 apple_podcasts: https://podcasts.apple.com/us/podcast/48-der-layer-unter-docker-containerd-kubernetes-container/id1603082924?i=1000589004404&uo=4
 audio: https://audio1.redcircle.com/episodes/ad2d93d9-918f-4a76-9026-0ad264afc94d/stream.mp3
@@ -65,7 +66,6 @@ speaker:
 - name: Wolfi Gassler
   transcriptLetter: B
   website: https://wolfgang.gassler.org/
-sponsor: ''
 spotify: https://open.spotify.com/episode/3K3nMEPuTCd6sxi4JQXIVO
 tags:
 - Backend

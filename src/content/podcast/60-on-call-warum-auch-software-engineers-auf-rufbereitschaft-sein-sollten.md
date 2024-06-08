@@ -1,4 +1,5 @@
 ---
+advertiser: ''
 amazon_music: https://music.amazon.com/podcasts/c35a09fe-4116-4e04-8f68-77d61b112e46/episodes/825f4d9a-1e3a-434f-b918-20092b115b72/engineering-kiosk-60-on-call-warum-auch-software-engineers-auf-rufbereitschaft-sein-sollten
 apple_podcasts: https://podcasts.apple.com/us/podcast/60-on-call-warum-auch-software-engineers-auf-rufbereitschaft/id1603082924?i=1000601991673&uo=4
 audio: https://audio1.redcircle.com/episodes/ad760df8-9ecc-4b01-a0ec-769662d0cf12/stream.mp3
@@ -72,7 +73,6 @@ speaker:
 - name: Wolfi Gassler
   transcriptLetter: B
   website: https://wolfgang.gassler.org/
-sponsor: ''
 spotify: https://open.spotify.com/episode/1XovBj0ClZnvlVDmlxPruK
 tags:
 - Team

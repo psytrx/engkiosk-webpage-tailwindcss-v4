@@ -1,4 +1,5 @@
 ---
+advertiser: ''
 amazon_music: https://music.amazon.com/podcasts/c35a09fe-4116-4e04-8f68-77d61b112e46/episodes/9c7ce32d-1ddc-4037-bf5f-9c5e98d5be9f/engineering-kiosk-65-clean-code-macht-software-langsam
 apple_podcasts: https://podcasts.apple.com/us/podcast/65-clean-code-macht-software-langsam/id1603082924?i=1000607274815&uo=4
 audio: https://audio1.redcircle.com/episodes/e76cf600-e293-4d78-901e-6b05ca75f656/stream.mp3
@@ -64,7 +65,6 @@ speaker:
 - name: Wolfi Gassler
   transcriptLetter: A
   website: https://wolfgang.gassler.org/
-sponsor: ''
 spotify: https://open.spotify.com/episode/0CfpZPaINwZLHuFaclv0M4
 tags:
 - Backend

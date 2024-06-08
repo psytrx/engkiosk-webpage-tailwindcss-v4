@@ -1,4 +1,5 @@
 ---
+advertiser: ''
 amazon_music: https://music.amazon.com/podcasts/c35a09fe-4116-4e04-8f68-77d61b112e46/episodes/c3fc73f3-18f1-4785-9fb1-bca382c52eec/engineering-kiosk-67-die-netz-entlastung-des-internets-content-delivery-networks-cdns
 apple_podcasts: https://podcasts.apple.com/us/podcast/67-die-netz-entlastung-des-internets-content-delivery/id1603082924?i=1000609421313&uo=4
 audio: https://audio1.redcircle.com/episodes/58fdd413-682b-4428-84f0-bb691e5daacb/stream.mp3
@@ -70,7 +71,6 @@ speaker:
 - name: Wolfi Gassler
   transcriptLetter: B
   website: https://wolfgang.gassler.org/
-sponsor: ''
 spotify: https://open.spotify.com/episode/1kWAY9ka57z43uqENYwnhe
 tags:
 - Frontend

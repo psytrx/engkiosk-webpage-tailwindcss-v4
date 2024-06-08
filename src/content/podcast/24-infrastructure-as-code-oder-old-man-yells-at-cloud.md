@@ -1,4 +1,5 @@
 ---
+advertiser: ''
 amazon_music: https://music.amazon.com/podcasts/c35a09fe-4116-4e04-8f68-77d61b112e46/episodes/a09aa001-6a04-4a08-96fd-64cbd1dac70e/engineering-kiosk-24-infrastructure-as-code-oder-old-man-yells-at-cloud
 apple_podcasts: https://podcasts.apple.com/us/podcast/24-infrastructure-as-code-oder-old-man-yells-at-cloud/id1603082924?i=1000567206046&uo=4
 audio: https://audio1.redcircle.com/episodes/89075a99-0042-4bf7-b8a3-591f701d02da/stream.mp3
@@ -67,7 +68,6 @@ speaker:
 - name: Wolfi Gassler
   transcriptLetter: A
   website: https://wolfgang.gassler.org/
-sponsor: ''
 spotify: https://open.spotify.com/episode/5ZDmHWPWsvB4ok4kFEi91V
 tags:
 - Automation

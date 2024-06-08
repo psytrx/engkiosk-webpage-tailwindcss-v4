@@ -1,4 +1,5 @@
 ---
+advertiser: ''
 amazon_music: https://music.amazon.com/podcasts/c35a09fe-4116-4e04-8f68-77d61b112e46/episodes/fb01c50a-72a8-4850-9ee9-a541e808ed87/engineering-kiosk-100-episoden-ein-tech-r%C3%BCckblick-auf-2022-23-predictions-2024-und-viel-tech-trivia
 apple_podcasts: https://podcasts.apple.com/us/podcast/100-episoden-ein-tech-r%C3%BCckblick-auf-2022-23-predictions/id1603082924?i=1000637515730&uo=4
 audio: https://audio1.redcircle.com/episodes/0e56c910-5dc7-4875-a4c6-9b8e9b24071e/stream.mp3
@@ -84,7 +85,6 @@ speaker:
 - name: Matthias Endler
   transcriptLetter: B
   website: https://endler.dev/
-sponsor: ''
 spotify: https://open.spotify.com/episode/5PgUBY6MhEIc3ID1zlugq5
 tags:
 - Software Engineering

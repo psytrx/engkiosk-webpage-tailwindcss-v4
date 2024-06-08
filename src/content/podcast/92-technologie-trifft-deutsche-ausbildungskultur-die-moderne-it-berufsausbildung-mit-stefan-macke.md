@@ -1,4 +1,5 @@
 ---
+advertiser: ''
 amazon_music: https://music.amazon.com/podcasts/c35a09fe-4116-4e04-8f68-77d61b112e46/episodes/029ab9ba-f9cc-4710-956e-44d1e2f98468/engineering-kiosk-92-technologie-trifft-deutsche-ausbildungskultur-die-moderne-it-berufsausbildung-mit-stefan-macke
 apple_podcasts: https://podcasts.apple.com/us/podcast/92-technologie-trifft-deutsche-ausbildungskultur-die/id1603082924?i=1000630779009&uo=4
 audio: https://audio1.redcircle.com/episodes/682c53df-17b1-4a18-b62e-ddfe402f57a2/stream.mp3
@@ -102,7 +103,6 @@ speaker:
 - name: Stefan Macke
   transcriptLetter: A
   website: https://it-berufe-podcast.de/kontakt/
-sponsor: ''
 spotify: https://open.spotify.com/episode/6BOcnrmM3z9iwcxmSWfPhh
 tags:
 - Karriere

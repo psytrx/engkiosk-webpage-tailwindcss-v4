@@ -1,4 +1,5 @@
 ---
+advertiser: ''
 amazon_music: https://music.amazon.com/podcasts/c35a09fe-4116-4e04-8f68-77d61b112e46/episodes/15ea3224-c7c4-4174-a547-ab5bdc1a5535/engineering-kiosk-124-technische-glaubw%C3%BCrdigkeit-bewahren-m%C3%BCssen-leads-den-code-kennen
 apple_podcasts: https://podcasts.apple.com/us/podcast/124-technische-glaubw%C3%BCrdigkeit-bewahren-m%C3%BCssen-leads/id1603082924?i=1000656223627&uo=4
 audio: https://audio1.redcircle.com/episodes/a56e2861-f422-4d48-a893-8bdcca60e9b0/stream.mp3
@@ -79,7 +80,6 @@ speaker:
 - name: Wolfi Gassler
   transcriptLetter: B
   website: https://wolfgang.gassler.org/
-sponsor: ''
 spotify: https://open.spotify.com/episode/08NNwJIk0jVTZoD7zBIg9C
 tags:
 - Team

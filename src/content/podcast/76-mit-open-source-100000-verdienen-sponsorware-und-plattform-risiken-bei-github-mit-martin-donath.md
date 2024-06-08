@@ -1,4 +1,5 @@
 ---
+advertiser: ''
 amazon_music: https://music.amazon.com/podcasts/c35a09fe-4116-4e04-8f68-77d61b112e46/episodes/8840a83c-a797-4496-a1eb-b24b28b28083/engineering-kiosk-76-mit-open-source-100-000-verdienen-sponsorware-und-plattform-risiken-bei-github-mit-martin-donath
 apple_podcasts: https://podcasts.apple.com/us/podcast/76-mit-open-source-100-000%24-verdienen-sponsorware-und/id1603082924?i=1000617648795&uo=4
 audio: https://audio1.redcircle.com/episodes/845871b7-c648-43f1-bd2d-0ebe28620dca/stream.mp3
@@ -74,7 +75,6 @@ speaker:
 - name: Martin Donath
   transcriptLetter: A
   website: https://github.com/squidfunk
-sponsor: ''
 spotify: https://open.spotify.com/episode/6EtK6QAKUpu69kztnZdneZ
 tags:
 - Projektmanagement

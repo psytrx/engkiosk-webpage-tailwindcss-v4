@@ -1,4 +1,5 @@
 ---
+advertiser: ''
 amazon_music: https://music.amazon.com/podcasts/c35a09fe-4116-4e04-8f68-77d61b112e46/episodes/cfd63728-db8e-4482-90e3-2f96bec24b3a/engineering-kiosk-78-microservice-monolith-was-die-industrie-in-den-letzten-9-jahren-gelernt-hat
 apple_podcasts: https://podcasts.apple.com/us/podcast/78-microservice-monolith-was-die-industrie-in-den-letzten/id1603082924?i=1000619207536&uo=4
 audio: https://audio1.redcircle.com/episodes/a14d93e5-1858-4744-8878-c911c0a07c47/stream.mp3
@@ -71,7 +72,6 @@ speaker:
 - name: Wolfi Gassler
   transcriptLetter: A
   website: https://wolfgang.gassler.org/
-sponsor: ''
 spotify: https://open.spotify.com/episode/5RWLWU0lilYzFvRM4Q0Vu3
 tags:
 - DevOps

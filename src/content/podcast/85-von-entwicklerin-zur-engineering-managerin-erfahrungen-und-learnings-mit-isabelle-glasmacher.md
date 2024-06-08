@@ -1,4 +1,5 @@
 ---
+advertiser: ''
 amazon_music: https://music.amazon.com/podcasts/c35a09fe-4116-4e04-8f68-77d61b112e46/episodes/acefa9c0-df46-497a-be39-470a4fdd2bef/engineering-kiosk-85-von-entwicklerin-zur-engineering-managerin-erfahrungen-und-learnings-mit-isabelle-glasmacher
 apple_podcasts: https://podcasts.apple.com/us/podcast/85-von-entwicklerin-zur-engineering-managerin-erfahrungen/id1603082924?i=1000625211457&uo=4
 audio: https://audio1.redcircle.com/episodes/a113e18c-897c-458d-b252-d305aa8de90c/stream.mp3
@@ -72,7 +73,6 @@ speaker:
 - name: Isabelle Glasmacher
   transcriptLetter: A
   website: https://www.xing.com/profile/Isabelle_Glasmacher
-sponsor: ''
 spotify: https://open.spotify.com/episode/1ydYfkKN7Ip7fNZOgQgSqy
 tags:
 - Karriere

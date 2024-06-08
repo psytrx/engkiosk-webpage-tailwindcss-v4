@@ -1,4 +1,5 @@
 ---
+advertiser: ''
 amazon_music: https://music.amazon.com/podcasts/c35a09fe-4116-4e04-8f68-77d61b112e46/episodes/92bcc300-745a-48c1-81e1-2685a5de65b8/engineering-kiosk-36-sechs-stellige-it-geh%C3%A4lter-wie-was-wo-fair
 apple_podcasts: https://podcasts.apple.com/us/podcast/36-sechs-stellige-it-geh%C3%A4lter-wie-was-wo-fair/id1603082924?i=1000579282766&uo=4
 audio: https://audio1.redcircle.com/episodes/ebe153fc-4f58-49f5-a141-0e8243192204/stream.mp3
@@ -59,7 +60,6 @@ speaker:
 - name: Wolfi Gassler
   transcriptLetter: B
   website: https://wolfgang.gassler.org/
-sponsor: ''
 spotify: https://open.spotify.com/episode/3FRoRTN1kQMSwmlcUQnkL3
 tags:
 - Karriere

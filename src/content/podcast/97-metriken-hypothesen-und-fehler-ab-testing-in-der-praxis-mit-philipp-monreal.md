@@ -1,4 +1,5 @@
 ---
+advertiser: ''
 amazon_music: https://music.amazon.com/podcasts/c35a09fe-4116-4e04-8f68-77d61b112e46/episodes/39e706e9-fe72-4748-b126-db2254d62a32/engineering-kiosk-97-metriken-hypothesen-und-fehler-a-b-testing-in-der-praxis-mit-philipp-monreal
 apple_podcasts: https://podcasts.apple.com/us/podcast/97-metriken-hypothesen-und-fehler-a-b-testing-in/id1603082924?i=1000634726431&uo=4
 audio: https://audio1.redcircle.com/episodes/b28d79d5-f0c1-418b-8c7c-a29a8869087f/stream.mp3
@@ -64,7 +65,6 @@ speaker:
 - name: Philipp Monreal
   transcriptLetter: C
   website: https://www.linkedin.com/in/dr-philipp-monreal-095a2648/
-sponsor: ''
 spotify: https://open.spotify.com/episode/2HBjOXro2pEmeuaIql76BQ
 tags:
 - Tech Kultur

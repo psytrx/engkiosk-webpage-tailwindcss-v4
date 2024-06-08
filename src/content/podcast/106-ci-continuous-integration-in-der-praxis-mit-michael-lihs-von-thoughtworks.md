@@ -1,4 +1,5 @@
 ---
+advertiser: ''
 amazon_music: https://music.amazon.com/podcasts/c35a09fe-4116-4e04-8f68-77d61b112e46/episodes/bc092d6f-5a06-48b4-9657-784e5969586d/engineering-kiosk-106-ci---continuous-integration-in-der-praxis-mit-michael-lihs-von-thoughtworks
 apple_podcasts: https://podcasts.apple.com/us/podcast/106-ci-continuous-integration-in-der-praxis-mit-michael/id1603082924?i=1000641795298&uo=4
 audio: https://audio1.redcircle.com/episodes/9df1ddfb-d8a9-4736-9424-d58dd1e7200f/stream.mp3
@@ -73,7 +74,6 @@ speaker:
 - name: Michael Lihs
   transcriptLetter: B
   website: https://www.linkedin.com/in/michael-lihs/
-sponsor: ''
 spotify: https://open.spotify.com/episode/6wJdF8fZd6B3AUWaiqf1qC
 tags:
 - DevOps

@@ -1,4 +1,5 @@
 ---
+advertiser: ''
 amazon_music: https://music.amazon.com/podcasts/c35a09fe-4116-4e04-8f68-77d61b112e46/episodes/1b15c712-2594-484e-bbda-994564d8a21e/engineering-kiosk-30-ist-ein-informatikstudium-sinnvoll-welche-ausbildung-f%C3%BCr-devs
 apple_podcasts: https://podcasts.apple.com/us/podcast/30-ist-ein-informatikstudium-sinnvoll-welche-ausbildung/id1603082924?i=1000574728229&uo=4
 audio: https://audio1.redcircle.com/episodes/2c663235-5a00-4499-abf0-a205f4ad2b39/stream.mp3
@@ -75,7 +76,6 @@ speaker:
 - name: Wolfi Gassler
   transcriptLetter: B
   website: https://wolfgang.gassler.org/
-sponsor: ''
 spotify: https://open.spotify.com/episode/3XW8vkTOnDwbO1Y2O6HDsN
 tags:
 - Karriere
