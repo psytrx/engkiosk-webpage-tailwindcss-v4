@@ -75,7 +75,6 @@ def get_podcast_episode_number_from_filename_number(filename) -> int:
     if index == 0:
         index = filename[1:len(filename)].find('-')
         episode_number = filename[0:index+1]
-        episode_number = int(episode_number) * -1
 
     else:
         episode_number = filename[0:index]
