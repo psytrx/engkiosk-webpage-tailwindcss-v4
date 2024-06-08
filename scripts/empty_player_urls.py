@@ -1,14 +1,14 @@
-import os
-from os.path import isfile, join
 import logging
 import sys
 
-# External libraries
-import frontmatter
+from episode_finder import (
+    EpisodeFinder
+)
 
-# Global variables
-PATH_MARKDOWN_FILES = 'src/content/podcast'
-
+from functions import (
+    EPISODES_STORAGE_DIR,
+    build_correct_file_path
+)
 
 def find_empty_player_urls(path_md_files) -> int:
     """
@@ -23,30 +23,29 @@ def find_empty_player_urls(path_md_files) -> int:
     exit_code = 0
 
     # Get existing podcast episodes
-    episodes = [f for f in os.listdir(path_md_files) if isfile(join(path_md_files, f)) and f.endswith('.md')]
-    for episode in episodes:
-        file_path = f"{path_md_files}/{episode}"
-        with open(file_path) as f:
-            episode = frontmatter.load(f)
-            keys_to_check = [
-                'spotify',
-                'google_podcasts',
-                'apple_podcasts',
-                'amazon_music',
-                'deezer',
-                'youtube'
-            ]
-            missing = []
-            for key in keys_to_check:
-                val = episode.get(key)
-                if not val:
-                    missing.append(key)
+    episode_finder = EpisodeFinder(path_md_files)
+    episodes = episode_finder.get_episodes()
 
-            if missing:
-                missing_urls = ", ".join(missing)
-                logging.error(f"Episode {file_path} is missing player URLs for {missing_urls}")
+    for file_path, episode in episodes.items():
+        keys_to_check = [
+            'spotify',
+            'google_podcasts',
+            'apple_podcasts',
+            'amazon_music',
+            'deezer',
+            'youtube'
+        ]
+        missing = []
+        for key in keys_to_check:
+            val = episode.get(key)
+            if not val:
+                missing.append(key)
 
-                exit_code = 1
+        if missing:
+            missing_urls = ", ".join(missing)
+            logging.error(f"Episode {file_path} is missing player URLs for {missing_urls}")
+
+            exit_code = 1
 
     return exit_code
 
@@ -61,14 +60,6 @@ if __name__ == "__main__":
         ]
     )
 
-    p = PATH_MARKDOWN_FILES
-
-    # Determine if the script is called from root
-    # or from the scripts directory.
-    directory_path = os.getcwd()
-    folder_name = os.path.basename(directory_path)
-    if folder_name == "scripts":
-        p = f"../{PATH_MARKDOWN_FILES}"
-
-    exit_code = find_empty_player_urls(p)
+    file_path = build_correct_file_path(EPISODES_STORAGE_DIR)
+    exit_code = find_empty_player_urls(file_path)
     sys.exit(exit_code)

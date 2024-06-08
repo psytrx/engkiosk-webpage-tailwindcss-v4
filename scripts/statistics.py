@@ -3,19 +3,22 @@ from os.path import isfile, join
 import json
 import logging
 import re
+import ntpath
+
+
+from episode_finder import (
+    EpisodeFinder
+)
 
 from functions import (
+    EPISODES_STORAGE_DIR,
     build_correct_file_path,
     get_podcast_episode_number_from_filename_number,
     has_podcast_episode_a_transcript,
     get_podcast_episode_transcript_by_number
 )
 
-# External libraries
-import frontmatter
-
 # Global variables
-PATH_EPISODE_MARKDOWN_FILES = 'src/content/podcast'
 PATH_BLOG_MARKDOWN_FILES = 'src/content/blog'
 PATH_PODCAST_INFO_JSON_FILE = 'src/data/podcast-info.json'
 PATH_TAGS_JSON_FILE = 'src/data/tags.json'
@@ -38,14 +41,11 @@ def build_episode_statistics(path_md_files) -> dict:
     stats['total_length_seconds'] = 0
 
     # Get existing podcast episodes
-    episodes = [f for f in os.listdir(path_md_files) if isfile(join(path_md_files, f)) and f.endswith('.md')]
-    for episode in episodes:
-        file_path = f"{path_md_files}/{episode}"
-        with open(file_path) as f:
-            episode_frontmatter = frontmatter.load(f)
-            
-            stats['number_of_episodes'] += 1
-            stats['total_length_seconds'] += episode_frontmatter['length_second']
+    episode_finder = EpisodeFinder(path_md_files)
+    episodes = episode_finder.get_episodes()
+    for episode in episodes.values():
+        stats['number_of_episodes'] += 1
+        stats['total_length_seconds'] += episode['length_second']
             
     return stats
 
@@ -64,26 +64,24 @@ def build_episode_speaking_time_statistics(path_md_files) -> dict:
     }
     overall_speaking_time['speaker']['Unbekannt'] = 0
 
-    episodes = [f for f in os.listdir(path_md_files) if isfile(join(path_md_files, f)) and f.endswith('.md')]
-    for episode in episodes:
-        episode_number = get_podcast_episode_number_from_filename_number(episode)
+    # Get existing podcast episodes
+    episode_finder = EpisodeFinder(path_md_files)
+    episodes = episode_finder.get_episodes()
+    for file_name, episode in episodes.items():
+        episode_file_name = ntpath.basename(file_name)
+        episode_number = get_podcast_episode_number_from_filename_number(episode_file_name)
 
         if has_podcast_episode_a_transcript(episode_number) is False:
             continue
-
-        # Read podcast episode data
-        file_path = f"{path_md_files}/{episode}"
-        with open(file_path) as f:
-            episode_frontmatter = frontmatter.load(f)
 
         # Read transcript data
         transcript_data = get_podcast_episode_transcript_by_number(episode_number)
 
         speaker_map = {}
-        for s in episode_frontmatter['speaker']:
+        for s in episode['speaker']:
             speaker_map[s['transcriptLetter']] = s['name']
 
-        overall_speaking_time['total_length_s'] += episode_frontmatter['length_second']
+        overall_speaking_time['total_length_s'] += episode['length_second']
 
         ms_sum = 0
         speaking_time = {}
@@ -101,7 +99,7 @@ def build_episode_speaking_time_statistics(path_md_files) -> dict:
             speaking_time[speaker] += length
             overall_speaking_time['speaker'][speaker] += length
 
-        episode_length_ms = episode_frontmatter['length_second'] * 1000
+        episode_length_ms = episode['length_second'] * 1000
         if ms_sum < episode_length_ms:
             leftover_ms = episode_length_ms - ms_sum
             speaking_time['Unbekannt'] = leftover_ms
@@ -114,9 +112,9 @@ def build_episode_speaking_time_statistics(path_md_files) -> dict:
         sorted_speaking_time = dict(sorted(speaking_time.items(), key=lambda item: item[1], reverse=True))
         episode_speaking_time.append({
             'speaking': sorted_speaking_time,
-            'title': episode_frontmatter['title'],
-            'pubDate': episode_frontmatter['pubDate'],
-            'length_second': episode_frontmatter['length_second'],
+            'title': episode['title'],
+            'pubDate': episode['pubDate'],
+            'length_second': episode['length_second'],
         })
 
     # Sort episodes by publishing date
@@ -285,8 +283,8 @@ if __name__ == "__main__":
     )
 
     # Collecting data
-    episode_stats = build_episode_statistics(build_correct_file_path(PATH_EPISODE_MARKDOWN_FILES))
-    episode_speaking_stats, overall_speaking_stats = build_episode_speaking_time_statistics(build_correct_file_path(PATH_EPISODE_MARKDOWN_FILES))
+    episode_stats = build_episode_statistics(build_correct_file_path(EPISODES_STORAGE_DIR))
+    episode_speaking_stats, overall_speaking_stats = build_episode_speaking_time_statistics(build_correct_file_path(EPISODES_STORAGE_DIR))
     blog_stats = build_blog_statistics(build_correct_file_path(PATH_BLOG_MARKDOWN_FILES))
     tags_stats = build_tags_statistics(build_correct_file_path(PATH_TAGS_JSON_FILE))
     podcast_stats = build_podcast_statistics(build_correct_file_path(PATH_PODCAST_INFO_JSON_FILE))
