@@ -345,26 +345,26 @@ def sync_podcast_episodes(rss_feed, path_md_files, path_img_files, no_api_calls=
             spotify_link = spotify_episode["external_urls"]["spotify"]
 
         data = {
-            'title': title,
-            'audio': mp3_link,
-            'pubDate': date_parsed,
-            'image': image_filename,
-            'description': description_short,
-            'headlines': headline_info,
-            'chapter': chapter,
-            'spotify': spotify_link,
-            'google_podcasts': get_episode_link_from_google(google_podcast_content, title),
-            'apple_podcasts': get_episode_link_from_apple(apple_podcast_content, title),
             'amazon_music': '',
+            'apple_podcasts': get_episode_link_from_apple(apple_podcast_content, title),
+            'audio': mp3_link,
+            'chapter': chapter,
             'deezer': get_episode_link_from_deezer(deezer_episodes, title),
+            'description': description_short,
+            'google_podcasts': get_episode_link_from_google(google_podcast_content, title),
+            'headlines': headline_info,
+            'image': image_filename,
+            'length_second': length_second,
+            'pubDate': date_parsed,
             'rtlplus': '',
-            'youtube': get_episode_link_from_youtube(youtube_playlist_items, title),
-            'tags': [],
             # Based on https://www.linkedin.com/pulse/bbcs-secret-growth-revolutionary-six-user-needs-ghada-hashish-acca/
             'six_user_needs': [],
-            'length_second': length_second,
             'speaker': DEFAULT_SPEAKER,
             'sponsor': '',
+            'spotify': spotify_link,
+            'tags': [],
+            'title': title,
+            'youtube': get_episode_link_from_youtube(youtube_playlist_items, title),
         }
 
         full_file_path = f'{path_md_files}/{filename}'
@@ -382,18 +382,18 @@ def sync_podcast_episodes(rss_feed, path_md_files, path_img_files, no_api_calls=
                 episode = frontmatter.load(f)
 
                 keys_to_keep = [
-                    'spotify',
-                    'google_podcasts',
-                    'apple_podcasts',
                     'amazon_music',
+                    'apple_podcasts',
                     'deezer',
-                    'rtlplus',
-                    'youtube',
-                    'tags',
-                    'six_user_needs',
+                    'google_podcasts',
                     'length_second',
+                    'rtlplus',
+                    'six_user_needs',
                     'speaker',
                     'sponsor',
+                    'spotify',
+                    'tags',
+                    'youtube',
                 ]
                 for key in keys_to_keep:
                     val = episode.get(key)
