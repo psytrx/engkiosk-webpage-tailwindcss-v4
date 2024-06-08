@@ -1,9 +1,5 @@
 import os
 import json
-from os.path import isfile, join
-
-# External libraries
-import frontmatter
 
 EPISODES_STORAGE_DIR = 'src/content/podcast'
 TRANSCRIPT_STORAGE_DIR = 'src/data/transcripts'
