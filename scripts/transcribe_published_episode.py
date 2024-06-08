@@ -5,7 +5,11 @@ import os
 import assemblyai as aai
 import json
 
-from functions import EPISODES_STORAGE_DIR, TRANSCRIPT_STORAGE_DIR, build_correct_file_path, get_podcast_episode_by_number
+from episode_finder import (
+    EpisodeFinder
+)
+
+from functions import EPISODES_STORAGE_DIR, TRANSCRIPT_STORAGE_DIR, build_correct_file_path
 
 
 if __name__ == "__main__":
@@ -37,7 +41,12 @@ if __name__ == "__main__":
 
     logging.info(f"Searching for podcast episode {episode_number} ...")
     p = build_correct_file_path(EPISODES_STORAGE_DIR)
-    episode = get_podcast_episode_by_number(p, episode_number)
+    episode_finder = EpisodeFinder(p)
+    episode = episode_finder.get_podcast_episode_by_number(episode_number)
+    if episode is None:
+        logging.info(f"Searching for podcast episode {episode_number} ... Not found")
+        sys.exit(1)
+
     logging.info(f"Searching for podcast episode {episode_number} ... Found")
 
     episode_audio_url = episode.get("audio")

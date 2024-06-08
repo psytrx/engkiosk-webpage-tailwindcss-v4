@@ -51,8 +51,30 @@ class EpisodeFinder:
         Output: 12
         """
         episode_number = re.findall(self.__episode_number_regex, filename)[0]
+        episode_number = self.__trim_episode_number(episode_number)
 
+        return episode_number
+
+    def __trim_episode_number(self, episode_number):
+        """
+        Trims the episode number to remove leading zeros.
+        """
         if episode_number.startswith("0"):
             episode_number = episode_number[len("0"):]
 
         return episode_number
+
+    def get_podcast_episode_by_number(self, number):
+        """
+        Gets the podcast episode data by number.
+
+        {number} is the number of the podcast.
+
+        If the episode was found, the episode object is returned.
+        If not, None is returned.
+        """
+        number = self.__trim_episode_number(number)
+        if number not in self.__episodes_by_number:
+            return None
+
+        return self.__episodes_by_number[number]
