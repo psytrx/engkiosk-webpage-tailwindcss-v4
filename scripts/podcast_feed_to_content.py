@@ -364,6 +364,7 @@ def sync_podcast_episodes(rss_feed, path_md_files, path_img_files, no_api_calls=
             'six_user_needs': [],
             'length_second': length_second,
             'speaker': DEFAULT_SPEAKER,
+            'sponsor': '',
         }
 
         full_file_path = f'{path_md_files}/{filename}'
@@ -392,6 +393,7 @@ def sync_podcast_episodes(rss_feed, path_md_files, path_img_files, no_api_calls=
                     'six_user_needs',
                     'length_second',
                     'speaker',
+                    'sponsor',
                 ]
                 for key in keys_to_keep:
                     val = episode.get(key)

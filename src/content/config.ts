@@ -30,6 +30,7 @@ const podcastEpisodeCollection = defineCollection({
 					website: z.string(),
 				})
 			),
+			sponsor: z.string(),
 			spotify: z.string(),
 			tags: z.array(z.string()),
 			title: z.string(),
