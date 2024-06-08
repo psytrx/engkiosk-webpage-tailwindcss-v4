@@ -72,6 +72,7 @@ speaker:
 - name: Wolfi Gassler
   transcriptLetter: A
   website: https://wolfgang.gassler.org/
+sponsor: ''
 spotify: https://open.spotify.com/episode/42HDmC8v2lIbjtYw51OJDx
 tags:
 - Karriere

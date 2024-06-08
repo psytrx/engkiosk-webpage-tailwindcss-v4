@@ -81,6 +81,7 @@ speaker:
 - name: Frank Karlitschek
   transcriptLetter: A
   website: https://karlitschek.de/
+sponsor: ''
 spotify: https://open.spotify.com/episode/7xjMzo1A0zEkvnaNSNZfTC
 tags:
 - Tech Kultur

@@ -99,6 +99,7 @@ speaker:
 - name: Doreen Sacker
   transcriptLetter: D
   website: https://www.linkedin.com/in/doreen-sacker/
+sponsor: ''
 spotify: https://open.spotify.com/episode/5Rr2XG4jBMPptPxjuqd0iW
 tags:
 - Karriere

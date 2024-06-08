@@ -72,6 +72,7 @@ speaker:
 - name: Isabelle Glasmacher
   transcriptLetter: A
   website: https://www.xing.com/profile/Isabelle_Glasmacher
+sponsor: ''
 spotify: https://open.spotify.com/episode/1ydYfkKN7Ip7fNZOgQgSqy
 tags:
 - Karriere

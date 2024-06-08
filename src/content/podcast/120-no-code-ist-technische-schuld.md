@@ -82,6 +82,7 @@ speaker:
 - name: Wolfi Gassler
   transcriptLetter: A
   website: https://wolfgang.gassler.org/
+sponsor: ''
 spotify: https://open.spotify.com/episode/5ZpcUZ2Wijz2RlDcdtQyj0
 tags:
 - Software Engineering

@@ -73,6 +73,7 @@ speaker:
 - name: Wolfi Gassler
   transcriptLetter: A
   website: https://wolfgang.gassler.org/
+sponsor: ''
 spotify: https://open.spotify.com/episode/0S8AoLpiO35S3Lc06mKmQz
 tags:
 - Team

@@ -79,6 +79,7 @@ speaker:
 - name: Stephan Strack
   transcriptLetter: C
   website: https://www.linkedin.com/in/stephan-strack-4b594b70/
+sponsor: ''
 spotify: https://open.spotify.com/episode/0hlLIxCU2RTEZRbxRbnkuJ
 tags:
 - Team

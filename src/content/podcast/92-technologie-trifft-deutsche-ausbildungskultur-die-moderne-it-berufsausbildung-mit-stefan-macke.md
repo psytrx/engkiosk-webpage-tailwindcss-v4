@@ -102,6 +102,7 @@ speaker:
 - name: Stefan Macke
   transcriptLetter: A
   website: https://it-berufe-podcast.de/kontakt/
+sponsor: ''
 spotify: https://open.spotify.com/episode/6BOcnrmM3z9iwcxmSWfPhh
 tags:
 - Karriere

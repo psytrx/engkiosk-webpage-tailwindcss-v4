@@ -110,6 +110,7 @@ speaker:
 - name: Christian Braun
   transcriptLetter: C
   website: https://theempathicdev.de/
+sponsor: ''
 spotify: https://open.spotify.com/episode/0E5BlyyQHiXrkVu2Vuknwj
 tags:
 - Karriere

@@ -61,6 +61,7 @@ speaker:
 - name: Wolfi Gassler
   transcriptLetter: A
   website: https://wolfgang.gassler.org/
+sponsor: ''
 spotify: https://open.spotify.com/episode/6o12Q11f95KuKYytqmis6u
 tags:
 - Backend

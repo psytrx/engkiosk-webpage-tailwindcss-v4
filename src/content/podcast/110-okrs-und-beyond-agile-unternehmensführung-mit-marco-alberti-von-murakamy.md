@@ -67,6 +67,7 @@ speaker:
 - name: Marco Alberti
   transcriptLetter: C
   website: https://murakamy.com/team
+sponsor: ''
 spotify: https://open.spotify.com/episode/748QoqMS0CRY2DDOaTjwiI
 tags:
 - Team

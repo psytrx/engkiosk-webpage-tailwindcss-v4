@@ -87,6 +87,7 @@ speaker:
 - name: "Hendrik Kleinw\xE4chter"
   transcriptLetter: C
   website: https://www.hkleinwaechter.com/
+sponsor: ''
 spotify: https://open.spotify.com/episode/3pEBDEBuZ77WnLaHembvuM
 tags:
 - Open Source

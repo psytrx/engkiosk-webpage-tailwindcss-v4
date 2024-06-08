@@ -53,6 +53,7 @@ speaker:
 - name: Puja Abbassi
   transcriptLetter: B
   website: https://www.linkedin.com/in/mgapatrick/
+sponsor: ''
 spotify: https://open.spotify.com/episode/1AvjA3G4RKiCL6sVFjuqdi
 tags:
 - DevOps

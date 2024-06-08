@@ -74,6 +74,7 @@ speaker:
 - name: Martin Donath
   transcriptLetter: A
   website: https://github.com/squidfunk
+sponsor: ''
 spotify: https://open.spotify.com/episode/6EtK6QAKUpu69kztnZdneZ
 tags:
 - Projektmanagement

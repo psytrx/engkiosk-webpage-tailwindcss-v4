@@ -59,6 +59,7 @@ speaker:
 - name: Patrick Pissang
   transcriptLetter: A
   website: https://saleshero.training/
+sponsor: ''
 spotify: https://open.spotify.com/episode/1g6M7QpdErJzFmSJlShE7F
 tags:
 - Team

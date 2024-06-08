@@ -64,6 +64,7 @@ speaker:
 - name: Philipp Monreal
   transcriptLetter: C
   website: https://www.linkedin.com/in/dr-philipp-monreal-095a2648/
+sponsor: ''
 spotify: https://open.spotify.com/episode/2HBjOXro2pEmeuaIql76BQ
 tags:
 - Tech Kultur

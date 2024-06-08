@@ -74,6 +74,7 @@ speaker:
 - name: Christian Schaefer
   transcriptLetter: C
   website: https://schepp.dev/
+sponsor: ''
 spotify: https://open.spotify.com/episode/3LGHJYK2g5ENTjCKIQgLRG
 tags:
 - Software Engineering

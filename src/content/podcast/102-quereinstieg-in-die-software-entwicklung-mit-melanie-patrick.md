@@ -58,6 +58,7 @@ speaker:
 - name: Melanie Patrick
   transcriptLetter: C
   website: https://www.linkedin.com/in/mgapatrick/
+sponsor: ''
 spotify: https://open.spotify.com/episode/0QoeZE4jDt514EIYLGhM7B
 tags:
 - Gehalt

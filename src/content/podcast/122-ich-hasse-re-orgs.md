@@ -80,6 +80,7 @@ speaker:
 - name: Wolfi Gassler
   transcriptLetter: B
   website: https://wolfgang.gassler.org/
+sponsor: ''
 spotify: https://open.spotify.com/episode/2T6zhVOMrE4c88oDL9IsME
 tags:
 - Team

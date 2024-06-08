@@ -61,6 +61,7 @@ speaker:
 - name: Wolfi Gassler
   transcriptLetter: A
   website: https://wolfgang.gassler.org/
+sponsor: ''
 spotify: https://open.spotify.com/episode/1iv3GwlMuhbWa0pvYS9bZO
 tags:
 - Tech Kultur

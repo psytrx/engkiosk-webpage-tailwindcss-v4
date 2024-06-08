@@ -64,6 +64,7 @@ speaker:
 - name: Wolfi Gassler
   transcriptLetter: B
   website: https://wolfgang.gassler.org/
+sponsor: ''
 spotify: https://open.spotify.com/episode/715h8uioolNKRzxMjzQL3E
 tags:
 - Open Source

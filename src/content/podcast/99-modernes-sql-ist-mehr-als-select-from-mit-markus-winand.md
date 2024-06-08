@@ -65,6 +65,7 @@ speaker:
 - name: Markus Winand
   transcriptLetter: A
   website: https://winand.at/de
+sponsor: ''
 spotify: https://open.spotify.com/episode/5KRaRib5wNZ3AbE8ApPCss
 tags:
 - Software Engineering

@@ -73,6 +73,7 @@ speaker:
 - name: Michael Lihs
   transcriptLetter: B
   website: https://www.linkedin.com/in/michael-lihs/
+sponsor: ''
 spotify: https://open.spotify.com/episode/6wJdF8fZd6B3AUWaiqf1qC
 tags:
 - DevOps

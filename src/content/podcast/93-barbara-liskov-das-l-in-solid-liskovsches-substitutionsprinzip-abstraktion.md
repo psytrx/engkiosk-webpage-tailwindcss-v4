@@ -61,6 +61,7 @@ speaker:
 - name: Wolfi Gassler
   transcriptLetter: B
   website: https://wolfgang.gassler.org/
+sponsor: ''
 spotify: https://open.spotify.com/episode/1Weh8HW6nFm1bznCqTqDoQ
 tags:
 - Turing Award

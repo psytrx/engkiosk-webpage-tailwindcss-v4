@@ -75,6 +75,7 @@ speaker:
 - name: Kirill Sivy
   transcriptLetter: A
   website: https://www.linkedin.com/in/ksivy/
+sponsor: ''
 spotify: https://open.spotify.com/episode/62rbOMaw6dLKYDgBEZWtjW
 tags:
 - Karriere

@@ -77,6 +77,7 @@ speaker:
 - name: "Peter Kr\xF6ner"
   transcriptLetter: A
   website: https://www.peterkroener.de/
+sponsor: ''
 spotify: https://open.spotify.com/episode/3iIcyS88hHQEWaN2Nm8RYP
 tags:
 - Backend

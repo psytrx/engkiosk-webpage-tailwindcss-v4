@@ -84,6 +84,7 @@ speaker:
 - name: Matthias Endler
   transcriptLetter: B
   website: https://endler.dev/
+sponsor: ''
 spotify: https://open.spotify.com/episode/5PgUBY6MhEIc3ID1zlugq5
 tags:
 - Software Engineering

@@ -67,6 +67,7 @@ speaker:
 - name: Wolfi Gassler
   transcriptLetter: A
   website: https://wolfgang.gassler.org/
+sponsor: ''
 spotify: https://open.spotify.com/episode/5ZDmHWPWsvB4ok4kFEi91V
 tags:
 - Automation

@@ -79,6 +79,7 @@ speaker:
 - name: Patrick Kuster
   transcriptLetter: B
   website: https://www.linkedin.com/in/patrick-kuster-71248b68/
+sponsor: ''
 spotify: https://open.spotify.com/episode/6Gg1FGFu4829JIw1Mh5j65
 tags:
 - Team

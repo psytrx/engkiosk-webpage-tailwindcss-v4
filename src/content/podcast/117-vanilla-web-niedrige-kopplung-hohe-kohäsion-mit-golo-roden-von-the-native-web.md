@@ -77,6 +77,7 @@ speaker:
 - name: Golo Roden
   transcriptLetter: C
   website: https://www.youtube.com/c/thenativewebGmbH
+sponsor: ''
 spotify: https://open.spotify.com/episode/4LVXap7zai5WCPvQTDgOhy
 tags:
 - Software Engineering

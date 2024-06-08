@@ -93,6 +93,7 @@ speaker:
 - name: Jana Aydinbas
   transcriptLetter: B
   website: https://wolfgang.gassler.org/
+sponsor: ''
 spotify: https://open.spotify.com/episode/0y7OB0W7MzrDZvfWcJURLf
 tags:
 - Software Engineering

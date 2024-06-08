@@ -81,6 +81,7 @@ speaker:
 - name: Philipp Acsany
   transcriptLetter: A
   website: https://www.acsany.de/
+sponsor: ''
 spotify: https://open.spotify.com/episode/5DIzNhGilzQ7Yo1syMdzf8
 tags:
 - Tech Kultur

@@ -61,6 +61,7 @@ speaker:
 - name: Tom Bartel
   transcriptLetter: A
   website: https://www.tombartel.me/
+sponsor: ''
 spotify: https://open.spotify.com/episode/4f3t8rVvTuZEfoFzIbQGrP
 tags:
 - Tech Kultur

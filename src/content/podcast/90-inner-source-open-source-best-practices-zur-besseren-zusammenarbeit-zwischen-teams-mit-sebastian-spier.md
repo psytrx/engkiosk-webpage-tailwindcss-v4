@@ -80,6 +80,7 @@ speaker:
 - name: Sebastian Spier
   transcriptLetter: A
   website: https://spier.hu/
+sponsor: ''
 spotify: https://open.spotify.com/episode/46pnovkLChEseiNiiP15Qw
 tags:
 - Team

@@ -61,6 +61,7 @@ speaker:
 - name: "Birgitta B\xF6ckeler"
   transcriptLetter: A
   website: https://www.linkedin.com/in/birgittaboeckeler/
+sponsor: ''
 spotify: https://open.spotify.com/episode/44FSlJr24G0QmYxZgZ8QOJ
 tags:
 - Software Engineering

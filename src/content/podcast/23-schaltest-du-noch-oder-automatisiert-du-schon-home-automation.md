@@ -70,6 +70,7 @@ speaker:
 - name: Wolfi Gassler
   transcriptLetter: B
   website: https://wolfgang.gassler.org/
+sponsor: ''
 spotify: https://open.spotify.com/episode/36a2YKzzvfrrRzM3qZTHaC
 tags:
 - Automation

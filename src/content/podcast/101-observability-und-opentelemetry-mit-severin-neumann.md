@@ -74,6 +74,7 @@ speaker:
 - name: Severin Neumann
   transcriptLetter: C
   website: https://www.linkedin.com/in/severinneumann/
+sponsor: ''
 spotify: https://open.spotify.com/episode/1RkWRmsfnRMBfDrYKNGDRf
 tags:
 - DevOps

@@ -98,6 +98,7 @@ speaker:
 - name: Diana Knodel
   transcriptLetter: A
   website: https://www.linkedin.com/in/dianaknodel/
+sponsor: ''
 spotify: https://open.spotify.com/episode/4LsjPZYmED1ARMkOXhuQwP
 tags:
 - Tech Kultur

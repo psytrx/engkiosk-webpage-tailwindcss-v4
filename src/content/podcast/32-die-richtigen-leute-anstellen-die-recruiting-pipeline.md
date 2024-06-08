@@ -60,6 +60,7 @@ speaker:
 - name: Wolfi Gassler
   transcriptLetter: A
   website: https://wolfgang.gassler.org/
+sponsor: ''
 spotify: https://open.spotify.com/episode/0B3LoAAfZbllsTw1KyYIjx
 tags:
 - Bewerbung

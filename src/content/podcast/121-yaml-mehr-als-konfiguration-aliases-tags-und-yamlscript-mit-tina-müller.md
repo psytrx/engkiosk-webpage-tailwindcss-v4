@@ -86,6 +86,7 @@ speaker:
 - name: "Tina M\xFCller"
   transcriptLetter: C
   website: https://www.linkedin.com/in/tina-m%C3%BCller-642931154/
+sponsor: ''
 spotify: https://open.spotify.com/episode/7vy2WEHtQMx8YnmnPMweIp
 tags:
 - Software Engineering

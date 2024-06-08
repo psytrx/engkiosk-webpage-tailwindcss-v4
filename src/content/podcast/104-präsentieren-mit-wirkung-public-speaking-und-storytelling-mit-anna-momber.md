@@ -58,6 +58,7 @@ speaker:
 - name: Anna Momber
   transcriptLetter: C
   website: https://anna-momber.com/
+sponsor: ''
 spotify: https://open.spotify.com/episode/4pBT9j4rsBoeY658Ddw2lK
 tags:
 - Karriere
