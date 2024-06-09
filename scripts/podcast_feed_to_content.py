@@ -15,10 +15,11 @@ import sys
 from urllib.parse import urlparse
 import pathlib
 
+from episode_finder import EpisodeFinder
+
 from functions import (
     build_correct_file_path,
     configure_global_logger,
-    get_podcast_episode_number_from_filename_number,
     get_podcast_episode_transcript_slim_path_by_episode_number,
     get_podcast_episode_transcript_raw_path_by_episode_number
 )
@@ -243,6 +244,8 @@ def sync_podcast_episodes(rss_feed, path_md_files, path_img_files, no_api_calls=
 
     logging.info("Processing Podcast Episode items ...")
 
+    episode_finder = EpisodeFinder()
+
     # Parse the XML and process all items
     parsed_xml = ET.fromstring(feed_response.text)
     channel = parsed_xml.find("channel")
@@ -348,7 +351,7 @@ def sync_podcast_episodes(rss_feed, path_md_files, path_img_files, no_api_calls=
 
             spotify_link = spotify_episode["external_urls"]["spotify"]
 
-        episode_number = get_podcast_episode_number_from_filename_number(filename)
+        episode_number = episode_finder.get_episode_number_from_filename(filename, leading_zero=True)
         data = {
             'advertiser': '',
             'amazon_music': '',

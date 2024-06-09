@@ -36,7 +36,9 @@ class EpisodeFinder:
 
     def get_episode_number_from_filename(self, filename, leading_zero=False):
         """
-        Get the episode number from the filename.
+        Retrieves the episode number from the episode filename.
+        A podcast episode filename is like `94-die-realität-des-freelancings-zwischen-selbstbestimmung-und-unsicherheit-mit-index-out-of-bounds.md`
+        In the example, 94 is the episode number.
 
         Input: ../src/content/podcast/04-lohnt-der-einstieg-in-open-source.md
         Output (leading_zero=False): 4

@@ -24,28 +24,6 @@ def build_correct_file_path(file_path) -> str:
     return p
 
 
-def get_podcast_episode_number_from_filename_number(filename) -> int:
-    """
-    A podcast episode filename is like `94-die-realität-des-freelancings-zwischen-selbstbestimmung-und-unsicherheit-mit-index-out-of-bounds.md`
-    In the example, 94 is the episode number.
-
-    This function retrieves the episode number from the episode filename.
-    """
-    index = filename.find('-')
-
-    # We have one episode which starts with '-1'
-    # If we search for '-', we get the minus sign.
-    # Hence we need to skip it.
-    if index == 0:
-        index = filename[1:len(filename)].find('-')
-        episode_number = filename[0:index+1]
-
-    else:
-        episode_number = filename[0:index]
-
-    return episode_number
-
-
 def has_podcast_episode_a_transcript(episode_number) -> bool:
     """
     Checks if the given {episode_number} (e.g. 94) has a transcript.
