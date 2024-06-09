@@ -10,17 +10,14 @@ from functions import (
 )
 
 from pathes import (
-    EPISODES_STORAGE_DIR
+    EPISODES_STORAGE_DIR,
+    BLOGPOST_CONTENT_FILES,
+    GERMAN_TECH_PODCAST_CONTENT_FILES,
+    TAG_FILE_CONTENT,
+    TAG_FILE_GERMAN_TECH_PODCASTS
 )
 
 import frontmatter
-
-# Global variables
-BLOGPOST_CONTENT_FILES = 'src/content/blog'
-GERMAN_TECH_PODCAST_CONTENT_FILES = 'src/content/germantechpodcasts'
-TAG_FILE_CONTENT = 'src/data/tags.json'
-TAG_FILE_GERMAN_TECH_PODCASTS = 'src/data/german-tech-podcasts-tags.json'
-
 
 def read_all_tags_from_content_files(pathes):
     """
