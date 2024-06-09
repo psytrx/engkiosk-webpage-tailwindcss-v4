@@ -1,28 +1,23 @@
 import logging
 import sys
 
-from episode_finder import (
-    EpisodeFinder
-)
-
+from episode_finder import EpisodeFinder
+from constants import EPISODES_STORAGE_DIR
 from functions import (
     build_correct_file_path,
     configure_global_logger
 )
 
-from constants import (
-    EPISODES_STORAGE_DIR
-)
 
 def find_empty_player_urls(path_md_files) -> int:
     """
-    Going through all Podcast Episode Markdown files and checks
+    Iterating through all Podcast Episodes data files and check
     if the player links for Spotify, Amazon Music and so on
-    are set properly.
+    are filled properly.
 
     If a player link is missing, it will output this file.
     If an empty response is provided, everything is fine.
-    Just remember: No news are good news.
+    Just remember: On Unix systems, no news are good news.
     """
     exit_code = 0
 
@@ -38,9 +33,11 @@ def find_empty_player_urls(path_md_files) -> int:
             'deezer',
             'youtube'
         ]
+
         missing = []
         for key in keys_to_check:
             val = episode.get(key)
+            # Do we have a value for the player key?
             if not val:
                 missing.append(key)
 
@@ -57,6 +54,7 @@ if __name__ == "__main__":
     # Setup logger
     configure_global_logger()
 
-    file_path = build_correct_file_path(EPISODES_STORAGE_DIR)
-    exit_code = find_empty_player_urls(file_path)
+    exit_code = find_empty_player_urls(
+        build_correct_file_path(EPISODES_STORAGE_DIR)
+    )
     sys.exit(exit_code)
