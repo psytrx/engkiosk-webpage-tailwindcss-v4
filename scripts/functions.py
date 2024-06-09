@@ -1,6 +1,8 @@
 import os
 import json
 
+from constants import TRANSCRIPT_STORAGE_DIR
+
 def build_correct_file_path(file_path) -> str:
     """
     Build the correct path to files.
