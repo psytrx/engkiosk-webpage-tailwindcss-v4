@@ -22,7 +22,8 @@ def find_empty_player_urls(path_md_files) -> int:
     exit_code = 0
 
     # Get existing podcast episodes
-    episode_finder = EpisodeFinder(path_md_files)
+    episode_finder = EpisodeFinder()
+    episode_finder.load_episodes_from_storage(path_md_files)
     episodes = episode_finder.get_episodes()
     for file_path, episode in episodes.items():
         keys_to_check = [

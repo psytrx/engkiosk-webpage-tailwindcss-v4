@@ -42,7 +42,8 @@ if __name__ == "__main__":
 
     logging.info(f"Searching for podcast episode {episode_number} ...")
     p = build_correct_file_path(EPISODES_STORAGE_DIR)
-    episode_finder = EpisodeFinder(p)
+    episode_finder = EpisodeFinder()
+    episode_finder.load_episodes_from_storage(p)
     episode = episode_finder.get_podcast_episode_by_number(episode_number)
     if episode is None:
         logging.info(f"Searching for podcast episode {episode_number} ... Not found")

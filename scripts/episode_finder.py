@@ -6,22 +6,19 @@ from episode import (
 )
 
 class EpisodeFinder:
-    def __init__(self, episode_storage_path):
-        self.__episode_storage_path = episode_storage_path
+    def __init__(self):
         self.__episodes_by_filename = {}
         self.__episodes_by_number = {}
-        
-        self.load_episodes_from_storage()
 
-    def load_episodes_from_storage(self):
+    def load_episodes_from_storage(self, episode_storage_path):
         """
         Load all episodes from the storage directory.
         Loading in this context means to read the frontmatter and store it in a dictionary.
         We store the frontmatter by filename and by episode number.
         """
-        episodes = [f for f in os.listdir(self.__episode_storage_path) if isfile(join(self.__episode_storage_path, f)) and f.endswith('.md')]
+        episodes = [f for f in os.listdir(episode_storage_path) if isfile(join(episode_storage_path, f)) and f.endswith('.md')]
         for episode in episodes:
-            episode_file_path = os.path.join(self.__episode_storage_path, episode)
+            episode_file_path = os.path.join(episode_storage_path, episode)
             episode_object = Episode(episode_file_path)
 
             # Frontmatter by episode filename
