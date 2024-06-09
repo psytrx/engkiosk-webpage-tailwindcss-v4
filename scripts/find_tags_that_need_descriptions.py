@@ -6,7 +6,8 @@ import sys
 import logging
 
 from functions import (
-    EPISODES_STORAGE_DIR
+    EPISODES_STORAGE_DIR,
+    build_correct_file_path
 )
 
 import frontmatter
@@ -136,28 +137,20 @@ if __name__ == "__main__":
         ]
     )
 
-    # Determine if the script is called from root
-    # or from the scripts directory.
-    directory_path = os.getcwd()
-    folder_name = os.path.basename(directory_path)
-    folder_prefix = ""
-    if folder_name == "scripts":
-        folder_prefix = "../"
-
     tags = {}
     if args.mode == "website-content":
-        TAG_FILE_PATH = f"{folder_prefix}{TAG_FILE_CONTENT}"
+        TAG_FILE_PATH = build_correct_file_path(TAG_FILE_CONTENT)
 
         content_pathes = [
-            f"{folder_prefix}{EPISODES_STORAGE_DIR}",
-            f"{folder_prefix}{BLOGPOST_CONTENT_FILES}",
+            build_correct_file_path(EPISODES_STORAGE_DIR),
+            build_correct_file_path(BLOGPOST_CONTENT_FILES),
         ]
         tags = read_all_tags_from_content_files(content_pathes)
 
     if args.mode == "german-tech-podcasts":
-        TAG_FILE_PATH = f"{folder_prefix}{TAG_FILE_GERMAN_TECH_PODCASTS}"
+        TAG_FILE_PATH = build_correct_file_path(TAG_FILE_GERMAN_TECH_PODCASTS)
         content_pathes = [
-            f"{folder_prefix}{GERMAN_TECH_PODCAST_CONTENT_FILES}"
+            build_correct_file_path(GERMAN_TECH_PODCAST_CONTENT_FILES)
         ]
         tags = read_all_tags_from_content_files(content_pathes)
 
