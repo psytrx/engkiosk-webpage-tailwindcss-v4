@@ -18,13 +18,11 @@ from functions import (
 )
 
 from constants import (
-    EPISODES_STORAGE_DIR
+    EPISODES_STORAGE_DIR,
+    PATH_PODCAST_INFO_JSON_FILE,
+    BLOGPOST_CONTENT_FILES,
+    TAG_FILE_CONTENT
 )
-
-# Global variables
-PATH_BLOG_MARKDOWN_FILES = 'src/content/blog'
-PATH_PODCAST_INFO_JSON_FILE = 'src/data/podcast-info.json'
-PATH_TAGS_JSON_FILE = 'src/data/tags.json'
 
 intervals = (
     ('weeks', 604800),  # 60 * 60 * 24 * 7
@@ -288,8 +286,8 @@ if __name__ == "__main__":
     # Collecting data
     episode_stats = build_episode_statistics(build_correct_file_path(EPISODES_STORAGE_DIR))
     episode_speaking_stats, overall_speaking_stats = build_episode_speaking_time_statistics(build_correct_file_path(EPISODES_STORAGE_DIR))
-    blog_stats = build_blog_statistics(build_correct_file_path(PATH_BLOG_MARKDOWN_FILES))
-    tags_stats = build_tags_statistics(build_correct_file_path(PATH_TAGS_JSON_FILE))
+    blog_stats = build_blog_statistics(build_correct_file_path(BLOGPOST_CONTENT_FILES))
+    tags_stats = build_tags_statistics(build_correct_file_path(TAG_FILE_CONTENT))
     podcast_stats = build_podcast_statistics(build_correct_file_path(PATH_PODCAST_INFO_JSON_FILE))
     
     # Merging dicts
