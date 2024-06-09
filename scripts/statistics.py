@@ -13,7 +13,6 @@ from episode_finder import (
 from functions import (
     build_correct_file_path,
     configure_global_logger,
-    get_podcast_episode_number_from_filename_number,
     has_podcast_episode_a_transcript,
     get_podcast_episode_transcript_by_number
 )
@@ -71,7 +70,7 @@ def build_episode_speaking_time_statistics(path_md_files) -> dict:
     episodes = episode_finder.get_episodes()
     for file_name, episode in episodes.items():
         episode_file_name = ntpath.basename(file_name)
-        episode_number = get_podcast_episode_number_from_filename_number(episode_file_name)
+        episode_number = episode_finder.get_episode_number_from_filename(episode_file_name, leading_zero=True)
 
         if has_podcast_episode_a_transcript(episode_number) is False:
             continue

@@ -1,6 +1,5 @@
 import os
 from os.path import isfile, join
-import re
 
 from episode import (
     Episode
@@ -8,7 +7,6 @@ from episode import (
 
 class EpisodeFinder:
     def __init__(self, episode_storage_path):
-        self.__episode_number_regex = re.compile('([-\d]*)-')
         self.__episode_storage_path = episode_storage_path
         self.__episodes_by_filename = {}
         self.__episodes_by_number = {}
@@ -39,19 +37,33 @@ class EpisodeFinder:
         """
         return self.__episodes_by_filename
 
-    # If we have a number like 00 or 05, remove the first 0
-    def get_episode_number_from_filename(self, filename):
+    def get_episode_number_from_filename(self, filename, leading_zero=False):
         """
         Get the episode number from the filename.
 
         Input: ../src/content/podcast/04-lohnt-der-einstieg-in-open-source.md
-        Output: 4
+        Output (leading_zero=False): 4
+        Output (leading_zero=True): 04
 
         Input: ../src/content/podcast/12-make-oder-buy.md
         Output: 12
         """
-        episode_number = re.findall(self.__episode_number_regex, filename)[0]
-        episode_number = self.__trim_episode_number(episode_number)
+        index = filename.find('-')
+
+        # We have one episode which starts with '-1'
+        # If we search for '-', we get the minus sign.
+        # Hence we need to skip it.
+        if index == 0:
+            index = filename[1:len(filename)].find('-')
+            episode_number = filename[0:index+1]
+
+        else:
+            episode_number = filename[0:index]
+
+        if not leading_zero:
+            episode_number = self.__trim_episode_number(episode_number)
+        else:
+            episode_number = episode_number.zfill(2)
 
         return episode_number
 
