@@ -24,17 +24,6 @@ def build_correct_file_path(file_path) -> str:
     return p
 
 
-def has_podcast_episode_a_transcript(episode_number) -> bool:
-    """
-    Checks if the given {episode_number} (e.g. 94) has a transcript.
-    Returns True is yes, False otherwise.
-    """
-    transcript_file = f"{episode_number}-transcript-slim.json"
-    file_path = build_correct_file_path(TRANSCRIPT_STORAGE_DIR) + '/' + transcript_file
-
-    return os.path.exists(file_path)
-
-
 def get_podcast_episode_transcript_by_number(number):
     """
     Reads and returns the transcript of a particular episode number.

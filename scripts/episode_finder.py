@@ -1,5 +1,6 @@
 import os
 from os.path import isfile, join
+import ntpath
 
 from episode import (
     Episode
@@ -47,6 +48,7 @@ class EpisodeFinder:
         Input: ../src/content/podcast/12-make-oder-buy.md
         Output: 12
         """
+        filename = ntpath.basename(filename)
         index = filename.find('-')
 
         # We have one episode which starts with '-1'

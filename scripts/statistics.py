@@ -1,7 +1,6 @@
 import os
 from os.path import isfile, join
 import json
-import logging
 import re
 import ntpath
 
@@ -13,7 +12,6 @@ from episode_finder import (
 from functions import (
     build_correct_file_path,
     configure_global_logger,
-    has_podcast_episode_a_transcript,
     get_podcast_episode_transcript_by_number
 )
 
@@ -73,8 +71,7 @@ def build_episode_speaking_time_statistics(path_md_files) -> dict:
     for file_name, episode in episodes.items():
         episode_file_name = ntpath.basename(file_name)
         episode_number = episode_finder.get_episode_number_from_filename(episode_file_name, leading_zero=True)
-
-        if has_podcast_episode_a_transcript(episode_number) is False:
+        if episode.has_transcript(check_on_disk=True) is False:
             continue
 
         # Read transcript data
