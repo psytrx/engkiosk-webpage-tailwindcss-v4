@@ -19,6 +19,14 @@ BLOGPOST_CONTENT_FILES = 'src/content/blog'
 # German Tech Podcasts
 GERMAN_TECH_PODCAST_CONTENT_FILES = 'src/content/germantechpodcasts'
 TAG_FILE_GERMAN_TECH_PODCASTS = 'src/data/german-tech-podcasts-tags.json'
+GERMAN_TECH_PODCAST_GIT_REPO = "https://github.com/EngineeringKiosk/GermanTechPodcasts.git"
+GERMAN_TECH_PODCAST_GIT_REPO_NAME = "GermanTechPodcasts"
+GERMAN_TECH_PODCAST_JSON_PATH_IN_GIT_REPO = "generated"
+GERMAN_TECH_PODCAST_IMAGES_PATH_IN_GIT_REPO = "generated/images"
+GERMAN_TECH_PODCAST_OPML_FILE_PATH_IN_GIT_REPO = "podcasts.opml"
+GERMAN_TECH_PODCAST_JSON_STORAGE = "src/content/germantechpodcasts/"
+GERMAN_TECH_PODCAST_IMAGE_STORAGE = "src/content/germantechpodcasts/"
+GERMAN_TECH_PODCAST_OPML_STORAGE = "public/deutsche-tech-podcasts/podcasts.opml"
 
 # Website redirects
 TOML_FILE = 'netlify.toml'
