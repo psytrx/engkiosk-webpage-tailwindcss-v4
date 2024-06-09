@@ -2,7 +2,6 @@ import os
 from os.path import isfile, join
 import json
 import re
-import ntpath
 
 
 from episode_finder import (
@@ -67,9 +66,7 @@ def build_episode_speaking_time_statistics(path_md_files) -> dict:
     episode_finder = EpisodeFinder()
     episode_finder.load_episodes_from_storage(path_md_files)
     episodes = episode_finder.get_episodes()
-    for file_name, episode in episodes.items():
-        episode_file_name = ntpath.basename(file_name)
-        episode_number = episode_finder.get_episode_number_from_filename(episode_file_name, leading_zero=True)
+    for episode in episodes.values():
         if episode.has_transcript(check_on_disk=True) is False:
             continue
 
