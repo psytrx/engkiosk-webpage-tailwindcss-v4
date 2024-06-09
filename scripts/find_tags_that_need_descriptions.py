@@ -6,8 +6,11 @@ import sys
 import logging
 
 from functions import (
-    EPISODES_STORAGE_DIR,
     build_correct_file_path
+)
+
+from pathes import (
+    EPISODES_STORAGE_DIR
 )
 
 import frontmatter

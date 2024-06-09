@@ -1,10 +1,6 @@
 import os
 import json
 
-EPISODES_STORAGE_DIR = 'src/content/podcast'
-EPISODES_IMAGES_STORAGE_DIR = 'src/content/podcast'
-TRANSCRIPT_STORAGE_DIR = 'src/data/transcripts'
-
 def build_correct_file_path(file_path) -> str:
     """
     Build the correct path to files.

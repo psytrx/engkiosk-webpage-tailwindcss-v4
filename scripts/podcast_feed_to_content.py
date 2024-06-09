@@ -16,12 +16,15 @@ from urllib.parse import urlparse
 import pathlib
 
 from functions import (
-    EPISODES_STORAGE_DIR,
-    EPISODES_IMAGES_STORAGE_DIR,
     build_correct_file_path,
     get_podcast_episode_number_from_filename_number,
     get_podcast_episode_transcript_slim_path_by_episode_number,
     get_podcast_episode_transcript_raw_path_by_episode_number
+)
+
+from pathes import (
+    EPISODES_STORAGE_DIR,
+    EPISODES_IMAGES_STORAGE_DIR
 )
 
 # External libraries

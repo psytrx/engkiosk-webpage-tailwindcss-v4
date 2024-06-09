@@ -11,11 +11,14 @@ from episode_finder import (
 )
 
 from functions import (
-    EPISODES_STORAGE_DIR,
     build_correct_file_path,
     get_podcast_episode_number_from_filename_number,
     has_podcast_episode_a_transcript,
     get_podcast_episode_transcript_by_number
+)
+
+from pathes import (
+    EPISODES_STORAGE_DIR
 )
 
 # Global variables

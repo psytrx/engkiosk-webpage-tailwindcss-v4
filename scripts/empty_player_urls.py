@@ -6,8 +6,11 @@ from episode_finder import (
 )
 
 from functions import (
-    EPISODES_STORAGE_DIR,
     build_correct_file_path
+)
+
+from pathes import (
+    EPISODES_STORAGE_DIR
 )
 
 def find_empty_player_urls(path_md_files) -> int:

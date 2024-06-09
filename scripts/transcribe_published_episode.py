@@ -9,8 +9,12 @@ from episode_finder import (
     EpisodeFinder
 )
 
-from functions import EPISODES_STORAGE_DIR, TRANSCRIPT_STORAGE_DIR, build_correct_file_path
+from functions import build_correct_file_path
 
+from pathes import (
+    EPISODES_STORAGE_DIR,
+    TRANSCRIPT_STORAGE_DIR
+)
 
 if __name__ == "__main__":
     cli_parser = argparse.ArgumentParser(description='Transcribe a podcast episode')
