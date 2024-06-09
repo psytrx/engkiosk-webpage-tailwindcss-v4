@@ -11,8 +11,7 @@ from episode_finder import (
 
 from functions import (
     build_correct_file_path,
-    configure_global_logger,
-    get_podcast_episode_transcript_by_number
+    configure_global_logger
 )
 
 from constants import (
@@ -75,7 +74,7 @@ def build_episode_speaking_time_statistics(path_md_files) -> dict:
             continue
 
         # Read transcript data
-        transcript_data = get_podcast_episode_transcript_by_number(episode_number)
+        transcript_data = episode.get_transcript_slim()
 
         speaker_map = {}
         for s in episode.get('speaker'):

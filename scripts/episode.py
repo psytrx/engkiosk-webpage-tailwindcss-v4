@@ -1,7 +1,10 @@
 import os
 import ntpath
 
-from functions import build_correct_file_path
+from functions import (
+    build_correct_file_path,
+    read_json_file
+)
 from constants import TRANSCRIPT_STORAGE_DIR
 
 # External libraries
@@ -10,7 +13,12 @@ import frontmatter
 class Episode:
     def __init__(self, file_name):
         self.__file_name = file_name
-        with open(file_name) as f:
+        self.__episode_number = self.get_number(leading_zero=True)
+
+        self.load()
+
+    def load(self):
+        with open(self.__file_name) as f:
             self.__episode_frontmatter = frontmatter.load(f)
 
     def get(self, key):
@@ -60,13 +68,28 @@ class Episode:
             return True
 
         if check_on_disk:
-            episode_number = self.get_number(leading_zero=True)
+            episode_number = self.__episode_number
             transcript_file = f"{episode_number}-transcript-slim.json"
             file_path = build_correct_file_path(TRANSCRIPT_STORAGE_DIR) + '/' + transcript_file
-            print(file_path)
             exists = os.path.exists(file_path)
             if exists:
                 self.__episode_frontmatter['transcript_slim'] = file_path
             return exists
 
         return False
+
+    def get_transcript_slim(self):
+        """
+        Reads and returns the transcript of a the episode.
+        """
+        file_path = self.__episode_frontmatter.get('transcript_slim')
+        if len(file_path) == 0:
+            exists = self.has_transcript(check_on_disk=True)
+            if exists is False:
+                file_path = self.__episode_frontmatter.get('transcript_slim')
+
+        data = {}
+        if len(file_path) > 0:
+            data = read_json_file(file_path)
+
+        return data
