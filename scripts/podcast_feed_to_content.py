@@ -18,6 +18,7 @@ import pathlib
 from functions import (
     EPISODES_STORAGE_DIR,
     EPISODES_IMAGES_STORAGE_DIR,
+    build_correct_file_path,
     get_podcast_episode_number_from_filename_number,
     get_podcast_episode_transcript_slim_path_by_episode_number,
     get_podcast_episode_transcript_raw_path_by_episode_number
@@ -692,14 +693,6 @@ if __name__ == "__main__":
         ]
     )
 
-    # Determine if the script is called from root
-    # or from the scripts directory.
-    directory_path = os.getcwd()
-    folder_name = os.path.basename(directory_path)
-    folder_prefix = ""
-    if folder_name == "scripts":
-        folder_prefix = "../"
-
     match args.Mode:
         case "sync":
             # Bootstrapping API clients
@@ -724,6 +717,13 @@ if __name__ == "__main__":
                     sys.exit(1)
                 youtube_client = YoutubeClient(api_key=YOUTUBE_API_KEY)
 
-            sync_podcast_episodes(PODCAST_RSS_FEED, f"{folder_prefix}{EPISODES_STORAGE_DIR}", f"{folder_prefix}{EPISODES_IMAGES_STORAGE_DIR}", no_api_calls=args.no_api_calls, spotify_client=spotify_client, youtube_client=youtube_client)
+            sync_podcast_episodes(
+                PODCAST_RSS_FEED,
+                build_correct_file_path(EPISODES_STORAGE_DIR),
+                build_correct_file_path(EPISODES_IMAGES_STORAGE_DIR),
+                no_api_calls=args.no_api_calls,
+                spotify_client=spotify_client,
+                youtube_client=youtube_client
+            )
         case "redirect":
             create_redirects(TOML_FILE, EPISODES_STORAGE_DIR, REDIRECT_PREFIX)
