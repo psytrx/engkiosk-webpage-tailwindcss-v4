@@ -5,7 +5,8 @@ import tempfile
 import shutil
 
 from functions import (
-    build_correct_file_path
+    build_correct_file_path,
+    configure_global_logger
 )
 
 from constants import (
@@ -94,13 +95,7 @@ def sync_german_tech_podcasts(json_storage_path, image_storage_path, opml_storag
 
 if __name__ == "__main__":
     # Setup logger
-    logging.basicConfig(
-        level=logging.INFO,
-        format="%(asctime)s [%(levelname)s] %(message)s",
-        handlers=[
-            logging.StreamHandler()
-        ]
-    )
+    configure_global_logger()
 
     image_storage_path = build_correct_file_path(GERMAN_TECH_PODCAST_IMAGE_STORAGE)
     json_storage_path = build_correct_file_path(GERMAN_TECH_PODCAST_JSON_STORAGE)

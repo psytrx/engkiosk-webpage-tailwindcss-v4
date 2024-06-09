@@ -6,6 +6,7 @@ import assemblyai as aai
 import json
 import validators
 
+from functions import configure_global_logger
 
 if __name__ == "__main__":
     cli_parser = argparse.ArgumentParser(
@@ -20,13 +21,7 @@ if __name__ == "__main__":
     args = cli_parser.parse_args()
 
     # Setup logger
-    logging.basicConfig(
-        level=logging.INFO,
-        format="%(asctime)s [%(levelname)s] %(message)s",
-        handlers=[
-            logging.StreamHandler()
-        ]
-    )
+    configure_global_logger()
 
     # URL validation
     if not validators.url(args.url):

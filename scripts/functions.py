@@ -1,3 +1,4 @@
+import logging
 import os
 import json
 
@@ -86,3 +87,12 @@ def get_podcast_episode_transcript_path_by_episode_number(transcript_file) -> st
         return file_path
 
     return ''
+
+def configure_global_logger():
+    logging.basicConfig(
+        level=logging.INFO,
+        format="%(asctime)s [%(levelname)s] %(message)s",
+        handlers=[
+            logging.StreamHandler()
+        ]
+    )

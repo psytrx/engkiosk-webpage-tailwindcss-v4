@@ -6,7 +6,8 @@ import sys
 import logging
 
 from functions import (
-    build_correct_file_path
+    build_correct_file_path,
+    configure_global_logger
 )
 
 from constants import (
@@ -129,13 +130,7 @@ if __name__ == "__main__":
     args = cli_parser.parse_args()
 
     # Setup logger
-    logging.basicConfig(
-        level=logging.INFO,
-        format="%(asctime)s [%(levelname)s] %(message)s",
-        handlers=[
-            logging.StreamHandler()
-        ]
-    )
+    configure_global_logger()
 
     tags = {}
     if args.mode == "website-content":

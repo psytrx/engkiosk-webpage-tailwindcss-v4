@@ -12,6 +12,7 @@ from episode_finder import (
 
 from functions import (
     build_correct_file_path,
+    configure_global_logger,
     get_podcast_episode_number_from_filename_number,
     has_podcast_episode_a_transcript,
     get_podcast_episode_transcript_by_number
@@ -275,13 +276,7 @@ def print_headline_spacer():
 
 if __name__ == "__main__":
     # Setup logger
-    logging.basicConfig(
-        level=logging.INFO,
-        format="%(asctime)s [%(levelname)s] %(message)s",
-        handlers=[
-            logging.StreamHandler()
-        ]
-    )
+    configure_global_logger()
 
     # Collecting data
     episode_stats = build_episode_statistics(build_correct_file_path(EPISODES_STORAGE_DIR))

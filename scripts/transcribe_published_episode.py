@@ -9,7 +9,10 @@ from episode_finder import (
     EpisodeFinder
 )
 
-from functions import build_correct_file_path
+from functions import (
+    build_correct_file_path,
+    configure_global_logger
+)
 
 from constants import (
     EPISODES_STORAGE_DIR,
@@ -25,13 +28,7 @@ if __name__ == "__main__":
     args = cli_parser.parse_args()
 
     # Setup logger
-    logging.basicConfig(
-        level=logging.INFO,
-        format="%(asctime)s [%(levelname)s] %(message)s",
-        handlers=[
-            logging.StreamHandler()
-        ]
-    )
+    configure_global_logger()
 
     # We have one -1 and one 00 Episode.
     # Disallow other older ones.

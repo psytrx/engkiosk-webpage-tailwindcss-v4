@@ -6,7 +6,8 @@ from episode_finder import (
 )
 
 from functions import (
-    build_correct_file_path
+    build_correct_file_path,
+    configure_global_logger
 )
 
 from constants import (
@@ -54,13 +55,7 @@ def find_empty_player_urls(path_md_files) -> int:
 
 if __name__ == "__main__":
     # Setup logger
-    logging.basicConfig(
-        level=logging.INFO,
-        format="%(asctime)s [%(levelname)s] %(message)s",
-        handlers=[
-            logging.StreamHandler()
-        ]
-    )
+    configure_global_logger()
 
     file_path = build_correct_file_path(EPISODES_STORAGE_DIR)
     exit_code = find_empty_player_urls(file_path)

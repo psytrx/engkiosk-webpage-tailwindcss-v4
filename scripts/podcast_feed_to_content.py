@@ -17,6 +17,7 @@ import pathlib
 
 from functions import (
     build_correct_file_path,
+    configure_global_logger,
     get_podcast_episode_number_from_filename_number,
     get_podcast_episode_transcript_slim_path_by_episode_number,
     get_podcast_episode_transcript_raw_path_by_episode_number
@@ -681,13 +682,7 @@ if __name__ == "__main__":
     args = cli_parser.parse_args()
 
     # Setup logger
-    logging.basicConfig(
-        level=logging.INFO,
-        format="%(asctime)s [%(levelname)s] %(message)s",
-        handlers=[
-            logging.StreamHandler()
-        ]
-    )
+    configure_global_logger()
 
     match args.Mode:
         case "sync":

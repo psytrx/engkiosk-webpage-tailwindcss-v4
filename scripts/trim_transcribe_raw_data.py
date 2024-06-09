@@ -5,18 +5,19 @@ from os.path import isfile, join
 import zipfile
 import json
 
-from functions import TRANSCRIPT_STORAGE_DIR, build_correct_file_path
+from functions import (
+    build_correct_file_path,
+    configure_global_logger
+)
+
+from constants import (
+    TRANSCRIPT_STORAGE_DIR
+)
 
 
 if __name__ == "__main__":
     # Setup logger
-    logging.basicConfig(
-        level=logging.INFO,
-        format="%(asctime)s [%(levelname)s] %(message)s",
-        handlers=[
-            logging.StreamHandler()
-        ]
-    )
+    configure_global_logger()
 
     logging.info("Searching for raw and uncompressed transcription data ...")
 
