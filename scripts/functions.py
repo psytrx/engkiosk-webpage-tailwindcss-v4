@@ -63,8 +63,7 @@ def get_podcast_episode_transcript_by_number(number):
     """
     episode_number = number.zfill(2)
     file_path = f"{build_correct_file_path(TRANSCRIPT_STORAGE_DIR)}/{episode_number}-transcript-slim.json"
-    with open(file_path) as f:
-        data = json.load(f)
+    data = read_json_file(file_path)
 
     return data
 
@@ -96,3 +95,13 @@ def configure_global_logger():
             logging.StreamHandler()
         ]
     )
+
+def read_json_file(file_path):
+    """
+    Reads the JSON file {file_path} and returns
+    the content as parsed JSON dict.
+    """
+    with open(file_path) as f:
+        data = json.load(f)
+
+    return data

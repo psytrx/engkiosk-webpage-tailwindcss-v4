@@ -7,7 +7,8 @@ import logging
 
 from functions import (
     build_correct_file_path,
-    configure_global_logger
+    configure_global_logger,
+    read_json_file
 )
 
 from constants import (
@@ -70,16 +71,6 @@ def read_all_tags_from_content_files(pathes):
 
     return tags
 
-def read_json_file(tag_file):
-    """
-    Reads the JSON file {tag_file} and returns 
-    the content as parsed JSON dict.
-    """
-    with open(tag_file) as f:
-        data = json.load(f)
-
-    return data
-
 def get_all_tags_without_description(tag_descriptions, tags):
     tags_with_description = set(())
     tags_without_descriptions = set(())
@@ -133,25 +124,26 @@ if __name__ == "__main__":
     configure_global_logger()
 
     tags = {}
+    content_pathes = []
+    tag_file_path = ""
     if args.mode == "website-content":
-        TAG_FILE_PATH = build_correct_file_path(TAG_FILE_CONTENT)
-
+        tag_file_path = build_correct_file_path(TAG_FILE_CONTENT)
         content_pathes = [
             build_correct_file_path(EPISODES_STORAGE_DIR),
             build_correct_file_path(BLOGPOST_CONTENT_FILES),
         ]
-        tags = read_all_tags_from_content_files(content_pathes)
 
     if args.mode == "german-tech-podcasts":
-        TAG_FILE_PATH = build_correct_file_path(TAG_FILE_GERMAN_TECH_PODCASTS)
+        tag_file_path = build_correct_file_path(TAG_FILE_GERMAN_TECH_PODCASTS)
         content_pathes = [
             build_correct_file_path(GERMAN_TECH_PODCAST_CONTENT_FILES)
         ]
-        tags = read_all_tags_from_content_files(content_pathes)
 
+    tags = read_all_tags_from_content_files(content_pathes)
     len_content_tags = len(tags)
-    logging.info(f"Reading existing tag descriptions from {TAG_FILE_PATH} ...")
-    tag_descriptions = read_json_file(TAG_FILE_PATH)
+
+    logging.info(f"Reading existing tag descriptions from {tag_file_path} ...")
+    tag_descriptions = read_json_file(tag_file_path)
     logging.info(f"Determining tags with missing descriptions out of {len_content_tags} unique content tags ...")
     tags_without_desc = get_all_tags_without_description(tag_descriptions, tags)
     logging.info(f"Found {len(tags_without_desc)} tags with missing descriptions out of {len_content_tags} unique content tags ...")
@@ -169,7 +161,7 @@ if __name__ == "__main__":
 
         sys.exit(0)
 
-    logging.info(f"Writing missing tag structures into file {TAG_FILE_PATH} ...")
+    logging.info(f"Writing missing tag structures into file {tag_file_path} ...")
 
     # Updating the local JSON tag file:
     #   - write the missing tags
@@ -193,8 +185,8 @@ if __name__ == "__main__":
         tag_descriptions[t]["usage_count"] = usage_count
 
     # Finally write the file
-    with open(TAG_FILE_PATH, 'w') as fp:
+    with open(tag_file_path, 'w') as fp:
         json.dump(tag_descriptions, fp, indent=4)
 
-    logging.info(f"Writing missing tag structures into file {TAG_FILE_PATH} ... done")
+    logging.info(f"Writing missing tag structures into file {tag_file_path} ... done")
     sys.exit(0)
