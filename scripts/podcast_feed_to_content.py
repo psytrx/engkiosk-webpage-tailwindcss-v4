@@ -22,9 +22,18 @@ from functions import (
     get_podcast_episode_transcript_raw_path_by_episode_number
 )
 
-from pathes import (
+from constants import (
     EPISODES_STORAGE_DIR,
-    EPISODES_IMAGES_STORAGE_DIR
+    EPISODES_IMAGES_STORAGE_DIR,
+    PODCAST_RSS_FEED,
+    TOML_FILE,
+    REDIRECT_PREFIX,
+    DEFAULT_SPEAKER,
+    PODCAST_APPLE_URL,
+    SPOTIFY_SHOW_ID,
+    PODCAST_GOOGLE_URL,
+    DEEZER_PODCAST_ID,
+    YOUTUBE_PLAYLIST_ID
 )
 
 # External libraries
@@ -36,22 +45,6 @@ from PIL import Image
 import deezer
 from pyyoutube import Client as YoutubeClient
 
-# Global variables
-PODCAST_RSS_FEED = "https://feeds.redcircle.com/0ecfdfd7-fda1-4c3d-9515-476727f9df5e"
-TOML_FILE = 'netlify.toml'
-REDIRECT_PREFIX = '/episodes/'
-
-DEFAULT_SPEAKER = [
-    {"name": "Andy Grunwald", "website": "https://andygrunwald.com/"},
-    {"name": "Wolfi Gassler", "website": "https://wolfgang.gassler.org/"},
-]
-
-# URLs from Podcast sites
-PODCAST_APPLE_URL = "https://itunes.apple.com/lookup?id=1603082924&media=podcast&entity=podcastEpisode&limit=100"
-SPOTIFY_SHOW_ID = "0tJRC0UsObPCWLmmzmOkIs"
-PODCAST_GOOGLE_URL = "https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5yZWRjaXJjbGUuY29tLzBlY2ZkZmQ3LWZkYTEtNGMzZC05NTE1LTQ3NjcyN2Y5ZGY1ZQ"
-DEEZER_PODCAST_ID = 3330122
-YOUTUBE_PLAYLIST_ID = "PLgeInf3w5xXsu6mPZY3Xe0Lpq2IY5ecv6"
 
 # Amazon Music is missing here.
 # We are adding this link manually, because there is no API available

@@ -17,7 +17,7 @@ from functions import (
     get_podcast_episode_transcript_by_number
 )
 
-from pathes import (
+from constants import (
     EPISODES_STORAGE_DIR
 )
 

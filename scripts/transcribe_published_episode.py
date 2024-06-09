@@ -11,7 +11,7 @@ from episode_finder import (
 
 from functions import build_correct_file_path
 
-from pathes import (
+from constants import (
     EPISODES_STORAGE_DIR,
     TRANSCRIPT_STORAGE_DIR
 )

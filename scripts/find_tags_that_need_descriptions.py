@@ -9,7 +9,7 @@ from functions import (
     build_correct_file_path
 )
 
-from pathes import (
+from constants import (
     EPISODES_STORAGE_DIR,
     BLOGPOST_CONTENT_FILES,
     GERMAN_TECH_PODCAST_CONTENT_FILES,
