@@ -76,7 +76,7 @@ description: "Testing ist nicht gleich Testing - Ein Deep Dive mit Sebastian Ber
   Buy us a coffee: https://www.buymeacoffee.com/engineeringkioskEmail: stehtisch@engineeringkiosk.devLinkedIn:\
   \ https://www.linkedin.com/company/engineering-kiosk/Mastodon: https://podcasts.social/@engkioskTwitter:\
   \ https://twitter.com/EngKiosk"
-google_podcasts: ''
+google_podcasts: https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5yZWRjaXJjbGUuY29tLzBlY2ZkZmQ3LWZkYTEtNGMzZC05NTE1LTQ3NjcyN2Y5ZGY1ZQ/episode/M2JiZGJmMDUtODY4NC00ZmMzLWFkZjYtYTgxMjM1Yzk0Mzhk?sa=X&ved=0CAUQkfYCahcKEwjwk4DTlc6GAxUAAAAAHQAAAAAQAQ
 headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts||feedback::Feedback
 image: ./126-killing-the-mutant-teststrategien-mit-sebastian-bergmann.jpg
 length_second: 4779
