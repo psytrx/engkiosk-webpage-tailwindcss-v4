@@ -93,7 +93,11 @@ speaker:
   transcriptLetter: C
   website: https://www.linkedin.com/in/dr-fanny-jimenez-3055a0188/
 spotify: https://open.spotify.com/episode/35X5E7bEfg2ubp3bx65I0e
-tags: []
+tags:
+- Karriere
+- Kommunikation
+- Interview
+- Women in Tech
 title: '#127 Imposter-Syndrom & Peter-Prinzip mit Dr. Fanny Jimenez'
 transcript_raw: ''
 transcript_slim: ''
