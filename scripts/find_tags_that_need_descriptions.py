@@ -177,10 +177,15 @@ if __name__ == "__main__":
 
     # Updating the local JSON tag file:
     #   - updating the usage count
-    for t in tag_descriptions:
+    for t in list(tag_descriptions):
         usage_count = 0
         if t in tags:
             usage_count = tags[t]
+
+        # Delete tags that don't have any content
+        if usage_count == 0:
+            del tag_descriptions[t]
+            continue
 
         tag_descriptions[t]["usage_count"] = usage_count
 
