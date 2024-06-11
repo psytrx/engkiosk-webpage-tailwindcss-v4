@@ -1,7 +1,7 @@
 ---
 advertiser: ''
 amazon_music: https://music.amazon.com/podcasts/c35a09fe-4116-4e04-8f68-77d61b112e46/episodes/f4af978f-6d47-4252-bd0a-871573b5d65e/engineering-kiosk-127-imposter-syndrom-peter-prinzip-mit-dr-fanny-jimenez
-apple_podcasts: ''
+apple_podcasts: https://podcasts.apple.com/de/podcast/127-imposter-syndrom-peter-prinzip-mit-dr-fanny-jimenez/id1603082924?i=1000658551410
 audio: https://audio1.redcircle.com/episodes/95010b0b-781f-4127-99fc-28f592a42103/stream.mp3
 chapter:
 - start: 00:00:00
