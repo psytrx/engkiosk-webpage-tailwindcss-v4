@@ -1,0 +1,988 @@
+{
+  "language_code": "de",
+  "audio_url": "https://cloud.inlupus.at/s/RiRFEA9jAGef7mc/download/ep128_papers.mp3",
+  "punctuate": true,
+  "format_text": true,
+  "dual_channel": false,
+  "webhook_url": null,
+  "webhook_auth_header_name": null,
+  "webhook_auth_header_value": null,
+  "audio_start_from": null,
+  "audio_end_at": null,
+  "word_boost": [],
+  "boost_param": null,
+  "filter_profanity": false,
+  "redact_pii": false,
+  "redact_pii_audio": false,
+  "redact_pii_audio_quality": null,
+  "redact_pii_policies": null,
+  "redact_pii_sub": null,
+  "speaker_labels": true,
+  "speakers_expected": 2,
+  "content_safety": false,
+  "content_safety_confidence": null,
+  "iab_categories": false,
+  "custom_spelling": null,
+  "disfluencies": false,
+  "sentiment_analysis": false,
+  "auto_chapters": false,
+  "entity_detection": false,
+  "summarization": false,
+  "summary_model": null,
+  "summary_type": null,
+  "auto_highlights": false,
+  "language_detection": false,
+  "speech_threshold": null,
+  "speech_model": null,
+  "id": "7853436a-1078-4e32-a4b6-56cabfdfda55",
+  "status": "completed",
+  "error": null,
+  "utterances": [
+    {
+      "text": "Du besuchst Hacker News und es trendet einen Artikel über einen Algorithmus, der 100 mal besser ist als ein anderer. 1500 Kommentare hat der Post bereits. Für dich ist eins du musst den Artikel lesen. Du klickst drauf und erkennst ein wissenschaftliches Paper. Du fragst quälst du dich da nun durch oder suchst du lieber auf YouTube nach einer Zusammenfassung? So oder so ähnlich geht es wahrscheinlich vielen nicht Akademikern, denn diese Dokumente können langweilig und trocken sein, voll von irgendwelchen Formeln, die sowieso nur 3 % der Menschheit verstehen. Doch was ist, wenn man wissenschaftliche Paper nicht von vorne bis hinten liest wie normale Bücher? Wie liest man diese Dokumente richtig, dass man nicht konstant wegpennt? Darum geht es in dieser Episode. Mein Co Host Dr. Wolfgang erklärt die Tricks und Kniffe, wie man das meiste in kurzer Zeit aus den neuesten wissenschaftlichen Erkenntnissen rausholt. Wir springen rein, los geht's. Heute haben wir ein tolles Tipp. Ich freue mich so ein bisschen und ich freue mich immer über diese tollen Themen, weil manchmal habe ich von Themen einfach gar keine Ahnung.",
+      "start": 4000,
+      "end": 66446,
+      "confidence": 0.9305594505494507,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Ist schön, dass du mal einfach akzeptierst, dass die tollen Themen immer von mir kommen.",
+      "start": 66598,
+      "end": 70650,
+      "confidence": 0.9340173333333333,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Die tollen Themen, die finde ich immer so toll, weil dann lerne ich immer.",
+      "start": 71430,
+      "end": 74166,
+      "confidence": 0.9887907142857142,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Ganz viel so no pressure.",
+      "start": 74198,
+      "end": 76166,
+      "confidence": 0.852938,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Und heute geht es um Informatik, beziehungsweise um den englischen Begriff Computer Science. Also jetzt nicht wirklich um Computer Science, sondern vielleicht eher um den Teil der Wissenschaft. Und zwar folge ich diversen Leuten auf LinkedIn, das sind dann meist so Software Engineering Influencer und so weiter. Und immer mal wieder geht es halt darum, wie bereitet man sich richtig auf so ein System Design Interview vor? Und dann ist immer in diesen Empfehlungen du musst diese 25 wissenschaftlichen Paper gelesen haben. Und diese wissenschaftlichen Paper, da kommen immer so 25. Und ich habe da mal ein paar rausgepickt. Man muss ja mal ganz ehrlich sagen, ziemlich viele wissenschaftliche Paper haben die moderne Softwareentwicklung wirklich knallhart geprägt. Jetzt hat man ein paar Beispiel rausgesucht, z.B. dynamodb, Amazons high available Key Value Store oder das Google File System, sonst hätten wir Google jetzt nicht, wäre da keine Forschung reingesteckt worden. Oder Borg als interner google interner Vorgänger von Kubernetes, Cassandra, Kafka waren alles irgendwie wissenschaftliche Paper. Map and Reduce, ja, wer kennt das alles noch? Mit Hadoop, HDFS und wie man die ganzen großen Daten denn eigentlich mal verteilt berechnet. Aber auch Bitcoin oder solche Grundlagen wie Raft und Paxos, also Konsensus Algorithmen in verteilten Systemen. Und da gibt es noch viel mehr, ja. Time clocks and ordering of events in verteilten Systemen und so weiter und so fort. Und jetzt klinge ich so, als hätte ich die alle gelesen. Nee, ich erbarme mich, ich öffne mich. Ich habe, glaube ich, mal ein oder zwei wissenschaftliche Paper in meinem Leben gelesen und primär zu der Zeit, als ich meine Bachelorarbeit geschrieben habe. Aber genau darum geht es heute. Wir sprechen so ein bisschen, wie kann man wissenschaftliche Paper lesen, also wie sind die aufgebaut und wie kann man diese harte, trockene Brotkruste, kann man schon fast sagen, denn mal verständlich machen. Und dafür habe ich mir natürlich den Akademiker, wenn ich jetzt Dekade sage, dann ist das ein Wortspiel, der Dekade eingeladen, weil er hat nämlich auch eine Dekade studiert, zumindest locker. Nee, der hat mehr als eine Dekade.",
+      "start": 76198,
+      "end": 199544,
+      "confidence": 0.9028621264367815,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Studiert, es war viel mehr. Für den Dr. Habe ich eine Dekade gebracht.",
+      "start": 199592,
+      "end": 202762,
+      "confidence": 0.8663469230769228,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Naja, Wolfgang, kannst du mir heute erklären, was das mit diesen wissenschaftlichen Papern auf sich hat, wie man die liest und wie man daraus Sinnhaftigkeit bekommt und vor.",
+      "start": 202826,
+      "end": 211194,
+      "confidence": 0.9624624999999999,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Allem, wie man daraus sinnvolle Informationen zieht, die einem selber helfen können im Alltag. Das ist ja das Wichtigste. Aber ich mache mir gleich mal vorweg unbeliebt, weil alle Papers oder fast alle Papers, die du jetzt aufgezählt hast, sind meiner Meinung nach gar keine wissenschaftlichen Papers, sondern, ja, kann man so reinrechnen, aber es sind eigentlich fast alle von denen industrial papers, sogenannte. Das heißt, es sind eigentlich gar keine klassischen research wissenschaftliche Papers, die, die von der Universität kommen, teilweise schon sind, es vermischt sich immer mehr heutzutage, weil die großen Firmen da auch mitmischen auf der Universitätsseite und die Grenzen verschwimmen ein bisschen. Aber so vom Stil, was es für Papers sind, sind es meistens Industrial Papers. Und wenn man da ganz genau reinschaut, in die meisten Papers, die du jetzt erwähnt hast, Dynamo, Pog, MapReduce sogar, die basieren meistens auf anderen wirklich wissenschaftlichen Papers, die schon viel früher veröffentlicht wurden. Nur die industrielle Anwendung dann, also dass es dann Google angewandt hat, gewisse approaches und Algorithmen, die sind dann in den Industrial Papers wirklich veröffentlicht worden. Aber es ist natürlich auch noch eine Leistung, das dann wirklich praktisch anzuwenden.",
+      "start": 211202,
+      "end": 283150,
+      "confidence": 0.9217739378238343,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Ist das ein harter Bias von dir oder gibt es wirklich in der Papers Welt eine zwei Klassen Gesellschaft, wie mit der gesetzlichen und der privaten Krankenversicherung?",
+      "start": 283270,
+      "end": 291806,
+      "confidence": 0.9200551851851854,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Es gibt auf jeden Fall auf den ganzen Konferenzen oder vielen Konferenzen immer einen wissenschaftlichen Track Research Papers und es gibt einen Industrial Track. Und ein klassisches Cassandra Paper wird üblicherweise auf dem Industrial Track veröffentlicht. Oder auch das Myrocks Paper, das ist glaube ich 2020 oder so veröffentlicht worden auf der BLDB im Industrial Track.",
+      "start": 291958,
+      "end": 313138,
+      "confidence": 0.8836967857142859,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Ganz vorneweg sind Industrial Paper einfacher zu lesen, also wenn ich jetzt einen Einstieg in diese Paper Szene haben möchte, fange ich dann mit einem Industrial Paper an, oder?",
+      "start": 313234,
+      "end": 323386,
+      "confidence": 0.9113824137931036,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Üblicherweise sind die praxisnahe geschrieben, klarerweise, weil die ja in der Industrie in irgendeiner Form verwendet werden. Und meistens sind sie etwas einfacher geschrieben, weniger technisch, vielleicht weniger Algorithmen und im Idealfall bekommt man auch Informationen aus der Praxis, wie sich das verhält oder eben auch nicht, weil das ganz oft irgendwie verschleiert wird oder die Firmen dann doch nicht mit ihren Zahlen rausrücken wollen. Aber üblicherweise ist es praxisrelevanter, würde ich mal sagen.",
+      "start": 323498,
+      "end": 351126,
+      "confidence": 0.9154589189189187,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Ich habe jetzt eigentlich gedacht, wenn ich diese Paper, wie jetzt über Kafka oder Map and Reduce lese, dann schaffe ich mir perfektes Grundlagenwissen drauf und so. Vielleicht ist das sogar zeitsparender, als dass ich mir ein 20 Minuten YouTube Video ansehe. Aber wenn du jetzt sagst, das Map and Reduce Paper, das industrielle Map and Reduce Paper basiert auf anderen wissenschaftlichen Papern, das bedeutet ja auch, dass es entweder eine Weiterentwicklung ist, oder ich mir gar nicht die Grundlagen drauf schaffe.",
+      "start": 351238,
+      "end": 377312,
+      "confidence": 0.9040097560975612,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Oder Map Produce ist natürlich jetzt eine gemeine Sache, weil das wirklich eigentlich auch ein klassischer Basic Approach ist, der sich geändert hat und jetzt keine klassische Anwendung ist, wie in irgendeiner Datenbank oder so, wie bei Mirox, wo es um LSM Trees geht. Und die LSM Trees sind irgendwie, keine Ahnung, in den ERN erfunden worden oder noch früher. Das heißt, Myrocks ist teilweise jetzt kein Grundlagen Paper, ist natürlich interessant, es ist eine Storage Engine für MySQL, die von Facebook damals entwickelt wurde, um die Daten noch besser für Facebook abzulegen. Mittlerweile allgemein verfügbar, kann man auch selber verwenden in MySQL oder auch anderen Datenbanken, ist glaube ich nur eine Option MySQL. Aber wenn du jetzt wissen willst, wie funktionieren LSM trees, dann könntest du natürlich das originale Paper verwenden. Und da sieht man schon eigentlich, was ganz super ist in diesen Papers, dass dort üblicherweise auch das originale Paper von LSM Trees aufgelistet ist. Das heißt, wenn du dort einsteigst, hast du eine lange Liste, wo du noch Informationen findest. Und das hast du jetzt klassisch bei deinem YouTube Video seltener. Da hast du irgendeinen Dude, der da irgendwas daher erzählt. Das kann gut sein, das kann schlecht sein. Du hast aber keine Ahnung, ob das wirklich qualitativ ist, vor allem im Vorhinein sehr selten. Und bei Papers hast du halt den Vorteil, dass das peer reviewed ist, auch beim Industrial Track, es haben mehr Leute drauf geschaut, du hast diese ganze Credibility von der jeweiligen Konferenz oder von dem Journal und du weißt, dass das sinnvoll ist und kannst dann einfach mal reinschauen und weißt, dass die sinnvolle Information ist, was du bei einem YouTube Video nicht automatisch siehst.",
+      "start": 377336,
+      "end": 472526,
+      "confidence": 0.9024329328621903,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Das ist korrekt. Ich habe aber auch mal irgendwie gehört, dass man sich Peer Reviews kaufen konnte, bzw. Dass da halt auch nicht immer alles ganz koscher läuft. Ist das korrekt?",
+      "start": 472598,
+      "end": 481046,
+      "confidence": 0.9102035483870968,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Ja klar. Also auch da ist es wieder ganz klassisch so, du musst schon ein bisschen darauf achten, wie ist ein Paper geschrieben, woher kommt es, aus welchen Kreisen, auf welcher Konferenz. Also da gibt es schon auch Qualitätsunterschiede, aber ich würde mal sagen, wenn du zu einer großen Konferenz gehst, die einen bekannten Namen hat, dann würde ich mal sagen, ist zu 90 % da auch eine sehr hohe Qualität dahinter. Und auf jeden Fall mal peer reviewed, was schon ein bisschen mehr ist als YouTube, weil da gibt es gar keine Peer Reviews in dem Sinne.",
+      "start": 481078,
+      "end": 511770,
+      "confidence": 0.9204453061224486,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Ja doch, da gibt es neuerdings Reactions, dass irgendwie Leute auf andere Videos reagieren. Das könnte ja so eine Art Peer Review sein.",
+      "start": 511850,
+      "end": 518710,
+      "confidence": 0.8622908695652174,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Ja, es gibt Wisdom of the Crowd, du hast irgendwelche Thumbs up, könntest du natürlich argumentieren, das ist besser als ein Peer Review, wo sich irgendwie die Wissenschaft, die kleine Gruppe gegenseitig da reviewt und nach oben lobt. Fair point. Aber ich glaube, die Qualität von Papers ist üblicherweise schon noch mal eine andere jetzt.",
+      "start": 520690,
+      "end": 537076,
+      "confidence": 0.8796378181818182,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Jetzt hattest du gesagt, okay, es gibt diese wissenschaftlichen Paper und es gibt diese industriellen Paper. Und dass diese industriellen Paper meist praxisorientiert sind, da frage ich mich, sind das nicht die wirklichen relevanten Paper? Weil die industriellen basieren dann auf den wissenschaftlichen Erkenntnissen von diesen wissenschaftlichen Papieren. Und wenn diese wissenschaftlichen Papiere nicht aufgepickt werden, dann hat irgendjemand was geforscht. Aber das wird dann nie, es kommt ja nie in der Praxis an, oder?",
+      "start": 582108,
+      "end": 609460,
+      "confidence": 0.9087807999999997,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Also ich glaube, das ist auch ein Irrglaube, dass alles immer so super wissenschaftlich ist und schwer verständlich ist und man kann daraus nichts in die Praxis mit rausziehen. Also es kommt natürlich darauf an, was du machst und was du jetzt erreichen willst. Wenn du jetzt irgendwie ein Webformular baust, dann wird jetzt irgendeine Hardcore Datenbank Technologie, wo du den Index verbessern kannst, jetzt wenig helfen. Das ist schon klar. Also für Standardanwendungen wirst du in der Wissenschaft wahrscheinlich weniger finden, was hilfreich ist, aber sobald du ein bisschen tiefer gehst, gewisse Technologien selbst entwickelst, kann dir sowas natürlich schon extrem helfen. Und vielleicht um auch so die Möglichkeiten, die du dadurch hast, mal darzustellen, ich habe da ein super cooles Beispiel, es ist schon ziemlich alt, über 10 Jahre her, habe ich mal so einen Typen kennengelernt, der bei uns in den Bergen in dem Tal sitzt und eine Datenbank entwickelt hat als Einzelperson und eben am Anfang schon gedacht, naja, ist halt irgendwer, der glaubt, er kann da eine Datenbank und so weiter entwickeln. Und dann hat er mir mal kurz so vorgelegt, wer denn alle die Datenbank verwendet, von Formel eins Teams bis zu irgendwelchen EA Sports und so weiter, in irgendwelchen Games engines drinnen, irgendwelche hauptspeicher Datenbanken vor 1015 Jahren. Der war alleine und ich habe es zuerst gar nicht glauben können und dann hat er so eine Präsentation gehalten, wie er seine Datenbank da aufbaut und er hatte einfach auf jeder Slide unten eine Referenz zu einem wissenschaftlichen Paper und er hat gemeint, er hat sich da einfach die Papers durchgelesen, die Algorithmen, die es da so gibt, Indexstrukturen und hat die halt einfach so nachgebaut in seiner C Welt Hauptspeicher Datenbank, hat es dann irgendwie um einen niedrigen vierstelligen Betrag verkauft, einmalig, inklusive Source code und wirklich weltweit Riesenfirmen haben dem seine Datenbank verwendet und er hat es als Einzelperson geschafft, indem er einfach nur die Bar Algorithmen aus den Papers implementiert hat. Und da merkt man schon, man muss die Welt nicht neu erfinden, sondern wenn man auf diesen Informationen aufbaut, eben standing on the shoulders of giants, wie es so schön heißt, kann man extrem viel erreichen.",
+      "start": 609500,
+      "end": 736118,
+      "confidence": 0.9161209562841527,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Ich habe jetzt gerade das totale österreichische Stereotyp mit dem Kopf. Jemand sitzt bei strahlendem Sonnenschein so irgendwie auf der Hälfte, ich sag mal auf einem auf einem Weg zur Spitze eines Berges in so einer Hütte an so einem richtigen Holztisch, vielleicht noch irgendwie so ein Bier dabei, ein bisschen Rauschebart, Laptop auf dem Schoß und er liest sich da die Paper durch und implementiert irgendwelche Indexstrukturen in C. Gut, der letzte Part mag jetzt nicht stereotypenhaft für Österreich sein, aber das Bild hast du gerade in meinem Kopf gemalt.",
+      "start": 736174,
+      "end": 770888,
+      "confidence": 0.8736986813186817,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Das war auch ungefähr so, glaube ich.",
+      "start": 771064,
+      "end": 772966,
+      "confidence": 0.9352028571428571,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Jetzt stellt sich natürlich die Frage für alle Hörerinnen und Hörer, die sich noch nie in dieses Loch des Paperlesen begeben haben, was ist eigentlich das Problem, was eigentlich die Herausforderung und da kann ich euch eigentlich aus meiner Erfahrung sagen, die Papers sind jetzt nicht so geschrieben wie die Herr der Ringe Reihe oder ähnliches. Also ist schon hart, hat Papers sind.",
+      "start": 773128,
+      "end": 790626,
+      "confidence": 0.9037063492063492,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Viel, viel kürzer als Herr der Ringe. Du hast ja nur so 15 Seiten, bei Herr der Ringe hast du ja irgendwie keine Ahnung wie viele hunderten Seiten.",
+      "start": 790658,
+      "end": 797194,
+      "confidence": 0.9190674999999999,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Ja, das ist korrekt, aber die sind so geschrieben, dass man, wenn man 50 Seiten liest, denkt höhöhö, da ist der Hobbit doch erst aus seinem Haus rausgekommen. Also und bei Papers, die sind halt sehr trocken, sehr viel Theorie, wenig Praxis und ich, ich skimme immer über die Seite, wenn ich, bevor ich sie lese und wenn ich dann schon ganz viele Formeln lese, immer schwierig. Ja, also mein, mein Statistik eins und Statistik zwei. Professor sagte auch Andi, Mathe ist auch nur eine Fremdsprache, aber ich habe diese Fremdsprache nie wirklich gelernt. Und diese ganzen Symbole, die machen mir schon so ein bisschen Respekt. Und immer wenn ich dann versuche, so ein Paper zu lesen, dann lese ich die erste Seite, die zweite Seite vielleicht noch frage ich mich, was habe ich eigentlich auf der ersten Seite gelesen? Und irgendwie bei der dritten Seite fallen mir so die Augen zu. Kennst das, wenn du da so sitzt und immer so wegnickst, so kurz die Augen fallen zu und dann schreckst du wieder auf und denkst, ah, du liest weiter und dann nickst du wieder so weg. Und genau so geht es mir bei Paper relativ schnell. Vielleicht sollte ich Paper zum Einschlafen lesen, dann wird, glaube ich, jede Medizin ersetzt. Aber geht dir das auch so oder geht dir das selbst so?",
+      "start": 797282,
+      "end": 862496,
+      "confidence": 0.9066834374999996,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Also es geht mir genauso und ich glaube, das ist der große Fehler, dass man auch Papers von vorne nach hinten wie bei einem Herr der Ringe durchliest. Das ist schon mal der Grundsatzfehler. Du musst Papers anders lesen, du musst auch nicht 100 % der Papers verstehen. Das ist auch ganz wichtig, dass man sich damit anfreundet, dass man eben die Informationen rausholt, die für einen wichtig sind. Und da ist es eben ganz wichtig, wie man so ein Paper liest und wie man die Informationen raus extrahiert für einen selbst. Und wenn du sagst, die sind trocken, vollkommen richtig, die sind meistens theoretisch geschrieben, sind auch weniger praxisrelevant teilweise, würde ich mal sagen, weil heutzutage gibt es auch ganz viele Konferenzen und Veröffentlichungen, die sehr praxisrelevant sind und die auch einfacher zu verstehen sind. Ich habe da gestern mal gerade so ein paar Konferenzen gecheckt, z.B. die Open Sym, das ist so eine Konferenz für Wikipedia, Open Collaboration und so weiter. Da gibt es z.b. so Papers, die da veröffentlicht werden. Wie liest du mal Beispiel eines vor? How to characterize the health of an open source project. Also wirklich eigentlich sehr praxisrelevant. Wie kann man denn feststellen, ob ein Open Source Projekt gesund ist? Oder why people trust wikipedia articles? Also das sind eigentlich Sachen, die, würde ich mal sagen, sehr praxisrelevant sind, sehr einfach zu verstehen sind und es ist nicht immer der Hardcore Algorithmus, der Hardcore Index. Es gibt Papers eben, die Algorithmen definieren, wie Spotify z.B. irgendwas vorschlägt oder wie man bessere recommender Algorithmen schreiben kann. Es gibt Workshops, das sind normal auch noch mal einfachere Papers. Also es gibt den Industrial Track, den Scientific Track und dann gibt es nochmal Workshops, die praktischer meistens orientiert sind. Auf der letzten recommender Systems Konferenz z.B. da hat es einen Workshop gegeben recommender Systems in Fashion and Retail. Da gibt es meistens einfach Papers aus der Branche, die dann informiert, wie Recommenders eben für Fashion und Retail gebaut werden. Oder workshop on context aware recommender systems. Also sehr spezifische Probleme. Und wenn man in dem Umfeld arbeitet, dann kann man da eben super Informationen rausziehen für sich selber. Und da muss man nicht jeden Algorithmus verstehen, da kann man auch so Entwicklungen einfach rauslesen. Alleine wenn man die Titel schon liest, bekommt man so ein Verständnis, wo geht die Industrie hin, wo kommen da jetzt algorithmen, was poppt da hoch? Serendipity war z.B. in der recommender Welt mal ganz großes Thema. Ist es immer noch. Also wie entdecke ich Neues? Und alleine diese Information, wenn ich da fünfmal Serendipity ließ in dem Titel, dann weiß ich, okay, das ist wichtig in der recommender Welt. Und wenn ihr dann selber in irgendeiner Form recommender Systems entwickle, dann weiß ich das schon mal, dass Serendipity ein wichtiges Wort ist, ein wichtiges Feature ist.",
+      "start": 862568,
+      "end": 1028692,
+      "confidence": 0.9022294736842109,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Was ist Serendipity? Ich kenne Serendipity noch als Blog System. Ich glaube, das war mal ein PHP System.",
+      "start": 1028796,
+      "end": 1035716,
+      "confidence": 0.9165594444444444,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Genau, das ist ein PHP Blog System, habe ich auch mal verwendet. Serendipity ist ein Kunstvot meines Wissens. Und das heißt einfach, man trifft auf Informationen, auf Neuigkeiten, ohne sie gesucht zu haben. Also dieses Entdecken, gerade bei Musik recommende, super wichtig. Wenn du auf Spotify bist und nur immer deine Bubble recommended bekommst, dann ist es natürlich schlecht. Du wirst ja auch neue Musik finden und entdecken und die, die vielleicht gar nicht so deinem Standardprofil entspricht, aber trotzdem super ist. Also diese Zufälligkeit spielt eine große Rolle und die war mal ein extrem großes Trend Topic in recommender Systems. Da brauchst du nur die Titel durchlesen dafür.",
+      "start": 1035748,
+      "end": 1072464,
+      "confidence": 0.9119629357798164,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Dieses Trend Topic kam mit hoher Wahrscheinlichkeit auf, als die ganzen Wissenschaftler Last FM benutzt haben. Kennt es, kennst du noch Last FM?",
+      "start": 1072552,
+      "end": 1079963,
+      "confidence": 0.9195952173913043,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Natürlich habe ich selber viel verwendet. Die Datasets.",
+      "start": 1080051,
+      "end": 1082387,
+      "confidence": 0.8991450000000001,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Ja, ich meine aber eigentlich von dem Musikdienst, da konntest du auch Musik hören, so ähnlich wie bei Spotify, für die Leute, die es nicht kennen. Dann konntest du immer nur recommend me new music. Und da spätestens nach 20 Hops, also nach 20 Songs. Du bist mit Taylor Swift gestartet und warst nach 20, hopst aber immer bei irgendwelchen ganz dunklen skandinavischen Death Metal.",
+      "start": 1082483,
+      "end": 1101667,
+      "confidence": 0.923056,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Also damals war Taylor Swift wahrscheinlich im Kindergarten oder so, Andi.",
+      "start": 1101803,
+      "end": 1105107,
+      "confidence": 0.8402036363636363,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Sehr wahrscheinlich. Aber dann nehmen die Flippers. Ja, aber ist ja irgendwas. Du warst maximal nach 20 Songs bist du immer am gleichen Ziel ausgekommen. Ob jetzt skandinavischer Death Metal immer das Ziel war, weiß ich jetzt auch nicht, aber okay, du empfiehlst jetzt also gerade, ich muss immer die Titel lesen und.",
+      "start": 1105163,
+      "end": 1121694,
+      "confidence": 0.9183254716981134,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Dann bekommst du schon sehr viel raus aus den Titeln. Genau, über solche Bewegungen, Wellen, Trend, Topics liest du alleine schon an den Titeln.",
+      "start": 1121742,
+      "end": 1130950,
+      "confidence": 0.9689983333333335,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Ja, und damit gewinne ich ja kein neues Wissen, sondern eher die Möglichkeit für Crocodile Management, auftauchen, klapper aufreißen, abtauchen.",
+      "start": 1130990,
+      "end": 1139484,
+      "confidence": 0.8801555000000001,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Auch das ist eine Fähigkeit, die man braucht.",
+      "start": 1139662,
+      "end": 1142980,
+      "confidence": 0.92364125,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Das ist korrekt, aber die hält halt nicht lange, wenn du nichts dahinter hast. Du kannst es einmal machen, du kannst zweimal machen, aber irgendwann sagt halt hör mal, du hast dieses tolle Wort gedroppt, kannst du mir mal ein bisschen mehr dazu sagen zu serendipity? Und dann ist ein Static in PHP die falsche Antwort. Deswegen, das kann es ja jetzt nicht sein. Und du hast auch gerade erwähnt, man liest Papers nicht von vorne bis hinten. Du holst dir die Teile, die relevant für dich sind. Und da frage ich mich natürlich, woher weiß ich denn aus einem Paper die Themen, die relevant für mich sind, wenn ich das noch gar nicht gelesen habe? Das ist ja immer so. Also woher weiß ich, was ich wissen möchte, wenn ich nicht weiß, was drinsteht?",
+      "start": 1143280,
+      "end": 1181170,
+      "confidence": 0.9268321481481477,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Üblicherweise, wenn ich Papers lese, dann schaue ich als erstes mal auf den Titel, weil der hoffentlich holt mich ja schon irgendwie ab. Und das ist wie bei einem YouTube Video auch, Titel sollte gut gewählt sein, üblicherweise. Und dann folgen Papers einer ganz strengen Struktur. Das heißt, du hast am Anfang normalen Abstract, dann hast du eine Introduction, dann kommt das Ganze dazwischen, würde ich mal sagen, dann kommen Results und am Ende noch eine Conclusion und References. Das ist eigentlich so das Wichtigste, wie Papers aufgebaut sind. Und jedes Paper, jedes wissenschaftliche Paper folgt dieser Struktur. Und das Wichtigste ist mal vorne der Abstract. Der Abstract sind einfach 12 Sätze, üblicherweise, so in der Größenordnung, die beschreiben, was in diesem Paper erforscht wurde, gefunden wurde. Das ist so ein Teaser, das ist so wie die Thumbnails auf YouTube, aber eben weniger Clickbait, weil da schon wirklich konkret drinnen steht, was wurde da tolles in diesem Paper erforscht? Und das ist einmal das erste, was du durchliest. Du liest diese ersten paar Sätze durch und dann kannst du entscheiden, ob das überhaupt relevant für dich ist. Also diese, Dieser Teil ist eigentlich der wichtigste Teil. Wenn man paper schreibt, dann schreibt man den normal am Schluss und wirklich, das muss wirklich überzeugend sein in diesem Abstract. Und da kommt keine Formel drin vor. Da kommt nur vor, was wurde gemacht und was wurde im Idealfall gefunden. Wenn es der Abstract sinnvoll ist, dann springst du wohin als nächstes?",
+      "start": 1181210,
+      "end": 1265874,
+      "confidence": 0.9175014457831326,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Wahrscheinlich zu den Ergebnissen.",
+      "start": 1266002,
+      "end": 1268682,
+      "confidence": 0.8777200000000001,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Ja, fast. Aber guter Punkt, ganz nach hinten. Du springst in die Conclusion und die Conclusion ist die Zusammenfassung noch mal, was gefunden wurde, was dieses Paper tolles zeigt. Das heißt, du springst von der, vom Anfang an, vom Abstract ganz nach hinten, weil dort steht nochmal ganz konkret drin, was die coolen Ergebnisse waren, die herausgefunden wurden. Wirklich noch mal detaillierter, was man für Schlüsse daraus zieht.",
+      "start": 1268866,
+      "end": 1294144,
+      "confidence": 0.9116922058823529,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Also im Abstract steht, worum es geht. Und du hast gesagt, als vorletztes Chapter gibt es Ergebnisse und dann gibt es die Conclusion. Wo ist denn der Unterschied zu den Ergebnissen und dieser Conclusion?",
+      "start": 1294192,
+      "end": 1305192,
+      "confidence": 0.8966500000000001,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Die Ergebnisse sind halt noch viel detaillierter. Also teilweise steht im Abstract auch schon drinnen, was man gefunden hat, teilweise nicht. Je nachdem. In der Conclusion steht nun mal immer drin, was gefunden wurde und warum dieses Paper so toll ist, dass die Ergebnisse so toll sind. Und dann kannst du immer noch in die Ergebnisse reinspringen, weil in den Ergebnissen steht dann wirklich drinnen, was sind jetzt für Ergebnisse, was für Zahlen? Warum ist der Algorithmus so schnell? Warum ist Mirox jetzt die beste Speichertechnologie? Wie schnell ist die bei den neuen Flash Platten, bei den Zugriffsprofilen für Facebook und so weiter. Also da steht dann wirklich im Detail drin, warum das so gut ist, die Resultate und wie die Resultate auch zustande kommen. Zusammen teilweise auch mit den Methoden, was ja auch wichtig ist. Gerade im nicht technischen Bereich sind die Methoden natürlich super wichtig, weil du wirst ja wissen, wenn da drin steht 70 % der Leute haben gesagt, der Andy ist ein unsympathischer Typ, dann wirst du ja wissen, wer hat das gesagt, wer sind die 70? %? Ist es eine große Gruppe? Ist es nur eine Gruppe von drei Personen, die den Andi nicht mögen oder ist es eine repräsentative Gruppe? Also diese ganzen Dinge sind natürlich schon wichtig. Wie kommt man zu dem Ergebnis? Aber dazu muss ich mal überhaupt motiviert werden, weiterzulesen. Und ich muss natürlich wissen, was ist der Ausgang von dem Paper, die Resultate und warum sollte ich überhaupt in die Details reinschauen? Und ich bin immer noch bei keinem Algorithmus, bei keiner Formel, ich bin nur mal auf high level, bringt mir dieses Paper überhaupt was, wenn ich es weiterlese?",
+      "start": 1305336,
+      "end": 1389742,
+      "confidence": 0.9306100000000005,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "So, jetzt, okay, das tut mir total leid für den Autor, weil der steckt da so viel Arbeit rein und schreibt da seine 15 Seiten und ich lese maximal vier Seiten, wenn überhaupt.",
+      "start": 1389806,
+      "end": 1400952,
+      "confidence": 0.9618545454545455,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Ja, du kannst natürlich alles lesen, aber im ersten Moment liest du mal die Sachen. Wenn das Paper dann interessant ist, kannst du ja weiterlesen. Dann kannst du anfangen vorne bei der Introduction. Die Introduction überspringt man, je nachdem, wie gut man in dem Thema drin ist. Die Introduction hat aber üblicherweise auch related work mit dabei. Das ist teilweise ein eigenes Kapitel, aber das ist sozusagen das Einführen in dieses Thema. Plus related work heißt, was gibt es denn für andere Arbeiten in der Umgebung, auf die man vielleicht aufbaut. Also bei Myrocks wären es die LSM Trees, wann sind die erfunden worden, von wem gibt es da andere Papers, die darauf aufgebaut haben, das schon optimiert haben, wie ist man also bis zu dem Myrocks Storage Engine eigentlich gekommen, was ist da davor? Und die Introduction und die Related Work ist ein super Startpunkt, wenn man sich auch informieren will über diese ganze Thematik, was es sonst an Informationen, an Papers gibt. Also dort stecken meistens die Informationen drin, um eine ganze Thematik gut verständlich verstehen zu können. Und da hat man dann ganz viele Anknüpfungspunkte an Grundlagen, an andere Papers, an andere Forscherinnen und kann eben viel mehr Informationen dann noch holen, wenn man sie haben will. Also das ist so wie ein Netzwerk, so ein Graph, wo man dann ganz viele Informationen noch bekommt, wenn man die haben will. Wenn man jetzt eben schon gut in dem Thema drin ist, dann kann man das einfach überspringen.",
+      "start": 1401056,
+      "end": 1482542,
+      "confidence": 0.9368350400000001,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Das ist also eigentlich die rechte Sidebar auf YouTube, da wo ich eigentlich immer runter das Rabbit Hole gehe, wenn ich ein Video geguckt habe.",
+      "start": 1482606,
+      "end": 1488590,
+      "confidence": 0.9212388,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Ja, der YouTube Algorithmus schlägt dir wahrscheinlich dann eher irgendwelche YouTube Videos vor mit irgendwelchen leicht bekleideten Frauen oder so, damit du möglichst drauf klickst und weniger, wo du in die Tiefe gehen kannst, um dieses Thema besser verstehen zu können. Aber grundsätzlich, ja, die Idee ist vielleicht eine ähnliche.",
+      "start": 1488670,
+      "end": 1505690,
+      "confidence": 0.9208524000000002,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Und für alle Hörerinnen und Hörer, weil der Wolfgang dieses Wort LSM Tree schon so oft gesagt hat, habe ich gedacht, wenn ihr diesen Podcast zu Ende hört, nehmt bitte wenigstens eine Sache mit. Und zwar LSM Trees sind log structured. Merge Trees und das ist eine Datenstruktur, eine Baum Datenstruktur, dann habt ihr wenigstens das Akronym gelernt. LSM log structured Merge Tree ist eigentlich.",
+      "start": 1505830,
+      "end": 1529522,
+      "confidence": 0.8525281538461541,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "So eine Speicherform auf mehreren Ebenen und dass man einfach Daten, die man seltener braucht, dann auf Ebenen abspeichert, die weiter unten sind oder vielleicht sogar entfernt. Es gibt ja jetzt den neuen Hype von Tiered Storage, was ja eigentlich nichts anderes ist, als dass die Daten, die kalt sind, liege ich irgendwo anders hin. LSM Trees ist eigentlich die Grundlage von dem Ganzen, aber dann halt eher auf den Bereichen langsamere Platte, schnellere Platte, Hauptspeicher und so weiter, was Myrocks ja eigentlich auch verinnerlicht.",
+      "start": 1529546,
+      "end": 1556070,
+      "confidence": 0.9083667058823532,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Genau, haben wir schon ein paar mal erwähnt hier im Podcast. Aktueller Hype in vielen großen Datenbanken. Tier Storage ist jetzt nicht eins zu eins mit dem zu übersetzen, was Wolfgang da gesagt hat, aber Wolfgang hat es beschrieben als Daten, die kalt sind und Daten, die hot sind. Für Leute, die sich im Datenbankspektrum nicht so auskennen, Daten, die hot sind, liegen in der Regel irgendwo im L L Cache der CPU oder im RAM. Und Daten, die kalt sind, die liegen auf langsameren Devices. Und der aktuelle Trend geht halt dahin, dass du große Datenmengen, z.B. für Kafka, für Clickhouse oder Cassandra oder ähnliches, auf Cloud Object Storage ablegst und somit dann natürlich ein bisschen Latenz hinzufügst, aber dann natürlich den Betrieb der Datenbank sehr günstig machst, da du TB mäßig Daten auf S hinlegen kannst, die dann als kalt sind. Die können natürlich dann nicht innerhalb von Millisekunden gequeried werden, sondern wahrscheinlich mit einer Latenz von eins bis 3 s. Für viele Use Cases aber ausreichend. Und somit kannst du natürlich solche Datenbanken sehr günstig betreiben, da du dann nur noch sogenannte CPU Bau Computer Nodes haben musst und nicht mehr discbound. Aber wir schweifen ab. Du hattest gesagt, Okay, ich starte mit dem Abstract, danach in die Conclusion, danach hole ich mir das Ergebnis. Und du hast gesagt, dass zwischen abstract und Introduction und Results und Conclusion das.",
+      "start": 1556110,
+      "end": 1638682,
+      "confidence": 0.9174137500000001,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Fleisch liegt, oder für uns Vegetarier der Tofu, wenn du das so nennen willst. Aber das ist genau das, was du eigentlich nie lesen willst. Das sind diese ganzen Formeln und dieser sehr trockene Teil. Und da muss man halt einfach wissen, hilft es einem, wenn man das versteht, wenn man sich da reinarbeitet, ja oder Nein? Man kann dann da auch noch mal checken, okay, wo ist der harte Algorithmus, der wirklich diese harte Formel eigentlich hat und wo ist vielleicht dann eher die Erklärung, man braucht ja nicht alles verstehen. Also um ein Paper wirklich in die Tiefe zu verstehen, da muss man schon sehr viel Zeit investieren und die braucht man meiner Meinung nach auch gar nicht investieren, um einen gewissen Ansatz zu verstehen. Also man muss nicht jede Formel verstehen und es gibt ja da mein mein Lieblingssprichwort bei einer Präsentation, mit jeder Formel auf einer Folie verlierst du die Hälfte der Audience, die dir zuhört. Das ist bei Paperts wahrscheinlich auch so, aber es ist halt mal so, dass die sehr technisch sind und sehr algorithmisch. Da muss man einfach selber diese Formeln ausblenden, damit man es besser versteht. Meiner Meinung nach ist es auch so ein bisschen Problem der Wissenschaft, dass man, sind da zwar viele anderer Meinung, aber ich bin schon der Meinung, dass die Wissenschaft teilweise es probiert, auch sehr kompliziert zu beschreiben. Hat natürlich auch den Grund, dass man formal arbeiten muss und mit einem Pseudocode, wenn man den formal aufschreibt, das ist einfach teilweise sehr kompliziert. Aber ich habe da jetzt in meiner Recherche auch mal das alte Paper zum zum B Baum aufgemacht vom Bayer. Das kommt aus München, das Paper. Also der Bayer ist ein Datenbank mittlerweile oder war damals Professor, damals war er glaube ich noch gar kein Professor, aber der hat den B Baum erfunden. Also der B Baum heißt vermutlich b Baum, weil er von Bayer erfunden wurde. B Baum. Und das Paper ist von 1972, springer Verlag. Und wenn man sich dieses Paper anschaut, ist eigentlich interessant, dass da teilweise die Algorithmen super einfach mit so Automaten, mit so Diagrammen dargestellt ist. Man startet irgendwo, dann überprüft man, ist das Blatt größer, kleiner, ja, nein und hat dann so die klassischen Verzweigungen drin. Und es ist gar keine komplizierte Formel oder ein Code oder irgend sowas drin, sondern es sind so richtige Ablaufdiagramme, super einfach zu verstehen. Also eigentlich ein vorbildliches Paper meiner Meinung nach, was man als nicht Wissenschaftler ganz einfach auch verstehen kann, weil man einfach den Pfad durchgeht. Also für jeder, für jeden Entwickler und Entwicklerin sollte das einfach verständlich sein. Und das sieht man immer seltener, muss sie zugeben. Und das ist ein bisschen schade, weil das dann genau das bewirkt, dass du wieder einschläfst.",
+      "start": 1638706,
+      "end": 1789150,
+      "confidence": 0.9230350967741932,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Meiner Erfahrung nach ist es aber wichtig, die Grundlagen eines Systems, mit dem man arbeitet, nehmen wir jetzt einfach mal eines Datenbanksystems, ja, zu verstehen. Denn ziemlich viele Fragen, die ich jetzt auf Stackoverflow z.B. lese, aber die ich auch selbst google, führen darauf zurück, dass ich die Grundstruktur des Systems nicht richtig verstehe. Beispiel, ich glaube, wenn wir Git Fragen klassifizieren würden, dann wäre eine große Kategorie how to unfuck my local Git Repository. Und ich denke, wenn mehr Leute verstehen würden, wie Git aufgebaut ist, dann würden sehr viele Leute recht schnell verstehen, wie die ihre lokale Git Kopie wieder in Ordnung bringen. Und genauso ist es natürlich dann bei Algorithmen oder bei warum ist mein meine Query Performance so langsam und so weiter und so fort. Ich denke, wenn mehr Leute die Grundlagen verstehen würden, wie ihr System aufgebaut ist, welche Algorithmen und Datenstrukturen genutzt werden und so weiter, dann wären mehr Leute produktiver. Und jetzt sagst du mir eigentlich, das ist der Teil, den man fast als letztes liest.",
+      "start": 1789930,
+      "end": 1852266,
+      "confidence": 0.9183128901734103,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Naja, ich würde sagen, um die Tiefe dann wirklich zu verstehen, da stellt sich schon die Frage, muss man das wirklich dann durchlesen oder reicht es auf einem gewissen high level auch zu akzeptieren, wenn da drin steht, dieser Algorithmus ist deterministisch, dass man das einfach glaubt und vielleicht gar nicht verstehen muss jetzt, wie der Algorithmus funktioniert, warum der deterministisch ist und solche Dinge. Also ich glaube, da gibt es schon unterschiedliche Ebenen, aber ihr gebt ihr vollkommen recht. Ich glaube, Grundlagen sind wichtig und darum bin ich auch ein Verfechter von dem Studium, wo man breit Grundlagen versteht und lernt, damit man dann auch binäre Operatoren z.B. versteht, die du ja so gerne hast. Hast du ja mal in einer Episode gesagt. Wer muss wirklich so binäre Operationen überhaupt verstehen? Man soll doch leichter verständlich programmieren, anstatt binäre Operationen zu verwenden.",
+      "start": 1852378,
+      "end": 1901296,
+      "confidence": 0.9051076923076918,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Nee, nee, ganz kurz, es ging nicht um binäre Operatoren, obwohl natürlich Bit Shifting auch ein binärer Operator ist. Das verstehe ich ja eben. Es ist ja auch nicht so, als kann ich das nicht. Es ist nur so, immer wenn ich sowas in meinem Code lese, dann nehme ich mir hier so einen Zettel und dann nehme ich mir einen Stift und dann rechne ich wirklich manuell einmal ganz kurz rum, damit ich wirklich weiß, was da los ist. Und dann denke ich mir, das muss doch nicht sein, das geht doch einfacher.",
+      "start": 1901368,
+      "end": 1926072,
+      "confidence": 0.9315969148936168,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Naja, aber so, pass auf, man kann nicht mit dem immer triggern.",
+      "start": 1926136,
+      "end": 1930392,
+      "confidence": 0.9299233333333333,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Nein, ich finde das super. Ich finde das, ich sage ja auch, da wo John Carmic hat bestimmt irgendwo in seinem Doomcode Bitshifting drin, der hat bestimmt ganz viel Bit Operatoren mit drin. Und da sind wir glaube ich, alle dankbar, weil jeder sollte heutzutage Doom auf einem Thermomix laufen lassen können. Dennoch denke ich, wenn du es machst, um, ich reduziere jetzt mein Quellcode um zwei Zeilen und damit komme ich dann sehr intelligent rüber, weil jeder denkt, boah, ist er smart. Sag ich, lass es sein, ja, der Code wird fünfmal oder zehnmal öfter gelesen als geschrieben. Deswegen mach es einfach, mach es verständlich für alle. Darum geht es einfach nur. Ist ja ein tolles Beispiel.",
+      "start": 1930536,
+      "end": 1972256,
+      "confidence": 0.8711225423728813,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Und genau dieses einfach machen ist in wissenschaftlichen Papers teilweise schwierig. Du hast einen begrenzten Platz und musst auch die formalen Beweise liefern, weil es wird peer reviewed, das muss halten, das muss nachvollziehbar sein, das muss überprüfbar sein. Und darum liest sich das oft so trocken und so schwierig und ist teilweise auch schwierig zu verstehen. Und darum ist es ja auch so wichtig, dass wir diese Wissenschaftskommunikation haben und dass irgendwelche Zeitungen auch auf high level oder auf YouTube, auch YouTuber einfach high level berichten über die Erkenntnisse aus der Wissenschaft. Aber ich glaube auch, dass gute Entwicklerinnen Papers lesen können sollten, zumindest teilweise verstehen, weil man da einfach selber viel rausziehen kann und sich auch mit den Details beschäftigen. Und teilweise eben das ganze Clickbait und alles rundherum, was man so hat, ist dann nicht da. Und man kann sich halt wirklich auf die Details konzentrieren und auch selber ein Bild machen, weil wenn da steht, es ist revolutionär und wird, was weiß ich, die Welt ändern, dann kann man halt selber, wenn man auf die Daten blickt, auch analysieren, stimmt es, ist es wirklich so weltbewegend oder hat die Zeitung einfach einen tollen Clickbait Artikel gebraucht? Obwohl man muss schon auch sagen, Wissenschaftskommunikation ist wichtig und da gibt es auch gute Medien. Und ich habe da gerade selber vor ein paar Wochen eine Geschichte gehört von einer befreundeten Wissenschaftlerin, wo der Guardian etwas veröffentlicht hat von ihren Ergebnissen. Und der Guardian hat es wirklich nachgeprüft noch mal mit anderen Leuten. Und dann ist irgendwie ein Blogger aus Australien, der sehr tief in dem Thema drin war, gefragt worden vom Guardian, ob die Ergebnisse stimmen. Der hat sogar noch mal einen Fehler gefunden oder einen kleinen Bug in dem Code gefunden. Also wenn da die Wissenschafts Community wirklich gut zusammenarbeitet und das überprüft, dann ist es wirklich super tolle Qualität. Und Der Guardian hat das dann überprüft, hat es trotzdem als für sinnvoll erachtet und hat es dann eben gepublished und hat sicher die Details weggelassen und hat dann eben im Sinne der Wissenschaftskommunikation das so aufbereitet, dass es auch ganz normale Leute, die nicht in der Wissenschaft drin sind, verstehen können. Und das ist schon natürlich wichtig, aber wir technischen Leute sollten vielleicht auch uns das aneignen, dass wir das selber machen können, wenn es nötig ist.",
+      "start": 1972328,
+      "end": 2104154,
+      "confidence": 0.9177665984654734,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Um was ging es da?",
+      "start": 2104242,
+      "end": 2105058,
+      "confidence": 0.929608,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Es war eine Analyse über das Hörverhalten von der Gesellschaft bezüglich Musik.",
+      "start": 2105114,
+      "end": 2110470,
+      "confidence": 0.8561108333333335,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Logisch ein Thema. In dem ich auch sehr tief drin bin. Nun gut, aber du hast du hast ja natürlich einen wahren Punkt. Ein Beispiel ist, ich war mal eine ganze Zeit lang sehr, sehr tief in Redis drin und habe da auch wirklich die Implementierung nachgeguckt und allem drum und dran. Und immer wenn ich dann mal einen Podcast zu Redis gehört habe und dann kam so die ein oder andere Aussage, da haben mir dann auch die Fußnägel da hochgerollt. War jetzt nicht so richtig, weil das stimmt nicht und das stimmt nicht. Und so weiter. Aber ich meine, das passiert Hörerinnen und Hörern sehr wahrscheinlich uns auch, weil wir covern so eine breite Thematik, dass wir uns da, ich sag mal, hier und da mal ein Fehler durchrutscht und wir eine falsche Information schädlicherweise verbreiten. Also Entschuldigung, wir haben ja auch mal hier und da gute Kritik, an der wir gelernt haben, auf die eine oder andere Episode bekommen. Und da haben wir auch mal einen Rüpel bekommen in der Community, was ich auch sehr toll finde, weil wir sind.",
+      "start": 2110850,
+      "end": 2164112,
+      "confidence": 0.9239370491803278,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Natürlich auch nicht perfekt. Umso wichtiger ist es, dass es immer diese Referenzen gibt. Und gute YouTuber, gute Zeitschriften, Wissenschaftskommunikation im Allgemeinen, die referenzieren ja immer die Originalquelle und dann kannst du in die Originalquelle reingehen. Das war ja immer das größte Problem, auch während Corona. Da sind ja alle dann plötzlich zu Spezialisten geworden und jeder hat irgendwelche Service zitiert und jeder ist Wissenschaftler gewesen. Aber die wenigsten haben dann verstanden, wie kann ich denn wirklich beurteilen, ob eine Studie wirklich Sinn macht und wie, wie aussagekräftig die ist? Eben weder der Klassiker, wie groß war die Gruppe, die befragt wurde? Was wurde da eigentlich getestet? Und wenn man halt nur die Clickbait Header Line in der Zeitung liest, dann kann man halt noch nichts darüber sagen, wie die Studie war.",
+      "start": 2164136,
+      "end": 2209122,
+      "confidence": 0.9120512121212124,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Es gibt auch so eine so ein geiles Video irgendwo auf YouTube, da werden Flat Earther dabei gefilmt, wie sie wirklich mit Wissenschaft versuchen zu beweisen, dass sie, dass die Erde halt flach ist. Und dann beweisen sie leider, dass die Erde eine Krümmung hat und rund ist. Also ist auch eine schöne Sache, aber ich schweife wieder ab.",
+      "start": 2209186,
+      "end": 2229194,
+      "confidence": 0.9043300000000002,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Aber zumindest war das dann nachvollziehbar, dass die Erde rund ist. Und diese Nachvollziehbarkeit ist eben auch in der Informatik wichtig, dass du den Source Code zur Verfügung hast, dass du diese Formel oder diesen Algorithmus eben trocken im Paper drin hast, damit du das überprüfen kannst. Früher war das noch wichtiger. Heutzutage hat man den Source Code immer mehr auch öffentlich zugänglich, was ganz wichtig ist, dass man eben auch Fehler findet, weil auch in der Wissenschaft passieren Fehler und so kann man das wirklich nachvollziehen, weil wenn da nur steht, ich habe herausgefunden, das ist schnell auf diesem auf dieser CPU, dann kann ich das halt nicht nachprüfen. Und wenn ich den Source Code habe, dann kann ich es halt wirklich bei mir nachprüfen. Auf meiner CPU, auf meinem GPU Cluster ist es wirklich genauso schnell, wie auch in dem Paper dort gestanden ist.",
+      "start": 2229242,
+      "end": 2273872,
+      "confidence": 0.9350582191780823,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Du sprichst da gerade eine ganz tolle Sache an, denn ich lese auch sehr viele Datenbank Benchmarks. Ja, die eine Datenbank ist schneller, 50 % schneller als die andere und allem drum und dran. Und da fehlt halt oft von mir irgendwie die Referenzimplementierung oder welche Hardware wurde denn genutzt, zu welchem Zeitraum, welche Frequenz hatte die CPU? Und so weiter. Und da denke ich mir so, wie kann denn eine Firma einen solchen Benchmark veröffentlichen, ohne ihn reproduzierbar zu machen? Das finde ich halt immer, immer sehr, sehr schwierig, aber ist halt schon, ich sag mal fast die, fast die Standardgeschichte.",
+      "start": 2273936,
+      "end": 2310102,
+      "confidence": 0.9118085294117649,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Aber genau das ist der Unterschied zu ordentlichen Papers, die peer reviewed sind, weil da wird es angekreidet. Du wirst hoffentlich zumindest kein sinnvolles peer review des Paper finden, wo nicht angegeben ist, was für eine CPU genau, was für Geschwindigkeit, was für eine Architektur verwendet wurde und und und. Also dass es wirklich nachvollziehbar ist. Und auf solche Sachen wird eben geachtet. Und wenn du irgendein Whitepaper nach außen wirfst oder einfach ein Paper veröffentlichst, nur weil dieses Format gegeben ist, heißt es ja noch lange nicht, dass es ein peer reviewed das Paper ist. Also da ist schon ein großer, großer Unterschied. Und du hast erwähnt, das Bitcoin Paper, das wurde z.B. nie peer reviewed. Das wurde einfach nach außen geworfen.",
+      "start": 2310196,
+      "end": 2350722,
+      "confidence": 0.8822761788617886,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Ich wusste es, Bitcoin ist eine Lüge.",
+      "start": 2350826,
+      "end": 2352914,
+      "confidence": 0.9164314285714286,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Aber wurde dann halt trotzdem zum de facto Standard. Also das kann natürlich schon auch passieren. Aber ich spreche in dem Fall immer von peer reviewed papers, weil die halt eine gewisse Qualität aufweisen und derzeit halt das einzige System ist, was sinnvoll funktioniert. Ist auch nicht das beste und es gibt auch da schwarze Schafe, aber ist aktuell halt das best funktionierende, würde ich mal sagen.",
+      "start": 2353002,
+      "end": 2372502,
+      "confidence": 0.9327907462686565,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "So, jetzt hast du mir schon ein bisschen Lust gemacht, ein paar Paper zu lesen. Ich natürlich primär Industrial Paper, da ich die für Praxis relevanter halte bzw. Für mich besser anwendbar. Und jetzt ist es ja so, wie finde ich immer Papers? Ich lese die bei irgendeinem LinkedIn Influencer oder so oder von mir aus auch bei Amazon oder folge auf Twitter oder Mastodon irgendwelchen Leuten und dann sind die wieder stolz, dass sie wieder ein Paper gemacht haben, dann nehme ich mir den Titel, pack den in Google und pack da hinten File Type PDF hinter und dann finde ich oft was. Aber kann ja nicht die einzige Möglichkeit sein, wie ich an Papers komme, oder?",
+      "start": 2372566,
+      "end": 2411028,
+      "confidence": 0.9152381355932203,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Das ist schon eine sehr gute Herangehensweise, nach dem PDF zu suchen. Das ist schon sophisticated, würde ich mal sagen, weil klassischerweise findet man ja irgendwo ein Paper oder? Oder sucht danach auf einer Suchmaschine wie scholagoogle Com, also Skola. Google Com ist übrigens interessanterweise, glaube, ein side Project von einem Google Mitarbeiter gewesen und seit jeher arbeiten da nur irgendwie ein, zwei Googler daran und ist die de facto Suchmaschine im wissenschaftlichen Bereich geworden. Also Volltextsuche über alle wissenschaftlichen Arbeiten, inklusive Eingrenzen von Veröffentlichungsdatum und so weiter. Es ist eine super Suchmaschine, kann ich wirklich nur empfehlen. Und wenn man irgendwie mal ein paar Background Informationen haben will zu einem Thema, dort den Suchbegriff einzugeben, um einfach zu schauen, gibt es schon was, hat es jemand schon mal gemacht? Was ist da der aktuelle Stand? Das ist super interessant, weil das ist ja eigentlich so die klassische wissenschaftliche Herangehensweise. Ich habe irgendeine Idee und suche mal, was gibt es dazu schon? Im Gegensatz zu der Praxis, die du da immer so hoch leben lasst. In der Praxis, was macht man, bevor man überhaupt mal sucht, fangt man an, es selber zu entwickeln. Not invented here, man kann das sowieso besser. In der Wissenschaft ist es Gott sei Dank bisschen anders. Man sucht immer, was gibt es denn schon, worauf kann ich aufbauen? Und das finde ich auch eine ganz gute Herangehensweise, mal auf Skola einfach einzugeben, was gibt es dazu schon? Gibt auch noch ähnliches Projekt, dBLP heißt es, wurde von der Uni Trier ins Leben gerufen, ist auch eine der größten Datenbanken über wissenschaftliche Papers, vor allem im Informatikbereich. Wird mittlerweile vom Schloss Tagstuhl betreut und ist eigentlich in der wissenschaftlichen Community auch eine super wichtige Quelle im Informatikbereich, wenn.",
+      "start": 2411164,
+      "end": 2511182,
+      "confidence": 0.9058396575342468,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Ich das aber richtig in Erinnerung habe, sind ziemlich viele Papers auch nur gegen Geld zugänglich, oder?",
+      "start": 2511206,
+      "end": 2516390,
+      "confidence": 0.985355294117647,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Ja, das ist ein anderes großes Problem. Google Scholar hilft da ein bisschen. Die zeigen dir auch die PDFs oft an, wenn sie bekannt sind, wo sie liegen, weil klassischerweise ist die wissenschaftliche Arbeitsweise die, dass du bei einem Verlag veröffentlichst, also Konferenzen oder journals, die werden immer von Verlagen herausgegeben und die sind ganz oft hinter einer Bezahlschranke, wenn man keinen speziellen Zugang hat über die Uni. Z.B. also die ganzen großen Verlage, ACM, IEEE, Elsevier, Springer sind so die größten, da sind ganz viele Papers leider hinter einer Bezahlschranke ist ein großes Problem, weil eigentlich sind die ganzen Arbeiten ja von der Öffentlichkeit finanziert.",
+      "start": 2516510,
+      "end": 2555010,
+      "confidence": 0.9285398113207544,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Ich wollte schon sagen, also eigentlich prahlt Deutschland und Österreich, ich weiß gerade nicht wie es in der Schweiz ist, eigentlich sehr viel mit Bildung ist frei, also gratis, zumindest zu einem sehr, sehr großen Anteil. Man natürlich diese Semestergebühren und ich glaube bei wenn du ein Dr. Machst und so weiter, ist das glaube ich ein bisschen anders wegen Stipendi, Stipendium und Co. Aber es hat bei weitem nicht diese Kosten wie in den USA von 50 $60 oder? Ich glaube damit kommst du mit einem mit und Stanford mit Dollar auch nicht weit. Und dann auf der anderen Seite die Ergebnisse, wenn man die lesen möchte, muss man einfach dafür zahlen. Ist das nicht ein bisschen paradox?",
+      "start": 2555090,
+      "end": 2591816,
+      "confidence": 0.905563193277311,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Ja, ist es und es ändert sich da ein bisschen was so langsam. Es gibt die Open Access Initiative, das läuft ein bisschen anders, das heißt du als Autor zahlst den Verlagen noch, damit die das gratis zur Verfügung stellen. Das ist zwar, klingt alles sehr krank, das heißt du machst die Arbeit und zahlst dann noch den Verlagen, dass das öffentlich ist. Es sind so je nachdem 2000 €3000 üblicherweise pro Paper und wenn du Glück hast, dann wird es von deiner Forschungseinrichtung, von deiner Universität oder von deinem Fördergebern gezahlt oder von der europäischen Union, damit es öffentlich verfügbar ist. Aber es ist natürlich eigentlich ziemlich krank, dass man den Verlagen dann auch noch zahlt. Und vor allem, wenn man dann auch noch überlegt, das ganze peer reviewen, das heißt andere wissenschaftliche Personen reviewen das ganze, die machen das auch gratis, das heißt die Verlage bekommen die gesamte Arbeit gratis und alles was sie machen ist das veröffentlichen und mit ihrem Namen dort zu stehen. Und das ist halt so ein Teufelskreislauf. Du willst als Konferenz den guten Namen haben, dass Springer dich veröffentlicht und Springer nützt dich halt dann dementsprechend auch aus, muss man ganz klar sagen.",
+      "start": 2591888,
+      "end": 2657974,
+      "confidence": 0.9333168999999992,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Und warum können die ganzen Wissenschaftler kein global Movement machen und einfach etwas ins freie Web stellen? Die machen einfach eine HTML Seite und packen das PDF mit einem Link auf einen Webspace, den man für €3 bei All Inclusive kriegt. Also ich glaube das Geld hat die Uni noch, um Webspace zu bezahlen. Wieso machen die das nicht einfach?",
+      "start": 2658062,
+      "end": 2680422,
+      "confidence": 0.9000029999999999,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Das wird auch teilweise schon gemacht. Das Problem ist die Reputation, das heißt.",
+      "start": 2680566,
+      "end": 2684398,
+      "confidence": 0.9807584615384617,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Du willst ja von wem jetzt genau? Von all inclusive oder von der Webseite.",
+      "start": 2684414,
+      "end": 2688870,
+      "confidence": 0.9114971428571429,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Oder du brauchst die Reputation von Springer z.B. oder von ACM, damit dein Paper mehr wert wird, weil wenn du das dort veröffentlichst, dann veröffentlichst du auf einer ganzen bekannten Konferenz, die von Springer publiziert wird und damit ist deine Forschungsarbeit Mehrwert und damit bekommst du von deiner Universität vielleicht mehr Punkte auf dein virtuelles Konto, dass du gute Forschung leistest, weil du bei Springer publizierst. Teilweise ist es sogar so weit, gerade im medizinischen Bereich, dass du sogenannte Impact Points brauchst und um befördert zu werden, um eine Stelle überhaupt zu bekommen, um einen unbefristeten Vertrag zu bekommen, musst du gewisse Punkte erreichen. Und die Punkte bekommst du aber nur, wenn du bei gewissen Verlagen veröffentlichst, wo die Punkte sehr hoch sind, damit du die überhaupt erreichst. Also da ist auch ein extremes Konkurrenzdenken und das ist ein Riesenproblem, ein gewisser Teufelskreis, der da in der Wissenschaft besteht.",
+      "start": 2688950,
+      "end": 2741760,
+      "confidence": 0.9293975838926177,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Aber hast du nicht gerade gesagt, die Verlage machen eigentlich nichts, denn die Leute, die mein Paper gegenchecken, diese Peer Reviews passieren gratis dann. Ich bin die Person, die die ganze Arbeit da reinsteckt und diese Forschung macht und dann niederschreibt. Dann maile ich meinen Kumpels aus Brasilien und aus Österreich, hey, schaut doch mal drüber, passt das? Und die sagen, jo, Daumen hoch, habe ich kontrolliert, ich habe dieselben Ergebnisse, der Verlag nimmt das Paper und veröffentlicht das sehr wahrscheinlich noch in der Printausgabe oder ähnliches. Und wo ist denn da jetzt genau die Reputation von dem Verlag? Also habe ich das Memo nicht gelesen.",
+      "start": 2741800,
+      "end": 2777074,
+      "confidence": 0.9037513207547171,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Oder Branding eigentlich ist so wie, keine Ahnung, Swarovski oder sonst irgendeine teure Brand, die es dort draußen gibt. Eigentlich ist es Branding.",
+      "start": 2777122,
+      "end": 2787034,
+      "confidence": 0.8701043478260868,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Kann die Uni nicht einfach ein GitHub Account haben und dann hat das Branding die Heinrich Heine Universität Düsseldorf und dann kann ich als Researcher in an der Heinrich Heine Universität in Düsseldorf auf dem GitHub Account da mein PDF veröffentlichen?",
+      "start": 2787122,
+      "end": 2800510,
+      "confidence": 0.8819570731707318,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Klar, kannst du, aber dann gibt es ja auch die internationalen Uni Rankings und die Uni Rankings gehen dann wieder nach Impact Points und die Impact Points gehen dann wieder nach Fachzeitschriften mit den hohen Impact Points. Und so wird die ganze Wissenschaftswelt bewertet.",
+      "start": 2800930,
+      "end": 2814346,
+      "confidence": 0.9446809090909091,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Also für mich ist das ganze System kaputt und das ist eine harte Vetternwirtschaft.",
+      "start": 2814458,
+      "end": 2817870,
+      "confidence": 0.9004257142857144,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Vetternwirtschaft würde jetzt weniger sagen, aber dass das System kaputt ist, da gebe ich dir recht.",
+      "start": 2818170,
+      "end": 2821922,
+      "confidence": 0.9718468750000002,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Naja gut, also irgendwer muss ja diesen Verlagen ja schon diese Republik Notation gegeben haben.",
+      "start": 2821986,
+      "end": 2828290,
+      "confidence": 0.8693460000000001,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Ja, früher war das natürlich noch anders, da war alles print. Die haben dann wirklich Bücher herausgebracht. Also Springer ist ganz bekannt worden mit diesen Lecture notes, of Computer Science, die da regelmäßig rauskommt. Da gibt es meterweise Bibliothekswände, wo nur diese Publikationen drin sind. Früher hast du die Verlage gebraucht, um überhaupt publizieren zu können. Heutzutage brauchst du das ja viel weniger. Aber das ist natürlich so eine Hassliebe und ein gewisses Abhängigkeitsverhältnis, was besteht und was ganz schwierig ist aufzulösen. Und es hat da schon Versuche gegeben, es hat mal einen quasi Aufstand gegeben gegen Elsevier, weil das sind so die härtesten eigentlich am Markt, wo wirklich hunderte Forscher sich zusammengetan haben und einen Brief unterschrieben haben, sie werden nicht mehr bei Elsewhere veröffentlichen. Wirklich aus dem medizinischen Bereich auch viel. Das war dann schon natürlich ein harter Schlag, aber so richtig hat es auch nicht funktioniert. Und man wird dann doch wieder irgendwie abhängig. Und wenn es dann die Superkonferenz ist, das Super Journal und man will unbedingt dort rein, dann macht man vielleicht auch wieder mit. Also es ist extrem schwierig, sich da irgendwie rauszuboxen, aber es gibt Bestrebungen und Open Access ist eine Möglichkeit. Übrigens, was noch dazu zu sagen ist, auch in Amerika wird ganz viel öffentlich finanziert und die meiste Forschung ist öffentlich finanziert. Also auch dort ist es eigentlich gleich.",
+      "start": 2828630,
+      "end": 2906846,
+      "confidence": 0.9275700877192983,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Mir ist immer noch nicht ganz klar, warum diese Reputation da jetzt genauso wichtig ist bei den Verlagen. Weil wie gesagt, wenn du das Paper schreibst und das wird peer reviewed von anderen Leuten, die da Ahnung von haben, dann ist die, dann muss es ja nur mehr oder weniger signiert werden, dass es nicht verändert wurde und Co. Und dann ist die Reputation ja bei dir als Forschender da. Und deswegen habe ich das immer nicht ganz verstanden, warum der Verlag da so einen großen Steak drin hat.",
+      "start": 2906918,
+      "end": 2928982,
+      "confidence": 0.9222080898876401,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Die Verlage machen natürlich schon auch noch Werbung. Z.B. also wenn es ein gutes Paper ist, dann haben die auch Connections zu allen Zeitungen, zu Wissenschaftskommunikationsplattformen und bringen deine Forschungsergebnisse nach außen und verteilen die. Und damit taucht es in ganz vielen Zeitungen in der Welt auf. Und dann hast du wieder höhere Impact Points. Impact Points heißt ja, wie viele Leute erreichst du, wie wichtig ist es für die Gesellschaft. Und umso mehr Leute du erreichst mit deiner Wissenschaft, mit deinen Ergebnissen, umso besser. Insofern helfen dir die Verlage natürlich auch, weil du als Privatperson hast jetzt ein Problem, du hast nicht die Kanäle, zum Guardian zu gehen und zu allen Zeitungen weltweit, um da irgendwie deine Informationen zu verteilen. Also dort helfen Verlage schon auch. Da ist schon auch ein bisschen Arbeit drin, muss man zugeben.",
+      "start": 2929126,
+      "end": 2974764,
+      "confidence": 0.9250273188405792,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Klingt aber schon irgendwie, ich sag mal, nach so einem System, ich nenne das immer nett historisch gewachsen, denn in modernen, schnelllebigen Zeiten mit Social Media, wo auch jeder eine Informationsquelle sein kann, auch für den the Guardian, kann das natürlich sein, dass dieses Geschäftsmodell vielleicht der neue Dinosaurier wird.",
+      "start": 2974812,
+      "end": 2993220,
+      "confidence": 0.9061235999999998,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Aber nach diesem kurzen Exkurs, warum diese ganze wissenschaftliche Welt kaputt ist, oder die Veröffentlichungswelt kaputt ist, eigentlich, was wir ja sagen wollten, ist, man hat oft keinen Zugang zu diesem PDF. Und was man aber machen kann, ist, man kann einfach mal suchen nach diesem PDF, wie du gesagt hast, ursprünglich in Google mit dem Falltype PDF, weil ganz oft findest du es PDF bei dem Autor oder bei der Autorin auf der Webseite selbst, obwohl es bei Springer hinter der Bezahlstranke ist, findest du es vielleicht auf der privaten Webseite von dieser Person oder vielleicht so einen Preprint. Das heißt, es ist eigentlich dasselbe Paper, aber sie sagen, es ist nicht die finale Version oder es hat ein anderes Format, aber der Inhalt ist dasselbe. Und dann findest du den Inhalt schon. Also wenn du ein bisschen suchst, findest du üblicherweise auch den Volltext dazu.",
+      "start": 2993720,
+      "end": 3039732,
+      "confidence": 0.9391463945578231,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Okay. Obwohl die ganze Szene kaputt ist, weißt du, wer die ganze Sache wieder rettet für mich?",
+      "start": 3039896,
+      "end": 3044020,
+      "confidence": 0.9241552941176471,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Google.",
+      "start": 3044100,
+      "end": 3044720,
+      "confidence": 0.97972,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Ja, teilweise, aber die Community. Und zwar gibt es seit ein paar Jahren, bin ich auch mal drüber gestolpert, finde ich sehr geil, eine Community, die nennt sich Papers we love. Und Papers we love ist primär erstmal ein Gitterrepository mit akademischen Computer Science Papers, aber auch eine Community, die sich in Form von Meetups trifft und dann wissenschaftliche Paper vorträgt und ich sag mal, die ein bisschen mehr zugänglich macht. Und das gibt es irgendwie weltweit in großen Städten, in Wien, in London, aber auch in Hamburg, Mumbai, Belfast, aber auch in Berlin. Und das finde ich, fand ich eine schöne Sache. Da habe ich so ein bisschen das Gefühl, dass die Community der wissenschaftlichen Community, also die Community der Praktika der wissenschaftlichen Community, so ein bisschen unter die Arme greift, so ein bisschen in Bezug auf die Defizite im Storytelling vielleicht ein bisschen ausbessert und diese ganze doch teilweise sehr spannende Arbeit, weil ich meine, wir haben in diesem Podcast auch schon mehrmals Kafka erwähnt und es gibt ja dieses industrielle Paper wie Kafka oder gefühlt in jedem Podcast und im Internet kommt Kubernetes in jedem zweiten Satz vor und das alles basiert auf Borg, was dann auch wieder ein wissenschaftliches Paper ist und Co. Und das finde ich dann schön. Also wenn man möchte, kann man auch zu diesen Papers we love Meetups gehen und sich, ich sag mal, quote unquote sich berieseln lassen und das, das finde ich immer ganz schön.",
+      "start": 3045300,
+      "end": 3124544,
+      "confidence": 0.9045817551020406,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Es gibt ja auch ganz viele YouTuber und YouTuberinnen, die das sehr gut machen. Ich habe jetzt ein bisschen verteufelt natürlich, aber da gibt es wirklich sehr gute Accounts. Es gibt dieses sehr bekannte Two Min Papers z.B. das ist ein Forscher, der vor allem im Data Science Bereich unterwegs ist aus Ungarn und jetzt glaube ich aktuell in Wien ist an der Universität, der innerhalb von ein paar Minuten immer die neuesten AI Trends oder AI Paper Trends vorstellt. Also es sind nicht immer 2 Minuten, es sind meistens mehr Minuten, aber der macht es wirklich super cool und beschreibt die Papers. Also das war so ein Account, der sehr zu empfehlen ist. Und da merkt man auch, dass die Community eigentlich sehr viel Wissenschaftskommunikation macht. Und das ist, glaube ich auch sehr wichtig, weil man kann nicht immer selber das Paper lesen. Eine andere Möglichkeit ist, wenn man keine YouTuber findet, einfach mal ein Paper nehmen und durch ChatGPT jagen. Das ist natürlich super praktisch. ChatGPT ist ja super im Zusammenfassen und im Details weglassen. Also das kann man auch machen, wenn man das selber eben nicht so gut kann. Und wenn du deine Formeln siehst und dann wegschläfst, dann nimm einfach ChatGPT in Zukunft und sag lösch mir alle Formeln raus und fasse mir mal zusammen. Dann bekommst du deine personalisierte an die Zusammenfassung von von jedem Paper und brauchst gar keinen Influencer dazu. Oder ich sage lieber Content Creator als Influencer, gib mir doch eine Erfindung vom.",
+      "start": 3124712,
+      "end": 3208486,
+      "confidence": 0.8941747808764936,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Marketing, gib mir doch spontan mal den Prompt, den du da reinjagen würdest. Ich lade das PDF von Google runter. Name des Papers, Leerzeichen Filetype PDF, den Namen des Papers natürlich in Anführungszeichen und dann lade ich das PDF runter, lade das bei ChatGPT hoch und wie sieht der Prompt aus?",
+      "start": 3208518,
+      "end": 3225690,
+      "confidence": 0.8912043137254901,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Ja, also ihr habt da sehr viel rum getestet und rum probiert und ihr habt das ja einen komplexen Prompt, der da am Schluss raus geputzelt ist aus meinen ganzen Experimenten. Du nimmst das PDF, lädst es hoch, also hängst es an an dem prompt und dann kommt der sehr komplexe prompt an die jetzt musst du mitschreiben, weil der ist lang. Der heißt summarize.",
+      "start": 3225990,
+      "end": 3247518,
+      "confidence": 0.8818606153846157,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Das war's, ohne dass das war's ja.",
+      "start": 3247694,
+      "end": 3250970,
+      "confidence": 0.6355271428571428,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Ein Wort summarize PDF dazu und du bekommst eine Zusammenfassung. Und das Schöne ist, du kannst dann in die Tiefe fragen. Das heißt, wenn dann irgendwelche Details rauskommen, kannst du mir, kannst du sagen okay, erklär mir das, erklär mir den Teil. Ist es so oder so? Das heißt, du kannst Fragen stellen und das funktioniert erstaunlich gut mit Papers. Und das ist zwar kein Berieseln, das ist ein interaktiv. Das wäre der next step nach dem Berieseln auf YouTube, dass du MitGPT wirklich ein Paper gemeinsam durchgehst und ChatGPT kann dir da wirklich viel helfen.",
+      "start": 3251990,
+      "end": 3281500,
+      "confidence": 0.9222682291666664,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Hast du schon mal versucht, dass ChatGPT, die auf Basis eines Papers den Algorithmus dann mal in Python schreibt oder ähnliches?",
+      "start": 3281580,
+      "end": 3289720,
+      "confidence": 0.8520904761904765,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Habe ich noch nie probiert, aber müsste eigentlich ganz gut funktionieren. Das kommt dann immer darauf an, wie gut ist ChatGPT im Verstehen von diesen Formeln, weil da ist ja teilweise auch einfach so hochgestellt oder tiefer gestellte Zahlen und solche Dinge, die dann unter Umständen vielleicht schwieriger zu verstehen sind. Müsste man mal probieren, aber ich könnte mir vorstellen, dass das ganz gut funktioniert eigentlich.",
+      "start": 3289880,
+      "end": 3311540,
+      "confidence": 0.9377662121212127,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Wolfgang, geile Folge. Also wenn man diese Folge nicht ganz hören möchte und du bist vom Anfang direkt zum Ende gesprungen, hier das Too long didn't read. Wähle ein Paper, was nach dem Titel interessant klingt, lies dir den Abstract durch, wenn der immer noch interessant ist, lies dir die Conclusion durch, wenn das immer noch interessant ist, lies dir die Results durch und in der Regel lässt du einfach alles weg. Es sei denn, du möchtest natürlich das Fleisch oder den Tofu haben, wie Wolfgang das beschreibt für die ganzen Vegetarier, dann liest du natürlich auch den, dann liest du natürlich auch den ganzen Content auch durch.",
+      "start": 3311860,
+      "end": 3346376,
+      "confidence": 0.9359793518518514,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Es ist einfach wichtiger, selbst zu filtern, meiner Meinung nach und nicht nur die Medien filtern zu lassen, weil da halt ganz oft Clickbait rauskommt und darum ist es glaube ich auch wichtig, selber verstehen zu können, zumindest was da dahinter steckt.",
+      "start": 3346488,
+      "end": 3360952,
+      "confidence": 0.9213180952380954,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Vorletzte Frage, Herr Dr. Wolfgang, wie viel Paper hast du veröffentlicht?",
+      "start": 3361016,
+      "end": 3364380,
+      "confidence": 0.7993063636363638,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Puh, keine Ahnung, ehrlich gesagt. 1520? Keine Ahnung sowas, aber die wurden auch.",
+      "start": 3364520,
+      "end": 3369308,
+      "confidence": 0.8790169230769233,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Alle ordentlich peer reviewed und co.",
+      "start": 3369324,
+      "end": 3370820,
+      "confidence": 0.8864816666666666,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Natürlich.",
+      "start": 3370900,
+      "end": 3371508,
+      "confidence": 0.55712,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Wundervoll. Letzte Frage, wenn ich als Hörerin jetzt nicht so viel auf Twitter unterwegs bin, auf Mastodon oder ganz vielen LinkedIn System Design Influencern, folge wieder Andi Content Creator bitte.",
+      "start": 3371604,
+      "end": 3385228,
+      "confidence": 0.8384083333333332,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Content Creator, Influencer ist die Erfindung vom Marketing, um was zu verkaufen.",
+      "start": 3385324,
+      "end": 3389132,
+      "confidence": 0.8216433333333333,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Auch eine gute Sache. Wie steige ich denn ein? Wo finde ich denn Paper zu meiner Bubble? Z.B. ui, UX Design oder Produktmanagement, wenn es da Paper gibt, wahrscheinlich irgendwie.",
+      "start": 3389236,
+      "end": 3401418,
+      "confidence": 0.879038,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Ja, wenn man die Suchmaschine verwendet, braucht man natürlich schon gewisses Suchbegriff. Das ist teilweise schwierig. Was ich empfehlen würde, einfach such dir eine Konferenz raus, die deinen Bereich abdeckt. Also es gibt so was wie die Rexis für Recommender Systems. Es gibt die Special Interest Groups von der SEM, das sind die SICK ER für Information Retrieval. SICK, keine Ahnung, gibt es ganz viele sick Gruppen, kann ich mir gerne verlinken. Und da gibt es garantiert eine Konferenz, die deinen Bereich abdeckt. Also klassische Softwareentwicklung, User Interfaces, Human Computer Interaction, HCI hat ganz viel mit UX zu tun. Also da einfach eine gute Konferenz rauszusuchen. Es gibt da auch Verzeichnisse von so Konferenzen, aber wie gesagt, am besten geht man ja, ich sag's Ungarn, aber am ersten über die Verlage. Was gibt es für gute IEEE Konferenzen, Springer Konferenzen, ACM Konferenzen. Und da kann man dann einfach mal reinschauen. Die finden ja jährlich statt, üblicherweise. Da gibt es eine Liste Accepted Papers und dann kann man sich die Liste einfach mal durchschauen, die Titel durchschauen, Workshops durchschauen. Wie gesagt, Workshops sind eher praxisrelevanter Industrial Track, wenn es einen gibt, so kann man einfach die Liste durchgehend und kann sich so up to date halten. Einfach da mal durchscrollen und schauen, wenn einem was interessiert, liest man das Paper zusammen mit ChatGPT durch und sonst hat man wenigstens so die Titel, was ist gerade aktuell und was bewegt sich so in der Wissenschafts Community und wo finde.",
+      "start": 3401554,
+      "end": 3487458,
+      "confidence": 0.8978976518218617,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Ich diese wissenschaftlichen Konferenzen? Weil das, was du jetzt sagst, das ist ja jetzt nicht so wie die Java Land oder ähnliches.",
+      "start": 3487474,
+      "end": 3493306,
+      "confidence": 0.9593609090909093,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Wie gesagt, über die Verlage, IEEE, Springer, ACM, Special Interest Interest Groups von der ACM, da findet man eigentlich zu zu jedem Bereich eine gute Konferenz. Und sonst einfach mal suchen. Und ein Qualitätsmerkmal ist z.B. wenn es die Konferenz eigentlich einfach schon das dreiigste Mal gibt, da steht dann immer dabei dreiigste Edition von dieser und jener Konferenz oder Workshop ist dasselbe. Dann weiß man schon mal, okay, wenn das bei Springer ist, zum dreiig mal stattfindet, kannst du dir sicher sein, ist eine gute Konzepte Konferenz. Sonst, was auch noch geht, wenn man sich gar nicht sicher ist, man kann mal die Acceptance Rate suchen, einfach die Konferenz eingeben, als Name in Google plus Acceptance Rate eingeben und wenn die Acceptance Rate grundsätzlich mal irgendwo announced wird und niedrig ist üblicherweise, weil sonst wird sie gar nicht announced, das heißt, wenn sie 20 % ist, nur 20 % aller Einreichungen werden überhaupt angenommen, dann weißt du, das ist eine gute Konferenz, weil alle wollen rein, ganz wenig werden angenommen.",
+      "start": 3493498,
+      "end": 3553494,
+      "confidence": 0.9096588888888884,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Wenn ihr euch jetzt enabled fühlt, auch mal euch an ein wissenschaftliches Paper zu trauen, lasst uns doch mal wissen, welches Paper, welches Paper ist euer Einstiegs Paper? Die Einstiegsdroge sozusagen. Denn ich würde mal interessieren, ob die Tipps von Wolfgang jetzt hier wirklich was bringen. Also erst das Abstract und dann spricht es zum Ende erst die Conclusion und dann die Ergebnisse. Und ob ihr dann so vielleicht sogar den Spaß am Paper lesen findet. Ich weiß es nicht. Lasst es uns wissen, entweder per E Mail an stehtisch engineering kiosk dev. Findet ihr unten in den Show Notes, aber auch natürlich auf jedem Social Media Kanal. Wir sind auf LinkedIn, da könnt ihr zu dieser Episode kommentieren. Twitter, Mastodon oder kommt doch einfach mal in unsere Discord Community. Einladungslink findet ihr ebenfalls in den Shownotes. Und was mich natürlich ganz besonders freuen würde, liest doch mal ein Paper, wo ihr Bock drauf habt und schmeißt danach sofort mal dann im Workbody oder ein, zwei, drei Leuten aus seinem Team einen Kalender invite rein und bring denen das noch mal bei. 15 Minuten, 20 Minuten quatschst du nur darüber, was du in diesem Paper gelernt hast. Wenn ich eine coole Sache, wenn du anderen Leuten ein bisschen mehr Grundlagenwissen beibringst.",
+      "start": 3553582,
+      "end": 3624220,
+      "confidence": 0.8504490521327024,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Und keine Angst vor Papers. Es klingt komplizierter als es oft ist.",
+      "start": 3624340,
+      "end": 3628404,
+      "confidence": 0.93687,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Aber Achtung, nicht wegnicken, ne? Passiert mir auch öfters. Passiert glaube ich jedem.",
+      "start": 3628492,
+      "end": 3633484,
+      "confidence": 0.8640023076923077,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Ja, für dich mit einer Aufmerksamkeit Spanne von eineinhalb Minuten ist es natürlich schwierig, Andi. Für die vielleicht eher eher YouTube Reels.",
+      "start": 3633572,
+      "end": 3640666,
+      "confidence": 0.8255349999999999,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "YouTube Reels, da kommt der Boomer. Nennt man shorts.",
+      "start": 3640818,
+      "end": 3644390,
+      "confidence": 0.8069388888888889,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "So whatever. Bin ja kein Influencer, bin ja Content Creator, Akademiker.",
+      "start": 3644890,
+      "end": 3650546,
+      "confidence": 0.8882645454545454,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Das war's von uns. Viel Spaß beim Paper lesen. Bis später, Bay. Ciao.",
+      "start": 3650658,
+      "end": 3654450,
+      "confidence": 0.8140130769230769,
+      "speaker": "A",
+      "channel": null
+    }
+  ],
+  "confidence": 0.911411734608605,
+  "audio_duration": 3616,
+  "webhook_status_code": null,
+  "webhook_auth": false,
+  "summary": null,
+  "auto_highlights_result": null,
+  "content_safety_labels": null,
+  "chapters": null,
+  "sentiment_analysis_results": null,
+  "entities": null
+}
