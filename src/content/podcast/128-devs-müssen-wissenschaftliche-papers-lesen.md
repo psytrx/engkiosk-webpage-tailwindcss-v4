@@ -90,8 +90,8 @@ tags:
 - Kommunikation
 - Software Engineering
 title: "#128 Devs m\xFCssen wissenschaftliche Papers lesen!?"
-transcript_raw: ''
-transcript_slim: ''
+transcript_raw: src/data/transcripts/128-transcript.zip
+transcript_slim: src/data/transcripts/128-transcript-slim.json
 youtube: https://www.youtube.com/watch?v=11VMiS9Ikr8
 
 ---
