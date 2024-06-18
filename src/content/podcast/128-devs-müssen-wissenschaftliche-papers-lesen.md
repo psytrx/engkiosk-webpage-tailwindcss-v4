@@ -1,6 +1,6 @@
 ---
 advertiser: ''
-amazon_music: ''
+amazon_music: https://music.amazon.com/podcasts/c35a09fe-4116-4e04-8f68-77d61b112e46/episodes/86a38592-b0c3-4ec6-88a1-690ffc057f43/engineering-kiosk-128-devs-m%C3%BCssen-wissenschaftliche-papers-lesen
 apple_podcasts: https://podcasts.apple.com/us/podcast/128-devs-m%C3%BCssen-wissenschaftliche-papers-lesen/id1603082924?i=1000659348816&uo=4
 audio: https://audio1.redcircle.com/episodes/fd1848a8-e76c-4be3-98e6-9f569ffe520a/stream.mp3
 chapter:
