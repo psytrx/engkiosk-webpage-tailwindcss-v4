@@ -85,7 +85,10 @@ speaker:
   transcriptLetter: B
   website: https://wolfgang.gassler.org/
 spotify: https://open.spotify.com/episode/2BWpNKXQK22uOkP01tKbvf
-tags: []
+tags:
+- Knowledge Sharing
+- Kommunikation
+- Software Engineering
 title: "#128 Devs m\xFCssen wissenschaftliche Papers lesen!?"
 transcript_raw: ''
 transcript_slim: ''
