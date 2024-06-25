@@ -1,5 +1,5 @@
 ---
-advertiser: 'WeAreDevelopers'
+advertiser: WeAreDevelopers
 amazon_music: https://music.amazon.com/podcasts/c35a09fe-4116-4e04-8f68-77d61b112e46/episodes/a5efa38c-2148-4084-a7ff-b98ea32307c2/engineering-kiosk-129-simplify-your-stack-files-statt-datenbanken
 apple_podcasts: https://podcasts.apple.com/us/podcast/129-simplify-your-stack-files-statt-datenbanken/id1603082924?i=1000660128961&uo=4
 audio: https://audio1.redcircle.com/episodes/9fb97445-5f2f-4bef-a962-5cc1cacbbb3b/stream.mp3
@@ -89,8 +89,8 @@ tags:
 - Software Engineering
 - Datenbanken
 title: '#129 Simplify Your Stack: Files statt Datenbanken!'
-transcript_raw: ''
-transcript_slim: ''
+transcript_raw: src/data/transcripts/129-transcript.zip
+transcript_slim: src/data/transcripts/129-transcript-slim.json
 youtube: https://www.youtube.com/watch?v=FVbvtm6ghuE
 
 ---
