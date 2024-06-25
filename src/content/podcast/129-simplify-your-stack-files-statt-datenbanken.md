@@ -73,7 +73,9 @@ image: ./129-simplify-your-stack-files-statt-datenbanken.jpg
 length_second: 3555
 pubDate: 2024-06-25 04:00:00+00:00
 rtlplus: ''
-six_user_needs: []
+six_user_needs:
+- Educate me
+- Give me perspective
 speaker:
 - name: Andy Grunwald
   transcriptLetter: A
