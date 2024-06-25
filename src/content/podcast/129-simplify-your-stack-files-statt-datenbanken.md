@@ -82,7 +82,10 @@ speaker:
   transcriptLetter: B
   website: https://wolfgang.gassler.org/
 spotify: https://open.spotify.com/episode/4lxqDvbc7ktjk26gozjllW
-tags: []
+tags:
+- Backend
+- Software Engineering
+- Datenbanken
 title: '#129 Simplify Your Stack: Files statt Datenbanken!'
 transcript_raw: ''
 transcript_slim: ''
