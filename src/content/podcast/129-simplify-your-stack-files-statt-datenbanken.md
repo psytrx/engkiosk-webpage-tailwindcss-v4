@@ -67,7 +67,7 @@ description: "Vergiss Datenbanken - Benutze mehr Files! Warum denkst du eigentli
   Buy us a coffee: https://engineeringkiosk.dev/kaffeeEmail: stehtisch@engineeringkiosk.devLinkedIn:\
   \ https://www.linkedin.com/company/engineering-kiosk/Mastodon: https://podcasts.social/@engkioskTwitter:\
   \ https://twitter.com/EngKiosk"
-google_podcasts: ''
+google_podcasts: https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5yZWRjaXJjbGUuY29tLzBlY2ZkZmQ3LWZkYTEtNGMzZC05NTE1LTQ3NjcyN2Y5ZGY1ZQ/episode/OWQzOTZhNmMtZGZjMS00NGE4LWJjOWEtNjFkNTNjNzBlNWVi?sa=X&ved=0CAUQkfYCahcKEwjwr4G5j_aGAxUAAAAAHQAAAAAQAQ
 headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts||feedback::Feedback
 image: ./129-simplify-your-stack-files-statt-datenbanken.jpg
 length_second: 3555
