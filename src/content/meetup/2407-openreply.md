@@ -7,8 +7,8 @@ location:
   logo: 'openreply.svg'
 talks:
   - avatar: 'avatar.png'
-    name: 'Florian Köllich'
-    title: 'Laravel'
+    name: ''
+    title: 'tba'
     description: 'details following soon…'
     bio: ''
   - avatar: '2405-nico.png'
