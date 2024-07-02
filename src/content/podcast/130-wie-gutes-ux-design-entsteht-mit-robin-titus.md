@@ -1,6 +1,6 @@
 ---
 advertiser: ''
-amazon_music: ''
+amazon_music: https://music.amazon.com/podcasts/c35a09fe-4116-4e04-8f68-77d61b112e46/episodes/7fdc12e4-69bd-42d9-bee0-c6d2c5f1b58e/engineering-kiosk-130-wie-gutes-ux-design-entsteht-mit-robin-titus
 apple_podcasts: https://podcasts.apple.com/us/podcast/130-wie-gutes-ux-design-entsteht-mit-robin-titus/id1603082924?i=1000660868723&uo=4
 audio: https://audio1.redcircle.com/episodes/7b67a829-b04b-4987-bb67-14c3ef8e7b0d/stream.mp3
 chapter:
