@@ -82,9 +82,14 @@ rtlplus: ''
 six_user_needs: []
 speaker:
 - name: Andy Grunwald
+  transcriptLetter: B
   website: https://andygrunwald.com/
 - name: Wolfi Gassler
+  transcriptLetter: A
   website: https://wolfgang.gassler.org/
+- name: Robin Titus
+  transcriptLetter: C
+  website: https://www.linkedin.com/in/robin-titus-product-design/
 spotify: https://open.spotify.com/episode/5kh0LjHverP2B1dBYfN3FO
 tags: []
 title: '#130 Wie gutes UX-Design entsteht mit Robin Titus'
