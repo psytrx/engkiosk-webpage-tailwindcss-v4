@@ -17,7 +17,6 @@ const podcastEpisodeCollection = defineCollection({
 			),
 			deezer: z.string(),
 			description: z.string(),
-			google_podcasts: z.string(),
 			headlines: z.string(),
 			image: image(),
 			length_second: z.number(),

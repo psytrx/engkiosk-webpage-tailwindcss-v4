@@ -33,7 +33,6 @@ from constants import (
     DEFAULT_SPEAKER,
     PODCAST_APPLE_URL,
     SPOTIFY_SHOW_ID,
-    PODCAST_GOOGLE_URL,
     DEEZER_PODCAST_ID,
     YOUTUBE_PLAYLIST_ID
 )
@@ -216,7 +215,6 @@ def sync_podcast_episodes(rss_feed, path_md_files, path_img_files, no_api_calls=
     # Check if we should run the API calls to external podcast platforms
     apple_podcast_content = {}
     spotify_episodes = []
-    google_podcast_content = ""
     deezer_episodes = []
     youtube_playlist_items = []
     if no_api_calls:
@@ -226,7 +224,6 @@ def sync_podcast_episodes(rss_feed, path_md_files, path_img_files, no_api_calls=
         logging.info("Requesting content from Podcast sites ...")
         apple_podcast_content = get_json_content_from_url(PODCAST_APPLE_URL)
         spotify_episodes = spotify_client.show_episodes(SPOTIFY_SHOW_ID, limit=50, offset=0, market="DE")
-        google_podcast_content = get_raw_content_from_url(PODCAST_GOOGLE_URL)
         youtube_playlist_response = youtube_client.playlistItems.list(parts="snippet", maxResults=50, playlist_id=YOUTUBE_PLAYLIST_ID)
         youtube_playlist_items = youtube_playlist_response.items
 
@@ -360,7 +357,6 @@ def sync_podcast_episodes(rss_feed, path_md_files, path_img_files, no_api_calls=
             'chapter': chapter,
             'deezer': get_episode_link_from_deezer(deezer_episodes, title),
             'description': description_short,
-            'google_podcasts': get_episode_link_from_google(google_podcast_content, title),
             'headlines': headline_info,
             'image': image_filename,
             'length_second': length_second,
@@ -380,7 +376,7 @@ def sync_podcast_episodes(rss_feed, path_md_files, path_img_files, no_api_calls=
         full_file_path = f'{path_md_files}/{filename}'
 
         # If the file exists, we want to read the frontmatter, extract
-        # the spotify, google podcasts, etc. links and write this to the
+        # the spotify, apple podcasts, etc. links and write this to the
         # new data.
         # Why? Because some of the Podcast player links are added manual.
         # The rest of the data (title, description, etc.) are parsed
@@ -396,7 +392,6 @@ def sync_podcast_episodes(rss_feed, path_md_files, path_img_files, no_api_calls=
                     'amazon_music',
                     'apple_podcasts',
                     'deezer',
-                    'google_podcasts',
                     'length_second',
                     'rtlplus',
                     'six_user_needs',
@@ -636,39 +631,6 @@ def get_episode_link_from_deezer(episodes, title: str) -> str:
     return u
 
 
-def get_episode_link_from_google(content, title: str) -> str:
-    """
-    Google Podcast does not offer an API, xml feed or anything like this.
-
-    Hence we do typical HTML link scraping.
-    There is no error checking at all, because we want this function to
-    fail if there is anything changing.
-
-    If no title matches, it will return an empty string.
-    """
-    scheme = "https"
-    hostname = "podcasts.google.com"
-
-    soup = BeautifulSoup(content, features="html.parser")
-    items = soup.findAll('div', string = title)
-
-    u = ""
-    for item in items:
-        link = item.findParent("a").get('href')
-        o = urlparse(link)
-
-        # The links we get are relative like
-        #   ./feed/...
-        # We need absolute URLs.
-        o = o._replace(path=trim_prefix(o.path, "./"))
-        u = o._replace(scheme=scheme, netloc=hostname).geturl()
-
-        # First link is enough.
-        break
-
-    return u
-
-
 if __name__ == "__main__":
     # Argument and parameter parsing
     cli_parser = argparse.ArgumentParser(description='Automate new Podcast Episide parsing')
@@ -680,7 +642,7 @@ if __name__ == "__main__":
         nargs='?',
         choices=['sync', 'redirect'],
         help='Mode to execute. Supported: sync, redirect (default: %(default)s)')
-    cli_parser.add_argument("-n", "--no-api-calls", action="store_true", help='Avoids network calls to Platforms like Spotify, Google, ... (default: %(default)s)')
+    cli_parser.add_argument("-n", "--no-api-calls", action="store_true", help='Avoids network calls to Platforms like Spotify, Apple, ... (default: %(default)s)')
 
     args = cli_parser.parse_args()
 
