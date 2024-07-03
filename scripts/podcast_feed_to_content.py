@@ -12,7 +12,6 @@ import os
 from os.path import exists, isfile, join
 import logging
 import sys
-from urllib.parse import urlparse
 import pathlib
 
 from episode_finder import EpisodeFinder
@@ -38,7 +37,6 @@ from constants import (
 )
 
 # External libraries
-from bs4 import BeautifulSoup
 import frontmatter
 import spotipy
 from spotipy.oauth2 import SpotifyClientCredentials
