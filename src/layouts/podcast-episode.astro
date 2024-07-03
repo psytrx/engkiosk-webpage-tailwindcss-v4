@@ -330,7 +330,7 @@ const html = (await Astro.slots.render('default'))
 							</div>
 							<div class="w-full md:w-7/12 lg:w-8/12 xl:w-9/12 md:flex-1 px-4">
 								{
-									(frontmatter.spotify || frontmatter.apple_podcasts || frontmatter.google_podcasts) && (
+									(frontmatter.spotify || frontmatter.apple_podcasts) && (
 										<section class="mb-6 py-4">
 											<div class="mb-8 text-xl md:text-xl font-semibold text-coolGray-400 text-center">Diese Episode in deiner Podcast-App hören...</div>
 											<div class="container px-4 mx-auto">
@@ -348,14 +348,6 @@ const html = (await Astro.slots.render('default'))
 															<a class="flex items-center" href={frontmatter.spotify} title={`Engineering Kiosk ${frontmatter.title} auf Spotify`}>
 																<img class="w-12" src="/images/brands/spotify.svg" alt={`Engineering Kiosk ${frontmatter.title} auf Spotify`} />
 																<span class="text-lg m-2">Spotify</span>
-															</a>
-														</div>
-													)}
-													{frontmatter.google_podcasts && (
-														<div class="m-2">
-															<a class="flex items-center" href={frontmatter.google_podcasts} title={`Engineering Kiosk ${frontmatter.title} bei Google Podcasts`}>
-																<img class="w-12" src="/images/brands/google.svg" alt={`Engineering Kiosk ${frontmatter.title} auf Google Podcasts`} />
-																<span class="text-lg m-2">Google</span>
 															</a>
 														</div>
 													)}

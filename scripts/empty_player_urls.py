@@ -28,7 +28,6 @@ def find_empty_player_urls(path_md_files) -> int:
     for file_path, episode in episodes.items():
         keys_to_check = [
             'spotify',
-            'google_podcasts',
             'apple_podcasts',
             'amazon_music',
             'deezer',

@@ -164,15 +164,6 @@ if (nextMeetup && nextMeetup.date) {
 									)
 								}
 								{
-									episode.data.google_podcasts && (
-										<div class="m-4">
-											<a class="flex items-center" href={episode.data.google_podcasts} title={`Engineering Kiosk Episode ${episode.data.title} bei Google Podcasts`}>
-												<img class="w-12" src="/images/brands/google.svg" alt="Google Podcasts logo" title="Google Podcasts logo" />
-											</a>
-										</div>
-									)
-								}
-								{
 									episode.data.amazon_music && (
 										<div class="m-4">
 											<a class="flex items-center" href={episode.data.amazon_music} title={`Engineering Kiosk Episode ${episode.data.title} bei Amazon Music`}>
@@ -341,12 +332,6 @@ if (nextMeetup && nextMeetup.date) {
 							<a class="flex items-center" href={podcastInfo.platformLinks.spotify} title="Engineering Kiosk auf Spotify">
 								<img class="w-12" src="/images/brands/spotify.svg" alt="Engineering Kiosk bei Spotify" title="Engineering Kiosk bei Spotify" />
 								<span class="text-white text-lg m-2">Spotify</span>
-							</a>
-						</div>
-						<div class="m-4">
-							<a class="flex items-center" href={podcastInfo.platformLinks.googlePodcasts} title="Engineering Kiosk auf Google Podcasts">
-								<img class="w-12" src="/images/brands/google.svg" alt="Engineering Kiosk bei Google Podcasts" title="Engineering Kiosk bei Google Podcasts" />
-								<span class="text-white text-lg m-2">Google</span>
 							</a>
 						</div>
 						<div class="m-4">
