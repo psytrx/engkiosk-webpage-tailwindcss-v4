@@ -84,7 +84,11 @@ speaker:
   transcriptLetter: B
   website: https://www.linkedin.com/in/kloeckner/
 spotify: https://open.spotify.com/episode/5pz68zT7qhyzUOLgCbljXx
-tags: []
+tags:
+- Tech Kultur
+- Karriere
+- Gehalt
+- Interview
 title: "#131 Equity in Tech-Startups: Mehr als nur Gehalt mit Philipp \"Pip\" Kl\xF6\
   ckner"
 transcript_raw: ''
