@@ -75,9 +75,14 @@ rtlplus: ''
 six_user_needs: []
 speaker:
 - name: Andy Grunwald
+  transcriptLetter: A
   website: https://andygrunwald.com/
 - name: Wolfi Gassler
+  transcriptLetter: C
   website: https://wolfgang.gassler.org/
+- name: Philipp "Pip" Klöckner
+  transcriptLetter: B
+  website: https://www.linkedin.com/in/kloeckner/
 spotify: https://open.spotify.com/episode/5pz68zT7qhyzUOLgCbljXx
 tags: []
 title: "#131 Equity in Tech-Startups: Mehr als nur Gehalt mit Philipp \"Pip\" Kl\xF6\
