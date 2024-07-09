@@ -60,7 +60,6 @@ description: "Den richtigen Arbeitgeber und die richtige Firma finden: Eine Mamm
   \ auf Reddit zum Thema 1on1s und die Beantwortung der Frage, wie man gutes (People)\
   \ Leadership in neuen Firmen erkennt. Bonus: Was Andys Kegeltour mit seiner Jobsuche\
   \ zu tun hat und was ein Mottek ist."
-google_podcasts: https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5yZWRjaXJjbGUuY29tLzBlY2ZkZmQ3LWZkYTEtNGMzZC05NTE1LTQ3NjcyN2Y5ZGY1ZQ/episode/MmZjNzUwNTYtZDEwZC00OTdiLTk2MTMtNDQ3ODI3Zjk1Nzg2?sa=X&ved=0CAUQkfYCahcKEwi4xMSxj4L4AhUAAAAAHQAAAAAQNQ
 headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts
 image: ./11-die-suche-nach-dem-it-traumjob.jpg
 length_second: 3531

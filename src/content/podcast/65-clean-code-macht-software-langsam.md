@@ -50,7 +50,6 @@ description: "Zerst\xF6rt die Anwendung von Clean Code die Performance deiner Ap
   \ um was sich die Diskussion zwischen Casey Muratori und Uncle Bob dreht. Eine Art\
   \ \"Reaction-Podcast\", sozusagen.\_ Bonus: Was der heilige Gral der Teamentwicklung\
   \ ist.  Das schnelle Feedback zur Episode: \U0001F44D (top)  \U0001F44E (geht so)"
-google_podcasts: https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5yZWRjaXJjbGUuY29tLzBlY2ZkZmQ3LWZkYTEtNGMzZC05NTE1LTQ3NjcyN2Y5ZGY1ZQ/episode/YjBmOWE1M2QtNjQyMS00OWNhLWIwNDItYjk1N2MwZTAyNDU0?sa=X&ved=2ahUKEwiMuKihrY_-AhVtB1kFHZcbAhMQkfYCegQIARAF
 headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts||feedback-gerne-auch-als-voice-message::Feedback
   (gerne auch als Voice Message)
 image: ./65-clean-code-macht-software-langsam.jpg

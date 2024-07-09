@@ -43,7 +43,6 @@ description: "AI in der Software-Delivery: Unsere gr\xF6\xDFte M\xF6glichkeit od
   \ identifizieren? Dann schau doch mal unter https://engineeringkiosk.dev/iu1, wenn\
   \ du die Bildung von morgen gestalten willst. ********  Das schnelle Feedback zur\
   \ Episode: \U0001F44D (top)\_\U0001F44E (geht so)"
-google_podcasts: https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5yZWRjaXJjbGUuY29tLzBlY2ZkZmQ3LWZkYTEtNGMzZC05NTE1LTQ3NjcyN2Y5ZGY1ZQ/episode/OTIxYTI0MWEtMTJkYS00ZWU3LWFkOWUtZjc5ZDFhOWY2M2U0?sa=X&ved=2ahUKEwjE2Zz4l5GFAxVspokEHQKhBh0QkfYCegQIARAF
 headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts||feedback-gerne-auch-als-voice-message::Feedback
   (gerne auch als Voice Message)
 image: "./116-ki-unterst\xFCtzte-software-entwicklung-ein-reality-check-mit-birgitta-b\xF6\

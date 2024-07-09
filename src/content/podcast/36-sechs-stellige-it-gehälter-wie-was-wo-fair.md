@@ -45,7 +45,6 @@ description: "Geh\xE4lter als Software-Engineer: Wie sind diese aufgebaut? IT-Ge
   \ mit der Entwicklung in der Industrie nicht mithalten k\xF6nnen? Bonus: Wolfgang\
   \ der Cloud-Hater, ob Deutschland Single-Feindlich ist und was der VW Golf und das\
   \ Marketing der Cloud damit zu tun haben."
-google_podcasts: https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5yZWRjaXJjbGUuY29tLzBlY2ZkZmQ3LWZkYTEtNGMzZC05NTE1LTQ3NjcyN2Y5ZGY1ZQ/episode/ODI0YWMyNjYtYmI4MS00NGJiLWJkNmItZGVjN2IzZGU0NDUz?sa=X&ved=2ahUKEwiC5vu3g5H6AhV2kI4IHSKiDQcQkfYCegQIARAF
 headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts||feedback-gerne-auch-als-voice-message::Feedback
   (gerne auch als Voice Message)
 image: "./36-sechs-stellige-it-geh\xE4lter-wie-was-wo-fair.jpg"

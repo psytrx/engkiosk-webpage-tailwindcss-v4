@@ -73,7 +73,6 @@ description: "Wie technisch sollten UI und UX-Engineers eigentlich sein? Dass gu
   \ a coffee: https://www.buymeacoffee.com/engineeringkioskEmail: stehtisch@engineeringkiosk.devLinkedIn:\
   \ https://www.linkedin.com/company/engineering-kiosk/Mastodon: https://podcasts.social/@engkioskTwitter:\
   \ https://twitter.com/EngKiosk"
-google_podcasts: ''
 headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts||feedback::Feedback
 image: ./130-wie-gutes-ux-design-entsteht-mit-robin-titus.jpg
 length_second: 3796

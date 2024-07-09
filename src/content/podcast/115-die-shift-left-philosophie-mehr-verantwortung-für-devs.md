@@ -47,7 +47,6 @@ description: "Den Softwareentwicklungs-Prozess beschleunigen, indem mehr Arbeit 
   \ F\xF6rderprogramm Media Tech Lab Bewirb dich jetzt und erhalte bis zu 50.000\u20AC\
   \ F\xF6rdersumme f\xFCr dein Open-Source Projekt https://engineeringkiosk.dev/medialab\
   \ ****  Das schnelle Feedback zur Episode: \U0001F44D (top)\_\U0001F44E (geht so)"
-google_podcasts: https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5yZWRjaXJjbGUuY29tLzBlY2ZkZmQ3LWZkYTEtNGMzZC05NTE1LTQ3NjcyN2Y5ZGY1ZQ/episode/NDRiZTY3MzctZmQ0ZS00NjBhLThkNDYtZWQwYWVlOGNhZWEy?sa=X&ved=2ahUKEwj_5eiSy_-EAxUKpokEHVhuA6UQkfYCegQIARAF
 headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts||feedback-gerne-auch-als-voice-message::Feedback
   (gerne auch als Voice Message)
 image: "./115-die-shift-left-philosophie-mehr-verantwortung-f\xFCr-devs.jpg"

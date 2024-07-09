@@ -61,7 +61,6 @@ description: "Ziel-Definitionen und Mitarbeiter-Metriken: Sinnvoll oder totaler 
   \ aus dem Scrum Framework mit OKRs zu tun haben und noch vieles mehr. Bonus: Wieso\
   \ \xD6sterreicher Podcasts anschauen k\xF6nnen und was das Fortuna D\xFCsseldorf\
   \ und das Sams mit der ganzen Sache zu tun hat."
-google_podcasts: https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5yZWRjaXJjbGUuY29tLzBlY2ZkZmQ3LWZkYTEtNGMzZC05NTE1LTQ3NjcyN2Y5ZGY1ZQ/episode/YjU0NzFhNTAtYzRhMS00ZjZmLTk1NDQtMTBmMDUyYTFjYzk1?sa=X&ved=0CAUQkfYCahcKEwi4xMSxj4L4AhUAAAAAHQAAAAAQNQ
 headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts
 image: "./18-ziele-und-performance-metriken-f\xFCr-teams-und-mich-selbst.jpg"
 length_second: 4248

@@ -49,7 +49,6 @@ description: "Was haben Lexer, Parser und Counter-Strike gemeinsam? Richtig! Ein
   \ Geschichte voller Over-Engineering, Open Source, Spa\xDF und einem Job-Angebot.\
   \ Bonus: Wie Wolfgang nur ans cheaten denkt, was autoexec mit Maustreibern zu tun\
   \ hat und was Landmaschinen auf YouTube mit Rabbitholes zu tun haben."
-google_podcasts: https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5yZWRjaXJjbGUuY29tLzBlY2ZkZmQ3LWZkYTEtNGMzZC05NTE1LTQ3NjcyN2Y5ZGY1ZQ/episode/NTQwYWZkNGYtZGU5Yy00NTIzLWJlNjItZjE0ZDEyZTI0Mjdk?sa=X&ved=2ahUKEwierqGd0vr6AhVpFmIAHU0WCGYQkfYCegQIARAF
 headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts||feedback-gerne-auch-als-voice-message::Feedback
   (gerne auch als Voice Message)
 image: ./42-lexer-parser-und-open-source-in-counterstrike.jpg

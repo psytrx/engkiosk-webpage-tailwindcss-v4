@@ -50,7 +50,6 @@ description: "Zwei Engineering Manager \xFCber Side Projects: Wie diese den Recr
   \ negativen Seiten Side Projects haben k\xF6nnen, ob ein Hund auch ein eigenes Side\
   \ Project ist und warum man nicht seinen eigenen Mailserver betreiben sollte. Bonus:\
   \ Der Unterschied zwischen Schnacken und Schnackseln"
-google_podcasts: https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5yZWRjaXJjbGUuY29tLzBlY2ZkZmQ3LWZkYTEtNGMzZC05NTE1LTQ3NjcyN2Y5ZGY1ZQ/episode/NTA2NGE1MTMtOWNlMC00NzNlLWEyN2ItOWY5NDY3ODkwNGQw?sa=X&ved=0CAUQkfYCahcKEwi4xMSxj4L4AhUAAAAAHQAAAAAQNQ
 headlines: "sprungmarken::Sprungmarken||erwahnte-personen::Erw\xE4hnte Personen||hosts::Hosts"
 image: "./01-side-projects-fluch-oder-segen-f\xFCr-die-karriere.jpg"
 length_second: 2782

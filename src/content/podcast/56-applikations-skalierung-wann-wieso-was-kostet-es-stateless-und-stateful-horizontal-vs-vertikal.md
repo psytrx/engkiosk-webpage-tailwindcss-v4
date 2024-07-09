@@ -44,7 +44,6 @@ description: "Die App muss skalieren. Das kann doch nicht so schwer sein, oder? 
   \ m\xFCssen erf\xFCllt werden, damit das ganze erfolgreich wird? Bonus: Warum Andy\
   \ eine M\xE4rchenstimme hat und warum wir Milchm\xE4dchenrechnung nicht mehr sagen\
   \ sollten."
-google_podcasts: https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5yZWRjaXJjbGUuY29tLzBlY2ZkZmQ3LWZkYTEtNGMzZC05NTE1LTQ3NjcyN2Y5ZGY1ZQ/episode/ZjRlOWVkN2MtNTMzOC00MGZkLWE0YjItMDQwZTcyNDA3OTky?sa=X&ved=2ahUKEwjnsJ7JovH8AhVdI2IAHVs1DHkQkfYCegQIARAF
 headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts||feedback-gerne-auch-als-voice-message::Feedback
   (gerne auch als Voice Message)
 image: ./56-applikations-skalierung-wann-wieso-was-kostet-es-stateless-und-stateful-horizontal-vs-vertikal.jpg

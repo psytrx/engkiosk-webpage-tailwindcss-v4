@@ -61,7 +61,6 @@ description: "Was ist eigentlich Over-Engineering? Und wann ist es einfach nur g
   \ dar\xFCber, wann der Drang nach dem perfekten Source-Code Overenegineering ist\
   \ und warum es in der akademischen Welt nur dreckig programmiert wird. Bonus: Warum\
   \ Wolfgang seine Kletterschuhe nach Tschechien sendet"
-google_podcasts: https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5yZWRjaXJjbGUuY29tLzBlY2ZkZmQ3LWZkYTEtNGMzZC05NTE1LTQ3NjcyN2Y5ZGY1ZQ/episode/YzI4MzgwODQtNDNlMy00Y2I2LTkwMTMtYTQ4MDQyOWI4NTQ3?sa=X&ved=0CAUQkfYCahcKEwi4xMSxj4L4AhUAAAAAHQAAAAAQNQ
 headlines: sprungmarken::Sprungmarken||artikel::Artikel||konzepte::Konzepte||projekte::Projekte
 image: ./03-over-engineering-das-werkzeug-des-teufels.jpg
 length_second: 3079

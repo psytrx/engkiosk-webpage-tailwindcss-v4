@@ -50,7 +50,6 @@ description: "Psychologie, Team-Dynamiken und hochperformante Teams: Zuf\xE4llig
   \ \xDCber dieses Thema sprechen wir in dieser Episode. Viel Spa\xDF. Bonus: Was\
   \ Puppenspieler mit Leadership zu tun haben, warum Kaiserschmarrn immer noch ein\
   \ Thema ist und wieso das Currywurst-Museum + Bud Spencer-Museum eine Rolle spielt."
-google_podcasts: https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5yZWRjaXJjbGUuY29tLzBlY2ZkZmQ3LWZkYTEtNGMzZC05NTE1LTQ3NjcyN2Y5ZGY1ZQ/episode/MDk3NTFlNTUtZmI2Zi00ZjdiLTg5YjAtMjRkMWFlOTJiN2Ey?sa=X&ved=2ahUKEwi2zcDi9p37AhXCPlkFHcmSARYQkfYCegQIARAF
 headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts||feedback-gerne-auch-als-voice-message::Feedback
   (gerne auch als Voice Message)
 image: ./44-der-weg-zum-hochperformanten-team.jpg

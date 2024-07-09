@@ -58,7 +58,6 @@ description: "Der Flow, der Tunnel, die Zone - Der Zustand nach dem viele Softwa
   \ Das und noch viel mehr besprechen wir in dieser Episode. Bonus: Der Grund warum\
   \ wir beim Duschen immer zu den besten Gedanken kommen.  Das schnelle Feedback zur\
   \ Episode: \U0001F44D (top)  \U0001F44E (geht so)"
-google_podcasts: https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5yZWRjaXJjbGUuY29tLzBlY2ZkZmQ3LWZkYTEtNGMzZC05NTE1LTQ3NjcyN2Y5ZGY1ZQ/episode/ZmJiYTE0Y2MtOTMxNi00MjZiLWI3NGUtMTUwMTcwNTk0NDg3?sa=X&ved=2ahUKEwi3iOm6tsT-AhVhrmoFHbGtA_QQkfYCegQIARAF
 headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts||feedback-gerne-auch-als-voice-message::Feedback
   (gerne auch als Voice Message)
 image: ./68-im-flow-und-deepwork-mit-kirill-sivy.jpg

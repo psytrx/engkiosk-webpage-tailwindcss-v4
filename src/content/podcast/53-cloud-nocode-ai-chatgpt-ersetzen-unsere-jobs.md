@@ -30,7 +30,6 @@ description: "Werden Software-Engineers sich selbst durch neue Entwicklungen arb
   \ die Realit\xE4t aussieht, ob die Thesen wahr sind bzw. wahr werden oder ob doch\
   \ alles beim alten bleibt. Bonus: Warum Wolfgang ein Fan von Holz-Clogs ist und\
   \ was Plasmaschneider in der Schmiede zu suchen haben."
-google_podcasts: https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5yZWRjaXJjbGUuY29tLzBlY2ZkZmQ3LWZkYTEtNGMzZC05NTE1LTQ3NjcyN2Y5ZGY1ZQ/episode/ZjU0M2JiMTYtMDExOS00OWU3LTk5YzctZTBiMjUwMDRjZjZl?sa=X&ved=2ahUKEwjYiJHrtrz8AhXwn3IEHTZ-B_AQkfYCegQIARAF
 headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts||feedback-gerne-auch-als-voice-message::Feedback
   (gerne auch als Voice Message)
 image: ./53-cloud-nocode-ai-chatgpt-ersetzen-unsere-jobs.jpg

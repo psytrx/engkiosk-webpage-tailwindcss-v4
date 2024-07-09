@@ -33,7 +33,6 @@ description: "Deployst du auch Freitags und w\xE4hrend Black-Frida und /Cyber Mo
   \ dieser Episode. Bonus: Wenn Software-Engineers durch Code-Freezes an ihrem Job\
   \ gehindert werden.  Das schnelle Feedback zur Episode: \U0001F44D (top)\_\U0001F44E\
   \ (geht so)"
-google_podcasts: https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5yZWRjaXJjbGUuY29tLzBlY2ZkZmQ3LWZkYTEtNGMzZC05NTE1LTQ3NjcyN2Y5ZGY1ZQ/episode/Yjk4ZjM3OTEtMmY0OC00NTY1LTgxOWEtNTgwMjEwYTI1MWZi?sa=X&ved=2ahUKEwiC897I_JWEAxWZMmIAHbKmCiEQkfYCegQIARAF
 headlines: sprungmarken::Sprungmarken||hosts::Hosts||feedback-gerne-auch-als-voice-message::Feedback
   (gerne auch als Voice Message)
 image: ./109-freeze-warum-dein-code-manchmal-eine-pause-braucht.jpg

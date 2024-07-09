@@ -70,7 +70,6 @@ description: "Kommentare im Quellcode und Git Commit Messages - Liest die \xFCbe
   \ mit der Git Branch-Visualisierung zu tun hat, kl\xE4ren Wolfgang und Andy in dieser\
   \ Episode vom Engineering Kiosk. Bonus: Warum Andy einen neuen Podcast-Partner sucht\
   \ und Wolfgang lieber seinen Code angreift, anstatt Ihn zu entwickeln."
-google_podcasts: https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5yZWRjaXJjbGUuY29tLzBlY2ZkZmQ3LWZkYTEtNGMzZC05NTE1LTQ3NjcyN2Y5ZGY1ZQ/episode/M2NhMGI4OWMtNzU0NS00MDNkLTg4NWQtZTk5ODFhNDYyYTll?sa=X&ved=0CAUQkfYCahcKEwi4xMSxj4L4AhUAAAAAHQAAAAAQNQ
 headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts
 image: ./15-source-code-kommentare-git-commits-messages-merge-commits-und-branch-visualisierungs-kunst.jpg
 length_second: 3904

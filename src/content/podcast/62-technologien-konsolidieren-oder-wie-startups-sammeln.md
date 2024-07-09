@@ -49,7 +49,6 @@ description: "Was ist der richtige Ansatz? Ein Stack f\xFCr die ganze Firma oder
   \ Wird in Innsbruch alles immer neu entwickelt und ob das Spagetti Eis nur in NRW\
   \ bekannt ist.  Das schnelle Feedback zur Episode: \U0001F44D (top)  \U0001F44E\
   \ (geht so)"
-google_podcasts: https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5yZWRjaXJjbGUuY29tLzBlY2ZkZmQ3LWZkYTEtNGMzZC05NTE1LTQ3NjcyN2Y5ZGY1ZQ/episode/MDUzMDAxOWEtZWFlNS00OGQ2LWJjNzQtNjMyZjRhMTU2Y2Ex?sa=X&ved=2ahUKEwiEuPeMgdv9AhX4GVkFHcxFB90QkfYCegQIARAF
 headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts||feedback-gerne-auch-als-voice-message::Feedback
   (gerne auch als Voice Message)
 image: ./62-technologien-konsolidieren-oder-wie-startups-sammeln.jpg

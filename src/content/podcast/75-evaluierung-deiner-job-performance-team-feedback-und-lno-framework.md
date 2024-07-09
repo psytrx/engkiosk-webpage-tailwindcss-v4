@@ -55,7 +55,6 @@ description: "Woher wei\xDFt du eigentlich, ob du einen guten Job machst? Wie er
   \ Ob CV Driven Development was schlechtes ist und ob \"Da kann man nicht meckern\"\
   \ das Lob der Deutschen ist.  Das schnelle Feedback zur Episode: \U0001F44D (top)\
   \  \U0001F44E (geht so)"
-google_podcasts: https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5yZWRjaXJjbGUuY29tLzBlY2ZkZmQ3LWZkYTEtNGMzZC05NTE1LTQ3NjcyN2Y5ZGY1ZQ/episode/OGEwOTg3NjAtOTA4MS00NTg2LTlmOWEtZTZkOTRhOWE4ZDJj?sa=X&ved=2ahUKEwi5z5T90b__AhUrElkFHZ4qBV0QkfYCegQIARAF
 headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts||feedback-gerne-auch-als-voice-message::Feedback
   (gerne auch als Voice Message)
 image: ./75-evaluierung-deiner-job-performance-team-feedback-und-lno-framework.jpg

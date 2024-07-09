@@ -49,7 +49,6 @@ description: "Wann ist die Cloud das richtige f\xFCr dich und deine Applikation?
   ber eine Migration aus der Cloud von 37Signal's Produkt \"Hey.com\". Bonus: Was\
   \ der Produktlebenszyklus vom VW Golf mit der Cloud zu tun hat und warum ein Raid\
   \ 1 kein Backup ist."
-google_podcasts: https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5yZWRjaXJjbGUuY29tLzBlY2ZkZmQ3LWZkYTEtNGMzZC05NTE1LTQ3NjcyN2Y5ZGY1ZQ/episode/NTVhNjNjMzMtMzgzOS00ZGFhLWFiNjQtM2E1OTgzZDdjMGVm?sa=X&ved=2ahUKEwi8pdD3moz7AhUdrGoFHeTZB0sQkfYCegQIARAF
 headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts||feedback-gerne-auch-als-voice-message::Feedback
   (gerne auch als Voice Message)
 image: ./43-cloud-vs-on-premise-die-entscheidungshilfe.jpg

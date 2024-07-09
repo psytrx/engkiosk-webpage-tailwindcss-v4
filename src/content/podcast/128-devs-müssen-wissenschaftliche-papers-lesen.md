@@ -70,7 +70,6 @@ description: "Wie werden eigentlich wissenschaftliche Paper richtig gelesen? Du 
   Buy us a coffee: https://www.buymeacoffee.com/engineeringkioskEmail: stehtisch@engineeringkiosk.devLinkedIn:\
   \ https://www.linkedin.com/company/engineering-kiosk/Mastodon: https://podcasts.social/@engkioskTwitter:\
   \ https://twitter.com/EngKiosk"
-google_podcasts: https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5yZWRjaXJjbGUuY29tLzBlY2ZkZmQ3LWZkYTEtNGMzZC05NTE1LTQ3NjcyN2Y5ZGY1ZQ/episode/MTBiOTJmMjgtMjEyNi00OGE5LWI0MjYtOGY3ZDVkZmY1ZGVj?sa=X&ved=0CAUQkfYCahcKEwiootK5wuSGAxUAAAAAHQAAAAAQAQ
 headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts||feedback::Feedback
 image: "./128-devs-m\xFCssen-wissenschaftliche-papers-lesen.jpg"
 length_second: 3662

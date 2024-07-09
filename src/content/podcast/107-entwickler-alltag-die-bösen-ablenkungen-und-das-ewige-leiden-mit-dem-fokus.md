@@ -32,7 +32,6 @@ description: "Fokus-Zeit f\xFCr Software-Engineers Software-Engineers und andere
   \ um? Bonus: Dies ist kein theoretisches Problem, sondern eine Frage aus unserer\
   \ Community!  Das schnelle Feedback zur Episode: \U0001F44D (top)\_\U0001F44E (geht\
   \ so)"
-google_podcasts: https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5yZWRjaXJjbGUuY29tLzBlY2ZkZmQ3LWZkYTEtNGMzZC05NTE1LTQ3NjcyN2Y5ZGY1ZQ/episode/ZTVhOTNhYWYtZjBlMi00MTBkLTgzMzEtODhkYThhYTY2ODEw?sa=X&ved=2ahUKEwj7mcf64vKDAxVLMmIAHerrDGUQkfYCegQIARAF
 headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts||feedback-gerne-auch-als-voice-message::Feedback
   (gerne auch als Voice Message)
 image: "./107-entwickler-alltag-die-b\xF6sen-ablenkungen-und-das-ewige-leiden-mit-dem-fokus.jpg"

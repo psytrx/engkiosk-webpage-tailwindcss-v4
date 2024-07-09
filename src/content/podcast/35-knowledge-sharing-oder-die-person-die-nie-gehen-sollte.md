@@ -51,7 +51,6 @@ description: "Der Dauerbrenner in jedem Team: Wie bekommt man ordentliches Knowl
   \ sind Guilds? Und kann man eigentlich zu viel lernen? Und noch viele weitere Themen.\
   \ Bonus: Warum das C-Level-Management nicht im selben Flugzeug fliegen darf und\
   \ ob Podcasts, die Mitarbeiter-Zeitung abl\xF6sen."
-google_podcasts: https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5yZWRjaXJjbGUuY29tLzBlY2ZkZmQ3LWZkYTEtNGMzZC05NTE1LTQ3NjcyN2Y5ZGY1ZQ/episode/NjBhNDQ3YTEtMTQ5YS00MmY5LWI0NTgtNzAyZGQ5Y2IxNDQw?sa=X&ved=2ahUKEwjeu6nktv_5AhWtn3IEHXvKDBcQkfYCegQIARAF
 headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts||feedback-gerne-auch-als-voice-message::Feedback
   (gerne auch als Voice Message)
 image: ./35-knowledge-sharing-oder-die-person-die-nie-gehen-sollte.jpg

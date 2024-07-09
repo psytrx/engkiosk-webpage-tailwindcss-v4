@@ -64,7 +64,6 @@ description: "Datengetriebene Entscheidungen oder auch \"Glaube keiner Statistik
   berhaupt noch relevant ist und warum man nicht mehr sein eigenes JavaScript Frontend\
   \ mehr bauen muss. Bonus: Was warmes Bier mit Husten zu tun hat und wie das Oktoberfest\
   \ unsere Podcast-Statistiken beeinflusst."
-google_podcasts: https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5yZWRjaXJjbGUuY29tLzBlY2ZkZmQ3LWZkYTEtNGMzZC05NTE1LTQ3NjcyN2Y5ZGY1ZQ/episode/NmYwYjIzYmEtY2E3OS00MDQ0LTk2MjgtMmM0OGQwMjMxMzQw?sa=X&ved=2ahUKEwjH2ZOjyK_7AhVpUDUKHcDDAIMQkfYCegQIARAF
 headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts||feedback-gerne-auch-als-voice-message::Feedback
   (gerne auch als Voice Message)
 image: ./45-datengetriebene-entscheidungen-und-der-perfekte-dashboard-stack.jpg

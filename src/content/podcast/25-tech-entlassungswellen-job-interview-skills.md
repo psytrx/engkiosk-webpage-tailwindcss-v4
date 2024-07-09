@@ -56,7 +56,6 @@ description: "Interviews als Bewerber zu f\xFChren ist nicht immer leicht. Oft h
   he macht aber auch wie man den Endgegner, die Coding Challenge, meistern kann. Bonus:\
   \ Warum Wolfgang nur Kaffee in Portugal trinkt und was ein Gehsteig, B\xFCrgersteig\
   \ und Klettersteig gemeinsam haben."
-google_podcasts: https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5yZWRjaXJjbGUuY29tLzBlY2ZkZmQ3LWZkYTEtNGMzZC05NTE1LTQ3NjcyN2Y5ZGY1ZQ/episode/YzdhNDA3ZjQtYWM3MS00ZjJkLTllOWMtOTUyMGU5NTdhMjYw?sa=X&ved=2ahUKEwjExMXrgtD4AhVJrnIEHekVANQQkfYCegQIARAF
 headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts
 image: ./25-tech-entlassungswellen-job-interview-skills.jpg
 length_second: 4376

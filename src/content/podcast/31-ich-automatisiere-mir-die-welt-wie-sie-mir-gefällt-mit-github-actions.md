@@ -53,7 +53,6 @@ description: "Schuftest du noch oder automatisierst du schon? Heute gehts um die
   \ von der Community oft genutzt werden. Bonus: Warum LinkedIn einen HTTP Status\
   \ Code 999 sendet, wann wir Programmiersprachen wie Unterhosen wechseln und was\
   \ Michael \"Bully\" Herbig mit der ganzen Sache zu tun hat."
-google_podcasts: https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5yZWRjaXJjbGUuY29tLzBlY2ZkZmQ3LWZkYTEtNGMzZC05NTE1LTQ3NjcyN2Y5ZGY1ZQ/episode/ZDY1OWIwOGUtYTgzNy00NGI0LWI4YTYtZWI2YTA2ZGFhMTAz?sa=X&ved=2ahUKEwjsjMXi7bz5AhXdnf0HHTHSB4YQkfYCegQIARAF
 headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts||feedback-gerne-auch-als-voice-message::Feedback
   (gerne auch als Voice Message)
 image: "./31-ich-automatisiere-mir-die-welt-wie-sie-mir-gef\xE4llt-mit-github-actions.jpg"

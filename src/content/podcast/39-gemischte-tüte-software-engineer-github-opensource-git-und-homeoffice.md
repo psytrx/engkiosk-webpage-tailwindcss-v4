@@ -29,7 +29,6 @@ description: "Ein neues Format: Die gemischte T\xFCte mit Software Engineers, Gi
   \ darf, ob Git wirklich dezentral ist und wie wir das ganze eigentlich benutzen\
   \ und wie die Home-Offices von Wolfgang und Andy eigentlich aussehen. Bonus: Ob\
   \ Lakritz was in einer gemischten T\xFCte zu suchen hat."
-google_podcasts: https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5yZWRjaXJjbGUuY29tLzBlY2ZkZmQ3LWZkYTEtNGMzZC05NTE1LTQ3NjcyN2Y5ZGY1ZQ/episode/MDU0ZWY3NTAtMzVkYi00OGJkLThjYmYtZDUzMTVkMDBhNDA0?sa=X&ved=2ahUKEwif0-WG48X6AhVQrXIEHemqChQQkfYCegQIARAF
 headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts||feedback-gerne-auch-als-voice-message::Feedback
   (gerne auch als Voice Message)
 image: "./39-gemischte-t\xFCte-software-engineer-github-opensource-git-und-homeoffice.jpg"

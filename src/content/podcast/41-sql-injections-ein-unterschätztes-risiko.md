@@ -55,7 +55,6 @@ description: "SQL Injections: Eine der weitverbreitetsten Sicherheitsl\xFCcken i
   \ Wie kann man sich sch\xFCtzen und seine Anwendung ausreichend testen? All das\
   \ und noch viel mehr in dieser Episode. Bonus: Der Kontrast zwischen Duisburg und\
   \ Berlin und wie die SQL-Injektion als Nebenprodukt entdeckt wurde."
-google_podcasts: https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5yZWRjaXJjbGUuY29tLzBlY2ZkZmQ3LWZkYTEtNGMzZC05NTE1LTQ3NjcyN2Y5ZGY1ZQ/episode/YzM1NDVhMmMtNzM2ZC00MzU0LTllZGItMThkNDg2MzBlZTA5?sa=X&ved=2ahUKEwiVlYfKhOn6AhUDsGoFHa6aAZ4QkfYCegQIARAF
 headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts||feedback-gerne-auch-als-voice-message::Feedback
   (gerne auch als Voice Message)
 image: "./41-sql-injections-ein-untersch\xE4tztes-risiko.jpg"

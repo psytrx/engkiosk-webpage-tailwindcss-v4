@@ -49,7 +49,6 @@ description: "Die Cloud Native Infrastruktur vs. ein dicker Server - Ein Dauerst
   \ Wolfgang und Andy in dieser Episode, wo sie einen Artikel \"Use One Big Server\"\
   \ besprechen. Bonus: Was eine Klatsche auf Reddit, Vendor-Lock-in und CV-Driven-Development\
   \ mit Servern zu tun hat."
-google_podcasts: https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5yZWRjaXJjbGUuY29tLzBlY2ZkZmQ3LWZkYTEtNGMzZC05NTE1LTQ3NjcyN2Y5ZGY1ZQ/episode/ZDMxNzY2YTUtMDhkMC00Nzk1LTgyZjctNWVhOWM2Zjk0NzY0?sa=X&ved=2ahUKEwje9pOf8O35AhUmrWoFHSSxDaEQkfYCegQIARAF
 headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts||feedback-gerne-auch-als-voice-message::Feedback
   (gerne auch als Voice Message)
 image: ./34-wie-cloudy-bist-du.jpg

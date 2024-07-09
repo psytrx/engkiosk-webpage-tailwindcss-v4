@@ -56,7 +56,6 @@ description: "Continuous Integration: Ein muss f\xFCr jedes Software-Projekt Die
   \ einem (Lead) DevOps/DataOps Engineer Google Cloud Platform oder einem Lead Platform\
   \ Engineer. Alle Stellen findest auch unter https://corporate.aboutyou.de/en/our-jobs\_\
   \ ****  Das schnelle Feedback zur Episode: \U0001F44D (top)\_\U0001F44E (geht so)"
-google_podcasts: https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5yZWRjaXJjbGUuY29tLzBlY2ZkZmQ3LWZkYTEtNGMzZC05NTE1LTQ3NjcyN2Y5ZGY1ZQ/episode/YzFmZWRhYzMtYmM0MS00MGU1LTk2ZDItZTRmODIyZTJjYjg5?sa=X&ved=2ahUKEwje6JX6leGDAxVojY4IHekHB2MQkfYCegQIARAF
 headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts||feedback-gerne-auch-als-voice-message::Feedback
   (gerne auch als Voice Message)
 image: ./106-ci-continuous-integration-in-der-praxis-mit-michael-lihs-von-thoughtworks.jpg

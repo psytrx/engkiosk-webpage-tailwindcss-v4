@@ -48,7 +48,6 @@ description: "Objectives & Key Results (OKRs): Die Wunderwaffe f\xFCr die Zielse
   \ man mit Hilfe von OKRs wieder in die Sommer-Badehose passt. Bonus: Wieso es OK\
   \ ist, SAP mit OKRs zu vergleichen.  Das schnelle Feedback zur Episode: \U0001F44D\
   \ (top)\_\U0001F44E (geht so)"
-google_podcasts: https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5yZWRjaXJjbGUuY29tLzBlY2ZkZmQ3LWZkYTEtNGMzZC05NTE1LTQ3NjcyN2Y5ZGY1ZQ/episode/NmYzZDcxZTYtOTMxMC00MzhjLTlhYTQtZjIzMTZhM2M1OTI3?sa=X&ved=2ahUKEwj28an6jLiEAxXoOUQIHUL1AwkQkfYCegQIARAF
 headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts||feedback-gerne-auch-als-voice-message::Feedback
   (gerne auch als Voice Message)
 image: "./110-okrs-und-beyond-agile-unternehmensf\xFChrung-mit-marco-alberti-von-murakamy.jpg"

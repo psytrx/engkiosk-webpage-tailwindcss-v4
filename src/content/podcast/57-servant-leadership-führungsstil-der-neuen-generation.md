@@ -50,7 +50,6 @@ description: "Servant Leadership, die dienende F\xFChrung: Hei\xDFe Luft oder ei
   \ eine bedeutende Rolle? All das und viel mehr in dieser Episode. Bonus: Was JavaScript-Frameworks,\
   \ Krokodile und Greta Thunberg mit Servant Leadership zu tun haben.  Deine \"schnelle\"\
   \ R\xFCckmeldung zur Episode?\U0001F44D (sehr cool)  \U0001F44E (geht so)"
-google_podcasts: https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5yZWRjaXJjbGUuY29tLzBlY2ZkZmQ3LWZkYTEtNGMzZC05NTE1LTQ3NjcyN2Y5ZGY1ZQ/episode/ZDY4NTgzNmItNzBmMy00N2YzLWJlYTAtODUyYzNlY2MzNDA5?sa=X&ved=2ahUKEwjRvbGD-4L9AhW3j44IHTRKBiwQkfYCegQIARAF
 headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts||feedback-gerne-auch-als-voice-message::Feedback
   (gerne auch als Voice Message)
 image: "./57-servant-leadership-f\xFChrungsstil-der-neuen-generation.jpg"

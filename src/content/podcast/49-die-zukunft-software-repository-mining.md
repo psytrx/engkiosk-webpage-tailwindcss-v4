@@ -64,7 +64,6 @@ description: "Die Analyse von Metadaten aus dem Software-Entwicklungsprozess: Ye
   lle es gibt, was die Herausforderungen dabei sind und wie ihr damit starten k\xF6\
   nnt. Bonus: Ob Andy bereits 50 Jahre alt ist und warum gute Architektur auch als\
   \ Selbstschutz dient."
-google_podcasts: https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5yZWRjaXJjbGUuY29tLzBlY2ZkZmQ3LWZkYTEtNGMzZC05NTE1LTQ3NjcyN2Y5ZGY1ZQ/episode/Mjg4MzE1MmQtM2RjNi00YTc3LWE0YzUtN2IzYzhlNGMyYmIz?sa=X&ved=2ahUKEwj28c2x9fX7AhWjrGoFHaLLB6MQkfYCegQIARAF
 headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts||feedback-gerne-auch-als-voice-message::Feedback
   (gerne auch als Voice Message)
 image: ./49-die-zukunft-software-repository-mining.jpg

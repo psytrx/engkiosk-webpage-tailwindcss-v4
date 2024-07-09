@@ -41,7 +41,6 @@ description: "Erfahrungen durch den Quereinstieg in die Software-Entwicklung Sei
   \ um das Feedback aus ihrem pers\xF6nlichen Umkreis und Empfehlungen f\xFCr Leute,\
   \ die etwas \xC4hnliches vorhaben. Bonus: H\xE4kelprojekte sind vollwertige Side-Projekte.\
   \  Das schnelle Feedback zur Episode: \U0001F44D (top)\_\U0001F44E (geht so)"
-google_podcasts: https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5yZWRjaXJjbGUuY29tLzBlY2ZkZmQ3LWZkYTEtNGMzZC05NTE1LTQ3NjcyN2Y5ZGY1ZQ/episode/ZDlkMTRlMTctYjc2OC00OTM5LTk1YWItZjhiYTZlNDlkYTUx?sa=X&ved=2ahUKEwj35PC44ZqDAxXqm44IHc11Ch8QkfYCegQIARAF
 headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts||feedback-gerne-auch-als-voice-message::Feedback
   (gerne auch als Voice Message)
 image: ./102-quereinstieg-in-die-software-entwicklung-mit-melanie-patrick.jpg

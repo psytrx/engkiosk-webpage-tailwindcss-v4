@@ -58,7 +58,6 @@ description: "Was haben die JavaScript Pakete left-pad, color, faker und cross-e
   \ es noch gibt und wie man sich als Software Entwickler dagegen sch\xFCtzen kann.\
   \ Bonus: Was Bademeister, Blubberwasser und eine ASCII-Repr\xE4sentation von Uncle\
   \ Sam und der amerikanischen Flagge mit JavaScript zu tun haben."
-google_podcasts: https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5yZWRjaXJjbGUuY29tLzBlY2ZkZmQ3LWZkYTEtNGMzZC05NTE1LTQ3NjcyN2Y5ZGY1ZQ/episode/NDVkOTA4NTItZmUyYi00MTkyLWI4OTctY2VlMWZjMGMxZjky?sa=X&ved=2ahUKEwig3e-E1PL4AhUmGVkFHYtJBAsQkfYCegQIARAF
 headlines: links::Links||weitere-nicht-behandelte-incidents::Weitere nicht behandelte
   Incidents||sprungmarken::Sprungmarken||hosts::Hosts
 image: "./27-sicherheit-in-der-dependency-h\xF6lle.jpg"

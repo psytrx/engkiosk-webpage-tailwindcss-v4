@@ -47,7 +47,6 @@ description: "Docker und Container: Buzzwords der letzten Dekade - Doch was ist 
   \ Kurz um: 55 Minuten um das \u201CWarum\u201D hinter Docker. Bonus: Warum Duisburg\
   \ eine essentielle Rolle im Container-Ecosystem spielt, was Kaffe mit Software deployen\
   \ zu tun hat und wie man das Endst\xFCck vom Brot nennt."
-google_podcasts: https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5yZWRjaXJjbGUuY29tLzBlY2ZkZmQ3LWZkYTEtNGMzZC05NTE1LTQ3NjcyN2Y5ZGY1ZQ/episode/ODI4MTA2ZTgtYTM3OS00MDk5LWExZjAtNjU4NDQ0YWRlMWJk?sa=X&ved=2ahUKEwj85f3DksH7AhXdn3IEHYQ3BiEQkfYCegQIARAF
 headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts||feedback-gerne-auch-als-voice-message::Feedback
   (gerne auch als Voice Message)
 image: "./46-welches-problem-l\xF6st-docker.jpg"

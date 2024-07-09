@@ -62,7 +62,6 @@ description: "Eine Vision und Mission f\xFCr die Firma und das Team: Notwendig o
   \ Mission zu definieren, ob es auch ohne klappen kann und wie man diese Sache generell\
   \ angeht. Bonus: Warum man keine L\xF6cher kaufen kann, was Computerbild Themen\
   \ sind und wieso Andy nicht f\xFCr Heckler und Koch arbeiten w\xFCrde."
-google_podcasts: https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5yZWRjaXJjbGUuY29tLzBlY2ZkZmQ3LWZkYTEtNGMzZC05NTE1LTQ3NjcyN2Y5ZGY1ZQ/episode/OGNmYTMzY2ItMjExZi00YjNjLWI1MTYtYzEwZGM1YWJkNWY4?sa=X&ved=2ahUKEwiWxvbRwtL7AhVGlY4IHej2AsYQkfYCegQIARAF
 headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts||feedback-gerne-auch-als-voice-message::Feedback
   (gerne auch als Voice Message)
 image: ./47-wer-visionen-hat-soll-zum-arzt.jpg

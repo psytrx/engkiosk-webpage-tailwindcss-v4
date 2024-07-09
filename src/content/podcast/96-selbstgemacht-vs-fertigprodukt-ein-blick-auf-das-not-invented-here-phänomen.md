@@ -38,7 +38,6 @@ description: "Nur unsere eigene L\xF6sung ist die beste: Das \"Not invented here
   \ Bonus: Warum keiner vor dem \"Not invented here\" Syndrome gesch\xFCtzt ist -\
   \ Wolfgang und sein Meetup-System.  Das schnelle Feedback zur Episode: \U0001F44D\
   \ (top)\_\U0001F44E (geht so)"
-google_podcasts: https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5yZWRjaXJjbGUuY29tLzBlY2ZkZmQ3LWZkYTEtNGMzZC05NTE1LTQ3NjcyN2Y5ZGY1ZQ/episode/MTg2MWQzODAtYTUwMS00ZTk5LWE2YjMtN2VkM2VkNDgxYWUz?sa=X&ved=2ahUKEwic98u1mLKCAxVDHGIAHUUcA-YQkfYCegQIARAF
 headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts||feedback-gerne-auch-als-voice-message::Feedback
   (gerne auch als Voice Message)
 image: "./96-selbstgemacht-vs-fertigprodukt-ein-blick-auf-das-not-invented-here-ph\xE4\

@@ -62,7 +62,6 @@ description: "Die Personalabteilung: Dein strategischer Partner auf Augenh\xF6he
   \ gibt es auch noch einen Fr\xFChbucherpreis f\xFCr die Tech Lead Masterclass. In\
   \ Verbindung mit dem Code sparst du fast 25%! Jetzt buchen unter https://engineeringkiosk.dev/tech-lead-masterclass-2023\
   \ ****  Das schnelle Feedback zur Episode: \U0001F44D (top)\_\U0001F44E (geht so)"
-google_podcasts: https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5yZWRjaXJjbGUuY29tLzBlY2ZkZmQ3LWZkYTEtNGMzZC05NTE1LTQ3NjcyN2Y5ZGY1ZQ/episode/MjhhNTAwZGUtYzQ4MC00MDQzLThmOTAtZmNkZjc2ZjJmNzRh?sa=X&ved=2ahUKEwilwdCGuKSBAxVbie4BHYZJDOoQkfYCegQIARAF
 headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts||feedback-gerne-auch-als-voice-message::Feedback
   (gerne auch als Voice Message)
 image: ./88-die-personalabteilung-freund-oder-feind-mit-patrick-kuster.jpg

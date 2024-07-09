@@ -52,7 +52,6 @@ description: "Alle Firmen suchen nur Senior-Engineers - Steckt in Junior-Enginee
   \ von Junior Engineers. Bonus: Warum goto Statements b\xF6se sind und was Korn-Brause\
   \ mit Sommer zu tun hat.  Das schnelle Feedback zur Episode: \U0001F44D (top)  \U0001F44E\
   \ (geht so)"
-google_podcasts: https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5yZWRjaXJjbGUuY29tLzBlY2ZkZmQ3LWZkYTEtNGMzZC05NTE1LTQ3NjcyN2Y5ZGY1ZQ/episode/YTliZjkxZWMtM2NkMi00MWNkLTk1ZTEtYTBjNjQ1ZDQxZTdh?sa=X&ved=2ahUKEwik8IO53peAAxUOoWoFHQicC9IQkfYCegQIARAF
 headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts||feedback-gerne-auch-als-voice-message::Feedback
   (gerne auch als Voice Message)
 image: ./80-junior-devs-steckt-das-wahre-potential-in-unerfahrenen-talenten.jpg

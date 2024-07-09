@@ -62,7 +62,6 @@ description: "Multi-Team Projektmanagement: Wasserfall notwendig oder Agilit\xE4
   \ unserem Gast Stephan Strack. Bonus: Wie viel Projektmanager werden ben\xF6tigt,\
   \ damit eine Frau ein Kind auf die Welt bringen kann?  Das schnelle Feedback zur\
   \ Episode: \U0001F44D (top)\_\U0001F44E (geht so)"
-google_podcasts: https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5yZWRjaXJjbGUuY29tLzBlY2ZkZmQ3LWZkYTEtNGMzZC05NTE1LTQ3NjcyN2Y5ZGY1ZQ/episode/OTBjNjE5MzEtYzBkYS00NzBmLWJlMGUtOTgyNzE1OTg5Nzgz?sa=X&ved=2ahUKEwi7tM3e9ISEAxVSB0QIHTZmDHYQkfYCegQIARAF
 headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts||feedback-gerne-auch-als-voice-message::Feedback
   (gerne auch als Voice Message)
 image: ./108-agile-multi-team-projekte-die-kunst-hunderte-leute-effektiv-zu-koordinieren-mit-stephan-strack.jpg

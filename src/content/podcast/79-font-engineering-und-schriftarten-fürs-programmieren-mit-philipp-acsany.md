@@ -64,7 +64,6 @@ description: "Font Engineering und die Welt der Programmier-Schriftarten. Wie wi
   \ einem speziellen Fokus auf das Programmieren. Bonus: Warum es v\xF6llig OK ist,\
   \ in Comic Sans zu programmieren.  Das schnelle Feedback zur Episode: \U0001F44D\
   \ (top)  \U0001F44E (geht so)"
-google_podcasts: https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5yZWRjaXJjbGUuY29tLzBlY2ZkZmQ3LWZkYTEtNGMzZC05NTE1LTQ3NjcyN2Y5ZGY1ZQ/episode/MzM5M2EyYTgtMzUwMC00ZGJhLWEyMDMtOGIxMzg1ZTMxNzJi?sa=X&ved=2ahUKEwi-y86u5IWAAxXCn44IHXDbAGAQkfYCegQIARAF
 headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts||feedback-gerne-auch-als-voice-message::Feedback
   (gerne auch als Voice Message)
 image: "./79-font-engineering-und-schriftarten-f\xFCrs-programmieren-mit-philipp-acsany.jpg"

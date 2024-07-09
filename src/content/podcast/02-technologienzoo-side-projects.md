@@ -74,7 +74,6 @@ description: "Wolfgang und Andy erz\xE4hlen ein wenig was \xFCber ihre eigenen S
   \ zu, wie er DevOps Anf\xE4ngerfehler begeht indem ihm die Festplatte voll logs\
   \ l\xE4uft.  Bonus: Wie Wolfgang den ultimativen Reichtum mit seinem eigenen CMS\
   \ zur dotcom Blase verpasst hat"
-google_podcasts: https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5yZWRjaXJjbGUuY29tLzBlY2ZkZmQ3LWZkYTEtNGMzZC05NTE1LTQ3NjcyN2Y5ZGY1ZQ/episode/NTYxZjhlNmQtZTg2OS00MmIxLTg1MzYtMzE5ZTk1MDI5NGRh?sa=X&ved=0CAUQkfYCahcKEwi4xMSxj4L4AhUAAAAAHQAAAAAQNQ
 headlines: "sprungmarken::Sprungmarken||erwahnte-side-projects::Erw\xE4hnte Side Projects||erwahnte-technologien::Erw\xE4\
   hnte Technologien||anderes::Anderes||erwahnte-personen::Erw\xE4hnte Personen||hosts::Hosts"
 image: ./02-technologienzoo-side-projects.jpg

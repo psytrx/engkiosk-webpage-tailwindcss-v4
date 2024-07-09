@@ -67,7 +67,6 @@ description: "Konsistent, Verf\xFCgbar und Ausfalltolerant: W\xE4hle zwei - Das 
   \ https://careers.trivago.com/tech oder schicke deine Initiativbewerbungen an joinus@trivago.com\
   \ mit dem Betreff \"Engineering Kiosk\".\_ ****  Das schnelle Feedback zur Episode:\
   \ \U0001F44D (top)\_\U0001F44E (geht so)"
-google_podcasts: https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5yZWRjaXJjbGUuY29tLzBlY2ZkZmQ3LWZkYTEtNGMzZC05NTE1LTQ3NjcyN2Y5ZGY1ZQ/episode/YTI5NzYxYmItYmU2Yi00MjQ2LWJjNDAtOGYxNmExODM5MWI2?sa=X&ved=2ahUKEwiEwqHggNmBAxWfA0QIHR_JC2IQkfYCegQIARAF
 headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts||feedback-gerne-auch-als-voice-message::Feedback
   (gerne auch als Voice Message)
 image: "./91-konsistent-verf\xFCgbar-ausfalltolerant-oder-performant-das-cap-und-pacelc-theorem-in-verteilten-systemen.jpg"

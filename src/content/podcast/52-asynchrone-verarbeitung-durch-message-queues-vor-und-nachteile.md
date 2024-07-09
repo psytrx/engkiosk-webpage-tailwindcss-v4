@@ -57,7 +57,6 @@ description: "Asynchrone Verarbeitung durch Message Queues: Was ist das und wof\
   llen diese helfen k\xF6nnen, welche Herausforderungen diese Darstellen, wo der Unterschied\
   \ zu Pub/Sub oder Streams ist und was Redis, Kafka und ZeroMQ damit zu tun hat.\
   \ Bonus: Warum Software rostet."
-google_podcasts: https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5yZWRjaXJjbGUuY29tLzBlY2ZkZmQ3LWZkYTEtNGMzZC05NTE1LTQ3NjcyN2Y5ZGY1ZQ/episode/YmQyZmVmZmUtMTdlNC00YzNhLTg1ZmItYjJhN2I5ZDlmNmU0?sa=X&ved=0CAUQkfYCahcKEwj49_v986r8AhUAAAAAHQAAAAAQAQ
 headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts||feedback-gerne-auch-als-voice-message::Feedback
   (gerne auch als Voice Message)
 image: ./52-asynchrone-verarbeitung-durch-message-queues-vor-und-nachteile.jpg

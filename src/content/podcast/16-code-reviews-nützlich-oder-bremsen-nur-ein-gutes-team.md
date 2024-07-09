@@ -73,7 +73,6 @@ description: "Code Reviews: Jeder will schnelles Feedback, doch niemand hat Zeit
   \ Overhead? All das und noch viel mehr in dieser Episode zum Thema Code Reviews.\
   \ Bonus: Was Faultiere und Markus S\xF6der mit Code Reviews zu tun haben und warum\
   \ Blubberwasser den Charakter verdirbt."
-google_podcasts: https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5yZWRjaXJjbGUuY29tLzBlY2ZkZmQ3LWZkYTEtNGMzZC05NTE1LTQ3NjcyN2Y5ZGY1ZQ/episode/Y2MwYWY4MTUtNDhhZC00YjRhLThhYzgtYWRhMmQ1YWJkNzc5?sa=X&ved=0CAUQkfYCahcKEwi4xMSxj4L4AhUAAAAAHQAAAAAQNQ
 headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts
 image: "./16-code-reviews-n\xFCtzlich-oder-bremsen-nur-ein-gutes-team.jpg"
 length_second: 3543

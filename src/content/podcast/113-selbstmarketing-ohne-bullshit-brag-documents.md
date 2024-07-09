@@ -48,7 +48,6 @@ description: "Kommunikation und Marketing \xFCber die eigene Arbeit: Ein Muss od
   \ verwendet. Alle offenen Job Positionen und Details zu Benefits, wie Standby-Fliegen\
   \ & Jahresurlaubsflug, findest du unter https://engineeringkiosk.dev/eurowings ****\
   \  Das schnelle Feedback zur Episode: \U0001F44D (top)\_ \U0001F44E (geht so)"
-google_podcasts: https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5yZWRjaXJjbGUuY29tLzBlY2ZkZmQ3LWZkYTEtNGMzZC05NTE1LTQ3NjcyN2Y5ZGY1ZQ/episode/ZTY4Nzk5YzctYjYxYi00Y2M5LWI0MzgtNmZiMDUyNjk2OTM0?sa=X&ved=2ahUKEwjfptvlsNyEAxUYp44IHUc2CYgQkfYCegQIARAF
 headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts||feedback-gerne-auch-als-voice-message::Feedback
   (gerne auch als Voice Message)
 image: ./113-selbstmarketing-ohne-bullshit-brag-documents.jpg

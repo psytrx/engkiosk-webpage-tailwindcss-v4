@@ -54,7 +54,6 @@ description: "Wie viel MySQL Drop In-Replacement steckt wirklich in MariaDB? Mar
   \ zwischen MySQL und MariaDB. Bonus: Was ein Weber-Grill mit MySQL und MariaDB zu\
   \ tun hat.  Das schnelle Feedback zur Episode: \U0001F44D (top)  \U0001F44E (geht\
   \ so)"
-google_podcasts: https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5yZWRjaXJjbGUuY29tLzBlY2ZkZmQ3LWZkYTEtNGMzZC05NTE1LTQ3NjcyN2Y5ZGY1ZQ/episode/MWFhMWQzYzgtOTM0Ny00N2Y2LTk1MjUtZDVlNjU5ZWQyODMw?sa=X&ved=2ahUKEwjTqM6p99X-AhXBFmIAHSucAxkQkfYCegQIARAF
 headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts||feedback-gerne-auch-als-voice-message::Feedback
   (gerne auch als Voice Message)
 image: ./69-mysql-vs-mariadb.jpg

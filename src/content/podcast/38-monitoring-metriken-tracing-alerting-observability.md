@@ -47,7 +47,6 @@ description: "Wie w\xFCrde heutzutage ein moderner Logging, Metriken, Monitoring
   \ Wie kann man von einem Alert angerufen werden? Wie visualisiert man Daten in sch\xF6\
   nen Graphen? Brauchen wir Tracing? Und was ist Observability? Bonus: Engineering\
   \ Porn und Buzzword-Bingo."
-google_podcasts: https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5yZWRjaXJjbGUuY29tLzBlY2ZkZmQ3LWZkYTEtNGMzZC05NTE1LTQ3NjcyN2Y5ZGY1ZQ/episode/NDY1Y2FkN2MtMDI4NC00OWI1LWE0NWMtZmU4OGY3OTY1YjI4?sa=X&ved=2ahUKEwiSwdWPm7T6AhUxYzUKHRUoCgAQkfYCegQIARAF
 headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts||feedback-gerne-auch-als-voice-message::Feedback
   (gerne auch als Voice Message)
 image: ./38-monitoring-metriken-tracing-alerting-observability.jpg

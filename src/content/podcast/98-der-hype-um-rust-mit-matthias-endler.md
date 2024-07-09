@@ -54,7 +54,6 @@ description: "Rust: Die System-Programmiersprache der n\xE4chsten 40 Jahre? Die 
   \ VueJS, Spring Boot, Typescript, Docker, Security, Data Science und den Grundlagen\
   \ von HTML, CSS und JavaScript an. Alle Infos unter https://www.workshops.de ****\
   \  Das schnelle Feedback zur Episode: \U0001F44D (top)\_ \U0001F44E (geht so)"
-google_podcasts: https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5yZWRjaXJjbGUuY29tLzBlY2ZkZmQ3LWZkYTEtNGMzZC05NTE1LTQ3NjcyN2Y5ZGY1ZQ/episode/MDYzOGRhOTAtMDBiZi00M2I3LTlmMDctM2MyYjEwNmFlYzI2?sa=X&ved=2ahUKEwi-_8e6y9SCAxUJuokEHfHBCdcQkfYCegQIARAF
 headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts||feedback-gerne-auch-als-voice-message::Feedback
   (gerne auch als Voice Message)
 image: ./98-der-hype-um-rust-mit-matthias-endler.jpg

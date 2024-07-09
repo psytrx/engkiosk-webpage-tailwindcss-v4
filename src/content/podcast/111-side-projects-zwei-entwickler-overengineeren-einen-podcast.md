@@ -40,7 +40,6 @@ description: "Wie sieht eigentlich der Tech-Stack vom Engineering Kiosk selbst a
   \ GitHub + NetlifyPodcast-Community: DiscordDokumentation und Planung: Google Docs\
   \ Bonus: Was man alles so \xFCber die Zeit ansammelt \u2026  Das schnelle Feedback\
   \ zur Episode: \U0001F44D (top)\_\U0001F44E (geht so)"
-google_podcasts: https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5yZWRjaXJjbGUuY29tLzBlY2ZkZmQ3LWZkYTEtNGMzZC05NTE1LTQ3NjcyN2Y5ZGY1ZQ/episode/NzNjMzY4MjktMmFmMy00ODMxLTk5N2QtNGNiYjdjZGUyYWRk?sa=X&ved=2ahUKEwja0o2gl7mEAxXeJGIAHfobCZsQkfYCegQIARAF
 headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts||feedback-gerne-auch-als-voice-message::Feedback
   (gerne auch als Voice Message)
 image: ./111-side-projects-zwei-entwickler-overengineeren-einen-podcast.jpg

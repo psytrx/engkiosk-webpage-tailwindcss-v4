@@ -57,7 +57,6 @@ description: "Kann man von einem Open-Source-Projekt seinen Lebensunterhalt verd
   \ eine sch\xF6ne Gr\xFCne Wiese erscheinen lassen. Bonus: Was Material for MkDocs\
   \ mit Stripe gemeinsam hat.  Das schnelle Feedback zur Episode: \U0001F44D (top)\
   \ \U0001F44E (geht so)"
-google_podcasts: https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5yZWRjaXJjbGUuY29tLzBlY2ZkZmQ3LWZkYTEtNGMzZC05NTE1LTQ3NjcyN2Y5ZGY1ZQ/episode/MThmNDQzNGUtNzM1My00MDgzLTgzYTctODk2MDdlMTJjMjY2?sa=X&ved=2ahUKEwjm85OcyuL_AhUOm44IHWV9CrYQkfYCegQIARAF
 headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts||feedback-gerne-auch-als-voice-message::Feedback
   (gerne auch als Voice Message)
 image: ./76-mit-open-source-100000-verdienen-sponsorware-und-plattform-risiken-bei-github-mit-martin-donath.jpg

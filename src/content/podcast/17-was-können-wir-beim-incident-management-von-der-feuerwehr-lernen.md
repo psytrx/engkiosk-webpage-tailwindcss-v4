@@ -80,7 +80,6 @@ description: "Was haben die Methoden der Feuerwehr zur Bek\xE4mpfung von Gro\xDF
   \ aussieht, wie dreist Presseleute sein k\xF6nnen und was eine kleine Konferenz\
   \ in Kalifornien damit zu tun hat. Bonus: Was Gartenschl\xE4uche und Stahl-Hoch\xF6\
   fen damit zu tun haben und wieso Kaffee holen doch eine Strategie sein kann."
-google_podcasts: https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5yZWRjaXJjbGUuY29tLzBlY2ZkZmQ3LWZkYTEtNGMzZC05NTE1LTQ3NjcyN2Y5ZGY1ZQ/episode/YjZlMDAyYTktZTBkNC00NzM2LTkyNzMtZDljOTAxMWQzOGRj?sa=X&ved=0CAUQkfYCahcKEwi4xMSxj4L4AhUAAAAAHQAAAAAQNQ
 headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts
 image: "./17-was-k\xF6nnen-wir-beim-incident-management-von-der-feuerwehr-lernen.jpg"
 length_second: 4174

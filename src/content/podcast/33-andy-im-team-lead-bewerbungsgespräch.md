@@ -47,7 +47,6 @@ description: "Wie k\xF6nnen Engineering Manager und Tech-Lead-Interviews aussehe
   \ welchen Fragen Ihr so rechnen k\xF6nnte, falls Ihr euch in eine \xE4hnliche Situation\
   \ begebt. Bonus: Warum Wikingerschach der neue Sport ist und was eine Stra\xDFenampel\
   \ mit Continuous Integration zu tun hat."
-google_podcasts: https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5yZWRjaXJjbGUuY29tLzBlY2ZkZmQ3LWZkYTEtNGMzZC05NTE1LTQ3NjcyN2Y5ZGY1ZQ/episode/ODc2N2YwMDEtN2I5My00Yjc5LTk0MjktODQwNjM4NDk1MTNj?sa=X&ved=2ahUKEwiWrriyn9z5AhXwDUQIHSawDF0QkfYCegQIARAF
 headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts||feedback-gerne-auch-als-voice-message::Feedback
   (gerne auch als Voice Message)
 image: "./33-andy-im-team-lead-bewerbungsgespr\xE4ch.jpg"

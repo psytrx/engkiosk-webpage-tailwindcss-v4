@@ -81,7 +81,6 @@ description: "Wie bringen wir der n\xE4chsten Generation, unseren Kindern, die W
   \ ver\xE4ndert wird und vieles mehr. Viel Spa\xDF. Bonus: Warum ChatGPT der neue\
   \ Taschenrechner wird.  Das schnelle Feedback zur Episode: \U0001F44D (top)  \U0001F44E\
   \ (geht so)"
-google_podcasts: https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5yZWRjaXJjbGUuY29tLzBlY2ZkZmQ3LWZkYTEtNGMzZC05NTE1LTQ3NjcyN2Y5ZGY1ZQ/episode/OWEyMTM5NjItOWJhNS00MDFkLTk2NDMtZGVlZTg4ZDlkMDIy?sa=X&ved=2ahUKEwjixbf---z_AhXyE1kFHRNJA-QQkfYCegQIARAF
 headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts||feedback-gerne-auch-als-voice-message::Feedback
   (gerne auch als Voice Message)
 image: ./77-kinder-coding-und-ai-die-zukunft-der-informatik-bildung-mit-diana-knodel.jpg

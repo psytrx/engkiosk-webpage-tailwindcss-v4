@@ -57,7 +57,6 @@ description: "Wertvolle 1on1s oder pure Zeitverschwendung: Die Peer-Coaching-Epi
   \ ein D\xF6ner-Schiff mit 1on1s zu tun hat.  Schaut vorbei in unserer neuen Community:\
   \ https://engineeringkiosk.dev/join-discord  Das schnelle Feedback zur Episode:\
   \ \U0001F44D (top)  \U0001F44E (geht so)"
-google_podcasts: https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5yZWRjaXJjbGUuY29tLzBlY2ZkZmQ3LWZkYTEtNGMzZC05NTE1LTQ3NjcyN2Y5ZGY1ZQ/episode/ZjlhZmZhOGItYTliZC00NzY0LWJjZjItYTBlMTg3ZTJlY2Vl?sa=X&ved=2ahUKEwi3nc-Kusn9AhVflGoFHaKYArsQkfYCegQIARAF
 headlines: links::Links||beispiel-fragen-zur-1on1-bestandsaufnahme::Beispiel-Fragen
   zur 1on1 Bestandsaufnahme||sprungmarken::Sprungmarken||hosts::Hosts||feedback-gerne-auch-als-voice-message::Feedback
   (gerne auch als Voice Message)

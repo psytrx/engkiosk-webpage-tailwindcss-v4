@@ -46,7 +46,6 @@ description: "Recruiting: Einer der wichtigsten Aufgaben einer Firma - Doch wora
   \ wir in dieser Episode. Bonus: Warum Wolfgang eine Aufmerksamkeitsspanne wie ein\
   \ Welpe hat, was Aufz\xFCge mit Recruiting zu tun haben und ob Wanne-Eickel wirklich\
   \ existiert."
-google_podcasts: https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5yZWRjaXJjbGUuY29tLzBlY2ZkZmQ3LWZkYTEtNGMzZC05NTE1LTQ3NjcyN2Y5ZGY1ZQ/episode/MWVmMzEwMWMtMWYzNi00NmQ1LTg1OTQtZWYyZTM5ODFmNWEz?sa=X&ved=2ahUKEwiyvMa20sr5AhWmkGoFHRKaARkQkfYCegQIARAF
 headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts||feedback-gerne-auch-als-voice-message::Feedback
   (gerne auch als Voice Message)
 image: ./32-die-richtigen-leute-anstellen-die-recruiting-pipeline.jpg

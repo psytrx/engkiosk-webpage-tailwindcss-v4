@@ -57,7 +57,6 @@ description: "Effektive Observability mit OpenTelemetry Fr\xFCher waren viele Ap
   \ einem (Lead) DevOps/DataOps Engineer Google Cloud Platform oder einem Lead Platform\
   \ Engineer. Alle Stellen findest auch unter https://corporate.aboutyou.de/en/our-jobs\_\
   \ ****  Das schnelle Feedback zur Episode: \U0001F44D (top)\_ \U0001F44E (geht so)"
-google_podcasts: https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5yZWRjaXJjbGUuY29tLzBlY2ZkZmQ3LWZkYTEtNGMzZC05NTE1LTQ3NjcyN2Y5ZGY1ZQ/episode/YmIxYWY4MjktZTk4Mi00Zjk2LTkyODEtYjJiYjdiZGI3MWNi?sa=X&ved=2ahUKEwjJ0JyjtYmDAxUfNGIAHQllCZMQkfYCegQIARAF
 headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts||feedback-gerne-auch-als-voice-message::Feedback
   (gerne auch als Voice Message)
 image: ./101-observability-und-opentelemetry-mit-severin-neumann.jpg

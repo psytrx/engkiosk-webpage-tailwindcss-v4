@@ -60,7 +60,6 @@ description: "Ein Leitspruch f\xFCr die Frontend-Welt: Make simple things simple
   \ dieser Mission sein m\xF6chtest, schau auf https://engineeringkiosk.dev/handelsblatt\
   \ vorbei und werde ein Teil der HANDELSBLATT MEDIA GROUP. ********  Das schnelle\
   \ Feedback zur Episode: \U0001F44D (top)\_\U0001F44E (geht so)"
-google_podcasts: https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5yZWRjaXJjbGUuY29tLzBlY2ZkZmQ3LWZkYTEtNGMzZC05NTE1LTQ3NjcyN2Y5ZGY1ZQ/episode/YWE4ODFiYTYtNzliYy00YWExLTk2NWYtNzJlN2I2ODQ5NDRl?sa=X&ved=2ahUKEwjzxv-B5aKFAxVPpokEHUlZAVIQkfYCegQIARAF
 headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts||feedback-gerne-auch-als-voice-message::Feedback
   (gerne auch als Voice Message)
 image: "./117-vanilla-web-niedrige-kopplung-hohe-koh\xE4sion-mit-golo-roden-von-the-native-web.jpg"

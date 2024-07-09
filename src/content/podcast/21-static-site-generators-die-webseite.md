@@ -46,7 +46,6 @@ description: "Statische Websites sind wieder cool und wir springen mit der eigen
   \ bei Google f\xFChren kann, kl\xE4ren wir in dieser Episode. Bonus: Was die Toten\
   \ Hosen, Broilers und Rammstein mit Static Site Generators zu tun haben und wieso\
   \ \xD6sterreich so gut im Marketing ist."
-google_podcasts: https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5yZWRjaXJjbGUuY29tLzBlY2ZkZmQ3LWZkYTEtNGMzZC05NTE1LTQ3NjcyN2Y5ZGY1ZQ/episode/N2Q5NzExODItNWEwMi00ZDU5LWExOTgtODJhZWQzZDFiZGM4?sa=X&ved=0CAUQkfYCahcKEwi4xqzSkon4AhUAAAAAHQAAAAAQAg
 headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts
 image: ./21-static-site-generators-die-webseite.jpg
 length_second: 3214

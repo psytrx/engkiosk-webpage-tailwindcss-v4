@@ -55,7 +55,6 @@ description: "Der Einstieg in die erste Lead-Position, das Engineering Managemen
   \ zum Engineering Manager.  Hier geht's zum Artikel: trivago techblog / Tom Bartel\
   \ / What Have I Even Been Doing Today? \u2192 https://tech.trivago.com/em\_ ****\
   \  Das schnelle Feedback zur Episode: \U0001F44D (top)\_\U0001F44E (geht so)"
-google_podcasts: https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5yZWRjaXJjbGUuY29tLzBlY2ZkZmQ3LWZkYTEtNGMzZC05NTE1LTQ3NjcyN2Y5ZGY1ZQ/episode/YWZjYWJlYzktODc4OS00YzdlLTllZmMtODlhN2ViYmQxMTFi?sa=X&ved=2ahUKEwiRmeqmsu-AAxWwOlkFHe1vDCIQkfYCegQIARAF
 headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts||feedback-gerne-auch-als-voice-message::Feedback
   (gerne auch als Voice Message)
 image: ./85-von-entwicklerin-zur-engineering-managerin-erfahrungen-und-learnings-mit-isabelle-glasmacher.jpg

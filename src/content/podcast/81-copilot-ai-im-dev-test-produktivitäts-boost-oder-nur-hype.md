@@ -76,7 +76,6 @@ description: "Ist GitHub Copilot (und AI) wirklich dein fehlender Partner beim P
   in und suchst eine neue Herausforderung? Ihr wollt mit euren Unternehmen dabei sein\
   \ und pitchen? Dann findet ihr alle Informationen unter https://pcde.io\_  Das schnelle\
   \ Feedback zur Episode: \U0001F44D (top) \_\U0001F44E (geht so)"
-google_podcasts: https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5yZWRjaXJjbGUuY29tLzBlY2ZkZmQ3LWZkYTEtNGMzZC05NTE1LTQ3NjcyN2Y5ZGY1ZQ/episode/N2IzM2JiNTYtMzYyZi00NjNjLThlYzctNTcyYWQzNzlhZTdl?sa=X&ved=2ahUKEwjW5sGahqyAAxWuB0QIHe3NAyEQkfYCegQIARAF
 headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts||feedback-gerne-auch-als-voice-message::Feedback
   (gerne auch als Voice Message)
 image: "./81-copilot-ai-im-dev-test-produktivit\xE4ts-boost-oder-nur-hype.jpg"

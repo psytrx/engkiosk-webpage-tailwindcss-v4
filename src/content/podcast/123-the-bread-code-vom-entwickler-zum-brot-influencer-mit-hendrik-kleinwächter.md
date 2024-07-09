@@ -68,7 +68,6 @@ description: "Brot backen und Software-Engineering: Wie passt das zusammen? Das 
   \ a coffee: https://www.buymeacoffee.com/engineeringkioskEmail: stehtisch@engineeringkiosk.devLinkedIn:\
   \ https://www.linkedin.com/company/engineering-kiosk/Mastodon: https://podcasts.social/@engkioskTwitter:\
   \ https://twitter.com/EngKiosk"
-google_podcasts: https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5yZWRjaXJjbGUuY29tLzBlY2ZkZmQ3LWZkYTEtNGMzZC05NTE1LTQ3NjcyN2Y5ZGY1ZQ/episode/MzYwZTdkMDUtMzA3ZS00OTBmLWE3MWUtNzFkOWI3YjY1MzVm?sa=X&ved=0CAUQkfYCahcKEwjoiKPHhrqGAxUAAAAAHQAAAAAQAQ
 headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts||feedback::Feedback
 image: "./123-the-bread-code-vom-entwickler-zum-brot-influencer-mit-hendrik-kleinw\xE4\
   chter.jpg"

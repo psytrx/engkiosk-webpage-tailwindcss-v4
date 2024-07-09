@@ -47,7 +47,6 @@ description: "Die Fehlerkultur im Unternehmen, Transparenz in der Kommunikation 
   \ kann es einem Lead auch mal schlecht gehen? All das in dieser Episode. Viel Spa\xDF\
   \ Bonus: Wolfgangs Bio Bike und seine CO2-Emissionen  Das schnelle Feedback zur\
   \ Episode: \U0001F44D (top)  \U0001F44E (geht so)"
-google_podcasts: https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5yZWRjaXJjbGUuY29tLzBlY2ZkZmQ3LWZkYTEtNGMzZC05NTE1LTQ3NjcyN2Y5ZGY1ZQ/episode/NjU2MjViMmUtZmMxMy00NTNhLWI0ZDUtZGUwODE5OTExMGIw?sa=X&ved=2ahUKEwjekq2dmMyAAxXbqY4IHRVJCFsQkfYCegQIARAF
 headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts||feedback-gerne-auch-als-voice-message::Feedback
   (gerne auch als Voice Message)
 image: ./83-transparenz-im-tech-leadership-fehlerkultur-wie-weit-kann-ich-gehen.jpg

@@ -42,7 +42,6 @@ description: "Sind Machine Learning und Artificial Intelligence nur Hypes oder s
   \ zu tun haben, sowie warum Software Engineers zu den Top 5% der Gesellschaft geh\xF6\
   ren. Bonus: Warum Wolfgang kein Eiskunstlauf macht und wie er seinen Dr.-Titel bekommen\
   \ hat."
-google_podcasts: https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5yZWRjaXJjbGUuY29tLzBlY2ZkZmQ3LWZkYTEtNGMzZC05NTE1LTQ3NjcyN2Y5ZGY1ZQ/episode/ZWJkNDBlZDgtNWE5OC00OTIxLWE2YjItMWJmNmE2ODE4YjUx?sa=X&ved=0CAUQkfYCahcKEwi4xMSxj4L4AhUAAAAAHQAAAAAQNQ
 headlines: "links::Links||erwahnte-personen::Erw\xE4hnte Personen||sprungmarken::Sprungmarken||hosts::Hosts"
 image: "./06-hype-oder-hope-job-titel-und-bef\xF6rderungen.jpg"
 length_second: 3133

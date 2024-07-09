@@ -31,7 +31,6 @@ description: "1 Jahr Engineering Kiosk: Ein Wrap-up mit Learnings, Statistiken u
   \ Jahr, 2023, auf dem Plan? All das in dieser Episode sowie ein m\xF6gliches Community-Treffen\
   \ in Belgien -> https://engineeringkiosk.dev/fosdem2023 Bonus: 3 Flachwitze und\
   \ wo die gr\xF6\xDFte Orgel Europas steht"
-google_podcasts: https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5yZWRjaXJjbGUuY29tLzBlY2ZkZmQ3LWZkYTEtNGMzZC05NTE1LTQ3NjcyN2Y5ZGY1ZQ/episode/ZTBhMzljYTMtNDUyMi00YmI0LWIzNDgtMzdhZTZlM2UyMDNi?sa=X&ved=0CAUQkfYCahcKEwjw_fyq8K_8AhUAAAAAHQAAAAAQAQ
 headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts||feedback-gerne-auch-als-voice-message::Feedback
   (gerne auch als Voice Message)
 image: ./-1-wrap-up-2022-und-1-geburtstag-learnings-statistiken-und-was-2023-geplant-ist.jpg

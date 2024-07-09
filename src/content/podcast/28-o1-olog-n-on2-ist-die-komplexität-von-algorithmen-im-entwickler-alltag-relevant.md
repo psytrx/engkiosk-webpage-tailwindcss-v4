@@ -63,7 +63,6 @@ description: "Beim Programmieren ist alles ein Algorithmus. Irgendwie zumindest.
   \ dieser Episode. Bonus: Wie Andy und Wolfgang in deutscher Grammatik belehrt werden,\
   \ ob es OK ist in 1on1s zu fluchen und das Hash-Kollisionen mit der ganzen Sache\
   \ zu tun haben."
-google_podcasts: https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5yZWRjaXJjbGUuY29tLzBlY2ZkZmQ3LWZkYTEtNGMzZC05NTE1LTQ3NjcyN2Y5ZGY1ZQ/episode/NWY4ZThjMGUtYzE2ZS00YzVlLWIxMmItMTNmZGY0YjI0YTM5?sa=X&ved=0CAUQkfYCahcKEwjw8_PxqoT5AhUAAAAAHQAAAAAQAQ
 headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts
 image: "./28-o1-olog-n-on2-ist-die-komplexit\xE4t-von-algorithmen-im-entwickler-alltag-relevant.jpg"
 length_second: 3333

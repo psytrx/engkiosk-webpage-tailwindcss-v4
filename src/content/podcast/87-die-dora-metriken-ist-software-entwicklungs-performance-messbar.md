@@ -52,7 +52,6 @@ description: "DORA Metriken: Die Performance-Messung deines Software Development
   \ Entwicklungsteams an der globalen Hotelsuchmaschine. Profitiere von einem autonomen\
   \ Arbeitsumfeld und bewirb dich unter https://careers.trivago.com/sre\_ ****  Das\
   \ schnelle Feedback zur Episode: \U0001F44D (top)\_\U0001F44E (geht so)"
-google_podcasts: https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5yZWRjaXJjbGUuY29tLzBlY2ZkZmQ3LWZkYTEtNGMzZC05NTE1LTQ3NjcyN2Y5ZGY1ZQ/episode/MjAzNzFmZmMtNDE3YS00NTJmLTlmMjAtOGQzM2QyMTZjOGMw?sa=X&ved=2ahUKEwj-pOy13pKBAxUxnWoFHZkACc8QkfYCegQIARAF
 headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts||feedback-gerne-auch-als-voice-message::Feedback
   (gerne auch als Voice Message)
 image: ./87-die-dora-metriken-ist-software-entwicklungs-performance-messbar.jpg

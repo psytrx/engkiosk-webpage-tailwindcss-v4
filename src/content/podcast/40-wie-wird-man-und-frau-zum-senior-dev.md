@@ -55,7 +55,6 @@ description: "Was ist eigentlich ein Senior Engineer und wie werde ich zu einem?
   \ und Wolfgang einige Attribute, die den Unterschied eines Juniors und Seniors darstellen\
   \ und beschreiben, wie man den Weg zum Senior einschlagen kann. Bonus: Warum ein\
   \ Meterstab auch Zollstock genannt wird und warum Wolfgang ein T als hart bezeichnet."
-google_podcasts: https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5yZWRjaXJjbGUuY29tLzBlY2ZkZmQ3LWZkYTEtNGMzZC05NTE1LTQ3NjcyN2Y5ZGY1ZQ/episode/MGYxMGNjMTktMDExNS00Njc4LThkYmMtOWMxYmRhYzM5MTQ2?sa=X&ved=2ahUKEwjJpJPctdf6AhUIrXIEHd9zDtgQkfYCegQIARAF
 headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts||feedback-gerne-auch-als-voice-message::Feedback
   (gerne auch als Voice Message)
 image: ./40-wie-wird-man-und-frau-zum-senior-dev.jpg

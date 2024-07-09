@@ -52,7 +52,6 @@ description: "Remote-Work, asynchrone und parallele Arbeit und die eigene Work-L
   \ Episode. Bonus: Warum man in Amsterdam anders meditiert als anderswo, wieso Andys\
   \ Liebe zu Redis einen Knick bekommen hat und ob Wolfgang wirklich Holl\xE4nder\
   \ ist."
-google_podcasts: https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5yZWRjaXJjbGUuY29tLzBlY2ZkZmQ3LWZkYTEtNGMzZC05NTE1LTQ3NjcyN2Y5ZGY1ZQ/episode/MWM3ZDY2YTYtZjg2YS00ZjdlLWJmYjktOTNhY2YyZjlkYmEz?sa=X&ved=0CAUQkfYCahcKEwi4xMSxj4L4AhUAAAAAHQAAAAAQNQ
 headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts
 image: ./14-async-und-await-asynchrones-arbeiten-im-alltag.jpg
 length_second: 3389

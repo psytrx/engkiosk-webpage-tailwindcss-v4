@@ -59,7 +59,6 @@ description: "JavaScript: Eine multiparadigmatische Skriptsprache mit einem schw
   \ F\xF6rderprogramm Media Tech Lab: Bewirb dich jetzt und erhalte bis zu 50.000\u20AC\
   \ F\xF6rdersumme f\xFCr dein Open-Source Projekt https://www.media-lab.de/de/media-tech-lab\
   \  Das schnelle Feedback zur Episode: \U0001F44D (top)\_\U0001F44E (geht so)"
-google_podcasts: https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5yZWRjaXJjbGUuY29tLzBlY2ZkZmQ3LWZkYTEtNGMzZC05NTE1LTQ3NjcyN2Y5ZGY1ZQ/episode/YzA3ZWNkOWMtZjRjZi00YWExLTgyYmMtY2U3OWEyMGM3MDYy?sa=X&ved=2ahUKEwjAkqSi5d2AAxWb6ckDHT8rD1AQkfYCegQIARAF
 headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts||feedback-gerne-auch-als-voice-message::Feedback
   (gerne auch als Voice Message)
 image: "./84-die-evolution-von-javascript-vom-ducktyping-zum-monopol-im-browser-mit-peter-kr\xF6\

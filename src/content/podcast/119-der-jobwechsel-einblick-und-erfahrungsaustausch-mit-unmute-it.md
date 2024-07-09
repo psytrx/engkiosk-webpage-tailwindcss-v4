@@ -78,7 +78,6 @@ description: "Wie gehen andere bei ihrer Jobsuche vor? Ein Erfahrungsaustausch I
   \ coffee: https://www.buymeacoffee.com/engineeringkioskEmail: stehtisch@engineeringkiosk.devLinkedIn:\
   \ https://www.linkedin.com/company/engineering-kiosk/Mastodon: https://podcasts.social/@engkioskTwitter:\
   \ https://twitter.com/EngKiosk"
-google_podcasts: https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5yZWRjaXJjbGUuY29tLzBlY2ZkZmQ3LWZkYTEtNGMzZC05NTE1LTQ3NjcyN2Y5ZGY1ZQ/episode/ZTIyMDhhOTYtMmFmZi00MTFkLTllNGQtMzE2MDNmNDc5ZmE4?sa=X&ved=0CAUQkfYCahcKEwiIjJvY6euFAxUAAAAAHQAAAAAQAQ
 headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts||feedback::Feedback
 image: ./119-der-jobwechsel-einblick-und-erfahrungsaustausch-mit-unmute-it.jpg
 length_second: 6982

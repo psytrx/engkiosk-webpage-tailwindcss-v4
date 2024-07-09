@@ -42,7 +42,6 @@ description: "\"Open Data now\" - Dazu ruft der Turing Award Gewinner Sir Tim Be
   \ war ein Side Project geschrieben in Objective-C und ob wir f\xFCr Social Media\
   \ zahlen sollten.  Das schnelle Feedback zur Episode: \U0001F44D (top)  \U0001F44E\
   \ (geht so)"
-google_podcasts: https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5yZWRjaXJjbGUuY29tLzBlY2ZkZmQ3LWZkYTEtNGMzZC05NTE1LTQ3NjcyN2Y5ZGY1ZQ/episode/OGEzN2ZkZjUtN2JlOC00NGM5LWI5ZGYtNzk5OGNhY2E0YjIz?sa=X&ved=2ahUKEwjN_fTNkPn-AhXMGGIAHUtLB-IQkfYCegQIARAF
 headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts||feedback-gerne-auch-als-voice-message::Feedback
   (gerne auch als Voice Message)
 image: ./71-tim-berners-lee-was-ist-das-world-wide-web-und-was-ist-seine-zukunft.jpg

@@ -45,7 +45,6 @@ description: "Meetings: Ein essentieller Teil unseres Arbeitsalltages und doch w
   \ Probleme eigentlich durch Meetings an der Kaffeemaschine entstehen und warum es\
   \ auf die Disziplin jedes einzelnen bei Meetings ankommt. Bonus: Hund im B\xFCro\
   \ und die Abk\xFCrzung von \"Team\" - Toll ein anderer Machts"
-google_podcasts: https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5yZWRjaXJjbGUuY29tLzBlY2ZkZmQ3LWZkYTEtNGMzZC05NTE1LTQ3NjcyN2Y5ZGY1ZQ/episode/MGRkOWNkMjQtNTM4Yy00MjJiLTlkZWItNTNhZjc2YTViMDNj?sa=X&ved=2ahUKEwiRm97dlZz_AhUiM1kFHYB3ACsQkfYCegQIARAF
 headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts||feedback-gerne-auch-als-voice-message::Feedback
   (gerne auch als Voice Message)
 image: ./72-meetings-jeder-hat-sie-keiner-will-sie.jpg

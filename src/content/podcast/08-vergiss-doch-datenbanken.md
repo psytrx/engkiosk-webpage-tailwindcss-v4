@@ -57,7 +57,6 @@ description: "Datenbanken, besonders relationale Datenbanken und im Web ganz bes
   \ wirklich was kann und welche Schritte ihr unternehmen k\xF6nnt, um eure Datenbank\
   \ zu tunen. Bonus: Ob Wolfgang Mickey Krause kennt und ob er ein erfolgreicher MySQL\
   \ Buchautor war."
-google_podcasts: https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5yZWRjaXJjbGUuY29tLzBlY2ZkZmQ3LWZkYTEtNGMzZC05NTE1LTQ3NjcyN2Y5ZGY1ZQ/episode/NzBjYjE3YTktNjA3ZC00ZmFlLWI4YWQtY2QxZjA2M2NhZmRh?sa=X&ved=0CAUQkfYCahcKEwi4xMSxj4L4AhUAAAAAHQAAAAAQNQ
 headlines: "links::Links||erwahnte-personen::Erw\xE4hnte Personen||sprungmarken::Sprungmarken||hosts::Hosts"
 image: ./08-vergiss-doch-datenbanken.jpg
 length_second: 3167

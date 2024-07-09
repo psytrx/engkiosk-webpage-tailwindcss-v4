@@ -51,7 +51,6 @@ description: "Wie sieht eigentlich der Layer unter Docker aus? Und wie interagie
   \ (CRI) ist, was die Open Container Initiative (OCI) und ob auch du dir deine eigene\
   \ Highlevel Container Runtime programmieren kannst. Bonus: Was die Linux-Mafia ist\
   \ und wieso es bald eine \xF6sterreichische Container Runtime gibt."
-google_podcasts: https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5yZWRjaXJjbGUuY29tLzBlY2ZkZmQ3LWZkYTEtNGMzZC05NTE1LTQ3NjcyN2Y5ZGY1ZQ/episode/ZmUyODU1YmYtNTFiMS00NWZhLThkYWUtNDRmMTQ3MTZhNzBj?sa=X&ved=2ahUKEwjm0I7M1uT7AhVVjo4IHcWIABwQkfYCegQIARAF
 headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts||feedback-gerne-auch-als-voice-message::Feedback
   (gerne auch als Voice Message)
 image: ./48-der-layer-unter-docker-containerd-kubernetes-container-runtime-interface-cri-o-und-open-container-initiative-oci.jpg

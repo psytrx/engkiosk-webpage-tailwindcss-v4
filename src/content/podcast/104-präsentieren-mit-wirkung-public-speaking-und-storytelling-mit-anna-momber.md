@@ -41,7 +41,6 @@ description: "Story-Telling und richtig Pr\xE4sentieren: Ein Skill der mehr Aufm
   \ helfen? Das und noch viel viel mehr besprechen wir in dieser Episode mit unserer\
   \ Expertin Anna Momber. Bonus: Was Software-Engineers von Comedians lernen k\xF6\
   nnen.\_  Das schnelle Feedback zur Episode: \U0001F44D (top)\_\U0001F44E (geht so)"
-google_podcasts: https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5yZWRjaXJjbGUuY29tLzBlY2ZkZmQ3LWZkYTEtNGMzZC05NTE1LTQ3NjcyN2Y5ZGY1ZQ/episode/ZjEyODI1ZDEtOTQxYS00Y2M3LWIyMTktNWUxZjEzMmFmZTcx?sa=X&ved=2ahUKEwiztM_Z-72DAxVJl44IHeESDO8QkfYCegQIARAF
 headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts||feedback-gerne-auch-als-voice-message::Feedback
   (gerne auch als Voice Message)
 image: "./104-pr\xE4sentieren-mit-wirkung-public-speaking-und-storytelling-mit-anna-momber.jpg"

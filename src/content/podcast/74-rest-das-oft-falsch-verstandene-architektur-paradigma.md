@@ -47,7 +47,6 @@ description: "Das REST-API Architektur-Paradigma: Oft verwendet und oft nicht ko
   \ hat REST? All das und noch viel mehr in dieser Episode. Bonus: Was Napster, eDonkey\
   \ und Korn mit Brause mit REST APIs zu tun haben.  Das schnelle Feedback zur Episode:\
   \ \U0001F44D (top)  \U0001F44E (geht so)"
-google_podcasts: https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5yZWRjaXJjbGUuY29tLzBlY2ZkZmQ3LWZkYTEtNGMzZC05NTE1LTQ3NjcyN2Y5ZGY1ZQ/episode/Mjg5OTU5MzMtODY2Yi00ZjkyLWI4YzktNjNjNTM1Nzk0MWUy?sa=X&ved=2ahUKEwi06-DXh67_AhWtnWoFHcsIAkwQkfYCegQIARAF
 headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts||feedback-gerne-auch-als-voice-message::Feedback
   (gerne auch als Voice Message)
 image: ./74-rest-das-oft-falsch-verstandene-architektur-paradigma.jpg

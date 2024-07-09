@@ -41,7 +41,6 @@ description: "Wie notwendig ist Weiterbildung und welche M\xF6glichkeiten gibt e
   \ kl\xE4ren auch die Frage, wer das eigentlich alles bezahlt. Bonus: Ob wir mit\
   \ einer Leiter wirklich \xFCberall reinkommen und ob Newsletter die neuen Zertifizierungen\
   \ sind."
-google_podcasts: https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5yZWRjaXJjbGUuY29tLzBlY2ZkZmQ3LWZkYTEtNGMzZC05NTE1LTQ3NjcyN2Y5ZGY1ZQ/episode/ZmEwYWYzNTgtMGZmNC00N2VmLThhYjktN2U5OTdlNzJmNzJl?sa=X&ved=2ahUKEwiszuCc4N_8AhUXElkFHfgqCeYQkfYCegQIARAF
 headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts||feedback-gerne-auch-als-voice-message::Feedback
   (gerne auch als Voice Message)
 image: ./55-weiterbildung-zertifizierung-newsletter-konferenzen-wie-warum-und-wer-zahlt-das-ganze.jpg

@@ -50,7 +50,6 @@ description: "Herausforderungen mit Zahlen in der Programmierung: Hidden bugs, E
   \ Bonus: Ob Wolfgang Graf Zahl von der Sesamstra\xDFe kennt und warum JavaScript\
   \ nicht gut in dieser Episode davonkommt.  Das schnelle Feedback zur Episode: \U0001F44D\
   \ (top)  \U0001F44E (geht so)"
-google_podcasts: https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5yZWRjaXJjbGUuY29tLzBlY2ZkZmQ3LWZkYTEtNGMzZC05NTE1LTQ3NjcyN2Y5ZGY1ZQ/episode/MTMyOTE1OTUtYjI4NS00MzdiLWJkNjMtMjRjMjc3ZDM3ZWQ3?sa=X&ved=2ahUKEwi87Lylk-z9AhUez8kDHdtdAYQQkfYCegQIARAF
 headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts||feedback-gerne-auch-als-voice-message::Feedback
   (gerne auch als Voice Message)
 image: "./63-spa\xDF-mit-zahlen-under-und-overflows-r\xFCckw\xE4rtslaufende-zeit-negative-modulos-und-w\xE4\

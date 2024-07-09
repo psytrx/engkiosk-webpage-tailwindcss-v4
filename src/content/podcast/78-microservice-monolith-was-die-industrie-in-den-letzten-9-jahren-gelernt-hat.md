@@ -57,7 +57,6 @@ description: "Monolithen und Microservices: Ein Evergreen der Software-Industrie
   \ den ganzen Microservice-Hype gelernt hat. Bonus: Warum es weiterhin ein Religionsthema\
   \ bleibt und es keine Gewinner geben wird.  Das schnelle Feedback zur Episode: \U0001F44D\
   \ (top)  \U0001F44E (geht so)"
-google_podcasts: https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5yZWRjaXJjbGUuY29tLzBlY2ZkZmQ3LWZkYTEtNGMzZC05NTE1LTQ3NjcyN2Y5ZGY1ZQ/episode/NDMzODRmYTMtNzhkNS00Yzc5LWFkNDctMDFiZmQyY2E4M2E4?sa=X&ved=2ahUKEwiI0qCll_T_AhU3m44IHcNiBlgQkfYCegQIARAF
 headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts||feedback-gerne-auch-als-voice-message::Feedback
   (gerne auch als Voice Message)
 image: ./78-microservice-monolith-was-die-industrie-in-den-letzten-9-jahren-gelernt-hat.jpg

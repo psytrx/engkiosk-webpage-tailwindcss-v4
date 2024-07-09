@@ -47,7 +47,6 @@ description: "Liskov Substitution Principle: Das L in SOLID von Barbara Liskov H
   \ Security, Data Science und den Grundlagen von HTML, CSS und JavaScript an.  Alle\
   \ Infos unter https://www.workshops.de ****  Das schnelle Feedback zur Episode:\
   \ \U0001F44D (top)\_\U0001F44E (geht so)"
-google_podcasts: https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5yZWRjaXJjbGUuY29tLzBlY2ZkZmQ3LWZkYTEtNGMzZC05NTE1LTQ3NjcyN2Y5ZGY1ZQ/episode/M2M3MGJiNmYtMTk2MC00M2MzLTkzMzctZDkwMTU4ZTdhOTUw?sa=X&ved=2ahUKEwiH1KjwmvyBAxWWJGIAHfKiDjcQkfYCegQIARAF
 headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts||feedback-gerne-auch-als-voice-message::Feedback
   (gerne auch als Voice Message)
 image: ./93-barbara-liskov-das-l-in-solid-liskovsches-substitutionsprinzip-abstraktion.jpg

@@ -63,7 +63,6 @@ description: "Inner Source - Die Anwendung von Open Source Best Practices in dei
   \ noch einen Fr\xFChbucherpreis f\xFCr die Tech Lead Masterclass. In Verbindung\
   \ mit dem Code sparst du fast 25%! Jetzt buchen unter https://engineeringkiosk.dev/tech-lead-masterclass-2023\
   \ ****  Das schnelle Feedback zur Episode: \U0001F44D (top)\_\U0001F44E (geht so)"
-google_podcasts: https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5yZWRjaXJjbGUuY29tLzBlY2ZkZmQ3LWZkYTEtNGMzZC05NTE1LTQ3NjcyN2Y5ZGY1ZQ/episode/YmJjMDZmMjgtOWRhZS00ZWQ0LWFmZTYtNDA3OGU5MzQ4MDVl?sa=X&ved=0CAUQkfYCahcKEwjwq-uAwM-BAxUAAAAAHQAAAAAQAQ
 headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts||feedback-gerne-auch-als-voice-message::Feedback
   (gerne auch als Voice Message)
 image: ./90-inner-source-open-source-best-practices-zur-besseren-zusammenarbeit-zwischen-teams-mit-sebastian-spier.jpg

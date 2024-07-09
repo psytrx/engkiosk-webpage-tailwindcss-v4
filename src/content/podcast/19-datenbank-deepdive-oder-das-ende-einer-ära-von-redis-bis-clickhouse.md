@@ -74,7 +74,6 @@ description: "Der zweite Datenbank-Deepdive im Engineering Kiosk. Indirekt kn\xF
   \ warum die Migration weg von Oracle schwierig sein kann, ob Lucene eine Datenbank\
   \ ist und noch viel viel mehr. Bonus: Was K\xFCrbiskerne mit Datenbanken zu tun\
   \ haben und warum MySQL ein besseres Adressbuch mit SQL Interface ist."
-google_podcasts: https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5yZWRjaXJjbGUuY29tLzBlY2ZkZmQ3LWZkYTEtNGMzZC05NTE1LTQ3NjcyN2Y5ZGY1ZQ/episode/OGIzZWIwNTYtMjVlMy00MWUzLTk0ZjMtZWZhNDAwOTdiNmZi?sa=X&ved=0CAUQkfYCahcKEwi4xMSxj4L4AhUAAAAAHQAAAAAQNQ
 headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts
 image: "./19-datenbank-deepdive-oder-das-ende-einer-\xE4ra-von-redis-bis-clickhouse.jpg"
 length_second: 3842

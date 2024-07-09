@@ -85,7 +85,6 @@ description: "Wie ist der Stand bei der klassischen Berufsausbildung in der Info
   \ junge Eltern!) lernst du HTML, CSS und JavaScript mit Fokus auf Probleml\xF6sungsstrategien,\
   \ Semantik und Accessibility gelegt. Alle Infos unter https://www.coding-bootcamps.eu\_\
   \ ****  Das schnelle Feedback zur Episode: \U0001F44D (top) \_\U0001F44E (geht so)"
-google_podcasts: https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5yZWRjaXJjbGUuY29tLzBlY2ZkZmQ3LWZkYTEtNGMzZC05NTE1LTQ3NjcyN2Y5ZGY1ZQ/episode/MzYxYzg0MTAtY2RmMC00ZmIzLWExZTctOWI4Yjc4MTA5MmE2?sa=X&ved=2ahUKEwjBq8qy5uqBAxVy0ckDHfZKACgQkfYCegQIARAF
 headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts||feedback-gerne-auch-als-voice-message::Feedback
   (gerne auch als Voice Message)
 image: ./92-technologie-trifft-deutsche-ausbildungskultur-die-moderne-it-berufsausbildung-mit-stefan-macke.jpg

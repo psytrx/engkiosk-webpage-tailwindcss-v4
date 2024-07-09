@@ -67,7 +67,6 @@ description: "No-Code-Tools sind technische Schulden! Wenn es zu dem Thema No-Co
   Buy us a coffee: https://www.buymeacoffee.com/engineeringkioskEmail: stehtisch@engineeringkiosk.devLinkedIn:\
   \ https://www.linkedin.com/company/engineering-kiosk/Mastodon: https://podcasts.social/@engkioskTwitter:\
   \ https://twitter.com/EngKiosk"
-google_podcasts: https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5yZWRjaXJjbGUuY29tLzBlY2ZkZmQ3LWZkYTEtNGMzZC05NTE1LTQ3NjcyN2Y5ZGY1ZQ/episode/MDljYjIxNGEtYTIxOC00ZDU5LTgxZTAtN2I2ZTk2ZmExNDRl?sa=X&ved=0CAUQkfYCahcKEwiIjJvY6euFAxUAAAAAHQAAAAAQAQ
 headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts||feedback::Feedback
 image: ./120-no-code-ist-technische-schuld.jpg
 length_second: 4076

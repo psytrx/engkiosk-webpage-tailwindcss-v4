@@ -75,7 +75,6 @@ description: "Ph\xE4nomene aus dem beruflichen Leben und die pers\xF6nliche Wahr
   Buy us a coffee: https://www.buymeacoffee.com/engineeringkioskEmail: stehtisch@engineeringkiosk.devLinkedIn:\
   \ https://www.linkedin.com/company/engineering-kiosk/Mastodon: https://podcasts.social/@engkioskTwitter:\
   \ https://twitter.com/EngKiosk"
-google_podcasts: ''
 headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts||feedback::Feedback
 image: ./127-imposter-syndrom-peter-prinzip-mit-dr-fanny-jimenez.jpg
 length_second: 3695

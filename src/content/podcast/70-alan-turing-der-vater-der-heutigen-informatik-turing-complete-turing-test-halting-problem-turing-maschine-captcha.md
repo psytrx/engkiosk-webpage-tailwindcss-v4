@@ -36,7 +36,6 @@ description: "Wenn man sich eigentlich mal fragt, auf wen die ganze heutige Entw
   \ uns. Bonus: Was die Band Abba mit Turing zu tun hat und warum Turing Serverless\
   \ erfunden hat.  Das schnelle Feedback zur Episode: \U0001F44D (top)  \U0001F44E\
   \ (geht so)"
-google_podcasts: https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5yZWRjaXJjbGUuY29tLzBlY2ZkZmQ3LWZkYTEtNGMzZC05NTE1LTQ3NjcyN2Y5ZGY1ZQ/episode/MjY5YjJmMDYtZTQ0Yy00ZGQxLWI0ZmQtYTFiMjdlZTczYzNj?sa=X&ved=2ahUKEwi0gprJruf-AhXjM1kFHeQ2B1kQkfYCegQIARAF
 headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts||feedback-gerne-auch-als-voice-message::Feedback
   (gerne auch als Voice Message)
 image: ./70-alan-turing-der-vater-der-heutigen-informatik-turing-complete-turing-test-halting-problem-turing-maschine-captcha.jpg

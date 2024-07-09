@@ -47,7 +47,6 @@ description: "Kontinuierliches Lernen mit Hilfe von Experimenten und A/B-Testing
   \ Episode mit unserem Gast Dr. Philipp Monreal. Bonus: Ob A/B-Testing mit Podcast-Episoden-Titeln\
   \ f\xFCr normale Podcast-Hosts m\xF6glich ist.  Das schnelle Feedback zur Episode:\
   \ \U0001F44D (top)\_\U0001F44E (geht so)"
-google_podcasts: https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5yZWRjaXJjbGUuY29tLzBlY2ZkZmQ3LWZkYTEtNGMzZC05NTE1LTQ3NjcyN2Y5ZGY1ZQ/episode/NDZkYzdjMzQtY2VmYy00NWI0LTllNzktODI1ODg0NWNjNmE3?sa=X&ved=2ahUKEwj-yqKRhMOCAxVBNVkFHXAXDz4QkfYCegQIARAF
 headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts||feedback-gerne-auch-als-voice-message::Feedback
   (gerne auch als Voice Message)
 image: ./97-metriken-hypothesen-und-fehler-ab-testing-in-der-praxis-mit-philipp-monreal.jpg

@@ -58,7 +58,6 @@ description: "Software Engineers fangen bei 0 an zu z\xE4hlen. Das Engineering K
   \ Verst\xE4ndnis von Cafe, warum Bachelor ein anderes Wort f\xFCr Studenabbrecher\
   \ ist und was Ziegen damit zu tun haben. Bonus: Ob Kaiserschmarrn mit oder ohne\
   \ Rosinen gemacht wird."
-google_podcasts: https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5yZWRjaXJjbGUuY29tLzBlY2ZkZmQ3LWZkYTEtNGMzZC05NTE1LTQ3NjcyN2Y5ZGY1ZQ/episode/YzZmYTYwMzItNjMxOC00NmY5LTljMDQtM2I5ZTUxYTU3NmFj?sa=X&ved=0CAUQkfYCahcKEwi4xMSxj4L4AhUAAAAAHQAAAAAQNQ
 headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts
 image: "./00-developer-fangen-bei-0-an-zu-z\xE4hlen.jpg"
 length_second: 1751

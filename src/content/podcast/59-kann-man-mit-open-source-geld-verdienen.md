@@ -50,7 +50,6 @@ description: "Finanzierung von Open-Source-Projekten ist essentiell - Doch welch
   \ Themen wie Steuern. Bonus: Was Rundfunkger\xE4te mit Batterien mit Open-Source\
   \ zu tun haben und ob Geld wirklich motivierend ist.  Das schnelle Feedback zur\
   \ Episode: \U0001F44D (top)  \U0001F44E (geht so)"
-google_podcasts: https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5yZWRjaXJjbGUuY29tLzBlY2ZkZmQ3LWZkYTEtNGMzZC05NTE1LTQ3NjcyN2Y5ZGY1ZQ/episode/MDU1ZGQ2N2UtOTljMi00OWY3LWIzMzMtOWUxYTY4OWQ3OTAx?sa=X&ved=2ahUKEwj26fDEkqb9AhV2Et4AHeIwASoQkfYCegQIARAF
 headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts||feedback-gerne-auch-als-voice-message::Feedback
   (gerne auch als Voice Message)
 image: ./59-kann-man-mit-open-source-geld-verdienen.jpg
