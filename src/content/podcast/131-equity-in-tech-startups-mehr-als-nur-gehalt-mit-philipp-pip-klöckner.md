@@ -80,7 +80,7 @@ speaker:
 - name: Wolfi Gassler
   transcriptLetter: C
   website: https://wolfgang.gassler.org/
-- name: Philipp "Pip" Klöckner
+- name: "Philipp \"Pip\" Kl\xF6ckner"
   transcriptLetter: B
   website: https://www.linkedin.com/in/kloeckner/
 spotify: https://open.spotify.com/episode/5pz68zT7qhyzUOLgCbljXx
@@ -91,8 +91,8 @@ tags:
 - Interview
 title: "#131 Equity in Tech-Startups: Mehr als nur Gehalt mit Philipp \"Pip\" Kl\xF6\
   ckner"
-transcript_raw: ''
-transcript_slim: ''
+transcript_raw: src/data/transcripts/131-transcript.zip
+transcript_slim: src/data/transcripts/131-transcript-slim.json
 youtube: https://www.youtube.com/watch?v=gFdvA-PDdEU
 
 ---
