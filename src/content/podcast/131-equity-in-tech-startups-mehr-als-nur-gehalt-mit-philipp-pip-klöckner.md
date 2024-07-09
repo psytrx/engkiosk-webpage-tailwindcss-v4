@@ -75,13 +75,13 @@ rtlplus: ''
 six_user_needs: []
 speaker:
 - name: Andy Grunwald
-  transcriptLetter: A
+  transcriptLetter: B
   website: https://andygrunwald.com/
 - name: Wolfi Gassler
   transcriptLetter: C
   website: https://wolfgang.gassler.org/
 - name: "Philipp \"Pip\" Kl\xF6ckner"
-  transcriptLetter: B
+  transcriptLetter: A
   website: https://www.linkedin.com/in/kloeckner/
 spotify: https://open.spotify.com/episode/5pz68zT7qhyzUOLgCbljXx
 tags:
