@@ -1,0 +1,1140 @@
+{
+    "language_code": "de",
+    "audio_url": "https://cloud.inlupus.at/s/dPaNy2W6BSiMk3J/download/ep_prom.mp3",
+    "punctuate": true,
+    "format_text": true,
+    "dual_channel": false,
+    "webhook_url": null,
+    "webhook_auth_header_name": null,
+    "webhook_auth_header_value": null,
+    "audio_start_from": null,
+    "audio_end_at": null,
+    "word_boost": [],
+    "boost_param": null,
+    "filter_profanity": false,
+    "redact_pii": false,
+    "redact_pii_audio": false,
+    "redact_pii_audio_quality": null,
+    "redact_pii_policies": null,
+    "redact_pii_sub": null,
+    "speaker_labels": true,
+    "speakers_expected": 3,
+    "content_safety": false,
+    "content_safety_confidence": null,
+    "iab_categories": false,
+    "custom_spelling": null,
+    "disfluencies": false,
+    "sentiment_analysis": false,
+    "auto_chapters": false,
+    "entity_detection": false,
+    "summarization": false,
+    "summary_model": null,
+    "summary_type": null,
+    "auto_highlights": false,
+    "language_detection": false,
+    "speech_threshold": null,
+    "speech_model": null,
+    "id": "c0b1002a-dec9-453d-bc97-8ba5a494008c",
+    "status": "completed",
+    "error": null,
+    "utterances": [
+        {
+            "text": "Cloud hier, Serverless da, Container Scheduler dort drüben. In Zeiten von dynamischen Infrastrukturen weiß man gar nicht mehr so genau, auf welchem Server und auf welchem Port deine Applikation eigentlich läuft. Dies wirft die große Frage wie überwache ich meine Applikation denn eigentlich, dass ich sicherstellen kann, dass diese so funktioniert, wie ich mir das initial gedacht habe? Die Antwort, die dreht sich oft um den de facto Standard im Cloud Native Monitoring Segment. Prometheus. In dieser Episode durften wir mit Julian Woltz sprechen, einem der originalen Autoren von Prometheus. Er erzählt uns die Entstehungsgeschichte von Prometheus in Soundcloud, wie sich das System vom traditionellen Monitoring System unterscheidet, warum mit PromQL eine eigene Query language ins Leben gerufen wurde, aber auch, welche Flaws er nach 12 Jahren Entwicklung gerne an Prometheus beheben würde. Wir springen direkt rein und los geht's. Viel Spaß. Vor 18 Jahren, also wir schreiben das Jahr 2024 Aktuell, das bedeutet, vor 18 Jahren, im Jahr 2006, ist meines Erachtens nach ein bisschen was Tolles passiert. Und zwar hat.",
+            "start": 4040,
+            "end": 68020,
+            "confidence": 0.8925879069767441,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Warst du da schon auf der Welt überhaupt?",
+            "start": 68060,
+            "end": 69588,
+            "confidence": 0.9414937500000001,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Ja, da war ich schon ein paar Jahre auf der Welt. Ich bin aus dem ER Jahrgang, wenn du so möchtest. Ja, also nicht nicht 1980, sondern aus dem aus der aus der Dekade der ERN. Wie dem auch sei, vor 18 Jahren ist was tolles passiert. Und zwar hat dann Amazon Web Services nämlich ihren ersten Cloud Service Release, und zwar Amazon S. Das kennen die meisten Leute nur als Object Storage. Ein Jahr später kam dann das Release von Amazon EC Elastic Compute Version zwei, weil es vielleicht eine Version eins gab. Das muss ich zugeben, weiß ich nicht. Auf jeden Fall hat vor 17 und 18 Jahren für zweitausendeinundzwanzig ziemlich viele Informatiker und Informatikerinnen irgendwie so eine Art neues Zeitalter begonnen, weil es meines Erachtens nach war das so die Geburtsstunde der sogenannten in anführungszeichen Cloud. Dann, circa acht Jahre weiter, kam auf einmal so ein neues Open Source Projekt, das nannte sich Kubernetes aus dem, ich glaube Hause Google, was mehr oder weniger so eine, wie soll man sagen, open Source Version von Borg war, was mehr oder weniger. Jetzt hauen mich bestimmt Alle Leute, die bei Google gearbeitet haben, die dürfen mir.",
+            "start": 69684,
+            "end": 132782,
+            "confidence": 0.9001785279187813,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Alle nichts sagen, ist gar kein Problem.",
+            "start": 132806,
+            "end": 134730,
+            "confidence": 0.7422514285714286,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Intern heißt das interne Kubernetes, bei Google heißt Borg. Dieses ganze Movement hat meines Erachtens nach die container Technologie erst zugänglich gemacht und natürlich auch Docker und allem drum und dran. Und warum erzähle ich dieses ganze Pamphlet hier? Eigentlich relativ einfach, weil seit diese Technologien draußen sind und für jeden nutzbar sind, habe ich so das Gefühl, dass verteilte Systeme der neue Standard sind. Jede Applikation ist in irgendeiner Art verteilt, weil sie containerisiert ist, auf irgendeinem Scheduler läuft und man weiß teilweise gar nicht mehr, wo die eigentliche Applikation läuft, auf welchem Server, auf welchem Port und so weiter und so fort. Und dann besteht natürlich die Frage, wie verifiziere ich eigentlich, dass meine Applikation das tut, was sie soll? Und wenn man nach dieser Antwort sucht, dann ist man ganz schnell bei diesem Thema Monitoring, Alerting und allem drum und dran. Und darum geht es heute auch. Wir sprechen nämlich über die Software oder mehr oder weniger über den de facto Standard im Cloud Native Monitoring, Prometheus. Und das Faszinierende ist, ich habe gerade so viele Jahre gedroppt. Ich habe gerade 2015 gedroppt, 2000 vierzehnte. Das Erscheinungsjahr von Prometheus war aber 2000 zwölfte. Also eigentlich kam die Software vor Kubernetes auf den Markt, auf den Open Source Markt. Und ich bin sehr, sehr glücklich, dass wir genau die richtige Person haben, die uns die Frage warum ist das eigentlich vor Kubernetes rausgekommen, hier haben. Und deswegen begrüße ich Julius Wolz. Hallo.",
+            "start": 135190,
+            "end": 225760,
+            "confidence": 0.9245063114754094,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Hallo, freut mich hier zu sein.",
+            "start": 225880,
+            "end": 228088,
+            "confidence": 0.99405,
+            "speaker": "C",
+            "channel": null
+        },
+        {
+            "text": "Für die Leute, die dich nicht kennen, stelle ich dich einmal ganz kurz vor. Du wohnst in Berlin, in der Hauptstadt. Du hast Computer Science an der TU Chemnitz studiert, mit der Spezialisierung Netzwerk und verteilte Systeme. Du warst relativ früh Site Reliability Engineer bei Google, hattest aber deine Softwareentwicklungskarriere bei, meines Erachtens nach der Firma Deutschlands gestartet, und zwar als Praktikant bei StudiVZ. Mega geil.",
+            "start": 228224,
+            "end": 256192,
+            "confidence": 0.8976892424242424,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "So, jetzt musst du mal erklären, was StudiVZ ist, weil ich glaube, 50 % unserer Hörerschaft kennt StudiVZ nicht.",
+            "start": 256216,
+            "end": 262108,
+            "confidence": 0.8590868421052633,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Also StudieVZ war, glaube ich, der Successor von MySpace.",
+            "start": 262184,
+            "end": 265492,
+            "confidence": 0.8657666666666668,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Ich hab jetzt nicht dich gefragt, Andi. Wir haben da ja jemanden, der sich wirklich auskennt.",
+            "start": 265556,
+            "end": 270440,
+            "confidence": 0.8417093750000001,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Ja, also zu der Zeit, das war 2007, 2008, ein paar Monate war ich dort Praktikant, war das die meistbesuchte Webseite Deutschlands und so eine Art deutscher Facebook Clone, bevor Facebook richtig auf den deutschen Markt gekommen ist. Und ja, kurz nach meinem Abgang dort ging es dann auch mit Studi VZ bergab.",
+            "start": 270860,
+            "end": 289930,
+            "confidence": 0.9244156603773586,
+            "speaker": "C",
+            "channel": null
+        },
+        {
+            "text": "Eindeutig der Grund, weil du gegangen bist, hat Facebook dann übernommen.",
+            "start": 290910,
+            "end": 294358,
+            "confidence": 0.9567309090909091,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Ja, nee, also da zeichnete sich schon ab. Einerseits, Facebook kommt jetzt auf den deutschen Markt und hat einfach eindeutig technisch das tausendmal bessere Produkt. Und ja, und zweitens, ja, hat StudiVZ zu der Zeit, wo ich da war, auch sehr viel Zeit darauf verwendet, die Plattform komplett neu zu schreiben, weil sie halt von dieser allerersten Spaghetti code Version mal auf ein vernünftiges Framework wechseln wollten. Und das hat einfach sehr viel Zeit in Anspruch genommen. Und naja, ich glaube, dieser ganze Ansatz, das war. Das war eine sehr interessante Zeit, auch mit so McKinsey Beratern, die dann reingeholt wurden, um das alles zu beschleunigen. Und das war sehr spannend zu sehen als Praktikant in meinem ersten richtigen Job, sage ich jetzt mal so.",
+            "start": 294454,
+            "end": 337312,
+            "confidence": 0.9134512000000001,
+            "speaker": "C",
+            "channel": null
+        },
+        {
+            "text": "Aber du warst Software Engineer.",
+            "start": 337376,
+            "end": 339152,
+            "confidence": 0.9630979999999999,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Genau, eigentlich sollte ich nur ein bisschen Quality Assurance machen und dann ist aber der einzige JavaScript Entwickler gefeuert worden, weil er nie auf Arbeit erschienen ist. Und dann habe ich das Fototagging und so andere Funktionalitäten gebaut in der neuen Version.",
+            "start": 339296,
+            "end": 354372,
+            "confidence": 0.9201154761904763,
+            "speaker": "C",
+            "channel": null
+        },
+        {
+            "text": "Das heißt, du hast eigentlich gebaut, was ich damals verwendet habe. Es ist schon sehr cool.",
+            "start": 354436,
+            "end": 358812,
+            "confidence": 0.8742581249999999,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Genau, studivz, mega geil. Ich erinnere mich nur an die coolen Gruppennamen. Das war immer ein Highlight.",
+            "start": 358876,
+            "end": 364260,
+            "confidence": 0.8364258823529414,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Das Gruscheln und alles.",
+            "start": 364300,
+            "end": 365660,
+            "confidence": 0.857975,
+            "speaker": "C",
+            "channel": null
+        },
+        {
+            "text": "Gruscheln, genau. Danach, nach deinem Praktikum bei StudioVZ, bist du bei Google eingestiegen als Zeit Reliability Engineer. Toller Job, außerdem muss ich zugeben.",
+            "start": 365820,
+            "end": 375316,
+            "confidence": 0.8686360869565218,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Kurze Zwischenfrage, hat es damals schon das Wort Site Reliability Engineer gegeben bei Google?",
+            "start": 375468,
+            "end": 380980,
+            "confidence": 0.8706978571428572,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Oh ja, ja, die hießen schon langweilig.",
+            "start": 381060,
+            "end": 383076,
+            "confidence": 0.8104985714285714,
+            "speaker": "C",
+            "channel": null
+        },
+        {
+            "text": "War das damals schon? Das war so studivz Zeiten.",
+            "start": 383108,
+            "end": 386148,
+            "confidence": 0.8490800000000002,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Das war der offizielle Jobtitel. Genau. Also ich habe zu Studi, ich habe neben dem Studi VZ Praktikum oder direkt danach auch noch ein Praktikum bei Google gemacht. Da war ich erst im internen SysOps Team und der Vollzeitjob danach bei Google war Site Reliability Engineering. Den Titel gab es auch schon vorher. Also die SREs, die rannten da schon überall in Google rum. Und ja, das ist sozusagen die Jobbeschreibung für die Leute, die wirklich die Google Produktionsdienste am Laufen halten global.",
+            "start": 386204,
+            "end": 415850,
+            "confidence": 0.9111169879518074,
+            "speaker": "C",
+            "channel": null
+        },
+        {
+            "text": "Nach deiner Station bei Google bist du 2012 nach Soundcloud gegangen als Production Engineer, was eigentlich Titel Buzzword Bingo ist. Also das bedeutet Zeit Reliability engineer heißt da Production Engineer. Und da hast du dann auch mit einem Kollegen, so wie ich weiß, Prometheus angefangen. Da kommen wir dann gleich zu, zu der Backstory. Und seit 2016 bist du eigentlich selbstständig und bei dir dreht sich alles eigentlich um Prometheus. Du hast unter anderem Promlabs gegründet, wo du Produkte und Services rund um Prometheus anbietest, unter anderem auch Trainingskurse, also self paced Trainingskurse und Live Trainings. Ist das richtig oder wie viel habe ich vergessen?",
+            "start": 416150,
+            "end": 453410,
+            "confidence": 0.8996344761904763,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Nee, das stimmt. Das war erst wirklich freiberuflich ab 2016 mit noch mehr Consulting und Softwareentwicklung und so. Und mittlerweile konzentriere ich mich komplett auf die Trainings, also Kurse und Live Trainings und das als Teil meiner Firma Promlabs. Promlabs, das bin nur ich. Ja, macht Spaß. Ich helfe halt einfach vielen Firmenkunden vor allem Prometheus besser einzusetzen, die Anfragesprache zu verstehen und so weiter.",
+            "start": 453450,
+            "end": 478676,
+            "confidence": 0.937702307692308,
+            "speaker": "C",
+            "channel": null
+        },
+        {
+            "text": "Jetzt ist es so, ich bin in der Cloud Bubble beruflich unterwegs, deswegen kenne ich Prometheus, aber wir haben natürlich ganz viele Hörerinnen und Hörer, die auch was ganz anderes machen. Und deswegen würde ich dich bitten, uns einmal zu erklären, so ein bisschen so wie der Subreddit explain me like I'm five. Was ist eigentlich Prometheus genau?",
+            "start": 478868,
+            "end": 496912,
+            "confidence": 0.8933887931034483,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Also dann stellen wir uns erst mal ganz dumm. Was ist das eigentlich? Vielleicht sollte man über Monitoring generell kurz sprechen. Warum braucht man das? Egal, was man heutzutage für eine Firma betreibt, ob man ein Schuhgeschäft ist oder ein Cloud Provider oder irgendetwas anderes, hat man meistens IT entweder einem Data Center in einem eigenen oder in dem eines Cloud Providers oder sogar irgendwie direkt auf seinem eigenen Tisch. Und bei IT Systemen kann einfach viel schiefgehen. Man möchte aber im Prinzip, dass Systeme, auf die man sich verlässt, wirklich verfügbar sind, dass sie schnell sind, dass sie gerade keine Fehler produzieren, dass sie effizient laufen. Also dass ich jetzt nicht, wenn ich im Prinzip nur die Rechenleistung eines Rechners brauche, dann mir da 10 hinstelle. Und um das alles sicherzustellen, diese ganzen Eigenschaften, die man gerne hätte von seinen Systemen, muss man erst mal rausfinden, wie sie sich denn verhalten. Dafür gibt es dann das sogenannte System Monitoring jetzt. Ich benutze das als ganz breiten Begriff, also nicht nur alarmiere mich, wenn irgendwas schiefgegangen ist, sondern auch wirklich, ich zähle damit rein, sammle irgendwie Daten darüber, was in meinen Systemen passiert und speichere diese Daten und mache sie mir verfügbar auf eine nützliche Art und Weise, dass ich dann entweder direkt ad hoc reingucken kann, was was ist denn hier gerade los? Oder ich kann mich alarmieren lassen oder ich kann mir schöne Dashboards anzeigen lassen. Und dann ist halt Prometheus sozusagen ja im Open Source Metrik basierten Monitoring Bereich der de facto Standard geworden. Und ich sage bewusst Metrik basiert, weil Prometheus nur numerische Metriken speichern kann, also Werte, die quasi hoch und runter gehen, irgendwie Temperaturen, Anfrageraten, der Speicherstand einer Festplatte oder wie viel MW ein Windkraftwerk gerade produziert. Also Zeitreihen sozusagen, die eine Identität haben und deren Wert hoch und runter geht. Das macht Prometheus. Es gibt dann noch in dem ganzen Monitoring und Observability Bereich andere Signaltypen wie Logs, Traces, Profiles und so weiter, für die man andere Systeme bräuchte. Also wenn man jetzt z.B. im Falle von Events oder Logs Einzeldetails zu einzelnen stattgefundenen Dingen irgendwie speichern möchte, einen Request und alle Details dazu und wann der genau passiert ist. Das wäre dann nicht so das, was Prometheus macht, sondern Prometheus macht eher diese aggregierten numerischen Werte, schon dimensional aufgeschlüsselt, aber halt nur Metriken. Es ist besonders geeignet für diese dynamischen Cloud Umgebungen, die du anfangs umrissen hast, wo man einerseits heutzutage natürlich diese EC und so weiter Instanzen hat, die immer dynamisch dazukommen oder auch wieder wegfallen, aber andererseits darauf aufbauend dann auch wieder dynamische Cluster Schedule hat, wie Kubernetes z.B. oder in Google Borg und wo sich dann so viele, teilweise auch kurzlebige und sehr dynamische Prozesse befinden, vielleicht hunderte Microservices mit tausenden von verschiedenen Prozessinstanzen, bei denen man rausfinden möchte, laufen die alle korrekt, sind die schnell, machen die gerade Fehler und so weiter. Und dafür braucht man dann auch wieder ein Monitoring System und vor allem eins, was mit so dynamischen Umgebungen gut klarkommt. Zweitausendein können wir gerne noch drüber reden, wie Prometheus das genau am besten macht. Und das war aber auch so ein bisschen der Grund, weswegen wir Prometheus gebaut haben.",
+            "start": 496976,
+            "end": 708614,
+            "confidence": 0.8981363483146063,
+            "speaker": "C",
+            "channel": null
+        },
+        {
+            "text": "Also du warst damals bei Soundcloud, wenn ich das richtig mitbekommen habe. 2000 zwölfte.",
+            "start": 708702,
+            "end": 714054,
+            "confidence": 0.815960714285714,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Ja, vielleicht erzähle ich die Origin Story. Das war sowohl ich als auch Matt Proud. Wir kamen 2012 beide von Google zu Soundcloud. Wir kannten uns aber vorher gar nicht. Wir haben uns dort halt kennengelernt und haben im Prinzip beide oh, Soundcloud hat schon ihren eigenen Cluster Scheduler gebaut, bevor überhaupt Docker existierte oder Kubernetes, das kam ja erst ein paar Jahre später, hatte Soundcloud schon einen internen Cluster Scheduler gebaut, auf dem man genau dieses Problem hatte. Die ganzen Microservices von Soundcloud, die liefen auf verschiedenen Hosts jeden Tag, je nachdem, wo sie gerade geschedult wurden und verschiedenen Ports, [sos/eos], es gab hunderte Microservices, die alle irgendwie miteinander geredet haben und davon wieder tausende von Prozessen insgesamt. Und dann war es einfach sehr schwer rauszufinden in dieser dynamischen Infrastruktur, wenn jetzt z.B. einen Latenz Peak gibt, so die Seite ist gerade langsam und dieser eine Microservice ist irgendwie schuld. Ist das jetzt ein Prozess, der super langsam ist oder sind das alle? Wir hatten mit den damaligen Monitoring Systemen Nagios, Ganglia, Munin und so weiter nicht gibt es ausreichende Effizienz und flexible Datenmodelle und Unterstützung für kurzzeitige Time Series und so weiter, um da wirklich genügend Einsicht zu bekommen. Und da kam dann so ein bisschen bei uns beiden der Drang, ach, wir brauchen eigentlich das Monitoring System, was wir von unserem vorigen Job kannten bei Google, weil Google schon ein Jahrzehnt zu der Zeit mit so einem dynamischen Cluster Scheduler unterwegs war und natürlich dann auch ein Monitoring System Borgmon dazu intern hatte, was genau super klar kommt mit so dynamischen Deployment Modellen. Und im Prinzip ist dann Prometheus entstanden als so eine Art, ja, open Source fast schon Reimplementierung von Borgmon.",
+            "start": 714142,
+            "end": 824616,
+            "confidence": 0.8962538947368425,
+            "speaker": "C",
+            "channel": null
+        },
+        {
+            "text": "Was du zu dem Zeitpunkt dann aber nur User von Borgmon, du hattest jetzt keinen Einblick in Code oder warst nicht irgendwie involviert?",
+            "start": 824728,
+            "end": 832488,
+            "confidence": 0.8587017391304347,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Genau, ich habe nie den Source Code gesehen von Borgmon, ich war einfach nur User als SRI, hab das täglich halt eingesetzt, um Ÿousand dashboards anzugucken, um Alerts zu entwickeln und so weiter.",
+            "start": 832544,
+            "end": 842934,
+            "confidence": 0.9034912121212121,
+            "speaker": "C",
+            "channel": null
+        },
+        {
+            "text": "Und was hattet ihr davor bei Soundcloud? Also wie du angekommen ist, war das irgendwie so eine Mischung aus ganz vielen Tools, die überall in verschiedenen Teams eingesetzt wurden? Oder wie war das?",
+            "start": 843022,
+            "end": 853046,
+            "confidence": 0.9081224242424244,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "War für die Service Time Series vor allem Graphite, was halt einerseits ja nicht eine. Also die Anfragesprache von Graphite erlaubt es einem nicht, komplexe Mathematik zwischen ganzen Sätzen von Zeitreihen z.B. zu machen. Es war relativ primitiv. Dann hatten wir das Problem, dass Graphite auch eher so ein bisschen auf eine statische Infrastruktur ausgelegt war, wo es langlebige Zeitreihen gibt oder Time Series, die halt eine Identität haben und die dann aber im Prinzip die ganze Zeit existieren. Wenn man jetzt aber in die Identität, also in Prometheus wäre das dann ein Label, z.B. einen Kubernetes Pod Namen rein tut oder in dem Soundcloud File damals die Host IP und Port und Revision dieser jetzt ausgerollten Service Instanz, dann kreiert man im Prinzip die ganze Zeit neue time Series Identitäten. Und Graphite hat damals zumindest für jede Zeitreihe eine Datei angelegt auf dem Dateisystem und war auch vom Datenmodell hierarchisch komplett, also a schrägstrich b c und jede dieser Komponenten kann dann irgendwas bedeuten. Aber es war relativ implizit. Man musste wissen, okay, die erste Komponente bezieht sich, wenn man jetzt z.B. hTTP Requests zählt, dann ist die vielleicht die erste Pfad Komponente in dieser Hierarchie ist vielleicht der Dienst. Die zweite Pfad Komponente ist die Methode, die gezählt wurde, also die HTTP Methode. Die dritte Pfad Komponente könnte der response status Code sein und das wäre dann die Identität und die Time Series darunter würde dann zählen, wie viele, wie viele Requests gehandelt wurden in diesem Dienst mit folgender Methode und folgendem response status code. Prometheus kommt da eher mit einem dimensionalen Datenmodell daher, wo man einfach Key Value Paare, die wir Labels nennen, attachen kann, ähnlich wie Kubernetes oder Docker Labels. Ja, das, das macht einfach flexibler. Ja. Genau, was ich noch sagen wollte, Prometheus hat halt, ist viel mehr darauf ausgelegt, diese Zeitreihen halt auch temporär zu unterstützen. Manche Zeitreihen sind halt nur ein paar Stunden da, dann wird der Job wieder weggeschedult und dann kommt ein anderer mit einer neuen Identität und dann sind vielleicht wieder ein paar neue Time Series da, die auch wieder nur ein paar Stunden leben und so weiter.",
+            "start": 853118,
+            "end": 984684,
+            "confidence": 0.9044630726256977,
+            "speaker": "C",
+            "channel": null
+        },
+        {
+            "text": "Das heißt aber, diese Metriken, die ihr damals verwendet hattet, das waren schon wirklich die, ich sage mal unter Anführungszeichen, modernen Metriken, die ich glaube, noch immer nicht überall angekommen sind. Dass man also wirklich, keine Ahnung, Auslieferungszeiten und so weiter misst und nicht nur ist der Server up oder down oder der Service up und down. Also ihr wart eigentlich 2012 schon so weit, dass ihr wirklich da Metriken getrackt habt.",
+            "start": 984772,
+            "end": 1007868,
+            "confidence": 0.8761774999999998,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Ja, teilweise. Es gab halt auch noch gefühlt 10 andere Monitoring Systeme bei Soundcloud. Also es gab, lass mich mal überlegen, es gab halt Graphite für die Time Series, so für die Dienste, dann gab es aber auch Nagios, hauptsächlich für das Alerting und das war noch sehr oldschool alerting, statisch konfiguriert für jeden Host. Auf diesem Host sollte laufen folgender Datenbankserver und wenn nicht, dann alarmiere mich oder wenn die CPU Last zu hoch ist, dann schicke mir einen Alert. Also solche etwas oldschool Alerts, die sehr noisy sind, die oft nicht, wo man oft nicht wirklich was machen kann. Dann hatten wir Munin, Ganglia, New Relic, Pingdom, müsst ihr jetzt nachdenken, es gab ungefähr 10 und die meisten von denen hat später dann Prometheus ersetzt. Also es war nicht nur so, dass wir danach dann 11 hatten. Und ich muss vielleicht dazu sagen, weil ich ja meinte, das funktioniert gut mit diesen dynamischen Umgebungen. Einerseits ist es wirklich die TSTB, also die Datenbank, die die Time series abspeichert, die einfach effizienter funktioniert mit mehr Zeitreihen und diesem flexibleren Datenmodell. Andererseits muss man sich aber auch die Frage stellen, in diesen dynamischen Umgebungen, woher weiß ich eigentlich als Monitoring System, was alles existieren sollte? Welche Dienste sollten dort sein und mit welchen Prozessinstanzen? Und das kann man ja irgendwann nicht mehr statisch reinkonfigurieren in sein Monitoring System, wenn sich die Umgebung so schnell ändert. Und da hat Prometheus in der Open Source Welt zum ersten Mal das Konzept der Service Discovery Integration eingeführt, wo wirklich Prometheus sozusagen mit der Source of Truth reden kann in der eigenen Infrastruktur Ÿousand, um dynamisch rauszufinden, welche Monitoring Targets, nennen wir sie, also die verschiedenen Dinge von den Prometheus Metriken zieht, welche Monitoring Targets existieren sollten. Und das kann auf verschiedene Art und Weisen passieren, also entweder auflösbar über DNS oder z.b. heutzutage, wenn man jetzt auf kubernetes Pods oder Endpoints oder irgendwie seine Dienste monitort, dann kann Prometheus direkt mit dem Kubernetes API Server reden und laufend darüber informiert werden, welche Service Instanzen gerade wo laufen, wie man Metriken von ihnen ziehen kann und auch wie die dann gelabelt werden sollen. Also quasi drei nutzen auf einmal. Es weiß dann, was es geben sollte, es weiß, was die Dinge sind durch die Labels, die von der Service Discovery kommen. Diese Labels werden dann auch an die Metriken, die halt zu dieser Instanz gehören, quasi rangeattached. Und es weiß auch technisch, wie kann ich jetzt zu diesem Ding gehen und dort Metriken abholen. Und wenn das nicht funktioniert, kann ich automatisch, da es ein Pull Modell ist, aufzeichnen, dass das schief gegangen ist und kann mich automatisch alerten z.B. oder mir irgendwie anzeigen lassen, diese Prozessinstanz, die eigentlich da sein sollte, ist gerade nicht erreichbar.",
+            "start": 1007964,
+            "end": 1184656,
+            "confidence": 0.9128665584415584,
+            "speaker": "C",
+            "channel": null
+        },
+        {
+            "text": "War das in eurem ganz ursprünglichen Design schon drinnen, diese Service Discoverability?",
+            "start": 1184808,
+            "end": 1189422,
+            "confidence": 0.8582274999999999,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Also ja, das war ganz von Anfang an da und das war im Prinzip einer der Gründe, weswegen wir dann dachten, nee, wir müssen halt so was wie Prometheus bauen, weil halt auf diesem Cluster in Soundcloud das schon so dynamisch zuging und wir kein anderes System hatten, was wirklich dann feststellen konnte, dass dort wirklich alles läuft, was laufen sollte und quasi dann auch zu diesen verschiedenen Prozessen gehen konnte und Metriken von denen einsammeln konnte. Also wir hatten Stats, die auch. Das habe ich vergessen, das ist das Ding, der Layer, der in Graphite reingefeedet hat. Und das war aber auch sehr limitiert, sag ich jetzt mal, in der Skalierbarkeit vom Datenmodell und so weiter. Und das war halt push basiert, aber da weiß man da auch nicht, wenn man einfach nur sagt, okay, wir pushen jetzt von ganz vielen Service Instanzen Metriken, dann weiß man ja nicht, ob irgendwas fehlt, wenn man dann nicht das abgleicht mit irgendeiner anderen Source of Truth, wo halt steht, diese Daten sollten reinkommen oder zumindest Daten von folgenden Prozessen solltest du erwarten, du Monitoring System, du. Und dann weißt du halt nicht, dann läuft vielleicht irgendeine Service Instanz, die einfach nie Daten gesendet hat und vielleicht läuft die auch gar nicht, aber sollte laufen. Und da braucht man dann andere Strategien, um rauszufinden, dass irgendwas fehlt.",
+            "start": 1189536,
+            "end": 1264648,
+            "confidence": 0.9067248444444443,
+            "speaker": "C",
+            "channel": null
+        },
+        {
+            "text": "Ihr hattet ja schon irgendwie den ganzen Zoo an Monitoring. Ich glaube, du hast jede Technologie genannt, die ich zu dem Zeitpunkt auch irgendwie zweitausendein kannte oder auf GitHub gesehen habe oder ähnliches.",
+            "start": 1264704,
+            "end": 1275382,
+            "confidence": 0.8733939393939392,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Moment, als Österreicher muss ich JackMK noch mit reinbringen.",
+            "start": 1275526,
+            "end": 1278690,
+            "confidence": 0.8763355555555555,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Vielleicht auch das, was mich interessiert, ist so ein bisschen, also die Story hört sich gerade so wie folgt an. Du bist in eine Firma gekommen und da gibt es 11 Systeme, die irgendwas monitoren und du sagst jetzt okay, wir haben 11 Systeme, lass uns doch ein System schreiben, was alle kombiniert. Du kennst diesen XKCd Comic Standards zweitausendeinundzwanzig. Und jetzt bist du, glaube ich, der erste Mensch, der mir sagt, ja, genau das habe ich gemacht und es hat funktioniert. Und ich stelle mir halt gerade so die Frage, Soundcloud schien ja technisch schon sehr weit zu sein und ihr hattet ja dann mit hoher Wahrscheinlichkeit diese dynamische Infrastruktur, nicht weil euch langweilig war, sondern weil ihr sehr wahrscheinlich dann auch in irgendeiner Art und Weise, ich sag mal, einen gewissen Scale hattet mit Traffic und Co. Und ich weiß jetzt nicht, wie groß oder wie finanziell stabil Soundlord zu dieser Zeit war, aber ich stelle mir halt schon die Frage, Ÿousand, ein Monitoring System war ja nicht das Business von Soundcloud, das war ja, war ja Audio und ist es ja heute noch. Und ich denke mir halt, wenn man solche Projekte in normalen Firmen vorschlägt, werden die oft abgedroschen, sage nee, Monitoring ist nicht unser Business und es gibt viel klügere Leute, die beschäftigen sich hauptsächlich mit Monitoring. Wir sind eine Audio Firma in dieser Hinsicht. Wie viel Gegenwehr oder wie viel Proposals oder oder Ÿousand gab es da intern? Weil ich stelle mir das bei weitem nicht leicht vor, komplett was außerhalb des Business Kontextes zu machen.",
+            "start": 1279710,
+            "end": 1363392,
+            "confidence": 0.9025627862595418,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Oder war es ein komplettes U Boot Projekt?",
+            "start": 1363416,
+            "end": 1365704,
+            "confidence": 0.91105625,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "So ein bisschen das, aber Andy, du hast total recht, eigentlich war es ein komplett wahnsinniges Unterfangen. Und das habe ich mir am Anfang auch so gedacht, so als Matt und ich das besprochen hatten mit na ja, eigentlich müsste man schon was neues bauen und sowas halt wie Borgman und warum gibt es das noch nicht? Und wir hatten uns dann schon viel die bestehenden Systeme angeguckt und schon überlegt, weil auch viele uns das natürlich gesagt haben intern, na komm, nehmt doch was bestehendes und baut es um oder verbessert es. Und sind eigentlich immer zu dem Schluss gekommen, ja okay, aber wir müssten eigentlich alles austauschen. Also ob man jetzt Graphite oder Stats, die nimmt vom ganzen, die Art und Weise, wie die Metriken modelliert werden, wie sie transferiert werden, wie sie abgespeichert werden, wie das, wie die Anfragesprache ist, wie das UI Layer ist, eigentlich alles. Und dann haben wir uns halt irgendwann gesagt, es gab z.B. auch OpentSDB als eine Option. Die hatten damals schon ein labelbasiertes Datenmodell und waren skalierbar, aber man hätte die dann auf hbase und HDFs und so mit irgendwie so Hadoop Cluster sehr komplex laufen lassen müssen und es gab keine vernünftige Anfragesprache. Also man konnte ein paar Aggregationen einstellen, aber mehr auch nicht. Keine wirkliche Mathematik zwischen Sätzen von Time Series und auch kein aktives monitoring System mit Service Discovery und Alerting und so weiter, was Prometheus dann alles eingebaut ist. Und wir haben dann immer so ein Abhängigkeitsdiagramm gemalt mit wir wollen Soundcloud stabil machen. Und dann war immer irgendwie dieser erste Knoten auf den alles Visibility, wir müssen rausfinden, was passiert hier eigentlich? Und ja, Soundcloud war da schon relativ weit mit dieser dynamischen Umgebung. Vielleicht tatsächlich doch, weil einigen Leuten langweilig war, ehrlich gesagt, Ÿousand, das war so ein bisschen damals so der sehr. Wir bauen alles selber und Microservice Hype not invented here. Ja, genau. Naja, und dann kamen wir halt dazu und das gab es schon alles und wir haben halt einfach nur gesehen, okay, aber wenn ihr das irgendwie jetzt so weiter betreiben möchtet und monitoren möchtet, was darauf passiert auf diesem Cluster, dann braucht man eigentlich eine ganz andere Art von Monitoring System. Und am Ende sind wir immer wieder zu diesem Schluss gekommen und haben eigentlich erst in unserer Freizeit, sage ich jetzt mal so, angefangen, haben wir immer so gesagt. Und war auch so. Also wir haben wirklich das so ein bisschen als Passion Projekt in den letzten Monaten von 2012 angefangen, hatten dann nach ein paar Monaten so einen allerersten super rohen Prototypen, der Daten einsammeln konnte, speichern konnte, anzeigen konnte mit minimaler Anfragesprache und haben dann langsam intern so erste Alphatester gesucht, die mit uns zusammengearbeitet haben und das vielleicht in ihren Diensten mal ausprobiert haben. Es war aber tatsächlich doch ein sehr großer politischer Uphill Battle für eins, eineinhalb Jahre vielleicht technisch auch, weil natürlich immer die Frage war, ja okay, das ist jetzt eigentlich nicht unser Business und wird das funktionieren? Und ehrlich gesagt, die a priori Wahrscheinlichkeit, dass so ein Projekt gelingt, ist sehr gering. Wenn ich jetzt damals mein eigener Manager gewesen wäre, hätte ich wahrscheinlich auch gesagt, nein, also das ist Wahnsinn, lass das mal. Und wir hatten Glück am Ende. Wir haben natürlich auch wirklich zweitausendein sehr viel Blutschweiß und Tränen da reingesteckt in das Projekt, sonst wäre das auch nicht geglückt. Und über die Zeit lief es dann immer besser, technischer und die Leute haben auch verstanden, was es ihnen bringt. Und wow, ich kriege jetzt eine Einsicht in meine Dienste, die ich vorher so nie hatte. So dass es dann irgendwann so einen Kipppunkt gab in Soundcloud auch, wo dann der chief architect auch gesagt hat, so jetzt alle neuen Dienste müssen Prometheus Metriken verwenden. Und wo die Teams, die Prometheus eingesetzt haben, dann auch den Wert für sich erkannt haben.",
+            "start": 1365872,
+            "end": 1582234,
+            "confidence": 0.9173303686635935,
+            "speaker": "C",
+            "channel": null
+        },
+        {
+            "text": "Du sagtest ja gerade schon, okay, es war auch ein politisches Uphill Battle. Und ich glaube, du hast vorhin, dass dein Manager ja auch von Google kam. War das vielleicht so eine Art glückliche Fügung oder sowas? Ich meine, dein Manager war technisch, glaube ich auch, oder?",
+            "start": 1582322,
+            "end": 1595886,
+            "confidence": 0.9058578723404255,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Ja, also mein Manager, der Matt Proud, also das war der, der auch von Google kam, der war nicht mein Manager, der war einfach mein Peer am Anfang und war dann kurzzeitig auch mal Manager unseres Teams. Er war auch nur ein Jahr bei Soundcloud und ist dann zurück zu Google gegangen. Also er war dann nicht lange auf dem Prometheus Projekt. Ich war dann eine Weile alleine und dann sind mehr Leute dazu gekommen und haben es auch geholfen, wirklich erfolgreich zu machen. Björn Rabenstein, Ben Coachee und viele andere. Und mittlerweile in der Open Source Welt natürlich hunderte und tausende. Also ich glaube, wenn er jetzt alleine bei Soundcloud gewesen wäre oder ich alleine bei Soundcloud, dann wäre das nicht passiert. Ich glaube, durch dieses gegenseitige Encouragement hat das schon geholfen. Unsere verschiedenen Manager, die wir in der Zeit hatten, haben immer so semi skeptisch darauf geguckt, aber haben uns im Prinzip auch mal ein bisschen machen lassen. Und die Frage halt war immer nur, mit wie viel Fokus? Und irgendwann war es dann klar, dass es wirklich nützlich ist und dann, dann hieß es okay, jetzt macht das auch mehr Sinn.",
+            "start": 1595958,
+            "end": 1653318,
+            "confidence": 0.9314624226804122,
+            "speaker": "C",
+            "channel": null
+        },
+        {
+            "text": "Ihr habt ja denn entschieden, was dieses MVP damals macht. Also wie umfangreich war dieser erste Prototyp dann eigentlich? Weil das Problem ist ja auch immer, wenn du zu wenig Funktionen hast, dann will es niemand einsetzen und dann sieht niemand den Sinn darin. Also habt ihr das wirklich so auf einem Whiteboard mal gescatcht und was muss der erste Prototyp haben oder habt ihr einfach losgelegt? Zweitausendein organisiert war das ganze eigentlich damals?",
+            "start": 1653374,
+            "end": 1678012,
+            "confidence": 0.8955539189189187,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Ja, wir haben uns ein bisschen ad hoc organisiert. Matt hat so ein bisschen die Storage Engine und die Instrumentierungslibrary gebaut und ich habe die Anfrage sprache und das UI und die Config Layer gebaut. Also wir wollten halt schon sowas haben, wo man zumindest mal sehen kann, man gibt Metriken aus von einem Prozess, diese werden von Prometheus abgeholt und gespeichert und die kann man dann abfragen und visuell anzeigen lassen. Das war unser minimal, minimal, minimal MVP.",
+            "start": 1678196,
+            "end": 1705974,
+            "confidence": 0.9010363291139241,
+            "speaker": "C",
+            "channel": null
+        },
+        {
+            "text": "Aber eine Abfragesprache klingt jetzt schon sehr umfangreich.",
+            "start": 1706142,
+            "end": 1708910,
+            "confidence": 0.85116875,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Ja, der Anfang von PromQL war das, den ich damals gebaut habe. Und die Anfragesprache, da haben wir auch viel drüber nachgedacht, wie die funktionieren sollte, aber die war auch sehr stark inspiriert von der Borgman Anfragesprache. Also mit Raid und Sum und diesen ganzen Operatoren, die man da drin hat, das sieht sehr ähnlich aus. Und die Art und Weise, wie man Mathematik zwischen ganzen Sets von time Series machen kann, das ist auch sehr inspiriert von Borgmon, aber dann an einigen Stellen doch anders. Und wir haben halt gesagt, nee, das machen wir jetzt aber auch anders als bei Borgmon.",
+            "start": 1709030,
+            "end": 1741254,
+            "confidence": 0.9063887254901962,
+            "speaker": "C",
+            "channel": null
+        },
+        {
+            "text": "Hast du eigentlich da, oder habt ihr damals eigentlich irgendwie negatives Feedback von der Google Seite bekommen? Später hat sich das ja sowieso alles geändert, aber so zu ganz Anfangszeiten, ihr hattet ja wahrscheinlich Kontakt noch mit irgendwelchen Developern oder so Freunden.",
+            "start": 1741382,
+            "end": 1753790,
+            "confidence": 0.9403740476190475,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Ja, also was dann mit Matt noch im Nachgang passiert ist, als er zurück zu Google, da kann ich nicht so viel zu sagen, aber da gab es auch ein paar Geschichten. Aber wir hatten schon gehört, dass manche Leute, als wir das dann wirklich veröffentlicht haben, also 2012 haben wir es zwar schon open source gemacht, 2015 aber auch wirklich erst Lärm sozusagen drum gemacht, dass es dann einige Stimmen innerhalb von Google gab, die meinten, oh, das kann ja nicht sein, das ist ja im Prinzip Borgmon. Aber wir haben ja nicht, wir haben ja keinen Quelltext übernommen und kannten den auch nicht. Wir haben im Prinzip uns von der Architektur und der Anfragesprache inspirieren lassen. Wir wollten die gleichen Features, aber wir haben ja nicht Code mitgenommen oder kopiert oder hatten auch keinen Code in unserem Kopf. Und dann kam aber wiederum, habe ich alles nur so gehört, Leute, die wiederum noch höher waren innerhalb von Google, die gesagt haben, nee, das ist doch super, dann haben wir jetzt endlich mal sowas Open Source wie Borgmon, weil Borgman hätten wir eh nicht open sourcen können, weil das viel zu verstrickt ist mit der Google internen Infrastruktur. Deswegen ist ja auch Borg auch nicht open source geworden, sondern Kubernetes ein kompletter Rewrite geworden. Und so konnten sie sich im Prinzip sparen, für Kubernetes ein eigenes Open Source Monitoring System zu bauen. Und so wurde es dann, glaube ich, von einigen wieder eigentlich als strategisch super angesehen. Auf mich selber ist nie jemand zugekommen, also, oder beziehungsweise damals einer der Mitgründer von Kubernetes, als ich ihn mal auf einer Konferenz getroffen habe. Wir haben uns ganz normal nur Ÿousand darüber unterhalten. Da hatte dann Kubernetes sehr früh auch schon Prometheus Metriken eingebaut gehabt. Google hat später unsere Promcon Konferenzen gesponsert und uns halt in ihren eigenen Büros erlaubt, die abzuhalten. Gab es zumindest jetzt keine größeren Probleme.",
+            "start": 1753950,
+            "end": 1852290,
+            "confidence": 0.9205500314465406,
+            "speaker": "C",
+            "channel": null
+        },
+        {
+            "text": "Ich glaube, wenn man die kubernetes Dokumentation mal anschaut, da geht es ja auch ziemlich viel um ein ähnliches uphill Battle, wie du es auch beschreibst, mit dem Rewrite von Kubernetes und dass das Open source werden soll oder nicht. Da hatten die originalen Autoren ja auch etwas, ich sag mal, politische Arbeit zu leisten intern.",
+            "start": 1852370,
+            "end": 1869782,
+            "confidence": 0.9322255357142855,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Du sprichst jetzt von dokumentary, vom Video, oder?",
+            "start": 1869926,
+            "end": 1873982,
+            "confidence": 0.8393425000000001,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Ja, genau. Entschuldigung, nicht von der Dokumentation, von der Videodokumentation. An alle Hörerinnen und Hörern, es gibt auf YouTube eine zweiteilige kubernetes Dokumentation und es gibt eine einteilige Dokumentation über die Origin Story von Prometheus. Die verlinken wir natürlich auch alle in den Show Notes, könnt ihr auch alle mal nachschauen. Julius hatte da gerade einen Teil von erzählt. Super spannend. Aber du hast gerade so ein bisschen über Manager von Google gesprochen. Eine Frage noch, hattest du irgendwann mal Feedback oder sowas von den Original Autoren von Borgmon? Weil die werden das ja auch gesehen haben, jetzt mal unabhängig davon, ob Source Code kopiert oder nicht. Es ist ja dein Vorteil, dass du das nie gesehen hast, den Source Code in der Hinsicht. Siehe Dilemma mit OpenSearch und Elasticsearch, die haben ja gerade Lawsuits laufen, ob da nicht irgendwer von irgendwem Source Code kopiert hat. Aber hast du irgendwann mal Feedback gekriegt von originalen Borgmon Autoren?",
+            "start": 1874086,
+            "end": 1922350,
+            "confidence": 0.885791210191083,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Also nicht, dass ich wüsste und ich weiß nicht mal, wer die sind.",
+            "start": 1922470,
+            "end": 1925452,
+            "confidence": 0.9634723076923077,
+            "speaker": "C",
+            "channel": null
+        },
+        {
+            "text": "Das fände ich halt spannend.",
+            "start": 1925606,
+            "end": 1926980,
+            "confidence": 0.905434,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Fände ich auch spannend. Ich weiß ehrlich gesagt wirklich nicht, wer alles an Borgman geschrieben hat. Ich kenne da keine einzige Person. Ich habe nie in den Borgmon Source code geguckt. Ich habe mich damals bei Google auch nie damit auseinandergesetzt, wer schreibt jetzt dieses monitoring System. Ich habe nur nach Google. Oh, das vermisse ich aber doll. Und ja, spannende Frage.",
+            "start": 1928520,
+            "end": 1949752,
+            "confidence": 0.9126954838709681,
+            "speaker": "C",
+            "channel": null
+        },
+        {
+            "text": "Ist jetzt Balkon eigentlich noch im Einsatz bei Google? Weißt du das?",
+            "start": 1949816,
+            "end": 1952768,
+            "confidence": 0.8606625,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Nein, eigentlich nicht mehr. Also intern bei Google ist alles auf Monarch, so heißt das neue System, portiert worden. Das ist eine Art zentralisiertes System, was ja sehr skalierbar ist, aber auch eigentlich nur wirklich betreibbar ist durch, wenn man Infrastruktur wie Google hat. Also hat sehr lange gedauert, das auch innerhalb von Google wirklich zu etablieren und um Borgman dann zu ersetzen.",
+            "start": 1952864,
+            "end": 1978056,
+            "confidence": 0.9344685714285713,
+            "speaker": "C",
+            "channel": null
+        },
+        {
+            "text": "Lass uns mal ein bisschen auf diese Frage, was ist eigentlich anders an Prometheus gucken. Du hast jetzt gerade schon genannt, Prometheus hat eingebaute Service Discovery bei der dynamischen Infrastruktur, zu wissen, was man sich da so monitort und so weiter. Und du hast auch schon das Pull Model genannt. Und so meine erste Frage ist, wenn ich mir die so zuhöre, frage ich mich so, sind das alles Aufgaben von einem Monitoring System? Ist das nicht eine eierlegende Wollmilchsau und ein großer Monolith? Weil in der Softwareentwicklung sagt man ja immer ziemlich viel Separation of Concern und Monitoring System soll monitoren und alerten und vielleicht keine Service Discovery machen und so weiter und so fort. Und jetzt hattest du gesagt, okay, diese Funktionalität waren aber key und die waren auch im early Design mit vertreten. Hattet ihr da nicht irgendwie auch ein bisschen so Bedenken, oh, ich schaffe jetzt hier das nächste Biest?",
+            "start": 1978128,
+            "end": 2027408,
+            "confidence": 0.9096900649350647,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Naja, also eigentlich ja, Prometheus integriert schon ein paar Sachen, die vorher separiert waren, versucht aber architekturell immer noch sehr simpel zu sein und vor allem setzt nicht auf, hey, du musst hier gleich einen krassen Cluster aufbauen, sondern kommt als einzelnes Go Binary daher, was man einfach starten kann. Einzelne Instanzen reden nicht direkt miteinander. Also alles sehr simpel und ein einzelner Server ist auch sehr hoch skalierbar. Und dann gibt es auch, gibt dann natürlich verschiedene Strategien, um das doch irgendwie am Ende horizontal zu skalieren.",
+            "start": 2027504,
+            "end": 2056680,
+            "confidence": 0.9238919318181821,
+            "speaker": "C",
+            "channel": null
+        },
+        {
+            "text": "Die nächste Frage wäre eigentlich, du hattest auch schon das Pull Modell erwähnt und ich kenne unter anderem von Icinga oder Nagios als Monitoring System das Push Modell. Die bauen ja so auf, dass die Applikationen dahin pushen. Du hattest, glaube ich, auch Studs D erwähnt, was sowas ähnliches auch macht. Kannst du uns mal ganz kurz einen Abriss über die Methoden oder die, ich sag mal, Vorgehensweise von einem Push und von einem pull Modell, von einem Monitoring System geben und warum jetzt Prometheus sich auf ein Pull Modell bezogen hat?",
+            "start": 2057500,
+            "end": 2089603,
+            "confidence": 0.8741859782608696,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Ja, also ich, erstmal würde ich sagen, Pull versus Push ist vielleicht nicht das ausschlaggebende, aber es ist ein bisschen, wenn man auf einen Service Discovery Ansatz setzt, natürlicher vielleicht, weil das Monitoring System dann der einzige Ort ist, wo man sozusagen die Source of Truth, die ganze Liste der Dinge, die existieren sollten, verwalten muss und von dort ausgehend man dann halt überprüfen kann per Pull, also initiiert durch das Monitoring System, was alles existiert. Das heißt, das Monitoring System hat eine Liste von Dingen, die existieren sollten, ob das nun Prozesse oder Geräte oder so sind, zweitausendein, geht dann aktiv in einem gewissen Intervall zu all diesen Targets, nennen wir sie, und versucht Metriken abzurufen. Und in einem pull Modell könnte man das halt auch machen. Dann hat man halt einerseits, also hat den Nachteil, sage ich jetzt mal, dass man diese Identitäten der Dinge, die da sein sollten, auf beiden Seiten konfigurieren muss. Einmal auf der Seite des Prozesses, der Metriken pusht, der muss sagen, ich habe folgende Identität, also folgende Label, z.B. prozess so und so, Kubernetes, Namespace, so und so, push die Metriken, so funktioniert es dann auch bei Open Telemetry z.B. der Prozess versucht rauszufinden, wer ist er selber, schickt die Daten an einen Push Endpoint, und dann ist aber im Monitoring System die Frage, wie gleiche ich das jetzt ab, diese Identität der Daten, die reinkommt, mit entweder gar keiner Liste von Dingen, die existieren sollten, weil viele Leute das einfach ignorieren, oder ich muss mir halt aus irgendeiner anderen Metrik oder aus einer anderen Datenbasis eine kompatible Identitätsliste wiederholen, um das dann abzugleichen, um zu gucken, ob auch wirklich die Daten reinkommen, die existieren sollten. Und das ist eine Sache, würde ich sagen. Es gibt noch ein paar andere Vorteile des Pool Modells. Wenn ich einen Prometheus instrumentierten Service Endpoint habe, dann kann ich einfach im Browser direkt auf die metrics Seite von dem gehen und kann direkt einfach sehen, was sind denn aktuell die Zustände der verschiedenen Metriken in dir drin. Also ich würde quasi das gleiche textbasierte Metrics Transfer Format sehen, was Prometheus auch während eines Scrapes sehen würde. Also wenn das Metriken pullt, da sehe ich z.B. ah, dieser HTTP Counter, der hat einen Wert von 1500, also dieser Prozess hat 1500 Requests gehandelt, seitdem er gestartet ist. Oder eine andere Metrik, die gerade sagt, das sind fünf offene File Descriptors oder so, ÿousand. Das heißt, ich kann ganz einfach den Zustand eines Prozesses anhand seiner Metriken von externen einfach aufrufen. Das ist kind of cool. Und dann gibt es noch den Vorteil, dass ich daraus ein einfaches Ha also high availability bauen kann, wenn ich möchte. Ich kann z.B. einfach zwei Prometheus Server identisch konfigurieren, die die gleichen Targets ansprechen, also die gleichen Prozesse monitoren. Und da dieses Pulling idempotent ist, also ich kann es so oft machen, wie ich will und in dem Target verändert sich dort dadurch nichts, kann ich beliebig viele parallele Scraper im Prinzip laufen lassen, die redundant das gleiche machen, weil halt nicht irgendwie nur kumulierte Deltas zwischen zwei Scrapes in dem Target in der Instrumentierungslibrary abgespeichert werden, sondern einfach nur absolute Zählerstände, absolute aktuelle Werte und so weiter, die halt sich nicht verändern, dadurch, dass ich sie abrufe. Und das ermöglicht viel Flexibilität auch beim Monitoring. Also wenn ich jetzt z.B. von Metriken, von den Diensten eines anderen Teams auch mir abholen möchte mit meinem eigenen Prometheus, dann zeige ich den einfach auf deren Targets und dann kriege ich auch deren Metriken. Z.b. so hat das verschiedene Vorteile. Der große Nachteil von Pull ist natürlich, dass es besonders auf so Use Cases ausgelegt ist, die im eigenen Data Center sind oder wo man einfach zweitausendein TCP Connections öffnen kann zu den Targets hin. Wenn man jetzt ganz, ganz komplizierte Security Rules hat, wo es schwer ist, zu allen Instanzen Ports zu öffnen oder wenn die Instanzen irgendwo auf dem Edge laufen oder halt bei Kunden irgendwie im Haus stehen, dann kann es schwierig werden, überall diese Verbindungen hin zu öffnen und dann ist Push wieder besser. Es gibt auch verschiedene Möglichkeiten, das Push Modell in die prometheus Welt reinzuousand bridgen, ist aber halt wie gesagt nicht die primäre Art und Weise, Daten einzusammeln in Prometheus.",
+            "start": 2089691,
+            "end": 2357000,
+            "confidence": 0.9125856802244042,
+            "speaker": "C",
+            "channel": null
+        },
+        {
+            "text": "Jetzt hast du schon Scraping erwähnt und Protokolle und so weiter. Jetzt für alle, die Prometheus noch nie verwendet haben oder wissen, von was du jetzt sprichst, kannst du mal ganz kurz erklären, wie das jetzt wirklich im Detail abläuft, wenn ich jetzt z.b. irgendeinen Service habe und der gibt mir die Information, wie viele Requests gerade in der letzten H rausgegangen sind oder so, wie läuft es dann wirklich technisch ab? Wie kommt diese Metrik vom Service zu Prometheus?",
+            "start": 2357160,
+            "end": 2383480,
+            "confidence": 0.9210921249999998,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Ja, das ist auch wieder z.b. sehr anders als Stats, die, wenn ihr das kennt, also machen wir ein ganz simples Beispiel, ich habe einen HTTP Server und der handelt einfach, der startet jetzt und der möchte jetzt tracken, wie viele Requests hat er gehandelt und in Prometheus würde man das als kumulativen Counter abbilden seit Start des Prozesses. Man würde dann in dem Programm eine der Prometheus Client Libraries oder Instrumentierungslibraries einbinden. Und das ist auch ganz, ja, also eine gute Practice, halt wirklich die Metriken wirklich in seinen eigenen Prozess selber einzubauen, die Dinge zu tracken, die man möchte, sogenanntes Whitebox Monitoring, wo man nicht nur von außen guckt, läuft ein Prozess oder wie verhält er sich, sondern wirklich halt die Metriken von in dem Prozess drin, wo er selber trackt, was er macht. Zweitausendein mal vielleicht ein Vergleich, Stats die versus Prometheus, wenn ich jetzt HTTP Requests, Request Counts tracken möchte, dann wäre das bei Stats die so, dass ich bei jedem Request, den ich handle, im Prinzip ein Counter UDP Paket nach außen schicke oder bei jedem zehnten oder jedem hundertsten, da kann man ja so sampling einstellen, wenn die Skalierbarkeit nicht mehr reicht, das heißt, sobald was passiert, schicke ich ein Netzwerkpaket raus, werde diesen State sozusagen los, muss ihn mir nicht merken und der Endpunkt auf der anderen Seite muss damit irgendwie was machen. Das ist natürlich, falls es ankommt, das Paket, falls es ankommt, da hatten wir auch genau diese Skalierungsprobleme, wo auch da am Ende bei Soundcloud, bei dem Stats die Server, es war ein Server, ja, ganz viele UDP Pakete wirklich einfach weggeworfen wurden, die Counts dann, ohne dass wir es gemerkt haben, eigentlich zu niedrig waren. Z.B. naja, das ist natürlich auch einfach nicht so effizient, weil es funktioniert natürlich sehr gut, wenn du irgendwie zweitausendeinousand Prozesse hast, die sehr schlecht da drin sind, State zu behalten oder wo die nach einem Request all ihren State wieder vergessen, aber wenn man einen etwas längerlebigeren Serverprozess hat, der auch einfach mal länger läuft und sich was merken kann in seinem eigenen RAM, dann kann man das besser gestalten. Im Prinzip kann ich ja einfach für jeden Request, den ich handle, eine Speicherstelle hochzählen, also wirklich im Memory einfach ein Increment zu zahlen, was man mega optimieren kann mit Atomic Increments oder Atomic Compare and Swap Instruktionen auf der CPU, wo man wirklich Millionen von Inkrementen pro S haben kann, ohne die Performance der instrumentierten Applikationen groß einzuschränken oder ohne groß Netzwerk Traffic zu verursachen, weil man ja wirklich nur eine Speicherstelle im eigenen Memory hochzählt. So würde es in Prometheus funktionieren. Ich bin da also einer dieser Client Libraries von Prometheus, ein sagen wir mal in Go und dann sage hey, mach mir mal eine neue Counter Metrik mit folgendem Namen. Und immer wenn ich ein Request handle, dann rufe ich einfach die increment Methode sozusagen oder inc Methode auf dem Counter auf. Der Counter zählt hoch, es passiert aber sonst noch nichts, ist wirklich nur ein increment in memory. Und dann serve ich aber diese ganzen Metriken auf dem HTTP Endpunkt. Also ob ich jetzt im Browser zu diesem HTTP Endpunkt gehe oder Prometheus dorthin geht, ist relativ egal erstmal. Aber wenn jemand zu diesem HTTP Endpunkt geht, dann werden in einem textbasierten Format eine Zeile pro time Series die aktuellen numerischen Werte zu jeder time Series ausgegeben. Also dieser Counter steht gerade auf folgendem Wert.",
+            "start": 2383560,
+            "end": 2583694,
+            "confidence": 0.9029925694444452,
+            "speaker": "C",
+            "channel": null
+        },
+        {
+            "text": "Mit Text basiert meinst du jetzt wirklich, wirklich Text passiert, wir reden jetzt nicht von dem JSON oder XML, sondern wirklich Plaintext, wie man es so kennt.",
+            "start": 2583782,
+            "end": 2592726,
+            "confidence": 0.8671477777777779,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Also wer es jetzt sofort sehen möchte von den Zuhörern, geht einfach auf Ÿousand demo promlabs com metrics, das ist der Promlabs demo Prometheus Server, der öffentlich ist, und dort seht ihr dieses textbasierte Format. Und das ist im Prinzip der Name der Metrik plus danach in geschweiften Klammern die Labelpaare, nach denen die Metrik aufgeschlossen ist und ganz am Ende eine Zahl, die den aktuellen Wert der Time Series.",
+            "start": 2592758,
+            "end": 2619420,
+            "confidence": 0.8934391428571431,
+            "speaker": "C",
+            "channel": null
+        },
+        {
+            "text": "Darstellt, getrennt mit einem Leerzeichen. Genau, ich habe ihn nämlich gerade gefragt, warum das jetzt kein CSV ist, z.B.",
+            "start": 2619500,
+            "end": 2625560,
+            "confidence": 0.8582499999999998,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Nee, genau, das ist schon ein eigenes Format. Wir haben jetzt auch ein neues Protobuf basiertes Format, um native neue Arten von Histogramm Metriken besser übertragen zu können. Aber das ist ein bisschen noch Zukunftsmusik, aber das wird nicht viel ändern. Wir werden immer in jedem Fall immer noch eine Art und Weise haben, wie man als Mensch im Browser einfach zum Endpunkt gehen kann und diese Metriken in einem leicht lesbaren und auch leicht produzierbaren Format sehen kann. Also wenn ich jetzt auch nur keine, wenn ich in einer komischen Sprache unterwegs bin oder in Bash und nicht diese Instrumentierungslibration verwenden kann, dann kann ich halt auch immer noch sehr einfach so eine Zeile raushauen und Prometheus versteht die. Also was jetzt passiert ist, auf diesem Endpunkt wird immer nur der aktuelle Wert jeder getrackten Metrik ausgegeben. Und jetzt habe ich halt einen Prometheus Server. Ein Prometheus Server, ich sage mal einen jetzt nur um es simpel zu halten, den habe ich konfiguriert, sagen wir auch mal statisch, einfach diese eine Prozessinstanz, alle, sagen wir fünf, 10 s zu scrapen, dann geht er einfach alle 15 s hin per HTTP zu dieser Prozessinstanz und sagt, hey, was ist denn der aktuelle Stand deiner Metriken? Und dann speichert Prometheus das in seiner TSDB und tut einerseits die Labels an, die time Series, die wirklich von dem Target selber kommen, also die Aufschlüsselung der Daten innerhalb des Targets, welche Art von Ÿousand HTTP Methoden habe ich getrackt und so weiter, und tut dann aber auch noch die Labels dazu, die zu diesem Target gehören. Also wenn ich jetzt Service Discovery verwendet hätte, dann kann ich halt sagen, okay, das ist folgende Art von Prozess und das wird alles gespeichert in der TSTB. Und dann kommt man irgendwann zum nächsten Thema PromQL. Also wenn ich dann nützliche Dinge mit diesen Daten machen möchte, alerting, dashboarding, Querying und so weiter, ÿousand, dann würde ich die promql Anfrage Sprache verwenden, aber das, wie gesagt, das nächste Thema.",
+            "start": 2625940,
+            "end": 2738350,
+            "confidence": 0.917803123123123,
+            "speaker": "C",
+            "channel": null
+        },
+        {
+            "text": "Und wenn ich jetzt diese Metriken scrape, dann habe ich aber keine Zeitinformationen, sehe das richtig? Also ich muss diese Zeitinformationen von dem Moment nehmen, wo ich gescrebt habe. Ich weiß nicht, ob die Metriken sich jetzt auf die Vorminute beziehen oder auf die vorherige Min oder h oder was auch immer, sondern ich kann nur wissen, zu dem Zeitpunkt, wo ich die Request gesetzt habe, war der Wert 54 z.B.",
+            "start": 2738430,
+            "end": 2763606,
+            "confidence": 0.9286000000000004,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Ja, also eigentlich sollten die aktuell exponierten Werte auch immer die aktuellen Werte darstellen. Also wenn ich jetzt diesen Endpunkt aufrufe, dann, und da steht, wir haben bis jetzt 23 Requests getrackt, aber ja, man muss sie irgendwie timestampen. Das passiert bei default einfach dadurch, dass der Prometheus Server den Anfangszeitpunkt des Grapes nimmt als timestamp.",
+            "start": 2763678,
+            "end": 2784166,
+            "confidence": 0.9319771428571431,
+            "speaker": "C",
+            "channel": null
+        },
+        {
+            "text": "Ja, weil beim Push könnte ich ja die Zeitinformationen mitliefern, das war von min. 13 bis 15, hat 56 Requests gegeben oder so, aber in dem Fall fällt es weg und ist wirklich der aktuelle Zeitpunkt vom Scrape.",
+            "start": 2784198,
+            "end": 2796146,
+            "confidence": 0.925020263157895,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Genau, genau, wenn du meinst, den Anfangszeitpunkt vom Scrape, bedeutet das, ich nehme die Zeit und sende dann den HTTP Request, um die Metrix abzuholen. Ja, weil das bedeutet aber auch für, ich weiß nicht gar nicht, gibt es sowas, low latency monitoring, dass dafür HTTP ja auch schon ein schwieriges Protokoll ist, oder austimen und der Request kann langsam sein und so weiter.",
+            "start": 2796218,
+            "end": 2819412,
+            "confidence": 0.88789921875,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Also das war eigentlich nie ein Problem, weil, also in der Praxis, sagen wir mal, eine Intervalle, in denen man, mit denen man in Metriken abholt, in Prometheus sind in der Praxis vielleicht zwischen 10 s und einer Min oder so und jeder einzelne Request dauert ein paar Millisekunden oder vielleicht mal 100 Millisekunden oder so. Manchmal auch länger, wenn es riesige Metric Payloads sind, wie bei Cube State Metrics, wenn das Leute kennen, das ist so eine kubernetes Component zweitausendein Komponente, die über all die verschiedenen Pods und so weiter in Prometheus Daten ausgibt, dann kann es schon mal größere Payloads werden. Das ist dann aber auch nicht ein riesiges Problem, wenn sozusagen der Timestamp, den diese ganzen Metriken bekommen, vielleicht mal um 1 s versetzt oder verschmiert ist. Also das ist eigentlich, ja, eigentlich noch nie das Problem gewesen.",
+            "start": 2819516,
+            "end": 2865682,
+            "confidence": 0.8900087943262409,
+            "speaker": "C",
+            "channel": null
+        },
+        {
+            "text": "Und du hast natürlich dann auch den Vorteil, dass Prometheus den Request setzen kann, wenn Zeit dafür ist. Im Gegensatz zum Push Modell können, wenn du sagst, alle 10 s wird eine Metric gesendet, gepusht, dann prasseln womöglich alle 10 s tausende Requests ein und dann ist 10 s wieder ruhig. Und so kannst du es halt verteilen.",
+            "start": 2865746,
+            "end": 2883458,
+            "confidence": 0.9122715517241375,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Genau, du hast sozusagen noch einen weiteren Vorteil des Pull Modells erwähnt. Bei Push ist es einfacher, sich aus Versehen zu DDosen, wenn irgendein Praktikant irgendwo einen Dienst laufen lässt mit zu vielen Instanzen und der schickt einfach zu viele Metriken an dein Monitoring System. Das kann dir bei Prometheus auch passieren, aber dann hast du immerhin die zentrale Stelle, wo du das wieder einschränken kannst, wo du siehst, aha, diese Gruppe von Targets, dieser Job, dieser Service, die schicken zu viel Metriken, die scrapen wir jetzt einfach nicht mehr.",
+            "start": 2883514,
+            "end": 2913720,
+            "confidence": 0.9172947777777777,
+            "speaker": "C",
+            "channel": null
+        },
+        {
+            "text": "Wenn du jetzt Praktikant sagst, muss ich irgendwie total grinsen, weil ich an StudioVC denken muss.",
+            "start": 2914180,
+            "end": 2918124,
+            "confidence": 0.8723568749999999,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Ja, ich weiß, ich weiß. Es gab tatsächlich jemand bei Google, meinte mal damals, als Borgman mit Monarch ersetzt wurde, was auch so ein bisschen mehr Push basiert ist. Ja, mal gucken, wann die das zum Laufen kriegen, weil aktuell ist es halt noch so, dass sie irgendein intern ein Mapreduce starten kann und dann ist wieder irgendwie die lokale Monarchzelle kaputt und man kann nichts mehr monitoren.",
+            "start": 2918292,
+            "end": 2939084,
+            "confidence": 0.8960430882352943,
+            "speaker": "C",
+            "channel": null
+        },
+        {
+            "text": "Die Realität ist halt so, das muss kein Praktikant sein, das kann auch ein Senior sein, du kennst das ja.",
+            "start": 2939252,
+            "end": 2944044,
+            "confidence": 0.9266754999999998,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Ja, das war jetzt ein Scherz, aber ja, auf jeden Fall, genau, also diese Timestamp Problematik ist in der Praxis eigentlich nicht so relevant. Man holt alle x Sekunden mal die Metriken ab, die werden getimed. Also wir mussten einfach einen Timestamp wählen. Wir haben den Scrape Anfangszeitpunkt gewählt als den, den dann alle Metriken von diesem Scrape bekommen. Man hätte auch den vom Ende oder irgendwo in der Mitte des Scrapes wählen können. Es kommt dann immer darauf an, ob irgendwie der Prozess, der gerade die Metriken ausgibt, lange braucht, um diese zu produzieren oder nicht. Meistens ist es eine super low weight Operation, weil man fragt ja nur Speicherstände ab. Also das ist jetzt in dem Falle einer direkt instrumentierten Service Instanz. Aber was machst du jetzt z.b. wenn du ein Gerät hast oder eine Code Basis wie MySQL, die nicht direkt instrumentiert ist und du möchtest trotzdem Prometheus Metriken über die einsammeln? Da gibt es in Prometheus das Konzept eines Exporters. Das ist sozusagen ein kleiner Agentenprozess, der direkt neben diesem Ding, was du eigentlich monitoren willst, laufen lässt. Sagen wir, du hast einen MySQL Server und daneben einen MySQL Dexporter und Prometheus geht dann zu dem Exporter und synchron, während er gescraped wird, feuert dieser Exporter so ein paar SQL Status und so weiter queries ab an den eigentlichen MySQL Server, kriegt die Antworten zurück, übersetzt die in Prometheus Metriken und gibt die an Prometheus zurück. Und wenn dann so ein Exporter mal eine etwas teurere backend Operation macht, um diese Metriken synchron live ÿousand einzusammeln und zu generieren, dann kann es schon mal dauern, dass ein Scrape ein paar Sekunden dauert. Wenn das dann zu sehr eskaliert, dann kann man diese Metriken auch mal cachen. Es gibt auch Möglichkeiten, in diesem Textformat Custom Timestamps abzubilden. Also wenn man wirklich sagen möchte, hey, ich möchte nicht, dass der Prometheus Server den Timestamp assigned, sondern ich habe schon einen Timestamp und den möchte ich selber setzen. Das geht auch.",
+            "start": 2944052,
+            "end": 3056484,
+            "confidence": 0.9064526807228904,
+            "speaker": "C",
+            "channel": null
+        },
+        {
+            "text": "Ah, okay, dann hast du ja eigentlich alles abgedeckt. Genau, zu den Exportern. Das bedeutet also eigentlich, weil MySQL jetzt kein HTTP Interface hat, so von sich aus, und das Exposure Format nicht supportet, baut man sich einfach eine kleine Applikation, die sich eigentlich darum kümmert, eine HTTP zur Verfügung zu stellen und dann.",
+            "start": 3056652,
+            "end": 3073888,
+            "confidence": 0.8799703703703704,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Okay, so eine kleine Middleware quasi.",
+            "start": 3073984,
+            "end": 3075920,
+            "confidence": 0.7368416666666667,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Ja, so ein Sidecar so ähnlich.",
+            "start": 3075960,
+            "end": 3077440,
+            "confidence": 0.8142900000000001,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Ja, genau, im Prinzip ein Sidecar, was immer noch eins zu eins so das Target abbildet. Das ist immer gut. Also wenn ich jetzt 10 MySQL Instanzen habe, dann ist es ganz gut, die auch einzeln per Pull abholen zu können. Kann ich theoretisch immer noch durch einen Exporter machen, aber man kann den dann so abbilden in Prometheus, dass es 10 verschiedene Pools sind. Wobei, glaube ich, der aktuelle MySQL Exporter, den wir haben, der ist schon wirklich. Da hätte man pro MySQL Prozess auch einen Exporter daneben laufen. Aber ja, da gibt es verschiedene Modelle. Wir haben ganz, ganz großes exporter Ecosystem, ein paar, die wir offiziell als Prometheus Team bauen und maintainen und ganz, ganz viele hunderte, die einfach von der Community gebaut wurden. Also ob man jetzt Linux Host Metriken haben möchte, MySQL, Postgres oder alle möglichen anderen obskuren Systeme, die Chance ist groß, dass irgendwer schon einen Prometheus Exporter dafür gebaut hat.",
+            "start": 3077520,
+            "end": 3130390,
+            "confidence": 0.9366791719745227,
+            "speaker": "C",
+            "channel": null
+        },
+        {
+            "text": "Was ist der wildeste Exporter, den du je gefunden hast?",
+            "start": 3130510,
+            "end": 3133530,
+            "confidence": 0.934282,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Es gab mal einen Minecraft Exporter und Factorio Exporter z.B. also um während man dieses Spiel spielt oder einen Server laufen lassen hat, halt Statistiken darüber auszugeben, ja, was gerade im Spiel z.B. passiert. Es gab aber auch Leute, die jetzt irgendwie Windparks monitoren mit Prometheus z.B. oder das vielleicht nicht ein Exporter, der wild war, aber es gibt coole Echtwelt Use Cases, wie z.B. das Monitoring von wirklichen Bahnzug anzeigen auf Bahnhöfen, die müssen ja auch gemonitort werden irgendwie. Wie ist die Luftfeuchtigkeit, wie ist die Spannung in diesen Anzeigen? Und das habe ich auch mal gehört, zumindest von jemandem, der bei Accenture war, der mit der deutschen Bahn das umgesetzt hat, auch basierend irgendwie auf dem Node Exporter und von Prometheus. Ich weiß nicht, ob das immer noch so ist. Und das klang auch sehr spannend. Und Containerschiffe.",
+            "start": 3133950,
+            "end": 3185340,
+            "confidence": 0.9136390714285716,
+            "speaker": "C",
+            "channel": null
+        },
+        {
+            "text": "Containerschiffe.",
+            "start": 3185420,
+            "end": 3186164,
+            "confidence": 0.7586,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Containerschiffe, ja. Also maersk Containerschiffe. Ich weiß gar nicht, ob ich das sagen darf.",
+            "start": 3186212,
+            "end": 3190320,
+            "confidence": 0.878532142857143,
+            "speaker": "C",
+            "channel": null
+        },
+        {
+            "text": "Falls jemand von Maersk oder von Accenture uns zuhört, horcht doch mal intern nach Ÿousand, uns würde das wirklich, wirklich, wirklich mal interessieren.",
+            "start": 3191500,
+            "end": 3199722,
+            "confidence": 0.8396039130434783,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Aber Andi, hab jetzt schon eine Aufgabe für dich, weil du hast uns ja in Episode 42 erklärt, wie du Counter Strike Metriken exportierst. Also ich will jetzt schon einen Exporter sehen.",
+            "start": 3199826,
+            "end": 3208218,
+            "confidence": 0.9199553125000001,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Ja, also ich gebe zu, ich spiele kein Counter Strike mehr, aber ich bin älter geworden und jeder, der älter wird, hat irgendwann so eine Art kleine Midlife Crisis. Und was tut man da? Man schaut, dass man sich Hühner anschafft. Und ich habe gerade überlegt, ob ich mir einen Hühnerstall baue, der irgendwie so guckt, okay, wie viel Hühner sind da und so weiter und dass ich dann exportiere, wie viele Hühner im Stall sind, wie viele Eier die legen und so. Ich glaube, das klingt eigentlich viel zu viel nerdig für dein Frühstücksei. Aber wie dem auch sei, lass uns wieder zurück zum Thema kommen und nicht über Hühner sprechen, sondern du hattest schon gesagt, dass ihr das Exposure Format sehr simpel gehalten habt, dass jeder Prozess das eigentlich, ich sag mal ausdrücken kann. Du hattest dann glaube ich eine was Bash genannt. Ich bin mir gar nicht sicher, ob es eine JSON oder XML Library in Bash gibt. Gibt es bestimmt irgendwo, aber verkompliziert die ganze Sache. Jetzt hat er aber natürlich auch eine eigene Query Language geschrieben, PromQL. Und meine erste Frage, die ich mir gestellt habe, als ich PromQL gesehen habe, warum eine neue Query Sprache und warum nutzt man nicht z.B. sowas wie SQL? Weil im Endeffekt habt ihr teilweise dieselben Elemente. Ihr habt Aggregatsfunktionen, ihr habt mathematische Operationen, ihr habt halbe Wear Statements mit diesem mit dem Label Selector und mit den Regex und solche Geschichten. Ihr habt eigentlich eine, ich würde mal sagen Limit Funktionalität mit dem Offset und so weiter und so fort, dass ihr zurückgucken könnt und so. Also eigentlich ist das schon sehr, sehr nah an an SQL dran, oder?",
+            "start": 3208394,
+            "end": 3301906,
+            "confidence": 0.9010794661921709,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Ich würde sagen ja und nein. Also bei Zeitreihen oder Time Series steht natürlich viel mehr der Zeitaspekt im Vordergrund einerseits und da wollten wir jetzt z.B. nicht immer in die Anfrage selber diese ganzen absoluten Zeiträume rein codieren und wir wollten einfach eine Sprache kreieren, die ja darauf optimiert ist. Und wir haben also ganz praktisch gesehen, muss ich auch zugeben, wir haben uns sehr inspirieren lassen von der Bockmon Anfrage Sprache. Das heißt, es war jetzt schon so, dass wir ein Vorbild hatten und das Vorbild war eben eher Bockmon und nicht SQL. Aber wenn man sich jetzt auch bestimmte Operationen anguckt in PromQL, die man jeden Tag macht, die in PromQL einfach sehr kurz hinzuschreiben sind, wären die sehr, sehr komplex in einer SQL ähnlichen Sprache. Z.B. ich habe 100 verschiedene Disk Usage Metriken, die Labels drauf haben, wie folgender Host, folgender Mountpoint und ich habe einen kompatiblen Satz von Metriken, die Gesamtdisk, Größe oder Filesystemgrösse mir geben mit ähnlichen Labelsätzen dran. Kann ich einfach geteilt durch zwischen diese beiden Metrik Namen schreiben und zack, ich habe die 100 Ratios raus. Also die, dann kann ich das nochmal mal 100 multiplizieren und dann habe ich einfach die Discusage in % für alle diese 100 verschiedenen File Systeme automatisch gejoint und gematched auf identischen Labelsets links und rechts, kann das auch auf Subsets von den Labels beschränken. Ich kann many to one und one to many auch erlauben als Matching Strategien und so, wo man dann schon ziemlich komplizierte Joins und Selektionen und so hat in SQL, ja, wo man dann eventuell auch halt alle Labels, auf denen man explizit matchen möchte, aufschreiben muss, statt dass es einfach automatisch passiert. Und ja, also solche Konstrukte sind einfach super schnell einfach hinzuschreiben. In Prometheus ist eine funktionale Anfragesprache, die wirklich nur Ausdrücke evaluiert und ein Resultat zurückgibt, ohne dass irgendwas verändert wird in der Datenbank. Also man kann nicht update, insert, delete, gibt es nicht, das passiert auf anderen Pfaden, das ist wirklich nur so eine Art, ja, zu folgenden Zeitpunkt evaluiert dieser Ausdruck zu folgenden Output Metriken. Und wenn man das dann noch als Graph darstellen möchte, dann evaluiert man das einfach an regelmäßigen Zeitschritten immer wieder diesen Ausdruck und dann hat man am Ende einen Graphen.",
+            "start": 3302018,
+            "end": 3441262,
+            "confidence": 0.9028040105540895,
+            "speaker": "C",
+            "channel": null
+        },
+        {
+            "text": "Z.B. ja, ich glaube bei dem Use Case, was du gerade genannt hattest, da hätte ich mir auch wirklich wieder ein Skript geschrieben, was dann SQL generiert hätte.",
+            "start": 3441286,
+            "end": 3449180,
+            "confidence": 0.9204896428571426,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Wenn es denn überhaupt geht. Also geht natürlich schon und es gibt auch einige zeitreihen Datenbanken, die eher ein SQL basiertes Format haben. Viele haben aber auch eingesehen, dass es eher ein Fehler war, also z.B. influxDB, die hatten am Anfang einen SQL basierten Dialekt und die haben dann auch gesagt, ja, nach Prometheus haben wir dann auch gemerkt, ja, das ist vielleicht nicht der richtige Ansatz für uns und dann haben sie sich weiterentwickelt.",
+            "start": 3449920,
+            "end": 3474620,
+            "confidence": 0.9264213333333331,
+            "speaker": "C",
+            "channel": null
+        },
+        {
+            "text": "Eine Funktion, die ich glaube sehr lange sehr populär war, und da weiß ich gar nicht, wo wir aktuell sind, war so eine Art Forecasting Funktion. Ihr könnt ja auf Basis von ein paar Metriken sagen, wann, wenn die, wenn der Storage jetzt so weiter wächst, dann ist der Storage in drei Tagen voll oder sowas. Sowas könnt ihr auch, ich glaube mit der Raid Funktion oder?",
+            "start": 3474960,
+            "end": 3496272,
+            "confidence": 0.9253305970149255,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Also es gibt die predict linear Funktion.",
+            "start": 3496376,
+            "end": 3498910,
+            "confidence": 0.91421,
+            "speaker": "C",
+            "channel": null
+        },
+        {
+            "text": "Genau, das meinte ich.",
+            "start": 3499080,
+            "end": 3500370,
+            "confidence": 0.9650124999999999,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Die genau, also im Prinzip vor allem für diesen Use Case eingesetzt wird, wenn man relativ vorhersagbare Raten hat, mit denen sich z.B. ein Filesystem füllt. Also in der Vergangenheit hatte man oft so alerts wie, hey, wecke mich nachts auf, wenn mein Filesystem zu 90 % voll ist, aber dann weiß man auch gar nicht, okay, vielleicht ist es ja einfach bei 90, %, aber bewegt sich gar nicht mehr weiter. Und um diese Alerts ein bisschen präziser und dynamischer zu machen, kann man dann halt noch extra Bedingungen mit reinnehmen, wie z.B. alerte mich, wenn das Filesystem ja sagen wir mal 80 % voll ist und basierend auf der Füllrate der letzten 4 Stunden, wir voraussagen würden, dass es wahrscheinlich in einem Tag voll ist. So kann man dann quasi diese Dynamik noch mit reinnehmen in den Alert.",
+            "start": 3500450,
+            "end": 3550220,
+            "confidence": 0.9072387142857146,
+            "speaker": "C",
+            "channel": null
+        },
+        {
+            "text": "Das ist glaube ich einer der Key Funktionalitäten, die ich zumindest sehr früh gelesen habe. Genau wegen dem Use Case, den du genannt hast, nachts wach werden, weil du weißt ja eigentlich schon am Vortag, wenn es einfach so weiter wächst, dass es dann in der Nacht wachsen.",
+            "start": 3550380,
+            "end": 3562532,
+            "confidence": 0.8990360416666667,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Also wenn ich das jetzt richtig verstehe, weil du Alerts genannt hast und das war ja auch, was du am Anfang erwähnt hast, dass ihr Icinga und so weiter und Nagios dann ersetzt habt mit Prometheus. Das heißt, Alerting ist auch mit dabei, ich kann die PromQL verwenden, um dann meine Alerts auszulösen und dementsprechend auch alerte.",
+            "start": 3562556,
+            "end": 3580722,
+            "confidence": 0.8862494736842106,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Genau, und die Philosophie hinter Prometheus ist wirklich, hey, lasst uns erstmal alles als Metriken einsammeln, was geht, auch wenn es nur so enormen Zustände sind, z.B. läuft gerade was oder nicht, null oder eins, es wird alles sehr effizient gespeichert und mit dieser Datenbasis kann ich dann viele Use Cases verwirklichen. Einerseits natürlich Dashboards, Ad hoc Anfragen, Automatisierung und so weiter, aber eben wie gesagt auch Alerting oder Alarmierung, wie man so schön auf Deutsch sagt. Und das wird dann viel präziser und genauer und flexibler, wenn man so eine hochdimensionale Datenbasis hat, wo man verschiedene Arten von Metriken und Daten und so weiter miteinander korrelieren kann und auch über den Zeitaspekt gucken kann. Also ich kann einerseits über die Zeit gucken, wie entwickeln sich Dinge, ich kann aber auch zwischen die time Series gucken, wie sind die Relationen zueinander, ich kann die mathematisch miteinander in Verhältnisse setzen, ich kann dann Thresholds einbauen in die promql Abfrage und so weiter. Alerting ist ein zentraler Bestandteil von Prometheus. Man konfiguriert sozusagen Alerting Regeln in Prometheus. Rein nativ passiert das per YAML Datei, da gebe ich einfach bestimmte Konditionen an. Das Herz einer jeden Alerting Regel ist der promql Ausdruck selber, wo ich z.b. ganz viele Anfrageraten selektiere, dann die beschränke auf nur die, die Fehlerraten darstellen und dann vielleicht einen Filter einbaue, der sagt, gib mir mal nur die Fehlerraten, die aktuell größer als 0,5 % sind und dann würde dieser Ausdruck all die Label Kombinationen ausgeben von Pfaden und Methoden und Serviceinstanzen, die gerade problematisch sind, also die gerade eine zu hohe Anfragefehlerrate haben. Und diese gelabelten Outputs dieses Ausdrucks würden dann zu einer weiteren server Komponente geschickt werden, die sich im Prometheus Universum Alert Manager nennt. Und der Alert Manager, der würde üblicherweise von mehreren Prometheus Servern in der eigenen Organisation all die Alerts empfangen und kann die dann routen und throtteln und zusammengruppieren und einem dann wirklich finale Notifications schicken. Also ob das pager Duty oder Slack oder irgendwas anderes ist, da gibt es viele Integrationen.",
+            "start": 3580836,
+            "end": 3719656,
+            "confidence": 0.9058707374631257,
+            "speaker": "C",
+            "channel": null
+        },
+        {
+            "text": "Jetzt stellen Grafana und Prometheus ja irgendwie so, wie soll man sagen, so eine Partnerschaft fast dar und wird ganz gerne miteinander verwendet. War das eine bewusste Entscheidung von Anfang an, keine Visualisierung oder nicht zu tief in die Visualisierung zu gehen, dass man das irgendwie auslagert oder das modular eben mit einem anderen System macht wie Grafana?",
+            "start": 3719728,
+            "end": 3739376,
+            "confidence": 0.8847200000000002,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Also wir hatten in der Anfangszeit, als Grafana noch wirklich entweder gar nicht existiert hat oder zumindest noch nicht präsent war in der Öffentlichkeit, unseren eigenen Dashboard Builder gebaut, Promdash hat er sich genannt. Den habe ich damals eigentlich angefangen zu bauen, um überhaupt Prometheus wirklich vernünftig nutzbar zu machen innerhalb von Soundcloud. Und das war auch ein ganz wichtiger Bestandteil dieser Strategie, halt Prometheus, Akzeptanz für Prometheus zu gewinnen. Also ein Prometheus Server, der vernünftig genug funktioniert, ein Use Case, der den Nutzen aufzeigt. Das war dann die Instrumentierung des Cluster Schedulers zweitausendeinundzwanzig und das Dashboarding System. Aber dann haben wir über die Jahre gemerkt, dass Grafana natürlich viel mehr Power dahinter hat und die haben auch sehr früh Prometheus Kompatibilität dann gehabt. Und dann haben wir uns gesagt, naja, also das bringt es jetzt auch nichts mehr, unsere eigenen Dashboard Builder hier zu versuchen weiterzubauen, der nur Prometheus kann und natürlich nie alle Features haben wird wie Grafana. Das war aber ganz charmant. Also er war halt nicht so komplex und überladen und er war ziemlich optimiert auf schnelles Dashboard bauen. Also manchmal habe ich ihn noch vermisst danach, aber ja, aktuell ist da eine.",
+            "start": 3739488,
+            "end": 3806052,
+            "confidence": 0.9033659898477151,
+            "speaker": "C",
+            "channel": null
+        },
+        {
+            "text": "Leichte Kritik durch die Blume gegenüber Grafana damals schon.",
+            "start": 3806076,
+            "end": 3810268,
+            "confidence": 0.9368400000000001,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Ja, also es war halt, man konnte in Promdash, dass das jetzt noch so relevant wäre, aber man konnte einfach auf der Hauptansicht bleiben und dort alle Graphen anlegen und editieren in den Ausdrücken und so weiter und so fort, ohne immer in eine Edit Ansicht und zurück und so weiter wechseln zu müssen. Und es war halt sehr Prometheus optimiert. Aber klar, natürlich ist Grafana insgesamt viel besser, also gar keine Frage.",
+            "start": 3810324,
+            "end": 3833920,
+            "confidence": 0.9311404109589042,
+            "speaker": "C",
+            "channel": null
+        },
+        {
+            "text": "Ja, also ich muss schon auch sagen, als Grafana User, vor allem als Grafana Cloud User, jedes Mal, wenn ich mich neu einlogge und ich bin halt nicht so oft drinnen in den Dashboards, jedes Mal hat sich wieder was verändert und ich muss immer wieder die Sachen suchen, wo ich das. Also ja, vielleicht für Power User, aber so als normalsterblicher User habe ich schon auch das Problem oft meine Dinge wieder zu finden in Grafana.",
+            "start": 3834460,
+            "end": 3854372,
+            "confidence": 0.9369422077922075,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Es ist Fluch und Segen zugleich. Ich kenne keinen, der sagt geil, geil, geil, ich baue mal wieder ein Dashboard in Grafana. Aber jeder macht's. Wir müssen auch ehrlich sein, du kannst ja alles damit bauen.",
+            "start": 3854476,
+            "end": 3865486,
+            "confidence": 0.9134363888888889,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Es ist supermächtig.",
+            "start": 3865518,
+            "end": 3866510,
+            "confidence": 0.8807066666666667,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Es ist supermächtig, es hat 1 Million Settings und die, wie du schon meintest, die Position dieser Settings ändert sich immer von Grafana Release zu Grafana Release und ich merke das dann auch, wenn ich wieder meine Trainingsinhalte update, wo ich dann zu jedem Schritt von Grafana Dashboard bauen halt einen Screenshot habe, dann muss ich die meiste Zeit okay, dann muss ich schon wieder alles anpassen. Das ist schon viel Aufwand.",
+            "start": 3866590,
+            "end": 3887990,
+            "confidence": 0.9220656944444445,
+            "speaker": "C",
+            "channel": null
+        },
+        {
+            "text": "Ja, wenn ich dir jetzt so zuhöre, dann ist für mich Prometheus das neue geschnitten Brot. Und ich frage mich jetzt gerade so, du hast eine Open Source Projekt in den letzten 12 Jahren und wir wissen alle, die schon mal Software entwickelt haben, dass man nicht 12 Jahre durchgängig perfekten Code schreibt oder perfekte Designs macht oder ähnliches. Mich würde mal interessieren, was sind denn die Floß von Prometheus, die du gerne korrigieren würdest, wenn zweitausendein du die ganze Sache noch mal auf der grünen Wiese starten würdest, du baust jetzt Prometheus noch mal neu. Was würdest du anders machen, was du jetzt vielleicht nicht kannst wegen dem Breaking Change oder ähnliches?",
+            "start": 3888030,
+            "end": 3925084,
+            "confidence": 0.8801038053097342,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Da gibt es nicht mal so die Riesendinge, würde ich sagen. Prometheus hat sich bewusst beschränkt auf bestimmte Dinge, z.B. nur Metriken und auch in der Grundarchitektur, Single server Architektur, Let's keep it simple und hat dann Dinge wie Skalierbarkeit anderen überlassen. Also es gibt verschiedene Prometheus kompatible Systeme, die horizontaler skalierbar sind oder mit Thanos auf Prometheus oben drauf und so weiter. Aber das würde ich immer noch nicht in Prometheus direkt selber einbauen wollen. Heutzutage vielleicht eine Sache und ich weiß nicht, ob ihr noch was zu open Telemetry sagen wolltet, aber open Telemetry ist ja sozusagen ein anderes Open Source Projekt, auch in der Cloud Native Computing Foundation.",
+            "start": 3925172,
+            "end": 3968786,
+            "confidence": 0.9247231531531526,
+            "speaker": "C",
+            "channel": null
+        },
+        {
+            "text": "Wir hatten sogar mal eine eigene Episode dazu, die ist die 101. Episode mit Severin Neumann. Ah, super, genau, wo wir die ganzen Dinge erklären. Also gerne mal reinhören, alle, die die noch nicht kennen.",
+            "start": 3968948,
+            "end": 3981198,
+            "confidence": 0.8801337142857142,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Genau, Open Telemetry ist ja ein Projekt, was einerseits standardisierte Konzepte gibt für Metriken, Logs und Tracing und wie diese ganzen Konzepte miteinander funktionieren und so weiter, doch recht komplex, auch so ein bisschen das Grafana der Instrumentierungswelt, sag ich mal. Und eine Sache, die die halt gemacht haben, die ich gut finde, und ich bin auch kritisch gegenüber anderen Dingen, zumindest wenn es um die Prometheus Kompatibilität dort geht, aber eine Sache, die bei Prometheus gut gewesen wäre, wären die Semantic Conventions, die open Telemetry hat. Also, dass man sich etwas mehr standardisiert auf die Metrik Namen und Labelnamen oder in Open Telemetry Attributnamen, die in bestimmten Kontexten verwendet werden sollen. Also z.B. hTTP Metriken, dann heißt es immer z.B. wenn du ein Attribut hast oder ein Label in Prometheus, der die Methode des Requests abbilden soll, dann gibt es einen klaren Standard dafür in Open Telemetry, der sagt, das heißt HTTP server Request Method, so wird immer dieses Methodenlabel heißen, wenn du deine Requests nach Methode aufsplitten möchtest. Und in der Prometheus Welt ist das alles ein bisschen mehr ad hoc, so kannst deine Labels so nennen, wie du möchtest und es hat vor und Nachteile, aber meistens funktioniert es auch ganz gut. Aber wenn man dann automatisiert z.B. dashboards oder Alerts oder so kreieren möchte, basierend auf einer unbekannten Datenbasis, ist es schwieriger. Da ist es halt schön, wenn man weiß, folgende Metriken werden immer genau so aussehen, dann kann ich die automatisiert bessere Dashboards und Alerts bauen. Das wäre vielleicht eine Sache. In PromQL selber gibt es so ein paar Sharp Edges, würde ich sagen, wo man sich selber leicht in den Fuß schießen kann, z.B. diese binären Operatoren, die ich vorher auch erwähnt habe, wo ich leicht Mathematik zwischen ganzen Sätzen von Metriken machen kann. Das ist halt einerseits super, aber es ist auch sehr leicht, dort etwas ein bisschen falsch hinzuschreiben, so dass die Daten nicht genau aufeinander passen und man dann einfach statt einem Fehler ein leeres Resultat zurückbringt, zweitausendein bekommt. Und das kann sehr frustrierend sein. Und da gibt es jetzt auch ein bisschen bessere Tools schon drumrum und so, die einem helfen, das zu debuggen. Aber das wäre cool, also wenn man das noch ein bisschen anders designen könnte von Grund auf, dass das einfacher zu bedienen ist sozusagen, dass man weniger dabei falsch machen kann. Ich weiß auch nicht genau, wie ich das machen würde, aber ja, das wäre so eine Sache vielleicht.",
+            "start": 3981294,
+            "end": 4128594,
+            "confidence": 0.9195810411622273,
+            "speaker": "C",
+            "channel": null
+        },
+        {
+            "text": "Das ist lustig, dass du das erwähnst, weil genau da bin ich reingerannt, jeder Zutat, da hat mir ein ehemaliger Kollege geholfen, Grüße gehen raus an Michael, vielen Dank dafür. Und ich habe es einfach nicht verstanden. Und er hat mir dann die Arithmetik dahinter erklärt und drum und dran, warum das so ist und dann natürlich auch den Workaround und dann war sehr lehrreich, aber ja, ich stand auch wie, also ich war so, hä, warum ist das jetzt leer? Warum kommt da nichts zurück?",
+            "start": 4128722,
+            "end": 4151809,
+            "confidence": 0.8960031395348834,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Ja. Hättest du denn Punkte, die du ändern würdest an Prometheus?",
+            "start": 4151889,
+            "end": 4155473,
+            "confidence": 0.9486600000000002,
+            "speaker": "C",
+            "channel": null
+        },
+        {
+            "text": "Ich gebe zu, ich bin in dem Punkt nur noch ein Prometheus Noob, als dass ich da irgendwas sagen könnte. Also das ist, wenn ich deutlich mehr Erfahrung damit habe und viele Sachen, die du jetzt auch erwähnt hast, ausprobieren habe, dann schicke ich dir eine Mail. Aber das könnte natürlich jetzt ein Community Aufruf sein an alle Hörerinnen und Hörer, falls du Prometheus schon länger einsetzt und vielleicht die ein oder andere Sache hast, die du gerne ändern würdest, komm doch in unsere Discord Community, drop doch einfach mal, welchen Flow du gefunden hast, welchen du ändern würdest und wir leiten den gern an Julius weiter.",
+            "start": 4155641,
+            "end": 4189102,
+            "confidence": 0.8918995327102808,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Ÿousand, jetzt hast du ja schon gesagt, bei Soundcloud damals habt ihr die meisten klassischen Monitoring Systeme ersetzt. Und in so einer dynamischen Umgebung ist es wichtig, dass man eben auch die Services automatisch discovern kann. Was heißt discovern auf Deutsch? Entdecken, finden, entdecken. Genau, kann. Wie sieht es denn jetzt mit so ganz klassischen Oldschool Setups aus? Also wenn ihr jetzt da meinen Serverraum habe, würdest du sagen, Prometheus kann man auch im nicht Cloud Native Bereich einsetzen? Und ist es ein sinnvoller Ersatz für die ganzen klassischen Icinga Tools, wo es halt darum geht, läuft mein Server ja oder nein? Oder gibt es irgendwo andere Bereiche, wo du sagen würdest, da ist Prometheus vielleicht nicht die beste Wahl?",
+            "start": 4189126,
+            "end": 4231004,
+            "confidence": 0.892759583333333,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Nee, also das funktioniert auch super für solche traditionellen Settings, solange man die Dinge, die man monitoren möchte, irgendwie als Metriken abbilden kann und sie dann per Pull auch abholen kann. Wie gesagt, es gibt ein paar Brücken in die push Welt, auch wenn man das braucht, aber es funktioniert super, wenn man traditionellen Serverraum hat. Vielleicht kann man dann einfach noch mehr Einsicht bekommen in die Dinge, die dort laufen. Man konfiguriert aber die eigentlichen Targets einfach statisch. In der Prometheus Konfigurationsdatei sagt man folgende Endpunkte, monitor mir die. Ich muss natürlich dann irgendwie schon mich darum kümmern, dass es dort auch Prometheus Endpunkte gibt, die ich monitoren kann. Also entweder meinen eigenen Source Code ein bisschen instrumentieren oder wenn ich einen MySQL Server habe, dann setze ich einen MySQL Dexporter daneben. Wenn ich Linux Host Metriken haben möchte, dann lasse ich auf jedem Host einen Node Exporter laufen, den Prometheus auch einfach scrapen kann. Dann kriege ich einen supertollen Satz an Linux Metriken z.b. das ist immer einer der einfachsten Wege, einfach anzufangen, wenn man diese Host Metriken haben möchte. Und dann kann man weiter und weiter bauen. Man kann mit Prometheus auch extern Dienste proben, also es gibt z.b. einen Black Ÿousand Box Exporter, der so kleine Test Requests während des Grapes auslösen kann, entweder auf Netzwerkdevice oder auf gucken, ob ein HTTP Server läuft oder ob ich einen DNS Namen auflösen kann. Solche Geschichten gibt es auch. Und ja, dann gibt es natürlich, ich überlege gerade, also welche Use Cases, für welche Use Cases ist es nicht gut?",
+            "start": 4231172,
+            "end": 4322078,
+            "confidence": 0.9052108015267176,
+            "speaker": "C",
+            "channel": null
+        },
+        {
+            "text": "Minecraft und Factorio?",
+            "start": 4322174,
+            "end": 4323670,
+            "confidence": 0.8950933333333332,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Ja, Minecraft gibt es ja in Export.",
+            "start": 4323750,
+            "end": 4327102,
+            "confidence": 0.76253,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Also man muss natürlich immer wissen, zweitausendein, also Prometheus selber macht wirklich nur die numerischen Metriken, Logs, Events, Traces, dafür braucht man auf jeden Fall andere Systeme. Logs und Events und Traces können aber auch sehr, sehr teuer werden. Also wenn ich wirklich die Details zu jedem stattgefundenen Ereignis aufzeichnen möchte, dann ist es Größenordnung mehr Rechen und Speicheraufwand als aggregierte numerische Zahlen.",
+            "start": 4327206,
+            "end": 4350508,
+            "confidence": 0.9221620634920639,
+            "speaker": "C",
+            "channel": null
+        },
+        {
+            "text": "Aber das machen ja die klassischen Isinger, Nagios und Checkmk und so weiter, meines Wissens zumindest. Ÿousand, Ne?",
+            "start": 4350604,
+            "end": 4357090,
+            "confidence": 0.8258311111111111,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Genau, genau. Die führen ja eher so regelmäßige Check Skripte aus, gucken dann okay, warning oder oder alert, haben da auch nicht so viel Flexibilität bei der Auswertung einer Alerting Condition. Also das Schöne bei Prometheus ist ja, dass ich wirklich einfach Zugriff habe auf meine ganze Datenbasis an einem Platz sozusagen. Ich lasse einen PromQl Ausdruck über verschiedene Metriken aus verschiedenen Systemen vielleicht so gelaufen, korreliere die irgendwie miteinander zusammen und sag dann, hey, hier ist irgendwas kaputt oder nicht gut.",
+            "start": 4357130,
+            "end": 4388350,
+            "confidence": 0.8758620731707318,
+            "speaker": "C",
+            "channel": null
+        },
+        {
+            "text": "Und der große Vorteil, wenn ich dich richtig verstanden habe und den ich auch zumindestens sehe, ist, dass man halt viel schneller eine Integration machen kann. Genau, ich kann einfach einen textbasierten Endpoint machen und habe schon meinen Service drin. Hingegen bei Isinga, bis ich da meinen Service reinbekommen und irgendwelche, vor allem wenn es dann um Metriken geht, ist es nochmal schwieriger. Also die Integration ist schon super easy. Das ist schon auch sehr Ÿousand, sehr cool.",
+            "start": 4388430,
+            "end": 4410172,
+            "confidence": 0.9276806410256415,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Wenn ich jetzt als Softwareentwickler, Software Entwicklerin damit noch nie was zu tun hatte, ich höre mir das jetzt an, bin jetzt hyped, das geschnittene Brot des Monitorings auszuprobieren, was würdest du mir empfehlen? Wo ist mein Startplatz? Wo beginne ich was? Was soll ich als erstes tun? Wo kriege ich mehr Informationen? Was hilft mir auf die Beine?",
+            "start": 4410316,
+            "end": 4428000,
+            "confidence": 0.8872279661016949,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Also die offizielle Open Source Projekt Homepage ist Prometheus IO. Da gibt es auch in den Docs ein getting zweitausendein. Dann habe ich auch einen YouTube Channel, wenn man auf YouTube com slash at promlabs geht. Dort habe ich ein paar introductory Videos sowohl zu Prometheus, Grafana, PromQL und so weiter. Und dann gibt es natürlich auch meine ja jetzt bezahlten kommerziellen Trainings. Also ich mache sowohl Live Trainings, besonders zu dem PromQL Aspekt, also der Anfragesprache und habe auch eine Plattform, die zweitausendein etwas weiter gefasst ist, wo es generell alle Prometheus Basics gibt auf training promlabs com. Und dort fängt es wirklich an mit einer Einführung zu Prometheus über Instrumentierung, Anfragesprache, Alerting, Dashboarding und so weiter und so fort, wo man halt diese ganzen verschiedenen Themen interaktiv auch durchlernen kann mit Übungsaufgaben und so.",
+            "start": 4428300,
+            "end": 4484192,
+            "confidence": 0.8953223529411767,
+            "speaker": "C",
+            "channel": null
+        },
+        {
+            "text": "Super, Julius, vielen lieben Dank. Wir sind leider schon am Ende vom Podcast. Wie gesagt, als Prometheus habe ich eine ganze Menge gelernt und ich merke auch noch, ich muss noch ein bisschen mehr Zeit investieren, mich mit dem System auseinanderzusetzen. Für alle Hörerinnen und Hörer, die natürlich mehr und detaillierte Fragen zu Prometheus haben, man kann und darf ganz offiziell bei Julius Geld ausgeben.",
+            "start": 4484376,
+            "end": 4510900,
+            "confidence": 0.9369040000000004,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Sehr gerne.",
+            "start": 4511280,
+            "end": 4512300,
+            "confidence": 0.9976,
+            "speaker": "C",
+            "channel": null
+        },
+        {
+            "text": "Einfach, ja, open source zahlt leider die Miete nicht und bringt leider kein warmes Essen auf auf dem Tisch, zumindestens nicht von Haus aus. Ich weiß nicht, wie viele GitHub Sponsors du hast oder ob du davon schon leben kannst.",
+            "start": 4513520,
+            "end": 4523480,
+            "confidence": 0.919721,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Ne, GitHub Sponsors mache ich nicht, aber wie gesagt, Trainings und andere Dienstleistungen rundherum, ich kann mich nicht beschweren, ist alles schon gut.",
+            "start": 4523560,
+            "end": 4530632,
+            "confidence": 0.9025126086956523,
+            "speaker": "C",
+            "channel": null
+        },
+        {
+            "text": "Jetzt muss ich doch noch eine Frage nachwerfen. Wie viele Core Developer seid ihr eigentlich?",
+            "start": 4530776,
+            "end": 4534700,
+            "confidence": 0.906538,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Wir haben den Begriff des Prometheus Team Members aktuell, was schon so Leute sind, die mehr oder weniger aktiv sind und die abstimmen berechtigt sind. Und es sind circa dreiig aktuell. Dann gibt es aber auch noch einfach sehr, sehr viele andere, hunderte bis tausende, die über die Jahre mehr oder weniger aktiv waren oder auch nur mal eine einzeitige Änderung eingeschickt haben. Aber so das Kernteam, die Leute, die wirklich, wirklich aktiv sind, sind meistens so 1015 oder so.",
+            "start": 4535080,
+            "end": 4561808,
+            "confidence": 0.9136338750000002,
+            "speaker": "C",
+            "channel": null
+        },
+        {
+            "text": "Und dann, aber ich wollte nicht in Andi unterbrechen. Also vielen, Vielen Dank auch von meiner Seite. Ich habe extrem viel gelernt und ich bin ja nur normal user, normalsterblicher User von Prometheus. Also vielen Dank für die ganzen Einblicke auch von meiner Seite. Und wir verlinken natürlich alles in den Show Notes.",
+            "start": 4561904,
+            "end": 4578108,
+            "confidence": 0.9152990566037739,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Wolfgang, ich glaube, du bist eher so der Boomer der Monitoring Systeme. Ja, mit deinem Check MK und, und.",
+            "start": 4578164,
+            "end": 4582852,
+            "confidence": 0.8179126315789474,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Ja, ich will ja, ich habe gesagt Österreich, aber ich habe jetzt herausgefunden, ist ein München Unternehmen. Ich will ja nur die deutschen Unternehmen hochleben lassen, darum check. Verstehe.",
+            "start": 4583036,
+            "end": 4591804,
+            "confidence": 0.7883706896551724,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Ja, danke auch für die Einladung. Hat Spaß gemacht.",
+            "start": 4591852,
+            "end": 4594200,
+            "confidence": 0.9504544444444445,
+            "speaker": "C",
+            "channel": null
+        },
+        {
+            "text": "Alle links findet ihr natürlich wie immer in den Show Notes. [Sos/eos], und ansonsten sage ich vielen lieben Dank, Julius, für deine Zeit. Ja, dann Lass uns mal Prometheus nutzen. Tschüss, viel Spaß.",
+            "start": 4595660,
+            "end": 4603850,
+            "confidence": 0.9092512121212121,
+            "speaker": "A",
+            "channel": null
+        }
+    ],
+    "confidence": 0.906668708162963,
+    "audio_duration": 4611.0,
+    "webhook_status_code": null,
+    "webhook_auth": false,
+    "summary": null,
+    "auto_highlights_result": null,
+    "content_safety_labels": null,
+    "chapters": null,
+    "sentiment_analysis_results": null,
+    "entities": null
+}
