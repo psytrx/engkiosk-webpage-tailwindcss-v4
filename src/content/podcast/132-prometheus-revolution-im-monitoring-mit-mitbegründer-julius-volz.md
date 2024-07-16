@@ -64,7 +64,9 @@ image: "./132-prometheus-revolution-im-monitoring-mit-mitbegr\xFCnder-julius-vol
 length_second: 4611
 pubDate: 2024-07-16 04:00:00+00:00
 rtlplus: ''
-six_user_needs: []
+six_user_needs:
+- Update me
+- Educate me
 speaker:
 - name: Andy Grunwald
   transcriptLetter: A
