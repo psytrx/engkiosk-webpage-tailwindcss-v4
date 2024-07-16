@@ -1,6 +1,6 @@
 ---
 advertiser: ''
-amazon_music: ''
+amazon_music: https://music.amazon.com/podcasts/c35a09fe-4116-4e04-8f68-77d61b112e46/episodes/49dd37ed-872e-421f-b85a-c2f62145e38f/engineering-kiosk-132-prometheus-revolution-im-monitoring-mit-mitbegr%C3%BCnder-julius-volz
 apple_podcasts: ''
 audio: https://audio1.redcircle.com/episodes/0ddae330-a8a8-4fe6-a334-4a50199531c1/stream.mp3
 chapter:
