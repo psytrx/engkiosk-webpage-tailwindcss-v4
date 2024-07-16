@@ -76,7 +76,11 @@ speaker:
   transcriptLetter: C
   website: https://juliusv.com/
 spotify: https://open.spotify.com/episode/0RzSEPPwhMfEHjUILDTtyz
-tags: []
+tags:
+- Cloud
+- DevOps
+- Backend
+- Interview
 title: "#132 Prometheus: Revolution im Monitoring mit Mitbegr\xFCnder Julius Volz"
 transcript_raw: ''
 transcript_slim: ''
