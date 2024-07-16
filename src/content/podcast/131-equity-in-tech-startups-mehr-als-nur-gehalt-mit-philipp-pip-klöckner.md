@@ -1,5 +1,5 @@
 ---
-advertiser: ''
+advertiser: Engineering Kiosk
 amazon_music: https://music.amazon.com/podcasts/c35a09fe-4116-4e04-8f68-77d61b112e46/episodes/a7bba855-befc-466e-91e1-35d891b17f08/engineering-kiosk-131-equity-in-tech-startups-mehr-als-nur-gehalt-mit-philipp-pip-kl%C3%B6ckner
 apple_podcasts: https://podcasts.apple.com/us/podcast/131-equity-in-tech-startups-mehr-als-nur-gehalt-mit/id1603082924?i=1000661609997&uo=4
 audio: https://audio1.redcircle.com/episodes/7177e0ff-d168-4fe0-a38f-7e5be23bdde5/stream.mp3
