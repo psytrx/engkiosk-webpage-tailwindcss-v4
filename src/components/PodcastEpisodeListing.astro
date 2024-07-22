@@ -41,10 +41,13 @@ if (episodes) {
 		episodesToShow = episodesToShow.concat(allEpisodes.slice(0, latestNumber));
 	}
 
-	episodesToShow = episodesToShow.concat(
-		allEpisodes.filter((episode) => episodes.some((ep) => episode.slug.includes(ep)))
-	)
-
+	// add all remaining episodes, keep the order and prevent duplicates
+	episodes.forEach((ep) => {
+		const episodeToAdd = allEpisodes.find((episode) => episode.slug.includes(ep));
+		if (episodeToAdd && !episodesToShow.includes(episodeToAdd)) {
+			episodesToShow.push(episodeToAdd);
+		}
+	});
 
 } else {
 	if (numberOfItems && numberOfItems > 0) {
