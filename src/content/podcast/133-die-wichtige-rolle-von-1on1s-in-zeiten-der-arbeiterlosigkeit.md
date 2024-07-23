@@ -88,7 +88,10 @@ speaker:
   transcriptLetter: A
   website: https://wolfgang.gassler.org/
 spotify: https://open.spotify.com/episode/7cy0eJ3QZhld17xGqQd2Bq
-tags: []
+tags:
+- Team
+- Karriere
+- Leadership
 title: '#133 Die wichtige Rolle von 1on1s in Zeiten der Arbeiterlosigkeit'
 transcript_raw: ''
 transcript_slim: ''
