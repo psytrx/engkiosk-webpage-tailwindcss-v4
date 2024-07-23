@@ -13,7 +13,7 @@ talks:
     bio: 'Nico is an engineering manager at Dynatrace, working with teams building the cloud and CI/CD foundations of an internal developer platform. With a background in robotics and devops, he’s passionate about all things automation and creating software that simplifies life. Nico co-organizes agile and leadership meetups and volunteers at robotics competitions for children.'
     linkedin: 'nico-riedmann'
     website: 'https://riedmann.dev/'
-  - avatar: 'generic-you.jpg'
+  - avatar: 'generic-you2.jpg'
     name: 'Lightning talks'
     title: 'Present your idea, topic, or project'
     description: "We invite you to share any tech-related topic that you're passionate about or find interesting. Whether it's a new technology, your experience with a specific tool, an idea for an open-source project, or even seeking feedback on a potential side project, we want to hear from you. In case you want to give a lightning talk, please get in touch with us via email or on site at the meetup."
