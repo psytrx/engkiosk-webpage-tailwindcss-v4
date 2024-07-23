@@ -1,5 +1,5 @@
 ---
-advertiser: ''
+advertiser: 'We manage'
 amazon_music: https://music.amazon.com/podcasts/c35a09fe-4116-4e04-8f68-77d61b112e46/episodes/798724d9-f23a-4e68-9410-2d3eefb04085/engineering-kiosk-133-die-wichtige-rolle-von-1on1s-in-zeiten-der-arbeiterlosigkeit
 apple_podcasts: https://podcasts.apple.com/us/podcast/133-die-wichtige-rolle-von-1on1s-in-zeiten-der-arbeiterlosigkeit/id1603082924?i=1000663047995&uo=4
 audio: https://audio1.redcircle.com/episodes/4d8e35fc-be51-4717-ba1e-df049789f9a0/stream.mp3
