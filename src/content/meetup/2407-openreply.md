@@ -15,8 +15,7 @@ talks:
     website: 'https://riedmann.dev/'
   - avatar: 'generic-you.jpg'
     name: 'Lightning talks'
-    title: 'Present your project'
-    description: 'We invite you to share any tech-related topic that you're passionate about or find interesting. Whether it's a new technology, your experience with a specific tool, an idea for an open-source project, or even seeking feedback on a potential side project, we want to hear from you. In case you want to give a lightning talk, please get in touch with us via email or on site at the meetup.'
-
+    title: 'Present your idea, topic, or project'
+    description: "We invite you to share any tech-related topic that you're passionate about or find interesting. Whether it's a new technology, your experience with a specific tool, an idea for an open-source project, or even seeking feedback on a potential side project, we want to hear from you. In case you want to give a lightning talk, please get in touch with us via email or on site at the meetup."
 eventId: '2fcp5a64su8u76v6s61ujk14k7'
 ---
