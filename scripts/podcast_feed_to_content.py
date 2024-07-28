@@ -232,9 +232,9 @@ def sync_podcast_episodes(rss_feed, path_md_files, path_img_files, no_api_calls=
         #
         # Query quota (2022-07-17)
         # The number of requests per second is limited to 50 requests / 5 seconds.
-        deezer_client = deezer.Client()
-        deezer_podcast = deezer_client.get_podcast(DEEZER_PODCAST_ID)
-        deezer_episodes = deezer_podcast.get_episodes()
+        with deezer.Client() as deezer_client:
+            deezer_podcast = deezer_client.get_podcast(DEEZER_PODCAST_ID)
+            deezer_episodes = deezer_podcast.get_episodes()
         logging.info("Requesting content from Podcast sites ... Successful")
 
     logging.info("Processing Podcast Episode items ...")
