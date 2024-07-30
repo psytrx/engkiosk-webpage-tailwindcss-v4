@@ -14,6 +14,8 @@ let title = 'Werbung im Engineering Kiosk Podcast';
 let description = 'Erreiche die schwer erreichbare Zielgruppe von Softwareentwicklern und technischen Entscheidern im Engineering Kiosk Podcast.';
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 
+
+import testimonialMediaLab from "../images/partners/medialab_alex.jpg";
 ---
 
 <html lang="de">
@@ -74,6 +76,26 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 							</div>	
 					</div>		
 				</div>
+				<div class="flex -mx-4">
+					<div class="review-box">
+						<div class="flex flex-col h-full bg-white shadow-md rounded-md">
+							<h3 class="pb-14 mb-auto p-8 text-xl text-coolGray-500 leading-loose font-medium">
+								Unsere Zusammenarbeit mit dem Engineering Kiosk Podcast war ein voller Erfolg. Wir suchten nach einer Möglichkeit, unsere Förderangebote gezielt an hochqualifizierte Fachleute aus der Softwareentwicklungs- und Technikbranche zu kommunizieren.
+<br><br>
+Der Engineering Kiosk Podcast mit seiner technischen Zielgruppe von Senior-Engineers erwies sich als die perfekte Plattform, um unsere Botschaften zu transportieren. Wir erreichten erfahrene Entwickler⋅innen, die Ideen einbringen und selbständig an Projekten arbeiten können. Diese Fachleute nutzen den Podcast, um ihr Wissen zu erweitern und waren daher besonders offen für unsere innovativen Angebote.
+<br><br>
+Mit der gezielten Ansprache in Host-Read Botschaften und der hohen Glaubwürdigkeit der Podcast Hosts konnten wir mit der Kampagne eine signifikante Steigerung unserer Bekanntheit erreichen und wertvolle Bewerber für unsere Förderprogramme gewinnen. Wir werden auch in Zukunft auf die effektive und zielgerichtete Werbeplattform des Engineering Kiosk Podcasts setzen.
+
+							</h3>
+							<div class="flex items-center py-8 pl-4 pr-2">
+								<Image class="w-20 md:w-24 h-20 md:h-24 mr-6 rounded-full" src={testimonialMediaLab} alt="Alexander Rühl, Teamlead Marketing, Media Lab Bayern" title="Alexander Rühl, Teamlead Marketing, Media Lab Bayern" />
+								<div>
+									<h4 class="mb-1 text-lg font-semibold">Alexander Rühl</h4>
+									<p class="text-lg text-coolGray-400">Teamlead Marketing, Media Lab Bayern</p>
+								</div>
+							</div>
+						</div>
+					</div>
 			</section>	
 
 
