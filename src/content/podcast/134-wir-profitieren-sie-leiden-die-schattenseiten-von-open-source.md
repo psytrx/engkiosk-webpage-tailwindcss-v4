@@ -1,6 +1,6 @@
 ---
 advertiser: ''
-amazon_music: ''
+amazon_music: https://music.amazon.com/podcasts/c35a09fe-4116-4e04-8f68-77d61b112e46/episodes/2eb75bdb-8488-4ed3-9cda-8a5b66ba4ada/engineering-kiosk-134-wir-profitieren-sie-leiden-die-schattenseiten-von-open-source
 apple_podcasts: https://podcasts.apple.com/us/podcast/134-wir-profitieren-sie-leiden-die-schattenseiten-von/id1603082924?i=1000663751171&uo=4
 audio: https://audio1.redcircle.com/episodes/3ffcbdb0-eeb3-4631-95cb-98c854e42f7f/stream.mp3
 chapter:
