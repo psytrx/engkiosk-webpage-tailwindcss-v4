@@ -84,7 +84,9 @@ speaker:
 - name: Wolfi Gassler
   website: https://wolfgang.gassler.org/
 spotify: https://open.spotify.com/episode/0EVeUEDCgifWsGaek6EzfW
-tags: []
+tags:
+- Tech Kultur
+- Open Source
 title: '#134 Wir profitieren, sie leiden: Die Schattenseiten von Open Source'
 transcript_raw: ''
 transcript_slim: ''
