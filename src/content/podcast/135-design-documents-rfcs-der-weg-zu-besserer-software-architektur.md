@@ -89,10 +89,10 @@ tags:
 - Tech Kultur
 - Software Engineering
 - Remote work
-- Software Qualität
+- "Software Qualit\xE4t"
 title: '#135 Design Documents & RFCs: Der Weg zu besserer Software-Architektur'
-transcript_raw: ''
-transcript_slim: ''
+transcript_raw: src/data/transcripts/135-transcript.zip
+transcript_slim: src/data/transcripts/135-transcript-slim.json
 youtube: ''
 
 ---
