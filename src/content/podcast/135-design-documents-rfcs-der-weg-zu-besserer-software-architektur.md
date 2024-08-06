@@ -85,7 +85,11 @@ speaker:
   transcriptLetter: B
   website: https://wolfgang.gassler.org/
 spotify: https://open.spotify.com/episode/34Ikyt3Ma6zqZ7qU6U8Kje
-tags: []
+tags:
+- Tech Kultur
+- Software Engineering
+- Remote work
+- Software Qualität
 title: '#135 Design Documents & RFCs: Der Weg zu besserer Software-Architektur'
 transcript_raw: ''
 transcript_slim: ''
