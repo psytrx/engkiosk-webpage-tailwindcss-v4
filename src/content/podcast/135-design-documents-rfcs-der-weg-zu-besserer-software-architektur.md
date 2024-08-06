@@ -1,6 +1,6 @@
 ---
 advertiser: ''
-amazon_music: ''
+amazon_music: https://music.amazon.com/podcasts/c35a09fe-4116-4e04-8f68-77d61b112e46/episodes/d55afa90-10e6-40b2-92fd-df220c62a82c/engineering-kiosk-135-design-documents-rfcs-der-weg-zu-besserer-software-architektur
 apple_podcasts: https://podcasts.apple.com/us/podcast/135-design-documents-rfcs-der-weg-zu-besserer-software/id1603082924?i=1000664438731&uo=4
 audio: https://audio1.redcircle.com/episodes/8952fc9c-5ea0-4a1e-9825-f372d9f6f734/stream.mp3
 chapter:
