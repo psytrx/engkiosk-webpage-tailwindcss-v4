@@ -1,0 +1,964 @@
+{
+    "language_code": "de",
+    "audio_url": "https://audio1.redcircle.com/episodes/8952fc9c-5ea0-4a1e-9825-f372d9f6f734/stream.mp3",
+    "punctuate": true,
+    "format_text": true,
+    "dual_channel": false,
+    "webhook_url": null,
+    "webhook_auth_header_name": null,
+    "webhook_auth_header_value": null,
+    "audio_start_from": null,
+    "audio_end_at": null,
+    "word_boost": [],
+    "boost_param": null,
+    "filter_profanity": false,
+    "redact_pii": false,
+    "redact_pii_audio": false,
+    "redact_pii_audio_quality": null,
+    "redact_pii_policies": null,
+    "redact_pii_sub": null,
+    "speaker_labels": true,
+    "speakers_expected": 2,
+    "content_safety": false,
+    "content_safety_confidence": null,
+    "iab_categories": false,
+    "custom_spelling": null,
+    "disfluencies": false,
+    "sentiment_analysis": false,
+    "auto_chapters": false,
+    "entity_detection": false,
+    "summarization": false,
+    "summary_model": null,
+    "summary_type": null,
+    "auto_highlights": false,
+    "language_detection": false,
+    "speech_threshold": null,
+    "speech_model": null,
+    "id": "c4142913-ec52-49fd-b78c-b0f46ef538c3",
+    "status": "completed",
+    "error": null,
+    "utterances": [
+        {
+            "text": "Herzlich willkommen zu einer neuen Episode vom Engineering Kiosk Podcast. Wir alle haben schon einmal von einer Planungsphase gehört, um ein neues Projekt zu starten und denken dabei an aufgeblasene Prozesse und lange Wasserfall Diagramme. Und das Engineering Team fragt sich dabei, wann kommen wir denn endlich mal zu den Details? Da kommen die Begriffe Design Dokuments und Request for Comments, kurz RFC ins Spiel. Doch das doofe jemand muss diese Dokumente auch irgendwie schreiben. Und da sind wir gleich bei zwei von meinen Schreiben und Design Documents. In dieser Episode klären wir, wozu Design Documents eigentlich gut sind, worauf es dabei ankommt, wo der Unterschied zu RFCs sind, ob das ganze nicht ein riesiger Wasserkopf ist, um nur zu verhindern, Dinge endlich auf die Straße zu bringen und welche Firmenkultur das Ganze benötigt. Und los geht's.",
+            "start": 4040,
+            "end": 59110,
+            "confidence": 0.8842283941605844,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "So Andi, bevor wir jetzt mal starten, jetzt haben wir ja wieder mal so eine Episode, wo du mit dem Thema mir schon seit Jahren, fast seit Beginn in den Ohren liegst. Eigentlich fast dein Lieblingsthema. No pressure übrigens, wir erwarten viel, aber Design Documents ist ja eines deiner Lieblingsthema. Du schreibst gern, du schreibst alles auf, du machst für alles ein Dokument. Du schickst sogar Nachrichten, die teilweise einem Dokument entsprechen, vom Umfang her und von der Gliederung einer einfachen Nachricht auf Slack. Also du bist ja eigentlich die Vermenschlichung der Design Documents. Wenn ich dich jetzt fragen würde, warum sollte man denn diese Design Documents verwenden, die du tagtäglich überall verwendest? Du als Fanboy von Design Documents. Warum ist es so wichtig für die Menschheit, Design Documents zu verwenden?",
+            "start": 61370,
+            "end": 110848,
+            "confidence": 0.9209259541984735,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Wenn man die so zuhört, könnte man denken, ich habe den Buchdruck erfunden. Aber nein, dem ist nicht so und ich schreibe nicht gerne. Es ist einfach nur so, ich nutze Schreiben als Selbstschutz. Was hattest du vor vier Tagen zum Abendessen? Im Podcast wird diese Pause mit hoher Wahrscheinlichkeit rausgeschnitten. Der Wolfgang überlegt jetzt schon seit 25 s.",
+            "start": 110904,
+            "end": 131440,
+            "confidence": 0.9163071186440674,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Mindestens. Mindestens.",
+            "start": 131560,
+            "end": 133100,
+            "confidence": 0.57395,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Ich sage jetzt nichts.",
+            "start": 133400,
+            "end": 134176,
+            "confidence": 0.6675774999999999,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Du wüsstest, aber ich sag's nicht. Und geht natürlich deine ganze Argumentationskette nicht auf.",
+            "start": 134208,
+            "end": 138900,
+            "confidence": 0.8497292857142857,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Ich sage jetzt nicht, du sollst dein Abendessen aufschreiben, doch ich sage einfach nur wer schreibt, der bleibt. So ähnlich wie Stromberg, wenn ich mit der Zeit gehe, muss mit der Zeit gehen. Deswegen wer schreibt, der bleibt. Nein, es ist einfach nur mal so folgendermaßen und ich hole jetzt mal ein bisschen weiter aus. Und das beschreibt eigentlich nur meine Liebe zum zum Schreiben und die Notwendigkeit. Und daraus resultieren dann die Design Dokumente auf Basis der Profession für Software Engineering. Also hinsetzen, zuhören. Vor ein paar Jahren sind wir noch alle fünf Tage die Woche ins Büro gefahren. Dann kam diese Seuche, ist über die Welt gekommen, gekommen, gebrochen, herbeigebrochen, hat sich verbreitet, Covid. Und auf einmal war Remote arbeiten für zwei Jahre für jeden irgendwie normal bzw. Ein Muss, ob du wolltest oder nicht. Inzwischen sind wir ein paar Jahre weiter und sehr, sehr, sehr viele Firmen gehen wieder zurück ins Büro, RTO meist genannt, return to Office. Und da gibt es jetzt diesen Clinch. Man kann einfach sagen, Remote Jobs sind auf dem Vormarsch bzw. Die Methode von zu Hause oder von wo auch immer zu arbeiten, ist auf dem Vormarsch, weil viele Leute die Vorteile erkannt haben. Remote work bedarf aber dedizierte Skills. Ich denke z.B. für die meisten Junior Engineers ist Remote Work einfach nichts. Du musst wissen, wie du dich selbst in eine fremde Codebase einarbeitest, wie du im Team connectest, wie du dich selbst organisierst und so weiter und so fort.",
+            "start": 138960,
+            "end": 218104,
+            "confidence": 0.921325903614457,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Ÿousand und die ja noch nicht wissen, wie Design Documents funktionieren, aber wenn sie diese Episode hören, dann sind sie automatisch remote work geeignet, oder?",
+            "start": 218232,
+            "end": 224710,
+            "confidence": 0.9309236,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Es ist auf jeden Fall ein unglaublich starker Skill, denn Schreiben als Skill ist meines Erachtens nach für Remote work unerlässlich.",
+            "start": 224830,
+            "end": 233758,
+            "confidence": 0.9123847619047621,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Okay, ich arbeite jetzt ja gar nicht als Remote Worker, das heißt, ich kann das alles vergessen und brauche keine Design Documents.",
+            "start": 233934,
+            "end": 240070,
+            "confidence": 0.9536209090909092,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Guter Punkt, fast hetze mich aber im Endeffekt als guter Software Engineer, weil du bist ja jetzt Junior, Wolfgang, Zweitausendein, du möchtest ja auch Midlevel oder Senior oder vielleicht sogar Staff und weiter schätzen mich.",
+            "start": 240150,
+            "end": 252492,
+            "confidence": 0.885892857142857,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Auch immer alle jünger.",
+            "start": 252516,
+            "end": 253300,
+            "confidence": 0.96947,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Also ihr kennt dieses Problem in deiner Fachkarriere. Und irgendwann kommt es halt zu dem Punkt, wo du ganz viel wissen angehäuft hast, weil du vier, fünf, sechs Jahre in der Firma warst. Und dann bist du die wandelnde Dokumentation. Und im Endeffekt musst du, Achtung, wieder etwas aufschreiben, damit du dein Wissen von deinem Kopf in ein Markdown Dokument, Confluence Wiki oder was du auch immer nutzt, Notion als Dokumentation niederschreiben und baff, siehst du, da sind wir wieder beim Schreiben, weil als Software Engineer, als Senior Software Engineer, als Dev Engineer bist du automatisch ein Multiplikator und da kommst du einfach ums Schreiben nicht herum. Und umso weiter du in deiner Karriere bist, desto eher trifft folgendes zu, und zwar the Pragmatic Engineer, ehemaliger Engineering Management Zweitausendein Lieder bei Uber, hat mal was getweetet. Und zwar sagt er Software Engineers, die viele Tests für ihren Code schreiben und dann nach einem Review fragen, schippen oft mehr maintainable Code Software Engineers, welche Design Docs schreiben für die Architektur und dann nach Reviews fragen, shippen mehr maintainable architecture. Und umso höher du in deiner Fachkarriere kommst, desto mehr gehst du weg vom Code schreiben und mehr zur Architektur. Ich rede jetzt gar nicht von dieser Position eines Architekten und so.",
+            "start": 253340,
+            "end": 330714,
+            "confidence": 0.9026515238095241,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Das heißt, du wirst mir jetzt sagen, was die Tests des Software Engineering sind, sind die Design Docs von Architektur Engineering?",
+            "start": 330882,
+            "end": 340490,
+            "confidence": 0.8600485714285716,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Gewagte these. Kommt schon nah.",
+            "start": 340570,
+            "end": 342890,
+            "confidence": 0.9153499999999999,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Wieso? Das hast du gerade gesagt.",
+            "start": 343010,
+            "end": 344978,
+            "confidence": 0.8889233333333332,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Ich habe einen Tweet von Pragmatic Engineer vorgelesen und dem ich eigentlich zustimme. Das heißt nicht, dass du Tests in deinem Code als Staff Engineer weglassen solltest.",
+            "start": 345154,
+            "end": 353602,
+            "confidence": 0.8703603703703704,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Was du ja gerade gesagt hast, ist, wenn man Tests schreibt für Code, hat man maintainable Code und wenn man Design Documents schreibt, hat man maintainable Architecture.",
+            "start": 353746,
+            "end": 364526,
+            "confidence": 0.9138896296296297,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Du hast den wichtigen Teil der Reviews vergessen, weil Leute natürlich.",
+            "start": 364638,
+            "end": 367950,
+            "confidence": 0.943870909090909,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Ja, aber das ist bei beiden Bereichen, dass man Reviews hat. Natürlich.",
+            "start": 367990,
+            "end": 372246,
+            "confidence": 0.9254824999999999,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Genau. Ich habe gesagt, die shippen dann mehr maintainable architecture. Das ist korrekt, weil umso höher du dann nach Fachkarriere kommst, desto mehr Impact wirst du mit deiner Arbeit haben. Bzw. Solltest du dich auf die Arbeitspakete fokussieren, die mehr Impact haben. Und eine ordentliche Architektur zu bauen, die skalieren kann, ausfallsicher ist und so weiter und so fort, das ist höherer Impact, als wenn du jetzt einen neuen Zahlungsbutton für einen neuen Zahlungsprovider irgendwo einfügst.",
+            "start": 372318,
+            "end": 396570,
+            "confidence": 0.927468289473684,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Jetzt wolltest du unbedingt diese Reviews drin haben. Warum sind die Reviews so wichtig? Oder was hat das jetzt mit Design Dokumente zu tun?",
+            "start": 396650,
+            "end": 404490,
+            "confidence": 0.9183608333333333,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Naja, nur weil du einen Design Doc schreibst, heißt das nicht, dass es gut ist. Kann trotzdem scheiße sein. Da sollten schon Leute drüber gucken und sagen, ja, okay, cool. Ich denke auch, das macht in unserem aktuellen Kontext Sinn und diese Entscheidung treffen wir explizit so unter den gegebenen Umständen, weil du bist halt auch nur ein Mensch. Und wie bei Pair Programming und Code Reviews sollte das natürlich auch bei großen, ich nenne es mal impactvollen Entscheidungen der Fall sein, dass da wenigstens vier Augen oder sechs oder acht drüber gucken.",
+            "start": 404570,
+            "end": 431926,
+            "confidence": 0.9071915053763441,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Okay, also du willst ein gutes Design Dokument haben. Was ist dann ein gutes Design Dokument? Bzw. Erklär mal überhaupt, was ist ein Design Dokument, damit man überhaupt auf den Punkt kommen können, was ein gutes Design Dokument ist.",
+            "start": 432038,
+            "end": 443854,
+            "confidence": 0.8847156410256409,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Ich verstehe unter einem Design Dokument eigentlich ein Dokument, also ein Google Doc oder oder ähnliches, von mir aus auch eine Word Page oder eine Wikipage, die das high level Design und die wichtigsten Designentscheidungen einer Software App erklärt. Und dabei liegt der Schwerpunkt jetzt nicht auf wir schreiben das in Go oder in Java, sondern eigentlich auf den auf den Trade offs und auf die Entscheidungen, die du da wirklich triffst. Denn im Endeffekt bei Software Design bzw. Beim Schreiben einer Software Applikation geht es immer nur darum, was tust du nicht? Und Design Doc ist meines Erachtens nach der hundertprozentige Fokus auf die einzige Aufgabe des Software Engineers, nicht unbedingt Code zu schreiben, sondern Probleme zu lösen. Denn wir erinnern uns, die IT ist nur Mittel zum Zweck, um menschliche Probleme zu lösen, z.b. in deiner Firma mehr Profit zu erzeugen. Und ein Design Doc ist manchmal, meines Erachtens nach oft, nicht immer, oft die bessere Lösung, als direkt in die IDE zu springen und Code zu zweitausendein. Du kriegst jetzt eine Aufgabe, ein neues Paymentsystem zu implementieren. Ich hoffe, du springst nicht in den Editor, sondern nimmst dir erstmal einen Zettel und einen Stift und malst ein paar Boxen. Die paar Boxen packst du dann in ein Dokument und beschreibst, warum du die Boxen gezeichnet hast, unter welchen Entscheidungen, wieso du diese Boxen so gezeichnet hast und warum das komplette Paymentsystem 10 Boxen ist und nicht nur eine Box, ein großer Monolith.",
+            "start": 443902,
+            "end": 523956,
+            "confidence": 0.9152121224489794,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Aber habe ich das nicht schon alles diskutiert mit meinem Product Owner? Und wenn das ganze Produkt beschrieben wird.",
+            "start": 524148,
+            "end": 529864,
+            "confidence": 0.8682226315789474,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Der Product Owner entscheidet ja, was wir bauen wollen, aber nicht wie. Oder gibt ein Product Owner dir die technischen Lösungen vor?",
+            "start": 529932,
+            "end": 536536,
+            "confidence": 0.9505177272727273,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Das heißt, es steht aber dann schon drinnen, dass ich go verwende.",
+            "start": 536648,
+            "end": 539304,
+            "confidence": 0.9653991666666667,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Das kommt immer ganz auf die Firma an. Ich weiß nicht, wie viele Sprachen du in der Firma verwendest. Ach Entschuldigung, du arbeitest ja gar nicht in einer Firma, tut mir leid. Wenn deine Firma jetzt eigentlich ein Python Shop ist, dann wird mit hoher Wahrscheinlichkeit das neue Payment System auch in Python geschrieben, es sei denn zweitausendein. Du wählst dann go und in dem Design Dokument steht dann natürlich drin, aus welchen Gründen du hier Python nicht nutzt und warum du den Case für go machst.",
+            "start": 539432,
+            "end": 565630,
+            "confidence": 0.9212886206896549,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Okay, also über die Reviews bekomme dann wahrscheinlich auch den Input, irgendwas fehlt, was vielleicht für mich obvious war, weil die Sprache sowieso klar war, für jemanden anderen dann vielleicht nicht. Da hilft mir dann der Review Prozess auch. Also was, was den anderen Leuten fehlt an Informationen, um allumfassend zu sein, so dass es sinnvoll und einfach zu verstehen ist von anderen Personen in meinem Team.",
+            "start": 565750,
+            "end": 588194,
+            "confidence": 0.9440608955223878,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Z.B. ja genau, da muss man natürlich ein bisschen aufpassen. Also ein Design Doc sagt auch, okay, am Anfang wird z.B. der Scope definiert, um was geht es hier und was schließen wir in diesem Design Doc ein? Und auch die Ziele, aber auch die Flip side, was ist explizit nicht im Scope und was ist nicht das Ziel?",
+            "start": 588242,
+            "end": 605530,
+            "confidence": 0.9624705084745765,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Hast du da ein Beispiel, was jetzt nicht eben im Scope sein kann, warum man irgendwas ausschließt?",
+            "start": 605650,
+            "end": 610722,
+            "confidence": 0.8825217647058823,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Ja, nehmen wir mal z.b. wenn wir das Payment System bauen wollen und du möchtest aus dem Payment System E Mails versenden, dann ist so ein klassischer Non Scope oder Non Goal das Design des e Mail Systems, sondern du schreibst dann eigentlich nur, okay, wir fügen dann ein neues Cue Item zum E Mail System hinzu. Und weil das E Mail System ist eigentlich ein eigenes Design Dokument, weil E Mails versenden ist halt super komplex. Das wäre jetzt mal ein Beispiel. Da nehme ich natürlich sehr viel an, dass du in deiner Firma bereits eine Methode hast, E Mails zu versenden, auch wenn es nur der Relay und SMTP Server von den Sysadmins drüben ist, ja, wie auch immer. Da sagen wir, okay, wir verschicken das einfach, aber wir kümmern uns nicht um das wirkliche E Mail versenden in diesem Design Doc, sondern das nehmen wir als gegeben an, weil in irgendeiner Art und Weise musst du halt einen Rahmen ziehen und irgendwo muss halt mal Ende sein, sonst wird das nämlich auf einmal 40 Seiten lang.",
+            "start": 610786,
+            "end": 659998,
+            "confidence": 0.9130242458100557,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Und die Ziele, wenn du sagst, wir definieren jetzt im Vorhinein schon Ziele, was wären das für Ziele?",
+            "start": 660134,
+            "end": 665550,
+            "confidence": 0.9429172222222224,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Naja, also Beispiel, muss dein Payment System ÿousand 1 Million Bezahlungen pro h abwickeln können oder reichen vielleicht erstmal 100? Das ist ja z.B. ein Performance Ziel oder welcher Uptime muss garantiert sein? Jetzt bei einem Paymentsystem hoffentlich eine sehr hohe, bei einem Bi Badge Job kann die Uptime sehr wahrscheinlich ein bisschen geringer sein, weil du in den diesen in der Regel neu berechnen kannst, aber Payments kannst du halt nicht neu berechnen, also oft nicht ohne Sicherheitsnetz.",
+            "start": 665630,
+            "end": 693676,
+            "confidence": 0.8776082278481013,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Wenn ich dich jetzt aber richtig verstehe und du sagst, okay, Product basiert in einem anderen Stadium, die ganzen Features und so weiter mit dem Product Owner, dann geht es also wirklich nur mehr um die Umsetzung. Es wird nicht definiert, was für technische Features kommen jetzt rein oder noch eine Auswahl oder so, sondern es ist wirklich an dem Punkt, wo man dann wirklich in die Umsetzung geht.",
+            "start": 693828,
+            "end": 715628,
+            "confidence": 0.9200013043478262,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Was einem Design Dokument auf jeden Fall vorausgehen muss, ist ein Problem, was wir lösen wollen, also das, was und warum wir das erreichen wollen.",
+            "start": 715684,
+            "end": 722746,
+            "confidence": 0.9433696,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Aber vom Prozess her ist es jetzt nicht so, ich schreibe ein Design Dokument, was könnten wir machen mit den Features und danach wird entschieden, was jetzt für Features gemacht werden, sondern es ist im Normalfall umgekehrt. Es wird definiert, was für Features werden gebaut und dann ist es die Umsetzung oder wird es auch verwendet, um z.B. irgendeine Kostenschätzung zu machen, dass ich jetzt sage, okay, machen Design Document, was ist alles möglich, wie lange dauert es? Und danach wird abgeschätzt, okay, wir können nicht alles machen, wir machen jetzt nur 50. %.",
+            "start": 722908,
+            "end": 751490,
+            "confidence": 0.8956686170212763,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Also du hast gerade meines Erachtens nach zwei Dinge angesprochen. Die eine Geschichte wäre so eine Art Product Discovery, so nach dem Motto, wir haben bereits fünf und dreiig Features, wie können wir diese fünf und dreiig Features in unserer Applikation neu verbinden, um ein neues Produkt irgendwie rauszubringen oder neues Features anzubinden? Das wäre meines Erachtens nach eher irgendwas im Product Discovery Bereich möglich oder eher da zuzuordnen, weil das ist die Arbeit eines Produktmanagements und eines Produktteams. Die andere Geschichte ist Kostenschätzungen, z.B. für Cloud Kosten oder Entwicklungskosten und Co. Ein Design Dokument, meines Erachtens nach, hat immer eine bevorzugte Lösung. Ein Design Dokument hat aber eine Section, die nennt sich Alternatives, wo du dann alternative Modelle vorstellst, mit den Gründen, warum diese nicht gewählt wurden. Und je nach Projekt kann ein Design Dokument natürlich auch Kostenschätzung haben. Nehmen wir mal an, ihr überlegt euch, oder das Problem ist, meine Infrastrukturkosten sind zu hoch, Cloud Kostenoptimierung aka finops ist gerade z.B. in sehr vielen Firmen ein sehr akutes Thema und man ist jetzt z.B. bei AWS. Elemente des Design Docs könnten sein, wir verändern die Architektur auf AWS, wir gehen weg von Serverless oder weg von Amazon MSK. MSK ist z.B. deren hosted apache Kafka, wenn man so möchte. Der ist aber eigentlich sehr teuer und man geht hin, hey, wir hosten unseren Kafka selbst auf EC Instanzen, kann günstiger sein, muss nicht. Oder eine andere Alternative wäre, wir ziehen einfach alles auf Hetzner um, weil Hetzner ist in der Regel günstiger als AWS, hat aber dann natürlich nicht so viele native Services. Dann kann man natürlich die rohen Kosten, die hinten dran auf der Rechnung mit reinnehmen. Da sollte man natürlich aber auch, und das geht jetzt ein bisschen weiter als das Design Dokument, die Total Cost of Ownership, also TCO Ÿ, wirklich mit einberechnen, weil die Kosten, die du nicht siehst, Mitarbeiteraufwand, den ganzen Cloud Provider umzuziehen und so weiter, Solche Kostenberechnungen werden dann schon drin, aber die würdest du dann entweder in deiner präferierten Lösung mit einbetten oder halt in den Alternativen und dann mit dem Grund, warum du diese nicht genommen hast.",
+            "start": 751670,
+            "end": 875904,
+            "confidence": 0.9176121508379879,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Das heißt, du würdest aber Kosten grundsätzlich schon mit reinnehmen in Design Documents oder Aufwandschätzungen?",
+            "start": 875952,
+            "end": 881120,
+            "confidence": 0.8392793333333333,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Ja, wenn es jetzt um eine Feature Entwicklung geht, würde ich die Kosten jetzt eigentlich nicht nehmen. Angenommen, wir arbeiten bei einem klassischen Web Produkt und nicht in der Agentur, sondern du bist bei booking dot com und du möchtest jetzt Airbnb anbinden. Das wäre für mich jetzt ein klassisches Feature. Da würde ich jetzt nicht die Entwicklungskosten mit reinnehmen. Aber wenn es um große Neuanschaffungen geht, so was wie Bild versus Buy, kaufen wir jetzt ein CI System oder bauen wir unser eigenes CI System, dann nimmt man natürlich schon Kosten mit rein, weil das ist ja halt diese Bild versus Buy Entscheidung.",
+            "start": 881240,
+            "end": 910946,
+            "confidence": 0.8790253846153853,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Jetzt, wenn wir mal ein Projekt annehmen, wir bauen jetzt irgendwas oder wir wollen etwas bauen und wollen jetzt ein Design Dokument erstellen. Unser Team hat den Auftrag bekommen oder man hat sich schon zusammengesetzt mit der Product owner Person z.B. und hat jetzt die Features definiert und jetzt legt man irgendwie los mit dem Design Dokument. Wie funktioniert es? Wer macht es im Team? Warum mache ich das überhaupt? Starte ich, mache das gemeinsam, mache da Pair Design, Coding, Design Document Writing. Eigentlich zweitausendein macht es der Product Owner? Wer macht es? Und was passiert dann eigentlich mit dem Design Dokument, wenn du auch die Reviews ansprichst? Wer redet da überhaupt mit? Hat er dann der Product Owner auch noch irgendein Saying? Also wer ist da beteiligt und wie läuft da so ein Prozess ab?",
+            "start": 911098,
+            "end": 957960,
+            "confidence": 0.8811721323529413,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Unglaublich viele Fragen und ich versuche jetzt nicht in einen 15 minütigen Monolog zu verfallen. Fangen wir an, wer macht das Design Doc? Eigentlich kann das in der Theorie jeder vom Engineering Team machen. Zweitausendein. Das muss nicht der Engineering Manager sein, das muss nicht der Tech Lead sein, das kann der Junior Engineer sein, das kann der Midlevel Engineer sein, das kann irgendwer vom Engineering Team sein, dem dieses Feature, diese Aufgabe übertragen wird. Schreibt man das alleine, schreibt man das zu zweit oder sogar zu dritt, viert in einem sogenannten Mob? Man kann natürlich, man kann natürlich, natürlich, man kann das alleine schreiben, man kann das im Pair schreiben, so ähnlich wie Pair Programming. Man kann das im Mob schreiben. Ich habe noch nie gesehen, dass ein Doc, ein Design Doc im Mob geschrieben wird, weil im Endeffekt gibt das irgendwie die ganze Review Phase. Kann positiv sein, kann negativ sein. Ich finde es sehr schwierig, in einem Mob ein oder zwei oder mehr Tage wirklich zusammen zu sitzen, weil ein Design Doc schreibt man nicht in einer Stunde. Das übliche ist, dass ein Design Doc von einer Person oder von anderthalb Personen oder zwei zusammengeschrieben wird. Wie funktioniert das? Du machst einfach ein Dokument deiner Wahl auf Ÿousand. Kann Markdown sein, kann Google Docs sein, kann Dropbox Paper sein, kann Notion sein, was ihr auch immer in der Firma verwendet. Und du fängst einfach an, Headline Design Dokument für Thema XY. Und dann ist Die erste große Frage, okay, gibt es hier ein Template, gibt es hier eine Struktur? Im Endeffekt gibt es sehr, sehr viele Templates und Strukturen im Netz, die kann man sich auch kopieren, auch von Google, von Uber, von Oxide, von jeder großen Firma. Und ich finde, so ein Template hilft auch, dir so ein bisschen Guidance zu geben. Dennoch habe ich auch immer so ein bisschen das Gefühl, ein Template zwingt Leute, besonders unerfahrene Leute im Design Doc schon in so eine gewisse Struktur. Und dann kommen oft so Kommentare wie, ja, aber nee, das, was ich jetzt schreiben möchte, das passt jetzt gar nicht in die Struktur. Deswegen rate ich immer, okay, Design Doc ist eigentlich ein loses, ein informelles Dokument, wo du die Struktur anpassen kannst. Mach die Headlines so, wie du möchtest, aber ein paar grundlegende Elemente sollten drin sein, z.B. meine Zusammenfassung, der Scope und die Ziele. Vielleicht kurz in ein, zwei Sätzen, was wollen wir überhaupt erreichen, so dass ein skip Level Manager das verstehen kann. Der technische Kontext ist zwar vorhanden, aber das Level zum Detail fehlt halt. Dann so ein paar logistics nenne ich das immer. Wer ist der Autor? Wann ist das letzte mal geupdatet worden? Bis wann hätte ich gerne einen Review? Wer Approved das? Also wer sollte das reviewen? Vielleicht sogar andere Teams. Und in welchem Status sind wir hier eigentlich? Hier, work in progress, under reviewed, approved, implemented, cancelled, ÿousand.",
+            "start": 958340,
+            "end": 1109838,
+            "confidence": 0.9126021267893659,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Aber wen nehme ich da mit rein für die Reviews oder approval? Wer ist das? Im Normalfall mache ich das als Team, machen das andere.",
+            "start": 1109964,
+            "end": 1117674,
+            "confidence": 0.9043448,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Das kommt immer ganz auf die Größe deines Projektes auch an und was für Wellen das in der Firma schlägt. Wenn ich jetzt irgendwas mit Authentifizierung machen würde, dann würde ich schon mal das Security Team mit reinnehmen, würde ich etwas mit User analytics machen, dann würde ich vielleicht die Compliance Abteilung mal mit reinnehmen. Bin ich einen neuen Cloud Provider an, vielleicht sogar das Netzwerkteam? Baue ich einfach nur neuen Payment Button in meine mobile App, weil ich der iOS Engineer bin, dann vielleicht eigentlich nur mein Team, dann bleibt das Team intern.",
+            "start": 1117802,
+            "end": 1143778,
+            "confidence": 0.9148232978723403,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Und sprichst du das im Vorhinein dann ab mit den Teams?",
+            "start": 1143914,
+            "end": 1146530,
+            "confidence": 0.9381618181818182,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Du meinst, dass da bald was kommt zum reviewen? Ja, absprechen hört sich jetzt so formal an, ich würde in den Slack Channel springen und sagen, hey, liebe Damen und Herren, unser Team arbeitet gerade daran, Achtung, da kommt bald ein Design Dokument. Also so würde ich es halt machen. Ich bin so eher der flachse Typ.",
+            "start": 1146650,
+            "end": 1162562,
+            "confidence": 0.9290961403508772,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Okay, aber du würdest dir dann automatisch erwarten, dass die zustimmen. Also wenn sich das etabliert hat in der Firma oder in dem Kontext, wo du jetzt zumindest Design Documents erlebst, ist es so klassisch, dass man einfach sagt, hey, da kommt jetzt bald was und man setzt es voraus, dass das auch angenommen wird, weil es gibt ja durchaus in Strukturen, gerade in größeren Konzernstrukturen, da ist es nicht so einfach, dass man irgendjemanden was hinwirft und sagt, Gib mir da mal ein Feedback, weil das muss irgendwie offiziell approved werden, über Gott und die Welt gehen, damit da überhaupt was akzeptiert wird.",
+            "start": 1162626,
+            "end": 1193162,
+            "confidence": 0.9236788461538462,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Naja, du machst ja gerade ein riesen Fass auf, weil im Endeffekt gehe ich halt davon aus, dass mein Produktmanager und mein Produktteam, was mir dieses Problem an die Hand gegeben hat, welches ich lösen sollte, dass das zur Firmenstrategie gehört und dass das andere Team, von dem ich Input brauche, halt ebenfalls mit an dieser Firmenstrategie arbeitet. Und wenn ich jetzt sage, okay, ich brauche mal ein Review für die Arbeit, damit wir diese Firmenstrategie erreichen können, dann ist es eigentlich so, hey, ich binde euch hier sehr früh in den Prozess mit ein, das was ihr eigentlich wollt und ich mache nicht einfach und später, wenn es implementiert ist, fällt euch auf die Füße, weil ihr es eh mitnehmen müsst. Also wenn dann, wenn deine Struktur so sind, dass du erst über drei Management Ebenen nach oben, dann geht der Skip Level Manager einmal einen Schritt nach rechts und spricht mit dem Skip Level Manager und der fällt die ganze Scheiße wieder drei Ebenen tiefer. Ja, kannst du auch machen, aber dann meines Erachtens nach, soll das dann deine PM sofort machen, wenn der PM in demselben Moment, wo die Aufgabe an das Engineering Team übergeben wird, direkt gesagt wird, okay, sag dir da drüben mal Bescheid. Und wenn das fünf E mails zweitausendeinundzwanzig bedarf, dann bedarf das fünf E Mails. Aber im Endeffekt werden ja Sachen umgesetzt, die der Firmenstrategie folgen und somit hat das andere Team hoffentlich auch ein Incentive, ein Review zu machen. Und wir reden jetzt von einem Review, wir reden ja jetzt nicht von drei Monate Implementierung, wir reden davon, ein Dokument, was drei bis 10 Seiten hat, zu lesen, ein bisschen durchzukommentieren oder von einem Stunden Meeting, wo das Design präsentiert wird.",
+            "start": 1193236,
+            "end": 1272448,
+            "confidence": 0.892578068965517,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Was sagst du jetzt den Leuten, wenn die jetzt kommen? Dieses Argument höre ich auch immer wieder mal. Jetzt bauen wir da schon so Prozesse auf wie in einem Konzern. Ich muss da ein Dokument schreiben und und das muss dann das Security Team absegnen, Approval machen oder zumindest Feedback geben und alles wird verzögert und ich habe jetzt fünf externe Abhängigkeiten, die mich alle bremsen und die haben dann wieder keine Zeit und willkommen im Konzern.",
+            "start": 1272584,
+            "end": 1297884,
+            "confidence": 0.8966662337662338,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Also du sagst jetzt gerade, weil aufgeschrieben wird, was wir planen zu implementieren, ist eine Konzernstruktur, ist das richtig?",
+            "start": 1297972,
+            "end": 1306132,
+            "confidence": 0.8885794736842104,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Ja, also die Lean Variante, wir machen einfach mal. Ist es sicher nicht mehr, wenn fünf andere Teams zustimmen müssen, bevor ich überhaupt irgendwas schicken darf oder implementieren darf.",
+            "start": 1306276,
+            "end": 1314848,
+            "confidence": 0.867588275862069,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Ja, wenn es der Geltungsbereich von diesen Teams ist. Wenn du schon ein Security Team hast, dann sollen die ja auch wissen, welche Daten wo lang fließen und welche Authentifizierung auf welchem Verschlüsselungsalgorithmus läuft, oder? Ich meine, das ist deren Aufgabe. Und besonders, wenn du dann spiel mal.",
+            "start": 1314904,
+            "end": 1330048,
+            "confidence": 0.9085039583333333,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Weiter den Devil's Advocate, aber die bremsen mich hier. Ich muss jetzt fünf Wochen auf Feedback warten, weil ich fünf andere Teams fragen muss nach Feedback.",
+            "start": 1330064,
+            "end": 1338452,
+            "confidence": 0.9338523076923075,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Ja, so kannst du das sehen. Du kannst auch einfach machen, dann holst dir dabei den Shitstorm spätestens in drei Monaten ab, wenn die PCI DSS compliance failed, weil das Security Team da nicht drauf geguckt hat, weil du einfach was geschippt hast, was dann vielleicht irgendwo von einem Black hat Hacker aufgemacht wurde. Geht auch. Also ist es deine Wahl.",
+            "start": 1338536,
+            "end": 1356220,
+            "confidence": 0.8930686885245902,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Glaubst du, dass Design Documents auch diesen Prozess beschleunigen können? Also die Zusammenarbeit mit der Security Abteilung z.B. 100?",
+            "start": 1356300,
+            "end": 1363585,
+            "confidence": 0.9361615789473684,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "%? Du musst das so sehen. Und jetzt kommt ein Konzernwort, was ich nicht mag. Ÿ. In der Designphase und Design rede ich jetzt nicht von Visual Design, sondern von System und Software Design, sind Änderungen sehr günstig. Du schiebst eine Box in deinem Lucid Chart oder in deinem Miro, in einem Diagrammtool von A nach B und veränderst eine Pfeilrichtung. Du musst nicht drei Wochen lang coden, dass Service A jetzt mit Service b anstatt mit Service C spricht. Änderungen sind sehr, sehr günstig. Günstig in Relation zur Zeit. Und deswegen ist es sehr, sehr gut, die anderen Teams vorher mit einzubinden. Unter anderem natürlich auch, um denen nicht auf die Füße zu treten, weil im Endeffekt, stell dir vor, du bist im Security Team, du möchtest ja auch eingebunden werden, du möchtest ja auch respektiert werden. Im Endeffekt fragst du als Software Engineer die Expertise vom Security Team an und das hat ja auch ein bisschen was mit Respekt zu tun und so möchtest du ja auch behandelt werden. Du möchtest ja keine Shadow IT irgendwann finden und irgendwann kommt jemand auf einen Tisch, so Wolfgang, die HR Abteilung hat da mal eine große Excel Datei mit Visual Basic Skript draufgepackt. Kannst du mal bitte, aber bitte sorgt dafür, dass die Migration live und on the fly und ohne Interruption für die HR Abteilung vollzogen wird. Da denkst du dir auch, wollt ihr mich verarschen? Also das ist halt so ein bisschen, trete anderen Abteilungen so gegenüber, wie du auch behandelt werden möchtest. Und im Endeffekt, ich drehe die Frage mal um, weil du sagst, die bremsen mich aus. Wie würdest du als Devils Advocate den Erfolg eines Design Dokuments evaluieren? Wann würdest du sagen, ein Design Dokument wurde erfolgreich genutzt?",
+            "start": 1363610,
+            "end": 1458164,
+            "confidence": 0.918977576791809,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Ja, wenn es um die Kommunikation geht, wenn das Onboarding in dieses Thema möglichst schnell vonstatten geht, möglichst einfach für alle.",
+            "start": 1458252,
+            "end": 1464444,
+            "confidence": 0.9241114285714287,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Stakeholder, ist auf jeden Fall ein guter Punkt, aber kannst du auch relativ schlecht messen, weil eigentlich sind das ja Opportunitätskosten. Natürlich, das ist der Pro Tipp Nr. Eins beim Schreiben und deswegen ist Schreiben so schwierig und so chaotisch. Und deswegen habe ich das Intro auch mit der Remote work angefangen. Wenn du etwas aufschreibst und du versendest ein Dokument, dann bekommen alle Empfänger das gleiche Dokument, können es in ihrer Geschwindigkeit lesen, verarbeiten, kommentieren weltweit. Und wenn du jetzt dieses Dokument nicht geschrieben hättest, dann hättest du 10 Meetings mit 10 Teams oder fünf, ist ja egal. Und ob du willst oder nicht, in jedem dieser Meetings übermittelst du eine andere Nachricht, weil du packst Wörter hinzu, du lässt Wörter weg, das eine Detail fehlt beim Security Team und so weiter und so fort. Fünf Abteilungen bekommen fünf unterschiedliche Nachrichten, gegebenenfalls sogar verstehen fünf andere Software Systeme. Und diese Art von Fehlerquelle eliminierst du einfach, indem du was aufschreibst. Das ist so oder so gegeben. Aber was ich eigentlich meine mit Erfolg evaluieren ist folgendes. Natürlich ist es auch ein Erfolg, wenn ein Design doch geschrieben wird. Es wird darüber diskutiert, gereviewed, approved und dann umgesetzt und das ganze Projekt ist ein toller Erfolg. Es war in time, in quality und in budget. Machen wir uns nichts vor, funktioniert nicht. Wir sind immer noch in Deutschland und funktioniert aber auch in Amerika nicht so. Meines Erachtens nach ist es aber folgendes, du verbringst vier, fünf Tage mit der Erstellung eines Design Docs, was sich wirklich, wirklich, wirklich zwingt, über die technische Architektur nachzudenken. Du bekommst die ersten Reviews und es stellt sich heraus, dass die Anbindung an Paypal in unserem Payment System der riskanteste Teil von der ganzen Architektur ist. Das Design Doc wurde proof und du fängst direkt mit dem riskanten Teil an, um einfach das Risiko aus dem Projekt zu nehmen. Drei Tage später stellst du fest, die Implementierung an Paypal ist entweder nicht möglich oder viel, viel schwieriger, als du ursprünglich gedacht hast. Du gehst zurück zu deinem Manager, zu deinem Produktmanager und so weiter. Ihr sprecht darüber und ihr beschließt, die Arbeit an dem Projekt einzustellen und stattdessen anderer Arbeit den Vorrang zu geben. Was ist also gerade passiert? Anstatt dass du möglicherweise Monate verschwendet hast, um herauszufinden, wie du die Paypal Anbindung machst, um das Projekt später abzubrechen, hast du vier Tage Design Dokuments und drei Tage Implementierung gebraucht, um das Projekt nach einer Woche einzustellen, anstatt gegenüber Monate. Und das scheint mir ein relativ erfolgreiches Ergebnis zu sein, dass du einfach keine Zeit verschwendet hast. Oder war das jetzt zu wirtschaftlich für dich?",
+            "start": 1464492,
+            "end": 1605550,
+            "confidence": 0.9326254421768712,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Ja, das widerlegt natürlich gleich die nächste Frage, die ich eigentlich stellen wollte. Warum die ganze Zeit? Und das ist eigentlich Zeitverschwendung, aber das hast du jetzt damit natürlich auch schon schön beantwortet, dass es natürlich mehr bringt, als was man Zeit investiert im Idealfall. Und dass man, wenn man im frühen Stadium schon darüber nachdenkt und gezwungen wird, auch nachzudenken, wenn man was schreibt. Weil das ist ja auch so eine Sache, dass wenn du was niederschreibst, dass du es unbedingt durchdenken musst und dir auch Gedanken machen musst, wie verstehen das andere Personen? Man kommt selber drauf, oh, es ist doch nicht so einfach, wenn man einen geraden Satz hinschreiben muss, um irgendwas zu erklären. Man hat vielleicht im Kopf noch was anderes gehabt oder gar nicht so drüber nachgedacht und dann merkt man, wo man vielleicht noch nachbessern muss. Und das ist natürlich alles kostengünstiger, umso früher man das ganze schon macht bzw. Die Probleme findet, die es gibt.",
+            "start": 1605710,
+            "end": 1656724,
+            "confidence": 0.933522469135802,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Also was man nicht wegreden kann, dass ein Design Dokument zu schreiben natürlich gewisse Overhead ist, ganz klar. Aber meines Erachtens nach ist das nur eine verschobene Zeitachse. Der Aufwand für das Alignment, für diese Architektur und für dieses System wird einfach nur verschoben, nämlich er findet früher statt. Shift left hatten wir auch schon mal eine Episode zu zweitausendein. Und Der Aufwand wird explizit gemacht versus implizit im späteren Verlauf. Also kann man sich schon fragen, okay, wann sollte man kein Design Dokument schreiben? Wann sollte man diesen Overhead mal nicht machen und wann? Und da gibt es so eins gibt.",
+            "start": 1656812,
+            "end": 1687898,
+            "confidence": 0.9253171568627448,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Es ja bei dir eigentlich nicht, oder? Du schreibst alles in Design Documents. Wie gesagt, deine Slack Messages schauen auch aus wie Design Documents.",
+            "start": 1687914,
+            "end": 1694514,
+            "confidence": 0.8755479166666665,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Das hört sich jetzt an nach sehr starker Kritik, aber Wolfgang, wie oft kannst du mir direkt eine Antwort nach diesen Slack Messages geben und sagst, okay, alle Informationen hatte ich und wir können jetzt hier einfach effizient kommunizieren und du kannst weiter auf deinem Wanderweg die Route bis zur nächsten Hütte zum Kaiserschmarrn nehmen.",
+            "start": 1694602,
+            "end": 1710614,
+            "confidence": 0.9407136363636363,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Also ich kann mal was von Andi vorlesen, eine Nachricht, die ich gestern bekommen habe. Ich habe gerade eine Episode vorbereitet zu einem gewissen Thema und am Ende, was immer super praktisch ist beim Andi, da steht, was ich von dir jetzt benötige. Erstens Feedback, zweitens, ob wir diese Episode aufnehmen, drittens, wann wir diese Episode aufnehmen, wenn ja, zweitausendein. Also schöne, schöne Anweisung, Kontext gegeben, eigentlich ein kleines Design Dokument. Man muss es ja sagen, es ist wirklich sehr schön.",
+            "start": 1710782,
+            "end": 1739964,
+            "confidence": 0.9159991358024691,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Ja gut, leider hilft das nichts, wenn die Gegenseite ein totaler Chaot ist und mir einfach nicht anhand dieser Struktur arbeitet, anhand dieser Struktur antwortet, weil eigentlich hätte ich erwartet, eins, tolles Dokument, zwei Episode nehmen wir auf drei, ich habe am Mittwoch Zeit. Aber zurück zu der Frage, wann lohnt sich dieser Aufwand nicht? Also wenn das Dokument im Wesentlichen sagt, Ÿousand, so wird es umgesetzt, halt ohne auf Kompromisse und Alternativen einzugehen. Ganz im Ernst, bau die Applikation direkt, lass es sein. Und man muss ja auch sagen, Design Dokument zu schreiben steht auch ein bisschen im Konflikt, so Prototyping and Rapid Iteration, weil natürlich kannst du dich hinsetzen und erstmal einen Prototypen hacken und ja, vielleicht ist das Prototyping auch ein Teil des Design Dokuments, um zu sehen, ist das hier möglich. Also das ist schon so ein bisschen, muss man ein bisschen gucken, wie komplex ist die Lösung. Also wenn die Lösung des Problems mehrdeutig ist, also es keine klare Guidance gibt bei euch in der Firma, wie man das zu lösen hat, dann sollte man da kurz drüber sprechen oder was aufschreiben, weil man kann jetzt die Datenbank nehmen oder eine Message Queue oder neuen Service, mit dem die Firma noch keine Erfahrung hat oder, oder. Also wenn, dann ist es ein guter Punkt im Design Dokument, aber wenn eigentlich klar ist, was implementiert wird, genau wie, dann lass es weg, fang an zu.",
+            "start": 1740052,
+            "end": 1818878,
+            "confidence": 0.9197567364016741,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Bauen als Device Advocate. Natürlich sogar, wenn du mal was Negatives zu Design Dokument sagst, muss ich natürlich schon sagen, oft ist es trotzdem sinnvoll, weil du einfach dir Gedanken machst und die Sachen durchdenkst. Und das kann natürlich auch bei einem sehr kleinen Projekt auch schon Sinn machen, dass man sich das vielleicht auch für sich selber, vielleicht weniger strukturiert, aber durchaus mal zusammenschreibt, paar Stichworte macht, einen groben Plan oder sowas. Also auch wenn man vielleicht Zeit schätzen muss oder sowas, ist es sehr praktisch. Dann ist es eine gewisse Dokumentation natürlich auch, die auch praktisch sein kann bei einem kleinen Projekt, wobei da kann man auch wieder argumentieren, okay, wenn ich sinnvoll den Code dokumentiere und vielleicht in meine Docs auch so gewisse Zusatzinformationen reinschreibe, in die Readme vielleicht vom Repository, dass ich dann schon so viele Informationen habe, dass ich sage, okay, ich habe da eine saubere Dokumentation, die ausreicht für so ein absolutes Mini Projekt, aber man muss halt den Trade off finden, wo wo rentiert sich das Ganze? Aber ich glaube schon, dass dieses Triggern des eigenen Gedankenprozesses in einem Dokument sehr wohl auch bei kleineren Projekten durchaus hilfreich ist. Und wie wir alle wissen, kleine Projekte entwickeln sich auch sehr schnell zu größeren Projekten. Und dann ist natürlich auch gut, wenn man schon auch nur eine einzelne A Seite zusammengeschrieben hat, wo ein Ziel drinsteht, kleinen Abstract und vielleicht drei Punkte zur Architektur.",
+            "start": 1818894,
+            "end": 1902804,
+            "confidence": 0.91693325,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Kleines Abstract, eine Seite hast du schon erwähnt. In meiner Karriere habe ich oft die Frage bekommen, wie detailliert muss ein Design Dokument sein bzw. Wie lang muss es sein? Meines Erachtens nach ein paar Seiten reichen da schon aus. Also die wesentliche Struktur, die Inhalte sollen da sein. Welches Problem gibt es zu lösen? Scope Goals, Diagramm. Man sagt ja immer, ein Bild sagt mehr als tausend Worte, dann beschreibt man das Diagramm und warum er es gemacht hat. Und die Alternative und die Daumenregel ist so, es soll ausreichend detailliert sein, aber kurz genug, um von viel beschäftigten Menschen tatsächlich gelesen werden zu können. Und jetzt sind wir alle Engineers und wollen immer harte Zahlen, deswegen mal ein bisschen Guidance. Für ein mini Design Doc sind so ein bis drei Seiten, für ein größeres Projekt kann es auch mal 10 bis 15, maximal 20 Seiten sein. Ja, das kann so eine gute Lektüre, halbe h, dreiviertel h, bei einem Kaffee irgendwo mal gelesen werden. Und auch wenn man bei 10, 1520 Seiten sagt man, ja, das ist aber viel zu viel. Jemand, der schon mal irgendwie so eine halbakademische Hausarbeit geschrieben hat, weiß, dass eigentlich von 20 Seiten erst mal vier Seiten oder viereinhalb nur auf Struktur rausgehen, also Spacing zwischen Abständen, Bullet Points und so weiter. Also macht euch da nicht bekloppt, es sind keine wirklich 20 Seiten zu lesen. Deswegen 10, 1520 Seiten für ein größeres Projekt. Wenn es mehr sein sollte, überlegt mal, habt ihr nicht mehrere Probleme zu lösen, dann kann man die ganze Sache natürlich auch in mehrere Design Dokumente aufteilen, um die Probleme irgendwie.",
+            "start": 1902892,
+            "end": 1986390,
+            "confidence": 0.9070319852941167,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Also wenn du da jetzt Tipps gibst, und wir haben ja zuerst schon gesprochen über den Prozess in einem Konzern, dass das vielleicht dann zu aufwendig ist, solche Design Documents zu erstellen. Wie wichtig ist denn dir so eine fixe Struktur, dass man sich auf eine Struktur einigt in der Company? Es gibt ja da eben Templates, die großen Companies haben das vor allem. Wie wichtig siehst du das, dass das einer gewissen Struktur immer entspricht und dass das einheitlich ist und dass da am Schluss vielleicht immer steht bei der Slack Message, was erwarte ich mir jetzt von dir?",
+            "start": 1986790,
+            "end": 2017674,
+            "confidence": 0.9329864999999999,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Hatte ich ja vorhin schon einmal kurz erwähnt. Ich denke, eine Struktur, ein Template ist hilfreich, aber sollte nicht religiös verfolgt werden, denn jedes Projekt ist anders. Ein Projekt, habe ich damals sogar gelernt, per Definition ist eine Sache, die unique ist, die man noch nicht zuvor gemacht hat. Und somit kannst du natürlich etwas einzigartiges nicht immer in die gleiche Struktur packen, weil dann wäre es nicht einzigartig. Deswegen, jedes Projekt hat irgendwie andere Aspekte, wo man genauer drauf gucken muss. Beispiel die Paymentstruktur wird sehr wahrscheinlich ziemlich viel irgendwie im Bereich und im Datensicherheitsbereich involviert sein. Wenn du ein Projekt im Data Warehouse hast, dann wirst du auch sehr wahrscheinlich ziemlich viel auf Monitoring und Analytics drauf achten. Wenn du jetzt irgendwie einen E Commerce Checkout hast, wirst du ja sehr wahrscheinlich Wireframes drin haben, also auch wie Frontend. Deswegen, da muss man ein bisschen immer gucken. Templates sind, glaube ich, gut für Leute, die mit dem Thema beginnen, um eine gewisse Guidance zu haben. Also Template in meinem Kopf sieht immer aus, eine Headline, ein paar Sub Headlines und dann unter jeder Sub Headline so ein paar guiding Questions, die so ein bisschen triggern sollten, was wird hier erwartet an Inhalt. Aber für mich ist es ein loses Dokument. Füll das so, wie du es für relevant hältst und für die wichtigen Punkte. Manche Design Dokuments haben sogar Pseudocode oder Klassenstrukturen oder Datenbankschema, wenn es irgendwie an Algorithmen geht. Manche, Manche Dokumente haben sogar einen Release Plan, manche nicht. Rollt man das jetzt Big Bang aus? A b testing? Ist das eine Migration, wenn es jetzt an Struktur von Slack Nachrichten geht? Ganz im Ernst, ich bin da ein riesen Fan von, aber ich bin auch ein riesen Fan von sehr strukturierter und effizienter Kommunikation. Ich verstehe, dann geht ab und zu mal die Empathie verloren, aber ich kann ja auch flache Witze machen im Slack. So ist das.",
+            "start": 2017762,
+            "end": 2118018,
+            "confidence": 0.9134309627329195,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Ja nicht nur die Empathie nicht höher.",
+            "start": 2118034,
+            "end": 2121154,
+            "confidence": 0.8608171428571427,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Mit deinen flachwitzen, aber im stressigen Alltag. Die Welt ist so komplex geworden und besonders, weil wir jetzt beide auch remote arbeiten und du einen anderen Schlaf und Lebensrhythmus hast als ich. Da müssen wir uns einfach effizient unterhalten können. Und wenn ich jetzt morgens etwas schreibe und du stellst mir nachts wieder eine Gegenfrage, dann habe ich am nächsten Morgen erst wieder die Antwort und dann haben wir eine simple Entscheidung über drei Tage gezogen. Sorry, aber da bin ich einfach kein Fan von, weil das konsumiert meine Energie, deine Energie und nicht bewegt sich ein Projekt weiter. Deswegen ich würde jetzt in der Firma jetzt nicht auf irgendwie eine harte Struktur bei Fleck Nachrichten zweitausendein forcieren, weil offen gesprochen funktioniert eh nicht. Deswegen lass den Menschen ihre Freiheit. Und auch bei Design Dokumenten. Klar, ein paar Sachen solltest du Pflicht machen, wie z.B. wer sollte das reviewen? Eine Deadline und so weiter.",
+            "start": 2121322,
+            "end": 2165874,
+            "confidence": 0.9280334415584417,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Also mehr Guidance durch Templates, anstatt irgendwie ganz fixe Strukturen einzuführen.",
+            "start": 2166042,
+            "end": 2172362,
+            "confidence": 0.9283081818181818,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Ja, ich habe, ich habe ganz, ganz wichtig, ganz wichtig. Wir müssen uns einmal ganz kurz vor Augen führen, was wir hier gerade machen. Du stellst hochqualifizierte Fachkräfte für sehr viel Geld ein. Software Engineers und so weiter, Data Scientist, Produktmanager. Das sind alles sehr intelligente Leute. Warum übergibst du nicht die Verantwortung, eine Struktur für ein Dokument zu machen, um ein Projekt umzusetzen in die Hand dieser Fachkräfte? Das sind alles sehr intelligente Menschen, die kriegen das hin. Und wenn, wenn du die so einziehen, ja, das muss genau immer alle die Chapter haben, dann hast du ein 20 pages Dokument und in 15 der Kapitel steht drin not needed because of a. Also das verschwendet ja auch Zeit, weil du du liest etwas, was du nicht liest. Verstehst du, was ich meine? Weil da ist ja keine Information drin. Und deswegen fangt an, den Leuten zu vertrauen. Das sind intelligente Menschen und ihr gebt denen sehr viel Geld.",
+            "start": 2172506,
+            "end": 2225848,
+            "confidence": 0.906741375,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Also ich glaube auch, dass das eigentlich ganz gut ist, da eine Guidance reinzubringen, vor allem, weil man ja sonst auch Dinge vergisst. Und so hat man das halt noch mal alles aufgelistet. Was ich persönlich immer schrecklich finde, sind diese Templates, wo du mehr Zeit verbrauchst, um Dinge rauszulöschen, anstatt sie neu zu schreiben. Also wenn das wirklich so 40 seitige Templates sind, die dann alle Use Cases irgendwie abdecken und so weiter und du nur am löschen bist. Es erinnert mich so öfters an so Libraries oder so an Erfahrungen, wenn man mit so frameworks beginnt. Man macht dann irgendwie so ein leeres Projekt auf und dieses leere Projekt, irgendwie der Wizard erstellt dir 60 verschiedene Dateien und schreibt dir überall irgendwelche Hooks schon rein, die alle leer sind und du hast dann 50 verschiedene Dateien und verstehst eigentlich nichts. Also ich glaube, da muss man einfach einen sinnvollen Weg finden und nicht zu viele Edge Cases abdecken. Aber wenn man ein Template grundsätzlich hat, wir haben ja auch für unsere Episodenvorbereitung z.b. ein Template ist natürlich super, wenn man da einfach schon die Standardpunkte drin hat und vielleicht auch was reinschreiben kann, was man eben nicht vergessen soll, dass man z.b. unsere Discord Community bewerben oder dass ihr recommenden sollt, wenn ihr eine Episode gut findet. Solche Dinge machen wir eh viel zu selten. So was kann man dann ins Template reinschreiben, weil das vergisst man sonst so meta.",
+            "start": 2225984,
+            "end": 2301590,
+            "confidence": 0.9009177272727279,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Wer noch ein bisschen tiefer in dieses Thema eintauchen möchte, es gibt ein grandioses Buch, es nennt sich the Checklist Manifesto, verlinken wir auch in den Shownotes, wer so ein bisschen auf diese Templates und Checklisten gehen möchte und warum diese hilfreich sein können und einfach deinen Arbeitsalltag erleichtern. Aber zum Thema Design Dokuments und Templates, wenn ihr mit der Episode durch seid, scrollt doch mal in die Show Notes, dort findet ihr unglaublich viele Links zu noch mehr Templates von verschiedenen Firmen. Scrollt da einfach mal durch, fangt einfach an, klatscht ein paar Headlines in ein Dokument und iteriert drüber. Verschwendet jetzt nicht drei Wochen, um das perfekte Template zu machen, weil im Endeffekt, wenn ihr zwei, drei Design Dokuments geschrieben habt, werdet ihr eh das Template ändern. Es ist ein lebendes Dokument, aber da kriegt ihr immer ziemlich viele Inspirationen, auch wie machen das die ganz großen Google und Co. Wie machen das kleinere Firmen wie Oxide oder Slack? Also da findet ihr etliche Templates aus verschiedenen Bereichen, aus verschiedenen Softwarebereichen, Hardware Companies und so weiter.",
+            "start": 2302550,
+            "end": 2363740,
+            "confidence": 0.9059532022471912,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Schön, dass du Oxide und Slack als kleine Firma bezeichnest, aber klar, im Gegensatz.",
+            "start": 2363860,
+            "end": 2367932,
+            "confidence": 0.940997142857143,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Zu Google, na ja, Oxide ist gar nicht so groß menschlich gesehen von den Mitarbeitern.",
+            "start": 2367956,
+            "end": 2373724,
+            "confidence": 0.8139660000000001,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Von daher menschlich natürlich sehr groß, aber jeder der Mensch sehr groß. Was ich aber noch sagen wollte zur Struktur und was, was ich Erfahrung gemacht habe, was auch sehr wichtig ist, ist, dass man wirklich eine gewisse Struktur vorgibt, wenn man irgendwas versendet und auch Feedback will und und richtige Überschriften hat. Weil wenn man nur Keywords in Dokument packt und das so wenig Struktur hat und keine Formatierung, dann bleibt das Dokument meistens klein und die Leute konzentrieren sich nur auf irgendwie ein Wort dazuschreiben oder weglöschen. Hingegen, wenn du ein sauberes Dokument hast, formatiert mit großen Überschriften, auch vielleicht leeren Überschriften noch, das triggert bei den Leuten irgendwie, dass sie sich schneller auskennen und auch mehr reinschreiben. Also ich habe definitiv die Erfahrung gemacht, umso strukturierter das ist, umso formatierter das ist. Es ist wirklich vielleicht sogar nur ein Trick, psychisch, keine Ahnung, kann uns vielleicht jemand erklären. Aber wenn dort große Überschriften sind, die leer sind oder wo vielleicht eine Anweisung ist, da jetzt reinschreiben, dann kommt da einfach viel, viel mehr Feedback zurück, als wenn das nur ein Einseiter ist, wo alles gleiche Formatierungen drinsteckt, weil die Leute einfach nicht hineinkommen in das Schreiben oder ins Feedback geben oder ins Lesen oder in das Thema. Also es macht wahnsinnig viel aus, backbar fette Überschriften mit rein und du bekommst wahrscheinlich 50 % mehr Feedback.",
+            "start": 2373772,
+            "end": 2453878,
+            "confidence": 0.8957349344978168,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Es ist wie beim Essen, das Auge liest mit.",
+            "start": 2453934,
+            "end": 2456330,
+            "confidence": 0.9026577777777778,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "So, jetzt haben wir aber ganz viel über über deine Design Dokuments gesprochen. Wenn wir das Ganze historisch mal betrachten, wer hat Design Dokuments erfunden? Wo gibt es in der Industrie Design Documents? Ist es nur im Coding? Kannst du es überall verwenden? So wie du es jetzt gepitcht hast, kannst du es eigentlich immer und überall verwenden, bis zur Slack Nachricht, die ich eben erwähnt habe. Und hast du jetzt nicht nur ein cooles neues Word wie RFC gefunden, was schon seit der Mondlandung wahrscheinlich gibt oder so?",
+            "start": 2458510,
+            "end": 2485186,
+            "confidence": 0.8834714606741572,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Ja, also ich habe Design Dokuments natürlich nicht erfunden. Also der Wolfgang hat schon das Wort gedroppt, AFCs, Request for Comments. Request for comments, also Anfrage für Kommentare.",
+            "start": 2485258,
+            "end": 2494708,
+            "confidence": 0.8632535714285712,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Auf Deutsch, fokussiert sich eigentlich noch mehr auf die Kollaboration und das Feedback geben.",
+            "start": 2494764,
+            "end": 2501964,
+            "confidence": 0.927407142857143,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Das ist korrekt, das ist korrekt. Und ich lehne mich jetzt weit aus dem Fenster und es gibt sehr viele Leute, die werden mich jetzt hassen, aber bisher habe ich noch niemanden gefunden, der mir das Gegenteil beweisen konnte. Die meisten RFCs sind im Wesentlichen Design Docs oder man kann auch sagen, die meisten Design Docs sind im wesentlichen RFCs. Im Endeffekt ist das synonym oder beziehungsweise kannst du Design Docs auch RFCs nennen oder RFCs auch Design Docs. Im Endeffekt, die originale Idee wurde primär vom Internet Engineering Task Force geprägt, also der IETF. Das ist die Organisation, die eigentlich so mehr oder weniger die Internetstandards prägt und weitertreibt. Also da findest du Design Docs, aka RFCs wird das bei denen genannt, zu DNS, zu TCP, zu TCP IP, zu HTTP, eigentlich zu allem. Und die ganze Sache wurde 1969 von Steve Crocker erfunden und hat eigentlich damit angefangen, inoffizielle Notizen zur Entwicklung vom ARPANET niederzuschreiben. Arpanet, Wolfgang, du hast es noch miterlebt, so alt wie du bist, der Vorgänger vom Internet.",
+            "start": 2502092,
+            "end": 2562560,
+            "confidence": 0.8907005780346823,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Klar, ich habe noch mitgemacht da mitgearbeitet quasi.",
+            "start": 2562640,
+            "end": 2566288,
+            "confidence": 0.8727300000000001,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Und die IETF nutzt RFCs bis heute und man kann auf dem Data Tracker vom IETF Datatracker, IETF Org, alle offiziellen RFCs lesen. Natürlich ist da das komplette World Wide Web auch definiert und jeder akzeptierte RFC ist im Endeffekt dann zu einem Standard geworden, zu einem Internetstandard. Die meisten RFCs oder einer der bekanntesten RFCs, die sehr, sehr viele im Engineering Bereich kennen, ist der RFC 2119. Und das ist also ein ein Design Dokument, wie wir ÿousand gewisse Wörter nutzen. Ja, es fängt an mit diesem ganz berühmten the keywords must, must not required, shall, shall not, should not recommended, may and optional in this document are to be interpreted as described. Ihr merkt schon, da geht es sehr viel um sehr spezifisches Wording. Es ist ein RFC, wie du halt das Wort must, should, not recommended und so weiter verwenden solltest, in dieser Art von Design Dokument. Ich habe einige Firmen gesehen, die kopieren das und die sagen, alle Design Dokuments folgen dieser Nomenklatur des RFC 2119. Kann man machen, muss man nicht. Ich bin nicht ein richtiger Fan davon, ich bin immer ein Fan von präzisem Wording, also verstehe ich. Dann die nächste Frage, gibt es das nur im Engineering Bereich? Lustige Frage, nein. Und zwar gibt es ein paar Firmen, Oxide, die Hardware Server company ist z.B. eins, die Design Dokuments oder RFCs eigentlich für alles nutzen. Zweitausendein, welches HR System nutzen wir? Die schreiben ein Design Dokument. Wollen wir eine neue Kaffeesorte haben? Die schreiben ein Design Dokument. Vielleicht ein bisschen übertrieben, aber Oxide nennt die ganze Sache Request for Discussion, also RFDs. Und Oxide macht ihre AfDs auch öffentlich. Und Achtung, jetzt so ein bisschen Dogfooding. Der Request for Discussion NR. Eins ist, wie man Request for Discussion schreibt. Also ist so ein bisschen, wie nennt sich das, nicht so ein Strudel, genauso wie GNU, wie heißt das? Was heißt nun mal GNU?",
+            "start": 2566424,
+            "end": 2689416,
+            "confidence": 0.8748805624999999,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Rekursive.",
+            "start": 2689608,
+            "end": 2690712,
+            "confidence": 0.44516,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Rekursives Akronym. Rekursives Akronym, naja, RFD One beschreibt, wie du RFDs schreibst.",
+            "start": 2690856,
+            "end": 2698584,
+            "confidence": 0.7708058333333333,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Und was ist RFC One von der IETF? Hätte mir nicht jetzt auch erwartet, dass das eigentlich so die Beschreibung von dem Standard ist, aber na, es geht wirklich einfach um die Amp Software Software und um die Host Software von dem damaligen Arpanet hatten das noch nicht so groß geplant.",
+            "start": 2698712,
+            "end": 2714900,
+            "confidence": 0.8574127450980391,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Links wie man den schon uns wer ein bisschen rum nerden möchte. Aber im Endeffekt ja, ich bin da jetzt nicht so religiös unterwegs. Für mich sind die meisten Design Dokumente RFCs und RFCs sind im Wesentlichen Design Docs. Mir ist völlig egal, aus welcher Richtung ihr das guckt. Viele, ich habe schon beides gesehen in Firmen. Bei Google wird es Design Docs genannt, in anderen Firmen wird es RFCs genannt. Im Endeffekt ist es das gleiche.",
+            "start": 2715440,
+            "end": 2736864,
+            "confidence": 0.8634722077922077,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Jetzt haben wir schon über Architektur, System und so weiter gesprochen, dass man da Design Dokuments verwendet. Wie schaut es aus mit Design? Also Design Design, wenn ich Oberflächen baue oder so oder wird da dann einfach. Sind da dann Wireframes eigentlich das Design Dokument?",
+            "start": 2737032,
+            "end": 2753296,
+            "confidence": 0.9115413333333332,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Es ist außerhalb meiner Komfortzone. Ich mag zwar schöne Designs und UIs und allem drumherum ist nicht mein Metier. Ich habe jetzt noch nicht so viele Designer gesehen, die wirklich Design Dokuments geschrieben haben. Was ich schon gesehen habe ist Wireframes in Design Dokumenten, dass wenn du eine Webseite baust oder eine Architektur, dass das Engineering Team z.B. ein interdisziplinäres Engineering Team oder das Produkt Trio, wie wir in einer Episode mit Robin Titus hatten, dass wir dann in einem Design Dokument halt das Frontend und das packend bauen und da dann auch Wireframes, wie das ungefähr auszusehen hat im Design Dokument mit inkludieren. Ich weiß nicht, vielleicht ist so ein Figma Click Pass das Design Dokument für Visual Designers. Ich weiß es nicht. Da bin ich raus. Falls du Designerin oder Designer bist, komm doch mal in unsere engineering Kiosk Community auf Discord und erleuchte uns da, weil mit Design habe ich relativ wenig am Hut.",
+            "start": 2753408,
+            "end": 2807606,
+            "confidence": 0.90493025477707,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Was machst du denn mit Leuten, die einfach so dein Dokument accepten und kein Feedback geben? Das ist ja auch so so ein bisschen das Problem. Ja, man kann schon irgendwie ja, ist schon okay und man bekommt aber dann wenig Feedback zurück, gerade im asynchronen Modus. Also früher in einem Meeting kann man ja noch Leute ansprechen Hey, was meinst du jetzt dazu? Aber das hast du ja jetzt viel, viel seltener und man kann ja das einfach irgendwie Daumen hoch mehr oder weniger und passt schon. Und dann gibt es ja das Beste, dass sich dann die Leute trotzdem im Nachhinein beschweren. Moment, ich wurde da nicht richtig eingebunden oder es war nicht klar.",
+            "start": 2807678,
+            "end": 2841642,
+            "confidence": 0.9128529310344823,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Ja, kommt immer wieder vor. Ist halt so wie bei einem Pull Request. Änderst du zwei Zeilen, gibt es 10 Kommentare, änderst du 200 Zeilen, gibt's null Kommentare und es look gut zu mir. Aber im Endeffekt ist da die Hoffnung, dass ich so viele diverse Leute in den Review inkludiere, dass da jemand was zu sagen hat. Ich meine, im Endeffekt müsst ihr euch überlegen, an wen ist das Design Dokument gerichtet? Auf der einen Seite natürlich an die Leute, die es approven beziehungsweise Feedgape geben müssen. Keine Ahnung, vielleicht habt ihr in eurer Firma Staff Engineers, die irgendwie so ein Komitee bilden oder vielleicht macht es auch der CTO, weil die Firma recht klein ist. Dann gibt es natürlich die Leute, die es umsetzen, programmieren müssen, die sollten das schon lesen und die sollten sich dann auch ein bisschen Feedback geben. Dann gucken da vielleicht Leute drauf, die in einer Organisation nur Interesse daran haben oder vielleicht kommt auch ein New joiner, um den Kontext von einer existierenden Applikation zu bekommen und liest so ein Dokument. Und das ist natürlich Gold wert, weil diese Menschen haben in der Regel keine Historie. Was machen wir mit solchen Leuten, wenn du jetzt fünf Reviewer hast und da kommt wirklich kein Kommentar, da würde ich mir mal Gedanken machen. Vielleicht haben wir sogar den den Hippo Effekt, die die Meinung der highest paid person ist am wichtigsten. Und wenn die highest paid person dann das Design Dokument geschrieben hat, dann ist es natürlich doof. Ja, dann ist die Kultur kaputt, weil du kannst mir nicht sagen, dass wenn du ein relativ komplexes Projekt machst und dann fünf, sechs, acht Seite ist, dass da gar kein Kommentar kommt. Und wenn da kein Kommentar kommt und du bist wirklich mit dem Design zufrieden, hey, sei doch mal nett, mach mal einen Kommentar und sagt sehr gutes Design Dokument, danke für deine Arbeit. Mit diesem Move hat keiner gerechnet.",
+            "start": 2841746,
+            "end": 2931280,
+            "confidence": 0.9204996615384616,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Zweitausendein versuchst du deinen Leuten auch in den Arsch zu treten, wenn sie nichts zurückliefern.",
+            "start": 2931320,
+            "end": 2935430,
+            "confidence": 0.9221926666666665,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Oh, guter Punkt. Musst du. Der Punkt ist ganz einfach. Wenn du ein Design Dokument geschrieben hast und du packst es in irgendeinen Slack Channel oder von mir ist auch in Teams Chat oder wo auch immer und du vergisst das, dann hast du deinen Job nicht gemacht. Deine Aufgabe als Design Dokument Autor ist ein Follow up zu machen. Du bist dafür verantwortlich, einfach irgendwo ein Dokument reinzuschmeißen und zu erwarten, dass jeder genau darauf gewartet hat, bringt es halt nicht Ÿousand. Und kurzum, ja, musst du. Du musst den Leuten in den Arsch treten. Und wenn die sagen ich habe gerade keine Zeit, direkt die nächste Frage hinterher. Wann hättest du denn Zeit? Oder kannst du mir eine alternative Person nennen aus deinem Team, die da gegebenenfalls drauf gucken kann? Wenn die Person dann ich habe gar keine Zeit. Nein, dann sage ich jetzt was, was ich echt hasse, dann eskaliere es einfach, weil dann hat die Person entweder nicht die richtige Strategie oder arbeitet nicht am most valuable work package oder du arbeitest an unwichtigen Projekten oder, oder oder. Dann ist irgendwas krumm, wenn jemand an wichtigen Projekten keine Zeit hat, Reviews zu und dann wird es dreckig. Ja, aber das musst du nicht kümmern, dafür hast du eine Vorgesetzte und Vorgesetzten, die machen dann den ganzen Quatsch und richten das jetzt.",
+            "start": 2935510,
+            "end": 2997406,
+            "confidence": 0.9291887555555554,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Normalerweise fragen wir ja am Schluss auch immer, wenn man mit dem Thema losstarten will, was hast du da für Tipps? Ich glaube in dem Fall ist es relativ easy. Man startet einfach los. Man fängt einfach mit mit so einem Dokument an und probiert mal Feedback zu erhalten. Da braucht man ja niemanden fragen. Ich glaube, man kann einfach damit loslegen. Aber meine Frage wä was hast du denn für Tipps, damit man schon gut startet mit einem Design Dokument? Ich kann jetzt ein Template runterladen, aber inhaltlich wie wie baue ich denn sowas auf? Auf was muss ich achten, dass ein Design Dokument gut ankommt, leicht verständlich ist? Und vielleicht hast du da paar Punkte, die man beachten sollte, abgesehen davon von der Struktur, die wir jetzt schon besprochen haben und die man auch über das Template im Idealfall ja reinbekommt in einer gewissen Weise.",
+            "start": 2997438,
+            "end": 3040966,
+            "confidence": 0.8917689795918369,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Ja, die Tipps, die ich jetzt gerade so habe, die kann man natürlich schon in irgendeiner Art und Weise auch auf fast alle Schreib Aktivitäten anwenden. Aber jetzt im Kontext von Design Dokument würde ich mal sagen, Storytelling hat da nichts zu suchen. Wenn du jetzt anfängst, wie jetzt ein Nilpferd auf Toilette geht und Klopapier nutzt, dann ist das zwar lustig, aber es hat in der Regel in einem informellen technischen Dokument relativ wenig zu suchen. Dann gibt es natürlich auch noch mal den Punkt mit Abkürzungen und interne Wörter. Ja, jede Domäne hat ihre eigenen Fachwörter, verstehe ich. Vielleicht machst du da auch ein Glossar, die sollst du ja auch nutzen, weil im Endeffekt soll es ja auch schnell verständlich sein. Du musst jetzt nicht jedes kleine Fachwort immer erneut beschreiben, weil das langweilt auch die Leser. Aber lass einfach mal die Abkürzungen weg, weil das hilft Newcomern sehr und schreib einfach alle Abkürzungen einfach aus. Ich bin immer ein großer Freund von Bullet Points versus Prosatext, natürlich in einer gewissen Balance, was bei dir eklatant ist.",
+            "start": 3041078,
+            "end": 3093286,
+            "confidence": 0.9179388268156429,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Weil du schreibst meine Texte teilweise um in Bullet Points Ÿousand und dann gibt es andere Leute, die wollen wieder mehr Fließtext, die schreiben das dann wieder zurück. Das ist so ein schönes Ping Pong Spiel.",
+            "start": 3093318,
+            "end": 3102084,
+            "confidence": 0.8952144444444444,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Ja, wir hatten ja gerade darüber gesprochen mit das Auge liest mit. Du sollst ja schon eine gewisse Struktur und immer wenn ich da drei Seiten Prosa Text habe, dann habe ich noch keinen Satz gelesen und denke mir so boah, wird jetzt anstrengend. Und wenn da wenigstens mal ein bisschen auflockernde Bullet Points drin sind, dann sage ich ah, das ist cool. Falls du ein Argument hast, was du irgendwie untermalen möchtest, ja, wir sind ja alles datengetriebene Leute, dann denk immer dran ZDF Zahlen, Daten, Fakten. Leg mal ein bisschen Analytics drunter. Bedeutet inkludiere einfach mal ein paar Zahlen. Mach vielleicht vor dem Schreiben eine Brainstorming Session mit einem Teammitglied, geht meinen Meetingraum kurz an Whiteboard und spreche die Idee kurz salopp durch. Dann kriegst du vielleicht schon mal ein paar interessante Punkte, die du auch gegebenenfalls nur in die Alternativen packen kannst. Mit einem Grund, warum du das verwirfst. Pairwriting ist natürlich eine Option. Schreib das zusammen mit jemandem. Sei dir bewusst, ein Design Doc ist ein Lebensdokument. Das bedeutet auch in der Reviewphase kann das noch geändert werden. Nimm das Feedback, verwandle das in ein Dokument und mach es einfach besser. Und falls du noch nicht so gut im Schreiben bist, werd dir eins bewusst, schreiben selbst ist ein chaotischer Prozess. Ich höre mich jetzt gerade wie so ein Lehrer gerade völlig schrecklich, aber nun gut. Schreiben ist ein chaotischer Prozess. Das bedeutet, du machst ein Dokument auf und machst erstmal ein Braindump dahin und später iterierst du über die Sätze und du bringst da Struktur rein. Also es muss nicht perfekt vom vom Getgo sein. Und ich verstehe, dass das außerhalb deiner Komfortzone ist, aber für mich gibt es nichts wichtigeres, auch wenn es nur zum Selbstschutz vor dir ist, falls du Sachen vergisst. Also ich schreibe mir alles auf, hab mal schon mal in der Produktivität Folge, wie wir uns organisieren und jetzt sagt man schreiben kostet Zeit. Ja, das ist korrekt, aber du investierst die Zeit einmal und kannst dieses Dokument an drei und dreiig Leute packen. Wenn du das drei und dreiig Leuten erklären muss, kostet das drei und dreiig mal mehr Zeit oder vielleicht 15 mal mehr Zeit. Lange Sicht gesehen muss man da durch, wenn man die Fachkarriere und die Fachleiter weiter hochklettern möchte, weil da kommt man nicht drum rum. Auch bei Big tech Firmen gibt es immer Executive Summaries und bis Weekly Business Reviews und da geht alles nur über geschriebene Dokumente aka wer schreibt, der bleibt.",
+            "start": 3102172,
+            "end": 3224478,
+            "confidence": 0.900219546539379,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Wobei es gibt auch viel geschriebenes, was nicht gelesen wird, aber das ist noch mal ein anderes Thema und betrifft weniger Design Dokuments. Aber wenn es um Reporting geht, ist es durchaus oft der Fall.",
+            "start": 3224614,
+            "end": 3233942,
+            "confidence": 0.9504534285714283,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Andere Baustelle.",
+            "start": 3234046,
+            "end": 3235030,
+            "confidence": 0.98788,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Was mein Tipp auf jeden Fall auch noch für Leute ist, die jetzt vielleicht eher in der Leadrolle sind oder in sonstigen Positionen mit mit einem gewissen Einfluss, dass man auch die richtige Kultur dazu braucht. Also es ist natürlich das Problem, wenn etwas schriftlich irgendwo steht, dann ist man auch noch angreifbarer, als wenn man irgendwas nur am Gang bei der Kaffeemaschine erwähnt hat. Das heißt, wenn natürlich die Kultur irgendwie eine Blaming Kultur ist und wo man nur irgendwie Futter sucht, um wieder irgendwen vorzuführen, dann ist es natürlich auch ein Problem. Also man muss schon dementsprechend die Kultur schaffen, dass man richtig Feedback gibt, dass man nicht alles automatisch als schlecht empfindet, auch gerade wenn Leute beginnen mit sowas, dass man sich da traut, was zu schreiben und das nach außen gibt, um Feedback zu bekommen, dass das nicht automatisch ein vernichtendes Feedback wird. Also da muss man gerade von von auf der Leadership Seite unbedingt aufpassen, weil sonst hat man das natürlich einfach verbrannt, diese Herangehensweise da von Design Documents und man kennt es ja vielleicht von von PR comments, wie viel böses Blut man dadurch Nitpicking und ähnliche Dinge unter Umständen ins Team bringen kann. Also auch da dementsprechend aufpassen. Ist eigentlich ein ähnlicher Bereich und gerade da ist Leadership gefordert.",
+            "start": 3235150,
+            "end": 3316538,
+            "confidence": 0.910068148148148,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Im Endeffekt geht es darum, es geht immer nur um die Sache. Es geht nie um den Autor persönlich wert, nicht angreiflich oder ähnliches, sondern es geht wirklich einfach nur um die Sache. Es geht um das beste Design unter den gegebenen Umständen, unter den gegebenen Limitierungen. Es ist völlig okay, wenn ihr ein Design macht, was nicht zu einer Million User skalieren muss, wenn es eine interne Applikation ist. Das ist völlig okay und nicht alles muss skalieren. Also kommt mir nicht mit irgendwelchen Anforderungen, die nicht im Dokument da sind, die einfach nicht notwendig sind. Over Engineering und Co.",
+            "start": 3316614,
+            "end": 3345870,
+            "confidence": 0.938867128712871,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Du meinst also, man kann Over Engineering damit verhindern? Das ist ja ein neues positives Element von Design Documents, aber es stimmt vielleicht. Das bringen wir jetzt als Titel bei der Episode Design Dokumente verhindern over engineering.",
+            "start": 3346290,
+            "end": 3359750,
+            "confidence": 0.8957421621621622,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Ein paar Sachen haben wir jetzt eigentlich noch gar nicht angesprochen und theoretisch könnten wir eigentlich so 20 Stunden noch über das Thema sprechen. Also eine Geschichte ist, wenn ihr die Applikation schon gebaut habt und dann erst ein Design Dokument oder EFC schreibt, ganz im Ernst, lass es einfach sein. Das muss jetzt hier keine box ticking exercise sein, sondern das ist leider ab und zu die Realität, akzeptiert die Realität eigentlich und gut ist. Die andere Geschichte ist so ein bisschen die, die entscheidungsfatig. Keiner will was entscheiden. Macht euch mal Gedanken, welche Entscheidungen im Design Dokument eigentlich so straightforward sind, also die sehr einfach sind und legt den Fokus auf die wichtigen Entscheidungen. Und zu allergrößten Not, wenn sich das Engineering Team nicht entscheiden kann, ja, dann wird das halt die Hierarchie hochgebabbelt. Dafür sind die Leute halt da und die müssen dann irgendeine Entscheidung treffen, auch wenn das vielleicht nicht eure Entscheidung ist, aber Punkt ist aber Ziel ist es, die Entscheidungen offen zu legen, zu machen und zu dokumentieren, unter welchen Voraussetzungen die Entscheidung gemacht wurde. Merkt immer, denkt immer dran, eine Entscheidung und zwar die meisten Entscheidungen kann man revidieren. Es ist wichtiger, eine falsche Entscheidung zu treffen, anstatt gar keine Entscheidung zu treffen, weil du merkst irgendwann, dass du eine falsche Entscheidung drauf machst und dann kannst du diese revidieren in der Regel.",
+            "start": 3360050,
+            "end": 3426124,
+            "confidence": 0.9092464782608691,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Auch da brauchst du natürlich wieder die Kultur dazu und die Transparenz, weil das nicht überall so ist, dass man gerne eben irgendwo stehen hat, warum eine Entscheidung getroffen wurde.",
+            "start": 3426292,
+            "end": 3436244,
+            "confidence": 0.9470973333333332,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Und auch die Reviewphase, schiebt die jetzt nicht vier, fünf, sechs Wochen vor euch her, sondern setzt eine harte Deadline. Zwei Wochen. Jeder sollte mal Zeit haben, innerhalb von zwei Wochen irgendwie ein, fünf oder 10 Pager zu lesen. Ernsthaft, jeder trinkt morgens einen Kaffee und kann da mal, kann da mal durch scrollen. Zweitausendein. Also von daher und ihr könnt die könnt ihr könnt die Reviews natürlich machen. Async oder On Site in Design Review Meeting oder Hybrid, beides. Ihr kriegt das schon hin. Ansonsten schaut einfach mal in die Show Notes, da sind Tonnen von links. Ihr müsst jetzt nicht alles durchlesen, aber kriegt auf jeden Fall ein bisschen Inspiration. Und falls das ein neues Thema für euch ist und ihr seid euch nicht ganz so sicher, wie ihr das implementieren soll, sprecht doch einfach mal mit eurer Vorgesetzten im nächsten darüber, warum ihr das für sinnvoll haltet, dass ihr das bei einem neuen Projekt vielleicht mal ausprobieren wollt. Einfach mal ein bisschen experimentierfreudig sein. Wolfgang, bist du jetzt Schreib und Design Dokument Fan? Du hast am Anfang so kritisch geklungen.",
+            "start": 3436332,
+            "end": 3488356,
+            "confidence": 0.909822841530055,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Ich bin großer Fan, ich mache alles über Dokumente. Ich habe nur den Devil's Advocate gespielt.",
+            "start": 3488468,
+            "end": 3492692,
+            "confidence": 0.7900687500000001,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Wir sind hier nicht in Hollywood und du musst jetzt hier nicht deine Rolle faken.",
+            "start": 3492756,
+            "end": 3496484,
+            "confidence": 0.9383166666666666,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Ich habe sogar deine schönen Slack Messages.",
+            "start": 3496612,
+            "end": 3499756,
+            "confidence": 0.8563500000000001,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Gelobt, auf die ich immer antworten kriege, wo ich sagen würde, ist eine Beleidigung, ich gebe hier so viel Mühe und dann kriege ich immer so saloppe Antworten.",
+            "start": 3499828,
+            "end": 3506772,
+            "confidence": 0.8949789285714286,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Wie das ist, das ist Feedback. Es ist Feedback, was du wieder alles vergessen hast an Kontext oder fehlende Wertschätzung.",
+            "start": 3506796,
+            "end": 3513372,
+            "confidence": 0.8571115,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Das immer so die Sichtweise, so zwei Perspektiven, eine Meinung. Vielen lieben Dank an alle, die bis hier durchgehalten haben und wir wünschen viel Spaß beim Schreiben. Und falls ihr anderer Meinung seid, kommt einfach mal in die Discord Community. Findet ihr auch in den Show Notes und gibt uns mal ein bisschen hier Feuer. Ja, gibt uns mal ein bisschen Kritik. Sagt Wolfgang, den Quatsch, den du da erzählt hast, da halte ich gegen wegen ABC oder auch die Anweisung wie kann man eigentlich ohne Design Dokumente leben? Verstehe ich nicht. Gerne diskutieren darüber. Und wenn dir diese Episode gefallen hat und du denkst, deine Mitmenschen im professionellen Umfeld sollten mal ein bisschen mehr Design Dokumente schreiben, schnapp dir mal kurz den Link, geh mal in dein E Mail Client und schickt die einfach mal an fünf Leute. Würde uns sehr viel helfen. Uns würde es sehr freuen. Vielen Dank für die Weiterempfehlung.",
+            "start": 3513396,
+            "end": 3563804,
+            "confidence": 0.9151764285714284,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Was andere übrigens gerade gemacht hat, ist diesen Punkt vorzulesen, der in unserem Template steht von unserer Episodenvorbereitung. Da steht nämlich Erinnerung an die mobilen Apps Spotify und Podcast bewerten, nach oben scrollen und dort Sterne vergeben. Apple runterscrollen bis zu den Sternen und Rezensionen mit einer Textbewertung vergeben. Schwieriges Wort und Empfehlung. Das ist, was der Andi daraus gemacht hat. Aber schön hast du wirklich schön gemacht und schön beendet. Und damit will ich euch gar nicht länger langweilen. Danke fürs Zuhören und wir hören uns nächstes Mal. Tschö, tschau.",
+            "start": 3563852,
+            "end": 3598510,
+            "confidence": 0.8949746153846154,
+            "speaker": "B",
+            "channel": null
+        }
+    ],
+    "confidence": 0.909247682675974,
+    "audio_duration": 3606,
+    "webhook_status_code": null,
+    "webhook_auth": false,
+    "summary": null,
+    "auto_highlights_result": null,
+    "content_safety_labels": null,
+    "chapters": null,
+    "sentiment_analysis_results": null,
+    "entities": null
+}
