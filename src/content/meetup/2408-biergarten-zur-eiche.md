@@ -9,7 +9,7 @@ talks:
   - avatar: 'bier.jpg'
     name: 'Bernhard Bierbrauer'
     title: "Let's meet for a beer!"
-    description: ''
+    description: 'This time we will meet for drinks at Gastgarten zur Eiche to network. We reserved tables for for 20 people.'
     bio: ''
     website: 'https://unsplash.com/de/fotos/braune-flussigkeit-auf-klarem-glasbecher-rrvAuudnAfg'
   - avatar: 'drinks.jpg'
