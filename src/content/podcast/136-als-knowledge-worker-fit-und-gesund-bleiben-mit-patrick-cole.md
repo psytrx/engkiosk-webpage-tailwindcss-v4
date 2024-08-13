@@ -82,7 +82,9 @@ speaker:
 - name: Wolfi Gassler
   website: https://wolfgang.gassler.org/
 spotify: https://open.spotify.com/episode/6bm7DjrhV2MF34v2W8URZN
-tags: []
+tags:
+- Interview
+- Karriere
 title: '#136 Als Knowledge Worker fit und gesund bleiben mit Patrick Cole'
 transcript_raw: ''
 transcript_slim: ''
