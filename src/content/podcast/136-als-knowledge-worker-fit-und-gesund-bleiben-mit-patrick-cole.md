@@ -1,5 +1,5 @@
 ---
-advertiser: ''
+advertiser: 'IU'
 amazon_music: ''
 apple_podcasts: https://podcasts.apple.com/us/podcast/136-als-knowledge-worker-fit-und-gesund-bleiben-mit/id1603082924?i=1000665104869&uo=4
 audio: https://audio1.redcircle.com/episodes/57f14922-6850-4034-adf2-6f922ac24b18/stream.mp3
