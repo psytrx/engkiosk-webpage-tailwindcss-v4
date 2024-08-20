@@ -88,7 +88,9 @@ speaker:
 - name: Wolfi Gassler
   website: https://wolfgang.gassler.org/
 spotify: https://open.spotify.com/episode/4Bg26MSTXaSPVed6XZF000
-tags: []
+tags:
+- Software Engineering
+- Backend
 title: '#137 Die Schaltsekunde und ihre IT-Folgen: Ein Sekundenbruchteil mit Impact'
 transcript_raw: ''
 transcript_slim: ''
