@@ -1,0 +1,1524 @@
+{
+    "language_code": "de",
+    "audio_url": "https://audio1.redcircle.com/episodes/a12acf0c-ff8c-4016-81f5-72eb28401e88/stream.mp3",
+    "punctuate": true,
+    "format_text": true,
+    "dual_channel": false,
+    "webhook_url": null,
+    "webhook_auth_header_name": null,
+    "webhook_auth_header_value": null,
+    "audio_start_from": null,
+    "audio_end_at": null,
+    "word_boost": [],
+    "boost_param": null,
+    "filter_profanity": false,
+    "redact_pii": false,
+    "redact_pii_audio": false,
+    "redact_pii_audio_quality": null,
+    "redact_pii_policies": null,
+    "redact_pii_sub": null,
+    "speaker_labels": true,
+    "speakers_expected": 2,
+    "content_safety": false,
+    "content_safety_confidence": null,
+    "iab_categories": false,
+    "custom_spelling": null,
+    "disfluencies": false,
+    "sentiment_analysis": false,
+    "auto_chapters": false,
+    "entity_detection": false,
+    "summarization": false,
+    "summary_model": null,
+    "summary_type": null,
+    "auto_highlights": false,
+    "language_detection": false,
+    "speech_threshold": null,
+    "speech_model": null,
+    "id": "28917e2f-a1bf-49b8-9588-34c045f3551d",
+    "status": "completed",
+    "error": null,
+    "utterances": [
+        {
+            "text": "Herzlich willkommen zu einer neuen Episode vom Engineering Kiosk Podcast. Alle vier Jahre haben wir ein Schaltjahr. Ein zusätzlicher Tag wird eingefügt, was aber vielen nicht bekannt ist. Immer mal wieder gibt es auch eine Schaltsekunde. Auf einmal hat der Tag nicht Sekunden, sondern Sekunden. Und eine solche zusätzliche S kann zumindest bei IT Systemen für eine ganze Menge Probleme sorgen und natürlich auch eine ganze Podcast Episode füllen. Wir sprechen über die Schaltsekunde und warum diese seit 1970 nur 27 mal eingefügt wurde. Wir thematisieren die Probleme, die eine zusätzliche S erzeugt, welche Lösungsmöglichkeiten es gibt, diese Probleme vorzubeugen. Z.b. wie Windows damit umgeht, wann man eine Monotonic Clock verwenden sollte. Zweitausendein. Oder warum Google und Amazon eine einzelne S in ihren Zeitservern verlangsamen und somit die Schaltsekunde schmieren. Und wir sprechen über die Zukunft der Schaltsekunde, also ob wir diese überhaupt noch brauchen oder halt auch nicht. Es dreht sich also alles um Zeit bzw. Um eine einzelne S. Wir springen direkt rein. Los geht's. Viel Spaß.",
+            "start": 3840,
+            "end": 72820,
+            "confidence": 0.9164417751479297,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Andi, du glaubst gar nicht, wie ich mich jetzt auf diese Episode freue.",
+            "start": 76480,
+            "end": 79864,
+            "confidence": 0.9290661538461538,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Da wir schon ein kleines Vorgespräch hatten, bin ich jetzt gespannt, was jetzt kommt, weil ich glaube, du lügst.",
+            "start": 79952,
+            "end": 85060,
+            "confidence": 0.9177673684210527,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Ich bin eigentlich so happy über diese Episode, weil du mir immer vorwirfst, so akademisch zu sein und mir auch immer vorwirfst, diese akademischen Programmierungen da und dass man irgendwelche Grundlagen versteht, das braucht doch in der Realität niemand. Und jetzt bist du mit einem Thema um die Ecke gebogen, was ja akademischer gar nicht sein könnte, würde ich fast sagen. Zweitausendein. Schlimmes Nerd Thema schlechthin. Und darum freue ich mich schon drauf, dir das jetzt vorwerfen zu können, dass du mit so einem Nerd Thema um die Ecke kommst. Erklär mal, was du da heute besprechen willst.",
+            "start": 85440,
+            "end": 116510,
+            "confidence": 0.9011174489795921,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Also ich. Ich grinse gerade. Ich weiß nicht, ob man das in meiner Stimme hört, aber ich grinse gerade wirklich. Zwar das Thema. Ich hatte so viel Spaß, das Thema vorzubereiten. Und zwar geht es um Schaltsekunden, also um die sogenannte Leap Second und um sogenannte Schmiersekunden, also Smear Seconds. Und bei der Vorbereitung habe ich mich da so reingenerdet wie Kennt ihr das? Man macht ein YouTube Video auf und dann springt man zum nächsten und zum nächsten und zum nächsten und irgendwann ist man 3 Stunden drin und ist irgendwie so ein rabbit Hole so ganz tief runter. Und ich nach viereinhalb Stunden Episodenvorbereitung musste ich mich wirklich bremsen, weil ich bin so tief darunter in diesen Dax Bau, wenn man so möchte.",
+            "start": 116590,
+            "end": 154534,
+            "confidence": 0.8961862399999998,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Ich finde, du hast für eine läppische S dich viereinhalb Stunden vorbereitet und ich muss da abbrechen. Heißt Leap Second eigentlich läppische S? Ist es die eins zu eins Übersetzung?",
+            "start": 154582,
+            "end": 165370,
+            "confidence": 0.8228606666666666,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Vielleicht die aus dem Ruhrpott? Das ist die läppische S, ja. Nee, das ist die Schaltsekunde.",
+            "start": 165990,
+            "end": 170346,
+            "confidence": 0.8318318749999999,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Ja, dann erklär mal was. Was ist eine Schaltsekunde? Ich kenne das Schaltjahr, dreht alle vier Jahre, oder? Glaube ich. Es wird schon peinlich. Ich weiß nicht mal, wann das Schaltjahr auftritt. Ich glaube alle vier Jahre. Wie oft tritt die Schalt s auf?",
+            "start": 170498,
+            "end": 184690,
+            "confidence": 0.8549129545454544,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Klassische Beraterantwort. It depends.",
+            "start": 184770,
+            "end": 186930,
+            "confidence": 0.6582075,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Ja, super. Es ist ja nur 1 s. Kann ich da schon dependen?",
+            "start": 187090,
+            "end": 190482,
+            "confidence": 0.8823738461538462,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Nee, also ich muss mich bei dieser Episode jetzt ein bisschen konzentrieren, weil Ÿousand in Physik war ich noch nicht so wirklich gut damals in der Schule und in Astronomie, ich glaube, das hatte ich gar nicht als Fach. Deswegen, jetzt kommt der Erklärwerk. Also es geht jetzt so ein bisschen um Erdrotation und mittlere Sonnentage.",
+            "start": 190666,
+            "end": 207496,
+            "confidence": 0.921179642857143,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Ich bin gespannt wie ein Regenschirm. Schieß los.",
+            "start": 207688,
+            "end": 210408,
+            "confidence": 0.874295,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Wie viele Sekunden hat ein Tag?",
+            "start": 210504,
+            "end": 212300,
+            "confidence": 0.8864166666666667,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Oder nur, glaube ich, oder?",
+            "start": 214280,
+            "end": 216680,
+            "confidence": 0.8668140000000001,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Nee, nee, wir nehmen 24 Stunden mal 60 Minuten mal 60 s Sekunden hat ein Tag.",
+            "start": 216760,
+            "end": 225100,
+            "confidence": 0.7832774999999998,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Kleine Zwischenfrage, wenn du das programmierst, machst du da immer 60 mal 60 mal 60 oder rechnest du dir das im Vorhinein aus und schreibst dann das Ergebnis hin? Andi, das Buch the Clean Coder von unserem Kollegen Uncle Bob sagt dir ja vermutlich was, oder?",
+            "start": 225920,
+            "end": 238720,
+            "confidence": 0.9335749999999997,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Logisch, ist schon ein bisschen her, wann ich das gelesen habe, aber ist ja auch noch irgendwie so eine Art Pflichtlektüre in unserer Branche.",
+            "start": 238800,
+            "end": 245040,
+            "confidence": 0.9901108333333334,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Genau. Und was interessant ist, Easybill, unser Episodensponsor heute, war die erste Firma, die auf uns zugekommen ist, mit einem Werbetextvorschlag CleanCoder erwähnt hat. Und zwar haben sie CleanCoder verwendet, um Ownership für sich zu definieren, weil Ownership ist ja gerade in einem kleinen, wachsenden Software Team wichtig. Also du musst mitdenken, proaktiv sein, professionell handeln. Und genau so wird es in Cleancoder definiert.",
+            "start": 245120,
+            "end": 268924,
+            "confidence": 0.8745549999999999,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Easy Bill, Easybill, irgendwas klingelt da bei mir. Hilf mir noch mal auf die Sprünge. Was machen die noch mal?",
+            "start": 269012,
+            "end": 274492,
+            "confidence": 0.841488,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Genau, du sprichst ja mit einem Freelancer und für mich sind die natürlich ein Begriff, weil die kümmern sich um die Rechnungserstellung, aber nicht nur für Freelancer, sondern auch für ebay, Amazon, Shopify Händler. Und die kennen sich ganz gut aus in dem ganzen Bereich e Rechnungspflicht, GoBD, also das Aufzeichnen von Unterlagen in elektronischer Form, Aufbewahrungsfristen und so weiter, was man da alles so beachten muss. Und du als Angestellter weißt es ja vielleicht nicht, aber als Firma muss man z.B. ab 2025 gesetzlich E Rechnungen empfangen können.",
+            "start": 274516,
+            "end": 301520,
+            "confidence": 0.9041614606741574,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Und das wusste ich in der Tat nicht. Aber warum schaltet Easybill jetzt hier im Engineering Kiosk Podcast denn eigentlich Werbung?",
+            "start": 301600,
+            "end": 307800,
+            "confidence": 0.8807733333333333,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Ja, Easybill sucht Verstärkung für ihr Techteam. Einerseits SREs, um ihre Infrastruktur mit infraest Code zu managen, aber auch Entwickler innen im Bereich BHB, Ruby und ein bisschen Rust ist auch dabei. Und was das coole ist, das Ganze ist auch möglich vollständig remote.",
+            "start": 307840,
+            "end": 323796,
+            "confidence": 0.8330406818181815,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Und wenn ich jetzt bei Easybill anfangen würde, mit welchem Infrastrukturstack würde ich denn dann arbeiten?",
+            "start": 323828,
+            "end": 328708,
+            "confidence": 0.904739375,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Ziemlich breit das Ganze. Kubernetes, Bacona Cluster, TIDB, Mini IO und das ganze Blech, was sie verwenden, läuft bei Hetzner.",
+            "start": 328844,
+            "end": 336444,
+            "confidence": 0.839755,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Das klingt auf jeden Fall nach einem kleinen, interessanten Team, wo man noch sehr, sehr viel Impact haben kann.",
+            "start": 336532,
+            "end": 340844,
+            "confidence": 0.9890215789473684,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Auf jeden Fall.",
+            "start": 340892,
+            "end": 341444,
+            "confidence": 0.9909666666666667,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Wenn das nach einem Ort für deinen nächsten Karriereschritt klingt, zweitausendein, melde dich doch einfach mal bei Easybill. Alle infos findest du natürlich in den Shownotes oder unter Easybill de Jobs.",
+            "start": 341492,
+            "end": 351346,
+            "confidence": 0.9154354838709677,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Und jetzt zurück zu Podcast.",
+            "start": 351498,
+            "end": 353586,
+            "confidence": 0.942888,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Ich habe beides schon gemacht. In der Regel mache ich 24 mal 60 mal 60. Und weil das klarer für die Programmierer ist. Ansonsten ist die 86400 so eine Magic Number. Und dann adde ich da einen Kommentar hin, was dann 24 Stunden mal 60 Minuten mal 60 s ist. Aber weil im Endeffekt bei kompilierten Sprachen ist es eh egal, weil das wird ja zur Compilezeit dann umgerechnet. Zweitausendein.",
+            "start": 353778,
+            "end": 374220,
+            "confidence": 0.8964632857142859,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Puh, ja, da erwartest du viel vom Compiler. Aber ich habe da auch immer ein schlechtes Gewissen, wenn ich sowas mache. Da denke ich mir immer, jetzt muss diese Computation, keine Ahnung, nimmt JavaScript her. Es muss jetzt auf jedem Rechner jede Person, die die Webseite aufruft, muss diese Berechnung von diesen vier Zahlen durchführen. Ist das nicht eigentlich schlecht für die ganze Welt? Aber ist ein anderes Thema. Okay, wir bleiben in den aber in dem Fall stimmt es nur manchmal ganz genau.",
+            "start": 374250,
+            "end": 400996,
+            "confidence": 0.9078454761904763,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Und zwar bis 1967 dachte man, dass die Erde in einer gleichmäßigen Geschwindigkeit rotiert. Deswegen hat man die Definition einer S eins durch gemacht. Also der Bruchteil von eins durch eines mittleren Sonnentages. Ein mittlerer Sonnentag ist die Zeit, bis die fiktive mittlere Sonne nach einer kompletten Umdrehung wieder an der gleichen Stelle steht.",
+            "start": 401028,
+            "end": 432740,
+            "confidence": 0.9277855555555555,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Ich kann dir soweit folgen.",
+            "start": 433360,
+            "end": 434992,
+            "confidence": 0.877518,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "1967 hat man dann jedoch die Definition der S geändert. Warum, kommen wir gleich drauf zu. Seitdem her wird die S nicht mehr astronomisch anhand des mittleren Sonnentages definiert, sondern durch eine bestimmte Anzahl an Schwingungen eines Caesiumatoms. Daher kommt auch der Spruch internationale Atomzeit oder Atomuhr. Und die nennt man in Fachkreisen auch die international atomic time. Oder jetzt kommt etwas, was ich nicht aussprechen kann in französisch themes atomique international, ich weiß es nicht. Nennt sich abgekürzt TAi. Das bedeutet, immer wenn ihr irgendwo Tai im Kontext von Zeit lest, geht es um die Atomzeit zweitausendein. Der Riesenvorteil von diesem Atom es schwingt immer gleichmäßig. Der riesen Nachteil. Jetzt wissen wir, dass die Erde nicht gleichmäßig rotiert. Also haben wir jetzt eigentlich zwei Zeiten, die auseinanderlaufen. Einmal die astronomische Zeit und einmal die Atomzeit.",
+            "start": 435176,
+            "end": 494278,
+            "confidence": 0.9018345588235296,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Und wann hast du gesagt? 1969? 67. 67. Okay. Hat also nichts mit dem klassischen Unix Timestamp seit 1970 zu tun, dass der kurz danach eingeführt wurde.",
+            "start": 494374,
+            "end": 505202,
+            "confidence": 0.9137325925925924,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Genau, war in dem Fall drei Jahre später. Zum Unix Timestamp kommen wir gleich auch noch. Fünf Jahre später, nachdem die Definition der S geändert wurde, wurde UTC eingeführt als koordinierte Weltzeit.",
+            "start": 505366,
+            "end": 517354,
+            "confidence": 0.9500437500000001,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Erst 1902 und siebzigste. Ja, darum kennt die Unix Timestamp keine UTC Zeit.",
+            "start": 517482,
+            "end": 522578,
+            "confidence": 0.8796523076923077,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Das weiß ich schon wieder nicht. Also das ganze Thema Zeit ist so hart komplex. Wie gesagt, diese Frage, die kam mir gar nicht in den Sinn, und bei der Recherche musste ich abbrechen. Jetzt ist es aber so, Ÿousand, die Erde selbst, haben wir ja gerade gesagt, rotiert nicht gleichmäßig. Und jetzt haben wir die Definition der s geändert auf Basis des Caesiums Atoms. Die Erde rotiert minimal langsamer, als bei der Definition der S zugrunde gelegt wurde. Tatsächlich ist ein mittlerer Sonnentag dauert um Sekundenbruchteile länger als Sekunden. Das bedeutet, ein mittlerer Sonnentag dauert ungefähr zwei Millisekunden länger als noch vor 100 Jahren. Das und wirklich, das ist der Grund, warum es eine Schaltsekunde gibt, oder bzw. Ab und zu eine Schaltsekunde eingeführt wird, damit die koordinierte Weltzeit UTC mit der auf der Erdrotation basierenden Weltzeit möglichst synchron gehalten werden kann. Und die Erdrotation basierende Weltzeit heißt UT. Also jetzt sind wir schon bei drei einmal der Atomzeit THi, einmal der koordinierten Weltzeit UTC und einmal der Erdrotation basierten Weltzeit UT.",
+            "start": 522714,
+            "end": 599540,
+            "confidence": 0.9127515606936412,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Das heißt, die Schaltsekunde ist plus 1 s. Das heißt, die Uhr bleibt im Prinzip 1 s stehen, oder? Also pausiert 1 s.",
+            "start": 600040,
+            "end": 608888,
+            "confidence": 0.9375156521739131,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "So, jetzt muss ich mich ganz kurz konzentrieren, weil das ist nämlich echt ein harter Brainfuck. Ja, wir haben eine positive Schaltsekunde, also plus eins. Und der Grund ist folgender. Ein tatsächlicher mittlerer Sonnentag, also astronomische Uhr Erdrotation braucht einen Sekundenbruchteil länger als 24 Stunden. Also er braucht Sekunden und ungefähr zwei Millisekunden. Die koordinierte Weltzeit UTC basiert auf der Atomuhr. Und die Atomuhr, dieses Cesiumatom, diese Schwingungen, die sind gleichmäßig. Und deswegen ist ein Tag bei der Atomuhr immer 400 s.",
+            "start": 609024,
+            "end": 650156,
+            "confidence": 0.9119045121951217,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Also einfach die zwei Millisekunden, die da jedes Jahr dazukommen, die muss man dann einfach einmal eben mit plus einer S dazuzählen bei der klassischen Zeit.",
+            "start": 650308,
+            "end": 659676,
+            "confidence": 0.9069307692307691,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Genau. Nur dass sie nicht jedes Jahr dazu kommen, die zwei Millisekunden, weil es geht ja um die Erdrotation. Die Erdrotation findet ja eigentlich jeden Tag statt. Aber da die Erdrotation halt nicht periodisch ist, also sie ist nicht gleichmäßig, kommen ab und zu mal Ÿousand zwei Millisekunden hinzu, ab und zu mal 1,5, ab und zu mal 2,5 und so weiter. Und was gemacht wird ist, es wird so lange gewartet, bis die Zeitdifferenz von der astronomischen Uhr und der Atomuhr knapp größer 0,9 s ist und dann wird entschieden, ah, bald kommt eine Schaltsekunde, eine positive Schaltsekunde.",
+            "start": 659748,
+            "end": 694914,
+            "confidence": 0.9486133333333335,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Moment, aber wer entscheidet? Sitzen da Leute oder ist das berechnet oder?",
+            "start": 695002,
+            "end": 700190,
+            "confidence": 0.9196050000000001,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Ja, wir wären ja nicht die Welt, wenn wir dafür nicht eine Zuständigkeit haben. Und zwar gibt es den internationalen Dienst für Erdrotation und Referenzsysteme.",
+            "start": 700290,
+            "end": 709230,
+            "confidence": 0.9175091999999998,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Eh klar, er ist sicher in Deutschland, oder?",
+            "start": 709350,
+            "end": 711770,
+            "confidence": 0.85472125,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Ne, wo die sitzen, weiß ich gerade nicht. Es ist auf jeden Fall eine internationale Organisation zur Messung und Berechnung der Erdrotationsparameter und eines Bezugssystems für astronomische und geographische Positionsdaten. So, und jetzt kommt's.",
+            "start": 712110,
+            "end": 725662,
+            "confidence": 0.9000279411764707,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Zweitausendeinundzwanzig.",
+            "start": 725726,
+            "end": 725880,
+            "confidence": 0.4791,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Das ist jetzt diese internationale Organisation. Wir könnten das jetzt noch viel weiter komplizierter machen. Die gesetzliche Zeit, also ob dein Land sich an die Schaltsekunde hält oder nicht, entscheidet das Land. Aber selbst Deutschland, Österreich und die Schweiz z.b. halten sich aber an diesen Dienst für Erdrotation und Referenzsysteme. Also die sind dafür zuständig zu überwachen, dass die astronomische Zeit von der Atomzeit, von der koordinierten Weltzeit nicht größer als 0,9 s abweicht. Und die geben bekannt, wann dann die nächste Schaltsekunde eingefügt wird.",
+            "start": 725910,
+            "end": 756924,
+            "confidence": 0.9438607058823526,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Zweitausendein. Aber was jetzt noch nicht ganz verstehe, wenn du sagst zwei Millisekunden pro Jahr, dann bräuchtest du da ja irgendwie pro Tag, pro Erdrotation. Pro Tag ist zwei Millisekunden.",
+            "start": 756972,
+            "end": 767418,
+            "confidence": 0.9013796666666665,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Genau. Jeden Tag rotiert die Erde einmal rund. Weil sonst haben wir dann.",
+            "start": 767474,
+            "end": 770778,
+            "confidence": 0.8759415384615384,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Ist es pro Jahr dann schon einiges. Summiert sich da schon einiges zusammen. Dann hast du ja schon wie viel Tage hat dieses Jahr dann hast du ja schon 600 Millisekunden oder so pro Jahr oder 700 eigentlich oder irgend so was. Also dann bist du schon fast bei einer Schaltsekunde pro Jahr. Oder eben so irgendwie alle eineinhalb Jahre, oder?",
+            "start": 770794,
+            "end": 791956,
+            "confidence": 0.9323883606557375,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Also ja und nein. Du fragst ja jetzt gerade mehr oder weniger durch Die Blume, wann findet eigentlich so eine Schaltsekunde statt? Ich habe ja gerade gesagt, die Differenz darf nicht mehr als 0,9 s betragen. Aber die offizielle Antwort ist bei Bedarf. Denn die Rotationsgeschwindigkeit der Erde ist halt nicht periodisch. Also es bedeutet, sie weist nicht periodische Unregelmäßigkeiten auf. Und das wiederum bedeutet in dem Fachjargon, muss ich auch extra googeln, es ist nicht verrauchsrechenbar. Also es ist nicht möglich, technische Systeme so zu programmieren, um die Schaltsekunde wirklich hervorzusagen. Denn die Erdrotation hängt halt von vielen Faktoren ab. Unter anderem.",
+            "start": 792068,
+            "end": 829936,
+            "confidence": 0.9187254368932037,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Jetzt erzählen wir aber nicht, dass dieser Mythos mit den Regenwürmern stimmt, wenn ein paar Regenwürmer in die falsche Richtung alle krabbeln oder so, dass die Erde langsamer läuft.",
+            "start": 830128,
+            "end": 838672,
+            "confidence": 0.8815227586206895,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Den Mythos kenne ich nicht, den wird vielleicht in österreichischen Schulen erzählt oder so. Hier auf jeden Fall nicht. Aber die Geschwindigkeit der Erdrotation wird unter anderem von der Gravitationswirkung vom Mond beeinflusst. So, und da verlässt mich dann meine Astronomie und Physikkenntnis.",
+            "start": 838856,
+            "end": 857144,
+            "confidence": 0.8996439534883723,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Da sind wir ja schon fast in der Astrologie dann.",
+            "start": 857272,
+            "end": 859376,
+            "confidence": 0.9237549999999999,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "So, jetzt reden wir ja die ganze Zeit davon, Achtung, wo wir gerade bei Erdrotation sind. Jetzt reden wir ja die ganze Zeit davon, wir fügen 1 s hinzu, weil wir sagen, die astronomische Zeit läuft einen Tick länger als Sekunden. Im Jahr 2020 drehte sich die Erde aber sogar etwas schneller als die Definition.",
+            "start": 859448,
+            "end": 880938,
+            "confidence": 0.9574745454545456,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Der s, weil die Regenwürmer alle in die gleiche Richtung gekrabbelt sind. Ich sag's dir.",
+            "start": 881114,
+            "end": 885850,
+            "confidence": 0.8979673333333332,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Was bedeutet das, Wolfgang?",
+            "start": 885930,
+            "end": 887210,
+            "confidence": 0.84814,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Dass wir 1 s abziehen müssen?",
+            "start": 887290,
+            "end": 889546,
+            "confidence": 0.9832850000000001,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Dann reden wir von einer negativen Schaltsekunde.",
+            "start": 889658,
+            "end": 892414,
+            "confidence": 0.9571114285714285,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Und Moment mal, und das kann unser System irgendwie. Das war zum ersten Mal, oder es.",
+            "start": 892562,
+            "end": 898678,
+            "confidence": 0.89070375,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Ist überall vorgesehen, zumindest in der Literatur, dass es eine negative Schaltsekunde geben kann. In der Praxis gab es die noch nie. Lass uns mal ganz kurz darüber sprechen, wann oder beziehungsweise wie eine positive Schaltsekunde eingeführt wird. Erstmal als Grundregel, Eine Schaltsekunde wird immer am Ende eines Tages eingefügt oder abgezogen. Das bedeutet, wir reden immer von der h 23, wir reden immer von der Min 59. Und jetzt reden wir entweder von der S 58, s 59 oder s 60. Und zwar sagen wir eigentlich, die Uhrzeit springt von 23 Stunden 59 Minuten 59 s auf 0 Uhr. Richtig?",
+            "start": 898694,
+            "end": 945010,
+            "confidence": 0.8905813861386135,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Ich habe mir das noch nie so überlegt, Ÿousand. Ja, wahrscheinlich auf oder auf. Na, wahrscheinlich auf. Von 5,9 auf.",
+            "start": 945170,
+            "end": 953688,
+            "confidence": 0.8320530000000002,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Genau. Bei einer positiven Schaltsekunde, wenn wir also die koordinierte Weltzeit wieder an die astronomische angleichen und 1 s hinzupacken, dann gibt es die Uhrzeit 23 Stunden 59 Minuten, 60 s.",
+            "start": 953864,
+            "end": 966944,
+            "confidence": 0.8784222580645161,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Das heißt, um endlich mal was informatisches reinzubringen, wobei Zeit wahrscheinlich auch Informatik ist, wenn man es breit sieht. Aber wenn ich jetzt einen Eintrag anlege, Ÿousand, genau. In dieser S, in dieser Schaltsekunde, dann ist es bei Computersystemen, die das unterstützen, ist es noch am ersten Januar oder am ein und dreiigster Dezember angelegt worden. Und bei anderen Computern, die die Schaltsekunde dazufügen, ist es am ersten Januar angelegt worden. Oder umgekehrt eigentlich. Also die, die es nicht unterstützen, ist schon im neuen Jahr, und die, die es unterstützen, ist es noch im alten Jahr.",
+            "start": 967112,
+            "end": 999750,
+            "confidence": 0.927930520833334,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Korrekt. Du springst also in der Zeit.",
+            "start": 999830,
+            "end": 1001970,
+            "confidence": 0.9834185714285714,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Ja, vor allem zwei Computer können unterschiedliche Werte abspeichern eigentlich. Das ist ja das größte Problem, wenn sie nicht demselben Muster folgen.",
+            "start": 1002390,
+            "end": 1010066,
+            "confidence": 0.9204022727272728,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Ja, ich meine, da redest du ja schon von Zeitsynchronisation.",
+            "start": 1010138,
+            "end": 1012618,
+            "confidence": 0.9067929999999998,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Und wie funktioniert das bei der negativen? Da bleibt die Uhr irgendwie stehen, oder?",
+            "start": 1012794,
+            "end": 1017538,
+            "confidence": 0.9079335714285716,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Nein, da wird ganz einfach offiziell 1 s übersprungen. Da gibt es dann für den Augenblick die 23. H, 59. Min und die 59. S nicht. Da wird direkt von der 58 s auf gesprungen. Zweitausendein, weil die negative Schaltsekunde besagt ja den Ausgleich der Synchronisation, weil die Erde sich für lange Zeit schneller als Sekunden gedreht hat.",
+            "start": 1017634,
+            "end": 1042728,
+            "confidence": 0.8994218965517243,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Habe ich dir schon einmal gesagt, dass das wahnsinnig verwirrend ist mit diesem Minus und Plus und was es dann bedeutet in der Zeit? Ja, das ist ziemlicher Brainfuck.",
+            "start": 1042784,
+            "end": 1051384,
+            "confidence": 0.8639924137931035,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Das ist ziemlicher Brainfuck. Deswegen, negative Schaltsekunden ist ein theoretisches Konstrukt.",
+            "start": 1051472,
+            "end": 1056328,
+            "confidence": 0.7640536363636362,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Also bei der negativen Schaltsekunde überspringe ich eine. Das heißt, die Zeit läuft eigentlich schneller.",
+            "start": 1056504,
+            "end": 1062900,
+            "confidence": 0.8672926666666668,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Genau. Aber wurde noch nie getestet. Wurde noch nie getestet, kam noch nie vor. Wir hatten bisher.",
+            "start": 1063020,
+            "end": 1069036,
+            "confidence": 0.891264705882353,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Es war schon 2020 einmal, ne?",
+            "start": 1069148,
+            "end": 1071028,
+            "confidence": 0.8911916666666667,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Ne, 2020 hat sich nur die Erde einmal ein bisschen schneller gedreht.",
+            "start": 1071044,
+            "end": 1073788,
+            "confidence": 0.8922408333333333,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Es war nur ein Ausreißer.",
+            "start": 1073844,
+            "end": 1076572,
+            "confidence": 0.8040179999999999,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Ja, ich weiß nicht, was die Erde. Ein bisschen Speed genommen oder so, keine Ahnung.",
+            "start": 1076716,
+            "end": 1080036,
+            "confidence": 0.9401833333333334,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Irgendwelche Schmetterlinge anscheinend.",
+            "start": 1080188,
+            "end": 1081972,
+            "confidence": 0.8841766666666667,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "In 21 hat die sich wieder ein bisschen langsamer gedreht. Aber wie dem auch sei, ich meine, im Endeffekt, zweitausendein, das kommt jetzt auch nicht jährlich vor. Bisher 27 mal seit 1902 und siebzigste, die letzte Schaltsekunde hatten wir 2016. Und ja, das Riesenproblem ist jetzt eigentlich die positive Schaltsekunde. Ich meine, da haben wir ein paar mal schon mitgemacht. 27 mal. Aber die negative Schaltsekunde, ich bin mal gespannt, ob die jemals eintreten wird. Forscher sagen, es kann sein, aber den Impact auf IT Systeme, der wurde noch nie getestet.",
+            "start": 1081996,
+            "end": 1108770,
+            "confidence": 0.9039115384615386,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Okay, dann bleiben wir mal bei dem Plus Beispiel, bei der normalen Schaltsekunde. Welchen Einfluss gibt es auf die IT? Weil eigentlich ist es ja nur okay, da ist 1 S irgendwo, die läppische S.",
+            "start": 1108930,
+            "end": 1121044,
+            "confidence": 0.9365085714285712,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Das. Das ist jetzt faszinierend. Ich habe mal ein bisschen recherchiert und du findest immer mal wieder so ein paar kleinere Sachen, die sind weniger erforscht und dann findest du Sachen, die sind wirklich erforscht. Also im Jan. 2009, wir hatten 2008 eine Schaltsekunde am ein und dreiigster Dez. 2008 hat man eine Schaltsekunde, da gab es dann ein paar Linux Kernel Panics. Auch 2015 gab es so ein paar Situationen, da hat z.B. so ein Android Handy einfach zu früh Erinnerung von einem Kalender angezeigt. Finde ich jetzt eher mäßig schlimm.",
+            "start": 1121212,
+            "end": 1151460,
+            "confidence": 0.9040973913043476,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "1 s zu früh?",
+            "start": 1151620,
+            "end": 1152972,
+            "confidence": 0.4181125,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Ne, ne, ne, wohl irgendwie schon einen Tag vorher oder ähnliches.",
+            "start": 1153076,
+            "end": 1157244,
+            "confidence": 0.8466309090909092,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Ah, ist irgendwas durcheinander gekommen?",
+            "start": 1157292,
+            "end": 1158772,
+            "confidence": 0.807062,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Ja, ja, ganz genau. Und das war bei Twitter ebenfalls. Also die falsche Zeitberechnung. Wann wurde der Tweet gesendet? Da stand dann irgendwie ein paar Jahre anstatt paar Sekunden. Da hat anscheinend jemand in der Leap second einen Tweet gesendet. So was kam mal vor. Aber was so ein bisschen mehr erforscht ist, ist folgendes und zwar 2000 zwölfte.",
+            "start": 1158836,
+            "end": 1176540,
+            "confidence": 0.8880264406779661,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Aber jetzt noch die Frage, wenn es dann so verrückt spielt, gibt mir da die Zeitlibrary dann wirklich 60 zurück als Sekundenanzahl?",
+            "start": 1176660,
+            "end": 1185108,
+            "confidence": 0.8721509090909092,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Ja, da musste er mir jetzt auch die Library sagen und die Sprache, weil.",
+            "start": 1185204,
+            "end": 1189156,
+            "confidence": 0.8744535714285714,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Sonst kann das ja eigentlich gar keinen großen Ÿousand einfluss haben, weil dann Speicher ist halt irgendwie, dann ist die Zeit falsch. Aber wenn es dann wirklich solchen Einfluss hat, dass dann ganze Tage fehlen oder irgendwas, dann muss ja schon irgendwie. Klingt schon eher danach, dass da irgendwie dann komischer Zeitwert zurückgekommen ist und dann ist alles irgendwie explodiert mehr oder weniger. Aber das lassen wir. Left to the audience als kleine Homework. Schreibt uns gerne im Discord, wenn wenn jemand versteht, wie das genau zustande gekommen ist oder sich da noch mehr reinladen will als Andi.",
+            "start": 1189188,
+            "end": 1219712,
+            "confidence": 0.8840545918367346,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Also es gibt eigentlich zwei Fälle, die etwas mehr erforscht sind. 2012 ist einer, da war gefühlt das HW Internet down, also Reddit Meetup, LinkedIn, Yelp, Mozilla fast Mail, Opera. Da war sogar NTP Server abgeschmiert. Also NTP, für die Leute, die es noch nicht gehört haben, ist das Network Time Protocol. Das ist eigentlich dafür zuständig, um sich um die Uhrzeit zu kümmern. Und NTP Server sind auch zwei 12 auf Basis der Leap Second halt einmal hochgekachelt.",
+            "start": 1219786,
+            "end": 1249720,
+            "confidence": 0.9156639240506328,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Und NTP Server ist immer dieser Dienst, der nicht gestartet ist. Wenn man sich auf den Server einloggt und eine ganz krumme Zeit hat, dann muss man diesen Dienst wieder starten, der synchronisiert die Zeit und dann ist dein System wieder up to date. Im wahrsten Sinne des Wortes up to date.",
+            "start": 1249760,
+            "end": 1263952,
+            "confidence": 0.9572359615384614,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Bei der Leapseck in 2012 kam es sogar dazu, dass im Hetzener Data Center die Power Consumption um 16 % von jetzt auf gleich anstieg. Ÿousand auf über einen MW.",
+            "start": 1264016,
+            "end": 1274702,
+            "confidence": 0.8249849999999999,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Warum denn das?",
+            "start": 1274846,
+            "end": 1275710,
+            "confidence": 0.9905133333333334,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Ja, der Grund ist Linux. Und zwar folgendes.",
+            "start": 1275790,
+            "end": 1279422,
+            "confidence": 0.9691087500000001,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "In Linux, nein, nur weil Mac nirgends.",
+            "start": 1279526,
+            "end": 1282982,
+            "confidence": 0.825952857142857,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Im Datacenter läuft, nein, die Erklärung ist relativ simpel, aber da hat die Linux Kernel Developer auch ein bisschen Zeit gekostet. Und zwar gibt es eine Komponente, die nennt sich HR Timer, High Resolution Timer oder High Rest Timer. Und zwar ist das ein Subsystem, das verwendet wird, wenn eine Anwendung schläft zweitausendein und darauf wartet, dass das Betriebssystem eine andere Aufgabe ausführt. Du kennst das so, es läuft ja oft nicht parallel, sondern es wird so getan, als läuft ein Prozess mehrere parallel. Der Scheduler, der pausiert deinen laufenden Prozess, macht für ein paar Millisekunden eine andere Berechnung und kommt dann wieder zu deinem Prozess. In einigen Fällen wird für diese schlafende Anwendung aber so eine Art Wecker gestellt. Und dieser Wecker, der schlägt halt an, wenn das Betriebssystem zu viel Zeit mit einer anderen Arbeit verbringt. Und immer wenn du einen Wecker gestellt hast, musst du natürlich kontinuierlich checken, aha, bin ich beim Wecker, ist mein Wecker abgelaufen und so weiter. Als die Schaltsekunde dann eingetreten ist, waren diese ganzen Wecker auf einmal 1 s voraus, weil du hast 1 s hinzugefügt.",
+            "start": 1283046,
+            "end": 1340910,
+            "confidence": 0.9160273369565217,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Also die Zeit war voraus, die Wecker waren abgelaufen dadurch alle, oder?",
+            "start": 1340990,
+            "end": 1344470,
+            "confidence": 0.9884216666666665,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Ganz genau. Und auf einmal fingen alle Wecker an zu klingeln. Alle gleichzeitig. Sollte in der Regel nicht passieren. Das hat dazu geführt, dass alle schlafenden Anwendungen auf einmal geweckt wurden und die CPU von dem Server überlastet war. Wir reden aber, Achtung, von einem Linux Kernel. Wir reden hier nicht von einem Server, wir reden hier von ganz vielen Servern, nämlich bei Reddit, Meetup, LinkedIn, bei Opera und so weiter.",
+            "start": 1344590,
+            "end": 1365810,
+            "confidence": 0.9353915492957747,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Bei Hetzner, was sehr interessant wäre, ob da die Strom Consumption irgendwie dann weltweit nach oben gegangen ist, ob man, ob man das irgendwie sehen konnte.",
+            "start": 1365890,
+            "end": 1376426,
+            "confidence": 0.8935596153846153,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Also bei Hetzner gingen die um 16 % nach oben. Da kannst du es sehen. Ich habe dir einen Link mit Graf angehangen. In den Shownotes, da könnt ihr es mal sehen von anderen Datacentern, die haben die Graphen nicht rausgegeben, aber die Antwort ist ja, die Power Consumption ging einfach mal nach oben. 2016 war was interessantes, und zwar ist der Cloudflare DNS Server abgekachelt. Cloudflare ist inzwischen eine riesen Company und wenn die Probleme haben, ist das halbe Internet down.",
+            "start": 1376538,
+            "end": 1400166,
+            "confidence": 0.8860193902439025,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Da läuft mein Lieblings DNS Server 1111. Früher hat man immer Google verwendet, 8888, aber 1111 ist viel cooler.",
+            "start": 1400238,
+            "end": 1408566,
+            "confidence": 0.9269794736842105,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Ich weiß leider nicht, ob das jetzt genau der DNS Server war, aber 2016, ich weiß auch nicht, wie groß die damals waren, aber Punkt ist, wenn die Probleme haben, zweitausendein haben alle Probleme, was da passiert ist, die haben die die Dauer eines DNS Requests gemessen. Also das bedeutet, die haben den Zeitstempel genommen, haben dann einen Request gemacht und haben dann einen zweiten Zeitstempel genommen. Und in der Regel haben die dann die Endzeit minus der Startzeit gerechnet und haben angenommen, da kommt immer ein positives Ergebnis raus.",
+            "start": 1408638,
+            "end": 1436972,
+            "confidence": 0.9331340000000002,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Oder null.",
+            "start": 1437156,
+            "end": 1437868,
+            "confidence": 0.8719,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Oder null, ganz genau. Und das ist leider eine falsche Annahme, besonders bei der Zweitausendein. Denn wenn diese Requests jetzt nicht Sekunden dauern, sondern wenige Millisekunden, was bei Cloudflare üblicherweise der Fall ist, dann, und du machst diese Berechnung genau während der Leap second, dann kann das Ergebnis negativ werden. Und da das in Go programmiert war, ist es damals mit einer sogenannten Panic, das ist ein fatal error in PHP oder eine nicht gecatchte Exception in Java, mit zu vergleichen, ist dann einmal mal der DNS Server hops gegangen.",
+            "start": 1437964,
+            "end": 1470670,
+            "confidence": 0.9182452222222224,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Moment, du hast es jetzt so als Go Fanboy sehr schnell übersprungen, dass das Go war. Und wenn ich mal diesen Blogpost so durchlese, da steht nämlich, dass Go keine Monotonic Clock anbietet.",
+            "start": 1471430,
+            "end": 1482958,
+            "confidence": 0.9052945454545455,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Ja, 2000 Sechzehnte. Ja, also Monotonic Clock gibt es inzwischen, aber Wolfgang, was ist denn eine monotonic clock? Weil das wäre nämlich dann auch die Lösung. Aber wir können jetzt gleich auch mal mein Wissen abprüfen.",
+            "start": 1483094,
+            "end": 1494206,
+            "confidence": 0.9028133333333331,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Meinst du?",
+            "start": 1494238,
+            "end": 1494814,
+            "confidence": 0.965605,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Wir können auch mal dein Wissen abprüfen.",
+            "start": 1494902,
+            "end": 1496086,
+            "confidence": 0.8975285714285713,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Aber ich passe ja immer gut auf. Du hast mir das in einer Episode schon mal erklärt, zweitausendein, ich kann mich nicht mehr erinnern, in welcher das war, aber du hast mir das natürlich erklärt, darum weiß ich das natürlich mittlerweile, dass man einfach eine monotonic clock, meistens eine andere Funktion aufrufen kann und da bekommt man dann keine klassische Zeit zurück, die gekoppelt ist mit wirklich mit der Zeit, sondern mit einfach einer tickenden Glock auf der CPU, die einfach immer weiter tickt und du bekommst einfach die Anzahl der Ticks eigentlich zurück und damit hast du da null Probleme mit irgendeiner Schaltsekunde. Aber das ist eigentlich nicht gekoppelt an irgendeine Datumsfunktion in dem Sinn.",
+            "start": 1496118,
+            "end": 1530690,
+            "confidence": 0.9128980172413794,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Sehr gut. Ja, also wenn man von Monotonic Clock spricht, muss man eigentlich mal ganz kurz zurückgehen und zwar, dass wir einfach zwei Uhren im Computer haben und zwar einmal die Realtime Clock, das ist also mehr oder weniger den Unix Timestamp, Anzahl der Sekunden von 01.01.1970. Unix Timestamp soll so ein bisschen die Realzeit abbilden und der wird unter anderem durch NTP synchronisiert. Und weil das durch NTP synchronisiert wird, Achtung, kann das nach vorwärts oder rückwärts springen und sollte natürlich nicht zur Messung von irgendeiner Dauer, z.B. timeouts genutzt werden, wie z.B. cloudflare das gemacht hat. Und Monotonic Clock ist in der Regel implementiert als Counter oder beziehungsweise als Zähler, kann halt nicht springen wie z.B. nTP und ist deutlich besser zur Zeitmessung geeignet, wie z.b. wenn du mal auf einem Linux System uptime eingibst. Das ist eine monotonic Clock. In der Hinsicht gibt es sogar ein.",
+            "start": 1531110,
+            "end": 1584458,
+            "confidence": 0.9114061073825503,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "PHP, habe ich gerade nachgeschaut, nennt sich HR Time, ist die höchste Auflösung und ist monotonic.",
+            "start": 1584474,
+            "end": 1590298,
+            "confidence": 0.88230125,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "In der Regel gibt es das in jeder Programmiersprache.",
+            "start": 1590394,
+            "end": 1592714,
+            "confidence": 0.9359011111111113,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Ja, ja, aber PHP ist immer eine Ausnahme. Und aber es gibt sogar in JavaScript, glaube ich, du hast mir das damals.",
+            "start": 1592842,
+            "end": 1598130,
+            "confidence": 0.8762945454545455,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Gezeigt, in JavaScript nach der letzten Leapsäcke, die 2016 war, wo Cloudflare auch abweggekachelt ist, hat Linux torwarts was schönes gesagt. Also eigentlich finden wir immer, wenn wir eine leap second haben, finden wir immer irgendeinen Bug. Und das ist richtig nervig, sagt er, denn eigentlich ist das der wahre Test, weil das ist alles Quellcode, der eigentlich nie unter diesen Konditionen ausgeführt wird. Und eigentlich ist die Leap Second auch keine Normal Condition. Also jeder Code, der noch nie auf einer Leap Second gelaufen ist, kann man eigentlich gar nicht sagen, dass der gut läuft. Und deswegen ist es so gefährlich, dass es zweitausendeinundzwanzig im theoretischen Konstrukt diese negative Liebsecken gibt, obwohl es die noch nie gab.",
+            "start": 1598170,
+            "end": 1638040,
+            "confidence": 0.9065499152542371,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Vor allem kann man es halt auch schwer testen, oder? Also du musst halt dann wirklich in irgendeinem, irgendeiner Sandbox laufen, die das wirklich simulieren kann, dass du da eine andere Zeit hast und dann wirklich dir das einmal durch simuliert vom Betriebssystem. Her und keine Ahnung, wie einfach das eigentlich ist. Falls jemand da eine Lösung kennt, bitte gerne bei uns im Discord mal reinschreiben, würde mich wirklich interessieren. Aber Raketen sind noch keine abgestürzt, oder? Das wäre so der Klassiker eigentlich. Die lässt man nie zur Leapsack starten.",
+            "start": 1638420,
+            "end": 1665990,
+            "confidence": 0.9048085555555555,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Elon Musk ist relativ irre in letzter Zeit. Ich habe Keine Ahnung.",
+            "start": 1666070,
+            "end": 1669570,
+            "confidence": 0.9694183333333334,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Ja gut, bei dem explodiert ja regelmäßig.",
+            "start": 1669950,
+            "end": 1671806,
+            "confidence": 0.8358628571428571,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Was, aber bei den Jungs und Mädels würde ich sagen, die nutzen sehr gute Monotonie Clocks. Von daher.",
+            "start": 1671838,
+            "end": 1677254,
+            "confidence": 0.9130161111111109,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Ja, das hat man bei der NASA auch immer gedacht, oder? Und dann waren es die klassischen Kleinigkeiten oder irgendwelche Umrechnungsfehler, die dann zum Absturz führen, sind halt immer diese Kleinigkeiten, die man, wo man dann selber auch sagt, ja, das kann mir eigentlich eh nicht passieren. Ich bin irgendwie high level, brauche das nirgends und dann geht dir halt dein DNS flöten. Also das würde ja auch niemand denken, dass es da Zusammenhänge gibt oder dass deine logging Library dann verrückt spielt oder so und irgendwie alles zerlegt. Also es ist ja wirklich schwierig, da die Auswirkungen auch wirklich einzugrenzen. Und darum ist es glaube ich, auch wichtig, dass man zweitausendeinousand so eine Information kennt, zumindest, dass man die im Hinterkopf hat und sie einfach mitdenken kann, dass es da unter Umständen Probleme geben kann. Vor allem, wenn man halt dann wirklich mit der Zeit arbeitet im Code.",
+            "start": 1677342,
+            "end": 1724424,
+            "confidence": 0.9064873154362416,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Apropos Information kennt, damit wir auch alle wissen, wann die nächste Leap second kommt, findet existiert natürlich eine Implementierung im NTP Server statt. Network Time Protocol für die Leute, die sich wenig damit auskennen. Das ist eigentlich, wie der Wolfgang schon sagte, der Dienst auf eigentlich Linux System, Windows System und Co. Der für Zeit Synchronisation zuständig ist. Und er hat auch, also dieser Dienst oder das Protokoll hat auch eine Art und Weise, um mit Leap Seconds umzugehen. Und zwar werden Leap Seconds immer angekündigt, echt eine ganze Weile vorher, glaube ich vier Monate. Also ich glaube sechs Monate werden die offiziell angekündigt und dann in die Protokolle überführt. Und jetzt ist die Frage wie kriegt denn das NTP Protokoll mit, dass es bald ein Leapshecken gibt oder beziehungsweise wie wird die Informationen eigentlich zweitausendein durch die ganzen Computer gepackt? Da gibt es eigentlich zwei Arten. Und zwar könnt ihr euch vorstellen, dass NTP ähnlich wie DNS in so einer Baumhierarchie aufgebaut ist. Es gibt Downstratum Server, nennt sich das. Stratum null z.B. ist die höchste akkurate Referenzuhr. Das wäre dann z.b. so eine Atomuhr. Stratum eins holt sich die Zeit direkt von Stratum null, Stratum zwei holt sich die Zeit direkt von Stratum eins und so weiter. Ÿousand und Downstratum Server bedeutet halt, du gehst halt den Baum nach oben hoch zur Wurzel und die, wenn die eine neue Leapsecond haben und der NTP Server läuft, dann werden ein paar spezielle Bit gesetzt und die werden dann durch den Baum versendet, wenn man so möchte. Die zweite Geschichte und das ist die präferierte Methode. Es gibt ein sogenanntes Leap File, das kann sich jeder herunterladen, das haben wir auch in den Shownotes verlinkt. In dem leap File wird genau angezeigt, wann, wie, wo eine leap second eingeführt wird und was zweitausendein die, wie viel das ist und wie viel Sekunden wir dann jetzt hier springen. Und die wird beim Start des NTP Servers eingelesen und dann ist alles gut. Ich bin jetzt kein NTP Implementierungsspezialist, aber kurzum, dieses Protokoll kennt die Leap Second und kann damit rumgehen.",
+            "start": 1724512,
+            "end": 1844330,
+            "confidence": 0.9001703438395416,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Jetzt ist natürlich immer gut, so was im Hinterkopf zu haben, dieses Wissen. Aber gibt es Bereiche, wo mir das wirklich Probleme macht als klassischer Softwareentwickler?",
+            "start": 1844370,
+            "end": 1853938,
+            "confidence": 0.932568846153846,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Eins der Kernprobleme ist natürlich, dass ordnen von Events, also Event Ordering. Welches Event kam zuerst und wo findet das in der Regel statt? In fast allen verteilten Systemen, wo du einfach Events hin und her schickst. Ja, Synchronisierungsevents, Datenbank Synchronisierung, MySQL, Postgres. Und wenn du dir halt so richtige große Kaliber ansiehst wie Google Spanner, das sind halt hochkonsistente, weltweit verteilte Datenbanken oder global verteilte Datenbanken und da ist Ordering of Events First class citizen. Und wenn da die Zeit nicht stimmt, dann hat man richtige Probleme.",
+            "start": 1854034,
+            "end": 1885238,
+            "confidence": 0.9081657954545456,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Wenn ich das richtig noch im Kopf habe vom spanner Paper, es ist doch schon eine Zeit her, dass ich das gelesen habe. Aber die hatten, wenn ihr das richtig im Kopf habe, wirklich hardware Atomuhr Empfänger zumindestens an jeden Node gebaut, weil NTP oder andere Protokolle zu ungenau waren für ihren Zweck und die wirklich über eine Atomuhr synchronisiert haben.",
+            "start": 1885294,
+            "end": 1908252,
+            "confidence": 0.8702229508196718,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Ja, genau. Das ist einer der Punkte, da musste ich mich dann bei der Recherche dieser Episode stoppen. Also wie funktioniert das bei Spanner? Spanner selbst hat eine sogenannte True Time Library eingeführt und die True Time Library basiert auf den eigentlichen Zeitservern in googles Data Center, die hardwarebasiert sind. Und diese zeitsynchronisierte Hardware oder die Hardware, die dafür sorgt und die Zeit synchronisiert, hat eine maximale Diskrepanz von sieben Millisekunden.",
+            "start": 1908406,
+            "end": 1936096,
+            "confidence": 0.9205914084507045,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Der ist gar nicht so wenig eigentlich. Sieben Millisekunden.",
+            "start": 1936168,
+            "end": 1938936,
+            "confidence": 0.9505944444444445,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Gut, ob jetzt sieben Millisekunden viel oder wenig sind. Sorry, da bin ich jetzt raus. Also ich habe mir die.",
+            "start": 1939008,
+            "end": 1944320,
+            "confidence": 0.9399814999999998,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Naja, wenn du jetzt wirklich da feststellen willst, wer hat zuerst geschrieben, wenn du den gleichen Datensatz veränderst, ist durch sieben Millisekunden schon noch ordentlicher Brocken, würde ich mal sagen. Aber ich sehe schon, wir machen da eine eigene Episode dazu und laden uns mal Leute ein, die wirklich Ahnung haben, wenn es um solche Hardcore Probleme geht. Andi schreibt es mal auf die Liste.",
+            "start": 1944360,
+            "end": 1965488,
+            "confidence": 0.9246063076923078,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Jetzt ist es natürlich so, jetzt haben wir die ganzen Probleme, welche Lösung gibt es? Und jetzt die beste Lösung, die glaubt mir jetzt keiner, server Reboot hilft immer. Die liebsten.",
+            "start": 1965584,
+            "end": 1975360,
+            "confidence": 0.937982258064516,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Du kannst ja nicht den ganzen spanner Cluster mal durchtreten, einfach wenn du ein Problem.",
+            "start": 1975400,
+            "end": 1979840,
+            "confidence": 0.9283646666666667,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Es geht ja nicht nur um Spanner, nicht jeder macht ja einen Spanner, es geht ja einfach nur um dein Kafka, um deine MySQL Replikation. Von mir ist auch um dein Linux Cluster, der seine HR Timer, seine Wecker alle aufwachen lässt. Also es ist ja nicht immer ein verteiltes System, es ist ja auch dein einzelner Server. Und bei den nächsten Leap Second kann es natürlich ebenfalls sein, dass genau sowas wieder im Kernel drin ist, weil wie Linux Torwart sagt, dieser Code läuft halt fast nie.",
+            "start": 1979920,
+            "end": 2006304,
+            "confidence": 0.8919307954545457,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Das heißt eigentlich das Beste wäre ja, wenn du den Computer einfach 5 s schlafen legst und dann wieder aufwachen lässt, dann ist alles in Ordnung. Dann hast du da keine Probleme zwischendrin gehabt. Oder 3 S anhalten.",
+            "start": 2006392,
+            "end": 2019394,
+            "confidence": 0.9507565789473685,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Genau. Also ein server Reboot hilft immer, ist leider nicht immer das Beste. Deswegen habe ich mir mal angeschaut, was gibt es eigentlich für Lösungen auf dem Markt oder was machen denn Leute? Und zwar die einfachste, wir ignorieren die Schaltsekunde einfach. Und wer macht das? Das GPS System. Schöne NR. Also das GPS System wurde 1980 eingeführt und hat keine Schaltsekundenberücksichtigung. Und weil das 1980 eingeführt wurde, hat es mittlerweile eine Differenz zur UTC, zur koordinierten Weltzeit von 18 s.",
+            "start": 2019482,
+            "end": 2054846,
+            "confidence": 0.9104481481481479,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Jetzt wird ja GPS ganz oft verwendet als Zeitquelle, um irgendwelche Uhren zu stellen, Handy oder sonst irgendwas. Also Handy ist Handynetz, aber andere laufen ja durchaus über GPS. Haben die dann die Info wahrscheinlich gespeichert, dass das 18 S irgendwie falsch ist, checken das dann intern und passen das an.",
+            "start": 2054918,
+            "end": 2074434,
+            "confidence": 0.9409743137254906,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Genau, die Differenz wird inzwischen mit dem GPS Signal mit übertragen, genau aus diesen Elementen, weil die sagen, oh ja, wir sind jetzt hier 18 s off. Jetzt fragt sich jeder, warum 18 s? 1972 bis 1980 waren ein paar Schaltsekunden und 18 s ist genau die Differenz, die wir jetzt gerade vom GPS System haben. Fun Fact, das russische GPS System GLONASS heißt das, die supporten Schaltsekunden. Aber wir reden jetzt die ganze Zeit von den GPS Systemen, die das ignorieren. Aber hey, Windows ignoriert es auch. Das war der Fun Fact schlechthin. Also und Windows macht es eigentlich super klug, muss ich zugeben. Ich habe ja gerade gesagt, der NTP Server, der Zeitsynchronisierung Server, der announced irgendwann Achtung, da kommt jetzt bald irgendwann eine Leap second. Also jetzt nicht nächste h, sondern der gibt dann schon den genauen Zeitpunkt mit wann die Leapsacken kommt. Windows ignoriert diese Anweisung, Windows sagt Leapseckend kenne ich nicht, ist mir egal.",
+            "start": 2074522,
+            "end": 2128464,
+            "confidence": 0.8969179874213835,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Und beim nächsten Sync wird einfach diese S dann angepasst.",
+            "start": 2128592,
+            "end": 2132592,
+            "confidence": 0.9609530000000002,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Genau, die nehmen sich einfach die nächsten Zeit, synchronisieren nach der leap second und überschreiben einfach hart die Zeit. Das bedeutet für diese weiß ich nicht wann in welchem Intervall jetzt die Zeit Synchronisierung stattfindet, sind die dann 1 s off. Finde ich aber in irgendeiner Art und Weise keinen genauen, aber einen smarten Move. Ich habe jetzt auch noch nicht von wirklich vielen Problemen mit den Liebshacken bei Windows gehört, muss ich zugeben.",
+            "start": 2132696,
+            "end": 2156738,
+            "confidence": 0.89835972972973,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Aber wenn ich mir das so überlege und NTP überschreibt ja auch oft die Zeit. Eigentlich hast du ja dieses dieses Problem, dass sich die Zeit ändert, ziemlich oft, weil wenn ich mir überlege, wie viel Server ich schon hatte, wo NTP nicht aktiviert war und die waren wirklich so um 20 Minuten oder so off mit der Zeit. Keine Ahnung wie das passiert, aber eigentlich hast du ja das wahrscheinlich relativ oft, dass die Zeit einfach geändert wird durch einen NTP update Call Synchronisation. Und eigentlich sollte deine Software schon damit umgehen können, weil das ja wirklich oft passieren kann. Also gerade ich kann mir vorstellen, bei Datenbanken ist das durchaus ein Problem, dass du einfach Einträge hast, die in der Zukunft liegen oder so, weil deine Zeit einfach upgedatet wurde oder umgekehrt.",
+            "start": 2156914,
+            "end": 2197286,
+            "confidence": 0.9074214925373136,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Also viele Programmierer und Programmiererinnen denken, Zeit kann nur nach vorne gehen. Nein, wegen NTP kann die Zeit springen und sie kann auch rückwärts gehen und sie kann auch nach vorne springen. Zeitsynchronisation und Co. Also die Zeit geht nicht immer nur nach vorne. Bitte beachtet dies, wenn ihr Zeitberechnung durchführt. Ÿousand auf Basis der Realtime Clock natürlich nicht auf Basis der Monotonic Clock, hat mir gerade erklärt, was das ist. Aber Zeit kann springen und ist natürlich.",
+            "start": 2197358,
+            "end": 2222636,
+            "confidence": 0.9145101282051283,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Gerade gefährlich bei allen Synchronisations Algorithmen, wenn du mehrere schreibende Zugriffe auf dasselbe Datum hast, also nicht Datum im Sinne von von Kalender, sondern auf eine Zeile, einen Wert und du dann im Nachhinein irgendwie über die Zeitstempel das auflöst, kann es natürlich sein, dass du womöglich wirklich einen kompletten Bullshit berechnet hast, weil du in der Zwischenzeit einfach gesprungen bist in der Zeit zweitausendein. Da muss man schon extrem aufpassen.",
+            "start": 2222668,
+            "end": 2246090,
+            "confidence": 0.8952771830985916,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Bei der Recherche zur Lösung einer Leap bin ich auch auf eine coole Sache gestoßen. Ich weiß nicht genau, wer das geschrieben hat, habe ich jetzt auch gar nicht wirklich gefunden. Aber es wird vorgeschlagen, dass man die Leap Second einfach liegen lässt, einfach ignoriert, einfach nicht nachzieht und dann im Jahr 2600 einfach eine ganze Liebstunde einführt, weil dann könnte man auf die häufigen, kleinen, unregelmäßigen Abständen zweitausendein auf die Anpassung verzichten und macht einmal einfach mal eine Liebstunde.",
+            "start": 2246250,
+            "end": 2275696,
+            "confidence": 0.9258666249999999,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Ja, du müsstest dann allen Leuten erklären, warum du da jetzt eine Zeitverschiebung hast.",
+            "start": 2275768,
+            "end": 2279384,
+            "confidence": 0.9370714285714286,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Du meinst wie die Sommer und Winterzeit?",
+            "start": 2279472,
+            "end": 2281352,
+            "confidence": 0.9212257142857142,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Genau. Du könntest natürlich genau zu dem Zeitpunkt dann die Sommer und Winterzeit abschaffen und trotzdem noch einmal durchführen und dann hast du das mit einer Klappe erschlagen. Warum fragen sie nicht mich? Warum von dem International Büro auf irgendwas? Ich habe alle Lösungen.",
+            "start": 2281456,
+            "end": 2298164,
+            "confidence": 0.9673434090909097,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Das ist in 570, 75 Jahren. Also ich bin mir nicht sicher, ob wir da noch viel zu sagen haben. Was ich mir halt die Frage gestellt habe, uh, schwierig. Ich meine, mit Sommer und Winterzeit sind wir jetzt klargekommen alle.",
+            "start": 2298272,
+            "end": 2310588,
+            "confidence": 0.9169648780487808,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Die wird ja abgeschafft.",
+            "start": 2310684,
+            "end": 2311972,
+            "confidence": 0.85361,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Ja, da kommen wir gleich noch zu. Aber wenn du in 500 Jahren, also du hast seit 500 Jahren keine Liebsecken mehr. Wie viel Quellcode wird da erzeugt? Und dann hast du so einen Big Bang von einer Liebstunde.",
+            "start": 2312076,
+            "end": 2324210,
+            "confidence": 0.9312861538461541,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "White. Okay, lässt grüßen.",
+            "start": 2324300,
+            "end": 2325702,
+            "confidence": 0.593395,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Als weitere Lösung ist natürlich die Monotonic Clock da, wo man sie natürlich verwenden kann, wo ihr keine Real Clock oder Realtime Clock nutzen müsst. Immer wenn ihr z.B. die Dauer von einem Request messt, bitte nicht die Unix Time nehmen, da kriegt er nur Probleme. Nehmt einfach die Monotonic Clock oder nehmt halt auch an, dass die Subtraktion dann auch negativ werden kann. Und jetzt kommt's, jetzt kommt wieder die nerdigste Lösung und ich habe mich da so reingefressen. Und zwar geht es um die Schmiersekunde. Es wäre nicht Google, wenn Google nicht gesagt hätte, pass mal auf, diese Schaltsekunde gefällt mir nicht. Und die haben eine Schmiersekunde erfunden, die sogenannte Smear Second. Was die machen ist, wenn eine Schaltsekunde angekündigt wird, wird die zusätzliche S da so über Zeit reingeschmiert. Wie passiert das? Die lassen für 24 Stunden ihre Zeitserver um 11,6 Mikrosekunden langsamer laufen. Wenn du 24 Stunden jede S 11,6 Mikrosekunden lang laufen lässt, hast du über 24 Stunden eine zusätzliche Atomsekunde eingefügt, ohne dass du Probleme mit der Leap Second selbst hast, weil du dann keinen Zeitsprung hast. Ist das nicht genial? Ja, ich war, ich war, ich war voll, also sorry, das ist wirklich meines Erachtens nach ein cooles Engineering Problem oder beziehungsweise eine coole Engineering Lösung für ein reales Problem, weil sonst bist du nämlich irgendwie offline. Und jetzt kommt's, es gibt den Public Google NTP Server, auf den könnt ihr euch subscriben und der supportet das alles. Das bedeutet, du kannst sie dann auch nach Hause holen. Und wenn Google das macht, dann kopieren das natürlich ganz viele. Und AWS nutzt nämlich genau das gleiche Google Verfahren. Meta macht auch eine Smear second, die machen die aber nicht über 24 Stunden, sondern über 17 Stunden. Zweitausendein sogar Bloomberg, die Zeitung, also ist glaube ich ein bisschen mehr als eine Zeitung inzwischen, macht ebenfalls eine lineare Smearsecond über 2000 s, aber nicht vor der Einführung der Leap Second, sondern nach der Leap Second. Und eine Firma namens Meinberg, die stellen unter anderem so Zeit Synchronisations Hardware her. Und ich glaube, ich könnte mir vorstellen, dass Google auch diese Hardware nutzt. Die machen z.B. einen COSI [SOS/EOS], basierten Smear Algorithmus mit einer einstellbaren Dauer. Das bedeutet, kannst du sagen, okay, schmier mal dir die ganze S über die Dauer von einer Stunde rein.",
+            "start": 2325766,
+            "end": 2470372,
+            "confidence": 0.898761413881748,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Aber wie, wie funktioniert das, wenn es in der Software passiert? Weil die S wird ja im Betriebssystem dann schon angepasst, oder? Also es ist eine Ebene höher dann über dem Betriebssystem.",
+            "start": 2470436,
+            "end": 2481916,
+            "confidence": 0.8754046874999999,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Das ist eine sehr gute Frage, da bin ich jetzt leider raus, weil du.",
+            "start": 2482108,
+            "end": 2485084,
+            "confidence": 0.9736557142857143,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Hast ja gemeint, das ist eine Library. Insofern, außer die Library beeinflusst wirklich die Clock von der Hardware. Das wäre natürlich dann eine Möglichkeit.",
+            "start": 2485092,
+            "end": 2495272,
+            "confidence": 0.9127345833333332,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Aber ja, es kommt auch ganz darauf an, auf welcher Basis bzw. Welche Basiseinheit operiert wird. Also ich meine, so ein NTP Server wird unten drunter mit hoher Wahrscheinlichkeit jetzt nicht auf Sekundenbasis agieren, sondern auf Millisekunden oder Mikrosekunden als Einheit, als Recheneinheit. Und von da aus, ja, also es.",
+            "start": 2495336,
+            "end": 2513152,
+            "confidence": 0.8796707999999999,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Könnte quasi so wie der NTP Server, wenn das die Smear Library von Google einfach da jeweils die Glock leicht anpasst um ein paar Millisekunden, also so, dann würde es natürlich betriebssystem weit funktionieren.",
+            "start": 2513176,
+            "end": 2527112,
+            "confidence": 0.8728305882352941,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "So stelle ich mir das jetzt vor. Ich bin kein NTP server Entwickler, da müssen wir mal jemanden fragen. Aber meine Frage ist jetzt gerade, warum ist das nicht die Standardlösung? Und ich habe drei Antworten gefunden. Also zum einen, das ist nicht die Standardlösung, denn es gibt ein Problem. Wenn der NTP Server in der Zeit, in der der das Verschmieren anwendet, neu gestartet wird, ist der Effekt irgendwie so ein bisschen ungewiss. Also wir wissen nicht, welche Zeit der NTP Server dann gibt. Die alte Zeit, die neue Zeit. Das war kommt sehr wahrscheinlich auch auf den NTP Server und auf die Smear Second Implementierung an. Aber das ist halt so, okay, könnte.",
+            "start": 2527256,
+            "end": 2563472,
+            "confidence": 0.9271165217391307,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Ein Bug sein, wobei du dann ja einfach die Zeit überschreiben kannst bei einem Reboot.",
+            "start": 2563496,
+            "end": 2567696,
+            "confidence": 0.9583999999999998,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Ja, aber die Clients haben ja dann den Schmiereffekt. Auch gut, aber wenig Zeit.",
+            "start": 2567848,
+            "end": 2571832,
+            "confidence": 0.9076635714285715,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Überschreibstausend.",
+            "start": 2571856,
+            "end": 2572576,
+            "confidence": 0.74741,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Man müsste mal rumspielen. Wir sollten uns mal so einen Smear Server aufsetzen. Die Frage ist aber, warum ist das nicht der neue Standard? Also zum einen gibt es leider weltweit keine zentralisierte Methode zur Zeiterfassung in den digitalen Systemen. Also das bedeutet, viele Computer nutzen jetzt hier NTP und da gibt es Leute, die nutzen Radiofrequenzwellen, um Zeiten zu synchronisieren und so weiter und so fort. Deswegen ist das jetzt ist das Smieren, dass das Schmieren, Smieren ist auch geil, jetzt nicht die Lösung für dieses Liebsecken Problem, weil das halt jetzt nur für diese digitalen Systeme funktioniert bzw. Die Computer. Die andere Geschichte ist, diverse Firmen können sich einfach nicht auf die Möglichkeit zur Berechnung der Smear Second einigen. Wir hatten gerade gesagt, es gibt ein lineares MIR Verfahren, Metern nutzen, quadratisches MIR Verfahren, dann mein Berg nutzen, cosinus basiertes Smear Verfahren. Also und dann über welche Dauer? Über 24 Stunden, über 2000 s, über 17 Stunden. Also da sind die alle irgendwie nicht so wirklich ein.",
+            "start": 2572598,
+            "end": 2631756,
+            "confidence": 0.8745143786982248,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Vor allem, was du ja dann auch sicherstellen musst, dass alle Geräte gleich schmieren, weil wenn du jetzt irgendein Cluster hast oder so ein Datenbankcluster, dann müsste das Schmieren natürlich überall gleich vonstatten gehen, sonst hast du wieder diese Inkonsistenz.",
+            "start": 2631908,
+            "end": 2644828,
+            "confidence": 0.87861475,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Ja, es ist halt jede Firma hat ihren Standard und lass uns doch mal einen neuen Standard machen, der alle Standards feint. Wer sich die ganze Sache aber mal ansehen möchte und c mächtig ist, es gibt die uns Mir Library auf GitHub von Google, der kann sich das alles mal ansehen. Also dieses Meerseckend war einer der Gründe, warum ich mich in dieses Thema so reingenerdet habe. Und beim reinnerden habe ich mich dann auch gefragt, so jetzt war vor acht Jahren die letzte Smear second. Wie sieht es denn jetzt eigentlich mit der mit der Schalt S aus? Machen wir das jetzt noch mal? Weil irgendwie gab es jetzt seit acht Jahren keine. Und da habe ich folgendes gefunden. Auf der einen Seite sagt Meta aka Facebook im Jahr 2002 ja, liebe Industrie, sollen wir jetzt mal die Leap Second irgendwie abschaffen?",
+            "start": 2644924,
+            "end": 2686664,
+            "confidence": 0.9137019444444443,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Zweitausendein.",
+            "start": 2686712,
+            "end": 2686898,
+            "confidence": 0.83716,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Ich finde die ein bisschen überflüssig, weil deren Gründe ist, dass die Zeitsynchronisation zwischen der astronomischen Zeit, wir erinnern uns, Anfang der Episode Erdrotation und so, und die koordinierte Weltzeit, da besteht die Frage, warum müssen diese Zeiten überhaupt noch synchron sein? Denn die astronomische Zeit wird in der Regel nur noch von Astronomen verwendet und von ein paar Wissenschaftlern. Und viele Wissenschaftler nutzen heutzutage die koordinierte Weltzeit, also UTC. Also haben wir jetzt eigentlich zweitausendein, das schlechte aus beiden Welten. Für digitale Applikationen haben wir, haben wir UTC, die mit der Leapsackend irgendwie hantieren muss. Und die ganzen Astronomen, die nutzen eh die astronomische Zeit oder die Atomzeit. Also kaum einer nutzt irgendwie beide Zeiten gleichzeitig. Also warum müssen die in Sync sein? Das ist die große Frage. Und Google, Microsoft, Amazon und Co. Sagen eigentlich, eigentlich habt ihr recht, brauchen wir alles irgendwie nicht mehr. Meta schlägt jetzt keine wirkliche Lösung vor, sondern die sagen nur, sollen wir jetzt nicht einfach mal die Schaltsekunde abschaffen? Und dann habe ich ein bisschen weiter recherchiert und gefunden, dass die ganze Thematik schon länger diskutiert wird. Es wurde aktuell entschieden, bei Achtung, der Generalkonferenz für Maß und Gewicht. Kennst du die? Es gibt für alles eine Generalkonferenz und ein Institut.",
+            "start": 2686944,
+            "end": 2762780,
+            "confidence": 0.9194038277511963,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Finde ich grandios, muss eine deutsche Erfindung sein.",
+            "start": 2762820,
+            "end": 2765292,
+            "confidence": 0.9669674999999999,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Die haben sich auf jeden Fall im November 22 zusammengesetzt und entschieden. Die haben dafür gewotet, hey Jungs und Mädels, ab 2005 und dreiig lassen wir das mit der Schaltsekunde sein. Jetzt denkst du natürlich, das ist jetzt schon entschieden. Nee, das muss von der internationalen Fernmeldeunion 2026 noch mal bestätigt werden. Und dann könnte es sein, dass wir ab 2005 und Dreiig keine Schaltsekunde mehr haben. Aber Achtung, jetzt kommt der Fun Fact. Die haben nicht beschlossen, ab 2,35 schmeißen wir die Schaltsekunde weg. Was die sagen ist, wir lassen zwischen dem Jahr 2005 und dreiig und 2105 und dreiig die astronomische Zeit und die koordinierte Weltzeit auseinanderdriften, in der Hoffnung, dass Wissenschaftler eine bessere Methode entwickeln, um die verlorene Zeit auszugleichen.",
+            "start": 2765436,
+            "end": 2812382,
+            "confidence": 0.9241218699186993,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Ja, ist eigentlich eine intelligente Herangehensweise. Sollen sich doch die Leute in der Zukunft den Kopf drüber zerbrechen.",
+            "start": 2812486,
+            "end": 2817510,
+            "confidence": 0.8416133333333332,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Für alle Software Engineers, ich möchte mal eins sagen, und im Site Reliability Engineering und bei diesen ganzen Systemadministratoren und Betrieb und DevOps und so gibt es eine Regel, Hoffnung ist keine Strategie.",
+            "start": 2817590,
+            "end": 2830654,
+            "confidence": 0.8337624242424241,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Ja, aber du sollst auch nicht Probleme lösen, die du jetzt nicht hast. Insofern, ja, ich finde es geil.",
+            "start": 2830742,
+            "end": 2835494,
+            "confidence": 0.9193921052631577,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Also warten wir mal 2026 ab, was die internationale Fernmeldeunion denn so bestätigt. Ob wir einfach mal für 100 Jahre die Schaltsekunde aussetzen und dann in der Hoffnung, dass 2105 und dreiig Wissenschaftler Lösungen gefunden haben. Wahnsinn.",
+            "start": 2835542,
+            "end": 2851134,
+            "confidence": 0.872065945945946,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Wie gesagt, wenn man die Regenwürmer einfach in die richtige Richtung treiben könnte, dann hat man das alles gelöst.",
+            "start": 2851222,
+            "end": 2856374,
+            "confidence": 0.9274463157894736,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Also vielleicht hat man es in der Episode ein bisschen gehört. Ich hatte bei dieser Vorbereitung und bei diesem reinen Nerden so viel Spaß, so viel Zeit und der Umgang mit Zeit in der Softwareentwicklung. Ich habe nicht gedacht, dass es so ein Rabbit Hole ist und ich habe nur an der Oberfläche gekratzt.",
+            "start": 2856422,
+            "end": 2871570,
+            "confidence": 0.9095846296296296,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Es ist ja nur 1 S.",
+            "start": 2871870,
+            "end": 2873414,
+            "confidence": 0.8338916666666667,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Ja, es ist nur 1 S. Wir hatten ein bisschen über die True Time Library bei Google Spanner gesprochen. Das würde mich auch mal interessieren. Wie funktioniert das? Wir hatten ein bisschen über Zeit Synchronisations Hardware gesprochen. Mega geil. Ich wusste gar nicht, dass es dafür Hardware gibt. Dann habe ich bin ich in meinen Artikel gestolpert, wie Facebook, also Meta sagt, wie die ihre NTP Server in ihren kompletten Datacentern aufsetzen. Den muss ich auch noch mal durchlesen. Und wenn ich mich da reingenördet habe, vielleicht machen wir dazu noch mal eine Episode. Und dann habe ich einen geilen Blogpost gefunden, der sagt einfach scheiße Zeit ist ungefähr wie das Kap Theorem, weil der sagt, du kannst nur zwei haben, entweder präzise Zeit und Einfachheit oder Einfachheit und valide Kalendertage oder präzise Zeit und valide Kalendertage, aber nicht Einfachheit. Also der nimmt all diese Thematik mit der Erdrotation und der Atomsekunde und so weiter, mit der Definition, die wir hier gerade besprochen haben, mal auseinander und vergleicht das so ein bisschen wie das Kap Theorem, das du eigentlich alles haben kannst. Denn die Kalendertage, also auch das Schaltjahr, richtet sich wieder nach der Erdrotation. Zweitausendein. Du merkst schon den Konflikt hier. Du kannst jetzt nicht sagen, du hast präzise Zeit anhand der Atomsekunde oder die Einfachheit, dass jeder Tag Sekunden hat oder dass du akkurate Kalender hast, die nach der Erdrotation gehen. Alles drei geht nicht. Und in meinem Kopf, kennt ihr dieses Emoji mit diesem, wo man das Gehirn sieht und dieses Exploding Head Emoji, heißt das so? Mein Kopf geht gerade so viel ab. Scheiße, ist das kompliziert, aber geil. Und ich finde das so unglaublich spannend zweitausendein, weil wir denken, wir haben damit wenig zu tun, aber wir lügen uns alle so in die Tasche, weil Zeitberechnung machen wir alle dauerhaft, täglich, auch wenn es die Dauer eines Requests ist, die wir berechnen wollen. Und wer da jetzt nach dieser Episode noch den Unix Time Step für nimmt, den haue ich.",
+            "start": 2873542,
+            "end": 2985682,
+            "confidence": 0.9014367462686569,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Wieso? Der ist ja trotzdem noch gut geeignet für vieles.",
+            "start": 2985746,
+            "end": 2989562,
+            "confidence": 0.8514329999999999,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Da nutzt man eine Monotonic Glock, haben wir doch heute gelernt. Ich werde auf jeden Fall mindestens noch eine Episode zu diesem Zeitthema machen. Ich finde das einfach geil. Ich habe so viel Spaß dabei.",
+            "start": 2989706,
+            "end": 2998242,
+            "confidence": 0.8739345714285714,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Auf jeden Fall kann ich dich jetzt endlich akademisch nennen, wenn du so eine akademische Episode vorschlägst, vorbereitest und durchziehst. Alleine dafür war die Episode schon gut.",
+            "start": 2998426,
+            "end": 3009002,
+            "confidence": 0.9324907407407408,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Mit Praxisbezug. Praxisbezug. Ich hoffe, ihr alle hattet auch so viel Zeit. Ich hoffe, ihr alle hattet auch so viel Spaß wie ich.",
+            "start": 3009066,
+            "end": 3016750,
+            "confidence": 0.9495008695652174,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Das war jetzt ein freudscher Versprecher, oder?",
+            "start": 3017050,
+            "end": 3019190,
+            "confidence": 0.9091357142857143,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Ich glaube schon.",
+            "start": 3020370,
+            "end": 3021186,
+            "confidence": 0.6975466666666668,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Das alles nur für die s.",
+            "start": 3021258,
+            "end": 3022792,
+            "confidence": 0.9758633333333333,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Es tut mir leid, falls es so ein bisschen verwirrend war. Man muss sich echt konzentrieren, wenn man über diese verschiedenen Zeiten, Erdrotation, mittlerer Sonnentag und Co. Spricht.",
+            "start": 3022946,
+            "end": 3032220,
+            "confidence": 0.9041257142857144,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Ja, dem kann ich nur beipflichten, weil wir hatten schon im Vorgespräch wirklich teilweise brainfuck mit minus s plus s, welche Zeit läuft wie rum. Also es ist wirklich schwierig, das zu verstehen. Was mein Punkt ist, den ich mir aber auch mitgenommen habe, ist, dass wir einfach, wenn wir mit Zeit operieren in unserer Software, einfach besser darauf achten müssen, dass wir nicht immer annehmen können, dass die Zeit nach vorne läuft. Und klar, S ist jetzt wirklich ein Edge Case und ich würde mal sagen, für die 99 oder 90 % aller Software ist es gar nicht so schlimm, diese S. Aber man hat halt auch andere Einflüsse. Die Zeit kann sich ändern, es kann was synchronisiert werden. Und mein Learning ist da einfach, dass man darauf mehr achten muss, weil ehrlich gesagt habe ich ganz selten an irgend so was gedacht, dass ich die Zeit mal ändern kann. Und da kann man dann schon einiges kaputt machen unter Umständen. Und das sind dann bugs, die wahnsinnig schwierig zu finden sind.",
+            "start": 3032300,
+            "end": 3086822,
+            "confidence": 0.928731156069364,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Ja, man hat nämlich nur 27 Retries seit 1902 und siebzigste.",
+            "start": 3086886,
+            "end": 3091550,
+            "confidence": 0.8834336363636364,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Ja, aber auch wenn sich die Zeit so ändert, das kann durchaus mal passieren. Und dann hast du ein großes Problem, wenn du wirklich Operationen auf der Reihen, auf der Zeit machst und durchführst.",
+            "start": 3091670,
+            "end": 3101698,
+            "confidence": 0.921680294117647,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Ja, ich glaube schon, dass du ein Test Setup hinkriegst, aber ich glaube, das ist halt schon relativ aufwendig dann, weil du ja, ich sag mal, wirklich einen Zeitserver faken muss oder vielleicht sogar einen Zeitserver aufsetzt und den springen lässt und so. Also ist schon sehr sehr aufwendig. Wer sich ein bisschen in das Thema rein nerden möchte, in den Show Notes findet ihr etliche Links zu diesem Thema, die ich z.B. zur Recherche genutzt habe und gefunden habe. Da findet ihr auch das Liebsecken Pfeil, da findet ihr die True Time API von Spanner, da findet ihr die Smear Algorithmen von Google, den Public NTP Server, wie AWS die Smear senden macht. Da gibt es die Entscheidungen, die Schaltsekunde auszusetzen und so weiter und so fort. Schaut einfach mal rein, vielleicht habt ihr auch ein bisschen spaß. Und ansonsten würde ich sagen, sehen wir uns in der Discord Community, sprechen mal ein bisschen über Zeit.",
+            "start": 3101774,
+            "end": 3147204,
+            "confidence": 0.8754036305732485,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Bis bald, tschüss, ciao, gute Zeit. Und nicht vergessen, wenn du Impact haben willst in einem kleinen Engineering Team und vielleicht auch noch remote Zweitausendein, schau vorbei bei unserem Episodensponsor Easybill. Link findest du in den Shownotes.",
+            "start": 3147292,
+            "end": 3162010,
+            "confidence": 0.872167837837838,
+            "speaker": "B",
+            "channel": null
+        }
+    ],
+    "confidence": 0.905844100298247,
+    "audio_duration": 3162,
+    "webhook_status_code": null,
+    "webhook_auth": false,
+    "summary": null,
+    "auto_highlights_result": null,
+    "content_safety_labels": null,
+    "chapters": null,
+    "sentiment_analysis_results": null,
+    "entities": null
+}
