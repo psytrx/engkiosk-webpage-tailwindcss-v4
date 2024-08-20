@@ -1,6 +1,6 @@
 ---
-advertiser: 'IU'
-amazon_music: 'https://music.amazon.com/podcasts/c35a09fe-4116-4e04-8f68-77d61b112e46/episodes/326060d6-9619-4ae8-89f4-bd59a4390ec3/engineering-kiosk-136-als-knowledge-worker-fit-und-gesund-bleiben-mit-patrick-cole'
+advertiser: IU
+amazon_music: https://music.amazon.com/podcasts/c35a09fe-4116-4e04-8f68-77d61b112e46/episodes/326060d6-9619-4ae8-89f4-bd59a4390ec3/engineering-kiosk-136-als-knowledge-worker-fit-und-gesund-bleiben-mit-patrick-cole
 apple_podcasts: https://podcasts.apple.com/us/podcast/136-als-knowledge-worker-fit-und-gesund-bleiben-mit/id1603082924?i=1000665104869&uo=4
 audio: https://audio1.redcircle.com/episodes/57f14922-6850-4034-adf2-6f922ac24b18/stream.mp3
 chapter:
@@ -91,8 +91,8 @@ tags:
 - Interview
 - Karriere
 title: '#136 Als Knowledge Worker fit und gesund bleiben mit Patrick Cole'
-transcript_raw: ''
-transcript_slim: ''
+transcript_raw: src/data/transcripts/136-transcript.zip
+transcript_slim: src/data/transcripts/136-transcript-slim.json
 youtube: https://www.youtube.com/watch?v=COQNWz6QVco
 
 ---
