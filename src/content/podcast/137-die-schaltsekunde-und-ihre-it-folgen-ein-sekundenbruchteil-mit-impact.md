@@ -1,6 +1,6 @@
 ---
-advertiser: 'easybill'
-amazon_music: 'https://music.amazon.com/podcasts/c35a09fe-4116-4e04-8f68-77d61b112e46/episodes/1a69bb17-124e-44ec-8f7c-ccd13064cd8f/engineering-kiosk-137-die-schaltsekunde-und-ihre-it-folgen-ein-sekundenbruchteil-mit-impact'
+advertiser: easybill
+amazon_music: https://music.amazon.com/podcasts/c35a09fe-4116-4e04-8f68-77d61b112e46/episodes/1a69bb17-124e-44ec-8f7c-ccd13064cd8f/engineering-kiosk-137-die-schaltsekunde-und-ihre-it-folgen-ein-sekundenbruchteil-mit-impact
 apple_podcasts: ''
 audio: https://audio1.redcircle.com/episodes/a12acf0c-ff8c-4016-81f5-72eb28401e88/stream.mp3
 chapter:
@@ -94,8 +94,8 @@ tags:
 - Software Engineering
 - Backend
 title: '#137 Die Schaltsekunde und ihre IT-Folgen: Ein Sekundenbruchteil mit Impact'
-transcript_raw: ''
-transcript_slim: ''
+transcript_raw: src/data/transcripts/137-transcript.zip
+transcript_slim: src/data/transcripts/137-transcript-slim.json
 youtube: ''
 
 ---
