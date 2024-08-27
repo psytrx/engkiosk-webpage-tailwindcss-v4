@@ -96,7 +96,11 @@ speaker:
   transcriptLetter: C
   website: https://www.linkedin.com/in/anna-dr%C3%BCing-schl%C3%BCter-961796b8/
 spotify: https://open.spotify.com/episode/6DLiSIBaBhjmU4Ns0VVPZB
-tags: []
+tags:
+- Karriere
+- Leadership
+- Interview
+- Women in Tech
 title: '#138 Gemeinsam stark: Jobsharing und Tandems in der modernen Arbeitswelt'
 transcript_raw: ''
 transcript_slim: ''
