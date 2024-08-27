@@ -14,7 +14,7 @@ talks:
     website: 'https://unsplash.com/de/fotos/braune-flussigkeit-auf-klarem-glasbecher-rrvAuudnAfg'
   - avatar: 'drinks.jpg'
     name: 'Saskia Spezi'
-    title: "Join us for our yearly summer-talk-break to enjoy a drink and chat."
+    title: 'Join us for our yearly summer-talk-break to enjoy a drink and chat.'
     description: 'No Talks, just drinks and networking. We will meet at Gastgarten zur Eiche at around 18:30. Please register so we can adapt the reservation accordingly.'
     bio: ''
     website: 'https://unsplash.com/de/fotos/ein-paar-glaser-gefullt-mit-flussigkeit-und-trinkhalmen-v_RGL0q1pTg'
