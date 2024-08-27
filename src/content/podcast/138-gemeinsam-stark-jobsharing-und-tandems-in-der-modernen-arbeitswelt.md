@@ -1,5 +1,5 @@
 ---
-advertiser: ''
+advertiser: We manage
 amazon_music: ''
 apple_podcasts: https://podcasts.apple.com/us/podcast/138-gemeinsam-stark-jobsharing-und-tandems-in-der-modernen/id1603082924?i=1000666735914&uo=4
 audio: https://audio1.redcircle.com/episodes/a85233e6-c9c5-4cdf-a10c-0f099b253216/stream.mp3
