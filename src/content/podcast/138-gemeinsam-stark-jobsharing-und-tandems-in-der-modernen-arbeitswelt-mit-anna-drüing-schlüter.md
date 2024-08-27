@@ -30,7 +30,7 @@ chapter:
   title: "Kommunikation nach Au\xDFen"
 - start: 01:06:57
   title: Wie starte ich mit dem Job-Sharing-Modell?
-deezer: ''
+deezer: https://www.deezer.com/episode/663793781
 description: "Alternatives Arbeitsmodell: Job-Sharing mit Tandem Die Welt wird immer\
   \ komplexer. In diesem Kontext ist die Digitalisierung nicht immer f\xF6rderlich.\
   \ Die erh\xF6hte Komplexit\xE4t der Umgebung hat auch einen Effekt auf den eigenen\
