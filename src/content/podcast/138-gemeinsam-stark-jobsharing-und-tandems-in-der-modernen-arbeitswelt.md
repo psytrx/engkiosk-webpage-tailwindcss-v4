@@ -1,6 +1,6 @@
 ---
 advertiser: We manage
-amazon_music: ''
+amazon_music: https://music.amazon.com/podcasts/c35a09fe-4116-4e04-8f68-77d61b112e46/episodes/315590d3-0384-4f6b-a612-89431049ceab/engineering-kiosk-138-gemeinsam-stark-jobsharing-und-tandems-in-der-modernen-arbeitswelt
 apple_podcasts: https://podcasts.apple.com/us/podcast/138-gemeinsam-stark-jobsharing-und-tandems-in-der-modernen/id1603082924?i=1000666735914&uo=4
 audio: https://audio1.redcircle.com/episodes/a85233e6-c9c5-4cdf-a10c-0f099b253216/stream.mp3
 chapter:
