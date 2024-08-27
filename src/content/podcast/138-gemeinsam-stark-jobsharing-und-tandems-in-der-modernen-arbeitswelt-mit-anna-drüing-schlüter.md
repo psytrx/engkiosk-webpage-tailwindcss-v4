@@ -93,7 +93,7 @@ speaker:
 - name: Wolfi Gassler
   transcriptLetter: B
   website: https://wolfgang.gassler.org/
-- name: Anna Drüing-Schlüter
+- name: "Anna Dr\xFCing-Schl\xFCter"
   transcriptLetter: C
   website: https://www.linkedin.com/in/anna-dr%C3%BCing-schl%C3%BCter-961796b8/
 spotify: https://open.spotify.com/episode/6DLiSIBaBhjmU4Ns0VVPZB
