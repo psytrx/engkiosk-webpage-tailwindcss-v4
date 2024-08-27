@@ -1,6 +1,6 @@
 ---
-advertiser: ''
-amazon_music: ''
+advertiser: We manage
+amazon_music: https://music.amazon.com/podcasts/c35a09fe-4116-4e04-8f68-77d61b112e46/episodes/315590d3-0384-4f6b-a612-89431049ceab/engineering-kiosk-138-gemeinsam-stark-jobsharing-und-tandems-in-der-modernen-arbeitswelt-mit-anna-dr%C3%BCing-schl%C3%BCter
 apple_podcasts: https://podcasts.apple.com/us/podcast/138-gemeinsam-stark-jobsharing-und-tandems-in-der-modernen/id1603082924?i=1000666735914&uo=4
 audio: https://audio1.redcircle.com/episodes/a85233e6-c9c5-4cdf-a10c-0f099b253216/stream.mp3
 chapter:
@@ -88,11 +88,20 @@ rtlplus: ''
 six_user_needs: []
 speaker:
 - name: Andy Grunwald
+  transcriptLetter: A
   website: https://andygrunwald.com/
 - name: Wolfi Gassler
+  transcriptLetter: B
   website: https://wolfgang.gassler.org/
+- name: Anna Drüing-Schlüter
+  transcriptLetter: C
+  website: https://www.linkedin.com/in/anna-dr%C3%BCing-schl%C3%BCter-961796b8/
 spotify: https://open.spotify.com/episode/6DLiSIBaBhjmU4Ns0VVPZB
-tags: []
+tags:
+- Karriere
+- Leadership
+- Interview
+- Women in Tech
 title: "#138 Gemeinsam stark: Jobsharing und Tandems in der modernen Arbeitswelt mit\
   \ Anna Dr\xFCing-Schl\xFCter"
 transcript_raw: src/data/transcripts/138-transcript.zip
