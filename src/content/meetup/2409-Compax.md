@@ -7,8 +7,8 @@ location:
   logo: 'compax.webp'
 talks:
   - avatar: 'avatar.png'
-    name: 'Daniel Hauser'
-    title: 'Digital Tranformation'
+    name: 'Rick Spiegl'
+    title: 'Chat Bots'
     description: 'tba'
     bio: ''
   - avatar: 'avatar.png'
