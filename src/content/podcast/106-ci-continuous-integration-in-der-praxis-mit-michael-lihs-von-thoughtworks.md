@@ -66,13 +66,10 @@ six_user_needs: []
 speaker:
 - name: Andy Grunwald
   transcriptLetter: A
-  website: https://andygrunwald.com/
 - name: Wolfi Gassler
   transcriptLetter: C
-  website: https://wolfgang.gassler.org/
 - name: Michael Lihs
   transcriptLetter: B
-  website: https://www.linkedin.com/in/michael-lihs/
 spotify: https://open.spotify.com/episode/6wJdF8fZd6B3AUWaiqf1qC
 tags:
 - DevOps

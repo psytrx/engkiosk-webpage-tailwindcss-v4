@@ -46,13 +46,10 @@ six_user_needs: []
 speaker:
 - name: Andy Grunwald
   transcriptLetter: A
-  website: https://andygrunwald.com/
 - name: Wolfi Gassler
   transcriptLetter: C
-  website: https://wolfgang.gassler.org/
 - name: Puja Abbassi
   transcriptLetter: B
-  website: https://www.linkedin.com/in/mgapatrick/
 spotify: https://open.spotify.com/episode/1AvjA3G4RKiCL6sVFjuqdi
 tags:
 - DevOps

@@ -72,13 +72,10 @@ six_user_needs: []
 speaker:
 - name: Andy Grunwald
   transcriptLetter: A
-  website: https://andygrunwald.com/
 - name: Wolfi Gassler
   transcriptLetter: C
-  website: https://wolfgang.gassler.org/
 - name: Patrick Kuster
   transcriptLetter: B
-  website: https://www.linkedin.com/in/patrick-kuster-71248b68/
 spotify: https://open.spotify.com/episode/6Gg1FGFu4829JIw1Mh5j65
 tags:
 - Team

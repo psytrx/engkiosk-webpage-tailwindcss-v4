@@ -64,13 +64,10 @@ six_user_needs: []
 speaker:
 - name: Andy Grunwald
   transcriptLetter: A
-  website: https://andygrunwald.com/
 - name: Wolfi Gassler
   transcriptLetter: B
-  website: https://wolfgang.gassler.org/
 - name: Matthias Endler
   transcriptLetter: C
-  website: https://endler.dev/
 spotify: https://open.spotify.com/episode/4NmrV8nCZ1jcrIcEzb8s5v
 tags:
 - Software Engineering

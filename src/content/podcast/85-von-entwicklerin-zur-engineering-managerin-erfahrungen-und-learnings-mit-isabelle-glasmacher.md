@@ -65,13 +65,10 @@ six_user_needs: []
 speaker:
 - name: Andy Grunwald
   transcriptLetter: C
-  website: https://andygrunwald.com/
 - name: Wolfi Gassler
   transcriptLetter: B
-  website: https://wolfgang.gassler.org/
 - name: Isabelle Glasmacher
   transcriptLetter: A
-  website: https://www.xing.com/profile/Isabelle_Glasmacher
 spotify: https://open.spotify.com/episode/1ydYfkKN7Ip7fNZOgQgSqy
 tags:
 - Karriere

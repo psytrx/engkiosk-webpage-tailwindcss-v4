@@ -76,10 +76,8 @@ six_user_needs:
 speaker:
 - name: Andy Grunwald
   transcriptLetter: A
-  website: https://andygrunwald.com/
 - name: Wolfi Gassler
   transcriptLetter: B
-  website: https://wolfgang.gassler.org/
 spotify: https://open.spotify.com/episode/2T6zhVOMrE4c88oDL9IsME
 tags:
 - Team
