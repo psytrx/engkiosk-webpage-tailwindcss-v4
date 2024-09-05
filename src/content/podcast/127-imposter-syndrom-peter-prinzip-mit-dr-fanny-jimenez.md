@@ -84,13 +84,10 @@ six_user_needs: []
 speaker:
 - name: Andy Grunwald
   transcriptLetter: A
-  website: https://andygrunwald.com/
 - name: Wolfi Gassler
   transcriptLetter: B
-  website: https://wolfgang.gassler.org/
 - name: Dr. Fanny Jimenez
   transcriptLetter: C
-  website: https://www.linkedin.com/in/dr-fanny-jimenez-3055a0188/
 spotify: https://open.spotify.com/episode/35X5E7bEfg2ubp3bx65I0e
 tags:
 - Karriere

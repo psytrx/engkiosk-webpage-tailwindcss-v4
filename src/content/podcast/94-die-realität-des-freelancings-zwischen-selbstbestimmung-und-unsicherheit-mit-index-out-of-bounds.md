@@ -100,16 +100,12 @@ six_user_needs: []
 speaker:
 - name: Andy Grunwald
   transcriptLetter: A
-  website: https://andygrunwald.com/
 - name: Wolfi Gassler
   transcriptLetter: B
-  website: https://wolfgang.gassler.org/
 - name: Thomas Diroll
   transcriptLetter: D
-  website: https://www.thomasdiroll.com/
 - name: Christian Braun
   transcriptLetter: C
-  website: https://theempathicdev.de/
 spotify: https://open.spotify.com/episode/0E5BlyyQHiXrkVu2Vuknwj
 tags:
 - Karriere

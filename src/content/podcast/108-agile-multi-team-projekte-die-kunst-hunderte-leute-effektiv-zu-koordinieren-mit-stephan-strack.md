@@ -72,13 +72,10 @@ six_user_needs: []
 speaker:
 - name: Andy Grunwald
   transcriptLetter: B
-  website: https://andygrunwald.com/
 - name: Wolfi Gassler
   transcriptLetter: A
-  website: https://wolfgang.gassler.org/
 - name: Stephan Strack
   transcriptLetter: C
-  website: https://www.linkedin.com/in/stephan-strack-4b594b70/
 spotify: https://open.spotify.com/episode/0hlLIxCU2RTEZRbxRbnkuJ
 tags:
 - Team

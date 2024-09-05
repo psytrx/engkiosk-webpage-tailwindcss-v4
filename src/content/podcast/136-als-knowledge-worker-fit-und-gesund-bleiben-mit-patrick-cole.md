@@ -79,13 +79,10 @@ six_user_needs: []
 speaker:
 - name: Andy Grunwald
   transcriptLetter: A
-  website: https://andygrunwald.com/
 - name: Wolfi Gassler
   transcriptLetter: B
-  website: https://wolfgang.gassler.org/
 - name: Patrick Cole
   transcriptLetter: C
-  website: https://www.patrick-cole.com/
 spotify: https://open.spotify.com/episode/6bm7DjrhV2MF34v2W8URZN
 tags:
 - Interview

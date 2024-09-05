@@ -95,13 +95,10 @@ six_user_needs: []
 speaker:
 - name: Andy Grunwald
   transcriptLetter: B
-  website: https://andygrunwald.com/
 - name: Wolfi Gassler
   transcriptLetter: C
-  website: https://wolfgang.gassler.org/
 - name: Stefan Macke
   transcriptLetter: A
-  website: https://it-berufe-podcast.de/kontakt/
 spotify: https://open.spotify.com/episode/6BOcnrmM3z9iwcxmSWfPhh
 tags:
 - Karriere
