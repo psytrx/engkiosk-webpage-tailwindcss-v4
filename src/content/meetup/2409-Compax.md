@@ -8,7 +8,7 @@ location:
 talks:
   - avatar: 'avatar.png'
     name: 'Rick Spiegl'
-    title: 'Chat Bots'
+    title: 'RAG ChatBot in the wild'
     description: 'tba'
     bio: ''
   - avatar: '2409-markus.jpg'
