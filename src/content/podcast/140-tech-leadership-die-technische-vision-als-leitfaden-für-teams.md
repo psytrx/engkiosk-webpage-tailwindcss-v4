@@ -1,6 +1,6 @@
 ---
 advertiser: ''
-amazon_music: ''
+amazon_music: https://music.amazon.com/podcasts/c35a09fe-4116-4e04-8f68-77d61b112e46/episodes/d5bf23c7-f2d3-4307-bd27-5c98b0780330/engineering-kiosk-140-tech-leadership-die-technische-vision-als-leitfaden-f%C3%BCr-teams
 apple_podcasts: https://podcasts.apple.com/us/podcast/140-tech-leadership-die-technische-vision-als-leitfaden/id1603082924?i=1000668967484&uo=4
 audio: https://audio1.redcircle.com/episodes/b0b657c6-aefc-463e-a31c-ed179adba554/stream.mp3
 chapter:
