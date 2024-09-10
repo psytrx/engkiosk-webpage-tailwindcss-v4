@@ -1,694 +1,724 @@
 {
-    "language_code": "de",
-    "audio_url": "https://audio1.redcircle.com/episodes/b0b657c6-aefc-463e-a31c-ed179adba554/stream.mp3",
-    "punctuate": true,
-    "format_text": true,
-    "dual_channel": false,
-    "webhook_url": null,
-    "webhook_auth_header_name": null,
-    "webhook_auth_header_value": null,
-    "audio_start_from": null,
-    "audio_end_at": null,
-    "word_boost": [],
-    "boost_param": null,
-    "filter_profanity": false,
-    "redact_pii": false,
-    "redact_pii_audio": false,
-    "redact_pii_audio_quality": null,
-    "redact_pii_policies": null,
-    "redact_pii_sub": null,
-    "speaker_labels": true,
-    "speakers_expected": 2,
-    "content_safety": false,
-    "content_safety_confidence": null,
-    "iab_categories": false,
-    "custom_spelling": null,
-    "disfluencies": false,
-    "sentiment_analysis": false,
-    "auto_chapters": false,
-    "entity_detection": false,
-    "summarization": false,
-    "summary_model": null,
-    "summary_type": null,
-    "auto_highlights": false,
-    "language_detection": false,
-    "language_confidence_threshold": null,
-    "language_confidence": null,
-    "speech_threshold": null,
-    "speech_model": null,
-    "id": "9dd95031-cbd2-492b-9ff0-0548af919a65",
-    "status": "completed",
-    "error": null,
-    "utterances": [
-        {
-            "text": "Herzlich willkommen zu einer neuen Episode vom Engineering Kiosk Podcast. Klare Regeln, eine klare Richtung, in die dein Team läuft, sind essentiell, um schnelle Entscheidungen zu treffen und zwar ganz ohne Streit. Jedes Softwareteam hat zum Ziel, sich schnell zu bewegen, dynamisch und agil zu sein. Doch dafür sind ein paar Leitlinien notwendig und die Richtung muss für alle klar sein. Doch wie macht man das? Das Stichwort der h heißt technische Vision. Wir klären, was das für eine Vision ist, wo der Unterschied zur Produktvision ist, warum diese Vision auf Team oder auf Firmenebene gesetzt werden kann, wer diese eigentlich setzen sollte, untermalen das Ganze mit ein paar griffigen Beispielen, setzen verwandte Hilfsmittel wie das Tech Radar oder ein Engineering Manifesto in Relation und geben euch eine klare Anleitung, wie man eine technische Vision erstellt. Wir springen rein und los geht's. Dieser Podcast bezeichnet sich als deutschsprachiger Software Engineering Podcast. Doch unser Motto ist eigentlich, wir glauben zwar, Technik ist kompliziert, aber in der Regel ein gelöstes Problem. Und deswegen beschäftigen wir uns unter anderem auch mit den ganzen Themen drumherum. Und ich habe in letzter Zeit mal wieder richtig, richtig Bock, mich in diverse Themen einzunerden, also richtig technisch zu bleiben. Und dann kommt mein Podcast Chorus immer um die Ecke, weil er ist vom Beruf Berater oder wie er selbst sagt Consultant. Und somit kommt er natürlich nur mit solchen schwammigen Themen um die Ecke, mit Berater Themen, mit Sachen, da wohl nicht binär, dass es richtig oder dass es falsch gibt. Und deswegen übergebe ich das Wort an unseren Podcast Berater Dr. Wolfgang Gassler. Welches Thema hast du uns heute mitgebracht?",
-            "start": 3760,
-            "end": 108210,
-            "confidence": 0.9170961454545458,
-            "speaker": "A",
-            "channel": null
-        },
-        {
-            "text": "Da muss ich zuerst noch einhaken. Du hast ja kürzlich auf eine LinkedIn Message von mir geantwortet, also auf dem Post, wo ich gepostet habe, dass ich in einem anderen Podcast war. Und darunter hast du geschrieben, du gehst mir jetzt fremd und wir haben doch so viel tolle Leadership Themen über technische technical Leadership und vermisst du die nicht? Und darum habe ich heute mal ein technical Leadership Thema, damit ich mich wieder wohlfühle hier zu Hause in unserem Podcast.",
-            "start": 108350,
-            "end": 135836,
-            "confidence": 0.8756333333333333,
-            "speaker": "B",
-            "channel": null
-        },
-        {
-            "text": "Content Creator müssen sich gegenseitig unterstützen. Ja, und es gibt auch in der Musikbranche, zumindest in der düsseldorfer Szene, gab es immer lang ein Spruch Support your local underground. Und du bist ja sozusagen mein local underground. Deswegen supporte ich dich natürlich, wo ich nur kann. Und jetzt mal unabhängig davon, ob ich dann jetzt pro Leadership Themen bin oder.",
-            "start": 136028,
-            "end": 157116,
-            "confidence": 0.9081938333333334,
-            "speaker": "A",
-            "channel": null
-        },
-        {
-            "text": "Nicht oder du und das auf LinkedIn machst, aber eigentlich ist es ein sehr technisches Thema. Und zwar geht es um eine technische Vision. Wirf mal dieses Wort in den Raum. Wir können dann noch klären, was das eigentlich ist, weil das ist ja sehr umstritten und du hast da auch schon den Kopf geschüttelt, wie ich das Thema das erste Mal vorgeschlagen habe. Aber eigentlich ist es aus einem sehr praktischen Umfeld herausgekommen, weil wir haben ja schon öfters darüber gesprochen, dass es als Tech Lead auch sehr wichtig ist, was zu bekommen, weil das vergisst man oft. Ÿousand Feedback, logisch. Und ich habe das natürlich früher immer gemacht. Und ein kritischer Punkt, den ich immer zurückbekommen habe von meinem Team als Feedback war, es fehlt die technische Vision. Es ist nicht so klar, wo wir hinlaufen. Diese technische Vision fällt. Und wir hatten eine Produktvision. Wir hatten auch mit dem Tag Team gemeinsam Roadmap Strategies, wir hatten alles. Aber irgendwo wo hatte das Team und teilweise auch Product Leute, also unser gesamter Lead vom gesamten Department hat es auch immer wieder erwähnt, irgendwo, wo ist denn diese technische Vision? Und für mich war das immer sehr unklar, weil für mich war das irgendwie logisch, wo wir hinlaufen. Wir haben ja eine Produktvision und wir als Techniker unterstützen diese Produktvision und bauen an dieser Produktvision und wir probieren die beste Technologie zu finden, um diese Produktvision zu realisieren. Und wir waren ein sehr innovatives Team, das heißt zweitausendein, wir haben sehr viele Greenfield Projects gehabt und da habe ich mir gedacht, okay, warum brauchen wir irgendwie eine Vision oder eine oder irgendwelche Guidelines, die weiterhelfen? Also mir war das nicht so ganz klar, woher dieses Problem gekommen ist und was die Leute für ein Problem hatten. In unserem Podcast sprechen wir oft darüber, wie komplex die Infrastruktur heute geworden ist. Früher hatte man einfach einen Server und alles hat funktioniert. Doch heute sind die Skalierung von Cloud Lösungen, der Hochlastbetrieb wie Content Delivery Networks und vor allem die Sicherheit, Monitoring und Observability viel anspruchsvoller und komplexer geworden. Wenn du genau diese Komplexität auslagern möchtest und nach einem flexiblen Partner suchst, der dir als kleines Startup oder deinem DevOps Team unter die Arme greift, dann ist das DevOps as a Service Angebot von WeManage genau das richtige für dich, Zweitausendein. Egal, ob du einen kleinen Shop betreibst oder eine große Webplattform mit zehntausenden Benutzern managen musst, wemanage steht dir Beratung zur Seite oder übernimmt im Falle auf Wunsch sogar die Bereitschaft. Mehr infos findest du unter engineerinkiosk.de v slash wemanage. Und jetzt zurück zur Episode.",
-            "start": 157148,
-            "end": 313650,
-            "confidence": 0.9222059999999992,
-            "speaker": "B",
-            "channel": null
-        },
-        {
-            "text": "Ich habe erstmal das erste Problem, das ganze Buzzword Bingo. Was du jetzt wieder als Consultant hier droppst, technische Vision, Produktvision und Roadmap. Hilf mir noch mal ein bisschen auf die Sprünge, was eine technische Vision ist und wie sich das zur Produktvision unterscheidet. Denn in vielen Firmen ist es ja so, dass Technologie selbst nicht der Innovator ist, sondern das Mittel, wie wir das Produkt umsetzen, die Produktvision. Also seltenst wird ja mit der Technologie selbst Geld verdient.",
-            "start": 314430,
-            "end": 345056,
-            "confidence": 0.9159806329113922,
-            "speaker": "A",
-            "channel": null
-        },
-        {
-            "text": "Wir hatten ja sogar eine eigene Episode mal zu Mission und Vision. Aber wenn wir mal auf ein ganz abstraktes zweitausendeinundzwanzig level steigen, dann ist für mich eigentlich eine Vision dafür da, um Entscheidungen schneller treffen zu können. Das heißt, ich würde es gar nicht so genau definieren, was macht eine Vision oder auch eine Strategie aus, sondern das sind Dokumente, das ist irgendwas niedergeschriebenes, das mir im tagtäglichen Leben hilft zu entscheiden. Wenn ich z.B. zwei Projekte habe, Projekt eins und Projekt zwei und ich muss priorisieren, weil ich nur Zeit habe für ein Projekt, dann sollte mir die Vision in irgendeiner Form weiterhelfen, dass ich sage okay, um unsere Vision zu erreichen, wir wollen in fünf Jahren die beste Software XY zu sein am Markt, um irgendwas zu lösen, keine Ahnung, was auch immer, dann sollte mit dir in irgendeiner Form helfen, damit ich ein Projekt priorisieren kann, also damit die Entscheidungen schneller treffen kann. Das ist für mich eine sinnvolle Vision. Und da geht es gar nicht darum, ob es eine technische Vision ist oder eine Product Vision. Und die klassische Vision ist meistens productorientiert, weil man überlegt sich natürlich, wo will man hin? Und wie du richtig sagst, die Technik ist dann nur ein Tool dazu. Aber es gibt natürlich auch auf der technischen Seite, wir haben tagtäglich Diskussionen in Tech Teams, sollte uns eine technische Vision einfach weiterhelfen, eine Entscheidung zu treffen. Wenn wir eine Diskussion haben im Team, sollen wir jetzt Python oder Go verwenden? Dann sollte uns die technische Vision im Idealfall weiterhelfen, diese Entscheidung schneller zu treffen, als wenn wir sie nicht helfen.",
-            "start": 345128,
-            "end": 430756,
-            "confidence": 0.9304987084870847,
-            "speaker": "B",
-            "channel": null
-        },
-        {
-            "text": "Du hast gerade schon Python und Go genannt. Gib mir mal zwei, drei Beispiele, was eine technische Vision sein kann.",
-            "start": 430788,
-            "end": 436900,
-            "confidence": 0.9094595,
-            "speaker": "A",
-            "channel": null
-        },
-        {
-            "text": "Es ist extrem schwierig zu zu verallgemeinern, weil es natürlich immer davon abhängt, was du für Probleme im Team hast und was du löst und auf welcher Ebene dein Team ist. Also es kann ja eine technische Vision auch auf Firmenebene geben, ganz, ganz oben, wie eine Vision von der Firma. Und die wird natürlich ganz andere Dinge beschreiben. Die wird jetzt nicht beschreiben, wie du in deinem Team in irgendeiner Form arbeitest, sondern die wird vielleicht beschreiben, eben welche Sprachen sind unsere Hauptsprachen firmenweit? Also wir verwenden Go und Python und alles andere verwenden wir nicht oder wir verwenden nur andere Sprachen. Gibt es ja auch diese Regel z.B. Öfters, die manche Firmen haben, wenn wir mindestens drei Programmierer innen haben, die diese Sprache können. Also so eigentlich ein Regelwerk, wie wir zusammenarbeiten. Oder wir verwenden immer die Google Cloud oder wir verwenden immer AWS. Oder wir probieren alles möglichst in unserem Data Center zu hosten und keine Cloud zu verwenden. Also einfach, dass man grundsätzliche Regeln hat, wie man arbeitet oder vielleicht auch, wo man hin will. Wir haben zu viele Clouds, wir wollen nur auf eine Cloud oder wir wollen überhaupt ins Datacenter. Eine Vision. Wir haben zwar jetzt alles kreuz und quer self hosted in unserem Datacenter, in der Cloud, aber langfristig wollen wir auf eine Cloud oder in unser Datacenter. Oder wir wollen alles zurück migrieren auf Osgrass. Wir wollen mongolos werden langfristig. Also langfristige Ziele, die man in der Zukunft erreichen kann, gehören auch in die Vision. Das heißt nicht, dass nur diese Punkte drin sind, aber dieser Bereich ähnelt am ehesten einer Produktvision, aber eben auf der technischen Seite. Aber es kann natürlich dann auch ganz allgemeine Dinge drinstehen, wie was macht unser technisches Team aus, unsere technische Abteilung? Egal auf welcher Ebene wir das spielen, auf Company Ebene oder nur auf unserem kleinen Team. Wir können das ja auch für unser kleines Firmenmann, Zweitausendein und Frau Team machen. Was macht unser Team aus? Wo sind wir angesiedelt in der Firma? Was ist so unser One Liner? Was machen wir? Was bewegen wir eigentlich?",
-            "start": 437020,
-            "end": 557598,
-            "confidence": 0.9210984045584052,
-            "speaker": "B",
-            "channel": null
-        },
-        {
-            "text": "Aber ist das Wort Vision nicht zukunftsgerichtet? Also ich meine, ich habe eine Vision, wie mein Garten mal aussehen soll. Und ich habe diese Vision, weil er noch nicht so aussieht, wie es in meiner Vision, wie ich mir das so vorstelle. Und jetzt sagst du, dass eine Vision ja unter anderem auch ein Regelwerk ist, was wir tun und was wir nicht tun. Ÿousand, wir nutzen jetzt nur Amazon Web Services und nicht Microsoft Azure. Wie passt das zusammen?",
-            "start": 557694,
-            "end": 581668,
-            "confidence": 0.9599755000000002,
-            "speaker": "A",
-            "channel": null
-        },
-        {
-            "text": "Du könntest natürlich jetzt sagen, Moment, es gibt ja ein Manifesto, was viele Firmen haben, ein technisches Manifesto. Und da steht ja unser Regelwerk drin. Jetzt hast du es ins Spiel gebracht. Es stimmt, manche Firmen haben ein Technical Manifesto oder ein Development Manifesto, Engineering Manifesto, nenn es wie du es willst. Und dort steht unser Regelwerk drin. Wie arbeiten wir zusammen? Wir machen immer Code Reviews. Wir haben immer ein vier Augen Prinzip. Wenn wir kein Code Review machen, dann machen wir bare Programming, was es auch immer ist. Wenn du so ein Manifesto hast, dann hast du dort das Regelwerk drin. Fair Point, alles in Ordnung. Dann brauchst du in der Vision das auf keinen Fall drin haben. Oder vielleicht hast du so viel in deinem Manifesto drin, dass das eigentlich deine technische Vision ist und du brauchst jetzt keine eigenen technischen Vision. Also da gibt es natürlich verschiedene Begrifflichkeiten für sehr ähnliche Themen. Also da hast du natürlich jetzt, du kannst es nicht im Duden nachschlagen, okay, das Manifesto darf nur das beinhalten und die technische Vision nur das. Für mich ist ein Manifesto eher ein Regelwerk, da hast du recht. Und eine Vision hat halt auch andere Elemente drin, die vor allem die Zukunft betreffen. Aber die wenigsten Teams oder auch Firmen, muss man dazu sagen, können sich das leisten oder wollen sich es auch leisten. Oder für die ist es vielleicht zu komplex, fünf verschiedene Dokumente zu haben, wo das ganz hart getrennt ist. Das ist unser Manifesto, das ist unsere technische Vision, das ist unsere Strategie, noch mal eigens aufgestellt. Wobei würde sagen, die Strategie kommt immer aus der Vision heraus. Also wenn ich eine Vision habe, dann mache ich eine Strategie, eine Roadmap, wie man das dann auch immer nennt, wo dann die einzelnen Projekte festgelegt werden. Also eine Vision sollte schon was längerfristiges sein. Meiner Meinung nach ist ein Manifest noch was längerfristiges, wenn man so ans agile Manifesto denkt, das schreibt man einmal nieder und dann ist das festgebrannt. Oder die 12 Principles, wenn es um Prinzipien geht, ist ja auch so ein Manifesto, das schreibt man einmal nieder. Also für mich hat das Vote Manifesto eher so einen Charakter, dass das für die Ewigkeit ist und wenig abgeändert wird. Ist natürlich nicht so, kann man abändern, soll man auch abändern, im Idealfall in der Firma, aber für mich persönlich hat das Vote irgendwie so was langfristiges. Und da finde ich schön, eine Vision zu haben, die auch langfristig ist, aber die man eher ändern kann. Aber wie gesagt, wie du es nennst, ist im Endeffekt egal. Es soll ein Dokument sein, was dir im tagtäglichen Leben weiterhilft, Entscheidungen zu treffen und auch andere Vorteile hat, wenn du mit deinen Stakeholdern diskutierst, kommunizierst, dass du einfach ein Tool an der Hand hast, was dir als Techniker weiterhilft, was sonst nur Product hat. Weil Product hat die Roadmap, Product hat Vision und Mission und Product hat immer ein Dokument in der Hand und kann sagen, ja, aber wir müssen das machen, zweitausendein und die Techniker haben da nie was und sagen, ja, wir sind eh nur die Techniker, die beisteuern.",
-            "start": 581804,
-            "end": 744288,
-            "confidence": 0.9125837878787874,
-            "speaker": "B",
-            "channel": null
-        },
-        {
-            "text": "Ich finde es spannend, dass du sagst, dass ein Manifesto einmal geschrieben wird und nicht geändert wird. Also ich meine, wir hauen das ja jetzt hier nicht in Stein. Und wenn du dir mal Manifestos von Tech Firmen anguckst, wie z.b. das Reliability Manifesto von Delivery Hero, das verlinken wir auch in den Show Notes. Da gibt es zwei Meta Regeln ganz am Anfang des Dokuments. Und eine Meta Regel ist, wir validieren die Regeln in diesem Dokument zweimal pro Jahr. Also es ist eine Regel, dass das hier kein festes Dokument ist, sondern dass wir das kontinuierlich als Living Dokument nehmen. Deswegen bin ich sehr erstaunt, dass du sagst, okay, ein Manifesto ist etwas in Stein gemeißelt.",
-            "start": 744344,
-            "end": 783292,
-            "confidence": 0.9425407627118644,
-            "speaker": "A",
-            "channel": null
-        },
-        {
-            "text": "Noch einmal, für mich ist das Wort, ich empfinde das Wort eher als was Fixes. Da gibt es keine Definition und da kann man sich jetzt drüber streiten, was man unter Begrifflichkeiten versteht. Zweitausendein, wenn du halt so das agile Manifesto ansiehst, das agile Manifesto wurde nie geändert und für mich ist es halt eher so in Stein gemeißelt. Aber das ist mein persönliches Gefühl. Ich würde es einfach anders nennen, weil für mich halt Manifesto eher so statisch klingt. Aber ist eine Ansichtssache. Und was du im Endeffekt drüber schreibst, ist komplett egal. Schreib Prinzip ist drüber, Engineering Principles, unsere Deck Vision, was es auch immer ist. Wie gesagt, mir geht es eher darum, dass man sich in der technischen Vision konzentriert auf das, was man macht, wie man es macht, natürlich auch, warum man das macht, aber das warum steht meistens dann eher in der Produktvision üblicherweise. Wobei es natürlich auch technische Weiß geben kann auf der technischen Ebene. Warum verwendet man nur eine Cloud? Also das macht natürlich schon Sinn, wenn man das reinschreibt, um unsere Effizienz zu erhöhen oder um die Fluidität, Fluidität, wie nennt sich das Wort? Fluid? Egal. Um das Wechseln zwischen den Teams leichter zu machen, haben wir einfach weniger Programmiersprachen und erlauben keinen Wildwuchs. Das ist ja auch ein gewisses why, warum wir sowas machen. Aber üblicherweise ist die technische Vision connected mit der Produktvision und konzentriert sich dann eben auf das, was machen wir und wie machen wir das auf der technischen Seite, damit wir technischen Leute auch etwas in der Hand haben, das uns guidet und wo wir uns darauf geeinigt haben als Tech Team.",
-            "start": 783356,
-            "end": 872506,
-            "confidence": 0.9209948727272727,
-            "speaker": "B",
-            "channel": null
-        },
-        {
-            "text": "Jetzt hattest du schon gesagt, als technische Vision, wir wollen weg von mongodb und hin zu unserem Core Datenbank Management System.",
-            "start": 872578,
-            "end": 879594,
-            "confidence": 0.9416323809523808,
-            "speaker": "A",
-            "channel": null
-        },
-        {
-            "text": "PostgreSQL, was natürlich rein random jetzt gewählt ist. Hat überhaupt, habe natürlich überhaupt nichts gegen.",
-            "start": 879642,
-            "end": 884850,
-            "confidence": 0.8097713333333333,
-            "speaker": "B",
-            "channel": null
-        },
-        {
-            "text": "Warum ist das eine technische Vision und kein Projekt? Weil das klingt für mich relativ klar nach mehr oder weniger einer Arbeitsanweisung und also eine etwas, was ich in Jira ausarbeite, was ist dafür notwendig? Und dann auch die Teams verteile und dann einfach mache. Und als Produktvision hört sich das so an, ah, okay, immer wenn ich an etwas anfasse, was auf mongodb ist, dann füge ich Zusatzarbeit hinzu, um das nach Post Creo SQL umzuziehen. Und das hört sich eher so nach so einem nice to have an. Und dass diese Migration, weil im Endeffekt ist es ja eine Migration, du möchtest ja mongodb raus haben, dann nie wirklich aktiv betrieben wird bzw. Erreicht wird.",
-            "start": 884930,
-            "end": 926078,
-            "confidence": 0.9239796581196581,
-            "speaker": "A",
-            "channel": null
-        },
-        {
-            "text": "Wenn deine Vorstellung von dem Projekt ist, dass ein Projekt sich über vier Jahre ziehen kann, zweitausendein, puh, dann ja, ist ein hartes Projekt, ein Projekt, das nie fertiggestellt wird.",
-            "start": 926134,
-            "end": 936732,
-            "confidence": 0.9226550000000001,
-            "speaker": "B",
-            "channel": null
-        },
-        {
-            "text": "Den Zeitraum hattest du bisher noch nicht genannt. Du sagtest langfristig. Was langfristig für dich heißt, weiß ich nicht.",
-            "start": 936876,
-            "end": 941572,
-            "confidence": 0.9471757894736842,
-            "speaker": "A",
-            "channel": null
-        },
-        {
-            "text": "Aber wenn du jetzt auf MongoDB umstellst oder von MongoDB wegkommst oder auf eine Cloud, ist es natürlich was langfristiges, was sich wahrscheinlich über Jahre zieht, wenn du jetzt mit Greenfield startest oder wenn du.",
-            "start": 941676,
-            "end": 953052,
-            "confidence": 0.8826105714285715,
-            "speaker": "B",
-            "channel": null
-        },
-        {
-            "text": "Dich nicht konzentriert damit beschäftigst. Du kannst ja auch einfach sagen, okay, wir geben jetzt Gas, wir ziehen jetzt drei Leute aus drei Teams raus und die beschäftigen sich mit der Migration.",
-            "start": 953076,
-            "end": 962810,
-            "confidence": 0.9677481250000001,
-            "speaker": "A",
-            "channel": null
-        },
-        {
-            "text": "Das stimmt natürlich, dieses nice to have kann ein Problem sein. Aber wenn man das wieder gleichsetzt mit der Produktvision, die Produktvision ist ja das Wichtigste, was man eigentlich überhaupt nur hat. Und alle Entscheidungen richtet man in die richtige Richtung, dass man diese Produktvision erreichen kann. Wenn du das jetzt gleichsetzt mit der technischen Vision, wo drinsteht, wir wollen nur mehr ein oder primär eine Datenbank haben, oder um es genau zu sagen, ein Datenbanksystem, Datenbanken hat man immer viele, dann ist es ein wichtiger Punkt. Und bei jeder Entscheidung solltest du dann genau überlegen, wie kannst du diese Vision erreichen? Macht es jetzt Sinn, vielleicht auf die Datenbank umzusteigen? Oder wenn nicht, musst du das diskutieren. Und ich glaube, das ist auch ein großer Punkt, wenn das irgendwo steht, dann musst du natürlich, wenn du dagegen arbeitest, wenn du dich jetzt bewusst entscheidest, nein, wir setzen jetzt wirklich noch auf mongodb, wo wir auf Postgres umsteigen wollten, oder wir machen jetzt noch einmal ein neues Projekt auf der Cloud, wo wir eigentlich weg wollten, dann musst du das argumentieren und wahrscheinlich diskutieren. Und wenn das nirgends stehen würde, würde das einfach durchrauschen und die Diskussion würde wahrscheinlich gar nicht stattfinden. Das heißt, du hast schon solche Blocker, würde ich sie nennen, die du zwar überspringen kannst, du musst nicht unbedingt folgen, aber du musst dann diskutieren und es schalten sich wahrscheinlich andere Leute ein. Und man kann sich halt nicht einfach so drüber hinwegsetzen, zweitausendein. Das heißt, es ist schon inhärent dann in allen Entscheidungen in deiner Firma, in den Teams drin. Und so erreichst du es natürlich schon, dann auch in die richtige Richtung zu arbeiten, anstatt wenn du nur irgendwo ein Giro Ticket erstellst, wir steigen jetzt um auf eine andere Cloud, dann ist es natürlich weniger verankert, weil die Leute das nicht sehen, als wenn das in so einer gesamten Vision oder dann auch Strategie, die sich aus der Vision erstellt, wirklich die konkreten Punkte zweitausendein drinsteht.",
-            "start": 963590,
-            "end": 1070826,
-            "confidence": 0.9190344277108436,
-            "speaker": "B",
-            "channel": null
-        },
-        {
-            "text": "Wie sieht denn die Produktvision aus, wenn ein Element der technischen Vision ist, dass wir mongodb aus unserem Stack entfernen? Weil du sagtest gerade, die technische Version richtet sich nach der Produktvision. Das bedeutet, die Produktversion muss in irgendeiner Art und Weise ein Element enthalten, wozu dann mongodb nicht contributed. Kannst du noch mal ein Beispiel nennen?",
-            "start": 1070898,
-            "end": 1089738,
-            "confidence": 0.8772580701754387,
-            "speaker": "A",
-            "channel": null
-        },
-        {
-            "text": "Es kann ja auch komplett abseits der Produktstrategie sein. Also wenn ich mir jetzt bewusst auf der technischen Seite entscheide, zweitausendein, um meinen Ablauf zu optimieren im Tag Team, dass wir nur mehr eine Datenbank haben oder das unsere Standard Datenbank ist oder das Datenbanksystem, dann muss das nicht explizit in irgendeiner Produktvision drinstehen. Also das ist ja unsere Aufgabe als technisches Team, die beste technologische Lösung zu finden. Das steht wahrscheinlich auch in der Vision da drinnen. Was sind wir eigentlich? Wir probieren die beste technologische Lösung zu finden, die aber noch effizient ist und mit der wir arbeiten wollen. Und da bedeutet es nämlich auch, ich kann nicht auf irgendeine Hacker News Technologie setzen, sondern muss diese Datenbank verwenden, die halt schon in Verwendung ist, weil da können auch andere Leute einspringen, wenn ich im Urlaub gehe und so weiter. Alles, was da dranhängt. Und das steht dann natürlich nicht in der klassischen Produktvision drin, außer es hat natürlich eine Auswirkung, dass ich dann irgendwie das Produkt besser bauen kann oder was anderes bauen kann im Produkt, was bisher nicht gegangen ist, aber würde mal sagen, genau darum ist diese technische Vision so wichtig, weil diese technischen Punkte probiert man oft irgendwie dann so in die Produktvision reinzuschwindeln oder in irgendwelche Plannings und das hat aber doch nicht so richtig Platz. Und dann probiert man das irgendwie so doch aber noch irgendwie so einen Grund zu finden, dass das mit dem Produkt zusammenhängt. Und da finde ich es dann eigentlich fast sauberer, wenn man das einfach in zwei getrennten Systemen hat, die natürlich schon miteinander konkurrieren und zusammenarbeiten müssen, aber dass man das einfach getrennt aufschreibt und den langfristigen Plan eben auch auf der technischen Seite hat. Und wenn man sowas nicht bräuchte, eine technische Vision, unabhängig ob das irgendwo steht, dann kannst du dir auch jeden CTO sparen und dann brauchst du keinen CTO, der irgendwelche Entscheidungen trifft, dann könnte es alles immer Product entscheiden.",
-            "start": 1089874,
-            "end": 1192810,
-            "confidence": 0.9256589329268291,
-            "speaker": "B",
-            "channel": null
-        },
-        {
-            "text": "Denke ich nicht, denn ein CTO ist unter anderem dafür da, das Produkt mittels der Fachkompetenz der IT und Software Engineering zu enablen. Und das geht theoretisch zweitausendein auch ohne technische Vision. Zumindest so wie du mir die technische Vision jetzt gerade auch erklärst. Weil wenn du jetzt sagst, okay, wir packen jetzt einfach, wir wollen weg vom mongodb, aber du sagst ja auch, das muss jetzt nicht zur Product Vision contributen, dann wenn ich jetzt mal den Devil's Advocate spiele, bedeutet das eigentlich, du packst, wir müssen Technical Debt reduzieren in ein Dokument. Und das ist ja so ein Evergreen, weil wenn ich jetzt mongodb entferne, dann ist das Reduction of Technical Debt. Und da wissen wir alle, dass Refactoring und Technical Debt, ja, wir Engineers finden das ganz toll und ja, es ist leichter damit umzugehen, es ist aber kaum messbar und es in der Regel bei einem erfolgreichen Reduktion von Technical Debt und Refactoring hast du kein neues Feature im Produkt. Und das finde ich dann wieder schwierig, weil dann machst du Technik der Technik wegen und nicht des Businesses wegen. Ich bin Engineer bei Hard, verstehe mich bitte nicht falsch und ich verstehe genau, wovon wir reden, aber es ist der konstante Kampf mit Produktmanagement und wem auch immer, das ich sag mal in monetarisierten Zahlen umzusetzen, weswegen Produktmanager sagen schon wieder Refactoring.",
-            "start": 1193270,
-            "end": 1268490,
-            "confidence": 0.9275270044052865,
-            "speaker": "A",
-            "channel": null
-        },
-        {
-            "text": "Na, du hast natürlich vollkommen recht. Also das ist das allgemeine Problem mit Technical Debt und wenn Leute das nicht verstehen, obwohl man sagen muss, dass es eigentlich immer besser verständlich wird auf der ganzen Product Seite, dann wirst du halt in Zukunft gar keine Features mehr schicken, weil du nur mein riesen Chaos hast und und deine Ingenieurs nur mehr probieren irgendwas am Laufen zu halten. Aber ich will jetzt gar nicht Diskussion reingehen, aber du hast natürlich vollkommen recht und genau dafür ist dieses Dokument auch so wichtig, weil wenn du ein Dokument hast, wo drinsteht, wo wir hinwollen, was unsere technischen Schritte sind, dass wir vielleicht auch technical debt beheben, das kann auch in so einer Vision drinstehen. Es geht dann mehr wieder in principles oder values rein, also wie gehen wir um mit technical depth? Und dann hat ein Engineer dieses Dokument in der Hand und in jeder Diskussion mit Product kannst du auf dieses Dokument verweisen. Das heißt, du gibst jetzt plötzlich den Engineers ein Dokument in die Hand, ein Werkzeug mit dem sie argumentieren können. Sie können verweisen hey, unser CTO hat aber mit dem CEO gemeinsam, das ist abgesegnet, wir haben eine technische Vision und da steht drin, wir müssen auf diese Datenbank. Das heißt, wir dürfen jetzt in diesem Schritt Zusatzzeit investieren, weil wir wollen nicht mehr auf dieser alten Technologie bleiben. Und dann fällt es dem anderen Product Manager natürlich auch schwer, da dagegen zu argumentieren. Er kann natürlich und es muss ja nicht dann am Ende so sein, aber es macht für den Product Manager auch viel schwieriger, dann gutes Argument zu finden. Und wenn er eines findet, ist es ja fair. Aber du bringst diese Engineers auf eine gleiche Ebene in der Diskussion. Und das ist natürlich ein super tolles Werkzeug für Verhandlungen, weil die Engineers meistens eh schlechter gestellt sind als ein Product Owner, der den ganzen Tag verhandelt und das gewöhnt ist, da mit Leuten zu diskutieren.",
-            "start": 1268650,
-            "end": 1370140,
-            "confidence": 0.907703333333333,
-            "speaker": "B",
-            "channel": null
-        },
-        {
-            "text": "Das hört sich ganz stark danach an, als erstellst du eine Aß versus Sem Kultur, weil Produkt versus Technik, dass sie also mit, wenn du schon das Wort Verhandlung nimmst, dann dann rollen sich bei mir schon die Zehennägel auf, weil es ist keine. Es soll eine Symbiose ergeben. Ja, und wir sind hier nicht in einer sales Verhandlung.",
-            "start": 1370240,
-            "end": 1388292,
-            "confidence": 0.8897166101694911,
-            "speaker": "A",
-            "channel": null
-        },
-        {
-            "text": "Das ist dieses Berater Blabla, von dem du immer redest. Wir müssen eine Symbiose eingehen. Und in der Realität sind wir uns ehrlich, ist es selten so. Und alles, was du an Tools zur Verfügung hast, weil die Product Owner argumentieren ja dann auch, das ist unsere Vision, da müssen wir hin, das sind unsere Ziele und wir müssen dahin. Und darum könnt ihr jetzt kein Technik beheben. Und so bringst du das auf eine gleiche Ebene und das ist fair. Aber wie gesagt, es geht auch nicht nur um diese langfristigen Ziele in so einer technischen Vision. Es geht auch um ganz klassische, wie wir schon besprochen haben, prinzipiells, wie wir zusammenarbeiten. Manche nennen es Values. Es steht vielleicht auch in einem Values Document dann schon drinnen. Aber wenn du kein Values Document für die tech Leute hast, dann hast du vielleicht eine technische Vision, wo das auch noch erwähnt ist. Wie arbeitet man zusammen? Was sind unsere Werte? Wir probieren Funktionen so und so zu benennen, wenn es so weit runtergeht in einem Tag Team vielleicht. Was sind unsere Werte? Wenn wir programmieren, wie programmieren wir? Also es geht runter bis zu Style Guidelines, die natürlich nicht in der Vision drinstehen, aber da ist dann die Grenze schon schwammig. Was steht wo? Und je nachdem, wie viele Dokumente man hat, hat man Style Guidelines und wie weit reichen die? Oder umso weiter man nach oben geht, steht es dann auch nicht mehr in Style Guidelines, wenn man z.B. probiert, immer alles mit APIs zu machen. Solche Dinge könnte man dann auch in eine technische Vision packen, je nachdem, wie gesagt, welche Dokumente man hat. Und das ist alles zugegebenermaßen ineinander fließend. Und je nachdem, was du wo aufschreiben willst, kannst du das natürlich in eine technische Vision, in ein Manifesto oder in unsere Engineering Values packen.",
-            "start": 1388436,
-            "end": 1486240,
-            "confidence": 0.9096905844155841,
-            "speaker": "B",
-            "channel": null
-        },
-        {
-            "text": "Ich glaube, das war der Kernpunkt, den du gerade gesagt hast, dass es keine Abgrenzung gibt zwischen einem Manifesto oder aufgeschriebenen Prinzipien oder einer technischen Vision oder ähnliches. Denn die Elemente, die du genannt hattest, wir machen immer Pair Reviews oder ähnliches, das sind ja auch Manifesto Sachen. Also wie wir arbeiten und auch die Themen mit Values und Co. Kann man auch in einem Manifesto stehen. Deswegen ist das ein sehr fluider Begriff, Technical Vision.",
-            "start": 1486320,
-            "end": 1514604,
-            "confidence": 0.9015932894736846,
-            "speaker": "A",
-            "channel": null
-        },
-        {
-            "text": "Du kannst es auch Manifesto nennen, aber erzähl mir mal, wie viel Tech Teams eigentlich ein Manifesto haben oder auch Firmen. Also das ist ja sehr wenig verbreitet und eine technische, sorry, eine klassische Product Vision ist sehr verbreitet, aber auf der technischen Seite ist es nicht sehr verbreitet. Und darum geht es mir eigentlich, dass man den Tech Teams auch nicht nur ein Tool zur Verfügung stellt, sondern auch den Prozess mal anregt. Hey, denkt mal drüber nach, was macht uns als Tech Team eigentlich aus? Was bewegen wir? Was wollen wir bewegen? Wo wollen wir hin? Haben wir langfristige Ziele? Es kann natürlich auch vorgegeben sein, je nachdem, aber da kommen wir noch gleich dazu, wie man sie erstellt. Aber dass man mal überhaupt so eine Richtung niedergeschrieben hat, wo man hingehen will. Aber da können auch Dinge drinstehen wie, wie gehen wir um mit Innovation in unserem tech Team z.B. also wirklich auf high level.",
-            "start": 1514692,
-            "end": 1564388,
-            "confidence": 0.9012099367088608,
-            "speaker": "B",
-            "channel": null
-        },
-        {
-            "text": "Innovation ist ein sehr, sehr gutes Stichwort, weil du sagtest nämlich gerade, als wir über das Thema Verhandlungen und As vs. Sam gesprochen haben, wo ich von Symbiose gesprochen habe, da sagst du ja, wir haben aber in unserer Vision drinstehen, dass wir diese Datenbank nutzen. Und da kam mir als erstes in den Sinn, habe ich jetzt hier einen Hammer und alles ist ein Nagel, wenn ich einen Social Graph aufbauen möchte, dann ist eine relationale Datenbank jetzt eher schlecht dafür geeignet, mal als plakatives Beispiel, sondern da würde man lieber Neoj als Graph Datenbank nehmen. Und jetzt kommst du um die Ecke, ja, dann haben die Entwickler und Entwicklerinnen aber etwas in der Hand. Wir müssen aber diese Datenbank nehmen. Und dann sagt der, ja, aber wir bauen ja einen Social Graph und relationale Datenbank sind dafür eigentlich nicht geeignet.",
-            "start": 1564444,
-            "end": 1602896,
-            "confidence": 0.9077178873239432,
-            "speaker": "A",
-            "channel": null
-        },
-        {
-            "text": "Bei dem Product Owner zeigst du mir mal, der dir die Datenbank vorschlägt.",
-            "start": 1602968,
-            "end": 1606304,
-            "confidence": 0.9134030769230768,
-            "speaker": "B",
-            "channel": null
-        },
-        {
-            "text": "Gute Product Owner haben sehr gutes technisches Verständnis, abhängig von dem Produkt, an das man arbeitet. Ja, und da kann es mal vorkommen, dass die auch Datenbank Research machen. Product Owner sind ja nicht nur immer Leute mit MBAs, es gibt auch sehr viele Engineers, die Product Owner geworden sind. Aber was ich damit sagen möchte ist, zweitausendein, es klang jetzt gerade so, als wenn du eine technische Vision hast, dass du einen neuen Hammer hast und dann auf einmal alles ein Nagel ist, obwohl du gerade eine Schraube in der Hand hast. Es gibt auch Schlagschrauben, verstehe ich.",
-            "start": 1606392,
-            "end": 1629198,
-            "confidence": 0.9220853535353536,
-            "speaker": "A",
-            "channel": null
-        },
-        {
-            "text": "Aber also zwei Punkte dazu. Ich will gar nicht dieses Thema wieder aufrollen, ob man jetzt den Hammer verwenden soll für alle möglichen Nägel, weil das haben wir in Episode 62 schon besprochen, Technologien konsolidieren oder wie im Startup sammeln. Und da besprechen wir das wirklich sehr tief. Aber ich glaube, wir können uns einigen, zumindest machen das vor allem sehr, sehr große Firmen, dass man sich auf einen gewissen Stack einigt. Im Startup ist es was anderes, aber in sehr großen Firmen einigt man sich normal auf einen Stack, den man zur Verfügung hat. Man kann es aber natürlich auch ändern und das ist ja das Gute daran. Und du hast es beim Delivery Hero Manifesto schon erwähnt, dass der erste Punkt ist, wir machen ein Review, ob das immer noch aktuell ist und können das jederzeit ändern. Und das ist natürlich auch ganz wichtig bei so einer technischen Vision oder Manifesto oder Values oder wie wie du das auch immer nennen willst, dass man es regelmäßig reviewed und auch ändern kann. Und wenn man jetzt eine neue Datenbank unbedingt braucht, ist es ja okay, die einzusetzen in einem gewissen Projekt. Ob man das jetzt schon in die technische Vision mit reinnehmen soll, diese neue Datenbank, ist eine andere Frage. Es gibt ja diese mittlerweile eigentlich sehr bekannte Herangehensweise des tech Radars, das der sicher auch, was sagt das, damals von Thoughtworks eigentlich so aufgebracht wurde. Die machen das ja immer noch, dass sie regelmäßig einen Report rausbringen, das tech Radar, was in der technischen Welt so an Software Technologien, Herangehensweisen verbreitet ist und wie sich die technische Welt entwickelt. Und es hat sich sehr stark etabliert, dass man das auch in der eigenen Firma macht, so ein Techradar. Und so ein tech Radar kann natürlich connected sein mit der technischen Vision oder vielleicht sogar Teil der technischen Vision sein, dass man so eine Übersicht hat, welche Technologien setzen wir ein. Du hast so vier Quadranten, also Die vier Quadranten sind Techniken, Plattformen, Tools, Frameworks und Libraries. Also du hast vier Bereiche in deiner Firma eben z.B. was für Libraries du verwendest und dann in dem Quadranten sind dann alle Libraries aufgelistet, die in deinem Stack vorhanden sind, deine Kernlibris und dann positionierst du diese Libraries in diesem grafischen System, also so ein d System positionierst du dann je nachdem, wie wichtig die Technologie für dich ist oder wie fortgeschritten diese Technologie eingesetzt wird in deinem Unternehmen oder die Library in dem Fall. Da gibt es nochmal vier Unterteilungen. Ist es eine Library, die du im Einsatz hast, die empfohlen wird für jedes Projekt, das nennt sich Adopt, das heißt, das wird eigentlich empfohlen, wenn du ein neues Projekt startest. Dann hast du noch trial, assess und hold. Also hold wäre z.B. du verwendest diese Technologie nicht mehr und die sollte auf keinen Fall verwendet werden für neue Projekte. Und je nachdem, wo die Library sich befindet in diesem Quadranten, in diesen Ringen, siehst du sofort grafisch, was sind unsere Kerntechnologien, was testen wir gerade aus? Was könnten die zukünftigen Technologien sein, die auf Adopt wechseln, also die unsere Kerntechnologien werden oder auch Prozesse, eben Tools, Plattformen, Cloud Plattformen z.B. und so hast du eine visuelle Repräsentation von deinem tech Stack in der Firma und das eignet sich natürlich super in Diskussionen oder auch im Recruiting oder auch in der Öffentlichkeitsarbeit, dass du einfach sagst okay, das ist unser Text, schau einmal da drauf. Ÿousand, wenn du bei uns anfängst, dann arbeitest du mit diesem Tech Stack. Also techradar ist ist extrem praktisch, ist aber natürlich auch ein Aufwand, das zu pflegen, weil du brauchst ein Gremium und ein Team, das sich darum kümmert, dass das absegnet, dass es immer wieder reviewed, das Vorschläge annimmt, das ist alles verfolgt wird. Könnte natürlich theoretisch auch automatisch generiert werden, aber ist in der Realität natürlich schwierig und ist ein gewisser Aufwand, aber ist eine ist eine coole, coole Sache eigentlich deinen Textec zu dokumentieren und visualisieren. Und wer sich ein cooles Beispiel von einem Techradar ansehen will, Zalando hat da wirklich online ein interaktives tech Radar über den gesamten Texttag. Ist sicher ein vorbildliches Beispiel und die hatten auch sehr früh damit angefangen.",
-            "start": 1629214,
-            "end": 1863350,
-            "confidence": 0.9073281766381763,
-            "speaker": "B",
-            "channel": null
-        },
-        {
-            "text": "Jetzt hattest du aber schon gesagt, dass die technische Vision unter anderem sagt, okay, welche Cloud wir nutzen, also als Beispiel oder welche Programmiersprachen oder welche Datenbanken. Jetzt haben natürlich sehr viele Entwicklerinnen und Entwickler sehr viele Meinungen. Ich bin jetzt sehr überzeugt von Go. Manche Leute sagen, Rust ist die einzige Religion, die man nutzen sollte und der dritte, mit dem ich spreche, sagt PHP und die vierte kommt dann über die Ecke. Lass uns mal bitte JavaScript everywhere machen. Wie erstellt man denn jetzt so eine technische Vision? Weil für mich hört sich das so ein bisschen an, wir stecken ganz viele Leute in einen Raum, die schlagen sich die Köpfe ein und dann gucken wir mal, wer rauskriecht und die Person hat dann gewonnen. Ist das so ein Meinungs Bash Meeting oder oder wie funktioniert oder wird da einfach nur Top Down Management betrieben vom C Level Management? Oder wie kommt man da zu einer sinnvollen Vision? Und wie sorgt man dafür, dass das kein monatelanger Prozess wird? Oder sollte es ein monatelanger Prozess sein? Sollte man sich da aktiv für Zeit nehmen?",
-            "start": 1863390,
-            "end": 1922146,
-            "confidence": 0.9090993548387095,
-            "speaker": "A",
-            "channel": null
-        },
-        {
-            "text": "Das kommt natürlich jetzt auch wieder darauf an, welchen Teil du ansprichst von so einer technischen Vision oder Manifesto oder Values, wie wir das jetzt besprochen haben. Wenn es darum geht, um unsere Values, dann sollte das schon ein langer Prozess sein, weil diese Values ändern sich ja am wenigsten. Wie arbeiten wir zusammen? Was sind unsere Prozesse? Code Reviews, Pair Programming, wie gehen wir mit Technical Depth um? Das ist schon ein gemeinsamer Prozess, den man mit dem Team machen sollte in mehrere Iterationen. Wie gesagt, ist ja auch ein Dokument, was ich ständig ändern kann. Aber das ist schon eher ein langfristigeres Projekt, überhaupt das zu erstellen. Und da sollten auch möglichst viele eingebunden sein, weil mit den Values ist es ja klassisch so oder auch den Prozessen, dass sie sonst nicht angenommen werden. Also so ein top Down ist halt zumindest in moderneren Unternehmen, würde ich mal sagen, schwierig, dass das dann gut ankommt, gerade wenn es, wenn es um den technischen Prozess geht. Also das sollten schon die Leute in irgendeinem kollaborativen Format herausbringen. Dann umso mehr das in die klassische Visionsrichtung geht. Und wenn wir jetzt wieder dieses Cloud Beispiel bemühen, wir gehen in eine Cloud, das muss wahrscheinlich CTO entschieden sein oder zumindest auf hoher Ebene oder die Principles entscheidendes, also staff oder principle. Also ich rede jetzt nicht von den Prinzipien, die man dann ausformuliert, sondern von den Positionen, von den hohen Staff Levels, Principle Levels oder CTO oder wo das auch immer angeordnet ist. Aber dieses Gremium, das sich dann entscheidet, okay, wo wollen wir hin? Was für Cloud verwenden wir? Was für Datenbank verwenden wir? Natürlich sollte Input von den Teams auch genommen werden, gerade wenn man jetzt ans tech Radar denkt. Natürlich will man wissen, was machen die Teams, welche Technologien werden eingesetzt und wo müssen wir die dann ansiedeln? Aber das ist dann wenigstens kontrollierter Prozess und der Input wird dann gesammelt von diesem Gremium und dieses Gremium kann dann entscheiden, okay, was machen wir damit, wie ändern wir das? Also es muss schon irgendwie einen Entscheidungsprozess geben oder ein Team, das sich darum kümmert. Und natürlich umso mehr die Teams eingebunden sind, alle Personen, alle technischen Leute, die es dann auch betrifft, umso besser, aber umso größer natürlich die Company und umso weiter oben die technische Vision, umso komplexer wird es dann und dann macht es natürlich oft auch keinen Sinn. Aber es sollte natürlich auch keine ewig lange Streiterei werden. Und wie du richtig sagst, welche Sprache ist die beste? Oder wenn wir gerade in so einem Prozess sind, wir haben jetzt 10 Programmiersprachen und wollen die reduzieren, dann ist es natürlich super schwierig. Also man kann schauen, man kann sich wahrscheinlich auf fünf wichtige einigen, aber dann die letzten, was jetzt wegfällt und so, das muss wahrscheinlich dann irgendein C level oder ein Gremium dann einfach entscheiden am Ende, weil da wirst du auf keinen grünen Zweig kommen, wenn in ewigen Diskussionen.",
-            "start": 1922218,
-            "end": 2083586,
-            "confidence": 0.9164037500000003,
-            "speaker": "B",
-            "channel": null
-        },
-        {
-            "text": "Was ist denn das erwartete Ergebnis bei einer technischen Vision? Ist das ein Dokument, was dann von jedem Engineer unterschrieben wird oder wie stellt man Commitment her? Wenn du sagst, Top Down ist nicht das Mittel der Wahl.",
-            "start": 2083698,
-            "end": 2096013,
-            "confidence": 0.9652231578947367,
-            "speaker": "A",
-            "channel": null
-        },
-        {
-            "text": "Ja, die Leute natürlich einbinden. Und was ich z.B. ganz ursprünglich, wenn wir jetzt noch mal zurückgehen an diesen Punkt, wo ich das Feedback bekommen habe, uns fehlt irgendwie eine technische Vision. Ich habe dann die Leute gefragt, was erwartet ihr euch eigentlich? Und die haben so gemeint, ja, irgendwie, wo es hingeht oder was? Und ich habe dann probiert nachzufragen und sie haben mir das auch nicht so richtig sagen können, was sie eigentlich wollen, aber sie haben sich ständig beschwert, wirklich aus zahlreichen Ecken irgendwie wir brauchen so eine technische Vision oder? Also es war irgendwie so unklar und für mich war es auch unklar. Und ich hab dann gegoogelt und ich habe damals einen super Blogpost gefunden, ich weiß leider nicht mehr, welche der gewesen ist, eben auch leider nie mehr gefunden. Aber was der gesagt hat ist, um eine Vision zu starten, schau dir einfach mal die letzten ein, zwei Jahre an, alle Entscheidungen, die dein Team getroffen hat und probiere die Gemeinsamkeiten aus den Entscheidungen zu finden. Oder in den letzten drei Monaten, dann machst du das mit den letzten sechs Monaten und so weiter. Probiere einfach Gemeinsamkeiten in den Entscheidungen zu finden und warum du die Entscheidung getroffen hast. Also warum hast du jetzt bei einem Greenfield Projekt entschieden? Wir machen das jetzt in Python und nicht in der Cloud, sondern in unserem Datacenter. Und dann probiert man diese Entscheidungen zu extrahieren, die Gründe dieser Entscheidungen und daraus kann man eigentlich die technische Vision bauen. Also wenn du alle Entscheidungsprozesse zusammen nimmst, extrahierst, was sind die Gemeinsamkeiten, warum haben wir genau so entschieden? Dann hast du eigentlich eine technische Vision, weil genau diese Punkte sind wichtig, um weitere Entscheidungen zu treffen in der Zukunft. Und so kann man eigentlich mit einer technischen Vision super einfach starten. Und da sollten eigentlich alle an Bord sein, weil die haben ja alle so entschieden in der Vergangenheit. Das heißt, dein Entscheidungsprozess war schon so, da sollte eigentlich niemand dagegen sein. Natürlich musst du es trotzdem kommunizieren und besprechen und Feedback einholen. Das macht natürlich absolut Sinn. Aber für einen guten, einfachen Lean Start kannst du einfach so mal starten. Und das kannst du auch auf deiner Ebene, auf der Team Ebene machen. Wenn du ein kleines Team mit zwei Leuten hast, kannst du das auch schon starten. Also du brauchst da keinen CTO dazu oder wenn ihr das nicht in der Firma habt, du brauchst nicht ganz oben anfangen bei deinem Team. Klar ist das eine kleinere technische Vision, aber du kannst es schon losstarten. Einfach mal Ÿousand, deinen Entscheidungsprozess analysieren und dann kommst du schon ins Going. Und dann einfach evaluieren, reviewen, verändern, anpassen und dann hat man ein Dokument, was man Leuten auch in die Hand geben kann, wenn dieses Team joinen oder wenn es Diskussionen gibt, dann hat man einfach was in der Hand. Und das ist das Wichtige, dass man was in der Hand hat.",
-            "start": 2096181,
-            "end": 2240000,
-            "confidence": 0.9396066463414625,
-            "speaker": "B",
-            "channel": null
-        },
-        {
-            "text": "Das klingt jetzt gerade so, als würde ich ein Research Projekt machen und mir die letzten zwei Jahre die geschriebenen Design Dokumente ansehen.",
-            "start": 2240040,
-            "end": 2246264,
-            "confidence": 0.9063521739130435,
-            "speaker": "A",
-            "channel": null
-        },
-        {
-            "text": "Und wenn du Design Dokuments hast, ist es natürlich ideal. Ja, genau. Dann kann dir vielleicht sogar ChatGPT das zusammenfassen.",
-            "start": 2246392,
-            "end": 2253536,
-            "confidence": 0.7817100000000001,
-            "speaker": "B",
-            "channel": null
-        },
-        {
-            "text": "Zweitausendein bist du jetzt gerade mit KI auf das Plateau der Produktivität im gartner Hypecycle gegangen.",
-            "start": 2253648,
-            "end": 2258622,
-            "confidence": 0.854945625,
-            "speaker": "A",
-            "channel": null
-        },
-        {
-            "text": "Ja, die Produktivität kommt im gartner Hypecycle eigentlich eher bei der Talfahrt. Erst da wird es dann richtig produktiv, wenn das in Verwendung ist. Aber ja, dann auf dem, auf dem Niveau. Ja, das ist ein sinnvoller Einsatz durchaus. Und es kann, kann, also ich hab's nie probiert, aber könnte natürlich eigentlich ganz, ganz gut funktionieren. Ja, dass man zumindest gewisse Keywords rausbekommt und dass man da am Start.",
-            "start": 2258806,
-            "end": 2279942,
-            "confidence": 0.8761733333333332,
-            "speaker": "B",
-            "channel": null
-        },
-        {
-            "text": "Jetzt sagst du das als Berater immer so toll und als wird das alles immer so Ÿousand der Happy Pass sein und Teletubby Land. Ja, wir binden die Teams mit ein, aber jeder hat eine starke Meinung, habe ich ja gerade schon mal gesagt. Im Endeffekt läuft es ja darauf hinaus, dass irgendjemand am Ende des Tages eine Entscheidung treffen muss. Denn nicht jedes Engineering Team ist in der Lage, solche Entscheidungen zu machen. Ja, es gibt dieses Disagree and Commit, dass man ab und zu sagen muss, okay, ich trete von meiner Meinung zurück, aber das wird ja alles auch nicht leichter. Also das ist schon Ÿousand, wenn man sich mal den Verlauf eines Teams oder einer Abteilung oder einer Firma ansieht, schon eher so die die sogenannte Storming Phase, oder? Wo man sich mal richtig in die Haare kriegt. Natürlich kann man sich auf historische Entscheidungen berufen. Unsere ganze Codebase ist in Python geschrieben. Wir machen jetzt einfach weiter in Python. Man kann aber auch sagen, hey, unsere Applikation ist so komplex geworden, wir brauchen mal striktes Typing. Und deswegen ist Python vielleicht nicht mehr ein Mittel der Wahl. Und auf einmal machst du einen riesen Fass auf und stürzt nämlich vielleicht sogar die Firma sogar noch in ein tieferes Loch, da du auf einmal anfängst, in deiner technischen Vision zu sagen, wir wollen von Python weg zu migrieren. Und wir sind uns alle einig, dass wir in unserer Lebzeit in dieser Firma die 1 Million Lines of code in Python nicht nach Rust oder Go portieren werden, weil da kommt natürlich eine ganze Ecke mit, wie Schulungen und so weiter. Also das bedeutet, das ist ein mega Drop in Produktivität. Und also irgendwo muss man ja, ich sag mal, auch die Kirche im Dorf lassen, oder?",
-            "start": 2280006,
-            "end": 2368628,
-            "confidence": 0.9212578929765889,
-            "speaker": "A",
-            "channel": null
-        },
-        {
-            "text": "Ist ein guter Punkt, den du ansprichst.",
-            "start": 2368764,
-            "end": 2370524,
-            "confidence": 0.7999342857142857,
-            "speaker": "B",
-            "channel": null
-        },
-        {
-            "text": "Also es ist ja keine Wunschliste, es ist ja keine Einkaufsliste. Ach, ich gehe jetzt in die Quengelzone und ich nehme mir noch Snickers mit. Und ich sag das so schön, weil du kannst das einfach so sagen, weil du bist ja Berater, du schlägst das vor, machst den technischen Visions Workshop und gehst dann wieder raus und in drei Monaten hakst du wieder nach und berechnest wieder das Gespräch. Aber wie war es denn mit der technischen Vision?",
-            "start": 2370612,
-            "end": 2388700,
-            "confidence": 0.9040243037974683,
-            "speaker": "A",
-            "channel": null
-        },
-        {
-            "text": "Naja, im Idealfall begleitet man die den Erstellungsprozess ja auch. Aber das, was du ansprichst, ist natürlich ein guter Punkt und ein Problem. Aber was wäre die Alternative? Das Totschweigen und einfach nicht ansprechen hat noch nie funktioniert. Also wenn du sagst, da schlummert so ein Konfliktpotenzial, dann wird es irgendwann aufbrechen. Und du kannst natürlich jetzt sagen, mir ist egal, ich verwende einfach 20 Programmiersprachen. Das ist halt so, ist okay, hat halt sehr viel andere Probleme. Aber wenn du dann mal in den Diskussionsprozess reingehst, dann musst du natürlich erwarten, dass es auch Probleme gibt. Es ist bei jeder Diskussion so und du kannst doch top down auch etwas beschließen. Funktioniert vielleicht, funktioniert nicht, je nachdem. Ich glaube, es funktioniert wahrscheinlich weniger, vor allem bei technischen Leuten. Das heißt, man muss da halt durch und wenn man das begleitet hat mit irgendwem, der moderiert und wo man dann Lösungen findet, dann sollte das auch ein Prozess sein, der nicht ewig dauert. Und ich glaube bei ganz vielen Punkten, wenn es darum geht, wie behandeln wir Tech Redact oder so Ÿousand, da braucht man gar nicht so viel diskutieren, weil da sind wahrscheinlich eh alle auf deiner Seite. Wenn es darum geht, was ist die wichtigste Programmiersprache und kommt die als Hauptprogrammiersprache in unseren Stack rein, Tag Radar, ist es natürlich schwieriger und vor allem, wenn man von komplett chaotisch zu strukturiert geht, dieser Schritt ist natürlich einmalig sehr schwierig. Sobald du mal dann in der strukturierten Phase drin bist, wo du ein Tag Radar hast, wo du diskutierst, was ist unsere wichtige Sprache, was nicht, dann sollte das ja auch nicht so einfach sein, dass du überhaupt eine Sprache etablierst zu einer companyweiten Sprache, sondern es sollte dann ja auch schon in einem Prozess stattfinden und dann ist es weniger schwierig. Aber klar, der erste Schritt ist immer der schwierigste und da wird es viel Diskussion geben, aber das hast du jedes Mal, wenn du ein neues Greenfield Projekt anfängst, was ist die beste Technologie für dieses Projekt, dann hast du wahrscheinlich auch am Anfang einfach eine lange Diskussion.",
-            "start": 2388860,
-            "end": 2497966,
-            "confidence": 0.9181714245014236,
-            "speaker": "B",
-            "channel": null
-        },
-        {
-            "text": "Devils Advocate technisch könnte man jetzt natürlich auch sagen, jede Firma versucht gerade produktiver zu werden, jede Firma versucht gerade ihren Kosten Fußabdruck zu reduzieren und jetzt kommst du um die Ecke und sagst, ja der CEO möchte zwar, dass wir schneller shippen und mehr Value bringen in kürzerer Zeit, also böse gesagt, mehr aus unseren Leuten raus squeezen und jetzt kommst du als Berater, ja, ich denke, ihr solltet euch erst mal hinsetzen, eine technische Vision machen, weil im Endeffekt rufst du Opportunitätskosten auf. Du sagst, wenn ihr eine technische Vision habt, dann wird später alles einfacher und alles schneller.",
-            "start": 2498158,
-            "end": 2531478,
-            "confidence": 0.8937461386138612,
-            "speaker": "A",
-            "channel": null
-        },
-        {
-            "text": "Ist selbe wie eine Produktvision. Du könntest auch argumentieren, du brauchst keine Produktvision, wir machen einfach was, was ankommt und was der Kunde so wünscht und da die Projekte, die bei uns bei der Tür reinflattern, machen wir einfach, weil die bringen ja auch das Geld. Wenn da eine neue Anfrage reinkommt, dann machen wir das, weil da ist es Geld sofort. Und da ist ja auch eine Strategie. Ja, es ist eine Strategie, ist nur keine Vision. Das heißt, wenn du langfristig eine funktionierende Firma haben willst, dann brauchst du meiner Meinung nach einfach eine Vision und jeder, der unternehmerisch denkt und sinnvoll denkt, wird auch längerfristig denken. Und das darf man nicht nur auf der Product Seite, sondern muss auch auf der technischen Seite machen, dass deine Tech Teams glücklich sind, dass die zufrieden sind, dass sie effizienter sind, dass sie schneller Entscheidungen treffen können mit der tech Vision und dass du dir am Ende dann natürlich auch Zeit sparst, Streitereien, Spaß, Diskussionen sparst und im Endeffekt das dann natürlich auch wieder ins Produkt einzahlt. Und das heißt ja auch nicht, dass die technische Vision nichts über das Produkt beinhalten darf. Also du kannst ja auch reinschreiben, dass z.B. uX extrem wichtig ist und dass die User eine gute UX haben. Das könnte ja auch ein Schwerpunkt einer technischen Vision sein, der auch sehr nahe am Produkt liegt, dass du sehr einfach zu benutzen das Produkt hast. Es würde wahrscheinlich nicht in der Produktvision stehen, höchstwahrscheinlich, weil es schon sehr technisch ist, aber könnte natürlich sehr wichtig sein für die Zweitausendein, für technische Diskussionen, wo man einfach sagt, okay, UX steht bei uns im Vordergrund, das heißt wir verzichten auf andere Dinge, wenn die UX dadurch nicht gut ist.",
-            "start": 2531534,
-            "end": 2620674,
-            "confidence": 0.9160339518900343,
-            "speaker": "B",
-            "channel": null
-        },
-        {
-            "text": "Ich zitiere einen ehemaligen Vorgesetzten von wer Visionen hat, muss zum Arzt. Dies aber nur als Seitenhieb.",
-            "start": 2620802,
-            "end": 2627562,
-            "confidence": 0.9112382352941178,
-            "speaker": "A",
-            "channel": null
-        },
-        {
-            "text": "Da kann ich jetzt nur Marco zitieren aus der Episode 110, wo wir über OKRs gesprochen haben, wo er gesagt hat, das was du sagst, ist ja die Mehrzahl Visionen, man braucht eine Vision.",
-            "start": 2627706,
-            "end": 2638350,
-            "confidence": 0.901710294117647,
-            "speaker": "B",
-            "channel": null
-        },
-        {
-            "text": "Auch ein schöner Konter. Das bedeutet aber auch, wenn ich dir jetzt richtig zuhöre und die ganze Sache richtig verstehe, dass die technische Vision eigentlich Aufgabe des Leaderships ist, das zu treiben, ich sage nicht zu entscheiden, aber wenn du jetzt Teamleiter bist, wenn du jetzt im technischen Leadership bist, Steph Engineering oder sehr erfahrener Senior Engineer oder Tech Lead oder Engineering Manager, dass du das ganze Thema mal auf den Tisch bringst im nächsten Teammeeting.",
-            "start": 2638530,
-            "end": 2661198,
-            "confidence": 0.9207131578947366,
-            "speaker": "A",
-            "channel": null
-        },
-        {
-            "text": "Es gehört eindeutig zum Technical Leadership und zur tech Kultur. Das heißt, wenn wenn man immer so schön sagt, wir haben eine gute tech Kultur, dann würde ich immer fragen, ja was bedeutet das, was heißt das, wo steht es? Was ist eure Kultur? Und ein Teil kann natürlich auch so eine technische Vision oder wie du es gerne Manifesto nennst oder Engineering Values sein und die zahlen auf eine technische Kultur ein, dass das einfach klarer definiert ist. Was ist unsere Kultur, wie arbeiten wir, wo wollen wir hin? Was ist für uns wichtig als Tech Team in tech? Und dass am Ende die Leute in dieselbe Richtung arbeiten und eben sich bei jeder Wegkreuzung das Dokument an die Hand nehmen können und entscheiden können, sollen wir links oder rechts gehen, was ist der bessere Weg jetzt? Und im Product ist es sehr etabliert und ist so ein bisschen über tech drüber gefahren meiner Meinung nach. Und im Tech wird es vernachlässigt. Bzw. Hat sich noch nicht so etabliert und ist meiner Meinung nach aber auch extrem wichtig.",
-            "start": 2661294,
-            "end": 2716850,
-            "confidence": 0.9065656424581009,
-            "speaker": "B",
-            "channel": null
-        },
-        {
-            "text": "Wie evaluiere ich denn, dass ich jetzt als Outcome eine gute technische Vision habe? Oder kann ich das erst nach einem Jahr evaluieren, wenn wir diese alle verinnerlicht und gelebt haben? Oder gibt es eine Möglichkeit, ich habe jetzt diese Workshops gemacht, ich habe mich jetzt mit dem Team zusammengesetzt und da kommt der purzelt jetzt ein Dokument raus, wo wir alle sagen, Daumen hoch oder halt auch disagree and commit, wie sage ich, Okay, das ist ein gutes Ergebnis.",
-            "start": 2716930,
-            "end": 2741486,
-            "confidence": 0.9237223749999999,
-            "speaker": "A",
-            "channel": null
-        },
-        {
-            "text": "Wie misst du denn, ob eine Produktvision gut ist oder schlecht?",
-            "start": 2741678,
-            "end": 2745404,
-            "confidence": 0.9130790909090909,
-            "speaker": "B",
-            "channel": null
-        },
-        {
-            "text": "Keine Ahnung, ich bin kein Produktmanager.",
-            "start": 2745502,
-            "end": 2747216,
-            "confidence": 0.9928666666666667,
-            "speaker": "A",
-            "channel": null
-        },
-        {
-            "text": "Also meiner Meinung nach kann man es nicht messen, weil es wie gesagt ist eine Vision, obwohl bei der Produktversion kann.",
-            "start": 2747408,
-            "end": 2755768,
-            "confidence": 0.8369638095238093,
-            "speaker": "B",
-            "channel": null
-        },
-        {
-            "text": "Man, geht natürlich eine ganze Menge Market Research voraus. Ja, also ich meine, da gibt es ja auch UX Research und allem drum und dran und Product, Market fit. Also ich glaube schon, dass es da sehr, sehr viele Signale gibt über eine gute Produktvision, dass sie auf jeden Fall in die richtige Richtung bzw. Nische bzw. Kerbe zielt und das da auf Ÿousand zu 50 % ein Potenzial zu heben ist. Wobei bei der technischen Vision ist es ja, Market Research in der technischen Vision ist relativ schwierig. Natürlich kannst du kontinuierlich dem Markt folgen und dem, welche Datenbank ist gerade populär Index oder der Stack Overflow Programmiersprache, aber das bringt dich ja nicht zum Ziel, weil wir hatten ja gesagt, die Technik ist ja ein Mittel zur Wahl, die Produktvision zu supporten. Bei der Produktvision geht es ja wirklich um Geld und da hat man ja deutliche Indikatoren. Deswegen gibt es ja auch so Geschichten wie MBA und bwler und Co. Also das ist vielleicht die Antwort, wie ich eine Produktvision evaluieren würde, beziehungsweise das Potenzial einer Produktvision.",
-            "start": 2755784,
-            "end": 2813634,
-            "confidence": 0.9193594999999996,
-            "speaker": "A",
-            "channel": null
-        },
-        {
-            "text": "Willst du damit jetzt behaupten, dass die technischen Leute kein Research betreiben, weil diese ganzen Entscheidungen, was für Datenbank man verwendet und so, ja, wenn das nicht auf, du nennst es Market research by product, aber bei Tech ist es ja genauso, Research oder Market Research, was ist eine gute, gute Datenbank, warum ist es eine gute Datenbank? Warum gehen wir in die Richtung? Warum arbeiten wir im Programming oder warum machen wir code Reviews? Also da steckt ja ganz viel Wissen und auch Research dahinter, warum man sowas macht. Also einerseits Erfahrung und wie man in den vergangenen Jahren vielleicht schon gearbeitet hat, aber natürlich auch ganz viel aus der wirklich Wissenschaft, würde ich fast sagen, weil es sind ja etablierte Prozesse und man überlegt sich das ja, warum man sowas macht. Das soll ja auch gut überlegt sein. Oder warum verwende ich jetzt Python als Haupt Ÿousand Sprache? Ist ja nicht nur weil Python, weil ich jetzt als CTO Python lustig finde. Man kann natürlich auch sein, aber im Idealfall ist da ja schon viel Research auch dahinter.",
-            "start": 2813762,
-            "end": 2867488,
-            "confidence": 0.9183918888888888,
-            "speaker": "B",
-            "channel": null
-        },
-        {
-            "text": "Ja doch, aber die Gründe, warum verwende ich Python, muss nicht auf Basis der Research sein, sondern weil die Gründer damals mit Python angefangen haben, nachdem sie sich einen Python Videokurs reingezogen haben. Und jede Migration auf eine andere Programmiersprache wäre jetzt einfach viel zu teuer und würde nicht zum Produktziel einzahlen, sondern würde nur Arbeit erschaffen.",
-            "start": 2867544,
-            "end": 2884656,
-            "confidence": 0.9548654385964913,
-            "speaker": "A",
-            "channel": null
-        },
-        {
-            "text": "Ja, aber es ist ja auch Research. Es ist ja auch Research, das du betrieben hast und du hast dann zweitausendein eine Entscheidung getroffen, basierend auf Fakten, auf Informationen, die du eingeholt hast. Also du sagst jetzt irgendwie so, die technische Vision ist nur dahingerotzt und so sollte sie natürlich nicht sein, wenn die sauber mit Research erstellt worden ist. Du bindest ja auch Leute ein, deren Wissen ein. Dann hast du natürlich im Idealfall schon eine sehr fundierte technische Vision, die dann am Ende rauskommt.",
-            "start": 2884728,
-            "end": 2912262,
-            "confidence": 0.8966767441860463,
-            "speaker": "B",
-            "channel": null
-        },
-        {
-            "text": "Okay, wenn du es so beschreibst, dann klingt das eigentlich für mich wie ein architecture Decision Record. Ÿousand, wir haben uns auf etwas, weil im Endeffekt ein Architecture Decision Record sagt, okay, wir haben diese Entscheidung getroffen, wir haben diesen Eintrag in die technische Vision gemacht, wir wollen jetzt von drei Clouds auf fünf Clouds und der architecture Decision Record wäre dann gesagt, wir benutzen nur noch Amazon Web Services und dann steht da die Gründe, so nach dem Motto, wegen A, wegen B, wegen C. Darum eben diese Herangehensweise.",
-            "start": 2912326,
-            "end": 2937372,
-            "confidence": 0.9042316666666663,
-            "speaker": "A",
-            "channel": null
-        },
-        {
-            "text": "Wenn du eine Vision schnell erstellen willst, schau dir die ADRs, wenn du solche hast, also die Architectural Decision Records an der letzten Zeit und versuche herauszufiltern, was Gemeinsamkeiten sind und warum wir genauso entschieden haben. Komplett richtig. Also wenn du das schon hast, kannst du es natürlich verwenden. Und das ist eigentlich nur die abstrahierte Sicht auf die Dinge, um eben auch die Kommunikation mit den anderen Stakeholdern zu haben, mit den Product Leuten, dass man die auch abholt, dass man sagen kann, schaut her, das ist unsere technische Vision, so arbeiten wir, da steht Technical Tab drinnen, das ist wichtig für uns, ein neues Teammitglied, wir arbeiten so, liste das durch und du hast das Wichtigste schon. Also einfach, dass das niedergeschrieben ist, das, was in den Köpfen drin ist. Das war ja für mich auch so ein Learning damals. Für mich war ja alles klar, weil das war in meinem Kopf drin, aber das wissen die anderen nicht, was in meinem Kopf drin ist. Das wissen die Product Owner nicht, wie ich denke. Und für mich war das klar, wir gehen auf diese Sprache oder wir probieren da die beste Technologie zu finden oder was es auch ist, wir probieren die Datenbank einzusetzen, weil die gibt es schon. Für mich war das alles klar. Für Juniors ist vielleicht weniger klar, für neue Leute in der Firma ist es weniger klar, für den Product Owner ist es weniger klar. Und so schreibst du das einfach fest und es erscheint dann auch in den anderen Köpfen und ist nicht nur in deinem Kopf. Ganz abgesehen davon, dass du Bassfaktor oder sonst was bist und dann einfach vielleicht weg vom Fenster mal aus irgendeinem Grund. Und alles was, wie sagst du immer, alles was schreibt ist bickt. Alles das.",
-            "start": 2937436,
-            "end": 3022626,
-            "confidence": 0.9382862876254177,
-            "speaker": "B",
-            "channel": null
-        },
-        {
-            "text": "Wer schreibt, der bleibt.",
-            "start": 3022738,
-            "end": 3024128,
-            "confidence": 0.8642925,
-            "speaker": "A",
-            "channel": null
-        },
-        {
-            "text": "Wer schreibt, der bleibt. Genau.",
-            "start": 3024274,
-            "end": 3026036,
-            "confidence": 0.8928939999999999,
-            "speaker": "B",
-            "channel": null
-        },
-        {
-            "text": "Ja gut, aber ich meine das Thema over communication, das ist generell etwas, woran man arbeiten muss. Nur weil du etwa Informationen hast, darfst du nicht annehmen, dass die Informationen jeder hat. Aber ich habe jetzt natürlich die ganze Zeit böse Fragen gestellt und ich bin ja auch eigentlich bei dir. Ja, also ich denke z.B. so ein Regelwerk wie wie Google es hat, wir haben ein paar Chor Sprachen. In diesen core Sprachen bieten wir alle Libraries an, um mit allen internen Systemen zu interagieren. Logging, Observability und so weiter. Falls ihr eine neue Programmiersprache, die nicht zum Teil der Core Sprachen gehört, dann müsst ihr euch um diese Libraries selbst kümmern, wenn ihr etwas in Produktion packen müsst. Oder du sagtest auch schon das Beispiel, mindestens drei Leute innerhalb der Firma oder des Teams müssen das supporten oder müssen das schreiben können oder ähnliches und den Bus Factor zu vermeiden, sowas finde ich natürlich grandios, sollte aber dann nicht religiös betrieben werden, sollte immer die Art von challenging sein, weil du sagtest auch, ein Manifesto ist in Stein gemeißelt vorhin, da bin ich ganz anderer Meinung.",
-            "start": 3026228,
-            "end": 3086966,
-            "confidence": 0.8985410638297868,
-            "speaker": "A",
-            "channel": null
-        },
-        {
-            "text": "Und deswegen, also wenn du, wenn du ein Manifesto in der Firma hast, sollte das auf keinen Fall in Stein gemeißelt sein. Es sollte auch genau so drinstehen. Reviews und immer wieder hinterfragen sollte natürlich auch irgendwie ein Prozess sein, wie schnell man was ändern kann. Also es sollte natürlich nicht so sein, dass das ein öffentliches Repo ist, wo jeder einfach Edit Rechte hat und wenn mir was nicht passt, dann schreibe ich das jetzt so, um schon ein Prozess dahinter liegen, dass man es einmal oder zweimal im Jahr macht und Anpassungen vornimmt und vielleicht innerhalb von einem Workshop oder sowas einfach dann bespricht oder dieses Gremium.",
-            "start": 3087038,
-            "end": 3118194,
-            "confidence": 0.9162288073394494,
-            "speaker": "B",
-            "channel": null
-        },
-        {
-            "text": "Und deswegen habe ich so ein mega Problem mit diesem Wort technische Vision, weil für mich hat das so einen Hang von Hacker News Driven Development. Die IT Erteilung ist jetzt gegen die Produktabteilung und wollen ihren Code immer zum perfekten Code machen. Für mich hat das einen automatischen Touch von Over Engineering, beziehungsweise eine sehr starke Gefahr dahingehend. Und weil das ist so ÿousand, die IT Abteilung macht ihre eigene, kocht ihre eigene Suppe und ich versuche seit Jahr und Tag aus dieser Kultur herauszukommen, dass es nicht Aß versus Sam ist, dass wir eine Symbiose reden und ich bin kein Berater, du bist Berater, aber dass wir zusammenarbeiten und dass, sorry, Softwareentwicklung ein Mittel zum Zweck ist. Denn wenn das Produkt besser mit Zettel und Stift gemacht werden kann, dann lass uns das tun. Aber Softwareentwicklung ist nur dafür da, damit wir alle erfolgreich arbeiten können und auch mehr Geld machen in einer profitorientierten Gesellschaft oder bei einem Non Profit, bei SEA Shepard, dass wir, dass wir die Meere mehr beschützen. IT ist nicht, die Fische haben nichts von, IT ist das Mittel zum Zweck in diesem, in diesem Sea Shepherd Beispiel. Und deswegen habe ich so das Problem mit technischen Visionen, dass das dahin geht, wohingegen ich mit Architecture Decision Records oder ähnliches, ich sag mal iterativen ah, wir schreiben jetzt drei Programmiersprachen, weiß ich nicht, JavaScript im Frontend, Java im Backend und so weiter, dass man das Stück für Stück macht. Und das hört sich jetzt nach einem Big Bang hier an. Ich setze mich drei Monate in einen Meetingraum, schlage mir die Köpfe ein und komme dann mit einem Dokument raus. Das ist für mich die negativere Assoziation. Ich sage nicht, dass der Grundgedanke nicht.",
-            "start": 3118282,
-            "end": 3215918,
-            "confidence": 0.9015945172413786,
-            "speaker": "A",
-            "channel": null
-        },
-        {
-            "text": "Schlecht ist, also ist ein guter Punkt. Und wie gesagt, jeder versteht zweitausendein das Wort auch anders. Du hängst dich jetzt auf der Vision auf. Ich sage halt Manifesto ist mir zu statisch. Aber ich glaube ganz im Gegenteil, dass eine technische Vision eben den Wildwuchs verhindert, weil du eben reinschreibst, dass du den Wildwuchs verhinderst und wie du Entscheidungen triffst und was eben dein Stack ist und was üblich ist. Und es stimmt schon, die Symbiose und die Zusammenarbeit sollte da sein. Und das ist auch wichtig in dem Team. Aber es ist ja auch interessant, dass ich z.B. von Product Seite oft gehört habe, was ist denn eure technische Vision? Habt ihr keine technische Vision? Habt ihr kein Dokument? Oder von der technischen Seite, was? Wir haben auf der Product Seite klare Vorstellungen. Was, was habt ihr auf der technischen Seite? Und das war ja auch ein Entgegenkommen. Es sollte ja auch ein Miteinander sein, dass beide, wir wissen ja auch über die Product Vision Roadmap, wie du es auch immer nennst oder was es ist, wir wissen ja Bescheid und sind auch involviert und gleich sollte es natürlich mit der technischen Vision auch sein, dass die Product Leute oder der CEO genauso involviert ist in die technische Vision vom CTO. Und man braucht halt auch langfristige Planung. Und du kannst natürlich auch effizienter dann entscheiden, wenn du so eine Hilfestellung hast. Weil wenn du bei jedem Architectural Decision Record wieder neu entscheiden musst, alles wieder neu aufrollen musst, dann ist es ja auch nicht effizient. Also wenn du die Informationen hast, die das ermöglichen, dass du schneller entscheiden kannst und die auch ein bisschen in die Zukunft planen, ist es meiner Meinung nach sehr wichtig, weil du kannst nicht immer nur akut alles, was reinkommt, entscheide ich jetzt. Du musst dir irgendwie eine Planung auch machen. Du musst dir Ressourcenplanung machen, du machst Planungen für die Zukunft. Also warum machst du es nicht auch auf der technischen Seite dann? Es gibt ja ganz oft diese diese Mission Statements, die immer so wischiwaschi finde. Wir sind die tech Abteilung, die unser Produkt voranbringt und die beste Technologie für unser Produkt findet. Wenn eine Mission oder auch technische Vision, egal wie du es nennst, nur aus diesem Begriff besteht und du kannst es auf jede x beliebige Firma stülpen und auf jedes Startup, dann ist sie nicht richtig. Es muss unique sein für die Firma und wir finden die beste Technologie für unser Produkt ist nicht unique für die Firma. Also du musst da tiefer gehen und tiefer runtergehen, mehr herausarbeiten und das aber auch zukunftsorientiert. Und das ist meiner Meinung nach die Aufgabe von Technical Leadership, weil sonst bist du nur jemand, der Tickets bearbeitet, die da gerade reinkommen.",
-            "start": 3215934,
-            "end": 3357966,
-            "confidence": 0.930009609544468,
-            "speaker": "B",
-            "channel": null
-        },
-        {
-            "text": "Nee, nee, das ist, das ist klar. Du solltest schon ein bisschen in Zukunft gucken und du solltest nicht von anderen getrieben werden und du solltest dir deine eigene Straße bauen. Das ist alles richtig. Und da bin ich auch bei dir.",
-            "start": 3358038,
-            "end": 3367158,
-            "confidence": 0.9191883333333334,
-            "speaker": "A",
-            "channel": null
-        },
-        {
-            "text": "Doch Straße planen, nicht Straße bauen.",
-            "start": 3367254,
-            "end": 3369798,
-            "confidence": 0.6949633333333334,
-            "speaker": "B",
-            "channel": null
-        },
-        {
-            "text": "Ja, ich bin eher so der Macher anstatt der Brabbelkopf, so wie du. Aber ist eine andere Geschichte. Da kommen wir glaube ich, aus unseren Stereotypen nicht raus. Doch, für mich klingt halt so eine technische Vision, dass die auch den Hang zur Premature Optimization hat. Also nach dem Motto ich entscheide jetzt etwas, was vielleicht noch nie als Frage aufkam. Das kann gut sein, kann schlecht sein, weiß ich nicht. Ich verfolge, ich verstehe deinen Punkt und ich denke, wir sollten es auch machen bei den Elementen, die wirklich kontinuierlich aufkommen. Einfach nur um.",
-            "start": 3369934,
-            "end": 3400544,
-            "confidence": 0.8931262105263156,
-            "speaker": "A",
-            "channel": null
-        },
-        {
-            "text": "Also ich verstehe schon dein Problem auch mit dem Wort Vision, weil es klingt halt ich mache etwas, was noch nie da gewesen ist, eine neue Technologie, die es noch nie gab, wenn ich jetzt das so sehe. Aber das ist ja bei der Produktvision meistens auch nicht so ÿousand, irgendwas an sich, was noch nie da gewesen ist, sondern nur in Kombination für mich, wenn ihr gewisse Dinge zusammen tut, dann dieses Produkt ist unique. Und auf der technischen Seite ist es im Prinzip das gleiche. Kombiniere bestehende Technologien oder auch neue, je nachdem, wie viel Innovation ich reinbringen will, um dann das perfekte Produkt zu bauen. Also die Grundidee ist natürlich schon die richtige, aber ich kann natürlich verstehen, woher das Problem mit dem Boat Vision kommt.",
-            "start": 3400592,
-            "end": 3442570,
-            "confidence": 0.9152403100775192,
-            "speaker": "B",
-            "channel": null
-        },
-        {
-            "text": "Das Wort Vision zeichnet halt aus, dass es so eine Art großes Arbeitspaket mit sich schleppt.",
-            "start": 3442670,
-            "end": 3448802,
-            "confidence": 0.946755,
-            "speaker": "A",
-            "channel": null
-        },
-        {
-            "text": "Man kann auch auf die Duden Definition runtergehen oder keine Ahnung, ob du Duden das so definiert, aber ich definiere Vision eigentlich so, dass du ein Bild zeichnest, wie es in ein paar Jahren sein soll. Und das hat nichts damit zu tun, dass das, was nicht da, noch nie da gewesen ist, ist, sondern die Vision ist, wie stelle ich mir die Zukunft vor? Wo bin ich als Tech Team in ein paar Jahren? Und das ist die technische Vision und nicht was kann ich schaffen, was noch nie da gewesen ist? Also ich verstehe schon, Vision wird auch oft so verwendet. Ich habe eine Vision vom bedingungslosen Grundeinkommen. Das gab es noch nie, aber es kann natürlich auch einfach sein. Meine Vision ist, dass ich persönlich mit meinen Zielen in drei Jahren irgendwo bin. Nennt es Ziele von mir aus.",
-            "start": 3448906,
-            "end": 3490038,
-            "confidence": 0.932708169014085,
-            "speaker": "B",
-            "channel": null
-        },
-        {
-            "text": "Ich finde das schön, dass du einen One Liner am Ende der Podcast Episode raushaust, was uns 1 Stunde Hörerlebnis erspart hätte. Wolfgang, vielen lieben Dank, dass wir etwas über die technische Vision streiten durften. Und ich finde das toll, dass wir seit langem mal wieder ein Thema haben, wo wir nicht einer Meinung sind, beziehungsweise nicht derselben Herangehensweise. Aber es ist natürlich auch ein großes Arbeitspaket für Technical Leadership, was jede und jeder von euch, der in einer technischen Leadership Position ist, auch mal angehen sollte. Und wenn ihr mehr zu dieser technischen Vision diskutieren wollt, kommt mal in die Discord Community. Ich denke, dass diverse Leute da auch eine sehr starke Meinung haben, die hoffentlich auf meiner Seite ist und nicht auf Wolfgangs Seite, weil hier ist es eine As versus dem Geschichte.",
-            "start": 3490134,
-            "end": 3536030,
-            "confidence": 0.920011111111111,
-            "speaker": "A",
-            "channel": null
-        },
-        {
-            "text": "Ich lass dir deine Hoffnung, deine Vision, dass wir solche Leute dann in Discord haben.",
-            "start": 3536370,
-            "end": 3540986,
-            "confidence": 0.8860006666666665,
-            "speaker": "B",
-            "channel": null
-        },
-        {
-            "text": "Ich hoffe, ihr müsst nicht zum Arzt, weil ihr Visionen habt, sondern ich hoffe, ihr habt nur eine technische Vision singular. Und wenn nicht, dann sprecht doch mal mit eurer vorgesetzten Vorgesetzten darüber oder schreibt dem CTO doch vielleicht mal eine e Mail, was sie oder er darüber denkt und ob man dies nicht mal als kleines Zeitprojekt innerhalb der Firma starten sollte. Denn im Endeffekt stimme ich ja dem Wolfgang zu, man braucht eine Art Regelwerk, weil sonst streitet man sich konstant bei jeder kleinen Entscheidung, weil jeder hat ja Meinungen und das ist auch gut. Also ein bisschen Guidance sollte schon da sein.",
-            "start": 3541058,
-            "end": 3575958,
-            "confidence": 0.9446215238095236,
-            "speaker": "A",
-            "channel": null
-        },
-        {
-            "text": "Was da einfach noch wichtig ist, weil du jetzt gesagt hast, mit dem CTO sprechen, meiner Meinung nach, das kann man auch im Team starten, ohne es mit irgendwem abgeklärt zu haben. Wenn ich für mein Team als Teamlead eine technische Vision starte, für mein zwei Personen Team, einfach machen. Das ist ein Dokument, das kann mir niemand verbieten, sein Dokument. Was teile ich mit meinen Stakeholdern? Diskutiert es natürlich mit allen Beteiligten, aber ich brauche da jetzt eigentlich niemanden fragen oder so. Das ist einfach ein technisches Dokument, was man dann mal in Umlauf bringen kann, in dem Vorgesetzten der Vorgesetzten schicken kann und einfach mal loslegen.",
-            "start": 3576094,
-            "end": 3608006,
-            "confidence": 0.9146064814814813,
-            "speaker": "B",
-            "channel": null
-        },
-        {
-            "text": "Prinzipiell bin ich da bei dir. Dennoch habe ich schon sehr, sehr viele Teams gesehen, die zweitausendein nur ihr eigenes Süppchen kochen, um von anderen nicht behindert zu werden. Und wenn ihr in einer technischen Leadership Position seid, möchte ich euch eine Sache mitgeben. Eure Peers, also auf eurem technischen Leadership Level, sollten eure besten Freunde sein. Ich rede jetzt nicht darüber, Freunde auf der Arbeit etc. Aber wenn ihr mit denen nicht klarkommt, werdet ihr seltenst größere Themen zusammen pushen können. Und Meines Erachtens nach könnt ihr innerhalb des Teams natürlich sowas treiben und als Beispiel vorangehen. Dennoch solltet ihr eure eurer technischen Peers sehr früh mit einbinden, weil sonst geht es in der As versus M Geschichte. Sonst kümmert ihr euch nur um euren kleinen Teich und meines Erachtens nach kann das nicht zum Erfolg führen. Sind wir durch für heute, Wolfgang?",
-            "start": 3608078,
-            "end": 3650672,
-            "confidence": 0.8912526388888886,
-            "speaker": "A",
-            "channel": null
-        },
-        {
-            "text": "Ich bin vor allem durchgeschwitzt bei der aktuellen Hitzewelle, aber ist ein anderes Thema.",
-            "start": 3650736,
-            "end": 3654816,
-            "confidence": 0.9071278571428572,
-            "speaker": "B",
-            "channel": null
-        },
-        {
-            "text": "Dann entlassen wir euch aus diesem Podcast. Vielen Dank fürs Zuhören, wenn ihr es bis hierhin geschafft habt und bis zur nächsten Episode. Bye bye.",
-            "start": 3654888,
-            "end": 3661912,
-            "confidence": 0.931684,
-            "speaker": "A",
-            "channel": null
-        },
-        {
-            "text": "Ciao.",
-            "start": 3661976,
-            "end": 3662160,
-            "confidence": 0.54439,
-            "speaker": "B",
-            "channel": null
-        }
-    ],
-    "confidence": 0.916576404142373,
-    "audio_duration": 3669,
-    "webhook_status_code": null,
-    "webhook_auth": false,
-    "summary": null,
-    "auto_highlights_result": null,
-    "content_safety_labels": null,
-    "chapters": null,
-    "sentiment_analysis_results": null,
-    "entities": null
+  "language_code": "de",
+  "audio_url": "https://cloud.inlupus.at/s/wLazHRrwip6XLsi/download/ep_techn_vision.mp3",
+  "punctuate": true,
+  "format_text": true,
+  "dual_channel": false,
+  "webhook_url": null,
+  "webhook_auth_header_name": null,
+  "webhook_auth_header_value": null,
+  "audio_start_from": null,
+  "audio_end_at": null,
+  "word_boost": [],
+  "boost_param": null,
+  "filter_profanity": false,
+  "redact_pii": false,
+  "redact_pii_audio": false,
+  "redact_pii_audio_quality": null,
+  "redact_pii_policies": null,
+  "redact_pii_sub": null,
+  "speaker_labels": true,
+  "speakers_expected": 2,
+  "content_safety": false,
+  "content_safety_confidence": null,
+  "iab_categories": false,
+  "custom_spelling": null,
+  "disfluencies": false,
+  "sentiment_analysis": false,
+  "auto_chapters": false,
+  "entity_detection": false,
+  "summarization": false,
+  "summary_model": null,
+  "summary_type": null,
+  "auto_highlights": false,
+  "language_detection": false,
+  "speech_threshold": null,
+  "speech_model": null,
+  "id": "953b7c12-74a3-4616-9cb8-e3d9cf26b474",
+  "status": "completed",
+  "error": null,
+  "utterances": [
+    {
+      "text": "Herzlich willkommen zu einer neuen Episode vom Engineering Kiosk Podcast. Klare Regeln, eine klare Richtung, in die dein Team läuft, sind essentiell, um schnelle Entscheidungen zu treffen und zwar ganz ohne Streit. Jedes Software Team hat zum Ziel, sich schnell zu bewegen, dynamisch und agil zu sein. Doch dafür sind ein paar Leitlinien notwendig und die Richtung muss für alle klar sein. Doch wie macht man das? Das Stichwort der h heißt technische Vision. Wir klären, was das für eine Vision ist, wo der Unterschied zur Produktvision ist, warum diese Vision auf Team oder auf Firmenebene gesetzt werden kann, wer diese eigentlich setzen sollte, untermalen das Ganze mit ein paar griffigen Beispielen, setzen verwandte Hilfsmittel wie das Tech Radar oder ein Engineering Manifesto in Relation und geben euch eine klare Anleitung, wie man eine technische Vision erstellt. Wir springen rein und los geht's. Dieser Podcast bezeichnet sich als deutschsprachiger Software Engineering Podcast. Doch unser Motto ist eigentlich wir glauben zwar, Technik ist kompliziert, aber in der Regel ein gelöstes Problem. Und deswegen beschäftigen wir uns unter anderem auch mit den ganzen Themen drumherum. Und ich habe in letzter Zeit mal wieder richtig, richtig Bock, mich in diverse Themen einzunerden, also richtig technisch zu bleiben. Und dann kommt mein Podcast Chorus immer um die Ecke, weil er ist vom Beruf Berater oder wie er selbst sagt Consultant. Und somit kommt er natürlich nur mit solchen schwammigen Themen um die Ecke, mit Berater Themen, mit Sachen, da wohl nicht binär, dass es richtig oder dass es falsch gibt. Und deswegen übergebe ich das Wort an unseren Podcast Berater Dr. Wolfgang Gassler. Welches Thema hast du uns heute mitgebracht?",
+      "start": 3760,
+      "end": 108254,
+      "confidence": 0.925958043478261,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Da muss ich zuerst noch einhaken. Du hast ja kürzlich auf eine LinkedIn Message von mir geantwortet, also auf dem Post, wo ich gepostet habe, dass ich in einem anderen Podcast war. Und darunter hast du geschrieben, du gehst mir jetzt fremd und wir haben doch so viel tolle Leadership Themen über technische technical Leadership und vermisst du die nicht? Und darum habe ich heute mal ein technical Leadership Thema, damit ich mich wieder wohlfühle hier zu Hause in unserem Podcast.",
+      "start": 108382,
+      "end": 135842,
+      "confidence": 0.8995641975308641,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Content Creator müssen sich gegenseitig unterstützen. Zweitausendein. Ja und es gibt auch in der Musikbranche, zumindest in der düsseldorfer Szene, gab es immer lang einen Spruch support your local underground. Und du bist ja sozusagen mein local underground, deswegen supporte ich dich natürlich, wo ich nur kann. Und jetzt mal unabhängig davon, ob ich dann jetzt pro Leadership Themen bin oder.",
+      "start": 136026,
+      "end": 157112,
+      "confidence": 0.9187544262295083,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Nicht oder du ein Diss auf LinkedIn machst, aber eigentlich ist es ein sehr technisches Thema und zwar geht es um eine technische Vision. Zweitausendein, wirf mal dieses Wort in den Raum. Wir können dann noch klären, was das eigentlich ist, weil das ist ja sehr umstritten und du hast da auch schon den Kopf geschüttelt, wie ich das Thema das erste Mal vorgeschlagen habe. Aber eigentlich ist es aus einem sehr praktischen Umfeld herausgekommen, weil wir haben ja schon öfters darüber gesprochen, dass es als Tech Lead auch sehr wichtig ist, was zu bekommen, weil das vergisst man oft. Feedback.",
+      "start": 157136,
+      "end": 187990,
+      "confidence": 0.9124412871287128,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Logisch.",
+      "start": 188110,
+      "end": 188694,
+      "confidence": 0.99369,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Und ich habe das natürlich früher immer gemacht. Und ein kritischer Punkt, den ich immer zurückbekommen habe von meinem Team als Feedback war, es fehlt die technische Vision. Es ist nicht so klar, wo wir hinlaufen. Diese technische Vision fällt und wir hatten eine Produktvision. Wir hatten auch mit dem Tag Team gemeinsam Roadmap Strategies. Wir hatten alles, aber alles. Aber irgendwo hatte das Team und teilweise auch Product Leute, also unser gesamter Lead vom vom gesamten Department hat es auch immer wieder erwähnt. Irgendwo wo ist denn diese technische Vision? Und für mich war das immer sehr unklar, weil für mich war das irgendwie logisch, wo wir hinlaufen. Wir haben eine Produktvision und wir als Techniker unterstützen diese Produktvision und bauen an dieser Produktvision und wir probieren die beste Technologie zu finden, um diese Produktvision zu realisieren. Und wir waren sehr innovatives Team, das heißt, wir haben auch sehr viele Greenfield Projects gehabt. Und da habe ich mir gedacht, okay, warum brauchen wir irgendwie eine Vision oder eine oder irgendwelche Guidelines, die weiterhelfen? Also mir war das nicht so ganz klar, woher dieses Problem gekommen ist und was die Leute für ein Problem hatten.",
+      "start": 188782,
+      "end": 256404,
+      "confidence": 0.9161937435897437,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Ich habe erst mal das erste Problem, das ganze Buzzword Bingo, was du jetzt wieder als Consultant hier droppst. Technische Vision, Produktvision und Roadmap. Hilf mir noch mal ein bisschen auf die Sprünge, was eine technische Vision ist und wie sich das zur Produktvision unterscheidet. Denn in vielen Firmen ist es ja so, dass Technologie selbst nicht der Innovator ist, sondern das Mittel, wie wir das Produkt umsetzen, die Produktvision. Also seltenst wird ja mit der Technologie selbst Geld verdient.",
+      "start": 316492,
+      "end": 347006,
+      "confidence": 0.9106621250000005,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Wir hatten ja sogar eine eigene Episode mal zu Mission und Vision. Aber wenn wir mal auf ein ganz abstraktes Level steigen, dann ist für mich eigentlich eine Vision dafür da, um Entscheidungen schneller treffen zu können. Das heißt, ich würde es gar nicht so genau definieren, was macht eine Vision oder auch eine Strategie aus, sondern das sind Dokumente. Das ist irgendwas niedergeschriebenes, das mir im tagtäglichen Leben hilft zu entscheiden. Wenn ich z.B. zwei Projekte habe, Projekt eins und Projekt zwei und ich muss priorisieren, weil ich nur Zeit habe für ein Projekt, dann sollte mir die Vision in irgendeiner Form weiterhelfen, dass ich sage, okay, um unsere Vision zu erreichen, wir wollen in fünf Jahren die beste Software XY zu sein am Markt, um irgendwas zu lösen, keine Ahnung, was auch immer. Dann zweitausendein sollte mit dir in irgendeiner Form helfen, damit ich ein Projekt priorisieren kann, also damit die Entscheidungen schneller treffen kann. Das ist für mich eine sinnvolle Vision und da geht es gar nicht darum, ob es eine technische Vision ist oder eine Product Vision. Und die klassische Vision ist meistens product orientiert, weil man überlegt sich natürlich, wo will man hin? Und wie du richtig sagst, die Technik ist dann nun Tool dazu. Aber es gibt natürlich auch auf der technischen Seite, wir haben tagtäglich Diskussionen in TechTeams sollte uns eine technische Vision einfach weiterhelfen, eine Entscheidung zu treffen. Wenn wir eine Diskussion haben im Team, sollen wir jetzt Python oder Go verwenden, dann sollte uns die technische Vision im Idealfall weiterhelfen, diese Entscheidung schneller zu treffen, als wenn wir sie nicht hätten.",
+      "start": 347078,
+      "end": 432686,
+      "confidence": 0.9221210000000004,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Du hast gerade schon Python und Go genannt. Gib mir mal zwei, drei Beispiele, was eine technische Vision sein kann.",
+      "start": 432718,
+      "end": 438830,
+      "confidence": 0.9198300000000001,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Es ist extrem schwierig zu verallgemeinern, weil es natürlich immer davon abhängt, was du für Probleme im Team hast und was du löst und auf welcher Ebene dein Team ist. Also es kann ja eine technische Vision auch auf firmenebene Ebene geben, ganz ganz oben, wie eine Vision von der Firma und die wird natürlich ganz andere Dinge beschreiben. Die wird jetzt nicht beschreiben, wie du in deinem Team in irgendeiner Form arbeitest, sondern die wird vielleicht beschreiben eben welche Sprachen sind unsere Hauptsprachen firmenweit. Also wir verwenden go und Python und alles andere verwenden wir nicht oder wir verwenden nur andere Sprachen. Gibt es ja auch diese Regel z.B. Öfters die, die manche Firmen haben, wenn wir mindestens drei Programmierer innen haben, die diese Sprache können. Also so eigentlich ein Regelwerk, wie wir zusammenarbeiten. Oder wir verwenden immer die Google Cloud oder wir verwenden immer AWS oder wir probieren alles möglichst in unserem Datacenter zu hosten und keine Cloud zu verwenden. Also einfach, dass man grundsätzliche Regeln hat, wie man arbeitet oder vielleicht auch wo man hin will. Wir haben zu viele Clouds, wir wollen nur auf eine Cloud oder wir wollen überhaupt ins Data Center eine Vision. Wir haben zwar jetzt alles kreuz und quer self hosted in unserem Data Center in der Cloud, aber langfristig wollen wir auf eine Cloud oder in unser Datacenter oder wir wollen alles zurück migrieren auf Osgrass. Wir wollen mongolos werden langfristig. Also langfristige Ziele, die man in der Zukunft erreichen kann, gehören auch in die Vision. Das heißt nicht, dass nur diese Punkte drin sind, aber dieser Bereich ähnelt am ehesten einer Produktvision, aber eben auf der technischen Seite. Aber es kann dann natürlich dann auch ganz allgemeine Dinge drinstehen, wie was macht unser technisches Team aus, unsere technische Abteilung, egal wieder auf welcher Ebene wir das spielen, auf Company Ebene oder nur auf unserem kleinen Team. Wir können das ja auch für unser kleines Firmenmann und Frau Team machen. Was macht unser Team aus? Wo sind wir angesiedelt in der Firma? Was ist so unser One Liner? Was machen wir, was bewegen wir eigentlich?",
+      "start": 438950,
+      "end": 559512,
+      "confidence": 0.9132498587570612,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Aber ist das Wort Vision nicht Zukunft, zukunftsgerichtet? Also ich meine, ich habe eine Vision, wie mein Garten mal aussehen soll. Und ich habe diese Vision, weil er noch nicht so aussieht, wie es in meiner Vision, wie ich mir das so vorstelle. Und jetzt sagst du, dass eine Vision ja unter anderem auch ein Regelwerk ist, was wir tun und was wir nicht tun. Wir nutzen jetzt nur Amazon Web Services und nicht Microsoft Azure. Wie passt das zusammen?",
+      "start": 559616,
+      "end": 583612,
+      "confidence": 0.9355989999999993,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Du könntest natürlich jetzt sagen, Moment, es gibt ja ein Manifesto, was viele Firmen haben, ein technisches Manifesto und da steht dir unser Regelwerk drin. Jetzt hast du es ins Spiel gebracht. Es stimmt, manche Firmen haben ein Technical Manifesto oder ein Development Manifesto, Engineering Manifesto, nennst wie du es willst. Und dort steht unser Regelwerk drin. Wie arbeiten wir zusammen? Wir machen immer Code Reviews. Wir haben immer ein vier Augen Prinzip. Wenn wir keinen Code Review machen, dann machen wir Bare Programming, was es auch immer ist, zweitausendein. Wenn du so ein Manifesto hast, dann hast du dort das Regelwerk drin, Fair Point, alles in Ordnung. Dann brauchst du in der Vision das auf keinen Fall drin haben. Oder vielleicht hast du so viel in deinem Manifesto drin, dass das eigentlich deine technische Vision ist und du brauchst jetzt keine eigene technische Vision. Also da gibt es natürlich verschiedene Begrifflichkeiten für sehr ähnliche Themen. Also da hast du natürlich jetzt, du kannst es nicht im Duden nachschlagen, okay, das Manifest, du darfst nur das beinhalten und die technische Vision nur das. Für mich ist ein Manifesto eher ein Regelwerk, da hast du recht. Und eine Vision hat halt auch andere Elemente drin, die vor allem die Zukunft betreffen. Aber die wenigsten Teams oder auch Firmen, muss man dazu sagen, können sich das leisten oder wollen sich es auch leisten. Oder für dieses vielleicht zu komplex, fünf verschiedene Dokumente zu haben, wo das ganz hart getrennt ist. Das ist unser Manifesto, das ist unsere technische Vision, das ist unsere Strategie, nochmal eigens aufgestellt. Wobei ich würde sagen, Die Strategie kommt immer aus der Vision heraus. Also wenn ich eine Vision habe, dann mache ich eine Strategie, eine Roadmap, wie man das dann auch immer nennt, wo dann die einzelnen Projekte festgelegt werden. Also eine Vision sollte schon was längerfristiges sein. Meiner Meinung nach ist ein Manifesto noch was längerfristiges, wenn man so ans agile Manifesto denkt, das schreibt man einmal nieder und dann ist es festgebrannt. Oder die 12 Principles, wenn es um Prinzipien geht, ist ja auch so ein Manifesto, das schreibt man einmal nieder.",
+      "start": 583756,
+      "end": 696384,
+      "confidence": 0.9073961904761902,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Ÿousand.",
+      "start": 696472,
+      "end": 696650,
+      "confidence": 0.73399,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Also für mich hat da hat das Wort Manifesto eher so einen Charakter, dass das für die Ewigkeit ist und wenig abgeändert wird. Ist natürlich nicht so, kann man abändern, soll man auch abändern, im Idealfall in der Firma. Aber für mich persönlich hat das Wort irgendwie so was langfristiges. Und da finde ich schön, eine Vision zu haben, die auch langfristig ist, aber die man eher ändern kann. Aber wie gesagt, wie du es nennst, ist im Endeffekt egal. Es soll ein Dokument sein, was dir im tagtäglichen Leben weiterhilft, Entscheidungen zu treffen und auch andere Vorteile hat, wenn du mit deinen Stakeholdern diskutierst, kommunizierst, dass du einfach ein Tool an der Hand hast, was dir als Techniker weiterhilft, was sonst nur Product hat. Weil Product hat die Roadmap, Product hat Vision und Mission und Product hat immer ein Dokument in der Hand und kann sagen, ja, aber wir müssen das machen und die Techniker haben da nie was und sagen, ja, wir sind eh nur die Techniker, die dabei steuern.",
+      "start": 696680,
+      "end": 746222,
+      "confidence": 0.9060730232558142,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Ich finde es spannend, dass du sagst, dass ein Manifesto einmal geschrieben wird und nicht geändert wird. Also ich meine, wir hauen das ja jetzt hier nicht in Stein zweitausendein. Und wenn du dir mal Manifestos von Tech Firmen anguckst, wie z.b. das Reliability Manifesto von Delivery Hero, das verlinken wir auch in den Show Notes, da gibt es zwei Metaregeln ganz am Anfang des Dokuments und eine Metaregel ist, wir validieren die Regeln in diesem Dokument zweimal pro Jahr. Also es ist eine Regel, dass das hier kein festes Dokument ist, sondern dass wir das kontinuierlich als Living Dokument nehmen. Deswegen bin ich sehr erstaunt, dass du sagst, okay, ein Manifesto ist etwas in Stein gemeißelt.",
+      "start": 746286,
+      "end": 785222,
+      "confidence": 0.9106978632478636,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Noch einmal, für mich ist das Wort, ich empfinde das Wort eher als was Fixes. Da gibt es keine Definition und da kann man sich jetzt drüber streiten, was man unter Begrifflichkeiten versteht, wenn du halt so das agile Manifesto ansiehst. Das agile Manifesto wurde nie geändert und für mich ist es halt eher so in Stein gemeißelt. Aber das ist mein persönliches Gefühl. Ich würde es einfach anders nennen, weil für mich halt Manifesto eher so statisch klingt, aber ist eine Ansichtssache. Und was du im Endeffekt drüber schreibst, ist komplett egal. Schreib Prinzip ist drüber, Engineering Principles, unsere Deck Vision, was es auch immer ist. Wie gesagt, mir geht es eher darum, dass man sich in der technischen Vision konzentriert auf das, was man macht, wie man es macht, natürlich auch, warum man das macht, aber das Warum steht meistens dann eher in der Produktvision üblicherweise, wobei es natürlich auch technische Weiß geben kann auf der technischen Ebene. Warum verwendet man nur eine Cloud? Also das macht natürlich schon Sinn, wenn man das reinschreibt, um unsere Effizienz zu erhöhen oder um die Fluidität, Fluidität, wie nennt sich das Wort? Fluid? Egal. Um das Wechseln zwischen den Teams leichter zu machen, haben wir einfach weniger Programmiersprachen und erlauben keinen Wildwuchs. Das ist ja auch ein gewisses why, warum wir sowas machen. Aber üblicherweise ist die technische Vision connected mit der Produktvision und konzentriert sich dann eben auf das, was machen wir und wie machen wir das auf der technischen Seite, damit wir technischen Leute auch etwas in der Hand haben, das uns guided und wo wir uns darauf geeinigt haben als Tech Team.",
+      "start": 785286,
+      "end": 874446,
+      "confidence": 0.9244830656934308,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Jetzt hattest du schon gesagt, als technische Vision, wir wollen weg von mongodb und hin zu unserem Core Datenbank Management System.",
+      "start": 874518,
+      "end": 881534,
+      "confidence": 0.9119114285714286,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "PostgreSQL, was natürlich rein random jetzt gewählt ist. Hat überhaupt, habe natürlich überhaupt nichts gegen.",
+      "start": 881582,
+      "end": 886790,
+      "confidence": 0.7794286666666667,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Warum ist das eine technische Vision und kein Projekt? Weil das klingt für mich relativ klar nach Ÿousand, mehr oder weniger eine Arbeitsanweisung und also eine etwas, was ich in Jira ausarbeite, was ist dafür notwendig und dann auch die Teams verteile und dann einfach mache. Und als Produktvision hört sich das so an, ah, okay, immer wenn ich an etwas anfasse, was auf mongodb ist, dann füge ich Zusatzarbeit hinzu, um das nach Post Creo SQL umzuziehen. Und das hört sich eher so nach so einem nice to have an. Und dass diese Migration, weil im Endeffekt ist es ja eine Migration, du möchtest ja MongoDB raushaben, dann nie wirklich aktiv betrieben wird bzw. Erreicht wird.",
+      "start": 886870,
+      "end": 928012,
+      "confidence": 0.9202487179487177,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Wenn deine Vorstellung von dem Projekt ist, dass ein Projekt sich über vier Jahre ziehen kann, puh, dann ja, ist ein hartes Projekt, ein Projekt, das nie fertiggestellt wird.",
+      "start": 928076,
+      "end": 938668,
+      "confidence": 0.8808920689655174,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Den Zeitraum hattest du bisher noch nicht genannt. Du sagtest langfristig. Was langfristig für dich heißt, weiß ich nicht.",
+      "start": 938804,
+      "end": 943492,
+      "confidence": 0.9047031578947367,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Aber wenn du jetzt auf MongoDB umstellst oder von MongoDB wegkommst oder auf eine Cloud, ist es natürlich was zweitausendein langfristiges, was sich wahrscheinlich über Jahre zieht, wenn du jetzt mit Greenfield startest oder wenn.",
+      "start": 943596,
+      "end": 954858,
+      "confidence": 0.8858777142857145,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Du dich nicht konzentriert damit beschäftigst. Du kannst ja auch einfach sagen, okay, wir geben jetzt Gas, wir ziehen jetzt drei Leute aus drei Teams raus und die beschäftigen sich mit der Migration.",
+      "start": 954874,
+      "end": 964750,
+      "confidence": 0.9200812121212122,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Das stimmt natürlich, dieses nice to have kann ein Problem sein. Aber wenn man das wieder gleichsetzt mit der Produktvision, die Produktvision ist ja das Wichtigste, was man eigentlich überhaupt nur hat, und alle Entscheidungen richtet man in die richtige Richtung, dass man diese Produktvision erreichen kann. Wenn du das jetzt gleichsetzt mit der technischen Vision, wo drinsteht, wir wollen nur mehr ein oder primär eine Datenbank haben, oder um es genauer zu sagen, ein Datenbanksystem, weil Datenbanken hat man immer viele, dann ist es ein wichtiger Punkt. Und bei jeder Entscheidung solltest du dann genau überlegen, wie kannst du diese Vision erreichen? Macht es jetzt Sinn, vielleicht auf die Datenbank umzusteigen? Oder wenn nicht, musst du das diskutieren. Und ich glaube, das ist auch ein großer Punkt, wenn es irgendwo steht, dann musst du natürlich, wenn du dagegen arbeitest, wenn du dich jetzt bewusst entscheidest, nein, wir setzen jetzt wirklich noch auf mongodb, wo wir auf Postgres umsteigen wollten, oder wir machen jetzt noch einmal ein neues Projekt auf der Cloud, wo wir eigentlich weg wollten, dann musst du das argumentieren und wahrscheinlich diskutieren. Und wenn das nirgends stehen würde, würde das einfach durchrauschen und die Diskussion würde wahrscheinlich gar nicht stattfinden. Das heißt, du hast schon solche Blocker, würde sie nennen, die du zwar überspringen kannst, du musst nicht unbedingt folgen, aber du musst dann diskutieren und es schalten sich wahrscheinlich andere Leute ein. Und man kann sich halt nicht einfach so drüber hinwegsetzen. Das heißt, es ist schon inhärent dann in allen Entscheidungen in deiner Firma, in den Teams drin. Und so erreichst du es natürlich schon, dann auch in die richtige Richtung zu arbeiten, anstatt wenn du nur irgendwo ein Giro Ticket erstellst, wir steigen jetzt um auf eine andere Cloud, dann ist es natürlich weniger verankert, weil die Leute das nicht sehen, als wenn das in so einer gesamten Vision oder dann auch Strategie, die sich aus der Vision erstellt, wirklich die konkreten Punkte drinsteht.",
+      "start": 965530,
+      "end": 1072750,
+      "confidence": 0.9118011515151512,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Wie sieht denn die Produktvision aus, wenn ein Element der technischen Vision ist, dass wir mongodb aus unserem Stack entfernen? Weil du sagtest gerade, die technische Version richtet sich nach der Produktvision. Das bedeutet, die Produktversion muss in irgendeiner Art und Weise ein Element enthalten, wozu dann mongodb nicht contributed. Kannst du noch mal ein Beispiel nennen?",
+      "start": 1072830,
+      "end": 1091688,
+      "confidence": 0.9208929824561403,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Es kann ja auch komplett abseits der Produktstrategie sein. Also wenn ich mir jetzt bewusst auf der technischen Seite entscheide, um meinen Ablauf zu optimieren im Tag Team, dass wir nur mehr eine Datenbank haben oder das unsere Standard Datenbank ist oder das Datenbanksystem, dann muss das nicht explizit in irgendeiner Produktvision drinstehen. Also das ist ja unsere Aufgabe als technisches Team, die beste technologische Lösung zu finden. Das steht wahrscheinlich auch in der Vision da drinnen. Was sind wir eigentlich? Wir probieren die beste Technologie Lösung zu finden, die aber noch effizient ist und mit der wir arbeiten wollen. Und da bedeutet es nämlich auch, ich kann nicht auf irgendeine Hacker News Technologie setzen, sondern muss diese Datenbank verwenden, die halt schon in Verwendung ist, weil da können auch andere Leute einspringen, wenn ich im Urlaub gehe und so weiter, alles was da dran hängt. Und das steht dann natürlich nicht in der klassischen Produktvision drin, außer es hat natürlich eine Auswirkung, dass ihr dann irgendwie das Produkt besser bauen kann oder was anderes bauen kann im Produkt, was bisher nicht gegangen ist. Aber würde mal sagen, genau darum ist diese technische Vision so wichtig, weil diese technischen Punkte probiert man oft irgendwie dann so in die Produktvision reinzuschwindeln oder in irgendwelche Plannings und das hat aber doch nicht so richtig Platz und dann probiert man das irgendwie so doch aber noch irgendwie so einen Grund zu finden, dass das mit dem Produkt zusammenhängt. Und da finde ich es dann eigentlich fast sauberer, wenn man das einfach in zwei getrennten Systemen hat, die natürlich schon miteinander konkurrieren und zusammenarbeiten müssen, aber dass man das einfach getrennt aufschreibt und den langfristigen Plan eben auch auf der technischen Seite hat. Und wenn man sowas nicht bräuchte, eine technische Vision, jetzt unabhängig, ob das irgendwo steht, dann kannst du dir auch jeden CTO sparen, weil dann brauchst du keinen CTO, der irgendwelche Entscheidungen trifft, dann könnte das alles immer Product entscheiden.",
+      "start": 1091824,
+      "end": 1194760,
+      "confidence": 0.9208602735562316,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Denke ich nicht, denn ein CTO ist unter anderem dafür da, das Produkt mittels der Fachkompetenz der IT und des Software Engineerings zu enablen. Und das geht theoretisch auch ohne technische Vision, zumindest so, wie du mir die technische Vision jetzt gerade auch erklärst. Weil wenn du jetzt sagst, okay, wir packen jetzt einfach, wir wollen weg vom mongodb, aber du sagst ja auch, das muss jetzt nicht zur Product Vision Contributen, dann, wenn ich jetzt mal den Devil's Advocate spiele, bedeutet das eigentlich, du packst, wir müssen Technical Debt reduzieren in ein Dokument. Und das ist ja so ein Evergreen, weil wenn ich jetzt mongodb entferne, dann ist das Reduction of Technical Debt. Und da wissen wir alle, dass Refactoring und Technical Debt, ja, wir Engineers finden das ganz toll und ja, es ist leichter damit umzugehen, es ist aber kaum messbar und es in der Regel bei einem erfolgreichen Reduktion von Technical Debt und Refactoring hast du kein neues Feature im Produkt. Und das finde ich dann wieder schwierig, weil dann machst du Technik der Technik wegen und nicht des Businesses wegen. Ich bin Engineer bei Hard, versteh mich bitte nicht falsch und ich verstehe genau, wovon wir reden, aber es ist der konstante Kampf mit Produktmanagement und wem auch immer, das ich sag mal in monetarisierten Zahlen umzusetzen, weswegen Produktmanager sagen schon wieder Refactoring.",
+      "start": 1195220,
+      "end": 1270400,
+      "confidence": 0.9104132158590303,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Na, du hast natürlich vollkommen recht. Also das ist das allgemeine Problem mit Technical Debt und wenn Leute das nicht verstehen, obwohl man sagen muss, das ist eigentlich immer besser verständlich wird auf der ganzen Product Seite, dann wirst du halt in Zukunft gar keine Features mehr shippen, weil du nur mein riesen Chaos hast und und deine Ingenieurs nur mehr probieren, irgendwas am Laufen zu halten. Aber ich will jetzt gar nicht in den Technical Tab Diskussion reingehen, aber du hast natürlich vollkommen recht und genau dafür ist dieses Dokument auch so wichtig, weil wenn du ein Dokument hast, wo drinsteht, wo wir hinwollen, was unsere technischen Schritte sind, dass wir vielleicht auch Technik beheben, das kann auch in so einer Vision drinstehen. Es geht dann mehr wieder in Principles oder Values rein. Also wie gehen wir um mit Technical Debt? Und dann hat ein Engineer dieses Dokument in der Hand und in jeder Diskussion mit Product kannst du auf dieses Dokument verweisen. Das heißt, du gibst jetzt plötzlich den Engineers ein Dokument in die Hand, ein Werkzeug, mit dem sie argumentieren können. Sie können verweisen hey, unser CTO hat aber mit dem CEO gemeinsam, das ist abgesegnet, wir haben eine technische Vision und da steht drin, wir müssen auf diese Datenbank. Das heißt, wir dürfen jetzt in diesem Schritt Ÿousand Zusatzzeit investieren, weil wir wollen nicht mehr auf dieser alten Technologie bleiben. Und dann fällt es dem anderen Product Manager natürlich auch schwer, da dagegen zu argumentieren. Er kann natürlich und es muss ja nicht dann am Ende so sein, aber es macht für den Product Manager auch viel schwieriger, dann gutes Argument zu finden. Und wenn er eines findet, ist es ja fair, aber du bringst diese Engineers auf eine gleiche Ebene in der Diskussion. Und das ist natürlich ein super tolles Werkzeug für Verhandlungen, weil die Engineers meistens eh schlechter gestellt sind als ein Product Owner, der den ganzen Tag verhandelt und das gewöhnt ist, da mit Leuten zu diskutieren.",
+      "start": 1270560,
+      "end": 1372078,
+      "confidence": 0.9180011976047916,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Das hört sich ganz stark danach an, als erstellst du eine Aß versus Sem Kultur, weil Produkt versus Technik, dass sie also mit, wenn du schon das Wort Verhandlung nimmst, dann rollen sich bei mir schon die Zehennägel auf, weil es ist, es ist keine, es soll eine Symbiose ergeben. Ja, und wir sind hier nicht in einer sales Verhandlung.",
+      "start": 1372174,
+      "end": 1390226,
+      "confidence": 0.8824679999999999,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Das ist dieses Berater Blabla, von dem du immer redest. Wir müssen eine Symbiose eingehen und in der Realität, sind wir uns ehrlich, ist es selten so. Und alles, was du an Tools zur Verfügung hast, weil die Product Owner argumentieren ja dann auch, das ist unsere Vision, da müssen wir hin, das sind unsere Ziele und wir müssen dahin. Und darum könnt ihr jetzt kein Technik Depp beheben. Und so bringst du das auf eine gleiche Ebene. Und das ist fair ÿousand. Wie gesagt, es geht auch nicht nur um diese langfristigen Ziele in so einer technischen Vision. Es geht auch um ganz klassische, wie wir schon besprochen haben, Principles, wie wir zusammenarbeiten. Manche nennen es Values. Es steht vielleicht auch in einem Values Dokument dann schon drinnen. Aber wenn du kein Values Document für die tech Leute hast, dann hast du vielleicht eine technische Vision, wo das auch noch erwähnt ist. Wie arbeitet man zusammen? Was sind unsere Werte? Wir probieren Funktionen so und so zu benennen, wenn das so weit runtergeht in einem Ÿousand tech Team vielleicht, was sind unsere Werte, wenn wir programmieren, wie programmieren wir? Also es geht runter bis zu Style Guidelines, die natürlich nicht in einer Vision drin stehen, aber da ist dann die Grenze schon schwammig. Was steht wo? Und je nachdem, wie viele Dokumente man hat, hat man Style Guidelines und wie weit reichen die? Oder umso weiter man nach oben geht, steht es dann auch nicht mehr in Style Guidelines, wenn man z.B. probiert, immer alles mit APIs zu machen. Solche Dinge könnte man dann auch in eine technische Vision packen. Zweitausendein, wie gesagt, welche Dokumente man hat. Und das ist alles zugegebenermaßen ineinander fließend. Und je nachdem, was du wo aufschreiben willst, kannst du das natürlich in eine technische Vision, in ein Manifesto oder in unsere Engineering Values packen.",
+      "start": 1390378,
+      "end": 1488180,
+      "confidence": 0.9108862258064518,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Ich glaube, das war der Kernpunkt, den du gerade gesagt hast, dass es keine Abgrenzung gibt zwischen einem Manifesto oder aufgeschriebenen Prinzipien oder einer technischen Vision oder ähnliches. Denn die Elemente, die du genannt hattest, wir machen immer Pair Reviews oder ähnliches, das sind ja auch Manifesto Sachen. Also wie wir arbeiten und auch die Themen mit Values und Co. Kann man auch in einem Manifesto stehen. Deswegen ist das ein sehr fluider Begriff, Technical Vision.",
+      "start": 1488260,
+      "end": 1516548,
+      "confidence": 0.9240388157894737,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Du kannst es auch Manifesto nennen, aber erzähl mir mal, wie viel Tech Teams eigentlich ein Manifesto haben oder auch Firmen. Also das ist jetzt sehr wenig verbreitet und eine technische, sorry, eine klassische Product Vision ist sehr verbreitet, aber auf der technischen Seite ist es nicht sehr verbreitet. Und darum geht es mir eigentlich, dass man den Tech Teams auch nicht nur ein Tool zur Verfügung stellt, sondern auch den Prozess mal anregt, hey, denkt mal drüber nach, was macht uns als Tech Team eigentlich aus? Was bewegen wir, was wollen wir bewegen? Wo wollen wir hin? Haben wir langfristige Ziele? Es kann natürlich auch vorgegeben sein, je nachdem, aber da kommen wir eh noch gleich dazu, wie man sie erstellt. Aber dass man mal überhaupt so eine Richtung niedergeschrieben hat, wo man hingehen will. Aber da können auch Dinge drinstehen wie, wie gehen wir um mit Innovation in unserem tech Team z.B. also wirklich auf high level.",
+      "start": 1516644,
+      "end": 1566328,
+      "confidence": 0.9020910691823898,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Innovation ist ein sehr, sehr gutes Stichwort, weil du sagtest nämlich gerade, als wir über das Thema Verhandlungen und As haben, wo ich von Symbiose gesprochen habe, da sagst du, ja, wir haben aber in unserer Vision drinstehen, dass wir diese Datenbank nutzen. Und da kam mir als erstes in den Sinn, habe ich jetzt hier einen Hammer und alles ist ein Nagel, wenn ich einen Social Graph aufbauen möchte, dann ist eine relationale Datenbank jetzt eher schlecht dafür geeignet, mal als plakatives Beispiel, sondern da würde man lieber NeoJ als Graph Datenbank nehmen. Und jetzt kommst du um die Ecke, ja, dann haben die Entwickler und Entwicklerinnen aber etwas in der Hand. Wir müssen aber diese Datenbank nehmen. Und dann sagt der, ja, aber wir bauen ja ein Social Graph und relationale Datenbanks sind dafür eigentlich nicht geeignet.",
+      "start": 1566384,
+      "end": 1604922,
+      "confidence": 0.9112887769784173,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Den Product Owner zeigst du mir mal, der dir die Datenbank ÿousand ausschlägt.",
+      "start": 1605026,
+      "end": 1608240,
+      "confidence": 0.8432138461538461,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Gute Product Owner haben sehr gutes technisches Verständnis, abhängig von dem Produkt, an das man arbeitet. Ja, und da kann es mal vorkommen, dass die auch Datenbank Research machen. Product Owner sind ja nicht nur immer Leute mit MBAs, es gibt auch sehr viele Engineers, die product owner geworden sind. Aber was ich damit sagen möchte, ist, es klang jetzt gerade so, als wenn du eine technische Vision hast, dass du einen neuen Hammer hast und dann auf einmal alles ein Nagel ist, obwohl du gerade eine Schraube in der Hand hast. Es gibt auch Schlagschrauben, verstehe ich, aber.",
+      "start": 1608320,
+      "end": 1631488,
+      "confidence": 0.9346204040404041,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Also zwei Punkte dazu. Ich will gar nicht dieses Thema wieder aufrollen, ob man jetzt den Hammer verwenden soll für alle möglichen Nägel, weil das haben wir in Episode 62 schon besprochen, Technologien konsolidieren oder wie im Startup sammeln. Und da besprechen wir das wirklich sehr tief. Aber ich glaube, wir können uns einigen, zumindest machen das vor allem sehr, sehr große Firmen, dass man sich auf einen gewissen Stack einigt. Im Startup ist es was anderes, aber in sehr großen Firmen einigt man sich normal auf einen Stack, den man zur Verfügung hat. Man kann es aber natürlich auch ändern und das ist ja das Gute daran. Und du hast es beim Delivery Hero Manifesto schon erwähnt, dass der erste Punkt ist, wir machen ein Review, ob das immer noch aktuell ist und können das jederzeit ändern. Und das ist natürlich auch ganz wichtig bei so einer technischen Vision oder Manifesto oder Values oder wie du das auch immer nennen willst, dass man es regelmäßig reviewt und auch ändern kann. Und wenn man jetzt eine neue Datenbank unbedingt braucht, ist es ja okay, die einzusetzen in einem gewissen Projekt. Ob man das jetzt schon in die technische Vision mit reinnehmen soll, diese neue Datenbank, ist eine andere Frage. Es gibt ja diese mittlerweile eigentlich sehr bekannte Herangehensweise des tech Radars, das der sicher auch was sagt das damals von Thoughtworks eigentlich so aufgebracht wurde. Die machen das ja immer noch, dass sie regelmäßig einen Report rausbringen, das tech Radar, was in der technischen Welt so an Software Technologien herangehensweisen verbreitet ist und wie sich die technische Welt entwickelt. Und es hat sich zweitausendein sehr stark etabliert, dass man das auch in der eigenen Firma macht, so ein tech radar. Und so ein tech Radar kann natürlich connected sein mit der technischen Vision oder vielleicht sogar Teil der technischen Vision sein, dass man so eine Übersicht hat, welche Technologien setzen wir ein. Du hast so vier Quadranten, also die vier Quadranten sind Techniken, Plattformen, Tools, Frameworks und Libraries. Also du hast vier Bereiche in deiner Firma, eben z.B. was für Libraries du verwendest und dann in dem Quadranten sind dann alle Libraries aufgelistet, die in deinem Stack vorhanden sind, deine Kernlibraries und dann positionierst du diese Libraries in diesem grafischen System, also so ein d System positionierst du dann, je nachdem wie wichtig die Technologie für dich ist oder wie fortgeschritten diese Technologie eingesetzt wird in deinem Unternehmen oder die Library in dem Fall. Da gibt es nochmal vier Unterteilungen. Ist es eine Library, die du im Einsatz hast, die empfohlen wird für jede, für jedes Projekt. Das nennt sich Adopt, das heißt, das wird eigentlich empfohlen, wenn du ein neues Projekt startest. Dann hast du noch trial, assess und hold. Also hold wäre z.B. du verwendest diese Technologie nicht mehr und die sollte auf keinen Fall verwendet werden für neue Projekte. Und je nachdem, wo die Library sich befindet in diesem Quadranten. In diesen Ringen siehst du sofort grafisch, was sind unsere Kerntechnologien? Was testen wir gerade aus? Was könnten die zukünftigen Technologien sein, die auf Adopt wechseln, also die unsere Kerntechnologien werden oder auch Prozesse, eben Tools, Plattformen, Cloud Plattformen z.B. und so hast du eine visuelle Repräsentation von deinem tech Stack in der Firma. Und das eignet sich natürlich super in Diskussionen oder auch im Recruiting oder auch in der Öffentlichkeitsarbeit, dass du einfach sagst okay, das ist unser tech Stack, schau einmal da drauf. Wenn du bei uns anfängst, dann arbeitest du mit diesem Tech Stack. Also techradar ist ist extrem praktisch, ist aber natürlich auch ein Aufwand, das zu pflegen, weil du brauchst ein Gremium und ein Team, das sich darum kümmert, dass das absegnet, dass es immer wieder reviewed, das Vorschläge annimmt, dass es alles verfolgt wird. Könnte natürlich theoretisch auch automatisch generiert werden, aber ist in der Realität natürlich schwierig und ist ein gewisser Aufwand. Aber ist eine ist eine coole, coole Sache eigentlich deinen Text zu dokumentieren und visualisieren. Und wer sich ein cooles Beispiel von einem Techradar ansehen will, Zalando hat da wirklich zweitausendein online ein interaktives tech Radar über den gesamten tech Stack. Ist sicher ein vorbildliches Beispiel und die hatten auch sehr früh damit angefangen.",
+      "start": 1631584,
+      "end": 1865270,
+      "confidence": 0.9065554957507073,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Jetzt hattest du aber schon gesagt, dass die technische Vision unter anderem sagt, okay, welche Cloud wir nutzen, also als Beispiel oder welche Programmiersprachen oder welche Datenbanken. Jetzt haben natürlich sehr viele Entwicklerinnen und Entwickler sehr viele Meinungen. Ich bin jetzt sehr überzeugt von Go. Manche Leute sagen Rust ist die einzige Religion, die man nutzen sollte und der dritte Zweitausendein, mit dem ich spreche, sagt PHP und die vierte kommt dann über die Ecke. Lass uns mal bitte JavaScript everywhere machen. Wie erstellt man denn jetzt so eine technische Vision? Weil für mich hört sich das so ein bisschen an, wir stecken ganz viele Leute in einen Raum, die schlagen sich die Köpfe ein und dann gucken wir mal, wer rauskriecht und die Person hat dann gewonnen. Ist das ist das so ein Meinungs Bash Meeting oder oder wie funktioniert oder wird da einfach nur Top down Management betrieben vom C Level Management oder wie kommt man da zu einer sinnvollen Vision? Und wie sorgt man dafür, dass das kein monatelanger Prozess wird? Oder sollte es ein monatelanger Prozess sein? Sollte man sich da aktiv für Zeit nehmen?",
+      "start": 1865310,
+      "end": 1924076,
+      "confidence": 0.9187585714285715,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Das kommt natürlich jetzt auch wieder darauf an, welchen Teil du ansprichst von so einer technischen Vision oder Manifesto oder Values, wie wir das jetzt besprochen haben. Wenn es darum geht um unsere Values, dann sollte das schon ein langer Prozess sein, weil diese Values ändern sich ja am wenigsten. Wie arbeiten wir zusammen? Was sind unsere Prozesse? Code Reviews, Pair Programming, wie gehen wir mit Technik um? Das ist schon gemeinsamer Prozess, den man mit dem Team machen sollte in mehrere Iterationen. Wie gesagt, ist ja auch ein Dokument, was ich ständig ändern kann, aber das ist schon eher ein langfristigeres Projekt überhaupt das zu erstellen. Und da sollten auch möglichst viele eingebunden sein, weil mit den Values ist es ja klassisch so oder auch den Prozessen, dass sie sonst nicht angenommen werden. Also so ein Top down ist halt zumindestens in moderneren Unternehmen, würde ich mal sagen, schwierig, dass das dann gut ankommt, gerade wenn es, wenn es um den technischen Prozess geht. Also das sollten schon die Leute in irgendeinem kollaborativen Format herausbringen. Dann umso mehr das in die klassische Visionsrichtung geht. Und wenn wir jetzt wieder dieses Cloud Beispiel bemühen, wir gehen in eine Cloud, es muss wahrscheinlich CTO entschieden sein oder zumindestens auf hoher Ebene oder die die Principles entscheidendes, also staff oder prinzipiell. Also ich rede jetzt nicht von den Prinzipien, die man dann ausformuliert, sondern von den Positionen, von den hohen Staff Levels, Principle Levels oder CTO oder wo das auch immer angeordnet ist. Aber dieses Gremium, das sich dann entscheidet, okay, wo wollen wir hin? Was für Cloud verwenden wir? Was für Datenbank verwenden wir? Natürlich sollte Input von den Teams auch genommen werden, gerade wenn man jetzt ans tech Radar denkt. Natürlich will man wissen, was machen die Teams, welche Technologien werden eingesetzt? Zweitausendein und wo müssen wir die dann ansiedeln? Aber das ist dann wenigstens kontrollierter Prozess und der Input wird dann gesammelt von diesem Gremium und dieses Gremium kann dann entscheiden, okay, was machen wir damit? Wie ändern wir das? Also es muss schon irgendwie einen Entscheidungsprozess geben oder ein Team, der sich darum kümmert. Und natürlich umso mehr die Teams eingebunden sind, alle Personen, alle technischen Leute, die es dann auch betrifft, umso besser, aber umso größer natürlich die Company und umso weiter oben die technische Vision, umso komplexer wird es dann. Und dann macht es natürlich oft auch keinen Sinn. Aber es sollte natürlich auch keine ewig lange Streiterei werden. Und wie du richtig sagst, welche Sprache ist die beste? Oder wenn wir gerade in so einem Prozess sind, wir haben jetzt 10 Programmiersprachen und wollen die reduzieren, dann ist es natürlich super schwierig. Also man kann schauen, man kann sich wahrscheinlich auf fünf wichtige einigen, aber dann die letzten, was jetzt wegfällt und so, das muss wahrscheinlich dann irgendein C level oder ein Gremium dann einfach entscheiden am Ende, weil da wirst du auf keinen grünen Zweig kommen in ewigen Diskussionen.",
+      "start": 1924148,
+      "end": 2085536,
+      "confidence": 0.9234683636363628,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Was ist denn das erwartete Ergebnis bei einer technischen Vision? Ist das ein Dokument, was dann von jedem Engineer unterschrieben wird? Oder wie stellt man Commitment her, wenn du sagst top Down ist nicht das Mittel der Wahl?",
+      "start": 2085648,
+      "end": 2097944,
+      "confidence": 0.9584707894736841,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Ja, die Leute natürlich einbinden. Und was ich z.B. ganz ursprünglich, wenn wir jetzt noch mal zurückgehen an diesem Punkt, wo ich das Feedback bekommen habe, uns fehlt irgendwie eine technische Vision. Ich habe dann die Leute gefragt, was erwartet ihr euch eigentlich? Und die haben so gemeint, ja, irgendwie, wo es hingeht oder was? Und ich habe dann probiert nachzufragen und sie haben mir das auch nicht so richtig sagen können, was sie eigentlich wollen, aber sie haben sich ständig beschwert, wirklich aus zahlreichen Ecken irgendwie wir brauchen so eine technische Vision, oder? Also es war irgendwie so unklar und für mich war es auch unklar. Und ich habe dann gegoogelt und ich habe damals einen super Blogpost gefunden, ich weiß leider nicht mehr, welche der gewesen ist, eben auch leider nie mehr gefunden. Aber was der gesagt hat ist, um eine Vision zu starten, schau dir einfach mal die letzten ein, zwei Jahre an, alle Entscheidungen, die dein Team getroffen hat und probiere die Gemeinsamkeiten aus den Entscheidungen zu finden. Oder in den letzten drei Monaten, dann machst du das mit den letzten sechs Monaten und so weiter. Probiere einfach Gemeinsamkeiten in den Entscheidungen zu finden und warum du die Entscheidung getroffen hast. Also warum hast du jetzt bei einem Greenfield Projekt entschieden? Wir machen das jetzt in Python und nicht in der Cloud, sondern in unserem Datacenter. Und dann probiert man diese Entscheidungen zu extrahieren, die Gründe dieser Entscheidungen und daraus kann man eigentlich die technische Vision bauen. Also wenn du alle Entscheidungsprozesse zusammen nimmst, extrahierst, was sind die Gemeinsamkeiten, warum haben wir genau so entschieden? Dann hast du eigentlich eine technische Vision, weil genau diese Punkte sind wichtig, um weitere Entscheidungen zu treffen in der Zukunft. Und so kann man eigentlich mit einer technischen Vision super einfach starten. Und da sollten eigentlich alle an Bord sein, weil die haben ja alle so entschieden in der Vergangenheit Zweitausendein, das heißt, dein Entscheidungsprozess war schon so, da sollte eigentlich niemand dagegen sein. Natürlich musst du es trotzdem kommunizieren und besprechen und Feedback einholen, das macht natürlich absolut Sinn, aber für einen guten, einfachen Lean Start kannst du einfach so mal starten und das kannst du auch auf deiner Ebene, auf der Team Ebene machen. Wenn du ein kleines Team mit zwei Leuten hast, kannst du das auch schon starten. Also du brauchst da keinen CTO dazu oder wenn ihr das nicht in der Firma habt, du brauchst nicht ganz oben anfangen bei deinem Team. Klar ist das eine kleinere technische Vision, aber du kannst es schon losstarten. Einfach mal deinen Entscheidungsprozess analysieren und dann kommst du schon ins Going und dann einfach evaluieren, reviewen, verändern, anpassen und dann hat man ein Dokument, was man Leuten auch in die Hand geben kann. Wenn dieses Team joinen oder wenn es Diskussionen gibt, dann hat man einfach was in der Hand. Und das ist das Wichtige, dass man was in der Hand hat.",
+      "start": 2098112,
+      "end": 2241916,
+      "confidence": 0.9271271951219512,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Das klingt jetzt gerade so, als würde ich ein Research Projekt machen und mir die letzten zwei Jahre die geschriebenen Design Dokumente ansehen.",
+      "start": 2241948,
+      "end": 2248214,
+      "confidence": 0.90423,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Und wenn du Design Documents hast, ist es natürlich ideal. Ja, genau dann, dann kann dir vielleicht sogar ChatGPT das zusammenfassen.",
+      "start": 2248342,
+      "end": 2255318,
+      "confidence": 0.8689795238095238,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Ja, bist du jetzt gerade mit KI auf das Plateau der Produktivität im Gartner Hype Cycle gegangen?",
+      "start": 2255374,
+      "end": 2260558,
+      "confidence": 0.8397058823529412,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Ja, die Produktivität kommt im Gartner Hype Cycle eigentlich eher bei der Talfahrt. Erst da wird es dann richtig produktiv, wenn eben, wenn das in Verwendung ist. Aber ja, dann auf dem, auf dem Niveau. Ja, das ist ein sinnvoller Einsatz durchaus. Und es kann, kann, also jetzt nie probiert, aber könnte natürlich eigentlich ganz, ganz gut funktionieren, dass man zumindest gewisse Keywords rausbekommt und dass man da am Start.",
+      "start": 2260734,
+      "end": 2281872,
+      "confidence": 0.8556111428571425,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Jetzt sagst du das als Berater immer so toll und als wird das alles immer so der Happy Pass sein und teletabilant. Ja, wir binden die Teams mit ein, aber jeder hat eine starke Meinung, habe ich gerade schon mal gesagt. Im Endeffekt läuft es ja darauf hinaus, dass irgendjemand am Ende des Tages eine Entscheidung treffen muss. Denn nicht jedes Engineering Team ist in der Lage, solche Entscheidungen zu machen. Ja, es gibt dieses Disagree and Commit, dass man ab und zu sagen muss, okay, ich trete von meiner Meinung zurück, aber das wird ja alles auch nicht leichter. Also das ist schon, wenn man sich mal den Verlauf eines Teams oder einer Abteilung oder einer Firma ansieht, schon eher so die die sogenannte Storming Phase oder wo man sich mal richtig in die Haare kriegt. Natürlich kann man sich auf historische Entscheidungen berufen. Unser ganze, unsere ganze Codebase ist in Python geschrieben. Wir machen jetzt einfach weiter in Python. Man kann aber auch sagen hey, unsere Applikation ist so komplex geworden, wir brauchen mal striktes Typing und deswegen ist Python vielleicht nicht mehr ein Mittel der Wahl. Und auf einmal machst du ein riesen Fass auf und stürzt nämlich vielleicht sogar die Firma sogar noch in ein tieferes Loch, da du auf einmal anfängst, in deiner technischen Vision zu sagen, wir wollen von Python weg zu migrieren und wir sind uns alle einig, dass wir in unserer Lebzeit in dieser Firma die 1 Million Lines of code in Python nicht nach Rust oder Go portieren werden, weil da kommt man natürlich eine ganze Ecke mit, wie Schulungen und so weiter. Also das bedeutet, es ist ein mega Drop in Produktivität. Und also irgendwo muss man ja, ich sag mal, auch die Kirche im Dorf lassen, oder?",
+      "start": 2281936,
+      "end": 2370558,
+      "confidence": 0.9016632214765096,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Ist ein guter Punkt, den du ansprichst.",
+      "start": 2370694,
+      "end": 2372454,
+      "confidence": 0.8538785714285714,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Also es ist ja keine Wunschliste, es ist ja keine Einkaufsliste. Ach, ich gehe jetzt in die Quengelzone und ich nehme mir noch Snickers mit. Und ich sag das so schön, weil du kannst das einfach so sagen, weil du bist ja Berater, du schlägst das vor, machst den technischen Visions Workshop und gehst dann wieder raus und in drei Monaten hakst du wieder nach und berechnest wieder das Gespräch. Aber wie war es denn mit der technischen Vision?",
+      "start": 2372542,
+      "end": 2390766,
+      "confidence": 0.8969753164556961,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Im Idealfall begleitet man den Erstellungsprozess ja auch. Aber das, was du ansprichst, ist natürlich ein guter Punkt und ein Problem. Aber was wäre die Alternative? Totschweigen und einfach nicht ansprechen? Hat noch nie funktioniert. Also wenn du sagst, da schlummert so ein Konfliktpotenzial, dann wird es irgendwann aufbrechen. Und du kannst natürlich jetzt sagen, mir ist egal, ich verwende einfach 20 Programmiersprachen, das ist halt so, ist okay, hat halt sehr viele andere Probleme. Aber wenn du dann mal in den Diskussionsprozess reingehst, dann musst du natürlich erwarten, dass es auch Probleme gibt. Es ist bei jeder Diskussion so und du kannst dann doch top down auch etwas beschließen. Funktioniert vielleicht, funktioniert nicht, je nachdem. Ich glaube, es funktioniert wahrscheinlich weniger, vor allem bei technischen Leuten. Das heißt, man muss da halt durch. Und wenn man das begleitet hat mit irgendwem, der moderiert und wo man dann Lösungen findet, dann sollte das auch ein Prozess sein, der nicht ewig dauert. Und ich glaube, bei ganz vielen Punkten, wenn es darum geht, wie behandeln wir Technical Depth oder so, da braucht man gar nicht so viel diskutieren, weil da sind wahrscheinlich eh alle auf deiner Seite. Wenn es darum geht, was ist die wichtigste Programmiersprache und kommt die als Hauptprogrammiersprache in unseren Stack rein, Tag Radar, ist es natürlich schwieriger. Und vor allem, wenn man von komplett chaotisch zu strukturiert geht, dieser Schritt ist natürlich einmalig sehr schwierig. Sobald du mal dann in der strukturierten Phase drin bist, wo du ein tech radar hast, wo du diskutierst, was ist unsere wichtige Sprache, was nicht, dann sollte das ja auch nicht so einfach sein, dass du überhaupt eine Sprache etablierst zu einer companyweiten Sprache, sondern es sollte dann ja auch schon in dem Prozess stattfinden und dann ist es weniger schwierig. Aber klar, der erste Schritt ist immer der schwierigste und da wird es viel Diskussion geben, aber das hast du jedes mal, wenn du ein neues Greenfield Projekt anfängst, was ist die beste Technologie für dieses Projekt? Dann hast du wahrscheinlich auch am Anfang einfach eine lange Diskussion.",
+      "start": 2390958,
+      "end": 2499916,
+      "confidence": 0.9204080172413797,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Devils Advocate technisch könnte man jetzt natürlich auch sagen, jede Firma versucht gerade produktiver zu werden, jede Firma versucht gerade ihren Kosten Fußabdruck zu reduzieren und jetzt kommst du um die Ecke und sagst, ja der CEO möchte zwar, dass wir schneller shippen und mehr Value bringen in kürzerer Zeit, also böse gesagt, mehr aus unseren Leuten raus squeezen und jetzt kommst du als Berater her. Ich denke, ihr solltet euch erstmal hinsetzen, eine technische Vision machen, weil im Endeffekt rufst du Opportunitätskosten auf. Du sagst, wenn ihr eine technische Vision habt, dann wird später alles einfacher und alles schneller.",
+      "start": 2500108,
+      "end": 2533398,
+      "confidence": 0.8966834999999999,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Ist selbe wie eine Produktvision. Du kannst es auch argumentieren, du brauchst keine Produktvision, wir machen einfach was ankommt und was der Kunde so wünscht und da die Projekte, die bei uns bei der Tür reinflattern, machen wir einfach, weil die bringen ja auch das Geld. Wenn da eine neue Anfrage reinkommt, dann machen wir das, weil da ist eh das Geld sofort.",
+      "start": 2533454,
+      "end": 2551734,
+      "confidence": 0.919802222222222,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Ist ja auch eine Strategie.",
+      "start": 2551902,
+      "end": 2553094,
+      "confidence": 0.828822,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Ja, es ist eine Strategie, ist nur keine Vision. Das heißt, wenn du langfristig eine funktionierende Firma haben willst, dann brauchst du meiner Meinung nach einfach eine Vision und jeder der unternehmerisch denkt und sinnvoll denkt, wird auch längerfristig denken. Zweitausendein und das darf man nicht nur auf der Product Seite, sondern muss auch auf der technischen Seite machen, dass deine Tech Teams glücklich sind, dass die zufrieden sind, dass sie effizienter sind, dass sie schneller Entscheidungen treffen können mit der tech Vision und dass du dir am Ende dann natürlich auch Zeit sparst, Streitereien, Spaß, Diskussionen sparst und im Endeffekt das dann natürlich auch wieder ins Produkt einzahlt. Und das heißt ja auch nicht, dass die technische Vision nichts über das Produkt beinhalten darf. Also du kannst ja auch reinschreiben, dass das z.B. uX extrem wichtig ist und dass die zweitausendein User eine gute UX haben. Das könnte ja auch ein Schwerpunkt einer technischen Vision sein, der auch sehr nahe am Produkt liegt, dass du sehr einfach zu benutzen das Produkt hast. Es würde wahrscheinlich nicht in der Produktvision stehen, höchstwahrscheinlich, weil es schon sehr technisch ist, aber könnte natürlich sehr wichtig sein für technische Diskussionen, wo man einfach sagt, okay, UX steht bei uns im Vordergrund, das heißt wir verzichten auf andere Dinge, wenn die UX dadurch nicht gut ist.",
+      "start": 2553222,
+      "end": 2622330,
+      "confidence": 0.925492882882883,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Zweitausendein. Ich zitiere einen ehemaligen Vorgesetzten von wer Visionen hat, muss zum Arzt. Dies aber nur als Seitenhieb.",
+      "start": 2622370,
+      "end": 2629496,
+      "confidence": 0.8719016666666667,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Da kann ich jetzt nur Marco zitieren aus der Episode 110, wo wir über OKRs gesprochen haben, wo er gesagt hat, das was du sagst, ist ja die Mehrzahl Visionen. Man braucht eine Vision.",
+      "start": 2629648,
+      "end": 2640260,
+      "confidence": 0.926673529411765,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Auch ein schöner Konter. Das bedeutet aber auch, wenn ich dir jetzt richtig zuhöre und die ganze Sache richtig verstehe, dass die technische Vision eigentlich Aufgabe des Leaderships ist, das zu treiben jetzt ich sage nicht zu entscheiden, aber wenn du jetzt Teamleiter bist, wenn du jetzt im technischen Leadership bist, Engineering oder sehr erfahrener Senioren oder Tech Lead oder Engineering Manager, dass du das ganze Thema mal auf den Tisch bringst im nächsten Team Meeting.",
+      "start": 2640840,
+      "end": 2663148,
+      "confidence": 0.9345905263157891,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Es gehört eindeutig zum Technical Leadership und zur tech Kultur. Das heißt, wenn man immer so schön sagt, wir haben eine gute tech Kultur, dann würde ich immer fragen, ja was bedeutet das? Was heißt das? Wo steht das? Was ist eure Kultur? Und ein Teil kann natürlich auch so eine technische Vision oder wie du es gern Manifesto nennst oder Engineering Values sein und die zahlen auf eine technische Kultur ein, dass das einfach klarer definiert ist. Was ist unsere Kultur? Wie arbeiten wir? Wo wollen wir hin? Was ist für uns wichtig als Tech Team in Tech und das am Ende die Leute in dieselbe Richtung arbeiten und eben sich bei jeder Wegkreuzung das Dokument an die Hand nehmen können und entscheiden können, sollen wir links oder rechts gehen? Was ist der bessere Weg jetzt? Und im Product ist es sehr etabliert und ist so ein bisschen über tech drüber gefahren, meiner Meinung nach. Und im Tech wird es vernachlässigt bzw. Hat sich noch nicht so etabliert und ist meiner Meinung nach aber auch extrem wichtig.",
+      "start": 2663244,
+      "end": 2718786,
+      "confidence": 0.9212575280898876,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Wie evaluiere ich denn, dass ich jetzt als Outcome eine gute technische Vision habe? Oder kann ich das erst nach einem Jahr evaluieren, wenn wir diese alle verinnerlicht und gelebt haben? Oder gibt es eine Möglichkeit? Ich habe jetzt diese Workshops gemacht, ich habe mich jetzt mit dem Team zusammengesetzt und da kommt der purzelt jetzt ein Dokument raus, wo wir alle sagen Daumen hoch oder halt auch disagree and commit. Wie sage ich okay, das ist ein gutes Ergebnis.",
+      "start": 2718858,
+      "end": 2743436,
+      "confidence": 0.9251834999999999,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Wie misst du denn, ob eine Produktvision gut ist oder schlecht?",
+      "start": 2743628,
+      "end": 2747348,
+      "confidence": 0.931819090909091,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Keine Ahnung, ich bin kein Produktmanager.",
+      "start": 2747444,
+      "end": 2749156,
+      "confidence": 0.9903733333333334,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Also meiner Meinung nach kann man es nicht messen, weil es wie gesagt ist eine ist eine Vision, obwohl stopp, stopp.",
+      "start": 2749348,
+      "end": 2755636,
+      "confidence": 0.8493333333333334,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Stopp, stopp, weil bei der Produktvision kann man, geht natürlich eine ganze Menge Market Research voraus. Ja, also ich meine, da gibt es ja auch UX Research und allem drum und dran und Product Market fit. Also ich glaube schon, dass es da sehr, sehr viele Signale gibt über eine gute Produktvision, dass sie auf jeden Fall in die richtige Richtung bzw. Nische bzw. Kerbe zielt und das da auf zu 50 % ein Potenzial zu heben ist. Wobei bei der technischen Vision ist es ja, Market Research in einer technischen Vision ist relativ schwierig. Natürlich kannst du kontinuierlich dem Markt folgen und dem, welche Datenbank ist gerade Populärindex oder der Stack Overflow Programmiersprache. Aber das bringt dich ja nicht zum Ziel, weil wir hatten ja gesagt, die Technik ist ja ein Mittel zur Wahl, die Produktvision zu supporten. Bei der Produktvision geht es ja wirklich um Geld und da hat man ja deutliche Indikatoren. Deswegen gibt es ja auch so Geschichten wie MBA und bwler und Co. Also das ist vielleicht die Antwort, wie ich eine Produktvision evaluieren würde bzw. Das Potenzial einer Produktvision.",
+      "start": 2755708,
+      "end": 2815554,
+      "confidence": 0.9022083783783782,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Willst du damit jetzt behaupten, dass die technischen Leute kein Research betreiben, weil diese ganzen Entscheidungen, was für Datenbank man verwendet und so, ja, wenn das nicht auf, du nennst jetzt Market research by product, aber bei Tech ist es ja genauso Research oder Market Research. Was ist eine gute, gute Datenbank? Warum ist es eine gute Datenbank? Warum gehen wir in eine Richtung? Warum arbeiten wir im Programming oder warum machen wir code Reviews? Also da steckt ja ganz viel Wissen und auch Research dahinter, warum man sowas macht. Also einerseits Erfahrung und wie man in den vergangenen Jahren vielleicht schon gearbeitet hat, aber natürlich auch ganz viel aus der wirklich Wissenschaft, würde ich fast sagen, weil es sind ja etablierte Prozesse und man überlegt sich das ja, warum man sowas macht. Also es soll ja auch gut überlegt sein. Oder warum verwende ich jetzt Python als Hauptsprache? Ist ja nicht nur, weil Python, weil ich jetzt als CTO Python lustig finde. Man kann natürlich auch sein, aber im Idealfall ist da ja schon viel Research auch dahinter.",
+      "start": 2815682,
+      "end": 2869398,
+      "confidence": 0.9186120670391063,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Ja doch, aber die Gründe, warum verwende ich Python, muss nicht auf Basis der Research sein, sondern weil die Gründer damals mit Python angefangen haben, nachdem sie sich einen Python Videokurs reingezogen haben. Und jede Migration auf eine andere Programmiersprache wäre jetzt einfach viel zu teuer und würde nicht zum Produktziel einzahlen, sondern würde nur Arbeit erschaffen.",
+      "start": 2869454,
+      "end": 2886768,
+      "confidence": 0.9115670175438593,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Es ist ja auch Research, es ist ja auch Research, das du betrieben hast und du hast dann eine Entscheidung getroffen, basierend auf Fakten, auf Informationen, die du eingeholt hast. Also du sagst jetzt irgendwie so, die technische Vision ist nur dahingerotzt und so sollte sie natürlich nicht sein, wenn die sauber mit Research erstellt worden ist. Du bindest ja auch Leute ein, deren Wissen ein, dann hast du natürlich im Idealfall schon eine sehr fundierte technische Vision, die dann am Ende rauskommt.",
+      "start": 2886904,
+      "end": 2914186,
+      "confidence": 0.9107008433734937,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Okay, wenn du es so beschreibst, dann klingt das eigentlich für mich wie ein architecture Decision Record. Wir haben uns auf etwas, weil im Endeffekt ein Architecture Decision Record sagt, okay, wir haben diese Entscheidung getroffen, wir haben diesen Eintrag in die technische Vision gemacht, wir wollen jetzt von drei Clouds auf fünf Clouds und der architecture Decision Record wäre dann gesagt, wir benutzen nur noch Amazon Web Services und dann steht da die Gründe nach dem Motto, wegen A.",
+      "start": 2914258,
+      "end": 2935854,
+      "confidence": 0.9169095000000003,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Wegen B, wegen C. Darum eben diese Herangehensweise. Wenn du eine Vision schnell erstellen willst, schau dir die ADRs, wenn du solche hast, also die Architectural Decision Records an der letzten Zeit und versuche herauszufiltern, was Gemeinsamkeiten sind und warum wir genau so entschieden haben. Komplett richtig. Also wenn du das schon hast, kannst du es natürlich verwenden. Und das ist eigentlich nur die abstrahierte Sicht auf die Dinge, um eben auch die Kommunikation mit den anderen Stakeholdern zu haben, mit den Product Leuten, dass man die auch abholt, dass man sagen kann, schaut, Ÿousand, Herr, das ist unsere technische Vision, so arbeiten wir, da steht der Kinkel Tab drinnen, das ist wichtig für uns, ein neues Teammitglied, wir arbeiten so, liste das durch und du hast das wichtigste schon. Also einfach, dass das niedergeschrieben ist, das was in den Köpfen drin ist. Das war ja für mich auch so ein Learning damals. Für mich war ja alles klar, weil das war in meinem Kopf drin, aber das wissen die anderen nicht, was in meinem Kopf drin ist. Das wissen die Product Owner nicht, wie ich denke. Und für mich war das klar, wir gehen auf diese Sprache oder wir probieren da die beste Technologie zu finden oder was es auch ist, wir probieren die Datenbank einzusetzen, weil die gibt es schon. Für mich war das alles klar. Für Juniors ist vielleicht weniger klar, für neue Leute in der Firma ist es weniger klar, für den Product Owner ist es weniger klar. Und so schreibst du das einfach fest und es erscheint dann auch in den anderen Köpfen und ist nicht nur in deinem Kopf, ganz abgesehen davon, dass du Bassfactor oder sonst was bist und dann einfach vielleicht weg vom Fenster mal aus irgendeinem Grund. Und alles was, wie sagst du immer, alles was schreibt, ist big. Alles das, wer schreibt, der bleibt. Wer schreibt, der bleibt, genau.",
+      "start": 2935902,
+      "end": 3027976,
+      "confidence": 0.9260147962382448,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Ja gut, aber ich meine, das Thema Over Communication, das ist generell etwas, woran man arbeiten muss. Nur weil du etwa Informationen hast, darfst du nicht annehmen, dass die Informationen jeder hat. Aber ich habe natürlich die ganze Zeit böse Fragen gestellt. Und ich bin ja auch eigentlich bei dir. Ja, also ich denke z.B. so ein Regelwerk wie Google es hat, wir haben ein paar Core Sprachen. In diesen core Sprachen bieten wir alle Libraries an, um mit allen internen Systemen zu interagieren. Logging, Observability und so weiter. Falls ihr eine neue Programmiersprache, die nicht zum Teil der Core Sprachen gehört, dann müsst ihr euch um diese Libraries selbst kümmern, wenn ihr etwas in Produktion packen müsst. Oder du sagtest auch schon das Beispiel, mindestens drei Leute innerhalb der Firma oder des Teams müssen das supporten oder müssen das schreiben können oder ähnliches und den Bus Factor zu vermeiden. Sowas finde ich natürlich grandios, sollte aber dann nicht religiös betrieben werden. Sollte immer die Art von Challenging sein, weil du sagtest auch, ein Manifesto ist in Stein gemeißelt vorhin. Da bin ich ganz anderer Meinung.",
+      "start": 3028168,
+      "end": 3088882,
+      "confidence": 0.9099274193548387,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Und deswegen, also wenn du ein Manifesto in der Firma hast, sollte das auf keinen Fall in Stein gemeißelt sein. Es sollte auch genauso drinstehen, Reviews und immer wieder hinterfragen, sollte natürlich auch irgendwie ein Prozess sein, wie schnell man was ändern kann. Also es sollte natürlich nicht so sein, dass das ein öffentliches Repo ist, wo jeder einfach Edit Rechte hat und wenn mir was nicht passt, dann schreibe ich das jetzt so, um schon ein Prozess dahinter liegen, dass man es einmal oder zweimal im Jahr macht und Anpassungen vornimmt und vielleicht innerhalb von einem Workshop oder sowas einfach dann bespricht oder dieses Gremium.",
+      "start": 3088946,
+      "end": 3120134,
+      "confidence": 0.9134092452830184,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Und deswegen habe ich so ein mega Problem mit diesem Wort technische Vision, weil für mich hat das so einen Hang von Hacker News Driven Development. Die IT Erteilung ist jetzt gegen die Produktabteilung und wollen ihren Code immer zum perfekten Code machen. Für mich hat das einen automatischen Touch von Over Engineering bzw. Eine sehr starke Gefahr dahingehend. Und weil das ist so, die IT Abteilung macht ihre eigene, kocht ihre eigene Suppe und ich versuche seit Jahr und Tag aus dieser Kultur herauszukommen, dass es nicht aß versus sam ist, dass wir eine Symbiose reden und ich bin kein Berater, du bist Berater, aber dass wir zusammenarbeiten und das, sorry, Softwareentwicklung ein Mittel zum Zweck ist. Denn wenn das Produkt besser mit Zettel und Stift gemacht werden kann, dann lass uns das tun. Aber Softwareentwicklung ist nur dafür da, damit wir alle erfolgreich arbeiten können und auch mehr Geld machen in einer profitorientierten Gesellschaft oder bei einem Non Profit, bei Sea Shepard, dass wir die Meere mehr beschützen. It ist nicht ÿousand, die Fische haben nichts von. It ist das Mittel zum Zweck in diesem, in diesem Sea Shepherd Beispiel. Und deswegen habe ich so das Problem mit technischen Visionen, dass das dahin geht, wohingegen ich mit Architecture Decision Records oder ähnliches, ich sag mal einen iterativen Prozess ah, wir schreiben jetzt drei Programmiersprachen, weiß ich nicht, JavaScript im Frontend, Java im Backend und so weiter, dass man das Stück für Stück macht. Und das hört sich jetzt nach einem Big Bang hier an. Ich setze mich drei Monate in einen Meetingraum, schlag mir die Köpfe ein und kommen dann mit einem Dokument raus. Das ist für mich die negativere Assoziation. Ich sage nicht, dass der Grundgedanke nicht schlecht ist.",
+      "start": 3120222,
+      "end": 3218484,
+      "confidence": 0.9079268835616442,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Also ist ein guter Punkt und wie gesagt, jeder versteht das Wort auch anders. Du hängst dich jetzt auf der Vision auf. Ich sage halt Manifesto ist zu mir zu statisch. Aber ich glaube ganz im Gegenteil, dass eine technische Vision eben den Wildwuchs verhindert, weil du eben reinschreibst, dass du den Wildwuchs verhinderst und wie du Entscheidungen triffst und was eben dein Stack ist und was üblich ist. Und es stimmt schon, die Symbiose und die Zusammenarbeit sollte da sein und das ist auch wichtig in dem Team. Aber es ist ja auch interessant, dass ich z.B. von Product Seite oft gehört habe, was ist denn eure technische Vision? Habt ihr keine technische Vision, habt ihr kein Dokument? Oder von der technischen Seite? Wir haben auf der Product Seite klare Vorstellungen, was was habt ihr auf der technischen Seite? Und das war ja auch ein Entgegenkommen. Es sollte ja auch ein Miteinander sein, dass beide wir wissen ja auch über die Product Vision Roadmap, wie du es auch immer nennst oder was es ist, wir wissen ja Bescheid und sind auch involviert. Und gleich sollte es natürlich mit der technischen Vision auch sein, dass die Product Leute oder der CEO genauso involviert ist in die technische Vision vom CTO. Und man braucht halt auch langfristige Planung und du kannst natürlich auch effizienter dann entscheiden, wenn du so eine Hilfestellung hast, weil wenn du bei jedem architectural decision record wieder neu entscheiden musst, alles wieder neu aufrollen musst, dann ist es ja auch nicht effizient. Also wenn du die Informationen hast, die das ermöglichen, dass du schneller entscheiden kannst und die auch ein bisschen in die Zukunft planen, ist es meiner Meinung nach sehr wichtig, weil du kannst nicht immer nur akut alles was reinkommt, entscheide ich jetzt. Du musst dir irgendwie eine Planung auch machen, du musst dir Ressourcenplanung machen, du machst Planungen für die Zukunft. Also warum machst du es nicht auch auf der technischen Seite dann? Es gibt ja ganz oft diese Missionsstatements, die ich immer so wischiwaschi finde. Zweitausendein wir sind die tech Abteilung, die unser Produkt voranbringt und die beste Technologie für unser Produkt findet. Wenn eine Mission oder auch technische Vision, egal wie du es nennst, nur aus diesem Begriff besteht und du kannst es auf jede x beliebige Firma stülpen und auf jedes Startup, dann ist sie nicht richtig. Es muss unique sein für die Firma und wir finden, die beste Technologie für unser Produkt ist nicht unik für die Firma. Also du musst da tiefer gehen und tiefer runter gehen. Zweitausendein mehr herausarbeiten und deshalb auch zukunftsorientiert. Und das ist meiner Meinung nach die Aufgabe von Technical Leadership, weil sonst bist du nur jemand, der Tickets bearbeitet, die da gerade reinkommen.",
+      "start": 3218612,
+      "end": 3359920,
+      "confidence": 0.9334997385620923,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Nee, nee, das ist klar. Du solltest schon ein bisschen in Zukunft gucken und du solltest nicht von anderen getrieben werden und du solltest dir deine eigene Straße bauen. Das ist alles richtig. Und da bin ich auch bei dir.",
+      "start": 3360000,
+      "end": 3369112,
+      "confidence": 0.9286825000000001,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Doch Straße planen, nicht Straße bauen.",
+      "start": 3369216,
+      "end": 3371752,
+      "confidence": 0.8363516666666667,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Ja, ich bin eher so der Macher anstatt der Brabbelkopf, so wie du. Aber ist eine andere Geschichte. Da kommen wir, glaube ich, aus unseren Stereotypen nicht raus. Doch, für mich klingt halt so eine technische Prevision, dass die auch den Hang zur Premature Optimization hat. Also nach dem Motto, ich entscheide jetzt etwas, was vielleicht noch nie als Frage aufkam. Das kann gut sein, kann schlecht sein, weiß ich nicht. Ich verfolge, ich verstehe deinen Punkt und ich denke, wir sollten es auch machen bei den Elementen, die wirklich kontinuierlich aufkommen. Einfach nur um.",
+      "start": 3371896,
+      "end": 3402474,
+      "confidence": 0.8958217894736845,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Also ich verstehe schon dein Problem auch mit dem mit dem Wort Vision, weil es klingt halt, ich mache etwas, was noch nie da gewesen ist, eine neue Technologie, die es noch nie gab. Wenn ich jetzt das so sehe. Aber das ist ja bei der Produktvision meistens auch nicht so. Ich mache jetzt nicht irgendwas an sich, was noch nie da gewesen ist, sondern nur in Kombination. Für mich, wenn ihr gewisse Dinge zusammen tut, dann dieses Produkt ist unique. Und auf der technischen Seite ist es im Prinzip das Gleiche. Ich kombiniere bestehende Technologien oder auch neue, je nachdem, wie viel Innovation ich reinbringen will, um dann das perfekte Produkt zu bauen. Also die Grundidee ist natürlich schon die richtige, aber ich kann natürlich verstehen, woher das Problem mit dem Wort Vision kommt.",
+      "start": 3402522,
+      "end": 3444488,
+      "confidence": 0.9278610370370369,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Das Wort Vision zeichnet halt aus, dass es so eine Art großes Arbeitspaket mit sich schleppt.",
+      "start": 3444584,
+      "end": 3450728,
+      "confidence": 0.9578875,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Man kann auch auf die Duden Definition runtergehen oder keine Ahnung, ob der Duden ist so definiert, aber ich definiere Vision eigentlich so, dass du ein Bild zeichnest, wie es in ein paar Jahren sein soll. Und das hat nichts damit zu tun, dass das, was noch nie da gewesen ist, sondern die Vision ist. Wie stelle ich mir die Zukunft vor? Wo bin ich als Tech Team in ein paar Jahren und das ist die technische Vision und nicht was kann ich schaffen, was noch nie da gewesen ist. Also ich verstehe schon, Vision wird auch oft so verwendet. Ich habe eine Vision vom bedingungslosen Grundeinkommen. Das gab es noch nie, aber es kann natürlich auch einfach sein. Meine Vision ist, dass ich persönlich mit meinen Zielen in drei Jahren irgendwo bin. Nennst Ziele von mir aus.",
+      "start": 3450824,
+      "end": 3491988,
+      "confidence": 0.9359184782608697,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Ich finde das schön, dass du einen One Liner am Ende der Podcast Episode raushaust, was uns 1 Stunde Hörerlebnis erspart hätte. Wolfgang, vielen lieben Dank, dass wir etwas über die technische Vision streiten durften. Und ich finde das toll, dass wir seit langem mal wieder ein Thema haben, wo wir nicht einer Meinung sind bzw. Nicht derselben Herangehensweise. Aber es ist natürlich auch ein großes Arbeitspaket für Technical Leadership, was jede und jeder von euch, der in einer technischen Leadership Position ist, auch mal angehen sollte. Und wenn ihr mehr zu dieser technischen Vision diskutieren wollt, kommt mal in die Discord Community. Ich denke, dass diverse Leute da auch eine sehr starke Meinung haben, die hoffentlich auf meiner Seite ist und nicht auf Wolfgangs Seite, weil hier ist es eine As versus Sam Geschichte.",
+      "start": 3492084,
+      "end": 3537970,
+      "confidence": 0.9120893333333331,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Ich lass dir deine Hoffnung, deine Vision, dass wir solche Leute dann in Discord Ÿousand.",
+      "start": 3538310,
+      "end": 3542872,
+      "confidence": 0.9186706666666669,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Ich hoffe, ihr müsst nicht zum Arzt, weil ihr Visionen habt, sondern ich hoffe, ihr habt nur eine technische Vision singular. Und wenn nicht, dann sprecht doch mal mit eurer vorgesetzten Vorgesetzten darüber oder schreibt dem CTO doch vielleicht mal eine e Mail, was sie oder er darüber denkt und ob man dies nicht mal als kleines Zeitprojekt innerhalb der Firma starten sollte. Denn im Endeffekt stimme ich ja dem Wolfram zu. Man braucht eine Art Regelwerk, weil sonst streitet man sich konstant bei jeder kleinen Entscheidung, weil jeder hat ja Meinungen und es ist auch gut. Also ein bisschen Guidance sollte schon da sein.",
+      "start": 3542966,
+      "end": 3577918,
+      "confidence": 0.9407553333333333,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Was da einfach noch wichtig ist, weil du es gesagt hast, mit dem CTO sprechen, meiner Meinung nach, das kann man auch im Team starten, ohne es mit irgendwem abgeklärt zu haben. Wenn ich für mein Team als Teamleade eine technische Vision starte, für mein zwei Personen Team, einfach machen. Das ist ein Dokument, das kann mir niemand verbieten. Sein Dokument. Was teile ich mit meinen Stakeholdern, diskutiere das natürlich mit allen Beteiligten, aber ich brauche da jetzt eigentlich niemanden fragen oder so. Das ist einfach ein technisches Dokument, was man dann mal in den Umlauf bringen kann, in dem Vorgesetzten der Vorgesetzten schicken kann und einfach mal loslegen.",
+      "start": 3578054,
+      "end": 3609946,
+      "confidence": 0.8965529357798165,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Prinzipiell bin ich da bei dir. Dennoch habe ich schon sehr, sehr viele Teams gesehen, die nur ihr eigenes Süppchen kochen, um von anderen nicht behindert zu werden. Und wenn ihr in einer technischen Leadership Position seid, möchte ich euch eine Sache mitgeben. Eure Peers, also auf eurem technischen Leadership Level, sollten eure besten Freunde sein. Ich rede jetzt nicht darüber, Freunde auf der Arbeit etc. Aber wenn ihr mit denen nicht klarkommt, werdet ihr seltenst größere Themen zusammen pushen können. Und meines Erachtens nach könnt ihr innerhalb des Teams natürlich sowas treiben und als Beispiel vorangehen. Dennoch solltet ihr eure technischen Peers sehr früh mit einbinden, weil sonst geht es in der ASM Geschichte. Sonst kümmert ihr euch nur um euren kleinen Teich. Und meines Erachtens nach kann das nicht Erfolg führen. Sind wir durch für heute, Wolfgang?",
+      "start": 3610018,
+      "end": 3652598,
+      "confidence": 0.909848920863309,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Ich bin vor allem doch geschwitzt bei der aktuellen Hitzewelle, aber ist ein anderes Thema.",
+      "start": 3652654,
+      "end": 3656750,
+      "confidence": 0.8781640000000002,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Dann entlassen wir euch aus diesem Podcast. Vielen Dank fürs Zuhören, wenn ihr es bis hierhin geschafft habt und bis zur nächsten Episode. Bye bye.",
+      "start": 3656830,
+      "end": 3663846,
+      "confidence": 0.8880248000000003,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Ciao, Ÿousand.",
+      "start": 3663918,
+      "end": 3671070,
+      "confidence": 0.64245,
+      "speaker": "B",
+      "channel": null
+    }
+  ],
+  "confidence": 0.91524102552818,
+  "audio_duration": 3611,
+  "webhook_status_code": null,
+  "webhook_auth": false,
+  "summary": null,
+  "auto_highlights_result": null,
+  "content_safety_labels": null,
+  "chapters": null,
+  "sentiment_analysis_results": null,
+  "entities": null
 }
