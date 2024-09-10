@@ -3,8 +3,8 @@
 EPISODES_STORAGE_DIR = 'src/content/podcast'
 EPISODES_IMAGES_STORAGE_DIR = 'src/content/podcast'
 DEFAULT_SPEAKER = [
-    {"name": "Andy Grunwald", "website": "https://andygrunwald.com/"},
-    {"name": "Wolfi Gassler", "website": "https://wolfgang.gassler.org/"},
+    {"name": "Andy Grunwald"},
+    {"name": "Wolfi Gassler"},
 ]
 
 # Transcripts

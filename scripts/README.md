@@ -31,11 +31,8 @@ Go to your episode `.md` file (in this case `src/content/podcast/90-inner-source
 ```toml
 speaker:
 - name: Andy Grunwald
-  website: https://andygrunwald.com/
 - name: Wolfi Gassler
-  website: https://wolfgang.gassler.org/
 - name: Sebastian Spier
-  website: https://spier.hu/
 ```
 
 into
@@ -43,13 +40,10 @@ into
 ```toml
 speaker:
 - name: Andy Grunwald
-  website: https://andygrunwald.com/
   transcriptLetter: B
 - name: Wolfi Gassler
-  website: https://wolfgang.gassler.org/
   transcriptLetter: A
 - name: Sebastian Spier
-  website: https://spier.hu/
   transcriptLetter: C
 ```
 
