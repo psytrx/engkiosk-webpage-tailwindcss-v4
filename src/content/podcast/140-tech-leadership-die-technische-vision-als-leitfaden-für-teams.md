@@ -77,7 +77,10 @@ speaker:
 - name: Wolfi Gassler
   website: https://wolfgang.gassler.org/
 spotify: https://open.spotify.com/episode/1ccw0E76ltqjRYTn1az64F
-tags: []
+tags:
+- Team
+- Kommunikation
+- Leadership
 title: "#140 Tech-Leadership: Die technische Vision als Leitfaden f\xFCr Teams"
 transcript_raw: ''
 transcript_slim: ''
