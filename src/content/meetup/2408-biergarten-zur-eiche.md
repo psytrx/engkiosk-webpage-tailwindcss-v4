@@ -4,7 +4,6 @@ location:
   name: 'Gastgarten zur Eiche'
   address: 'Innstraße 85, 6020 Innsbruck'
   url: 'http://zureiche.at/'
-  logo: 'Eiche-Logo-03-01-01.webp'
 talks:
   - avatar: 'bier.jpg'
     name: 'Bernhard Bierbrauer'
