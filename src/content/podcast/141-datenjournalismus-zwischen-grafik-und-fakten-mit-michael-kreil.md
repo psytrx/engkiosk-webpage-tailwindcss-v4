@@ -1,6 +1,6 @@
 ---
 advertiser: ''
-amazon_music: ''
+amazon_music: https://music.amazon.com/podcasts/c35a09fe-4116-4e04-8f68-77d61b112e46/episodes/ddb28dd3-465e-447e-a5ac-c5270131b0c8/engineering-kiosk-141-datenjournalismus---zwischen-grafik-und-fakten-mit-michael-kreil
 apple_podcasts: https://podcasts.apple.com/us/podcast/141-datenjournalismus-zwischen-grafik-und-fakten-mit/id1603082924?i=1000669774757&uo=4
 audio: https://audio1.redcircle.com/episodes/4d1db992-8c2d-45c3-b59a-1bd531d21e36/stream.mp3
 chapter:
