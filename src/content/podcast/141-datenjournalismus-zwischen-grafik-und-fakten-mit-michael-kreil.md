@@ -81,7 +81,11 @@ rtlplus: ''
 six_user_needs: []
 speaker:
 - name: Andy Grunwald
+  transcriptLetter: A
 - name: Wolfi Gassler
+  transcriptLetter: C
+- name: Michael Kreil
+  transcriptLetter: B
 spotify: https://open.spotify.com/episode/02xiPxzjxOZiDKOFZkWEGO
 tags: []
 title: '#141 Datenjournalismus - zwischen Grafik und Fakten mit Michael Kreil'

@@ -1,0 +1,1246 @@
+{
+  "language_code": "de",
+  "audio_url": "https://cloud.inlupus.at/s/T379bbxNRHrPn8C/download/ep141_datenjournalismus.mp3",
+  "punctuate": true,
+  "format_text": true,
+  "dual_channel": false,
+  "webhook_url": null,
+  "webhook_auth_header_name": null,
+  "webhook_auth_header_value": null,
+  "audio_start_from": null,
+  "audio_end_at": null,
+  "word_boost": [],
+  "boost_param": null,
+  "filter_profanity": false,
+  "redact_pii": false,
+  "redact_pii_audio": false,
+  "redact_pii_audio_quality": null,
+  "redact_pii_policies": null,
+  "redact_pii_sub": null,
+  "speaker_labels": true,
+  "speakers_expected": 3,
+  "content_safety": false,
+  "content_safety_confidence": null,
+  "iab_categories": false,
+  "custom_spelling": null,
+  "disfluencies": false,
+  "sentiment_analysis": false,
+  "auto_chapters": false,
+  "entity_detection": false,
+  "summarization": false,
+  "summary_model": null,
+  "summary_type": null,
+  "auto_highlights": false,
+  "language_detection": false,
+  "language_confidence_threshold": null,
+  "language_confidence": null,
+  "speech_threshold": null,
+  "speech_model": null,
+  "id": "e40db618-eee2-4e89-9211-ff75937c78c6",
+  "status": "completed",
+  "error": null,
+  "utterances": [
+    {
+      "text": "Willkommen zu einer neuen Episode vom Engineering Kiosk, deinem deutschsprachigen Software Engineering Podcast. Wenn Daten präsentiert werden, schalten Menschen ihren Kopf aus. Dieser Satz hat mich zum Nachdenken gebracht und tut es auch immer noch. In dieser Episode sprechen wir mit Michael Kreil. Michael ist freier Datenjournalist und gibt uns Einblicke in seine Arbeit. Mit Michael klären wir, was Datenjournalismus eigentlich ist und wie viel Software Engineering involviert ist. Inwieweit das ganze in Relation zu Data analytics und Data Science steht. Woher eigentlich die Arbeitsgrundlage, also die eigentlichen Daten stammen, welche handwerklichen Fehler bei der Arbeit mit Daten gemacht werden können, aber auch wie Datenjournalisten für Open data und public money public code oder beziehungsweise public money public data kämpfen. Also los geht's. Viel Spaß. Heute sprechen wir mal über Daten und so Softwareentwicklung. Denn lange hieß es bei uns in der Industrie data is a new oil. Und inzwischen würde ich sagen, gilt der Fakt, dass ein Unternehmen Daten zu verschiedenen Zwecken sammelt, eigentlich schon so als Standard. Ich will nicht sagen guter Ton, guter Ton ist es nämlich nicht, aber als Standard, sei es denn auch für Werbezwecken oder vielleicht für auch sinnvolle Anwendungsfälle, wie das eigene Produkt irgendwie mal mitzumessen. Und wie wird das benutzt?",
+      "start": 4120,
+      "end": 83404,
+      "confidence": 0.9150123076923076,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Zweitausendein.",
+      "start": 83412,
+      "end": 83918,
+      "confidence": 0.61039,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Ab und zu werden die Daten auch so gedreht und präsentiert, dass es für einen selber vorteilhaft ist, nämlich ab und zu auch in der Gesellschaft, ab und zu auch in der Politik. Und immer wenn Daten irgendwo fallen gelassen werden, dann habe ich ab und zu auch das Gefühl, oder haben wir auch im Vorgespräch hier entdeckt, dass Leute ihren Kopf ausschalten. Und all das ist nämlich so ein Feld, was Datenjournalisten eigentlich versuchen zu vermeiden, nämlich Daten in eine gewisse Richtung zu drehen und das Bild ein bisschen zu verdrehen. Deswegen sprechen wir heute im Speziellen über Datenjournalismus. Und Wolfgang und ich arbeiten zwar viel mit Daten, Datenbanken und Co. Aber wir lesen auch gerne Journalismus, zumindest die Ergebnisse. Aber deswegen haben wir uns einen Gast eingeladen, beziehungsweise eine Einladung versendet. Und vielen Dank, Michael Kreil, dass du auch dieser Einladung gefolgt bist. Hallo.",
+      "start": 84084,
+      "end": 134206,
+      "confidence": 0.937425,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Hallo.",
+      "start": 134318,
+      "end": 135010,
+      "confidence": 0.9796,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Ganz kurz für alle Hörerinnen und Hörer, wer bist du? Du bist Softwareentwickler im sogenannten Startup Hub in Berlin. Nein, du wohnst einfach nur in der Hauptstadt. Du hast Informatik an der TU Darmstadt studiert. Du bezeichnest dich beruflich als freier Datenjournalist und warst unter anderem auch für den bayerischen Rundfunk und für den SWR tätig. Und wie sich das für einen guten Softwareentwickler gehört, hast du natürlich auch ein Zeitprojekt, was ich auch sehr spannend finde, und zwar Wörser, teils mit der Motivation, dass die Medien auch mal Karten, also Maps, zur Visualisierung nutzen können. Denn deine Meinung ist, dass openstreetmap Karten nicht schön aussehen. Und die Meinung vieler Medien ist, dass kommerzielle Karten einfach viel zu teuer sind. Deswegen versuchst du einen komplett auf Free Software basierenden Stack zur Generierung, Verteilung und Nutzung von geobasierten Karten auf Basis von openstreetmap Daten zu machen. Ist das korrekt?",
+      "start": 135400,
+      "end": 197156,
+      "confidence": 0.9096352027027026,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Im Prinzip ja. Genau. Ja, also versatiles Org, da ist alles verlinkt, da findet man alle GitHub repositories und kann man sich auch die Daten runterladen. Und unter Tiles Versatiles Org haben wir auch einen freien Kartenserver, den jeder frei nutzen kann.",
+      "start": 197308,
+      "end": 211220,
+      "confidence": 0.8964457142857143,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Und was wäre jetzt schöner an eurer Lösung als gegenüber OpenStreetMaps?",
+      "start": 211380,
+      "end": 216700,
+      "confidence": 0.9141781818181819,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Das erste Schöne ist, sie ist komplett kostenlos. Und OpenStreetMap hat den Nachteil, dass OpenStreetMap versucht, eine Karte zu machen, in der so viele Details wie möglich drin sind. Ist ja sozusagen eine Karte hauptsächlich für die OpenStreetMap Community an sich. Wenn ich jetzt aber eine Datenvisualisierung machen will oder so, oder ich möchte das farblich anders haben, dann ist das extrem schwierig mit OpenStreetMap. Bei uns kann man den Kartenstil dann auch erst im Frontend festlegen.",
+      "start": 216820,
+      "end": 238984,
+      "confidence": 0.916611818181818,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Also less is more.",
+      "start": 239112,
+      "end": 240832,
+      "confidence": 0.82919,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Genau, du kannst auch die Sprache umstellen und so weiter. Das ganze bei OpenStreet noch nicht.",
+      "start": 240976,
+      "end": 244760,
+      "confidence": 0.8342212499999999,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Jetzt sind wir ja schon fast im Ÿousand, im ganzen Daten Universe schon drinnen und in der Visualisierung. Aber um da noch mal kurz rauszuzoomen, bevor wir in das ganze Thema Datenjournalismus einsteigen. Du bist ja Informatiker, beschäftigt mit Daten und bist dann aber irgendwie in diesen Journalismus reingekommen. Und für mich stellt sich natürlich immer die Frage, ich bin natürlich froh, dass es so Leute wie dich gibt, aber wenn man das vergleicht mit einem klassischen Job Ÿousand in der Privatwirtschaft, du bist Data Scientist oder sonst was, du sitzt da irgendwo, kümmerst dich um Daten, verdienst viel Geld. Und ich würde mal sagen, im Journalismus ist immer schwierig mit viel Geld verdienen. Und dann hat man auch noch so Probleme, dass man hin und wieder mal verklagt wird von irgendwelchen Ministerien oder sonst was. Also es ist ja schon ein täglicher Kampf. Was hat dich bewegt, überhaupt in den Journalismus zu gehen und nicht einfach, keine Ahnung, bei einer Bank Data Scientist zu sein und einfach gemütlich dort zu arbeiten und ausreichend viel Geld zu verdienen?",
+      "start": 244800,
+      "end": 304614,
+      "confidence": 0.9142623595505616,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Also zum einen macht es enorm viel Spaß, also es macht auch Spaß, verklagt zu werden. Also ein Journalist hat immer gesagt, guter Journalismus ist dann, wenn sich irgendjemand auf die Füße getreten fühlt, insbesondere, wenn ich halt gegen große Ministerien vorgehe. Aber es gibt noch einen anderen Aspekt und den halte ich für extrem wichtig. Datenjournalismus ist ja auch eine neue Form, mit der man vielleicht abstrakte Themen abdecken kann, die man vorher nicht abdecken konnte. Und es ist dann so eine Art Ÿousand. Na, wie soll ich denn das sagen? Ich meine, viele Leute haben seit ihrer schulischen Ausbildung auch nicht mehr viel über die Welt gelernt, außer über Journalismus. Und das heißt, man kann auch den Leuten da draußen irgendwie mal Aspekte zeigen, die sie vielleicht vor Ort nicht erfahren können. Also Journalismus ist ja so eine Art Fenster in die Welt und man kann halt damit auch Dinge bewegen und verändern.",
+      "start": 304782,
+      "end": 353668,
+      "confidence": 0.9398696774193556,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Jetzt habe ich ja schon in der Intro das Wort Datenjournalismus gedroppt. Wenn du jetzt den ersten Paragraph von Wikipedia zu diesem Artikel schreiben würdest, was wird da drinstehen? Wie würdest du sagen, wie würdest du Datenjournalismus beschreiben?",
+      "start": 413844,
+      "end": 427036,
+      "confidence": 0.9092173684210528,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Ja, das ist auch gleich die schwierigste Antwort von allen. Also das Problem ist, dass mit Datenjournalismus eigentlich zwei verschiedene Dinge verwendet werden. Man hat zwei Dinge, die man mit dem gleichen Begriff belegt und das macht es extrem schwierig. Datenjournalismus kommt ursprünglich, sagen wir mal so, aus den er er Jahren des letzten Jahrhunderts. Ÿousand. Da hat man dann im Prinzip während seiner Recherche nicht nur Dokumente und Experteninterviews verwendet, sondern hat auch angefangen Daten zu verwenden. Statistische Daten hat man sich die Wirtschaft angeguckt oder die Arbeitslosigkeit und so weiter. Und das war die ursprüngliche Definition von Datenjournalismus. Aber ich sage mal so, um die er herum gab es noch mal eine große Revolution, weil dann in den Online Medien neue Formen von Visualisierung möglich waren. Später kam ja dann auch HTML. Fünf konnte mit Frontends kann man einfach jetzt in Zwischenzeit geilen Scheiß machen. Und da kann man halt super schöne interaktive Datenvisualisierung, Infografiken machen, mit den Leuten rumspielen können und ihre Sachen selber entdecken können. Und das ist sozusagen nochmal Datenjournalismus oder irgendwie sowas. Und das war, glaube ich auch das Ding, was dieses Thema auch größer gemacht hat in den letzten 10 Jahren.",
+      "start": 427148,
+      "end": 496332,
+      "confidence": 0.9076233838383844,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Aber auch vor HTML gab es ja auch Flash. Also ich meine, damit konnte man ja auch eine ganze Menge machen. Und auch mit Action Script hieß es glaube ich damals.",
+      "start": 496476,
+      "end": 504244,
+      "confidence": 0.9028070967741934,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Genau, Flex war die Umgebung, da musste ich auch mitarbeiten. Zweitausendein konnte man die fertige Datenvisualisierung sogar in ein PDF packen und veröffentlichen. Toll.",
+      "start": 504332,
+      "end": 512218,
+      "confidence": 0.8911345833333336,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Und wo fängt jetzt Datenjournalismus an und wo hört es auf? Also das ist eine sehr technische Herangehensweise. Aber der Journalismus steckt ja auch irgendwo drin. Also wie schaut es so im Alltag aus oder was umfasst Datenjournalismus?",
+      "start": 512314,
+      "end": 527306,
+      "confidence": 0.8859,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Na, Journalismus an sich ist es erstmal nur eine regelmäßige Veröffentlichung, würde ich mal sagen, mit journalistischen Standards. Ich möchte gerne Themen einer Öffentlichkeit geben, die von gesellschaftlicher Relevanz sind. Ich möchte gerne dafür sorgen, dass ich da sozusagen auch gesellschaftliche Verantwortung übernehme, private Personen nicht zu entblößen, möchte gerne keine falschen Sachen veröffentlichen. Also der journalistische Aspekt ist im Prinzip eigentlich auch das Hauptgegengewicht zu Fake News und was so viel auf Social Media passiert, etc. Genau, das ist sozusagen der journalistische Aspekt von Datenjournalismus. Zweitausendein, um es mal ganz einfach zu halten.",
+      "start": 527418,
+      "end": 564676,
+      "confidence": 0.8980504255319153,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Ich komme jetzt vor mit der nächsten Frage, wie bei Lanz und Precht, aber wer entscheidet denn, was gesellschaftlich jetzt gerade relevant ist? Weil ich meine auch so eine Aufbereitung und so ein Artikel schreiben und allem drum und dran, das machst du ja nicht in 5 Minuten und heutzutage in der schnellen Zeit, keine Ahnung, heute morgen rennt die AfD noch irgendeine Demo und irgendwo auf der anderen Seite von Deutschland klebt sich irgendwer wieder an die Straße. Also wer entscheidet denn, was gesellschaftlich relevant ist und was was ein Datenjournalist, den dann alles ausgräbt?",
+      "start": 564748,
+      "end": 593212,
+      "confidence": 0.8847404166666664,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Also wann immer ich anfange eine Geschichte zu recherchieren, heißt das ja, ich muss sozusagen Zeit investieren. Es ist halt immer eine Investition in das eigentliche Thema. Und was man halt macht ist, man pitcht es in der Redaktion und erzählt was ist die Idee, was ist die these, wie könnte man es umsetzen, welche Daten gibt es dafür etc. Und dann entscheidet man im Prinzip gemeinsam, ist das Thema interessant, ist es relevant, interessiert das die Leute. Solchen Kriterien geht man da halt ran. Aber es gibt jetzt nicht irgendwie einen 100 % neutralen, objektiven Katalog, der definiert, was gesellschaftlich relevant ist und was nicht.",
+      "start": 593396,
+      "end": 628648,
+      "confidence": 0.9116812264150942,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Das heißt aber, es ist in gewisser Weise eine gemeinschaftliche Entscheidung. Es entscheidet selten eine Person alleine, sondern in irgendeiner Form eine Redaktion oder ein Team, was gemacht wird dementsprechend. Und wenn man das jetzt vergleicht mit einem klassischen Journalisten, ein Journalist kümmert sich auch um Daten und muss recherchieren. Also wo würdest du dann den Unterschied sehen zu einem ganz klassischen Journalisten, der halt auch in Excel da seine Daten vielleicht mal zusammensucht oder in der Recherche einfach ein paar Daten aufschreibt? Also Daten hat man ja immer eigentlich in der Recherche, egal was es betrifft.",
+      "start": 628784,
+      "end": 661818,
+      "confidence": 0.9356872164948454,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Ich glaube insbesondere wenn man die alte und neue Definition vom Datenjournalismus anguckt, ist der Hauptunterschied, dass dieser neue Datenjournalismus ein Softwareentwicklungsprozess ist. Ich habe im Prinzip einen agilen Software, ich male Wireframes und Mockups, überlege mir, wie die Datenvisualisierung aussehen könnte. Und das verbinde ich mit dem klassischen Journalismus recherche Prozess, dass man eine these aufstellt, dann überlegt man sich, wie müsste dann sozusagen das Ergebnis in der interaktiven Grafik oder Karte dann aussehen, baut das mal, probiert das einfach auch aus, vielleicht auch mal mit Excel einfach ausprobieren, entwickelt dann parallel sozusagen auch das Frontend dazu oder nötigerweise das backend und so weiter. Das sind im Prinzip zwei parallele Entwicklungsprozesse, ein journalistischer, ein redaktioneller Prozess und der andere ist dann der agile Softwareentwicklungsprozess. Und die laufen beide parallel und man versucht diese Fäden dann zusammenzuführen. Das ist sozusagen auch das Neue. Normalerweise haben Redaktionen keine Entwicklerkapazitäten und bei den datenjournalistischen Redaktionen sehr wohl.",
+      "start": 661914,
+      "end": 724010,
+      "confidence": 0.8969354193548383,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Würdest du dich als Fullstack Entwickler dann jetzt bezeichnen?",
+      "start": 724090,
+      "end": 727282,
+      "confidence": 0.9389966666666665,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Ja, zwangsläufig. Also man muss einmal zeigen, überall seine Finger drin haben können. Ja, das ergibt sich daraus.",
+      "start": 727426,
+      "end": 733882,
+      "confidence": 0.9412916666666666,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Und in der Praxis dann kommen dann irgendwelche Journalistinnen auf dich zu und sagen hey, wir würden da gerne was visualisieren, wir haben da Daten oder wir brauchen Daten, kannst du uns da helfen? Und ihr macht es dann gemeinsam oder sind es meistens so Projekte, die du dann komplett alleine abwickelst? Also wie sieht denn das in der Praxis so aus?",
+      "start": 733946,
+      "end": 753138,
+      "confidence": 0.9260287096774191,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Na, da gibt es auch unterschiedliche Varianten. Normalerweise entsteht dann oft auch ein Interesse in den anderen Redaktionen, mit den Daten zu dir zu kommen, zweitausendein. Sie kennen halt normalerweise die Grafikabteilung des Hauses, wo man denen Daten gibt und sie malen dann eine Grafik dazu und haben dann auch oft die Vorstellung, dass die Datenjournalisten im Prinzip zweiter sind als eine Grafikabteilung, die sich bewegende Grafiken macht. Aber dem ist nicht so. Eine Zusammenarbeit mit Redaktion ist oftmals auch extrem schwierig, weil die Arbeitsgeschwindigkeiten unterschiedlich sind. Dann entstehen so manchmal tektonische Spannungen. Die einen sind dann schneller und die anderen brauchen aber noch, weil sie noch zweitausendein Software entwickeln müssen. Ich glaube, die besten Geschichten sind, wenn sie aus der eigenen datenjournalistischen Redaktion entwickelt werden, dass man sozusagen von Anfang an eine visuelle Idee hat von der Geschichte, was ist überhaupt technisch machbar. Das sind alles Aspekte, die andere Redaktionen nicht überblicken können. Also ich würde sagen, ja, die besten datenjournalistischen Geschichten kommen aus der datenjournalistischen Redaktion selber.",
+      "start": 753194,
+      "end": 811574,
+      "confidence": 0.9318505917159762,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Sagst du jetzt gerade eigentlich, dass Ideen, die von Engineers getrieben werden, die besseren Ideen sind? Weil so ist das ja in der klassischen Firma ja auch.",
+      "start": 811662,
+      "end": 818080,
+      "confidence": 0.9449422222222222,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Na, ich glaube, da verkennt man so ein bisschen das Thema Datenjournalismus ist extrem interdisziplinär. Zum einen braucht man natürlich journalistische und technische Kompetenzen, man braucht da statistische Kompetenzen und man braucht halt auch Design Geschichten, müssen manchmal auch aus einer Design Perspektive UI UX gedacht werden. Und im Idealfall hast du dann ein interdisziplinäres Team, wo jeder so ein bisschen aus allen Perspektiven denken kann und man gemeinsam eine gute Lösung findet. Das sind nicht Ingenieure, die das dann vorantreiben, sondern das ist interdisziplinär.",
+      "start": 818160,
+      "end": 848962,
+      "confidence": 0.9021980000000002,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Jetzt sagst du ja schon, du bist mehr Fullstack Entwickler und auf der anderen Seite musst du ja schon auch tief in die Daten rein. Du musst Anomalien rausfinden, du musst die Daten säubern und du schaust dir die Daten an und vielleicht kennst du auch noch nicht ganz die Frage, die diese Daten vielleicht beantworten können. Vielleicht entdeckt man ja einen interessanten Fakt. Deswegen stelle ich mir gerade die Frage, wie verwandt ist denn der Datenjournalist mit den Feldern von Data Analytics und Data Science eigentlich?",
+      "start": 849146,
+      "end": 876790,
+      "confidence": 0.9417413793103446,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Oder gibt es überhaupt einen Unterschied?",
+      "start": 876870,
+      "end": 878398,
+      "confidence": 0.9730966666666666,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Das ist eine gute Frage. Also wenn man sich anguckt, welche Werkzeuge dort verwendet werden und auch welche Methoden, gibt es halt einfach extrem große Überlappungsbereiche. Ich würde eigentlich fast sagen, dass vielleicht Datenjournalismus, Data Science und Data Analytics das gleiche sind, nur dass man sie in unterschiedlichen Kontexten macht. Also Data Science mehr im akademischen Umfeld, Data Analytics mehr im Businessbereich und Datenjournalismus dann halt mehr in Redaktion. Und das natürlich das Ergebnis nochmal was anderes ist. Also bei Datenjournalismus entwickle ich oder stecke ich ja viel Ressourcen rein, ein schickes Frontend drumherum zu bauen. Das bei Data Analytics kann ich wahrscheinlich auf vorgefertigte Tools einfach zugreifen. Im Journalismus und im Science Bereich muss man eher immer das Rad neu erfinden.",
+      "start": 878534,
+      "end": 918562,
+      "confidence": 0.8818025409836066,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Das bedeutet Pandas und DJs und Chart Js und irgendwelche Python Skripte. Das ist auch dein täglich Brot.",
+      "start": 918626,
+      "end": 929194,
+      "confidence": 0.8724194444444443,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Genau, also man muss auch alles mal angefasst haben, damit man einen großen Werkzeugkasten hat, zweitausendein. Man hat dann aber auch irgendwann persönliche Meinung dazu, welche Frameworks man gerne mag oder nicht, ob sich jetzt Pandas lohnt oder ob man das dann nicht lieber in Node JS macht. Es gibt viele Datenjournalisten, die arbeiten eher mit R als Statistiksprache, haben dann aber nicht die Möglichkeiten, Frontends dazu zu bauen und so weiter. Also da gibt es unterschiedliche Geschmacksrichtungen, nicht so wirklich ein Standard oder so.",
+      "start": 929282,
+      "end": 959520,
+      "confidence": 0.9212038823529412,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Wie viele Redaktionen gibt es denn, die so eigene Datenjournalisten eigentlich haben? Ist das irgendwas, was stark im Kommen ist oder ist es aus finanziellen gründen sowieso selten eine Möglichkeit, weil du immer sagst Data Teams und ganze Teams. Also gibt es da wirklich große Teams? Also das klingt ja wirklich nach mehr als jetzt nur ein, zwei Personen eigentlich.",
+      "start": 959680,
+      "end": 980596,
+      "confidence": 0.8960115000000003,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Also ich würde mal schätzen in, ich weiß die Zahl nicht genau, aber ich sag mal vielleicht so sechs oder acht Teams gibt es in Deutschland, die aber, ich möchte da jetzt niemanden auf die Füße treten, auf unterschiedlichen Niveaus arbeiten. Da gibt es dann einige Leute, die vielleicht mit einem klassischen Journalismusausbildung dann sich so Richtung r Statistik und vielleicht ein bisschen mit Visualisierung auseinandergesetzt haben. Und dann gibt es halt große Teams. Ich glaube, da muss auf jeden Fall Zeit online erwähnen. Das ist einfach, ich weiß gar nicht, wie viele Leute da arbeiten, müssen jetzt 15 sein oder so. Und da sind mehr Designerinnen, Journalistinnen und Entwicklerinnen und Statistikerinnen drin. Die decken auch alle Fälle ab. Ein extrem großes professionelles, interdisziplinäres Team, aber ich glaube, die meisten sind eher ganz klein, sind dann vielleicht zweitausendein, zwei oder so, die dann noch irgendwo angedockt sind.",
+      "start": 980668,
+      "end": 1028134,
+      "confidence": 0.9126773469387752,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Um dann gleich mal die ketzerische Frage nachzuwerfen. Ich bin immer verantwortlich für die ketzerischen Fragen in diesem Podcast. Warum brauche ich denn überhaupt einen Daten Journalisten oder Journalistin und kann nicht einfach mit einem Jahreszugang bei Statista auch mir meine Daten holen und da Screenshots machen? Das würde ja vielleicht auch ausreichen.",
+      "start": 1028222,
+      "end": 1048814,
+      "confidence": 0.9153811320754713,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Ja, theoretisch wäre das möglich, aber es hat den Nachteil, dass ich halt nur die Standardauswertungen mir angucken kann, die halt jetzt statistisch dort anbietet. Es ist ja besonders interessant, wenn man es umdreht. Man geht mit einer Fragestellung an etwas ran und versucht dann die Daten zu finden und dann gucken, ob diese Daten diese Fragestellung beantworten können. Ich will ja dann auch irgendwie einen bestimmten Ausschnitt haben. Ich möchte vielleicht auch unterschiedliche Datenquellen miteinander kombinieren und vergleichen können. Und das ist etwas, wo man halt das sozusagen von sich aus selber entwickeln muss. Dazu kommt halt auch, es gibt bestimmte Probleme mit Statistiken, da können wir später drüber sprechen, da muss ich einfach Erfahrung haben. Nicht alles, was eine Zahl ist, ist richtig, hat eine Aussagekraft.",
+      "start": 1048982,
+      "end": 1090502,
+      "confidence": 0.9253395312499995,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Aber verwendest du sowas wie statista, also da, wo dann wirklich auch Leute sitzen und aggregieren die Daten aus gewissen Quellen? Oder willst du dich immer auf die Grunddaten verlassen? Oder wie sinnvoll findest du überhaupt sowas wie Statista?",
+      "start": 1090646,
+      "end": 1104678,
+      "confidence": 0.9511387179487182,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Also ich mag meine Daten immer roh. Ja, sage ich. Also ich will die auch nicht vorverarbeitet haben, ich will mir gerne die Rohdaten anschauen. Und um Statista sage ich für dich, also ich würde auch eher einen Bogen drumherum machen. Ich habe schon wissenschaftliche Arbeiten gesehen, die darunter geschrieben haben Quelle Statista zweitausendein und das müsste eigentlich Punkt Abzug geben, weil Statista keine Quelle ist. Dazu halte ich das. Ich halte das Unternehmen auch für ein bisschen problematisch, weil sie viele Daten, die sie verwenden, unter einer CC BY Lizenz stehen, aber die Quelle nicht runterschreiben, sondern da musst du dann sozusagen Premiumkunde sein, um zu wissen, wo die Daten herkommen. Das ist eigentlich ein Lizenzverstoß, den Verwaltung irgendwie akzeptiert.",
+      "start": 1104814,
+      "end": 1139964,
+      "confidence": 0.8973522314049586,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Jetzt ist das Endresultat ja in der Regel ein Artikel oder eine interaktive Webseite oder irgendwie sowas. Auf jeden Fall etwas mehr oder weniger statisches. Und in meinem Software Engineering Herz entwickelt sich gerade so eine schöne blaue Welt wie von ihr macht immer nur Greenfield Projekte, ihr macht immer nur one of Projekte, weil der Artikel ist ja statisch, muss da keine mit Handlings gemacht werden. Also macht ihr ein Projekt und könnt euch von Haus aus jeden Monat austoben.",
+      "start": 1140132,
+      "end": 1168770,
+      "confidence": 0.9141748148148146,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Also es kommt drauf an. Am liebsten sind mir die Projekte, die man innerhalb von, sagen wir mal ein, zwei Wochen von der Idee Daten Scraping aufbereiten, Visualisierung und raus damit und dann muss ich es nie wieder anfassen. Das sind mir die die allerliebsten Projekte. Aber dann gibt's halt auch, weißt du, dann kommt halt meine Pandemie, ja, und dann musst du dich jahrelang nur mit Infektionszahlen und Impfstatistiken und so weiter auseinandersetzen und dann fängst du halt an, auch eine Infrastruktur aufzubauen, mit der du dann immer wieder neue Fragen beantworten kannst, beispielsweise. Also da hast du dann auch etwas aufgebaut, was du tatsächlich maintain pflegen und neue Features einbauen musst etc. Jetzt hat.",
+      "start": 1169310,
+      "end": 1206498,
+      "confidence": 0.907621551724137,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Der Wolfgang ja Statista schon als als nicht Rohdatenportal angesprochen und du magst ja.",
+      "start": 1206514,
+      "end": 1211826,
+      "confidence": 0.8468178571428571,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Ich möchte übrigens keine Werbung für Statista machen, aber ich glaube, es sind so die bekanntesten. Ich weiß gar nicht, ob es da solche Plattformen ähnliche noch andere gibt, die man erwähnen könnte oder müsste, um Ausgewogenheit herzustellen, aber nur so als Beispiel.",
+      "start": 1211858,
+      "end": 1225202,
+      "confidence": 0.9373941860465116,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Genau, es gibt ja auch so was wie Our World and Data beispielsweise und.",
+      "start": 1225306,
+      "end": 1228922,
+      "confidence": 0.8819049999999999,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Auch wobei die verkaufen ja die Daten nicht. Statista verkauft ja sehr wohl dann auch Daten.",
+      "start": 1228946,
+      "end": 1233146,
+      "confidence": 0.8991949999999999,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Ÿousand.",
+      "start": 1233178,
+      "end": 1233444,
+      "confidence": 0.51336,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Genau, insbesondere die Datenvisualisierung verkaufen sie.",
+      "start": 1233522,
+      "end": 1236704,
+      "confidence": 0.8596816666666666,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Aber meine Frage ist eigentlich, wo bekommst du denn deine Rohdaten her? Weil ich meine, in Deutschland herrscht ja leider nicht public money, public Code oder ja, open data gibt es auch, aber ich weiß nicht, ich glaube, die Bahn stellt mehr Open Data zur Verfügung als der ganze Staat. Deswegen, wo kriegst du denn deine Rohdaten her? Musst du die immer irgendwie anfragen, einklagen oder wie? Wo kriegt man die her?",
+      "start": 1236872,
+      "end": 1259702,
+      "confidence": 0.9230345833333333,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Also die allererste Anlaufstelle sind auf jeden Fall die statistischen Ämter, also das statistische Bundesamt, aber auch die Landesämter haben eigene Datenportale mit sehr, sehr vielen Themen, wo sie Statistiken sehr hoher Qualität veröffentlichen. Auf europäischer Ebene gibt es auch das Eurostat beispielsweise, da findet man immer was. Kann ich auch jedem empfehlen, da sich mal einen Account anzulegen und mal im Detail anzugucken, was es da alles gibt. Ÿousand ist auch wirklich interessant, da wird jeder mal eine Frage gehabt haben, die er auch über ein statistisches Bundesamt hätte klären können.",
+      "start": 1259856,
+      "end": 1294432,
+      "confidence": 0.9289035869565216,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Aber die sind alle kostenlos, oder?",
+      "start": 1294616,
+      "end": 1296344,
+      "confidence": 0.9791300000000001,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Die sind alle kostenlos, genau. Und da stehen unter cc buy sozusagen. Normalerweise muss man das statistische Bundesamt dann erwähnen unter der Grafik.",
+      "start": 1296432,
+      "end": 1304320,
+      "confidence": 0.8805043478260867,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Das heißt, die verkaufen gar nichts, also die haben keine Services, die man einkaufen könnte jetzt als Firma oder so.",
+      "start": 1304400,
+      "end": 1310568,
+      "confidence": 0.9510794999999996,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Das ist eines der wenigen Ämter, die kein Geschäftsmodell haben. Richtig. Man kann aber auch Sonderauswertungen von ihnen bekommen, das machen sie aber üblicherweise eher aus einem für die Presse. Also ich habe jetzt irgendein Spezialthema, wo es vielleicht auch mehr darum geht, dichter an personenbezogene Daten ranzugehen, die sie natürlich nicht veröffentlichen. Aber sie würden dir eine Sonderauswertung machen? Ich kann mich erinnern, ich hätte mal vom Land Berlin eine Sonderauswertung bekommen, für wann die Leute zweitausendein geboren sind und wann sie sterben. Und zwar nur der Tag im Jahr. Ich wollte gucken, ob es einen Zusammenhang gibt, ob Leute insbesondere 80, 90 sind, ob sie nach ihrem Geburtstag sterben, ob sie sozusagen tatsächlich noch versuchen, das achtzigste Lebensjahr zu erreichen oder sowas. Und da kriegt man dann halt Sonderauswertung dazu.",
+      "start": 1310664,
+      "end": 1355978,
+      "confidence": 0.910477121212121,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Was war der Outcome?",
+      "start": 1356114,
+      "end": 1357282,
+      "confidence": 0.8883300000000001,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Weiß ich nicht mehr, das war jetzt 10 Jahre her. Also das ist ganz komisch, aber ich weiß nicht, ob ihr das kennt, man läuft über einen Friedhof, aus Gründen auch immer, man hat vielleicht einen Verwandten verloren, geht über den Friedhof, guckt auf die anderen Grabsteine und dann sieht man manchmal Muster in den Zahlen, dass z.B. geburtsdatum, Sterbedatum dicht beieinander liegen. Und dann kommt der Datenjournalist und stellt sich natürlich eine Frage, vielleicht gibt es eine these und vielleicht überprüfen die halt mal.",
+      "start": 1357386,
+      "end": 1378294,
+      "confidence": 0.9276196470588236,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Ja gut, aber wenn du über den Friedhof läufst, dann hört sich das schon sehr stark nach Confirmation Bias an. So nach dem Motto, ich will mir jetzt einen roten Golf kaufen und auf der Straße sehe ich nur noch rote Golfs.",
+      "start": 1378422,
+      "end": 1385894,
+      "confidence": 0.8799435714285713,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Genau. Und deswegen musst du dann sozusagen journalistisch rangehen und eine these aufstellen, die Daten beschaffen und überprüfen, ob sie stimmt oder nicht stimmt.",
+      "start": 1386062,
+      "end": 1393790,
+      "confidence": 0.9197537499999998,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Alles interessant. Ich bin ja auch ein großer Fan von Daten und mache viel mit Daten mein Leben lang. Schon, aber am Friedhof habe ich noch nie Patterns erkannt. Da genieße ich eigentlich immer die Friedhofstimmung. Aber gut, das ist vielleicht ein anderer Punkt.",
+      "start": 1393910,
+      "end": 1405242,
+      "confidence": 0.9318125000000003,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Ach so, wir haben noch Behörden hier vergessen. Also es gibt noch so ganz viele andere Behörden. Es gibt das Bundesumweltministerium, es gibt das Justizministerium, die Bundesagentur für Arbeit, die haben auch alle ganz viele Datenportale, wo sie z.B. arbeitslosigkeit im Detail analysieren und so weiter. Bundeskriminalamt, die die polizeiliche Kriminalitätsstatistik veröffentlicht und so weiter und so fort. Und das Gute ist, dass so ein paar Ecken in Deutschland anfangen, auch Datenportale aufzubauen. Was weiß ich, Daten Berlin DE, hamburger Eintransparenzportal, es gibt Datagav DE oder Govdata DE, das ist das Datenportal des Bundes und das kommt so nach und nach. Da findet man echt auch immer spannende Sachen, auch uralte Luftbildaufnahmen, mit denen man nochmal interessante Sachen machen kann.",
+      "start": 1405306,
+      "end": 1452710,
+      "confidence": 0.9191638333333335,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Wie ist deine Erfahrung bisher mit so Ministerien und Ämtern, wenn es um Daten geht? Sind die eher offen dafür oder ist es oh je, da kommt schon wieder irgend so ein Datenjournalist, jetzt will da schon wieder irgendwas rausfinden und was böse ist uns gegenüber? Also ist das so eine so eine negative Grundstimmung oder ist es eher ein Partner, wie ein guter Partner, mit dem man gut zusammenarbeiten kann?",
+      "start": 1453130,
+      "end": 1476726,
+      "confidence": 0.8601174647887326,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Es kommt darauf an. Ich habe das Gefühl, dass alle Ämter einfach durch Aufgabenverdichtung überfordert sind. Also sie haben so viel zu tun, dass sie gar nicht hinterherkommen. Auf der anderen Seite, gerade wenn du natürlich mit einer Datenfrage zu den entsprechenden Experten und Experten im Haus Verbindung hast, die machen das natürlich auch aus Leidenschaft. Sie sitzen ja dort, weil sie sich gerne mit Daten beschäftigen wollen. Und es ist natürlich ein extrem großer regionaler Unterschied. In einer vielleicht einer kleinen Kommune sieht es ein bisschen anders aus, als beispielsweise im statistischen Bundesamt. Ja, ich meine, wir erinnern uns, in der Pandemie waren die ganzen Gesundheitsämter mit einmal komplett überfordert, auch mit der Zahl der Anfragen von Privatpersonen etc. Also man macht durchmischte Erfahrungen in der Zusammenarbeit mit der Verwaltung.",
+      "start": 1476838,
+      "end": 1519594,
+      "confidence": 0.928827709923664,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Woher bekommt man denn die Daten, wenn man sie nicht freiwillig bekommt?",
+      "start": 1519722,
+      "end": 1523530,
+      "confidence": 0.9253133333333333,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Also man kann klassischerweise einen Scraper bemühen. Also man schreibt dann ein Stück Software, das z.B. versucht eine Webseite auszulesen. Oftmals werden da Daten wie als HTML veröffentlicht. Das haben wir z.B. in der Pandemie gemacht. Viele Gesundheitsämter hatten dann die Zahlen auf ihrer Webseite veröffentlicht und dann schreibt sie als Scraper, die das alles abgrasen, viele Verwaltungen haben halt nicht die Ressourcen, da eine API oder eine download Möglichkeit anzubieten.",
+      "start": 1526230,
+      "end": 1552534,
+      "confidence": 0.8808407042253524,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Wie schreibst du deine Scraper? Hast du da irgendwie ein Lieblingstool oder?",
+      "start": 1552662,
+      "end": 1556342,
+      "confidence": 0.8621808333333331,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Also ich habe ein paar Sachen ausprobiert. Ich glaube, die meisten Leute schreiben sie gerne Python. Ich bevorzuge Node JS, das macht mehr Spaß.",
+      "start": 1556526,
+      "end": 1562854,
+      "confidence": 0.9522529166666666,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Aber jetzt ohne spezielle Library, da schreibst du es einfach selber.",
+      "start": 1562982,
+      "end": 1567046,
+      "confidence": 0.8770763636363635,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Genau. Und ich habe auch so ein bisschen die Tendenz, dann eher die Rohdaten zu komprimieren und auf irgendeinen Storage zu legen als Archiv. Andere machen direkt eher eine Pipeline und schreiben das z.B. eine Datenbank, wo dann irgendwie vorne eine Visualisierung dranhängt. Das hat so alles seine vor und seine Nachteile.",
+      "start": 1567198,
+      "end": 1583210,
+      "confidence": 0.9007521153846153,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Und jetzt, wenn du Daten scrapst, dann ist es ja so ein Graubereich, oder? Sie gehören dir ja eigentlich nicht, wenn sie nicht offiziell mit einer Lizenz zur Verfügung gestellt wurden. Darfst du das dann dementsprechend veröffentlichen, auch wenn es jetzt aggregiert ist? Oder wie transparent muss man da sein, wenn was auch Ÿousand im öffentlichen Interesse ist? Darfst du dann irgendwie auch Graubereich halb illegal auf Daten zugreifen?",
+      "start": 1583290,
+      "end": 1607672,
+      "confidence": 0.9425286956521739,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Also zum einen muss man sagen, das Urheberrecht ist hier tatsächlich ein Riesenproblem. Das Urheberrecht ist ja eigentlich geschaffen worden, um freischaffende Künstlerinnen und Künstlern irgendwie ein überleben zu sichern, dass sie halt Urheberrecht an ihrem Buch haben oder an ihrem Kunstwerk oder natürlich Journalisten auch an ihren Texten. Als Softwareentwickler habe ich Urheberrecht an meinem Code. Aber dass man Urheberrechte auf Daten hat, die ja eigentlich Fakten darstellen, ist ein bisschen merkwürdig. Und das ist auch ein bisschen konstruiert. Es gibt da das Datenbankherstellerrecht, das aber sich eher darauf beruft, dass man sozusagen eine kreative Eigenleistung erbracht hat, welche Daten man in seine Datenbank reinmacht. Das heißt also nicht der Eintrag an sich ist urheberrechtlich geschützt, sondern die Auswahl, was da drin ist. Ich habe auch so ein bisschen den Eindruck, dass viele Verwaltungen und auch Unternehmen sich da auf ein Urheberrecht berufen für ihre Daten, was nicht ganz legal ist. Also ich habe da auch schon oft sehr erfolgreich dagegen juristisch vorgehen können.",
+      "start": 1607736,
+      "end": 1661844,
+      "confidence": 0.9252530909090908,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Jetzt bist ja du auch geklagt worden damals von von irgendeinem Landesamt in Bayern oder sowas.",
+      "start": 1661972,
+      "end": 1667692,
+      "confidence": 0.8944300000000001,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Genau, dem Landesamt für Digitalisierung und Vermessung.",
+      "start": 1667756,
+      "end": 1670868,
+      "confidence": 0.949712857142857,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Warum machen diese Ämter das? Weil es sind ja eigentlich nur unter Anführungszeichen öffentliche Daten. Also in dem Fall waren es glaube ich Adressdaten, oder?",
+      "start": 1671044,
+      "end": 1679716,
+      "confidence": 0.9744356000000001,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Genau, das waren die Hauskoordinaten, also der offizielle Katalog aller Adressen in Deutschland, wo sie sich befinden. Wenn ich dann wie, keine Ahnung was, Alexanderplatz vier oder so habe, welche Geokoordinaten hat diese Adresse. Das braucht im Prinzip jeder Pizzalieferdienst, muss halt wissen, wo sich eine Adresse befindet. Und diese Daten hatten wir veröffentlicht. Daraufhin hat sich dann das Landesamt für Vermessung und Digitalisierung Bayern ermüssigt, die Staatsanwaltschaft einzuschalten. Und dann haben wir da auch, sind wir da juristisch vorgegangen und auch halbwegs erfolgreich. Ich glaube, dass so ein Begriff wie Daten sind das neue Öl da den Leuten die falschen Vorstellungen gegeben haben. Also insbesondere bei Verwaltungen habe ich manchmal den Eindruck, dass sie da eher lieber versuchen, ein Startup zu sein mit einem Geschäftsmodell und Gewinne zu generieren, weil sie dann damit auch mehr Stellen finanzieren können. Ich finde das extrem schwierig. Ähnlich wie bei public money public Code müssen eigentlich auch steuerfinanzierte Daten allen kostenlos zur Verfügung gestellt werden. Und das funktioniert ja auch. Also Hauskoordinaten kaufst du in Deutschland für Euro, in anderen europäischen Ländern ist sind die kostenlos. Luftbildaufnahmen kriegst du fast von allen europäischen Ländern, also so digitale Autofotos, also Fotos von von oben jährlich kriegst du von allen europäischen Ländern. In Deutschland kosten die €1,3 Millionen. Ja, das ist einfach, da kriege ich Blutdruck, wenn ich das schon höre. Also ja, das ist, das ist extrem schwierig. Ach so, und um noch auf deine Frage zurückzukommen. Als Journalist und Journalistin darfst du natürlich nichts Illegales machen. Es kann aber sein, dass es bestimmte Aspekte gibt, wo dann ein Gericht hinterher entscheiden kann, dass hier das öffentliche Interesse überwiegt. Dass man sagen kann, ja, du hast jetzt hier zwar jemanden die Urheberrechte verletzt oder hast dir ein Zitat veröffentlicht, wogegen dann jemand davor geht oder so. Aber im Endeffekt war das öffentlich rechtliche Interesse, also sozusagen die Fähigkeit, sich da eine Meinung zu bilden, für die Öffentlichkeit wichtiger als da private Interessen.",
+      "start": 1679828,
+      "end": 1795624,
+      "confidence": 0.9119486280487809,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Das heißt aber, du darfst natürlich nichts Illegales tun, aber du musst quasi das Risiko dann eingehen, etwas Illegales zu tun und hoffen, dass es im Nachhinein aufgehoben wird wegen öffentlichen Interesses.",
+      "start": 1795752,
+      "end": 1806740,
+      "confidence": 0.9388928125000002,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Naja, also gerade wenn du im investigativen Journalismus unterwegs bist, wo du dann vielleicht auch mal verdeckt ermittelst, also bis dann irgendwie, keine Ahnung, willst was über das Gesundheitswesen machen und dann meldest du dich einfach mal als Pflegekraft an in einem Krankenhaus und dann kannst du so ein bisschen mal hinter die Kulissen gucken und so weiter. Du arbeitest schon so mal ein bisschen in einem Graubereich drin. Zum Glück gibt es in den großen Medienhäusern auch Hausjustiziare, die explizit dafür da sind, dich zu beraten und auch zu sagen, okay, das lässt sich jetzt hier juristisch auch nicht mehr verteidigen, oder hier sind einfach rote Linien, die man nicht überschreiten darf. Also wir haben jetzt nicht das Recht wie ein Verfassungsschutz oder sowas, aber ich glaube, dass man als journalistisches Medium mehr Möglichkeiten hat als Privatpersonen.",
+      "start": 1807200,
+      "end": 1852460,
+      "confidence": 0.9275939130434785,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Jetzt ist es ja im Umgang mit Daten auch so, dass man Daten zwar immer Fakten darstellen, ganz klar, sofern die Datengrundlage korrekt ist, aber man kann ja auch einfach die Hälfte der Daten nicht erwähnen. Das habe ich ab und zu Gefühl, machen ziemlich viele Parteien, die drehen und wenden ihre Daten und Visualisierungen so, wie es ihnen gefällt. Deswegen meine Frage an dich, und zwar sehr generell gefragt, auf was muss ich denn eigentlich mal mit beim Umgang mit Daten bzw. Statistiken beachten? Also welche drei Sachen oder vier Sachen würdest du jetzt mitgeben? Okay, zweitausendein, das ist der Crashkurs 101, wenn du mit Daten arbeitest.",
+      "start": 1852540,
+      "end": 1888982,
+      "confidence": 0.9130712037037038,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Hier drauf muss achten, okay, also das sind nicht drei, vier Sachen, also da können Sachen schief laufen, aber so, ich glaube, den wichtigsten Begriff, den man kennen sollte, ist der Begriff Bias und im deutschen Verzerrung. Eine statistische Verzerrung, die dadurch kommen kann, dass sozusagen bei der Erhebung der Daten Einflüsse eine Rolle gespielt haben. Also nehmen wir mal sowas wie eine Sonntagsfrage. Also ich frage die Bevölkerung, wen würden sie am nächsten Sonntag, welche Partei würden sie wählen? Zweitausendein. Und normalerweise werden solche Umfragen gemacht, indem man halt Leute anruft, dann nimmst du eine zufällige Telefonnummer aus dem Telefonbuch, rufst die halt an und dann stellst du ihnen die Frage. Das Problem ist aber, nicht alle Leute stehen im Telefonbuch drin. Üblicherweise die Festnetztelefonnummer. Wer hat das? Hat das einer von euch? Wollte wahrscheinlich auch nicht sagen, aber ich.",
+      "start": 1889006,
+      "end": 1934244,
+      "confidence": 0.8986443262411346,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Habe noch eins, ich habe noch eins.",
+      "start": 1934252,
+      "end": 1935300,
+      "confidence": 0.9261328571428571,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Ein Telefonbuch.",
+      "start": 1935380,
+      "end": 1936444,
+      "confidence": 0.80311,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Nein, Entschuldigung, ich habe ein Festnetztelefon noch, aber aus dem Telefonbuch habe ich mich sogar mal aktiv austragen lassen.",
+      "start": 1936612,
+      "end": 1943402,
+      "confidence": 0.8634073684210527,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Genau. Man kann auch davon ausgehen, dass Leute, die im Telefonbuch drinstehen, vielleicht auch eher die ältere Generation ist. Das heißt, würde ich jetzt so eine Sonntagsfrage per Telefon machen, dann ist natürlich die Wahrscheinlichkeit relativ groß, dass so CDU oder SPD gewählt werden. Grüne wahrscheinlich, was die jüngeren Wähler anspricht, eher weniger. Und damit hast du einen Bias in den Daten drin, den musst du irgendwie korrigieren. Da gibt es unterschiedliche Methoden dafür. Das ist eines der häufigsten Probleme mit Statistiken. Ich kann aus den Zahlen zwar irgendwie ganz viele Aussagen rauszwingen, aber ich muss jede einzelne Aussage, die ich da raushole, noch mal überprüfen. Ist sie nicht verzerrt worden? Durch einen Bias.",
+      "start": 1943516,
+      "end": 1983634,
+      "confidence": 0.9204263157894738,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Aber wie macht man das denn bei einer Telefonumfrage? Fragt man dann beim Telefonat die Gegenfrage sie haben jetzt CDU gesagt, warum nicht die Grünen? Also ich meine, wen würden ihre Enkel wählen?",
+      "start": 1983762,
+      "end": 1994714,
+      "confidence": 0.916200303030303,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Nein, also der Klassiker ist, dass du nach dem Alter fragst und du machst dann hinterher eine Statistik nach Altersgruppen, was sie für eine Partei wählen würden und du gleichst es dann hinterher aus Ÿousand, dass du sozusagen die jüngeren Fragen beantworter dann stärker zählst und das kannst du auch statistisch sauberer machen. Du weißt ja wie die Bevölkerungs und Altersverteilung ist in Deutschland und das kannst du z.B. benutzen. Du musst natürlich gucken, sind diese Verzerrungen auch unabhängig vom Bundesland? Ist also ist z.B. die Altersstruktur in Ostdeutschland die gleiche wie in Westdeutschland, Stadt versus Land und so weiter. Also kannst viele verschiedene Biases drin haben und du kannst dann versuchen sie mit statistischen Methoden ein bisschen zu säubern, weil.",
+      "start": 1994802,
+      "end": 2032828,
+      "confidence": 0.9092328099173557,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Es ja genauso, dass das umgekehrte, wenn du nur eine online Umfrage machst, dann triffst du ja wahrscheinlich nur eher die jüngeren oder die moderneren und wählen darf halt doch noch jeder, egal wie alt er ist und dementsprechend musst du das halt auch noch mit rein rechnen.",
+      "start": 2032844,
+      "end": 2047404,
+      "confidence": 0.9008347916666667,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Genau das ist ja auch bei den ganzen Twitter Umfragen oder x Umfragen, die da machen kannst. Du hast natürlich extrem starken Beiß dadurch, dass deine Follower drauf springen oder weil halt mal ein Flashmob rüber rollt und dann deine Statistik verfälscht. Also das ist auf jeden Fall keine gute Datenquelle, so eine Online Umfrage. Mir ist aufgefallen meiner Arbeit, dass es eine Statistik gibt, in der man alle Probleme, die es mit Statistiken geben kann, finden kann und das ist die polizeiliche Kriminalitätsstatistik. Die ist voll mit Biases und Verschiebungen drin und mir läuft es immer kalt den Rücken runter, wenn dann halt Medien darüber berichten und da ihre Schlüsse daraus ziehen und so. Da wird halt echt ganz ganz viel falsch gemacht. Zweitausendein ich hatte mal mit Polizisten unterhalten und die haben halt gesagt, das ist für uns ein Arbeitsnachweis, ich bin den ganzen Tag gehe ich auf Streife oder möchte ich gerne nach Hause, aber ich muss noch mal ins Büro und muss dann irgendwie die Dokumentation machen, also Formulare ausfüllen und so und das ist im Prinzip machen, dass die Leute damit der Arbeitgeber sieht, dass sie halt dann tagsüber was gearbeitet haben und dass das aber dann deutschlandweit zusammengesammelt wird und daraus eine polizeiliche Kriminalitätsstatistik generiert wird, auf der dann politische Entscheidung getroffen werden. Ich finde Statistiken gut, wo die Datenerheber Lust haben auf diese Statistik und das ist bei der PKS nicht so.",
+      "start": 2047492,
+      "end": 2117150,
+      "confidence": 0.9042161506276145,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Das bedeutet aber jetzt nicht, dass statistische Handwerksfehler bei der Kriminalstatistik gemacht werden, sondern dass die Datengrundlage einfach nicht ausgiebig ist.",
+      "start": 2117310,
+      "end": 2125470,
+      "confidence": 0.9337142857142859,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Genau, also die Datengrundlage ist schwierig. Man darf ja auch nicht vergessen, sie misst ja genau genommen auch gar nicht Kriminalität, sondern tatverdächtige, also vermutete Straftaten. Oder um es anders zu sagen, da werden Straftaten drin sein, die nie stattgefunden haben, weil das jemand behauptet. Und auf der anderen Seite sind ganz viele Straftaten nicht drin, weil es halt das Dunkelfeld gibt. Es gibt bestimmte Sachen, die nicht zur Anzeige gebracht werden, die sind halt auch nicht da drin.",
+      "start": 2125590,
+      "end": 2150946,
+      "confidence": 0.9458416455696201,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Ist es eigentlich wirklich ein Datensatz oder ist das einfach so ein PDF?",
+      "start": 2151098,
+      "end": 2154690,
+      "confidence": 0.8772646153846152,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Das ist tatsächlich eine excel Tabelle und sogar auch mehrere, die super detailliert ausgewertet werden. Also auch glaube ich, runter bis zum Landkreis kann man sich halt angucken. Und da kann man dann als Bild Zeitung natürlich mal sagen, weißt du, der gefährlichste Landkreis in Deutschland und so weiter. Also das kann man sich sehr detailliert anschauen. Aber die Schlüsse, die daraus ausgezogen werden.",
+      "start": 2154850,
+      "end": 2172550,
+      "confidence": 0.9220650000000001,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Sind, weil was ich oft beobachtet habe, ist bei so öffentlichen Statistiken, die jetzt oft auch keine Datensätze sind, die man dann über die Jahre hinweg vergleichen kann, sondern es ist so jedes Jahr irgendein PDF und teilweise kommt mir vor, dann wird wieder irgendwas anderes verglichen und die Terminologie ändert sich leicht und irgendwie es kommt eine Kategorie dazu. Also die Vergleichbarkeit ist teilweise extrem schwierig, vor allem mit zu PDF Reports, wo einfach zwischendrin sind mal irgendwelche Charts gebaut, wo man nicht genau weiß, woher kommen die. Kannst du das nachvollziehen oder ist es nur meine persönliche?",
+      "start": 2172590,
+      "end": 2208040,
+      "confidence": 0.9182535353535356,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Nein, das ist auch vollkommen richtig. Das BKA veröffentlicht ja selber auch so ein 45 seitiges PDF Dokument, wo sie von Jahr zu Jahr sagen, welche Paragraphen haben sich denn jetzt im BGB geändert und jetzt wird sozusagen in dieser Kategorie was Neues gemessen. Also der Klassiker ist z.B. bis 2016 waren so Straftaten gegen die sexuelle Selbstbestimmung, da waren dann halt sowas wie Vergewaltigung, Nötigung und so weiter drin. Und 2017 wurde das Gesetz geändert und es wurde jetzt auch sexuelle Belästigung aufgenommen und dann ist natürlich diese Kategorie sprunghaft um 9000 Fälle angesprungen. Aber genau genommen wurde 2017 was anderes gemessen als 2000 Sechzehnte. Und da muss man halt extrem vorsichtig sein. Also gerade wenn du so lange Zeit reinmachen möchtest, möchtest Kriminalität in bestimmten Fällen für die letzten dreiig Jahre angucken.",
+      "start": 2208120,
+      "end": 2256532,
+      "confidence": 0.9263312686567167,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Aber wie würde man das denn korrekterweise machen? Würde man, weil ich meine, Sachen ändern sich, die Welt ist komplex und ich finde, das auch okay, wenn man die Sachen anpasst, aber sollte man die sexuelle Belästigung dann für zwei, drei, vier Jahre gesondert irgendwie ausweisen oder ähnliches, damit man noch die Ursprungszahl hat mit dem Vorjahr, damit die vergleichbar ist oder wie, was würde man da machen, um das korrekt bei handwerklich korrekt zu machen?",
+      "start": 2256596,
+      "end": 2281332,
+      "confidence": 0.9426586842105263,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Also im Idealfall, wenn du jetzt über die Zeit hinweg zweitausendein Dinge vergleichst, also insbesondere zwischen den Jahren, musst du halt gucken, ob ob du nur Dinge vergleichst, die identisch sind. Das heißt, du nimmst dir dann einfach eine Kategorie wie Diebstahl beispielsweise, die sich jetzt irgendwie nicht verändert hat und du kannst ja in die Straftaten auch sozusagen tiefer reinzoomen, die werden dann unter aufgeschlüsselt und dann nimmst du halt was auf ganz unterster Ebene, etwas, was ich halt über die Zeit nicht verändert hat. Und das andere du musst natürlich auch aufpassen, dass du Straftaten untereinander nicht vergleichen kannst. Du kannst jetzt nicht Mord mit Diebstahl vergleichen und wenn es Berichterstattung über die Kriminalität gibt, wird z.B. immer von Straftaten und Tatverdächtigen. Aber du vergleichst hier gerade nicht Äpfel und Birnen, sondern Melonen und Blaubeeren. Also ein Großteil der Straftaten sind halt einfach Kleinstkriminalität und das wovor die Leute aber Angst haben, irgendwie im Park von einem Mörder angegriffen zu werden, also das ist ja, das ist ja ein winziges Promillechen und spielt eigentlich gar keine Rolle da drin. Aber sozusagen die Summe an Tatverdächtigen und die Summe der an Straftaten, das ist also über die Straftaten hinweg zusammen zu addieren, davon kann ich abraten.",
+      "start": 2281436,
+      "end": 2350014,
+      "confidence": 0.9130788405797101,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Eine Sache, die ich zum Thema Umgang mit Daten und Statistiken vor kurzem gelesen habe, war ein, ich glaube den kann man auch Indie Hacker bezeichnen, Peter Leavers, verlinke ich unten in den Show Notes. Er hatte zweitausendein vor kurzem einen neuen ETF, einen virtuellen ETF veröffentlicht und zwar den Dethlift ETF. Was er gemacht hat ist, er hat sich Firmen, die im Standard Poor's gelistet sind, genommen und hat überprüft, welcher CEO ins Fitnessstudio geht regelmäßig und hat dann diesen Trend gegen den normalen Standard Poor's gesetzt und hat gesagt, diese Firmen, wo die CEOs halt trainieren gehen, outperformt den Standard Poor's, ich glaube um ein 14 fach oder zweifach oder ist auf jeden Fall stärkerer Anstieg. Und da kommt es natürlich ins berühmte Feld der Korrelation und Kausalität. Ja, was kannst du dazu sagen?",
+      "start": 2350182,
+      "end": 2403810,
+      "confidence": 0.9073520588235297,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Also der Standardsatz ist immer Korrelation ist nicht Kausalität. Also nur weil ich jetzt irgendwie mathematisch einen Zusammenhang zwischen zwei Sachen herstellen kann, heißt es nicht, dass es da automatisch eine Kausalität gibt. Es gibt z.B. die Scheinkorrelation, im englischen spurious correlations, da kann ich euch mal einen Link geben, das ist ganz lustig. Der, der versucht sozusagen ganz viele Statistiken zu sammeln und zu gucken, findet er irgendwelche absurden Zusammenhänge. Dann gibt es dann sowas wie der pro Kopf Verbrauch von Margarine korreliert mit der Scheidungsrate, also irgendwie der Vorname Ariel korreliert mit der Anzahl von Modedesignern oder irgendein Kolumnist bei Blomberg z.B. veröffentlicht genauso viele Artikel wie Kernenergie in Frankreich produziert wird. Also sozusagen Dinge, die überhaupt nichts miteinander zu tun haben, können rein zufällig miteinander einen Zusammenhang haben. Aber jetzt zu deinem ETF beispielsweise, da hast du natürlich noch andere Aspekte dabei. Also entweder Leute, die ins Fitnessstudio gehen, haben dann ein profitableres Unternehmen oder wenn ein Unternehmen profitabel ist, hat vielleicht der CEO einfach mehr Zeit ins Fitnessstudio zu gehen. Die Kausalität könnte ja andersrum sein. Oder es gibt einen dritten Aspekt, ja, keine Ahnung, was Leute, die was könnte eine Ursache sein, dass ich ein erfolgreiches Unternehmen habe und ins Fitnessstudio gehe? Keine Ahnung, zweitausendein, ich sehe besonders gut aus oder habe eine narzisstische Persönlichkeitsstörung, ich weiß es nicht. Also es könnte ganz unterschiedliche Kausalitäten dahinter stecken und man darf niemals, wenn zwei Sachen miteinander eine Korrelation haben, dann die erstbeste schnappen. Normalerweise ist es auch eine Kombination aus mehreren Sachen.",
+      "start": 2404390,
+      "end": 2494996,
+      "confidence": 0.8934810546874999,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Und wie schützt du dich davor? Weil das ist ja ein Klassiker, der in der Data Analyst Welt ständig passiert und man springt dann ja auf sowas auch drauf und ist ja dann zweitausendein irgendwie schwierig, dann noch mal da einen Schritt zurückzugehen und wirklich zu überprüfen. Bzw. Teilweise ist es schwierig, also kannst du auch mathematische Methoden verwenden, aber wie schickst du dich davor, wenn du jetzt gerade in deinem Bereich hast du ja oft sehr kleine Datasets, wo es vielleicht auch schwieriger ist, da wirklich statistische Unterschiede und Relevanz rauszuarbeiten.",
+      "start": 2495148,
+      "end": 2526218,
+      "confidence": 0.8598142391304349,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Also der klassische Weg ist, dass man anfängt zu überlegen und auch zu recherchieren, welche anderen Kausalitäten könnten dahinter stecken. Es gab ein gutes Beispiel, ich glaube Spiegel Online hatte vor Jahren mal veröffentlicht, dass es in Ostdeutschland mehr Leute gibt, die an durch übermäßigen Alkoholkonsum sterben. Also es gibt sozusagen mehr Alkoholtote in Ostdeutschland und sie haben das begründet damit, das läge an der ostdeutschen Trinkkultur, die irgendwie anders sei in Westdeutschland. So und das konnte ich natürlich nicht auf mich sitzen lassen, deswegen habe ich Statistiken rausgekramt, habe halt festgestellt, die stärkste Korrelation ist Arbeitslosigkeit. Umso höher die Arbeitslosigkeit ist, umso mehr wird Alkohol konsumiert und deswegen gibt es auch mehr Alkoholtote dabei. Und die Arbeitslosigkeit ist einfach in Ostdeutschland, Sachsen, Thüringen, Mecklenburg Vorpommern einfach höher. Und wenn man das in einem Diagramm malt, sieht man, dass es auch eine perfekte Linie ergibt. Also es ist wirklich, wirklich gut. Außer Berlin ist rausgefallen, da gab es hohe Arbeitslosigkeit, aber wenig Alkoholtote. Aber hier wird trotzdem viel getrunken. Vielleicht weil die Bevölkerung jünger ist, ich weiß es nicht. Aber da sieht man, dass hier eine viel bessere Korrelation und auch eine viel sinnvollere Kausalität entsteht als die erstbeste. Also ja, man muss mal gucken. Gibt es nicht noch andere Erklärungsmuster? Generell würde ich davon abraten, Korrelationen erklären zu wollen. Also manchmal habe ich den Eindruck, dass man eine Statistik ranzieht, wenn schon klar ist, was das Ergebnis sein soll. Also viel zu oft möchte man gerne zeigen, dass irgendwie es Deutschland ganz schlimm ist oder sonst irgendwas und dann sucht man, sucht man, dann findet man die.",
+      "start": 2526274,
+      "end": 2613618,
+      "confidence": 0.9011722388059704,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Passende Statistik, die an die Headline steht schon vom Artikel und man sucht sich noch ein paar Daten, die das unterstreichen.",
+      "start": 2613634,
+      "end": 2619430,
+      "confidence": 0.8790261904761905,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Manchmal fühlt sich das halt so an und Datenjournalistinnen versuchen halt explizit genau den anderen Weg zu gehen. Sie gucken sich die Statistiken an, versuchen dann Zusammenhänge drin zu finden und wenn sie ein Ergebnis haben, dann versuchen sie noch mal ähnlich wie das zwei Quellen Prinzip auf anderen Wegen auch noch mal zu gucken. Stimmt denn das? Sehen das Expertinnen und Experten in dem Feld genauso? Können das vielleicht sind diese Zusammenhänge auch in anderen Ländern zu sehen? Ist ja z.B. auch eine Variante. Also komme ich zu dem gleichen Ergebnis, wenn ich den Pfad noch mal anders laufe.",
+      "start": 2619550,
+      "end": 2649910,
+      "confidence": 0.9299895999999996,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Aber ist das und da bin ich jetzt ganz offen und ehrlich, nicht einfach super schwer? Weil jeder Mensch hat ja einen Bias, jeder Mensch hat ja eine gewisse, ich nenne es mal Weltvorstellung, ja, jeder Mensch hat ja seine festen Grenzen und sich immer wieder konstant hinter zu hinterfragen und vielleicht noch eine dritte Quelle und sich aus seiner Welt wirklich rauszuholen. Jetzt hast du jetzt, du bist ein True Believer von Open Data und es gibt Leute, die sitzen in Ämtern, die haben eine andere Weltvorstellung. Meine Frage ist, wie oft gehst du duschen, auf Toilette oder irgendwie einfach mal die Debugging Technik, ein Spaziergang, weil wie oft musst du dich selbst dran erinnern oder hast du vielleicht irgendwo so ein post it am Bildschirm so genau.",
+      "start": 2650030,
+      "end": 2691406,
+      "confidence": 0.9128514728682171,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Also das eine ist, man fängt halt, also man muss sich konstant hinterfragen und das ist auch nicht was besonderes. Ich meine in der Wissenschaft ist es halt genauso. Du stellst halt auch eine these auf, versuchst du zu überprüfen und versuchst auch gegen deine eigene these sozusagen vorzugehen. Das ist sozusagen auch dieses thesengebundene Recherchieren. Was natürlich richtig gut hilft, ist in einer Redaktion zu arbeiten. Du holst dir explizit jemanden ran und du möchtest von ihm, dass er das einfach mal komplett zerpflückt. Wo sind überall logische Lücken drin, wo sind, wo ist vielleicht auch Meinungen und Fakten miteinander vermischt? Das möchtest du ja auch nicht machen. Welche Fakten beschreibst du hier und sind die tatsächlich zweitausendein auch unabhängig überprüfbar? Das ist einfach das saubere journalistische Arbeiten. Also genau das, was man in Social Media nicht findet, dann retweetet man mal schnell was und das genau versuchen Redaktionen mit allen Mitteln zu verhindern.",
+      "start": 2691438,
+      "end": 2744320,
+      "confidence": 0.9233221935483874,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Wenn wir jetzt noch mal auf die Polizeistatistik zurückgehen als Beispiel, die ist jetzt schon sehr ausgefeilt und das PDF purzelt am Ende raus, wo dann vielleicht schon auch gewisse Folgerungen getroffen worden sind und das ist ja eigentlich schon fast so wie ein finaler Artikel eigentlich. Gibt es da für dich als als Datenjournalist überhaupt noch was zu machen oder würdest du sagen, okay, das geht dann an normale Journalisten und Journalistinnen, die dann das in irgendeinen Kontext bringen oder ist sowas wie die Kriminalstatistik auch eine Quelle und du probierst es dann gegenzuchecken und du hast da dann auch noch mal Arbeit bei sowas?",
+      "start": 2744440,
+      "end": 2780588,
+      "confidence": 0.893830188679245,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Ich würde nicht empfehlen, Datenjournalismus mit der polizeilichen Kriminalitätsstatistik zu machen, weil einfach zu viele Stolperfallen drin sind. Ich kann aber empfehlen, dass Journalistinnen und Journalisten, wenn sie darüber berichten, dann noch mal tiefer in die Statistik reingehen und gucken, ob denn ihre Thesen haltbar sind. Also etwas, was mir in diesem Jahr besonders unangenehm aufgefallen ist, ich glaube im April wurde die PKS von 2023 veröffentlicht und die Zahlen sind nach oben gegangen, weil jetzt Lockdown zu Hause ist, zu Ende ist, die Leute gehen raus, also während des Lockdowns konnte keine Bank überfallen, das ging jetzt nicht so richtig und dazu die Mobilität ist höher, es gibt auch wieder Tourismus, deswegen gibt es auch mehr Leute hier und so weiter und so fort. Die Leute sind länger in Kneipen, trinken, machen dann Unsinn und das war so ein bisschen der Hauptfaktor dafür, warum diese Kriminalitätsstatistik wieder angesprungen ist. Insbesondere geht sie sozusagen wieder Richtung Normalniveau, sie geht jetzt wieder auf das Niveau von 2000, 1415 und so weiter. Also wir sind auch gerade sozusagen in Deutschland sicherer als 2000 vierzehnte, aber irgendwie ist daraus der Spin entstanden, dass das irgendwas wegen den Ausländern ist. Man hat dann wieder so Ausländerkriminalität daraus konstruiert. Das finde ich halt super gefährlich und das macht die polizeiliche Kriminalitätsstatistik auch zu einer der gefährlichsten Statistiken, die es überhaupt gibt. Einmal, weil sie statistisch viele Probleme enthält und zum anderen, weil halt super gefährliche Schüsse rausgezogen werden. Und da sehe ich halt auch, dass professionelle Redaktionen, wie auch sowas wie Tagesthemen beispielsweise, die haben glaube ich, da die polizeiliche Kriminalitätsstatistik nicht gut verstanden und machen da schon wieder Berichterstattung über Ausländerkriminalität daraus.",
+      "start": 2780644,
+      "end": 2876180,
+      "confidence": 0.9061183093525177,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Jetzt sind wir da schon bei der genauen nächsten Stufe oder bei dem nächsten Schritt, wenn man so eine Quelle hat oder auch die Kriminalitätsstatistik. Ich kann ja nicht die ganze Kriminalitätsstatistik abdrucken in meinem Artikel. Das heißt, ich muss es in irgendeiner Form kondensieren, aggregieren, visualisieren und in irgendeiner Form Informationen weglassen. Wie geht man denn an diese Visualisierung dran, dass man da möglichst wenig verzerrt und auch keine Fehler macht? Oder was sind auch typische Fehler, die man sieht, wenn es um Visualisierung geht? Von da.",
+      "start": 2876560,
+      "end": 2908876,
+      "confidence": 0.9356071590909095,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Also du musst zum einen natürlich erstmal Statistik drauf haben, um statistische Probleme und Fallstricke zu erkennen, aber da kannst du das im Prinzip auch machen, dass da einfach eine Kollegin oder Kollege mal drüber schaut und guckt, ob sie das auch so machen würde, ob sie auch die gleichen Schlüsse daraus ziehen kann. Zweitausendein. Und das andere wäre dann die Datenvisualisierung, ob die irgendwie gefährlich ist, weil man kann Datenvisualisierung auch schlecht machen und dann fallen da komische Sachen raus. Vor kurzem habe ich einen schönen Blogartikel gesehen, der hat den medaillen Spiegel von Irland gezeigt und hat halt gezeigt, dass Irland immer besser geworden sind. Die sind irgendwie vom Platz 63 immer weiter höher gerutscht und sie haben das aber in ein xy Diagramm reingemalt und die y Achse erster Platz ist halt unten, zweitausendein schlechtester Platz 63 ist oben und deswegen geht die Kurve nach unten. Und da sieht man halt, dass die Leute mental mit einer Kurve, die nach oben gehen, was Positives verbinden und nach unten was Schlechtes. Und das muss man einfach wissen. Man muss verstehen, wie diese Grafiken dann verarbeitet werden im Gehirn sozusagen. Also ein bisschen so Wahrnehmungspsychologie. Gibt solche Aspekte. Du hast das z.B. auch, dass du sehr gut Längen miteinander vergleichen kannst, z.B. so ein soll Diagramm. Du kannst aber schlecht Flächengrößen miteinander vergleichen oder es gab ein schönes Beispiel, da ging es irgendwie um den Ölimport oder Export oder sowas von den vereinigten Staaten und man hat das so visualisiert mit kleinen d Ölfässern, die kleiner und größer geworden sind und da war die große ist das jetzt die Höhe der Fässer, ist das die Fläche der Grafik oder ist es das vermeintliche Volumen dieser dreidimensionalen Fässer? Das ergibt dann sozusagen einen anderen Zusammenhang. Du kannst natürlich den Ausschnitt falsch wählen. Zweitausendein. Du siehst dann guck mal, es wird immer schlimmer. Ja z.B. polizeiliche Kriminalitätsstatistik. Wenn ich mir die letzten drei Jahre angucke, dann wird es immer schlimmer. Aber wenn ich mir die letzten dreiig Jahre angucke, dann war Deutschland halt noch nie so sicher wie jetzt oder zumindest in den letzten drei Jahren. Also man kann handwerkliche Fehler machen. Ich gehe davon aus, dass auch ganz viele Leute, die jetzt nicht in den Medien arbeiten, da irgendwie eher draußen versuchen Reichweite über Social Media zu erreichen, dass sie dann auch explizit sozusagen mit diesen Datenvisualisierung lügen. Ich gehe aber davon aus, dass gerade Journalistinnen das halt nicht tun und da muss man aufpassen, dass man keine handwerklichen Fehler macht bei der Darstellung.",
+      "start": 2908948,
+      "end": 3044568,
+      "confidence": 0.9244207311320755,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Wo ich immer richtig getriggert werde bei handwerklichen Visualisierungsfehlern, wenn man die x oder y achse nicht bei null starten lässt, sondern beschriftet, ja nicht beschriften ist auch ganz schlimm, aber auch irgendwo mittendrin anfängt. Ja und der graph fängt trotzdem irgendwie oben links oder unten links links an und da kriege ich meine Rappel, weil bis ich also mein erster Blick geht natürlich auf den Graphen und nicht auf die x oder auf die y Achse, auf die Beschriftung und bist du dann mal versuchst die Daten zu interpretieren, denkst du ach der startet ja gar nicht bei null oder wo der Start wird auch immer ist oder bei den Jahren.",
+      "start": 3044664,
+      "end": 3077420,
+      "confidence": 0.8887949107142854,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Oder wow dann aber witzigerweise, wenn wann immer ich irgendwo Aktienkurse dargestellt sehe, wird nicht diese null Achse verwendet, da wird immer der Ausschnitt der letzten sieben genommen und wie die aktuellen Schwankungen sind, da ist das irgendwie Standard geworden.",
+      "start": 3077460,
+      "end": 3091496,
+      "confidence": 0.8636935000000001,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Ja du musst es natürlich auch irgendwo, wenn wenn du nur kleine Änderungen hast, dann musst du natürlich irgendeinen Subauschnitt wählen, weil sonst hättest du ja fast alle Balken, die gleich hoch sind. Wenn es sich nur an der dritten Kommastelle bewegt oder so womöglich, dann dann würdest du keine Änderung sehen und das wirst du ja in vielen Fällen auch nicht. Das ist dasselbe mit der logarithmischen Skala, ist eine Katastrophe. Ich bin mir nicht sicher, wer die logarithmische Skala versteht und man muss auch, wenn man sie versteht, man muss erst mal drauf kommen, ah, das ist logarithmisch und dann sich das in der Realität irgendwie zurechtzubügen. Was heißt logarithmisch eigentlich? Wie stark ist da eine Steigung, wenn ich in einem logarithmischen Graph eine Steigung habe oder nicht? Also es ist super schwierig, auch für Leute, die sich auskennen, überhaupt das zu verstehen, meiner Meinung nach.",
+      "start": 3091528,
+      "end": 3137634,
+      "confidence": 0.8935858783783782,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Genau. Naja, ich kann aber auch etwas sozusagen handwerklich super sauber grafisch darstellen, aber die Leute sehen dann nicht gut, was dann passiert. Und es gibt auch den Ansatz, Sachen dann irgendwie grafisch darzustellen, sodass die Leute es sich anschauen und sofort verstehen, aber dann erhebliche Probleme haben, die Schritte nachzuvollziehen. Das sind auch zwei verschiedene Varianten. Oftmals sieht man bei datenjournalistischen Projekten gibt es unten so eine ausklappbare Box, wo sie dann noch mal super genau auf die Methodik eingehen und versuchen, das noch mal zu erklären, was hier zu sehen ist. Aber ich erinnere mich, ich hatte mal so Netzwerkgrafiken veröffentlicht, wie Unternehmen und Personen und wie zusammenhängen. Und ich wurde dann gefragt, ja, was ist denn hier die x und y Achse? Aber es ist halt eine Netzwerkgrafik und nicht XY Grafik. Es geht auch so ein bisschen Richtung Data Literacy im Prinzip. Was kann ich den Leserinnen und Lesern zumuten? Ein jüngeres Publikum ist da super offen und den machst du da irgendwie D und keine Ahnung was, zweitausendein und die älteren Leute kennen dann vielleicht einfach nur Säulen, Torten und Liniendiagramme und darfst dann auch nicht so weit darüber hinausgehen.",
+      "start": 3137682,
+      "end": 3204754,
+      "confidence": 0.9059597435897436,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Ja, man muss schon sagen, es ist auch, wie gesagt, ich mache jetzt schon viel mit Daten, aber wenn du so einen interaktiven Graphen hast, wo du irgendwie mehrere Dimensionen hast und vielleicht dann so Bubbles noch und die Größe der Kreise bedeuten etwas und wo die Kreise lokalisiert sind und du hast dann wirklich viele Dimensionen und kannst sie noch selber ändern und irgendwie hinzufügen, da muss man dann schon viel Zeit damit beschäftigen. Also das ist nicht mal schnell drüber scannen und man sieht sofort den Output, sondern da verbringt man dann schon eine gewisse Zeit, um überhaupt mal zu verstehen, was das dann ist. Dann kann man die Dimensionen selbstständig ändern, muss wissen, was man eigentlich sehen will. Also man sieht es ja auch bei Zeitungen und Medienhäusern immer öfter und ich persönlich finde es natürlich cool, weil man dann halt irgendwie seinen Bezirk auswählen kann oder ganz runterzoomen auf irgendwelche super Informationen, aber aber es würde mich mal interessieren, vielleicht hast du da auch mehr Erfahrung, wie viele Leute das eigentlich dann überhaupt verwenden können? Weil ich denke mal, wenn ich da schon irgendwie 10 Minuten sitze, bis ich dann mal mir was eingestellt habe, wie machen das Leute, die weniger mit Daten zu tun haben im Alltag?",
+      "start": 3204882,
+      "end": 3270290,
+      "confidence": 0.916202547169811,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Ja, das sieht man auch oft in Webportalen. Ich finde auch das Projekt Gapminder, ich weiß nicht, ob ihr das kennt, ist ein etwas älteres Projekt eines, glaube ich, schwedischen Professors, der leider verstorben ist. Der hatte sich.",
+      "start": 3270370,
+      "end": 3283090,
+      "confidence": 0.890816052631579,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Ist das Portal von Rosling?",
+      "start": 3283950,
+      "end": 3285998,
+      "confidence": 0.6343020000000001,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Genau, ja. Hans Rosling, ja. Der hatte die Möglichkeit geboten, dass man viele Länder über die Zeit hin vergleichen kann, ökonomische Faktoren, Gesundheitsdaten, Arbeitslosigkeit und so weiter, um zu zeigen, dass diese Einteilung in erste, zweite, dritte Welt keinen Sinn macht, sondern dass das sozusagen das komplexer ist. Und das ist ein wirklich super mächtiges Tool, aber das können normale Menschen nicht benutzen. Du kannst da auch genau das, was du gesagt hast, x und y Achse mit völlig wilden Eigenschaften füllen und dann die Farbe und die Größe der Bubbles kannst du auch noch verändern. Und das ist dann sozusagen ein sehr mächtiges Tool, das mir jetzt als Data Journalist oder Data Scientist oder Data Analyst natürlich helfen kann, als professionelles Tool. Aber du musst es schon sozusagen keep it simple in der journalistischen Veröffentlichung haben. Im Idealfall willst du es halt machen, dass auch wenn Leute drüber scrollen, das sofort verstehen. Ich habe auch beispielsweise Datenvisualisierungen veröffentlicht, in denen ich Probleme thematisiert habe, aber die Visualisierung war zu fröhlich. Also ich hatte dann auch hinterher überlegt, eigentlich müssten wir Sachen auch, die gefährlich sind, vielleicht ein bisschen dunkler machen. Ich hatte mal ein Privatprojekt, eine animierte Karte gemalt, wo so kleine Funken rumgeflogen sind und dann hat mich einer dafür kritisiert, dass ich Nazi brennende Landkarten animiert. Also es geht ja sozusagen, dafür willst du, dass das bei den Leuten das Richtige ankommt. Du wirst wirklich überrascht sein, wenn du 1 Million Leute erreichst, wie viele Leute was in den falschen Hals kriegen. Das ist erfahrungswert, hier Dinge gut zu vermitteln, dass jeder das Richtige rauszieht.",
+      "start": 3286094,
+      "end": 3378750,
+      "confidence": 0.9197480597014928,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Bei Hans Rosling war natürlich auch, der hat ja eine immense Bühnenpräsenz gehabt und kann es nur jedem empfehlen, wer seine Vorträge nicht kennt, sich mal einen anzuschauen. Können wir gerne verlinken, ihnen schon uns. Aber da erklärt er natürlich, was in dem Graphen passiert und in dem interaktiven Graphen und macht es ja wirklich, brennt und lebt für diesen Grafen, während er ihn erklärt und er sich bewegt, ist natürlich was anderes. Jetzt hast du ja um deine Visualisierung auch noch einen Artikel rundherum. Den schreibst dann auch du im Normalfall oder schreiben das dann irgendwelche Journalisten, Kolleginnen, Kollegen oder wie ist da die Aufteilung, wenn du so ein Projekt Ÿousand?",
+      "start": 3378870,
+      "end": 3417236,
+      "confidence": 0.8977466071428576,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Also es kommt darauf an. Manchmal ist es so, dass ein Journalist oder Journalistin einen Artikel schreibt und ich arbeite dann Grafiken zu, die dazwischen reinkommen. Anders kann es auch sein, dass man eine große, zentrale interaktive Infografik als Kern hat und wenn sie fertig ist, kommt noch jemand und schreibt mal schnell ein paar Absätze unten drunter. Also gerade so vielleicht auch Sachen, die Zeit online veröffentlicht, da ist einer Kollegin mal rausgerutscht, dass den Text darunter liest sowieso keiner, weil die Grafiken damit zu interagieren einfach so viel Spaß gemacht haben und auch vielleicht auch gar keine Erklärung gebraucht haben. Also hier gibt es auch unterschiedliche Darstellungsformen, Veröffentlichungsformen.",
+      "start": 3417378,
+      "end": 3456440,
+      "confidence": 0.9321903636363635,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Würdest du dann sagen, die beste Grafik oder der beste Graph ist der, der nicht erklärt werden muss?",
+      "start": 3456740,
+      "end": 3462444,
+      "confidence": 0.9612444444444446,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Das ist schon so ein bisschen das Optimum, das man erreichen möchte.",
+      "start": 3462532,
+      "end": 3466948,
+      "confidence": 0.9690249999999998,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Aber im Endeffekt versuchst du ja enorm komplexe Sachverhalte sehr simplifiziert und du sagtest das auch gerade schon beim durch scrollen verständlich zu machen. Ich frage mich gerade, wie geht das, ohne ganz viele Sachen wegzulassen? Ich meine, du hast schon von dieser Box geredet, die die Methodik erklärt und die Rohdaten und so. Aber ist das nicht irgendwie auch so ein bisschen so ein Widerspruch, wenn man sagt, ich habe eine Visualisierung, die soll alle Daten vereinfacht darstellen. Vielleicht geht nicht immer gut, wie der irische Medaillenspiegel, den du gerade genannt hast, aber auf der anderen Seite willst du ja handwerklich perfekt sein. Du möchtest nicht auseinander genommen werden, du möchtest Fakten darstellen und du möchtest vielleicht auch Leuten die Chance geben, die ganzen Daten zu, wie soll man sagen, zu entdecken. Also schon eine sehr, sehr hohe Balance in welche Entscheidung du wann triffst, welche Visualisierung du aktiv nicht machst oder was du nicht integrierst, oder?",
+      "start": 3467044,
+      "end": 3517300,
+      "confidence": 0.9141170886075949,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Genau. Aber das ist so ein bisschen so, als würde, keine Ahnung was, dein Onkel, der keine Ahnung von Computern hat, dich fragen, was ist ein Blockchain, was ist ein, was ist ein Linux? Und du müsstest versuchen, das irgendwie ihm ganz einfach zu erklären. Also da musst du ja auch ganz viele Informationen weglassen und das komplette Informatikstudium weglassen. Und das machst du hier im Prinzip auch. Es ist extrem wichtig, dass du in deiner Vereinfachung trotzdem korrekt bleibst, dass da jetzt nicht Fehlschlüsse daraus gezogen werden können oder Falschbehauptungen aufgestellt werden.",
+      "start": 3517840,
+      "end": 3547060,
+      "confidence": 0.8799741935483872,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Aber geht es da nicht auch in die Gefahr rein, die wir vorher schon erwähnt haben, dass du eigentlich die Antwort schon kennst und jetzt nur noch Daten suchst, die das bestätigen. Zweitausendein, indem du sagst, indem du einfach bestimmst, was du weglässt.",
+      "start": 3547140,
+      "end": 3558538,
+      "confidence": 0.9431527906976744,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Genau. Und deswegen musst du dich halt erstens selber wieder in Frage stellen, du musst deine these immer wieder in Frage stellen und du hast Kolleginnen und Kollegen, die du darum bitten kannst, mal drüber zu schauen, dass es aus unterschiedlichen Perspektiven betrachtet wird.",
+      "start": 3558674,
+      "end": 3571386,
+      "confidence": 0.8810365909090908,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Siehst du die Redaktion, die den Artikel schreibt, irgendwie auch so als Qualitätssicherung? Weil im Endeffekt, wenn du denen einfach, ich sag mal roh die Visualisierung gibst und die schreiben den Artikel, die schauen sich das einfach an und sprechen nicht mit dir, dann im besten Falle, wenn du doch gute Arbeit geleistet hast, sollte doch dann ähnliches rauskommen im Text, oder?",
+      "start": 3571458,
+      "end": 3589502,
+      "confidence": 0.9407229032258063,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Im Prinzip ja, aber ich meine, Qualitätssicherung ist sozusagen dort strukturell eingebaut, in den Redaktionen, auf allen Ebenen. Die größte Gefahr ist, dass du etwas Falsches veröffentlichst. Deswegen denken alle darüber nach. Da gucken auch noch mal, wenn du das veröffentlichst, nochmal fünf andere Kollegen, zweitausendein Leute dabei, die überhaupt nicht mit der Redaktion oder mit dem Thema etwas zu tun haben und dann noch mal drüber schauen, ihr eigenes Medium lesen und so weiter. Du hast schon eine extrem hohe Qualitätssicherung in so einem Medium drin.",
+      "start": 3589566,
+      "end": 3621732,
+      "confidence": 0.9055737931034488,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Jetzt hattest du während des Gesprächs erwähnt, dass es gar nicht so viele Datenjournalistenteams in Deutschland gibt. Deswegen sorgen wir jetzt mal für Nachwuchs. Wie wird man Datenjournalist?",
+      "start": 3621796,
+      "end": 3631560,
+      "confidence": 0.9234625000000001,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Also die meisten richtig guten Datenjournalistinnen, die ich kennengelernt habe, sind größtenteils Quereinsteiger. Zweitausendein. Die haben Geschichtswissenschaften, Politikwissenschaften oder sonst irgendwas gelernt. Sehr viele natürlich auch mit einem klassischen Informatikstudium, weil das Thema halt so interdisziplinär ist und so viele Anforderungen braucht, kann man nicht einfach, man kann nicht irgendwie Journalismus und dann Informatik und dann Design und dann nochmal Statistik studieren. Das geht halt einfach nicht. Normalerweise hast du einfach Quereinsteiger. Deswegen jeder, der sozusagen Statistiken oder Datenvisualisierung oder andere Aspekte von Datenjournalismus ist hier geeignet, sich in diese Richtung weiterzuentwickeln. Also diesen Beruf gab es ja so in der Form vor 10 Jahren auch noch gar nicht und ich glaube, ich weiß gar nicht, ob es ihn heute auch schon so gibt. Also er wird, glaube ich, in den Statistiken, beispielsweise Bundesarbeitsagentur gibt es Datenjournalisten nicht als Eintrag.",
+      "start": 3632180,
+      "end": 3686502,
+      "confidence": 0.923560357142857,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Müsste das eigentlich nicht mittlerweile einfach beim Journalismus auch automatisch mit dabei sein? Also ist Journalismus ohne Daten eigentlich überhaupt noch möglich?",
+      "start": 3686646,
+      "end": 3693998,
+      "confidence": 0.9054963636363638,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Es ist möglich. Ich meine ganz viel Berichterstattung ist halt nicht datenbasiert. Es ist aber auf jeden Fall gut, denke ich, würde man im Studium noch mal, also im Journalismus Studium tiefer auf das Thema Statistiken eingehen, weil das ist ein Thema, das inzwischen alle Ressorts sozusagen betrifft. Ich würde aber sogar noch mal weitergehen, insbesondere das, was ich in den letzten Jahren aus den Redaktionen gelernt habe, wie man richtig recherchiert, wie man richtig über die Wahrheitsgehalt von Informationen abschätzen kann, wie man damit richtig umgeht, ist eigentlich etwas, was wir inzwischen in der Grundschule haben sollten. Ich sehe eigentlich, wie viele Leute damit überfordert sind, wahr von falsch zu unterscheiden. Und Journalisten machen das professionell. Genau, sich darauf zu spezialisieren, wahr von falsch unterscheiden zu können, da ist ganz viel Know how dabei. Und mir ist aufgefallen, kommt immer bei Diskussionen zu dem Punkt mit ja, es ist ein Bildungsproblem.",
+      "start": 3694094,
+      "end": 3748890,
+      "confidence": 0.9410266447368415,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Glaubst du, dass es einfacher ist, von der Informatik in den Datenjournalismus zu kommen oder von der Journalismus Seite in den Datenjournalismus und die Informatikseite nachzulernen?",
+      "start": 3749240,
+      "end": 3758740,
+      "confidence": 0.9126865384615386,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Das kommt darauf an, was man meint mit was funktioniert besser. Ich glaube, dass es aus einer Redaktionssicht her einfacher ist, aus den Journalistinnen Datenjournalisten zu machen, weil die vielleicht auch die Prozesse im Haus kennen und so weiter. Leute, die vielleicht mit einem Informatiker Background und in hippen Startups gearbeitet haben und dann in eine Redaktion kommen, merken auch, das ist vielleicht kein hippes Unternehmen, so ein Medienhaus. Die kommen ja auch alle aus dem letzten Jahrhundert. Leute, die dann vielleicht auch eher in agilen Software Prozessen denken, sind dann stressig für das Haus. Also du hast ja, also für das Medienhaus ist die digitale Transformation Stress und du bist dann genau da in der digitalen Transformation mittendrin als jemand, der einen Softwareentwicklungsbackground hat.",
+      "start": 3759280,
+      "end": 3804916,
+      "confidence": 0.90893696,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Können die Medienhäuser noch was lernen von von den Softwareentwicklerinnen und von deren Prozessen und agilen [Sos/eos], Prozess?",
+      "start": 3804988,
+      "end": 3811790,
+      "confidence": 0.8150750000000001,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Auf jeden Fall. Und ich hoffe, dass das auch mehr gemacht wird, dass man daraus lernt. Ich gebe mal ein Beispielzeit. Online hat ihr Content Management System komplett selber gebaut und andere Medien, ist das.",
+      "start": 3812290,
+      "end": 3825498,
+      "confidence": 0.9129865714285715,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Jetzt positiv oder negativ?",
+      "start": 3825514,
+      "end": 3826650,
+      "confidence": 0.8826025,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Das ist positiv. Also die haben sozusagen ihre Veröffentlichungsplattform komplett unter Kontrolle. Sie verstehen dort jedes Rädchen, können alles anpassen, alles verändern und können damit auch Sachen machen, die andere Medienhäuser nicht machen können. Andere Medienhäuser sehen eigentlich mehr so IT immer als einen Kostenpunkt, den sie versuchen klein zu halten. Und da hast du dann auch oft kaputt gesparte IT Abteilungen drin und dann wird das ausgelagert in externe Unternehmen, die ja dann nicht mehr dein Freund sind, sondern sie wollen ja dann Geld verdienen. Also das ist extrem schwierig und ich glaube, dass man da als Medienhaus auch über sozusagen agile Softwareprozesse und auch wie entwickelt man digitale Prozesse im Haus überhaupt? Ÿousand, das funktioniert ja auch nicht gut in vielen Unternehmen. Da könnte man viel lernen.",
+      "start": 3826690,
+      "end": 3870532,
+      "confidence": 0.9077470542635657,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Michael, vielen lieben Dank. Was würdest du jetzt zum Abschluss allen Hörern und Hörerinnen denn mitgeben, wenn sie das nächste Mal über eine Datenvisualisierung in einem Online Artikel stoßen?",
+      "start": 3870596,
+      "end": 3883020,
+      "confidence": 0.9422813793103448,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Was ich immer gerne mache, ist rechtsklick und mir den Code anzugucken, zu gucken, welche APIs benutzen sie, wie haben sie das technisch gebaut? Viele gute Datenjournalismus Redaktionen veröffentlichen auch einen Code dazu. Die haben dann sehr aktive zweitausendein GitHub Repositories, wo man sich auch mal vielleicht die Stufen der Entwicklung angucken kann, vielleicht auch mal nachrechnen. Vielleicht kommt man ja auch auf andere Schlüsse, kann man dann ja dann auch den entsprechenden Leuten mal sagen. Genau, man kann immer was daraus lernen, auch vielleicht Darstellungsformen, die man so bisher nicht gesehen hat. Ist eigentlich immer spannend, aber ich meine, ich arbeite ja damit, deswegen zerpflücke ich die Dinger natürlich auch mal gerne.",
+      "start": 3883100,
+      "end": 3917514,
+      "confidence": 0.9078595575221242,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Aber du gibst dann den Leuten, wenn du was findest, auch Feedback, oder?",
+      "start": 3917642,
+      "end": 3920832,
+      "confidence": 0.9426169230769231,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Genau. Das Gute ist, die meisten Datenjournalisten scheinen irgendwie alle hier in Berlin zu sitzen, deswegen trifft man sich auch öfters mal auf ein Bier und da kann man.",
+      "start": 3920986,
+      "end": 3927508,
+      "confidence": 0.891976206896552,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Halt gerade sagen, kennst du eigentlich alle irgendwie? In Deutschland kennt man sich, wenn, wenn das so eine kleine Truppe ist, gefühlt.",
+      "start": 3927524,
+      "end": 3933556,
+      "confidence": 0.8286163636363636,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Ja, also ich würde sagen, dass ich auf jeden Fall mehr als 50 %, vielleicht sogar fast alle Datenjournalisten in Deutschland kenne. Durch die Konferenzen, durch Veranstaltungen, durch Treffen. Man ist auch überraschend gut vernetzt, während Redaktionen manchmal gegeneinander konkurrieren. Die Datenjournalisten, die hängen irgendwie alle zusammen und geben sich Tipps, zeigen auch, wie sie was technisch umgesetzt haben, um Know how weiterzugeben, geben sogar Code oder Daten raus. Da ist auch ein bisschen so open Source und Sharing Gedanken sind da mit dabei.",
+      "start": 3933588,
+      "end": 3965248,
+      "confidence": 0.9189432142857138,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Jetzt habe ich noch eine Interessensfrage, weil in der Informatik sind wir fast alleine als Männer, würde ich mal sagen. Die diese 10, %, was es an weiblichen Informatikerinnen gibt, ist ja wirklich, geht teilweise sogar nach unten. Im Data Science Bereich ist es ja ein bisschen besser, da trifft man mehr Frauen an. Wie ist es im Datenjournalismus?",
+      "start": 3965344,
+      "end": 3984112,
+      "confidence": 0.8912193220338985,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Also im Datenjournalismus ist es auf jeden Fall deutlich besser. Ich würde sogar sagen, dass wir da langsam so in die Fifty Fifty Bereich reinkommen. Aber das liegt halt auch daran, dass sich ganz viele Leute hier viel Mühe gegeben haben, auch insbesondere Journalistinnen, zu ermutigen, sich mit dem Thema zu beschäftigen, auch entsprechend die Teams aufzubauen. Genau, der Aspekt der Softwareentwicklung ist dann noch eher männerdominiert, würde ich sagen, innerhalb der Teams. Und da muss man ein bisschen aufpassen, dass das sozusagen gruppendynamisch nicht zu Problemen führen kann, wenn ein Thema nur von einem Geschlecht abgearbeitet wird. Aber im Großen und Ganzen geht es im Datenschutzmus relativ gut.",
+      "start": 3984176,
+      "end": 4024236,
+      "confidence": 0.9251267889908258,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "An alle, die ein bisschen mehr Lust auf dieses Thema bekommen haben, ihr könnt euch Michaels Arbeit unter anderem auf seiner Webseite ansehen. Die haben wir natürlich auch in den Show Notes verlinkt, wie ganz viele andere Links. Also wer mal ein bisschen was zum Thema dem Datenportal Berlin haben möchte, kann das gerne sehen oder auch zum Detlef ETF oder dieses Portal, was der Michael erwähnt hat bezüglich Korrelation und Kausalität mit irgendeiner Margarine oder Butter war das glaube ich.",
+      "start": 4024308,
+      "end": 4052806,
+      "confidence": 0.9179034567901232,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Margarine und Scheidungsrate, obwohl auf der anderen.",
+      "start": 4052918,
+      "end": 4056272,
+      "confidence": 0.9122857142857143,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Seite Margarine und Butter. Meines Erachtens hat das was mit Scheidung zu tun, aber das ist nur meine Meinung. So, Michael, vielen lieben Dank, dass du bei uns im Podcast zu Gast warst. Mir hast du wirklich ein paar echt neue Daten Punkte gegeben, kann man das so sagen? Haha, was für ein Wort. Witz war der war echt schlecht. Okay, den lassen wir drin. Und wie gesagt, wenn ihr euch bei Michael mal zweitausendein melden wollt, findet ihr alle Links in den Shownotes, auch wenn ihr Lust habt auf einen kompletten Open Source Map Stack. Ich glaube, Contributoren für Versatiles werden auch immer gesucht, oder?",
+      "start": 4056296,
+      "end": 4088958,
+      "confidence": 0.8653263207547166,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Sehr gerne, ja. Aber wir sind noch Alpha, das ist egal.",
+      "start": 4089054,
+      "end": 4092502,
+      "confidence": 0.9442154545454545,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Also auch Alpha Hacker News driven Development machen wir hier. Von daher, Michael, vielen lieben Dank für deine Zeit. Bis bald.",
+      "start": 4092606,
+      "end": 4098558,
+      "confidence": 0.85967,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Tschüss.",
+      "start": 4098614,
+      "end": 4098870,
+      "confidence": 0.84453,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Ich danke euch.",
+      "start": 4098910,
+      "end": 4099670,
+      "confidence": 0.9819599999999999,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Danke dir.",
+      "start": 4099790,
+      "end": 4100230,
+      "confidence": 0.750265,
+      "speaker": "C",
+      "channel": null
+    }
+  ],
+  "confidence": 0.912056052168082,
+  "audio_duration": 4047,
+  "webhook_status_code": null,
+  "webhook_auth": false,
+  "summary": null,
+  "auto_highlights_result": null,
+  "content_safety_labels": null,
+  "chapters": null,
+  "sentiment_analysis_results": null,
+  "entities": null
+}
