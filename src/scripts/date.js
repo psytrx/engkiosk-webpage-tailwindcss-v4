@@ -74,12 +74,10 @@ export function humanTimestampToSecondsTo(ts) {
 	return hourSeconds + minuteSeconds + seconds;
 }
 
-
-
 /*
 returns the day of the month with suffixes
 */
-export function monthSuffixedDay(ts, locale = 'en-US' ) {
+export function monthSuffixedDay(ts, locale = 'en-US') {
 	const options = {
 		day: 'numeric',
 	};
@@ -89,20 +87,20 @@ export function monthSuffixedDay(ts, locale = 'en-US' ) {
 		month: 'long',
 	};
 	const month = new Date(ts).toLocaleDateString(locale, optionsMonth);
-	if (day > 3 && day < 21) return month + " " + day + "th";
+	if (day > 3 && day < 21) return month + ' ' + day + 'th';
 	switch (day % 10) {
-	  case 1:
-		return month + " " + day + "st";
-	  case 2:
-		return month + " " + day + "nd";
-	  case 3:
-		return month + " " + day + "rd";
-	  default:
-		return month + " " + day + "th";
+		case 1:
+			return month + ' ' + day + 'st';
+		case 2:
+			return month + ' ' + day + 'nd';
+		case 3:
+			return month + ' ' + day + 'rd';
+		default:
+			return month + ' ' + day + 'th';
 	}
-  };
-  
-  // returns the date in the format of Monday, October 12, 2023
+}
+
+// returns the date in the format of Monday, October 12, 2023
 export function year(date, locale = 'de-DE') {
 	const options = {
 		year: 'numeric',
