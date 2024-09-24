@@ -85,7 +85,11 @@ speaker:
 - name: Andy Grunwald
 - name: Wolfi Gassler
 spotify: https://open.spotify.com/episode/7pnRyqkJC9hCSo0wH0MHM2
-tags: []
+tags:
+- Produktivit\u00e4t
+- Kommunikation
+- Remote work
+- Interview
 title: '#142 Ist Return to Office die Zukunft? Was die Wissenschaft sagt - mit Jean-Victor
   Alipour vom IFO'
 transcript_raw: ''
