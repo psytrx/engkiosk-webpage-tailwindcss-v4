@@ -1,6 +1,6 @@
 ---
 advertiser: ''
-amazon_music: ''
+amazon_music: https://music.amazon.com/podcasts/c35a09fe-4116-4e04-8f68-77d61b112e46/episodes/72661d80-3870-4307-8c21-5f24f612ff5e/engineering-kiosk-142-ist-return-to-office-die-zukunft-was-die-wissenschaft-sagt---mit-jean-victor-alipour-vom-ifo
 apple_podcasts: https://podcasts.apple.com/us/podcast/142-ist-return-to-office-die-zukunft-was-die-wissenschaft/id1603082924?i=1000670480610&uo=4
 audio: https://audio1.redcircle.com/episodes/9380b2ae-ba20-46cf-a849-2812a0cdb132/stream.mp3
 chapter:
