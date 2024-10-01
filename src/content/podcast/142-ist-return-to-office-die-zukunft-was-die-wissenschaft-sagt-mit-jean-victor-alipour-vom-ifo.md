@@ -90,7 +90,7 @@ speaker:
   transcriptLetter: C
 spotify: https://open.spotify.com/episode/7pnRyqkJC9hCSo0wH0MHM2
 tags:
-- Produktivität
+- "Produktivit\xE4t"
 - Kommunikation
 - Remote work
 - Interview
