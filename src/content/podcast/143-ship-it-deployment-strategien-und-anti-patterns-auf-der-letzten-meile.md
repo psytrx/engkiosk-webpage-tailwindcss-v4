@@ -87,7 +87,9 @@ rtlplus: ''
 six_user_needs: []
 speaker:
 - name: Andy Grunwald
+  transcriptLetter: B
 - name: Wolfi Gassler
+  transcriptLetter: A
 spotify: https://open.spotify.com/episode/6AGFK7uExLxhcer5KgDxMK
 tags:
 - DevOps
