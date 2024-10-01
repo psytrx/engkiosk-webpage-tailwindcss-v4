@@ -97,8 +97,8 @@ tags:
 - Automation
 - Tech Kultur
 title: '#143 Ship It! Deployment-Strategien und Anti-Patterns auf der letzten Meile'
-transcript_raw: ''
-transcript_slim: ''
+transcript_raw: src/data/transcripts/143-transcript.zip
+transcript_slim: src/data/transcripts/143-transcript-slim.json
 youtube: https://www.youtube.com/watch?v=1KyVUGlf4F4
 
 ---
