@@ -89,7 +89,11 @@ speaker:
 - name: Andy Grunwald
 - name: Wolfi Gassler
 spotify: https://open.spotify.com/episode/6AGFK7uExLxhcer5KgDxMK
-tags: []
+tags:
+- DevOps
+- Software Engineering
+- Automation
+- Tech Kultur
 title: '#143 Ship It! Deployment-Strategien und Anti-Patterns auf der letzten Meile'
 transcript_raw: ''
 transcript_slim: ''
