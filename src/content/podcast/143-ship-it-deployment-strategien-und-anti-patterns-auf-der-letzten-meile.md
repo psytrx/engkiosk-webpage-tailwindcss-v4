@@ -1,6 +1,6 @@
 ---
 advertiser: ''
-amazon_music: ''
+amazon_music: https://music.amazon.com/podcasts/c35a09fe-4116-4e04-8f68-77d61b112e46/episodes/55bd6f52-da47-40f8-ba80-c9d3be35af5a/engineering-kiosk-143-ship-it-deployment-strategien-und-anti-patterns-auf-der-letzten-meile
 apple_podcasts: https://podcasts.apple.com/us/podcast/143-ship-it-deployment-strategien-und-anti-patterns/id1603082924?i=1000671376143&uo=4
 audio: https://audio1.redcircle.com/episodes/ed30f02e-3299-47d1-b3a2-4ac37e6d45b4/stream.mp3
 chapter:
