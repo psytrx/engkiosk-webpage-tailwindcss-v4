@@ -79,7 +79,10 @@ speaker:
 - name: Andy Grunwald
 - name: Wolfi Gassler
 spotify: https://open.spotify.com/episode/6L5fvH5dl3PnDCGvYqjyKc
-tags: []
+tags:
+- Software Engineering
+- Backend
+- Interview
 title: "#144 Die untersch\xE4tzte Macht der Zeit: Wie NTP und PTP die Welt synchronisieren\
   \ mit Daniel Boldt und Thomas Behn von Meinberg"
 transcript_raw: ''
