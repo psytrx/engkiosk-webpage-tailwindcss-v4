@@ -1,6 +1,6 @@
 ---
 advertiser: ''
-amazon_music: ''
+amazon_music: https://music.amazon.com/podcasts/c35a09fe-4116-4e04-8f68-77d61b112e46/episodes/68382904-f983-43d9-89db-68ec5d37fea2/engineering-kiosk-144-die-untersch%C3%A4tzte-macht-der-zeit-wie-ntp-und-ptp-die-welt-synchronisieren-mit-daniel-boldt-und-thomas-behn-von-meinberg
 apple_podcasts: https://podcasts.apple.com/us/podcast/144-die-untersch%C3%A4tzte-macht-der-zeit-wie-ntp-und-ptp/id1603082924?i=1000672169213&uo=4
 audio: https://audio1.redcircle.com/episodes/375bf95c-29ea-47a5-9761-768e2646ba63/stream.mp3
 chapter:
