@@ -1,0 +1,1206 @@
+{
+    "language_code": "de",
+    "audio_url": "https://cloud.inlupus.at/s/tpn2FjxjAErQCds/download/ep_ptp.mp3",
+    "punctuate": true,
+    "format_text": true,
+    "dual_channel": false,
+    "webhook_url": null,
+    "webhook_auth_header_name": null,
+    "webhook_auth_header_value": null,
+    "audio_start_from": null,
+    "audio_end_at": null,
+    "word_boost": [],
+    "boost_param": null,
+    "filter_profanity": false,
+    "redact_pii": false,
+    "redact_pii_audio": false,
+    "redact_pii_audio_quality": null,
+    "redact_pii_policies": null,
+    "redact_pii_sub": null,
+    "speaker_labels": true,
+    "speakers_expected": 4,
+    "content_safety": false,
+    "content_safety_confidence": null,
+    "iab_categories": false,
+    "custom_spelling": null,
+    "disfluencies": false,
+    "sentiment_analysis": false,
+    "auto_chapters": false,
+    "entity_detection": false,
+    "summarization": false,
+    "summary_model": null,
+    "summary_type": null,
+    "auto_highlights": false,
+    "language_detection": false,
+    "language_confidence_threshold": null,
+    "language_confidence": null,
+    "speech_threshold": null,
+    "speech_model": null,
+    "id": "f4353cb5-44a5-4360-91f3-0ddbd5e6fffa",
+    "status": "completed",
+    "error": null,
+    "utterances": [
+        {
+            "text": "Vor kurzem haben wir die Episode 107 und dreiig veröffentlicht mit dem Titel die Schaltsekunde und ihre IT Folgen ein Sekundenbruchteil mit Impact. Noch kurz zur Erinnerung, in dieser Episode ging es wirklich komplett um die Schaltsekunde. Warum gibt es diese und welche Probleme eine Schaltsekunde in bzw. Bei IT Systemen verursachen können. Ein paar stichwörter Erdrotation, mittlere Sonnentage, Atomzeit und so weiter und so fort. Und eine mehr oder weniger Lösung für die Schaltsekunde, um einen Zeitsprung zu vermeiden, ist die sogenannte Smear Second, deutsch die geschmierte S. Bei der Recherche, wenn man nach der Smear second sucht, kommt man relativ schnell zu dem NTP Server, zu dem Zeitserver von Google. Und in der Dokumentation beschreibt Google, wie die Smear Second implementiert wird. Und zwar, dass es eine 24 Stunden lineare Schmierung einer S von nun to noon UTC ist. Und wenn man in dieser Dokumentation ein bisschen weiter runterscrollt, dann findet man links zu anderen Implementierungen von Smear Seconds. Und einer dieser Implementierung kommt von der Firma Meinberg. Und die Firma Meinberg hat z.B. eine Cosinus basierte Smear S implementiert mit einer konfigurablen Länge. So steht das.",
+            "start": 160,
+            "end": 75680,
+            "confidence": 0.90181804,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Man merkt gar nicht, dass du es abläst, Andi.",
+            "start": 75720,
+            "end": 77704,
+            "confidence": 0.83471113,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Ja, das ist gar kein Problem. Also ganz im Ernst, ich bin mir gar nicht sicher, ob es dafür deutsche Übersetzungen gibt, obwohl, können wir jetzt gleich auch klären, gibt es da deutsche Übersetzungen? Aber das hat mich dazu bewegt, mehr in dieses Thema einzusteigen und einfach mal die Firma Meinberg anzuschreiben, ob sie nicht Lust hätten, in diesem Podcast ein bisschen was über Zeit, Zeitprobleme, vielleicht auch über die Schmiersekunde zu sprechen. Und deswegen begrüße ich ganz Herzlich Thomas Behn und Daniel Bold von der Firma Meinberg. Hallo.",
+            "start": 77792,
+            "end": 106300,
+            "confidence": 0.93015754,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Hallo.",
+            "start": 106420,
+            "end": 106956,
+            "confidence": 0.92837,
+            "speaker": "C",
+            "channel": null
+        },
+        {
+            "text": "Hallo.",
+            "start": 107068,
+            "end": 107760,
+            "confidence": 0.8366,
+            "speaker": "D",
+            "channel": null
+        },
+        {
+            "text": "Dann mache ich meine übliche Vorstellung. Ich starte erst mit der Firma Meinberg und dann mit euch beiden. Also was ist Meinberg? Meinberg bezeichnet sich als mein Partner für professionelle Zeit und Frequenz Synchronisationslösungen. Ihr habt euch also auf die Entwicklung und Herstellung von Geräten und Systemen zur Zeit Synchronisation und Zeitverteilung spezialisiert. Was bedeutet das unter anderem? Ihr stellt NTP Zeit Server, also wirklich Hardware her, PTP, Grandmaster Clock Systeme. Was das ist, werden wir gleich noch klären. Und eure Hardware und natürlich Software kommt auch unter anderem bei Events wie der Oscar Verleihung und dem Super Bowl zum Einsatz und da speziell zur Synchronisation von gesamten Broadcasting. Wen haben wir dann heute hier von der Firma Meinberg? Das ist einmal der Thomas. Der Thomas ist Team Lead Software Engineer bei Meinberg entwickelt hauptsächlich ein c und C und dort Firmware für Embedded und Standalone Zeit Synchronisationssysteme. Und der Thomas war Mitautor am wissenschaftlichen Paper Securing unprotected NTP implementations using an NTS Daemon, wo NTS jetzt hier für Network Time Security Protokoll steht. Musste ich auch erst in der Vorbereitung lernen. Fast faszinierend, was es alles für Protokolle gibt. Unser zweiter Gast ist Daniel Boldt, Head of Software Development bei Meinberg, war auch mal Bildingenieur und Softwareentwickler beim ZDF. Und wenn Daniel sich nicht mit Zeit auseinandersetzt, dann spielt er Keyboard und rhythmische Gitarre bei der Maximum live music Show und Partyband 88 Miles. Ist das alles korrekt, Daniel und Thomas?",
+            "start": 108460,
+            "end": 208120,
+            "confidence": 0.8940588,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Das alles korrekt, ja.",
+            "start": 208240,
+            "end": 209344,
+            "confidence": 0.980005,
+            "speaker": "C",
+            "channel": null
+        },
+        {
+            "text": "Sehr gut wiedergegeben, hart recherchiert und gut abgelesen.",
+            "start": 209392,
+            "end": 214236,
+            "confidence": 0.8964875,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Verwendest du bei deinen Musik Acts irgendein Equipment von euch, um irgendwas zu synchronisieren? Wenn die Oscars das schon machen, macht ihr das auch?",
+            "start": 214408,
+            "end": 222800,
+            "confidence": 0.8693175,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Das ist so in der Form nicht unbedingt notwendig. Das wäre ein bisschen mit Kanonen auf spatzen schießen, obwohl natürlich in diesem Umfeld auch eine Zeitquelle benötigt wird. Die ist aber dann in einem anderen Preissegment angesiedelt.",
+            "start": 223780,
+            "end": 237428,
+            "confidence": 0.9487427,
+            "speaker": "C",
+            "channel": null
+        },
+        {
+            "text": "Okay, also man merkt schon, euer Equipment ist eher dann, also ist nichts, was in meiner Funkuhr steckt, oder? Also wir sprechen da schon von professionellerem.",
+            "start": 237564,
+            "end": 245460,
+            "confidence": 0.9154123,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Equipment und für den Heimanwender machen wir eigentlich nichts, sondern das sind Anwendungen für die Industrie in diversen Branchen.",
+            "start": 245500,
+            "end": 252736,
+            "confidence": 0.93605787,
+            "speaker": "C",
+            "channel": null
+        },
+        {
+            "text": "Jetzt, wenn wir schon mal so zwei absolute Spezialisten in dem Bereich haben und ihr gar keine Ahnung, gibt es da eigentlich viele Firmen in dem Bereich, die sowas machen oder also die auf eurem Level jetzt irgendwas mit Zeit machen oder ist es so eine Nische, dass es da wirklich sowieso nur ein, zwei global Players gibt?",
+            "start": 252928,
+            "end": 269424,
+            "confidence": 0.92517877,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Also global gesehen kann man schon sagen, dass es ein Nischenmarkt ist. Ich würde sagen, auf dem Level, wie wir es machen, existieren vielleicht eine Handvoll weltweit.",
+            "start": 269512,
+            "end": 278716,
+            "confidence": 0.9425,
+            "speaker": "C",
+            "channel": null
+        },
+        {
+            "text": "Aber wir sind ja in dieser Episode angetreten, auch mal einfach bisschen über die ganzen Protokolle zu sprechen und was es da so in der ganzen Zeitwelt gibt. Weil wenn ich an meine Erfahrung mit den ganzen Zeitservern und Zeitprotokollen denke, ist es ja ich starte irgendwie den Service in Linux Ntpd und dann ist irgendwie meine Zeit wieder synchronisiert, wenn die mal fehlerhafterweise irgendwie um 5 Minuten falsch ist auf meinem Host System oder sonst irgendwas. Das ist alles, was ich so Kontakt habe eigentlich mit der Zeit. Also vielleicht könnt ihr uns mal ganz langsam in das Thema einführen und mal so kurz erklären, was eigentlich hinter dem ganzen NTP Protokoll, was wir ja alle wahrscheinlich zumindest von der Command Line in irgendeiner Form kennen oder irgendwie Berührungspunkte haben, wie das aufgebaut ist und wie das eigentlich grundsätzlich funktioniert.",
+            "start": 278828,
+            "end": 326100,
+            "confidence": 0.9121409,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Das ntp Protokoll, NTP steht für Network Time Protocol und wie der Name schon sagt, ist es eben ein Protokoll zur Synchronisierung von Uhren. In den verteilten Computersystemen, also in Netzwerken passiert das dann auf Basis von UDP, also in paketbasierten Kommunikationsnetzen, z.B. dem Internet. Also das Internet würde ich jetzt mal als Hauptanwendungsgebiet nennen. Und das Protokoll wird im Grunde genommen auf fast allen Geräten, die wir tagtäglich so nutzen, eingesetzt. Das heißt also Smartphones, Tablets, Laptops, alle modernen Computersysteme werden über NTP synchronisiert. Also jedes Apple, jedes Android Smartphone empfängt seine aktuelle Zeit per NTP von irgendeinem im Internet zur Verfügung stehenden Zeitserver.",
+            "start": 326140,
+            "end": 372950,
+            "confidence": 0.895208,
+            "speaker": "D",
+            "channel": null
+        },
+        {
+            "text": "Weißt du eigentlich zufällig, ob im GSM Netz das auch über NTP läuft oder ist das wieder ein eigenes Protokoll?",
+            "start": 373490,
+            "end": 379978,
+            "confidence": 0.93953,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Im GSM Netz, wenn es jetzt nicht um die reine Datenübertragung oder das Internet geht, dann hat das GSM Netz an sich erstmal keine reine Zeit Synchronisationsmöglichkeit. Es gab in Amerika gab es mal dieses CDMA System als Mobilfunknetz, was man theoretisch auch als Zeitquelle nutzen konnte direkt, aber alle anderen haben quasi in ihrem eigenen Netz keine verwertbare Zeitquelle, die man irgendwie anzapfen oder nutzen könnte. Natürlich sind die Netze intern synchronisiert, aber die echte Zeit wird darin nicht verteilt. Es sei denn, das Netz wird genutzt, um eine internetbasierte Übertragung zu machen, dann kann man natürlich auch dieses Protokoll NTP darüber fahren, aber die Netze an sich sind dafür erstmal nicht ausgelegt.",
+            "start": 380034,
+            "end": 425314,
+            "confidence": 0.92234015,
+            "speaker": "C",
+            "channel": null
+        },
+        {
+            "text": "Jetzt ist NTP ja schon der de facto Standard, würde ich mal sagen, oder so in dem Bereich und einer der ältesten Protokolle, die es überhaupt gibt aus den ER Jahren. Hat sich da irgendwas getan seit den ER Jahren oder ist es wirklich noch eins zu eins das komplett selbe Protokoll?",
+            "start": 425402,
+            "end": 442562,
+            "confidence": 0.9234887,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Ja, also ein bisschen was hat sich schon getan. Wie du schon sagst, seit 1985 wird das Protokoll verwendet. Das hat sich dann von NTPV zur mittlerweile verwendeten NTP V weiterentwickelt.",
+            "start": 442626,
+            "end": 453874,
+            "confidence": 0.8927958,
+            "speaker": "D",
+            "channel": null
+        },
+        {
+            "text": "Wann war die v um so Ende der er Jahre?",
+            "start": 453962,
+            "end": 456910,
+            "confidence": 0.903938,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Also offiziell definiert glaube ich 2004, aber schon etwas eher auch in Verwendung. Also NTPV basiert aber auch auf dem gleichen Paketformat wie NTP V, das heißt also, die sind backward compatible. Also selbst NTP V wird teilweise noch angewendet.",
+            "start": 456950,
+            "end": 473870,
+            "confidence": 0.8736775,
+            "speaker": "D",
+            "channel": null
+        },
+        {
+            "text": "Bei meiner Recherche bin ich auch auf das Protokoll Simple Network Time Protocol SNTP gestoßen und dass das, soweit ich das gelesen habe, zumindest in V integriert wurde initial als sogenannter Challenger angetreten, um das NTP Protokoll zu vereinfachen, aber dann wohl irgendwie halt auch rückwärts kompatibel in die Version vier von NTP irgendwie integriert wurde.",
+            "start": 473950,
+            "end": 494670,
+            "confidence": 0.8849209,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Noch nie was davon gehört. Gibt es das noch oder wird es irgendwie verwendet? Wisst ihr das?",
+            "start": 495010,
+            "end": 499362,
+            "confidence": 0.8932347,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Ja, das gibt es noch, genau. Ist eben wie gesagt eine Vereinfachung des großen NTP, sage ich jetzt mal. Also NTP an sich definiert eben nicht nur den Mechanismus, wie man Zeitunterschiede und Paketlaufzeiten berechnet, sondern auch Algorithmen zur Verbesserung der gemachten Messungen und vieles mehr. Und SMTP vereinfacht das Ganze dann ein bisschen auf eine Verbindung zwischen einem Client und einem Server und wirklich nur einen ganz groben Paketaustausch und ein einfaches Setzen. Derzeit wird meistens eingesetzt, wenn die Genauigkeitsanforderungen nicht besonders groß sind und ohnehin nur ein zeitserver z.B. zur Verfügung steht.",
+            "start": 499466,
+            "end": 536148,
+            "confidence": 0.92286885,
+            "speaker": "D",
+            "channel": null
+        },
+        {
+            "text": "Also ein großer Unterschied ist, würde ich sagen, derjenige, dass bei dem richtigen, größeren NTPD Dienst das quasi kontinuierlich läuft und auch Statistiken und Analysen des Zeitsignals über einen längeren Zeitraum gemacht werden können, während ein SNTP Client praktisch mit einer einzigen Anfrage im Prinzip das Beste versucht herauszuholen, was er mit dieser einzigen Anfrage schaffen kann, um dann eben, wenn man das Programm nochmal aufruft, das Ganze noch mal wieder von vorne zu machen. Also das ist quasi so eine Art Einzelanfrage und setzen der lokalen Zeit mit Hilfe eines vereinfachten NTP Protokolls.",
+            "start": 536284,
+            "end": 572336,
+            "confidence": 0.9183651,
+            "speaker": "C",
+            "channel": null
+        },
+        {
+            "text": "Ich habe so ein bisschen Bauchschmerzen, wenn ich höre, dass die NTP Version vier schon so lange am Markt ist und dann es anscheinend, also 20 Jahre bestimmt dann jetzt schon fast, oder 1520 Jahre, irgendwie sowas und noch keine V dazu kam. Als Softwareentwickler frage ich mich so, also Software rostet ja auch und deswegen, aber nun gut, aber das heißt ja nicht.",
+            "start": 572408,
+            "end": 593562,
+            "confidence": 0.92334294,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Dass die Software nicht Features dazu bekommt oder neu geschrieben wird oder verbessert wird. Das heißt nur, das Protokoll ist so stabil und gut durchdacht, gibt es ja auch seit den ERN, dass es Sinn macht, dass man nicht immer was dazu bauen muss. Finde ich gut eigentlich.",
+            "start": 593586,
+            "end": 607382,
+            "confidence": 0.92503583,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Ob das so gut durchdacht ist und immer noch den modernen Anforderungen entspricht, darauf kommen wir gleich zu. Aber kannst du mir mal erklären, wie NTP eigentlich funktioniert? Also wie kommt die Zeit auf meinen Linux Server, wenn mein NTP Daemon mal wieder nicht läuft und deswegen 5 Minuten out of sync läuft? Also wie funktioniert das unten drunter?",
+            "start": 607486,
+            "end": 625598,
+            "confidence": 0.8846998,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Also NTP ist Client Server basiert, das heißt, der Client, wo eben der NTPD drauf läuft, zweitausendein, der sendet einen NTP Request an den entsprechenden Server und zu dem Zeitpunkt, zu dem er ihn sendet, der einen Transmit Timestamp, das ist dann der sogenannte T. Der Server empfängt dann diesen NTP Request und nimmt einen Receive Timestamp zum Zeitpunkt des Empfangs, das wäre dann T, und sendet anschließend eine NTP response mit einem weiteren Timestamp, transmit timestamp tfünf. Und auf der Client Seite wird dann diese Response empfangen und es wird ein vierter Timestamp, der receive timestamp t, genommen. Das Paket, also diese NTP response, beinhaltet sowohl t, t als auch t. Und der Client hat dann nach einem zweistufigen Paketaustausch vier Zeitstempel, also zwei Paare aus jeweils Transmit und Receive Timestamp zur Verfügung und kann mittels dieser Timestamps dann die Laufzeit der Zweitausendein Pakete und auch den Zeitunterschied zwischen seiner eigenen Uhr und der Uhr des Servers berechnen. Bei der Paketlaufzeit lässt sich das noch relativ leicht erklären. Nimmt man den letzten Receive Timestamp, also den T, und zieht den ersten davon ab, den ersten Transmit Timestamp hat man die Gesamtdauer der Paketübertragung und zieht man davon dann noch die Bearbeitungszeit auf dem Server, also t, t ab, dann hat man tatsächlich die Laufzeit der Pakete im Netzwerk.",
+            "start": 625654,
+            "end": 712138,
+            "confidence": 0.9152883,
+            "speaker": "D",
+            "channel": null
+        },
+        {
+            "text": "Wird das öfters durchgeführt, Ÿousand? Weil wenn jetzt, keine Ahnung, bei der Antwort z.b. irgendein Delay drauf hätte, dann haben wir da plötzlich eine ganz andere Zeit. Also wird es dann irgendwie mehrfach durchgeführt und dann der Durchschnitt genommen? Oder wie funktioniert das?",
+            "start": 712194,
+            "end": 726856,
+            "confidence": 0.8473735,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Ja, das wird mehrfach durchgeführt. Es gibt so Intervalle, die man da konfigurieren kann für Clients. Das geht bei alle 8 s los und bis zu alle 1024 s wird eine Messung gemacht. Und da kommt es dann eben auf die Implementierung an, wie das genau umgesetzt wird. Beim NTPD ist es so, je stabiler die Zeit bereits ist, desto länger wird das Intervall. Das heißt also, man möchte den Server möglichst wenig stressen und erhöht dann das Abfrageintervall von Abfrage zu Abfrage und sammelt die Messungen in so einer Art Schieberegister. Das heißt, immer die letzten acht Messungen hält man vor und berechnet daraus Durchschnittswerte. Und wenn jetzt z.B. meine Messung total daneben liegt, dann wird die eben ganz verworfen. Und da gibt es eben sehr viele verschiedene Mechanismen, die das Ganze noch wesentlich aufgrund statistischer Werte verbessern können. Das ist auch schon ein großer Unterschied dann zwischen SNTP und NTP.",
+            "start": 726928,
+            "end": 780190,
+            "confidence": 0.9413513,
+            "speaker": "D",
+            "channel": null
+        },
+        {
+            "text": "Und in welcher Genauigkeit liegt das Ganze? Also ist es nur S oder gibt es dann danach auch noch Kommastellen? Also oder ist das dann unabhängig, je nachdem, was für Signale übertragen wird?",
+            "start": 780270,
+            "end": 791582,
+            "confidence": 0.9048188,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Über das Internet ist das, sagen wir mal, meistens in Bereichen von einer bis 10 Millisekunden. Das heißt also, über eine gute Internetanbindung kann man, und einen guten NTP Server kann man ein bis zwei Millisekunden gut erreichen.",
+            "start": 791726,
+            "end": 804618,
+            "confidence": 0.89265156,
+            "speaker": "D",
+            "channel": null
+        },
+        {
+            "text": "Und im Protokoll selbst, also diese Zeitstempel, haben die eine definierte Genauigkeit, oder ist es dann, je nachdem, was definiert wurde?",
+            "start": 804674,
+            "end": 812978,
+            "confidence": 0.9372857,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Ja, die Zeitstempel hatten ursprünglich eine Auflösung von Mikrosekunden. Wenn ich mich recht erinnere, geht es aber mittlerweile auch schon im Nanosekundenbereich. Aufgrund der Weiterentwicklung im Linux Kernel Ÿousand war es dann eben möglich, Nanosekunden genaue Zeitstempel da reinzuschreiben. Das Problem ist allerdings, dass das alles in einer Software basiert, das heißt also weit über dem Kernel Level. Und dort wird eben der Zeitstempel genommen, ins Paket geschrieben, und wenn das Paket das Netzwerk Interface verlässt, kann das schon durchaus einige Mikrosekunden oder auch hunderte von Mikrosekunden dauern, je nach Performance des Clients.",
+            "start": 813074,
+            "end": 848336,
+            "confidence": 0.91073686,
+            "speaker": "D",
+            "channel": null
+        },
+        {
+            "text": "Aber heißt es eigentlich, dass mein Server, wenn es jetzt im Nanosekundenbereich oder auch im Millisekundenbereich vielleicht liegt, dass der eigentlich ständig die Zeit wechselt? Weil es ist ja fast, also dass da irgendwo 1 ms oder paar Nanosekunden irgendwie falsch sind, dann bei jedem Update wird meine Zeit eigentlich in irgendeiner Form umgesetzt?",
+            "start": 848408,
+            "end": 868458,
+            "confidence": 0.8570385,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Ja, auch das kommt auf die Implementierung drauf an. Wenn es eine gute Implementierung ist, ist es aber so, dass das initial ein, zweimal passiert, dieses Setzen derzeit. Und anschließend wird nur noch die Frequenz der Uhr geändert. Das heißt, man ändert die Frequenz dann eben so, dass sie schneller oder weniger schnell tickt und sozusagen der Uhr des Servers anpasst durch Veränderung der Geschwindigkeit.",
+            "start": 868634,
+            "end": 891794,
+            "confidence": 0.9211217,
+            "speaker": "D",
+            "channel": null
+        },
+        {
+            "text": "Das heißt, das ist gar nicht in Hardware gegossen, diese Frequenz, ich kann die dementsprechend anpassen?",
+            "start": 891922,
+            "end": 897002,
+            "confidence": 0.9561044,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Genau.",
+            "start": 897106,
+            "end": 897618,
+            "confidence": 0.84743,
+            "speaker": "D",
+            "channel": null
+        },
+        {
+            "text": "Okay.",
+            "start": 897714,
+            "end": 898474,
+            "confidence": 0.72475,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Ist das denn eine user Config, diese Frequenz, oder wird die halt automatisch dann angepasst? Weil wenn das zweitausendein.",
+            "start": 898642,
+            "end": 905412,
+            "confidence": 0.9367089,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Die wird automatisch angepasst. Das heißt, es gibt da so API Calls aus dem Linux Kernel, die man eben aufrufen kann. Mittlerweile ist es auch im Kernel integriert. Das heißt also, da gibt es so Adjust Timex Funktionen z.b. an die man ein spezielles Zeit Offset übergibt und die regelt das dann im Hintergrund aus.",
+            "start": 905466,
+            "end": 922104,
+            "confidence": 0.8967729,
+            "speaker": "D",
+            "channel": null
+        },
+        {
+            "text": "Du hast gerade auch gesagt, das Problem ist, dass das alles Software ist. Und das hat sich so angehört, als finden die meisten Operationen des NPDs, des NTPD, dann auch im User Space statt. Und da frage ich mich gerade, ist Zeit nicht so ein kritisches Attribut für jedes IT System? Dass man darüber nachdenken sollte, das mal irgendwie in den Windows Kernel, in den Linux Kernel und in den, was ist das bei Mac, BSD Kernel, Mac Kernel, keine Ahnung, mal zu implementieren, um halt wenigstens diese paar, wo sind wir da? Nanosekunden Delay zwischen den Context Switches zwischen User und Kernel Space irgendwie zu skippen.",
+            "start": 922232,
+            "end": 961946,
+            "confidence": 0.8836816,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Ja, bei Linux ist das auch bereits schon passiert. Da gibt es also, es gibt sozusagen drei verschiedene Stufen von Zeitstempeln. Einmal in diesem User Level Timestamp, dann gibt es einen Socket Level Timestamp. Das heißt also, ich kann dem Netzwerk Socket, was ich da aufmache, sagen, es soll Pakete, die ich raus sende, zeitstempeln. Das heißt, dann übernimmt der Kernel das und und gibt mir einen genaueren Zeitstempel, stellt er mir zur Verfügung. Allerdings kann auch der Kernel nicht berechnen, wie lange das Paket dann auf dem PCI Bus bis zum Netzwerkinterface z.B. noch braucht, um tatsächlich rausgesendet zu werden. Das wäre dann das dritte Level eines Zeitstempels in Hardware. Das heißt also, dann müsste das Netzwerk Interface, also tatsächlich die physische Hardware, den Zeitstempel nehmen und mir wiederum über einen Socket Call zur Verfügung stellen. Diese drei Möglichkeiten gibt es. NTP benutzt aber eigentlich eher die Software oder zumindest die Socket Level Timestamps.",
+            "start": 962018,
+            "end": 1015616,
+            "confidence": 0.91502947,
+            "speaker": "D",
+            "channel": null
+        },
+        {
+            "text": "Jetzt gerade ging durch die News, dass die neueren Linux Kernels zweitausendeinundzwanzig nach 1015 Jahren sogenannte Realtime fähig wären. Ich bin da jetzt nicht tiefer reingegangen, aber hat diese Zeitsynchronisation da auch irgendwas mit zu tun bzw. Gibt es da irgendwie einen Kontaktpunkt oder verwechsel ich daran einfach zwei Sachen? Ihr müsst wissen, ich bin kein Linux Content Engineer oder ähnliches.",
+            "start": 1015688,
+            "end": 1037810,
+            "confidence": 0.866611,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Also Realtime heißt eigentlich in dem Fall nur, dass man dem Programm oder dem Anwender eines Programms garantiert, dass beispielsweise ein bestimmter Interrupt nach einer Mindestzeit bedient wird. Also es heißt einfach nur, es ist definiert, wann das System spätestens reagieren muss. Das hat jetzt mit der Zeit Synchronisation erstmal nichts zu tun, sondern es geht hier eher um die Reaktion des Systems auf bestimmte Ereignisse oder Interamts.",
+            "start": 1038550,
+            "end": 1068472,
+            "confidence": 0.93066704,
+            "speaker": "C",
+            "channel": null
+        },
+        {
+            "text": "Verstehe, danke dafür. Wieder was gelernt. Also ich habe das Ziel dieser Vortragsepisode schon dreimal erreicht. Wahnsinn, vielen Dank. Du hattest gerade gesagt, es gibt einen NTP Server und der übermittelt dann die Zeit an ein bis n clients oder null bis n Clients. Woher bekommt der Server denn die Zeit? Also der Master der Primary, deckt er sich die aus? Weil wenn wir ganz viele Primaries haben, haben die ja wohlmöglich ganz andere Zeitstempel. Und mein Datacenter läuft anders als Wolfgangs Datacenter.",
+            "start": 1068656,
+            "end": 1096802,
+            "confidence": 0.9064575,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Da gibt es auch im NTP Protokoll eine Definition für, und zwar das sogenannte Stratum Level. Wenn ich einen NTP Server habe, der direkt an eine Referenzuhr angebunden ist, das heißt also z.B. ein GPS oder GNSS Empfänger, dann habe ich einen Stratum Eins Server. Das heißt, dieser Stratum Eins Server ist direkt an eine Atomuhr angebunden oder benutzt eben einen entsprechenden Empfänger, um Zeit von einer Atomuhr zu empfangen. Und diese Stratum Werte sind definiert von null bis 15. Das heißt also, jeder weitere NTP Server, der wiederum nur als Client eines darüber liegenden Servers fungiert, ist dann Stratum n eins. Also wenn ich jetzt, sage ich mal, ein Client habe, der von drei Stratum eins Servern die Zeit empfängt, dann wäre der Stratum zweite.",
+            "start": 1096866,
+            "end": 1142246,
+            "confidence": 0.9092535,
+            "speaker": "D",
+            "channel": null
+        },
+        {
+            "text": "Wer betreibt denn eigentlich diese gesamte Infrastruktur? Ist das irgendwie spendenfinanziert oder wer macht das?",
+            "start": 1142358,
+            "end": 1149238,
+            "confidence": 0.81871736,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Das ist tatsächlich teilweise spendenfinanziert. Es gibt öffentliche Pool Server, die, naja, also Pools von NTP Servern zur Verfügung stellen. Unter anderem sind wir auch in verschiedenen Pools vertreten.",
+            "start": 1149294,
+            "end": 1162294,
+            "confidence": 0.92301416,
+            "speaker": "D",
+            "channel": null
+        },
+        {
+            "text": "Genau, also das sind die, die öffentlich verfügbar sind, aber auch die physikalisch technische Bundesanstalt in Braunschweig betreibt öffentlich erreichbare NTP Zeitserver unter z.B. wenn man den Host Namen ptbtime ptb de verwendet, kann man einen Zeitserver quasi öffentlich über das Internet erreichen. Das ist sozusagen ein Dienst, ein kostenloser Dienst, den man auch entsprechend nutzen kann.",
+            "start": 1162382,
+            "end": 1188274,
+            "confidence": 0.88294387,
+            "speaker": "C",
+            "channel": null
+        },
+        {
+            "text": "Das heißt aber, man vertraut da schon irgendwem, weil, also ich habe mir noch nie Gedanken gemacht, wer dahinter steckt. Man vertraut dann da schon blind der Community, die da irgendwelche Server pflegt.",
+            "start": 1188322,
+            "end": 1200486,
+            "confidence": 0.8672985,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Genau, also das ist basierend auf einer Mehrheitsentscheidung, wer sozusagen in die Gruppe der Zeitserver, die als vertrauenswürdig eingestuft werden, kommt. Also wenn ich jetzt beispielsweise in meinem Pool 1015 NTP Server habe und von diesen 15 NTP Servern sagen mir 12, es ist 1 Uhr und drei davon sagen, es ist 2 Uhr, dann würde ich entscheiden, der Mehrheit zu folgen, also den zwölfen, die sagen, dass es 1 Uhr ist. Und darüber gibt es sozusagen diese Vertrauensbasis, die man dann im öffentlichen Netz in dem Moment erreicht. Eine Stufe weiter ist natürlich, wenn man seine eigene Zeitquelle für sein Unternehmensnetzwerk beispielsweise betreibt, z.B. eben mit Hilfe unserer Geräte.",
+            "start": 1200558,
+            "end": 1246424,
+            "confidence": 0.877431,
+            "speaker": "C",
+            "channel": null
+        },
+        {
+            "text": "Du hattest gerade die Begriffe GPS und gn, [Sos/Eos], ss genannt. Ich musste erst mal nachschlagen, was ist GPS? Kriege ich gerade noch so hin. Das global positioning System GNSS habe ich gerade nachgeschlagen, ist das global Navigation Satellite System, das sind dann die Stratum null Referenz Signale, also die, die ganz oben. Und ab Stratum eins fängt das dann an. Okay, da hast du mal, hat man dann Empfänger und die gehen dann runter bis auf maximal 15 Ebenen. Habe ich das richtig verstanden? Zweitausendein?",
+            "start": 1246512,
+            "end": 1278008,
+            "confidence": 0.872946,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Also Stratum Null ist bereits der Empfänger, also der Empfänger der GPS oder daher kommt GNSS. Das ist eher eine allgemeine Bezeichnung für alle Satellitensysteme, die es gibt. Es gibt neben GPS natürlich auch noch das europäische Galileo System, es gibt das russische GLONASS System oder das chinesische Baidu System, was eben auch alle sind global verfügbar und alle können auch über einen Empfänger auch parallel empfangen werden. Und dann, wenn die eben alle auch empfangen können, nennen wir diese Empfänger GNSS Empfänger, um eben einen eher generischen Namen dafür zu haben. Und der Empfänger selbst ist bereits meine Stratum null Quelle. Nicht das System, sondern der Empfänger ist auch immer noch Stratum null. Und erst das Embedded Linux System, was von diesem Stratum null Empfänger die Zeit bekommt, dieses Linux System oder jedes andere Betriebssystem, was da läuft, wo der NTP Server drauf läuft, ist dann der Stratum Eins Server gegenüber dem Netzwerk.",
+            "start": 1278134,
+            "end": 1338330,
+            "confidence": 0.9185833,
+            "speaker": "C",
+            "channel": null
+        },
+        {
+            "text": "Vielen Dank, weil da hatte ich nämlich so einen kleinen Knoten im Kopf. Aber wenn ich jetzt darüber nachdenke, dann denke ich natürlich auch über Limitierungen und Probleme von dem NTP Protokoll nach. Denn wenn wir jetzt eine Hierarchie von bis zu 15 level oder 14 haben, dann stelle ich mir halt echt viele Probleme in Bezug auf Netzwerk vor, auf Datenübertragung, weil man sagt ja immer, everything fails all the time. Zumindest sagt das Werner Vogels von Amazon Web Services. Und ich habe auch Netzwerke schon ganz komisch beobachtet und habe das Verhalten nicht verstanden. Also ich sehe da ganz viele Probleme. Welche Probleme seht ihr oder sagt ihr, hat denn das NTP Protokoll bzw. Welche Limitierungen?",
+            "start": 1338630,
+            "end": 1380046,
+            "confidence": 0.9327998,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Also die Limitierungen, da gibt es natürlich mehrere Ebenen, wo man sagen kann, welche Limitierungen da bestehen. Eine Limitierung ist natürlich, dass die Genauigkeit Grenzen hat bei NTP. In dem Moment, wo ich das über eine Zweitausendein switch oder Routerinfrastruktur übertrage, hole ich mir im Prinzip Fehlerquellen rein. Also eine Zeitsynchronisation ist immer dann gestört, wenn ich unterschiedliche Zeiten ansetze, um das Paket zu übertragen beispielsweise. Also wenn ich eine variable Paketlaufzeit habe über die Zeit, einmal dauert das Paket vielleicht 100 Mikrosekunden, bis es beim Client ist und beim nächsten mal dauert es 150 Mikrosekunden. Zweitausendein weil in einem Switch oder in einem Router das Paket aufgehalten wurde, weil gerade ein anderes, größeres Paket an diesem Port vorbeifliegen musste. Und dann habe ich auch einen Fehler bei meiner Berechnung des Zeit Offsets zum Master. In dem Moment. Da gibt es Möglichkeiten, das Ganze zu umgehen, aber da kommt NTP an seine Grenzen, weil NTP nicht, da kommen wir später auch noch zu, wie das PTP Protokoll die Möglichkeit bietet, eben von der Hardware auch durchgängig über die Infrastruktur eine Unterstützung bereitzustellen. Da kommt das Protokoll an sich an seine Grenzen.",
+            "start": 1380118,
+            "end": 1455590,
+            "confidence": 0.93918353,
+            "speaker": "C",
+            "channel": null
+        },
+        {
+            "text": "Aber wird nicht durch die vier Timestamps, die genommen werden, wie Thomas das am Anfang beschrieben hat, eigentlich genau das vermieden? Denn da werden noch die Timestamps vom Sender und Empfänger genommen. Und wenn der Switch dazwischendurch halt ein bisschen länger braucht, dann sind die Timestamps doch ein bisschen anders, oder?",
+            "start": 1455710,
+            "end": 1472886,
+            "confidence": 0.92505157,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Naja, die Timestamps werden beim Sender und Empfänger genommen und der Switch fügt ein zusätzliches, unbekanntes Delay ein. Und das Delay kann bei der nächsten Abfrage anders aussehen und dann führt meine Berechnung auch zu einem anderen Ergebnis. Und daher kann ich in dem Moment eine Varianz auch bei meiner Zeitsynchronisation leider hinbekommen, die ich aber eigentlich gar nicht will. Also für eine perfekte Zeitsynchronisation ist das Delay idealerweise immer gleich und immer absolut konstant. Und das ist in der realen Welt nicht möglich, leider.",
+            "start": 1472958,
+            "end": 1506256,
+            "confidence": 0.92339754,
+            "speaker": "C",
+            "channel": null
+        },
+        {
+            "text": "Verstehe ich das richtig, dass das ntp Protokoll also eine symmetrische Netzwerk Transferzeit zugrunde legt?",
+            "start": 1506328,
+            "end": 1512996,
+            "confidence": 0.8093013,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Genau, das wird vorausgesetzt, dass das Delay exakt symmetrisch ist. Das ist, sobald das Paket sich auch nur durch einen Switch bewegt, schon nicht mehr gegeben, weil die Aufenthaltsdauer des Pakets im Switch eben von Paket zu Paket unterschiedlich ist.",
+            "start": 1513108,
+            "end": 1526228,
+            "confidence": 0.94994175,
+            "speaker": "D",
+            "channel": null
+        },
+        {
+            "text": "War das 1985 der Fall? Also ich meine, das ARPANET hatte ja auch Switche dazwischen, also war das jemals der Fall?",
+            "start": 1526284,
+            "end": 1534888,
+            "confidence": 0.94512475,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Es ist eben auch eine Sache, wie über die Zeit die Ansprüche gewachsen sind. Eine Varianz von mehreren Mikrosekunden oder vielleicht sogar Millisekunden hat man auch in den er Jahren vielleicht noch vernachlässigt. Da war man sehr froh, dass man das System vielleicht bis auf eine halbe S genau synchronisieren konnte. Und man konnte dann diese Effekte, über die wir gerade gesprochen haben, in dem Moment komplett vernachlässigen. Also man hat sich über diese Dinge nicht so viele Gedanken gemacht. Musste man auch nicht, weil die Anwendung noch nicht dafür da war, wesentlich genauer zu sein.",
+            "start": 1535044,
+            "end": 1566712,
+            "confidence": 0.94819957,
+            "speaker": "C",
+            "channel": null
+        },
+        {
+            "text": "In welchen Bereichen ist es denn wichtig, so eine Genauigkeit zu haben? Weil jetzt mein Desktop Rechner und mein Handy ist mir ziemlich egal, wenn da irgendwo zwei Millisekunden fehlen.",
+            "start": 1566896,
+            "end": 1575856,
+            "confidence": 0.90605766,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Ja, also die Spanne für die Anwendung in bestimmten Genauigkeitsbereichen ist riesig groß, wenn man sozusagen nur eine human readable Zeit haben will, also dass ich sozusagen 2 Uhr nebeneinander stelle, zweitausendein und ich einfach nur erreichen will, dass die über das Auge exakt gleich laufen. Also das menschliche Auge registriert Änderungen im Bereich von ungefähr 20 dreiig Millisekunden. Also wenn ich es schaffe, zwei Wanduhren 20 Millisekunden genau zu synchronisieren, dann habe ich schon erreicht, dass es für mein Auge so aussieht, als wären die absolut synchron. Das ist aber für viele Anwendungen schon viel zu ungenau. Beispielsweise erwartet man und da kommen wir jetzt zu den Use Cases auch von NTP, z.B. in einem Kraftwerk, wo Ereignisse protokolliert werden müssen, da erwartet man, dass diese Ereignisse im Bereich von besser als einer MS genau in einem Logfile erscheinen beispielsweise. Da geht es um die synchrone Abfolge von Events an verschiedenen Standorten und ich möchte an Standort A meine Events protokollieren und möchte sie mit den Events an Standort b vergleichen. Und da gibt es die Forderung, dass die von der Grundgenauigkeit her ungefähr 1 ms haben müssen. NTP kann das noch leisten und da wird eben dann die Anforderung dann irgendwann immer härter. Wenn ich jetzt im Bereich von von der Finanzwirtschaft gucke, Banken, Börsen, Handelsunternehmen, die haben die Anforderungen, dass die Zeitstempel an verschiedenen Stellen besser als 100 Mikrosekunden oder auch sogar noch besser sein müssen, weil eben tausende von Finanztransaktionen pro S in die richtige Reihenfolge gebracht werden müssen. Und da sind die Anforderungen dann irgendwann schon höher. Reicht immer noch aus, trotzdem sich nicht um diese variablen Paketlaufzeiten kümmern zu müssen, weil die in dem Bereich immer noch, naja, noch nicht so ins Gewicht fallen. Aber wenn man dann noch tiefer gehen will und noch besser werden will mit der Genauigkeit, dann müssen wir uns was anderes einfallen lassen und eben diese Effekte noch auszuschließen.",
+            "start": 1575928,
+            "end": 1701260,
+            "confidence": 0.90334964,
+            "speaker": "C",
+            "channel": null
+        },
+        {
+            "text": "Zu der erhöhten Genauigkeit kommen wir jetzt gleich noch. Mir schwebt noch ein Punkt auf der Zunge und zwar hat der Wolfgang gerade gesagt, okay, kann ich den NTP Servern, die bei mir jetzt eingetragen werden, eigentlich vertrauen? Also die werden ja von der Community mehr oder Anführungszeichen Community betrieben, so nenne ich das mal. Und du sagtest ja auch schon, okay, da gibt es dann ein Mehrheitsvotum und so weiter und auch der Begriff NTS Network Time Security ist schon gefallen. Gibt es irgendwelche Sicherheitsprobleme bei bei NTP? Weil wenn NTS, also wenn der Traffic vielleicht sogar gar nicht verschlüsselt ist, kann ich da mich dazwischen schalten, falsche Zeitsignale einfach durch die Welt senden oder also ich meine, das kann ja auch katastrophale Folgen haben, wie du sagst, gerade Börse und allem drum und dran.",
+            "start": 1701680,
+            "end": 1751228,
+            "confidence": 0.88124645,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Genau, also da gibt es bei NTP vor allem die Probleme der Möglichkeit von man in the middle attacks. Das heißt also jemand in der Mitte fängt das Paket des Servers ab und schreibt ein neues Paket, wo er eine andere Zeit reinschreibt, z.B. oder eben eine andere Genauigkeit. Also man gibt ja auch den Status des Servers im Paket mit an und so kann eben, können eben Pakete gespooft werden von von Men in the Middle, die sozusagen dem Client dann eine andere Zeit vorgaukeln. Und das Problem wurde eben durch NTS gelöst. NTS ist im Grunde genommen NTP verschlüsselt.",
+            "start": 1751324,
+            "end": 1787240,
+            "confidence": 0.9094921,
+            "speaker": "D",
+            "channel": null
+        },
+        {
+            "text": "Über TLS, aber wenn du die Verschlüsselung und die Entschlüsselung noch da drin hast, dann wird ja das Problem des Delays ja nochmal verstärkt, oder? Denn im Software Stack musst du die ganzen Pakete ja wieder entschlüsseln, hast zusätzliche CPU Cycles und so weiter und so fort. Es sei denn, du hast irgendwo in deinem Netzwerk vielleicht schon eine Verschlüsselungstermination auf Hardwarebasis oder ähnliches vorher. Weiß nicht, ob sowas existiert. Ich hoffe doch, bei großen load Balancern. Aber dann haben wir genau dieses Problem von dieser asymmetrischen Verbindungszeit ja noch mal verstärkt, oder?",
+            "start": 1787280,
+            "end": 1820732,
+            "confidence": 0.8860853,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Ja, das ist so, tatsächlich, ja. Also gerade auf dem Client ist das eben problematisch. Das heißt also da durch die Entschlüsselung der Pakete würde man da eben noch mal ein entsprechendes Delay in die Zeitstempel rein kriegen.",
+            "start": 1820836,
+            "end": 1835484,
+            "confidence": 0.8718147,
+            "speaker": "D",
+            "channel": null
+        },
+        {
+            "text": "Ich bin mir gar nicht sicher, ob dieses Gespräch hier vorteilhaft für mich ist, weil ich sehe jetzt immer mehr und mehr Probleme. Ich hatte gedacht, ich habe keine Probleme mit Zeit, aber ich habe anscheinend eine ganze Menge.",
+            "start": 1835612,
+            "end": 1843600,
+            "confidence": 0.93392384,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Die hast du ja spätestens seit der letzten Episode, oder? Wo du tief in dieses Rabbit Hole eingetaucht bist von Smear Second und Co.",
+            "start": 1844740,
+            "end": 1851396,
+            "confidence": 0.8729563,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Genau. Und dafür sind wir aber auch da, dass wir uns um die Lösung dieser Probleme kümmern.",
+            "start": 1851468,
+            "end": 1855876,
+            "confidence": 0.9656306,
+            "speaker": "C",
+            "channel": null
+        },
+        {
+            "text": "Genau. Und eine Lösung ist ja auch das Precision Time Protocol, PTP, was mir ehrlich gesagt ÿousand, vor dieser Recherche zu dieser Episode absolut unbekannt war, muss ich zugeben. Könnt ihr uns da mal aufklären, was ist es eigentlich und warum gibt es das? Also warum ist vielleicht jetzt eh schon langsam klar geworden durch die Nachteile von NTP, aber was ist das PTP Protokoll?",
+            "start": 1855988,
+            "end": 1879034,
+            "confidence": 0.9012903,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Genau, man kam halt über die Jahre immer mehr in die Situation, dass eben eine höhere Genauigkeit für bestimmte Anwendungen über Computernetzwerke benötigt wurde. Und NTP eben diese Hochgenauigkeit nicht geboten hat, vor allen Dingen in der Infrastruktur. Also es ist durchaus möglich, eine Hardware Unterstützung auch für NTP in den Server auch irgendwie einzubauen und reinzukriegen. Aber sobald ich das über eine switch Infrastruktur schicke, kann der Switch die NTP Pakete aufgrund der Protokoll Limitierungen nicht gesondert behandeln oder korrigieren. Und in diese Lücke ist dann zweitausendein das Precision Time Protokoll gelangt. Es ist ein separates neues Protokoll. Es ist sozusagen nicht der Nachfolger von NTP, sondern es ist ein neues Protokoll, was entworfen wurde Ende der ER Jahre, ursprünglich mal in den Labors von Agilent. Und die erste Version wurde 2002 standardisiert, damals noch nicht von vielen Branchen oder Anwendern genutzt, aber genug, um sozusagen da schon Limitierungen festzustellen, die rechtfertigen, das Protokoll nochmal komplett umzuschreiben und dann erst in einer massentauglichen Anwendung der Version zwei 2008 zu standardisieren. Zu diesem Zeitpunkt hat man eine entscheidende Änderung entsprechend eingeführt, nämlich die Verwendung von sogenannten Hardware zeitstempeln. Das bedeutet, man nimmt einen Zeitstempel auf einer ISO Osi Schicht, die so tief unten wie möglich ist. Dieses ISO Layer Modell haben wir irgendwie alle irgendwie mal gelernt in der Vergangenheit. Und für NTP kann man sagen, dass das Ganze irgendwo zwischen Layer drei und Layer vier passiert. Und bei PTP geht man jetzt wirklich auf den Bereich von Layer eins und Layer zweite.",
+            "start": 1879122,
+            "end": 1994996,
+            "confidence": 0.91182137,
+            "speaker": "C",
+            "channel": null
+        },
+        {
+            "text": "Das heißt aber auch, wir sprechen nicht mehr von Internet.",
+            "start": 1995068,
+            "end": 1997520,
+            "confidence": 0.967917,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Richtig. Also darüber ist das Paket zwar übertragbar, aber die Genauigkeit geht dadurch eben entsprechend kaputt. Das ist auch nochmal ein wichtiger Punkt zu erwähnen. PTP als Protokoll funktioniert auch mit Softwarezeitstempeln, funktioniert auch über eine nicht ptp fähige Infrastruktur. Man hat dann aber eher eine ähnliche Genauigkeit wie bei NTP dann, die man erreichen kann. Aber um eben diese hohe Genauigkeit zu erreichen, benötigt man eben eine spezielle Hardware, die eben dafür sorgt, dass in dem Moment, wo Das Paket, wenn es beispielsweise an einem Server eintrifft, wird es ja überführt in dem Netzwerk Interface Chip von einem analogen Signal, von der sogenannten PHY Komponente, in ein digitales Signal, das dann im Computer weiterverwendet werden kann. Und das ist wirklich der frühestmögliche Zeitpunkt, wo ich das PTP Paket als solches überhaupt erkennen kann. Und genau in diesem Zeitpunkt, genau zu diesem Zeitpunkt nehme ich schon einen Zeitstempel. Ich kann damit sonst noch nichts anfangen, aber den speichere ich mir erstmal ganz unten in der Hardware und habe dann noch Zeit, das Paket in die höheren Netzwerkschichten, in die Anwendungsschicht zu übertragen. Und wenn dieses Paket dann oben in der Anwendungsschicht angekommen ist, dann hat die PTP Protokollanwendung eben die Möglichkeit, diesen Hardwarezeitstempel über einen I O Control in den Treiber abzuholen und eben entsprechend für seine Berechnungen weiterzuverwenden.",
+            "start": 1997980,
+            "end": 2083483,
+            "confidence": 0.89350826,
+            "speaker": "C",
+            "channel": null
+        },
+        {
+            "text": "Heißt das aber, dass ich überall auch Hardware benötige? Also in jedem Server, in jedem Client muss auch irgendwie ein Hardware Teil drinnen sein oder brauche ich nur eine zentrale Hardwarekomponente?",
+            "start": 2083531,
+            "end": 2094923,
+            "confidence": 0.86208934,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Die höchste Genauigkeit erreiche ich, wenn ich in jeder aktiven Netzwerkkomponente genau diese Hardware Unterstützung drin habe. Das ist eben bei dem Grandmaster, sagt man, der Fall, also der Server, der die PTP Pakete als Quelle im Netzwerk bereitstellt. Das ist aber auch beim Endgerät der Fall. Das Endgerät muss sozusagen diese Hardware Unterstützung auch haben und eben die Switch Infrastruktur, die dazwischen ist, muss eben diesen Mechanismus auch bieten.",
+            "start": 2095011,
+            "end": 2122700,
+            "confidence": 0.89834857,
+            "speaker": "C",
+            "channel": null
+        },
+        {
+            "text": "Und woher bekommt der Grandmaster die Zeit?",
+            "start": 2122820,
+            "end": 2125212,
+            "confidence": 0.96943,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Genauso wie beim NTP Server bekommt der Grandmaster auch die Zeit von einem GPS oder Galileo Empfänger.",
+            "start": 2125396,
+            "end": 2131860,
+            "confidence": 0.9628718,
+            "speaker": "C",
+            "channel": null
+        },
+        {
+            "text": "Aber dann wirklich direkt hardware basiert.",
+            "start": 2131940,
+            "end": 2134516,
+            "confidence": 0.927715,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Genau, der ist ja an sich schon in der Lage, diese hohe Genauigkeit zu liefern. Also ein GPS Empfänger ist in der Lage, weltweit eine Zeitreferenz von besser als 50 Nanosekunden ungefähr zu liefern und kann diese Genauigkeit dann natürlich auch an die PTP Hardware direkt weitergeben.",
+            "start": 2134628,
+            "end": 2154908,
+            "confidence": 0.91201043,
+            "speaker": "C",
+            "channel": null
+        },
+        {
+            "text": "Moderne Switches von Cisco, produziert Cisco noch moderne Switches? Das war zumindest zu meiner Ausbildungszeit so, ich weiß es gerade nicht mehr. Haben die diese Zeitkomponenten drin, von denen du gesprochen hast?",
+            "start": 2154964,
+            "end": 2165372,
+            "confidence": 0.89390564,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Ja, also seit einigen Jahren ist das eigentlich bei vielen Switch Herstellern Standard, sagen wir mal bei den etwas besseren Switchen, die in Datacentern eingesetzt werden. Aber selbst auf der etwas preislich darunter anliegenden Ebene kommen inzwischen auch schon Geräte auf den Markt, wo solche Features auch verfügbar gemacht werden. Bei den großen Herstellern ist es manchmal noch so, dass man beispielsweise extra eine Lizenz beantragen muss oder kaufen muss, um diese Funktion freizuschalten. Aber die Hardware, muss man sagen, kann das schon inzwischen grundsätzlich standardmäßig.",
+            "start": 2165436,
+            "end": 2200118,
+            "confidence": 0.94486034,
+            "speaker": "C",
+            "channel": null
+        },
+        {
+            "text": "Aber wenn ich das richtig verstehe, es gibt nur eine zentrale Komponente, diesen Grandmaster, der die Zeit wirklich vorgibt. Also ein Switch hat dann keine GPS Connection oder sowas. Also es ist wirklich rein der Master gibt eine Zeit vor.",
+            "start": 2200254,
+            "end": 2213910,
+            "confidence": 0.913231,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Es gibt spezielle Switcher, die das auch können, aber das spielt eher eine untergeordnete Rolle. Eigentlich gibt es den einen Grandmaster im Netz, der dann eben die Zeit vorgibt und die Switche geben diese Zeit dann entsprechend weiter und haben jetzt durch die Hardware Unterstützung die Möglichkeit, die internen Durchlaufzeiten, die ja variabel sind, da haben wir ja vorhin drüber gesprochen, entsprechend zu messen und auszugleichen. Und eine Neuerung in diesem PTP Protokoll ist es jetzt auch, dass man eben ein zusätzliches Feld hat, das nennt sich Correction Field, wo bei einem bestimmten PTP Switch Typ dann diese Durchlaufzeit eingetragen wird und beim nächsten Switch wird die nächste Durchlaufzeit auf einen vorhandenen Wert aufaddiert und dann hat am Ende das Endgerät die Möglichkeit, diese ganzen Switch durchlaufzeiten einfach abzuziehen und zurück bleibt lediglich das reine Path Delay, was auf den Kabelstrecken dazwischen anfiel. Und diese Durchlaufzeit über das Kabel ist eben immer konstant. Das ändert sich nicht von von Switch zu Switch ist das Delay konstant und das ermöglicht mir eben, die Genauigkeit zu erhalten vom Grandmaster zum Slave.",
+            "start": 2213990,
+            "end": 2286026,
+            "confidence": 0.9167738,
+            "speaker": "C",
+            "channel": null
+        },
+        {
+            "text": "Das bedeutet aber auch, wenn du von Netz sprichst, so wie ich das zwischen den Zeilen jetzt lese, reden wir von Local Area Network, also vom lokalen LAN und nicht wie unter anderem bei NTP auch vom Wide Area Network.",
+            "start": 2286098,
+            "end": 2299170,
+            "confidence": 0.9314705,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Dafür wurde es zumindest mal entwickelt, also dass wir zumindest in einem lokalen Netzwerk die Möglichkeit haben, im Nanosekundenbereich die Zeit an Endgeräte zu übertragen. Eine Anwendung damals war z.B. robotersteuerung, wenn zwei Roboter irgendwie, wie bei einem Autohersteller z.b. da gibt es immer so ein schönes Bild dazu, zwei Roboter halten zusammen eine Windschutzscheibe und die beiden Roboter müssen jetzt nun in der Lage sein, die Windschutzscheibe zu einem Auto zu bringen und dort einzusetzen, ohne dass die Scheibe kaputt geht und damit die genau exakt in der gleichen Zeit die Abfolge von Bewegungen machen, die sie tun sollen. Dafür müssen diese Roboter bis auf die Nanosekunde genau synchronisiert sein. Und das war eine schöne Demonstrationsanwendung für eine Anwendung dieses PTP Protokolls. Also dafür wurde es mal entwickelt für lokale Netzwerke.",
+            "start": 2299210,
+            "end": 2348850,
+            "confidence": 0.9321806,
+            "speaker": "C",
+            "channel": null
+        },
+        {
+            "text": "Aber es funktioniert auch, wenn ich es richtig verstehe, wenn das auf Layer zwei abläuft vom ISO OSI Modell, dass auch ein Switch dazwischen sein kann, der das nicht unterstützt. Ich verliere halt dann Genauigkeit, aber theoretisch, das Paket wird weitergeleitet und dann habe ich halt das verloren über diesen einen Switch.",
+            "start": 2348930,
+            "end": 2365842,
+            "confidence": 0.89166445,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Richtig, genau. Also die Genauigkeit wird verschlechtert, aber vielleicht in einem Rahmen, in dem ich es noch akzeptiere. Und der Ruf nach einer Fähigkeit, das PTP Protokoll auch über eine Weitverkehrsverbindung zu übertragen, zweitausendein, ist natürlich da und es gibt Anwendungen auch dafür. Man muss dann eben nur mit den entsprechenden Genauigkeitseinbussen leben. Es sei denn, ich habe ein eigenes Netzwerk, was ich zwischen zwei Städten aufbaue, das ich sogar selber betreibe, wo ich die Infrastruktur selber unter Kontrolle und im Griff habe. Und dann kann ich natürlich auch dort höhere Genauigkeiten entsprechend erreichen.",
+            "start": 2365946,
+            "end": 2404728,
+            "confidence": 0.9315659,
+            "speaker": "C",
+            "channel": null
+        },
+        {
+            "text": "Wenn ich nach PTP recherchiere, kommen mir immer wieder zwei Begriffe auf meinen Screen, und zwar boundary clocks und transparent clocks. Kannst du mir diese beiden Begriffe ganz kurz einordnen?",
+            "start": 2404904,
+            "end": 2415888,
+            "confidence": 0.903337,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Genau, das sind zwei verschiedene Konzepte, wie man das PTP Protokoll auf Switchen oder Routern handeln soll. Eine Boundary Clock enthält eine echte Uhr, also ein Boundary Clock Switch hat tatsächlich eine echte Uhr, die nachgeführt wird, zweitausendein. Und eine Boundary Clock synchronisiert sich an einem Port zu einem Grandmaster und ist dann automatisch ein Master wieder auf allen anderen Ports. Das Besondere an der Boundary Clock ist, dass praktisch alle PTP Pakete, wenn sie dort ankommen, dort terminiert werden und dann wird eine Uhr nachgeführt und dann werden PTP Nachrichten wieder neu generiert bei den Master ports. Das ist sozusagen der große Unterschied zur Transparent Clock Ÿousand. Wie der Name schon sagt, werden die Pakete hier transparent durchgeleitet. Das bedeutet, das Paket vom Master geht tatsächlich durch und wird nur korrigiert. Das heißt, da wird Eingangszeitstempel genommen, ein Ausgangszeitstempel genommen und nur diese relative Zeit wird gemessen und dort in ein Correction Field eingetragen in das Paket. Da wird das Paket einmal angefasst sozusagen und verändert, aber im Prinzip ist es immer noch das Paket, was original von Grandmaster stammte und wird dann entsprechend rausgegeben zum nächsten switch. Das ist so ganz grob der Unterschied zwischen diesen beiden Konzepten. Grundsätzlich muss man damit die gleiche Genauigkeit erreichen können. Also die beiden verschiedenen Konzepte kann man nicht in der Hinsicht gegeneinander ausspielen, dass man sagt, das eine ist genauer als das andere. Es ist eher so eine Infrastruktur Designfrage, ob ich mal das eine Konzept oder das andere ÿousand.",
+            "start": 2415984,
+            "end": 2515514,
+            "confidence": 0.92360204,
+            "speaker": "C",
+            "channel": null
+        },
+        {
+            "text": "Jetzt hast du schon erwähnt, im Hochfrequenzhandel ist es z.b. eine klassische Anwendung, dass man, weil man da verständlicherweise sehr genaue Zeitstempel braucht. Jetzt hat Andi in der Einleitung schon gesagt, ihr seid bei den Oscars vertreten, also nicht als Oskar Teilnehmer, sondern hinter der Bühne sozusagen und bei der Super Bowl. Warum braucht man da ein genaues Signal oder wofür wird dort das genaue Zeitsignal verwendet?",
+            "start": 2515632,
+            "end": 2539190,
+            "confidence": 0.85778254,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Genau, die Rundfunkbranche macht gerade einen Technologiewandel durch, genauso wie es in anderen Branchen auch der Fall ist, dass eben im Prinzip alle Daten über eine Ethernet basierte Infrastruktur übertragen werden. Und dazu gehört eben Bild und Ton, was von Kameras und Mikros aufgenommen wird, aber eben auch Zusatzdaten, Steuerdaten oder eben auch die Zeitsynchronisation. Und auch die Geräte im Broadcast Bereich müssen zeitsynchronisiert werden, damit sie eben in einem Verbund bei einer Liveproduktion eben alle sich darauf einigen, wann die erste Zeile des Fernsehbildes denn nun beginnen soll. Wenn Kamera eins meint, dass das Fernsehbild an einer anderen Stelle beginnt, zu einer anderen Zeit als Kamera zwei, dann gibt es beim Umschalten halt eine Störung im Bild. Und um das zu vermeiden, müssen alle Geräte hochgenau synchronisiert werden. Und dazu verwenden die Rundfunkanstalten inzwischen auch das PTP Protokoll. Und da unsere Geräte eben dafür gemacht sind, das PTP Protokoll rauszugeben, werden die eben in die Geräte in diesem Bereich eben auch eingesetzt.",
+            "start": 2539270,
+            "end": 2607020,
+            "confidence": 0.9053464,
+            "speaker": "C",
+            "channel": null
+        },
+        {
+            "text": "Und bei Audio dasselbe, denke ich mir. Audio over TCP ist ja auch immer mehr im Common oder over IP, keine Ahnung, ob es TCP oder IP ist oder UDP, was es auch immer ist, aber du musst dann dementsprechend da auch ein Zeitsignal mit senden, sonst hast du die klassischen Lippen, die falsch oder nicht zum Audio passen.",
+            "start": 2607140,
+            "end": 2627412,
+            "confidence": 0.9031451,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Genau, die Audio Community war da sogar ein bisschen schneller als die Video Community, die hatte nämlich schon ein paar Jahre früher auch schon auf das PTP Protokoll gesetzt als Synchronisationsquelle und die Fernsehleute sind dann aber auf den gleichen Zug aufgesprungen und da inzwischen ja beides in einem Netzwerk genutzt wird, verwenden die natürlich auch den gleichen Grandmaster und zweitausendein das gleiche Profil inzwischen, um ihre eigenen Endgeräte zu synchronisieren.",
+            "start": 2627476,
+            "end": 2655738,
+            "confidence": 0.92191577,
+            "speaker": "C",
+            "channel": null
+        },
+        {
+            "text": "Findet eine solche Hardware auch irgendwie ein Anwendungsfall in der Zeitmessung? Ich denke jetzt, wenn wir von Hochfrequenzhandel sprechen, zur Zeit Synchronisation denke ich natürlich auch an sehr schnelle Autos aka Formel eins oder ähnliches, wo ganz genaue Zeit gemessen wird. Oder ist das einfach nur ein anderes Segment von Zeit? Weil die Zeit Synchronisation zwischen den Geräten ist da nicht so wichtig, weil die kann ja zur Welt außerhalb des Formel eins Rennens ja inkonsistent sein, weil da geht es ja wirklich nur um die naja gut, eine Formel eins wird eine monotonic clock irgendwie messen, sehr wahrscheinlich auf, weiß ich nicht, ganz hoher Genauigkeit hoffentlich, aber also findet die hat mir da auch einen Anwendungsfall oder sagt ihr nee, das ist eine andere Branche?",
+            "start": 2655834,
+            "end": 2696282,
+            "confidence": 0.8806042,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Also das findet da auch Anwendung, ob jetzt tatsächlich zur Messung der Fahrzeiten am Ende, das ist noch mal eine andere Geschichte, aber auf jeden Fall auch bei der Übertragung eben von Bild und Ton bei der Messung ist es, wie du schon sagst, eben so, dass man eigentlich eine monotone Uhr benutzen kann und nicht von der absoluten Uhrzeit abhängig ist. Trotzdem muss man natürlich dafür sorgen, dass alle Messgeräte, dass auch diese monotone Uhr aller Messgeräte im gleichen Takt laufen, sonst hat man eben Unstimmigkeiten in Messungen. Von daher kann es auch dort eingesetzt werden.",
+            "start": 2696346,
+            "end": 2728370,
+            "confidence": 0.94348246,
+            "speaker": "D",
+            "channel": null
+        },
+        {
+            "text": "Ja, die müssten ja dann alle zur selben Zeit starten mit ihr, mit ihrer Monotonic Clock. Also außer du misst jetzt auf derselben Hardware, aber wenn, keine Ahnung, da im Start eine Hardware steht und irgendwo, keine Ahnung, in der Mitte irgendwo eine Hardware steht, dann muss die ja auch irgendwie synchronisiert werden, vermute ich mal.",
+            "start": 2728410,
+            "end": 2745306,
+            "confidence": 0.8200107,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Genau, die müssen zur Kleinzeit starten und eben auch im gleichen Takt ticken.",
+            "start": 2745418,
+            "end": 2749362,
+            "confidence": 0.8543954,
+            "speaker": "D",
+            "channel": null
+        },
+        {
+            "text": "Das heißt aber auch, wenn ich mir das so allgemein überlege, ihr spart damit auch sehr viele Kabel in der Welt, die verlegt werden, weil ursprünglich war das ja meistens alles irgendwie physikalisch miteinander verbunden, um möglichst kurze Latenzen zu haben. Und wenn alles in Richtung Ÿousand over IP und Ethernet geht, dann kann man da schon viel, viel auch einsparen an Ressourcen und Kabel durch diese Technologie.",
+            "start": 2749506,
+            "end": 2771544,
+            "confidence": 0.89200723,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Ja, das stimmt. Also gerade auch, wenn man sich im Broadcast Bereich beispielsweise mal einen Übertragungswagen anschaut, dann ist das auch eine starke Reduktion des Gesamtgewichts, was man dort hat. Wenn ich normalerweise für jedes einzelne Signal ein dediziertes Koaxialkabel früher gebraucht habe, dann kann ich jetzt inzwischen das über eine einzige 10 Gigabit Glasfaseranbindung erreichen und habe natürlich dann Vorteile auf mehreren Ebenen. Erstmal die die Gewichtsreduktion, ich brauche nicht mehr so viel Kabel, aber eben auch, dass ich eben flexibel bin für spätere Änderungen von Protokollen. Also wenn ich alles auf IP basieren lasse, muss ich eigentlich im Idealfall auf den Geräten nur ein Software Update machen und kann dann eine neue Auflösung fahren. Oder aber wenn jetzt ein neuer Codec rauskommt, beispielsweise um das Bildsignal zu komprimieren, dann kann ich im Prinzip auf die gleiche Standard IT Infrastruktur zurückgreifen und brauche nur die Endgeräte zu aktualisieren und kann weitermachen. Das ist eben sehr viel zukunftssicherer, dieses Konzept.",
+            "start": 2771632,
+            "end": 2839636,
+            "confidence": 0.9109115,
+            "speaker": "C",
+            "channel": null
+        },
+        {
+            "text": "Jetzt haben wir über die Probleme und Limitierung von NTP gesprochen. Und all das, was ich hier gerade höre, hört sich super gut an. Ich bräuchte eigentlich PTP für mein Heimnetzwerk, da bin ich fest von überzeugt. Meine Frage ist PTP perfekt oder hat es ebenfalls Limitierungen und Probleme?",
+            "start": 2839708,
+            "end": 2856840,
+            "confidence": 0.93184143,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Auch PTP hat Probleme. Wie Daniel jetzt schon sagte, ist es eben so, dass die Unterstützung für PTP wirklich in allen Teilen des Netzwerks notwendig ist. Das heißt, es ist also häufig sehr teuer zu implementieren und meistens auf das lokale Netzwerk beschränkt. Das heißt also, die Übertragung über das Internet ist ohne weiteres jetzt erstmal nicht möglich. Man kann es machen, erreicht dann aber eben nicht mehr die Genauigkeit und es landet am Ende dann quasi bei NTP Genauigkeiten über das Internet. Außerdem ist es so, dass Asymmetrien im Delay auch von PTP nicht kompensiert werden können. Das heißt also, wenn ich, wie mein Beispiel bei NTP schon mal gesagt, einen Switch habe, der PTP nicht unterstützt, dann ist es eben so, dass die Paketlaufzeit vom Request, vom Client zum Server oder bei PTP, sprich vom Slave und Master, eben eine andere ist als vom Server oder Master zum Slave. Das heißt also, diese Asymmetrie im Delay, die kann auch PTP nicht kompensieren. Es kann aber auch sein, selbst wenn ich Hardware habe, die PTP vollständig unterstützt, dass das Paket auf dem Hinweg einen anderen Pfad geht als auf dem Rückweg. Das heißt also, selbst wenn ich da jetzt 100 m Kabelunterschied habe, kann das also unterschiedlich sein. Und wenn ich von einer exakt symmetrischen Paketlaufzeit ausgehe, habe ich auch da einen Fehler in der Berechnung des Zeit Offsets am Ende.",
+            "start": 2856920,
+            "end": 2936064,
+            "confidence": 0.9321897,
+            "speaker": "D",
+            "channel": null
+        },
+        {
+            "text": "Wie sieht es mit der mit der Sicherheit aus? Also ist wahrscheinlich allgemein weniger Problem, weil es lokales Netzwerk ist, aber das ist so die Standardausrede von allen immer, im lokalen Netzwerk ist eh alles abgesichert.",
+            "start": 2936112,
+            "end": 2946352,
+            "confidence": 0.9189461,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Ja genau. Sicherheit ist auch noch so ein Problem. Also NTP hat halt, wie gesagt, NTS PTP hat bis dato nur eine Möglichkeit der Authentifizierung. Das heißt also, man kann Pakete signieren, ist allerdings recht wenig verbreitet und müsste auch von allen Netzwerkteilnehmern wieder unterstützt werden. Wenn man sich jetzt wieder so eine transparent clock vorstellt, die das Paket auf dem Weg zum Empfänger manipuliert, also das Correction Field updatet, müsste ja auch die Signatur wieder geupdatet werden und dementsprechend müssen eben auch die Transparent Clocks dazwischen diese Authentifizierung unterstützen.",
+            "start": 2946496,
+            "end": 2981592,
+            "confidence": 0.92426544,
+            "speaker": "D",
+            "channel": null
+        },
+        {
+            "text": "Man müsste wirklich Hardware einschleusen, wenn ich die Architektur richtig verstanden habe, oder weil es auf Layer zwei abläuft oder sogar noch tiefer auf Hardwareebene. Das heißt, die müsste irgendeine Hardware einschleusen, die das überhaupt schafft, da irgendwas zu verändern.",
+            "start": 2981656,
+            "end": 2996260,
+            "confidence": 0.8665193,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Nein, das nicht. Also es sind ja trotzdem Netzwerkpakete. Das heißt also auch Software könnte ein Netzwerkpaket abfangen und könnte einen Zeitstempel in dem Paket manipulieren. Also der Zeitstempel wird zwar in Hardware genommen, wird aber ja dann in das Netzwerkpaket geschrieben, was dann auf den Weg zum Slave geht, wenn da jemand sich in der Mitte befindet. Der dann das Paket abfängt und den Zeitstempel verändert oder auch das Correction Field verändert, was dann auf Slave Seite noch schwieriger zu erkennen wäre, weil eben das Correction Field ja durchaus unterschiedliche Werte haben darf, ist eben diese Manipulierbarkeit also durchaus genauso gegeben wie bei NTP.",
+            "start": 2996700,
+            "end": 3032704,
+            "confidence": 0.9295278,
+            "speaker": "D",
+            "channel": null
+        },
+        {
+            "text": "Also wir sprechen von router Software in.",
+            "start": 3032792,
+            "end": 3034448,
+            "confidence": 0.9475057,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Dem Fall nicht unbedingt. Also wenn jetzt, wenn ich einen Rechner im Netzwerk habe, der es schafft, eine Mac Adresse und eine IP Adresse zu.",
+            "start": 3034464,
+            "end": 3040728,
+            "confidence": 0.9575604,
+            "speaker": "D",
+            "channel": null
+        },
+        {
+            "text": "Spoofen, das kann im Grunde genommen jeder.",
+            "start": 3040864,
+            "end": 3043376,
+            "confidence": 0.8815743,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Linux Rechner sein, aber es ist schon so, dass man müsste eben ein Einfallstor im lokalen Netzwerk bereits haben. Das heißt also, das Problem ist wahrscheinlich geringer einzustufen als bei NTP, wo man ja eher über Wide Area Networks oder im Internet oder sowas geht.",
+            "start": 3043408,
+            "end": 3058690,
+            "confidence": 0.893802,
+            "speaker": "D",
+            "channel": null
+        },
+        {
+            "text": "Und natürlich, du hast noch auch die ganzen Mechanismen im Netzwerk, die vielleicht verhindern, dass du so einfach eine Mac Adresse spoofen kannst und dass die Mac Adressen irgendwie auf die physikalischen Ports gepinnt sind oder zumindestens eingeschränkt. Gibt es ja auch noch Sicherheitsmaßnahmen. Aber ja, danke, hast du schon den schönen Pfad uns erklärt, wie man wie man das ganze hacken kann.",
+            "start": 3058810,
+            "end": 3078718,
+            "confidence": 0.89343095,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Bei der Recherche bin ich auch über den Begriff PTP Profile gestoßen und über den Begriff der Interoperabilität. Ja, verschiedene Implementierungen, die zusammenarbeiten. Das ist die Umschreibung, das andere Wort kann ich einfach nicht aussprechen.",
+            "start": 3078774,
+            "end": 3096022,
+            "confidence": 0.9138463,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Also PTP Profiles wurden eingeführt, um die Konfiguration in den Betrieb von PTP zu vereinfachen und für bestimmte Anwendungsfälle und Industrien zu spezialisieren. Zweitausendein, das ist jetzt ein bisschen eine andere Situation als die verschiedenen Implementierungen von NTP, die am Ende aber dann doch irgendwie das gleiche machen sollen. Bei PTP ist es so, dass eben so viele verschiedene Anwendungen dahinter hängen, die aber verschiedene Grundanforderungen haben. Beispielsweise gibt es die Möglichkeit, PTP sowohl über Layer drei UDP Pakete zu versenden, als auch über Layer zwei Ethernet Pakete. Also es gibt einen eigenen PTP Ethertype für PTP. Das heißt, ich versende mein PTP Paket nicht an eine bestimmte IP Adresse oder auch eine IP Multicast Adresse, sondern an eine Mac Adresse direkt. Das wird z.B. im Energiesektor so eingesetzt. Dort wird im Prinzip nur auf Layer zwei Basis kommuniziert, im Bereich der Unterstationen z.B. und daher hat man da schon eine ganz andere Grundkonfiguration. Dann hat man natürlich noch Anforderungen an an die Genauigkeit, an die Art und Weise, wie boundary clocks oder transparent Clocks eingesetzt werden sollen und um dann für diese Industrien und Anwendungsfälle eine Vereinfachung herzustellen, hat man eben Profile erdacht. Diese Profile werden aber nicht von der IEEE, die das PTP Protokoll voll mal definiert haben, geschrieben, sondern von anderen Standardisierungsorganisationen, die für ihre Industrie eigene Standards schreiben. Das bedeutet, für die Telekommunikationsbranche hat dann die ITU, die zuständig ist, ein Telekom Profil oder mehrere Telekom Profile geschrieben, während beispielsweise für die Rundfunkanstalten die SMPTE Organisation ein PTP Profil für die Broadcaster geschrieben hat. Und idealerweise ist es eben so, dass man sagt, wenn ich den Grandmaster in einem in einer Rundfunkanstalt auf Sempty Profil default stelle und das Endgerät auch auf Sempty Profil default stelle, dann sollen die quasi, ohne dass ich irgendetwas anderes umkonfigurieren muss, sofort miteinander sprechen und sich synchronisieren können. Das ist sozusagen der Idealzustand, dass ich mich gar nicht richtig intensiv mit den einzelnen PTP Parametern auskennen muss, sondern ich konfiguriere das Profil ÿousand, ändere vielleicht ein, zwei Parameter ab und dann läuft das ganze schon, weil es eben optimiert für den Anwendungsfall und für diese Industrie ist. Das ist im Prinzip ein Profil.",
+            "start": 3096206,
+            "end": 3257904,
+            "confidence": 0.89475197,
+            "speaker": "C",
+            "channel": null
+        },
+        {
+            "text": "Ich mag, dass du das Wort Idealzustand erwähnt hast. Zwischen den Zeilen klingt das nach einigen Herausforderungen in der Praxis.",
+            "start": 3257992,
+            "end": 3265880,
+            "confidence": 0.9025465,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Genau, ja. Also die gibt es natürlich immer auch mit den Profilen, aber die grundsätzlichen Probleme, die man in der Anfangszeit vielleicht hatte mit PTP, sind durch die Erstellung von diesen Problemen Profilen schon stark reduziert worden. Das muss man wirklich sagen.",
+            "start": 3265960,
+            "end": 3280850,
+            "confidence": 0.94789237,
+            "speaker": "C",
+            "channel": null
+        },
+        {
+            "text": "Jetzt ist es ja so, dass wir vier hier miteinander sprechen dank der Schaltsekunde und es interessiert mich natürlich auch, wie PTP mit der Schaltsekunde eigentlich umgeht oder ob das ein Problem ist. NTP hat ja das sogenannte Leap second file, was hier und da mal wieder runtergeladen wird oder irgendwo hingelegt wird, wird er zur Verfügung gestellt und wird, glaube ich, die Leap second, weiß ich nicht, dreiig Tage, 90 Tage vorher announced oder sowas. Ÿousand oder drei Monate. Wie geht denn PTP mit der Schaltsekunde um?",
+            "start": 3280930,
+            "end": 3308304,
+            "confidence": 0.88922375,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Hierzu muss man wissen, dass bei NTP in den Zeitstempeln die UTC Zeit als Zeitskala, als Basis schon drin steckt und dann diese UTC Zeit im Falle einer eingefügten Zeit schaltsekunde tatsächlich springen würde. Das hat jetzt PTP besser gemacht, meiner Meinung nach. PTP hat nämlich eine monoton steigende Zeitskala, die gar nicht springen kann. Das ist nämlich die internationale Atomzeit, auch Tai genannt. Die liegt sozusagen dem Ganzen zugrunde. Das ist in den Zeitstempeln drin. Und die Schaltsekunden, die angefallen sind, die werden lediglich von dieser Zeit Skala, von diesen Zeitstempeln abgezogen, um dann wieder UTC erhalten zu können. Damit habe ich mir eben diese monoton steigende Zeit nicht verbaut, kann aber trotzdem die UTC Echtzeit zurückrechnen zweitausendein. So, und dann gibt es natürlich auch da die Möglichkeit, Schaltsekunden anzukündigen. Das läuft nicht irgendwie Wochen und Monate im Voraus. Bei PTP ist es so, dass man einen Ankündigungsbit im Protokoll einschaltet, was einfach nur sagt, dass am Ende des laufenden Tages eine Schalt S eingeführt werden soll, sodass eben ein Endgerät sich auch darauf einstellen kann und entsprechende Maßnahmen ergreifen kann, das eben sauber durch. Also ja, es gibt es dort auch, aber das Konzept ist eben ein bisschen anders dort aufgebaut im Vergleich zu NTP.",
+            "start": 3308392,
+            "end": 3394072,
+            "confidence": 0.91438407,
+            "speaker": "C",
+            "channel": null
+        },
+        {
+            "text": "Lass uns mal kurz noch mal zu den Zeitservern und der Hardware springen. Und ich komme aus dem reliability Bereich. Ich kümmere mich um verteilte Systeme, um Ausfälle und auch ziemlich viel um Monitoring und Alarming. Und bei dieser ganzen Zeitkomponente frage ich mich, wie monitort man denn? Wie die ganze Geschichte, wie stellt man denn sicher, dass da auch wirklich das richtige Ergebnis zweitausendeinundzwanzig rauskommt oder die richtigen signale gesendet werden? Und also für mich klingt das so ein bisschen nach, weil alles auf Zeit basiert, who is watching the watcher gefühlt. Wie macht man sowas?",
+            "start": 3394136,
+            "end": 3428438,
+            "confidence": 0.91893095,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Who is watching the watch meinst du in dem Fall?",
+            "start": 3428534,
+            "end": 3430854,
+            "confidence": 0.942748,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Ja, das pun intended. Okay, den Flachwitz gebe ich dir, Wolfgang, aber wie funktioniert das? Also du kannst ja. Ja, ich habe keine Ahnung.",
+            "start": 3430942,
+            "end": 3440430,
+            "confidence": 0.9047033,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Also wir haben erstmal in unseren Geräten grundsätzlich ein Self Monitoring immer an Board. Das heißt also, es können eventbasiert Alarme generiert werden, z.B. sNMP Traps oder E Mail Benachrichtigungen, wenn z.B. das Antennensignal verloren geht, wenn der Zeitserver die Referenzquelle wechselt, das heißt also GNSS ist nicht mehr verfügbar, ich wechsle auf meine Backup Referenz. PTP z.b. wenn ein externer NTP Server nicht mehr erreichbar ist, wenn der eigene PTP Status sich ändert, z.B. von aktuell Master auf Passiv, das heißt also, ich werde jetzt passiv und nur noch im Hintergrund agieren und mache erstmal nichts mehr. All das sind Events, die passieren können und die von unseren Geräten eben gemonitort werden und entsprechend alarmiert werden können. Außerdem haben wir auch ein integriertes Monitoring von externen Clients oder PTP Time Receiver, was wir Netsync Monitor nennen. Das basiert auf einer eigens von uns entwickelten Erweiterung von PTP, wird im so allgemeinen Umgangssprache auch Reverse PTP genannt, weil wir an der Stelle selbst quasi das Request response Verfahren umgedreht haben und den eigentlichen Empfänger der Zeit nach seiner Zeit fragen und sozusagen eine echte Messung machen, wie jetzt die Zeit des Slaves eben aussieht im Vergleich zu unserer eigenen Referenz. Also in den meisten Fällen wieder GNSL. Genau, das ist auch Teil unserer normalen zeitserver Firmware. Das heißt also, man kann den Zeitserver gleichzeitig als Server oder Master, je nachdem ob man NTP oder PTP oder beides verwenden will, nutzen und gleichzeitig eben auch als Monitoring System externer Clients oder Receiver, die eben hochgenaue Zeit benötigen. Da gibt es eben z.B. auch im Finanzsektor mittlerweile Gesetzesvorschriften, die das auch tatsächlich vorschreiben, dass man zu jeder Zeit nachweisen kann, dass Clients, die am Finanzmarkt oder am Handel teilnehmen, eine entsprechende Genauigkeit haben. Und das kann unser Netzwerkmonitor quasi leisten. Der zeichnet also sozusagen auf, wie sich die Zeit auf dem Client verhalten hat über gewisse Dauern. Und dann haben wir auch noch ein drittes Tool namens PTP Trackcount. Das ist eine frei zum Download verfügbare Software, die wir zweitausendein der PTP Community ursprünglich mal zur Verfügung gestellt haben als reines Troubleshooting Tool. Viele kennen vielleicht Wireshark, das ist im Grunde genommen so ähnlich wie Wireshark. Also man zeichnet PTP Pakete auf und basierend darauf wird in der Software eine Grafik erzeugt, wie das PTP Netzwerk aussieht. Es werden Hierarchien gebildet und man kann eben sehen, wer synchronisiert auf wen, wer ist aktuell der aktive Grandmaster? Man kann in die Pakete reinschauen, kann genau sehen, was da für Zeit übertragen wird, zweitausendein, welche Qualität und so weiter.",
+            "start": 3440510,
+            "end": 3609908,
+            "confidence": 0.9019829,
+            "speaker": "D",
+            "channel": null
+        },
+        {
+            "text": "Jetzt würde mich auch interessieren, was denn eigentlich sowas im Groben und Ganzen kostet? Also wenn ihr euch richtig verstanden habt, die die Switches haben das mittlerweile eh schon eingebaut in der höherpreisigen Klasse. Wenn ich so einen zentralen Server habe, der mir die die Zeit dann zur Verfügung stellt über das PTP Protokoll. Ich denke mir, mein Handy hat ja auch ein GPS Empfänger, kostet €100, dann kann es ja nicht viel teurer sein. Bisschen Software noch oben dran, dann sind wir da schon dabei.",
+            "start": 3610004,
+            "end": 3639680,
+            "confidence": 0.8720133,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Ja, das reicht leider nicht so ganz.",
+            "start": 3639980,
+            "end": 3642080,
+            "confidence": 0.9871457,
+            "speaker": "C",
+            "channel": null
+        },
+        {
+            "text": "Also ich hoffe ja, dass ihr stabiler seid als mein Handy, also gerade im professionellen Umfeld. Aber bekommt man sowas um um €1000? Also in welchen Preissegmenten bewegen wir uns denn da so? Jetzt auch vielleicht gar nicht von euch, aber allgemein, wenn man sich in dem Preissegment, in dem Bereich bewegt, wo man wirklich eine genaue Zeit haben will, was was muss man da rechnen für so.",
+            "start": 3643220,
+            "end": 3665868,
+            "confidence": 0.9102871,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Eine zentrale, also wenn wir jetzt einen reinen NTP Server uns angucken, dann geht der ungefähr bei Euro los. Und wenn wir das ganze mit PTP haben wollen, dann muss man auch dreieinhalb, vier €5000 vielleicht mal kalkulieren, je nachdem wie viele Ausgänge man bereitstellt, welche Güte mein interner Quarz hat, der die Zeit dann auch noch länger halten soll, wenn ich keinen Empfang mehr habe. Und wenn ich dann eben ganz flexibel sein will mit einem modularen System, wo ich dann auch noch ganz viele andere Arten von Zeitsignalen parallel auch rausgeben möchte oder das System auch als Messsystem verwenden möchte und dann vielleicht auch noch Redundanz einbaue und so weiter, kann ich für so ein System auch 1015 oder Euro ausgeben.",
+            "start": 3665884,
+            "end": 3711430,
+            "confidence": 0.9372325,
+            "speaker": "C",
+            "channel": null
+        },
+        {
+            "text": "Haben eure Systeme dann auf der Rückfallebene, geht es so weit runter, dass man dann auch diese funkbasierten Zeitquellen anzapft oder ist es dann viel zu ungenau? Also das, was ich so in meiner Funkuhr zu Hause haben, die an der Wand hängt, ist das auch eine Option oder ist das absolut no go?",
+            "start": 3711550,
+            "end": 3727110,
+            "confidence": 0.9016122,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Dafür stellen wir natürlich auch Empfänger zur Verfügung. Für NTP ist das tatsächlich eine verwendbare Zeitquelle, also Stichwort DCF 77 Sender, der bei Frankfurt steht und die gesetzliche Zeit in Deutschland verbreitet. Das ist tatsächlich die amtliche gesetzliche Zeit für Deutschland, die dort gemacht wird. Und gerade wenn es im Bereich von z.B. behörden geht, Regierungsorganisationen, die auch verpflichtet sind, die amtliche deutsche Zeit zu verwenden, dann kommen die gar nicht drumherum, sich so ein DCF 77 basiertes System anzuschaffen. Und im Bereich von ein paar Millisekunden ist das System entsprechend auch verwendbar. Großer Vorteil ist auch, man kann eine Innenantenne verwenden, man muss gar nicht unbedingt eine Antenne aufs Dach schrauben. Das ist da auch ein Vorteil. Und wenn ich eben nur den Bereich um 1 ms Genauigkeit brauche, dann ist das zumindest in Zentraleuropa, sag ich mal, wo das empfangbar ist, eine Alternative. Für PTP oder als PTP Grandmaster eignet sich dieser Langwellen Sender nicht. Also das ist eben dann noch nicht genau genug und man muss eben auf GNSS basierte Satellitensysteme zurückgreifen als Quelle.",
+            "start": 3727270,
+            "end": 3802600,
+            "confidence": 0.92659533,
+            "speaker": "C",
+            "channel": null
+        },
+        {
+            "text": "Hier als Österreicher muss ich natürlich jetzt sagen, ich bin nicht einverstanden, dass wir uns nach der amtlichen Zeit von Deutschland.",
+            "start": 3802640,
+            "end": 3808504,
+            "confidence": 0.92042047,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Richtig, aber nicht verpflichtend natürlich, ist nur ein Angebot.",
+            "start": 3808552,
+            "end": 3812830,
+            "confidence": 0.91750336,
+            "speaker": "C",
+            "channel": null
+        },
+        {
+            "text": "Was ist denn die offizielle Zeit von Österreich? Also wer stellt die? Kriegt Österreich die auch vom DC F?",
+            "start": 3814290,
+            "end": 3820034,
+            "confidence": 0.89887947,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Ich bin mir ziemlich sicher, dass das immer Frankfurt ist. Ich glaube, es gibt nicht so viele Sender oder in Europa überhaupt nur den in Frankfurt oder genau, es gibt nur.",
+            "start": 3820202,
+            "end": 3828826,
+            "confidence": 0.955081,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Den einen Sender und das Langwellensignal ist eben so gemacht, dass es eben auch mehrere tausend km empfangbar ist. Das heißt also, wir haben auch Kunden, die tatsächlich irgendwo in Norwegen oder auch in Spanien auch unser Signal empfangen können, dann allerdings mit einer Außenantenne, die speziell so ausgerichtet ist. Aber es gibt nur den einen Sender und der ist für ganz Europa mehr oder weniger zuständig.",
+            "start": 3828858,
+            "end": 3849700,
+            "confidence": 0.92919046,
+            "speaker": "C",
+            "channel": null
+        },
+        {
+            "text": "Wenn ich mal irgendwann im Lotto gewinnen sollte, sehe ich eine Chance, dass ich mein Netzwerk auf PTP umrüste. Jetzt nerdige kennt ihr Privatpersonen, die Home Lab, internes Netzwerk auf PTP laufen lassen? Ich krieg doch bestimmt auch skurrile Fälle mit irgendwie, oder? Also habt ihr sowas mal irgendwie aus der Hacker Community, weiß ich nicht, vom Chaos Computer Club oder außer euer Home.",
+            "start": 3849780,
+            "end": 3871790,
+            "confidence": 0.86872,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Lab, weil bei euch ist das natürlich sicherlich Standard zu Hause.",
+            "start": 3871830,
+            "end": 3874734,
+            "confidence": 0.94085544,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Genau, ich habe natürlich auch einen Zeitserver zu Hause, um meine Wanduhr zu betreiben. Das ist als kleines Hobbyprojekt. Aber klar, die gibt es natürlich auch. Das sind vielleicht auch Leute, die ja auch in der Firma zweitausendein, wo sie arbeiten, vielleicht ein bisschen Berührungspunkte damit haben und dann eben auch ein ambitioniertes Hobby haben und auch sowas bei sich zu Hause betreiben für bestimmte Anwendungen, die sie da haben. Also das erleben wir schon ab und zu, aber das ist wirklich recht selten, muss man sagen.",
+            "start": 3874902,
+            "end": 3902652,
+            "confidence": 0.92745274,
+            "speaker": "C",
+            "channel": null
+        },
+        {
+            "text": "Ja, ich meine, andere Leute haben Autotuning als Hobby. Ich kenne kein Hobby, was einen größeren Wertverlust hat. Ich glaube, da ist das Geld bei NTP und PTP Server besser angelegt. Zeit Tuning Thomas zweitausendein. Thomas Daniel, vielen lieben Dank für dieses Gespräch. Ich dachte nicht, dass ich so viele Probleme mit Zeit habe. Jetzt weiß ich es leider. Ihr habt Fragen aufgeworfen, von denen ich gar nicht wusste, dass ich diese habe. Vielen lieben Dank, dass ihr mir einen Einblick in NTP, PTP und auch generell in Zeitserver Hardware gegeben habt. Und zum Abschluss des Podcasts möchte ich gerne Abschlusswort an euch übergeben. Was wollt ihr der Engineering Kiosk Community noch mitgeben?",
+            "start": 3902756,
+            "end": 3943646,
+            "confidence": 0.9043708,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Also erstmal ganz, ganz herzlichen Dank, dass ihr die Anfrage an uns gegeben habt, an diesem Podcast teilzunehmen. Das hat uns wirklich sehr gefreut, das muss man sagen, haben wir noch nie gemacht. Das ist das erste Mal jetzt gewesen, dass wir sowas gemacht haben. Und ansonsten der Community können wir mitgeben, dass alle Probleme, die mit der Zeit Synchronisation gelöst werden sollen, dass ihr uns damit im Prinzip als einen richtigen Partner finden könnt und wir natürlich auch immer daran interessiert sind, an engagierten Leuten, die an unserer Problematik mitarbeiten möchten. Wir haben hier an unserem Standort in Bad Pyrmont einen sehr schönen Zusammenhalt und wir suchen auch immer neue Leute. Könnt ihr euch gerne informieren, auch auf unserer Webseite, da könnt ihr gerne mal schauen. Und ansonsten vielen Dank fürs Zuhören von unserer Seite würde ich sagen.",
+            "start": 3943798,
+            "end": 3987210,
+            "confidence": 0.94137245,
+            "speaker": "C",
+            "channel": null
+        },
+        {
+            "text": "Vielen Dank, dass ihr bei uns zu Gast wart und dass ihr unserer Einladung gefolgt seid. Wir hatten viel Spaß für alle anderen, wir haben viele Links in den Shownotes. Schaut doch einfach mal da rein, auch wie ihr Thomas und Daniel kontaktieren könnt und Zweitausendein auch auf die Webseite von Meinberg. Und bis dahin würde ich sagen, bis zur nächsten Episode. Tschüss.",
+            "start": 3987290,
+            "end": 4006624,
+            "confidence": 0.9121795,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Ciao.",
+            "start": 4006792,
+            "end": 4007464,
+            "confidence": 0.59206,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Tschüss.",
+            "start": 4007592,
+            "end": 4008224,
+            "confidence": 0.68733,
+            "speaker": "C",
+            "channel": null
+        },
+        {
+            "text": "Tschüss.",
+            "start": 4008352,
+            "end": 4008560,
+            "confidence": 0.4284,
+            "speaker": "A",
+            "channel": null
+        }
+    ],
+    "confidence": 0.9097688,
+    "audio_duration": 4009,
+    "webhook_status_code": null,
+    "webhook_auth": false,
+    "summary": null,
+    "auto_highlights_result": null,
+    "content_safety_labels": null,
+    "chapters": null,
+    "sentiment_analysis_results": null,
+    "entities": null
+}

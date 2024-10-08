@@ -77,7 +77,13 @@ rtlplus: ''
 six_user_needs: []
 speaker:
 - name: Andy Grunwald
+  transcriptLetter: B
 - name: Wolfi Gassler
+  transcriptLetter: A
+- name: Daniel Boldt
+  transcriptLetter: C
+- name: Thomas Behn
+  transcriptLetter: D
 spotify: https://open.spotify.com/episode/6L5fvH5dl3PnDCGvYqjyKc
 tags:
 - Software Engineering
