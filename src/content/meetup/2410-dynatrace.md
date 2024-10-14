@@ -13,8 +13,8 @@ talks:
     bio: 'Peter did his PhD in Numerical Linear Algebra and started to use High Performance Computing (HPC) early in his studies. Later in his career he co-lead a project between 8 Universities that aimed to foster cooperation of Austrian Universities on HPC and Cloud Applications with a focus on usability and reduction of the „learning curve“. This is where he gained first hand experience on the topic at hand.'
   - avatar: '2410-chris.jpg'
     name: 'Christopher Frahm'
-    title: 'FROM OUTPUT TO OUTCOME - mindset shift to an end of the feature flood'
-    description: ''
+    title: 'From Output to Outcome: The End of the Feature Flood'
+    description: 'In today’s fast-paced digital landscape, delivering more features does not always lead to better results. This talk, “From Output to Outcome,” explores how organizations can move beyond feature factories and adopt an outcome-driven mindset. Christopher will share insights on how to align product development processes with measurable business and user goals, using agile methodologies, OKRs, and strategic focus areas. Attendees will learn practical steps to transition from output-focused workflows to outcome-oriented strategies that deliver true value to both users and businesses. Expect to gain actionable tips on improving team collaboration, avoiding feature overload, and creating sustainable success through clear goal-setting and continuous measurement of impact.'
     bio: ''
 eventId: '7cioclkkcefl16a3va03ahf6kn'
 ---
