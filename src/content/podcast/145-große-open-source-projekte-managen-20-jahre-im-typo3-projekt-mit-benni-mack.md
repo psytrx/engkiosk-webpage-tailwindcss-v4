@@ -90,10 +90,10 @@ tags:
 - Open Source
 - Leadership
 - Interview
-title: "#145 Gro\xDFe Open Source Projekte managen: 20 Jahre im Typo3 Projekt mit\
+title: "#145 Gro\xDFe Open Source Projekte managen: 20 Jahre im TYPO3 Projekt mit\
   \ Benni Mack"
-transcript_raw: ''
-transcript_slim: ''
+transcript_raw: src/data/transcripts/145-transcript.zip
+transcript_slim: src/data/transcripts/145-transcript-slim.json
 youtube: https://www.youtube.com/watch?v=v9cD3lufftU
 
 ---
