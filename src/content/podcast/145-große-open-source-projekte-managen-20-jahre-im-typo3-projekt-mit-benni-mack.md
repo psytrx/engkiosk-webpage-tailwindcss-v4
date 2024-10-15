@@ -81,9 +81,9 @@ speaker:
 - name: Andy Grunwald
   transcriptLetter: A
 - name: Wolfi Gassler
-  transcriptLetter: C
-- name: Benni Mack
   transcriptLetter: B
+- name: Benni Mack
+  transcriptLetter: C
 spotify: https://open.spotify.com/episode/0oYzKaV8ePA3sSxwJGjrTY
 tags:
 - Projektmanagement
