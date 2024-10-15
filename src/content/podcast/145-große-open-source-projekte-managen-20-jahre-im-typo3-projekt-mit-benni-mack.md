@@ -79,7 +79,11 @@ rtlplus: ''
 six_user_needs: []
 speaker:
 - name: Andy Grunwald
+  transcriptLetter: A
 - name: Wolfi Gassler
+  transcriptLetter: C
+- name: Benni Mack
+  transcriptLetter: B
 spotify: https://open.spotify.com/episode/0oYzKaV8ePA3sSxwJGjrTY
 tags:
 - Projektmanagement
