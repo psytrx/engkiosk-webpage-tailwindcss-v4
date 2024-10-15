@@ -81,7 +81,11 @@ speaker:
 - name: Andy Grunwald
 - name: Wolfi Gassler
 spotify: https://open.spotify.com/episode/0oYzKaV8ePA3sSxwJGjrTY
-tags: []
+tags:
+- Projektmanagement
+- Open Source
+- Leadership
+- Interview
 title: "#145 Gro\xDFe Open Source Projekte managen: 20 Jahre im Typo3 Projekt mit\
   \ Benni Mack"
 transcript_raw: ''
