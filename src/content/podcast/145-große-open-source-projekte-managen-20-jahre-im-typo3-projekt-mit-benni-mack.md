@@ -1,6 +1,6 @@
 ---
 advertiser: ''
-amazon_music: ''
+amazon_music: https://music.amazon.com/podcasts/c35a09fe-4116-4e04-8f68-77d61b112e46/episodes/078fe42b-b2a1-4aee-94e8-5c269ef1585c/engineering-kiosk-145-gro%C3%9Fe-open-source-projekte-managen-20-jahre-im-typo3-projekt-mit-benni-mack
 apple_podcasts: https://podcasts.apple.com/us/podcast/145-gro%C3%9Fe-open-source-projekte-managen-20-jahre-im/id1603082924?i=1000673112657&uo=4
 audio: https://audio1.redcircle.com/episodes/58f6b29c-0342-48df-964a-853c28839439/stream.mp3
 chapter:
