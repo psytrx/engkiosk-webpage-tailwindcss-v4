@@ -1,6 +1,6 @@
 ---
 advertiser: ''
-amazon_music: ''
+amazon_music: https://music.amazon.com/podcasts/c35a09fe-4116-4e04-8f68-77d61b112e46/episodes/d69f4c14-c8b2-493a-8658-a436edf36da0/engineering-kiosk-146-warum-ist-doom-so-faszinierend-f%C3%BCr-die-software-entwicklung
 apple_podcasts: https://podcasts.apple.com/us/podcast/146-warum-ist-doom-so-faszinierend-f%C3%BCr-die-software/id1603082924?i=1000673942577&uo=4
 audio: https://audio1.redcircle.com/episodes/f08b75ad-bf35-4791-aad6-8c7672f2aac8/stream.mp3
 chapter:
