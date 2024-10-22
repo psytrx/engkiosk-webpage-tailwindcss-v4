@@ -96,7 +96,9 @@ rtlplus: ''
 six_user_needs: []
 speaker:
 - name: Andy Grunwald
+  transcriptLetter: A
 - name: Wolfi Gassler
+  transcriptLetter: B
 spotify: https://open.spotify.com/episode/2FWb4BvTAE7tYF5Tq2niim
 tags: []
 title: "#146 Warum ist Doom so faszinierend f\xFCr die Software-Entwicklung?"
