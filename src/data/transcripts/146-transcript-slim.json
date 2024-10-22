@@ -1,0 +1,1486 @@
+{
+    "language_code": "de",
+    "audio_url": "https://cloud.inlupus.at/s/jKEodLiRFRB4TAQ/download/ep146_doom.mp3",
+    "punctuate": true,
+    "format_text": true,
+    "dual_channel": false,
+    "webhook_url": null,
+    "webhook_auth_header_name": null,
+    "webhook_auth_header_value": null,
+    "audio_start_from": null,
+    "audio_end_at": null,
+    "word_boost": [],
+    "boost_param": null,
+    "filter_profanity": false,
+    "redact_pii": false,
+    "redact_pii_audio": false,
+    "redact_pii_audio_quality": null,
+    "redact_pii_policies": null,
+    "redact_pii_sub": null,
+    "speaker_labels": true,
+    "speakers_expected": 2,
+    "content_safety": false,
+    "content_safety_confidence": null,
+    "iab_categories": false,
+    "custom_spelling": null,
+    "disfluencies": false,
+    "sentiment_analysis": false,
+    "auto_chapters": false,
+    "entity_detection": false,
+    "summarization": false,
+    "summary_model": null,
+    "summary_type": null,
+    "auto_highlights": false,
+    "language_detection": false,
+    "language_confidence_threshold": null,
+    "language_confidence": null,
+    "speech_threshold": null,
+    "speech_model": null,
+    "id": "ec920f78-cdaa-40de-a245-ecbc895fa644",
+    "status": "completed",
+    "error": null,
+    "utterances": [
+        {
+            "text": "Das Spiel Doom beschäftigt viele Softwareentwickler innen auch noch ein und dreiig Jahre nach seiner Veröffentlichung im Jahre 1903 und neunzigste. Die Frage can it run Doom? Ist allgegenwärtig. Es ist eine Art Sport geworden, das Spiel auf jede Art von Device zu portieren. Doom läuft inzwischen auf einem John deere Tracker, einem Satelliten und auf einem digitalen Schwangerschaftstest Ÿousand. Doch was macht dieses Spiel so interessant? Warum wird genau dieses Spiel für die Portierung genutzt? Welche bahnbrechenden Implementierungsdetails haben John Carmack, John Romero und das Team verbaut? Das war meine Ausgangsfrage. Das ein tiefes Loch voller Wow und Wtf Momente und natürlich diese Podcast Episode. Es geht um Zufallszahlengeneratoren, Grafikengines, Doom Fun Facts, Doom Forks und wie du deinen eigenen Doom Port erstellen kannst. Zieh dich warm an, es geht los. Viel Spaß. Lieber Wolfgang, in welchem Jahr wurdest du geboren?",
+            "start": 4320,
+            "end": 66814,
+            "confidence": 0.91242725,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Du wirst mir jetzt nur outen, vor allem wie alt ich bin, aber 1902.",
+            "start": 66902,
+            "end": 70342,
+            "confidence": 0.845735,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Und achtzigste, das trifft sich sehr gut. Dann warst du zu dem Ereignis, über das wir heute unter anderem sprechen, 11 Jahre alt. Und das müsste dann ungefähr die Zeit gewesen sein, wo du mit dem Thema auch in Kontakt gekommen bist. Denn es ist wieder passiert. Vor kurzem bin ich ja in einen Rabbit Hole gefallen, als ich mich mit Thema Zeit in der Informatik, Schaltsekunden und Co. Beschäftigt habe. Es ist leider wieder passiert, doch diesmal nicht mit der Zeit, sondern mit einem ganz anderen Thema.",
+            "start": 70352,
+            "end": 94822,
+            "confidence": 0.9539106,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Und zwar welchem?",
+            "start": 94886,
+            "end": 95686,
+            "confidence": 0.9401067,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Mit einem Computerspiel. Und zwar mit Doom. Und da ist mir wirklich wieder klar geworden, dass Hacker, Nerds und Geeks einfach grandios und faszinierend sind. Denn speziell im Bereich Doom gibt es einfach unendlich viele Projekte, die einfach gemacht werden, weil es geht. Und ich finde es so, so unglaublich faszinierend viel Zeit da investiert wird. Denn man sieht an diesen Projekten, dass das auf Basis reiner Motivation, reiner Passion und wirklich reinem Feuer in den Augen gemacht wird. Und wie bin ich auf das Thema gekommen? Ich bin im Internet gesurft und irgendeine Webseite hat mir ein Capture angezeigt. Und in diesem Capture kam ein kleines Doom Fenster, wo ich per Webassembly vier Monster töten musste, damit ich weiter konnte. Das hat mich zu der weiteren Frage geführt, warum kann eigentlich Doom überall laufen?",
+            "start": 95758,
+            "end": 142826,
+            "confidence": 0.9206291,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Moment, war das war das wirklich ein das originale Doom oder irgendwie ein nachgestelltes Doom?",
+            "start": 142938,
+            "end": 147730,
+            "confidence": 0.801544,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Ich kann dir jetzt nicht sagen, ob ich in dem Capture das ganze Level hätte spielen können. Ich musste auf jeden Fall vier Monster töten, damit ich beweise, dass ich ein Mensch bin und dann weiterkomme.",
+            "start": 147770,
+            "end": 156898,
+            "confidence": 0.9572978,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Aber es war wirklich das originale Doom Spiel und jetzt kein irgendwie killenbar Monster irgendwie neues Game.",
+            "start": 156954,
+            "end": 162754,
+            "confidence": 0.8726806,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Genau.",
+            "start": 162842,
+            "end": 163242,
+            "confidence": 0.90387,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Woher weißt du das überhaupt? Du bist viel zu jung für Doom, oder? Wir hatten ja die Counter Strike Episode, Episode 42, wo du erklärt hast, wie du als kleines Kind da quasi Counter Strike gespielt hast. Doom ist ja viel älter. Doom kennst du ja gar nicht, oder? Hast du mal Doom gespielt überhaupt?",
+            "start": 163306,
+            "end": 177474,
+            "confidence": 0.9482458,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Ich habe auch Doom gespielt, natürlich.",
+            "start": 177562,
+            "end": 179290,
+            "confidence": 0.9064483,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Als Jugendlicher?",
+            "start": 179370,
+            "end": 180250,
+            "confidence": 0.9607,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Als Jugendlicher?",
+            "start": 180330,
+            "end": 181266,
+            "confidence": 0.996985,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "So als Retro Spiel, oder wie?",
+            "start": 181338,
+            "end": 184242,
+            "confidence": 0.846345,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Nee, nee, nee, nee. Also damals war das Retro weiß ich gerade nicht mehr. Also es war auf jeden Fall verboten in Deutschland. Deswegen hatte das so ein bisschen was Radikales. Ja, für mich als rebellierender Jugendlicher.",
+            "start": 184306,
+            "end": 193962,
+            "confidence": 0.90797514,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Ja, aber das war Wolfenstein d auch. Das war ja übrigens zweitausendein mein Einstieg und macht dir viel mehr Spaß als Österreicher bei Nazis erschießen.",
+            "start": 194066,
+            "end": 200880,
+            "confidence": 0.8832412,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Das habe ich aber auch schon mal gespielt. Und ja, es hat auch als deutscher Spaß gemacht, Nazis zu erschießen. Auf jeden Fall bin ich dann dieses rabbit Hole darunter und ich hab mich gefragt, warum kann Doom überall laufen? Beziehungsweise warum.",
+            "start": 200960,
+            "end": 211232,
+            "confidence": 0.94242024,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Wir haben jetzt ein Problem, wenn wir verherrlichen, wenn man irgendwelchen erschießt. Ich glaube, das müssen wir jetzt zurücknehmen. Aber das Spiel war trotzdem lustig, obwohl ich eigentlich nie so auf Ego shooter gestanden bin. Also ich war eher immer so auf Strategiespiele und Adventures und so. Also wo man den Kopf anstrengen muss und nicht nur die zwei Finger. Aber da sieht man schon die Prioritäten bei uns. Ich war so mehr auf Monkey Island.",
+            "start": 211416,
+            "end": 231194,
+            "confidence": 0.8791325,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Vielleicht überzeuge ich dich ja noch, warum man Doom auch den Kopf anstrengen zumindest.",
+            "start": 231282,
+            "end": 235482,
+            "confidence": 0.91097355,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Auf der technischen Seite im Hintergrund.",
+            "start": 235546,
+            "end": 237090,
+            "confidence": 0.99909836,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Ja, die ganze Thematik hat mich auf jeden Fall zu der Keyfrage gebracht, warum kann Doom überall laufen bzw. Warum wird es immer dafür genutzt? Und wenn ich mal zwei Schritte zurück was macht Doom eigentlich so relevant und interessant für die Softwareentwicklungswelt? Und da habe ich gedacht, Ÿousand, wir machen mal eine Episode über Doom das Spiel und warum es ein Engineering Meisterwerk ist. Bist du bereit?",
+            "start": 237130,
+            "end": 256480,
+            "confidence": 0.91473454,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Bin bereit, dich zu challengen, dass es ein Meisterwerk war. Aber auf geht's.",
+            "start": 256560,
+            "end": 260608,
+            "confidence": 0.90817076,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Da du die Lebenserfahrung hast, erklär doch mal bitte unseren Hörerinnen und Hörern, was Doom eigentlich ist. Für die Leute, die es vielleicht nicht kennen, für Leute, die nach 2000 geboren sind.",
+            "start": 260664,
+            "end": 269176,
+            "confidence": 0.9376997,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Zwei Sätze hast du ja, es war so eigentlich der erste Ego Shooter, der so richtig groß geworden ist, also wo man in Ego Perspektive in dem Fall Monster damals bekämpfen musste und hatte mehrere Waffen. Ganz klassisch wie jeder Ego Shooter. Und die Story kann ich mich eigentlich nicht mehr daran erinnern. Könntest du die jetzt auf Anhieb noch erklären oder hast du das nur in deinem Research rausgefunden? Die Frage ist sowieso immer, ob man da eine Story braucht. Immer. Aber ich kenn von keinem Ego Shooter eigentlich die Story im Hintergrund, die da gelaufen ist, zu erzählen.",
+            "start": 269248,
+            "end": 301674,
+            "confidence": 0.9077713,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Doch, von Half Life, die könnte ich dir auf jeden Fall noch erzählen, aber nie gespielt. Später bei Doom muss ich die researchen. Also wie du sagtest, es ist ein Spiel, 1993 released von id Software im Computerspiel und eine Art Ego Shooter. Und der Spielablauf war wie du selbst steuerst einen Soldaten, den sogenannten Doom Guy, der nach einem gescheiterten Forschungsexperiment zunächst auf den Marsmonden rumläuft und dann schließlich in der Hölle einzelne Monster bekämpfen muss, die halt Dämonen und Zombies sind. Also eigentlich rennt man die ganze Zeit rum und knallt irgendwelche Monster ab.",
+            "start": 301762,
+            "end": 332278,
+            "confidence": 0.8972071,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Ich kann mich nur erinnern, dass da immer viel Feuer rundherum war und so Geschichten, zumindest ein paar Pixel, die Feuer dargestellt haben. Das war ja schon eine andere Zeit. Muss passiert auch Wolfenstein D, das übrigens ja auch von id Software ist, das ein bisschen früher war. Wenn man sich das heutzutage anschaut und man sieht den ganzen Screen auf den original Pixel anzahlen, dann schaut es ja wirklich extrem aus.",
+            "start": 332334,
+            "end": 353738,
+            "confidence": 0.8916274,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Du hattest schon IT Software genannt. Die Firma sollte vielen Software Engineers ein Begriff sein, denn id Software selbst hat Computerspiele wie die Commander Keen Reihe, Wolfenstein d oder Quake released und dort haben unter anderem auch John Carmack und John Romero gearbeitet. Wenn man die beiden Namen mal googelt, würde ich fast sagen Software Engineering Legenden. Das Spiel selbst wurde in Deutschland leider von 94 bis 2011 indiziert. Das bedeutet eigentlich offiziell dürftet ihr das alles gar nicht gespielt haben. Dennoch denke ich, dass ziemlich viele unserer Hörerinnen und Hörer schon mal Berührung mit Doom hatten.",
+            "start": 353794,
+            "end": 389246,
+            "confidence": 0.8968388,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Ich glaube ja, dass eure Liste da sehr viel Anteil dran hat. Also ich glaube, das war ja fast so ein Ziel damals, auf diese indizierte Liste zu kommen, weil damit war das in den Medien und es hat geheißen, es ist verboten und alle wollten es noch mehr. Und wir Österreicher waren natürlich auch schlau, wir haben ja so einen Index nicht. Und unsere ganzen Game Firmen haben dann schön euch nach Deutschland die ganzen Games verkauft, weil bei uns war das alles legal und dann hat man sich das schön online bestellen können. Die Spielebox.",
+            "start": 389358,
+            "end": 415818,
+            "confidence": 0.94812566,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Es gibt natürlich von Doom etliche Teile, doch wir sprechen jetzt hier nur über das originale Doom, was 1993 rausgekommen ist. Alle anderen Teile wie Doom Eternal und so weiter lassen wir mal einfach weg. Und Doom selbst, und das ist jetzt das Faszinierende, wird als Meilenstein im Bereich der Computerspiele gefeiert. Auf der einen Seite war es der erste richtig kommerzielle, erfolgreiche First Person Ego Shooter. Wolfenstein D war früher, aber ging halt nicht so durch die Decke. Aber jetzt kommen wir mal zu dem interessanten Teil, warum das eigentlich, warum Doom so speziell ist. Auf der einen Seite gilt es als den ersten Ÿousand richtig kommerziell erfolgreichen First Person Ego Shooter. Auf der anderen Seite wird es als D Spiel gehandelt, obwohl es offiziell als d Spiel.",
+            "start": 415914,
+            "end": 457620,
+            "confidence": 0.93465316,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Was ist denn D bitte?",
+            "start": 457740,
+            "end": 459588,
+            "confidence": 0.983896,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "D kommen wir gleich zu, wenn ich dir das mit der Grafik Engine erkläre, aber da sind wir gleich im technischen Teil. Dann 1993, du konntest mit Doom sogar Multiplayer im LAN zocken mit vier Leuten. Das war revolutionär damals. Und Fun Fact, durch das Spiel Doom hat einer der Entwickler den Begriff Deathmatch geprägt, weil sich Leute natürlich einen auf die Mütze gehauen haben. Und Achtung, den Begriff frag. Wenn man jemanden killt, fragt man jemanden. Leider wurde dieser Begriff aus dem Vietnamkrieg übernommen, weil der wurde da anscheinend auch öfters mal genutzt. Und ich glaube, Doom auf Basis meiner Recherche ist heute immer noch top aktuell im Bereich Speedruns. Hast du schon mal einen Speedrun gesehen?",
+            "start": 459724,
+            "end": 499478,
+            "confidence": 0.92214155,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Ja, beim Klettern. Ist jetzt olympisch geworden.",
+            "start": 499534,
+            "end": 501774,
+            "confidence": 0.91470426,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Ich glaube, eSports Speedruns sind auch olympisch, mehr oder weniger. Aber es ist genau das gleiche. Ÿousand. Wie schnell kann man Doom durchspielen? Oder beziehungsweise ein Level? Und das geht teilweise runter bis auf 8 s. Also verlinken wir mal ein paar Links in den Show Notes. Aber Software Engineering. Was macht Doom so interessant für Software Engineers? Was ist denn Doom technisch? Kommen wir endlich mal zu den spannenden Sachen.",
+            "start": 501862,
+            "end": 524668,
+            "confidence": 0.9017058,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "In welcher Programmiersprache ist es denn geschrieben? Fangen wir mal ganz unten.",
+            "start": 524724,
+            "end": 527452,
+            "confidence": 0.8688775,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "1993 gab es noch kein Rust, deswegen muss ich dich da leider enttäuschen. Es ist schön in 90 C geschrieben.",
+            "start": 527516,
+            "end": 534260,
+            "confidence": 0.7990295,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Es wird wahrscheinlich heutzutage immer noch in C geschrieben, sowas. Aber gut, vielleicht dann zwei und neunzigste oder ist der aktuelle Standard, der so üblicherweise verwendet wird? Egal. Okay, klassisches C. Ja, ich glaube, heute.",
+            "start": 534380,
+            "end": 546456,
+            "confidence": 0.89555085,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Wird man das vielleicht als unsicheres c mit String Copy und so bezeichnen, aber da kommen wir gleich auch noch mal zu. Dann klassischerweise Single Threaded. Macht die ganze Thematik sehr einfach zu verstehen.",
+            "start": 546488,
+            "end": 556336,
+            "confidence": 0.9374944,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Doom selbst ist deterministisch ich meine, single threaded ist natürlich auch eigentlich klar, oder? Damals hat es keine Prozessoren gegeben, die in irgendeiner Form sinnvoll das parallel abarbeiten haben können.",
+            "start": 556448,
+            "end": 567392,
+            "confidence": 0.8895993,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Ich musste gerade erst mal googeln, aber Ÿousand, laut Google kam der erste Dual Core 2007 raus.",
+            "start": 567456,
+            "end": 572950,
+            "confidence": 0.88255703,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Und ich glaube, die Programmierung war damals auch einfach Multiprozess Programmierung, wenn man wirklich parallel, quasi pseudo parallel irgendwas machen wollte. Aber da verlassen wir jetzt auch, weil damals, wie ich so alt war, da war ich eher auf der Gaming Seite und nicht auf der Programmierseite.",
+            "start": 573030,
+            "end": 587214,
+            "confidence": 0.8945964,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Ich habe es auf jeden Fall mit reingenommen, weil heutzutage sollte man das erwähnen und das führt auch zum Erfolg. Und jetzt kommen noch zwei Punkte, die maßgeblich dafür verantwortlich sind, warum wir immer noch im Jahr 2024 über Doom sprechen.",
+            "start": 587302,
+            "end": 597934,
+            "confidence": 0.95180976,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Und warum du in deinem Capture Doom dann spielen darfst, oder?",
+            "start": 598022,
+            "end": 602006,
+            "confidence": 0.91881543,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Auf der einen Seite, Doom ist deterministisch. Was das heißt, kommen wir gleich zu. Und Doom ist inzwischen voll open source. Es ist seit 2024 offiziell vom Lizenzgeber, was nicht mehr id Software ist, unter der GPL V released worden. Wir können uns das alle ansehen. Es gibt eine Kopie auf GitHub, verlinken wir natürlich auch in den Show Notes. Falls ihr also heute Abend im Bett liegt und sagt, ich habe mein Buch gleich durch, macht doch mal den Doom Source Code auf, scrollt da mal durch. Ich warne euch, relativ wenig Kommentare, aber sehr sauber geschrieben. Kriegt man schon gelesen.",
+            "start": 602078,
+            "end": 633744,
+            "confidence": 0.92810637,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Was schätzt du, wie viel Zeilen Code Doom eins hat?",
+            "start": 633792,
+            "end": 636984,
+            "confidence": 0.897943,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Ich weiß es nicht. Ja, schätze mal 1800.",
+            "start": 637072,
+            "end": 639376,
+            "confidence": 0.90966374,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "1800? Okay, das wäre ein bisschen gar wenig. Also ich habe jetzt unterschiedliche Quellen gefunden, aber ein paar sagen. Ein paar sagen, je nachdem, was man auch noch mitzählt, aber so in der Größenordnung.",
+            "start": 639386,
+            "end": 651168,
+            "confidence": 0.87396675,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Aber da merkt man, dass du wieder Berater bist. Wen interessiert die Lines of code?",
+            "start": 651224,
+            "end": 654992,
+            "confidence": 0.9446513,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Ja, es ist schon spannend, wie viele Zeilen Code man so grössenordnungstechnisch braucht, um so ein Spiel eigentlich zu programmieren. Ich hätte nämlich ehrlich gesagt auch weniger geschätzt. Also 1800 vielleicht jetzt nicht gerade, aber irgendwo weniger, weil man sich überlegt, wie hart es damals auch war, Zeilen zu schreiben. Also es ist ja nicht irgendwie Java, was Server bose ist, sondern das ist ja schon hardcore, was man da schreibt.",
+            "start": 655056,
+            "end": 675640,
+            "confidence": 0.91826916,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Zweitausendein.",
+            "start": 675680,
+            "end": 675786,
+            "confidence": 0.45783,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Aber wenn man jetzt diese 150 Zeilen Code, Zeilen Code nicht ansehen will, was ist denn jetzt das Spezielle an diesen Codezeilen?",
+            "start": 675808,
+            "end": 683334,
+            "confidence": 0.9211823,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Ich bin mir gar nicht sicher, ob du das jetzt wirklich so rauslesen kannst, denn bzw. Wenn du den Code liest, dir das sofort auffällt. Wenn du dir heute Softwareentwicklung anschaust, dann sagt man ja eigentlich man soll alles voneinander entkoppeln und alles soll wiederverwendbar werden und so weiter und so fort. Aber 1993 war das vielleicht jetzt noch nicht das wichtigste Konzept der Softwareentwicklung. Doom jedoch hat es 1993 bereits gemacht. Und zwar was die gemacht haben, die haben das ganze Spiel im Hinblick auf Modifikationen der Spielinhalte, also Texturen, Level, Musik und so weiter entworfen. Die haben die Doom Engine selbst von den Spielinhalten getrennt und in mehrere Dateien ausgelagert. Die Doom Engine war eigentlich die executable, auf Windows würde man sagen Doom Exe. Und die Spielinhalte waren in sogenannten WAD Dateien, Watt Dateien. Wad steht für Where all the data ist mega gut. Und das bedeutet natürlich, dass du und ich, Wolfgang, wir können jetzt Level modden und Co. Und können uns diese Watt Dateien hin und her schicken. Die packe ich einfach in meinen Folder und die Engine lädt dann einfach diese Watt Datei. Und heutzutage wird man sagen, ja, das macht doch jedes Spiel. Counter Strike, da gibt es auch ein level Editor. Ja, aber wir reden jetzt hier von vor ein und dreiig Jahren. Und das hat schon irgendwie einen offenen Zugang zu den Spielressourcen ermöglicht. Das bedeutet, die ganze Community hat irgendwie Levels, die Benutzertools geschrieben, Level editoren geschrieben und hat eigentlich die Langlebigkeit des Spiels sichergestellt.",
+            "start": 683382,
+            "end": 768456,
+            "confidence": 0.9094715,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Ich möchte darauf hinweisen, dass Monkey Island, beziehungsweise die Macher davon, schon 1987 solche Engines entwickelt haben, wo man das komplett trennen kann von dem Spiel und skripten kann.",
+            "start": 768568,
+            "end": 780248,
+            "confidence": 0.9043783,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Jetzt ist die Frage, wofür gibt es mehr Level? Für Monkey Island oder für Doom?",
+            "start": 780304,
+            "end": 783672,
+            "confidence": 0.975166,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Ja, ich glaube Monkey Island kann man gar nichts verändern in dem Sinne, aber es waren die die Methoden das ganze zu trennen, also die Engine und den eigentlichen Spielablauf, die gab es schon früher, aber im Ego shooter Bereich war das natürlich eine Neuerung.",
+            "start": 783736,
+            "end": 796652,
+            "confidence": 0.9233029,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Bei Doom wurde es gemacht und Achtung, es wird immer noch gemacht. Fun der kreativste level Editor ist ein Staubsaugroboter. Und zwar hat jemand Software für einen sogenannten Roomba geschrieben. Wenn der Roomba fährt, werden die Punkte aufgezeichnet, also der Fahrtweg. Diese Punkte übersetzt der Entwickler in eine Doom Map und lässt dadurch automatisch auf Basis der existierenden Doom Texturen eine Doomkarte erstellen.",
+            "start": 796716,
+            "end": 823832,
+            "confidence": 0.8869846,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Das heißt, du kannst dann Doom in deinem Wohnzimmer spielen.",
+            "start": 823936,
+            "end": 826352,
+            "confidence": 0.94028,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Ja, also natürlich jetzt ohne Couch und so weiter, schon mit Flammen und allem drum und dran, weil die Texturen natürlich von Dunkeln, aber die Struktur schon. Verlinken wir auch in den Shownotes. Meines Erachtens nach einer der kreativsten Art und Weisen, wie man Doom Levels erstellt.",
+            "start": 826416,
+            "end": 838760,
+            "confidence": 0.88290745,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Wie nerdig kann man sein? Aber jetzt hast du bei deiner Einleitung schon kurz erwähnt, dass Doom deterministisch ist. Ist es nicht immer, wenn man Software programmiert, okay, die meiste Software ist weniger deterministisch, wenn man sich anschaut, wie sie sich dann verhält. Aber eigentlich, wenn man ja was programmiert, ist es doch immer deterministisch.",
+            "start": 838840,
+            "end": 855266,
+            "confidence": 0.93910563,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Wenn Software grundlegend deterministisch wäre, warum sind reproducible builds im Security Bereich immer noch ein Problem oder eine Herausforderung?",
+            "start": 855338,
+            "end": 862554,
+            "confidence": 0.91292,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Wegen den Zeiteneffekten. Wenn man irgendwie eine Zeit mit reinnimmt, eine aktuelle Zeit, ist man schon nicht mehr Determinist.",
+            "start": 862642,
+            "end": 867840,
+            "confidence": 0.8991942,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "So sieht es aus. Aber Wolfgang, hol doch mal alle ab. Was heißt Determinismus in der Softwarewelt, beziehungsweise Determinismus generell vielleicht in der Mathematik?",
+            "start": 867890,
+            "end": 876324,
+            "confidence": 0.8338329,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Ja, wenn du die gleiche Eingabe hast, bekommst du immer dieselbe Ausgabe. Das heißt, du kannst dich darauf verlassen, wenn du in irgendeine Funktion mit einem Parameter x reingibst, ist der Return Wert immer dasselbe. Das heißt, es wird z.B. nicht die aktuelle Zeit mit reingenommen in die Berechnung oder das aktuelle Wetter, weil das wäre dann nicht mehr deterministisch, weil jedes Mal, wenn du die Funktion ausführst, bekommst du einen anderen Retourwert. Jetzt ist meine Frage aber, wenn du sagst, okay, Doom war deterministisch, wie hat es dazu beigetragen, dass es so erfolgreich ist und jetzt auch noch verwendet wird in deinem Capture? Weil wenn da ein random Number Generator drin wäre, der dann nicht mehr deterministisch ist, weil er ja auf der Zeit auch basiert, wo wäre das Problem? Könnte man ja trotzdem in einem Capture rennen lassen.",
+            "start": 876452,
+            "end": 920404,
+            "confidence": 0.9355668,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Also innerhalb von Doom ist so eine Art random number generator, da kommen wir jetzt gleich zu. Deine Frage ist aber, welchen Anteil hat der Determinismus von Doom am Erfolg?",
+            "start": 920472,
+            "end": 929236,
+            "confidence": 0.91514534,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Immer noch während dem Erfolg? Ja, genau. Oder dass man eben auf irgendwelche Uhren das Ganze laufen lässt oder keine Ahnung, kleine Displays.",
+            "start": 929428,
+            "end": 936732,
+            "confidence": 0.91089696,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Meines Erachtens nach relativ einfach, und zwar auf Basis der Verifikation. Und zwar, weil du immer dieselben Eingabeparameter reingibst, kommt immer dasselbe raus. Du portierst das jetzt auf meine Smartwatch und ich kann eins zu eins verifizieren, dass das komplette Spiel funktioniert, indem ich dieselben Eingabeparameter mache, wie auf meinem MS DOS System, wo das Spiel ursprünglich für released wurde. Und das macht es natürlich dann zur Verifikation sehr einfach, weil man kann sagen, ja, das ganze Spiel läuft auf meiner Smartwatch.",
+            "start": 936836,
+            "end": 966094,
+            "confidence": 0.9119896,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Das heißt, eigentlich wird das Testen erleichtert und die Portierung dadurch wahrscheinlich auch, weil man eben nicht spielen muss, um Bugs zu finden in der Portierung. Sondern das einfach automatisiert durchtesten kann.",
+            "start": 966142,
+            "end": 975998,
+            "confidence": 0.9149169,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Genau. Fun Fact. Bing, bing, bing. Hörst du das? Es ist Zeit für ein Doom. Fun Fact, wusstest du eigentlich, dass die Firma id Software gar keine Qualitätssicherung hat? Und als John Carmack und John Romero gesagt haben, so, wir sind jetzt fertig, dann haben alle Mitglieder der Firma von id Software Doom für circa dreiig Stunden lang gespielt, da die einfach kein eigenes Team haben. Das war deren Qualitätssicherung. Dann haben sie das geschippt.",
+            "start": 976054,
+            "end": 1001046,
+            "confidence": 0.8883373,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Das waren noch Zeiten. Das sollte man heutzutage auch wieder einführen, wenn die ganzen Developer sagen, nö, möchte nicht testen. Das waren noch mal coole Zeiten. Das könnte man wirklich wieder einführen.",
+            "start": 1001198,
+            "end": 1010278,
+            "confidence": 0.88987064,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Kommen wir aber zurück zum Zufallsgenerator. Und zwar habe ich ja gerade gesagt, Doom ist deterministisch und das Spiel selbst beginnt wirklich immer und immer und immer mit denselben Einstellungen. Das bedeutet, die Gegner, also die Monster, starten immer an denselben Positionen, du hast dieselben Gegenstände und so weiter.",
+            "start": 1010334,
+            "end": 1025678,
+            "confidence": 0.9163671,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Und wie funktioniert es dann, wenn, keine Ahnung, wenn da Monster rumlaufen? Die müssen ja irgendwie, die können ja nicht immer genau das gleiche machen, oder?",
+            "start": 1025814,
+            "end": 1032182,
+            "confidence": 0.87924385,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Doch, tun die eigentlich, sofern du natürlich die gleiche Eingabe machst. Denn eine gewisse Art von Zufall braucht ja so ein Spiel. Also es muss ja mehr oder weniger in Anführungszeichen unvorherbar sein, wann jetzt ein Gegner schießt oder ob er jetzt von links kommt oder von rechts kommt. Und Doom selbst hat eine statische Tabelle von 256 Zahlen im Source Code, hart verdrahtet, dann eine globale Variable und dann eine Funktion, die nennt sich m random. Die m random hat einen Integer als Return Wert und die besagt eigentlich, gib mir eine Zufallszahl. Wenn ich jetzt die m random Funktion aufrufe, dann wird die globale Variable um eins erhöht und retourniert mir dann die Zahl aus dem Tabellenindex. Das bedeutet eigentlich, die Zufallszahl ist nicht zufällig, weil du die Zufälligkeit ja hervorsagen kannst.",
+            "start": 1032286,
+            "end": 1078198,
+            "confidence": 0.9042634,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Das heißt, du hast einfach einen Counter und Modulo Operator am Ende und wanderst dann eigentlich nur die Zufallszahlen durch die 256.",
+            "start": 1078254,
+            "end": 1085662,
+            "confidence": 0.89188457,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Ganz genau. Und wenn du bei der Zahl 255 bist, denn wir fangen bei null an zu zählen, dann flippt er wieder und fängt mir die erste Zahl zurück. Diese Zahlen steuern dann die Physik Engine, das Gegnerverhalten und so weiter und so fort. Und damit kann man natürlich immer bei denselben Eingaben auch immer dasselbe Ergebnis erwarten. Also eigentlich kann man sagen, dass Doom seine komplette Spiellogik auf festen Werten ohne wirklichen Zufall aufgebaut hat. Zusätzlich musst du wissen, Doom selbst funktioniert mit einer festen Bildrate von fünf und dreiig Ticks pro S. Der gesamte Spielzustand wird bei jedem Tick aktualisiert. Was sie im Source Code haben, nennt sich einen sogenannten Doom Loop. Das ist eine While Schleife mit der Bedingung von eins, die hört einfach niemals auf. Und das ist der haupt Game loop. Da wir ja gesagt haben, dass es single threaded, wird dieser Loop mindestens fünf und dreiig mal pro s komplett durchgelaufen. Das bedeutet, die Berechnung für deine Waffen, die Bewegung, Schaden, Kollisionsabfragen und so weiter und so fort wird alles in einem Loop Durchgang, einem sogenannten Tick durchgeführt. Die beiden Sachen in Kombination machen das Verhalten von Doom einfach zweitausendein vorhersagbar. Und das ist natürlich ein Traum für jeden, der irgendwie etwas portieren möchte bzw. Testen möchte oder Achtung, modifizieren möchte.",
+            "start": 1085726,
+            "end": 1162008,
+            "confidence": 0.91858035,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Was hat es mit modifizieren zu tun?",
+            "start": 1162144,
+            "end": 1163816,
+            "confidence": 0.9422657,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Naja, du kannst dir einfach sicher sein, dass Seiteneffekte relativ minimal sind auf Basis von zufälligen Aktionen. Wenn du jetzt eine neue Waffe da hinzufügen möchtest, dann musst du jetzt nicht mit irgendwelchen Seiteneffekten rechnen, weil die ganze Sache sehr einfach programmiert ist und halt die random Zahl nicht da ist.",
+            "start": 1163888,
+            "end": 1180400,
+            "confidence": 0.89875,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Und das heißt, diese Leute, die dann diese Speedruns machen, um drei 8 Minuten irgendwie durch nach 8 s hast du gesagt, oder?",
+            "start": 1180440,
+            "end": 1186744,
+            "confidence": 0.8336191,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Ich glaube, der aktuelle Weltrekord für das allererste Level ist bei 8 s.",
+            "start": 1186832,
+            "end": 1191176,
+            "confidence": 0.93096155,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Das heißt, die optimieren das dann dementsprechend. Die wissen ganz genau, was wo passiert. Vielleicht sogar eben deterministisch. Wobei du musst natürlich schon die deine Person steuern. Das hat ja natürlich schon andere Auswirkungen, oder? Also so deterministisch kannst du die Eingabe mit deinen Fingern eigentlich kaum machen.",
+            "start": 1191288,
+            "end": 1207128,
+            "confidence": 0.8835246,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Also ja und nein. Also es gibt auch sowas wie sogenannte Tool Assistant Speedruns. Dafür musst du wissen, wie Doom funktioniert. Und zwar kannst du jedes Doom Spiel aufnehmen lassen. Man sagt im Spielsektor okay, man nimmt eine Demo auf, damit ich dir zuschicke, damit du sehen kannst, wie ich gespielt habe und somit der Beweis da ist, dass ich jetzt den Speedrun innerhalb von 8 S gemacht habe.",
+            "start": 1207184,
+            "end": 1227620,
+            "confidence": 0.9294113,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Aber das ist jetzt wirklich eine klassische Aufnahme. Das hat jetzt Doom noch nicht unterstützt, dass du einen Run aufzeichnen konntest.",
+            "start": 1227660,
+            "end": 1234268,
+            "confidence": 0.9473157,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Doch, hat es und zwar viele Ÿousand. Der klassische Anwendungsfall wäre, du nimmst irgendwie ein Video von deinem Bildschirm auf, spielst das durch und so weiter. Ich rede jetzt hier nicht von ja, wir können Video Editing machen und so weiter. Aber Doom hat damals eine Spielaufzeichnung bereits mit ins mit ins Game mit rein programmiert. Und zwar nennt sich das sogenannte Lump Files. LMP Files. In diesen LMP Files wird mitgeloggt, wann der User welchen User Input gemacht hat. Das bedeutet, Wolfgang, du hast den zweitausendein Key w, um nach vorne zu laufen, nach der dritten S gedrückt. Das wird darin gespeichert. Also eigentlich speichert der allen User Input zu, Achtung, jedem Frame. Wir hatten ja gesagt, Tickrate von dreiig oder fünf und dreiig Ticks, also fünf und dreiig Frames. Und der user Input wird zu jedem Frame gespeichert. Das bedeutet natürlich auch, dass wenn ich dir das Demo File schicke, dann kriegst du eigentlich nur ein bisschen Text und jetzt kein Video, was die ganze Sache natürlich enorm klein macht. Zweitausendein, die ganze Sache wird sequenziell in der Datei gespeichert und somit ist der Speicherbedarf pro laufende Spielsekunde eigentlich nur 280 Bytes. Und jetzt kommt das geile, es gibt natürlich Dokumentation darüber, wie diese Datei aussieht. Das bedeutet binär header und dann wie die einzelnen Records aussehen. Du kannst also diese Files auch reverse engineeren. Und wenn du sie reverse engineeren kannst, kannst du sie natürlich auch schreiben, programmatisch. Und das bedeutet, da sind wir dann im Bereich Tool Assistant Speedruns, dass du deine Eingaben Frame genau planst, zweitausendein, und diese so wiederholt werden, dann lässt der Computer die laufen, weil du als Mensch das eigentlich nicht schaffst. Also du entwickelst den optimalsten Weg durch das Level, Schritt für Schritt, programmierst das aber, um jedes Detail zu perfektionieren.",
+            "start": 1234324,
+            "end": 1334276,
+            "confidence": 0.89965177,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Das heißt, du könntest dann auch eine AI das Ganze versuchen zu optimieren zu lassen. Also dass man einfach die. Ja, die macht ganz viele Wege, kann das durchrechnen, ist immer deterministisch und findet dann die perfekten Wege mit der Zeit.",
+            "start": 1334348,
+            "end": 1347482,
+            "confidence": 0.91640735,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Richtig, das geht. Und jetzt kommt es eigentlich auch, wenn du dir jetzt mal Gedanken über die Implementierung der Multiplayer Synchronisierung machst und du hast diese LAMP Files, reicht das da nicht einfach, dass die User Inputs übers Netzwerk geschickt werden und dass dein Computer meine User Interactions einfach replayt, dass dein Spiel weiß, wo ich in deinem Multiplayer Game eigentlich bin.",
+            "start": 1347556,
+            "end": 1369478,
+            "confidence": 0.9043634,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Wobei du hast gesagt 280 Byte pro Spiel s. Das heißt, du brauchst da dann schon, wenn du ein vier Player Multiplayer Setup hast, dann brauchst du eigentlich 1 kb/s Übertragungsrate.",
+            "start": 1369614,
+            "end": 1381720,
+            "confidence": 0.8220455,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Zumindest der Multiplayer war, glaube ich, auf vier Spieler begrenzt, du bist ja einer, somit brauchst du ja nur drei Spielstände. Somit bist du bei 57 Byte pro.",
+            "start": 1381760,
+            "end": 1390016,
+            "confidence": 0.8981954,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Spielsekunde, wenn es synchron ist. Ja, du musst ja deine auch senden.",
+            "start": 1390048,
+            "end": 1392592,
+            "confidence": 0.91370916,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Du sendest deinen deine 280 Bytes und empfängst 801 paar gequetschte Byte. Genau.",
+            "start": 1392656,
+            "end": 1398152,
+            "confidence": 0.7293992,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Ich kann mich noch erinnern, zu meiner Zeit, wie man da Multiplayer gespielt hat, haben wir das ja über. Gute Frage, wie das geheißen hat. War so ein alter Druckeranschluss, so ein breiter werden das geheißen, das Zeug? Es hat null Modem gegeben, oder? Und dann hat es noch diesen anderen schnelleren. Ich glaube das war sogar ein Bus. Egal, ich habe gerade mal schnell gegoogelt. Null Modem Kabel hatte ungefähr 90 kb/s also gar kein Problem.",
+            "start": 1398256,
+            "end": 1422916,
+            "confidence": 0.8826659,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Also in meinem Kopf ist das immer noch dieser Exploding Head Emoji. 1993 hat jemand eine Lösung gefunden, die a heutzutage für Speedruns genutzt wird, b eine Art programmatische Schnittstelle, Doom Frame by Frame spielen zu können und c eine effiziente und stabile Multiplayer Erfahrung zu erschaffen mit begrenzter Bandbreite.",
+            "start": 1422988,
+            "end": 1444806,
+            "confidence": 0.937819,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Was mir interessieren würde, ist, ob das einfach damals so passiert ist, weil es nicht anders möglich war, weil man so viele Restriktionen hatte, auch das Ganze mit mit dem Pseudo Random Number Generator oder ob da irgendwelche bewussten Entscheidungen auch dahinter gelegen sind.",
+            "start": 1444878,
+            "end": 1460426,
+            "confidence": 0.9039907,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Das kann ich dir natürlich nicht beantworten. Aber was auf Basis dieser Lampfiles heutzutage gemacht wird, ist, dass die Community kreativ wird. Und zwar gibt es nämlich eine Software, die nennt sich xstar xdae, also ein Doom Replay Demo Editor. Und wo gibt es den? Auf GitHub natürlich. Da kannst du dir deine Demos anschauen, da kannst du dir die einzelnen User Inputs anschauen, modifizieren und dann die Demo noch mal laufen lassen. Wahnsinn, diese Szene. Ich bin auf jeden Fall geflasht von dieser ganzen. Was vor ein und dreiig Jahren eigentlich so möglich war.",
+            "start": 1460458,
+            "end": 1491526,
+            "confidence": 0.8942792,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Ja, es ist nicht immer gut, dass unsere Prozessoren so schnell sind und der RAM so groß ist.",
+            "start": 1491598,
+            "end": 1496558,
+            "confidence": 0.9076244,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Ding, ding, ding. Da ist er wieder, der Doomfact. Wusstest du eigentlich, dass an der Game Story, die du mir nicht mitteilen konntest, unglaublich lange geschraubt wurde? Und zwar der damalige CEO der id Software hat eine sogenannte Doom bibel geschrieben. Und zwar war das ein 78 seitiges langes Dokument. Das haben wir natürlich auch in den Show Notes verlinkt. Die Doom Bibel. Und die beiden Hauptentwickler waren von dieser Doom Bibel eigentlich überhaupt nicht überzeugt, weil die beiden Hauptentwickler so eine andere Vorstellung von Doom hatte. John Carmack verglich die Hintergrundgeschichte eines Ego Shooters mit der eines Pornofilms. Erwartet aber unnötig.",
+            "start": 1496614,
+            "end": 1534936,
+            "confidence": 0.9054246,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Ich stimme vollkommen zu.",
+            "start": 1535048,
+            "end": 1536780,
+            "confidence": 0.8589125,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Nun gut, machen wir mal ein bisschen weiter. Lass uns noch mal auf diesen Determinismus, auf diesen random Zahlen Generator, der eigentlich kein random Zahlen Generator ist, zurückkommen. Also ich meine, was sind die Vorteile von diesem ganzen Determinismus? Hatten wir ja schon gesagt, die Fehlersuche und Debugging, die Reproduzierbarkeit auch von den Doom Spielständen. Und das macht es natürlich enorm wertvoll für Wettbewerbe, weil die ganz genau reproduzierbar sind. Wird heutzutage unglaublich viel in der Speedrun und Demoszene genutzt, aber natürlich auch für etwas sehr, sehr spannendes und zwar für AI Training und Simulationen. Weil du kannst nämlich die künstliche Intelligenz in einer stabilen, konsistenten Umgebung trainieren, was natürlich mega gut ist, denn die KI kriegt dann immer dieselbe Bedingung und dann kannst du natürlich auch dein Modell testen. Und jetzt kam eine Frage auf bei meiner Research, die habe ich mir nicht gestellt, über die bin ich gestolpert. Was passiert eigentlich, wenn man diese vorgegaukelte Randomness, diese 256 Values, eigentlich durch eine Konstante ersetzt? Und als ich die Frage gelesen habe, habe ich gedacht, wie weit kann man das hier eigentlich treiben? Was hat also jemand gemacht? Jemand hat sich das Doom Spiel genommen, hat den Sourcecode modifiziert, hat in dieser mrandom Funktion diesen Inkrement rausgenommen und einfach return null oder return 255 gemacht. Also der hat einmal die ganze Sache mit return null gemacht und einmal mit return 255 und hat dann einfach nur geguckt, was passiert. Und das faszinierende ist, der hat das im Blogpost geschrieben, verlinken wir unten auch in den Show Notes. Die Monster verhalten sich anders. Bei der Value null machen die gar keinen Sound mehr, also die atmen laut und und husten und solche Geschichten. Und bei Value 255 sind die konstant dran am atmen, am husten und so weiter. Das gleiche ist mit diesen flackernden Lichtern. Bei der Value null flackert das alles komplett durch, bei value 255 ist alles statisch. Dann manche Waffen haben keinen Spread mehr. Du kennst das ja von den Spielen, wenn du eine Waffe hast und du hältst gedrückt, dann dann schießt sie nicht immer auf denselben Punkt, sondern die Waffe bewegt sich nach links und rechts und so weiter, damit du den Gegner verfehlst.",
+            "start": 1537240,
+            "end": 1659000,
+            "confidence": 0.91127527,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Zweitausendein, wenn du das sagst.",
+            "start": 1659040,
+            "end": 1659990,
+            "confidence": 0.904284,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Ja, das nennt man halt Spread, damit man nicht einfach mit Dauerfeuer durchs level rennt. Und wenn du einfach nur Zufall, wenn du einfach nur eine feste Konstante lieferst, dann haben halt manche Waffen einfach gar keinen Spread mehr, sondern die schießen einfach nur auf einen Punkt und dann kannst du halt einfach komplett durchleveln. Generell verhalten sich halt manche Elemente des Spiels wirklich weird. Interessanter interessantes Experiment meines Erachtens nach. Und das ist wieder so, fällt in die Kategorie, weil es geht. Und das fasziniert mich einfach.",
+            "start": 1660030,
+            "end": 1687638,
+            "confidence": 0.91022146,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Es ist ja eigentlich auch jetzt rein vom Coding her ganz klar, weil du holst dir einen Wert von dem Number Generator und wenn du jetzt entscheiden willst, atme ich oder atme ich nicht, dann hast du irgendwie ein Modulo zwei. Und je nachdem, ob du halt den Rest hast oder nicht, atmet das Monster oder nicht. Und das hast du halt überall, wo du in irgendeiner Form Zufälle brauchst. Und wenn du immer denselben Wert zurückbekommst, dann ist dein Modulo auch immer derselbe Wert und damit verhalten sich alle immer gleich und es ändert sich nichts mehr. Also eigentlich ist es sehr, sehr logisch vom Coding und vom Funktionellen her.",
+            "start": 1687694,
+            "end": 1719410,
+            "confidence": 0.937541,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Ich finde es trotzdem geil, dass sich immer die Zeit genommen hat, die ganzen Sachen zu testen. Ding, ding, ding. Es geht mal wieder um ein Doom Fact. Wusstest du eigentlich, dass Doom damals, so zumindestens die Theorie, die meist installierte Software weltweit war? Mehr als Windows fünf und neunzigste. Das sagen zumindest manche Gerüchte und die Gerüchteküche geht sogar weiter. Damals wollte Bill Gates id Software sogar kaufen, weil das die meist installierte Software war. Das ist jedoch nur ein Gericht. Was er wirklich wollte, ist, er wollte die. Er wollte Spiele auf Windows fördern und deswegen wollte er mit id Software strenger kooperieren. Aber ich kann mir schon sehr gut vorstellen, dass Doom 1995 sehr oft installiert wurde.",
+            "start": 1719450,
+            "end": 1759690,
+            "confidence": 0.9110333,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "So, aber jetzt bist du mir immer noch eine Antwort schuldig. Und zwar das d Spiel. Warum 2,5 und nicht drei und nicht zwei?",
+            "start": 1759770,
+            "end": 1768002,
+            "confidence": 0.94345415,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Ÿousand. Also jetzt gehen wir mal so ein bisschen in die Grafik Engine rein und ich hoffe, ihr habt noch nicht viel Bier getrunken, denn jetzt wird es schon ein bisschen kompliziert. Doom selbst ist kein echtes D Spiel, weil die Höheninformationen fehlen. Es simuliert nur einen dreidimensionalen Raum. Deswegen wird gesagt, Doom ist ein zweieinhalb.",
+            "start": 1768066,
+            "end": 1786248,
+            "confidence": 0.8953741,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "D Spiel, das heißt, du kannst nicht springen.",
+            "start": 1786304,
+            "end": 1788176,
+            "confidence": 0.94100374,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Eine Sprungfunktion gibt es in der Tat nicht. Muss ich auch gerade erst nachschlagen, weil ich habe auch für die Recherche Doom nicht gespielt. Ich gebe auch zu, seit ich die Episode recherchiert habe, musste ich mit mir kämpfen, Doom nicht zu installieren, weil ich wusste, dass es dann zu meiner Produktivität schlecht aussieht.",
+            "start": 1788248,
+            "end": 1807056,
+            "confidence": 0.93278426,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Du hast eben Capture gespielt.",
+            "start": 1807128,
+            "end": 1808592,
+            "confidence": 0.827118,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Das Capture habe ich ein bisschen gespielt, das ist richtig. So, lass uns wieder zur Grafik Engine kommen. Also generell wird Doom auch als Grafikwunder gehyped. Also auf der einen Seite, weil es einen dreidimensionalen Raum simuliert, auf der anderen Seite, weil die Grafik flüssig dargestellt wurde mit Objekten in einem d Raum und das auf leistungsschwachen Computern. Dann wurde im Spiel sehr, sehr viel mit Perspektiven und Lichtverhältnissen gespielt, aber auch mit dynamischer Beleuchtung und Schatten, speziell für die Spannung und für die Atmosphäre. Aber für die Leute, die jetzt noch nicht im Game Engine Bereich unterwegs sind, was ist eigentlich das Problem mit der Grafik? Und zwar, und zwar ist das Hauptproblem, wie findest du heraus, welche Objekte in einem dreidimensionalen Raum ÿousand sind für den Spieler zu sehen und welche nicht? Denn der Renderer muss es auf jeden Fall wissen, abhängig vom Blickwinkel. Die ganze Sache nennt sich Visible Surface Determination, VSD, könnt ihr mal googeln. Das ist generell ein Grundproblem für alle Grafikengines. Die ganze Thematik ist eigentlich keine Herausforderung, wenn du viel Zeit hast. Das Problem bei Spielen und bei Realtime spielen, die müssen das mindestens dreiig mal pro s tun. Die müssen dreiig mal pro S herausfinden, ist dieses Objekt für den Spieler sichtbar oder nicht. Und um diese Frage zu beantworten, hast du eigentlich zwei Herausforderungen. Die eine Geschichte ist, wie findest du heraus, welche Objekte nicht sichtbar sind, damit du die sofort verwerfen kannst, weil die interessieren dich ja gar nicht mehr für den Renderer. Und die zweite Geschichte ist, wie skalierst du diese Berechnung bei einer komplexen Szene, besonders jetzt bei einer großen Welt z.B. umso größer die Welt oder das Level, umso komplexer die Szene, umso mehr Objekte da sind, desto schwieriger wird das natürlich in einer effizienten Zeit zu errechnen.",
+            "start": 1808656,
+            "end": 1911586,
+            "confidence": 0.9146624,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Mein naiver Ansatz wäre ja einfach, ich zeichne da ein Dreieck, das ist der View von von der aktuellen Position aus und dann schaue ich, welche Objekte sich überschneiden und sichtbar sind.",
+            "start": 1911658,
+            "end": 1921810,
+            "confidence": 0.8938125,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Was heißt überschneiden?",
+            "start": 1921890,
+            "end": 1923210,
+            "confidence": 0.95415336,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Ja, das stimmt natürlich, wenn was im Weg ist, dann sehe ich es auch nicht.",
+            "start": 1923370,
+            "end": 1926730,
+            "confidence": 0.96299064,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Das, was du da machst, mehr oder weniger, nennt sich Raycasting. Und was Ray Casting eigentlich ist, zweitausendein, es ist eigentlich genau das eine Technik, um d Umgebungen, Videospielen effizient darzustellen von einem bestimmten Standpunkt. Also von dir als Spieler schießt du gerade Linien einfach geradeaus, sogenannte Rays. Und diese Strahlen bewegen sich durch den Raum, durch den d Raum, bis sie auf ein Objekt treffen oder auf eine Wand oder auf dem Hindernis. Basierend auf diesen Treffpunkten wird ein zweidimensionales Bild dieser dreidimensionalen Umgebung erzeugt. Und all das wird für jede vertikale Linie auf deinem Bildschirm gemacht. Das ist eigentlich das, was du da gerade beschrieben hast.",
+            "start": 1926810,
+            "end": 1966380,
+            "confidence": 0.90320075,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Ja, was du zusätzlich noch hast, ist auch, dass du, wenn z.B. der Strahl länger benötigt auf dem Objekt, dann wird es dunkler. Also du hast da auch noch zusätzliche Informationen, die du berechnest. Ist ja nicht nur ja oder nein, ist nicht binär, sondern du hast da ja dann auch noch Schatten und Lichtquellen und solche Dinge. Und bzw. Damals Lichtquellen war wahrscheinlich jetzt noch weniger, aber zumindest das, was dunkler geworden ist in der Zweitausendein Entfernung. Das gab es damals auch schon.",
+            "start": 1966420,
+            "end": 1989698,
+            "confidence": 0.9109555,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Ja, genau. Und da weißt du halt, okay, das steht weiter weg und so weiter und dazwischen steht jetzt kein Objekt mehr. Aber Achtung, Raycasting wird in Echtzeit während der Spiellaufzeit berechnet. Und das ist natürlich relativ herausfordernd, wenn du jetzt schwache Computer hast. Und warum war das jetzt ein Problem? 1903 und neunzigste id Software, die ja auch Wolfenstein D rausgebracht haben, hatten den Auftrag, Wolfenstein D für die Super Nintendo Spielekonsole zu portieren. Die haben das eigentlich an eine andere Firma outgesourcet, die hat das aber nicht hingekriegt, deswegen haben die es selbst gemacht. Wolfenstein D basiert auf dem Computer, auf Raycasting, beziehungsweise man nennt das heute Ray Marching, weil es ist kein richtiges Ray Casting, wie ich das beschrieben habe, mit diesen Strahlen, die quer durch den Raum gehen, sondern du musst wissen, Wolfenstein D hatte nur einen Grundriss, der auf Rechtwinkligkeit beschränkt war. Du hattest keine schrägen Wände, Wolfenstein D, du hattest wirklich nur rechte Winkel. Das bedeutet auch, dass Wolfenstein D untendrunter ein Grid hatte. Und wie ich gerade beim Ray Casting beschrieben habe, werden Strahlen durch die vertikalen Linien deines Bildschirms gesendet, um zu gucken. Bei Ray Marching gehst du eigentlich nur das d grid lang. Da du ja nur rechtwinklige Elemente hast, ist das natürlich viel schneller. Und deswegen lief das für Wolfenstein D auf schwachen Computern. Das Riesenproblem war jetzt aber, also durch das D grid konntest du alles auf derselben horizontalen Ebene testen, ob da was im w steht oder nicht. Auch die Höhe bei Wolfenstein D war fix. Und deswegen hast du eigentlich mit einem d Grid gearbeitet bei deinem Raycasting bzw. Ray Marching. Du musstest also gar nicht quer durch den Raum.",
+            "start": 1989754,
+            "end": 2083365,
+            "confidence": 0.89188296,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Aber du hast ja gesagt, bei Doom hast du auch keine Höhe, bei Doom.",
+            "start": 2083477,
+            "end": 2087141,
+            "confidence": 0.98238,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Hast du aber diagonale Wände und Schrägen. Und deswegen kannst du bei Doom kein d Grid legen und du kannst nicht auf den Grid Linien beilaufen, um das Ray Marching herauszufinden, also das Raycasting.",
+            "start": 2087165,
+            "end": 2098218,
+            "confidence": 0.9040535,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Und wie funktioniert das dann bei Doom? Auch mit Raycasting oder mit einer anderen Technologie?",
+            "start": 2098274,
+            "end": 2102586,
+            "confidence": 0.961038,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Das ist jetzt super spannend. Und zwar die Firma id Software hatte den Auftrag, Wolfenstein D damals auf die Super Nintendo zu portieren. Erst war dieser Job abgegeben an eine andere Firma, die haben es nicht hinbekommen. Deswegen hat id Software gesagt, okay, machen wir selbst. Das Problem mit der Super Nintendo zum Vergleich Ÿousand von Computern von 1993 ist, dass die Super Nintendo noch schwächer auf der Brust war und noch weniger Compute Power hatte. Deswegen war John Carmack irgendwie auf der Suche nach etwas neuem.",
+            "start": 2102658,
+            "end": 2125792,
+            "confidence": 0.9184994,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Aber war da das Spiel schon draußen oder war das noch in der Entwicklungsphase?",
+            "start": 2125936,
+            "end": 2129856,
+            "confidence": 0.92556286,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Das war noch in der Entwicklungsphase. Doom selbst war noch in der Entwicklungsphase. Wolfenstein D war bereits draußen.",
+            "start": 2129968,
+            "end": 2135128,
+            "confidence": 0.87405276,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Okay. Und Wolfenstein D war, die Technik war eben nicht mehr möglich auf einer Konsole zu verwenden und darum hat man was neues gesucht, ÿousand.",
+            "start": 2135184,
+            "end": 2142986,
+            "confidence": 0.90562,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Genau. Ray Marching bzw. Ray Casting war auf der SNES, da es ja zur Laufzeit errechnet wird, zu teuer performance technisch. Deswegen musste da was Neues her. Und zwar hat er dann ein paar wissenschaftliche Papers gelesen, John Carmack, und kam ist über eine Studie der Airforce, der US Air Force, gestolpert. Und zwar hatten die den Anspruch, Flugsimulationen zu entwickeln, also ebenfalls Objekte in einem dreidimensionalen Raum darzustellen. Finde ich auf jeden Fall eine super Sache, wenn man Flugsimulation machen. Und die hatten eigentlich genau das gleiche Problem. Ray Casting ist zu teuer für die aktuelle Computation Power. Und die sind über einen neuen Algorithmus gestolpert, der nannte sich BSP, Binary Space Partitioning, beziehungsweise haben diesen Algorithmus entwickelt. Das Problem war 1960 ist, dass sie den Algorithmus nicht anwenden konnten, weil die Elemente innerhalb des Algorithmus priorisieren mussten und dafür fehlte die richtige Datenstruktur. Warum man Elemente innerhalb des BSPs priorisieren muss, kommen wir gleich zu. Andere Forscher haben sich diese Forschung von 1960 genommen, 20 Jahre später, 1980, haben gesagt, hey, der Algorithmus ist ja super, lass den doch mal nehmen. Und haben dann aber mittels einem binären Baum die richtige Datenstruktur gefunden, um den Algorithmus wirklich ins Leben zu erwecken. Wenn wir uns jetzt einmal ansehen, was Binary Space Partitioning, BSP ist, dann wird auch klar, warum. Die Spielwelt in Doom selbst ist als zweidimensionales Layout definiert. Jetzt könnte man sagen Moment mal, hast du nicht gerade gesagt zweidimensionales Layout, dann kannst du auch dieses Ray Marching machen. Ja, theoretisch, wenn du auch ein rechtwinkliges Wendelayout hast. Hast du aber nicht, denn in der Doom Engine können Grundrisse Winkel beinhalten, also diagonale Wände. Es kann eine beliebige Raumhöhe umgesetzt werden. Also das ist halt grundlegend anders als Wolfenstein D. Deswegen kannst du dieses Ray Marching nicht machen. Müsstest eigentlich ray casting machen und das wäre wieder zu teuer. Deswegen, du hast ein Level bei Doom mit diagonalen Wänden und Schrägen. Und jede Karte besteht aus sogenannten Sektoren. Im Grundprinzip nimmst du das Level und teilst das. Somit kriegst du zwei kleine Level. Und diese zwei kleinen level nennst du Front Space und Backspace. Also einmal alle Sektoren, die sich auf einer Seite der Linie befinden und Backspace alle Sektoren, die sich auf der anderen Seite der Linie befinden.",
+            "start": 2143048,
+            "end": 2279414,
+            "confidence": 0.88862354,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Wobei man da jetzt sagen muss, mit der Linie, das ist keine horizontale Linie wie zweitausendein, wenn ich in eine Welt hineinblicke und ich habe oben und unten, sondern nehme den Grundriss von einer Welt und schneide diese Welt auseinander. Und dann habe ich einen linken und einen rechten Teil. Z.B. einen hinteren und einen vorderen, wie man es auch immer sieht.",
+            "start": 2279462,
+            "end": 2295116,
+            "confidence": 0.8854263,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Ganz genau. Nimm dir einfach ein Blatt Papier, mal einfach einen großen Strich durch quer und dann hast du es geteilt. Ja, dann hast du einen linken, rechten Teil. Und das wird jetzt für jede Seite so lange gemacht, bis du sie nicht mehr teilen kannst. Oder bis man sagt, man hat ganz viele kleine Abschnitte. Also die Teilung geht rekursiv durch, einmal für die linke Seite, einmal für die rechte Seite.",
+            "start": 2295148,
+            "end": 2314126,
+            "confidence": 0.928081,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Und wenn ich jetzt weiß, dass sie z.b. einen gewissen Bereich gar nicht einsehen kann, dann kann ich alle Unterebenen, alle Unterelemente auch ignorieren und kann mich auf die andere Seite vom Binärbaum konzentrieren.",
+            "start": 2314198,
+            "end": 2325726,
+            "confidence": 0.89265853,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Ja, da kommen wir gleich zu. Jetzt hast du das Level in ganz viele kleine Unterlevel unterteilt. Und jetzt baust du den binären Baum auf. Ein binärer Baum hat eine Wurzel und hat ganz viele Äste. Und die Endknoten eines Baumes nennt man Blätter. Und jeder Knoten in diesem Baum repräsentiert also eine Teilungsebene, die ganz oben einmal in den Raum Front Space, also Vorderraum, und einmal in den backspace Hinterraum unterteilt wurde. Und die Blätter selbst sind sogenannt die Endknoten vom Baum, die dann halt den kleinsten unteilbaren Bereich, den Sektor der Spielwelt beeinflussen bzw. Repräsentieren.",
+            "start": 2325838,
+            "end": 2358750,
+            "confidence": 0.9144155,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Aber sind es dann schon wirklich Monster oder so, die da in den Blättern hängen? Oder ist das noch ein Raum, das Blatt?",
+            "start": 2358830,
+            "end": 2364986,
+            "confidence": 0.9318313,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Das ist noch ein Raum. Die Monster sind ja mehr oder weniger eigentlich dasselbe wie. Wie du als Spieler bei Bsp. Der BSP funktioniert nur mit statischen Elementen, die sich nicht bewegen. Monster können sich bewegen, deswegen sind Monster nicht Teil des BSPs. Und das macht die ganze Sache fürs BSP so spannend. Ein BSP kann im Vorhinein berechnet werden und nicht zur Laufzeit, da es ja nur um statische Elemente handelt. Okay, jetzt haben wir den binären Baum und das Level in diesen binären Baum aufgeteilt. Wir wissen ja auch in welchem Sektor der Spieler sich befindet. In irgendeinem dieser geteilten Sektoren steht der Spieler ja gerade und schaut in irgendeine andere Richtung. Das bedeutet, er schaut auf andere Sektoren. Und jetzt kannst du sagen, ist der Spieler im Front Space, wird dieser zuerst gezeichnet, da er alle sichtbaren Sektoren hat. Also erst werden die Sektoren gezeichnet, in dem der Spieler ist, weil die werden ja sichtbar sein. Erst später können im Backspace die Elemente gezeichnet werden. Also eigentlich wird der Baum vom Spielerstandpunkt durchlaufen.",
+            "start": 2365058,
+            "end": 2423502,
+            "confidence": 0.9393009,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Aber ich will mir trotzdem sparen, dass ich nicht alles zeichnen muss, oder? Also ich muss ja trotzdem irgendwie checken, okay, welche Elemente sind gerade sichtbar. Ich will die ganze Welt immer generieren, auch wenn es hintereinander passiert durch die Teilungsebene.",
+            "start": 2423566,
+            "end": 2435118,
+            "confidence": 0.9141261,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Und durch die Priorisierung der Elemente im Baum hast du beim Zeichnen auch so eine Sichtbarkeitsberechnung bzw. Eine Sichtbarkeitsprüfung. Und da kannst du, da kannst du ja sehen, okay, ich habe dieses Objekt, diesen Sektor bereits gezeichnet. Dieser Sektor steht vor einem anderen Sektor, deswegen kann ich den Backspace Sektor halt wegschmeißen und brauche den gar nicht zeichnen. Weil du ja durch die Tiefe des Baumes und durch den Standpunkt, wo der Spieler in dem Baum gerade steht, weißt du ja welche Elemente du bereits gezeichnet hast.",
+            "start": 2435134,
+            "end": 2462338,
+            "confidence": 0.9092556,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Ja, vor allem du kannst testen ob du einen Sektor siehst und wenn du den großen Sektor schon nicht siehst, dann kannst du alle die darunter liegen auch automatisch nicht mehr zeichnen.",
+            "start": 2462394,
+            "end": 2471514,
+            "confidence": 0.92512655,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Ganz genau.",
+            "start": 2471562,
+            "end": 2471930,
+            "confidence": 0.749965,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Das heißt du musst nur grobe Checks machen und dann in die Tiefe gehen, welche Checks, also welche Sektoren wirklich sichtbar sind überhaupt.",
+            "start": 2471970,
+            "end": 2479022,
+            "confidence": 0.88802046,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Du lässt den kompletten Teilknoten dann einfach fallen. Genau.",
+            "start": 2479086,
+            "end": 2481726,
+            "confidence": 0.8717378,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Wie wir alle wissen, Bäume sind immer logarithmisch, das heißt du sparst dir extrem viel, weil das exponentiell sinkt, die Anzahl der Elemente, die gerendert werden müssen.",
+            "start": 2481798,
+            "end": 2489926,
+            "confidence": 0.95071185,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "BSP, also binary space partitioning, war mindblowing zu der Zeit, denn da die ganze Sache beim Laden des Spiels berechnet wird. Oder du kannst, du kannst den Baum ja bereits schon statisch in der Datei ablegen. Den kompletten Baum zu durchlaufen hat immer die gleiche Geschwindigkeit. Es ist völlig egal wo der Spieler im Baum in der Karte steht, die Geschwindigkeit bleibt immer gleich, da der BSP nur statische Objekte enthält, Wände, Blöcke und so weiter, die sich nicht bewegen. Und du kannst halt wie gerade sagte, Teile der Map einfach fallen lassen, da diese nicht sichtbar sind.",
+            "start": 2489998,
+            "end": 2524814,
+            "confidence": 0.94187135,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Du könntest im Prinzip auch vorberechnen, welche Sektoren von welchen Sektoren auf keinen Fall sichtbar sind. Keine Ahnung, ob das gemacht wird, aber das ginge eigentlich auch, weil du kannst da schon dann viele ausschließen und das könntest du dann auch noch statisch bei.",
+            "start": 2524862,
+            "end": 2537986,
+            "confidence": 0.8980675,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Es gibt ein Buch, nennt sich Game Engine Black Book Doom. Da hat jemand den kompletten Doom Source Code gelesen und das in ein Buch gepackt und hat das erklärt. Und in diesem Buch steht unter anderem, dass John Carmack solche Optimierung, von denen du gerade gesprochen hast, bereits eingebaut hat. Der originale BSP Algorithmus sagt auch, dass du die Objekte in dem Baum erst von hinten nach vorne zeichnen solltest. John Carmic hat es einfach umgedreht, weil der fand das unlogisch. Der sagte, warum soll ich denn erst ganz hinten anfangen und vorne überzeichne ich die Elemente doch immer, wenn die doch gar nicht. Weil die hinteren Elemente nicht sichtbar sind. Deswegen hat er das Zeichnen von vorne nach hinten gemacht und nicht wie original im Paper von hinten nach vorne, weil der sagt halt, dann spare ich mir das ganze Überschreiben der Elemente sowieso. Also John Cummings selbst hat da schon diverse Optimierungen mit reingepackt.",
+            "start": 2538058,
+            "end": 2585324,
+            "confidence": 0.9077714,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Da sieht man übrigens wieder, wie klein die ganze informatikwelt ist, weil diese ganzen Algorithmen werden natürlich genauso auch in den Datenbanken verwendet. Wenn du jetzt z.b. das GIS Modul von von Postgres oder so hast, das arbeitet meines Wissens, glaube ich, mit Quad Trees oder KD Trees vermutlich, was genau mit der gleichen Methodik arbeitet, einfach Räume zu zerteilen, um sie dann in den Baum anzuordnen und damit schneller zu machen.",
+            "start": 2585422,
+            "end": 2608128,
+            "confidence": 0.88673836,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Und nur noch mal zum Abschluss, wie sich jetzt Binary Space Partitioning, BSP von Ray Casting unterscheidet. BSP ist ein datenstrukturierter Ansatz auf Basis Binary trees. Raycasting ist mehr oder weniger so ein abtastungs basierter Ansatz. Und die Performance ist beim Binary Space Partition natürlich deutlich höher, da du vorberechnen kannst. Der Vorteil beim Raycasting ist natürlich, dass du es auch mit bewegenden Elementen machen kannst, was natürlich dann in modernen Spielen schon öfter gemacht wird. Aber auf der anderen Seite muss man sagen, die Rechenpower hat sich leicht erhöht seit 1993. Aber es ist mal wieder Zeit für einen Doom. Fun Fact, wusstest du eigentlich, dass der Doom Guy, also den Soldaten, den du spielst, bis 1995 gar keinen Namen hatte? John Romero, der das Leveldesign übernommen hat, hat gesagt, ach, der Typ ohne Namen, das sollte das Horror Theme noch realistischer machen. Und dann kam 1995 aber so eine Romanserie raus und dort wurde der sogenannte Doom Guy, also den Soldaten, den du spielst, Flynn Fly Taggart, genannt Flynn oder Finn Flynn, nicht wie Finn Kliemann.",
+            "start": 2608184,
+            "end": 2670456,
+            "confidence": 0.8847934,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Halte mich meiner Meinung. Jetzt hast du schon erwähnt, Doom kann man überall spielen und Doom wird überall buddiert. Gibt es in der Fanwelt da draußen, nachdem es auch Open source ist, irgendwelche Erweiterungen? Also hat irgendwer weitergebaut an Doom?",
+            "start": 2670608,
+            "end": 2683124,
+            "confidence": 0.911423,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Die Frage hast du falsch gestellt. Die Frage sollte wer hat nicht an Doom weitergebaut? Also neben dem Running gag can it run Doom? Wo wir gleich auch noch drauf zu sprechen kommen, kommen wir jetzt mal zu der Weiterentwicklung von Doom. Und zwar gibt es diverse Forks. Und zwar gibt es einmal Chocolate Doom. Chocolate Doom Ÿousand ist ein Fork von Doom, was das Ziel hat, so akkurat wie möglich an die originale Doom Version zu kommen, um aber auf modernen Computern laufen zu können. Also das hat keine spielerischen Erweiterungen, sondern ist wirklich eins zu eins kompatibel, auch mit dem Datenformat für die LMP, für die Lumpfiles, für die Speedruns, was vorhin erwähnt hatten. Und sogar, Achtung, Chocolate Doom ist sogar bug kompatibel, wo es geht.",
+            "start": 2683212,
+            "end": 2727790,
+            "confidence": 0.9103182,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Aber das ist eine eigene Codebase.",
+            "start": 2727890,
+            "end": 2730030,
+            "confidence": 0.91655165,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Es ist ein Source Port, so nennt sich das.",
+            "start": 2730110,
+            "end": 2732454,
+            "confidence": 0.94754887,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Aber warum nehme ich nicht den originalen Source Code?",
+            "start": 2732542,
+            "end": 2734550,
+            "confidence": 0.8385722,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Der originale Source Code hat unter anderem das Soundmodul nicht dabei, da das aus Lizenzbestimmungen nicht mitgeliefert werden durfte. Und der normale Source Code läuft halt auf aktuellen Systemen auch nicht mehr. Und chocolate DOM läuft z.B. auch auf Mac oder auf Linux mit neuen CPU architekturen und Co.",
+            "start": 2734630,
+            "end": 2749806,
+            "confidence": 0.90910757,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Ja, wenn ihr natürlich jetzt MS DOS auf irgendeinem neuen Computer installiert, das würde natürlich schon funktionieren, aber Ÿousand auf Linux ist es natürlich schwierig.",
+            "start": 2749878,
+            "end": 2756892,
+            "confidence": 0.850868,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Dann gibt es noch Crispy Doom. Crispy Doom ist wiederum ein Fork von Chocolate Doom. Und Crispy Doom läuft auch auf aktueller Hardware, aber auf höherer Auflösung. Was Chocolate Doom nicht macht. Wir erinnern uns, Chocolate Doom soll so akkurat wie möglich nah dran sein am Original und es entfernt statische Limits. Das bedeutet, die Original Doom Version hat z.B. ein Limit, das kann nur 20 Content Files, diese zweitausendein what Files, von denen ich gesprochen habe, wer all the data ist, laden. Und Crispy Doom kann 100 oder 200 und du kannst auch mehr Spieler im Multiplayer haben. Das Original Doom kann nur vier Spieler im Multiplayer. Crispy Doom kann mehr. Solche Limits werden da halt entfernt.",
+            "start": 2756956,
+            "end": 2795818,
+            "confidence": 0.8892489,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Sind die eigentlich alle kostenlos oder muss man da was zahlen?",
+            "start": 2795914,
+            "end": 2798810,
+            "confidence": 0.90478635,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Alle open source, online verfügbar, kannst du herunterladen. Dann gibt es noch Z Doom. Z Doom ist so ähnlich wie Crispy Doom, jedoch mit etlichen neuen Features. Da wird das Spiel wirklich genommen und wirklich einfach weiterentwickelt. Wie z.b. gibt es von Z Doom wiederum einen Fork, der nennt sich GZ Doom. Der hat z.B. opengl Support für moderne Grafikkarten. Und Achtung, Scripting Capabilities. Da sind wir wieder bei deinem Monkey Island. Du sagtest ja, konnte man auch scripten, aber GZ Doom kann man jetzt auch wirklich scripten. Und das ist natürlich super interessant. Da kannst du das mal wirklich mit Quellcode steuern. Dann gibt es noch einen Fork von GZ Doom, der nennt sich Zandronum. Und das ist eigentlich ein Fork von Doom, der nur auf Multiplayer Gameplay ausgelegt ist. Da gibt es dann sowas wie Capture the Flag und allem drum und dran. Und Achtung, das ist auch der Port, der für die internationale Doom Liga genutzt wird. Also falls du Doom professionell spielen möchtest, dann kommst du um Zandronum nicht herum. Verlinken wir natürlich auch. Und wir wären ja nicht ein Software Engineering Podcast, wenn wir nicht mal ein bisschen an den educational party gehen würden. Und zwar gibt es jemand, der hat Doom von C nach C geportet.",
+            "start": 2798890,
+            "end": 2868786,
+            "confidence": 0.8679855,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Warum, warum, warum? Ich frage mir immer diese Frage. Da hat irgendwer sehr viel Zeit.",
+            "start": 2868938,
+            "end": 2874394,
+            "confidence": 0.88396466,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Und zwar hat diese Person sich crispy doom genommen und langsam auf C geportet. Und jetzt die Frage, wie refactor man doom und stellt sicher, dass man nichts kaputt macht.",
+            "start": 2874482,
+            "end": 2884794,
+            "confidence": 0.89255965,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Ja, kann man eh testen, alles verifizierbar.",
+            "start": 2884842,
+            "end": 2887106,
+            "confidence": 0.7925072,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Wie würdest du es machen?",
+            "start": 2887178,
+            "end": 2888026,
+            "confidence": 0.919238,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Ja, du kannst ja diese Input Files nehmen, die Watt Files, und dann dementsprechend das checken.",
+            "start": 2888098,
+            "end": 2892612,
+            "confidence": 0.83379436,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Die Watt Files sind die Content Files. Du meinst ja wahrscheinlich Lump Files, da wo die Spieler Interaktionen festgehalten werden.",
+            "start": 2892676,
+            "end": 2897540,
+            "confidence": 0.895484,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Genau, danach kannst du die Watt Files dann checken, oder ob die die richtigen Infos beinhalten.",
+            "start": 2897620,
+            "end": 2901404,
+            "confidence": 0.8974856,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Ja, ganz genau. Das hat er eigentlich gemacht und zwar mit einer Technik, die nennt sich Approval Testing. Approval Testing wird eigentlich genommen, wenn du eine Blackbox Software hast und nur den Output nimmst und du weißt gar nicht, wie die Software inneren funktioniert. Das wird halt immer eingesetzt, wenn Unit Testing ein bisschen schwierig ist. Weil wir können ja, Doom will nicht wirklich unit testen, wenn wir es refactoren. Und oft kommt das dann im Einsatz bei PDF Dokumenten, HTML Reports oder großen JSON Dateien. Und Approval Testing macht halt Arbeiten mit Legacy Code sehr, sehr einfach. Und was hat diese Person gemacht? Sie hat ein neues Command Line Flag implementiert, was Doom ohne Grafik Output laufen lässt. Das bedeutet, der spricht wirklich nur diesen Doom Loop an, diesen Ticker, von dem ich vorhin erwähnt habe, und füttert den mit den LAMP Files, also mit dem user Input, nur verwirft halt den Grafikoutput. Und am Ende jedes Doom Levels kommt so eine Statistik, Map Name, wie lange du gespielt hast, also Zeit, und dann deine Statistik über Kills, Items und gefundene Secrets, also Geheimnisse. Und du merkst schon, wohin das führt. Der hat einfach Demos genommen, hat die durchs richtige Doom Spiel gejagt, mit Screen Output, hat die den Statistik Screen genommen, aufgeschrieben, in der Datei gepackt, hat dann ein neues Command Line Flag in Doom gebaut, was die visuelle Repräsentierung wegschmeißt. Und wenn man sein Doom jetzt mit so einem Lamp File füttert, dann kommen die Kill Statistiken als Text File raus. Somit kann der sagen, ich refactor und schmeiße einfach fünf und dreiig User Interaction Files, also Lump Files rein und teste die einfach. Der hat sich halt vorher ein Testset aufgebaut.",
+            "start": 2901492,
+            "end": 2993528,
+            "confidence": 0.89638656,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Das wäre sowas wie Acceptance Tests.",
+            "start": 2993584,
+            "end": 2995944,
+            "confidence": 0.87112665,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Genau, die nennen das Approval Tests, aber ist genau das gleiche eigentlich. Und jetzt kommt was lustiges. Das bedeutet natürlich auch, wir können die ganze Sache so schnell laufen lassen, wie wir wollen, weil wir haben ja, wir müssen ja auf keine Interaction von Monstern mehr warten oder ähnliches, weil wir keinen visuellen Output haben. Wir können ja einfach den Ticker hochschrauben von dem Doom Loop und somit kann die ganze Sache schnell laufen. Also eigentlich wird die ganze Sache ohne Maus, ohne Audio und ohne gerendertes Spiel gespielt. Du hast sozusagen, Achtung, ein Headless Doom, jeder kennt einen Headless Chrome, der sich schon mal mit browser Automation auseinandergesetzt hat. Für die Leute, die es noch nicht wissen, ein headless Chrome ist, du nutzt einfach die Chrome Engine, um eine Webseite zu evaluieren, ohne dass ein Chrome gestartet wird. Und der macht das eigentlich mit einem Headless Doom.",
+            "start": 2996032,
+            "end": 3040154,
+            "confidence": 0.9315057,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "C hat ja für mich noch keinen Sinn gemacht. Ein Headless Doom macht schon wieder mehr Sinn, weil er kann die KIs füttern und ähnliche Geschichten machen. Das macht schon wieder mehr Sinn.",
+            "start": 3040282,
+            "end": 3048362,
+            "confidence": 0.9167848,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Du denkst so kompliziert, mit einem Headless Doom kann man Doom in GitHub actions laufen. Lassen und das hat wofür? Das ist die falsche Frage. Die Frage ist, warum nicht?",
+            "start": 3048426,
+            "end": 3056282,
+            "confidence": 0.914166,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Ich sehe schon in der ganzen Episode stelle ich mir schon die Frage immer, warum? Aber es ist Zweitausendein, warum nicht? Okay, alles verstanden.",
+            "start": 3056346,
+            "end": 3063080,
+            "confidence": 0.89195794,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Also es gibt jemand, der hat GitHub Actions, Headless Doom in GitHub actions laufen lassen. Und ich verlinke den Talk auch gerne unten in den Show Notes. Wahnsinn.",
+            "start": 3063160,
+            "end": 3071616,
+            "confidence": 0.9360636,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Ich kann leider nicht dein Bing, Bing, bing. Aber es wäre wieder Zeit für ein Fun Fact, oder?",
+            "start": 3071688,
+            "end": 3075064,
+            "confidence": 0.8601789,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Einen habe ich noch. Und zwar, als das Spiel Doom released wurde, haben super viele College Studenten das dauerhaft durchgespielt. Und da ging echt die Produktivität auch in diversen Firmen runter, weil Doom halt überall auf den Firmenrechner installiert wurde. Und jetzt kommt das geile, sogar bei id Software selbst war das der Fall. Es gibt eine Story, da sagt der CEO von id Software we had to have conversations with some of our people. Projects weren't getting done. Also auch id Software Mitarbeiter haben wohl ein bisschen zu viel Doom gespielt.",
+            "start": 3075152,
+            "end": 3105300,
+            "confidence": 0.91573346,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Nun gut, das heißt, es war das Homeoffice, der er so ungefähr.",
+            "start": 3105380,
+            "end": 3109284,
+            "confidence": 0.8898575,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Also wer Bock hat, auch mal einen Doom Port zu erstellen, es gibt einen Repository, nennt sich Doom Generic. Und Doom Generic ist ein runtergescriptetes Doom, um deinen eigenen Doom Port zu erstellen. Du musst sechs Funktionen implementieren, zweitausendein. Und da gibt es genug Dokumentation, wie das gemacht wurde für FreeBSD, für Linux und so weiter. Und dann kannst du es eigentlich auf jede Plattform selbst portieren.",
+            "start": 3109372,
+            "end": 3132026,
+            "confidence": 0.8911761,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Jetzt hast du gesagt, es gibt diesen bekannten Spruch Can it run doom? Kannst du den jetzt noch abschließend erklären?",
+            "start": 3132098,
+            "end": 3137914,
+            "confidence": 0.939065,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Es ist mehr oder weniger zum Volkssport geworden, Doom auf allen möglichen technischen Devices laufen zu lassen. Nicht weil Captures, nicht nur in Captures, weil es halt deterministisch ist, weil du es halt nachvollziehen kannst, ob du Seiteneffekte hast und so weiter. Und es gibt so einen ganzen Subreddit, der nennt sich zweitausendein it runs doom. Mal ein paar Highlights, was ich gefunden habe auf einer Canon Kamera, also auf einer Spiegelreflexkamera, auf einem Thermomix Klon, auf einem iPad, auf einem Laufband, auf einer Ikea Trad Free Lampe. Also die Lampe hat genug Power, um Headless Crow, Headless Doom laufen zu lassen. Auf einem digitalen Schwangerschaftstest wurde es zum Laufen gebracht.",
+            "start": 3138002,
+            "end": 3179048,
+            "confidence": 0.87517595,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Ist gar nicht so lange her, da kann ich mich noch dran erinnern, das war vor ein paar Monaten.",
+            "start": 3179144,
+            "end": 3182216,
+            "confidence": 0.9183,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Es gibt einen Hacker, der hat das Computersystem eines John deere Traktors gehackt und hat darauf Doom laufen lassen. Finde ich schon mal mega gut. Und mein absoluter Favorite, der war Anfang 2014. Und zwar hat die europäische Weltraumorganisation einen Satelliten ins All geschossen, der nennt sich Ops Sat. Opsat ist ein Satellit, der ausschließlich der Erprobung und Validierung neuer Techniken für die Missionskontrolle und bordseitige Satellitensysteme gedacht war. Dieser ganze Satellit hat ungefähr eine Größe von so einem Handgepäckkoffer bei so einem Flug. Also ist echt nicht groß, ÿousand, und der ist auch nur dreiig cm hoch. Aber die Computer, die auf diesem Satellit laufen, sind zehnmal leistungsfähiger als der derzeitige Standard bei ESA Raumfahrzeug. So, und was ist da jetzt passiert? Die ESA hat gesagt, liebe Community, ihr könnt da eigentlich deployen, was ihr wollt. Müsst euch nur anmelden, dann helfen wir euch ein bisschen und dann geben wir euch einen Zeitabschnitt, wo ihr was deployen könnt. Das hat sich ein Entwickler nicht zweimal sagen lassen und hat Doom auf einem Satelliten laufen lassen. Das ist wohl wahrscheinlich der erste Satellit, der Doom laufen lässt. Und ich verlinke den Talk dazu mal, der ist nämlich ganz besonders grandios, denn er wollte natürlich nicht nur Doom auf dem Satelliten laufen lassen, er wollte natürlich auch ein Screenshot davon haben, dass Doom auf dem Satelliten läuft. So, und er hat es geschafft, ein Doom Screenshot zu kriegen, wo im Hintergrund sogar die Erde zu sehen ist vom Satelliten. Und während des Talks beschreibt er unter anderem, dass er Doom immer wieder starten musste, wenn der Satellit die richtige Ausrichtung zur Erde hatte. Mega gut. Seine Herausforderung beim Portieren von Doom auf den Satelliten waren eigentlich nur die C Libraries. Das bedeutet, er musste entweder die Libs nutzen, die Libraries, die TE Libraries, die auf dem Satelliten vorinstalliert waren, oder das Spiel musste alles mitbringen, also statisch kompiliert werden. Und da hatte er Hilfe von jemandem von der ESA, von einem Software Engineer, der ein bisschen mehr Ahnung hat, was auf so einem Satelliten eigentlich alles so läuft. Aber was haben die noch mit dem Satelliten gemacht? Die haben ein kleines Modell trainiert, die haben das erste in Orbit Schach Spiel gespielt und die haben die erste Börsentransaktion im Allgemecht. Alles auf diesem ESA Satelliten fand ich auch genial.",
+            "start": 3182288,
+            "end": 3321668,
+            "confidence": 0.90091383,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Ich habe mal kurz schnell nachgeschaut, was man eigentlich wirklich braucht, um Doom laufen zu lassen. Es ist eigentlich relativ wenig. Du brauchst einen Prozessor, der 2,5 Millionen Instructions pro S handeln kann, also so ein er mit 25 MHz oder so, der schafft es schon, damit du die Frames auch pro second berechnen kannst. Und darum ist vielleicht die Trafi Lampe auch fähig, das laufen zu lassen. Wobei wir ja nicht wissen, ob das die Frames per second auch wirklich schafft oder ob das dann langsamer läuft.",
+            "start": 3321804,
+            "end": 3350568,
+            "confidence": 0.9075876,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Ich glaube, das läuft dann alles ein bisschen langsamer. Aber es läuft. Darum geht es ja, weil der digitale Schwangerschaftstest, der wird, glaube ich auch nicht so viel Rechenpower haben.",
+            "start": 3350624,
+            "end": 3357776,
+            "confidence": 0.90973866,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Ja, da funktioniert es aber relativ gut, glaube ich sogar. Ÿousand, sehr komplexes Teil.",
+            "start": 3357928,
+            "end": 3362854,
+            "confidence": 0.7922379,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Was mich richtig umgehauen hat, ist, es gibt auch noch Doom in Grafana. Und zwar kann das Grafana Histogramm Doom spielen. Grafana selbst hat dieses Experiment gemacht. Verlinken wir auch in den Show Notes.",
+            "start": 3362942,
+            "end": 3375574,
+            "confidence": 0.8935244,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Aber es gibt wirklich Leute, die haben zu viel Zeit. Und Firmen scheinbar auch.",
+            "start": 3375662,
+            "end": 3379286,
+            "confidence": 0.9336136,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Das ganze Ding mit Doom ist noch nicht zu Ende. Also da könnt ihr noch so viel Zeit, wie ihr wollt, reinstecken. Und ich denke, da werden wir in Zukunft auch noch ein paar richtige gute Sachen sehen. Wer immer noch nicht genug hat, kann in die Subreddits it runs doom oder in den Subreddit doom selbst gehen. Gibt es nur so Kram. Es gibt auch noch zwei gute Bücher, aber das Game Engine Black Book, da hat jemand den kompletten Doom Source Code gelesen. Könnt ihr euch kaufen, hat ein Code Review gemacht und hat euch und erklärt da einfach, wie alle Tricks funktionieren. Und dann gibt es auch noch ein Buch, nennt sich Masters of Doom, how to guys created an empire and transformed pop culture. Denn ich glaube, das kann man nicht Abstreiten, Doom hat eine Art Popkultur erzeugt.",
+            "start": 3379358,
+            "end": 3419060,
+            "confidence": 0.9058886,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Ich habe mir jetzt gerade Doom als JavaScript geöffnet. Der Sound, der gerade in meinem Kopfhörer gekommen ist, der hat mir gerade meinen Kopf fast explodieren lassen. Aber ich werde es mal ausprobieren. Möchte auch mal wieder im Browser zumindest Doom spielen, was du nicht geschafft hast, dass ich wenigstens mal ein paar Schüsse abfeuere.",
+            "start": 3419100,
+            "end": 3435852,
+            "confidence": 0.8943984,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Ich bin zufrieden. Ich habe meine Antwort auf die Frage, warum ist Doom eigentlich so relevant und populär in der Softwareentwicklungswelt? Und irgendwie habe ich jetzt auch Lust, Doom mal auf irgendeine Plattform zu portieren. Ich muss mir jetzt nur irgendwas suchen. Ich habe hier so einen dokumenten Scanner, der hat auch einen Screen. Ich weiß nicht, vielleicht portiere ich dir mal darauf. Gibt uns mal Feedback, wie euch die Folge gefallen hat. Ist eine etwas andere Art einer Folge geworden. Etwas zur Popkultur kann man vielleicht sagen. Vielleicht hatte ihr ein bisschen Spaß oder ich habe euch in eure Kindheit zurückgeholt. Oder ihr zockt heute Abend eine Runde Doom oder Wolfenstein D. Von daher dabei wünsche ich auf jeden Fall viel Spaß. Kommt gerne mal in die Disco Community und korrigiert mich auch, wenn ich beim BSP Algorithmus was Falsches gesagt habe, denn ich bin kein Grafik Engineer. Zweitausendein, das muss ich zugeben, hat auch ein bisschen Anstrengung in meinem Kopf gebraucht.",
+            "start": 3435916,
+            "end": 3478622,
+            "confidence": 0.8888315,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Und wir haben natürlich ganz, ganz viele Links von Andy in den in den Show Notes. Da könnt ihr euch rein nerden bis zum Gehtnichtmehr. Und wenn ihr dann Doom auf euren Herd oder auf eure Waschmaschine bodiert habt, bitte kommt zu uns in die Discord Community und sagt uns Bescheid.",
+            "start": 3478686,
+            "end": 3492958,
+            "confidence": 0.8881394,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Das war's von uns. Bis später.",
+            "start": 3493014,
+            "end": 3494350,
+            "confidence": 0.92986,
+            "speaker": "A",
+            "channel": null
+        }
+    ],
+    "confidence": 0.9063011,
+    "audio_duration": 3503,
+    "webhook_status_code": null,
+    "webhook_auth": false,
+    "summary": null,
+    "auto_highlights_result": null,
+    "content_safety_labels": null,
+    "chapters": null,
+    "sentiment_analysis_results": null,
+    "entities": null
+}
