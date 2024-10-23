@@ -15,5 +15,6 @@ talks:
     name: 'Felix Erlacher'
     title: 'Who to trust'
     description: 'In this talk we examine our trust relationship in security protocols. We take TLS and SAML as examples and examine whether our trust is justified or if we should exercise more vigilance and caution when using and implementing security protocols. The answer is Jesus (and sometimes Bruce Schneier).'
+    bio: 'By day, Felix is a seasoned security consultant at Cancom and a network engineer with over 15 years of experience in keeping the digital world safe from threats. By night (and on weekends), he's a freelance mountain guide, scaling peaks when he's not scaling firewalls. Felix’s journey began in the idyllic classrooms of Bozen as an Admin and has since taken him to global networks with ILF Consulting Engineers, all while maintaining an academic footprint at universities in Innsbruck and Paderborn, where he earned his PhD in Network Security. Whether he's hunting down security vulnerabilities or guiding a group up a mountain, Felix always finds himself on top of things – metaphorically and literally!'
 eventId: '7cioclkkcefl16a3va03ahf6kn'
 ---
