@@ -92,8 +92,8 @@ tags:
 - Interview
 title: '#147 Mechanische Tastaturen: Vom Klick zum Kult mit Philipp Hoeler-Lutz von
   Click! Clack! Hack!'
-transcript_raw: ''
-transcript_slim: ''
+transcript_raw: src/data/transcripts/147-transcript.zip
+transcript_slim: src/data/transcripts/147-transcript-slim.json
 youtube: https://www.youtube.com/watch?v=9SC-B8-_hCk
 
 ---
