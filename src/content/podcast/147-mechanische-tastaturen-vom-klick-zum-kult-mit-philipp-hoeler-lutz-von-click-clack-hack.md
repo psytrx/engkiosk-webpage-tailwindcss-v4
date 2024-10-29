@@ -82,7 +82,10 @@ speaker:
 - name: Andy Grunwald
 - name: Wolfi Gassler
 spotify: https://open.spotify.com/episode/5Mxu1qgHVPFmKafPa2SSQE
-tags: []
+tags:
+- Tech Kultur
+- Open Source
+- Interview
 title: '#147 Mechanische Tastaturen: Vom Klick zum Kult mit Philipp Hoeler-Lutz von
   Click! Clack! Hack!'
 transcript_raw: ''
