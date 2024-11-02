@@ -22,6 +22,6 @@ participants:
   present:
     total: 54
     male: 44
-    female: 10 
+    female: 10
 eventId: '7cioclkkcefl16a3va03ahf6kn'
 ---
