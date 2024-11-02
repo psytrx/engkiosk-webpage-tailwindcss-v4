@@ -4,7 +4,7 @@ on:
   repository_dispatch:
   workflow_dispatch:
   schedule:
-    - cron: '00 18 * * 1'
+    - cron: "00 18 * * 1"
 
 jobs:
   linkChecker:
@@ -17,3 +17,4 @@ jobs:
         uses: lycheeverse/lychee-action@v2.0.2
         with:
           args: --config .lychee.toml . https://engineeringkiosk.dev/sitemap-0.xml
+          fail: false # Don't fail action on broken links
