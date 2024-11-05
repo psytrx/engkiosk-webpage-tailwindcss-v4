@@ -79,7 +79,9 @@ speaker:
 - name: Andy Grunwald
 - name: Wolfi Gassler
 spotify: https://open.spotify.com/episode/0IpnoMhRVdeE0NeXNiXaGg
-tags: []
+tags:
+- Tech Kultur
+- Open Source
 title: '#148 Wenn Open Source eigene Wege geht: Forking und seine Folgen'
 transcript_raw: ''
 transcript_slim: ''
