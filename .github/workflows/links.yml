@@ -16,5 +16,6 @@ jobs:
         id: lychee
         uses: lycheeverse/lychee-action@v2.0.2
         with:
-          args: --config .lychee.toml . https://engineeringkiosk.dev/sitemap-0.xml
           fail: false # Don't fail action on broken links
+          failIfEmpty: false # Don't fail action if no links were found
+          args: --config .lychee.toml . https://engineeringkiosk.dev/sitemap-0.xml
