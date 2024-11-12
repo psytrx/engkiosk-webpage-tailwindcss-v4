@@ -85,8 +85,8 @@ tags:
 - Tech Kultur
 - Open Source
 title: '#148 Wenn Open Source eigene Wege geht: Forking und seine Folgen'
-transcript_raw: ''
-transcript_slim: ''
+transcript_raw: src/data/transcripts/148-transcript.zip
+transcript_slim: src/data/transcripts/148-transcript-slim.json
 youtube: https://www.youtube.com/watch?v=uE5KkNn9t_8
 
 ---
