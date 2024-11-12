@@ -81,7 +81,11 @@ rtlplus: ''
 six_user_needs: []
 speaker:
 - name: Andy Grunwald
+  transcriptLetter: A
 - name: Wolfi Gassler
+  transcriptLetter: B
+- name: Eva Zangerle
+  transcriptLetter: C
 spotify: https://open.spotify.com/episode/1RGYHZnfOpwE5yhd7CEx4U
 tags: []
 title: '#149 Recommender Systems: Funktionsweise und Forschungstrends mit Eva Zangerle'

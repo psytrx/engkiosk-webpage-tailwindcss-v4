@@ -1,0 +1,1640 @@
+{
+  "language_code": "de",
+  "audio_url": "https://cloud.inlupus.at/s/zyfDGij9ToPiy39/download/ep149_recsys.mp3",
+  "punctuate": true,
+  "format_text": true,
+  "dual_channel": false,
+  "multichannel": null,
+  "audio_channels": null,
+  "webhook_url": null,
+  "webhook_auth_header_name": null,
+  "webhook_auth_header_value": null,
+  "audio_start_from": null,
+  "audio_end_at": null,
+  "word_boost": [],
+  "boost_param": null,
+  "filter_profanity": false,
+  "redact_pii": false,
+  "redact_pii_audio": false,
+  "redact_pii_audio_quality": null,
+  "redact_pii_policies": null,
+  "redact_pii_sub": null,
+  "speaker_labels": true,
+  "speakers_expected": 3,
+  "content_safety": false,
+  "content_safety_confidence": null,
+  "iab_categories": false,
+  "custom_spelling": null,
+  "disfluencies": false,
+  "sentiment_analysis": false,
+  "auto_chapters": false,
+  "entity_detection": false,
+  "summarization": false,
+  "summary_model": null,
+  "summary_type": null,
+  "auto_highlights": false,
+  "language_detection": false,
+  "language_confidence_threshold": null,
+  "language_confidence": null,
+  "speech_threshold": null,
+  "speech_model": null,
+  "id": "40973247-7bc2-4c1f-b99b-17f2356e8a0d",
+  "status": "completed",
+  "error": null,
+  "utterances": [
+    {
+      "text": "Willkommen zu einer weiteren Episode vom Engineering Kiosk, deinem deutschsprachigen Softwareentwicklungspodcast. Moderne Empfehlungsalgorithmen begegnen uns im Alltag überall. Die nächste Serie bei Netflix, die für dich zusammengestellte Playlist bei Spotify oder Kunden, die diesen Artikel gekauft haben, kauften auch bei Amazon. In Zeiten von AI könnten wir meinen, dass dies alles schwarze Magie ist. Zweitausendein. Doch in der Regel folgen diese Empfehlungen gewissen Logiken. All das Ganze wird im Research Bereich Recommender Systems genannt. Dies ist auch das Thema dieser Episode. Eva Zangerle, Expertin im Bereich Recommender Systems, erklärt uns, was recommender Systems eigentlich sind, welche grundlegenden Ansätze für Empfehlungsalgorithmen existieren, wie viele Daten benötigt werden, um sinnvolle Ergebnisse zu erzielen, was das Cold Start Problem ist, wie Forscher evaluieren können, ob es gute oder schlechte Empfehlungen sind, was die Begriffe Recall und Precision eigentlich bedeuten, ob Empfehlungsalgorithmen auch einen gewissen Bias entwickeln können, sowie welche Trends auf dem Forschungsgebiet zurzeit aktuell sind. Wir legen los. Viel Spaß.",
+      "start": 4120,
+      "end": 69780,
+      "confidence": 0.91828096,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Anné, du bist ja Netflix Hardcore User, oder?",
+      "start": 75520,
+      "end": 78088,
+      "confidence": 0.78520626,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Ich würde gerne mehr Netflix schauen, als ich es wirklich tue.",
+      "start": 78224,
+      "end": 81688,
+      "confidence": 0.8816764,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Aber du investierst die ganze Zeit in unseren Podcast. Das finde ich sehr löblich.",
+      "start": 81744,
+      "end": 85164,
+      "confidence": 0.95115143,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Und oft läuft nebenbei Second Screen Generation irgendwas auf Netflix. Das ist korrekt.",
+      "start": 85272,
+      "end": 89916,
+      "confidence": 0.89452,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Wofür ist Netflix bekannt deiner Meinung nach?",
+      "start": 89948,
+      "end": 92068,
+      "confidence": 0.9854657,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Dass sie die Videotheken verdrängt haben und vielleicht im Engineering Sektor für Chaos Testing und Monkey testing und solche Geschichten.",
+      "start": 92164,
+      "end": 99092,
+      "confidence": 0.879574,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Man sieht schon, du bist viel zu weit in dem ganzen DevOps Zeug drinnen. Und genau darum brauchen wir diese Episode, damit du mal was sinnvolles lernst, warum Netflix eigentlich so bekannt wurde, weil die sind ja sehr bekannt, dass sie sehr stark mit Daten arbeiten und auch ein sehr gutes recommender System im Hintergrund haben. Und genau darum soll es in dieser Episode auch gehen. Und du weißt ja, ich habe viel Zeit meines Lebens mit recommender Systems verbracht, wie noch an der Uni war. Aber es gibt natürlich Leute, die haben noch mehr Zeit damit verbracht. Und genau so eine Person haben wir heute bei uns in der Episode. Hi Eva.",
+      "start": 99116,
+      "end": 130264,
+      "confidence": 0.95808107,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Hi.",
+      "start": 130352,
+      "end": 130980,
+      "confidence": 0.74933,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Ich habe mich gerade gefragt, wie viele Leute es auf der Welt gibt, die sich länger mit dem Thema Recommender Systems als du beschäftigt hast, weil allein dein Dr. Hat ja 10 Jahre bzw. Etwas über 10 Jahre gedauert. Ich vergleiche das gerade so ein bisschen mit wenn wenn ein Mensch irgendwie 25 Minuten benötigt, um 5 km laufen zu können, dann ist man besser als 90 % der Menschheit. Solche Vergleiche kennt man ja immer mit Gewichtheben und so weiter. Und ich glaube, diesen Vergleich kann man auch mit deinen 10 Jahren an der Uni für deinen Doktortitel zum Thema Recommender Systems anlegen, oder?",
+      "start": 131280,
+      "end": 164580,
+      "confidence": 0.9000554,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Zu meiner Verteidigung, die letzten zwei Jahre von meinen 10 Jahren habe ich mit dir mehr Zeit verbracht als mit meiner TISS.",
+      "start": 164620,
+      "end": 170492,
+      "confidence": 0.93362594,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Ja, und schau mal, wo du jetzt bist, hättest du mal davor die Acht ebenfalls damit verbracht. Aber wie dem auch sei, wir sprechen unter anderem indirekt gerade auch über die Universität Innsbruck, wo der Wolfgang unter anderem seinen Doktortitel gemacht hat und die Eva, die ist ebenfalls an der Universität Innsbruck aktiv und deswegen, Wolfgang und Eva kennen sich bereits seit einigen Jahren, ich für meinen Teil kenne Eva noch nicht, deswegen habe ich etwas Recherche betrieben und ich möchte allen Hörerinnen und Hörern Eva jetzt mal ganz kurz zweitausendein vorstellen und warum sie etwas zum Thema Recommander Systems erzählen kann. Eva, du bist Professorin an der Uni Innsbruck mit dem Forschungsschwerpunkt recommender Systems und da im ganz speziellen im Bereich Music Recommender Systems, Evaluierung von Recommender Systems. Und ich weiß nicht warum, aber du hast sehr, sehr viel Zeit mit den Daten von Twitter verbracht und hast.",
+      "start": 170676,
+      "end": 221428,
+      "confidence": 0.9277694,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Moment, es heißt Ex Andi, ehemals Twitter, du bist ja Elon Fan, oder?",
+      "start": 221484,
+      "end": 226444,
+      "confidence": 0.7549315,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Solange Twitter Com noch auf XCOM redirected, nenne ich das Twitter. Aber du hast wissenschaftliche Paper unter anderem zu den Bereichen Hate Speech und Fake News Spreader veröffentlicht. Du hast untersucht, wie Wikipedia auf Twitter verwendet wird, du hast eine real time Twitter Sentiment Klassification gemacht. Sentiment Analyse ist so viel ich weiß, die Bewertung, ob etwas positiv oder negativ gemeint ist, also stimmungstechnisch. Und du hast dich über Anwendungsfälle beschäftigt, wie man gehackte Twitter Accounts erkennen kann beziehungsweise analysieren kann. Das sind nur einige deiner Research Ergebnisse zum Thema Recommender Systems, die alle mit.",
+      "start": 226572,
+      "end": 269740,
+      "confidence": 0.9036395,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Recommender Systemen zu tun haben.",
+      "start": 269860,
+      "end": 271840,
+      "confidence": 0.877768,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Dann siehst du, so wenig Ahnung habe ich von dem Thema, aber ich habe meine Recherche auf Google Scholar gemacht, sagen wir es mal so. Wenn man dich aber mal googelt, dann kommt man relativ schnell auf LinkedIn und da sieht man, dass du deinem Leben der Forschung gewidmet hast, denn allein in 2024 warst du Autorin bzw. Co Autoren von 12 wissenschaftlichen Papern, was schon sportlich ist, weil wir haben gerade Oktober, wir nehmen im Oktober 24 auf, das bedeutet über ein Paper pro Monat veröffentlicht. Respekt, Respekt. Und dann liest man sich durch dein Login Profil Bachelor, Master, PhD, Habilitierung und jetzt Professorin. Und ich musste erst mal googeln, was eine Habilitation ist, für alle, die es nicht wissen, weil ich komme ja nicht aus dem akademischen Bereich, die Habilitation dient als Nachweis der Befähigung zur selbstständigen Forschung und Lehre in einem Fachgebiet. Gratulation dazu erstmal. Aber dann suche ich natürlich immer noch nach dem Gewissen etwas. Wenn man so eine Bilderbuchkarriere auf LinkedIn veröffentlicht, dann verschweigt man immer gerne was. Und zwar guckt man dann weiter und dann schaut man sich deine Masterarbeit an. Und in deiner Masterarbeit, da gibt es das Manko, dass der Wolfgang daran mitgeschrieben hat. Wie kam es denn dazu?",
+      "start": 272940,
+      "end": 342386,
+      "confidence": 0.9069552,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Und trotzdem hat es gut funktioniert mit der Karriere.",
+      "start": 342458,
+      "end": 345250,
+      "confidence": 0.89495444,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Andy unter der Hand haben wir diese Masterarbeit als Projekt Weltfrieden verkauft.",
+      "start": 345290,
+      "end": 350466,
+      "confidence": 0.89086586,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Hat nicht ganz funktioniert.",
+      "start": 350578,
+      "end": 351818,
+      "confidence": 0.953605,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Zweitausendein na leider.",
+      "start": 351874,
+      "end": 353008,
+      "confidence": 0.73139,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Was ist ein Projekt Weltfrieden?",
+      "start": 353104,
+      "end": 355060,
+      "confidence": 0.804402,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Wir haben große Ziele gehabt.",
+      "start": 356840,
+      "end": 358660,
+      "confidence": 0.960512,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Es ging ums Wissensmanagement und damit die Welt mehr Wissen am Ende dann hat. Darum Weltfrieden.",
+      "start": 359040,
+      "end": 365008,
+      "confidence": 0.9477694,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Verstehe.",
+      "start": 365144,
+      "end": 365704,
+      "confidence": 0.61956,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Er hatte schon immer große Ziele.",
+      "start": 365752,
+      "end": 367424,
+      "confidence": 0.9094667,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Zurück zum Thema Recommender Systems. Du kommst gerade frisch aus Italien von der Rexis, von einer der größten bzw. Die größte Konferenz zu recommender Systems. Wie war es?",
+      "start": 367512,
+      "end": 375952,
+      "confidence": 0.8482089,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Es war spannend und es war schön, alte Kollegen immer wieder zu treffen, so wie dieses Jahr auch. Und sich einfach mal zu informieren, was neu ist, was gerade trendet und wo die Richtung hingeht, in zumindest die Forschungsrichtung hingeht im Bereich recommender System.",
+      "start": 376016,
+      "end": 390330,
+      "confidence": 0.93850297,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Wie groß ist die recommender Systems Community? Also ist das eher so ein kleines Klassentreffen oder hat man jedes Jahr bei der Rexess Konferenz immer wieder neue Gesichter und die spannende neue Erkenntnisse präsentieren?",
+      "start": 390410,
+      "end": 401458,
+      "confidence": 0.9019447,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Die Rexess ist eigentlich eine relativ große Konferenz. Ich glaube, heuer waren es 900 Leute vor Ort und 250 online. Und was, glaube ich, ganz speziell bei der Rexess ist, ist, dass es eine sehr industriegetriebene Konferenz ist. Also das sind ganz viele Industrieleute auch dort und nicht nur ein rein akademisches Klassentrend.",
+      "start": 461554,
+      "end": 479734,
+      "confidence": 0.86942583,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Wenn du von Industrie sprichst, von welchen Industrien sprechen wir da? Ich sag mal im Bereich Recommender Systems, also Industrie, ich komme aus Duisburg, das bedeutet Stahlindustrie, Kohleindustrie. Haben die auch was mit recommender Systems zu tun oder sprechen wir eigentlich nur von der Tech Industrie, von Netflix? Zweitausendein? Wie Wolfgang Mintra erwähnt hat, wir sprechen.",
+      "start": 479822,
+      "end": 496076,
+      "confidence": 0.87858427,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Hauptsächlich von der tech Industrie, wobei ich gerade letzte Woche auf der Rexis gelernt habe, dass es ganz, ganz viele weitere Anwendungsfelder gibt, auf die man nicht kommen würde. Beispielsweise Düngerempfehlungen im Agrarbereich beispielsweise.",
+      "start": 496228,
+      "end": 511120,
+      "confidence": 0.8592768,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Jetzt hast du Andi schon eingekauft mit Dünger und Agrar. Ist Andi jetzt schon dabei? Jetzt interessiert Andi das plötzlich auch.",
+      "start": 511660,
+      "end": 519280,
+      "confidence": 0.9184033,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "So, jetzt sprechen wir mal wie hat.",
+      "start": 519680,
+      "end": 521544,
+      "confidence": 0.8357557,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Sich deiner Meinung nach so das ganze entwickelt? Weil ich kann mir erinnern, wir waren mal 2010 in Barcelona auf der auf der Rexis und das war ja sehr klein und überschaubar. Also ich schätze mal, das waren irgendwie so 200 Leute oder so damals oder vielleicht 300 Leute, aber sehr klein. Und dann ist das ganze ja ziemlich explodiert zu der Größe, wo es jetzt steht. Besteht der Trend noch weiter oder kommt jetzt die Genei um die Ecke und macht dem ganzen Gebiet Probleme? Oder wie siehst du den den Trend aktuell?",
+      "start": 521552,
+      "end": 552172,
+      "confidence": 0.9004989,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Aktuell ist es so, dass man schon damit rechnet, dass es noch weiter wächst und Gen AI nicht als Konkurrent sieht, sondern eher als eine weitere Methode, die man sich zunutze machen kann. Also das ist jetzt nicht Konkurrenz in dem Sinne.",
+      "start": 552276,
+      "end": 565980,
+      "confidence": 0.8700481,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Dann fangen wir mal eigentlich ganz unten an bei Recommender Systems. Was denn Recommender Systems eigentlich sind und wo sie sich vielleicht auch zu Jens abgrenzen oder eben wo das vielleicht dann auch eher in die Genei oder AI Richtung geht. Aber was macht denn Recommander System eigentlich aus? Oder wo werden recommender Systems eingesetzt und was machen die eigentlich?",
+      "start": 566060,
+      "end": 586007,
+      "confidence": 0.9081785,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Ganz breit gesprochen ist ein recommender System ein System, das Empfehlungen für beliebige Produkte abgibt. Das kann Musik sein, das können Bücher auf Amazon sein, das können aber auch Personen in einem sozialen Netzwerk sein oder gesunde Rezepte beispielsweise. Der Themenbereich ist ganz, ganz breit gefächert. Und was alle diese Systeme verbindet oder was die gemeinsame Grundlage ist, ist, dass Nutzerpräferenzen analysiert werden und anhand dieser Präferenzen die Empfehlungen berechnen. Personalisierung ist hier das Schlüsselwort. Empfehlungen für Produkte, die maßgeschneidert pro User, Userin oder Nutzergruppen sind.",
+      "start": 586103,
+      "end": 625090,
+      "confidence": 0.92495847,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Also in Andis Variante von Netflix, Andy sitzt auf der Couch am Abend, macht Netflix auf und bekommt dann für ihn personalisierte Filme aus der Agrarindustrie vorgeschlagen.",
+      "start": 625130,
+      "end": 636424,
+      "confidence": 0.8944974,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Genau, weil wir schon bei Netflix sind. Da gibt es Statistiken dazu, dass 67 % aller Inhalte durch Recommendations konsumiert werden oder aufgestöbert werden überhaupt.",
+      "start": 636602,
+      "end": 646564,
+      "confidence": 0.8925396,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Oder jetzt bei Netflix?",
+      "start": 646612,
+      "end": 647652,
+      "confidence": 0.9527725,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Bei Netflix.",
+      "start": 647756,
+      "end": 648452,
+      "confidence": 0.980225,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Also ich ziehe den Trend nach oben, das sage ich dir sofort. Ich gucke fast nur, was mir empfohlen wird. Aber du hast ja das schon angesprochen. Das bedeutet, wir sprechen eigentlich von Kunden, die diesen Artikel gekauft haben, kauften auch. Oder von meinem Spotify Release Radar oder all sowas, oder?",
+      "start": 648516,
+      "end": 665072,
+      "confidence": 0.8966204,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Ganz genau. Also Kunden, die X gekauft haben, haben auch Y gekauft. Personalisierte Playlists, alles, was Nutzern und Nutzerinnen hilft, Inhalte, Produkte leichter zu finden und das im allerbesten Fall noch maßgeschneidert anhand ihrer Bedürfnisse. Präferenz.",
+      "start": 665176,
+      "end": 680368,
+      "confidence": 0.9019778,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Okay, und das ist jetzt super coole Magic, die da im Hintergrund abläuft. Aber wie funktioniert das dann auf der technischen Seite?",
+      "start": 680464,
+      "end": 687032,
+      "confidence": 0.92840683,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Auf der technischen Seite ist die Grundannahme eine sehr, sehr einfache. Kunden, die bisher ähnliche Produkte konsumiert haben, werden das auch in Zukunft tun. Das heißt, was der Grundalgorithmus so quasi ist, wir suchen uns ähnliche Nutzer und anhand deren ihren Verhalten leiten wir die Empfehlungen ab.",
+      "start": 687136,
+      "end": 705892,
+      "confidence": 0.9191387,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Ich kann mir gut vorstellen, das funktioniert bei, ich sag mal, wenn wir jetzt mal von Artikeln von Amazon sprechen, von Artikeln, die man kontinuierlich kauft, Shampoo, Klopapier, Bohrer für eine Bohrmaschine oder ähnliches. Aber es gibt ja auch etliche Use Cases, wo ich einfach nur mal so, ich sag mal, One Off Artikel kaufe, ich hole mir einen Schlagbohrer, eine Schlagbohrmaschine und offen gesprochen, wenn ich den habe, brauche ich in der Regel keine anderen Schlagbohrmaschinen, weil ich habe ja schon eine. Das bedeutet, ist da so eine Limitierung von diesen Empfehlungsalgorithmen oder gibt es dann da wirklich, ich sag mal, so einen Entscheidungsbau mit Ausnahmen?",
+      "start": 706076,
+      "end": 737742,
+      "confidence": 0.90567505,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Ja und nein. Also gerade dieses wiederholte Kaufen, keine Ahnung, das Shampoo kaufst du vielleicht jedes Monat oder jedes zweite Monat, das klingt sehr, sehr einfach, aber es ist immer eine Frage des Timings. Berechnet man oder präsentiert man diese Empfehlungen zum einen und zum Schlagbohrer Beispiel, natürlich macht es dann keinen Sinn, einen zweiten Schlagbohrer in grün zu empfehlen, so wird dieses Produkt nicht konsumiert und gekauft. Aber was natürlich schon Sinn macht, ist Zubehör dazu zu empfehlen. Einen zweiten Akku, keine Ahnung, bei Schlagbohrer kenne ich mir jetzt wirklich nicht allzu gut aus, was da Zubehör ist, aber das ist genauso Teil von den Recommendations.",
+      "start": 737846,
+      "end": 777214,
+      "confidence": 0.9291332,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Wer übrigens glaubt, dass das sehr einfach ist, Amazon, die ja eigentlich schon als Marktführer gelten diesbezüglich auch und begonnen haben mit den recommender Systems. Ich kann mich nur erinnern, vor wenigen Jahren habe ich E Mail mit Vorschlägen bekommen, ich könnte mir noch einen Akkuschrauber kaufen, weil ich drei Tage davor einen Akkuschrauber gekauft habe und dann wurden mir Akkuschrauber von anderen Firmen vorgestellt. Also absolut sinnlos. Und das war wirklich von vor ein paar Jahren noch. Mittlerweile bekomme ich keine Newsletter mehr, keine Ahnung, ich hoffe, sie haben das gefixt, aber es ist schwieriger, als man denkt eigentlich.",
+      "start": 777262,
+      "end": 807838,
+      "confidence": 0.9072575,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Zweitausendein. Also ich meine genau das Beispiel, Wolfgang, was du jetzt gerade beschrieben hast, bekomme ich von anderen Shops, wo ich eine Schlagbohrmaschine vor kurzem gekauft habe. Dann hat er mir letzte Woche eine E Mail geschrieben oder automatisiert im Newsletter, hey, dieser Schlagbohrer ist im Angebot. Ich sage, ich habe doch gerade jetzt einen gekauft. Aber das bedeutet ja eigentlich, um nicht solche doofen Vorschläge zu machen, dass diese Zubehör Artikel, Bohrer, Akkus von der Schlagbohrmaschine ja eigentlich irgendeine, ich sag mal, Verbindung, Relation zu dem Schlagbohrer haben müssten, oder? Denn so wie ich einen normalen E Commerce Shop kenne, du legst Artikel an und die Artikel haben Attribute und allem drum und dran, aber in der Regel wird ja in der Datenbank, zumindest vom Redakteur nicht hinterlegt, dieser Bohrer passt auf diese Schlagbohrmaschine, sondern das steht irgendwo in der Beschreibung dann, oder auf Basis der Größe des Bohrkopfes oder was weiß der Geier. Also ich meine, wie funktioniert das denn dann, dass man sagen kann, hey, du hast diesen Schlagbohrer gekauft, kauf doch auch mal diesen Bohrer.",
+      "start": 807854,
+      "end": 866068,
+      "confidence": 0.91868037,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Da gibt es zwei Sachen, die man dazu, glaube ich, dazu sagen sollte. Zum einen natürlich ist, klingt es so einfach, wenn man sagt, na gut, man hat ja Kategoriesystem. Der zweite Akku, das ist Zubehör zu dieser Schlagbohrmaschine. Wir haben eine gewisse Kategorisierung, die wird allerdings in der Wirklichkeit ganz oft nicht verwendet, klassischerweise in Empfehlungssystemen, recommender Systemen. Die Empfehlungen an sich werden hauptsächlich auf den Interaktionsdaten berechnet. Interaktionsdaten sind, der Kunde x hat Produkt Y gekauft, konsumiert also wirklich nur dieses true false, ist konsumiert worden, ja oder nein. Auch auf diesen Daten kann man berechnen, ist vermutlich ein Zubehör, weil das wird ganz oft gemeinsam gekauft, dieses Co Purchasing Behavior. Wenn jemand ein neues Handy kauft, dann kauft man ganz oft eine Hülle dazu und diese Displayschutzfolien beispielsweise, ohne zu wissen, dass das Zubehör ist, ohne zu wissen, dass das passend ist, rein aufgrund dieses Co Purchasing Behaviours. Also ich brauche diese Kategoriedaten nicht zwingend, wenn wir davon ausgehen, dass andere Kunden das korrekt zusammengekauft haben und das zusammenpasst quasi. Das macht man sich da hauptsächlich.",
+      "start": 866124,
+      "end": 935160,
+      "confidence": 0.88638735,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Und wie funktioniert das auf der technischen Seite? Also wie wird es dann wirklich technisch abgebildet, dass man den Zusammenhang zwischen Bohrkopf und Bohrmaschine und so weiter. Oder Filme, wenn wir auf Netflix gehen, wenn ihr jetzt Harry Potter geschaut habt, dass ich dann eben auch Herr der Ringe vorgeschlagen bekomme. Also wie werden die Connections wirklich abgebildet?",
+      "start": 935340,
+      "end": 955720,
+      "confidence": 0.9169693,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Die zugrunde liegende, sagen wir mal, Datenstruktur ist wirklich eine Matrix. Auf der einen Achse haben wir alle Produkte, Harry Potter, Herr der Ringe und alle Ÿousand, anderen 3000 Filme, die es auf Netflix z.B. gibt. Und auf der anderen Achse haben wir alle User. In der Matrix steht dann null, falls der Film nicht geschaut wurde, vollständig geschaut wurde und eins, falls das der Fall war. Was wir dann suchen, sind eben ähnliche Nutzer, Nutzerinnen, indem wir einfach die zwei Vektoren, die sich hier durch den Nutzer oder über den Nutzer ergeben, vergleichen. Und da suchen wir uns die klassischerweise dreiig ähnlichsten Nutzer raus. Und welche Filme haben diese dreiig Nutzer gesehen? Die, die der aktuelle Nutzer noch gar nicht gesehen hat. Die ranke ich dann nach Relevanz und das wird dann vorgeschlagen.",
+      "start": 955800,
+      "end": 1001274,
+      "confidence": 0.9246578,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Und wenn ich die ähnlichen User suche, dann wird da jetzt nicht nur ein Film mit einbezogen, sondern alle Filme, die ich bisher gesehen habe.",
+      "start": 1001322,
+      "end": 1008114,
+      "confidence": 0.9048056,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Alle. Also die komplette Historie. Man nutzt ja wirklich alle Daten, die man hat. Natürlich könnte man jetzt argumentieren, naja, der Film, den ich vor 15 Jahren geschaut habe, hat vielleicht nicht so viel Relevanz für mein aktuelles Verhalten und meine aktuellen Präferenzen, wie jener, den ich vor drei Tagen gesehen habe. Also da gibt es natürlich schon eine gewisse Gewichtung, aber das klassische Modell ist jetzt wirklich, wir suchen die ähnlichsten Nutzer und schauen, was hier neu ist und vorgeschlagen werden kann. Und dieser Algorithmus läuft eben hauptsächlich unter dem Namen Collaborative Filtering. Das ist bis heute eigentlich der weit verbreitetste Ansatz für Empfehlungen.",
+      "start": 1008202,
+      "end": 1043030,
+      "confidence": 0.9255135,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Da sprechen wir aber jetzt nicht von irgendwelchen komplexen KI Modellen oder sonst was. Das ist wirklich, wie man sich so vorstellt, eine große Matrix, eine große Tabelle, Spalten und Zeilen. Und dann kommen natürlich im Nachhinein noch Algorithmen drauf, die die verwerten, aber man kann das auch relativ naiv und tum lösen und ähnliche User suchen.",
+      "start": 1043110,
+      "end": 1060800,
+      "confidence": 0.91183454,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Ja, also in meinem recommender Systems Kurs hier an der Uni programmieren die Studierenden das from scratch, aber man kann collaborative Filtering auch mit mit deep learning lösen. Also Der Task bleibt ja der gleiche. Und die Grundhypothese, die Grundannahme, dass eben Nutzer, die bisher ähnlich gehandelt haben, auch.",
+      "start": 1060920,
+      "end": 1078672,
+      "confidence": 0.90247285,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "In Zukunft ähnlich handeln werden, bedeutet natürlich jetzt aber auch, du sagst gerade okay, man sucht ähnliche Nutzer, ich schlussfolgere, das ist so, ich sag mal in Anführungszeichen die kollektive Intelligenz. Die Maße ist jetzt aber leider immer nicht immer schlau. Das bedeutet, es werden auch ein paar implizite Annahmen getroffen, wie z.B. dass diesen diesen User, das wirklich nur von einem Menschen oder beziehungsweise von einer Menschengruppe, die alle nur auf Actionfilme steht oder ähnliches guckt. Und das ist kein, ich sag mal bei Streamingdiensten kein Account Sharing stattfindet. Das bedeutet, wenn ich jetzt Kinder habe, ich gucke immer Actionfilme und ich habe keine Kinder, aber meine Tochter wird dann Paw Patrol gucken, dann Paw Patrol ist vielleicht auch actionreich, aber das passt da nicht zusammen. Oder genauso wie Spotify, wenn man im Auto unterwegs ist mit der Familie, dann hört man vielleicht andere Musik als privat und das ist ja, ich sag mal ähnlich wie bei AI, dieses, ja, ich weiß nicht, ob ich davon Bias oder Chaos reden kann, aber das bedeutet, die implizite Annahme ist eigentlich, dass man ein durchgehendes Userprofil hat und kein user sharing, oder?",
+      "start": 1078696,
+      "end": 1141970,
+      "confidence": 0.8994557,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Also ihr habt Spotify und Kinder und das wirklich schwierig offenbar. Paw Patrol ist jetzt auch nicht auf meiner Liste ganz oben, aber das Problem ist, bei Musik im speziellen ist es ja ganz oft so, dass wir vielleicht verschiedene Musik in verschiedenen Kontexten hören. Im Büro höre ich vielleicht Klassik, weil mich da besser konzentrieren kann, daheim höre vielleicht Hard Rock. Auch das wäre so könnte ein vermutetes Account Sharing sein. Also das ist glaube ich, ganz, ganz schwer zu trennen und das macht für recommender Systeme das Leben sehr, sehr schwer. Da kommt, finde ich, auch die große Challenge bei Musikempfehlung rein, nämlich in welchem Kontext hören wir die Musik? Weil genau davon ist abhängig, welche Musik wir gerade als welche Empfehlungen wir als passend empfinden und welche wir als komplett unpassend. Also das ist bis heute eine sehr große Challenge, dieses was macht der Nutzer, die Nutzerin, wie fühlen sie sich? Wozu soll die Musik verwendet werden, um runterzukommen, um sich so ein bisschen zu motivieren, sich abzulenken? Das ist wirklich ein sehr, sehr schwieriges Problem im Musikbereich. Da ist das Trennen von Paw Patrol und Hard Rock vielleicht nur das einfachste Beispiel ist, das wir heranziehen können.",
+      "start": 1142630,
+      "end": 1210986,
+      "confidence": 0.8875152,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Gibt es denn im Bereich recommender Systems irgend so eine Art, wie soll ich das jetzt sagen, Modell zur Bereinigung eines User Profiles, um genau solche Mixed Profiles wie Hard Rock und Paw Patrol zu erkennen? Oder sagt man okay, das ist einfach jetzt kein klares User Profil, weil dieser dieser Mix, dieser Spagat zwischen Paw Patrol und Hard Rock ist ja schon kompliziert für einen Computer, der jetzt nicht mit AI und allem drum und dran agiert.",
+      "start": 1211058,
+      "end": 1236950,
+      "confidence": 0.90813065,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Wenn man das klassische collaborative Filtering heranzieht, dann gibt es vermutlich ähnliche Nutzer, die auch Rock und Paw Patrol hören und die sind dann ähnlich genug, damit die Empfehlungen ableiten kann. Es gibt allerdings auch andere Empfehlungsansätze, sogenannte content based Ansätze, wo wir eben ein explizites Nutzerprofil erstellen, wo wir sagen okay, der Nutzer hört, wenn wir es jetzt aufs Genre runterbrechen, Rock Music beispielsweise und dann wird es wirklich problematisch, was das anbelangt, weil wie macht man ein Nutzerprofil? Das ist sowas wie der Durchschnitt über die bisher gehörte Musik. Der Durchschnitt aus Paw Patrol und Rock ist halt dann wirklich schwierig mit anderer Musik zu matchen was wir da mal versucht haben, ist das Ganze über mehrere überlappende Nutzerprofile zu modellieren, um da mehr Detail reinzubekommen in diese Nutzerprofile. Die Nutzerprofile sind klassisch immer noch sehr, sehr einfach gestrickt.",
+      "start": 1237110,
+      "end": 1292250,
+      "confidence": 0.89107156,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Jetzt hast du schon ein paar mal kurz Kontext erwähnt, kontextuelle recommender Systems. Wie weit spielt der Kontext da eine Rolle oder was ist der Kontext eigentlich?",
+      "start": 1292330,
+      "end": 1302570,
+      "confidence": 0.8989822,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Es gibt mehrere Definitionen zu Kontext. Die, die mir am besten gefällt, ist die alles außerhalb der Nutzer, der User Item Matrix, dieser null und eins Matrix, die man klassischerweise verwendet. Alles andere ist Kontext. Das kann sein Daten zum Nutzer, Demographie beispielsweise, Location Situation, mit wem höre die.",
+      "start": 1303030,
+      "end": 1322518,
+      "confidence": 0.89626795,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Musik, vielleicht TT Location wäre dann, wie du jetzt erwähnt hast, im Büro hörst du Klassik und daheim hast du Rock. Also das Handy checkt die Location und kann dadurch dann auch zusätzlich ableiten, in welcher Situation du dich vermutlich gerade befindest.",
+      "start": 1322534,
+      "end": 1338410,
+      "confidence": 0.9033262,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Wir können da sogar noch rauszoomen, kann auch noch viel, viel höher aggregiert sein und z.B. kulturellen Hintergrund z.B. abgreifen. Das fließt auch ein, wenn man über Musikpräferenzen diskutiert beispielsweise.",
+      "start": 1338570,
+      "end": 1352318,
+      "confidence": 0.91216534,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Wobei der sich ja jetzt selten ändert, also der ist ja bei einem User gleich und die Location wäre in dem Fall etwas, was ich ändern kann. Und dann kann ich vielleicht dann auch eher darauf schließen, in welchem Kontext ich bin und mein user Profile kann dann dementsprechend nur der teilgenommen werden, der halt auch gerade passt von der Location oder.",
+      "start": 1352454,
+      "end": 1369614,
+      "confidence": 0.9107129,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Vom Genre z.B. genau, also die klassischen Kontextvariablen sind eben mehr statischere wie eben kultureller Hintergrund, Sprache beispielsweise. Genauso zu mehr dynamischen mache ich gerade Sport, sitze auf der Couch, sitze im.",
+      "start": 1369702,
+      "end": 1383002,
+      "confidence": 0.89013124,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Auto und wird das jetzt von Spotify wirklich gemacht schon? Also checkt die Spotify App, ob da Andi auf seinem Rudergerät sitzt.",
+      "start": 1383026,
+      "end": 1390330,
+      "confidence": 0.89505684,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Die lassen sich natürlich nur wenig in den Karten schauen, meines Wissens nach.",
+      "start": 1390410,
+      "end": 1394106,
+      "confidence": 0.94715536,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Nein, ich meine bei diesen ganzen Metadaten, wir haben jetzt gerade auch schon gesprochen, ich höre auf der Arbeit Klassik und weiß ich nicht, abends Rock oder vielleicht eher andersrum, wenn das Meeting nicht so toll war. Uhrzeit, Ort, allem drum und dran. Da sind wir aber recht schnell in dem Punkt Pi Data, also persönlich identifizierbare Informationen, weil im Endeffekt habe ich, ich habe mal irgendwo so eine Studie gelesen, dass das FBI oder CIA gesagt hat, habe ich fünf, sechs, sieben dieser Metapunkte, kann ich die Weltbevölkerung auf eine Handvoll Leute oder sowas runterbrechen. Also du brauchst relativ wenig Metadaten dafür. Spielt das auch irgendwie im recommender Systems eine Rolle bzw. Ist das was U hier halten wir mal die Finger weg.",
+      "start": 1394138,
+      "end": 1435946,
+      "confidence": 0.8974867,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Also ich sage jetzt mal im Mainstream Research Bereich ignoriert man das. Also die Nutzerprofile sind ja anonym in den klassischen Datensätzen. Nette Anekdote dazu ist allerdings beim Netflix Preis, das ist so der zündende Funke für eigentlich für Rexis Research gewesen. Die haben das Datenset damals rausgegeben, um diesen Netflix Preis zu veranstalten.",
+      "start": 1436018,
+      "end": 1458310,
+      "confidence": 0.88287127,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Kannst du kurz erklären, was der Netflix Preis ist eigentlich?",
+      "start": 1458350,
+      "end": 1461046,
+      "confidence": 0.906073,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Der Netflix Preis war 2006, als Netflix gerade diesen Umstieg gemacht hat auf nur mehr digital, haben die mit einem recommender System angefangen und und haben den sogenannten Netflix Preis ausgerufen. Das Ziel war, ihre Empfehlungen 10 % genauer zu machen. Und welches das Team, das 10 % genauere Empfehlungen berechnen konnte, hat $1 Million damals bekommen. Das hat sich über zwei Jahre hingezogen. Netflix hat die Daten dazu bereitgestellt, die Evaluationsinfrastruktur und dann schlussendlich diesen Grand Prize, wie sie es genannt haben, ausging. Und da ist im Nachgang dann herausgekommen, dass die Daten eben mit einem gezielten Kombinieren die Privacy nicht mehr aufrechterhalten konnte. Dann ist das Datenset sehr, sehr schnell zurückgezogen worden.",
+      "start": 1461198,
+      "end": 1507838,
+      "confidence": 0.8950831,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Also das war schon das Problem vom Datenset an sich. Also gar nicht jetzt irgendwie mit dem Algorithmus, sondern das Datenset, was Netflix ausgegeben hat, war schon eigentlich nicht mehr gesichert.",
+      "start": 1507894,
+      "end": 1517398,
+      "confidence": 0.9122584,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Korrekt, ja. Aber um zu deiner Frage zurückzukommen, es gibt sehr wohl Research im Bereich von Privacy aware Recommendation Systems, um eben das alles wirklich ganz korrekt ablaufen zu lassen und nicht alle Informationen weiterzugeben, vielleicht auf einem Server speichern zu müssen und so weiter. Also das ist sehr wohl eine der Ecken, wo auch Research betrieben wird.",
+      "start": 1517574,
+      "end": 1538562,
+      "confidence": 0.9143131,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Jetzt kommen wir mal von dem ganzen theoretischen, was es eigentlich ist, was es da auch in der Wissenschaft gibt. Und ich würde sogar sagen, so Netflix und Spotify, die spielen ja auch auf der hohen wissenschaftlichen Ebene eigentlich mit, wenn man Research ÿousand betrachtet, was die so machen. Aber kommen wir mal in die Praxis. Wie baut man denn so ein recommender System auf? Also was was braucht man dazu? Kann ich da als Normalsterblicher oder Andy als Normalsterblicher einfach mal loslegen, wenn ich in einer kleinen Firma bin, 10 Leute, ist es irgendwas, was ich erreichen kann oder muss ich da Spotify sein? Und wie gehe ich da am besten vor?",
+      "start": 1538626,
+      "end": 1571860,
+      "confidence": 0.91150975,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Na, das ist sicherlich in Reichweite. Was man braucht, ist Daten. Das ist mal das Key Ingredient, wenn man so will. Ÿousand Daten im allerbesten Fall Interaktionsdaten, also User, die Produkte kaufen, konsumieren, draufklicken, Klickstreams. Daten sind die Grundlage. Und wenn man jetzt will, was die ersten Schritte wären, ist mal eine Datenanalyse, wie viele Daten habe ich, wie groß ist denn dieses Profil pro Nutzer? Habe ich da zwei Klicks, aber habe ich 200 Klicks pro Nutzer? Wie aussagekräftig ist denn das? Das macht man klassischerweise in so einer ersten Datenanalyse. Und danach ist es in meinen Augen das allerwichtigste, sich mal zu überlegen, was ist denn der Task, was will ich denn erreichen? Was ist das Ziel? Ich bin ein großer Fan davon, einfach anzufangen, mit sehr einfachen und sehr transparenten, verständlichen Algorithmen anzufangen, um mal zu sehen, wie weit komme ich denn? Ist es 3 % genau oder ist es 80 %?",
+      "start": 1572240,
+      "end": 1627514,
+      "confidence": 0.9071958,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Genau, aber wie mache ich das jetzt, wenn du Algorithmen sagst? Also muss ich mir da jetzt durch Wikipedia Seiten durchschlagen oder durch wissenschaftliche Papers und mir dann den Algorithmus zu programmieren? Zweitausendein oder wie kann ich das dann in der Praxis machen?",
+      "start": 1627562,
+      "end": 1640488,
+      "confidence": 0.9032788,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Mittlerweile gibt es einige große Frameworks, beispielsweise von Microsoft oder wir verwenden z.B. rackbowl als Framework.",
+      "start": 1640584,
+      "end": 1648392,
+      "confidence": 0.83613,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Wie heißt das von Microsoft, ohne jetzt Werbung machen zu wollen?",
+      "start": 1648456,
+      "end": 1651376,
+      "confidence": 0.8714627,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Das heißt glaube ich wirklich Recommenders und das ist kostenlos.",
+      "start": 1651568,
+      "end": 1654144,
+      "confidence": 0.791344,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Also wir sprechen davon keine kommerziellen Produkte in dem Fall?",
+      "start": 1654192,
+      "end": 1658056,
+      "confidence": 0.897761,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Nein, das ist Open Source. Microsoft verdient natürlich schon an Geld damit, in dem, dass sie beraten beim deployen und beim skalieren und so weiter. Aber die Library ist open source und da sind natürlich wirklich ganz, ganz viele auch State of the Art Algorithmen fixfertig implementiert. Es gibt aber auch viel einfachere, kleinere, überschaubarere Frameworks, wie z.B. die Surprise Library, so klassische Python Library, wo man mit ein paar Zeilen Code schon relativ weit kommt, um einmal auch ein gewisses Gefühl dafür zu kriegen, was heißt denn das, wie viele Daten brauche ich, was würden denn da so, wie gut funktioniert das.",
+      "start": 1658168,
+      "end": 1694420,
+      "confidence": 0.85861164,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Kudos an die Python Library, die wirklich Surprise heißt und dann für Recommender Systems, also Platz eins für den besten Namen.",
+      "start": 1694500,
+      "end": 1701982,
+      "confidence": 0.91100717,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Jetzt hast du schon gesagt, zu schauen, wie gut das funktioniert. Woher weiß man denn, wie gut das funktioniert? Also gerade in der ganzen Machine Learning Welt ist es ja immer so ein Thema, du kannst es irgendwie ausprobieren, bist aber meistens dann sehr gebirest in deinem persönlichen Umfeld, probierst es selbst mal aus. Ja klar, es funktioniert vielleicht zwei, dreimal, dann rollst du das aus auf hunderte Leute und es funktioniert nicht mehr. Also wie kann man denn da strukturiert vorgehen und das bewerten, ob was funktioniert hat, was man gebaut?",
+      "start": 1702046,
+      "end": 1730242,
+      "confidence": 0.9082345,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Das einfachste Mittel zum evaluieren sind sogenannte Offline Evaluations. Also da nimmt man einfach ein historisches Datenset her, streicht einen Teil davon raus als Testdatenset und versucht es wiederherzustellen. Also könnt ihr die richtigen Lieder beispielsweise recommenden. Jetzt ist es natürlich eine Simulation auf basierenden bisher bestehenden Daten. Das heißt, wir haben noch nie mit einer Nutzerin geredet, das ist wirklich nur Simulation. Aber wir können damit unsere Algorithmen zum einen eine erste Evaluation durchführen und zum anderen natürlich die Algorithmen Tuning.",
+      "start": 1730346,
+      "end": 1765834,
+      "confidence": 0.8940611,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Aber wie funktioniert es, wenn du auf alten Daten lernst und auf alten Daten evaluiert?",
+      "start": 1765882,
+      "end": 1771386,
+      "confidence": 0.903014,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Dazu muss man vielleicht auch dazu sagen, dass bis vor fünf Jahren in etwa die meisten recommender Ansätze, Zeit, zeitlicher Verlauf, verändernde Präferenzen überhaupt nicht berücksichtigt haben. Ein Like eines Videos von 2003 war gleich viel wert wie ein Like von einem Video von 2020. Und was man dann gemacht hat, z.B. auch beim Netflix Preis, ist, man nimmt diese Matrix her, streicht einfach einige Einträge raus und versucht die wiederherzustellen. Das ist eigentlich das, was die klassische offline Evaluation macht. Wir versuchen die Matrix aufzufüllen.",
+      "start": 1771498,
+      "end": 1807786,
+      "confidence": 0.9228087,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Also das heißt, du löscht aktiv ein paar Daten, ein paar alte Daten raus und schaust, ob du die wiederherstellen kannst aus den anderen Daten.",
+      "start": 1807898,
+      "end": 1815634,
+      "confidence": 0.8984776,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Korrekt.",
+      "start": 1815762,
+      "end": 1816266,
+      "confidence": 0.79275,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Aber wenn die Matrix doch dafür da ist, sozusagen dieser Film wurde schon geschaut und dieser Film noch nicht geschaut, wie kann man dann die Daten, die rausgelöscht wurden sind, wiederherstellen? Denn das sind ja Fakten in dem Sinne. Und du versuchst ja diese hervorzusagen, dass man diesen Film schauen sollte.",
+      "start": 1816338,
+      "end": 1834234,
+      "confidence": 0.93148255,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Aber das ist genau das Problem oder die Limitierung, die Einschränkung dieser Art von Evaluation. Nur weil ein Nutzer einen Film noch nicht geschaut hat, heißt es nicht, dass er ihn, auch wenn er ihn schauen würde, trotzdem nicht mögen würde. Das heißt, wir können hier nur die untere Schranke so quasi evaluieren. Vielleicht bist du bisher über diesen Film noch gar nicht drüber gestolpert und hast ihn deshalb nicht geschaut. Das heißt nicht, dass du ihn nicht geliked hättest.",
+      "start": 1834282,
+      "end": 1857302,
+      "confidence": 0.93548185,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Aber deine Frage, Andy, zielte darauf ab, wie kann man die Daten überhaupt wiederherstellen? Wie ist das überhaupt technisch möglich? Seht ihr das richtig?",
+      "start": 1857486,
+      "end": 1863206,
+      "confidence": 0.84721,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Ja, genau. Also ich meine, du hast ja angenommen, du hast die Matrix und angenommen, ich habe 10 Filme geschaut, ja. Und ich lösche da jetzt ein paar Daten raus und auf einmal in der neuen Matrix, in der modifizierten Matrix, habe ich auf einmal nur noch sieben Filme geschaut. Der offline Ansatz ist ja jetzt, ich baue einen Algorithmus und versuche die drei gelöschten Filme irgendwie wiederherzustellen, dass sie auf jeden Fall in der Matrix auftauchen. Aber den Wert geschaut oder nicht geschaut, den kann das recommender System Algorithmus ja nicht wiederherstellen, weil das ist ja ein Fakt, den, den der Empfehlungsalgorithmus nicht hat. Der Empfehlungsalgorithmus zielt ja darauf ab, mir einen neuen Film, den ich womöglich zuschauen habe, vorzuschlagen. Verstehe ich das richtig?",
+      "start": 1863358,
+      "end": 1898574,
+      "confidence": 0.8988943,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Ja und nein. Du nimmst deine 10 Filme her und die 3725, die du nicht geschaut hast und nimmst, sagen wir mal 10 % wahllos raus dieser Einträge. Einsen und Nullen oder eins bis fünf Sterne kann das übrigens auch sein, also Bewertungen. Und die Matrix, nachdem du das rausgenommen hast, ist der Input für dein Empfehlungssystem. Dein Empfehlungssystem rechnet die Empfehlungen raus und dann vergleichst du die Einträge in der Matrix, das das Empfehlungssystem berechnet hat. Z.B. dieser was weiß Harry Potter, haben wir mit 0,8 berechnet. Und dann vergleichen wir das mit dem, was mit dem ursprünglichen, mit dem rausgenommenen. Und das ist eins.",
+      "start": 1898662,
+      "end": 1936704,
+      "confidence": 0.90197295,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Also 0,8 heißt, die Wahrscheinlichkeit ist 80 %, dass du den Film gut findest.",
+      "start": 1936792,
+      "end": 1942568,
+      "confidence": 0.79358286,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Ja. Oder wir predikten, dass du den mit 0,8 raten würdest, wenn man so will.",
+      "start": 1942704,
+      "end": 1948784,
+      "confidence": 0.941666,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "0,8 wären dann beim Raten. Nehmen wir mal wieder die Sterne. Bei fünf Sterne wären es 80 %, wären es vier Sterne.",
+      "start": 1948832,
+      "end": 1953860,
+      "confidence": 0.85209274,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Korrekt.",
+      "start": 1953940,
+      "end": 1954348,
+      "confidence": 0.5835,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Okay.",
+      "start": 1954404,
+      "end": 1954772,
+      "confidence": 0.54701,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Klassischerweise alles über 0,5 wäre ja, ist relevant.",
+      "start": 1954836,
+      "end": 1959220,
+      "confidence": 0.8768225,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Und umso näher du an die ursprüngliche Matrix dran kommst, umso besser ist dein recommender System.",
+      "start": 1959340,
+      "end": 1964036,
+      "confidence": 0.88443,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Genau, das war so vor allem in den ersten Zeiten von Empfehlungssystemen war genau der Kerntask, diese Matrix wiederherzustellen. Matrix Completion war der Task. Das wurde dann evaluiert, indem wir verglichen haben, was war das ursprüngliche Rating und was wurde vom Algorithmus berechnet. 0,2 wäre jetzt da die Diskrepanz zwischen eins und 0,8, also der Fehler in der Prediction. Das ist das, was wir ursprünglich verwendet haben, um zu evaluieren, wie gut ein Empfehlungssystem funktioniert.",
+      "start": 1964148,
+      "end": 1994124,
+      "confidence": 0.90619385,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Jetzt hast du offline beschrieben. Wenn es offline gibt, gibt es auch online.",
+      "start": 1994172,
+      "end": 1997720,
+      "confidence": 0.9369915,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Es ist so ein Dreigespann, wenn man so will. Offline ist immer das erste, was man macht, einfach wie gesagt, um ein Gefühl zu bekommen. Und wenn man dann die Möglichkeit hat, seinen Algorithmus zu deployen auf einem System, wo Nutzer das Ganze auch verwenden können, dann kann man z.b. eine user study machen, wo man Nutzer und Nutzerinnen aktiv einlädt, hier beizutragen, wo man den Nutzerinnen einen Task gibt. Browse mal durch den Katalog und schau, wie gut gefallen dir diese und jene Empfehlungen. Vielleicht mit einem etwas detaillierteren Fragebogen. Die sind aber ständig unter Beobachtung. Also das ist eine sehr, ein sehr limitiertes Environment. Und dann gibt es noch wirklich das klassische Online testing, A b testing, wo man wirklich den Algorithmus online deployed und echten, echten Nutzern zur Verfügung stellt, die vielleicht sogar gar nicht wissen, dass am Algorithmus was geändert ist und dann über z.B. diverse Recordings von Nutzerbehavior Rückschlüsse auf den Algorithmus gezogen.",
+      "start": 1998380,
+      "end": 2056770,
+      "confidence": 0.89905167,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Gibt es bezüglich der Datenanzahl, die vorliegen muss, irgendein Referenzwert, dass man sagen kann, also ich kann mir jetzt nicht vorstellen, dass ich auf Basis von 20 Filmen, 10 davon habe ich geschaut, 10 nicht einen Empfehlungsalgorithmus schreiben kann. Also kann ich bestimmt, aber das Ergebnis sei denke ich mal fragwürdig. Wie viele Daten sind viel Daten? Das ist vielleicht meine Frage. Kann man da, ich weiß, dass man allgemein nicht so sagen kann, aber kann man da irgendwie einen Richtwert nennen?",
+      "start": 2056850,
+      "end": 2079118,
+      "confidence": 0.8952601,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Man kann es allgemein wirklich nicht sagen, weil es davon abhängt, wie viele Nutzer und wie viele Items zur Verfügung stehen. Was ich aber schon sagen kann ist, dass bei allen großen Datensätze die sogenannte Sparsity, also die Anzahl der nicht bekannten Einträge 99,9 und sonst noch was prozents. Also es ist sehr üblich, dass nur wenige dieser Einträge wirklich gefüllt sind. Nimm mal Spotify her, die haben 100 Millionen Songs und überleg mal, wie viele Songs du davon schon gehört hast. Das sind Bruchteile davon. Also es ist sehr üblich, dass die Profile sehr wenig gefüllt sind. Und genau dazu gibt es wirklich auch spezielle Algorithmen, die basierend auf dem Collaborative Filtering arbeiten, die mit diesen sparsen Daten wirklich gut umgehen. Aber es gibt jetzt keine rule of thumb, du brauchst dreiig Einträge pro Nutzung, damit es gut funktioniert.",
+      "start": 2079214,
+      "end": 2126758,
+      "confidence": 0.9109675,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Aber ist nicht genau die Datenverfügbarkeit bei jedem neuen Service wie Netflix, wie Spotify initial dann ein Riesenproblem? Weil ich meine, ein Social Network z.B. funktioniert auch sehr gut, wenn ich mich registriere und meine Timeline ist schon gefüllt und ich sehe schon was dieser Netzwerkeffekt und dann dann bekomme ich Leute vorgeschlagen, den ich anscheinend folgen möchte und so, ich sag mal, kriegt das Social Network halt seinen sozialen Netzwerk Effekt und bei Netflix und so weiter registriere ich mich neu oder ich bin kein Disney Plus Kunde. So fangen wir da an. Ich registriere mich bei Disney Plus. So und mein Profil ist leer.",
+      "start": 2126894,
+      "end": 2159272,
+      "confidence": 0.9317566,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Dir würde ich sofort Schneewittchen vorschlagen, einfach.",
+      "start": 2159376,
+      "end": 2162208,
+      "confidence": 0.83402854,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Also wenn die klug sind, schlagen die mir Marvel vor und dann bin ich lost. Aber ist das nicht genau ein Problem, weil die Datenbasis zu meinem User Profil ist ja nicht da. Und ein Item basierte Recommendation können sie zwar machen, aber es gibt ja noch keine Items, die ich geguckt habe.",
+      "start": 2162304,
+      "end": 2176298,
+      "confidence": 0.9181032,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Das nennt man das sogenannte Cold Start Problem, dass man eben neue Items oder neue Nutzer hat, über die man nichts weiß. Mit dem geht man klassischerweise folgendermaßen man verwendet einen unpersonalisierten Empfehlungsalgorithmus und versucht den Nutzer Präferenzen zu entlocken. Unpersonalisiert wäre z.B. most popular, also die meist geschauten Videos der letzten Woche beispielsweise, des letzten Monats oder generell die populärsten Videos.",
+      "start": 2176394,
+      "end": 2201468,
+      "confidence": 0.8957447,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Also das ist genau das, wenn man sich auf Twitter das erste Mal einloggt, dass man dann Bill Gates vorgeschlagen bekommt und. Oder jetzt Elon Musk wahrscheinlich eher, das ist hart gecodet, ganz simpler Algorithmus, aber dass man da so irgendwelche allgemeinen Posten, würde ich es mal nennen, vorgeschlagen bekommt.",
+      "start": 2201524,
+      "end": 2216212,
+      "confidence": 0.9171672,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Genau. Und dann kann man ja schauen, ist da was dabei für den Nutzer, für die Nutzerin? Und wenn ja, dann läuft das Ganze ja schon, oder dann kann ich schon ein bisschen personalisieren. Üblicherweise bekommen Nutzer diese unpersonalisierten Empfehlungen so lange, bis das Profil Ÿousand den minimalen Füllgrad so quasi erfüllt oder erreicht hat. Und dann wird geswitcht auf den üblichen vollen Algorithmus. Das nennt man Hybrid Switching.",
+      "start": 2216356,
+      "end": 2241298,
+      "confidence": 0.90062505,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Jetzt hast du gemeint neue User, aber du hast auch gesagt, oder neue Items. Was heißt neues Item?",
+      "start": 2241354,
+      "end": 2246338,
+      "confidence": 0.90956724,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Ein neuer Film. Erinnert euch, bei Collaborative Filtering passiert die Ähnlichkeit anhand der ähnlichen Konsumationen und bei neuen Items kann ich keinerlei Ähnlichkeiten berechnen. Entsprechend habe ich auch keine Informationen darüber, wenn ich keinerlei Metadaten zum Item verwende.",
+      "start": 2246434,
+      "end": 2261706,
+      "confidence": 0.87969077,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Da sieht man schon, das ist weder Wissenschaftler Problem, weil in der Businesswelt wird man einfach den, der am meisten zahlt, ganz oben ranken von den Neuen.",
+      "start": 2261858,
+      "end": 2268606,
+      "confidence": 0.84997594,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Ja, ich. Wenn ich jetzt Netflix machen würde, ich glaube, ich würde einfach redaktionell getriebene Selektionen da auf die Startseite packen. Ja, weiß ich nicht, Schindlers Liste, stirb langsam und wenn ich weiß, dass ich jetzt männlich bin, das ist jetzt so. Und dann darunter vielleicht die zweite Reihe. Leute, die Schindlers Liste geguckt haben, guckten auch und allem drum und dran halt irgendwie so Ÿousand. Ich sag mal, du hast ja die Datenbasis von anderen Benutzern, was ist der most viewed Film auf Netflix z.b. dass man einfach so die. Na gut, da hast du natürlich auch ein Bias Problem, dass du die Verstärker verstärkst.",
+      "start": 2268718,
+      "end": 2302444,
+      "confidence": 0.88925755,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Warum ich sage, dass man die most popular Filme beispielsweise hernimmt, ist, weil die meistens ziemlich gut funktionieren. Da gibt es diese klassische Regel, dass 20 % der Inhalte von 80 % der Usern durchaus geliked oder geschaut werden. Das heißt üblicherweise, wenn man einem neuen Nutzer, einer neuen Nutzerin die most popular shows z.B. anbietet, dann ist was dabei. Was macht es allerdings, dieses klassische rich get richer Phänomenon? Also die, die schon populär sind, die werden noch populärer. Und das ist natürlich ein, sagen wir mal, ethisch moralisches Problem, das Empfehlungssysteme durchaus befeuern.",
+      "start": 2302532,
+      "end": 2338888,
+      "confidence": 0.9027882,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Und inwieweit kann man diese Algorithmen ausbalancieren?",
+      "start": 2338944,
+      "end": 2341648,
+      "confidence": 0.82771,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Der erste Schritt ist mal, dass man sich dessen bewusst ist, dass dann Bias drin ÿousand ist. Der zweite Schritt ist dann klassischerweise, dass man versucht, dem ganz gezielt entgegenzusteuern über diversere Empfehlungslisten. Wenn ich eine Liste habe, wo 10 Filme z.b. drinnen sind und neun davon sind aus den top x, %, dann kann ich ganz bewusst ein sogenanntes Re ranking machen. Das heißt, ich versuche unpopulärere Filme, die aber trotzdem passen könnten, nach oben zu schieben, um diese Liste diverser zu machen, um auch den Nutzern ein bisschen breiteres Portfolio zu zeigen, das ihnen vielleicht sogar gefällt, um eben die Präferenzen noch feiner aufsplitten und erfassen zu können.",
+      "start": 2341744,
+      "end": 2381218,
+      "confidence": 0.887917,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Ich habe gerade einen interessanten Gedankengang und du sagtest ja vorhin, dass wir unter anderem Daten aus einer Matrix entfernen können und die hoffentlich mit Empfehlungsalgorithmen wieder auffüllen können und im besten Falle ist dann die neu erstellte Matrix gleich der alten. Und jetzt stelle ich mir gerade die Frage, ob es bei Recommender Systems auch ähnlich wie bei AI so ein habsburger Problem gibt, dass neue Modelle auf ÿousand AI generierten Daten trainiert werden. Ja, habsburger Problem ist auf zu deutsch die, ich sag mal, Stereotypenfamilie für Inzucht, wenn man so möchte.",
+      "start": 2381274,
+      "end": 2412220,
+      "confidence": 0.89336795,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Das sagst du jetzt nur, weil du mit zwei Österreichern in der Episode bist, oder?",
+      "start": 2412640,
+      "end": 2417400,
+      "confidence": 0.92555934,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Das hast du gesagt. Und wenn ich jetzt eine Matrix habe, die entweder nicht genug Grunddaten hat und ich das recommender System auf die Matrix loslasse und somit eine Matrix auffülle, kann ich mir dann nicht auch so eine Art Habsburger Problem bauen, dass ein recommender System auf Basis einer auf recommender System basierten Matrix neue Sachen erstellt und sich dann immer tiefer in die ganze Thematik der recommender System Inzucht, nenne ich es mal, verliert? Gibt es sowas?",
+      "start": 2417560,
+      "end": 2448314,
+      "confidence": 0.9260168,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Ja, das ist eine absolut korrekte Beobachtung, also dass viele der Datensätze, die wir verwenden zum evaluieren, wirklich Datensätze sind, die auch recommender System getrieben erstellt wurden. Es gibt einige Ansätze zur Evaluation, die versuchen eben diesen Bias rauszurechnen, aber es ist wirklich so, dass viele der Datensätze genau dieses Problem haben. Das ist meiner Meinung nach auch ein großes Themenfeld, das viel mehr erforscht werden sollte, nämlich diese long term Effects von Empfehlungssystemen. Wie viel schmäler machen die so Nutzerprofile beispielsweise? Wie viel weniger explorativ oder Abenteuerlust sind denn Nutzer, wenn sie ständig mit den Empfehlungen arbeiten? Long term Studies sind etwas, was es leider noch nicht viel gibt, was aber dringend notwendig ist. Und weil wir gerade von abenteuerlustig sprechen, ein Ansatz, den es auch gibt im Bereich der Empfehlungssysteme, ist die sogenannte Serendipity. Also wir versuchen, sagen wir in den Top 10 Empfehlungen, immer wieder ein komplett unerwartetes, neues, vielleicht auch vermeintlich nicht passendes Element reinzubringen. Das hat zum einen den Vorteil, dass wir schon können, ist das was für den Nutzer, für die Nutzerin? Wäre das vielleicht auch was wieder um dieses Profil vielleicht etwas breiter zu machen, den Nutzer auf neue, vielleicht Musikgenres aufmerksam zu machen, die er bisher noch nicht gekannt hat, aber auch um rauszufinden, aha, das ist also nichts für den Nutzer. Die Ecke vom Katalog, vom Item Katalog, die müssen wir nicht mehr recommenden, um einfach mehr Feedback zu Präferenzen zu bekommen.",
+      "start": 2448402,
+      "end": 2543262,
+      "confidence": 0.8873858,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Also da könnte man dann z.b. immer ein neues Item, also einen neuen Film, der gerade rausgekommen ist, wo wir noch keine Infos darüber haben, könnte man da immer random z.B. einen neuen Film vorschlagen und löst damit dann auch das Cold.",
+      "start": 2543326,
+      "end": 2555592,
+      "confidence": 0.92523474,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Start Problem gleichzeitig im besten Falle.",
+      "start": 2555616,
+      "end": 2557632,
+      "confidence": 0.73556334,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Ja, recht klingt so ein bisschen nach Sponsored Posts irgendwie. Ich injecte immer etwas nach einem beliebigen Attribut, was es auch immer ist, weiß ich nicht, neu erschienen plus produziert von Netflix. Das ist ja meist, die boosten ihre eigene Produktion ja mal selbst da rein. Interessant. Aber meine Frage ist eigentlich zweitausendein, woher weiß ich denn, ob ein recommender Algorithmus überhaupt gut ist? Also kriege ich da guten Kram vorgeschlagen? Gibt es da irgendwie, ich sag mal knallharte Metriken, wie ich das evaluieren kann und sagen kann, okay, der eine Empfehlungsalgorithmus funktioniert besser als der andere, ohne Achtung, den direkt auf den User zuzulassen, weil das kann ja wirtschaftlichen Schaden haben. Weil wenn ich jetzt einfach mal einen schlechten Empfehlungsalgorithmus auf Netflix auf die Startpage poste, zweitausendein, dann kann die View Time, was glaube ich eine Key Metrik von Netflix ist, schon enorm runtergehen.",
+      "start": 2557656,
+      "end": 2605620,
+      "confidence": 0.88625044,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Oder vielleicht auch anders gefragt, auch wenn jetzt A b testing mache, woher weiß ich denn, ob A oder B besser ist, wenn jetzt nicht direkt die User Frage mit einer user study.",
+      "start": 2605700,
+      "end": 2614660,
+      "confidence": 0.91297424,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Es gibt eine Vielzahl von Metriken. Wenn ich einmal so die Rundumschau mache, was wir schon besprochen haben, ist, wie gut kann ich denn diese Ratings predigten, also dieses 0,8 und eins zu vergleichen, das wir vorhin beim Offline evaluieren als Beispiel gehabt haben. Was mittlerweile aber viel verbreiteter ist, ist zum einen das Ranking zu evaluieren sind die relevanten, die interessanten Filme ganz oben in der Liste und für jeden interessanten Film, der viel weiter unten in der Liste ist, wird dieser Score viel niedriger.",
+      "start": 2614780,
+      "end": 2645982,
+      "confidence": 0.9146486,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Wie viel Filme schlage ich da dann überhaupt vor? Also ich kann ja auch immer 1 Million Filme vorschlagen, das heißt, ich werde immer treffen.",
+      "start": 2646046,
+      "end": 2653206,
+      "confidence": 0.903402,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Korrekt. Aber nehmen wir eine Metrik, die nennt sich Mean Reciprocal Rank. Der millionste Eintrag in die dieser Liste wird dann eins durch 1 Million beitragen zu dieser Metrik. Also das Ziel muss sein, in einer möglichst kurzen, übersichtlichen Liste möglichst viele relevante Items reinzubringen. Wie lang sind solche Listen? Ist immer etwas abhängig von mobile versus anderes Gerät, aber üblicherweise fünf 1020 Items sind so klassische Evaluationsmetrik oder Listenlängen, die wir zum evaluieren zweitausendein verwenden.",
+      "start": 2653358,
+      "end": 2688472,
+      "confidence": 0.8894083,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Also ganz praktisch gesprochen bedeutet das, ich mache mein Netflix auf und umso weniger ich nach einem neuen Film suche in der Empfehlungsliste, ich klicke einen in den ersten fünf, umso desto besser ist der Algorithmus, weil er auf jeden Fall meinen Geschmack getroffen hat.",
+      "start": 2688536,
+      "end": 2703176,
+      "confidence": 0.90804577,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Genau, wir können das ja übertragen auf Suchmaschinen. Wie oft klickt ihr denn auf die zweite Seite von Suchergebnissen?",
+      "start": 2703288,
+      "end": 2710120,
+      "confidence": 0.9182947,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Ja, das kommt ganz darauf an. Wenn ich, wie verzweifelt man ist, wenn ich die Suchmaschinenoptimierung vom Engineering kiosk testen möchte, dann kann, klicke ich auch auf Seite sechs oder sieben, aber das ist eher selten. In der Tat, wenn ich was suche, man sagt ja auch, auf der zweiten Seite von Google kann man Leichen verstecken.",
+      "start": 2710200,
+      "end": 2726596,
+      "confidence": 0.93485826,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Genau das gleiche Prinzip. Diese ganzen Metriken sind ja aus dem Information Retrieval, aus der Suchmaschinen Ecke übernommen, also da ist jetzt auch nichts neu erfunden worden. Das sind Metriken, die es im Retrieval Bereich schon ganz, ganz lange gibt.",
+      "start": 2726748,
+      "end": 2738572,
+      "confidence": 0.91463524,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Es gibt da ja auch noch die zwei ganz bekannten Metriken Recall und Precise, die natürlich unbedingt reinbringen muss, weil bei meiner Verteidigung meiner Dissertation wurde mir da sehr kritische Fragen gestellt, wie ich diese Metriken definiert hatte. Also Eva, vielleicht kannst du uns eine allgemeine Definition erklären, weil man diese zwei Dinge auch immer und überall eigentlich hört.",
+      "start": 2738596,
+      "end": 2760238,
+      "confidence": 0.9169688,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Ja, Recall and Precision sind eigentlich relativ einfach. Nehmen wir die Liste von 10. Danke, ich bleib dabei. Nehmen wir die Liste von 10 Empfehlungen her und Precision sagt nur, wie viele dieser 10 Einträge sind wirklich relativ relevant? Wie viele Einträge sind Filme, auf die du auch klicken würdest? Wenn das acht sind, dann hast du eine Precision von 0,8 oder 80. %.",
+      "start": 2760334,
+      "end": 2780928,
+      "confidence": 0.8801453,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Aber das weiß ich doch erst später. Also das weiß ich doch erst später, wenn der User auf nach einer Woche oder weiß ich nicht, nach einem Zeitraum evaluiert du das dann und dann weißt du ja okay, der hat nur auf fünf geklickt. Oder wie misst man Precision?",
+      "start": 2780984,
+      "end": 2795024,
+      "confidence": 0.9187322,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Jetzt kommen wir wieder zurück zum offline Beispiel. Wir haben 20 Items rausgenommen aus deinem Profil und die versuchen wir wieder herzustellen.",
+      "start": 2795112,
+      "end": 2801704,
+      "confidence": 0.90588546,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Zweitausendein.",
+      "start": 2801752,
+      "end": 2802154,
+      "confidence": 0.74878,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Und wenn du fünf Vorschläge machst und fünf treffen, hast du 100 % Precision.",
+      "start": 2802272,
+      "end": 2806158,
+      "confidence": 0.91272426,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Bei Filmen ist es vielleicht was da ein bisschen unterschiedlich ist, ist, dass die Konsumationsdauer so lange ist und danach bekommst du nicht wieder die gleiche Liste. Also da müsste man immer nur einen Treffer messen de facto. Das war Precision. Und Recall ist die andere Variante. Wie viele relevante Items gibt es denn? Das wären alle Einser, die wir rausgenommen haben in der Offline Evaluation. Wie viele von denen landen dann wirklich in dieser Liste?",
+      "start": 2806254,
+      "end": 2828564,
+      "confidence": 0.92096156,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Das ist jetzt, das war genau der Knackpunkt auch bei meiner Verteidigung, dass im recommender Bereich diese zwei Werte ja eigentlich sehr ähnlich sind bei der Offline Evaluierung. Und die kommen ja ursprünglich aus der Suchmaschinenecke, wo natürlich der Recall eine wichtige Metrik ist. Wie viele Dokumente hast du überhaupt gefunden von den relevanten Dokumenten in einer Suchmaschine?",
+      "start": 2828702,
+      "end": 2849888,
+      "confidence": 0.9288641,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Moment mal, der Recall besagt, wie viel Dokumente du in einer Suchmaschine gefunden hast, auf Basis der kompletten Summe aller Dokumente, die relevant sind. Ist das richtig? Also woher hast du dann die Dunkelziffer, die du nicht gefunden hast, die trotzdem relevant sind?",
+      "start": 2850024,
+      "end": 2864226,
+      "confidence": 0.9550907,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Also bei der Suchmaschine, wenn du jetzt nach Andi suchst und du weißt, es gibt 100 Dokumente, die relevant sind für die Suche. Andi, du hast diese Information, wenn du.",
+      "start": 2864258,
+      "end": 2871842,
+      "confidence": 0.94664264,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Eine Suchmaschine testest, woher kommt diese Information? Das ist also wenn du weißt, dass es 100 Dokumente gibt, wieso ist das Ergebnis dann nicht 100 Dokumente? Oder meinst du ein statisches Testdatenset, um deinen Algorithmus zu verifizieren? Zweitausendein. Also ein Unit Test sozusagen.",
+      "start": 2871866,
+      "end": 2885896,
+      "confidence": 0.89032906,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Das nennt sich nicht unittest, aber du musst die Info natürlich im Vorhinein haben. Ja. Also wie viele Dokumente hast du reingespeichert, wo Andi drin vorkommt z.B. und dann, wenn du eine Suchmaschine hast, die auch gewisse Daten vielleicht komprimiert in irgendeiner Form, dann kann es natürlich sein, dass du Einträge verlierst in dem Sinne und nicht mehr findest. Und dann hast du eine niedrigen Recall natürlich und du wirst ja eigentlich alle Dokumente finden, die passen im Idealfall. Jetzt bei einem recommender System ist es natürlich schwieriger, weil da hast du zweitausendein vielleicht 1000 Musikstücke, die passen würden, aber du recommendest ja sowieso nur fünf.",
+      "start": 2885928,
+      "end": 2915982,
+      "confidence": 0.880393,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Also da sind die relevanten all jene Einser, die man rausgenommen haben für den Nutzer. Auf den ersten Blick ist die Precision ganz oft wichtiger, weil wenn ich eine Liste von 10 Videos oder Musikstücken habe und es passt nur eines, dann ist es wenig befriedigend für den Nutzer.",
+      "start": 2916086,
+      "end": 2931774,
+      "confidence": 0.90890145,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Und das große Problem ist ja, was die Eva am Anfang schon erwähnt hat, dass die Precision natürlich nur evaluieren kann, was du in deinem Datenset hast. Jetzt schlagst du aber Harry Potter vor und du hast die Info nicht, dass Harry Potter schon angeschaut wurde von dem User. Aber vielleicht wäre das trotzdem ein extrem cooler Film, den du ja gern sehen würdest, Andy, aber du kennst die Information natürlich nicht und dadurch ist die Precision niedriger. Trotzdem wäre die vielleicht eine gute Recommendation, aber du kannst halt nicht in die Zukunft schauen, ohne den User zu fragen. Gibt es dafür eigentlich einen Begriff, Eva?",
+      "start": 2931862,
+      "end": 2959962,
+      "confidence": 0.9189916,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Nicht, dass ich wüsste, aber es ist was, was wir in unseren Papers immer wieder argumentieren, dass die weit verbreitete offline Evaluation uns nur eine untere Schrank Ÿousand der Performance liefern kann.",
+      "start": 2960066,
+      "end": 2968720,
+      "confidence": 0.8903622,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Gibt es darum eigentlich so viele Fragen? Immer war das eine gute Recommendation, was man so in Systemen ständig sieht, so Thumbs up, Thumbs down, war das gut, war das schlecht? Google begrabt einen ja fast mit solchen Messages.",
+      "start": 2968760,
+      "end": 2980380,
+      "confidence": 0.9106851,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Jedes System möchte natürlich so viel Daten und Feedback bekommen, wie nur irgendwie möglich. Es ist halt einfach ein schmaler Grad, wann überlasst sie den Nutzer? Vielleicht nur als Beispiel, ursprünglich waren Empfehlungssysteme hauptsächlich auf Ratings basiert. Also wir haben uns darauf verlassen, dass Nutzer Filme mit null Komma bis fünf Sternen raten. Nur wenn man vielleicht mal sein eigenes Verhalten so reflektiert, wie oft raten wir denn wirklich etwas, was wir konsumiert haben, was wir gekauft haben? Das heißt, die return Quote, wenn man so will, an Rating ist einfach relativ niedrig. Ist zwar gutes Feedback, weil es sehr genau ist, null bis fünf Sterne, null bis 10 Punkte, wie auch immer, aber wir haben nicht viel davon. Und deshalb ist man auch immer mehr dazu übergegangen, sogenanntes implizites Feedback zu verwenden. Ist dieser Film konsumiert worden? Ist dieser Film zur Watchlist hinzugefügt? Worden, ist er weiter empfohlen worden beispielsweise, weil wir hier einfach mehr Informationen generieren können, indem wir das Nutzerverhalten implizit festhalten. Es gibt auch Papers, die zeigen, dass sowohl die expliziten Ratings als auch das implizite Feedback in etwa die gleiche Recommendation Performance zur Folge haben. Schönes Beispiel dafür, Netflix hatte früher nur Sterne, dann ist dieser Daumen nach oben und nach unten gekommen und ich glaube, mittlerweile ist nur mehr ein Herz, so wie bei Spotify, oder? Also da hat sich irgendwie auch der Task und die Art und Weise, wie wir Daten sammeln, verändert über die Jahre.",
+      "start": 2980840,
+      "end": 3070268,
+      "confidence": 0.90429,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Die Daten oder die einzelnen Datenpunkte werden aber dann hoffentlich anders gewichtet, oder? Ich meine, habe ich einen Film geguckt und habe ich den Film wirklich bis zum Ende geguckt? Das ist, glaube ich, eines der höchsten Signale. Kann auch sein, dass ich eingeschlafen bin, aber ist eine andere Thematik. Oder habe ich den in der Mitte abgebrochen? Oder habe ich den zur Watchlist? Das bedeutet, ich weiß gar nicht, ob der Film mir gefällt, aber durch die Beschreibung, durch den Titel, durch das Coverbild klingt dieser Film interessant. Also ich meine, das sind ja drei unterschiedliche Gewichtungen hoffentlich, oder?",
+      "start": 3070324,
+      "end": 3098720,
+      "confidence": 0.9164883,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Genau, man unterscheidet dann einfach die Art dieser User Action und Gewichte des entsprechend. Und wie du sagst, was zu Ende schauen, vielleicht sogar noch weiterempfehlen oder teilen aus der App heraus, das ist natürlich das bestmögliche Feedback, das am höchsten Gewicht.",
+      "start": 3098800,
+      "end": 3114992,
+      "confidence": 0.9137776,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Jetzt muss ich mal den Elefanten im Raum ansprechen, und zwar dieses Djennair, ChatGPT und OpenAI und wie sie alle heißen. Ich meine, statistisch gesehen sagt generative AI eigentlich nur das nächste Wort hervor, ganz simplifiziert.",
+      "start": 3115056,
+      "end": 3128230,
+      "confidence": 0.85961944,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Kann ja nicht so schwer sein, dann den nächsten Film hervorzusagen, oder?",
+      "start": 3128530,
+      "end": 3131122,
+      "confidence": 0.8475775,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Ist das gleiche, genau. Und dadurch, weil es halt Statistik ist, nennen wir, falls die Vorhersage falsch war, nennen wir das Halluzination. Inwieweit kann man diese Beschreibung auch auf recommender Systems übertragen? Zweitausendein bzw. Machen diese ganzen recommender System Algorithmen überhaupt noch Sinn, wenn wir einfach sagen können, hey, pass mal auf, ich habe schön das Liste geguckt und ich habe einmal Stirb Lamm drin geguckt und dann habe ich noch, weiß ich nicht, the Mechanic geguckt. Schlagen wir mal neue Filme vor. Ich meine, im Endeffekt erwarte ich von ChatGPT, dass da auch irgendwas rumkommt. Eine Empfehlung. Inwieweit gibt es noch die Daseinsberechtigung für das ganze Wissenschaftsfeld recommender Systems? Und das meine ich jetzt gar nicht böse, sondern wenn kann AI oder Gen AI die ganze Thematik einfach ersetzen?",
+      "start": 3131146,
+      "end": 3177786,
+      "confidence": 0.8583867,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Ich würde das umdrehen, weil wir können. Genau. Oder LLMs einfach uns zu Nutze machen. Also letzte Woche auf der Rexis Konferenz waren sehr, sehr viele Papers zu LLMs für Empfehlungssysteme. Ein Task in Empfehlungssystemen, den wir noch gar nicht besprochen haben, ist sogenannte sequential recommendation, also das Empfehlen einer ganzen Sequenz, beispielsweise einer Playlist oder das empfehlen des nächsten Items in dieser zweitausendein Sequenz. Was ist das nächste Lied basierend auf den letzten 15, die du gehört hast, das du jetzt als nächstes vermutlich hören möchtest? Und wie du schon gesagt hast, LLMs sind nun mal einfach basierend auf einer Sequenz von Wörtern das nächste zu predikten. Das heißt, der Task ist eigentlich ein sehr ähnlicher und das kann man sich sehr wohl zu Nutze machen. Und das ist ja das, was man in der Community ganz, ganz viel sehen dass dieses ganze LLM Transformer Attention Mechanism Thema mittlerweile mittendrin in der Community ist. Aber ich sehe das jetzt nicht nur negativ, weil ich glaube z.B. auch, dass das uns ganz, ganz viel nützen kann, auch in der Kommunikation mit dem Nutzer. Sogenannte conversational recommender systems, also die beispielsweise auch erklären, warum sind denn bestimmte Empfehlungen in dieser Liste drinnen, die fragen können hat dir das jetzt gefallen? Was würde es denn gerne ändern? Was passt denn gerade? Einfach um noch mehr Informationen zu den Präferenzen, zu den aktuellen vom Nutzer rauszubekommen. Also easy das eigentlich ganz, ganz positiv, dass man sich das zu Nutze machen kann und nicht fatalistisch, dass uns das jetzt den Job kostet und in drei Jahren keine rexis Konferenz mehr stattfinden wird.",
+      "start": 3177818,
+      "end": 3270678,
+      "confidence": 0.88502496,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Aber da gibt es ja sicher schon Vergleiche, oder? Zwischen den Technologien. Können die mithalten, sind die schlechter, sind die besser? Also ich vermute, es hat ja schon dieselben Ansätze, hat ja irgendwer ausprobiert und mal verglichen. Wie kann das mit einem normalen CF mithalten?",
+      "start": 3270734,
+      "end": 3284518,
+      "confidence": 0.93235844,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Ganz klassisches CF schlagen die neueren Ansätze alle? Es gibt viele verschiedene neuere Ansätze, von Graph Neural Networks über Reinforcement Learning und so weiter und so fort. Was man sieht ist, dass die neueren Ansätze die alten schlagen. Das ist ja gut so, das ist Wissenschaft. Was man aber glaube ich auch dazu sagen muss, ist, dass es einige Papers gibt, die gezeigt haben, dass wenn man die alten Ansätze nur gut tunt und vorsichtig sinnvoll damit umgeht und die maßschneidert, dass die sehr wohl mithalten kann. Und dann kommt es plötzlich zu einer Diskussion naja, was braucht denn weniger Ressourcen? Was ist denn schneller und effizienter? Und wenn man dieses Abwägen vielleicht auch noch mit rein nimmt, dann wird die Diskussion schon spannend. Also ja, die neuen Ansätze mit LLMs und so weiter performen sehr gut, aber das heißt nicht, dass die Daseinsberechtigung für alles alte damit erlischt.",
+      "start": 3284614,
+      "end": 3337860,
+      "confidence": 0.9170142,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Also ich kann mich erinnern, ich habe Teile von meinem Algorithmus geschafft, in SQL zu implementieren mit irgendeinem komplexen Ÿousand Ansatz, weil das garantiert nicht mehr möglich. Ja, also das ist dann sicher eine ganz andere Kategorie, wenn es um Energie und Effizienz geht.",
+      "start": 3337900,
+      "end": 3351110,
+      "confidence": 0.89165044,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "SQL ist aber ein gutes Stichwort. Ich stelle mir gerade die Frage von diesen, ich sag mal, klassischen Algorithmen, wie Kunden, die das gekauft haben, kauften auch, gibt es denn irgendwie prädestinierte Datenbanksysteme, die solche recommender Systems Algorithmen bereits implementiert haben? Ich sag mal wie so eine PostgreSQL Extension, wo ich dann einfach nur sagen kann, hey, pass mal auf, diese Daten aus diesen Tabellen, lass die bitte da einfließen und dann kann ich die ganz normal mit select Sternchen irgendwie from my recommender system Algorithmus irgendwie querien oder sind das alles irgendwie Customer Algorithmen, die ich wirklich in Python implementieren muss und die ich dann in meinem in meinem User Land von der Software eigentlich implementieren muss, weil eigentlich klingt das wie ein ähnliches Problem wie das Handling von Geodaten, was ja oft auch durch Datenbanksysteme abgenommen wird.",
+      "start": 3351410,
+      "end": 3395254,
+      "confidence": 0.87111473,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Also die neueren Ansätze sind sicher alle in Python gecodet, mit verteilt auf GPUs, um skalieren zu können. Kann man alte Ansätze in der Datenbank programmieren? Ja, kann man. Wolfgang und ich haben das durchaus schon gemacht, wenn ich mich richtig erinnere. Assoziationsregeln in SQL performt es gut? Nein, ich erinnere mich, dass wir Tage und Wochen gewartet haben, bis das fertig computed war. Allerdings weiß ich nicht, wie performant es damals war, was wir da gecodet haben.",
+      "start": 3395302,
+      "end": 3421998,
+      "confidence": 0.8798041,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Du hast gerade unter anderem von diesem sequential recommendation gesprochen, so nach dem Motto was ist das nächste Lied auf Basis der letzten 15 Lieder, wenn ich jetzt 20 Lieder höre, wir nehmen jetzt mal diese was das nächste Lied? Anhand der 15 Lieder bedeutet das ja eigentlich, dass wir von einer, ich sag mal, near Realtime Infrastruktur reden mit mit Data Streaming und Co. Oder dass wir technisch gesehen und jetzt kommt meine DevOps Infrastruktur Thematik raus, schon einen Haufen Infrastruktur brauchen und das jetzt eigentlich nicht für meine kleine Webseite oder für meinen kleinen Online Shop irgendwie, ich sag mal, relevant ist bzw. Sich theoretisch lohnen könnte, oder?",
+      "start": 3422014,
+      "end": 3456604,
+      "confidence": 0.87919325,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Ich glaube, der entscheidende Faktor ist da die Datenmenge, das kleine Datenset. Da Empfehlungen zu berechnen ist vermutlich überschaubar, aber wenn man dann mal in die Größenordnung 300 Millionen Lieder und ich weiß nicht wie viel 100 Millionen Kunden gehen, dann muss das ganz anders skalieren. Das ist natürlich ganz andere Infrastruktur, wo auch ganz ganz viel vorberechnet wird. Die Repräsentationen nehmen wir mal Musikstreaming, die Repräsentationen der Leader sind vorbereitet. Da geht natürlich dann ganz ganz viel vom Effort rein in die Skalierbarkeit und von DevOps und der Gesamtinfrastruktur.",
+      "start": 3456692,
+      "end": 3493526,
+      "confidence": 0.9034351,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Zum Thema Leader habe ich noch mal wirklich eine technische Frage, weil du hattest das hatte ich auch mehr oder weniger am Anfang des Podcasts erwähnt. Inwieweit funktioniert das technisch, wenn ich für Leader wirklich nur das mp File, keine Metadaten, auch nicht die Metadaten welches Genre das ist im MP Fall hinterlegt, sondern wirklich nur ich sag mal den Audius. Ich kann mir vorstellen vorstellen, dass Elemente wie Geschwindigkeit der Musik Erkennung klassisch versus Rock, vielleicht spielt eine Lautstärke eine Rolle, Transkribierung wie Liedtexte und so weiter habe ich glaube ich in der Beschreibung von einer Habilitation gelesen, sind Datenpunkte die du mit einfließen lässt. Aber wie funktioniert das denn technisch? Weil wie erkennt man denn aus einem Bytestream aus einer MP, dass das jetzt ein Hard Rock Song ist oder ob das ein Klavier ist und da Mozart spielt.",
+      "start": 3493718,
+      "end": 3539208,
+      "confidence": 0.89235044,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Also zum einen ist es ein ein Aneinanderreihen vieler Extraktionsalgorithmen, die beispielsweise die Frequenzbänder, die im MP Vorkommen analysieren pro s oder noch kleineren Einheiten beispielsweise und das andere z.B. dieses Genre erkennen. Das ist ganz oft ein Klassifikationstask. Also wir haben eine Datenbank oder ein Datenset, wo wir wissen Lieder mit diesen und jenen Eigenschaften sind haben und genau so klassifiziere dann so quasi die Leader. Audio Signal Processing ist jetzt nicht mein Spezialgebiet. Wir arbeiten zwar damit, aber wie genau die Algorithmen funktionieren. Wir verlassen uns darauf, dass das Richtige extrahiert wird.",
+      "start": 3539264,
+      "end": 3581292,
+      "confidence": 0.8701764,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Wenn wir ehrlich sieht aber funktioniert das? Kann man mit den Features wirklich viel berechnen, also die man wirklich aus den Audiodaten rausbekommt? Also auch im Vergleich zu einem klassischen CF, wo es dann wieder ums Behavior von den Usern einfach geht im Vergleich?",
+      "start": 3581316,
+      "end": 3595116,
+      "confidence": 0.8664191,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "CF ist sehr sehr weit verbreitet und funktioniert bis heute sehr sehr gut. Das muss man wirklich so festhalten. Aber was wir schon sehen ist CF plus Audio Features beispielsweise, da kann man noch ein bisschen was rausholen. Das sind jetzt nicht nochmal 50 % oder was, sondern das ist ein bisschen aber on top of cf beispielsweise, da kann man noch was rausholen.",
+      "start": 3595228,
+      "end": 3619080,
+      "confidence": 0.90068704,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Was sind da so klassische Werte, wenn man wir jetzt so ein collaborative filtering Algorithmus verwendet und sagen wir mal die Daten sind einigermaßen sinnvoll. Ich verwende dann Standard Algorithmus aus dem Microsoft Framework lande ich da dann bei 50 %, 40 %, 60, 80, so nur ganz grob. Klar ist es bei jedem Use Case anders, aber nur wo kann man denn so grob hinkommen in so klassischen Use Cases in einem Webshop Recommendation von Produkten z.B. oder solche?",
+      "start": 3619500,
+      "end": 3646350,
+      "confidence": 0.81750226,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Das kommt jetzt darauf an, was für Metrik du ansprichst. Also die Accuracy, die Genauigkeit der Empfehlungen, wie oft treffe ich? Da reden wir schon schon von 80 % plus minus, aber das ist natürlich eine ganz grobe Zahl, die da jetzt nur sagen kann, kommt schon sehr auf.",
+      "start": 3646430,
+      "end": 3659578,
+      "confidence": 0.86107755,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Den Use Case drauf, weil manche werden ja vielleicht mit dreiig % auch schon froh, aber man kommt schon in 80 % ist jetzt da muss ich nicht google dazu sein oder Spotify oder oder Amazon, damit die auf 80 % kommen.",
+      "start": 3659594,
+      "end": 3669346,
+      "confidence": 0.8809367,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Ja, das ist schwer zu sagen, weil das so von den Daten abhängt und von der vom Task, wie man ihn stellt. Was ist das Ziel, wie lange ist die Liste?",
+      "start": 3669418,
+      "end": 3678458,
+      "confidence": 0.88648033,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Aber nur so als Hausnummer, also nur wo zweitausendein umgehen. Aber das passt ja.",
+      "start": 3678594,
+      "end": 3682192,
+      "confidence": 0.90369284,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Klassische Beraterantwort. It depends. Es ist so beschreite ich gar nicht nur ich kriege es immer als Kritik hier von Wolfgang, der stellt mir auch eine Frage und dann sage ja, es kommt drauf an, aber du kommst gerade aus Italien, aus der von der Rexus Konferenz. Wo geht die ganze Thematik denn hin? Also mache ich bald mein Netflix auf und bekomme eine 100 % relevante Vorschlagsliste und komme nicht mehr vom Fernseher weg, weil ich dann alles gucken möchte oder was sind so die Keywords Trends in der recommender Systems und Information Retrieval Szene?",
+      "start": 3682296,
+      "end": 3713858,
+      "confidence": 0.8788381,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Key Trends sind sicherlich dieser sequential Task, also die nächsten Lieder beispielsweise zu empfehlen. Der ist gekommen um zu bleiben. Also das werden wir auch die nächsten Jahre sehen. Ich gehe davon aus, dass wir LLMs, Transformers und alles was in die Richtung geht auch in Zukunft sehr sehr stark sehen werden. Auch immer mehr, ich sage jetzt mal end to end Lösungen, wo wir ganz ganz viele Features über die Items in großen neuronales Netz werfen und am Schluss Empfehlungen rausbekommen.",
+      "start": 3713994,
+      "end": 3746054,
+      "confidence": 0.8925121,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Also Features sind Kategorien, Metadaten, irgend sowas oder?",
+      "start": 3746142,
+      "end": 3750390,
+      "confidence": 0.7586275,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Genau alles was nicht User Item mit Matrix ist. Wie danceable ist der Song, wie schnell ist der Song, wie laut, wie viel Instrumente Instrumentalanteil ist drin für high level Akustik Features. Vielleicht eine Sache noch dazu. Die Rexis ist eine sehr sehr technische Konferenz. Also da ist es zweitausendeinundzwanzig wirklich plus 3 % Performance. Darum geht es. Was wir glaube ich über das hinaus hoffentlich sehen werden, ist immer mehr den Nutzer mit einzubeziehen. Das ist was, was auf der Rexis in meinen Augen immer noch vernachlässigt wird, dass wir darüber reden, merkt der Nutzer diese 3, %, wo der Algorithmus besser oder schlechter ist, kommt es überhaupt an beim Nutzer oder ist es de facto eh egal? Und ich würde mir auch gerne mehr Diskussionen oder ihr erhofft mir mehr Diskussion darüber, wie wir mit dem Nutzer interagieren, vielleicht mit LLMs über Frage Antwort Spiele beispielsweise. Also das ist etwas, wo ich gerne mehr sehen würde, auch zur Erklärung beispielsweise von Empfehlungen. Empfehlungen leben davon, dass der Nutzer dem System Vertrauen schenkt. Nur dann werden Empfehlungen angenommen. Und um dieses Vertrauen zu erarbeiten, müssen einerseits die Empfehlungen gut sein und andererseits, weil man da in Zukunft immer mehr darauf hinarbeiten müssen, dass man sie auch erklären können. Desto komplizierter die Rexes algorithmen werden, desto mehr müssen wir erklären, warum ist denn dieses Lied in der Liste? Warum ist denn dieser Film in der Liste? Und ich hoffe, dass da schon auch in Zukunft, dass wir da noch viel mehr sehen.",
+      "start": 3750510,
+      "end": 3837604,
+      "confidence": 0.885508,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Das ist aber ein spannendes Feld, besonders zu erklären, warum wurde dieses Item denn jetzt vorgeschlagen? In Kombination mit, dass du glaubst bzw. Dass du den Trend siehst, dass mehr genau oder AI und Co Einzug erhält. Wie passt das zusammen? Weil das, was man so hört, ist das, dass auch OpenAI Engineers gar nicht so wirklich wissen, warum funktioniert das jetzt so, wie es funktioniert.",
+      "start": 3837732,
+      "end": 3860232,
+      "confidence": 0.8715736,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Es gibt zwei Varianten, wie wir Empfehlungen erklären können. Wir können zum einen den Algorithmus erklären und den transparent machen. Das ist aber schwierig, desto schwieriger oder komplexer das System wird. Und das andere ist, dass wir versuchen, post hoc, also nach dem Berechnen der Empfehlungen, Erklärungen zu finden, warum denn Empfehlung stattgefunden hat. Und das ist im Moment so das vorherrschende Paradigma. Wir versuchen beispielsweise zu sagen, du hast bisher jeden Sonntagvormittag Ambient Jazz gehört, deshalb kriegst du jetzt dieses Lied, weil das geht in die ähnliche Richtung. Oder aber auch sogenannte counterfactual Explanations, die sagen, hättest du auch dieses Lied in deinem Profil, dann würden wir dir dieses Lied vorschlagen. Also so what if Szenarien, um die Empfehlungen zu erklären.",
+      "start": 3860296,
+      "end": 3909514,
+      "confidence": 0.8942491,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Klingt so ein bisschen wie Tracing in der Softwareentwicklung. So nach dem Motto, welcher Pfad wurde durch deine Software jetzt wirklich genommen, mit welchen Metadaten attached, also dieser Function Call, wo mit diesen Parametern aufgerufen. So klingt diese Post hoc Geschichte. So nach dem Motto zu sagen, okay, warum wurde dieses Lied vorgeschlagen? Dass du halt retrospektiv sagst, okay, warum ist das jetzt hier?",
+      "start": 3909562,
+      "end": 3929214,
+      "confidence": 0.87826765,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Man merkt ja auch recht stark in der Industrie eine Bewegung in diese Richtung, weil ursprünglich waren ja, z.B. bei Netflix einfach die personal Recommendations für dich. Wir haben entschieden, was gut für dich ist. Und mittlerweile gibt es ja auch diese diese Tabs in Netflix. Basierend auf dem Film Harry Potter, den du gesehen hast, empfehlen wir auch die folgenden anderen Filme. Also es wird vielmehr da der Benutzer, die Benutzerin mit einbezogen in den ganzen Prozess. Und wahrscheinlich geht es auch um Vertrauen und wahrscheinlich kommt das Ganze besser auch an bei den bei den Usern, wenn ich einfach mehr Informationen diesbezüglich habe und die kann nur von mir sprechen. Mir ist es natürlich auch sympathischer und vielleicht kann ich dann auch sogar selber mitdenken, wenn ihr dran drei Filme dazu Auswahl habe Genres und ich bin gerade in demselben Kontext oder ich will vielleicht was ähnliches haben, dann schaue ich eher in diesen Tab nach, der ähnlich zu Harry Potter ist und nicht zu Terminator oder so.",
+      "start": 3929262,
+      "end": 3979692,
+      "confidence": 0.8925838,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Man darf nicht vergessen, dass das Ganze eine rechtliche Dimension auch noch hat. Die GDPR in der EU verpflichtet Anbieter ihre Ergebnisse, also Rexes Ergebnisse transparent und nachvollziehbar zu machen.",
+      "start": 3979836,
+      "end": 3992452,
+      "confidence": 0.896778,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Was heißt verpflichtet? Haben die dann auch eine Öffentlichkeitspflicht oder ist das so die andere Thematik? So ähnlich wie, dass ich bei jeder Firma anfragen kann, welche Daten hast du und dann kriege ich das. Also ist das ist das proaktiv von der Firma oder muss das proaktiv vom Benutzer?",
+      "start": 3992516,
+      "end": 4007380,
+      "confidence": 0.9059848,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Meines Wissens nach muss es proaktiv von der Firma sein, aber ich kenne noch kaum Arbeiten, die dann wirklich sich angeschaut haben. Wie wird denn das dann wirklich gemacht und wie aussagekräftig ist es denn? Gut, vielleicht, aber in Zeiten, wo wir haben jetzt immer nur über Musik und Filme geredet. Ich glaube in Zeiten, wo die Welt so polarisiert ist, wenn man sich z.b. den US Wahlkampf anschaut, dann bekommt auch das viel eine wichtigere Rolle, weil Empfehlungssysteme sehr, sehr stark dazu beitragen, dass Menschen in Filterbubble landen und nicht mehr rausfinden. Und wenn man dann auch noch sich anschaut, dass viele, viele Leute ihre News nur mehr über Social Media konsumieren, dann müssen wir uns schon auch dieser moralischen Komponente, dieser ethischen Komponente bewusst sein. Und ich glaube, dass hier Erklärungen ein ganz wichtiges Instrument sein werden.",
+      "start": 4007500,
+      "end": 4057212,
+      "confidence": 0.903565,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "War das bei Direct irgendwie ein Thema mit Ethik, Bias und so weiter? Oder ist es zu industrielastig? Vor allem amerikanisch industrielastig muss man ja teilweise auch dazu sagen.",
+      "start": 4057276,
+      "end": 4067476,
+      "confidence": 0.865431,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Auf der Hauptkonferenz wenig, in den Workshops sehr wohl.",
+      "start": 4067588,
+      "end": 4070748,
+      "confidence": 0.8998689,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Die gute alte Echokammer. Ich glaube, die wurde auch sehr sichtbar, als Elon Musk Twitter übernommen hat und damals diesen Empfehlungs Algorithmus irgendwie mal auf GitHub veröffentlicht hat. Wenn ich mich recht erinnere, wurde da sein Account auch stark geboostet in den Empfehlungen. Und das hat natürlich für mehr oder weniger einen lustigen Aufschrei gesorgt, oder weil.",
+      "start": 4070884,
+      "end": 4090248,
+      "confidence": 0.90919334,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Es gut im Sinne der Erklärbarkeit ist. Das ist wenigstens klar. Da ist ein if Statement, was ihn einfach hochrankt, ist leicht erklärbar.",
+      "start": 4090264,
+      "end": 4097776,
+      "confidence": 0.90761393,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Das hat man sich wirklich im GitHub anschauen können.",
+      "start": 4097928,
+      "end": 4100248,
+      "confidence": 0.97150224,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Es ist sehr Ÿousand können wir auch gerne mal in den Shownotes verlinken. Aber du, du hast recht, wir haben sehr viel über Netflix und Spotify gesprochen. War natürlich nur ein Beispiel. Also diese Empfehlungsalgorithmen findet man überall in jedem E Commerce Shop. Damals bei Trivago im Hotelbereich ist es natürlich auch sehr, sehr relevant. Welches Hotel denkt der Anbieter, ist für dich das richtige Hotel? Eigentlich kenne ich zweitausendein fast kaum eine Webseite, die sowas nicht mehr hat, die auf die mehrere Optionen hat. Jetzt redet nicht von einem klassischen Blog, da ist nicht. Obwohl natürlich unter einem Blogartikel relevante Artikel auf Basis dann des Tags oder der Kategorie oder ähnliches ist ja auch so eine Art minimaler Empfehlungsalgorithmus.",
+      "start": 4100344,
+      "end": 4145828,
+      "confidence": 0.8752926,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Ja, kommt immer darauf an, wie personalisiert es ist.",
+      "start": 4145964,
+      "end": 4149084,
+      "confidence": 0.9143011,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Aber klar, wahrscheinlich gar nicht. Apropos Personalisierung für die Leute, die nur im Audio geredet haben, sind, die konnten das alle nicht sehen. Aber ich bin während des Podcast einmal ganz kurz weggegangen und bin wiedergekommen. Das hat einen Grund. Und zwar habe ich ein Buch, das nennt sich kollektive Intelligenz mit dem Untertitel Algorithmen für smartere Web Apps. Web für die Leute, die etwas älter sind. Das war die Zeit. Aha, nach Web, wo Facebook, studivz, MySpace und so hochkamen, die ganzen Social Networks. Und in diesem Buch, das aus 2008 ist, es ist zu deutsch übersekt, das bedeutet, die englische Version, die Originalversion ist wahrscheinlich ein bisschen was älter, geht es nämlich genau um Recommender Systems. Kunden, die das kauften, kauften auch und Klassifizierung mit K Means und solche Geschichten. Das klingt jetzt total lächerlich. Ja, und da ist bestimmt noch keine generative AI ist drin, aber ich verlinke das Buch trotzdem mal, weil damals hatte ich echt Spaß, diese Kunden kauften auch und so weiter nachzuprogrammieren auf ein paar Datasets und war so ein bisschen so mindblowing für mich. Und jetzt von dir das im großen Stil zu hören, Eva, finde ich unglaublich interessant. Deswegen habe ich das Buch noch ganz kurz aus meinem Schrank geholt. Ich verlinke es. Ein sehr, sehr einfacher Einstieg, aber ich mag einfache Einstiege. Alle Links, die Eva erwähnt hat, auch die Frameworks wie z.B. das Framework mit dem genialen Namen Surprise verlinken wir natürlich auch in den Show Notes. Eva, was ist dein Tipp für unsere Hörerinnen und Hörern zum Abschluss, wenn man sich mit dem ganzen Thema Recommender Systems technisch tiefer beschäftigen möchte? Was würdest du sagen, das ist Nr. Eins Ressource für den Einstieg? Was kannst du uns so einen Hörern mitgeben?",
+      "start": 4149132,
+      "end": 4258978,
+      "confidence": 0.9003858,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Für den praktischen Einstieg gibt es ein sehr gutes Buch, das heißt Practical Recommendation Systems von Kim Falk, was ich gehört habe, gibt es dann auch bald einmal eine zweite Edition bzw. Eine Erweiterung. Es gibt einen sehr schönen Podcast, der nennt sich Rexbirds, den ich auch sehr empfehlen kann. Und ansonsten ehrlicherweise, es gibt x Blogs, wie man schnell ein recommender System hochzieht. Einfach ausprobieren. Es ist ganz einfach. Es ist nicht ganz so einfach, aber das Ausprobieren ist einfach.",
+      "start": 4259034,
+      "end": 4287126,
+      "confidence": 0.8685272,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Also ganz klassisch, die 80 % von der 80 20 Regel bekommt man relativ Ÿousand schnell wahrscheinlich bei einem Rex ist.",
+      "start": 4287238,
+      "end": 4292932,
+      "confidence": 0.82693666,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Die Frage ist dann, wann weiß man, dass man bei 80 % ist.",
+      "start": 4293036,
+      "end": 4296600,
+      "confidence": 0.9759869,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Wundervoll. Eva, vielen lieben Dank, dass du dir die Zeit genommen hast, uns dieses Thema nahe zu bringen. Wir verlinken auch natürlich den ganzen Paper, an denen du mitgearbeitet hast bzw. Einfach deine Google Scholar Webseite. Ich glaube, da findet man alles. Ansonsten war es das von uns. Vielen lieben Dank und bis zum nächsten Mal. Tschüss.",
+      "start": 4297460,
+      "end": 4315708,
+      "confidence": 0.9063012,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Ciao.",
+      "start": 4315884,
+      "end": 4316340,
+      "confidence": 0.5793,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Ÿousand down.",
+      "start": 4316380,
+      "end": 4316610,
+      "confidence": 0.747675,
+      "speaker": "B",
+      "channel": null
+    }
+  ],
+  "confidence": 0.8989815,
+  "audio_duration": 4264,
+  "webhook_status_code": null,
+  "webhook_auth": false,
+  "summary": null,
+  "auto_highlights_result": null,
+  "content_safety_labels": null,
+  "chapters": null,
+  "sentiment_analysis_results": null,
+  "entities": null
+}
