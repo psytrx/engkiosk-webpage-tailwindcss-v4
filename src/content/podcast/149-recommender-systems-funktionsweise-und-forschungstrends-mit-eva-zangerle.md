@@ -87,7 +87,10 @@ speaker:
 - name: Eva Zangerle
   transcriptLetter: C
 spotify: https://open.spotify.com/episode/1RGYHZnfOpwE5yhd7CEx4U
-tags: []
+tags:
+- Software Engineering
+- Women in Tech
+- Interview
 title: '#149 Recommender Systems: Funktionsweise und Forschungstrends mit Eva Zangerle'
 transcript_raw: ''
 transcript_slim: ''
