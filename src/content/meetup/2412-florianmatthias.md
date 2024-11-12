@@ -1,10 +1,10 @@
 ---
 date: 2024-12-19T18:30:00+01:00
 location:
-  name: '???'
-  address: '???, 6020 Innsbruck'
-  url: ''
-  logo: ''
+  name: 'florianmatthias'
+  address: 'Herzog-Friedrich-Straße 22, 6020 Innsbruck'
+  url: 'https://www.florianmatthias.com/'
+  logo: 'florianmatthias.svg'
 talks:
   - avatar: '2412-thomas.jpg'
     name: 'Thomas Berger'
