@@ -1,6 +1,6 @@
 ---
 advertiser: ''
-amazon_music: ''
+amazon_music: https://music.amazon.com/podcasts/c35a09fe-4116-4e04-8f68-77d61b112e46/episodes/70ad898e-dcb0-4c6f-a4c2-878cdd9ba101/engineering-kiosk-149-recommender-systems-funktionsweise-und-forschungstrends-mit-eva-zangerle
 apple_podcasts: https://podcasts.apple.com/us/podcast/149-recommender-systems-funktionsweise-und-forschungstrends/id1603082924?i=1000676589295&uo=4
 audio: https://audio1.redcircle.com/episodes/d88a0cd8-24b1-4dfc-a688-eee706d3697e/stream.mp3
 chapter:
