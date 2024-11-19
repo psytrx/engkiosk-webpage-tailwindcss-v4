@@ -76,7 +76,9 @@ speaker:
 - name: Christian Stankowic
   transcriptLetter: B
 spotify: https://open.spotify.com/episode/0SLYRCF0UZwccEqDTgis3J
-tags: []
+tags:
+- Tech Kultur
+- Interview
 title: '#150 Die ThinkPad-Faszination: Technik, Design und Nostalgie mit Christian
   Stankowic vom ThinkPad Museum'
 transcript_raw: ''
