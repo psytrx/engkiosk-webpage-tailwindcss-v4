@@ -70,7 +70,11 @@ rtlplus: ''
 six_user_needs: []
 speaker:
 - name: Andy Grunwald
+  transcriptLetter: A
 - name: Wolfi Gassler
+  transcriptLetter: C
+- name: Christian Stankowic
+  transcriptLetter: B
 spotify: https://open.spotify.com/episode/0SLYRCF0UZwccEqDTgis3J
 tags: []
 title: '#150 Die ThinkPad-Faszination: Technik, Design und Nostalgie mit Christian
