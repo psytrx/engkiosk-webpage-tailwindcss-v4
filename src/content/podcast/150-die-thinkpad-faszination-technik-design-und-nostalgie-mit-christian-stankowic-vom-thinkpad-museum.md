@@ -1,6 +1,6 @@
 ---
 advertiser: ''
-amazon_music: ''
+amazon_music: https://music.amazon.com/podcasts/c35a09fe-4116-4e04-8f68-77d61b112e46/episodes/3feaf7f9-4fcc-4a86-a35e-13761f6f0e84/engineering-kiosk-150-die-thinkpad-faszination-technik-design-und-nostalgie-mit-christian-stankowic-vom-thinkpad-museum
 apple_podcasts: https://podcasts.apple.com/us/podcast/150-die-thinkpad-faszination-technik-design-und-nostalgie/id1603082924?i=1000677421164&uo=4
 audio: https://audio1.redcircle.com/episodes/1939c90a-ae56-4830-b5e2-4317d061ed77/stream.mp3
 chapter:
