@@ -81,8 +81,8 @@ tags:
 - Interview
 title: '#150 Die ThinkPad-Faszination: Technik, Design und Nostalgie mit Christian
   Stankowic vom ThinkPad Museum'
-transcript_raw: ''
-transcript_slim: ''
+transcript_raw: src/data/transcripts/150-transcript.zip
+transcript_slim: src/data/transcripts/150-transcript-slim.json
 youtube: https://www.youtube.com/watch?v=U-rrFjUYF9I
 
 ---
