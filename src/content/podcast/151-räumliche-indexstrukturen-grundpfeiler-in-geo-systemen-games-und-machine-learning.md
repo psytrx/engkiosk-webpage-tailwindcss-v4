@@ -1,6 +1,6 @@
 ---
 advertiser: ''
-amazon_music: ''
+amazon_music: https://music.amazon.com/podcasts/c35a09fe-4116-4e04-8f68-77d61b112e46/episodes/e8591296-a5ab-4db8-b0bc-f6dfe4e6e4d4/engineering-kiosk-151-r%C3%A4umliche-indexstrukturen-grundpfeiler-in-geo-systemen-games-und-machine-learning
 apple_podcasts: https://podcasts.apple.com/us/podcast/151-r%C3%A4umliche-indexstrukturen-grundpfeiler-in-geo-systemen/id1603082924?i=1000678240985&uo=4
 audio: https://audio1.redcircle.com/episodes/a59e1de6-35d0-496b-8612-0ddd4707105b/stream.mp3
 chapter:
