@@ -73,7 +73,10 @@ six_user_needs: []
 - name: Wolfi Gassler
   transcriptLetter: B
 spotify: https://open.spotify.com/episode/4HhwhtrwdhWIyPbwRsaDdF
-tags: []
+tags:
+- Software Engineering
+- Datenbanken
+- Backend
 title: "#151 R\xE4umliche Indexstrukturen: Grundpfeiler in Geo-Systemen, Games und\
   \ Machine Learning"
 transcript_raw: ''
