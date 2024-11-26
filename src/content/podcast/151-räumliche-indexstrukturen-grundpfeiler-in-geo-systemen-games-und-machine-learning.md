@@ -68,9 +68,10 @@ length_second: 3806
 pubDate: 2024-11-26 05:00:00+00:00
 rtlplus: ''
 six_user_needs: []
-speaker:
 - name: Andy Grunwald
+  transcriptLetter: A
 - name: Wolfi Gassler
+  transcriptLetter: B
 spotify: https://open.spotify.com/episode/4HhwhtrwdhWIyPbwRsaDdF
 tags: []
 title: "#151 R\xE4umliche Indexstrukturen: Grundpfeiler in Geo-Systemen, Games und\

@@ -1,0 +1,1240 @@
+{
+  "language_code": "de",
+  "audio_url": "https://cloud.inlupus.at/s/wQNiaQbmLWzG2Ms/download/ep151_rtrees.mp3",
+  "punctuate": true,
+  "format_text": true,
+  "dual_channel": false,
+  "multichannel": null,
+  "audio_channels": null,
+  "webhook_url": null,
+  "webhook_auth_header_name": null,
+  "webhook_auth_header_value": null,
+  "audio_start_from": null,
+  "audio_end_at": null,
+  "word_boost": [],
+  "boost_param": null,
+  "filter_profanity": false,
+  "redact_pii": false,
+  "redact_pii_audio": false,
+  "redact_pii_audio_quality": null,
+  "redact_pii_policies": null,
+  "redact_pii_sub": null,
+  "speaker_labels": true,
+  "speakers_expected": 2,
+  "content_safety": false,
+  "content_safety_confidence": null,
+  "iab_categories": false,
+  "custom_spelling": null,
+  "disfluencies": false,
+  "sentiment_analysis": false,
+  "auto_chapters": false,
+  "entity_detection": false,
+  "summarization": false,
+  "summary_model": null,
+  "summary_type": null,
+  "auto_highlights": false,
+  "language_detection": false,
+  "language_confidence_threshold": null,
+  "language_confidence": null,
+  "speech_threshold": null,
+  "speech_model": null,
+  "id": "db432abd-b213-494a-8a3c-95885d935b78",
+  "status": "completed",
+  "error": null,
+  "utterances": [
+    {
+      "text": "Willkommen zu einer weiteren Episode vom Engineering Kiosk, deinem deutschsprachigen Softwareentwicklungspodcast. Die Welt ist groß und wird weiter digitalisiert. Um alles auffindbar und durchsuchbar zu machen, werden Geodaten von alles und jedem festgehalten. Nicht nur Längen und Breitengrade, wenn es sich um die Erde handelt, sondern auch Höhe bzw. Tiefe Zeit und etliche andere Metadaten. Diese Art von Daten nennen sich spatial data oder auch geospatial data. Um in großen Datenmengen einen schnellen Zugriff zu gewährleisten, verwenden Softwaresysteme wie z.B. datenbanken Indexstrukturen, auch Indizes genannt, eine zusätzliche Form der Speicherung durch die Nutzung hochoptimierter Datenstrukturen. Welche Indexstrukturen werden jetzt eigentlich bei geospatialen Daten benutzt? Dies ist das Thema dieser Episode. Wir sprechen über die Anwendungsfälle von Geospatial Data, warum eine klassische Struktur wie ein b Baum für diese Art von Daten nicht geeignet ist, was Grid Files, Quad Trees, KD Trees, R Trees und Geohashing ist und wie diese funktionieren. Ob all dies selbst implementiert werden muss oder ob wir bereits existierende Datenbanksysteme nutzen können und klären, was der Fluch der Dimensionalität ist und wie dies mit dem Thema AI zu tun hat. Wir springen rein, los geht's. Das heutige Episodenthema hast du Wolfgang vorgeschlagen und mitgebracht. Das freut mich sehr. Deswegen erklär uns doch mal, welches Thema du mitgebracht hast und warum das für dich relevant ist bzw. Was dich motiviert hat, dieses Thema mal aufzubringen.",
+      "start": 3960,
+      "end": 95252,
+      "confidence": 0.90463686,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Also wir hatten ja kürzlich eine Episode über Doom, und zwar die Episode 146. Und die war ja eigentlich nur mäßig begeistert über diese Episode, weil dieses Ego shooter Gaming ja nicht so meines ist. Aber du hast in dieser Episode auch einen Algorithmus erklärt, und zwar das Binary Space Partitioning, wo es darum geht, eben herauszufinden, was gerendert wird und was gerade sichtbar ist und solche Dinge in der d und d Welten. Und das hat mir natürlich sehr stark an meine datenbankräumlichen Indizes erinnert, weil das natürlich ganz ähnliche Algorithmen sind, vor allem die Algorithmen, die dem Ganzen zugrunde liegen und die aber natürlich in der Datenbankwelt super wichtig sind. Also viele erinnern sich vielleicht an die mongodb Zeiten zu Beginn, irgendwo so 2010 aufwärts. Da war das coole, tolle Feature von mongodb, dass es special Indizes zur Verfügung stellt, was damals MySQL oder so nicht zur Verfügung gestellt haben. Und dann sind dann alle auf MongoDB aufgesprungen. Das war wirklich ein wichtiger Grund z.B. warum man mongodb dann verwendet, weil man da drin irgendwelche Maps oder irgendwelche Geokoordinaten speichern kann und auch wieder schnell abfragen.",
+      "start": 95316,
+      "end": 160980,
+      "confidence": 0.91612625,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "So, du hast jetzt gerade Buzzword Bingo gespielt, meine Karte ist schon wieder halb voll, hilfe mir auf die Sprünge.",
+      "start": 161060,
+      "end": 166292,
+      "confidence": 0.857172,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Was für eine Karte, in was für ein Koordinatensystem speicherst du da deine Karte, deine Bingo Karte?",
+      "start": 166356,
+      "end": 170796,
+      "confidence": 0.8187747,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "In einem d Koordinatensystem.",
+      "start": 170868,
+      "end": 172708,
+      "confidence": 0.95155,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Das ist schon kompliziert genug.",
+      "start": 172844,
+      "end": 174196,
+      "confidence": 0.891952,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "D, du hast jetzt gerade ein paar Buzzwords gedroppt, räumliche Indexstrukturen, spatial bei Geoinformationen, Längen und Breiten, gerade komme ich gerade noch mit, die hast du auch gedroppt. Wovon reden wir hier? Was sind räumliche Indexstrukturen, was ist spatial?",
+      "start": 174268,
+      "end": 189236,
+      "confidence": 0.8810559,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Spatial heißt nichts anderes als räumlich und es geht eigentlich darum, wenn ich irgendwelche Daten speichern möchte, die räumlich verortet sind, das heißt in einem Koordinatensystem, in einem d Raum, in dem d Raum, in einem Spiel auf der Erde, auf einer Weltkarte, dann brauche ich neue Indexstrukturen, weil die klassischen Indexstrukturen, die man so kennt aus den Datenbanken, irgendein b Baum z.B. nicht mehr performant funktionieren.",
+      "start": 189308,
+      "end": 214896,
+      "confidence": 0.88872087,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Warum ein b Baum nicht mehr ausreicht, kommen wir gleich. Aber praktisch gesehen sprechen wir hier über Kartendienste, Google Maps, TomTom, OpenStreetMap, wir sprechen über Navigation, welche Straße muss ich nehmen oder wovon sprechen wir hier?",
+      "start": 214968,
+      "end": 229592,
+      "confidence": 0.91714525,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Also bei den Indexstrukturen, die verwendest du jetzt nicht unbedingt zur Navigation, also da helfen die Indexstrukturen natürlich nur bedingt, aber grundsätzlich musst du mal Objekte finden in einer räumlichen Darstellung. Das heißt, das kann eben auf einer Karte irgendein Punkt sein, Duisburg, die Stadt. Das kann aber auch sein, so klassische Anfragen, wenn du jetzt in Duisburg sitzt, was für coole Bars hast du in der Nähe, da machst du eine Umkreissuche, also eine nearest neighbor Suche, das ist eine ganz klassische Anfrage in so einem System. Navigation natürlich auch, wenn du verschiedene Punkte hast, wobei Navigation dann schon nochmal ein komplexeres Thema ist. Also es wird nicht rein in der Datenbank normalerweise abgefrühstückt. Es kann sein, dass du einfach deine User abgespeichert hast, wo die leben, was für eine Straße, was für eine Adresse die haben und du willst z.B. geotargeting machen bei einer Werbungsausspielung, du willst nur die Leute in Duisburg bespielen mit Werbung, da musst du natürlich alle Leute, alle User in Duisburg finden. Das heißt, du machst wieder eine Anfrage, gib mir alle User aus Duisburg oder in dem Umkreis von Duisburg, z.B. bei Modellierungssachen von Katastrophen, Stadtplanung, Sozialstudien, überall wo du in irgendeiner Form Geoinformationen hast, musst du natürlich schnell auf geopunkte zugreifen können. Und in einem großen Datenbanksystem machst du das üblicherweise über den Index.",
+      "start": 229736,
+      "end": 306332,
+      "confidence": 0.8997252,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Und wenn wir mal ganz kurz auf der generellen Ebene bleiben. Zweitausendein das ganze Feld nenne ich dann spatial geospatial oder wie google ich danach?",
+      "start": 366396,
+      "end": 374802,
+      "confidence": 0.9404916,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Also im Englischen nennt sich es oft geospatial indizes oder index oder Geoinformationssysteme, so als Gesamtschlagwort, als deutsches. Also es kommt darauf an, in was für einem Bereich du bist. Aber spatial Index ist das ganz allgemeingültige oder räumliche Indexstruktur, egal ob das jetzt kartenbezogen ist oder im Gaming Bereich. Ÿousand virtuellen d Welt hast du das natürlich genauso. Nicht nur in der echt d Kartenwelt. Z.B. neben Google Maps.",
+      "start": 374826,
+      "end": 404024,
+      "confidence": 0.84107184,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Jetzt hast du schon das Wort Räume genannt. Wovon reden wir denn hier? Weil du hast verschiedene Beispiele. Du hattest irgendwas mit Modellierung von Katastrophen genannt, du hattest aber auch Doom, was ja eine d Welt ist, wie wir.",
+      "start": 404112,
+      "end": 415392,
+      "confidence": 0.9474387,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Gelernt haben in Episode 146. Genau.",
+      "start": 415416,
+      "end": 418008,
+      "confidence": 0.96182835,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Du hattest aber auch von D Welten gesprochen. Also sprechen wir hier wirklich von jeder Art von Raum, zweidimensional, dreidimensional und oder vierdimensional oder mehrdimensional.",
+      "start": 418064,
+      "end": 428186,
+      "confidence": 0.8761552,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Genau. Es gibt natürlich noch mehr Dimensionen, also gerade wenn man jetzt aus dem klassischen Welten Thema weggeht, wo man irgendwo bei D eigentlich angekommen ist maximal. Also mehr als d Räume in der Welt gibt es halt eigentlich nicht. Aber wenn man dann weitergeht, z.B. wenn du im Machine Learning Bereich ganz viele Dimensionen hast, von denen du lernen willst, also da hast du verschiedene Features, Eigenschaften von Objekten, dann kann es natürlich sein, dass du plötzlich 100 Dimensionen theoretisch hast und dann musst du in einem 100 dimensionalen Raum operieren. Also auch im Machine Learning Bereich ist es sehr stark ein Thema und da helfen dir natürlich Indexstrukturen genauso. Aber ganz klassisch fängt man mal eigentlich bei D an, weil für d, das ist eine klassische Spalte männlich weiblich, z.B. da reicht ein d Index, ein b Baum. Aber sobald du auf D wechselst, brauchst du spezielle Indexstrukturen.",
+      "start": 428298,
+      "end": 479526,
+      "confidence": 0.9072188,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Lass uns das mal ganz kurz übersetzen. Okay. Du hast gerade gesagt ein d, klassische Spalte männlich weiblich, D. Ich würde mal sagen, das klassische Koordinatensystem xy d komme ich auch noch mit Koordinatensystem xy und dann vielleicht noch mit einer Höhe oder beziehungsweise Tiefe, also Höhe für Berge, Tiefe für Meeresapplikationen oder ähnliches. Ist das richtig? Da habe ich dann die Z Achse, glaube ich, nennt man das. Und du sagtest eigentlich D gibt es nicht, aber meines Wissens nach gibt es d, weil du dann hast du natürlich die xyz Achse plus die Zeit, wie z.B. bei Verkehrsinformationen, richtig?",
+      "start": 479558,
+      "end": 512908,
+      "confidence": 0.9263516,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Ja, Die Zeit wird so gerne als D irgendwie dazu genommen, aber im Prinzip sind es dann halt wahllose Dimensionen, die du dazu nimmst. Das heißt, du kannst da auch dann auf die Objekte, keine Ahnung, irgendeine Farbe dazunehmen, hast du auch eine Dimension mehr. Also da bist du dann im klassischen Machine Learning drin, wo du einfach jede Eigenschaft als eine Dimension annimmst. Und wenn du dann im Raum z.b. Ähnliche Objekte suchst, dann hast du auf der Dimension Farbe Ÿousand eben alle, die rot sind z.B. liegen dann in der Dimension Farbe nah zueinander. Und so kannst du über alle Dimensionen z.B. Ähnliche Objekte finden, was ja gerade beim Machine Learning im Clustering ganz wichtig ist. Also du hast ganz viele Objekte in deiner Datenbank und willst dann Cluster bilden, was ist denn ähnlich zueinander? Du hast z.b. ganz viele Jobprofile auf LinkedIn und wirst herausfinden, was sind ähnliche Jobprofile. Und dann vergleichst du natürlich ganz viele Dimensionen auf den Jobprofilen, um danach zu Clustern und ähnliche Jobs zu finden. Also das passiert eigentlich in ganz vielen Informationssystemen. Und da kannst du natürlich beliebig viele Dimensionen hinzufügen. Da gibt es dann diese key nearest neighbor Algorithmen, vielleicht hat es jemand schon mal gehört, Machine Learning, ein klassischer Ansatz.",
+      "start": 513044,
+      "end": 580134,
+      "confidence": 0.9096966,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Aber ich meine, die vierte, fünfte, sechste Dimension, je nachdem, was man modellieren möchte, ist ja schon relevant. Wir hatten gerade über jetzt Verkehrsdaten gesprochen, mal ganz kurz, z.B. einen Stau. Einen Stau, wirklich, der ist ja nicht den ganzen Tag da. Oder bei der Modellierung von Katastrophen, weiß ich jetzt nicht, eine Schneelawine, die tritt ja zu bestimmten Uhrzeiten auf oder zu bestimmten Wetterkonditionen und dann bewegt die sich und je nach verstrichener Zeit wird die Modellierung ja anders und dann verschwinden vielleicht Objekte, weil sie von der Schneelawine dann irgendwie überdeckt werden. Also jetzt mal praktisch gesehen. Also deswegen ist die erweiterte Dimension über drei Dimensionen ja schon relevant oder nicht?",
+      "start": 580222,
+      "end": 616132,
+      "confidence": 0.89668566,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Es kommt immer darauf an, ob du die im Index brauchst. Und ganz allgemein gesprochen, ein Index ist ja immer dafür da, um eine Frage zu beantworten. Also wenn du eine Query hast, wirst du schneller deine Ergebnisliste bekommen. Das ist ja die Grundidee von dem Index. Wenn du einen B Baum oder eine klassische x beliebige Indexstruktur in der Datenbank aufbaust, dann baust du die ja über diese Spalten, über deine Dimensionen, weil eigentlich ist jede Spalte fast eine Dimension. Dann nimmst du diese Spalten, die dir helfen, deine Frage zu beantworten. Und bei räumlichen Indexstrukturen ist es halt meistens z.B. xy, obwohl du natürlich am Objekt dann noch weitere Informationen, weitere Dimensionen gespeichert hast. Aber für die Anfrage, was ist z.B. rund um dich jetzt, was gibt es für Restaurants und Bars rund um dich herum? Machst du mal eine nearest neighbor query, die einfach alle Objekte z.B. rund um dich herum findet im Umkreis von einem KM. Und danach filterst du noch mal drauf, okay, Bars oder die Bars, die dir persönlich am besten gefallen oder matchen mit deinem Profil. Also das würde dann im nächsten Schritt passieren. Und die klassische räumliche Anfrage, die nearest Neighbor Anfrage, ist wirklich nur auf xy Koordinaten.",
+      "start": 616246,
+      "end": 684172,
+      "confidence": 0.9328635,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Mein b Baum Counter, den ich hier insgeheim mitführe, ist bereits auf vierte. Du hast aber noch nicht erklärt, was ein b Baum ist.",
+      "start": 684236,
+      "end": 691068,
+      "confidence": 0.9678888,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Haben wir noch gar keine Episode zum B Baum gemacht eigentlich?",
+      "start": 691244,
+      "end": 694036,
+      "confidence": 0.9709491,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Meines Wissens ist es noch nicht, ne.",
+      "start": 694108,
+      "end": 695484,
+      "confidence": 0.6735643,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Okay, dann ganz schnell erklärt. Also der B Baum ist kein Binärbaum, obwohl er B Baum heißt, ist eigentlich die Indexstruktur in Datenbanken und ist im Gegensatz zum Binärbaum ein Baum, der in jedem Knoten sehr viele Kinderknoten hat. Also Binärbaum hat immer zwei Kinder und ein b Baum hat so üblicherweise 200 Kinderknoten oder noch mehr. Also einen sehr hohen Verzweigungsgrad. Und dadurch ist man sehr schnell in dem Baum, wenn man in dem Baum etwas sucht. Weil mit jedem Schritt, mit jedem Knoten, den man in den Baum nach unten geht, um Objekte zu finden, zweitausendein, also die Ergebnisliste, teilt man den Ergebnisraum durch 200. Z.B. wenn du z.B. 1000 Objekte hast und einen B Baum hast, dann hast du eigentlich mit einem Schritt im B Baum das Ganze auf fünf Zwischenergebnisse reduziert, schon mit einem Vergleich mit einem Knoten im B Baum. Und darum ist er so gut geeignet für Millionen von Daten, für ganz große Datenmengen in der Datenbankwelt, weil der eben so einen hohen Verzweigungsgrad. Und im Prinzip funktioniert es aber wie bei einem Binärbaum, wo du halt zwei Kinderknoten hast. Du entscheidest einfach den Wert, den du suchst. Ist der kleiner oder größer? Kleiner gehst du nach links im Baum, größer gehst du nach rechts im Baum. Und wenn du 200 Kinder hast, dann hast du halt 200 Jacks in einem Knoten und gehst dann jeweils in den Subknoten und suchst dann dort weiter und gehst so weit runter in den Baum, bis du dein Ergebnis gefunden hast.",
+      "start": 695572,
+      "end": 772358,
+      "confidence": 0.9221005,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Ich finde es total verwirrend, dass es einen binary tree gibt und einen b Baum, der b Baum aber nicht der binary Tree ist. Deswegen habe ich mir natürlich die Frage gestellt, wie heißt er denn wirklich? Laut Wikipedia gibt es keine Erklärung für die Herkunft des Namens b Baums. Die häufigste Interpretation ist, dass B für balanciert steht. Weitere Interpretationen sind B für Bayer, denn einer der Erfinder ist Rudolf Bayer und so weiter und so fort. Oder B steht für Barbara, so hieß die Frau von Herrn Bayer. Also es gibt ganz viele Interpretationen, wofür B steht. Anscheinend ist das wirklich einfach nur der b Baum. Aber warum ist denn jetzt der b Baum selbst für Geodaten nicht geeignet? Weil du hast ja die ganze Zeit gesagt, schlechter Kandidat.",
+      "start": 772374,
+      "end": 813756,
+      "confidence": 0.9170759,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Also du kannst natürlich die x und die y Koordinate, wenn wir jetzt bei einem ganz einfachen Beispiel, bei einem d Beispiel bleiben, natürlich auch in einem b Baum ablegen. Das funktioniert grundsätzlich. Das Problem was du hast, du hast natürlich da eine Abhängigkeit zwischen x und y. Das heißt, du kannst dir das so vorstellen, du suchst im ersten Schritt nach der x Koordinate und im zweiten Schritt nach der y Koordinate. Wenn du sagst, du willst eine Umkreissuche machen von Duisburg 1 km um dich herum, du spannst dann Rechteck auf, wo du jetzt bist, im Zentrum bist du von diesem Rechteck und du sagst, in diesem Rechteck will jetzt alle Bars oder Restaurants finden, die es gibt. Dann würdest du zuerst mal nach der x Achse filtern, sozusagen über einen b Baum. Und das heißt aber, wenn du eine Range Query, also zwischen zwei Zahlen die x Koordinate von dem Rechteck oben und unten z.b. verwenden würdest, dann würdest du deinen Suchraum einschränken auf die x Koordinate und die y Koordinate würde dann komplett um den Globus einmal herumgehen. Das heißt, du würdest als Zwischenergebnis ein riesengroßes Rechteck einmal um den Globus herum bauen. Das Rechteck wäre zwar nicht so hoch, weil das hast du ja eingeschränkt, die Höhe, aber die Breite geht um den gesamten Globus herum.",
+      "start": 813828,
+      "end": 885578,
+      "confidence": 0.9127698,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Hilf mir mal eben auf die Sprünge. Was ist eine Range Query?",
+      "start": 885634,
+      "end": 888002,
+      "confidence": 0.86216664,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Also Range Query heißt eigentlich nur, dass du zwischen zwei Zahlen, also klassisches Between, zwischen drei, du wirst alle Ergebnisse zwischen drei und fünf, nennt sich range queries, wo du einfach einen unteren Wert und den oberen Wert angibst. Ein Rechteck im d Raum ist auch eine range query, aber eine komplexere, weil du hast immer zwei Koordinaten, x und y. Das heißt du machst eine Einschränkung auf x von bis und eine Einschränkung von y von bis, damit du ein Rechteck bekommst.",
+      "start": 888106,
+      "end": 914094,
+      "confidence": 0.9367375,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Aber hier in dem Beispiel hast du ja jetzt gerade Längen und Breitengrade mit x und y Koordinaten gleichgesetzt. Ist das korrekt?",
+      "start": 914222,
+      "end": 920206,
+      "confidence": 0.94933045,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Genau.",
+      "start": 920318,
+      "end": 920742,
+      "confidence": 0.98656,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Was ja eigentlich falsch ist. Richtig?",
+      "start": 920806,
+      "end": 922406,
+      "confidence": 0.9308467,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Kommt drauf an, was du für die Koordinatensystem verwendest, aber der Einfachheit halber kann man es mal einfach x und y nennen. Natürlich, je nachdem, was du für Koordinatensysteme hast, hast du eine Krümmung und musst es berechnen. Und je nachdem, was du für ein Koordinatensystem hast, hast du ein planares Feld oder nicht. Aber das ist dann relativ komplex. Stell es dir mal ganz simpel unter x und y, das reicht eigentlich schon. Und so kann man eigentlich auch recht easy rechnen.",
+      "start": 922478,
+      "end": 944562,
+      "confidence": 0.9087365,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Genau, worauf ich hinaus möchte, ist nämlich genau auf das, was du gesagt hast. Es gibt verschiedene Koordinatensysteme und es gibt die Erdkrümmung. Denn bei der Recherche zu dieser Episode bzw. Bei der Vorbereitung, habe ich mir die Frage gestellt, sind Längen und Breitengrade nicht einfach x und y Koordinaten? Ja, und die Antwort ist nein, sind sie nicht, weil es natürlich noch eine Erdkrümmung gibt. So ist zumindest unsere Welt aufgebaut. Und je nachdem, wie man den Globus auf eine d Fläche projiziert, wie der Vorhang schon sagte, welches Koordinatensystem man da auch nimmt, da gibt es dann verschiedene Eigenheiten und die haben auch einen Einfluss auf die Berechnung. Deswegen kann man das leider nicht so nutzen. Faszinierend, ich wusste gar nicht, dass es mehrere Koordinatensysteme gibt, aber in dem Bereich beschäftige mich auch gar nicht so.",
+      "start": 944706,
+      "end": 986614,
+      "confidence": 0.93542963,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Wobei du natürlich sagen musst, wenn du jetzt ein kleines Rechteck aufbaust, dann kannst du eigentlich auf die Erdkrümmung verzichten, weil die Erdkrümmung in deinem Feld jetzt relativ klein ist. Weil wenn du sagst, in einem KM Umkreis von Duisburg, da hast du keine großen Probleme mit der Erdkrümmung. Wenn du natürlich mit Distanzen über den gesamten Erdball in irgendeiner Form arbeitest oder so, da musst du dann Anpassungen machen. Für so eine lokale Suche hast du eigentlich selten ein Problem und da kannst du recht einfach einfach auf die x und y Koordinaten zugreifen.",
+      "start": 986662,
+      "end": 1015486,
+      "confidence": 0.9581964,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Okay, verstehe. Ein b Baum funktioniert nicht, schade.",
+      "start": 1015558,
+      "end": 1018682,
+      "confidence": 0.8926287,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Also er funktioniert schon grundsätzlich, aber du hast sehr große Zwischenergebnisse, weil du eben z.b. so ein Rechteck zuerst um den ganzen Globus spannst und erst dann im zweiten Schritt filterst du auf die Breite von diesem Rechteck, damit du wirklich nur ein Teil bekommst. Und wenn du natürlich eine Karte hast, wo, so wie Google z.B. jetzt, wo Milliarden von Objekten wahrscheinlich drauf sind, dann sind natürlich in dem kompletten Band einmal um den Globus herum extrem viel Zwischenergebnisse und das ist nicht performant. Wenn du jetzt Objekte in deiner Datenbank hast, ist es komplett egal. Neben b Baum funktioniert genauso, brauchst du wahrscheinlich gar keinen Index. Bei Objekten kannst du Brute Force durchgehen und bist fast gleich schnell. Aber sobald du natürlich mehr Datenmengen hast, größere Datenmengen, dann musst du natürlich schon damit arbeiten, mit so speziellen Indexstruktur.",
+      "start": 1018826,
+      "end": 1063534,
+      "confidence": 0.9023059,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Was wäre denn eine solche spezielle Indexstruktur?",
+      "start": 1063622,
+      "end": 1066654,
+      "confidence": 0.89587855,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Das einfachste ist eigentlich ein Grid File, ein sogenanntes. Das ist nichts anderes, als was wir jetzt gerade besprochen haben. Wir bauen so eine xy Struktur auf, ein großes Feld und speichern das z.B. in einem zweidimensionalen Array einfach ab. Ganz easy. Dann kann man relativ klar sagen, du bist eine Umkreissuche machen in alle Felder rundherum um Duisburg weiß. Duisburg sitzt bei Koordinate drei und fünf, also x, y. Berechne mir alle Felder rundherum, checke was ist in diesen Feldern. Damit habe eine Umkreissuche realisiert. Das wäre so die naivste Herangehensweise natürlich.",
+      "start": 1066742,
+      "end": 1101341,
+      "confidence": 0.9147058,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Das ist also recht gut mit einem klassischen Schachbrett zu vergleichen.",
+      "start": 1101405,
+      "end": 1104861,
+      "confidence": 0.9185182,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Genau. Hat wahrscheinlich auch jeder schon mal programmiert, zweidimensionales Array. Aber ist natürlich klar, sobald es groß wird, wenn du so ein Schachbrett über die gesamte Erde wieder aufspannst, dann hast du natürlich ein Problem, weil du ein riesiges Schachbrett hast. Dieser Index wird extrem groß, ist nicht so flexibel. Vor allem wenn du sogenannte Spar Data hast. Das heißt du hast. Das heißt, du hast in manchen Bereichen extrem viele Daten und in manchen anderen ganz wenig. Im Meer hast du z.b. ganz wenig Daten, da ist halt wenig. Hingegen in Duisburg selbst hast du wahrscheinlich ganz viele Daten, weil da hast du Restaurants, Bars und Shops und Straßen und Häuser und keine Ahnung was alles. Und damit hast du in den Kästchen, in deinen Schachbrettkästchen ganz viele Daten, wenn es am Land ist und ganz wenig im Meer. Trotzdem musst du dieses gesamte Schachbrett natürlich aufrechterhalten und die Memory haben in irgendeiner Form. Ÿousand. Und das hat man ganz allgemein bei so räumlichen Index Strukturen ganz oft. Du hast halt immer irgendwo Bereiche, wo ganz viel los ist. Auch im Gaming Bereich in irgendeinem Level, da hast du wahrscheinlich ganz viele Monster bei dir rumrennen, wo du gerade bist und viele andere Objekte und nicht irgendwo, wo gerade wenig los ist. Also du hast immer solche Anhäufungen von Daten und die machen natürlich für Indexstrukturen immer Probleme, wenn du ganz harte Raster hast, weil du musst trotzdem alle Raster, wo wenig los ist, mitspeichern. Zweitausendein und mit beachten.",
+      "start": 1104925,
+      "end": 1184150,
+      "confidence": 0.91702306,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Nur um das richtig zu verstehen, die gespeicherten Daten, also die Values in deinem zweidimensionalen Array jetzt, die sind nicht das Problem, sondern eigentlich für die Indexstruktur sind die leeren Felder, die du kontinuierlich mitführen musst, zwangsläufig.",
+      "start": 1184230,
+      "end": 1200518,
+      "confidence": 0.8860568,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Es sind natürlich die vielen Objekte schon auch ein Problem. Jetzt stell dir mal vor, du machst ein Schachbrettmuster 10 mal 10 und jetzt hast du ein Feld, wo ganz viele Punkte drin sind. Zweitausendein, dann hast du natürlich das Problem, du hast zwar diese 10 mal 10 Matrix, bist ganz schnell in dem Feld drinnen, wo du hin willst, aber jetzt hast du plötzlich in dem einen Feld Millionen von Datenpunkte abgespeichert. Das heißt, innerhalb von diesem Feld musst du dann wieder sequenziell durch alle durchgehen. Das heißt, du verlierst den kompletten Vorteil von deinem Schachbrett, weil eigentlich die Maße liegt in einem Feld und dort ist es sequenziell einfach gespeichert oder mit Überlaufketten oder so, wie man es ganz klassisch kennt, zweitausendein und dann hast du natürlich wieder den ganzen Vorteil verloren.",
+      "start": 1200574,
+      "end": 1238458,
+      "confidence": 0.9239688,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Du redest jetzt davon, wenn ich als Value oder als Feld Value nochmal eine Liste hätte, aber was ist, wenn ich da denn wieder eine Baumstruktur nehme oder ähnliches, wo halt, dass die Travisierung halt relativ schnell geht.",
+      "start": 1238554,
+      "end": 1250714,
+      "confidence": 0.9148658,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Das ist ja auch die Idee von den Indexstrukturen, dass die üblicherweise dann den Raum immer kleiner machen und immer weiter aufsplitten. Also wieder ein Schachbrett, ein Unterschachbrett und ein Unterschachbrett bauen. Und dann hast du natürlich die Möglichkeit, und da kommt es dann wieder darauf an, wie flexibel das Ganze ist, aber bei klassischen Grid Files gibst du natürlich am Anfang einmal ein Grid an und wenn das nicht klein genug ist, dann hast du auch nichts daraus gewonnen. Und wie gesagt, die Lernfelder musst du auch alle mitspeichern, weil du halt hart einfach eine Aufteilung gemacht, große Schach.",
+      "start": 1250762,
+      "end": 1281148,
+      "confidence": 0.9203023,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Weißt du zufällig, wo Grid Files zur Anwendung kommen, außer in der Uni bei einer Übungsaufgabe?",
+      "start": 1281204,
+      "end": 1285972,
+      "confidence": 0.8414413,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Ich glaube in großen Datenmengen gar nicht, würde ich sagen. Also das ist halt so was, wenn man ganz genau weiß, man hat ausgeglichene Daten, man hat überall Daten, man kennt ganz genau Anfrage Muster, dann kann man natürlich solche ganz klassischen Grid Files verwenden, aber das ist eigentlich so der naivste Ansatz, der natürlich jetzt nicht sehr performant ist bei großen Datenstruktur.",
+      "start": 1286036,
+      "end": 1305990,
+      "confidence": 0.9276205,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Okay, was würdest du nach Gridfiles empfehlen, wenn man sagt, ich habe die Indexstruktur, Grid Files outgegrown, bin gewachsen?",
+      "start": 1306030,
+      "end": 1312958,
+      "confidence": 0.86863893,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Also eine sehr ähnliche Struktur, die man auch ganz oft hört, sind sogenannte Quad Trees. Da kommt jetzt schon das erste Mal Tree drin vor, also es ist irgendwo eine Baumstruktur und Quad heißt vier. Das heißt nichts anderes, als wir bauen auch wieder so ein Schachbrett eigentlich auf, aber wir teilen jeden Raum in vier Subräume auf. Also das heißt, wir machen da ein Kreuztuch am Anfang über unseren Raum, d Raum, bekommen vier Subräume, jeder Raum wird dann wieder vier geteilt und so geht es dahin und man wird immer, immer kleiner. Selben Nachteile, zweitausendein, das ist fixiert alles. Es wächst natürlich exponentiell, das heißt ich bekomme immer wieder vier Subräume und jeder Raum hat wieder vier Subräume und so weiter. Das heißt es spannt sich sehr schnell natürlich ein großes Muster auf und wenn ich dann wieder wenig Daten nur in manchen Unterbereichen habe, muss sie überall diese komplexe Struktur mitführen und ist darum auch nicht sehr gut geeignet. Aber für, würde ich mal sagen, für mittelgroße Datenmengen kann man sowas vielleicht schon verwenden und man ist halt schnell in der Programmierung, wenn man Quadries nachprogrammiert, ist man relativ schnell, das ist relativ starr, muss man keine großen Algorithmen haben, die Felder sind immer gleich groß und man kommt relativ schnell ans Ziel und man.",
+      "start": 1313094,
+      "end": 1381142,
+      "confidence": 0.93761915,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Kommt relativ schnell auch in die Tiefe, oder?",
+      "start": 1381166,
+      "end": 1383238,
+      "confidence": 0.99292624,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Was ja grundsätzlich nicht schlecht ist, weil umso schneller in die Tiefe komme, umso schneller wird mein Suchraum verkleinert, mit jedem Schritt wird er geviertelt und das ist natürlich schon gleich wie beim b Baum, wo ich quasi den Suchraum um ein 200 fachstes immer verkleinere, bekomme da halt immer 1/4 und werde dadurch auch sehr schnell klein und kann meine Punkte schneller finden. Das ist ja die Idee von dem Baum. Ich gehe vom Baum von oben nach unten in die Tiefe und mein Suchraum wird immer verkleinert mit jedem Schritt.",
+      "start": 1383334,
+      "end": 1411992,
+      "confidence": 0.94147927,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Okay, stelle ich mir aber jetzt eine Weltkarte vor, dann ist das Meer weiterhin ein Problem, weil es hat ja ganz viel leere Elemente, wenn man jetzt, wenn man jetzt nicht die Schiffe kartografieren möchte.",
+      "start": 1412056,
+      "end": 1421664,
+      "confidence": 0.90219116,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Ja, und sogar die sind im Vergleich natürlich zu irgendwelchen Ballungszentren dasselbe mit den Alpen. Du hast da zwar ein paar Gipfel auf den Bergen, aber klar, im Vergleich zu einer Großstadt hast du ganz andere Datenmengen als jetzt irgendwo am Berg oder im Meer oder wo Felder sind bei dir um die Ecke, irgendwo da, wo nur Felder und Solaranlagen irgendwo stehen, da sind natürlich auch viel weniger Punkte als jetzt in der Großstadt.",
+      "start": 1421792,
+      "end": 1442780,
+      "confidence": 0.8875611,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Okay, dann schieben wir den Vierfachbaum, machen wir das zur Seite. Was gibt es noch?",
+      "start": 1442820,
+      "end": 1446412,
+      "confidence": 0.9052787,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Jetzt kommen wir eigentlich so in den Bereich, der wirklich Anwendung findet. Also die klassische Indexstruktur, die man auch ganz oft hört und die wirklich auch verwendet wird in Datenbanksystemen oder in allgemeinen Informationssystemen, sind die KD Bäume, KD Trees. Die sind jetzt ein bisschen intelligenter zu den Quadrichtungen. Das K steht übrigens für die Dimension. Also wenn ich zwei Dimensionen habe, dann habe ich einen D Baum, sonst habe ich einen D Baum und so weiter. Das Konzept ist ein ähnliches, ich splitte meinen Raum auf, aber ich mache das in einem intelligenteren Algorithmus. Und zwar orientiere ich mich an meinen Punkten, an meinen Objekten, die in dem Raum drinnen liegen. Das heißt, ich splitte meinen Raum immer da, wo es ein Objekt gibt. Das heißt, ich fange einmal an, halbiere den Raum bei dem Punkt, der in der Mitte ist, möglichst mittig z.b. dann splitte ich den Raum wieder, such mir wieder einen Punkt raus, dann splitte ich wieder, suche mir wieder einen Punkt raus. Das heißt, die Schnittlinie liegt immer genau über einem Objekt. Das heißt, ich suche mir ein Objekt und genau da mache ich die Schnittlinie durch. Das heißt, meine Räume sind dann ganz unterschiedlich groß. Und da, wo es weniger Punkte gibt, gibt es weniger Subräume und das sind größere Rechtecke. Und da, wo es ganz viele Punkte gibt, da geht man dann in die. Also man könnte das so als intelligenten Quad Tree eigentlich sehen.",
+      "start": 1446476,
+      "end": 1527860,
+      "confidence": 0.9028027,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Ich finde das schön, wie wir immer und immer und immer wieder bei Doom landen. KD Trees sind Spezialfälle von Binary Space Partitioning Trees.",
+      "start": 1527900,
+      "end": 1538872,
+      "confidence": 0.9231921,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Siehst du, sind alles eigentlich Algorithmen, die auch extrem alt sind, muss man auch dazu sagen. Also viele Algorithmen, die wir da hier besprechen, sind aus den ERN und sind immer noch Stand der Technik und hat eigentlich teilweise auch gar nichts mehr gegeben seit den ERN. Ist immer noch das Zeug, was in den ERN erfunden wurde, ist heutzutage Standard in den ganzen Systemen.",
+      "start": 1538956,
+      "end": 1559072,
+      "confidence": 0.9673789,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Okay, das bedeutet eigentlich, der Baum ist nicht balanciert. Wenn ich einen Ast runtergehe, kann der auf einmal enden und auf dem anderen Ast kann er relativ weit runtergehen. Zweitausendein.",
+      "start": 1559136,
+      "end": 1568274,
+      "confidence": 0.873963,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Genau, das ist wichtig, weil wenn du jetzt in dem linken Raum, also wenn du einen Spit machst, du hast einen rechten und einen linken Raum und im linken Raum sind nur drei Punkte drin, dann wirst du den nicht weiter aufbrechen. Hingegen rechts sind vielleicht ganz, ganz viele Punkte und den brichst du dann noch in fünf Subebenen auf, damit du da schneller bist und dann hast du schon einen unbalancierten Baum. Das ist auf der einen Seite ein Vorteil, aber unbalancierte Bäume sind natürlich auch immer ein Problem, weil das kann natürlich passieren, wenn du den so ungünstig triffst, den Baum und die split Kriterien, dann hast du einen Baum, der irgendwie komplett nach rechts oder komplett nach links hängt und du musst wieder fast alle Objekte durchgehen, weil du immer so einen links hängenden Baum hast und dann musst du nach links ganz, ganz, ganz, ganz, ganz weit nach unten gehen, obwohl rechts immer eigentlich nie was dranhängt. Also du hast so einen schiefen Baum und der kann im worst case dann natürlich heißen, du musst eigentlich wieder linear durch alles durchgehen. Natürlich. Worst case, muss man auch dazu sagen.",
+      "start": 1568312,
+      "end": 1622460,
+      "confidence": 0.9240043,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Das bedeutet aber auch, dass in der Speicherung die ganze Sache relativ effizient ist, zumindest für die Bereiche, die keine Objekte haben. Richtig. Also das Meer, nehmen wir jetzt mal einfach mal wieder die Weltkarte, ist jetzt gerade relativ einfach als Beispiel. Das Meer wäre dann, das wären dann ein paar Subräume, weil es immer bei irgendwelchen kleinen Inseln gesplittet wird, aber das geht dann nicht tief, weil neben den kleinen Inseln ist halt wieder recht viel mehr und da ist wieder gar nichts. Wohingegen dann Europa wieder sehr, sehr viel Ÿousand gesplittet wird und der Kontinent natürlich dann ja leider auch sehr stark unbalanciert ist im Vergleich dann zum Meer.",
+      "start": 1622510,
+      "end": 1654838,
+      "confidence": 0.92096406,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Richtig, genau. Und wenn wir da wieder auf unsere Suchqueries zurückgehen, also die klassische Suchquery ist ja nearest neighbor Suche, also gib mir alle Objekte, die rund um mich herum liegen, dann kannst du in dem Baum natürlich sehr schnell das auch bewerkstelligen. Das heißt, du hast jetzt dich als Objekt, Objekt Andy in Duisburg, sitzt irgendwo in einem Unterast drinnen und du probierst jetzt von oben nach unten zu gehen, um dich zu finden. Und der Raum wird immer eingeschränkter, immer kleiner, kleiner und nähert sich dir an. Und je nachdem, wie viele Objekte du in der Umgebung finden willst, also du sagst, ich will die 100 nähersten Objekte haben, gehst du den Baum einfach so weit nach unten, bist du nur mehr 100 Objekte hast in deinem Subbaum. Und sobald du dort angekommen bist, mit 100 hörst du auf und hast automatisch alle Kinder sind genau diese 100 oder 150, je nachdem, zweitausendein musst du halt womöglich noch nachfiltern, aber dann hast du genau die Objekte gefunden, die rund um dich herum sind, weil du dich ja angenähert hast in deine Richtung und der Suchraum immer kleiner, kleiner, kleiner, sich wie eine Schlinge um dich zusammengezogen. Und das ist natürlich super schnell in so einem Baum.",
+      "start": 1654894,
+      "end": 1718518,
+      "confidence": 0.92045337,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Jetzt sind Algorithmen natürlich immer auf etwas Spezielles optimiert, sei es auf die Leseoperation, auf die Suchoperation in einer Datenstruktur oder auf die Insert oder auf die Lösch Operation zweitausendein. Und wenn ich mich an meinen Algorithmenkurs erinnere, dann ist es natürlich bei Bäumen immer so Einfügeoperationen an den Blättern relativ einfach, weil du ja nur dranhängst. Einfügeoperationen mittendrin immer etwas komplexer, weil du natürlich Knoten umhängen musst. Jetzt frage ich mich gerade, macht es Sinn, bei Geostrukturen Elemente, Knoten zu löschen? Ja, falls man eine Insel untergeht oder so, ja natürlich.",
+      "start": 1718574,
+      "end": 1755280,
+      "confidence": 0.87415975,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Also du hast ja nicht nur die Landkarte klassischerweise, aber das Stimmt natürlich schon. Je nachdem, was du für einen Baum hast, sind lösch Operationen teurer oder günstiger.",
+      "start": 1755320,
+      "end": 1764640,
+      "confidence": 0.89280856,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "In welchem Fall werden die teuer?",
+      "start": 1764760,
+      "end": 1765984,
+      "confidence": 0.921175,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Üblicherweise würde ich sagen, umso mehr Kinder du erlaubst in einem Knoten, umso einfacher sind Änderungen, weil du nicht so große Bäume umhängen musst. Es kann natürlich bei so Binärdaten und so recht schnell bedeuten, dass du recht viel umhängen musst und umso höher deine Auffächerung ist in dem Baum, umso weniger musst du ändern üblicherweise, weil du ja da einfach mehr Bandbreite hast. Bei einem klassischen B Baum hast du 200 bis 400 Kinder bzw. Je nachdem, wie du den eingestellt hast. Und da kannst du dann innerhalb irgendwelche Kinder umhängen oder oder rauslöschen. Da wird deswegen noch nicht ein riesengroßer Änderungsprozess angestoßen in den Baum, der den kompletten Baum über den Haufen. Passiert natürlich auch. Kann passieren, vor allem beim b Baum, weil der balanciert ist und man muss den dann ja ausbalancieren, wenn er eben nicht mehr balanciert ist. Also da können schon größere Änderungen auch passieren. Aber im großen und ganzen würde ich sagen, umso mehr Kinder erlaubt sind, umso einfacher ist es üblicher.",
+      "start": 1766072,
+      "end": 1820372,
+      "confidence": 0.9251625,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Jetzt hattest du gesagt, das Nachteil von dem KD Baum ist, dass dieser nicht balanciert ist. Gibt es einen anderen Nachteil oder warum ist die Struktur nicht die Struktur, die alle nutzen? Weil sonst könnte man ja sagen, so, wir haben jetzt hier Grid Files, wir haben Quad Tree, wir haben KD Tree, das war's.",
+      "start": 1820436,
+      "end": 1835988,
+      "confidence": 0.90328,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Categorys werden auch viel genutzt, weil sie eben so einfach sind, aber sie sind nicht balanciert, wie du richtig sagst. Und zweiter Punkt ist, sie sind binär Bäume, das heißt, jeder Raum wird gesplittet in zwei Unterräume. Und aus der klassischen Datenbankwelt, also wir sprechen da jetzt in der Datenbankwelt von diesem drehenden Festplatten, wo der Zugriff sehr teuer war, da wolltest du eigentlich bei jedem Knoten möglichst viele Subräume eliminieren mit jedem Check. Und nachdem das Knoten fetchen von der Festplatte so langsam war, hast du probiert, möglichst viele Kinder oder Subräume eben zu eliminieren. Und darum war der Binärbaum eigentlich für Festplatten weniger geeignet. Zugegebenermaßen ist heute ein bisschen anders mit SSDs, aber auch da gibt es grundsätzlich immer so Speicherseiten bzw. Seitengrößen, auch für die Caches, die dann vorgefetcht wird. Hatten wir glaube ich auch mal schon eine Episode dazu. Also auch da gibt es eine gewisse Größe, die Sinn macht und man probiert man natürlich auch in so einem Knoten möglichst viele Verweise auf Subräume einzubauen, um die Performance zu erhöhen. Und bei KD Bäumen ist es halt einfach nur binär.",
+      "start": 1836124,
+      "end": 1903024,
+      "confidence": 0.8924058,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Gibt es denn jetzt so eine Art KD Baum, die Subräume unten drunter mehrfach splittet und dann halt kein Binärbaum ist? Also ein nicht KD Binärbaum?",
+      "start": 1903112,
+      "end": 1912784,
+      "confidence": 0.84766424,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Ja, und das ist so, der Königsbaum würde ihn fast nennen, ist der r Baum. Also r wie Rectangle, weil der balanciert ist und alles in Rechtecke aufteilt. Also einen, oder halt wenn es D ist natürlich theoretisch einen d Raum in einem Kubus oder ein Kubus ist gleich groß, oder wie heißt Rechteck auf d? Egal, Subräume nennen wir Subräume, aber das R kommt von Rect.",
+      "start": 1912872,
+      "end": 1937356,
+      "confidence": 0.88298196,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Auf jeden Fall nennt man das nicht Würfel.",
+      "start": 1937388,
+      "end": 1939228,
+      "confidence": 0.9943475,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Ja, ich bin gerade überfragt, ob Quader oder Würfel, was hat da gleich lange Seiten? Also wir sprechen von etwas, was nicht gleich lange Seiten haben muss.",
+      "start": 1939364,
+      "end": 1947684,
+      "confidence": 0.87882775,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Zweitausendein, also wirklich ein Rechteck und kein Quadrat, aber das halt.",
+      "start": 1947732,
+      "end": 1951066,
+      "confidence": 0.88538367,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Genau, aber das e, okay, ich glaube es heißt Quader, wenn mich nicht alles täuscht. Obwohl Quader, na Quader und Würfel dürfte selber sein. Oh je, da tun sich ein Rechteck.",
+      "start": 1951138,
+      "end": 1960626,
+      "confidence": 0.8108597,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "In D nennt sich Quader in der Tat.",
+      "start": 1960658,
+      "end": 1962570,
+      "confidence": 0.98315877,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Okay, bin ich ja, habe ich doch nicht alles vergessen. Aber der R Baum ist wirklich eine Datenbankstruktur, die hat man eigentlich für Datenbanken entwickelt. Was schätzt du, was für Jahreszahl, ohne jetzt in unsere Notes zu blicken?",
+      "start": 1962650,
+      "end": 1974306,
+      "confidence": 0.83793765,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Also das genaue Jahr weiß ich nicht, aber diese ganzen Datenbanktechnologien und also eigentlich alles auf das, was wir heutzutage arbeiten als Standardhernehmen, das kommt alles aus den ERN und ERN, in dem Fall war.",
+      "start": 1974378,
+      "end": 1984638,
+      "confidence": 0.89710855,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Es sogar ein bisschen später, es war 84, also ich war zwei Jahre alt damals. Hat jemand von der Berkeley University erfunden und damals veröffentlicht. Und das ist eigentlich so ein b Baum, aber für d oder d oder mehrdimensionale Strukturen. Und man kann sich das so vorstellen wie ein b Baum eigentlich, nur dass man eben bei jeder Verzweigung in dem Baum eben nicht nur eine Dimension hat, sondern mehrere Dimensionen oder ein ganzes Rechteck. Das heißt, mein Raum wird in Subrechtecke aufgeteilt und in den Baum angeordnet. Und im Gegensatz zum kde Baum, wo es eben binär ist, sind es da halt wirklich Rechtecke in jeglicher Größe. Und man macht es so, dass es immer ein möglichst kleines Rechteck ist, also das kleinste umschließende Rechteck von gewissen Punkten. Das heißt, du fängst jetzt bei den Punkten in Duisburg an, bei den lokalen und probierstausend, du hast 200 Punkte, probierst diese 200 Punkte durch ein Rechteck zu umschließen und dann wieder alle Rechtecke, die du gebaut hast, probierst du wieder mit einem Rechteck zu umschließen. Und so wirst du immer größer und größer und größer. Und diese Rechtecke werden dann hierarchisch wieder in den Baum angeordnet.",
+      "start": 1984654,
+      "end": 2050726,
+      "confidence": 0.92889017,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Jetzt ist es natürlich so, in meinem Kopf stelle ich mir vor, wie speichert man jetzt gerade ein Rechteck? Also eigentlich hat man, da speichert man eine, eine, in C würde man sagen ein Struct oder ein Objekt in Java oder ähnliches, was dann mehrere Punkte hat, richtig? Länge, eine Höhe, eine Breite, die wird eigentlich pro Knoten abgelegt, richtig? Also als Datenstruktur.",
+      "start": 2050758,
+      "end": 2070442,
+      "confidence": 0.8946894,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Also du hast im Prinzip immer zwei Punkte, die du speichern musst. Bei einem Rechteck hast du links unten, rechts oben, bei einem Quader hast du dasselbe, aber jeweils mit drei Koordinaten, weil du brauchst natürlich bei einem Rechteck oder bei einem Quader nur die zwei Punkte, der Rest ergibt sich ja dann automatisch. Das heißt, zwei gegenüberliegende Punkte und die speicherst du. Oder du speicherst einen Punkt und dann Länge, Breite. Z.B. bei einem Rechteck ging genauso. Aber im Endeffekt brauchst du im d Raum vier Werte und im d Raum sechs Werte, um so eine Bounding Box, wie man sie auch nennt, also eine Box um diese Punkte herum zu speichern. Und diese Bounding Boxes liegen dann eben in einem Knoten von so einem Baum. Und wenn du nach unten wanderst im Baum, du hast ja einen Punkt, den du suchst, z.B. checkst du, welche Bounding Box umschließt meinen Punkt, den ich jetzt gerade suche. Und der Nachteil am klassischen r Baum ist, dass es auch mehrere Bounding Boxes geben kann, die zutreffen. Das heißt, diese Bounding Boxes, die sind nicht komplett getrennt, sondern die können überlappend sein, weil der Algorithmus sonst immer alles checken müsste. Also das ist ein Optimierungsproblem, das gar nicht so leicht ist. Zweitausendein. Und darum erlaubt der Erdbaum auch Überlappungen, was natürlich auch ein Nachteil sein kann, weil es kann sein, dass du dann plötzlich mehrere Subbäume durchlaufen musst, weil die in irgendeiner Form überlappen.",
+      "start": 2070506,
+      "end": 2152572,
+      "confidence": 0.9297992,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Aber wäre dann beim Meer, wenn ich jetzt das Meer, das Meer wäre jetzt eine Bounding Box, weil da ist ja kein Objekt. Sehr simplifiziert gesprochen. Wieso ist der Air Tree denn jetzt effizienter?",
+      "start": 2152676,
+      "end": 2162572,
+      "confidence": 0.92392206,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Weil, also er ist effizienter einerseits, weil er balanciert ist, das heißt, es wird dann immer umgebaut.",
+      "start": 2162636,
+      "end": 2168076,
+      "confidence": 0.9038647,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Ÿousand, warum ist er denn balanciert, wenn ich dort das Meer als große Bounding Box habe und dann Europa wieder als Europa ist auch eine Bounding Box. Und in Europa ganz viele kleine Bounding Boxes. Ne, dann ist er trotzdem nicht balanciert.",
+      "start": 2168148,
+      "end": 2179346,
+      "confidence": 0.89832145,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Balanciert heißt ja, dass du in allen Sub Knoten ungefähr die gleiche Höhe hast.",
+      "start": 2179418,
+      "end": 2183898,
+      "confidence": 0.95407283,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Genau.",
+      "start": 2183954,
+      "end": 2184258,
+      "confidence": 0.64006,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Das heißt, es kann nicht sein, dass es irgendeinen Subbaum gibt, der eine ganz andere Höhe hat, als der auf der rechten Seite. Also es kann nicht sein, dass links ganz leer ist und rechts ganz viel ist. Wenn das passieren würde, dann würde der gesamte Baum rotieren zweitausendein. Es würde eine neue Wurzel nach oben kommen aus dem rechten Bereich, wo ganz, ganz viel los ist. Das heißt, man würde das nach oben ziehen, damit auch links mehr hängt. Das heißt, man probiert es dann so nach rüber zu balancieren, dass es eben links und rechts wieder gleich viele bounding boxes gibt und das Mäher hängt dann einfach irgendwo anders dran. Also es geht um den Rootknoten, die Wurzel wird einfach geändert. Das heißt, ich starte über eine andere Bounding Box nach unten. Das heißt, so wird dann rotiert und so wird verhindert, dass das unbalanciert ist, das Ganze. Und das macht einfach der Algorithmus. Der schaut einfach, wenn irgendwo ein Baum zu lange wird und links davon quasi ein kurzer Baum ist, dann wird er um rotiert. Das macht es natürlich teurer beim Einfügen, aber in der Suche natürlich hast du ein besseres Ergebnis, weil du in dem balancierten Baum ungefähr immer die gleiche Tiefe hast.",
+      "start": 2184314,
+      "end": 2243154,
+      "confidence": 0.9186959,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Ich wollte schon sagen, Einfüge und Löschoperationen sind dann aber sehr teuer, weil wir dann genau in der Zeit der Umstrukturierung nicht in dem Baum suchen kannst. Das bedeutet ja eigentlich, dass es eine Blocking Operation ist, oder?",
+      "start": 2243202,
+      "end": 2253300,
+      "confidence": 0.90117395,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Das kommt dann darauf an, wie es implementiert ist, aber klar, die Operationen sind teuer. Also das ist eine Indexstruktur. Einfügen ist in der Indexstruktur natürlich immer teurer als das Suchen, weil es ist eine Indexstruktur und die ist optimiert auf das Durchwandern, auf das Suchen in den Baum.",
+      "start": 2253380,
+      "end": 2267988,
+      "confidence": 0.8974296,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Na ja gut, aber bei Binärbäumen ist das Einfügen halt nicht so teuer, weil du halt einfach nur umhängen musst. Aber wenn der halt kontinuierlich neu ausbalanciert wird, das ist ja wirklich zweitausendein. Ich sag mal, du shuffles ja wirklich Knoten und Blätter. Also das ist ja, da geht ja richtig der Punk ab, würde man sagen.",
+      "start": 2268044,
+      "end": 2284698,
+      "confidence": 0.85768,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Ja, da gibt es durchaus gute Rotationsoperationen. Der Vorteil ist natürlich bei einem r Baum gegenüber dem KT Baum, dass es halt mehrere Subräume gibt und dadurch eben sehr viele Subräume automatisch wegfallen in einer Vergleichsoperation, in einem Knoten, im Baum und du dadurch auch so extrem große Rotationen gar nicht oft hast, sondern die sind dann eher im lokalen Raum, in irgendwelchen Subräumen, wo dann umrotiert wird. Aber es kann dir passieren, dass du wirklich große Rotation. Aber das ist so ähnlich wie beim b Baum. Also jeder, der die Operationen und Rotationen vom B Baum kennt, die gibt es im r Baum. Genau, ja, ich würde fast sagen in gleicher Form, nur dass es halt eben nicht eine Zahl ist, sondern eben eine ganze Bounding Box, die da als Kriterium immer verwendet.",
+      "start": 2284794,
+      "end": 2327134,
+      "confidence": 0.9002214,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Wenn die Bounding Boxes sich überlappen, dann kann das bei Suchoperationen ja auch zu Fehlergebnissen führen, richtig?",
+      "start": 2327182,
+      "end": 2332670,
+      "confidence": 0.88976943,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Nicht zu Fehlergebnissen, weil die Werte an sich, die Objekte, die du suchst, die liegen ganz unten in den Blättern. Also das ist ein Baum. B heißt in dem Fall, die Werte liegen nicht in den Knoten. Der B Baum speichert Werte in den Knoten ab, b Baum nur in den Blättern, also ganz, ganz unten. Das heißt, die Bounding Boxes beim r Baum, die sind nur dafür da, um den Suchraum einzuschränken. Die eigentlichen Werte liegen ganz ganz unten. Jetzt kann es natürlich passieren, dass mehrere Bounding Boxen zutreffen, weil die überlappend sind. Das heißt, alles was du in den Bounding Boxen gefunden hast, in den überlappenden, sagen wir mal drei Bounding Boxen, sind am Ende drei Bounding Boxen. Da musst du alle Werte in den drei Bounding Boxen nochmal durchprüfen, sind die jetzt wirklich in meinem Umkreis z.B. oder sind die eben in dem Bereich, den ich eigentlich suche, in dem Rechteck, das ich gesucht habe oder den Punkt, den ich gesucht habe, ist der Punkt überhaupt da? Das musst du natürlich immer noch machen. Und das kann natürlich bei Überlappungen sehr blöd ausgehen, muss man sagen. Ja, das ist Worst Case natürlich immer Worst Case Szenario. Und dafür gibt es auch Algorithmen, die dann später gekommen sind, die probieren das zu verhindern. Also es gibt ein r und Sternbaum, das sind dann nochmal Optimierungen, die verhindern entweder gar keine Überlappungen zu erlauben oder die probieren weniger Überlappungen zu haben.",
+      "start": 2332750,
+      "end": 2407190,
+      "confidence": 0.9091647,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Ist das jetzt die ultimative Spatial Geo Index Struktur, die jeder nutzt?",
+      "start": 2407270,
+      "end": 2411886,
+      "confidence": 0.76070166,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Ich würde sagen, für Datenbanken ist es die klassische Indexstruktur, die verwendet wird. Also Postgis, für Postgres verwendeten Erbbaum, MySQL, meines Wissens verwendeten Erdbaum. Also das ist so die klassische Datenbank, räumliche Indexstruktur, würde ich sagen. Klar, im Hauptspeicher sieht es anders aus, da verwendet man dann andere, da ist im KD Trees wahrscheinlich auch die bessere Variante, weil es einfach halt so klassisch schneller ist im Hauptspeicher, aber für Datenbanken mit Sekundärspeicher, also Festplattenspeicher im Hintergrund, ist der Airbag sicher die die beste Wahl und wird darum auch verwendet. Also z.B. mongodb hat einen anderen Ansatz gehabt zu Beginn, der eigentlich gar nicht so optimiert war, können wir dann später noch vielleicht kurz besprechen. Aber mittlerweile haben die auch eine r Baum Implementierung. Die ist aber dann erst so 2017 oder so gekommen. Ist extrem schwierig. Ich habe es versucht, irgendwie mit Release Notes rauszufinden, aber mongodb hat ihre Release Notes nicht mehr online, die halben. Und irgendwie, sie schreiben auch in der Dokumentation nie so genau, was sie da verwenden und was sie implementieren. Also wahnsinnig intransparent meiner Meinung nach. Wenn das jemand weiß, bitte gerne vorbeischauen bei uns in der Community. Aber ich habe es so eingegrenzt auf irgendwie 2017, wahrscheinlich 2016 ist das Paper Ÿousand rausgekommen über den mongodb Baum, als ich vermute, dass es irgendwo in dem Bereich dann released wurde.",
+      "start": 2411958,
+      "end": 2489568,
+      "confidence": 0.8879974,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Du hattest jetzt schon mehrfach postgis erwähnt. Kannst du mir ganz kurz erklären, was postgis ist?",
+      "start": 2489624,
+      "end": 2493744,
+      "confidence": 0.9137019,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Du bist postgres Spezialist, oder?",
+      "start": 2493792,
+      "end": 2495944,
+      "confidence": 0.860552,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Ja, also hier spiele ich jetzt natürlich eine Rolle. Ich weiß jetzt, was postgis ist, aber viele Leute sind nicht so in der Datenbankwelt unterwegs, die haben vielleicht PostGIS noch nie gehört. Deswegen hilft ihnen mal bitte auf die Sprünge.",
+      "start": 2496072,
+      "end": 2505568,
+      "confidence": 0.9095125,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Also PostGIS ist eine Erweiterung von Postgres, die eben speziell für die ganze räumliche Verwaltung gedacht ist. Da hängt natürlich dann nicht nur ein Index dran, sondern da hängen auch die ganzen Geo Formate dran, die man damit bearbeiten kann und dass man eben die Query Features dementsprechend auch hat. Postgres bringt zwar selbst auch schon viel mit, muss man sagen, und mittlerweile auch sehr performant, aber wenn man natürlich Erdbäume z.B. haben will und noch zusätzliche Features, dann ist Boscis die Erweiterung ÿousand, wenn man wirklich mit räumlichen Daten arbeitet.",
+      "start": 2505664,
+      "end": 2538408,
+      "confidence": 0.9211267,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Da geht es natürlich jetzt nicht nur um die Indexierung dieser Daten, sondern auch wirklich diese Extension bietet dir native SQL Funktionen zur Distanzberechnung. Diese all diese Near Neighbor Geschichten, die Wolfgang erwähnt hat, sind da drin. Also wer wirklich mal mit Geodaten arbeiten möchte, der kann natürlich eine ganze Menge in SQL nachprogrammieren, ganz klar. Der kann aber auch einfach diese PostgreSQL Extension nehmen, weil die schon sehr, sehr mature.",
+      "start": 2538464,
+      "end": 2560088,
+      "confidence": 0.88553,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Ich kann mich erinnern, damals, wie ich das MySQL Buch geschrieben habe mit meinen zwei Co Autorinnen, da hat MySQL noch kein gausend Feature gehabt. Da haben wir das nachprogrammiert in einem Kapitel. Das ist gar nicht so schwer. Das Problem ist einfach, dass du zusätzlich noch so viele Funktionen brauchst. Also einfach wie gehst du mit mit Punkten um, mit Polygonen, mit Rechtecken, so klassische Operationen, die du drauf hast, ist ein Rechteck umschließend von einem Punkt von einem anderen Rechteck. Diese Dinge müsstest du alle manuell erst programmieren oder in Funktionen abbilden. Und die ganzen GIS Erweiterungen bieten dir natürlich das an, dass du GeoJSOn verarbeiten kannst, dass du Punkte verarbeiten kannst, dass du Polygon Operationen hast. Also alles, was gar nicht mit dem Index an sich zu tun hat, aber einfach so dieses Toolset, was du in die Hand bekommst, um mit Geo Informationen umzugehen. Und da bieten natürlich die ganzen Erweiterungen viele Möglichkeiten an und machen dir das Leben einfach leichter. Weil theoretisch kannst du sehr viel auch selber programmieren, ist gar nicht so komplex, aber das nimmt dir natürlich so eine Erweiterung komplett ab. Plus, wenn wir dann in Koordinatensysteme gehen, das wird dann sowieso hochkomplex.",
+      "start": 2560184,
+      "end": 2628390,
+      "confidence": 0.9208114,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Jetzt reden wir aber die ganze Zeit von relationalen Datenbanken. Postgremia, PostgIS, MySQL hast du gerade erwähnt. Jetzt hast du aber auch schon mal mongodb erwähnt als in Anführungszeichen no SQL Datenbank oder Document Store, wie du es immer nennen möchtest. Was was gibt es denn in der NoSQL Welt? Haben die auch alle eine Implementierung für Airtrees oder also kopieren die einfach die relationalen Datenbankfeld?",
+      "start": 2628470,
+      "end": 2649750,
+      "confidence": 0.8098691,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Wie gesagt, mongodb hat dann später mit den ERB Räumen angefangen, aber davor haben sie ein sogenanntes Geohashing Verfahren verwendet. Das ist eigentlich ein ganz cooles Verfahren, was auch in vielen anderen Bereichen Anwendung findet. Und im Prinzip geht es darum, dass man mehrere Dimensionen auf eine Dimension herunterbricht oder abbildet in der gewissen Form. Das heißt, du bekommst eigentlich für eine xy Koordinate am Ende einen Wert zurück. Und bei geohashing ist es üblicherweise ein String, den du zurückbekommst. Du kannst es vielleicht von Google Maps da gibt es diesen Pluscode, hast du vielleicht schon mal gesehen. Das ist so eine String Repräsentation von diesem Objekt und du kannst es eigentlich jemanden am Telefon durchgeben. Das sind einfach ein paar Characters und die andere Person, wenn die das eingibt, findet genau diesen Punkt wieder. Das heißt, man hat eine Repräsentation als String von einem Geopunkt oder von von einer Koordinate oder was es dann auch immer ist. Und das nennt sich Geohashing. Und wenn du einen eindimensionalen Wert hast, aus einem zweidimensionalen Wert, dann kannst du den in einen ganz klassischen b Baum schmeißen und das hat eigentlich mongodb damals gemacht. Also die haben das Geohashing verwendet und haben dahinter dann eine ganz normale Baumstruktur. Oder kannst du dann im Prinzip jede Indexstruktur verwenden, wenn du nur einen Wert hast und haben das dann dementsprechend abgebildet.",
+      "start": 2649870,
+      "end": 2726254,
+      "confidence": 0.9011863,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Aber wie kann ich denn mit einem Geohash rechnen, denn es ist doch ein Hash. Das bedeutet, ich kann einen fertigen Hash ja nicht wieder zurückrechnen, sonst wäre es ja eine Serialisierung.",
+      "start": 2726302,
+      "end": 2734024,
+      "confidence": 0.8706494,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "In dem Fall kannst du es zurückrechnen, das heißt nur Hash, aber das ist sogar eine hierarchische Abbildung. Das heißt, wenn du so einen String hast, das heißt, du hast jetzt abcd und hängst da hinten in E dran, dann heißt es, dass du den Raum verkleinerst. Das heißt, umso länger der String wird nach hinten hin, umso kleiner wird dein Suchraum. Das heißt, es ist wirklich eine hierarchische Abbildung. Und du kannst Prefixes verwenden. Das heißt, der Prefix ordnet quasi die grobe Location ein und umso weiter du in dem String nach hinten gehst, umso detaillierter näherst du dich dem eigentlichen Punkt an. Das heißt, es ist wirklich eine komplette hierarchische Abbildung.",
+      "start": 2734112,
+      "end": 2766468,
+      "confidence": 0.9102401,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Ah, okay, also der Hash ist, wenn man so möchte, sogar wirklich stabil.",
+      "start": 2766524,
+      "end": 2770428,
+      "confidence": 0.90284693,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Genau, das ist nicht klassisch wie eine Hash Funktion, das nennt man nur Hashing, weil halt ein String rauskommt, aber eigentlich ist es komplett eine hierarchische Datenstruktur, die dahinter liegt, repräsentiert als ein String. Und das wird verwendet in Elasticsearch, Hbase, mongodb, Redis. Solltest du ja eigentlich wissen, Andy. Und der Vorteil von so einem Prefix ist natürlich auch, man kann relativ schnell nearest neighbor wieder suchen, weil du nimmst einfach den Prefix, alle, die denselben Prefix haben, sind in der Nähe. Ganz easy. Also eigentlich eine ganz schlaue Herangehensweise.",
+      "start": 2770604,
+      "end": 2802352,
+      "confidence": 0.90703344,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Und warum haben die relationalen Datenbanken das implementiert?",
+      "start": 2802456,
+      "end": 2805176,
+      "confidence": 0.9513325,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Das ist eigentlich erst später gekommen. In den er Jahren in der Datenbankwelt hat es dann UB Baum geheißen. Das hat dieser Bayer, bzw. Die ganzen Datenbankleute um den Bayer dementsprechend auch damals vorgestellt. Also das ist erst später gekommen, hat sich nie so richtig durchgesetzt. Meine Vermutung ist, dass es langsamer ist grundsätzlich und nicht so flexibel, auch mit den Queries. Und darum hat sich es, je nachdem in welcher Datenbankwelt, eben nicht oder schon durchgesetzt. Und es hat ja auch einen Grund, warum mongodb dann mit den Erbbäumen aufgekommen ist, weil es vermutlich einfach auch trotzdem schneller ist, als wie wenn du so eine String Repräsentation hast und einen zusätzlichen Index auf den Strings und musst hin und her rechnen. Also ich vermute mal, dass es einfach Performancegründe hat in dem Fall. Aber für ganz viele Anwendungsfälle ist natürlich Geohashing ein super Ansatz. Und vielleicht noch zur Information, wie man eigentlich auf diesen Hash kommt. Da liegt die sogenannte Z Kurve im Hintergrund oder Moton Ordnung. Hast du schon mal davon gehört?",
+      "start": 2805248,
+      "end": 2865208,
+      "confidence": 0.9083178,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Nein, habe ich noch nicht.",
+      "start": 2865264,
+      "end": 2866480,
+      "confidence": 0.842698,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Also ich kenne es eigentlich auch nur aus Z Coffee. Ich bin jetzt drauf gekommen, dass das eigentlich ein sehr altes Konzept ist, aus den aus 1966, dieser Mordton oder Morton wahrscheinlich, der hat es aufgebracht. Und im Prinzip geht es darum, also wie kannst du in einem linearen Raum alle mehrdimensionalen Punkte abbilden. Wie mein Datenbankprofessor mir das mal erklärt hat in der Vorlesung, war eigentlich ganz cool gemacht, muss man sagen. Was er gemacht hat, ist, wir sind in einem Seminarraum gesessen und er hat einen Wollknäuel mitgenommen, zweitausendein, und hat sich das Ende von dem Wollknäudel behalten und hat den Wollknäudel, sagt ihr Wollknäudel, was du schon wieder zu österreichisch?",
+      "start": 2866640,
+      "end": 2904416,
+      "confidence": 0.8611766,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Ja, Garn, ja, ja, genau. Also Wolle.",
+      "start": 2904488,
+      "end": 2906672,
+      "confidence": 0.7455957,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Ja, Wolle, genau. Wollknäudel. Hat den zur ersten Person hingeworfen und die Person hat sich den Faden festgehalten und hat den Wollknäudel weitergeworfen, so lang, bis alle den Faden in der Hand hielten. Und was er damit demonstriert hat, ist eine raumfüllende Kurve, weil jede Person ist ein Punkt im Raum und der Faden geht von Person zu Person. Und wenn du den Faden dann im Speicher auflisten würdest, also speichern würdest, dann hast du einen im linearen Raum anhand des Fadens überall Punkte sitzen und hast im Prinzip alle Punkte in dem Raum auf eine Gerade abgebildet. Und das nennt sich raumfüllende Kurve. Und eine Spezialvariante von der raumfüllenden Kurve ist die sogenannte Z Kurve. Das heißt, die hat immer so eine z Form, die geht so z förmig durch den Raum. Das ist einfach nochmal eine Spezialform von dem Ganzen. Und so bildet man Punkte auf dem linearen Stringraum ab. Und das Problem an der z Kurve ist aber auch, dass Punkte zwar im Idealfall in der Nähe liegen auf dieser linearen Repräsentation, aber nicht zwingendermassen. Und damit hast du dann natürlich auch Probleme, wenn du nearest neighbor Suche machen willst, dass das nicht immer wirklich so nebeneinander liegt, weil du hast halt nur eine Dimension. Also es stimmt nicht immer, dass die in der Nähe liegen, weil du hast einfach eine Dimensionsreduktion, da verlierst du einfach Informationen. Und da haben halt r Bäume dann schon auch einen Vorteil.",
+      "start": 2906776,
+      "end": 2985276,
+      "confidence": 0.91343665,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Ist denn das Geohashing auf zwei Dimensionen limitiert oder kann ich da wirklich etliche Dimensionen zu einer Dimension oder zu einer niedrigeren Dimensionsstufe hashen.",
+      "start": 2985348,
+      "end": 2994388,
+      "confidence": 0.85305876,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Also die Z Kurve, das zugrunde liegende Pattern von dem ganzen, das kannst du auch im d Raum z.b. verwenden. Also vielleicht noch zur Erklärung, warum z. Also du kannst dir das so vorstellen, wenn du einen Raum vier teilst, wie beim Quad Tree in vier Sektoren, dann würde die Z Kurve durch diese vier Sektoren laufen. Das heißt, die wird. Du fängst links oben an, dann gehst du nach rechts oben, dann nach links unten und rechts unten, dann hast du so eine Z Form, wenn du dir ein Z reinmalen würdest über diese vier Quadranten und dieses Z wird einfach immer wieder hintereinander aufgemalen, immer so Quadranten. Oder wenn du dreidimensional bist, kannst du da sogar im d Raum so Z Kurven aufmalen. Das heißt du du hast da so ein rekursives Pattern, wenn es mehr Daten gibt, gibt es mehr Z, jeder Punkt hat wieder ein Unterz und ein Unterz und so kannst du dann schlussendlich alles auf eine Dimension reduzieren. Also auch bei drei Dimensionen kannst du alles auf eine Dimension reduzieren, aber umso mehr Dimensionen du hast, umso mehr Informationen verlierst du, bzw. Umso geringer ist die Wahrscheinlichkeit, dass wenn etwas auf deinem Array, auf deinem eindimensionalen String liegt, dass wenn das nebeneinander liegt, dass das auch wirklich im hochdimensionalen Raum dann nahe zueinander liegt, weil du ja alles runterbricht auf eine Dimension. Also da verlierst du schon viele Daten und umso höher die Dimensionen, umso mehr verlierst du natürlich. Aber das einfachste ist, man schaut sich das wirklich mal im Internet kurz an oder auf der Wikipedia Seite mit der Z Kurve, dann ist es wesentlich leichter verständlicher, als wenn man sich das jetzt auf der Audiospur so im Kopf natürlich vorstellt.",
+      "start": 2994444,
+      "end": 3085934,
+      "confidence": 0.91212857,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Aber in der Praxis würde ich ja jetzt kein Grid File, kein Quad Tree, KD Tree oder Airtree oder das Geohashing nachprogrammieren, sondern in der Regel würde ich ja wirklich eine Library nutzen oder vielleicht sogar ein Datenbanksystem, der das implementiert hat. Also ich meine, ich komme ja in der Regel seltenst, außer aus akademischer Sicht oder aus algorithmischer Sicht, dass ich mir diese Datenstruktur mal ansehen möchte, Performance Benchmark machen möchte. Vielleicht kommt die auch in Advent of Code vor, man weiß es ja nicht. Aber außer, außer, ich sag mal hier so Lead Code Challenges, würde ich damit ja in der praktischen Welt kaum selbst diese Strukturen implementieren, oder?",
+      "start": 3086022,
+      "end": 3120820,
+      "confidence": 0.9014975,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Genau, in Postgres gibt es z.B. das Gist Framework, was. Also jetzt gar nicht das PostGIS, sondern was nativ bei Postgres dranhängt. Die haben z.B. eine Implementierung von den KD Trees, nennt sich SPGST Framework, was da wieder verwendet wird. Also klar, du hast überall diese Frameworks, die schon zur Verfügung stehen und im Normalfall implementiert du die nicht selber, gleich wie bei einem b Baum auch. Aber du würdest ja auch nie einen Sodia Algorithmus selber programmieren, höchstwahrscheinlich. Und trotzdem versucht man doch zu verstehen, wie so die Algorithmen grundsätzlich funktionieren. Also das hast du natürlich mit Algen, das hast du natürlich mit allen Algorithmen. Und das Wichtige ist ja vor allem, dass du verstehst, was da im Hintergrund so grob abläuft, damit du weißt, für welchen Anwendungsfall nimmst du weichen Index? Weil du kannst natürlich in Postgres jetzt genauso sagen ich will einen KD Tree, ich will einen Art tree und da solltest du nicht grob verstehen, was dahinter abgeht. Und vor allem wenn du, wenn es dann um Performance geht oder vor allem um Performance Probleme, dass du weißt, okay, da gibt es noch andere Bäume oder ich kann mal einen anderen Baum probieren oder wo sie Nachteile, Vorteile von den jeweiligen Index.",
+      "start": 3120900,
+      "end": 3183170,
+      "confidence": 0.89590406,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Vor einigen Jahren hatten wir mal ein größeres Projekt und zwar ging es um die Berechnung von Map Tiles. Das bedeutet, wir hatten damals Google Maps angebunden und Google Maps war halt irgendwann sehr teuer, wenn man sehr viele Web Requests hat, weil Google sich da diverse Lizenzgebühren reinzieht. Und dann kamen wir auf die tolle Idee Hey, es gibt doch dieses OpenStreetMap, lass uns doch mal einen openstreetmap Server aufsetzen und dann lass uns doch mal bitte die die Map Elemente berechnen. Nachdem ich jetzt die Podcast Episode hier mit dir aufgenommen habe, habe ich das Gefühl, nicht, dass ich unsere Probleme von damals deutlich besser verstehe, aber dass unsere Probleme wahrscheinlich auch hier mit solchen Datenstrukturen zusammenhängen.",
+      "start": 3183250,
+      "end": 3220150,
+      "confidence": 0.9185386,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Ich glaube, dass die Dinger überall verwendet werden. In irgendeiner Form musst du die Geodaten speichern und schnell wiederfinden oder die klassischen Range Queries oder Proximity queries, also nearest neighbor queries. Was ist in der Nähe oder was ist eben in einem speziellen Rechteck? Wenn ich was suche, wenn ich auf der Karte einen Ausschnitt habe, will ich einfach alle Bars anzeigen auf dieser Karte. Dann habe ich einen klassischen Ausschnitt. Und das brauchst du in jedem Informationssystem, egal wo du natürlich unterwegs bist. Und wenn es dann in Richtung Machine learning geht, ist es natürlich noch mal schwieriger, weil da hast du dann hochdimensionale Daten, wo es dann wirklich um 100 Dimensionen geht. Das kann man sich dann gar nicht mehr vorstellen oder 200 Dimensionen. Und da gibt es auch diesen tollen Begriff speziell für deine Bing Karte, ganz wichtig, oder wenn du das mal droppen willst, Fluch der Dimensionalität, weil umso mehr Dimensionen du hast, umso schwieriger wird das Ganze, weil es geht ja auch immer darum zu berechnen, wie nahe ist etwas. Und bei drei Dimensionen ist es ja teilweise schon schwierig, wie nah sind sich denn zwei Punkte? Also in D kann man sich das noch gut vorstellen, würde ich mal sagen, da probierst du einfach ein Seil zwischen den zwei Punkten zu spannen und schaust, wie weit es ist, dann hast du die Entfernung. Aber bei d, bei d, bei d [sos/eos], wie weit entfernt ist denn dann was? Und wenn du z.B. cluster bilden willst, also wie ähnlich sind sich Objekte zueinander und du hast 200 Dimensionen, dann hast du natürlich das Problem irgendwann, dass sich die so ähnlich sind, weil du so viele Dimensionen hast, dass du irgendwie ist dann alles in einem Cluster, weil du die Entfernung nicht mehr so gut berechnen kannst bei so vielen Dimensionen. Also das ist so ein Grundproblem mit diesen Dimensionalitäten. Und im Machine Learning Bereich hilft man sich halt dann dadurch einfach durch Reduktionen, z.B. von den zweitausendein Dimensionen. Also da gibt es so algorithmen, die Matrix Faktorisierung ist so ein Klassiker oder der BCA, Principle Component Analysis, die versuchen einfach Dimensionen zu identifizieren, die sich sehr ähnlich sind bzw. Abhängig voneinander, wo dann der Algorithmus sieht, ah, diese zwei Dimensionen, die verhalten sich eigentlich immer ähnlich. Wenn die eine Dimension wächst, wächst auch die andere. Das heißt, ich kann eine daraus machen und so kann ich dann probieren, die Dimensionen runterzubrechen und am Schluss nur wenig Dimensionen zu haben, damit ihr die Algorithmen, die mit weniger Dimensionen umgehen können, dann auch Verwendung finden können. Oder eine Indexstruktur, eine klassische zum Auffinden. Aber Fluch der Dimensionalität kannst du dir einfach merken, viele Dimensionen sind immer böse oder wird nicht sagen böse, aber machen das Leben nicht unbedingt einfacher.",
+      "start": 3220230,
+      "end": 3362280,
+      "confidence": 0.92539215,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Kennst du das, wenn du dir ein rotes Auto kaufen möchtest, kommst du aus dem Autohaus raus und du siehst auf einmal nur noch rote Autos auf der Straße.",
+      "start": 3362360,
+      "end": 3368552,
+      "confidence": 0.9122976,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Selektive Wahrnehmung, ja, so geht es mir.",
+      "start": 3368656,
+      "end": 3370672,
+      "confidence": 0.8780571,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Hier mit Rabbit Holes in der Informatik. Das wird hier immer mehr, das nimmt hier überhand. Für mich sind Geo Spatial Index Strukturen ebenfalls wieder so ein rabbit hole. Und ich gebe zu, ich habe gerade irgendwie Lust mal zu hacken, zumindestens mal mit einem Quad Tree den selbst zu implementieren, wenn man mal irgendwann Langeweile am Wochenende hat.",
+      "start": 3370696,
+      "end": 3388320,
+      "confidence": 0.8769063,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Das Gute an diesen Algorithmen ist, dass die ja eben wie erwähnt so alt sind, wie gesagt, diese Z Kurve ist von 1966, dass es da so viele Implementierungen oder Visualisierungen auch gibt. Also es gibt einige Webseiten, wo du Erbbäume z.b. aufbauen kannst und du kannst einfach dann so ÿousand Rechtecke einfügen oder Punkte und die zeigen dir genau, wie sieht der Baum dann aus, wie funktionieren die Rotationen und sowas. Also du kannst da auch damit rumspielen, ohne dass du jetzt alles selber programmierst. Aber ich kenne dich ja, du wirst wieder alles selber programmiert.",
+      "start": 3388400,
+      "end": 3418246,
+      "confidence": 0.91594166,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Ich wollte schon sagen, wo bleibt der Spaß? Ich meine, du kennst das doch selbst, wenn du es richtig verstehen möchtest, dann musst du es einmal selbst bauen.",
+      "start": 3418278,
+      "end": 3424518,
+      "confidence": 0.955175,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Also b Baum habe ich noch selber gebaut, den habe ich mal programmiert bzw. Auch mit Studis programmiert, wo wir unser eigenes Datenbanksystem entwickelt haben. Erbarm muss ich auch sagen, habe ich glaube ich nie wirklich implementiert, nur am Blatt Papier in kleinen Aufgaben oder so. Also das sind dann schon Dinge, ja, Quadric geht vielleicht noch, aber das sind schon komplexe Dinge, muss man, man muss nicht glaube ich alles selber programmieren. Also ein Grundverständnis reicht schon auch.",
+      "start": 3424654,
+      "end": 3450818,
+      "confidence": 0.91733116,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Naja, aber du sagtest ja auch schon, der Vorteil ist, dass die Algorithmen schon lange existieren, deswegen gehe ich sehr stark von aus, entweder gibt es Lösungsvorschläge bereits im Internet, wo man cheaten kann oder es gibt fertige Tests, Test Suits, die man sich dann irgendwie runterladen kann, wo man dann seine Implementierung gegen schießen kann und sagen kann, okay, passt, passt. Von daher glaube ich, eine ganz interessante Fingerübung für Leute, die besonders ja mehr Spaß im Algorithmik haben oder an diesen Lead Coding Challenges oder ähnlich.",
+      "start": 3450874,
+      "end": 3478030,
+      "confidence": 0.9002978,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Und wenn du natürlich Informationssysteme programmierst oder wirklich auf Datenbankebene programmierst, dann musst du das sowas natürlich auch programmieren können, ist klar.",
+      "start": 3478070,
+      "end": 3485246,
+      "confidence": 0.821635,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Ja, das muss ich zugeben, das sagt man immer so, das bin ich mir gar nicht so sicher, denn auch in großen Datenbanken, zweitausendein System gibt es natürlich fertige Libraries, die bereits implementiert sind, also diese Bäume werden die aber eher selten.",
+      "start": 3485318,
+      "end": 3495684,
+      "confidence": 0.90757596,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Verwendet werden, also weil da geht es halt dann schon um Performance Dinge und da hast du dann spezielle Zugriffsmuster wahrscheinlich, je nachdem, was du für eine Datenbank hast und dann hast du eine Hauptspeicherdatenbank und willst es noch optimieren auf deine Cash Layers und solche Dinge.",
+      "start": 3495732,
+      "end": 3507804,
+      "confidence": 0.8962332,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Mach mir ruhig meine Vorstellung schlecht. Ist Okay, Wolfgang, ist okay. Vielen lieben Dank, dass du mir die Welt erklärt hast, im wahrsten Sinne des Wortes, denn jetzt weiß ich z.B. wie ich das Meer abbilde, zweitausendein. Das Problem hatte ich vor der Podcast Episode noch nicht. Wenn ich es jetzt mal habe, kenne ich wenigstens die Lösung. Das freut mich sehr.",
+      "start": 3507892,
+      "end": 3522954,
+      "confidence": 0.9477384,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Ja, schwieriger ist ja das mehr ignorieren sozusagen. Also wie schaffst du es, das mehr nicht abzuspeichern oder möglichst platzsparend abzuspeichern?",
+      "start": 3523042,
+      "end": 3530266,
+      "confidence": 0.89115095,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Ich frage mich die ganze Zeit, stell dir mal vor, ich möchte jetzt alle Schiffe live tracken oder auch Flugzeuge, ist ja egal, etwas, was sich über Elemente bewegt, wo in der Regel ziemlich wenig los ist. Und die Schwierigkeit ist ja, diese Ÿousand Sachen bewegen sich ja, Schiffe und so weiter und so fort. Bei Airtrees müsste der sich doch konstant umbalancieren, oder? Weil die ja eigentlich, die beweglichen Schiffe und die Flugzeuge bewegen sich ja eigentlich von Quadrant zu Quadrant. Da frage ich mich gerade, der wäre ja konstant am rebalancen.",
+      "start": 3530338,
+      "end": 3559664,
+      "confidence": 0.9208213,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Ja, mit Live Daten natürlich. Ja, ist auch die Frage, ob du da ein Index bauen würdest, weil jetzt auch bei den Flugzeugen, wie viel Flugzeuge gibt es? Sechsstellige Anzahl, wenn überhaupt, eher weniger wahrscheinlich, oder? Gibt keine Flugzeuge und noch dazu, wie viele dann in der Luft sind. Also da würdest du einfach keine Indexstrukturen bauen. Wäre mein Ansatz zumindestens.",
+      "start": 3559712,
+      "end": 3578696,
+      "confidence": 0.89803755,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Ja, das wäre die praktische Antwort. Bei mir geht es eher um die theoretische Machbarkeit. Kann man noch was einfügen, wenn der konstant rebalanciert? Und wie heftig wäre die Performance des Index eigentlich beeinträchtigt, wenn die Objekte in dem Baum sich konstant bewegen und die Quadranten wechseln? Das finde ich gerade mal ein interessantes Experiment. Hat keinen praktischen Use Case, aber ist.",
+      "start": 3578808,
+      "end": 3598216,
+      "confidence": 0.9254768,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Natürlich auch nur so, dass du erst das ganze ändern musst, wenn dein Flugzeug aus der Bounding Box rausfliegt. Das heißt, solange das noch in der Bounding Box drin bleibt, musst du gar nichts machen. Das heißt, du hast nur bei den Übertritten in eine andere Bounding Box dann das Problem. Es gibt auch Implementierungen, die das teilweise sogar haben, dass ein .in zwei Bounding Boxen sein kann. Wenn es eine Überlappung gibt, natürlich sowieso, aber auch sonst so eine Zwischenform, je nach Such Algorithmus dann. Also könntest auch über sowas nachdenken unter Umständen, dass du weniger balancieren musst, wenn es wirklich ein Problem ist. Aber es kommt darauf an, was du natürlich für Update Geschwindigkeit hast. Also wie viele Punkte, wie viele Updates eigentlich da so reinhämmern die ganze Zeit.",
+      "start": 3598248,
+      "end": 3637300,
+      "confidence": 0.89749366,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Vielen Dank, Wolfgang. Finale. Wo stürze ich mich rein, wenn ich mehr dazu wissen möchte?",
+      "start": 3637380,
+      "end": 3643308,
+      "confidence": 0.94481665,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "In den Shownotes haben wir ein paar Links und sonst am besten, wenn man es verstehen will, vielleicht einfach mal die Datenbank der Wahl checken, Dokumentation, was wird da überhaupt verwendet? Und dann kommt man in dem Bereich mit Wikipedia natürlich sehr schnell weiter, weil das alles Ÿousand, alles Algorithmen sind, die es schon sehr, sehr lange gibt. Also da hast du auf wikipedia wirklich Beispiele, die Operationen, wie die funktionieren. Man kann natürlich in Datenbankvorlesungen auch reinschauen, verlinke auch eine Vorlesung zu erbäumen, wo es um die verschiedenen Varianten geht. Also es gibt massig Material. Einfach mal googlen.",
+      "start": 3643444,
+      "end": 3675306,
+      "confidence": 0.9200419,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Gerade als du gesagt hast, probiert das einfach mal mit eurer Datenbank, eurer Wahl aus, habe ich mich gefragt, hat sqlite geospatial Funktion? Die Antwort alleine ist nein, aber es gibt eine Extension, die nennt sich SpatiaLight, die eigentlich dann sowas ähnliches wie PostGIS ist. Das könnt ihr also auch recht schmal auf eurem eigenen Rechner betreiben.",
+      "start": 3675418,
+      "end": 3695116,
+      "confidence": 0.90866226,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Also meine Information wäre, dass es sogar funktioniert in der Standardvariante, aber ich habe ehrlich gesagt vergessen, was es für eine Implementierung ist. Aber bei meiner Recherche bin ich eigentlich über sqlite gestolpert und meines Wissens unterstützen die zumindest Geobjekte. Vielleicht haben sie auch keinen Index, das kann Zweitausendein, könnte noch sein.",
+      "start": 3695188,
+      "end": 3712298,
+      "confidence": 0.90710425,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Diese Übung überlassen wir den Hörerinnen und Hörern als Hausaufgabe.",
+      "start": 3712354,
+      "end": 3716154,
+      "confidence": 0.896815,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Genau, einfach vorbeikommen bei Discord und erklären, dass ich falsch war.",
+      "start": 3716242,
+      "end": 3719850,
+      "confidence": 0.9682009,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Das war's von uns. Ihr findet uns wie immer in der Discord Community, falls ihr ein bisschen über Geospatial Data und Spatial Indexe diskutieren wollt oder einfach den Wolfgang korrigieren wollt bzw. Mir sagen wollt, Andy, ernsthaft, deine Fragen waren so blöd, schmeißt die besseren Fragen rein, ich möchte auch von euch lernen. Vielen lieben Dank.",
+      "start": 3719930,
+      "end": 3737928,
+      "confidence": 0.8708,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Ein Fun Fact noch am Ende, Andy, für dich. Postgres hatte mal den Erbaum implementiert und hat ihn dann wieder rausgekickt, weil sie keine großen Geschwindigkeitsvorteile gesehen haben.",
+      "start": 3738074,
+      "end": 3747268,
+      "confidence": 0.8970075,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Zu was?",
+      "start": 3747404,
+      "end": 3748092,
+      "confidence": 0.984175,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Zu den KD Trees, glaube ich, die die Implementierung, die sie haben. Bin aber nicht weiter tiefer gegangen, nur als kleines Funfact.",
+      "start": 3748196,
+      "end": 3755852,
+      "confidence": 0.9232923,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Aber war das da nicht eine Limitierung des Benchmarks?",
+      "start": 3755916,
+      "end": 3758044,
+      "confidence": 0.92499554,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Das überlasse dir dieses rabbit Hole. Du kannst abtauchen. Ich habe bin da einfach gestoppt.",
+      "start": 3758172,
+      "end": 3762564,
+      "confidence": 0.9211133,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Ja, ich denke mir gerade so, du hast gerade gesagt, okay, der, der eine Tree optimiert, besser bei großen Datenmengen. Dann sagst du, die haben es implementiert, haben keine Geschwindigkeitsvorteile gesehen. Da frage ich mich, okay, war die Datenbasis nicht ausreichend oder hast du Quatsch erzählt?",
+      "start": 3762652,
+      "end": 3774588,
+      "confidence": 0.9078704,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Gute Frage. Man sieht auf jeden Fall, dass es auch da unterschiedliche Meinungen gibt.",
+      "start": 3774644,
+      "end": 3779580,
+      "confidence": 0.92522573,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Wir hören uns in der nächsten Episode wieder. Wir machen hier Schluss für heute. Bis bald. Tschüss.",
+      "start": 3779660,
+      "end": 3783676,
+      "confidence": 0.91312,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Ciao.",
+      "start": 3783748,
+      "end": 3783940,
+      "confidence": 0.42078,
+      "speaker": "B",
+      "channel": null
+    }
+  ],
+  "confidence": 0.90966594,
+  "audio_duration": 3731,
+  "webhook_status_code": null,
+  "webhook_auth": false,
+  "summary": null,
+  "auto_highlights_result": null,
+  "content_safety_labels": null,
+  "chapters": null,
+  "sentiment_analysis_results": null,
+  "entities": null
+}
