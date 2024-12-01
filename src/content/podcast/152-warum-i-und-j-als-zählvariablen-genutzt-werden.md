@@ -29,7 +29,9 @@ speaker:
 - name: Wolfi Gassler
   transcriptLetter: A
 spotify: https://open.spotify.com/episode/76Xohw6WoXJjOflZxIgXTl
-tags: []
+tags:
+- Software Engineering
+- Software Qualität
 title: "#152 Warum i und j als Z\xE4hlvariablen genutzt werden"
 transcript_raw: ''
 transcript_slim: ''
