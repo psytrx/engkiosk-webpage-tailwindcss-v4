@@ -31,10 +31,10 @@ speaker:
 spotify: https://open.spotify.com/episode/76Xohw6WoXJjOflZxIgXTl
 tags:
 - Software Engineering
-- Software Qualität
+- "Software Qualit\xE4t"
 title: "#152 Warum i und j als Z\xE4hlvariablen genutzt werden"
-transcript_raw: ''
-transcript_slim: ''
+transcript_raw: src/data/transcripts/152-transcript.zip
+transcript_slim: src/data/transcripts/152-transcript-slim.json
 youtube: https://www.youtube.com/watch?v=SG2u-ueMSHQ
 
 ---
