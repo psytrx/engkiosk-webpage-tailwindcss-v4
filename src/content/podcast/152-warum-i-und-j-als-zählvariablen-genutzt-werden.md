@@ -25,7 +25,9 @@ rtlplus: ''
 six_user_needs: []
 speaker:
 - name: Andy Grunwald
+  transcriptLetter: B
 - name: Wolfi Gassler
+  transcriptLetter: A
 spotify: https://open.spotify.com/episode/76Xohw6WoXJjOflZxIgXTl
 tags: []
 title: "#152 Warum i und j als Z\xE4hlvariablen genutzt werden"
