@@ -1,6 +1,6 @@
 ---
 advertiser: ''
-amazon_music: ''
+amazon_music: https://music.amazon.com/podcasts/c35a09fe-4116-4e04-8f68-77d61b112e46/episodes/90b6771c-4e73-48e4-9a07-b6dde74f3651/engineering-kiosk-152-warum-i-und-j-als-z%C3%A4hlvariablen-genutzt-werden
 apple_podcasts: https://podcasts.apple.com/us/podcast/152-warum-i-und-j-als-z%C3%A4hlvariablen-genutzt-werden/id1603082924?i=1000678760050&uo=4
 audio: https://audio1.redcircle.com/episodes/eb52d44a-642f-4e1e-a52c-8a43573c6561/stream.mp3
 chapter:
