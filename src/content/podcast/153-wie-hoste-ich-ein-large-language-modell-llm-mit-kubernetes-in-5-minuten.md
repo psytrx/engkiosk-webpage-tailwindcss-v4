@@ -1,6 +1,6 @@
 ---
 advertiser: ''
-amazon_music: ''
+amazon_music: https://music.amazon.com/podcasts/c35a09fe-4116-4e04-8f68-77d61b112e46/episodes/744e3108-cae7-4853-8cfe-60e544ba41a5/engineering-kiosk-153-wie-hoste-ich-ein-large-language-modell-llm-mit-kubernetes-in-5-minuten
 apple_podcasts: https://podcasts.apple.com/us/podcast/153-wie-hoste-ich-ein-large-language-modell-llm-mit/id1603082924?i=1000678855032&uo=4
 audio: https://audio1.redcircle.com/episodes/257388da-86ae-4f67-9312-abbe1761ba45/stream.mp3
 chapter:
