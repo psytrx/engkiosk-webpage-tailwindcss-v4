@@ -30,7 +30,9 @@ speaker:
 - name: Andy Grunwald
 - name: Wolfi Gassler
 spotify: https://open.spotify.com/episode/7w2maDNZb6C5dupdSU2cfK
-tags: []
+tags:
+- DevOps
+- Backend
 title: '#153 Wie hoste ich ein Large Language Modell (LLM) mit Kubernetes in 5 Minuten'
 transcript_raw: ''
 transcript_slim: ''
