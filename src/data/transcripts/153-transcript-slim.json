@@ -1,0 +1,192 @@
+{
+    "language_code": "de",
+    "audio_url": "https://audio1.redcircle.com/episodes/257388da-86ae-4f67-9312-abbe1761ba45/stream.mp3",
+    "punctuate": true,
+    "format_text": true,
+    "dual_channel": false,
+    "multichannel": null,
+    "audio_channels": null,
+    "webhook_url": null,
+    "webhook_auth_header_name": null,
+    "webhook_auth_header_value": null,
+    "audio_start_from": null,
+    "audio_end_at": null,
+    "word_boost": [],
+    "boost_param": null,
+    "filter_profanity": false,
+    "redact_pii": false,
+    "redact_pii_audio": false,
+    "redact_pii_audio_quality": null,
+    "redact_pii_policies": null,
+    "redact_pii_sub": null,
+    "speaker_labels": true,
+    "speakers_expected": 3,
+    "content_safety": false,
+    "content_safety_confidence": null,
+    "iab_categories": false,
+    "custom_spelling": null,
+    "disfluencies": false,
+    "sentiment_analysis": false,
+    "auto_chapters": false,
+    "entity_detection": false,
+    "summarization": false,
+    "summary_model": null,
+    "summary_type": null,
+    "auto_highlights": false,
+    "language_detection": false,
+    "language_confidence_threshold": null,
+    "language_confidence": null,
+    "speech_threshold": null,
+    "speech_model": null,
+    "id": "1cd9266b-499f-4d9e-b956-18cd8169a57b",
+    "status": "completed",
+    "error": null,
+    "utterances": [
+        {
+            "text": "Willkommen zum zweiten Türchen des Engineering Kiosk Adventskalenders. Dieses Türchen ist nicht mit Wolfgang oder mir, sondern mit einem Beitrag aus der deutschsprachigen Podcast Community, diesmal aus dem Bereich Data Science. Aber bevor es losgeht, erstmal ein Witz zur Einstimmung auf das Thema. Was ein Knaller, kann ich nur sagen. Aber nun zum Thema. Viel Spaß mit dem Community Beitrag vom Data Science Deep Dive Podcast.",
+            "start": 5280,
+            "end": 35606,
+            "confidence": 0.9460991,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Hallo und herzlich willkommen zum Adventskalender vom Engineering Kiosk. Wir sind Michelle und Sebastian vom Data Science Deep Dive und wir starten direkt ins Wie hoste ich ein LL M in 5 Minuten mit Kubernetes? Sebastian, erzähl doch mal, was sind denn LLMs?",
+            "start": 35758,
+            "end": 49710,
+            "confidence": 0.9355814,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "LLMs stehen für Large language Models und können vor allen Dingen Text generieren. Und das machen sie, indem sie versuchen, die nächsten Worte mit der höchsten Wahrscheinlichkeit zurückzugeben, gegeben aller bisher zurückgegebenen Wörter. Trainiert werden solche Modelle auf wirklich sehr, sehr großen Mengen von Text. Wir sprechen jetzt in diesem Falle nicht über multimodale Modelle, die eben auch noch auf Bildern oder Videos trainiert werden, sondern beschränken uns wirklich auf die Sprachmodelle.",
+            "start": 49830,
+            "end": 76186,
+            "confidence": 0.9279804,
+            "speaker": "C",
+            "channel": null
+        },
+        {
+            "text": "Und welche Möglichkeiten habe ich denn jetzt, LLMs zu hosten?",
+            "start": 76258,
+            "end": 79586,
+            "confidence": 0.873732,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Ja, wenn ich das ganze nicht selbst machen möchte, dann habe ich diverse Möglichkeiten. Vor allen Dingen greife ich darauf auf Plattformen zweitausendein zurück, die mir das ganze eben als Service anbieten. Ganz vorne mit dabei sind wahrscheinlich Hugging Face. Hugging Face ist eigentlich eher bekannt als Plattform für Entwicklerinnen und Unternehmer oder Unternehmen, die ihre eigenen Modelle veröffentlichen wollen und bereitstellen unter einer bestimmten Lizenz zur Nutzung für euch oder innerhalb von Anwendungen für andere Unternehmen. Dort drauf kann ich dann zurückgreifen. Hugging Face macht aber deutlich mehr als nur eine Plattform, also ein Repository zu sein für Modelle. Sie bieten eben auch als Service an, dort diese Modelle zu hosten und ja, dann als Service tatsächlich darauf zuzugreifen. Man kann natürlich auch auf Services zurückgreifen, wie sie von open Air angeboten werden. Auch Plattformen wie Databricks haben entsprechende Module, um das Hosten von LLMs vor allen Dingen leichter zu machen. Nvidia ist ganz vorne mit dabei und bietet Services an. Was diese Services alle mit abdecken, ist tatsächlich, dass wir die Möglichkeit haben, auch Modelle fein zu tunen. Ein Feintuning von Sprachmodellen ist vor allen Dingen wichtig, wenn wir das Modell auf einen spezifischen Use Case anpassen möchten. Das bedeutet, wir reichern das Ganze eben noch mal mit zusätzlichen Trainingsdaten an und erreichen so typischerweise bessere Performance oder bessere Eigenschaften von dem Modell. Eben zugeschnitten auf unseren Use Case. Und auch solche Modelle kann ich dann dort tatsächlich hosten. Und ich kann sie eben nicht nur hosten, sondern ich kann auch diesen Plattformen das Training überlassen, um dort eben das Ganze eben als kompletten Service auch nutzbar zu machen.",
+            "start": 79698,
+            "end": 174444,
+            "confidence": 0.92917806,
+            "speaker": "C",
+            "channel": null
+        },
+        {
+            "text": "Und wenn es jetzt all diese Plattformen und Services gibt, warum sollte ich denn überhaupt ein LLM lokal hosten?",
+            "start": 174532,
+            "end": 180840,
+            "confidence": 0.8826011,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Ich glaube, der wichtigste Grund wird für viele Unternehmen sein, der Datenschutz oder eben der Schutz von sensiblen Informationen. Was man sich natürlich bei einem Sprachmodell immer fragen muss, gerade wenn es eben extern gehostet wird, ich habe es oder ich nutze es vielleicht einfach als autocomplete Falle von von der Softwareentwicklung, dann muss ich mir eben vorstellen, jede einzelne Zeile und jede Korrektur wird gesendet an einen Server, der betrieben und kontrolliert wird durch ein anderes Unternehmen. Und nicht jedes Unternehmen ist ist mit diesem Verleihen verstanden, dass ich alle Textinformationen meines Unternehmens preisgebe, ohne zu wissen und Kontrolle darüber zu haben, was mit dieser Information eigentlich genau passiert. Andere Gründe können aber auch sein, dass ich eben beim Fine tuning von den Modellen mehr Kontrolle brauche, dass ich vielleicht im Bereich der Inferenz mehr Kontrolle haben möchte, dass ich im Bereich der Evaluierung und der Performance mehr Kontrolle und mehr Einblicke haben möchte. Gründe wie Kosten spielen sicherlich auch eine Rolle. Und zuletzt noch ein technischer Grund, tatsächlich die Latenz. Im lokalen Netzwerk habe ich eben deutlich bessere Performance Eigenschaften, gerade wenn es um Latenz geht. Ich habe weniger Netzwerk und kann, wenn ich denn das Hosting zumindest vernünftig mache, dort eine hochperformante Anwendung haben, die wirklich dann sofort reagieren kann. Wenn ich das ganze nur als Autocomplete nutzen möchte für meine innerhalb meiner IDE, dann bietet sich vielleicht auch noch mal ein Projekt wie Tabby an, was mir ermöglicht, ein lokales Sprachmodell vor allen Dingen zum Coden dann eben zu verwenden. So, jetzt haben wir eine ganze Reihe von Punkten schon abgehakt. Wie mache ich das denn jetzt aber, wenn ich ein bestimmtes Large language Model vielleicht in meiner lokalen Anwendung haben möchte? Wie gehe ich denn da vor?",
+            "start": 180960,
+            "end": 277338,
+            "confidence": 0.9266209,
+            "speaker": "C",
+            "channel": null
+        },
+        {
+            "text": "Michelle also als ersten Schritt überlege ich noch mal kurz, was möchte ich denn hosten? Also ich habe auf der einen Seite das LLM, das ist das im Prinzip, worüber du gerade die ganze Zeit gesprochen hast, Sebastian, also das Modell selber. Was ich dann dazu noch brauche, ist eine GUI. Also ich muss die Möglichkeit haben, mit diesem L interagieren zu können. Für dieses Hosten des LLMs an sich ist es wichtig, Nvidia oder Cuda Docker Images zu nutzen, weil dieser Container dann einen entsprechenden GPU Support braucht. Bei der GUI kann man z.B. gradio benutzen. Das ist ein Python Paket oder ein Framework für ML Web Apps. Und diese GUI spricht im Hintergrund das LLM an, also die Python Funktion, die ich geschrieben habe, z.B. mit pyTorch, um mit dem LLM interagieren zu können. Und das ist sieht dann so aus, dass ich mit diesem lm chatte. Das heißt, ich stelle ihm eine Frage und das lm antwortet darauf.",
+            "start": 277354,
+            "end": 328358,
+            "confidence": 0.9333833,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Das bedeutet, so bekomme ich meine Anwendung in einen Docker Container und habe dort dann Zugriff auf ein Chat Interface. Und kann man das dann so ohne weiteres nach Kubernetes bringen?",
+            "start": 328454,
+            "end": 337830,
+            "confidence": 0.9149603,
+            "speaker": "C",
+            "channel": null
+        },
+        {
+            "text": "Noch nicht ganz. Man muss da noch eine Sache machen, und zwar muss ich die VM, auf der das läuft, entsprechend vorbereiten. Denn auch hier ist es wichtig, um mit der GPU interagieren zu können, dass wir entsprechende Treiber installieren. Auch hier ist das Stichwort wieder Nvidia oder CUDA und es gibt das sogenannte Nvidia Toolkit, was sich da anbietet, was man dann auf der VM im Voraus installiert. Und erst im Anschluss kann ich dann damit beginnen, das eigentliche Deployment mit Kubernetes umzusetzen.",
+            "start": 337910,
+            "end": 365032,
+            "confidence": 0.9460088,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Okay, das bedeutet, ich habe meine VM, ich habe einen Container und dann habe ich eigentlich nur noch einen Service in Kubernetes.",
+            "start": 365136,
+            "end": 372328,
+            "confidence": 0.95187044,
+            "speaker": "C",
+            "channel": null
+        },
+        {
+            "text": "Das stimmt. Allerdings musst du noch eine Sache vorher tun. Du musst nämlich Kubernetes beibringen, dass es diese GPU überhaupt gibt und dass Kubernetes diese GPU nutzen kann. Zweitausendein standardmäßig ist es nämlich nicht möglich, in der kubernetes Konfiguration die GPU anzusprechen. Und wie bringe ich Kubernetes das bei? Ich mache das, indem ich das Nvidia Device Plugin über Helm deploye. Das ist eine einfache Helm Installation und im Anspruch ist es dann möglich, in der kubernetes Konfiguration neben den anderen Standard Ressourcen auch die GPU anzusprechen und zu sagen Hey, es gibt diese GPU und nutzt sie doch bitte für mein Deployment.",
+            "start": 372424,
+            "end": 406414,
+            "confidence": 0.89173216,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Cool. Das heißt, wenn ihr mit einem Docker Service und GPU Support das ganze nach Kubernetes bringen wollt, dauert das wahrscheinlich ein bisschen mehr als 5 Minuten, aber zumindest erklären lässt es sich in 5 Minuten. Wenn ihr mehr darüber erfahren möchtet, dann hört doch bitte bei uns im Podcast rein, wo wir über Themen wie tatsächlich kubernetes Model Surving, den Operationsteil von AI Modellen sprechen, aber auch andere Themen zum Bereich Data Science wie Personalentwicklung oder predictive analytics ansprechen.",
+            "start": 406502,
+            "end": 432624,
+            "confidence": 0.9043306,
+            "speaker": "C",
+            "channel": null
+        },
+        {
+            "text": "Und unser Podcast ist der Data Science Deep Dive. Das ist der Unternehmens Podcast von Inwt. Wir bei Inwt setzen Data Science Projekte um, von der ersten Idee bis zum fertigen Produkt. Und in unserem Podcast sprechen wir genau darüber. Hört doch gern mal rein. Wir wünschen euch schöne Feiertage und bedanken uns fürs Zuhören.",
+            "start": 432712,
+            "end": 449120,
+            "confidence": 0.947926,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Tschüss.",
+            "start": 449200,
+            "end": 449904,
+            "confidence": 0.91126,
+            "speaker": "C",
+            "channel": null
+        },
+        {
+            "text": "Vielen lieben Dank an Michelle und Sebastian vom Data Science Deep Dive Podcast. Wenn ihr noch mehr von den beiden hören wollt, die entsprechenden Links findet ihr natürlich in den Shownotes. Dort findet ihr auch unsere Discord Community, falls ihr Lust auf weitere Engineering Gespräche habt. Ansonsten wünschen wir euch viel Spaß beim Einrichten des eigenen Large language Models auf Kubernetes und natürlich schöne Feiertage. Bis bald.",
+            "start": 450072,
+            "end": 472240,
+            "confidence": 0.91493654,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Ÿousand.",
+            "start": 476540,
+            "end": 476740,
+            "confidence": 0.7456,
+            "speaker": "C",
+            "channel": null
+        }
+    ],
+    "confidence": 0.9257672,
+    "audio_duration": 477,
+    "webhook_status_code": null,
+    "webhook_auth": false,
+    "summary": null,
+    "auto_highlights_result": null,
+    "content_safety_labels": null,
+    "chapters": null,
+    "sentiment_analysis_results": null,
+    "entities": null
+}
