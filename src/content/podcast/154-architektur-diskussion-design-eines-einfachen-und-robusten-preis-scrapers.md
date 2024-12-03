@@ -1,6 +1,6 @@
 ---
 advertiser: ''
-amazon_music: ''
+amazon_music: https://music.amazon.com/podcasts/c35a09fe-4116-4e04-8f68-77d61b112e46/episodes/4bf67bf0-c2c5-4c54-a710-67c887fda945/
 apple_podcasts: https://podcasts.apple.com/us/podcast/154-architektur-diskussion-design-eines-einfachen-und/id1603082924?i=1000678997224&uo=4
 audio: https://audio1.redcircle.com/episodes/2a1c53e2-8e4f-489d-a9d5-86b311ab6f66/stream.mp3
 chapter:
