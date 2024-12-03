@@ -1,0 +1,1536 @@
+{
+  "language_code": "de",
+  "audio_url": "https://cloud.inlupus.at/s/WaDX8WLb4Hy6zsQ/download/ep154_architektur_heizoel.mp3",
+  "punctuate": true,
+  "format_text": true,
+  "dual_channel": false,
+  "multichannel": null,
+  "audio_channels": null,
+  "webhook_url": null,
+  "webhook_auth_header_name": null,
+  "webhook_auth_header_value": null,
+  "audio_start_from": null,
+  "audio_end_at": null,
+  "word_boost": [],
+  "boost_param": null,
+  "filter_profanity": false,
+  "redact_pii": false,
+  "redact_pii_audio": false,
+  "redact_pii_audio_quality": null,
+  "redact_pii_policies": null,
+  "redact_pii_sub": null,
+  "speaker_labels": true,
+  "speakers_expected": 2,
+  "content_safety": false,
+  "content_safety_confidence": null,
+  "iab_categories": false,
+  "custom_spelling": null,
+  "disfluencies": false,
+  "sentiment_analysis": false,
+  "auto_chapters": false,
+  "entity_detection": false,
+  "summarization": false,
+  "summary_model": null,
+  "summary_type": null,
+  "auto_highlights": false,
+  "language_detection": false,
+  "language_confidence_threshold": null,
+  "language_confidence": null,
+  "speech_threshold": null,
+  "speech_model": null,
+  "id": "ebdc6630-8493-4a5c-9ace-ab2f56c9af49",
+  "status": "completed",
+  "error": null,
+  "utterances": [
+    {
+      "text": "Willkommen zu einer neuen Episode im Engineering Kiosk. Softwareentwicklung ist ja weit mehr als Programmieren, da sind wir uns, glaube ich alle einig. Es geht darum, das eigentliche Problem zu verstehen, sich zu fragen, ob dies wirklich ein Problem ist und ob es sich gerade in Bezug auf Aufwand lohnt, dieses Problem auch zu lösen und natürlich, wie man es lösen würde. Gerade verschiedene Lösungswege durchzudenken, die vor und Nachteile abzuwägen und final die beste Entscheidung zu treffen, ist eine der größten Skills von erfahrenen Softwareentwickler innen. In dieser Episode machen wir genau das, eine Art Design bzw. Architektur bzw. Implementierungsdiskussion. Wir stellen die wie würdest du folgendes Problem lösen und implementieren? Das konkrete Szenario bringt Andi mit, der übrigens auch bei der Heiztechnologie noch auf Legacy steht. Und zwar in Form eines Preismonitors, den er gerne bauen würde. Ähnlich zu Geizhals oder Idealo, nur etwas einfacher. Bevor wir aber starten, noch ein Kleiner Tipp, falls du während der Episode denkst, hä, geht doch viel einfacher, ich würde es ganz anders machen. Komm doch direkt bei uns in die Discord Community und lass uns über deinen Lösungsweg diskutieren. Wir wollen nämlich auch von dir lernen. Nun aber genug vom Intro, ab in die Architekturdiskussion.",
+      "start": 4480,
+      "end": 73280,
+      "confidence": 0.912707,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Wer diesen Podcast schon länger hört, weiß, dass wir doch des öfteren Design Dokuments erwähnen und wie wichtig es ist, mehrere Umsetzungsvorschläge für ein Problem zu haben bzw. Lösungsvorschläge für ein Problem zu haben und dass man diese niederschreiben sollte, dass man im Team sich darüber austauschen sollte, welches ist die beste, welche machen wir denn? Und dann vielleicht auch dokumentiert mit den Gründen, warum man denn andere verworfen. Und der Wolfgang ist ja recht faul, würde ich mal sagen. Er mag zwar immer gerne Design Dokumente lesen, selbst welche zu schreiben, finde er eher mäßig, weil dann müsste er ja sich hinsetzen und lange was schreiben und was auszuformulieren. Er ruft lieber jemanden an. Und damit ich meinen meine Design Dokumentation oder beziehungsweise Design Diskussion endlich mal in diesem Podcast hier bekomme und natürlich auch dem Wolfgang was Gutes tue, ihm nämlich nicht zum schreiben zu zwingen, versuchen wir heute mal etwas neues. Und zwar habe ich ein Real life Problem mitgebracht bzw. Etwas, was ich umsetzen möchte, was ich programmieren möchte. Eine relativ Ÿousand kleine Applikation also glaube ich zumindest. Schauen wir jetzt gleich mal und ich beschreibe das Szenario und Wolfgang und ich besprechen mal verschiedene Lösungen. Wir fragen den Wolfgang, wie er es implementieren würde und dann schauen wir mal, was dabei rauskommt und ja, vielleicht auch, welche Lösung dann am Ende dies wird. Womit der Wolfgang auch zufrieden ist. Obwohl mich Wolfgangs Meinung in dieser Sache vielleicht auch nur mäßig interessiert, weil es ist ja meine Implementierung.",
+      "start": 74820,
+      "end": 162454,
+      "confidence": 0.9109352,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Du machst es dann sowieso, egal was ich sage. Das ist eigentlich, was ich so auch ganz gerne mache. Die Leute fragen mich irgendwie, irgendwelche Umsetzungen, Automatisierungsmöglichkeiten, ich empfehle was, sie machen dann doch was anderes, oder? Die meiste Zeit probiere ich ihnen eigentlich auszureden, dass sie das automatisieren sollten, weil es meistens irgendeine dumme Idee ist. Also ich bin schon gespannt. Vielleicht schaffe ich es dir das ganze Projekt ja auszureden.",
+      "start": 162502,
+      "end": 185608,
+      "confidence": 0.9106043,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Die Tage habe ich gehört, dass die Geschäftsführung in großen Firmen, meist Consulting Firmen wie Ernst Young und so weiter, reinholt, die dann dazu bringen, dass die Consulting Firma genau die Idee des Chefs als Lösungsvorschlag bringt, der Chef das dann umsetzt und wenn die fehlschlägt, sagt man ja, das waren ja die Consultants und eigentlich mache ich ja hier gerade nichts anderes. Das bedeutet, mein Ziel ist natürlich, mit meiner Implementierungslösung hier rauszukommen. Die setze ich dann um. Also du sagst ja, aber du glaubst.",
+      "start": 185664,
+      "end": 210690,
+      "confidence": 0.8972814,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Nicht im Ernst, dass ich dir zustimme mit deiner Implementierung. Das kannst du dir jetzt schon abschminken. Also egal, was du vorschlägst, ich werde mit einer anderen Idee um die Ecke kommen. Aber ich bin ja schon gespannt, was du für ein Problem hast. Wir probieren das ja ad hoc zu machen.",
+      "start": 210730,
+      "end": 222698,
+      "confidence": 0.94939595,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Wir sind keine 5 Minuten in einem Podcast und schon der erste Team Streit. Wahnsinn, oder? Fünf Teamphasen, Forming, Norming, Storming, Performing und so weiter. Ich glaube, wir bleiben in der Storming Phase und kommen da nicht mehr raus. Aber genau darum geht es ja. Wir spielen das einfach mal durch anhand eines real Life Cases und vielleicht habt ihr ein bisschen Spaß. Und Achtung, falls ihr eine andere Lösungsmöglichkeit habt oder eine bessere oder Wolfgang Challenge wollt oder mich Challenge wollt, springt doch danach einfach mal in die Discord Community, die wir haben. Den Link findet ihr in den Shownotes. Und ich würde gerne auch eure Lösungsansätze hören, wie man dieses, ja vielleicht doch recht simple Problem lösen kann. Also Wolfgang, anschnallen. Bist du bereit?",
+      "start": 222834,
+      "end": 263146,
+      "confidence": 0.876906,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Ich bin bereit. Vielleicht noch zur Info, das Problem ist natürlich jetzt nicht riesengroß, weil das könnten wir sonst nie in einer Podcast Episode besprechen. Darum halte dich kurz an die ein bisschen Kontext.",
+      "start": 263298,
+      "end": 273330,
+      "confidence": 0.8606585,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Ich habe Eigentum, ich wohne in einem Haus. Dieses Haus wird mit Öl beheizt, mit Heizöl. Ich weiß, umwelttechnisch nicht so super, aber Legacy verdient das Geld. Und ich habe hier mit alten Strukturen zu kämpfen. Das bedeutet, es ist kein Neubau, es ist ein Altbau und an der Straße liegt auch kein Gas und ich habe auch keinen Gasanschluss im Haus. Und auch diesen zu legen hätte Geld gekostet.",
+      "start": 273410,
+      "end": 294860,
+      "confidence": 0.959284,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Wo lebst du das Gas? Eine Alternative wäre, also es nicht mitbekommen, da ist aktuell so ein Krieg und so.",
+      "start": 294980,
+      "end": 300684,
+      "confidence": 0.874188,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Ja, Wärmepumpen gibt es auch und so weiter. Nur mal kurz, ich habe 2014 renoviert oder saniert, da sah die Welt noch alles ein bisschen anders aus. Wie dem auch sei, ich habe auch so Öltanks im Haus und diese müssen zweitausendein gefüllt werden. Also bestelle ich zu einem bestimmten Zeitpunkt Öl und das kostet mich dann x Euro pro 100 l, weil man rechnet Öl immer in 100 l ab. Jetzt ist es so, der Heizölpreis schwankt genauso wie der klassische Sprit und ist abhängig von diversen Faktoren. Die vereinigten arabischen Emirate, wie günstig die gerade irgendwie Öl auf dem Markt werfen, dann den Barrelpreis und so weiter.",
+      "start": 300772,
+      "end": 336402,
+      "confidence": 0.9269341,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Für mich als Nichtwissender und eben mal ein Auto. Ich weiß nicht mal den aktuellen Benzin oder Dieselpreis. Wo liegen wir denn da? Wobei ich kann dir sagen, eigentlich hast du gewusst, dass Heizöl dasselbe wie Diesel ist. Hat doch dieselbe UN Nr. Ist 1202. Also ist Diesel oder Heizöl. Ist eigentlich das gleiche, nur anders eingefärbt, weil billiger, weil steuerlich begünstigt. Ist mein Standardspruch, nur so nebenbei. Aber was kostet jetzt der Diesel? Heizöl, sorry.",
+      "start": 396586,
+      "end": 419442,
+      "confidence": 0.9131522,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Heizöl pro 100 l habe ich jetzt glaube ich vor gar nicht allzu langer Zeit für 95 €94 pro 100 l gekauft. Irgendwie sowas. Ich müsste noch mal nachgucken.",
+      "start": 419546,
+      "end": 430304,
+      "confidence": 0.8618793,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Also und wie viel schwankt es so im Durchschnitt?",
+      "start": 430362,
+      "end": 433236,
+      "confidence": 0.81518114,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Ich schaue mal ganz kurz nach, weil da kommen wir nämlich schon zum zweiten Kontextpunkt dieses Szenarios, was ich bereits habe. Ich habe meinen Ölverbrauch auf monatlicher Basis seit von den letzten drei Jahren.",
+      "start": 433308,
+      "end": 444684,
+      "confidence": 0.94225234,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Und gibst du den händisch ab?",
+      "start": 444772,
+      "end": 446252,
+      "confidence": 0.8261,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Ja, ich gehe einmal pro Monat in den Keller und schreibe es in der excel Liste. Und ich habe die Aufzeichnung, wann und wie viel L ich zu welchem Preis gekauft habe, seit 2011.",
+      "start": 446316,
+      "end": 456668,
+      "confidence": 0.8661727,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Ÿousand. Auch manuell? Natürlich.",
+      "start": 456724,
+      "end": 457826,
+      "confidence": 0.617965,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Auch manuell. Ich meine, ich bestelle einmal im Jahr oder alle zwei Jahre. Also das ist jetzt nicht wirklich viel, da muss ich nicht viel automatisieren.",
+      "start": 457858,
+      "end": 464298,
+      "confidence": 0.9624677,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Alle zwei Jahre. Was hast du für einen Dank?",
+      "start": 464434,
+      "end": 466818,
+      "confidence": 0.95322,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Inzwischen habe ich viereinhalbtausend L. So, du wolltest wissen, wie das so schwang, der Preis. 2011 habe ich 76 pro 100 l gezahlt. 2015 habe ich 47 pro 100 l gezahlt. 2018 €74 Ÿousand pro 100 l. 2020 habe ich acht und dreiig pro 100 l gezahlt. 2022 habe ich 103 pro 100 l gezahlt. Und ja, nee, vor kurzem habe ich 85 pro 100 l gezahlt. Also wir haben eine Spanne eigentlich in den letzten 11, in den letzten 13 Jahren von acht und dreiig bis 103 pro 100 l.",
+      "start": 466994,
+      "end": 507320,
+      "confidence": 0.87431014,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Das heißt, eine Dankfüllung kostet dich aktuell zu 4000. Und ein bisschen weniger vielleicht.",
+      "start": 507400,
+      "end": 512008,
+      "confidence": 0.7139121,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Genau, ein bisschen weniger. Du musst nur wissen, in der Regel ballert man keine viereinhalbtausend L pro Jahr weg. Und ich habe auch nicht gedämmtes Haus, das ist dann alles so ein bisschen schwierig. Aber man hat nicht so einen hohen Verbrauch. Also das wäre dann, wenn du von null auf 100 gehen würdest. Wie dem auch sei, wie du merkst, die Schwankungen machen schon was aus. Szenario ist jetzt, bzw. Das, was ich möchte, ich möchte täglich den Heizölpreis monitoren, also scrapen und dann visualisieren, möchte ich eigentlich eine Kurve kriegen oder so einen Graphen. Und auf Basis meiner beiden Datenpunkte, wann ich das letzte Mal bestellt habe und was ich so gezahlt habe und meinem Verbrauch, würde ich dann gerne wissen, wann ich denn bestellen soll. Das bedeutet, ich möchte einen Alarm oder einen Ping haben, wenn der Preis bzw. Für meine Verhältnisse niedrig ist und ich Bedarf habe. Also wenn ich vor zwei Monaten bestellt habe, dann sind die Tanks gefüllt, dann macht es natürlich keinen Sinn, ein Öl zu bestellen. Ich möchte aber auch nicht jeden Tag auf die Visualisierung gucken, ob es Sinn macht, jetzt zu bestellen, sondern ich will ja auf gut Deutsch, wenn es Sinn macht, im Vergleich zu den Preisen, die ich bisher immer gezahlt habe, ich möchte auch nicht immer den besten Preis haben, weil wir wissen, ähnlich wie beim Aktienkurs, das weiß man erst später. Das ist so die Aufgabe. Und lustigerweise ist das Szenario eigentlich auf sehr viele Dinge anwendbar. Alles, was man zyklisch bestellt oder im Endeffekt macht ein Preisvergleich wie Idealo oder Geizhals ja nichts anderes. Die tracken Preise und schicken dir einen Ping. Das ist die Problemstellung. Haben sie Fragen zu Problemstellungen, Herr Gassler?",
+      "start": 512104,
+      "end": 600886,
+      "confidence": 0.92016906,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Also meine erste Frage wäre ja eigentlich, warum stellst du nicht auf eine Wärmepumpe um? Und es gibt ja sicher Förderungen. Bei uns gibt es diese Kesseltausch Initiative oder so ähnlich heißt es. Die machen ganz viele Podcast Werbungen jetzt Kesseltausch AT, glaube ich, ist jetzt keine bezahlte Werbung, gibt es bei euch in Deutschland sicher auch. Also ich würde jetzt gerne mal alle Hörer innen bitten, dann bei uns im Discord alle Links für Andi zu providen, dass es besser ist, eine Wärmepumpe zu haben, dass sich das heutzutage rentiert. Alle Förderungen rundherum gibt es ja bei euch auch, waren glaube ich, in der Politik ja gerade große Diskussion, oder? Also ich würde mal einen Schritt zurückgehen. Aber nehmen wir mal an, es gibt keine andere alternative Technologie und es macht absolut Sinn, dort weiterzufahren.",
+      "start": 600958,
+      "end": 638250,
+      "confidence": 0.88884807,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Ich möchte nur mal ganz kurz eingrätschen. Die Wärmepumpe wäre jetzt der Rewrite, ne?",
+      "start": 638330,
+      "end": 642650,
+      "confidence": 0.8186864,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Genau, genau, genau.",
+      "start": 642730,
+      "end": 644010,
+      "confidence": 0.77653664,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Also ja, aber ist ein Rewrite, wir haben ein Legacy System und der Wolfgang schlägt erstmal ein Rewrite vor.",
+      "start": 644090,
+      "end": 650162,
+      "confidence": 0.82781523,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Ja, wenn das im Gesamten günstiger ist, weil da kann man sie relativ gut kalkulieren. Also sonst ist ja der Rewrite schwer zu kalkulieren. In dem Fall hast du eine ganz gute Kalkulation. Und ob der Rewrite in diesem Fall.",
+      "start": 650306,
+      "end": 660490,
+      "confidence": 0.94831127,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Jetzt günstiger ist, sei aber mal dahingestellt, weil die kompletten Investitionskosten für die Wärmepumpe, für die Umstellung und so weiter, die habe ich ja erst. Und die Investitionskosten müssen ja längerfristig günstiger sein, als der Ölpreis ansteigt.",
+      "start": 660530,
+      "end": 673410,
+      "confidence": 0.92252,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Korrekt. Und du kannst natürlich was für die Umwelt tun und du bekommst Förderungen.",
+      "start": 673490,
+      "end": 676746,
+      "confidence": 0.93880785,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Förderung weiß ich jetzt gerade nicht, ob ich die noch in Deutschland bekomme, aber der Rewrite ist jetzt gerade ausgeschlossen. Wir haben Legacy Systeme.",
+      "start": 676818,
+      "end": 683074,
+      "confidence": 0.9118504,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Ich nehme mal an, das wäre nicht die bessere Lösung. Wie gesagt, das überlasse ich der Community, dir das zu erklären. Die nächste Frage, die mir immer stelle, bevor ich in die Technik reinspringe, ist, macht es überhaupt Sinn? Also wie viel Geld kannst du dir sparen und wie viel Geld würde es kosten, sowas zu entwickeln, zu programmieren? Also nehmen wir mal an, du kannst dir da irgendwie, würde man sagen, 20 % sparen. So Fluktuation.",
+      "start": 683202,
+      "end": 705524,
+      "confidence": 0.9120604,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Wieso? Wir haben gerade gesagt, die Preisspanne ist zwischen acht und dreiig und 103. Das bedeutet, ja.",
+      "start": 705692,
+      "end": 711812,
+      "confidence": 0.8826382,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Ja, aber das war zu einer anderen Zeit. Also du hast wahrscheinlich innerhalb einem Jahr nicht so eine hohe Spanne, oder? Klar, vor fünf Jahren hattest du einen anderen Preis, ist logisch. Aber es geht darum, eigentlich so in ein bis eineinhalb Jahren, oder? Den Preis ungefähr zu treffen.",
+      "start": 711836,
+      "end": 726148,
+      "confidence": 0.9304192,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Ich habe gerade mal einen Heizöl Chart gefunden für, und ich nehme jetzt nur zwei 24. Im Jan. 2024 hat der 106 gekostet und das Tief war irgendwas bei fünf und achtzigste. Das bedeutet, wir haben eine 20 % Spanne circa.",
+      "start": 726204,
+      "end": 741132,
+      "confidence": 0.8528427,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Das heißt, du kannst dir so circa, wenn wir jetzt mal rechnen, so eine normale Füllung ist irgendwo zwei bis €3000, dann kannst du dir da 400 bis €600 sparen. Im besten Fall aber zumindest schon mal mehr als €50. Also irgendwo dreistellige Einsparungen möglich.",
+      "start": 741276,
+      "end": 758208,
+      "confidence": 0.92623955,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Eine dreistellige Einsparung ist auf jeden Fall möglich. Und wenn dieses Tool, was wir jetzt hier designen, länger als ein Jahr läuft, dann hat man diese Einsparung natürlich eher die potenzielle ein, im Extremfall, wenn man den nächsten Preis trifft, wovon ich nicht ausgehe, aber wenn du davon nur die Hälfte triffst, sagen wir du sparst 401, also €400 ist der Optimalfall und du triffst die Hälfte davon und sind es trotzdem €200, ist sehr viel Geld.",
+      "start": 758264,
+      "end": 780486,
+      "confidence": 0.90666246,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Okay, meine nächste Herangehensweise in Frage wä kann ich mit ganz minimalem Aufwand auch schon was erreichen? Und ihr habt dazu schnell mal gegoogelt, in welchem Monat kauft man am günstigsten Öl? Und scheinbar ist Januar, Februar und auch oft Dezember das günstigste Monat. Das heißt, wie viel Ersparnis habe ich, wenn jetzt im Januar und Februar oder Dezember immer kaufe? Wenn ich eine Analyse mache in den letzten Jahren, wann war das Öl am billigsten? Erreiche da vielleicht schon meine 10 % und die 20 sind dann schwierig, weil die muss ich dann vielleicht aus der Glaskugel lesen. Also meine Herangehensweise wäre auch da ganz ohne Technik, kann ich schon irgendwas erreichen, wenn ich so Grundregeln beachte?",
+      "start": 780568,
+      "end": 818390,
+      "confidence": 0.8767841,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Smarter Move, hätte ich nicht mitgerechnet, aber ja. Und das Lustige ist, dieselbe Frage habe ich meinem Heizöllieferanten zur Vorbereitung dieser Podcast Episode ebenfalls gestellt.",
+      "start": 818470,
+      "end": 827454,
+      "confidence": 0.911174,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Und was hat er geantwortet?",
+      "start": 827502,
+      "end": 828750,
+      "confidence": 0.896088,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Er sagte, das ist logisch, dass November, Dezember, Januar der günstigste Preis ist, weil da der Demand am höchsten ist und deswegen die großen Firmen einfach im Volumen kaufen und deswegen mehr Rabatt kriegen, weil wer bestellt im Sommer Heizöl?",
+      "start": 828830,
+      "end": 845970,
+      "confidence": 0.900467,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Wäre natürlich auch meine naive Herangehensweise gewesen. Im Sommer ist billiger, weil es niemand braucht. Aber Google hat mir das sehr schnell erklärt, dass das eben nicht so ist.",
+      "start": 846130,
+      "end": 853194,
+      "confidence": 0.9074628,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Ich will aber auch nur mal sagen, das kann eine Herangehensweise sein, ist es aber auch nur eine Annahme.",
+      "start": 853242,
+      "end": 858170,
+      "confidence": 0.8864247,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Ja, ja, aber da brauche ich noch keinen Aufwand, da wir noch null investiert und implementiert. Und wenn ich da schon 10 % raushole, zweitausendein, dann ist es auch schon gut, weil dann sprechen wir nur mehr von Optimierungspotenzial von keine Ahnung, 100, 200, wenn man was programmiert. Und dann ist schon die Frage, ob sich das rendiert. Meine nächste Herangehensweise wäre üblicherweise gibt schon einen Service, der mir genau das anbietet. Also wenn man dann auch googelt, gibt es da genau diesen Ping, den du haben willst? Kann ich da irgendwo um fünf im Monat das einkaufen, dass sie dann ping bekomme? Da gebe ich vielleicht ein, wann ihr das letzte mal Öl bestellt habe, wie viel L ich brauche und so weiter, so eine Grundinformation und dann bekomme den Bing. Wann ist denn Öl am billigsten? Also das, was du als Produkt bauen willst, hat vielleicht schon jemand anderer probiert. Auf die Schnelle habe ich jetzt nichts gefunden. Es gibt so online Prognosen zu Heizöl und solche Dinge, aber so dieses klassische, hey, ich brauche Öl, habe so und so viel L, sag mir einfach immer Bescheid. Subscription Modell wäre eigentlich interessantes Business Modell, wenn es das noch nicht gäbe.",
+      "start": 858330,
+      "end": 921114,
+      "confidence": 0.87829274,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Also ich habe gerade eins gefunden auf Fastenergie, da kann man anscheinend seine Postleitzahl eingeben, seine Liefermenge in L und dann Anzahl der Lieferstellen. Das sind die Standard Heizöl Attribute, wenn man so möchte. Und dann kann man da anscheinend den Wunschpreis anmelden.",
+      "start": 921202,
+      "end": 937554,
+      "confidence": 0.9074993,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Und was kostet das Ganze?",
+      "start": 937602,
+      "end": 938850,
+      "confidence": 0.992098,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "So wie ich das sehe, nichts, aber fast. Energy vertreibt anscheinend Heizöl und die wollen dann anscheinend die Art von Provision haben, aber über die würde ich ja nicht bestellen.",
+      "start": 938930,
+      "end": 947714,
+      "confidence": 0.930497,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Naja, wenn sie billig sind, ja, aber.",
+      "start": 947762,
+      "end": 949466,
+      "confidence": 0.8652457,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Jetzt sagen die, die schicken mir das per E Mail und ich möchte ja einen Ping haben, ich möchte einen Alert haben. Vielleicht nicht per e Mail, sogar vielleicht per WhatsApp, vielleicht sogar per Signal, Telegram und so. Vielleicht möchte ich das auch einfach per Webhook auf mein Home Assistant haben, wer.",
+      "start": 949498,
+      "end": 960638,
+      "confidence": 0.9036431,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Weiß das schon, du bist ja absoluter Nerd da mit deinem Home Assistant. Aber kann ich nachvollziehen. Ist übrigens auch sehr interessant, jetzt sprechen wir schon fast 20 Minuten über dieses Thema und wir haben noch keinen einzigen technischen Punkt besprochen. Und es ist auch ganz interessant, ich hatte heute gerade eine Podcast Aufnahme mit Andreas Lehr vom Happy Bootstrapping Podcast und da haben wir auch genau über das gesprochen, zweitausendein, dass eigentlich ganz viel rund um das technische Produkt passiert und dass du eigentlich viel mehr Zeit in andere Dinge investieren musst, wenn du ein Produkt baust, als in die Technik. Und da merkt man schon, dass man glaube ich sehr viel machen muss, bis man mal zu einer Entscheidung kommt, will man wirklich Zeit investieren, um was technisches zu bauen. Aber nehmen wir mal an, wir wollen jetzt was technisches bauen, oder? Also jetzt wäre ich eigentlich an dem Punkt, wenn das jetzt alles negativ wäre, dass ich mir überlegen würde, okay, wie könnte ich das möglichst einfach selbst für mich bauen oder auch vielleicht ein Produkt für andere.",
+      "start": 960654,
+      "end": 1011732,
+      "confidence": 0.9200029,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Nee, nee, Butter bei die Fische, wieso negativ? Also soviel ich weiß, haben wir gesagt, wir haben Sparpotenzial. Soviel ich weiß, hast du gesagt, gibt es was fertiges? Haben wir gesagt, ja, gibt es, erfüllt aber nicht die Needs.",
+      "start": 1011796,
+      "end": 1022500,
+      "confidence": 0.8887418,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Also ja, okay, da müsste man jetzt noch mehr Recherche reinstecken, aber jetzt, wenn du nur mal Sparpotenzial von 100 oder 200 hast, alle zwei Jahre, das heißt maximal 100 pro Jahr, wenn man mal absieht von dem, dass man eben im Winter bestellt, wo es am billigsten ist, dann müsstest du jetzt was programmieren, was weniger Zeit benötigt als €100 im Jahr. Was ist dein Stundensatz noch mal? Wie viel, wie viel Minuten kannst du da arbeiten oder Zeit investieren?",
+      "start": 1022580,
+      "end": 1048812,
+      "confidence": 0.9133842,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Weit unter Mindestlohn, aber wir sind ja ein Software Engineering Podcast und da wir uns ja konstant weiterentwickeln wollen, ist das hier natürlich als side Project deklariert.",
+      "start": 1048916,
+      "end": 1057764,
+      "confidence": 0.92869925,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Also also als Spaß Projekt auch, dass man vielleicht was lernt oder was ausprobieren will oder wie es halt bei uns so klassisch ist. Ich kenne es ja von mir selbst, ich sehe irgendwo ein Problem und denke mir, das kann ich technisch lösen. Zweitausendein, das mache ich jetzt. Egal was, was sonst am Markt existiert. Schon. Das ist eine coole Sache. Haben wir ja glaube ich auch in unserer absolut ersten Episode über side Projects besprochen.",
+      "start": 1057852,
+      "end": 1078242,
+      "confidence": 0.9076195,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Ist auf jeden Fall ein Real Life Use Case. Und das tolle ist eigentlich, ich könnte auch meiner Frau diesen Grafen ja geben oder vielleicht ihr den Ping schicken lassen, die ganze Sache sozusagen die Heizöl Bestellung outsourcen, wenn man so möchte, weil sie ist natürlich auch an den familiären Finanzen interessiert und freut sich natürlich auch, wenn wir Geld sparen. Also zurück zur Technik. Du hast die Anforderung, du hast ganz viele Kontextfragen gestellt. Was würdest du aus dem Bauch heraus sagen? Wie würdest du es implementieren? Jetzt gleich?",
+      "start": 1078306,
+      "end": 1105014,
+      "confidence": 0.8931763,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Was meinst du mit jetzt gleich? War das die Ansage für die Werbung? Jetzt gleich? Nach der Werbung?",
+      "start": 1105062,
+      "end": 1109166,
+      "confidence": 0.8759317,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Nein, nein, nein, nein. Wie würdest du es implementieren? Jetzt gleich? Also du legst jetzt gleich auf mit mir von der Aufnahme und fängst an zu hacken und baust den.",
+      "start": 1109238,
+      "end": 1116902,
+      "confidence": 0.90680766,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Ja, ich würde dich natürlich als Kunden zuerst mal fragen, was kannst du denn alles empfangen? Also was dieses Bing Zweitausendein, dass du da haben willst, was würdest du dir da erwarten? Soll das ein E Mail sein? Sollte es eine WhatsApp Message sein? Kann das Slack sein? Telegram?",
+      "start": 1117046,
+      "end": 1132388,
+      "confidence": 0.8576551,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Genau. Lass uns die dreimal machen, würde ich sagen, als es ist recht Standard. Sagen wir Slack, sagen wir Telegram und sagen wir e Mail.",
+      "start": 1132484,
+      "end": 1139892,
+      "confidence": 0.8392564,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Ist gut, dass du Telegram sagst, weil Telegram ist kostenlos im Vergleich zu WhatsApp, was ja die meisten doch verwenden, weil das lässt sich meta ganz gut zahlen. Wenn du jemanden eine Message schreibst, dann musst du für das Öffnen von so einem Chat Window für 24 Stunden musst du was zahlen und ich glaube, das sind €0,05 oder so. Also wenn du da tausenden Leuten was schickst, geht es ganz schnell ins Geld. Das glaubt man gar nicht. Darum ist Telegram eigentlich ganz cool, so als Alternative, wenn man das natürlich in die Breite ausrollen will, würde ich dann trotzdem wieder WhatsApp empfehlen, weil das schon natürlich breiter in der Maße verwendet wird.",
+      "start": 1139956,
+      "end": 1170286,
+      "confidence": 0.9117939,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Die Breite ist die Familie Grunwald.",
+      "start": 1170438,
+      "end": 1172094,
+      "confidence": 0.9513183,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Ja, also die verwendet die. Okay, ihr seid ja alle in den in den Verschwörungstelegram Gruppen.",
+      "start": 1172182,
+      "end": 1177326,
+      "confidence": 0.79890126,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Insofern, das bedeutet, das System muss auch nicht skalieren. Und den aktuellen Heizölpreis, dafür gibt es auch eine API, die haben wir. Da nehmen wir eine ganz normale Rest API, die gibt es wirklich wie Sand am Meer hier irgendwie. Nimm das als gegeben hin. Also und wir haben eine kleine Plattform, wo wir es laufen lassen können. Wir können Docker Container launchen oder so.",
+      "start": 1177398,
+      "end": 1196688,
+      "confidence": 0.8862923,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Aber willst du jetzt eigentlich einen Bing bekommen, wenn du kaufen solltest oder nur, wenn der Preis nieder ist und du entscheidest dann, ob das jetzt ein sinnvoller Preis ist, ob der wirklich niedrig ist. Weil sonst müsstest du ja wirklich in die Vergangenheit gehen, die alten Daten analysieren, was was bedeutet billig überhaupt? Wie ist die Fluktuation und die ganzen. Also das ist schon ein Data Science Projekt dann fast.",
+      "start": 1196744,
+      "end": 1219020,
+      "confidence": 0.90770227,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Naja, ich habe ja gesagt, ich habe die Info, mein Heizölverbrauch, das bedeutet, das Tool hat eigen, weiß eigentlich, wie viel L ich habe noch im Heizöl. Und dann sagen wir, gibt es ein Threshold irgendwo, wenn ich unter das falle, dann musst du bestellen, dann gibt es einen Wertebereich. Weiß ich jetzt nicht. Wenn ich unter 500 l falle, dann müssen wir mal langsam kaufen. Und wenn ich zwischen 1200 l und 500 l bin, dann könnte man bestellen. Ja, weil dann lohnt sich's. Und wenn ich über 3000 l bin, dann lohnt es sich halt nicht zu bestellen. Z.B. irgendwie sowas. Du hast ja die Information, wie viel L ich noch im Tank habe und du weißt, zu welchen Preisen ich in der Vergangenheit gekauft habe. Ob ich kaufe oder nicht, das ist dann immer noch meine Entscheidung. Aber ich möchte nur einen Ping bekommen, wenn es für mich relevant ist. Das bedeutet, wenn es für mich ein attraktiver Preis ist. Und attraktiv ist explizit jetzt hier subjektiv genannt, weil ich da möchte jetzt keine harten Kriterien. Das liegt dir in der Designentscheidung. Und ob ich dann kaufe oder nicht und den gleich zum Hörer greife und bestelle oder nicht, das entscheide ich als Mensch immer noch.",
+      "start": 1219100,
+      "end": 1281412,
+      "confidence": 0.91036856,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Zahlt man eigentlich da eine Liefergebühr? Also könnte ich nur 500 l bestellen und zahle die dann trotzdem nur in Ölpreis?",
+      "start": 1281476,
+      "end": 1287740,
+      "confidence": 0.84090286,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Ja, das geht über den Preis. Also wenn du, wenn du eine gewisse Menge nimmst, dann geht der Preis minimal runter. Und wenn du jetzt nur 200 l nimmst, dann zahlst du ein bisschen mehr für deine 100 l. Genau, weil da kommt ein LKW mit einem Fahrer, der rollt einen dicken Schlauch aus und allem drum und dran.",
+      "start": 1287820,
+      "end": 1301932,
+      "confidence": 0.9148452,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Na eben, darum denke ich mir ja, wenn da eigentlich, wenn du da nur 1000 l brauchst, könnte sich ja trotzdem rendieren, wenn der Preis gerade nieder ist, nur 1000 l nachzufüllen.",
+      "start": 1301996,
+      "end": 1310276,
+      "confidence": 0.8580397,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Ja, genau. Da gibt es so Schwellenwerte, keine Ahnung, über 1000, über 2000, über 3000 und so weiter. Aber die lassen wir jetzt einfach mal der Einfachheit halber raus.",
+      "start": 1310348,
+      "end": 1318072,
+      "confidence": 0.9234055,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Okay, also du willst kein Data Science Projekt draus machen?",
+      "start": 1318156,
+      "end": 1320400,
+      "confidence": 0.884666,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Nein, wir halten das für den Podcast hier simpel. Und ich habe das Gefühl, wir sprechen jetzt hier schon fast 29 Minuten und drückst dich langsam vor der Design Diskussion.",
+      "start": 1320440,
+      "end": 1327296,
+      "confidence": 0.89230967,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Das ist Requirement Engineering. Ich muss ja wissen, was wirklich gefragt ist, weil wie gesagt, die Technik ist dann relativ easy, meiner Meinung nach.",
+      "start": 1327368,
+      "end": 1334144,
+      "confidence": 0.91345584,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Liebe Community, falls ihr in einem Großkonzern arbeitet und ihr sucht noch einen professionellen Verhinderer, der Herr Gassler, den kann man.",
+      "start": 1334232,
+      "end": 1340120,
+      "confidence": 0.9580628,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Glaube ich anstellen, um möglichst einfache Lösungen zu finden.",
+      "start": 1340160,
+      "end": 1343420,
+      "confidence": 0.85221446,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Also wir haben eine Rest API, wir wissen, wie viel L ich im Tank habe. Wir sagen, ab 1000 l bestellen wir, das ist der Schwellenwert. Wir wissen, wie wir in den letzten 10 Jahren gekauft haben. Wie würdest du es implementieren?",
+      "start": 1343760,
+      "end": 1355968,
+      "confidence": 0.90817,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Also ich würde mir auf jeden Fall mal alle Daten über die Rest API holen. Regelmäßig, täglich oder wahrscheinlich braucht man gar nicht täglich, aber zumindest in einem sehr kurzen Intervall von ein bis mehreren Tagen. Keine Ahnung, wie, wie schnell die zweitausendein Daten sich da wirklich ändern. Also wenn da heute jetzt der Ölpreis sich irgendwie ändert, kann ich den dann überhaupt so schnell bekommen, wenn ich den normal bestellt? Bei dem Ölfritzen in Duisburg?",
+      "start": 1356024,
+      "end": 1379718,
+      "confidence": 0.89919555,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Stell dir vor, mein Ölfritze in Duisburg hat die API.",
+      "start": 1379854,
+      "end": 1382078,
+      "confidence": 0.924283,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Ah, okay, ja, dann ist noch besser. Dann würde ich natürlich täglich fetchen, wenn der Preis sich täglich ändern kann und mir die auch lokal abspeichern, die Daten, damit ich die in der Datenbank habe oder in einem File, ist eigentlich egal. Wahrscheinlich würde ich eher eine simple Datenbank verwenden oder vielleicht sogar das ganze in File einfach dumpen. Großes, langes JSON File, sind ja nicht viel werte.",
+      "start": 1382134,
+      "end": 1402530,
+      "confidence": 0.8949329,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Okay, machen wir weiter. Ich habe ein paar Fragen, weil wir werden jetzt mal konkreter. Welche Datenbank würdest du, du hast gerade Datenbank gesagt, oder welche Datei würdest du nehmen und was für ein Dateiformat?",
+      "start": 1402610,
+      "end": 1411970,
+      "confidence": 0.94265026,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Also beim Dateiformat würde ich einfach Jason verwenden und das einfach immer raus serialisieren, einlesen, raus serialisieren mit allen Daten, Wert dazu schreiben, weil wir sprechen da ja von einem Wert pro Tag, das heißt, es sind 300. Wie viele Tage hat es? Ja, 365. Schwierig, ich bin noch nicht so lange auf der Welt, dass ich das wüsste. Und das heißt, wir sprechen da von ein paar tausend Werten. Das ist ja völlif watz auf einer Dateiebene.",
+      "start": 1412050,
+      "end": 1437350,
+      "confidence": 0.8405694,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Welche Attribute würdest du wegspeichern für ein JavaScript Object?",
+      "start": 1437390,
+      "end": 1440798,
+      "confidence": 0.8420689,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Ja, den Tag und den Preis, wenn das die Information ist, die ich erhalte. Wenn ich jetzt natürlich mehr Quellen oder so habe, würde die Quelle dazu speichern, aber sonst halt die Information, die ich bekomme, wenn da irgendwelche sinnvollen Metadaten dabei sind, kann man die nur mit speichern. Aber gehen wir davon aus, dass es nur da preis ist, die Datei.",
+      "start": 1440894,
+      "end": 1458434,
+      "confidence": 0.8690458,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Das bedeutet, du würdest dann pro Zeile ein JSON Record haben.",
+      "start": 1458482,
+      "end": 1463282,
+      "confidence": 0.8551918,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Naja, würde glaube ich ein großes JSON Array, großes JSON Object machen, das ich einfach direkt wieder rausschreibe in die Datei und wieder einlese.",
+      "start": 1463346,
+      "end": 1472042,
+      "confidence": 0.8526275,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Oh, interessant. Warum?",
+      "start": 1472106,
+      "end": 1473554,
+      "confidence": 0.66436666,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Ja, weil ich mir das ganze Gebase dann spare, dass sie pro Zeile oder so arbeiten müsste. Ich habe da einfach den den JSON Bars Befehl und der liest mir einfach das gesamte Objekt ein und dann kann ich habe ich eine Map oder dark oder wo ich das einmal umwandle. In JavaScript ist das eine Zeile.",
+      "start": 1473642,
+      "end": 1489854,
+      "confidence": 0.8820372,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Downside ist natürlich, dass du beim Schreiben die komplette Datei einlesen musst.",
+      "start": 1489942,
+      "end": 1493238,
+      "confidence": 0.93819165,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Ja, so what? Du hast mir gerade zuerst erklärt, es muss nicht skalieren. Außerdem, sogar wenn es skalieren muss, das sind, wir sprechen von Werten oder so, das ist ja ein paar Kb.",
+      "start": 1493294,
+      "end": 1502022,
+      "confidence": 0.8728806,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Wir sind ja, wir sind ja in der Design Diskussion hier. Da darf ich ja wohl Counterfragen stellen.",
+      "start": 1502086,
+      "end": 1505366,
+      "confidence": 0.8448489,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Natürlich darfst du.",
+      "start": 1505438,
+      "end": 1506414,
+      "confidence": 0.82659,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Okay, wir fragen das jetzt einmal ab und lesen uns die ganze Datei ein, packen den heutigen Tag Ÿousand in diese Map mit rein und schreiben die Datei wieder.",
+      "start": 1506502,
+      "end": 1515476,
+      "confidence": 0.9535283,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Genau. Wenn du willst, wenn du es noch ganz sophisticated haben willst, so ein bisschen einen Sicherheitsaspekt mit reinbringen willst, damit du keine Daten verlierst, dann würde ich bei jedem Mal einlesen, die alte Datei vielleicht wegschreiben mit einem Timestamp oder so, je nachdem, wie groß die Datei ist. Aber dann hat man sozusagen sogar, wenn irgendwas absolut schief geht oder da irgendein File corrupted ist, dann hätte man sogar noch eine Art History von den Dateien, von den alten Daten.",
+      "start": 1515508,
+      "end": 1540260,
+      "confidence": 0.90083504,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Zweitausendein. Das bedeutet aber auch, dass du jeden Tag ein zusätzliches File erzeugst.",
+      "start": 1540300,
+      "end": 1544090,
+      "confidence": 0.87280387,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Genau. Oder die letzten 10 oder irgend sowas. Aber das mal abgesichert ist, weil es kann natürlich. Genau, wenn du irgendwas schreibst und irgendwas corrupted ist oder so, könnte das natürlich schon passieren. Aber wieder, wir sprechen da von ein paar kb, das sollte nicht schwierig sein. Oder du verwendest eine Datenbank, eine sqlite, aber maximal eine SQLite, die würde sonst nichts größeres verwenden. Außer du verwendest wieder irgendein Database as a Service Provider oder sowas für. Da gibt es ja mittlerweile so JavaScript Datenbanken, die dir ermöglichen, leicht irgendwelche Dumps zu speichern. Aber da bin ich ehrlich gesagt auch der Meinung, dann kann man gleich S verwenden oder einen lokalen Speicher.",
+      "start": 1544130,
+      "end": 1579196,
+      "confidence": 0.8908972,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Neni, wir sind datenschutzbewusst, wir machen hier non cloud. Das Ganze läuft unten auf dem kleinen Heimserver, weil wir brauchen jetzt keine zusätzlichen externen.",
+      "start": 1579268,
+      "end": 1590164,
+      "confidence": 0.8821933,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Ja, im Idealfall hast du deinen Heimserver ja sowieso gebackt. Das heißt, du sparst dir das extra rausschreiben, weil du hast ja ein Backup und inkrementelles Backup und dann hast du kein Problem, dass du die Datei wiederherstellen kannst, solltest du die mal verlieren.",
+      "start": 1590292,
+      "end": 1604580,
+      "confidence": 0.8956977,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Okay, und die SQLite, da hast du eine Tabelle mit Datum und Preis und Datum ist der Primary Key, oder wie sieht das aus? Ich lege dir schon halb die Lösung in den Mund hier. Vielleicht lege ich dir auch meine Lösung in den Mund, ich weiß es. Oder willst du ein Auto inkrement als PK nehmen und wenn ja, warum?",
+      "start": 1604660,
+      "end": 1620916,
+      "confidence": 0.9239256,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Ist eine gute Frage. Ehrlich gesagt irrelevant bei dieser Datenmenge zweitausendein, aber wenn du ein schönes Design machst, wäre wahrscheinlich das Datum der Primary Key, weil du wahrscheinlich öfters Range queries hast, die auf das Datum gehen.",
+      "start": 1621028,
+      "end": 1636410,
+      "confidence": 0.9030981,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Was ich sehr schön fand, nur kurz als Zwischenfeedback, du hast dir überlegt, wie dein. Ich spreche schon von Schema, obwohl es nur ein Datum und ein Preis ist, aber es ist ein Schema aus dem Schema, dass du dir Gedanken gemacht hast, wie du die Daten liest mit der Range Query. Das fand ich sehr schön. Und einer der Erfahrungen, die ich in meiner Karriere gemacht habe, ist, dass die meisten Softwareentwickler und entwicklerinnen in Skalierungsprobleme laufen. Jetzt nicht bei diesem Problem, sondern bei ihren Applikationen, weil sie nicht verstehen, wie ihre Daten wirklich gelesen werden und dann meist die falschen Datenstrukturen nehmen bzw. Die falschen Schema in Datenbanken und so weiter designen, weil sie einfach nicht verstehen, wie die Art der Daten gelesen wird. Sei es jetzt mal grobbasierte Funktionen wie Summen oder Average oder ähnliches. Das nur als Nebensatz. Okay, zweitausendein, also entweder eine Datei JSON, Map oder eine sqlite Datenbank. Du hast gesagt, eine sqlite Datenbank ist ja, ist ja file basiert, das bedeutet, liegt ja eigentlich daneben oder vielleicht sogar embedded. Also eigentlich bist du gegen eine andere relationale Datenbank oder gegen eine andere neue SQL Datenbank, die als separater Prozess ist, richtig?",
+      "start": 1636450,
+      "end": 1700040,
+      "confidence": 0.9010733,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Korrekt, weil die Komplexität einfach so stark ansteigt. Du musst es maintainen. Du hast einfach einen Service mehr, was sterben kann, was die Probleme macht, was du monitoren musst und und und.",
+      "start": 1700120,
+      "end": 1709622,
+      "confidence": 0.893175,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Gut, wie fragst du den Preis ab? Ist das ein Cronjob? Ist das eine while Schleife, also ein langlaufender Prozess? Wie läuft das?",
+      "start": 1709776,
+      "end": 1717842,
+      "confidence": 0.8959243,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Kommt ein bisschen auf die Programmiersprache drauf an, aber wenn ich jetzt z.B. javaScript verwenden würde, also mit Node, dann läuft der Prozess ja dauernd und dann kannst du mit einem Cron Package z.B. was du einbindest, quasi Cron in JavaScript in Node JS nachbilden und sagst dann einfach einmal am Tag wird dieser Wert aufgerufen und in die Datei gelegt.",
+      "start": 1717906,
+      "end": 1736816,
+      "confidence": 0.9057167,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Ja, du bist auch voll in der JavaScript Welt angekommen, weil für einen klassischen Timepunkt Delay oder Time Punkt Sleep gibt es natürlich auch ein Cron Package. Habe ich verstanden, Wolfgang. Reicht da nicht einfach nur eine Schleife mit einem mit einem Sleep oder ähnliches oder mit, wie heißt das, Sett Timeout heißt das, glaube ich, bei JavaScript, zumindest im Browser, in der DOM API, dass du so einen Ticker hast, so einen Timer. Wozu brauchst du ein Cron Package in einem langlaufenden Prozess? Kannst du da nicht direkt Cron nehmen? Also vom Linux?",
+      "start": 1736858,
+      "end": 1764652,
+      "confidence": 0.87657577,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Ja, es kommt darauf an, ob du sonst noch was damit machst, aber wenn du dein Programm fragen willst, vielleicht um irgendeine Info oder wenn es dann noch mehr machen soll. Also es kommt darauf an, ob das ständig laufen soll oder ob das einfach einmal am Tag angeworfen wird.",
+      "start": 1764716,
+      "end": 1776548,
+      "confidence": 0.937593,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Gingen, das ist deine Design Entscheidung. Du baust das jetzt hier. Ich möchte natürlich, dass das später wartungsarm ist und dass es einfach funktioniert.",
+      "start": 1776604,
+      "end": 1783556,
+      "confidence": 0.84579,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Ja, ich würde mittlerweile trotzdem einen langlebig Prozess machen, weil du dann einen Health Endpoint z.b. zur Verfügung stellen kannst für Monitoring und das ist sonst ein bisschen schwieriger zu rauszufinden. Hat Cron funktioniert oder nimmst du dann irgendwie ein E Mail Versende Tool oder also vom Betriebs dem von Linux, dass die E Mails gesendet werden, wenn Cron nicht richtig ausgeführt wurde, aber dann brauchst du wieder ein E mail Versand da drinnen, dass das auch sinnvoll aufgesetzt ist. Dementsprechend kann man natürlich beides wählen, aber ich würde wahrscheinlich einen langlebigen JavaScript Prozess nehmen und da drin cron abbilden und dann kann man vielleicht dann auch in Zukunft was drauf bauen, dass man jederzeit mal abfragen kann, hey, gib mir die aktuellen Ÿousand Informationen, aktuellen Status, was du gerade errechnet hast oder sowas und dann kann man das easy monitoren und das ist auch relativ einfach.",
+      "start": 1783628,
+      "end": 1830778,
+      "confidence": 0.8781598,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Okay, ich möchte nur mal ganz kurz sagen, warum ich JavaScript jetzt in diesem Falle nicht mag.",
+      "start": 1830834,
+      "end": 1834962,
+      "confidence": 0.94658,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Ja, du magst JavaScript überhaupt nie, aber wenn man den aktuellen Oktober Report sich anschaut oder auch die Stellenausschreibungen, die es gibt, da führt JavaScript ganz, ganz, ganz, ganz weit vorne. Kann ich übrigens auch empfehlen, Index out of Bounds hat kürzlich eine Episode gemacht, genau zu diesem Thema. Die besprechen den Report. Also JavaScript gewinnt einfach aktuell und wird auch überall gesucht, auch wenn du es nicht machst.",
+      "start": 1835066,
+      "end": 1855570,
+      "confidence": 0.90220785,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Naja, wie gesagt, für ein Timesleep braucht man ein Cron Package. Aber nun gut, jetzt habe ich ja gesagt, ich habe vorhandene Daten, ich habe meine vorherige Bestellhistorie, wann habe ich zu welchem Preis bestellt und ich habe eine excel Liste, also beides ist eine Google Sheets Liste, muss ich zugeben. Google Sheet, wie mein monatlicher Verbrauch ist, also wie viele L ich aktuell in dem Tank habe, wie feede ich die da rein? Und du möchtest bitte nicht meine UI, mein Google Sheet zerstören, weil ich gehe einmal im Monat in den Keller, schaue auf den Tank, mach mein Handy auf, trage das Datum und den Wert da ein und dann schließe ich das.",
+      "start": 1855650,
+      "end": 1887186,
+      "confidence": 0.91757905,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Ich würde dich versuchen zu überreden, dass du trotzdem einen Jason File verwendest, weil du bist ja Entwickler und es kann nicht so schwer sein, einmal Jason zu ändern, einmal im Monat. Aber wenn du natürlich unbedingt ein Google Docs haben willst, kannst du relativ leicht Google Docs Export machen. Da brauchst du nur die URL dazu, also den Token in der URL und dass man mit dem Link zugreifen kann darauf und dann kann man sich das downloaden und bekommt das als CSV z.B. da brauchst du also gar keine großartige Integration, irgendwelche Packages speziell für die Google Docs API, die es natürlich auch gibt, aber das ist einfach ganz simplen Download CSV und den kannst du dann auch in deinem Programm dementsprechend verarbeiten und vielleicht dann nach JSON schreiben, wenn du das unbedingt willst. Mach dir ChatGPT heutzutage eh das dann nicht so kompliziert, dann bist du auch zufriedengestellt als anstrengender Kunde.",
+      "start": 1887258,
+      "end": 1934976,
+      "confidence": 0.9125789,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Okay, also nur damit ich das verstehe, in dem Programm habe ich jetzt eine zweite Cron Instanz, wenn du so möchtest. Also eine zweite, eine zweite Nebenläufigkeit in Go, würde man sagen, eine Go Routine oder ein Thread oder ähnliches oder die.",
+      "start": 1935088,
+      "end": 1947712,
+      "confidence": 0.92673284,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Gleiche, ist ja egal, aber ja.",
+      "start": 1947736,
+      "end": 1949240,
+      "confidence": 0.90132,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Und das Ding lädt dann in gewissen Zyklen die beiden Google Sheets runter über diese URL. Habe ich das verstanden?",
+      "start": 1949320,
+      "end": 1957856,
+      "confidence": 0.920554,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Warum sind es zwei Google Sheets?",
+      "start": 1957928,
+      "end": 1959376,
+      "confidence": 0.90609,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Achso, das eine ist eine Tabelle mit dem Verbrauch und das andere ist eine Tabelle mit meiner Bestellhistorie.",
+      "start": 1959448,
+      "end": 1963224,
+      "confidence": 0.9682372,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Ah, okay. Genau, in dem Fall würde ich das einfach regelmäßig downloaden und in JSON File schreiben.",
+      "start": 1963272,
+      "end": 1968552,
+      "confidence": 0.92469233,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Okay, finde ich eine elegante Lösung. Cool.",
+      "start": 1968616,
+      "end": 1970312,
+      "confidence": 0.9512357,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Ja. Okay.",
+      "start": 1970376,
+      "end": 1970992,
+      "confidence": 0.91779,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "So, jetzt haben wir die Daten und jetzt habe ich ja gesagt, zwei Anforderungen. Mit den Daten auf der einen Seite möchte ich die ganze Sache visualisieren. Ich möchte eine Kurve haben. Ich hoffe, dass eine Kurve. Also ich meine, eigentlich wäre ja bei dem Ölpreis auch eine tolle Geschichte, wenn das einfach ein Horizont wäre, eine gerade Linie. Das würde mir auch gefallen, wenn es eigentlich gar keine Preisschwankungen gäbe. Aber nun gut, wir haben ja mit Altlasten zu kämpfen, deswegen Legacy verdient das Geld. Jetzt haben wir die Visualisierung und jetzt haben wir den aktiven Ping mit dieser minimalen Berechnung. Wie würdest du die Visualisierung machen?",
+      "start": 1971056,
+      "end": 1999252,
+      "confidence": 0.9417804,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Die Visualisierung wäre ein statische Index HTML Seite, die auch da zur Verfügung gestellt wird. Damit habe ich jetzt das schon auch argumentiert, dass du einen langlebigen Prozess hast. Kannst du das im selben Prozess machen? Muss es gar nicht auslagern, dass du eine API zur Verfügung stellst, die die aktuellen Daten dir bei JSON ausliefert. Und diese statische Index HTML Seite, die holt sich die Daten von dieser API, die in deinem Prozess läuft, gibt dir die Daten und die zeichnet mit chart js super niederschwellige JavaScript Library dir einen Kraft. Also ich würde da gar nicht irgendwie kompliziert Metabase oder sonstige Tools einbinden, weil wir sprechen von einer Kurve und es kann nicht mehr als eine Kurve eigentlich werden. Zweitausendein, weil wir gar nicht mehr Daten haben. Also ganz simpel chart Js und die Daten einfach visualisieren, die du über die HTTP Schnittstelle als JSON zur Verfügung gestellt bekommst.",
+      "start": 1999316,
+      "end": 2048874,
+      "confidence": 0.8972125,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Was man vielleicht noch machen könnte, aber das habe ich initial nicht erwähnt, deswegen können wir es rauslassen jetzt ist vertikale Striche in den Chart rein malen, wann ich das letzte mal bestellt habe.",
+      "start": 2048922,
+      "end": 2057922,
+      "confidence": 0.89714885,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Ja, das ist in Charges in der Tat sogar schwieriger, aber würdest du wahrscheinlich auch noch hinbekommen?",
+      "start": 2057986,
+      "end": 2063682,
+      "confidence": 0.8596371,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Habe ich, habe ich ja nicht erwähnt, aber du. Ich glaube, bei Grafana nennt man sowas Events oder Annotations.",
+      "start": 2063746,
+      "end": 2068246,
+      "confidence": 0.88572156,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Aber würdest du noch hinbekommen? Wahrscheinlich.",
+      "start": 2068358,
+      "end": 2070142,
+      "confidence": 0.85796833,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Okay, und wie würden wir den Ping machen?",
+      "start": 2070206,
+      "end": 2071782,
+      "confidence": 0.93858,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Die Notification, also die Schwierigkeit ist noch herauszufinden, wann du wirklich einen Ping sendest. Aber ich bleibe mal auf der technischen Seite. Sagen wir, ich will jetzt einen Ping senden, dann würde ich einfach dementsprechend e Mail, Slack oder Telegram versenden, das dementsprechend einstellen. Da gibt es Packages für alle drei muss man einmal die Tokens angeben und das war's wieder direkt aus der Programmiersprache heraus. Also früher habe ich das noch oft über über Linux gelöst und dort dann Mail Server und der kümmert sich um alles. Mittlerweile bin ich eigentlich ein Freund, dass ich das in meiner Programmiersprache schon drin habe und dann wirklich nativ mit einem Package mit dem Mail Server kommuniziere, mit der Slack API kommuniziere, mit einem Telegram Channel kommuniziere.",
+      "start": 2071846,
+      "end": 2111600,
+      "confidence": 0.9172329,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Warum? Also warum bist du da hinübergegangen?",
+      "start": 2111640,
+      "end": 2114696,
+      "confidence": 0.8756257,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Weil es andere wieder asynchron ist, was natürlich schon ein Vorteil sein kann. Aber das Problem ist wieder mit Monitoring. Wenn das in meinem Programm drin passiert und ich bekomme den Fehler von dem Mail Server geliefert, dann sehe ich den sofort. Wenn ich das Mail jetzt nur an Linux weiterleite und Linux versendet dann meine e Mails, dann brauche ich dort wieder Monitoring. Hat mein Mail Server ein Problem beim E Mail Versand gehabt? Das heißt, ich brauche wieder mehr Monitoring und habe das nicht sofort in meinem Code, wo ich schneller reagieren kann und vielleicht dann was in meinem Monitoring sowieso abgefragt wird oder in meinem Log Watcher von meinem Programm, dass da irgendwo ein Fehler aufgetaucht ist. Also wenn du natürlich jetzt Millionen von E Mails versenden würdest, oder musst du es ja asynchron machen, aber nachdem wir da ja von einer normalen Menge sprechen, sollte das kein Problem sein, direkt vom Programm aus. Und wir haben ja langlebigen Prozess, der kann auch im Hintergrund theoretisch viele E Mails versenden.",
+      "start": 2114768,
+      "end": 2163942,
+      "confidence": 0.9070493,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Ja, da werden jetzt realistisch gesehen fünf E Mails versendet, fünf oder 10 E Mails pro Jahr versendet, weil du, wir haben ja gesagt, wenn ich jetzt gerade bestellt habe, weiß ich jetzt nicht, im November und im Januar ist ein Niedrigpreis, so wie du gerade erfolgreich gegoogelt hast, dann haben wir mit hoher Wahrscheinlichkeit nicht so viel Öl verbraucht, dass wir sofort wieder bestellen wollen. Deswegen wird ja keine e Mail rausgehen, weil es sich ja nicht lohnt zu bestellen, weil wir hatten ja diesen Schwellenwert von 1000 l gesagt und deswegen gehen da, weiß ich nicht, pro Jahr, ich sag mal 10 E mails raus, wahrscheinlich dann ab Sommer irgendwie, wenn der, wenn der Winter vorbei ist und dann kriege ich vielleicht schon mal hier und da mal ein Ping, wo ich, wo ich als Mensch sage, ich bestelle dann nicht Ÿousand. Und natürlich kann man jetzt noch weiter optimieren. Ich kann dem Ding Feedback geben. Habe ich bestellt, habe ich nicht bestellt, damit das Ding lernen kann.",
+      "start": 2164006,
+      "end": 2205134,
+      "confidence": 0.90425164,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Ja, das bekommst du ja sowieso eigentlich.",
+      "start": 2205222,
+      "end": 2207030,
+      "confidence": 0.8837029,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Das lassen wir jetzt mal weg. Interessant. Wie würdest du die e Mail versenden? Weil du brauchst ja einen E Mail Versendeservice oder einen SMTP Server oder ein IMAP Server oder ähnliches. Du kannst ja heutzutage, siehst ja hier mit SPF und d Mark und allem drum und dran, die Spam Filter sind ja brutal geworden.",
+      "start": 2207110,
+      "end": 2221958,
+      "confidence": 0.857987,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Ja, also ursprünglich habe da immer irgendwelche APIs verwendet, das heißt so ein Mailgun, Mailbird oder Messagebird, weiß gar nicht mehr, wie der Service heißt. Also da gibt es ja massig Message Anbieter, die dir das optimieren. Und mittlerweile, seitdem ich gehört habe, dass mein E Mail Provider Mailbox Org eigentlich auch recht viele E Mails versendet, also die, die sagen, es ist okay, wenn Account auch tausende E Mails versendet, versende ich eigentlich direkt nur mehr über meinen eigenen SMTP. Da brauche ich dann auch gar nichts einrichten, das ist schon eingerichtet, das akzeptiert meine E Mail als Absender. Super easy, richtig einfach ein Account ein und darüber wird gesendet.",
+      "start": 2222094,
+      "end": 2260086,
+      "confidence": 0.9005007,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Okay, ich fasse zusammen. Du hast eine JavaScript Applikation, die hat einen, die ist als langlaufender Prozess aufgesetzt. Dort hast du ein Cron Package drin, was einmal pro Tag die ganzen Daten abholt und in eine große JSON Map schreibt oder in eine sqlite Datenbank, die du dann lokal ablegst. Danach bietet dein langlaufender Node JS Prozess ebenfalls einen HTTP Endpunkt an, welches die Daten und Preise zur Verfügung geht und du lieferst eine Index HTML aus, welche ein Chart JS eingebettet hat, wer dir dann den Graphen gibt. Und dann hast du in diesem langlaufenden Prozess in demselben Loop anscheinend die Berechnung auch drin. Immer wenn ein neuer Datenpunkt reinkommt, startest du die Berechnung und anhand der Schwellenwerte, die wir da hardcoden, sagen wir, ist bestellt, ist nicht bestellt und die zusätzlichen Daten von Google Sheets lädst du einmal pro Tag runter.",
+      "start": 2260158,
+      "end": 2311410,
+      "confidence": 0.8829776,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Ÿousand. Korrekt.",
+      "start": 2311450,
+      "end": 2312344,
+      "confidence": 0.75832,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Okay, das wäre deine bevorzugte Lösung. Das wäre dein Proposal für das Design.",
+      "start": 2312432,
+      "end": 2315280,
+      "confidence": 0.7791508,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Dokument von der technischen Seite. Ja, das große Fragezeichen noch ist wirklich, wann sendet man einen Ping? Und das ist, glaube ich, sehr, sehr schwierig, weil du weißt ja nicht, wann ein guter Preis ist. Du hast ja nur die Vergangenheit und du weißt ja nie, geht es noch weiter nach unten, ist es jetzt nieder oder ist es nicht nieder? Weil es ist vielleicht gerade wieder ein Krieg ausgebrochen und du bist auf einem sehr allgemeinen Hoch, aber es ist eigentlich immer noch das tiefste, was gerade aktuell geht, zweitausendein. Also diese Entscheidung ist super, super schwierig und das ist dann eher ein Data Science und ein Forecasting Problem, damit man die Infos bekommt. Da würde mich auch interessieren, ob man vielleicht den aktuellen Börsenpreis irgendwie mit reinnehmen könnte, ob der vielleicht eine gewisse Vorhersage Möglichkeit gibt, wie die Zukunft aussieht, weil wenn der nach oben geht, dann geht der Preis wahrscheinlich auch nach oben in Zukunft. Vielleicht könnte man das noch irgendwie mit reinnehmen, aber wie gesagt, es ist schon eigentlich ein recht tricky Datenproblem und da geht es halt wirklich dann um die klassische Vorhersage. Und wenn es jemand gelöst hätte, dann wäre wahrscheinlich schon ziemlich reich, weil dann kannst du halt die Börse auch vorher sagen.",
+      "start": 2315320,
+      "end": 2378184,
+      "confidence": 0.9356214,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Genau, so was nennt man nämlich Hedgefonds und die haben ganz viele Entwickler, die genau eigentlich das versuchen und läuft manchmal gut und dann kommt jemand aus Reddit und sagt, Jungs, lass mal GameStop shorten. Nee, lass mal gamestop in die Höhe treiben, da hat jemand geschortet und ja, dann ist dein Forecasting Problem halt auch ein reales Problem. Aber wir haben ein Sparpotenzial von 200, haben wir initial ausgerechnet und wir beschäftigen uns mit Heizöl und nicht mit irgendwelchen Forecasting Problemen. Ist natürlich enorm spannend. Und hey, liebe Hörerinnen und Hörer, ihr merkt schon, aus diesem simplen Optimierungsproblem kann ein hochwissenschaftlicher Bereich werden und ihr könnt eure Heizölbestellung auch so hart optimieren. Aber wir sind ja in einer Design Dokument Diskussion, deswegen sprechen wir jetzt mal über die alternativen Vorschläge. Hast du denn noch alternative Vorschläge? Wenn nicht, habe ich ein paar, wie man die ganze Sache umsetzen könnte. Und ich finde, einen meiner alternativen Vorschläge hat sogar einen gewissen Drive. Da würde ich sagen, der macht vielleicht wieder richtig Spaß.",
+      "start": 2378232,
+      "end": 2430014,
+      "confidence": 0.8786549,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Dann lass mal hören.",
+      "start": 2430062,
+      "end": 2430870,
+      "confidence": 0.8641425,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Ja, folgendermaßen, also jetzt mal unabhängig von der Programmiersprache, ich würde auch einen langen laufenden Prozess machen. Ich würde auch die Rest API anfragen. Ich würde mir einen Teil von dir stehlen und zwar dieses, wie ich die Google Sheet Daten bekomme. Sehr smarter Move, muss ich zugeben. Hatte ich so nicht auf dem Schirm. Ich hatte irgendwie gedacht, ja, muss ich dann jetzt die Google Sheets API anbinden und so weiter. Nee, einfach dieses CSV runterladen. Das ist, glaube ich, ich würde das sogar in Memory halten, glaube ich.",
+      "start": 2430910,
+      "end": 2456178,
+      "confidence": 0.8921171,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Es funktioniert auch wahnsinnig gut. Also ich mache das in Projekten. Teilweise ist mein Google Sheets das Frontend für den Enduser oder für ein kleines Team, Administrationsteam. Und ja, ich hole mir einfach CSV dann und schreibe das in die MySQL Datenbank.",
+      "start": 2456234,
+      "end": 2469762,
+      "confidence": 0.90845025,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Ist in dem Fall genial. Genial. Was ich machen würde, ich würde nur die aktuellen Daten, die ich da habe, Bestellhistorie und so weiter und so fort und den aktuellen Preis würde ich als Open telemetry Endpoint rausgeben. Dann würde ich mit Prometheus die Daten scrapen. Und dann per PromQL das Alerting und das Graphing machen, weil die ganzen Berechnungen, die wir gerade hatten, kannst du ohne Probleme. Ich meine, das ist eine Time Series eigentlich, Ja? Und das ist eigentlich nichts anderes als CPU Daten oder RAM Daten und ist ja ein Werteverlauf. Du hast die Visualisierung, kriegst du for free, das Alerting kriegst du for free, die komplette Notification Engine kriegst du for free mit dem Alert Manager von Prometheus. Und du musst. Hast eigentlich nur einen sehr, sehr, sehr schmalen Service. Ja, du hast einen zusätzlichen Prozess mit Prometheus und dem Alert Manager, das ist fair. Ein bisschen Konfiguration dazu, welchen Target erst sollte, aber du kriegst unglaublich for free. Muss kein Chart JS updaten, musst du nicht rumfummeln und so weiter. Kannst die Thresholds sehr schnell anpassen, hat Rate Function, hast sogar theoretischen linearen Forecast, jetzt mal unabhängig davon, ob das Sinn macht bei diesem Öl, aber du kriegst halt eine ganze Menge for free mit. Ganz klassisch Prometheus. Was hältst du davon?",
+      "start": 2469786,
+      "end": 2534164,
+      "confidence": 0.88810486,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Point taken? Da fällt mir dann eine andere Lösung auch ein, was du vielleicht machen könntest, dass du dann gar keinen Ÿousand langläufigen Prozess benötigst, dass du wirklich nur die Daten in eine Datenbank schreibst, was es für eine Datenbank auch immer ist, und du dann direkt die Datenbank verwendest als backend, z.B. mit Grafana. Und da kannst du auch Alerts drauf machen. Metabase kann auch alerts, du kannst visualisieren, du kannst Alerts machen, die haben E Mail Versand, die haben Slack und so Dinge, glaube ich auch. Das heißt, du hättest dann alles überhaupt dort drin und du musst nur, unter Anführungszeichen, nur die Datenbank in irgendeiner Form befüllen.",
+      "start": 2534292,
+      "end": 2569434,
+      "confidence": 0.901569,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Zweitausendein.",
+      "start": 2569482,
+      "end": 2569644,
+      "confidence": 0.75263,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Und da könnte es sogar sein, dass manche solche Tools ja auch APIs abfragen können. Also vielleicht kannst du sogar die Daten von APIs direkt holen, dann brauchst du gar nichts programmieren im Idealfall.",
+      "start": 2569682,
+      "end": 2581032,
+      "confidence": 0.94073266,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Zu deinem letzten Punkt mit diese Tools können wir, da habe ich noch meine dritte Alternativlösung, da komme ich jetzt gleich zu. Aber dass du Grafana nimmst und dann mit dem Prozess eigentlich nur in sqlite schreibst, ist auch sehr smart. Ich habe gerade mal gegoogelt, Grafana hat ein sqlite Plugin, Grafana hat aber auch ein CSV Plugin. Das bedeutet aber natürlich, dass du Grafana und den Prozess auf derselben Maschine im selben Docker Container laufen lassen musst oder zumindest dasselbe Volume sharen musst, weil beide ja natürlich lokal auf dieselbe Datei zu.",
+      "start": 2581176,
+      "end": 2612098,
+      "confidence": 0.8896313,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Oder du nimmst natürlich überhaupt ich weiß, du hast Cloud am Anfang ausgeschlossen, aber du nimmst irgendeine Grafana Cloud, die ist kostenlos für die Größenordnung und machst alles dort. Und da hast du dann das Gesamte gehostet, gemonitort und es funktioniert.",
+      "start": 2612154,
+      "end": 2625228,
+      "confidence": 0.9127283,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Ja, aber da hatte ich ja gesagt, wir sind auf der auf der auf der DSGVO Schiene, deswegen hosten wir das selbst. Datenhoheit, Wolfgang, muss ich dir nicht erklären, dass wir jetzt.",
+      "start": 2625284,
+      "end": 2636244,
+      "confidence": 0.8619475,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Ja, ja, ich sage nur, es wäre.",
+      "start": 2636332,
+      "end": 2637908,
+      "confidence": 0.8358143,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Dann und dann stellt, dann stellt Grafana Cloud ihr Free Tier auch noch ein. Und auf einmal muss ich für mein Heizölpreis Monitoring Geld zahlen. Fünf im Monat, 60 im Jahr. Und das knabbert ja an meiner Marge, an meinem Ersparnis hier.",
+      "start": 2637924,
+      "end": 2652984,
+      "confidence": 0.85814285,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Von daher, du bist schon wieder beim Over Engineeren. Du löst Probleme, die du vielleicht in fünf Jahren hast.",
+      "start": 2653112,
+      "end": 2658448,
+      "confidence": 0.9119558,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Also mit den ganzen Lizenzänderungen in den Open Source Projekten kann das von heute auf morgen ändern. So und wieso soll ich mich mit diesem Risiko auseinandersetzen? Also okay, Grafana auch eine schöne Thematik, sehr schön weitergetrieben, diese Prometheus Thematik unglaublich gut. Kommen wir mal zu einem weiteren Alternativvorschlag, und zwar Thema no Code. Ich hatte ja gesagt, wir haben, wir hosten die ganze Sache lokal auf so einem kleinen Server. Intel NUC habe ich im Keller stehen. Tolles, tolles Ding. Und es gibt ja inzwischen auch so Open source no Code Workflow Automation Tools wie NN. NN ist eigentlich oder sowas wie Node RED oder ähnliches. Prinzipiell sind das eigentlich verschiedene Workflows. Du kannst dir was zusammenklicken und diese Workflows haben einzelne Steps, wie z.B. sende eine Select Nachricht, erstelle einen Jiratik, frage diese API an und macht dann per GQ irgendwelche Operationen auf dem retournierten JSON Repeate, wenn das, wenn im HTTP Status 500 zurückkommt und so weiter. Das bedeutet, eine Lösung könnte natürlich sein, zumindest das Data Scraping komplett auf eine Open Source Workflow Automation Engine zu geben, wie Node RED, wie NN und so weiter und von da aus dann die Visualisierung machen. Wie dann die Visualisierung aussieht, muss ich zugeben, weiß ich gerade noch nicht. Natürlich könnte man den auch ein Graph plotten lassen. Ja, irgendwie vielleicht sogar vielleicht ein Bild, wenn man ganz fancy sein möchte. Vielleicht nimmt man so ein Open Source LLM oder ähnliches und lässt das Stable Diffusion Kram. Man kann auch einfach Graph nehmen, um irgendwas lokal zu erzeugen in Graph. Also das ist jetzt kein Problem. Gibt ja etliche CLI Tools auf Linux, die klassische Graphen erzeugen können bzw. Da purzelt dann JPEG oder MPG raus, z.B. plot, Graphis, da gibt es ja so viel. Ja, und dann generiere ich einfach jeden Tag einfach ein statisches Bild.",
+      "start": 2658504,
+      "end": 2761060,
+      "confidence": 0.8818231,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Also meine Erfahrung mit diesen no Code Tools oder Low Code Tools als Entwickler sind mäßig gut. Ich habe die auch teilweise verwendet, auch aus NN, bzw. Verwende sie noch immer. Und die sind super, um schnell irgendwo einen Webhook zur Verfügung zu stellen, irgendwas weiter zu senden, um so Sachen auszulösen, wenn man da kein eigenes Programm schreiben, sobald man da was komplexeres betreiben will. Und die hatte da sogar mal einen Workflow gebaut, der mir dann aus einem Google Docs, aus einem Sheet, die spezielle Empfängeradressen gesendet hat und dann über eine API, die weiter gesendet hat. Das war so ein Mini Site Project, das ich mal gemacht habe. Das war dann schon sehr kompliziert. Monitoring ist schwierig, du fängst dann an, irgendwie JavaScript in dieser UI zu coden. Debugging ist aber alles nicht so einfach und du brauchst am Ende, glaube ich, länger, als wenn du dir einfach schnell JavaScript Code zusammenschreibst. Selbst in dem Docker Container deploy, wenn du die Möglichkeiten hast, ist am Ende oft schneller, als wenn du was komplexeres in diesen Tools machen willst. Das über dieses, es kommt ein Ping herein, ich sende den Ping weiter oder mache noch ein simples if. Alles drüber hinaus, finde ich persönlich, ist teilweise schwieriger, sofern du Developer bist oder Developerin, weil dann kannst du es einfach schnell runter coden selbst und hast die volle Flexibilität. Also je nachdem, wie viel Skills du hast, kannst du dann den einen oder anderen Weg gehen.",
+      "start": 2761140,
+      "end": 2842708,
+      "confidence": 0.90237564,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Ich glaube, bei so einer Workflow Automation Engine, ich glaube, da die zwei Knackpunkte sind A, die Berechnung, weil im Endeffekt ist das ja ein kleiner Algorithmus, auch wenn man es ganz einfach macht, ein bisschen aufsummieren, ein bisschen teilen, ja, ein bisschen Prozentrechnung und dann so Brut Force ähnlich, weil wie gesagt, du hast ja nicht viele Werte, deswegen kannst du auch einfach über alle Werte drüber loopen und die Differenz einfach per % sagen und dann später ausrechnen, das ist der höchste Prozentwert oder so, den wir bisher erreicht haben im Jahr, dann bestellst du oder sowas. Das geht ja auch, also relativ einfach. Und dann die Visualisierung. Ich hatte gerade, mir kam gerade noch die Idee, man könnte die Visualisierung natürlich auch einfach konstant in so eine Telegram Gruppe posten, aber ich will ja nicht jeden Tag den Ölpreis wissen. Also im Sommer interessiert mich der Ölpreis ja in der Regel nicht.",
+      "start": 2842764,
+      "end": 2885502,
+      "confidence": 0.9060383,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Vor allem du wirst es ja eigentlich weghaben, dass dein Gehirn nicht ständig beansprucht ist und durchzudenken, ist es jetzt ein niedriger Preis, ja oder nein? Insofern macht es auch wenig Sinn.",
+      "start": 2885686,
+      "end": 2893718,
+      "confidence": 0.87557435,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Ganz genau. Deswegen. Also kam mir nur die Idee. Aber jetzt haben wir hast du noch eine alternative Lösung? Natürlich kann man noch ganz wild werden, aber aber ich sag mal von der praktischen Umsetzung.",
+      "start": 2893774,
+      "end": 2903774,
+      "confidence": 0.8959317,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Ja, du kannst natürlich auch eine Postgres verwenden, ein Cluster von Postgres und das auf Kubernetes dann deployed oder so. Logisch. Aber ich würde mal eher die einfachere Variante bevorzugen.",
+      "start": 2903942,
+      "end": 2914598,
+      "confidence": 0.865174,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Ja, genau so eine Timescale Db. Man kann die ganze Sache auch irgendwie in intern aus packen oder influxdb oder irgendwas. Man kann das auch per Message Queue und Kafka und MQTT versenden. Alle drum und dran geht alles. Wäre jetzt ein bisschen over engineered, glaube ich. Von den Lösungen, die wir jetzt besprochen haben. Welche kommt dir am charmantesten vor?",
+      "start": 2914654,
+      "end": 2934294,
+      "confidence": 0.86707526,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Ja, meine natürlich ist leicht.",
+      "start": 2934382,
+      "end": 2936022,
+      "confidence": 0.952042,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Nein, muss ich sagen, bis auf das Cron Package. Also da muss ich jetzt mal ernsthaft sagen, du hättest nicht ein Cron Package genommen, oder doch?",
+      "start": 2936086,
+      "end": 2943902,
+      "confidence": 0.85997885,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Doch, natürlich. Ja, die heißen ja nur so. Das geht ja nur darum, dass was regelmäßig aufgerufen wird in deinem Node JS Prozess. Aber dein Prometheus Ansatz, den finde ich schon auch interessant, also dass man da vielleicht so das ganze Alerting und E Mail versenden und die Visualisierung rausbekommt. Das klingt schon ganz cool. Metabase wäre da eben vielleicht auch noch eine Möglichkeit. Aber ich brauche wieder eine Datenbank. Wobei ich könnte natürlich auch Google Sheets überhaupt als Datenbank missbrauchen und alles nach Google Sheets schreiben. Wäre natürlich auch noch eine Möglichkeit. So was finde ich eine gute Idee.",
+      "start": 2943926,
+      "end": 2976482,
+      "confidence": 0.9095937,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Natürlich hat man bei Prometheus dann natürlich auch ein paar Downsides. Und zwar das geht jetzt auch schon wieder viel zu weit, weil wenn man dieses Problem dann natürlich erst in x Jahren hat, das bedeutet eigentlich so eine Retention Time. Das bedeutet, wie lange hältst du die Ölpreise vor? Aber das ist ein Problem, da kann der Zukunfts an die sich drum kümmern, weil man kann ja auch dann später irgendwann Prometheus querien und sich die Daten rausgeben lassen und dann noch mal weg dampfen oder so. Oder man stellt einfach die Retention Time hoch oder bestellt einfach irgendwann eine micro SD Karte mit einem TB, packt die da rein und lässt einfach das Storage dir auf den anderen, auf den anderen Folder umgehen und lässt einfach Retention unlimited laufen.",
+      "start": 2976586,
+      "end": 3012256,
+      "confidence": 0.9021088,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Von daher, was natürlich bei meiner Variante, bei der kompletten selbstgeschriebenen Variante ganz charmant ist, dass du halt keine externen Prozesse irgendwas benötigst. Das kann bei dir lokal laufen in dem Docker Container. Das läuft wahrscheinlich sehr lang, sehr stabil. Da brauchst du gar keine Hand anlegen, keine Updates fahren, kein großes Monitoring noch mal extra dazu setzen, solche Dinge. Also da bist du wahrscheinlich schmalspuriger am Weg, als wenn du da jetzt irgendwie Prometheus und und solche Dinge noch mal aufsetzt. Aber ist glaube ich beides auf jeden Fall möglich. Aber wenn ich mir noch mal kurz meine Product Brille aufsetzen darf. Andi, wie viel würdest du denn zahlen für so einen Service als Kunde? Wäre dir das fünf im Monat wert?",
+      "start": 3012338,
+      "end": 3051200,
+      "confidence": 0.8945009,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Ich denke nicht. Dafür ist das Problem nicht groß genug, weil ich kam ja die letzten 14 Jahre auch damit klar.",
+      "start": 3051280,
+      "end": 3056032,
+      "confidence": 0.97369856,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Ja, ja, aber du kannst ja 200 oder 400 einsparen. Wäre das dann nicht ein no brainer, wenn du fünf mal 12 sind 60 zahlst und dann womöglich auch noch so Data Science, wir predicten dir, wann ein guter Zeitpunkt ist und du bekommst es dann bei WhatsApp und du sendest überhaupt. Das wäre noch das Beste. Du machst ein WhatsApp Bot, wenn du dann im Keller stehst bei deinem Kessel, dann gibst du einfach den WhatsApp Bot ein. Ich habe gerade abgelesen, so und so viele L sind noch da und der speichert das dann alles für dich.",
+      "start": 3056096,
+      "end": 3082308,
+      "confidence": 0.8946761,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Ja, ich setze die Preise ja immer im Vergleich und ich zahle bei iCloud für mein komplettes iPhone Backup, ich glaube zwei im Monat, damit das einfach da bei der iCloud liegt. Und bei Hetzner kriege ich auch 2 TB oder 1 TB für für vier im Monat. Also ja, es ist Backup ist es nicht Ölpreis und ja, es ist auch ein bisschen desaster recovery, was es ja bei dem Öl ja auch irgendwie ist, weil ohne ohne Wärme geht es einem halt echt nicht nicht gut. Also wenn du das günstiger machen würdest, €2 pro Monat, da würde ich sagen verhandeln an, nehme ich aber fünf finde ich ein bisschen happig.",
+      "start": 3082364,
+      "end": 3111668,
+      "confidence": 0.87365645,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Da gebe ich dir die Möglichkeit, €400 zu sparen und du wirst nicht €60 investieren.",
+      "start": 3111724,
+      "end": 3115900,
+      "confidence": 0.8949587,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Ist €400 ist das Maximum. Natürlich kriegst du.",
+      "start": 3115940,
+      "end": 3119460,
+      "confidence": 0.78358126,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Ich bin ja in der in der Sales Phase gerade. Natürlich, es ist 400, die du dir sparen kannst.",
+      "start": 3119500,
+      "end": 3123110,
+      "confidence": 0.77619684,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Was ich aber interessant finde an diesem ganz kleinen Use Case ist, dass man daraus echt viel machen kann und als side Projekt auch wirklich viel lernen kann. Und man hat ja, ich wollte jetzt gerade sagen, man hat ein reales Problem. Also ja, das ist alles keine Lüge, was ich gerade erzählt habe, sondern ich denke wirklich aktiv darüber nach, das mal eben zu machen, weil ich denke wirklich, da kann man Geld sparen. Ja, natürlich würde ich diese Zeit in Freelancing investieren. Sehr wahrscheinlich kriege ich das Geld schneller wieder rein und müsste mich mit diesem Problem nicht auseinandersetzen. Aber das sind Opportunitätskosten. Ich muss für dieselbe Zeit, die ich da investiere, in Kunden haben. Die müssen meine Dienste in Anspruch nehmen, bla Bla bla.",
+      "start": 3123150,
+      "end": 3162698,
+      "confidence": 0.9096504,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Und es macht dir ja Spaß. Das ist ja das Wichtigste.",
+      "start": 3162754,
+      "end": 3165130,
+      "confidence": 0.9175527,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Genau.",
+      "start": 3165170,
+      "end": 3165586,
+      "confidence": 0.85513,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Es würde mich ja schwer wundern, wenn es diese Service noch nicht gibt. Also wenn irgendwer so ein Service kennt, bitte uns melden, weil ich fühle mich ja schon fast so. Mir kribbelt es ja schon so unter den Fingernägeln, dass ich jetzt da ein Produkt machen will für euch Ölleute, Ÿousand, um noch mal, wenn ihr schon Öl verwendet, noch mal das letzte rauszukitzeln aus euch. Aber dann denke ich mir so auch eigentlich sollte meine Energie lieber in irgendein Stromoptimierung Tool setzen, weil das die Zukunft ist und das uns allen viel mehr weiter.",
+      "start": 3165658,
+      "end": 3196072,
+      "confidence": 0.8852265,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Ja, im Endeffekt ist das ja nichts anderes als so ein Tankpreis Monitor. Gibt es ja auch mal bereits. Gibst eine lokale Tankstelle ein und dann fährst halt tanken, wenn es günstig.",
+      "start": 3196136,
+      "end": 3205024,
+      "confidence": 0.8449328,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Ja, ja, aber es ist schon ein anderes Optimierungsproblem, weil du natürlich diese Ÿousand andere Menge hast und in höheren Zeitrahmen Auto kannst du nicht mal drei Monate warten mit dem Tank.",
+      "start": 3205072,
+      "end": 3213310,
+      "confidence": 0.8559478,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Ich meine, du kannst ja noch weiter optimieren, wenn deine Nachbarn, wenn du weißt, dass sie auch Öl haben, dann kannst du sagen okay, wir binden, wir bilden eine Ölgruppe, nennen wir es mal so. Und dann bestellst du halt nicht 2000 l, sondern L. Und ja, dann hast du halt auf einer Straße fährt der Lkw halt immer nur 20 m weiter. Gefühlt wird aber sofort seine L weg. Und dann, ich weiß jetzt nicht, ÿousand.",
+      "start": 3213430,
+      "end": 3238232,
+      "confidence": 0.92606324,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Aktivierst du schon meinen Entrepreneur Motor? Wie liest du den Ölstand ab? Kann man den dann irgendwie digital auch ablesen, wenn ich dir da so ein Teil in die Hand drücke, dass du dann irgendwie auf den Anzeiger setzt oder so?",
+      "start": 3238286,
+      "end": 3250076,
+      "confidence": 0.9177085,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Also ich habe ganz normal, da ist so ein Schwimmer drin in dem Öltank. Das bedeutet aber, den Schwimmer kann man da rausnehmen. Ich kann es einfach abschrauben und dann da was anderes hinsetzen. Du kannst auch einfach nur eine Kamera draufsetzen und du siehst ja den. Das ist ja relativ klar. Ja, du hast du hast eine Skala und da.",
+      "start": 3250148,
+      "end": 3263396,
+      "confidence": 0.8957248,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Okay, das ist zu komplex. Man kann es ja eh ungefähr voraussagen, wie viel L verbrauchst mit den Wetterdaten. Wäre das ja alles kein Problem, aber so eine Einkaufsgemeinschaft wäre natürlich schon cool. Aber wie gesagt, mach lieber eine Wärmepumpe. Ich mache dir dann die Optimierung mit den Stromkosten auf den Strommarkt.",
+      "start": 3263468,
+      "end": 3278576,
+      "confidence": 0.9278771,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Ja, bei der Wärmepumpe bleibt es ja nicht. Also die Wärmepumpe läuft ja auf Strom und Strom muss halt auch irgendwo her. Und in der Regel läuft die Wärmepumpe, wenn nicht die Sonne scheint, außer es sei denn, du nutzt sie auch als kühlende Pumpe, bla bla bla. Ich habe auch noch keine Photovoltaikanlage, das wäre eine Doppelinvestition etc. Ÿousand immer noch in diesem Sinne, Legacy verdient das Geld. Also in diesem Fall ist Legacy leider rein finanziell gesehen, nicht aus den Umweltaspekten, ist Legacy in diesem Fall der Gewinner. Es tut mir leid, aber an alle, die uns bis hierhin zugehört haben, mich würde wirklich, und das ist jetzt kein Scherz und das ist jetzt kein Engagement Seeking, mich würde wirklich interessieren, wie würdet ihr das umsetzen? Welchen alternativen Vorschlag habt ihr denn noch, wie man das implementieren könnte? Oder was mich auch mal interessieren würde, auf welche verrückten Ideen kommt ihr, um das ganze Ding total Ÿousand zu over engineeren?",
+      "start": 3278728,
+      "end": 3328732,
+      "confidence": 0.9116797,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Oder vielleicht hat jemand sowas schon gebaut und will Andy einfach den Code rüberschieben. Geht natürlich auch. Und es wäre eigentlich gut für ein Open Source Projekt.",
+      "start": 3328796,
+      "end": 3335724,
+      "confidence": 0.82570297,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Oder ich nehme jedes GitHub Repo sehr, sehr gerne an. Kommt doch einfach mal in die Discord Community, Link findet ihr in den Show Notes. Und da diskutiere ich sehr, sehr gerne über verschiedene Lösungswege. Wolfgang, hattest du ein bisschen Spaß bei der Design?",
+      "start": 3335772,
+      "end": 3348084,
+      "confidence": 0.9129943,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Natürlich, ich mache das den ganzen Tag, ist super über solche Probleme nachzudenken. Also ich mache das liebend gern. Wenn du mir jetzt das Design Dokument noch schreibst, ist perfekt, weil ich schreibe eh genug Dokumente für meine Kunden immer zweitausendein in so einem side Project müsstest du das dann übernehmen.",
+      "start": 3348172,
+      "end": 3361402,
+      "confidence": 0.9015049,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Und als hätte er es geahnt, beziehungsweise ich habe es ja im Intro gesagt, das ist einfach ein fauler Hund. Aber das, was wir gemacht haben, ist eigentlich jetzt gerade den Chat an der Kaffeemaschine bei euch im Büro. Und jetzt müsste leider einer von uns beiden zurück an den Schreibtisch und das Design Dokument schreiben. Natürlich auch mit dem JSON Format. Und dann sollten wir ein bisschen konkreter werden im Design Dokument. Ja, wir könnten das machen oder das machen. Nee, wir entscheiden uns für ein Proposal und zweitausendein, die Alternative, listen wir in Alternativen auf und sagen dann, warum wir diese nicht genommen haben. Das bedeutet, der Wolfgang müsste sich in diesem Falle auch endlich für das JSON File oder für die sqlite Datenbank entscheiden und dann das andere halt verwerfen mit einem Grund, damit man natürlich auch in irgendeiner Art und Weise eine zeitliche Dokumentation hat, warum man den anderen Weg nicht gegangen ist. Und wenn man das dann noch ein bisschen formalisiert und vielleicht mit dem ganzen, mit der ganzen Struktur mal ein bisschen rauslässt, dann kann man das noch in einen Architecture Decision Record, in den sogenannten RDA kopieren später, wenn der Ölpreis Monitor implementiert ist, dann hat man das nämlich ganz kurz prägnant für die Ewigkeit da liegen. Das ist eigentlich eine Design Diskussion, beziehungsweise wenn man das jetzt noch aufschreibt, ein Design Dokument. Also es muss gar nicht hochtrabend sein. Und ja, man kann das noch irgendwie, so Sachen wie feature it is und was man damit machen könnte, gehören da jetzt auch nicht hin, obwohl der Wolfgang gerade versucht hat, den Produktmanager hier zu spielen, aber haben wir mal alles verworfen, sondern wert wird über Zeit geschaffen und wert wird iterativ geschaffen. Deswegen einfach mal anfangen und dann später eure Data Science forecasting Probleme drauf.",
+      "start": 3361466,
+      "end": 3450454,
+      "confidence": 0.9072654,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Und wer noch mehr wissen will zu Design Documents, wir haben eine eigene Episode 105 und dreiig dazu gemacht. Link findet ihr natürlich auch in den Shownotes, wie auch den Link zur Discord Community. Und ich freue mich auch schon auf viele, viele alternative Vorschläge.",
+      "start": 3450542,
+      "end": 3462822,
+      "confidence": 0.914056,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Das war's von uns. Bis zur nächsten Woche. Zweitausendein. Tschüss.",
+      "start": 3462886,
+      "end": 3465340,
+      "confidence": 0.806228,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Ciao.",
+      "start": 3465420,
+      "end": 3465620,
+      "confidence": 0.63018,
+      "speaker": "A",
+      "channel": null
+    }
+  ],
+  "confidence": 0.89937186,
+  "audio_duration": 3413,
+  "webhook_status_code": null,
+  "webhook_auth": false,
+  "summary": null,
+  "auto_highlights_result": null,
+  "content_safety_labels": null,
+  "chapters": null,
+  "sentiment_analysis_results": null,
+  "entities": null
+}
