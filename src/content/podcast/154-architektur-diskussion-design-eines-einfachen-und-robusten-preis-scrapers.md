@@ -68,7 +68,10 @@ speaker:
 - name: Andy Grunwald
 - name: Wolfi Gassler
 spotify: https://open.spotify.com/episode/2eJRPzvePDZQIUhrA8F53W
-tags: []
+tags:
+- Backend
+- Frontend
+- Software Engineering
 title: '#154 Architektur-Diskussion: Design eines einfachen und robusten Preis-Scrapers'
 transcript_raw: ''
 transcript_slim: ''
