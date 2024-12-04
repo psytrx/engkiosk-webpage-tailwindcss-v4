@@ -33,7 +33,9 @@ speaker:
 - name: Andy Grunwald
 - name: Wolfi Gassler
 spotify: https://open.spotify.com/episode/1tXsaoVZydgD6WDHoxtTJ6
-tags: []
+tags:
+- Produktivität
+- Software Engineering
 title: '#155 Cursor AI mit der programmier.bar'
 transcript_raw: ''
 transcript_slim: ''
