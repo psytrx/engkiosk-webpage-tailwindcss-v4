@@ -32,12 +32,10 @@ six_user_needs: []
 speaker:
 - name: Andy Grunwald
   transcriptLetter: A
-- name: AI
-  transcriptLetter: B
 - name: Fabi Fink
-  transcriptLetter: C
+  transcriptLetter: B
 - name: Jan Gregor Emge-Triebel
-  transcriptLetter: D
+  transcriptLetter: C
 spotify: https://open.spotify.com/episode/1tXsaoVZydgD6WDHoxtTJ6
 tags:
 - Produktivität
