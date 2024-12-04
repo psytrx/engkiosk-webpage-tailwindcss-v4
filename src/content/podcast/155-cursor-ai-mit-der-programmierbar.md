@@ -31,7 +31,13 @@ rtlplus: ''
 six_user_needs: []
 speaker:
 - name: Andy Grunwald
-- name: Wolfi Gassler
+  transcriptLetter: A
+- name: AI
+  transcriptLetter: B
+- name: Fabi Fink
+  transcriptLetter: C
+- name: Jan Gregor Emge-Triebel
+  transcriptLetter: D
 spotify: https://open.spotify.com/episode/1tXsaoVZydgD6WDHoxtTJ6
 tags:
 - Produktivität
