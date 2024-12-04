@@ -75,8 +75,8 @@ tags:
 - Frontend
 - Software Engineering
 title: '#154 Architektur-Diskussion: Design eines einfachen und robusten Preis-Scrapers'
-transcript_raw: ''
-transcript_slim: ''
+transcript_raw: src/data/transcripts/154-transcript.zip
+transcript_slim: src/data/transcripts/154-transcript-slim.json
 youtube: https://www.youtube.com/watch?v=Fl-bG1pwhus
 
 ---
