@@ -33,7 +33,9 @@ speaker:
 - name: Andy Grunwald
 - name: Wolfi Gassler
 spotify: https://open.spotify.com/episode/1G3hZvvThftsHESuvut6aW
-tags: []
+tags:
+- Karriere
+- Produktivität
 title: "#156 Inbox Zero: der Pro-Tipp f\xFCr deine Produktivit\xE4t"
 transcript_raw: ''
 transcript_slim: ''
