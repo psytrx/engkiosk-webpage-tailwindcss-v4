@@ -1,6 +1,6 @@
 ---
 advertiser: ''
-amazon_music: ''
+amazon_music: https://music.amazon.com/podcasts/c35a09fe-4116-4e04-8f68-77d61b112e46/episodes/4a06f33f-c93f-4f4e-9974-c3be963ca869/engineering-kiosk-156-inbox-zero-der-pro-tipp-f%C3%BCr-deine-produktivit%C3%A4t
 apple_podcasts: https://podcasts.apple.com/us/podcast/156-inbox-zero-der-pro-tipp-f%C3%BCr-deine-produktivit%C3%A4t/id1603082924?i=1000679301086&uo=4
 audio: https://audio1.redcircle.com/episodes/7939722f-8bdf-4657-97c2-faade6e24ba6/stream.mp3
 chapter:
