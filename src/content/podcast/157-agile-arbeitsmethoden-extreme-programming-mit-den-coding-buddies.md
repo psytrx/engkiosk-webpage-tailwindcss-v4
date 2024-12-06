@@ -1,6 +1,6 @@
 ---
 advertiser: ''
-amazon_music: ''
+amazon_music: https://music.amazon.com/podcasts/c35a09fe-4116-4e04-8f68-77d61b112e46/episodes/5a18d7c2-dbfb-4cd7-a869-017c51e60100/engineering-kiosk-157-agile-arbeitsmethoden---extreme-programming-mit-den-coding-buddies
 apple_podcasts: ''
 audio: https://audio1.redcircle.com/episodes/049f028f-f5e2-495c-a071-e2f1bc3ecd65/stream.mp3
 chapter:
