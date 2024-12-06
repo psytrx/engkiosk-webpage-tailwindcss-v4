@@ -34,7 +34,9 @@ speaker:
 - name: Fabian Göcke
   transcriptLetter: C
 spotify: https://open.spotify.com/episode/5hS8w9Gkd4V6btBwkWp2Qn
-tags: []
+tags:
+- Software Engineering
+- Software Qualität
 title: '#157 Agile Arbeitsmethoden - Extreme Programming mit den Coding Buddies'
 transcript_raw: ''
 transcript_slim: ''
