@@ -27,8 +27,12 @@ pubDate: 2024-12-06 05:00:00+00:00
 rtlplus: ''
 six_user_needs: []
 speaker:
-- name: Andy Grunwald
 - name: Wolfi Gassler
+  transcriptLetter: A
+- name: Tino Reising
+  transcriptLetter: B
+- name: Fabian Göcke
+  transcriptLetter: C
 spotify: https://open.spotify.com/episode/5hS8w9Gkd4V6btBwkWp2Qn
 tags: []
 title: '#157 Agile Arbeitsmethoden - Extreme Programming mit den Coding Buddies'
