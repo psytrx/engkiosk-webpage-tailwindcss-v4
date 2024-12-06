@@ -6,7 +6,7 @@ audio: https://audio1.redcircle.com/episodes/7939722f-8bdf-4657-97c2-faade6e24ba
 chapter:
 - start: 00:00:00
   title: Inbox Zero
-deezer: ''
+deezer: https://www.deezer.com/episode/695337251
 description: "Inbox Zero: Die E-Mail-Flut und das eigene Postfach endlich unter Kontrolle.\
   \  Im Engineering Kiosk Adventskalender 2024 sprechen befreundete Podcaster\u22C5\
   innen und wir selbst, Andy und Wolfi, jeden Tag kurz & knackig innerhalb von wenigen\

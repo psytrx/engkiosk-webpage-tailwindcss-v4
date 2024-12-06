@@ -6,7 +6,7 @@ audio: https://audio1.redcircle.com/episodes/2ec995e1-8cfe-4b45-8859-10d85dd3de1
 chapter:
 - start: 00:00:00
   title: Die Cursor.ai IDE mit der programmier.bar
-deezer: ''
+deezer: https://www.deezer.com/episode/695337271
 description: "Die Cursor.ai IDE mit der programmier.bar. Im Engineering Kiosk Adventskalender\
   \ 2024 sprechen befreundete Podcaster\u22C5innen und wir selbst, Andy und Wolfi,\
   \ jeden Tag kurz & knackig innerhalb von wenigen Minuten \xFCber ein interessantes\
