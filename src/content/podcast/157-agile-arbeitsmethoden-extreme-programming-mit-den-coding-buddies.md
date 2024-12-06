@@ -31,15 +31,15 @@ speaker:
   transcriptLetter: A
 - name: Tino Reising
   transcriptLetter: B
-- name: Fabian Göcke
+- name: "Fabian G\xF6cke"
   transcriptLetter: C
 spotify: https://open.spotify.com/episode/5hS8w9Gkd4V6btBwkWp2Qn
 tags:
 - Software Engineering
-- Software Qualität
+- "Software Qualit\xE4t"
 title: '#157 Agile Arbeitsmethoden - Extreme Programming mit den Coding Buddies'
-transcript_raw: ''
-transcript_slim: ''
+transcript_raw: src/data/transcripts/157-transcript.zip
+transcript_slim: src/data/transcripts/157-transcript-slim.json
 youtube: https://www.youtube.com/watch?v=iZ10OgAMm5s
 
 ---
