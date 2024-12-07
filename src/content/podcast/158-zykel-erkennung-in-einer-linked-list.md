@@ -1,6 +1,6 @@
 ---
 advertiser: ''
-amazon_music: ''
+amazon_music: https://music.amazon.com/podcasts/c35a09fe-4116-4e04-8f68-77d61b112e46/episodes/a6d6d2c6-b756-46ff-ada5-e0a14e1779f0/engineering-kiosk-158-zykel-erkennung-in-einer-linked-list
 apple_podcasts: https://podcasts.apple.com/us/podcast/158-zykel-erkennung-in-einer-linked-list/id1603082924?i=1000679551386&uo=4
 audio: https://audio1.redcircle.com/episodes/9f045dad-3bb9-4f4a-818f-df636194fc74/stream.mp3
 chapter:
