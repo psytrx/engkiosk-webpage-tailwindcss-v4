@@ -35,7 +35,8 @@ speaker:
 - name: Wolfi Gassler
   transcriptLetter: B
 spotify: https://open.spotify.com/episode/24V5Fnyht9UXGQTLSrZhvQ
-tags: []
+tags:
+- Software Engineering
 title: '#158 Zykel-Erkennung in einer Linked List'
 transcript_raw: ''
 transcript_slim: ''
