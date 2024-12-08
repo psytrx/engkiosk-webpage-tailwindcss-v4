@@ -31,7 +31,10 @@ speaker:
 - name: Wolfi Gassler
   transcriptLetter: A
 spotify: https://open.spotify.com/episode/1uBdhtS5zuBsduKl3rJPpN
-tags: []
+tags:
+- Karriere
+- Bewerbung
+- Kommunikation
 title: '#159 Verhaltensbezogene Interview-Fragen und STAR-Methode'
 transcript_raw: ''
 transcript_slim: ''
