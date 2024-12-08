@@ -1,6 +1,6 @@
 ---
 advertiser: ''
-amazon_music: ''
+amazon_music: https://music.amazon.com/podcasts/c35a09fe-4116-4e04-8f68-77d61b112e46/episodes/d1aea794-87fb-4474-8841-23ac0fba4556/engineering-kiosk-159-verhaltensbezogene-interview-fragen-und-star-methode
 apple_podcasts: ''
 audio: https://audio1.redcircle.com/episodes/41917919-a255-46da-933d-6937e0925fbf/stream.mp3
 chapter:
