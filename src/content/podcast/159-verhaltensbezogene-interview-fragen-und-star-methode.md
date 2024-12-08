@@ -27,7 +27,9 @@ rtlplus: ''
 six_user_needs: []
 speaker:
 - name: Andy Grunwald
+  transcriptLetter: B
 - name: Wolfi Gassler
+  transcriptLetter: A
 spotify: https://open.spotify.com/episode/1uBdhtS5zuBsduKl3rJPpN
 tags: []
 title: '#159 Verhaltensbezogene Interview-Fragen und STAR-Methode'
