@@ -6,7 +6,7 @@ audio: https://audio1.redcircle.com/episodes/9f045dad-3bb9-4f4a-818f-df636194fc7
 chapter:
 - start: 00:00:00
   title: Zyklus-Erkennung in einer Linked List
-deezer: ''
+deezer: https://www.deezer.com/episode/696266911
 description: "Wie erkennt man einen Zykel in einer Linked List mit niedriger Zeit-\
   \ und Speicherkomplexit\xE4t?  Im Engineering Kiosk Adventskalender 2024 sprechen\
   \ befreundete Podcaster\u22C5innen und wir selbst, Andy und Wolfi, jeden Tag kurz\
@@ -38,8 +38,8 @@ spotify: https://open.spotify.com/episode/24V5Fnyht9UXGQTLSrZhvQ
 tags:
 - Software Engineering
 title: '#158 Zykel-Erkennung in einer Linked List'
-transcript_raw: ''
-transcript_slim: ''
+transcript_raw: src/data/transcripts/158-transcript.zip
+transcript_slim: src/data/transcripts/158-transcript-slim.json
 youtube: https://www.youtube.com/watch?v=RyYjgtmrAa8
 
 ---

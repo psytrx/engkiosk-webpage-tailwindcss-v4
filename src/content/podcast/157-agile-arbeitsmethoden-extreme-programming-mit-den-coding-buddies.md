@@ -6,7 +6,7 @@ audio: https://audio1.redcircle.com/episodes/049f028f-f5e2-495c-a071-e2f1bc3ecd6
 chapter:
 - start: 00:00:00
   title: Extreme Programming
-deezer: ''
+deezer: https://www.deezer.com/episode/696266921
 description: "Extreme Programming mit den Coding Buddies.  Im Engineering Kiosk Adventskalender\
   \ 2024 sprechen befreundete Podcaster\u22C5innen und wir selbst, Andy und Wolfi,\
   \ jeden Tag kurz & knackig innerhalb von wenigen Minuten \xFCber ein interessantes\
