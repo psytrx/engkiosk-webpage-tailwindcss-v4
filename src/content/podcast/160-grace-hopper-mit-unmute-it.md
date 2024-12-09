@@ -1,6 +1,6 @@
 ---
 advertiser: ''
-amazon_music: ''
+amazon_music: https://music.amazon.com/podcasts/c35a09fe-4116-4e04-8f68-77d61b112e46/episodes/19508f82-9868-40a6-9273-00a59bb2b804/engineering-kiosk-160-grace-hopper-mit-unmute-it
 apple_podcasts: ''
 audio: https://audio1.redcircle.com/episodes/6ff50f43-e269-46bc-85aa-a0f79abeaafb/stream.mp3
 chapter:
