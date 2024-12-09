@@ -28,7 +28,11 @@ rtlplus: ''
 six_user_needs: []
 speaker:
 - name: Andy Grunwald
-- name: Wolfi Gassler
+  transcriptLetter: A
+- name: Doreen Sacker
+  transcriptLetter: B
+- name: Ellen Schwartau
+  transcriptLetter: C
 spotify: https://open.spotify.com/episode/2fO8Yl2lrXtANQEMFo03zA
 tags: []
 title: '#160 Grace Hopper mit UNMUTE IT'
