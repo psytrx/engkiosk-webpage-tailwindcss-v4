@@ -34,7 +34,10 @@ speaker:
 - name: Ellen Schwartau
   transcriptLetter: C
 spotify: https://open.spotify.com/episode/2fO8Yl2lrXtANQEMFo03zA
-tags: []
+tags:
+- Tech Kultur
+- Software Engineering
+- Women in Tech
 title: '#160 Grace Hopper mit UNMUTE IT'
 transcript_raw: ''
 transcript_slim: ''
