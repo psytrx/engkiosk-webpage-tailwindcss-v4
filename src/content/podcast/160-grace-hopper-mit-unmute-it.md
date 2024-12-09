@@ -1,7 +1,7 @@
 ---
 advertiser: ''
 amazon_music: https://music.amazon.com/podcasts/c35a09fe-4116-4e04-8f68-77d61b112e46/episodes/19508f82-9868-40a6-9273-00a59bb2b804/engineering-kiosk-160-grace-hopper-mit-unmute-it
-apple_podcasts: ''
+apple_podcasts: https://podcasts.apple.com/us/podcast/160-grace-hopper-mit-unmute-it/id1603082924?i=1000679705504&uo=4
 audio: https://audio1.redcircle.com/episodes/6ff50f43-e269-46bc-85aa-a0f79abeaafb/stream.mp3
 chapter:
 - start: 00:00:00
@@ -39,8 +39,8 @@ tags:
 - Software Engineering
 - Women in Tech
 title: '#160 Grace Hopper mit UNMUTE IT'
-transcript_raw: ''
-transcript_slim: ''
+transcript_raw: src/data/transcripts/160-transcript.zip
+transcript_slim: src/data/transcripts/160-transcript-slim.json
 youtube: https://www.youtube.com/watch?v=Ql38PZimNZQ
 
 ---
