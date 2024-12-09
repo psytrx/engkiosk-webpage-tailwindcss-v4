@@ -1,7 +1,7 @@
 ---
 advertiser: ''
 amazon_music: https://music.amazon.com/podcasts/c35a09fe-4116-4e04-8f68-77d61b112e46/episodes/d1aea794-87fb-4474-8841-23ac0fba4556/engineering-kiosk-159-verhaltensbezogene-interview-fragen-und-star-methode
-apple_podcasts: ''
+apple_podcasts: https://podcasts.apple.com/us/podcast/159-verhaltensbezogene-interview-fragen-und-star-methode/id1603082924?i=1000679620896&uo=4
 audio: https://audio1.redcircle.com/episodes/41917919-a255-46da-933d-6937e0925fbf/stream.mp3
 chapter:
 - start: 00:00:00
@@ -36,8 +36,8 @@ tags:
 - Bewerbung
 - Kommunikation
 title: '#159 Verhaltensbezogene Interview-Fragen und STAR-Methode'
-transcript_raw: ''
-transcript_slim: ''
+transcript_raw: src/data/transcripts/159-transcript.zip
+transcript_slim: src/data/transcripts/159-transcript-slim.json
 youtube: https://www.youtube.com/watch?v=VJNZ0-kDwmE
 
 ---
