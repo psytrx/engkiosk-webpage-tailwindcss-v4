@@ -87,7 +87,9 @@ speaker:
 - name: David Gstir
   transcriptLetter: C
 spotify: https://open.spotify.com/episode/59YPAvQvmgjxAotbwbBGDi
-tags: []
+tags:
+- Sicherheit
+- Interview
 title: "#161 Sichere Daten trotz physischem Zugriff: Disk Encryption und Integrit\xE4\
   tsschutz von Laptops bis IoT-Devices mit David Gstir von sigma star"
 transcript_raw: ''
