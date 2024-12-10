@@ -1,6 +1,6 @@
 ---
 advertiser: ''
-amazon_music: ''
+amazon_music: https://music.amazon.com/podcasts/c35a09fe-4116-4e04-8f68-77d61b112e46/episodes/50cde4f1-9e6d-41c4-92a9-d0f0a499cf6b/engineering-kiosk-161-sichere-daten-trotz-physischem-zugriff-disk-encryption-und-integrit%C3%A4tsschutz-von-laptops-bis-iot-devices-mit-david-gstir-von-sigma-star
 apple_podcasts: https://podcasts.apple.com/us/podcast/161-sichere-daten-trotz-physischem-zugriff-disk-encryption/id1603082924?i=1000679842817&uo=4
 audio: https://audio1.redcircle.com/episodes/1ee7493e-44d3-4b48-882b-cee35ccde8b5/stream.mp3
 chapter:
