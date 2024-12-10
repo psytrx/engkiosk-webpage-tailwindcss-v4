@@ -1,0 +1,1432 @@
+{
+  "language_code": "de",
+  "audio_url": "https://cloud.inlupus.at/s/AexwM65bmscefjX/download/ep161_disk_encryption.mp3",
+  "punctuate": true,
+  "format_text": true,
+  "dual_channel": false,
+  "multichannel": null,
+  "audio_channels": null,
+  "webhook_url": null,
+  "webhook_auth_header_name": null,
+  "webhook_auth_header_value": null,
+  "audio_start_from": null,
+  "audio_end_at": null,
+  "word_boost": [],
+  "boost_param": null,
+  "filter_profanity": false,
+  "redact_pii": false,
+  "redact_pii_audio": false,
+  "redact_pii_audio_quality": null,
+  "redact_pii_policies": null,
+  "redact_pii_sub": null,
+  "speaker_labels": true,
+  "speakers_expected": 3,
+  "content_safety": false,
+  "content_safety_confidence": null,
+  "iab_categories": false,
+  "custom_spelling": null,
+  "disfluencies": false,
+  "sentiment_analysis": false,
+  "auto_chapters": false,
+  "entity_detection": false,
+  "summarization": false,
+  "summary_model": null,
+  "summary_type": null,
+  "auto_highlights": false,
+  "language_detection": false,
+  "language_confidence_threshold": null,
+  "language_confidence": null,
+  "speech_threshold": null,
+  "speech_model": null,
+  "id": "958ec84d-1cd3-4bb7-a4b7-b8c871775d9d",
+  "status": "completed",
+  "error": null,
+  "utterances": [
+    {
+      "text": "Eine neue Episode vom Engineering Kiosk willkommen. Viele Elemente deines Lebens spielen sich inzwischen digital ab. Deine Daten werden also immer wichtiger und somit auch sensibler. Niemand möchte, dass die eigenen Daten in falsche Hände geraten. Die eigenen Daten zu verschlüsseln ist da ein wichtiges Mittel zum Schutz dieser. Doch wie funktioniert das ganze eigentlich, wenn man seine Laptop Festplatte verschlüsselt? Ÿousand wird jedes Pfeil einzeln verschlüsselt oder die Festplatte als ganzes? Welche Algorithmen kommen da zum Einsatz? Wo wird eigentlich das Passwort bzw. Der Verschlüsselungs Key abgelegt? Was ist eine Trustzone? Was sind evil made und cold Boot Attacken? Und wie entschlüssel ich die Daten meines Storage Devices eigentlich, wenn gar keine Tastatur zur Verfügung steht, wie es z.B. bei IoT Geräten der Fall ist? Das alles besprechen wir mit unserem Gast David Stier. Und direkt zu Anfang starten wir mit einer persönlichen Story von Wolfgang, warum er doch lieber diese Podcast Episode vor einigen Wochen gehört hätte. Los geht's, viel Spaß.",
+      "start": 4400,
+      "end": 61960,
+      "confidence": 0.90301365,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Ich starte die Episode jetzt mal in einer anderen Form. Und zwar entferne ich jetzt die Nadeln, auf denen ich sitze, weil sonst habe ich das Problem in der gesamten Episode, weil ich nur darauf warte, dass der Andi mir was vorwirft und vorhält, was gerade kürzlich passiert ist. Und darum nehme ich mir jetzt die den Wind aus den Segeln, indem ich das einfach am Anfang schon zugebe. Mir wurde nämlich kürzlich mein Laptop geklaut im Urlaub, aus dem Auto, aus dem Kofferraum. Ich habe dann leider in Andi anschreiben müssen, dass er mir doch bitte ein, zwei Accounts deaktiviert, weil meine Festplatte nicht verschlüsselt war von dem Laptop. Andi hat mir natürlich sofort ausgelacht. Alle anderen Sachen waren eigentlich relativ safe und Passwörter und so Dinge habe ich sowieso keine am Laptop Ÿousand. Aber es waren natürlich schon ein paar private Daten auf meinem Laptop. Andy hat sich amüsiert, andere haben sich auch amüsiert, haben mich ausgelacht. Die selben Leute haben mir dann so eine Woche später irgendwie erzählt, ja, sie sind jetzt am überlegen, sich ein NAS zu kaufen, weil ihr Backup schaut doch nicht so gut aus, weil dir wurde ja der Laptop geklaut. Und jetzt habe ich mir mal überlegt, wenn mir das auch passiert, also vielleicht bin ich so einfach der Trigger für viele Dinge, damit sich Leute mal überlegen, an ihre Security vielleicht zu denken oder an ihre Backup Strategie, die bei mir übrigens sehr gut funktioniert hat. Daten habe ich überhaupt keine verloren, zweitausendein, aber das ist ein großes Thema. Und genau über dieses Thema, was ich damals nicht aktiviert hatte, diese Verschlüsselung meiner Festplatte. Und ich glaube, der eigentliche Grund war da, ich war mir nicht ganz sicher, soll ich die Hardware Verschlüsselung nehmen von der SSD oder Software Verschlüsselung? Und irgendwie am Ende haben wir überlegt, okay, das kann ich die nächsten Tage noch entscheiden. Und wie das dann so ist, vergisst man das dann komplett. Das war so mein Problem. Aber Andy hat jetzt auf jeden Fall keinen Grund mehr zu lachen. Und nachdem ich mich ja scheinbar mit der festplatten Verschlüsselung ÿousand wenig auskennen und Andi ja auch nicht aus dem Security Bereich kommt, haben wir uns jemand wie immer geholt, der sich sehr, sehr gut mit diesem Thema auskennt. Und zwar nicht nur bei der klassischen Festplattenverschlüsselung am Laptop, sondern auch, was es sonst so in dem Themenbereich gibt. Weil heutzutage gibt es ja auch ganz viele andere Geräte neben dem Laptop, IoT Geräte. Und da ist Verschlüsselung der Festplatte dann vielleicht nicht mehr so einfach, wenn man nicht mehr am Computer mit der Tastatur sitzt. Genau darum wird uns David heute erklären, was ist mit der festplatten Verschlüsselung auf sich. Willkommen.",
+      "start": 64900,
+      "end": 199602,
+      "confidence": 0.9184166,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Hallo. Ja, danke. Freut mich, dass ich dabei sein kann.",
+      "start": 199706,
+      "end": 202506,
+      "confidence": 0.975327,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Bevor ich dich vorstelle, erstmal Hut ab für diese Offenheit, Wolfgang. Finde ich super. Und natürlich habe ich, nachdem du mich.",
+      "start": 202578,
+      "end": 210010,
+      "confidence": 0.9235424,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Wochen ausgelacht hast, aber ich grinse auch.",
+      "start": 210050,
+      "end": 212666,
+      "confidence": 0.8370086,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Jetzt noch, als du die Story erzählt hast, aber ich sage auch zwei Dinge. Erstens, was ich liebt, das neckt sich. Das ist die eine Baustelle, deswegen, das ist eine, ja. Und die zweite Thematik ist natürlich, jeder macht Fehler und auch die Fehlerkultur sollte natürlich da sein. Zeigt natürlich auch von Reife. Ich hoffe natürlich, dass du jetzt mit deinem neuen Laptop direkt alles verschlüsselt hast und dein master Passwort oder Master Key oder was es da nicht gibt, auch ordentlich gebackupt hast und allem drum und dran, dass du, ich sag mal, ein.",
+      "start": 212698,
+      "end": 241540,
+      "confidence": 0.89475644,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Backup hat alles gut funktioniert. Ich hatte sogar viele Dateien, die verschlüsselt waren an sich, die kritische Daten beinhaltet haben. Darum Ÿousand war es auch weniger ein Problem, aber die ganze Festplatte war natürlich nicht verschlüsselt und aktive Sessions im Browser, theoretisch natürlich, solche Dinge waren offen.",
+      "start": 241660,
+      "end": 256098,
+      "confidence": 0.9046845,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Ja, aber da sieht man ja, du hast ja einen internen Postmortem gemacht und die Follow up actions dann auch entsprechend ausgeführt. Super. Aber kommen wir zurück zu unserem Experten David. Hallo. Toll, dass du da bist. Der Wolfgang kennt dich schon, weil du bist unter anderem einer der ersten Speaker beim Engineering Kiosk Alps Meetup in Innsbruck gewesen. Deswegen kennt ihr beide euch schon. Wir kennen uns noch nicht so gut. Ich habe natürlich wie immer Recherche gemacht. Wer bist du? Und meine Informationen, die ich herausgefunden habe, möchte ich den Hörerinnen und Hörern nicht vorenthalten. Also David, du bist ansässig in Innsbruck in Tirol in Österreich, also eigentlich in derselben Stadt wie Wolfgang. Theoretisch seid ihr Nachbarn. Du hast den Master of Science in Informatik an der TU Graz gemacht, hast auch ein Jahr in Schweden studiert, den Ort Höxkolan, glaube ich, heißt der, oder? Nee, der Ort heißt Halmstadt. Höxkolan heißt, glaube ich, die Universität. Und deswegen sprichst du grundlegend auch schwedisch, soviel ich weiß. Du bist Geschäftsführer, General Manager oder neudeutsch CEO der Sigma Star GmbH. Ist eine IT Security Firma, die sich eigentlich auf Linux und alles im iot embedded Bereich spezialisiert. Das bedeutet Kernel und Treiber, Security audits, Penetration Testing, Kryptographie Überprüfungen, Embedded Linux Hardening, Code Reviews, Research und Consulting, Kernel Debugging und so weiter. Natürlich schult ihr die ganzen Thematiken auch, aber alles, was damit zu tun hat, damit verdienst du deine Brötchen, wie man hier so schön im Pott sagt. Dein Fokus selbst liegt auf Kryptographie und Security Protocols und du bist ein aktives Mitglied in der Linux Community und regelmäßig auf den Bühnen dieser Welt. Ich habe Vorträge von den Linux Tagen in Graz gefunden, aber auch im Alpine Linux persistent und Storage Summit. Ich wusste gar nicht, dass es sowas gibt, aber finde ich cool an alle Alpine Linux User Settings. Unter anderem kümmert aber, wie ich gerade schon gesagt habe, du bist ein aktives Mitglied der Engineering Kiosk Community und hast bereits zweimal auf dem Engineering Kiosk Alps Meetup in Innsbruck gesprochen. Vielen Dank dafür. Ich war selbst noch nie auf dem Meetup. Das wird von Wolfgang und dem Team geleitet, aber vielen Dank. Habe ich irgendwas vergessen?",
+      "start": 256154,
+      "end": 388654,
+      "confidence": 0.893365,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Na, passt soweit. Also ist alles richtig. Das einzige, dieses alpine Linux Storage Summit hat nichts mit dem Alpine Linux zu tun.",
+      "start": 388742,
+      "end": 397366,
+      "confidence": 0.8930668,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Oh, bitte hilf mir.",
+      "start": 397438,
+      "end": 398904,
+      "confidence": 0.7961375,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Also da geht es rein darum, dass es im alpinen Gelände stattfindet. Das heißt, wir sind da wirklich auf über 2000 m und haben da eine Konferenz von so ziemlich allen großen Maintainern im Linux Storage Bereich. Sind dann international auch gut besucht. Also wir sind dann zwischen dreiig und 40 Leute, meistens von, ich sage mal, den ganzen großen, die im Storage Bereich am Linux Kanal mitentwickeln.",
+      "start": 398992,
+      "end": 422024,
+      "confidence": 0.8750429,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Aber da können wir gleich mit dem Vorurteil aufräumen, dass diese Hardcore Nerds immer nur im Keller sitzen und nie an die frische Luft gehen. Weil die einzige Möglichkeit dort auf diese Hütte zu kommen, ist zu Fuß, oder? Wenn ich das richtig sehe.",
+      "start": 422112,
+      "end": 433872,
+      "confidence": 0.92822796,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Genau. Also es ist da in der Ankündigung, in der Einladung an alle immer groß drinnen. Man muss fit für im Gelände sein, weil ansonsten kommt man nicht zur Hütte.",
+      "start": 433936,
+      "end": 442856,
+      "confidence": 0.83793,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Also diesen Wortwechsel habe ich eindeutig nicht gecheckt am Anfang. Der geht auf mich. Touché. Aber das ist natürlich geil. Das bedeutet, um auf diesen Summit zu kommen, auf diese Community treffen, was drei, vier Tage geht, muss man wirklich einen Aufstieg machen, eine Wanderroute von, weiß ich nicht, Ÿousand 800 Höhenmeter oder wie viel auch immer.",
+      "start": 442928,
+      "end": 458766,
+      "confidence": 0.8950707,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Ja, so 2 Stunden Fußweg sein es schon samt Gepäck.",
+      "start": 458878,
+      "end": 463094,
+      "confidence": 0.758272,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Sportlich finde ich aber ultra interessant. Mega gutes Konzept. Ich bin jetzt schon Fan.",
+      "start": 463182,
+      "end": 468142,
+      "confidence": 0.9898279,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Klar, Wahnsinn und super schönes Gebiet. Ich gehe da gerne skitouren. Ist eigentlich so ein Militär, wie nennt sich das? Militärübungsgeländeplatz und es wird auch hin und wieder gesperrt und man geht auch durch den Militärstützpunkt quasi am Anfang durch und ist dann in so einem Gebiet, wo dann auch so internationale Militärübungen stattfinden und so, wo alle dann kommen und irgendwelche alpinen Übungen durchführen, so ganz Europa. Also es eigentlich ein sehr cooles Gebiet und schönes Gebiet, unabhängig vom Militär. Das finde ich jetzt weniger cool, aber sei auch mal erwähnt, also security technisch seid ihr da ja im perfekten Gebiet eigentlich.",
+      "start": 468206,
+      "end": 502730,
+      "confidence": 0.8723018,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Stimmt, stimmt. Also wir hatten schon Vorträge mit im Hintergrund Schiessgeräusche von Platzpatronen, aber ihr habt keine Militärteilnehmer.",
+      "start": 502890,
+      "end": 510922,
+      "confidence": 0.88270277,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Es ist klassisch in dem Bereich. Wir haben ja im Vorgespräch auch schon besprochen, du hast so viele NDAs unterschrieben, dass du ja eigentlich über niemanden so irgendwas sagen darfst, wer eure Kunden sind im Großen und Ganzen. Außer dass du z.B. im Ethereum Bereich mal mitgewirkt hast mit mit Audits oder beim Tor Projekt oder bei, wie heißt dieses Ding? Silium Andi.",
+      "start": 511066,
+      "end": 531990,
+      "confidence": 0.89737034,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Silium EBPF.",
+      "start": 532570,
+      "end": 533634,
+      "confidence": 0.61186,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Ja, ich bin zu wenig in diesem Thema drin, aber die ganzen großen natürlich die namhaften Firmen lassen sich da scheinbar auch gern nicht gern, sorry, nicht gerne in die Karten blicken, dass sie da externe Security Leute beschäftigen. Scheint schon noch irgendwie ein sehr geschlossenes System zu sein. Also wenn wir gerade über Fehlerkultur gesprochen haben, scheint bei den großen Firmen weniger der Fall zu sein.",
+      "start": 533722,
+      "end": 554228,
+      "confidence": 0.8932236,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Ja, irgendwo schade. Auf der anderen Seite muss man sagen, dass viele Firmen doch inzwischen in der Open Source Welt sehr aktiv sind. Also gerade der Linux Kernel ist das klassische Beispiel, wo man doch sehr viel an den großen Firmen sieht, die da contributen und ohne die es glaube ich, heutzutage gar nicht mehr gehen würde.",
+      "start": 554284,
+      "end": 571212,
+      "confidence": 0.90898037,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Gut, dann meine erste Frage gleich mal. Deine Festplatte ist verschlüsselt, oder?",
+      "start": 631276,
+      "end": 634748,
+      "confidence": 0.9561142,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Ja.",
+      "start": 634844,
+      "end": 635268,
+      "confidence": 0.94947,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Weißt du noch, wann du das erste mal deine Festplatte verschlüsselt hast?",
+      "start": 635364,
+      "end": 638228,
+      "confidence": 0.9539217,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Ja, die Anfänge gehen zurück auf, die einen oder anderen werden es wahrscheinlich noch kennen, TrueCrypt, das war dann noch unter Windows, glaube ich. Wer TrueCrypt verwendet hat damals, das war dieser Installer, der beim Verschlüsseln der Festplatte so erfordert hat, dass man mit der Maus relativ schnell und viel herumfährt, dass er Zufallsdaten generieren kann für den Schlüssel. Also ja, ich mache das jetzt schon seit, keine Ahnung, seit ich selber PCs habe und mich zumindest ansatzweise für Security interessiert habe.",
+      "start": 638284,
+      "end": 665284,
+      "confidence": 0.91902316,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Oh ja, das rückt mich in ein noch schlechteres Licht, wenn du das schon so lange machst. Aber okay. Das heißt aber, du hattest, dann sind es fast Jahrzehnte Wahrscheinlich, würde ich mal sagen, noch nie ein Problem mit deiner Verschlüsselung eigentlich?",
+      "start": 665332,
+      "end": 677588,
+      "confidence": 0.85598093,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Eigentlich nicht. Ich habe schon Daten verloren, dass die Festplatte mal kaputt war oder der Schlüssel irgendwie ich mein Passwort nicht mehr gewusst habe. Aber für den Fall hat man ja normalerweise ein Backup. Also so wie du ja gehabt hast.",
+      "start": 677684,
+      "end": 689800,
+      "confidence": 0.8972593,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Aber wenn du den Schlüssel vergiss, dann ist Pech, oder?",
+      "start": 689920,
+      "end": 694072,
+      "confidence": 0.94122,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Den Schlüssel vergessen bei Disk Encryption heißt, man hat definitiv ein Problem, außer man hat eben auch ein Backup von diesem Schlüssel. Diverse Anbieter von Discription, wie z.b. das was Apple im Betriebssystem integriert oder was Microsoft mit dem BitLocker macht, die bieten ja Möglichkeiten, um quasi auch noch ein Backup von dem Schlüssel, den man hat, zu machen.",
+      "start": 694216,
+      "end": 715808,
+      "confidence": 0.89904135,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Aber ist es dann ein anderes Backup als ich schreibe wir den Schlüssel einfach auf, auf dem Zettel?",
+      "start": 715864,
+      "end": 721492,
+      "confidence": 0.8889078,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Im Prinzip nicht. Also im Prinzip ist genau das. Also wir können gerne mal ein bisschen in die Thematik Disk Encryption einsteigen. Wie funktioniert das ganze? Disk Encryption setzt ja grundlegend darauf an, dass ihr Festplatte als Gesamtes verschließen will. Also wir reden da von Full Disc Encryption. Dabei wird die Festplatte natürlich nichts von der Zeit noch Spinning Rust, das heißt, man hat Sektoren auf dieser Festplatte und es werden Sektoren mehr oder weniger einzeln verschlüsselt. Ÿousand, warum mache ich das? Ich muss die Dinge einzeln verschlüsseln, weil ich will ja Performance haben. Das heißt am Ende will ich von meiner Festplatte her zufällig Sektoren lesen und auch schreiben können und nicht sequenziell. Das heißt, wenn ich jetzt 3 GB Datei verschlüssel, könnte ich die theoretisch als eins verschlüsseln mit einem Schlüssel und die als Ganzes ablegen. Das Heißt aber, wenn ich da irgendwie einen bestimmten Offset von der Datei lesen will, Beispiel ist z.B. ein Video File, wo ihr dann zwischen dreien hinspringen will, dann müsst ihr die ganze Datei entschlüsseln, um an die Stelle überhaupt hinspringen. Deswegen bei Festplatten setzt sie weiter unten an, da setzt sie auf kleineren Segmenten oder Blöcken an, also im Prinzip sagt man an die Sektoren und verschlüsselt die einzeln. Das ermöglicht mir die Performance und schnellen Zugriff auf die einzelnen Teile.",
+      "start": 721636,
+      "end": 788590,
+      "confidence": 0.89048797,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Bevor wir noch weiter in die Tiefe gehen, möchte ich noch einen Schritt zurück machen. Ich habe es ja zwar schon motiviert, warum man Festplatten verschlüsseln sollte, weil wie gesagt, wenn die Festplatte geklaut wird, gibt es noch andere Gründe, warum man Festplatten verschlüsseln sollte, außer wenn man in den Urlaub fährt und die Festplatte geklaut wird und halt die Daten da drauf sind, die vielleicht kritisch sind.",
+      "start": 788670,
+      "end": 809786,
+      "confidence": 0.93748367,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Im Großen und Ganzen ist das der Hauptgrund. Man will im Prinzip sich davor schützen, dass jemand offline Zugriff auf die Daten kriegt. Und das offline ist da, ist da sehr besonders oder sehr wichtig, weil es geht darum, das Gerät ist ausgeschalten, es geht wirklich darum, man verschlüsselt die Data Adress, das heißt die Daten, die auf der Festplatte liegen, während das Gerät aus ist. Also Beispiel Wolfgang, sagen wir du hättest dein Notebook verschlüsselt gehabt im Urlaub und es wäre dir geklaut worden, dann wärst du zumindest von dem her auf der sicheren Seite gewesen, weil deine Daten, Browsers, Session und so weiter, die wären verschlüsselt gewesen. Die Frage ist aber dann, hättest du dein Notebook im Standby gehabt oder wäre es wirklich ausgeschalten gewesen? Weil da wird es dann schon spannend, wenn man da ein bisschen genauer hinschaut. Notebook im Standby heißt dann meistens, man hat entweder den RAM, also suspend to RAM, man hat den RAM noch aktiv, das heißt der Schlüssel zum entschlüsseln, der liegt im RAM und der liegt üblicherweise plaintext im RAM, weil wenn ich das System hochfahre, also wenn ich mein Notebook jetzt boote, dann folgt mir mein Notebook als erstes nach meinem Passwort und das Passwort ist gleichzeitig der Teil, der mir den Schlüssel dann generiert oder von dem der Schlüssel für die Disk Encryption dann abgeleitet. Das heißt, wenn ich mein Notebook nicht ausschalte, dann liegt der Schlüssel auch noch plaintext, also ganz normal lesbar im Rahmen. Da gibt es dann so spannende Attacken, das ist jetzt auch schon über 10 Jahre her, also die Discription Thematik gibt es ja schon lange und die hat sich in den letzten ungefähr 10 Jahren eigentlich relativ viel getan. Da gibt es eben die sogenannten Cold Boot Attacks, das heißt, man kann wirklich aus technischer Sicht und in der Praxis hergehen das Notebook, das in Suspent to RAM ist, einfach vom Strom nehmen, den RAM ausbauen. Wenn man dann noch Stickstoff bei der Hand hat, dann kann man den RAM Riegel kühlen und den in ein anderes Gerät einbauen und dann einfach einmal diesen RAM Riegel, der eben durch die Eigenschaften vom RAM noch seine Inhalte behaltet und vor allem, wenn man ihn kühlt mit Stickstoff, dann noch länger die Daten wieder auslesen und man kann nach diesem Schlüssel suchen. Da gibt es fertige Tools, die das machen können und in dem Fall schützt einen dann, wenn man das Notebook in SAS Pentoram hat, eben die Disk Encryption nicht wirklich. Was man dann will, ist suspend to disk oder ähnliches, wo im Prinzip das RAM stromlos gemacht wird und dementsprechend die Inhalte dann auf der Festplatte sein. Aber auch da wieder, im Prinzip bei Suspend heißt ja immer, das RAM, der Inhalt vom RAM wird irgendwo persistiert. Das heißt, bei Suspend to Disk wird der RAM ja dann doch wieder auf die Festplatte geschrieben. Das heißt, man will, dass dieser Prozess des RAMs auf die Festplatte persistieren ja auch.",
+      "start": 809858,
+      "end": 949432,
+      "confidence": 0.9007337,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Aber wenn ich so ein RAM dann auslese, da brauche ich spezielle Hardware, oder? Weil sobald ich den in einen fremden Computer stecke, wird er ja wieder beschrieben, oder wie funktioniert das dann?",
+      "start": 949496,
+      "end": 959002,
+      "confidence": 0.831523,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Er wird beschrieben, sobald mein System hochfährt. Aber wenn ich natürlich da z.B. 16 GB RAM habe, dann brauche ich zum Hochfahren von einem minimalen Programm, das einfach nur den RAM durch scannt, brauche ich nicht viel RAM. Es gibt inzwischen, also heutzutage, wenn wir jetzt da gleich mal auf BitLocker und Konsorten eingehen, Microsoft hat diese Thematik ja auch erkannt, eben diese Cold Put Attacks nennt man sie, sind ja vor über 10 Jahren schon aufgekommen und bekannt worden. Man hat dann diverse Methoden entwickelt, um das irgendwie zu mitigieren oder zu verhindern. Das heißt, das eine war, man hat, wenn das Notebook runtergefahren wird, im Prinzip den Schlüssel aus dem RAM rausgelöscht. Das heißt, man hat dann die Stelle im Rahmen dreimal drüber geschrieben oder halt auch mal mit Nullen drüber geschrieben, dass das im Prinzip gewiped war. Wenn man jetzt aber quasi den Stecker zieht oder beim Notebook den Akku rausnimmt, dann kann man das nicht mehr machen. Das heißt, das gibt dann bei Windows PCs, im BIoS oder im UEFI gibt es eine Logik, die beim hochfahren erkennt, ist das Gerät sauber heruntergefahren worden oder nicht. Ÿousand dann da über das RAM nochmal drüber malt und das rauslöst. Aber selbst das kann man umgehen.",
+      "start": 959186,
+      "end": 1019288,
+      "confidence": 0.8748016,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Mal ganz kurz noch mal zum Verständnis. Du hattest gerade von Offline Attacken gesprochen. Bedeutet offline Attacken in diesem Kontext jetzt, dass das Notebook wirklich ausgeschaltet ist, oder bedeutet offline Attacken, dass man physikalischen Zugriff auf die Hardware hat?",
+      "start": 1019464,
+      "end": 1033904,
+      "confidence": 0.86758614,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Sowohl als auch. Man braucht, um die Daten auszulesen, es geht ja um die Festplatte, brauchen wirklich Zugriff auf die Festplatte. Das heißt wirklich auch offline Attacken im Sinn von, ich habe physischen Zugriff auf das Gerät. Online Attacken wäre natürlich das Umgekehrte. Das heißt, ich habe mein Notebook laufen und durch irgendwelche Schadsoftware kommt Virus oder sonstige Malware auf meinem PC, dann bin ich mit Disk Encryption genau am falschen Dampfer, weil das bringt mir nichts. Das Notebook läuft, das heißt, die Festplatte ist eh schon entschlüsselt. Das heißt, der Key ist im System bekannt und Malware, die dann die Möglichkeit hat, irgendwie Inhalte von der Festplatte zu lesen, generell Code auszuführen, kann natürlich die Festplatte einfach plaintext lesen.",
+      "start": 1033992,
+      "end": 1071000,
+      "confidence": 0.905764,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Du sagtest gerade, wenn man das Passwort beim Hochfahren eingibt, dann verlässt man sich eigentlich auf die. Ist das dann die Hardware Encryption, die dann irgendwie in der Disc drin steckt, oder oder verlasse ich mich dann auf die des BIOSEs oder des Betriebssystems? Also ich meine, auf welcher Ebene findet diese Encryption und Decryption denn statt, wenn du sagst, der Master Key liegt im Rahmen.",
+      "start": 1071040,
+      "end": 1092776,
+      "confidence": 0.9006544,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Es gibt mehrere Varianten. Die gängige Variante, die man heutzutage bei jedem Notebook hat und die ja relativ universell ist, das passiert alles im Linux Kernel, also im Linux Kernel, generell im Betriebssystem Kernel, ob das jetzt macOS, Windows oder Linux ist, ist dann egal, Aber es passiert in Software. In dem Fall liegt wirklich der Schlüssel dann dazu im RAM. Das heißt, ich habe im RAM diesen Schlüssel liegen, der liegt in einem Speicherbereich, den halt dann nur der jeweilige Betriebssystem Kernel lesen kann und den meine normalen Programme wie mein Browser oder so natürlich nicht sieht, aber der Kernel hat den im Rahmen und deswegen eben diese Cold Butter Text, die da helfen. Es gibt die Alternative dazu. Die Alternative wäre, irgendwann hat man sich dann ja doch Gedanken gemacht, das ist ja nicht ideal, gerade die Coldboard Attacks sind ja da ein legitimer Angriffsvektor, den man verhindern will. Das heißt, man hat versucht, das Ganze in die Hardware zu schieben. Das heißt, es gibt inzwischen auch Festplatten, die das können. Man hat dann wirklich die ganze Logik zum Verschlüsseln der Festplatte auf der Festplatte selber drauf. In dem Fall passiert das auch in der Festplatte. Nichtsdestotrotz muss man aber zum Entsperren der Festplatte oder beim Hochfahren ein Passwort eingeben oder irgendwie diesen Decryption Key an die Festplatte. In dem Fall geht es natürlich die große Frage, wie kommt die dahin und an welcher Stelle kann ich das potenziell als Angreifer auch wieder abfangen?",
+      "start": 1092848,
+      "end": 1161984,
+      "confidence": 0.9164142,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Und wenn ich jetzt mein Laptop nur im Ruhezustand habe, das bedeutet, ich mache einfach nur die die lit runter und mach die dann wieder hoch, dann promptet der meist hey, bitte gibt ein Betriebssystem Passwort ein. In diesem Fall jetzt nicht das disk inscription Passwort. In diesem Zustand ist die Festplatte in der Regel entschlüsselt zweitausendein und ich verlasse mich nur auf die Authentifizierung, nicht Autorisierung des Betriebssystems und meines User Kontos. Ist das komplett, ist das richtig?",
+      "start": 1162032,
+      "end": 1190542,
+      "confidence": 0.8804937,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Genau, es kommt natürlich auf diesen Suspend Modus an, den dein Notebook dann verwendet. Wenn das ein reines Suspent to RAM ist, also das RAM im Prinzip noch Strom hat, dann ist es genauso der Fall, wenn ich auf Deep Sleep oder suspend to Disk verwende, wo dann wirklich das Notebook hergeht, den RAM leert und einmal auf die Festplatte schreibt. Da habe ich das Thema dann so, dass ich im Prinzip mit irgendeiner Weise diesen RAM Inhalt, den ich auf die Festplatte schreibe, auch wieder sichern will, weil der Schlüssel da ja drinnen liegt und sonst steht genauso da. Das heißt, in dem Fall muss ich dann auch noch dafür sorgen, dass die Dinge auch verschlüsselt sind. Unter Linux ist das dann meistens das Swap File, das sie dann ebenfalls verschlüsselt.",
+      "start": 1190606,
+      "end": 1225434,
+      "confidence": 0.87130576,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Jetzt hört man ab und zu so Horrorgeschichten, dass wenn Leute reisen und auch in diverse Länder, dass sie dann einer, ich sag mal ÿousand detaillierteren Security Kontrolle unterzogen werden und das dann oft auch mal die Tasche deine Hand verlässt, dass dann von den Damen und Herren dann z.b. ein Rucksack genommen wird, wo dein Laptop mitgenommen wird. Deswegen wird zumindest auch bei ziemlich vielen Leuten gesagt, okay, wenn du reißt, bitte den Laptop ins Handgepäck und nicht in den Koffer oder ähnliches. Das bedeutet, da würdest du wirklich sagen, um 100 % sicher zu gehen, zumindestens wenn du durch die durch die Check ins gehst und so weiter, dass der Laptop komplett heruntergefahren ist, also wirklich ausgeschaltet ist und nicht im ja Sleep Modus. Klar, jetzt hast du gesagt Deep Sleep und suspend to disc und so weiter ist möglich, aber nehmen wir mal, ich sag mal die das einfachste für alle Leute, die gerade hier zuhören, die sich beim Flughafen schützen wollen, an. Da wirst du wirklich empfehlen, wirklich komplett shutdown und runterfahren und dann durch die Security?",
+      "start": 1225482,
+      "end": 1282060,
+      "confidence": 0.89549714,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Ja, prinzipiell schon. Allerdings würde ich dann sogar behaupten, die Discription selbst, also wenn ich rein full discryption mache, hilft es auch nicht genug, sagen wir so. Die TSA, die man dann da ja gern zitiert oder die man gerne als Beispiel heranzieht für sowas.",
+      "start": 1282140,
+      "end": 1296224,
+      "confidence": 0.8504131,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Moment, Moment, was ist die TSA?",
+      "start": 1296332,
+      "end": 1298016,
+      "confidence": 0.94264835,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "TSA ist die amerikanische Flughafensicherheit. Ah, okay. Das ist so in den Beispielen gern die böse Seite von dem ganzen, die ja da irgendwo mein Notebook dann in den Händen halte. Aber wenn ich meine Festplatte verschlüsselt habe und auch das Notebook ausgeschalten, dann gibt es ja immer noch die Möglichkeit, dass sonstige Teile meines Notebooks manipuliert werden. Ob das jetzt irgendwelche Firmware Komponenten oder selbst der Bootloader oder sonstige Dinge sein, die mir dann auf diese Weise ja potenziell auch Daten klauen können. Das heißt, konkretes Beispiel, man nennt es dann auch aus dem Hotel Kontext die Evil Mate Attack, also die die böse Hausdame im Hotel. Und ich habe jetzt nichts gegen Hausdamen, das ist einfach im Prinzip das klassische Beispiel. Und das ist in dem Fall mit dem Flughafen genau dasselbe. Ich kann als jemand, der sein Notebook aus den Händen lasst, nicht sicher sein, dass das nicht auf irgendeiner Weise manipuliert wird. Das heißt, im Endeffekt kann derjenige, der mein Notebook in die Hände kriegt, zwar die Daten drauf nicht lesen, aber er kann definitiv andere Dinge manipulieren. Das heißt, er kann z.B. auch in das Wifi oder BIOS irgendeine Schadkomponente einführen, die dann mein Passwort ausliest, während ich das eingebe und das dann exfiltriert sozusagen. Also quasi, weil mein Notebook im WLAN hängt, irgendwo anders hinschicken und dann kann der kopiert mit dem kopierten Inhalt meiner Festplatte natürlich meine Daten entschlüsseln und kann die lesen. Es gibt dann die die ganz paranoiden. Wer dann wirklich so paranoid sein will, kann dann hergehen und sich die ganzen Verschraubungen auf dem Notebook. Also das habe ich mal als Trick gelesen. Man versiegelt im Prinzip jeden Schrauben auf dem Notebook mit einem Nagellack mit Glitzer drinnen, weil dieses zweitausendeinundzwanzig, der Glitzer, der da drin ist, so ein eindeutiges Muster natürlich hat. Je nachdem, wie man ihn verstreicht, ist es halt immer anders und man macht Fotos davon und man kann dann feststellen, ob jemand den Lack abkratzt hat und neu auftragen hat, indem das Muster vom Glitzer. Wer dann wirklich so paranoid ist, kann dann, oder das braucht jetzt gar nicht sagen, dass das was schlechtes ist, kann dann wirklich auch nur zu solchen Mitteln greifen.",
+      "start": 1298088,
+      "end": 1410794,
+      "confidence": 0.8858059,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Ich hatte gerade im Kopf, okay, man versiegelt dann irgendwie seine schrauben irgendwie mit Wachs oder sowas. Weißt du, wie früher so dieses Wachs Siegel bei Briefen und so, aber ich meine, diese glitzer Thematik geht ja, geht ja genau in dieseousand Richtung. Kann man, also ist das der einzige mögliche Weg, wie man sich davor schützen kann man sich ja nicht. Man kann verifizieren, dass es modifiziert wurde, weil darum geht es ja. Man kann sich ja nicht schützen, weil aufschrauben und abkratzen kann die TSA oder wir reden jetzt immer von den bösen Amerikanern, aber das geht ja natürlich in ganz anderen Ländern auch so, oder? Gibt es da nicht irgendwas, ich sag mal softwareseitig, dass man sich, weiß ich nicht, den Datenverkehr zwischen den Hardwarekomponenten irgendwie mit Check Summen oder ähnliches verifizieren kann?",
+      "start": 1410842,
+      "end": 1449390,
+      "confidence": 0.9129759,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Zweitausendein ja, natürlich. Also im Prinzip, wenn jemand zu mir kommt und sagt du brauchst disk encryption, also vor allem full discription, dass du sicher bist, dann frage ich dann meistens ja, wovor genau willst du dich schützen? Und das ist ja genau das, wovon wir jetzt reden. Das ist, es kommt sehr stark auf den das Threat Model sozusagen, also das Angriffsszenario an, vor dem man sich schützen in den meisten Fällen stellt sich, wenn man dann mit den Personen redet und genau anschaut, was man, wovor man sich denn konkret schützen will und in dem Fall vom Flughafen oder auch dem Hotelzimmer ist dann meistens sogar noch mehr. Das heißt, man will ja wirklich Manipulation erkennen. Und wenn man Manipulation erkennen will, dann gibt es ganz andere Mechanismen neben der Festplattenverschlüsselung, auf die man dann zurückgreifen kann. Das klassische ist Secure Boot aktivieren. Das heißt, jeder Windows PC macht es ja heutzutage, glaube ich eh schon standardmäßig, zumindest Windows 10 und 11 erfordern ja einen TPM Chip im System und Secure Boot basiert oder nutzt sehr stark diese TPM Chips, ist nichts anderes als wie ein hardware Security Module. Das heißt, ein eigener Chip am Mainboard, der Security macht, also der im Prinzip kryptographische Prozesse macht und der an sich sicherer ist, als wie das ganze in Software auf der CPU zu machen, weil der gewisse Resistenz oder gewisse Sicherheit bietet vor physischen Zugriffen und aber auch vor softwarebasierten Zugriffen. Das heißt, ich muss natürlich erst die Möglichkeit haben, mit diesem Chip zu reden. Das sichert dann einmal der Betriebssystem Kanal ab und so weiter. Aber im Endeffekt ist es zumindest einmal das gängigste, was man nutzt, um sich vor solchen Arten von Attacken zu schützen, indem man sicherstellt, dass mein Betriebssystem durch Secure Boot nur verifizierte Komponenten bootet, das heißt also wirklich nur signierte Teile des Betriebs bootet. Und das heißt aber wirklich auch alles von unten bis oben, das heißt den Bootloader, das heißt den Kernel, das heißt alles, was im Dateisystem liegt. Und beim Dateisystem wird es dann spannend. Beim Dateisystem selber will man dann natürlich auch alles, was auf der Festplatte liegt, dementsprechend authentifizieren, also die Integrität prüfen. Und da gibt es relativ viele verschiedene Tools. Das meiste oder das gängigste unter Linux, das hat inzwischen sogar drei Subsysteme, die das können. Das ist DM Integrity, DM Verity und FS Verity. Das sind halt im Prinzip nichts. Also ähnlich zur Disk Encryption selber setzen die auf ähnlichen Ebenen an, im Storage Stack vom Betriebssystem Kernel und versuchen auf der Ebene dann im Prinzip jeden Block oder jeden Sektor, der gelesen wird, nochmal durch eine Checksumme zu prüfen und da erkenne ich dann jede Auto Manipulation.",
+      "start": 1449430,
+      "end": 1593264,
+      "confidence": 0.8788242,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Ist dir sowas schon mal passiert oder machst du das grundsätzlich, dass du checkst, ob irgendwas verändert wurde?",
+      "start": 1593352,
+      "end": 1599272,
+      "confidence": 0.9581039,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Das Spannende ist natürlich, unter Linux gibt es das unter macOS, siehe da, relativ wenig. Also da gibt es weniger. Auch genauso unter Windows.",
+      "start": 1599376,
+      "end": 1607312,
+      "confidence": 0.8773175,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Moment, bist du Apple User?",
+      "start": 1607456,
+      "end": 1608680,
+      "confidence": 0.98579,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Nein.",
+      "start": 1608720,
+      "end": 1608888,
+      "confidence": 0.90788,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Du verwendest schon Linux, oder?",
+      "start": 1608904,
+      "end": 1610176,
+      "confidence": 0.966208,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Nein, nein.",
+      "start": 1610248,
+      "end": 1610648,
+      "confidence": 0.692445,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Du verwendest Apple?",
+      "start": 1610704,
+      "end": 1611832,
+      "confidence": 0.8407033,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Ja. Okay. Das ist das Spannende, Ÿousand. Normalerweise gibt es eben einen Secure Boot Prozess, wobei man muss sagen, Apple inzwischen hat das vor allem aus der ganzen iOS Sparte ist inzwischen doch relativ viel auf den Mac über übergesprungen und diese Secure Boot Thematik ist da definitiv inzwischen auch im Mac. Das heißt an der Stelle nimmt das Betriebssystem bzw. Mein Notebook das ganze Ding ab.",
+      "start": 1611976,
+      "end": 1633414,
+      "confidence": 0.88616806,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Wird eigentlich von euren Kunden in irgendeiner Form dann Nachweis verlangt, wie sicher ihr agiert, weil ihr bekommt ja dann auch Daten von dem von den Kunden?",
+      "start": 1633462,
+      "end": 1643294,
+      "confidence": 0.89069444,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Ja, auch das. Also im Prinzip, wir haben einerseits das ganze NDA Thema, das heißt wir müssen einerseits Verschwiegenheit und dann auch gewisse Sicherheitsstandards erfüllen. Wir als Unternehmen sind jetzt nicht direkt ISO 27001 zertifiziert, aber natürlich müssen wir oder erfordern unsere Kunden dann relativ ähnliche Standards, die wir erfüllen.",
+      "start": 1643422,
+      "end": 1664510,
+      "confidence": 0.8802166,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Diesen TPM Chip, den du jetzt erwähnt hast, das ist gängig, das hat es heutzutage zweitausendein. Jedes Ding und jedes Handy auch, oder?",
+      "start": 1664630,
+      "end": 1671924,
+      "confidence": 0.95045346,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Genau, also bei Smartphone wird es dann anders, also Windows PCs sowieso, also das erfordert die Apple Welt hat ihre eigenen Chips, das heißt Apple hatte diese, diesen T Chip bzw. Bei Apple Silicon ist wieder was eigenes. Im Smartphone Bereich wird es dann spannend, da gibt es nämlich je nach Smartphone Hersteller, gerade bei Android, ganz unterschiedliche Lösungen. Da sind wir dann auch nicht mehr in der Intel Welt, also AMD Intel, sondern da sind wir dann bei ARM CPU Architektur. Und in dem Fall gibt es dann so was wie z.B. die TrustZone, das ist ein eigener Bereich im Prinzip ist ein Featureset von der CPU selber und die hat dann im Prinzip einen abgetrennten Bereich, in dem wieder eigenes Betriebssystem laufen kann, das ist TrustZone OS und in dem drinnen dann quasi dann die Schlüssel da liegen können.",
+      "start": 1672012,
+      "end": 1717374,
+      "confidence": 0.88637865,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Also das ist auch wirklich ein Speicher für Schlüssel, nicht nur, dass da Algorithmen drin laufen oder ein Prozessor, sondern ich kann dort auch Sachen ablegen.",
+      "start": 1717462,
+      "end": 1725412,
+      "confidence": 0.92715424,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Nein, Bayer ist nicht. Das heißt, es ist im Prinzip nur eine sogenannte Runtime. Das heißt, man hat im Prinzip da ein Programm, das da drinnen läuft, das aber Zugriff auf Hardware hat, privilegierten und dann eben mit Hardware Unterstützung auch wieder Dinge verschlüsseln kann. Das heißt, der ganze Prozess fängt eigentlich so an. Meine Disk Encryption unter Android z.B. hat einen einen Key. Das heißt, es generiert, wenn ich die Disk Encryption aktiviere, generiert es einen Key. Dieser Key landet oder wird generiert in der Trustzone selber. Das heißt, er wird nicht im normalen Betriebssystem Kernel generiert, sondern der wird in einer Trustzone generiert. Und jedes Mal, wenn die Trustzone oder wenn ich herunterfahre oder die Trustzone im Prinzip diesen Key persistieren muss, gibt es die an den normalen Kernel weiter, das normale Betriebssystem und das speichert es dann. Allerdings dieses Weitergeben passiert genau so, dass der sensible Key die Trust so nie, ohne verschlüsselt zu sein, verlässt. Das heißt, der Key selber wird nochmal von der Trust verschlüsselt, wird ans Betriebssystem gegeben und dann gespeichert. Der hat gleichzeitig auch Integritätsprüfung mit dabei. Das heißt, wenn das Betriebssystem in irgendeiner Weise kompromittiert ist, erkennt die Trusts anders und verweigert natürlich ihren Dienst.",
+      "start": 1725526,
+      "end": 1794276,
+      "confidence": 0.8600847,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Aber das muss ich am Handy wirklich aktivieren. Also es ist jetzt kein Default, dass Android heutzutage immer schon verschlüsselt.",
+      "start": 1794388,
+      "end": 1800580,
+      "confidence": 0.873956,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Die Verschlüsselung unter Android glaube ich, Android bin jetzt sicher nicht der Experte zweitausendein, aber bei Android muss man es aktivieren. Aber ich glaube, standardmäßig kann man das inzwischen sogar beim Setup, wenn man das Handy aktiviert oder das erste Mal im Prinzip benutzt, einschalten, so wird man gefuckt.",
+      "start": 1800700,
+      "end": 1816746,
+      "confidence": 0.87068367,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Das größte Problem wahrscheinlich bei Handys ist ja, dass die meisten Leute da irgendwie eine Wischgeste oder so haben oder irgendwie einen anderen schwindeligen Fingerabdruck. Und wenn ich einmal das Handy gegen die Sonne halte, dann sehe die Wischgeste zum Entsperren voll, hat der fett schmieren auf dem Display und das war's dann. Also da kann verschlüsselt sein. Ÿousand, wie man will und man kann es halt einfach so unter Umständen auch auslesen. Aber vielleicht Leute, die kritischer sind, die haben dann vielleicht was besseres zum entsperren.",
+      "start": 1816818,
+      "end": 1842928,
+      "confidence": 0.88458633,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Aber ich meine vierstelliger, fünfstelliger numerischer Pin ist ja nichts anderes als diese Wischgeste, weil im Endeffekt vier Zahlen. Klar, du hast 9900 Möglichkeiten, alles gut.",
+      "start": 1843024,
+      "end": 1854696,
+      "confidence": 0.9286823,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Ja, außer du haltest es gegen die Sonne, weil dann siehst du auch genau dieseousand Bereiche, die ganz oft getippt werden. Und dann hast du zwar die Kombination noch von diesen Zahlen, aber im Endeffekt hast du dann schon sehr kleinen Raum und kannst es vielleicht durchbruchen.",
+      "start": 1854808,
+      "end": 1868456,
+      "confidence": 0.9222772,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Aber das ist eine interessante Frage gerade, weil wir hatten jetzt gerade von diesem herunterfahren von den Laptops mit dieser Coldboot Attack, mit dem Stickstoff bei den Laptops gesprochen. Gibt es sowas bei den Handys auch? Denn, weil ich meine, im Endeffekt, ich weiß nicht, wann ich das jetzt mal mein Handy ausgemacht habe oder neu gebootet habe oder ähnliches. Also das läuft glaube ich seit einem Jahr durch gefühlt.",
+      "start": 1868488,
+      "end": 1886600,
+      "confidence": 0.9103063,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Kann jetzt in erster Linie von Android reden. Bei Android war es nicht mehr genau, weil ich mir das selber schon Details angeschaut habe. Ich habe so einen Fall gehabt, wo jemand zu mir gekommen ist. Der Fall war der, die Person kommt zu mir und sagt Kannst du mir helfen, die Daten von meinem Handy zu retten? Ich habe gesagt ja, gibt es ein Backup? Ja, prinzipiell ist Backup vorhanden, allerdings ist es ein Disk Dump von der internen Speicherkarte vom Handy, vom internen Speicher. Das heißt, es ist dann in dem Fall wirklich, nachdem da Disk Encryption aktiviert war und es relativ aktuelles Handy war, komplett verschlüsselte Festplatte zweitausendein. Das heißt, in dem Fall war das wirklich so, ich habe ein Dump, also im Prinzip ein Image kriegt von der internen Festplatte, die komplett verschlüsselt war. Was man dann tun kann und was ich getan habe, war nachzuschauen, wie denn die Verschlüsselung genau funktioniert. In dem Fall ist es dank dem das Android ja Verwandtschaft, große Verwandtschaft mit Linux hat, ist es genau dasselbe wie unter Linux. Und man kann im Endeffekt genau diese verschlüsselten Keys, also die nennt man dann Key Blobs, die diese Trustzone dem Betriebssystem gibt, von auf der Festplatte suchen und dieser Trustzone wiedergeben. Und die Trustzone, liebe Trustzone, bitte entschlüsseln mir die die Blobs doch einmal bitte und gib mir sie zurück, dass ich die Festplatte entschlüssel. Und das ist eigentlich genau der Knackpunkt bei den ganzen Systeme, auch unter Smartphones. Diese Trustzone macht die Verschlüsselung nicht vollständig selbst. Sondern die macht nur dieses Key Material verschlüsseln innen drinnen und das ist sicher. Und sie gibt mir aber dann quasi den Disk Encryption Key wieder raus und hat den wieder im RAM. Und somit komme ich dann wieder zu dem Thema Coldboot Attacks, wo genau dasselbe Thema wiederhand. Der Unterschied, der große Unterschied ist der, das RAM bei meinem Smartphone ist verlötet.",
+      "start": 1886640,
+      "end": 1981562,
+      "confidence": 0.881143,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Aber das, was du beschrieben hast, und jetzt bin ich mal ein bisschen ketzerisch, ist das nicht eigentlich genau das, was unsere, ich nenne sie mal Strafverfolgungsbehörden, bei einer möglichen Überwachung oder bei einem oh, wir haben ein Handy gefunden und so weiter, ähnliches auch machen können?",
+      "start": 1981626,
+      "end": 1995770,
+      "confidence": 0.9453583,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Natürlich, das ist genau das Problem. Ich habe ein Handy oder Handy Notebook, was auch immer, das ich aus meinem Blickfeld verlasse, ÿousand, und für längere Zeit in fremden Händen potenziell habe. Und natürlich kann da jeder andere was starten oder nicht starten. Genau. In dem Fall kommt wieder Secure Boot, bzw. Das ist ja im Prinzip ein Marketingbegriff, dem Verified Boot oder wie sie alle heißen, von Trusted Boot angefangen, wie man auch immer man es nennen will, ist, man braucht im Prinzip einen Boot Prozess vom gesamten Betriebssystem, der sicherstellt, dass jede Komponente, die jetzt da irgendwie läuft, von Bootloader anfangen bis hin zum Kernel, bis hin zu meinen ganzen Prozessen und Apps, die da drauf laufen, signiert sein. Das heißt, dass die wirklich authentisch sein und nicht manipuliert sein, weil sobald die die Möglichkeit habt, da z.B. den Kernel auszutauschen, da kann der ja wieder mir Dinge klauen. Genau, wieder sagen, gib mir bitte disk encryption Passwort und das dann aber über Netzwerk raus.",
+      "start": 1995890,
+      "end": 2048098,
+      "confidence": 0.8711866,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Wir sprechen jetzt schon die ganze Zeit über Verschlüsselung und bei Verschlüsselung stellt sich bei mir als, ich sag mal, jemand mit Softwareentwicklungserfahrung immer die Frage, wo stehen wir denn jetzt gerade und welcher Verschlüsselungsalgorithmus wird eigentlich noch als, ich nenne es mal in Anführungszeichen, sicher klassifiziert? Ich rede jetzt nicht von Hashing wie MD und SHA und ähnliches, sondern wirklich von Verschlüsselungsalgorithmen. Und da gibt es ja wirklich ganz klassische Algorithmen wie ROT 13 oder Caesar oder ähnliches, der Klassiker. Also ich glaube, wir sind uns alle einig, dass diese nicht mehr als sicher klassifiziert sind, sondern wenn wir von moderner Disk Encryption ausgehen, welche Verschlüsselungs Algorithmen kommen denn da mal wirklich, ich sag mal, zu Tage? Welche werden denn da genutzt? Bzw. Kann man die auch vielleicht auswählen? Weil dann kann man ja vielleicht auch Fehler machen und sagen, okay, die haben ja oft ein trade off in Bezug auf Sicherheit und Performance, Geschwindigkeit und allem drumherum. Kannst du da vielleicht ein bisschen was zu sagen?",
+      "start": 2048154,
+      "end": 2103008,
+      "confidence": 0.8802973,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Ja klar. Das Schöne ist, dass sich die Disk Encryption in den letzten ungefähr 10 Jahren kaum verändert hat. Und wir haben im Endeffekt inzwischen hat sich eine Variante oder ein Algorithmus etabliert, der eigentlich recht durchgehend von jedem genutzt wird. Das ist der Encryption Standard IS. Der ist im Prinzip vor, glaube ich, schon fast 15 Jahren einmal standardisiert worden und den sollte jeder irgendwo einmal gehört haben. Wenn man sich mit TLS oder sonstigen befasst, dann hat man IS schon einmal gehört. AIS ist eine sogenannte Block Cipher, das heißt, die arbeitet oder verschlüsselt in Blöcken. In dem Fall sind 16 Byte Blöcke und auf der Basis verschlüsselt sie beliebig lange Daten. Und um eben dann, vielleicht kennt man der eine oder andere, der sich so ein bisschen mit den Anfängen der Kryptographie oder mit so den [SOS/EOS], ersten Grundkurs der Kryptographie beschäftigt hat, kennt dieses klassische Beispiel, wenn man mit einer Block Cipher ein Bild verschlüsselt. Da gibt es diesen Tux Pinguin von Linux, der, wenn man einen m Block Cipher verschlüsselt, im Prinzip das Muster vom verschlüsselten Bild des Muster beibehaltet. Das heißt, man kann diesen Pinguin immer noch erkennen. Deswegen gibt es gewisse Modi, wie man eine Block Cipher verwenden kann oder wie man die nutzt. Das heißt, man kettet diese 16 Byte Blöcke in unterschiedlichen Varianten aneinander, dass sie quasi eben diese Patterns verschleiern oder unkenntlich. Und bei der Disk Encryption hat man nur ein paar Anforderungen mehr. Da geht es nämlich darum, dass man im Endeffekt für diese Verschlüsselung gleichzeitig auch noch die Anforderung hat, die Länge beizubehalten. Das heißt, wenn man, wenn ich davon rede, man verschlüsselt in 16 Byte Blöcken, dann habe ich ein Problem, wenn wenn mein Input nicht durch 16 teilbar ist. Das heißt, ich muss dann hinten was anhängen. Das ist sogenannte Padding. Bei einer Festplatte habe ich die Einschränkung aber, dass ich ja auf Festplattenblöcken arbeite. Das das Medium, wo ich hinspeiere, das hat ja fixe Größe und der Layer drüber, also das Dateisystem erwartet ja genau diese Größe. Unter Linux mit dem klassischen DM Krypt, das man da verwendet, sind es 512 Byte. Das Heißt, das Dateisystem oben glaubt, wir haben 512 Byte und unten das Storage Medium glaubt, wir haben 512 Byte. Wenn ich zwischendrin verschlüssel und das länger wird, dann kann ich dieses was länger wird, nicht mehr abspeichern. Und dieser XTS Modus, den man da jetzt bei der Disk Encryption verwendet, der kann das, der kann genau mit dem umgehen. Es kann nicht jeder Modus, das klassische AES CPC Modus kann das, z.B. nicht beim XTS Modus, der inzwischen der Standard ist, der kann das.",
+      "start": 2103064,
+      "end": 2239578,
+      "confidence": 0.8643179,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Jetzt hast du Demcrypt schon erwähnt als Software Verschlüsselung und ich habe auch eingangs erwähnt, ich hatte mal dieses Problem und jetzt auch wieder mit mit meinem neuen Laptop, soll ich die Hardware Encryption verwenden, also die, die auf der SSD schon in Hardware gegossen ist oder mehr oder weniger Hardware, nennt sich Opal oder Opal, keine Ahnung, ist glaube ich bei ganz vielen Enterprise SSDs und Festplatten verfügbar oder verwende ich dem Crypt oder verwende ich beides? Was wäre denn dein Zugang?",
+      "start": 2239634,
+      "end": 2269734,
+      "confidence": 0.88331866,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Also prinzipiell bin ich ja ein Verfechter von Open Source, deswegen würde ich dann eher auf die Open Source Variante setzen, also demCrypt. Natürlich schadet es aber nie, wenn man beides verwendet.",
+      "start": 2269782,
+      "end": 2278638,
+      "confidence": 0.84911406,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Frage, warum ist Open Source besser? Oder also nur weil es open source ist oder steckt auch was dahinter?",
+      "start": 2278694,
+      "end": 2284710,
+      "confidence": 0.87017787,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Der Hintergedanke prinzipiell ist der, dass ich mir auch anschauen kann zweitausendein, wie das implementiert ist. Natürlich muss man da gewisses Know how haben, um zu verstehen, was gemacht wird, aber ich kann da reinschauen und ich behaupte jetzt einfach einmal, der Quellcode, der im Linux drinnen ist, ist von mehr Augen gesehen worden und hat halt mehr Einsatzbereiche als wie die Firmware in meiner Festplatte, die da die verschlüsseln. Natürlich kann die genauso additiert sein und das kann, machen wir ja selber auch, das heißt wir machen sogenannte Closed Source audits, das heißt der Quellcode wird nie die Öffentlichkeit sehen, aber am Ende des Tages sind wir halt da in einem sehr speziellen Segment und das trifft halt je nach Hersteller haben die ihre eigene Firmware und somit ist es dann wieder sehr sehr Nischenbereich, würde ich mal behaupten. Das heißt, ich würde jetzt eher auf Open source setzen und die Mcrypt, die Mcrypt gibt es jetzt auch schon seit glaube ich über 10 Jahren, das heißt das ganze System ist schon sehr unter Anführungszeichen abgehangen und hat sehr viel Einsatz schon gesehen und dem würde jetzt da rein von meiner Seite, von meiner Erfahrung her mehr trauen, als wie an einem Selfing drive. Vor allem die Self Encrypting Drives haben ja auch dieses inhärente Problem bzw. Gibt es da auch genug Forschung, die sich, Forscher, die sich das schon in den letzten Jahren angeschaut haben und die festgestellt haben, dass wenn ich diese Festplatte verschlüssel und diese Festplatte am Anfang beim Hochfahren einmal entsperre und quasi der mein Passwort gibt und die Festplatte dann sich entsperrt und alle Daten im Plaintext zurückgibt, haben sie das Thema, dass sie den Schlüssel ja auch irgendwo intern halten. Das heißt, wenn ich die Festplatte dazu überrede, diesen Schlüssel zu halten, dann kann ja da ähnlich wie bei der Coldboot Attack vom Laptop vielleicht was ähnliches. Die Festplatte selber müsste ja auch irgendwo einen RAM oder was ähnliches haben, wo der geschützt ist von außen, wo ich nicht hinkriege. Noch viel schlimmer ist, dass man ausgefunden hat, dass es recht viele Festplatten gibt, wenn ich da einfach den Strom angesteckt lasse. Ich habe meinen PC, ich mache den auf, stecke nur bei einer SSD z.B. das SATA Kabel ab und lasse den Strom angesteckt und steckt das von meinem eigenen PC an. Dann sagt die Festplatte einfach ja bitte machen wir weiter. Da sind Daten, welche Daten willst du? Die kann dann wieder genau dieselben Dinge machen und ich kann im Prinzip die Festplatte einfach normal lesen, ohne dass irgendeinen Schlüssel.",
+      "start": 2284750,
+      "end": 2418222,
+      "confidence": 0.8844263,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Anderes Argument, was man auch immer so hört oder Frage, die man auch immer wieder liest, auch online, ist mir sehr, sehr oft begegnet beim bei meiner Research macht denn das ganze Verschlüsselungsthema noch dazu, wenn es vielleicht zweimal Verschlüssel auf der SSD und Softwareseite, macht das nicht alles viel, viel langsam?",
+      "start": 2418286,
+      "end": 2435242,
+      "confidence": 0.89071983,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Performance ist eine spannende Frage. Ich würde sogar sagen, man muss da wirklich unterscheiden, wo man Verschlüsselung aktiviert hat. Bei meinem Laptop und auch bei meinem Smartphone habe ich selber kein Problem gesehen. Also ich habe da performance mäßig selber nie gemerkt, dass es jetzt mit Verschlüsselung viel langsamer wäre. Der Grund gerade bei Notebooks speziell oder auch bei PCs selber ist der, dass die ganzen CPU architekturen, eigentlich alles Intel basierte sowieso in der CPU schon eigene CPU Instruktionen hat mit die AIs können, also die im Prinzip Is machen. Das heißt, es gibt einzelne CPU Instruktionen mit AIs machen Ersatz von Instruktionen. Das sind glaube ich fünf oder sechs CPU Instruktionen. Das heißt, das geht sehr schnell, weil die CPU selber das schon macht und optimiert dafür ist. Genauso kann man auch beim Smartphone mit einem ARM Chip gibt es sehr, sehr, sehr optimierte Implementierung, die das zwar in Software machen, aber die wirklich optimiert sind auf den Fall. Das heißt, der Performance Overhead bei solchen Geräten ist minimal. Und ich glaube, wenn wir uns ehrlich sein, die Performance vom Rechner nutzt man eh relativ selten aus. Wenn man jetzt dann wirklich viel kompiliert als Entwickler und wenn man dann viel Diskoperationen hat, dann kann es sein, dass man schon merkt. Aber im Endeffekt bei solchen Geräten würde ich es nicht behalten, wenn man dann jetzt mehr in die Low End Schiene geht, beziehungsweise in die schwächere Schiene von Prozessoren geht. Das heißt, wir sehen das im IoT und Embedded Linux Bereich recht stark, dass da relativ genau geschaut wird, wie stark die CPU minimal sein muss und dann wird nichts besseres verwendet. Das heißt, man optimiert oder man schaut wirklich auf Kosten und umso schwächer die CPU, umso günstiger ist sie. Das heißt, man nimmt dann natürlich einmal die schwächere CPU anstatt einer stärkeren. Und dann wird es schon spannend. Also wir haben eh gerade die Woche ein Projekt beim Kunden, wo man wirklich einen Benchmark machen von deren System, von deren Chip bezüglich disk Encryption und generell Kryptographie. Und da sieht man dann schon, da hat es dann definitiv ein Overhead und den Markt. Und gerade wenn das, wenn das Ding eh schon am Anschlag ist mit mit den Prozessen, die drauflaufen, dann merkt man.",
+      "start": 2435306,
+      "end": 2555500,
+      "confidence": 0.8862891,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Ich habe auch gelesen bei diesem self, wie nennst du self encrypted discs?",
+      "start": 2555540,
+      "end": 2559916,
+      "confidence": 0.79418075,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Self encrypting drives.",
+      "start": 2560068,
+      "end": 2561292,
+      "confidence": 0.80691665,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Ja, das also keine Ahnung, ob das stimmt, aber ihr habt es paar mal gelesen, dass die eigentlich sowieso immer verschlüsseln. Aber sonst ist es halt irgendwie ein Schlüssel, der fixiert ist oder irgendwie ein Standard Schlüssel. Und nur wenn du den setzt, dann hast du halt deinen eigenen. Aber eigentlich dieses Verschlüsselungsding läuft immer mit. Das kann man gar nicht abschalten. Aber wie gesagt, ist vielleicht auch je nach SSD anders oder aber hatte ich zumindest gelesen.",
+      "start": 2561316,
+      "end": 2584974,
+      "confidence": 0.90260667,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Ja, kann kann leicht sein, dass die Firmware da einfach so simpel ist, dass sie ein Standard Key drinnen hat.",
+      "start": 2585022,
+      "end": 2590514,
+      "confidence": 0.870928,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Das hört sich jetzt nicht so nach einer Empfehlung an für Discs, die irgendwie Opal supporten oder irgendwie proprietäre Verschlüsselungsarten, sondern da sagst du okay, darauf muss man jetzt beim Kauf der Festplatte jetzt eigentlich nicht achten.",
+      "start": 2590562,
+      "end": 2602074,
+      "confidence": 0.8825946,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Also Eve selber wird es, wird es nicht. Ihr habt es auch selber gar nicht in Verwendung. Man in meinem Fall, nachdem ja Mac User bin, wenn wir schon festgestellt haben, nutze ich das, was mir Apple quasi bietet, weil viel mehr habe ich nicht an Optionen. In dem Fall Ÿousand macht es, dass Security Chip, der auf meinem Notebook drauf ist. Also ich habe da MacBook, Intel basiertes MacBook mit T Chip und da läuft es quasi durch den Chip durch. Apple hat dann noch mal ein bisschen mehr gemacht. Das heißt, Apple ist da im Prinzip hergegangen und hat das, was Linux mit die MCR macht, noch mal ein bisschen erweitert, hat die wirklich die Kryptographie selber ausgelagert. Das heißt, die Verschlüsselung selber findet nicht mehr auf der CPU statt, sondern es findet wirklich im Chip statt, in diesem eigenen Coprozessor. Und der hat dann auch den Key und der gibt den dann in dem Fall Ÿousand raus. Der hat dann meines Wissens nach, da bin ich jetzt aber auch nicht der Experte, hat dann wirklich eine Möglichkeit, den zu speichern bzw. Werde vom Passwort, das ich am Anfang beim booten eingebaut.",
+      "start": 2602162,
+      "end": 2651422,
+      "confidence": 0.8386793,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Mal eine ganz praktische Frage. Wir sprechen jetzt immer nur von Festplatten und da gehe ich stark davon aus, dass wir jetzt nicht mehr von klassischen Spinning Discs sprechen, sondern in der Regel von SSDs. Aber wie sieht das denn, ich sag mal bei Flash Drives aus? Wie einer ganz doof, einer Micro SD Karte und ähnliches haben. Gibt es auch Micro SD Karten, die dann auch so eine so eine Art von Hardwareverschlüssung drin haben? Das heißt wirklich nur das Flash drive und da muss man alles mit softwarebasierter Lösung umsetzen.",
+      "start": 2651526,
+      "end": 2674426,
+      "confidence": 0.8394201,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Ob es jetzt die Removable gibt, die das können, weiß ich jetzt selber gerade nicht, weil wir das weniger mit dem weniger zu tun haben. Es gibt allerdings schon diese EMMCs, das sind die Embedded Variante davon, die am Device draufgelötet wird. Und da gibt es das definitiv. Das ist meines Wissens nach etwas, was Android teilweise verwendet, neueren Android Phones. Google verkauft, das ist File based Encryption. Da haben sie dann auch hardware Komponenten dabei. Das heißt, da machen sie die die Kryptographie selber dann wirklich in der Hardware. Der Trick ist aber nach wie vor nur das, was ich vorher gesagt habe. Den Schlüssel dazu, den hat das Betriebssystem außerhalb liegen. Da habe ich wieder dasselbe Thema, wo.",
+      "start": 2674478,
+      "end": 2708948,
+      "confidence": 0.8761616,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Ich schon diese micro SD Karten und so weiter angesprochen habe. Die kommen oft natürlich irgendwelchen IoT Devices zum Einsatz. Was für ein Übergang. Ich bin selbst ein bisschen stolz auf.",
+      "start": 2708964,
+      "end": 2717588,
+      "confidence": 0.9205958,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Mich, aber nun gut, Meister der Übergänge ist unglaublich.",
+      "start": 2717604,
+      "end": 2721404,
+      "confidence": 0.9064767,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "IoT hat ja oft hoffentlich den Vorteil, dass da keine Tastatur dran ist. Das bedeutet, wir sprechen die ganze Zeit von Passwort, Ÿousand von Schlüssel.",
+      "start": 2721532,
+      "end": 2729842,
+      "confidence": 0.8646232,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Vorteil oder Nachteil?",
+      "start": 2729986,
+      "end": 2731170,
+      "confidence": 0.95494336,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Na ja, Vorteil, wenn jedes iot Gerät eine Tastatur hätte, dann wie groß werden die ganzen iot Geräte? Ich weiß nicht, es gibt zwar, wie wir gelernt haben, auch 60, 40 und 45 % Tastaturen, aber auch dann hätte.",
+      "start": 2731250,
+      "end": 2743578,
+      "confidence": 0.8997531,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Ich ja keinen Vorteil. Ich hänge dann immer so vor so Devices rum und denke mir dammit, jetzt wäre eine Festplatte fallen und ein Bildschirm, wenn irgendwas mit Netzwerk nicht funktioniert oder so. Aber okay, anderes Thema.",
+      "start": 2743594,
+      "end": 2753562,
+      "confidence": 0.8763935,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Ich kotze auch immer, wenn ich mein WLAN Passwort irgendwo eingeben muss. Aber irgendein Display, wo die Tastatur grausam ist, eine digitale Tastatur. Naja, wie dem auch sei. Aber wie läuft das denn bei IoT Geräten, wo man jetzt eigentlich gar kein Passwort eingeben kann? Also ich rede jetzt mal von einem Smart M für Stromzählung oder ähnliches. Also das fällt mir jetzt gerade zumindestens ein.",
+      "start": 2753626,
+      "end": 2771578,
+      "confidence": 0.8916398,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Die Grundfrage ist, ich habe das eh schon vorher erwähnt, die Grundfrage ist, braucht man Verschlüsselung? Wenn man sich wirklich, wirklich sicher ist, dass man Verschlüsselung braucht, ist die nächste Frage, die ich dann meistens stelle, braucht man Full Disk Encryption oder braucht man einfach nur ein paar config Dateien verschlüsseln? Das heißt, an der Stelle gibt es schon mehrere Varianten, wo ich an. Allerdings auf der anderen Seite gibt es natürlich schon, und das haben wir auch schon geredet, diese Integritätsprüfung der Festplatte, das heißt, die erfordert ja auch eine gewisse Art von Schlüssel. Vor allem, wenn ich lesen und schreiben auf die Festplatte will, dann will ich diesen Schlüssel ja im Betriebssystem verfügbar haben, dass wenn ich schreibe und irgendwie den Inhalt der Festplatte update, diesen Schlüssel habe. Und an der Stelle muss ich den, muss ich mir überlegen, wo lege ich den Schlüssel eigentlich auf? Bei der Eingabe vom Passwort leite ich den ja ab, den Encryption Key. Und im embedded Bereich, wie ihr schon gesagt habt, habe ich das ja. Das heißt, da nutzt man dann eben, wie wir schon erwähnt haben, TPM Chips oder ähnliches, die mir die Option bieten, die Trustzone, die genau dasselbe kann, die mir die Option bieten, meine Key Materialien, also meinen geheimen Schlüssel, dahin zu geben, der zu sagen, bitte verschlüsseln wir den und gib mir die verschlüsselte Variante, dass wenn ich es wieder brauche, gebe diesen verschlüsselten Blob an, an die Trustzone, an den TPM Chip, der entschlüsselt den und gibt mir den Plaintext. Im Idealfall generiere ich den Schlüssel auch auf dem Chip, das heißt, ich gehe her und sage, bitte, ich brauche einen neuen Schlüssel, lieber Chip, generiere mir den und der Chip gibt mir dann den verschlüsselten Block. Dann verlasst dieser Schlüssel nie diesen Chip, zumindest im Playtext.",
+      "start": 2771634,
+      "end": 2856158,
+      "confidence": 0.8764976,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Aber ich habe natürlich immer noch dieses Problem, dass wenn ich dann an der Hardware, wenn ich Zugriff habe auf die Hardware, dass sie dann natürlich sehr wohl in irgendeiner Form das auslesen könnte. Und also das verhindert mir eigentlich gar nichts, weil so ein IoT Device ist ja auch normal immer eingeschalten und ich kann dann dementsprechend auch zugreifen, oder?",
+      "start": 2856254,
+      "end": 2874146,
+      "confidence": 0.9113667,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Genau, das Grundproblem bei dem Ganzen ist, der Chip selber kann ja quasi diesen Mechanismus vom Verschlüsseln eines Keymaterials machen. Er gibt mir am Ende aber dann diesen diesen Schlüssel ja dann raus, wenn ich den für die Disk Encryption oder für ähnliches verwende. Das heißt, es funktioniert ja nur dann gut, wenn ich den Key immer nur in der Trustzone oder im TPM Chip drinnen halte und alles an Operationen, wie eben meine Inhalte von der Festplatte verschlüsseln über den Chip. Ein TPM Chip kann das aber in der Performance, in der es für Festplatten braucht, nicht.",
+      "start": 2874218,
+      "end": 2902906,
+      "confidence": 0.88769346,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Das heißt, es ist nur in Kombination dann eigentlich sinnvoll, wenn ihr auch überprüft, dass nichts manipuliert wurde, weil sonst könnt ihr einfach was manipulieren in der Software und dann dementsprechend auf die Daten auch zugreifen.",
+      "start": 2902978,
+      "end": 2913362,
+      "confidence": 0.8751514,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Genau. Ich will im Endeffekt immer zusätzlich zu dem Ganzen die Integrität von allem, was auf meinem System läuft, schützen. Das heißt, ich will sicherstellen, dass der Prozess, der da gerade läuft oder der Kerl, der läuft, definitiv, definitiv von mir kommt als Hersteller und nicht irgendwie manipuliert.",
+      "start": 2913426,
+      "end": 2928950,
+      "confidence": 0.8912948,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Nach deiner Erfahrung, du sagtest gerade schon, braucht man überhaupt Verschlüsselung? Nach deiner Erfahrung, was sind IoT Devices, wo Verschlüsselung wirklich sinnvoll ist bzw. Welche welche Arten von IoT Devices brauchen sowas?",
+      "start": 2929030,
+      "end": 2941438,
+      "confidence": 0.9092831,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Im Prinzip brauche ich es relativ selten für gewisse Dinge, aber nicht für alles. Das heißt, mein Dateisystem, wo meine Shell drauf ist, wo meine Binärdateien für meine Zweitausendein, für mein Kernel, für meine Prozesse drauf ist, die brauche ja prinzipiell nicht verschlüsseln, weil da brauche ich diese. Wo ist aber schon brauche, ist vielleicht bei einem Konfigurationspfeil, wo irgendein Passwort für keine Ahnung, mein iot backend in der Cloud drinnen steht oder wo mein private Key für Zertifikat drinnen für diese Dinge brauche ich also im Prinzip kann man so sagen, alles was im Bereich Key Storage oder Secret Storage ist, in dem Fall will ich das haben. Für den Rest des Betriebssystems würde ich jetzt einfach mal sagen, brauchen es eigentlich nie zweitausendeinfünf, außer es gibt schon so Sonderfälle, die wir auch schon öfter gesehen haben. Die Sinnhaftigkeit sei dahingestellt. Compliance Vorgaben. Es gibt halt irgendwelche Compliance, die ich erfüllen muss, die sagt, du musst alles verschlüsseln, das heißt, dass du die compliance Zertifizierung kriegst, musst du das machen. Da kann man dann jetzt die Compliance Zertifizierung in Frage stellen oder eben auch Intellectual Property. Das heißt, es gibt durchaus auch Kunden, die dann gewisse Programme oder keine Ahnung, Firmware für irgendwelche fpgas oder sonstige Dinge haben, die sensibel sein und die sie vor Diebstahl durch Konkurrenz oder sonst wen schützen wollen.",
+      "start": 2941494,
+      "end": 3014526,
+      "confidence": 0.8766882,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Und dann werden die was ist FPGA.",
+      "start": 3014558,
+      "end": 3016886,
+      "confidence": 0.8658843,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Field programmable Array, glaube ich. Also das ist im Prinzip programmierbarer Tipp. Das ist dann schon wieder sehr low level.",
+      "start": 3017038,
+      "end": 3023022,
+      "confidence": 0.9063995,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Da sieht man, dass der Andi aus der War aus der Webwelt kommt.",
+      "start": 3023086,
+      "end": 3025638,
+      "confidence": 0.86167383,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Ich habe es in meiner Ausbildung gemacht, auch Platinen geätzt und allem drum und dran und auch mit eeproms und allem drum und dran, aber ist schon alles ein paar Jährchen her und wenn man es nicht macht, dann ist es glaube ich wie mit allem, man verlernt. Aber ich glaube mit der Verschlüsselung der IoT Devices, ich glaube, da kommt es ein bisschen auch auf die Industrie an. Ich kann mir schon vorstellen, wenn ich jetzt irgendwie an die Software oder an die Speicherkarte von einer, keine Ahnung, Rakete komme, wie diese gelenkt wird. Ich glaube, dass das schon, wenn diese Rakete dann, weiß ich nicht, nicht explodiert und in gegnerische Hände kommt, dann kann das natürlich dann schon, ich sag mal, ein bisschen schwieriger werden, also im Defense Bereich. Aber gut, scheint dann eher, hoffe ich zumindest, ein Spezialfall zu sein.",
+      "start": 3025694,
+      "end": 3063590,
+      "confidence": 0.9052018,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Also wenn ihr das richtig verstehe, dann geht es auch da wiederum bei den IoT Devices, dass es weniger die Daten sind, die das IoT Device generiert oder so, sondern eher so diese Schlüssel, um dann mit dem Backend zu kommunizieren oder dass das ein Einfallstore ist, um überhaupt in ein Netzwerk reinzukommen. Also solche Dinge, wo ich dann weiter springen kann als Hop sozusagen.",
+      "start": 3063710,
+      "end": 3085586,
+      "confidence": 0.88693863,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Genau, es kann natürlich schon sein, dass sie, dass ich aus Datenschutzrichtlinien bereichen die Anforderungen habe. Also da macht es ja dann schon Sinn, wenn jetzt z.B. beim Stromzähler zu bleiben, mein Stromzähler lokal auch speichert, wieder Strom verbrauche und das über das Netzwerk vielleicht irgendwann Schnittstelle hat, wo ich potenziell da reinkommen könnte, um das auszulesen. Klingt jetzt vielleicht ein bisschen konstruiert, aber die Smart M sind ja doch vernetzt und haben Schnittstellen nach außen, das heißt, vielleicht will ich da an der Stelle auch ansetzen, aber im Zweifelsfall ist es mein eigener Inhalt, der, den ich da klauen darf.",
+      "start": 3085658,
+      "end": 3117694,
+      "confidence": 0.8432375,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Aber jetzt noch mal so konkrete Frage, nur damit ich das verstehe. Wenn jetzt so Smart M hätte und ich habe da jetzt meine eigene Firmware und ich spiele diese eigene Firmware drauf, wird es irgendwie verhindert? Verhindert mir das so ein secure Boot dann?",
+      "start": 3117822,
+      "end": 3132872,
+      "confidence": 0.879608,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Ja, genau. Im Endeffekt müsste die signiert sein. Also im Prinzip, es gibt eine Signaturprüfung. Secure Boot an sich, um das jetzt einmal als Überbegriff zu verwenden, funktioniert auf meistens dieselbe Art. Das heißt, es gibt jedes Binary hat eine Signatur dabei. Als Entwickler, wenn man App entwickelt, kennt man das z.B. unter iOS Android wahrscheinlich auch. Das heißt, man muss seine App signieren, dass sie erst vom Betriebssystem ausgefährdet. Unter Windows gibt es genauso unter Mac und beim Boot Prozess selber gibt es das natürlich auch. Das heißt, mein Bootloader, mein Kernel und alles was dazu gehört, müssen dann auch signiert sein. Und jeder Step in diesem Boot Vorgang prüft vom nächsten Schritt vorher die Signatur bevor startet. Und somit wird dein Firmware gar nicht drauf kommen oder gar nicht ausgeführt werden, weil du die Signatur nicht erzeugst.",
+      "start": 3132976,
+      "end": 3179926,
+      "confidence": 0.89267933,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Kann aber ich muss dem Ding ja irgendwann einmal sagen, was eine gültige Signatur ist mit irgendeinem Schlüssel.",
+      "start": 3179968,
+      "end": 3184682,
+      "confidence": 0.8694111,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Genau.",
+      "start": 3184746,
+      "end": 3185266,
+      "confidence": 0.87463,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Im Endeffekt könnt ihr den nicht auch.",
+      "start": 3185378,
+      "end": 3187146,
+      "confidence": 0.8270957,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Überschreiben, der Schmied auch ist. Also man verwendet da Public private Keys. Das heißt, es gibt dann in der Hardware nur den public Key, den private Key gibt es nicht. Das heißt, ihr habt schon einmal die Möglichkeit, gar nicht den Key zu klauen.",
+      "start": 3187178,
+      "end": 3198034,
+      "confidence": 0.8952611,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Ja, ich könnte den public Key überschreiben mit meinem eigenen Public Key, oder?",
+      "start": 3198122,
+      "end": 3202162,
+      "confidence": 0.9091108,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Genau, für das gibt es aber eigene Hardware in die. Das sind die sogenannten e Fusers. Das heißt, das ist wirklich ein Speicherbereich, der minimal ist, den man aber nur einmal schreiben.",
+      "start": 3202226,
+      "end": 3211070,
+      "confidence": 0.85472095,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Ah, okay. Das heißt bei mir das Zertifikat geklaut wird und ich würde gern neues verwenden als Firma, dann müsst ihr meine gesamten Smart Meters alle wegschmeißen und neue kaufen.",
+      "start": 3211170,
+      "end": 3222358,
+      "confidence": 0.846076,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Genau. Diese e Views haben dann, also ich kenne einen Recht in der industriegängigen Chip, der hat genau vier solche Speicherbereiche, da kann ich vier Zertifikate, also vier Public Keys einspeichern und wenn ich die vier verbrannt habe, ist das Gerät verbrannt. Ah, okay.",
+      "start": 3222414,
+      "end": 3236222,
+      "confidence": 0.8589109,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Und dann speichere ich schon vorab vier drauf, falls mir einer geklaut wird. Obwohl kann ich den ja deaktivieren, irgendwie remote.",
+      "start": 3236246,
+      "end": 3243178,
+      "confidence": 0.87122285,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Ich muss. Und das haben die Systeme dann auch. Ich habe dann ein paar Bits, wo ich dann quasi die invalidieren kann.",
+      "start": 3243234,
+      "end": 3249426,
+      "confidence": 0.9076891,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Okay, okay. Ja, interessant. Dann gehen wir schon sehr tief.",
+      "start": 3249498,
+      "end": 3254226,
+      "confidence": 0.876785,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Aber wenn das IoT Device, wovon wir gerade reden, halt in the wild ist, das bedeutet bei irgendwelchen Kunden installiert, ist natürlich schon ein Riesenaufwand, ich sag mal eine sogenannte Rückrufaktion zu starten und zu jedem Kunden zu gehen, besonders wenn es jetzt ein Smart M ist, der am Hausanschlusskasten des Stroms oft hängt, ist natürlich dann schon eine riesen Hausnummer, riesen kostentechnisch. Da kannst du lieber ein paar mehr Keys da reinsetzen und eine kleine Logik implementieren, wie du die deaktivierst, oder?",
+      "start": 3254338,
+      "end": 3278586,
+      "confidence": 0.89525384,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Genau, also eben, das ist genau das, was man normalerweise macht und zusätzlich natürlich die internen Prozesse so aufsetzt, dass dieser Private Key ja nie verloren geht.",
+      "start": 3278658,
+      "end": 3287202,
+      "confidence": 0.96171373,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Das heißt aber auch, wenn ich es schaffen würde, alle Keys zu deaktivieren, irgendwie mit einer Software oder so, dann hätte ich einen guten Hebel und könnte die die ganze Firma erpressen, oder ich könnte alle deine Devices quasi vernichten, oder? Also ich glaube da zu viel böse Energie gerade. Aber nur so theoretisch.",
+      "start": 3287266,
+      "end": 3303884,
+      "confidence": 0.88018256,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Das gesunde Paranoia heißt es, oder? Im Prinzip müsstest du das auf der auf großer Skala machen können. Das heißt, wenn du dein Smart M daheim hast, mit deinem Smart M daheim kannst, kannst du nur die selber in den Fuß schießen quasi. Wenn du das auf großer Ebene machen kannst und das für mehrere gleichzeitig machen kannst, dann natürlich.",
+      "start": 3304012,
+      "end": 3322460,
+      "confidence": 0.84876883,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Jetzt gerade kurz zur Erklärung, weil man immer Smart M verwenden als Beispiel. Wird es wirklich so gemacht? Weißt du das bei Smart M?",
+      "start": 3322540,
+      "end": 3329152,
+      "confidence": 0.8795904,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Smart M direkt habe jetzt noch nicht in der Hand gehabt, aber es wird in der Industrie die System on Chips, also diese ARM Prozessoren sind es meistens, die man da hat im Embedded Bereich, die können das alle auf die eine oder andere Art. Das variiert dann je nach Hersteller, aber im Endeffekt gibt es das und gemacht werden, da kann man jetzt dann in die Theorie Dinge wie Cyber Resilience Act und gerade wenn man Smart M Bereich sein, dann auch die das NIS Gesetz, also das nationale Informationssicherheitsgesetz, die fordern das dann auch, dass man dementsprechende Sicherheitsmechanismen hat, die eben genauso diese Dinge verhindern.",
+      "start": 3329256,
+      "end": 3364858,
+      "confidence": 0.87164044,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Ja, mein Smart M hat auf jeden Fall so ein Ding, zumindest behaupten sie es, dass man, wenn man irgendwie dran rüttelt oder es aufschraubt oder so, dass das irgendwie an die Zentrale gesendet wird. Ob das stimmt, keine Ahnung, aber sie behaupten es mal.",
+      "start": 3364954,
+      "end": 3376674,
+      "confidence": 0.883314,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Ich finde das schön, dass meine Art von Job Site Reliability Engineering anscheinend auch bei der Verschlüsselung Anwendung findet, weil man sagt auch, ja gut, wenn man halt den Key oder der wurde gestohlen oder was heißt der, gell? Ich habe ja noch drei weitere. Finde ich sehr schön, auch irgendwie so ein bisschen Wild Wild West, aber nun gut. Aber ich glaube, wenn man, ich finde es wenigstens schön, wenn man darüber nachdenkt, wenn man vier Keys in der Hardware implementiert hat oder beziehungsweise auf dem IT Device vorliegen hat, dann ist es, man rechnet ja schon irgendwie damit, dass was passiert, oder? Also ich meine, ich finde das gut, weil man beugt ja vor, so ist das nicht. Also Kudos für Leute, die das alles ausgedacht haben.",
+      "start": 3376722,
+      "end": 3412830,
+      "confidence": 0.8677023,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Ich finde das an sich schon schlau, dass man sich darüber Gedanken macht. Ich weiß, ihr Deutschland kennst es nicht mit so Smart M Rollout, das ist euch kein Begriff, aber wenn man so Millionen von Devices ausrollt, dann ist schon schlau, sich im Vorfeld vielleicht sowas zu überlegen und es vielleicht schon mit mehr Schlüsseln oder so auszurollen. Also ist durchaus smart beim Smart M.",
+      "start": 3412870,
+      "end": 3432088,
+      "confidence": 0.8772356,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Ja, wir sind halt, wir sind halt nicht immer die early Adopter und bei.",
+      "start": 3432144,
+      "end": 3435096,
+      "confidence": 0.93386,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Sehr vielen Dingen sind wir leider smart M ist neue Erfindung, das stimmt schon.",
+      "start": 3435128,
+      "end": 3438832,
+      "confidence": 0.8101243,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Das braucht schon. Lass uns mal ein bisschen weg von von IoT gehen und zwar Ÿousand. Lass uns mal zu dem letzten Punkt dieser Podcast Episode kommen. Die praktischen Tipps, was ich als einfacher Heimanwender so machen kann. Was du mir rätst, David. Also ich meine, fangen wir mal an. Wie kann ich überhaupt überprüfen, ob meine Festplatte bereits verschlüsselt ist oder nicht? Also dass ich jetzt z.B. gegen den Laptop Diebstahl, den dem Wolfgang passiert ist, den würde ich natürlich nicht unerwähnt lassen, wirklich geschützt bin.",
+      "start": 3438856,
+      "end": 3465950,
+      "confidence": 0.8752512,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Ja, das einfachste wäre natürlich nachzuschauen, je nach Betriebssystem, ob das aktiviert ist. Dann muss ich dann dem Betriebssystem vertrauen. Wenn ich dann dem nicht vertrauen will, dann kann ich natürlich schon hergehen und die Festplatte einfach direkt auslesen. Und zwar beim Laptop die Festplatte ausbauen, woanders anstecken, ohne das Passwort einzugeben, einfach mal die Daten auszulesen von der Festplatte. Und bei einem guten Verschlüsselungsalgorithmus und eben der erwähnte AES XTS modus, der eigentlich default ist, so gut wie überall, der macht es auch dann so, dann schauen die Daten relativ zufällig aus. Also das ist dann wirklich aus der Statistik saubere Gleichverteilung. Das heißt, ich kann dann wirklich auch Statistik schauen, was die Bytes, die auf der Platte da drauf sind, für einen Wert haben und kann das dann irgendwie statistisch auswerten und sieht das dann alle irgendwie ungefähr gleich aus. Der praktische Tipp ist ein Disk dump machen, also das dd Kommando unter Linux, das ganze reinpipen in z.B. des Kommando Strings, das dann nach lesbaren Strings sucht und dann sollte da keinen leserlichst außer geben.",
+      "start": 3466070,
+      "end": 3521716,
+      "confidence": 0.8730128,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Jetzt habe ich festgestellt, meine Festplatte ist nicht verschlüsselt, kann ich die ganze Sache nachträglich machen und muss ich jetzt hier komplett Format C, wie das damals bei Windows hieß, einmal formatieren und alles neu.",
+      "start": 3521748,
+      "end": 3531300,
+      "confidence": 0.901868,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Aufsetzt nachträglich geht eigentlich immer. Bei Linux geht es nicht on the fly, bei macOS und Windows kann man das sogar on the fly aktivieren. Zumindest beim Mac war sie von früher sogar, da war das standardmäßig nicht aktiviert. Das heißt, man hat dann dieses FileVault heißt unter Mac aktiviert und dann hat er im Hintergrund einfach, das hat ein bisschen Performance gefressen, aber im Endeffekt hat er im Hintergrund die Festplatte, wo man allerdings aufpassen sollte, das weiß auch nicht jeder, gerade bei SSDs und den NVMe Discs ist es so, dass die intern ja Firmware oder Logik drinnen haben, die quasi mit diesen mit diesem Speichermedium, also diesen rohen nennt Chips redet und die dann nochmal gewisse Optimierungen macht. Das heißt im Endeffekt habe ich brutto mehr Speicher auf der Festplatte, als ich dem Betriebssystem verfügbar habe oder als die Firmware dem Betriebssystem sagt. Und nachdem so ein nennt Speicherblock gerne mal kaputt geht oder halt einmal Lesefehler hat, die teilweise korrigiert werden können, aber wenn der, wenn der zu oft gelesen und geschrieben wird zweitausendein, dann wird der schlecht und ist dann immer zu verwenden. Und um die Lebensdauer zu erhöhen, hat man da mehr Speicher drinnen. Das heißt aber, die Firma ist so optimiert, dass sie das nicht löscht, wenn also so ein Speicherblock nicht löscht, wenn er kaputt geht. Das heißt, die kann definitiv, wenn ich da mal sensible Informationen drauf gehabt habe und die aktiviere im Nachhinein die Verschlüsselung, kann definitiv da noch Speicherblöcke haben, die eventuell sensible Informationen enthalten. In der Theorie, in der Praxis kommt es darauf an. Aber Wolfgang, selbst wenn du dann zweitausendein nachträglich die Verschlüsselung aktiviert hätte schätzen können, dass das eine oder andere doch noch auf der Festplatte verfügbar gewesen ist.",
+      "start": 3531340,
+      "end": 3619722,
+      "confidence": 0.86950266,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Und was würdest du jetzt so als Minimalvariante empfehlen an Sicherheit, wenn ich jetzt so als normal User, der jetzt vielleicht nicht gerade im Sicherheitsbereich unterwegs ist, einfach mein Laptop aufsetze, was sollte ich aktivieren?",
+      "start": 3619786,
+      "end": 3633890,
+      "confidence": 0.8462063,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Also Festplattenverschlüsselung macht auf jeden Fall Sinn, wenn man es aktiviert. Man sollte sich aber im Endeffekt bewusst sein, Ÿousand, dass es nicht jetzt vor allem schützt. Das heißt die Flughafenkontrolle, die wir erwähnt haben, oder den Laptop im Hotelzimmer liegen lassen. Es gibt definitiv Szenarien, wo es nicht schützt, wenn man jetzt dann ins Detail geht, beim Algorithmus selber, den ich verwenden will, der Default Algorithmus ist eigentlich immer der beste und das einzige, wo ich es auswählen kann, ist unter Linux, denn bei den anderen gängigen Betriebssystemen ist das eh vorgehen.",
+      "start": 3633970,
+      "end": 3660360,
+      "confidence": 0.88408667,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Und die Integrität, kann ich das irgendwie einfach so als normalsterblicher auch aktivieren oder irgendwie checken oder.",
+      "start": 3660400,
+      "end": 3668304,
+      "confidence": 0.84718233,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Du meinst ohne Nagellack, oder?",
+      "start": 3668432,
+      "end": 3670048,
+      "confidence": 0.932098,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Genau, also jetzt genau eher auf Software Seite.",
+      "start": 3670144,
+      "end": 3673216,
+      "confidence": 0.7481387,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Ja, also im meisten Fall mit Linux muss man ja sehr viel noch selber machen, das heißt, da will ich dann eben Secure Boot aktivieren. Unter Windows ist Secure Boot standardmäßig meines Wissens aktiv und macOS macht glaube ich was. Das heißt, an der Stelle ist man da schon sehr gut unterwegs. Was man aber schon auch an der Stelle nur sagen sollte, die Festplattenverschlüsselung ist irgendwie so das letzte Ding, was ich machen kann. Das heißt, die Festplattenverschlüsselung ist ja recht grobkörnig, das heißt, das gesamte Speichermedium und gerade bei Laptops oder bei z.B. multiuser Systemen, ob das jetzt ein Server ist oder was ähnliches, ich habe doch unterschiedliche Prozesse mit unterschiedlichen Usern. Wenn da jetzt ein Prozess, ich nehme jetzt den Webserver als Beispiel, der Webserver läuft als gewisser User, der hat wenig Privilegien, das heißt, heißt, wenn ich da irgendwie ein Remote Code Execution drinnen habe und jemand einbricht, dann ist er ja schon im System drinnen und die Festplattenverschlüsselung haben wir ja schon eingangs erwähnt, wenn die einmal entsperrt ist, dann ist die ganze Festplatte lesbar. Das heißt, da hilft mir auf Betriebssystemebene halt dann nur die File Permissions, aber mehr, also die Festplattenverschlüsselung selber schützt mich nicht. Es gibt da definitiv bessere Varianten, wie man das lösen kann, das heißt, man setzt auf höheren Ebenen an, z.B. man verschlüsselt spezifisch, je nach Use Case und man hat da dafür eigene Schlüssel. Smartphones machen das z.B. also Android hat z.B. pro User einen eigenen Schlüssel, mit dem es die Daten dieses Users verschlüsselt. Der verschlüsselt einerseits die gesamte Festplatte, aber oben drüber hat er noch einen zweiten Layer an Verschlüsselung, der nur die Userdaten dieses einen Users und da kommt dann das User Passwort, ob das jetzt die Wischgeste, der Fingerabdruck oder Passcode, das kommt dann an der Stelle aus.",
+      "start": 3673248,
+      "end": 3768608,
+      "confidence": 0.8685372,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Man kann natürlich auch einzelne Dateien natürlich nochmal verschlüsseln. Also ich mache das ganz gern, wenn ich irgendwo was in der Cloud oder so liegen habe, wo ich nicht weiß, was damit mal passiert, dann kann ich das einfach noch mal gpg verschlüsseln oder so und der Passphrase liegt dann in meinem Passwortmanager.",
+      "start": 3768704,
+      "end": 3783144,
+      "confidence": 0.8791936,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Genau, ist definitiv die die sinnvollere Variante, um das nochmal zusätzlich abzusehen.",
+      "start": 3783232,
+      "end": 3787360,
+      "confidence": 0.79183835,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Obwohl natürlich dann auch Cloud Speicher, ich sag mal Amazon S und Co natürlich auch immer zumindest auf ihrer Marketingseite eine Art von Verschlüsselung vorgeben, oder? Ich meine, oder würdest du dann empfehlen, okay, ich würde mich jetzt nicht auf die Herstellerseite der Verschlüsselung verlassen, sondern ich würde es eher dann so wie Wolfgang machen, ich verschlüssel meine Daten noch mal aktiv.",
+      "start": 3787400,
+      "end": 3805464,
+      "confidence": 0.9043429,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Ja, prinzipiell, wenn es wirklich sensible Daten sind, würde ich immer zusätzlich noch Verschlüsselung einziehen, wo ich selber den Schlüssel habe, wo ich wirklich selber kontrolliere, welcher Algorithmus das ist oder auch welches Verfahren, also welches Tool ich verwende und wo den Schlüssel nur ich selber in der Hand.",
+      "start": 3805552,
+      "end": 3820368,
+      "confidence": 0.8843894,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Also das war ja eigentlich auch mein Glück, dass ich genau diese Daten, das waren. Ich war kritische schon auf diesem Laptop, aber die waren PGP verschlüsselt, oder?",
+      "start": 3820424,
+      "end": 3829380,
+      "confidence": 0.8626854,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "PGP ist der Standard und GPG ist ja die Open Source, zweitausendein Source Implement.",
+      "start": 3831520,
+      "end": 3836246,
+      "confidence": 0.8347457,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Okay. Genau, aber damit habe ich dann kein Problem, weil auch es kann ja dein Passwort geklaut werden von deinem s Speicher oder von deiner Cloud. Also da hilft dir die Verschlüsselung auf deren Seite ja gar nichts. Wenn du aus irgendeinem Grund oder sonst in irgendeiner Form gehackt wirst, dann bist du da wenigstens noch auf der sicheren Seite oder deine Session in irgendeiner Form geklaut.",
+      "start": 3836318,
+      "end": 3855390,
+      "confidence": 0.9229291,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Passwort, gutes Stichwort. Was mache ich, wenn ich jetzt der Idiot bin, der seine Schlüssel verloren hat bzw. Wie Würdestausend du mir empfehlen, mein Passwort bzw. Schlüssel aufzubewahren? Empfiehlst du mir das Passwort am Bildschirm? Das Post it am Bildschirm natürlich nicht.",
+      "start": 3855470,
+      "end": 3870890,
+      "confidence": 0.8556288,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Am besten dem Freund weitergeben.",
+      "start": 3872430,
+      "end": 3874410,
+      "confidence": 0.919704,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Aber ich bin ja vertrauenswürdig. Das ist schon okay.",
+      "start": 3876150,
+      "end": 3878446,
+      "confidence": 0.86318445,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Stimmt, stimmt. Also prinzipiell das Passwort selber ist natürlich das ausschlaggebende und das Passwort, auf dem ist das ganze aufgehängt. Es gibt natürlich sehr wohl Möglichkeiten, gerade unter Linux hat man recht viele Varianten, wie man das machen kann. Also das ist das klassische DMcrypt, von dem wir schon gesprochen haben. Das kann ja auch dann den Encryption Key aus dem Passwort und noch am anderen Teil, also Pfeil oder so ableiten. Das heißt, das macht ja auch wieder Sinn. Da habe ich halt eine Kombination, da brauche ich mehr, um das zu entschlüsseln. Ich kann aber dann beim DM Crypt, wenn ich es mit dem Standard Lux nennt sich das, fragt mich nicht, wofür das steht, ich habe keine Ahnung, aber das ist der Standard, wenn man Disk Encryption aktiviert und der Linux. Das heißt, das hat dann nochmal die Möglichkeit, mehrere Key Slots, also mehrere Keys zu hinterlegen und ich kann dann quasi am Backup kennen. Das heißt, ich habe meinen normalen Key, mit dem ich entschlüssel und ich habe dann ein Backup Key, den ich da haben bei mir zu Hause in Safe Lake z.B. ausgedruckt. Bei Windows und Co. Kann man natürlich schauen, was die bieten. Da kann man selber jetzt weniger machen. Im Zweifelsfall. Paper Key, also wirklich auf Papier aufschreiben und dementsprechend dann irgendwo sicher ablegen, physisch sicher ablegen.",
+      "start": 3878518,
+      "end": 3940644,
+      "confidence": 0.86949116,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Was was mir nicht so ganz klar ist mit diesen Backup Keys oder mit diesen zusätzlichen Keys. Warum habe ich das überhaupt zusätzlich, also wenn ich, wenn ich da sowieso vollen Zugriff bekommen über so einen Zusatz Key wieder auf die Daten, warum kann ich mein eigentliches Passwort genauso in safe legen? Also warum trennt man das überhaupt?",
+      "start": 3940732,
+      "end": 3957326,
+      "confidence": 0.8848095,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Die Trennung ist in dem Fall gar nicht so essentiell. Ist im Endeffekt eigentlich dem geschuldet, dass es mehr User Systeme gibt. Das heißt jeder User kann mit seinem Passwort das entschlüsseln. Das heißt klassisches Linux, wenn ich es mit Ubuntu oder sonstiges installiere, dann ist das ja schon so gemacht, dass im Prinzip einmal das Passwort eingeben und das wird weitergereicht. Beim Mac z.B. ist es genauso. Ich gebe mein Login Passwort vom Betriebssystem ganz am Anfang beim Bootvorgang ein. Das heißt, es wird von ganz am Anfang vom Boot Vorgang, vom Bootloader weitergereicht bis ins Betriebssystem hinein und das loggt mir dann automatisch ein und im Endeffekt ist das eine Convenience Funktion.",
+      "start": 3957438,
+      "end": 3993110,
+      "confidence": 0.87657684,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Ich hatte ganze Zeit lang ein Bankschließfach und da hatte ich solche wichtigen Passwörter in Papierform ausgedruckt.",
+      "start": 3993270,
+      "end": 4000934,
+      "confidence": 0.91890234,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Und jetzt hast du es unter dem Blumentopf liegen.",
+      "start": 4001022,
+      "end": 4003854,
+      "confidence": 0.8715,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Nee, nee, nee, nee. Ich glaube eine Kopie habe ich bei den Schwiegereltern, falls das Haus mal abbrennt oder so.",
+      "start": 4003982,
+      "end": 4010126,
+      "confidence": 0.9170575,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Du hast aber ein Vertrauen. Blindes Urvertrauen.",
+      "start": 4010318,
+      "end": 4013686,
+      "confidence": 0.8657671,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Also ich glaube das kann man kann man schon machen. David, vielen lieben Dank, dass du mir auch so ein bisschen Kopfkino erzeugt hast. Besonders hier mit der Evil made Attack und der Coldboot Cold Start Attack mit dem mit dem Stickstoff. Für mich erinnert das irgendwie so ein Mission Impossible an so einen Hollywood Film. Aber okay, wenn es das wirklich gibt. Ich hoffe, ich bin niemals ein so attraktives Ziel, dass ich Nagellack auf meine Laptop Schrauben wie soll man sagen verteilen muss, um dann das glitzer Schema zu kontrollieren, nachdem ich durch eine Flughafenkontrolle gegangen bin.",
+      "start": 4013878,
+      "end": 4047340,
+      "confidence": 0.88457656,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Übrigens, da fällt mir gerade ein, kurz noch mal reinzugrätschen, weil wir gerade die ThinkPad Episode aufgenommen haben. Mein ThinkPad checkt irgendwie, wenn du es öffnest, also das kannst du wahrscheinlich auch irgendwie umgehen, wenn du zweitausendein das irgendwie aufbrichst, aber wenn du scheinbar normal aufmachst und und jetzt nichts zerstörst, dann checkt das ist bios, dass es geöffnet wird.",
+      "start": 4047880,
+      "end": 4067510,
+      "confidence": 0.83811,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Das weißt du woher? Von der Marketing steht im BIOS.",
+      "start": 4067550,
+      "end": 4070350,
+      "confidence": 0.85847,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Also im BIOS kannst du es einstellen, ob ob dann irgendwas deaktiviert wird, glaube ich dann dann kannst du gar nichts mehr booten oder so, sobald es einmal.",
+      "start": 4070470,
+      "end": 4076926,
+      "confidence": 0.8407811,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Geöffnet oder so ähnlich.",
+      "start": 4076958,
+      "end": 4077734,
+      "confidence": 0.86361,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Hast du das aktiviert?",
+      "start": 4077782,
+      "end": 4078930,
+      "confidence": 0.8722375,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Gute Frage, weiß ich gerade auswendig nicht.",
+      "start": 4079670,
+      "end": 4082438,
+      "confidence": 0.92047,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Ich fände es schön, wenn du es aktivierst und dann irgendwie weiß ich nicht deine deine Festplatte vergrößern möchtest, du dir deswegen bei Amazon eine neue kaufst und dann denkst oh, jetzt kann ich nicht mehr booten.",
+      "start": 4082614,
+      "end": 4090694,
+      "confidence": 0.84531593,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Ja, also Keine Ahnung, ob man es dann wieder. Ich glaube, es gibt so ein Admin Passwort dann, um das wieder dann eben freizuschalten. Aber ich glaube, so standardmäßig wird dann alles deaktiviert.",
+      "start": 4090742,
+      "end": 4099574,
+      "confidence": 0.927427,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Zurück zu David. Vielen lieben Dank, dass du uns ein bisschen über das Thema disk Encryption, ich sag mal Wissen geteilt hast. Hast du noch etwas, was du unseren Hörerinnen und Hörern mitgeben möchtest?",
+      "start": 4099702,
+      "end": 4108798,
+      "confidence": 0.9188812,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Abschließend vielleicht nur noch, weil es der Wolfgang gerade erwähnt hat mit weil wir gerade übergelt haben, Festplatte tauschen, Backups machen, unbedingt Backups machen und Disk Encryption aktivieren hilft auf jeden Fall. Man sollte sich aber immer überlegen wofür brauche ich es wirklich und und macht das Angriffsszenario, sagen wir es mal so, wirklich Sinn?",
+      "start": 4108854,
+      "end": 4124694,
+      "confidence": 0.844676,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Thema Backup. Ich bin ein Riesenfan von von Hetzner. Da gibt es so eine Storage Box, das ist so 1 TB für unter vier im Monat bietet dir Samba SSH und SCP und SFTP Zugriff. Also du kannst dir natürlich auch eine ganz klassische 1 TB oder 2 TB Festplatte vom Media Markt holen und die dir in den Schrank legen. Aber so ein Off Site Backup nennt man das, glaube ich, wenn man das nicht neben sich liegen hat, ist eine ganz sinnvolle Investition. Und wie gesagt €4 im Monat für logisch. Das muss ich zugegeben jetzt noch mal checken, ob meine Backups wirklich verschlüsselt sind. Wenn nicht, dann muss ich das noch mal ein wollen. David, vielen lieben Dank. Mir hat sehr viel Spaß gemacht und ich hoffe allen dann auch. Und deswegen wünsche ich noch einen Schönen Tag und bis bald. Tschüss.",
+      "start": 4124782,
+      "end": 4171576,
+      "confidence": 0.8638806,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Danke. Ciao.",
+      "start": 4171648,
+      "end": 4172656,
+      "confidence": 0.8079,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Danke dir.",
+      "start": 4172728,
+      "end": 4173120,
+      "confidence": 0.90958,
+      "speaker": "B",
+      "channel": null
+    }
+  ],
+  "confidence": 0.884368,
+  "audio_duration": 4121,
+  "webhook_status_code": null,
+  "webhook_auth": false,
+  "summary": null,
+  "auto_highlights_result": null,
+  "content_safety_labels": null,
+  "chapters": null,
+  "sentiment_analysis_results": null,
+  "entities": null
+}

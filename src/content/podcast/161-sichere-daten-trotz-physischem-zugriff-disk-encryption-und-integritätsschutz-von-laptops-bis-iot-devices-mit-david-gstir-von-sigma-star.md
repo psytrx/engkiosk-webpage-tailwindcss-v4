@@ -81,7 +81,11 @@ rtlplus: ''
 six_user_needs: []
 speaker:
 - name: Andy Grunwald
+  transcriptLetter: A
 - name: Wolfi Gassler
+  transcriptLetter: B
+- name: David Gstir
+  transcriptLetter: C
 spotify: https://open.spotify.com/episode/59YPAvQvmgjxAotbwbBGDi
 tags: []
 title: "#161 Sichere Daten trotz physischem Zugriff: Disk Encryption und Integrit\xE4\
