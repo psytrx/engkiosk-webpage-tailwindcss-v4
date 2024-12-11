@@ -1,6 +1,6 @@
 ---
 advertiser: ''
-amazon_music: ''
+amazon_music: https://music.amazon.com/podcasts/c35a09fe-4116-4e04-8f68-77d61b112e46/episodes/c492cf94-3317-47d1-9412-ff00d65fd32a/engineering-kiosk-162-event-sourcing-m%C3%A4rchen-mit-golo-roden-von-the-native-web
 apple_podcasts: https://podcasts.apple.com/us/podcast/162-event-sourcing-m%C3%A4rchen-mit-golo-roden-von-the-native-web/id1603082924?i=1000679972978&uo=4
 audio: https://audio1.redcircle.com/episodes/e0ee4364-6e6a-4ce3-835f-97271cdb2028/stream.mp3
 chapter:
