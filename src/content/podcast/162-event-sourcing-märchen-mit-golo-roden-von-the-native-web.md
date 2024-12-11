@@ -27,8 +27,10 @@ pubDate: 2024-12-11 05:00:00+00:00
 rtlplus: ''
 six_user_needs: []
 speaker:
-- name: Andy Grunwald
 - name: Wolfi Gassler
+  transcriptLetter: A
+- name: Golo Roden
+  transcriptLetter: B
 spotify: https://open.spotify.com/episode/05Vaochk7q0MLcWKzwPymO
 tags: []
 title: "#162 Event Sourcing & M\xE4rchen mit Golo Roden von the native web"
