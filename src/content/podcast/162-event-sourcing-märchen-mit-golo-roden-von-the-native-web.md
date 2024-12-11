@@ -32,7 +32,9 @@ speaker:
 - name: Golo Roden
   transcriptLetter: B
 spotify: https://open.spotify.com/episode/05Vaochk7q0MLcWKzwPymO
-tags: []
+tags:
+- Backend
+- Datenbanken
 title: "#162 Event Sourcing & M\xE4rchen mit Golo Roden von the native web"
 transcript_raw: ''
 transcript_slim: ''
