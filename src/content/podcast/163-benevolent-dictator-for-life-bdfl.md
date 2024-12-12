@@ -1,6 +1,6 @@
 ---
 advertiser: ''
-amazon_music: ''
+amazon_music: https://music.amazon.com/podcasts/c35a09fe-4116-4e04-8f68-77d61b112e46/episodes/373a2bc2-39e7-4410-967f-9a6295da9aeb/engineering-kiosk-163-benevolent-dictator-for-life-bdfl
 apple_podcasts: ''
 audio: https://audio1.redcircle.com/episodes/33ddcc61-2473-47c6-b1ac-f2884917dff3/stream.mp3
 chapter:
