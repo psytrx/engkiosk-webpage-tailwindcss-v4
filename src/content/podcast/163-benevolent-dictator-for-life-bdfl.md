@@ -1,7 +1,7 @@
 ---
 advertiser: ''
 amazon_music: https://music.amazon.com/podcasts/c35a09fe-4116-4e04-8f68-77d61b112e46/episodes/373a2bc2-39e7-4410-967f-9a6295da9aeb/engineering-kiosk-163-benevolent-dictator-for-life-bdfl
-apple_podcasts: ''
+apple_podcasts: https://podcasts.apple.com/us/podcast/163-benevolent-dictator-for-life-bdfl/id1603082924?i=1000680096733&uo=4
 audio: https://audio1.redcircle.com/episodes/33ddcc61-2473-47c6-b1ac-f2884917dff3/stream.mp3
 chapter:
 - start: 00:00:00
@@ -40,8 +40,8 @@ tags:
 - Open Source
 - Leadership
 title: '#163 Benevolent Dictator for Life (BDFL)'
-transcript_raw: ''
-transcript_slim: ''
+transcript_raw: src/data/transcripts/163-transcript.zip
+transcript_slim: src/data/transcripts/163-transcript-slim.json
 youtube: https://www.youtube.com/watch?v=sVYwnq9fe7Q
 
 ---
