@@ -31,7 +31,9 @@ rtlplus: ''
 six_user_needs: []
 speaker:
 - name: Andy Grunwald
+  transcriptLetter: B
 - name: Wolfi Gassler
+  transcriptLetter: A
 spotify: https://open.spotify.com/episode/1b92dYHK9q2YjIRLDXCniq
 tags:
 - Tech Kultur
