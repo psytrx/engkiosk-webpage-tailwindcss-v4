@@ -33,7 +33,10 @@ speaker:
 - name: Andy Grunwald
 - name: Wolfi Gassler
 spotify: https://open.spotify.com/episode/1b92dYHK9q2YjIRLDXCniq
-tags: []
+tags:
+- Tech Kultur
+- Open Source
+- Leadership
 title: '#163 Benevolent Dictator for Life (BDFL)'
 transcript_raw: ''
 transcript_slim: ''
