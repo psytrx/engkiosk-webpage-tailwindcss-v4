@@ -34,7 +34,9 @@ rtlplus: ''
 six_user_needs: []
 speaker:
 - name: Andy Grunwald
-- name: Wolfi Gassler
+  transcriptLetter: A
+- name: Stefan Macke
+  transcriptLetter: B
 spotify: ''
 tags: []
 title: "#164 Suchalgorithmen: Lineare- und Bin\xE4re Suche & Indizes mit Stefan Macke\
