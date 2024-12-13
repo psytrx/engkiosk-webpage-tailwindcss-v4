@@ -1,12 +1,12 @@
 ---
 advertiser: ''
 amazon_music: https://music.amazon.com/podcasts/c35a09fe-4116-4e04-8f68-77d61b112e46/episodes/7ea459b3-8040-4709-ac6a-4c867fc64895/engineering-kiosk-164-suchalgorithmen-lineare--und-bin%C3%A4re-suche-indizes
-apple_podcasts: ''
+apple_podcasts: https://podcasts.apple.com/us/podcast/164-suchalgorithmen-lineare-und-bin%C3%A4re-suche-indizes/id1603082924?i=1000680219536&uo=4
 audio: https://audio1.redcircle.com/episodes/4073dee7-2cea-4d57-9ab6-0c8ea015d260/stream.mp3
 chapter:
 - start: 00:00:00
   title: "Suchalgorithmen: Lineare- und Bin\xE4re Suche"
-deezer: ''
+deezer: https://www.deezer.com/episode/698105291
 description: "Suchalgorithmen: Lineare- und Bin\xE4re Suche mit Stefan Macke vom IT\
   \ Berufe Podcast.  Im Engineering Kiosk Adventskalender 2024 sprechen befreundete\
   \ Podcaster\u22C5innen und wir selbst, Andy und Wolfi, jeden Tag kurz & knackig\
