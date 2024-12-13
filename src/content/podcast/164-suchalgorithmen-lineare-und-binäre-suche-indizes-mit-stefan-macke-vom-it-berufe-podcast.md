@@ -1,6 +1,6 @@
 ---
 advertiser: ''
-amazon_music: ''
+amazon_music: https://music.amazon.com/podcasts/c35a09fe-4116-4e04-8f68-77d61b112e46/episodes/7ea459b3-8040-4709-ac6a-4c867fc64895/engineering-kiosk-164-suchalgorithmen-lineare--und-bin%C3%A4re-suche-indizes
 apple_podcasts: ''
 audio: https://audio1.redcircle.com/episodes/4073dee7-2cea-4d57-9ab6-0c8ea015d260/stream.mp3
 chapter:
