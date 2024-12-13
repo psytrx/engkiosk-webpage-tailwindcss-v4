@@ -28,7 +28,7 @@ description: "Suchalgorithmen: Lineare- und Bin\xE4re Suche mit Stefan Macke vom
   \ https://bsky.app/profile/engineeringkiosk.bsky.socialTwitter: https://twitter.com/EngKiosk"
 headlines: links::Links||sprungmarken::Sprungmarken||hosts::Hosts||feedback::Feedback
 image: "./164-suchalgorithmen-lineare-und-bin\xE4re-suche-indizes-mit-stefan-macke-vom-it-berufe-podcast.jpg"
-length_second: 0
+length_second: 888
 pubDate: 2024-12-13 05:00:00+00:00
 rtlplus: ''
 six_user_needs: []
@@ -37,14 +37,14 @@ speaker:
   transcriptLetter: A
 - name: Stefan Macke
   transcriptLetter: B
-spotify: ''
+spotify: https://open.spotify.com/episode/6E7DcDBJpaDpC21I1ItW4s
 tags:
 - Software Engineering
 - Datenbanken
 title: "#164 Suchalgorithmen: Lineare- und Bin\xE4re Suche & Indizes mit Stefan Macke\
   \ vom IT Berufe Podcast"
-transcript_raw: ''
-transcript_slim: ''
+transcript_raw: src/data/transcripts/164-transcript.zip
+transcript_slim: src/data/transcripts/164-transcript-slim.json
 youtube: https://www.youtube.com/watch?v=_B3w7_LQDdk
 
 ---
