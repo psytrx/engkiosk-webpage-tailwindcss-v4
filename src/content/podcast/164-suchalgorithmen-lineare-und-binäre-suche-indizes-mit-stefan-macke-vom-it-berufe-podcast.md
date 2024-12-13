@@ -38,7 +38,9 @@ speaker:
 - name: Stefan Macke
   transcriptLetter: B
 spotify: ''
-tags: []
+tags:
+- Software Engineering
+- Datenbanken
 title: "#164 Suchalgorithmen: Lineare- und Bin\xE4re Suche & Indizes mit Stefan Macke\
   \ vom IT Berufe Podcast"
 transcript_raw: ''
