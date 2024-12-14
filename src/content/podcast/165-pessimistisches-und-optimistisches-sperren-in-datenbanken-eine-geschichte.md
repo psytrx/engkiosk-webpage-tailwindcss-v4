@@ -31,7 +31,9 @@ speaker:
 - name: Wolfi Gassler
   transcriptLetter: B
 spotify: https://open.spotify.com/episode/1mmXkzMJmyfLsfmpQMaXUa
-tags: []
+tags:
+- Software Engineering
+- Datenbanken
 title: '#165 Pessimistisches und Optimistisches Sperren in Datenbanken: Eine Geschichte'
 transcript_raw: ''
 transcript_slim: ''
