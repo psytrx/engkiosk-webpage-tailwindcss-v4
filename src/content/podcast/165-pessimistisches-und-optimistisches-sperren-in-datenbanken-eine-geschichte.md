@@ -1,6 +1,6 @@
 ---
 advertiser: ''
-amazon_music: ''
+amazon_music: https://music.amazon.com/podcasts/c35a09fe-4116-4e04-8f68-77d61b112e46/episodes/da854ba1-0c7c-49cb-bc01-2efd2d34d200/engineering-kiosk-165-pessimistisches-und-optimistisches-sperren-in-datenbanken-eine-geschichte
 apple_podcasts: https://podcasts.apple.com/us/podcast/165-pessimistisches-und-optimistisches-sperren-in-datenbanken/id1603082924?i=1000680334013&uo=4
 audio: https://audio1.redcircle.com/episodes/1e012564-f613-4663-b84e-425e5c599c02/stream.mp3
 chapter:
