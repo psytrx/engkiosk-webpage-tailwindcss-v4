@@ -41,7 +41,9 @@ speaker:
 - name: Andy Grunwald
 - name: Wolfi Gassler
 spotify: https://open.spotify.com/episode/1KwtqyAAvKymGLx5MRraX9
-tags: []
+tags:
+- Tech Kultur
+- Open Source
 title: '#166 Das Fediverse mit Christian Stankowic vom Focus on Linux Podcast'
 transcript_raw: ''
 transcript_slim: ''
