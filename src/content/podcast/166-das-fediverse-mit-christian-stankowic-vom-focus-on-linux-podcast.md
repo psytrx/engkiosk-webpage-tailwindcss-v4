@@ -1,6 +1,6 @@
 ---
 advertiser: ''
-amazon_music: ''
+amazon_music: https://music.amazon.com/podcasts/c35a09fe-4116-4e04-8f68-77d61b112e46/episodes/c0c613c9-b0d9-408b-9a65-27bcdcb61435/engineering-kiosk-166-das-fediverse-mit-christian-stankowic-vom-focus-on-linux-podcast
 apple_podcasts: https://podcasts.apple.com/us/podcast/166-das-fediverse-mit-christian-stankowic-vom-focus/id1603082924?i=1000680402748&uo=4
 audio: https://audio1.redcircle.com/episodes/9b4314c9-d41b-4c73-9298-9fde72003393/stream.mp3
 chapter:
