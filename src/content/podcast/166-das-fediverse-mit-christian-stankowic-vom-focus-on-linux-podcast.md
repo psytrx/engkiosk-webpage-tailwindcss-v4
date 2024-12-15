@@ -38,8 +38,10 @@ pubDate: 2024-12-15 05:00:00+00:00
 rtlplus: ''
 six_user_needs: []
 speaker:
-- name: Andy Grunwald
 - name: Wolfi Gassler
+  transcriptLetter: A
+- name: Christian Stankowic
+  transcriptLetter: B
 spotify: https://open.spotify.com/episode/1KwtqyAAvKymGLx5MRraX9
 tags:
 - Tech Kultur
