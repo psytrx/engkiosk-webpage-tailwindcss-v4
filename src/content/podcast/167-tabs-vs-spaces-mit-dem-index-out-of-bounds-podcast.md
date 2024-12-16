@@ -32,7 +32,9 @@ speaker:
 - name: Thomas Diroll
   transcriptLetter: C
 spotify: https://open.spotify.com/episode/1GmspWQ6qxnJbYjztvaXC2
-tags: []
+tags:
+- Software Engineering
+- Software Qualität
 title: '#167 Tabs vs. Spaces mit dem Index out of bounds Podcast'
 transcript_raw: ''
 transcript_slim: ''
