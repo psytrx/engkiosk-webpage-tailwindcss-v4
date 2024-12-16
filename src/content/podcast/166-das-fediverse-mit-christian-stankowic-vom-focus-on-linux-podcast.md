@@ -47,8 +47,8 @@ tags:
 - Tech Kultur
 - Open Source
 title: '#166 Das Fediverse mit Christian Stankowic vom Focus on Linux Podcast'
-transcript_raw: ''
-transcript_slim: ''
+transcript_raw: src/data/transcripts/166-transcript.zip
+transcript_slim: src/data/transcripts/166-transcript-slim.json
 youtube: https://www.youtube.com/watch?v=qKVHLw2KjvY
 
 ---
