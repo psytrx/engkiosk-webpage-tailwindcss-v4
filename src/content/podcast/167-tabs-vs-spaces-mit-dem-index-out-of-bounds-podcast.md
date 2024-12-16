@@ -26,7 +26,11 @@ rtlplus: ''
 six_user_needs: []
 speaker:
 - name: Andy Grunwald
-- name: Wolfi Gassler
+  transcriptLetter: A
+- name: Christian Braun
+  transcriptLetter: B
+- name: Thomas Diroll
+  transcriptLetter: C
 spotify: https://open.spotify.com/episode/1GmspWQ6qxnJbYjztvaXC2
 tags: []
 title: '#167 Tabs vs. Spaces mit dem Index out of bounds Podcast'
