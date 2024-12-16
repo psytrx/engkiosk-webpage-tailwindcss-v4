@@ -34,10 +34,10 @@ speaker:
 spotify: https://open.spotify.com/episode/1GmspWQ6qxnJbYjztvaXC2
 tags:
 - Software Engineering
-- Software Qualität
+- "Software Qualit\xE4t"
 title: '#167 Tabs vs. Spaces mit dem Index out of bounds Podcast'
-transcript_raw: ''
-transcript_slim: ''
+transcript_raw: src/data/transcripts/167-transcript.zip
+transcript_slim: src/data/transcripts/167-transcript-slim.json
 youtube: https://www.youtube.com/watch?v=ZHiLycOYVaQ
 
 ---
