@@ -72,7 +72,10 @@ speaker:
 - name: Andy Grunwald
 - name: Wolfi Gassler
 spotify: https://open.spotify.com/episode/4WpzXAwmUuY0eq6FWlfOH2
-tags: []
+tags:
+- Team
+- Karriere
+- Leadership
 title: '#168 Beyond Learning Budgets: Was Team-Entwicklung wirklich braucht'
 transcript_raw: ''
 transcript_slim: ''
