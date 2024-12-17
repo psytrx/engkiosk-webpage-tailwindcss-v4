@@ -1,6 +1,6 @@
 ---
 advertiser: ''
-amazon_music: ''
+amazon_music: https://music.amazon.com/podcasts/c35a09fe-4116-4e04-8f68-77d61b112e46/episodes/90e6bf3c-bc0c-4635-bc25-ef65c61a5698/engineering-kiosk-168-beyond-learning-budgets-was-team-entwicklung-wirklich-braucht
 apple_podcasts: ''
 audio: https://audio1.redcircle.com/episodes/7104e580-18dc-4556-a8de-30323237a4fb/stream.mp3
 chapter:
