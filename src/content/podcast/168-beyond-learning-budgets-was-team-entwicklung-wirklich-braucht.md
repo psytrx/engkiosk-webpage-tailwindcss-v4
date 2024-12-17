@@ -1,7 +1,7 @@
 ---
 advertiser: ''
 amazon_music: https://music.amazon.com/podcasts/c35a09fe-4116-4e04-8f68-77d61b112e46/episodes/90e6bf3c-bc0c-4635-bc25-ef65c61a5698/engineering-kiosk-168-beyond-learning-budgets-was-team-entwicklung-wirklich-braucht
-apple_podcasts: ''
+apple_podcasts: https://podcasts.apple.com/us/podcast/168-beyond-learning-budgets-was-team-entwicklung-wirklich/id1603082924?i=1000680647007&uo=4
 audio: https://audio1.redcircle.com/episodes/7104e580-18dc-4556-a8de-30323237a4fb/stream.mp3
 chapter:
 - start: 00:00:00
@@ -79,8 +79,8 @@ tags:
 - Karriere
 - Leadership
 title: '#168 Beyond Learning Budgets: Was Team-Entwicklung wirklich braucht'
-transcript_raw: ''
-transcript_slim: ''
+transcript_raw: src/data/transcripts/168-transcript.zip
+transcript_slim: src/data/transcripts/168-transcript-slim.json
 youtube: https://www.youtube.com/watch?v=CDQ70bX9PJE
 
 ---
