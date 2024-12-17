@@ -70,7 +70,9 @@ rtlplus: ''
 six_user_needs: []
 speaker:
 - name: Andy Grunwald
+  transcriptLetter: A
 - name: Wolfi Gassler
+  transcriptLetter: B
 spotify: https://open.spotify.com/episode/4WpzXAwmUuY0eq6FWlfOH2
 tags:
 - Team
