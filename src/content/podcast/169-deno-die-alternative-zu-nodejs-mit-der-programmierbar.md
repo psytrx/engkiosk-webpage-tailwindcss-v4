@@ -32,7 +32,10 @@ speaker:
 - name: Andy Grunwald
 - name: Wolfi Gassler
 spotify: https://open.spotify.com/episode/3wKKuEaOCr5X7XcFQQHiiQ
-tags: []
+tags:
+- Backend
+- Software Engineering
+- Open Source
 title: '#169 Deno, die Alternative zu Node.js mit der programmier.bar'
 transcript_raw: ''
 transcript_slim: ''
