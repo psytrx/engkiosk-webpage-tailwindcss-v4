@@ -31,6 +31,11 @@ six_user_needs: []
 speaker:
 - name: Andy Grunwald
 - name: Wolfi Gassler
+  transcriptLetter: A
+- name: Fabi Fink
+  transcriptLetter: C
+- name: Jan Gregor Emge-Triebel
+  transcriptLetter: B
 spotify: https://open.spotify.com/episode/3wKKuEaOCr5X7XcFQQHiiQ
 tags:
 - Backend

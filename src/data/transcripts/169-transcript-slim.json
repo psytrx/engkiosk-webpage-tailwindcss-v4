@@ -1,0 +1,184 @@
+{
+    "language_code": "de",
+    "audio_url": "https://audio1.redcircle.com/episodes/bac2bada-bd34-4b69-b49d-cce80b5677fd/stream.mp3",
+    "punctuate": true,
+    "format_text": true,
+    "dual_channel": false,
+    "multichannel": null,
+    "audio_channels": null,
+    "webhook_url": null,
+    "webhook_auth_header_name": null,
+    "webhook_auth_header_value": null,
+    "audio_start_from": null,
+    "audio_end_at": null,
+    "word_boost": [],
+    "boost_param": null,
+    "filter_profanity": false,
+    "redact_pii": false,
+    "redact_pii_audio": false,
+    "redact_pii_audio_quality": null,
+    "redact_pii_policies": null,
+    "redact_pii_sub": null,
+    "speaker_labels": true,
+    "speakers_expected": 4,
+    "content_safety": false,
+    "content_safety_confidence": null,
+    "iab_categories": false,
+    "custom_spelling": null,
+    "disfluencies": false,
+    "sentiment_analysis": false,
+    "auto_chapters": false,
+    "entity_detection": false,
+    "summarization": false,
+    "summary_model": null,
+    "summary_type": null,
+    "auto_highlights": false,
+    "language_detection": false,
+    "language_confidence_threshold": null,
+    "language_confidence": null,
+    "speech_threshold": null,
+    "speech_model": null,
+    "id": "d069add3-b5c3-44c5-a213-c999edceb037",
+    "status": "completed",
+    "error": null,
+    "utterances": [
+        {
+            "text": "Tag 18 im Dezember, Tag 18 im Engineering Kiosk Adventskalender. Und um schon einmal ins Thema einzuführen, richtig, es geht heute um JavaScript. Dass JavaScript einen regelrechten Boost in den letzten Jahren hingelegt hat, kann niemand bestreiten. Node JS hat JavaScript auch ins Backend gebracht. Doch ist Node JS die einzige serverseitige JS Runtime? Damit beschäftigen sich Fabi und Jan von der Programmierbar im heutigen Community Beitrag.",
+            "start": 8280,
+            "end": 40610,
+            "confidence": 0.9102939,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Los geht's.",
+            "start": 40730,
+            "end": 41802,
+            "confidence": 0.86843,
+            "speaker": "B",
+            "channel": null
+        },
+        {
+            "text": "Hi, hier sind Jan und Fabi von der Programmierbar und wir wollen heute mit euch über eine Alternative zu Node JS sprechen. Ich persönlich bin nämlich ein riesiger Typescript Fan, aber überhaupt gar kein Fan davon, wie es in Node JS zu benutzen ist, weil ich meinen eigenen TypeScript Compiler mitbringen muss, weil ich meinen Linter alles einstellen muss, weil ich meinen Test Runner zusammensuchen muss und weil ich überhaupt so viel Zeit investieren muss, bis überhaupt meine schöne geschriebene Zeile TypeScript einmal in Node JS ausgeführt wird. Deshalb bin ich vor einigen Monaten schon auf Dino gestoßen. Dino ist eine alternative JavaScript und TypeScript Runtime und die ist gemacht von Ryan Dahl, der vor vielen, vielen Jahren auch nojs [sos/eos], geschaffen hat. Und er sagt selbst davon, Dino ist das, was er gebaut hat, nachdem er aus seinen Fehlern von Node JS gelernt hat. Und da ist eben sehr viel mehr drin als in Node JS. Es ist eine sehr viel größere Nähe zu Web Standards drin, es ist nativer Typescript Support ohne irgendeine Cross Compilation drin, es ist ein Formatter eingebaut, ein Linter, ein Typechecker, ein testing Framework. Man kann Typescript direkt in Executables kompilieren, damit, wenn man sie portabler haben möchte und vieles, vieles mehr. Und das alles macht es für mich super viel leichter, mal eben was in TypeScript auszuprobieren, auszuführen, ohne eben vorher viel Tool aufsetzen zu müssen. Und dazu bringt Dino bzw. Dinoland, die Firma hinter Dino, eine eigene Hosting Plattform mit, sodass ich mit Dino Deploy auch kostenlos mein kleines Projekt, mein proof of Concept mal eben deployen kann, für andere nutzbar einsehbar machen kann, ohne dass ich mich eben viel mit irgendwelchen Docker Containern oder anderen Plattformen und Deployment Strategien beschäftigen muss. Und das alles sorgt dafür, dass ich wieder viel, viel mehr Spaß an Typescript habe.",
+            "start": 41986,
+            "end": 153528,
+            "confidence": 0.9014739,
+            "speaker": "C",
+            "channel": null
+        },
+        {
+            "text": "Ja, nice, Dino, hast jetzt auch gerade gesagt, so für deine proof of Concepts und dann lädst du es irgendwo hoch. So, ich meine, ist ja immer so eine Grundlage wie welche engine benutze ich und so, ist am Anfang immer schwer einfach zu entscheiden, wie sieht es denn aus, wenn ich jetzt hier gerade ein größeres Note Projekt habe. Ich habe gestern eins auf eine andere Engine umgezogen und zwar bann, da war es eigentlich relativ easy, fast ein Drop in Replacement. So ist das mit Deno auch so möglich, wenn ich jetzt gerade ein großes Noteprojekt habe, wie einfach komme ich zu Deno?",
+            "start": 153584,
+            "end": 179068,
+            "confidence": 0.87011075,
+            "speaker": "D",
+            "channel": null
+        },
+        {
+            "text": "Also wer Deno vielleicht vor einem Jahr oder zwei schon mal ausprobiert hatte, der wird da über die eine oder andere Stelle gestolpert sein, weil Dino halt doch einiges anders macht, was Dependency Management und Paketverwaltung und sowas alles angeht. Aber mit dem vor kurzem gedroppten Release von Dino versprechen sie da eben auch 100 % Kompatibilität, sodass Dino jetzt auch in der Lage ist, Package JSON Dateien auszulesen, deine Dependencies davon zu organisieren, API Kompatibilitäten mitzubringen und so weiter und so fort. Das heißt, sag niemals nie, aber in wahrscheinlich 99,9 % der Fälle da draußen sollte es mittlerweile möglich sein, Dino als Drop in Replacement für Node JS zu verwenden. Man muss sich allerdings den einen oder anderen Gedanken da vielleicht noch machen, weil Dino ja auch den Anspruch an sich hat, sicherer zu sein als Node JS. Also wer ein Dino Projekt quasi startet oder ausführt, der muss ein paar Sicherheitskonfigurationen vorher noch erledigen, z.B. soll meine Runtime Zugriff auf mein Filesystem haben, soll sie irgendwie Subprocesses spawnen können, hat sie Zugriff auf die Clock, auf das Network, auf was auch immer. Alles, was bei Node JS im Prinzip nicht bedacht werden muss, weil Node JS mit denselben Privilegien ausgeführt wird, wie man selber als Nutzer, in der Regel als Root User da eben schon hat. Und weil Dino da vorsichtiger sein will und konservativer ist, zweitausendein, muss man da einmal bewusster drüber nachdenken, was die Anwendung, die man da gerade startet, eigentlich alles so für Privilegien braucht. Aber ansonsten sollte es funktionieren.",
+            "start": 179164,
+            "end": 264950,
+            "confidence": 0.9256137,
+            "speaker": "C",
+            "channel": null
+        },
+        {
+            "text": "Okay, das heißt aber, weil du jetzt gerade als Security sowas wie Filesystem gesagt hast, wenn ich jetzt irgendwie fs nutze, um aufs Filesystem zuzugreifen in Node, das funktioniert auch weiter, das muss ich keine deno proprietäre API nutzen, um Files auszulesen oder sowas, oder gibt es da so ein paar Punkte, wo ich vielleicht was tun müsste, weißt du das?",
+            "start": 265030,
+            "end": 280686,
+            "confidence": 0.8722284,
+            "speaker": "D",
+            "channel": null
+        },
+        {
+            "text": "Das soll dann funktionieren, aber du kannst natürlich trotzdem auch die dino Variante davon benutzen. Dino stellt ja ein Standard Library bereit, wo all diese Zugriffe eben wegabstrahiert sind. Aber wie gesagt, soll auch funktionieren, aber du musst die Write bzw. Read Permission, je nachdem, was du in deinem Filesystem so vorhast, eben entsprechend vorher konfigurieren.",
+            "start": 280758,
+            "end": 300354,
+            "confidence": 0.9022005,
+            "speaker": "C",
+            "channel": null
+        },
+        {
+            "text": "Ja, nice. Und das heißt aber, Package JSON bleibt auch gleich?",
+            "start": 300442,
+            "end": 304682,
+            "confidence": 0.91893274,
+            "speaker": "D",
+            "channel": null
+        },
+        {
+            "text": "Package JSON kann ausgelesen werden. Dino bringt auch mittlerweile einen eigenen Package Manager mit. Oder die Macher hinter Dino haben ja auch JSR, die JavaScript Package Registry, geschaffen. Das ist jetzt allerdings nochmal ein anderes großes Thema. Wer da vielleicht mehr zu hören will, wir haben im Programmierbar Podcast in der Folge 156 über JSR gesprochen. Wir haben auch in der Folge 73 mal einführend länger über Dino selbst gesprochen. Und wir haben auch, wer sich für größere Dino Projekte interessiert, in der Folge 113 schon mal über Fresh gesprochen, was eines der ersten großen Webframeworks für Dino eben war. Und man sieht zweitausendein das Ökosystem darum wächst und wächst.",
+            "start": 304786,
+            "end": 343052,
+            "confidence": 0.9158972,
+            "speaker": "C",
+            "channel": null
+        },
+        {
+            "text": "Ja, nice. Dann würde ich sagen, ich war vorhin deswegen zum ersten Mal oder mal wieder auf der dino Seite, wo man seine eigenen Dino erstellen kann. Macht das doch.",
+            "start": 343116,
+            "end": 350556,
+            "confidence": 0.86365366,
+            "speaker": "D",
+            "channel": null
+        },
+        {
+            "text": "Das ist natürlich das allergrößte Feature von Dino.",
+            "start": 350588,
+            "end": 352836,
+            "confidence": 0.9224775,
+            "speaker": "C",
+            "channel": null
+        },
+        {
+            "text": "Also Dino ist natürlich auch, das Logo ist ein kleiner Dino und ihr könnt euch einen kleinen Dino auf der Homepage designen. Vielleicht gibt es ja zu Weihnachten auch noch schöne weihnachtliche Dinge da drauf. Schaut es euch mal an.",
+            "start": 352988,
+            "end": 361532,
+            "confidence": 0.93229324,
+            "speaker": "D",
+            "channel": null
+        },
+        {
+            "text": "Viel Spaß mit Dino.",
+            "start": 361556,
+            "end": 362316,
+            "confidence": 0.987025,
+            "speaker": "C",
+            "channel": null
+        },
+        {
+            "text": "Ciao.",
+            "start": 362388,
+            "end": 363132,
+            "confidence": 0.33488,
+            "speaker": "D",
+            "channel": null
+        },
+        {
+            "text": "Vielen Dank an Fabian und Jan von der Programmierbar für diese Episode. Wenn euch die Episode gefallen hat, hört doch mal in die Programmierbar rein. Neben Deep Dives und CTO Specials werden auch alle zwei Wochen verschiedene AI und Tech News behandelt. Den Link findet ihr wie immer in den Show Notes. Und was uns natürlich jetzt interessieren würde, ist, was eure Erfahrungen mit den alternativen JavaScript Runtimes sind. Besonders natürlich Dino. Kommt doch mal zu uns in die Discord Community und lasst uns das wissen. Wir freuen uns auf euch.",
+            "start": 363316,
+            "end": 391792,
+            "confidence": 0.9313884,
+            "speaker": "A",
+            "channel": null
+        },
+        {
+            "text": "Bis morgen.",
+            "start": 391896,
+            "end": 392440,
+            "confidence": 0.991475,
+            "speaker": "B",
+            "channel": null
+        }
+    ],
+    "confidence": 0.907036,
+    "audio_duration": 399,
+    "webhook_status_code": null,
+    "webhook_auth": false,
+    "summary": null,
+    "auto_highlights_result": null,
+    "content_safety_labels": null,
+    "chapters": null,
+    "sentiment_analysis_results": null,
+    "entities": null
+}
