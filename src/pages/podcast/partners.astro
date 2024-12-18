@@ -26,19 +26,12 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 						<div class="w-full">
 							<h2 class="mb-4 text-4xl md:text-5xl text-darkCoolGray-900 font-bold tracking-tighter leading-tight">Unsere aktuellen Werbepartner</h2>
 								<div class="flex flex-wrap lg:items-start -mx-4 my-8">
-								<div class="w-full md:w-1/5 px-4 mb-16 md:mb-0">
-									<div class="relative mx-auto md:ml-0 max-w-max overflow-hidden rounded-lg">
-										<a href="https://jump.engineeringkiosk.dev/onoffice">
-											
-										</a>
-									</div>
-								</div>
+								
 								<div class="w-full md:w-4/5 px-4">
-									<h1 class="mb-8 text-3xl md:text-4xl leading-tight text-darkCoolGray900 font-bold tracking-tighter">
-										<a href="https://jump.engineeringkiosk.dev/onoffice" class="hover:underline">
-											onOffice
+									<a href="https://engineeringkiosk.dev/onoffice">
+											<Image class="w-full md:w-1/2 m-4 -ml-1" src={(await import(`../../images/partners/onOffice.png`)).default} alt="onOffice" title="onOffice" />
 										</a>
-									</h1>
+									
 									<p class="mb-6 text-lg md:text-xl text-coolGray-400 font-medium">
 										onOffice sucht Software- und native App-Entwickler⋅innen, die in selbstorganisierten Teams mit Code- und Skill-Ownership arbeiten möchten. Jedes Produktentwicklungsteam priorisiert eigenständig Backlog, Innovationen und Neuentwicklungen. Qualitätschecks wie „Design-Principles-Checks“ und Extreme Programming gehören zum Alltag.
 
