@@ -1,6 +1,6 @@
 ---
 advertiser: ''
-amazon_music: ''
+amazon_music: https://music.amazon.com/podcasts/c35a09fe-4116-4e04-8f68-77d61b112e46/episodes/a1a3911c-388a-4f95-8bc7-db13bd72397c/engineering-kiosk-169-deno-die-alternative-zu-node-js-mit-der-programmier-bar
 apple_podcasts: ''
 audio: https://audio1.redcircle.com/episodes/bac2bada-bd34-4b69-b49d-cce80b5677fd/stream.mp3
 chapter:
