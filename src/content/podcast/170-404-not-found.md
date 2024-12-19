@@ -1,6 +1,6 @@
 ---
 advertiser: ''
-amazon_music: ''
+amazon_music: https://music.amazon.com/podcasts/c35a09fe-4116-4e04-8f68-77d61b112e46/episodes/1e2a6774-eba7-423d-aaa9-3d3078f4b434/engineering-kiosk-170---404-not-found
 apple_podcasts: https://podcasts.apple.com/us/podcast/170-404-not-found/id1603082924?i=1000680921696&uo=4
 audio: https://audio1.redcircle.com/episodes/1b832ff3-c609-4ad7-97b6-2a6bd901b424/stream.mp3
 chapter:
