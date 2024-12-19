@@ -41,10 +41,10 @@ speaker:
 spotify: https://open.spotify.com/episode/0ZEtQcF0kWLMNnXACTToA8
 tags:
 - Software Engineering
-- Software Qualität
+- "Software Qualit\xE4t"
 title: '#170 - 404 Not Found!'
-transcript_raw: ''
-transcript_slim: ''
+transcript_raw: src/data/transcripts/170-transcript.zip
+transcript_slim: src/data/transcripts/170-transcript-slim.json
 youtube: https://www.youtube.com/watch?v=fmt1ZvfcWEg
 
 ---
