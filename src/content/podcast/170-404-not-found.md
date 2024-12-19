@@ -39,7 +39,9 @@ speaker:
 - name: Wolfi Gassler
   transcriptLetter: B
 spotify: https://open.spotify.com/episode/0ZEtQcF0kWLMNnXACTToA8
-tags: []
+tags:
+- Software Engineering
+- Software Qualität
 title: '#170 - 404 Not Found!'
 transcript_raw: ''
 transcript_slim: ''
