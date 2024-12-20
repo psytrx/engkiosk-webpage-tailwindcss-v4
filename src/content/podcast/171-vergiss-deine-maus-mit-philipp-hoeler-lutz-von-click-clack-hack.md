@@ -44,8 +44,8 @@ spotify: https://open.spotify.com/episode/0UmcTKRabWlLCmnjY79rNs
 tags:
 - Tech Kultur
 title: '#171 Vergiss deine Maus mit Philipp Hoeler-Lutz von Click! Clack! Hack!'
-transcript_raw: ''
-transcript_slim: ''
+transcript_raw: src/data/transcripts/171-transcript.zip
+transcript_slim: src/data/transcripts/171-transcript-slim.json
 youtube: https://www.youtube.com/watch?v=RAr31UfEM5w
 
 ---
