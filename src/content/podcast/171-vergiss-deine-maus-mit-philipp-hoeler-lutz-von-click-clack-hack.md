@@ -39,7 +39,8 @@ speaker:
 - name: Andy Grunwald
 - name: Wolfi Gassler
 spotify: https://open.spotify.com/episode/0UmcTKRabWlLCmnjY79rNs
-tags: []
+tags:
+- Tech Kultur
 title: '#171 Vergiss deine Maus mit Philipp Hoeler-Lutz von Click! Clack! Hack!'
 transcript_raw: ''
 transcript_slim: ''
