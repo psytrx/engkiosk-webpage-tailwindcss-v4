@@ -36,8 +36,10 @@ pubDate: 2024-12-20 05:00:00+00:00
 rtlplus: ''
 six_user_needs: []
 speaker:
-- name: Andy Grunwald
 - name: Wolfi Gassler
+  transcriptLetter: A
+- name: Philipp Hoeler-Lutz
+  transcriptLetter: B
 spotify: https://open.spotify.com/episode/0UmcTKRabWlLCmnjY79rNs
 tags:
 - Tech Kultur
