@@ -1,6 +1,6 @@
 ---
 advertiser: ''
-amazon_music: ''
+amazon_music: https://music.amazon.com/podcasts/c35a09fe-4116-4e04-8f68-77d61b112e46/episodes/6b2bcb7b-d2bc-4a81-9663-1700acbb2684/engineering-kiosk-172-die-kuriosesten-versionsnummern-bekannter-software-mit-matthias-endler-von-rust-in-production
 apple_podcasts: https://podcasts.apple.com/us/podcast/172-die-kuriosesten-versionsnummern-bekannter-software/id1603082924?i=1000681207016&uo=4
 audio: https://audio1.redcircle.com/episodes/9012e774-bb6c-46d3-8d57-443bb74a8bad/stream.mp3
 chapter:
