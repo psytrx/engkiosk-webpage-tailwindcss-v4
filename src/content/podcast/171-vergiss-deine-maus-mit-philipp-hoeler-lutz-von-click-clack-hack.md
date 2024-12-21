@@ -1,7 +1,7 @@
 ---
 advertiser: ''
 amazon_music: https://music.amazon.com/podcasts/c35a09fe-4116-4e04-8f68-77d61b112e46/episodes/9a481b4d-23b7-4b4e-8224-f193afb979f3/engineering-kiosk-171-vergiss-deine-maus-mit-philipp-hoeler-lutz-von-click-clack-hack
-apple_podcasts: ''
+apple_podcasts: https://podcasts.apple.com/us/podcast/171-vergiss-deine-maus-mit-philipp-hoeler-lutz-von/id1603082924?i=1000681061004&uo=4
 audio: https://audio1.redcircle.com/episodes/675ff1a0-a2be-4113-97e1-9d054742caf2/stream.mp3
 chapter:
 - start: 00:00:00
