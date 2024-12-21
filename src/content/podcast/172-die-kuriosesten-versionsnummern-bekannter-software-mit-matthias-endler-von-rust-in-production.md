@@ -51,7 +51,10 @@ speaker:
 - name: Andy Grunwald
 - name: Wolfi Gassler
 spotify: https://open.spotify.com/episode/427VTvSigSVwBznfRgnuMn
-tags: []
+tags:
+- Tech Kultur
+- Projektmanagement
+- Kommunikation
 title: '#172 Die kuriosesten Versionsnummern bekannter Software mit Matthias Endler
   von Rust in Production'
 transcript_raw: ''
