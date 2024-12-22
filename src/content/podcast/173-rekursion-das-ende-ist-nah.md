@@ -35,7 +35,8 @@ speaker:
 - name: Wolfi Gassler
   transcriptLetter: B
 spotify: https://open.spotify.com/episode/7xd5pgeeRQByGCJEQZTJjU
-tags: []
+tags:
+- Software Engineering
 title: '#173 Rekursion: Das Ende ist nah!'
 transcript_raw: ''
 transcript_slim: ''
