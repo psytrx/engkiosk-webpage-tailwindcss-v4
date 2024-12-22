@@ -1,6 +1,6 @@
 ---
 advertiser: ''
-amazon_music: ''
+amazon_music: https://music.amazon.com/podcasts/c35a09fe-4116-4e04-8f68-77d61b112e46/episodes/e19d5907-c94a-4fff-b21d-11ab39d5e638/engineering-kiosk-173-rekursion-das-ende-ist-nah
 apple_podcasts: https://podcasts.apple.com/us/podcast/173-rekursion-das-ende-ist-nah/id1603082924?i=1000681275448&uo=4
 audio: https://audio1.redcircle.com/episodes/fc26999c-0127-402b-a472-bb2f989c2857/stream.mp3
 chapter:
