@@ -29,13 +29,14 @@ pubDate: 2024-12-18 05:00:00+00:00
 rtlplus: ''
 six_user_needs: []
 speaker:
-- name: Andy Grunwald
 - name: Wolfi Gassler
   transcriptLetter: A
-- name: Fabi Fink
-  transcriptLetter: C
-- name: Jan Gregor Emge-Triebel
+- name: Wolfi Gassler
   transcriptLetter: B
+- name: Fabi Fink
+  transcriptLetter: D
+- name: Jan Gregor Emge-Triebel
+  transcriptLetter: C
 spotify: https://open.spotify.com/episode/3wKKuEaOCr5X7XcFQQHiiQ
 tags:
 - Backend
