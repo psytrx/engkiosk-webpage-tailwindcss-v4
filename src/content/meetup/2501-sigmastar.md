@@ -6,9 +6,9 @@ location:
   url: ''
   logo: ''
 talks:
-  - avatar: '2307-david.png'
-    name: 'David Gstir'
-    title: 'Android Full Disk Encryption'
+  - avatar: 'avatar.png'
+    name: ''
+    title: 'tba'
     description: ''
     bio: ''
   - avatar: 'avatar.png'

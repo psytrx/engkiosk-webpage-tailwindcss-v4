@@ -13,6 +13,7 @@ talks:
     bio: 'Thomas is an alumni of the University of Innsbruck with more than 15 years of experience in IoT in various industries. He started his career at General Electrics Healthcare as a C++ developer in the field of X-ray machine connectivity. His interest in the connectivity topic brought him to a measurement device manufacturer, which he led as General Manager for the last 4 years, before moving to a Munich based IoT consulting company called Concept Reply GmbH, where he is currently responsible for the Embedded Development department as Senior Manager.'
     linkedin: 'thomas-berger-muc'
     website: 'https://riedmann.dev/'
+    slides: '2412_thomas_ota_firmware_updates.pdf'
   - avatar: '2412-nkemclose.jpg'
     name: 'Efeunu Adigheji Nkemakolam'
     title: 'Geeks, Dreamers, and Decency: Building Better Relationships in Tech'
@@ -20,5 +21,6 @@ talks:
     bio: 'I didn’t plan to become a product manager. If you’d told me about product management five years ago, I probably would’ve smiled and nodded like I knew what it was, only to Google it later. But somehow, this role found me while I was working as a UI designer for a startup. Fast forward to today, I’ve worked as a product manager at companies of all stages. And no, I’m not a project manager please stop asking. My days are a mix of babysitting software engineers, being the voice of reason to leadership teams, and occasionally pretending I have all the answers. When I’m not doing that, you’ll find me escaping reality through cooking, anime, and video games. I’m currently pursuing my master’s degree at the University of Innsbruck, diving deeper into all things tech and strategy. Today, I want to share some hard-earned lessons on building better relationships between technical and non-technical people lessons that start with one simple thing: being decent to each other. '
     linkedin: 'adigheji-efeunu-875b88170'
     website: 'https://medium.com/@anefeunu'
+    slides: '2412_nkem_building_better_relationships.pdf'
 eventId: '69srtjfqrffnpbdtspdebs8i7s'
 ---
