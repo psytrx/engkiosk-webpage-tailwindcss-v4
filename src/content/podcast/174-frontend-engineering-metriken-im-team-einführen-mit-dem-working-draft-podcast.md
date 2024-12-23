@@ -29,7 +29,13 @@ rtlplus: ''
 six_user_needs: []
 speaker:
 - name: Andy Grunwald
-- name: Wolfi Gassler
+  transcriptLetter: A
+- name: Christian "Schepp" Schaefer
+  transcriptLetter: B
+- name: Vanessa Otto
+  transcriptLetter: C
+- name: Hans Christian Reinl
+  transcriptLetter: D
 spotify: https://open.spotify.com/episode/33ZSnqecRql5KCTgmzdu7o
 tags:
 - Frontend
