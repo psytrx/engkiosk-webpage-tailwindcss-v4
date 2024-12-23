@@ -31,7 +31,9 @@ speaker:
 - name: Andy Grunwald
 - name: Wolfi Gassler
 spotify: https://open.spotify.com/episode/33ZSnqecRql5KCTgmzdu7o
-tags: []
+tags:
+- Frontend
+- Software Qualität
 title: "#174 Frontend-Engineering Metriken im Team einf\xFChren mit dem Working Draft\
   \ Podcast"
 transcript_raw: ''
