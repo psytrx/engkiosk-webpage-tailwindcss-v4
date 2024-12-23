@@ -1,7 +1,7 @@
 ---
 advertiser: ''
 amazon_music: https://music.amazon.com/podcasts/c35a09fe-4116-4e04-8f68-77d61b112e46/episodes/6b63a105-ca72-4190-96aa-daa92e6c7984/engineering-kiosk-174-frontend-engineering-metriken-im-team-einf%C3%BChren-mit-dem-working-draft-podcast
-apple_podcasts: ''
+apple_podcasts: https://podcasts.apple.com/us/podcast/174-frontend-engineering-metriken-im-team-einf%C3%BChren/id1603082924?i=1000681365871&uo=4
 audio: https://audio1.redcircle.com/episodes/2882ee29-d6fd-4f9e-8f6e-b25b0540d3f7/stream.mp3
 chapter:
 - start: 00:00:00
@@ -39,11 +39,11 @@ speaker:
 spotify: https://open.spotify.com/episode/33ZSnqecRql5KCTgmzdu7o
 tags:
 - Frontend
-- Software Qualität
+- "Software Qualit\xE4t"
 title: "#174 Frontend-Engineering Metriken im Team einf\xFChren mit dem Working Draft\
   \ Podcast"
-transcript_raw: ''
-transcript_slim: ''
+transcript_raw: src/data/transcripts/174-transcript.zip
+transcript_slim: src/data/transcripts/174-transcript-slim.json
 youtube: https://www.youtube.com/watch?v=p3mDJR_Qdeg
 
 ---
