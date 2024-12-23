@@ -1,6 +1,6 @@
 ---
 advertiser: ''
-amazon_music: ''
+amazon_music: https://music.amazon.com/podcasts/c35a09fe-4116-4e04-8f68-77d61b112e46/episodes/6b63a105-ca72-4190-96aa-daa92e6c7984/engineering-kiosk-174-frontend-engineering-metriken-im-team-einf%C3%BChren-mit-dem-working-draft-podcast
 apple_podcasts: ''
 audio: https://audio1.redcircle.com/episodes/2882ee29-d6fd-4f9e-8f6e-b25b0540d3f7/stream.mp3
 chapter:
