@@ -1,6 +1,6 @@
 ---
 advertiser: ''
-amazon_music: ''
+amazon_music: https://music.amazon.com/podcasts/c35a09fe-4116-4e04-8f68-77d61b112e46/episodes/3401c397-a149-493a-aefb-dea1c5751c0a/engineering-kiosk-175-von-lustig-bis-traurig-wenn-open-source-geschichten-schreibt
 apple_podcasts: https://podcasts.apple.com/us/podcast/175-von-lustig-bis-traurig-wenn-open-source-geschichten/id1603082924?i=1000681516309&uo=4
 audio: https://audio1.redcircle.com/episodes/a83922e8-43b0-45cb-8b71-a432cd3f5fe2/stream.mp3
 chapter:
