@@ -91,7 +91,9 @@ speaker:
 - name: Andy Grunwald
 - name: Wolfi Gassler
 spotify: https://open.spotify.com/episode/2oiWFa11WyGLj7cKQoJH0e
-tags: []
+tags:
+- Tech Kultur
+- Open Source
 title: '#175 Von Lustig bis Traurig: Wenn Open Source Geschichten schreibt'
 transcript_raw: ''
 transcript_slim: ''
