@@ -95,7 +95,8 @@ speaker:
 - name: Wolfi Gassler
   transcriptLetter: B
 spotify: https://open.spotify.com/episode/29837ghhmE46KiO1VBRqhC
-tags: []
+tags:
+- Engineering Kiosk
 title: '#176 Der Engineering Kiosk wird 3 Jahre alt!'
 transcript_raw: ''
 transcript_slim: ''
