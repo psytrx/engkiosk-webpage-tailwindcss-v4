@@ -91,7 +91,9 @@ rtlplus: ''
 six_user_needs: []
 speaker:
 - name: Andy Grunwald
+  transcriptLetter: A
 - name: Wolfi Gassler
+  transcriptLetter: B
 spotify: https://open.spotify.com/episode/29837ghhmE46KiO1VBRqhC
 tags: []
 title: '#176 Der Engineering Kiosk wird 3 Jahre alt!'
