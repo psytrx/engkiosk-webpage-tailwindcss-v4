@@ -1,6 +1,6 @@
 ---
 advertiser: ''
-amazon_music: ''
+amazon_music: https://music.amazon.com/podcasts/c35a09fe-4116-4e04-8f68-77d61b112e46/episodes/61c2cafc-219f-4641-b60b-db7226cc79e0/engineering-kiosk-176-der-engineering-kiosk-wird-3-jahre-alt
 apple_podcasts: https://podcasts.apple.com/us/podcast/176-der-engineering-kiosk-wird-3-jahre-alt/id1603082924?i=1000682197589&uo=4
 audio: https://audio1.redcircle.com/episodes/69c11195-e217-4d80-b141-3d4eb4d90e62/stream.mp3
 chapter:
