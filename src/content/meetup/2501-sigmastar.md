@@ -1,10 +1,10 @@
 ---
 date: 2025-01-16T18:30:00+01:00
 location:
-  name: '???'
-  address: '???, 6020 Innsbruck'
-  url: ''
-  logo: ''
+  name: '​​​​​sigma star gmbh'
+  address: 'WEI SRAUM. Designforum Tirol, Andreas-Hofer-Straße 27, 6020 Innsbruck'
+  url: 'https://sigma-star.at/'
+  logo: 'sigstr-logo-color-horizontal.svg'
 talks:
   - avatar: 'avatar.png'
     name: ''
