@@ -24,4 +24,6 @@ talks:
     mastodon: '@jrief@fosstodon.org'
     slides: '2405-jacob-rief-style-pilfering.pdf'
 eventId: '45225s2tfrlbaauanf7e0im9gj'
+participants:
+  registered: 42
 ---

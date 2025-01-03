@@ -26,4 +26,6 @@ talks:
       - 'penguinwarrior'
     slides: '2404-richard-weinberger-david-gstir-supply-chain.pdf'
 eventId: '3594f0aavb0je6dcbot1vh6g39'
+participants:
+  registered: 53
 ---

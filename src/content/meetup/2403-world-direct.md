@@ -22,4 +22,6 @@ talks:
     bio: "Hi, I’m Sergei. As a software engineer I have had more than 10 years development experience. Although I began as an intern Developer, I eventually earned a position as the Team Lead in charge of development of a high load storage system.  I’ve worked on daily bases with different technologies and programming languages such as Java, Golang, C and C#. During my professional career I've experienced different Agile methodologies and SCRUM. I used to adapt the SCRUM approach to R&D team specific. I’m passionate about technologies and building software development processes."
     slides: '2403-sergei-koiushev.pdf'
 eventId: '3rm0aodqkk36555lromsna646n'
+participants:
+  registered: 43
 ---

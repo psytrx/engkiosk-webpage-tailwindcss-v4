@@ -23,4 +23,6 @@ talks:
     slides: '2312-christoph-stanger-automating-avalanche-reports.pdf'
     linkedin: 'cstanger'
 eventId: '456r8e4uttr5dfpqkhs2bn27av'
+participants:
+  registered: 47
 ---

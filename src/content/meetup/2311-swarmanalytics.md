@@ -23,4 +23,6 @@ talks:
     website: 'https://www.iacbox.com'
     slides: '2311-lukas-ruetz.pdf'
 eventId: '5fphs24jn7sml0slqmmgs0dpfv'
+participants:
+  registered: 49
 ---

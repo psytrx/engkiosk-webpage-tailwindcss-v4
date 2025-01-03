@@ -29,4 +29,6 @@ talks:
 
     devdocs.io by Simon Legner"
 eventId: '77tocfleahk4hcuepk7sqca5rm'
+participants:
+  registered: 48
 ---

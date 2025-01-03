@@ -17,5 +17,7 @@ talks:
     description: 'No Talks, just drinks and networking. We will meet at Gastgarten zur Eiche at around 18:30. Please register so we can adapt the reservation accordingly.'
     bio: ''
     website: 'https://unsplash.com/de/fotos/ein-paar-glaser-gefullt-mit-flussigkeit-und-trinkhalmen-v_RGL0q1pTg'
+participants:
+  registered: 26    
 eventId: '611j45n6ja4orjdn7m29a11acd'
 ---

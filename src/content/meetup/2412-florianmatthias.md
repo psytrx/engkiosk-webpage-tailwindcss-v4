@@ -23,4 +23,10 @@ talks:
     website: 'https://medium.com/@anefeunu'
     slides: '2412_nkem_building_better_relationships.pdf'
 eventId: '69srtjfqrffnpbdtspdebs8i7s'
+participants:
+  registered: 44
+  present:
+    total: 39
+    male: 32
+    female: 7
 ---

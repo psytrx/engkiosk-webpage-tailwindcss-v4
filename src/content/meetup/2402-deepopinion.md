@@ -20,4 +20,6 @@ talks:
     linkedin: 'veronika-b-1b98661bb'
     slides: '2402-vero-mentalhealth.pdf'
 eventId: '1pnupuidkki38i0i1c9mmfsffm'
+participants:
+  registered: 56
 ---
