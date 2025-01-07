@@ -32,7 +32,7 @@ chapter:
   title: Verteiltes System und komplexe Technologien
 - start: 01:01:47
   title: Die Zukunft um Kafka und das Ecosystem
-deezer: ''
+deezer: https://www.deezer.com/episode/705919331
 description: "Data Streaming und Stream Processing mit Apache Kafka und dem entsprechenden\
   \ Ecosystem. Eine ganze Menge Prozesse in der Softwareentwicklung bzw. f\xFCr die\
   \ Verarbeitung von Daten m\xFCssen nicht zur Laufzeit, sondern k\xF6nnen asynchron\
@@ -96,8 +96,8 @@ tags:
 - Interview
 title: '#177 Stream Processing & Kafka: Die Basis moderner Datenpipelines mit Stefan
   Sprenger'
-transcript_raw: ''
-transcript_slim: ''
+transcript_raw: src/data/transcripts/177-transcript.zip
+transcript_slim: src/data/transcripts/177-transcript-slim.json
 youtube: https://www.youtube.com/watch?v=vktDEQCj9p0
 
 ---
