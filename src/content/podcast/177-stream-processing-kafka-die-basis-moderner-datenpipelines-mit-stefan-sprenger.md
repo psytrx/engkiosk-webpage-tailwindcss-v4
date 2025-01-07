@@ -84,7 +84,11 @@ rtlplus: ''
 six_user_needs: []
 speaker:
 - name: Andy Grunwald
+  transcriptLetter: A
 - name: Wolfi Gassler
+  transcriptLetter: B
+- name: Stefan Sprenger
+  transcriptLetter: C
 spotify: https://open.spotify.com/episode/4pMOef1e09k5bQpUb7qtfW
 tags:
 - Backend

@@ -1,0 +1,1568 @@
+{
+  "language_code": "de",
+  "audio_url": "https://cloud.inlupus.at/s/cSY29QxjRojyLTY/download/ep177_kafka.mp3",
+  "punctuate": true,
+  "format_text": true,
+  "dual_channel": false,
+  "multichannel": null,
+  "audio_channels": null,
+  "webhook_url": null,
+  "webhook_auth_header_name": null,
+  "webhook_auth_header_value": null,
+  "audio_start_from": null,
+  "audio_end_at": null,
+  "word_boost": [],
+  "boost_param": null,
+  "filter_profanity": false,
+  "redact_pii": false,
+  "redact_pii_audio": false,
+  "redact_pii_audio_quality": null,
+  "redact_pii_policies": null,
+  "redact_pii_sub": null,
+  "speaker_labels": true,
+  "speakers_expected": 3,
+  "content_safety": false,
+  "content_safety_confidence": null,
+  "iab_categories": false,
+  "custom_spelling": null,
+  "disfluencies": false,
+  "sentiment_analysis": false,
+  "auto_chapters": false,
+  "entity_detection": false,
+  "summarization": false,
+  "summary_model": null,
+  "summary_type": null,
+  "auto_highlights": false,
+  "language_detection": false,
+  "language_confidence_threshold": null,
+  "language_confidence": null,
+  "speech_threshold": null,
+  "speech_model": null,
+  "id": "5ec03ee4-e02f-41bf-98a3-21b229ed21a4",
+  "status": "completed",
+  "error": null,
+  "utterances": [
+    {
+      "text": "Herzlich willkommen zu einer neuen Episode vom Engineering Kiosk Podcast. Franz Kafka sagte ich habe nichts anderes als das Schreiben. Es ist mein ganzer Halt. In dieser Episode geht es auch um das Schreiben irgendwie und um Kafka. Zwar nicht um den Franz, aber ach. Ich fange mal ganz vorne an. Eine Menge Prozesse in der Softwareentwicklung bzw. Für die Verarbeitung von Daten müssen nicht zur Laufzeit, sondern können asynchron oder dezentral bearbeitet werden. Begriffe wie Batch Processing oder Message queuing, Pub Sub sind dafür geläufig. Es gibt aber einen dritten Player in diesem Streamprocessing Stream Processing. Da ist apache Kafka das Flaggschiff bzw. Die verteilte Event Streaming Plattform, die oft als erstes genannt wird. Doch was ist denn eigentlich Stream Processing und wie unterscheidet es sich zu Batch Processing oder Message queuing? Wie funktioniert Kafka und warum ist es so erfolgreich und performant? Was sind broker Topics, Partitions Producer und Consumer? Was bedeutet Change data capture und was ist ein Sliding Window? Und warum ist es gar nicht so einfach, wenn man eine simple Nachricht schreiben und lesen möchte? Die Antwort und noch viel mehr liefert unser Gast Stefan Sprenger. Ab gehts. Viel Spaß. Jetzt kommt die flacheste Überleitung zum Thema, die mir je eingefallen ist. Ich wohne in Duisburg. Duisburg liegt im Ruhrgebiet. Im Ruhrgebiet, ja. Da gibt es die Ruhr, den Fluss, das ist alles richtig. Aber es gibt auch den Rhein. Ein klassisches Sprichwort heißt bei uns, es fließt noch viel Wasser den Rhein runter. Und der Rhein ist jetzt auch kein kleiner Fluss. Sehr essentiell für die Binnenschifffahrt. Noch mal ein Der größte Binnenhafen Europas liegt Wolfgang, richtig?",
+      "start": 4000,
+      "end": 110718,
+      "confidence": 0.9032576,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "In Duisburg.",
+      "start": 110854,
+      "end": 111622,
+      "confidence": 0.885445,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "In Duisburg.",
+      "start": 111686,
+      "end": 112302,
+      "confidence": 0.937005,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "So. Also dieses Sprichwort gibt es bei uns auch, obwohl wir keinen Reihen haben.",
+      "start": 112326,
+      "end": 116006,
+      "confidence": 0.81421286,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Noch besser. Das macht meine Überleitung noch flacher. Aber was ist der Rhein? Der Rhein ist ein Fluss. Der Fluss hat einen Strom. Was heißt Strom übersetzt auf Englisch? Stream. Aha. Und das ist das heutige Thema. Streaming, Stream Processing. War die flach? Die war schon richtig.",
+      "start": 116078,
+      "end": 131394,
+      "confidence": 0.89551383,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Der eigentliche Grund, warum du im Stream Processing so gerne auch unterwegs bist.",
+      "start": 131522,
+      "end": 135298,
+      "confidence": 0.89005154,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Weil ich sehr nah am Rhein wohne. Ja, genau.",
+      "start": 135394,
+      "end": 137370,
+      "confidence": 0.9906922,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Also irgendwie ganze logistische Thema und Schifffahrt und Pakete, die gesendet werden über über das Wasser und so.",
+      "start": 137410,
+      "end": 144898,
+      "confidence": 0.86791056,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Pakete, die übers Wasser gesendet werden. Okay, jetzt langsam wird es wirklich flach. Ich höre mal auf. Also, aber wir sprechen heute über Stream Processing und Stream Processing wird vielen Leuten wahrscheinlich schon geläufig sein. Entweder nutzen sie es oder sie haben es schon mal gehört. Auf jeden Fall. Alternativen sind z.b. so was wie Batch Processing oder viele Leute nutzen auch irgendwie eine Art von Message queuing, Pub Sub und ähnliches. Fällt alles so minimal in den Bereich. Die Leute, die sich wirklich jetzt sehr identifizieren mit Stream Processing oder Batch Processing oder Pub Sub oder Message queuing, die werden sehr wahrscheinlich jetzt gerade mit Fackeln mich jagen, wenn ich sage, das fällt alles irgendwie in den Bereich. Aber dafür haben wir uns auch wieder einen Gast eingeladen und ich bin sehr glücklich, dass dieser Gast dieser Einladung gefolgt ist. Hallo Stefan, schön, dass du da bist.",
+      "start": 144994,
+      "end": 189530,
+      "confidence": 0.8960163,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Hi, grüß euch.",
+      "start": 189570,
+      "end": 190338,
+      "confidence": 0.82974,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Stefan, mal mal ganz kurz für alle Hörerinnen und Hörer. Wer bist du eigentlich und warum kannst du auch über Streaming und Stream Processing reden? Also du bist Dr. Der Naturwissenschaften, speziell in Informatik.",
+      "start": 190394,
+      "end": 200714,
+      "confidence": 0.8896577,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Endlich mal jemand, mit dem ich sinnvoll sprechen kann. Nicht mit Nandi immer, sondern mal auf selber Ebene.",
+      "start": 200802,
+      "end": 207626,
+      "confidence": 0.8757617,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Stefan, für dich zum Kontext. Hier ist der Running Gag, dass ich, da ich nur einen Bachelor in Wirtschaftsinformatik habe, ich bin deklariert als Studienabbrecher, denn Wolfgangs Doktorvater sagte, alle Beschiranten sind eigentlich nur Studienabbrecher. Aber nun gut. Du bist Dr. Der Naturwissenschaften im Bereich Informatik. Deine Doktorarbeit ging über efficient Processing of Range Queries in Main Memory, ist also soviel ich weiß, im Fachbereich Datenbanken gewesen. Du bist beruflich seit mehreren Jahren im Data bzw. Im Data Streaming Bereich unterwegs. Du warst mal Data Engineer bei der ING, einer Bank in Deutschland, Soviel ich weiß. Danach hast du deine eigene Firma rund um Cloud native Data Pipelines gegründet und geleitet. Und inzwischen bist du Dev Software Engineer bei Confluent. Da arbeiten unter anderem die Gründer bzw. Die originalen Autoren von Kafka selbst, von der Kafka Applikation. Und dort bist du Teil des Developer Tooling Experiences Team. Du stehst des öfteren mal auf den Bühnen dieser Welt und sprichst auch über Kafka. Kafka Workloads gibt es Crashkurse in Error Handling for Streaming Data Pipelines, habe ich gesehen, so zumindest auf der Berlin Buzzword. Und du hast sogar ein Buch über Kafka geschrieben, was sich nennt Streaming Data Pipelines with Kafka. Was habe ich vergessen?",
+      "start": 207738,
+      "end": 281430,
+      "confidence": 0.8933101,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Ich glaube, das war eine gute Zusammenfassung. Das Buch ist noch in Arbeit, ist noch nicht ganz abgeschlossen. Das ist glaube ich, so die kleine Fußnote. Aber ansonsten ja, danke dir.",
+      "start": 281510,
+      "end": 288742,
+      "confidence": 0.92084324,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Wie ist es bisher soweit, ein Buch zu schreiben? Ich habe auch mal ein Buch geschrieben. Es war ich lass dir mal die Antwort.",
+      "start": 288806,
+      "end": 295574,
+      "confidence": 0.90312874,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Die Antwort ich habe den den Prozess schon mal durchgemacht vor einigen Jahren. Ich glaube vor mehr als 10 Jahren habe ich deutsches Buch über Rails geschrieben, habe mir dann gesagt, dass ich das nie wieder machen werde. Und ja, hier bin ich und mache es doch noch einmal.",
+      "start": 295662,
+      "end": 309882,
+      "confidence": 0.90919816,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Ist es irgendwie ein Unterschied zwischen deutschem Verlag und englisch im Verlag?",
+      "start": 309986,
+      "end": 313578,
+      "confidence": 0.8984575,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Also damals habe ich das Buch zusammen oder für den D Punkt Verlag geschrieben, dem das veröffentlicht wird sagen ist auch relativ moderner Verlag mit Fokus auf IT, auf Technologien. Wird jetzt nicht sagen, dass ein großer Unterschied festzustellen. Amerikanische Verlage konzentrieren sich glaube ich noch stärker auf Sales Marketing. Aber an sich der.",
+      "start": 313714,
+      "end": 334362,
+      "confidence": 0.88536817,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Ich merke schon, du bist genauso konsequent wie der Wolf Wolfgangs Credo war, als er aus seiner akademischen Laufbahn, ich sag mal in die freie Wirtschaft wechseln wollte. Okay, ich fange mich jetzt an zu bewerben und ich kann mir vorstellen, überall zu arbeiten, nur nicht in Deutschland als Österreicher. Ja, sein erster Job war dann in Deutschland.",
+      "start": 334426,
+      "end": 352318,
+      "confidence": 0.94938,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Also ich habe mir aber vorgenommen, kein Buch mehr zu schreiben. Das habe ich bisher mal eingehalten. Aber schauen wir mal Zukunft noch bringt für dich eben.",
+      "start": 352454,
+      "end": 362270,
+      "confidence": 0.93625146,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Was gibt es für ein Eta für dein Buch Ÿousand?",
+      "start": 362430,
+      "end": 364410,
+      "confidence": 0.918513,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Das ist böse Frage. Das ist so wie wenn mal jemand fragt wann ist die Doktorarbeit fertig?",
+      "start": 364860,
+      "end": 368940,
+      "confidence": 0.85413414,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Ja, es gibt 10 Kapitel 18 geschrieben. Also hoffentlich dauert es mehr als.",
+      "start": 368980,
+      "end": 373820,
+      "confidence": 0.89738077,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Aber die Regel wird da jetzt nicht.",
+      "start": 373900,
+      "end": 376716,
+      "confidence": 0.98753,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Applied, wird nicht zelebriert. Nein.",
+      "start": 376748,
+      "end": 378340,
+      "confidence": 0.842892,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Okay, okay. Sonst hätte ich gesagt, dauert noch ein bisschen. Aber okay, lasst uns in das Thema einsteigen. Und zwar sprechen wir heute über Data streaming und Stream Processing. Und die erste Frage, die ich mir immer stelle was ist das eigentlich? Mir mal Data streaming und Stream Processing erklären, als wäre ich ein fünf Jahre alter Bub.",
+      "start": 378420,
+      "end": 400470,
+      "confidence": 0.9148507,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Mein Sohn ist fünf Jahre alt, meine Tochter sechs. Oh, und das ist eine sehr schwierige Frage. Ich habe es noch nicht versucht, ihn zu erklären.",
+      "start": 400630,
+      "end": 406230,
+      "confidence": 0.9066804,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Dann hast du ja jetzt zum ersten Mal die Chance.",
+      "start": 406350,
+      "end": 408350,
+      "confidence": 0.820254,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Genau, der erste Versuch. Genau. Also ich würde wahrscheinlich so rangehen und ihnen versuchen zu erklären, dass Computer Software Systeme sich miteinander austauschen müssen, so wie wir uns unterhalten, so wie wir unsere Ÿousand Erlebnisse, Ereignisse, die wir erlebt haben, uns erzählen und würde ihnen wahrscheinlich erklären, dass das früher vor eurer Zeit sich Software Systeme im Badge Ansatz ausgetauscht haben. Das heißt, wenn wir die Software System hätten wir uns vielleicht morgens einmal an den Frühstückstisch gesetzt und uns die Ereignisse vom Vortag erzählt. Und mit Data Streaming können wir das Ganze kontinuierlich machen, müssen nicht auf das nächste Frühstück warten, sondern können uns eigentlich den ganzen Tag über zweitausendeinundzwanzig Dinge erzählen, uns austauschen, immer wenn etwas anliegt.",
+      "start": 408430,
+      "end": 451970,
+      "confidence": 0.8913575,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Als fünfjähriger Bub würde ich sagen, sitzen wir dann kontinuierlich am Frühstückstisch.",
+      "start": 452090,
+      "end": 455834,
+      "confidence": 0.85337085,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Warum, weshalb?",
+      "start": 455922,
+      "end": 457666,
+      "confidence": 0.52989,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Ja, wie würdest du denn, wie würdest.",
+      "start": 457818,
+      "end": 460458,
+      "confidence": 0.8101971,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Du denn Data Streaming und Stream Processing für für Softwareentwickler beschreiben und so, dass ich sag mal ein Mid level engineer gut versteht.",
+      "start": 460474,
+      "end": 468994,
+      "confidence": 0.81274307,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Ein Mid level Engineer, so ganz schön großer Sprung von dem fünfjährigen Woob.",
+      "start": 529042,
+      "end": 532770,
+      "confidence": 0.6833669,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Naja, da ist gar nicht so viel Zeit dazwischen.",
+      "start": 532850,
+      "end": 535110,
+      "confidence": 0.9596811,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Jetzt erhöhst du meine Erwartungen an meinen Sohn. Ja, um was geht es beim Data Streaming? Im Prinzip geht es darum, dass sich verschiedene Software Dienste, Services miteinander austauschen können und kontinuierlich Daten streamen können. Üblicherweise haben wir da Systeme, die Daten schreiben, die werden üblicherweise Producer genannt und Systeme, die die Daten empfangen oder lesen, das sind Consumer. Und Data Streaming ermöglicht eben diesen kontinuierlichen Prozess des Datenaustauschs.",
+      "start": 535730,
+      "end": 567610,
+      "confidence": 0.8942606,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Jetzt sind wir ja alle irgendwie gewöhnt mit Datenbanken zu arbeiten, ganz klassisch oder es hat mal auch diesen Hype um Message Cues irgendwie gegeben. Wie würdest du denn das abgrenzen? Weil ihr kann ja auch gemeinsam von zwei Applikationen in eine Datenbank schreiben oder auch lesen, was ihr üblicherweise auch so oft gemacht habt.",
+      "start": 567650,
+      "end": 582750,
+      "confidence": 0.8781569,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Ja, guter Punkt. Jetzt gehen wir glaube ich schon konkret Technologien ein. Also wenn du gerade Message Queues genannt hast, Data Streaming erstmal so als abstraktes Konzept genannt eben, aber wenn wir uns dann Technologien anschauen, mit denen Data Streaming implementiert wird, wie Kafka z.b. wenn wir uns Use Cases wie Stream Processing anschauen, die Daten, die die gestreamt werden, auch noch verarbeitet werden, dann geht es häufig um den Austausch von Daten. Mit einem großen Durchsatz werden hohe Anforderungen bezüglich Performance, Skalierbarkeit an an die Technologien gestellt. Und das sind dann Dinge, die so klassische Message Systeme oder Datenbanken einfach nicht können, weil sie sich auf andere Use Cases konzentrieren. Ich will also nicht sagen Message Systeme, Datenbanken sind obsolet, fokussieren sich einfach auf andere Use Cases als z.B. kafka.",
+      "start": 582790,
+      "end": 631096,
+      "confidence": 0.8897125,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Was wäre denn jetzt der klassische Use Case, wo man eher dann ein Message Queue System ansetzen würde oder halt ich sag mal ein reprocessing System?",
+      "start": 631128,
+      "end": 639360,
+      "confidence": 0.89678884,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "So ein klassische Use Case für Message Queue Systeme sind vielleicht Background Jobs, die abgearbeitet werden müssen, wo man also so eine Aufgabe auf die, ich sag mal Message Queue legt, die dann von einem Background Job abgeholt wird, die wirklich dann auch noch acknowledged werden muss, diese einzelne Aufgabe. Message Queue Systeme bieten Funktionen an wie aufwändigeres Routing von Nachrichten, also wesentlich mehr, ich sag mal Compute als ein System wie Kafka, das sich einfach nur um Storage und auch den Austausch von den.",
+      "start": 639740,
+      "end": 669988,
+      "confidence": 0.8514473,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Daten zwischen was mir, was mir gerade noch einfällt und dann noch mal als Abgrenzung zu Batch Processing, weil du hattest das mit dem Frühstückstisch so gerne erklärt, dass super Analogie finde ich, finde ich mega. Die klassische morgendliche Management KPI e Mail, die jeden Morgen um sechs, sieben oder acht kommt, wenn der Batch Prozess mal wieder spät läuft. Das ist so der klassische Batch Prozess, dass morgens irgendwie um 5 Uhr oder um 4 Uhr irgendwie einen Job losrennt, Daten cruncht und dann irgendwelche Zahlen und Graphen fürs Management rauspurzelt und wenn das Management dann morgens den die e Mail aufmacht, dass man direkt die Zahlen vom Vortrag hat. Also klassische Batch Prozess Use Case, den der mir zumindest fast in jeder Firma irgendwie unterkommt.",
+      "start": 670004,
+      "end": 712032,
+      "confidence": 0.86091226,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Ja, ich glaube auch so klassische Reporting Analysen, Accounting, wo man wirklich den Stichpunkt hat, an an dem abgerechnet wird, sind wahrscheinlich eher klassische Batch Batch Use Cases. Aber ich glaube am Ende des Tages sind Batch Data streaming gar nicht so unterschiedlich, sondern schon stark miteinander verwandt. Das sind gar nicht so die Gegensätze, die sie immer dargestellt werden.",
+      "start": 712136,
+      "end": 735970,
+      "confidence": 0.90838534,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Du sagtest ja gerade okay, die sind vielleicht gar nicht so unterschiedlich. Da kommt mir immer diese Analogie in den Sinn. Jedes Quadrat ist ein Rechteck, aber nicht jedes Rechteck ist ein Quadrat. Ich glaube, ich glaube so so ist es richtig rum. Bin mir gar nicht sicher. Kann man dann auch z.B. batch Processing mit Streaming machen oder Message queuing mit Streaming, aber nicht Streaming mit Message Queuing z.B. also kann man diese Systeme vielleicht auch so umdrehen, dass man sie nutzt für Zwecke, wo sie vielleicht gar nicht gar nicht original gedacht waren?",
+      "start": 736130,
+      "end": 769390,
+      "confidence": 0.905068,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Bestimmt und das geht bestimmt auch immer bis zu einem bestimmten Punkt. Ab dem Punkt geht es da nicht weiter. Aber bestimmt kann man die verschiedenen Technologien auch immer für fremde Use Cases einsetzen. Ich meine, am Ende des Tages kann man auch mit einem Batch Connector vielleicht einmal in der Nacht jeden Tag Daten aus dem Quellsystem abholen und in einen Data stream legen und die restliche Zeit passiert dann eben nichts. Genauso gut kann man wahrscheinlich die Frequenz von batch Workload erhöhen und nicht nur einmal am Tag, sondern vielleicht jede h, jede halbe h, jede min diesen Prozess durchlaufen, wodurch man dann das eine oder andere erreichen würde. Wir steigen jetzt von der auf die auf die drei Fuß Perspektive ab, aber auch Systeme wie Kafka. Also da gibt es jetzt auch eine neue Entwicklung, ein neues Feature, was im Prinzip Kafka für so klassische Message Queue Use Cases öffnet. Z.B. das Acknowledging von einzelnen Nachrichten ermöglicht. Wird Kafka automatisch dadurch zu der Message Queue? Ich glaube nicht, aber deckt eben ein paar weitere Use Cases.",
+      "start": 769510,
+      "end": 835198,
+      "confidence": 0.8947336,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Aber dann bleiben wir doch mal auf der Fuß Höhe. Was sind übrigens Fuß? Andi? In M sind ein deutscher Podcast. Beschweren sich immer, dass wir so viel englisch reden. Aber wo sind die Fuß in M? Okay, du kannst mal rechnen in der Zwischenzeit der Wahl. Stell dir meine Frage.",
+      "start": 835254,
+      "end": 851038,
+      "confidence": 0.8933455,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "3 km 3048 metrische System. Entschuldigung.",
+      "start": 851134,
+      "end": 854878,
+      "confidence": 0.75499666,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Auf jeden Fall kannst du mal erklären, was Kafka überhaupt ist? Du hast jetzt Kafka wen? Producer, Consumer und vielleicht auch warum ist Kafka so groß geworden in dem Bereich und was macht Kafka? Einfach einmal so ein Rundumschlag für alle, die vielleicht auch Datenbanken kennen und mal Streaming gehört haben. Aber was macht jetzt Kafka eigentlich wirklich aus und in welchem Bereich siedelt man dann Kafka auch an? In welchen Szenarios?",
+      "start": 854974,
+      "end": 877832,
+      "confidence": 0.852849,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Ich glaube, mittlerweile versteht man Kafka als Data Streaming Plattform und das bringt einige verschiedene Komponenten dafür mit. Aber lasst uns vielleicht erstmal einen Blick auf auf den Kern von Kafka werfen. Kafka ist ein Message Broker und implementiert im Prinzip ein verteiltes Log, ein append only log. Kafka ist ein verteiltes System, Ÿousand. Es gibt zum einen Kafka als Server und es gibt Client Anwendungen wie die Producer und Consumer und Producer können sich mit dem Kafka Cluster verbinden, können Daten in dieses Log schreiben, schreiben an das Ende vom Log und Consumer können sich genauso mit dem Kafka Cluster verbinden und eben Daten von diesem Log lesen. Kafka selbst ist wahrscheinlich die beste Implementierung eines eines verteilten Logs und hat das ganze bezüglich der Punkte Performance, Skalierbarkeit und auch Ausfallsicherheit oder Hochgebirge optimiert.",
+      "start": 877856,
+      "end": 931902,
+      "confidence": 0.8887067,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Jetzt hast du schon locker erwähnt, das ist nicht unbedingt zu verwechseln mit dem klassischen Logging oder mit Log falsch schreiben.",
+      "start": 931966,
+      "end": 939290,
+      "confidence": 0.89278525,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Genau. Es geht nicht um Application Logging, um Log Dateien zu füllen, sondern es geht darum, im Prinzip ein Append only log zu implementieren, ans Ende schreiben zu können und im Prinzip von jeder Position lesen.",
+      "start": 940150,
+      "end": 954910,
+      "confidence": 0.8642225,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Aber ein Szenario, wo ich Logs in Kafka schreibe, ist doch ein ist durchaus.",
+      "start": 954950,
+      "end": 959430,
+      "confidence": 0.82991,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Eines der Use Cases, die von Kafka auch abgedeckt werden.",
+      "start": 960570,
+      "end": 964474,
+      "confidence": 0.898527,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Aber das als Append only log, das ist eine Datenstruktur.",
+      "start": 964562,
+      "end": 968986,
+      "confidence": 0.985127,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Das ist eine Datenstruktur, genau.",
+      "start": 969058,
+      "end": 970426,
+      "confidence": 0.984462,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Und Datenstrukturen haben ja in der Regel immer, ich sag mal, Stärken und Schwächen. Welche Stärken und Schwächen würdest du beim Append append Only Doc heißt die Datenstruktur, heißt das einfach nur Liste oder wie heißt die Datenstruktur unten drunter? Und wie würdest du sagen, okay, das sind die Stärken, das sind die Schwächen dieser Datenstruktur?",
+      "start": 970498,
+      "end": 984882,
+      "confidence": 0.9149827,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Ÿousand genau. Also lasst uns mal schön einen Blick auf Stärken und Schwächen werfen. Wir können sehr schnell schreiben, weil wir einfach nur an das Ende des Logs schreiben können. Das heißt, wir müssen jetzt nicht die Position suchen, wo wir die neuen Daten einfügen müssen. Wir können sehr schnell lesen mit sequential IO auch, was uns eine sehr gute Performance liefert. Wir können nicht gut Punktabfragen machen, das heißt, wir können nicht sagen, hey, such mir mal in dem Log das Record, das die und die Eigenschaften hat, weil wir dazu eben das komplette Log durchsuchen müssten. Also es müssten ansonsten wahrscheinlich zusätzliche Indexstrukturen einfach betreiben, um da effizient dieses Log durchsuchen zu können.",
+      "start": 984906,
+      "end": 1029292,
+      "confidence": 0.9122654,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Also das ist der große Unterschied zu Datenbanken oder dass du, dass der Anwendungsfall ein anderer ist oder der Fokus eigentlich ein anderer ist, weil Daten werden ja in beiden in irgendeiner Form gespeichert und auch weitervermittelt.",
+      "start": 1029396,
+      "end": 1040628,
+      "confidence": 0.8989373,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Genau. Also auch die meisten Datenbanken intern irgendwo maintainen einen Writer Headlock, aber ja, zweitausendein dahingehend sind die Use Cases ein bisschen anders, dass Datenbanken natürlich umfangreiche Abfragemöglichkeiten anbieten und bei einem Log wie Kafka das ganze beschränkt ist. Also da kann ich entweder von einem bestimmten Punkt anfangen im Log zu lesen, vielleicht vom Anfang irgendwo in der Mitte oder oder am Ende, aber kann jetzt nicht das ganze Log mit mit einer Operation, mit einer Suchanfrage durch suchen, Abfragen analysieren.",
+      "start": 1040684,
+      "end": 1070594,
+      "confidence": 0.8846023,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Maintain Kafka selbst eine zweite oder vielleicht sogar eine dritte Indexstruktur, wo man dann noch andere Abfragen machen kann in Bezug auf, ich sag mal jetzt Zeit, gib mir alle neuen Einträge seit letzter Woche oder ähnliches. Oder kann ich wirklich nur sagen, okay, erst alle Einträge ab Eintrag fünf und siebzigste?",
+      "start": 1070642,
+      "end": 1086034,
+      "confidence": 0.9019973,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Zum einen können wir alle Einträge ab Eintrag 75 lesen. Kafka maintained da offsets, sodass jeder Record in dem Log eben oder in jeder log Partition ein eigenes Offset hat. Wir können aber auch ab einem bestimmten Timestamp lesen und dafür hat Kafka so Mini Indexstrukturen, sage ich mal, sehr leichte Indexstrukturen.",
+      "start": 1086082,
+      "end": 1107932,
+      "confidence": 0.8744433,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Heißt es aber, ich kann den letzten Wert schnell finden von dem Eintrag oder muss ich dann alles durchgehen? Um den den letzten aktuellen Wert auch zu bekommen.",
+      "start": 1107996,
+      "end": 1115956,
+      "confidence": 0.94196784,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Für FM Key kann ich jetzt nicht schnell den letzten Eintrag suchen, sondern nur für ein bestimmtes Offset.",
+      "start": 1116028,
+      "end": 1120356,
+      "confidence": 0.86148053,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Du hattest schon gesagt, das ist ein verteiltes Log und jetzt reden wir gerade von, ich sag mal, ja, einer einer Liste. Wie setzt Kafka die Verteilung eines Logs denn um?",
+      "start": 1120388,
+      "end": 1131584,
+      "confidence": 0.9109826,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Als Entwickler arbeiten wir mit Topics in Kafka. Das ist eher ein virtuelles Konzept. Also vielleicht können wir uns das so vorstellen wie eine Datenbank Tabelle. In einem Topic legen wir vielleicht Bestellungen ab, in einem anderen User Daten, in einem dritten Inventarbeständer etc. Also eher virtuell logisch zusammenhängende Daten. Diese diese Topics sind auf der physischen Ebene können die aus ein oder mehreren Partitionen bestehen, aus Gründen der Skalierbarkeit, sodass wir eben mit mehreren auch Anwendungsinstanzen in die verschiedenen Partitionen eines Topics schreiben können oder mehrere Partitionen gleichzeitig konsumieren, lesen können. Und diese Partitionen können auf verschiedenen Nodes des Kafka Clusters verwenden den Broker für einen Node im Kafka Cluster.",
+      "start": 1131632,
+      "end": 1174634,
+      "confidence": 0.8848406,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Okay, also ein Broker ist wirklich eine Compute Note, eine virtuelle Maschine. Genau, die Broker selbst kommunizieren miteinander. Das bedeutet, ein Broker hat n topics und ein Topic hat eins bis n Partitions.",
+      "start": 1174682,
+      "end": 1188318,
+      "confidence": 0.9123791,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Genau, also ein Topic besteht aus ein bis n Partitionen, die können auf unterschiedlichen Brokern gelegt sein. Aus Gründen der Skalierbarkeit wird das gemacht. Darüber hinaus repliziert Kafka oder kann Kafka diese Partition auch replizieren, sodass z.B. wenn wir uns überlegen, dass wir ein Replikationsfaktor von drei einsetzen, Kafka drei Kopien von jeder Partition in dem Cluster maintained, sinnvollerweise auf unterschiedlichen Brokern. Und ein Broker übernimmt die Rolle eines sogenannten Leaders für jede Partition in dem Cluster. Das heißt, es ist auch standardmäßig der Broker, mit dem Producer und Consumer sprechen. Und die weiteren Replikate der Partition werden dann eben auf anderen Brokern abgelegt und die übernehmen die Rolle eines Followers.",
+      "start": 1188414,
+      "end": 1235122,
+      "confidence": 0.88858414,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Das bedeutet dann aber jetzt auch, dass man keine Reihenfolge der Datensätze innerhalb eines Topics haben kann. Richtig? Denn die sind ja über mehrere Compute Notes verteilt.",
+      "start": 1235226,
+      "end": 1244730,
+      "confidence": 0.93134964,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Genau. Also nicht innerhalb von eines Topics zweitausendeinundzwanzig, aber innerhalb einer Partition wird schon die Reihenfolge, in der die Daten geschrieben werden, garantiert.",
+      "start": 1244770,
+      "end": 1254000,
+      "confidence": 0.87554693,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Jetzt hast du erwähnt, dass da Einträge geschrieben werden und so weiter. Jetzt in einer klassischen Datenbank habe ich da ein Insert Statement, ich habe ein Schema, ich trage da die strukturierten Daten ein, wie sieht denn ein Datensatz in Kafka aus? Habe ich da ein Schema, habe ich da eine Insert Query? Also wie funktionieren die Entries an sich?",
+      "start": 1254040,
+      "end": 1271568,
+      "confidence": 0.8740028,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Genau, also die Partition selbst, die enthalten dann Records, das sind die eigentlichen Daten und jeder Record besteht aus einem Key, aus einem Value. Das sind so die zwei, ich sag mal Hauptfelder eines Records, mit dem man dann auch mit der Anwendung interagiert. Das sind in beiden Fällen byte Arrays. Das heißt, Kafka selbst beschäftigt sich nicht wirklich damit, welche Daten stecken da eigentlich drin, möchte sich glaube ich, auch nicht damit beschäftigen aus Performance Gründen, sondern behandelt die einfach als Byte Arrays und überträgt im Prinzip oder delegiert die Aufgabe der der Handhabung der Daten schimmert an die Client Anwendung, an die Producer und Consumer. Und neben den Keys und Values gibt es noch ein paar weitere Felder wie ein Offset, so eine fortlaufende Nr. Des Records in jeder Partition. Es gibt einen Timestamp für jeden Record, der kann vom Producer gesetzt werden, wird üblicherweise vom Broker gefüllt mit dem Zeitpunkt, zu dem der Record bei dem Broker angekommen ist. Und dann gibt es noch so ein paar, ich sag mal Meta Felder wie Header, das sind wie so eine Art Metadaten, die nach dem Record, die braucht immer einen Key.",
+      "start": 1271664,
+      "end": 1342680,
+      "confidence": 0.8931705,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Also kann es nicht einfach Daten so log mäßig senden, sondern ich brauche immer einen Key.",
+      "start": 1342760,
+      "end": 1347720,
+      "confidence": 0.8904744,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Man braucht nicht immer einen Key, man kann im Prinzip auch ein null Value als Key verwenden. Wichtig an der Stelle zu sagen ist, dass wenn der Producer Daten an Kafka schickt, dass auf Basis des Keys standardmäßig entschieden wird, in welche der Partitionen des Topics der Record eingefügt wird, sodass wenn man z.b. daten aus einer Datenbank extrahiert, Kafka schreibt, dass man vielleicht in Datenbank Primärschlüssel als Key verwendet, sodass eben Einträge für die gleiche Datenbankzeile immer in der gleichen Partition kann das auch weglassen, dann würde nach einem, ich sag mal round Robin im Prinzip Daten auf die Partition verteilt. Standardmäßig kann man natürlich auch noch.",
+      "start": 1347760,
+      "end": 1390172,
+      "confidence": 0.90410507,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Das bedeutet, der klassische Anwendungsfall für den Key wäre eigentlich so eine Art Sharding.",
+      "start": 1390236,
+      "end": 1393548,
+      "confidence": 0.8941671,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Genau, also es kommt darauf an, was für Daten wie hier haben. Wenn wir jetzt, wie gesagt, aus der Datenbank vielleicht Daten extrahieren, dann würde man da wahrscheinlich den Primärschlüssel des Datensatzes dann als Key verwenden.",
+      "start": 1393604,
+      "end": 1404296,
+      "confidence": 0.90320915,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Und weil wir jetzt gesagt haben, dass Kafka sich selbst gar nicht anschaut, welche Daten da im Kafka System liegen in diesem Append Log, bedeutet das auch, wir können jetzt nicht, ich sag mal, mit unserem klassischen SQL Wissen da agieren. Wir können jetzt kein where Statement oder ein group by machen oder ähnliches, sondern wir wir müssen halt wirklich ja diese Datensätze lesen und dann je nachdem, was da drin ist, entserialisieren, ob es jetzt JSON ist, Protobuf, Avro, XML, ja, oder es ist ja egal was, oder von mir aus auch einfach nur eine Zahl, aber dann muss die Applikation, also in diesem Fall der Consumer selbst entscheiden, was damit zu tun ist, richtig?",
+      "start": 1404368,
+      "end": 1442034,
+      "confidence": 0.93407714,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Genau. Also wir hatten gesagt, Kafka möchte das Distributed Log so performant wie möglich implementieren. Und wenn Kafka jetzt noch Abfragemöglichkeiten anbieten würde, wenn Kafka die Daten interpretieren würde, zweitausendein, wäre das wahrscheinlich nicht mehr so ganz performant. Und deshalb wird eben die Handhabung der Daten an die Client Anwendung delegiert. Irgendwie müssen sich natürlich diese Consumer und Producer dann auch einig werden. Und das kann man mithilfe von von Schemas und Datenformaten wie Afro above handhaben.",
+      "start": 1442122,
+      "end": 1472528,
+      "confidence": 0.88123244,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Jetzt gibt es aber schon natürlich Joins in Kafka, aber es soll ja keine Datenbank sein. Warum gibt es dann Joins und sind es überhaupt die klassischen Joints, die man aus Datenbanken kann?",
+      "start": 1472584,
+      "end": 1482214,
+      "confidence": 0.88790846,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Gute Frage. In Kafka selbst gibt es keine Joins, aber in Stream Processing, das sind dann Frameworks wie Kafka Streams, was von dem Open Source Projekt Kafka mitgebracht wird, oder es gibt auch noch ein paar andere Technologien wie apache Flink und die implementieren dann Joins. Und natürlich muss man auch bei der Echtzeitverarbeitung von Daten beim Data Streaming immer mal wieder verschiedene Datensätze, Datenmengen zusammenführen, wie vielleicht die die Echtzeitverarbeitung von Bestellungen zweitausendein mit aktuellen Informationen über über den Kunden anreichern und dafür braucht es dann Joins.",
+      "start": 1482312,
+      "end": 1517600,
+      "confidence": 0.90642077,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Nur zur Einordnung, also du hast das Streaming System selbst, Kafka und dann hast du Kafka Streams. Und Kafka Streams ist ja eigentlich, wenn ich das jetzt richtig verstanden habe, nur eine Art spezieller Consumer. Also das bedeutet eine Applikation, ein Prozess, was dann die Daten aus einer Partition bzw. Aus einem Topic liest und dann da etwas macht. Aber prinzipiell kann ich dafür Kafka Streams nutzen. Ich kann dafür Flinks, Spark und wie sie alle heißen nutzen, wenn ich einfach mal nach Streaming Consumer google oder ich glaube, es gibt sogar apache Camel und allem drum und dran. Aber ich kann auch einfach nur in JavaScript selbst etwas schreiben, was sich nach Kafka connected und dann die Daten aus einem Topic liest, richtig?",
+      "start": 1517720,
+      "end": 1558284,
+      "confidence": 0.9342653,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Genau. Es gibt so die, ich sag mal low level Consumer Producer Schicht. Dafür gibt es Clients in den verschiedenen Sprachen. Kafka Projekt selbst maintained für Java declines, aber es gibt eine sehr große Community für die Clients, sodass man einfach die Sprache der Wahl nehmen kann und dann natürlich Low Level Consumer Producer Anwendungen implementieren kann. Und dann gibt es Technologien wie Kafka Streams oder apache Flink, die eine Ebene über diesen Consumern und Producern sitzen, unter anderem Dinge wie eine DSL anbieten, um Stream Processing Anwendungen zu bauen. Die benutzen unten drunter die einfachen Consumer und Producer, aber bieten on top noch mehr an. Und wenn wir über Stream Processing sprechen, dann müssen wir auch darauf zu sprechen kommen, dass es zum einen stateless Stream Processing gibt und stateful Stream Processing. Stateless ist noch in Anführungszeichen simpel. Also da geht es um die einfache Transformation von von Events, um das Filtern von Events, also wenn man vielleicht nicht alle Records von dem Quelltopic in das Ziel Topic schreiben möchte, aber es gibt eben auch wesentlich komplexere Operationen im Bereich Stateful Stream Processing, wie das Joinen von Topics oder Aggregation. Und spätestens da lohnt es sich eben auf Technologien wie Kafka Streams oder Apache flink zu setzen, um dieses Handhaben von von State und auch Konzepte wie Windows oder Windowing nicht selbst sehen.",
+      "start": 1558412,
+      "end": 1649188,
+      "confidence": 0.90529364,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Das heißt, da sitzt eigentlich irgendwo in einer Ecke ein Ÿousand, ein Worker z.B. der mit irgendeiner Programmiersprache oder mit irgendeinem Toolset oder Library oder Streams eben z.B. kafka Streams, die Daten in irgendeiner Form transformiert, ändert, filtert, was auch immer damit macht und dann wieder zurückschreibt in ein anderes Topic. Also es wird immer nur gelesen, dann nochmal üblicherweise zurückgeschrieben.",
+      "start": 1649284,
+      "end": 1673122,
+      "confidence": 0.8984159,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Genau, das ist im Prinzip der Ansatz von von Kafka Streams, dass es mit mit Kafka zweitausendein Topics zusammenarbeitet. Bei anderen Technologien wie apache Flink gibt es auch andere Quell und Zielsysteme, die.",
+      "start": 1673226,
+      "end": 1684896,
+      "confidence": 0.8299385,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Also das ist wirklich ein übliches Pattern in der Streaming Welt, dass man Daten konsumiert, prozessiert und wieder zurück ins Streaming System schreibt.",
+      "start": 1685048,
+      "end": 1692816,
+      "confidence": 0.8990339,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Genau, weil sie auch an späterer Stelle z.b. in Drittsysteme geschrieben werden können. Und ich glaube, da haben wir gleich auch den Rundumschlag über das Ökosystem von Kafka gemacht und über die die Data Streaming Plattform Kafka also es gibt Kafka selbst als, ich sag mal, Storage, es gibt Kafka Streams als Screen Processing Technologie und es gibt auch Kafka Connect noch als Konnektoren Technologie, das im Prinzip eine Reihe an Konnektoren, an Source und Sync Konnektoren bereitstellt, die auch intern auf die Consumer Producer API aufsetzen und die eben wiederverwendbare Konnektoren für verschiedenste Datenbanksysteme, Data Systeme, Pis Objects etc. Anbieten. Die ermöglichen, also Source Connectoren ermöglichen eben, Daten aus diesen externen Systemen wie eine Datenbank zu lesen, in Richtung Kafka zu schreiben, und Sync Connectoren ermöglichen es, Daten aus einem Kafka Topic zu lesen und z.B. in Elasticsearch zu schreiben oder zu einem Cloud Data Warehouse zu übertragen.",
+      "start": 1692888,
+      "end": 1753764,
+      "confidence": 0.8663893,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Und diese Kafka Connectoren oder Kafka Connect Connector heißen die.",
+      "start": 1753852,
+      "end": 1757532,
+      "confidence": 0.865947,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Kafka Connect Connect heißt ja. Habe ich Kafka Connectoren gesagt? Zweitausendein?",
+      "start": 1757556,
+      "end": 1761662,
+      "confidence": 0.7825645,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Nee, nee, nee, nee. Also ich suche jetzt gerade den Begriff für einen einzelnen Connector, der jetzt von MySQL nach Kafka schreibt. Würde ich das dann Kafka Connect Connector sagen?",
+      "start": 1761716,
+      "end": 1772018,
+      "confidence": 0.914472,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Wahrscheinlich, wenn du die deutsche Genauigkeit bevorzugst, solltest du Kafka Connect Connector sagen.",
+      "start": 1772154,
+      "end": 1778690,
+      "confidence": 0.85173154,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Okay, aber prinzipiell mit Kafka Streams und Kafka Connect, die bieten mir eigentlich, ich nenne es mal ganz klassisch im Programmierspektrum, ein Framework an mit Funktionen, Methoden, Klassen und allem drumherum, die mir die Arbeit, diese klassische Arbeit Source und Zink von einem Drittsystem in Kafka, von Kafka in ein Drittsystem einfach, ich sag mal, erleichtern. Ich kann das aber auch alles selbst schreiben, wenn ich eine technische Herausforderung möchte, aber muss ich nicht.",
+      "start": 1778770,
+      "end": 1805458,
+      "confidence": 0.90371877,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Genau. Man will damit einfach vermeiden, dass es hunderte individuelle Anwendungen gibt, die Daten aus einer postgresql Datenbank extrahieren und in Richtung Kafka schreiben. Deshalb gibt es die Konnektoren, die das Ganze eben wiederverwendbar machen und ermöglichen, dass es eine sehr gute Standardimplementierung dafür gibt und natürlich auch Entwicklern einfach eine sehr große Menge an Zeit ersparen, da man die verwenden kann, um möglichst schnell diese Integration aufzusetzen.",
+      "start": 1805514,
+      "end": 1834886,
+      "confidence": 0.89595574,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Das heißt, ihr könnt aber auch ganz klassische Synchronisationsmechanismen von Datenbanken eigentlich mit mit Kafka und Kafka Streams z.B. abbilden oder vielleicht sogar ohne Streams, indem ich einfach zwei Datenbanken verbinde, unterschiedlicher Herstellerart, z.B. weil sonst könnt ihr die interne Synchronisation verwenden, um zwei Datenbanken in zwei unterschiedlichen Welten, vielleicht sogar eben Data Warehouse oder klassische OLTB Datenbank in Sync zu halten, zumindest in eine Richtung.",
+      "start": 1834958,
+      "end": 1863712,
+      "confidence": 0.850533,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Ja, auf jeden Fall ist, glaube ich, auch so eines der Haupt Use Cases für Data Streaming Datenintegration oftmals unterschätzt, aber man sieht es überall und Kafka und die anderen Komponenten aus dem aus dem Ökosystem bei Ÿousand.",
+      "start": 1863776,
+      "end": 1877378,
+      "confidence": 0.8926,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Aber wie funktioniert es dann in der Praxis? Also wie bekomme ich die Datenbanken aus einer Postgres, aus einer MySQL Datenbank wirklich heraus? Mache ich dann da ständig Select Anfragen? Und also wie funktioniert das?",
+      "start": 1877504,
+      "end": 1889542,
+      "confidence": 0.8290917,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Ja, also früher hat man meistens einfach einen Dump gezogen von der Datenbank und den vielleicht etwas modifiziert und dann in das andere Datenbanksystem eingespielt und währenddessen ging gar nichts und hoffentlich ging auch gar nichts schief während dieses Prozesses. In der Data Streaming Welt gibt es ein Konzept, das nennt sich Change Data Capture oder oftmals auch einfach nur CDC oder CDC genannt. Mit Change Data Capture können Änderungs Events, also Inserts, Updates, Deletes aus einem Datenbanksystem wie MySQL, Postgres oder die meisten anderen Datenbanksysteme extrahiert werden, in ein kafka Topic geschrieben werden. Da gibt es eine Reihe an fertigen Konnektoren dafür und dann eben über einen Connector in das andere Daten in das Ziel Datenbanksystem oder Data Warehouse.",
+      "start": 1889606,
+      "end": 1933166,
+      "confidence": 0.9003054,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Und wie funktioniert das in der Praxis? Also wie bekomme ich aus der Datenbank diesen Event Stream raus?",
+      "start": 1933238,
+      "end": 1939278,
+      "confidence": 0.91292834,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Ja, da gibt es verschiedene Möglichkeiten, CDC zu implementieren. Zum einen ganz klassisch über queries, was nicht so ganz effizient ist. Also da könnte man einfach wiederkehrend die Datenbank pollen, müsste man auf Felder wie ein Update Timestamp setzen, um Änderungen mitzubekommen. Kann man üblicherweise auch nur Insert und update Statements extrahieren, weil gelöschte Daten einfach verschwinden. Müsste man also Soft Deletes einsetzen, um auch gelöschte Zeilen extrahieren zu können. Aber in der Datastream Community ist log basiertes, haben wir schon das nächste mal.",
+      "start": 1939374,
+      "end": 1974128,
+      "confidence": 0.8969191,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Ein Log, es sind einfach zu viele.",
+      "start": 1974144,
+      "end": 1975680,
+      "confidence": 0.87134284,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Logs überall, log basiertes CDC sehr verbreitet.",
+      "start": 1975720,
+      "end": 1979336,
+      "confidence": 0.86295146,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Also da sprechen wir jetzt von dem.",
+      "start": 1979408,
+      "end": 1980808,
+      "confidence": 0.9114971,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Von dem Datenbank Log, von dem Replikationslog der Datenbank. Genau, über das man dann auch die verschiedenen Events auf Row Ebene, also Inserts, Updates, Deletes extrahieren kann und das Ganze auch möglichst performant durchführen kann, weil man eben nicht durch die verschiedenen Schichten der Datenbank laufen muss, keine Queries ausführen muss, sondern direkt von dem Log, was vergleichbar ist mit dem Lesen von einer Datei eben die Daten extrahiert und die bekommen.",
+      "start": 1980864,
+      "end": 2006800,
+      "confidence": 0.88830835,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Da dann auch wirklich alle update Statements mit. Also wenn sich der gleiche Datensatz geändert hat, fünfmal durch fünf Update queries, dann bekomme ich wirklich alle fünf Updates mit.",
+      "start": 2006840,
+      "end": 2015680,
+      "confidence": 0.89632416,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Genau. Also weiterer Nachteil von basierter CDC Implementierung ist natürlich, dass wenn sich einzelne Datensätze mehrfach ändern zwischen den Polling Intervallen oder Zugriffen auf die Datenbank, bekommt man das natürlich nicht mehr.",
+      "start": 2015720,
+      "end": 2029220,
+      "confidence": 0.8942122,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Das bedeutet, wenn ich jetzt die klassische Migration, die gerade in den Enterprises so abgeht, man möchte von Oracle weg und hin zu Postgre, dann und man möchte kein Wartungsfenster schalten auf seiner Webseite. Ich möchte noch mal kurz die Lanze für das Wartungsfenster brechen. Jeder, der irgendwie Betrieb oder Migration macht, der wünscht sich ein Wartungsfenster. Das kann man damit eigentlich ja vermeiden.",
+      "start": 2029260,
+      "end": 2048872,
+      "confidence": 0.91148347,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Genau. Also man kann die die Migration nicht als Big Bang Migration, ich glaube, der Begriff wird damals schon verwendet, durchführen, dann irgendwie nachts zwischen drei und 6 Uhr die Anwendung sperren, sondern kann die Migration als kontinuierlichen Prozess aufsetzen, mittels CDC oder Log basierten CDC die Daten aus dem Alt in das neue System übertragen und irgendwann das Altsystem und auch die Data Pipeline, die diese Systeme verbindet, abschalten.",
+      "start": 2048936,
+      "end": 2076024,
+      "confidence": 0.8624097,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Lass uns mal zu den Herausforderungen bei der Anwendung von Kafka Streams und Kafka Connect und Kafka selbst sprechen. Weil wenn ich dir zuhöre, dann kommen mir jetzt ad hoc so zwei Probleme in den Sinn. Die eine Thematik ist, du hattest gerade gesagt, Topics kann man ähnlich wie Datenbanktabellen nutzen. In dem einen hat man die Bestellungen, in dem zweiten die User Daten. Und jetzt gerade hatten wir Black Friday und Cyber Monday und da gehen halt ziemlich viele Bestellungen. Und wenn ich jetzt eine Applikation habe, die zu jeder Bestellung zweitausendein die Adresse oder die E Mail Adresse des Users haben möchte, um die Bestellbestätigung rauszuschicken, dann muss ich ja zwei Topics miteinander joinen. Da hattest du gesagt okay, Kafka Streams, die die geben dir dann Framework für oder eine DSL. Doch da fliegen ja ziemlich viele Daten durch und man Kafka Streams ist jetzt vielleicht eine Applikation. Das bedeutet, RAM technisch muss ich da relativ viele Daten vorhalten, oder? Also relativ. Ich glaube, da kommt man relativ schnell in die GB Segmente, oder? Oder wie funktioniert das, wenn ich eins, zwei, mehrere Datenbank Tabellen aka Topics joinen möchte, wo man richtig Dampf drauf ist, wo man richtig 200 KB pro Datensatz drin sind?",
+      "start": 2076072,
+      "end": 2141891,
+      "confidence": 0.87962705,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Ich habe gestern erst einen Tweet gesehen von von Shopify, die da aktuelle Daten präsentiert haben zur Plug Week und auch erwähnt haben, dass sie auf Kafka setzen. Aber an sich wird das Ganze natürlich umso komplizierter, umso mehr Daten wir da verarbeiten und umso größer der der State wird, vielleicht zweitausendein an der Stelle auch noch mal zu erwähnen, dass wir jetzt, wenn wir jetzt die Bestellungen in Echtzeit verarbeiten und mit mit Kundendaten anreichern wollen, dass wir nur den State für die Kundendaten vorbehalten würden, aber die Bestellung eben nicht im State ablegen würden, also in Echtzeit dann verarbeiten würden.",
+      "start": 2141955,
+      "end": 2181890,
+      "confidence": 0.91668135,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Wenn du sagst, man hält die User Daten im State, bedeutet das, ich habe mal technisch gesprochen eine Hashmap und da habe ich dann alle alle User.",
+      "start": 2182010,
+      "end": 2189770,
+      "confidence": 0.8832448,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Ganz einfach Key Value Store, rockstb ist da sehr verbreitet.",
+      "start": 2189810,
+      "end": 2192434,
+      "confidence": 0.721666,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Ja, also ich verwende da dann eigentlich wirklich quasi eine Datenbank, weil ihr wirklich Lookups machen muss. Also wenn meine Bestellungen reinkommen und ich muss die Kundendaten, einen Lookup auf die Kundendaten machen, auf die E Mail Adresse, die Andi gerne hätte, dann brauche ich eigentlich eine gewisse Indexstruktur oder eine Map oder irgendwie eine Möglichkeit, die zu empfangen und muss mir da wieder eigentlich eine Indexstruktur aufbauen im Hintergrund.",
+      "start": 2192482,
+      "end": 2215346,
+      "confidence": 0.851823,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Also eigentlich fahre ich diesen Prozessor hoch, lese mir alle user Daten, also ich lese mir alle Daten aus dem User Topic, speicher die in eine RockDB, leveldb, was weiß ich nicht und nebenbei habe ich einen zweiten Thread laufen, fange an die Bestellung zu lesen, nehme mir die erste Bestellung, gib mir den User, schick die e Mail raus, nehme die zweite Bestellung, hol mir den User oder? Oder wie darf ich mir das vorstellen?",
+      "start": 2215458,
+      "end": 2235262,
+      "confidence": 0.85325843,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Genau, also da verstehen wir das User Topic als Changelog Stream oder Topic und befüllen mit den Records oder konsumieren im Prinzip dieses User Topic kontinuierlich und befüllen mit den, mit den, die dann auch in Echtzeit bei der Applikation einlaufen, können diesen internen State, aktualisieren den, fügen neue User hinzu, aktualisieren User, löschen vielleicht auch User, wenn sie entfernt werden und aktualisieren dadurch fortlaufend diese Datenbank, die dann mit Lookups abgefragt wird von der Stream Processing Anwendung und die Daten aus der Datenbank werden dann für die Anreicherung des Streams der Bestellung verwendet.",
+      "start": 2235326,
+      "end": 2271434,
+      "confidence": 0.91710746,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Okay, speichertechnisch bedeutet das dann eigentlich gar nicht Ÿousand, so viel Speicher wird benötigt, da wir ja den State haben. Wenn wir eine RoxDB oder leveldb nehmen, ist das ja eigentlich, ja, es hört sich jetzt total brutal an, es ist keine sqlite, aber ich sag mal eine Datei auf der lokalen Festplatte eigentlich, wo dann, wo denn dieser Stream Prozessor immer konstant zugreift. Und speichertechnisch wäre dann eigentlich nur okay, auf der einen Seite die Abfrage und auf der anderen Seite immer diese paar Records, die ich aus den Bestellungen lese, oder?",
+      "start": 2271482,
+      "end": 2294856,
+      "confidence": 0.8911769,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Genau. Also du brauchst dann schon mehr Speicher. Natürlich umso mehr User Daten in dem Fall es gibt, umso mehr Daten im State liegen. Das ist sicherlich eine Herausforderung, aber man kann es lösen, weil man einfach mehr Speicher kauft. Größere Herausforderungen gibt es dann, wenn die Anwendung vielleicht neu gestartet werden muss und dieser State wieder neu hergestellt werden muss. Und da gibt es dann verschiedene Ansätze von den verschiedenen Technologien wie Case Streams oder apache Flink, die da unterschiedlich gut mit umgehen können.",
+      "start": 2294928,
+      "end": 2320848,
+      "confidence": 0.91902786,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Du hattest gerade Sliding Window erwähnt. Was ist das bzw. Kannst du du das mal darauf tiefer eingehen?",
+      "start": 2320944,
+      "end": 2327506,
+      "confidence": 0.81548387,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Genau, also wir hatten jetzt den den Newscase kurz besprochen, wo wir ein, ich sag mal Stream an Daten mit einer, ich würde es mal Table nennen, also dieses Konzept, dieser Name wird da auch verwendet. Table werden dann die die Userdaten, die aus dem change Topic kommen, joinen wollen. Natürlich können wir auch Streams mit Streams joinen und bei diesem und auf einigen anderen Use Cases macht es eben Sinn, Windows einzusetzen, dass wir sagen können, dass wir die Records aus dem Topic A, die in ein bestimmtes Zeitfenster fallen, mit den Records aus Topic B, die in das gleiche Zeitfenster fallen, miteinander joinen wollen. Und da gibt es eben auch verschiedene Fenstertypen, also ein Tumbling Window gibt es, was nicht überlappend ist. Es gibt überlappende Windows, es gibt Session Windows, ganz unterschiedliche Arten.",
+      "start": 2327578,
+      "end": 2374074,
+      "confidence": 0.88186395,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Jetzt setzt man das ja bei ganz großen Datenmengen natürlich ein, dass ihr da auch Windows habt, zweitausendein, dass ich damit besser umgehen kann, besser hantieren kann. Ist Kafka auch geeignet, dass sie das wirklich als klassische Datenbank verwende, wo ich einfach alles hinein speichere und nie mehr was rauslösche und immer auf allen Daten operiere?",
+      "start": 2374122,
+      "end": 2392300,
+      "confidence": 0.9012855,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Jetzt müssen wir erstmal eine klassische Datenbank definieren, glaube ich.",
+      "start": 2392840,
+      "end": 2395624,
+      "confidence": 0.929743,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Das ist so der klassische Blickwinkel eines Doktors, so nach dem Motto was ist eigentlich eine Datenbank? Aber das war jetzt auch eine ketzerische Frage, weil ich glaube, ich glaube, diese Frage ist Kafka eine Datenbank, die wird immer nur so durchs Internet getrieben, habe ich das Gefühl.",
+      "start": 2395712,
+      "end": 2409668,
+      "confidence": 0.92077106,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Genau, also die wurde vielleicht etwas zu oft schon durch das Internet getrieben und das war nicht gerade vorteilhaft, um Entwicklern das Thema Kafka zugänglicher zu machen. Ist Kafka geeignet, um Daten für immer.",
+      "start": 2409804,
+      "end": 2421956,
+      "confidence": 0.947605,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Zu speichern oder für lange Zeit zumindest?",
+      "start": 2422028,
+      "end": 2425388,
+      "confidence": 0.9872843,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Also an der Stelle nochmal zu erwähnen, dass standardmäßig Kafka in der Default Konfiguration Records sieben Tage nach dem Timestamp löscht. Das kann man auch ändern. Würde schon sagen, dass Kafka an sich darauf ausgelegt ist, Daten dauerhaft zu speichern. Natürlich braucht man dafür Disc. Da gibt es Features wie Tiered Storage, die man, die man verwenden kann, um ich sag mal ältere Daten aus dem Blog auszulagern von Disc auf Object Storage. Und es gibt auch neuere Projekte, die Kafka oder das Kafka Protokoll komplett auf Basis von von Object Storage, was wesentlich günstiger ist als oder Block Storage implementieren.",
+      "start": 2425524,
+      "end": 2465720,
+      "confidence": 0.8686072,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Weil wenn ihr jetzt zurückkommt zum andes einen Beispiel, wenn ihr da die Kundendaten vorhalten will, dann will er wahrscheinlich alle Kundendaten immer immer bereit haben und es muss ja dann fast dauerhaft eigentlich speichern.",
+      "start": 2465840,
+      "end": 2477256,
+      "confidence": 0.8356123,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Genau. In dem Fall empfiehlt es sich nicht, die Daten sieben Tage vorrätig zu halten und danach automatisch zu löschen, sondern man sollte sie natürlich eigentlich für immer in einem Kafka Topic bereithalten.",
+      "start": 2477288,
+      "end": 2489144,
+      "confidence": 0.93751365,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Aber stellen dann die Stream Prozessoren auch Methoden bereit, Daten wieder irgendwie zu holen bei einer Datenbank, wenn ich aus irgendeinem Grund die Daten verloren habe oder keine Ahnung, korrektet habe, was auch immer oder gelöscht habe, kann ich dann einfach wieder die Daten einfach rausholen aus einer Datenbank?",
+      "start": 2489272,
+      "end": 2505052,
+      "confidence": 0.9158396,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Genau. Also jetzt automatisierte Ansätze, dafür sind wir nicht bekannt. Ich weiß noch nicht, ob das eine gute Idee wäre, das automatisiert Hand zu haben, aber es gibt Möglichkeiten, Backfilling vorzunehmen und auch einen Source Connector zurückzusetzen, sodass einmal noch die gesamte Datenbank extrahiert wird und in dieses Kafka Topic gelegt, weil.",
+      "start": 2505156,
+      "end": 2524224,
+      "confidence": 0.91867346,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Ich brauche ja auch bei CDC am Anfang mal irgendwie die Daten. Ich muss ja irgendwo anfangen oder? Also irgendein Import muss es ja geben.",
+      "start": 2524272,
+      "end": 2531176,
+      "confidence": 0.8692784,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Also man kann das auch natürlich handhaben, wie man möchte. It depends aber, dass das große CDC Tool der Kafka Community, die Bisum führt da am Anfang beim Start des Connectors erstmal Snapshot durch von der Quelldatenbank, lädt praktisch den den ist Stand der Datenbank einmal in das Kafka Topic. Danach Extraktion dieses Snapshots werden über das Replikationslog die Änderungsevents extrahiert und in das Kafka Topic geschrieben. An der Stelle auch wichtig, weil die meisten Datenbanksysteme das Replikationslog auch nicht oder auch nach einer bestimmten Zeit aufräumen. Das heißt, da gibt es auch eine bestimmte Retention Zeit, nach der dann Einträge aus dem Replikationslog wieder gelöscht werden.",
+      "start": 2531288,
+      "end": 2574756,
+      "confidence": 0.87423176,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Wenn wir von Replikationslog sprechen im Bereich Change Data Capture und Wolfgang hat zweitausendein das Wort Compaction grad schon erwähnt und vorhin hattest du auch erwähnt, dass ein kafka Record oder ein Record, der in Kafka geschrieben wird, aus einem Key und einem Value besteht und dass das nur Bytestreams sind. Kannst du mal ganz kurz erklären, was Compaction in diesem Kontext jetzt ist, was das heißt, weil Retention, dass Daten automatisch rausgelöscht werden nach einem Zeittrigger, habe ich jetzt rausgehört.",
+      "start": 2574828,
+      "end": 2601594,
+      "confidence": 0.89120096,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Genau, standardmäßig nach sieben Tagen, das ist der Zeittrigger. Man kann alternativ auch Daten ab einer bestimmten Größe löschen und darüber hinaus gibt es noch ein Feature, das nennt sich Compaction, über das ja Daten zusammengefasst werden können, sodass immer nur die aktuellste, der aktuellste Record für einen bestimmten Key gespeichert wird in der Partition. Es gibt auch das Konzept eines Tombstone Records, bei dem der Value auf null gesetzt ist, ist was ein delete oder als Delete verstanden wird, interpretiert wird und was dann ein löschen von von dem Key aus der Partition resultiert.",
+      "start": 2601682,
+      "end": 2640350,
+      "confidence": 0.90202105,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Jetzt habe ich noch eine abschließende Frage zu der ganzen Sicherheitsthematik und kann man es jetzt als Datenbank verwenden oder nicht? So allgemein gesprochen ist es aber ein sicheres System. Also ich kann dem schon Daten anvertrauen und damit rechnen durch die Verteilung und so weiter, dass meine Daten nicht verloren gehen, wenn ich ein richtiges Setup machen, weil es geht ja auch darum, keine Ahnung, wenn ich da sehr wichtige, ganz klassische Log Dateien schreibe aus irgendeiner Applikation, die schreibt hinten Logs und braucht die aus irgendeinem Grund sind Verrechnungsdaten oder sonstige Dinge, dann will ja, dass diese Daten auch wirklich irgendwo wieder ankommen. Also kann man das ganze System sicher bauen oder kann ich dem nicht so richtig vertrauen und es geht nur darum, irgendwie Daten zu verarbeiten, die nicht so wichtig sind?",
+      "start": 2640430,
+      "end": 2687706,
+      "confidence": 0.922959,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Grundsätzlich bietet Kafka die Möglichkeit an Daten zu replizieren, sodass eben eine oder mehrere Kopien eines eines einer Partition auf unterschiedlichen Brokern oder Nodes des Kafka Clusters gespeichert werden, wodurch ein Ausfall eines einzelnen Brokers erstmal nicht zum temporären Datenverlust führt, sondern die Daten dann über einen anderen Broker, der eine Kopie von der Partition speichert, ausgeliefert werden können. Und ich würde jetzt vor allem einen Blick auf den Producer werfen. Producer kann im Prinzip einstellen, wie viele Broker die eine Kopie der Daten, die der Producer geschrieben hat, acknowledged, abgespeichert haben müssen, bevor dieser Producer als erfolgreich gewertet wird. Und da empfiehlt es sich, wenn man auf eine sichere Verwahrung der Daten aus ist, dass man sicherstellt, dass erstmal ein in Kafka nennen wir das min in Sync Eurypicas, das also eine bestimmte Anzahl an Brokern, die Kopien der Daten abgespeichert haben.",
+      "start": 2687778,
+      "end": 2752464,
+      "confidence": 0.8779291,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Jetzt hast du Acknowledgement erwähnt. Was bedeutet es dann wirklich? Also habe ich da diese Sicherheit von einer klassischen Transaktion? Es wurde acknowledged und kann mir sicher sein, dass es irgendwie sinnvoll gespeichert wurde. Also wenn da jetzt in dem Moment der Strom weg ist und dann alles zusammen bricht, wenn ich keine USV habe, ist dann mein Datensatz trotzdem sicher gespeichert? Also was bedeutet das Acknowledgement für mich als Producer?",
+      "start": 2752592,
+      "end": 2774296,
+      "confidence": 0.9113676,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Also ist jetzt keine Datenbank Transaktion in dem Sinne. Kafka implementiert auch noch ein Konzept von Transaktionen, über das man praktisch mehrere Records auf mehrere Partitionen oder mehrere Partitionen im Rahmen einer atomaren Operation schreiben kann. Aber ja, wenn diese Broker das acknowledged haben, dann speichern die das sicher. Klar, Strom kann weg sein, aber wenn die wiederkommen, dann sind die Daten noch.",
+      "start": 2774408,
+      "end": 2797040,
+      "confidence": 0.89556223,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Laut meiner Recherche wurde Kaffee damals für On premise Infrastrukturen gebaut und Kafka hat sogar ein Setting zu sagen, dass ein Broker in welchem Rack er geragt ist. Wenn wir mal an Data Center und Serverschränke denken, dann kannst du sagen okay, Broker eins ist in Rack eins, Broker zwei in Rack zwei, Broker drei in Rack drei und hoffentlich haben deine Serverschränke unterschiedliche Stromversorgung, falls sie mal ausfällt oder Switches und Co. Da geht es natürlich genau in die Richtung, Wolfgang, in die du erwähnt hast. Und ich glaube, in der Cloud macht man das dann über Availability zones, wo man sagt, man Availability Zone ist dann jetzt den Fall ein Rack. Das bedeutet in der Hoffnung, dass zwei Availability Zones unterschiedliche Stromversorgung, vielleicht sogar physische Locations haben, dass dann da auch die Daten sicher sind. Aber das mit dem Acknowledgement, ich meine, das ist ein ganz klassisches Konzept aus jedem verteilten System. Bei Cassandra kann man das sagen, bei bei anderen auch. Das bedeutet aber auch, das geht dann, ich sag mal auf die Performance des Producers, wenn der Producer jetzt ganz, ganz viele Daten ganz schnell schreiben möchte, ein ich nenne es mal hohes Acknowledgement Level Beispiel du hast ein, du hast drei Broker und hast dein Topic dreimal repliziert und ein Record muss, es muss von allen Brokern acknowledged werden, dass der Record geschrieben wurde. Das geht dann natürlich schon sehr stark auf die auf die Schreibgeschwindigkeit des Producers.",
+      "start": 2797080,
+      "end": 2876032,
+      "confidence": 0.8801413,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Oder würde ich jetzt nicht sagen, ich sag mal Standard Setup für so ein Kafka Cluster ist, dass wir jede Partition dreimal vorhalten, also drei Replikate haben, dass die Producer config auf dem Wert all gesetzt ist und dass wir Min Instinct Replica auf zwei gesetzt haben. Und in dem Fall würde der Producer praktisch darauf warten, dass zwei Broker das acknowledged haben und sicher abgespeichert haben und nicht, dass alle, nicht dass man so einen Nachzügler noch hat, das abgespeichert haben. Und ich würde sagen, in der Praxis hat das keinen spürbaren negativen Effekt. Und da würde ich lieber darauf warten, dass die Daten wirklich gespeichert, sicher gespeichert worden sind, als darauf zu verzichten und womöglich fehlerhafte nicht mitzubekommen.",
+      "start": 2876056,
+      "end": 2918928,
+      "confidence": 0.895791,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Aber noch mal Verständnisfrage von meiner Seite. Der Producer kommuniziert immer nur mit einem Broker und der Broker stellt dann sicher, dass es auf dem zweiten Broker auch oder in der zweiten Partition auch geschrieben. Oder kommuniziert der Producer mit zwei Brokern parallel?",
+      "start": 2918984,
+      "end": 2933808,
+      "confidence": 0.92036974,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Für jede Partition übernimmt ein Broker die Rolle des Leaders und mit diesem Broker kommuniziert der Producer dann auch für die Partition. Grundsätzlich können auch mehrere Requests parallel durchgeführt werden, wodurch dann der Producer auch mit.",
+      "start": 2933864,
+      "end": 2947152,
+      "confidence": 0.93082,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Unterschiedlichen Brokern kommunizieren, aber immer zu unterschiedlichen Topics dann. Weil für einen Topic gibt es einen Lieder, mit dem ich kommuniziere.",
+      "start": 2947176,
+      "end": 2954000,
+      "confidence": 0.8493891,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Also Lieder gibt es für jede topic Partition ein. Das heißt, Ein Topic kann vielleicht aus fünf oder 10 Partitionen bestehen und für die Partition des gleichen Topics können durchaus unterschiedliche Broker die Rolle des Leaders übernehmen.",
+      "start": 2954040,
+      "end": 2968888,
+      "confidence": 0.91246516,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Aber der Producer kennt den Leader nicht für die Partition, weil der hat die Informationen nicht. Das heißt, der Zweitausendein weiß schon, in welchen Liedern er ansprechen muss und weiß schon im Vorhinein, in welcher Partition das fallen würde.",
+      "start": 2968944,
+      "end": 2980742,
+      "confidence": 0.87714154,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Wird im Prinzip ein kontinuierlicher Austausch von Metadaten Informationen über das Cluster vollzogen, die können auch mal veraltet sein, dann holt sich der Producer aktuelle Daten und natürlich kann auch mal der Leader nicht verfügbar sein. Aber an sich kennt der Producer den aktuellen Zustand des Clusters und weiß, welcher Broker bei welcher Partition Leader.",
+      "start": 2980806,
+      "end": 2998814,
+      "confidence": 0.9233451,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Das heißt, der Producer kennt dann aber auch den Algorithmus, wie Partition eingeteilt werden.",
+      "start": 2998862,
+      "end": 3003754,
+      "confidence": 0.9465193,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Ja, genau. Das ist aber eine Client abhängige Konfiguration. Also der Client, der Producer Client kann entscheiden, in welche Partition welches welche Record geschrieben wird. Das ist nichts, was auf dem Broker auf der Serverseite bei Kafka ABK.",
+      "start": 3003842,
+      "end": 3018242,
+      "confidence": 0.89688313,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Okay. Das muss auf der Client Seite sogar definiert sein in dem Fall.",
+      "start": 3018306,
+      "end": 3021186,
+      "confidence": 0.9323454,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Genau.",
+      "start": 3021218,
+      "end": 3021650,
+      "confidence": 0.87458,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Eine andere Herausforderung, ich hatte vorhin erwähnt, ich hatte mir fallen direkt zwei Herausforderungen ein, neben dem Speicherverbrauch für Joins ist die Idempotenz von Konsumenten. Speziell wenn wir jetzt über wichtige Daten sprechen oder über, weiß ich nicht, change data capture oder ähnliches. Ich kann ja als Consumer die Daten immer und immer und immer wieder lesen. Hat mir gesagt, entweder am Anfang oder vom Ende, gibt mir immer nur die neuesten Sachen oder oder zeitbasiert wurde schon erwähnt oder halt diese Consumer Offset, das bedeute, ich merke mir irgendwo, wo ich schon gelesen habe und steigt da wieder ein. Was ist denn, wenn ich diesen Wert verliere? Was ist denn, wenn ich auf einmal zweitausendein wieder alles nochmal neu producen muss? Dann habe ich ja unter Umständen, ich sag mal, schreibe ich einen Datensatz zweimal, dreimal, viermal. Das kann ja je nach Datensatz, je nach Datenkontext echt fatal sein. Wie gehen denn, in welcher Weise wird denn das Topic der Idempotenz behandelt? Generell in Kafka Konnektoren oder Kafka Streams oder?",
+      "start": 3021730,
+      "end": 3076352,
+      "confidence": 0.9110473,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Ja, also bei Kafka wird das vor allem bei den Producern gehandhabt. Es gibt eine idempotenten, das Wort glaube ich zum ersten Mal in Deutschland aus Ÿousand gesprochen, Producer, ja, also der löst das klassische Problem, dass wenn irgendwie ein Producer fehlgeschlagen ist, das Record schon auf dem Broker angekommen ist, aber der Producer das nicht mitbekommen hat, er das dann noch mal schickt, das halt dann dieser Record möglicherweise mehrfach im Broker gespeichert ist. Und das will man natürlich vermeiden und dafür gibt es bei Kafka idempotente Producer, die praktisch noch ein bisschen an oder die noch metadaten zweitausendein Daten an das Record dranhängen, das sie verschicken, Sequenznummer, producer id, wodurch der Broker, wenn praktisch diese Kombination aus producer id, Sequenznummer mehrfach auftritt, der Broker diese Duplikate, sage ich mal, zu einem Record zusammenführen kann.",
+      "start": 3076416,
+      "end": 3129036,
+      "confidence": 0.87494797,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Da muss man schon ganz genau wissen, was man mit den Daten da macht. Faszinierend. Also ich finde das Wahnsinn. Ich denke gerade so viel nach, tut mir leid, so so ganz viele Gedankengänge über viele Herausforderungen. Ja, also wie z.B. wir hatten gerade auch über stateful Kafka Konnektoren gesprochen und da hattest du schon Rock CB erwähnt. Die nächste Herausforderung, die mir gerade in den Sinn kommt, okay, was ist denn, wenn ich jetzt diese Konsumenten auf einem Scheduler System wie Kubernetes oder ähnliches hoste, dann habe ich ja meine local, meine lokale RockDB oder leveldb oder ähnliches mit einem State. Ja, aber Kubernetes löst ja das Problem des Spin Packings. Das bedeutet, der schiebt die Elemente bzw. Die Prozesse dahin, wo sie vielleicht am effizientesten Ÿousand, die Hardware auslasten und Co. Aber der schiebt dann gegebenenfalls den State nicht mit, weil der State liegt wahrscheinlich dann nicht im Container oder beziehungsweise wie Kubernetes die neuen Services hochfällt, holt sie im Container aus der Registry und so weiter, nimmt halt nicht den State mit. Da frage ich mich, okay, wo speichert man denn dann eigentlich den State, wenn man das z.B. auf einem dynamischen System hostet?",
+      "start": 3129068,
+      "end": 3184818,
+      "confidence": 0.87956464,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Kafka Streams löst das vor allem über ein Changelog Topic, über das dann praktisch dieser, das ein internes Topic, über das dieser State wiederhergestellt werden kann. Apache Flink ermöglicht es, den State im Prinzip zu snapshotten und auf z.B. pS abzulegen und dann auch von dort wieder einzuspielen.",
+      "start": 3184874,
+      "end": 3201270,
+      "confidence": 0.8975004,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Das bedeutet, wenn der Kafka Connect hochfährt, holt er sich seinen Basisdatensatz oder seine Basis Datenrecords aus dem Kafka Topic und irgendwann sagt er halt nach 5 Minuten, nachdem der alles gelesen hat, jo, ich bin ready, ich kann jetzt arbeiten.",
+      "start": 3201310,
+      "end": 3212718,
+      "confidence": 0.90227294,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Genau, und das sind im Optimalfall 5 Minuten. Aber du hast schon angesprochen, es gibt auch Anwendungen, die einfach unglaublich viel State haben und dann soll es durchaus schon mal vorgekommen sein, dass das eben Stunden waren.",
+      "start": 3212774,
+      "end": 3224206,
+      "confidence": 0.9447884,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Okay, Application Runtime, heftig.",
+      "start": 3224278,
+      "end": 3226622,
+      "confidence": 0.8503175,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Jetzt, wenn wir schon bei Herausforderungen sind und man sich so ansieht, zweitausendein, wo Kafka gerne eingesetzt wird, dann ist es ja wirklich in sehr großen Organisationen, wo es vielleicht viele Teams gibt, viele Microservices, die miteinander kommunizieren, mehrere Datenquellen, mehrere Targets, wo man die Daten dann reinschreibt. Also man hat sehr viele Systeme, sehr viele Menschen involviert in dem ganzen System. Und jetzt hast du schon erwähnt, es ist eigentlich key value basiert. Das heißt eben, einen key und ein Value ist alles binär. Jetzt kann es natürlich sein, theoretisch zweitausendein, ich als unerfahrener Entwickler mache irgendwie einen Fehler und mein Producer schreibt plötzlich irgendwelche komischen Dinge in den ganzen Stream hinein und andere Consumer haben dann ein Problem damit, weil ich eben irgendwas reingeschrieben habe. In der klassischen Welt, in der Datenbankwelt habe ich mein Schema, da kann ich nur genau dieses Schema reinschreiben, was möglich ist. Aber jetzt bin ich in dieser freien Kafka Welt, will aber trotzdem ja vielleicht irgendwie sicherstellen, dass mir das eben nicht passiert. Dass mein ganzes System zusammenbricht oder irgendwelche Consumer zusammenbrechen, wenn da irgendwie Daten im System sind, die nicht korrekt sind oder irgendeinen Fehler haben oder ein Feld haben, das sie nicht kennen. Also das hört man ja auch oft als als Nachteil in so einer Kafka Welt. Gibt es da Möglichkeiten und wo stehen wir?",
+      "start": 3226686,
+      "end": 3304076,
+      "confidence": 0.90609086,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Das ein sehr guter Punkt und ich glaube, je mehr Teams und Personen da mitarbeiten, umso schwieriger wird es. Und da hat sich so ein Bereich Governance bei Kafka die Schema Registry etabliert, was im Prinzip ein zentraler Ablageort ist für Schemas von den Daten, in der also Producer das Schema von dem Key oder Value eines Records registrieren können. Und klassische Datenformate, die da verwendet werden bei Kafka sind Avro, Protobuff, Jason mit einem Schema, dann wird auch eine Referenz auf das Ÿousand Schema in das Schema Registry gesetzt, in das in den Key oder Value mithilfe eines Magic Bytes ganz am Anfang von diesem Byte Array und dadurch können sich die Consumer das jeweilige Schema aus der Registry laden und die Daten verarbeiten und stehen nicht vor gänzlich unbekannten Daten oder Datenformaten.",
+      "start": 3304108,
+      "end": 3357454,
+      "confidence": 0.9011774,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Aber gibt es da dann irgendwo eine Überprüfung auch oder müssen das Consumer und Producer dann wieder selbst in irgendeiner Form validieren, dass die Daten stimmen oder kann mir dieses zentrale Kafka System das irgendwie machen?",
+      "start": 3357502,
+      "end": 3367662,
+      "confidence": 0.91562724,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Gerade wenn wir jetzt nur über Open Source Kafka sprechen, gibt es da keine Überprüfung, die irgendwie auf broker Seite wird.",
+      "start": 3367726,
+      "end": 3374262,
+      "confidence": 0.8983914,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Das heißt, ihr müsst eigentlich wieder einen Stream Processor dazwischen schalten, der mir irgendwie die ungültigen Dinge rausfiltert z.B. ja oder.",
+      "start": 3374326,
+      "end": 3381022,
+      "confidence": 0.8019338,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Ich muss halt in meiner Consumer Anwendung Mechanismen einbauen, um auch mit Daten umgehen zu können, die unerwartet sind, weil die natürlich dann auch die Verarbeitung der darauffolgenden Daten blockieren zweitausendein können. Und da spricht man von der Poison Pill von also Events, die einfach nicht verarbeitet werden können, wo dann vielleicht Exceptions geworfen werden, weil die komplett unerwartet sind. Da gibt es Konzepte wie eine Dead Letter Queue, auf die dann diese Poison Pills und diese diese Messages abgelegt werden können, wodurch man dann den Consumer entblockt und die Verarbeitung der darauffolgenden Daten ermöglicht.",
+      "start": 3381046,
+      "end": 3415484,
+      "confidence": 0.90564495,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Wo stehen wir da aktuell? Also wenn ihr das jetzt einsetze, du hast schon die Open Source Variante erwähnt, ist es schon überall drin in den ganzen Libraries und Consumer Producer oder muss ich da selber dann wirklich Hand anlegen und dann die Schema aus der Registry holen, irgendwie einen Validator schreiben?",
+      "start": 3415532,
+      "end": 3431784,
+      "confidence": 0.871155,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Ja, also das mit den Schemas ist schon relativ verbreitet und wird auch von vielen Tools unterstützt. Also gerade wenn wir jetzt auch in Richtung der Konnektoren oder Kafka Connect denken, da gibt es schon sehr gute Unterstützung, was da wohl das populärste Format ist, das Avro bei den Datenformaten, aber Protobuf z.B. ist auch relativ breit. Es kommt immer so ein bisschen auf den Use Case an.",
+      "start": 3431872,
+      "end": 3450984,
+      "confidence": 0.9026591,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Also ihr Rad nicht neu erfinden überall.",
+      "start": 3451032,
+      "end": 3452980,
+      "confidence": 0.92066574,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "In dem Fall kannst da auf Best Practices der Community zurückgreifen und musst das nicht ja komplett neu oder selbst implementieren.",
+      "start": 3453020,
+      "end": 3461076,
+      "confidence": 0.8565329,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Wenn ich darüber nachdenke, Kafka wird dieselben Governance Herausforderungen haben wie jede Datenbank, oder? Ich meine, wenn du, wenn du jetzt sagst okay, Topics sind vergleichbar mit Tabellen und Co. Dann ist es ja in einer großen Organisation wirklich immer die Frage wer kann eigentlich Topics anlegen? Wer kann Daten da reinschreiben? Wie sieht deine Architektur aus? Hast du 25 Applikationen, die alle in dieselbe Datenbank schreiben? Hat jeder Applikation seiner eigenen Datenbank? Schreiben 25 Applikationen alle in dasselbe Topic? Lesen die alle von denselben Topics? Wer kümmert sich eigentlich um die, ich nenne es mal in anführungszeichen Skalierung. Das bedeutet, wie viel Partitionen soll eigentlich pro Topic haben? Wer darf eigentlich wo reinschreiben? Was für ein Format ist da drin? Was passiert eigentlich mit Schemaänderungen, wenn ein Key mal reinkommt, wieder rausfliegt? Welche Schemaänderungen sind Breaking Changes? Also ich meine, das sind ja ganz klassische Herausforderungen, die eigentlich jede Firma mit, ich würde mal sagen mehr als drei Entwicklern hat, die jetzt vielleicht nicht jeden Tag miteinander reden oder wenn man glaube.",
+      "start": 3461148,
+      "end": 3515638,
+      "confidence": 0.8924752,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Ich so die üblichen Best Practices an man lässt die Teams ihre Topics nicht einfach selbst anlegen, sondern folgt einem klaren Prozess. Man setzt Standards ein bezüglich Schema Verwaltung. Klares Ownership von den Topics ist glaube ich auch sehr wichtig, meiner Meinung nach fast am wichtigsten auf dieser Liste. Und das natürlich irgendwo an einem zentralen Ort zu verwalten und eine Zusammenarbeit zwischen den Teams zu ermöglichen, das ist auch essentiell.",
+      "start": 3515654,
+      "end": 3540134,
+      "confidence": 0.9148855,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Was würdest du sagen, Ÿousand ist die größte Herausforderung, die du in deiner Arbeit mit mit Softwareentwicklern siehst, wenn es um die Anwendung von von Kafka Connect, Kafka Stream Prozessoren geht? Was würdest du sagen ist Nr. Eins, was immer wieder ja nicht falsch gemacht wird, aber ein vor ja Problemchen.",
+      "start": 3540182,
+      "end": 3561020,
+      "confidence": 0.88861156,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Ist schwierig, glaube ich, da genau die eine Herausforderung zu nennen. Ich glaube, die Herausforderung Data Streaming an sich besteht, dass wir hier sehr viele verschiedene verteilte, komplexe Systeme haben, also wir haben es jetzt in der vergangenen H schon durchgesprochen. Wir haben Kafka, wir haben Kafka Connect, das ist auch ein verteiltes System, das auch Cluster mit Nodes betreiben kann. Wir haben komplexe Technologien wie Stream Processing Anwendungen, die mit Case Streams oder Flink implementiert werden können. Also man muss schon eine ganze Menge an Technologien kennen, verstehen zweitausendein, wie die, wie die arbeiten, um die erfolgreich einsetzen zu können. Und ich glaube zu dieser erste Schritt von ich kenne noch gar nichts hinzu ich habe den ersten Newscast umgesetzt, der kann sich vielleicht etwas lang anfühlen.",
+      "start": 3561060,
+      "end": 3606602,
+      "confidence": 0.90765244,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Kleiner side Fact Kafka hintendran nutzt Zookeeper als noch bald nicht mehr Zookeeper bald nicht mehr.",
+      "start": 3606666,
+      "end": 3614778,
+      "confidence": 0.8273156,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Moment, das habe ich schon vor, glaube ich, vor sieben Jahren gehört. Das noch bald.",
+      "start": 3614834,
+      "end": 3619168,
+      "confidence": 0.875952,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Jetzt ist er wirklich soweit. Also die nächste Version wirft es komplett raus. Und es gibt aktuell schon Bridge Releases, die ja einen Betrieb ohne Zookeeper ermöglichen.",
+      "start": 3619274,
+      "end": 3628572,
+      "confidence": 0.8790326,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Also jetzt erklär mal schnell Zookeeper, Andy, wenn du das schon so das einwirfst.",
+      "start": 3628596,
+      "end": 3632400,
+      "confidence": 0.8613643,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Zookeeper ist ein verteiltes Log, würde ich glaube ich, ganz simplifiziert das nächste Log, aber diesmal Log mit ck und nicht mit g. Also bedeutet ein zentrales System, was selbst live schon wieder ein verteiltes System ist, wo du so Elemente wie Leader Election und so mit organisieren kannst. In der kubernetes Welt ist es glaube ich ETCD, in der Hashicop Welt ist es glaube ich Konsul.",
+      "start": 3632860,
+      "end": 3656576,
+      "confidence": 0.8808684,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Es ist eine verteilte Datenbank eigentlich.",
+      "start": 3656688,
+      "end": 3658816,
+      "confidence": 0.78080666,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Ja, es ist eine verteilte Datenbank, die aber oft für diese Leader Election und verteilte Log Elemente eingesetzt wird. Und Kafka nutzt im Hintergrund halt auch zum oh, wer ist denn jetzt hier der Leader? Oh, mir ist eine Note weggebrochen und wer soll denn neue Lieder sein? Und so weiter. Aber Hintergrundfakt der Name Zookeeper, habe ich mal gelesen, kommt genau daher, dass du ein Achtung, ein Zoo von verschiedenen Applikationen hast, die dann unter anderem miteinander sprechen und so weiter und so fort. Und ich fand das so schön, weil Stefan das gerade gesagt hat mit du musst eine große Anzahl an verschiedenen Technologien irgendwie zumindest mal verstehen oder grob verstehen, um das alles irgendwie zusammenzukleben.",
+      "start": 3658968,
+      "end": 3698716,
+      "confidence": 0.885234,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Grundautoren sind sicher da neben ganz viel oraly Büchern gesessen, haben die ganzen Tiere gesehen und haben dann einfach zu kippe.",
+      "start": 3698748,
+      "end": 3705620,
+      "confidence": 0.8256457,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Könnte auch sein. Stefan, kommen wir, kommen wir mal zu der Glaskugel, zu dem Ausblick. Ich meine, ich meine, Kafka selbst gibt es schon ein paar Jährchen. Ich weiß gar nicht, wie lange. Aber wie siehst du denn die Zukunft von Kafka und Streaming? Also wie entwickelt sich denn der Bereich? Was ist gerade hot? Was ist trending? Du hattest gerade schon gesagt okay, Zookeeper wird abgelöst durch eine andere Technologie jetzt, wie man zumindest wenn es auf den auf den Betrieb von Kafka selbst ankommt. Aber was siehst du? Was beobachtet du so in deinem täglichen Doing, wohin sich die Reise dreht?",
+      "start": 3707520,
+      "end": 3739764,
+      "confidence": 0.883219,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Also ich glaube, dass Data Streaming schon eine ganze Zeit lang im Einsatz ist, vor allem Kafka als als Kerntechnologie bei vielen Unternehmen zum Einsatz kommt, bei den meisten mittelgroßen großen Unternehmen verwendet wird. Aber dass ich jetzt immer mehr Use Cases öffnen und ja, Teams Unternehmen Gebrauch machen von Screen Processing on top von von Kafka als Event Storage. Bei Kafka, dem Projekt selbst, dem Open Source Projekt ist glaube ich der Wegfall von Zookeeper eines der spannenden Ereignisse aktuell, auf das die Community schon sehr lange gewartet hat. Das wird jetzt mit einer Eigenentwicklung des Raft Protokolls ersetzt. Careft oder Kraft, wodurch der Betrieb von von Kafka noch einfacher, effizienter wird. Allgemein ist Kafka zumindest das Protokoll nicht mehr wegzudenken. Es wird von so vielen anderen Technologien unterstützt, verwendet, ist überall zu sehen. Ob es immer die Open Source Implementierung, also das apache Projekt sein muss, weiß ich nicht. Da gibt es jetzt eine Reihe an anderen spannenden Projekten, die das Kafka Protokoll implementieren, wodurch sie halt Zugriff auf diese ganzen, auf das ganze Ökosystem bekommen. Also z.B. warpstream ist eines der aktuelleren Projekte, die super spannend sind aus meiner Sicht, die praktisch das Kafka Protokoll implementieren, aber komplett auf Object Storage drunter setzen. Also nicht den klassischen Disk basierten Ansatz wie apache Kafka wählen, sondern wirklich sehr radikal auf Object Storage ersetzen, was eine Reihe an vor auch Nachteile mit sich bringt. Wir können z.B. auf die die native Replikation von den Object Stores wie S einsetzen, wodurch sie Netzwerkkosten einsparen können, wodurch sie sich nicht um die Replikation kümmern müssen. Object Search ist wesentlich günstiger als als Block Storage in der Cloud. Ich glaube fast einen Größenfaktor von von 10, wenn ich mich da jetzt nicht zu weit aus dem Fenster lehne. Also super spannende Entwicklung war. Ermöglicht es Topics elastischer zu skalieren, also die Anzahl der Partitionen zu vergrößern. Z.b. so eine Herausforderung bei dem Open Source Disk basierten Kafka. Nachteile gibt es bestimmt auch oder Herausforderungen gibt es auch, wie das Object Storage bezüglich Latenz mit mit Block Storage nicht mithalten. Also das ist glaube ich so eines der eine der spannenden Entwicklung aktuell, wenn.",
+      "start": 3739812,
+      "end": 3886482,
+      "confidence": 0.87916887,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Man jetzt mit Kafka noch nie was zu tun hatte und da mal loslegen will. Erste Frage macht es überhaupt Sinn? Kann ich in meinem kleinen Setup einfach mal Kafka ausprobieren und macht es vielleicht auch Sinn in meinem side Project in irgendeiner Form einzusetzen oder sagst, es ist sowieso nur für die ganz Großen, weil es einfach viel zu komplex ist und wo startet?",
+      "start": 3886506,
+      "end": 3905110,
+      "confidence": 0.92617923,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Also ich glaube, es ist nicht nur für die ganz Großen, weil sich viele Use Cases natürlicher umsetzen lassen mit Kafka, wie die Datenbank Migration oder das Extrahieren von Daten aus dem Datenbanksystem, was sich etwas natürlicher, wenn es mit CDC umgesetzt wird, anfühlt und auch die Implementierung oftmals vereinfacht. Von daher kann man glaube ich, einen Blick auf auf die Webseite von Kafka werfen. Gibt ja verschiedene Einstiegsmöglichkeiten in Form von Docker Images z.B. die bereitgestellt werden, wodurch man relativ leicht mal einen ersten Use Case bei sich aussetzen kann. Muss man jetzt auf jeden Use Case Kafka werfen? Ich glaube es nicht. Ich würde das immer so ein bisschen vom Projekt oder Use Case abhängig machen und immer abwägen, ob es sinnvolle Technologie ist oder nicht. Kafka ist ein verteiltes System, bringt ein paar Komplexitäten mit sich und wenn man da gar keinen Mehrwert aus der Verwendung von Kafka zieht, sollte man in dem Fall vielleicht einfach die Finger davon lassen.",
+      "start": 3905150,
+      "end": 3960758,
+      "confidence": 0.9171537,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Und sonst am besten dein Buch kaufen, wenn es mal dann heraußen ist, damit man dann einen guten Einstieg auch hat.",
+      "start": 3960934,
+      "end": 3966606,
+      "confidence": 0.9039243,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Auf jeden Fall.",
+      "start": 3966638,
+      "end": 3967230,
+      "confidence": 0.93707,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Also ich meine, man muss sich auch immer noch kurz daran erinnern, Kafka ist immer noch ein verteiltes System und wenn man also so sehe ich das als Software Engineer, wenn man verteilte Systeme umgehen kann, dann sollte man das tun, denn verteilte Systeme sind verteilt und enorm komplex und sehr hart zu debuggen und echt schwierig zu betreiben.",
+      "start": 3967310,
+      "end": 3983910,
+      "confidence": 0.9535073,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Guter Punkt. Also ich würde es mal so ab, dass es zum einen die Anwender Seite gibt und die die Betreiberseite. Man muss es ja nicht zwangsläufig selbst betreiben, wenn es in Richtung Produktion geht, sondern kann da natürlich auch gemanagte Dienste kaufen. Aber auch für die für die Anwender ist natürlich komplex in der Verwendung, aber durch auch verschiedene Schichten, die auf der einfachen consumer Producer Schicht aufsetzen, wie Kafka Streams, Flink und die bringen auch teilweise eigene SQL Schichten noch mal on top von der DSL. Mit Flink SQL ist die Anwendung oder wird die Anwendung von Data Streaming glaube ich, immer zugänglich.",
+      "start": 3984030,
+      "end": 4018068,
+      "confidence": 0.88736373,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Ich meine, wir haben super viele Themen, die den Bereich Streaming und Kafka oder die Kafka Plattform betreffen, noch gar nicht angesprochen. Du hast gerade ganz kurz den Betrieb angeschnitten, das haben wir komplett rausgelassen. Also ich entschuldige mich für alle Sysadmins und DevOps Leute und allem drum und dran, die Kafka oder Kafka Systeme in ihrer Obhut haben. Ist natürlich, ich sag mal, ein eigenes Rabbit Hole, wie man das ordentlich betreibt. Wir haben zweitausendein auch das Thema Governance auch nur ganz kurz angeschnitten. Ich glaube, da kann man auch vielleicht sogar einen ganzen Podcast drüber machen, bin mir da nicht sicher. Die ganze Welt vom Data Streaming dreht sich gerade sowieso sehr, sehr schnell, würde ich mal sagen. Auf der einen Seite hattest du Applikationen wie Warpstream, die z.B. ich sag mal, die Festplatte weglassen und dann alles auf Object Storage packen. Da gibt es natürlich etliche Competitor inzwischen. Wir hatten Datenformate nur am Rande angeschnitten. Zweitausendein mit Afro und Protobuff. Iceberg ist da gerade so, wie soll man sagen, ein Elefant, eine Sau, die das Dorf getrieben wird. Also auch eine neue Entwicklung. Ich glaube, zu dem ganzen Thema, wer da mal wirklich tiefer einsteigen möchte, der sollte sich einfach mal das eine oder andere Buch schnappen, vielleicht mal die ein oder andere dummy Applikation bauen. Dennoch, Stefan, vielen lieben Dank für deine Einblicke. Ich fand es sehr, sehr interessant.",
+      "start": 4018124,
+      "end": 4091608,
+      "confidence": 0.8972547,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Vielen Dank an euch.",
+      "start": 4091704,
+      "end": 4092464,
+      "confidence": 0.852415,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Danke dir. Und es schreit ja fast nach weiteren Episoden in dem ganzen Streaming Bereich.",
+      "start": 4092512,
+      "end": 4096650,
+      "confidence": 0.87915134,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Wir verabschieden uns, würde ich sagen. Vielen Dank fürs Zuhören, wenn ihr bis hierhin durchgehalten habt. Und wie immer findet ihr alle Links in den Show Notes, falls ihr das Thema tiefer einsteigen wollt. Ansonsten würde ich sagen, bis inklusive dem.",
+      "start": 4096690,
+      "end": 4106730,
+      "confidence": 0.9176617,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Link zu zu deinem Buch, Stefan, das.",
+      "start": 4106770,
+      "end": 4109218,
+      "confidence": 0.8272586,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Packen wir natürlich ebenfalls in die Show. Wir hören uns in der nächsten Episode und tschüss.",
+      "start": 4109274,
+      "end": 4112754,
+      "confidence": 0.85722,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Ciao, ciao.",
+      "start": 4112802,
+      "end": 4113530,
+      "confidence": 0.783105,
+      "speaker": "B",
+      "channel": null
+    }
+  ],
+  "confidence": 0.8933031,
+  "audio_duration": 4061,
+  "webhook_status_code": null,
+  "webhook_auth": false,
+  "summary": null,
+  "auto_highlights_result": null,
+  "content_safety_labels": null,
+  "chapters": null,
+  "sentiment_analysis_results": null,
+  "entities": null
+}
