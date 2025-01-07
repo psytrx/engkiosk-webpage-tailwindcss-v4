@@ -1,6 +1,6 @@
 ---
 advertiser: ''
-amazon_music: ''
+amazon_music: https://music.amazon.com/podcasts/c35a09fe-4116-4e04-8f68-77d61b112e46/episodes/39d9ba45-fc60-4a4c-ac6c-34902d5b6f6a/engineering-kiosk-177-stream-processing-kafka-die-basis-moderner-datenpipelines-mit-stefan-sprenger
 apple_podcasts: ''
 audio: https://audio1.redcircle.com/episodes/c74a6e5d-1966-4da8-bcb5-f4de72b8579c/stream.mp3
 chapter:
