@@ -86,7 +86,10 @@ speaker:
 - name: Andy Grunwald
 - name: Wolfi Gassler
 spotify: https://open.spotify.com/episode/4pMOef1e09k5bQpUb7qtfW
-tags: []
+tags:
+- Backend
+- Software Engineering
+- Interview
 title: '#177 Stream Processing & Kafka: Die Basis moderner Datenpipelines mit Stefan
   Sprenger'
 transcript_raw: ''
