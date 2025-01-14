@@ -74,7 +74,10 @@ speaker:
 - name: Andy Grunwald
 - name: Wolfi Gassler
 spotify: https://open.spotify.com/episode/5VR1ezEwsKL9pFrurXxaKM
-tags: []
+tags:
+- Code mit Impact
+- Software Engineering
+- Interview
 title: '#178 Code der bewegt: Infotainmentsysteme auf Kreuzfahrtschiffen mit Sebastian
   Hammerl'
 transcript_raw: ''
