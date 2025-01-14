@@ -72,7 +72,11 @@ rtlplus: ''
 six_user_needs: []
 speaker:
 - name: Andy Grunwald
+  transcriptLetter: B
 - name: Wolfi Gassler
+  transcriptLetter: A
+- name: Sebastian Hammerl
+  transcriptLetter: C
 spotify: https://open.spotify.com/episode/5VR1ezEwsKL9pFrurXxaKM
 tags:
 - Code mit Impact
