@@ -1,6 +1,6 @@
 ---
 advertiser: ''
-amazon_music: ''
+amazon_music: https://music.amazon.com/podcasts/c35a09fe-4116-4e04-8f68-77d61b112e46/episodes/fdd56d53-065a-41ec-a609-b24ca9a7fe1b/engineering-kiosk-178-code-der-bewegt-infotainmentsysteme-auf-kreuzfahrtschiffen-mit-sebastian-hammerl
 apple_podcasts: https://podcasts.apple.com/us/podcast/178-code-der-bewegt-infotainmentsysteme-auf-kreuzfahrtschiffen/id1603082924?i=1000683886314&uo=4
 audio: https://audio1.redcircle.com/episodes/7adf71a0-228f-4d21-8d72-4a495b0f48d3/stream.mp3
 chapter:
