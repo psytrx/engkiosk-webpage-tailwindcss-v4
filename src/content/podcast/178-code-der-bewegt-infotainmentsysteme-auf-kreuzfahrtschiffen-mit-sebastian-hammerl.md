@@ -1,7 +1,7 @@
 ---
 advertiser: ''
 amazon_music: ''
-apple_podcasts: ''
+apple_podcasts: https://podcasts.apple.com/us/podcast/178-code-der-bewegt-infotainmentsysteme-auf-kreuzfahrtschiffen/id1603082924?i=1000683886314&uo=4
 audio: https://audio1.redcircle.com/episodes/7adf71a0-228f-4d21-8d72-4a495b0f48d3/stream.mp3
 chapter:
 - start: 00:00:00
@@ -28,7 +28,7 @@ chapter:
   title: Als IT-Admin auf dem Schiff arbeiten
 - start: 01:01:16
   title: "Empfehlung f\xFCr alle, die sich das Thema n\xE4her ansehen wollen"
-deezer: ''
+deezer: https://www.deezer.com/episode/708338041
 description: "Softwareentwicklung in der Praxis: Infotainment-Systeme f\xFCr Kreuzfahrtschiffe.\
   \ Jede Industrie und Dom\xE4ne hat ihre Eigenheiten und Herausforderungen. Dies\
   \ \xFCbertr\xE4gt sich auch auf die Software, die f\xFCr die entsprechenden Anwendungsf\xE4\
