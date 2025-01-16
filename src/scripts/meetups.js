@@ -30,3 +30,7 @@ export function getPastMeetups(limit = undefined, timeDivider = undefined) {
 
 	return limit ? meetups.slice(0, limit) : meetups;
 }
+
+export function getAllMeetups() {
+	return allMeetups;
+}

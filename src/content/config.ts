@@ -82,6 +82,18 @@ const meetupCollection = defineCollection({
 				slides: z.string().optional(),
 			})
 		),
+		participants: z
+			.object({
+				registered: z.number(),
+				present: z
+					.object({
+						total: z.number().optional(),
+						male: z.number().optional(),
+						female: z.number().optional(),
+					})
+					.optional(),
+			})
+			.optional(),
 	}),
 });
 

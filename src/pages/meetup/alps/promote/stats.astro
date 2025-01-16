@@ -1,0 +1,73 @@
+---
+import MainHead from '../../../../components/MainHead.astro';
+import { formatDate, formatDateWithoutWeekday, formatTime } from '../../../../scripts/date.js';
+import { getNextMeetup, getPastMeetups } from '../../../../scripts/meetups.js';
+
+let title = 'Stats Post Meetup Alps - Engineering Kiosk - Innsbruck';
+let description = 'Tech Meetup in Innsbruck, brings together tech enthusiasts, engineers, and professionals from various fields to explore the intersection of engineering culture, open source, people and technology.';
+const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+
+// Get all meetups data
+const allMeetups = [...getPastMeetups(), getNextMeetup()];
+
+// reverse sorting based on date
+allMeetups.sort((a, b) => new Date(b.date) - new Date(a.date));
+
+const highestRegistrationNum = Math.max(...allMeetups.map(m => m.participants?.registered || 0));
+
+---
+
+<html lang="de">
+    <head>
+        <MainHead title={title} description={description} image="/meetup/alps/images/ibk.jpg" {canonicalURL} />
+    </head>
+
+    <body class="antialiased bg-body text-body font-body">
+        <div class="container mx-auto px-4 py-8">
+            <h1 class="text-3xl font-bold mb-6">Engineering Kiosk Alps - Meetup Statistics</h1>
+            
+            <div class="">
+                <table class="min-w-full bg-white border border-gray-300">
+                    <thead class="sticky top-0 bg-gray-100">
+                        <tr class="bg-gray-100">
+                            <th class="px-6 py-3 border-b text-left">Date</th>
+                            <th class="px-6 py-3 border-b text-left">Location</th>
+                            <th class="px-6 py-3 border-b text-left">Speakers</th>
+                            <th class="px-6 py-3 border-b text-center">Registrations</th>
+                            <th class="px-6 py-3 border-b text-center">Attendees</th>
+                            <th class="px-6 py-3 border-b text-center">Attendees Female</th>
+                            <th class="px-6 py-3 border-b text-center">Attendees Male</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {allMeetups.map((meetup) => (
+                            <tr class="hover:bg-gray-50">
+                                <td class="px-6 py-4 border-b">{formatDate(meetup.date)}</td>
+                                <td class="px-6 py-4 border-b">{meetup.location.name}</td>
+                                <td class="px-6 py-4 border-b">
+                                    {meetup.talks.map(talk => `${talk.name} (${talk.title})`).join(', ')}
+                                </td>
+                                <td class="px-6 py-4 border-b text-center">
+                                    {meetup.participants?.registered === highestRegistrationNum ? (
+                                        <strong>{meetup.participants?.registered || 0}</strong>
+                                    ) : (
+                                        meetup.participants?.registered || 0
+                                    )}
+                                </td>
+                                <td class="px-6 py-4 border-b text-center">{meetup.participants?.present?.total || 0}</td>
+                                <td class="px-6 py-4 border-b text-center">
+                                    {meetup.participants?.present?.female || 0}
+                                    {meetup.participants?.present?.female ? ` (${((meetup.participants?.present?.female / meetup.participants?.present?.total) * 100).toFixed(2)}%)` : ''}
+                                </td>
+                                <td class="px-6 py-4 border-b text-center">
+                                    {meetup.participants?.present?.male || 0}
+                                    {meetup.participants?.present?.male ? ` (${((meetup.participants?.present?.male / meetup.participants?.present?.total) * 100).toFixed(2)}%)` : ''}
+                                </td>
+                            </tr>
+                        ))}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </body>
+</html>
