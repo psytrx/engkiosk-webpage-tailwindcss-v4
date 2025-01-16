@@ -13,7 +13,21 @@ const allMeetups = [...getPastMeetups(), getNextMeetup()];
 // reverse sorting based on date
 allMeetups.sort((a, b) => new Date(b.date) - new Date(a.date));
 
+// Calculate statistics
 const highestRegistrationNum = Math.max(...allMeetups.map(m => m.participants?.registered || 0));
+const numMeetups = allMeetups.length;
+const validMeetups = allMeetups.filter(meetup => meetup.participants?.registered && meetup.participants?.present?.total);
+const totalShowUpRate = validMeetups.reduce((acc, meetup) => acc + (meetup.participants.present.total / meetup.participants.registered), 0);
+const averageShowUpRate = (totalShowUpRate / validMeetups.length) * 100;
+
+const validMeetupsForGenderRatio = allMeetups.filter(meetup => meetup.participants?.present?.female !== undefined && meetup.participants?.present?.male !== undefined);
+
+const totalFemaleRatio = validMeetupsForGenderRatio.reduce((acc, meetup) => acc + (meetup.participants?.present?.female / meetup.participants?.present?.total), 0);
+const averageFemaleRatio = (totalFemaleRatio / validMeetupsForGenderRatio.length) * 100;
+
+const totalMaleRatio = validMeetupsForGenderRatio.reduce((acc, meetup) => acc + (meetup.participants?.present?.male / meetup.participants?.present?.total), 0);
+const averageMaleRatio = (totalMaleRatio / validMeetupsForGenderRatio.length) * 100;
+
 
 ---
 
@@ -25,6 +39,12 @@ const highestRegistrationNum = Math.max(...allMeetups.map(m => m.participants?.r
     <body class="antialiased bg-body text-body font-body">
         <div class="container mx-auto px-4 py-8">
             <h1 class="text-3xl font-bold mb-6">Engineering Kiosk Alps - Meetup Statistics</h1>
+
+            <div class="mb-8">
+                <p class="text-lg">Number of Meetups: {numMeetups}</p>
+                <p class="text-lg">Average Show-Up Rate: {averageShowUpRate.toFixed(2)}%</p>
+                <p class="text-lg">Average Female/Male Ratio: {averageFemaleRatio.toFixed(2)}% / {averageMaleRatio.toFixed(2)}%</p>
+            </div>
             
             <div class="">
                 <table class="min-w-full bg-white border border-gray-300">
@@ -54,7 +74,10 @@ const highestRegistrationNum = Math.max(...allMeetups.map(m => m.participants?.r
                                         meetup.participants?.registered || 0
                                     )}
                                 </td>
-                                <td class="px-6 py-4 border-b text-center">{meetup.participants?.present?.total || 0}</td>
+                                <td class="px-6 py-4 border-b text-center">
+                                    {meetup.participants?.present?.total || 0}
+                                    {meetup.participants?.present?.total ? ` (${((meetup.participants?.present?.total / meetup.participants?.registered) * 100).toFixed(2)}%)` : ''}
+                                </td>
                                 <td class="px-6 py-4 border-b text-center">
                                     {meetup.participants?.present?.female || 0}
                                     {meetup.participants?.present?.female ? ` (${((meetup.participants?.present?.female / meetup.participants?.present?.total) * 100).toFixed(2)}%)` : ''}
