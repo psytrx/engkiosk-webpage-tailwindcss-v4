@@ -23,4 +23,6 @@ talks:
     linkedin: 'penguinwarrior'
     slides: '2310-richard-weinberger_oss_jungle.pdf'
     website: 'https://www.sigma-star.at'
+participants:
+  registered: 52
 ---

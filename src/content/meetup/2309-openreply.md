@@ -18,4 +18,6 @@ talks:
     description: 'The aim of the event is to give you an understanding of recommendation systems and their benefits. First, we briefly present the basics of recommender systems. We then discuss use cases from practice to see how companies can benefit from predictive modeling.'
     linkedin: 'martin-pichl'
     website: 'https://www.martin-pichl.at'
+participants:
+  registered: 33
 ---

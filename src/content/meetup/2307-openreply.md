@@ -22,4 +22,6 @@ talks:
     linkedin: 'christian-esswein-bb70a3160'
     website: 'https://txture.io'
     slides: '2307-chris.pdf'
+participants:
+  registered: 34
 ---
