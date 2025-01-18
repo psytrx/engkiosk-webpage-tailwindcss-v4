@@ -11,7 +11,7 @@ talks:
     title: 'Why Graphic Design Isn’t Magic (Though Maybe It Is)'
     description: '“Die Romana zaubert uns da schon was.” (“Romana will conjure up something for us.”) This phrase always irks me. People outside the creative field often think graphic design and illustration are some form of magic. Well, it isn’t—not like in Harry Potter, where a wave of a wand (or stylus pen) and a few words create something from nothing. But what if we redefine magic? In this talk, I’ll explore how graphic design can indeed be magic, discussing the conditions that make it so and the processes involved'
     bio: 'From a young age, I was always drawing. This childhood passion led me to study Graphics and Communication Design at the HTL in Innsbruck. Frustrated by the subjective "I don’t like it" feedback in design, I dabbled in studying computer science while working in sports retail, driven by my love for the outdoors and aversion to endless screen time. Throughout this period, I freelanced on the side for friends and acquaintances. For the past seven years, I’ve been an all-around designer and illustrator in a corporate setting.'
-    linkedin: 'romana-mayr-0ab1141b8'
+    website: 'https://romanamayr.com'
   - avatar: '2501_Nora_Hofer.jpg'
     name: 'Nora Hofer'
     title: 'Do Not Trust Your Eyes: The Semantic Pitfalls of Modern Image Compression'
