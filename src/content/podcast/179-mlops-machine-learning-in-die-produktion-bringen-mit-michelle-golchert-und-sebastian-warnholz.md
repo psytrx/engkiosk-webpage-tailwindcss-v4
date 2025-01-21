@@ -1,6 +1,6 @@
 ---
 advertiser: ''
-amazon_music: ''
+amazon_music: https://music.amazon.com/podcasts/c35a09fe-4116-4e04-8f68-77d61b112e46/engineering-kiosk
 apple_podcasts: https://podcasts.apple.com/us/podcast/179-mlops-machine-learning-in-die-produktion-bringen/id1603082924?i=1000684795392&uo=4
 audio: https://audio1.redcircle.com/episodes/e556f9e5-a8e4-476a-9c8f-b0a32284d2fc/stream.mp3
 chapter:
