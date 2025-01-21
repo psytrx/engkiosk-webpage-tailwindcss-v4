@@ -1,0 +1,912 @@
+{
+  "language_code": "de",
+  "audio_url": "https://cloud.inlupus.at/s/cWZ5bA97CwmAjiJ/download/ep_mlops.mp3",
+  "punctuate": true,
+  "format_text": true,
+  "dual_channel": false,
+  "multichannel": null,
+  "audio_channels": null,
+  "webhook_url": null,
+  "webhook_auth_header_name": null,
+  "webhook_auth_header_value": null,
+  "audio_start_from": null,
+  "audio_end_at": null,
+  "word_boost": [],
+  "boost_param": null,
+  "filter_profanity": false,
+  "redact_pii": false,
+  "redact_pii_audio": false,
+  "redact_pii_audio_quality": null,
+  "redact_pii_policies": null,
+  "redact_pii_sub": null,
+  "speaker_labels": true,
+  "speakers_expected": 4,
+  "content_safety": false,
+  "content_safety_confidence": null,
+  "iab_categories": false,
+  "custom_spelling": null,
+  "disfluencies": false,
+  "sentiment_analysis": false,
+  "auto_chapters": false,
+  "entity_detection": false,
+  "summarization": false,
+  "summary_model": null,
+  "summary_type": null,
+  "auto_highlights": false,
+  "language_detection": false,
+  "language_confidence_threshold": null,
+  "language_confidence": null,
+  "speech_threshold": null,
+  "speech_model": null,
+  "id": "0ff5a481-bb6c-40d6-8e62-9820962c17da",
+  "status": "completed",
+  "error": null,
+  "utterances": [
+    {
+      "text": "Eine neue Episode vom Engineering Kiosk. Du bist wieder mit dabei, das freut mich riesig. Danke fürs Einschalten. Aber nun zur Episode. Machine Learning bzw. Die Ergebnisse aus Vorhersagen, sogenannten Prediction Models, sind aus der modernen IT oder gar aus unserem Leben nicht mehr wegzudenken. Solche Modelle kommen wahrscheinlich öfter zum Einsatz, als dir eigentlich bewusst ist. Die Programmierung, Erstellung und das Training dieser Modelle ist die eine Sache. Ÿousand, das Deployment und der Betrieb ist die andere Thematik. Letzteres nennt man Machine Learning Operations oder kurz MLOPs. Dies ist das Thema dieser Episode. Wir klären, was eigentlich mlops ist und wie es sich zum klassischen DevOps unterscheidet. Wie man das eigene Machine Learning Modell in Produktion bringt und welche Stages dafür durchlaufen werden müssen. Was der Unterschied von Model Training und Model Serving ist, welche Aufgaben eine Model Registry hat, wie man Machine Learning Modelle in Produktion eigentlich monitort und debuggt. Was model Drift bzw. Die Drift Detection ist. Ob der Feedback Cycle durch Methoden wie Continuous Delivery auch kurz gehalten werden kann und welche Skills als ML Ops Engineer wichtig sind. Um all diese Fragen zu beantworten, stehen uns Michelle und Sebastian vom Data Science Deep Dive Podcast Rede und Antwort. Und los geht's.",
+      "start": 4000,
+      "end": 78740,
+      "confidence": 0.91016954,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Kunden auch ganz oft so Data Science Projekte oder Datenprojekte, die umgesetzt werden. Und was mir da sehr oft begegnet ist, dass eigentlich irgendwie eine Person so lokal auf der Maschine so vor sich hin werkelt, da irgendwo ein Modell baut. Und mich hat es so ein bisschen erinnert an die Grundzeit früher im Development, wo man so den Approach hatte works on my machine, ich baue da alles lokal und that's it. Und dann habe ich mir mal gedacht, okay, eigentlich könnten wir ja so eine Episode zu Mlops machen. Und dann habe ich kurz Andi gefragt und Andi hat gemeint als DevOps Spezialist, wo ist denn da der Unterschied? Das ist ja einfach nur anderer Code und eigentlich funktioniert das ja alles gleich. Und dann habe ich mal kurz gefragt Ja Moment, du hast ja vielleicht sogar zwei Produktivsysteme, quasi eines zum trainieren und eines, wo das Modell dann wirklich läuft. Und wo speicherst du die Modelle denn eigentlich ab? Kannst du da in deinem Docker Container einfach mal ÿousand paar hundert GB Modell mitschippen? Wie wie läuft das? Und wie schaut es mit der Nachvollziehbarkeit aus, wenn du da drei Modelle testest und dann irgendwo die Ergebnisse abspeicherst und Testings fast ist es alles gleich. Und irgendwie war er dann leise. Und dann war es klar, dass wir eine Episode machen und dass wir da auch zusätzliche Power brauchen und Knowledge brauchen. Und darum willkommen bei uns im Podcast, Michelle und Sebastian.",
+      "start": 81780,
+      "end": 160292,
+      "confidence": 0.8971308,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Hallo.",
+      "start": 160356,
+      "end": 161076,
+      "confidence": 0.9727,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Hallo und vielen Dank für die Einladung.",
+      "start": 161268,
+      "end": 162836,
+      "confidence": 0.8995886,
+      "speaker": "D",
+      "channel": null
+    },
+    {
+      "text": "Zweitausendein. Ich muss mich jetzt auch gar nicht verteidigen, denn das, was ich in der Uni gelernt habe, ist 100 % Konfidenz bei völliger Ahnungslosigkeit. Als er mit den 100 GB Modell Trainingsdaten ankommen, habe ich einfach gesagt, er ist drei. Und das da war er dann auch still, der Wolfgang. Aber nee, ich freue mich natürlich auch jetzt mal, ich sag mal, in die Schranken gewesen zu werden und einfach mal zu wissen, okay, was heißt das denn? Denn jede Applikation ist anders und deswegen haben wir zwei Leute, die sich damit wirklich auskennen und ich habe die Ehre, beide mal vorzustellen. Aufmerksame Hörerinnen erkennen diese Stimme vielleicht, denn Michelle und Sebastian waren vor kurzem bei uns im Engineering Kiosk Adventskalender. Episode 153 wie hoste ich ein large language Modell mit Kubernetes in 5 Minuten? Ich glaube es sind 5 Minuten 12 s oder sowas geworden, aber schon sehr, sehr sportlich. Also falls ihr mal irgendwie ein LLM auf Kubernetes hosten wollt, Episode 153 ist eure Audiospur, die ihr euch auf die Ohren setzen solltet. Wer seid ihr denn? Ihr beide verdient eure Brötchen mit Data Science, mit Machine Learning und allem drum und dran bei INWT. Inwt steht für in Numbers We Trust und wenn ich die Webseite aufmache, steht da ein Begriff, den ich auch zuvor noch nie gehört habe. Full Stack Data Science. Sehr geile Beschreibung, muss ich zugeben. Michelle, du bist dort Data Engineer, DevOps expert, du stehst ab und zu mal auf den Bühnen dieser Welt, unter anderem beim TechCamp Hamburg 2023 und da hast du einmal über Real Time Fraud Detection gesprochen und du hast deinen Master of Science in Psychologie gemacht. Da muss ich glaube ich auch ein bisschen aufpassen, was ich hier so sage. Sebastian, du bist Data engineer oder Data Service Evangelist bei INWT, du Dr. In Statistik im Bereich Small Area Estimation und laut GitHub machst du sehr, sehr viel mit der Sprache R. Was begeistert dich an dieser Sprache? Ich habe die mal auch im Studium genutzt und ich muss zugeben, ich habe mich durchgekämpft.",
+      "start": 162908,
+      "end": 272825,
+      "confidence": 0.9081076,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Ja, r ist glaube ich so das Relikt der Statistiker. Das ist die Standardsprache, wenn man als Statistiker anfängt, tatsächlich Analysen zu machen. Und es ist eine Mischung tatsächlich aus Skriptsprache und interaktiver Analyse Software. So würde ich das jetzt mal kurz beschreiben. Und das war eigentlich die erste richtige Programmiersprache, in der ich angefangen habe und ist tatsächlich auch bei Inwt vermutlich die erste Programmiersprache, mit der wir die meiste Arbeit gemacht haben in den ersten Jahren. Wir sind ja seit 2012 machen wir ungefähr Projekte. In den ersten fünf, sechs Jahren war das wahrscheinlich ausschließlich, dass wir ETL Prozesse, Modellierung und alles im Bereich Predictive analytics mit R gemacht haben. Und erst danach hat dann eigentlich tatsächlich Python im vollen Funktionsumfang aufgeschlossen. Und dann ist auch bei mir der Wechsel ja relativ schnell vollzogen dann Richtung Python, weil das meiste, was produktiv läuft, einfach dann in Unternehmenskontexten zumindest häufig eher dort zu finden ist. Er ist aber nicht weg. Also auch aus dem Data Science Bereich ist es auch glaube ich nicht wegzudenken und wird auch nicht weggehen. Es bleibt. Es gibt auch gute Tools dafür nach wie vor. Eine aktive Community bringt nach wie vor großen Spaß, damit zu arbeiten.",
+      "start": 272937,
+      "end": 337282,
+      "confidence": 0.92215717,
+      "speaker": "D",
+      "channel": null
+    },
+    {
+      "text": "Verwendest du noch aktive zum um Modelle auch zu entwickeln oder bist du da schon voll auf, keine Ahnung, Python oder?",
+      "start": 337346,
+      "end": 344346,
+      "confidence": 0.84219855,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Ja, wir wir arbeiten fast nur noch in Python tatsächlich aktuell. Und ich würde sagen, er ist dort bei uns zumindestens überwiegend abgelöst, aber nicht, weil wir wollten, sondern weil eigentlich eher von Kundenseite dann der Druck da war, Richtung Python zu gehen.",
+      "start": 344418,
+      "end": 357678,
+      "confidence": 0.9044846,
+      "speaker": "D",
+      "channel": null
+    },
+    {
+      "text": "Ich habe jetzt gerade letzte Woche mal wieder eine Anfrage in R bekommen und es war aber die erste seit drei Jahren. Also es wirklich passiert nicht mehr so häufig. Sehr selten.",
+      "start": 357734,
+      "end": 366102,
+      "confidence": 0.9424503,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Aber du hast dann auch R verwendet für die Umsetzung?",
+      "start": 366166,
+      "end": 368638,
+      "confidence": 0.938953,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Nein, ich habe es noch nicht gemacht, aber werde ich machen. Ja, aber wenn ich es mir aussuchen würde, würde ich lieber Python nutzen.",
+      "start": 368734,
+      "end": 373886,
+      "confidence": 0.92785335,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Okay, Sebastian, bei dir auch, dass du mittlerweile lieber benutzt, oder?",
+      "start": 374038,
+      "end": 378346,
+      "confidence": 0.90751725,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Ich würde sagen, ich bin in beiden ziemlich flüssig unterwegs. Ich würde mich freuen, wenn ich irgendwann wieder Richtung R zurückgehen darf, aber es sieht aktuell nicht so aus, dass das eine Option ist.",
+      "start": 378498,
+      "end": 388990,
+      "confidence": 0.9248262,
+      "speaker": "D",
+      "channel": null
+    },
+    {
+      "text": "Also ich kenne auch viele Leute, die immer noch R verwenden. Ja, und für gerade kleinere Dinge und wenn man so aus dem Statistikbereich kommt, gibt es ja doch auch sehr viele Konnektoren oder oder Packages, die man eigentlich sehr cool verwenden kann. Aber gehen wir mal in das Thema rein und da bietet sich natürlich am Anfang gleich diese klassische Frage an was ist eigentlich MLops? Und ist es einfach DevOps? Nur ausgetauschtes Dev zu ML und alles bleibt gleich wieder Andy eigentlich so initial gemeint hat.",
+      "start": 449610,
+      "end": 477518,
+      "confidence": 0.90691465,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Also ML Ops steht ja für Machine Learning Operations und nicht für Development Operations. Deswegen offensichtlich gibt es da irgendeinen Unterschied, sonst würden wir es ja nicht anders nennen. Und es verbindet im Prinzip diese zwei Bereiche also zum einen hat man halt den Machine learning Bereich, also dieses ganze Thema Modelle, Modell Deployment, Modellierung und dann halt den Operationsbereich. Und wenn ich das in einem Satz zusammenfassen müsste, würde ich sagen, dass es im Prinzip darum geht, den Prozess des Weges eines Machine Learning Modells in die Produktion zu beschreiben oder sich zu überlegen, wie der gestaltet ist. Beim klassischeren DevOps würde ich sagen, geht es halt um Softwareprodukte und Services und beim Machine Learning halt wirklich um Machine Learning Modelle. Das heißt, es reicht nicht aus, dass ich mich mit klassischer Software auskenne, sondern es ist eben auch erforderlich, Wissen zu Machine Learning Modellen und welche speziellen Anforderungen diese mitbringen zu haben, um dann wirklich Mlops machen zu können in der Praxis.",
+      "start": 477574,
+      "end": 539466,
+      "confidence": 0.90669507,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Ja, ich würde eine Sache würde ich gerne ergänzen und das ist, wir haben bei DevOps ja häufig in der Bewegung so erst mal so eine Kulturaufgabe gehabt, zwei Bereiche zusammenzuführen, nämlich Entwicklung und dann Operations. Und diese grundsätzliche Aufgabe, die ist in MLops genauso da. Wir wollen die Data Science Seite und den Operationsbereich zusammenführen und den auch zusammen lassen. Und was dort dann häufig natürlich passiert, das passiert im DevOps Bereich genauso, ist eigentlich, dass wir die Entwickler, in unserem Falle eben Data Scientist befähigen, eigentlich autonom zu handeln und Dinge in die Produktion zu bringen und gleichzeitig ihnen aber auch Feedback zu geben zu ihrer Arbeit in der Produktion. Das heißt, die Sachen, die wir in DevOps machen, die bleiben gleich. Wir denken in Feedback schleifen, wir denken in Zyklen, wir versuchen Wege in die Produktion kurz zu halten, Feedback zurück aus der Produktion zu unseren Data Discord zu halten, damit wir schneller unterwegs sind. Das ist und bleibt auch die Kernaufgabe. Und so gesehen ist mlops nichts anderes als DevOps, nur eben auf Machine Learning Modelle angewendet. Wir kommen aber, wenn wir über Continuous Integration und Delivery nachdenken, mit den klassischen Ansätzen an unsere Grenzen. Wir können z.B. nicht mehr so einfach in einer CI Pipeline oder auch in der Delivery Pipeline ein Modell Artefakt deployen. Das funktioniert nicht so einfach, weil einfach die Zeiten, der Anspruch an die Daten, die Sachen werden so groß, also die die Datenbestände werden so groß, die ich verarbeiten muss. Das Modell Training passiert eventuell so häufig und auch eher Cronba basiert nicht auf einen Commit in meinem Git Repository, sondern muss irgendwo täglich erfolgen, vielleicht stündlich, vielleicht in anderen Zyklen und sowas. Und dort gibt es so viele Nuancen und so viele andere Dinge, die passieren von der Entwicklung bis in die Produktion, dass wir die Tools aus DevOps fast alle mitnehmen und erweitern durch das, was wir eben für Machine Learning Modelle vor allen Dingen brauchen, um die Sachen in die Produktion zu bringen, aber auch um den Operationsteil, den Monitoring Teil ja überhaupt bewerkstelligen zu können.",
+      "start": 539538,
+      "end": 657358,
+      "confidence": 0.9116716,
+      "speaker": "D",
+      "channel": null
+    },
+    {
+      "text": "Jetzt gibt es ja auch noch den Begriff Mlops Engineer. Der Andy sagt immer, DevOps ist eine Bewegung und es gibt keine DevOps als als Position als Person. Jetzt meine Frage ihr habt es ja gerade kürzlich auch in einer Episode bei euch im Podcast im data Science Deep Dive besprochen, wie sich das alles so entwickelt mit den Positionen und den Beschreibungen. Jetzt so ein Mlops kommt die Person mehr aus der Engineering Seite, Development Seite oder kommt mehr von der Data Science Seite, also von, wenn man über MLob spricht, ist es eher eine Developer Person oder eher eine Data Science Person oder ist es egal und man kann von beiden Seiten kommen? Also wie ist da eure Herangehensweise?",
+      "start": 657414,
+      "end": 698714,
+      "confidence": 0.90738493,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Ich würde sagen, meiner Meinung nach geht eigentlich beides. Also ich meine, ich habe Psychologie studiert und würde jetzt sagen, dass ich Mlops mache, was ja nochmal einen Schritt weiter weg ist, weil ich habe das Gefühl, dass man die Sachen oder das, was ich jetzt im Arbeitsalltag mache, das kann man nicht in einem theoretischen Studium lernen. Das muss man halt lernen, wenn man es macht. Wenn man das erste Mal ein Machine Learning Modell deployed hat, dann weiß man eigentlich erst so richtig, wovon man spricht. Und klar kann man sich vorher informieren und sich das theoretisch mal so überlegen, wie man es machen würde, mal einen Kurs machen, aber am Ende lernt man es im Beruf. Und wir haben im Team ein paar Personen oder eigentlich alle, wenn ich jetzt mal so drüber nachdenke, die so DevOps im L Obs machen, haben das so im Laufe des Berufsalltags irgendwie entwickelt, dieses Interesse und sind dann da so reingerutscht. Und wir haben eigentlich alle relativ verschiedene Hintergründe. Also die Personen, die bei uns eher ein technischeres Profil haben, sind ganz divers vom Hintergrund aufgestellt.",
+      "start": 698802,
+      "end": 758530,
+      "confidence": 0.940632,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Ich würde ja vielleicht unterscheiden zwischen uns selbst bei IWT, weil wir immer sehr, sehr stark darin waren, Personen im Bereich Analytics, also mit einem statistik mathematischen Hintergrund, Psychologie hat einen sehr starken Statistik Hintergrund z.B. zu rekrutieren, weil wir da eine gute Strahlkraft haben. Und in einem anderen Bereich, nämlich eher in der Informatik und Softwareentwicklung, waren wir nie besonders stark in der Außenwirkung, um uns dort tatsächlich im Recruiting auch dran zu beteiligen. Und das ist ganz interessant, das sieht man auch in einigen der Abteilungen. Es gibt offensichtlich in den Data Science Abteilungen der Welt relativ gute Chancen, Data Scientist reinzuholen. Das sind typischerweise keine Softwareentwickler, die dort einsteigen, sondern das sind Leute mit anderen Universitätsabschlüssen. Wenn man Glück hat, viele Naturwissenschaftler, Psychologie, es gibt auch Ökonomen und Sozialwissenschaftler, die dort einsteigen. Und viele von diesen Karrierepfaden teilen sich dann auf, weil man einfach erst dann merkt, was der spannendere Bereich für einen selbst ist. Nämlich betreibe ich Modelle und bringe sie in Produktion, schreibe Software dazu und kümmere mich um die Pipelines oder will ich wirklich in der Modellierung bleiben. Und die unterschiedlichen Profile haben unterschiedlichen Appetit für diese beiden Zweige. Vor 10 Jahren gab es nur zwei Rollen, Data Engineer und Data Scientist. Das hat sich jetzt weiter ausdifferenziert. Ich würde die Einschätzung teilen, wenn wir ein DevOps Profil im Unternehmen sehen in der Ausschreibung, ist das ein Signal dafür, dass dort DevOps nicht richtig verstanden wird, weil es eine kulturelle Bewegung ist. Im Prinzip würde ich es auch im Mlops Bereich so sehen. Aber das, wonach wir eigentlich fragen, ist, jemand mit DevOps Erfahrung kommt in diesen Bereich rein und unterstützt das Team oder umgekehrt, jemand aus dem Data Science Abteilung mit Operations Erfahrung kommt in das Team und unterstützt. Das sind, glaube ich, die beiden Beweggründe, weswegen wir einen Mlops Profil überhaupt haben wollen im Recruiting. Die Erfahrung letzten Endes mit Operations und der Wille, das dann auch letzten Endes im Team einzubringen.",
+      "start": 758610,
+      "end": 867838,
+      "confidence": 0.9177759,
+      "speaker": "D",
+      "channel": null
+    },
+    {
+      "text": "Das mit dem DevOps, was du gesagt hast, ich meine, super viele Leute, die darüber sprechen, sagen genau das, was du gesagt hast, ist kein Job, ist keine Person, ist eine Bewegung, eine Kultur und allem drum und dran. Und die Industrie lebt es aber anders, ganz realistisch. Und so ist es auch bei ML Ops und AI Ops und Revenue Ops und was es da nicht inzwischen noch alles gibt. Und ich habe da immer so, Achtung Wortwitz, ein Modell im Kopf, das war jetzt nicht ausgemacht. Und zwar, wenn das wirklich eine Person ist, dann ist es ja bei DevOps entweder ein Entwickler oder ein Ops, also ein Systemadministrator, auf gut Deutsch gesagt. Und man hat immer so zwei Cappies oder zwei Hüte. Und der Traum ist natürlich, dass du den Softwareentwicklungshut 50 % auf hast und den Operations, den Systemadministrator Hut. Es ist nun mal so in Deutschland in der klassischen Berufsausbildung, es gibt den Fachinformatiker Anwendungsentwicklung und den Fachinformatiker Systemintegration. Das bedeutet, das sind eigentlich zwei hochqualifizierte Berufe, für die man zweieinhalb, drei, dreieinhalb Jahre Berufsausbildung braucht. Du musst ein Superheld sein, um beides gleich gut zu können. Zweitausendein meine Frage gibt es diese Art von zwei Hüten bei Mlops auch? Also klar, umso mehr ich mich mit der Applikation und Machine Learning und mit den mit den Elementen darunter, ich sag mal Algorithmen, ob die jetzt CPU lastig sind, RAM lastig, disclastig und so weiter. Umso mehr ich mich damit auskenne, desto besser kann ich natürlich so etwas betreiben. Früher hat man immer gesagt, die Ops Leute, die restarten immer die Datenbank und wenn das Neustarten nicht mehr funktioniert, dann holen sie die Entwickler.",
+      "start": 867934,
+      "end": 955010,
+      "confidence": 0.90320474,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Zweitausendein will mal eine versuchte Antwort geben. Die Sprache, die ich wahrscheinlich gilt das Michelle für dich auch, die wir am meisten sprechen, ist YAML, nicht Python oder R. Wir sitzen und damit meine ich jetzt nicht unbedingt YAML, weil wir so viele Feature daraus brauchen, sondern weil die Hauptarbeit besteht darin, Services zu konfigurieren, die ja schon da sind. Also entweder Services, die irgendwo leben in der Cloud oder die man vielleicht selber aufsetzt und konfiguriert, die das Team supporten, da drin ihre Arbeit zu machen. Und danach besteht dann eben auch noch ein Auftrag darin, natürlich diese diese Produkte irgendwo einzubringen, dass die richtigen Tools verwendet werden, um Modelle in die Produktion zu bekommen. Also Betrieb von CICD gehört dazu. Es gehört aber auch dazu, dann können wir später noch drüber sprechen, Model Registries und so weiter, Datenbanken auch mit zu betreiben, mit so mit zu unterstützen. Ich sehe da nicht mehr die klare Grenze. Ich glaube auch, du hast mehrere Hüter auf und springst zwischen den rollen hinterher. Es ist definitiv so, dass wir immer wieder in Teams sehen, dass bestimmte Personen eher in diesen infrastruktur administrativen Bereich gehen und andere eher in den Anwendungsentwicklungsteil gehen. Da würde ich jetzt sagen, rein von den Profilen, wir haben ja viele im Data Science Bereich, da würde ich jetzt den ML Engineer tatsächlich sehen, der dann viel Software in dem Bereich einfach schreibt und und den Bereich von der Seite sozusagen unterstützt. Und diese beiden Profile würde ich sagen, die schmelzen schon. Ja, also die sind nicht ganz, ganz trennscharf.",
+      "start": 955050,
+      "end": 1040956,
+      "confidence": 0.9078347,
+      "speaker": "D",
+      "channel": null
+    },
+    {
+      "text": "Dann probieren wir gleich mal in die in die Praxis zu gehen. Wenn du so ein ML Modell, also ein Machine Learning Modell, ein klassisches in Produktion bringst, wie funktioniert es und wer ist da auch beteiligt? Also wer baut das Modell und wie kommt es dann zum LM? Schon schwieriges Wort ML Engineer oder sind andere Rollen beteiligt? Also was ist da bei euch in größeren Projekten der übliche Flow?",
+      "start": 1041028,
+      "end": 1065332,
+      "confidence": 0.90672857,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Also bei uns startet so ein Projekt damit, dass wir erstmal Daten bekommen oder uns die Daten irgendwo herholen weil das ist die Grundlage für unsere Arbeit. Und was dann im nächsten Schritt passiert, ist, dass wir uns erstmal mit den Daten auseinandersetzen. Das heißt, wir wollen erst mal ein Gefühl für die Daten bekommen. Wir machen eine Exploration und gucken erst mal, was da so los ist. Und dann ist es so, dass es schon in der Team Zusammensetzung, wie Sebastian jetzt gerade auch schon angedeutet hat, Leute gibt, die eher Richtung Modellierung gehen. Und dann besteht das Team dazu noch aus Leuten, die einen technischeren Fokus haben. Die Personen, die dann modellieren, die setzen sich dann im ersten Schritt hin und sagen, okay, wir gucken mal, dass wir einen Prototypen des Modells erstellen und gucken mal, wie der dann performt. So ein bisschen parallel dazu überlegen sich dann die Personen mit einem technischeren Profil schon mal, wie könnte so eine Architektur aussehen? Manchmal muss das auch schon vorher passieren, je nach Anforderungen. Manchmal sind die Anforderungen an Laufzeit oder Verfügbarkeit sehr speziell. Dann macht es durchaus Sinn, sich das schon vorher zu überlegen, bevor man an den Prototypen geht. Aber in so einem einfacheren Projekt kann das als parallele Workstreams eigentlich passieren.",
+      "start": 1065436,
+      "end": 1134036,
+      "confidence": 0.92709947,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Und vielleicht noch gleich nachgefragt auf der Datenseite zu Beginn, sind da dann auch schon mehr technische Profile involviert, weil es dann schon irgendwelche Pipelines sind, die man aufbaut? Oder ist das klassisch, man bekommt einen Dump und mit dem kann dann jeder arbeiten?",
+      "start": 1134148,
+      "end": 1148476,
+      "confidence": 0.9214964,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Das hängt natürlich davon ab, wie weit die Unternehmen, mit denen wir zusammenarbeiten, schon in der Data Maturity, nennen wir das, sind. Also welche Möglichkeiten haben wir da überhaupt, die Daten zur Verfügung gestellt zu bekommen? Und davon abhängig ist es dann auch, wer sich darum kümmert, die Daten zu bekommen. Also klar, wenn wir einfach eine CSV Datei bekommen, was zum Glück jetzt nicht mehr so häufig der Fall ist, dann braucht man da keinen Mlops Engineer, um die CSV Datei einzulesen. Aber wenn es da eine Datenpipeline gibt oder man sich die automatisiert jeden Tag oder wie oft auch immer neu holen muss, dann ist es schon so, dass die ML Ops Engineers auch an dem Schritt schon beteiligt sind oder den maßgeblich umsetzen.",
+      "start": 1148628,
+      "end": 1187806,
+      "confidence": 0.9441266,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Aber wenn, wenn du sagst, ihr bekommt in der Regel keine CSV Dateien mehr, was bekommt ihr denn da technisch? Bekommt ihr dann, ich sag mal, große, komplexe XML Datenstrukturen oder bekommt ihr wirklich, ich sag mal, Stream Processing Streams oder klinkt ihr euch an irgendeine AWS Redshift Pipeline automatisch mit an, die irgendwie über bring your own cloud, da wo euch reingehuckt wird oder, oder, oder.",
+      "start": 1187878,
+      "end": 1209690,
+      "confidence": 0.85284835,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Jetzt sagt man schon, Gott sei dank kein CSV Andi und du kommst mit XML, das ist ja noch älter und schlimmer um die Ecke.",
+      "start": 1209850,
+      "end": 1216192,
+      "confidence": 0.9171884,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Ja, du, aber es ist halt, ich würde mal sagen, es hat eine ganz klare Struktur, es hat eine Spezifikation, ja, es kann falsch oder richtig sein, der Struktur. Also es hat Schema, wenn du so möchtest. Und ich kann mir schon vorstellen, bei komplexen Daten, es gibt ja nicht nur das Value, gibt ja auch Attribute und so weiter. Also keine Ahnung, was da, welche Firmen da wirklich Analysen machen. Und ich kann mir schon vorstellen, wenn da jetzt gerade ThyssenKrupp kommt mit irgendwelchen Industriemaschinen, die können sich, glaube ich, nicht immer aussuchen, welches Format da rausputzelt, wenn die Maschine dreiig Jahre alt ist, wenn da überhaupt ein Format rauspurt, Ÿousand.",
+      "start": 1216386,
+      "end": 1245606,
+      "confidence": 0.92442375,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Also es ist ganz unterschiedlich. Du hast aber schon gute Beispiele genannt. Also häufig kriegen wir eine Anbindung an die Datenbank, wir kriegen Zugriff auf die Datenbank und holen uns dann da die Daten mit eTLs. Z.B. ich habe jetzt in letzter Zeit relativ viele Projekte umgesetzt, wo ich mit Kafka gearbeitet habe als Event Streaming Technologie und dann eine Anbindung an den Kafka Server geschrieben habe. Sebastian, hast du noch andere Beispiele gerade? Ich habe jetzt relativ lange in dem einen Projekt gearbeitet, zweitausendein.",
+      "start": 1245748,
+      "end": 1272564,
+      "confidence": 0.9391028,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Ja, ich würde auch sagen, genau so in der Reihenfolge. Also es ist tatsächlich relativ vielfältig und hängt davon ab, was auf Kundenseite bereitgestellt werden kann und wie die Schnittstellen dort eben überhaupt sind. Die große Problematik für uns ist ja, dass wir als externer Dienstleister von außen an die Daten ran müssen. Das ist sicherlich noch mal ein bisschen anders, als wenn man im Unternehmen in einem Team mitarbeitet. Dann würde ich jetzt mal sagen, hat man hoffentlich Zugriff auf ein Data Warehouse oder Data Lake Ÿousand, wo die Sachen typischerweise in tabularer Form vorliegen. Das, womit wir uns ja am meisten beschäftigen, ist vor allen Dingen so ein predictive analytics case, wo wir Vorhersagen machen in die Zukunft. Dadurch haben wir weniger Bild und Videomaterial, was wir verarbeiten müssen. Das ist dann natürlich rein von den Formaten und auch von den Pipelines, die wir schreiben, ein bisschen anders. Und die Anbindung ist tatsächlich so, entweder haben wir tatsächlich Redshift als Technologie, tatsächlich vielleicht einfach einen Datenbank Dump, den wir als Snapshot bekommen und darauf erstmal einen Prototypen bauen. Oder wir können uns direkt in die Produktivsysteme einklinken und zuhören, was dort für Daten durch die Leitung gehen und daraus direkt die Modelle speisen.",
+      "start": 1272642,
+      "end": 1341504,
+      "confidence": 0.9274533,
+      "speaker": "D",
+      "channel": null
+    },
+    {
+      "text": "Wenn ihr die Daten bekommt, dann stelle ich mir gerade die Frage, trainiert ihr einmal ein Modell und habt dann ein fertiges Resultat. Weil du hattest vorhin beim Deployment auch das Wort Modell Artefakt in den Mund genommen. Zweitausendein und shippt das dann. Also das klingt nach einer sehr statischen Thematik. Wohingegen natürlich, wenn ihr jetzt irgendwie ein, Michelle hatte gerade Kafka genannt, irgendwas Dream Processing habt, das ist ja, ich sag mal nahe Realtime, wo man natürlich dann die Vorhersagen vielleicht on the fly anpassen kann. Das sind, das sind ja zwei komplett unterschiedliche architekturelle Modelle, wo du wirklich Daten konstant zufütterst oder wo du Daten liest. Zeitpunkt x, du hast etwas und dieses Paket nehme ich jetzt und packe das wie die deutsche Post von A nach B.",
+      "start": 1341672,
+      "end": 1384090,
+      "confidence": 0.9022611,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Genau, da müssen wir, glaube ich, den Schluss, den Michelle angefangen hat, noch mal zu Ende machen, also den Teil sozusagen zu Ende führen. Wir kommen, wir bekommen Daten, wir sind in der Exploration, wir machen vielleicht auch noch mal eine Datenqualitätskontrolle. Dann geht es erstmal rein in eine POC Phase, wo wir tatsächlich schauen, hat die Modellierung und der Use Case, das Geschäftsproblem, was wir versuchen zu lösen, etwas miteinander zu tun? Das heißt, ist das hier eine anständige Lösung, die wir auch produzieren können mit Predictive Ansatz. Und wenn wir dort rauskommen, haben wir den ersten Teil. Das wäre dann etwas, was wir Model Serving nennen. Das bedeutet, wir liefern Prognosen aus und wir haben einen anderen Teil, das ist der Model Training Teil und das ist der Teil, wo wir ein Modell neu trainieren. Beide diese Dinge sind eigentlich getrennte Services, die natürlich untereinander gekoppelt sind, weil der Model Serving Teil braucht natürlich Zugriff auf das vortrainierte Modell aus dem Training. Und genau die beiden muss man dann entsprechend eben zusammenbringen. Die können sich auch sehr, sehr unterschiedlich verhalten. Wenn das interessant ist, dann können wir da so ein bisschen tiefer einsteigen und mal so ein bisschen ausdifferenzieren. Wie kann Model Training aussehen? Was kann man dabei beachten und wie kann Model Surfing aussehen? Was können wir dabei konkreter betrachten?",
+      "start": 1384750,
+      "end": 1455844,
+      "confidence": 0.91466194,
+      "speaker": "D",
+      "channel": null
+    },
+    {
+      "text": "Ja, ich glaube, das ist ja auch der ganz spezielle Teil, der eigentlich sich dann vielleicht auch ein bisschen abhebt vom klassischen Software Engineering. Zweitausendein, der ganze CICD Kram hätte ich jetzt schon fast gesagt, aber die Pipelines, die es dort gibt, weil da natürlich auch andere Anforderungen bestehen. Also wenn du, also wenn ihr da mal in die Tiefe gehen könnt.",
+      "start": 1455892,
+      "end": 1476234,
+      "confidence": 0.90106386,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Genau, wir haben zwei Teile. Wir gucken uns an Model Surfing und wir haben Model Training. Wenn wir erstmal nur über das Model Training reden, dann ist, glaube ich, der entscheidende Punkt, du hattest ja auch schon die Rückfrage gehabt, was ist jetzt genau Modell Artefakt? Wie kriege ich eigentlich Modell Artefakte in die Produktion? Und man muss sagen, typischerweise kriegen wir keine Modellartefakte in die Produktion, sondern wir bekommen eine ganze Pipeline in die Produktion, die uns Modellartefakte generiert. Und da fängt eigentlich das ganze Problem schon an, weil ich habe jetzt auf einmal Software, für die ich tatsächlich Software produktiven Code schreibe, mit allen Standardanforderungen, die ich ansonsten an produktiven Code auch gerne stellen möchte. Dafür habe ich auch Pipelines. Ich habe nur das Problem, dass ich den Outcome dieser Pipeline eigentlich nicht mehr vernünftig testen kann, weil es unrealistisch ist, dass ich in der CI CD Pipeline tatsächlich irgendwo den Output sozusagen rausbekomme. Also stellen wir uns vor, wir trainieren eben ein Modell für die Vorhersage, weil sie so ein Standard Case bei uns ist. Z.B. um das mal greifbar zu machen, ist die Luftschadstoffprognose in Berlin. Dort kriegen wir eben Trainingsdaten rein, das sind alle Messwerte von den Stationen in Berlin, die eben ja Schadstoffbelastung in der Luft messen, die haben wir als Trainingsdaten. Wir kriegen aber auch Wettervorhersagen rein und wir kriegen eine Verkehrsprognose rein, um letzten Endes irgendwo eine Prädiktion zu machen, an welchen Stellen haben wir morgen übermorgen eine hohe Schadstoffbelastung in der Luft in Berlin.",
+      "start": 1476322,
+      "end": 1563456,
+      "confidence": 0.92843336,
+      "speaker": "D",
+      "channel": null
+    },
+    {
+      "text": "Vielleicht gerade kurz Interesse halber, was werden da für Modelle dann verwendet? Also für vier Techniken, sind es denn irgendwelche random Forests oder was verwendet man da üblich?",
+      "start": 1563568,
+      "end": 1574160,
+      "confidence": 0.8574232,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "In dem Fall ist es dann Gradient Boosting Modell, was verwendet wird. Die Vorhersagen zu machen da drin ist tatsächlich die große Herausforderung, dass wir eigentlich ja mehrere Prognosemodelle haben, die gemeinsam funktionieren müssen. Wir haben eine Wetterprognose, die konsumieren wir von externen, wir haben eine Verkehrsprognose für die nächsten Tage, die konsumieren wir auch extern oder könnten wir zumindest konsumieren, wir haben auch noch eine eigene. Und dann kommt eigentlich die eigentliche Vorhersage für die Schadstoffbelastung, die es eben auf einem, wenn ich mich richtig erinnere, 50 mal 50 m Gitter über Berlin draufgelegt. Das heißt, es sind auch relativ viele Prognosen, die dort im Zweifelsfall gemacht werden, um das Ganze am Ende visualisieren zu können, um zu wissen, wo sind rote Bereiche sozusagen, wo wo sollte ich z.B. als Fahrradfahrer nicht lang fahren, weil einfach die Schadstoffbelastung Tor ist.",
+      "start": 1574240,
+      "end": 1621518,
+      "confidence": 0.92518723,
+      "speaker": "D",
+      "channel": null
+    },
+    {
+      "text": "Das heißt, es sind aber auch ganz klassische Softwareentwicklungsthematiken, also es ist nicht ein statisches Modell unter Anführungszeichen, sondern ihr müsst da externe APIs anfragen, Daten rein zweitausendein bekommen und so weiter, die dann halt auch dynamisch immer gerechnet werden müssen.",
+      "start": 1621614,
+      "end": 1635676,
+      "confidence": 0.8650661,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Absolut, genau. Und die Problematik, die wir haben, ist tatsächlich, dass wir relativ regelmäßig solche Modelle neu trainieren. Je nach Anforderung kann es eben sinnvoll sein, das täglich zu machen, wöchentlich. Statische Modelle, die wir nur einmal vortrainieren, haben wir auch. In der Vergangenheit hat man das wahrscheinlich häufiger gemacht. Mittlerweile ist es aber eher, glaube ich, die Rarität, dass man jetzt ein statisches Modell hat und erwartet, dass das irgendwo ein Jahr Gültigkeit hat, zweitausendein. Das Problem ist eben, wenn wir das nicht machen, wir verzichten auf Trainingsdaten. Mehr Trainingsdaten sind typischerweise hilfreich, um die Modell Performance zu verbessern. Also typischerweise gilt der Satz, je mehr Informationen, desto besser sollte auch gute Information sein. Also jetzt hier nicht viel falsch verstehen, als Qualität zählt nichts, Qualität ist mindestens genauso wichtig. Aber tendenziell, wenn wir nicht regelmäßig neu trainieren, haben wir immer das Problem, dass wir nicht die vollständige Information nutzen, die wir nutzen könnten. Und wir werden besser damit, wenn wir das eben machen. Genau. Und dieser Prozess ist normalerweise eine Pipeline, die läuft durch, die geht von Daten Extraktion, bis ihr dann in einer internen Datenbank landet, wo die Sachen vorbereitet werden. Aus diesen Daten werden dann Feature berechnet, die zur Prädiktion sich eignen. Und darauf aufbauend ist dann das Modell Training, was dann erstmal trainiert wird und als Artefakt irgendwo gespeichert werden muss und zweitausendein. Und dieser Teil läuft eben gerade nicht in einer CI CD Pipeline, sondern dieser Teil ist einfach eine eigenständige Komponente in unserem Software System, die für sich funktioniert, gemonitort wird und betrieben wird. Und auf die Modellartefakte dort gibt es verschiedene Art und Weisen. Ich glaube, das Einfachste ist tatsächlich, dass man sich vorstellt, wir schreiben die raus nach S. Es gibt unterschiedliche Formate, je nachdem, welchen Modelltyp man dort verwendet. Idealerweise kann man was nehmen in Textform, das heißt, ich habe eine Textrepräsentation von dem trainierten Modell. Wenn das möglich ist, dann ist das super, weil das bedeutet, das ist eine relativ kleine Datei, die wird nicht besonders groß. Das funktioniert mit bestimmten Modellklassen sehr gut, mit anderen funktioniert sehr schlecht. Deep Learning Verfahren sind solche Sachen, für die funktioniert das nicht besonders gut. Random Forest z.b. würde gehen, Gradient boosting geht z.B. auch, die kann man gut als Text repräsentieren und dann kann sie eben ein anderer Service aufgreifen und verwenden. S als Schnittstelle ist sicherlich ein Stück weit ad hoc, weil wir eine ganze Menge dabei verlieren, nicht das ganze Potenzial aufschöpfen können, was wir dann später vielleicht auch ein bisschen mehr im Bereich Monitoring benötigen, aber ist in vielen Fällen nach wie vor eine völlig legitime Option. Was man parallel dazu dann machen würde, ist eigentlich zu dem Eintrag in einem s Bucket, dass man wahrscheinlich noch Metainformationen in der Datenbanktabelle reinschreiben möchte zu diesem konkreten Modelltraining, um dann eben zu wissen, wann wurde das trainiert, mit welchen Parametern, mit welcher Performance und so weiter. Das sind dann schon entscheidende Faktoren.",
+      "start": 1635788,
+      "end": 1809592,
+      "confidence": 0.9259304,
+      "speaker": "D",
+      "channel": null
+    },
+    {
+      "text": "Dieses Artefakt, was du dann auf S legst und wo du dann die Metadaten in die Datenbank setzt, das klingt jetzt irgendwie so, ich sag mal, dass das komplett offline passieren kann. Das kann ja irgendwo komplett woanders passieren. Das muss ja gar nicht auf der Produktionsumgebung passieren, sondern da muss wirklich nur eine Textdatei, ein Image File oder ähnliches auf S landen, oder?",
+      "start": 1809776,
+      "end": 1827232,
+      "confidence": 0.9417639,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Im Prinzip hast du recht. Die Kritikalität von diesem Modell ist natürlich, dass ich einen direkten Einfluss habe auf die Produktion, denn das wird ja gelesen von einem produktiven Service. Und jetzt ist die Frage, wo beginnt dein Service Level und wo hört es auf? Aus ML Ops Perspektive ist das sozusagen die Iteration null. Wir haben das Modell training außerhalb der Produktion und außerhalb von so einem richtigen Operations kontext und machen das ad hoc auf, mehr oder weniger on demand, vielleicht noch nicht mal automatisch, es gibt vielleicht noch nicht mal eine richtige Pipeline, die das alles machen kann, zweitausendein. Und der nächste Schritt wäre eigentlich, das zu automatisieren und dann ein Softwareprodukt rauszubauen und das dann automatisiert in eine produktive Umgebung zu pushen.",
+      "start": 1827376,
+      "end": 1865542,
+      "confidence": 0.9252229,
+      "speaker": "D",
+      "channel": null
+    },
+    {
+      "text": "Aber wie darf man sich jetzt, ich sag mal, diese manuelle oder automatisierte Pipeline vorstellen? Bedeutet das eigentlich, okay, ihr kriegt neue Daten, aus welchem Weg auch immer, statisch, streaming, keine Ahnung, und irgendwer drückt dann auf den Knopf oder ihr habt einen Cron Job, wurde glaube ich, vorhin auch kurz erwähnt, der sagt dann, okay, ich generiere ein neues Modell und dann läuft das die Pipeline durch oder halt auch nicht. Dann nehmen wir mal an, die läuft durch und ihr habt jetzt Version zwei des Modells, da liegt dann irgendwie Modell V Final CSV oder ähnliches. Und ich meine die Hochverfügbarkeit und ich meine, der worst case ist ja eigentlich, ihr habt einen Bug im Modell Training, ihr shippt das neue File auf Object Storage und die Produktion verwendet dieses neue File. Der Worst Case ist doch eigentlich auch, okay, dann rolle ich doch mal eben auf Ÿousand V Final CSV wieder zurück, oder?",
+      "start": 1865646,
+      "end": 1915632,
+      "confidence": 0.89693785,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Das ist richtig, ja. Du läufst eben in andere Probleme rein, weil wir sehr, sehr viele Cases haben, die wir sehr häufig automatisiert eigentlich aktualisieren wollen. Das bedeutet, dieser manuelle Prozess im Fall zwei jeden Tag oder stündlich auszuführen, führt einfach zu Personalengpässen und auch um das zuverlässig zu machen, wird irgendwann zum zum Problem. Wir haben natürlich auch immer wieder Situationen, wo wir nur ein einziges Modell haben mit einem einzigen Modellartefakt. Es gibt aber auch sehr, sehr viele Use Cases, wo wir viele tausend Modelle haben oder zumindest hundert oder dutzende, die alle parallel irgendwo trainiert werden und als Artefakt rausgeschrieben werden. Und die zum also da den Überblick zu behalten, das wird dann schon eher schwierig. Und gleichzeitig ist eben auch so, dass die die Pipelines typischerweise ja, die werden nicht manuell betrieben. Also ich habe ja gerade schon gesagt, das ist eigentlich die Iteration, also dieses Level null. Das ist die Baseline, wo man, wo man anfängt und wo die meisten, die sich in Richtung Produktion bewegen, hoffentlich schon darüber hinaus sind. Der nächste Schritt wäre erstmal Automatisierung und danach eben die Kapselung in eigenen Prozess, den ich dann auch vernünftig deployen kann. Das sind dann die nächsten beiden nächsten beiden Levels. Aber dort klickt tatsächlich kann man dann irgendwann, wenn man es automatisiert hat, auf einen Knopf drücken. Das, was wir dafür verwenden, sind typischerweise so Pipeline Orchestrierung Tools. Airflow ist eines der bekanntesten Argo Workflows. Es gibt eine ganze Reihe. Man könnte es auch an Event Systemen wenn ich CSV in s bucket auf aws schreibe, kann ich das als Event subscriben und darauf irgendetwas reagieren lassen. Es gibt verschiedene Möglichkeiten, wie ich diesen Flow tatsächlich automatisiere und abbilde dann.",
+      "start": 1915816,
+      "end": 2015188,
+      "confidence": 0.9089169,
+      "speaker": "D",
+      "channel": null
+    },
+    {
+      "text": "Aber wenn ich jetzt mal ketzerisch fragt, bis hierhin ist das doch eigentlich ganz genau das gleiche wie DevOps, oder? Denn ich meine, man hat eine klassische Software, die wird kompiliert, oder? Du hast gerade auch von ganz vielen Modellen geredet. Jetzt gehe ich einfach mal auf die Script Sprache und sage wir haben PHP, da hat man auch ganz viele kleine Dateien. Ich meine, im Endeffekt ist es doch genau das gleiche. Du hast ein Kompilat, ein Artefakt und das wird von A nach B geschoben, um in Produktion verfügbar zu sein. Und dann muss halt noch geguckt werden, wird dieses neue Artefakt, ich sag mal aktiv geschaltet oder nicht? Also bis hierhin ist das doch eigentlich ist Mlops doch gleich DevOps, nur dass der, ich nenne es mal Kompilierungsprozess, den ihr Modell training nennt, halt anders läuft. Aber ich kompiliere ja auch anders in Java, als wie ich in Go kompiliere.",
+      "start": 2015284,
+      "end": 2058352,
+      "confidence": 0.9215755,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Z.B. ja, zum einen, du hast vielleicht in einem normalen DevOps Ansatz, hättest du hoffentlich noch ein, also vielleicht noch ein Review dazwischen, eine CI Pipeline, die Tests durchführt, bevor du einen Code Artefakt irgendwo reinbringst, vielleicht einen Container baust, in der Registry eincheckst und dann ist eben die Frage, wann wird so ein container Image gepullt und irgendwo verwendet in der Produktion? Das, was wir machen, ist, wir haben die gleichen Schritte, aber eben für die Pipeline und für den Prozess, der dir diese Modelle generiert, weil es völlig unrealistisch ist, dass wir diese ganzen Modellartefakte jedes mal neu trainieren, zweitausendein, nur weil wir einen Change haben im Code und die sind einfach zu aufwendig. Dort gehen mittlerweile viele hundert Millionen Zeilen an Trainingsdaten rein. Das kann dreiig 50 Stunden, einen halben Tag dauern, bis so ein Modell fertiggerechnet ist, je nachdem, was dort genau passiert. Und rein aus DevOps Praktik würde ich sagen, ich versuche meine Pipelines gerne unter 5 Minuten zu halten. Das sprengt jeglichen Rahmen und auch schon in sehr einfachen Cases sprengt es jeglichen Rahmen, in dieser Dimension Pipelines zu betreiben und zu sagen, ich mache DevOps mit kurzen Feedback Zyklen und deswegen braucht man dafür ein anderes Tuning.",
+      "start": 2058416,
+      "end": 2126611,
+      "confidence": 0.91408116,
+      "speaker": "D",
+      "channel": null
+    },
+    {
+      "text": "Heißt es auch die klassische Softwareentwicklung, die ihr habt, also das muss ja dann auch irgendwo in einer Software Verwendung finden, dieses Modell, das läuft dann über ganz klassische Pipelines. Also da verwendet ihr auch jetzt nicht Airflows, sondern da verwendet ihr irgendein Jenkins oder GitHub Actions und macht das ganz normale klassische CI CD mit Tests und aufs Produktivsystem bringen und so weiter.",
+      "start": 2126675,
+      "end": 2149399,
+      "confidence": 0.8658853,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Absolut.",
+      "start": 2149539,
+      "end": 2150168,
+      "confidence": 0.80785,
+      "speaker": "D",
+      "channel": null
+    },
+    {
+      "text": "Und das machen dann auch unterschiedliche Personen oder sind es dann die gleichen Leute, die das betreuen?",
+      "start": 2150264,
+      "end": 2155256,
+      "confidence": 0.97798884,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Ich würde sagen, in den Projekten, die ich so erlebt habe bisher, waren das eigentlich die gleichen Personen. Aber ich glaube, es ist auch bei uns, Sebastian hat ja auch schon gesagt, bei uns sind manche Sachen auch noch mal ein bisschen spezieller, weil bei uns, wir haben eine sehr große Überschneidung von Fähigkeiten im Team, sodass es möglich ist, dann auch mal mehrere Sachen zu übernehmen. Z.B. ist ja meine oder Sebastians Berufsbezeichnung auch Data Engineer und man könnte uns aber genauso Mlops Engineer nennen oder DevOps Engineer, weil es da eben diese Überschneidung gibt. Und deswegen würde ich sagen, dass es schon auch Aufgaben sind, die wir dann mit übernehmen. Es müsste aber auch nicht zwingend so sein. Ich bin mir auch sicher, dass eine Person, die modellieren könnte, jetzt da eine einfache CI Pipeline fürs Modell Training aufsetzen könnte?",
+      "start": 2155328,
+      "end": 2197744,
+      "confidence": 0.92345697,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Also mein Hintergrund der Frage war ja auch eigentlich, wenn das nämlich getrennte Personen sind, dann gibt es da ja auch wieder vielleicht Reibungspunkte oder Konflikte, weil wenn andere Personen das Modell deployen, als die Software deployen, dann hast du ja so dieses klassische Spiel, irgendwas funktioniert nicht mehr, war es dann das Modell, war es die Software, wer ist jetzt schuld und so weiter. Du hast wieder Kommunikationshürde vielleicht dazwischen. Daher meine Frage, also ihr habt es eher im selben Personenkreis zumindest angesiedelt, was meiner Meinung nach auch Sinn macht, wenn.",
+      "start": 2197912,
+      "end": 2224952,
+      "confidence": 0.88590413,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Es funktioniert halt Kommunikation im Team untereinander ist ja dann auch so ein Thema. Also so eine Schuldfrage, würde ich sagen, stellt sich bei uns jetzt gar nicht so, wer jetzt schuld, aber ja, wir haben es auch schon erlebt in anderen Unternehmen, dass das eine zentrale Frage ist, aber bei uns ist es eher untergeordnet. Und am Ende geht es dann halt auch bei so Fragen ja darum, wie spricht man miteinander und wie eng stimmt man sich auch ab, wie gut dokumentiert man auch Prozesse, sodass alle im Team die Möglichkeit haben zu partizipieren und dann auch mal Dinge anzupassen oder selber umzusetzen.",
+      "start": 2224976,
+      "end": 2256612,
+      "confidence": 0.950277,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Weil es gibt ja auch durchaus Firmen, wo das vielleicht gar nicht dasselbe Team ist. Also Ÿousand, das Modell wird von einem komplett separierten Team erzeugt und dann gibt es nochmal die Software und da hast du natürlich dann eben nicht diesen Teamcharakter, wo man schnell mal was abspricht, sondern dann ist es vielleicht schon schwierig, überhaupt den Bug zu finden. Auf welcher Seite liegt der Bug? Also es geht ja gar nicht nur um Schuld, sondern mal zu finden, wo das Problem eigentlich liegt.",
+      "start": 2256796,
+      "end": 2278178,
+      "confidence": 0.9398995,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Also man muss sagen, bei EMT machen wir es typischerweise so, dass die Data Scientist produktiven Code schreiben und den auch in die Produktion bringen. Bei vielen unserer Kunden ist es auch so. Und das Problem hast du eigentlich gerade schon benannt, nämlich die Fähigkeit, den zu debuggen. Denn dafür braucht es dann tatsächlich eben eigentlich einen Data Scientist, der programmieren kann, weil wir ansonsten in einen riesigen Konflikt reinlaufen, weil wir ja nämlich die Software, die wir schreiben, die generiert uns die Modellartefakte. Die Modellartefakte, also das Training, ist ja aber eigentlich das Arbeitsergebnis aus der Data Science Abteilung und die müssen schon ihren eigenen Code dazu beitragen, weil den müssen sie am Ende auch debuggen und sie müssen tatsächlich auch im Monitoring unterstützen, weil letzten Endes die Expertise, ob ein Modell produktionsreif ist, das heißt gut genug ist, um den aktuellen Modellkandidaten abzulösen oder auch die Automatisierung davon, das ist letzten Endes die Domäne der Data Scientists. Man kann sie im Tooling unterstützen, aber letzten Endes ist es cross funktional. Wir brauchen hier einfach mehrere Profile, die an der Stelle zusammenarbeiten und dadurch brauchen wir tatsächlich auch eigentlich Data Science oder Data Scientists, die tatsächlich Programmierskills haben und sich eher Richtung Softwareentwicklung bewegen ein Stück weit. Deswegen gibt es ja auch so viel Bedarf nach ML Engineers, was letzten Endes nichts anderes ist als ein Data Scientist, der dann programmieren kann.",
+      "start": 2278234,
+      "end": 2362458,
+      "confidence": 0.9251318,
+      "speaker": "D",
+      "channel": null
+    },
+    {
+      "text": "Du sagst das so einfach, aber ich glaube, das ist schon eine hohe Anforderung, weil Softwareentwicklung ist ja an sich schon sehr, sehr kompliziert und Data Science, Analytics und so weiter ist dann auch noch mal kompliziert und dann zwei komplizierte Sachen. Das klingt jetzt gerade so, du sagst das so salopp, so als würde das so wie wie Äpfel am Apfelbaum wachsen oder ähnliches. Also ich glaube, das ist glaube ich schon eine hohe Anforderung. Aber was ich mich frage, weil du hast gerade erwähnt, wie wird denn so ein Modell überhaupt gedebugt? Also ich meine, werden die Modellartefakte irgendwie versioniert oder wenn der, wenn der Kunde sagt, oh, da gibt es irgendwie ein Bug, ladet ihr das dann vom Object Storage runter lokal auf die auf den Laptop und lasst es lokal laufen? Kann man da überhaupt, ich sag mal ganz doof reingucken? Also in modernen Softwareentwicklungsprojekten gibt es Remote Debugger, wo du dich dann drauf connecten kannst, wo du dann Live Profiling machen kannst und so weiter. Wie funktioniert sowas in einem Modellartefakt bzw. In dem Prediction Algorithmus? So, jetzt bin ich hier außerhalb meines Wissens.",
+      "start": 2362594,
+      "end": 2423590,
+      "confidence": 0.8735771,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Also das Thema Reproduzierbarkeit von Modellergebnissen ist halt total zentral, wenn wir über Mlaubs sprechen. Das sind genau Fragen, wie du sagst, wenn Kund innen auf uns zukommen und sagen zweitausendein, hä, was, was ist denn hier los? Das sieht ja irgendwie komisch aus oder der Edge Case, der wurde jetzt hier doch gar nicht vom Modell abgedeckt. Da hätte ich jetzt eine ganz andere Prediction erwartet. Da sind wir halt auf eine Sache stark angewiesen und zwar auf Historisierung. Also im Prinzip müssen wir alles historisieren von Anfang bis Ende. Also die Modellobjekte, die Trainingsdaten, die Features. Wir müssen genau wissen, zu welchem Zeitpunkt sahen die Daten wie aus und zu welchem Zeitpunkt haben wir mit welchem Modell gerechnet? Und wenn wir das haben, dann ermöglicht es uns eben genau wie du sagst, z.B. lokalcode auszuführen, uns die richtigen Daten vom richtigen Zeitpunkt zu holen, mit der richtigen Version vom Modell mit dem richtigen Modell Artefakt und dann lokal im Detail nachvollziehen zu können, was ist da passiert und wie ist das Modellergebnis zustande gekommen. Und das ist natürlich auch so ein Unterschied, den wir zu klassischer Softwareentwicklung haben. Wir haben einfach viel mehr Komponenten in diesem ganzen System, die wir berücksichtigen müssen, wenn es darum geht, ganz genau reinschauen zu wollen. Und das ist aufwendiger als nur in Anführungsstrichen Software zu debuggen. Aber genau diese Fragen kriegen wir halt sehr häufig von Kund innen auch berechtigt, aber dann ist es halt nicht mal in 5 Minuten nachgeguckt, sondern man muss halt ein bisschen mehr Zeit investieren.",
+      "start": 2423710,
+      "end": 2512590,
+      "confidence": 0.92402697,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Wie wird denn diese Historisierung eigentlich technisch umgesetzt? Denn das, was du gerade beschrieben hast, in der klassischen Softwareentwicklung hat man dafür z.B. sowas wie Sentry. Irgendwo wird eine Exception gesprochen, dann wird der Zustand dieser Exception abgefangen mit allen Environment Variablen, die man so hat und zentral abgespeichert, wie z.b. in so einem Software as a Service wie Sentry. Und dann kann man sehen, wie oft ist er aufgetaucht, ist das eine Regression, in welchem Release wurde das gefixt und so weiter und so fort. Wie funktioniert denn die Historisierung bei Machine Learning Modellen technisch? Also wo werden die Daten z.B. abgelegt?",
+      "start": 2512710,
+      "end": 2544430,
+      "confidence": 0.90222543,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Also ich würde sagen, dass es auch ein bisschen natürlich wie immer vom Projekt abhängt. Also zur Historisierung von Modell Artefakt Artefakten gibt es ja von z.B. mLflow, was ja gerade sehr bekannt ist, Lösungen. Also die ist so ein Main Feature von denen, dass sie auch Modellartefakte historisieren. Das heißt, wenn du einen Modelldurchlauf vollziehst, das dann da in MLflow ersichtlich ist, mit welchen Daten, zu welchem Zeitpunkt, mit welcher Version wurde das durchgeführt, dann kann man es halt da sich die Informationen holen, die man braucht. Teilweise machen wir es auch so, dass wir Metriken von Modelldurchläufen in irgendwelche Datenbanken speichern. Das kommt schon auch vor, damit wir einfach Dinge nachvollziehen können. Z.B. habe ich ein Echtzeitprojekt umgesetzt, wo wir am Ende einen Dashboard hatten, wo dann Ergebnisse angezeigt wurden, aber nur die der letzten 24 Stunden. Und da haben wir dann, um uns die Möglichkeit zu geben, das noch besser nachzuvollziehen, gesagt, dass wir noch mal alles in der Datenbank rausschreiben und dann halt im Zweifel, wenn Fragen dazu kommen, da noch mal die Metriken haben, die wir brauchen, um das Debugging vielleicht ein Stück zu verkürzen und dann mit Ÿousand zeitstempeln kann man dann halt die entsprechenden relevanten Einträge herausfinden.",
+      "start": 2544810,
+      "end": 2616628,
+      "confidence": 0.9052855,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Sebastian, du hast kurz erwähnt, dass im Gegensatz zur Softwareentwicklung ja keine Tests oder sowas durchlaufen. Heißt es, bei diesen ganzen Modellen werden auch keine Metriken irgendwie in der Pipeline dann gecheckt, ob, keine Ahnung, irgendwelche Precision Werte wenigstens über einem gewissen Threshold sind? Also passiert es dann davor bei der Änderung von dem Modell, dass man das lokal wirklich durchcheckt, oder habt ihr da dann auch Mechanismen in der Pipeline drin, die das auch noch mal checken, um eben irgendwelche Fehler vielleicht zu vermeiden?",
+      "start": 2616684,
+      "end": 2646472,
+      "confidence": 0.88925,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Es gibt natürlich Tests, die auch in der Pipeline durchlaufen, und zwar für den Code, der sollte typischerweise Unit Tests haben und ansonsten natürlich irgendwo getestet werden mit den Standardsachen, die wir im Wesentlichen ja in dem Falle eben aus Python kennen. Also hoffentlich verwenden wir irgendwie statische Typen, die wir überprüfen können und hoffentlich gibt es dort drin Unittests für die Teile, die wir eben auch testen können. Den Teil, der schwierig ist, in solchen Pipelines zu testen, ist tatsächlich, ob das Modell Artefakt gut ist und so in die Produktion gehen soll, weil dazu fehlt uns eigentlich das Wissen. Selbst wenn wir jetzt in der Lage wären, das dort zu berechnen, fehlt uns an dieser Stelle eigentlich in der Pipeline das Wissen, um darüber eine Entscheidung zu treffen, weil es eben nicht ganz so leicht ist dort. Ÿousand zählt relativ viel tatsächlich dann rein.",
+      "start": 2646536,
+      "end": 2694672,
+      "confidence": 0.92154026,
+      "speaker": "D",
+      "channel": null
+    },
+    {
+      "text": "Ja, aber du könntest ja natürlich eine offline Evaluierung in dem Schritt machen, die historischen Daten verwenden von der Luftqualität und dann checken, ist es einigermaßen an der Realität dran gewesen?",
+      "start": 2694856,
+      "end": 2704608,
+      "confidence": 0.9263374,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Ja, das ist völlig richtig und deswegen finden solche Checks auch statt, aber innerhalb der Pipeline. Das heißt, es ist Teil der der Pipeline Logik, dass wir eigentlich Modellartefakte nur live geben, wenn sie den Status quo zumindest schon mal nicht verschlechtern, sondern typischerweise geben wir sie eigentlich nur frei, wenn sie den Status quo verbessern.",
+      "start": 2704664,
+      "end": 2722452,
+      "confidence": 0.9227718,
+      "speaker": "D",
+      "channel": null
+    },
+    {
+      "text": "Aber meinst du jetzt mit Pipeline automatisiert oder manuell? Die manuelle Pipeline?",
+      "start": 2722516,
+      "end": 2727172,
+      "confidence": 0.8829925,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Ja, wenn wir über MLobs reden, dann reden wir natürlich auch über Automatisierung. Typischerweise ist das Modell Training erfolgt automatisch, deswegen auch die Pipeline. Und in dieser Pipeline müssen tatsächlich mehrere Checks durchgeführt werden, sowohl was die Daten angeht. Das heißt, wir haben bestimmte Anforderungen an die Daten, die wir reingeben in das Training. Dort gibt es die erste Ebene sozusagen der Checks. Dort überprüft man im Wesentlichen zwei Sachen. Das eine ist Datenqualität, also sind die aktuell, sind sie in der richtigen Menge dort wie sieht es mit fehlenden Werten aus und folgen sie dem Schema, was wir erwarten? Und im nächsten Schritt schauen wir uns dann eigentlich tatsächlich noch mal die Verteilung an der Daten an sich, also der der Feature, die wir dort reingeben wollen. Gibt es dort irgendwo bedenkenswerte, Veränderungen? Das Ganze hat den den schönen Namen Data Drift, den man sich dann tatsächlich anschaut. Entweder passiert das tatsächlich automatisch und dann gibt es einen Gate, was sagt, hier geht es nicht weiter, wir können kein neues Modell trainieren. Das ist extrem selten. Das, was meistens meistens eher passiert, ist, dass wir Monitoring dafür haben. Das bedeutet, wir haben den Dashboard, wo genau solche Sachen drin sind. Hoffentlich schmeißt es Alarme, wenn solche Sachen detektiert werden, sodass wir darauf reagieren können. Und der finale Schritt, bevor wir im Modell dann in die Produktion bringen, ist tatsächlich, dass wir überprüfen, ob sich die Performance verbessert, verschlechtert. Und das macht man normalerweise mit Fehlermaßen dieser Modelle. Dort wird dann eben ein quadratischer Fehler, ein absoluter, ein relativer, ein prozentualer Fehler berechnet auf den Trainingsdaten im Trainingsset und dann noch mal auf einem Teil der Trainingsdaten, die nicht zum Training verwendet wurden. Wir reden dann eben von der zweitausendein out of sample Betrachtung und die wird dann dazu genutzt, um final zu sagen, wie gut das Modell eigentlich genau ist. Und wenn das alles stimmt, dann geht es weiter in die Produktion.",
+      "start": 2727196,
+      "end": 2834530,
+      "confidence": 0.92112917,
+      "speaker": "D",
+      "channel": null
+    },
+    {
+      "text": "Wenn wir jetzt in Produktion sind, dann sprechen wir von Model Serving, richtig?",
+      "start": 2834650,
+      "end": 2837818,
+      "confidence": 0.8832862,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Genau. Wir haben jetzt erstmal gerade eigentlich den Teil abgehandelt, wo wir über das Modell Training gesprochen haben. Über Model Serving haben wir noch gar nicht geredet. Das heißt, wir sind immer noch in der ganzen Pipeline noch nicht so weit, dass wir Prognosen ausliefern können. Das heißt, das nächste Kapitel, was wir auch machen müssen, ist tatsächlich dann der Serving Teil Ÿousand. Das heißt, wie bekommen wir eigentlich eine Auslieferung von den Prognosen in Geschäftsprozesse oder an eine öffentliche Schnittstelle?",
+      "start": 2837874,
+      "end": 2860448,
+      "confidence": 0.92954355,
+      "speaker": "D",
+      "channel": null
+    },
+    {
+      "text": "Wie läuft das ab? Denn wir haben jetzt das Artefakt auf S liegen. Das ist ein Klartextformat, glaube ich, oder? Was ist das für ein. Ist das eine Datenbank? Ist das eine sqlite Datenbank oder was?",
+      "start": 2860624,
+      "end": 2870680,
+      "confidence": 0.9181053,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Genau, es könnte auf S liegen, einfach als Modellartefakt, als Datei. Es gibt einige, die tatsächlich dann eben diese Binaries aus Python z.B. rausschreiben und dorthin laden mit bekannten Problemen, wenn man mit solchen Dateien arbeiten möchte. Und es gibt alternativ zu S, das hatte Michelle gerade schon als Technologie angesprochen, etwas, was sich eben Modellregistry nennt. Mlflow ist sicherlich einer der bekanntesten Vertreter aus dieser Kategorie. Es gibt aber eigentlich von allen Cloud providern Lösungen dafür. Es gibt eine ganze Reihe von Technologien, die da sind und das, was die machen, ist, die kümmern sich um die Versionierung, die speichern Metadaten und die kümmern sich an der Stelle eben auch um die Historisierung der Daten. Mlflow z.b. ist ein ganz gutes Beispiel, weil der im Hintergrund auch nur s verwendet, um die Artefakte wirklich abzulegen. Und für die Metainformationen wird sowas wie eine Postgres im Hintergrund verwendet und dort wird dann einfach in der Tabelle reingeschrieben, was habe ich eben für Performance Metriken. Was ich auf den Server schicke, ist das Modell artefakt plus Metainformationen. Anhand der Metainformationen kann ich dann entscheiden, will ich dieses Modell live nehmen oder nicht. Da kann ich dann entsprechend Regeln drauf definieren.",
+      "start": 2870760,
+      "end": 2933608,
+      "confidence": 0.90510637,
+      "speaker": "D",
+      "channel": null
+    },
+    {
+      "text": "Wenn ich mir jetzt mal die ML Flow Dokumentation ansehe, dann und oder die zweitausendein mlflow registry Dokumentation, dann sehe ich da auch, okay, da gibt es RRPs und Java APIs und Python APIs und so weiter. Das bedeutet, vorne dran habe ich dann irgendeine klassische Software Applikation, die dann mit diesen Rest APIs, dann mit der Model Registry von MLflow z.B. quatscht und dann je nach UI, je nach Daten Input und so weiter, dann diese Vorhersagen nehmen wir jetzt einfach mal von euren Schadstoff Werten in der Luft rausspuckt. Also sehr simplifiziert, oder?",
+      "start": 2933704,
+      "end": 2966878,
+      "confidence": 0.8777398,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Genau, und das können verschiedene Prozesse sein, also je nach Projekt und Anforderungen auch. Man unterscheidet da zwischen offline und online Surveying heißt es. Fangen wir mit dem einfacheren Fall an. Das ist der Fall, wo wir wissen, für diese Daten wollen wir eine Abfrage oder eine Prediction haben. Das sind Beispiele wie Customer Life ten Value Projekte, wo ich weiß, dass das ist meine Basis von Kund innen und für diese Menge an Daten möchte ich eine Abfrage haben. Das ist insofern einfacher, als dass ich weiß, okay, zu dem Zeitpunkt x möchte ich für diese Datenpunkte eine Vorhersage haben und es ermöglicht es mir dann in einem einfachen Batch Job z.B. auf dieses Modellobjekt zuzugreifen und dann die Daten bereitzustellen, je nachdem, wie es vereinbart ist. Also es kann z.b. sein, dass man einfach Daten in eine Datenbank wieder zurückschreibt oder wenn die Anforderung ist, das über eine REST API zur Verfügung zu stellen, ist es natürlich auch möglich. Und bei dem Offline Serving ist halt insgesamt die Laufzeit des Modells viel weniger entscheidend, weil ich kann es zu einem Zeitpunkt machen, der mir gut passt. Z.B. bei Customer Lifetime Value Prognosen mache ich es halt einfach nachts, wenn nicht viel anderes läuft.",
+      "start": 2966974,
+      "end": 3038402,
+      "confidence": 0.9081678,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Was ist da der klassische Anwendungsfall? Ist das dann die klassische Reporting e Mail am Morgen, also um 6 Uhr, die dann der berliner Stadtrat über die Schadwerte bekommt oder wie darf man sich das vorstellen?",
+      "start": 3038546,
+      "end": 3049530,
+      "confidence": 0.91113806,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Genau, das kann also wenn wir jetzt wieder auf das Luftschadstoffprojekt zurückgehen, kann es das genau sein, dass dann am nächsten Tag eben für, ich glaube wir sagen immer für die nächsten fünf Tage vorher dann eben noch dieser eine Tag mehr dazu gekommen ist. Und jetzt reicht aber natürlich dieser Anwendungsfall nicht immer aus. Anni, du hattest es ja vorhin auch schon kurz mal angeschnitten, dass wir auch so Echtzeitsachen haben und dass da ja noch mal ganz andere Anforderungen mitkommen. Und da sind wir dann in dem Online Serving Bereich, also dass wir sozusagen on demand eine Vorhersage anbieten, wenn wir halt noch nicht wissen, für welches Set an Parametern oder für welche Daten wird denn jetzt abgefragt? Und da ist z.B. wenn ich eine Lieferzeit für eine Bestellung vorhersagen will im Online Retail ein gutes Beispiel, weil da weiß ich eben noch nicht, was bestellen denn die Leute oder welche Parameter, wo wohnen denn die Leute z.B. wie schwer oder wie viel bestellen sie? Das kann einfach alles nicht vorhersagen, wann was abgefragt wird. Und mit diesem Ansatz kommen dann halt noch mal ganz andere Anforderungen an die an das Model Serving. Also da ist es typischerweise in sehr vielen Fällen der Rest API, die wir zur Verfügung stellen. Also da ist die Laufzeitumgebung halt einfach noch mal wichtiger, weil z.B. wenn eine Person im Onlineshop bestellt, dann möchte die ja nicht 5 Minuten darauf warten zu wissen, wie lange Ÿousand braucht dann das Paket, was bei mir ist, sondern das will ich halt innerhalb von wenigen Sekunden wissen. Und damit ergibt sich für die Architektur dann noch mal ganz besondere Anforderungen und Dinge, die man halt beachten muss und mitdenken muss, wenn man sich überlegt, wie baue ich denn jetzt die Architektur für Projekt XY?",
+      "start": 3049690,
+      "end": 3148370,
+      "confidence": 0.92207783,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Jetzt habt ihr schon erwähnt Monitoring, bevor man das Model überhaupt live bekommt. Wenn wir jetzt den State betrachten, wo wir Model Serving machen, gibt es da dann auch ein besonderes Monitoring? Also abseits von dem klassischen ist es ab und läuft und so weiter, aber habt ihr da irgendwo noch ein Monitoring, wo ihr beobachtet, was spuckt das Model aus? Gibt es da dann vielleicht noch irgendein Feedback Cycle vom User oder habt ihr da noch irgendwie Monitoring dann drauf?",
+      "start": 3148910,
+      "end": 3174298,
+      "confidence": 0.90976197,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Es gibt für den Auslieferungsteil gibt es auch einen Bereich, das nennt sich eben Model Drift. Das ist dann so die Kategorie, wo wir eigentlich kontinuierlich monitoren wollen, wie gut eigentlich die Vorhersagequalität ist. Und das findet zur Laufzeit an der Stelle nicht statt. Was zur Laufzeit wahrscheinlich stattfindet, ist, dass wir die Vorhersagen abspeichern, vielleicht historisieren. Das ist vielleicht auch noch mal eine besondere Anforderung gegenüber normalen RESt API, dass ich eigentlich nicht dazu übergehe, jeden einzelnen Response wegzuschreiben, damit ich später analysieren kann. Das ist aber genau ein Szenario, was wir eigentlich immer haben, dass wir im Nachhinein wissen müssen, was hat eigentlich genau das Modell zurückgegeben? Und das zwingt uns dazu, die Sachen tatsächlich auch zu speichern. Das heißt, die Vorhersagen zu speichern, in der Datenbanktabelle wegzuschreiben, damit wir entweder live, parallel dazu zum Serving oder auch danach nachvollziehen können, wie gut die Vorhersagequalität ist. Und wir sehen verschiedene Mechanismen, die darauf hindeuten, dass eben die Vorhersagequalität abnimmt. Das ist eben der der entscheidende Punkt daran. Und ansonsten der Betrieb unterscheidet sich jetzt nicht im Wesentlichen von einer normalen Rest API. Da guckt man auf die gleichen Performance Metriken und auch auf die gleichen Logs. Letzten Endes ist der Stack auch genau der gleiche. Also typischerweise sind die Sachen containerisiert, ziehen mir eben zur Laufzeit einen Modellartefakt rein, wende eben das, was ich am Parameter über die API reinkomme, an, bekomme eine Vorhersage raus und dann ist eben die Frage, was mache ich mit dieser Vorhersage? Ich gebe sie natürlich zum einen über den Endpunkt zurück, zum anderen muss ich eben aber auch dafür sorgen, dass ich sie protokolliere. Und darauf aufgehend schaue ich mir dann im Regelfall zumindestens zum einen die gleichen Fehlermaße an, die ich aus dem Training schon kenne. Also um mal bei dem Beispiel zu bleiben, wie lange dauert es, bis eine Lieferung, eine Essenslieferung heute Abend da ist über den Bestellservice? Dann schaue ich mir danach natürlich an, wie gut ist meine Vorhersage in der Produktion? Das ist eine total wichtige KPI, die wir nämlich vorher nicht unbedingt kennen, weil wir nämlich nicht vorher unbedingt im Training immer simulieren können, wie sind die Straßenverhältnisse? Wie wie ist das Wetter? Wie ist die ganze Umgebung? War die Bestellung zu groß, war sie besonders? War dort eine lange Warteschlange und so weiter. Und bestimmte Dinge lernen wir eigentlich erst, wenn ein Modell in der Produktion ist. Und dann kriegen wir eigentlich erst das echte Feedback und das brauchen wir und das müssen wir protokollieren, damit wir danach wieder eigentlich ins Training zurückgehen. Also dort den Kreis an der Stelle eben schließen.",
+      "start": 3174394,
+      "end": 3321452,
+      "confidence": 0.9216534,
+      "speaker": "D",
+      "channel": null
+    },
+    {
+      "text": "Das ist aber schon dann eher manuelle Geschichte, oder? Also das ist jetzt kein Alert, der dann irgendwo zweitausendein blinkt und rot wird und die Predictions waren schlecht die letzten 24 Stunden, sondern es klingt schon eher nach, wie kann man es dann verbessern und noch zusätzliche Features mit reinnehmen oder solche Dinge?",
+      "start": 3321516,
+      "end": 3339730,
+      "confidence": 0.9303996,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Das hängt tatsächlich vom Use Case ab. Also im Online Surfing ist es mit Sicherheit etwas schwieriger, dort zu verhindern, dass diese Prognosen z.B. rausgehen. Im Offline Serving habe ich da durchaus die Möglichkeit, ich habe eine Batch Verarbeitung und ich kann dort durchaus Plausibilitätschecks einführen oder auch sogar nochmal eine manuelle Freigabe mit reinbauen. Sieht man tatsächlich weniger. Normalerweise liefert man sie immer erstmal aus und dann kriegen wir aber Feedback von denjenigen, die diese Prognosen eben konsumieren. Vom Endkunden jetzt, wenn ich irgendwo online was bestelle, vielleicht weniger. Ich bin mir nicht sicher, wie dort die Feedbackschleifen geschlossen werden können. Da sehe ich eben nur in den Daten, wann tatsächlich die Bestellung abgegeben wurde. Wenn ich jetzt auf den CLV z.B. zurückgehe, da kann ich natürlich, bevor ich das in Datenbanktabelle rausschreibe und den CLV Ÿousand meinen Kundenstammdaten irgendwo aktualisiere, da kann ich natürlich davor noch mal überprüfen, sind die plausibel, also sind die in realistischen Bereichen? Je nachdem, was ich über den Kunden schon weiß, möchte ich vielleicht bestimmte Abweichungen gar nicht zulassen. Also eine Verdopplung, eine Verdreifachung oder eine Reduzierung von das war mal ein Premium Kunde und jetzt ist er eher im Segment der ganz niedrig sozusagen eingestuften. Das sind natürlich Dinge, die ich da eventuell verhindern möchte und das dann eben auch kann.",
+      "start": 3339850,
+      "end": 3409510,
+      "confidence": 0.93548167,
+      "speaker": "D",
+      "channel": null
+    },
+    {
+      "text": "Aber ich meine, ob die Ergebnisse wirklich richtig rausgegeben werden, ist ja. Also das könnt ihr ja gar nicht im Online Serving, oder? Ich meine, es könnt ihr nur retrospektiv.",
+      "start": 3409610,
+      "end": 3418038,
+      "confidence": 0.932371,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Also theoretisch ja, nur retrospektiv.",
+      "start": 3418094,
+      "end": 3421130,
+      "confidence": 0.934576,
+      "speaker": "D",
+      "channel": null
+    },
+    {
+      "text": "Ist das nicht fatal?",
+      "start": 3422270,
+      "end": 3423382,
+      "confidence": 0.98962,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Das kann fatal sein, wenn man ein Problem hat mit dem Modell, nicht wahr? Dann haben wir ein Problem und die Idee ist natürlich, dass das Modell so stabil ist, dass es dann in der Produktion auch funktioniert oder wir danach zumindest eine neue Version rausbringen, die so stabil ist, dass es dann für uns funktioniert.",
+      "start": 3423486,
+      "end": 3437838,
+      "confidence": 0.9510252,
+      "speaker": "D",
+      "channel": null
+    },
+    {
+      "text": "Und ich würde sagen, man kann schon Dinge unternehmen, um diesen Fall nicht eintreten zu lassen. Also im Voraus, wir haben noch gar nicht den Begriff Dev Environment genannt, ist mir gerade so eingefallen, aber das ist natürlich was, was hier noch mal relevanter ist, also was wir schon häufig machen, ist, dass wir erste Versionen von Modellen dann mal an die Kund innen rausgeben und die uns dann Feedback dazu geben, wenn z.B. abteilungen, die sich inhaltlich sehr gut mit dem, was wir da vorhersagen, auskennen, das dieses Mal beurteilen, wenn es jetzt keine Daten sind, die man so easy im Nachhinein auch überprüfen kann. Also es kann ja bei z.B. umsatzprognosen, da fällt mir gerade ein Projekt ein, wo wir es ja im Nachhinein total einfach verifizieren können, wie nah sind wir jetzt an den Prognosen? Und da haben wir z.B. reports eingerichtet, automatisierte, wo wir immer jeden Tag mitbekommen, wie gut wir die Umsätze vorhersagen. Wenn es aber nicht geht, dann gibt es ja noch die Möglichkeit, mit den Abteilungen direkt in den Austausch zu gehen und vorher schon das gut zu durchdenken, sich die Modellergebnisse anzuschauen, mal auf dev das durchzurechnen und dann auch für verschiedene Sachen mal auszuprobieren, was es eigentlich mit den Ergebnissen macht. Aber da sind wir halt natürlich dann immer auch auf Feedback von den Kund innen angewiesen und das macht uns dann halt viel leichter die Arbeit.",
+      "start": 3437934,
+      "end": 3514354,
+      "confidence": 0.9263353,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Das Problem bei Dev Environments ist ja immer, zumindest in der klassischen Softwareentwicklung, ich als Softwareentwickler schreibe die Software und teste die Software, also teste ich nur Ÿousand. Genau, mein Use Case, meine Bubble und so weiter und dann kommt der reale Kunde, gibt dann ein und dann habe ich dieses klassische UTF acht Zeichen Problem. Jeder kennt es. Das ist die eine Frage, gibt es sowas bei euch auch? Denn du sagtest gerade, man hat zwar Dev Environments und ich als Data Scientist, ich kann das Modell testen, alles gut, aber ich teste ja immer nur dieselben drei Fragen. Das ist die eine Baustelle. Die zweite Baustelle ist, mutige Software Engineers testen in Produktion und ganz tolle Firmen, die machen das natürlich dann auch, ich sag mal hoffentlich statistisch korrekt mit Ÿousand AB Tests oder oder rollen das prozentual aus und evaluieren on the fly die Ergebnisse. Hatten wir gerade gesagt, ist jetzt hier bei Modellen relativ schwierig, on the fly die Ergebnisse zu evaluieren, ob das richtig ist oder nicht. Bedeutet das, dass testen in Produktion eigentlich immer so YOLO ist und dann schauen wir mal oder wie darf man sich das vorstellen?",
+      "start": 3514482,
+      "end": 3575918,
+      "confidence": 0.90158117,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Es gibt ja den den Schritt in der Trainingspipeline und das ist die Modellevaluation. Das bedeutet, die Data Scientists, die das Modell jetzt erstmal erzeugen, also dann inhaltlich dafür verantwortlich sind, die testen ihr Modell auf Daten, die nicht Teil waren des Trainings. Das bedeutet, dort kriegst du eine sogenannte Autosample Evaluierung und typischerweise ist die sehr dicht dran an der Produktion. Es kann aber z.b. sein, es gibt Diskrepanzen häufig dann zwischen diesen ausgelassenen Trainingsdaten und dem, was tatsächlich in der Produktion passiert. Luft Schadstoffprognose ist wieder ein gutes Beispiel. Wir haben ein Modell, was wir trainieren auf den Wetterinformationen. Und was tust du jetzt im Training genau rein? Tust du die damals vorhandene Prognose für das Wetter in dein Training oder nimmst du das tatsächlich beobachtete Wetter in deinem Training? Und wie verhält sich das dann eigentlich, wenn ich die tatsächlich beobachteten Wetterphänomene in mein Modell reinnehme zum Training? Wie verhält sich das in Bezug auf in der Produktion verwende ich aber Wetterprognosen? Das sind typische Diskrepanzen, die wir haben. Also häufig haben wir in der Produktion noch andere Systeme, die Feature, die wir im Training verwendet haben, sehen wie auch immer anders aus und dort kann es zu Problemen kommen. Im Regelfall sind wir aber relativ dicht dran und das ist natürlich auch die Kernaufgabe dann in diesem Trainingsteil, die Sachen so zu bauen, dass sie sehr dicht an der Produktion dran sind, sodass wir uns darauf verlassen können, dass die Modellevaluation tatsächlich etwas über die Performance in der Produktion aussagt. Das heißt, das ist das Testen der Data Scientists, das ist genau das Szenario, was wir haben und das versuchen wir auch zu automatisieren. Auch im Mlops Bereich versuchen wir das zu automatisieren. Nur lässt es sich eben nicht so einfach immer in der Dev Umgebung umsetzen. Es lässt sich eben auch leider nicht in einer CI Pipeline umsetzen. Und das ist die große Schwierigkeit. Ich denke, das ist auch einer der größten Punkte, wo wir Unterschiede haben in der Art und Weise, wie solche Modelle entwickelt werden, im Vergleich zur ÿ, zur Softwareentwicklung, weil die Testumgebung dann eben doch sehr anders ist und das Szenario.",
+      "start": 3575974,
+      "end": 3694082,
+      "confidence": 0.9248824,
+      "speaker": "D",
+      "channel": null
+    },
+    {
+      "text": "Okay, also man sieht schon, dass das ziemlich komplex ist und wir haben jetzt nicht nur eine Pipeline, sondern, keine Ahnung, ich habe nicht genau mitgezählt, aber viele, viele Pipelines, die wir da eigentlich haben, vor allem im Vergleich zu klassischer Softwareentwicklung. Jetzt hätte ich noch eine ketzerische Frage am Ende natürlich zu dem Ganzen, weil es gibt ja so diese ganzen Plattformen, die versprechen, sie machen das alles out of the box und automatisiert. Databricks verspricht das jetzt nicht, dass sie alles machen, aber wenn man in Richtung automl und solche Dinge geht, die dann irgendwie alles magischerweise automatisiert lösen, sind es Dinge, die den Mlops Engineer dann ablösen. Braucht man dann diese Pipelines nicht mehr? Wie blickt ihr da auf die Neuerungen? Sind sie fast nicht mehr, aber auf diese Plattformen.",
+      "start": 3694226,
+      "end": 3740090,
+      "confidence": 0.9116771,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Also wir nutzen solche Plattformen intern eigentlich fast gar nicht, aber haben natürlich häufig die Situation, dass Kund innen die Plattform nutzen und wir somit einsteigen und dann natürlich da auch nicht nein sagen, sondern uns ja dann trotzdem damit gut auskennen. Für uns ist ein ganz zentraler Vorteil daran, nicht mit so einer Plattform zu arbeiten, dass man lokal mit einer IDE entwickeln kann. Weil was man häufig in diesen Plattformen hat, ist, dass man in Notebooks entwickelt und damit sind Unit Tests eigentlich deutlich schwieriger zumindest umzusetzen bzw. So gar nicht vorgesehen in solchen Plattformen. Und wenn ich die Möglichkeit habe, lokal zu entwickeln, dann sind wir zumindest und ich glaube auch sehr viele andere viel schneller in der eigentlichen Entwicklung und im Debugging und im Code schreiben. Und das ist für uns so, dass also dieses, diese Möglichkeit, nicht schnell automatisiert in Pipelines zu testen, sondern immer auf diese doch irgendwie relativ starren Notebooks angewiesen zu sein, macht die Arbeit mit so Plattformlösungen für uns ein bisschen unattraktiver. Also insgesamt dieses Thema CI, das ist mein Gefühl, ist da so ein bisschen offen. Also das ist noch nicht so mitgedacht in diesen Plattformlösungen.",
+      "start": 3740250,
+      "end": 3818270,
+      "confidence": 0.92436075,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Also ist so der Klassiker, wenn man einsteigt, sind sie ganz praktisch, aber sobald man tiefer geht und dann die Flexibilität haben will, ist das halt dann Nachteil bei der Plattform.",
+      "start": 3818430,
+      "end": 3827118,
+      "confidence": 0.9237613,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Genau, würde ich so sagen.",
+      "start": 3827254,
+      "end": 3828890,
+      "confidence": 0.981002,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Ich glaube, man muss sich da auch sehr genau anschauen, um welche Plattform es dann an der Stelle geht, weil die alle in unterschiedlichen Bereichen sehr stark sind und in anderen eben nicht, beziehungsweise dann eben bestimmte Lücken haben. Databricks z.B. ist, wenn man nach ML Ops einfach mal googelt, wahrscheinlich einer der obersten Hits. Das bedeutet, die sind da durchaus aktiv und versuchen auch das Thema gut zu besetzen und beschreiben auch auf ihrer Seite, wie eigentlich eine gute Mlops Umgebung mit ihren Tools eingerichtet werden kann. Ich würde das jetzt genauso sehen bei den Plattformen. Das gefährlichste ist eigentlich, dass ich als Code Artefakt ein Notepad habe und irgendwie wird man da zurück katapultiert in eine Zeit, wo wir weder Tests geschrieben haben, noch irgendwelche anderen großen Softwareentwicklungsstandards kannten oder genutzt haben. Und diese Plattformen sind alle nicht besonders gut da drin. Standard Linter z.B. einzubauen, Code Formatting zu machen, unit testing zu unterstützen, zu modularisieren, hin und her zu springen zwischen verschiedenen Dateien. Das sind alles große Schwachpunkte und solche Standard Softwareentwicklungsflows werden da drin bisweilen nicht besonders gut unterstützt. Das, was sehr, sehr gut unterstützt ist, ist dieser Reproduzierbarkeitsteil und die interaktive Datenanalyse. Das ist ja auch der wesentliche Case, mit dem man anfängt. Und dann wird einem eben suggeriert, dass man damit ganz, ganz leicht in die Produktion gehen kann, indem man es eben einfach als Cronjob scheduled und los geht's. Und an diesem Punkt muss man eigentlich anhalten und sagen, wir fangen mit der Entwicklung noch mal ein Stück weit früher an und müssen uns überlegen, wenn wir jetzt anfangen von der Analyse kommend, wir wollen jetzt ein produktives System daraus bauen. Wie machen wir daraus jetzt eigentlich ein Softwareprodukt? Und dieser Übergang, der ist naturgemäß sehr, sehr schwer. Einige Plattformen unterstützen bestimmte Komponenten davon sehr gut und andere weniger.",
+      "start": 3829190,
+      "end": 3939872,
+      "confidence": 0.8993941,
+      "speaker": "D",
+      "channel": null
+    },
+    {
+      "text": "Ich habe eine schöne Story vor kurzem gelesen, weil du sagtest gerade, wenn man Mlops googelt, ist Databricks relativ weit oben. Das hat mich an Google Ÿousand AdWords erinnert, so nach dem Motto auf welche Keywords optimierst du? Und zwar ist die Story wie folgt da hat nämlich jemand Kurse zu der pandas Library in Python angegeben und hat Bewerbung auf Facebook gemacht und wurde dann von Facebook gesperrt, weil Facebook dachte, er handelt mit exotischen Tieren, mit Pythons und Pandas. Und das ist dem auch immer dem seine go to Story, dass man halt Machine Learning Modelle vielleicht mal vorher explizit testen sollte, bevor man sie in Produktion packt. Schöne Story, hat mich stark zum schmunzeln gebracht. Kommen wir aber jetzt nun mal zu der Keyfrage. Ihr habt mich jetzt so heiß gemacht. Ich will jetzt euren Job. Welche skills brauche ich denn, damit ich euren Job machen kann?",
+      "start": 3939976,
+      "end": 3991542,
+      "confidence": 0.9243967,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Also Andy will euch nicht ersetzen, Andy will euch unterstützen. Nur dass das noch klar ist. Er will nicht genau eure Position haben.",
+      "start": 3991606,
+      "end": 3998166,
+      "confidence": 0.9281509,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Ich will euren Job. Also diesen Job gibt es ja hoffentlich nicht nur einmal. Ich möchte mit euch arbeiten. Ich möchte mit Schadstoffwerte in Berlin vorhersagen. Nehmen wir das dafür Beispiel.",
+      "start": 3998358,
+      "end": 4007904,
+      "confidence": 0.8303981,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Also ich kann ja mal so ein paar Sachen aufzählen, die ich denke, die relevant sind. Also wir haben jetzt die ganze Zeit auch über Automatisierung gesprochen. Also muss, würde ich denken, dass es sinnvoll ist, sich mit Automatisierungstools, CI, CD Tools auszukennen, also sowas wie GitLab, CI, GitHub, Actions, Jenkins, dann Infrastruktur Themen, Deployment Technologien wie Kubernetes, dann Docker, infrastructure as Code sollte man so ein bisschen zumindest wissen, was das ist, wenn nicht sogar noch besser umsetzen. Wissen zu Datenbanken, Cloud Diensten wie AWS, Azure sind nützlich. Dann, was Sebastian und ich auch häufig machen, ist einfacher Wissenstransfer. Also wir haben Projekte, wo Teams, Teams an uns ran treten, die sagen hey, wir merken, auf dem Weg in die Produktion läuft es irgendwie ein bisschen holprig. Was können wir dann machen, dass wir uns dann einmal das Projekt angucken. Wie arbeitet das Team zusammen? Was gibt es für Software? Wie sieht der Code aus? Also man muss auch ein Verständnis vom Code und Softwareentwicklungserfahrung haben. Das ist durchaus hilfreich, nicht, weil man die ganze Zeit entwickelt, Sebastian meint ja schon, eigentlich schreiben wir ja nur YAML Code, aber natürlich, wenn ich die Software oder wenn das Team ja beschreibt, was es für Probleme gibt, schaue ich auch mal in den Code rein und schaue mir mal die Software an, was da überhaupt los ist. Und um dann richtig beraten zu können und sagen zu können, was hilft dem Team, muss ich natürlich verstehen, worum es geht. Und ganz am Ende steht dann noch das Thema Monitoring, würde ich sagen, also dass man sich auch damit Tools auskennt, welche Möglichkeiten es gibt, weiß, was man sich für Metriken anschauen kann. Wie teste ich dann am Ende auch.",
+      "start": 4008032,
+      "end": 4111078,
+      "confidence": 0.90867287,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Die Software, wenn ich euch jetzt so zuhöre und wenn ich jetzt nur den letzten Teil höre, dann könnte man auch sagen, das trifft auch auf sehr, sehr viele DevOps Engineers zu, oder? Ich meine Hyper Scaler Knowledge, Terraform, GitHub Actions, vielleicht noch ein bisschen Ansible dabei, um irgendwas zu provisionieren. System Knowledge nennen wir es mal, das Modell Artefakt ist Rest API bietet es zumindest. Könnte man auch als ganz, wenn man drei Schritte zurückgeht, als Microservice sagen. Ja, weil im Endeffekt, ich weiß jetzt nicht, ob das welche, welches Protokoll rausgegeben wird, ob Protobuff, Avro, Iceberg, ja, also irgendwas aus dem Data Stream Bereich, vielleicht auch nur JSON, XML oder SOAP, wer weiß das schon? Aber das scheint ja, das scheint ja eine recht gute Sache zu sein, halt nur mit der starken Spezialisierung auf diese, ja, ich nenne es mal unterschiedlichen Pipelines und unterschiedliches Handling. Denn zweitausendein, was mich immer noch und.",
+      "start": 4111094,
+      "end": 4166222,
+      "confidence": 0.8756631,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Das Modellwissen noch oder dazu, das dazu kommt, wie geht man mit Modelle um und was sind die Probleme mit Modellen?",
+      "start": 4166246,
+      "end": 4172310,
+      "confidence": 0.9383357,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Klar, die Eigenheiten, die sind sehr speziell, die haben mich sehr überrascht und das war, glaube ich, mein Key Learning, so nach dem Motto, wie evaluiert man eigentlich Modelle, dass man, dass man, ich sag mal, die sicher nach Produktion schieben kann.",
+      "start": 4172390,
+      "end": 4184690,
+      "confidence": 0.8981793,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Aber also ich, im Prinzip hast du recht, Mlops ist ein, ist vielleicht eher als Spezialisierung innerhalb von DevOps zu betrachten. Das heißt, was auch immer dich an DevOps begeistert, wird dich auch im Mlops Bereich begeistern. Zusätzlich hast du eben eine ganze Reihe neuer Probleme, die du mit spannenden Tools angehen kannst. Der Stack in gewissen Bereichen, das ähnelt sich schon sehr stark. Nur die Software Architektur Seite wir designen dieses System eben komplett anders und du unterstützt damit ein komplett anderes System als das, was du vielleicht allgemein in Informationssystemen vielleicht erwarten würdest. Die Anwendungen sehen eben sehr, sehr anders aus und funktionieren anders und haben auch eine komplett eigene Logik dahinter. Und letzten Endes aber die Flows, das Gedankenwerk aus DevOps ist extrem hilfreich.",
+      "start": 4185350,
+      "end": 4232736,
+      "confidence": 0.90805197,
+      "speaker": "D",
+      "channel": null
+    },
+    {
+      "text": "Da, da bin ich wirklich voll bei dir. Und ich glaube auch, wenn man jetzt wieder in diese DevOps ML Ops Thematik reingeht und auch in die Software Engineering Thematik, wenn man das ganze System verstanden hat, was man halt wirklich tun muss, um es wirklich effektiv halt betreiben zu können und auch monitoren zu können. Das scheint mir im L ob Bereich ja schon noch eine zweitausendein eine Herausforderung zu sein, besonders wenn es gesagt an Real Time Monitoring geht. Und da stelle ich mir natürlich jetzt gerade die Frage, wie man, ich sag mal moderne Cloud native Technologien wie keine Ahnung, klassisch Prometheus oder ähnliches dafür halt nutzen kann oder verbiegen kann vielleicht. Ich weiß es nicht, weil das das ist gerade noch so ein Knoten in meinem Kopf. Aber da bin ich mal gespannt, was der was der Ausblick und was die Zukunft so bringt, weil ich habe so ein bisschen das Gefühl, wenn ich auch euch beiden zuhöre, dass Plattformen wie ML Ops, Databricks und allem drum und dran gerade erst in den Startlöchern sind, dass die gerade erstmal so ein bisschen versuchen, den den den Markt aufzurollen und versuchen zu verstehen, was die Kunden, in diesem Fall ihr eigentlich Mlops Engineers eigentlich so wollen bzw. Wie sie arbeiten. Also da bin ich mal gespannt, ob es dann irgendwann eine, weiß ich nicht, Mlops Cloud Native Foundation gibt oder ähnliches wie bei den HiFi Scalern.",
+      "start": 4232848,
+      "end": 4303414,
+      "confidence": 0.87998724,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Man muss sich ja auch überlegen, wie lange das in der klassischen Softwareentwicklung gedauert hat eigentlich. Also dass wir heute so über CICD so selbstverständlich erzählen, obwohl es übrigens auch noch nicht Selbstverständlichkeit ist überall muss man auch dazu sagen. Aber das hat ja schon, ich würde mal sagen, fast 20 Jahre eigentlich so gedauert. Also Data Science ist sehr neu und ein junges Feld und das entwickelt sich gerade und da gibt es wahrscheinlich auch viel, was man einfach erst lernen muss, gleich wie irgendwelche Data Science Manager eigentlich eher neu sind, weil früher hat es das einfach nicht gegeben als Job.",
+      "start": 4303582,
+      "end": 4337740,
+      "confidence": 0.9311368,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Ja, was wir sehen, ist auch genau das, was ihr beschreibt, dass da gerade total viele Tools auf einmal auf den Markt kommen, die alle suggerieren, dass jetzt die ganze Welt auf sie gewartet hat und man die auf jeden Fall unbedingt braucht, weil sonst kann man keine ML Ops machen. Und da wir uns jetzt aber schon länger mit diesem Thema beschäftigen, kommen wir eher aus diesem Ansatz. Wir nehmen Tools für klassische Softwareentwicklung, wie z.B. prometheus und gucken, was können wir davon übernehmen? Und ich würde sagen, in sehr vielen Fällen klappt es auch. Also man muss jetzt nicht für jeden einzelnen Teilschritt eines Mlops Projekts ein extra Tool haben. Aber natürlich sind einige Tools davon auch super. Sowas wie Mlflow z.B. haben wir ja auch gesagt, nutzen wir auch regelmäßig und ich finde es total gut, dass wir das machen und es total nützlich. Aber haben wir auch gerade schon darüber gesprochen, dass z.B. plattformlösungen zweitausendein jetzt nicht immer sinnvoll sein sollen. Also man muss da halt individuell gucken, was brauche ich, was braucht mein Team und womit fühle ich mich auch wohl beim arbeiten?",
+      "start": 4338720,
+      "end": 4401722,
+      "confidence": 0.92015535,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Der gute alte Wein in neuen Schläuchen. Kommen wir kommen wir zum Abschluss. Michelle, Sebastian, was das letzte Wort würde ich gerne euch übergeben. Was wollt ihr unseren Hörerinnen und Hörern denn so mitgeben? Michelle, bitte, vielleicht für dich als erstes.",
+      "start": 4401826,
+      "end": 4417390,
+      "confidence": 0.85487586,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Ja, also ich noch eine Sache, die mir eingefallen ist. Ich habe jetzt in den letzten Projekten die Situation mehrmals erlebt, dass Leute die Annahme haben, ML OBS, das können wir so nebenbei machen. Wir haben ja ein paar Data Scientists in unserem Team und naja, das Modell in die Produktion bringen, das ist ja am Ende nur einmal auf den Knopf drücken und dann ist es ja da. Und so ist es aber nicht. Also ich habe jetzt zwei Projekte betreut, wo das eben nicht geklappt hat und wo die Leute gemerkt haben, ach, das kann ja gar nicht nebenbei passieren. Ich glaube, wir brauchen da doch noch mal externe Unterstützung. Den Fehler kann man ganz gut vermeiden, indem man sich bewusst macht, für ML Ops brauche ich Zeit und es braucht auch ein bisschen Zeit für die Leute, diese Fähigkeiten zu lernen. Oder wenn man diese Zeit halt nicht hat, holt man sich externe Hilfe. Aber das ist halt so was, was glaube ich noch nicht so ganz angekommen ist, dass wir wirklich Zeit und Ressourcen für dieses Thema brauchen und dass es eben nichts ist, was man so im Arbeitsalltag mal noch an einem Freitagnachmittag schnell umsetzt.",
+      "start": 4417690,
+      "end": 4482300,
+      "confidence": 0.9363255,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Ja, ich würde hier noch mal einsteigen und glaube ich, Mut machen, tatsächlich in diesem Bereich reinzugehen. Das ist nämlich aktuell sind wir in einer spannenden Phase. Wir haben relativ viele Unternehmen, die lange Zeit Data Science Abteilungen aufgebaut haben, die sich immer noch in der Bringschuld befinden würde ich, so würde ich es mal ausdrücken. Denn die müssen in Unternehmen immer noch eigentlich unter Beweis stellen, dass die Modelle, die sie entwickeln und die Use Cases, die sie haben, zum Erfolg des Unternehmens wirklich beitragen können. Und viele sind an dieser harten Nuss aktuell dran, die Sachen wirklich in die Produktion reinzubringen. Wir sind aktuell wirklich aus dieser Phase raus, wo man viel Prototyping macht und eigentlich auch wirklich keine OBs Leute braucht, sondern das reicht eigentlich, Ideen zu haben, kreativ zu sein und Dinge auszuprobieren. Diese Phase ist rum und wir bewegen, also das ist auf jeden Fall jetzt weiter Richtung generativer AI weitergegangen. Wir sind hier jetzt wirklich in einer Phase, wo wir Projekte, die einen Unterschied innerhalb von Unternehmen machen, in die Produktion zu bringen und echten Impact zu entwickeln. Und das ist eigentlich eine ganz hervorragende Phase, finde ich. Wenn man einen DevOps Hintergrund hat oder auch einen Software Engineering Hintergrund hat und das Ganze spannend findet, dann hat man hier eigentlich aktuell eine wunderbare Chance, um das Feld voranzubringen. Denn diese Bringschuld, die würde ich persönlich zumindest sehr gerne erfüllen, um dieses Feld auch weiter voranzubringen. Das Potenzial hat es auf jeden Fall. Aber wie gesagt, es findet aktuell noch sehr viel statt im Bereich, um hier erwachsen zu werden, im Sinne von wir bringen Software in die Produktion und können sie auch betreiben. Und da kann jeder tatsächlich helfen und glaube ich, einen wichtigen Beitrag leisten.",
+      "start": 4483320,
+      "end": 4583610,
+      "confidence": 0.92186403,
+      "speaker": "D",
+      "channel": null
+    },
+    {
+      "text": "Vielen lieben Dank, Michelle und Sebastian. Wer noch mehr von den beiden hören möchte, der kann mal in den Data Science Deep Dive Podcast einschalten. Da gibt es auf jeden Fall eine ganze Menge zu diesem Themengebiet, nicht nur im L OB, sondern auch ziemlich viel im Bereich Data Science. Auch wer mehr Interesse an InWT in Numbers We Trust hat, schaut doch einfach mal auf die Webseite. Alle links findet ihr natürlich in den Show Notes, genauso wie links zu Mlflow, Jupyter Notebooks, Databricks, Automl Gradient Boosting wurde z.B. zwischenzeitlich mal erwähnt. Wer sich da ein bisschen rein nerden möchte, viel Spaß ansonsten. Michelle, Sebastian, vielen Lieben Dank für eure Zeit. Vielen lieben Dank für all euer Wissen, was wir hier abschröpfen durften.",
+      "start": 4583740,
+      "end": 4627498,
+      "confidence": 0.88409305,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Vielen Dank für die Einladung. Ich habe sehr gefreut, hier zu sein bei euch. Es hat mir spaß gemacht.",
+      "start": 4627594,
+      "end": 4632578,
+      "confidence": 0.88062054,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Danke auch noch von meiner Seite, auch für euren Podcast. Ihr hört wirklich gern rein, weil für mich war das auch mal was anderes. Nicht so ein Hardcore Data Science Podcast, sondern der eben auch von der technischen Ecke ein bisschen kommt und so dieses ganze Ops Thema auch bespricht und so diese Probleme, die man so im täglichen Leben, die eben auch kennt von von Datenprojekten, die eben mitbekommen und die er genau anspricht. Und das hat mich eigentlich wirklich gefreut, mal so einen Podcast auch zu sehen oder zu hören, besser gesagt.",
+      "start": 4632714,
+      "end": 4659652,
+      "confidence": 0.8940637,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Wir viel verabschieden uns und tschüss.",
+      "start": 4659716,
+      "end": 4662052,
+      "confidence": 0.841465,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Tschüss.",
+      "start": 4662156,
+      "end": 4662892,
+      "confidence": 0.44998,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Tschüss.",
+      "start": 4663076,
+      "end": 4663508,
+      "confidence": 0.5047,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Vielen Dank für die Einladung.",
+      "start": 4663564,
+      "end": 4664420,
+      "confidence": 0.989478,
+      "speaker": "D",
+      "channel": null
+    }
+  ],
+  "confidence": 0.91395974,
+  "audio_duration": 4612,
+  "webhook_status_code": null,
+  "webhook_auth": false,
+  "summary": null,
+  "auto_highlights_result": null,
+  "content_safety_labels": null,
+  "chapters": null,
+  "sentiment_analysis_results": null,
+  "entities": null
+}

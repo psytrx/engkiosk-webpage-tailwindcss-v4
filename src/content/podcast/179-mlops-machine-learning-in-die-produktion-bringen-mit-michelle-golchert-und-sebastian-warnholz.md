@@ -72,7 +72,13 @@ rtlplus: ''
 six_user_needs: []
 speaker:
 - name: Andy Grunwald
+  transcriptLetter: A
 - name: Wolfi Gassler
+  transcriptLetter: B
+- name: Michelle Golchert
+  transcriptLetter: C
+- name: Sebastian Warnholz
+  transcriptLetter: D
 spotify: https://open.spotify.com/episode/3I0crJ45bF7YBkGi3LCASB
 tags:
 - DevOps
