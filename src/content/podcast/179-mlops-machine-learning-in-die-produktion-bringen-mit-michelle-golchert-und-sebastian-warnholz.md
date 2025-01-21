@@ -74,7 +74,10 @@ speaker:
 - name: Andy Grunwald
 - name: Wolfi Gassler
 spotify: https://open.spotify.com/episode/3I0crJ45bF7YBkGi3LCASB
-tags: []
+tags:
+- DevOps
+- Software Engineering
+- Interview
 title: '#179 MLOps: Machine Learning in die Produktion bringen mit Michelle Golchert
   und Sebastian Warnholz'
 transcript_raw: ''
