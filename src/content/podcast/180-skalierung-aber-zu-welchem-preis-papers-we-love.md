@@ -77,7 +77,9 @@ rtlplus: ''
 six_user_needs: []
 speaker:
 - name: Andy Grunwald
+    transcriptLetter: A
 - name: Wolfi Gassler
+    transcriptLetter: B
 spotify: https://open.spotify.com/episode/4LDXqq6VE2LAR850hmMk2V
 tags: []
 title: '#180 Skalierung, aber zu welchem Preis? (Papers We Love)'

@@ -1,0 +1,776 @@
+{
+  "language_code": "de",
+  "audio_url": "https://cloud.inlupus.at/s/p67FK6S7A2HjTeP/download/ep180_scaling.mp3",
+  "punctuate": true,
+  "format_text": true,
+  "dual_channel": false,
+  "multichannel": null,
+  "audio_channels": null,
+  "webhook_url": null,
+  "webhook_auth_header_name": null,
+  "webhook_auth_header_value": null,
+  "audio_start_from": null,
+  "audio_end_at": null,
+  "word_boost": [],
+  "boost_param": null,
+  "filter_profanity": false,
+  "redact_pii": false,
+  "redact_pii_audio": false,
+  "redact_pii_audio_quality": null,
+  "redact_pii_policies": null,
+  "redact_pii_sub": null,
+  "speaker_labels": true,
+  "speakers_expected": 2,
+  "content_safety": false,
+  "content_safety_confidence": null,
+  "iab_categories": false,
+  "custom_spelling": null,
+  "disfluencies": false,
+  "sentiment_analysis": false,
+  "auto_chapters": false,
+  "entity_detection": false,
+  "summarization": false,
+  "summary_model": null,
+  "summary_type": null,
+  "auto_highlights": false,
+  "language_detection": false,
+  "language_confidence_threshold": null,
+  "language_confidence": null,
+  "speech_threshold": null,
+  "speech_model": null,
+  "id": "68dd45aa-2377-47a0-8371-3d7bec583d6b",
+  "status": "completed",
+  "error": null,
+  "utterances": [
+    {
+      "text": "Herzlich willkommen zu einer neuen Episode vom Engineeringkiosk. Heute machen wir mal etwas Neues. Wir schnappen uns ein wissenschaftliches Paper, schauen uns an, was darin untersucht wurde und erklären die neuen Erkenntnisse. Das Format nennen wir Papers we love. Aber ob wir am Ende das Paper wirklich lieben, wird sich noch herausstellen. Warum? Nach dem Kontext zum eigentlichen wissenschaftlichen Paper besprechen wir, ob es eine praktische Relevanz hat, wie wir die Erkenntnisse im Alltag einsetzen können, aber auch, was wir von dem Paper und von den Ergebnissen halten. Eine klassische Analyse und Einordnung. Wir starten mit einem Paper über die wie effizient ist eigentlich die Skalierung bei verteilten Systemen bzw. Bei verteilten Berechnungen über mehrere CPU cores? Heißt mehr Rechenpower gleich schnellere Ergebnisse? Dazu diskutieren wir, ab wann es sich lohnt, mehr Ressourcen einzusetzen. Und was ist mit der mysteriösen Metrik Cost? Ausgesprochen Configuration set outperforms a single thread auf sich hat. Bleib dran, wenn du wissen willst, ob single threaded Algorithmen in vielen Fällen die bessere Wahl sind. Wir springen rein.",
+      "start": 3400,
+      "end": 67058,
+      "confidence": 0.90342754,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Los geht's.",
+      "start": 67154,
+      "end": 68110,
+      "confidence": 0.715775,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Da 50 % der Podcast Hosts hier ja einen akademischen Background haben, ist es mehr oder weniger funktioniert.",
+      "start": 70850,
+      "end": 77858,
+      "confidence": 0.8716722,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Im Moment hast du jetzt schon akzeptiert, dass Bachelor kein akademischer Background ist.",
+      "start": 77874,
+      "end": 81440,
+      "confidence": 0.9431885,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Die Frage ist eher, wo packt man seine Energie rein zur Diskussion und welche kann man gewinnen? Und da bist du ja so festgefahren in deiner Weltansicht, da sage ich dann okay, führe lieber die Kriege, die du gewinnen kannst. Und deswegen gebe ich einfach mal nach.",
+      "start": 81490,
+      "end": 95764,
+      "confidence": 0.90314764,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Darum bist du jetzt mit einem neuen Format um die Ecke gebogen, wo es eigentlich um akademische Themen geht. Ist interessant, oder?",
+      "start": 95852,
+      "end": 101884,
+      "confidence": 0.93375546,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Kennst du das Konzept von Zuckerbrot und Peitsche?",
+      "start": 101932,
+      "end": 103884,
+      "confidence": 0.9355025,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Sagt mir was. So düster vor allem. Sehr düster.",
+      "start": 103972,
+      "end": 107236,
+      "confidence": 0.8935222,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Das hier ist ein Versuch, dass ich dir etwas Zuckerbrot reiche. Und zwar habe ich halt einfach verstanden, okay, wir müssen uns dann ab und zu mal mit der Wissenschaft beschäftigen und wir müssen uns dann ab und zu mal mit Papers beschäftigen. Und das haben wir nämlich auch schon Episode 128 getan, wo du uns erklärt hast, wie man wissenschaftliche Papers liest. Die Tage bin ich über LinkedIn über einen Post gestolpert beim Doom Scrolling. Man kennt das, man sitzt auf der Couch oder wo auch immer und scrollt einfach durch und schaut mehr Bilder, als man wirklich die Post liest. Da bin ich auf einen interessanten Graphen gestoßen. Und zwar hat jemand über ein wissenschaftliches Paper einen Post verfasst. Und darüber sprechen wir heute. Wir führen heute eine Art neues Format ein, was wir Papers we love nennen. Zugegeben, es ist gut kopiert und nicht von uns erfunden, denn es gibt nämlich bereits eine Community, die nennt sich Papers we love Org, was ein Repository von akademischen Computer Science Papern ist und ein eine Community dahinter, die diese Paper, ich sag mal, in guter Form präsentiert. Dazu gibt es auch Meetups und allem drum und dran. Und was wir heute tun, wir kopieren diese Idee. Wir haben uns ein wissenschaftliches Paper geschnappt, das werden wir besprechen und danach werden wir es etwas einordnen bzw. Unsere Meinung dazu sagen.",
+      "start": 107348,
+      "end": 183744,
+      "confidence": 0.93030167,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Und ob wir es wirklich lieben, kommt dann auch am Schluss. Also nur bei dem Titel Papers we love heißt es nicht automatisch, dass wir jedes Paper lieben.",
+      "start": 183832,
+      "end": 191326,
+      "confidence": 0.98535144,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Oh, das ist korrekt. Paper Titel können auch ganz klassisch Clickbait sein, weil so wie ich jetzt gelernt habe, müssen Wissenschaftler anscheinend auch um Anerkennung ringen, weil sonst wäre der Titel nicht so. Aber kommen wir zum Paper. Das Paper, was wir heute besprechen, nennt sich Scalability but at what cost? Ist schon etwas älter, circa 10 Jahre, wurde im Mai. 2015 in der Schweiz präsentiert. Und da geht es um verteiltes Computing und das Wort Skalierung. Und in diesem Kontext ist Skalierung, was die Leute meinen, das ist gar nicht immer so klar. Deswegen die Frage an dich Wolfgang, bevor wir starten, was bedeutet Skalierung in diesem Kontext von dem Paper hier?",
+      "start": 191408,
+      "end": 234182,
+      "confidence": 0.9053639,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Also Skalierung ist ja ein super breites Feld und kann ja überall angewandt werden. Um das ein bisschen einzugrenzen, worüber wir heute sprechen bzw. In dem Paper auch gesprochen wird, ist wirklich die Skalierung von Algorithmen zweitausendein. Also wir sprechen jetzt nicht von der Skalierung von irgendeinem Startup, sondern es geht wirklich um die technische Skalierung von Algorithmen. Primär die Berechnung, also CPU, wie schnell kann ich einen Algorithmus abarbeiten, um ein Ergebnis zu bekommen? Und klassischerweise kann ich da natürlich einfach mehr RAM, mehr CPU, mehr Cores, vielleicht auch mehr Computer drauf werfen, großen Cluster. Gibt natürlich viele Möglichkeiten zu skalieren, um schneller zu werden, um ein großes Problem zu berechnen. Und genau da steigt eigentlich dieses Paper ein und vergleicht die zwei Varianten horizontale und vertikale Skalierung. Also vertikale Skalierung heißt mehr RAM draufschmeissen, mehr CPU Leistung, also wirklich in einem Rechner zu bleiben. Und horizontale Skalierung bedeutet, das Problem auf mehreren Rechnern, auf mehreren Cores parallel auszurechnen und somit einen Geschwindigkeitsvorteil zu erreichen. Und dieses Paper geht nochmal einen Schritt tiefer und begrenzt sich da auf die Ausführung in einem Thread, also wirklich auf einem Core, auch wenn es z.B. in dem jeweiligen Server, in dem Computer jetzt mehrere Cores gäbe oder in den einen CPU mehreren mehrere Cores verfügbar sind, wird trotzdem nur ein Core mit einem Thread verwendet und vergleicht es dann mit Multi Threading oder mit mehr Records natürlich zur Verfügung stellen, wie dann da die Parallelisierung läuft und mit welchen Overhead das Ganze verbunden ist.",
+      "start": 234246,
+      "end": 332446,
+      "confidence": 0.87951845,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Der Marketing Claim von diesem Paper hat mich auch dazu bewegt, dieses Thema hier mal zu pitchen, denn es wird gesagt, dass Big Data Systems damit werben, wie skalierbar sie doch sind, indem sie die Berechnungen verteilen. Und das wird als Key Feature auch verkauft. Und die Keyfrage von dem Paper ist doch, wie permanent, doch wie performant sind diese Systeme denn wirklich? Aka also die absolute Performance, inwieweit haben diese Systeme wirklich eine verbesserte Leistung im Gegensatz zur Parallelisierung Overhead, den sie selbst verursachen, denn wenn du Daten auf mehrere CPUs verteilst, dann hast du in der Regel einen Kommunikations Overhead und so weiter und so fort. Und dieses Paper versucht dabei eine neue Metrik einzuführen und zwar die Metrik cost, also cost großgeschrieben. Ich hatte gerade schon gesagt, der Titel des Papers ist scalability but at worst cost. Und cost steht für configuration that outperforms a single threat. Das bedeutet, ab wie viel Cores outperformt ein System, was zur verteilten Berechnung genutzt wird, ein Algorithmus, der single threaded ausgeführt wird. Also ab wie viel Cores führt der Overhead, der bei der verteilten Berechnung eingeführt wird, zu einem schnelleren Ergebnis. Und als ich das gelesen habe, habe ich gedacht, das müssen wir besprechen, denn Skalierung und verteilte Systeme, irgendwie in der Software Engineering ist das ja auch ein bisschen cool, wenn man sagen kann, ich bin Distributed System Engineer, ich arbeite auf verteilten Systemen. Jeder, der uns jetzt gerade zuhört und vielleicht mit verteilten Systemen arbeitet, weiß, tu das bitte nicht, denn das ist wirklich schwierig. Aber ich habe immer noch das Gefühl, Leute sehen das so als ich bin jetzt cool, ich arbeite mit verteilten Systemen. Und dieses Paper versucht die ganze Thematik mal wirklich auf den Boden der Tatsachen zu führen. Braucht man eigentlich ein verteiltes System oder outperformt ein Single Thread nicht eigentlich viele verteilte Systeme?",
+      "start": 392518,
+      "end": 504358,
+      "confidence": 0.90791565,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Wobei wichtig ist, um den den Marketing Claim vielleicht auch einzufangen, weil da von Big Data Systemen oder so gesprochen wird. Wir sprechen da jetzt nicht von hoch verteilten Systemen, zumindest im Paper. Was dann schlussendlich verglichen wird, ist Multi Core Processing gegenüber Single Threaded auf einem Core das Ganze zu berechnen. Also es werden da jetzt nicht irgendwelche hoch verteilten Systeme, die weltweit verteilt sind in irgendeiner Form verglichen, sondern es geht bis zu 128 Cores, auf denen dann ein Algorithmus ausgeführt wird.",
+      "start": 504414,
+      "end": 532706,
+      "confidence": 0.88206786,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Leider wird nicht weiter spezifiziert, ob wir jetzt wirklich von mehr Systemen sprechen oder ob 128 Kurs in einem Server sind, aber damit müssen wir jetzt leben. Steigen wir mal ins Paper ein zur sogenannten Methodik. Denn wie wir in der Episode 128 gelernt haben, ist die Definition der Methodik, was wird hier eigentlich gemacht, sehr wichtig. Die Autoren des Papers haben sich vorher veröffentlichte Papers zum Thema von Graph Processing genommen und haben die mehr oder weniger grosset. Wolfgang, vielleicht kennst du das Modell oder beziehungsweise das Format Roast my Business, wo jemand sein Business vorstellt und setzt sich der Kritik von anderen Leuten aus, was daran gut und was daran schlecht ist. Und ich habe so ein bisschen das Gefühl, die Autoren machen jetzt hier Roast my paper, weil die haben sich nämlich von der Methodik andere Paper geschnappt, haben sich die angesehen und vergleichen dann die gemeldete Performance auf verteilten Systemen mit einfachen Single Threaded Implementierungen auf denselben Datensätzen von den vorherigen Papers und lassen dieses Single Threaded Programm dann auf einem high End Laptop von 2014 laufen und sagen dann, okay, das eine ist schneller, das andere.",
+      "start": 532778,
+      "end": 600534,
+      "confidence": 0.9310664,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Ist schneller, dass du immer mit deinem Business Speak um die Ecke kommst, roasten und so weiter. In der Wissenschaft ist es einfach ganz normal, du nimmst Papers, die irgendwas sagen, probierst es zu widerlegen oder zu bestätigen. Das ist einfach, wie Wissenschaft funktioniert und wie man aufeinander aufbaut. Also man kann es auch positiver sehen, standing the shoulders of giants z.B. anstatt da immer zu roasten und im Business Jargon herumzuspringen.",
+      "start": 600582,
+      "end": 622962,
+      "confidence": 0.9090479,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Ja, ich finde das ja auch gut, wenn man sich gegenseitig challenged. Jetzt hatte ich gerade gesagt, die Paper stützen sich alle auf Graph Processing oder auf Graph Computation, beziehungsweise auf die Berechnung von Graph Datenstrukturen. Meine erste Frage war, warum werden Graphen als Datenstruktur als Beispiel für das Paper herangezogen?",
+      "start": 623106,
+      "end": 641386,
+      "confidence": 0.9018551,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Und hast du eine Antwort gefunden?",
+      "start": 641538,
+      "end": 642930,
+      "confidence": 0.91061336,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Ja, im Paper begründen sie das damit, dass die Berechnung von Graphen eine der einfachsten Klassen von datenparallelen Berechnungen ist, die aber nicht trivial parallelisiert werden können. Also die Berechnung von Graph Problemen ist.",
+      "start": 643010,
+      "end": 656682,
+      "confidence": 0.93955207,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Ja relativ simpel, aber zumindest gut dokumentiert. Und es gibt Algorithmen dazu, die jetzt nicht ultra lang sind von den Codezeilen her.",
+      "start": 656706,
+      "end": 666578,
+      "confidence": 0.92581135,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Ganz genau, aber dann die Parallelisierung, also wie bricht man diese Berechnungen oder die Algorithmen und die Daten oder wie partitioniert man diese? Das ist dann halt nicht ganz trivial, so dass man natürlich noch eine gesunde Balance zum Kommunikations Overhead hat. Und deswegen werden in den vorherigen Papers und auch in diesem Paper Graphen als Datenstruktur herangezogen. Aber weil das ja Roastmy Paper ist, werden die Tests auf denselben Datensätzen ausgeführt wie vorher. Und die Datensätze, muss man zugeben, sind nicht wirklich groß. Die Datensätze dürfen natürlich auch nicht groß sein, wenn man sie innerhalb eines Threads laufen lassen soll, denn dann müssen sie auf eine Maschine passen. Und wir reden hier von zwei verschiedenen Datensätzen. Das eine ist 15 GB groß, das andere ist sechs GB groß. Gut, die Größe selbst bei einem Graphen ist relativ irrelevant, wenn man über Speicherbedarf redet, denn wir sprechen eher über sogenannte Nodes und Edges. Da sind wir halt so in dem Bereich von 41 Millionen Nodes oder 105 Millionen Nodes. Und die Kanten, also die Edges, da sind wir so von 1,5 Milliarden bis 3,8 Milliarden. Also bei den Edges ist es schon, ich würde sagen, eine Hausnummer. Bei einem Graphen ist jetzt kein kleiner Graph, aber der Marketing Claim sagte auch Big Data. Ob das jetzt Big Data ist, weiß ich jetzt auch nicht.",
+      "start": 666674,
+      "end": 740130,
+      "confidence": 0.9209328,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Ich glaube, das liegt im Kontext sehen muss, dass das 2015 war. Also da waren wahrscheinlich 15 GB RAM jetzt nicht so standard wie sie heute sind. Also damals war das wahrscheinlich dann eher schon schwierig. Da brauchst du dann schon große Servermaschinen, wo du 15 GB RAM so einfach mal nur für die Daten hast. Und trotzdem, ich habe selber viel mit mit Graphen gearbeitet, also 4 Milliarden Knoten, sorry, 4 Milliarden Kanten, das sind schon eine ordentliche Menge. Also wenn du da einen Algorithmus drüber jagst, das dauert. Also das ist, da sprechen wir normalerweise nicht von Millisekunden oder so.",
+      "start": 740210,
+      "end": 775126,
+      "confidence": 0.9100127,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Und wenn wir von das dauert sprechen, sprechen wir natürlich auch ja, Moment mal, wie wurden diese Algorithmen implementiert? Hat da wer JavaScript genommen oder Python oder ähnliches? Nee, die Wissenschaftler haben zwei Implementierungen gemacht für ihre Single Thread Implementierung. Die haben einmal den ganzen Algorithmus, der in den vorherigen Papers auf verteilten Systemen ausgeführt wird bzw. Aus mehreren Cores haben sie Single Threaded einmal in C implementiert. Da haben sie das Boost Framework genutzt und einmal in Rust. Die haben natürlich dann hier und da noch mal so ein paar kleinere Optimierungen gemacht, wie manual inlining in C und so weiter und so fort. Und die haben auch zumindestens im c Bereich dann und im Rostbereich die die Boost Graph Library genutzt, was Schnittstellen für verschiedene Travisierungsarten zur Verfügung gestellt. Also sie haben nicht alles from scratch implementiert, sondern haben sich dann halt auf Libraries bezogen. Aber ich würde sagen, das ist auch fair, denn es ging jetzt nicht um den realen Vergleich von Libraries, sondern um den realen Vergleich von Single versus Single Core Computation, beziehungsweise Single Threaded Computation versus Multi Core Computation.",
+      "start": 775198,
+      "end": 841550,
+      "confidence": 0.87965876,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Was mich ja wirklich gewundert hat, ist, dass die Rust verwendet haben, weil wir sprechen da von 2015 und ich hatte gar nicht am Schirm, dass da Rust schon zweitausendeinousand gegeben hat, so als klassische Sprache. Und ich habe auch mal nachgeschaut, 2015 kam die erste stabile Version von Rust überhaupt raus. Also die waren da schon bei Rust ziemlich früh dran.",
+      "start": 841670,
+      "end": 861132,
+      "confidence": 0.8954637,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Jetzt kommt ein Claim vom Hörensagen. Was ich aus den letzten 10 Jahren von Rust kenne und ich bin kein Rust Programmierer, ist, dass da doch hier und da schon mal Breaking Changes drin sind. Und wenn du dann 2015 von erster stabiler Version sprichst, weiß ich nicht ganz, in wie weit man das Wort stabil hier definiert, aber das ist jetzt nur aus der Gerüchteküche. Jetzt ist natürlich die Frage, okay, die vergleichen ihre Single Threaded Application mit Multi Core Applications und gegen welche Systeme wurde denn getestet? Und da sind ein paar doch recht bekannte Vertreter bei, wie z.B. apache Spark. 2015 gab es noch apache Giraffe und was ich auch bei der Recherche gefunden habe, es wurde gegen ein System getestet, nennt sich Stratos vier und Stratos vier ist das heutige apache Flink. Also Stratosphere ist zu apache Flink geworden. Also es sind keine kleinen Systeme, die da getestet wurden.",
+      "start": 861236,
+      "end": 912040,
+      "confidence": 0.90189075,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Also dieser Punkt ist meiner Meinung nach auch ganz wichtig. Also man hat da einen selbst entwickelten Algorithmus verglichen mit ganz großen verteilten Systemen.",
+      "start": 912160,
+      "end": 923064,
+      "confidence": 0.9129704,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Einen selbstimplementierten Algorithmus, nicht selbst entwickelten Algorithmus.",
+      "start": 923192,
+      "end": 927152,
+      "confidence": 0.7620472,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Genau, aber du hast natürlich einen kleinen hochoptimierten Algorithmus und die Gegenseite war ein hochkomplexes System. Also gerade wenn man so an apache Flink, Spark oder auch damals apache Giraffe denkt, das sind natürlich Riesenschiffe und wenn ich dort einen Algorithmus drauf setze, dann nehme ich natürlich dieses ganze riesen Schiff darunter, was das alles kann und alle Features hat, natürlich auch mit. Also das muss man dann schon auch fair sehen, wenn man dann Vergleich macht. Aber die Idee war natürlich auch, dass man vergleicht hoch optimierte Implementierung im Vergleich zu ich feuer das einfach in so ein System rein, das wird dann automatisch parallelisiert, was dann in der Realität ja auch so passiert. Also wenn man sich überlegt, entweder ich habe ein hoch spezialisiertes Team, was irgendwas optimiert, versus ich verwende irgendeine Standardarchitektur, wo ich einfach mal was raus optimieren kann über die Parallelisierung.",
+      "start": 927256,
+      "end": 980526,
+      "confidence": 0.8841508,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Insgesamt wurde gegen sieben Systeme getestet, es sind noch andere Systeme bei, wie Graphski und Xtreme und Graphlab und Graphics, das sind alles Systeme, die haben mir vorher noch nichts gesagt, deswegen hatte ich gerade nur die drei großen apache Spark, apache Giraffe und apache Flink genannt.",
+      "start": 980718,
+      "end": 998322,
+      "confidence": 0.85875064,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Auch sehr interessant, dieses Graph G oder Kai oder wie man das auch immer ausspricht, ist z.B. ein disk basiertes System, also die anderen sind dann eher Hauptspeicher basiert. Da gibt es dann natürlich auch nochmal große Unterschiede. Und da sieht man auch, wir bewegen uns 2015, wo das wahrscheinlich auch noch ein größeres Thema war, disk basiert bzw. Disk basierte Optimierungen überhaupt zu machen mit einem System, weil da natürlich viel höhere Limitierungen waren, die SSDs waren auch noch nicht so Standard, also da gibt es schon auch nochmal Unterschiede, keine Ahnung, ob es Graph Chi noch gibt, ich glaube schon grundsätzlich, aber auch da hat man dann mehrere Varianten von Systemen, also Hauptspeicher, Disk based Systeme, damit man da einen schönen Überblick hat.",
+      "start": 998386,
+      "end": 1040782,
+      "confidence": 0.8883054,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Zweitausendein, ja, das ist ein Grund, warum mehrere Systeme genutzt wurden und ein anderer Grund ist, der in Paper genannt wird, da einige Systeme wirkliche Optimierung haben, um eine kluge Partition der Daten anzuwenden, um natürlich die Kommunikation zwischen den Cores und den Nodes zu reduzieren. Und da wird auch sehr positiv ein Microsoft Research Projekt genannt, nennt sich NAIAT, zum Graph Processing. Die sollen wohl sehr, sehr viele Optimierungen zur Partition der Daten haben, zweitausendein, also man merkt schon eine große Variation, was ich sehr, sehr interessant finde. So, jetzt könnte man sagen, okay, was haben die denn eigentlich getestet? Und zwar wurden zwei Algorithmen getestet, und zwar einmal den sogenannten PageRank Algorithmus, sagt vielleicht vielen Leuten was, das ist ein Algorithmus zur Bewertung der Relevanz oder Bedeutung von Knoten in einem gerichteten Graph. Ja, das große g hat es entwickelt, Google, um die Wichtigkeit von Webseiten zu bewerten.",
+      "start": 1040806,
+      "end": 1089666,
+      "confidence": 0.9169287,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Jetzt hast du da die technische Definition gesagt, wie ist die line Definition? Du sagst es ja immer so gern, explain me like i am five.",
+      "start": 1089778,
+      "end": 1097046,
+      "confidence": 0.87580425,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Naja, also explain me like I'm five sagt man eigentlich, okay, ein Knoten, z.B. eine Webseite wird wichtiger, wenn andere wichtige Knoten auf ihn verweisen. Das Gute alte href, der gute alte Link im World Wide Web, versteht das der fünfjährige Wolfgang?",
+      "start": 1097178,
+      "end": 1111734,
+      "confidence": 0.8791472,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Das versteht er natürlich, aber auch das dann weiter gedacht, also einerseits ist eine Webseite wichtiger, wenn sie mehr Links erhält, incoming links, das Interessante ist dann aber, dass die Webseite dieses Vertrauen, das sie bekommt, durch die Incoming links auch weitergeben kann. Also wenn Andis Webseite jetzt ganz vertrauenswürdig ist und irgendwie 100 Punkte bekommt, dann bekommen alle Webseiten, auf die der Andy referenziert, einen kleinen Teil von diesen 100 Punkten. Und wenn er auf 100 Webseiten referenziert, bekommt jede weitere Webseite wieder einen Punkt. Also das propagiert sich so nach unten und die nächsten bekommen dann wieder einen Teilpunkt und ein Hundertstel von dem Punkt und wieder ein Hundertstel. Und so wird dieser Vertrauensindex immer, immer kleiner, je nachdem, wie weit man wegkommt, von dass super Instanz Andi mit dem höchsten Vertrauen sind.",
+      "start": 1111822,
+      "end": 1159586,
+      "confidence": 0.9116553,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Und das, was der Wolfgang gerade gesagt hat, ist doch schon relativ wichtig auch für die Graph Datenstruktur, denn wir sprechen von einem gerichteten Graph beim PageRank. Jetzt stellt sich die ganz große Frage, was ist denn ein gerichteter Graph? Ein gerichteter Graph ist eine Datenstruktur zur Darstellung gerichteter Beziehung zwischen Objekten. Herzlichen Glückwunsch, Andi, du hast gerade Wikipedia vorgelesen. Nein, im Endeffekt bedeutet das, Kanten haben eine Richtung und somit eine Eingangsgrade und eine Ausgangsgrade. Das bedeutet, Kanten haben so eine Art Metadaten, die wissen also, wie viel andere Kanten auf eine Webseite zeigen. Kurz gesagt, wie viel Incoming links man kriegt und eine Ausgangsgrade, wie viel outgoing Links von diesem Knoten, von dieser Webseite dann hingehen. Das bedeutet, Kanten haben eine Richtung. Und wenn Kanten auch eine Richtung haben, in der sie zeigen, dann kann ein gerichteter Graph auch sogenannte Zyklen enthalten. Ich verlinke auf Wolfgangs Webseite, Wolfgang verlinkt auf Maries Webseite und Marie verlinkt auf meine Webseite. Und das ist natürlich schon ein essentieller Teil für das Ranking von Webseiten. Aber der PageRank wird nicht nur für die Websuche verwendet, sondern auch für Empfehlungssysteme oder soziale Netzwerke. Wer hat wen jetzt bei LinkedIn angefragt?",
+      "start": 1159658,
+      "end": 1231148,
+      "confidence": 0.9221767,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Der zweite Algorithmus, der verwendet wird, ist die sogenannte Label Propagation. Es ist eine klassische Herangehensweise, um Cluster zu entdecken in Graphen. Also wenn man z.b. den Facebook Graph nimmt oder den twitter Graph, wo sind Communities in diesem Netzwerk, in diesem Graph? Und der Algorithmus basiert eigentlich darauf, dass man sogenannte Labels auf die Kanten setzt. Am Anfang hat jede Kante ein eigenes Label und dann werden die Label an benachbarte Knoten bzw. Kanten weitergegeben. Und das wird so lange gemacht, bis es so eine Stabilität gibt in dem ganzen Graphen und sich so die Cluster herausbilden. Also auch da wieder ÿousand beim Label Propagation Algorithmus ganz viel Kommunikation mit benachbarten Kanten. Das Weitergeben, so ähnlich wie beim PageRank, also es ist ein ähnlicher Vorgang, der da eigentlich ausgeführt wird. Also die zwei Algorithmen sind von den Charakteristiken eigentlich sehr ähnlich.",
+      "start": 1231244,
+      "end": 1291948,
+      "confidence": 0.8910162,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Jetzt stellt sich aber die Frage, warum zwei Algorithmen? Ich hatte gerade gesagt, beim Patreon wird ein gerichteter Graph genutzt als Datenstruktur und bei der label Propagation wird nämlich ein ungerichteter Graph herangezogen, was natürlich dann ein essentieller Unterschied ist. Und Label Propagation, da fragt man sich, was ist denn jetzt ein Label in dieser Hinsicht und was wird denn eigentlich weitergegeben? Das Label kann man so verstehen als eine Art Metadaten pro Knoten. Jetzt wie z.B. bei Tieren kann man dann Metadaten dran setzen, wie das ein Säugetier oder ein Reptil. So könnt ihr euch das mehr oder weniger bildlich vorstellen. Kommen wir jetzt aber mal zu den allerersten Ergebnissen. Wir hatten vorhin gesagt, okay, die Wissenschaftler haben sich die Datensets herangenommen, haben die zwei Algorithmen herangenommen und haben das erstmal in Single threaded, in Rust und in Z implementiert und haben es dann mal laufen lassen gegen die verteilten Systeme, die in den vorherigen Papers definiert wurden. Und beim pagerank Algorithmus haben nur zwei von den sieben verteilten Systemen die Single Threaded Lösung outperformed. Und outperformed in dieser Art von Skalierung bedeutet eigentlich, wenn ich mehr Cores adde, beschleunige ich die Zeit der Berechnung. Also wenn man mehr oder weniger mehr Ressourcen da hinzufügt, wird die Berechnung schneller. Das bedeutet outperformed in der Hinsicht. Und zwei von den sieben Systemen, wenn man die PageRank Berechnung auf 128 Cores laufen lasst, ist es schneller fertig, als wenn man die PageRank Berechnung auf einem Chor laufen lässt. Und das muss ich schon zugeben, ist schon faszinierend, denn 128 Cores hat jetzt nicht jeder und dass du so eine Maschinerie an Hardware draufschmeissen musst, um einen Chore out zu performen, Respekt.",
+      "start": 1292044,
+      "end": 1398288,
+      "confidence": 0.9089648,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Also da hätte jetzt ganz viel Kritikpunkte, aber die besprechen wir ein bisschen später, weil da gibt es noch mehrere. Wir gehen mal in den in den zweiten Algorithmus davor hinein.",
+      "start": 1398344,
+      "end": 1407640,
+      "confidence": 0.8739448,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Bei der label Propagation sieht es ein bisschen anders aus. Da hat die Single Thread Implementierung jedes der anderen Systeme outperformed bis zu einem Maximum von 128 Cores. Das bedeutet, die Single thread war schneller als jedes verteilte System.",
+      "start": 1407720,
+      "end": 1422864,
+      "confidence": 0.92712486,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Ist auch wesentlich komplexerer Algorithmus. Also rein von den Iterationen her ist PageRank irgendwo im Logspace anzusiedeln von der Komplexität zweitausendein und Label Propagation ist da eher bei einer Vielzahl der Anzahl von Kanten. Also das ist dann schon wesentlich höher gegenüber einem Logspace, der dann ja relativ klein ist in Bezug auf Anzahl der Knoten bzw. Kanten. Darum ist es natürlich dann auch bei der Verteilung wesentlich komplexer.",
+      "start": 1422992,
+      "end": 1450246,
+      "confidence": 0.90270984,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Jetzt haben die Wissenschaftler im ersten Testergebnis wirklich die einfachste single Thread Implementierung, die denen eingefallen ist, gebaut und keinerlei Optimierung reingebaut. Im nächsten Schritt haben sie gesagt, okay, zweitausendein, was können wir hier denn mal optimieren? Im ersten Schritt haben sie sich an den PageRank Algorithmus gesetzt und wie es so bei vielen Algorithmen ist, bestimmt ab und zu die Struktur bzw. Das Ordering der Datenstruktur auch die Performance oder beziehungsweise die Komplexität des Algorithmus. Und klassische Graphen werden in einer sogenannten Vertex Order beschrieben. Das beschreibt eigentlich die Reihenfolge, in der die Knoten eines Graphens auf der einen Seite verarbeitet, gespeichert, aber auch durchlaufen werden. Also breiten tiefen Suche und solche Thematiken halt.",
+      "start": 1450318,
+      "end": 1493144,
+      "confidence": 0.9157836,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Also der Hintergrund ist, wie man die Knoten und die Kanten eigentlich abspeichert und ablegt im Hauptspeicher auf der Festplatte. Und da gibt es natürlich verschiedene Varianten. Die dümmste ist wahrscheinlich einfach, dass man sequenziell durch das Ganze durchgeht und an jedem Knoten die Kante dranhängt, z.B. also alle Kanten, die außen herum sind. Dann ist die Frage, welcher Knoten kommt dann zuerst? Kommt das eben eher Breitensuchen optimiert oder Tiefensuchen optimiert oder gibt es gar keine Optimierung und man legt es irgendwie ab mit mit einer Indexstruktur und dann springt man wild durch den Speicher. Also da gibt es alle Variationen natürlich, aber auch die optimierteren Variationen, die dann speziell meistens für ein Problem auch ausgelegt sind. Also nur weil man eine hoch optimierte Speicherung hat, wie es halt meistens so ist, kann man dann nicht alle Graph Algorithmen drüber laufen lassen, sondern es ist halt dann optimiert für ein spezielles Problem.",
+      "start": 1493272,
+      "end": 1542850,
+      "confidence": 0.8937311,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Und wenn wir uns das genau nehmen, wenn wir sagen, die Speicherung der Datenstruktur passen wir jetzt mal auf unser Problem an, dann sind die Wissenschaftler darauf hey, es gibt noch eine andere Art von Datenspeicherung, die wir für den Patreon Algorithmus nutzen können. Und da kamen die auf die sogenannte Hilbert order bzw. Die Speicherung, die räumliche Abbildung basieren auf sogenannten Hilbert Kurven. Hilbert war ein Mathematiker im achtzehnte Jahrhundert, 1890 oder so kam der mit den Hilbert Kurven um die Ecke. Achtung, wir sprechen nicht von Dilbert, den Comics, sondern von Hilbert mit H. Und eine Hilbert Kurve ermöglicht dir eigentlich den n dimensionalen Raum, also z.B. d oder d, in eine eindimensionale Sequenz abzubilden. Dabei werden aber bestimmte räumliche Zusammenhänge bewahrt. Räumliche Zusammenhänge ist im PageRanker natürlich relativ wichtig, haben wir gerade gesagt, wie viel Incoming links gehen rein, wie viel outgoing Links gehen raus. Also das muss bewahrt bleiben. Und die Hilbert Kurve ist den fleißigen Hörerinnen und Hörern bei uns im Podcast natürlich schon geläufig, denn in Episode 151 zu räumlichen Indexstrukturen hat der Herr Dr. Wolfgang Gassler uns über die Hilbert Kurve auch aufgeklärt. Kannst du uns nochmal ein Tool on didnt read für die Hilbert Kurve geben?",
+      "start": 1542940,
+      "end": 1616386,
+      "confidence": 0.88749784,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Also die Grundidee ist, dass man eben eine räumliche Anordnung, was ja ein Graph meistens auch irgendwo ist, auf einen eindimensionalen Raum runterbricht, weil unser Speicher, wie du auch schon gesagt hast, eindimensional ist zweitausendein, unser RAM, unser Festplattenspeicher. Also wir haben immer nur irgendwie ein Array, ein fortlaufendes speicher Segment und wir müssen es in irgendeiner Form abbilden. Und was eigentlich so eine Hilbert Kurve probiert, dass die Nähe von einem mehrdimensionalen Raum erhalten bleibt. Das heißt, die Knoten von so einem Graph, die in der räumlichen Struktur nahe aneinander liegen, sind dann im Rahmen auch nahe aneinander in dem Array z.b. und gerade wenn man denkt an Label Propagation oder auch an PageRank, wo immer was an die nachbar Knoten weitergegeben wird, macht es natürlich Sinn, wenn meine Knoten, die nebeneinander liegen, auch im Speicher möglichst nahe aneinander liegen. Und das probiert die Hilbert Kurve eigentlich abzubilden, dass man da eben dann schneller ist und nicht irgendwo ans andere Ende der Welt im Rahmen springen muss oder auf meiner Festplatte.",
+      "start": 1616458,
+      "end": 1676892,
+      "confidence": 0.90224403,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Und genau diese Optimierung haben die Wissenschaftler dann jetzt mal angewandt für den Patreon Algorithmus. Das bedeutet natürlich auch, dass der incoming graph erstmal sogenannt preprocessed werden muss zweitausendein, bevor der Patreon Algorithmus dann berechnet werden kann. Und durch diese Optimierung kommt natürlich, ich sag mal, zusätzlicher Overhead fürs preprocessing drauf, alles fair. Dieser zählt aber nicht zur Runtime des Algorithmus. Und dadurch wurden dann auch die zwei verteilten Systeme, die im ersten Testergebnis ohne Optimierung immer noch single threaded outperformed haben, dann doch, ich sag mal in Anführungszeichen, geschlagen. Also eigentlich kann man sagen, durch die Optimierung der Speicherung des Graphens wurden alle Systeme, die auf 128 Cores getestet wurden, durch eine Single Threaded Implementierung geschlagen. Aber auch beim zweiten Algorithmus, also der auf dem ungerichteten Graph, bei der Label Propagation, haben sie auch eine Optimierung gemacht. Was sie da nicht gemacht haben, ist relativ brutal, finde ich. Die haben einfach die label Propagation durch einen anderen Algorithmus ersetzt, der nennt sich Union find with weighted unions, ist ein spezialisierterer Algorithmus, der aber ebenfalls zur Cluster und Community Findung in Graphen genutzt wird. Und das hat er als Ergebnis, dass obwohl auch in der label Propagation mit Single Threaded bereits alle verteilten Systeme outperformed wurden, dass durch die Implementierung von einem spezialisierteren Algorithmus die ganze Sache durch wirklich eine order of Magnitude schneller wurde, was schon heftig ist.",
+      "start": 1676956,
+      "end": 1757676,
+      "confidence": 0.9142446,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Jetzt sagt das paper Verbesserung um eine ganze order of Magnitude und dieses Paper heißt ja at what cost, wobei cost groß geschrieben ist und eigentlich eine Metrik ist, die die einführen wollen. Diese unter Anführungszeichen wird ist setzen Wissenschaftler, wie du immer so gerne sagst. Also wenn man jetzt diese Cost Metrik ansieht, was ist das Ergebnis bei den Algorithmen?",
+      "start": 1757748,
+      "end": 1776438,
+      "confidence": 0.8673218,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Nur kurz zur Erinnerung, Cost, die Abkürzung steht für Configuration that outperforms a single threat. Und jetzt zitiere ich das Paper. Cost wägt die Skalierbarkeit eines Systems gegen den durch das System verursachten Overhead ab und gibt den tatsächlichen Leistungsgewinn des Systems, ohne Systeme zu belohnen, die erhebliche, aber parallelisierbare Zusatzkosten verursachen. Auf gut Deutsch, wie viel Cores muss ich auf das Problem schmeißen, dass es schneller als eine Single thread Implementierung wird? Und ich muss zugeben, ich finde den Grundgedanken der Metrik eigentlich ganz geil. Zum finalen Ergebnis für den PageRank gab es nur die Ergebnisse von drei Systemen. Wenn du jetzt das System Graphlab nimmst, dann musst du 512 Cores auf das Problem schmeißen, dass du mit der Single Thread Implementierung gleichziehst in Bezug auf die Zeit, die benötigt wird, um das Ergebnis der Berechnung zu haben. Wenn du jetzt das System von Microsoft NAiaT nutzt, dann musst du nur 16 Cores draufschmeissen. Schon mal eine harte Unterschied würde ich sagen. Und dann, wenn du das Graphics System nutzt, das laut dem Research kommt es nicht an die Single Threat Implementierung ran, egal wie viel cores du drauf schmeißt. Und das nennen die unbounded costs, also unbounded configuration to outperform a single threat implementation. Wenn du jetzt mal auf das label Propagation Problem gehst mit einem ungerichteten Graph, da sagen sie, okay, da tun sich die ganzen Systeme jetzt nicht so viel, da sind die einigermaßen gleich. Und zwar kommt es da auf die Implementierung drauf an, wie du die ganzen Datenstrukturen abspeicherst. Und da machen sie eine Unterschiedung zwischen Hashtag und Arrays. Implementierung mit Hashtables brauchen circa 100 Cores um eine single threaded Implementierung auszuperformen. Und Arrays brauchen circa 10 Cores, um eine single threaded Implementierung auszuperformen. Und das liegt wohl am Overhead von Hashtables. Da gehen sie aber auch nicht weiter drauf ein.",
+      "start": 1776534,
+      "end": 1897528,
+      "confidence": 0.9010019,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Auszuperformen, ist das jetzt ein neues deutsches Wort, oder schlagen, schneller sein, ging alles. Out zu performen.",
+      "start": 1897704,
+      "end": 1904816,
+      "confidence": 0.84561,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Out zu performen, ja. Ich meine, wir sind ja, glaube ich, offiziell denglisch hier unterwegs im Podcast, oder?",
+      "start": 1904928,
+      "end": 1909422,
+      "confidence": 0.8476061,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Beschweren sich ja auch genug Leute immer.",
+      "start": 1909536,
+      "end": 1911362,
+      "confidence": 0.9499657,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Ja, das ist korrekt.",
+      "start": 1911466,
+      "end": 1912146,
+      "confidence": 0.93606,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Aber ich glaube, also Algorithmus X schlägt Algorithmus Y.",
+      "start": 1912178,
+      "end": 1916066,
+      "confidence": 0.8448967,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Ja, ist korrekt, aber ich glaube, outperformen ist noch okay.",
+      "start": 1916258,
+      "end": 1918602,
+      "confidence": 0.820046,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Out zu performen, okay. Aber was lernen wir jetzt aus diesem ganzen Paper? Du hast ja den Clickbait Titel sehr cool gefunden, hast drum reingelesen. Was hast du gelernt? Was sagen uns die Autoren, was wir zu lernen haben?",
+      "start": 1918706,
+      "end": 1931874,
+      "confidence": 0.9249736,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Wenn wir mal von einer gewissen Flughöhe die ganze Sache betrachten, würde ich sagen, verteilte Systeme sind einfach wirklich super schwierig, ÿousand. Und verteilte Systeme sind auch nicht immer die Lösung für dein Problem, denn das, womit wir den Podcast begonnen haben, das System skaliert nicht. Ich glaube, es gibt sehr viele Stellschrauben, wo man in Systemen, sei es verteilt oder nicht verteilt, noch drehen kann. Denn die Target Hardware selbst hat verschiedene Trade offs, Kapazität, Speicherkapazität, Netzwerkdurchsatz und so weiter. Und je nachdem, welche Tage hat, wer man hat, unterscheidet die sich ja wirklich. Wenn wir jetzt hier, hier sprechen wir, Achtung, wir sprechen hier wirklich um Computation und nicht um Storage verteilen. Das bedeutet, dass Storage Kapazität und Netzwerkdurchsatz vielleicht gar nicht so relevant sind, sondern eher die High Clock Frequency der CPU könnte einen Unterschied machen. Und natürlich, dass es auch für den Software System, dass die Implementierung eine sehr, sehr große Rolle spielt. Sei es auf der einen Seite die gewählte Programmiersprache, hat die gewählte Programmiersprache eine Garbage Collection, Memory Copies und so weiter. Deswegen wurden die Tests ja wahrscheinlich auch in C und in Rust geschrieben und nicht in Python und Java. Und dann natürlich, worauf sind sie ausgelegt? Also kenne wirklich dein Problem und frage dich, ist das wirklich hier eine relevante Implementierung? Wo man hingegen natürlich auch auf der anderen Seite sagen muss, ist mein Algorithmus nicht schon gut genug? Und das meine ich jetzt sehr generalisiert, ist, dass man doch mal hinterfragen sollte, brauche ich denn hier eigentlich ein verteiltes System? Brauche ich eigentlich mehr Nodes? Zumindest wenn es um die Beschleunigung einer Computation geht. Zweitausendein, wenn man es nur darauf sieht. Ich denke, dass Single Threaded Implementierungen oft einfacher zu verstehen sind, wie dieses Paper zeigt. Sie können unter Umständen schneller sein, hat natürlich andere Trade offs, aber da kommen wir gleich zu. Und jetzt, Wolfgang, jetzt ist die Zeit gekommen, lass deine Kritik los. Ich weiß, dir brennt das ja schon unter den Fingernägeln, deswegen deine Meinung zum Paper. Please roast this paper.",
+      "start": 1931962,
+      "end": 2050350,
+      "confidence": 0.9063673,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Ja, sie haben ja schon die ganze Episode zurückhalten müssen, wie du immer Wissenschaftler zweitausendein gesagt hast, weil sogar da würde ich ein großes Fragezeichen dran machen. Also vielleicht auch, wie ich das grundsätzlich angegangen bin am Anfang. Also vielleicht auch noch mal das, was wir in Episode 128 auch ein bisschen angeschnitten haben, was ich immer als erstes mache, ich probiere mal rauszufinden, wenn mir der Andi da so ein komisches Paper schickt, was ja einen coolen Titel hat, das kurz einzuordnen, woher dieses Paper kommt, weil es natürlich schon relevant, wer dieses PDF geschrieben hat und ob das bei irgendeiner Konferenz rausgekommen ist, zweitausendein, was für einen Weg dieses Paper genommen hat. Und als erstes habe ich mal diese drei Adoren gecheckt. Da steht überall an Affiliate dabei, also unklar, wo die gearbeitet haben, bei welcher Uni oder ob da eine Firma dahinter steht. Dann steht da irgendwas in Fußnoten. Okay, Microsoft Research und Google und so weiter. Also es scheinen schon aus dem Kontext zu kommen, wenn man die kurz googelt. Es sind auch Leute, die die von den großen Ÿousand tech Unternehmen definitiv kommen.",
+      "start": 2050430,
+      "end": 2115392,
+      "confidence": 0.9080248,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Ja, aber du wirfst das jetzt hier gerade völlig durcheinander, meines Erachtens nach. Du hast nicht unrecht, du hast aber auch nicht recht. Und zwar steht in den Fußnoten einer von den Autoren, einer von drei war zu der Zeit des Papers bei Microsoft Research dabei und bei dem ein anderer von diesen drei Autoren steht, zu der Zeit des Papers war er unaffiliated zweitausendein und arbeitet jetzt bei Google. Das muss man jetzt natürlich unterscheiden. Das bedeutet, der Google Employee zum Teil des Researches war kein Google Employee.",
+      "start": 2115496,
+      "end": 2149326,
+      "confidence": 0.9095503,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Ja, das ist mir ja auch gar nicht so wichtig, wann der bei Google war oder so weiter. Es geht ja nur darum, woher kommen diese Add on? Das ist einfach so eine grundsätzliche Einordnung. Meiner Meinung nach ist es nicht so wichtig, weil es kann auch unaffiliated Leute sehr gute Paper schreiben. Gibt es auch durchaus immer wieder. Also das ist eigentlich kein Problem. Als nächstes schauen wir normalerweise die Konferenz an. Die steht bei so einem Paper üblicherweise ganz links unten auf der ersten Webseite. Sorry, auf der ersten PDF Seite vom Paper, da steht nichts. Da habe ich mir schon mal gedacht, Moment, was schickt mir der Andi da, das ist einfach irgendwie dahergelaufenes PDF oder gibt es da irgendwie Peer Review oder sonst irgendwas? Also habe ich schnell mal diesen Titel gegoogelt, dann kommt man auf die SEM Seite, also ist schon ein offiziell published PDF von der Konferenz. Dann habe ich die Konferenz mal gegoogelt. Das scheint auch grundsätzlich ein Ding zu sein, was existiert, sagen wir es mal so, wo auch große Firmen involviert sind. Ich habe dann sehr schnell gesehen, es ist gar keine Konferenz, sondern nur ein Workshop. Also auch da hat man gleich mal den Unterschied, weil eine Konferenz normal sehr viel höhere Anforderungen hat als ein Workshop. Das ist also ein Workshop, der sich nennt Workshop on Hot Topics in operating Systems. Wenn man sich das Programmkomitee anschaut, da sind die ganzen großen Firmen dabei, wie Amware, ganz viel Google, Microsoft. Natürlich ist der ganze Workshop auch gesponsert von Google als Hauptsponsor, also damit vielleicht auch irgendwo Nähe. Und da bringt man natürlich die eigenen Leute auch gerne unter. Ist jetzt, muss gar nicht schlechtes sein, also macht schon einen soliden Eindruck, ist jetzt nichts komplett unbekanntes, dahergelaufenes, aber muss man natürlich auch immer in dem Kontext sehen. Ist jetzt keine klassische wissenschaftliche Konferenz, wo ganz hohe wissenschaftliche Standards angesetzt werden, sondern es ist ein Workshop. Also das war jetzt mein erster Eindruck von dem Paper, den ich so, bevor ich überhaupt was gelesen habe, mir mal geholt habe, um das einzuschätzen, bevor ich überhaupt anfange zu lesen. Wie war dein erster Eindruck?",
+      "start": 2149398,
+      "end": 2270092,
+      "confidence": 0.8984628,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Mein allererster Eindruck, bevor ich es gelesen habe, oh, das ist schon ein praktisches Problem. Endlich mal jemand, der sich mit etwas Relevantem auseinandersetzt und was man wirklich jetzt mal anwenden kann und sofort in die Praxis übernehmen kann. Deswegen habe ich es mir auch angesehen, deswegen habe ich es ja auch gepitcht und und es ist ein guter Grundgedanke. Ich finde, sich mit dem Thema zu beschäftigen ist super, denn es bringt hoffentlich uns alle etwas mal zum Nachdenken und bringt die Frage auf, brauche ich jetzt wirklich hier ein verteiltes System? Brauche ich jetzt hier parallele Computation und so weiter? Da würde ich sagen okay. Mein zweiter Gedanke war, als ich das Paper gelesen habe, alter Vater, die Ausführung ist meines Erachtens nach jetzt nicht so gut. Also da muss aber mal ein bisschen im Handwerk nachgecatet werden. Also hier und jetzt hier mal meine Kritik. Ich sage jetzt Wissenschaftler, ich habe die Leute jetzt nicht so hart gegoogelt, denn ich habe einfach nicht die akademische Erfahrung, die du jetzt gerade in den Tag gebracht hast. Aber ich muss zugeben, als als praxisorientierter Mensch, also erstens die Datasets sind da doch relativ klein, meines Erachtens. Nach dann es werden wirklich teilweise Äpfel mit Bieren verglichen. Ja, es werden einfach mal ratzfatz komplette Algorithmen ausgetauscht, wie z.B. dieser Label Propagation Algorithmus mit dem Union find Algorithmus und dann sagen, ja, wir haben eine Optimierung und outperformen jetzt einfach mal andere Systeme. Dann muss man sagen, es werden nicht immer alle Testergebnisse von allen Systemen dargestellt, sondern ich habe so das Gefühl, ach ja, für diesen einen Test nutzen wir nur drei Systeme und stellen die Zahlen dar. Ÿousand, das klingt so ein bisschen so, als hätten die sich nach den Systemen ausgesucht, die dann ihre Ergebnisse gut darstellen lassen. Also so ein bisschen Cherry Picking, was wiederum gut ist, dass die Implementierung, die Single Threaded Implementierung von der Rust Version und der C Version Open Source gestellt haben. Verlinken wir auch in den Show Notes, wer sich den Code mal ansehen möchte. Und was man auch zugutehalten muss, ganz am Anfang in der Methodik von Paper sagen sie so eine Art Disclaimer, die Vergleiche sind weder perfekt noch immer fair, aber die Schlussfolgerungen sind so dramatisch, dass sie Anlass zur Sorge geben. Ich habe gerade das Paper zitiert, da muss ich schon zugeben, wenn du das in der Methodik also wirklich ganz am Anfang sagst, dann frage ich mich so, okay, welchen wissenschaftlichen Ansatz hat das denn jetzt hier? Also ich glaube, die sind sich da schon selbstbewusst, dass das kein hochwissenschaftlicher Ansatz ist und dass da wirklich noch, ich sag mal, Nachholbedarf ist. Und als finale Kritik, die Autoren haben einen unfairen Vorteil meines Erachtens nach, der eigentlich zu keinem anderen Ergebnis hätte führen können, denn sie vergleichen ihre spezialisierte Lösung, sie implementieren Single Threaded ganz speziell auf ihr Problem mit anderen General purpose Systemen, weil nicht jeder, der Apache flink einsetzt, berechnet den Patreon Algorithmus. Und das ist, finde ich, so ein unfairer Vorteil, besonders im Speziellen, wo sie ihre Algorithmen optimieren.",
+      "start": 2270196,
+      "end": 2443732,
+      "confidence": 0.908864,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Da gebe dir vollkommen recht, wobei man natürlich auch schon sagen muss, in der Realität ist es vielleicht am ehesten, mit was man sich vergleichen kann. Also rein wissenschaftlich ist es meiner Meinung nach Bullshit, aber in der Realität hast du vielleicht die Entscheidung, habe ich jetzt Spezialisten, Spezialistinnen, die sich da hinsetzen können, den optimieren können, den Algorithmus oder will ich einfach schnell eine Lösung finden und schmeißt dieses Problem in so eine general purpose Verteilungsgeschichte rein, damit die eben wenig Zeit investieren muss. Also von von dem her rein vom Praxisansatz könnte mir noch am ehesten vorstellen, dass der in Firmen gelebt wird. Aber du hast natürlich vollkommen recht, ich vergleiche da einfach Äpfel mit Birnen, weil das ein Riesenschiff ist, was für die Verteilung gedacht ist und höchstwahrscheinlich auch für einen ganz anderen Anwendungsfall, weil diese Spark z.B. das ist dafür gedacht, dass das hoch verteilt auf mehreren Maschinen läuft und nicht auf mehreren Cores, nur auf einem System. Was wir übrigens nicht wissen, das ist ein anderes Riesenproblem. Also da spreche ich gar nicht von Wissenschaft, da spreche ich von jedem Blogeintrag. Wenn ich einen Performance Test mache und irgendwie ihn vergleicht, dann muss ich doch reinschreiben, was ich da für Hardware verwende. Also ich kann ihnen einfach sagen, ich verwende 128 Cores und nicht mal spezifizieren, ist es ein Sockhol, sind es mehrere Socke, sind es mehrere Nodes, sind die netzwerkverbunden, also was ist das System dahinter? Also das sind so Grundlagen, die meiner Meinung nach in jeden Vergleich hineingehören. Sei es, ob das ein schwindeliger Blogpost ist oder ein wissenschaftliches Paper. Das sind so Grundregeln und was ich glaube, im Werkzeugkoffer von jedem Wissenschaftler eigentlich drin sein muss, dass man so was auf jeden Fall macht. Also das verstehe ich überhaupt nicht, warum man sowas eigentlich nicht erwähnt.",
+      "start": 2443836,
+      "end": 2545784,
+      "confidence": 0.89598817,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "100 % Zustimmung meinerseits. Und deswegen habe ich weitergehend ein bisschen recherchiert. Und zwar hat einer der Autoren sein Paper auch noch mal einen Blogartikel verfasst und in dem Blogartikel steht dann drin, hey, Achtung, es ist natürlich abhängig davon, welche Instanzen du auf Amazon nutzt, EC Instanzen und so weiter und welche Konfiguration dann nutzt. Das wiederum steht aber gar nicht im wissenschaftlichen Paper drin, sondern in einer anderen Quelle, auch von dem Autor, in einem Blogpost von ihm. Und da spezifiziert er, also da relativiert er die ganze Thematik noch mal so ein bisschen. Aber ich finde es halt schade, dass es nicht im Paper drin steht. Also ich sag mal auf und ehrlich, die Reproduzierbarkeit, obwohl die Implementierung zwar open source sind, ist einfach nicht gegeben.",
+      "start": 2545872,
+      "end": 2585808,
+      "confidence": 0.9103868,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Und was ich mir dann auch noch so gedacht habe, also erstens mal, um deinen Bachelor aufzuwerten, ich glaube, das wäre bei jeder Bachelorarbeit, wird dir das um die Ohren geschmissen, so eine Evaluierung. Also das geht wirklich nicht durch auf Bachelor Niveau. Einer hat übrigens, oder mindestens einer hat ein PhD von Stanford. Also nur um das einzuordnen, das Ganze. Also das finde ich schon sehr schwach.",
+      "start": 2585864,
+      "end": 2607514,
+      "confidence": 0.8952806,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Für mich wäre es eher peinlich, sowas abzugeben, weil das hier, als ich das gelesen habe, habe ich gedacht, ganz im Ernst, manche Design Dokuments in Firmen, die ich gelesen habe, sind detaillierter als das hier.",
+      "start": 2607642,
+      "end": 2620210,
+      "confidence": 0.9189047,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Ich habe aber auch geschaut, wie das Paper grundsätzlich angekommen ist. Also du bist ja mehr der Typ, der wahrscheinlich auf Hacker News mal reinschaut und checkt, ob das Paper gut ankommt.",
+      "start": 2620370,
+      "end": 2629242,
+      "confidence": 0.9429128,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Wo kann man das schauen, dass ein Paper in der wissenschaftlichen Community gut ankommt?",
+      "start": 2629346,
+      "end": 2633720,
+      "confidence": 0.90963143,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Ja, so was ich gemacht habe, ich bin auf Google Scholar gegangen und habe mir dieses Paper rausgesucht. Und bei Google Scholar steht auch dabei, wie oft das Paper zitiert wurde. In dem Fall 469 mal, was eigentlich schon okay ist, würde ich sagen. Also schon eine höhere Zahl an sich. Und man kann sich dann die Papers natürlich auch anschauen, aber ehrlich gesagt, ich glaube, dass die meisten das referenzieren, einfach weil es ein cooler Titel ist. Und vielleicht so die Grundidee, wie du auch erwähnt hast, ist ganz nett, ÿousand, aber ehrlich gesagt, also ich kann mich da an mein Studium erinnern, Einführung in die parallele Entwicklung oder parallel systems, keine Ahnung mehr, wie es genau geheißen hat, wo wir einfach so klassische Algorithmen auch getestet haben. Single Core, was ist Multi Core, verteilt über Netzwerke, wo einfach du hast dein Speedup und der Speedup ist eigentlich das wichtigste. Also speedup bedeutet, wie viel schneller bist du jetzt z.B. mit zwei Cores. Und der ideale Speedup ist natürlich zwei, also zwei Cores zweimal so schnell wie mit einem Core. Und üblicherweise geht das Speedup nach unten. Wenn du 100 Cores drauf wirst, hast du nicht mehr 100 mal schnellere Abarbeitung von dem Algorithmus. Also da gibt es eine Metrik, die total verbreitet ist, überall angewandt wird. Sogar in dem Paper haben sie einen Graph drinnen mit Speedup. Also warum brauche ich da irgendwie so eine neue Metrik, die kommt halt von der anderen Richtung, kann ich mal über den Speedup aber eigentlich auch ausrechnen. Also ich verstehe nicht ganz den Sinn. Ist ein nettes Paper, die Grundidee, aber meiner Meinung nach schlecht ausgeführt. Und ja, die Grundlage gibt es eigentlich schon, wie man Algorithmen vergleicht. Und in dem Zuge ist mir auch eingefallen in meinem Studium, dass wir z.B. openMP verwendet haben oder OpenMPI. Und das wäre dann viel eher eigentlich etwas, was du vergleichend verwenden kannst, weil das ist ein Framework, was deinen Code z.B. automatisiert auf mehrere Cores verteilt. Also da hast du eine Schleife in deinem Code und kannst so Annotationen setzen, dass z.B. diese Schleife auf mehrere Chors verteilt werden kann, wieder die Memory Struktur ist, ob du da shared memory hast oder nicht und so weiter bei den Variablen. Und dann wird es eben automatisch im Hintergrund verteilt. Also das wäre eigentlich viel fairer, sowas zu vergleichen. Meine hochoptimierte Single Threaded Implementierung versus OpenMP, was ich draufsetze oder OpenMPI, das wäre das ganze dann über mehrere Nodes verteilt, ob das schneller ist. Und das sind wirklich paar Zeilen Code, die man da nur einfügt und ist natürlich viel optimierter und hochperformanter als so ein Spark, was ein riesen Monster ist, was ich überhaupt mal zum Laufen kriegen muss und wo Speichertechnologien noch mit dabei sind und Indexstrukturen gebaut werden und keine Ahnung. Es ist ein riesen Monster und ich vergleiche das mit einem simplen Algorithmus. Also das ist einfach unfair. Und openmp wäre dann Zweitausendein meiner Meinung nach z.B. eine Möglichkeit, um einen fairen Vergleich zu machen, weil es auch ohne großes Wissen noch möglich ist, da was zu verteilen.",
+      "start": 2633810,
+      "end": 2809116,
+      "confidence": 0.9049057,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Wohingegen natürlich auch in dem Paper gesagt wird, dass Optimierungen sehr viel bringen, wie du deine Daten partitionierst. Und da stellt sich natürlich die Frage, ob Frameworks wie OpenMP oder OpenMPI, das, was du gerade genannt hast, diese Optimierung wirklich machen können. Denn diese Frameworks sind halt General Purpose Frameworks. Und Ÿousand, wie du deine Daten auf mehrere CPUs oder mehr Nodes partitioniert, also eigentlich die Berechnung wirklich verteilst und teile und herrsche, Map and Reduce, blablabla, ist natürlich schon ein hochspezialisiertes Problem deiner eigenen Domäne.",
+      "start": 2809228,
+      "end": 2841538,
+      "confidence": 0.87161607,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Das stimmt natürlich, aber gerade die General purpose Systeme, die agieren wahrscheinlich auf einer Multi Core Architektur gleich wie wenn du sie auf fünf Servern laufen lassen würdest. Das heißt, die kommunizieren wahrscheinlich über IP untereinander. Also ich weiß gar nicht, ob die so eine zweitausendein Implementierung haben, dass die überhaupt Multi Core Shared Memory ausnutzen, was natürlich ein Open MP schon macht. Also da kannst du dann viel mehr rausholen, ohne da jetzt extrem viel Zeit zu investieren.",
+      "start": 2841634,
+      "end": 2869128,
+      "confidence": 0.8998561,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Wenn ich dir aber nun zuhören, sagst du aus der wissenschaftlichen Perspektive setzen sechs, aus der praktischen Perspektive sagst du, okay, warum brauchen wir jetzt eine neue Metrik? Und ich hatte ja auch gesagt, der Grundgedanke finde ich sehr schön, die ganze Sache thematisch einfach mal zu challengen. Würdest du da zustimmen, dass der Grundgedanke aus der praktischen Perspektive gar nicht so doof ist?",
+      "start": 2869184,
+      "end": 2890828,
+      "confidence": 0.9287375,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Ja, also ich glaube, das haben wir auch in ganz vielen Episoden schon besprochen. Ich persönlich bin ja ein großer Fan von etwas nicht zu verteilen, solange es möglich ist, auf einem no zu halten. Wenn das irgendwie geht, bleib auf einem Knoten, weil verteilen einfach super kompliziert ist. Und Verteilung meine ich jetzt aber auf mehrere Knoten, also auf mehrere Server, mehrere Computer verteilen auf einer Multi Core Architektur, wenn da vier CPUs drin stecken in so einem Server, finde Multithreading ist dann wesentlich weniger komplex, als jetzt irgendwie Verteilung über mehrere Systeme zu erreichen. Also ich finde, da kann man dann schon auf Multi Core gehen, um einen Speedup zu haben, wenn man überhaupt braucht. Und da ist natürlich die Frage, braucht man den, wenn man in solche speziellen Probleme reingeht? Ja, braucht man wahrscheinlich bei ganz vielen Anwendungen braucht man das nicht. Und das premature Optimization, dass ich schon zu früh auf so eine Verteilung gehe, ist sicher ein großes Problem. Aber ob mir da jetzt diese Metrik Cost irgendwie hilft, weil der doch auf Algorithmus Ebene dann passiert, ja, ich glaube weniger, ehrlich gesagt.",
+      "start": 2890924,
+      "end": 2953168,
+      "confidence": 0.8830572,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Wohingegen man natürlich sagen muss, das was du gerade gesagt hast, muss man ein bisschen spezifizieren. Multi Node ist deutlich komplexer als multi threaded. Auf einer Node auf mehreren CPUs zu laufen, ist deutlich komplexer als Single threaded. Und mit Komplexität meine ich natürlich nicht nur Overhead im Netzwerktransfer und so weiter, sondern auch einfach in der kognitiven Load eines Entwicklers oder einer Entwicklerin, wenn ich einen sequentiellen Source Code habe, der nicht auf mehreren Threads läuft. Dieser Source Code ist natürlich einfacher zu verstehen, als wenn ich jetzt hier Parallelisierung betreibe mit Databases und all das, was da Deadlocks und all das, was dann noch natürlich noch dazu kommen kann. Die zweite Thematik ist natürlich premature Optimization, was du genannt hast. Da gibt es natürlich auch so ein paar Blogposts, verlinken wir auch in den Show Notes, wo jemand gezeigt hat, dass ein Command Line Tool 205 und dreiig mal schneller sein kann als dein Hadoop Cluster. Ist natürlich auch ein Marketing Claim oder ein Clickbait, weil es kommt natürlich ganz klar darauf an, was machst du mit deinem Hadoop Cluster, was berechnest du da aus?",
+      "start": 2953304,
+      "end": 3013386,
+      "confidence": 0.90488493,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Und der Aspekt mit der Komplexität von Verteilung, der hat auch noch eine andere Seite meiner Meinung nach, weil es ist ja heute so, dass Arbeitskraft sehr teuer ist. Also ich habe Entwickler innen, die kosten sehr viel und da ist die Frage, wie setze ich diese Personen diese Zeit sinnvoll ein? Und es kann natürlich sein, dass sie mit einem General Purpose Framework sehr schnell irgendwas verteilen kann, das mir dann auch vielleicht was bringt, weil es einfach über viele Knoten verteile, ganz große Datenmengen habe, die vielleicht gar nicht in meinem hauptspeicher Platz haben. Das heißt, es ist da vielleicht schneller. Man muss auch dazu sagen, diese hochspezifischen Optimierungen, die auch im Paper durchgeführt haben, da brauche ich ja auch Spezialistinnen, die das überhaupt verstehen, die wissen, wie kann ich denn meinen Graph Algorithmus noch hoch optimierter machen auf meinem Single Threaded System. Also auch da brauche ich erstmal die Leute dazu, die Zeit. Also da muss man schon abwägen, wie setzt man denn die Zeit ein? Früher war das ein anderes Thema, da war die Hardware viel, viel teurer, zweitausendein, da hat man viel mehr Hardware Optimierungen gemacht, sei es vertikal oder horizontal in der Skalierung. Also auch die Grundidee von Google war ja damals, um den PageRank zu parallelisieren, möglichst billige Standard Hardware zu haben und dann mit MapReduce auf ganz viele Computer zu verteilen, weil die Hardware einfach teuer war und die das erste mal auf diese billigen PCs, wie sie so fast überall herumstehen, gegangen sind. Also das war ja auch so ein Ansatz, noch viel früher, so in der Datenbankwelt, in den ERN, da waren die Server natürlich super teuer, da waren die Menschen im Vergleich billiger, dann hat man lieber mehr Menschen auf ein Problem geworfen, anstatt zu skalieren auf der Hardware Seite. Das hat sich heutzutage alles umgedreht. Das heißt, die Menschen sind die teure, ich weiß, du magst das Wort nicht, Ressource, aber es geht ja auch um die Menschen, dass die sinnvoll ihre Zeit verwenden. Und dementsprechend muss ich mir einfach überlegen, wie setze ich die Leute am besten ein und gehe ich da in irgendeinen Rabbit Hole von der Verteilung, von der Optimierung auf einem Single thread oder kann ich einfach mit OpenMP das vielleicht auf drei Cores verteilen und es ist dann schneller. Oder ich nehme sogar irgendein Spark System und das ist vielleicht im Gesamten teurer. Ich brauche mehr Computer, mehr Ressourcen, aber die sind immer noch billiger, als wenn sich eine Entwicklerin hinsetzt und probiert, den Algorithmus zu optimieren über drei Wochen.",
+      "start": 3013458,
+      "end": 3154180,
+      "confidence": 0.91638625,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Da bin ich ja voll und ganz bei dir. Und da kommen wir mal zu dem finalen Punkt, was können wir denn jetzt aus der Praxis, aus diesem Paper lernen? Und da hast du einen wundervollen Punkt angesprochen. Im Firmenumfeld ist das hier natürlich alles ein riesiger Trade off. Da kommt es nämlich zu der Frage, haben wir schon Software im Einsatz? Haben wir vielleicht schon apache Flink, apache Spark oder irgendwas im Einsatz? Wie sieht es aus mit der Neuentwicklung einer Inhouse Entwicklung versus die Nutzung einer fertigen Open Source Software? Wie sieht das Know how der Mitarbeiter aus? Und mit Know How der Mitarbeiter meine ich nicht nur, kann ich vielleicht nicht sogar spezifische Leute mit einem spezifischen Wissen zu apache Flink und so weiter einstellen, weil wenn ich mich mit apache Flink auskenne, dann ist die Theorie, dass man die Leute schneller onboarden kann, als wenn man sie in einer Eigenentwicklung onboarden muss. Dann single threaded. Wir sprechen die ganze Zeit drüber, wie sieht es denn mit fault tolerance aus? Was ist denn, wenn die Kiste, auf der der Computation läuft, einfach mal abschmiert? Da ist man natürlich bei einem verteilten System. Ÿousand ganz andere Thematiken. Oder wie sieht das mit dem Budget aus? Also ist Geld wirklich mein Constraint hier oder kann ich einfach Amazon Geld in den Rachen schmeißen und einfach 10 EC Instanzen hochfahren? Ist ein riesiger Trade off. Aber was mich wieder zum Nachdenken bringt hier ist, Proof of Concepts scheinen wirklich die einzige Methode zu sein, solche Art von Systemen zu bauen. Denn Theorie hin oder her, du musst deine Algorithmen zweitausendein auf deiner Hardware mit deinen Datensätzen und mit deinem Datenvolumen testen. Und proof of Concepts, zumindest bei Projekten einer gewissen Größe, wo sich das lohnt, inkludieren auch, dass man verschiedene Lösungen gegeneinander testet. Das bedeutet, in diesem Fall könnte man Single Threaded versus apache Spark testen oder ähnliches. Und dass man wirklich ein Resultat unter seinen Gegebenheiten herbeiführt. Denn machen wir uns nichts vor, das Paper spezifiziert ja kaum was zur Reproduzierbarkeit, welche Nodes wurden genutzt, welche CPU, mit welcher Taktfrequenz und so weiter und so fort. Die sagen zwar dieses Dataset und diese Systeme, aber ich würde mal sagen, wenn ich mir dieses Paper nehmen würde und würde das auf Instanzen von Google Cloud und Azure und EC oder auf meiner selbstspezialisierten Hardware oder vielleicht auf einem IBM Mainframe laufen lassen, ich glaube, dann komme ich zu anderen Resultaten.",
+      "start": 3154520,
+      "end": 3290316,
+      "confidence": 0.9087195,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Ich glaube, wenn ihr das richtig im Kopf habe, das Paper erwähnt ja auch, dass es auf irgendeinem Laptop eigentlich das oder das ist die einzige Angabe.",
+      "start": 3290388,
+      "end": 3296262,
+      "confidence": 0.8196263,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Die Single Threaded Tests machen sie auf einem normalen MacBook. Das MacBook wird nicht im Paper erwähnt, sondern in einem anderen Blogpost, einem MacBook von 2000 vierzehnte.",
+      "start": 3296366,
+      "end": 3305486,
+      "confidence": 0.91835076,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Also auch da wieder, da denke ich mir, warum nehme ich nicht die gleiche Hardware zum testen? Also ich verstehe das allgemein nicht, aber wie du richtig sagst, selber testen ist sicher das beste. Wobei auch da wieder die Grundsatzfrage für mich stellt sich, bin ich überhaupt an dem Punkt angekommen, wo ich überhaupt Verteilung brauche? Also habe ich überhaupt ein Performance Problem, bevor ich dieses Performance Problem nicht sehe? Vielleicht in der nahen Zukunft. Zumindest brauche ich meiner Meinung nach mir keine Gedanken machen und ich muss auch wissen, was habe ich überhaupt für ein Problem? Manche Probleme eignen sich sehr gut zum Verteilen. Graph Probleme sind schwieriger, weil sie so Abhängigkeiten haben. Wenn du z.B. eben Labels propagierst an deine Nachbarn, dadurch hast du so diese Abhängigkeiten und ganz viel Kommunikation zwischen den Threads, Prozessen auf verschiedenen Nodes, wie das auch immer ist. Wenn du ein ganz klassisches Batch Processing hast, wo du, keine Ahnung, irgendwelche Wörter raussuchst, um den Index aufzubauen, das kannst du komplett unabhängig auf allen Nodes ausrollen und die Ergebnisse werden am Schluss wieder zusammen gesammelt, gemerged und dann hast du ein super Speedup. Also es ist wirklich auch abhängig davon, wie dein Problem eigentlich aufgebaut ist. Und die haben in dem Fall ein Problem genommen mit Graphen zweitausendein, deshalb hoch connected ist und dadurch beim Verteilen auch ganz klassisch Probleme bringt. Also auch da ist wieder die Frage, ist es das richtige Problem, was sie genommen haben oder hätten sie nicht vielleicht zumindest andere Probleme auch vergleichen können, als nur die Graph Problematik.",
+      "start": 3305558,
+      "end": 3388746,
+      "confidence": 0.91089433,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Wichtige Frage, brauchen wir Verteilung? Aber wie ich gerade gesagt habe, ich denke, es kommt auch auf das Umfeld drauf an. Bist du alleine oder bist du in einer Firma, die ein Plattformteam hat, die nur dann deine verteilte Berechnung auf apache Spark hat, weil die Firma alles auf apache Spark hat. Zweitausendein, auch wenn ich dann keine Verteilung brauche, ist es gegebenenfalls für die Firma vorteilhafter, den Algorithmus einfach in apache Spark zu implementieren, weil das dann drei Teams übernehmen können. Also ich glaube, das ist ein riesen Trade off, den man hier einfach fragen muss, wie ist meine Situation?",
+      "start": 3388818,
+      "end": 3416920,
+      "confidence": 0.9195786,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Es gibt ja auch automatische Optimierung und Parallelisierung. Also es gibt einerseits Framework, die das machen, aber wenn ich jetzt ganz dumm nachdenke, ich speichere meinen Graphen in eine Datenbank, dann gibt es da Indexstrukturen im Hintergrund, die Datenbank macht auch parallele Berechnungen und da brauche ich gar nichts machen. Ich schreibe das einfach in SQL runter und im Idealfall optimiert mir das meine Datenbank. Keine Ahnung, ob das jetzt sehr schnell ist, wage ich mal zu bezweifeln, aber bei manch anderen Problemen ist es schon Parallelisierung, die ich out of the box bekomme. Also auch da wieder, vielleicht gibt es andere Möglichkeiten, ich muss nicht alles selber parallelisieren und selber programmieren.",
+      "start": 3417040,
+      "end": 3451012,
+      "confidence": 0.90074193,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Wenn ihr auch mal wissen wollt, wie zumindest nach Wolframs Meinung ein wissenschaftlich unterirdisches Paper aussieht, links findet ihr natürlich wie immer in den Show Notes.",
+      "start": 3451076,
+      "end": 3460448,
+      "confidence": 0.91642654,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Wir hoffen, ich freue mich jetzt schon, wenn irgendjemand Papers von mir ausgrabt, die komplett unter jeder Sau sind.",
+      "start": 3460584,
+      "end": 3467024,
+      "confidence": 0.9405932,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Naja, aber das hast du ja initial gesagt, gehört zur Wissenschaft dazu.",
+      "start": 3467112,
+      "end": 3470616,
+      "confidence": 0.93267334,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Genau.",
+      "start": 3470728,
+      "end": 3471248,
+      "confidence": 0.83259,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Wir hoffen, euch hat dieses Papers we love Format gefallen. Dieses Paper lieben wir anscheinend nicht so, aber netter Grundgedanke. Und zum Abschluss, Wolfgang, wie hat dir diese Art von neues Format gefallen? Ÿousand, denkst du, in Zukunft werden wir mehrere Papers besprechen?",
+      "start": 3471344,
+      "end": 3488582,
+      "confidence": 0.9560628,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "In dem Fall war es ja ziemlich einfach, weil das Paper nicht sehr gut war. Schwieriger wird es dann mit Papers, die eigentlich gut sind, wo es danach schwieriger ist, was zu verstehen. Und ich finde diese Challenge eigentlich ganz cool, wenn man so in Papers eintaucht. Und wenn du mal noch mit mehr Papers um die Ecke kommst, bin immer bereit, gerne da was dagegen zu halten. Was natürlich auch ein Aufruf eigentlich an alle ist, falls ihr irgendwie interessante Papers habt, zweitausendein, die wir mal durch besprechen können. Ich werde natürlich auch in meine Paper tiefen absteigen. Vielleicht habe ich auch ein gutes Paper mal für dich, Andy, das wir dann in diesem Format besprechen können.",
+      "start": 3488726,
+      "end": 3523140,
+      "confidence": 0.919965,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Der letzte Satz war mir sehr wichtig, denn du hast angefangen, wenn du mit Papers ankommst, das hat sich in meinem Kopf übersetzt. Wenn du die Arbeit mal reinsteckst, dann stelle ich mich hier gerne dazu und lassen.",
+      "start": 3523260,
+      "end": 3533780,
+      "confidence": 0.9413421,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Du kommst ja dann immer mit Papers um die Ecke, wo du nur einen Clickbait Titel hast, wo du keine Clickbait Titel willst und dann einfach sagst Hey, besprechen wir mal dieses Thema.",
+      "start": 3533820,
+      "end": 3541698,
+      "confidence": 0.88268185,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Ich bespreche lieber ein Clickbait Paper, was zumindest halb ein wissenschaftliches Paper ist, als ein Clickbait Bild Artikel.",
+      "start": 3541804,
+      "end": 3547902,
+      "confidence": 0.8600061,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Ist definitiv ein guter Punkt. Ja, aber wir können mal so ein VLTB Paper oder so nehmen, so ein ordentliches 40 seitiges Paper, was so ein Algorithmus um 0,00008 % verbessert, in einem ganz speziellen Bereich. Wenn wir dann die drei Wochen Vorbereitung hinter uns haben, können wir dann die Episode machen.",
+      "start": 3548006,
+      "end": 3564974,
+      "confidence": 0.88440424,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Ich wollte schon sagen, Schuster, Bleib bei deinen live. Ich glaube nicht, dass ich da kognitiv auf der Höhe bin, ein solches Paper zu verstehen. Das war's von uns. Wir hoffen, ihr hattet ein bisschen Spaß. Wir hören uns bei der nächsten Episode. Und falls euch dieses Format gefallen hat, gebt uns doch mal Kaffee aus. Bei mir erst a Coffeelink ist in den Show Notes, weil ohne Kaffee werde ich das nächste Paper nicht überstehen. Vielen Dank, bis zum nächsten Mal und tschüss.",
+      "start": 3565062,
+      "end": 3588616,
+      "confidence": 0.8669406,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Ciao.",
+      "start": 3588728,
+      "end": 3588960,
+      "confidence": 0.40671,
+      "speaker": "B",
+      "channel": null
+    }
+  ],
+  "confidence": 0.90440744,
+  "audio_duration": 3536,
+  "webhook_status_code": null,
+  "webhook_auth": false,
+  "summary": null,
+  "auto_highlights_result": null,
+  "content_safety_labels": null,
+  "chapters": null,
+  "sentiment_analysis_results": null,
+  "entities": null
+}
