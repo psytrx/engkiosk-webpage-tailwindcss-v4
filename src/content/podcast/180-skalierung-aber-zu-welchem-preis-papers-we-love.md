@@ -81,7 +81,9 @@ speaker:
 - name: Wolfi Gassler
     transcriptLetter: B
 spotify: https://open.spotify.com/episode/4LDXqq6VE2LAR850hmMk2V
-tags: []
+tags:
+- Software Engineering
+- Papers we love
 title: '#180 Skalierung, aber zu welchem Preis? (Papers We Love)'
 transcript_raw: ''
 transcript_slim: ''
