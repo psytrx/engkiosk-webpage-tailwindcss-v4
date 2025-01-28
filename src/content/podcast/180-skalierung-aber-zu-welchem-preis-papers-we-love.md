@@ -1,6 +1,6 @@
 ---
 advertiser: ''
-amazon_music: ''
+amazon_music: https://music.amazon.com/podcasts/c35a09fe-4116-4e04-8f68-77d61b112e46/episodes/e445f5d7-635b-43f6-b3a2-6959459d0920/engineering-kiosk-180-skalierung-aber-zu-welchem-preis-papers-we-love
 apple_podcasts: https://podcasts.apple.com/us/podcast/180-skalierung-aber-zu-welchem-preis-papers-we-love/id1603082924?i=1000686058749&uo=4
 audio: https://audio1.redcircle.com/episodes/ad97cfe4-b106-450b-8eb6-9a45ae96cc44/stream.mp3
 chapter:
