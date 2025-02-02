@@ -20,6 +20,6 @@ talks:
     bio: 'Markus is a Product Architect at Dynatrace working on building an internal platform delivering Dynatrace Services into a multi-cloud, multi-tenant environment based on Kubernetes. With 25 years of experience starting as a Java Developer, followed by many years as Software Architect he is nowadays focused on CI/CD and Kubernetes.'
     slides: '2409-markus-kuebernetes.pdf'
 participants:
-  registered: 65 
+  registered: 65
 eventId: '56tn3sricvvkvu2pe39lptmlfm'
 ---
