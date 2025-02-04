@@ -65,7 +65,7 @@ tags:
 - Karriere
 - Leadership
 title: "#33 Andy im Team Lead Bewerbungsgespr\xE4ch"
-transcript_raw: src/data/transcripts/33-transcript.zip
+transcript_raw: ''
 transcript_slim: src/data/transcripts/33-transcript-slim.json
 youtube: https://www.youtube.com/watch?v=tXlJY2PQuE4
 

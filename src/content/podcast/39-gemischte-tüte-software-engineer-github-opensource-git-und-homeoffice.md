@@ -47,7 +47,7 @@ tags:
 - Karriere
 - Remote work
 title: "#39 Gemischte T\xFCte: Software Engineer, Github, OpenSource, Git und HomeOffice"
-transcript_raw: src/data/transcripts/39-transcript.zip
+transcript_raw: ''
 transcript_slim: src/data/transcripts/39-transcript-slim.json
 youtube: https://www.youtube.com/watch?v=FYFhZmTvTnc
 

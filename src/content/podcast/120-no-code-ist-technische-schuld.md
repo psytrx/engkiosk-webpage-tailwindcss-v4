@@ -77,7 +77,7 @@ tags:
 - "Software Qualit\xE4t"
 - Automation
 title: '#120 No-Code ist technische Schuld!'
-transcript_raw: src/data/transcripts/120-transcript.zip
+transcript_raw: ''
 transcript_slim: src/data/transcripts/120-transcript-slim.json
 youtube: https://www.youtube.com/watch?v=CRAgjmnoxEk
 

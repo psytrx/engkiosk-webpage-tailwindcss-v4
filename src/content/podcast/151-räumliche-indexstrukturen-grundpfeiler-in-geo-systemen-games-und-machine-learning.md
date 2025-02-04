@@ -80,7 +80,7 @@ tags:
 - Backend
 title: "#151 R\xE4umliche Indexstrukturen: Grundpfeiler in Geo-Systemen, Games und\
   \ Machine Learning"
-transcript_raw: src/data/transcripts/151-transcript.zip
+transcript_raw: ''
 transcript_slim: src/data/transcripts/151-transcript-slim.json
 youtube: https://www.youtube.com/watch?v=aEI6L1eFUmc
 

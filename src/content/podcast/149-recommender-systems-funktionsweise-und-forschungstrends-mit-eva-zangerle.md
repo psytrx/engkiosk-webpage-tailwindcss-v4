@@ -93,7 +93,7 @@ tags:
 - Women in Tech
 - Interview
 title: '#149 Recommender Systems: Funktionsweise und Forschungstrends mit Eva Zangerle'
-transcript_raw: src/data/transcripts/149-transcript.zip
+transcript_raw: ''
 transcript_slim: src/data/transcripts/149-transcript-slim.json
 youtube: https://www.youtube.com/watch?v=g1Jb_IAYJkM
 

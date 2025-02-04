@@ -85,7 +85,7 @@ tags:
 - Software Engineering
 - Backend
 title: '#137 Die Schaltsekunde und ihre IT-Folgen: Ein Sekundenbruchteil mit Impact'
-transcript_raw: src/data/transcripts/137-transcript.zip
+transcript_raw: ''
 transcript_slim: src/data/transcripts/137-transcript-slim.json
 youtube: https://www.youtube.com/watch?v=mPlSmXSJ_F8
 

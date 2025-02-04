@@ -103,7 +103,7 @@ tags:
 - Interview
 - Women in Tech
 title: '#77 Kinder, Coding und AI: Die Zukunft der Informatik-Bildung mit Diana Knodel'
-transcript_raw: src/data/transcripts/77-transcript.zip
+transcript_raw: ''
 transcript_slim: src/data/transcripts/77-transcript-slim.json
 youtube: https://youtu.be/3-cm7QXbM8c
 

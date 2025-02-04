@@ -42,7 +42,7 @@ tags:
 - "Software Qualit\xE4t"
 title: "#174 Frontend-Engineering Metriken im Team einf\xFChren mit dem Working Draft\
   \ Podcast"
-transcript_raw: src/data/transcripts/174-transcript.zip
+transcript_raw: ''
 transcript_slim: src/data/transcripts/174-transcript-slim.json
 youtube: https://www.youtube.com/watch?v=p3mDJR_Qdeg
 

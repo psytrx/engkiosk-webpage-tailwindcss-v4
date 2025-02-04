@@ -42,7 +42,7 @@ tags:
 - Backend
 title: '#153 Wie hoste ich ein Large Language Modell (LLM) mit Kubernetes in 5 Minuten
   mit Data Science Deep Dive'
-transcript_raw: src/data/transcripts/153-transcript.zip
+transcript_raw: ''
 transcript_slim: src/data/transcripts/153-transcript-slim.json
 youtube: https://www.youtube.com/watch?v=MAkGdePUt-U
 

@@ -103,7 +103,7 @@ tags:
 - Interview
 title: '#92 Technologie trifft Deutsche Ausbildungskultur: Die moderne IT-Berufsausbildung
   mit Stefan Macke'
-transcript_raw: src/data/transcripts/92-transcript.zip
+transcript_raw: ''
 transcript_slim: src/data/transcripts/92-transcript-slim.json
 youtube: https://youtu.be/SNIl88owk-Y
 

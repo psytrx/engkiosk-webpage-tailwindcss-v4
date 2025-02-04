@@ -74,7 +74,7 @@ tags:
 - Backend
 - Software Engineering
 title: '#52 Asynchrone Verarbeitung durch Message Queues - Vor- und Nachteile'
-transcript_raw: src/data/transcripts/52-transcript.zip
+transcript_raw: ''
 transcript_slim: src/data/transcripts/52-transcript-slim.json
 youtube: https://www.youtube.com/watch?v=ew9SFEmpbOg
 

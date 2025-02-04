@@ -40,7 +40,7 @@ tags:
 - Open Source
 - Leadership
 title: '#163 Benevolent Dictator for Life (BDFL)'
-transcript_raw: src/data/transcripts/163-transcript.zip
+transcript_raw: ''
 transcript_slim: src/data/transcripts/163-transcript-slim.json
 youtube: https://www.youtube.com/watch?v=sVYwnq9fe7Q
 

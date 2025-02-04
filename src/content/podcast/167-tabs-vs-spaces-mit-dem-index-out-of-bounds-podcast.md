@@ -36,7 +36,7 @@ tags:
 - Software Engineering
 - "Software Qualit\xE4t"
 title: '#167 Tabs vs. Spaces mit dem Index out of bounds Podcast'
-transcript_raw: src/data/transcripts/167-transcript.zip
+transcript_raw: ''
 transcript_slim: src/data/transcripts/167-transcript-slim.json
 youtube: https://www.youtube.com/watch?v=ZHiLycOYVaQ
 

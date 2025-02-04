@@ -54,7 +54,7 @@ tags:
 - Cloud
 title: "#105 Cloud-Ausfallsicherheit: Die Realit\xE4t von Regionen und Availability\
   \ Zones"
-transcript_raw: src/data/transcripts/105-transcript.zip
+transcript_raw: ''
 transcript_slim: src/data/transcripts/105-transcript-slim.json
 youtube: https://www.youtube.com/watch?v=--so3WiArps
 

@@ -79,7 +79,7 @@ tags:
 - Frontend
 - Backend
 title: '#03 Over-Engineering, das Werkzeug des Teufels?'
-transcript_raw: src/data/transcripts/03-transcript.zip
+transcript_raw: ''
 transcript_slim: src/data/transcripts/03-transcript-slim.json
 youtube: https://www.youtube.com/watch?v=Rz-6wvEHi5I
 

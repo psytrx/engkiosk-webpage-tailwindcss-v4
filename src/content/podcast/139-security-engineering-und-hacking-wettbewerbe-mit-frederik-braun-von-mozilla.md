@@ -80,7 +80,7 @@ tags:
 - Interview
 - Sicherheit
 title: '#139 Security Engineering und Hacking-Wettbewerbe mit Frederik Braun von Mozilla'
-transcript_raw: src/data/transcripts/139-transcript.zip
+transcript_raw: ''
 transcript_slim: src/data/transcripts/139-transcript-slim.json
 youtube: https://www.youtube.com/watch?v=TfjSQ95Rkqg
 

@@ -64,7 +64,7 @@ tags:
 - Software Engineering
 - "Software Qualit\xE4t"
 title: "#115 Die Shift Left Philosophie: Mehr Verantwortung f\xFCr Devs"
-transcript_raw: src/data/transcripts/115-transcript.zip
+transcript_raw: ''
 transcript_slim: src/data/transcripts/115-transcript-slim.json
 youtube: https://www.youtube.com/watch?v=yofUG3LISEo
 

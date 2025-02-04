@@ -97,7 +97,7 @@ tags:
 - Interview
 - Women in Tech
 title: '#119 Der Jobwechsel: Einblick und Erfahrungsaustausch mit UNMUTE IT'
-transcript_raw: src/data/transcripts/119-transcript.zip
+transcript_raw: ''
 transcript_slim: src/data/transcripts/119-transcript-slim.json
 youtube: https://www.youtube.com/watch?v=xLQxRzNPdFs
 

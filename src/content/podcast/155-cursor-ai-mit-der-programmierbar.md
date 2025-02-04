@@ -41,7 +41,7 @@ tags:
 - "Produktivit\xE4t"
 - Software Engineering
 title: '#155 Cursor AI mit der programmier.bar'
-transcript_raw: src/data/transcripts/155-transcript.zip
+transcript_raw: ''
 transcript_slim: src/data/transcripts/155-transcript-slim.json
 youtube: https://www.youtube.com/watch?v=efI5o5FhM20
 

@@ -75,7 +75,7 @@ tags:
 - Cloud
 - Software Engineering
 title: '#67 Die Netz-Entlastung des Internets: Content Delivery Networks (CDNs)'
-transcript_raw: src/data/transcripts/67-transcript.zip
+transcript_raw: ''
 transcript_slim: src/data/transcripts/67-transcript-slim.json
 youtube: https://www.youtube.com/watch?v=blKVTNnJbkM
 

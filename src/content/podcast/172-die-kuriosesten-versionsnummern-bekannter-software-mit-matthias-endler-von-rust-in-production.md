@@ -59,7 +59,7 @@ tags:
 - Kommunikation
 title: '#172 Die kuriosesten Versionsnummern bekannter Software mit Matthias Endler
   von Rust in Production'
-transcript_raw: src/data/transcripts/172-transcript.zip
+transcript_raw: ''
 transcript_slim: src/data/transcripts/172-transcript-slim.json
 youtube: https://www.youtube.com/watch?v=y3QEFsNcr8A
 

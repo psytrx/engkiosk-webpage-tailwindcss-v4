@@ -84,7 +84,7 @@ tags:
 - Interview
 title: '#178 Code der bewegt: Infotainmentsysteme auf Kreuzfahrtschiffen mit Sebastian
   Hammerl'
-transcript_raw: src/data/transcripts/178-transcript.zip
+transcript_raw: ''
 transcript_slim: src/data/transcripts/178-transcript-slim.json
 youtube: https://www.youtube.com/watch?v=2DZWgquaPSs
 

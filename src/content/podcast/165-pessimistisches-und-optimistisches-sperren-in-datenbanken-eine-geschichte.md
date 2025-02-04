@@ -35,7 +35,7 @@ tags:
 - Software Engineering
 - Datenbanken
 title: '#165 Pessimistisches und Optimistisches Sperren in Datenbanken: Eine Geschichte'
-transcript_raw: src/data/transcripts/165-transcript.zip
+transcript_raw: ''
 transcript_slim: src/data/transcripts/165-transcript-slim.json
 youtube: https://www.youtube.com/watch?v=TN1-YbajYBQ
 

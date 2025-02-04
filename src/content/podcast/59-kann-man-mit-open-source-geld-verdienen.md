@@ -69,7 +69,7 @@ tags:
 - Karriere
 - Gehalt
 title: '#59 Kann man mit Open Source Geld verdienen?'
-transcript_raw: src/data/transcripts/59-transcript.zip
+transcript_raw: ''
 transcript_slim: src/data/transcripts/59-transcript-slim.json
 youtube: https://youtu.be/UD97HUTKeIc
 

@@ -39,7 +39,7 @@ tags:
 - Karriere
 - "Produktivit\xE4t"
 title: "#156 Inbox Zero: der Pro-Tipp f\xFCr deine Produktivit\xE4t"
-transcript_raw: src/data/transcripts/156-transcript.zip
+transcript_raw: ''
 transcript_slim: src/data/transcripts/156-transcript-slim.json
 youtube: https://www.youtube.com/watch?v=awf4pas3s0U
 

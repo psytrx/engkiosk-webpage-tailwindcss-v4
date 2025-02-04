@@ -88,7 +88,7 @@ tags:
 - Interview
 title: "#131 Equity in Tech-Startups: Mehr als nur Gehalt mit Philipp \"Pip\" Kl\xF6\
   ckner"
-transcript_raw: src/data/transcripts/131-transcript.zip
+transcript_raw: ''
 transcript_slim: src/data/transcripts/131-transcript-slim.json
 youtube: https://www.youtube.com/watch?v=gFdvA-PDdEU
 

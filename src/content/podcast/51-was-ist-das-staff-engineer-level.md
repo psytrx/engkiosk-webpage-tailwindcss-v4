@@ -77,7 +77,7 @@ tags:
 - Kommunikation
 - Leadership
 title: '#51 Was ist das Staff (Engineer) Level?'
-transcript_raw: src/data/transcripts/51-transcript.zip
+transcript_raw: ''
 transcript_slim: src/data/transcripts/51-transcript-slim.json
 youtube: https://www.youtube.com/watch?v=CAmz8WVSNu8
 

@@ -62,7 +62,7 @@ tags:
 - Karriere
 - Gehalt
 title: "#36 Sechs-stellige IT-Geh\xE4lter? Wie? Was? Wo? Fair?"
-transcript_raw: src/data/transcripts/36-transcript.zip
+transcript_raw: ''
 transcript_slim: src/data/transcripts/36-transcript-slim.json
 youtube: https://www.youtube.com/watch?v=77GSrg7tPhY
 

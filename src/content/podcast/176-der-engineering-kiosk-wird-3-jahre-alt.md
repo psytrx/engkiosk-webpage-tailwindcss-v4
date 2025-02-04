@@ -98,7 +98,7 @@ spotify: https://open.spotify.com/episode/29837ghhmE46KiO1VBRqhC
 tags:
 - Engineering Kiosk
 title: '#176 Der Engineering Kiosk wird 3 Jahre alt!'
-transcript_raw: src/data/transcripts/176-transcript.zip
+transcript_raw: ''
 transcript_slim: src/data/transcripts/176-transcript-slim.json
 youtube: https://www.youtube.com/watch?v=dciS591L8MQ
 

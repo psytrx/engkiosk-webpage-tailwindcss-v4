@@ -97,7 +97,7 @@ tags:
 - Interview
 title: '#142 Ist Return to Office die Zukunft? Was die Wissenschaft sagt - mit Jean-Victor
   Alipour vom IFO'
-transcript_raw: src/data/transcripts/142-transcript.zip
+transcript_raw: ''
 transcript_slim: src/data/transcripts/142-transcript-slim.json
 youtube: https://www.youtube.com/watch?v=JMendDTDCuw
 

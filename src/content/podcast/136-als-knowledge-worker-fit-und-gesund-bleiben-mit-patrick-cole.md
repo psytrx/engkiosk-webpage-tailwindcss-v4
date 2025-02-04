@@ -83,7 +83,7 @@ tags:
 - Interview
 - Karriere
 title: '#136 Als Knowledge Worker fit und gesund bleiben mit Patrick Cole'
-transcript_raw: src/data/transcripts/136-transcript.zip
+transcript_raw: ''
 transcript_slim: src/data/transcripts/136-transcript-slim.json
 youtube: https://www.youtube.com/watch?v=COQNWz6QVco
 

@@ -88,7 +88,7 @@ tags:
 - Software Engineering
 - Datenbanken
 title: '#129 Simplify Your Stack: Files statt Datenbanken!'
-transcript_raw: src/data/transcripts/129-transcript.zip
+transcript_raw: ''
 transcript_slim: src/data/transcripts/129-transcript-slim.json
 youtube: https://www.youtube.com/watch?v=FVbvtm6ghuE
 

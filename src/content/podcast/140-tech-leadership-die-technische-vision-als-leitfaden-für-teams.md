@@ -82,7 +82,7 @@ tags:
 - Kommunikation
 - Leadership
 title: "#140 Tech-Leadership: Die technische Vision als Leitfaden f\xFCr Teams"
-transcript_raw: src/data/transcripts/140-transcript.zip
+transcript_raw: ''
 transcript_slim: src/data/transcripts/140-transcript-slim.json
 youtube: https://www.youtube.com/watch?v=WCly0WvYxS8
 

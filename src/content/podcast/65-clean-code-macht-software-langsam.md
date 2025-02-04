@@ -71,7 +71,7 @@ tags:
 - "Software Qualit\xE4t"
 - "Produktivit\xE4t"
 title: '#65 Clean Code macht Software langsam'
-transcript_raw: src/data/transcripts/65-transcript.zip
+transcript_raw: ''
 transcript_slim: src/data/transcripts/65-transcript-slim.json
 youtube: https://www.youtube.com/watch?v=ukcKx_TEIVM
 

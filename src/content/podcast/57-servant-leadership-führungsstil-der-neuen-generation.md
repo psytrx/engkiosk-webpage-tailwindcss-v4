@@ -68,7 +68,7 @@ tags:
 - Kommunikation
 - Leadership
 title: "#57 Servant Leadership: F\xFChrungsstil der neuen Generation?"
-transcript_raw: src/data/transcripts/57-transcript.zip
+transcript_raw: ''
 transcript_slim: src/data/transcripts/57-transcript-slim.json
 youtube: https://www.youtube.com/watch?v=wo8XReZyXd0
 

@@ -57,7 +57,7 @@ tags:
 - Software Engineering
 - Interview
 title: '#103 Plattform Engineering und Interne Developer Plattformen mit Puja Abbassi'
-transcript_raw: src/data/transcripts/103-transcript.zip
+transcript_raw: ''
 transcript_slim: src/data/transcripts/103-transcript-slim.json
 youtube: https://www.youtube.com/watch?v=_k4DTov5Cf8
 

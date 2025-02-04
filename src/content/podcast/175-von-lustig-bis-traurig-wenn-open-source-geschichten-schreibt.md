@@ -97,7 +97,7 @@ tags:
 - Tech Kultur
 - Open Source
 title: '#175 Von Lustig bis Traurig: Wenn Open Source Geschichten schreibt'
-transcript_raw: src/data/transcripts/175-transcript.zip
+transcript_raw: ''
 transcript_slim: src/data/transcripts/175-transcript-slim.json
 youtube: https://www.youtube.com/watch?v=f5JU3nwP9_U
 

@@ -90,7 +90,7 @@ tags:
 - Remote work
 - "Software Qualit\xE4t"
 title: '#135 Design Documents & RFCs: Der Weg zu besserer Software-Architektur'
-transcript_raw: src/data/transcripts/135-transcript.zip
+transcript_raw: ''
 transcript_slim: src/data/transcripts/135-transcript-slim.json
 youtube: https://www.youtube.com/watch?v=ip5Z01mq2tU
 

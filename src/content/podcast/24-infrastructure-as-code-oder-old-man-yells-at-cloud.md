@@ -72,7 +72,7 @@ tags:
 - DevOps
 - Cloud
 title: '#24 Infrastructure as Code oder old man yells at cloud'
-transcript_raw: src/data/transcripts/24-transcript.zip
+transcript_raw: ''
 transcript_slim: src/data/transcripts/24-transcript-slim.json
 youtube: https://www.youtube.com/watch?v=hmMNyZ58RlE
 

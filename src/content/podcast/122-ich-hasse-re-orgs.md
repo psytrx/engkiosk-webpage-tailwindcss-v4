@@ -86,7 +86,7 @@ tags:
 - Kommunikation
 - Leadership
 title: '#122 Ich hasse Re-Orgs'
-transcript_raw: src/data/transcripts/122-transcript.zip
+transcript_raw: ''
 transcript_slim: src/data/transcripts/122-transcript-slim.json
 youtube: https://www.youtube.com/watch?v=rIk4V40L-tA
 

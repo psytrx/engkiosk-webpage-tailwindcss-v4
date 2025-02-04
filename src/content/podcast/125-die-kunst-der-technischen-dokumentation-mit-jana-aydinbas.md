@@ -99,7 +99,7 @@ tags:
 - Interview
 - Women in Tech
 title: '#125 Die Kunst der technischen Dokumentation mit Jana Aydinbas'
-transcript_raw: src/data/transcripts/125-transcript.zip
+transcript_raw: ''
 transcript_slim: src/data/transcripts/125-transcript-slim.json
 youtube: https://www.youtube.com/watch?v=_aVHZ4XGivc
 

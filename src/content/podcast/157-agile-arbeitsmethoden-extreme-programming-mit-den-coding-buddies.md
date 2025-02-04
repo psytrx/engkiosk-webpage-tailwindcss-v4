@@ -38,7 +38,7 @@ tags:
 - Software Engineering
 - "Software Qualit\xE4t"
 title: '#157 Agile Arbeitsmethoden - Extreme Programming mit den Coding Buddies'
-transcript_raw: src/data/transcripts/157-transcript.zip
+transcript_raw: ''
 transcript_slim: src/data/transcripts/157-transcript-slim.json
 youtube: https://www.youtube.com/watch?v=iZ10OgAMm5s
 

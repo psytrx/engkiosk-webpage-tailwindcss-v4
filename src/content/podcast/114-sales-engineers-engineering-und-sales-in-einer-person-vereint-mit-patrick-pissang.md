@@ -61,7 +61,7 @@ tags:
 - Interview
 title: '#114 Sales Engineers: Engineering und Sales in einer Person vereint mit Patrick
   Pissang'
-transcript_raw: src/data/transcripts/114-transcript.zip
+transcript_raw: ''
 transcript_slim: src/data/transcripts/114-transcript-slim.json
 youtube: https://www.youtube.com/watch?v=5gUIf0yUdbg
 

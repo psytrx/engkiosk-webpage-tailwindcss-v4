@@ -85,7 +85,7 @@ tags:
 - Interview
 title: '#108 Agile Multi-Team Projekte: Die Kunst, hunderte Leute effektiv zu koordinieren
   mit Stephan Strack'
-transcript_raw: src/data/transcripts/108-transcript.zip
+transcript_raw: ''
 transcript_slim: src/data/transcripts/108-transcript-slim.json
 youtube: https://www.youtube.com/watch?v=xSQconBhqgA
 

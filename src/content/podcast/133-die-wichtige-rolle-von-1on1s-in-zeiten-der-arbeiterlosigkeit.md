@@ -82,7 +82,7 @@ tags:
 - Karriere
 - Leadership
 title: '#133 Die wichtige Rolle von 1on1s in Zeiten der Arbeiterlosigkeit'
-transcript_raw: src/data/transcripts/133-transcript.zip
+transcript_raw: ''
 transcript_slim: src/data/transcripts/133-transcript-slim.json
 youtube: https://www.youtube.com/watch?v=tCwoVFyBsTY
 

@@ -43,7 +43,7 @@ tags:
 - Software Engineering
 - "Software Qualit\xE4t"
 title: '#170 - 404 Not Found!'
-transcript_raw: src/data/transcripts/170-transcript.zip
+transcript_raw: ''
 transcript_slim: src/data/transcripts/170-transcript-slim.json
 youtube: https://www.youtube.com/watch?v=fmt1ZvfcWEg
 

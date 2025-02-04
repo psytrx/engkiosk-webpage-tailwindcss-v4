@@ -64,7 +64,7 @@ tags:
 - Interview
 - Women in Tech
 title: '#102 Quereinstieg in die Software-Entwicklung mit Melanie Patrick'
-transcript_raw: src/data/transcripts/102-transcript.zip
+transcript_raw: ''
 transcript_slim: src/data/transcripts/102-transcript-slim.json
 youtube: https://www.youtube.com/watch?v=MZfM0dHkYM8
 

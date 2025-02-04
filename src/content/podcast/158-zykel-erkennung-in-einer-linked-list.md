@@ -38,7 +38,7 @@ spotify: https://open.spotify.com/episode/24V5Fnyht9UXGQTLSrZhvQ
 tags:
 - Software Engineering
 title: '#158 Zykel-Erkennung in einer Linked List'
-transcript_raw: src/data/transcripts/158-transcript.zip
+transcript_raw: ''
 transcript_slim: src/data/transcripts/158-transcript-slim.json
 youtube: https://www.youtube.com/watch?v=RyYjgtmrAa8
 

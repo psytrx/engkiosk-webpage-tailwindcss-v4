@@ -93,7 +93,7 @@ tags:
 - Backend
 - Datenbanken
 title: '#118 Wie funktioniert eine moderne Suche? Von Indexierung bis Ranking'
-transcript_raw: src/data/transcripts/118-transcript.zip
+transcript_raw: ''
 transcript_slim: src/data/transcripts/118-transcript-slim.json
 youtube: https://www.youtube.com/watch?v=ZpVGVVLfIGQ
 

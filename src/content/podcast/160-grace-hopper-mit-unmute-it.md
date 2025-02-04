@@ -39,7 +39,7 @@ tags:
 - Software Engineering
 - Women in Tech
 title: '#160 Grace Hopper mit UNMUTE IT'
-transcript_raw: src/data/transcripts/160-transcript.zip
+transcript_raw: ''
 transcript_slim: src/data/transcripts/160-transcript-slim.json
 youtube: https://www.youtube.com/watch?v=Ql38PZimNZQ
 

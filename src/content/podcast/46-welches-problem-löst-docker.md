@@ -64,7 +64,7 @@ tags:
 - Backend
 - DevOps
 title: "#46 Welches Problem l\xF6st Docker?"
-transcript_raw: src/data/transcripts/46-transcript.zip
+transcript_raw: ''
 transcript_slim: src/data/transcripts/46-transcript-slim.json
 youtube: https://www.youtube.com/watch?v=dkKwZ8uQFso
 

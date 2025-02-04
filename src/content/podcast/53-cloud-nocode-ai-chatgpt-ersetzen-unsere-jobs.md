@@ -48,7 +48,7 @@ tags:
 - Automation
 - Cloud
 title: '#53 Cloud / NoCode/ AI / ChatGPT ersetzen unsere Jobs?'
-transcript_raw: src/data/transcripts/53-transcript.zip
+transcript_raw: ''
 transcript_slim: src/data/transcripts/53-transcript-slim.json
 youtube: https://www.youtube.com/watch?v=6jSO8-ZJp6g
 

@@ -86,7 +86,7 @@ tags:
 - Interview
 title: '#179 MLOps: Machine Learning in die Produktion bringen mit Michelle Golchert
   und Sebastian Warnholz'
-transcript_raw: src/data/transcripts/179-transcript.zip
+transcript_raw: ''
 transcript_slim: src/data/transcripts/179-transcript-slim.json
 youtube: https://www.youtube.com/watch?v=doUmBLAP66Q
 

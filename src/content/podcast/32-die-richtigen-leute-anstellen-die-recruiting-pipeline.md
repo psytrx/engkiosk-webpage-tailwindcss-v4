@@ -63,7 +63,7 @@ tags:
 - Bewerbung
 - Team
 title: '#32 Die richtigen Leute anstellen: Die Recruiting Pipeline'
-transcript_raw: src/data/transcripts/32-transcript.zip
+transcript_raw: ''
 transcript_slim: src/data/transcripts/32-transcript-slim.json
 youtube: https://www.youtube.com/watch?v=xZOj6fTw16E
 

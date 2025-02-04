@@ -80,7 +80,7 @@ tags:
 - Interview
 title: "#84 Die Evolution von JavaScript: Vom Ducktyping zum Monopol im Browser mit\
   \ Peter Kr\xF6ner"
-transcript_raw: src/data/transcripts/84-transcript.zip
+transcript_raw: ''
 transcript_slim: src/data/transcripts/84-transcript-slim.json
 youtube: https://youtu.be/UcfUJQlkNOQ
 

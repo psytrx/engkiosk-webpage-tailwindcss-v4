@@ -93,7 +93,7 @@ tags:
 - Interview
 title: "#144 Die untersch\xE4tzte Macht der Zeit: Wie NTP und PTP die Welt synchronisieren\
   \ mit Daniel Boldt und Thomas Behn von Meinberg"
-transcript_raw: src/data/transcripts/144-transcript.zip
+transcript_raw: ''
 transcript_slim: src/data/transcripts/144-transcript-slim.json
 youtube: https://www.youtube.com/watch?v=4cmPgtQAKbY
 

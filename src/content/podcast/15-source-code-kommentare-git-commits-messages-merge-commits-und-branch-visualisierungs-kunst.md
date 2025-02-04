@@ -87,7 +87,7 @@ tags:
 - "Software Qualit\xE4t"
 - Software Engineering
 title: '#15 Source Code Kommentare, Git Commits Messages, Merge Commits und Branch-Visualisierungs-Kunst'
-transcript_raw: src/data/transcripts/15-transcript.zip
+transcript_raw: ''
 transcript_slim: src/data/transcripts/15-transcript-slim.json
 youtube: https://www.youtube.com/watch?v=8p83MdwJpUk
 

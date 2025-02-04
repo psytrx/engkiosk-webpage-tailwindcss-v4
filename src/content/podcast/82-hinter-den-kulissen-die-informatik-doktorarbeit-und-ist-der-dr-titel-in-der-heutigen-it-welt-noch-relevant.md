@@ -78,7 +78,7 @@ tags:
 - Gehalt
 title: '#82 Hinter den Kulissen: Die Informatik-Doktorarbeit und ist der Dr. Titel
   in der heutigen IT-Welt noch relevant?'
-transcript_raw: src/data/transcripts/82-transcript.zip
+transcript_raw: ''
 transcript_slim: src/data/transcripts/82-transcript-slim.json
 youtube: https://youtu.be/3a9JAtcorcc
 

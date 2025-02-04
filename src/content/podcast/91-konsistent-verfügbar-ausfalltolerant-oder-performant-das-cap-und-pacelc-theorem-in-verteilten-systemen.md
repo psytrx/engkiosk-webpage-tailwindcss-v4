@@ -81,7 +81,7 @@ tags:
 - Cloud
 title: "#91 Konsistent, Verf\xFCgbar, Ausfalltolerant oder Performant: Das CAP- und\
   \ PACELC-Theorem in verteilten Systemen"
-transcript_raw: src/data/transcripts/91-transcript.zip
+transcript_raw: ''
 transcript_slim: src/data/transcripts/91-transcript-slim.json
 youtube: https://youtu.be/Uk4PzoF5sAg
 

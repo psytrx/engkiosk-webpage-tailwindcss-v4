@@ -92,7 +92,7 @@ tags:
 - Kommunikation
 - Interview
 title: '#141 Datenjournalismus - zwischen Grafik und Fakten mit Michael Kreil'
-transcript_raw: src/data/transcripts/141-transcript.zip
+transcript_raw: ''
 transcript_slim: src/data/transcripts/141-transcript-slim.json
 youtube: https://www.youtube.com/watch?v=4Mm6ubQnB8w
 

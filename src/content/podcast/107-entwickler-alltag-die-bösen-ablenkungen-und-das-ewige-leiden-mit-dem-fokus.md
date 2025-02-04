@@ -51,7 +51,7 @@ tags:
 - "Produktivit\xE4t"
 title: "#107 Entwickler-Alltag: Die \"b\xF6sen\" Ablenkungen und das ewige Leiden\
   \ mit dem Fokus"
-transcript_raw: src/data/transcripts/107-transcript.zip
+transcript_raw: ''
 transcript_slim: src/data/transcripts/107-transcript-slim.json
 youtube: https://www.youtube.com/watch?v=g9DLVervwNw
 

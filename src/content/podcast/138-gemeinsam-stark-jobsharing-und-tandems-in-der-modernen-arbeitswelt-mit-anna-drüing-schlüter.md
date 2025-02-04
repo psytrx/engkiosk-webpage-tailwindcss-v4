@@ -92,7 +92,7 @@ tags:
 - Women in Tech
 title: "#138 Gemeinsam stark: Jobsharing und Tandems in der modernen Arbeitswelt mit\
   \ Anna Dr\xFCing-Schl\xFCter"
-transcript_raw: src/data/transcripts/138-transcript.zip
+transcript_raw: ''
 transcript_slim: src/data/transcripts/138-transcript-slim.json
 youtube: https://www.youtube.com/watch?v=_Ec6jVAsHdU
 

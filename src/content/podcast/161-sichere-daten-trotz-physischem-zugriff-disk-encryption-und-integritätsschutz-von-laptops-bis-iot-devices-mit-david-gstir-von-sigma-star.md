@@ -92,7 +92,7 @@ tags:
 - Interview
 title: "#161 Sichere Daten trotz physischem Zugriff: Disk Encryption und Integrit\xE4\
   tsschutz von Laptops bis IoT-Devices mit David Gstir von sigma star"
-transcript_raw: src/data/transcripts/161-transcript.zip
+transcript_raw: ''
 transcript_slim: src/data/transcripts/161-transcript-slim.json
 youtube: https://www.youtube.com/watch?v=gwbRGSA2TLc
 

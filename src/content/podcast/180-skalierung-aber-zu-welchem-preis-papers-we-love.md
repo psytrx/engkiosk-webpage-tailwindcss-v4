@@ -24,7 +24,7 @@ chapter:
   title: "Wissenschaftlicher Anspruch und Einsch\xE4tzung des Papers"
 - start: 00:52:34
   title: "Was k\xF6nnen wir f\xFCr die Praxis aus dem Paper lernen?"
-deezer: ''
+deezer: https://www.deezer.com/episode/713006261
 description: "Skalierung und verteilte Berechnungen: Sind mehr CPUs wirklich immer\
   \ schneller? Stell dir vor, du bist Softwareentwickler*in und jeder spricht von\
   \ Skalierung und verteilten Systemen. Doch wie effizient sind diese eigentlich wirklich?\
@@ -85,7 +85,7 @@ tags:
 - Software Engineering
 - Papers we love
 title: '#180 Skalierung, aber zu welchem Preis? (Papers We Love)'
-transcript_raw: src/data/transcripts/180-transcript.zip
+transcript_raw: ''
 transcript_slim: src/data/transcripts/180-transcript-slim.json
 youtube: https://www.youtube.com/watch?v=diMlWuG24Oc
 

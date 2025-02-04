@@ -72,7 +72,7 @@ tags:
 - Interview
 title: "#117 Vanilla Web: Niedrige Kopplung & hohe Koh\xE4sion mit Golo Roden von\
   \ the native web"
-transcript_raw: src/data/transcripts/117-transcript.zip
+transcript_raw: ''
 transcript_slim: src/data/transcripts/117-transcript-slim.json
 youtube: https://www.youtube.com/watch?v=75J3S4lURLA
 

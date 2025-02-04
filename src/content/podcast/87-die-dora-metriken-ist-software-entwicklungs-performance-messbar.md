@@ -67,7 +67,7 @@ tags:
 - Tech Kultur
 - "Software Qualit\xE4t"
 title: '#87 Die DORA-Metriken: Ist Software-Entwicklungs-Performance messbar?'
-transcript_raw: src/data/transcripts/87-transcript.zip
+transcript_raw: ''
 transcript_slim: src/data/transcripts/87-transcript-slim.json
 youtube: https://youtu.be/KFLZGNpmawY
 

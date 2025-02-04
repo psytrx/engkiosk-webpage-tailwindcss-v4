@@ -83,7 +83,7 @@ tags:
 - Kommunikation
 - Interview
 title: '#130 Wie gutes UX-Design entsteht mit Robin Titus'
-transcript_raw: src/data/transcripts/130-transcript.zip
+transcript_raw: ''
 transcript_slim: src/data/transcripts/130-transcript-slim.json
 youtube: https://www.youtube.com/watch?v=9VhfioS6-yQ
 

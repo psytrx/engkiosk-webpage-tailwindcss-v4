@@ -109,7 +109,7 @@ tags:
 - Interview
 title: "#94 Die Realit\xE4t des Freelancings: Zwischen Selbstbestimmung und Unsicherheit\
   \ mit Index out of bounds"
-transcript_raw: src/data/transcripts/94-transcript.zip
+transcript_raw: ''
 transcript_slim: src/data/transcripts/94-transcript-slim.json
 youtube: https://youtu.be/hJn8X5Gfico
 

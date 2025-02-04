@@ -59,7 +59,7 @@ tags:
 - "Software Qualit\xE4t"
 title: "#96 Selbstgemacht vs. Fertigprodukt: Ein Blick auf das Not-Invented-Here-Ph\xE4\
   nomen"
-transcript_raw: src/data/transcripts/96-transcript.zip
+transcript_raw: ''
 transcript_slim: src/data/transcripts/96-transcript-slim.json
 youtube: https://youtu.be/-NsoXayhb34
 

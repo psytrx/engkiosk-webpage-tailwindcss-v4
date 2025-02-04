@@ -82,7 +82,7 @@ tags:
 - Backend
 - Interview
 title: "#132 Prometheus: Revolution im Monitoring mit Mitbegr\xFCnder Julius Volz"
-transcript_raw: src/data/transcripts/132-transcript.zip
+transcript_raw: ''
 transcript_slim: src/data/transcripts/132-transcript-slim.json
 youtube: https://www.youtube.com/watch?v=J9ugvkek92o
 

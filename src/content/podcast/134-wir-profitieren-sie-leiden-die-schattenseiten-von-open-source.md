@@ -79,7 +79,7 @@ tags:
 - Tech Kultur
 - Open Source
 title: '#134 Wir profitieren, sie leiden: Die Schattenseiten von Open Source'
-transcript_raw: src/data/transcripts/134-transcript.zip
+transcript_raw: ''
 transcript_slim: src/data/transcripts/134-transcript-slim.json
 youtube: https://www.youtube.com/watch?v=9s5jSDxQxwc
 

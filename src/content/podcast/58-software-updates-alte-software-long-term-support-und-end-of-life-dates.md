@@ -68,7 +68,7 @@ tags:
 - Software Engineering
 - "Software Qualit\xE4t"
 title: '#58 Software-Updates, alte Software, Long Term Support und End of Life-Dates'
-transcript_raw: src/data/transcripts/58-transcript.zip
+transcript_raw: ''
 transcript_slim: src/data/transcripts/58-transcript-slim.json
 youtube: https://www.youtube.com/watch?v=94RZcJefzR8
 

@@ -96,7 +96,7 @@ tags:
 - Interview
 title: '#177 Stream Processing & Kafka: Die Basis moderner Datenpipelines mit Stefan
   Sprenger'
-transcript_raw: src/data/transcripts/177-transcript.zip
+transcript_raw: ''
 transcript_slim: src/data/transcripts/177-transcript-slim.json
 youtube: https://www.youtube.com/watch?v=vktDEQCj9p0
 

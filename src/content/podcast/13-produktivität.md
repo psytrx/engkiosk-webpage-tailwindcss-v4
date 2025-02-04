@@ -65,7 +65,7 @@ tags:
 - Karriere
 - "Produktivit\xE4t"
 title: "#13 Produktivit\xE4t"
-transcript_raw: src/data/transcripts/13-transcript.zip
+transcript_raw: ''
 transcript_slim: src/data/transcripts/13-transcript-slim.json
 youtube: https://www.youtube.com/watch?v=uV3FkeHeY94
 

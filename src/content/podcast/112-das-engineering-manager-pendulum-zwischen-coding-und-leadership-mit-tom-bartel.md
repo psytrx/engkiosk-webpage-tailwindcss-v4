@@ -61,7 +61,7 @@ tags:
 - Interview
 title: '#112 Das Engineering Manager Pendulum: Zwischen Coding und Leadership mit
   Tom Bartel'
-transcript_raw: src/data/transcripts/112-transcript.zip
+transcript_raw: ''
 transcript_slim: src/data/transcripts/112-transcript-slim.json
 youtube: https://www.youtube.com/watch?v=7YTbx4931lU
 

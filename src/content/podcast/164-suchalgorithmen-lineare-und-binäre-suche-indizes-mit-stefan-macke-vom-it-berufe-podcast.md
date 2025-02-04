@@ -43,7 +43,7 @@ tags:
 - Datenbanken
 title: "#164 Suchalgorithmen: Lineare- und Bin\xE4re Suche & Indizes mit Stefan Macke\
   \ vom IT Berufe Podcast"
-transcript_raw: src/data/transcripts/164-transcript.zip
+transcript_raw: ''
 transcript_slim: src/data/transcripts/164-transcript-slim.json
 youtube: https://www.youtube.com/watch?v=_B3w7_LQDdk
 

@@ -57,7 +57,7 @@ spotify: https://open.spotify.com/episode/4mkmeVaXD6u8Tf9mpcBWd4
 tags:
 - Karriere
 title: "#06 Hype oder Hope: Job-Titel und Bef\xF6rderungen"
-transcript_raw: src/data/transcripts/06-transcript.zip
+transcript_raw: ''
 transcript_slim: src/data/transcripts/06-transcript-slim.json
 youtube: https://www.youtube.com/watch?v=76WMDqv-MHk
 

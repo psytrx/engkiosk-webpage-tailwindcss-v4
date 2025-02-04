@@ -78,7 +78,7 @@ tags:
 - Kommunikation
 - Interview
 title: '#88 Die Personalabteilung: Freund oder Feind? mit Patrick Kuster'
-transcript_raw: src/data/transcripts/88-transcript.zip
+transcript_raw: ''
 transcript_slim: src/data/transcripts/88-transcript-slim.json
 youtube: https://youtu.be/5cE514oDbbk
 

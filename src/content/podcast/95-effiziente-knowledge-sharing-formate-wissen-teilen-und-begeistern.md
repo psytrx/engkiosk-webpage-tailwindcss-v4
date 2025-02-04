@@ -64,7 +64,7 @@ tags:
 - Knowledge Sharing
 - Kommunikation
 title: '#95 Effiziente Knowledge Sharing Formate: Wissen teilen und begeistern'
-transcript_raw: src/data/transcripts/95-transcript.zip
+transcript_raw: ''
 transcript_slim: src/data/transcripts/95-transcript-slim.json
 youtube: https://youtu.be/njl1RfMcDxo
 

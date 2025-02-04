@@ -96,7 +96,7 @@ tags:
 - Interview
 - Women in Tech
 title: '#127 Imposter-Syndrom & Peter-Prinzip mit Dr. Fanny Jimenez'
-transcript_raw: src/data/transcripts/127-transcript.zip
+transcript_raw: ''
 transcript_slim: src/data/transcripts/127-transcript-slim.json
 youtube: https://www.youtube.com/watch?v=-CtnKVK0tJU
 

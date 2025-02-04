@@ -60,7 +60,7 @@ tags:
 - Karriere
 - Kommunikation
 title: '#113 Selbstmarketing ohne Bullshit: Brag Documents'
-transcript_raw: src/data/transcripts/113-transcript.zip
+transcript_raw: ''
 transcript_slim: src/data/transcripts/113-transcript-slim.json
 youtube: https://www.youtube.com/watch?v=SBxYn21KRvs
 
