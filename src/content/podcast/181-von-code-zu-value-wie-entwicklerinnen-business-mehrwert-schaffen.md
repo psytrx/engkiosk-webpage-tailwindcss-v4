@@ -71,7 +71,9 @@ speaker:
 - name: Wolfi Gassler
   transcriptLetter: B
 spotify: https://open.spotify.com/episode/6ECNuTLn7wDHDJpHfOfIeB
-tags: []
+tags:
+- Karriere
+- Gehalt
 title: "#181 Von Code zu Value: Wie Entwickler\xB7innen Business-Mehrwert schaffen"
 transcript_raw: ''
 transcript_slim: ''
