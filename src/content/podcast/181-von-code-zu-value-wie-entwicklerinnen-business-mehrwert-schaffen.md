@@ -1,6 +1,6 @@
 ---
 advertiser: ''
-amazon_music: ''
+amazon_music: https://music.amazon.com/podcasts/c35a09fe-4116-4e04-8f68-77d61b112e46/episodes/ab5eb349-4345-4366-b035-cf13439d7105/engineering-kiosk-181-von-code-zu-value-wie-entwickler%C2%B7innen-business-mehrwert-schaffen
 apple_podcasts: https://podcasts.apple.com/us/podcast/181-von-code-zu-value-wie-entwickler-innen-business/id1603082924?i=1000688762176&uo=4
 audio: https://audio1.redcircle.com/episodes/2698f4ab-5900-47ec-91ff-5a939a136737/stream.mp3
 chapter:
