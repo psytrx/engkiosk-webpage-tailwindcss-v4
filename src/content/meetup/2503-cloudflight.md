@@ -1,10 +1,10 @@
 ---
 date: 2025-03-13T18:30:00+01:00
 location:
-  name: '???'
-  address: '???, 6020 Innsbruck'
-  url: ''
-  logo: ''
+  name: 'Cloudflight'
+  address: 'Cloudflight, Bürgerstraße 1/3, 6020 Innsbruck'
+  url: 'https://www.cloudflight.io'
+  logo: 'cloudflight.png'
 talks:
   - avatar: 'avatar.png'
     name: ''
