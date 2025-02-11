@@ -80,7 +80,9 @@ speaker:
 - name: Andy Grunwald
 - name: Wolfi Gassler
 spotify: https://open.spotify.com/episode/0r1dW3BFtBgU3sW3Z24U7C
-tags: []
+tags:
+- Backend
+- Datenbanken
 title: '#182 Happy Birthday SQL: 50 Jahre Abfragesprache'
 transcript_raw: ''
 transcript_slim: ''
