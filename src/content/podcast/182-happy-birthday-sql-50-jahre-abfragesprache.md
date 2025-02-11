@@ -1,6 +1,6 @@
 ---
 advertiser: ''
-amazon_music: ''
+amazon_music: https://music.amazon.com/podcasts/c35a09fe-4116-4e04-8f68-77d61b112e46/engineering-kiosk
 apple_podcasts: https://podcasts.apple.com/us/podcast/182-happy-birthday-sql-50-jahre-abfragesprache/id1603082924?i=1000691005752&uo=4
 audio: https://audio1.redcircle.com/episodes/d926d03b-cb37-44d3-9608-5af62ad89fe9/stream.mp3
 chapter:
