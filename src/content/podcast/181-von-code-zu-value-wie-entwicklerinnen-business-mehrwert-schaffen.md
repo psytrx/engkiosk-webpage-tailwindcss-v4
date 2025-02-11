@@ -76,7 +76,7 @@ tags:
 - Gehalt
 title: "#181 Von Code zu Value: Wie Entwickler\xB7innen Business-Mehrwert schaffen"
 transcript_raw: ''
-transcript_slim: ''
+transcript_slim: src/data/transcripts/181-transcript-slim.json
 youtube: https://www.youtube.com/watch?v=0joWm2e0e-0
 
 ---
