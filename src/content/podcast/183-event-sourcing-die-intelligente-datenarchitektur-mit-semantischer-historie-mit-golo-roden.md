@@ -88,7 +88,10 @@ speaker:
 - name: Andy Grunwald
 - name: Wolfi Gassler
 spotify: https://open.spotify.com/episode/5fQvyP5FPKIOfbGTOE4CQ1
-tags: []
+tags:
+- Backend
+- Software Engineering
+- Interview
 title: "#183 Event-Sourcing: Die intelligente Datenarchitektur mit semantischer Historie\
   \ \u2013 mit Golo Roden"
 transcript_raw: ''
