@@ -1,0 +1,936 @@
+{
+  "language_code": "de",
+  "audio_url": "https://cloud.inlupus.at/s/Bc9zDrNJGsSwZ8n/download/ep183_event_sourcing.mp3",
+  "punctuate": true,
+  "format_text": true,
+  "dual_channel": false,
+  "multichannel": null,
+  "audio_channels": null,
+  "webhook_url": null,
+  "webhook_auth_header_name": null,
+  "webhook_auth_header_value": null,
+  "audio_start_from": null,
+  "audio_end_at": null,
+  "word_boost": [],
+  "boost_param": null,
+  "filter_profanity": false,
+  "redact_pii": false,
+  "redact_pii_audio": false,
+  "redact_pii_audio_quality": null,
+  "redact_pii_policies": null,
+  "redact_pii_sub": null,
+  "speaker_labels": true,
+  "speakers_expected": 3,
+  "content_safety": false,
+  "content_safety_confidence": null,
+  "iab_categories": false,
+  "custom_spelling": null,
+  "disfluencies": false,
+  "sentiment_analysis": false,
+  "auto_chapters": false,
+  "entity_detection": false,
+  "summarization": false,
+  "summary_model": null,
+  "summary_type": null,
+  "auto_highlights": false,
+  "language_detection": false,
+  "language_confidence_threshold": null,
+  "language_confidence": null,
+  "speech_threshold": null,
+  "speech_model": null,
+  "id": "c4643fb2-6e17-4481-b469-3d3e41dd68b6",
+  "status": "completed",
+  "error": null,
+  "utterances": [
+    {
+      "text": "Hey, du am Audiogerät, egal was du jetzt gerade machst, mach mal eine kurze Pause, geh mal auf Google und gib mal Bullshit Bingo Karte für Softwareentwicklung ein und nimm mal das erste Bild.",
+      "start": 480,
+      "end": 12504,
+      "confidence": 0.8743556,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Moment, muss ich das jetzt auch machen?",
+      "start": 12672,
+      "end": 13976,
+      "confidence": 0.99945426,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Andi, du musst das auch machen, aber eigentlich habe ich von dir erwartet, dass du das in der Vorbereitung bereits gemacht hast. Und dann schauen wir mal, wie viel Keywords du da heute abhaken kannst. Denn Bullshit Bingo hört sich immer so negativ an. So ist das natürlich heute nicht gemeint, aber das ist halt der SEO term, den die LE dann halt immer nutzen. Heute geht es um ein Thema, da freue ich mich mal wirklich drauf, weil unser Adventskalender hat mich da so ein bisschen da so hingetriggert. Und zwar heute sprechen wir über ein Thema, über das Martin Fowler im Jahre 2005 bereits geschrieben hat im Kontext von einer Artikelserie mit dem Namen Patterns of Enterprise Application Architecture. Ich hoffe, du hast schon den ersten Bingo mit Enterprise irgendwo abgehakt. Dann, wenn du nach dem Wort googelt, um was es heute geht, findest du auch die Seite Microservices IO. Jetzt solltest du spätestens schon zwei Treffer haben. Und am Kalendertürchen 11 vom Adventskalender 2024 hatten wir das Thema und da hat Golo Roden das Thema bei uns im Podcast als Gastbeitrag vorgestellt. Und auf Spotify gab es dazu folgendes Kommentar, was dann auch im Endeffekt zu dieser Episode geführt hat. Und zwar war das Kommentar eines Hörers, das war ja wohl die beste Zusammenfassung von Event Sourcing. Und deswegen sprechen wir heute mal mit Golo über das Thema Event Sourcing. Hallo Golo Roden.",
+      "start": 14008,
+      "end": 100172,
+      "confidence": 0.8992306,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Hi Andi, schön, dass ich da sein darf.",
+      "start": 100236,
+      "end": 102092,
+      "confidence": 0.8799075,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Ich stelle dich mal für alle Leute am Audiogerät vor, denn du bist bekannt wie ein bunter Hund und trägst mit der heutigen Aufnahme einen Engineering Kiosk Rekord. Herzlichen Glückwunsch. Du bist der einzige Gast, der dreimal in diesem Podcast zu hören war, denn du warst im APR. 2024 bei uns zum Thema Vanillaweb, niedrige Kopplung und hohe Kohäsion. Du hast im letzten Adventskalender eine 1012 minütige Episode über Event Sourcing und Märchen gehalten und jetzt bist du das dritte Mal da. Deswegen, ich würde dir jetzt gerne irgendwie so eine Medaille überreichen oder so ein Pokal oder so. Geht virtuell leider nicht. Trotzdem herzlichen Glückwunsch dazu.",
+      "start": 102156,
+      "end": 142876,
+      "confidence": 0.91844213,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Vielen, vielen Dank.",
+      "start": 142988,
+      "end": 144560,
+      "confidence": 0.88836336,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Aber du bist natürlich nicht nur bekannt wie ein bunter Hund aus dem Engineering Kurs, sondern viele kennen dich wahrscheinlich als YouTuber. Da treibst du einen sehr erfolgreichen YouTube Account, der komplett auch über Softwareentwicklung geht, aber auch finde ich, nicht nur über Softwareentwicklung, sondern auch wie Softwareentwickler sich verhalten und so weiter. Das finde ich persönlich sehr, sehr schön. Du bist Gründer und Geschäftsführer von the Native Web, einer Firma, die Consulting Entwicklung und Trainings speziell auf native Webtechnologien und Cloud anbietet. Du hast auch eine ganze Menge Bücher geschrieben, z.B. Über Node JS, Artikel für Fachmagazine über JavaScript, TypeScript und so weiter und so fort. Du hast sogar mal die allererste Konferenz für Enterprise JavaScript organisiert, Enter JS. Soviel ich weiß, gibt es die auch noch. Und ich glaube, das letzte Mal haben wir uns sehr darüber unterhalten und ich habe das Spiel ich oute mich noch nie gespielt. Aber der Wolfgang, du bist, hoffe ich, immer noch Monkey Island Fan.",
+      "start": 145300,
+      "end": 199490,
+      "confidence": 0.92871284,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Das bin ich immer noch. Das war ich ja schon 1990 91, als es rauskam. Und daran hat sich jetzt in den letzten paar Monaten definitiv nichts geändert. Also nach wie vor. Ja, jeden Fall.",
+      "start": 199570,
+      "end": 211528,
+      "confidence": 0.97921485,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Und dein YouTube Account, du bist ja wirklich erfolgreich. Von dem können wir ja nur träumen, weil das letzte Mal, wo du bei uns warst, hattest du Follower und jetzt hast du Follower. Also du scheinst ja exponentiell zu erweitern deine Audience. Gratulation dafür übrigens.",
+      "start": 211664,
+      "end": 226824,
+      "confidence": 0.92721313,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Danke, danke, danke. Also die Abonnenten Marke, die haben wir tatsächlich gerade jetzt vor ein paar Tagen gerissen. Und das ist eine Zahl, die finde ich auch, die ist so unvorstellbar groß. Also wenn man sich überlegt, wie viele Menschen das sind, die einem zuhören, die einem zus zuschauen, die einem folgen und die das irgendwie interessant, spannend, hilfreich, was auch immer finden, was man da macht. Das ist schon, also das ist ja eine Kleinstadt inzwischen, oder? Kannst ein Fußballstadion quasi, könnte man theoretisch füllen. Und das ist schon, also ich gucke immer mit sehr großer Ehrfurcht und auch doch auch mit einer gewissen Demut und Dankbarkeit auf diese Zahl und denke mir, wow, das ist schon echt viel für.",
+      "start": 226952,
+      "end": 267252,
+      "confidence": 0.9285735,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Alle Leute, die keinen Content erstellen. Und damit meine ich jetzt nicht Influencer auf Instagram oder ähnliches, sondern die wirklich mal versuchen, irgendwie wissen über Video oder Podcast oder Blogartikel oder sowas zu verteilen. Die können sich vielleicht nicht vorstellen, was eigentlich für eine Arbeit notwendig ist, um oder sogar Leute zu erreichen. Und das ist bei weitem kein Sprint, das ist kein 5 km Lauf, das ist auch kein Marathon, das ist schon ultra Lauf, so 100 plus km. Und deswegen, ich muss nur meinen Hut davor ziehen, mit welcher Konsistenz und mit welchem regelmäßigen Intervall und Output du da sowas machst. Also harten Respekt von meiner Seite.",
+      "start": 267276,
+      "end": 309178,
+      "confidence": 0.9006588,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Ich wollte nur sagen, wobei man der Fairness halber, also vielen, vielen Dank für das viele Lob und alles, aber man muss der Fairness halber dazu sagen, ich bin vielleicht derjenige, der in den Videos vor der Kamera in 99 % der Fälle zu sehen ist, aber ich mache das ja nicht alleine. Also wenn ich das alleine machen müsste, da hätte ich überhaupt keine Chance, das hinzubekommen. Insofern, ich bin vielleicht das Aushängeschild, das prominente an der Stelle, aber da stehen ein paar mehr Leute dahinter. Ohne meine Kolleginnen und ohne meine Kollegen wäre das überhaupt nicht machbar. Und von daher, das ist eine Teamleistung, das ist nicht meine persönliche Einzelleistung. Trag ein Teil dazu bei, aber es bin nicht nur ich.",
+      "start": 309274,
+      "end": 344998,
+      "confidence": 0.919508,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Okay, dann stell dir mal eine Frage direkt an dich, weil darum geht es jetzt. Wie kommt man denn als YouTuber, und du stehst ja vor der Kamera und auch jemand, der viel JavaScript gemacht hat und im Web, wie kommt man da zum Thema Event Sourcing?",
+      "start": 345054,
+      "end": 357990,
+      "confidence": 0.9159802,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Also das mit YouTube machen wir ja noch gar nicht so lange, das ist ja jetzt viereinhalb Jahre. Das ist so im Rahmen der Corona Zeit entstanden, weil halt Konferenzen nicht mehr stattgefunden haben und wir uns aber gedacht haben, dass das Informationsbedürfnis da draußen ja trotzdem nach wie vor da ist. Also insofern, meine Beschäftigung mit Eventsourcing, die existiert schon länger, als es diesen YouTube Kanal gibt. Und die Beschäftigung mit Eventsourcing gibt es sogar schon länger, als ich JavaScript mache. Mit JavaScript, ich komme ja aus dem Backend Bereich, habe ja anders als viele andere, komme ich nicht aus dem Frontend. Und also ich war nie derjenige, der irgendwie hübsche Sachen mit CSS, mit jQuery und Co. Basteln konnte. Das kann ich bis heute nicht. Da habe ich immer großen Respekt vor, wenn Leute im Browser irgendwas fantastisch aussehendes zaubern können, als wäre das nichts. Und ich scheitere seit fünf und dreiig Jahren daran, zwei Diffs irgendwie vertikal zu zentrieren. Also ist einfach nicht meine Welt. Und im Backend, ich habe mich halt immer viel mit Architektur, mit verteilter Architektur und solchen Themen beschäftigt. Und ich bin vor 12 Jahren ungefähr, es fiel so ungefähr zusammen mit dem Zeitpunkt, wo wir the Native Web gegründet haben, da bin ich über Event Sourcing drüber gestolpert. Und ich glaube, das Thema war damals noch relativ frisch, auch CQS war damals noch relativ frisch. Und ich glaube, dass es einfach passiert, weil ich halt jemand bin, der an neuen Dingen sehr interessiert ist. Ich versuche immer relativ vorne mit dabei zu sein, wenn es irgendwie neue Dinge gibt, um die halt auch möglichst früh einordnen zu können, um mir ein Bild machen zu können, um Dinge bewerten zu können. Natürlich letztlich mit dem Ziel, um unseren Kunden dann auch Empfehlungen oder Tipps geben zu können und die begleiten zu können. Und von daher, also wie ich konkret draufgestossen bin, weiß ich nicht mehr, aber irgendwie auf dem Weg muss ich drüber gestolpert sein. Und es hat mich sehr nachhaltig beeindruckt, sagen wir es mal so.",
+      "start": 358070,
+      "end": 467944,
+      "confidence": 0.9322487,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Habe ich das aktuell falsch im Gefühl oder ist es irgendwie aktuell ein trendiges Thema? Also du hast jetzt vielleicht schon vor 12 Jahren oder so damit angefangen, aber ich höre es gerade aktuell von ganz unterschiedlicher Richtung und irgendwie scheint es gerade ein großes Thema zu sein. Also kannst du es nachvollziehen oder bestätigen?",
+      "start": 528032,
+      "end": 545966,
+      "confidence": 0.89802253,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Ja, das ist definitiv so. Also es ist nach wie vor Nischenthema, es ist aber weniger Nische als noch vor fünf Jahren und es ist immer noch weit davon entfernt, sage ich mal, im Mainstream angekommen zu sein. Aber man hat doch das Gefühl, es verbreitet sich, es nimmt zu, die Aufmerksamkeit nimmt zu und so nach und nach verstehen mehr und mehr Leute, was es damit auf, warum es nützlich ist, warum das ganze sinnvoll sein kann. Also Hype ist total überzogen, das Wort, das würde ich an der Stelle nicht sagen, aber dass so eine gewisse, so ein gewisser Zufluss an Aufmerksamkeit da ist, das ist definitiv so.",
+      "start": 546078,
+      "end": 581002,
+      "confidence": 0.935598,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Also in meiner Bubble kam das jetzt nicht so oft vor, deswegen bin ich jetzt mega hyped. Was jetzt?",
+      "start": 581106,
+      "end": 586714,
+      "confidence": 0.9487058,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Du bist in dieser Infrastruktur Bubble nur unterwegs, Andi, das ist ja wieder ein anderes Thema.",
+      "start": 586762,
+      "end": 591470,
+      "confidence": 0.9068731,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Deswegen Golo, hol mich doch mal bitte ab. Was ist Event Sourcing und wie würdest du es einem Laien erklären oder sogar einem fünfjährigen Kind?",
+      "start": 591970,
+      "end": 600970,
+      "confidence": 0.9225912,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Okay, dann probieren wir es mal. Also stell dir vor, okay, ich weiß nicht, ob das für ein fünfjähriges Kind passend ist, aber vielleicht für ein sieben oder achtjähriges Kind wird es auf jeden Fall passen. Also stell dir vor, du möchtest, du liest gerne. Es gibt Bücher, die hast du selbst zu Hause. Es gibt aber auch Bücher, die hast du halt nicht, die würdest du aber gerne lesen. Und dann gibt es z.B. die Möglichkeit, dass man sich die in der Stadtbibliothek ausleihen kann. In der Stadtbibliothek. Jetzt kann man sich die Frage stellen, was kann man da machen? Also da kann man Bücher ausleihen, da kann man, wenn man mit dem Buch nicht so gut vorankommt, da kann man das Buch dann auch nach so und so vielen Wochen wenn man es eigentlich zurückgeben müsste, kann man das Buch verlängern. Man kann irgendwann, kann oder muss man das Buch ja dann zurückgeben. Vielleicht muss man eine Strafe bezahlen, weil man es zu spät zurückgegeben hat. Hoffentlich ist das Buch nicht beschädigt worden und so weiter. Und jetzt stell dir einfach vor, die Stadtbibliothek, die führt quasi eine Liste, wo sie alles, was so passiert, einträgt. Also ein Buch wurde ausgeliehen, dann wurde das Buch verlängert, dann ist irgendein anderes Buch ausgeliehen worden, dann ist das erste Buch zurückgegeben worden, dann ist das zweite Buch auch zurückgegeben worden, dann ist aufgefallen, das zweite Buch ist aber beschädigt worden, dann hat wieder jemand ein Buch ausgeliehen und so weiter. Also im Prinzip einfach eine Liste von Dingen, die passiert sind. Das ist Event Sourcing. Und die einzelnen Dinge, die passiert sind, das sind die Events, weil das eben einfach Dinge beschreibt, die passiert sind, wie Buch wurde ausgeliehen oder Buch wurde verlängert oder Buch wurde zurückgegeben. Es steht ja auch immer alles in der Vergangenheitsform. Das sind Events. Und dass man die einfach als so eine immer weiter wachsende Liste sozusagen sammelt, das ist die Grundidee des ganzen Prinzips. Und das nutzt lustigerweise jeder Erwachsene mehr oder weniger tagtäglich, weil dein Girokonto funktioniert auch nicht anders. Die Bank hält auch fest, diese Überweisung hat stattgefunden, der Zahlungseingang hat stattgefunden, du hast am Geldautomaten Geld geholt, es wurden Zinsen berechnet und so weiter. Und da sind halt die Buchungen oder die Transaktionen sind halt die Events. Auch das ist eine Liste, die immer nur weiter anwächst. Das ist das Kernprinzip von Eventsourcing.",
+      "start": 601390,
+      "end": 722842,
+      "confidence": 0.95425147,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Ich hatte die Tage den Fall, dass ich ein Grundbuch über ein Grundstück sehen konnte. Und in einem Grundbuch hat man natürlich verschiedene Abteilungen, nennt man das, glaube ich. Z.B. wenn du Kredit aufnimmst, dann steht die Bank da und so weiter.",
+      "start": 722906,
+      "end": 739722,
+      "confidence": 0.9314031,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Aber Moment, war das so ein richtiges Buch?",
+      "start": 739826,
+      "end": 743034,
+      "confidence": 0.96511626,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Nein, nein, das waren Papiere. Also.",
+      "start": 743162,
+      "end": 745910,
+      "confidence": 0.9064483,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Aber schon ausgedruckt oder war das digital?",
+      "start": 746330,
+      "end": 748610,
+      "confidence": 0.9779571,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Ne, schon ausgedruckt. Ich konnte das nicht digital kriegen. Also ich habe da zwar angefragt bei der Stadt, aber die haben mir das nur per Post geschickt. Wie dem auch sei, du warst jetzt.",
+      "start": 748690,
+      "end": 755698,
+      "confidence": 0.96050733,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Nicht so wie beim Standesamt, bei diesem alten Buch aus den ER Jahren, wo irgendwie drinsteht, wer geboren wurde oder so und wer welches Haus hat bisher.",
+      "start": 755714,
+      "end": 762130,
+      "confidence": 0.9660563,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Wie die an das Papier gekommen sind und was sie damit gemacht haben, weiß ich nicht. Habe auf jeden Fall eine Kopie gekriegt. Punkt ist aber, da stehen eigentlich alle Einträge drin und die Einträge, die nicht mehr relevant sind, sind immer durchgestrichen. Das bedeutet, ich kann dann immer sehen, okay, vor 55 Jahren war mal hier ein Kredit von dieser Bank und so weiter und so fort. Das ist ja auch eigentlich Eventsourcing, oder?",
+      "start": 762210,
+      "end": 779534,
+      "confidence": 0.9441688,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Ja, so halb. Also ja, im Grunde genommen schon. Also tatsächlich, der Papiervergleich ist auch ziemlich treffend. Der springende Punkt ist, dass an diese Liste, die ich eben erwähnt habe, dass immer nur neue Dinge hinten angehängt werden und dass du die Dinge, die einmal auf dieser Liste stehen, so wie es deine Bank halt mit deiner Kontoführung macht, dass die Dinge niemals mehr aktualisiert, überarbeitet, gelöscht oder sonst was werden. Also die sind unveränderlich, die sind sozusagen in Stein gemeißelt. Insofern, das mit dem im Nachhinein noch mal durchstreichen, das passt da nicht so ganz ins Bild. Aber abgesehen davon wäre das das gleiche Prinzip.",
+      "start": 779622,
+      "end": 815690,
+      "confidence": 0.930916,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Okay, das macht total Sinn, klar, weil das Durchstreichen ein update Event wäre eigentlich.",
+      "start": 815770,
+      "end": 820190,
+      "confidence": 0.9095622,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Und stell dir mal vor, wie schlimm das wäre. Stell dir mal vor, deine Bank könnte im nachhinein noch eine Transaktion ändern, die durchgeführt wurde. Da würdest du nie im Leben dein Geld hinbringen. Dieser Bank würdest du nie im Leben auch nur ansatzweise vertrauen. So, ich habe irgendwie €1000 überwiesen, gucke ich morgen auf mein Konto. Komisch, jetzt sind irgendwie 2000 weg, ich weiß nicht warum. Bank hat halt im Nachhinein die Transaktion geändert. Also sowas will man ja um Gottes willen nicht haben. Und von daher ist also ganz, ganz, ganz wichtig, dass quasi das, was einmal festgehalten wurde, das kann nicht mehr geändert werden. Man kann höchstens den Effekt, der dadurch entstanden ist, durch eine Gegentransaktion kompensieren. Also wenn du jetzt zu viel überwiesen hast, kann wieder was zurückerstattet werden, das geht. Aber die Tatsache, dass zu viel überwiesen wurde, das kannst du nicht mehr ungeschehen machen.",
+      "start": 820610,
+      "end": 868706,
+      "confidence": 0.9535781,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Ich weiß nicht warum, aber ich muss wieder an die Bingo Karte denken. Und irgendwie erinnert mich das gerade an Blockchain.",
+      "start": 868818,
+      "end": 874710,
+      "confidence": 0.9422214,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Ja, das ist lustig, dass du das sagst. Das wird ganz, ganz oft gesagt. Das kommt ganz oft. Und tatsächlich ist das eigentlich ein sehr ähnlicher Mechanismus. Oder man könnte sagen, Blockchain ist eine Möglichkeit, Event Sourcing zu implementieren. Ich würde mal sagen, der Hauptunterschied zwischen der typischen Enterprise Event Sourcing Architektur und der Blockchain ist, dass es halt bei der Blockchain über tausende, zehntausende von Rechnern verteilt wird, was das ganze Konzept halt sehr, sehr langsam macht, weil ja immer Konsens gesucht werden muss, weil es da ja keine zentrale, vertrauensgebende Instanz gibt. Und das ist halt beim Eventsourcing erstmal so nicht gefordert.",
+      "start": 875370,
+      "end": 910778,
+      "confidence": 0.93333983,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Jetzt bei der Blockchain, wenn man sich damit beschäftigt, ist es ja auch so, dass sie zuerst mal recht viel importieren muss, um den letzten Stand auch zu bekommen. Ist es dann beim Event Sourcing auch so, wenn ihr den aktuellen Status bekommen will von Andis Grundstück oder von meinem Bankkonto, dass ihr dann zuerst mal alles zusammenrechn muss oder wird der noch irgendwo extra abgelegt?",
+      "start": 910874,
+      "end": 931670,
+      "confidence": 0.91332376,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Standardberater Antwort es kommt darauf an. Natürlich ist das die Antwort. Also der Punkt ist, wenn du jetzt rein nur die Events sammelst, das sind quasi die Veränderungen, die im Laufe der Zeit stattfinden. Du speicherst nicht den Status quo, sondern du speicherst die Veränderungen, die zum Status quo im Lauf der Zeit geführt haben. Wenn du dann natürlich den Status quo wissen möchtest, dann hast du den erstmal nicht. Das heißt, dann musst du in der Theorie erst mal hingehen und quasi von null an, von Anbeginn der Zeit an sozusagen alle deine Events, wie du halt gesammelt hast, musst du einmal abspulen. Das nennt sich dann sogenannter Replay. Dann kannst du die halt entsprechend aufsummieren oder sonst wie aggregieren. Du musst vielleicht nicht alle Events verarbeiten, vielleicht beschränkst du dich auf einen Teil davon, weil dich z.B. nur die Events interessieren, die sich auf dein Konto beziehen. Aber grundsätzlich muss man das machen. Also zum Schreiben ist das super effizient, weil du einfach nur an eine Liste hinten was dran hängst. Zum Lesen ist das Ganze, sagen wir mal suboptimal. Das ist eines der Standardprobleme bei Eventsourcing. Das lässt sich aber sehr, sehr einfach lösen, weil dadurch, dass die Events ja unveränderlich sind, wie gesagt, ich komme noch mal auf das Konto Beispiel zurück, auch die Buchungen auf deinem Konto sind unveränderlich im Nachhinein. Und wenn du dir jetzt deine Kontoauszüge der letzten 10 Jahre nimmst und die einmal von vorne bis hinten durchrechnest, kommt halt irgendein Kontostand für heute raus. Und dieser Kontostand für heute, der kommt raus, egal ob du jetzt in den nächsten vier Wochen Transaktionen noch machen wirst oder nicht, das spielt überhaupt keine Rolle. Und das heißt, du kannst immer mal wieder einen Zwischenstand sozusagen speichern, von dem aus du dann einen Replay starten könntest und dann hast du es als Ergebnis. Ob du jetzt den Kontostand von heute nimmst und einfach noch drei Tage dazu rechnest oder ob du den Kontostand der letzten 10 Jahre erstmal from scratch aufbaust und dann die nächsten drei Tage dazu nimmst, das kommt auf selbe raus, nur das eine geht halt sehr viel schneller als das andere. Aber das ist eine reine Performance Optimierung.",
+      "start": 931830,
+      "end": 1045610,
+      "confidence": 0.93086016,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Das klingt so, als würde man das Snapshot nennen.",
+      "start": 1045770,
+      "end": 1048314,
+      "confidence": 0.89035666,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Ja, genau. So heißt das auch. Und da muss man aufpassen, weil du halt normalerweise nicht einen großen Pool von Events hast, wo einfach alles reingeworfen wird, völlig wahllos, sondern die Events sind schon in der Regel so gebaut, dass du an den Metadaten der Events erkennst, z.B. zu welchem Konto gehören die denn? Oder um bei dem Bücherei Beispiel zu bleiben, zu welchem Buch gehören diese Events denn? Und dann würde man sich eben nur die Events zu einem bestimmten Konto oder nur die Events zu einem bestimmten Buch geben lassen. Und das sind natürlich sehr viel weniger als alle Events von allem, was du im System hast. Und damit ist dann auch ein Replay nicht so wahnsinnig aufwendig in der Regel. Und insofern ist ein Snapshot wirklich nur eine sehr spezielle Optimierung, wo ich auch erst dann darüber nachdenken würde, das einzusetzen, wenn ich wirklich ein Performance, nachweisliches Performance Problem habe, weil ich zu viele Events replayen muss.",
+      "start": 1048442,
+      "end": 1098772,
+      "confidence": 0.94019544,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Das, was du gerade gesagt hast, bringt mich noch mal zu einer nächsten Frage, denn nehmen wir mal das Beispiel einer öffentlichen Bibliothek wieder. Wir haben eine Bibliothek, die hat mehrere Mitglieder und jedes Mitglied hat irgendwie so einen Ausweis oder so. Und eine Bibliothek hat auch ganz viele Bücher. Habe ich jetzt ein Event Log für jedes Buch und wenn der Wolfgang jetzt seinen. Der Wolfgang heiratet jetzt, der verändert seinen Nachnamen oder nimmt den Nachnamen seines Partners oder seiner Partnerin an. Das bedeute, er geht dann noch zur Bibliothek und verändert seinen Ausweis, den Namen auf dem Ausweis, das ist ja ein Eintrag und nach einem Jahr verlängert Wolfgang den Ausweis, dann hat er einen zweiten Eintrag. Aber das ist ein eigenes Event Sourcing Log oder Eintrag für den Ausweis. Und dann gibt es noch mal für ein Buch ein eigenes Event Sourcing. Wie nennt man das? Liste Event Sourcing. Liste Eintrag.",
+      "start": 1098836,
+      "end": 1152416,
+      "confidence": 0.93837535,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Also ja, also erstmal, also du kannst natürlich alle diese Events, die Events, die du pro Buch hast und die Events, die du pro Ausweis hast, das kannst du schon alles in einer ein großen Liste sozusagen speichern. Wie gesagt, das kriegt man über die Metadaten, kriegt man das gut auseinander dividiert nachher wieder. Es hat einen riesengroßen Vorteil, dass in einer einzigen großen Liste zu machen, dass du nämlich eine globale Ordnung hast, wo du halt exakt sagen kannst, was wann vor oder nach welchem anderen Event passiert ist, was du nicht mehr hättest, wenn du das ganze in mehrere kleinere Listen zerlegen würdest, weil du dann dich auf Zeitstempel oder ähnliches verlassen musst. Jetzt ist natürlich der Punkt, ich will aber, das habe ich eben gesagt, ich will halt nicht immer alle Events auswerten müssen. Also insofern hole ich mir unter Umständen nur ein Subset und dieses Subset, das kann ich dann entsprechend replayen und das geht natürlich dann sehr viel schneller. Und wie ich diese, also deine Frage war ja, wie diese Subsets quasi heißen, aus technischer Sicht spricht man da häufig von Streams, weil das einfach mehrere Events sind, die sozusagen einen Datenstrom bilden und alle Datenströme, alle Eventstreams zusammen, das ist quasi ein einziger riesiger globaler Event Stream. Es gibt einen Standard von der CNCF, also von der Cloud Native Computing Foundation, die haben ein Format definiert, wie Events so aussehen sollten, welche Datenstruktur man da verwenden sollte und die sprechen an der Stelle vom sogenannten Subject, also quasi dem Themenbereich, wo das Event sozusagen dazugehört. Also ob man das jetzt Event Stream nennt oder ob man jetzt am Ende von Subject redet, das ist unterm Strich dasselbe.",
+      "start": 1152608,
+      "end": 1241818,
+      "confidence": 0.943888,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Und was steht da so drinnen in so einem Event?",
+      "start": 1241914,
+      "end": 1243866,
+      "confidence": 0.979307,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Du hast in der Grundstruktur, hast du in einem Event sicherlich drinstehen, also den Typ des Events, z.B. also Typ des Events wäre so was ganz allgemeines wie Buch wurde verlängert oder Buch wurde ausgeliehen oder Ausweis wurde verlängert, Buch wurde zurückgegeben, das sind Typen von Events. Dann hast du Zeitstempel drin, weil du wissen willst, wann ist das passiert, dann hast du das Subject drin, damit ich eben Ausweis wurde verlängert von Andy unterscheiden kann von Ausweis wurde verlängert von Wolfgang, von Ausweis wurde verlängert von Golo, dass man da halt sagen, gezielt sagen kann, okay, gib mir alle Events für Wolfgang, weil mich interessiert gerade nur der Account von Wolfgang. Insofern das Subject würde mit drinstehen und dann natürlich die konkreten Daten, die Nutzdaten, der Payload. Wenn du jetzt z.B. sagst, Buch wurde verlängert, ist die erstbeste, welches Buch denn? Also vielleicht sollte irgendwie eine ISBN drinstehen, wie lange wurde das verlängert? Also für wie viel Wochen ist es verlängert? Das wäre auch so eine Information, die drinsteht. Also du schleppst nicht jedes Mal in jedem Event den kompletten Datensatz mit, sondern quasi nur den Ausschnitt des Datensatzes, der sich verändert hat bzw. Der eine naheliegende Information wäre für, wenn du mir sagst, keine Ahnung, ich habe ein Buch ausgeliehen, was ist die erste Frage, die ich dir stellen werde und welches, also sollte in dem Event wahrscheinlich als Nutzdatum drin sein? Wie gesagt, die ISBN Nr. Vielleicht ein Titel, Autor, sowas in der Art.",
+      "start": 1243938,
+      "end": 1327700,
+      "confidence": 0.9222814,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Also alles, was ich auch brauche, wenn ich das neu berechnen will, den Status und alles wieder durchgehen muss, neu berechnen, dass sie die Informationen für dieses Event, um quasi den nächsten Status zu berechnen, dass sie alle Informationen zur Verfügung habe.",
+      "start": 1327820,
+      "end": 1342180,
+      "confidence": 0.95840144,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Ja, genau. Und das ist halt ganz besonderer Punkt, das möchte ich gerade noch mal betonen, weil es wird dann so oft geguckt, ja dann haben wir da halt irgendwie Datenänderungen, also es ist irgendwie so ein Delta sozusagen von einem Update sozusagen, könnte man technisch formulieren. Ein ganz, ganz, ganz wichtiger Punkt ist aber dieser Event Typ, den ich eben angesprochen habe, so was wie, das Buch wurde verlängert, das Buch wurde zurückgegeben, der Account wurde verlängert, was auch immer, weil damit hast du die Intention für diese Datenänderung gecaptured, weil du halt nicht nur weiß, ja da ist irgendwie ein Datum angepasst worden oder ja, da ist halt irgendwie der Zustand, der Ausleihstatus hat sich geändert, du weißt, warum es sich geändert hat. Und das ist ein ganz, ganz, ganz wichtiger Punkt, weil dir das was darüber erzählt, warum Dinge passieren, das ist die eigentliche Business Story, die dir erzählt wird. Und das ist was, was in ganz vielen Systemen immer fehlt, wo du dann nur siehst, ja okay, also selbst wenn ich jetzt irgendwie so eine Historientabelle führe und ich habe halt den Datensatz vorher und ich habe den Datensatz nachher, ja cool, das erinnert mich persönlich immer so an diese, kennt ihr diese Suchbilder, wo man so als Kind zwei Bilder nebeneinander, somit ja, die Bilder unterscheiden sich in 10 Details, finde diese 10 Unterschiede, finde diese 10 Fehler sozusagen im zweiten Bild. Und so ungefähr ist das, wenn du ein, wenn ich dir einfach nur zwei Varianten eines Datensatzes zeige und sage, ja, haha, guck mal hier, der da, derselbe Datensatz zu zwei unterschiedlichen Zeitpunkten, guck mal, ob du die Unterschiede findest und dann viel Spaß dabei herauszufinden, warum sich das geändert hat. Da kannst du nur raten und dann ist hoffentlich aus der Änderung der Daten, mit viel Glück kannst du darauf rückschließen, wahrscheinlich, okay, das Rückgabedatum hat sich geändert, naja, dann ist das Buch vermutlich verlängert worden, weil dir gerade kein anderer Grund einfällt, warum sich das Rückgabedatum geändert haben könnte. Aber das ist halt nur eine implizite Annahme und das wird bei was Trivialem, wird das funktionieren. Mach den Business Case komplexer, dann wird das nicht mehr funktionieren, weil es nicht mehr eindeutig ist.",
+      "start": 1342260,
+      "end": 1457694,
+      "confidence": 0.9233893,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Also schreibst du eigentlich mit in die Daten das trigger Event.",
+      "start": 1457782,
+      "end": 1461326,
+      "confidence": 0.97829,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Richtig, genau. Also ganz blödes, dein Nachname hat sich geändert, ja cool, warum denn? Hast du geheiratet? Hast du dich scheiden lassen? Hast du deinen Namen aus welchen Gründen auch immer ändern lassen? Oder, oder, oder. Und das kann ja für eine fachliche Weiterverarbeitung, kann das ja eine extreme Relevanz haben. Und es wäre ja super peinlich, wenn du als Stadtbibliothek dir überlegst immer, wenn jemand heiratet, dann keine Ahnung, dann schicken wir einen Gutschein so über hey, sie können irgendwie mehr Bücher ausleihen. Das ist jetzt ein dummes Beispiel, aber dann machen wir irgendwas tolles. Und es wäre ja super peinlich, jemandem, der sich gerade hat scheiden lassen, eine Karte zu schicken. Alles Gute zur Hochzeit. Also wie dumm willst du dastehen? Und da ist natürlich super wichtig zu wissen, nicht nur es haben sich die Daten geändert, sondern auch warum haben sich die Daten geändert? Das ist ein ganz entscheidender Punkt. Deswegen ist dieser Event Typ so wichtig.",
+      "start": 1461478,
+      "end": 1509440,
+      "confidence": 0.92327756,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Aber wenn ich jetzt noch mal auf eine Metaebene gehen darf, gerade zum Verständnis, weil für mich war das am Anfang auch immer so ein großes Thema, was Event Sourcing eigentlich ist. Also wir sprechen da jetzt nicht von einer Technologie oder von irgendeiner Implementierung oder Umsetzung, sondern es geht wirklich mehr um so, ich würde fast sagen Mindset Shift, wie man Daten abspeichert, modelliert, wie man so einen Flow modelliert. Man könnte natürlich ganz normal eine CRUD Application haben, die einfach das Datum ändert und man könnte es wahrscheinlich auch irgendwie hinten weglocken. Aber das ist dann schon Implementierung und weniger, wie man eigentlich die Modellierung macht und die Architektur. Seht ihr es richtig?",
+      "start": 1509520,
+      "end": 1545882,
+      "confidence": 0.9120519,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Genau. Also Event Sourcing ist definitiv keine Technologie. Es ist ein Konzept oder ein gedankliches Modell, wie man Datenpersistenz umsetzen kann.",
+      "start": 1545946,
+      "end": 1555706,
+      "confidence": 0.93269145,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Vielen Dank für die Erklärung. Jetzt habe ich mich natürlich gefragt, wir sind natürlich schon auf ein paar mehr oder weniger Vorteile aufmerksam geworden. Ich sage mal, man weiß, was geändert wurde, warum etwas geändert wurde, wann etwas geändert wurde. Aber die Keyfrage, welches Problem löst das eigentlich? Die ist mir, also ich kann mir zwar irgendwie ein paar Sachen denken, aber ich denke, du hast da noch mehr in petto.",
+      "start": 1555858,
+      "end": 1579528,
+      "confidence": 0.9408141,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Also es ist tatsächlich nicht nur das eine Problem, was du löst. Also es fängt erstmal mit der Nachvollziehbarkeit an. Du kriegst Nachvollziehbarkeit rein, warum sich Dinge geändert haben, wie sie sich entwickelt haben. Du kriegst quasi Transparenz rein. Das wäre ja das, was eben bei der Bank, wo ich sagte, na ja, das ist irgendwie auch ganz wichtig, dass du nachvollziehen kannst, wie ist dein Kontostand zustande gekommen? Dann ist ja oft so der ja, okay, wir haben den Status quo, wie haben die Daten noch mal vor drei Monaten ausgesehen? Ja, das ist mit Eventsourcing ganz einfach. Mach halt ein Replay und hör bei den Events von vor drei Monaten auf, den Replay zu machen. Dann hast du den Status von vor drei Monaten wiederhergestellt. Also du kannst jeden x beliebigen Zeitpunkt der Vergangenheit rekonstruieren im Nachhinein. Das heißt auch, du kannst auch so was wie was wäre wenn Analysen machen. Also bei dem Kontoauszugsbeispiel zu bleiben. Wie viel Geld hättest du denn heute auf der deinem Konto, wenn du nie Miete gezahlt hättest? Dann mach halt ein Replay über alle Events, aber lass die Events, wo Miete gezahlt wurde, lass die einfach mal außen vor, lass die aus der Berechnung raus. Lohnt sich Lotto spielen? Also wie oft hast du im Lotto gewonnen und wenn ja, wie viel? Und wie viel hast du im Laufe deines Lebens dafür ausgegeben? Das heißt also, das kann ich jetzt unendlich fortsetzen. Das heißt, wir können ganz viele Fragen beantworten. Also es geht so in Richtung Analysen und Reports und so. Wir können ganz viele Fragen beantworten auf der Basis von Event Sourcing, von denen heute noch keiner weiß, dass sie morgen mal gestellt werden werden. Weil der Punkt ist, dass das Datenmodell, dadurch, dass du die, dass du die Veränderungen im Lauf der Zeit kennst, das ist so ultra flexibel und da kriegst du so tiefe Insights, dass du ganz viel über diese Domäne halt erzählen kannst. Prognosen, Zeitreihen, Analysen und Co. Und vergleich das mal mit einer klassischen Tabelle, wo du halt den Kontostand speicherst, wenn du da willst, ja, wie war der Kontostand vor drei Monaten? Das ist die einzige Antwort, keine Ahnung, wissen wir nicht, müssen wir halt Zusatzfeld einführen, wo wir halt immer den Kontostand von vor drei Monaten noch mit tracken, was aufwendig wird. Und du hast vor allem, wenn du heute die Frage stellst, musst du ja erstmal drei Monate warten, bis du erstmals eine sinnvolle Antwort liefern kannst. Mit Eventsourcing kannst du alle diese Fragen jetzt sofort und zwar rückblickend auf den Daten der vergangenen 10 Jahre oder wie viel du halt hast, beantworten. Heißt auch, du kannst sehr zielgerichtete Analysen fahren. Du kannst hingehen und aus deinen Daten andere Modelle formen. Also wenn jetzt keine Ahnung, vielleicht interessiert dich gar nicht Der Kontostand, vielleicht willst du wissen, die top ten Zeitpunkte, wo der Kontostand, also die andersrum, die Zeitpunkte, die top ten. Okay, ich weiß gerade nicht, wie es richtig ist. Egal, man versteht glaube ich, was ich meine. Die top ten Zeitpunkte, wo du jeweils den höchsten Kontostand hattest. Also was waren die 10 Male im Lauf der Vergangenheit, wo du den höchsten Kontostand hattest? Kann ich dir eine Tabelle daraus basteln, die wir über Events befüllen lassen, wo das drin steht. Jetzt geht es aber nicht nur in Richtung Analyse und Report Audit Log. Vielleicht bist du in einer Branche tätig, wo ein Audit Log gesetzlich vorgeschrieben ist oder Maschinensteuerung. Du willst wissen, wie ist die Maschine in diesen komischen Zustand gekommen, in dem sie ist. Es ist praktisch, wenn deine Daten dir die Story erzählen, was auf der Maschine alles passiert ist und du das nachstellen kannst, Schritt für Schritt. Das heißt, da geht sogar noch in Richtung Debugging, Fehlersuche und Co. Also man merkt schon, das ist eine ziemliche. Also es ist nicht nur ein Problem, was du damit löst, es ist schon eine ganze Latte an Problemen, die du lösen kannst oder wo es dir zumindest sehr viel einfacher gemacht wird. Und da wird dann so gerne ja, das kriege ich aber auch mit Logging hin oder das kriege ich aber auch hin mit Historientabellen oder ähnlichem. Natürlich kriegst du die Informationen, wie deine Maschine in den Zustand gekommen ist, auch über ein Login, dann steht es halt da drin. Aber das Log ermöglicht dir ja nicht, eine vollumfängliche Rekonstruktion deiner Business Historie zu jedem x beliebigen Zeitpunkt wiederherzustellen. Und wie gesagt, bei Historientabellen fehlt dir die Intention, da fehlt dir die Absicht, die Semantik, warum Dinge passiert sind. Und das kriegst du so halt nur auf diesem Weg hin.",
+      "start": 1579704,
+      "end": 1826256,
+      "confidence": 0.9338895,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Heißt es, du hast auch automatisch eigentlich ein Testset durch die replay Funktion? Also wenn du irgendwas änderst oder so, kannst du es wieder abspielen und checken, ob es immer noch funktioniert, ob es richtig rauskommt. Also du kannst es auch als Testdaten dann verwenden.",
+      "start": 1826328,
+      "end": 1840370,
+      "confidence": 0.9133653,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Ja, tatsächlich. Vorhin im Vorgespräch hatte ich ja schon mal ganz kurz geteasert, dass sogar in Doom Event Sourcing drinsteckt. Also in dem Computerspiel von Mitte der er Jahre und Doom unter der Haube. Jedes Mal, wenn du als Spieler eine Taste drückst oder wenn ein Monster sich bewegt, generiert das ein Event. Diese Events werden gesammelt und die sind ultra praktisch, weil man die übers Netzwerk schicken kann. So funktioniert das Multiplayer Protokoll von Doom. Und wenn ein Spieletester z.B. sagt, ja, also an der und der Stelle, keine Ahnung, da konnte ich durch eine Wand durchgucken, durch die ich nicht hätte durchgucken sollen. Er reproduziere doch mal diese eine Stelle im Spielverlauf. Das ist unmöglich. Also selbst mit xy Koordinate auf pixelgenau, bla, kriegst du das nicht hin. Wenn du aber exakt das Spiel einfach wieder abspulen lassen kannst und quasi vor und zurückspulen kannst, du kriegst genau die Situation reproduziert, inklusive dem Weg, wie die Person in diese Situation kann. Und das ist halt schon mega hilfreich.",
+      "start": 1841270,
+      "end": 1899778,
+      "confidence": 0.92722535,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Andi hat schon so ein Smile und Andi zittert schon und will eigentlich ständig was sagen, weil wir haben ja eine eigene Doom Episode 146 gemacht, weil der Andi so großer Doom Fan ist und das technisch alles erklärt hat und jetzt sitzt er schon da und zittert und will was sagen.",
+      "start": 1899874,
+      "end": 1913890,
+      "confidence": 0.9275808,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Also an die Bitte, ich weiß 100 % wovon Golo redet und es ist Wahnsinn, ich hatte das gar nicht auf dem Zettel, dass man, ich sag mal, Events vor mit der Art und Weise, wie Doom eigentlich die Tastenanschläge mitspeichert. Weil das ist nämlich eigentlich, ich sag mal, die Demo Funktion, die Videoaufnahme Funktion von genau, von Doom. Und das war damals aber auch die Technologie, wie Doom es ermöglicht hat, zu den frühen Zeiten Multiplayer zu erlauben, weil die haben nämlich immer nur diesen Tastenanschläge zu dem anderen Server gesendet und nicht den Stand, wo der Spieler gerade in dem Spiel auf der Map ist. Also es bedeutet, das waren einfach nur wirklich ein paar simple Bytes, die über die Leitung geschoben wurden. Oder ja, jetzt, ich weiß jetzt nicht damals, ob man das jetzt wirklich Events nennen kann, aber schon irgendwie so ein bisschen. Denn das ermöglicht jetzt gerade, weil es gibt ja auch Forks von Doom inzwischen, die Doom auf die aktuelle Grafik heben, auch mit den Maps. Und weil diese Tastenanschläge von den Spielern von 1995 und so weiter und so fort alles in Text sind, bedeutet das eigentlich, ihr seht nicht das Pixel Video, ihr seht also eigentlich den Replay in aktueller Grafik. Und das muss man natürlich schon sagen, Kudos. Und ja, Gullo, was soll ich sagen? Danke, dass du die Connection gemacht hast.",
+      "start": 1913970,
+      "end": 1992784,
+      "confidence": 0.9103064,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Ja, worauf ich gerade nämlich hinaus wollte und das ist so lustig, weil das klingt jetzt voll so, als hätten wir es abgesprochen, haben wir aber nicht. Ich wollte nämlich sagen, diejenigen, die Doom gespielt haben, ihr erinnert euch vielleicht, wenn man das Spiel gestartet hat und das Startmenü halt kam, wo man sagen konnte, New Game, Load Game Options und so weiter, da lief im Hintergrund, lief so ein Demospiel und da kann man sich ja schon fragen, wie haben die das damals gemacht? Ich meine, das war MS DOS Zeiten, es gab noch keine CDs, das war auf drei, dreieinhalb Zoll Disketten oder so war das Spiel drauf. Wir haben die da um alles in der Welt ein Video drauf untergebracht. Und der Punkt ist, es war kein Video, das war tatsächlich die Spiele Engine, die da live abgelaufen ist, nur deshalb der Input nicht vom Keyboard und der Maus kam, sondern dass der Input halt aus so einem gespeicherten Event Stream quasi kam. Und also man hat es damals nicht Eventsourcing genannt, weil es den Begriff damals noch nicht gab, aber es gibt ein Interview mit John Carmack, wo er sich darüber mal geäußert hat und wo er halt diesen Mechanismus beschreibt. Und das ist halt Eventsourcing in Reinkultur im Prinzip. Und das finde ich halt sehr faszinierend. Es ist kein neues Konzept, es ist nur das halt, irgendwann wurde halt ein Label draufgeklebt, damit man halt mal weiß, wie man das Ding nennt. Aber das zeigt halt sehr schön, was man damit alles anstellen kann.",
+      "start": 1992912,
+      "end": 2063970,
+      "confidence": 0.94209284,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Und um noch mal diese Bingo Karte ins Spiel zu bringen, in den letzten 10 Minuten hatten wir auch das Wort Cloud erwähnt, Doom wurde erwähnt, Enterprise, also inzwischen müssten da schon echt paar Treffer sein. Aber was mich jetzt mal interessiert, weil du hast natürlich auch schon das klassische Log erwähnt. Theoretisch kann ich ja in meinem Source Code überall irgendwie Zeilen reinpacken, die mir dann insert in der Datenbank Teil Tabelle machen, wo ich das dann auch alles habe. Meine Frage ist, wie verändert sich eigentlich der Programmierstil, wenn ich Event Sourcing haben möchte? Ist es wirklich so, dass ich dann mit aspektorientierter Programmierung arbeite und dann automatisch überall da Hooks reinnehme und oder wie? Weil im Endeffekt, also ich stelle mir das ganz brutal einfach vor, ich habe irgendwo eine Library, die ist als Singleton deklariert und die hole ich mir einfach überall rein und habe überall Zeilen Change state oder irgendwie sowas. Verstehst du, was ich meine? Und das muss ich zugeben, hört sich total dreckig an.",
+      "start": 2064090,
+      "end": 2127358,
+      "confidence": 0.91964453,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Oder vielleicht, wenn ich da noch was draufsetzen darf. Also dieser Code muss ja irgendwie getriggert werden. Also es muss ja irgendwo ein Code sein, der mir sagt, okay, wenn jetzt der Nachname geändert wurde, was bedeutet das? Oder was wird dann eigentlich geändert? Also wo lebt denn dieser Code?",
+      "start": 2127414,
+      "end": 2143358,
+      "confidence": 0.934241,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Das ist das Schöne. Also weil die Frage kommt auch gerne so, ja, aber wird das nicht komplex? Und jede Änderung hat ja dann irgendwie mehrere Stufen, die sie nach sich zieht. Das Speichern des Events und dann das Anpassen irgendwie von irgendwelchen Lesemodellen oder Zusammenfassungen, die darauf basieren und und und. Und das Lustige ist, tatsächlich wird dann Code eigentlich sogar sehr viel einfacher, weil man kann den Code nämlich sehr viel besser strukturieren. Also um ein blödes Beispiel zu machen, nehmen wir mal dieses Stadtbibliotheks Beispiel und stellen wir uns mal kurz vor, wir würden das jetzt in Software gießen, dann würdest du einen Webserver bauen, der halt ein paar Routen hat, sowas wie leihe Buch aus, verlängere ausgeliehenes Buch, gib Buch zurück, sowas. Und nehmen wir mal die leihe Buch aus Route, die triggert also irgendeinen Händler und dieser Händler, der guckt halt nach, ist das Buch verfügbar? Und so weiter. Und der folgt gewissen Business Regeln, wie viele Bücher darfst du gleichzeitig ausleihen, du kannst kein Buch ausleihen, was schon ausgeliehen wurde und so weiter. Der führt erst mal diese ganze Validierungslogik aus und der kommt zu irgendeinem Schluss, was er mit deinem Wunsch, ein Buch ausleihen zu wollen, was er damit macht. Der trifft eine Entscheidung, entweder darfst du das Buch ausleihen oder darfst das Buch nicht ausleihen. Und wenn er zu dem Schluss kommt, du darfst das Buch ausleihen, dann generiert er ein Event, nämlich Buch XY wurde jetzt ausgeliehen und das speichert er in einem Event Store. Also so nennt man die Datenbank, die ein solches Event Log sozusagen verwaltet. Und das war erstmal, das ist eine ganze Anwendung, die sich um die Business Logik kümmert. Das heißt, das ist erstmal eine sehr kleine, überschaubare Anwendung, die sich im Wesentlichen auf die Fachlogik konzentriert. Dass das Event am Ende noch in der Datenbank geschrieben wird, ist eigentlich relativ uninteressant. Und das Schöne ist, dass du da den Fokus sehr, sehr gut auf die Fachlogik, auf die Business Rules und Co. Legen kannst. Das kannst du sehr schön testen und natürlich kannst du komplexe Businesslogik haben, aber technisch ist das erstmal relativ trivial. So, und jetzt kommt der springende Punkt. Jetzt hast du nämlich auf der anderen Seite sozusagen, hast du den Wunsch, naja, keine Ahnung, ich will z.b. eine Liste aller ausgeliehenen Bücher haben oder ich will wissen, wer ist überfällig mit der Rückgabe oder so. Und das Schöne ist, das musst du nicht alles in diesen Web Service mit reinbauen, sondern du kannst jetzt hingehen und baust z.B. einen zweiten Web Service, der hängt sich an diese Datenbank dran und immer wenn ein Event gespeichert wurde, kriegt der eine Notification. Das heißt, du hast einen Service, der kriegt diese Events als Input, der kriegt jetzt z.B. mit, ha, es wurde gerade ein Buch ausgeliehen oder es wurde gerade ein Buch zurückgegeben. Und der hat jetzt eine ganz bestimmte, einfache Aufgabe. Also wenn du z.b. eine Liste haben willst, welche Bücher sind gerade alle ausgeliehen, was ist dafür relevant? Naja, der hängt sich an die Events dran und immer wenn ein Buch ausgeliehen wurde, macht er sich quasi eine Notiz auf einem Zettel, folgendes Buch wurde gerade ausgeliehen. Wenn ein Buch zurückgegeben wurde, dann streicht er auf diesem Zettel das Buch wieder durch, weil jetzt ist es ja zurückgegeben, jetzt ist es ja nicht mehr ausgeliehen. Wenn ein Buch verlängert wurde, das hat keine Auswirkungen auf den Ausleihstatus. Insofern ignoriert er dieses Event. Wenn du deinen Ausweis verlängerst, das Event wird auch ignoriert. Das hat auch keine Auswirkungen darauf, ob das Buch ausgeliehen ist oder nicht. Und wenn dann jemand kommt und ja, ich würde jetzt gerne wissen, welche Bücher sind gerade alle ausgeliehen? Dann drückst du ihm den Zettel in die Hand. Also auf gut Deutsch, du lieferst die Tabelle aus, in der du das gespeichert hast. Das heißt, du hast einen Service. Der erste Service, den ich eben beschrieben habe, das ist der, der sich sozusagen um das Schreiben kümmert, der die eigentliche Geschäftslogik ausführt, der die Validierung durchführt und der quasi von einem Wunsch des Users zu einer Entscheidung in Form eines Events kommt. Und der zweite Service, das ist ein Service, der auf Basis der Events, die so passieren, irgendwelche Modelle aufbaut, irgendwelche Datenmodelle aufbaut, wo Antworten drin gespeichert sind, nach denen fragen, nach denen jemand die jemand stellen könnte. Und ob du jetzt. Und auch dieser Service ist für sich genommen wieder relativ klein und einfach, weil viel mehr, als wenn Event X passiert, ja, dann mache in der Datenbanktabelle halt Y. Viel mehr muss der ja auch nicht machen. Und diesen Service, diesen zweiten Service, den kannst du ja in unterschiedlichen Ausprägungen haben. Und damit kannst du sehr viele, sehr kleine Services bauen, die quasi im Zusammenspiel eine große Anwendung bilden. Und das ermöglicht dir sehr zielgerichtet zu wo gehört was hin? Und das lässt sich sehr fein dosiert sozusagen einsetzen. Und weil ich jetzt gerade gesagt habe, dann mach hierfür einen Service, mach dafür einen Service. Das heißt nicht, dass du nachher eine microservice Architektur mit nächstes Buzzword, dass du eine microservice Architektur mit 50 Services am Ende hast. Du kannst das natürlich auch alles in einer Anwendung, in einem Monolithen sozusagen bündeln. Aber der Punkt ist, dass du diese gedankliche Trennung haben solltest. Also das, dass der Weg sozusagen in das System rein, wo Events entstehen, dass das ein anderer Weg ist als der Weg von ein Event ist passiert. Und was bedeutet das für irgendein Datenmodell? Das sind zwei komplett getrennte Dinge.",
+      "start": 2143454,
+      "end": 2436384,
+      "confidence": 0.92517966,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Sind wir mal ganz simpel und ganz pragmatisch und praktisch unterwegs. Ich habe jetzt eine REST API und die quatscht mit einer Datenbank.",
+      "start": 2436512,
+      "end": 2444160,
+      "confidence": 0.9170313,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Moment mal, Andi, REST API quatscht mit der Datenbank. Wie kann eine API mit der Datenbank. Quatsch.",
+      "start": 2444240,
+      "end": 2450088,
+      "confidence": 0.89416057,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Pass auf, ich habe irgendeinen Service. Streich das Wort Rest API. Ich wollte nur was für die Bingo Karte liefern. Du hast das Konzept noch nicht verstanden, Wolfgang. Deswegen, wir müssen die Bingo Karte vollkriegen. Und ich denke mal, dass REst irgendwo auf einer bingo Karte hier gerade da ist. Du hast einen Service, der quatscht mit einer Datenbank. Und dieser Service, der abstrahiert die Datenbank durch eine Klasse, keine Ahnung, Klasse Datenbank und dann steht da write book record oder so, ist ja auch egal. Das bedeutet, Operationen auf der Datenbank werden abstrahiert. Bedeutet das eigentlich, ich habe dann irgendwie in der writebook Record Methode ein Call Make Event oder so und der triggert dann Event und das geht an ein anderes System und nimmt das dann entgegen? Oder wie darf man sich das jetzt vorstellen?",
+      "start": 2450224,
+      "end": 2495118,
+      "confidence": 0.937629,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Ja, so ungefähr. Warum nur so ungefähr? Weil du eigentlich kein Writebook Record hättest, weil du schreibst keine Records mehr, du schreibst keinen Book Record mehr. Das zentrale Element, und das ist, glaube ich, das schwierigste an der ganzen Geschichte, das auf die vom, das ist wie so ein Schalter, den du im Kopf umlegen musst. Der springende Punkt ist, es geht nicht um die Daten, es geht nicht um die Substantive wie Buch, Ausweis und so weiter. Es geht um die Verben, es geht um die Prozesse ausleihen, verlängern, zurückgeben. Und der Punkt ist, wenn du sagst, du schreibst einen Book Record, dann legst du den Fokus auf Buch, auf das Substantiv. Das ist nicht das, was du machst, sondern du gehst hin und du schreibst einen einen Datensatz, der den Vorgang repräsentiert der Veränderung. Also du würdest ein Buch wurde ausgeliehen, Record schreiben oder ein Buch wurde verlängert, record schreiben. Das heißt, dein Service, den du gerade beschrieben hast, der würde einfach hingehen, der kriegt von außen einen Trigger, ich will ein Buch ausleihen, der läuft irgendwelche Logik und der geht dann meinetwegen über eine abstrahierte Klasse an die Datenbank und sagt dann hier in der Tabelle, wo ich alle meine Events sammle, da füge jetzt einen neuen Datensatz ein. Und zwar einen Datensatz vom Typ Buch wurde ausgeliehen record. Und dann kriegst du diese Historie der Veränderungen. Also das ist ganz, ganz, ganz wichtig, dass man da in Verben denkt und nicht in Substantiven. Und das ist ja, wenn wir mal ehrlich sind, auch das, was eigentlich Leben in ein System reinbringt. Ich meine, bestell was in einem Online Shop. Was machst du denn? Du gehst ja nicht zum Online Shop und denkst dir Warenkorb, Artikel, jetzt gehen wir schon die Wörter aus, Auftrag, Bestellung. So denkst du ja nicht, sondern wenn du irgendwie dann, wenn dich jemand fragt, so, ja, was hast du denn da gemacht? Dann sagst ja, stell dir vor, ich habe in der Gegend rumgestöbert, stöbern, ich habe gestöbert und dann habe ich was gefunden und dann habe ich das in meinen Warenkorb gelegt und dann habe ich nachher eine Bestellung aufgegeben und dann wurde die abgeschickt und dann haben die meine Kreditkarte belastet und so. Weiter. Das heißt, das, was Leben in die ganze Sache einbringt, das ist nicht, dass es ein Warenkorb gibt und dass es eine Kreditkarte gibt und oh, dass du das ist Artikel gibt, sondern das, was Leben in die Sache reinbringt, ist, dass du was, dass du da stöberst und dass du was findest und dass du dafür halt bereit bist, Geld auszugeben, dass du investierst oder wie auch immer man das jetzt nennen will. Und das ist der Punkt. Das ist das, was man festhalten will. Weil das, das, ich meine, stell dir vor, du kommst abends nach Hause und deine Frau, deine Freundin, dein Mann, dein Freund, wer auch immer, fragt dich und wie war dein Tag? Und dann sagst du ja auch nicht Telefon, Chef, Akten, Computer. Dann sagst du stell dir vor, heute hat mein Chef angerufen. Und das Spannende ist nicht, dass es ein Chef ist. Das Spannende ist, dass angerufen war und dann ist das und das passiert und der und der Kunde hat sich beschwert und die werben, die bringen das Leben rein. Die willst du festhalten, um spannende Stories und vor allem semantisch reichhaltige Stories erzählen zu können. Das traurige, wenn wir halt so klassische Datenbank Denke machen, ist, dass wir genau vier Verben nur benutzt nämlich create, read, update, delete. Und was für reichhaltige, semantisch sinnvolle, tolle Stories kann man schon erzählen, wenn du halt nur vier blöde Verben zur Verfügung hast? Das ist ja der Vergleich, weil du vorhin das Märchen aus dem Adventskalender angesprochen hast. Ich ziehe da immer den Vergleich. Versuch doch mal, wenn du Kinder hast, versuch denen doch mal ein Märchen zu erzählen, nur mit diesen vier Verben. Und wenn dann so ein Bullshit bei rauskommt wie das Rotkäppchen updatete seine Position in den großen dunklen Wald und der Wolf delete das Rotkäppchen. Das ist halt einfach Mist. Und dann kommst du ganz schnell an den Punkt, ach nee, der Wolfgang, der Wolfgang, Entschuldigung, danke.",
+      "start": 2495214,
+      "end": 2715350,
+      "confidence": 0.92577565,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Ich fresse auch immer mal das Rotkäppchen.",
+      "start": 2715430,
+      "end": 2717460,
+      "confidence": 0.7951971,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Wenn du dann an den Punkt kommst, wo du feststellst, ach verdammt, der Wolf darf das Rotkäppchen nicht deleten, sonst kann der Jäger nachher kein Undelete machen, weil ein Undelete gibt es nicht. Das heißt, was wir machen müssen, der Wolf muss, das ist deleted flag von Rotkäppchen auf true updaten. Wie absurd will man es denn bitte machen? Und wie? So redet kein Benutzer, so redet niemand aus dem Fachbereich. Also wie weit soll sich die Technik denn bitte entfernen von dem, was wir eigentlich machen wollen, nämlich fachliche Probleme lösen? Wie viel cooler ist es, wenn du in einem Code und wenn du in einer Datenbank stehen hast, das Rotkäppchen wurde gefressen und der Jäger hat es gerettet und so weiter. Also da könnte ich, also man merkt, da wird es sehr emotional bei mir und da könnte ich mich immer drüber aufregen, wenn dann halt so, ja aber mit create und read und update und die Lied geht das doch auch. Ja klar, kannst du machen, ist aber halt nicht gut.",
+      "start": 2719800,
+      "end": 2769744,
+      "confidence": 0.9144859,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Also ich würde mal sagen, ja, geiles Nerdmärchen, ich würde einschalten. Ich würde es auf jeden Fall als Hörbuch sogar kaufen, wenn man irgendwie mal ein Rotkäppchen oder irgendwie so ein bekanntes Märchen genau so erzählen würde, so in Datenbankter. Zweitens, je nachdem wie hart mein Tag war, kann das schon sein, so nach dem Motto Chef angerufen, angemeckert.",
+      "start": 2769902,
+      "end": 2789440,
+      "confidence": 0.8817909,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Aber guck mal selbst da, Chef angerufen, angemeckert, was sagst du? Ein Substantiv, zwei. Weil angerufen, angemeckert, das ist das Spannende. Du hast nicht Chef, Telefon, Notizblock.",
+      "start": 2790500,
+      "end": 2801132,
+      "confidence": 0.8602563,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Du hast vollkommen recht, aber wenn ich jetzt zuhöre, dann erinnert mich das an zwei Themen, die auch mal in den letzten paar Jahren irgendwie über meinen Screen geflogen sind. Und zwar würde ich dich bitten, diese jetzt in dieser ganzen Story mal einzuordnen. Das eine ist CQRS, Command Query Responsibility Segregation und das andere ist, besonders mit den Verben, domain Driven Design, also ist sogar relativ einfach.",
+      "start": 2801276,
+      "end": 2824612,
+      "confidence": 0.94569105,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Also CQRS nächstes Passwort, die Command Query Responsibility Segregation, das ist ein Design Pattern, was sagt, du sollst die Verantwortlichkeit für Commands und Queries in deiner Anwendung trennen. OK, super tolle Aussage. Okay, wir sollen irgendwie Commands haben, wir sollen irgendwie Queries haben und das sollen wir gedanklich voneinander trennen. Was ist ein Command? Ein Command ist alles das, wo du als Benutzer oder als Benutzerin was ausführst, was irgendwie den Zustand des Systems ändert. Sowas wie leihe ein Buch aus, weil danach ist ein Buch ausgeliehen worden, das ist definitiv ein anderer Zustand des Systems als vorher. Oder gib ein Buch zurück und man merkt schon in der Formulierung, leihe ein Buch aus, gib ein Buch zurück, verlängere den Ausweis, das klingt schon nach Befehlsform. Das sind Commands, das sind, wenn man es ganz platt formulieren will, Vorgänge, die irgendeinen schreibenden Effekt im System haben. Eine Query auf der anderen Seite, das ist eine Frage, wie viele Bücher sind gerade ausgeliehen, bei welchen Büchern bin ich überfällig, wie viel Mahngebühren muss ich 2024 bezahlen und so weiter. Das sind lesende Vorgänge, die verändern nicht den Zustand des Systems und die erzählen dir was über den Zustand des Systems. Und die Kernaussage von CQS ist, dass du halt schreibende und lesende Vorgänge gedanklich zumindest mal vielleicht auch technisch voneinander trennen solltest. Und das führt bei CQS, das ist so eine der Kernideen bei CQRS, man bricht sich ja immer ganz gerne ab, ein gutes Datenbankmodell zu finden. Es gibt ja in der Datenbanktheorie, gibt es ja die verschiedenen Normalformen und so in der akademischen Welt, da wird ja die fünfte Normalform sehr in den Himmel, also Normalform für die, die es nicht kennen, das ist wie so eine Art Regelsatz, wie man Datenmodelle gestalten kann. Da gibt es fünf verschiedene Varianten von. Und der fünfte Regelsatz, der glänzt sozusagen dadurch, dass der halt keinerlei Daten redundant gehalten werden, das ist alles dedupliziert. Es ist ein Traum für Integrität und Konsistenz. Haken, ich wollte die Adresse von jemandem auslesen, muss jetzt halt ein Join über 27 Tabellen machen. Also toll zum Schreiben, blöd zum Lesen. Das Gegenteil davon wäre die erste Normalform, da denormalisierst du einfach alles, schreibst alles redundant hin, wo du es halt gerade brauchst. Ist ein Traum zum Lesen, weil mehr als ein Select stern from XY brauchst du halt. Dafür ist es halt nicht ganz so toll zum Schreiben, weil du halt an 25 verschiedenen Stellen schreiben, updaten und so weiter müsstest. Und naja, also beides ist irgendwie blöd. Also was macht man in der Praxis? Man trifft sich in der Mitte, nimmt die dritte Normalform und die dritte Normalform, also ist so ein bisschen worst of both worlds, die ist halt weder zum Lesen noch zum Schreiben besonders gut geeignet. Und die Idee bei CQs, dieses Trennen der Verantwortlichkeit von Schreiben und Lesen ist einfach, nimm doch einfach nicht eine Datenbank und versuch irgendwie ein Modell hinzuklöppeln, was weder zum Lesen noch zum Schreiben wirklich gut passt. Nimm doch einfach zwei Datenbanken, eine, die aufs Schreiben optimiert ist, wo du toll Integrität, Konsistenz und so weiter machen kannst. Und eine zweite Datenbank, die die Daten komplett denormalisiert vorhält, in dem Format, wie du sie halt in der UI oder sonst wo brauchst. Natürlich braucht man da eine gewisse Synchronisation dazwischen, logisch, aber das ist erstmal die Kernaussage. Und wo jetzt der Bezug zu Event Sourcing ist, ist einfach, das habe ich ja eben schon gesagt, in so einem Event Store, weil das einfach nur so eine Append only Liste ist, wo du hinten Daten anfügst. Das ist ein super einfaches Schreibmodell. Also viel einfacher als hängen hinten was an, geht es ja kaum. Aber wir haben vorhin auch schon darüber gesprochen, dass der Replay halt nicht das schnellste ist. Also von daher, für Lesen ist es vielleicht nicht ganz so toll. Also wäre das quasi deine Schreibdatenbank. Und demgegenüber, das, was ich eben erzählt hatte, mit dem Zettel, wo draufsteht, welche Bücher sind gerade ausgeliehen, was du aktualisierst, wenn jetzt ein Event kommt, wie Buch wurde gerade ausgeliehen, Buch wurde gerade zurückgegeben, das wäre dein Lesemodell. Und das aktualisierst du auf Basis der Events, die passieren. Und deswegen, wenn du diesen Ansatz fährst mit, du hast den Event Store, wo du die Events sammelst und du hast eine zweite Datenbank, wo du quasi die aufbereiteten Daten schon fürs Lesen fertig hast, Jedes Event nimmst du immer als Trigger, um zu synchronisieren, dann machst du automatisch CQRS, weil du dann das Schreiben vom Lesen trennst. Also das ist der Bezug zwischen Event Sourcing und CQRS.",
+      "start": 2824676,
+      "end": 3075162,
+      "confidence": 0.9383432,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Das heißt, Static Site Generator haben im Prinzip auch dieses Modell, oder du pusht dann am Ende, berechnest irgendwas und den finalen state legst du dann irgendwo hin.",
+      "start": 3075306,
+      "end": 3085258,
+      "confidence": 0.92694855,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "So ungefähr, ja. Genau. Und domain Driven Design, das ist so das dritte, was da mit reinspielt bei domain driven Design, wenn man domain Driven Design auf einen Satz runterbrechen will, geht es ja bei Domain driven Design darum, die fachliche Sprache besser zu verstehen und die irgendwie im ganzen Team über alle Disziplinen und Co. Und über alle Rollen hinweg zu verankern, dass halt alle eine gemeinsame Sprache und vor allem ein gemeinsames Verständnis haben. Naja, und das machst du eigentlich bei Eventsourcing automatisch, weil so ein Event wie, also wenn man, ich hatte ja eben gesagt, Verben sind so ultra wichtig, also von daher, und Event, weil es schon passiert ist, Vergangenheitsform, Buch wurde ausgeliehen, Buch wurde verlängert, Buch wurde zurückgegeben, das macht irgendwie Sinn. Sowas wie Buch wurde created, Buch wurde geupdatet, Buch wurde geupdatet, Buch wurde geupdatet, macht halt wenig Sinn. Also es geht auch, technisch gesehen ist das auch Event Sourcing, das ist halt nur total wenig hilfreich, weil es keine interessante Geschichte erzählt. Und insofern, in dem Moment, wo du halt versuchst, quasi den Events oder die Eventtypen schon mal als sinnvolle, mit sinnvollen Bezeichnern auszustatten, machst du eigentlich schon ganz vieles richtig, was domain driven Design mit viel Aufwand dir erklären will, wie du es tun sollst. Also ich finde den Weg, mit Eventsourcing anzufangen und sich dann irgendwann mal mit DDD zu beschäftigen, tausendmal einfacher als andersrum.",
+      "start": 3085394,
+      "end": 3162570,
+      "confidence": 0.9218063,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Also wenn ich mir die Podcast Episode bis hierhin angehört habe, bin ich schon bei der zweiten bingo Karte. Frag mich aber jetzt auch gerade, warum habe ich das in allen meinen Seitenprojekten noch nicht drin? Und jetzt stelle ich mir natürlich auch die Frage, okay, weiß ich nicht, die eierlegende Wollmilchsau, die sucht jeder, aber wo übersehe ich jetzt hier was? Und ich frage mich halt, okay, wo liegen denn die Herausforderungen bzw. Die Nachteile der ganzen Thematik? Also welche Situation oder welches Projekt oder ähnliches ist deiner Meinung nach nicht das richtige, wo Event Sourcing nicht die Lösung ist?",
+      "start": 3162650,
+      "end": 3198966,
+      "confidence": 0.9525118,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Ja, also ich glaube, Der Hauptgrund, warum du davon bislang wenig mitbekommen hast oder warum man, nicht jetzt speziell du, aber warum man generell wenig davon hört, ist, dass Event Sourcing in der Lehre keine große Rolle spielt. Wenn überhaupt, dann kommt es halt bestenfalls mal als Nischenthema vor in der Lehre, sei es jetzt in der Ausbildung oder auch in den Hochschulen, da spielt das eigentlich keine großartige Rolle, weil, tja, ich weiß nicht, ob die Datenbankindustrie dahinter steckt. Einfach, du kriegst halt von klein auf immer beigebracht, dass relationale Modell, das genügt halt. Und da ist halt so ein gewisses Standardschema, genauso wie du auch immer die dreischichten Architektur beigebracht bekommst, die auch keine besonders gute Idee ist meistens, so kriegst du halt von klein auf immer Crud beigebracht. Vielleicht weil es zunächst mal vermeintlich das naheliegendere ist und man halt mit diesem Denken in Prozessen und so, das ist nicht ganz so ohne. Dafür brauchst du vielleicht eine gewisse Erfahrung. Damit musst du dich ja auch schon mal mit der Domäne beschäftigen, weil du ansonsten ja gar nichts sage, also mit der Fachdomäne, weil du ja ansonsten gar nicht weißt, was die Prozesse sind. Und das kann man bei klassischer Krad, bei klassischem CRUD vorgehen, kann man das so schön ignorieren und glaube, dass das eine ganz wesentliche Rolle an der Stelle mitspielt. Für mein Empfinden dürfte es eine wesentlich höhere Verbreitung haben. Jetzt ist es natürlich nicht so, dass Event Sourcing keine Nachteile hätte. Also ich will das nicht so darstellen, als wäre das irgendwie die magische Silberkugel, die alle deine Probleme in jedem Fall perfekt löst. Also ein ganz essentieller Punkt ist erstmal, deine Daten müssen sich halt für Events eignen. Also du brauchst irgendeine Semantik da drin. Wenn du jetzt, was weiß ich, Sensordatenerfassung machst, das ist immer so ein Standardbeispiel im Industriekontext, da hast du ja keine Intention in dem Sinne. Also der Temperatursensor meldet halt irgendeinen Wert, das willst du nachher vielleicht auswerten, so wie hat sich die Temperatur im Laufe der Zeit geändert. Aber da steckt ja in dem Sinne keine Business Information drin, das ist nicht, da steckt keine Intention des Users drin oder ähnliches. Das erstmal reines doofes Datensammeln. Und da gibt es wesentlich passendere Modelle als Event Sourcing, weil da der Fokus einfach ein ganz anderer ist. Da gibt es ja auch keine großartige Geschäftslogik, die ablaufen würde, die entscheiden würde, ob so ein Event erfasst wird oder nicht. Der Sensor hat halt einen bestimmten Wert gemeldet, der muss halt gespeichert werden, Ende der Geschichte. Da steckt keine große Semantik erstmal drin. Dann ist es bei Eventsourcing natürlich so, und das kann je nach Kontext auch ein Problem sein, also ich habe ja vorhin schon gesagt, so ein Append only log, das wächst und wächst und wächst, es wird halt immer nur hinten angefügt. Das heißt, der benötigte Speicherplatz, der steigt im Laufe der Zeit halt kontinuierlich und stetig an. Das ist, wenn man jetzt in der Cloud unterwegs ist, herzlich egal. Zumal Speicherplatz heutzutage praktisch auch nichts mehr kostet. Wenn du aber auf einem Embedded Device irgendwo bist, wenn du in irgendeinem Industrie PC laufen musst und halt so ein Gerät alle 20 Jahre einmal aktualisiert wird, weil jemand mit der Diskette vorbeikommt, da hast du halt in der Regel nicht terabyteweise Speicher zur Verfügung, sondern da musst du halt vielleicht mit 128 GB auskommen für alles, also Betriebssystem, Treiber und Co. Und dann ist das auf einmal nicht mehr so viel. Also du brauchst halt Platz. Das ist mal der Punkt Nr. Eins. Das heißt für Umgebungen, wo Speicherplatz rar oder sehr teuer ist, ist es vielleicht weniger geeignet. Der nächste Punkt ist die Replayzeiten, aber da hatten wir vorhin schon drüber gesprochen, dass man das über Snapshots weg optimieren kann. Der nächste wirkliche Kritikpunkt, wo es ein bisschen schwieriger wird, wo man zumindest ein bisschen drüber nachdenken muss, ist die, es ist gar nichts technisches, sondern das ist die DSGVO. Weil gemäß Artikel 17 der DSGVO hast du ja als Verbraucherin oder als Verbraucher ein Recht, dass die Daten von dir gelöscht werden. Klar, das passt halt nur wenig zusammen mit einem System, wo halt gesagt wird, Daten, wenn sie einmal geschrieben geschrieben sind, sind immutable und sie können nie verändert und nie gelöscht werden. Und das heißt, da braucht man eine Idee, wie man es machen kann. Also da gibt es Ansätze, gibt es eine ganze Reihe von Ansätzen, wie man das mit Event Sourcing zusammenkriegt, von sehr einfach, aber vielleicht nicht ganz so hundertprozentig, also vielleicht jetzt nicht für den medizinischen Bereich geeignet, bis hin zu für den medizinischen Bereich geeignet dafür sehr aufwendig, aber.",
+      "start": 3199038,
+      "end": 3451662,
+      "confidence": 0.92365485,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Kannst du mal ganz kurz einen möglichen Lösungsansatz dafür nennen? Weil ein Ansatz könnte ja sein, ich schmeiße einfach die Immutability über Bord und sage, okay, wenn der Wolfgang jetzt zu mir kommt und hör mal, du lösch mal meine Daten, dann lösche ich halt einfach alle Records irgendwie von ihm.",
+      "start": 3451766,
+      "end": 3468478,
+      "confidence": 0.89473176,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Ja, das kannst du natürlich machen. Nur ist es dann kein Event Sourcing. Nein, also eine Möglichkeit wäre z.B. dass du die personenbezogenen Daten, dass du die verschlüsselst, dass du die in den Events nur verschlüsselt ablegst. Und wenn dann derjenige oder diejenige kommt und ich möchte gerne, dass meine Daten gelöscht werden, dann wirfst du den personenbezogenen Schlüssel weg. Dann sind die personenbezogenen Daten in verschlüsselter Form noch da, aber du kommst halt nicht mehr dran. Das ist ein relativ einfacher Ansatz, nennt sich Crypto Shredding oder Crypto Threshing, nicht Crypto Trashing, wie man erwarten würde, so wirklich mit Th. Crypto Threshing ist allerdings, wird ein großes Fragezeichen dran machen, ob ich das so eine gute Idee finde, weil bloß weil, keine Ahnung, du nimmst irgendein Verschlüsselungs Algorithmus, keine Ahnung, AES 256 CBC, bloß weil der heute nicht zu knacken ist ohne Schlüssel, heißt das ja nicht, dass der nicht in drei Jahren ohne Schlüssel zu knacken wäre. Also da verschieben sich ja auch die Grenzen. Das heißt damit, die Daten sind ja schon immer noch da. Und das ist halt die Frage, wie sicher ist das langfristig? Wenn du jetzt und da kommt halt der Use Case, in dem du dich befindest, spielt das halt mit rein. Die DSGVO definiert ja unterschiedliche Datenschutzklassen für Unterschied mit unterschiedlichen Schutzniveaus, je nachdem, was es für Daten sind, über die wir reden. Und da macht es halt einen Unterschied, ob du halt die Mitgliederdaten des lokal örtlichen, was weiß ich, Kanarienvogelzüchtervereins verwaltest oder ob du halt hochsensible medizinische Daten aus der Krebsforschung in den Fingern hast. Also für das eine dürfte dieses Krypto Shredding gut genug sein, für das andere, weiß ich nicht, würde ich eher nicht nehmen. Und für so einen Fall bleibt ja eigentlich nur übrig, im Zweifelsfall eine Migration zu machen in einen neuen Event Store, wo du quasi einmal einen Replay über alles machst, dabei filterst, was du behalten willst und was nicht und das Ergebnis in einen neuen Event Store wieder rein spielst, was du auch im laufenden Betrieb machen kannst. Das ist das Schöne, aber so kriegst du sie halt raus. Aber das ist natürlich mit Aufwand verbunden. Jetzt ist ja bei der DSGVO aber so, dass du ja auch einen gewissen zeitlichen Rahmen hast, dreiig Tage im Normalfall, um diesem Artikel 17 nachzukommen. Das heißt, wenn du das einmal im Monat machst, dann wärst du schon mal rechtlich auf der sauberen oder auf der sicheren Seite. Aber wie gesagt, es hängt halt immer so ein bisschen von deinem use Case ab, wie kritisch sind die Daten, die du zu schützen hast.",
+      "start": 3468614,
+      "end": 3614662,
+      "confidence": 0.9320148,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Was mir da jetzt noch eingefallen ist, weil du über das Replay auch gesprochen hast und wir haben zuerst gesagt, okay, ich habe irgendwo einen Code, der entscheidet z.B. beispiel, ob das Buch jetzt ausgeliehen werden darf, also bekomme die Daten rein und checke, darf dieses Buch ausgeliehen werden? Was mache ich denn jetzt, wenn sich dieser Check ändert, wenn ich noch irgendwas an Business Logik dazu implementiere oder vielleicht war es sogar ein Bug, wenn ich jetzt das Replay durchführen würde, würde ja plötzlich dieser Check negativ sein und ich dürfte dieses Buch gar nicht ausleihen. Also mache ich dann eine Versionierung auf der Code Seite noch oder wie geht man mit sowas dann um?",
+      "start": 3614726,
+      "end": 3649694,
+      "confidence": 0.90638447,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Also absolut berechtigte Frage und die Antwort ist tatsächlich viel einfacher, als du wahrscheinlich gerade denkst, weil der Punkt ist, die Validierung, die machst du ja bevor die Events entstehen. Also Command kommt rein, du validierst, darf das Buch ausgeliehen werden und dann triffst du eine Entscheidung und dann schreibst du das Event, den Replay machst du ja immer über die Events, also wie sie geschrieben worden sind. Da findet keine Validierung mehr statt, weil der Punkt ist, die sind ja schon passiert, kannst du eh nichts mehr dran ändern. Und im Prinzip, wenn sich deine Geschäftslogik ändert, dann änderst du halt deine Geschäftslogik und bist fertig. Weil deine Geschäftslogik bezieht sich ja immer nur auf zukünftige Vorgänge. Das ist wie bei deiner Bank. Wenn deine Bank sagt, Haha, da hast du ein unendlich hohes Überweisungslimit, dann kannst du Überweisungen, wenn du genug Geld hast, in Höhe von drei Fantastilliarden ausführen. Irgendwann geht deine Bank hin und wir schränken das Überweisungslimit ein, mehr als 100 am Tag gehen nicht mehr, dann kannst du ab sofort nicht mehr mehr als überweisen. Aber das ändert ja nichts dran, dass du vor drei Wochen noch diese riesen Überweisung hast durchführen können. Insofern ist das völlig legitim, dass diese Events existieren, weil sie auf einer Logik basieren oder durch eine Logik entstanden sind, die zu dem Zeitpunkt, wo sie entstanden sind, gültig war. Also insofern ist die Geschäftslogik anpassen eigentlich sehr trivial, weil du passt sie halt an und bist fertig.",
+      "start": 3649782,
+      "end": 3730888,
+      "confidence": 0.940616,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Das war für mich auch beim Verständnis ganz wichtig, weil ich hatte das auch manchmal im Kopf, wenn etwas z.B. länger dauert, wenn da ein Prozess angeschlossen ist, keine Ahnung, ich muss jetzt bei dem Melderegister nachsehen, ob diese Person wirklich in der Stadt lebt und da Bücher ausleihen darf. Dann wird bei dem Replay nicht jedes Mal wieder der API Call zum Melderegister durchgeführt, sondern ich speichere nur das Resultat von diesem Event, dass dieser Prozess durchgeführt wurde und im Melderegister ist die Person verfügbar oder so und speichere nur das Ergebnis. Und damit ist das Replay auch schnell wieder durchzuführen und ich muss nicht alles wieder neu kalkulieren in dem Sinne von meinem Prozess oder von der Logik.",
+      "start": 3731014,
+      "end": 3767684,
+      "confidence": 0.93473727,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Genau, also wenn man einfach beim gedanklichen Bild des Kontoauszugs bleibt, ist völlig egal, was die Bank morgen sich überlegt, wie und wann und ob du Überweisungen ausführen darfst. Das ändert nichts daran, was auf deinem Kontoauszug steht, was schon passiert ist. Und daran wird sich auch nie was ändern, weil das ist Geschichte, das ist passiert, Punkt. Und da schließt sich der große Kreis zu. Ganz am Anfang, wo ich sagte, wir können höchstens die Effekte der Transaktionen versuchen zu kompensieren durch eine Gegentransaktion. Das ist das, was die Bank machen würde. Wir können aber nicht ändern, dass es passiert ist.",
+      "start": 3767812,
+      "end": 3800948,
+      "confidence": 0.957499,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Da das Gespräch gerade so gut läuft, habe ich immer das Gefühl, wir sitzen hier gerade bei einem Bier zusammen. Deswegen mal eine Zwischenfrage, kurze, Wolfgang, wenn ich in Innsbruck zur Stadtbibliothek gehen möchte, muss ich in Innsbruck gemeldet sein, damit ich dann Ausweis kriege?",
+      "start": 3801084,
+      "end": 3812634,
+      "confidence": 0.90078646,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Ja, wir sind natürlich sehr streng. Ernsthaft, ich muss mir da Sachen aus der Luft greifen, irgendwelche Beispiele natürlich nicht, aber ich habe auch noch nie ein Buch ausgeliehen. Ich soll es eigentlich nicht sagen, aber ich bin ja so transparent.",
+      "start": 3812762,
+      "end": 3825114,
+      "confidence": 0.9244156,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Okay, aber während dieser Podcast Episode, also jetzt komme ich wieder zurück zum Thema, während dieser Podcast Episode wurde mir vorgeworfen, es war schon so negativ behaftet, dass ich ja aus der Infrastrukturecke kommt. Und da denke ich jetzt natürlich über Datenbanken nach, über Speicherung. Wie speichere ich jetzt eigentlich hier die ganzen Events? Jetzt habe ich mal ganz kurz in die CNCF Thematik da reingeguckt, in die Spezifikation von den Cloud Events. Da gibt es ein Beispiel und unten ist da so ein JSON Blob als Beispiel angeführt. Da frage ich mich aber, okay, gibt es irgendwie, so wie wir schon über relationelle Datenbanken gesprochen haben, gibt es auch irgendwie event sourcing Datenbanken? Also kann ich mir, oder hat vielleicht Postgre eine Extension oder ähnliches? Also ich meine, was nutze ich da was? Erleichtert mir die ganze Thematik, dass ich nicht das Rad neu erfinden muss?",
+      "start": 3825242,
+      "end": 3872204,
+      "confidence": 0.914711,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Ja, also auch das absolut berechtigte Frage und auf die kommt man natürlich über kurz oder lang, wenn man okay, Thema klingt spannend, will man mal ausprobieren, irgendwas braucht man ja als Unterbau. Und grundsätzlich hast du vier Optionen, was du machen kannst. Du kannst relationale Datenbank einsetzen, du kannst eine NoSQL Datenbank, meinetwegen sowas wie mongodb einsetzen, du kannst, das machen gerne große Konzerne, du kannst sowas wie z.B. kafka oder NAT oder irgend so ein Streaming Prozessor zweckentfremden benutzen oder du nimmst halt eine auf Event Sourcing spezialisierte Datenbank. Und auf den ersten Blick sieht das ganze ja relativ simpel aus, so nach dem Motto, naja, das ist ein Append only log, also das heißt, was brauchst du? Naja, es ist eine große Tabelle, du machst halt ein Insert, wenn ein neuer Datensatz passiert oder wenn ein neues Event geschrieben werden soll. Du machst ein Select mit einem Order bei nach Einfüge Reihenfolge, wenn du halt die Events wieder haben willst. Und wie schwer kann das schon sein? Das ist so ein bisschen die Erwartungshaltung. Und insofern ist das erstmal völlig egal, mit was du da dran gehst. Also das kannst du mit einer Postgres machen, das kannst du mit dem SQL Server machen, das kannst du mit einer mongodb machen, völlig egal. Der Punkt ist aber, wenn du das das ganze ernsthaft machst, wenn das ganze größer wird, dann wirst du nach einer Weile feststellen, dass das vielleicht nicht die schlauste Idee der Welt war. Weil diese, fangen wir mal mit den relationalen und den NoSQL Datenbanken an, weil die im Normalfall ja auf ein anderes Persistenzmodell ausgelegt sind, weil die ja so Dinge unterstützen müssen wie Update, wie Delete, wie join usw. Was du halt in einem relationalen Modell brauchst oder was du auch in einem no s. Also vielleicht die Joins nicht, aber Update und Delete gibt es in mongodb ja genauso. Und dafür sind halt gewisse interne Datenstrukturen erforderlich. Also wird ja viel mit, in Datenbanken wird viel mit b Bäumen gearbeitet und b Bäume, die sind cool, dass ich den Satz mal sagen würde, hätte ich auch nicht gedacht, aber Bäume an sich.",
+      "start": 3872252,
+      "end": 3992172,
+      "confidence": 0.90837395,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Bäume sind immer cool, egal ob digital oder in echt schön.",
+      "start": 3992276,
+      "end": 3996480,
+      "confidence": 0.9715991,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Also grundsätzlich sind b Bäume schon eine sehr intelligente Datenstruktur, aber sie haben einen gewissen Verwaltungsoverhead mit Split und Merge und so weiter. Und der Punkt ist, dass die Datenbanken, weil sie ja nicht wissen, dass du niemals Update und niemals Delete verwenden wirst, können ja nicht hell sehen, werden sie halt Datenstrukturen für Indexe und ähnliches verwenden, die halt darauf ausgelegt sind, dass du auch mal ein Update oder ein Delete machen kannst. Und das sind nicht notwendigerweise die Datenstrukturen, die du wählen würdest, wenn du von vornherein wüsstest, dass du ein Append only log kriegst. Und das fängt dann halt an bei, dass die Datenbanken mehr unter der Haube arbeiten müssen, um das zu machen, was sie tun sollen, als eigentlich notwendig wäre. Und das geht dann weiter bei so Themen wie Konsistenzgarantien, die dir geboten werden. Also wir hatten es ja vorhin von den Eventstreams, von diesen einzelnen Themenbereichen sozusagen, für die man Events sammeln und das ist ja letztlich nichts anderes als ein Sammelsurium von Datensätzen. Jetzt möchtest du z.B. sagen, okay, ich habe, was weiß ich, ein Event Stream für der Herr der Ringe, jetzt möchte ich das Buch wurde gerade wieder ausgeliehen, möchte ich ein neues Event schreiben, was halt besagt, dieses Buch wurde gerade ausgeliehen. Das heißt, ich will ein neues Event insgesamt an meinen Gesamtdatenstrom anhängen. Könnte man sagen, ja, ist ja einfach, ist ein Insert. Jetzt möchte ich dieses Insert aber nur machen, weil jetzt haben wir halt mehrere Benutzer auf diesem System. Jetzt könnte es ja sein, dass zwei Personen zeitgleich probieren, dasselbe Buch auszuleihen. Das heißt, wenn ich validieren will, ob das Buch verfügbar ist, mache ich einmal einen Replay über der Herr der Ringe, dann weiß ich, ist es ausgeliehen oder nicht, dann komme ich zu meiner Entscheidung, darf es ausgeliehen werden? Und das könnten jetzt ja zwei Clients quasi parallel machen und beide könnten dieses Event das Buch wurde ausgeliehen erzeugen und beide wollen das jetzt schreiben. Wenn ich keine weiteren Prüfungen habe, habe ich zweimal hintereinander im System stehen, das Buch wurde ausgeliehen, was inhaltlich keinen Sinn ergibt. Also muss ich sagen, okay, ich will dieses Event nur dann schreiben, wenn in der Zwischenzeit nichts passiert ist. Es wird bei einer relationalen Datenbank schon schwieriger zu schreibe einen Datensatz nur, wenn seit meinem letzten Lesen sich nichts getan hat. Kann man jetzt schon anfangen zu überlegen, wie setzt man das denn um? Und dann stellst du fest, dass wenn du das dann hinbekommen hast, dass es eine ganz dumme Idee war, das so umzusetzen, weil natürlich darf jemand Meilen unter dem Meer ausleihen, das hat ja überhaupt keinen Einfluss darauf, ob Herr der Ringe ausgeliehen werden darf oder nicht. Das heißt, du willst eigentlich sagen, schreibe dieses Event, aber schreibe es nur, wenn sich auf einem bestimmten Subset meines Gesamt Event Datenstroms seit meinem letzten Lesen nichts getan hat. Wie zur Hölle finde ich das raus? Und da stoßen halt relationale Datenbanken dann durchaus an ihre Grenzen. Also es ist nicht so, dass das nicht ginge. Die Frage ist nur, geht das dann noch besonders effizient und geht das besonders elegant? Und da ist die Antwort halt in der Regel nicht.",
+      "start": 3997540,
+      "end": 4171421,
+      "confidence": 0.9340094,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Aber sprechen wir da nicht, ich sag mal, das scheint ja eher so das klassische Race Condition Problem zu sein, sprechen wir da nicht eigentlich in der Regel von Transaktionen auch?",
+      "start": 4171525,
+      "end": 4180445,
+      "confidence": 0.9315868,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Ja klar, aber der Punkt ist ja, also das könnte man jetzt sagen, das ist klassisches optimistisches Locking. Der Punkt ist aber, optimistisches Locking machst du ja auf einem Datensatz, den es vorher schon gab. An der Stelle will ich ja aber die Einfügen eines neuen Datensatzes davon abhängig machen, dass sich an einem bestimmten Set von Datensätzen in der Vergangenheit nichts geändert hat, seit ich dieses Set das letzte Mal gelesen habe. Also ich dürfte den, ich habe 25 Events und ich darf das 26. Nur schreiben, wenn es in der Zwischenzeit kein anderes 26 gab. Aber woher weiß ich, dass es diese 26 gab? Weil das ist ja in der ursprünglichen Menge der 25 nicht enthalten. Und ich kann auch nicht sagen, ja, guck nach dem Event Nr. 26, weil das hat nicht die Nr. 26, weil die ja eine globale Ordnung haben sollen. Und da wird es dann halt schwierig. Und dann kannst du natürlich sagen, okay, haha, wir machen einen table Log, dann ist sichergestellt, dass nur einer gleichzeitig schreibt oder wir machen die ganzen Transaktionen serialize, aber dann wird es halt langsam und da fängt es dann halt an, nicht mehr so schön zu werden. Und dann kommen noch so Sachen dazu wie, naja, Event speichern ist die eine Sache, jetzt ging es ja noch darum, dass wir andere darüber informieren, dass dieses Event gerade passiert ist, damit die z.B. lesemodelle aktualisieren können. Ja, jetzt will ich ja aber, dass diese speichern und dieses andere informieren, dass das in einer Transaktion läuft, im Idealfall, weil ich will ja verhindern, dass es gespeichert wird, aber weil dann das System crasht, jemand anderes nie informiert wird. Das darf nicht passieren. Ich darf auch nicht jemand anderes informieren und dann erst speichern, weil dann könnte es passieren, dass ich ein Event in die Gegend rausposaune, dann stürzt mein System ab und es wird nie gespeichert. Wer noch schlimmer, also eigentlich hätte ich wahrscheinlich gehe ich bei diesem Publishen über eine Message Queue, wie mache ich denn eine Transaktion über eine Postgres und eine Revit MQ? Gar nicht. Das heißt, ich kann anfangen, mir lustige Patterns zu überlegen, wie ich das irgendwie hinkriegen kann, sowas vernünftig hinzubiegen. Und da gibt es für alles, für alle diese Dinge gibt es Lösungen. Will ich gar nicht sagen, dass das nicht ginge. Ich sag nur, es wird weder besonders schnell, noch besonders effizient, noch besonders elegant sein. Und du fängst auf einmal an, dich mit Infrastrukturproblemen herumzuschlagen, obwohl du eigentlich eine Anwendung entwickeln wolltest. Das legt den Fokus auf die falschen.",
+      "start": 4180517,
+      "end": 4313056,
+      "confidence": 0.9393342,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Ich finde es sehr schön, dass wir dann Andi nicht mehr brauchen als Infrastrukturmenschen. Das löst sich dann von selber quasi.",
+      "start": 4313168,
+      "end": 4318768,
+      "confidence": 0.888621,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Das habe ich nicht gesagt. Ich habe nur gesagt, wenn du eine Anwendung entwickeln willst, dann möchtest du dich nicht mit Infrastruktur beschäftigen. Also insofern, du kommst über kurz oder lang an den Punkt, wo du halt feststellst, Postgres oder generell relationale Datenbanken, auch NoSQL Datenbanken, sind dafür keine so wahnsinnig gute Idee. Das merkst du leider erst ab einer gewissen Größenordnung, wo dann meistens das Kind schon in den Brunnen gefallen ist. Richtig übel ist, wenn du dann schon Konsistenzprobleme in den Daten hast, es dir leider erst nach sechs Monaten auffällt. Und da ändert halt auch keine Erweiterung von Postgres oder von sonst Datenbank, weil das ja nichts daran ändert, mit welchem Mindset diese Datenbank mal entwickelt wurde. Dann kommt halt Kafka und Co. Ins Spiel. Also Kafka ist da halt das prominente Beispiel. In letzter Zeit hört man dann öfter auch NUTS und so und das ist beides, nicht dass das falsch verstanden wird, das sind beides fantastische Softwareprodukte, aber es sind keine Datenbanken. Und klar kann ich Kafka zweckentfremden und es irgendwie hinbiegen, aber auch da wirst du merken, über kurz oder lang, es gibt Dinge, die kann Kafka nicht, weil es nie dafür gedacht war, so benutzt zu werden. Und das heißt am Ende des Tages, wenn du es in einem halbwegs großen System ernsthaft betreiben willst, kommst du eigentlich an einer Spezialdatenbank für Event Sourcing nicht drumherum.",
+      "start": 4318864,
+      "end": 4390822,
+      "confidence": 0.9215551,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Und was hätte dann so eine Spezialdatenbank für spezielle Features? Also so wie ich verstanden habe, ist ja auch dieses Problem, dass Postgres und Co. Einfach viel mehr kann, was man eigentlich dann alles nicht braucht. Welche Features bräuchte ich unbedingt, wenn ihr eine Event Sourcing Datenbank macht? Ist es diese Ordnung? Ist es, also welche Features, welche Möglichkeiten muss ich in so einer Datenbank dann zur Verfügung gestellt bekommen?",
+      "start": 4390886,
+      "end": 4413970,
+      "confidence": 0.9196527,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Das sind einige Sachen. Es fängt mit Kleinigkeiten an, wie z.B. praktisch wäre natürlich, wir haben ja vorhin über das Cloud Events Format gesprochen, was von der Cloud Native Computing Foundation definiert wird. Praktisch wäre natürlich, wenn meine Datenbank nativ dieses Cloud Events Format versteht und spricht, weil ich sie dann viel einfacher mit anderer Software integrieren kann, die halt auch Cloud Events verarbeiten. Da geht es ja schon los. Also welche klassische Datenbank spricht dieses Format dann? Genau dieses Thema mit der globalen Ordnung, aber auch mit dem Zugriff auf einzelne, mit dem effizienten Zugriff, lesend und schreibend auf einzelne unter Event Streams z.B. das würde ich von einer entsprechenden Event Sourcing Datenbank erwarten. Ich würde von der Event Sourcing Datenbank eine out of the Box Lösung erwarten, die mir dieses Speichern und publisher Problemen irgendwie so löst, dass ich mich nicht selber drum kümmern muss, sondern dass ich halt sagen kann, ich speichere das Event und die Datenbank soll die sich doch darum kümmern, wie das gepublished wird und dass das verlässlich gepublished wird. Warum muss ich will mich damit nicht rumschlagen. Also im Prinzip guck dir an, was die Nachteile bei den relationalen und Co Datenbanken sind im Hinblick auf Event Sourcing und such dir quasi all die Punkte aus, die du an der Stelle gerne besser hättest, um die du dich aber nicht selber kümmern möchtest. Und das sind halt mal einige der Punkte.",
+      "start": 4414050,
+      "end": 4490540,
+      "confidence": 0.92353463,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Und gibt es da Datenbanken für Eventsourcing?",
+      "start": 4490620,
+      "end": 4492988,
+      "confidence": 0.92936283,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Ja, es wird dünn. Also es gibt tatsächlich eine auf dem Markt, die mir so grundsätzlich bekannt ist, sie heißt Eventstore DB, wobei die sich jetzt vor kurzem umbenannt haben, ich glaube in Current, die kann man nutzen. Ansonsten kleiner Teaser, kleiner Spoiler, wir arbeiten gerade an einer Event Sourcing Datenbank, weil wir jetzt seit vielen, vielen, vielen Jahren mit diesem Thema unterwegs sind. Wir haben in der Vergangenheit auch alles mögliche ausprobiert, von Postgres über den SQL Server, über mongodb, über Kafka, über natürlich bis hin zur Eventstore DB. Und wir sind mit keiner der Lösungen so wirklich glücklich geworden. Und deswegen haben wir uns gedacht, naja, das hört sich jetzt ein bisschen doof an, der Satz, aber naja, wie schwer kann es sein, so eine Datenbank selber zu bauen? Also turns out, es ist ganz schön schwer, eine Datenbank selber zu bauen, wenn man wirklich eine eigene Datenbank engine from scratch schreibt. Aber ich bin sehr stolz auf das, was wir da gerade entwickeln. Wir sind noch nicht am Markt, also die wird so in den nächsten, sagen wir mal, sechs bis 10 Wochen, mal vorsichtige Schätzung, werden wir die veröffentlichen. Das heißt, wer jetzt sagt, OK, cool, interessiert mich, möchte ich gerne mehr darüber erfahren, meldet euch einfach mal bei uns, schickt uns eine Mail oder geht über unser Kontaktformular und dann können wir da schon mal ein bisschen drüber sprechen und gucken, ob das was für euch wäre.",
+      "start": 4493084,
+      "end": 4574828,
+      "confidence": 0.9251087,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Famous last Words, wie schwer kann das schon sein? Das mache ich an einem Wochenende, aber jetzt als Infrastrukturmensch frage ich mich natürlich, muss ich dieses Enterprise Architektur Pattern hier eigentlich einbauen oder kann ich das nicht alles mit Infrastruktur erschlagen? Denn in der ganzen Datenbankwelt gibt es nämlich ein Pattern, das nennt sich Change Data Capture. Und für alle Leute, die es noch nicht gehört haben, was das sehr simplifiziert ist eigentlich, du hast z.b. eine Postgre oder eine MySQL Datenbank und eine Postgre und MySQL Datenbank schreiben sogenannte Log Dateien. Bei der Postgres ist das ein Wall Log, Write Ahead Log und bei der MySQL ist das das klassische Bin Log. Und du hast einen Prozess, z.B. debesium, der klemmt sich an dieses Log und nimmt die einzelnen Änderungen an Tabellen und Records und Rows entgegen und feedet die irgendwo in ein anderes System, sei es in eine Message Queue oder was weiß der Geier nicht. Und dann kann man eigentlich auch, ich sag mal ähnlich, ich nenne es mal wie Eventsourcing, nachvollziehen, wie sich eine Zeile in einer Tabelle, einem Record geändert hat, geinsert, deleted und updated und so weiter und so fort. Ist das nicht eigentlich auch Event Sourcing, ohne dass ich die Applikation, die diese Events oder die Datensätze in der Datenbank ändert, anfassen muss?",
+      "start": 4575004,
+      "end": 4656484,
+      "confidence": 0.8952625,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Also zwei Punkte dazu. Der erste Punkt ist, du hast es gerade so schön gesagt, irgendwas wurde inserted, irgendwas wurde geupdatet, irgendwas wurde geleitet. Das sind ja genau die technischen Events, die ich gerade nicht haben will, weil ich dann ja wieder nicht weiß, warum wurde es denn geupdatet, warum wurde es denn deleted? Also technisch gesehen ist ein Write Aheadlock natürlich nichts anderes als ein solcher Eventstream, wenn man so will, aber halt auf einer sehr technischen Ebene. Also das ist Punkt eins. Und Punkt zwei, wie werte ich denn aus einer Anwendung heraus, wenn mich jetzt fachliche Fragen interessieren, die ich beantworten will, wie werte ich denn aus einer Anwendung? Will ich mich da wirklich mit dem Write a Headlock von meiner Datenbank herumschlagen und gucken, wie ich da von außen dran komme, um das irgendwie auswerten? Also, ne, weil es geht ja, es ist ja ein rein technisches Konstrukt, was für Replikation und ähnliches und auch für Crash Recovery und ähnliches gedacht ist. Das, worum es aber ja bei Event Sourcing geht, ist ja das Capture der fachlichen Veränderungen. Und das ist ja, das mag ein ähnlicher technischer Unterbau am Ende des Tages sein, aber das hat ja eine ganz andere Zielsetzung. Und das ist ja was, was das Write a Log von der Datenbank überhaupt nicht abbildet, weil es darauf wiederum gar nicht ausgelegt wurde. Und dann sind wir ja wieder an dem Punkt, wo wir ja, wir speichern halt den Record, damit legen wir den Fokus ja wieder auf das Substantiv, auf das Buch und dann tracken wir halt, was wurde daran geändert und wann wurde es gelöscht. Aber das ist uninteressanteste Frage ever.",
+      "start": 4656612,
+      "end": 4741256,
+      "confidence": 0.92767173,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Ja, du hast einen sehr validen Punkt und zwar ist das mit diesem menschlichen Kontext, dieses warum, also was war jetzt der Trigger, wer hat da jetzt wie was geändert? Stimmt schon, die Information kriegst du natürlich aus dem Change Data Capture nicht raus, weil das natürlich ganz nachgelagert ist, nachdem diese Änderung an dem Rack Record bereits passiert ist. Ein sehr, sehr guter Punkt.",
+      "start": 4741408,
+      "end": 4761564,
+      "confidence": 0.91962355,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Jetzt haben wir die ganze Kette durch besprochen, also wie das ganze Modell aussieht mit dem Events, mit den ganzen triggern, wo die ganze Logik liegt, was die Nachteile sind, wie man die technische Umsetzung macht. Wenn du jetzt in die Zukunft blicken müsstest, glaubst du, es verändert sich noch weiter? Kommt das Ganze aus der Nischenecke heraus und wird mainstream werden? Wie blickst du aktuell auf den Markt jetzt kommt auch deine Datenbank irgendwann dann, die wird sowieso dann den Markt aufräumen natürlich und werden dann alle mehr auf Event sourcing springen? Ist ja auch eine faire Frage, weil wenn es mehr Tools gibt z.B. und eine Datenbank, dann ist es natürlich auch leichter zu implementieren.",
+      "start": 4761612,
+      "end": 4803526,
+      "confidence": 0.93303823,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Ja, das stimmt natürlich. Also da ging es ja vorhin schon mal kurz drum. Also grundsätzlich habe ich schon das Gefühl, dass das Interesse am Markt zunimmt für das Thema, dass auch die Vorteile zunehmend gesehen werden. Also wir reden jetzt so über Event Sourcing, als wäre Event Sourcing so ein bisschen so ein Selbstzweck, aber Eventsourcing ist am Ende des Tages auch nur ein Mittel zum Zweck. Also wir schreiben, das ist ja so ein Mantra von mir quasi, wir schreiben ja Software nicht, weil es so geil ist Software zu schreiben, sondern wir schreiben ja Software, um fachliche Probleme zu lösen und wir sollten Konzepte und Architekturen und so weiter und Technologien danach bewerten, ob sie uns helfen, fachliche Probleme besser zu lösen als ohne sie. Und das ist halt was, wo ich glaube, wenn du eine gewisse Komplexität in der Fachlichkeit drin hast, wo der Event Sourcing enorm entgegenkommt und wo es dich viel besser abholen kann als der klassische Ansatz und ist aber, wenn man sich mal dran gewöhnt hat, also es wirkt erstmal sehr unter Umständen sehr erschlagend, sehr komplex, sehr vielschichtig. Das liegt aber vor allem daran, weil man es nicht kennt. Also wer dem das erste Mal gegenübersteht und das ging mir selber vor vielen, vielen Jahren so, denkt sich, uff, das ist aber ein ganz schöner Brocken, mit dem ich mich da beschäftigen soll. Und das fühlt sich ungewohnt an und du bist langsam und du denkst die ganze Zeit, ja, wenn ich das jetzt mit einer klassischen relationalen Datenbank, da wäre ich ja schon 20 mal fertig und so. Aber das ist einfach die fehlende Übung, die fehlende Erfahrung. Wenn du dich damit aber beschäftigst und du da reinkommst, dann ändert sich auch dein Denken, weil du auf einmal anfängst, mehr in Prozessen zu denken, mehr in Verben zu denken. Und dann stellst du auf einmal fest, dass das auch allgemein auf deine Software, auf die Art, wie du Software schreibst, dass sich das auf deine Softwareentwicklung auswirkt, weil du auf einmal an den Punkt kommst, wo du dir auch denkst, naja, so eine klassische REST API, Post Book Update, also Put Book, Deletebook, er ist vielleicht ein bisschen dürftig, ist vielleicht ein bisschen dünn. Was heißt denn Putbook eigentlich inhaltlich? Also, ja, und klar kann man dann sagen, ja, ein Put ist ein Update, super. Das ist auch nur eine rein technische Information. Es kann aber viele Gründe geben, warum ich ein Buch aktualisieren möchte. Und spätestens meine Fachabteilung und spätestens mein User oder meine Userin, die werden nicht sagen, ich möchte ein Book putten, sondern die werden halt anderes Vokabular verwenden. Und dass da halt einfach auch die Diskrepanz, die sprachliche Diskrepanz zwischen Softwareentwicklung, Fachabteilung, anderen Disziplinen, die irgendwo in der Softwareentwicklung mit rum und halt letztlich auch der User oder die Userin, dass da halt einfach wir eine fantastische Möglichkeit haben, quasi diesen Gap, der da existiert, diese Kluft, die da da ist, dass wir die kleiner machen können, dass wir die besser überbrücken können. Das glaube ich, merken mehr Leute als vor fünf Jahren. Und das ist halt ein enormer Treiber hinter Event Sourcing an der Stelle. Und wenn du das halt kombinierst mit einer einfach zugänglichen Technologie, da machen wir hoffentlich ganz guten Job. Und dann glaube ich, dass das Ganze eine ganz gute Ausgangsbasis für die Zukunft ist. Und das Ganze ist auch nur die Ausgangsbasis für viele andere Dinge, die du wiederum anknüpfen kannst. Also ein so, ich weiß nicht, ob es das letzte Buzzword für heute ist, aber auch ein so ein Buzzword der letzten Zeit ist ja das Data Mesh. Also, dass Unternehmen immer mehr merken, Data Warehouses, so ganz funktioniert die Idee nicht und Data Lake und Data Swamp und Data Market und Data schlag mich tot, ist auch alles nicht so das wahre. Und der neueste Trend ist ja das Data Mesh, wo du quasi sagst, naja, die einzelnen Teams, die eine gewisse fachliche Verantwortung haben, die sollen halt zusehen, wie sie ihre Daten in einem für den Konsumenten geeigneten Format bereitstellen. Das ist dann das tolle Schlagwort des Data Products. Und naja, das ist natürlich trivial. Also wenn du halt quasi deine Daten als Events hast und da daraus beliebige Lesemodelle machen kannst, weil dann kannst du die Daten genauso aufbereiten, wie sie gerne irgendjemand anderes hätte. Wenn du das nicht hast, wenn du nur eine klassische relationale Datenhaltung hast, dann wird es schwer, weil wie hoch ist schon die Wahrscheinlichkeit, dass dein internes Datenformat genau dem entspricht, was jemand von extern gerne haben wollen würde. Also die ist nicht besonders hoch. Und da hast du halt mit Eventsourcing eine ganz andere Flexibilität. Und also auch da kann man die Liste wieder sehr lang fortsetzen, so an Dingen, die gerade passieren, wo ich glaube, wo Event Sourcing ein gutes Fundament für lief.",
+      "start": 4803638,
+      "end": 5067450,
+      "confidence": 0.93578756,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Ich glaube auch, dass es ganz allgemein in der ganzen Welt von den Geschäftsprozessen, vom Business Process Mining, wo es darum geht, Prozesse zu optimieren oder vielleicht sogar die ganze KI Thematik reinspielt oder ganz allgemein, dass man Geschäftsprozesse einfach modelliert und vielleicht auch grafisch darstellt und solche Dinge. Das spielt dann natürlich gut zusammen und ineinander. Und das ist natürlich dann auch ganz praktisch, wenn man das auf der einen Seite grafisch darstellen kann und dann auf der Implementierungsseite dann auch nahe wieder ist an dem Geschäftsprozess. Das kann natürlich auch von Vorteil sein. Aber wenn sich jetzt unsere Hörer innen denken, okay, ich würde da gerne einsteigen und ich würde gerne mal ausprobieren, wie das so funktioniert. Hast du irgendwelche Tipps auf der technischen Seite, irgendwelche Libraries oder oder wie kann man denn losstarten oder muss man alles von Scratch selber programmieren?",
+      "start": 5067530,
+      "end": 5115820,
+      "confidence": 0.9276068,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Ich glaube, viele, die es interessant finden, lassen sich so ein bisschen abschrecken von oh je, da ist jetzt Event Sourcing und dann ist das CQRS als Schlagwort gefallen. Und dann war jetzt auch noch gerade die Rede von Domain driven Design. Und domain Driven Design ist ja auch so ein Thema, was nicht neu ist, was aber bei vielen Menschen, mich eingeschlossen, das Gefühl hinterlässt für lange, lange Zeit, irgendwie bist du doof, weil irgendwie checkst du es nicht und es ist unglaublich schwer. Also das ist das Paradoxe an domain driven design, dass eine Methodik, die sich auf die Fahnen schreibt, bessere Kommunikation und besseres Verständnis zu bewerkstelligen über eine gemeinsame Sprache, dass ausgerechnet das daran im großen Stil scheitert, dass es nicht verstanden wird. Das ist schon irgendwie eine sehr traurige Ironie. Und mein erster Ratschlag wäre, vergiss mal ddd, vergiss mal cqs. Das erste, womit du dich mal beschäftigen solltest, das ist wirklich dieses überleg dir mal, worum geht es in deiner Anwendung und versuch mal von den Substantiven wegzukommen zu den Verben. Also du schreibst To do Liste, blödes Beispiel, es geht nicht um to dos, es geht darum, dass du dir was merken möchtest, dass du was abhaken möchtest, dass du was erledigen, was sind die Verben, die eine Rolle spielen. Du schreibst eine Software für Terminverwaltung beim Friseur, dann möchte ich einen Termin vereinbaren, ich möchte einen Termin stornieren können, ich möchte einen Termin verschieben können und so weiter. Du schreibst eine Software zur Steuerung eines Industrieroboters. Naja, dann ist das spannende nicht der Industrieroboter, sondern dass du den Industrieroboter, dass der sich bewegen kann, dass der, was weiß ich, seinen Laser aktivieren kann oder was weiß ich, was dein Industrieroboter halt hergibt. Und alleine darüber mal nachzudenken und mal wegzukommen von, du hast einen User, dann gibt es create, update, delete. Du hast ein Produkt, dann gibt es create, update, delete. Du hast einen Industrieroboter, da gibt es ein create, update und so weiter, was immer automatisch kommt. Davon erstmal versuchen wegzukommen und sich mal zu überlegen, was sind wirklich die Vorgänge und wie könnte man die aus fachlicher Sicht beschreiben. Das ist, bevor man mit irgendwas Technischem anfängt, das viel, viel, viel wichtigere, was man eigentlich als ersten Schritt mal machen muss. Wenn man das mal hat, wenn man dafür mal ein bisschen Gefühl hat, vielleicht da mal mit einer Kollegin oder mit einem Kollegen drüber diskutiert hat und da ein bisschen Händchen für bekommen hat, dann würde ich mir irgendeine kleine Applikation suchen und die mal versuchen, mal mit Events, also einfach mal ein paar Events zu speichern, ein Replay zu machen und daraus State wiederherzustellen. Und da kann natürlich dann entsprechendes Tooling helfen, wenn du das jetzt machst als Zuhörerin oder als Zuhörer dieses Podcasts und wenn du dich jetzt erstmal ein bisschen mit der Modellierung von den Events beschäftigst, bis du soweit bist, dann sind wir auch mit der Datenbank auf dem Markt. Nein, Spaß beiseite. Also ich glaube, dass da wirklich gutes Tooling es sehr einfach machen kann und da ist glaube ich tatsächlich unsere Datenbank ein, also ohne jetzt zu viel Werbung machen zu wollen, aber ich glaube, da ist tatsächlich unsere Datenbank ein hilfreicher Baustein, weil das Feedback, was wir von vielen Beta Testern bekommen haben, das ist aber einfach, das hätte ich mir viel komplizierter vorgestellt. Und das ist ein schönes Kompliment, was du kriegen kannst, weil Einfachheit fällt nicht vom Himmel. Du musst viel Gehirnschmalz investieren, um etwas zu bauen, was am Ende einfach wirkt. Und das ist, glaube ich, diese Hürde abzubauen, dass das alles so erschlagend wirkt, das ist, glaube ich, ein ganz wesentlicher Punkt. Und da sehe ich viel weniger die Menschen in der Verantwortung, die sich mit diesen Themen gerne beschäftigen wollen, als vielmehr diejenigen, die die Infrastruktur, die Ökosysteme und Co. Bereits.",
+      "start": 5115900,
+      "end": 5323870,
+      "confidence": 0.92155296,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Wenn man jetzt noch tiefer in das ganze Thema irgendwie reingehen will, hast du irgendwelche Empfehlungen, Bücher, Podcasts, YouTube Videos auch vielleicht von dir, falls ihr das Thema behandelt habt, oder irgendwelche besonderen Artikel, die dir weitergeholfen haben?",
+      "start": 5323980,
+      "end": 5338150,
+      "confidence": 0.9216489,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Das ist tatsächlich, und das schließt sich leider an genau das, was ich gerade gesagt habe. Also es ist leider super dürftig. Es gibt fast keine Literatur dazu, also weder zu Event Sourcing noch zu CQs. Am ehesten findest du was zu DDD. Es gibt wenig gute Literatur zu DDD. Das ist ein bisschen besser geworden als vor fünf Jahren auch oder als vor 10 Jahren. Aber jetzt eine unheimlich hohe Bandbreite an Auswahl hast du da auch nicht. Und von daher ist das leider, ich kenne auch keine wirklich tollen Tutorials oder so im Netz, von daher ist es leider viel mühsames, sich zusammensuchen. Wir haben jetzt vor knapp drei Wochen haben wir auf unserem YouTube Kanal ein Video veröffentlicht, eine umfangreiche Einführung in Event Sourcing. Jetzt vor ein paar Tagen eine umfangreiche Einführung in CQRS. Und wir werden jetzt auch dieses Frühjahr noch einige Videos zu dem Themenbereich machen. Also von daher, wer sich dafür interessiert, da ist vielleicht unser YouTube Kanal gar nicht so eine schlechte Anlaufstelle und wir gehen da nach und nach ein bisschen mehr in die Tiefe, ein bisschen mehr in die Praxis und so. Also das ist auch so ein bisschen darauf angelegt, natürlich Menschen abzuholen und irgendwie auf dieses Thema so ein bisschen hinzuführen. Darüber hinaus, nicht, dass ich jetzt nicht irgendeine andere Empfehlung geben wollen würde, aber es ist echt wenig, was es am Markt gibt und es ist sehr dünn. Ganz am Anfang, Andy, hattest du ja Microservices IO ist die Seite, glaube ich, erwähnt. Das ist tatsächlich eine Seite, die ich ganz gut finde, um mal, also das ist keine Einführung in Eventsourcing, aber das ist eine Seite, die einem ganz gut hilft, vielleicht ein paar Schlagworte zu kriegen, um Event Sourcing auch so ein bisschen so als Puzzleteile in das große Ganze einordnen zu können. Wo gehört denn das nochmal hin? Womit hängt das zusammen? Was sind andere Themen, mit denen ich mich beschäftigen sollte? Und so weiter.",
+      "start": 5338450,
+      "end": 5441744,
+      "confidence": 0.92712075,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Auf der Microservice IO Seite, wenn man da zum Pattern Eventsourcing geht, da gibt es auch so eine kleine Beispielimplementation. Ich glaube, das sollte Java sein. Aber ich meine, jeder, der programmieren kann, kann Java in irgendeiner Art und Weise lesen. Das kriegt man dann schon ganz hin. Die Links, die der Golo natürlich auch erwähnt hat bezüglich der Videos, findet ihr natürlich auch in den Shownotes mit diesen reißerischen Titeln wie CQS, das einzige Video, das du brauchst. Aber hey, so läuft das ganze YouTube Game. Wir verstehen das.",
+      "start": 5441832,
+      "end": 5473990,
+      "confidence": 0.934018,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Und falls jemand da draußen irgendwie noch interessante Links oder so hat, bitte kommt vorbei bei uns in die Discord Community. Wenn es wirklich andere Sourcen noch gibt zu Events, so viele Saucen, dann bitte.",
+      "start": 5474530,
+      "end": 5485628,
+      "confidence": 0.901926,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Bescheid geben, wer bis hierhin seine Bingo Karte immer noch nicht voll hat. Also da kann ich ja auch nicht mehr helfen. Also ich bin mir schon fast nicht mehr sicher, welches Buzzword Bingo wir in den letzten 20 Jahren hier nicht erwähnt haben. Also von daher, Gudo, vielen lieben Dank, dass du dir so viel Zeit genommen hast und das wirklich auch. Ich habe es, glaube ich, jetzt verstanden. Ich glaube es. Und zugegeben, meine Frau hat einen Büchereiausweis von der Stadtbibliothek und das war die beste Investition, die in den letzten fünf Jahren getätigt wurde, weil sonst die Frau frisst Bücher, kostet 20 im Jahr und die hat vorher immer die ganzen Bücher bei Amazon gekauft. Und jetzt gibt es natürlich solche Services wie Amazon Prime Unlimited oder Read Unlimited oder Kindle Unlimited. Nur das Problem ist, auch in diesen Subscriptions sind nicht alle Bücher drin. Und da hat die hunderte von Euro dafür Bücher ausgegeben. Und mit €20 im Jahr. Ich glaube, die ist da jede Woche. Und wenn ich nächstes Mal mitfahre, ich glaube, ich werde die Stadtbibliothek jetzt mit anderen Augen sehen.",
+      "start": 5485644,
+      "end": 5548930,
+      "confidence": 0.9300187,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Das ist mal schön, dass wir eine Lanze brechen für die Bibliotheken. Ihr habt nämlich auch gerade kürzlich gehört, dass man eben bei der innsbrucker Bibliothek, aber es gibt es bei anderen Bibliotheken vermutlich auch, dass man da mittlerweile sogar Filme online ausleihen kann sozusagen und dann online schauen kann. Also so Amazon Video mäßig über den normalen Ausweis.",
+      "start": 5549350,
+      "end": 5568466,
+      "confidence": 0.91611254,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Also wirklich cool für alle Leute, die sagen digital only, schaut euch mal die lokale Stadtbibliothek an. Und wenn ihr da seid und Ausweis macht, fragt doch mal, wer die IT hier macht und ob die schon mal von Eventsourcing gehört haben. Also das wird mir interessieren. Vielen lieben Dank.",
+      "start": 5568578,
+      "end": 5586066,
+      "confidence": 0.9183272,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Eine allerletzte Sache noch, die ist mir nämlich gerade noch eingefallen, weil wir es gerade noch von Büchern haben. Es gibt doch ein Buch, was sich zwar nicht direkt mit Event Sourcing beschäftigt, aber was ich in diesem Kontext sehr empfehlen würde. Es ist ein fantastisches Buch und zwar von Martin Kleppmann. Auf Deutsch heißt datenintensive Anwendungen designen bzw. Im englischen Designing Data Intensive Applications. Ist ein fantastisches Buch für jede und jeden, die oder der sich mit dem Entwurf und der Implementierung von großen komplexen und naja, wie der Titel sagt, Datenintens Anwendungen beschäftigen will. Also ganz große Empfehlung.",
+      "start": 5586178,
+      "end": 5621258,
+      "confidence": 0.8863543,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Das ist ein Buch, was wir schon öfters in diesem Podcast erwähnt haben. Und meines Erachtens nach ist das eines der wirklich besten Bücher, wenn es auch um Datenbanken geht. Jetzt geht nicht auf Datenbanktheorie, sondern eigentlich wie benutzen Applikationen Datenbanken? Was ist das richtige Modell? Und so weiter und so fort. Und für die Leute, die es noch nicht mitgekommen haben, das Buch ist zwar von 2017, wir haben 2025 inzwischen, aber soviel ich weiß, arbeitet Martin Kleppmann gerade an einer zweiten Edition, die jetzt bald rauskommen soll. Das bedeutet, falls sich das kaufen möchte, vielleicht wartet der noch einen Monat oder so, dann gibt es nämlich die neue Edition.",
+      "start": 5621354,
+      "end": 5653980,
+      "confidence": 0.9205829,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Und hey, wir haben gerade letzte Woche die, was waren es, Andy? 55 Jahre SQL gefeiert. 50 Jahre SQL, sorry. Also diese Technologien ändern sich auch gar nicht so schnell. Grundlagen sind gut, gerade im Datenbereich sind die Grundlagen wirklich gut zu wissen und ein gutes Fundament, wenn man dann auch weiterdenkt.",
+      "start": 5654060,
+      "end": 5671554,
+      "confidence": 0.91995114,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Und es ist ja auch Konzept und Methodenwissen, das ändert sich ja auch nicht alle 5 Minuten. Insofern halte ich das Buch von Martin Kleppmann auch für sehr zeitlos.",
+      "start": 5671602,
+      "end": 5679458,
+      "confidence": 0.9541462,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Das war's von uns. Wenn du bis hierhin gehört hast, vielen lieben Dank, wenn dir diese Episode gefallen hat, dann würden wir uns freuen. Und Colo würde es natürlich auch freuen, wenn du diese Episode weiterempfehlen würdest. Also geh doch mal in dein company slack, Teams Channel, Google Chat, Metamos oder was du auch immer nutzt. Vielleicht nutzt du auch noch E Mail, ich weiß es nicht. Oder wenn du return to office hast, geh einfach mal in die Kaffeeküche und druck da vielleicht mal das Poster aus mit dem Cover von dieser Episode und QR Code und sag bitte einmal anhören, wenn ihr was zum Eventsourcing wissen möchtet oder CQRs oder domain Driven Design. Haben wir alles erklärt und damit deine Kollegen endlich auch mal wissen, wovon reden. So, vielen lieben Dank von uns dreien. Bis zum nächsten Mal. Und wer mehr von Golo hören möchte oder vielleicht auch sehen möchte, der schaut einfach mal auf seinem YouTube Kanal vorbei. Deswegen sage ich jetzt offiziell und tschüss.",
+      "start": 5679554,
+      "end": 5731880,
+      "confidence": 0.9028714,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Ciao, ciao.",
+      "start": 5731960,
+      "end": 5733000,
+      "confidence": 0.6871,
+      "speaker": "C",
+      "channel": null
+    }
+  ],
+  "confidence": 0.9275614,
+  "audio_duration": 5674,
+  "webhook_status_code": null,
+  "webhook_auth": false,
+  "summary": null,
+  "auto_highlights_result": null,
+  "content_safety_labels": null,
+  "chapters": null,
+  "sentiment_analysis_results": null,
+  "entities": null
+}

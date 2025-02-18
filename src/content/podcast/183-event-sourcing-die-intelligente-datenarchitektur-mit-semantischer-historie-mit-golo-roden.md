@@ -86,7 +86,11 @@ rtlplus: ''
 six_user_needs: []
 speaker:
 - name: Andy Grunwald
+  transcriptLetter: A
 - name: Wolfi Gassler
+  transcriptLetter: B
+- name: Golo Roden
+  transcriptLetter: C
 spotify: https://open.spotify.com/episode/5fQvyP5FPKIOfbGTOE4CQ1
 tags:
 - Backend
