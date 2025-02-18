@@ -1,6 +1,6 @@
 ---
 advertiser: ''
-amazon_music: ''
+amazon_music: https://music.amazon.com/podcasts/c35a09fe-4116-4e04-8f68-77d61b112e46/episodes/c2934a7a-8cc7-41a5-b3d3-3c09d8e7ee89/engineering-kiosk-183-event-sourcing-die-intelligente-datenarchitektur-mit-semantischer-historie-%E2%80%93-mit-golo-roden
 apple_podcasts: https://podcasts.apple.com/us/podcast/183-event-sourcing-die-intelligente-datenarchitektur/id1603082924?i=1000693288303&uo=4
 audio: https://audio1.redcircle.com/episodes/323b5a28-e27e-4bfe-b44d-7f32011a50e2/stream.mp3
 chapter:
