@@ -87,7 +87,7 @@ tags:
 - Datenbanken
 title: '#182 Happy Birthday SQL: 50 Jahre Abfragesprache'
 transcript_raw: ''
-transcript_slim: ''
+transcript_slim: src/data/transcripts/182-transcript-slim.json
 youtube: https://www.youtube.com/watch?v=kcFQgoozJiM
 
 ---
