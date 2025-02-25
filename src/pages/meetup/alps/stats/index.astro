@@ -72,23 +72,35 @@ const averageMaleRatio = (totalMaleRatio / validMeetupsForGenderRatio.length) * 
                                 <td class="px-6 py-4 border-b">
                                     {meetup.talks.map(talk => `${talk.name} (${talk.title})`).join(', ')}
                                 </td>
-                                <td class="px-6 py-4 border-b text-center">
+                                <td class="px-6 py-4 border-b text-center" id={ meetup.eventId }>
                                     {meetup.participants?.registered === highestRegistrationNum ? (
                                         <strong>{meetup.participants?.registered || 0}</strong>
                                     ) : (
                                         meetup.participants?.registered || 0
                                     )}
+                                    {(!meetup.participants?.registered && meetup.eventId) && (
+                                        <script define:vars={{ eventId: meetup.eventId }}>
+                                            var element = document.getElementById(eventId);
+                                            element.textContent = 'Loading...';
+                                            fetch(`https://rsvp.engineeringkiosk.dev/registrations/${eventId}`)
+                                                .then(response => response.json())
+                                                .then(data => {
+                                                    element.textContent = `${data.registrations} (live!)`;
+                                                })
+                                                .catch(error => console.error('Error fetching registration data:', error));
+                                        </script>
+                                    )}
                                 </td>
                                 <td class="px-6 py-4 border-b text-center">
-                                    {meetup.participants?.present?.total || 0}
+                                    {meetup.participants?.present?.total || "no data"}
                                     {meetup.participants?.present?.total ? ` (${((meetup.participants?.present?.total / meetup.participants?.registered) * 100).toFixed(2)}%)` : ''}
                                 </td>
                                 <td class="px-6 py-4 border-b text-center">
-                                    {meetup.participants?.present?.female || 0}
+                                    {meetup.participants?.present?.female || "no data"}
                                     {meetup.participants?.present?.female ? ` (${((meetup.participants?.present?.female / meetup.participants?.present?.total) * 100).toFixed(2)}%)` : ''}
                                 </td>
                                 <td class="px-6 py-4 border-b text-center">
-                                    {meetup.participants?.present?.male || 0}
+                                    {meetup.participants?.present?.male || "no data"}
                                     {meetup.participants?.present?.male ? ` (${((meetup.participants?.present?.male / meetup.participants?.present?.total) * 100).toFixed(2)}%)` : ''}
                                 </td>
                             </tr>
