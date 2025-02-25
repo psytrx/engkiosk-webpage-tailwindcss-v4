@@ -74,7 +74,11 @@ rtlplus: ''
 six_user_needs: []
 speaker:
 - name: Andy Grunwald
+  transcriptLetter: A
 - name: Wolfi Gassler
+  transcriptLetter: B
+- name: Peter Thoman
+  transcriptLetter: C
 spotify: https://open.spotify.com/episode/69t13TF9kXbJPAOQVapRT7
 tags: []
 title: '#184 GPU Programmierung - von CUDA bis OpenMP mit Peter Thoman'
