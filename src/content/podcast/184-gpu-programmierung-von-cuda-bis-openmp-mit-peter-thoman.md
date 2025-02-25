@@ -80,7 +80,10 @@ speaker:
 - name: Peter Thoman
   transcriptLetter: C
 spotify: https://open.spotify.com/episode/69t13TF9kXbJPAOQVapRT7
-tags: []
+tags:
+- Backend
+- Software Engineering
+- Interview
 title: '#184 GPU Programmierung - von CUDA bis OpenMP mit Peter Thoman'
 transcript_raw: ''
 transcript_slim: ''
