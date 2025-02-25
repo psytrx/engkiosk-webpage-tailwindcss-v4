@@ -99,7 +99,7 @@ tags:
 title: "#183 Event-Sourcing: Die intelligente Datenarchitektur mit semantischer Historie\
   \ \u2013 mit Golo Roden"
 transcript_raw: ''
-transcript_slim: ''
+transcript_slim: src/data/transcripts/183-transcript-slim.json
 youtube: https://www.youtube.com/watch?v=wL2Z2WqX7AE
 
 ---
