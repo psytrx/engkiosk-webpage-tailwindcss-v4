@@ -1,6 +1,6 @@
 ---
 advertiser: ''
-amazon_music: ''
+amazon_music: https://music.amazon.com/podcasts/c35a09fe-4116-4e04-8f68-77d61b112e46/episodes/e36742ba-b7f8-456f-b44f-5c9e027ad855/engineering-kiosk-184-gpu-programmierung---von-cuda-bis-openmp-mit-peter-thoman
 apple_podcasts: https://podcasts.apple.com/us/podcast/184-gpu-programmierung-von-cuda-bis-openmp-mit-peter-thoman/id1603082924?i=1000695729082&uo=4
 audio: https://audio1.redcircle.com/episodes/bea196a3-54d1-4909-a540-fe20f245a0aa/stream.mp3
 chapter:
