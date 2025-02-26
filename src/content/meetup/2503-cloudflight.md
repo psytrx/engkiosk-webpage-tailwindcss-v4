@@ -6,11 +6,12 @@ location:
   url: 'https://www.cloudflight.io'
   logo: 'cloudflight.png'
 talks:
-  - avatar: 'avatar.png'
+  - avatar: '2503-roland.jpg'
     name: 'Roland Lezuo'
     title: 'Zephyr RTOS - embedded software leaving the stone age'
     description: The Zephyr Project, an open-source real-time operating system backed by The Linux Foundation, has spent nearly a decade evolving into a stable, reliable technology. With its liberal Apache 2.0 license and community-driven development, Zephyr has gained traction among both individual developers and companies alike. But what truly sets it apart are the technical details. This talk will inevitably touch on the frustrations of dealing with vendor-specific IDEs, while providing a brief dive into key aspects like the Hardware Abstraction Layer (HAL), Kconfig, and west. Ultimately, it will explore how Zephyr is helping embedded software finally break free from the stone age.
     bio: Roland Lezuo has studied technical computer science in Vienna where he focused on disturbingly deep details of Java Virtual Machines. Though his PhD thesis on compiler correctness is all about precision and formality, he prefers to keep life more relaxed. Outside of work, he's a busy dad of three, and has successfully founded an embedded software company, which he later merged with an electronics firm. Today, he's the CEO of SILA Embedded Solutions, leading the charge with a passion for innovation and a hands-on approach.
+    linkedin: 'roland-lezuo-38861970'
   - avatar: '2503-katharina.jpg'
     name: 'Katharina Schmermbeck'
     title: 'The Makeup Robot and Beyond: Co-Designing Assistive Tech for Inclusion'
