@@ -86,7 +86,7 @@ tags:
 - Interview
 title: '#184 GPU Programmierung - von CUDA bis OpenMP mit Peter Thoman'
 transcript_raw: ''
-transcript_slim: ''
+transcript_slim: src/data/transcripts/184-transcript-slim.json
 youtube: https://www.youtube.com/watch?v=jyEgOn4NL3g
 
 ---
