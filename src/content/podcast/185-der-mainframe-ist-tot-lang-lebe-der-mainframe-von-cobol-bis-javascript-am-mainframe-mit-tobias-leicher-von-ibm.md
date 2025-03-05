@@ -93,7 +93,10 @@ speaker:
 - name: Tobias Leicher
   transcriptLetter: C
 spotify: https://open.spotify.com/episode/3sKqfsB3Yh0AKir1y888Sj
-tags: []
+tags:
+- Backend
+- Software Engineering
+- Interview
 title: '#185 Der Mainframe ist tot, lang lebe der Mainframe! Von COBOL bis JavaScript
   am Mainframe mit Tobias Leicher von IBM'
 transcript_raw: ''
