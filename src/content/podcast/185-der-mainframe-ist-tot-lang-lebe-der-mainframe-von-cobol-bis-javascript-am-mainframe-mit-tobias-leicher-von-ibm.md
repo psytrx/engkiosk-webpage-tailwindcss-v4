@@ -1,6 +1,6 @@
 ---
 advertiser: ''
-amazon_music: ''
+amazon_music: https://music.amazon.com/podcasts/c35a09fe-4116-4e04-8f68-77d61b112e46/episodes/a150bf58-8fc2-4993-a042-c989972d114e/engineering-kiosk-185-der-mainframe-ist-tot-lang-lebe-der-mainframe-von-cobol-bis-javascript-am-mainframe-mit-tobias-leicher-von-ibm
 apple_podcasts: https://podcasts.apple.com/us/podcast/185-der-mainframe-ist-tot-lang-lebe-der-mainframe-von/id1603082924?i=1000697558976&uo=4
 audio: https://audio1.redcircle.com/episodes/678fdb6f-3c10-4cd5-864b-83a4031e9e31/stream.mp3
 chapter:
