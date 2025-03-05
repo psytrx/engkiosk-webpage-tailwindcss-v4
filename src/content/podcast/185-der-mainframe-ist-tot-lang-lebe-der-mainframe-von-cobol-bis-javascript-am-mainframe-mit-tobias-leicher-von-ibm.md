@@ -87,7 +87,11 @@ rtlplus: ''
 six_user_needs: []
 speaker:
 - name: Andy Grunwald
+  transcriptLetter: A
 - name: Wolfi Gassler
+  transcriptLetter: B
+- name: Tobias Leicher
+  transcriptLetter: C
 spotify: https://open.spotify.com/episode/3sKqfsB3Yh0AKir1y888Sj
 tags: []
 title: '#185 Der Mainframe ist tot, lang lebe der Mainframe! Von COBOL bis JavaScript

@@ -1,0 +1,1048 @@
+{
+  "language_code": "de",
+  "audio_url": "https://cloud.inlupus.at/s/xGP6agmpZHNDXrE/download/ep_mainframes.mp3",
+  "punctuate": true,
+  "format_text": true,
+  "dual_channel": false,
+  "multichannel": null,
+  "audio_channels": null,
+  "webhook_url": null,
+  "webhook_auth_header_name": null,
+  "webhook_auth_header_value": null,
+  "audio_start_from": null,
+  "audio_end_at": null,
+  "word_boost": [],
+  "boost_param": null,
+  "filter_profanity": false,
+  "redact_pii": false,
+  "redact_pii_audio": false,
+  "redact_pii_audio_quality": null,
+  "redact_pii_policies": null,
+  "redact_pii_sub": null,
+  "speaker_labels": true,
+  "speakers_expected": 3,
+  "content_safety": false,
+  "content_safety_confidence": null,
+  "iab_categories": false,
+  "custom_spelling": null,
+  "disfluencies": false,
+  "sentiment_analysis": false,
+  "auto_chapters": false,
+  "entity_detection": false,
+  "summarization": false,
+  "summary_model": null,
+  "summary_type": null,
+  "auto_highlights": false,
+  "language_detection": false,
+  "language_confidence_threshold": null,
+  "language_confidence": null,
+  "speech_threshold": null,
+  "speech_model": null,
+  "id": "8c0ec376-d2f0-4f21-baea-ed633e4a240e",
+  "status": "completed",
+  "error": null,
+  "utterances": [
+    {
+      "text": "Weißt du eigentlich, dass du eine richtig geile Socke bist? Warum? Weil du wieder beim Engineering Kiosk Podcast eingeschaltet hast. Deswegen wollten Wolfi und ich einfach mal danke sagen, weil das nun gesagt ist. Ab zur eigentlichen Episode. Kennst du diese Fragen, die man sich ab und zu stellt und dann nicht einschlafen kann, weil diese einen nicht mehr loslassen? Eine solche Frage habe ich jetzt für heißt es eigentlich der, die oder das Mainframe? Und da sind wir schon beim nobody ever got fired for buying IBM. So oder so ähnlich hieß bzw. Heißt ein Sprichwort in unserer IT Industrie. Und wenn man sowas hört, hat man oft eins im Mainframes. Die dicken Kisten, die in jeder Bank und in jeder Versicherung stehen. Das Ganze sagt sich so schnell doch wissen wir wirklich, wovon wir da eigentlich sprechen? In dieser Episode klären wir, was eigentlich ein Mainframe ist, was diesen so besonders macht, wie groß und teuer eine solche Maschine ist, was eine z Architektur ist, ob Mainframes für Greenfield Projekte genutzt werden, welche Betriebssysteme darauf laufen können und ob wir bei der Softwareentwicklung an Cobol gebunden sind oder ob auch Go, JavaScript, Rust und Co. Auf dem Mainframe laufen können. Und inwieweit moderne Praktiken wie GitOps, Continuous Delivery, Pre Production Testing und Co. Angewendet werden können. Am Ende stellen wir uns die Frage, ob der Mainframe im Zeitalter von Cloud, Kubernetes, Commodity Hardware und verteilte Systeme eigentlich noch eine Rolle spielt, wie wir als Softwareentwicklerinnen mal mit der Z Architektur und dem Mainframe spielen können und was für Herausforderungen die Firmen, die heutzutage noch einen Mainframe und alten Quellcode betreiben, eigentlich so haben. Dann lass uns mal direkt loslegen. Viel Spaß.",
+      "start": 3360,
+      "end": 100770,
+      "confidence": 0.9254146,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Wir haben ja im Podcast einen Spruch, also Andi hat den ja fast geprägt, würde ich sagen. Andi, was ist das für ein Spruch?",
+      "start": 103110,
+      "end": 109310,
+      "confidence": 0.9575271,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Legacy verdient das Geld.",
+      "start": 109390,
+      "end": 110878,
+      "confidence": 0.832865,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Genau, wir haben ja schon Tassen damit rausgebracht. Also es ist wirklich ein Spruch, den wir stark verfolgen. Und es gibt so einen zweiten starken Spruch, den man so in der IT tech Szene immer hört. Der ist nobody ever got fired for buying IBM. Und damit verbindet man ja dann immer so ein bisschen altertümliche Technologie. Dann gibt es auch noch den Spruch, den im Studium immer gehört habe, so als Cobol Entwicklerin, dass du ausgesorgt, da brauchst du dir keine Sorgen mehr machen. Aber im Prinzip, es will halt niemand machen. Das war so in meinem Studium immer so das Thema. Und wichtig dazu, also ich habe studiert in den ER Jahren, das heißt vor über guten 20 Jahren, und da war das schon Thema und es wollte eigentlich niemand machen. Und kürzlich habe ich mal einen Podcast gehört, einen amerikanischen Podcast, und zwar war das mit einem Professor namens Cameron say, scheinbar einer der wenigen Professoren, die Mainframes auch wirklich lehren und Cobol Entwickler innen ausbilden. Und ich bin in diesem Podcast gesessen quasi und habe dem guten Herrn zugehört und die hatte so viele Fragen. Also der hat natürlich sehr positiv über das ganze Thema gesprochen und hat erklärt, wie das funktioniert technisch. Und ich hatte ständig solche Fragen auf den Lippen. Ich wollte einfach nachhaken. Und dann habe ich mir überlegt, Okay, ich muss irgendwie ins Engineering kiosk mal dieses Thema reinbringen, weil ich habe so viele Fragen zu dem ganzen Mainframe Thema. Und es ist ja immer noch ein Thema, weil gerade kürzlich auch ehemalige Studienkollegen, die damals eben gesagt haben, ist alles böse, Mainframe ist ein großes Feindbild. Die erzählen mir jetzt so, ja, sie programmieren jetzt Cobol oder sie machen jetzt Mainframe bei einer Bank und sind super happy damit. Und dann habe ich natürlich noch mehr gedacht, dieses Thema, wir müssen das Thema irgendwann mal behandeln. Und dann haben wir versucht, Andy und ich, mal jemanden zu finden. Und da hat sich so dieses Baumarkt Phänomen aufgetan. Also in einem Baumarkt heißt es ja immer, wenn man irgendwie eine Frage hat und jemanden sucht, einem hilft, dann findet man niemanden. Und wir hatten auch irgendwie das Gefühl, weil alle, die gefragt haben, ihr arbeitet ja im Bereich, wollt ihr mal ein Interview geben, kennt ihr jemanden? Es war immer nein, ich nicht. Und vielleicht bei IBM, aber irgendwie auch keine Kontakte. Und darum freue mich natürlich umso mehr, dass wir heute einen Spezialisten im Mainframe Bereich bei uns haben. Und damit willkommen, Tobias.",
+      "start": 110974,
+      "end": 242876,
+      "confidence": 0.9071967,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Hallo, schön da zu sein.",
+      "start": 242988,
+      "end": 244060,
+      "confidence": 0.992228,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Tobi, warum bist du der Spezialist? Du bist Wahlschwabe, bist aktuell aus Stuttgart, soviel ich weiß, oder du telefonierst aus Stuttgart mit uns. Beruflich bist du bei IBM. Und gefühlt, als ich mich auf diesen Podcast vorbereitet habe, kam ich in deiner Karriere um Mainframe einfach nicht drumherum. Also du bist inzwischen 16 Jahre bei IBM, dein Jobtitel ist Z Client Architekt. Was das genau ist, wirst du uns gleich noch mal erklären. Dein Fokus liegt aktuell auf der Modernisierung bzw. Auf der Mainframe Modernisierung. Und du hast auch ziemlich viel im Bereich DB und Data Warehousing on mainframes gemacht. Als wäre das nicht noch genug, machst du nebenbei noch einen Podcast, der heißt Mainframe what the heck? Und das könnte auch der Untertitel von dieser Podcast Episode sein. Und dich trifft man ab und zu auch auf den Bühnen dieser Welt, z.B. und das habe ich auch in dieser Vorbereitung gelernt auf der Mighty Mainframe Konferenz.",
+      "start": 244100,
+      "end": 299700,
+      "confidence": 0.90675706,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Super Name einer Konferenz, gefällt mir jetzt schon.",
+      "start": 300360,
+      "end": 303056,
+      "confidence": 0.9666175,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Habe ich irgendwas vergessen?",
+      "start": 303128,
+      "end": 304464,
+      "confidence": 0.75176,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Ne, das ist glaube ich schon ganz gut. Und ja, also tatsächlich, das leite ich an den Cresso weiter, der diese Konferenz da aus dem Leben gerufen hat letztes Jahr. Ich finde es auch einen großartigen Titel. Also er hat auch schon lange so einen Newsletter da gehabt, der Mighty Mainframe hieß. Das ist einfach richtig guter Name. Ne, das ist tatsächlich so ein bisschen mein Lebenslauf und das war, ich glaube, man muss dazu erwähnen, du hast ja schon gesagt, wolfig ist irgendwie schon besonders. Man muss sagen, ich habe mir das immer ausgesucht. Ich wurde nie genötigt, Mainframe zu machen, sondern ich habe irgendwie im Studium ganz früh war ich bei so einer Consulting Ecke der IBM und da hieß es dann, ja, wir machen hier Legacy Modernisation und dann teilen wir die hier ein in blau, bronze, silber, gold und die goldenen, die transformieren wir dann nach Java, diesen Kobold Code. Ich weiß noch, dass ich damals da drin saß und sagst du ja, okay, Kobold, noch nie gehört. Erstmal gegoogelt, dann gedacht, okay, also wie wollen die das denn jetzt machen? Also ich meine, das ist ja eher so wie so ein Englischbuch und woher weiß der jetzt, was hier ein Objekt ist? Und da habe ich damals den Typen gesagt, ich glaube, das ist hier, ihr habt da was, das geht so nicht. Und hat dann der Consultant damals zu mir gesagt, also hier Lehrling, erstes Lehrjahr, Fresse halten, machen. Und das ist so ziemlich das Schlimmste, was man mir sagen kann, weil da habe ich jetzt will ich aber wissen, ob das wirklich so geht. Und dann habe ich angefangen, mich dafür zu interessieren. Und im Prinzip würde ich sagen, das was mich da hält, ist eigentlich jede Tür, die ich so mal aufgemacht habe und durchgeguckt habe, da kamen wieder 10 neue und es hat mich immer wieder irgendwas anderes interessiert. Deswegen habe ich mich einfach nie gelangweilt und bis jetzt die IBM sich mit mir auch nicht. Und deswegen schwuppdiwupp sind 16 Jahre rum und wir reden immer noch über den Mainframe, obwohl er ja eigentlich schon seit 40 Jahren tot ist.",
+      "start": 304592,
+      "end": 396840,
+      "confidence": 0.9337307,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Heißt der Mainframe, weil du gerade den Mainframe gesagt hast, oder ist es das Mainframe?",
+      "start": 396960,
+      "end": 402312,
+      "confidence": 0.91301465,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Also ich glaube, wir würden sagen, der Mainframe, der Frame, der eine Rahmen da. Aber das ist auch ganz witzig, weil die IBM das ganz lange auch vermieden hat, Mainframe zu sagen, weil wir immer gesagt haben, das dürfen wir nicht sagen, weil da haben die Leute immer das Bild von Lochkarten. Wir müssen das jetzt heißt ja offiziell IBM Z für Zero Downtime und so. Aber in den letzten Jahren, glaube ich, ist das so ein bisschen wie generell so Retro Trends gekommen sind. Jetzt darf man das wieder sagen und ist so ein bisschen cool, auch mit Cresos Konferenz, Mighty Mainframe, so langsam kommt das wieder. Aber ich würde sagen, im deutschen ist der Mainframe oder eben die IBMZ.",
+      "start": 462456,
+      "end": 494900,
+      "confidence": 0.93605536,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Der Professor in diesem Podcast, den ich gehört habe, der hat auch gemeint, seine Studierenden, wenn die aus der Uni rauskommen, dann bekommen die schon mal US Dollar Jahresgehalt. Hattest du damals das auch, wie du da als Azubi quasi angefangen hast?",
+      "start": 494980,
+      "end": 509290,
+      "confidence": 0.96310264,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Ich muss gestehen, ich sage das den Leuten auch immer, ich halte auch ganz viele Vorlesungen, sage ich auch immer, ihr verdient mehr Geld, wenn ihr das macht. Aber bei der IBM ist das alles gut standardisiert, da kriegt jeder dasselbe, da kannst du noch so viel können, das ist erstmal wurscht, das kristallisiert sich dann erst später raus. Ich würde schon sagen, im Schnitt glaube ich, wenn ich jetzt den Job wechsel, habe ich es entspannt und krieg wahrscheinlich auch ein gutes Geld. Das ist schon so, dass jetzt immer direkt beim Anfang so ist, ist vielleicht immer ein bisschen übertrieben, aber ich glaube schon, dass ein Differenzierungsmerkmal ist, weil am Ende wie viele tausend Menschen haben wir in Deutschland, die mal gerade zur Verfügung stehen für ein Java Projekt und wie viele die Cobol und PL oder geschweige denn Assembler können? Deswegen glaube ich, ist schon ein Punkt. Aber ja, ich muss immer noch arbeiten gehen, auch wenn ich ab und zu das auch eine beliebte Frage du machst doch mit diesen Mainframes bei den Banken, kannst du uns da einfach mal 1 Million überweisen? Ja, wenn ich das könnte, glaubt ihr, ich würde hier rumsitzen und noch arbeiten? Also so ein ist es leider nicht.",
+      "start": 509370,
+      "end": 561738,
+      "confidence": 0.9251149,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Aber ich merke schon, wir behandeln die relevanten Fragen, denn dein englischer Podcast, der hatte es sehr einfach mit dem Artikel the Mainframe. Und bei der Recherche zu diesem Podcast habe ich wirklich alles gefunden. Ich habe der Mainframe, die Mainframe, das Mainframe gefunden in Artikeln sowie auf der Tonspur und ich glaube, das bleibt für immer ein Geheimnis, wie der, die, das Nutella.",
+      "start": 561874,
+      "end": 581630,
+      "confidence": 0.9356792,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Da gibt es wahrscheinlich auch noch mal die österreichischen Unterschiede. Wir würden wahrscheinlich das Mainframe eher sagen.",
+      "start": 581970,
+      "end": 587150,
+      "confidence": 0.9171341,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Ich glaube Österreich tatsächlich wäre richtig da host. Da wird gar nicht vom Mainframe gesprochen, sondern ich sage mal der Host, der host quasi als der große.",
+      "start": 587490,
+      "end": 595390,
+      "confidence": 0.87362295,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Aber Tobi, du sagtest gerade irgendwie auch so ein bisschen alter Tobak und so weiter und so fort. Meinen Recherchen nach ist der letzte Mainframe aber vor anderthalb Jahren rausgekommen, der ZEG 16 im Okt. 2023, ist das korrekt?",
+      "start": 596210,
+      "end": 607722,
+      "confidence": 0.92918694,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Das ist auf jeden Fall richtig. Tatsächlich stehen wir, je nachdem wann ihr das hier hört, diesen Podcast, stehen wir sogar kurz vor einer neuen Maschine. Eigentlich kündigt die IBM sowas ja nie an, weil wir dürfen immer nur. Die IBM Regel ist, wir reden immer nur über das, was im selben Quartal passiert. Aber beim Mainframe haben wir schon seit ein paar Jahren, dass wir immer die Chips bei der Hotship veröffentlichen. Und so haben wir letztes Jahr bei der Hotship einen neuen Chip veröffentlicht. Und dann kann man eigentlich immer die Uhr danach zählen, dass im Laufe des nächsten Jahres was Neues passiert. Und so ist es wahrscheinlich dann auch dieses Jahr, dass wir vielleicht im Mai, also ich dürfte das ja nie announcen, aber vielleicht könnte das im Mai passieren, dass wir einen neuen Mainframe kriegen, der dann. Und das sind die zwei größten Geheimnisse des Mainframes. Also für euch ja vieles ein Geheimnis, aber wenn man in der Welt ist, gibt es zwei ganz große Geheimnisse. Das eine ist, wie wird die nächste Maschine heißen? Hoffentlich z einfach hochzählen. Manchmal hat die IBM so ganz merkwürdige. Da gab es nach der Z auf einmal eine Z 196 oder so. Da hat dann irgendein Marketingmensch sich überlegt, die erste Maschine mit 96 cores. Also wir hoffen, es wird einfach Z ist viel einfacher. Und die zweite Tür ist, wie sie. Die Frage ist, wie sieht die Tür aus? Das sind immer die großen Fragen, wenn man in der Mainframe Welt unterwegs ist und die werden wir dann beantworten.",
+      "start": 607866,
+      "end": 673484,
+      "confidence": 0.9491997,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Für mich hebst du IBM gerade auf eine Stufe wie Vorwerk mit der Veröffentlichung des neuen Thermomixes und natürlich auch Apple. Wahnsinn, diese Spannung hier. Dann müssen wir natürlich.",
+      "start": 673532,
+      "end": 683272,
+      "confidence": 0.9075117,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Hat Dinge, gell? Also lustigerweise, wenn wir ein bisschen auf die Historie auch gucken, was euch ja wahrscheinlich auch interessiert, was macht zum Mainframe aus? Als wir den ersten veröffentlicht haben, 64 war das Announcement, da gab es in Grand Central in New York ein eigener Track, der zu dieser Pressekonferenz gefahren ist. Und da steht auch wirklich in Grand Central steht riesig hier IBM Announcement System 360. Kann man sich heute gar nicht mehr vorstellen, weil heute ist die IBM Werbung ja eher so verglichen zu Apple, so das Finanzamt, also sehr langweilig und dröge. Aber damals war das echt richtig cool. Da gab es so rote Plakate. Am siebter April haben wir das, was computing heißt, komplett verändert und so. Also es war damals schon ein Ding. Und ja, muss man ein bisschen anknüpfen.",
+      "start": 683416,
+      "end": 727236,
+      "confidence": 0.93085265,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Jetzt hast du gerade schon angesprochen, dass deine Freunde und bekannte Millionen von dir haben möchten, weil du bei Banken arbeitest. Und ich hatte gerade gesagt, dein Berufstitel ist Hilfe. Nochmal auf die Sprünge, was ist das?",
+      "start": 727268,
+      "end": 740356,
+      "confidence": 0.90539294,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Ja, im Prinzip bin ich einfach ein IT Architekt. Ich versuche auch immer, das so ein bisschen zu vermeiden, dass die Leute so glauben, dass immer was ganz besonderes, wenn Manframe arbeitet. An für sich bin ich einfach ein IT Architekt, habe mich immer für IT als solches interessiert, eher immer für Enterprise und backend Sachen als für Frontend Kram. Also mit JavaScript kann man mich jagen und da Datenbanken fand ich immer schon im Studium toll und das mache ich im Prinzip heute auch noch mit dem Fokus eben auf diese mainframe Systeme, weil die Kunden da typischerweise mal relativ viel Estate haben, also viel, viel Software, viel, viel Fragen auch. Und dann heiß die IBM hat eigentlich immer einen Architekten für einen Account. Das ist bei uns der für den gesamten Account. Und dann gibt es uns immer noch für nur die z Themen, für die großen, in meinem Fall eben hauptsächlich Banken und Versicherungen, mit denen ich dann quasi darüber rede, was machen sie so mit ihren Kisten, die sie ja schon haben und wie rettet man das vielleicht in die Zukunft oder wie will man das auch ablösen? Also das sind ja immer die großen Fragen. Der Mainframe stirbt, haben wir schon gehört. Stuart Alsop, der hat mal in so einen Zeitungsartikel geschrieben, ich weiß das genaue Jahr nicht mehr, irgendwie Anfang der er hat er geschrieben, am 5. Mai. 1996 wird ein Infoworld Reader den letzten Mainframe ausschalten. Das ist eine ziemlich dumme Idee, wenn man Vorhersagen macht, die so präzise zu stellen. Übrigens hat natürlich absolut nicht geklappt. Wir reden heute 25 immer noch vom Mainframe, aber der hatte wenigstens richtig Humor. Der hat dann danach quasi so death of the mainframe als Schokolade auf so einem Teller liegen und hat quasi seine eigenen Worte aufgegessen, weil das auch damals schon nicht geklappt hat.",
+      "start": 740508,
+      "end": 825160,
+      "confidence": 0.9374162,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Wir sprechen jetzt von dem ganzen Thema und als wüssten wir schon genau, worum es geht bzw. Als denken wir okay, jeder, der diesen Podcast hört, der weiß schon, worum es geht. Aber wenn ich doch jemanden mal frage, der sich beruflich damit Tag aus beschäftigt, was denn eigentlich ein Mainframe ist und wie dieser sich von einem klassischen Server oder von klassischen verteilten Systemen unterscheidet. Wie erklärst du Technikern, was denn jetzt genau Mainframe ist?",
+      "start": 825280,
+      "end": 849000,
+      "confidence": 0.917283,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Ich meine, das Dilemma ist, wir leben in so einer Zeit, wo x so gefühlt der Default war. So langsam ändert sich das wieder mit arm. Also haben die Leute langsam wieder ein Gefühl, dafür, es gibt Architekturen und x ist eben die Main Architektur, die wir alle so kennen. Und das witzige ist, dass bevor es diesen Mainframe gab, gab es das nicht. Also wenn die IBM einen neuen Computer gebaut hat, musste man die komplette Software neu schreiben, weil die Hardware Instruktionen an anderen Positionen waren total absurd. Und das hat die IBM damals total genervt, weil sie super viele Techniker einstellen musste und Handbücher und blablabla. Die Kunden waren auch genervt, jedes Mal neue Software schreiben. Und da kam er damals auf die Idee, eben die Z Architektur zu erfinden, sich also einfach darauf zu einigen, Instruktion eins ist immer plus, Instruktion zwei immer Minus und all diese Sachen. Das ist im Prinzip der erstmal größte Unterschied, weil an und für sich ist auch ein Server, ein Server, der ein bisschen größer ist, fairerweise, aber ist ein ganz normaler Server, der hat eben eine bestimmte Hardwarearchitektur. Das heißt, mit dieser Hardwarearchitektur kommen natürlich auch Besonderheiten, wie greift man auf Speicher zu und so. Also wenn man so ein Mainframe dann mal sieht, oder wenn man das jetzt googelt, wie sieht so eine Z aus, dann sind das so zwei bis vier 19 Zoll Racks. Aber das witzige ist immer, was ich den Leuten sage, ist, da drin sind keine Festplatten. Das heißt, da hat man diese vier Rex Rechner, die sind aber einfach nur Rechner. Das heißt, die Grundarchitektur ist so ein bisschen anders, ist nicht so ein voller Computer jedes mal, wie wir das eher bei Blades oder bei x Servern so kennen, sondern es ist wirklich nur eine reine Recheneinheit. Deswegen, wenn man das googelt, die IBM haben auch ganz viele lustige Begriffe dafür mal erfunden, das ist der Keck, der Central Electronic Complex, also wo die ganzen Berechnungen stattfinden. Und dieses Ding hat dann ganz viele i O Karten, mit denen es dann unter anderem auch mit Speicher spricht. Das heißt, wenn man so ein Mainframe kauft, ist einem erstmal noch nichts geholfen, weil es keine Festplatte dabei, wo man das Betriebssystem drauf ablegen kann. Das ist, glaube ich, dann schon mal das nächste große, was anders ist. Und dann sind die Betriebssysteme, die da drauf sind, manchmal gleich, kann auch ein Linux drauf laufen, aber eben auch hauptsächlich unterschiedlich in der Form, dass einfach andere Konzepte sind. Man redet nicht über Dateisysteme wie im klassischen Sinn, sondern die Dateisysteme, da sind katalogisierte Datasets. Und das erinnert dann halt doch manchmal ein bisschen mehr an den Ursprung des Computings, auch wenn man den ganz normal benutzen kann, wie so ein Server heute darauf auch Java läuft. Und wenn man z.B. linux drauf installiert, würden die meisten Leute das nicht groß merken, außer sie gucken sich halt an, was für eine Prozessorarchitektur mein Linux Kernel gerade hat. Und dann steht da nicht x, sondern S.",
+      "start": 849040,
+      "end": 988856,
+      "confidence": 0.93887633,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Also das bedeutet, wenn ich jetzt, angenommen, ich würde jetzt ein Mainframe kaufen, dann bekomme ich da noch kein Storage dabei. Das bedeutet, ich habe da zwei bis vier Racks und da sind wirklich nur, da ist CPU, da ist RAM bei, da sind die i O Karten drin und die i O Karten machen nur die Kommunikation zu den Storage Systemen. Und dann brauche ich nochmal einen Rack für mein Storage oder wie darf ich mir das vorstellen?",
+      "start": 989008,
+      "end": 1008148,
+      "confidence": 0.9308053,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Quasi so, es gibt noch die kleine Variante des Mainframes, das ist dann nur ein Rack, da habe ich dann vielleicht nur ein Rack. Und es gibt sogar eine ganz coole Variante, wo ich dann auch noch Speichersysteme integrieren kann, da bin ich mit einem Rack komplett fertig. Aber so ist es tatsächlich. Also wenn man den Mainframe kauft, hat der keine Platten, sondern der braucht quasi immer ein Plattensubsystem, das daneben steht und das hält dann nachher die Daten. Bei der IBM ist das DS und.",
+      "start": 1008244,
+      "end": 1031740,
+      "confidence": 0.9331008,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Die Platten kann ich mir selbst aussuchen oder gibt es da nur IBM Platten?",
+      "start": 1031780,
+      "end": 1034860,
+      "confidence": 0.9818114,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Es gibt ganz viele Anbieter, gibt welche von EMC und so, aber IBM macht auch welche, die heißen DS. Da ist wirklich freie Auswahl. Also das war lustigerweise, ich weiß nicht, ob euch das auch so geht, aber wenn man über den Mainframe nachdenkt, dann ist das immer so was total proprietäres. Mainframe, würde man immer sagen, ist proprietär. Dabei ist lustigerweise der Mainframe eigentlich immer sehr offen gewesen. Das heißt, diese ganzen Schnittstellen waren immer schon offen beschrieben. Das heißt, sie durften immer auch andere bauen. Als die IBM den Mainframe erfunden hat, wurden die ganzen Specs veröffentlicht. Veröffentlicht. Und Gene Amdal, übrigens einer der Chefarchitekten der Original S, der hat dann irgendwann gedacht, ja, bei IBM ist ja alles schön, aber bei mir im Studium hat mal ein Professor gesagt, also bei mir, Tobias, jetzt im Studium, hat mal einer gesagt, wenn du reich werden willst, musst du mal für die IBM gearbeitet haben, aber darfst nicht da bleiben. Das hat sich damals Gene Amdal auch gedacht und hat gesagt, ich weiß ja jetzt, wie man so Maschinen baut, baue ich die lieber selber. Und hat dann eine eigene Computerfirma, Amdal Computing, gegründet und hat quasi kompatible Mainframes gebaut, die manchmal sogar besser waren als die der IBM. Aber das ging eben nur, weil alle Standards immer veröffentlicht. Das heißt, jeder kann im Prinzip dazu was bauen und jeder darf auch Platten für einen Mainframe bauen.",
+      "start": 1034940,
+      "end": 1097694,
+      "confidence": 0.9317312,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Ja gut, das große Problem ist, wenn die Spezifikationen oder die Schnittstellen oder die Spezifikationen für die Schnittstellen offen sind. Das zieht natürlich dann, ich sag mal, Maker und Hacker und Open Source Leute jetzt an, zumindest heutzutage. Gut, aber leider sind die jetzt nicht so affordable wie so ein kleiner Raspberry Pi, wo ich mal alles reverse engineeren kann. Also deswegen, wenn ich jetzt hier von, wenn ich mir auch den kleinen Mainframe kaufe, der ein Rack wäre, sagtest du gerade, dann ist mein Büro hier, glaube ich, trotzdem voll. Aber wovon sprechen wir denn dann bei so einer Default Installation? Bei so einer Bank z.B. die haben.",
+      "start": 1097742,
+      "end": 1129352,
+      "confidence": 0.9204057,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Typischerweise auch nicht nur einen von diesen Mainframes, sondern wenn wir auch über das gleich noch vielleicht reden, was macht denn Mainframe aus? Das ist ja Hochverfügbarkeit z.B. wichtig. Also wir können uns vorstellen, wir alle wollen, dass unsere Bank immer funktioniert. Da ist dieser eine Rechner, der Mainframe ist quasi schon so gebaut, dass alles hochverfügbar drin ist. Also es gibt zwei Stromversorgung, es gibt zwei Kühleinheiten, also immer, es kann eigentlich immer irgendwas kaputt gehen und der läuft einfach weiter. Da kommen wir dann zu diesen berühmten sechs bis acht Neunen, die wir da haben bei einer Hochverfügbarkeit. Aber das reicht natürlich den Banken nicht, weil kann ja sein, dass ein Rechenzentrum vielleicht ganz ausfällt oder überflutet wird oder schützt ein Flugzeug rein oder so. Das heißt typischerweise haben Banken immer eher so zwei bis drei Standorte, wo jeweils immer eine volle Mainframe Installation steht, die dann auch für den anderen, für die andere Seite jeweils übernehmen kann. Und wenn wir dann die ganz großen Kunden angucken, die haben dann auch quasi so Sysplexe, das ist so eine Cluster, das Wort für ein Cluster von einem Mainframe von 1618 Maschinen, die die einfach auf verschiedene Rechenzentren Standorte.",
+      "start": 1129376,
+      "end": 1187700,
+      "confidence": 0.91871244,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Und mit Maschine meinst du jetzt immer ein Rack oder zwei bis vier Racks.",
+      "start": 1187780,
+      "end": 1191956,
+      "confidence": 0.92868143,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "In dem Fall dann. Also die haben dann quasi 16 mal zwei bis vier Racks da rumstehen.",
+      "start": 1191988,
+      "end": 1196676,
+      "confidence": 0.96088296,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Und jetzt hast du schon ganz viele erwähnt bei der Availability, wenn wir auf den Preis schauen, wie viel Stellen muss man da oder ab wann bekommt man Mainframe, wenn ich jetzt persönlich ein Mainframe.",
+      "start": 1196708,
+      "end": 1207076,
+      "confidence": 0.9038357,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Kaufen will, das ist jetzt die Lieblingsantwort, die ihr bestimmt hören wollt. It depends. Also es kann wirklich sein von, also es gibt natürlich auch kleine Installationen, da ist das dann schon sechsstellig, Mitte bis oben und da hat man dann quasi alles drin. Aber das kann natürlich auch für große Installationen viele, viele Millionen sein, für ein System, je nachdem, was da noch drin ist, diesen I O Cages, die wir da haben, gibt es auch noch ganz viele Besonderheiten. Man kann z.B. kryptokarte reinstecken, so ein bisschen wie bei James Bond, da ist dann der Master Key drauf und wenn man die versucht auch hardwaretechnisch zu stehlen, also diesen Master Key und die aus dem Rechner zieht, dann löscht die sich selber. Also ganz früher war das mal mit Chemie, heute detektiert die das einfach, dass jemand dran rumgerobbt hat und löscht alles, was drin ist. Ist dann gut für dich, weil deine Bankdaten sind sicher, der Key ist nicht weg. Schlecht für die Bank, weil da ist erstmal der Key weg. Das heißt, man muss dann, ist dann ganz witzig, das klingt dann auch so voll fancy, gibt so eine Key Zeremonie, wo dann vier, fünf verschiedene Leute in der, im Unternehmen Teile des Keys haben, die müssen dann nach und nach an den Mainframe gehen, den da eintippern, um das wieder zu recovern. Aber das sind halt, daran sieht man so, finde ich immer, dass halt viele Gedanken, die in dieser Technologie stecken, halt super auf Enterprise getrimmt sind. Das ist nichts, worüber jemand nachdenkt, der aus dem Studium kommt oder so, sondern das halt echt über die Jahre einfach total gewachsen an diesen hochgradig anspruchsvollen Enterprise Sektor.",
+      "start": 1207108,
+      "end": 1286812,
+      "confidence": 0.92158324,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Also wenn ihr da auf der Seite habt, dann kann ich da noch nicht mitspielen. Also sechsstellig oder so ist schon mal.",
+      "start": 1286876,
+      "end": 1292892,
+      "confidence": 0.9647818,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Mindestens, da muss man dann in die Cloud wechseln. Da gibt es dann natürlich sowohl Anbieter, extra extern outsourcing Anbieter, Atos, T System, Skindrill, die einem sowas anbieten, dass man natürlich auch kleinere Paketchen hat. Oder auch die IBM hat auch für nicht produktive Workload quasi Mainframes in der Cloud, wo man einfach sich ein bisschen Rechenzeit mieten kann und kann man dann dran rumspielen, dann hat man die Physik nicht, aber zumindest das Look and Feel.",
+      "start": 1292916,
+      "end": 1317002,
+      "confidence": 0.92124856,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Jetzt hast du erwähnt, dass man, wenn man da ein Teil rauszieht, dass der Key und so weiter gelöscht wird. Also sehr spezielle Hardware, wenn man auf die ganz klassische Architektur blickt, also sei es jetzt CPU, Speicher, iOS Subsystem hast du genannt, kann man die vergleichen mit einem normalen X in irgendeiner Form oder ist es auch schon super speziell?",
+      "start": 1317066,
+      "end": 1334782,
+      "confidence": 0.92512214,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Ne, würde ich nicht sagen. Also wir machen auch einen KISC Prozessor, genauso wie ein x auch einer ist. Der hat natürlich besondere Instruktionen. Was wir beim Mainframe traditionell tun, ist, wir lagern die i O Fähigkeiten an extra Prozessor aus. Also eine Maschine hat nicht einen Prozessor mit vielen Kernen, sondern typischerweise so ein Mainframe in der Vollausbaustufe hat 200 nutzbare Kerne. Jetzt guckt der Informatiker schon immer schief, wenn man sagt 200, das ist irgendwie kein zwei hoch X. Faktisch sind natürlich 256 Kerne in der Maschine, aber 56 z.B. die sind für interne Sachen wie dieses I O Management. Es gibt also einfach Prozessoren, die man nichts anderes als IO hin und her zu diesen Prozessoren schief schaufeln. Oder aber auch Firmware, die da drin läuft. Oder aber auch, und das auch wichtig, Spares. Das heißt, immer wenn irgendeiner kaputt geht, bemerkt die Maschine also auch wieder auf die Hochverfügbarkeit. Könnte ja sein, dass sehr unwahrscheinlich, aber nehmen wir mal an, so ein Ionen schießt durch so ein Prozessorkern durch, blöderweise und zerstört einfach eine Einheit oder der war irgendwie bei der Produktion schon ein bisschen angedetscht und geht dann irgendwann einfach kaputt. Kleine Überspannung oder so. Damit merkt die Maschine, das wird die Instruktion, die gerade darauf lief, automatisch auf einen anderen Kern packen, der eben noch frei war und so. Von daher ist das schon vergleichbar. Aber in allen Bereichen ist immer was Besonderes. Beim speicher z.B. ist das sogenannter RAM Speicher. Das heißt, sind ganz normale Memory Dimms, aber die verhalten sich wie so ein Plattenraid. Das heißt, auch wenn da wieder ein Memory Dimm kaputt geht, stürzt der Rechner nicht ab oder so, sondern der bemerkt das und kann das über die anderen Teile des Rames halt wieder wiederherstellen.",
+      "start": 1334846,
+      "end": 1429442,
+      "confidence": 0.91404516,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Ich habe in meinem gesamten Studium nichts eigentlich gelernt von Mainframes, muss ich sagen. Außer vielleicht einmal so Mythen und ein Mythos oder das, was mal so Gerhard hat in einem Mainframe ist alles doppelt drin. Also es gibt kein Teil, was nicht doppelt ist. Stimmt es soweit?",
+      "start": 1429586,
+      "end": 1442678,
+      "confidence": 0.8895673,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Mittlerweile macht man nicht mehr alles so einfach doppelt, weil das ist ja auch teuer, das wollen die Kunden auch nicht mehr alles bezahlen. Das heißt, man hat auch viel. Also bei dem RAID z.B. ist ja quasi nicht einfach doppelt so viel Speicher, sondern man hat eben anderthalb mal so viel Speicher, kann es recovern. Bei den Chips ist es tatsächlich so, dass wir nicht die Logikeinheiten zweimal haben, sondern man hat ganz viel Verifikation da drin. Ob z.B. die Berechnung. Also ich meine, wie merkt ihr, dass ein Ion dadurch schießt? Da muss er halt bemerken, dass zwei zwei. Beim Rechnen kam jetzt nicht mehr vier raus, sondern auf einmal 28 oder so. Das heißt, da gibt es ganz viel Hardware Verifikation. Die Prü ist das Ergebnis, das ich ja gerade haus habe, überhaupt noch zumindest im Rahmen legitim? Und das heißt nicht nur alles doppelt, sondern auch ganz viel Verifikation. Und Test, ob denn alles richtig ist.",
+      "start": 1442774,
+      "end": 1484790,
+      "confidence": 0.9230556,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Das ganze auf der Hardware Ebene.",
+      "start": 1484910,
+      "end": 1486502,
+      "confidence": 0.9376967,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Auf der Hardware Ebene, genau.",
+      "start": 1486566,
+      "end": 1487734,
+      "confidence": 0.863584,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Und wenn ich in dem Bereich dann mal ein bisschen weiter google, das habe ich auch zur Recherche gemacht, da kommen mir oft die Begriffe trans und hochtransaktionale Workloads auf meinem Bildschirm und das Mainframe da auch Hardware Unterstützung für haben und dass Mainframe ganz besonders für sowas ist. Wovon rede ich gerade?",
+      "start": 1487782,
+      "end": 1504076,
+      "confidence": 0.9064349,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Also im Prinzip wieder der Punkt, wir kommen halt aus so einer Businesswelt. Man darf ja nicht vergessen, so in den ERN gab es ja noch gar nicht so viel Bank IT. Das heißt, die IT, die damals begonnen wurde, das war natürlich große Konzerne, große Banken, die viel Massenverarbeitung haben. Also wenn man z.b. geld überweisen, das ist ja implementierungstechnisch total lapidar, also irgendwie hier was runter, da was hoch, futzelangweilig, aber dafür 1 Million mal in der S, weil überall gerade irgendwer seine EC Karte drauf flatscht. Und das war, ist, was man so Transaktionalität nennt in den Datenbanken für dich Wolfi, ich meine, das sind die klassischen Asset Kriterien, die wir in relationalen Datenbanken sehen. Das ist das, was damals aufkam, dass man gesagt hat, gucken wir mal auf das echte Business. Also vergessen wir mal kurz, dass wir in der IT sind. Wie funktioniert eine Bank? Da sitzt im Prinzip der Ober Medici, sitzt vor seinem Buch und schreibt da alleine rein, wer schuldet hier wem wie viel Geld? Da schreiben nicht drei Leute gleichzeitig rein, sondern schreibt immer einer rein. Und da kam diese Idee der Transaktionalität natürlich her. Das heißt, eine Konsistenz ist oft nur zu erreichen, wenn Sachen eben ganz oder gar nicht durable. Also die klassischen Asset Kriterien sind Atomicity, Consistency.",
+      "start": 1504188,
+      "end": 1572050,
+      "confidence": 0.9245103,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Jetzt haben wir natürlich schon gesagt, okay, das Wort Bank ist schon öfters in diesem Podcast gefallen. Wo findet man aktuell Mainframe? Klar, Banken, Versicherung, das ist so das erste, was mir irgendwie in den Sinn kommt. Aber bleibt es dabei oder?",
+      "start": 1572950,
+      "end": 1585342,
+      "confidence": 0.9185481,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Nicht wirklich tatsächlich. Also auch klassisch Retail, ein großer, also Amerika hat natürlich sehr viele Retailer in Deutschland, wenn man jetzt den deutschen Markt sich anguckt oder auch den österreichischen bei euch dann quasi Billa ist die Rewe. Die Rewe macht sehr viel mit Mainframes tatsächlich haben auch große Datenbanken da. Was die Kunden dann jeweils damit machen, ist immer so ein bisschen individuell natürlich. Manchmal ist der Grund auch, dass man Mainframe hat, weil man eben schon immer einen hatte. Viele Verwaltungen haben schon immer mit Mainframes gemacht. Sind das dann immer. Und das ist glaube ich auch wichtig bei dieser Frage Transaktionalität, was heißt das? Was man so macht, wenn man sich die großen Banken anguckt, von den 50 größten haben irgendwie 45 eine. Und dann ist so die typische Frage von meinen Studenten immer, wenn ich so ein Vorlesung was machen denn die anderen fünf? Also irgendwie geht es ja auch scheinbar ohne. Und das ist, glaube ich, immer wichtig zu sagen. Als sie angefangen haben, gab es eben nichts anderes. Da gab es Mainframes, das war die Technologie, die jeder benutzt hat. In der heutigen Zeit kann ich natürlich auch Banking anders machen, wenn ich mir so Startups wie Thought Machine oder sowas anguckt, die versuchen auch Banking in einer anderen Form zu lösen, oder gibt auch viele kleinere Banken, die brauchen das natürlich nicht. Am Ende ist mein Beispiel immer zu sagen, das ist so wie wenn ich umziehe, dann kann ich mit dem LKW umziehen, da brauche ich einmal fahren und alles ist gut. Ich kann mit dem Smart umziehen, dauert halt einfach nur länger. Finanziell vielleicht gar nicht so ein großer Unterschied, wahrscheinlich ist der LKW sogar einen Ticken billiger. Aber so ist eben beim Mainframe auch als Technologie mit dieser Transaktionalität der hohen i O Dichte, ist es super prädestiniert für diese großen Workloads. Deswegen auch Retail. Passiert ja auch ganz viel in der Logistik. Ein großes Beispiel von Walmart war dazu mal, die haben versucht mal so ein Cache zu bauen, so ein Webcache. Und das ist am Black Friday immer alles gecrashed, weil das irgendwie bei denen ja total absurd war. Und dann haben die das mit so klassischer Mainframe Technologie, mit VSAM und so in einem Kicks nachgebaut und der hatte überhaupt keine Probleme mehr, weil das I O natürlich an der Stelle super gut für den Mainframe gespielt hat, dass sie sich da sehr schnell und viel verändern konnte.",
+      "start": 1585526,
+      "end": 1699388,
+      "confidence": 0.92808473,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Wenn du mal einen Umzug mit dem Smart machst und Nikea Pax Schrank hast, ruf mich bitte an, weil das würde ich gerne fotografieren.",
+      "start": 1699404,
+      "end": 1704732,
+      "confidence": 0.8645004,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Das ist auf jeden Fall lustig. Ist dann interessant, wenn man dann auf Dach schnallt.",
+      "start": 1704796,
+      "end": 1708700,
+      "confidence": 0.930736,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Ja, wobei man müsste es ja, wenn man das fair vergleicht, müsste man sagen, ich habe einen Lkw oder 300 Smarts nebeneinander, die mit 300 Leuten fahren. Also das ist ja dann nochmal ein anderer Ansatz. Also ich fahre nicht mit dem einzelnen Smart.",
+      "start": 1708780,
+      "end": 1721740,
+      "confidence": 0.8767966,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Genau, oder du fährst halt 300 mal hin und her und dann dauert es halt mal so lang. Also das ist halt genau die Frage. Oder bei IT sage ich auch ganz oft zu meinen Kunden, wenn du dir Maler für dein Wohnzimmer bestellst, dann kostet das echte Malern ungefähr genauso viel. Entweder ich nehme halt eine gute Farbe und streiche einmal oder ich nehme eine billige Farbe und streich fünfmal, aber es kostet immer genauso viel. Dann gibt es natürlich der, der will das Dreifache an Geld und der, der will die Hälfte haben. Das sind dann die absurden Angebote. Aber so ist, finde ich, in der IT immer, man kann alles über verschiedene Wege lösen. Das ist ja das Gute oder auch das Schlechte an unserer virtuellen Welt. Alles kann man irgendwie programmieren. Man kann in unserer Welt auf den Eiffelturm so ein Gegenpoke Comic zu zitieren, oben noch ein Mann gewohnt Gebäude draufstellen, würde in echten Welt niemand machen, ist vielleicht auch nicht die beste Idee, aber es geht halt in der IT. Und der Mainframe versucht halt viele der Dinge, der Probleme, die wir in der IT haben, anders zu lösen, schon jeher. Man nimmt dem Entwickler Arbeit ab, Hochverfügbarkeiten, so kümmert er sich nicht drum, dafür muss ich das in der Cloud selber machen. Beides geht, aber muss ich dann halt überlegen, wo es einem das wert ist.",
+      "start": 1721820,
+      "end": 1781988,
+      "confidence": 0.93577754,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Jetzt wenn du Transaktionen sagst und Heavy IO Load, von welchen Größenordnungen sprechen wir da?",
+      "start": 1782044,
+      "end": 1787780,
+      "confidence": 0.883462,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Naja, also die meisten Banken haben mehrere Millionen Transaktionen in der S einfach, die da so passieren. Und jetzt ist natürlich immer die Frage, ich habe mal so einen Chart gemacht, es war kurz vor der Pandemie lustigerweise, was passiert alles so in einer S? Und dann gibt es irgendwie so YouTube Watches und Google Searches oder Millionen, ich weiß gar nicht, den Faktor gar nicht mehr im Kopf. Und jedenfalls das Ergebnis ist, ist ungefähr die dreifache Anzahl an Transaktionen unserer Kunden in der S passiert. Also bei Banken und sowas. Jetzt sind natürlich ein YouTube Watch in der Komplexität vielleicht ein bisschen komplizierter als überweisen, habe ich eben schon gesagt, überweise ist hier plus, da minus, ist langweilig, aber es passiert einfach noch immer verdammt viel auf diesen Mainframes. Und das ist auch nach wie vor die Stärke, die hohen Konsolidierung. Das heißt, anderer Punkt zu der Grundfrage, die du gestellt hast, Andi, was macht den aus? Die meisten unserer Kunden lasten diese Maschine zu 95 bis 99 % aus. Das heißt, die fährt immer unter 95 bis 99 % last. Wenn euch das vorstellen würde, beim normalen x Linux Server, der fängt so bei 50 % schwer an zu husten und man kommt schon gar nicht mehr an die Konsole, um irgendwas zu ändern. Das ist halt einfach natürlich ein krasser Unterschied. Das wurde durch die Virtualisierung heute, also mit dem, was wir heute mit Virtualisierung machen, natürlich ein bisschen besser. Aber diese Hochauslastung, die schaffen die x Systeme, die Unix Systeme schon ein bisschen mehr, aber die x Systeme mit Linux meistens eher nicht.",
+      "start": 1787820,
+      "end": 1868958,
+      "confidence": 0.9322943,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Ich glaube, wenn man hoch von Auslastung spricht, dann ist es natürlich echt immer schwierig von außen irgendwie da Äpfel mit Birnen zu vergleichen. Von welcher Auslastung sprechen wir hier? Also bei was liegt der Memory gerade, der Swap? Schreiben wir ziemlich viel auf Disc oder rechnen wir nur CPU Auslastung? Also das ist ja, Netzwerkauslastung ist nochmal eine andere Baustelle. Also da spielen ja ganz andere Bereiche des Betriebssystems auch eine Rolle. Deswegen ist es immer relativ schwierig, glaube ich, das zu vergleichen. Aber was natürlich, wo du natürlich recht hast, ist, dass wenn man solche Hardware hat und die natürlich auch nicht ganz günstig ist, gilt aber genauso wie für Cloud Hardware auch, dass du natürlich versuchst, schon deine Hardware ordentlich auszulasten. Bug for your bang, bang for your bug oder wie das da heißt, dass du halt wirklich das kriegst, wofür du auch zahlst. Und ich meine, das ist ja auch einer der, wie soll man sagen, der Probleme, die Kubernetes lösen soll mit dem Winpacking Problem, dass du sagst, okay, du hast da hinten noch ein paar Ressourcen, da packe ich noch eine Applikation drauf, dafür muss ich mir jetzt keinen neuen Server. Wenn wir aber nämlich jetzt mal von Betriebssystemen sprechen und du okay, jetzt ist der Mainframe so speziell, dann weiß ich so viel ich, wann weiß ich so viel ich weiß, dann kann ich mir vorstellen, dass da jetzt ein klassisches Windows nicht drauf läuft. Also was ist denn das Standard Betriebssystem, was auf einem Mainframe wird überhaupt vorinstalliert mit so ein bisschen Adware und Shareware, wie so ein aktueller Windows Laptop bei Mediamarkt?",
+      "start": 1869094,
+      "end": 1951680,
+      "confidence": 0.92043585,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Ne, tatsächlich, also das passiert. Es passiert auch. Also ich meine, auch das gehört zur Wahrheit dazu. Wie viele neue Kunden, die so ein Mainframe mit ZOS, das ist das Hauptbetriebssystem da, wie viele gibt es davon überhaupt? Das sind nicht so viele, muss man fairerweise sagen, weil es gibt ja selten so den Kunden, der so krass auf einmal von null auf 100 wächst. Wo wir das ganz oft gesehen haben, z.B. als China sich geöffnet hat, so ICBC und so, das waren ja Banken, die haben ja innerhalb von einem Jahr auf einmal, weiß ich nicht, 50, 60 Millionen Kunden gehabt. Und die haben damals geguckt, wie können wir sowas machen? Und die haben dann wirklich tatsächlich Greenfield neue Mainframes eingeführt mit neuer Cobol kernbanken Logik und so. Da ist das passiert. Aber ansonsten sehen wir die neuen Kunden ja eher in der Linux Welt. Linux ist ein gängiges Betriebssystem auf dem Mainframe, aber mit Sicherheit um Längen nicht so zu vergleichen mit dem, was wir mit ZOS oder bei den etwas kleineren Kunden, die haben VSE, das ist so vergleichbar mit dem, was wir mit ZOS haben, ist halt für die eher früher Mittelstand und Kleinkunden. Das sind die Hauptbetriebssysteme. Und dieses ZOS ist dann das, was man so kennt, wenn man an Mainframe denkt, schwarzer Bildschirm, Terminal, zwei und dreiig, 70 Screen Größe und grüne Zeichen, die da irgendwie so durchflubbern. Das ist dann so das, was man traditionell denken würde, was das ist. Wobei auch da, es gibt natürlich auch Oberflächen, die sind nicht mehr so. Das ist so wie wenn ich sage, Linux ist für mich ja auch kein kein Terminal Interface mehr, sondern Linux ist für mich ein grafischer Desk. Und so gibt es natürlich auch für den Mainframe, für die verschiedenen Aufgaben, die man da so hat, auch grafische Frontends für die jeweiligen Sachen. Muss nicht mehr mit irgendwie mit SQL, mit einer Datenbank reden. Habe da natürlich auch grafische Mittel, wo ich dann Datenbanken anlegen kann und so.",
+      "start": 1952020,
+      "end": 2049570,
+      "confidence": 0.93982637,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Aber wenn du sagst, es gibt diese, sind die auch wirklich im Einsatz oder es gibt sie schon und 3 % verwenden sie.",
+      "start": 2049690,
+      "end": 2057170,
+      "confidence": 0.9483222,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Es ist nicht so viel, wie man das gerne hätte, weil wenn man dann zu jemandem geht, der das seit dreiig Jahren macht und dem sagt, guck mal, jetzt kannst du auch klicken, dann sagt er, ja und was habe ich davon? Und so. Ich sage immer, die Modernisierung, ich glaube, das gilt nicht nur für Mainframe, es gilt überall so. Die hat die drei größten und schlimmsten Freunde, die sind, habe ich schon immer so gemacht, habe ich noch nie so gemacht. Und da kann jeder kommen und mir erzählen, dass ich das anders machen soll. Also das ist immer so die große Schwierigkeit, wenn wir versuchen, neue Interfaces einzuführen. Aber wir merken gerade, dass die Adoption einfach hochgeht, weil wir haben schon so einen Generationswechsel jetzt und viele Kunden haben ja seit den ERN. Ich habe ja eben schon gesagt, haben gesagt, der Mainframe stirbt. Das heißt nicht, die haben nicht sofort den Mainframe beerdigt, die haben einfach nur keine neuen Leute mehr ausgebildet. Und im Prinzip, wenn man sich so die Kurve anguckt, ist das jetzt so eine Badewanne. So heute mit Mitte 40 gibt es ganz wenig Mainframer, die da sind. Gibt es natürlich welche, aber eher wenige. Und die starken Jahrgänge sind halt definitiv die Ränder, so zum einen alles 50 bis 60 und zum anderen also 50, 67, bisschen Rente und das andere dann halt natürlich die jungen Leute, so seit 10 Jahren, die dann da nachrutschen. Und die finden das halt schon geiler, wenn man halt irgendwas nur alles Schaltjahr macht, dass man dann nicht irgendwelche Kom Befehle sich auswendig merken muss, sondern da halt einfach klicken.",
+      "start": 2057290,
+      "end": 2127328,
+      "confidence": 0.91565067,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Hast du gerade Leute, die mit dem Mainframe arbeiten, als Mainframer benannt?",
+      "start": 2127424,
+      "end": 2131696,
+      "confidence": 0.93651,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Ja, tatsächlich, genau. Das ist, glaube ich, der inoffizielle Begriff für uns, dass wir die Mainframer sind.",
+      "start": 2131808,
+      "end": 2138620,
+      "confidence": 0.9430753,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Aber gibt es denn da irgendwie einen Unterschied, als wenn ich jetzt das native, ich glaube ZOS ist auch proprietäre Betriebssystem laufen lasse oder halt Linux? Also ich meine, gibt es da wirklich, oder ist es on par inzwischen?",
+      "start": 2138920,
+      "end": 2150720,
+      "confidence": 0.9085574,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Also das liegt natürlich daran, dass Linux selbst nicht alles können wird und wahrscheinlich auch nie können wird wie das ZOS. Weil das ZOS hat so für uns natürlich den Charme, dass es so ist wie bei Apple. Wir ownen die Hardware, wir ownen die Compiler, wir ownen das Betriebssystem, wir ownen den Kram, der oben drüber ist. Das heißt, wir können super viele Optimierungen machen, die man in einem Linux natürlich schwieriger machen kann, weil im Linux muss ja im Endeffekt der Kernel auch noch auf einem Smartphone laufen können. Also das ist ja die Idee, dass der Kernel natürlich universell einsetzbar ist. Und da können wir natürlich im Betriebssystem Kernel vom Zoom ganz andere Sachen machen, weil wir müssen uns um diese ganzen Sachen wie x Architektur gar nicht kümmern. Das heißt, wir können die volle Bandbreite an Hardware Instruktionen nutzen und natürlich dann auch an Hardware Features, die wir haben. Also sei es so transaktionaler Memory, dass man sagen kann, man flaggt den in der Hardware, wenn man z.B. jVM baut, dann wird die JVM auf dem Mainframe eben nicht Garbage Collection so machen können wie auf x, sondern die kann auch ganz coole Sachen machen. Die kann in Hardware sagen, ist der Memory noch in Use und dann quasi so nachher einfach mit dem Kärcher drüber kärchern und allem, der nicht mehr in Use ist, einfach frei machen. Ein ganz anderes Konzept, als wir das in x natürlich machen würden, wo wir ja eigentlich so primary, secondary haben und dann immer die, die überleben, in den anderen schieben.",
+      "start": 2150800,
+      "end": 2224292,
+      "confidence": 0.92488706,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Aber habt ihr dann eine andere Runtime für Java in dem Fall?",
+      "start": 2224356,
+      "end": 2227220,
+      "confidence": 0.9314283,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Die IBM hat schon relativ früh, wir haben zu Beginn mit Sun, haben wir versucht, das, was damals heute die Hotspot JVM, JDK wäre, das haben wir versucht zu portieren, haben aber festgestellt, dass das mit Sun damals gar nicht so einfach war. Und wir haben dann schon relativ früh angefangen, die sogenannte J ist die IBM JVM, die erfüllt die ganzen Specs, aber ist eine eigene Implementierung der IBM parallel zur Hotspot JVM und das ist auch die, die wir, also nachdem Oracle ja vor ein paar Jahren auch das Preismodell von Java etwas verändert hatte, ist das, was IBM quasi hat, das Open Source, also die IBM JDK, das Open JDK kann man jetzt heute quasi einfach angucken, kann sich auch selber bauen und das können wir natürlich auch. Mainframe dann total spezifisch für Mainframe oder auf Power dann? Auf Power.",
+      "start": 2227340,
+      "end": 2271054,
+      "confidence": 0.9318542,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Und die Runtime macht dann eine hardware basierte Garbage Collection?",
+      "start": 2271172,
+      "end": 2275626,
+      "confidence": 0.898629,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Genau, es gibt verschiedene Garbage Kollektoren und wenn man dann halt eben den Hardware Enablen einschaltet, dann kann die das tun.",
+      "start": 2275738,
+      "end": 2282826,
+      "confidence": 0.93110096,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Läuft der dann auch parallel? Weil ich meine, bei Java hat man ja oft dieses Stop of the World Garbage Collector Phänomen. Also ist das dann ähnlich, wie du gerade das beschrieben hast, wie IO gehandelt wird, wird das dann auf eine andere CPU gepackt und von da aus weitergemacht? Oder?",
+      "start": 2282938,
+      "end": 2299332,
+      "confidence": 0.9230726,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Also der Thread für die Garbage Collection ist ja auch bei X immer ein eigener, aber genau, man hat diese Stop the World Momente, weil man ja quasi der Garbage Collection Thread dann sagen würde, so jetzt bitte mal alle kurz anhalten, ich muss aufräumen, weil ich kann ja nicht aufräumen, während du versuchst, mir meinen Kram dazu anzufassen. Und hier ist es dann eben so, dass dadurch, dass die Hardware das flaggt, kann quasi der User Prozess meistens weiterlaufen, während der aussenrum aufräumt. Das heißt das, es gibt nicht keine Stop the Worlds mehr. Also ganz ohne kommt man nie aus, aber viel, viel, viel, viel, viel massiv weniger. Also man sieht, die Workload verteilt sich dann viel gleichförmiger. Normalerweise, wenn man so anguckt, hat man immer so diese Peaks da drin, das ist dann, wenn der Garbage Collection gerade losläuft. Und das hat man dann auf dem Mainframe z.B. einfach nicht in dem Moment. Das gilt aber auch tatsächlich fürs Linux, weil da geht es ja eher um die JVM Features.",
+      "start": 2299466,
+      "end": 2347514,
+      "confidence": 0.93415636,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Jetzt hast du ja schon von der eigenen Java Runtime gesprochen und bei der Recherche habe ich auch einen Blogpost auf Heise von zwei gefunden, IBM bringt Go auf den Mainframe. Bedeutet das jetzt eigentlich, dass ihr fast alles, also wenn ich von ihr rede, von IBM oder irgendwer anders, alles auf die Z Architektur portieren müsst, um es dann halt da zum Laufen zu bringen?",
+      "start": 2347642,
+      "end": 2366694,
+      "confidence": 0.92013276,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Also vieles läuft natürlich auch einfach so, quasi einfach nur neu compilen, fertig ist die Laube. Wenn man den C Compiler hat, kann man natürlich auch alles andere kompilieren. Das, was wir dann natürlich immer machen, wenn wir so eine Sprache nehmen und der quasi einen großen Mehrwert geben wollen. Bei Go war das z.B. so, weil wir auch für Kubernetes, für die Plattform natürlich uns interessieren, auch für die, als Kubernetes, als Management, für die klassischen ZOS Dinge z.B. da mussten wir dann natürlich ran und mussten quasi die Go Sprache natürlich neu implementieren auf dem Mainframe, aber halt natürlich weiterhin kompatibel zum Standard. Also da gibt es das schon mal. Bei Node haben wir das auch mal gemacht. Node ist auch eine Eigenimplementierung von der IBM oder eine Nachimplementierung, wo wir den Port nicht einfach nur neu kompiliert, sondern quasi noch zusätzlich Sachen dazu gebaut haben. Aber ja, das ist natürlich am Ende so, es ist eine eigene Hardwarearchitektur, es gibt andere Dinge. Das heißt, da muss man natürlich dann auch andere Dinge machen.",
+      "start": 2366822,
+      "end": 2418532,
+      "confidence": 0.93736297,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Moment, du sagst gerade, dass Leute JavaScript auf dem Mainstream schreiben.",
+      "start": 2418676,
+      "end": 2423028,
+      "confidence": 0.86746365,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Ja, also wie gesagt, ich hasse JavaScript, ich bin backend Mensch. Eine Sprache, wo eins und eins it depends ergibt, je nachdem, ob das ein String ist oder eine Zahl. Schwierig für mich jetzt persönlich, aber ja, wir haben Menschen, die schreiben Node JS, wir IBM schreiben Frontends in Node JS. Ja, kann man machen.",
+      "start": 2423124,
+      "end": 2440654,
+      "confidence": 0.917822,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Ich bin da ganz nah bei dir und Wolfgang fängt jetzt auch ganz stark an zu grinsen gerade. Also ich denke, JavaScript hat im Backend nicht ganz so viel seine Daseinsberechtigung. Das ist meine persönliche Meinung und ich kriege jetzt sehr viel Hate von ganz vielen Leuten, aber ich auch immer, wenn ich jetzt noch höre, IBM, nein nicht IBM, Entschuldigung, JavaScript auf einem Mainframe. Also Wolfgang, spätestens hier hört dann auch mal der Spaß auf.",
+      "start": 2440782,
+      "end": 2464126,
+      "confidence": 0.96102726,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Wieso? Klingt auch nach purem Spaß, oder?",
+      "start": 2464278,
+      "end": 2466622,
+      "confidence": 0.85400283,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Ja, weil, weiß ich nicht, also ich stelle mir gerade das Ausmaß davor, der Tobi hat gerade die klassische, das Typecasting, das implizite Typecasting von JavaScript beschrieben. Eins, eins undefined oder not a number oder irgendeinen anderen String. Und wenn ich mir denke, dass irgendein IBM Mainframe bei meiner Allianz Versicherung meinen neuen Versicherungsbetrag ausrechnet, schwierig. Also ich hoffe, die machen das mit meiner Grundsteuer, damit die wieder billiger wird, aber mehr auch nicht.",
+      "start": 2466726,
+      "end": 2492792,
+      "confidence": 0.89790744,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Ich fürchte auch, die ER Adoption war weit hinter dem, was die IBM versprochen hat. Also wir haben ja auch Menschen im Marketing und die sagen dann, aber der ganze Markt will JavaScript und es gibt Millionen von JavaScript Entwicklern. Ja, und dann spricht man natürlich mit den Kunden, auch mit den Bankenkunden und die sehen es ja auch alle so Typen, unsichere Sprachen, habt ihr sie eigentlich nur alle? Wer will denn den Bums? Aber dann wird halt CIO sagt dann ja, aber JavaScript, das kann ja mein Sohn hier auch, das lernt er in der Grundschule. Also warum machen wir nicht JavaScript? Können wir das nicht? Und da gab es auch so Wünsche an die IBM, können wir nicht das Cobol einfach live transpeilen in JavaScript? Und du saß einfach nur da, hast, oh Gott, oh Gott, das schlägt jetzt wirklich jemand vor. Und da gibt es Menschen, die werden sich jetzt damit beschäftigen müssen, um zu beweisen, dass es eine dumme Idee ist. Aber ja, wir sind in einer lustigen kleinen Welt in der IT, da hat jeder schon mal eine lustige Idee. Also ich kriege dafür auch sehr viel Hate, aber ist halt so, wenn wir.",
+      "start": 2492976,
+      "end": 2544352,
+      "confidence": 0.92655206,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Schon bei so grausamen Sprachen sind, da möchte ich natürlich gleich Cobol und PL und so weiter in den Raum werfen. Das sind ja so diese, auch diese Feindbilder, die man so kennenlernt, auch im Studium, so klassisch. Was man eben nicht machen will, sind, dass die Standardsprachen, die verwendet werden im Mainframe Bereich, gibt es da, du hast Java genannt, ist es heutzutage, dass sowieso alles nur mehr dann auf Java programmiert wird oder wie schaut es in der Realität wirklich aus? Weil von außen wirkt es immer so, alle Banken sind auf Kobold, es ist irgendwie eben der Legacy, verdient das Geldrechner in der Ecke, keiner kennt sich mehr aus, das ist irgendwie eine Blackbox, keiner will sie anrühren.",
+      "start": 2544456,
+      "end": 2583182,
+      "confidence": 0.9177401,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Also die Realität ist tatsächlich so, dass in Europa, würde ich sagen, wenn man die USA ausnimmt, wenn man die USA dazu nimmt, ist die Mehrheit des Codes der Welt in Kobold geschrieben. In Europa ist ungefähr so split, 60 % der traditionellen Software sind CobOL geschrieben, 40 % ungefähr in PL. Für die Leute, die jetzt denken, Cobol, PL, what the fuck? Cobol, eine Programmiersprache, erfunden von Grace Hopper in den Ende der Er, Anfang der Er. Und die hat sich halt damals überlegt, wir haben ja kaum Entwickler hier, was machen wir denn? Und da hat man überlegt, was kann so gefühlt jeder Trottel lernen? Englisch. Dann hat man gedacht, na okay, dann gehen wir eben her und nehmen diese englischsprachigen Formulierung und formulieren daraus eine Programmiersprache. Und deswegen, Cobol hat so lustige Sachen wie giving C und blablabla, also es liest sich wie so ein Englischbuch. PL eins war dann lustigerweise schon so der Versuch. Damals gab es noch eine zweite wichtige Programmiersprache auf der Welt, fortan eher in der akademischen Welt. Portran gibt es heute auch immer noch super viel, aber da hat man gesagt PL, warum heißt die Sprache so? Programming language One. Man wollte Cobol und Portran in einer Programmiersprache abbilden und die IBM hatte das Gefühl, sie kann das schaffen. Hat man nicht geschafft, aber das ist tatsächlich so. Es ist immer noch ein großer Teil der Software da drin. Und jetzt ist natürlich die muss das so sein? Natürlich nicht. Java ist da auf dem Mainframe. Java, würde ich sagen, läuft sogar auf dem Mainframe am allerbesten. Wir haben eine hohe Taktfrequenz mit 5,6 GHz, wir haben diese ganzen Features, die ich eben schon besprochen habe, heißt Java auf Mainframe, läuft total super. Aber du hast natürlich das Problem, das Kernbankensystem ist halt in Cobol geschrieben. Und jetzt kann man hergehen und kann das alles umschreiben. Im Idealfall tut es nachher genauso das, was es auch vorher getan hat, wenn man es nach Java umgeschrieben hat. Meistens nicht. Meistens hat man irgendwas vergessen oder irgendwas nicht so richtig gemacht. Und da kommt, glaube ich, viel von diesem Problem her, dass man sich überlegt, ich habe eben gesagt, ich mache eigentlich nicht Mainframe Modernisation, sondern Anwendungsmodernisierung. Was machen wir jetzt damit? Müssen wir die Sachen wirklich umschreiben? So eine Payment Engine, ändert sich da überhaupt viel? Hier minus, da plus. Lassen wir das vielleicht einfach in Cobol und packen das gar nicht erst an? Das heißt, die Realität ist so, dass immer noch weite Teile unserer kritischen Infrastruktur im Finanzsektor in Cobol laufen, aber das auch gut. Also es gibt jetzt nicht einen Grund wegzugehen, außer vielleicht ja, gefällt mir nicht mehr oder macht ja heute keiner mehr oder ich finde niemand mehr, der das lernen will. Wobei ich dann immer auch zu meinen Studenten geht nie zu irgendjemandem, der Ahnung vom Mainframe hat und wir können dieses Cobol nicht lernen, wir können nur Java. Cobol ist uns zu kompliziert, weil in dem Moment, wenn das jemand zu mir sagen würde, würde sagen Krieg auf keinen Fall Java Code, der ist taktisch viel anspruchsvoller als Cobol. Ist halt auch nicht so sexy vielleicht für den einen oder anderen Entwickler.",
+      "start": 2583246,
+      "end": 2743894,
+      "confidence": 0.9162901,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Das heißt, es ist eigentlich mehr das ganze domain Knowledge und die Struktur, die schon da ist und weniger die Sprache an sich. Also das hat jetzt weniger einen Grund, dass man der Technologie festsitzt, sondern eher an was schon da ist, das domain Knowledge, was dort drinnen codiert ist und das eigentlich die Schwierigkeit ist.",
+      "start": 2744022,
+      "end": 2762184,
+      "confidence": 0.9245627,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Also es gibt so ein, zwei Sachen, die ich immer total witzig finde, wenn auch neue Sprachen rauskommen, nämlich dass kaum eine neue Sprache, die wir erfinden, nativ dezimal kann. Also auch Java nicht. Wenn man mit Java rechnet, rechnen die meisten Leute ja, also denken nicht daran, dass es big decimal als Package gibt, wo man dann auch eigene Klassen hat zum berechnen und so. Das gilt eigentlich für C, für go gilt für die alles pl eins. Und Cobol natürlich in der Zeit geschrieben mit genau diesem Gedanken, wir machen hier it für Banken, das heißt, die können schon auch viele Konstrukte nativ, die für so Fachanwendungen total wichtig sind. Also ich sage immer, wenn Grace Hopper heute noch mal Cobol erfinden würde, würde das eine domain specific language nennen und das wäre wieder total hip, weil das ist die Idee, die Grace Hopper hatte, das ist das für Fachentwickler, die eigentlich nie IT gemacht haben, sondern die immer eine Bank saßen und die müssen damit ihre fachlichen Abläufe einigermaßen gut in IT kodieren können. Und ich glaube, deswegen hat Cobol manche Konstrukte, die es einem dann einfacher machen, tatsächlich darin Fachanwendungen zu schreiben, als es in C oder in Java so direkt möglich wäre.",
+      "start": 2762272,
+      "end": 2825034,
+      "confidence": 0.92155075,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Kannst du das mit der nativen Dezimalarithmetik mal kurz erklären? Also viele kennen es vielleicht aus dem Datenbankbereich, weil dort ist der Decimal Field Type ja noch am ehesten ein Begriff für viele Leute.",
+      "start": 2825162,
+      "end": 2836532,
+      "confidence": 0.9237947,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Naja, am Ende, die meisten unserer IT Systeme rechnen in Float. Das ist für das, wie wir Prozessoren bauen, eigentlich super viel einfacher. Das heißt, die Gleitkommaberechnung und Gleitkommaberechnung ist für die meisten Sachen auch super genau genug. Das sieht dann irgendwie 0,3, sieht einigermaßen gut aus, passt. Aber die Realität ist natürlich, dass unser, wie wir mit Kommazahlen in der Grundschule lernen zu rechnen, da haben wir halt eben, dass wir das nach dem Komma extra behandeln. Und da ist natürlich, da geht es eben nicht um, man rechnet nicht mit Brüchen, sondern man rechnet halt mit klaren Integern, die halt nach dem Komma einen Ausschluss, auch manchmal auch Formkomma haben, wenn sie dann über die 100 kommen, aber die halt einfach anders berechnet werden. Und da ist dann ganz wichtig zu verstehen, dass die Präzision, das kann man ja sagen beim Float, ach, das macht da irgendwie die fünfte Stelle hinterm Komma, ist dann anders. Wen interessiert das? Wenn man eine Bank ist und dann über Milliardenbeträge rechnet, dann ist das auf einmal durchaus relevanter Fakt, ob hinter dem Komma jetzt eine Komma sechs oder eine Komma fünf steht oder eine 0,000005 oder eine 0,000 steht, weil auf einmal entsteht da Geld, das nicht da ist oder es geht Geld flöten. Das heißt, diese Präzision zu berechnen, und das ist bei Dezimalberechnung auch immer generell wichtig, das muss man einfach klar haben. Also auch wenn man Big Decimal macht, muss man sich irgendwann entscheiden, bis wohin genau berechne ich denn, wenn ich z.B. zinssätze berechne. Und diese Präzision, die ist eben wichtig zu verstehen.",
+      "start": 2836706,
+      "end": 2922236,
+      "confidence": 0.9284277,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Ich habe auch gesehen, net scheinbar unterstützt es nativ, behaupten sie zumindest, und sonst musst du es halt über Module eben big dezimal, wie du gesagt hast, und so weiter nacheinbauen. Und ich glaube, das ist auch einer der klassischen Fehler von Programmiererinnen, wenn sie neu sind, dass man einfach, weil man mit Zahlen hantiert, dass man einfach irgendeinen Float nimmt und irgendwann fliegt man dann auf die Schnauze. Es ist mir persönlich auch schon gegangen und man denkt, ist ja nicht so wichtig und ist ja nur ein Webshop, aber wenn dann irgendwann die Probleme auftauchen mit den Rundungsfehlern, ist sehr böse.",
+      "start": 2922378,
+      "end": 2953186,
+      "confidence": 0.92152476,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Genau.",
+      "start": 2953298,
+      "end": 2953810,
+      "confidence": 0.81497,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Übrigens auch interessant, Ada unterstützt auch nativ das Ganze. Also scheinbar früher war das viel business orientierter und da haben wahrscheinlich die, war die Herangehensweise einfach, ich brauche sowas, weil es ist halt immer ein Business umgesetzt worden und im klassischen Finanzbereich das ganze gemacht worden. Jetzt hast du eh schon gesagt, okay, es gibt neue Oberflächen und so weiter und man kann da auch normal und moderner programmieren. Jetzt ganz klassisch, wenn Leute beginnen als Programmierer in, dann wünscht man sich, dass man da CI, CD hat, dass man die ganzen Pipelines hat, automatisiert, coole IDE und so weiter. Hast du gesagt, es kommt langsam und das gibt es teilweise, man muss nicht mehr am grünen Bildschirm arbeiten. Aber wie sieht es denn mit den ganzen anderen Dingen aus? Weil ich komme da jetzt raus, vielleicht aus meinem Studium, bin voller Datendrang, will die ganzen coolen neuen Technologien lernen und dann komme ich zu dir und kann ich das dann verwenden? Habe ich da Möglichkeiten oder muss ich dann eben mich doch an den grünen Bildschirm gewöhnen?",
+      "start": 2953890,
+      "end": 3012780,
+      "confidence": 0.91404855,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Also wenn du zu mir kommst, hast du die immer, weil ich das tatsächlich für wichtig finde. Bei den Kunden ist manchmal schwierig, weil da hat man dann halt, also dann kommt man so in dieses, ja, wir wollen ja eigentlich seit 20 Jahren weg, wir schaffen es gar nicht und wird auch in den nächsten 20 Jahren nicht passieren, aber irgendwie so, das ist noch so das Mindset. Dann hat man natürlich ein paar Kollegen, die gehen in den nächsten fünf, sechs Jahren in Rente und das sind aber eigentlich genau die, die müssten das ja einführen, weil das sind ja die, die, die viel. Und da stößt man immer auf so viel Gegenwehr, dass die komm, lass mir meinen schwarz grünen Bildschirm die letzten zwei Jahre noch. Ich will da nicht dran rumfummeln, aber die meisten Kunden beschäftigen sich damit mittlerweile sehr stark und gehen einfach in CCC ICD Pipelines, weil es hat natürlich viele, viele Vorteile. Den Mainframe macht eben nicht aus, dass man das im Wasserfall mit so Library Managern kodiert, wo immer nur einer ein Source File anfassen kann, sondern der Mainframe macht natürlich die Logik aus, die man darin implementiert. Und da ist einfach CI CD natürlich viel, viel nativer, eingängiger für viele Leute, die damit arbeiten und deswegen viele Kunden starten. Sind noch nicht alle da. Einige haben es auch schon, haben eine ganz normale CI CD Pipeline für Cobol, weil ob ich jetzt Cobol oder PL oder Java oder net nehme, ist ja eigentlich wurscht. Einfach nur Text. Am Ende muss ich irgendwo unter der Decke einen Compiler ansprechen, der muss ein Bildsystem ansprechen, dann muss ich dieses Bild Artefakt durch die verschiedenen Stages moven. Und das ist dann wieder dasselbe wie überall auch. Und da hat die IBM, würde ich sagen, so in den frühen er immer so die Philosophie vertreten, wir wissen das besser, komm, wir bauen unsere eigenen Development Tools und Bildsysteme. Damals noch sehr stark natürlich mit dem Einfluss von rational, aber mittlerweile würde ich sagen, die IBM nimm einfach GitOps, komm, ist uns egal. Haben wir keine Tools, haben wir keine Aktien drin. Wir committen da natürlich open source, aber nehmt einfach das. Und das ist wirklich das, was dann meistens passiert. Und da, wo, glaube ich, die meisten traditionellen Unternehmen mit ihren Legacy Anwendungen und das hat jetzt gar nicht nur mit Mainframe zu tun, schlecht sind, sind halt natürlich bei automatischen Testen. Und das ist natürlich auch was, was ich super gerne mit den Kunden immer angehe, wo die mal sagen, so viel dreiig Millionen Lines, Kernbanksystem, keine automatischen Tests u wo fangen wir an? Wo ich immer sage, du fängst damit an, was du gerade anfasst und nach zwei, drei Jahren hast du automatisch Pareto die 80 wichtigsten % deiner Probleme in automatischen Test Tests. Und das ist was, was ich mit vielen Legacy Entwicklungen, nicht nur auf dem Mainframe, aber vor allen Dingen auf Mainframe einfach diskutiere, was eben Teil dieser CI CD Journey ist, zu sagen, lass uns die guten Sachen mitnehmen, lass uns ein Sona Cube, kannst über Cobol jagen, gar kein Problem. Jedes Mal, wenn Goto kommt, watsch, auf die Finger. Cobol kann das leider. Go to schrecklich, gehört verboten, gehörte schon immer verboten. Auch wenn man sich Unterlage aus den ERN anguckt, steht da auch drin, es gibt zwar Goto in Cobol, aber Janine nehmen und naja, trotzdem haben die Leute es gemacht und da kämpfen wir natürlich mit. Aber ich denke definitiv, die meisten Unternehmen sind auf dieser Reise und in fünf, sechs Jahren muss niemand mehr am schwarzen Bildschirm sitzen als Entwickler, wenn er das nicht möchte.",
+      "start": 3012860,
+      "end": 3187788,
+      "confidence": 0.92170966,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Ein kleiner Fun Fact, die Sprache Go hat ebenfalls ein Go to statement, aber ich habe das, glaube ich, noch in keiner Codebase gesehen, obwohl sehr wahrscheinlich oft ist es ja für Router genutzt. Ich glaube, die Sprache PHP hat ja auch ein go to Statement. Und besonders, wenn du jetzt irgendwie in so Routern bist, dann hat das, dann gibt es da wohl einen validen Use Case. Da machen wir dann irgendwann mal neue Episoden zu. Aber ich habe auch mal, während du gesprochen hast und während Wolfgang mit dir hier gesprochen hat, nachgeguckt. Also erstens, GitHub Actions kann man auch Cobol ausführen, CI CD in der ganzen Thematik. Da wäre dann aber die nächste Frage, weil du auch auf das Testing angesprochen hast, das ist ja jetzt eine ganz andere Liga. Ich meine, du hast proprietäre Hardware, du hast ein proprietäres Betriebssystem. Ich sag mal, deine CI Runner, dein GitHub Actions Runner, der läuft in der Regel auf Windows, Linux oder Mac OS X. Ich weiß nicht, hat man dann auch einen CI Runner im Jenkins oder im Sonar Cube, der dann auf ZOS läuft? Also packt man dann irgendwie, oder hat man einen Staging Mainframe da stehen, weil allein das Staging Environment kostet dann besser? Oder kann man irgendwie die Laufzeit Hardware irgendwie partitionieren, sowie Festplatten Partitionen, damit man sagen kann, okay, man hat 1/3 des Mainframes reserviert für Pre Production? Oder wie funktioniert dieses Testing denn da?",
+      "start": 3187884,
+      "end": 3263946,
+      "confidence": 0.9056459,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Ja, haben wir eiskalt natürlich bei der Hardware gar nicht drüber gesprochen. Also ja, das Konzept Elpa hat der Mainframe relativ bald erfinden müssen, weil er natürlich eben relativ groß war. Und seit 71 ist das meiste auf dem Mainframe virtualisiert. Das Heißt, man arbeitet nie direkt auf der Hardware, man kauft nicht drei Mainframes, weil man drei Systeme braucht, sondern man virtualisiert das natürlich. Alles ist immer virtualisiert. Man hat immer LPAs, in denen man arbeitet, aktuell so bis 86 Stück. Und dann gibt es darauf auch nochmal einen Hypervisor. Also man könnte auch so was wie VMware noch darauf machen im Linux Bereich, KVM und kann darauf natürlich dann tausende Linux Images fahren. Und so ist das natürlich bei den Kunden auch, die haben eine Test und Produktionsentwicklung und eine Entwicklung und die Entwicklung staged dann in Testsysteme, die dann schon produktionsnah sind, die dann natürlich in Produktion gehen und dann laufen. Das heißt natürlich in der Entwicklung hat mein CICD, meine CI CD Pipeline, Ärmchen und Beinchen in diesen Mainframe. Also das Kompilieren von dem Cobol Code macht man natürlich nicht auf X irgendwie emuliert, sondern der Runner oder der Agent sagt dann in dem Fall dem Mainframe Bescheid und sagt hier, ich will das hier mal kompiliert haben. Und dann muss der Mainframe vielleicht noch entscheiden, dieser Bildjob, so wie man es ja maven oder im Gradle hat, der hat vielleicht, ist nicht nur einfach ein Compiler auf das Modul, sondern ich muss noch 15 andere Sachen dazu holen. Das funktioniert dann genauso wie in jeder anderen Sprache auch, Dbb, die Skripte sehen genauso aus wie Skripte, die man mit Jenkins, die man mit Gradle oder mit Maven machen würde.",
+      "start": 3264018,
+      "end": 3354652,
+      "confidence": 0.91722625,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Wenn ich mir die ganze Sache jetzt so durchdenke, moderne Systeme, ich sag mal Kafka und Co. Die sagen immer, okay, wir sind verteilte Systeme, damit wir Ausfälle besser kompensieren können. Und jetzt hast du da so ein Mainframe, da ist ja Unmengen von Hardware drin, ich weiß nicht, von wie viel RAM sprechen wir eigentlich so in der Regel?",
+      "start": 3354796,
+      "end": 3372010,
+      "confidence": 0.93850785,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "40 TB.",
+      "start": 3372050,
+      "end": 3372467,
+      "confidence": 0.43,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "40 TB RAM in so einer, ich nenne das jetzt einfach mal Maschine. Und für 40 TB muss ich echt viele EC Instanzen auf AWS mieten. Und meine Frage ist dann eigentlich, okay, wie verhält sich denn jetzt ein Mainframe im Vergleich zu einem klassischen verteilten System? Denn eigentlich, wenn ich da jetzt, wir haben gerade gelernt, seit 2016 kann ich go laufen lassen. Das bedeutet, ich kann Kubernetes eigentlich laufen lassen. Ich weiß jetzt nicht, wie das aussieht mit ZOs und Containern und so weiter, aber mit hoher Wahrscheinlichkeit, Docker ist ja auch in Go geschrieben, das haben die wahrscheinlich auch übersetzt. Kurzum, wir können anscheinend Kubernetes laufen lassen und eigentlich, und da spreche ich jetzt aus Erfahrung, mein Beruf ist oder war jahrelang Site Reliability Engineer. Das bedeutet, ich habe mich beruflich Tag und Nacht damit auseinandergesetzt, wie Systeme auseinanderfallen können und was Netzwerk Partitions sind und all diese ganze hässliche Thematik von verteilten System, die Probleme hat man ja eigentlich gar nicht auf dem Mainframe, oder?",
+      "start": 3372480,
+      "end": 3425892,
+      "confidence": 0.9434831,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Exakt, das ist genau der Punkt. Also man nimmt Probleme, die wir oft höher im Stack heute lösen bei x Systemen und packt die tiefer ins Stack und lässt die Maschine das handeln. Und natürlich, das ganz witzig weil dann lässt man das kubernetes Cluster, ich meine, da geht ja dein Gedanke hin, jetzt lass das kubernetes Cluster da laufen, das kümmert sich um Hochverfügbarkeit, was ja eigentlich gar nicht machen müsste, weil es ja gar nicht ausfällt. Für mich immer das Lieblingsbeispiel, wo ich gesagt habe, der Mainframe ist die ideale Runtime für beschissene Microservice architekturen, weil faktisch hast du immer noch einen riesigen SMP, also so ein Single Rechner, der ganz viel virtuelles Netzwerk dann macht und diese ganzen virtuellen Worker Nodes von Kubernetes eigentlich faktisch alle Cross Memory miteinander sprechen. Und dann hat man natürlich, dann ist der Code immer noch kacke, aber du kannst die Performance so ein bisschen besser machen, so dass die Hand immer noch im Schraubstock ist, aber man dreht nicht mehr ganz zum, wenn man das in eine Cloud packt, wo man nicht sicherstellen kann, dass alles auf einer Instanz läuft, kann man da natürlich auch mittlerweile, aber dann hat man sich da natürlich einfach ein bisschen Zeit gekauft, mit schlechtem Code umgehen zu können.",
+      "start": 3425996,
+      "end": 3488128,
+      "confidence": 0.9209208,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Aber wo sind da die Grenzen? Also hat die Grenze quasi von einer virtualisierten Einheit, hört es bei einem Rack auf oder bei mehreren Racks innerhalb von einem Datacenter? Also wo fängt dann eine klassische Verteilung auch wieder an? Weil wenn ich jetzt zwei Systeme in zwei Datacentern habe, die sind zwar irgendwie verbunden und können wahrscheinlich Lastverteilung, aber da muss ich dann wahrscheinlich doch anders programmieren, als wenn ich eine logische virtualisierte Einheit hätte.",
+      "start": 3488184,
+      "end": 3515148,
+      "confidence": 0.92397547,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Also wenn wir in der Linux Welt sind, das, was wir natürlich tun können, ist, wir können halt Netzwerkprotokolle sprechen, die zwei Rechner quasi cross memory alike verbinden. Das ist dann kein TCP IP mehr, also ich würde ja immer TCP IP sprechen, aus dem Container raus, aber unter der Decke macht es halt nicht mehr alle Layer durch, geht nicht mehr auf die Physik, sondern bleibt eben weiter oben stecken. Und da habe ich natürlich Performance Bänder benefits. Und ganz grundsätzlich gesprochen, in einem ZOS haben wir natürlich die Möglichkeit, dieses System stellt sich da wie ein großes System, wenn ich so ein System aus drei verschiedenen habe, aber es kümmert sich unter der Decke eben z.B. um das Routing auf die verschiedenen LPAs. Also auch wenn ich einen Rechner habe mit fünf LPAs, sind diese LPAs natürlich dann physisch ja eigentlich getrennt. Das heißt, wir geben sogar, gibt Ela Zertifizierung vom BSI, die verhalten sich dann wie zwei verschiedene Rechner, aber ich kann die natürlich so konfigurieren. Das ist dann wiederum so, Hypervisor Magic dass ich sagen kann, diese zwei Rechner, die haben so einen Cross Memory Teil, den die sich teilen und darüber mache ich das Netzwerk. Ich muss also nicht mehr auf die Netzwerkkarte gehen. Und dann habe ich immer noch irgendwann natürlich den Punkt, dass ich einen Rechner verlassen auf den anderen muss. Aber performance technisch tut das natürlich wesentlich besser, als wenn ich wirklich physisch durch eine Netzwerkkarte.",
+      "start": 3515244,
+      "end": 3587680,
+      "confidence": 0.89815974,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Ich habe gerade die ganze Zeit mal geguckt, OK, Elpa. Elpa, wovon redet der? OK, Logical Partitions heißt das.",
+      "start": 3587790,
+      "end": 3595404,
+      "confidence": 0.8260468,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Absolut, ja.",
+      "start": 3595572,
+      "end": 3596652,
+      "confidence": 0.87544,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Da habe ich eine tolle Webseite gefunden, die verlinken wir natürlich auch in den Shownotes. Da geht es nämlich ins Wiki von IBM und da werden nämlich mainframe Konzepte erklärt. Und Elpa ist ja Mainframe Hardware, Logical Partition. Interessant, interessant. Aber wenn ich mir die ganze Thematik jetzt weiter denke, haben DevOps und Zeit Reliability Engineers eigentlich gar kein Interesse, sich mit Mainframe auseinanderzusetzen, weil ihr löst ja mehr oder weniger, so hört sich das jetzt zumindest an, alle unsere Probleme, die wir, wofür wir eigentlich bezahlt werden. Wir werden dafür bezahlt, irgendwie Ausfälle zu vermeiden und so weiter und so fort. Und jetzt kommt eine ganze Sache, da muss ich so ein bisschen für grinsen, aber die kam auch irgendwie Just in time für diesen Podcast. Und zwar hat die Cloud Native Compute Foundation ja ein Subprojekt bzw. Das erfolgreichste Projekt jetzt in der CNCF ist nämlich Opentelemetry. Kubernetes wurde überholt. Kubernetes ist nicht mehr das erfolgreichste Projekt in der CNCF, sondern es ist jetzt Opentelemetry und das geht in den Observability Bereich. Und das beantwortet eigentlich die ganz große Woher weiß ich eigentlich, dass meine Applikation das tut, was ich denke, was sie tut? Und da gibt es jetzt eine Special Interest Group, eine sogenannte SICK Opentelemetry on mainframe, verlinken wir auch in den Show Notes. Und wenn man sich das mal ansieht, dann haben die zum Ziel, unter anderem SDKs für Cobol und PL zur Autoinstrumentierung herzustellen, die dann auch auf ZOS SX laufen. Also eigentlich ist es ja schon abgefahren, dass jetzt gerade die CNCF sich um Observability für den Mainframe kümmert, oder?",
+      "start": 3596836,
+      "end": 3695566,
+      "confidence": 0.914421,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Ja, mega, weil das ist so ein lustiges Problem. Also du hast ja richtig gesagt, Cycle Liability Engineers haben andere Probleme wie auf dem Mainframe. Das heißt, was passiert häufig in Unternehmen? Weiß ich nicht, meine Applikation ist langsam. Dann ist auf jeden Fall eins klar, der Mainframe ist schuld. Und das ist bisher immer schwierig gewesen. Da mussten sich Leute da anmelden, mussten die Netzwerk traces raussuchen und sagen nein, wir sind es nicht, wir sind es nicht, trust us. Dann sagen die haben keine Ahnung, die sind schuld. Also es war bis jetzt so eine große schwarze Kiste, nicht nur physisch im Rechenzentrum, sondern auch was Performance und sowas angeht, weil natürlich die mainframe Anwendung ist es jetzt der Code, der schlecht ist? Ist es das SQL, das schlecht ist? Ist die Datenbank, hat die zu wenig CPU? All diese ganzen Fragen, die kann man für die mainframe Welt beantworten, aber nicht mehr übergreifend. Und deswegen ist Opentelemetry für mich super key, dass wir endlich raus aus dieser wir sind Schuldecke kommen, sondern einfach sagen kö guck doch, bei uns ist das durchgerauscht. Also wir haben die Antwort in zwei Millisekunden gegeben. Was ihr dann damit gemacht habt, keine Ahnung, ist euer Problem. Und deswegen ist das natürlich super wichtig, um diese Fehlerdiagnose, also das ist jetzt der böse Case, wenn einen einer ärgern will, aber auch generell eine einfach um Fehlerdiagnosen eben einfacher stellen zu können und sagen zu können, wo ist es denn in die Grütze gegangen? Also wo hat jemand ein Feld falsch befüllt? Wo hat jemand eine komische Datenbankabfrage gemacht? Weil am Ende, wenn die DB halt irgendwie ein SQL Select Stern langsam beantwortet, dann ist das nicht das Problem der Datenbank, sondern es ist halt natürlich eigentlich das Problem desjenigen, der das lustige Select Stern da geschrieben hat auf irgendwie, weiß ich nicht, eine 5 TB Tabelle und da müssen wir halt hinkommen. Und deswegen genau passiert das so. Und da gibt es ganz viel. Also es ist nicht nur die CNCF, die sich damit beschäftigt, sondern auch es gibt Open Mainframe Projekt. Wir haben mit Zoe so ein Command Line Interface für Mainframe geschaffen, das Open Source kann jeder mitarbeiten, hat die IBM auch gehofft. Die Realität ist nicht so viele arbeiten mit, alle wollen nur haben. Das ist ja immer bei Open Source so, jeder will gerne Open source haben, aber keiner will committen. Aber all diese Sachen gibt es und wir versuchen das zu öffnen, soweit es geht. Wir versuchen auf dem Mainframe auch, haben wir jetzt gar nicht groß drüber gesprochen, dieses ZOS, das hat so zwei Gesichter. Das eine ist dieses grün schwarze zwei und dreiig 70 Gesicht und das andere ist USS Unix System Services. Das heißt, dieses Betriebssystem, das nichts mit Unix am Hut hat, weil es schon dreiig Jahre älter war, sieht nach außen hin so aus wie Unix, aber die ganzen Kernel Kommandos sind natürlich die klassischen Mainframe Kommandos. Und dann versuchen wir mit make z.B. auch, dass die Leute make nutzen können, um z.B. ein Bild zu machen auf dem Mainframe auch. Also ist am Ende. Das ist wirklich immer so ein Statement, dass ich sage, es ist nur ein Server und damit können wir alles tun. Und es gibt auch coole Dinge, die wir tun können, die man vielleicht nicht so direkt denkt, dass ein Mainframe so was könnte.",
+      "start": 3695638,
+      "end": 3852474,
+      "confidence": 0.91785866,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Ich habe mir gerade mal auch noch mal ganz kurz gegoogelt, wenn jetzt natürlich die CNCF schon darauf springen mit Opentelemetry, dann ist die nächste wann kommt ebpf? Und dann habe ich mich weiter kann ein Mainframe eigentlich Doom laufen lassen? Und bisher habe ich nichts im Internet gefunden, dass Doom bereits auf den Mainframe portiert wurde. Es gibt für Ubuntu im Subreddit Mainframe bereits ein Bild für Doom im Ubuntu Package, aber auch bei candle rundoom com gibt es noch kein Mainframe Projekt. Also theoretisch ja, ich glaube nicht, dass das nicht geht. Ich glaube, da hat nur niemand Zugriff auf Mainframe.",
+      "start": 3852522,
+      "end": 3888742,
+      "confidence": 0.91445434,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Ich dachte, du hättest es gelesen, weil einer meiner Kunden tatsächlich der gute Michael Fleißig, der arbeitet bei der HUK, das war sein Initialprojekt, dass er mal gesagt hat eine kiste Bier dafür, dass ich Doom auf dem Mainframe lauffähig mach. Und dann hat er das gemacht und hat das auch geschafft. Und deswegen der Abzu erzählte das schon mal und da hat er das nicht da eingetragen, der Vogel. Ja, das natürlich dumm gelaufen, aber tatsächlich ja, man kann in diesem ZOS, das virtualisiert dann im Prinzip viele Linux Interfaces, dann sowas, das nennt sich ZX, aber da kann man Doom laufen lassen. Die größte Problematik, die man immer hat, ist der Mainstream hat halt keine Grafikkarten. Das heißt, man muss, er musste so ein bisschen dran rumfummeln, dass das eben dann halt nicht auf einer Grafikkarte, sondern in CPU gerendert wurde und einem dann per per Virtual Desktop hingeschoben wurde. Aber ja, es geht.",
+      "start": 3888886,
+      "end": 3930668,
+      "confidence": 0.89309645,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Solltest du unbedingt veranlassen, dass das eingetragen wird in diese Liste.",
+      "start": 3930764,
+      "end": 3933884,
+      "confidence": 0.96485275,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Ja, auf jeden Fall. Das erste nach dem Podcast hier ist Michael schreibt wie konntest du das nicht eintragen? Das ist ja super dämlich, so ein Win.",
+      "start": 3933932,
+      "end": 3942636,
+      "confidence": 0.9224411,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "So, wenn wir jetzt mal ein bisschen in die Zukunft blicken und das haben wir jetzt ja schon ein bisschen so angesprochen und du hast ja schon oft erwähnt, die wurden totgesagt, die ganzen Mainframes und es hat sich nicht bewahrheitet. Und ich hätte ja gerne gefragt, wie du das siehst, ob Mainframes nur verwendet werden, weil sie halt schon da sind, aber ich glaube, ich bekomme von dir wahrscheinlich keine komplett offene Antwort diesbezüglich. Darum probiere die Frage ein bisschen zu drehen. Wenn du jetzt jemanden vor dir hast, der irgendwie die Entscheidung hat, sollen wir jetzt auf einen Mainframe setzen und wir haben aber noch kein Mainframe, oder sollen wir auf eine Cluster Lösung, Cloud Lösung setzen? Würdest du dem raten, Mainframe zu verwenden und wann und worüber?",
+      "start": 3942788,
+      "end": 3982482,
+      "confidence": 0.9187812,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Ja, also ich würde erstmal sagen, kommt natürlich total darauf an, was du willst. Also ich habe zwar jetzt viel über Mainframes geredet, aber ich bin IT Architekt, am Ende machen wir IT nicht, weil IT cool ist, sondern wir machen IT, weil dein Bankaccount funktionieren soll, meine Versicherung verkauft wird und was auch immer. Und da gibt es gute Gründe, warum ich manchmal Mainframes nutzen will. Z.B. wenn es hier in diese ganzen Krypto Sachen geht, sind wir jetzt gar nicht genau zu gekommen, wir haben nur einmal kurz über Krypto gesprochen. Der Mainframe kann in Hardware schon quantensichere Algorithmen verschlüsseln. Das heißt, sie sind schon in Hardware implementiert, die Kaiper Algorithmen, die wir haben. Und wenn ich jetzt in so einem Umfeld unterwegs bin, haben wir z.B. in der Schweiz viele Fintech Startups, die genau solche Dinge brauchen. Die nehmen kein ZOS mehr, die nehmen Linux, aber die nehmen die mainframe Plattform, weil sie davon sich eben viel versprechen und das Leben leichter macht, dass sie Sachen implementieren auf einer Mainframe Hardware Plattform, da macht das super Sinn. Habe ich mal einen Kunden, wie eben dieses Beispiel mit China, der von jetzt auf gleich 100 Millionen Kunden hat, macht auch Mainframe Sinn? Bin ich ein Startup, macht es das nicht? Und ich glaube, das ist auch die größte Schwierigkeit, immer wenn die Kunden oder auch die Studenten fragen, ja warum macht denn Google oder macht Amazon kein Mainframe? Wahrscheinlich wäre der Mainframe gar keine schlechte Plattform für Amazon, aber Amazon hat ja auch Legacy. Amazon ist mit dem gewachsen, was sie haben. Genauso ist Netflix mit dem gewachsen, was sie haben. Und die haben halt natürlich viele Sachen in Software lösen müssen, die sie in Hardware nicht lösen konnten, weil die Systeme, die günstigen Systeme, auf denen sie gestartet sind, das nicht erlaubt haben haben. Und dann fragt man jetzt im Prinzip, macht es Sinn, viel von dem, was du da an Hirschmalz reingesteckt hast, was dich speziell macht, wegzuschmeißen? Und da ist, glaube ich, die Antwort oft nein. Macht das als Konsolidierungsplattform z.b. oft Sinn? Ja, so ein Beispiel von der Citibank, also auch eine Bank zwar, aber hat eigentlich nichts mit Banking zu tun, die wollten mongodb as a Service machen und haben halt überlegt, was brauchen wir dafür, sind auf neuen Rex Intel gekommen, war Anfang der Pandemie, dann gab es das. Also ich glaube, was uns gerettet hat, war also als Mainframe, dass wir da überhaupt ins Spiel kam, war, die haben diesen neuen Rex Intel nicht herbei bekommen, weil wir erinnern uns, damals war dieses Schiff in dem Kanal und irgendwie war ganz schwierig IT zu bekommen. Und die saßen in New York, IBM sitzt upstate New York in Poughkeepsie und haben die gesagt, lass uns das doch mal ausprobieren. Wir lassen das auf so einem Linux Rechner laufen, der so ein Mainframe ist. Linux One heißt das dann, ist ein anderer Marketingbegriff, technisch genau dasselbe. Und dann haben die quasi rausgefunden, das was sie für neun Racks gesized haben, hat auch vier Racks Intel, vier Rex Mainframe angepasst. Also halb so viel Platz ungefähr an Footprint und 70 % weniger Energiekosten. Und das hat sich für die gerechnet. Sie haben am Ende gesagt, das hat sich gerechnet, das ist eine gute Technologie. Also ich glaube, dass die Hardware Technologie nicht am Ende ist. Werden wir viele neue ZOS Kunden kriegen? Wahrscheinlich nicht. Die werden eher auf Linux gehen. Und die, die heute da sind, die müssen sich halt immer überlegen, lohnt es sich wegzugehen? Also wenn wir heute Technologie hätten ohne den Mainframe Zwischenschritt, was ja unwahrscheinlich ist, weil vieles, was heute funktioniert, tut ja so, weil wir es mal irgendwann so gelernt haben, dann bräuchte man das wahrscheinlich nicht mehr so oft. Es würde wahrscheinlich auch anders gehen, aber wird es besser gehen oder nicht? Keine Ahnung. Ich glaube für die meisten ist der Mainframe, auf dem sie sind, oft einfacher zu modernisieren, also den Kram, den sie haben, da zu modernisieren, als komplett neu zu schreiben in einem anderen Paradigm. Das war jetzt eine längliche Antwort auf deine Frage, aber wie gesagt, nicht jeder muss das bin ich ein Startup und ich mache ein Webinar Webshop, geh zu Shopify und machen fertigen.",
+      "start": 3982626,
+      "end": 4180096,
+      "confidence": 0.93029076,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Also wenn ich zusammenfassen darf, es macht auch finanziell durchaus oder es gibt zumindest Szenarien, wo es absolut Sinn macht, deiner Meinung nach, das zu machen und nicht auf klassische verteilte Systeme zu setzen.",
+      "start": 4180208,
+      "end": 4192112,
+      "confidence": 0.9224353,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Absolut. Also der Glaube, dass x immer günstiger ist, schwierig, weil wir haben es ja eben kurz, du hast ja gesagt, SRES und so, es gibt eine ganze Praxis, die nichts anderes macht, als sich um Hochverfügbarkeit zu kümmern. Wenn ich Kunde bin, muss ich mich eigentlich ehrlich fragen, gebe ich das an den Stack, dafür ist der Stack ein bisschen teurer oder nehme ich das an mich als Entwicklerteam und habe dafür die Entwicklung an der Backe und muss mich auch vielleicht über Jahrzehnte über irgendwelche Frameworks kümmern, die dann irgendwann off vogue sind. Also als diese ganze Kubernetes Sache angefangen hat, oder vor Kubernetes, haben wir gesagt, Container macht man mit apache Mesos. Da haben Leute richtig viel Geld investiert, um dann festzustellen, Kubernetes war besser.",
+      "start": 4192256,
+      "end": 4228144,
+      "confidence": 0.92849445,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Wobei, wenn ich zwei Datacenter habe, die jetzt, keine Ahnung, wirklich physikalisch auch getrennt sind, dann muss ich mich ja erst wieder um die Verteilung kümmern, oder? Also das kann mir die Hardware nicht abnehmen.",
+      "start": 4228192,
+      "end": 4238568,
+      "confidence": 0.89801943,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Ja, also ich muss mich natürlich darum kümmern, dass das da ist, aber den Rest macht das Betriebssystem für mich. Also die zwei Systeme gleichzeitig auszulassen, wobei gleichförmig immer eine dumme Idee ist. Manager mögen das, wenn Systeme gleichförmig ausgelastet sind. Aus Betriebssicht würde man sagen, du startest das immer lokal, bis das lokale System unter Stress kommt und dann gehst du nach drüben. Aber das gehört dazu. Also diese Sysplex Technologie, die erlaubt einem auch, wenn man diese zwei Rechenzentren hat, dass die Lastverteilung automatisch passiert, dass auch automatisch, wenn was auf der einen Seite kaputt geht, dass auf der anderen Seite neu gestartet wird. Das ist alles Teil der Plattform, die für dich erledigt wird. Wo ich mich als Entwickler dann nicht mehr darum kümmer, wo ich mir bei Cloud native Implementierung natürlich viele Sorgen darum machen muss, um eben zu gucken, dass ich mich dessen bewusst bin, bin ich noch da, bin ich nicht da. Ich brauche einen Tiebreaker, wenn ich über die meisten Logik Sachen rede. Das ist jetzt so, dass die Z Plattform sich da halt andere Mechanismen schon lange überlegt hat, die halt anders funktionieren, um die ich mich nicht mehr selber kümmer.",
+      "start": 4238744,
+      "end": 4291756,
+      "confidence": 0.9243667,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Das bedeutet aber auch im Umkehrschluss, dass der Absatzmarkt für Mainframe ja mehr oder weniger jetzt echt begrenzt ist, oder? Weil ich meine, auf der einen Seite hast du natürlich existierende mainframe Kunden, die haben ihren Mainframe unten stehen und vielleicht wollen sie mal einen austauschen. Gut, und dann hast du hier diese neuen Kunden, wie die Citibank, hast du gerade gesagt, die nehmen das mit ins Portfolio. Aber es klingt jetzt auch, zumindest aus meiner Erfahrung, eher auch eher wie ein Edge Case, so nach dem Motto. Also es gibt nicht viele Leute, die dann jetzt mal eben sagen, ach komm, ich nehme mir mal einen neuen Mainframe. Weil wenn man die ganze Thematik mal weiterdenkt und da komme ich jetzt her, es geht ja auch um den Talent Pool. Also ich mein, wie viele Leute haben Erfahrung mit Mainframe? Es ist deutlich einfacher, auf AWS was zu deployen als auf Mainframe, wenn man die Umgebung nicht geschaffen hat, sondern ich stelle jetzt da einen neuen Mainframe hin, dann alle Startups und Co. Hast du gesagt, macht mit hoher Wahrscheinlichkeit nicht Sinn finanziell, weil die halt mit was anderem anfangen und dann die Thematik in Software lösen. Und deswegen stelle ich mir die Frage, okay, wenn ich jetzt aus dem Studium komme, ich habe meinen Master fertig oder ähnliches, macht es dann noch Sinn, Cobol PL zu lernen und kann ich, bis ich in Rente gehe, weil ich komme jetzt gerade aus dem Studium, damit gut Geld verdienen? Das ist die Frage. Oder soll ich schon auf den neuen heißen scheiß umwidmen, obwohl jetzt Go auch auf dem Mainframe läuft, verstehe ich, aber wie wahrscheinlich ist das?",
+      "start": 4291868,
+      "end": 4382034,
+      "confidence": 0.9376228,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Also das finde ich super spannend, weil das ist auch mal, was ich viel meinen Studenten sage, glaub nicht, dass egal wo ihr mit hier rausgeht, dass das hält bis zu eurer Rente. Der Zoo ist abgefahren. Die Wahrscheinlichkeit ist sogar noch groß, dass Cobol sogar noch das ist, was am längsten trägt. Weil wenn wir unsere Entwicklungszeiten sich so angucken, was sind coole Programmiersprachen? Alle paar Jahr schmeißen wir irgendwas neues auf den Markt. Java ist ja auch nichts neues mehr, wenn man so will. Das ist ja schon so, dass oft an Unis das gar nicht mehr gelehrt wird, weil die Profs boah, ich habe jetzt 22 Jahre Java gemacht, ich will jetzt mal was Neues, ich mache jetzt auch morgen nur noch Rust. Also da muss man generell mit leben. Und jetzt, ob man sich dafür beschäftigen soll oder nicht, ich glaube, am Ende sollten wir als Informatiker aufhören, uns über Technologie zu definieren, sondern Probleme zu lösen. Das mal ganz grundsätzlich. Und wenn man die Probleme sich überlegt, dann muss ich überlegen, welche Probleme machen wir? Will ich den nächsten Webshop bauen oder will ich das europäische Zahlungssystem managen? Das europäische Zahlungssystem läuft zufälligerweise auch mit. So und das muss ich mir halt überlegen. Und wenn ich dann eben T, das ist das Target System, cool finde, dann lande ich halt auf einer Mainframe Lösung. Das würde ich mir gar nicht so viel Gedanken machen, ob das in Kobold ist oder nicht. Das kann man alles lernen, wenn man sich fachlich dafür interessiert, macht es Spaß und dann kommt man da auch hin. Oder interessiert mich das Zahlungsverkehrssystem generell? Also die Frage ist immer, welchen Impact kann ich haben? Auch wenn es wenige Leute sind, die das noch haben. Es gibt halt nicht so viele Banken auf der Welt, gibt mit Sicherheit mehr Online Shops, aber die Banken sind halt natürlich. Gab mal so ein IBM DE, ich glaube, das ist jetzt schon ein bisschen übertrieben, das würde ich heute nicht mehr so staten, aber der hat mal so Mitte der er gesagt, wenn alle x Server ausfallen, wird morgen die New York Times nicht mehr gedrückt. Wenn alle Z Maschinen ausfallen, gibt es morgen die New York Times nicht mehr. Und das ist mit Sicherheit nicht mehr so krass, weil natürlich der Anteil der Cloud Systeme viel, viel höher ist. Aber man muss sich das schon klar machen, dass ohne Z Systeme ist die komplette Weltwirtschaft nicht mehr handlungsfähig. Das Heißt auch die IBM wird nicht morgen damit aufhören, die Dinger zu produzieren, weil die sind echt kritisch und da läuft eine kritische Workload drauf und die läuft da gut. Die würde auch nicht besser laufen, wenn man den x neu schraubt. Im Idealfall läuft sie ähnlich gut. Und ich glaube, deswegen glaube ich schon, macht das Sinn, wenn man sich mit kritischer Infrastruktur beschäftigen will, sich damit zu beschäftigen. Das was für mich immer wichtig ist, entscheidet sich nicht für den Mainframe, man muss dann ein Leben lang Kobold machen, sondern ich behaupte zumindest von mir, auch wenn ich Mainframer bin, ich beschäftige mich auch mit coolem und scheiß. Die Welt darf nicht mehr so getrennt sein, wie die das früher mal war. Ich mach Mainframe, dann bin ich hinten in meinem Kämmerlein und mach das und die anderen machen den coolen Cloud scheiß, sondern wir müssen eh alle ständig miteinander interagieren. Meine coole Banking App in Fancy React bringt mir nichts, wenn hinten nichts dran steht. Genauso bringt mir nichts, wenn mein Mainframe läuft, aber keiner mehr an den bezahlte bezahlen kann. Also die Welten wachsen zusammen und ich würde den Leuten beschäftige dich mit Problemen, die du cool findest. Wenn die auf dem Mainframe sind, dann lernst du das mit dem Mainframe. Das ist nicht so schwer, hab nicht so viel Angst davor. Das ist immer was den Studenten sagen, habe einfach keine Angst, beschäftige damit. Wenn du es cool findest, beschäftige dich damit, wenn nicht, dann mach was anderes. Wir brauchen beides. Wird nicht reichen.",
+      "start": 4382202,
+      "end": 4565496,
+      "confidence": 0.9284069,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Das klang jetzt gerade so wie das Abschlussplädoyer oder nach einer Kaufempfehlung für IBM Aktien, weil Mainframe nicht weggeht. Also entweder oder vielleicht auch beides, ich weiß es nicht. Wenn ich jetzt sage, wo soll ich hinwechseln, damit ich dauerhaft mit Mainframes spielen darf, damit Mainframes mir meine Miete zahlen.",
+      "start": 4565608,
+      "end": 4586268,
+      "confidence": 0.9314434,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Oder damit du Doom laufen lassen kannst.",
+      "start": 4586284,
+      "end": 4588380,
+      "confidence": 0.9114843,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Oder damit ich endlich mal auch Doom portieren kann, sagst du dann IBM hired oder sagst du dann auch ne, was, es gibt auch ganz viele Consulting Buden oder soll ich dann Cobol PL lernen oder wo ist da der beste Startpunkt.",
+      "start": 4588540,
+      "end": 4602470,
+      "confidence": 0.8765157,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Ich glaube bei der IBM kann man sich damit beschäftigen, wie man Mainframes baut, aber mit Mainframes selber machen wir gar nicht immer so viel. Das ist dann immer, wenn die Leute auch nach der Vorlesung wo kann ich denn jetzt hier Kobold bei der IBM, wir haben so ein bisschen interne IT, aber gar nicht so viel. Wir bauen halt Chips und Rechner und Middleware. Wenn du dich für die Anwendung interessierst, bist du bei den Kunden meistens besser aufgehoben. Am Ende sind es natürlich meistens die großen Banken, die alle Mainframer suchen, die großen Versicherer, die alle noch Mainframes haben und auch viele Jahre noch haben werden. Es sind Staatsunternehmen, also ich meine die Bundesbank ist ja auch eine Bank, so halb halb, aber es sind natürlich auch Staatsdienste, die das machen. USA noch wesentlich krasser als bei uns in Europa, die mainframe Systeme im Betrieb haben. Aber ja, wahrscheinlich die Banken. Wie komme ich rein? Die meisten Unternehmen schreiben immer fürchterliche Stellenanzeigen. Du sollst 20 Jahre Kobold, dreiig Jahre PL Erfahrung, 50 Jahre ZOS Erfahrung haben, Alter 20 einzig 2000 und noch 10 Jahre Kybernettis dazu. Das muss er auch noch haben. Aber wo ich immer sage so, also bewerbt euch einfach und redet mit den Leuten. Die Community ist da, die Mainframe sind schwierig zu finden, habe ich rausgehört, da müssen wir mehr dran arbeiten, aber redet einfach mit den Leuten. Eigentlich suchen alle ständig nach Leuten, alle wollen Talent heiern, die wechseln ständig auch zwischen den Läden. In der Schweiz ist das ganz schlimm. In der Schweiz hat glaube ich jeder Mainframe schon mal bei jedem der Unternehmen gearbeitet, weil sie alle in Zürich, Bern, Basel sitzen. Aber ich glaube, das kann man dann schon tun. Muss man Kobold großartig lernen? Ja, kann man an einem Wochenende tun. Gibt es auch coole Online Kurse bei Udemy oder auch die IBM hat so einen freien Onlinekurs, Cobol Friday oder so heißt das. Kann man lernen, ist keine komplizierte Programmiersprache. Das komplizierte sind dann am Ende Bank Applikationen, die Lines of Code haben. Die sind aber auch in Java scheiße, wenn ich euch alle beruhigen darf. Also das darf man dann machen, wo immer man Freude dran hat.",
+      "start": 4602550,
+      "end": 4709066,
+      "confidence": 0.9217028,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Aber wenn man da jetzt wirklich irgendwie losstarten will, das Problem ist ja dasselbe mit Doom. Ich habe keinen Mainframe da zur Verfügung, wo ich mal Doom ausprobieren kann und in der Cloud kann ich mal im schlimmsten Fall sogar irgendwie eine fette Maschine mal mieten für 1 Stunde. Kann ich irgendwie mit einem Mainframe loslegen. Gibt es communities, gibt es zumindest irgendwie Videos, wo immer das mal reinziehen kann, um das irgendwie besser zu verstehen, dass es eben kein grüner Bildschirm mehr ist oder wie das so alles abläuft.",
+      "start": 4709138,
+      "end": 4735828,
+      "confidence": 0.8887559,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Ist auf jeden Fall was für die Show Notes. Es gibt the Explore heißt das. Das ist quasi so ein Studenten Contest, der einmal im Jahr kommt. Da kriegt ihr natürlich auch die Links zu. Da kann man aber jederzeit einsteigen und da gibt es ganz viele Aufgaben. Da kann man so einfach so meld dich mal an. Ist so die einfachste dann erstellen Cobol Programm kompiliert das Cobol Programm gibt Assembler Kurse und so und dann rechnet man auf Mainframe. Der wird gehostet von der IBM bei irgendeiner Uni, aber man muss nicht selber was haben. In Deutschland gibt es auch einige Unis, die ein Mainframe haben. Tübingen, Leipzig z.b. welche Frankfurt Uni Frankfurt hat einen Mainframe. Da darf man auch mitspielen, wenn man sich da an die Leute wendet. Und die IBM bietet auch Cloud Offerings. Also man kann in der IBM Public Cloud auch sich so ein Mainframe. Da muss man allerdings bezahlen, das dann weniger attraktiv. Deswegen the Explorer ist glaube ich immer das, was zum Beschäftigen eigentlich mal ganz cool ist. Und da kann man damit mal ein bisschen rumspielen. Und da gibt es die zeigen einem beide Welten. Anfangen tut man eher mit einer VS Code Welt, damit man nicht so direkt Horror kriegt und dann zeigen die einem aber irgendwann kannst du auch im zwei und dreiig 70 machen und da gibt es dann ganz coole Projekte. Man kann Mainframes auch emulieren. Bietet die IBM eine Software an, ZPDT heißt es. Da kann man diesen ganzen Mainframe Hardware Teil emulieren auf der auf dem normalen x Rechner. Leider noch nicht auf aktuellen Macs. Das bisschen schade. Das heißt meine Emulation mit meinem letzten Rechnerwechsel liegt schlafend, kann sie nicht mehr auf meinem Rechner starten. Das ist natürlich nichts für große Transaktionsverarbeitung. Merkt man dann schon, dass es ein bisschen langsamer ist. Aber wenn man einfach mal ein bisschen spielen will, geht das natürlich auch.",
+      "start": 4735924,
+      "end": 4822174,
+      "confidence": 0.9163576,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Weil du Cloud erwähnt hast. Also da kann ich auch nicht 1 Stunde oder so einen Mainframe mieten oder ein Teil, also dass ich es mir leisten kann, ohne da jetzt. Also ist normalsterblicher.",
+      "start": 4822262,
+      "end": 4832094,
+      "confidence": 0.92892295,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Das ist nicht so. Ich habe eben schon gesagt, es ist nicht das Produktions Environment. Man kriegt kein Sysplex mit vier Stationen, aber man kann quasi in der IBM Cloud sich mainframe stunden, minuten, sekundenweise mieten. Man bekommt dann seine kleine eigene Instanz, die starten darf mit der Community. So ein fertiges Vanilla Image quasi von der IBM mit Betriebssystem, Datenbank und all so ein knappes damit und dann kann man das starten und auch stoppen. Da muss man natürlich nicht weiter bezahlen, so wie man das in der Cloud kennt. Und das steht auf Rechnern in Frankfurt in die IBM Rechenzentren, glaube ich, in Madrid stehen welche, natürlich in den USA, in den großen IBM Cloud Rechenzentren. Dann kriegt man kurzen Moment echten Mainframe. Man darf halt wahrscheinlich, also man kriegt sein eigenes kleines Image, man ist also in einer isolierten Umgebung, man kann jetzt nicht den Mainframe mal zum Absturz bringen, hoffe ich, dass sie das gut gemacht haben, aber dann hat man echtes System, kannst du nicht anfassen.",
+      "start": 4832142,
+      "end": 4881742,
+      "confidence": 0.930542,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Und wenn jetzt irgendwie in Kontakt treten will mit anderen, wie hast du sie genannt, Mainframern, gibt es da irgendwie eine klassische Community, eine Mainframe Community, vielleicht auf sowas wie Discord oder ist es dann vielleicht ein altes Forum? Keine Ahnung.",
+      "start": 4881806,
+      "end": 4895486,
+      "confidence": 0.9321227,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Es gibt sowohl als auch. Es gibt so das klassische die Kundenvereinigung. In Deutschland heißen die GSE Guide Share Europe. Gerade ist im Moment in den USA wieder die große Kunden Event, das heißt bei denen Share, da sieht man die Menschen dann physisch, die haben zwar auch Webseiten, aber eigentlich geht es ums echte Treffen zweimal im Jahr. Aber es gibt auch einen schönen Discord Server, wo natürlich typischerweise auch viele moderne Themen diskutiert werden. Die können wir auch in die Show Notes packen. Da ist ein Kollege von mir, der Frank de Giglio, ganz aktiv, der ein distinguished engineer aus Poughkeepsie ist, der da eben auch, oder mittlerweile wohnt, glaube ich im Osten, der da auch einfach eine Community bildet, wo das passiert. Hier in Deutschland haben wir zweimal im Jahr machen wir so ein Young Talent Event, wo junge Leute hinkommen können, gehe an ganz viele Vorlesungen an Unis natürlich, da treffe ich dann auch schon mal Leute. Und es gibt von dieser GSE so eine Arbeitsgruppe, die heißt Z Talents. Als ich gestartet bin, hieß die mal U, weil damals waren wir alle unter Dreiig, dann wurden wir irgendwann um die Dreiig und ich kann das jetzt nicht mehr verantworten. Und dann wurde die umbenamst in die Z Talents Group. Das sind dann die jungen Talente, die sich da vernetzen und miteinander austauschen.",
+      "start": 4895598,
+      "end": 4959990,
+      "confidence": 0.9395236,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Die Z Talents Group wurde mir von anderen Mainframen auch wirklich empfohlen als Kontakt, wenn wir jemanden suchen, der Ahnung hat. Also das hat soweit schon mal funktioniert, dieses Marketing von der Gruppe, da kann ich dich beruhigen.",
+      "start": 4960070,
+      "end": 4974006,
+      "confidence": 0.94355893,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Sehr gut.",
+      "start": 4974118,
+      "end": 4974774,
+      "confidence": 0.974355,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Tobi, vielen, vielen lieben Dank für die ganzen Insights. Für mich war es super interessant. Was ich auch mitgenommen habe, ist einfach, dass es kein Entweder oder gibt, sondern dass es einfach zwei Welten sind, die auch koexistieren können können und dass eben auf der Mainframe Seite viel in Hardware und in unteren Software Schichten gegossen wird, was sonst eben weiter oben gemacht werden muss von Menschen und anderer Software. Ich glaube, das ist ein super Learning und take away und dass es gar nicht so darum geht, irgendwo eine neun oder eine null oder was auch immer hintendran zu hängen. Und weil du schon Discord gesagt hast, wir haben natürlich auch eine Discord Community und da würden wir uns natürlich freuen, wenn irgendwer von unseren Hörer innen eine Frage hat oder einen Kommentar hat. Oder vielleicht traut sich auch jemand heraus aus der Ecke und sagt, ich arbeite mit Mainframes, so wie es jetzt viele machen. Also es scheint irgendwie sogar ein bisschen Trend zu sein, in meiner Bubble zumindest. Vielleicht hat es mit dem Alter zu tun, keine Ahnung. Aber kommt bitte vorbei bei uns in der Discord Community. Lasst uns wissen, wenn es irgendwelche Kommentare gibt, Fragen, Anregungen. Und ich vermute auch, Tobi, man kann dich direkt kontaktieren auf LinkedIn. Wir verlinken natürlich alle deine Links, die du genannt hast, aber auch dein Profil. Und wer Interesse hat, da kann der Tobi sicher weiterhelfen.",
+      "start": 4974862,
+      "end": 5046542,
+      "confidence": 0.9178799,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "E Mails und ich funktionieren nicht so gut. Ich kriege irgendwie am Tag 300 und ich habe kapituliert. Also am besten immer bei LinkedIn schreiben, irgendwelche direkten, das funktioniert immer besser.",
+      "start": 5046686,
+      "end": 5056210,
+      "confidence": 0.86968064,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Falls ihr noch ein bisschen mehr über Mainframe und vom Tobi hören wollt, schaltet mal in den Podcast rein. Mainframe, what the heck? Link findet ihr auch in den Shownotes. Ansonsten würde ich sagen, ruf mal die neue Challenge aus, Doom auf dem Mainframe laufen zu lassen. Ich meine, es wurde ja anscheinend schon bei Kunden gemacht. Bisher fehlt der Beweis. Schauen wir mal, was als erstes aufkommt. Entweder ein neues Doom of the Mainframe Video auf YouTube oder vielleicht von der Hook war das, glaube ich, jemand. Vielen lieben Dank, wir verabschieden uns und Tschüss.",
+      "start": 5056630,
+      "end": 5084824,
+      "confidence": 0.9191127,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Bis dann. Ciao.",
+      "start": 5084872,
+      "end": 5085400,
+      "confidence": 0.9435767,
+      "speaker": "C",
+      "channel": null
+    }
+  ],
+  "confidence": 0.92369545,
+  "audio_duration": 5033,
+  "webhook_status_code": null,
+  "webhook_auth": false,
+  "summary": null,
+  "auto_highlights_result": null,
+  "content_safety_labels": null,
+  "chapters": null,
+  "sentiment_analysis_results": null,
+  "entities": null
+}
