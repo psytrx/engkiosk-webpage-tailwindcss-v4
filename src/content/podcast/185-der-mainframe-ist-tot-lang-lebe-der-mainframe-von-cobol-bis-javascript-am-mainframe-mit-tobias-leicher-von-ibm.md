@@ -100,7 +100,7 @@ tags:
 title: '#185 Der Mainframe ist tot, lang lebe der Mainframe! Von COBOL bis JavaScript
   am Mainframe mit Tobias Leicher von IBM'
 transcript_raw: ''
-transcript_slim: ''
+transcript_slim: src/data/transcripts/185-transcript-slim.json
 youtube: https://www.youtube.com/watch?v=cLmSDE2pvNU
 
 ---
