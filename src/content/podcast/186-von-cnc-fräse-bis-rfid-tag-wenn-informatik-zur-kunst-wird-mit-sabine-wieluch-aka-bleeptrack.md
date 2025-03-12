@@ -1,6 +1,6 @@
 ---
 advertiser: ''
-amazon_music: ''
+amazon_music: https://music.amazon.com/podcasts/c35a09fe-4116-4e04-8f68-77d61b112e46/episodes/e7ff24c0-947c-4df6-a317-183c08a37ad2/engineering-kiosk-186-von-cnc-fr%C3%A4se-bis-rfid-tag-wenn-informatik-zur-kunst-wird-mit-sabine-wieluch-aka-bleeptrack
 apple_podcasts: https://podcasts.apple.com/us/podcast/186-von-cnc-fr%C3%A4se-bis-rfid-tag-wenn-informatik-zur/id1603082924?i=1000698690495&uo=4
 audio: https://audio1.redcircle.com/episodes/5b00574c-b9cb-41cd-a68b-73764c7f6eef/stream.mp3
 chapter:
