@@ -98,7 +98,10 @@ speaker:
 - name: Andy Grunwald
 - name: Wolfi Gassler
 spotify: https://open.spotify.com/episode/2mrbgoGPMBnb1f77977YDr
-tags: []
+tags:
+- Code mit Impact
+- Interview
+- Women in Tech
 title: "#186 Von CNC-Fr\xE4se bis RFID-Tag: Wenn Informatik zur Kunst wird mit Sabine\
   \ Wieluch aka Bleeptrack"
 transcript_raw: ''
