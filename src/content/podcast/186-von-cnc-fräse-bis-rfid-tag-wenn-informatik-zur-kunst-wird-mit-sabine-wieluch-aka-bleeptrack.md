@@ -35,7 +35,7 @@ chapter:
   title: Tiny House und CityEL
 - start: 01:08:58
   title: Projekt-Inspiration und Ration von Start vs. End
-deezer: ''
+deezer: https://www.deezer.com/episode/727419131
 description: "Code mit Impact: Creative Coding und Generative Kunst mit Sabine Wieluch\
   \ \u201CIst das Kunst oder kann das Weg?\u201D - Das ist eine g\xE4ngige Frage von\
   \ Leuten, die i.d.R. nix mit Kunst am Hut haben. Sogenannte Banausen. Denn oft kann\
