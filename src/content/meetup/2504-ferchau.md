@@ -1,8 +1,8 @@
 ---
 date: 2025-04-10T18:30:00+02:00
 location:
-  name: '???'
-  address: '???, 6020 Innsbruck'
+  name: tba
+  address: 'tba, 6020 Innsbruck'
   url: ''
   logo: ''
 talks:

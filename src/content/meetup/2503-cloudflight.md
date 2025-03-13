@@ -20,4 +20,10 @@ talks:
     linkedin: 'katharina-schmermbeck-1353452ba'
     website: 'https://www.uibk.ac.at/de/projects/innklusion/'
 eventId: '34aclvk2o59sb8l1oe29b0ssi2'
+participants:
+  registered: 82
+  present:
+    total: 68
+    male: 54
+    female: 14
 ---
