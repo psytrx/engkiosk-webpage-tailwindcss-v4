@@ -41,21 +41,18 @@ const year = new Date().getFullYear();
 						</a>
 					</li>
 					<li class="mb-4">
-						<a class="inline-block text-coolGray-500 hover:text-coolGray-600 font-medium" title="Engineering Kiosk RSS-Feed" href="/rss.xml">
+						<a class="inline-block text-coolGray-500 hover:text-coolGray-600 font-medium" title="Engineering Kiosk Podcast RSS-Feed" href={podcastInfo.platformLinks.rss}> 
 							<img src="/images/logos/rss-icon.svg" class="inline w-6 mr-2" alt="RSS logo" title="RSS logo" />  RSS-Feed
 						</a>
 					</li>
-				</ul>
-				<h3 class="mb-5 mt-10 text-lg font-bold text-coolGray-900">Die Kiosk-Betreiber</h3>
-				<ul>
 					<li class="mb-4">
-						<a class="inline-block text-coolGray-500 hover:text-coolGray-600 font-medium" title="Engineering Kiosk Podcast Host Andy Grunwald" href="/kiosk-betreiber/andy-grunwald/">
-							<span class="inline-block text-coolGray-500 hover:text-coolGray-600 font-medium"> Andy Grunwald</span>
+						<a class="inline-block text-coolGray-500 hover:text-coolGray-600 font-medium" title="Engineering Kiosk Podcast at Spotify" href={podcastInfo.platformLinks.spotify}> 
+							<img src="/images/brands/spotify.svg" class="inline w-6 mr-2" alt="Spotify logo" title="Spotify logo" />  Spotify
 						</a>
 					</li>
 					<li class="mb-4">
-						<a class="inline-block text-coolGray-500 hover:text-coolGray-600 font-medium" title="Engineering Kiosk Podcast Host Wolfi Gassler" href="/kiosk-betreiber/wolfgang-gassler/">
-							<span class="inline-block text-coolGray-500 hover:text-coolGray-600 font-medium"> Wolfi Gassler</span>
+						<a class="inline-block text-coolGray-500 hover:text-coolGray-600 font-medium" title="Engineering Kiosk Podcast at Apple Podcasts" href={podcastInfo.platformLinks.appleMusic}>
+							<img src="/images/brands/apple.svg" class="inline w-6 mr-2" alt="Apple Podcasts logo" title="Apple Podcasts logo" />  Apple Podcasts
 						</a>
 					</li>
 				</ul>
@@ -73,7 +70,20 @@ const year = new Date().getFullYear();
 				</ul>
 			</div>
 			<div class="w-full md:w-1/3 lg:w-4/12 px-4">
-				<h3 class="mb-5 text-lg font-bold text-coolGray-900">Anderes</h3>
+				<h3 class="mb-5 text-lg font-bold text-coolGray-900">Die Kiosk-Betreiber</h3>
+				<ul>
+					<li class="mb-4">
+						<a class="inline-block text-coolGray-500 hover:text-coolGray-600 font-medium" title="Engineering Kiosk Podcast Host Andy Grunwald" href="/kiosk-betreiber/andy-grunwald/">
+							<span class="inline-block text-coolGray-500 hover:text-coolGray-600 font-medium"> Andy Grunwald</span>
+						</a>
+					</li>
+					<li class="mb-4">
+						<a class="inline-block text-coolGray-500 hover:text-coolGray-600 font-medium" title="Engineering Kiosk Podcast Host Wolfi Gassler" href="/kiosk-betreiber/wolfgang-gassler/">
+							<span class="inline-block text-coolGray-500 hover:text-coolGray-600 font-medium"> Wolfi Gassler</span>
+						</a>
+					</li>
+				</ul>
+				<h3 class="mb-5 mt-10 text-lg font-bold text-coolGray-900">Anderes</h3>
 				<ul>
 					<li class="mb-4">
 						<a class="inline-block text-coolGray-500 hover:text-coolGray-600 font-medium" title="Deutschsprachige Tech Podcasts" href="/deutsche-tech-podcasts/"> Deutschsprachige Tech Podcasts</a>
