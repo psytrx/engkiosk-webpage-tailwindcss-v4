@@ -29,4 +29,5 @@ participants:
     total: 39
     male: 32
     female: 7
+  newParticipants: 14
 ---

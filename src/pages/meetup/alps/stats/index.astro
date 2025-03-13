@@ -58,7 +58,7 @@ const averageMaleRatio = (totalMaleRatio / validMeetupsForGenderRatio.length) * 
                             <th class="px-6 py-3 border-b text-left">Date</th>
                             <th class="px-6 py-3 border-b text-left">Location</th>
                             <th class="px-6 py-3 border-b text-left">Speakers</th>
-                            <th class="px-6 py-3 border-b text-center">Registrations</th>
+                            <th class="px-6 py-3 border-b text-center">Registrations (New Email Addresses)</th>
                             <th class="px-6 py-3 border-b text-center">Attendees</th>
                             <th class="px-6 py-3 border-b text-center">Attendees Read as Female</th>
                             <th class="px-6 py-3 border-b text-center">Attendees Read as Male</th>
@@ -90,6 +90,11 @@ const averageMaleRatio = (totalMaleRatio / validMeetupsForGenderRatio.length) * 
                                                 .catch(error => console.error('Error fetching registration data:', error));
                                         </script>
                                     )}
+                                    {(meetup.participants?.newParticipants && meetup.participants.newParticipants > 0 && meetup.participants.registered) && (
+            
+                                        <br><span class="text-sm text-gray-500">({meetup.participants.newParticipants}/{(meetup.participants.newParticipants / meetup.participants.registered * 100).toFixed(0)}% new)</span>
+                          
+                                    )}                                    
                                 </td>
                                 <td class="px-6 py-4 border-b text-center">
                                     {meetup.participants?.present?.total || "no data"}

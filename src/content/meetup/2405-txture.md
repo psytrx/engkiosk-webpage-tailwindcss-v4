@@ -26,4 +26,5 @@ talks:
 eventId: '45225s2tfrlbaauanf7e0im9gj'
 participants:
   registered: 42
+  newParticipants: 9
 ---

@@ -19,5 +19,6 @@ talks:
     website: 'https://unsplash.com/de/fotos/ein-paar-glaser-gefullt-mit-flussigkeit-und-trinkhalmen-v_RGL0q1pTg'
 participants:
   registered: 26
+  newParticipants: 10
 eventId: '611j45n6ja4orjdn7m29a11acd'
 ---

@@ -31,4 +31,5 @@ talks:
 eventId: '77tocfleahk4hcuepk7sqca5rm'
 participants:
   registered: 48
+  newParticipants: 27
 ---

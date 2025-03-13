@@ -21,5 +21,6 @@ talks:
     slides: '2409-markus-kuebernetes.pdf'
 participants:
   registered: 65
+  newParticipants: 29
 eventId: '56tn3sricvvkvu2pe39lptmlfm'
 ---

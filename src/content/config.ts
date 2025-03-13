@@ -92,6 +92,7 @@ const meetupCollection = defineCollection({
 						female: z.number().optional(),
 					})
 					.optional(),
+				newParticipants: z.number().optional(),
 			})
 			.optional(),
 	}),
