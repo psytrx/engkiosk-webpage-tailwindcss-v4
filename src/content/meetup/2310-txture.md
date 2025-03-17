@@ -25,4 +25,8 @@ talks:
     website: 'https://www.sigma-star.at'
 participants:
   registered: 52
+speakers:
+  male: 2
+  female: 0
+  nonbinary: 0
 ---

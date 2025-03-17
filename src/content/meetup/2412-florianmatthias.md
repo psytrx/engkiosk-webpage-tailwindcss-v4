@@ -22,6 +22,8 @@ talks:
     linkedin: 'adigheji-efeunu-875b88170'
     website: 'https://medium.com/@anefeunu'
     slides: '2412_nkem_building_better_relationships.pdf'
+speakers:
+  male: 2
 eventId: '69srtjfqrffnpbdtspdebs8i7s'
 participants:
   registered: 44

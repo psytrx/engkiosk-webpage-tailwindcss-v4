@@ -33,6 +33,21 @@ const averageFemaleRatio = (totalFemaleRatio / validMeetupsForGenderRatio.length
 const totalMaleRatio = validMeetupsForGenderRatio.reduce((acc, meetup) => acc + (meetup.participants?.present?.male / meetup.participants?.present?.total), 0);
 const averageMaleRatio = (totalMaleRatio / validMeetupsForGenderRatio.length) * 100;
 
+const speakerStats = {
+    female: allMeetups.reduce((acc, meetup) => acc + (meetup.speakers?.female || 0), 0),
+    male: allMeetups.reduce((acc, meetup) => acc + (meetup.speakers?.male || 0), 0),
+    nonbinary: allMeetups.reduce((acc, meetup) => acc + (meetup.speakers?.nonbinary || 0), 0),
+    total: 0,
+    femalePercentage: 0,
+    malePercentage: 0,
+    nonbinaryPercentage: 0
+}
+
+speakerStats.total = speakerStats.female + speakerStats.male + speakerStats.nonbinary;
+speakerStats.femalePercentage = Math.round((speakerStats.female / speakerStats.total) * 100);
+speakerStats.malePercentage = Math.round((speakerStats.male / speakerStats.total) * 100);
+speakerStats.nonbinaryPercentage = Math.round((speakerStats.nonbinary / speakerStats.total) * 100);
+
 
 ---
 
@@ -49,6 +64,12 @@ const averageMaleRatio = (totalMaleRatio / validMeetupsForGenderRatio.length) * 
                 <p class="text-lg">Number of Meetups: {numMeetups}</p>
                 <p class="text-lg">Average Show-Up Rate: {averageShowUpRate.toFixed(2)}%</p>
                 <p class="text-lg">Average Read as Female/Male Ratio: {averageFemaleRatio.toFixed(2)}% / {averageMaleRatio.toFixed(2)}%</p>
+                <p class="text-lg">Total Speakers: {speakerStats.total}</p>
+                <p class="text-lg">Speakers Self Identified as: 
+                    Female: {speakerStats.female} ({ speakerStats.femalePercentage }%) /
+                    Nonbinary: {speakerStats.nonbinary} ({ speakerStats.nonbinaryPercentage }%) /
+                    Male: {speakerStats.male } ({ speakerStats.malePercentage }%)
+                </p>
             </div>
             
             <div class="">

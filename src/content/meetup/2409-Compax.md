@@ -19,6 +19,8 @@ talks:
     description: 'Kubernetes (K8s) streamlines deployment, scaling, and management of containerized applications. In this talk, we’ll explore the history of Kubernetes, talk about the relationship with Docker and look at some of the core concepts. Several live demos will also be presented.'
     bio: 'Markus is a Product Architect at Dynatrace working on building an internal platform delivering Dynatrace Services into a multi-cloud, multi-tenant environment based on Kubernetes. With 25 years of experience starting as a Java Developer, followed by many years as Software Architect he is nowadays focused on CI/CD and Kubernetes.'
     slides: '2409-markus-kuebernetes.pdf'
+speakers:
+  male: 2
 participants:
   registered: 65
   newParticipants: 29

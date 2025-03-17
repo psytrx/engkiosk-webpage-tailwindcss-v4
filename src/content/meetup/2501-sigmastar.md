@@ -20,6 +20,8 @@ talks:
     bio: 'Nora Hofer is a Ph.D. student at the Security and Privacy Lab at the University of Innsbruck. Her research focuses on understanding and mitigating semantic changes introduced by learning-based image compression algorithms. In this talk, she will briefly introduce neural image compression, show examples of semantic changes, and discuss recent work towards mitigation strategies.'
     slides: '2501_hofer_miscompressions.pdf'
     website: 'https://informationsecurity.uibk.ac.at/people/nora-hofer/'
+speakers:
+  female: 2
 eventId: '546r6pl0apco31p2jaodfv9d2t'
 participants:
   registered: 68

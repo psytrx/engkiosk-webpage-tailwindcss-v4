@@ -24,8 +24,10 @@ talks:
     Crowdstrike Group Therapy by Romedius Weiss<br> 
     What is the best Linux Distro for your parents?"
     slides: '2407-richard-bootloader_security.pdf'
-eventId: '2fcp5a64su8u76v6s61ujk14k7'
+speakers:
+  male: 1
 participants:
-  registered: 33
+  registered: 4
   newParticipants: 7
+eventId: '2fcp5a64su8u76v6s61ujk14k7'
 ---

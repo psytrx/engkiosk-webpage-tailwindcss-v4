@@ -22,6 +22,9 @@ talks:
     bio: 'As a communication skills trainer, Gabrieles focus is on helping teams and leaders work well together. For over a decade she has been supporting organisations in the education, tourism and retail sectors. She is particularly interested in supporting junior managers and teams in areas such as conflict management, employee retention, self-management and empowerment. Her aim is to find practical and effective solutions that strengthen people and organisations in the long term.'
     linkedin: 'gabrielestrasser'
     slides: '2502_gabriele_shared-leadership.pdf'
+speakers:
+  male: 1
+  female: 1
 eventId: '5bmbhlehp068s2ufs5dh4uarju'
 participants:
   registered: 42

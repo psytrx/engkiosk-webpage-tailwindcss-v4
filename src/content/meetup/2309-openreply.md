@@ -20,4 +20,8 @@ talks:
     website: 'https://www.martin-pichl.at'
 participants:
   registered: 33
+speakers:
+  male: 2
+  female: 0
+  nonbinary: 0
 ---

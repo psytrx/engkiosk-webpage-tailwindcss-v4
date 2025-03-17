@@ -24,4 +24,8 @@ talks:
     slides: '2307-chris.pdf'
 participants:
   registered: 34
+speakers:
+  male: 2
+  female: 0
+  nonbinary: 0
 ---

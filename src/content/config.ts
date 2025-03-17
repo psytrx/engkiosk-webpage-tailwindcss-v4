@@ -95,6 +95,13 @@ const meetupCollection = defineCollection({
 				newParticipants: z.number().optional(),
 			})
 			.optional(),
+		speakers: z
+			.object({
+				female: z.number().optional(),
+				male: z.number().optional(),
+				nonbinary: z.number().optional(),
+			})
+			.optional(),
 	}),
 });
 

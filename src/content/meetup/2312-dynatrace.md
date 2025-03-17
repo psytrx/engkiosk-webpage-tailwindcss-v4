@@ -26,4 +26,8 @@ eventId: '456r8e4uttr5dfpqkhs2bn27av'
 participants:
   registered: 47
   newParticipants: 31
+speakers:
+  male: 2
+  female: 0
+  nonbinary: 0
 ---

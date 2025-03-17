@@ -23,6 +23,8 @@ talks:
     twitter: 'jacobrief'
     mastodon: '@jrief@fosstodon.org'
     slides: '2405-jacob-rief-style-pilfering.pdf'
+speakers:
+  male: 2
 eventId: '45225s2tfrlbaauanf7e0im9gj'
 participants:
   registered: 42
