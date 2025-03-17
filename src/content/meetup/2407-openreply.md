@@ -25,9 +25,9 @@ talks:
     What is the best Linux Distro for your parents?"
     slides: '2407-richard-bootloader_security.pdf'
 speakers:
-  male: 1
+  male: 4
 participants:
-  registered: 4
+  registered: 33
   newParticipants: 7
 eventId: '2fcp5a64su8u76v6s61ujk14k7'
 ---
