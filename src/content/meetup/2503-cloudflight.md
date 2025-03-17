@@ -13,6 +13,7 @@ talks:
     bio: Roland Lezuo has studied technical computer science in Vienna where he focused on disturbingly deep details of Java Virtual Machines. Though his PhD thesis on compiler correctness is all about precision and formality, he prefers to keep life more relaxed. Outside of work, he's a busy dad of three, and has successfully founded an embedded software company, which he later merged with an electronics firm. Today, he's the CEO of SILA Embedded Solutions, leading the charge with a passion for innovation and a hands-on approach.
     linkedin: 'roland-lezuo-38861970'
     slides: 2503-roland-zephyr.pdf
+    website: 'https://www.embedded-solutions.at/'
   - avatar: '2503-katharina.jpg'
     name: 'Katharina Schmermbeck'
     title: 'The Makeup Robot and Beyond: Co-Designing Assistive Tech for Inclusion'
