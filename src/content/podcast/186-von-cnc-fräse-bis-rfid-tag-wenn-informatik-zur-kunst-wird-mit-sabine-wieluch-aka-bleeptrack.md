@@ -109,7 +109,7 @@ tags:
 title: "#186 Von CNC-Fr\xE4se bis RFID-Tag: Wenn Informatik zur Kunst wird mit Sabine\
   \ Wieluch aka Bleeptrack"
 transcript_raw: ''
-transcript_slim: ''
+transcript_slim: src/data/transcripts/186-transcript-slim.json
 youtube: https://www.youtube.com/watch?v=dMN_fq5aa_g
 
 ---
