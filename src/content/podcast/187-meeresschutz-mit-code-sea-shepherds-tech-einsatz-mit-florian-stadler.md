@@ -81,7 +81,9 @@ speaker:
 - name: Andy Grunwald
 - name: Wolfi Gassler
 spotify: https://open.spotify.com/episode/0kIn1utmzE1mxq1TwvYVId
-tags: []
+tags:
+- Code mit Impact
+- Interview
 title: "#187 Meeresschutz mit Code \u2013 Sea Shepherd's Tech-Einsatz mit Florian\
   \ Stadler"
 transcript_raw: ''
