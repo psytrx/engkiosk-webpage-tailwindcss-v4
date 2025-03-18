@@ -1,6 +1,6 @@
 ---
 advertiser: ''
-amazon_music: ''
+amazon_music: https://music.amazon.com/podcasts/c35a09fe-4116-4e04-8f68-77d61b112e46/episodes/84dcd044-f260-456c-a202-845777ba90af/engineering-kiosk-187-meeresschutz-mit-code-%E2%80%93-sea-shepherds-tech-einsatz-mit-florian-stadler
 apple_podcasts: https://podcasts.apple.com/us/podcast/187-meeresschutz-mit-code-sea-shepherds-tech-einsatz/id1603082924?i=1000699594518&uo=4
 audio: https://audio1.redcircle.com/episodes/9a22408b-4867-415b-bfda-67fabb145eb3/stream.mp3
 chapter:
