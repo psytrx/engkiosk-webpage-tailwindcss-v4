@@ -30,7 +30,7 @@ chapter:
   title: "Wie Software und Software-Entwickler*innen helfen k\xF6nnen"
 - start: 01:02:50
   title: Schiffs-Infrastruktur und Antennen
-deezer: ''
+deezer: https://www.deezer.com/episode/729719671
 description: "Code mit Impact und Meeresschutz digital: Der Einsatz von Software bei\
   \ Sea Shepherd Deutschland In dieser Episode tauchen wir in die Welt des Meeresschutzes\
   \ ein. Florian Stadler, seit 15 Jahren aktiv und Kampagnenleiter bei Sea Shepherd\
@@ -88,10 +88,9 @@ spotify: https://open.spotify.com/episode/0kIn1utmzE1mxq1TwvYVId
 tags:
 - Code mit Impact
 - Interview
-title: "#187 Meeresschutz mit Code \u2013 Sea Shepherd's Tech-Einsatz mit Florian\
-  \ Stadler"
+title: "#187 Meeresschutz mit Code \u2013 Sea Shepherds Tech-Einsatz mit Florian Stadler"
 transcript_raw: ''
-transcript_slim: ''
+transcript_slim: src/data/transcripts/187-transcript-slim.json
 youtube: https://www.youtube.com/watch?v=yNM4ppKNjT0
 
 ---
