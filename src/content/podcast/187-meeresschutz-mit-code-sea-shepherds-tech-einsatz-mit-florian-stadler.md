@@ -79,7 +79,11 @@ rtlplus: ''
 six_user_needs: []
 speaker:
 - name: Andy Grunwald
+  transcriptLetter: A
 - name: Wolfi Gassler
+  transcriptLetter: C
+- name: Florian Stadler
+  transcriptLetter: B
 spotify: https://open.spotify.com/episode/0kIn1utmzE1mxq1TwvYVId
 tags:
 - Code mit Impact
