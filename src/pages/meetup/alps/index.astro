@@ -18,7 +18,7 @@ const bufferDays = 2 // wait 2 days after meetup before showing next meetup
 const nextMeetup = getNextMeetup(bufferDays);
 const dateString = formatDateWithoutWeekday(nextMeetup.date, 'en-US');
 const timeString = formatTime(nextMeetup.date);
-const dateAndTime = `${dateString} - open doors at ${timeString} (talks start ~15min later)`;
+const dateAndTime = `${dateString} - open doors at ${timeString} (talks start ~30min later)`;
 
 
 let title = 'Meetup Alps - Engineering Kiosk - Innsbruck';
