@@ -1,6 +1,6 @@
 ---
 advertiser: ''
-amazon_music: ''
+amazon_music: https://music.amazon.com/podcasts/c35a09fe-4116-4e04-8f68-77d61b112e46/episodes/a1fb7ef9-c13c-466e-aecc-cff3f4a92328/engineering-kiosk-188-spieleentwicklung-die-k%C3%B6nigsdisziplin-der-informatik-mit-dominic-pacher
 apple_podcasts: https://podcasts.apple.com/us/podcast/188-spieleentwicklung-die-k%C3%B6nigsdisziplin-der-informatik/id1603082924?i=1000700701910&uo=4
 audio: https://audio1.redcircle.com/episodes/a7d5707b-29ed-4f4a-92d4-250b2ca95312/stream.mp3
 chapter:
