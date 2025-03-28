@@ -103,7 +103,9 @@ speaker:
 - name: Andy Grunwald
 - name: Wolfi Gassler
 spotify: https://open.spotify.com/episode/2x5uiwKmCGFl9dkWLPXfGL
-tags: []
+tags:
+- Software Engineering
+- Interview
 title: "#188 Spieleentwicklung: Die K\xF6nigsdisziplin der Informatik mit Dominic\
   \ Pacher"
 transcript_raw: ''
