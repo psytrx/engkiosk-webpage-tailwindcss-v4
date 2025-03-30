@@ -286,8 +286,8 @@ if __name__ == "__main__":
 
     print("Engineering Kiosk Summary and statistics")
     print("=========================")
-    print_podcast_stats(podcast_stats)
-    print_blog_post_stats(blog_stats)
-    print_podcast_episode_stats(podcast_episode_stats)
-    print_overall_speaking_time(overall_speaking_stats)
     print_episode_speaking_time(episode_speaking_stats)
+    print_overall_speaking_time(overall_speaking_stats)
+    print_blog_post_stats(blog_stats)
+    print_podcast_stats(podcast_stats)
+    print_podcast_episode_stats(podcast_episode_stats)
