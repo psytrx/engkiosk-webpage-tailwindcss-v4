@@ -98,7 +98,10 @@ speaker:
 - name: Andy Grunwald
 - name: Wolfi Gassler
 spotify: https://open.spotify.com/episode/6NRYV3eMMzfLXnczHPdQ9K
-tags: []
+tags:
+- Software Engineering
+- Interview
+- Software Qualität
 title: '#189 Fuzzing: Wenn der Zufall dein bester Tester ist mit Prof. Andreas Zeller'
 transcript_raw: ''
 transcript_slim: ''
