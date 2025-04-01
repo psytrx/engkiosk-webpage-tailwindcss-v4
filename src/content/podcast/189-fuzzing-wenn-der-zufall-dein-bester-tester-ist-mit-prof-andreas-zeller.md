@@ -98,9 +98,9 @@ speaker:
 - name: Andy Grunwald
   transcriptLetter: A
 - name: Wolfi Gassler
-  transcriptLetter: B
-- name: Andreas Zeller
   transcriptLetter: C
+- name: Andreas Zeller
+  transcriptLetter: B
 spotify: https://open.spotify.com/episode/6NRYV3eMMzfLXnczHPdQ9K
 tags:
 - Software Engineering
