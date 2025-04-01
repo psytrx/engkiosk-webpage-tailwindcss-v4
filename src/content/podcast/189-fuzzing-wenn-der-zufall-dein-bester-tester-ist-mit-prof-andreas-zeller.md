@@ -96,7 +96,11 @@ rtlplus: ''
 six_user_needs: []
 speaker:
 - name: Andy Grunwald
+  transcriptLetter: A
 - name: Wolfi Gassler
+  transcriptLetter: B
+- name: Andreas Zeller
+  transcriptLetter: C
 spotify: https://open.spotify.com/episode/6NRYV3eMMzfLXnczHPdQ9K
 tags:
 - Software Engineering

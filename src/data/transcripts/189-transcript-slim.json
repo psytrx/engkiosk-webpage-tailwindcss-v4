@@ -1,0 +1,664 @@
+{
+  "language_code": "de",
+  "audio_url": "https://cloud.inlupus.at/s/t43g6ptmrqeyT4c/download/ep_fuzzing.mp3",
+  "punctuate": true,
+  "format_text": true,
+  "dual_channel": false,
+  "multichannel": null,
+  "audio_channels": null,
+  "webhook_url": null,
+  "webhook_auth_header_name": null,
+  "webhook_auth_header_value": null,
+  "audio_start_from": null,
+  "audio_end_at": null,
+  "word_boost": [],
+  "boost_param": null,
+  "filter_profanity": false,
+  "redact_pii": false,
+  "redact_pii_audio": false,
+  "redact_pii_audio_quality": null,
+  "redact_pii_policies": null,
+  "redact_pii_sub": null,
+  "speaker_labels": true,
+  "speakers_expected": 3,
+  "content_safety": false,
+  "content_safety_confidence": null,
+  "iab_categories": false,
+  "custom_spelling": null,
+  "disfluencies": false,
+  "sentiment_analysis": false,
+  "auto_chapters": false,
+  "entity_detection": false,
+  "summarization": false,
+  "summary_model": null,
+  "summary_type": null,
+  "auto_highlights": false,
+  "language_detection": false,
+  "language_confidence_threshold": null,
+  "language_confidence": null,
+  "speech_threshold": null,
+  "speech_model": null,
+  "id": "5de5d9b4-ce21-4d07-8ff0-75692e30ff85",
+  "status": "completed",
+  "error": null,
+  "utterances": [
+    {
+      "text": "In der Softwareentwicklung gibt es so ein leidiges Thema, das nennt sich Testen und manche Softwareentwickler hassen es, manche lieben es. Und ich red natürlich von Testingarten wie unit testing, Integration Testing, end to end testing und was es da nicht noch alles gibt. Also ich glaube, es gibt mehr als zwei Hände voll verschiedener Testarten, vielleicht sogar drei, vier, ich weiß es nicht im Detail. Aber es gibt Leute, die lieben es, die machen vielleicht sogar Test driven development, schreiben erst die Tests und dann später die Logik. Es gibt Leute, die wollen E wie Groß Engineers ratzfatz ein Experiment raushauen, schauen ob es funktioniert und dann einfach weiterziehen. Und die ganze Sache fällt diesen Leuten dann später auf die Füße, falls man mal Logik ändern muss, umschieben muss und so weiter. Weil dann beginnt nämlich diese manuelle Testing Safari, nenne ich es mal. Aber eine Testart, die ist meines Erachtens nach in vielen Firmen oder bei vielen Leuten noch gar nicht so angekommen. Und da geht es nämlich um den Begriff Fuzzing oder Fuzz Testing. Viele Leute kennen diesen Begriff, ich sag mal aus der Security Ecke, um Sicherheitslücken zu finden. Zwischen den Jahren 2016 und 2019 hat Google da ziemlich viel Bass drum gemacht, zumindest im Open Source Bereich. Und zwar hat Google 2016 als Reaktion auf die Heartbleed Schwachstelle ein Tool veröffentlicht namens Open Source Software FAS OSS. Das ist ein kostenloser Dienst, der Fuzz für Open Source Projekte durchführt und dann die Entwickler privat auf diese Fehler hinweist. Und 2019 hat Google dann auch ein Tool entwickelt, das nennt sich Clusterfuz, mit dem Ziel, Sicherheitslücken für Google Chrome aufzudecken. Und meine letzte Information ist, dass durch die Kombination dieser beiden Toole auf der einen Seite Fehler in Google Chrome gefunden wurden und circa Fehler in über 160 Open Source Projekten. Und da frage ich mich natürlich wow, was ist das denn für eine Wunderwaffe und was steckt denn da eigentlich hinter? Und das ist das Thema dieser Episode. Und jetzt können Wolfgang und ich uns ein Buch schnappen und ganz tief einsteigen oder wir können einfach den Autor des wohl Standardwerks, nenne ich es mal, des Buches überfasst fragen, ob er nicht Zeit hätte, in diesem Podcast uns Rede und Antwort zu stehen. Und deswegen begrüße ich Andreas Zeller, Dr. Professor Andreas Zeller, willkommen. Hallo Andreas, ich stell dich ganz kurz vor. Du bist seit Apr. 2001 Professor für Softwaretechnik an der Universität des Saarlandes. Seit 2019 bist du Fakultätsmitglied am CISP, was eine deutsche Forschungseinrichtung des Bundes ist und dort erforschst du Informationssicherheit in Bereichen, so steht es zumindest auf Wikipedia. Deine Arbeit dreht sich größtenteils um die Themen Debugging, Fuzzing, Threat Erkennung und Verteidigung, Programmanalyse, Softwaretests und auch Specification Mining. Als Oneliner habe ich auf deiner Webseite gefunden, meine Studenten und ich entwickeln Tools und Techniken, Die Entwicklern helfen, bessere Software zu erstellen, indem sie den Code und den Entwicklungsprozess automatisch testen, analysieren und debuggen. Und deine Arbeit, dafür wurdest du schon mehrfach ausgezeichnet, unter anderem ein paar Mal als Most Influential Paper Award der internationalen Conference on Software Engineering, aber auch 2018 über den ACM SIG Soft Outstanding Research Award. Und dieser Preis wird an eine oder mehrere Personen verliehen, die bedeutende oder dauerhafte Forschungsbeiträge zur Theorie oder Praxis der Software Technik geleistet haben. Deswegen auch noch mal vom ganzen Herzen Glückwunsch dazu. Und jetzt habe ich gerade eine Buch erwähnt. Wenn man nämlich Fuzzing bei Google eingibt, dann kommt relativ weit oben das Fuzzing Book. Das Fuzzing Book ist ein offenes Buch, released unter der Creative common License, was sich komplett um Fuzzing dreht. Und ja, was soll ich sagen, da stehst du zumindest als Autor drin, soviel ich weiß, auch als Hauptautor bzw. Als Haupttreiber dahinter. Und nachdem ich jetzt so viel über dich gesprochen habe, habe ich was vergessen oder stimmt das alles?",
+      "start": 98200,
+      "end": 357670,
+      "confidence": 0.9136401,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Das stimmt alles. Der Name des Zentrums, in dem ich arbeite, heißt CISPA. CISPA Helmholtz Zentrum für Informationssicherheit.",
+      "start": 358140,
+      "end": 366164,
+      "confidence": 0.9045889,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Da ist dieses Markieren strgv c und strgv wohl etwas. Naja, kann passieren.",
+      "start": 366292,
+      "end": 373492,
+      "confidence": 0.92553306,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Es tut mir leid, Buchstabe verloren. Klassiker, Andi. Aber ich finde es ja super schön, Andreas, dass du bei uns bist im Podcast, weil normal bin ja ich immer der irgendwie von der wissenschaftlichen Seite und dann bin ich meistens womöglich auch noch der älteste. Du bist seit 2001 Professor, da hat mein Studium begonnen. Da habe ich zum ersten Mal mich in so einem Hörsaal gesetzt. Also Hut ab. Da ist glaube ich, die geballte Erfahrung, die wir heute da in unserem Podcast Studio haben. Also vielen Dank fürs Kommen. Meine Frage war ja mal grundsätzlich, man spricht da beim Testing immer so ganz klassisch von Analysen, wenn man das Programm laufen lässt, Test schreibt, unit Test und so weiter. Wenn man hört, was du so machst. Gibt es da auch Themen, dass ihr wirklich statische Analyse macht? Also macht ihr auch die Analyse auf der statischen Seite, wie sich Programme verhalten oder ob sie terminieren, diese ganze Sache? Oder seid ihr eher auf der Laufzeitanalyse angesiedelt?",
+      "start": 373556,
+      "end": 424418,
+      "confidence": 0.94805115,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Wir sind tatsächlich in unserer Forschung vornehmlich auf der Laufzeitanalyse unterwegs. Das liegt daran, dass es in der deutschen Forschungsgeschichte sehr viele Leute gibt, die sich sehr intensiv und auch sehr, sehr gut mit der Analyse von Code und dessen Eigenschaften, auch deren Beweise auskennen. Und meine Nische, wenn man so will, war immer die Laufzeitanalyse von Programmen. Aber wenn man analysieren will, was Programme zur Laufzeit tun will, dann braucht man eben sehr viele Ausführungen. Und über dieses Thema, wo bekomme ich all diese Ausführungen her, bin ich letzten Endes beim Generieren von Testeingaben gelandet. Dann hat man die Kombination, auf der einen Seite generiert man sehr viele Eingaben, auf der anderen Seite analysiert man, was im Programm passiert. Ja, und so bin ich über Umwegen zu einem der Experten vom automatischen Testen geworden.",
+      "start": 424514,
+      "end": 475406,
+      "confidence": 0.9498139,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Wenn ich dich jetzt fragen würde, was Fuzzing ist, bzw. Wenn du es in einfachen Worten erklären würdest, wäre das gerade schon deine einfache Worterklärung gewesen, oder würdest du diese noch etwas umformulieren, wenn du jetzt einem Softwareentwickler mit vier bis fünf Jahren Erfahrung fuzzing erklären müsstest?",
+      "start": 535598,
+      "end": 552830,
+      "confidence": 0.939383,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Das ist sehr einfach. Wenn ich Softwareentwickler bin, dann ist mein erstes Ziel zu zeigen, dass ein Programm das tut, was es soll. Das heißt, ich schreibe meine Unit Tests, ich prüfe, tut das Programm das, was erwartet wird? Wenn es das tut, dann habe ich einen Großteil meiner Arbeit erledigt. Ein Fuzzer geht her und weiß eigentlich gar nichts erstmal über das Programm, sondern schickt einfach völlig zufällige Eingaben dorthin und ist in der Hinsicht in keiner Weise voreingenommen, was das Verhalten des Programms angeht, was eigentlich eine große Stärke ist. Und diese zufälligen Eingaben, das können vollkommen zufällige Kombinationen von Buchstaben, Zeichen, allem möglichen sein. Das sind halt Dinge, wo ich im Prinzip zumindest alle möglichen Eingaben des Programms abdecken kann, da kommen wir später nochmal zu. Und insbesondere kann ich damit viele Sachen auch abdecken, an die der Entwickler möglicherweise gar nicht gedacht hat. Weil das relativ einfach zu bauen ist und weil man das über Stunden und Tage laufen lassen kann, hat man da die Möglichkeit, eine ganze Reihe von Fehlern zu finden, mit Situationen, an die die Entwickler beim Erstellen der Software niemals daran gedacht haben.",
+      "start": 552910,
+      "end": 616100,
+      "confidence": 0.93971324,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Jetzt kenne ich aus der Software diese klassischen Metriken wie Enpass Komplexität oder zyklomatische Komplexität, die Npass Komplexität sind, ist glaube ich, jetzt muss ich ganz tief nochmal auch auf meinen Bachelor zurückgreifen, ich glaube, die Anzahl der möglichen Pfade durch eine Funktion und die zyklomatische Komplexität ist, dass eine Funktion mit einer zyklomatischen Komplexität allein durch die Funktionssignatur mit eins anfängt und dann jede Kontrollstruktur, ich sag mal, ein zusätzlicher Punkt ist, umso höher diese zyklomatische Komplexität dann ist, desto komplizierter ist gegebenenfalls die Methode. Und es gibt auch Leute, oder zumindest in der statischen Analyse, die sagen, okay, eine Funktion sollte keine höhere zyklomatische Komplexität als, weiß ich nicht, fünf oder 10 oder 15 haben, weil da wird die ganz lange ganz kompliziert zu verstehen. Jetzt hast du gesagt, jetzt schmeißen wir da ganz normal, ich sag mal, random generierten Müll vielleicht auch rein, vielleicht auch irgendwas valides, vielleicht ist der Zufall so hoch, dass ich eine String generiere, den ich Base 64 dekodieren kann, ich weiß es nicht. Aber wenn ich jetzt an die ganzen möglichen Pfade durch eine Funktion denke, dann frage ich mich halt schon, okay, wie hoch ist die Wahrscheinlichkeit denn, dass ich mit generiertem Content oder generierten Input Parametern denn wirklich einen Großteil dieser Pfade treffe?",
+      "start": 616250,
+      "end": 687972,
+      "confidence": 0.9163267,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Das ist völlig klar. In jedem Programm gibt es eine praktische, eine unendliche Zahl von Kombinationen, wie es ausgeführt werden kann. Aber da gibt es verschiedene Tricks, die man anwenden kann. Also zum einen, wenn ich allein schon zufällige Buchstaben hintereinander ankette, kann ich damit schon sehr leicht Fehler im Parsen von Eingaben finden, also wenn die Eingabe direkt an der Quelle weiterverarbeitet wird, insbesondere dann, wenn ich dort Zeichen reinstreue, die ungewöhnlich sind, irgendwelche Unico Zeichen, z.B. smileys oder hebräische Zeichen oder ähnliches. Und zum zweiten kann ich auch hergehen und da besonders lange Strings erzeugen. Das ist einer der üblichen Wege, wie man sehr leicht Sicherheitslücken finden kann. Ich habe einfach eine Zeichenkette, die unendlich lang ist und bis dort endlich mal ein Zeilentrenner kommt, gehen dann 2000 oder 5000 Zeichen drum. Und auf diese Art und Weise, allein schon durch solche sehr langen Eingaben, wurden schon eine Vielzahl von Sicherheitslücken in bestehenden Programmen gefunden. Oder man hat eine Eingabe, die erstaunlich kurz ist. Also ich habe zu meiner Zeit auch schon in Open Source programmen Fehler gefunden, die sind dadurch entstanden, indem man einfach einen einzelnen Punkt an ein Programm geschickt hat, danach war die Eingabe zu Ende und dann ist das Programm abgestürzt.",
+      "start": 688036,
+      "end": 757764,
+      "confidence": 0.92727584,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Sind so Fuzzing Tests eigentlich komplett unabhängig von Unit Tests oder verwendet man dann irgendwie den validen Pfad, um dann irgendwie Sachen abzuleiten, um dann weniger Tests durchführen zu müssen oder sowas? Oder sind es komplett getrennte Bereiche und ich schreibe einmal unit tests und dann lasse ich irgendwelche Fuzzingbibliotheken?",
+      "start": 757892,
+      "end": 776586,
+      "confidence": 0.9119242,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Typischerweise sind die komplett voneinander getrennt. Unittests beziehen sich normalerweise auf Funktionen oder einzelne Module, wohingegen Fuzzing auf der Systemebene passiert. Und der Unterschied hier ist, dass auf der Systemebene das Programm im Prinzip mit allen möglichen Eingaben zurechtkommen muss. Das heißt, es muss in der Lage sein, ungültige eing abzuweisen. Wenn ich z.B. sowas habe wie eine Wurzelfunktion und macht jetzt einen Unit Test drauf, schön da kann ich jetzt prüfen, dass die Wurzel von vier zwei und die Wurzel von neun drei ist. Aber wenn ich jetzt hergehe und sage, ich erzeuge jetzt völlig zufällig Zahlen, dann kann es passieren, dass ich auf einmal die Wurzelfunktion mit einer Zahl außerhalb des Wertebereichs aufrufe. Dann berechne ich jetzt die Wurzel von minus eins und nehmen wir mal an, wir haben keine imaginären Zahlen in unserem Programm und der Wertebereich für die entsprechenden Parameter ist eigentlich, dass hier eine positive Zahl erwartet wird oder zumindest eine nicht negative Zahl erwartet wird. Dann kann die Funktion in dem Moment, wo ich ihre Vorbedingungen verletze, kann sie tun, was immer sie will. Deswegen macht es auf der unit Ebene, also auf der Funktionsebene, meistens keinen Sinn, Funktionen mit völlig rein zufälligen Daten auszuführen, weil die Funktion sagt dann tja, du schickst mir zufälligen Kram, dann schicke ich dir zufälligen Kram zurück. Das war es dann soweit.",
+      "start": 776698,
+      "end": 848610,
+      "confidence": 0.9420959,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Aber man könnte es ja auch auf der Integrationstest Ebene spielen, also dass man Integrationstests hat mit validen Pfaden und dann dort wieder Ableitungen macht.",
+      "start": 848690,
+      "end": 857624,
+      "confidence": 0.909468,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "In dem Moment, wenn ich jetzt eine offizielle Vorbedingung habe, wenn also meine Funktion mir das sind die Werte, das ist der Wertebereich, in dem die entsprechenden Argumente sein dürfen, dann kann ich wieder mit zufälligen Werten testen. Das geht. Aber der Haupteinsatzzweck von Fuzzing ist tatsächlich auf der Systemebene, wo das Programm mit allen möglichen Eingaben in irgendeiner Form klarkommen muss und definitiv nicht abstürzen darf oder Daten rausschicken darf, die es nicht darf, also kein unvorhergesehenes Verhalten zeigen darf.",
+      "start": 857802,
+      "end": 885452,
+      "confidence": 0.93027544,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Du hattest auch gesagt, dass du während deiner Arbeit auch schon, ich sag mal, Sicherheitslücken oder Fehler in Programmen gefunden hast. Da frage ich mich, woher stammt Fuzzing eigentlich? Wie sieht die Geschichte aus? Hat da irgendjemand mal fünf Bier zu viel getrunken und sich vertippt in dem Unit Test und hat gedacht, ah, jetzt habe ich irgendwie einen fehlerhaften Array Indize getroffen und oh, was ist, wenn ich das denn mal automatisiere? Also war das so eine zufällige Entdeckung? Da gibt es ja auch Medikamente, die zufällig entdeckt wurden. Also woher kommt die ganze Thematik?",
+      "start": 885516,
+      "end": 919548,
+      "confidence": 0.93378603,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Der Begriff Fuzzing stammt von einem Informatikprofessor namens Bart Miller von der Universität in Wisconsin Madison. Und der Bart Miller hatte Ende der er Jahre eine interessante Beobachtung gemacht. Er war von zu Hause aus über eine Telefonleitung mit seinem Großrechner verbunden. Damals gab es noch kein Internet zu Hause, also wer auch immer remote arbeiten wollte, musste dafür Telefonleitungen benutzen mit Modems, teilweise auch Akustikkoppler. Wer über 60 Jahre alt ist, wird das vielleicht noch kennen. Jedenfalls hat er da die Beobachtung gemacht, dass wenn er dann Daten an seinen Großrechner geschickt hat und draußen ein Gewitter war, da hat das zu elektrischen Störungen in der Telefonleitung geführt. Und diese elektrischen Störungen haben dann seine Daten teilweise durcheinander gebracht. Das an sich ist nichts Neues, das konnte damals genauso passieren wie heute immer noch. Aber was ihnen aufgefallen war, war, dass viele Programme, also Unix Programme der damaligen Zeit, mit solchen zufällig gestörten Eingaben, also mit solchen völlig zufälligen Eingaben, zufällige Bitfolgen, was er dann hinterher Fuzz Inputs nannte, dass sie damit nicht klargekommen sind, dass die abgestürzt sind oder dass die sich aufgehangen haben oder ähnliches. Und da ist er hergegangen und hat also gut, dann untersuche ich das mal systematisch. Er hat dann eine Programmieraufgabe an seine Studenten herausgegeben und hat pass auf, ihr schreibt ein kleines Programm, was zufällige Daten aneinander hängt und prüft mal nach, inwiefern die gängigen Unix Kommandos, ob die damit klarkommen. Und dann kam eine empirische Studie heraus, das war Ende der er an empirical study on the robustness of Unix utilities hieß das, und hatte gezeigt, dass damals ein gutes Drittel aller Unix Befehle, also Befehle zum Anzeigen eines Verzeichnisses, Befehle zum Suchen von Texten und ähnlichem, dass die mit solchen Zufallseingaben allesamt nicht klargekommen sind sind, dass sie also reihenweise abgestürzt sind. Und das Lustige war also heute, wenn man heute hergehen würde, man findet heute eine Angriffsmöglichkeit, die eine solche Größe hat, eine solche Dimension hat, wo ich, was weiß ich, 1/3 aller Webserver der Welt lahmlegen kann, dann wäre das heute natürlich eine Riesensache. Damals allerdings ist das auf ein weitgehendes Unverständnis gestoßen. Der Bad Miller hatte tatsächlich über Jahre hinweg seine Arbeit nicht veröffentlichen können. Und zwar deshalb, weil die Administratoren damals gesagt ja mein Gott, was soll das? Die Leute, die bei mir per Telefon like mit meinem Rechner verbunden sind, die kenne ich alle, die kenne ich alle persönlich. Und warum in Gottes Namen sollte jemand überhaupt solche Zufallseingaben an meine Programme schicken? Die Idee, dass jemand drittes sein könnte, das gab es alles noch gar nicht. Und erst glücklicherweise ist die aber dann doch noch veröffentlicht worden, weil könnte ja mal irgendwann wichtig werden. Und die Fehler sind auch tatsächlich dann behoben worden, insbesondere im Open Source Bereich, der damals gerade im Entstehen war. Und es war auch gut so, weil nämlich als ein paar Jahre später dann tatsächlich das Internet sich sozusagen dem Publikum geöffnet hat, dann auch mit dem Web und allem, da war das natürlich auf einmal eine Riesensache. Auf einmal waren die ganzen Webserver und die Programme, die die aufgerufen haben, waren natürlich dann für Daten, die von unbekannter Seite kamen, waren natürlich da potenziell verwundbar. Und es war gut, dass der Bart Miller und seine Leute vorher schon mit Fuzzing eben die Systeme ausreichend robust gemacht hat.",
+      "start": 919644,
+      "end": 1121390,
+      "confidence": 0.9346293,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Wenn ich dir jetzt so zuhöre, dann habe ich das Gefühl, dass Fuzzing sich nur um kaputte bzw. Negativ behaftete Inputparameter dreht. Und wenn ich jetzt an unit testing denke, dann kommt mir folgendes in den gute unit Tests testen auf der einen Seite natürlich das erfolgreiche Verhalten, auf der anderen Seite das nicht erfolgreiche Verhalten. Was passiert, wenn ich ich habe eine Funktion, die erwartet eine Zahl von eins bis 100. Das bedeutet, ich teste natürlich die Zahl 50 und die Zahl dreiig und die Zahl 60 und so weiter, aber ich teste auch die Zahl 99, 100 und 101, diese Randfälle und aber auch zwei, eins, null und minus eins und vielleicht auch -100 oder ähnlich. Und besonders, wenn ich eine Sprache habe, wo ich den Wertebereich nicht definieren kann, in Ada kann ich das z.B. ich glaube in Go kann ich das, glaube ich nicht, dann ist das ja auch so, ich sag mal, diese Randtests und da ich eine typisierte Sprache habe, schmeiße ich da vielleicht noch den Maximalwert eines Int rein, um irgendwie so ein Overflow zu haben oder ähnliches. Und jetzt frage ich mich gerade, wenn ich so einen Fall habe, wie kann mir Fuzzing dann noch helfen, wenn ich gute unit Tests schreibe mit den Randbereichen und Co.",
+      "start": 1121510,
+      "end": 1196110,
+      "confidence": 0.9143731,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Andi, ich könnte dich jetzt auf der Stelle jetzt in den Arm nehmen und herzen, weil du bringst natürlich jetzt gerade wunderschön das Rü, was ich auch selber in meinen eigenen Vorlesungen predige, aber so wird es in der Praxis unglücklicherweise in der Regel nicht gemacht.",
+      "start": 1196490,
+      "end": 1208478,
+      "confidence": 0.94691956,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Das ist korrekt.",
+      "start": 1208574,
+      "end": 1209410,
+      "confidence": 0.9282567,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Ich habe z.B. sowas wie ich habe ein Feld und da gebe ich meine Postleitzahl ein. Postleitzahl ist ja einfach, also fünf Stellen von null bis neun. Soweit so gut. So, und jetzt bin ich der Programmierer und jetzt mache ich da meinen Test und trage ich das Postleitzahl eins, zwei, drei, vier, fünf ein und es funktioniert und ich bin glücklich. Das ist jetzt der happy Part. Auf jeden dieser happy Path, also diese glücklichen Pfade, wo das Programm das tut, was es soll, kommen aber noch mal so, je nachdem wie du zählst, fünf bis 10 unglückliche Pfade. Also man prüft, dass es ungültige Eingaben korrekt erkennt. Und wie du sagst, bei einer Postleitzahl fünf Stellen, dann teste ich mit drei Stellen, das muss abgelehnt werden. Teste ich mit sechs Stellen, das muss auch abgelehnt werden. Dann teste ich mit einem leeren String, das muss auch abgelehnt werden. Dann muss ich testen, was passiert, wenn ich eine Postleitzahl habe, wo möglicherweise irgendein Buchstabe sich mit reinschlängelt, muss ich auch prüfen. Vielleicht auch so was wie ein Semikolon oder ein Apostroph, dann können schlimme Dinge passieren, das muss ich auch abprüfen. Dann muss ich auch noch prüfen, ob das Ding gegen gängige Angriffe geschützt ist. Das heißt, ich mache eine Postleitzahl mit 5000 Ziffern z.b. das muss ich auch abprüfen. Oder ich mache eine Postleitzahl, in der ganz spezifisch generierte Angriffsstrings drin stehen, sowas wie Semikolon, Quote Drop Table, zip Code, Semikolon, irgend sowas. Und das wäre z.B. ein typisches Beispiel für einen sogenannten SQL Injection Angriff. Und das muss ich auch machen. Und das muss ich nicht nur für ein Feld machen, sondern das muss ich verdammt nochmal für alle Felder in meinem ganzen Formular machen. Und dann ist natürlich mein Testaufwand mit einem Schlag verzehnfacht. Natürlich mache ich das alles, weil ich will ja nicht, dass hinterher irgendjemand über mein Webformular an meine Daten herankommt. Aber die Möglichkeit, dass ich dabei irgendetwas übersehe und dass mir da irgendwas fehlt, die ist natürlich immer da. Und das sind genau die Sachen, die dann hinterher z.B. ein Fuzzer wunderbar findet, weil der weiß ja gar nicht, was an der Postleitzahl ist, der schickt da einfach beliebige Daten rein und wenn er irgendwann rausfindet, dass das auf Ziffern anders reagiert als auf normale Zeichen, dann schickt er eben mehr Ziffern rein. Da schickt er sechs Ziffern rein und 100 Ziffern und was weiß ich alles. Und das kann man damit alles ganz wunderbar finden. Wenn ich ihn lang genug laufen lasse, kriegt er alle möglichen Kombinationen heraus. Sowas wie eine SQL Injection wieder nicht synthetisieren, aber das kann ich auch meinem Fuzzer einfach probier das auch noch mal aus. Und das ist die Stärke von Fuzzern, dass sie sehr unermüdlich, gerade aus dem reinen Zufall heraus, immer wieder ausprobieren und auf diese Art und Weise Fehler finden, was ich als Entwickler, wenn ich all diese Tests von Hand schreiben müsste, was ich so kaum hinbekommen würde.",
+      "start": 1210390,
+      "end": 1362942,
+      "confidence": 0.9186397,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Wenn wir jetzt ein bisschen mehr in die Praxis reingehen oder in die konkrete Implementierung, gibt es da unterschiedliche Herangehensweisen, unterschiedliche Arten von Fassern, oder ist es einfach nur ein random String Generator oder random Generator an sich, oder gibt es da irgendwie unterschiedliche Kategorien oder Herangehensweisen von Fassungen?",
+      "start": 1363086,
+      "end": 1381572,
+      "confidence": 0.9060506,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Die einfachste Variante ist tatsächlich einfach einen zufälligen String zusammenzubauen. Das ist auch die Art und Weise, wie Bud Miller das mit seinen Studenten gemacht hat. Möglicherweise kann man auch noch Parameter angeben, aus welchem Zeichenbereich die entsprechenden Zeichen kommen sollen. Also sollen das jetzt, sagen wir, nur druckbare Zeichen sein oder sollen da auch Kontrollzeichen mit rein, sowas wie ein ASCII null Zeichen z.B. das ist auch eine prima Art und Weise, mit der man wunderschön Fehler in Programmen finden kann und vielleicht noch eine Länge des Ganzen. Und damit kann man loslegen. Eine solche Fuzze muss man sich nicht runterladen, das ist eine Zeile in Python z.B. das ist ziemlich banal und damit kann man schon sehr viel anrichten. Und das wäre auch das erste, mit dem ich immer anfangen würde. Erstmal einfach mit völlig zufälligen Eingaben drauf ballern und laufen lassen und laufen lassen und laufen lassen. Wenn man damit nicht weiterkommt, dann kann man als nächstes Wissen über das System einsetzen. Das heißt also Wissen über die möglichen Eingaben. Und da ist eine gängige Praxis z.b. die, dass ich hergehe und gültige Eingaben nehme und diese gültigen Einnahmen abändere. Also im Fall von meiner Postleitzahl fünf Zeichen, nehme ich eine gültige Postleitzahl, so weit, so gut. Und dann ändere ich die ab, indem ich z.b. einzelne Ziffern austausche, vielleicht durch andere Ziffern, vielleicht durch andere Zeichen, dann ist es schon mal fünf Zeichen lang. Damit komme ich möglicherweise über Netzwerk durch eine erste Prüfung durch und erst hinterher, wenn die Postleitzahl weiterverarbeitet wird, kann ich herausfinden, ob da vielleicht irgendwas schiefgeht. Und ich habe dann einen Katalog von gültigen Eingaben, den ich auf diese Art und Weise dann abändere und nur kleine Mutationen drin mache. Das ist hilfreich, weil damit komme ich möglicherweise tiefer in mein Programm rein. Hat allerdings den Nachteil, dass ich dann bei der Gestaltung der Eingaben schon ein bisschen voreingenommen bin. Ich bin nicht mehr ganz so kreativ dabei, als wenn ich die Eingaben wirklich völlig zufällig erzeuge. Und die nächste Stufe ist dann, dass ich hergehe und tatsächlich Wissen über die Eingabe Sprache mit einfließen lasse. Das heißt, in dem Fall gehe ich her und baue mir eine Grammatik, die sagt, an dieser Stelle, bitte gib fünf Ziffern ein, damit du eine gültige Postleitzahl hast. Damit kann ich sehr systematisch sehr viele verschiedene gültige Eingaben, aber auch durch Manipulation ungültige Eingaben erzeugen. Und das mache ich dann, wenn ich eine komplexe Eingabe habe, wo ich durch reine zufällige Mutationen in der Regel die ganze Eingabe ungültig mache. Also wenn ich ein ganzes Formular habe, dann sage ich dann hier an diesen fünf Stellen, dann nehme ich jetzt eine Grafik oder fertige Strings, die ich da eingebe und an der einen Stelle, die es mich interessiert, da lasse ich meinen Fuzzer drauf los. Und die letzte Stufe ist es dann, dass man dann Feedback aus dem Programm verwendet, dass man also prüft, welche Teile vom Programm wurden tatsächlich ausgeführt, welche Bedingungen wurden dabei erfüllt und welche Bedingungen wurden noch nicht erfüllt. Und das kann man ebenfalls wiederum als Guidance, also als, wie sagt man so schön, als Anleitung benutzen, um damit weitere Mutationen und weitere Änderungen jeweils zu steuern. Das heißt, an einer Stelle kommt eine wenn die Länge der Postleitzahl mehr als fünf Zeichen beträgt, dann muss das und das passieren und das habe ich bisher noch nicht erfüllt. Dann erzeuge ich als nächstes eine Eingabe, bei der eben diese Bedingung erfüllt wird. Das heißt, ich erzeuge eine Eingabe, wo die Postleitzahl sechs oder 100 oder eine Millionzeichen hat.",
+      "start": 1381636,
+      "end": 1575828,
+      "confidence": 0.93474853,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Ist es üblicherweise dann Blackbox Testing oder Whitebox testing, weil du gesagt hast, das Feedback wird verarbeitet und man schaut, wie sich das Programm verhält. Also wie weit schaut man denn in die Box dann an sich hinein, wenn man das Programm ausfüllt?",
+      "start": 1575884,
+      "end": 1588652,
+      "confidence": 0.93245625,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Da gibt es verschiedene Abstufungen von. Also das ist kein reines Whitebox Testing in dem Sinne, dass sich da irgendein Tool jetzt den Programm Quellcode anschaut und dann versucht, durch scharfes Nachdenken oder scharfes Resonieren da jetzt genau die eine Bedingung herauszufinden, mit der ich jetzt an eine bestimmte Stelle komme. Das ist auch etwas, was sehr komplex ist und nicht gut skaliert. Hat man auch starke Einschränkungen, was den Programmaufbau angeht und was auch die Komplexität des Programms angeht? Nein, was man typischerweise benutzt, sind entweder Blackbox Techniken, das heißt, man feuert einfach drauf los und in der Hoffnung, dass man damit nach vielen, vielen Millionen Schrotkugeln wird schon irgendwas hängen bleiben. Oder aber man benutzt sogenanntes Greybox Fuzzing, das heißt, man schaut nicht ganz tief in das Programmverhalten hinein, sondern man nutzt ein paar Signale und das typischerweise Coverage, also Abdeckungssignale. Das bedeutet, man lässt sich daten, man lässt sich zurückgeben, welche Teile des Programms wurden jetzt schon ausgeführt und man behält dann solche Eingaben bei, die schon recht erfolgreich waren im Abdecken des Programms. Und diese Eingaben mutiert man dann immer weiter.",
+      "start": 1588716,
+      "end": 1657770,
+      "confidence": 0.9235418,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Da besteht aber natürlich auch schon immer die Gefahr, dass man eigentlich die Implementierung testet und nicht die Aufgabe selbst. Weil das ist ja immer der Punkt, wenn man wieder an unit testing denkt, weswegen viele Leute okay, du musst den Unittest vorher schreiben und dann erst die Implementierung, weil du, wenn du es andersrum machst, den Hang dazu verspürst, die Implementierung zu testen und jeden möglichen Pfad. Wir hatten gerade über die Enpass Komplexität gesprochen, so nach dem ah, ich muss diese if Abfrage noch treffen und ich muss diese if Abfrage noch treffen.",
+      "start": 1657890,
+      "end": 1689600,
+      "confidence": 0.92907065,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Das ist korrekt. Und beim Fuzzing kann ich deswegen auch spezifikationsbasiert arbeiten. In dem Fall nutze ich dann eine Spezifikation der Eingabesprache, die alle möglichen, möglichen Variationen abdeckt. Wenn ich z.B. eine Grammatik habe für eine Programmiersprache oder für sowas wie für eine komplexe Eingabe wie XML oder JSON oder ähnliches. Und wenn ich dann eine Spezifikation habe dessen, was da alles passieren darf und was alles passieren kann, dann kann ich anhand dieser Spezifikationen kann ich wunderbar Unmengen von außerordentlich ungewöhnlichen Eingaben erzeugen. Das heißt, dazu brauche ich dann nicht die Implementierung und kann immer noch damit wunderbar abprüfen, ob das Programm das richtige tut. Und dann komme ich unter Umständen auf sehr originelle Verhaltensweisen. Man stellt sich heraus, an irgendeiner Stelle wird ein floating point Wert erwartet, z.B. floating points, das sind also Fließkommazahlen. Das sind aber nicht nur Fließkommazahlen wie was weiß ich, oder 3,14 oder sowas, nein, das sind z.B. auch interessante Werte wie Unendlichkeit, Infinity oder not a number nan. Das sind Werte, da hört man nie was von, die braucht man eigentlich erst, die braucht man so selten, jedenfalls braucht man die nicht im normalen Betrieb, aber die werden dann halt als Fehlercodes oder als Extremwerte, wenn die durchgeschleift. Ja, und jetzt habe ich auf einmal, jetzt habe ich auf einmal, sagen wir mal so ein. Nehmen wir an, ich habe jetzt ein Bankprogramm, was Fließkommazahlen verwendet. An alle Banker, die zu wenig weiß, dass sie keine Fließkommazahlen benutzt, das ist auch gut so, aber nehmen wir mal an, da hätte es jetzt einen Praktikanten gegeben, der geht jetzt, betrachtet jetzt eingehende Überweisungen und addiert die alle zusammen und macht daraus eine Zahl draußen. Ja, und jetzt kann ich in so einer Überweisung, kann ich erst mal loslegen, kann da, wenn ich eine Grammatik habe, dann ist erst, was das Ding tut, ist, es schickt irgendwelche negativen Beträge in die Überweisung rein. Das ist sehr unterhaltsam. Dann überweise ich euch jetzt mal minus €100 und freue mich hinterher über das Geld. Das ist aber noch das harmloseste. Das wirklich Schlimme ist, was passiert, wenn ich da, wenn ich das schaffe, da so einen Wert wie Nan reinzuschmuggeln, not a number, dann wird dann ein Betrag von not a number eurem Konto gutgeschrieben und die Summe von einer beliebigen Zahl und not a number ergibt wieder not a number. Damit ist euer Kontostand not a number. Die Bilanz der Bank wird damit auch als Summe über alle Konten, wird damit auch zu not a number. Der Aktienkurs der Bank wird not a number, der DAX wird not a number. Das ist toll, das ist richtig toll. Viraler Wert oder sowas. Wenn ich mal irgendwann, wenn ich irgendwann mal gefragt werde, ein Szenario für irgendeine Horrorserie im Fernsehen zu entwickeln, dann fange ich mit sowas an, ganz kleinem. Und das propagiert sich überall durch und die Lichter gehen aus. Und da sieht man schon, das sind Dinge, die sind von der Spezifikation her vorgesehen. So schön gibt es NAN ist ein gültiger Floating Point wert. Aber welcher Programmierer denkt dann dran, sein Programm damit jetzt zu testen, ob es das möglicherweise findet? Die denkt natürlich nicht dran. Die wollen ihre Arbeit kriegen, die werden dafür bezahlt, etwas abzuliefern, was funktioniert und nicht, was in alle Richtungen abgesichert ist. Und da unterscheidet sich dann die Perspektive des Programmierers von der Perspektive des Sicherheitsforschers, der sich natürlich freut, wenn er irgendwo Möglichkeiten findet, eine Lücke zu finden und diese Lücke dann in diese Lücke reinbohrt und dann schaut, was er damit einrichten kann.",
+      "start": 1689680,
+      "end": 1878046,
+      "confidence": 0.9106313,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Als Devil's Advocate würde ich jetzt sagen, weil du sagtest gerade, okay, floating point zahlen wie not a number und Unendlichkeit, da kommen ziemlich viele Programmierer nicht mit in Berührung. Ich würde sagen, JavaScript Programmierer kommen mit not a number kontinuierlich in Berührung. Aber nun gut, das ist meine Hassliebe zu dieser Sprache.",
+      "start": 1878118,
+      "end": 1894592,
+      "confidence": 0.910143,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Ist ja schon schön, dass du sie Programmierer nennst, Andi.",
+      "start": 1894726,
+      "end": 1897564,
+      "confidence": 0.864659,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Ja, es ist eine Skriptsprache und auch Skriptsprachen werden programmiert. Alles gut. Bevor ich jetzt gleich noch mal zu den Spezifikationen und so weiter komme, habe ich noch mal eine Frage zu dem Feedback und zwar hast du ja gerade gesagt, dass während des Fuzzings auch das Programm analysiert wird, welche Pfade durchlaufen werden. Das erinnert mich so ein bisschen so an Tracing halt. Das ist die eine Seite vom Feedback. Da frage ich mich natürlich, wird dieses Feedback automatisch dann in den Fuzzer mit rein injected und dann die, ich sag mal, die random generierten Strings und Zahlen und Strukturen dann darauf angepasst? Weil dann ist man ja wieder bei der Test, der Implementierung und nicht der eigentlichen Aufgabe. Oder ist das ein manueller Prozess, dass man sich nach einem Fass Run, weiß ich nicht, ein, zwei 3 Stunden, was die richtige Länge ist, klären wir gleich auch noch mal, sich dann ansieht, okay, wie sieht denn meine Laufzeit Coverage eigentlich aus? Und dann modifiziert man die fuzzer Logik. Wie funktioniert das in der Praxis?",
+      "start": 1897692,
+      "end": 1955618,
+      "confidence": 0.91625583,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Also du hast jetzt zwei sehr unterschiedliche Perspektiven drin. Das eine ist die Perspektive des Softwaretesters und der Softwaretester möchte möglichst viel von der Spezifikation als aber auch von der Implementierung natürlich abgedeckt wissen. Als Softwaretester gehe ich her, kann natürlich dann Fuzzer laufen lassen und danach kriege ich eine gewisse Coverage raus, aber das nützt mir nicht viel, weil ich kann den Fuzzer sowieso nicht kontrollieren. Also handelsübliche zufallsgesteuerte Fuzzer, die haben einen Knopf zum starten und dann lasse ich sie laufen. Das ist anders, wenn ich was spezifikationsgesteuertes hab, wie mit einer Grammatik z.b. da kann ich dann, nachdem ich getestet habe, kann ich prü gibt es irgendwelche Eigenschaften in meinem Programm, die nicht genug getestet wurden? Da kann ich z.B. dann die Grammatik anpassen und ich möchte hier bestimmte Kombinationen, keine Ahnung, sowas wie not a number oder infinity oder bestimmte Strukturen, da möchte ich jetzt gerne ein besonderes Augenmerk drauflegen. Da kann ich die Grammatik anpassen und Knopf drücken. Da werden diese Strukturen häufiger erzeugt. Das ist die Perspektive des Testers, der da auch Kontrolle darüber haben will und der Abdeckung hat. Die Perspektive des Sicherheitsforschers oder Sicherheitstes ist eine andere. Der kennt das Programm nicht, mit dem er arbeitet. Der will das auch gar nicht kennen, weil es wäre ja Arbeit, sondern der möchte einfach nur einen Knopf drücken und dann den Fuzzer seine Arbeit machen lassen und nach 24 Stunden mal nachschauen, ob da irgendwas rausgefallen ist. Bei denen ist es anders. Die arbeiten nach einem Prinzip, das sind sogenannte evolutionäre Algorithmen und die funktionieren ganz originell. Die funktionieren so, dass man eine Reihe von Zufallseingaben hast oder auch gegebenen Eingaben hast. Dann werden diese 100 oder 1000 Eingaben an ein Programm geschickt und das Programm liefert mir dann die Coverage zurück, also die Abdeckung zurück. Und dazu muss der Faser gar nichts Neues erfinden, weil das passiert mit handelsüblichen Techniken, mit denen ich beim testen sowieso die Coverage messe. Also da kommt nichts Neues, muss nicht zwingend was Neues mit reinkommen. So und jetzt habe ich von diesen 1000 Eingaben, die ich da habe ich jetzt 500, die decken richtig viel ab und 500 decken so gut wie gar nichts ab, die interessieren mich nicht. Und dann gehe ich her und werfe diese 500 weg, die mich nicht interessieren, behalte die anderen 500 und diese 500, die mutiere ich dann weiter. Das bedeutet, ich wende dann neue weitere Änderungen drauf an und dass die wieder durch meinen durch meinen Testprozess durchlaufen. Und letzten Endes ist es dann ein evolutionärer Algorithmus, bei dem die fittesten, nämlich die mit der höchsten Coverage oder auch die mit der diversesten Coverage, so kann man es auch sehen. Also jede einzelne Eingabe, die irgendwo ihre eigene ökologische Nische dann irgendwo findet im Programm, das ist die Analogie dazu, die entwickle ich immer weiter und immer weiter und werde auf diese Art und Weise von der Coverage wird dann mein Entwicklungsprozess gesteuert, so dass ich immer weitere Eingaben bekomme, wo ich immer bessere Chancen habe, dass die irgendwann immer weitere Stellen in meinem Programm tatsächlich abdecken. Was geht bis zu einer gewissen Komplexität geht das gut, ab einer gewissen Komplexität geht das nicht mehr, weil wenn ich kein Wissen habe über den Aufbau dieser Eingaben, doch nur einzelne Zeichen oder einzelne Bits abändern kann, wo es extrem schwierig wird, damit komplexe Strukturen hinzubekommen, wie bei einer Programmiersprache z.B. aber für sehr viele Standard Datenformate, Bilderformate, Textformate oder ähnlichem, eben auch dem, was Google z.b. mit seinem OSS was getestet hat, da klappt das recht gut. Also da kann man gut damit rechnen, dass man nach 24 Stunden schon die ersten Fehler gefunden hat.",
+      "start": 1955714,
+      "end": 2157146,
+      "confidence": 0.9156119,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Du hast das jetzt gerade so salopp beschrieben. Der Sicherheitstest schmeißt das einfach mal an, wartet 24 Stunden und schaut danach, ob was rausgefallen ist. Und ich möchte mich jetzt mal kurz darauf fokussieren, was denn da rausfällt. Also jetzt nehmen wir mal an, der Sicherheitsforscher findet einen Crash im System, also er findet einen Eingabewert oder der Fazza findet einen Eingabewert, der das Programm zum Abstürzen bringt. Was das hintendran für Security Implikationen hat, da gehen wir jetzt gar nicht drauf ein, sondern wir gehen eigentlich nur darauf ein, okay, wir haben das Programm zum Crashen gebracht und jetzt ich als Programmierer, ich fixe das jetzt? Das ist ja auch eine Art von Feedback. Ich habe jetzt einen Eingabestring, der vorher einen Crash erzeugt hat. Nehme ich dann diesen Eingabestring und pack den zu meinem Fuzzer als das sind mindestens die Werte, die du bei jedem Run durchgehen musst, um eine Regression zu vermeiden. Oder was mache ich mit dem gefundenen String of Death? Keine Ahnung, wie man das nennt.",
+      "start": 2157218,
+      "end": 2210250,
+      "confidence": 0.90715706,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Du solltest den in jedem Fall aufheben, weil nämlich Mutationen auf diesen String of Death, wie du ihn nennst, ebenfalls wieder eine hohe Wahrscheinlichkeit haben, zu weiteren Fehlern zu führen. 12 Jahre her ist einer meiner Studenten hat grammatikbasiertes Fuzzing für JavaScript gebaut, das war der Christian Holler, hat eine Grammatik für JavaScript geschrieben und hat damit fröhlich JavaScript Interpreter getestet, also mit zufällig erzeugten JavaScript Programmen. Das war mäßig erfolgreich, aber dann hat er einen Trick angewandt. Er ist hergegangen und hat sich aus bekannten Fehlerberichten, also von Fehlern, die im JavaScript Interpreter bisher in der Vergangenheit repariert wurden, hat er sich solche Strings of Death genommen. Und diese Strings of Death als solche haben keine Fehler mehr verursacht, das war ja repariert. Aber dann hat er auf diesen Strings of Death, da hat er da Mutationen drauf gemacht, hat weitere JavaScript Programme gebaut, die so ähnlich waren und hat damit reihenweise Fehler gefunden hat. In einem Monat hat er Dollar als Bug Bounties bekommen, das war sehr cool. Und ab dem zweiten Monat hat er ein Angebot von Mozilla angenommen, von nun an für sie als Senior Security Engineer zu arbeiten. Und das macht er heute immer noch und lässt seinen Fasertag gut nachlaufen und hat mindestens 2600 Fehler damit gefunden. Also richtig schwere Fehler in JavaScript Implementierung. Und deswegen solltest du, wenn du einmal so einen String of Death gefunden hast, solltest du dich nicht auf deine Lorbeeren ausruhen solltest, sondern solltest auch der Umgebung dieses Strings of Death weitersuchen. Weil wenn wir eins aus der Untersuchung von Fehlern wissen, dann ist es so, dass in der Umgebung von Fehlern meistens noch mehr Fehler auftauchen.",
+      "start": 2211070,
+      "end": 2313742,
+      "confidence": 0.92798483,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "An alle Hörerinnen und Hörer, dieser Term Spring of Death, den habe ich gerade erfunden. Soviel ich weiß, ist das kein wissenschaftlicher Term, der irgendwo in der Fuzzing Community genutzt wird, deswegen, ihr könnt ihn gerne frei nutzen. Er ist unter ab jetzt mit License veröffentlicht oder Creative Commons.",
+      "start": 2313806,
+      "end": 2330142,
+      "confidence": 0.9179802,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Wir nennen es gewöhnlich Inputs of Input.",
+      "start": 2330206,
+      "end": 2333878,
+      "confidence": 0.92161,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Of Death, da warst du knapp dran.",
+      "start": 2333894,
+      "end": 2335690,
+      "confidence": 0.98882574,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Aber immer wenn ich diese hohe Anzahl an gefundenen Fehlern, du sagst gerade 1600, ich habe in der Intro was von Fehler in Chrome und Fehlern in Open Source Projekten gesprochen. Also das sind ja eine Anzahl von vierstelligen, fünfstelligen Anzahl an Fehlern. Da frage ich mich, wer kann das denn alles fixen? Also ich meine, das sind ja systematische Fehler teilweise von in Programmen. Also puh.",
+      "start": 2336430,
+      "end": 2361206,
+      "confidence": 0.92507416,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Also um es sehr einfach auszudrücken, wenn du ein System hast, was noch niemals durch einen Fuzzer durchgelaufen ist und was ein System hast, bei dem die Eingabesprache hinreichend viel Komplexität hat, also viel Möglichkeiten für Variation hat, wie man das z.B. auch beim Compiler hat, aber das kann schon bei ganz gewöhnlichen XML Daten oder ähnlichem passieren. Ja, dann hast du die entweder du lässt das fassen bleiben und dann kannst du weiter bequem schlafen, bis eines Tages jemand anders auf die Idee kommt, dann ist natürlich die Kacke am Dampfen. Oder du machst es selbst und dann findest du so viele Fehler, dass du erstmal für ein paar Wochen beschäftigt bist, die alle zu reparieren. Aber ich würde die zweite Variante in der Regel vorziehen, weil wenn jemand anders das findet, dann hat man noch viel weniger Zeit und muss in der Zwischenzeit sein System lahmlegen mit entsprechenden Schäden. Das kann ja ganze Firmen auf aus dem Geschäft bringen. Also besser ist es, rechtzeitig gut und ergiebig zu testen, bevor es ein anderer tut.",
+      "start": 2361318,
+      "end": 2423524,
+      "confidence": 0.9141604,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Ja, da sind wir glaube ich beim Thema Production Ready Code mit ganz vielen Guardrails. Du hattest das gerade schon so ein bisschen angesprochen, grammatikalisch basierte Fuzzer. Und wenn ich nämlich das Inhaltsverzeichnis vom Fuzzing Book mal aufmache, dann stolpere ich über so Begriffe wie Search based Fuzzing, Grammar Fuzzing hatten wir gerade gesprochen, wie den JavaScript Beispiel, Symbolic Fuzzing oder auch, hattest du auch schon erwähnt, spezifikationsbasiertes Fuz. Kannst du mal ganz kurz einordnen, was search based Fuzzing ist oder was symbolic based Fuzzing ist? Grammar Fuzzing hatten wir gerade spezifikationsbasiert, das hatten wir gerade auch schon z.B. mit XML, glaube ich zumindest. Bitte korrigiere mich, falls ich falsch liege, aber mit search based Fuzzing und Symbolic Fuzzing kann ich gerade noch nichts anfangen.",
+      "start": 2423572,
+      "end": 2464268,
+      "confidence": 0.92584103,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Also der Rainer spezifikationsbasiert bedeutet, dass ich eine Spezifikation meiner Eingabesprache habe, das ist eine formale Beschreibung und das gängige dafür ist eine Grammatik. Das heißt eine Grammatik, die mir die Syntax meiner Eingabe beschreibt, also wie die Eingaben grundsätzlich aufgebaut sind. Syntax alleine reicht häufig aus, oft nicht und dann muss ich das noch durch entsprechende andere Features aufbohren. Da ist auch unsere Forschungsarbeit drin, da machen wir sehr viel und da können wir später nochmal zu. Die beiden anderen Techniken, suchbasiert und symbolikbasiert, bedeutet, dass ich Feedback aus meinem Programm nutze, um den Fuzzer zu steuern. Search based insbesondere, das sind diese evolutionsbasierten Verfahren, die Suchen nach möglichen Suchen mit Hilfe von Mutationen und weiteren Techniken nach einer besonders ertragreichen Eingabe, wenn man so will. Also eine Eingabe, die mich möglichst nah an mein Ziel bringt, z.B. möglichst viel zu covern oder die mich nah an mein Ziel bringt, dass da eine kritische Funktion ist, die ich gerne haben möchte. Und dann gibt es die Techniken, die symbolisch arbeiten, die nutzen dann den Programmcode, nutzen die Bedingungen im Programmcode und versuchen durch lösen dieser Bedingungen eine Eingabe zu finden, die mich tatsächlich an das Ziel.",
+      "start": 2464364,
+      "end": 2536820,
+      "confidence": 0.9230586,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Das heißt, wenn ich jetzt so ein ganz klassisches Webformular habe und vielleicht zwei, drei Schritte bei so einem Webformular, dann nehme ich so eine search based approach, damit ich den richtigen Weg finde. Weil ich kann mir vorstellen, wenn da jetzt ein Feld nicht korrekt ist, Postleitzahl z.b. dann komme ich ja gar nie weiter in meinen Schritten oder zum nächsten Schritt, oder? Also da bin ich schon blockiert, nur wegen der Postleitzahl. Das heißt, ich muss die Postleitzahl treffen, um überhaupt dann weitere Sachen zu testen oder andere Felder oder wie kann man sich das vorstellen in der Praxis?",
+      "start": 2537420,
+      "end": 2566124,
+      "confidence": 0.9294026,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Korrekt. In der Praxis ist das so, dass wenn ich jetzt Sicherheitsforscher bin, also wenn ich jetzt versuche, eine Sicherheitslücke zu finden, dann steht mir das Programm am anderen Ende häufig nicht zur Verfügung. Das heißt, ich weiß also nicht, was die Coverage ist. Im Webbereich kann ich allerdings hergehen und kann jetzt z.b. das JavaScript verwenden, was bereits schon auf der Webseite die Gültigkeit der Eingabe prüft. Und dann kann ich aus. Das kann ich aus dem JavaScript, was in meinem Webformular läuft, das kann ich dann erstens suchbasiert benutzen, das heißt also, ich kann hergehen und wie kann ich jetzt die Bedingungen, dass diese Postleitzahl fünf Stellen habe, möglichst gut erfüllen? Das geht relativ flott. Ich kann auch die Bedingungen aus dem JavaScript Code extrahieren und versuchen, die symbolisch zu lösen. Und dann sagt mir mein symbolischer Lö versuch es doch mal mit, das sieht gut aus, das ist die nächste Option. Oder aber im Fall von Webformularen habe ich es möglicherweise noch einfacher. Da ist es häufig so, dass bereits im Webformular mit angegeben ist, welches Format die eingegebenen Strings haben müssen. Das nutzt man, um z.B. eben bei einer Postleitzahl, wenn ich auf dem Mobilgerät bin, um dann gleich von vornherein nicht die allgemeine Tastatur einzublenden, sondern dann eben gleich eine Zifferntastatur einzublenden. Das heißt, im Webformular ist bereits verankert, dass an dieser Stelle nur Ziffern eingegeben werden können. Und das sind natürlich auch dann Informationen, die ich dann auch gleich beim Phasen nutzen das heißt, wenn ich weiß, hier erwartet das Formular nur Ziffern, dann schicke ich da nur Ziffern rein. Wobei natürlich ich das jetzt machen kann, solange jetzt nicht diese Postleitzahl Ziel meiner Begierde ist, weil ich auf andere Teile des Webformulars abziele. Wenn ich natürlich auf das Webformular selber abziele, wenn ich also auf die Postleitzahl selber abziele, dann werde ich alles tun, um genau diese Annahmen, die der Programmierer gemacht hat, zu verhindern. Dann kann ich nämlich also gut, der Programmierer hat vielleicht gedacht, dass JavaScript in meiner Webform, das fängt das alles ab, bevor es an Server geht. Dann prüfe ich doch noch mal nach, ob der Server auch noch mal einen Schutz gegen ungültige Eingaben hat. Das ist auch ein gängiger Programmierfehler, dass Webentwickler ja, ich habe das doch schon im JavaScript alles abgeprüft, das ist schön und deswegen muss der Server sich nicht noch mal drum kümmern. Aber das ist unglücklicherweise ein Fehlschluss, weil ich kann einen Server auch bedienen, ohne dass ich da vorher über das Webformular gegangen bin.",
+      "start": 2566252,
+      "end": 2704132,
+      "confidence": 0.93159,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Nachdem ich ja auch lange in der Wissenschaft war, weiß ich ja, dass sich die Praxis und die Wissenschaft auch oft unterscheidet oder zumindest ein Gap dazwischen ist in der praktischen Anwendung. Und in Papers, also wenn du jetzt die ganzen Sachen auch erwähnt hast, search based und so weiter, gibt es da schon wirklich konkrete Produkte, die einfach out of the box jetzt als normalsterblicher unter Anführungszeichen Entwickler, Entwicklerin einsetzen kann? Oder sind es dann schon Sachen, die eher von Expertinnen verwendet werden oder in der Wissenschaft? Also wie weit ist die Praxis schon? Wie weit kann man das wirklich einsetzen, vielleicht auch mit Open Source Tools, die wirklich out of the box mit einem.",
+      "start": 2704196,
+      "end": 2739812,
+      "confidence": 0.9284929,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Klick installieren kann, also im Bereich des herkömmlichen Fuzzings. Das heißt also, ich erzeuge Zufallseingaben oder ich mutiere einen gegebenen Katalog von Eingaben. Da gibt es ausgesprochen ausgereifte und ausgesprochen performante Werkzeuge. Da ist insbesondere das Werkzeug AFL zu nennen oder AFL mit all seinen Ergänzungen. Das ist der Standard, mit dem Sicherheitsforscher rangehen und das ist relativ einfach zu nutzen. Das nimmt ein C Programm. Man muss dieses C Programm gegebenenfalls neu übersetzen, spezifisch für den Fuzzer, aber wenn man es einmal gemacht hat, Knopfdrucken 24 Stunden laufen lassen und kann damit sehr bequem sehr viele Fehler finden. Im Bereich des symbolischen Testens gibt es ein Werkzeug, das nennt sich Klee, das arbeitet ebenfalls auf C Programmen und das kann mit auch mit sehr guter Performance auch sehr komplexe Bedingungen in C Programmen lösen und versuchen dafür spezifische Eingaben zu finden, die dann das Ganze wiederum zum Absturz bringen. Und im Bereich suchbasiertes Testen? Im Bereich suchbasiertes Testen, da gibt es kommerzielle Anwendungen, die aber von Firmen allesamt aufgekauft wurden und jetzt bei diesen Firmen im Einsatz sind. Also wir hatten sehr schöne kommerzielle, wir hatten sehr schöne suchbasierte Anwendungen für Android Tester z.B. die sind komplett von Meta aufgekauft worden und testen jetzt den ganzen Tag nichts weiter als die Facebook App. Aber da gibt es ein Tool, das nennt sich Evo Suite s Uit und das geht her und wendet suchbasierte Verfahren auf Java Programmen an und versucht auch für Python neue und versucht auf diesen Java Programmen dann auch möglichst gut Eingaben zu finden, die möglichst viel von dem Verhalten dieses Programms abdecken. Das heißt also für Java, für Python, für Java, für Python, für C Programme, überall gibt es eigentlich sehr ausgereifte Werkzeuge, also Open Source Werkzeuge, die auch eine große Community haben, wo auch Fehler sehr schnell repariert werden und die sehr stabil und sehr robust sind, mit denen man täglichen Einzelnen arbeiten kann.",
+      "start": 2739836,
+      "end": 2868908,
+      "confidence": 0.93105423,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Stecken da oft dann Universitäten dahinter? Also kommen die aus dem universitären Umfeld meistens?",
+      "start": 2868964,
+      "end": 2874044,
+      "confidence": 0.938665,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Die kommen teilweise aus dem universitären Umfeld. Klee ist eine Entwicklung von einem Kollegen am Imperial College in London. Evo Suite kommt zur Hälfte aus Deutschland und zu einer Hälfte aus Norwegen. Die AFL ist ein Hobbyprojekt eines, ich meine eines Google Entwicklers gewesen, der das mal rausgegeben hat und der arbeitet mittlerweile an ganz anderen Sachen, aber der hat einfach mal gesagt, ich mache mal hier einen super, super starken, auch suchbasierten Fuzzer, der rein zufällig arbeitet. Und da hat sich eine große Community drum gebildet, die das in alle Richtungen weiterentwickelt.",
+      "start": 2874172,
+      "end": 2911308,
+      "confidence": 0.90858483,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Es ist immer meine Aufgabe in diesem Podcast, die wissenschaftliche Community in Schutz zu nehmen, weil die Industrie sagt immer so gerne, alles was von der Wissenschaft kommt, kann man in der Praxis nicht direkt anwenden. Habe ich von Andi auch schon hin und wieder mal gehört. Insofern probiere ich das dann immer hervorzustreichen, wenn das natürlich der Fall ist. Gerade in so einem Bereich ist natürlich verständlich, dass der Wissenschaft auch sehr viel kommt.",
+      "start": 2911404,
+      "end": 2932782,
+      "confidence": 0.94689053,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Bei diesen Sachen muss man pragmatisch sein. Also ich kann ja Entwickler, die jetzt ihre Programme testen wollen, nicht damit überzeugen, indem ich als erstes eine eigene Programmiersprache oder eine eigene Spezifikationssprache oder einen besonders tollen Softwareprodukt vorschreiber. Das ist durchaus ein Problem. Wir haben es in der Wissenschaft häufig mit Ansätzen zu tun, die funktionieren zwar super gut, aber die haben halt sehr hohe Hürden, bis man die erstmal einsetzen kann. Wenn ich nehmt meine Programmiersprache und diese Fehler werden alle nicht mehr passieren. Das ist schön, aber das kann ich mir nicht leisten als Entwickler. Oder wendet doch einfach meinen tollen neuen Softwareprozess an, meine tolle Designmethode und alles wird anders. Wer will dass bezahlen und wer will das denn ausprobieren, ob es wirklich so ist? Und das ist aber beim testen, also beim testgenerieren anders. Da ist die Anforderung die, dass die Werkzeuge, die man macht, dass die Ansätze, die man dort macht, dass die tatsächlich auch auf realen, echten, großen Programmen funktionieren. Und die werden auch daraufhin evaluiert. Und die werden auch in der Wissenschaft nur dann akzeptiert, wenn sie tatsächlich auch auf realen Programmen und auf realen Programmen, die in der Wirtschaft eingesetzt werden, wenn die dort gute Ergebnisse erzeugen. Und da hat uns natürlich in den letzten 20 Jahren auch open source enorm geholfen, weil da haben wir keinen Mangel an hochkomplexen Programmen, die es zu testen gilt. Und das gehört zu den Standardfragen. Du hast ein neues Tool, ja, funktioniert das dann auch auf diesem Riesensystem XY? Da sage ich dann ja, funktioniert auch. Halleluja. Dann kann man dann auf diese Art und Weise sowohl die Akzeptanz in der Wissenschaft als auch die Akzeptanz bei realen Entwicklern finden.",
+      "start": 2932846,
+      "end": 3032040,
+      "confidence": 0.9271747,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Hochkomplexes System. Da kommen wir mal zu den Herausforderungen und den Limits von Fuzzing. Ich war Anfang des Jahres im Februar auf der Fostem Open Source Konferenz in Belgien und da habe ich im Datenbank oder im Testingraum einen Talk gesehen von einem Clickhouse QA Engineer. Clickhouse, für alle Leute, die es nicht wissen, ist eine Kolumnar Database, ziemlich viel im Analytics Base und im Urlaubsspace angewandt. Und er hat einen Talk darüber gehalten, wie man Clickhouse die Datenbank selbst fasst, wie man, wie man da Fuzzing für betreibt. Und das ist eine, ich sage mal ein SQL ähnlicher Dialekt. Man nehme an die SQL und modifiziert ihn ein wenig. Und jetzt höre ich diesen Podcast und geil, das fange ich jetzt auch mal an. Ich finde jetzt mal einen Bug in der Datenbank. Und da kommen wir zu den Herausforderungen, weil so komplexes SQL Query. Ich meine, machen wir uns mal nichts vor. Du hast ein Create table Statement, vielleicht hast du noch ein view Statement und dann hast du vielleicht nicht nur select field from table where condition eins, sondern wirklich mit einem Sliding Window. Und ja, also SQL ist ja bei weitem mehr als select from where, sondern auch mit verschachtelten Subqueries, Rekursion und Co. Frage ich und dann auf der anderen Seite hochkomplexe Systeme. Die Datenbank selbst hat ja dann noch Logiken, um eine Row zu sperren bei Inserts und Co. Also simultane Queries, simultaneous Fuzzing vielleicht sogar, ich weiß es nicht. Schieße ich mit mehreren Fuzzing Prozessen auf die DB? Komme ich da an die Limits oder ist das sagst Ach Andy, was erzählst du denn? Das ist doch täglich Brot.",
+      "start": 3032380,
+      "end": 3133970,
+      "confidence": 0.9262425,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "And was erzählst du denn da? Das ist doch tatsächlich täglich Brot. Tatsächlich ist es so, dass wir hier zwei Komplexitäten haben. Das eine ist die Komplexität. Wie kann ich überhaupt die gesamte Komplexität von einer SQL Query erfassen? Und das ist tatsächlich etwas nicht besonders schwierig ist, das ist im wesentlichen Fleißarbeit. Man braucht eine Grammatik, die alle möglichen Abfragen tatsächlich einzeln aufzählt. Im Falle von SQL braucht man also ein SQL Grammatik. Wo hole ich mir die her? Die hole ich mir aus der entsprechenden ISO Norm und dann habe ich die Grammatik, weil andere Leute benutzen auch Grammatik, um Syntax zu spezifizieren. Das ist jetzt kein Hexenwerk. Bisschen komplizierter wird, wenn ich etwas habe, was vom Standard abweicht, wenn ich also jetzt noch weitere Erweiterungen drin habe oder so, dann muss ich das in meiner Grammatik unterbringen. Ich muss auch hergehen und z.B. dafür sorgen, dass mein grammatikbasierter Faser, dass er z.B. auch dafür sorgt, dass alle Variationen möglichst gut abgedeckt werden. Aber das sind alles Dinge, die sowohl in der Wissenschaft als auch in Tools, das kann ich mir selber auf die Schulter klopfen, weil wir bauen solche Tools, die sind auch im Posing Book drin, die von solchen Tools eigentlich schon sehr gut abgedeckt werden. Also ich kann heute, finde ich, ziemlich problemlos, auch für sehr komplexe Eingabesprachen, kann ich auf Knopfdruck mir innerhalb von wenigen Minuten tausende und abertausender Queries erzeugen. Das ist schön. Und auf diese Art und Weise kriege ich dann raus, ob möglicherweise bei einer bestimmten Query, die das Tool eigentlich verarbeiten sollte, ob dann irgendwelche Crashes oder Hangs oder andere generischen Fehler entstehen. Also diese Seite, die Eingaben zu erzeugen, das ist eigentlich weitgehend gelöst in diesen Tagen. Das größere Problem aber, was du hast, tut die Datenbank denn auch das richtige? Und dann sind wir bei einem Bereich, der über gewöhnliches Fuzzing hinausgeht, weil Sicherheitsforscher sind eigentlich nur an Crashes und Hangs interessiert. Wenn das Programm crasht, dann sehen sie eine Möglichkeit, da möglicherweise Kontrolle über das Programm zu bekommen. Wenn das Programm sich aufhängt, dann haben sie wenigstens schon mal einen sogenannten Denial of Service Angriff, also können damit irgendwelche Infrastruktur lahmlegen. Aber ob das Programm das Richtige tut, das interessiert ja eigentlich nicht so wahnsinnig. Ist auch schwierig, weil um zu schreiben, um einem Fuzzer zu sagen, ob das Programm das richtige tut oder nicht, da muss ich mich erstmal hinsetzen und muss jetzt ja, dann brauche ich jetzt ein sogenanntes Orakel, was mir für eine bestimmte Query sagt, was soll denn dabei rauskommen? Und dieses Orakelproblem ist eines der ganz großen Probleme im automatischen Testen beim Unittest. Dann denke ich mir meine Query selber aus und dann weiß ich, was rauskommen soll. Das schreibe ich dann hin. Aber wenn ich einen Generator habe, der jetzt tausende von Queries erzeugt, dann muss ich jetzt wie kann ich jetzt bestimmen, dass da das Richtige rauskommt? Und jetzt gibt es aber glücklicherweise auch wieder verschiedene Möglichkeiten, dieses Problem zu lösen. Option eins ist, ich nehme eine zweite Datenbank, die die gleiche Eingabesprache hat und dann sollten die beiden besser dasselbe liefern. Also ob ich jetzt sagen wir MySQL oder Oracle oder sowas nehme und beiden die gleiche SQL Query geben mit den gleichen Daten, dann soll eigentlich das gleiche rauskommen, weil es ja ein Standard. Option Nr. Eins, nächste Option, ich prüfe auf Regression. Ich prüfe, ob meine Datenbank heute immer noch das gleiche tut, wie sie vor einer Woche, einem Monat, einem Jahr getan hat. Und wenn sie jetzt was anderes tut auf einmal, tja, dann ist das möglicherweise eine Optimierung meinerseits oder möglicherweise auch ein korrigierter Fehler. Aber häufig ist es so, das ist irgendwas, was vielleicht so nicht sein soll. Die dritte Option, und das ist eine sehr originelle, die lässt sich insbesondere gut bei Datenbanken anwenden, das ist das sogenannte metamorphische Testen. Das hört sich cool an, metamorphisch. Metamorphisch bedeutet, morph von Gestalt, bedeutet, dass ich zwei Eingaben an eine Datenbank schicke, die im Prinzip die unterschiedliche Gestalt haben, aber im Prinzip dasselbe tun sollten. Also nach dem Schick der Datenbank bitte berechne mit zwei, fünf oder fünf zweite Datenbanken können auch rechnen, aber ich kann auch z.B. zwei verschiedene Daten, die in der Datenbank drinstecken, in unterschiedlicher Reihenfolge in meine Anfrage reinstecken. Aber da muss trotzdem hinterher muss das gleiche Ergebnis rauskommen und ich kann tatsächlich mit Hilfe auch von entsprechenden Grammatiken kann ich hergehen und ich mache erst mal eine Anfrage und jetzt kann ich dort Änderungen machen, was z.b. die Reihenfolge meiner Queries angeht oder die Reihenfolge meiner Daten angeht, die eigentlich keine Auswirkungen haben sollten, genauso wie zwei fünf und fünf zwei sollte eigentlich dasselbe rauskommen. Und dann prüfe ich nach, ob tatsächlich das gleiche dabei herauskommt. Und ein Kollege von mir, der Name ist Manuel Rigger, der das gemacht und zwar in sehr großem Stil und hat das auf MySQL angewandt. Und obwohl MySQL von sich behauptet, eine der bestgetesteten SQL Datenbanken der Welt zu sein, die also einen irrsinnigen Aufwand betreiben, dort Fehler zu suchen, Fehler zu finden, er hat in dieser MySQL Datenbank Dutzende und aber Dutzende von interessanten Fehlern gefunden und die waren auch wahnsinnig glücklich. Und bei denen ist das mittlerweile Standard. Also die setzen jetzt sein Werkzeug ein, den ganzen Tag, auch um dort wiederum weitere Fehler darin zu finden. Das heißt also, auch wenn ich eine sehr komplexe Eingabe habe, eine sehr komplexe Eingabesprache habe, habe ich immer noch die Möglichkeit über solche Verfahren, also entweder vergleichen mit früher oder vergleichen von zwei Eingaben, die dasselbe bewirken sollen, habe ich da immer noch die Möglichkeit, sehr schön Fehler zu finden. Und das ist durchaus eine ordentliche Leistung.",
+      "start": 3135430,
+      "end": 3465622,
+      "confidence": 0.92215323,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Also wenn es Oracle damals schon gewusst hätte, dass sie sich Oracle nennen, um dann vielleicht ein Orakel für eine andere Datenbank zu sein. Aber jetzt nochmal das umgelegt auf klassische Software, also so Orakel, das man fragen kann, verwende ich dann so ein Orakel, um auch meine tieferen Schichten zu testen in meiner Software? Weil klassischerweise würde ich mal sagen, im Idealfall zumindest ist ja mein Security Netz, was irgendwie die Eingaben testet und so weiter, ganz am Anfang, im Idealfall fängt das ja schon alle Eingaben auf und umso tiefer ich in meine Schichten nach unten gehe, in meine Business Logik, umso mehr sinnvolle Daten muss ich vielleicht senden. Und da brauche ich dann wahrscheinlich wieder das Orakel, um zu prüfen, ob das irgendwie richtig ist. Habe ich das so richtig verstanden? Kann man das bei der klassischen Software dann auch einsetzen?",
+      "start": 3465686,
+      "end": 3512086,
+      "confidence": 0.92486435,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Also in dem Moment, wo ich eine sehr starke Spezifikationsmöglichkeit habe, die auch über Grammatiken hinausgeht, dann kann ich damit sehr tief in existierende Systeme eindringen. Also ein typisches Beispiel sind z.b. so XML Daten, sowas wie elektronische Rechnungen z.b. die bestehen nicht einfach nur aus XML, sondern die bestehen außerdem noch aus einer Vielzahl von Konsistenzprüfungen. Da wird z.B. geprüft, ob die Summe, die in der Rechnung angegeben ist, auch der Summe der einzelnen Positionen entspricht und sowas. Und das wird alles bereits auf der XML Schicht abgeprüft. Also von daher gibt es eine ganze Reihe von Regeln, die allesamt erfüllt sein müssen. Und das ist für einen herkömmlichen Fuzzer sehr schwer zu erfüllen. Also deswegen sind solche Systeme, die solche komplexen Daten mit vielen Konsistenzprüfungen enthalten, sind auch eigentlich ganz gut gegen herkömmliches Fuzzing geschützt. Es sei denn, so wie wir das machen, man baut Systeme, die in der Lage sind, diese ganzen Bedingungen zu erfüllen und dann kommt man tatsächlich auch in die Business Logik mit rein. Und dann ist dann ist natürlich die Frage in der Tat, wie kann ich jetzt abprüfen, ob dort immer das richtige passiert? Wie gesagt, wenn es abstürzt, wenn es hängt, dann weiß ich, das war so nicht vorgesehen, das ist ganz offensichtlich. Aber woher weiß ich, dass meine Rechnung an dieser Stelle auch korrekt verarbeitet wurde, dass die auch am anderen Ende korrekt geprüft wurde? Und das hängt dann zum Teil wiederum an den Programmierern, dass die interne Konsistenzprüfungen machen, dass sie also intern noch mal prüfen, nachdem die Daten alle angekommen sind, werden die noch mal extra validiert, wird nochmal extra geprüft, ob jetzt bestimmte Konsistenzbedingungen gegeben sind. Sich also nicht nur auf die äußerste Schicht verlassen, sondern tatsächlich bei jeder kritischen Funktion nachprü sind die Daten genauso, wie ich sie haben will? Ist das eine Kontonummer, die tatsächlich nur aus Ziffern besteht? Ist das ein Betrag, der tatsächlich positiv ist? Ist das ein Betrag, der nicht über, keine Ahnung, 100 Millionen geht? Weil über 100 Millionen muss es sowieso erstmal abgezeichnet werden vom Vorstand, was auch immer. Und je mehr interne Prüfungen man in seinem Programm einsetzt, um defensiv zu arbeiten, einfach, dass intern nichts passieren kann, umso größer ist die Wahrscheinlichkeit, dass ich aggressive oder inkonsistente Daten finde, bevor sie tatsächlich tief in mein Programm weitergehen. Man muss sich also auf die alte Kunst der Assertions und Zusicherungen hier verlassen.",
+      "start": 3512198,
+      "end": 3654912,
+      "confidence": 0.9207191,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Du hast schon kurz erwähnt, dass ihr auch Software baut. Wenn ich es richtig verstanden habe, ist es auch in dem Bereich, wenn es um Datenmodellierung geht, die richtigen Daten als Input zu modellieren, oder was macht ihr genau?",
+      "start": 3654976,
+      "end": 3666416,
+      "confidence": 0.94522357,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Wir arbeiten zurzeit an zwei Projekten. Das eine Projekt, bei dem geht es um suchbasiertes Erzeugen von komplexen Eingabedaten. Das Projekt nennt sich Fandango. Das geht nächste Woche, also ab Anfang April geht es in die Public Beta über. Das ist eine Kombination aus Grammatik und Constraints. Ich habe Bedingungen, die meine Eingaben erfüllen müssen. Und das Fandango System setzt sich automatisch hin, erzeugt syntaktisch korrekte Eingaben und sorgt dann anschließend dafür, mit Hilfe eines suchbasierten evolutionären Algorithmus, dass die semantischen, so nennen wir die Constraints, also Bedingungen, die als einfache Python Ausdrücke gegeben sind, dass die ebenfalls noch erfüllt werden. Und damit bin ich in der Lage, auch sehr, sehr komplexe Eingabeformate zu beschreiben und tatsächlich auch zu erzeugen. Also einer meiner Studenten z.b. arbeitet daran, mit Hilfe von Fandango SSL Zertifikate zu erzeugen, ein anderer nutzt das, um damit DNS queries zu machen. Das sind einfach also wirklich sehr komplexe Interaktionen mit sehr komplexen Datenformaten, die wir damit erzeugen können. Und da sind wir, soweit ich weiß, zurzeit die einzigen auf der Welt, die das können. Wie gesagt, das geht jetzt bald raus. Und das zweite, was wir haben, das geht jetzt eher in den Business Bereich rein. Wir haben eine Firma gegründet, die nennt sich Input Lab und die konzentriert sich darauf, für Kunden komplexe, strukturierte Datenformate, insbesondere XML, aber auch JSON und ähnliche zu erzeugen. Und zu denen kannst du hergehen und hallo liebe Firma, ich hätte gerne, ich arbeite mit elektronischen Rechnungen, ich hätte gerne 1000 elektronische Rechnungen in allen Formen und Farben, um mein System damit testen zu können, gerne auch mit Extremwerten. Und dann setzen sie sich hin, setzen ihre Werkzeuge in Gang und liefern dir das dann in Form einer praktischen kleinen Zip Datei, mit der du testen kannst und mit der du dann prüfen kannst, ob dein System das Richtige tut.",
+      "start": 3666528,
+      "end": 3784108,
+      "confidence": 0.9232122,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Jetzt hast du ja schon beschrieben, Grammatik und evolutionäre Algorithmen. Man könnte es ja schon fast als KI sehen, oder je nachdem, wie man das definiert. Ich habe auch gerade gesehen, du hast bei einem Paper mitgewirkt kürzlich, wo auch AI drin vorkommt, zumindest will AI Replace Software Engineers? Hold your breath heißt der Titel. Jetzt natürlich meine Frage, diese ganzen Algorithmen, die man da üblicherweise verwenden, ändert sich da jetzt gerade was in Richtung LLMs, dass man da intelligentere Inputstrings generieren kann? Ist das überhaupt hilfreich oder ist es sowieso so random, dass es da um andere Dinge geht? Oder hilft die ganze LLM Welt jetzt auch dem Fuzzing?",
+      "start": 3784284,
+      "end": 3821634,
+      "confidence": 0.9208295,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Die LLM Welt hilft dem Fuzzing sehr wohl, insbesondere dann, wenn es darum geht, überhaupt erstmal brauchbare Eingaben zu bekommen. Wenn ich hergehe und ich brauche dreiig Postleitzahlen, kann ich das ganz bequem an LLM fragen. Ich kann auch genauso gut fragen nach 20 Vornamen oder nach 50 Adressen oder sonstigen Dingen. Also die einfachen Sachen, das was irgendwo verfügbar ist, das kriege ich ganz bequem hin. Ich kann auch kannst du mir ein XML Format für eine SEPA Überweisung mal ausdrucken oder sowas. Und wenn es irgendwo in der weiten Welt irgendwo eine Norm gibt, wo ein Beispiel schon drin ist, dann habe ich damit gute Chancen, das zu. Kann ich aber im Prinzip genauso gut auch handelsübliche Websuche machen oder? Das ist jetzt nicht der große Fortschritt, aber immerhin, es hilft erstmal überhaupt, überhaupt erstmal überhaupt an Grunddaten, an gültige Daten heranzukommen. Der Haken beim Einsatz von maschinellem Lernen oder bei LLMs insbesondere ist, das ist prima, um den Happy Path abzudecken, den hatten wir vorhin, also die gültigen Eingabe, die zu bekommen, da ist das ganz prima, aber ich will ja spezifisch mein Programm auf Dinge testen, die es so noch nicht gesehen hat. Das heißt also, ich brauche eigentlich Testdaten, die vom Happy Path abweichen und die ich so bisher noch nie, auch nicht in der Produktion, noch niemals irgendwo gesehen habe. Und das ist etwas, wo maschinelles Lernen dann an seiner selbstdefinierten Grenzen stoßt, weil Maschinelles Lernen ist richtig gut darin, Sachen zu reproduzieren und zu adaptieren, die es bereits anderswo gesehen hat. Aber hier brauche ich regelmäßig Sachen, die ich so und die so noch nicht gesehen habe, weil na gut, ob ich jetzt mit Vornamen wie Andreas oder Peter oder Kevin oder was auch immer teste, das wird immer das gleiche tun. Interessant wird es, wenn ich an dieser Stelle auf einmal irgendeinen Namen habe, wo auf einmal ein Smiley drin steht oder irgendwelche Unicode Zeichen, die den Namen von rechts nach links anzeigen, zeigen lassen oder ähnliches und die finde ich eben nicht irgendwo im Internet, weil wer heißt schon so? Und das eine grundsätzliche Beschränkung dessen drin, was maschinelles Lernen mir weiterhelfen kann. Ein zweiter Punkt maschinelles Lernen ist insbesondere auch beim Lernen und beim Adaptieren von Programmcodes sehr gut. Das sehen wir alle, wenn wir heute programmieren, dann können wir einfach immer mal schnell bei ChatGPT oder bei Copilot nachfragen, hier produzieren wir mal 20 Zeilen, die das und das erledigen. Das klappt auch sehr gut, aber dann auch wiederum nur dann, wenn ich etwas, wenn ich eine Aufgabe habe, die anderswo bereits schon mal in dieser oder sehr ähnlicher Form schon mal gelöst wurde. Insofern kann man sich fragen, ob es überhaupt eine gute Idee ist, den Code immer und immer wieder zu duplizieren, statt da versuchen eine Abstraktion zu finden und eine einheitliche Bibliothek. Wenn irgendwas tausendmal gemacht werden muss, dann braucht man irgendwann eine allgemeinere Lösung, aber das ist ein Nebenproblem. Wenn ich jetzt aber hergehe und will jetzt ein bestehendes System abändern, ich will ein bestehendes System erweitern, hier habe ich 1 Million Programmzeilen und irgendwo da drin muss die richtige Funktion sein, die das Richtige tut. Da können mir LLMs unglücklicherweise kaum weiterhelfen, weil ich schaffe es nicht, diese. Weil ich kann diese 1 Million Zeilen nicht in ein LLM System reinfliegen. Und selbst wenn ich es könnte, könnte auch ein LLM System nicht schneller durch diesen Code durchgehen, als es die schnellsten Algorithmen dieser Welt vermögen. Das heißt, LLMs sind gut im Erzeugen und Adaptieren von bestehenden Lösungen und Bereiche wie Code neu erstellen, Text neu erstellen, fantastisch, Bilder neu erstellen, super. Aber im Verstehen von bestehenden Dingen und wie das alles zusammenspielt, da habe ich erhebliche Zweifel dran. Und da andererseits wiederum ist eine große Chance fürs Fuzzing oder generell für automatische Testgenerierung, weil was man ja machen könnte mit maschinellem Lernen, man kann natürlich ein System aus Ausführungen, aus Programmausführungen lernen lassen. Eine sehr spannende Arbeit, die wir letztes Jahr gemacht haben. Wir haben ein maschinelles System auf Ein und Ausgaben von bestehenden Programmen trainiert. Nach dem wenn diese Eingabe reinkommt, dann muss diese Ausgabe rauskommen. Und mithilfe von einem grammatikbasierten Fuzzer haben wir sehr, sehr viele Eingaben produziert und haben deswegen sehr viele Eingabeausgabepaare bekommen. Und das haben wir wiederum in den maschinellen Lerner reingesteckt und stellt sich heraus, dass für einfache Aufgaben wie HTML nach Markdown oder sowas, da reicht ein ganz handelsüblicher kleiner Laptop Prozessor aus, haben wir ein Modell daraus gelernt und dieses Modell konnte nahezu perfekt dann ebenfalls die Aufgaben vom Originalprogramm übernehmen, konnte also ebenfalls Markdown nach HTML übersetzen und konnte insbesondere aber auch das ganze zurückführen, konnte auch HTML nach Markdown zurück übersetzen, also in beide Richtungen arbeiten, was das Originalprogramm, aus dem wir gelernt haben, nicht konnte. Und das geht tatsächlich mit kleinen Modellen, also Small language models würde man vielleicht sagen. Dazu ging das schon erstaunlich gut. Und da sehe ich eine sehr große Chance drin, wie maschinelles Lernen nicht nur beim Erzeugen von Code, sondern auch beim Verstehen von Code, was es macht, eine große Rolle spielen kann. Und da kommt wieder Fuzzing zum Einsatz, um eben möglichst viele verschiedene Eingaben erzeugen zu können, um aus diesem Verhalten des Programms immer und immer wieder lernen zu können.",
+      "start": 3821762,
+      "end": 4139620,
+      "confidence": 0.92182976,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Das klingt so, als wenn ich mich auf den Bereich Fuzzing spezialisiere, dass ich nicht von der AI ersetzt werde. Das klingt erstmal positiv.",
+      "start": 4139740,
+      "end": 4147792,
+      "confidence": 0.93880165,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Ja, man muss zu sehr ums Eck denken. Ich glaube, LLMs machen halt den Standard. Und der Standardweg ist ja genau, was man eigentlich nicht haben will, wenn man es zusammenfasst.",
+      "start": 4147886,
+      "end": 4156316,
+      "confidence": 0.92352384,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Aber ich möchte euch auch noch mal gratulieren, die Firma Input Labs zu nennen. Wahnsinnsname, finde ich ganz stark. Finde ich ganz stark. Jetzt sprechen wir natürlich komplett über die Möglichkeiten von Fuzzing und was man alles machen kann und wie tief man gehen kann. Jetzt bin ich aber doch der Max Mustermann, der in einer klassischen Agentur arbeitet oder in einer Softwarefirma. Und ich möchte, wir haben jetzt noch kein Fuzzing, ich möchte jetzt einfach mal starten. Und jetzt kann ich natürlich hingehen auf GitHub, kann JavaScript Fuzzer eingeben und dann werde ich mit hoher Wahrscheinlichkeit eine Library finden oder für Go oder für Java und so weiter. Das ist jetzt nicht die Herausforderung, sondern die Herausforderung ist, wie integriere ich denn Fuzzing in meine ganzen Prozesse? Wir haben z.B. continuous Integration, da werden meine Unit Tests innerhalb von Sekunden ausgeführt und da kriege ich schnelles Feedback und allem drum und dran. Und jetzt haben wir gerade schon darüber gesprochen, dass Security Researcher Fuzzing einfach mal für den ganzen Tag laufen lassen können. Und timing wise beißt sich das ja.",
+      "start": 4156428,
+      "end": 4215052,
+      "confidence": 0.92864984,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Natürlich so ein bisschen.",
+      "start": 4215076,
+      "end": 4215884,
+      "confidence": 0.9711475,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Also wie integriere ich denn als Max Mustermann, der jetzt für die Softwarefirma ABC Labs arbeitet, fuzzing in meine Software, in mein Software Development Lifecycle?",
+      "start": 4215932,
+      "end": 4227676,
+      "confidence": 0.9001916,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Ich würde da gar nicht groß über Integration nachdenken. Ich würde einen handelsüblichen Fuzzer nehmen, sowas wie AFL, um loszulegen und würde diesen AFL würde ich rund um die Uhr auf meinem System laufen lassen und zwar immer auf der neuesten Version, so wie sie gerade kommt. Und der soll rund um die Uhr einfach da rödeln und rödeln und rödeln und rödeln. Und jedes Mal, wenn mein Programm abschließend soll irgendwo eine rote Lampe angehen und er möge bitte den String of Death, möge er bitte irgendwo ablegen und dann aus diesem kann ich später mir diesen String of Death anschauen, kann feststellen, aha, hier ist was schiefgegangen, das repariere ich jetzt mal. Und dann würde ich den Fuzzer neu starten und prüfen, ob er weiter möglicherweise auch in der Umgebung diese String of Death noch was findet. Aber ich würde einfach rund um die Uhr irgendwo einen PC hinstellen, der soll den ganzen Tag arbeiten. Das ist nicht so teuer. Die Kosten sind lächerlich im Vergleich zu den Kosten, lächerlich im Vergleich zu dem eines Entwicklers, vielleicht auch zwei PCs oder mehrere CPUs gleichzeitig, je nachdem, wie komplex mein Programm ist. Oder kann man auch für ein Subsystem machen, einfach laufen lassen und schauen, was dabei rauskommt. Typischerweise, wenn es ein System ist, was vorher noch niemals gefasst wurde, werde ich damit sehr schnell sehr viele Fehler finden. Insbesondere, wenn ich dort handgeschriebene Eingabepauser drin habe und die noch nicht irgendwo, was weiß ich, weil sie nicht open source sind oder sowas, die noch nicht irgendwo von irgendjemandem auf Herz und Nieren geprüft wurden, dann geht sehr schnell, dann werde ich sehr schnell sehr viele Sachen finden. Und wenn meine Eingabedaten komplexer sind, dann würde ich mit einer Reihe von Beispieldaten anfangen, würde das als ursprünglichem Seed, also als Anfangspopulation, an einen Fuzzer gehen und ihm hier, nimm das mal und mutiere das so weit, wie du kannst, einfach immer weiter und einmal am Tag die neueste Version runter, einmal am Tag die neue Version einspielen, Fuzzing neu starten und einfach im Hintergrund laufen lassen und warten, ob da irgendwas rauskommt.",
+      "start": 4227788,
+      "end": 4349422,
+      "confidence": 0.91016674,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Das bedeutet aber auch, wenn ich jetzt mal die Empfehlung nehme, dass ich eigentlich mit dem Fuzzing nie fertig bin, oder ich weiß nicht, wann ich genug gefasst habe, oder?",
+      "start": 4349486,
+      "end": 4358942,
+      "confidence": 0.9299257,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Nein, das kann man leider nie wissen. Es kann immer sein, dass es irgendeine besondere Eingabe gibt, die irgendein besonderes Verhalten im Programm triggert. Und das kann einem sowohl passieren, wenn man spezifikationsbasiert versucht, alle Eingaben aufzuzählen, als wenn man versucht, an der Implementierung aller möglichen Eingaben aufzuzählen. Selbst wenn ich eine Eingabe habe, die alle Pfade in meinem Programm durchprobiert, was praktisch meinem Programm mit Schleifen schon unmöglich ist, weil ich habe immer eine unendliche Zahl von möglichen Durchläufen von Schleifen, von Kombinationen jetzt ganz abgesehen. Selbst wenn ich das hätte und habe jetzt tatsächlich jedes Stück meines Programms einmal ausgeführt, dann habe ich es immer noch nicht mit allen möglichen Daten ausprobiert. Und wenn ich es nicht mit allen, selbst wenn ich alle möglichen Daten, alle möglichen Funktionsargumente reingesteckt hätte, dann habe ich immer noch nicht alle möglichen Kombinationen ausprobiert und man läuft dann eben wahnsinnig schnell in eine kombinatorische Explosion hinein. Das ist das Grundübel beim Testen, wenn man so will. Ich kann immer nur eine Stichprobe machen des Verhaltens, in der Hoffnung, möglichst gut Stichproben zu machen. Wir haben ja vorhin darüber gesprochen, ich teste mit Extremwerten, ich teste was in der Mitte, ich versuche möglichst viele Verzweigungen abzudecken, natürlich ein Code, der überhaupt niemals beim Testen ausgeführt wird, dann kann hinterher in der Produktion alles mögliche passieren. Das will ich natürlich vermeiden, aber ich habe immer das Risiko, dass hinterher trotzdem noch irgendeine ungünstige Kombination von Bedingungen eintritt, an die ich vorher nicht gedacht habe. Das ist dann eben Pech gehabt an der Stelle. Das ist nicht anders als wie in anderen Bereichen auch. Wir wissen auch, ab und zu stürzen immer noch Flugzeuge ab, obwohl wir uns alle Mühe geben. Und meistens ist das eine Verkettung, eine sehr interessante Verkettung von sehr unglücklichen Umständen, an die blöderweise in dieser Kette vorher niemand dran gedacht hat. Das kann dann passieren.",
+      "start": 4359126,
+      "end": 4476538,
+      "confidence": 0.9360241,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Das klingt total frustrierend, aber es ist auch leider so. Ich denke oft, ich habe den perfekten Code geschrieben und dann schreibe ich mal einen Unit Test und dann finde ich auch einen Fehler und dann bin ich auch sehr frustriert. Aber nun gut. Lieber Andreas Bier, wir kommen dem Ende entgegen. Also ich bin mir 100 % sicher, wir können über Fuzzing noch mehrere Tage reden. Was möchtest du den Hörerinnen und Hörern denn noch mitgeben zum Thema Fuzzing?",
+      "start": 4476634,
+      "end": 4498858,
+      "confidence": 0.9399019,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Das Wichtigste aus meiner Sicht ist, wenn du Entwickler bist, denk immer dran, dass es Leute geben kann, die dein Programm nicht in der vorgesehenen Art und Weise benutzen und versuch dich in diese Leute hereinzuversetzen, was die alles machen könnten. Und wenn du eine Idee hast, was die alles machen könnten, dann prüfe nach, ob dein Programm dagegen gesichert ist. Und wenn es das nicht ist, dann sich. Das ist das Wichtigste. Mache viele Tests, prüfe nicht nur den Happy Path, sondern prüfe all die Möglichkeiten, was alles schiefgehen kann. Und dann kannst du deine Software sehr viel robuster und resilienter machen.",
+      "start": 4498954,
+      "end": 4531790,
+      "confidence": 0.9471104,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Die gute alte Regel, never trust user input oder never trust generell irgendwelchem input, glaube ich.",
+      "start": 4531950,
+      "end": 4537470,
+      "confidence": 0.88131815,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Never trust users.",
+      "start": 4537510,
+      "end": 4539010,
+      "confidence": 0.97771335,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Ja gut, aber ich meine, die meisten Applikationen leben leider von ihren Usern, sonst hätte man die Applikation im ersten Schritt nicht schreiben.",
+      "start": 4540550,
+      "end": 4546344,
+      "confidence": 0.948153,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Wobei, wir sind ja auch alle User. Aber ich kann das nachvollziehen. Also man findet ja auch ständig irgendwo bugs und Developer haben halt nie damit gerechnet, dass man das eingibt, obwohl es für einen selbst ja ganz klar ist, dass man sowas.",
+      "start": 4546392,
+      "end": 4558664,
+      "confidence": 0.9355672,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Ich gebe euch ein Beispiel, da sind wir neulich drauf gestoßen. Ich habe vorhin von elektronischen Rechnungen gesprochen. Da gibt es einen Standard für, in Deutschland auch, der heißt x Rechnung. Und dieser Standard besteht aus sehr detaillierten Spezifikationen, wie eine Rechnung aufzubauen ist. Das ist alles sehr. Und dann gibt es eine Testsuite dazu. Man muss wissen, dieser Standard hat 150 verschiedene Felder, die in der Rechnung auftreten können. Da sind so irre Dinge dabei wie Items, die außerhalb der europäischen Union versteuert, aber innerhalb des europäischen Wirtschaftsraums eingeführt wurden oder sowas. Die haben ein eigenes Feld, 150 Felder. Für Rechnungen und dann gibt es eine Testsuite dafür, um zu prüfen, ob mein Programm tatsächlich x Rechnungen verarbeiten kann. Und das sind 40, 50 Rechnungen, die allesamt einen Happy Path abdecken. Also wenn die 50 durchlaufen, dann kann mein Programm mit hoher Wahrscheinlichkeit, kann es dann handelsübliche Rechnungen auch verarbeiten. Aber keine einzige dieser Tests prüft nach, ob da vielleicht irgendwas Ungültiges drin ist, ob da vielleicht ein negativer Betrag drin ist, ob da vielleicht irgendwelche Unicode Zeichen drin sind, ob da vielleicht irgendeine SQL Injection drin ist oder sonst irgendwas. Und seit Beginn dieses Jahres kann jeder an jeden x Rechnungen verschicken per Mail. Was kann schiefgehen? Da muss einfach sowohl im Mindset muss da sehr viel mehr passieren. Da muss aber auch von der Politik her mehr passieren. Wir müssen auch in so einem Fall darf Digitalisierung nicht einfach nur sein, wir machen hier ein paar Demonstratoren und dann funktioniert irgendwas in die der Druck besser aus und sind dann wieder sicher. Sondern wir müssen, was solche Standards angeht, müssen wir sehr viel mehr Hirnschmalz reinstecken. Nicht nur was die Interoperabilität angeht, sondern auch was deren Sicherheit angeht. Und da gibt es richtig viel zu tun.",
+      "start": 4558792,
+      "end": 4668914,
+      "confidence": 0.9203048,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Man muss kein Mathematiker sein, um bei 150 möglichen Feldern zu sagen, dass 40 Rechnungen als Testdaten doch etwas mager ist.",
+      "start": 4669082,
+      "end": 4677602,
+      "confidence": 0.9705619,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Ja, wir haben ja vorhin gesagt, für ein Testfeld brauche ich eigentlich so ein Dutzend Testfälle. Allein das passiert einfach nicht. Und das macht mich dann traurig, wenn jemand von RTL zuhört. Vielleicht können wir mal die schöne Uhr Horrorserie machen, wie man mit, wie irgendjemand an irgendjemand anders eine Rechnung schickt und da ist so ein nan Feld drin und dann gehen überall in Deutschland die Lichter aus oder sowas. Ach ja, bin ich gerne, bin ich gerne auch kostenlos gerne als Berater dabei, wenn es hilft, da mehr Awareness, also mehr. Verkauf dich bitte nicht unter Wert.",
+      "start": 4677706,
+      "end": 4713670,
+      "confidence": 0.9265285,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Verkauf dich nicht unter Wert. Du musst direkt an Amazon Prime und Netflix gehen. Du musst weltweit denken, nicht RTL und lokal.",
+      "start": 4713830,
+      "end": 4719990,
+      "confidence": 0.96149635,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Ich habe als junger Student, habe ich mal beim Literaturwettbewerb, habe ich mal im hessischen Literaturwettbewerb einen Preis gewonnen. Das war schön, das waren €1000. Aber ich habe später festgestellt, dass ich absolut schlecht bin, wenn es darum geht, Dialoge zu machen. Also ich plaudere viel lieber, wie auch in diesem Podcast, als dass ich sowas aufschreibe. Aber ich würde gerne mal weiterhelfen, wenn es uns hilft, die Welt besser zu machen. Immer gerne.",
+      "start": 4720150,
+      "end": 4743256,
+      "confidence": 0.9538465,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Andreas, vielen lieben Dank für deine Zeit und für dein Wissen, dass du uns zum Thema Fuzzing etwas, ich sag mal, Licht ins Dunkle gebracht hast. Für alle Hörer und Hörer. Wir haben während der Podcast Episode natürlich fleißig die Links und die ganzen Tools mitgeschrieben. Das bedeutet, in den Show Notes findet ihr auf der einen Seite natürlich links von den Tools, die wir in der Intro erwähnt haben, OSS fast Clusterfuzz, aber natürlich auch zum Fuzzing Book. Und wer speziell mit dem Thema Fuzzing mal anfangen möchte, dem lege ich dieses Fuzzing Book wirklich ans Herz. Unglaublich umfangreich, mit sehr, sehr viel Code Beispielen, soweit ich auch gesehen habe, auch Code, den man live auf der Webseite ausführen kann. Wunderbar. Und aber auch open source. Das bedeutet, falls ihr ein Typo findet oder ähnliches, könnt ihr das natürlich auch verbessern. Aber natürlich auch links zu Klee, der Symbolic Execution Engine, AFL Blogartikel über Evo Suit, auch z.B. einen tollen Blogartikel von Manuel Rigger, der auch in diesem Podcast erwähnt wurde mit dem Titel Bugs found in database management systems. Also ich glaube, falls ihr in das Thema Fuzzing einsteigen wollt, dann könnt ihr gerne mal in die Show Notes gehen und ich gehe stark davon aus, da werden dann ein paar Abende ins Land gehen. Andreas, vielen lieben Dank, dass du hier warst und ans ansonsten wünschen wir einen schönen Tag und tschüss.",
+      "start": 4743368,
+      "end": 4821534,
+      "confidence": 0.9181038,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Alles klar, mach's gut. Tschüss.",
+      "start": 4821662,
+      "end": 4823294,
+      "confidence": 0.869234,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Ciao. Und danke natürlich Andi an deinen Hund, der eindeutig jetzt auch bewiesen hat, dass Fuzzing wichtig ist. Sogar der wird getriggert bei Fuzzing.",
+      "start": 4823422,
+      "end": 4830190,
+      "confidence": 0.92916125,
+      "speaker": "C",
+      "channel": null
+    }
+  ],
+  "confidence": 0.92451346,
+  "audio_duration": 4676,
+  "webhook_status_code": null,
+  "webhook_auth": false,
+  "summary": null,
+  "auto_highlights_result": null,
+  "content_safety_labels": null,
+  "chapters": null,
+  "sentiment_analysis_results": null,
+  "entities": null
+}
