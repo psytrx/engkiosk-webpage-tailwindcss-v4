@@ -1,6 +1,6 @@
 ---
 advertiser: ''
-amazon_music: ''
+amazon_music: https://music.amazon.com/podcasts/c35a09fe-4116-4e04-8f68-77d61b112e46/episodes/b1be491b-19bf-4180-b85d-071c5e357cd6/engineering-kiosk-189-fuzzing-wenn-der-zufall-dein-bester-tester-ist-mit-prof-andreas-zeller
 apple_podcasts: https://podcasts.apple.com/us/podcast/189-fuzzing-wenn-der-zufall-dein-bester-tester-ist/id1603082924?i=1000701676779&uo=4
 audio: https://audio1.redcircle.com/episodes/b9de4c99-fe68-4e53-981d-855d710cd4c7/stream.mp3
 chapter:
