@@ -113,7 +113,7 @@ tags:
 title: "#188 Spieleentwicklung: Die K\xF6nigsdisziplin der Informatik mit Dominic\
   \ Pacher"
 transcript_raw: ''
-transcript_slim: ''
+transcript_slim: src/data/transcripts/188-transcript-slim.json
 youtube: https://www.youtube.com/watch?v=fvGnX3RAfJM
 
 ---
