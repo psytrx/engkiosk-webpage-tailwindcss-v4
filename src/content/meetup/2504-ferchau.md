@@ -15,7 +15,7 @@ talks:
   - avatar: '2504-matthias.jpg'
     name: 'Matthias Weiler'
     title: "Let's seize those opportunities to make tech more 🦄 and 🌈!"
-    description: "With a focus on the ☀️-side, this talk will elaborate where our digital world is quasi-utopian already, in which corners we are on the right track and what needs to be done to finish the job."
+    description: 'With a focus on the ☀️-side, this talk will elaborate where our digital world is quasi-utopian already, in which corners we are on the right track and what needs to be done to finish the job.'
     bio: "Digital policy advisor for people who (mostly) didn't ask for it. Two decades experience in discussing Privacy, Surveilance, Digital Sovereignty, Decentralisation, Free Software, Open Data and power structures in tech and elsewhere."
     website: 'https://tyrol.social/@mjw'
 eventId: '25ss849ilpq2o27r9r3s0rh34i'
