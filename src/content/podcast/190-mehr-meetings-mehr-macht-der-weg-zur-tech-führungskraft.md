@@ -92,7 +92,9 @@ speaker:
 - name: Jan Semrau
   transcriptLetter: C
 spotify: https://open.spotify.com/episode/65aLTSr9xiITg8Nr0y23UY
-tags: []
+tags:
+- Karriere
+- Leadership
 title: "#190 Mehr Meetings, mehr Macht? Der Weg zur Tech-F\xFChrungskraft"
 transcript_raw: ''
 transcript_slim: ''
