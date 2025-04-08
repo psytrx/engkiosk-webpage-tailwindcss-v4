@@ -1,6 +1,6 @@
 ---
 advertiser: ''
-amazon_music: ''
+amazon_music: https://music.amazon.com/podcasts/c35a09fe-4116-4e04-8f68-77d61b112e46/episodes/f3aad163-939a-4ffc-b8cb-7b556f5e6f7e/engineering-kiosk-190-mehr-meetings-mehr-macht-der-weg-zur-tech-f%C3%BChrungskraft
 apple_podcasts: https://podcasts.apple.com/us/podcast/190-mehr-meetings-mehr-macht-der-weg-zur-tech-f%C3%BChrungskraft/id1603082924?i=1000702637852&uo=4
 audio: https://audio1.redcircle.com/episodes/655e5196-1d65-4687-b2fb-36cdc9c3673c/stream.mp3
 chapter:
@@ -86,7 +86,11 @@ rtlplus: ''
 six_user_needs: []
 speaker:
 - name: Andy Grunwald
+  transcriptLetter: A
 - name: Wolfi Gassler
+  transcriptLetter: B
+- name: Jan Semrau
+  transcriptLetter: C
 spotify: https://open.spotify.com/episode/65aLTSr9xiITg8Nr0y23UY
 tags: []
 title: "#190 Mehr Meetings, mehr Macht? Der Weg zur Tech-F\xFChrungskraft"
