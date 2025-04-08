@@ -105,10 +105,10 @@ spotify: https://open.spotify.com/episode/6NRYV3eMMzfLXnczHPdQ9K
 tags:
 - Software Engineering
 - Interview
-- Software Qualität
+- "Software Qualit\xE4t"
 title: '#189 Fuzzing: Wenn der Zufall dein bester Tester ist mit Prof. Andreas Zeller'
 transcript_raw: ''
-transcript_slim: ''
+transcript_slim: src/data/transcripts/189-transcript-slim.json
 youtube: https://www.youtube.com/watch?v=SqSuFH4Iquc
 
 ---
