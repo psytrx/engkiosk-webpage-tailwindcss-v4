@@ -97,7 +97,7 @@ tags:
 - Leadership
 title: "#190 Mehr Meetings, mehr Macht? Der Weg zur Tech-F\xFChrungskraft"
 transcript_raw: ''
-transcript_slim: ''
+transcript_slim: src/data/transcripts/190-transcript-slim.json
 youtube: https://www.youtube.com/watch?v=jE7iD8nUHfU
 
 ---
