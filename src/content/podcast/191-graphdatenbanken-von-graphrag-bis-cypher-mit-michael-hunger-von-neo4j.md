@@ -95,7 +95,10 @@ speaker:
 - name: Michael Hunger
   transcriptLetter: C
 spotify: https://open.spotify.com/episode/4MJfevk8z0FRhmPZ6kRQSP
-tags: []
+tags:
+- Software Engineering
+- Datenbanken
+- Interview
 title: '#191 Graphdatenbanken: von GraphRAG bis Cypher mit Michael Hunger von Neo4j'
 transcript_raw: ''
 transcript_slim: ''
