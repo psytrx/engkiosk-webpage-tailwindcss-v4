@@ -1,0 +1,728 @@
+{
+  "language_code": "de",
+  "audio_url": "https://cloud.inlupus.at/s/YP68aAnKCZnFEg7/download/ep191_graph.mp3",
+  "punctuate": true,
+  "format_text": true,
+  "dual_channel": false,
+  "multichannel": null,
+  "audio_channels": null,
+  "webhook_url": null,
+  "webhook_auth_header_name": null,
+  "webhook_auth_header_value": null,
+  "audio_start_from": null,
+  "audio_end_at": null,
+  "word_boost": [],
+  "boost_param": null,
+  "filter_profanity": false,
+  "redact_pii": false,
+  "redact_pii_audio": false,
+  "redact_pii_audio_quality": null,
+  "redact_pii_policies": null,
+  "redact_pii_sub": null,
+  "speaker_labels": true,
+  "speakers_expected": 3,
+  "content_safety": false,
+  "content_safety_confidence": null,
+  "iab_categories": false,
+  "custom_spelling": null,
+  "disfluencies": false,
+  "sentiment_analysis": false,
+  "auto_chapters": false,
+  "entity_detection": false,
+  "summarization": false,
+  "summary_model": null,
+  "summary_type": null,
+  "auto_highlights": false,
+  "language_detection": false,
+  "language_confidence_threshold": null,
+  "language_confidence": null,
+  "speech_threshold": null,
+  "speech_model": null,
+  "id": "078bb87c-5f92-4b0a-8143-f1dfc77cea12",
+  "status": "completed",
+  "error": null,
+  "utterances": [
+    {
+      "text": "Moin Moin zu einer neuen Episode vom Engineering Kiosk Podcast. Heute mal wieder zum Thema Datenbanken. Welche Relationen die einzelnen Datensätze in deiner Datenbank haben, kann eine Rolle bei der Entscheidung spielen, welche Art von Datenbank du am besten einsetzen solltest. Wenn du unabhängige Datensätze hast, die keine Relation zueinander haben oder häufige one to many relations, sind relationale Datenbanken sehr gut geeignet. Wenn du jedoch sehr viele many to many relations hast, spielt eine Datenbankart ihre Vorteile. Graph Datenbanken Ein gutes Beispiel sind wohl soziale Netzwerke wie LinkedIn oder Facebook, wo Events, Personen, Firmen und Posts mit Kommentaren eine durchgehende Beziehung zueinander haben, auch bekannt als Socialgraph. Natürlich kann dies aber auch alles in einer relationalen Datenbank gespeichert werden. Aber fragen gib mir mal bitte alle Personen, über die ich im dritten Grad verbunden bin, die aus Deutschland kommen und bei Aldi gearbeitet haben. Die sind schwer zu beantworten. Für Graf Datenbanken ist das jedoch ein Klacks. Grund genug, diesem Thema eine Bühne zu geben. Darum geht es in dieser Episode. In dem Interview mit dem Experten Michael Hunger klären wir, was eine Graph Datenbank ist, welche Anwendungsfälle sich dadurch besser abbilden lassen als z.B. an einer relationalen Datenbank, was der Ursprung von Graph Datenbanken ist, was der Unterschied eines Property Graph Models und einem Triple Store Model ist, wie man mit Hilfe von Sprachen wie Cipher, SPARQL und Datalog Daten aus einem Graph extrahiert, für welche Use Cases dies gegebenenfalls nicht die richtige Datenstruktur ist. Und wir geben einen Einblick in die Themen Knowledge Graphen, LLMs und Graph Rack. Dann lass uns mal über Kanten und Knoten sprechen. Viel Spaß.",
+      "start": 3360,
+      "end": 99020,
+      "confidence": 0.9238694,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Andi, du bist ja auch großer Fan vom Wartungsfenster Podcast. Und Patrick vom Wartungsfenster Podcast hat mich gerade in einer Episode, die kürzlich erschienen ist, Datenbänkler geschumpfen, hätte ich fast gesagt. Oder hat den Sound zumindest sehr lustig gefunden. Ich habe ja schon auf LinkedIn geschrieben. Das ist so wie dein Hinterbänkler bei den Politikern ist der Datenbankler bei den ITlern vielleicht. Als Datenbankler darf ich das natürlich sagen, aber ich bin ja im Herzen Datenbänkler. Und wenn du mal mit mir zurückgehst, Andy, in meine frühe Zeit und diesmal sogar vor den Dr. Das war 2006 2007 habe ich eine Masterarbeit geschrieben, habe ja auch irgendwann mal durch müssen. Und diese Masterarbeit hat versucht, graphen relationale Datenbanken zu speichern. Und zwar noch schlimmer in der DB Datenbank. Und zwar war das damals OWL, also die Web Ontology language. Warum das OWL heißt, klingt einfach cooler, obwohl die Reihenfolge nicht stimmt. Es war so eine Erweiterung in der ganzen Websematic Ecke von RDF und hat noch Sachen draufgelegt. Und es hat damals eigentlich nicht wirklich so Graph Datenbanken gegeben. Darum gute Idee, man speichert es einfach in einer relationalen Datenbank. Tja, es hat so mäßig funktioniert, würde ich mal sagen.",
+      "start": 99760,
+      "end": 174608,
+      "confidence": 0.8962862,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Kann man mal machen, aber ist dann halt kacke.",
+      "start": 174704,
+      "end": 177168,
+      "confidence": 0.99545777,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Ja, es war gar nicht so schlecht. Es war dann ein bisschen schwierig, weil Aul hat dann noch irgendwelche Subklassen und so ein Klassenmodell und das haben wir dann probiert mit Rekursion und es ist dann schon sehr dreckig geworden, würde ich mal sagen. Aber für eine Masterarbeit hat es zumindest ausgereicht, das Ganze mal zu versuchen. Interessanterweise war das aber wirklich ein großes Problem, die ganze Graf Datenbankgeschichte, weil es eben keine so richtigen Datenbanken gegeben hat. Und 2007 ist dann NeoJ, so dieses Graf Flaggschiff, würde ich fast sagen, was es heute ist, damals auf den Markt gekommen, ganz neu und es ist immer noch da. Also ich würde sagen, Graf, diese Graf Datenbank zumindest ist gekommen und zu bleiben. Und umso mehr freut es mich, dass wir heute in Michael Hunger bei uns haben im Podcast Studio, weil der war, glaube ich, so Mitarbeiter Nr. Acht, habe ich das richtig im Kopf von Nej vor 15 Jahren?",
+      "start": 177344,
+      "end": 228962,
+      "confidence": 0.91736096,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Ja, so ziemlich am Anfang, also so zwischen acht und 10, nachdem die ganzen sieben Schweden dann da waren, gab es da noch drei Externe, die aus dem anderen Land kamen und ich war einer von den dreien.",
+      "start": 229056,
+      "end": 239262,
+      "confidence": 0.91312134,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Genau. Und David, willkommen bei uns. Wirklich super, dass du da bist und dass wir heute mal über Kraft Datenbanken sprechen können.",
+      "start": 239326,
+      "end": 244718,
+      "confidence": 0.9575309,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Ja, danke schön. Ich freue mich auch total. Es ist ein spannendes Thema und glaube, viele Leute sind mit relationalen Datenbanken aufgewachsen in irgendeiner Form. Aber Kraftdatenbanken gibt es halt leider nur selten an Universitäten, aber sie sind ein total spannendes und mächtiges Werkzeug, jeder wenigstens kennen sollte, sodass man dann entscheiden kann, ist das was für diesen Anwendungsfall oder nicht.",
+      "start": 244774,
+      "end": 265834,
+      "confidence": 0.90584755,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Man muss ja dazu sagen, dann bei meiner Doktorarbeit, wo es ja auch so um Graphen unter anderem gegangen ist, um Knowledge Graphen, da war dann NeoJ schon drinnen und da habe ich dann auch eine Implementierung auf Neoj gemacht.",
+      "start": 265922,
+      "end": 276394,
+      "confidence": 0.9647525,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Also mein erstes Graph Erlebnis. Also in der Uni habe ich ja sozusagen die Graf Vorlesung, glaube ich, nicht so richtig besucht, die habe ich ein bisschen ignoriert, aber ich habe ziemlich lange, seit 94 ein textbasiertes Online Rollenspiel gespielt, heißt Mohngrauen, gibt es auch immer noch. Und da habe ich halt kleine Seite, einen Wegesuch Algorithmus programmiert in der Client language. Und ich habe aber in dem Moment gar nicht gewusst, dass ich einen Dijkstra Wegesuch Algorithmus mir selbst ausgedacht habe und implementiert. Das haben mir dann Leute erst im Nachhinein erzählt. Das war meine erste sozusagen wirklich praktische Anwendung von Graphen, so in den Mitte der er Jahre, also liegt schon eine Weile zurück.",
+      "start": 276442,
+      "end": 316840,
+      "confidence": 0.91351545,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Michael, lass mich dich doch einmal kurz unseren Hörerinnen und Hörern an den Boxen, an den Audiogeräten vorstellen. Mitarbeiter Nr. Acht bei Neoj, da arbeitest du seit 15 Jahren und die Firma ist der gleichnamige Hersteller der Open Source Graph Datenbank, wie wir gerade schon kurz gehört haben. Du hattest verschiedene Rollen inne. Inzwischen bist du Head of Product Innovation und Developer Product Strategy und du agierst aus Dresden. Du bist regelmäßig auf den Speaker Bühnen dieser Welt unterwegs, bist aber auch Buchautor unter anderem von Neoj, ein schnell und kompakt Guide für Graf Datenbanken für alle. Du hast mal ein Buch über spring Data geschrieben und du warst auch an einem Buch beteiligt namens NoSQL. Überblick Neoj, Apache Cassandra und Hbase. Zu Hbase kommen wir vielleicht gleich noch ganz minimal zumindestens Hadoop so ein bisschen habe ich zumindest in meinen Notizen noch mal gefunden. Aber neben Graphthemen beschäftigt natürlich auch viel mit Java, Kotlin, graphql Refactoring und generative AI. Und was ich besonders schön fand, ist, du gibst eine wöchentliche Computer AG für Mädchen an einem Gymnasium in Dresden, wo du unter anderem programmieren lernst. Ist das korrekt?",
+      "start": 316920,
+      "end": 387078,
+      "confidence": 0.89626575,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Ja, das ist korrekt. Das ist zurzeit gerade leider nicht möglich, weil die Schule ausgelagert wurde und deshalb ist die Räumlichkeit nicht vorhanden. Aber ich wollte halt Mädchen oder jungen Frauen die Gelegenheit geben, in einer sicheren Umgebung sozusagen mit Computern anzufangen. Und da ich ja selber auch drei Töchter habe, ist mir das relativ wichtig, weil Jungs haben oft viele Möglichkeiten und werden viel unterstützt. Aber für Mädchen ist es wichtig, das auch in einem sicheren Raum machen zu können. Und wir haben dann alles Mögliche gemacht, von Calliope zu Raspberry Pi, zu Minecraft modding, roboter programmieren und viele andere Sachen. Scratch natürlich auch. Java Kurs, so einen kurzen kleinen Java Kurs. Und man sieht halt auch, wie toll das ist, wie kreativ und wie im Endeffekt genauso gut oder besser Mädchen mit Computern und Programmierung umgehen können. Und ich bin auch stolz darauf. Meine mittlere Tochter hat jetzt gerade Informatikstudium angefangen und das ist halt schon ein cooles Ergebnis.",
+      "start": 447174,
+      "end": 503304,
+      "confidence": 0.9297477,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Inwieweit ist das Thema Graf Datenbanken denn auf dem, wie nennt man das, Lehrplan der computer AG?",
+      "start": 503482,
+      "end": 510440,
+      "confidence": 0.92519176,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Wir haben auch ein oder 2 Stunden damit zugebracht, wo die Teilnehmerinnen sozusagen sowohl ihren Freundschaftsgraf wen kenne ich, wen mag ich und mit wem mache ich gerne Sachen zusammen, als auch Interessen als kleinen Graph darstellen konnten. Also das haben sie dann auch hingekriegt und fanden das ganz cool, dass sie sich dann sozusagen gegenseitig vernetzen konnten und gemeinsame Hobbys und Interessen herausfinden konnten. Also das war dann auch Teil der ganzen Geschichte. Ist auch insofern ganz spannend, da Kraftdatenbanken hier sehr schön visuell repräsentiert werden können. Das ist natürlich auch was fürs Auge, da hat man gleich viel mehr Spaß mit den Daten zu arbeiten als in langweiligen Tabellen.",
+      "start": 510740,
+      "end": 550010,
+      "confidence": 0.9202174,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Lass uns mal ins Thema einsteigen. Und zwar die meisten Software Engineers oder beziehungsweise wenn ich so auf die moderne Informatik gucke, auf die moderne Softwareentwicklung, dann kommen da eigentlich in der Regel zwei große Datenmodelle in die breite Anwendung. Das sind auf der einen Seite natürlich relationale Datenbanken, MySQL, Postgre und so weiter. Wolfgang hat gerade eine historische Geschichte über DB erzählt. Dann gibt es natürlich noch die Document Stores und dann gibt es als dritten großen Bereich so die Graph Datenbanken. Und wenn ich mir jetzt mal ansehne, OK, wofür Graphen denn eigentlich ganz gut sind, dann habe ich bei der Recherche herausgefunden, schönen Vergleich. Okay. Besonders wenn man many to many Relationen hat. Also es gibt ja keine Relation zwischen Datensätzen, dann gibt es ja one too many und gibt es auch many to many und dann gibt es vielleicht noch irgendwelche anderen Relationsarten, aber da wurde mir herausgespuckt, dass das super für Graphen sei. Und jetzt frage ich mich natürlich, wo kommen denn Graf Datenbanken eigentlich her? Natürlich, Wolfgang hat gerade irgendwas mit Anfang er von seinen Masterarbeiten genannt. Ich habe aber bei der Recherche auch schon Paper von 1980 gefunden, die zumindest auf Basis von Abfragesprachen basieren. Kannst du uns da mal einführen, wo die ganze Sache eigentlich herkommt und warum das eigentlich revolutionär ist?",
+      "start": 550990,
+      "end": 621648,
+      "confidence": 0.9235024,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Ja, also erstmal als Basis ist es ja so, dass die meisten domain Modelle in unseren Anwendungen ja schon relativ stark vernetzt sind. Wenn man sich anguckt, welche Entitäten hast du in deinen Objekten und domain Modellen, wie sind die miteinander vernetzt, war eigentlich schon immer seit Anbeginn der Softwareentwicklung der Bedarf da, das irgendwie gut darstellen zu können. Leider war es so, dass gerade diese formularbasierte Interaktion doch sehr stark in der Unternehmenswelt aktiv war, sodass halt ab Bildung von Formularen auf Tabellen halt ein natürlicher erster Schritt war. Aber trotzdem wurde schon in den ERN und er mit Netzwerkdatenbanken und hierarchischen Datenbanken sozusagen der Vorgänger von Graf Datenbanken angegangen. Da gab es so Systeme wie Code Asyl und ähnliche, die halt schon strukturierte und hierarchische Daten relativ gut abbilden konnten. Leider ist dann halt mit dem Erstarken von SQL diese programmatische Interaktion mit Daten ein bisschen den Bach runtergegangen und erst in den ERN ging es dann los. Zum einen mit der ganzen Thematik, die du schon erwähnt hast, Semantic Web, also das heißt Tim Berners Lee, das Internet, Hyperlinks, wie stelle ich Daten und Verknüpfungen miteinander dar, wie kann ich halt sozusagen Fakten, also so in der Richtung Subjekt, Prädikat, Objekt darstellen, abspeichern und benutzen. Das war am Anfang vielmehr auch ein Transportformat sozusagen, also Repräsentation von Informationen als eigentlich ein Speicherungsformat. Und auf der anderen Seite gab es auch in den ERN, wie ihr euch vielleicht erinnern könnt, Objektdatenbanken, die halt auch so versucht haben, dieses Objektmodell in Datenbanken abzubilden und einfacher benutzen zu lassen. Das ist dann alles ein bisschen wieder eingeschlafen. Triple Stores und Semantic Web und RDF, also Resource Description Format, sind vor allem in akademischen Zirkeln sehr beliebt, weil man da halt sehr schön komplexe Papers darüber schreiben kann und die Komplexität, die man darstellen kann, halt sehr hoch ist. Hat dann ein bisschen Probleme, wenn man halt praktischerweise in der Softwareentwicklung das einsetzen will, dass dann halt sich das alles ein bisschen esoterisch anfühlt. Die Objektdatenbanken, die haben es halt nie so wirklich geschafft, sich von den relationalen Datenbanken sozusagen abzuheben und wirklich den Mehrwert zu zeigen. Zum Teil lag das, denke ich, auch daran, dass es halt nicht so einfach war, deklarativ darauf Abfragen zu machen, sondern dass man das halt alles programmatisch machen musste. Dann in den ERN gab es ja diese große Revolution mit NoSQL Datenbanken, also nicht nur SQL Datenbanken, ihr habt schon Dokumentdatenbanken erwähnt. Es gibt natürlich auch Dinge wie Column Stores, Key Value Stores und andere sozusagen anwendungsspezifisch bestimmte Themen, die mit relationalen Datenbanken, gerade auch in großem Datenmengenumfang nicht so einfach möglich waren, halt dann durch dedizierte Implementierung abgebildet haben. Also wir erinnern uns an dynamodb z.b. dinge wie Cassandra, MongoDB, CoachDB, Coachbase, Redis und ähnliche. Und im Zuge dieser ganzen NoSQL Entwicklung war es dann plötzlich so, dass halt Anwender und Entwickler viel offener waren für neue Datenbankmodelle und dadurch gab es halt eine gute Gelegenheit für all diese neuen Art und Weise, wie ich mit Daten umgehe, an den Markt zu kommen. Für Kraft datenbanken war es so, dass Nearj selbst ist eigentlich aus einer echten Anwendung entstanden. Und zwar es gab in Schweden damals so ein Dokumenten, und Content Management System in den ERN, in den frühen ERN. Und die hatten zwei komplexe Anwendungsfälle. Das eine war als Software as a Service Anwendung Rechtemanagement, das heißt, wie bilde ich für viele Kunden komplexe Gruppen, verschachtelte Gruppenrechte und Zugriffsmöglichkeiten ab? Und das andere war, weil die das auf europäischer Level betreiben wollten, wie kann ich eine Bedeutungshierarchie sozusagen der ganzen Worte, Synonyme über Sprachgrenzen hinweg sozusagen machen. Also wenn ich Verschlagwortung habe, wie kann ich Sachen, die in schwedisch verschlagwortet waren, in Französisch oder in Deutsch suchen und trotzdem auch mit Synonymen und ähnlichen hantieren. Und die haben damals versucht, das erst mit relationalen Datenbanken abzubilden, mit Postscript, mit Oracle und haben sich da sehr einen abgebrochen, als genau wie es bei euch halt auch schon war, bei mir übrigens auch, bevor ich bei Neo angefangen habe, habe ich viel Retail Systeme gemacht und wir haben da auch Oracle und Informix, nicht die w, sondern in Fomix gequält mit tiefen Hierarchien von Firmenstrukturen, z.B. mit Vererbung von Attributen und solchen Themen. Und da hat die relationale Datenbank schon sehr geächzt, um das hinzukriegen und viele Sachen gingen dann halt auch einfach nicht. Und bei Neville war es so, das wurde halt versucht, erst alles in relational Datenbanken abzubilden, in der, in diesem System, hat nicht so richtig geklappt und dann haben sie sozusagen nach und nach angefangen, die Implementierung in Java im Speicher sozusagen zu ziehen. Also das heißt, dann hat man halt sozusagen das Graph Modell im Speicher, konnte darauf traversieren, konnte diese ganzen komplexen Anfragen, die man für diese Anwendungsfälle brauchte, halt machen. Dann war natürlich das Problem, wie lade und speichere ich das immer wieder aus der relationalen Datenbank, wie mache ich parallele Updates, wenn ich parallele Nutzer habe, wie ist da meine transaktionale Sicherheit von Updates? Und ihr hört schon so ein bisschen raus, das sind halt diese ganzen klassischen Datenbankanforderungen, die man dann halt irgendwie abbilden muss. Und nach und nach wurde aus diesem Memory System sozusagen eine komplette sozusagen Full Stack Datenbank, also inklusive Transaktionsmanagement, Persistenz, Write Ahead Logs und all die schönen Sachen, die man sich da vorstellen kann. Und dann passierte leider die Dotcom Bubble und dieses Unternehmen hat es leider nicht überlebt, aber die Kraft Datenbanktechnologie wurde sozusagen von den Gründern von Neoj rausgelöst und weiterentwickelt, bis sie dann halt zwischen 2005 und 2007 mit einem ersten Investitionsrunde an den Markt gehen konnten und das als Open Source Datenbank sozusagen veröffentlicht haben. Und am Anfang war es eine kleine Java Bibliothek, die sich bisher jetzt sozusagen in Richtung Graph Data Plattform sozusagen entwickelt hat.",
+      "start": 621764,
+      "end": 972032,
+      "confidence": 0.9141094,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Wir wollten das eigentlich erst später fragen, aber ist das der Grund, warum Java dann verwendet wurde für das Ganze, dass es einfach historisch. Es war schon Java und darum Java, weil es ist jetzt keine typische Wahl für eine Datenbank.",
+      "start": 972136,
+      "end": 984404,
+      "confidence": 0.9324683,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Genau, es ist historisch gewachsen. Das ist eigentlich eine sehr gute Frage. Also vielen Leuten ist ja eigentlich nicht klar, dass viele der modernen Datenbanken in Java geschrieben sind, z.B. elasticsearch, Kafka, Spark, auch Cassandra, z.B. hadoop, was du vorhin schon erwähnt hattest. All diese Systeme sind auch in Java geschrieben und Java ist heutzutage auch nicht mehr langsam wie in den ER Jahren, was viele Leute halt auch immer noch denken, sondern kann sehr hoch performant viele Daten verarbeiten. Ich weiß nicht, wer von euch die One Billion Road Challenge von Gunnar Molin gesehen hat im letzten Januar. Das war halt so ein Beispiel, dass halt 1 Milliarde Zeilen aus einer CSV Datei in weniger als einer S in Java verarbeitet werden konnten, inklusive Aggregation. Und das zeigt halt, dass sozusagen die JVM als solche keine Limitierung hat, was jetzt die Performance als das betrifft. Und für NeoJ ist es natürlich historisch gewachsen, ist klar. Es gibt auch Graf Datenbanken, die sind in C implementiert oder in Rust implementiert. Das ist eine Sache, die wir uns natürlich auch anschauen. Aber da ist halt immer die findet man die Entwickler? Welche Teile des Systems können halt ersetzt werden und wie sieht die Interaktion zwischen den Teilen des Systems aus?",
+      "start": 984592,
+      "end": 1051278,
+      "confidence": 0.9440339,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Habt ihr da wirklich alles in Java oder habt ihr dann schon Teile in C, wenn es jetzt um irgendwelche, keine Ahnung, neue Hardcore irgendwelche Algorithmen oder sonst irgendwas geht?",
+      "start": 1051334,
+      "end": 1062174,
+      "confidence": 0.91944,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Ne, also zurzeit ist alles noch in Java. Wir haben Teile in Scala, was so die Queriengine betrifft und natürlich in der Cloud Plattform haben wir auch Teile in Go. Alles was Kubernetes und Infrastrukturmanagement betrifft, das ist alles in Go. Manche Services sind auch in Kotlin geschrieben, die haben die Teams für Kotlin entschieden. Das gibt es auch, weil du gerade Algorithmen angesprochen hast. In der Graph Data Science Bibliothek benutzen wir Rust, um sozusagen so eine baseline Implementierung zu bauen, zu gucken, was ist sozusagen das maximal mögliche und wie kann man halt Paper über Algorithmen halt erstmal direkt umsetzen und transformieren das dann halt in eine Java Implementierung, die dann hoffentlich genauso schnell ist. In vielen Fällen kommen wir da ziemlich nah ran.",
+      "start": 1062222,
+      "end": 1102986,
+      "confidence": 0.9229162,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Wo man natürlich auch sagen muss bei der Billion Road Challenge, also ich meine, Java an sich ist ja nicht nicht langsam. Die Frage ist ja immer, was ist der Vergleichsvektor also langsam zu was und was ist schnell genug und allem drum und dran. Natürlich, ich bin mir nicht sicher, ob Java jemals an die native Performance von C rankommt, ist aber auch ein ganz anderes Abstraktionslevel und da ist die braucht eigentlich jeder diese Geschwindigkeit? Das ist die eine Baustelle. Die zweite Baustelle ist natürlich auch bei der Billion Road Challenge. Da frage ich mich auch immer, ich habe mir die auch angesehen, ich habe mir die auch angesehen in verschiedenen Sprachen. Da muss man ja schon ehrlicherweise auch sagen, ob das jetzt Production Ready Code ist, weiß ich jetzt auch nicht und ist ja schon sehr hoch optimiert und und ob der dann maintainable sei, sei auch dahingestellt. Also deswegen bin ich mir nicht sicher, ob der Vergleich so valide ist. Wohingegen bei einer Datenbank in Java natürlich, also Kafka macht einen sehr guten Job, Neoj macht ja auch einen sehr guten Job, Cassandra ja auch. Da frage ich mich aber auch, wenn ihr die ganze Sache heute from scratch neu schreiben würdet, würdet ihr wieder Java wählen oder würdet ihr auch auf andere Sprachen zielen?",
+      "start": 1103018,
+      "end": 1161204,
+      "confidence": 0.93653303,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Ja, ich denke mal heute, wenn man wirklich auf der grünen Wiese anfangen würde und halt mit Leuten beginnen würde, die sozusagen aus der Datenbankwelt kommen, würde man auch C oder wahrscheinlich eher Rust benutzen aus Speichersicherheitsgründen, um wenigstens den Kern der Datenbank zu entwickeln. Das Problem ist halt, dass du halt für so ein großes System wie bei NEJ sind halt mehrere hundert, also 300 Entwickler am Arbeiten. Du musst halt auch immer die Leute finden und das ist halt ein großes Problem. Und wenn jetzt einer sehr gute Rust Implementierung von irgendwas schreibt und der dann vielleicht zu einer anderen spannenden Firma geht, muss das irgendjemand auch enthält können sozusagen. Also es ist halt nicht nur eine reine technische Frage, sondern halt auch eine wie kann ich sicherstellen, dass dieser Code für viele, viele Jahre und viele, viele Kunden und auf vielen, vielen Systemen halt läuft. Das ist ja auch ein Vorteil von Java, dass der halt egal auf welchem Arm oder x oder Mac oder Windows alles laufen kann, musste ich halt nicht da groß drum kümmern. Also es ist nicht nur eine rein technische Frage an der Stelle. Und ja, zur Billion road Challenge, ja, die 0,9 oder 0,8 s Implementierung sind nicht mehr maintainable, aber selbst der Code ja noch nett zu verstehen und zu mainten war, selbst der war im 5 s oder 10 s oder so Umfeld, also er war jetzt nicht krass viel langsamer sozusagen. Also das ist dann halt auch nur, wie können wir die letzten paar Millisekunden halt rauskratzen sozusagen. Bei so einem Wettbewerb.",
+      "start": 1161252,
+      "end": 1251570,
+      "confidence": 0.9192957,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Jetzt hast du schon erwähnt, woher Neoj gekommen ist, mit den Anwendungsfällen, die es damals gegeben hat. Jetzt, wenn man an Graf Datenbanken denkt oder an Graphen an sich, dann denkt man immer so an Facebook oder Navigationssystem und finde den kürzesten Pfad von X nach y. Du hast schon gesagt, du hast die Graf Vorlesung geskippt, aber das sind so die klassischen Graph Algorithmen, die man da ja auch immer lernt. Sind das die klassischen Anwendungsfälle von so Graph Datenbanken heutzutage auch noch oder verwendet man die auch in einem breiteren Umfeld? Wird auch die Graf Datenbank eher so als Add on gesehen zu einer relationalen Datenbank und dann spezielle Use Cases bilde ich in der Graf Datenbank ab oder ist es zur Allround Datenbank auch geworden? Und es gibt Firmen und Kunden auch von euch, die dann alles darin abspeichern. Also wo liegen denn so die klassischen Anwendungsfälle heute?",
+      "start": 1251990,
+      "end": 1301468,
+      "confidence": 0.9394981,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Ja, also auf jeden Fall, wenn man sich so eine Datenbank wie NeoJ anguckt, die halt wirklich eine transaktionale OLTP Datenbank auch darstellt, ist schon sehr breit aufgestellt. Also weil du ja im Endeffekt alles das, was du halt in einem Anwendungssystem darstellen kannst, an Entitäten sozusagen in der Kraftdatenbank speichern, wieder abfragen kannst. Das heißt, im Prinzip können die meisten Anwendungen, die du heutzutage mit einer relationalen Datenbank machst, auch mit einer Kraftdatenbank umgesetzt werden. Ob dann halt das Skill level dafür da ist und so, das ist eine andere Frage. Und ich möchte auch nicht, dass jemand jetzt anfängt, seine ganzen Anwendungen umzuschreiben als solches. In vielen Projekten ist es so, dass die Kunden erstmal mit einem ganz spezifischen Graph Use Case anfangen und die, die du genannt hast, also sowas wie Logistik, Routenberechnung ist halt ein Thema. Es gibt halt andere Themen, die auch sehr spannend sind. Sample Security ist z.B. interessanter als wie stelle ich net Netzwerkstrukturen da, Softwarearchitektur, Angriffsvektoren, wie kann ich halt feststellen, ob meine Infrastruktur sicher ist. Es gibt Themen, gerade komplexe Knowledge Graphen, die aus der Biotechnologie kommen, also wie drücke ich halt Gene, deren Expression, Medikamente, wie wirken die auf bestimmte Gene? Das ist halt auch ein sehr komplexer Graph, wer das mal gesehen hat, weiß, dass das Human Pathways ein sehr komplexer Graph ist z.B. und in den meisten dieser Anwendungsfälle gibt es halt bestimmte Anfragen, die ich halt mit einer relationalen Datenbank nicht oder sehr schwer beantworten kann, wo ich halt sehr tief in dieses Netz gehen muss, wo ich halt komplexe Pfade suchen muss, wo ich halt schnell Verknüpfung zwischen Entitäten finden muss. Als auch z.B. im Manufacturing ist es so, wenn ich halt komplexe Prozessketten habe oder Supply Chains, Lieferkettengesetz mal so als Stichwort. Das sind halt alles sehr lange transitive Pfade sozusagen. Also das, was man aus der Logistik kennt, kann man halt ganz einfach auf viele andere Domänen halt auch wiederfinden und anwenden. Und oft fängt es so damit an, dass Leute halt an ihr existierendes System sozusagen die Kraft Datenbank ranhängen, um einen dieser speziellen Anwendungsfälle zu leisten. Aber dann sehen sie, dass es doch eine sehr flexible Datenbank ist, die halt sehr flexibel mit diversen Datenstrukturen und Formaten umgehen kann. Und dann erweitert sich das meistens in den meisten Fällen. Also wenn wir einmal damit Erfolg hatten und fanden, das ist eigentlich eine coole Sache, damit können wir gut umgehen. Jetzt haben wir uns auch ein bisschen da eingearbeitet, dann haben wir das mit vielen Kunden schon gesehen, dass dann halt aus dem einen Graf Projekt sind dann halt fünf oder 10 oder 15 geworden. Also wir haben auch Kunden, die haben dreiig Nevj Projekte in ihrer Firma aus ganz, ganz verschiedenen Bereichen.",
+      "start": 1301644,
+      "end": 1453268,
+      "confidence": 0.91668576,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Das klingt jetzt aber gerade so ein bisschen so nach dem, okay, ich habe jetzt einen neuen Hammer und alles ist ein nah. Und so bin ich ja auch. Ich bin ja ehrlich, wenn ich mit was Neues anfange, denke ich, wow, wieso kann ich das vorher noch nicht? Und das hätte ja alle Probleme gelöst. Lass uns mal ganz kurz zu den Basics gehen, zu der, ich sag mal, zu der Nomenklatur und zu den Vokabeln. Wenn ich jetzt von einer relationalen Datenbank komme, dann kenne ich die Terms Datenbank, ich könnte Tabelle, row, Indize, Primary key und all sowas. Was sind eigentlich so die Standardvokabeln in einem Graphen? In einer Graph dann?",
+      "start": 1453364,
+      "end": 1486286,
+      "confidence": 0.8818937,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Also die erste Standardvokabel hast du schon genannt, das ist der Graph als solches. Also das heißt, das ist halt eine Sammlung von Elementen, die miteinander vernetzt sind. Und von diesen Graphen kann man in einer graphen Datenbank natürlich mehrere haben. Also das heißt, es ist halt nicht nur ein Graph, der in dieser Datenbank sitzt, sondern es können viele verschiedene Graphen sein. Und die Graphen bestehen sozusagen aus zwei Arten von Elementen. Zum einen sind das halt sogenannte Knoten oder auch Entitäten, die meistens halt auch richtige Entitäten in irgendeiner Form darstellen, die dann mit Beziehungen miteinander verknüpft sind. Und der große Unterschied zu z.B. relationalen Datenbanken ist, in der relationalen Datenbank habe ich die Tabelle als mein Kernelement oder meine Kerndatenstruktur, aber eine Kraftdatenbank hat halt zwei Kernelemente, einmal Quoten und dann Beziehung als zweites Kernelement. Das heißt, Beziehungen in der Kraftdatenbank werden nicht wie bei vielen anderen Datenbanken zur Laufzeit berechnet, indem ich halt einen Join mache und dann in einem Index halt mir die zwei Sachen seitens Suche, sondern die werden wirklich in der Datenbank persistiert. Und das ist eigentlich der größte Unterschied in der Graf Datenbank, dass halt sozusagen der Zeiger von einer Entität auf eine andere Entität wirklich zum Einfügezeitpunkt materialisiert wird und dann diese Beziehungen halt sozusagen sehr viel schneller gefolgt und traversiert werden können, als wenn ich sozusagen zwei riesengroße Indexe durchsuchen muss, um die richtigen Punkte zu finden, sich miteinander zur Laufzeit verbinden will. Es gibt in der universitären Forschung noch andere Bezeichnungen dafür. Oft wird halt auch Knoten als Vertex bezeichnet in der Forschung, zum Teil halt auch in anderen Kraftanbanksystemen. Wir haben damals Knoten benutzt und Beziehungen, weil wir das etwas freundlicher fanden, den Nutzungen Entwicklung gegenüber. Wir wollten halt nicht diese mathematische Notation und Struktur und Nomenklatur benutzen, sondern was, was halt sozusagen im echten Leben eher sozusagen resoniert mit den Anwendern als solches. Und deshalb haben wir halt Knotenbeziehungen genommen und nicht Vertex und Edge, was sonst halt oft diese wissenschaftlichen Bezeichnungen für Knoten und Kanten darstellen als solches. Ja, das sind so die Grundelemente und dann gibt es natürlich auch Dinge wie Indizes und Co. Auch, aber in einem Graph ist halt der große Unterschied, dass ein Index nur genutzt wird, um den Startpunkt einer Graph Anfrage zu finden oder die Startpunkte einer Graphanfrage zu finden und nicht während ich diese Graphenmuster halt sozusagen folge, dann werden keine Indexe mehr benutzt sozusagen. Das ist halt der große Unterschied zu einer relationalen Datenbank, wo halt die Indexe wichtig sind, um die Joins halt performant hinzukriegen. Das brauche ich halt in einem Graphen nicht. Das sind Indizes wirklich nur reine initiale Such oder Lookup Mechanismen sozusagen.",
+      "start": 1486428,
+      "end": 1647098,
+      "confidence": 0.9086831,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Jetzt hatten wir initial gesagt, okay, ein Graph in einem relationalen Datenbankmodell abzubilden, kann herausfordernd sein und mit der Wolfgang hat von seiner Master Thesis darüber gesprochen und ich habe auch gesagt, man kann es halt machen, aber ist dann halt kacke. Ist natürlich ein bisschen drastisch ausgedrückt, aber kannst du einmal kurz technisch, kannst du kurz einmal technisch erklären, was denn die Herausforderung ist, einen Graphen in einem relationellen Datenmodell abzubilden?",
+      "start": 1647194,
+      "end": 1670532,
+      "confidence": 0.9044778,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Also es gibt da zwei Herausforderungen. Das eine ist, dass die meisten Graphen oder Graph Datenbanken dynamisch sind, also schemafrei. Das heißt, ich müsste in der relationalen Datenbank entweder auf sechste Normalform gehen und dann sozusagen wirklich eine Knotentabelle, eine Attributstabelle und eine Beziehungstabelle mir bauen, die ich dann halt immer wieder mit self Joins zusammenführen muss, wo dann halt die Komplexität dieser Statements halt extrem hoch wird, oder ich müsste halt dynamisch sozusagen Schema generieren zu jedem Zeitpunkt, wenn sich halt ein neues Attribut oder neue Beziehung oder neuer Knotentyp hinzugefügt wird. Das ist ein Aspekt. Der andere Aspekt ist nicht so sehr die Speicherung. Also ich kann halt die Daten schon in der relationalen Datenbank speichern, aber die Abfragen dann, das heißt, wenn ich halt sogar nur mäßig komplexe Graph Abfragen mir anschaue, stehen dahinter oder würden dahinter in der relationalen Datenbank sehr viele Joins stehen. Und gerade bei größeren Datenmengen spielt die Anzahl der Joins ja schon eine große Rolle, was die Performance der Abfragen betrifft. Da haben wir gesehen, dass viele Anwendungen, die versucht haben, denselben Anwendungsfall in einer relationalen Datenbank auszuführen, haben halt mehrere Größenordnungen langsamere Performance gehabt.",
+      "start": 1670596,
+      "end": 1748542,
+      "confidence": 0.89978033,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Und wie macht ihr das?",
+      "start": 1748606,
+      "end": 1749486,
+      "confidence": 0.968544,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Genau?",
+      "start": 1749558,
+      "end": 1749806,
+      "confidence": 0.93789,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Wie wir das machen, ist im Endeffekt, wie schon gesagt, wir machen ja keine Joins. Das heißt, was wir machen, ist, wir folgen eigentlich direkt Speicheradressierungen sozusagen. Also jeder Knoten hat sozusagen eine Liste seiner Beziehung auf seine Nachbarknoten und da stehen halt wirklich sozusagen die entsprechende Speicheradresse des Zielknotens innerhalb sozusagen drin.",
+      "start": 1749838,
+      "end": 1771050,
+      "confidence": 0.87184846,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Aber geht ihr dann immer davon aus, dass ihr das im Hauptspeicher habt? Weil auch früher, vor allem wenn man jetzt an 2007 denken, ist ja doch die Spinning Disc noch der Standard gewesen und da waren ja Sprünge sehr teuer. Das heißt, wenn man jetzt ganz klassisch durch den Graph springen würde, wäre das ja von der Spinning Disc super teuer.",
+      "start": 1771130,
+      "end": 1787930,
+      "confidence": 0.9026585,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Das ist definitiv richtig. Also Graphen profitieren extrem davon, das im Hauptspeicher zu haben. Also wenn ich das von Platte kratzen muss, dann ist die Performance natürlich sehr, sehr schlecht. Aber da kommt auch ein interessanter Aspekt von Graphen zu tragen. Die meisten Graph Suchen sind ja lokale suchen, das heißt, ich habe halt irgendwelche Einstiegspunkte, eine Person oder ein Produkt oder halt irgendein Ereignis und dann gucke ich halt, wie sieht das halt in der Nachbarschaft dieser Entität halt aus sozusagen. Also ich gehe halt eins, zwei, drei Hops weiter und oft ist es so, dass in einem aktiven, sozusagen diesem aktiven Datenset oder Hot Dataset, dass das gar nicht so groß ist im Vergleich zu der Gesamtzahl der Daten. Das heißt, heißt, wenn ich in einem aktiven Anwendungszustand bin, wo Anfragen laufen, dann ist es meist so, dass ich halt nur einen gewissen Prozentsatz meiner Daten gleichzeitig im Speicher haben muss. Also weiß ich nicht, 1020 % oder so. Und die sind dann halt sozusagen unmittelbar verfügbar und können halt geladen werden. Wenn ich halt die Anforderung habe, dass ich auf alle Daten gleichzeitig performant zugreifen muss, habe ich zwei Möglichkeiten. Entweder ich muss mir halt entsprechend viel Speicher zulegen, der dann halt durch Kompression und so natürlich auch effizient genutzt wird. Aber in den meisten Fällen ist es dann auch so, dass du halt auch eine Skill out Lösung nehmen kannst, dass du sozusagen mehrere Maschinen hast, wo halt mit Routing, Query routing und ähnlichen Sachen halt dann die Abfrage auf die jeweilige Maschine ist, wo das Hot Dataset sozusagen für diesen Teil zur Verfügung steht.",
+      "start": 1788010,
+      "end": 1871136,
+      "confidence": 0.93913114,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Wenn du jetzt erklärt hast, die Abfragen, die man dann machen muss, jetzt sind wir schon fast in den Abfragesprachen drinnen, aber wenn du so einen klassischen Algorithmus hast, finde jetzt den kürzesten Weg zwischen zwei Punkten. Das ist ja an sich schon ein super schweres Problem. Also das werdet ihr ja auch nicht einfach so lösen können. Es wird das komplexe Problem an sich bleiben. Aber habt ihr dann da Algorithmen schon implementiert, die dann solche klassischen Abfrage Patterns wirklich dann berechnen oder muss ich das dann in der Abfragesprache selber definieren? Kann ich das überhaupt in der Abfrage selber Sprache selbst definieren? Also wie mache ich dann das konkret, wenn ich da so Daten habe und dann so eine Abfrage machen muss? Also wie sieht denn dann so eine Abfrage grundsätzlich aus?",
+      "start": 1871248,
+      "end": 1916430,
+      "confidence": 0.921249,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Ja, also an sich haben wir schon eine ganze Menge Algorithmen implementiert, z.B. kürzeste Pfad suchen, aber auch viele andere Graph Algorithmen, wie z.B. clustering von Graphen oder halt zu berechnen, was sind zentrale Punkte, wie PageRank z.B. in dem Graphen halt auch. Also du kannst da aus 70 Algorithmen, die schon vorimplementiert sind, wählen. In vielen Anwendungsfällen ist es so, dass sie natürlich eine spezielle Variante davon benutzen wollen, dann ist das halt konfigurierbar. Aber was du halt auch machen kannst, ist innerhalb der Abfragesprache sozusagen diese Graph Muster hinzuschreiben, die dich interessieren. Und dann ist das ja deklarativ ist, kann der Query Planer und die Runtime sozusagen entscheiden, wo fange ich denn jetzt an zu gucken, welche Daten sind jetzt verfügbar, was sind die selektivsten Einstiegspunkte? Und unter der Haube würde der dann sozusagen dieses Graphenmuster, was du halt darstellst, am effizientesten ermitteln. Manchmal fangen wir dann halt auch von zwei Seiten gleichzeitig an oder von drei Seiten gleichzeitig anzusuchen. Also ist es nicht immer nur, ich gehe von A los und versuche dann irgendwie verzweifelt zu finden, wie ich zu B komme sozusagen, sondern man kann halt auch von A und B gleichzeitig starten und dann z.b. auch noch Heuristiken benutzen, die sagen, okay, welche Richtung ist denn jetzt am wahrscheinlichsten? Dass ich halt den andere Seite treffe und so. Also die Runtime unter der Haube ist schon wirklich graf optimiert. Also es ist halt nicht einfach nur eine relationale Datenbank unten drunter, sondern es ist halt wirklich von oben bis unten graph optimiert sozusagen. Auch der Speicher, die Runtime, welche Pages werden aus den Dateien in den Speicher gemappt und so. Das ist halt alles sozusagen graph optimiert, dass halt diese Sachen halt dann wirklich effizient abgebildet werden können.",
+      "start": 1916550,
+      "end": 2014120,
+      "confidence": 0.91104776,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Kennt ihr dieses Scooby Doo Meme, wo jemand einfach so eine Geisterbox Maske hochzieht und darunter steckt dann jemand anders? Da kommt mir gerade ein bisschen in Erinnerung, wo du ja, Neoj ist jetzt keine relationale Datenbank, nur mit einem Graph Layer obendrauf. Dann denke ich gerade so an das Scooby Doo Meme. Ich muss das mal basteln.",
+      "start": 2014580,
+      "end": 2032884,
+      "confidence": 0.8964486,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Das ist ein sehr schöner Vergleich, weil das gibt es halt doch ganz viel. Es gab halt in der Vergangenheit jedenfalls sehr viele Datenbankhersteller gesagt haben, oh, Graph ist cool, wie du sagst, oh, das ist ja eine spannende, tolle neue Sache, lass uns doch mal schnell Graph leer auf unsere relationale Datenbank obendrauf packen sozusagen. Und dann können wir sagen, wir sind auch eine Graf Datenbank. Und das ist halt ziemlich viel passiert, was zwei Effekte hatte. Zum einen gab es dann plötzlich ganz viele Graf Datenbanken, zum anderen waren die Nutzer dann ein bisschen frustriert, wenn dann die sozusagen versprochenen Vorteile dann doch nicht eingetreten sind, was natürlich dann das Gesamtbild von Graf Datenbanken ein bisschen betrübt oder eingetrübt hat sozusagen. Das ist halt dann so eine, man muss halt, wenn man so Entscheidungen trifft, sich schon auch überlegen, okay, wie funktioniert die Technologie unter der Haube? Macht die eigentlich das, was ich da brauche in dem Moment? Oder ist da halt eine Sache einfach drüber gestülpt worden, die halt sozusagen nur den Anschein, die Fassade erweckt?",
+      "start": 2032932,
+      "end": 2087344,
+      "confidence": 0.9227523,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Das ist ja auch immer eine Frage, die ich mir stelle. Immer wenn ich eine Multimodel Datenbank sehe, dann frage ich mich halt immer, also gar keine Kritik an diese Multimodel Datenbanken, vielleicht sind die einfach nur deutlich klüger als wir alle zusammen. Es kann ja auch wirklich sein. Nur ich frage mich halt immer, okay, eine Datenbank wird auf einen spezifischen Use Case, relational document oder Graph programmiert und dann kommt eine, die macht alles. Und da frage ich mich immer schwierig, aber Neoj kam auf meinen Tisch damals durch die Abfragesprache Cypher, denn wenn wir.",
+      "start": 2087392,
+      "end": 2116834,
+      "confidence": 0.9337327,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Weil dir der Name so gut gefallen hat, Andi.",
+      "start": 2116922,
+      "end": 2119154,
+      "confidence": 0.92654556,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Ja, jetzt quizfrage Wolfgang an dich, Michael, bitte nicht spoilern. Weißt du, woher der Name Cypher kommt?",
+      "start": 2119282,
+      "end": 2127106,
+      "confidence": 0.88810414,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Wolfgang ich kenne nur SSL Cypher, sonst kenne ich eigentlich kein.",
+      "start": 2127138,
+      "end": 2131354,
+      "confidence": 0.7911591,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Ja, das ist leider falsch. Ich habe nämlich in der Vorbereitung auch ein bisschen trivia Wissen rausgeholt. Nein, aber damals ging, glaube ich, auf heise oder wo auch immer durch, okay, es gibt eine neue Abfragesprache für Graphen. Cypher kommt, glaube ich, aus dem Hause auch Neoj, weil ich habe mich immer gefragt, okay, kann ich denn mit klassischem SQL, also mit ANSI SQL, was wir aus relationalen Datenbanken finden, oder vielleicht auch aus NoSQL Datenbank, ich meine, Cassandra ist ja auch so eine Art NoSQL Vertreter mit einem Cassandra SQL Dialekt, wenn man so möchte. Und Cypher war ja dann so ein bisschen was Neues. Und Michael, kannst du vielleicht uns einmal eine Explain me like I'm five Einführung in Cypher geben? Und warum ist das, ich sag mal, eine prädestinierte Sprache, um Graphen abzufragen?",
+      "start": 2131522,
+      "end": 2176404,
+      "confidence": 0.90707797,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Das kann ich auf jeden Fall tun. Die trivia Antwort, willst du die auch noch haben oder willst du die selber geben?",
+      "start": 2176452,
+      "end": 2181320,
+      "confidence": 0.9474704,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Gib sie ruhig, dann kann ich einmal ganz kurz confirmen auf meine Recherche. Richtig war ja jetzt.",
+      "start": 2182540,
+      "end": 2186996,
+      "confidence": 0.9131865,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Moment, Moment, Moment. Der Andi zuerst behauptet groß, jetzt will ich es schon zuerst von Andi hören.",
+      "start": 2187028,
+      "end": 2192610,
+      "confidence": 0.84475,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Okay, also meiner Recherche nach kommt der Name Cypher aus dem Film the Matrix von einem Charakter. Und Der Charakter in dem Film Matrix, Cypher ist, ich sag mal, der Bösewicht oder einer der bösen Agenten, soviel ich weiß. Das ist meine Recherche, ist das richtig?",
+      "start": 2192690,
+      "end": 2210818,
+      "confidence": 0.9190763,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Genau, da kommt das her. Und eigentlich kommt auch das Neo von Neoj, kommt auch von Thomas anders, weil die Gründer von NeovD waren sehr große Matrix Fans damals in den ERN. Und die Matrix ist ja so ein bisschen square tabellarisch, sozusagen, wenn man da so ein bisschen guckt. Also das heißt, Neo ist der, der gegen die Matrix kämpft, sozusagen, gegen die Tabellen kämpft. Und es hieß natürlich auch Network Engine for Objects, Lund AB als schwedische Firma, aber auch NIO für Thomas Anderson aus der Matrix sozusagen. Und es gibt halt einige oder gab auch viele Projekte innerhalb von Neoj, die halt Matrix Namen haben. Es gab sogar mal eine Kraft von Microsoft, die Trinity hieß. Deshalb konnten wir Trinity leider nicht selbst verwenden.",
+      "start": 2210994,
+      "end": 2253000,
+      "confidence": 0.9182504,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Stimmt, an die kann ich mich sogar noch erinnern.",
+      "start": 2253420,
+      "end": 2255412,
+      "confidence": 0.99270886,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Und Cypher hat halt damals, ich glaube, Tank umgebracht im Film. Und Tank war eine API, die wir vorher hatten und sozusagen unser internes Ding war das sozusagen Seife, der Nachfolger oder derjenige war, der halt Tank umgebracht hat, sozusagen. Aber es ist halt auch eigentlich ein schöner Name so ein bisschen. Und ja, warum haben wir eigentlich mit Saph angefangen. Am Anfang haben wir natürlich, wie schon gesagt, Neoj war eine Java Bibliothek, das heißt, du hast es mit einer Java API benutzt, was natürlich allen Leuten, die kein Java schreiben, nicht so richtig gut gefallen hat, weil die wollten ja kein Java lernen, nur um NeoJ zu benutzen. Und dann haben wir halt ne Server gebaut, dass du den halt auch von außen per REST API benutzen kannst. Aber wir brauchten halt eine Abfragesprache, die irgendwie funktioniert. Und wir haben uns natürlich auch SQL angeguckt. Aber wenn ihr euch so einen Graphen mal vorstellt auf einem Whiteboard, du hast halt viele Entitäten, Kreise, die mit Pfeilen miteinander verbunden sind. Wenn du jetzt ausdrücken willst, ich möchte von A nach B, nach C, nach D mit bestimmten Bedingungen und Typen gehen, dann sind das halt locker schon mal für vier Schritte acht Joins. Und wenn man sich das alles in SQL vorstellt, sieht man halt den Wald vor lauter Joins nicht mehr. Das heißt, in SQL, wenn ich dieselben Abfragen in SQL schreiben würde, wären halt 80 % meiner Abfrage oder 90 % meiner Abfrage nur join, join, join und ich würde eigentlich nicht mehr sehen, was da eigentlich passiert. Und es hat uns nicht so richtig gut gefallen. Und wir hatten den Effekt, dass wir damals viele Anwender hatten, die uns in E Mails so Graf Ausdrücke in ASCII Art geschickt haben. Das heißt, die haben halt um die Knoten so kleine runde Klammern drum gemacht und für Beziehungen haben sie halt Strich, Strich, größer als Zeichen, also wie so ein kleinen Arrow, wie so einen kleinen Pfeil halt hingemalt. Und das fanden wir ganz cool, weil damit konnte man sehr kompakt sozusagen auch Kraftmuster darstellen sozusagen. Und dann haben wir gedacht, warum machen wir das nicht einfach so, dass wir diese Muster nehmen, die die Leute eh schon benutzen und das sozusagen als Kern einer Abfragesprache benutzen, die halt für Graphen optimiert ist. Wir mussten ja eh einen Planer und eine Runtime und einen Parser und alles neu bauen. Für uns war ja wie gesagt Fullstack Datenbank so, das heißt, wir mussten das eh alles machen. Warum, hat man dann gesagt, warum machen wir da nicht mal, betreten wir ein bisschen Neuland und nutzen halt das, was halt sehr natürlich für die Leute ist, um Graphen auszudrücken. Neoj ist aber auch von Anfang an so eine pragmatische Datenbank, halt wirklich für Softwareentwickler nicht so die hehre Lehre aus dem Elfenbeinturm, sondern halt wirklich was, wie kann ich halt am besten Anwendungen bauen, wie kann ich halt am einfachsten Sachen ausdrücken und die halt auch benutzen. Und so kam es halt, dass halt Cypher um diese Graph Muster sozusagen rundherum gewachsen ist, als man stellt halt Knoten da, in dem man runde Klammern um eine Entität rummacht. Man kann den mit einem Doppelpunkt einen Typ geben, z.B. doppelpunkt Person ist halt ein Personenknoten. Und für Beziehungen kann ich halt einfach ein AScII machen und wenn ich für die Beziehung noch was zusätzliches hinzufügen will, kann ich dann halt eckige Klammern mit dem Doppelpunkt Typ z.B. person, dann den Pfeil mit arbeited by und dann wäre halt company z.B. als als Firma sozusagen. Da habe ich so ein kleines Graphmuster und dann kann ich halt dann in so einer Art JSON Syntax noch Attribute in alles halt reinhängen. Und so sieht halt Cipher im Endeffekt aus. Das ist halt der Kern. Und diese Graphmuster kann man halt nutzen, um Daten zu finden, um Daten anzulegen, um Daten halt zu filtern. Also die kann man an ganz vielen verschiedenen Stellen in der Abfrage halt auch benutzen, weil diese Graph Muster sind halt sozusagen die Essenz Graph Datenbank und dann der Rest der Abfragesprache ist im Endeffekt Filterung, Gruppierung und all die Sachen, die man halt bei SQL auch kennt. Ich habe mich zum Glück durchgesetzt, ich konnte Group z.B. nie leiden in SQL, deshalb gibt es den hier für J kein und Seife können Group by, weil das kann man einfach inferieren von den, was sind die Grouping Keys sozusagen? Warum muss ich das zweimal hinschreiben? Lustigerweise gibt es das jetzt auch in einigen SQL Datenbanken, z.B. in DuckDb, die haben ein Group by all und dann macht er das automatisch z.B. und paar andere Sachen, die ich halt auch damals schöner fand, war, ich hatte Having war auch so eine Klausel in SQL, die ich nie leiten konnte, weil die irgendwie so künstlich wirkte. Und was wir in Cypher gemacht haben, ist eher so ein Pipelining, das heißt, eine Abfrage besteht halt aus vielen teilen und die können halt Daten von einem Abfrageteil zum nächsten sozusagen in so einer Art wie eine Unix Pipe sozusagen ein bisschen weiterschieben sozusagen. Und an der Stelle kann ich dann natürlich nach dem ersten Abfrageteil kann ich natürlich einen Filter dranlegen und wenn der erste Teil eine Aggregation war, habe ich dann mein Having sozusagen implementiert und kann davon aber beliebig viele machen. Oder ich kann halt sozusagen im ersten Teil der Anfrage mir sagen, was sind die top, top fünf Produkte und dann für diese top fünf Produkte will ich dann aber z.b. detailinformationen in dem zweiten Teil der Anfrage machen. Und im dritten Teil der Anfrage will ich vielleicht eine Aggregation über diese ganzen Informationen machen. Und das ist halt ziemlich mächtiges sozusagen eingebautes Pipelining in der Abfragesprache.",
+      "start": 2255556,
+      "end": 2540802,
+      "confidence": 0.9138749,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Hat es irgendwie Gründe gegeben, warum ihr nicht auf bestehende Systeme wie Sparkle, Spark, wie man es auch immer ausspricht, gesetzt habt? Oder noch, wenn man noch mehr in die Vergangenheit geht, Datalog hat es ja noch gegeben, zu Uhrzeiten, die ja auch grundsätzlich funktionieren.",
+      "start": 2540866,
+      "end": 2556232,
+      "confidence": 0.92587775,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Genau, also wir haben uns auf jeden Fall viele verschiedene Anfragesprachen und Programmiersprachen angeguckt. Also Cypher hat auf jeden Fall aus SQL, aus Sparkle, aus Python und aus anderen Sprachen halt Anleihen genommen, um gute oder interessante Aspekte halt da rauszuziehen. Spargel selbst haben wir deshalb nicht genommen, weil unsere Kraftmodell. Achso, dazu haben wir noch gar nicht erzählt, gar nichts erzählt, dass unsere Graph Modell ist halt kein kein Triple Store Modell, wo man halt sozusagen Subjekt, Prädikat, Objekt ablegt, sondern ist halt näher an einem Objektmodell dran, wo ich halt Entitäten mit Attributen habe, die dann halt Beziehungen, die auch wieder Attribute haben, zu anderen Entitäten halt habe. Und das wird auch als Property Graph Modell oder Label Property Graph Modell bezeichnet.",
+      "start": 2556376,
+      "end": 2598022,
+      "confidence": 0.89356863,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Hast du da ein konkretes Beispiel wirklich, wie das dann aussieht, was so eine Property ist?",
+      "start": 2598086,
+      "end": 2603206,
+      "confidence": 0.94866437,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Ja, kann ich auf jeden Fall geben. Also wenn man jetzt, sagen wir mal, ihr hättet Retail Store Verkauf sozusagen, dann hast du halt ein Produkt, das hat den Typ Produkt oder kann auch noch andere Typen haben. Also wir haben also auch mehrere Typen pro Entität sind möglich. Und das hat dann halt Attribute wie Produktnummer, Namen. Es kann halt auch Sachen haben wie ein Embedding oder ein Array von Schlüsselworten oder solche Geschichten halt auch. Es kann auch, wenn du halt z.B. einen Kunden in deinem Retail Store hast, von dem du halt irgendeine Geolocation hast, hat er dann halt auch Punkte, also Geo Attribute oder kann halt auch Datums, also Dateien Attribute haben, halt all die ganzen Geschichten.",
+      "start": 2603358,
+      "end": 2640672,
+      "confidence": 0.91151047,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Aber die Attribute hängen dann wirklich am Knoten als Attribut.",
+      "start": 2640816,
+      "end": 2644816,
+      "confidence": 0.865976,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Genau, im Graphen ist es halt so, dass jede Entität für sich selbst steht sozusagen. Es gibt nicht so was wie eine Tabelle, wo halt irgendwie alle in einer Liste sind, sondern jede Entität ist individuell und du kannst halt an einem Knoten nur ein Attribut haben wie eine ID, wenn du nicht mehr weißt über diese Person oder über das Ding. Und ein anderer Code vom selben Typ kann halt 20 Attribute haben, weil du halt viel mehr weiß davon sozusagen. Und das wird dann halt effizient, nicht.",
+      "start": 2644928,
+      "end": 2668636,
+      "confidence": 0.93592775,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Dass es eine Verbindung zu einem anderen Knoten ist, wo dann die ID wieder ein Knoten ist, sondern es sind wirklich Attribute, die an einem Knoten hängen. Also im RDF Modell wäre das ja irgendwie Objekt XY hat dann eine Verbindung zu der ID fünf, sondern es hängt wirklich direkt.",
+      "start": 2668708,
+      "end": 2684524,
+      "confidence": 0.9147396,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Genau, also das RDF Modell ist sozusagen so ein bisschen sexy Normalform oder sowas, wo man halt wirklich jedes einzelne Attribut in ein eigenes, eigene Entität rausschiebt sozusagen. Also selbst dein Name wäre ein eigenes Ding und deine Größe und dein Gewicht wären halt eigene andere Entitäten sozusagen, auf die du zeigen würdest. Und in dem Property Graph Modell ist das eher, wie gesagt, schon vorher schon gesagt, pragmatisch, so wie du halt in dem Objektmodell das auch hättest, in deiner Abfrage, in deiner Programmiersprache, wo du halt Entitäten hast mit Attributen, die gehören halt wirklich zu dieser Entität und dann hast du wirklich nur, was sind wirklich echte semantische Beziehungen zu einer anderen Entität. Und die werden halt in der Kraftanbank auch als Beziehung abgebildet, mit dem Unterschied, dass in der Kraftanbank die Beziehung auch Attribute haben können, z.B. sowas wie eine Entfernung oder ein Gewicht oder ein Rating von einem Produkt wäre auf der Beziehung z.b. drauf oder eine Review Beschreibung könnte man halt auch auf die Beziehung z.B. drauflegen, was man dann später wieder nutzen kann, um z.B. sagen kann, was sind halt die Produkte mit den besten Ratings oder wie kann ich halt bestimmte Sachen miteinander clustern, die halt eng zusammenhängen und andere sind halt weiter weg. Und nicht nur auf der Existenz von Beziehungen, sondern z.B. auch, welche Gewichte sind da drauf, also wie stark sind die miteinander verbunden, kann z.B. auch ausgedrückt werden als solches.",
+      "start": 2684652,
+      "end": 2760050,
+      "confidence": 0.8954686,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Und wie speichert ihr das dann wirklich ab? Sind dann die Attribute dann auch physikalisch in Memory dann wirklich an dem Knoten oder werden die dann irgendwie ausgelagert und so halb relational wieder?",
+      "start": 2760210,
+      "end": 2771298,
+      "confidence": 0.90045696,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Ne, also es ist eine Mischung aus die Attribute, die am relevantesten für den Knoten sind, werden die direkt sozusagen in das Knoten Record mit reingeschrieben, sozusagen in die Page, die für den Knoten zuständig ist. Und dann gibt es halt so extra Attribute, die z.B. weiß ich nicht, so was wie lange Texte oder Embeddings oder halt so Dinge, die halt eher nur informativ gespeichert werden, die man jetzt nicht wirklich aktiv für Abfragen braucht, die können dann halt in so einen Sekundärbereich halt noch mal abgelegt werden. Und dann hat halt jeder Knoten zusätzlich halt noch pro Beziehungstyp und Richtung halt Arrays. Mit Pointern auf die Ziele und da werden die Attribute der Beziehung halt, wenn es denn welche gibt, auch mit inline. Das heißt, diese Pointe haben halt zu der Zielknoten und die Attribute zu der Beziehung sind sozusagen dann mit an der Stelle. Das heißt, das wird dann halt als ein Block, als eine Page in Speicher geladen. Wir haben so ein Pitch Cache halt auch und steht dann halt dann da zur Verfügung. Das heißt, du kannst halt auch Iteration z.B. Über alle Beziehungen oder lesen von Attributen aller Attribute eines Methoden ist halt sozusagen eine Batch Operation, die einmal über den Speicherbereich drüber geht und die Sachen halt rauszieht als solches.",
+      "start": 2771354,
+      "end": 2842710,
+      "confidence": 0.90598786,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Um noch mal ganz kurz zu den Abfragesprachen zurückzukommen. Was ich bei der Recherche gefunden habe, ist, was der Wolfgang auch schon angesprochen hat. Da gibt es eine Sprache Datalog, die ist deutlich älter. Ich bin bis auf die er zurückgegangen. Zumindest habe ich was gefunden. Und und dann habe ich gefunden, dass es die Sprache Casca Log gibt, was eine Datalog Implementierung ist, die heutzutage immer noch in Hadoop genutzt wird, um große Datensätze abzufragen. Und dann habe ich was cooles gefunden, was ich so noch nicht gesehen habe. Und zwar ist Datalog wohl ein Subset der Sprache Prolog, wobei du dann in jedem Query sogenannte Regeln erst definieren kannst, was dann die Query sehr einfach macht zu komplexen Regeln. All das, was du auch gerade beschrieben hast. Gib mir doch bitte alle Städte, die innerhalb des US Staates Minnesota sind oder sowas. Und dass du, dass du diese Regeln machen kannst. Und dann kannst du diese Regeln sogar über Queries teilen, um dann sehr komplexe queries sehr einfach zu gestalten. Und da frage ich mich, das ist natürlich irgendwie schon eine coole Sache. Das ist, ich sage, ich nenne es mal so eine Art Funktion oder Methoden. Aber sowas habt ihr jetzt nicht in Cypher, oder? Also in Cypher beschreibt man wirklich genau diese einzelnen Regeln in der Query und auch in so einer Art ascii Art hattest du das ja beschrieben, was ich zugegeben sehr, sehr cool finde, weil ich habe nicht so viel Cypher geschrieben, ich habe noch nicht so viel cipher geschrieben, aber ich schaue auf die Query und ich habe das Gefühl, ich kann die lesen. Wohingegen du bei.",
+      "start": 2842790,
+      "end": 2939292,
+      "confidence": 0.9222999,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Geiler Vorteil.",
+      "start": 2939396,
+      "end": 2940124,
+      "confidence": 0.975605,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Genau, wohingegen bei relationalen Queries, wie du schon sagtest, wenn es da an die Sliding Window Thematik, an Rekursion Group by Having vielleicht noch dem SQL mode Strict und so, da muss ich mich schon mal in stille Kämmerlein setzen, um die Query wirklich zu verstehen, dann solltest du.",
+      "start": 2940172,
+      "end": 2959212,
+      "confidence": 0.92069,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Mal Datalog probieren zu lesen. Das ist dann eine andere Hassnummer. Also das sind dann so komplexe Programme und so detektive Datenbanken. War ein super Trend mal, aber ich glaube, glaube hat es nie aus der Wissenschaft so richtig rausgeschafft.",
+      "start": 2959236,
+      "end": 2971398,
+      "confidence": 0.856474,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Das ist genau auch der Punkt. Also datalog ist sehr mächtig, genau wie Inferenz z.B. in RDF, aber das ist halt alles sehr wissenschaftlich angehaucht. Das heißt, die Komplexität explodiert dann halt relativ schnell. Du kannst zwar abstrakt gut Sachen darstellen, aber wie wartbar ist der ganze Kram dann? Wie schnell ist es möglich für jemanden drauf zu gucken und das zu verstehen? Eine Sache, die ich bei Cypher auch immer total cool fand, war, dass du halt die Anwender nicht verlierst, sozusagen. Als wenn du jetzt als Entwickler halt so eine Saphir Query hast und du zeigst die jemanden von der Fachdomäne sozusagen, dann verstehen die die trotzdem, weil das im Endeffekt visuell darstellt, worüber die die ganze Zeit eigentlich auch reden, also ihre Entitäten, ihre Beziehung. Und du verlierst halt, du hast halt nicht diesen Medienbruch, den du sonst hast zwischen dem sozusagen Anwender und der Business Geschichte und der eigentlichen Implementierung der Datenbank sozusagen, sondern du hast halt, du kannst die Leute halt mitnehmen und die Konsistenz mitnehmen zu der Abfrage und dann auch zu den Ergebnissen. Weil die Visualisierung von Graph ist natürlich auch wieder sehr leicht verständlich als Anwender, wenn ich in der Domäne so und so unterwegs bin. Und das fand ich halt auch immer sehr gut. Und Datalog und Co. Wie gesagt, wie er schon gesagt hat, das kommt aus Prolog ja auch. Es gibt halt auch noch ein paar Datenbanken, die es nutzen, z.B. dertomek als Datenbank, wo auch Sachen wie Time Travel und komplexe andere Sachen abbildbar sind. Oder Logsec benutzt z.B. auch Datalog unter der Haube, aber exponiert das halt nicht nach außen. Also ich denke, es ist immer so eine Art große Macht, kommt auch große Verantwortung Geschichte. Und dann halt ist im Endeffekt wie funktionale Programmierung. Funktionale Programmierung ist voll geil, wenn du halt richtig tief drinsteckst und dann mit Arrow und Kategoriesystem und Monaden schlafen gehst sozusagen. Aber wenn du das nicht kannst, dann guckt man erst mal wie ein Schwein ins Uhrwerk auf so ein funktionales Programm, wo man erst mal einen halben Tag braucht, um zu verstehen, was da eigentlich passiert. Wir wollten halt so möglichst pragmatisch und leicht lernbare. Also am Anfang, als wir Seifer entwickelt haben, einer der Autoren von Seifer hat auch gesagt, er wollte eine humane language sozusagen entwickeln als eine menschliche, menschenfreundliche Abfragesprache. Und das war halt auch immer ein treibender Kern bei uns, wenn wir bestimmte Dinge uns dafür oder dagegen entschieden haben. Komposition ist aber ein mächtiger Aspekt und das gucken wir uns auf jeden Fall an, wie wir Cypher so weit entwickeln können, dass es besser komponierbar ist sozusagen, dass man halt wiederverwendbare Teile besser einmal definieren kann und dann wieder einfach z.b. als Muster wieder anwenden kann. Und wir haben ja letztes Jahr zusammen mit der ISO wurde der neue Graph Query language Standard GQL verabschiedet. Und in diesem Standard, der halt zu großen Teilen auf Seife passiert, also es gibt ein paar kleine Sachen, die halt anders sind, aber das ist halt wirklich nur minimal, ist es so, dass in der zukünftigen Entwicklung ist auch so Komposition, also wo ich halt irgendeinem Pattern einen Namen zuweisen kann und diesen Namen des Patterns dann später verwenden kann, als wo ich halt einfach so übergreifende Definition auch machen kann. Das ist geplant, aber das ist jetzt halt noch nicht enthalten in dem Standard als solches.",
+      "start": 2971494,
+      "end": 3158608,
+      "confidence": 0.91817045,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Jetzt wenn du schon sagst, es geht bei euch auch mehr um wirklich die pragmatische Herausforderung, Herangehensweise, dass man es in der Praxis auch einsetzen kann. Und die Wissenschaft geht halt oft auf die Komplexität, was kann man wirklich aus den Daten lesen? Da ist Geschwindigkeit auch kein großer Punkt natürlich bei euch in der realen Welt, da ist Geschwindigkeit natürlich ein riesen Pluspunkt, wenn man die Geschwindigkeit hat oder eine würde fast sagen Basisanforderung, die jeder Kunde, jede Kundin hat. Und du hast schon kurz erwähnt Indexstrukturen, dass ihr halt auch Indexstrukturen in irgendeiner Form habt oder verwendet. Jetzt wäre natürlich meine wenn ich einen Graph habe, dann springe ich da ja sowieso durch die Gegend. Also wo verwende ich dann überhaupt Indexstrukturen? Ich habe keine Joins, brauche eigentlich keine Indexstrukturen. Also wo werden bei Graf Datenbanken dann Indexstrukturen überhaupt verwendet und wofür?",
+      "start": 3158704,
+      "end": 3208064,
+      "confidence": 0.93673426,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Genau, also in einem Graphen, wenn du dir so ein Netzwerk von Informationen anguckst, musst du ja irgendwo anfangen sozusagen mit der sozusagen, was ist dein Eintrittspunkt, um in diesen Graphen zu navigieren? Und das ist der Punkt, wo Indizes benutzt werden. Also wir haben halt Indexe für Bitris, für numerische Daten, Volltext Index, wir haben Spatial Index, wir haben Vectorindex auch. Und all diese Indizes werden genutzt, um zu finden, was sind denn jetzt meine Startpunkte im Graphen, mit denen ich halt anfangen will, Dinge zu suchen. Und je nach Anwendungsfall ist halt der eine oder der andere oder auch in Kombination Indizes notwendig und dann kann man halt die benutzen, um wirklich zu sagen, okay, was sind denn die ein bis n Startpunkte in meinem Graphen, die ich brauche, um halt meine Abfrage zu machen und dann benutze ich halt einen oder mehr Indexes. Es kann auch mehrere Einstiegspunkte geben, wo ich dann halt sozusagen aus verschiedenen Ecken komme und die dann zusammenführe und dann kann auch verschiedene Index Lookups dafür gemacht werden. Und da seifer ja eine deklarative Sprache ist, kann es auch entscheiden, wann es welchen Index benutzt. Also es guckt auch dann okay, bin ich jetzt hier besser bedient, einfach den Graph traversal zu machen oder eine Graphnavigation zu machen, um dahin zu kommen, oder ist der Index so selektiv, dass ich da halt nur ein Ergebnis zurückkriege? Und das ist halt viel effizienter von diesem einen Ergebnis auszustatten. Man muss sich halt auch so Dinge angucken, in dem Graphen dann halt wie viele Beziehungen hat ein Knoten zu seinen Nachbarn? Lohnt es sich lieber von rechts oder von links zu gucken, je nachdem, wie viel ich da halt folgen muss, um das Ziel zu finden. Da gibt es halt sehr viele Optimierungen. Also der Query Planer von Seifer ist schon sehr komplex und hat halt viele dieser Graphkonzepte halt mit eingebaut, aber Indizes sind wirklich nur, um Startpunkte zu finden.",
+      "start": 3208192,
+      "end": 3308168,
+      "confidence": 0.91298896,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Jetzt haben wir ganz am Anfang schon kurz erwähnt, dass Graphen eigentlich oder Graph Datenbanken ganz allgemein schon für allgemeine Workloads auch verwendet werden können. Du hast gemeint, man soll jetzt nicht alles auf Graphen umschreiben, nur damit man eine Graf Datenbank verwenden kann. Gibt es irgendwo Anwendungsgebiete, wo du okay, das ist klassisch relational, da macht es keinen Sinn, Graph Datenbank zu verwenden. Also gibt es irgendwo Limitierungen von dem ganzen Modell, wo man sagt, dafür ist es eigentlich nicht geeignet?",
+      "start": 3308224,
+      "end": 3337260,
+      "confidence": 0.8964707,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Ja, wie wir alle wissen, ist nicht für alles nutzbar. Wir haben vorhin gerade auch kurz multimodale Datenbanken angesprochen. Also Datenbanken sind schon für bestimmte Anwendungszwecke gebaut. Und für Graphen ist es so, wenn ich halt komplexe Netzwerke von Informationen habe in meiner Domäne, dann kann ich die dafür sehr gut anbieten, einsetzen. Besonders wenn halt auch meine Abfragen halt die Komplexität nutzen. Wenn ich in meinen Abfragen immer nur wer ist der Nachbar frage, dann brauche ich keine Kraftdatenbank, da kann ich auch einen einfachen Join machen sozusagen. Die Themen, wo Kraftdatenbanken nicht dafür gebaut sind, sind diese ganzen Data Warehouse Number crunching Themen, wenn ich halt wirklich über Milliarden von Datensätzen halt Aggregation, Filter und ähnliches machen muss, wo halt ein column Store, ein moderner Column Store halt viel besser geeignet ist. Oder wenn ich halt Binärdaten speichern möchte, also Bilder oder Filme oder sowas, das ist halt für den Kraftanbau auch nicht gemacht. Da würde man halt die Daten auf irgendeinen Blobst packen und dann eine URL speichern, um darauf zuzugreifen. Ein anderes Thema, was ich mir wünschen würde, dass wir das halt besser integriert hätten, aber was zurzeit noch nicht der Fall ist, ist diese ganze Times Geschichte. Also es gibt ja Times Datenbanken, die speziell halt auf große Mengen von Ereignissen nutzbar sind, mit Window Funktion und Sliding Windows und Aggregation und alle möglichen Vorhersagen und ähnliches. Das ist halt was, was jedenfalls zurzeit auch noch nicht in Kraftanlagen oder so verbreitet ist. Was mich zu einem anderen Punkt führt, immer wenn du halt extrem hohe Schreiblasten hast, also wenn wir halt so über Millionen von, oder mehr als Millionen von Einträgen pro S halt sprechen, wenn ich, weiß ich nicht, Sensorinformationen z.b. wegschreiben muss oder halt Clickstreams oder ähnliches, also wo ich halt wirklich große Schreibmengen habe. Da wir, wie ich vorhin gesagt habe, in der Graf Datenbank diese Beziehungen beim Einfügen materialisieren, ist halt der Schreibaufwand höher, um dann beim Lesen effizienter zu sein. Und das ist was, was sozusagen die Schreibperformance von Kraftdatenbanken sozusagen auch begrenzt als solche. Also so zwischen, weiß ich, sagen wir mal eine halbe Million bis Million geht halt noch, wenn ich halt das Ding entsprechend aufsetze, aber alles was danach ist, ist halt nicht gut geeignet. Und auch die Struktur von diesen Times Events sind halt einfach nur relativ einfache Nachrichten mit einem Timestamp und ein paar Werten oder Observability Daten oder sowas. Das würde ich halt auch nicht in speichern, nicht, dass ich das schon gemacht, nicht schon gemacht habe, aber ich würde es nicht empfehlen, sozusagen als Hauptanwendungsfall sozusagen solche Dinge zu machen.",
+      "start": 3337600,
+      "end": 3492520,
+      "confidence": 0.9085987,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Weil du jetzt schon die Zeit erwähnt hast, ist mir gerade eingefallen, temporale Datenbanken ist ja so ein Klassiker, der immer so immer wieder mal durchs Dorf getrieben wird. Ich glaube, irgendwann hat er es dann sogar in den SQL Standard geschafft. Jetzt bei Graphen wäre das ja eigentlich sehr naheliegend, dass man irgendwie so ein historisches Modell hätte, wie hat sich der Graf entwickelt? Ich kann meinen Graf ansehen, die hat er genau vor einem Jahr ausgesehen. Habt ihr da irgendwie einen Support dafür? Weil das würde sich ja bei Graphen grundsätzlich anbieten.",
+      "start": 3492600,
+      "end": 3519880,
+      "confidence": 0.90784246,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Ja, also wie schon gesagt, an sich ist Datums und Zeitinformation als Attribut kein Problem. Wenn es darum geht, historische Graphen abzubilden, ist es immer so ein bisschen Balance zwischen wir feingranular, muss ich diese ganze Information abhalten. Es gibt halt auch so verschiedene Datenmodelle, die halt vergangene Informationen als flache Kopien sozusagen von Informationen vorhalten. Gibt so persistent data structures als Thema z.b. das kann man halt alles in NEVG implementieren. Es gibt auch einige Erweiterungen, Plugins, die das halt machen, aber die Herausforderung ist halt, dass du diese ganze historische Teil macht halt deinen eigentlichen Graphen halt größer und komplexer. Und wenn du halt dann Millisekunden Ergebniszeiten für deine Queries haben willst und diesen ganzen historischen Kram mitschleppst, das ist dann halt nicht so prickelnd. Und was wir da halt eher empfehlen, ist, dass sozusagen dieser Archivgraph separat von dem aktuellen Snapshot sozusagen gehalten wird, was man halt z.B. Über Change Data Capture oder ähnliches halt machen kann, dass sozusagen dann halt die Änderungen in einen zweiten Archivkraft laufen, der halt auch wirklich für diese Auditing und Archivfunktion halt optimiert ist, also der halt wirklich auch für diesen Anwendungsfall gedacht ist, sodass dein aktueller Runtime Graph sozusagen immer noch hoch performant genau deine Domäne darstellt, die du jetzt gerade hast, ohne die ganzen historischen Änderungsinformationen als solches. Es wäre schön, wenn es da eine bessere eingebaute Lösung gäbe, aber das ist halt auch ein sehr komplexes Problem, wo man halt auch viele Trade offs machen muss und das ist halt nicht so trivial.",
+      "start": 3519960,
+      "end": 3613946,
+      "confidence": 0.91611934,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Was wir an einem klassischen Workload gar nicht so richtig bisher besprochen haben, aber das ergibt sich halt eigentlich oder war immer so ein klassisches Beispiel, sind Knowledge Graphen, also meine Wissensdatenbank, die in einem Graphen abbilde, also welche Person ist mit welcher Person verknüpft oder welche Person kommt in welcher TV Show vor. Das ist so klassisches Graph Beispiel, was man da eigentlich hat. Jetzt hat er so in den letzten zwei, drei Jahren die ganze LLM Bewegung und die KI unter Anführungszeichen, das ganze Feld ein bisschen aufgeräumt und die Knowledge Graphen sind jetzt weniger wichtig geworden. Merkt ihr das irgendwie, dass das einen Einfluss hat, dass dann Graf Datenbanken auch gar nicht mehr so viel verwendet werden, weil man kann jetzt eh alles in Volltext ablegen und braucht eigentlich keine Datenbank mehr dafür?",
+      "start": 3614058,
+      "end": 3664710,
+      "confidence": 0.9194091,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Das ist sehr schön, dass du das ansprichst, weil es genau andersrum Knowledge Graphen und Graphen sind eigentlich viel wichtiger heutzutage in KI Systemen. Ganz kurz was zu Knowledge Graphen. Ich sehe das immer so ein bisschen, um das zu erklären, was ist ein Knowledge Graph? Das ist ja so ein bisschen weicher Begriff, den man nicht so richtig gut fassen kann. Ich sehe das immer so ein bisschen als digitalen Zwilling der echten Welt. Also dass du sagst, du hast halt ein Unternehmen mit all den Personen, Prozessen, Teams, Projekten, Kunden, Partnern und so. Und wenn ich das halt alles irgendwo digital halt abbilden will, dann ist das sozusagen der Knowledge Kraft meines Unternehmens oder mein meiner Behörde oder meiner privaten Interessen oder meiner Familie oder so. Also was ist sozusagen ein digitales Abbild, das aber auch die Reichhaltigkeit dieser ganzen Beziehungen halt abbildet, die da drin versteckt sind. Und das hilft mir jedenfalls zu verstehen, was ist Knowledge Graph in einem bestimmten Anwendungsfall halt sozusagen. Wir haben halt seit vielen, vielen Jahren viele Firmen, die halt neulich Graphen benutzen, um halt genau ihre internen Prozesse entweder zu analysieren, zu bewerten, zu verbessern oder manchmal ist es auch Regulatorien, dass sie halt aus rechtlicher Grundlage her bestimmte Sachen halt nachweisen müssen. Oder z.b. wenn zwei Firmen zusammengehen, wie kriegt man halt die Prozesse der Leute der beiden Firmen zusammen? Also sind schon lange auch große Knowledge Graphen, also im TB Bereich durchaus üblich. Und mit den LLMs ist es ja jetzt so, wie wir alle wissen, sind halt LLMs sehr gut darin, wenn es um Sprache geht. Also die können gut übersetzen, gut zusammenfassen, gut Sprache generieren. Aber wenn es um Wissen geht, sind LLMs halt immer so ein bisschen heikel. Gerade wenn ich in vertrauenswürdigen Anwendungen die benutzen will, kann ich mich nicht darauf verlassen, dass die da nicht gerade mal ein neues Paper erfunden haben oder ein neues Produkt erfunden haben oder eine neue Person erfunden haben, die es gar nicht gibt. Und deshalb wird es halt so gemacht, dass man LLMs normalerweise mit Datenquellen kombiniert, wo die eigentlichen Informationen herkommen. Und das LLM hat wirklich nur die Sprachaufgabe, aus diesen Informationen, die aus der Datenquelle kommen, dann eine Antwort oder eine Schlussfolgerung zu generieren. Und Graphen sind insofern ganz interessant, dass sozusagen die Ergänzung zum LLM darstellen, wie so ein bisschen die rechte und linke Seite des Gehirns sozusagen. Die eine Seite ist halt gut mit Sprache und Kreativität und all diese anderen Sachen und die andere Seite bringt halt sozusagen die reich vernetzten Fakten dazu. Und das ist halt was, das wir in den letzten zweieinhalb, drei Jahren jetzt massiv gesehen haben, dass halt immer mehr Leute dazu übergehen, halt neugierig Graphen oder Kraftdatenbank mit LLMs zu kombinieren, um halt mehr Kontext zu haben als nur die reinen Textfragmente, die ich jetzt z.B. von der Vektorsuche bekomme. Und das, weil du es gerade angesprochen hast, alles ist jetzt Text, nur eine kleine Anekdote. Es ist eigentlich traurig zu sehen, wie viele Leute, von denen man das eigentlich besser wissen sollte, ihre schön strukturierten Daten aus Datenbanken nehmen die in Textdokumente auf, umwandeln in Markdown dokumente z.B. die dann in Chunks aufsplitten, eine Vektor Embedding draus machen oder Text Embedding drauf machen und dann in einen Vektor Store werfen und denken, jetzt habe ich eine viel bessere Art und Weise, meine Daten zu suchen, als ich vorher in meiner original Datenbank, egal ob das Graph oder anders war. Das finde ich ziemlich erschreckend, muss ich ehrlich sagen. Es ist ja viel sinnvoller, die beiden Systeme miteinander zu kombinieren und dann die Stärken des jeweiligen Systems zu nutzen, wo ich halt semantische Suche in Vektordatenbank machen kann und strukturieren suche in einer echten Datenbank, wo ich halt auch die ganzen semantischen oder die ganzen strukturierten Informationen über meine Daten halt auch noch habe.",
+      "start": 3665770,
+      "end": 3865044,
+      "confidence": 0.9159565,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Jetzt bist du ja schon 15 Jahre dabei und die aktuellen Entwicklungen mit LLMs und so weiter haben wir jetzt auch gerade besprochen. Wenn du in die Zukunft blickst, was siehst du dort? Gibt es irgendwelche Neuerungen am Horizont? Arbeitet ihr selber irgendwie an Neuerungen im Graph Space, die du zumindest erwähnen darfst? Wo siehst du die Reise denn hingehen in der Graf Welt?",
+      "start": 3865172,
+      "end": 3886766,
+      "confidence": 0.8959447,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Ja, also es gibt so diverse Richtungen. Auf einer Seite geht es halt darum, um immer größere Graphen. Das heißt, wie kann ich halt 10 100 TB große Graphen effizient darstellen, ohne die Performance zu verlieren, die ich halt habe, durch meine schöne Ansätze von Kraft Reversals, wenn der Speicher halt nicht mehr ausreicht. Das ist halt ein Thema, also Graph Sharding, wie kann ich halt einen Graphen so aufteilen, dass er trotzdem noch effizient navigierbar ist ist das machen wir in verschiedenen Schritten, als erstmal machen wir Sharding der eigentlichen, der Attribute und lassen den Graphen noch komprimiert zusammen sozusagen. Und später kann man dann überlegen, okay, geht es überhaupt? Weil das ist halt auch ein NP hartes Problem, ein Graph Sharding vorzunehmen, weil es ja doch mehr oder weniger alles direkt oder indirekt mit jedem verbunden. Und wenn ich da halt irgendwo Schnitte einführe, füge ich auch immer Netzwerklatenz zwischen den Schnitten ein. Es gibt dann halt auch Ansätze wie Query Boss Bishotting, wo man man eher von den Anwendungsfällen und von den Abfragen her schadet nicht sozusagen aus der Struktur des Graphen, sondern wie wird sie benutzt? Also das ist ein großes Thema. Das andere Thema sind in 2025 natürlich Agentensysteme. Wie können Graphen dort helfen? Da sind halt so Stichworte, wie können Graphen genutzt werden, um Gedächtnis, Agent Memory abzubilden, komplexere Strukturen da und auch wie können Graphen genutzt werden, um Agenten Workflow und Ausführungen sozusagen darzustellen? Das ist ein spannendes Thema. Und das dritte Thema ist, Graph Compute, was in der Richtung geht, dass ich halt sowohl auf Original Graph als auch auf relationalen Daten die Möglichkeit haben möchte, mit Graph Algorithmen neue Features oder Eindrücke oder Informationen herauszufinden. Und das ist halt auch ein spannendes Thema, weil da geht es halt auch darum, wie kann ich halt skalierbare, verteilte Graph Algorithmen als compute only, also serverless Anwendung bereitstellen. Da haben wir jetzt zurzeit auch an einigen Dingen gearbeitet, z.b. dass du halt in Snowflake Graph Algorithmen direkt auf den Daten, die aus dem Snowflake kommen, laufen lassen kannst, die Ergebnisse zurückschreiben kannst, wo dann halt so auch so feature Computation für Maschinen Learning und ähnliches halt mit reingeht. Das sind so ein paar Themen, die spannend sind. Ansonsten, wir hatten ja schon so ein paar Geschichten angesprochen, wie z.B. temporär temporale Graphen Versionierung und ähnliches. Das sind halt auch immer spannende Themen, die dabeibleiben. Ein anderer Punkt, der eigentlich sehr witzig ist, ist der aktuell oder einer der aktuell besten Algorithmen für Vektorsuche ist auch ein Graph Algorithmus, der heißt HNSW, hierarchical small World Networks. Und sowas ist halt auch ein interessantes Thema, wie kann ich halt sozusagen die Beziehung zwischen n aufgrund ihrer semantischen Ähnlichkeit im Vektorraum als Graph darstellen und dann vielleicht sogar nativ in mein Graph Modell mit einfließen lassen.",
+      "start": 3886878,
+      "end": 4052574,
+      "confidence": 0.9110994,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Wenn du mir jetzt einen Tipp geben würdest, wie ich am besten in das ganze Thema Graph Datenbanken einsteige, also ich habe das, ich komme aus der MySQL, aus der Webwelt, aus der Postgre Welt, aus der nationalen Welt, welche erste Aufgabe gibst du mir, dass ich die in einer GraphDB speicher und welche Applikation baue ich damit? Kann ich eine diese simple To do Liste auf Basis einer Graph Datenbank bauen? Ich glaube, das ist so immer so der Klassiker, wenn man mit etwas anfängt, mit einem Framework, bau eine to Do Liste.",
+      "start": 4052702,
+      "end": 4080934,
+      "confidence": 0.9201403,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Ja, also To Do Liste ist eigentlich ganz spannend, vor allem wenn deine To Do Liste wirklich nicht nur eine Liste von To Dos darstellt, sondern wenn diese To Dos z.B. auch sowas wie Hashtag Automentions haben. Das heißt, diese to do ist halt für deine Frau oder für dein Kind oder für deinen Kollegen oder Wolfi oder so, oder für deinen Gast oder dieser to do ist halt für den Podcast, Podcast und so. Also das heißt, wenn ich so eine To do Liste habe, die ein bisschen reichhaltiger ist als reine nur ein Textdingens, dann wird es auch ein bisschen spannender und du kannst damit anfangen. Also du kannst neoj in der Cloud gibt es halt kostenlose Instanzen, die man sich ziehen kann ohne Probleme. Die laufen dann halt auch für immer. Und dann gibt es Möglichkeiten, also entweder du nutzt halt eine deiner Lieblingsprogrammiersprachen, Python, JavaScript oder TypeScript, Java Net Go oder Android, um Daten in NeovJ reinzuschreiben. Du kannst es auch iterativ oder interaktiv machen, indem du diese Knoten direkt manuell hinzufügst zu einer visuellen Neoj Darstellung. Schreibst du im Endeffekt eine Anwendung. Heutzutage würde ich natürlich sagen, du nimmst dir einfach deinen Cursor, AI oder Windserve oder Copilot und machst V Coding. Das heißt, du sagst der AI einfach nur, das will ich machen und die generiert dir den ganzen Code. Musst du dann nochmal natürlich drauf gucken und dem vertrauen. Wir haben auch Graph Academy, das ist ein relativ nettes Lernsystem, was wir selbst gebaut haben und was auch auf NeoJ läuft, was halt in kurzen, überschaubaren Kursen, SciFi erklärt, erklärt, wie du das z.B. von Python aus benutzt, die Konzepte von NeoJ erklärt, wie kriege ich Daten rein. Du kannst z.B. auch wenn du aus der MySQL Welt kommst und du hast existierende Daten in MySQL, die mit unserem Data Importer direkt importieren, zeigst du einfach nur auf dein MySQL und das zieht dir als Graph rein, als Ausgangspunkt jedenfalls ist es ganz nett, dass man schon was hat. Und mit dem Cloud Service, der heißt Ora, leider diesmal keine Matrix Relevanz, war ich ein bisschen traurig, als die Namensgebung da passiert ist. Und da kann man halt sehr schnell damit starten sozusagen. Also du kannst das in einer halben h oder so, hast du schon irgendwas am Laufen. Das ist eigentlich ganz, ganz nice sozusagen.",
+      "start": 4080982,
+      "end": 4202529,
+      "confidence": 0.9036701,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Vibe Coding empfehlen wir jetzt mal hier nicht, denn wir wollen ja natürlich die Fundamentals auch verstehen. Deswegen leiten wir eher auf so Angebote wie Graph Academy. Michael, vielen lieben Dank für deine Zeit. Ich habe eine ganze Menge gelernt, zumindest, dass Datalog eher keine Relevanz mehr spielt oder was ein Triple Store ist. Vielen lieben Dank und auch danke natürlich für das, was du auch in deiner Volunteerarbeit tust, und zwar, dass du auch Schüler, Schülerinnen programmieren beibringt. Für alle Hörerinnen und Hörer, wir haben natürlich in den Shownotes wie immer ein paar Links zur Verfügung gestellt. Wer also mal mit Graf Datenbanken starten möchte, der findet da auf jeden Fall die Dokumentation zu Cipher. Da seht ihr auch mal ein paar Beispiel Queries und könnt euch mal einen ersten Eindruck verschaffen, ob ihr in der Lage seid, innerhalb von dreiig Sekunden eine Basis Cipher Query zu lesen. Ich finde, das ist einer der mega Vorteile dieser Sprache. Und aber natürlich auch, wenn ihr mal so ein bisschen mehr zum Thema grafql, sag ich schon, jetzt bin ich hier Graf, Graf, Graf, aber wir hatten ja auch GrafQL in dem Thema, zu Grafen und der Graf Academy haben wissen wollt, schaut natürlich auch in den Shownotes. Michael, was ist dein Abschlusswort für die Leute am Audiogerät?",
+      "start": 4202689,
+      "end": 4279172,
+      "confidence": 0.8897526,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Ja, wie du schon gesagt hast, probiert es einfach mal aus und nehmt ein Thema, was euch interessiert und setzt es mal um und schaut euch mal an und dann zeigt mal eure, eurer Großmutter, euren Kindern und euren Partnern, wie so ein Graf dann halt aussieht und guckt, ob die den auch verstehen. Das wäre eigentlich ein ganz spannendes Ding, was ihr da sozusagen erzeugt habt. Das finde ich ganz, ganz interessant.",
+      "start": 4279316,
+      "end": 4297288,
+      "confidence": 0.9021693,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Andi sagt ja normal immer, er will das jetzt ausprobieren. Er wollte ja schon mal Brot backen und kürzlich wollte jetzt ein Game programmieren. Das ist jetzt als einfaches such dir eine alte Person, Andi, und erklär der alten Person mal Grafen. Schaffst du.",
+      "start": 4297384,
+      "end": 4312494,
+      "confidence": 0.9051784,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Pass auf. Ich habe ja gelernt, deswegen habe ich es explizit nicht gesagt. Und ich habe Cypher mal ausprobiert in der Anfangszeit und auch Die Visualisierung war ich natürlich erstmal geflasht, weil man kriegt natürlich sehr viel visuelles Feedback sehr schnell. Das ist sehr, sehr schön. Aktuell habe ich keinen Use Case, wo ich einer alten Person einen Graf erklären möchte. Ich hole mir lieber wissen von der alten Person, wie ich ordentlich ein Brot back oder ähnliches. Aber das ist nur persönlich. Das soll nicht die Motivation unserer Hörerinnen und Hörer reduzieren.",
+      "start": 4312582,
+      "end": 4340900,
+      "confidence": 0.91886216,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Bestimmt auch den Graf der Brotrezepte. Es gibt bestimmt einen Graph der Brotrezept, wo man die ganzen Arten von Broten, Mehle und Ansätze und so. Es gibt jedenfalls lustige Grafvisualisierung, so als Poster von allen möglichen Themen halt auch ganz spannend.",
+      "start": 4340980,
+      "end": 4358520,
+      "confidence": 0.9079866,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Seht ihr, da haben wir sogar so ein bisschen mehr als nur Technik, sondern auch Interieur. Michael, vielen lieben Dank für Zeit an alle. Wenn ihr Feedback habt, gibt das wie immer in den Shownotes ein paar Links, E Mail Adressen, aber auch auf allen Social Media Kanälen findet ihr uns. Ansonsten kommt gerne in die Discord Community und diskutiert da ein bisschen. Falls ihr Feedback zur Episode und auch für Michael habt, lasst es uns gerne wissen und wir leiten alles weiter. Ansonsten würde ich sagen, vielen Dank fürs Zuhören und bis zur nächsten Episode und Tschüss.",
+      "start": 4359180,
+      "end": 4388574,
+      "confidence": 0.92836213,
+      "speaker": "A",
+      "channel": null
+    },
+    {
+      "text": "Ciao.",
+      "start": 4388622,
+      "end": 4389326,
+      "confidence": 0.57457,
+      "speaker": "C",
+      "channel": null
+    },
+    {
+      "text": "Danke mich.",
+      "start": 4389518,
+      "end": 4390504,
+      "confidence": 0.88586,
+      "speaker": "B",
+      "channel": null
+    },
+    {
+      "text": "Ciao.",
+      "start": 4390592,
+      "end": 4390760,
+      "confidence": 0.87041,
+      "speaker": "C",
+      "channel": null
+    }
+  ],
+  "confidence": 0.91446024,
+  "audio_duration": 4337,
+  "webhook_status_code": null,
+  "webhook_auth": false,
+  "summary": null,
+  "auto_highlights_result": null,
+  "content_safety_labels": null,
+  "chapters": null,
+  "sentiment_analysis_results": null,
+  "entities": null
+}

@@ -89,7 +89,11 @@ rtlplus: ''
 six_user_needs: []
 speaker:
 - name: Andy Grunwald
+  transcriptLetter: A
 - name: Wolfi Gassler
+  transcriptLetter: B
+- name: Michael Hunger
+  transcriptLetter: C
 spotify: https://open.spotify.com/episode/4MJfevk8z0FRhmPZ6kRQSP
 tags: []
 title: '#191 Graphdatenbanken: von GraphRAG bis Cypher mit Michael Hunger von Neo4j'
