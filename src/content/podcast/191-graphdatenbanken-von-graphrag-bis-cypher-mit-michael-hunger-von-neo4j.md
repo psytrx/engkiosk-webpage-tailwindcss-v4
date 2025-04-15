@@ -101,7 +101,7 @@ tags:
 - Interview
 title: '#191 Graphdatenbanken: von GraphRAG bis Cypher mit Michael Hunger von Neo4j'
 transcript_raw: ''
-transcript_slim: ''
+transcript_slim: src/data/transcripts/191-transcript-slim.json
 youtube: https://www.youtube.com/watch?v=eI8I3YBloMs
 
 ---
