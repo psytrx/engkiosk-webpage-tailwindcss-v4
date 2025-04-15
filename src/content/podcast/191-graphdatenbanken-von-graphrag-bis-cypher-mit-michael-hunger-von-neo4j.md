@@ -1,6 +1,6 @@
 ---
 advertiser: ''
-amazon_music: ''
+amazon_music: https://music.amazon.com/podcasts/c35a09fe-4116-4e04-8f68-77d61b112e46/episodes/7e9b75b6-588f-4752-9e17-a36b302d3d59/engineering-kiosk-191-graphdatenbanken-von-graphrag-bis-cypher-mit-michael-hunger-von-neo4j
 apple_podcasts: https://podcasts.apple.com/us/podcast/191-graphdatenbanken-von-graphrag-bis-cypher-mit-michael/id1603082924?i=1000703528801&uo=4
 audio: https://audio1.redcircle.com/episodes/bab4f8b6-809b-418e-b4db-a9efcf9ad12c/stream.mp3
 chapter:
