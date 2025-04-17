@@ -24,7 +24,7 @@ speakers:
   female: 2
 eventId: '546r6pl0apco31p2jaodfv9d2t'
 participants:
-  registered: 68
+  registered: 66
   present:
     total: 63
     male: 48
