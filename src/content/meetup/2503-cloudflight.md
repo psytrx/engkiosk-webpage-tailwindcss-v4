@@ -29,7 +29,7 @@ participants:
     total: 68
     male: 54
     female: 14
-  newParticipants: 33
+  newParticipants: 34
 speakers:
   female: 1
   male: 1
