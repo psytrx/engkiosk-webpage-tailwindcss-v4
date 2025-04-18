@@ -19,6 +19,7 @@ talks:
     description: 'With a focus on the ☀️-side, this talk will elaborate where our digital world is quasi-utopian already, in which corners we are on the right track and what needs to be done to finish the job.'
     bio: "Digital policy advisor for people who (mostly) didn't ask for it. Two decades experience in discussing Privacy, Surveilance, Digital Sovereignty, Decentralisation, Free Software, Open Data and power structures in tech and elsewhere."
     website: 'https://tyrol.social/@mjw'
+    slides: 2504-matthias-unicorn.pdf
 eventId: '25ss849ilpq2o27r9r3s0rh34i'
 participants:
   registered: 66
