@@ -86,7 +86,9 @@ rtlplus: ''
 six_user_needs: []
 speaker:
 - name: Andy Grunwald
+  transcriptLetter: B
 - name: Wolfi Gassler
+  transcriptLetter: A
 spotify: https://open.spotify.com/episode/5RfmnYb0E5fwm7ofDIcNxE
 tags: []
 title: '#192 Quartalsplanung ohne Drama: Weniger Overcommitment, mehr Tech'
