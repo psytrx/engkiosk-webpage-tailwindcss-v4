@@ -1,6 +1,6 @@
 ---
 advertiser: ''
-amazon_music: ''
+amazon_music: https://music.amazon.com/podcasts/c35a09fe-4116-4e04-8f68-77d61b112e46/episodes/bf131ae6-bc12-46b7-a34b-20b26044b8d4/engineering-kiosk-192-quartalsplanung-ohne-drama-weniger-overcommitment-mehr-tech
 apple_podcasts: https://podcasts.apple.com/us/podcast/192-quartalsplanung-ohne-drama-weniger-overcommitment/id1603082924?i=1000704402140&uo=4
 audio: https://audio1.redcircle.com/episodes/a78568dd-70f8-43dc-b852-36c8d69250a0/stream.mp3
 chapter:
