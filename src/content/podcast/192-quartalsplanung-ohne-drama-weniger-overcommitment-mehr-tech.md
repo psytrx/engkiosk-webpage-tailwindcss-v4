@@ -90,7 +90,10 @@ speaker:
 - name: Wolfi Gassler
   transcriptLetter: A
 spotify: https://open.spotify.com/episode/5RfmnYb0E5fwm7ofDIcNxE
-tags: []
+tags:
+- Leadership
+- Kommunikation
+- Projektmanagement
 title: '#192 Quartalsplanung ohne Drama: Weniger Overcommitment, mehr Tech'
 transcript_raw: ''
 transcript_slim: ''
