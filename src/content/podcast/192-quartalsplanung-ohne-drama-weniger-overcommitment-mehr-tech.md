@@ -96,7 +96,7 @@ tags:
 - Projektmanagement
 title: '#192 Quartalsplanung ohne Drama: Weniger Overcommitment, mehr Tech'
 transcript_raw: ''
-transcript_slim: ''
+transcript_slim: src/data/transcripts/192-transcript-slim.json
 youtube: https://www.youtube.com/watch?v=lYVm7ppri-E
 
 ---
