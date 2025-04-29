@@ -94,7 +94,9 @@ speaker:
 - name: Andy Grunwald
 - name: Wolfi Gassler
 spotify: https://open.spotify.com/episode/2mZ90ZMiI69ewOR5bKYYRg
-tags: []
+tags:
+- Tech Kultur
+- Interview
 title: "#193 Excel eSports: Wenn Zellen um die Weltmeisterschaft k\xE4mpfen mit Jean\
   \ Wolleh & Benjamin Weber"
 transcript_raw: ''
