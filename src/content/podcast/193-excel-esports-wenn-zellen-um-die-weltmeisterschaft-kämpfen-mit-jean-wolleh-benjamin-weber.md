@@ -1,6 +1,6 @@
 ---
 advertiser: ''
-amazon_music: ''
+amazon_music: https://music.amazon.com/podcasts/c35a09fe-4116-4e04-8f68-77d61b112e46/episodes/52a8b4a0-1af0-4a1a-b8c4-f101987139dd/engineering-kiosk-193-excel-esports-wenn-zellen-um-die-weltmeisterschaft-k%C3%A4mpfen-mit-jean-wolleh-benjamin-weber
 apple_podcasts: https://podcasts.apple.com/us/podcast/193-excel-esports-wenn-zellen-um-die-weltmeisterschaft/id1603082924?i=1000705356445&uo=4
 audio: https://audio1.redcircle.com/episodes/27f40d01-c18e-40e6-9430-b745ade311d8/stream.mp3
 chapter:
