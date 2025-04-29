@@ -92,7 +92,13 @@ rtlplus: ''
 six_user_needs: []
 speaker:
 - name: Andy Grunwald
+  transcriptLetter: A
 - name: Wolfi Gassler
+  transcriptLetter: C
+- name: Jean Wolleh
+  transcriptLetter: D
+- name: Benjamin Weber
+  transcriptLetter: C
 spotify: https://open.spotify.com/episode/2mZ90ZMiI69ewOR5bKYYRg
 tags:
 - Tech Kultur
