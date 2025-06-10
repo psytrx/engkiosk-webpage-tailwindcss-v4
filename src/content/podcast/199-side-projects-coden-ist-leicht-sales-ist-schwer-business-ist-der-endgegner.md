@@ -88,7 +88,8 @@ speaker:
 - name: Wolfi Gassler
   transcriptLetter: B
 spotify: https://open.spotify.com/episode/15HlnVnHMG1JP2wRoC0UUv
-tags: []
+tags:
+- Side Projects
 title: '#199 Side-Projects: Coden ist leicht. Sales ist schwer. Business ist der Endgegner!'
 transcript_raw: ''
 transcript_slim: ''
