@@ -84,7 +84,9 @@ rtlplus: ''
 six_user_needs: []
 speaker:
 - name: Andy Grunwald
+  transcriptLetter: A
 - name: Wolfi Gassler
+  transcriptLetter: B
 spotify: https://open.spotify.com/episode/15HlnVnHMG1JP2wRoC0UUv
 tags: []
 title: '#199 Side-Projects: Coden ist leicht. Sales ist schwer. Business ist der Endgegner!'
