@@ -1,6 +1,6 @@
 ---
 advertiser: ''
-amazon_music: ''
+amazon_music: https://music.amazon.com/podcasts/c35a09fe-4116-4e04-8f68-77d61b112e46/episodes/b3f383c2-89b3-460f-86ad-6c73804a93e5/engineering-kiosk-199-side-projects-coden-ist-leicht-sales-ist-schwer-business-ist-der-endgegner
 apple_podcasts: https://podcasts.apple.com/us/podcast/199-side-projects-coden-ist-leicht-sales-ist-schwer/id1603082924?i=1000712192852&uo=4
 audio: https://audio1.redcircle.com/episodes/119e43ce-fef8-4230-aed8-3f41f5dfb169/stream.mp3
 chapter:
