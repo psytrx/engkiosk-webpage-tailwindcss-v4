@@ -95,7 +95,7 @@ tags:
 - Sicherheit
 title: '#198 RBAC & Co: Wer darf was? Klingt banal, ist aber verdammt wichtig!'
 transcript_raw: ''
-transcript_slim: ''
+transcript_slim: src/data/transcripts/198-transcript-slim.json
 youtube: https://www.youtube.com/watch?v=cwzFqszc6j0
 
 ---
